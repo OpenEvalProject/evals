@@ -1,0 +1,1656 @@
+{
+  "submission": {
+    "id": "868fcb28-32f0-4c4f-841e-e2297a2a0873",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:44:14.330667Z",
+    "updated_at": "2025-11-29T22:44:14.330667Z"
+  },
+  "content": [
+    {
+      "id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "submission_id": "868fcb28-32f0-4c4f-841e-e2297a2a0873",
+      "content_type": "manuscript",
+      "content_text": "# Active sensing in the categorization of visual patterns\n\n## Authors\n\n- Scott Cheng-Hsin Yang<sup>1</sup> \u2020\n- M\u00e1t\u00e9 Lengyel<sup>1</sup> ([ORCID: 0000-0001-7266-0049](https://orcid.org/0000-0001-7266-0049))\n- Daniel M Wolpert<sup>1</sup> ([ORCID: 0000-0003-2011-2790](https://orcid.org/0000-0003-2011-2790))\n\n### Affiliations\n\n1. Computational and Biological Learning Lab, Department of Engineering University of Cambridge Cambridge United Kingdom\n2. Department of Cognitive Science Central European University Budapest Hungary\n\n\u2020 Corresponding author\n\n## Abstract\n\nInterpreting visual scenes typically requires us to accumulate information from multiple locations in a scene. Using a novel gaze-contingent paradigm in a visual categorization task, we show that participants' scan paths follow an active sensing strategy that incorporates information already acquired about the scene and knowledge of the statistical structure of patterns. Intriguingly, categorization performance was markedly improved when locations were revealed to participants by an optimal Bayesian active sensor algorithm. By using a combination of a Bayesian ideal observer and the active sensor algorithm, we estimate that a major portion of this apparent suboptimality of fixation locations arises from prior biases, perceptual noise and inaccuracies in eye movements, and the central process of selecting fixation locations is around 70% efficient in our task. Our results suggest that participants select eye movements with the goal of maximizing information about abstract categories that require the integration of information from multiple locations.\n\n## Introduction\n\nSeveral lines of evidence suggest that humans and other animals direct their sensors (e.g. their eyes, whiskers, or hands) so as to extract task-relevant information efficiently (Yarbus, 1967; Kleinfeld et al., 2006; Lederman and Klatzky, 1987). Indeed, in vision, the pattern of eye movements used to scan a scene depends on the type of information sought (Hayhoe and Ballard, 2005; Rothkopf et al., 2007), and has been implied to follow from an active strategy (Najemnik and Geisler, 2005; Renninger et al., 2007; Navalpakkam et al., 2010; Nelson and Cottrell, 2007; Toscani et al., 2013; Chukoskie et al., 2013) in which each saccade depends on the information gathered about the current visual scene and prior knowledge about scene statistics. However, until now, studies of such active sensing have either been limited to search tasks or to qualitative descriptions of the active sensing process. In particular, no studies have shown whether the information acquired by each individual fixation is being optimized. Rather, the fixation patterns have either been described without a tight link to optimality (Ballard et al., 1995; Epelboim and Suppes, 2001) or compared to an optimal strategy only through summary statistics such as the total number of eye movements and the distribution of saccade vectors (Najemnik and Geisler, 2005; 2008) that could have arisen through a heuristic. Therefore, these studies leave open the question as to what extent eye movements truly follow an active optimal strategy. In order to study eye movements in a more principled quantitative manner, we estimated the efficiency of eye movements in a high-level task on a fixation-by-fixation basis.\n\nHere, we focus on a pattern categorization task that is fundamentally different from visual search, in which often there is a single location in the scene that has all the necessary information (the target), and eye movements are well described by the simple mechanism of inhibition of return (Klein, 2000). In contrast, in many other tasks, such as constructing the meaning of a sentence of written text, or judging from a picture how long a visitor has been away from a family (Yarbus, 1967), no single visual location has the necessary information in it and thus such tasks require more complex eye movement patterns. While some basic-level categorization tasks can be solved in a single fixation (Thorpe et al., 1996; Li et al., 2002), many situations require multiple fixations to extract several details at different locations to make a decision. Therefore, when people have to extract abstract information (eg., how long the visitor has been away) they need to integrate a series of detailed observations (such as facial expression, postures and gestures of the people) across the scene, relying heavily on foveal vision information with peripheral vision playing a more minor role (Levi, 2008).\n\nWe illustrate the key features of active sensing in visual categorization by a situation that requires the categorization of an animal based on its fur that is partially obscured by foliage (Figure 1). As each individual patch of fur can be consistent with different animals, such as a zebra or a cheetah, and the foliage prevents the usage of gist information (Oliva and Torralba, 2006), multiple locations have to be fixated individually, and the information accumulated across these locations, until a decision can be made with high confidence. For maximal efficiency, this requires a closed loop interaction between perception, which integrates information from the locations already fixated with prior knowledge about the prevalence of different animals and their fur patterns, and thus maintains beliefs about which animal might be present in the image, and the planning of eye movement, which should direct the next fixation at a location which has potentially the most information relevant for the categorization (Figure 1). Inspired by this example, and to allow a mathematically tractable quantification of the information at any fixation location, we designed an experiment with visual patterns that were statistically well-controlled and relatively simple, while ensuring that foveal vision would dominate by using a gaze-contingent categorization task in which we tracked the eye and successively revealed small apertures of the image at each fixation location. In contrast to previous studies (Najemnik and Geisler, 2005; Renninger et al., 2007; Peterson and Eckstein, 2012; Morvan and Maloney, 2012), our task required multiple locations to be visited to extract information about abstract pattern categories.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig1-v3.jpg)\n\n**Figure 1.:** When trying to categorize whether a fur hidden behind foliage (left) belongs to a zebra or a cheetah, evidence from multiple fixations (blue, the visible patches of the fur, and their location in the image) needs to be integrated to generate beliefs about fur category (right, here represented probabilistically, as the posterior probability of the particular animal given the evidence). Given current beliefs, different potential locations in the scene will be expected to have different amounts of informativeness with regard to further distinguishing between the categories, and optimal sensing involves choosing the maximally informative location (red). In the example shown, after the first two fixations (blue) it is ambiguous whether the fur belongs to a zebra or a cheetah, but active sensing chooses a collinearly located revealing position (red) which should be informative and indeed reveals a zebra with high certainty. Note that this is just an illustrative example.\n\n## Results\n\n### Categorization performance and eye movement patterns\n\nWe generated images of three types: patchy, horizontal stripy, and vertical stripy (Figure 2A). Participants had to categorize each image pattern as patchy or stripy (disregarding whether a stripy image was horizontal or vertical\u2014the inclusion of two different stripy image types prevented participants from solving the task based on one image axis alone). The images were generated by a flexible statistical model that could generate many examples from each of the three image types, so that the individual pixel values varied widely even within a type and only higher order statistical information (ie. the length scale of spatial correlations) could be used for categorization. We first presented the participants with examples of full images to familiarize them with the statistics of the image types and to ensure their categorization with full images was perfect. We then switched to an active gaze-contingent mode in which the entire pattern was initially occluded by a black mask and the underlying image was revealed with a small aperture at each fixation location (Figure 2B; for visibility, the black mask is shown as white). As a control, we also used a number of passive revealing conditions in which the revealing locations were chosen by the computer rather than in a gaze-contingent manner. In all conditions, we controlled the number of revealings on each trial before requiring the participants to categorize the image (Figure 2B). To ensure that participants had equal chance to extract information from all revealing locations in the passive as well as the active conditions we allowed the participants to rescan the revealed locations after the final revealing (see also Materials\u00a0and\u00a0methods for full rationale). Importantly, in the active revealing condition, even though rescanning was allowed after the final revealing, participants had to select all revealing locations in real time without knowing how many revealings they would be allowed on a given trial. Therefore, although rescanning could improve categorization it was unlikely to influence participants\u2019 active revealing strategy. To confirm this we also performed a control in which rescanning was not allowed (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig2-v3.jpg)\n\n**Figure 2.:** (A) Example stimuli for each of the three image types sampled from two-dimensional Gaussian processes. (B) Experimental design. Participants started each trial by fixating the center cross. In the free-scan condition, an aperture of the underlying image was revealed at each fixation location. In the passive condition, revealing locations were chosen by the computer. In both conditions, after a random number of revealings, participants were required to make a category choice (patchy, P, versus stripy, S) and were given feedback. (C) Categorization performance as a function of revealing number for each of the three participants (symbols and error bars: mean\u00a0$\u00b1 $\u00a0SEM across trials), and their average, under the free-scan and passive conditions corresponding to different revealing strategies. Lines and shaded areas show across-trial mean\u00a0$\u00b1 $\u00a0SEM for the ideal observer model. Figure 2\u2014figure supplement 1 shows categorization performance in a control experiment in which no rescanning was allowed.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Categorization performance as a function of revealing number for participants in the control (no rescanning) and the average participant in the main experiment (rescanning) in which rescanning was allowed (cf. Figure 2C).\n\nIn the free-scan (active) condition, categorization performance improved with the number of revealings for each participant (Figure 2C, red points), indicating the successful integration of information across a large number of fixations. Although we used a gaze-contingent display, the task still allowed participants to employ natural every-day eye movement strategies, consistent with the inter-saccadic intervals (mean 408 ms) and relative saccade size (0.75\u20133.9 normalized by the three different relevant length scales of the stimuli) that were similar though somewhat shorter than those recorded for everyday activities (e.g. tea making; mean inter-saccadic interval 497 ms, and 0.95\u201319 relative saccade size normalized by the size of different fixated objects; Hayhoe et al., 2003;\u00a0Land and Tatler, 2009).\n\nTo examine whether fixation locations depended on the underlying image patterns, we constructed revealing density maps for each image type. To account for the translation-invariant statistics of the underlying images of a type, we used the relative location of revealings obtained by subtracting from the absolute location of each revealing (measured in screen-centered coordinates) the center of mass of the absolute locations within each trial (Materials\u00a0and\u00a0methods). In order to compare eye movement patterns across conditions and participants, we subtracted the mean density map across all images for each participant.\u00a0Importantly, we found that the pattern of revealings strongly depended on image type (Figure 3A, first four rows). The pattern of eye movements for images of the same type were positively correlated for each participant (Figure 3B, left, orange bars; p<0.001 in all cases), whereas eye movements for images of different types were negatively correlated (Figure 3B, left, purple bars; p<0.001 in all cases). We also found that eye movement patterns became increasingly differentiated over the course of the trial as progressively more of the image was revealed (Figure 3B, left, curves). The dependence of the eye movement patterns on the underlying image type shows that participants employed an active sensing strategy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig3-v3.jpg)\n\n**Figure 3.:** (A) Revealing density maps for participants and BAS. Last three columns show mean-corrected revealing densities for each of the three underlying image types (removing the mean density across image types, first column). Bottom: color scales used for all mean densities (left), and for all mean-corrected densities (right). All density maps use the same scale, such that a density of 1 corresponds to the peak mean density across all maps. Figure 3\u2014figure supplement 1 shows revealing density maps obtained for participants in a control experiment in which no rescanning was allowed. Figure 3\u2014figure supplement 2 shows the measured saccadic noise that was incorporated into the BAS simulations. Figure 3\u2014figure supplement 3 shows density maps separately for correct and incorrect trials. (B) The curves are correlations for individual participants as a function of revealing number with their own maps (left) and the maps generated by BAS (right). The bars are correlations at 25 revealing (see Materials\u00a0and\u00a0methods). Orange shows within image type correlation, ie. correlation between revealing densities obtained for images of the same type, and purple shows across image type correlation. Data are represented as mean $\u00b1 $ SD for the curves and mean $\u00b1 $ 95% confidence intervals for the bars.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Revealing density maps in the control (no rescanning) and the average participant in the main experiment (rescanning) in which rescanning was allowed (cf. Figure 3A).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Saccadic standard deviation both along (tangential) and orthogonal to the target direction with linear regression giving SD = 0:13\u00d7distance+0:41\u00b0 and 0:011 distance+0:38\u00b0, respectively. (B) Saccadic bias along the target direction (negative is undershoot) with linear regression giving bias = 0:23\u00d7distance+0:37\u00b0. Error bars are SEM across participants.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig3-figsupp3-v3.jpg)\n\nTo assess whether this active strategy used by our participants contributed to performance improvement, we examined the same participants in a passive revealing condition. When the revealings were drawn randomly from an isotropic Gaussian centered on the image, performance was substantially impaired (Figure 2C, blue points), indicating that participants\u2019 decision performance benefited from their active sensing strategy. After the final revealing, participants rescanned only briefly, on average for 5.0\u2009s in the active condition, 6.4\u2009s in the passive random condition before making a decision. Moreover, their performance did not improve with increased rescanning time, instead it correlated negatively with rescanning time for 2 out of 3 participants, such that the probability of a correct decision for rescanning times at the 25th and 75th percentiles of the rescanning time distribution fell from 0.77 to 0.54 (p<0.001) and from 0.77 to 0.66 (p<0.03), respectively. This suggests that longer rescanning times indicate when participants are uncertain rather than providing the main source of information for their decisions. This is in contrast to additional revealings during the original scanning period which clearly benefit performance when chosen appropriately (Figure 2C).\n\nTo further examine whether the rescanning period after the final revealing affected the participants scanning strategy, we examined additional participants in a free-scan condition in which no rescanning was allowed after the final revealing (the display blanked). The revealing density maps for these participants were very similar to the maps of participants who were allowed to rescan (average within-type vs. across-type correlation across the two groups of participants: 0.63 vs. \u22120.30) and performance was also similar (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1), although as expected slightly worse without rescanning. The proportion correct across all trials for the participants who were allowed to rescan was 0.65, 0.66 and 0.69 (average 0.66) and for those not allowed to rescan was 0.64, 0.58 and 0.66 (average 0.63). This confirms that allowing rescanning did not substantially change participants\u2019 revealing strategy.\n\n### Bayesian ideal observer\n\nWe constructed an ideal observer (Geisler, 2011) which computed a posterior distribution, \u2119(c|D), over image category c given the observations\u00a0D (collection of previous revealing locations and revealed pixel values in the trial) and made a choice such that the category with higher posterior probability was more likely to be selected (see Materials\u00a0and\u00a0methods). To construct this model, we considered three sources of suboptimality: prior biases implying imperfect knowledge of the precise correlation length scales of each pattern category, perception noise that distorts the displayed pixel values, and decision noise which occasionally results in selecting the category with the lower posterior probability (Houlsby et al., 2013). We fitted six models to the individual choices of each participant. These models differed in the kind of prior bias and decision noise they included, and we selected the model with the strongest statistical evidence, as quantified by the Bayesian information criterion (Tables 1\u20132). The best model (4 parameters in total) provided a close match to the participants\u2019 performance both in the active and passive random-revealing conditions (Figure 2C, red and blue lines). Crucially, this model also allowed us to estimate the beliefs that participants held about image categories at any point in a trial, which was necessary for determining the optimal next eye movement that could maximally disambiguate between the categories.\n\n**Table 1.**\n Maximum likelihood parameters of the model (see Materials\u00a0and\u00a0methods for details) with the best BIC score (see Table 2).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Participant</th>\n      <th rowspan=\"2\">Perception noise, \u03c3p</th>\n      <th rowspan=\"2\">Prior bias, \u0394</th>\n      <th colspan=\"2\">Decision noise</th>\n    </tr>\n    <tr>\n      <th>Stimulus-dependent, \u03b2</th>\n      <th>Stimulus-independent, \u03ba</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>0.5</td>\n      <td>0.58\u00b0</td>\n      <td>1.4</td>\n      <td>0.044</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>0.5</td>\n      <td>0.61\u00b0</td>\n      <td>1.9</td>\n      <td>0.12</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>0.3</td>\n      <td>0.54\u00b0</td>\n      <td>1.5</td>\n      <td>0.10</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Model comparison results using Bayesian information criterion (BIC, lower is better). Each row is a different model using a different combination of included (+) and excluded (\u2013) parameters (columns, see Materials\u00a0and\u00a0methods for details). Last column shows BIC score relative to the BIC of the best model (number 4).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Model</th>\n      <th rowspan=\"2\">Perception noise, \u03c3p</th>\n      <th colspan=\"2\">Prior bias</th>\n      <th colspan=\"2\">Decision noise</th>\n      <th rowspan=\"2\">BIC</th>\n    </tr>\n    <tr>\n      <th>Scale, \u03b1</th>\n      <th>Offset, \u0394</th>\n      <th>Stimulus-dependent, \u03b2</th>\n      <th>Stimulus-independent, \u03ba</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>160</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>+</td>\n      <td>139</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>+</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>105</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>+</td>\n      <td>+</td>\n      <td>\u2013</td>\n      <td>+</td>\n      <td>+</td>\n      <td>102</td>\n    </tr>\n  </tbody>\n</table>\n\n### Predicting eye movement patterns by a Bayesian active sensor algorithm\n\nTo be able to rigorously assess how close our participants were to optimal sensing, we developed a Bayesian active sensor (BAS) algorithm which is optimal in minimizing categorization error with every single revealing. That is, for our task, the aim of BAS is to choose the next fixation location, $x^{*}$, so as to maximally reduce uncertainty in the category (MacKay, 1992). This objective is formalized by the BAS score function which expresses the expected information gain when choosing $x^{*}$, and which can be conveniently computed as:\n\n$$\nScore(x^{*}|D)=H[z^{*}|x^{*},D]-\u27e8H[z^{*}|x^{*},c,D]\u27e9_{\u2119(c|D)}\n$$\n\nwhere $H$ denotes entropy (a measure of uncertainty), $z^{*}$ is the possible pixel value at $x^{*}$, $D$ is the collection of revealing locations and revealed pixel values that have been observed in the trial as above, $c$ is image category, and $\u27e8\u22c5\u27e9$ denotes averaging over the two categories weighted by their posterior probabilities, as computed by the ideal observer (for more details, see Materials\u00a0and\u00a0methods). This expresses a trade-off between two terms. The first term encourages the selection of locations, $x^{*}$, where we have the most overall uncertainty about the pixel value, $z^{*}$, while the second term prefers locations for which our expected pixel value for each category is highly certain.\n\nFigure 4A shows a sequence of fixations on a representative trial. On each fixation, the BAS score is computed for all possible positions (grayscale map) based on all previous fixation locations (green dots) and the pixel values revealed there. While the BAS algorithm would choose the position with the highest BAS score as the next fixation location (blue crosses), the participant might choose a different, suboptimal, fixation location (yellow circles). Nevertheless, the informativeness of most of the participant\u2019s fixation locations were very high as expressed by their information-percentile values (the percentage of putative fixation locations with lower BAS scores than the one chosen by the participant).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig4-v3.jpg)\n\n**Figure 4.:** (A) The operation of BAS in a representative trial for saccades 1\u20138 and 14 (underlying image shown top left). For each fixation (left, panels), BAS computes a score across the image (gray scale, Equation 1). This indicates the expected informativeness of each putative fixation location based on its current belief about the image type, expressed as a posterior distribution (inset, lower left), which in turn is updated at each fixation by incorporating the new observation of the pixel value at that fixated location. Crosses show the fixation locations with maximal score for each saccade, green dots show past fixation locations chosen by the participant and yellow circle shows current fixation location. Percentage values (bottom right) show their information percentile values (the percentage of putative fixation locations with lower BAS scores than the one chosen by the participant). Histogram on the right shows distribution of percentile values across all participants, trials and fixations. (B) Predictions of the maximum entropy variant (the first term in Equation 1) as in (A). For saccades 1\u20133, the fixation locations with maximal score (crosses) are not shown because the maxima comprise a continuous region near the edge of the image instead of discrete points. Note that entropy can be maximal further (eg. fixation 4) or nearer the edges of the image (eg. fixation 1), depending on the tradeoff between the two additive components defining it: the BAS score, which tends to be higher near revealing locations (panel A), and uncertainty due to the stochasticity of the stimulus and perception noise, which tends to be greater away from revealing locations. Figure 4\u2014figure supplement 1 shows two illustrative examples for this trade-off.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Top row shows entropy (in bits) of the predictive distributions, $H[z*|x*,D]$, for a grid of locations after one observation. Bottom row shows the corresponding variance decomposition (cf. Equation 1), unexplained (blue) corresponds to \u201cnoise\u201d entropy, $H[z*|x*,c,D]_{\u2119(c|D)}$, explained (red) correspond to the BAS score, Score$(x*|D)$, and total (black) coresponds to total uncertainty, $H[z*|x*,D]$. The widths of the gray regions correspond to the three length scales with which the three image types are constructed.\n\nWe simulated eye movement patterns derived by BAS for the same images shown to our participants. In order to take into account basic biological constraints on the accuracy of eye movements, we included saccadic variability and bias in the model based on measurements made independently in a group of participants which took into account both the standard deviation and bias of saccades both along and orthogonal (standard deviation only) to the desired saccade direction as a function of desired amplitude (Figure 3\u2014figure supplement 2). The predicted (mean-corrected) pattern of eye movements closely matched those observed (Figure 3A, last two rows): they were positively correlated with participants\u2019 eye movements for the same image type (Figure 3B, right, orange bars; p$<$0.001 in all cases), but negatively correlated with those for different image types (Figure 3B, right, purple bars; p<0.001 in all cases). These differences increased as a function of revealing number (Figure 3B, right, curves). Moreover, when we split participants\u2019 trials into those in which they made a correct or incorrect decision, the pattern of eye movements derived from the correct trials correlated better with the BAS pattern than that derived from incorrect trials (Figure 3\u2014figure supplement 3, $\u03c1_{correct}=0.74$, $\u03c1_{incorrect}=0.20$, p<0.001 for the average participant), further suggesting that following a BAS-like strategy was beneficial for performance.\n\nFor comparison, we also analyzed how well participants\u2019 fixations could be accounted for by a strategy using a variant of the score that only included the first term in Equation 1 and thus selected locations with maximal entropy rather than maximal information gain. We found that this strategy provided a substantially poorer fit to our eye movement data than the full BAS algorithm, as measured by the distribution of the scores corresponding to actual fixation locations (Figure 4B) and the anti-correlations between predicted and actual revealing maps at 25 revealings ($\u03c1$ = $-$0.62, $-$0.51, $-$0.43; all p<0.001).\n\n### Fixation informativeness\n\nIn order to obtain a fixation-by-fixation measure of the informativeness of participants\u2019 individual eye movements, we used the ideal observer model to quantify the amount of information accumulated about image category over subsequent revealings in a trial for different revealing strategies (Figure 5A). This information-based measure is more robust than directly measuring distances between optimal and actual scan paths because multiple locations are often (nearly) equally informative when planning the next saccade. For example, in the trial shown in Figure 4A, the BAS score map was clearly multimodal for several fixations, and some of the participant\u2019s fixation locations were indeed distant from the corresponding locations that BAS would have chosen, yet their informativeness was generally very high. Therefore, categorization performance is better understood in terms of information measures on the revealed locations rather than by the geometry of individual scan paths, which has traditionally been used in previous studies (Najemnik and Geisler, 2005; Renninger et al., 2007).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig5-v3.jpg)\n\n**Figure 5.:** (A) Cumulative information gain of an ideal observer (matched to participants\u2019 prior bias and perceptual noise) with different revealing strategies (black, green, and blue) and participants\u2019 own revealings (red). Data are represented as mean $\u00b1 $ SEM across trials. Figure 5\u2014figure supplement 1 shows a measure of efficiency extracted from these information curves across sessions. (B) Information gains for three heuristic strategies (See text for details, and Materials\u00a0and\u00a0methods): posterior-independent & order-dependent fixations (orange), posterior-dependent & order-independent fixations (purple), and posterior- & order-dependent fixations (brown). The information gain curves for the three heuristics overlap in all cases. Participants\u2019 active revealings (red lines, as in A) were 1.81 (95% CI, 1.68\u20131.94), 1.85 (95% CI, 1.72\u20131.99), and 1.92 (95% CI, 1.74\u20132.04) times more efficient in gathering information than these heuristics, respectively. Data are represented as mean $\u00b1 $ SEM across trials.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12215/elife-12215-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Relative efficiency computed as the ratio of the scale parameter as (see Materials\u00a0and\u00a0methods) of each session to that of the last session. Circles and lines show mean and SD obtained by bootstrapping trials within a session 50 times. The revealings on day 2-3 (free-scan sessions) were 0.90\u20131.04 (across participants) times as efficient compared to day 1 revealings (free-scan familiarization sessions). This suggests that participants were already choosing revealing locations on day 1 with near-asymptotic efficiency.\n\nWe compared the information efficiency of different revealing strategies by measuring the relative number of revealings required by them to gain the same amount of information. Participants\u2019 active revealings (Figure 5A\u2013B, red lines) were 2.93 (95% confidence interval [CI], 2.60\u20133.32) times more efficient than random revealings (Figure 5A, blue lines). As a more stringent control than a random strategy, we also simulated eye movement patterns for three heuristic strategies that reproduced different aspects of the statistics of participants\u2019 actual eye movement patterns but lacked the full closed-loop Bayesian interaction between belief updating and eye-movement selection (see Materials\u00a0and\u00a0methods for details). We first used a feed-forward strategy, which retained order-dependence, i.e. the way the statistics of revealing locations chosen by the participants depended on revealing number, but ignored participants\u2019 inferences about the category (Figure 5B, orange). The second heuristic took into account the participant\u2019s belief about the underlying image, but not the revealing number (Figure 5B, purple). The third heuristic was a partial closed-loop strategy, that thus respected both the belief- and order-dependence of revealings, but not the details of previous revealings (Figure 5B, brown line). Notably, this strategy would be optimal for simpler stimuli and tasks, such as visual search for a target, but not for our spatially correlated stimuli and task requiring information integration across multiple locations. Participants\u2019 revealings were 1.81\u20131.92 times more efficient than these three heuristic strategies.\n\nHowever, participants\u2019 active revealings were less efficient by a factor of 2.48 (95% CI, 2.33\u20132.62) than the information provided by revealings generated by the BAS algorithm with \u2018idealized\u2019 parameters: minimal perception noise (2\u20133 times lower than our participants\u2019; see Materials\u00a0and\u00a0methods) and no prior biases or saccadic inaccuracies (Figure 5A, black lines). Indeed, this efficiency in information gathering was also reflected in our participants\u2019 performance when they viewed revealings generated by this ideal BAS (Figure 2C, black points). In this condition, participants only rescanned the revealed locations for a\u00a0short amount of time after the final revealing (average of 4.4\u2009s), less than in the active and passive random conditions, thus their increased efficiency could not be attributed to longer rescanning times. The discrepancies between participants\u2019 and BAS\u2019s revealings may be caused by participants employing an inefficient strategy to select their fixation locations, or, alternatively, they\u00a0may be due to more trivial factors upstream or downstream of the process responsible for selecting the next fixation, such as noise and variability in perception or execution, respectively. Importantly, when we computed the information gain provided by BAS when operating with participants\u2019 prior biases, perceptual noise and the typical saccadic inaccuracies as described above, the discrepancy between the informativeness of BAS-generated revealings compared to that of participants\u2019 revealings was markedly reduced (Figure 5A, green lines, BAS/free-scan efficiency = 1.45, 95% CI, 1.37\u20131.53). This suggests that the central component of choosing where to fixate was around 70% efficient in our participants, and a large component of suboptimality arose due to other processes. To examine the role of learning in participants\u2019 active sensing strategy, we computed the relative efficiency of each of the free-scan sessions of our experiment, spanning multiple days, compared to the final session (Figure 5\u2014figure supplement 1). We found that efficiency remained stable over the whole course of the experiment, suggesting there was minimal, if any, learning required in the free-scan task.\n\n## Discussion\n\nOur results show that humans employ an active sensing strategy in deciding where to look in a high-level pattern categorization task. In our task, participants\u2019 patterns of eye movements were well predicted by a Bayes-optimal algorithm seeking to maximize information gain relevant to the task with each individual eye movement. This Bayes optimal strategy involved finding the location in the scene which when fixated was most likely to lead to the greatest reduction in categorization error, rather than simply the location associated with the most uncertainty about pixel value.\n\n### The efficiency of active sensing in human vision\n\nAlthough our participants performed better when revealings were chosen by the BAS\u00a0algorithm than with their own scan paths, our results suggest that this suboptimality in participants\u2019 performance was to a large part due to prior biases, perception noise, and saccadic inaccuracies constraining the selection of fixation locations rather than an inefficient active sensing strategy. In particular, our participants\u2019 eye movements were substantially more efficient than heuristic strategies that only employed a subset of the elements of a fully closed-loop active sensing strategy, and were about 70% as efficient as the optimal active sensor that operated with the participants\u2019 own prior bias, perception noise, and saccadic inaccuracies. Importantly, this\u00a0estimate does not conflate the inference process with the selection process in that even if the participant\u2019s inference is biased or inconsistent, we can measure, given those beliefs, the extent to which they select fixation locations optimally. The 30% inefficiency we found may be due to unmodeled constraints in human eye movement strategies, such as the biases for cardinal directions or fixating the centre of an image that were apparent in our data (Figure 3A) and that may also be beneficial in natural environments (Tatler and Vincent, 2008; 2009). Such suboptimalities are conceptually different from those that we factored out using the specific biases and noise included in the BAS model. The latter are suboptimalities that arise in the execution of a planned saccade (as in Figure 3\u2014figure supplement 2), while the former could be suboptimalities of the planning itself. Therefore, as we were interested in the degree of (sub)optimality of the planning component, we chose not to factor out potential biases for cardinal directions or locations. Should such suboptimalities turn out to be part of the execution process, then our estimate of 70% would become a lower bound on the efficiency of the planning process.\n\nOur results contrast with recent studies suggesting that the pattern of eye movements do not follow an active sensing strategy. In one study, using a simple object localization task, it was found that the choice of fixation locations was close to random despite obvious learning of the underlying stimulus statistics (Holm et al., 2012). In another study, using a simplified visual search task, participants\u2019 eye movements were virtually unaffected by the configuration of the visual stimuli presented in the trial (Morvan and Maloney, 2012). In contrast, we found that participants used both their prior knowledge of stimulus statistics as well as evidence accumulated about the current visual scene to guide their eye movements. We speculate that better performance in our case may be due to our more naturalistic task, which involves the extraction of abstract latent features, revealing more typical processing of the sensorimotor system.\n\n### Relevance for natural vision\n\nAlthough our task was designed to emulate many features of natural vision, there remain several differences. First, our gaze-contingent display involved exposing small patches of the image at each fixation whereas in natural vision information is available from the full visual field, albeit with decreasing acuity away from the fovea. If participants\u2019 selection process was aware of and actively optimized for the changed field of vision in our task, the resulting eye movement patterns could be different from those in natural vision. Nevertheless, the basic summary statistics of (macro-)saccades in our task (average size and inter-saccadic intervals) were similar to those found in natural vision (Hayhoe et al., 2003; Land and Tatler, 2009), and there was a lack of adaptation to the task over the course of several days of free-scan sessions (Figure 5\u2014figure supplement 1). These seem to suggest, at least indirectly, that participants did not depart dramatically from their natural eye movement strategies.\n\nSecond, our task focuses on the voluntary component of eye movements, that is the scan paths of fixations, rather than the more involuntary processes of micro-saccades and drift (Rolfs, 2009; Ko et al., 2010; Rucci et al., 2007; Poletti et al., 2013; Kuang et al., 2012), which did not trigger new revealings. Importantly, in our task these involuntary processes are likely to be used for extracting information within each revealed patch, whereas high-level categorization required macro-saccades. This is because these involuntary processes cover an area with a standard deviation (SD) on the order of 0.22\u00b0 (over the course of each fixation; Rolfs, 2009), which is similar to our Gaussian apertures (SD of 0.18\u00b0), whereas the smallest length scale of our stimuli (0.91\u00b0) is 4 times larger. However, it is possible that in natural scenes with finer structure, micro-saccades and drift may contribute more to abstract feature extraction.\n\nThird, our stimuli set had strictly stationary statistics. This is an approximation to natural image statistics that are often assumed to be spatially stationary on average (eg. Field, 1987) but usually include local non-stationarities (eg. different objects with different characteristic spatial frequencies). Nevertheless, our stimuli were more naturalistic than many of the stimuli used in active sensing studies of visual search (eg. simple 1/f noise) while still allowing a rigorous control and measurement of the amount of high-level category information available at any potential revealing location which would not have been possible with natural scenes.\n\nFinally, natural vision works under time constraints. Our task limited the number of revealings in each trial rather than the time, although the temporal aspects of the eye movements (inter-saccadic intervals) were similar to eye movements with natural scenes. We also showed in a control experiment that the additional time allowed for rescanning the revealed locations did not affect the initial scanning strategy.\n\nA challenge for future studies will be to employ visual tasks that are more naturalistic in these respects while still retaining our ability to quantify the task-relevant information available to participants at any point in a trial. It may well be that participants are more efficient in such naturalistic settings than the 70% we found in our task.\n\n### Relation to earlier work\n\nOur approach makes several important contributions. First, by using a gaze-contingent display we were able to isolate the top-down strategies of eye movement selection, thereby complementing studies which examined the influence of low-level visual features and salience (Itti and Koch, 2000; Wismeijer and Gegenfurtner, 2012) on eye movement selection. In addition, our task focuses on integrating low-level visual information into an abstract category thus complementing studies that examine the effect of target value (Navalpakkam et al., 2010; Krajbich et al., 2010; Markowitz et al., 2011; Schutz et al., 2012) or more cognitive tasks that use eye movement (Nelson and Cottrell, 2007) or button-pressing for information search (Castro et al., 2009; Gureckis and Markant, 2009; Borji and Itti, 2013). Some of these studies used a similar Bayesian formalism to obtain the active learning strategies specific to their tasks and showed that humans perform active learning when given the opportunity to consciously deliberate from which location in a scene they should gather information next. In contrast, our work shows that high-efficiency active sensing is a natural strategy for eye movements that humans adopt without overt deliberation, as evidenced by the inter-saccadic intervals matching naturalistic tasks and the fact that our participants reached near-asymptotic efficiency already in the first session of our task.\n\nSecond, by using a pattern categorization task we could ensure that no single location was especially informative but that the task required an integration of information from multiple locations both to select the next eye movement and to solve the task, and specifically that a closed-loop strategy was necessary for solving the task efficiently. This is in contrast with studies that attempted to quantify the general informativeness of single locations in a scene (Gosselin and Schyns, 2001), and showed that they are the target of fixations humans tend to choose in general (Peterson and Eckstein, 2012; Toscani et al., 2013; Chukoskie et al., 2013), or visual search in which, by the nature of the task, the target location is fully informative by itself (Najemnik and Geisler, 2005). As such, most previous studies have not addressed the important interplay between information gathering and fixation selection characteristic of naturalistic active sensing: that, in general, the most informative location is ever-changing, dependent on the history of fixations one has already performed.\n\nThird, in contrast to active sensing for simple visual search (Najemnik and Geisler, 2005; Navalpakkam et al., 2010; Morvan and Maloney, 2012), our formalism extends the range of active sensing to tasks which have arbitrary, not necessarily spatial, latent features (such as categories). In particular, it provides the first fixation-by-fixation analysis of information gathering under active eye movements by carefully matching our observer model to participants\u2019 performance. As a result, for the first time, we were able to dissociate the contributions of the eye-movement selection process from those of perceptual, motor, and decision processes, identify predominant sources of apparent sub-optimality in active sensing, and quantify the efficiency of choosing each individual fixation throughout scanning a whole scene. Taken together, these features make our approach amenable to multiple tasks in different perceptual domains (Kleinfeld et al., 2006), as well as high-level cognitive tasks such as estimating the age or socio-economic status of people in a scene (Yarbus, 1967).\n\n## Materials and methods\n\n### Participants\n\nThree naive participants (aged 25\u201335 years, none of them were authors or neuroscientists) took part in the experiment. All participants were neurologically healthy, had normal or corrected to normal vision and gave their informed consent before participating. The study was approved by the institutional ethics committee. Each experiment took approximately 12\u2009hr across 6 days (2\u2009hr per day). As this experiment was particularly laborious we focus on within-participant analysis.\n\n### Experimental apparatus and setup\n\nParticipants sat 42 cm in front of a 17\u201d Sony Multiscan G200 FD Trinitron CRT monitor (32-bit color, 1024x768 resolution, 100\u2009Hz refresh rate). An EyeLink 1000 eye tracker was used to track the participant\u2019s right eye position at 1000\u2009Hz. A chin and forehead rest was used to stabilize the head.\n\n### Stimuli\n\nStimuli were generated such that the value of a pixel, $z$, depended on its two-dimensional location, $x$, through a function $z=f\u2062(x)$ sampled from a two-dimensional Gaussian process (Rasmussen and Williams, 2006) with zero mean and covariance function $K_{\\theta}\u2062(\u22c5,\u22c5)$. The covariance function was squared-exponential and it was parameterized by $\\theta={\\lambda_{h},\\lambda_{v}}$ setting the image pattern\u2019s horizontal and vertical correlation length scales, with the variance set to unity, such that the covariance of the pixel values at two positions, $x$ and $x^{'}$ (each two-dimensional), was:\n\n$$\nK_{\\theta}(x,\u00a0x')=e^{-\\frac{1}{2}\u2062(x-x^{'})^{T}\\lambda_{h}^{2}00\\lambda_{v}^{2}^{\u2062^{-1}}\u2062\u2062(x-x^{'})}\n$$\n\nFor the patchy ($PA$), stripy horizontal ($SH$), and stripy vertical ($SV$) pattern types the hyperparameters were $\\theta_{PA}={1.39^{\u2218},1.39^{\u2218}}$, $\\theta_{SH}={4.63^{\u2218},0.91^{\u2218}}$, and $\\theta_{SV}={0.91^{\u2218},4.63^{\u2218}}$, respectively. Function values ($z$) in the range $-4$ to $4$ were mapped to image pixel colors so that the extremes corresponded to pure red (RGB value [1,\u00a00,\u00a00]) and blue ([0,\u00a00,\u00a01]), with intermediate values being linearly interpolated in RGB space. Functions which had values outside [$-4$, $4$] were discarded and a new function was generated. The images were sampled over a grid of 77$\\times$77 locations subtending $27.8^{\u2218}$ at the eye in the horizontal and vertical dimensions and then supersampled, using 2D splines, up to a resolution of 770$\\times$770 pixels (this allowed images to be generated rapidly without compromising visual appearance). On each trial, a pattern category $c$, that was patchy ($P$) or stripy ($S$), was chosen with equal probability and if the stripy category was chosen then a horizontal or vertical pattern type was chosen with equal probability. Having two different types within the stripy pattern category ensured that the optimal scan path depended on the image (otherwise, always scanning in one direction where the length scales were different would be optimal).\n\n### Task\n\nThe task on each trial was for participants to determine whether a pattern displayed on the monitor was patchy or stripy (irrespective of whether it was vertical or horizontal) under different experimental conditions. The experiment consisted of four conditions: training, free-scan familiarization, free-scan, and passive revealing.\n\n#### Training (8 sessions \u00d7 40 trials)\n\nParticipants triggered the start of each trial by fixating (within 1.5\u00b0 for 500 ms) a cross centered on the screen, at which point the cross disappeared. An image was displayed centered on the location of the fixation cross, and participants had to decide whether the image was patchy or stripy. They were allowed to scan the image freely for up to 10 s and make their decision by fixating (within 2.8\u00b0 for 800 ms) on one of the two choice letters, P or S, which were displayed to the left and right of the displayed image, respectively. Participants received audio feedback as to the correctness of their choice. Twenty images from each category were presented in a randomized order. The training sessions ensured that participants could learn the statistics of the image patterns. Categorization performance was perfect in training sessions for all participants.\n\n#### Free-scan familiarization (5 sessions \u00d7 40 trials)\n\nEach trial started with participants fixating a center cross. A randomly generated image from one of the categories was then displayed but initially completely obscured by a black mask. Participants could freely scan the display, and wherever they fixated, the underlying image was revealed by unmasking a small aperture at the fixation location. This was achieved by revealing an isotropic Gaussian region with standard deviation 0.18\u00b0 at the fixation location, with the values of the Gaussian used to interpolate linearly between complete transparency (alpha=0) at the maximum of the Gaussian and black (alpha=1) where the value of the Gaussian is 0. A new fixation was detected, and hence a new revealing triggered, when the following three criteria were met: 1) a saccade had occurred since the last fixation as determined by eye speed greater than 59\u00b0\u2009s$^{-1}$; 2) the displacement from the previous fixation was greater than 0.59\u00b0; and 3) the standard deviation of the eye position was less than\u00a00.28\u00b0 for the last 100 ms. These parameters were based on pilot experiments with the aim of making the revealings in the free-scan session feel natural so that each location viewed was revealed and spurious locations were not revealed. Participants were required to make 25 fixations before making their decision. After the 25 revealings, the category choices appeared (P vs. S) and participants had 60 s to choose a category with the revealed locations remaining on the display. Upon answering, participants were shown the full image with audio feedback. All participants achieved an average performance of 70% accuracy or higher.\n\n#### Free-scan (6 sessions \u00d7 100 trials)\n\nFree-scan trials were exactly the same as free-scan familiarization trials except that the number of revealings across trials was chosen randomly on each trial from 5 to 25 in steps of 5 (balanced) and was a priori unknown to the participants. The choice letters, P and S, appeared after the given number of revealings and no new revealings occurred after this point. The unknown, random stopping number of revealings served to encourage participants to be greedy in their information seeking.\n\n#### Passive revealing (8 sessions \u00d7 100 trials)\n\nThis session was the same as the free-scan session except that the revealing locations were pre-determined by an algorithm independent of participant\u2019s eye movements and sequentially appeared at intervals of 400 ms (which was about the average interval between consecutive fixations in the free scan experiment: 408 ms, which in turn was very similar to the inter-saccadic intervals measured under natural viewing conditions in everyday tasks; Hayhoe et al., 2003;\u00a0Land and Tatler, 2009). Participants were instructed to follow the revealings as much as possible and were allowed to scan the scene after all revealings had appeared until they made their category decision. The algorithm followed one of three strategies randomly chosen:\n\nWe mixed the BAS and anti-BAS trials to ensure participants could not use the pattern of revealing locations (independent of pixel values) to infer the category of the underlying image. The experiment included 8 passive revealing sessions with a total of 200, 200, and 400 trials from strategy 1, 2, and 3, respectively. The trials were first randomly mixed then divided into 8 sessions.\n\nThe eye tracker was calibrated before each session (25-point calibration for the free-scan condition and 9-point calibration for the passive-revealing conditions). Drift correction was performed at the start of each trial after fixation on the center cross was achieved. Re-calibration was performed whenever participants reported that the revealing locations did not match where they fixated, whenever they could not trigger the start of a trial, or make their category choice by fixating.\n\nParticipants ran using the following schedule: day one, 3 training sessions intermixed with 5 free-scan familiarization sessions; day two and three, 1 training session and 3 free-scan sessions each; day four to six, 1 training session and 2 or 3 passive revealing sessions each. All the free-scan sessions came before any passive revealing sessions so as to avoid influencing participants\u2019 choice of eye movements by our choice of passive revealing strategies.\n\nAs we wished to compare the active strategy with passive revealing we allowed participants to rescan the revealed locations after the final revealing but before making a decision. This was critical as in the passive revealing conditions, although participants may detect and follow the revealings, because they are small and dispersed, they need to scan the scene to find and view them all. Therefore, the reason for allowing additional time after the final revealing was so as to make sure they had a chance to extract as much information as they liked from the revealed locations (locations and pixel values). In order to make the conditions directly comparable, we followed the same procedure in the active condition. Thus, allowing a rescanning period was the only way we could make a fair comparison across conditions using our gaze contingent design, which in turn allowed fine control over the information participants could obtain by eye movements.\n\nCrucially, our key interest was in where participants chose to fixate during the initial revealing period and not in the perception model. During the active condition, all the selection happened prior to the rescanning phase and participants did not know how many saccades they would be allowed so they still needed to be efficient in choosing\u00a0revealing locations even if they could rescan them later. Therefore, as we were analyzing the initial scanning, the final rescanning simply equalized the information that could be extracted from each revealing for all conditions but it was unlikely to influence the initial selection. Although, it is theoretically possible that participants adopted a different eye movement strategy knowing they could freely re-visit already revealed locations, the rescanning control (described below) suggests that this was not the case (Figure 3\u2014figure supplement 1).\n\nTo examine whether rescanning time had an effect on performance, we fit each participants choice accuracy as a logistic function (bounded between 0.5 and 1) of rescanning time. We allowed different shifts per condition (active, passive random, passive BAS) but the same slope parameter across conditions.\n\n### No-rescanning control\n\nTo directly\u00a0examine whether the rescanning period allowed after the final revealing affected participants scanning strategy, we performed a control experiment with three additional naive participants. These participants performed the training, free-scan familiarization, and free-scan sessions as in the original experiment except that no rescanning after the final revealing was allowed. That is all revealings disappeared (i.e. display returned to a black screen) 350 ms after the saccade away from the final revealing and participants were required to indicate their choice.\n\n### The ideal observer model of the task\n\nThe ideal observer maintains and continually (after each observation) updates a posterior distribution over categories, $c\\in{P,S}$, given knowledge of the parameters defining each image type, $\\theta\\in{\\theta_{PA},\\theta_{SV},\\theta_{SH}}$, and data, $D={z,\u00a0x}$, which is the set of perceived pixel values $z={z_{1},\u00a0z_{2}\u2062\u2026\u2062\u00a0z_{L}}$ at the $L$ locations $x={x_{1},\u00a0x_{2}\u2062\u2026\u2062\u00a0x_{L}}$ revealed in the trial so far:\n\n$$\n\u2119(c=P|D)=\\frac{\u2119(D|\\theta_{PA})}{\u2119(D|\\theta_{PA})+\\frac{1}{2}\u2119(D|\\theta_{SH})+\\frac{1}{2}\u2119(D|\\theta_{SV})}\n$$\n\n\n\n$$\n\u2119c=S|D=1-\u2119(c=P|D)\n$$\n\n\n\n$$\n\u2119D|\\theta=\ud835\udca9\u2062(z;0,K_{\\theta}\u2062(x,\u00a0x)+\\sigma_{p}^{2}\u2062I)\n$$\n\nwhere $\\sigma_{p}^{2}$ is the variance of the participant\u2019s (Gaussian) perceptual noise on the pixel value, and $K_{\\theta}\u2062(x,\u00a0x^{'})$ is a matrix with element $(i,j)$ being $K_{\\theta}\u2062(x_{i},x_{j}^{'})$ (Equation 2). Note that the length scales of the three pattern types as assumed by the observer, $\\theta$, need not necessarily be the same as those actually used to generate the images, and indeed we explore below variants of the model that differ in their assumptions about these length scales. For simplicity, the ideal observer model assumes a fixed extraction of information from each revealing and therefore does not include temporal factors such as fixation durations (i.e. perception noise in Equation 5 is constant).\n\n### The Bayesian active sensor model of eye movements\n\nThe Bayesian active sensor (BAS) algorithm computes a score, the expected reduction in entropy of the distribution over categories as a function of a possible next revealing location, $x^{*}$, and chooses the next fixation to be at the location with the highest score. The score is defined as\n\n$$\nScore(x^{*}|D)=H[c|D]-\u27e8H[c|z^{*},x^{*},D]\u27e9_{\u2119(z^{*}|x^{*},D)}\n$$\n\nwhere $z^{*}$ is a possible (and as yet, unobserved) pixel value at $x^{*}$, and $H\u2062[\u22c5]$ denotes entropy in bits. Using the insight that the BAS score formally expresses the mutual information between $c$ and $z^{*}$ (for the given $x^{*}$), Equation 6 can be rewritten in a different form that is computationally far more convenient, as it does not require expensive posterior updates for a continuum of imaginary data, $z^{*}$, to compute $\u2119(c|z^{*},x^{*},D)$ for the second term (Houlsby et al., 2011):\n\n$$\nScore(x^{*}|D)=H[z^{*}|x^{*},D]-\u27e8H[z^{*}|x^{*},c,D]\u27e9_{\u2119(c|D)}\n$$\n\nThis form (equivalent to Equation 1) is also more plausible psychologically as it is easily approximated by simple mental simulation for a few hypotheses sampled from the current posterior. Note that maximizing just the first term would be equivalent to \u201cmaximum entropy sampling\u201d (Sebastiani and Wynn, 2000) which is suboptimal in general, and in the context of our task would be similar to simple \u201cinhibition of return\u201d which does not account well for participants\u2019 fixations (Figure 4B). The two distributions needed for evaluating Equation 7 are the current posterior over categories, $\u2119(c|D)$, and the predictive distribution of the pixel value at a location for a category, $\u2119(z^{*}|x^{*},c,D)$. (Note that the predictive distribution in the first term can also be computed using these two distributions: $\u2119(z^{*}|x^{*},D)=\u27e8\u2119(z^{*}|x^{*},c,D)\u27e9_{\u2119(c|D)}$.) The category posterior is given by Equation 3-5 and the category-specific predictive distribution is (Rasmussen and Williams, 2006):\n\n$$\n\u2119z^{*}|x^{*},c=P,D=\u2119(z^{*}|x^{*},\\theta_{PA},D)\n$$\n\n\n\n$$\nP(z^{\u2217}|x^{\u2217},c=S,D)=\\frac{P(D|\\theta_{SV})}{P(D|\\theta_{SV})+P(D|\\theta_{SH})}P(z^{\u2217}|x^{\u2217},\\theta_{SV},D)+\\frac{P(D|\\theta_{SH})}{P(D|\\theta_{SV})+P(D|\\theta_{SH})}P(z^{\u2217}|x^{\u2217},\\theta_{SH},D)\n$$\n\nwith\n\n$$\n\u2119(z^{*}|x^{*},\\theta,D)=\ud835\udca9(z^{*};K_{\\theta}(x^{*},\u00a0x)[K_{\\theta}(x,\u00a0x)+\\sigma_{p}^{2}I]^{-1}z,\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0K_{\\theta}(x^{*},x^{*})-K_{\\theta}(x^{*},x)[K_{\\theta}(x,\u00a0x)+\\sigma_{p}^{2}I]^{-1}K_{\\theta}(x,\u00a0x^{*})+\\sigma_{p}^{2})\n$$\n\nFor all simulations, we computed the BAS score on a 110$\\times$110 grid of $x^{*}$ that covered the image. The entropies of the predictive distributions (which are mixtures of Gaussians) in Equation 7 were approximated by their Jensen lower bound for efficiency (Huber et al., 2008).\n\nImportantly, at least in principle, the ideal observer and BAS algorithms can be generalised to more complex stimuli as long as their statistics are known and can be expressed as $\u2119(z_{1},\u22ef,z_{n}|x_{1},\u22ef,x_{n},c)$.\n\n### Saccadic variability and bias\n\nDue to the gaze-contingent design of our experiment, most saccades were made towards locations without any visible target. Saccades are known to be variable and biased, and to incorporate this variability and bias into our model we measured saccadic variability and bias in an independent experiment with 6 participants (including two from the main experiment) under similar conditions to those in the free-scan session of the main experiment. Although in the main experiment participants chose the location they wished to saccade to, to reliably measure saccadic variability and bias we needed to know the target of the saccade but not display it. Therefore we first trained participants on the locations of two saccadic targets and that on each trial the color of a stimulus shown at the fixation point indicated to which of these they needed to saccade. The two targets were at equal eccentricity from the fixation point, one to the right and one above it. On each training trial, participants first fixated a central fixation cross. Then two isotropic Gaussian patches (SD\u00a00.18\u00b0 as in the main experiment) appeared, one at the fixation location and one at one of the two target locations. The color of the fixation patch determined where the eccentric target was, either to the right (red) or above (blue), and participants were informed that the relation between the fixation color and the target direction was fixed throughout the experiment. To ensure that participants paid attention to the target, they were asked to report the color of the eccentric target which could either be red or blue. Note that this task by itself did not necessarily require them to saccade to the target, to avoid overtraining on particular saccades, but ensured that they developed a strong association between the color of the central fixation stimulus and the location of the target on that trial, such that in the next phase we could instruct them to saccade to a particular target without showing it. A training session of 40 trials was performed for each target eccentricity tested (1.39, 2.78, 5.56 and 8.34\u00b0 in this order) with each session followed by a test session of 100 trials with the same eccentricity.\n\nIn the test sessions, only the fixation patch appeared and its color determined which target the participant should make an eye movement to. As in the free-scan sessions, a patch was revealed wherever the participant fixated, and their task was to report the target\u2019s color. However, as this first eye movement was often inaccurate (see below) it did not necessarily reveal the target which needed to be reported. Thus, to motivate participants by making the task feasible, they were allowed to make four additional eye movements, leading to more revealings, before reporting the color of the target. (Although they were allowed 5 revealings, they were instructed to be as accurate as possible with their first eye movement.) The entire image was then shown as feedback.\n\nTo estimate saccadic variability and bias we used only the first saccade after fixation. We removed trials in which participants did not accurately maintain fixation (drift of >0.56\u00b0) or where they clearly mis-directed their saccade (saccade was closer to the non-cued target). We calculated the bias and standard deviation (robust estimate from the median absolute deviation) both along (tangential) and orthogonal (SD only) to the direction of the target. We fit the bias and SD as a linear function of target distance for both the tangential and orthogonal components for each participant (Figure 3\u2014figure supplement 2). We averaged the model parameters across the participants and used these values to corrupt the desired saccade locations in the BAS simulations\u00a0(unless otherwise noted).\n\n### Model parameters and data fitting\n\nTo match empirical data collected from our participants, we included perception noise, decision noise, and potential prior biases in the ideal observer model.\n\nFor a systematic model comparison, we constructed a set of models which all included perception noise ($\\sigma_{p}$) and stimulus-dependent decision noise ($\\beta$) and differed in whether they also included stimulus-independent decision noise ($\u03ba$) and which of the three prior biases they had (none, $\\alpha$, or $\u0394$). This gave six models and for each we fit all the free parameters on the combined category choice data (from both the free-scan and passive revealing conditions) of each participant using maximum likelihood.\n\nIn order to fit the models to empirical data, we needed to take into account that the ideal observer was conditioned on the perceived pixel values, which were noisy versions of the pixel values actually displayed (corrupted by perception noise) and were thus unknown to us. Thus, we integrated out the unknown perceived pixel values in order to compute the actual choice probabilities predicted by the model (Houlsby et al., 2013). This was approximated by a Monte Carlo integral, by simulating each trial 500 times, drawing random samples of the perceived pixel values given the displayed pixel values from the perceptual noise distribution for each revealing. In each simulated trial, we then computed the probability of a participant\u2019s choice according to Equation 11, and finally averaged over simulations to obtain the expected probability of each response category in that trial. For optimizing the values of $\\sigma_{p}$ and the parameters for prior bias, $\\alpha$ and $\u0394$, we conducted a grid search with a resolution $0.1$, $0.1$, and $0.01^{\u2218}$, respectively. For each setting of these parameters, we optimized $\\beta$ and $\u03ba$ (when used) using gradient-based search so that all the parameters were jointly optimized. Table 1 shows the best fit parameters. We used the Bayesian information criterion (computed across all participants) to compare the models by controlling for their differing number of free parameters and chose the best one (Table 2).\n\nWe used the BAS algorithm to predict the pattern of eye movements for each participant individually given the values of $\\sigma_{p}$ and $\u0394$ fitted to their categorization choices and the measured saccadic inaccuracies. This meant that once we fitted categorization choices, eye movements were predicted without any further tuning of parameters. Note that $\\beta$ and $\u03ba$ affected only choice probabilities in the categorization decision process, not the eye-movement selection process described by Equation 1.\n\n### Revealing densities\n\nAs the statistics of stimuli were translationally invariant, the critical features of the optimal solution was the relative locations of the revealing to each other. Therefore, for each trial we first shifted all the revealing locations in that trial equally so that their mean (centre of mass) was located at the centre of the image, thereby removing the variability caused by which part of the image the participants explored in that trial, which was irrelevant to optimality. We then computed the mean density maps by assigning the revealing locations to centers of a 770$\\times$770 grid of bins (the resolution of the images), normalizing the counts, and smoothing the distribution with an isotropic Gaussian filter (std. of 20 bins, ie. $\u223c0.73^{\u2218}$). For a balanced comparison, we computed densities as if each trial had 25 revealings and the three underlying patterns were chosen with equal probability. To achieve this we multiplied the count for the nth revealings by both the relative frequency of first revealings to nth revealings and by the inverse of the frequency of the image type. For each participant, we computed the mean density map across all trials (Figure 3A first column) and the mean-corrected density map for each underlying image type (Figure 3A last three columns) by removing the mean from those averaged for each image type. The density maps for BAS were generated with simulations that used the same trials (image and number of revealings) that the participants performed. We repeated the simulation of each trial 10 times to obtain a reliable Monte Carlo estimate of the BAS revealing density maps marginalized over the unknown perceived pixel values.\n\n### Correlation analysis\n\nTo examine whether the participants\u2019 pattern of eye movements depended on the underlying image, and hence what they saw at the revealing locations, we compared correlations between mean-corrected density maps within and across image types for each participant. In computing the correlation as a function of revealing number, we kept the number of samples used to construct the maps constant. This number of samples was chosen to be the maximum number that still allowed the image type and revealing number to be sampled with equal probability without replacement. To increase the sample size for all revealings we only examined revealings from 5 onwards. For the bar plots, we used about 3 times the number of samples, but weighted each revealing so that the maps were still effectively constructed with an equal number of samples from each revealing number.\n\nTo obtain statistics of the correlations, we split the revealing locations for an image type randomly into two data sets of equal size. This produced 6 different data sets (two for each image type). For within-type correlations, we computed the three correlations (using a Gaussian smoothing kernel with $1.5^{\u2218}$ SD) between the mean-corrected maps of the same image types, and averaged these three correlations across the three image types to obtain a single within-type correlation value. Similarly, for across-type correlations, we computed the six correlations between the mean-corrected maps of different image types (across the two different halves of the split), and averaged these six correlations to obtain a single across-type correlation value. We repeated this procedure 1000 times, using a different random split of the data each time, to obtain the means, SD, and 95% confidence intervals (Figure 3B).\n\nWe also performed the same analysis on the three participants\u2019 pooled data, treating the ensemble as data from an 'average' participant. Here the data sets used to calculate the density maps were thus three times larger than those for the individuals. These results together are shown as participant-self correlations (Figure 3B, left). We applied the same approach to compute participant-BAS correlations. For this, participant- as well as BAS-generated revealing location data were each randomly split in half (as above), and correlations were always computed between a participant- and a BAS-generated data set (Figure 3B, right).\n\nThe correlation between the eye movement patterns derived from correct / incorrect trials and that from BAS was calculated in the same way described above, but only for the 'average' participant as the number of incorrect trials was limited. The p-value reported is the fraction of bootstrapped samples that satisfied the condition $\u03c1_{correct}\\leq\u03c1_{incorrect}$.\n\n### Information gain and efficiency\n\nAccording to the ideal observer, at any point in a trial, the information gain associated with the set of revealings made thus far is defined as $1-H[c|D]$. As described above (Model parameters and data fitting), since we only knew the displayed but not the perceived pixel values, we used Monte Carlo integration to marginalize out the unknown perceived pixel values. To do this, we simulated each experiment 200 times using the parameters of the best fit model, drawing new samples of perceived values for the chosen revealing locations given the displayed pixel values, and then averaged the information gains across runs and trials. Figure 5A shows the average information gain as a function of revealing number across the 200 simulations with the average across-trial SEM for each revealing strategy. To characterize the efficiency of each strategy, $s$, we fit the information vs. revealing number curves from each simulation obtained with the above analysis using a cumulative Weibull distribution: $I_{s}n=1-exp-\\frac{n}{a_{s}}^{b}$, where $n$ is the revealing number, $b$ is a shape parameter shared across strategies (free-scan, passive random, passive ideal BAS, and simulated BAS), and $a_{s}$ is a strategy-specific scale parameter, which captures the overall efficiency of the strategy. As a relative measure of efficiency for comparing any two strategies, we computed the ratio of their $a_{s}$, and obtained 95% confidence intervals by using the 200 simulations as bootstrap samples.\n\n### Heuristics\n\nTo address whether a heuristic algorithm could account for participants\u2019 eye movement patterns, we computed the information gains achieved using several heuristics.\n",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "1d88cd17-e596-4306-ac7f-d0b8a113e609",
+      "submission_id": "868fcb28-32f0-4c4f-841e-e2297a2a0873",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Doris Y Tsao, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12215.018](https://doi.org/10.7554/eLife.12215.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Active sensing in the categorization of visual patterns\" for consideration by eLife. Your article has been favourably reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors. The evaluation has been overseen by this Reviewing Editor and Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nHaving conferred about this paper, we agree that it is acceptable for publication pending revision. However, there was an extended discussion among the reviewers about the extent to which the current results apply to natural vision. The reviewers agree that the authors need to qualify their conclusions to clearly state that while they were trying to emulate natural vision, their task was unnatural in several important ways (e.g. very small exposures, uniform statistics, small saccades not allowed, and reviewing for up to 60s after presentation in the passive conditions), all of which may have changed the participants' strategy from that used in natural vision. Natural vision works under entirely different constrains \u2013 larger exposures, natural scene statistics, all saccades allowed, and limited time. Under these constrains the selection of targets may (or may not) be completely different. These differences between the paradigm used in the study and natural vision should be carefully discussed, and relevant parts of the Abstract and Discussion should be modified accordingly.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The previous decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \"Active sensing in the categorization of visual patterns\" for consideration at eLife. Your full submission has been evaluated by Eve Marder (Senior editor) and three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile all of the reviewers appreciated the significance of the work, they were very concerned about potential confounds due to letting subjects continue viewing the display for 60s after the last revealing. Given this confound, the reviewers were not certain that a revision would adequately deal with this problem, which led to the decision to reject the paper at this time. If you feel you can adequately answer the concerns of this review, the reviewers were sufficiently potentially positive about your manuscript that eLife would allow a submission of a new manuscript that addresses these concerns.\n\nReviewer #1:\n\nSummary\n\nThe present work utilizes an innovative gaze-contingent paradigm where subjects have to identify the category of a texture and can actively reveal locations based on where they saccade to. The authors compare the fixation density maps for the three different stimulus categories and find that they are consistent and category-specific across participants, i.e. each stimulus category evokes a specific pattern of fixations. When revealing locations randomly controlled by the computer the categorization performance decreases indicating that active sensing does increase the information yield for the participants. Next, they construct an ideal observer model that computes the posterior probability of each category given the revealed pixel values, and fit the parameters prior bias, perception noise and decision noise to predict the subject's choice of category. Based on these parameters fitted to the subject's category choice the authors try to predict saccade choices using a Bayesian active sensor algorithm which chooses the saccade location which maximizes the expected information gain, taking into account saccade inaccuracies. They claim that the subject's saccades are predicted well by their Bayesian active sensor algorithm, as the predicted category-specific fixation density maps are significantly correlated with the actual density maps. As a better measure of the goodness of their model they compare the information (in the ideal observer sense) gained by the subject's saccades to the information gained by their simulated saccades, random saccades and saccades based on other strategies. They find that the information gained by the subject's saccades is higher than random saccades and saccades based on three heuristic strategies but lower than the information of the saccades simulated by the Bayesian active sensor, even if prior bias, perception noise and category decision noise are taken into account. They call the latter discrepancy a 30% inefficiency of saccade choice. To show that the saccade choices made by the subject are indeed not optimal in efficiency of making the category choice, they reveal the fixation locations computer-controlled based on the optimal locations predicted by the active Bayesian sensor model without biases and low noise. Thereby, the subject's categorization performance is increased. The efficiency of saccade choice does not vary over time, so there does not appear to be any learning.\n\nRemarks\n\n1) In Figure 1, it is not clear to me, why the patch surrounded by the red circle should have more information about zebra vs. cheetah than other blue patches, so maybe use a better example.\n\n2) In Figure 2C, the blue condition titled Random should be called passive or computer-controlled random locations to avoid confusion. Also, please clarify the term \"gaze-contingent\".\n\n3) In Formula 1, D is not defined.\n\n4) Regarding Figure 4B, I don't understand why the first term of the formula isn't maximal at locations as far as possible from previous locations (i.e. on the borders of the image). Given that spatial correlations of the stimulus decrease with distance, the uncertainty about pixel values at a far distance from known pixel values should be highest.\n\n5) The correlation analysis done in Figure 3 should be repeated with simulated entropy-maximizing saccades, to show that the correlation analysis is meaningful. Just correlating the fixation density maps might not be the best measure to evaluate fit of the simulation, since it does not consider each fixation on a case-by-case basis given the prior information from previous saccades.\n\n6) In addition to the BIC it would be nice to know the cross-validated prediction accuracy of category choice on a testing set.\n\n7) Also, when showing the performance decrease when revealing at random locations, I would have matched the inter-saccadic distribution (including the variance) and the saccadic distance distribution, to ensure the performance decline is not due to the variance in fixation duration or the subject needing to recover from longer saccades.\n\nReviewer #2 (General assessment and major comments (Required)):\n\nThe paper addresses the strategy underlying the selection of gaze targets along the scanpath of fixations. Specifically, the paper compares human selections and performances with those of an optimal Bayesian algorithm. The authors conclude that while humans employ an information-based strategy, this strategy is sub-optimal. They also identify the sources of this sub-optimality and suggest that \"participants select eye movements with the goal of maximizing information about abstract categories that require the integration of information from multiple locations\".\n\nThis is potentially an important paper, which can contribute significantly to the understanding of perceptual processes. The topic is important, the work is, for the most part, elegant and the paper is in general well written. However, there are several crucial points that question the conclusions reached by the authors \u2013 these and other comments are listed below.\n\n1) The authors employ a reductionist method, which is indeed necessary if one wants to reveal underlying mechanisms. However, some of the reductionist choices made in this work fuel the questioning of several of its conclusions. The most concerning reductionist steps are:\n\nA) Small saccades (< 1 deg) were not allowed. The use of small (\"micro\") saccades is task dependent and it may be the case, for example, that with images like those used here a possible strategy is scanning a continuous region. This possibility was \"reduced-out\" here.\n\nB) The exposed area was effectively < 0.5 deg and was scaled down in transparency from the center out \u2013 this reduced-out a meaningful drift-based scanning of the fixational region.\n\nC) The images had uniform statistics, which preclude generalization to natural images.\n\nThe authors mention that \"the task still allowed them to employ natural every-day eye movement strategies as evidenced by the inter-saccadic intervals (mean 408 ms) that were similar to those recorded for everyday activities [\u2026]\" \u2013 evidently, normal ISIs do not indicate a natural strategy \u2013 a) there is much more into an active strategy and b) ISIs seems to be determined by hard-wired circuits that are only slightly modulated in different contexts \u2013 see a variety of tests of ISIs in the last decade.\n\n2) The \"last 60s\" problem. Natural viewing involves a scanpath of fixations. However, natural viewing does not allow a re-scanning of the collection of previous fixation locations. The design of the trial is thus odd\u2013 why were the subjects given those extra 60s at the end of the trial to rescan their revealings? This is not justified in the paper and it is actually hidden, in a way, in the Materials and methods section \u2013 it took me some time to understand that this was the case. The implications of this design are significant:\n\nA) How can the authors relate performance to either of the two different phases of the trial (the \"acquiring\" and the \"rescanning\")?\n\nB) Even in the \"acquiring\" phase, how can the authors rule out brief rescanning of exposed revealings for periods shorter than the threshold period?\n\nC) If performance depended on the perception during these 60s, then what was the underlying strategy while rescanning?\n\nThe authors must describe the procedure clearly at the outset, relate to all these issues explicitly, and explain how they affect (or not) their conclusions.\n\n3) As indicated by the above, the primary characterization of the active strategy here is about which revealing were or should be selected, and less about when or in what order. True, order was a factor during the acquiring phase, but not during the rescanning phase. Order seems to play a role in the correlations in Figure 3B but it is not clear by how much. The collection of revealing locations may indeed be the most relevant factor when trying to categorize an image out of several known images with known structures. This is, however, not the case in most natural cases, in which real-time information is essential.\n\n4) From the above and from further analysis it appears that the strong statements of the Abstract are not supported by the data in the paper.\n\nA) \"Categorization performance was markedly improved when participants were guided to fixate locations selected by an optimal Bayesian active sensor algorithm [\u2026]\" \u2013 this statement sounds as if guiding the next saccade improves performance. This cannot be concluded here because of the \"60 s problem\" \u2013 during rescanning subjects could select any pattern they wanted. Moreover, performance may even depend on the rescanning period only.\n\nB) \"By using [\u2026] we show that a major portion of this apparent suboptimality of fixation locations arises from prior biases, perceptual noise and inaccuracies in eye movements[\u2026]\" \u2013 you do not really show this. You show that if you add these imperfections to your model you get performance level that resembles that of the subjects. However, there are so many ways to impair the performance of your model \u2013 where do you show that these are the crucial factors?\n\nC) \"The central process of selecting fixation locations is around 70% efficient\" \u2013 this is correct only for the specific task and context of your experiment. The statement sounds much more general than that.\n\nD) \"Participants select eye movements with the goal of maximizing information about abstract categories that require the integration of information from multiple locations\" \u2013 again, a statement with a general flavor without such justification \u2013 the statement should be toned and tuned down to reflect the narrow context of the findings.\n\n5) Audience and style. As written now the paper seems to address experts in Bayesian models of perception. Given that it is submitted to eLife I assume that the paper should address primarily, or at least to the same degree, biologists who are interested in understanding perception. And indeed, papers like this form a wonderful opportunity to create a productive dialogue between biologists and theoreticians. For this end, the style of writing must change. The amount of statistical details should be reduced, the biological meaning of the various strategies discussed should be provided, the rational for selecting the BAS algorithm as the optimal strategy should be explained, the meaning of each strategy in terms of actual eye movements in natural scenes should be explained. At the end, the reader should understand the biological meaning of each strategy (that is, a biologically-plausible description of the strategy employed by their subjects in this task, and a strategy they would employ in a natural task), the rational of why one strategy is better than the other, and in what sense humans are sub-optimal.\n\n6) The discussions about active-sensing in the paper are written as if they come from a sort of a theoretical vacuum. Active sensing has been introduced, studied and discussed at various levels for various species and modalities for years, and intensively so for the last decade or two. Nevertheless, the paper sounds as if these concepts are only beginning to be addressed, and as if active vision is mostly covered by addressing saccades scanpath selections. This introduces a huge distortion of the concepts of active sensing and active vision. Active vision is much more than scanpath selections. Eye movements include saccades and drifts, and as far as we know today vision does not occur without the drift movements. Saccades include large and small (\"micro\") saccades, making a continuous spectrum of saccade amplitudes. In this study only large (> 1 deg) saccades were allowed. Thus, this study ignores a substantial portion of visually-crucial eye movements. While this is ok as a reductionist method, it is not ok to ignore the reduced-away components in the discussion and interpretation of the results. Thus:\n\nA) There is no justification to use the term \"eye movements\" in this paper \u2013 the components of eye movements studied here should be termed properly (perhaps use terms like \"fixation scanpath\" or \"saccadic order\" or anything else that is appropriate).\n\nB) Previous results and hypotheses about active sensing/active vision that refer to all kinds of movements must be discussed and referred to when interpreting the current results.\n\nC) The results of the current study should be put in the context of this general active sensing context, and the generality of the conclusions should be phrased accordingly \u2013 mostly, they should be toned down and related to the specific reduced context of this study.\n\nMinor comments:\n\n1) Arbitrary selection of parameters \u2013 please explain the choice of every parameter you use (e.g., the criteria for saccades and fixations).\n\n2) Figure 3B \u2013 please run a shuffling control analysis to show how much of the correlation is order-dependent.\n\nReviewer #3:\n\nThe authors investigated the control of eye movements in a visual categorization task. By using a gaze-contingent paradigm, they could show that eye movement patterns became more specific to the underlying image structure with increasing fixation number. A comparison with a Bayesian active sensor (BAS) model showed that humans were quite efficient, given certain biases and inaccuracies of eye movements.\n\nThe study should be interesting to a broad audience and is well conducted. A few further analyses could strengthen the message.\n\n1) The authors corrected for errors in saccade targeting tangential and orthogonal to saccade direction. However, as they correctly stated in the Discussion, there are also other potential sources of errors due to biases along cardinal directions or the bias to fixate the center of an image. It would be very interesting to see how much of the performance reduction is caused by these biases. It should be possible to assess these biases directly from the existing data.\n\n2) Since there were a lot of incorrect judgments overall, it would be interesting to compare the density maps for correct and incorrect judgments. If eye movements are indeed controlled by an active strategy, the differences and correlations should be more pronounced for correct judgments.\n\n3) The example trial in Figure 4 provides a good illustration of BAS and the maximum entropy variant but it does not allow a quantitative comparison. It would be helpful to show the full distributions of percentile values with respect to BAS and entropy scores.\n\n4) As I understand the task, the revealings stayed on screen after the last revealing for 60 s or an unlimited duration, depending on the condition. The behavior of the subjects after the last revealing should be reported because it could have influenced their perceptual judgment.\n",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b7f9412f-ff40-453d-967f-13115b8ba714",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C1",
+      "claim": "Participants' scan paths follow an active sensing strategy that incorporates information already acquired about the scene and knowledge of the statistical structure of patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a novel gaze-contingent paradigm in a visual categorization task, we show that participants' scan paths follow an active sensing strategy that incorporates information already acquired about the scene and knowledge of the statistical structure of patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the gaze-contingent visual categorization task, including revealing density maps and correlation analyses showing that eye movements depend on image type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "5f385081-0283-4827-a6bb-44a668430e89",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C2",
+      "claim": "Categorization performance was markedly improved when locations were revealed to participants by an optimal Bayesian active sensor algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, categorization performance was markedly improved when locations were revealed to participants by an optimal Bayesian active sensor algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing performance across different revealing conditions shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "6c478bd4-981f-48b8-b577-23e107092208",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C3",
+      "claim": "The central process of selecting fixation locations is around 70% efficient in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that participants select eye movements with the goal of maximizing information about abstract categories that require the integration of information from multiple locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling comparing participants' information gain to that of the BAS algorithm with matched parameters, as shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "728429ce-258e-4d2f-b97c-d23305339e5f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C4",
+      "claim": "A major portion of apparent suboptimality of fixation locations arises from prior biases, perceptual noise and inaccuracies in eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a combination of a Bayesian ideal observer and the active sensor algorithm, we estimate that a major portion of this apparent suboptimality of fixation locations arises from prior biases, perceptual noise and inaccuracies in eye movements, and the central process of selecting fixation locations is around 70% efficient in our task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fitting and simulations showing that when BAS operates with participants' prior biases, perceptual noise, and saccadic inaccuracies, the discrepancy between BAS and participants is markedly reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "b7a80e4b-2739-44cb-91e4-603f73d567df",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C5",
+      "claim": "Humans and other animals direct their sensors to extract task-relevant information efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence suggest that humans and other animals direct their sensors (e.g. their eyes, whiskers, or hands) so as to extract task-relevant information efficiently (Yarbus, 1967; Kleinfeld et al., 2006; Lederman and Klatzky, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "d0781d29-6db3-4767-ae30-7b50ece7e644",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C6",
+      "claim": "The pattern of eye movements used to scan a scene depends on the type of information sought.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in vision, the pattern of eye movements used to scan a scene depends on the type of information sought (Hayhoe and Ballard, 2005; Rothkopf et al., 2007), and has been implied to follow from an active strategy (Najemnik and Geisler, 2005; Renninger et al., 2007; Navalpakkam et al., 2010; Nelson and Cottrell, 2007; Toscani et al., 2013; Chukoskie et al., 2013) in which each saccade depends on the information gathered about the current visual scene and prior knowledge about scene statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "d50f2afc-b449-44b8-bc75-442e006743f4",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C7",
+      "claim": "No studies have shown whether the information acquired by each individual fixation is being optimized.",
+      "claim_type": "EXPLICIT",
+      "source": "However, until now, studies of such active sensing have either been limited to search tasks or to qualitative descriptions of the active sensing process. In particular, no studies have shown whether the information acquired by each individual fixation is being optimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a review of existing literature and identifies a gap in previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f71e0cd2-9dd5-4ce8-9b95-e79e22c93faa",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C8",
+      "claim": "In visual search, there is often a single location in the scene that has all the necessary information (the target).",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast with studies that attempted to quantify the general informativeness of single locations in a scene (Gosselin and Schyns, 2001), and showed that they are the target of fixations humans tend to choose in general (Peterson and Eckstein, 2012; Toscani et al., 2013; Chukoskie et al., 2013), or visual search in which, by the nature of the task, the target location is fully informative by itself (Najemnik and Geisler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about visual search tasks and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f2e9ec88-d540-48da-98d0-efd5cf978374",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C9",
+      "claim": "Eye movements in visual search are well described by the simple mechanism of inhibition of return.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast with studies that attempted to quantify the general informativeness of single locations in a scene (Gosselin and Schyns, 2001), and showed that they are the target of fixations humans tend to choose in general (Peterson and Eckstein, 2012; Toscani et al., 2013; Chukoskie et al., 2013), or visual search in which, by the nature of the task, the target location is fully informative by itself (Najemnik and Geisler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Klein (2000) and represents established knowledge about visual search mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "d3ff1776-64ad-4a41-9370-3d66820bb5ad",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C10",
+      "claim": "Some basic-level categorization tasks can be solved in a single fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "While some basic-level categorization tasks can be solved in a single fixation (Thorpe et al., 1996; Li et al., 2002), many situations require multiple fixations to extract several details at different locations to make a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f7cbc436-5a45-4814-9f15-7267b7516d68",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C11",
+      "claim": "Many situations require multiple fixations to extract several details at different locations to make a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "While some basic-level categorization tasks can be solved in a single fixation (Thorpe et al., 1996; Li et al., 2002), many situations require multiple fixations to extract several details at different locations to make a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about visual perception and is contrasted with single-fixation tasks.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a905cb86-8e15-4abc-8e9d-eb0ccdadcd8f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C12",
+      "claim": "When people extract abstract information, they need to integrate a series of detailed observations across the scene, relying heavily on foveal vision information with peripheral vision playing a more minor role.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when people have to extract abstract information (eg., how long the visitor has been away) they need to integrate a series of detailed observations (such as facial expression, postures and gestures of the people) across the scene, relying heavily on foveal vision information with peripheral vision playing a more minor role (Levi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Levi (2008) and represents established knowledge about visual perception.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "53434d3f-ce2b-4ea3-b078-3608c074e326",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C13",
+      "claim": "Categorization performance improved with the number of revealings for each participant.",
+      "claim_type": "EXPLICIT",
+      "source": "In the free-scan (active) condition, categorization performance improved with the number of revealings for each participant (Figure 2C, red points), indicating the successful integration of information across a large number of fixations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "cf173188-bd9f-4808-95f7-e72fddab15c6",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C14",
+      "claim": "The inter-saccadic intervals in the experiment (mean 408 ms) were similar though somewhat shorter than those recorded for everyday activities (mean 497 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Although we used a gaze-contingent display, the task still allowed participants to employ natural every-day eye movement strategies, consistent with the inter-saccadic intervals (mean 408 ms) and relative saccade size (0.75\u20133.9 normalized by the three different relevant length scales of the stimuli) that were similar though somewhat shorter than those recorded for everyday activities (e.g. tea making; mean inter-saccadic interval 497 ms, and 0.95\u201319 relative saccade size normalized by the size of different fixated objects; Hayhoe et al., 2003; Land and Tatler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements compared to cited literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "5b08a0a2-5a32-42df-a894-786fef7c55e0",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C15",
+      "claim": "The pattern of revealings strongly depended on image type.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the pattern of revealings strongly depended on image type (Figure 3A, first four rows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by revealing density maps shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "53510ece-bdea-4688-9392-9ee456b48b78",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C16",
+      "claim": "Eye movement patterns for images of the same type were positively correlated for each participant (p<0.001 in all cases).",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of eye movements for images of the same type were positively correlated for each participant (Figure 3B, left, orange bars; p<0.001 in all cases), whereas eye movements for images of different types were negatively correlated (Figure 3B, left, purple bars; p<0.001 in all cases).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of correlation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "0a05b555-1107-4178-858f-e72e2511dc56",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C17",
+      "claim": "Eye movements for images of different types were negatively correlated (p<0.001 in all cases).",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of eye movements for images of the same type were positively correlated for each participant (Figure 3B, left, orange bars; p<0.001 in all cases), whereas eye movements for images of different types were negatively correlated (Figure 3B, left, purple bars; p<0.001 in all cases).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of correlation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "07ded1c4-0977-4544-ac31-7edc2d20edd3",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C18",
+      "claim": "Eye movement patterns became increasingly differentiated over the course of the trial as progressively more of the image was revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that eye movement patterns became increasingly differentiated over the course of the trial as progressively more of the image was revealed (Figure 3B, left, curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data showing correlations as a function of revealing number in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "810ea7bd-cd1c-40cf-9576-e14f6ca94736",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C19",
+      "claim": "The dependence of the eye movement patterns on the underlying image type shows that participants employed an active sensing strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "The dependence of the eye movement patterns on the underlying image type shows that participants employed an active sensing strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the experimental data showing image-type-dependent eye movements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "fadd770f-abc8-452a-93c6-9ea8ef845be7",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C20",
+      "claim": "When the revealings were drawn randomly from an isotropic Gaussian centered on the image, performance was substantially impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether this active strategy used by our participants contributed to performance improvement, we examined the same participants in a passive revealing condition. When the revealings were drawn randomly from an isotropic Gaussian centered on the image, performance was substantially impaired (Figure 2C, blue points), indicating that participants' decision performance benefited from their active sensing strategy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing active and passive conditions shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "c0a45732-9a83-47e4-8491-943e1c93739d",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C21",
+      "claim": "Participants' decision performance benefited from their active sensing strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "When the revealings were drawn randomly from an isotropic Gaussian centered on the image, performance was substantially impaired (Figure 2C, blue points), indicating that participants' decision performance benefited from their active sensing strategy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference drawn from comparing performance between active and passive revealing conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "e7aaaa96-1666-402f-8ae0-bfce6d8db99d",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C22",
+      "claim": "After the final revealing, participants rescanned on average for 5.0 s in the active condition and 6.4 s in the passive random condition before making a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "After the final revealing, participants rescanned only briefly, on average for 5.0 s in the active condition, 6.4 s in the passive random condition before making a decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements of rescanning times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "9a98e942-268c-4a97-afc6-8e0918d34500",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C23",
+      "claim": "Participants' performance did not improve with increased rescanning time; instead it correlated negatively with rescanning time for 2 out of 3 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, their performance did not improve with increased rescanning time, instead it correlated negatively with rescanning time for 2 out of 3 participants, such that the probability of a correct decision for rescanning times at the 25th and 75th percentiles of the rescanning time distribution fell from 0.77 to 0.54 (p<0.001) and from 0.77 to 0.66 (p<0.03), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the relationship between rescanning time and performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "87e3c180-7aab-4aad-a7eb-759abd252199",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C24",
+      "claim": "Longer rescanning times indicate when participants are uncertain rather than providing the main source of information for their decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that longer rescanning times indicate when participants are uncertain rather than providing the main source of information for their decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the negative correlation between rescanning time and performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a83e8473-6926-4961-8508-502b5726b844",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C25",
+      "claim": "Additional revealings during the original scanning period clearly benefit performance when chosen appropriately.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to additional revealings during the original scanning period which clearly benefit performance when chosen appropriately (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by performance data as a function of revealing number shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f85cd2d8-73c0-435c-a3b6-7988a5e4e6d1",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C26",
+      "claim": "The revealing density maps for participants who were not allowed to rescan were very similar to the maps of participants who were allowed to rescan (average within-type vs. across-type correlation across the two groups: 0.63 vs. \u22120.30).",
+      "claim_type": "EXPLICIT",
+      "source": "The revealing density maps for these participants were very similar to the maps of participants who were allowed to rescan (average within-type vs. across-type correlation across the two groups of participants: 0.63 vs. \u22120.30) and performance was also similar (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1), although as expected slightly worse without rescanning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis comparing the two groups of participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "83885e7f-47fb-48a9-9be1-d489b7e94742",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C27",
+      "claim": "Allowing rescanning did not substantially change participants' revealing strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that allowing rescanning did not substantially change participants' revealing strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from comparing participants with and without rescanning allowed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "eafaf1d7-af83-450e-90b7-4719be3ffe22",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C28",
+      "claim": "The best ideal observer model (4 parameters in total) provided a close match to the participants' performance both in the active and passive random-revealing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The best model (4 parameters in total) provided a close match to the participants' performance both in the active and passive random-revealing conditions (Figure 2C, red and blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model fitting results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "fdab8d23-f1d6-4e81-a6c4-801facd94a8f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C35",
+      "claim": "Participants' active revealings were 2.93 (95% confidence interval [CI], 2.60\u20133.32) times more efficient than random revealings.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants' active revealings (Figure 5A\u2013B, red lines) were 2.93 (95% confidence interval [CI], 2.60\u20133.32) times more efficient than random revealings (Figure 5A, blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by information gain analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "60b20334-48c1-454b-be09-c1caaa6ef265",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C36",
+      "claim": "Participants' revealings were 1.81\u20131.92 times more efficient than three heuristic strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants' active revealings (red lines, as in A) were 1.81 (95% CI, 1.68\u20131.94), 1.85 (95% CI, 1.72\u20131.99), and 1.92 (95% CI, 1.74\u20132.04) times more efficient in gathering information than these heuristics, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by information gain analysis comparing participants to heuristic strategies shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "b60cde85-981e-474b-8332-d851ea357e9e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C37",
+      "claim": "Participants' active revealings were less efficient by a factor of 2.48 (95% CI, 2.33\u20132.62) than the information provided by revealings generated by the BAS algorithm with 'idealized' parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, participants' active revealings were less efficient by a factor of 2.48 (95% CI, 2.33\u20132.62) than the information provided by revealings generated by the BAS algorithm with 'idealized' parameters: minimal perception noise (2\u20133 times lower than our participants'; see Materials and methods) and no prior biases or saccadic inaccuracies (Figure 5A, black lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by information gain analysis comparing participants to ideal BAS shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "88222169-c052-44d7-a3ec-12028f14c42c",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C38",
+      "claim": "In the passive ideal BAS condition, participants only rescanned the revealed locations for an average of 4.4 s after the final revealing, less than in the active and passive random conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this condition, participants only rescanned the revealed locations for a short amount of time after the final revealing (average of 4.4 s), less than in the active and passive random conditions, thus their increased efficiency could not be attributed to longer rescanning times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements of rescanning times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "7293fe7a-0488-4592-9c0c-433c0e7838ac",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C39",
+      "claim": "When BAS operated with participants' prior biases, perceptual noise and typical saccadic inaccuracies, the discrepancy between the informativeness of BAS-generated revealings compared to that of participants' revealings was markedly reduced (BAS/free-scan efficiency = 1.45, 95% CI, 1.37\u20131.53).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we computed the information gain provided by BAS when operating with participants' prior biases, perceptual noise and the typical saccadic inaccuracies as described above, the discrepancy between the informativeness of BAS-generated revealings compared to that of participants' revealings was markedly reduced (Figure 5A, green lines, BAS/free-scan efficiency = 1.45, 95% CI, 1.37\u20131.53).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by information gain analysis with matched BAS parameters shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a406eea4-8cbf-4fad-99e3-3e70d13217eb",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C40",
+      "claim": "Efficiency remained stable over the whole course of the experiment, suggesting there was minimal, if any, learning required in the free-scan task.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the role of learning in participants' active sensing strategy, we computed the relative efficiency of each of the free-scan sessions of our experiment, spanning multiple days, compared to the final session (Figure 5\u2014figure supplement 1). We found that efficiency remained stable over the whole course of the experiment, suggesting there was minimal, if any, learning required in the free-scan task.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by efficiency analysis across sessions shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "4010da84-54d1-404d-8ad3-b99ebae2ae43",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C41",
+      "claim": "Participants' eye movements were substantially more efficient than heuristic strategies that only employed a subset of the elements of a fully closed-loop active sensing strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our participants' eye movements were substantially more efficient than heuristic strategies that only employed a subset of the elements of a fully closed-loop active sensing strategy, and were about 70% as efficient as the optimal active sensor that operated with the participants' own prior bias, perception noise, and saccadic inaccuracies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by information gain analysis comparing participants to heuristic strategies shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "22af8d29-298d-4eb6-ad4a-e0cd545c5ae6",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C42",
+      "claim": "Participants' eye movements were about 70% as efficient as the optimal active sensor that operated with the participants' own prior bias, perception noise, and saccadic inaccuracies.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our participants' eye movements were substantially more efficient than heuristic strategies that only employed a subset of the elements of a fully closed-loop active sensing strategy, and were about 70% as efficient as the optimal active sensor that operated with the participants' own prior bias, perception noise, and saccadic inaccuracies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by information gain analysis comparing participants to matched BAS shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "6a93b893-fdf0-4170-96bd-5a9df91f0592",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C43",
+      "claim": "The 30% inefficiency found may be due to unmodeled constraints in human eye movement strategies, such as biases for cardinal directions or fixating the centre of an image.",
+      "claim_type": "EXPLICIT",
+      "source": "The 30% inefficiency we found may be due to unmodeled constraints in human eye movement strategies, such as the biases for cardinal directions or fixating the centre of an image that were apparent in our data (Figure 3A) and that may also be beneficial in natural environments (Tatler and Vincent, 2008; 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is speculative reasoning about potential sources of the observed inefficiency, supported by observed biases in the data and citations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "12a2b1df-6077-43dc-9bbc-39be5bde2c79",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C44",
+      "claim": "Biases for cardinal directions or fixating the centre of an image may be beneficial in natural environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The 30% inefficiency we found may be due to unmodeled constraints in human eye movement strategies, such as the biases for cardinal directions or fixating the centre of an image that were apparent in our data (Figure 3A) and that may also be beneficial in natural environments (Tatler and Vincent, 2008; 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "168f6a04-ae54-4860-ae52-254aab329e30",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C45",
+      "claim": "The estimate of 70% efficiency would become a lower bound on the efficiency of the planning process if biases for cardinal directions or locations turn out to be part of the execution process.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, as we were interested in the degree of (sub)optimality of the planning component, we chose not to factor out potential biases for cardinal directions or locations. Should such suboptimalities turn out to be part of the execution process, then our estimate of 70% would become a lower bound on the efficiency of the planning process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical inference about the interpretation of the efficiency estimate under different assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "c971a05f-b84e-453a-84a8-0dbe31a6f95b",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C46",
+      "claim": "In one study using a simple object localization task, the choice of fixation locations was close to random despite obvious learning of the underlying stimulus statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results contrast with recent studies suggesting that the pattern of eye movements do not follow an active sensing strategy. In one study, using a simple object localization task, it was found that the choice of fixation locations was close to random despite obvious learning of the underlying stimulus statistics (Holm et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Holm et al. (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "ea2da5fd-56b7-4c06-8db4-1f03073574aa",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C47",
+      "claim": "In a study using a simplified visual search task, participants' eye movements were virtually unaffected by the configuration of the visual stimuli presented in the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study, using a simplified visual search task, participants' eye movements were virtually unaffected by the configuration of the visual stimuli presented in the trial (Morvan and Maloney, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Morvan and Maloney (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "603a9a37-09e8-4f4f-bd56-48c60b8c2e1b",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C48",
+      "claim": "Participants used both their prior knowledge of stimulus statistics as well as evidence accumulated about the current visual scene to guide their eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that participants used both their prior knowledge of stimulus statistics as well as evidence accumulated about the current visual scene to guide their eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing image-type-dependent eye movements and correlation with BAS predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "fc6e0db5-c10d-41e5-a778-ff3c75b4cfaa",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C49",
+      "claim": "Better performance in the current study may be due to the more naturalistic task, which involves the extraction of abstract latent features, revealing more typical processing of the sensorimotor system.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that better performance in our case may be due to our more naturalistic task, which involves the extraction of abstract latent features, revealing more typical processing of the sensorimotor system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about why the current results differ from previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "5cbf1088-d750-434c-85b7-a0eb1e904a9c",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C50",
+      "claim": "The basic summary statistics of (macro-)saccades in the task (average size and inter-saccadic intervals) were similar to those found in natural vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the basic summary statistics of (macro-)saccades in our task (average size and inter-saccadic intervals) were similar to those found in natural vision (Hayhoe et al., 2003; Land and Tatler, 2009), and there was a lack of adaptation to the task over the course of several days of free-scan sessions (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of experimental measurements to cited literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "583e35e0-ba4b-48d8-b1f5-a85b22855298",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C51",
+      "claim": "There was a lack of adaptation to the task over the course of several days of free-scan sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the basic summary statistics of (macro-)saccades in our task (average size and inter-saccadic intervals) were similar to those found in natural vision (Hayhoe et al., 2003; Land and Tatler, 2009), and there was a lack of adaptation to the task over the course of several days of free-scan sessions (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by efficiency analysis across sessions shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "5186ff90-b074-4827-a29f-c9168765bb70",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C52",
+      "claim": "The lack of adaptation and similarity to natural eye movement statistics suggest that participants did not depart dramatically from their natural eye movement strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "These seem to suggest, at least indirectly, that participants did not depart dramatically from their natural eye movement strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the similarity of eye movement statistics to natural vision and lack of learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "b56c0c09-be85-4f17-a753-6c8a78a7b791",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C53",
+      "claim": "The task focuses on the voluntary component of eye movements (scan paths of fixations) rather than the more involuntary processes of micro-saccades and drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our task focuses on the voluntary component of eye movements, that is the scan paths of fixations, rather than the more involuntary processes of micro-saccades and drift (Rolfs, 2009; Ko et al., 2010; Rucci et al., 2007; Poletti et al., 2013; Kuang et al., 2012), which did not trigger new revealings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a design feature of the experiment and is supported by citations about micro-saccades and drift.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "76db3687-5a77-447c-ad3c-8f5f7a7a3239",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C54",
+      "claim": "In the task, involuntary processes are likely to be used for extracting information within each revealed patch, whereas high-level categorization required macro-saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in our task these involuntary processes are likely to be used for extracting information within each revealed patch, whereas high-level categorization required macro-saccades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the role of different eye movement types in the task based on the spatial scales involved.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "b24fb625-fd2f-4be1-b381-b3529111615f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C55",
+      "claim": "The standard deviation of involuntary eye movements (0.22\u00b0) is similar to the Gaussian apertures used (SD of 0.18\u00b0), whereas the smallest length scale of the stimuli (0.91\u00b0) is 4 times larger.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because these involuntary processes cover an area with a standard deviation (SD) on the order of 0.22\u00b0 (over the course of each fixation; Rolfs, 2009), which is similar to our Gaussian apertures (SD of 0.18\u00b0), whereas the smallest length scale of our stimuli (0.91\u00b0) is 4 times larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of measured values from the literature and experimental parameters.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "9fa3790b-30b3-4c99-a2d4-56ba7bccf64e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C56",
+      "claim": "In natural scenes with finer structure, micro-saccades and drift may contribute more to abstract feature extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is possible that in natural scenes with finer structure, micro-saccades and drift may contribute more to abstract feature extraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about how the findings might generalize to different stimuli.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "17bbc8be-a720-47e7-bbd5-991f7540368d",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C57",
+      "claim": "Natural image statistics are often assumed to be spatially stationary on average but usually include local non-stationarities.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an approximation to natural image statistics that are often assumed to be spatially stationary on average (eg. Field, 1987) but usually include local non-stationarities (eg. different objects with different characteristic spatial frequencies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about natural image statistics and is supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "4f0c68d2-b920-4962-b6d7-361f1e67f449",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C58",
+      "claim": "The stimuli were more naturalistic than many stimuli used in active sensing studies of visual search while still allowing rigorous control and measurement of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our stimuli were more naturalistic than many of the stimuli used in active sensing studies of visual search (eg. simple 1/f noise) while still allowing a rigorous control and measurement of the amount of high-level category information available at any potential revealing location which would not have been possible with natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a comparison of the current stimuli to those used in previous studies and an assertion about their advantages.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "d8936ce8-d4a2-49d5-bbee-8fe814c3bd86",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C59",
+      "claim": "The task limited the number of revealings in each trial rather than the time, although the temporal aspects of the eye movements (inter-saccadic intervals) were similar to eye movements with natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, natural vision works under time constraints. Our task limited the number of revealings in each trial rather than the time, although the temporal aspects of the eye movements (inter-saccadic intervals) were similar to eye movements with natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a design feature of the experiment and compares temporal aspects to natural vision.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "898ce05e-fd2d-4173-afc0-bca489f25f49",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C60",
+      "claim": "In a control experiment, the additional time allowed for rescanning the revealed locations did not affect the initial scanning strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed in a control experiment that the additional time allowed for rescanning the revealed locations did not affect the initial scanning strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the control experiment comparing participants with and without rescanning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "d0b993ee-097d-41f1-8b6c-ea64a47acfd4",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C61",
+      "claim": "It may be that participants are more efficient in naturalistic settings than the 70% found in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "It may well be that participants are more efficient in such naturalistic settings than the 70% we found in our task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about how efficiency might differ in more naturalistic settings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "4b7fd8e8-80e1-4ab0-bb67-6e6e465dadd8",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C62",
+      "claim": "By using a gaze-contingent display, the study was able to isolate the top-down strategies of eye movement selection.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by using a gaze-contingent display we were able to isolate the top-down strategies of eye movement selection, thereby complementing studies which examined the influence of low-level visual features and salience (Itti and Koch, 2000; Wismeijer and Gegenfurtner, 2012) on eye movement selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological contribution of the study and is supported by citations to related work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "1fa23a04-16ce-4c05-af52-a03bd701884a",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C63",
+      "claim": "The task focuses on integrating low-level visual information into an abstract category, complementing studies that examine the effect of target value or more cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our task focuses on integrating low-level visual information into an abstract category thus complementing studies that examine the effect of target value (Navalpakkam et al., 2010; Krajbich et al., 2010; Markowitz et al., 2011; Schutz et al., 2012) or more cognitive tasks that use eye movement (Nelson and Cottrell, 2007) or button-pressing for information search (Castro et al., 2009; Gureckis and Markant, 2009; Borji and Itti, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a contribution of the study and is supported by citations to related work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "9e052e8a-6711-4710-8386-7d1285f167e8",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C64",
+      "claim": "Some previous studies used a similar Bayesian formalism to obtain active learning strategies specific to their tasks and showed that humans perform active learning when given the opportunity to consciously deliberate.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these studies used a similar Bayesian formalism to obtain the active learning strategies specific to their tasks and showed that humans perform active learning when given the opportunity to consciously deliberate from which location in a scene they should gather information next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from previous studies that are implicitly referenced in the preceding sentence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a4e5d66f-7b82-4320-a87f-8fec64541c4b",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C65",
+      "claim": "The work shows that high-efficiency active sensing is a natural strategy for eye movements that humans adopt without overt deliberation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our work shows that high-efficiency active sensing is a natural strategy for eye movements that humans adopt without overt deliberation, as evidenced by the inter-saccadic intervals matching naturalistic tasks and the fact that our participants reached near-asymptotic efficiency already in the first session of our task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing natural eye movement timing and lack of learning effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "edc09cfa-7a70-471f-a276-96cca00db19e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C66",
+      "claim": "By using a pattern categorization task, the study could ensure that no single location was especially informative but that the task required an integration of information from multiple locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, by using a pattern categorization task we could ensure that no single location was especially informative but that the task required an integration of information from multiple locations both to select the next eye movement and to solve the task, and specifically that a closed-loop strategy was necessary for solving the task efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a design feature of the experiment and its implications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "3835cc6f-8eb2-435f-9a15-4b852d6ef6ee",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C67",
+      "claim": "Most previous studies have not addressed the important interplay between information gathering and fixation selection characteristic of naturalistic active sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, most previous studies have not addressed the important interplay between information gathering and fixation selection characteristic of naturalistic active sensing: that, in general, the most informative location is ever-changing, dependent on the history of fixations one has already performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a review of previous literature and identifies a gap that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "32f546cb-e31a-4d4d-988d-591810e6c253",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C68",
+      "claim": "The formalism extends the range of active sensing to tasks which have arbitrary, not necessarily spatial, latent features (such as categories).",
+      "claim_type": "EXPLICIT",
+      "source": "Third, in contrast to active sensing for simple visual search (Najemnik and Geisler, 2005; Navalpakkam et al., 2010; Morvan and Maloney, 2012), our formalism extends the range of active sensing to tasks which have arbitrary, not necessarily spatial, latent features (such as categories).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological contribution of the study and contrasts it with previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "9e4c57f0-e575-44ad-a24e-735a0efab827",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C69",
+      "claim": "For the first time, the study provides a fixation-by-fixation analysis of information gathering under active eye movements by carefully matching the observer model to participants' performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it provides the first fixation-by-fixation analysis of information gathering under active eye movements by carefully matching our observer model to participants' performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a novel contribution of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "36c79c77-9e7f-4e91-84f9-067a0bb7480a",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C70",
+      "claim": "For the first time, the study was able to dissociate the contributions of the eye-movement selection process from those of perceptual, motor, and decision processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, for the first time, we were able to dissociate the contributions of the eye-movement selection process from those of perceptual, motor, and decision processes, identify predominant sources of apparent sub-optimality in active sensing, and quantify the efficiency of choosing each individual fixation throughout scanning a whole scene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a novel contribution of the study enabled by the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "3d727222-1aad-4658-a593-6c76daa570fa",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C71",
+      "claim": "The approach is amenable to multiple tasks in different perceptual domains as well as high-level cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these features make our approach amenable to multiple tasks in different perceptual domains (Kleinfeld et al., 2006), as well as high-level cognitive tasks such as estimating the age or socio-economic status of people in a scene (Yarbus, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the generalizability of the approach, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a3d4c48a-cd04-43c1-b761-196cf6f55d25",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C72",
+      "claim": "Three naive participants (aged 25\u201335 years) took part in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Three naive participants (aged 25\u201335 years, none of them were authors or neuroscientists) took part in the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "964f98e4-8b8f-4f14-af88-6e7ed10be6d9",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C73",
+      "claim": "All participants were neurologically healthy, had normal or corrected to normal vision and gave their informed consent before participating.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were neurologically healthy, had normal or corrected to normal vision and gave their informed consent before participating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about participant characteristics and ethical procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "716cbba8-6515-4da4-a94a-1d0d6564d0e5",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C74",
+      "claim": "The study was approved by the institutional ethics committee.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the institutional ethics committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "887621e9-9665-47fe-b006-cdc7adb51334",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C75",
+      "claim": "Each experiment took approximately 12 hr across 6 days (2 hr per day).",
+      "claim_type": "EXPLICIT",
+      "source": "Each experiment took approximately 12 hr across 6 days (2 hr per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "297260c4-28fb-422f-9aaf-d74df6eb5893",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C82",
+      "claim": "Having two different types within the stripy pattern category ensured that the optimal scan path depended on the image.",
+      "claim_type": "EXPLICIT",
+      "source": "Having two different types within the stripy pattern category ensured that the optimal scan path depended on the image (otherwise, always scanning in one direction where the length scales were different would be optimal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a design rationale explaining why two stripy types were used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f7b8eca3-67d0-466c-9f37-164126a85acc",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C83",
+      "claim": "Categorization performance was perfect in training sessions for all participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The training sessions ensured that participants could learn the statistics of the image patterns. Categorization performance was perfect in training sessions for all participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about participant performance in training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "599b47f8-908f-4560-86e4-2346396cd5d1",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C84",
+      "claim": "All participants achieved an average performance of 70% accuracy or higher in free-scan familiarization sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants achieved an average performance of 70% accuracy or higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about participant performance in familiarization sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "a26532b9-c0a8-4bfa-be09-602d724d1ab1",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C85",
+      "claim": "The unknown, random stopping number of revealings served to encourage participants to be greedy in their information seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "The unknown, random stopping number of revealings served to encourage participants to be greedy in their information seeking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a design rationale explaining the purpose of the random stopping rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "5eea920b-d8d8-4e5f-9396-b48db70750b5",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C89",
+      "claim": "Saccadic variability and bias were included in the BAS model based on measurements made independently in a group of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to take into account basic biological constraints on the accuracy of eye movements, we included saccadic variability and bias in the model based on measurements made independently in a group of participants which took into account both the standard deviation and bias of saccades both along and orthogonal (standard deviation only) to the desired saccade direction as a function of desired amplitude (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a description of the modeling approach and is supported by measurements shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "f0511c29-1442-4b2b-8486-fc1b446358b7",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C92",
+      "claim": "The Bayesian information criterion was used to compare models by controlling for their differing number of free parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Bayesian information criterion (computed across all participants) to compare the models by controlling for their differing number of free parameters and chose the best one (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a description of the model selection approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "bb763eb0-f063-4383-8c56-dd7df08dab2f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C93",
+      "claim": "Once categorization choices were fitted, eye movements were predicted without any further tuning of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This meant that once we fitted categorization choices, eye movements were predicted without any further tuning of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a description of the modeling approach emphasizing that eye movement predictions were parameter-free.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "414a5d47-43be-491d-9569-1b7ed8af9272",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C94",
+      "claim": "The critical features of the optimal solution were the relative locations of the revealings to each other due to the translationally invariant statistics of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "As the statistics of stimuli were translationally invariant, the critical features of the optimal solution was the relative locations of the revealing to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about what matters for optimality given the stimulus properties.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "270ef12c-3af2-4c07-9e52-aa630e536012",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "claim_id": "C95",
+      "claim": "For each trial, all revealing locations were shifted equally so that their mean was located at the centre of the image, thereby removing variability caused by which part of the image participants explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, for each trial we first shifted all the revealing locations in that trial equally so that their mean (centre of mass) was located at the centre of the image, thereby removing the variability caused by which part of the image the participants explored in that trial, which was irrelevant to optimality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a description of the data analysis method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Participants employed an active sensing strategy in which eye movement patterns depended on the underlying image type. Eye movements for images of the same type were positively correlated (p<0.001), while movements for different types were negatively correlated (p<0.001), with differentiation increasing over the course of trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 provide strong statistical evidence (p<0.001) from revealing density maps and correlation analyses showing image-type-dependent eye movements. C19 appropriately infers active sensing from this pattern dependence. The convergence of multiple analyses supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "572d5fb1-6584-427e-a670-df85ab5860cf",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Participants' categorization performance benefited from their active sensing strategy compared to passive random revealing, and performance improved with appropriately chosen additional revealings during scanning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, and C25 are directly supported by experimental data in Figure 2C comparing active vs. passive conditions. C21 is a reasonable inference from the performance difference. The comparison provides clear evidence for the benefit of active control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "0a1e8616-816f-40cb-98db-72ddb0d59c83",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Categorization performance improved with revealing number during active scanning, but rescanning time after the final revealing was brief and negatively correlated with performance, suggesting rescanning indicates uncertainty rather than providing primary information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C13 is supported by Figure 2C data. C22 provides measured rescanning times. C23 reports significant negative correlations (p<0.001, p<0.03) for 2/3 participants. C24 is a reasonable inference from the negative correlation pattern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "c26d462b-0f61-4065-afe4-87055fe43f2a",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A control experiment showed that allowing rescanning did not substantially change participants' revealing strategy, with similar revealing density maps (within-type correlation 0.63 vs. across-type -0.30) between groups with and without rescanning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C26 provides quantitative correlation data comparing groups. C27 and C60 draw appropriate inferences from this comparison. The control experiment adequately addresses whether the rescanning period influenced the primary scanning strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "505c4d25-3d56-4001-bb4d-7926b3d65ca8",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A Bayesian ideal observer model with 4 parameters (perception noise, prior bias, stimulus-dependent and stimulus-independent decision noise) provided a close match to participants' performance in both active and passive conditions, selected using Bayesian information criterion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C28 is supported by model fits shown in Figure 2C and Tables 1-2. C92 describes the appropriate model selection procedure. The model comparison is systematic and the best model is clearly identified, though the manuscript could benefit from reporting goodness-of-fit statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "e1daba9b-9b7e-413b-9d7b-32bcf793d813",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Participants' active revealings were 2.93 times more efficient than random revealings and 1.81-1.92 times more efficient than heuristic strategies, but 2.48 times less efficient than ideal BAS with minimal noise and no biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 report efficiency ratios with 95% confidence intervals from information gain analysis (Figure 5A-B). C38 rules out rescanning time as an explanation. The quantitative comparisons are well-supported, though the efficiency metric depends on the validity of the ideal observer model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "162e4f0e-1891-460e-b7b0-17e5d857af43",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The central process of selecting fixation locations is approximately 70% efficient, with major sources of apparent suboptimality arising from prior biases, perceptual noise, and saccadic inaccuracies. When BAS operated with participants' constraints, the efficiency gap was reduced to 1.45 (95% CI: 1.37-1.53).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C39 provides quantitative evidence that matching BAS to participant constraints markedly reduces the efficiency gap. C3 and C42 appropriately calculate ~70% efficiency (1/1.45). C4 correctly attributes suboptimality sources. The decomposition is logical and well-supported by the modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "1a8e4f6d-5dd8-4dd1-9fb4-26d9c363ca40",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Participants' eye movements were substantially more efficient than heuristic strategies and used both prior knowledge of stimulus statistics and evidence accumulated about the current scene to guide fixations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C41 is supported by comparisons to heuristics in Figure 5B. C48 is supported by the image-type-dependent eye movements and correlation with BAS predictions. The convergence of efficiency analysis and pattern analysis supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "726608c4-60df-48b7-931d-717bfba3b08e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Efficiency remained stable across experimental sessions spanning multiple days, suggesting minimal learning was required and that high-efficiency active sensing is a natural strategy adopted without overt deliberation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C40 and C51 are supported by efficiency analysis in Figure 5\u2014figure supplement 1. C65 appropriately infers that stable efficiency and natural eye movement timing indicate automatic rather than deliberative strategy. The lack of learning effect is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "96d2dba3-35b7-41bc-9413-e52670960fc4",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inter-saccadic intervals (mean 408 ms) and saccade sizes were similar to those in natural vision (mean 497 ms for everyday activities), suggesting participants did not depart dramatically from natural eye movement strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C14 and C50 provide measured values compared to cited literature. C52 draws a reasonable inference from the similarity. However, the conclusion is somewhat indirect and the 18% difference in inter-saccadic intervals is non-trivial, though the authors acknowledge it is 'somewhat shorter.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "b716d0c7-1768-4d3b-adac-ff70af7c4e8c",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed 30% inefficiency may be due to unmodeled constraints such as biases for cardinal directions or center fixation, which may be beneficial in natural environments. If these are execution rather than planning suboptimalities, the 70% efficiency estimate becomes a lower bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C43 is speculative reasoning supported by observed biases in Figure 3A and citations. C44 is speculative with citation support. C45 is logical inference about interpretation. However, these remain hypotheses without direct testing, making the result uncertain despite reasonable speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "ea7e9edb-1152-40ce-9e5c-72a6f101d35c",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Saccadic variability and bias were measured independently and incorporated into the BAS model, accounting for standard deviation and bias along and orthogonal to the desired saccade direction as a function of amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C89 is supported by measurements shown in Figure 3\u2014figure supplement 2. The independent measurement and incorporation into the model is methodologically sound and important for fair comparison between participants and BAS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "dfb91f1a-5b58-4b78-9837-09ef4c0e5f00",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The task focused on voluntary macro-saccades rather than involuntary micro-saccades and drift. Involuntary processes (SD ~0.22\u00b0) were likely used within revealed patches (SD 0.18\u00b0), while categorization required macro-saccades given the larger stimulus length scales (0.91\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C53 describes the experimental design with appropriate citations. C55 provides quantitative comparison of spatial scales. C54 is reasonable inference from these scales. C56 is appropriate speculation about generalization. The spatial scale argument is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study makes several methodological contributions: isolating top-down eye movement strategies using gaze-contingent display, requiring information integration across multiple locations, extending active sensing to non-spatial latent features, providing fixation-by-fixation information analysis, and dissociating eye-movement selection from perceptual/motor/decision processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 describe methodological contributions that are well-supported by the experimental design and analysis approach. The gaze-contingent paradigm, pattern categorization task, Bayesian framework, and efficiency decomposition represent genuine advances over prior work as cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "4362d0f4-f1aa-4440-80a2-06d26f2c4279",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The current results contrast with recent studies showing random or stimulus-independent eye movements. Better performance may be due to the more naturalistic task involving extraction of abstract latent features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C46 and C47 accurately cite contrasting prior work. However, C49 is purely speculative about why results differ. Without systematic comparison of task features or additional experiments, the explanation remains uncertain despite being plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "4cf0956c-e3fb-4642-975e-ffa824dfc574",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The stimuli had stationary statistics approximating natural images, were more naturalistic than typical active sensing stimuli while allowing rigorous information control, and the task limited revealings rather than time. Participants may be more efficient in fully naturalistic settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C57 and C58 appropriately characterize the stimuli relative to natural images and prior studies. C59 describes the experimental constraint. C61 is reasonable speculation about generalization. The characterization of stimulus properties and task constraints is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Three naive participants (aged 25-35) completed the experiment over 12 hours across 6 days. All were neurologically healthy with normal/corrected vision, gave informed consent, and the study was ethically approved. Participants achieved perfect performance in training and \u226570% accuracy in familiarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75, C83-C84 provide factual descriptions of participants, procedures, and performance criteria. These are straightforward methodological details that are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "8ef98f66-c85d-4a81-b103-158da59bf139",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Design features included two stripy types to ensure scan path dependence on image, random stopping to encourage greedy information seeking, parameter-free eye movement prediction after fitting choices, and analysis of relative revealing locations given translational invariance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C85, C93-C95 describe design rationales and analysis choices that are logically sound. C93 is particularly important for establishing that eye movement predictions were not overfit. The design choices are well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "ec5d0647-af04-4361-83e0-642e47352424",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work established that humans direct sensors to extract task-relevant information efficiently, eye movements depend on information sought, but no studies have shown whether information acquired by each fixation is optimized. Many tasks require multiple fixations to integrate information across locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 accurately summarize prior literature with appropriate citations. C7 correctly identifies the gap in previous research that motivates the current study. The literature review is accurate and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    },
+    {
+      "id": "91a9831b-b100-4ea2-9c5d-53c893c14e8e",
+      "content_id": "2d4080c2-5981-463c-941e-5be0ddc7f5ea",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Previous studies showed humans perform active learning with conscious deliberation, and the current approach is amenable to multiple perceptual domains and high-level cognitive tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C64 accurately summarizes prior work. However, C71 is speculative about generalizability without empirical demonstration. While the framework may be generalizable, this remains to be tested and thus uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:44:14.330667Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b7f9412f-ff40-453d-967f-13115b8ba714",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "5b08a0a2-5a32-42df-a894-786fef7c55e0",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "53510ece-bdea-4688-9392-9ee456b48b78",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "0a05b555-1107-4178-858f-e72e2511dc56",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "07ded1c4-0977-4544-ac31-7edc2d20edd3",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "810ea7bd-cd1c-40cf-9576-e14f6ca94736",
+      "result_id": "b7fe9f1d-d4c1-4bfd-bef4-2eb644a095f3"
+    },
+    {
+      "claim_id": "5f385081-0283-4827-a6bb-44a668430e89",
+      "result_id": "572d5fb1-6584-427e-a670-df85ab5860cf"
+    },
+    {
+      "claim_id": "fadd770f-abc8-452a-93c6-9ea8ef845be7",
+      "result_id": "572d5fb1-6584-427e-a670-df85ab5860cf"
+    },
+    {
+      "claim_id": "c0a45732-9a83-47e4-8491-943e1c93739d",
+      "result_id": "572d5fb1-6584-427e-a670-df85ab5860cf"
+    },
+    {
+      "claim_id": "a83e8473-6926-4961-8508-502b5726b844",
+      "result_id": "572d5fb1-6584-427e-a670-df85ab5860cf"
+    },
+    {
+      "claim_id": "53434d3f-ce2b-4ea3-b078-3608c074e326",
+      "result_id": "0a1e8616-816f-40cb-98db-72ddb0d59c83"
+    },
+    {
+      "claim_id": "e7aaaa96-1666-402f-8ae0-bfce6d8db99d",
+      "result_id": "0a1e8616-816f-40cb-98db-72ddb0d59c83"
+    },
+    {
+      "claim_id": "9a98e942-268c-4a97-afc6-8e0918d34500",
+      "result_id": "0a1e8616-816f-40cb-98db-72ddb0d59c83"
+    },
+    {
+      "claim_id": "87e3c180-7aab-4aad-a7eb-759abd252199",
+      "result_id": "0a1e8616-816f-40cb-98db-72ddb0d59c83"
+    },
+    {
+      "claim_id": "f85cd2d8-73c0-435c-a3b6-7988a5e4e6d1",
+      "result_id": "c26d462b-0f61-4065-afe4-87055fe43f2a"
+    },
+    {
+      "claim_id": "83885e7f-47fb-48a9-9be1-d489b7e94742",
+      "result_id": "c26d462b-0f61-4065-afe4-87055fe43f2a"
+    },
+    {
+      "claim_id": "898ce05e-fd2d-4173-afc0-bca489f25f49",
+      "result_id": "c26d462b-0f61-4065-afe4-87055fe43f2a"
+    },
+    {
+      "claim_id": "eafaf1d7-af83-450e-90b7-4719be3ffe22",
+      "result_id": "505c4d25-3d56-4001-bb4d-7926b3d65ca8"
+    },
+    {
+      "claim_id": "f0511c29-1442-4b2b-8486-fc1b446358b7",
+      "result_id": "505c4d25-3d56-4001-bb4d-7926b3d65ca8"
+    },
+    {
+      "claim_id": "fdab8d23-f1d6-4e81-a6c4-801facd94a8f",
+      "result_id": "e1daba9b-9b7e-413b-9d7b-32bcf793d813"
+    },
+    {
+      "claim_id": "60b20334-48c1-454b-be09-c1caaa6ef265",
+      "result_id": "e1daba9b-9b7e-413b-9d7b-32bcf793d813"
+    },
+    {
+      "claim_id": "b60cde85-981e-474b-8332-d851ea357e9e",
+      "result_id": "e1daba9b-9b7e-413b-9d7b-32bcf793d813"
+    },
+    {
+      "claim_id": "88222169-c052-44d7-a3ec-12028f14c42c",
+      "result_id": "e1daba9b-9b7e-413b-9d7b-32bcf793d813"
+    },
+    {
+      "claim_id": "6c478bd4-981f-48b8-b577-23e107092208",
+      "result_id": "162e4f0e-1891-460e-b7b0-17e5d857af43"
+    },
+    {
+      "claim_id": "728429ce-258e-4d2f-b97c-d23305339e5f",
+      "result_id": "162e4f0e-1891-460e-b7b0-17e5d857af43"
+    },
+    {
+      "claim_id": "7293fe7a-0488-4592-9c0c-433c0e7838ac",
+      "result_id": "162e4f0e-1891-460e-b7b0-17e5d857af43"
+    },
+    {
+      "claim_id": "22af8d29-298d-4eb6-ad4a-e0cd545c5ae6",
+      "result_id": "162e4f0e-1891-460e-b7b0-17e5d857af43"
+    },
+    {
+      "claim_id": "4010da84-54d1-404d-8ad3-b99ebae2ae43",
+      "result_id": "1a8e4f6d-5dd8-4dd1-9fb4-26d9c363ca40"
+    },
+    {
+      "claim_id": "603a9a37-09e8-4f4f-bd56-48c60b8c2e1b",
+      "result_id": "1a8e4f6d-5dd8-4dd1-9fb4-26d9c363ca40"
+    },
+    {
+      "claim_id": "a406eea4-8cbf-4fad-99e3-3e70d13217eb",
+      "result_id": "726608c4-60df-48b7-931d-717bfba3b08e"
+    },
+    {
+      "claim_id": "583e35e0-ba4b-48d8-b1f5-a85b22855298",
+      "result_id": "726608c4-60df-48b7-931d-717bfba3b08e"
+    },
+    {
+      "claim_id": "a4e5d66f-7b82-4320-a87f-8fec64541c4b",
+      "result_id": "726608c4-60df-48b7-931d-717bfba3b08e"
+    },
+    {
+      "claim_id": "cf173188-bd9f-4808-95f7-e72fddab15c6",
+      "result_id": "96d2dba3-35b7-41bc-9413-e52670960fc4"
+    },
+    {
+      "claim_id": "5cbf1088-d750-434c-85b7-a0eb1e904a9c",
+      "result_id": "96d2dba3-35b7-41bc-9413-e52670960fc4"
+    },
+    {
+      "claim_id": "5186ff90-b074-4827-a29f-c9168765bb70",
+      "result_id": "96d2dba3-35b7-41bc-9413-e52670960fc4"
+    },
+    {
+      "claim_id": "6a93b893-fdf0-4170-96bd-5a9df91f0592",
+      "result_id": "b716d0c7-1768-4d3b-adac-ff70af7c4e8c"
+    },
+    {
+      "claim_id": "12a2b1df-6077-43dc-9bbc-39be5bde2c79",
+      "result_id": "b716d0c7-1768-4d3b-adac-ff70af7c4e8c"
+    },
+    {
+      "claim_id": "168f6a04-ae54-4860-ae52-254aab329e30",
+      "result_id": "b716d0c7-1768-4d3b-adac-ff70af7c4e8c"
+    },
+    {
+      "claim_id": "5eea920b-d8d8-4e5f-9396-b48db70750b5",
+      "result_id": "ea7e9edb-1152-40ce-9e5c-72a6f101d35c"
+    },
+    {
+      "claim_id": "b56c0c09-be85-4f17-a753-6c8a78a7b791",
+      "result_id": "dfb91f1a-5b58-4b78-9837-09ef4c0e5f00"
+    },
+    {
+      "claim_id": "76db3687-5a77-447c-ad3c-8f5f7a7a3239",
+      "result_id": "dfb91f1a-5b58-4b78-9837-09ef4c0e5f00"
+    },
+    {
+      "claim_id": "b24fb625-fd2f-4be1-b381-b3529111615f",
+      "result_id": "dfb91f1a-5b58-4b78-9837-09ef4c0e5f00"
+    },
+    {
+      "claim_id": "9fa3790b-30b3-4c99-a2d4-56ba7bccf64e",
+      "result_id": "dfb91f1a-5b58-4b78-9837-09ef4c0e5f00"
+    },
+    {
+      "claim_id": "4b7fd8e8-80e1-4ab0-bb67-6e6e465dadd8",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "1fa23a04-16ce-4c05-af52-a03bd701884a",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "edc09cfa-7a70-471f-a276-96cca00db19e",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "3835cc6f-8eb2-435f-9a15-4b852d6ef6ee",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "32f546cb-e31a-4d4d-988d-591810e6c253",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "9e4c57f0-e575-44ad-a24e-735a0efab827",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "36c79c77-9e7f-4e91-84f9-067a0bb7480a",
+      "result_id": "8cbc3180-0399-4f14-bf52-396ba42bdf8f"
+    },
+    {
+      "claim_id": "c971a05f-b84e-453a-84a8-0dbe31a6f95b",
+      "result_id": "4362d0f4-f1aa-4440-80a2-06d26f2c4279"
+    },
+    {
+      "claim_id": "ea2da5fd-56b7-4c06-8db4-1f03073574aa",
+      "result_id": "4362d0f4-f1aa-4440-80a2-06d26f2c4279"
+    },
+    {
+      "claim_id": "fc6e0db5-c10d-41e5-a778-ff3c75b4cfaa",
+      "result_id": "4362d0f4-f1aa-4440-80a2-06d26f2c4279"
+    },
+    {
+      "claim_id": "17bbc8be-a720-47e7-bbd5-991f7540368d",
+      "result_id": "4cf0956c-e3fb-4642-975e-ffa824dfc574"
+    },
+    {
+      "claim_id": "4f0c68d2-b920-4962-b6d7-361f1e67f449",
+      "result_id": "4cf0956c-e3fb-4642-975e-ffa824dfc574"
+    },
+    {
+      "claim_id": "d8936ce8-d4a2-49d5-bbee-8fe814c3bd86",
+      "result_id": "4cf0956c-e3fb-4642-975e-ffa824dfc574"
+    },
+    {
+      "claim_id": "d0b993ee-097d-41f1-8b6c-ea64a47acfd4",
+      "result_id": "4cf0956c-e3fb-4642-975e-ffa824dfc574"
+    },
+    {
+      "claim_id": "a3d4c48a-cd04-43c1-b761-196cf6f55d25",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "964f98e4-8b8f-4f14-af88-6e7ed10be6d9",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "716cbba8-6515-4da4-a94a-1d0d6564d0e5",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "887621e9-9665-47fe-b006-cdc7adb51334",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "f7b8eca3-67d0-466c-9f37-164126a85acc",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "599b47f8-908f-4560-86e4-2346396cd5d1",
+      "result_id": "2ab60334-e31e-42c2-8a5a-febaac2eac5e"
+    },
+    {
+      "claim_id": "297260c4-28fb-422f-9aaf-d74df6eb5893",
+      "result_id": "8ef98f66-c85d-4a81-b103-158da59bf139"
+    },
+    {
+      "claim_id": "a26532b9-c0a8-4bfa-be09-602d724d1ab1",
+      "result_id": "8ef98f66-c85d-4a81-b103-158da59bf139"
+    },
+    {
+      "claim_id": "bb763eb0-f063-4383-8c56-dd7df08dab2f",
+      "result_id": "8ef98f66-c85d-4a81-b103-158da59bf139"
+    },
+    {
+      "claim_id": "414a5d47-43be-491d-9569-1b7ed8af9272",
+      "result_id": "8ef98f66-c85d-4a81-b103-158da59bf139"
+    },
+    {
+      "claim_id": "270ef12c-3af2-4c07-9e52-aa630e536012",
+      "result_id": "8ef98f66-c85d-4a81-b103-158da59bf139"
+    },
+    {
+      "claim_id": "b7a80e4b-2739-44cb-91e4-603f73d567df",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "d0781d29-6db3-4767-ae30-7b50ece7e644",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "d50f2afc-b449-44b8-bc75-442e006743f4",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "f71e0cd2-9dd5-4ce8-9b95-e79e22c93faa",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "f2e9ec88-d540-48da-98d0-efd5cf978374",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "d3ff1776-64ad-4a41-9370-3d66820bb5ad",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "f7cbc436-5a45-4814-9f15-7267b7516d68",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "a905cb86-8e15-4abc-8e9d-eb0ccdadcd8f",
+      "result_id": "ec5d0647-af04-4361-83e0-642e47352424"
+    },
+    {
+      "claim_id": "9e052e8a-6711-4710-8386-7d1285f167e8",
+      "result_id": "91a9831b-b100-4ea2-9c5d-53c893c14e8e"
+    },
+    {
+      "claim_id": "3d727222-1aad-4658-a593-6c76daa570fa",
+      "result_id": "91a9831b-b100-4ea2-9c5d-53c893c14e8e"
+    }
+  ],
+  "comparisons": []
+}

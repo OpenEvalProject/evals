@@ -1,0 +1,1232 @@
+{
+  "submission": {
+    "id": "cc03a270-697f-487b-a7cf-434f679e3b11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:56:28.862876Z",
+    "updated_at": "2025-11-29T22:56:28.862876Z"
+  },
+  "content": [
+    {
+      "id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "submission_id": "cc03a270-697f-487b-a7cf-434f679e3b11",
+      "content_type": "manuscript",
+      "content_text": "# Genomic epidemiology of artemisinin resistant malaria\n\n## Abstract\n\nThe current epidemic of artemisinin resistant Plasmodium falciparum in Southeast Asia is the result of a soft selective sweep involving at least 20 independent kelch13 mutations. In a large global survey, we find that kelch13 mutations which cause resistance in Southeast Asia are present at low frequency in Africa. We show that African kelch13 mutations have originated locally, and that kelch13 shows a normal variation pattern relative to other genes in Africa, whereas in Southeast Asia there is a great excess of non-synonymous mutations, many of which cause radical amino-acid changes. Thus, kelch13 is not currently undergoing strong selection in Africa, despite a deep reservoir of variations that could potentially allow resistance to emerge rapidly. The practical implications are that public health surveillance for artemisinin resistance should not rely on kelch13 data alone, and interventions to prevent resistance must account for local evolutionary conditions, shown by genomic epidemiology to differ greatly between geographical regions.\n\n## Introduction\n\nArtemisinin combination therapy (ACT), the frontline treatment for P. falciparum infection, has played a major part in reducing the number of deaths due to malaria over the past decade (World Health Organization, 2014b). However the increasing prevalence of artemisinin resistant P. falciparum across large parts of Southeast Asia threatens to destabilise malaria control worldwide (Dondorp et al., 2009; Hien et al., 2012; Phyo et al., 2012; Kyaw et al., 2013; Ashley et al., 2014; World Health Organization, 2014a). One of the main contemporary challenges in global health is to prevent artemisinin resistance from becoming established in Africa, where the consequences for childhood mortality could be disastrous (Dondorp and Ringwald, 2013).\n\nUnderstanding the epidemiological and evolutionary driving forces behind artemisinin resistance is essential to develop effective strategies to stop it spreading. At the molecular level, artemisinin resistance is caused by mutations in a kelch protein encoded by PF3D7_1343700 on P. falciparum chromosome 13, referred to here as kelch13. More specifically, non-synonymous mutations in the kelch13 propeller and BTB-POZ domains (KPBD) result in reduced sensitivity of P. falciparum to artemisinin, as demonstrated by multiple lines of evidence including laboratory studies of artificially acquired resistance, genetic association studies of natural resistance and allelic replacement experiments (Ariey et al., 2014; Ghorbal et al., 2014; Miotto et al., 2015; Straimer et al., 2015; Takala-Harrison et al., 2015). Parasites with KBPD mutations tend to grow more slowly in the early part of the erythrocytic cycle, and have an enhanced unfolded protein response, both of which might act to protect against oxidative damage caused by artemisinin (Dogovski et al., 2015; Mok et al., 2015). It has also recently been shown that the PI3K protein is the target of artemisinin action, and that kelch13 binds to PI3K to mark it for degradation; by affecting this binding, KBPD mutations result in high levels of PI3K which counteract the effect of artemisinin (Mbengue et al., 2015).\n\nA striking characteristic of the current distribution of artemisinin resistance is that it is caused by multiple independent KPBD mutations emerging in different locations, i.e. it does not originate from a single mutational event. More than 20 KPBD SNPs have been associated with delayed parasite clearance during artemisinin treatment and there are several documented instances of the same allele arising independently in different locations (Ashley et al., 2014; Miotto et al., 2015; Takala-Harrison et al., 2015). These are classic features of a soft selective sweep which, according to evolutionary theory, is most likely to arise in populations where the selected alleles are already present as standing genetic variations or have been repeatedly introduced by de novo mutations (Hermisson and Pennings, 2005; Pennings and Hermisson, 2006; Messer and Petrov, 2013). There is ongoing debate among evolutionary biologists about how commonly soft selective sweeps occur in nature (Jensen, 2014; Garud et al., 2015) but they have clearly played a role in previous forms of antimalarial drug resistance (Nair et al., 2007; Salgueiro et al., 2010) and the current epidemic of artemisinin resistance is the most extreme example of a soft selective sweep thus far observed in eukaryotes.\n\nThis creates a practical problem in monitoring the global spread of resistance. Artemisinin resistance can be measured directly, by following the rate of parasite clearance in patients (Flegg et al., 2011) or by testing parasite isolates in vitro (Witkowski et al., 2013), but these phenotypic assays are resource intensive and impractical for large-scale screening in resource-poor settings. Genetic approaches are therefore preferable for practical implementation of large-scale surveillance, but the soft selective sweep of artemisinin resistance produces much more heterogeneous genetic signatures than previous global waves of chloroquine and pyrimethamine resistance, where hard selective sweeps were the dominant mode of spread. Thus there is considerable uncertainty about the epidemiological significance of the growing number of non-synonymous KPBD mutations reported in Africa (Ashley et al., 2014; Hopkins Sibley, 2015; Kamau et al., 2015; Taylor et al., 2015). Previous studies in Africa have not identified variants known to cause resistance in Southeast Asia (Kamau et al., 2015; Taylor et al., 2015). At the same time, there are documented instances of African parasites that can be rapidly cleared by artemisinin treatment, although they carry KPBD mutations (Ashley et al., 2014).\u00a0In the absence of comprehensive phenotypic data, it is not known which of these mutations, if any, are markers of resistance. This is a limitation of conventional molecular epidemiology, which tracks specific mutations and haplotypes and is poorly equipped to monitor soft selective sweeps where new mutations are continually arising on different haplotypic backgrounds, making it difficult to keep track of their phenotypic effects and evolutionary trajectories.\n\nHere we explore how genomic data might help overcome these practical obstacles to monitoring the current epidemic of artemisinin resistance. This analysis includes genome sequencing data for 3,411 clinical samples of P. falciparum obtained from 43 locations in 23 countries. This large dataset was generated by the MalariaGEN Plasmodium falciparum Community Project, (www.malariagen.net/projects/parasite/pf),\u00a0a collaborative study in which multiple research groups working on different scientific questions are sharing genome variation data to generate an integrated view of polymorphism in the global parasite population. Data resources arising from the present analysis, including genotype calls and sample metadata, can be obtained at www.malariagen.net/resource/16.\u00a0The MalariaGEN Plasmodium falciparum Community Project also developed a user-friendly web application, with interactive tools for exploring and querying the latest version of the data: www.malariagen.net/apps/pf.\n\n## Results\n\n### Africa and Southeast Asia both have many kelch13 polymorphisms\n\nPaired-end sequence reads were generated using the Illumina platform and aligned to the P. falciparum 3D7 reference genome, applying a series of quality control filters as previously described (see Materials\u00a0and\u00a0methods) (Manske et al., 2012; Miotto et al., 2013). The initial alignments identified 4,305,957 potential SNPs, which after quality control filtering produced a set of 935,601 exonic SNPs that could be genotyped with high confidence in the majority of samples, and that form the basis for the current analysis.\n\nAs summarised in Table 1, the dataset comprised 1,648 samples from Africa and 1,599 samples from Southeast Asia, allowing us to compare these two groups directly without the need for sample size corrections. We identified a total of 155 SNPs in the kelch13 gene, of which 128 were seen in Africa and 62 in Southeast Asia (Table 2). Studies in Southeast Asia have found that artemisinin resistance is associated with non-synonymous polymorphisms in the KPBD. Out of a total of 46 non-synonymous SNPs in these domains we found a similar number in Africa (n\u00a0=\u00a026) and Southeast Asia (n\u00a0=\u00a034), with 14 seen in both places (Table 3). Seven of those observed in Africa have previously been associated with artemisinin resistance in Southeast Asia, including C580Y, the most common allele in resistant parasites (Miotto et al., 2015).\n\n**Table 1.**\n Count of samples analysed in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Region</th>\n      <th>Code</th>\n      <th>Sample counts</th>\n      <th>Country</th>\n      <th>Code</th>\n      <th>Sample counts</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">West Africa</td>\n      <td rowspan=\"7\">WAF</td>\n      <td rowspan=\"7\">957</td>\n      <td>Burkina Faso</td>\n      <td>BF</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <td>Cameroon</td>\n      <td>CM</td>\n      <td>134</td>\n    </tr>\n    <tr>\n      <td>Ghana</td>\n      <td>GH</td>\n      <td>478</td>\n    </tr>\n    <tr>\n      <td>Gambia, The</td>\n      <td>GM</td>\n      <td>73</td>\n    </tr>\n    <tr>\n      <td>Guinea</td>\n      <td>GN</td>\n      <td>124</td>\n    </tr>\n    <tr>\n      <td>Mali</td>\n      <td>ML</td>\n      <td>87</td>\n    </tr>\n    <tr>\n      <td>Nigeria</td>\n      <td>NG</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">East Africa</td>\n      <td rowspan=\"5\">EAF</td>\n      <td rowspan=\"5\">412</td>\n      <td>Kenya</td>\n      <td>KE</td>\n      <td>52</td>\n    </tr>\n    <tr>\n      <td>Madagascar</td>\n      <td>MG</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Malawi</td>\n      <td>MW</td>\n      <td>262</td>\n    </tr>\n    <tr>\n      <td>Tanzania</td>\n      <td>TZ</td>\n      <td>68</td>\n    </tr>\n    <tr>\n      <td>Uganda</td>\n      <td>UG</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Central Africa</td>\n      <td>CAF</td>\n      <td>279</td>\n      <td>D. R. Congo</td>\n      <td>CD</td>\n      <td>279</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">South America</td>\n      <td rowspan=\"2\">SAM</td>\n      <td rowspan=\"2\">27</td>\n      <td>Colombia</td>\n      <td>CO</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Peru</td>\n      <td>PE</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>South Asia</td>\n      <td>SAS</td>\n      <td>75</td>\n      <td>Bangladesh</td>\n      <td>BD</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">West Southeast Asia</td>\n      <td rowspan=\"2\">WSEA</td>\n      <td rowspan=\"2\">497</td>\n      <td>Myanmar</td>\n      <td>MM</td>\n      <td>111</td>\n    </tr>\n    <tr>\n      <td>Thailand</td>\n      <td>TH</td>\n      <td>386</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">East Southeast Asia</td>\n      <td rowspan=\"3\">ESEA</td>\n      <td rowspan=\"3\">1102</td>\n      <td>Cambodia</td>\n      <td>KH</td>\n      <td>762</td>\n    </tr>\n    <tr>\n      <td>Laos</td>\n      <td>LA</td>\n      <td>120</td>\n    </tr>\n    <tr>\n      <td>Vietnam</td>\n      <td>VN</td>\n      <td>220</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Oceania</td>\n      <td rowspan=\"2\">OCE</td>\n      <td rowspan=\"2\">62</td>\n      <td>Indonesia (Papua)</td>\n      <td>ID</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Papua New Guinea</td>\n      <td>PG</td>\n      <td>45</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Worldwide distribution of kelch13 mutations. Number of kelch13 propeller and BTB-POZ domain (KPBD) mutations present (not necessarily exclusively) in 5 populations (AFR\u00a0=\u00a0Africa, SEA\u00a0=\u00a0Southeast Asia, SAS\u00a0=\u00a0South Asia, OCE\u00a0=\u00a0Oceania, SAM\u00a0=\u00a0South America). Sample size is reported for each population.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>AFR (N\u00a0=\u00a01,648)</th>\n      <th>SEA (N\u00a0=\u00a01,599)</th>\n      <th>SAS (N\u00a0=\u00a075)</th>\n      <th>OCE (N\u00a0=\u00a062)</th>\n      <th>SAM (N\u00a0=\u00a027)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Non-synonymous</td>\n      <td>KPBD</td>\n      <td>26</td>\n      <td>34</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Upstream region</td>\n      <td>42</td>\n      <td>16</td>\n      <td>2</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Synonymous</td>\n      <td>KPBD</td>\n      <td>38</td>\n      <td>9</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Upstream region</td>\n      <td>22</td>\n      <td>3</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n List of non-synonymous KPBD mutations. Non-synonymous mutations found in the kelch13 propeller and BTB-POZ domains (KPBD) and their position on chromosome Pf3D7_13_v3. For each mutation is reported where it has been observed and in how many samples. Where known, we reported if the mutation has been previously observed in patients with a prolonged parasite clearance half-life (>5\u2009hr) by Miotto et al. 2014 and/or Ashley et al 2014. Sample size is reported for each population.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutation</th>\n      <th>Genomic coordinates</th>\n      <th>AFR (N\u00a0=\u00a01,648)</th>\n      <th>SEA (N\u00a0=\u00a01,599)</th>\n      <th>SAS (N\u00a0=\u00a075)</th>\n      <th>OCE (N\u00a0=\u00a062)</th>\n      <th>SAM (N\u00a0=\u00a027)</th>\n      <th>Observed in\u00a0ART-R samples?</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>D353Y</td>\n      <td>1725941</td>\n      <td>-</td>\n      <td>4</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>F395Y</td>\n      <td>1725814</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>I416V</td>\n      <td>1725752</td>\n      <td>1</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>I416M</td>\n      <td>1725750</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>K438N</td>\n      <td>1725684</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>P441L</td>\n      <td>1725676</td>\n      <td>-</td>\n      <td>27</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>P443S</td>\n      <td>1725671</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>F446I</td>\n      <td>1725662</td>\n      <td>-</td>\n      <td>7</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>G449A</td>\n      <td>1725652</td>\n      <td>-</td>\n      <td>7</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>S459L</td>\n      <td>1725622</td>\n      <td>2</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>A481V</td>\n      <td>1725556</td>\n      <td>-</td>\n      <td>4</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>S485N</td>\n      <td>1725544</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Y493H</td>\n      <td>1725521</td>\n      <td>1</td>\n      <td>76</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>V520I</td>\n      <td>1725440</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>S522C</td>\n      <td>1725434</td>\n      <td>2</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>P527H</td>\n      <td>1725418</td>\n      <td>1</td>\n      <td>5</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C532S</td>\n      <td>1725404</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>V534L</td>\n      <td>1725398</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>N537I</td>\n      <td>1725388</td>\n      <td>1</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>G538V</td>\n      <td>1725385</td>\n      <td>-</td>\n      <td>19</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R539T</td>\n      <td>1725382</td>\n      <td>-</td>\n      <td>63</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>I543T</td>\n      <td>1725370</td>\n      <td>-</td>\n      <td>34</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>P553L</td>\n      <td>1725340</td>\n      <td>2</td>\n      <td>24</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>A557S</td>\n      <td>1725329</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R561H</td>\n      <td>1725316</td>\n      <td>1</td>\n      <td>24</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>V568G</td>\n      <td>1725295</td>\n      <td>-</td>\n      <td>6</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>T573S</td>\n      <td>1725280</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>P574L</td>\n      <td>1725277</td>\n      <td>-</td>\n      <td>12</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R575K</td>\n      <td>1725274</td>\n      <td>-</td>\n      <td>3</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>A578S</td>\n      <td>1725266</td>\n      <td>18</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>C580Y</td>\n      <td>1725259</td>\n      <td>2</td>\n      <td>423</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>D584V</td>\n      <td>1725247</td>\n      <td>-</td>\n      <td>3</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>V589I</td>\n      <td>1725233</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>T593S</td>\n      <td>1725221</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>E612D</td>\n      <td>1725162</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Q613E</td>\n      <td>1725161</td>\n      <td>5</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Q613L</td>\n      <td>1725160</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>F614L</td>\n      <td>1725158</td>\n      <td>-</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Y630F</td>\n      <td>1725109</td>\n      <td>2</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>V637I</td>\n      <td>1725089</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>P667A</td>\n      <td>1724999</td>\n      <td>-</td>\n      <td>2</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>P667L</td>\n      <td>1724998</td>\n      <td>-</td>\n      <td>2</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>F673I</td>\n      <td>1724981</td>\n      <td>-</td>\n      <td>3</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>A675V</td>\n      <td>1724974</td>\n      <td>1</td>\n      <td>18</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>A676S</td>\n      <td>1724972</td>\n      <td>2</td>\n      <td>3</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>H719N</td>\n      <td>1724843</td>\n      <td>1</td>\n      <td>8</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Yes</td>\n    </tr>\n  </tbody>\n</table>\n\n### kelch13 polymorphisms in Africa appear to be indigenous\n\nWe asked whether kelch13 polymorphisms seen in Africa had emerged independently, as opposed to migrating from Southeast Asia. We started by grouping samples according to genome-wide genetic similarity, based on a neighbour-joining (NJ) tree (Figure 1A). African and Southeast Asian samples formed two well-separated and distinct clusters, suggesting that gene flow between the two regions is very modest or negligible, a view supported by an alternative analysis using principal coordinate analysis (Figure 1B). None of the African parasites carrying kelch13 mutations grouped with the Southeast Asian population, supporting the idea that these mutations are indigenous.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig1-v2.jpg)\n\n**Figure 1.:** (A) Neighbour-joining tree showing population structure across all sampling sites, with sample branches coloured according to country groupings (Table 1). Branches with large open tip circle indicate the sample is a kelch13 mutant, while those with a small black symbol are mixed infections (i.e. mixture of wild-type and mutant parasites or two mutant parasites with different mutations). Branches without tip symbols are kelch13 wild type. African kelch13 mutants are, at a genomic level, similar to other African samples. (B) Plot of second principal component (PC2) against the first (PC1), computed from a principal coordinate analysis (PCoA) of all samples in the present study, based on the same pairwise genetic distance matrix used for the tree of Figure 1A. PC1 clearly separates African samples from those collected in SEA, while PC2 is mainly driven by extreme population structure in ESEA.\n\nWe considered that recombination between African and imported parasites could result in the transfer of DNA segments of Asian origin into genomes that otherwise appear to be local, and therefore not be easily detectable through genome-wide analysis. Thus, we analyzed the regions immediately flanking kelch13 in both directions, using a probabilistic method to reconstruct the most likely geographical origin of haplotypes observed in African kelch13 mutants (Figure 2). The vast majority of kelch13 mutants showed no evidence that flanking regions may have been imported, which indicates that most mutations observed in Africa do not have a common origin with those in Asia, and are likely to have emerged independently on a variety of haplotypes (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig2-v2.jpg)\n\n**Figure 2.:** (A) Chromosome painting (see Materials\u00a0and\u00a0methods) of the 52 African kelch13 mutants across the two 250 kbp flanking regions on each side of the kelch13 gene. Each genome chunk is coloured according to the aggregated posterior probabilities that it originated in the African (red) or SEA (blue) population, according to the scale shown. (B) Detail of the flanking regions over a span of approximately 15 kbp, using the same colour scheme. The country of origin is indicated on the left, followed by the proportion of African chunks identified; the kelch13 mutation carried by the sample is shown on the right. Samples are sorted by the proportion of Asian chunks in this window, and the same order was applied to Panel A. Only five samples (lower region of the panel) show strong probability of Asian origin of the chunks closest to kelch13.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Using the same SNPs utilized in the analysis shown in Figure 2B, we estimated diversity in a 1\u00a0kbp sliding window around kelch13 (highlighted in grey), by computing the mean SNP heterozygosity in a random set of 56 African kelch13 wild type genomes. The blue shaded area reports 95% of the distribution of the values over 1000 iterations. We also computed the heterozygosity estimate for the set of 56 African kelch13 mutants (red line), and found it not to be significantly different from those in wild-type parasites, suggesting that no common flanking haplotype is shared among these mutants.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Here, chromosome painting is applied to the 15 kbp region around the kelch13 gene (as in Figure 2B) for five samples for which kelch13 was flanked by chunks with >50% probability of Asian origin. Here, the SEA population was divided into two groups: kelch13 wild type (blue) and mutants (yellow), to estimate the likelihood that the haplotype originated in SEA kelch13 mutants. Strong evidence of origin from SEA mutants was only found in two samples: Y483H mutant from Ghana (top row), and a C580Y mutant from Cameroon (bottom row).\n\nOnly 5 samples out of 56 were assigned a significant probability of Southeast Asian origin in at least one flanking sequence, and only two of these samples carried haplotypes similar to those in SEA mutants (Figure 2\u2014figure supplement 2). Both in the NJ tree and in the PCA, these two African kelch13 mutants do not cluster with the bulk of African samples, but occupy a somewhat isolated position (Figure 1). We note that they exhibit unusually high levels of heterozygosity (FWS < 0.4), with mixed calls randomly distributed across the genome, consistent with a mix of African and SEA parasites. Continuous genetic monitoring of the parasite population will determine whether these are indeed just isolated cases, or they constitute very early evidence of gene flow between the two regions. Since these samples passed through a number of different laboratories, we cannot absolutely rule out the possibility that these mixtures could be the result of biological contamination during sample preparation and processing.\n\n### Across the genome there are many more rare variants in Africa\n\nHistorical demographic changes such as population expansions and bottlenecks (Tanabe et al., 2010), and epidemiological and environmental factors (Prugnolle et al., 2010) are highly influential forces that shaped the allele frequency spectra of P. falciparum populations across the globe (Nielsen et al., 2009; Manske et al., 2012). In order to properly contextualize the numbers and frequencies of kelch13 mutations, it is therefore important to characterize genomic variation patterns in different geographical regions.\n\nOne of the most striking features of this dataset is the high number of rare variations in the high-quality SNP list. At more than half of all polymorphic sites, the minor allele was only carried by a single sample (referred to as singletons, n = 330,783 or 35%) or by two samples (doubletons, n = 214,179 or 23%), often in heterozygous calls. By contrast, only 13,383 polymorphisms (1.4%) had a minor allele in \u22655% of samples. Rare alleles, however, are not evenly distributed geographically. There is a large excess of polymorphisms with minor allele frequency (MAF) below 0.1% in Africa (71% of all SNPs, vs. 17% in SEA), while numbers in the two regions are similar for SNPs with MAF>1% (2% of all SNPs, Figure 3a). Rare variations in Africa are not confined to a limited set of highly variable genes, but evenly distributed across the genome, as attested by the distribution of variants across all genes: SNP density in Africa (median = 67 SNPs/kbp, interquartile range = 51\u201384) is approximately 3.9 times higher than in SEA (median = 17, IQR = 13\u201322, p < 10\u201316, Figure 3b). Very similar ratios are estimated in both non-synonymous (Africa median SNP density = 43, IQR = 27\u201358; SEA median = 11, IQR = 7\u201315) and synonymous variants (Africa median SNP density=25, IQR = 20\u201330, SEA median = 6, IQR = 4\u20138). Accordingly, we found virtually identical distributions of the ratio of non-synonymous to synonymous mutations (N/S ratio) in the two regions (Figure 3c). This suggests that the huge disparity in SNP density between the two regions is more likely to be the result of different demographic histories and epidemiological characteristics, such as changes in effective population size (Joy et al., 2003), rather than the product of different selective constraints.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig3-v2.jpg)\n\n**Figure 3.:** (a) Allele frequency spectrum for Africa (red) and SEA (blue). Polymorphisms were binned by their minor allele frequency (MAF), and the counts in each bin were plotted against frequency, shown on a logarithmic scale. Although the number of high-frequency variations is consistent between the two regions, samples from Africa possess an excess of low-frequency variations. (b) SNP density per gene: for each gene, the number of variants found in the two regions is normalized by the length of the coding region (in kbp). African samples have on average 3.9 times more mutations than parasites from SEA. (c) Non-synonymous/synonymous ratio per gene: ratios of non-synonymous to synonymous mutations found per gene are similar in the two regions. To reduce artifacts due to small numbers, only genes with at least 10 SNP were considered in both analyses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Allele frequency spectra for Africa (red) and SEA (blue) of non-synonymous mutations in the KPBD. Polymorphisms were binned by their minor allele frequency (MAF), shown on a logarithmic scale, and the counts in each bin reported. The two populations exhibit dramatically different behaviours with an abundance of medium and high frequency variations in SEA contrasted by an extreme paucity in Africa.\n\nIn summary, we observe many more rare variants in Africa than in SEA; however we expect N/S ratios to be similar in these two regions in genes that are not subjected to selective pressures.\n\n### Comparing kelch13 with other parts of the genome\n\nThe density of kelch13 synonymous variations in the two continents is roughly consistent with that observed in the rest of the genome (Africa: 28 SNPs/kbp, SEA: 6; Figure 4a), which is expected since synonymous changes are less likely to be affected by selection. The excess of African non-synonymous mutations in the upstream region is also consistent with expectations (Africa: 44 SNPs/kbp, SEA: 16). In contrast, non-synonymous polymorphisms in the KPBD show a reversal of this relationship: SEA parasites possess about 30% more polymorphisms than African ones (34 in SEA vs. 26 in AFR). In addition, all but two non-synonymous changes in the KPBD are observed in Africa at very low frequency (singletons and doubletons), while in SEA more than half of the changes are observed in >2 samples (Table 4 and Figure 3\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig4-v2.jpg)\n\n**Figure 4.:** (a) The amino acid positions of kelch13 polymorphisms observed in Africa (red) and SEA (blue) are shown. Coloured rectangles describe the extents of the resistance domains (BTB/POZ: aa. 349\u2013448; kelch propeller: aa. 443\u2013721) and upstream region, with the locations of non-synonymous changes indicated above, and that of synonymous changes below. Short lines represent singleton/doubleton mutations, while longer lines represent more frequent mutations. (b) Conservation score across amino acid residues of kelch13, derived by applying a CCF53P62 matrix on alignments of the P. falciparum gene coding sequence with its homologues in six other Plasmodium species for which high-quality sequence data were available: P. reichenowi, P. vivax, P. knowlesi, P. yoelii, P. berghei, and P. chabaudi (see Materials\u00a0and\u00a0methods). Although the region below position 200 is less conserved, particularly in rodent species (P. yoelii, berghei, and chabaudi), there is remarkably high conservation across all species over the rest of the gene, which includes the KPBD.\n\n**Table 4.**\n Frequency of the non-synonymous KPBD mutations. Counts of non-synonymous mutations in the conserved propeller and BTB-POZ domains of kelch13 are shown for each geographical region, stratified by the number of samples in which they are observed. Sample size for each population is reported.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>AFR (N\u00a0=\u00a01,648)</th>\n      <th>SEA (N\u00a0=\u00a01,599)</th>\n      <th>SAS (N\u00a0=\u00a075)</th>\n      <th>OCE (N\u00a0=\u00a062)</th>\n      <th>SAM (N\u00a0=\u00a027)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1\u20132 samples</td>\n      <td>24</td>\n      <td>13</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>3\u20135 samples</td>\n      <td>1</td>\n      <td>7</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>&gt;5 samples</td>\n      <td>1</td>\n      <td>14</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nAt a first approximation, these observations are consistent with a high number of non-synonymous changes that have risen in frequency in SEA parasites because of their association with artemisinin resistance, and a low number of mostly rare alleles in Africa, where artemisinin has been introduced more recently and resistance is yet to be reported.\n\n### Comparing kelch13 to other highly conserved genes\n\nAlthough the function of kelch13 is as yet unclear, an alignment of its homologous gene sequences in eight Plasmodium species shows that the propeller and BTB-POZ domains are part of a highly conserved region (Figure 4b), suggesting a crucial role in parasite fitness. A reconstruction of ancestral alleles from this alignment suggests that P. falciparum accumulated only five conservative amino acid changes in the kelch13 propeller domain since diverging from other species 55 Myr ago (Escalante and Ayala, 1995) (Table 5). Given this extreme level of conservation, non-synonymous polymorphisms may appear surprisingly numerous in the present dataset, both in SEA (n\u00a0=\u00a034) and in Africa (n\u00a0=\u00a026). Such elevated numbers may be produced by selection processes; alternatively, they may be present in a large neutrally-evolving population, in which low-frequency variations continually emerge, but can only be detected for a brief span of time before they are removed by genetic drift and/or purifying selection. The question is, then, whether neutral evolution can account for the pattern of kelch13 mutations observed here.\n\n**Table 5.**\n Kelch13 propeller domain mutations in different Plasmodium species. Here we report amino acid allele differences in a multiple sequence alignments of kelch13 homologues for seven species of Plasmodium parasites for which high-quality sequence data were available: P. falciparum (Pf), P. reichenowi (Pr), P. vivax (Pv), P. knowlesi (Pk), P. yoelii (Py), P. berghei (Pb), and P. chabaudi (Pc). The species formed three groups by similarity: Laverania (Pf, Pr), primate Plasmodia (Pv, Pk) and rodent Plasmodia (Py, Pb and Pc). An allele shared by all members of two different groups was identified as a putative ancestral allele. The table shows, for each position where at least one species exhibits a difference from the others: the amino acid position in the Pf kelch13 sequence; the putative ancestral amino acid allele; the alleles in the various species (columns with heading listing multiple species show mutations common to those species); and a substitution score of the mutation, based on a CCF53P62 substitution matrix (see Materials\u00a0and\u00a0methods). All substitution scores are \u22650, denoting conservative substitutions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Pf Position</th>\n      <th>Ancestral Allele</th>\n      <th>Pf,Pr</th>\n      <th>Pv,Pk</th>\n      <th>Pk</th>\n      <th>Py,Pb,Pc</th>\n      <th>Py,Pb</th>\n      <th>Pb</th>\n      <th>Pc</th>\n      <th>Substitution Score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>434</td>\n      <td>F</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>Y</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>447</td>\n      <td>C</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>S</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>448</td>\n      <td>I</td>\n      <td>-</td>\n      <td>M</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>517</td>\n      <td>T</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>519</td>\n      <td>F</td>\n      <td>Y</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>520</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>L</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>534</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>550</td>\n      <td>S</td>\n      <td>-</td>\n      <td>-</td>\n      <td>C</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>566</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>568</td>\n      <td>V</td>\n      <td>-</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>578</td>\n      <td>A</td>\n      <td>-</td>\n      <td>S</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>584</td>\n      <td>D</td>\n      <td>-</td>\n      <td>-</td>\n      <td>E</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>590</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>593</td>\n      <td>T</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>A</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>605</td>\n      <td>D</td>\n      <td>E</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>613</td>\n      <td>Q</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>N</td>\n      <td>-</td>\n      <td>K</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>648</td>\n      <td>D</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>E</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>666</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>676</td>\n      <td>A</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>T</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>691</td>\n      <td>D</td>\n      <td>E</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>708</td>\n      <td>I</td>\n      <td>L</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>711</td>\n      <td>S</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>P</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>723</td>\n      <td>I</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>V</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\nTo answer this question, we compared patterns of kelch13 mutations to those in the rest of the P. falciparum genome Supplementary file 1 . Since fewer non-synonymous mutations are expected in more conserved genes, we applied genomic calibration, i.e. we stratified these analyses by evolutionary conservation. Each gene was assigned a conservation score determined from a sequence alignment of the P. falciparum gene with its P. chabaudi homologue, using a substitution matrix corrected for the AT bias in the Pf genome (Brick and Pizzi, 2008). P. chabaudi was chosen since it was the member of the group most differentiated from P. falciparum (rodent plasmodia) with the most complete reference sequence. A genome-wide non-linear negative correlation between gene conservation and N/S ratio is clearly observable; this trend is almost identical in the two populations (Figure 5a). Although kelch13 did not diverge significantly from this relationship in Africa (P = 0.2), its N/S ratio in SEA was the highest observed at its level of conservation, far exceeding the expected ratio (P<0.001). Accordingly, kelch13 showed the most significant difference in N/S ratios between Africa and SEA genome-wide (3.7-fold, P = 2 \u00d7 10-4 by Fisher\u2019s exact test, Figure 5b and Supplementary file 1), even compared to other well-known drug resistance genes (Figure 5\u2014figure supplement 1). Such unusually high N/S ratio in SEA parasites is mainly due to an excess of high frequency non-synonymous variations (Figure 5\u2014figure supplement 2), suggesting that multiple independent origins of artemisinin resistance (Miotto et al., 2015; Takala-Harrison et al., 2015) have produced an unusually large number of common non-synonymous mutations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig5-v2.jpg)\n\n**Figure 5.:** (a) For each gene with more than 2 synonymous or non-synonymous SNPs, the N/S ratio in Africa (red points) and in SEA (blue points) are plotted against the conservation score of the gene coding sequence. The kelch13 gene values are represented by larger circles. For each region, a solid line show median values, while dotted lines delimit 95% of the genes at varying levels of conservation. This plot is truncated on the y-axis to show more clearly the bulk of the distribution; the full range is shown in Figure 5\u2014figure supplement 2. (b) Histogram showing the distribution of the ratio of N/S ratios in SEA and Africa, for all genes with \u22655 synonymous and \u22655 non-synonymous SNPs on each region. An arrow shows the placement of kelch13.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** This figure shows the same data as Figure 5a, extended by mapping genes known to have undergone selection for antimalarial resistance. For each gene, we show circles marking the N/S ration in Africa (red letter) and SEA (blue letter), paired by a vertical line annotated with a p-value (by Fisher\u2019s exact test) that the two ratios are significantly different. The genes shown are kelch13 (denoted by the letter \u2018K\u2019), pfcrt (chloroquine resistance, \u2018C\u2019), pfdhfr (pyrimethamine resistance, \u2018R\u2019), pfdhps (sulfadoxine resistance, \u2018S\u2019), and pfmdr1 (resistance to chloroquine and other drugs, \u2018M\u2019). These results are best analyzed in the context of the underlying selective sweeps. For example, the small difference between ratios for the pfmdr1 gene can be explained by the association of the drug resistance phenotype with gene amplification, rather than with non-synonymous changes. Also, the extremely high N/S ratio for pfcrt in SEA is largely due to a paucity of synonymous SNPs, caused by the near-fixation of a very small number of haplotypes in the SEA region, yielding a p-value comparable to that of kelch13.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Plot of the density of frequent (present in 3 or more samples) non-synonymous mutations in Africa (red) and SEA (blue) against conservation, for all genes with more than 2 synonymous or non-synonymous SNPs, showing that kelch13 (larger\u00a0circle) is consistent with other similarly conserved genes in Africa, but has excess non-synonymous polymorphisms in SEA. (b) An analogous plot for synonymous mutations also shows that kelch13 follows the normal trend among genes in Africa, but has far fewer SNPs than expected in SEA.\n\nFrom this analysis we conclude that the high prevalence of kelch13 non-synonymous variants in SEA is not explainable by neutral evolution, but is consistent with selection of artemisinin-resistance alleles. In Africa, on the other hand, the observed non-synonymous changes appear to constitute a \u201cphysiological\u201d level of variation consistent with a population rich in low-frequency alleles.\n\n### In Southeast Asia there are more radical substitutions in kelch13\n\nThe different kelch13 mutation repertoires in Africa and in SEA raise the question of whether these sets of mutations have different structural and functional properties. While there is high conservation across the whole of the propeller domain, it is unlikely that all possible amino acid changes have the same functional relevance or that they all carry the same fitness cost for parasites. Although direct measures of functional relevance are not yet available, and the exact function of kelch13 is hitherto unknown, we can make statistical comparisons of some properties of the observed changes, in at least two respects. First, assuming that kelch13 function is conserved across Plasmodium species, we can assess the strength of evolutionary constraints at any given position by examining whether amino acid substitutions between species are conservative or radical. Second, given that kelch proteins have been shown in other organisms to play an adapter role, with key binding sites defined by the arrangement of hydrophobic \u03b2-strands in the propeller domain (Adams et al., 2000), we can assess changes in hydrophobicity caused by the observed mutations, which may be informative of their functional importance.\n\nDetailed mapping against the secondary structure of the propeller domain suggests that the polymorphisms found in SEA parasites occur in different blades, preferentially at positions proximal to the first and second \u03b2-strand of the propeller\u2019s blades (Figure 6). This may indicate that these two strands play a role in defining the binding interface to the PI3K protein involved in artemisinin resistance (Mbengue et al., 2015), but this needs to be confirmed by in-depth structural analyses.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig6-v2.jpg)\n\n**Figure 6.:** The sequence of the kelch13 propeller domain (amino acids 443\u2013726) is organized according to its 6-blade tertiary structure, with the four \u03b2-strands characterizing each blade highlighted in colour. Polymorphisms observed in SEA (top panel) and Africa (bottom panel) are shown by circles above the mutated position. Small circles indicate very rare mutations (singletons and doubletons), while larger circles are used for more frequent mutations.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08714/elife-08714-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In these plots, all kelch13 amino acids in the propeller domains, downstream of position 430, are plotted against their Kyte-Doolittle hydrophobicity score (KD, gray). Circle symbols in plot (a) derived amino acid alleles in P. falciparum, coloured according to the conservation score against the ancestral allele (Table 5), derived from the CFF53P62 substitution matrix; lower values indicate more radical substitutions. The remaining plots use the same colouring scheme to show polymorphisms observed in \u22653 samples in Africa (b) or in SEA (c).\n\nWe characterized changes in the propeller domain by a conservation score derived from a substitution matrix specific to AT-rich genomes (Brick and Pizzi, 2008), and assigned a hydrophobicity score to each site, estimated from the Kyte-Doolittle (KD) hydropathicity score (Kyte and Doolittle, 1982). The five putative derived alleles that have become established in the P. falciparum kelch13 propeller domain since its divergence from other Plasmodia are all conservative changes at hydrophilic sites (Figure 6\u2014figure supplement 1a). Common mutations in Africa have characteristics broadly consistent with this conservative history of change (Figure 6\u2014figure supplement 1b and Table 6). Polymorphisms in SEA parasites, on the other hand, show a pattern of changes that are more radical than those in Africa (P\u00a0=\u00a010\u20133) and more commonly found at hydrophobic sites (Figure 6\u2014figure supplement 1c and Table 6).\n\n**Table 6.**\n Conservation score of KPBD mutations.The table shows, for each non-synonymous KPBD mutation observed in the dataset, the number of samples carrying the mutation in Africa (AFR), in Southeast Asia (SEA), and a substitution score of the mutation, based on a CCF53P62 substitution matrix; lower values indicate more radical substitutions. Mutations observed in Africa tend to have higher conservation score, whereas in SEA mutations tend to be more radical.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutation</th>\n      <th>AFR</th>\n      <th>SEA</th>\n      <th>CFF53P62</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Q613E</td>\n      <td>5</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Y630F</td>\n      <td>2</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>V637I</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>V589I</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>T573S</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Y493H</td>\n      <td>1</td>\n      <td>76</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>I416V</td>\n      <td>1</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>T593S</td>\n      <td>1</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>V520I</td>\n      <td>1</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>I416M</td>\n      <td>1</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>F395Y</td>\n      <td>0</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>S522C</td>\n      <td>2</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>E612D</td>\n      <td>1</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>C532S</td>\n      <td>1</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>R575K</td>\n      <td>0</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>A578S</td>\n      <td>18</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>A676S</td>\n      <td>2</td>\n      <td>3</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>V534L</td>\n      <td>2</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>R561H</td>\n      <td>1</td>\n      <td>24</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>A675V</td>\n      <td>1</td>\n      <td>18</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>H719N</td>\n      <td>1</td>\n      <td>8</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>P527H</td>\n      <td>1</td>\n      <td>5</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>A557S</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>R539T</td>\n      <td>0</td>\n      <td>63</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>I543T</td>\n      <td>0</td>\n      <td>34</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>G449A</td>\n      <td>0</td>\n      <td>7</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>F446I</td>\n      <td>0</td>\n      <td>7</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>A481V</td>\n      <td>0</td>\n      <td>4</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>F673I</td>\n      <td>0</td>\n      <td>3</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>P667A</td>\n      <td>0</td>\n      <td>2</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>F614L</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>S485N</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>P443S</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>C580Y</td>\n      <td>2</td>\n      <td>423</td>\n      <td>-2</td>\n    </tr>\n    <tr>\n      <td>D353Y</td>\n      <td>0</td>\n      <td>4</td>\n      <td>-2</td>\n    </tr>\n    <tr>\n      <td>K438N</td>\n      <td>0</td>\n      <td>1</td>\n      <td>-2</td>\n    </tr>\n    <tr>\n      <td>P553L</td>\n      <td>2</td>\n      <td>24</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>P441L</td>\n      <td>0</td>\n      <td>27</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>G538V</td>\n      <td>0</td>\n      <td>19</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>P574L</td>\n      <td>0</td>\n      <td>12</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>V568G</td>\n      <td>0</td>\n      <td>6</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>P667L</td>\n      <td>0</td>\n      <td>2</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>S459L</td>\n      <td>2</td>\n      <td>2</td>\n      <td>-4</td>\n    </tr>\n    <tr>\n      <td>N537I</td>\n      <td>1</td>\n      <td>1</td>\n      <td>-4</td>\n    </tr>\n    <tr>\n      <td>Q613L</td>\n      <td>1</td>\n      <td>0</td>\n      <td>-4</td>\n    </tr>\n    <tr>\n      <td>D584V</td>\n      <td>0</td>\n      <td>3</td>\n      <td>-5</td>\n    </tr>\n  </tbody>\n</table>\n\nTaken together, the above results suggest that the propeller domain has long been under very strong evolutionary constraints, and that the number and nature of the changes observed in African parasites is consistent with these constraints, once we discard the abundant rare alleles expected in such a large population. In contrast, mutations in SEA parasites are not only far more numerous than expected, but they produce radical changes that are likely to be important determinants of the binding properties of the kelch13 protein, consistent with recent findings that binding of kelch13 to the PI3K protein is a critical factor in P. falciparum response to artemisinin (Mbengue et al., 2015).\n\n### Genetic background\n\nA recent study has shown that resistance-causing KPBD mutations are significantly more likely to arise in parasites with a particular genetic background (Miotto et al., 2015). This predisposing genetic background is marked by specific SNP alleles of the genes encoding ferredoxin (fd), apicoplast ribosomal protein S10 (arps10), multidrug resistance protein 2 (mdr2) and chloroquine resistance transporter (crt). Here we extend this analysis, confirming that this particular combination of variants is extremely common in the parts of Southeast Asia where artemisinin resistance is known to be established, and is absent from Africa and other regions sampled here (Table 7).\n\n**Table 7.**\n Frequency of the genetic background alleles across the world. Frequency of the four genetic background alleles identified in Miotto et al. (2015) for each geographical region. For each SNP, we show mutation name; chromosome number; nucleotide position; and frequencies of the mutant allele in the various populations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutation</th>\n      <th>Chr</th>\n      <th>Pos</th>\n      <th>AFR</th>\n      <th>SAS</th>\n      <th>SEA</th>\n      <th>PNG</th>\n      <th>SAM</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>arps10-V127M</td>\n      <td>14</td>\n      <td>2481070</td>\n      <td>0.0%</td>\n      <td>0.0%</td>\n      <td>59.4%</td>\n      <td>0.0%</td>\n      <td>0.0%</td>\n    </tr>\n    <tr>\n      <td>fd-D193Y</td>\n      <td>13</td>\n      <td>748395</td>\n      <td>0.1%</td>\n      <td>2.2%</td>\n      <td>62.8%</td>\n      <td>23.9%</td>\n      <td>0.0%</td>\n    </tr>\n    <tr>\n      <td>mdr2-T484I</td>\n      <td>14</td>\n      <td>1956225</td>\n      <td>0.1%</td>\n      <td>5.7%</td>\n      <td>64.2%</td>\n      <td>0.4%</td>\n      <td>0.0%</td>\n    </tr>\n    <tr>\n      <td>crt-N326S</td>\n      <td>7</td>\n      <td>405362</td>\n      <td>0.8%</td>\n      <td>28.2%</td>\n      <td>68.6%</td>\n      <td>0.1%</td>\n      <td>0.0%</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nThis study demonstrates the value of genomic data in characterising the current epidemic of artemisinin resistance, which is problematic for conventional molecular epidemiology since new resistance-causing mutations are continually emerging on different haplotypic backgrounds. A key problem is to define the geographical origin of KBPD mutations, and we show that this can be solved by using genomic epidemiological data to analyse ancestral relationships between samples, thereby demonstrating that the KPBD mutations observed in Africa are of local origin.\n\nAnother important question is whether KPBD mutations are under positive selection in Africa, which is difficult to determine by standard haplotype-based methods because so many independent mutations are involved. This question is further complicated by marked geographical variation in normal levels of genetic diversity, i.e. there are many more rare variants in Africa than Southeast Asia, most likely due to the larger population size and other demographic factors (Manske et al., 2012). Here we address this question by comparing kelch13 against other genes in the same samples, a process that we refer to as genomic calibration. We show that for most genes the ratio of non-synonymous to synonymous mutations is relatively constant across geographical regions, despite geographic differences in genetic diversity, and that this ratio is correlated with the level of sequence conservation across different Plasmodium species. When calibrated against other genes with the same level of cross-species conservation, allowing for geographical differences in the overall level of genetic diversity, kelch13 shows a marked excess of non-synonymous substitutions in Southeast Asia, but appears normal in Africa. Moreover, KPBD mutations causing radical amino acid changes at highly conserved positions are found at relatively high frequency in Southeast Asia but remain at very low frequency in Africa. Taken together, these findings indicate that non-synonymous KBPD mutations are undergoing strong evolutionary selection in Southeast Asia, whereas those seen in Africa have originated locally and most likely reflect normal variation.\n\nThese findings have practical implications for the prevention of artemisinin resistance in Africa, where there is evidently a deep reservoir of low frequency genetic variations that could potentially allow resistance to emerge rapidly as the levels of selective pressure increase. In most parts of Africa, the selective pressure of artemisinin is probably relatively low at present, for several reasons. Artemisinin has been widely used in Southeast Asia for over two decades, whereas its usage in Africa is more recent, and it is estimated that only 20% of infected African children currently have access to frontline treatment ACT medication (World Health Organization, 2014b). Another factor is that people living in regions of high malaria endemicity acquire partial immunity, resulting in asymptomatic infection, so that there is a large reservoir of parasites in Africa that are not exposed to antimalarial drugs because asymptomatic individuals do not seek treatment (Hastings, 2003). The situation could change dramatically as malaria control efforts are intensified, and it will be vital to monitor the effects of major interventions on the emergence of resistance, particularly in African countries that have already achieved relatively low levels of malaria transmission. A key question for the future is whether parasite populations in certain locations possess genetic features that predispose to the emergence of artemisinin resistance, as suggested by the strong association of certain fd, arps10, mdr2 and crt alleles with resistance-causing KPBD mutations in Southeast Asia\u00a0(Miotto et al., 2015). Another concern is that growing resistance to ACT partner drugs, now emerging in Southeast Asia (Saunders et al., 2014) may spread to Africa, or evolve independently there, and lead to increased selective pressure for artemisinin resistance there.\n\nThe global spread of resistance to chloroquine and sulfadoxine-pyrimethamine was dominated by hard sweeps of specific haplotypes originating in Southeast Asia, although it is clear that there were also localised emergences (Mita et al., 2009). Although we still know relatively little about the functional properties of different KPBD mutations, it is clear that some are more successful than others, e.g. the C580Y allele has emerged at multiple locations in Southeast Asia and Africa, and a specific C580Y haplotype is approaching fixation in large parts of Western Cambodia (Miotto et al., 2015). The high level of sequence conservation of KPBD across Plasmodium species indicates that mutations in these domains incur fitness costs, and this is supported by the observation that although there have been multiple independent origins of resistance-causing kelch13 mutations, individual kelch13 mutations appear to have limited spread, implying that there is a substantial fitness cost in the absence of sustained drug pressure. The danger is that these fitness costs may be compensated by other genetic variants, either in kelch13 or elsewhere in the genome, and that, as a result of this continuing evolutionary process, parasites in Southeast Asia will progressively acquire higher levels of artemisinin resistance (World Health Organization, 2014a) coupled with strong biological fitness and the ability to propagate across a wide range of vector species. Under these circumstances, the current soft sweep of artemisinin resistance could give way to a pervasive hard sweep with potentially disastrous consequences.\n\nThese findings demonstrate the utility of applying genomic epidemiology to identify features of parasite demography and evolution that affect how drug resistance spreads. Future strategies to combat resistance will require better understanding of the evolutionary consequences of malaria control interventions, e.g. how the selective advantage of a resistance allele is counterbalanced by its fitness cost under different control regimes and in different geographical settings. It is now possible to approach this problem prospectively, by conducting systematic spatiotemporal sampling and genome sequencing of the parasite population as an integral part of public health interventions to prevent resistance spreading.\n\n## Materials and methods\n\n### Ethical approval\n\nAll samples in this study were derived from blood samples obtained from patients with P. falciparum malaria, collected with informed consent from the patient or a parent or guardian. At each location, sample collection was approved by the appropriate local and institutional ethics committees. The following local and institutional committees that gave ethical approval for the partner studies: Comit\u00e9 d'\u00c9thique, Minist\u00e8re de la Sant\u00e9, Bobo-Dioulasso, Burkina Faso; Navrongo Health Research Centre Institutional Review Board, Navrongo, Ghana; Kintampo Health Research Centre Institutional Ethics Committee, Kintampo, Ghana; Noguchi Memorial Institute for Medical Research Institutional Review Committee, University of Ghana, Legon, Ghana; Ghana Health Service Ethical Review Committee, Accra, Ghana; Gambia Government/MRC Joint Ethics Committee, Banjul, The Gambia; Comit\u00e9 d'Ethique National Pour la Recherche en Sant\u00e9, Guinea; Ethics Committee of Facult\u00e9 de M\u00e9decine, de Pharmacie et d'Odonto-Stomatologie, University of Bamako, Bamako, Mali; Ethical Review Committee, University of Ilorin Teaching Hospital, Ilorin, Nigeria; Institutional Review Board, Faculty of Health Sciences, University of Buea, Cameroon; Comit\u00e9 d\u2019Ethique, Ecole de Sant\u00e9 Publique, Universit\u00e9 de Kinshasa, Minist\u00e8re de l\u2019Enseignement Superieur, Universitaire et Recherche Scientifique, D. R. Congo; Comit\u00e9 National d'Ethique aupr\u00e8s du Minist\u00e8re de la Sant\u00e9 Publique, Madagascar; Institutional Review Committee, Med Biotech Laboratories, Kampala, Uganda and Uganda National Council for Sciences and Technology (UNCST); College of Medicine Research Ethics Committee, University of Malawi, Blantyre, Malawi; KEMRI National Ethical Review Committee, Kenya; Medical Research Coordinating Committee of the National Institute for Medical Research, Tanzania; Ethical Review Committee, Bangladesh Medical Research Council, Bangladesh; Ethics Committee of the International Centre for Diarrheal Disease Research, Bangladesh; Institutional Ethical Review Committee, Department of Medical Research (Lower Myanmar); Ministry of Health, Government of The Republic of the Union of Myanmar; National Ethics Committee for Health Research, Ministry of Health, Phnom Penh, Cambodia; Ministry of Health National Ethics Committee For Health Research, Laos; Ethics Committee, Faculty of Tropical Medicine, Mahidol University, Bangkok, Thailand; Ethical Committee, Hospital for Tropical Diseases, Ho Chi Minh City, Vietnam; Eijkman Institute Research Ethics Commission, Jakarta, Indonesia; Institutional Review Board, Papua New Guinea Institute of Medical Research, Goroka, Papua New Guinea; Institutional Review Board, International Center for Medical Research and Training, Cali, Colombia; Institutional Review Board, Universidad Nacional de la Amazonia Peruana, Iquitos, Peru; Human Research Ethics Committee of NT Department of Health and Families and Menzies School of Health Research, Darwin, Australia; Institutional Review Board, New York University Medical School, NY, USA; Institutional Review Board, National Institute of Allergy and Infectious Diseases, Bethesda, MD, USA; Institutional Review Board, Walter Reed Army Institute of Research, Washington DC, USA; Ethics Review Committee, World Health Organization, Geneva, Switzerland; Ethics Committee of the Faculty of Medicine, Heidelberg, Germany; Ethics Committee of the Medical University of Vienna; Ethics Committee, London School of Hygiene and Tropical Medicine, London, UK; Oxford Tropical Research Ethics Committee, Oxford, UK.\n\n### Sample preparation, sequencing and genotyping\n\nDNA was extracted directly from blood samples taken from patients at admission time, after leukocyte depletion to minimize human DNA. Leukocyte depletion was achieved by CF11 filtration in most samples (Venkatesan et al., 2012), or alternatively by Lymphoprep density gradient centrifugation (Axis\u2010Shield,\u00a0Dundee,\u00a0UK) followed by Plasmodipur filtration (Euro\u2010Diagnostica, Malm\u00f6, Sweden) (Auburn et al., 2011) or by Plasmodipur filtration alone. Genomic DNA was extracted using the QIAamp DNA Blood Midi or Maxi Kit (Qiagen,\u00a0Hilden,\u00a0Germany), and quantities of human and Plasmodium DNA were determined by fluorescence analysis using a Qubit instrument (Invitrogen,\u00a0Carlsbad,\u00a0California) and multi-species quantitative PCR (Q\u2010PCR) using the Roche Lightcycler 480 II system, as described previously (Manske et al., 2012). Samples with >50 ng DNA and <80% human DNA contamination were selected for sequencing on the Illumina HiSeq platform following the manufacturer\u2019s standard protocols (Bentley et al., 2008). Paired\u2010end sequencing reads of length 200\u2013300\u00a0bp were obtained, generating approximately 1\u00a0Gbp of read data per sample. All short read sequence data have been deposited in the European Nucleotide Archive (http://www.ebi.ac.uk/ena/data/search/?query=plasmodium), and metadata will be released at the time of publication.\n\nPolymorphism discovery, quality control and sample genotyping followed a process described elsewhere (Manske et al., 2012). Short sequence reads from 3,411 P. falciparum samples included in the MalariaGEN Plasmodium falciparum Community Project (http://www.malariagen.net/projects/parasite/pf) were aligned against the P. falciparum 3D7 reference sequence V3 (ftp://ftp.sanger.ac.uk/pub/pathogens/Plasmodium/falciparum/3D7/3D7.latest_version/version3/), using the bwa program\u00a0(Li and Durbin, 2009) (http://bio-bwa.sourceforge.net/) as previously described\u00a0(Manske et al., 2012), to identify an initial global set of 4,305,957 potential SNPs. This list was then used to guide stringent re-alignment using the SNP-o-matic algorithm (Manske and Kwiatkowski, 2009), to reduce misalignment errors. The stringent alignments were then examined by a series of quality filters, with the aim of removing alignment artefacts and their sources. In particular, the following were removed: a) non-coding SNPs; b) SNPs where polymorphisms have extremely low support (<10 reads in one sample); c) SNPs with more than two alleles, with the exception of loci known to be important for drug resistance, which were manually verified for artifacts; d) SNPs where coverage across samples is lower than the 25th percentile and higher than the 95th percentile of coverage in coding SNPs (these thresholds were determined from artifact analysis); e) SNPs located in regions of relatively low uniqueness (Manske et al., 2012); f) SNPs where heterozygosity levels were found to be inconsistent with the heterozygosity distribution at the SNP\u2019s allele frequency; and g) SNPs where genotype could not be established in at least 70% of the samples. These analyses produced a final list of 935,601 high-quality SNPs in the 14 chromosomes of the nuclear genome, whose genotypes were used for analysis in this study.\n\nAll samples were genotyped at each high-quality SNP by a single allele, based on the number of reads observed for the two alleles at that position in the sample. At positions with fewer than 5 reads, the genotype was undetermined (no call was made). At all other positions, the sample was determined to be heterozygous if both alleles were each observed in more than 2 reads; otherwise, the sample was called as homozygous for the allele observed in the majority of reads. For the purposes of estimating allele frequencies and genetic distances, a within-sample allele frequency (fw) was also assigned to each valid call. For heterozygous calls, fw was estimated as ratio of non-reference read count to reference read count; homozygous calls were assigned fw\u00a0=\u00a00 when called with the reference allele, and fw\u00a0=\u00a01 when called with the non-reference allele.\n\nThe genotype of kelch13 was derived from read counts at non-synonymous SNP in the KPBD using a procedure described previously (Miotto et al., 2015)\n\n### Frequency estimation and clustering\n\nFor a given population P, we estimated the non-reference allele frequency (NRAF) at a given SNP as the mean of the within-sample allele frequency (fw) for all samples in P which have a valid genotype at that SNP. The minor allele frequency (MAF) at is the computed as min(NRAF, (1 \u2013 NRAF)).\n\nTo investigate the global population structure, we started by computing an NxN pairwise distance matrix, where N is the number of samples. Each cell of the matrix contained an estimate of genetic distance between the relevant pair of samples, obtained by summing the pairwise distance, estimated from within-sample allele frequency (fw), at each SNP in the 100\u00a0kbp window considered. When comparing a pair of samples sA and sB at a single SNP i where a genotype could be called in each sample, with within-sample allele frequencies fA and fB respectively, the distance dAB was estimated as dAB = fA (1- fB) + fB(1- fA). The genome-wide distance DAB between the two samples is then calculated as\n\n$$\nD_{AB}=\\frac{\\alpha}{n_{AB}}\\sumiw_{i}d_{AB}\n$$\n\nwhere nAB is the number of SNPs where both samples could be genotyped, wi is an LD weighting factor (see below) and \u03b1 is a scaling constant, equal to 70% of the number of coding positions in the genome (since our genotyping covers approximately 70% of the coding genome). The exact value of \u03b1 is uninfluential towards the analyses conducted in this study. The LD weighting factor, which corrects for the cumulative contribution of physically linked polymorphisms, was computed at each SNP i with MAF \u2265 0.1 in our sample set, by considering a window of m SNPs (j = 0.. m) centred at i. For each j, we computed the squared correlation coefficient r2ij\u00a0between SNPs i and j. Ignoring positions j where where r2ij < 0.1, the weighting wi was computed by\n\n$$\nw_{i}=\\frac{1}{1+\\sum_{j}\u00a0r_{ij}^{2}}\n$$\n\nA neighbour-joining tree was then produced using the nj implementation in the R ape package. Principal coordinate analysis (PCoA) was performed using the same pairwise distance matrices using the Classical Multidimensional Scaling (MDS) method (Gower, 1966) PCoA is a computationally efficient variant of principal component analysis (PCA) in which a pairwise distance matrix is used as input, rather than a table of genotypes. The matrix was supplied as input to the MDS algorithm, using the R language cmdscale implementation.\n\n### Conservation scoring and ancestral allele analysis\n\nWe analyzed homologous protein sequences of kelch13 genes for seven Plasmodium species for which high-quality sequence data were available: P. falciparum, P. reichenowi, P. vivax, P. knowlesi, P. yoelii, P. berghei, and P. chabaudi. The sequences were retrieved from the OrthoMCL cluster ORTHOMCL894 in GeneDB (http://www.genedb.org/), and a multiple alignment was obtained using ClustalW (Larkin et al., 2007) at default settings. In turn, we considered each pair alignment of P. falciparum with one of the remaining species, assigning a substitution score to each kelch13 amino acid position, derived from the CCF53P62 substitution matrix. Although this matrix was chosen due to its suitability for AT-rich codon biases (Brick and Pizzi, 2008), we found that use of the more commonly used BLOSUM62 matrix (Henikoff and Henikoff, 1992) did not have a significant effect on the results. Finally, each amino acid position was assigned a conservation score for the pair alignment, equal to the mean of the substitution scores in a 9-residue window centered at that position.\n\nTo reconstruct putative ancestral and derived alleles in the propeller domain, we catalogued all polymorphic positions in the multiple sequence alignment. We organized the seven species into three groups by similarity: Laverania (P. falciparum, P. reichenowi), primate Plasmodia (P. vivax, P. knowlesi) and rodent Plasmodia (P. yoelii, P. berghei, and P. chabaudi), and observed that at each position, only one of the groups presented an allele different from that in the remaining groups. This group-specific allele was labelled as a putative derived allele, and the alternative allele as ancestral. (see Table 5). Rodent species were found to carry the highest number of derived alleles, and therefore deemed to be good comparators for genome-wide conservation scoring. P. chabaudi was selected as a representative species in this group, and used for subsequent comparative analyses.\n\nWe estimated a gene conservation score for every P. falciparum gene for which a P. chabaudi orthologue sequence could be obtained from PlasmoDB (http://www.plasmodb.org/). The details of the method are described elsewhere (Gardner et al., 2011). Briefly, alignments of orthologous protein sequences were performed using ClustalW (Larkin et al., 2007) at default settings, and each amino acid position was assigned a CCF53P62 substitution score (see above). The gene conservation score assigned was equal to the mean substitution score for all amino acid positions in the gene.\n\n### Hydrophobicity analysis\n\nEach amino acid position in the kelch13 was assigned a hydrophobicity score, estimated by computing the mean of the Kyte-Doolittle index in a 14-residue window centered at the position, using the protein sequence translated from the 3D7 reference sequence.\n\n### Chromosome painting\n\nTo reconstruct the probable origin of kelch13 flanking haplotypes in African mutants, we used chromosome painting (Lawson et al., 2012), a method that compares haplotypes in a sample to those in the remaining samples, and estimates probabilities that a genome fragment originates each population, by identifying individuals that share the same haplotype. For all African and SEA samples, we applied chromosome painting across the 250 kbp flanking regions on each side of the kelch13 gene. For each sample, haplotypes surrounding genome loci (chunks) were assigned posterior copying probabilities with respect to all remaining samples (unrestricted painting). We aggregated these probabilities according to the geographical origin of the donor samples, assigning to each chunk a probability that it originates from each of the populations. For each sample, we then estimated the expected fraction of chunks copied from each population.\n\nIn this analysis, we assumed a mutation rate per base per generation of 3.9-10 (Claessens et al., 2014) and a uniform recombination map. Since the two populations differ substantially in effective recombination rates (Mu et al., 2005), we assumed a conservative recombination rate of 30 kbp/cM. Effective population size was initially set to 10,000 and optimized by 10 iterations of the expectation-maximization procedure (Lawson et al., 2012). To account for the presence of heterozygous genotypes due to mixed infections, we modified the matrix of emission probabilities by introducing a novel parameter (\u03b5, set to 10-8) to represent the probability of emitting a mixed call. We repeated the analysis varying this parameter set, to assess the effects of misspecification, and results were found to be very similar qualitatively (data not shown).\n\n### Data access and URLs\n\nIllumina sequence reads have been submitted to the European Nucleotide Archive with study accessions ERP000190 (www.ebi.ac.uk/ena/data/view/ERP000190) and ERP000197 (www.ebi.ac.uk/ena/data/view/ERP000197).\u00a0ENA accession numbers and metadata for the samples used in this paper can obtained via the MalariaGEN website, which also provides access to genotype calls on individual samples (www.malariagen.net/resource/16).\u00a0Further details of all SNPs reported in this dataset including their genome coverage, mapping quality and allele frequencies in different populations, together with tools for querying the data, can be explored at www.malariagen.net/apps/pf.\n",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "f7d82afd-a264-47e2-a4bb-9aa128598a66",
+      "submission_id": "cc03a270-697f-487b-a7cf-434f679e3b11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08714.029](https://doi.org/10.7554/eLife.08714.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Genomic epidemiology of the current wave of artemisinin resistant malaria\" for peer review at eLife. Your submission has been favorably evaluated by Prabhat Jha (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nThis study presents a large number of P. falciparum genomes that are a valuable resource for future molecular epidemiology studies. By analyzing these data, the authors demonstrate that:\n\n1) Artimisinin resistance mutations arose many times independently in South East Asia and are associated with drastic amino acid changes in different domains of kelch13;\n\n2) Resistance mutations in Africa arose locally;\n\n3) Resistance mutations in kelch13 likely come at a substantial cost, limiting their spread.\n\nIn addition, they provide a population genomic characterization of the P. falciparum diversity.\n\nEssential revisions:\n\n1) The study is currently focused exclusively on kelch13 and lacks comparison to other known resistance loci. While kelch13 is compared to the genome wide distribution of diversity, dN/dS, etc., it should be put into context of other resistance loci. It would be straightforward to repeat some of the analysis done for kelch13 for other loci (e.g. highlight those genes in Figure 5, add trees of haplotypes surrounding these loci in analogy to Figure 2).\n\n2) Data availability: the malariaGEN project hosts a comprehensive website for genomic data. However, in the interest of reproducibility and reusability additional files should be provided. We would like to see metadata for all strains included in this study. Ideally, this metadata include sampling date and location, phenotype information where available, the short read archive identifier. Similarly, the source data for figures, such as tables with dN/dS values for genes in case of Figure 5, should be provided. For follow-up analysis a flat file with the genotypes of all strains at the 935,601 high confidence SNPs and their allele frequencies in the different populations would be useful. Such files should be uploaded on data Dryad, or alternatively, a clear description on how to obtain such data from malariaGEN should be given.\n\n3) Figure 1: a genome wide tree is a bad way to summarize diversity in a sexual population. A projection on the first two principal components could be more useful. Location, isolates with kelch13 mutations, phenotypes could be highlighted by color, symbol, size etc. In addition, genomic differentiation could be summarized by FST or the density of private SNPs, possibly in a sliding window along the genome. kelch13 and other resistance loci should be outliers here.\n\n4) Population genomic characterization: Figure 3 is uninformative. Please show the complete minor allele frequency spectra, possibly on a log-log scale to improve readability at the low frequency end. Panel c is redundant with 5a. In order to interpret Figure 2, estimates of the extent of linkage disequilibrium would be welcome (why not show LD decay surrounding kelch13 and other resistance loci in SEA and Africa and compare to genome wide average).\n\n5) Hydrophobicity and radical substitutions: Given that the function of kelch13 is unknown, the emphasis on hydrophobicity as a score for mutations is not justified. In fact, mutations in SEA are found at hydrophilic and hydrophobic sites alike. The stronger signal seems to come from conservation (but note the outlier Y493H). We suggest focusing on conservation and drop the hydrophobicity discussion unless you provide convincing evidence for a causal role of hydrophobicity changes (otherwise, it could stay as a somewhat speculative supplementary figure). The description of the calculation of the conservation score needs more detail. Why did you use a 9 amino acid window for smoothing? How did you average over multiple pairwise comparisons? While substitution matrices quantify broadly the exchangeability of amino acids, they are often a rather poor guide for site specific mutation effects. Is there a way to assess site specific conservation in a broader alignment than the one used for Table 5?\n\n6) Resistance mutations in Africa: A more detailed analysis is required here. Please point out African strains that carry kelch13 mutations on the tree in Figure 2, show additional trees for different haplotype length, and maybe compare African haplotypes with resistance mutations explicitly to the closest SEA haplotype and the closest African haplotype lacking kelch13 mutations. In Figure 2b, do African isolates that cluster with the SEA ones have special properties (e.g. C580Y mutations)? In order to render the discussion of the resistance mutations observed in Africa more concrete, a supplementary file should be provided that contains their country of origin, any drug phenotype data, whether any were culture adapted, whether these were PCR resequenced to confirm the mutations, whether there were any clinical or parasitological data to indicate that these were associated with delayed clearance rates.\n\n7) How representative is Figure 2b showing imperfect separation between Asia and Africa? How does this depend on the size of the window used for tree building? The two African samples that fall in between the SEA and African clusters should be discussed in greater detail and additional analyses are needed to clarify whether they are admixed.\n\n8) The association of fd, aprs10, mdr2, etc. should be explicitly discussed as correlation rather than causation as no evidence is presented for the latter. Given resource limitation, the case for including these loci in routine surveillance is weak at present. The statement in the Discussion should be toned down.\n",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9deef65-ecf0-4ae5-be9d-b0fb9a3987c4",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C1",
+      "claim": "The current epidemic of artemisinin resistant Plasmodium falciparum in Southeast Asia is the result of a soft selective sweep involving at least 20 independent kelch13 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The current epidemic of artemisinin resistant Plasmodium falciparum in Southeast Asia is the result of a soft selective sweep involving at least 20 independent kelch13 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing multiple independent KPBD mutations and references to previous studies documenting this pattern.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "ac5e50dd-178b-4b53-b8b1-ab76220e378f",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C2",
+      "claim": "kelch13 mutations which cause resistance in Southeast Asia are present at low frequency in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "In a large global survey, we find that kelch13 mutations which cause resistance in Southeast Asia are present at low frequency in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic survey data presented in the manuscript showing frequency distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "f0a20e24-53d1-4a45-8a3c-37a042539283",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C3",
+      "claim": "African kelch13 mutations have originated locally.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that African kelch13 mutations have originated locally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by chromosome painting analysis and phylogenetic data showing African mutations cluster with African samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "5ac93a3c-2af0-4e28-9ebc-e17513c0a020",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C4",
+      "claim": "kelch13 shows a normal variation pattern relative to other genes in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "kelch13 shows a normal variation pattern relative to other genes in Africa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic calibration analysis comparing kelch13 N/S ratios to other genes at similar conservation levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "ea5ee93e-6f7e-4a3e-94d0-26ca23f9634f",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C5",
+      "claim": "In Southeast Asia there is a great excess of non-synonymous mutations in kelch13, many of which cause radical amino-acid changes.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in Southeast Asia there is a great excess of non-synonymous mutations, many of which cause radical amino-acid changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing elevated N/S ratios and conservation score analysis of mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "66dd0555-1923-4d93-82f1-3f08d8ddbba9",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C6",
+      "claim": "kelch13 is not currently undergoing strong selection in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, kelch13 is not currently undergoing strong selection in Africa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from normal variation patterns and low frequency of non-synonymous mutations compared to Southeast Asia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "cf8af8f5-c89f-461a-b10d-7c55bb72049f",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C7",
+      "claim": "There is a deep reservoir of variations in Africa that could potentially allow resistance to emerge rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "despite a deep reservoir of variations that could potentially allow resistance to emerge rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing 26 non-synonymous KPBD mutations present in Africa, though at low frequency.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "195a6273-89f8-4b52-b54c-7829a6565db3",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C8",
+      "claim": "Artemisinin combination therapy has played a major part in reducing the number of deaths due to malaria over the past decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Artemisinin combination therapy (ACT), the frontline treatment for P. falciparum infection, has played a major part in reducing the number of deaths due to malaria over the past decade (World Health Organization, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "8bfb10a8-c794-465e-9d7b-d81e5113a66b",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C9",
+      "claim": "The increasing prevalence of artemisinin resistant P. falciparum across large parts of Southeast Asia threatens to destabilise malaria control worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "However the increasing prevalence of artemisinin resistant P. falciparum across large parts of Southeast Asia threatens to destabilise malaria control worldwide (Dondorp et al., 2009; Hien et al., 2012; Phyo et al., 2012; Kyaw et al., 2013; Ashley et al., 2014; World Health Organization, 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting artemisinin resistance prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "ee277cad-41b9-4fa8-95f1-4d095879cc40",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C10",
+      "claim": "Artemisinin resistance is caused by mutations in a kelch protein encoded by PF3D7_1343700 on P. falciparum chromosome 13.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, artemisinin resistance is caused by mutations in a kelch protein encoded by PF3D7_1343700 on P. falciparum chromosome 13, referred to here as kelch13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to laboratory studies, genetic association studies, and allelic replacement experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "9e166da7-1391-4a73-b9ae-aebda909af1a",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C11",
+      "claim": "Non-synonymous mutations in the kelch13 propeller and BTB-POZ domains result in reduced sensitivity of P. falciparum to artemisinin.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, non-synonymous mutations in the kelch13 propeller and BTB-POZ domains (KPBD) result in reduced sensitivity of P. falciparum to artemisinin, as demonstrated by multiple lines of evidence including laboratory studies of artificially acquired resistance, genetic association studies of natural resistance and allelic replacement experiments (Ariey et al., 2014; Ghorbal et al., 2014; Miotto et al., 2015; Straimer et al., 2015; Takala-Harrison et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "0bbf5807-1ed2-414a-91cb-03e12ca1839f",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C12",
+      "claim": "Parasites with KBPD mutations tend to grow more slowly in the early part of the erythrocytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasites with KBPD mutations tend to grow more slowly in the early part of the erythrocytic cycle, and have an enhanced unfolded protein response, both of which might act to protect against oxidative damage caused by artemisinin (Dogovski et al., 2015; Mok et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on parasite growth and protein response.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "14cf5ca4-fd4f-429c-aecf-6332f97f4270",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C13",
+      "claim": "kelch13 binds to PI3K to mark it for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also recently been shown that the PI3K protein is the target of artemisinin action, and that kelch13 binds to PI3K to mark it for degradation; by affecting this binding, KBPD mutations result in high levels of PI3K which counteract the effect of artemisinin (Mbengue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent study on PI3K and kelch13 interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "669cdf08-d099-434b-8038-ff468b410d59",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C14",
+      "claim": "KBPD mutations result in high levels of PI3K which counteract the effect of artemisinin.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also recently been shown that the PI3K protein is the target of artemisinin action, and that kelch13 binds to PI3K to mark it for degradation; by affecting this binding, KBPD mutations result in high levels of PI3K which counteract the effect of artemisinin (Mbengue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on mechanism of artemisinin resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "cff53a19-8efb-4e4c-b5d9-a36101620cc1",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C17",
+      "claim": "The current epidemic of artemisinin resistance is the most extreme example of a soft selective sweep thus far observed in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "There is ongoing debate among evolutionary biologists about how commonly soft selective sweeps occur in nature (Jensen, 2014; Garud et al., 2015) but they have clearly played a role in previous forms of antimalarial drug resistance (Nair et al., 2007; Salgueiro et al., 2010) and the current epidemic of artemisinin resistance is the most extreme example of a soft selective sweep thus far observed in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison to other documented soft sweeps and the number of independent mutations involved.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "61ce32f0-1d46-46db-bf72-5d488d1b2940",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C18",
+      "claim": "The dataset comprised 1,648 samples from Africa and 1,599 samples from Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "As summarised in Table 1, the dataset comprised 1,648 samples from Africa and 1,599 samples from Southeast Asia, allowing us to compare these two groups directly without the need for sample size corrections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated sample counts from the study dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "195af9cc-97a5-4854-8d5f-6aab4cb183ea",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C19",
+      "claim": "A total of 155 SNPs were identified in the kelch13 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 155 SNPs in the kelch13 gene, of which 128 were seen in Africa and 62 in Southeast Asia (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated count from genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "179dcf6b-cfcb-44cf-a288-2935a32a11cc",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C20",
+      "claim": "128 kelch13 SNPs were seen in Africa and 62 in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 155 SNPs in the kelch13 gene, of which 128 were seen in Africa and 62 in Southeast Asia (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated counts from genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "4c96f125-12e0-4784-ab33-018492ee85b8",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C21",
+      "claim": "Out of 46 non-synonymous SNPs in the KPBD domains, 26 were found in Africa and 34 in Southeast Asia, with 14 seen in both places.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of a total of 46 non-synonymous SNPs in these domains we found a similar number in Africa (n = 26) and Southeast Asia (n = 34), with 14 seen in both places (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated counts from genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "4445a3db-b000-48a0-8fe0-7f6155b6eade",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C22",
+      "claim": "Seven kelch13 mutations observed in Africa have previously been associated with artemisinin resistance in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of those observed in Africa have previously been associated with artemisinin resistance in Southeast Asia, including C580Y, the most common allele in resistant parasites (Miotto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with previously published resistance-associated mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "d431e1c5-07e8-4b5a-a2e4-6e2b4cb6dd22",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C23",
+      "claim": "C580Y is the most common kelch13 allele in resistant parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of those observed in Africa have previously been associated with artemisinin resistance in Southeast Asia, including C580Y, the most common allele in resistant parasites (Miotto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on resistance alleles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "0e924cf4-15e2-471b-a55b-af1f20ff81f0",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C24",
+      "claim": "African and Southeast Asian samples formed two well-separated and distinct clusters in the neighbour-joining tree.",
+      "claim_type": "EXPLICIT",
+      "source": "African and Southeast Asian samples formed two well-separated and distinct clusters, suggesting that gene flow between the two regions is very modest or negligible, a view supported by an alternative analysis using principal coordinate analysis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic tree analysis shown in Figure 1A and PCoA in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "73c963a6-b6df-432b-a0a0-3504275bb691",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C25",
+      "claim": "Gene flow between Africa and Southeast Asia is very modest or negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "African and Southeast Asian samples formed two well-separated and distinct clusters, suggesting that gene flow between the two regions is very modest or negligible, a view supported by an alternative analysis using principal coordinate analysis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from phylogenetic clustering and PCoA analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "3ef94605-79b3-4daa-9fd0-e5861d7619f2",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C26",
+      "claim": "None of the African parasites carrying kelch13 mutations grouped with the Southeast Asian population.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the African parasites carrying kelch13 mutations grouped with the Southeast Asian population, supporting the idea that these mutations are indigenous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on phylogenetic analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "58d68c39-4d8a-4712-a968-7ac4e75e227b",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C27",
+      "claim": "The vast majority of kelch13 mutants showed no evidence that flanking regions may have been imported from Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of kelch13 mutants showed no evidence that flanking regions may have been imported, which indicates that most mutations observed in Africa do not have a common origin with those in Asia, and are likely to have emerged independently on a variety of haplotypes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chromosome painting analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "2e2fae9d-cf2f-4b2e-bb72-97188b16ff15",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C28",
+      "claim": "Only 5 samples out of 56 African kelch13 mutants were assigned a significant probability of Southeast Asian origin in at least one flanking sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 5 samples out of 56 were assigned a significant probability of Southeast Asian origin in at least one flanking sequence, and only two of these samples carried haplotypes similar to those in SEA mutants (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on chromosome painting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "2397c798-bbf9-4120-a5c8-ba01f276982b",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C29",
+      "claim": "Only two African kelch13 mutant samples carried haplotypes similar to those in Southeast Asian mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 5 samples out of 56 were assigned a significant probability of Southeast Asian origin in at least one flanking sequence, and only two of these samples carried haplotypes similar to those in SEA mutants (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on chromosome painting analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "982f1cd8-3ab1-4703-a433-d5c269a3842d",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C30",
+      "claim": "At more than half of all polymorphic sites, the minor allele was only carried by a single sample (singletons, n = 330,783 or 35%) or by two samples (doubletons, n = 214,179 or 23%).",
+      "claim_type": "EXPLICIT",
+      "source": "At more than half of all polymorphic sites, the minor allele was only carried by a single sample (referred to as singletons, n = 330,783 or 35%) or by two samples (doubletons, n = 214,179 or 23%), often in heterozygous calls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated counts from genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "8b3d06e0-98f7-4fb1-95c7-9c7b7f7a422d",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C31",
+      "claim": "Only 13,383 polymorphisms (1.4%) had a minor allele in \u22655% of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, only 13,383 polymorphisms (1.4%) had a minor allele in \u22655% of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated count from genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "5c3ad182-3d95-4afc-9a4d-0224f5021ebf",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C32",
+      "claim": "There is a large excess of polymorphisms with minor allele frequency below 0.1% in Africa (71% of all SNPs) compared to Southeast Asia (17%).",
+      "claim_type": "EXPLICIT",
+      "source": "There is a large excess of polymorphisms with minor allele frequency (MAF) below 0.1% in Africa (71% of all SNPs, vs. 17% in SEA), while numbers in the two regions are similar for SNPs with MAF>1% (2% of all SNPs, Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on allele frequency spectrum analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "3946e06d-4d86-487c-a51c-c8e50469fb1e",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C33",
+      "claim": "SNP density in Africa (median = 67 SNPs/kbp) is approximately 3.9 times higher than in Southeast Asia (median = 17).",
+      "claim_type": "EXPLICIT",
+      "source": "SNP density in Africa (median = 67 SNPs/kbp, interquartile range = 51\u201384) is approximately 3.9 times higher than in SEA (median = 17, IQR = 13\u201322, p < 10\u201316, Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis of SNP density per gene shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "8805d49a-356b-42a4-979e-f22d48d6c076",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C34",
+      "claim": "The distributions of the ratio of non-synonymous to synonymous mutations (N/S ratio) are virtually identical in Africa and Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found virtually identical distributions of the ratio of non-synonymous to synonymous mutations (N/S ratio) in the two regions (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of N/S ratio distributions shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "5a344ff4-c85b-47c0-9193-a86ecdce5c57",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C35",
+      "claim": "The huge disparity in SNP density between Africa and Southeast Asia is more likely to be the result of different demographic histories and epidemiological characteristics rather than different selective constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the huge disparity in SNP density between the two regions is more likely to be the result of different demographic histories and epidemiological characteristics, such as changes in effective population size (Joy et al., 2003), rather than the product of different selective constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similar N/S ratios despite different SNP densities, with citation to support demographic explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "3f21ef59-5d37-4066-b939-a1028ab7056d",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C36",
+      "claim": "The density of kelch13 synonymous variations in Africa and Southeast Asia is roughly consistent with that observed in the rest of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of kelch13 synonymous variations in the two continents is roughly consistent with that observed in the rest of the genome (Africa: 28 SNPs/kbp, SEA: 6; Figure 4a), which is expected since synonymous changes are less likely to be affected by selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of kelch13 synonymous SNP density to genome-wide patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "3458d0d6-9688-4692-bb3f-a06b02b55152",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C37",
+      "claim": "Non-synonymous polymorphisms in the KPBD show a reversal of the Africa-Southeast Asia relationship, with Southeast Asian parasites possessing about 30% more polymorphisms than African ones (34 in SEA vs. 26 in AFR).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, non-synonymous polymorphisms in the KPBD show a reversal of this relationship: SEA parasites possess about 30% more polymorphisms than African ones (34 in SEA vs. 26 in AFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on count of non-synonymous KPBD mutations in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "df493c70-c5ab-47b2-88ce-db1b3329245f",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C38",
+      "claim": "All but two non-synonymous changes in the KPBD are observed in Africa at very low frequency (singletons and doubletons).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all but two non-synonymous changes in the KPBD are observed in Africa at very low frequency (singletons and doubletons), while in SEA more than half of the changes are observed in >2 samples (Table 4 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on frequency distribution analysis shown in Table 4 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "67f09039-5f71-484e-a0cf-28935c328499",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C39",
+      "claim": "In Southeast Asia more than half of the non-synonymous KPBD changes are observed in >2 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all but two non-synonymous changes in the KPBD are observed in Africa at very low frequency (singletons and doubletons), while in SEA more than half of the changes are observed in >2 samples (Table 4 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on frequency distribution analysis shown in Table 4 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "45421709-6c66-4c61-ada0-e25d017a7dce",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C40",
+      "claim": "The propeller and BTB-POZ domains of kelch13 are part of a highly conserved region across Plasmodium species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the function of kelch13 is as yet unclear, an alignment of its homologous gene sequences in eight Plasmodium species shows that the propeller and BTB-POZ domains are part of a highly conserved region (Figure 4b), suggesting a crucial role in parasite fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on sequence alignment analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "0fe5944b-e26a-4b64-bcd4-90cd360ad448",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C41",
+      "claim": "P. falciparum accumulated only five conservative amino acid changes in the kelch13 propeller domain since diverging from other Plasmodium species 55 Myr ago.",
+      "claim_type": "EXPLICIT",
+      "source": "A reconstruction of ancestral alleles from this alignment suggests that P. falciparum accumulated only five conservative amino acid changes in the kelch13 propeller domain since diverging from other species 55 Myr ago (Escalante and Ayala, 1995) (Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ancestral allele reconstruction from sequence alignment, with citation for divergence time.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "c356a628-6715-4740-b2c4-689eb15bc672",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C42",
+      "claim": "kelch13 did not diverge significantly from the expected N/S ratio relationship in Africa (P = 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Although kelch13 did not diverge significantly from this relationship in Africa (P = 0.2), its N/S ratio in SEA was the highest observed at its level of conservation, far exceeding the expected ratio (P<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical comparison of kelch13 N/S ratio to genome-wide conservation-N/S relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "1e261e92-f346-48ab-845c-6ff846a4ea60",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C43",
+      "claim": "kelch13 N/S ratio in Southeast Asia was the highest observed at its level of conservation, far exceeding the expected ratio (P<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Although kelch13 did not diverge significantly from this relationship in Africa (P = 0.2), its N/S ratio in SEA was the highest observed at its level of conservation, far exceeding the expected ratio (P<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical comparison of kelch13 N/S ratio to genome-wide conservation-N/S relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "cac2aa45-6a4b-4ab8-828f-23253367dec9",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C44",
+      "claim": "kelch13 showed the most significant difference in N/S ratios between Africa and Southeast Asia genome-wide (3.7-fold, P = 2 \u00d7 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, kelch13 showed the most significant difference in N/S ratios between Africa and SEA genome-wide (3.7-fold, P = 2 \u00d7 10-4 by Fisher's exact test, Figure 5b and Supplementary file 1), even compared to other well-known drug resistance genes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical comparison of N/S ratio differences across all genes, shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "17a94ef7-578a-4527-bc7d-3a190c6434c4",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C45",
+      "claim": "The unusually high N/S ratio in Southeast Asian kelch13 is mainly due to an excess of high frequency non-synonymous variations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such unusually high N/S ratio in SEA parasites is mainly due to an excess of high frequency non-synonymous variations (Figure 5\u2014figure supplement 2), suggesting that multiple independent origins of artemisinin resistance (Miotto et al., 2015; Takala-Harrison et al., 2015) have produced an unusually large number of common non-synonymous mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on frequency distribution analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "df48e4a0-b2e7-4dd7-99b4-f969285e910c",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C46",
+      "claim": "The high prevalence of kelch13 non-synonymous variants in Southeast Asia is not explainable by neutral evolution, but is consistent with selection of artemisinin-resistance alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis we conclude that the high prevalence of kelch13 non-synonymous variants in SEA is not explainable by neutral evolution, but is consistent with selection of artemisinin-resistance alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of kelch13 to genome-wide patterns and conservation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "77b708e7-0e94-49c0-9a8e-cbe851a18d6c",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C47",
+      "claim": "In Africa, the observed kelch13 non-synonymous changes appear to constitute a 'physiological' level of variation consistent with a population rich in low-frequency alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "In Africa, on the other hand, the observed non-synonymous changes appear to constitute a \"physiological\" level of variation consistent with a population rich in low-frequency alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of kelch13 to genome-wide patterns in Africa.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "2e6e66e8-10d8-472c-ad1b-9753ae54fa35",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C48",
+      "claim": "Polymorphisms found in Southeast Asian parasites occur in different blades of the kelch13 propeller domain, preferentially at positions proximal to the first and second \u03b2-strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed mapping against the secondary structure of the propeller domain suggests that the polymorphisms found in SEA parasites occur in different blades, preferentially at positions proximal to the first and second \u03b2-strand of the propeller's blades (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural mapping analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "3119df79-27ca-4f13-9661-7fbfe8b4b1b6",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C49",
+      "claim": "Common mutations in Africa have characteristics broadly consistent with the conservative history of change in kelch13.",
+      "claim_type": "EXPLICIT",
+      "source": "Common mutations in Africa have characteristics broadly consistent with this conservative history of change (Figure 6\u2014figure supplement 1b and Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on conservation score and hydrophobicity analysis shown in Figure 6\u2014figure supplement 1b and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "c996ed53-63b4-4716-ad61-cd2f18801a54",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C50",
+      "claim": "Polymorphisms in Southeast Asian parasites show a pattern of changes that are more radical than those in Africa (P = 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphisms in SEA parasites, on the other hand, show a pattern of changes that are more radical than those in Africa (P = 10\u20133) and more commonly found at hydrophobic sites (Figure 6\u2014figure supplement 1c and Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical comparison of conservation scores shown in Figure 6\u2014figure supplement 1c and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "5dfca8ec-ca16-43f8-86f9-70b76fdb2187",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C51",
+      "claim": "Southeast Asian kelch13 polymorphisms are more commonly found at hydrophobic sites compared to African polymorphisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphisms in SEA parasites, on the other hand, show a pattern of changes that are more radical than those in Africa (P = 10\u20133) and more commonly found at hydrophobic sites (Figure 6\u2014figure supplement 1c and Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on hydrophobicity analysis shown in Figure 6\u2014figure supplement 1c and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "f6fdb7cf-660e-4a9b-a0a5-a0115c6e8b66",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C52",
+      "claim": "Resistance-causing KPBD mutations are significantly more likely to arise in parasites with a particular genetic background marked by specific SNP alleles of fd, arps10, mdr2 and crt genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has shown that resistance-causing KPBD mutations are significantly more likely to arise in parasites with a particular genetic background (Miotto et al., 2015). This predisposing genetic background is marked by specific SNP alleles of the genes encoding ferredoxin (fd), apicoplast ribosomal protein S10 (arps10), multidrug resistance protein 2 (mdr2) and chloroquine resistance transporter (crt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on genetic background.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "de917f97-c1aa-461e-b1b2-ef98ecd8ee69",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C53",
+      "claim": "The particular combination of genetic background variants (fd, arps10, mdr2, crt) is extremely common in parts of Southeast Asia where artemisinin resistance is established, and is absent from Africa and other regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we extend this analysis, confirming that this particular combination of variants is extremely common in the parts of Southeast Asia where artemisinin resistance is known to be established, and is absent from Africa and other regions sampled here (Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of genetic background allele frequencies shown in Table 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "a1a1749a-dafc-44a4-90c6-2c3ca660d100",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C54",
+      "claim": "Only 20% of infected African children currently have access to frontline treatment ACT medication.",
+      "claim_type": "EXPLICIT",
+      "source": "Artemisinin has been widely used in Southeast Asia for over two decades, whereas its usage in Africa is more recent, and it is estimated that only 20% of infected African children currently have access to frontline treatment ACT medication (World Health Organization, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "6925f3e3-6223-48c6-90ce-024a1e012ed5",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C55",
+      "claim": "There is a large reservoir of parasites in Africa that are not exposed to antimalarial drugs because asymptomatic individuals do not seek treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Another factor is that people living in regions of high malaria endemicity acquire partial immunity, resulting in asymptomatic infection, so that there is a large reservoir of parasites in Africa that are not exposed to antimalarial drugs because asymptomatic individuals do not seek treatment (Hastings, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about malaria immunity and treatment-seeking behavior, with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "9d1e52ed-5e31-4eeb-9080-4446977852f2",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C56",
+      "claim": "The global spread of resistance to chloroquine and sulfadoxine-pyrimethamine was dominated by hard sweeps of specific haplotypes originating in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "The global spread of resistance to chloroquine and sulfadoxine-pyrimethamine was dominated by hard sweeps of specific haplotypes originating in Southeast Asia, although it is clear that there were also localised emergences (Mita et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on previous drug resistance patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "bbfd9289-1227-4e76-b1b0-0612b6561178",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C57",
+      "claim": "A specific C580Y haplotype is approaching fixation in large parts of Western Cambodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we still know relatively little about the functional properties of different KPBD mutations, it is clear that some are more successful than others, e.g. the C580Y allele has emerged at multiple locations in Southeast Asia and Africa, and a specific C580Y haplotype is approaching fixation in large parts of Western Cambodia (Miotto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on C580Y haplotype spread.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "6239ff5a-2bc5-4bf9-a037-0a1714ab8d03",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C58",
+      "claim": "Individual kelch13 mutations appear to have limited spread, implying that there is a substantial fitness cost in the absence of sustained drug pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The high level of sequence conservation of KPBD across Plasmodium species indicates that mutations in these domains incur fitness costs, and this is supported by the observation that although there have been multiple independent origins of resistance-causing kelch13 mutations, individual kelch13 mutations appear to have limited spread, implying that there is a substantial fitness cost in the absence of sustained drug pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from conservation data and observed limited geographic spread of individual mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "bb89f3b1-3226-41ac-9fb2-b7fae675ac1d",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C59",
+      "claim": "The initial alignments identified 4,305,957 potential SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial alignments identified 4,305,957 potential SNPs, which after quality control filtering produced a set of 935,601 exonic SNPs that could be genotyped with high confidence in the majority of samples, and that form the basis for the current analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated count from sequencing and alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "c8172341-6bd0-4ac9-bd96-153e7cb66d18",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "claim_id": "C60",
+      "claim": "After quality control filtering, 935,601 exonic SNPs could be genotyped with high confidence in the majority of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial alignments identified 4,305,957 potential SNPs, which after quality control filtering produced a set of 935,601 exonic SNPs that could be genotyped with high confidence in the majority of samples, and that form the basis for the current analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated count from quality control filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "81e9a8cf-4b86-4532-ad59-600c4c3244e4",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The current artemisinin resistance epidemic in Southeast Asia represents a soft selective sweep involving at least 20 independent kelch13 mutations, constituting the most extreme example of such a sweep observed in eukaryotes to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C17 are well-supported by the genomic data showing multiple independent KPBD mutations across Southeast Asia and citations to prior work documenting this pattern. The characterization as the most extreme soft sweep in eukaryotes is supported by comparative analysis with other documented cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "718a238e-22bc-4e7a-9275-f530eedafe84",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Kelch13 mutations associated with artemisinin resistance in Southeast Asia are present at low frequency in Africa. The study identified 155 total kelch13 SNPs (128 in Africa, 62 in Southeast Asia), with 46 non-synonymous KPBD mutations (26 in Africa, 34 in Southeast Asia), including seven resistance-associated mutations from Southeast Asia found in Africa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C19-C23 are directly supported by genomic survey data presented in Tables 2 and 3, showing specific counts of mutations and their geographic distribution. The data clearly demonstrate that resistance-associated mutations exist in Africa but at low frequencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "ff8ee9ff-a29a-4823-b146-e4a169906adf",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "African kelch13 mutations have originated locally rather than being imported from Southeast Asia. Phylogenetic analysis shows African and Southeast Asian samples form distinct clusters with negligible gene flow, and chromosome painting reveals that the vast majority of African kelch13 mutants lack Southeast Asian flanking haplotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C24-C29 are well-supported by multiple lines of genomic evidence including neighbor-joining trees (Figure 1A), PCoA (Figure 1B), and chromosome painting analysis (Figure 2). Only 5 of 56 African mutants showed evidence of possible Southeast Asian origin, with only 2 carrying similar haplotypes. The convergent evidence strongly supports local origin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "a8f2175b-fb3c-4f90-a577-502f620f572c",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Kelch13 shows a normal variation pattern in Africa relative to other genes and is not currently undergoing strong selection. The N/S ratio in Africa does not significantly diverge from expected values (P = 0.2), and observed non-synonymous changes appear to constitute physiological variation consistent with a population rich in low-frequency alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, C42, and C47 are supported by genomic calibration analysis comparing kelch13 to genome-wide patterns. The statistical comparison showing P = 0.2 for deviation from expected N/S ratio in Africa, combined with the observation that most African KPBD mutations are singletons/doubletons, provides strong evidence for the absence of current selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "50c431f2-6df7-4431-a03b-fe89413ce0f7",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In Southeast Asia, kelch13 exhibits a great excess of non-synonymous mutations, many causing radical amino acid changes. The N/S ratio in Southeast Asia is the highest observed at its conservation level (P<0.001), showing a 3.7-fold difference from Africa (P = 2\u00d710\u207b\u2074), driven by an excess of high-frequency non-synonymous variations inconsistent with neutral evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C37-C46 are strongly supported by multiple statistical analyses including N/S ratio comparisons, conservation score analysis, and frequency distribution data (Figures 3-5, Tables 4 and 6). The genome-wide comparison showing kelch13 as the most significant outlier, combined with the excess of high-frequency mutations, provides compelling evidence for positive selection in Southeast Asia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "8ca15179-4086-47df-a118-08e9577049a7",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There is a deep reservoir of kelch13 variations in Africa (26 non-synonymous KPBD mutations) that could potentially allow resistance to emerge rapidly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C7 is partially supported by data showing 26 non-synonymous KPBD mutations present in Africa, but the assertion that these 'could potentially allow resistance to emerge rapidly' is speculative. The claim conflates the presence of genetic variation with functional capacity for resistance, which requires additional phenotypic validation not provided in the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Africa exhibits a much higher density of rare genetic variants compared to Southeast Asia. More than half of polymorphic sites are singletons (35%) or doubletons (23%), with 71% of African SNPs having MAF<0.1% versus 17% in Southeast Asia. SNP density in Africa is 3.9 times higher than Southeast Asia, but N/S ratios are virtually identical, suggesting demographic rather than selective differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 are well-supported by comprehensive genomic data presented in Figure 3 and statistical analyses. The allele frequency spectrum, SNP density distributions, and N/S ratio comparisons provide strong evidence for demographic differences between regions. The inference that demographic history rather than selection explains the disparity is reasonable given the similar N/S ratios despite vastly different SNP densities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "1c84d129-e2cb-42ba-970b-51f76d47483c",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The kelch13 propeller and BTB-POZ domains are highly conserved across Plasmodium species, with P. falciparum accumulating only five conservative amino acid changes in the propeller domain since diverging 55 Myr ago. Synonymous variation density in kelch13 is consistent with genome-wide patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C40, and C41 are supported by sequence alignment analysis across multiple Plasmodium species (Figure 4b, Table 5) and comparison of synonymous SNP density to genome-wide patterns. The ancestral allele reconstruction and conservation scoring provide solid evidence for the extreme conservation of these domains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "82fff311-f371-4cbe-98c1-8f8dff837dd9",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Southeast Asian kelch13 polymorphisms occur preferentially at positions proximal to the first and second \u03b2-strands of propeller blades and show more radical changes (P = 10\u207b\u00b3) at hydrophobic sites compared to African mutations, which have characteristics consistent with conservative evolutionary history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by structural mapping analysis (Figure 6), conservation score comparisons, and hydrophobicity analysis (Figure 6\u2014figure supplement 1, Table 6). The statistical significance (P = 10\u207b\u00b3) for more radical changes in Southeast Asia and the systematic characterization of mutation properties provide strong support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "18d8156f-1311-4544-bebe-7f5f30292a5b",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Resistance-causing KPBD mutations are significantly more likely to arise in parasites with a particular genetic background marked by specific SNP alleles in fd, arps10, mdr2, and crt genes. This combination is extremely common in Southeast Asian regions with established artemisinin resistance but absent from Africa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 are supported by citation to prior work (Miotto et al., 2015) and extended analysis presented in Table 7 showing allele frequencies across populations. The data clearly demonstrate the geographic restriction of this genetic background combination, though the mechanistic basis relies on prior published work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "1087d089-6e86-4ee1-afcc-6631621a6164",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Artemisinin combination therapy has played a major role in reducing malaria deaths, but increasing resistance in Southeast Asia threatens global malaria control. In Africa, artemisinin usage is more recent with only 20% of infected children having access to ACT, and a large reservoir of parasites remains unexposed due to asymptomatic infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C54, and C55 are supported by citations to WHO reports and established knowledge about malaria epidemiology. These contextual claims provide important background but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "55b3cea6-608b-4435-a12e-6992fdedc582",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Artemisinin resistance is caused by non-synonymous mutations in the kelch13 propeller and BTB-POZ domains. These mutations affect parasite growth, enhance unfolded protein response, and result in elevated PI3K levels that counteract artemisinin by affecting kelch13-PI3K binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are supported by multiple citations to prior experimental work including laboratory studies, genetic association studies, and allelic replacement experiments. These are established findings from prior work that provide mechanistic context for the current genomic epidemiology study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "53204e9a-278d-4485-b6b3-acc079aa0e40",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous antimalarial resistance spread was dominated by hard sweeps from Southeast Asia, though localized emergences occurred. The C580Y haplotype is approaching fixation in Western Cambodia, but individual kelch13 mutations show limited spread, suggesting substantial fitness costs without sustained drug pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by citations to prior work and inference from conservation data and observed geographic patterns. The limited spread of individual mutations despite multiple origins is consistent with fitness costs, though direct fitness measurements are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    },
+    {
+      "id": "14f5210a-0e09-4fdd-a9b9-399f9fc48123",
+      "content_id": "48719299-a2c0-4891-9a9a-8778599beb87",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study analyzed 1,648 African and 1,599 Southeast Asian samples. Initial alignments identified 4,305,957 potential SNPs, which after quality control filtering produced 935,601 high-confidence exonic SNPs for analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C59, and C60 describe the dataset and methodology. These are directly stated counts from the study's data processing pipeline and are well-documented in the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:56:28.862876Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c9deef65-ecf0-4ae5-be9d-b0fb9a3987c4",
+      "result_id": "81e9a8cf-4b86-4532-ad59-600c4c3244e4"
+    },
+    {
+      "claim_id": "cff53a19-8efb-4e4c-b5d9-a36101620cc1",
+      "result_id": "81e9a8cf-4b86-4532-ad59-600c4c3244e4"
+    },
+    {
+      "claim_id": "ac5e50dd-178b-4b53-b8b1-ab76220e378f",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "195af9cc-97a5-4854-8d5f-6aab4cb183ea",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "179dcf6b-cfcb-44cf-a288-2935a32a11cc",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "4c96f125-12e0-4784-ab33-018492ee85b8",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "4445a3db-b000-48a0-8fe0-7f6155b6eade",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "d431e1c5-07e8-4b5a-a2e4-6e2b4cb6dd22",
+      "result_id": "718a238e-22bc-4e7a-9275-f530eedafe84"
+    },
+    {
+      "claim_id": "f0a20e24-53d1-4a45-8a3c-37a042539283",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "0e924cf4-15e2-471b-a55b-af1f20ff81f0",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "73c963a6-b6df-432b-a0a0-3504275bb691",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "3ef94605-79b3-4daa-9fd0-e5861d7619f2",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "58d68c39-4d8a-4712-a968-7ac4e75e227b",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "2e2fae9d-cf2f-4b2e-bb72-97188b16ff15",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "2397c798-bbf9-4120-a5c8-ba01f276982b",
+      "result_id": "ff8ee9ff-a29a-4823-b146-e4a169906adf"
+    },
+    {
+      "claim_id": "5ac93a3c-2af0-4e28-9ebc-e17513c0a020",
+      "result_id": "a8f2175b-fb3c-4f90-a577-502f620f572c"
+    },
+    {
+      "claim_id": "66dd0555-1923-4d93-82f1-3f08d8ddbba9",
+      "result_id": "a8f2175b-fb3c-4f90-a577-502f620f572c"
+    },
+    {
+      "claim_id": "c356a628-6715-4740-b2c4-689eb15bc672",
+      "result_id": "a8f2175b-fb3c-4f90-a577-502f620f572c"
+    },
+    {
+      "claim_id": "77b708e7-0e94-49c0-9a8e-cbe851a18d6c",
+      "result_id": "a8f2175b-fb3c-4f90-a577-502f620f572c"
+    },
+    {
+      "claim_id": "ea5ee93e-6f7e-4a3e-94d0-26ca23f9634f",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "3458d0d6-9688-4692-bb3f-a06b02b55152",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "df493c70-c5ab-47b2-88ce-db1b3329245f",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "67f09039-5f71-484e-a0cf-28935c328499",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "1e261e92-f346-48ab-845c-6ff846a4ea60",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "cac2aa45-6a4b-4ab8-828f-23253367dec9",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "17a94ef7-578a-4527-bc7d-3a190c6434c4",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "df48e4a0-b2e7-4dd7-99b4-f969285e910c",
+      "result_id": "50c431f2-6df7-4431-a03b-fe89413ce0f7"
+    },
+    {
+      "claim_id": "cf8af8f5-c89f-461a-b10d-7c55bb72049f",
+      "result_id": "8ca15179-4086-47df-a118-08e9577049a7"
+    },
+    {
+      "claim_id": "982f1cd8-3ab1-4703-a433-d5c269a3842d",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "8b3d06e0-98f7-4fb1-95c7-9c7b7f7a422d",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "5c3ad182-3d95-4afc-9a4d-0224f5021ebf",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "3946e06d-4d86-487c-a51c-c8e50469fb1e",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "8805d49a-356b-42a4-979e-f22d48d6c076",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "5a344ff4-c85b-47c0-9193-a86ecdce5c57",
+      "result_id": "2d164a02-fcd2-4b32-af20-a27e6b6e44df"
+    },
+    {
+      "claim_id": "3f21ef59-5d37-4066-b939-a1028ab7056d",
+      "result_id": "1c84d129-e2cb-42ba-970b-51f76d47483c"
+    },
+    {
+      "claim_id": "45421709-6c66-4c61-ada0-e25d017a7dce",
+      "result_id": "1c84d129-e2cb-42ba-970b-51f76d47483c"
+    },
+    {
+      "claim_id": "0fe5944b-e26a-4b64-bcd4-90cd360ad448",
+      "result_id": "1c84d129-e2cb-42ba-970b-51f76d47483c"
+    },
+    {
+      "claim_id": "2e6e66e8-10d8-472c-ad1b-9753ae54fa35",
+      "result_id": "82fff311-f371-4cbe-98c1-8f8dff837dd9"
+    },
+    {
+      "claim_id": "3119df79-27ca-4f13-9661-7fbfe8b4b1b6",
+      "result_id": "82fff311-f371-4cbe-98c1-8f8dff837dd9"
+    },
+    {
+      "claim_id": "c996ed53-63b4-4716-ad61-cd2f18801a54",
+      "result_id": "82fff311-f371-4cbe-98c1-8f8dff837dd9"
+    },
+    {
+      "claim_id": "5dfca8ec-ca16-43f8-86f9-70b76fdb2187",
+      "result_id": "82fff311-f371-4cbe-98c1-8f8dff837dd9"
+    },
+    {
+      "claim_id": "f6fdb7cf-660e-4a9b-a0a5-a0115c6e8b66",
+      "result_id": "18d8156f-1311-4544-bebe-7f5f30292a5b"
+    },
+    {
+      "claim_id": "de917f97-c1aa-461e-b1b2-ef98ecd8ee69",
+      "result_id": "18d8156f-1311-4544-bebe-7f5f30292a5b"
+    },
+    {
+      "claim_id": "195a6273-89f8-4b52-b54c-7829a6565db3",
+      "result_id": "1087d089-6e86-4ee1-afcc-6631621a6164"
+    },
+    {
+      "claim_id": "8bfb10a8-c794-465e-9d7b-d81e5113a66b",
+      "result_id": "1087d089-6e86-4ee1-afcc-6631621a6164"
+    },
+    {
+      "claim_id": "a1a1749a-dafc-44a4-90c6-2c3ca660d100",
+      "result_id": "1087d089-6e86-4ee1-afcc-6631621a6164"
+    },
+    {
+      "claim_id": "6925f3e3-6223-48c6-90ce-024a1e012ed5",
+      "result_id": "1087d089-6e86-4ee1-afcc-6631621a6164"
+    },
+    {
+      "claim_id": "ee277cad-41b9-4fa8-95f1-4d095879cc40",
+      "result_id": "55b3cea6-608b-4435-a12e-6992fdedc582"
+    },
+    {
+      "claim_id": "9e166da7-1391-4a73-b9ae-aebda909af1a",
+      "result_id": "55b3cea6-608b-4435-a12e-6992fdedc582"
+    },
+    {
+      "claim_id": "0bbf5807-1ed2-414a-91cb-03e12ca1839f",
+      "result_id": "55b3cea6-608b-4435-a12e-6992fdedc582"
+    },
+    {
+      "claim_id": "14cf5ca4-fd4f-429c-aecf-6332f97f4270",
+      "result_id": "55b3cea6-608b-4435-a12e-6992fdedc582"
+    },
+    {
+      "claim_id": "669cdf08-d099-434b-8038-ff468b410d59",
+      "result_id": "55b3cea6-608b-4435-a12e-6992fdedc582"
+    },
+    {
+      "claim_id": "9d1e52ed-5e31-4eeb-9080-4446977852f2",
+      "result_id": "53204e9a-278d-4485-b6b3-acc079aa0e40"
+    },
+    {
+      "claim_id": "bbfd9289-1227-4e76-b1b0-0612b6561178",
+      "result_id": "53204e9a-278d-4485-b6b3-acc079aa0e40"
+    },
+    {
+      "claim_id": "6239ff5a-2bc5-4bf9-a037-0a1714ab8d03",
+      "result_id": "53204e9a-278d-4485-b6b3-acc079aa0e40"
+    },
+    {
+      "claim_id": "61ce32f0-1d46-46db-bf72-5d488d1b2940",
+      "result_id": "14f5210a-0e09-4fdd-a9b9-399f9fc48123"
+    },
+    {
+      "claim_id": "bb89f3b1-3226-41ac-9fb2-b7fae675ac1d",
+      "result_id": "14f5210a-0e09-4fdd-a9b9-399f9fc48123"
+    },
+    {
+      "claim_id": "c8172341-6bd0-4ac9-bd96-153e7cb66d18",
+      "result_id": "14f5210a-0e09-4fdd-a9b9-399f9fc48123"
+    }
+  ],
+  "comparisons": []
+}

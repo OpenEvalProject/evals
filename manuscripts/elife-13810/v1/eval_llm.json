@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C64"
+    ],
+    "result": "Purkinje cells use a multiplexed spike code where synchrony/spike time and firing rate encode different information during saccadic eye movements, allowing simultaneous precision in both timing and continuous control of motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C9, and C64 collectively establish the main finding of multiplexed coding. The experimental data throughout the manuscript (Figures 1-5) demonstrate that different spike types encode different aspects of eye movement, with pause spikes encoding timing and regular spikes encoding kinematics. The conclusion is well-supported by converging evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Pause spikes (those initiating or terminating pauses) are strongly phase-coupled to the \u03b2/\u03b3 band LFP and provide temporally reliable signals, while regular spikes show weak LFP correlation. Pause spikes are not random events but are temporally locked to specific network activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C30-C37 are supported by comprehensive STALFP and phase-locking analyses (Figure 3). The PPC measurements, phase distribution analysis, and statistical comparisons demonstrate significant differences between pause and regular spikes. The quantitative measurements (e.g., phase preferences, PPC values) provide strong evidence for the differential coupling to network activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C38",
+      "C39"
+    ],
+    "result": "Pause-initiating spikes encode saccade onsets with high temporal reliability and sharp increases in firing, with spike reliability strongly correlated with LFP phase reliability. The \u03b2/\u03b3 LFP shows significant phase-locking to saccade onsets in 80% of recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by spike reliability analysis (Figure 4) showing significant coincidence events and correlation with LFP phase reliability. The statistical tests (p<0.01 for LFP reliability, significant spike coincidences) and quantitative measurements (RLFP = 0.20 \u00b1 0.02) provide strong evidence. The relationship between LFP and spike reliability demonstrates network-level coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Regular spikes dominate linear rate coding of eye movement kinematics. The linear-nonlinear model shows high correlation (R\u00b2 = 0.81 \u00b1 0.17) between regular spike firing rate and eye velocity, while pause spikes show poor linear correlation (R\u00b2 = 0.35 \u00b1 0.25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C44-C49 are supported by the linear-nonlinear model analysis (Figure 5). The high R\u00b2 values for regular spikes and similarity between regular spike and full spike train CCFs (\u03c1 \u2248 0.93) provide strong quantitative evidence. The contrast with pause spike performance further supports the differential coding scheme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Purkinje cells fire rapidly (55 \u00b1 18 Hz) with high regularity, containing significantly more regularly firing spikes than control. ISI distributions have power-law tails (\u03b1 = 3.78 \u00b1 0.64), and deviation from regular firing is associated with long ISIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by statistical characterization of spike trains (Figure 2). The comparison with rate-matching controls (p<0.01), power-law fitting (p<0.05), and correlation between AI and ISI size provide robust quantitative evidence for the firing pattern characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C17",
+      "C57"
+    ],
+    "result": "Complex spikes had minimal impact on the study results, comprising only 1.71 \u00b1 0.13% of total spikes and causing only 4.3 \u00b1 2.5% of pauses. Their correlation between AI and ISI was significantly weaker than simple spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C27-C29, and C57 are supported by quantitative measurements and statistical comparisons (p<2.84 \u00d7 10\u207b\u00b9\u00b2). The justification for excluding complex spikes from main analyses is well-documented with measurements showing their limited contribution to the phenomena under study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "LFP-eye velocity correlation (CCFLFP-EV) was significant in 49 cells while spike-eye velocity correlation (CCFSpike-EV) was significant in only 34 cells. The LFP showed less directional dependence than spikes, supporting the view that LFP represents averaged activity of many neurons with diverse tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by cross-correlation analysis (Figure 1) with appropriate statistical tests (p<0.01). The observation that 74% of recordings showed greater directional variability in spikes than LFP supports the interpretation about LFP representing population activity, though this interpretation relies partly on cited prior work (C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Synchronized pause spikes constitute the most significant population signal in PCs and can reliably trigger firing in cerebellar nucleus neurons at movement onset, even at moderate synchrony levels (\u226450%) and spike time jitter (\u226420 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 combine current findings (C52) with cited prior work (C50-C51). While C52 is an inference supported by the LFP coupling and reliability data from this study, the mechanistic claims about CN neuron responses rely entirely on citations to optogenetic studies. The integration is logical but the causal mechanism is not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The pause-related \u03b2/\u03b3 LFP signal originates from localized sources and decays quickly with distance, spreading at most a few hundred microns. This is consistent with PC synchronization occurring only when cells are very close (<100 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by observations from Figure 3\u2014figure supplement 4 showing diminished STALFP amplitude at ~1 mm distance. Claim C56 is supported by citations to prior work. The inference about localized sources is reasonable given the spatial decay pattern, though the exact spatial extent is not precisely quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study used three rhesus monkeys with appropriate ethical approval, recording PC spikes, LFP, and eye movements during spontaneous and visually-guided saccades. Data processing included spike sorting, LFP filtering (<42 Hz), and eye velocity computation using Savitzky-Golay filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C65-C73 describe the experimental methods and are internally consistent. The methods are described in sufficient detail for the main analyses, though some computational details are deferred to appendices. Ethical approval is documented (C65) and the selection criteria (C16) are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10"
+    ],
+    "result": "Purkinje cells are the sole output neurons of the cerebellar cortex, encode sensorimotor information, and the cerebellum is heavily involved in online motor control requiring accurate sensorimotor processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C10 represent established anatomical and functional knowledge about the cerebellum, supported by the broader neuroscience literature. These are background claims that provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Two competing views exist in the literature: one proposing that PCs use precisely timed synchronized spikes for timing-sensitive information, and another proposing linear firing-rate coding with weak correlations for continuous movement control. Pauses in PC spike trains are well-documented phenomena that can synchronize across nearby cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately represent prior work through appropriate citations. These claims establish the scientific context and controversy that motivates the current study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Prior work has shown that cerebellar LFP is coherent with neocortical LFP, plays a role in maintaining sensory-motor cortex coherence, and that synchronized spikes in motor/visual cortex show enhanced LFP coupling. Linear rate coding by PCs has been repeatedly observed, and weak PC-PC correlations enable precise control through population averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C58-C62 represent prior work supported by appropriate citations. These claims contextualize the current findings within the broader literature. The citations appear relevant, though the accuracy of the cited work cannot be fully verified without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Different stages of movement may demand that some aspects of motion be controlled more precisely than others, making it useful for PCs to use different spike codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 represents a general principle about motor control used to interpret the findings. This is a reasonable theoretical framework that provides context for why multiplexed coding would be advantageous, though it is not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

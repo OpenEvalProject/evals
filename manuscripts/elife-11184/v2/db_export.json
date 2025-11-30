@@ -1,0 +1,1790 @@
+{
+  "submission": {
+    "id": "1b8bd5b0-91c8-4386-af83-632b8f412151",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:12:12.598104Z",
+    "updated_at": "2025-11-29T23:12:12.598104Z"
+  },
+  "content": [
+    {
+      "id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "submission_id": "1b8bd5b0-91c8-4386-af83-632b8f412151",
+      "content_type": "manuscript",
+      "content_text": "# Huntingtin\u2019s spherical solenoid structure enables polyglutamine tract-dependent modulation of its structure and function\n\n## Authors\n\n- Ravi Vijayvargia<sup>1</sup>\n- Raquel Epand<sup>3</sup>\n- Alexander Leitner<sup>4</sup>\n- Tae-Yang Jung<sup>5</sup>\n- Baehyun Shin<sup>1</sup>\n- Roy Jung<sup>1</sup>\n- Alejandro Lloret<sup>1</sup>\n- Randy Singh Atwal<sup>1</sup>\n- Hyeongseok Lee<sup>5</sup>\n- Jong-Min Lee<sup>1</sup>\n- Ruedi Aebersold<sup>4</sup>\n- Hans Hebert<sup>6</sup>\n- Ji-Joon Song<sup>5</sup> \u2020\n- Ihn Sik Seong<sup>1</sup> ([ORCID: 0000-0003-4246-3356](https://orcid.org/0000-0003-4246-3356)) \u2020\n\n### Affiliations\n\n1. Center for Human Genetic Research Massachusetts General Hospital Boston United States\n2. Department of Neurology Harvard Medical School Boston United States\n3. Biochemistry and Biomedical Sciences McMaster University Hamilton Canada\n4. Department of Biology, Institute of Molecular Systems Biology Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Zurich Switzerland\n5. Department of Biological Sciences, Cancer Metastasis Control Center, KAIST Institute for the BioCentury Korea Advanced Institute of Science and Technology Daejeon Republic of Korea\n6. Department of Biosciences and Nutrition Karolinska Institute Solna Sweden\n7. School of Technology and Health KTH Royal Institute of Technology Novum Sweden\n8. Faculty of Science University of Zurich Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe polyglutamine expansion in huntingtin protein causes Huntington\u2019s disease. Here, we investigated structural and biochemical properties of huntingtin and the effect of the polyglutamine expansion using various biophysical experiments including circular dichroism, single-particle electron microscopy and cross-linking mass spectrometry. Huntingtin is likely composed of five distinct domains and adopts a spherical \u03b1-helical solenoid where the amino-terminal and carboxyl-terminal regions fold to contain a circumscribed central cavity. Interestingly, we showed that the polyglutamine expansion increases \u03b1-helical properties of huntingtin and affects the intramolecular interactions among the domains. Our work delineates the structural characteristics of full-length huntingtin, which are affected by the polyglutamine expansion, and provides an elegant solution to the apparent conundrum of how the extreme amino-terminal polyglutamine tract confers a novel property on huntingtin, causing the disease.\n\n## Introduction\n\nHuntingtin is the entire large protein product (>350\u2009kDa MW) of the Huntingtin gene (HTT previously HD). Huntingtin has a segment of polyglutamine near its amino terminus (Amino-terminal) that is encoded by a polymorphic CAG trinucleotide repeat. If expanded above 38-residues, this mutation causes Huntington\u2019s disease (HD), a dominant neurodegenerative disorder (Huntington's Disease Collaborative Research Group, 1993). The strong correlation between the size of the expanded repeat and the age at diagnosis of HD motor, cognitive and psychiatric symptoms shows that CAG repeat-size is the primary determinant of the rate of the disease progression (Brinkman et al., 1997; Snell et al., 1993). This biological relationship also provides a human patient-based rationale for delineating the HD disease-trigger in studies with an allelic series designed to determine the effects of progressively increasing the size of the mutation. Consistent with genetic studies in distinct CAG-expansion neurodegenerative disorders and CAG knock-in mice that replicate the HD mutation, the mechanism that triggers the disease process that leads to the characteristic vulnerability of striatal neurons in HD is thought to involve a novel gain of function that is conferred on mutant huntingtin by the expanded polyglutamine segment (Gusella and MacDonald, 2000; Nucifora et al., 2001; Trettel et al., 2000).\n\nBy analogy with other members of the HEAT/HEAT-like (Huntingtin, Elongation factor 3, protein phosphatase 2A, Target of rapamycin 1) repeat family (Andrade and Bork, 1995; Perry and Kleckner, 2003), huntingtin is likely a HEAT domain solenoid that functions as a mechanical scaffold for multi-member complexes (Grinthal et al., 2010; Takano and Gusella, 2002). Huntingtin\u2019s large size and predicted predominant HEAT/HEAT-like repeat domain structure is well conserved through 500 million years of evolution (Seong et al., 2010). The polyglutamine region is not conserved in some huntingtin orthologues (Seong et al., 2010), implying a role as an extra feature that fine-tunes huntingtin structure and function. Indeed, testing this idea, we have previously demonstrated, with purified recombinant human huntingtins in a cell-free assay, that lengthening the polyglutamine tract quantitatively enhances the basal function of huntingtin in stimulating Polycomb repressive complex 2 (PRC2) histone methyltransferase (Seong et al., 2010).\n\nThe structures of smaller HEAT/HEAT-like repeat solenoid scaffold proteins, such as PR65/A and Importin \u03b2, have been solved to high-resolution, and each has been shown to assume a distinctive extended curvilinear shape determined by the specific stacking characteristics of its HEAT/HEAT-like repeats (Cingolani et al., 1999; Groves et al., 1999). The topology of the huntingtin solenoid is expected to reflect the specific stacking characteristics of \u03b1-helical HEAT/HEAT-like repeats that span the molecule. The shape imparted by intramolecular\u00a0stacking cannot be predicted because of the idiosyncratic nature of HEAT/HEAT-like repeats, which are loosely conserved ~34 amino acid bipartite \u03b1-helical units (Takano and Gusella, 2002). Nevertheless this shape must enable modulation by the amino-terminal polyglutamine segment. It seems reasonable that this may involve some structural feature that is critical to huntingtin function. One possibility is structure-dependent post-translational modification. Human huntingtin is phosphorylated, at more than seventy modified serine, threonine and tyrosine residues (Hornbeck et al., 2012). Indeed, a comparison of lines of transgenic modified HTT BAC mice has implicated unique amino-terminal serine phosphorylation in protection against deleterious effects of mutant huntingtin (Gu et al., 2009) and the polyglutamine expansion at the amino-terminal causes a trend of hypo-phosphorylation in all sites, including sites near the carboxyl-terminus (Anne et al., 2007; Schilling et al., 2006; Warby et al., 2005), indirectly implying a long-range impact of the amino-terminal region on huntingtin structure and function.\n\nIn order to solve the apparent puzzle of how huntingtin\u2019s solenoid structure may enable quantitative or qualitative (or both) modulation of huntingtin function, according to the size of the amino-terminal polyglutamine tract, we have extended initial observations showing a likely flexible \u03b1-helical structure by conducting systematic biophysical and biochemical analyses of members of a panel of highly purified human recombinant huntingtins, with varied lengths of polyglutamine tracts (Fodale et al., 2014; Huang et al., 2015; Li et al., 2006).\n\n## Results\n\n### Huntingtin \u03b1-helical structure is quantitatively altered with polyglutamine tract size\n\nIt has been reported previously that purified huntingtin exhibits a predominantly \u03b1-helical secondary structure but among studies the impact of polyglutamine size has been inconsistent (Fodale et al., 2014; Huang et al., 2015; Li et al., 2006). To carry out a standardized evaluation, we performed circular dichroism (CD) analysis of a series of recombinant human huntingtins with different polyglutamine tract lengths (Q2-, Q23-, Q46-, Q67-, Q78-huntingtin, respectively) purified to homogeneity (Figure 1\u2014figure supplement 1). The CD spectra (Figure 1B) of all of the huntingtins are consistent with a predominant \u03b1-helical secondary structure (Liu and Rost, 2003; Rost et al., 1994) (Figure 1A), with typical minima at 222 and 208 nm and a positive peak at 195 nm, and all exhibited the same irreversible thermal denaturation pattern, with secondary structure stable up to ~38\u201340\u00b0C, a gradual slow denaturation as the temperature is increased to 65\u201370\u00b0C, followed by aggregation and some precipitation (Figure 1C). These results imply the same basic core structure and stability regardless of the size of the expanded polyglutamine segment. Plotting an average of the Mean Residue Ellipticity (MRE) at 222 nm (characteristic of an \u03b1-helix) reveals an incremental quantitative effect of lengthening the polyglutamine tract at the amino terminus on the \u03b1-helicity of the entire molecule (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig1-v2.jpg)\n\n**Figure 1.:** (A) Human huntingtin amino acid sequence (Homo sapiens; NP_002102) was analyzed for predicted secondary structure using: NORSp (Liu and Rost, 2003) and PROF (Profile network prediction Heidelberg) (Rost et al.,1994).\u00a0Stick model of human huntingtin protein (3144 amino acids) was generated depicting the predicted alpha helical (red), random coil (yellow) and beta sheet (grey) regions. The polyglutamine tract in the amino-terminus is indicated in purple. (B) The far UV-wavelength scan at 25\u00b0C of these purified huntingtin proteins generates a curve typical of \u03b1-helical proteins. (C) Thermal behavior of Q23-, Q46- and Q78-huntingtin. The heat denaturation curves, from 25 to 95\u00b0C, of all proteins showed the similar pattern of irreversible thermal denaturation starting their denaturation above 40\u00b0C by MRE values at 222 nm. Due to inherent variation caused by inefficient mixing in the cuvette with taking readings every five degrees of heating, their heat denaturation curves were acquired in duplicates. Solid line represents heating to 95\u00b0C; dotted line represents cooling from 95\u00b0C. (D) An average (MRE) in units of deg.cm2/dmol, at 222 nm wavelength characteristic of an \u03b1-helix), from two independent experiments, was plotted against the length of the polyglutamine tract of huntingtin proteins (bars represent mean \u00b1 SEM). Temperature was 25\u00b0C.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Recombinant human huntingtin proteins with indicated polyglutamine tract length were purified as described in the methods.\u00a0Purity was judged by Coomassie Blue stain after SDS PAGE analysis. Equal amounts (2 \u03bcg) of the proteins were separated by SDS-PAGE followed by coomassie staining to indicate purity of the preparations. These proteins were used throughout the study. (B) Equal amount (50 ng) of indicated purified huntingtin proteins were separated by SDS-PAGE and transferred onto nitrocellulose membrane and probed with anti-Htt antibodies with amino-terminal (mAb2166) or carboxyl-terminal (HF-1) epitope to show equal loading. To demonstrate huntingtin polyglutamine repeat length, the blot was also probed with polyglutamine length-specific antibody (mAb1F8). Moreover, as expected, as the polyglutamine tract size was increased, the highly purified huntingtins exhibited decreasing mobility (A) and increasing detectability with polyglutamine-directed antibody mAb1F8 (B).\n\n### 3D EM analysis reveals a spherical shape with a central cavity and overlying Amino-terminus\n\nWe then investigated the proposal that huntingtin\u2019s shape may enable a structural impact of the amino-terminal polyglutamine tract, by performing single-particle electron microscopy (EM) of recombinant human huntingtins with polyglutamine tract lengths of 23- and 78-residues. These were purified to high homogeneity using a gradient purification method with mild crosslinking (GraFix) (Kastner et al., 2008), collecting only the monomer fraction for analysis to eliminate potential contributions from oligomeric structures that would confound interpretation of the results (Figure 2\u2014figure supplement 1). Negative-stained micrographs of these proteins confirmed that the samples were highly homogeneous (Figure 2\u2014figure supplement 2). A total of 10,169 particles were chosen for generating 2D class averages and 30 class averages were used for reconstructing a 3D EM map of Q23-huntingtin (Figure 2\u2014figure supplement 3A). The EM map of Q23-huntingtin at about 30\u2009\u00c5 resolution, estimated from Fourier shell correlation analysis, shows that the molecule adopts an overall spherical shape with 130\u2009\u00c5 height and 100\u2009\u00c5 width (Figure 2A and Figure 2\u2014figure supplement 4). The overall shape of huntingtin was not apparently affected either through crosslinking or by the tag as 2D class averages of huntingtin with no cross linker or without tag also showed a similar spherical shape (Figure 2\u2014figure supplement 3). The outer volume of the structure can be roughly estimated as 861,829 \u00c53 and a Mathew\u2019s coefficient (VM)\u00a0of 2.48, assuming that Q23-huntingtin is a sphere with 115\u2009\u00c5 diameter with 348\u2009kDa molecular weight. Considering the VM=1.23 for the protein itself, Q23-huntingtin appears to contain a large solvent cavity (up to 50% by volume). Consistent with this estimation, the 3D EM reconstruction of Q23-huntingtin shows a large cavity in the core (Figure 2B). The analysis of negatively-stained Q78-huntingtin (Figure 2C and Figure 2\u2014figure supplement 3B) disclosed a 3D map showing a similar overall spherical shape, with a large cavity in the core (Figure 2D). Although 3D maps were reconstructed de novo without other experimental methods such as random conical tilt, the high similarity of the shapes between Q23- and Q78-huntingtin 3D maps attests that huntingtin has the spherical structure with a cavity (Figure 2\u2014figure supplement 5). Notably, manual superimposition of the 3D maps of Q23-huntingtin and Q78-huntingtin reveals potential differences in the two structures (Figure 2\u2014figure supplement 5), which may reflect technical variation (image processing, stain distribution, sample heterogeneity), in addition to the structural effects of the lengthened polyglutamine segment that were foreshadowed by the altered CD spectra (Figure 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-v2.jpg)\n\n**Figure 2.:** (A) 3D EM map of Q23-huntingtin was reconstructed from negatively-stained particles of Q23 monomer separated by GraFix. The resolution was estimated as 33.5 \u00c5 at 0.5 FSC. 3D map of Q23-huntingtin is shown in different orientation rotated about the y axis (0\u00b0, 90\u00b0, 180\u00b0, 270\u00b0). (B) Sectioned view of 3D EM map of Q23-huntingtin in the same orientation as in A revealing a large cavity inside of Q23-huntingtin. (C) 3D EM map of Q78-huntingin (32.0 \u00c5 at 0.5 FSC) was reconstructed as for Q23-huntingtin and shown in different angles rotated about the y axis (0\u00b0, 90\u00b0, 180\u00b0, 270\u00b0). (D) Sectioned view of 3D EM map of Q78-huntingtin in the same orientation as in C also showing a large cavity inside of Q78-huntingtin. This figure has additional supplement files: Figure supplement 1, 2, 3, 4, and 5\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The blue native gel (4\u201316%) show that Q23-huntingtin was separated by a 5\u201320% sucrose gradient ultracentrifugation in the presence of glutaraldehyde gradient. M: marker, Inp: input, 2\u20139: fractions from the bottom of the tube after ultracentrifugation. (B) Q78-huntingtin was separated and prepared in the same way as Q23-huntingtin.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) 2% Uranyl acetate-stained micrograph of Q23-huntingtin without GraFix. (B, C) 2% Uranyl acetate-stained micrograph of Q23-, and Q78-huntingtin after separation by GraFix. Most of the particles exhibit a globular shape and existed as monomer in electron micrographs, which reflects the homogeneity of huntingtin protein.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Reference-free class averages were computed by EMAN2. From about 80 initial class averages, 30, 30, 27, and 28 representative classes were selected from four data sets. Each class contains information from 30\u00a0to\u00a0150 particles. (A, B) 2D class averages from the data set of monomeric Q23-, and Q78-huntingtin separated by GraFix in the presence of 0\u20130.2% glutaldehyde. (C) 2D class averages from the data set of monomeric Q23-huntingtin separated by Grafix in the absence of glutaldehyde show similar shapes with 2D class averages shown in A indicating that the fixation reagent did not cause substantial structural change. (D) 2D class averages from the data set of monomeric Q23-huntingtin without tag separated by GraFix in the\u00a0presence of 0\u20130.2% glutaldehyde showing that the tag did not cause substantial structural alteration.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Gold standard FSC was calculated with the EMAN2 refinement of half data subset (even/odd test).\u00a0Even/odd maps were refined totally independently (blue for Q23-huntingtin, red for Q78-huntingtin, green for Q23-huntingtin antibody complex and purple for Q78-huntingtin antibody complex). The estimated resolutions at FSC=0.5 cut-off are shown in the table below the graph.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** 3D EM maps from Q23- and Q78-huntingtin were loaded and compared in UCSF Chimera program (contour level was 1.2).\u00a0(A) Superimposition between Q23-huntingtin (shown in ivory surface) and Q78-huntingtin (shown in green mesh) in different angles rotated about the x- and y- axes. (B) Superimposition between Q23-huntingtin (shown in ivory mesh) and Q78-huntingtin (shown in green surface) in same angles as shown above.\n\nWe then attempted to locate the amino-terminus (17 residues adjacent to the polyglutamine tract) of huntingtin in the EM maps, by collecting images of negatively-stained purified complexes of antibody-bound amino-terminal FLAG-tags of the Q23- and Q78-huntingtin (Figure 3 and Figure 3\u2014figure supplement 1 and 2). We also proceeded to reconstitute 3D structure of Q23- and Q78-huntingtin-antibody complexes. Comparisons of the 2D class averages and 3D reconstituted structures between huntingtin alone and the huntingtin-FLAG-antibody complex pairs clearly reveals an extra density at the top of the structure (in the view shown) for both Q23- and Q78-huntingtin (Figure 3). These observations strongly imply that the extreme N-terminus, and by inference the adjacent polyglutamine tract, is folded back, forming a spherically shaped solenoid with an internal cavity, but is accessible at the outside surface, regardless of its length.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig3-v2.jpg)\n\n**Figure 3.:** 3D reconstitutions of Q23-huntingtin and Q23-huntingtin antibody complex (A) or Q78-huntingtin and Q78-huntingtin antibody complex (B) are shown in gray and yellow or in green and brown, respectively. 2D class averages corresponding to each huntingtin and its antibody complex are shown below the 3D reconstituted EM map and the extra density is marked with a red triangle.\u00a0The extra-density indicating antibody on 3D EM map is colored in black (A) or dark brown (B) with red triangles.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Q78-huntingtin was incubated with two-fold molar ratio of anti-FLAG antibody for 16\u2009hr at 4\u00b0C.\u00a0The blue native gel (4\u201316%) shows separation and location of huntingtin alone (Q78) and huntingtin-FLAG-antibody complex (Q78+Ab). Q23-huntingtin-FLAG-antibody complex was also prepared in the same conditions for the subsequent EM analysis (data not shown).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** 2% uranyl acetate stained micrograph of Q23- (A), and Q78 (B)-huntingtin complexes with FLAG antibodies.\n\n### Cross-linking-MS analysis reveals a modulated network of intramolecular contacts\n\nTo further examine structural characteristics such as folding, we then assessed intramolecular interactions within huntingtin as estimated from the spatial proximity of lysine residues in sucrose-gradient-selected monomeric Q23- and Q78-huntingtin, determined by disuccinimidyl suberate (DSS) cross-linking mass spectrometry (DSS XL-MS) analysis (Leitner et al., 2014) (Figure 4\u2014figure supplement 1, Supplementary file 1). Based upon the spacing between the DSS-cross-linked lysine residues in the primary sequence, the interactions that were detected for either huntingtin can be grouped into three categories, depicted in Figure 4A. These comprise: #1) short-range interactions (within a 200 amino acid interval), which seem likely to occur within the same secondary structure element, including the contacts between pairs of adjacent lysines (e.g. K174-K178 and K664-K669), and the interactions between K220, K255 and K262; #2) mid-range interactions (201 to 1000 amino acid interval), such as K826-K1559, K943-K1559 and K2548-K2934; and #3) long-range contacts (interval of >1000 amino acids), including between the carboxyl-terminal K2969 and amino-terminal K943 residue. Inspection of the depiction of the short-range cross-link contact sites relative to the location of the protease-sensitive sites (Seong et al., 2010) indicates that huntingtin is likely to be composed of five distinct domains (Figure 4A upper panel). The location of the protease-sensitive major hinge region located at residues 1184\u20131254 defines the 150\u2009kDa amino-terminal domain (NTD) and the 200\u2009kDa carboxyl-terminal domain (CTD). A minor-protease sensitive site located at ~ residue 500 demarcates the NTD into NTD-1 and NTD-II. Interestingly, a region centrally located within the CTD showed strikingly few crosslinks, despite the presence of several lysine residues, strongly implying a distinct sub-domain that we call \u2018uncrosslinked\u2019 sub-domain (UCD), which, given the paucity of short range intramolecular contacts, may adopt a largely unfolded structure. The UCD is flanked by regions with numerous intramolecular contacts; the CTD-I in proximity to the major proteolysis site and the carboxyl-terminal CTD-II (Figure 4A). Consistent with the hypothesis of five discernable huntingtin sub-domains, the results of hydrophobicity analysis show a transition in hydrophobicity prediction at the edge of each sub-domain (data not shown).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig4-v2.jpg)\n\n**Figure 4.:** The 3,144 amino acid primary huntingtin sequence (by convention Q23-huntingtin) is depicted as a yellow bar with the location of the polyglutamine tract indicated by the green arrowhead (A). The short-, mid- and long-range Lys-Lys cross-links by DSS identified in Q23-huntingtin (above the bar, Q23) and Q78-huntingtin (below the bar, Q78) by XL-MS are depicted by the green, blue and red-colored lines, respectively. Below that is a schematic view of huntingtin with five sub-domains delineated by the shared patterns of intra-molecular interactions; two amino-terminal (NTD-I, NTD-II) and three carboxyl-terminal (CTD-I, UCD and CTD-II), as defined relative to the landmark major protease-sensitive site at ~ residue 1200 identified previously (Seong et al., 2010), which is denoted by the large red arrowhead, while the secondary minor cleavage site is denoted by the small red arrowhead. The cross-links of Q46 huntingtin (Q46) identified in XL-MS analysis are also shown under the five sub-domains schematic. Lys-Lys cross-links by DSS unique to Q23-huntingtin, Q78-huntingtin and Q46-huntingtin are shown in cyan, pink, and orange, respectively in each pair-wise comparison of Q23 vs Q78 (B), Q23 vs Q46 (C) or Q46 vs Q78 (D). The amino-terminal (yellow) and carboxyl-terminal (blue) sub-domains are depicted in cartoons (E) to show more substantial interactions (red thicker dashed arrows) between NTD-I and CTD-I in Q23-huntingtin (left) and between CTD-II and NTD-II or CTD-I in Q78-huntingtin (right) and throughout both amino- and carboxyl-terminal sub-domains in Q46-huntingtin (middle). In all three huntingtins (all red dashed arrows), NTD-I folds to contact CTD-I and CTD-II also contacts CTD-I as well as NTD-II, implying that the physical impact of the polyglutamine tract at the very amino-terminal end has the opportunity to subtly but globally alter the entire huntingtin structure and function in a polyglutamine length-dependent manner.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11184/elife-11184-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Q23-huntingtin was separated by 10\u201330% sucrose gradient ultracentrifugation after DSS crosslinking.\u00a0Fractions 5\u201312 were analyzed on a Tris-Acetate gel (3\u20138%) with Tris-Glycine native running buffer (M: marker, input: Q23-huntingtin before ultracentrifugation. Q78-huntingtin (B) or Q46-huntingtin (C) was separated and prepared in the same way as Q23-huntingtin. Notably, we found that the glutaraldehyde crosslinked huntingtin and DSS crosslinked huntingtin behave differently. We achieved a better separation with a 10\u201330% sucrose gradient for the DSS crosslinked huntingtin, but with a 5\u201320% sucrose gradient for the glutaraldehyde crosslinked huntingtin in Figure 2\u2014figure supplement 1.\n\nThe mid- and long-range interactions occur between these sub-domains in a pattern that indicates close-proximity of the extreme amino- and carboxyl-terminal sub-domains. Specifically, NTD-I mainly interacts with CTD-I, while CTD-II interacts with NTD-II and notably with CTD-1. Thus, the pattern of mid- and long-range contacts supports a view of huntingtin folding such that the extreme amino-terminal subdomain (NTD-I), with its polyglutamine tract, and the extreme carboxyl-terminal subdomain (CTD-II) are close to each other by virtue of contacts that each makes with the NTD-II and CTD-I sub-domains that flank the major cleavage site.\n\nNotably, the overall contact-patterns for the Q23- and Q78-huntingtin were similar, supporting observations of a generally similar core-stability (Figure 1) and shape (Figures 2 and 3). However, subtraction of the 38 crosslinks common to both proteins highlight networks of contacts that are relatively specific for either Q23-huntingtin (13 crosslinks) or Q78-huntingtin (8 crosslinks), as depicted in Figure 4B. To further examine the patterns of the internal interaction depending on its polyglutamine length, we also performed XL-MS analysis of Q46-huntingtin. First, the overall contact-patterns of Q46-huntingtin were similar and consistent with the five distinct domains (Figure 4A lower panel). Compared with those of Q23- and Q78-huntingtin, the unique contacts of Q46 reveal widespread interactions across the entire region of the protein (Figure 4C and D). These unique, largely mid- and long-range contacts disclose that Q23-huntingtin exhibits more unique interactions of the NTD-I with the CTD-I, and Q78-huntingtin displays more unique contacts between the CTD-II and the CTD-I and on occasion with NTD-II. On the other hand, the unique crosslinks of Q46-huntingtin reveal that CTD-I seems to interact with both NTD-I and CTD-II as if Q46-huntingtin posits an intermediate conformation between Q23- and Q78-huntingtin. (Figure 4E). These observations imply a subtle but detectable 3-dimensional structural impact of polyglutamine tract length as it increases.\n\n## Discussion\n\nWe applied a systematic structure-function approach to delineate the features of huntingtin that conspire with its polyglutamine tract to comprise, in conjunction with some as yet unknown target, the dominant gain of function mechanism that triggers the pathogenic process in patients\u00a0with\u00a0HD. Our biophysical analyses of an allelic series of native recombinant human huntingtins now provide a satisfying solution to the mystery of how the amino-terminal polyglutamine tract may be in a position to modulate huntingtin structure and function. The results of EM and XL-MS analyses provide coherent support for a HEAT/HEAT-like repeat solenoid comprising a major hinge that delimits two large nearly equal-sized domains that fold such that the ends of each arm are in close proximity and the whole circumscribes an extensive internal cavity. Other HEAT repeat proteins such as nuclear importin and exportins have functional protein-protein binding interfaces located at the inner side of the solenoid structure (Chook and Blobel, 2001; Cingolani et al., 1999). Considering that the size of huntingtin is much bigger than other HEAT repeat proteins, we can imagine that the HEAT repeat domains can be folded back to form a closed structure that we have observed in huntingtin, having functional sites located in the internal cavity. This shape classifies huntingtin as a closed helical solenoid, contrasting with the shorter open curvilinear HEAT/HEAT-like repeat solenoids whose native structures have been solved at high resolution (Cingolani et al., 1999; Groves et al., 1999). Huntingtin\u2019s distinctive shape is predicted to provide both internal and external surface topologies that may mediate the binding of proteins or nucleic acids, as befitting a mechanical HEAT/HEAT-like repeat interaction-scaffold (Takano and Gusella, 2002).\n\nOur biophysical analyses also provide basic insights for future higher-resolution studies that will be needed to more precisely delineate huntingtin structure and its modulation by the polyglutamine tract. The DSS-XL-MS intramolecular cross-linking data, together with our previously reported limited proteolysis analysis (Seong et al., 2010) provide a general sense of how rod-like \u03b1-helical HEAT/HEAT-like repeat domains, may fold to delimit the closed shape that we observe. The pattern of proteolysis, regardless of polyglutamine tract length, revealed a single major cleavage-sensitive site at ~ residue 1200, strongly predicting a major hinge or pivot that roughly parses the protein into two nearly equal \u2018arms\u2019, a 150\u2009kDa NTD and a 200\u2009kDa CTD. This is supported by the patterns of short- and mid-range intramolecular DSS-XL-MS delineated intramolecular contacts that are shared by the Q23-, Q46- and Q78-huntingtin, which are mainly located within and between each of the regions that immediately flank this location, implying extensive local internal folding and close proximity of the \u2018arms\u2019 around the pivot-point. Multiple short- and mid-range interactions are also detected at the ends of the NTD-I and CTD-II. These contacts imply internal folding near the ends of each arm. Limited proteolysis of the amino-terminal domain did reveal an internal cleavage site, located at ~ residue 500, which is consistent with internal pivot points, along with other internal folding, that may explain the short- and mid-range contacts detected by XL-MS near the terminus. However, the carboxyl-terminal domain lacked internal cleavage-accessible sites (Seong et al., 2010), implying a paucity of accessible hinge-points. Consistent with this, XL-MS fails to detect short- or mid-range cross-linked lysine residues in the sub-region spanning amino acids ~1800 to ~2300, except one long distance contact and one short distance contact only in Q46-huntingtin. This sub-region contains 13 lysine residues. It is possible that these residues are not DSS-accessible although we did observe DSS modified, but not cross-linked peptides in this region (data not shown), implying instead a more extended 3D structure that maximizes the surface area available for interaction with binding-partners, as in other HEAT repeat solenoid proteins (Cingolani et al., 1999; Grinthal et al., 2010; Groves et al., 1999). By contrast, the adjacent extreme C-terminus does display some internal short- and mid-range cross-linking interactions that suggest internal folding, though apparently without a well-defined proteolysis-accessible hinge-point. However, perhaps the most striking finding is the multiple long-range interaction cross-links between the CTD-II and CTD-I or NTD-II, as well as the long-range contacts of the NTD-I with the CTD-I close to the major hinge-pivot, which places the ends of each arm in close proximity to each other on the carboxyl-terminal domain arm, above the major hinge. Of note, EM analysis of the\u00a0amino-terminal FLAG-antibody-huntingtin complex strongly suggests accessibility of the extreme N-terminus, and likely the adjacent polyglutamine tract, at the external surface. Thus, folding of the two main HEAT/HEAT-like domains forms an extensive internal cavity consistent with the shape that we observe in EM analysis, while providing an elegant explanation for the conundrum of how the polyglutamine tract located at the end of the amino-terminal arm may affect change throughout the entire protein.\n\nAll of the huntingtins, regardless of polyglutamine tract length, appear to have the same basic core structure. Our CD data demonstrates that they are all \u03b1-helical and have the same pattern of thermal stability, denaturing over the same temperature range. They have similar shapes in EM analysis and display mostly shared DSS-XL-MS intramolecular interactions, as discussed above. Nevertheless the differences among huntingtins with different polyglutamine lengths (Q23, Q46 and Q78) are telling. Each displays a unique intramolecular interaction pattern that is most evident in the long-range contacts detected by DSS-XL-MS analysis. Q23-huntingtin features unique additional contacts between the end of the amino-terminal domain arm with the carboxyl-terminal arm, near the hinge region, whereas Q78-huntingtin is characterized by additional interactions of the end region of the carboxyl-terminal arm with itself near the hinge region, in proximity to the location of the contacts made by the end region of the amino-terminal arm, or with the amino-terminal arm near the hinge. It is intriguing that most of these unique normal and mutant huntingtin folding characteristics involve contacts at the locations on the CTD-I near the major hinge where many other contacts that are common to both proteins converge. While Q23- and Q78-huntingtin show unique crosslinks skewed toward either amino-terminal or carboxyl-terminal region respectively, the wide-spread intramolecular interactions of Q46-huntingtin prompt us to hypothesize that the polyglutamine tract expansion induces subtle but progressive structural changes in huntingtin. This implies that polyglutamine tract length may subtly alter the basic structure by influencing the degree to which the end of the carboxyl-terminal arm is folded back upon itself onto the region around the major hinge: the longer the polyglutamine tract, the more are the contacts. This suggests a location of torsion or tension on the major hinge region that may be exerted by a balance between the positions of the amino-terminal end region contacts and carboxyl-terminal end region contacts. Consistent with our data, particularly including long-range interaction affected by the polyglutamine expansion, a few studies previously implied and reported the global structural and functional influence by the polyglutamine tract size: the interaction with HAP40 at the extreme carboxyl-terminus of huntingtin was influenced by the polyglutamine expansion (Pal et al., 2006); the proteolytically cleaved amino-terminal fragment interacted with the carboxyl-terminal fragment of huntingtin (El-Daher et al., 2015); the proximity between the first 17 residues and the polyproline region has been shown to change by the polyglutamine tract size both in exon 1 fragment and endogenous full-length huntingtin (Caron et al., 2013). Perhaps huntingtin binding involves internal surface features that are accessed by a spring-loaded action of the major hinge-region that entails the end-region contacts of each arm. Importin HEAT/HEAT-like solenoid proteins undergo substantial conformational change around a hinge-pivot region upon cargo binding (Cingolani et al., 1999). The impact of the polyglutamine tract on huntingtin basic structural features strongly suggests that it is possible that huntingtin may also undergo dramatic conformational change upon interaction with its binding partners.\n\nThe success of our structural analysis using an allelic series of huntingtins with different polyglutamine tract lengths suggests that this approach applied to high-resolution analyses will continue to yield insights into the huntingtin disease trigger-mechanism.\n\n## Materials and methods\n\n### Human FLAG-huntingtin insect vector expression clones\n\nAll recombinant human FLAG-huntingtin cDNA used in this study were cloned in insect expression vector systems that were modified as previously described (Seong et al., 2010). Essentially, the original polylinker region of pFASTBAC1 vector (Invitrogen, Carlsbad, CA) was swapped with the modified polylinker containing 1X FLAG, 6X histidine tag, TEV protease recognition site, and several restriction enzyme sites, including NcoI, XhoI and SacII, using BamHI-KpnI sites. Full-length HTT cDNA was cloned in two steps. First, the NcoI-XhoI HTT cDNA fragment (Faber et al., 1998; Seong et al., 2010), encoding huntingtin amino acids 1\u2013171 with varying polyglutamine tracts (Q2, 23, 46, 67, 78), was inserted between the unique NcoI and XhoI restriction sites in the modified linker. Second, the 9,046 bp XhoI-SacII HTT cDNA fragment from a full huntingtin cDNA clone, pBS-HD1-3144Q23 (Faber et al., 1998; Seong et al., 2010), encoding huntingtin amino acids 172\u20133,144 was inserted in frame using XhoI-SacII into the linker region. We confirmed by sequencing that this XhoI-SacII cDNA differs from the reference cDNA (Genbank accession number L12392) in two locations, reflecting polymorphisms: Lys1240Arg and the Delta2642 polymorphism (Ambrose et al., 1994) encoding Glu amino acids 2640\u20132645 in a run of five rather than six residues. The SacII site in the linker was unique because the original SacII site in pFASTBac1 vector had been removed before adding the linker. All final clones, namely pALHDQ2, pALHDQ23, pALHDQ46, pALHDQ67 and pALHDQ78 encoding full-length human FLAG-Q2-, 23-, 46-, 67- and Q78- huntingtin, respectively, were verified using full DNA sequence analysis. By convention, the amino acid numbering throughout the text follows the numbering of L12392 (Q23) regardless of the length of the polyglutamine tract.\n\n### Full-length human huntingtin purification\n\nPurification of FLAG-tag huntingtin was carried out as previously described (Seong et al., 2010). Briefly, FLAG-tag huntingtin was expressed from pALHD(Q2,23,46,67,78) in the Baculovirus Expression system (Invitrogen, Carlsbad, CA). The Sf9 cell lysate, obtained by freezing/thawing in buffer A (50\u2009mM Tris-HCl pH 8.0, 500\u2009mM NaCl, and 5% glycerol) containing complete protease inhibitor cocktail and PhosSTOP phosphatase inhibitor cocktail (Roche Applied Science, Branford, CT), was spun at 25,000 xg (2\u2009hr). The supernatant was incubated with M2 anti-FLAG beads (Sigma-Aldrich, St. Louis, MO) (2\u2009hr, 4\u00b0C). The non-specifically bound proteins were removed by washing extensively with buffer A. FLAG-huntingtin was eluted with buffer (50\u2009mM Tris-HCl pH 8.0, 300\u2009mM NaCl, 5% glycerol) containing 0.4 mg/ml FLAG peptide and loaded onto a calibrated Superose 6 10/300 column (GE Healthcare, Little Chalfont, UK) equilibrated with 50\u2009mM Tris-HCl pH 8.0 and 150\u2009mM NaCl. FLAG-huntingtin eluted discretely and was estimated to be at least 90% pure by Coomassie staining. To generate non-FLAG-tagged huntingtin, M2-bead bound huntingtin proteins were resuspended in buffer (20\u2009mM HEPES, 150\u2009mM NaCl, 0.5\u2009mM EDTA, 0.25\u2009mM DTT) and incubated with AcTEV protease (Invitrogen) for 5\u2009hr at 25\u00b0C. The huntingtin proteins without FLAG-tag were released from the M2-bead and further purified using the same procedure as mentioned above.\n\nComparative analyses of huntingtin proteins with varying polyglutamine sizes were performed with an equal amount of each protein, verified by Bio-Rad DC protein assay (Bio-Rad Laboratories Inc, Hercules, CA) and R-250 Coomassie blue staining of bands on 10% SDS PAGE to control for potential differences in protein purity and amount. The molarity for all huntingtins was calculated using a molecular weight of 350\u2009kDa deduced from the human cDNA sequence.\n\n### Immunoblot analysis\n\n50\u2013100 ng of purified protein was run on a 10% Bis-Tris gel and transferred onto nitrocellulose membranes. All antibodies were blocked with 5% milk/TBST. Anti-huntingtin antibodies were used at dilutions of 1:2000 (mAB2166) and 1:5000 (HF-1). mAb1F8 antibody targeting the polyglutamine region was used at 1:10,000 dilution. After washing, the blots were probed with anti-Rabbit HRP secondary antibodies and developed using the ECL system. mAb2166 was purchased from Millipore (EMD Millipore, Darmstadt, Germany), whereas rabbit polyclonal antibodies HF-1 (against amino acids 1981\u20132580) were generated in the laboratory against the fusion protein, as previously reported (Persichetti et al., 1995; Persichetti et al., 1996). mAb1F8 antibody was also generated in the laboratory as previously reported (Persichetti et al., 1999). Streptavidin-HRP was obtained from Cell Signaling Technology (Danvers, MA).\n\n### Circular dichroism\n\nPurified full-length human huntingtins with different polyglutamine tract lengths (0.2 mg/ml) were dialyzed against 100\u2009mM phosphate buffer pH 7.2 before CD analysis. Far-UV CD spectra were obtained by scanning from 260 nm to 185 nm at 25\u00b0C on a 410 AVIV spectropolarimeter (Lakewood, NJ) using a 1\u2009mm quartz cuvette (Hellma, Plainview, NY) placed in a thermally controlled cell holder. The machine was equipped with a Peltier junction thermal device and a Thermo Neslab M25 circulating bath. Spectra were obtained with a wavelength step of 1 nm, an averaging time of 3\u2009s for each data point and 30\u2009s equilibration time between points. The data were calculated and plotted with Graphpad Prism software v.4.01. Concentrations of proteins were checked by absorbance at 280 nm prior to the experiment. The CD data was normalized for concentration to allow for a comparative analysis, and presented in the units of deg. cm2/dmole. The thermal dependence of the CD was carried out for each protein by heating in 5\u00b0C steps from 25 to 95\u00b0C, with the wavelength set at 222 nm. The deconvolution of the CD curves to estimate secondary structure is not presented, as there is currently no reference database of HEAT-repeat proteins with known X-ray structure to make an accurate evaluation.\n\n### Electron microscopy\n\nFull-length FLAG-tag huntingtins were applied to ultracentrifugation at 74,329 xg for 16\u2009hr with a 5\u201320% sucrose gradient in presence of a 0\u20130.2% glutaraldehyde gradient. A fraction containing only the monomeric huntingtin was collected and the protein was then negatively-stained with 2% (w/v) uranyl acetate for 2\u2009min on 400 mesh carbon grids. Images were collected at 50,000x magnification with a defocus value of 0.5\u20131.5\u2009\u03bcm on a 4x4K CCD camera (Tietz Vieo and imaging Processing System) attached to a Jeol JEM2100F filed emission gun transmission electron microscope at 200 kV. Data were processed using EMAN2 program (Thakur et al., 2009). For the huntingtin-FLAG Antibody complexes, FLAG-antibody (Sigma-Aldrich, St. Louis, MO) and huntingtin were incubated overnight at 4\u00b0C and only the antibody bound monomer of huntingtin was isolated as for huntingtin alone. Total 10,169, 9368, 4714, and 3239 particles were selected for Q23-huntingtin, Q78-huntingtin, Q23-huntingtin FLAG-antibody, and Q78-huntingtin FLAG-antibody, respectively. The selected particles were used for further processing to generate reference-free class-averages. The models were further iteratively refined with a low-pass-filter (cutoff=0.033). Four refined models were superimposed and difference maps between Q23-huntingtin, Q78-huntingtin alone and Q23-huntingtin-, Q78-huntingtin-Flag antibody complex, were calculated by Chimera (Pettersen et al., 2004), respectively.\n\n### Cross-linking mass spectrometry analysis\n\nIn order to prepare the cross-linked huntingtins, Q23-, Q46- or Q78-huntingtin (200 \u00b5g, 1.0 mg/ml) were incubated with 1\u2009mM of DSS-H12/D12 (Creative Molecules Inc.) for 20 min at 37\u00b0C with mild shaking. The cross-linking reaction was stopped by adding ammonium bicarbonate to a final concentration of 50\u2009mM. Then, each cross-linked huntingtin was separated by ultracentrifugation at 111,541 xg for 16\u2009hr with 10\u201330% sucrose gradient in 20\u2009mM HEPES and 100\u2009mM NaCl buffer. Only the monomeric population was collected (Figure 4\u2014figure supplement 1) and evaporated to dryness for XL-MS analysis.\n\nApproximately 50\u2009\u03bcg of cross-linked huntingtins (Q23, Q46 and Q78) forms were separately redissolved in 75 \u00b5l 8\u2009M urea. Potential disulfide bonds were reduced by addition of 5 \u00b5l of 50\u2009mM tris(2-carboxyethyl)phosphine, followed by incubation for 30\u2009min at 37\u00b0C, and free thiol groups were subsequently alkylated by the addition of 5 \u00b5l of a 100\u2009mM iodoacetamide solution and incubation for 30\u2009min at 23\u00b0C in the dark. For the two-step protease digestion, the samples were first diluted with 50 \u00b5l of 150\u2009mM ammonium bicarbonate solution and 0.6 \u00b5g of endoproteinase Lys-C (Wako, Richmond, VA) was added. Lys-C digestion was carried out for 3\u2009hr at 37\u00b0C. The samples were then further diluted by addition of 640 \u00b5l of 50\u2009mM ammonium bicarbonate solution (final urea concentration = 1\u2009M) and 1.2 \u00b5g of sequencing-grade trypsin (Promega, Madison, WI) was added. Trypsin digestion proceeded overnight at 37\u00b0C.\n\nEnzymatic digestion was stopped by addition of pure formic acid to 2%, v/v, and samples were purified by solid-phase extraction (SPE) using 50 mg Sep-Pak tC18 cartridges (Waters, Milford, MA) using standard procedures. The SPE eluates were evaporated to dryness in a vacuum centrifuge. Digests of cross-linked huntingtins were fractionated by size exclusion chromatography (SEC) as described (Leitner et al., 2012; 2014). Three fractions were collected and subjected to LC-MS/MS analysis on a Thermo Orbitrap Elite mass spectrometer as described previously (Greber et al., 2014). Cross-linked peptides were identified from the MS/MS spectra using xQuest (Walzthoeni et al., 2012) with the following settings: Enzyme = trypsin, maximum number of missed cleavages = 2, cross-linking site = K and mass shifts for the cross-linking reagent DSS-d0/d12. A sequence database was constructed from an independent search of an unfractionated sample against the UniProt/SwissProt database with Mascot (Perkins et al., 1999). The final database contained the huntingtin sequence and 13 identified low-level contaminants. xQuest search results were filtered according to the following criteria: mass error < 4 ppm, minimum peptide length = 6 residues, delta score < 0.9,% TIC \u2265 0.1, minimum number of bond cleavages per peptides = 4. An xQuest score cut-off of 17 was selected, corresponding to an estimated false discovery rate of < 5%. In addition to the cross-links on huntingtin, only one cross-link on a contaminant protein (HSP7C_DROME) was identified.\n",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d3557421-d3b8-46d7-b975-d2f2c59c76a7",
+      "submission_id": "1b8bd5b0-91c8-4386-af83-632b8f412151",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bart De Strooper, VIB Center for the Biology of Disease, KU Leuven , Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11184.017](https://doi.org/10.7554/eLife.11184.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your interesting work entitled \"Huntingtin's spherical solenoid structure enables polyglutamine tract-dependent modulation of its structure and function\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAs you can see the three referees found your work interesting but also raised a lot of questions that will require considerable work to be addressed. We anticipate that this will take too much time beyond the two months we allow for revisions and therefore we reject the paper in its current version. I hope that the reports are helpful and will give you guidance to improve your work. If you feel that you can address all questions with additional experimentation, you are allowed to resubmit the work to eLife but the paper will be considered as a new submission and reviewed as such.\n\nReviewer #1:\n\nProtein structure is an important area of polyQ proteins/diseases where data are lacking. This study uses several approaches to examine structural features of recombinant human huntingtin. The most novel and informative studies are those using 3D EM and cross-linking followed by mass spec. While relatively crude these date provide the most informative structural data to date. Most of the work is done using huntingtin with either 23 or 78 glutamines \u2013 in a sense a range representing a broad range of allele lengths from wt to a rather long expanded allele, one that would cause juvenile HD. The extensive internal cavity is intriguing regarding potential functions of this protein. What is telling is the high degree of similarity on structure found for huntingtins with these two polyQ tract lengths. Yet subtle structural differences were seen that the authors speculate on in regards to polyQ effect on function and pathogenesis. What the authors fail to acknowledge is that the subtle changes were seen in comparing 23Q with 78Q. Much less data are provided for an intermediate allele of 46Qs \u2013 an allele representing a considerably more frequent mutant allele that leads to disease. Overall it seems that the structural effect of polyQ expansion is quite subtle, which in itself is an important finding. It would be interesting for the authors to comment on what the HTT work might imply for the other polyQ disorders.\n\nLastly, the fact that the NTD-1 region is in contact with essentially all of the others regions of HTT strongly indicates, as the authors mention, expansion of the polyQ in this region has the potential of impacting the rest of HTT. One suggestion would be to move this point from Figure 7 to Figure 4A so that Figure 7 would focus on interactions impacted by polyQ expansion.\n\nReviewer #2:\n\nI appreciate the efforts in this study to generate three-dimensional (3D) models of full-length huntingtin (HTT) proteins with different Q lengths. Additionally, 16 novel phospho-specific huntingtin antibodies were produced in order to detect potential changes in the phosphorylation patterns in polyQ-containing huntingtin proteins. The study provides important information about potential intramolecular interactions in the full-length HTT protein. However, it is hard to judge the quality of the generated 3D models and the potential physiological relevance of the identified intramolecular interactions. A confirmation of the results with alternative methods is missing. Furthermore, there are several additional points that have to be addressed before the paper is suitable for publication in eLife.\n\n1) The authors describe that the recombinant human huntingtin proteins with different polyglutamine lengths exhibit a very similar thermal stability (Results, first paragraph, Figure 1C). Judging from the results presented in Figure 1C I would conclude that Q46-huntingtin is less thermally stable than the Q23- and the Q78-huntingtin proteins. The Q46-huntingtin protein loses its secondary structure already at 35 \u00b0C whereas the Q23- and Q78-huntingtin proteins seem to be stable up to 45 \u00b0C. This needs to be clarified.\n\n2) In the attempt to locate the N-terminus in Q23- and Q78 huntingtin the authors applied negative stain electron microscopy (subsection \u201c3D EM analysis reveals a spherical shape with a central cavity and overlying N-terminus\u201d, last paragraph, Figure 3). By comparing the huntingtin-FLAG-antibody complexes with the huntingtin protein alone I find it very hard to identify an extra density, which should indicate the FLAG-antibody bound to the N-terminus of huntingtin. I would highly appreciate additional experiments to support these results.\n\n3) Further, the FLAG-tag might influence the location of the extreme N-terminus. As a TEV-cleavage site has been introduced the authors should remove the FLAG-tag from the HTT protein and apply a specific anti-HTT antibody (e.g. an antibody recognizing N17) to detect the N-terminus of huntingtin.\n\n4) In Figure 4A the authors showed a hydrophobicity plot in order to support their choice of domain subdivision according to short rage intramolecular contacts. In my opinion this plot does not obviously support their choice. A different domain pattern might be conceivable judging from the hydrophobicity plot (for instance subdivision at aa 1201 and aa 2050).\n\n5) The authors examined the differences of phosphorylation patterns in HTT with different polyglutamine lengths (subsection \u201cThe pattern of phosphorylated residues is altered with polyglutamine tract size\u201c, Figure 5). It should be mentioned in the main text (not only in the Methods section) that these proteins are expressed and purified from Sf9 insect cells. Furthermore, I would like the authors to comment on the biological relevance of the identified phosphorylation patterns, as the proteins have not been purified from a mammalian system and only 14 out of 70 previously reported phosphorylation sites were confirmed/found.\n\n6) In Figure 5\u2014figure supplement 1A fifteen phosphopeptides are presented that were used for antibody generation. Although I highly appreciate the effort of generating and testing 16 different phospho-specific antibodies, I have concerns about phosphopeptide 11 and the consequent antibodies (\u03b1-Htt-p2114 and \u03b1-Htt-p2116). I would like the authors to explain, how they were able to purify two antibodies binding to different phospho-epitopes by the use of only one peptide comprising both of these epitopes.\n\n7) Furthermore, in Figure 5\u2014figure supplement 1B, 16 phosphopeptides are used for antibody testing. However, the numbers do not match the labeling in Figure 5\u2014figure supplement 1A. Please clarify.\n\n8) When analyzing Q-length dependent differences of phosphorylation (Figure 5\u2014figure supplements 2 and 3) it is critical to assess whether the changes are significant. For better comparability, I suggest to display the quantification of all data sets using the same scale on the ordinate.\n\n9) In the first paragraph of the subsection \u201cPhosphorylation status distinguishes a novel property of mutant huntingtin \u201cthe authors stated that they analyzed pairs of phosphorylated and hypophosphorylated recombinant Q2-, Q23-, Q46- and Q78 huntingtin proteins by immunoblotting with phospho-epitope specific antibodies. Data are not shown for Q2- and Q46 huntingtin. Please clarify or show the missing data.\n\n10) In Figure 6B, the quantification of H3 methylation does not seem to mirror the changes displayed in the autoradiogram above. This is especially true for measurements that have been done after CIP treatment. In comparison to their first publication in which the assay was introduced (Seong et al. 2010) the changes of H3 methylation, displayed in Figure 6B, are scarcely recognizable.\n\n11) The authors stated that the phosphorylation status does not affect the secondary structure of either normal or mutant huntingtin (Figure 6\u2014figure supplement 2). I would like to ask the authors to plot the MRE at 222 nm (in order to be able to compare the results to Figure 1B) or comment why normalization is necessary for this data set.\n\nReviewer #3:\n\nThis manuscript presents data on the structure of full-length huntingtin and the results of polyglutamine expansion seen in Huntington's disease on that structure, and the effects on post-translational modifications of huntingtin. This work could be highly relevant and innovative to the HD community and any research focus on large proteins with repeated HEAT structures. This information fills a large gap in HD research due to the technical difficulties of studying a protein of 350Kda, but highlights the important observations of polyglutamine effects on huntingtin far beyond small fragments that have been used in mouse models of HD. The effects on post-translational modifications have direct relevance to HD therapeutic development.\n\nThe manuscript has significant problems in the writing, poor context to published work in this field, and some significant concerns about the biochemical systems used and the interpretations to this reviewer.\n\nThe paper needs a major writing revision, in the Abstract and title to reflect the mechanism outlined in the data. As it stands, the title and Abstract do not reflect the contents of the paper, i.e. the PRC complex data. The manuscript is poorly referenced on data concepts that have been reported in the past by others, but are being presented here as novel.\n\nStructures for determination of the amino -terminal location used a FLAG tag. This peptide is commonly used for purification and immuno-tagging, but it is fused here to a short \u03b1-helical leader region before the polyglutamine tract and FLAG peptide is DYDDDDK, which now confers a huge charge on a region with a neutral charge. Thus, there is a good chance of artifactual effects from electrostatic interactions. FLAG tags are manipulated in biochemistry experiments to enhance the solubility of proteins, but they obviously cannot be innocuous with that run of charged residues to protein structure. It's not clear if the additionally charged polyhistidine tag and TEV protease site remain on the proteins or not.\n\nFrom that work, \"These observations strongly imply that the extreme N-terminus, and by inference the adjacent polyglutamine tract, is folded back,\"\n\nThis concept was previously reported in PNAS in 2013 (Proc Natl Acad Sci U S A. 2013 Sep 3;110(36):14610-5.) but was not referenced in this manuscript. That manuscript also discusses the conformational change in the amino-terminus of huntingtin impacting total huntingtin conformation, which are presented here as novel concepts.\n\nSimilarly, the concept of the amino and carboxyl termini interacting is not novel, and has in fact been shown in vivo, with implications of huntingtin function at ER integrity. Again, not referenced.\n\n(EMBO J. 2015 Sep 2;34(17):2255-71. doi: 10.15252/embj.201490808. Epub 2015 Jul 12.)\n\nThe data in Figure 3 is very difficult to interpret. They know polyglutamine expanded huntingtin has a tendency to precipitate, but while the data is the result of averaging of many images by EM, how to we know this isn't just precipitate versus soluble protein? I cannot distinguish the extra density of the FLAG-tag that the arrows are pointing to.\n\nI'm really confused by the data in Figure 5. This is human recombinant huntingtin purified from insect Sf9 cells. How are any of the modifications in this figure therefore relevant in a mammalian context? For this to be true, then all of the modification in insects would have to be identical, despite over-expression of this protein, while we know stoichiometry of huntingtin is important. This is a problem with the manuscript, and the concept of the amino-terminus being important to total structure via PTMs, as the amino-terminus of mammalian huntingtin proteins has no homology to the gene annotated in insect species as huntingtin. For all we know, those PTMs may be relevant for proper folding, then removed, but the purification is in the context of phosphatase inhibitor cocktails. This leaves me with significant concerns about the validity of a data in Figure 5 to mammalian context.\n\nWhile the PRC2 complex was assembled in equimolar concentration, I am surprised that this complex in vitro can be considered relevant to biology when neither DNA nor chromatin is present. I don't think the exact minimalist nature of this experiment has been outlined with the inherent caveats. They are describing a polycomb repressor complex that acts on chromatin and DNA, in the absence of chromatin or DNA. To stay within this manuscript, they will need cell data.\n\nThe Discussion needs revision. The term \"function\" is not appropriate in the second paragraph. They show a disrupted interaction with EZH2, but at no point in this manuscript is actual function described, and they cannot conclude functional information for reasons outlined above.\n\nThey examined 16 phospho-sites across huntingtin, but have not tested the most studied site with the first 17 amino acids, which has been shown by genetics and small molecule effects to affect the disease phenotype in mouse models (and by genetic modification, to thus be the most critical site). They have not tested every PTM in regions of huntingtin that are known as fragments to cause phenotype in the mouse. This is a major omission in this data. They did reference this work by Gu et al. The problem is that they have no data in a region of huntingtin that is known to cause a disease phenotype in trans in a polyglutamine -length dependent manner.\n\nHow many of those phospho-antibodies have been fully validated? The data is not shown, and no figure supplements 1,2 and 3 were uploaded. I can only access the table. The full gels should be supplemental data, not just the cropped images.\n\n\"Thus folding of the two main HEAT/HEAT-like domains forms an extensive internal cavity consistent with the shape that we observe in EM analysis, while providing an elegant explanation for the conundrum of how the polyglutamine tract located at the end of the N-terminal arm may affect change throughout the entire protein.\": I fail to see this elegant explanation from Figure 7. They need a clearer model. Most HEAT importins show a super-helical structure with the internal face interacting with proteins to induce allosteric effects on the HEAT protein to modify the scaffold that are transduced along the scaffold (as described by Kleckner in one of the references). This has been done very well by Yuh-min Chook on the analysis of karyopherin Beta2, a huntingtin interactor and HEAT-rich protein.\n\nReviewer #3 (Additional data files and statistical comments):\n\nNeed to see phospho-antibody validation data. This would include: dot blots to gauge affinity, full western blots to gauge specificity, as well as blots on extracts with either no or reduced huntingtin, and IF studies with antigen peptide competition.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Huntingtin's spherical solenoid structure enables polyglutamine tract-dependent modulation of its structure and function\" for further consideration at eLife. Your revised article has been favorably evaluated by a Senior editor, a Reviewing editor, and three reviewers. The study presents the results of structural studies on full-length huntingtin using CD, 3D EM, and a mass spec/cross-linking approach. In this revised manuscript the investigators include additional data on huntingtin with 46 repeats, a repeat tract found frequently on affected alleles. Finding that huntingtin folds into a structure that consists of a large central cavity, regardless of polyQ tract length, is intriguing regarding potential functions of this large protein and effect of polyQ expansion on function. Overall this work is an important contribution to HD research and polyQ diseases in general, field where structural data are lacking. However, the manuscript still needs important revisions. We feel sorry that we have to delay further acceptance, but important advice given in the first round of revision is insufficiently addressed to allow publication without further important adaptations of the text.\n\nThe referees raised mainly doubts with regard to the phosphorylation experiments and in particular the physiological relevance of these data. There are about 100 kinases in fly, around 200 in worm, and over 500 in humans, with 13 human kinase families not seen in fly or worm (Manning et al., 2002. TIBS 27(10) pp.514-520). Thus, there is a high chance of different phospho-PTMs of a human protein expressed in insect cells. A useful reference of a study that showed only 38% similarity of PTMs from human to Drosophila cells: Krishnamoorthy, S. PLoS ONE. 2008; 3(8): e2877. Positively one could argue that even if these phosphorylation events are physiologically not validated, they provide proof of concept that changes in the N-terminal extension can affect posttranslational modification (PTM). This needs however follow up studies in a mammalian expression system for further validation. We suggest to the authors to consider to remove this part of the manuscript or to be at least much more careful in the claims. They should clearly mention that insect cells are not a full model for PTM in mammalian cells and that they only cover a fraction of the kinome in mammals. They also should explicitly mention the possibility of artefacts. Finally, we provide several references of papers that investigated the topic before, these papers need to be discussed in a final version. Alternatively, this part can be deleted as there remained also still serious doubts about the quality controls of the phosphoantibodies which were provided in Figure 5\u2014figure supplement 5 but for which no controls on reactivity in cell extracts were provided.\n\nThere are, as indicated already, also additional serious problems with the representation of past research. We suggest to discuss and compare previously published data with the data/conclusions in the current paper using the papers and indications provided in additional comments.\n\nAdditional comments:\n\n1) In Figure 1C the meaning of the dotted line is not explained. Please include one sentence for clarification as you did in the original version of the paper.\n\n2) In the figure legend of Figure 1C exchange duplicated for duplicates.\n\n3) From the Introduction: \"Indeed, a comparison of lines of transgenic modified HTT BAC mice has implicated unique amino-terminal serine phosphorylation in mutant huntingtin gain of toxic function, indirectly implying a long-range impact of the amino-terminal region on huntingtin structure and function (Gu et al., 2009).\" The Gu et al. manuscript clearly demonstrates the protective effect of serine 13 and 16 phospho-mimetic mutations in a Q84 context, and no effect of S13AS16A mutations. This is the opposite of this statement. Furthermore, another group showed protection in the YAC128 model by small molecules that induced this PTM. The proper reference for polyglutamine effects at distal regions of huntingtin is likely from Zerial's work on full-length huntingtin and HAP40 interactions at the carboxyl-terminus affected by the polyglutamine expansion. (Pal et al., J Cell Biol. 2006 Feb 13;172(4):605-18).\n\nAnother paper that deserves discussion in this contest is Schilling B, Gafni J, Torcassi C, Cong X, Row RH, LaFevre-Bernt MA, Cusack MP, Ratovitski T, Hirschhorn R, Ross CA, Gibson BW, Ellerby LM. J Biol Chem. 2006 Aug 18;281(33):23686-97. Epub 2006 Jun 16. This work mapped out phosphorylation sites across huntingtin, and showed a trend of all sites being hypo-phosphorylated due to polyglutamine expansion, even near the carboxyl-terminus.\n\n4) The authors claim in the Abstract that they provide the first glimpse into the structural properties of huntingtin and an elegant solution to the apparent conundrum of how the extreme amino-terminal polyglutamine tract confers a novel property on huntingtin, causing the disease. Some qualifiers or reformulation are indicated: this is not the first glimpse, a recent huntingtin structural paper demonstrated the \u03b1-solenoid structure of huntingtin. There are across a few labs many papers on huntingtin PTMs in full-length huntingtin and conclusions of reduced phosphorylation at well characterized sites. Many publications suggest a loss of function of mutant huntingtin in events post-development. Some are included above and below for the reference of the authors:\n\nPal A, Severin F, Lommer B, Shevchenko A, Zerial M. J Cell Biol. 2006 Feb 13;172(4):605-18. Here they showed that interactions with HAP40 at the\n\nextreme c-terminus was influenced by the polyglutamine expansion on the carboxyl-terminus.\n\nEl-Daher MT, Hangen E, Bruy\u00e8re J, Poizat G, Al-Ramahi I, Pardo R, Bourg N, Souquere S, Mayet C, Pierron G, L\u00e9v\u00eaque-Fort S, Botas J, Humbert S, Saudou F. EMBO J. 2015 Sep 2;34(17):2255-71. doi: 10.15252/embj.201490808. Epub 2015 Jul 12. This work showed that Amino-terminal proteolytic fragments could interact with Carboxy-terminal fragments of huntingtin, as well as toxicity by the carboxyl terminal fragments of huntingtin.\n\nCaron NS, Desmond CR, Xia J, Truant R. Proc Natl Acad Sci U S A. 2013 Sep 3;110(36):14610-5. doi: 10.1073/pnas.1301342110. Epub 2013 Jul 29. This work showed the folding back of huntingtin amino terminus to carboxyl-distal regions of huntingtin in both fragment and full-length endogenous huntingtin contexts.\n\n5) One of the referees questioned the data in Figure 3. S/he suggested \"that the images were selected with the nanogold particles on the top in B (which are not as specific as gold-labelled antibodies), but it is difficult to gauge this relative to the rest of the structures, which all look very different. In my opinion, the data is not consistent with the 2D class average in 3D structures, and could just be the selection of images of a different orientation with the epitope up in the Z plane.\n\nIn 3A, I see obvious differences in the 2D-3D class average with or without the antibody in the top half of the structure.\"\n\nPlease address this concern in the new revision of the paper.\n\n6) Some discussion of the structural data comparing with other HEAT-rich proteins would be beneficial. Most of these HEAT proteins have large, solvent exposed central cavity, this is very common in the nuclear transport field. So, in a large HEAT protein, this would be anticipated.\n\n7) Figure 5: Mab2166 is a good choice of antibody, as it is one of the few fully validated anti-human huntingtin antibodies. They need a loading control, or proper loading that has the Mab2166 signal within the linear range of the assays. This is a problem in 5C, the bands are too intense.\n\n8) In Figure 6A, the first 2166 blots are also all darker than the range of the assay, and in the bottom blot comparing to pS2550, the levels of pS2550 clearly track with more or less total huntingtin in the 2166 blot (lanes 1 and 3). In both figures, they would be far more convincing with some additional cell biological imaging data in addition to the biochemical assays. This would give the reader more confidence.\n",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8560866d-9933-49b1-b0e0-60f15c816d75",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C1",
+      "claim": "The polyglutamine expansion in huntingtin protein causes Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The polyglutamine expansion in huntingtin protein causes Huntington's disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the citation of the Huntington's Disease Collaborative Research Group, 1993 in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "0db98fa9-7b7d-49c2-b5a4-6e8d25eb862b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C2",
+      "claim": "Huntingtin is likely composed of five distinct domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin is likely composed of five distinct domains and adopts a spherical \u03b1-helical solenoid where the amino-terminal and carboxyl-terminal regions fold to contain a circumscribed central cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cross-linking mass spectrometry data showing distinct patterns of intramolecular interactions and protease-sensitive sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "abec04ad-f9ee-4485-964a-dffa7c0a269c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C3",
+      "claim": "Huntingtin adopts a spherical \u03b1-helical solenoid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin is likely composed of five distinct domains and adopts a spherical \u03b1-helical solenoid where the amino-terminal and carboxyl-terminal regions fold to contain a circumscribed central cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by circular dichroism showing \u03b1-helical structure and electron microscopy showing spherical shape.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "90b5256b-7dbe-46cd-af65-986035cea3f6",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C4",
+      "claim": "The amino-terminal and carboxyl-terminal regions of huntingtin fold to contain a circumscribed central cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin is likely composed of five distinct domains and adopts a spherical \u03b1-helical solenoid where the amino-terminal and carboxyl-terminal regions fold to contain a circumscribed central cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the 3D EM reconstruction showing a large cavity in the core.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e05cd69a-4631-4002-b00a-6ad670c1faf2",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C5",
+      "claim": "The polyglutamine expansion increases \u03b1-helical properties of huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we showed that the polyglutamine expansion increases \u03b1-helical properties of huntingtin and affects the intramolecular interactions among the domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by circular dichroism data showing increased mean residue ellipticity at 222 nm with increasing polyglutamine tract length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "94a51f8f-3014-4f84-bbd6-6138fd257c85",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C6",
+      "claim": "The polyglutamine expansion affects the intramolecular interactions among huntingtin domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we showed that the polyglutamine expansion increases \u03b1-helical properties of huntingtin and affects the intramolecular interactions among the domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cross-linking mass spectrometry showing unique interaction patterns for different polyglutamine lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "47d7cf15-d637-4057-a3e0-c96937b51c60",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C7",
+      "claim": "Huntingtin is the entire large protein product (>350 kDa MW) of the Huntingtin gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin is the entire large protein product (>350 kDa MW) of the Huntingtin gene (HTT previously HD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ab14ef47-f75e-4a6d-b198-3e6186f6f7dd",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C8",
+      "claim": "Huntingtin has a segment of polyglutamine near its amino terminus encoded by a polymorphic CAG trinucleotide repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin has a segment of polyglutamine near its amino terminus (Amino-terminal) that is encoded by a polymorphic CAG trinucleotide repeat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic basis of the polyglutamine tract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "3f61f976-1dc3-4cff-81bf-f5739c6c3a2c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C9",
+      "claim": "If the polyglutamine tract is expanded above 38 residues, this mutation causes Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "If expanded above 38-residues, this mutation causes Huntington's disease (HD), a dominant neurodegenerative disorder (Huntington's Disease Collaborative Research Group, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Huntington's Disease Collaborative Research Group, 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a33b6445-6f5a-4fc5-b829-e6bf6188192d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C10",
+      "claim": "CAG repeat-size is the primary determinant of the rate of HD disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong correlation between the size of the expanded repeat and the age at diagnosis of HD motor, cognitive and psychiatric symptoms shows that CAG repeat-size is the primary determinant of the rate of the disease progression (Brinkman et al., 1997; Snell et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brinkman et al., 1997 and Snell et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "01fea908-4ac6-4635-8625-58b77950a75d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C11",
+      "claim": "Huntingtin is likely a HEAT domain solenoid that functions as a mechanical scaffold for multi-member complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "By analogy with other members of the HEAT/HEAT-like (Huntingtin, Elongation factor 3, protein phosphatase 2A, Target of rapamycin 1) repeat family (Andrade and Bork, 1995; Perry and Kleckner, 2003), huntingtin is likely a HEAT domain solenoid that functions as a mechanical scaffold for multi-member complexes (Grinthal et al., 2010; Takano and Gusella, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analogy with other HEAT repeat proteins and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f1193564-3f93-431b-b8a0-378421d943ea",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C12",
+      "claim": "Huntingtin's large size and predicted predominant HEAT/HEAT-like repeat domain structure is well conserved through 500 million years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin's large size and predicted predominant HEAT/HEAT-like repeat domain structure is well conserved through 500 million years of evolution (Seong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "64180dfc-01c9-4724-a906-52fff4e63334",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C13",
+      "claim": "The polyglutamine region is not conserved in some huntingtin orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The polyglutamine region is not conserved in some huntingtin orthologues (Seong et al., 2010), implying a role as an extra feature that fine-tunes huntingtin structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "7bd068cb-8549-4233-90ae-3a39acef56ca",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C14",
+      "claim": "Lengthening the polyglutamine tract quantitatively enhances the basal function of huntingtin in stimulating PRC2 histone methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, testing this idea, we have previously demonstrated, with purified recombinant human huntingtins in a cell-free assay, that lengthening the polyglutamine tract quantitatively enhances the basal function of huntingtin in stimulating Polycomb repressive complex 2 (PRC2) histone methyltransferase (Seong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Seong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a05ff032-0812-4ac4-b576-c7d225899438",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C15",
+      "claim": "Human huntingtin is phosphorylated at more than seventy modified serine, threonine and tyrosine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Human huntingtin is phosphorylated, at more than seventy modified serine, threonine and tyrosine residues (Hornbeck et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hornbeck et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a22abcee-4993-453b-9e5d-10d9703b1e9e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C16",
+      "claim": "The polyglutamine expansion at the amino-terminal causes a trend of hypo-phosphorylation in all sites, including sites near the carboxyl-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "the polyglutamine expansion at the amino-terminal causes a trend of hypo-phosphorylation in all sites, including sites near the carboxyl-terminus (Anne et al., 2007; Schilling et al., 2006; Warby et al., 2005), indirectly implying a long-range impact of the amino-terminal region on huntingtin structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Anne et al., 2007; Schilling et al., 2006; Warby et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "769aa6cb-d398-48c5-a80a-33c84a2dfcc4",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C17",
+      "claim": "All huntingtins exhibit the same irreversible thermal denaturation pattern, with secondary structure stable up to ~38\u201340\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "all exhibited the same irreversible thermal denaturation pattern, with secondary structure stable up to ~38\u201340\u00b0C, a gradual slow denaturation as the temperature is increased to 65\u201370\u00b0C, followed by aggregation and some precipitation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the thermal denaturation experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "1a44605d-b92b-4e20-be36-543021b314bb",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C18",
+      "claim": "The CD spectra of all huntingtins are consistent with a predominant \u03b1-helical secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectra (Figure 1B) of all of the huntingtins are consistent with a predominant \u03b1-helical secondary structure (Liu and Rost, 2003; Rost et al., 1994) (Figure 1A), with typical minima at 222 and 208 nm and a positive peak at 195 nm",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data in Figure 1B showing characteristic \u03b1-helical peaks.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e66864bc-f42e-4b28-ae9a-fcf7e78d0d74",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C19",
+      "claim": "Lengthening the polyglutamine tract has an incremental quantitative effect on the \u03b1-helicity of the entire huntingtin molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting an average of the Mean Residue Ellipticity (MRE) at 222 nm (characteristic of an \u03b1-helix) reveals an incremental quantitative effect of lengthening the polyglutamine tract at the amino terminus on the \u03b1-helicity of the entire molecule (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1D plotting MRE at 222 nm versus polyglutamine tract length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f4fded48-b5e0-4a64-98f3-3cc2a9575f73",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C20",
+      "claim": "Q23-huntingtin adopts an overall spherical shape with 130 \u00c5 height and 100 \u00c5 width.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM map of Q23-huntingtin at about 30 \u00c5 resolution, estimated from Fourier shell correlation analysis, shows that the molecule adopts an overall spherical shape with 130 \u00c5 height and 100 \u00c5 width (Figure 2A and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the 3D EM reconstruction shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "afd14db5-e0ee-4d0e-913f-572478e96bbb",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C21",
+      "claim": "Q23-huntingtin appears to contain a large solvent cavity (up to 50% by volume).",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the VM=1.23 for the protein itself, Q23-huntingtin appears to contain a large solvent cavity (up to 50% by volume).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the Mathew's coefficient and volume estimation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "5d31cef0-4626-4a24-944a-cbffda350e23",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C22",
+      "claim": "The 3D EM reconstruction of Q23-huntingtin shows a large cavity in the core.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this estimation, the 3D EM reconstruction of Q23-huntingtin shows a large cavity in the core (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the sectioned view in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ff3a0083-5f2d-41f5-9b75-fa4962469e4c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C23",
+      "claim": "Q78-huntingtin shows a similar overall spherical shape with a large cavity in the core.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of negatively-stained Q78-huntingtin (Figure 2C and Figure 2\u2014figure supplement 3B) disclosed a 3D map showing a similar overall spherical shape, with a large cavity in the core (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the 3D EM reconstruction in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "bc98a6d4-13b1-49bf-a38c-437305cfa62a",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C24",
+      "claim": "The extreme N-terminus and adjacent polyglutamine tract are folded back, forming a spherically shaped solenoid with an internal cavity, but accessible at the outside surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations strongly imply that the extreme N-terminus, and by inference the adjacent polyglutamine tract, is folded back, forming a spherically shaped solenoid with an internal cavity, but is accessible at the outside surface, regardless of its length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FLAG-antibody binding experiments showing extra density at the surface in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "4aa737db-264d-49b4-8ea1-966bad17cd8b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C25",
+      "claim": "Huntingtin is likely composed of five distinct sub-domains: NTD-I, NTD-II, CTD-I, UCD, and CTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the depiction of the short-range cross-link contact sites relative to the location of the protease-sensitive sites (Seong et al., 2010) indicates that huntingtin is likely to be composed of five distinct domains (Figure 4A upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cross-linking mass spectrometry data and protease sensitivity patterns shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "9486b26c-bd1d-4cbe-a572-c6dd157960f2",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C26",
+      "claim": "The major protease-sensitive hinge region is located at residues 1184\u20131254.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the protease-sensitive major hinge region located at residues 1184\u20131254 defines the 150 kDa amino-terminal domain (NTD) and the 200 kDa carboxyl-terminal domain (CTD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous limited proteolysis analysis cited as Seong et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "bc48cfb7-f97c-4432-9e37-3053c775ee1c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C27",
+      "claim": "A minor protease-sensitive site is located at ~ residue 500.",
+      "claim_type": "EXPLICIT",
+      "source": "A minor-protease sensitive site located at ~ residue 500 demarcates the NTD into NTD-1 and NTD-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on limited proteolysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "221fb305-3791-47cf-bbb8-15839a557b9e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C28",
+      "claim": "The 'uncrosslinked' sub-domain (UCD) may adopt a largely unfolded structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a region centrally located within the CTD showed strikingly few crosslinks, despite the presence of several lysine residues, strongly implying a distinct sub-domain that we call 'uncrosslinked' sub-domain (UCD), which, given the paucity of short range intramolecular contacts, may adopt a largely unfolded structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of cross-links in this region despite the presence of lysine residues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "65abf1e1-e7b3-44ba-99ef-864fac770b14",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C29",
+      "claim": "NTD-I mainly interacts with CTD-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, NTD-I mainly interacts with CTD-I, while CTD-II interacts with NTD-II and notably with CTD-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the pattern of mid- and long-range cross-links observed in XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "03c74f07-ced5-4943-a048-6bf3a2f73e80",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C30",
+      "claim": "CTD-II interacts with NTD-II and CTD-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, NTD-I mainly interacts with CTD-I, while CTD-II interacts with NTD-II and notably with CTD-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the pattern of mid- and long-range cross-links observed in XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "1204b778-48e2-43a6-839b-c4815c971f9c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C31",
+      "claim": "Q23-huntingtin exhibits more unique interactions of the NTD-I with the CTD-I compared to Q78-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with those of Q23- and Q78-huntingtin, the unique contacts of Q46 reveal widespread interactions across the entire region of the protein (Figure 4C and D). These unique, largely mid- and long-range contacts disclose that Q23-huntingtin exhibits more unique interactions of the NTD-I with the CTD-I",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the unique cross-links depicted in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "b4f5f395-5f18-4392-b5a5-335f6bfb098f",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C32",
+      "claim": "Q78-huntingtin displays more unique contacts between the CTD-II and the CTD-I and occasionally with NTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "and Q78-huntingtin displays more unique contacts between the CTD-II and the CTD-I and on occasion with NTD-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the unique cross-links depicted in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "add74b08-5568-4ca1-8ba2-71e53d59cde1",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C33",
+      "claim": "Q46-huntingtin posits an intermediate conformation between Q23- and Q78-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the unique crosslinks of Q46-huntingtin reveal that CTD-I seems to interact with both NTD-I and CTD-II as if Q46-huntingtin posits an intermediate conformation between Q23- and Q78-huntingtin. (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the widespread unique cross-links shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "6e92e634-ab33-4268-9e3f-0ffe18599d91",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C34",
+      "claim": "Huntingtin's distinctive shape classifies it as a closed helical solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "This shape classifies huntingtin as a closed helical solenoid, contrasting with the shorter open curvilinear HEAT/HEAT-like repeat solenoids whose native structures have been solved at high resolution (Cingolani et al., 1999; Groves et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the spherical shape with internal cavity observed in EM analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e65d0602-b403-47fd-a0c8-9fe8e2757e6e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C35",
+      "claim": "Huntingtin's shape provides both internal and external surface topologies that may mediate the binding of proteins or nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntingtin's distinctive shape is predicted to provide both internal and external surface topologies that may mediate the binding of proteins or nucleic acids, as befitting a mechanical HEAT/HEAT-like repeat interaction-scaffold (Takano and Gusella, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the observed structure and analogy with other HEAT repeat proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "63d1d392-e539-4f45-801f-2c909a044ae3",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C36",
+      "claim": "The polyglutamine expansion induces subtle but progressive structural changes in huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "While Q23- and Q78-huntingtin show unique crosslinks skewed toward either amino-terminal or carboxyl-terminal region respectively, the wide-spread intramolecular interactions of Q46-huntingtin prompt us to hypothesize that the polyglutamine tract expansion induces subtle but progressive structural changes in huntingtin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of unique cross-links across Q23, Q46, and Q78 huntingtin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "11e4c150-483b-473f-9fa1-1b92375dfe50",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C37",
+      "claim": "Polyglutamine tract length may subtly alter the basic structure by influencing the degree to which the end of the carboxyl-terminal arm is folded back upon itself onto the region around the major hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that polyglutamine tract length may subtly alter the basic structure by influencing the degree to which the end of the carboxyl-terminal arm is folded back upon itself onto the region around the major hinge: the longer the polyglutamine tract, the more are the contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of unique long-range contacts in different polyglutamine lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ff9e2c7e-f426-4438-aed6-02aa7a0d1a6a",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C38",
+      "claim": "The interaction with HAP40 at the extreme carboxyl-terminus of huntingtin was influenced by the polyglutamine expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our data, particularly including long-range interaction affected by the polyglutamine expansion, a few studies previously implied and reported the global structural and functional influence by the polyglutamine tract size: the interaction with HAP40 at the extreme carboxyl-terminus of huntingtin was influenced by the polyglutamine expansion (Pal et al., 2006);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pal et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "312b3f58-2f54-4b11-b1ad-4fc34ab544df",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C39",
+      "claim": "The proteolytically cleaved amino-terminal fragment interacted with the carboxyl-terminal fragment of huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "the proteolytically cleaved amino-terminal fragment interacted with the carboxyl-terminal fragment of huntingtin (El-Daher et al., 2015);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to El-Daher et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ad0e845a-34bd-45a1-ac1d-d19c72f2493a",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C40",
+      "claim": "The proximity between the first 17 residues and the polyproline region changes with polyglutamine tract size in both exon 1 fragment and endogenous full-length huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "the proximity between the first 17 residues and the polyproline region has been shown to change by the polyglutamine tract size both in exon 1 fragment and endogenous full-length huntingtin (Caron et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Caron et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "9d1377a9-fa38-4e39-8870-320edb41a85b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C41",
+      "claim": "Importin HEAT/HEAT-like solenoid proteins undergo substantial conformational change around a hinge-pivot region upon cargo binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Importin HEAT/HEAT-like solenoid proteins undergo substantial conformational change around a hinge-pivot region upon cargo binding (Cingolani et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cingolani et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "6ede54d7-fc84-4d9f-8081-b216cc90d3d9",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C42",
+      "claim": "It is possible that huntingtin may undergo dramatic conformational change upon interaction with its binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of the polyglutamine tract on huntingtin basic structural features strongly suggests that it is possible that huntingtin may also undergo dramatic conformational change upon interaction with its binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on analogy with importin proteins and the observed structural effects of the polyglutamine tract.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d6dad354-971e-43df-bf8a-1dab31c18630",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C43",
+      "claim": "The overall contact-patterns for Q23- and Q78-huntingtin were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the overall contact-patterns for the Q23- and Q78-huntingtin were similar, supporting observations of a generally similar core-stability (Figure 1) and shape (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of cross-linking patterns and supported by CD and EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "2178a82d-7c94-45b4-b98b-5795920bc8cf",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C44",
+      "claim": "The overall contact-patterns of Q46-huntingtin were similar and consistent with the five distinct domains.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the overall contact-patterns of Q46-huntingtin were similar and consistent with the five distinct domains (Figure 4A lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on XL-MS data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a6b30e2d-2941-417b-ab00-ebd5cefcf02c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C45",
+      "claim": "The EM map of Q23-huntingtin is at about 30 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM map of Q23-huntingtin at about 30 \u00c5 resolution, estimated from Fourier shell correlation analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from Fourier shell correlation analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "8647650d-461c-40aa-a4bd-1d1614491b96",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C46",
+      "claim": "The outer volume of Q23-huntingtin structure can be roughly estimated as 861,829 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer volume of the structure can be roughly estimated as 861,829 \u00c53 and a Mathew's coefficient (VM) of 2.48, assuming that Q23-huntingtin is a sphere with 115 \u00c5 diameter with 348 kDa molecular weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on the dimensions observed in EM and the molecular weight.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "4b6a2535-ce8a-4af0-9026-137b2b2781b7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C47",
+      "claim": "The high similarity of the shapes between Q23- and Q78-huntingtin 3D maps attests that huntingtin has the spherical structure with a cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although 3D maps were reconstructed de novo without other experimental methods such as random conical tilt, the high similarity of the shapes between Q23- and Q78-huntingtin 3D maps attests that huntingtin has the spherical structure with a cavity (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the two independently reconstructed 3D maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "23b7f5af-b4e1-4b5e-b742-9db0826f18ce",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C48",
+      "claim": "Manual superimposition of the 3D maps of Q23-huntingtin and Q78-huntingtin reveals potential differences in the two structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, manual superimposition of the 3D maps of Q23-huntingtin and Q78-huntingtin reveals potential differences in the two structures (Figure 2\u2014figure supplement 5), which may reflect technical variation (image processing, stain distribution, sample heterogeneity), in addition to the structural effects of the lengthened polyglutamine segment that were foreshadowed by the altered CD spectra (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the superimposition shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f6ec332f-5a6d-4971-84e1-9efad712ebc1",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C49",
+      "claim": "Purified huntingtin exhibits a predominantly \u03b1-helical secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported previously that purified huntingtin exhibits a predominantly \u03b1-helical secondary structure but among studies the impact of polyglutamine size has been inconsistent (Fodale et al., 2014; Huang et al., 2015; Li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "77d4642a-90e4-414b-b44f-8fabaabc27a3",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C50",
+      "claim": "The mechanism that triggers the disease process in HD is thought to involve a novel gain of function conferred on mutant huntingtin by the expanded polyglutamine segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with genetic studies in distinct CAG-expansion neurodegenerative disorders and CAG knock-in mice that replicate the HD mutation, the mechanism that triggers the disease process that leads to the characteristic vulnerability of striatal neurons in HD is thought to involve a novel gain of function that is conferred on mutant huntingtin by the expanded polyglutamine segment (Gusella and MacDonald, 2000; Nucifora et al., 2001; Trettel et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gusella and MacDonald, 2000; Nucifora et al., 2001; Trettel et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "77c81a00-37b1-44e1-8a32-699c6f44b513",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C51",
+      "claim": "HEAT/HEAT-like repeats are loosely conserved ~34 amino acid bipartite \u03b1-helical units.",
+      "claim_type": "EXPLICIT",
+      "source": "The topology of the huntingtin solenoid is expected to reflect the specific stacking characteristics of \u03b1-helical HEAT/HEAT-like repeats that span the molecule. The shape imparted by intramolecular stacking cannot be predicted because of the idiosyncratic nature of HEAT/HEAT-like repeats, which are loosely conserved ~34 amino acid bipartite \u03b1-helical units (Takano and Gusella, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Takano and Gusella, 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "08d7243b-8d2b-4646-b5d1-5ed977aeb52d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C52",
+      "claim": "Other HEAT repeat proteins such as nuclear importin and exportins have functional protein-protein binding interfaces located at the inner side of the solenoid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Other HEAT repeat proteins such as nuclear importin and exportins have functional protein-protein binding interfaces located at the inner side of the solenoid structure (Chook and Blobel, 2001; Cingolani et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chook and Blobel, 2001; Cingolani et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f3c0bd14-a658-4960-a43b-9b7056698e4e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C53",
+      "claim": "The HEAT repeat domains can be folded back to form a closed structure having functional sites located in the internal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the size of huntingtin is much bigger than other HEAT repeat proteins, we can imagine that the HEAT repeat domains can be folded back to form a closed structure that we have observed in huntingtin, having functional sites located in the internal cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed structure and comparison with other HEAT repeat proteins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d397a643-4edb-4243-b4a0-f25aa066d7da",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C54",
+      "claim": "The UCD sub-region spans amino acids ~1800 to ~2300.",
+      "claim_type": "IMPLICIT",
+      "source": "Consistent with this, XL-MS fails to detect short- or mid-range cross-linked lysine residues in the sub-region spanning amino acids ~1800 to ~2300, except one long distance contact and one short distance contact only in Q46-huntingtin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion of the UCD region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "4e9c79e9-430c-4e8e-b911-e0c85bf4edd7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C55",
+      "claim": "The UCD sub-region contains 13 lysine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This sub-region contains 13 lysine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the composition of the UCD region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "c2e6d681-a743-41c2-b413-cd7a22a02335",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C56",
+      "claim": "DSS modified, but not cross-linked peptides were observed in the UCD region.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that these residues are not DSS-accessible although we did observe DSS modified, but not cross-linked peptides in this region (data not shown), implying instead a more extended 3D structure that maximizes the surface area available for interaction with binding-partners, as in other HEAT repeat solenoid proteins (Cingolani et al., 1999; Grinthal et al., 2010; Groves et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the XL-MS experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e0ff701c-41c9-4748-92ac-c2627329c595",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C57",
+      "claim": "The extreme C-terminus displays some internal short- and mid-range cross-linking interactions that suggest internal folding.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the adjacent extreme C-terminus does display some internal short- and mid-range cross-linking interactions that suggest internal folding, though apparently without a well-defined proteolysis-accessible hinge-point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the XL-MS data showing cross-links in this region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a65d4483-475e-4410-85c1-f401177ac285",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C58",
+      "claim": "The extreme C-terminus lacks a well-defined proteolysis-accessible hinge-point.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the adjacent extreme C-terminus does display some internal short- and mid-range cross-linking interactions that suggest internal folding, though apparently without a well-defined proteolysis-accessible hinge-point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of proteolysis sites in this region despite evidence of folding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "c2f218a4-648b-4386-bd59-e4fbc2774c38",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C59",
+      "claim": "The extreme amino-terminal subdomain (NTD-I) with its polyglutamine tract and the extreme carboxyl-terminal subdomain (CTD-II) are close to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pattern of mid- and long-range contacts supports a view of huntingtin folding such that the extreme amino-terminal subdomain (NTD-I), with its polyglutamine tract, and the extreme carboxyl-terminal subdomain (CTD-II) are close to each other by virtue of contacts that each makes with the NTD-II and CTD-I sub-domains that flank the major cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of long-range cross-links observed in XL-MS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "04134b61-ab0c-4135-9221-45c87dca0c24",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C60",
+      "claim": "Folding of the two main HEAT/HEAT-like domains forms an extensive internal cavity consistent with the shape observed in EM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, folding of the two main HEAT/HEAT-like domains forms an extensive internal cavity consistent with the shape that we observe in EM analysis, while providing an elegant explanation for the conundrum of how the polyglutamine tract located at the end of the amino-terminal arm may affect change throughout the entire protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined XL-MS and EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d7e72c63-e079-4075-aef3-0f0808d9dc61",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C61",
+      "claim": "All huntingtins, regardless of polyglutamine tract length, have the same basic core structure.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the huntingtins, regardless of polyglutamine tract length, appear to have the same basic core structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CD, EM, and XL-MS data showing similar overall features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "66069ac0-92c0-4bf9-a296-acc4e0703479",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C62",
+      "claim": "All huntingtins are \u03b1-helical and have the same pattern of thermal stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CD data demonstrates that they are all \u03b1-helical and have the same pattern of thermal stability, denaturing over the same temperature range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the CD thermal denaturation experiments in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "8e07f837-4e18-42a3-9f91-28d67389445f",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C63",
+      "claim": "Huntingtins with different polyglutamine lengths have similar shapes in EM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "They have similar shapes in EM analysis and display mostly shared DSS-XL-MS intramolecular interactions, as discussed above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the EM reconstructions in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "69c55f88-47a8-4aad-8292-0eae480ae12b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C64",
+      "claim": "Huntingtins with different polyglutamine lengths display mostly shared DSS-XL-MS intramolecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "They have similar shapes in EM analysis and display mostly shared DSS-XL-MS intramolecular interactions, as discussed above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the XL-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d180cc21-5ae8-4d55-a6f2-4f03577713e1",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C65",
+      "claim": "Each huntingtin with different polyglutamine length displays a unique intramolecular interaction pattern most evident in the long-range contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless the differences among huntingtins with different polyglutamine lengths (Q23, Q46 and Q78) are telling. Each displays a unique intramolecular interaction pattern that is most evident in the long-range contacts detected by DSS-XL-MS analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the unique cross-links depicted in Figure 4B, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "98f1f219-4b55-4524-94b0-3e8b1f48f128",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C66",
+      "claim": "Most unique normal and mutant huntingtin folding characteristics involve contacts at locations on the CTD-I near the major hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intriguing that most of these unique normal and mutant huntingtin folding characteristics involve contacts at the locations on the CTD-I near the major hinge where many other contacts that are common to both proteins converge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data showing convergence of contacts near the major hinge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ac9a4ad9-04c3-41c0-ab75-4c2e21d1acb7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C67",
+      "claim": "Huntingtin binding may involve internal surface features accessed by a spring-loaded action of the major hinge-region.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps huntingtin binding involves internal surface features that are accessed by a spring-loaded action of the major hinge-region that entails the end-region contacts of each arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed structural features and analogy with other HEAT repeat proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "1dd008f8-fc65-4b98-b1b1-1f4d15ce633c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C68",
+      "claim": "The location of the protease-sensitive major hinge region defines the 150 kDa amino-terminal domain (NTD) and the 200 kDa carboxyl-terminal domain (CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the protease-sensitive major hinge region located at residues 1184\u20131254 defines the 150 kDa amino-terminal domain (NTD) and the 200 kDa carboxyl-terminal domain (CTD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on limited proteolysis data from Seong et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "043d99e5-ec08-4e8a-8f36-c80176dac51e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C69",
+      "claim": "The UCD is flanked by regions with numerous intramolecular contacts: CTD-I and CTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "The UCD is flanked by regions with numerous intramolecular contacts; the CTD-I in proximity to the major proteolysis site and the carboxyl-terminal CTD-II (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-linking pattern in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "17b06db0-7ad4-4a60-8bad-6a91f0f03b84",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C70",
+      "claim": "The results of hydrophobicity analysis show a transition in hydrophobicity prediction at the edge of each sub-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis of five discernable huntingtin sub-domains, the results of hydrophobicity analysis show a transition in hydrophobicity prediction at the edge of each sub-domain (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as supporting evidence for the five sub-domain model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e6df09b3-93aa-4c47-a730-2811f2334847",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C71",
+      "claim": "Subtraction of the 38 crosslinks common to both Q23- and Q78-huntingtin highlights networks of contacts that are relatively specific for either protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subtraction of the 38 crosslinks common to both proteins highlight networks of contacts that are relatively specific for either Q23-huntingtin (13 crosslinks) or Q78-huntingtin (8 crosslinks), as depicted in Figure 4B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B depicting unique cross-links.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d986f4f2-4bed-4d54-af8b-14bb86252e40",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C72",
+      "claim": "Q23-huntingtin has 13 unique crosslinks not found in Q78-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subtraction of the 38 crosslinks common to both proteins highlight networks of contacts that are relatively specific for either Q23-huntingtin (13 crosslinks) or Q78-huntingtin (8 crosslinks), as depicted in Figure 4B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "79e54842-f8c3-480b-a067-53b91b44317c",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C73",
+      "claim": "Q78-huntingtin has 8 unique crosslinks not found in Q23-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subtraction of the 38 crosslinks common to both proteins highlight networks of contacts that are relatively specific for either Q23-huntingtin (13 crosslinks) or Q78-huntingtin (8 crosslinks), as depicted in Figure 4B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "17d4a6c7-3c4b-4d54-85e8-87d018e0c20d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C74",
+      "claim": "38 crosslinks are common to both Q23- and Q78-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subtraction of the 38 crosslinks common to both proteins highlight networks of contacts that are relatively specific for either Q23-huntingtin (13 crosslinks) or Q78-huntingtin (8 crosslinks), as depicted in Figure 4B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "4bd54f4d-d782-48f6-95f9-e64299bc04d1",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C75",
+      "claim": "The unique contacts of Q46-huntingtin reveal widespread interactions across the entire region of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with those of Q23- and Q78-huntingtin, the unique contacts of Q46 reveal widespread interactions across the entire region of the protein (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a81222d4-191e-4539-90cd-e27b92024e7b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C76",
+      "claim": "In Q46-huntingtin, CTD-I seems to interact with both NTD-I and CTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the unique crosslinks of Q46-huntingtin reveal that CTD-I seems to interact with both NTD-I and CTD-II as if Q46-huntingtin posits an intermediate conformation between Q23- and Q78-huntingtin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the unique cross-links shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "a25a9dc6-f2bf-4d01-82e6-4de31047116b",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C77",
+      "claim": "The pattern of proteolysis reveals a single major cleavage-sensitive site at ~ residue 1200, regardless of polyglutamine tract length.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of proteolysis, regardless of polyglutamine tract length, revealed a single major cleavage-sensitive site at ~ residue 1200, strongly predicting a major hinge or pivot that roughly parses the protein into two nearly equal 'arms', a 150 kDa NTD and a 200 kDa CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on limited proteolysis data from Seong et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "b2f10b8b-c46d-44a3-94a7-b9a622329d0a",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C78",
+      "claim": "The major cleavage site at ~residue 1200 strongly predicts a major hinge or pivot that roughly parses the protein into two nearly equal 'arms'.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of proteolysis, regardless of polyglutamine tract length, revealed a single major cleavage-sensitive site at ~ residue 1200, strongly predicting a major hinge or pivot that roughly parses the protein into two nearly equal 'arms', a 150 kDa NTD and a 200 kDa CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteolysis pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "572207dd-e02c-4a4d-a4de-448cf453b7bc",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C79",
+      "claim": "Limited proteolysis of the amino-terminal domain revealed an internal cleavage site located at ~ residue 500.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited proteolysis of the amino-terminal domain did reveal an internal cleavage site, located at ~ residue 500, which is consistent with internal pivot points, along with other internal folding, that may explain the short- and mid-range contacts detected by XL-MS near the terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on limited proteolysis data from Seong et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f0ad4b4a-5468-4c3e-a6e8-837079796402",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C80",
+      "claim": "The carboxyl-terminal domain lacked internal cleavage-accessible sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the carboxyl-terminal domain lacked internal cleavage-accessible sites (Seong et al., 2010), implying a paucity of accessible hinge-points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on limited proteolysis data from Seong et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "42d831c3-ceec-44c3-8280-71ff90fdeac0",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C81",
+      "claim": "The carboxyl-terminal domain has a paucity of accessible hinge-points.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the carboxyl-terminal domain lacked internal cleavage-accessible sites (Seong et al., 2010), implying a paucity of accessible hinge-points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of internal proteolysis sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "979ce1fc-19db-4461-b7f0-44fb3bc032c6",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C82",
+      "claim": "The UCD region has a more extended 3D structure that maximizes the surface area available for interaction with binding-partners.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that these residues are not DSS-accessible although we did observe DSS modified, but not cross-linked peptides in this region (data not shown), implying instead a more extended 3D structure that maximizes the surface area available for interaction with binding-partners, as in other HEAT repeat solenoid proteins (Cingolani et al., 1999; Grinthal et al., 2010; Groves et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of cross-links despite DSS modification and by analogy with other HEAT repeat proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "5afa4e6f-f2eb-408d-a7fc-5423046e5caf",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C83",
+      "claim": "There are multiple long-range interaction cross-links between the CTD-II and CTD-I or NTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "However, perhaps the most striking finding is the multiple long-range interaction cross-links between the CTD-II and CTD-I or NTD-II, as well as the long-range contacts of the NTD-I with the CTD-I close to the major hinge-pivot, which places the ends of each arm in close proximity to each other on the carboxyl-terminal domain arm, above the major hinge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "5a16301b-754e-49d5-86ef-52b53c606909",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C84",
+      "claim": "There are long-range contacts of the NTD-I with the CTD-I close to the major hinge-pivot.",
+      "claim_type": "EXPLICIT",
+      "source": "However, perhaps the most striking finding is the multiple long-range interaction cross-links between the CTD-II and CTD-I or NTD-II, as well as the long-range contacts of the NTD-I with the CTD-I close to the major hinge-pivot, which places the ends of each arm in close proximity to each other on the carboxyl-terminal domain arm, above the major hinge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "7dd53f75-76b3-44e7-aaa5-09d1268a73aa",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C85",
+      "claim": "The long-range contacts place the ends of each arm in close proximity to each other on the carboxyl-terminal domain arm, above the major hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, perhaps the most striking finding is the multiple long-range interaction cross-links between the CTD-II and CTD-I or NTD-II, as well as the long-range contacts of the NTD-I with the CTD-I close to the major hinge-pivot, which places the ends of each arm in close proximity to each other on the carboxyl-terminal domain arm, above the major hinge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of long-range cross-links.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "f6041cca-e2c5-4eeb-baec-5feea21519fc",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C86",
+      "claim": "EM analysis of the amino-terminal FLAG-antibody-huntingtin complex strongly suggests accessibility of the extreme N-terminus at the external surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, EM analysis of the amino-terminal FLAG-antibody-huntingtin complex strongly suggests accessibility of the extreme N-terminus, and likely the adjacent polyglutamine tract, at the external surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the FLAG-antibody binding experiments in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "b7464b33-2862-4dfa-9939-6f2b70c3d71e",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C87",
+      "claim": "The adjacent polyglutamine tract is likely accessible at the external surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, EM analysis of the amino-terminal FLAG-antibody-huntingtin complex strongly suggests accessibility of the extreme N-terminus, and likely the adjacent polyglutamine tract, at the external surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FLAG-antibody binding to the N-terminus shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "01fbed4d-14f5-4ea2-a375-73bf708fad93",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C88",
+      "claim": "The patterns of short- and mid-range intramolecular DSS-XL-MS delineated intramolecular contacts are shared by Q23-, Q46- and Q78-huntingtin.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the patterns of short- and mid-range intramolecular DSS-XL-MS delineated intramolecular contacts that are shared by the Q23-, Q46- and Q78-huntingtin, which are mainly located within and between each of the regions that immediately flank this location, implying extensive local internal folding and close proximity of the 'arms' around the pivot-point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "c68d3d6c-e44b-47b6-90cf-81b400e5f4c2",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C89",
+      "claim": "The shared short- and mid-range contacts are mainly located within and between regions that immediately flank the major hinge location.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the patterns of short- and mid-range intramolecular DSS-XL-MS delineated intramolecular contacts that are shared by the Q23-, Q46- and Q78-huntingtin, which are mainly located within and between each of the regions that immediately flank this location, implying extensive local internal folding and close proximity of the 'arms' around the pivot-point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "9dee3371-1930-44c8-929e-d5d8ff9ceb73",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C90",
+      "claim": "The shared contact patterns imply extensive local internal folding and close proximity of the 'arms' around the pivot-point.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the patterns of short- and mid-range intramolecular DSS-XL-MS delineated intramolecular contacts that are shared by the Q23-, Q46- and Q78-huntingtin, which are mainly located within and between each of the regions that immediately flank this location, implying extensive local internal folding and close proximity of the 'arms' around the pivot-point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of shared cross-links.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "0abab1e5-67a0-4f48-8d21-4a4b25978d14",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C91",
+      "claim": "Multiple short- and mid-range interactions are detected at the ends of the NTD-I and CTD-II.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple short- and mid-range interactions are also detected at the ends of the NTD-I and CTD-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "de3fd488-7810-4efa-9772-6b4beb162d09",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "claim_id": "C92",
+      "claim": "The short- and mid-range interactions at the ends of NTD-I and CTD-II imply internal folding near the ends of each arm.",
+      "claim_type": "EXPLICIT",
+      "source": "These contacts imply internal folding near the ends of each arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of cross-links.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0fd30a5-0693-439c-b903-e80de9889360",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Huntingtin adopts a spherical \u03b1-helical solenoid structure with a central cavity. CD spectroscopy shows all huntingtin variants (Q23, Q46, Q78) exhibit predominantly \u03b1-helical secondary structure with characteristic minima at 222 and 208 nm. EM analysis at ~30 \u00c5 resolution reveals Q23- and Q78-huntingtin both adopt spherical shapes (130 \u00c5 height, 100 \u00c5 width) with large internal cavities, and all variants share similar thermal stability and overall structural features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary techniques (CD, EM, thermal denaturation) consistently demonstrate the spherical \u03b1-helical structure with internal cavity across different polyglutamine lengths. The EM reconstructions independently confirm similar spherical morphology for Q23 and Q78 variants, and CD data show characteristic \u03b1-helical signatures. The convergence of evidence from orthogonal methods strongly supports this core structural finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "c975a5f9-7573-4ea7-a8ea-bfceca977391",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Polyglutamine expansion incrementally increases the \u03b1-helical content of huntingtin. CD analysis shows progressive increase in mean residue ellipticity at 222 nm with increasing polyglutamine tract length (Q2 < Q23 < Q46 < Q67 < Q78). Manual superimposition of Q23 and Q78 EM maps reveals potential structural differences that may reflect effects of the lengthened polyglutamine segment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CD data in Figure 1D clearly demonstrates a quantitative relationship between polyglutamine length and \u03b1-helicity. However, the EM differences are acknowledged to potentially reflect technical variation in addition to structural effects. The CD finding is robust and directly measured, while the EM differences are more tentative. Overall, the \u03b1-helical increase is well-supported by direct spectroscopic measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Huntingtin is composed of five distinct structural domains: NTD-I, NTD-II, CTD-I, UCD (uncrosslinked domain), and CTD-II. These domains are delineated by cross-linking mass spectrometry patterns, protease-sensitive sites (major hinge at residues 1184-1254, minor site at ~residue 500), and hydrophobicity transitions. The UCD region (amino acids ~1800-2300) contains 13 lysine residues but shows strikingly few crosslinks, suggesting a largely unfolded or extended structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The five-domain model is supported by convergent evidence from XL-MS showing distinct patterns of intramolecular contacts, limited proteolysis data identifying hinge regions, and hydrophobicity analysis showing transitions at domain boundaries. The UCD characterization is particularly well-supported by the absence of cross-links despite lysine availability and detection of DSS-modified peptides. Multiple independent lines of evidence support this domain architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "d2975089-093e-46e5-a11d-db1d16a1eafe",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The amino-terminal and carboxyl-terminal regions fold to create a circumscribed central cavity, with the N-terminus and polyglutamine tract accessible at the external surface. EM analysis shows Q23-huntingtin contains a large solvent cavity (up to 50% by volume based on Matthews coefficient calculations). FLAG-antibody binding experiments demonstrate the extreme N-terminus is accessible at the external surface, implying the adjacent polyglutamine tract is also surface-accessible despite the folded-back architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cavity is directly visualized in sectioned EM views and supported by volume calculations. The FLAG-antibody binding provides direct experimental evidence for N-terminal surface accessibility. The combination of structural visualization and antibody-binding experiments provides strong support for this folding topology. The inference about polyglutamine tract accessibility is reasonable given the proximity to the FLAG-tagged N-terminus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Polyglutamine expansion affects intramolecular interactions among huntingtin domains in a length-dependent manner. Q23-huntingtin exhibits 13 unique crosslinks (primarily NTD-I to CTD-I interactions), Q78-huntingtin shows 8 unique crosslinks (primarily CTD-II to CTD-I/NTD-II), while Q46-huntingtin displays widespread interactions across the entire protein, suggesting an intermediate conformation. This implies polyglutamine tract expansion induces subtle but progressive structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The XL-MS data clearly identifies distinct interaction patterns for each polyglutamine length, with 38 shared crosslinks and variant-specific unique contacts. The intermediate behavior of Q46 between Q23 and Q78 supports a progressive structural transition model. The data is internally consistent and the pattern of unique vs. shared crosslinks is well-documented in Figure 4. The conclusion of progressive structural changes is well-supported by the systematic analysis of three different polyglutamine lengths.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The extreme N-terminal (NTD-I) and C-terminal (CTD-II) subdomains are in close spatial proximity through long-range contacts with flanking domains (NTD-II and CTD-I) near the major hinge. XL-MS reveals multiple long-range crosslinks between CTD-II and CTD-I/NTD-II, and between NTD-I and CTD-I near the major hinge. Short- and mid-range contacts shared across all variants are concentrated around the major hinge region, implying extensive local folding and close proximity of the two arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The XL-MS data directly demonstrates long-range contacts that place the terminal regions in proximity. The pattern of shared short- and mid-range contacts around the major hinge is consistent across Q23, Q46, and Q78 variants, providing robust support for this folding topology. The inference of spatial proximity from crosslinking data is standard and well-justified given the DSS crosslinker distance constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "cbc79143-993b-4591-93b0-4986f51aede6",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All huntingtin variants (Q23, Q46, Q78) share the same basic core structure and stability. CD thermal denaturation shows identical patterns with stability up to ~38-40\u00b0C followed by gradual denaturation to 65-70\u00b0C. Overall XL-MS contact patterns are similar across variants, and EM analysis reveals similar spherical shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal techniques (CD thermal denaturation, XL-MS, EM) consistently demonstrate conserved core structural features across polyglutamine lengths. The thermal denaturation curves overlay well, the majority of crosslinks are shared (38 common vs. 13 and 8 unique), and EM reconstructions show similar overall morphology. This convergent evidence strongly supports the conclusion of a conserved basic structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "92c9bfe0-df3e-4f8f-879f-e4a4321cf5d7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Huntingtin's spherical structure classifies it as a closed helical solenoid, distinct from shorter open curvilinear HEAT repeat proteins. This closed structure is predicted to provide both internal and external surface topologies for binding proteins or nucleic acids, with functional sites potentially located in the internal cavity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The classification as a closed solenoid is supported by the observed spherical shape with internal cavity, which differs from known open HEAT repeat structures. However, the predictions about functional binding surfaces are speculative and not directly tested. The comparison to other HEAT repeat proteins is reasonable but the functional implications remain hypothetical. The structural classification is supported but functional predictions require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "e5434b00-6df2-4a5e-a264-eda1b21619c7",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The UCD region adopts an extended structure maximizing surface area for binding-partner interactions, while the extreme C-terminus shows internal folding without well-defined proteolysis-accessible hinge points. DSS-modified but not cross-linked peptides were observed in the UCD, and the carboxyl-terminal domain lacked internal cleavage sites in limited proteolysis experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The inference of extended UCD structure is supported by the observation of DSS modification without crosslinking despite lysine availability, and by analogy with other HEAT repeat proteins. The lack of proteolysis sites in the C-terminal domain is directly observed. The combination of XL-MS and proteolysis data provides convergent support for these structural features, though the functional interpretation regarding binding-partner interactions remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "67aa7946-c5cf-4df8-90f4-0eee7e205a71",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The major hinge region at ~residue 1200 serves as a convergence point for unique polyglutamine-dependent contacts. Limited proteolysis reveals a single major cleavage site at ~residue 1200 (regardless of polyglutamine length) that divides the protein into 150 kDa NTD and 200 kDa CTD arms, and a minor site at ~residue 500 within the NTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The proteolysis data directly identifies the major hinge location and is consistent across polyglutamine lengths. The XL-MS data shows convergence of both shared and unique contacts near this region. The combination of proteolysis mapping and crosslinking patterns provides strong support for the functional importance of this hinge region, though the mechanistic implications remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "32644283-78e1-4376-af59-1c110951b2eb",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The polyglutamine tract's structural effects are consistent with prior observations of long-range functional impacts, including effects on HAP40 binding at the C-terminus, interactions between proteolytic fragments, and conformational changes in the N-terminal region. By analogy with importin proteins that undergo conformational changes upon cargo binding, huntingtin may undergo dramatic conformational changes upon binding partners, potentially involving a spring-loaded action of the major hinge region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The citations to prior work (C38-C40) support the concept of long-range effects, and the analogy to importin conformational changes (C41) is reasonable given structural similarities. However, the proposed spring-loaded mechanism and dramatic conformational changes (C42, C67) are speculative and not directly demonstrated. These remain hypotheses that require experimental validation. The consistency with prior literature is supported, but the mechanistic model is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    },
+    {
+      "id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d",
+      "content_id": "5c583cfb-9c2e-46c4-a40c-297bb1706a99",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and context claims about Huntington's disease, huntingtin protein properties, and HEAT repeat protein characteristics. These include established facts about the genetic basis of HD, huntingtin's size and conservation, polyglutamine tract variability across species, phosphorylation patterns, and general properties of HEAT repeat proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-established in the literature and supported by appropriate citations. They provide necessary context but do not represent novel findings of this study. The citations are appropriate and the statements accurately reflect current knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:12:12.598104Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "abec04ad-f9ee-4485-964a-dffa7c0a269c",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "1a44605d-b92b-4e20-be36-543021b314bb",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "f4fded48-b5e0-4a64-98f3-3cc2a9575f73",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "5d31cef0-4626-4a24-944a-cbffda350e23",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "ff3a0083-5f2d-41f5-9b75-fa4962469e4c",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "a6b30e2d-2941-417b-ab00-ebd5cefcf02c",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "4b6a2535-ce8a-4af0-9026-137b2b2781b7",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "d7e72c63-e079-4075-aef3-0f0808d9dc61",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "66069ac0-92c0-4bf9-a296-acc4e0703479",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "8e07f837-4e18-42a3-9f91-28d67389445f",
+      "result_id": "e0fd30a5-0693-439c-b903-e80de9889360"
+    },
+    {
+      "claim_id": "e05cd69a-4631-4002-b00a-6ad670c1faf2",
+      "result_id": "c975a5f9-7573-4ea7-a8ea-bfceca977391"
+    },
+    {
+      "claim_id": "e66864bc-f42e-4b28-ae9a-fcf7e78d0d74",
+      "result_id": "c975a5f9-7573-4ea7-a8ea-bfceca977391"
+    },
+    {
+      "claim_id": "23b7f5af-b4e1-4b5e-b742-9db0826f18ce",
+      "result_id": "c975a5f9-7573-4ea7-a8ea-bfceca977391"
+    },
+    {
+      "claim_id": "0db98fa9-7b7d-49c2-b5a4-6e8d25eb862b",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "4aa737db-264d-49b4-8ea1-966bad17cd8b",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "9486b26c-bd1d-4cbe-a572-c6dd157960f2",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "bc48cfb7-f97c-4432-9e37-3053c775ee1c",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "221fb305-3791-47cf-bbb8-15839a557b9e",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "d397a643-4edb-4243-b4a0-f25aa066d7da",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "4e9c79e9-430c-4e8e-b911-e0c85bf4edd7",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "1dd008f8-fc65-4b98-b1b1-1f4d15ce633c",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "043d99e5-ec08-4e8a-8f36-c80176dac51e",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "17b06db0-7ad4-4a60-8bad-6a91f0f03b84",
+      "result_id": "560df4c1-8b93-48c8-beb9-8a16fe0089d2"
+    },
+    {
+      "claim_id": "90b5256b-7dbe-46cd-af65-986035cea3f6",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "afd14db5-e0ee-4d0e-913f-572478e96bbb",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "5d31cef0-4626-4a24-944a-cbffda350e23",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "bc98a6d4-13b1-49bf-a38c-437305cfa62a",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "8647650d-461c-40aa-a4bd-1d1614491b96",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "04134b61-ab0c-4135-9221-45c87dca0c24",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "f6041cca-e2c5-4eeb-baec-5feea21519fc",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "b7464b33-2862-4dfa-9939-6f2b70c3d71e",
+      "result_id": "d2975089-093e-46e5-a11d-db1d16a1eafe"
+    },
+    {
+      "claim_id": "94a51f8f-3014-4f84-bbd6-6138fd257c85",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "65abf1e1-e7b3-44ba-99ef-864fac770b14",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "03c74f07-ced5-4943-a048-6bf3a2f73e80",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "1204b778-48e2-43a6-839b-c4815c971f9c",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "b4f5f395-5f18-4392-b5a5-335f6bfb098f",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "add74b08-5568-4ca1-8ba2-71e53d59cde1",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "63d1d392-e539-4f45-801f-2c909a044ae3",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "11e4c150-483b-473f-9fa1-1b92375dfe50",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "d180cc21-5ae8-4d55-a6f2-4f03577713e1",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "e6df09b3-93aa-4c47-a730-2811f2334847",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "d986f4f2-4bed-4d54-af8b-14bb86252e40",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "79e54842-f8c3-480b-a067-53b91b44317c",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "17d4a6c7-3c4b-4d54-85e8-87d018e0c20d",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "4bd54f4d-d782-48f6-95f9-e64299bc04d1",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "a81222d4-191e-4539-90cd-e27b92024e7b",
+      "result_id": "47b6af5a-b42c-4f0d-8b61-a02967288b9d"
+    },
+    {
+      "claim_id": "c2f218a4-648b-4386-bd59-e4fbc2774c38",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "5afa4e6f-f2eb-408d-a7fc-5423046e5caf",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "5a16301b-754e-49d5-86ef-52b53c606909",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "7dd53f75-76b3-44e7-aaa5-09d1268a73aa",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "01fbed4d-14f5-4ea2-a375-73bf708fad93",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "c68d3d6c-e44b-47b6-90cf-81b400e5f4c2",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "9dee3371-1930-44c8-929e-d5d8ff9ceb73",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "0abab1e5-67a0-4f48-8d21-4a4b25978d14",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "de3fd488-7810-4efa-9772-6b4beb162d09",
+      "result_id": "ea6fd07f-1b86-4ae6-ae73-b30b1218bbd7"
+    },
+    {
+      "claim_id": "769aa6cb-d398-48c5-a80a-33c84a2dfcc4",
+      "result_id": "cbc79143-993b-4591-93b0-4986f51aede6"
+    },
+    {
+      "claim_id": "d6dad354-971e-43df-bf8a-1dab31c18630",
+      "result_id": "cbc79143-993b-4591-93b0-4986f51aede6"
+    },
+    {
+      "claim_id": "d7e72c63-e079-4075-aef3-0f0808d9dc61",
+      "result_id": "cbc79143-993b-4591-93b0-4986f51aede6"
+    },
+    {
+      "claim_id": "66069ac0-92c0-4bf9-a296-acc4e0703479",
+      "result_id": "cbc79143-993b-4591-93b0-4986f51aede6"
+    },
+    {
+      "claim_id": "69c55f88-47a8-4aad-8292-0eae480ae12b",
+      "result_id": "cbc79143-993b-4591-93b0-4986f51aede6"
+    },
+    {
+      "claim_id": "6e92e634-ab33-4268-9e3f-0ffe18599d91",
+      "result_id": "92c9bfe0-df3e-4f8f-879f-e4a4321cf5d7"
+    },
+    {
+      "claim_id": "e65d0602-b403-47fd-a0c8-9fe8e2757e6e",
+      "result_id": "92c9bfe0-df3e-4f8f-879f-e4a4321cf5d7"
+    },
+    {
+      "claim_id": "f3c0bd14-a658-4960-a43b-9b7056698e4e",
+      "result_id": "92c9bfe0-df3e-4f8f-879f-e4a4321cf5d7"
+    },
+    {
+      "claim_id": "c2e6d681-a743-41c2-b413-cd7a22a02335",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "e0ff701c-41c9-4748-92ac-c2627329c595",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "a65d4483-475e-4410-85c1-f401177ac285",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "f0ad4b4a-5468-4c3e-a6e8-837079796402",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "42d831c3-ceec-44c3-8280-71ff90fdeac0",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "979ce1fc-19db-4461-b7f0-44fb3bc032c6",
+      "result_id": "e5434b00-6df2-4a5e-a264-eda1b21619c7"
+    },
+    {
+      "claim_id": "98f1f219-4b55-4524-94b0-3e8b1f48f128",
+      "result_id": "67aa7946-c5cf-4df8-90f4-0eee7e205a71"
+    },
+    {
+      "claim_id": "a25a9dc6-f2bf-4d01-82e6-4de31047116b",
+      "result_id": "67aa7946-c5cf-4df8-90f4-0eee7e205a71"
+    },
+    {
+      "claim_id": "b2f10b8b-c46d-44a3-94a7-b9a622329d0a",
+      "result_id": "67aa7946-c5cf-4df8-90f4-0eee7e205a71"
+    },
+    {
+      "claim_id": "572207dd-e02c-4a4d-a4de-448cf453b7bc",
+      "result_id": "67aa7946-c5cf-4df8-90f4-0eee7e205a71"
+    },
+    {
+      "claim_id": "ff9e2c7e-f426-4438-aed6-02aa7a0d1a6a",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "312b3f58-2f54-4b11-b1ad-4fc34ab544df",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "ad0e845a-34bd-45a1-ac1d-d19c72f2493a",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "9d1377a9-fa38-4e39-8870-320edb41a85b",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "6ede54d7-fc84-4d9f-8081-b216cc90d3d9",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "ac9a4ad9-04c3-41c0-ab75-4c2e21d1acb7",
+      "result_id": "32644283-78e1-4376-af59-1c110951b2eb"
+    },
+    {
+      "claim_id": "8560866d-9933-49b1-b0e0-60f15c816d75",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "47d7cf15-d637-4057-a3e0-c96937b51c60",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "ab14ef47-f75e-4a6d-b198-3e6186f6f7dd",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "3f61f976-1dc3-4cff-81bf-f5739c6c3a2c",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "a33b6445-6f5a-4fc5-b829-e6bf6188192d",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "01fea908-4ac6-4635-8625-58b77950a75d",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "f1193564-3f93-431b-b8a0-378421d943ea",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "64180dfc-01c9-4724-a906-52fff4e63334",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "7bd068cb-8549-4233-90ae-3a39acef56ca",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "a05ff032-0812-4ac4-b576-c7d225899438",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "a22abcee-4993-453b-9e5d-10d9703b1e9e",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "f6ec332f-5a6d-4971-84e1-9efad712ebc1",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "77d4642a-90e4-414b-b44f-8fabaabc27a3",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "77c81a00-37b1-44e1-8a32-699c6f44b513",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    },
+    {
+      "claim_id": "08d7243b-8d2b-4646-b5d1-5ed977aeb52d",
+      "result_id": "9948c2ce-bc70-4a0a-a59f-b050c5a1231d"
+    }
+  ],
+  "comparisons": []
+}

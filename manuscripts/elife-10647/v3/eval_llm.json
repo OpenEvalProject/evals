@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C4",
+      "C29"
+    ],
+    "result": "SOX2 is O-GlcNAcylated at serine 248 in the transactivation domain in mESCs and during reprogramming. LC-MS/MS analysis revealed four main PTM populations of the TAD peptide in self-renewal conditions. Upon differentiation (LIF removal and RA addition for 48 hr), O-GlcNAc occupancy at S248 decreased markedly while phosphorylation stoichiometry remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26 are supported by mass spectrometry data in Figures 1A and 2A showing O-GlcNAcylation at S248. Claims C27-C29 are supported by extracted ion chromatograph data in Figure 1B-C demonstrating decreased O-GlcNAc occupancy upon differentiation with no change in phosphorylation. The mass spectrometry evidence is comprehensive with multiple technical approaches (ETD and HCD fragmentation) and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C5",
+      "C40",
+      "C91",
+      "C92"
+    ],
+    "result": "The S248A mutation (O-GlcNAc-deficient SOX2) increases somatic cell reprogramming efficiency. MEFs transduced with OSS248AKM produced significantly more GFP+ iPSC colonies than OSWTKM, and these iPSCs exhibited normal morphology and germline transmission capability. Expression levels of wild-type and S248A SOX2 were comparable during the first six days of reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C5, C92 are supported by colony counting data in Figure 2D showing significantly increased reprogramming efficiency (p<0.05). Claims C35-C37 are supported by morphology and chimera data in Figure 2E demonstrating functional pluripotency. Claims C38-C39 are supported by Western blot data in Figure 2F showing equal expression levels. The statistical significance is reported and the functional validation through germline transmission is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The phospho-mimetic S248D mutation also increased reprogramming efficiency, suggesting that removal of the O-GlcNAcylation site, rather than a phosphorylation site, mediates the effect on SOX2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 is supported by data in Figure 2\u2014figure supplement 2, but claim C44 is speculative. While both S248A and S248D mutations increase reprogramming efficiency, this observation alone is insufficient to definitively conclude that O-GlcNAcylation removal (rather than phosphorylation site removal) is responsible. The phospho-mimetic may not fully recapitulate phosphorylation, and alternative explanations (e.g., both modifications being inhibitory) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "mESC lines expressing FLAG-tagged wild-type SOX2 (fSOX2-Tg) or S248A mutant (fS248A-Tg) as their sole source of SOX2 were successfully generated. These lines showed comparable SOX2, OCT4, and NANOG levels and distribution to parental cells. LC-MS analysis confirmed loss of S248 O-GlcNAcylation in fS248A-Tg cells and quantified PTM stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by immunofluorescence data in Figure 3C showing comparable protein levels and localization. Claims C49-C51 are supported by mass spectrometry data in Figures 3D-E and Figure 3\u2014figure supplement 2 demonstrating PTM characterization. The cell line characterization is thorough with multiple validation approaches including Western blot, immunofluorescence, and mass spectrometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C118"
+    ],
+    "result": "The S248A mutation resulted in increased phosphorylation at S253 (from 10.9% to 18.7% of total TAD), suggesting potential crosstalk between O-GlcNAcylation and phosphorylation in the SOX2 TAD peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by quantitative mass spectrometry data showing increased S253 phosphorylation in the S248A mutant. However, claims C53 and C118 are speculative inferences from this observation. While the data demonstrate a correlation between loss of O-GlcNAcylation and increased phosphorylation, direct evidence of crosstalk mechanism is not provided. The observation is valid but the mechanistic interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C6",
+      "C93"
+    ],
+    "result": "Microarray analysis revealed significant gene expression changes in fS248A-Tg cells compared to fSOX2-Tg cells, with 320 genes upregulated and 344 genes downregulated. Pluripotency-promoting genes were upregulated while differentiation-associated genes were downregulated, suggesting the S248A mutation alters the balance between self-renewal and differentiation gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by microarray data in Figure 4A with appropriate statistical thresholds (fold change >1.5, p<0.05). Claims C57-C58 are supported by microarray and RT-qPCR validation in Figure 4B. The inference in claims C59 and C93 is reasonable given the pattern of gene expression changes. However, the lack of pathway enrichment (C56) suggests the changes may be subtle or dispersed across multiple pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C104"
+    ],
+    "result": "Upon OCT4 depletion, fS248A-Tg mESCs maintained key features of pluripotency better than fSOX2-Tg mESCs, showing less dramatic changes in colony morphology, higher AP staining, and maintained Nanog expression. This suggests fS248A-Tg cells can maintain pluripotency when OCT4 levels are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C104 are supported by AP staining data in Figure 4D and morphology data in Figure 4\u2014figure supplement 1. Claim C61 is a reasonable inference from the data. However, claim C62 (that O-GlcNAc modification inhibits SOX2 activity) is speculative and represents an interpretation rather than a direct demonstration. The OCT4 depletion experiments provide functional evidence but do not directly prove the mechanism of O-GlcNAc inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C8",
+      "C100",
+      "C105"
+    ],
+    "result": "ChIP-seq analysis revealed that SOX2S248A occupies 1000 additional genomic sites not bound by wild-type SOX2, while maintaining 4,191 shared binding sites. The S248A-specific peaks contain SOX2 binding motifs but lack OCT4:SOX2 composite motifs, suggesting the mutation increases SOX2's ability to bind sites independently of OCT4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by ChIP-seq data in Figure 5A-B with appropriate biological and technical replicates. Claims C65, C67-C69 are supported by de novo motif analysis in Figures 5C-E. Claims C70, C100, and C105 are reasonable inferences from the ChIP-seq and motif data. The genomic occupancy analysis is rigorous with proper controls and computational validation. However, the mechanistic interpretation (claim C101) about O-GlcNAcylation regulating DNA binding affinity is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C7"
+    ],
+    "result": "Quantitative mass spectrometry of co-immunoprecipitated proteins identified 329 SOX2 interactors, many involved in chromatin regulation complexes. Differential analysis revealed 22 proteins enriched with wild-type SOX2 and 60 enriched with S248A mutant, including preferential enrichment of PARP1 with mutant SOX2 and GATAD2B with wild-type SOX2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75-C76 are supported by quantitative mass spectrometry data from co-IP experiments with appropriate controls (haSOX2-Tg). Claims C77-C79 are validated by Western blot in Figure 6B. Claim C73 is an inference based on known protein functions, which is reasonable. Claim C74 is supported by comparison with published data. The proteomic analysis is comprehensive with biological replicates and orthogonal validation by Western blot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Targeted proteomic analysis of NuRD complex subunits revealed differential association patterns, with most NuRD components preferentially associating with wild-type SOX2, while MBD3 and MTA3 preferentially associated with S248A mutant. This suggests the S248A mutation can affect the stoichiometry of subunits in SOX2-associated complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by targeted proteomic analysis in Figure 6C using peptides from MBD3 co-IP experiments. The targeted approach is methodologically sound. However, claim C82 is speculative\u2014while the data show differential association of specific subunits, whether this represents altered stoichiometry of intact complexes or differential recruitment of subcomplexes is not definitively established. Additional biochemical fractionation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C9",
+      "C88",
+      "C112"
+    ],
+    "result": "In vitro pulldown experiments with recombinant proteins demonstrated that O-GlcNAcylation of SOX2 by OGT (dependent on UDP-GlcNAc) directly impairs the SOX2-PARP1 interaction. Glycosylated Bio-SOX2 showed diminished pulldown efficiency for GST-PARP1 compared to unmodified Bio-SOX2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C86-C87, C112 are supported by Western blot data from in vitro pulldown experiments in Figure 6D, with mass spectrometry confirmation in Figure 6\u2014figure supplement 2. The use of recombinant human proteins (96% and 91% identical to mouse) is appropriate. Claims C84-C85 are supported by the absence of His-OGT in pulldowns. Claim C88 is a reasonable inference. The in vitro reconstitution provides direct mechanistic evidence for O-GlcNAc-mediated regulation of the SOX2-PARP1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C40",
+      "C41",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors conclude that the S248A mutation promotes SOX2 activity and that O-GlcNAcylation at S248 is inhibitory during maintenance and establishment of pluripotency. This represents a new regulatory mechanism for SOX2 and demonstrates complexity in how O-GlcNAcylation regulates pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C40, C125 are reasonable inferences supported by the collective data from reprogramming efficiency, gene expression, genomic occupancy, and protein interaction experiments. However, claims C95, C41, C62, C124, and C126 involve speculative interpretations. While the data consistently show that removing O-GlcNAcylation enhances SOX2 function in pluripotency contexts, the claim that O-GlcNAcylation is 'inhibitory' is an interpretation. The context-dependent effects (C96-C99) suggest more nuanced regulation than simple inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors suggest that O-GlcNAc-deficient SOX2 may exhibit altered reliance on OCT4 for binding and gene regulation. SOX2S248A showed increased PARP1 association without decreased pluripotency gene occupancy under self-renewal conditions, indicating the SOX2-PARP1 interaction alone does not inhibit SOX2 binding to pluripotency targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is supported by co-IP and ChIP-seq data in Figures 5-6. Claim C116 is a reasonable inference from this observation. However, claims C106 and C117 are highly speculative. The lack of OCT4 motifs in S248A-specific peaks (C105) and reduced sensitivity to OCT4 depletion (C60) suggest altered OCT4 dependence, but this is not directly tested. The conclusion requires additional experiments such as OCT4 ChIP-seq in both cell lines or direct testing of SOX2-OCT4 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C113"
+    ],
+    "result": "The authors propose that S248 O-GlcNAcylation is regulated by developmental signaling and that the decrease in O-GlcNAcylation upon differentiation, while seemingly contradictory to the S248A phenotype in mESCs, reflects context-specific PTM effects determined by the cellular environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is a reasonable inference from the differentiation experiments (C27-C29). Claims C97-C99 and C113 represent speculative reasoning attempting to reconcile the apparent contradiction. While the authors acknowledge this complexity, the explanation is not directly tested. The hypothesis that O-GlcNAcylation has different functional consequences in different cellular contexts is plausible but requires additional experimental validation, such as examining SOX2 function during differentiation in S248A mutant cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The authors propose that O-GlcNAcylation regulates SOX2 DNA binding affinity and that altered associations with chromatin regulatory complexes may underlie the transcriptional and genomic occupancy changes. They also suggest PARP-XRCC and MMR complexes may function in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are speculative mechanistic interpretations of the ChIP-seq data. Claim C103 cites supporting evidence from prior work. Claims C107-C108 are reasonable inferences but lack direct mechanistic evidence. Claim C110 is highly speculative\u2014while PARP-XRCC and MMR components are enriched with SOX2S248A (C109), their role in transcription is not demonstrated in this study. These hypotheses require additional experiments such as direct DNA binding assays, structural studies, or functional tests of the proposed transcriptional roles.",
+    "result_type": "MINOR"
+  }
+]

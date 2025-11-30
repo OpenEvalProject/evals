@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Principal component analysis reveals that genetic variation in sub-Saharan Africa is structured by geography and ethno-linguistic affiliation. PC1 separates southern groups from the rest of Africa, PC2 distinguishes Niger-Congo speakers from Afroasiatic and Nilo-Saharan speakers, and PC3 forms a west-to-east cline among Niger-Congo speakers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are directly supported by PCA results shown in Figure 1B and 1C. The visual data clearly demonstrates the described patterns of population structure, and these findings are consistent with established patterns of human genetic variation reflecting geography and language.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study dataset comprises 3,283 individuals from 48 sub-Saharan African groups (after splitting Fula and Mandinka into subgroups based on detected substructure) and 12 non-African populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe the dataset composition and are supported by the methods section and supplementary figures. The fineSTRUCTURE analysis appropriately identified substructure in Fula and Mandinka populations, justifying their subdivision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Haplotype-based differentiation (TVD) reveals population structure not captured by allele frequency-based measures (FST). While TVD and FST are correlated (R\u00b2=0.79), the relationship is non-linear, with some population pairs showing low FST but high TVD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by Figure 2 showing both TVD and FST matrices and their comparison. The specific example of Chonyi-Jola (FST=0.019, TVD=0.803) demonstrates that haplotype-based methods can detect differentiation missed by allele frequency approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The f3 statistic detects admixture in 83% (40/48) of African populations, with Niger-Congo speakers from Central West and Southern Africa showing significant statistics involving Ju/'hoansi, while West and East African groups show significant statistics involving European sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by the f3 analysis results presented in Supplementary file 2. The pattern of admixture sources is consistent with known historical gene flow patterns, though the method has limitations in precisely identifying admixture sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "MALDER analysis infers admixture dates across African populations, with the Mossi from Burkina Faso showing the oldest event (~5000 BCE) and East African Niger-Congo speakers showing recent admixture (within last 4 ky) involving Eurasian and West African sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C27 are based on MALDER analysis, but the manuscript acknowledges significant uncertainty in dating due to recombination map choice, short-range LD correlations, and surrogate population availability. Figure 3 shows wide confidence intervals and sensitivity to methodological choices (Figure 3B-C, supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mixture model analysis shows that almost all African populations can be described as mixtures of ancestry from different regions. GLOBETROTTER detects evidence of recent admixture in all 48 African populations analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by Figure 4A showing mixture model results and GLOBETROTTER analysis. The example of Cameroon Bantu composition (C29) is explicitly shown. However, the universal detection of admixture may partly reflect methodological sensitivity rather than biological reality in all cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "West African Niger-Congo speakers from The Gambia and Mali show admixture involving sources with Eurasian and Central West African ancestry, best matching northern European populations or the Fulani. The Fulani themselves show admixture around 0 CE with greater Eurasian and Afroasiatic ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by GLOBETROTTER results in Figures 4-5. The Fulani's known genetic affinities (C32) are well-documented in cited literature. The timing and composition of admixture sources are consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Two Kenyan coastal populations (Chonyi and Kauma) show direct South Asian admixture dated to 1138-1225 CE, coinciding with historically documented Medieval Indian Ocean trade. This may represent Austronesian influence in East Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by GLOBETROTTER analysis (Figure 5) showing South Asian (GIH, KHV) as best surrogate sources. The dates align with historical records of Indian Ocean trade (C37). The Austronesian hypothesis (C38-C39) is appropriately presented as speculative, supported by cited literature on Madagascar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Additional East African populations show admixture during similar time periods: Kambe shows two events including a European-like source (761 CE), while Tanzanian groups (Giriama, Wasambaa, Mzigua) show admixture around 1080-1312 CE involving Afroasiatic sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by GLOBETROTTER results with specific dates and confidence intervals provided. The pattern suggests multiple waves of gene flow into East Africa, though the wide confidence intervals indicate substantial uncertainty in precise timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Afroasiatic-speaking populations of East Africa show admixture involving sources with predominantly Eurasian ancestry (best matching Tuscans) in two waves around 1800 BCE and 0 CE, affecting Afar, Wolayta, Tigray, and Ari populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by GLOBETROTTER analysis (Figures 4-5). The two-wave pattern is consistent with known migrations from the Arabian Peninsula. However, the use of Tuscans as the best surrogate (C42) reflects data limitations rather than direct Italian ancestry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Gene flow from Eurasia back into Africa has been common around the continental edges, sustained over the last 3000 years, and attributable to specific historical periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a synthesis supported by combined MALDER and GLOBETROTTER analyses across multiple populations. The pattern of coastal Eurasian admixture with varying dates is consistently observed, though the manuscript appropriately notes that genetic dates represent gene flow timing, not initial population contact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Three admixture events unrelated to Bantu expansion are identified: Ju/'hoansi with Somali-like source (558 CE), Maasai with Afroasiatic source (254 BCE), and Luhya with Nilo-Saharan source (1486 CE), the latter implying post-Bantu arrival interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by GLOBETROTTER analysis. The inference about Luhya (C53) appropriately combines genetic dating with archaeological knowledge of Bantu expansion timing. These events demonstrate complex population interactions beyond the major Bantu and Eurasian admixture patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background on Bantu languages: they comprise ~500 closely related languages spoken by most sub-Saharan Africans south of Nigeria/Cameroon-Somalia line, likely spread rapidly from a heartland in southern Nigeria/Cameroon starting 4-5 kya. Two competing hypotheses exist for eastern Bantu origins: early-split (direct east migration 3-2.5 kya) versus late-split (south then east migration ~2 kya), with recent linguistic and genetic evidence favoring the late-split model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 accurately summarize established linguistic and archaeological knowledge from cited literature. These are background claims providing context for the genetic analysis rather than novel findings. The characterization of the two competing hypotheses and recent evidence is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "East African Niger-Congo speakers show admixture sources with predominantly Southern Niger-Congo (Malawi) ancestry rather than direct Central West African ancestry, with all sampled groups having Malawi ancestry within the last 2000 years. Reciprocal admixture events are observed in SEBantu and AmaXhosa (1109-1196 CE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by GLOBETROTTER analysis (Figure 4). The predominance of Malawi-like ancestry over direct Cameroon ancestry in East African groups is a key finding supporting the late-split hypothesis. The reciprocal admixture pattern strengthens the inference of complex population movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "West southern African populations show different Bantu admixture patterns than east southern Africa: Herero shows two events (1834 CE and 674 CE) with higher Cameroon ancestry, while Khwe (1312 CE) and !Xun (1312 CE) show similar Cameroon-like sources. The timing suggests separate, more recent arrival of Bantu ancestry in west versus east southern Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by GLOBETROTTER analysis (Figure 4). The geographic and temporal patterns support distinct migration routes for western versus eastern Bantu expansion. However, the interpretation relies on contemporary populations as proxies for ancestral groups, which introduces uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Malawi shows multi-way admixture (471 CE) with Cameroon-like minor source, preceding other southern African events by several hundred years. Malawi represents the closest proxy for the intermediate group that split from western Bantu. Evidence of Khoesan ancestry in Malawi and other east southern groups indicates gene flow between expanding Bantus and resident hunter-gatherers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by GLOBETROTTER analysis (Figure 4). The identification of Malawi as a key intermediate population is well-reasoned based on its geographic position, timing of admixture, and presence as a source in other populations. The detection of Khoesan ancestry (C78) provides direct evidence for Bantu-hunter-gatherer admixture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The genetic analysis provides support for the late-split hypothesis of Bantu expansion, suggesting agriculturist Bantus migrated south around the Congo rainforest before traveling east, consistent with linguistic phylogenetic evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by the pattern of admixture sources and dates across East and Southern African populations. The predominance of Malawi-like (southern) over direct Cameroon ancestry in East African groups, combined with timing evidence, supports a south-then-east route. However, the analysis cannot definitively rule out the early-split hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "None of the 48 African populations studied has remained isolated over the last 4000 years. The major admixture signals relate to Eurasian ancestry movement into Africa and gene flow south and east from Central West Africa (likely Bantu expansion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the comprehensive GLOBETROTTER analysis detecting admixture in all populations (Figure 4). However, the universal detection may partly reflect methodological sensitivity. The characterization of major signals (C82) is well-supported by Figures 4-6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Genetic admixture dates represent when gene flow occurred, not when populations first came together. Haplotypes moved across Africa at approximately 2 km/year, estimated from Bantu expansion over ~4000 km in the last 2000 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a valid methodological caveat about interpreting genetic dates. Claim C84 provides a rough calculation based on distance and time estimates from the analysis. While approximate, this calculation provides useful context for the rate of genetic diffusion, though it assumes constant migration rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The Duffy-null allele, an ancient mutation (\u226530,000 years old) conferring P. vivax malaria resistance, spread throughout Africa only through contact and gene flow between populations across sub-Sahara.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by cited literature on the Duffy-null allele's age and function. The inference that its pan-African distribution required gene flow (C86) is logical given the allele's ancient origin and current distribution, consistent with the admixture patterns documented in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Sickle cell mutations, which protect against P. falciparum malaria, arose independently five times in Africa and are young (250-1750 years old), thus having limited opportunity to spread via the documented gene flow events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by cited literature. The contrast with Duffy-null (older, single origin) versus sickle cell (younger, multiple origins) appropriately illustrates how mutation age and gene flow timing interact to determine allele distribution patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Genetic differentiation between ethnic groups varies by region: consistent differences are detected in Central West Africa (e.g., Akans vs Namkam/Kasem from Ghana) but not in West Africa (The Gambia) or East Africa (Kenya), where individuals show a spectrum of ancestral backgrounds. This variation reflects sampling locations and local population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by fineSTRUCTURE analysis (Figure 2\u2014supplement 1, Figure 1\u2014supplement 3). Claims C93-C94 provide important context about sampling locations. The observation that ethnic label correspondence to genetic clusters varies by region has important implications for genetic epidemiology studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The extent to which self-reported ethnic labels capture genetic relationships varies extensively across populations. Some individuals from the same ethnic group cluster separately while individuals from different ethnicities cluster together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by fineSTRUCTURE analysis (Figure 1\u2014supplement 3). This finding has important practical implications for controlling population structure in genetic studies and highlights the complex relationship between cultural/linguistic identity and genetic ancestry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Coastal populations experienced an influx of Eurasian haplotypes over the last 7000 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is the primary conclusion supported by multiple lines of evidence including MALDER and GLOBETROTTER analyses across West African, East African, and Horn of Africa populations. The 7000-year timeframe encompasses the range of dated admixture events, though most are more recent (within 3000 years).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Eastern and Southern Niger-Congo speaking groups share ancestry with Central West Africans as a result of recent population expansions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by chromosome painting and GLOBETROTTER analyses showing Central West African (particularly Cameroon) ancestry in Eastern and Southern populations, with dates consistent with Bantu expansion. However, the analysis shows this ancestry often came indirectly through intermediate populations like Malawi rather than directly from Cameroon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Most sub-Saharan populations share ancestry with groups from outside their current geographic region as a result of gene flow within the last 4000 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the overarching conclusion supported by GLOBETROTTER detecting admixture in all 48 populations and MALDER dating most events within the last 4000 years. This represents a major finding about the dynamic nature of African population history, though universal admixture detection may partly reflect methodological sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior studies (AGVP and others) documented: recent Eurasian admixture (<1.5 ky) in Fulani and East African groups; older Eurasian ancestry (2-5 ky) in Ethiopians; limited Eurasian migration into East Africa within 3000 years; ancient Khoesan ancestry (9 ky) in Igbo; and more recent hunter-gatherer ancestry in eastern (2.5-4.5 ky) and southern (0.9-4 ky) populations, consistent with Bantu expansion timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 accurately summarize findings from cited prior studies (AGVP, Pickrell et al., Pagani et al., Llorente et al.). These provide important context for the current study's findings. The consistency with Bantu expansion (C15) is appropriately noted as an inference combining genetic and archaeological evidence.",
+    "result_type": "MINOR"
+  }
+]

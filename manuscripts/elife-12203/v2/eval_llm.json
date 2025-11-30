@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C110"
+    ],
+    "result": "ROCK1 and ROCK2 act redundantly to maintain cell proliferation. Depletion of both ROCK1 and ROCK2 resulted in strong impairment of cell proliferation in vitro, while loss of either ROCK1 or ROCK2 alone had no effect on proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide direct experimental evidence from proliferation assays (Figure 1A) showing that double knockout cells fail to proliferate while single knockouts do not. This is consistently observed across multiple experimental systems and supports the redundancy conclusion stated in C2 and C110.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C111",
+      "C112"
+    ],
+    "result": "Long-term treatment with potent ROCK inhibitors (H1152, GSK269962A, AT13148, GSK429286A, chroman1) or the myosin II inhibitor blebbistatin reduces cell proliferation, suggesting the requirement for ROCK in proliferation is mediated through actomyosin contractility. The commonly used inhibitor Y-27632 showed weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide experimental evidence from multiple ROCK inhibitors showing reduced proliferation (Figure 1B). The blebbistatin data (C36) supports the mechanistic link to contractility (C37). However, the inference that contractility is the sole mechanism (C37) is somewhat speculative as blebbistatin and ROCK inhibition could have independent effects, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Transformed Rock1\u0394/\u0394;Rock2\u0394/\u0394 MEFs grew significantly slower in vivo, and tumors that formed retained ROCK1 or ROCK2 protein, indicating that injected double knockout cells cannot proliferate and form tumors, and that ROCK function is essential for tumor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide direct experimental evidence from tumor growth assays and western blots (Figure 1E-F) showing delayed tumor growth and protein retention. The inference that double knockout cells cannot form tumors (C40-C41) is well-supported by the protein retention data, though the presence of uninfected cells complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C106"
+    ],
+    "result": "ROCK1 and ROCK2 act redundantly to regulate MYPT and MLC phosphorylation. Phosphorylation of MYPT Thr850 and MLC were only affected when both ROCKs were removed, while MYPT Thr696 phosphorylation was not affected, suggesting Thr850 is principally regulated by ROCKs while Thr696 is regulated by other kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are directly supported by western blot data in Figure 2B-C with quantification in Figure 2\u2014figure supplement 1C. The differential regulation of MYPT phosphorylation sites is clearly demonstrated, and the redundancy conclusion is well-supported by the single knockout data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Loss of both ROCK1 and ROCK2 causes loss of stress fibers, a tail retraction phenotype at 3 days, and a flat morphology at 5 days. Double knockout cells were unable to contract collagen gels, indicating ROCK1 and ROCK2 act redundantly to maintain cellular contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by immunofluorescence images (Figure 2A) and time-lapse videos. Claims C53-C55 are supported by collagen gel contraction assays (Figure 2E). The temporal progression of phenotypes is well-documented, and the redundancy conclusion is supported by single knockout controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Short-term ROCK inhibition decreased phosphorylation of multiple sites including Cofilin and MLC, but most sites except MLC Ser-19/Thr-20 recovered upon long-term inhibition. This indicates alternative kinases can phosphorylate Cofilin but not MLC, suggesting ROCK is the major kinase regulating MLC phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by mass spectrometry data (Figure 2\u2014figure supplement 1D-E, Supplementary file 1). The inference that other kinases compensate for Cofilin but not MLC phosphorylation (C58, C108-C109) is well-supported by the temporal data showing selective recovery of phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C114"
+    ],
+    "result": "Loss of ROCK1 and ROCK2 leads to cellular senescence. Rock1\u0394/\u0394;Rock2\u0394/\u0394 MEFs and cells treated with ROCK inhibitors or blebbistatin exhibited increased SA-\u03b2Gal staining. Treatment with AT13148 decreased tumor growth and increased SA-\u03b2Gal positive cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by SA-\u03b2Gal staining data (Figure 3A, Figure 3\u2014figure supplement 1A). Claims C61-C62 provide in vivo validation (Figure 3\u2014figure supplement 1B-C). The senescence phenotype is consistently observed across multiple experimental conditions, strongly supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C113"
+    ],
+    "result": "Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells showed increased binucleate cells indicating cytokinesis failure, and an overall lower number of dividing cells, suggesting cells do not initiate division and indicating a cell cycle block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by microscopy and time-lapse data (Figure 3B-D, Videos 3-4). The inference of a cell cycle block (C66, C113) is reasonable given the reduced division frequency, though the binucleate cells could also result from cytokinesis failure without necessarily indicating a block in division initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Flow cytometry analysis showed fewer Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells in G1 or S phase and more in G2/M phase. Nocodazole treatment did not change the cell cycle distribution in double knockout cells, suggesting ROCK depletion causes a cell cycle block prior to G2/M, likely in G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by flow cytometry data (Figure 3E, Figure 3\u2014figure supplement 1D). The nocodazole experiment provides strong evidence for a pre-G2/M block. However, the interpretation is complicated by the presence of binucleate cells which would have G2/M DNA content but be in G1, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Inactivation of Trp53 and Rb by SV40 Large T or genetic deletion of Trp53 did not prevent the senescence phenotype caused by loss of ROCK. Treatment of Trp53 wild type and null cells with ROCK inhibitors both increased senescence, indicating classical senescence pathways are not affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by proliferation assays, SA-\u03b2Gal staining, and western blots (Figure 4\u2014figure supplement 1A-C). The data clearly demonstrate that senescence occurs independently of Trp53 and Rb, supporting the conclusion that classical senescence pathways are not involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C115"
+    ],
+    "result": "Long-term ROCK inhibition revealed modulation of cell cycle-related proteins. CDK1, CyclinA and CKS1 protein levels were significantly reduced upon loss or inhibition of ROCK1 and ROCK2, while known G1 arrest regulators (p16, p19, p27, p21, CyclinD1, CyclinE) were not significantly changed. Treatment with active blebbistatin also decreased these proteins, suggesting loss of contractility causes their downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by mass spectrometry and western blot data (Figure 4A-C, Supplementary file 2, Figure 4\u2014figure supplement 2A-B). Claim C77-C78 provide mechanistic insight via blebbistatin experiments. The data clearly show selective downregulation of CDK1, CyclinA, and CKS1 without affecting classical senescence regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells, Cdk1 and Ccna2 mRNA levels were significantly reduced while Cks1b mRNA remained unchanged. Knockdown experiments showed that CKS1, CDK1, and CyclinA protein levels are interdependent, with knockdown of each affecting the others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by qPCR data (Figure 4D). Claims C82-C84 are supported by western blot data from shRNA knockdown experiments (Figure 5C). The data demonstrate both transcriptional regulation (for Cdk1 and Ccna2) and post-transcriptional interdependence of these proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C118",
+      "C119"
+    ],
+    "result": "Cells depleted of CKS1, CDK1 or CyclinA were unable to proliferate and showed increased SA-\u03b2Gal staining, indicating their depletion causes defects in proliferation and senescence. The authors propose that an essential function of ROCK in cell proliferation is to regulate CKS1 expression, and that ROCK-driven CKS1 downregulation is a novel marker of senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by colony formation assays and SA-\u03b2Gal staining (Figure 5A-B). The data clearly show that depletion of these proteins phenocopies ROCK loss. The proposal that ROCK regulates CKS1 expression (C118-C119) is a reasonable inference from the data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C122",
+      "C123",
+      "C127"
+    ],
+    "result": "In mouse models of NSCLC and melanoma, tumors arising in Rock1f/f;Rock2f/f mice always retained either ROCK1 or ROCK2 protein, and no tumors arose with both genes deleted. SRM analysis showed similar concentrations of ROCK1 and ROCK2, with no compensatory upregulation. This demonstrates that tumor formation is incompatible with loss of both ROCKs, but either ROCK1 or ROCK2 alone is sufficient for tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C93-C96, C101, C123 are supported by western blot and SRM data from tumor-derived cell lines (Figure 6B, D, Figure 6\u2014figure supplement 1C-D). The consistent retention of at least one ROCK protein across multiple tumors and models strongly supports the conclusion that both ROCKs cannot be lost (C104, C122, C127) but either alone is sufficient (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C89",
+      "C91",
+      "C92",
+      "C103"
+    ],
+    "result": "Loss of either Rock1 or Rock2 alone had no negative impact on tumorigenesis in mouse models. However, Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells failed to proliferate in colony formation assays, while Rock1\u0394/wt;Rock2\u0394/\u0394 cells did not, demonstrating that one wild-type allele of Rock is sufficient to allow cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91-C92 are supported by tumor data and colony formation assays (Figure 6A, C, Figure 6\u2014figure supplement 1E). The data clearly demonstrate that single knockouts have no effect on tumorigenesis while double knockouts cannot proliferate, and that a single wild-type allele is sufficient for proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C124"
+    ],
+    "result": "In the NSCLC model, total tumor area was increased in Rock1f/f mice, suggesting ROCK1 may have a tumor suppressor function in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is supported by histological data (Figure 6A). However, the authors themselves note this requires further investigation (C88) and will be the subject of another manuscript. The mechanism is unclear and the result appears inconsistent with the overall role of ROCK in promoting proliferation, making this finding uncertain without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C125"
+    ],
+    "result": "In the melanoma model, tumor latency and survival were decreased in BrafV600E;Rock2f/f mice, suggesting ROCK2 may have a tumor suppressor role in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are supported by tumor latency and survival data (Figure 6\u2014figure supplement 1A-B). However, similar to the ROCK1 result in NSCLC, this finding is unexpected given the overall role of ROCK in promoting proliferation. The authors note this requires further investigation, and the mechanism is unclear, making this finding uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Migration speed and directionality were significantly increased in Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells between Days 3 and 4 after adenovirus infection, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by cell tracking data (Figure 2\u2014figure supplement 1B) and is consistent with a previous report by Lomakin et al. (C47). This result is well-supported but represents a confirmatory finding rather than a novel discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Rock1\u0394/\u0394;Rock2\u0394/\u0394 cells eventually recover their ability to proliferate due to retention of ROCK1 and ROCK2 expression from uninfected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by long-term proliferation data (Figure 1\u2014figure supplement 1B) and western blot analysis showing ROCK protein expression. This result explains the incomplete penetrance of the adenovirus infection system and validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "No differences were found in onset of tumorigenesis or survival when comparing BrafV600E with BrafV600E;Rock1f/f or BrafV600E;Rock1f/f;Rock2f/f mice in the melanoma model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by tumor latency and survival data (Figure 6\u2014figure supplement 1A-B). This negative result is important for demonstrating that loss of Rock1 alone or in combination with Rock2f/f does not affect melanoma development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C78",
+      "C121"
+    ],
+    "result": "ROCK regulates cell cycle progression and tumorigenesis possibly through the maintenance of cellular contractility, as suggested by blebbistatin experiments showing similar effects to ROCK loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37 and C78 are supported by blebbistatin experiments (Figure 1B, Figure 4B-C) showing similar phenotypes to ROCK loss. However, the authors appropriately use cautious language ('possibly', 'potentially', 'arguing that') and acknowledge that blebbistatin and ROCK inhibition could have independent effects. The mechanistic link to contractility is plausible but not definitively proven, as other ROCK substrates could be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "CKS1 is known to regulate levels of CDK1 and Cyclin A and can function in G1 and G2 phases. Cks1b-/- cells are defective in proliferation, have altered cell cycle distribution, and exhibit senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are background knowledge supported by citations (Martinsson-Ahlzen et al., 2008; Westbrook et al., 2007; Hoellein et al., 2012; Spruck et al., 2001). These claims provide important context for interpreting the CKS1 downregulation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose that activation of Cre recombinase leads to a mixed population where ROCK1/2 double-null cells cannot form tumors due to proliferation defects and senescence, while cells retaining either Rock allele form tumors equivalent to single knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 represent the authors' model to explain the tumor data. This model is well-supported by the combination of in vitro proliferation data, protein retention in tumors, and the observation that incomplete excision is common in conditional knockout systems. The model logically integrates multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The data provide a molecular basis for exploiting ROCK inhibitors as anti-cancer agents, though incomplete or isoform-specific inhibition may not be effective and could lead to adverse results given the isoform-specific tumor suppressor functions observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are reasonable conclusions from the data showing ROCK is essential for tumorigenesis. Claim C133 appropriately notes the complexity introduced by the isoform-specific tumor suppressor effects. However, this represents speculation about therapeutic implications rather than direct experimental findings.",
+    "result_type": "MINOR"
+  }
+]

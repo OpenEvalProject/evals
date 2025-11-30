@@ -1,0 +1,1539 @@
+{
+  "submission": {
+    "id": "19dad35f-b687-4002-8388-55f67398c7ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:17:09.402217Z",
+    "updated_at": "2025-11-29T22:17:09.402217Z"
+  },
+  "content": [
+    {
+      "id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "submission_id": "19dad35f-b687-4002-8388-55f67398c7ea",
+      "content_type": "manuscript",
+      "content_text": "# A general strategy to construct small molecule biosensors in eukaryotes\n\n## Authors\n\n- Justin Feng<sup>1</sup>\n- Benjamin W Jester<sup>3</sup>\n- Christine E Tinberg<sup>5</sup>\n- Daniel J Mandell<sup>2</sup> \u2020\n- Mauricio S Antunes<sup>7</sup>\n- Raj Chari<sup>2</sup>\n- Kevin J Morey<sup>7</sup>\n- Xavier Rios<sup>2</sup>\n- June I Medford<sup>7</sup>\n- George M Church<sup>2</sup> \u2020\n- Stanley Fields<sup>3</sup> \u2020\n- David Baker<sup>4</sup> \u2020\n\n### Affiliations\n\n1. Program in Biological and Biomedical Sciences Harvard Medical School Boston United States\n2. Department of Genetics Harvard Medical School Boston United States\n3. Department of Genome Sciences University of Washington Seattle United States\n4. Howard Hughes Medical Institute University of Washington Seattle United States\n5. Department of Biochemistry University of Washington Seattle United States\n6. Wyss Institute for Biologically Inspired Engineering Harvard University Boston United States\n7. Department of Biology Colorado State University Fort Collins United States\n8. Department of Medicine University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiosensors for small molecules can be used in applications that range from metabolic engineering to orthogonal control of transcription. Here, we produce biosensors based on a ligand-binding domain (LBD) by using a method that, in principle, can be applied to any target molecule. The LBD is fused to either a fluorescent protein or a transcriptional activator and is destabilized by mutation such that the fusion accumulates only in cells containing the target ligand. We illustrate the power of this method by developing biosensors for digoxin and progesterone. Addition of ligand to yeast, mammalian, or plant cells expressing a biosensor activates transcription with a dynamic range of up to ~100-fold. We use the biosensors to improve the biotransformation of pregnenolone to progesterone in yeast and to regulate CRISPR activity in mammalian cells. This work provides a general methodology to develop biosensors for a broad range of molecules in eukaryotes.\n\n## Introduction\n\nBiosensors capable of sensing and responding to small molecules in vivo have wide-ranging applications in biological research and biotechnology, including metabolic pathway regulation\u00a0(Zhang et al., 2012), biosynthetic pathway optimization\u00a0(Raman et al., 2014; Tang and Cirino, 2011), metabolite concentration measurement and imaging\u00a0(Paige et al., 2012), environmental toxin detection\u00a0(Gil et al., 2000), and small molecule-triggered therapeutic response\u00a0(Ye et al., 2013). Despite such broad utility, no single strategy for the construction of biosensors has proven sufficiently generalizable to gain widespread use. Current methods typically couple binding of a small molecule to a single output signal, and use a limited repertoire of natural protein-\u00a0(Tang et al., 2013) or nucleic acid aptamer-binding\u00a0(Yang et al., 2013) domains, which narrows the scope of small molecules that can be detected. A general solution to small molecule biosensing should be adaptable to a range of small molecules and responses.\n\nA promising approach to biosensor design in eukaryotes uses conditionally stable ligand-binding domains (LBDs)\u00a0(Banaszynski et al., 2006; Tucker and Fields, 2001). In the absence of a cognate ligand, these proteins are degraded by the ubiquitin proteasome system\u00a0(Egeler et al., 2011). Binding of the ligand stabilizes the LBD and prevents its degradation. Fusing the destabilized LBD to a suitable reporter protein, such as an enzyme, fluorescent protein, or transcription factor, renders the fusion conditionally stable and generates sensor response (Figure 1a). Naturally-occurring LBDs can be engineered to be conditionally stable\u00a0(Banaszynski et al., 2006; Miyazaki et al., 2012; Iwamoto et al., 2010), making it possible in principle to convert them into biosensors for target ligands. Designed LBDs can also be used, especially in cases for which natural binding proteins do not exist or lack sufficient specificity or bioorthogonality.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig1-v3.jpg)\n\n**Figure 1.:** (a)\u00a0Modular biosensor construction from a conditionally destabilized LBD and a genetically fused reporter. The reporter is degraded in the absence but not in the presence of the target small molecule. (b) yEGFP fluorescence of digoxin LBD-GFP biosensors upon addition of 250 \u03bcM digoxin or DMSO vehicle. (c) yEGFP fluorescence of progesterone LBD-GFP biosensors upon addition of 50 \u03bcM progesterone or DMSO vehicle. (d) Positions of conditionally destabilizing mutations of DIG0 mapped to the crystal structure of the digoxin LBD (PDB ID 4J9A). Residues are shown as colored spheres and key interactions highlighted in insets. In b-c, fold activation is shown above brackets, (-) indicates cells lacking biosensor constructs, and error bars represent the standard error of the mean (s.e.m.) of three biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) yEGFP fluorescence of DIG0-GFP upon addition of 250 \u03bcM digoxin or DMSO vehicle. (b) yEGFP fluorescence of DIG1-GFP upon addition of 250 \u03bcM digoxin or DMSO vehicle. (c) yEGFP fluorescence of PRO0-GFP upon addition of 50 \u03bcM progesterone or DMSO vehicle. (d) yEGFP fluorescence of PRO1-GFP upon addition of 50 \u03bcM progesterone or DMSO vehicle. The\u00a0data for each condition are presented for a single representative biological replicate with 20,000 events measured by flow cytometry.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Single-mutant deconvolutions of mutations conferring progesterone sensitivity. The parental biosensor appears in the leftmost column of each panel. (b\u2013e)\u00a0Positions of mutations in PRO1\u00a0(b), PRO2\u00a0(c), and PRO3\u00a0(d) are mapped to the crystal structure of the digoxin LBD (PDB ID 4J9A) and are shown in colored spheres. (e) Fold activation of PRO0-GFP biosensors with digoxin biosensor mutations upon addition of 50 \u03bcM progesterone. In a and e, error bars represent s.e.m. of three biological replicates.\n\nHere, we convert a single designed LBD scaffold into multiple highly specific biosensors for the clinically relevant steroids digoxin and progesterone. We engineer LBDs fused with fluorescent reporters to be conditionally stable in the budding yeast Saccharomyces cerevisiae. Attaching these conditionally-stabilized LBDs to transcription factors (TFs) yields biosensors that respond to their target ligands with greater signal induction than observed with fusions to fluorescent proteins. We use TF-biosensors to improve the biosynthetic yield of progesterone in yeast. The biosensors retain function when ported directly into mammalian cells, with up to 100-fold activation over background, allowing us to develop a method for tight control of CRISPR/Cas9 genome editing. The biosensors also show up to 50-fold activation by ligand in Arabidopsis thaliana. The method presented here enables the rapid development of eukaryotic biosensors from natural and designed binding domains.\n\n## Results\n\n### Fluorescent biosensors built from engineered LBDs\n\nLBDs intended for biosensor development should recognize their targets with high affinity and specificity. We began with the computationally-designed binding domain DIG10.3\u00a0(Tinberg et al., 2013), hereafter DIG0, which binds the plant steroid glycoside digoxin and its aglycone digoxigenin with picomolar affinities. Introduction of three rationally-designed binding site mutations into DIG0 resulted in a progesterone binder (PRO0) with nanomolar affinity\u00a0(Tinberg et al., 2013). We constructed genetic fusions of DIG0 and PRO0 to a yeast-enhanced GFP (yEGFP, LBD-biosensors DIG0-GFP and PRO0-GFP) and constitutively expressed them in S. cerevisiae\u00a0(Supplementary file 1). The fusions showed little change in fluorescence in response to digoxin or progesterone, respectively (Figure 1b,c and Figure 1\u2014figure supplement 1). Work by Wandless and co-workers has shown that mutagenesis of LBDs can be used to identify variants that are stable only in the presence of a target ligand\u00a0(Banaszynski et al., 2006). We randomly mutagenized the LBDs of DIG0-GFP and PRO0-GFP by error-prone PCR and subjected libraries of 105\u00a0(Gil et al., 2000) integrants to multiple rounds of FACS, sorting alternately for high fluorescence in the presence of the ligand and low fluorescence in its absence. We isolated LBD variants having greater than 5-fold activation by cognate ligand (Figure 1b,c and Figure 1\u2014figure supplement 1). By making additional variants that contain only one of the up to four mutations found in the progesterone biosensors, we showed that some mutations are additive, while others predominately contribute to sensitivity (Figure 1\u2014figure supplement 2a). Many of the conditionally-destabilizing mutations identified in DIG0 involve residues that participate in key dimer interface interactions (Figure 1d). The conditionally-destabilizing mutations of PRO0 are located throughout the protein (Figure 1\u2014figure supplement 2b\u2013d); the DIG0 interface mutations also rendered PRO0-GFP conditionally stable on binding progesterone (Figure 1\u2014figure supplement 2e).\n\n### TF-biosensors amplify ligand-dependent responses\n\nTo improve the dynamic range and utility of the biosensors, we built conditionally-stable LBD-transcription factor fusions (TF-biosensors) by placing an LBD between an N-terminal DNA-binding domain (DBD) and a C-terminal transcriptional activation domain (TAD, Figure 2a). The use of TFs serves to amplify biosensor response and allows for ligand-dependent control of gene expression\u00a0(Shoulders et al., 2013; Beerli et al., 2000; Louvion et al., 1993). Our initial constructs used the DBD of Gal4, the destabilized LBD mutant DIG1 (E83V), and either VP16 or VP64 as a TAD to drive the expression of yEGFP under the\u00a0control of a GAL1 promoter. The dynamic range of TF-biosensor activity was maximal when the biosensor was expressed using a weak promoter and weak activation domain, because of lower yEGFP expression in the absence of ligand (Figure 2\u2014figure supplement 1a,b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig2-v3.jpg)\n\n**Figure 2.:** (a)\u00a0TF-biosensor construction from a conditionally destabilized LBD, a DNA-binding domain and a transcriptional activation (TAD) domain. (b) Positions of conditionally destabilizing mutations of Gal4 mapped to a computational model of Gal4-DIG0 homodimer. Residues are shown as colored spheres and key interactions are highlighted in insets. The TAD is not shown. (c) Concentration dependence of response to digoxin for digoxin TF-biosensors driving yEGFP expression. (d)\u00a0Concentration dependence of response to progesterone for progesterone TF-biosensors driving yEGFP expression. (e)\u00a0Time dependence of response to 250 \u03bcM digoxin for digoxin TF-biosensors. (f) Time dependence of response to 50 \u03bcM progesterone for progesterone TF-biosensors. (g)\u00a0Time-dependent response to withdrawal of 250 \u03bcM digoxin for digoxin TF-biosensors. (h) Time-dependent response to withdrawal of 50 \u03bcM progesterone for progesterone TF-biosensors. In c-f, (-) indicates cells lacking biosensor plasmids and error bars represent s.e.m. of three biological replicates. Marker symbols in e and g are the same as in c. Marker symbols in f and h are the same as in d.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Digoxin-dependent expression of yEGFP by G-DIG1-V TF-biosensors either (a) containing VP64 or VP16 as the TAD and expressed from a CYC1 promoter or (b) containing a VP16 TAD and expressed from a CYC1, ADH1, or TEF1 promoter. (c) Individual mutations identified in a FACS analysis of an error-prone PCR library of G-DIG-V biosensors were tested for their effect on biosensor function using digoxigenin. Transformants were analyzed in an yEGFP yeast reporter strain containing a deletion of PDR5 (PyE14). Improvements in fold activation relative to parental sequences were localized to mutations in Gal4. (d) R60S and L77F mutations found in Gal4 were introduced into G-DIG1-V, G-DIG2-V, and G-PRO1-V. In each case, the Gal4 mutations had the effect of lowering the amount of luciferase activity in the absence of the relevant ligand. In a-d, error bars represent s.e.m. of three biological replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) yEGFP fluorescence of DIG0-GFP upon addition of digoxin or DMSO vehicle (left) and yEGFP fluorescence of DIG1-GFP upon addition of digoxin or DMSO vehicle (right). (b) yEGFP fluorescence of PRO0-GFP upon addition of progesterone or DMSO vehicle (left) and yEGFP fluorescence of PRO1-GFP upon addition of progesterone or DMSO vehicle (right). Data for each condition are presented for a single representative biological replicate with 20,000 events measured by flow cytometry.\n\nWe chose Gal4-DIG1-VP16 (hereafter G-DIG1-V) for further TF-biosensor development because it has both a large dynamic range and maximal activation by ligand. A FACS-based screen of an error-prone PCR library of G-DIG0-V, G-DIG1-V, and G-DIG2-V variants identified mutations L77F and R60S in the Gal4 dimer interface (hereafter GL77F, GR60S) that further increased TF-biosensor response by lowering background activity in the absence of ligand (Figure 2b and Figure 2\u2014figure supplement 1c). Although these Gal4 mutations were identified by screening the\u00a0libraries of digoxin-dependent TF-biosensors, they also increased progesterone-dependent activation of the G-PRO-V series of biosensors, indicating a shared mechanism of conditional stability in both systems (Figure 2\u2014figure supplement 1d). Combining mutations in Gal4 and DIG0 or PRO0 led to activations of up to 60-fold by cognate ligand, a ten-fold improvement over the most responsive LBD-biosensors (Figure 2c,d and Figure 2\u2014figure supplement 2a) and a dynamic range that has been challenging to achieve with stability-based biosensors in yeast\u00a0(Rakhit et al., 2011). The TF-biosensors were also rapidly activated, showing a five-fold increase in signal after 1 hr of incubation with ligand and full activation after ~14 hr (Figure 2e,f and Figure 2\u2014figure supplement 2b). In contrast to the LBD-biosensors, the TF-biosensors exhibited a broad range of fluorescence levels across single cells, as well as a population of nonfluorescent cells in the presence of ligand (Figure 2\u2014figure supplement 2). We used FACS to isolate cells from the nonfluorescent population and found those cells to be inviable, possibly indicating plasmid loss or toxicity from biosensor activation.\n\nUpon withdrawal of ligand, strains expressing TF-biosensors rapidly exhibited reduction in signal, reaching half of their maximum yEGFP fluorescence after approximately 5 hr and nearly undetectable fluorescence after 10\u201315 hr (Figure 2g,h). The response of the TF-biosensors to the withdrawal of ligand is likely much faster than observed by fluorescence, as the reduction in fluorescence signal is dependent on both the degradation of the TF-biosensors as well as the degradation and dilution of previously expressed yEGFP.\n\n### TF-biosensors are tunable and modular\n\nAn attractive feature of the TF-biosensors is that the constituent parts \u2013 the DBD/promoter pair, the LBD, the TAD, the reporter, and the yeast strain \u2013 are modular, such that the system can be modified for additional applications. To demonstrate tunability, we replaced the DBD of G-DIG1-V with the bacterial repressor LexA and replaced the Gal4 DNA-binding sites in the GAL1 promoter with those for LexA. LexA-based TF-biosensors with DIG1 and a weak TAD (B42) showed a strong response to digoxin (nearly 40-fold) only when the promoter-driving reporter expression contained LexA-binding sites (Figure 3a). These results demonstrate that the biosensors can function with different combinations of DBDs and TADs, which could produce diverse behaviors and permit their use in eukaryotes requiring different promoters. Furthermore, the reporter gene can be swapped with an auxotrophic marker gene to enable growth selections. The TF-biosensors drove the\u00a0expression of the HIS3 reporter most effectively when steroid was added to the growth media, as assessed by the\u00a0growth of a histidine auxotrophic strain in media lacking histidine (Figure 3b,d). Fusion of the Mat\u03b12 degron to the biosensor improved dynamic range by reducing the\u00a0growth of yeast in the absence of ligand. Finally, the yeast strain could be modified to improve biosensor sensitivity toward target ligands by the\u00a0deletion of the gene for a multidrug efflux pump\u00a0(Ernst et al., 2005), thereby increasing ligand retention (Figure 3c\u2013d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig3-v3.jpg)\n\n**Figure 3.:** (a) The TAD and DBD of the TF-biosensor and the corresponding binding site for the DBD in the reporter promoter can be swapped for a different application. Expression of a plasmid-borne luciferase reporter was driven by TF-biosensors containing either a LexA or Gal4 DBD and either a VP16 or B42 TAD. Promoters for the reporter contained DNA-binding sites for either Gal4 or LexA. (b) TF-biosensors were transformed into the yeast strain PJ69-4a and tested for growth on this minimal media containing 1\u00a0mM 3-aminotriazole (3-AT) and the indicated steroid. To determine the effect of including an additional destabilization domain, the degron from Mat\u03b12 was cloned into one of four positions. (c)\u00a0G-DIG1-V biosensor response to digoxigenin in yEGFP reporter strain PyE1 either with or without a deletion to the ORF of PDR5. (d) Ligand and TF-biosensor-dependent growth on this media in yeast strains containing deleted ORFs for efflux-related transcription factors (PDR1 and PDR3) or ABC transporter proteins (YOR1, PDR5, SNQ2). In a and c, error bars represent s.e.m. of three biological replicates.\n\n### TF-biosensors enable a selection in yeast to improve the bioproduction of a small molecule\n\nImproving bioproduction requires the ability to detect how modifications to the regulation and composition of production pathways affect product titers. Current product detection methods such as mass spectrometry or colorimetric assays are low-throughput and are not scalable or generalizable. LBD- and TF-biosensors could be coupled with fluorescent reporters to enable high throughput library screening or to selectable genes to permit rapid evolution of biosynthetic pathways\u00a0(Tang and Cirino, 2011; Dietrich et al., 2010; Chou and Keasling, 2013). Yeast-based platforms have been developed for the biosynthesis of pharmaceutically relevant steroids, such as progesterone and hydrocortisone\u00a0(Duport et al., 1998; Szczebara et al., 2003). A key step in the production of both steroids is the conversion of pregnenolone to progesterone by the enzyme 3\u03b2-hydroxysteroid dehydrogenase (3\u03b2-HSD). We aimed to use a progesterone biosensor to detect and improve this transformation. An important feature of biosensors intended for pathway engineering is their ability to detect a product with minimal activation by substrate or other related chemicals. TF-biosensors built from PRO1 showed the greatest dynamic range and selectivity for progesterone over pregnenolone when driving yEGFP expression or when coupled with a HIS3 reporter assay (Figure 4a,b and Figure 4\u2014figure supplement 1a). We investigated whether this sensor could be used to detect the in vivo conversion of pregnenolone to progesterone by episomally-expressed 3\u03b2-HSD (Figure 4c). Using GL77F-PRO1-V driving a yEGFP reporter, we could detect progesterone production, with biosensor response greatest when 3\u03b2-HSD was expressed from a high copy number plasmid and from a strong promoter (Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig4-v3.jpg)\n\n**Figure 4.:** (a) Fold activation of GL77F-PRO1-V by a panel of steroids in yEGFP reporter strain PyE1. Data are represented as mean \u00b1 SEM. (b)\u00a0Growth of degron-G-PRO1-V in HIS3 reporter strain PJ69-4a is stimulated by progesterone but not pregnenolone. (c)\u00a0Schematic for directed evolution of 3\u03b2-HSD using TF-biosensors for the\u00a0conversion of pregnenolone to progesterone. (d)\u00a0Fold activation of GL77F-PRO1-V by a panel of plasmids expressing wild-type 3\u03b2-HSD under varying promoter strengths in yEGFP reporter strain PyE1 when incubated in 50 \u03bcM pregnenolone. Data for plasmids containing CEN/ARS and 2 \u03bc (2 micron) origins are shown. (e) Fold activation of GL77F-PRO1-V by a panel of evolved 3\u03b2-HSD mutants expressed under the TDH3 promoter on a CEN/ARS plasmid and incubated in 50 \u03bcM pregnenolone. (f) Progesterone titer in 1 OD of cells produced by strains expressing 3\u03b2-HSD mutants. Progesterone became toxic at levels of 100 \u03bcM and above, leading to substantial cell death. \u03b2-estradiol and hydrocortisone were not soluble in yeast growth media at levels above 25 \u03bcM. In a and d-f, data are presented as mean \u00b1 s.e.m. of three biological replicates. In d and e, (-) indicates cells lacking 3\u03b2-HSD. *indicates significance with a threshold of p <\u00a00.05 using 2-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Specificity for progesterone (PRO) over digoxigenin (DIG), digoxin (DGX), digitoxigenin (DTX), pregnenolone (PRE), \u03b2-estradiol (B-EST), and hydrocortisone (HYD) for (a)\u00a0G-PRO0-V (b)\u00a0G-PRO1-V (c) G-PRO2-V and (d) G-PRO3-V. (e)\u00a0Growth response of yeast strain PyE1 transformed with 3\u03b2-HSD on CEN/ARS plasmids under various promoters and plated on SC \u2013his (and \u2013ura \u2013leu for plasmid maintenance) containing titrations of 3-AT and either 0.5% DMSO (upper panels) or 50 \u03bcM pregnenolone (lower panels). Progesterone became toxic at levels of 100 \u03bcM and above, leading to substantial cell death. Beta-estradiol and hydrocortisone were not soluble in yeast growth media at levels above 25 \u03bcM. In a-d, error bars represent s.e.m. of three biological replicates.\n\nWe then sought to use the biosensor to improve this enzymatic transformation. To select for improved progesterone production, we required a growth assay in which wild-type 3\u03b2-HSD could no longer complement histidine auxotrophy when the yeast were grown on plates supplemented with pregnenolone. To this end, the selection stringency was tuned by adding the His3 inhibitor 3-aminotriazole (Figure 4\u2014figure supplement 1e). We mutagenized the 3\u03b2-HSD coding sequence using error-prone PCR and screened colonies that survived the HIS3 selection for their yEGFP activation by pregnenolone. By transforming evolved 3\u03b2-HSD mutations into a fresh host background, we showed that the mutations in the enzyme, and not off-target plasmid or host escape mutations, were responsible for increased biosensor response (Figure 4e). Two of the mutants, 3\u03b2-HSD N139D and 3\u03b2-HSD F67Y, were assayed for progesterone production using gas chromatography and mass spectrometry and were found to produce two-fold more progesterone per OD than cells bearing the wild-type enzyme (Figure 4f).\n\n### Yeast-derived biosensors port directly to mammalian cells and can be used to tightly regulate CRISPR/Cas9 genome editing\n\nYeast is an attractive platform for engineering in vivo biosensors because of its rapid doubling time and tractable genetics. If yeast-derived biosensors function in more complex eukaryotes, the design-build-test cycle in those organisms could be rapidly accelerated. We first assessed the portability of yeast TF-biosensors to mammalian cells. Single constructs containing digoxin and progesterone TF-biosensors with the greatest dynamic ranges (without codon optimization) were stably integrated into human K562 cells using PiggyBac transposition. We characterized the dynamics of the TF-biosensors in human cells by dose response and time course assays similar to the yeast experiments (Figure 5a\u2013d). As with yeast, the human cells demonstrated greater sensitivity to digoxin, with fluorescence activation increasing up to 100 nM of cognate ligand for digoxin biosensors and 1 mM for progesterone biosensors. We observed >100-fold activation for the most sensitive progesterone biosensor GL77F-PRO1-V. The increase in mammalian dynamic range over yeast may arise from more aggressive degradation of destabilized biosensors or greater accumulation of target-stabilized biosensors or reporters resulting from larger cell sizes and slower doubling times. The time course data show that fluorescence increased four-fold within 4 hr of target introduction and rose logarithmically for 24\u201348 hr.\n\nWe next assessed whether these biosensors could drive more complex mammalian phenotypes. The CRISPR/Cas9 system has proved to be an invaluable tool for genome editing\u00a0(Mali et al., 2013; DiCarlo et al., 2013; Gratz et al., 2013; Hwang, 2013). Despite the high programmability and specificity of Cas9-mediated gene editing achieved to date, unchecked Cas9 activity can lead to off-target mutations and cytotoxicity\u00a0(Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013). Further, it may be desirable to tightly regulate Cas9 activity such that gene editing occurs only under defined conditions. To facilitate inducible gene editing, we fused human codon-optimized versions of the DIG3 and PRO1 LBDs to the N-terminus of Cas9 from S. pyogenes. We integrated this construct into a reporter cell line containing an EGFP variant with a premature stop codon that renders it non-functional. Upon separate stable integration of the DIG-Cas9 and PRO-Cas9 fusions, we transfected a guide RNA targeting the premature stop codon as well as a donor oligonucleotide containing the sequence to restore EGFP activity via homologous recombination. After a 48-hr incubation period, we observed an ~18-fold increase in GFP positive cells with digoxigenin relative to the mock control (Figure 5e).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig5-v3.jpg)\n\n**Figure 5.:** (a)\u00a0Concentration dependence of response to digoxin for constructs containing digoxin TF-biosensors and Gal4 UAS-E1b-EGFP reporter individually integrated into K562 cells. GR60S,L77F-PRO1-V serves as a digoxin insensitive control. (b)\u00a0Concentration dependence of response to progesterone for constructs containing progesterone TF-biosensors and Gal4 UAS-E1b-EGFP reporter individually integrated into K562 cells. GR60S-DIG1-V serves as a progesterone insensitive control. (c)\u00a0Time dependence of response to 100 nM digoxin for constructs containing digoxin TF-biosensors and Gal4 UAS-E1b-EGFP reporter individually integrated into K562 cells. GR60S,L77F-PRO1-V serves as a digoxin insensitive control. (d)\u00a0Time dependence of response to 25 \u03bcM progesterone for constructs containing progesterone TF-biosensors and Gal4 UAS-E1b-EGFP reporter individually integrated into K562 cells. GR60S-DIG1-V serves as a progesterone insensitive control. (e) DIG3 and PRO1 fused to the N-terminus of S. pyogenes Cas9 were integrated into a K562 cell line containing a broken EGFP. EGFP function is restored upon transfection of a guide RNA and donor oligonucleotide with matching sequence in the presence of active Cas9. The\u00a0data are presented as mean fluorescence \u00b1 s.e.m. of three biological replicates.\n\n### Environmental detection in the plant Arabidopsis thaliana\n\nTo assess generalizability of these sensors to multicellular organisms, we engineered G-DIG1-V to function as an environmental biosensor in plants. The DIG1 sequence was codon optimized for expression in Arabidopsis thaliana. We tested biosensor fusions to two different degrons, Mat\u03b12 from yeast and DREB2a from Arabidopsis\u00a0(Sakuma et al., 2006), and we used the VP16 and VP64 variants as the TAD. We initially tested the G-DIG1-TAD variants with a transient expression assay using Arabidopsis protoplasts and a reporter gene consisting of firefly luciferase under the control of a Gal4-activated plant promoter (pUAS::Luc). The biosensor containing the Mat\u03b12 degron and VP16 TAD showed the highest fold activation of luciferase in the presence of digoxigenin (Figure 6\u2014figure supplement 1a). We next inserted the genes encoding G-DIG1-V-Mat\u03b12 and the Gal4-activated pUAS::Luc into a plant transformation vector and stably transformed them into Arabidopsis plants. Primary transgenic plants were screened in vivo for digoxigenin-dependent luciferase production, and responsive plants were allowed to set seed for further testing. Second generation transgenic plants (T1, heterozygous) were tested for digoxin- or digoxigenin-dependent induction of luciferase expression. After 42 hr, we observed 30-50-fold induction of luciferase activity in digoxin-treated plants compared to the uninduced control (Figure 6). Both digoxin and digoxigenin were capable of inducing the biosensor. Digoxigenin-dependent luciferase induction was observed in multiple independent transgenic T1 lines (Figure 6\u2014figure supplement 1b), and a rising dose response to digoxigenin was observed in the transgenic plants (Figure 6\u2014figure supplement 1c). The specificity of the digoxigenin biosensor in plants parallels that in yeast cells (Figure 6\u2014figure supplement 1d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig6-v3.jpg)\n\n**Figure 6.:** (a) Activation of luciferase expression in transgenic Arabidopsis plants containing the G-DIG1-V biosensor in the absence (left) or presence (right) of 100 \u03bcM digoxin. Luciferase expression levels are false colored according to scale to the right. Relative luciferase units corresponding to 1 min of image pixel integration (to avoid saturating pixels) are shown above each individual plant. (b) Brightfield image of plants shown in a.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Test of DIG1 variants engineered for plant function in Arabidopsis protoplasts. Two transcriptional activation domains, VP16 (V) and VP64 (VP64), as well as two degrons, yeast MAT\u03b12 and Arabidopsis DREB2a, were added to DTF-1 (G-DIG1), and the proteins were constitutively expressed from the CaMV35S promoter. The Gal4-activated pUAS promoter controls expression of a luciferase reporter. Transformed protoplasts were incubated with digoxigenin at 0, 100, and 500 \u03bcM for 16 hr. (b)\u00a0Digoxigenin-dependent activation of luciferase expression in three independent transgenic Arabidopsis lines. Plants were incubated in the absence (Control) or presence (DIG) of 100 \u03bcM digoxigenin for 42 hr and imaged. Quantification of luciferase expression is presented as mean relative luciferase units \u00b1 s.d. of ten plants. (c) Specificity of luciferase activation in transgenic Arabidopsis plants. All inducers were tested at 100 \u03bcM concentration. DIG, digoxigenin; DIGT, digitoxigenin; \u03b2-EST, \u03b2-Estradiol. Data are presented as mean fold activation relative to the control \u00b1 s.e.m. of ten technical replicates. (d) Digoxigenin dose response curve in transgenic Arabidopsis plants. Concentrations are expressed in micromolar. The\u00a0data are presented as mean fold induction relative to the control \u00b1 s.e.m. of ten biological replicates.\n\n## Discussion\n\nIn vivo biosensors for small molecules enable the regulation and detection of cellular responses to endogenous metabolites and exogenous chemicals. Here, we show that LBDs can be conditionally destabilized to create biosensors that function in yeast, mammalian cells, and plants, and we demonstrate the use of these biosensors in metabolic engineering and genome editing applications. While this method requires a high-affinity ligand-binding domain as a starting point, nearly all small molecules of interest have a natural protein interactor. Furthermore, the use of de novo-designed binders opens the possibility of generating biosensors for ligands with unsuitable or unknown binding proteins. By incorporating standard mutagenesis and screening, our method constitutes a simple platform for sensor development that can be applied to many areas of biotechnology. These sensors act either at the level of post-translational control over protein function or at the level of transcription (Figure 7a), and they can be tuned by altering any of their components (Figure 7b) or by modifying efflux of the target ligand in the host organism. These tunable features should make the biosensors useful in many different cellular and environmental contexts.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10606/elife-10606-fig7-v3.jpg)\n\n**Figure 7.:** (a)\u00a0Biosensors for small molecules are modularly constructed by replacing the LBD with proteins possessing altered substrate preferences. (b) Activity of the biosensor can be tuned by 1) introducing destabilizing mutations (red Xs), 2) adding a degron, 3) altering the strength of the TAD or DNA binding affinity of the TF, 4) changes in the number of TF-binding sites or sequences, and 5) titrating 3-aminotriazole, an inhibitor of His3. (c) Yeast provide a genetically tractable chassis for biosensor development before implementation in more complex eukaryotes, such as mammalian cells and plants.\n\nOur results suggest a general mechanism of conditional stabilization for LBDs, allowing the rational development of biosensors for other targets. Furthermore, the portability of the mutations we identified suggests a structural basis for conferring conditional stability to the DIG0 LBD scaffold. Both the DIG0 LBD and Gal4 are homodimers, and the majority of the conditionally-stabilizing mutations are located at the dimer interfaces. A computational model of the Gal4-DIG0 complex indicates that the orientation of the two domains allows a homodimeric fusion to form (Figure 2b). These results suggest an allosteric interplay between ligand binding and dimer formation: weakening of the dimer interface, in either the DIG0 or the Gal4 domain, is compensated by ligand binding. This LBD scaffold is derived from a member of the nuclear transport factor 2 family, a fold class that typically has a large dimer interface (~1200 \u00c52) that facilitates the large and open ligand-binding site (~600 \u00c52). These protein folds are well suited for de novo design of other LBDs because of their large binding pocket and natural substrate diversity\u00a0(Todd et al., 2002). Exploiting dimer interfaces to modulate stability without impairing ligand binding may be a general mechanism to confer conditional stability on LBDs. This possibility is supported by the observation that interface mutations in DIG0 and Gal4 conferring digoxin-dependent stability lead to progesterone-dependent stability in a progesterone biosensor (Figure 1\u2014figure supplement 2a).\n\nA long-standing challenge in metabolic engineering is to rapidly detect and control how changes to the regulation and composition of biosynthetic pathways affect product titers. Transcriptional control by a product or intermediate\u00a0(Zhang et al., 2012; Raman et al., 2014; Tang and Cirino, 2011) and directed\u00a0evolution of constituent pathway elements\u00a0(Agresti et al., 2010; Alper et al., 2005; Dietrich et al., 2013) have emerged as promising strategies towards this goal. These approaches require high selectivity against intermediates\u00a0(Zhang and Keasling, 2011), a feature demonstrated here that can be explicitly considered during the computational design and screening process. Our method allows biosensors to be generated that are highly selective for a small molecule, facilitating a simple directed evolution strategy without requiring prior structural or bioinformatic knowledge about the targeted enzyme(s) or pathway(s). Because the biosensors are TF-based, sophisticated systems of optimizing metabolic output, such as dynamic control of gene expression\u00a0(Zhang et al., 2012) and feedback-regulated genome evolution\u00a0(Chou and Keasling, 2013), are possible.\n\nA reliance on the general principles of protein stability and ligand binding allows the development of biosensors that function in any organism with similar protein quality control machinery. Here, we engineered biosensors based on a designed scaffold derived from a bacterial protein. These biosensors required only minimal modifications to retain high levels of sensitivity when developed in yeast and deployed across mammalian and plant species, demonstrating unprecedented portability for biosensors. In some cases, these biosensors showed a greater dynamic range in mammalian cells relative to yeast, possibly due to larger cell volume and variations in protein degradation machinery. Further work using biosensors based on multiple different LBD scaffolds and introduced into diverse organisms will allow us to better understand the principles by which biosensor variability across hosts arises.\n\nSmall molecule biosensors with the modularity incorporated here enable diverse cellular responses to a variety of exogenous and endogenous signals\u00a0(Banaszynski et al., 2008). Gene editing is an area that requires particularly tight coupling of cell response to activation signals. The CRISPR/Cas9 system provides a facile and robust genome-editing platform, but it can result in off-target genetic changes\u00a0(Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013). Proposed solutions include optimizing guide RNA sequences\u00a0(Fu et al., 2014; Cho et al., 2014), building chimeric Cas9 fusions requiring the presence of two Cas9 molecules in close proximity\u00a0(Mali et al., 2013; Tsai et al., 2014; Guilinger et al., 2014; Ran et al., 2013), and regulating Cas9 activity by chemical or light-based inducers\u00a0(Dow et al., 2015; Zetsche et al., 2015; Polstein and Gersbach, 2015). While small molecule inducers including doxycycline and rapamycin have been used, these molecules may confer leaky expression and cytotoxicity\u00a0(Xie et al., 2008). Thus, an expanded chemical repertoire is needed for tightly regulated gene editing and gene therapy applications. By exploiting the low background of the LBD-biosensors, we produced biosensor-Cas9 fusions with tightly controlled activation (Figure 5e). This switch-like control over CRISPR/Cas9 activity could reduce background activity and off-target editing, a critical feature for safer gene therapies\u00a0(Mandal, et al., 2014;\u00a0Wu et al., 2013; Schwank et al., 2013).\n\nOur biosensor design approach should have numerous applications in agriculture. For example, biosensors could be developed to enable plants to monitor the environment for pollutants, toxins or dangerous compounds. Coupling biosensors with a phytoremediation trait could enable plants to both sense a contaminant and activate a bioremediation gene circuit. When paired with an agronomic or biofuel trait, such biosensors could serve as triggers for bioproduction. In the transgenic Arabidopsis plants, we observed ligand-dependent activation in all cells, tissues and organs examined (Figure 6).\n\nThe technology introduced here operates at either the transcriptional or post-translational level. These biosensors can be developed in yeast and readily transferred with minimal modification to other eukaryotic cell types, where they retain a high level of sensitivity (Figure 7c). The generality of our approach arises from the universality of the transcriptional activation and protein degradation machinery across eukaryotes, together with the modularity and tunability of the constituent parts. These biosensors should find broad application, including improving metabolically engineered pathway flux and product titers, exerting ligand-dependent control over genome editing, and detecting exogenous small molecules or endogenous metabolites.\n\n## Materials and methods\n\n### Culture and growth conditions\n\nBiological replicates are defined as samples inoculated from distinct colonies. Growth media consisted of YPAD (10 g/L yeast extract, 20 g/L peptone, 40 mg/L adenine sulfate, 20 g/L glucose) and SD media (1.7 g/L yeast nitrogen base without amino acids, 5 g/L ammonium sulfate, 20 g/L glucose and the appropriate amount of dropout base with amino acids [Clontech, Mountain View, CA]). The following selective agents were used when indicated: G418 (285 mg/L), pen/strep (100 U/mL penicillin and 100 \u03bcg/mL streptomycin).\n\n### LBD-yEGFP library construction\n\nThe DIG10.3 sequence\u00a0(Tinberg et al., 2013) was cloned by Gibson assembly\u00a0(Gibson et al., 2009) into a pUC19 plasmid containing yeast enhanced GFP (yEGFP, UniProt ID B6UPG7) and a KanMX6 cassette flanked by 1000 and 500 bp upstream and downstream homology to the HO locus. The DIG10.3 sequence was randomized by error-prone PCR using a Genemorph II kit from Agilent Technologies. An aliquot containing 100 ng of target DNA (423 bp out of a 7.4 kb plasmid) was mixed with 5 \u03bcL of 10X Mutazyme buffer, 1 \u03bcL of 40 mM dNTPS, 1.5 \u03bcL of 20 \u03bcM forward and reverse primer containing 90 bp overlap with the pUC19 plasmid (oJF70 and oJF71), and 1 \u03bcL of Mutazyme polymerase in 50 \u03bcL. The reaction mixture was subject to 30 cycles with Tm of 60\u00b0C and extension time of 1 min. Vector backbone was amplified using Q5 polymerase (NEB,\u00a0Ipswich,\u00a0MA) with oJF76 and oJF77 primers with Tm of 65\u00b0C and extension time of 350 s. Both PCR products were isolated by 1.5% agarose gel electrophoresis and the randomized target was inserted as a genetic fusion to yEGFP by Gibson assembly\u00a0(Gibson et al., 2009). Assemblies were pooled, washed by ethanol precipitation, and resuspended in 50 \u03bcL of dH2O, which was drop dialyzed (EMD\u00a0Millipore,\u00a0Billerica, MA) and electroporated into E. cloni supreme cells (Lucigen,\u00a0Middleton,\u00a0WI). Sanger sequencing of 16 colonies showed a mutation rate of 0\u20137 mutations/kb. The library was expanded in culture and maxiprepped (Qiagen,\u00a0Valencia,\u00a0CA) to 500 \u03bcg/\u03bcl aliquots. 16 \u03bcg of library was drop dialyzed and electrotransformed into yeast strain Y7092 for homologous recombination into the HO locus. Integrants were selected by growth on YPAD solid media containing G418 followed by outgrowth in YPAD liquid media containing G418.\n\n### LBD-yEGFP library selections\n\nLibraries of DIG0-yEGFP and PRO0-yEGFP integrated into yeast strain Y7092 were subject to three rounds of fluorescence activated sorting in a BD FACSAria IIu. For the first round, cells were grown overnight to an OD600 of ~1.0 in YPAD containing steroid (500 \u03bcM digoxigenin or 50 \u03bcM progesterone), and cells showing the top 5% of fluorescence activation were collected and expanded overnight to an OD600 of ~1.0 in YPAD lacking steroid. In the second sort, cells displaying the lowest ~3% fluorescence activation were collected. Cells passing the second round were passaged overnight in YPAD containing steroid to an OD600 of ~1.0 and sorted once more for the upper 5% of fluorescence activation. The sorted libraries were expanded in YPAD liquid culture and plated on solid YPAD media. Ninety-six colonies from each library were clonally isolated and grown overnight in deep well plates containing 500 \u03bcL of YPAD. Candidates were diluted 1:50 into two deep well plates with SD-complete media: one plate supplemented with steroid and the other with DMSO vehicle. Cells were grown for another 4 h, and then diluted 1:3 into microtitre plates of 250 \u03bcL of the same media. Candidates were screened by analytical flow cytometry on a BD LSRFortessa cell analyzer. The forward scatter, side scatter, and yEGFP fluorescence (530 nm band pass filter) were recorded for a minimum of 20,000 events. FlowJo X software was used to analyze the flow cytometry data. The fold activation was calculated by normalizing mean yEGFP fluorescence activation for each steroid to the mean yEGFP fluorescence in the DMSO only control. Highest induction candidates were subject to Sanger sequencing with primers flanking the LBD sequence.\n\n### TF-biosensor reporter plasmid construction and integration\n\nReporter genes were cloned into the integrative plasmid pUG6 or the CEN plasmid pRS414 using the Gibson method\u00a0(Gibson et al., 2009). Each reporter (either yEGFP or firefly luciferase) was cloned to include a 5\u2019 GAL1 promoter (S. cerevisiae GAL1 ORF bases (-455)-(-5)) and a 3\u2019 CYC1 terminator. For integration, linearized PCR cassettes containing both the reporter and an adjacent KanMX antibiotic resistance cassette were generated using primers containing 50 bp flanking sequences of homology to the URA3 locus. Integrative PCR product was transformed into the yeast strain PJ69-4a using the Gietz method\u00a0(Gietz and Schiestl, 2007) to generate integrated reporter strains.\n\n### G-DIG/PRO-V plasmid construction\n\nG-DIG/PRO-V fusion constructs were prepared using the Gibson method\u00a0(Gibson et al., 2009). Constructs were cloned into the plasmid p416CYC (p16C). Gal4 (residues 1\u201393, UniProt ID P04386), DIG10.3\u00a0(Tinberg et al., 2013), and VP16 (residues 363-490, UniProt ID P06492) PCR products for were amplified from their respective templates using Phusion high-fidelity polymerase (NEB, Waltham, MA) and standard PCR conditions (98\u00b0C 10 s, 60\u00b0C 20 s, 72\u00b0C 30 s; 30 cycles). The 8-residue linker sequence GGSGGSGG was used between Gal4 and DIG10.3. PCR primers were purchased from Integrated DNA technologies and contained 24\u201330 5\u2019 bases of homology to either neighboring fragments or plasmid. Clones containing an N-terminal degron were similarly cloned fusing residues 1\u201367 of Mat\u03b12 (UniProt ID P0CY08) to the 5\u2019- end of G-DIG-V. Plasmids were transformed into yeast using the Gietz method\u00a0(Gietz and Schiestl, 2007), with transformants being plated on synthetic complete media lacking uracil (SD -ura).\n\n### G-DIG-V mutant construction\n\nMutations were introduced into DIG10.3/pETCON\u00a0(Tinberg et al., 2013) or the appropriate G-DIG/PRO-V construct using Kunkel mutagenesis\u00a0(Kunkel, 1985). Oligos were ordered from Integrated DNA Technologies, Inc. For mutants constructed in pETCON/DIG10.3, the mutagenized DIG10.3 gene was amplified by 30 cycles of PCR (98\u00b0C 10 s, 61\u00b0C 30 s, 72\u00b0C 15 s) using Phusion high-fidelity polymerase (NEB) and 5\u2019- and 3\u2019- primers having homologous overlap with the DIG10.3-flanking regions in p16C-G-DIG-VP64 (Gal4_DIG10.3_VP64_hr_fwd and Gal4_DIG10.3_VP64_hr_rev_rc). Genes were inserted into p16C-Gal4-(HE)-VP16 by Gibson assembly (Gibson et al., 2009) using vector digested with HindIII and EcoRI-HF.\n\n### G-PRO-V mutant construction\n\nThe gene for DIG10.3 Y34F/Y99F/Y101F was amplified from the appropriate DIG10.3/pETCON\u00a0(Tinberg et al., 2013) construct by 30 cycles of PCR (98\u00b0C 10 s, 59\u00b0C 30 s, 72\u00b0C 15 s) using Phusion high-fidelity polymerase (NEB) and 5\u2019- and 3\u2019- primers having homologous overlap with the DIG10.3-flanking regions in p16C-G-DIG-VP64 (DIG_fwd and DIG_rev). Genes were inserted into p16C-GDVP16 by Gibson assembly\u00a0(Gibson et al., 2009) using p16C-Gal4-(HE)-VP16 vector digested with HindIII and EcoRI-HF.\n\n### G-DIG-V error-prone library construction\n\nA randomized G-DIG-V library was constructed by error-prone PCR using a Genemorph II kit from Agilent Technologies (Santa Clara, CA). An aliquot containing 20 ng p16C GDVP16, 20 ng p16C GDVP16 E83V, and 20 ng p16C Y36H was mixed with 5 \u03bcL of 10X Mutazyme buffer, 1 \u03bcL of 40 mM dNTPS, 1.5 \u03bcL of 20 \u03bcM forward and reverse primer containing 37- and 42-bp overlap with the p16C vector for homologous recombination, respectively (GDV_ePCR_fwd and GDV_ePRC_rev), and 1 \u03bcL of Mutazyme polymerase in 50 \u03bcL. The reaction mixture was subjected to 30 cycles of PCR (95\u00b0C 30 s, 61\u00b0C 30 s, 72\u00b0C 80 s). Template plasmid was digested by adding 1 \u03bcL of DpnI to the reaction mixture and incubating for 3 hr at 37\u00b0C. Resulting PCR product was purified using a Quiagen PCR cleanup kit, and a second round of PCR was used to amplify enough DNA for transformation. Gene product was amplified by combining 100 ng of mutated template DNA with 2.5 \u03bcL of 10 \u03bcM primers (GDV_ePCR_fwd and GDV_ePRC_rev), 10 \u03bcL of 5X Phusion buffer HF, 1.5 \u03bcL of DMSO, and 1 \u03bcL of Phusion high-fidelity polymerase (NEB, Waltham, MA) in 50 \u03bcL. Product was assembled by 30 cycles of PCR (98\u00b0C 10 s, 65\u00b0C 30 s, 72\u00b0C 35 s). Following confirmation of a single band at the correct molecular weight by 1% agarose gel electrophoresis, the PCR product was purified using a Quaigen PCR cleanup kit and eluted in ddH2O. Yeast strain PyE1 \u0394PDR5 was transformed with 9 \u03bcg of amplified PCR library and 3 \u03bcg of p16C Gal4-(HE)-VP16 triply digested with SalI-HF, BamHI-HR, and EcoRI-HF using the method of Benatuil\u00a0(Benatuil et al., 2010), yielding ~106 transformants. Following transformation, cells were grown in 150 mL of SD -ura media. Sanger sequencing of 12 individual colonies revealed an error rate of ~1\u20136 mutations per gene.\n\n### G-DIG-V library selections\n\nAn error-prone library of G-DIG0/DIG1/DIG2/-V transformed into yeast strain PyE1 \u0394PDR5 was subjected to three rounds of cell sorting using a Cytopeia (BD Influx) fluorescence activated cell sorter. For the first round, cells displaying high fluorescence in the presence of digoxin (on-state) were collected. Transformed cells were pelleted by centrifugation (4 min, 4000 rpm) and resuspended to a final OD600 of 0.1 in 50 mL of SD -ura media, pen/step antibiotics, and 5 \u03bcM digoxin prepared as a 100 mM solution in DMSO. The library was incubated at 30\u00b0C for 9 hr and then sorted. Cells displaying the highest fluorescent values in the GFP channel were collected (1,747,058 cells collected of 32,067,013 analyzed; 5.5%), grown up at 30\u00b0C in SD -ura, and passaged twice before the next sort. For the second round of sorting, cells displaying low fluorescence in the absence of digoxin (off-state) were collected. Cells were pelleted by centrifugation (4 min, 4000 rpm) and resuspended to a final OD600 of 0.1 in 50 mL of SD -ura media supplemented with pen/strep antibiotics. The library was incubated at 30\u00b0C for 8 hr and then sorted. Cells displaying low fluorescent values in the GFP channel were collected (1,849,137 cells collected of 22,290,327 analyzed; 11.1%), grown up at 30\u00b0C in SD -ura, and passaged twice before the next sort. For the last sorting round, cells displaying high fluorescence in the presence of digoxin (on-state) were collected. Cells were prepared as for the first sort. Cells displaying the highest fluorescent values in the GFP channel were collected (359,485 cells collected of 31,615,121 analyzed; 1.1%). After the third sort, a portion of cells were plated and grown at 30\u00b0C. Plasmids from 12 individual colonies were harvested using a Zymoprep Yeast miniprep II kit (Zymo Research Corporation, Irvine, CA) and the gene was amplified by 30 cycles of PCR (98\u00b0C 10 s, 52\u00b0C 30 s, 72\u00b0C 40 s) using Phusion high-fidelity polymerase (NEB) with the T3 and T7 primers. Sanger sequencing (Genewiz, Inc., South Plainfield, NJ) was used to sequence each clone in the forward (T3) and reverse (T7) directions.\n\n### G-DIG-V error-prone library mutation screens\n\nOf 12 sequenced clones from the library sorts, two showed significantly improved (>2-fold) response to DIG over the input clones (clone 3 and clone 6). Clone 3 contains the following mutations: Gal4_T44T (silent), Gal4_L77F, DIG10.3_E5D, DIG10.3_E83V, DIG10.3_R108R (silent), DIG10.3_L128P, DIG10.3_I137N, DIG10.3_S143G, and VP16_A44T. Clone 6 contains the following mutations: Gal4_R60S, Gal4_L84L (silent), VP16_G17G (silent), VP16_L48V, and VP16_H98H (silent). To identify which mutations led to the observed changes in DIG response, variants of these clones with no silent mutations and each individual point mutant were constructed using Kunkel mutagenesis\u00a0(Kunkel, 1985). Oligos were ordered from Integrated DNA Technologies, Inc. Sequence-confirmed plasmids were transformed into PyE1 \u0394PDR5f and plated onto selective SD -ura media. Individual colonies were inoculated into liquid media, grown at 30\u00b0C, and passaged once. Cells were pelleted by centrifugation (4 min, 1700 \u00d7 g) and resuspended to a final OD660 of 0.1 in 1 mL of SD -ura media supplemented 50 \u03bcM DIG prepared as a 100 mM solution in DMSO. Following a 6 hr incubation at 30\u00b0C, cells were pelleted, resuspended in 200 \u03bcL of PBS, and cellular fluorescence was measured on an Accuri C6 flow cytometer using a 488 nm laser for excitation and a 575 nm band pass filter for emission. FlowJo software version 7.6 was used to analyze the flow cytometry data. The\u00a0data are given as the mean yEGFP fluorescence of the single yeast population in the absence of DIG (off-state) and the mean yEGFP fluorescence of the higher fluorescing yeast population in the presence of DIG (on-state).\n\n### Computational model of Gal4-DIG\n\nA model of the Gal4-DIG10.3 fusion was built using Rosetta Remodel\u00a0(Huang et al., 2011) to assess whether the linker between Gal4 and the DIG LBD, which are both dimers, would allow for the formation of a dimer in the fusion construct. In the simulation, the Gal4 dimer was held fixed while the relative orientation of the DIG LBD monomers were sampled symmetrically using fragment insertion in the linker region. Constraints were added across the DIG LBD dimer interface to facilitate sampling. The lowest energy model satisfied the dimer constraints, indicating that a homodimer configuration of the fusion is possible.\n\n### TF-biosensor titration assays in yeast\n\nYeast strain PyE1 transformed with p16C plasmids containing G-LBD-V variants were inoculated from colonies into SD \u2013ura media supplemented and grown at 30\u00b0C overnight (16 h). 10 \u03bcL of the culture was resuspended into 490 \u03bcL of separately prepared media each containing a steroid of interest (SD \u2013ura media supplemented the steroid of interest and DMSO to a final concentration of 1% DMSO). Resuspended cultures were then incubated at 30\u00b0C for 8 hr. 125 \u03bcL of incubated culture was resuspended into 150 \u03bcL of fresh SD \u2013ura media supplemented with the steroid of interest and DMSO to a final concentration of 1%. These cultures were then assayed by analytical flow cytometry on a BD LSRFortessa using a 488 nm laser for excitation. The forward scatter, side scatter, and yEGFP fluorescence (530 nm band pass filter) were recorded for a minimum of 20,000 events. FlowJo X software was used to analyze the flow cytometry data. The fold activation was calculated by normalizing mean yEGFP fluorescence activation for each steroid to the mean yEGFP fluorescence in the DMSO only control. G-PRO0-V was assayed on a separate day from the other TF biosensors under identical conditions.\n\n### TF-biosensor kinetic assays in yeast\n\nYeast strain PyE1 was transformed with p16C plasmids containing G-LBD-V variants were inoculated from colonies into SD \u2013ura media and grown at 30\u00b0C overnight (16 hr). 5 \u03bcL of each strain was diluted into 490 \u03bcL of SD \u2013ura media in 2.2 mL plates. Cells were incubated at 30\u00b0C for 8 hr. 5 \u03bcL of steroid was then added for a final concentration of 250 \u03bcM digoxin or 50 \u03bcM progesterone. For each time point, strains were diluted 1:3 into microtitre plates of 250 \u03bcL of the same media. Strains were screened by analytical flow cytometry on a BD LSRFortessa cell analyzer. The forward scatter, side scatter, and yEGFP fluorescence (530 nm band pass filter) were recorded for a minimum of 20,000 events. FlowJo X software was used to analyze the flow cytometry data. The fold activation was calculated by normalizing mean yEGFP fluorescence activation for each time point to the mean yEGFP fluorescence at T = 0 hr.\n\n### Luciferase reporter assay\n\nYeast strains containing either a plasmid-borne or integrated luciferase reporter were transformed with p16C plasmids encoding TF-biosensors. Transformants were grown in triplicate overnight at 30\u00b0C in SD \u2013ura media containing 2% glucose in sterile glass test tubes on a roller drum. After ~16 hr of growth, OD600 of each sample was measured and cultures were back diluted to OD600 = 0.2 in fresh SD \u2013ura media containing steroid dissolved in DMSO or a DMSO control (1% DMSO final). Cultures were grown at 30\u00b0C on roller drum for 8 hr prior to taking readings. Measurement of luciferase activity was adapted from a previously reported protocol(Leskinen et al., 2003). 100 \u03bcL of each culture was transferred to a 96-well white NUNC plate. 100 \u03bcL of 2 mM D-luciferin in 0.1 M sodium citrate (pH 4.5) was added to each well of the plate and luminescence was measured on a Victor 3V after 5 min.\n\n### Yeast deletion strain creation\n\nGenomic deletions were introduced into the yeast strains PJ69-4a and PyE1 using the 50:50 method\u00a0(Horecka and Davis, 2014). Briefly, forward and reverse primers were used to amplify an URA3 cassette by PCR. These primers generated a product containing two 50 bp sequences homologous to the 5\u2019 and 3\u2019 ends of the ORF at one end and a single 50 bp sequence homologous to the middle of the ORF at the other end. PCR products were transformed into yeast using the Gietz method\u00a0(Gietz and Schiestl, 2007) and integrants were selected on SD \u2013ura plates. After integration at the correct locus was confirmed by a PCR screen, single integrants were grown for 2 days in YEP containing 2.5% ethanol and 2% glycerol. Each culture was plated on synthetic complete plates containing 5-fluoroorotic acid. Colonies were screened for deletion of the ORF and elimination of the Ura3 cassette by PCR and confirmed by Sanger sequencing.\n\n### TF-biosensor specificity assays\n\nYeast strains expressing the TF-biosensors and yEGFP reporter (either genetically fused or able to be transcriptionally activated by the TAD) were grown overnight at 30\u00b0C in SD \u2013ura media for 12 hr. Following overnight growth, cells were pelleted by centrifugation (5 min, 5250 rpm) and resuspended into 500 \u03bcL of SD \u2013ura. 10 \u03bcL of the washed culture was resuspended into 490 \u03bcL of separately prepared media each containing a steroid of interest (SD \u2013ura media supplemented with the steroid of interest and DMSO to a final concentration of 1% DMSO). Steroids were tested at a concentration of 100 \u03bcM digoxin, 50 \u03bcM progesterone, 250 \u03bcM pregnenolone, 100 \u03bcM digitoxigenin, 100 \u03bcM beta-estradiol, and 100 \u03bcM hydrocortisone. Stock solutions of steroids were prepared as a 50 mM solution in DMSO.\n\nResuspended cultures were then incubated at 30\u00b0C for 8 hr. 125 \u03bcL of incubated culture was resuspended into 150 \u03bcL of fresh SD \u2013ura media supplemented the steroid of interest, and DMSO to a final concentration of 1%. These cultures were then assayed by analytical flow cytometry on a BD LSRFortessa using a 488 nm laser for excitation. The forward scatter, side scatter, and yEGFP fluorescence (530 nm band pass filter) were recorded for a minimum of 20,000 events. FlowJo X software was used to analyze the flow cytometry data. The fold induction was calculated by normalizing mean yEGFP fluorescence activation for each steroid to the mean yEGFP fluorescence in the DMSO only control.\n\n### Yeast spotting assays\n\nYeast strain PJ69-4a transformed with p16C plasmids containing degron-G-DIG-V variants were first inoculated from colonies into SD -ura media and grown at 30\u00b0C overnight (16 hr). 1 mL of each culture was pelleted by centrifugation (3000 rcf, 2 min), resuspended in 1\u00a0mL of fresh SD -ura and the OD660 was measured. Each culture was then diluted in SD -ura media to an OD660 = 0.2 and incubated at 30\u00b0C for 4\u20136 hr. 1 mL of each culture was pelleted and resuspended in sterile, distilled water and the OD660 measured again. Each transformant was then diluted to an OD660 = 0.1. Four 1/10 serial dilutions of each culture were prepared in sterile water (for a total of 5 solutions). 10 \u03bcL of each dilution was spotted in series onto several SD \u2013ura \u2013his agar plates containing 1\u00a0mM 3-aminotriazole and the indicated steroid. Steroid solutions were added to agar from 200x steroid solutions in DMSO (0.5% DMSO final in plates).\n\n### 3\u03b2-HSD plasmid and library construction\n\nThe 3\u03b2-HSD ORF was synthesized as double-stranded DNA (Integrated DNA Technologies, Inc.,\u00a0Coralville, IA) and amplified using primers oJF325 and oJF326 using KAPA HiFi under standard PCR conditions and digested with BsmBI to create plasmid pJF57. 3\u03b2-HSD expression plasmids (pJF76 through pJF87) were generated by digesting plasmid pJF57 along with corresponding plasmids from the Yeast Cloning Toolkit\u00a0(Lee et al., 2015) with BsaI and assembled using the Golden Gate Assembly method\u00a0(Engler et al., 2008). The 3\u03b2-HSD sequence was randomized by error-prone PCR using a Genemorph II kit from Agilent Technologies. An aliquot containing 100 ng of target DNA was mixed with 5 \u03bcL of 10X Mutazyme buffer, 1 \u03bcL of 40 mM dNTPS, 1.5 \u03bcL of 20 \u03bcM forward and reverse primer containing 90-bp overlap with the 3\u03b2-HSD expression plasmids and 1 \u03bcL of Mutazyme polymerase in 50 \u03bcL. The reaction mixture was subject to 30 cycles with Tm of 60\u00b0C and extension time of 1 min. Vector backbone was amplified using KAPA HiFi polymerase with oJF387 and oJF389 (pPAB1) or oJF387 and oJF389 (pPOP6) with Tm of 65\u00b0C and extension time of 350 s. PCR products were isolated by 1.5% agarose gel electrophoresis and assembled using the Gibson method (Gibson et al., 2009). Assemblies were pooled, washed by ethanol precipitation, and resuspended in 50 \u03bcL of dH2O, which was drop dialyzed (Millipore) and electroporated into E. cloni supreme cells (Lucigen). Sanger sequencing of 16 colonies showed a mutation rate of 0\u20134 mutations/kb. The library was expanded in culture and maxiprepped (Qiagen) to 500 \u03bcg/\u03bcL aliquots. 16 \u03bcg of library was drop dialyzed and electrotransformed into yeast strain PyE1.\n\n### 3\u03b2-HSD progesterone selections\n\nPyE1 transformed with libraries of 3\u03b2-HSD were seeded into 5 mL of SD \u2013ura \u2013leu media supplemented and grown at 30\u00b0C overnight (24 hr). Cultures were measured for OD600, diluted to an OD600 of 0.0032, and 100 \u03bcL was plated onto SD \u2013ura \u2013leu \u2013his plates supplemented 35 mM 3-AT and either 50 \u03bcM pregnenolone or 0.5% DMSO.\n\n### Progesterone bioproduction and GC/MS analysis\n\nProduction strains were inoculated from colonies into 5 mL SD \u2013ura media and grown at 30\u00b0C overnight (16 hr). 1 mL of each culture was washed and resuspended into 50 mL of SD \u2013ura with 250 \u03bcM of pregnenolone and grown at 30\u00b0C for 76 hr. OD600 measurements were recorded for each culture before pelleting by centrifugation. Cells were lysed by glass bead disruption, and lysates and growth media were extracted separately with heptane. Extractions were analyzed by GC/MS.\n\n### TF-biosensor EGFP assays in mammalian cells\n\nThe K562 cell line was obtained from the ATCC. The cell line was not authenticated and not tested for mycoplasma contamination. For each TF-biosensor, 1 \u03bcg of the PiggyBac construct along with 400 ng of transposase were nucleofected into K562 cells using the Lonza Nucleofection system as per manufacturer settings. Two days post-transfection, cells underwent puromycin selection (2 \u03bcg/mL) for at least eight additional days to allow for unintegrated plasmid to dilute out and ensure that all cells contained the integrated construct. An aliquot of 100,000 cells of each integrated population were then cultured with 25 \u03bcM of progesterone, 1 \u03bcM of digoxigenin, or no small molecule. Forty-eight hours after small molecule addition, cells were analyzed by flow cytometry using a BD Biosciences Fortessa system. Mean EGFP fluorescence of the populations was compared.\n\n### Construction of K562 cell lines\n\nThe PiggyBac transposase system was employed to integrate biosensor constructs into K562 cells. Vector PB713B-1 (Systems Biosciences, Mountain View, CA) was used a backbone. Briefly, this backbone was digested with NotI and HpaI and G-LBD-V, Gal4BS-E1b-EGFP (EGFP; enhanced GFP ref or UniProt ID A0A076FL24), and sEF1-Puromycin were cloned in. Gal4BS represents four copies of the binding sequence. For hCas9, the PiggyBac system was also employed, but the biosensors were directly fused on the N-terminus of Cas9 and were under the\u00a0control of the CAGGS promoter. Cas9 from S. pyogenes was used.\n\n### TF-biosensor-Cas9 assays\n\nConstruct integration was carried out as for the Cas9 experiments for EGFP assays, except that the constructs were integrated into K562 containing a broken EGFP reporter construct. Introduction of an engineered nuclease along with a donor oligonucleotide can correct the EGFP and produce fluorescent cells. Upon successful integration (~10 days after initial transfection), 500,000 cells were nucleofected with 500 ng of guide RNA (sgRNA) and 2 \u03bcg of donor oligonucleotide. Nucleofected cells were then collected with 200 \u03bcL of media and 50 \u03bcL aliquots were added to wells containing 950 \u03bcL of media. Each nucleofection was split into four separate wells containing 1 \u03bcM of digoxigenin, 25 \u03bcM of progesterone, or no small molecule. Forty-eight hours later, cells were analyzed using flow cytometry and the percentage of EGFP positive cells was determined.\n\n### TF-biosensor assays in protoplasts\n\nDigoxin transcriptional activators were initially tested in a transient expression assay using Arabidopsis protoplasts according previously described methods(Yoo et al., 2007), with some modifications. Briefly, protoplasts were prepared from 6-week old Arabidopsis leaves excised from plants grown in short days. Cellulase Onozuka R-10 and Macerozyme R-10 (Yakult Honsha, Inc., Japan) in buffered solution were used to remove the cell wall. After two washes in W5 solution, protoplasts were re-suspended in MMg solution at 2 \u00d7 105 cells/mL for transformation. Approximately 104 protoplasts were mixed with 5 \u03bcg of plasmid DNA and PEG4000 at a final concentration of 20%, and allowed to incubate at room temperature for 30 min. The transformation reaction was stopped by the\u00a0addition of two volumes of W5 solution, and after centrifugation, protoplasts were re-suspended in 200 \u03bcL of WI solution (at 5 \u00d7 105/mL) and plated in a 96-well plate. Digoxigenin (Sigma-Aldrich, St. Louis, MO) was added to the wells, and protoplasts were incubated overnight at room temperature in the dark, with slight shaking (40 rpm). For luciferase imaging, protoplasts were lysed using Passive Lysis Buffer (Promega, Madison, WI) and mixed with LARII substrate (Dual-Luciferase Reporter Assay System, Promega,\u00a0Madison,\u00a0WI). Luciferase luminescence was collected by a Stanford Photonics XR/MEGA-10 ICCD Camera and quantified using Piper Control (v.2.6.17) software.\n\n### Plant plasmid construction\n\nG-DIG1-V was recoded to function as a ligand-dependent transcriptional activator in plants. Specifically, an Arabidopsis thaliana codon optimized protein degradation sequence from the yeast MAT\u03b12 gene was fused in frame in between the Gal4 DBD and the DIG1 LBD. The resulting gene sequence was codon-optimized for optimal expression in Arabidopsis thaliana plants and cloned downstream of a plant-functional CaMV35S promoter to drive constitutive expression in plants, and upstream of the octopine synthase (ocs) transcriptional terminator sequence. To quantify the transcriptional activation function of DIG10.3, the luciferase gene from Photinus pyralis (firefly) was placed downstream of a synthetic plant promoter consisting of five tandem copies of a Gal4 Upstream Activating Sequence (UAS) fused to the minimal (-46) CaMV35S promoter sequence. Transcription of luciferase is terminated by the E9 terminator sequence. These sequences were cloned into a pJ204 plasmid and used for transient expression assays in Arabidopsis protoplasts.\n\n### Construction of transgenic Arabidopsis plants\n\nAfter confirmation of function in transient tests, the digoxin biosensor genetic circuit was transferred to pCAMBIA 2300 and was stably transformed into Arabidopsis thaliana ecotype Columbia plants using a standard Agrobacterium floral dip method\u00a0(Clough and Bent, 1998). Transgenic plants were selected in MS media\u00a0(Murashige and Skoog, 1962) containing 100 mg/L kanamycin.\n\n### TF-biosensor assays in transgenic plants\n\nTransgenic plants expressing the digoxin biosensor genetic circuit were tested for digoxigenin-induced luciferase expression by placing 14\u201316 day-old plants in liquid MS (- sucrose) media supplemented with 0.1 mM digoxigenin in 24-well plates, and incubated in a growth chamber at 24\u00b0C, 100 \u03bcE.m2.s-1 light. Luciferase expression was measured by imaging plants with a Stanford Photonics XR/MEGA-10 ICCD Camera, after spraying luciferin and dark adapting plants for 30 min. Luciferase expression was quantified using Piper Control (v.2.6.17) software. Plants from line KJM58-10 were used to test for the\u00a0specificity of induction by incubating plants, as described above, in 0.1 mM digoxigenin, 0.1 mM digitoxigenin, and 0.02 mM \u03b2-estradiol. All chemicals were obtained from Sigma-Aldrich (St. Louis, MO).\n",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "4d31d944-b353-43d4-9723-03688ddb552c",
+      "submission_id": "19dad35f-b687-4002-8388-55f67398c7ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeffery W Kelly, Scripps Research Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10606.017](https://doi.org/10.7554/eLife.10606.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"A general strategy to construct small molecule biosensors in eukaryotes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Jeffery Kelly (Reviewing editor) and John Kuriyan (Senior Editor).\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nPlease consider all the reviewer comments and suggestions pasted below and address as many of them as possible in the two month time frame.\n\nThe authors are requested to spend a few sentences addressing whether their current strategy lends itself to quantification, or whether the use of coupled, intermolecular systems (i.e., transcription of a reporter gene) precludes accurate quantification. The idea that these biosensors can be quickly ported from yeast to other eukaryotes is compelling and important, but the authors did not rigorously support this claim with experiments specifically designed to show and characterize organism-to-organism portability. Addressing this would be desirable.\n\nThe editors feel that the paper could benefit from a careful reading, with an eye towards integration of the results and conclusions, done by one of the senior authors.\n\nReviewer #1:\n\nThis is a nice paper from the Church, Fields, and Baker labs. I think that many will find this paper interesting and I recommend it for publication with one suggestion (not a requirement) for additional data.\n\nResponding to the appearance of the analyte appears to be the primary goal of this work. However, biosensors of this sort would be extremely useful for single-cell analyses of biological processes such as signaling (think of Tsien's calcium dyes). In this light, it is important for the reader to know how these engineered biosensors respond to the loss of the analyte as well as the appearance of the analyte, which is well-treated in the current paper. I imagine the authors have already done these experiments, and analyte withdrawal data would nicely complement the data currently in Figure 2 (as new panels G and H, showing a time course of signal loss when dig or prog are removed).\n\nOne definition of \"biosensor\" only requires detection of a particular analyte. A more ambitious definition would capture quantification of the analyte. I would appreciate if the authors could spend a few sentences addressing whether their current strategy lends itself to quantification, or whether the use of coupled, intermolecular systems (i.e., transcription of a reporter gene) precludes accurate quantification. This same issue likely prevents these biosensors from responding rapidly/accurately to the disappearance of analyte. This is fine. I don't think the authors should be asked to invent version 2 of the system for this paper, but I do think it would be a good idea for the authors to address this issue in the text. Having protein stability as the readout makes a biosensor less sensitive (no amplification from transcription), but it also makes it more responsive to analyte in terms of speed and quantification.\n\nOne issue missing from this study is how the presence of the biosensor might change or affect the behavior of the cell. In other words, progesterone that is sequestered by the biosensor is not available to bind to the endogenous target. Additionally, this biosensor strategy is \"general\" (Figure 7A) only insofar as a researcher has access to a high-affinity, protein-based ligand-binding domain for a particular analyte.\n\nReviewer #2:\n\nThis work is impressive in the scope of different design features/perturbations and applications implemented in engineering biosensors. However, most of these features have been previously reported (and appropriately cited in each case by the authors), and it is therefore difficult to determine the novelty and utility for the greater scientific community. If the authors' intended finding is an overall approach of implementing many different strategies to achieve an improved end goal application, and that their strategy is generalizable, more efficient, or possessing of some other hitherto lacking feature, then the manuscript would need to more directly demonstrate this. As one example, the idea that these biosensors can be quickly ported from yeast to other eukaryotes is compelling and important, but the authors did not rigorously support this claim with experiments specifically designed to show and characterize organism-organism portability. That is, transferring a set of proteins and showing they work in other organisms may not be a sufficiently systematic study that statistically supports organism-organism portability. If the authors could better refine/clarify the contribution of their work, this would help to motivate readers to adopt the strategies and findings from this work.\n\nThe authors showed tremendous versatility in demonstrating several potential applications. However, the depth of each of these demonstrations was somewhat lacking and appeared more as minimal proof of principle experiments. For example, the authors demonstrated increased bioproduction of progesterone. This could indeed serve as a compelling model of how to engineer and use biosensors. However, the effects seen were not large (~2 fold with large error bars). Perhaps if any one of the applications were flushed out in more depth, more detail, or with greater effect, this would have greater impact on the community.\n",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4c5ba2bd-9f8c-45ba-9edc-74a1c9baf7ed",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C1",
+      "claim": "Biosensors for small molecules can be used in applications that range from metabolic engineering to orthogonal control of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Biosensors for small molecules can be used in applications that range from metabolic engineering to orthogonal control of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biosensor applications presented in the abstract without specific experimental data in this manuscript, but supported by the overall work presented.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "5bf9c6dd-605a-4471-8f8d-a399cab2342a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C2",
+      "claim": "The biosensor method is based on a ligand-binding domain (LBD) that is destabilized by mutation such that the fusion accumulates only in cells containing the target ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "The LBD is fused to either a fluorescent protein or a transcriptional activator and is destabilized by mutation such that the fusion accumulates only in cells containing the target ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The mechanism is described in the abstract and demonstrated throughout the manuscript with experimental data showing ligand-dependent accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "395210b3-9f99-4e2b-8737-4a64be96cc20",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C3",
+      "claim": "Biosensors for digoxin and progesterone were developed using this method.",
+      "claim_type": "EXPLICIT",
+      "source": "We illustrate the power of this method by developing biosensors for digoxin and progesterone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this explicitly and the entire manuscript presents data on these two biosensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "9fe384d6-66a8-4199-b7c2-22698c9ba5e8",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C4",
+      "claim": "Addition of ligand to yeast, mammalian, or plant cells expressing a biosensor activates transcription with a dynamic range of up to ~100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of ligand to yeast, mammalian, or plant cells expressing a biosensor activates transcription with a dynamic range of up to ~100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by experimental data shown in multiple figures throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "0bf0db44-291f-466b-869b-9e1a1b62e34a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C5",
+      "claim": "The biosensors were used to improve the biotransformation of pregnenolone to progesterone in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the biosensors to improve the biotransformation of pregnenolone to progesterone in yeast and to regulate CRISPR activity in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This application is stated in the abstract and demonstrated with experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "6f537899-e84b-4b6e-9888-37fcd65feeb4",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C6",
+      "claim": "The biosensors were used to regulate CRISPR activity in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the biosensors to improve the biotransformation of pregnenolone to progesterone in yeast and to regulate CRISPR activity in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This application is stated in the abstract and demonstrated with experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "7aae5451-fc3c-4c31-8faa-eeee134d2d98",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C7",
+      "claim": "Current biosensor construction methods typically couple binding of a small molecule to a single output signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods typically couple binding of a small molecule to a single output signal, and use a limited repertoire of natural protein- (Tang et al., 2013) or nucleic acid aptamer-binding (Yang et al., 2013) domains, which narrows the scope of small molecules that can be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "6c18a837-75d0-4f96-9d4f-62fdde5aa2ba",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C8",
+      "claim": "Current biosensor methods use a limited repertoire of natural protein or nucleic acid aptamer-binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods typically couple binding of a small molecule to a single output signal, and use a limited repertoire of natural protein- (Tang et al., 2013) or nucleic acid aptamer-binding (Yang et al., 2013) domains, which narrows the scope of small molecules that can be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about existing methods is supported by citations to Tang et al., 2013 and Yang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "93d64cb7-01bf-428e-84ac-dcb73833c357",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C9",
+      "claim": "Conditionally stable ligand-binding domains are degraded by the ubiquitin proteasome system in the absence of a cognate ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of a cognate ligand, these proteins are degraded by the ubiquitin proteasome system (Egeler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the introduction and supported by citation to Egeler et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "58c3afe4-d9fd-4eb8-8938-c3fc940e3966",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C10",
+      "claim": "Binding of the ligand stabilizes the LBD and prevents its degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of the ligand stabilizes the LBD and prevents its degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the core mechanism described in the introduction and demonstrated throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "8dd5186f-fcd3-4722-8824-e7ffcdee3f2a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C11",
+      "claim": "Naturally-occurring LBDs can be engineered to be conditionally stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally-occurring LBDs can be engineered to be conditionally stable (Banaszynski et al., 2006; Miyazaki et al., 2012; Iwamoto et al., 2010), making it possible in principle to convert them into biosensors for target ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work by Banaszynski et al., 2006; Miyazaki et al., 2012; Iwamoto et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "f14e3eba-5f0b-48a1-830f-ac3c3e449d1c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C12",
+      "claim": "DIG10.3 (DIG0) binds digoxin and digoxigenin with picomolar affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "We began with the computationally-designed binding domain DIG10.3 (Tinberg et al., 2013), hereafter DIG0, which binds the plant steroid glycoside digoxin and its aglycone digoxigenin with picomolar affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding affinity is stated in the Results section and supported by citation to Tinberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "77d13213-cd56-41a3-bd5c-61bfb858fade",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C13",
+      "claim": "Introduction of three rationally-designed binding site mutations into DIG0 resulted in a progesterone binder (PRO0) with nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of three rationally-designed binding site mutations into DIG0 resulted in a progesterone binder (PRO0) with nanomolar affinity (Tinberg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to Tinberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "62e40430-bb74-47f9-ba82-e942ec604f67",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C14",
+      "claim": "DIG0-GFP and PRO0-GFP fusions showed little change in fluorescence in response to digoxin or progesterone, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusions showed little change in fluorescence in response to digoxin or progesterone, respectively (Figure 1b,c and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the text and supported by data shown in Figure 1b,c and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "b179f182-ff2c-4fb5-9a44-10545cc69297",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C15",
+      "claim": "Mutagenesis of LBDs can be used to identify variants that are stable only in the presence of a target ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Work by Wandless and co-workers has shown that mutagenesis of LBDs can be used to identify variants that are stable only in the presence of a target ligand (Banaszynski et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work supported by citation to Banaszynski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "f5709815-1748-480f-b230-b18a21d24007",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C16",
+      "claim": "LBD variants with greater than 5-fold activation by cognate ligand were isolated after FACS sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated LBD variants having greater than 5-fold activation by cognate ligand (Figure 1b,c and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 1b,c and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "6eae82e5-8c6d-4422-b7b8-7d7360707b00",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C17",
+      "claim": "Some mutations in progesterone biosensors are additive, while others predominately contribute to sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "By making additional variants that contain only one of the up to four mutations found in the progesterone biosensors, we showed that some mutations are additive, while others predominately contribute to sensitivity (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the text and supported by experimental data in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "75d49e17-8ba4-4a3d-bf66-0c0e9458f3ef",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C18",
+      "claim": "Many of the conditionally-destabilizing mutations identified in DIG0 involve residues that participate in key dimer interface interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the conditionally-destabilizing mutations identified in DIG0 involve residues that participate in key dimer interface interactions (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the text and illustrated in Figure 1d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "d68032a4-ba09-4280-ae1c-5ebe58e494b8",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C19",
+      "claim": "The conditionally-destabilizing mutations of PRO0 are located throughout the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditionally-destabilizing mutations of PRO0 are located throughout the protein (Figure 1\u2014figure supplement 2b\u2013d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the text and illustrated in Figure 1\u2014figure supplement 2b\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "be9f96b7-0c45-42ec-8901-ac065ef0e7dc",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C20",
+      "claim": "DIG0 interface mutations rendered PRO0-GFP conditionally stable on binding progesterone.",
+      "claim_type": "EXPLICIT",
+      "source": "the DIG0 interface mutations also rendered PRO0-GFP conditionally stable on binding progesterone (Figure 1\u2014figure supplement 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 1\u2014figure supplement 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "5cba8b05-3dfc-408f-aac0-53466b6c265a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C21",
+      "claim": "The dynamic range of TF-biosensor activity was maximal when the biosensor was expressed using a weak promoter and weak activation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic range of TF-biosensor activity was maximal when the biosensor was expressed using a weak promoter and weak activation domain, because of lower yEGFP expression in the absence of ligand (Figure 2\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This optimization result is stated in the text and supported by data in Figure 2\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "df39f97c-50b1-4e6d-a949-0789a11bc11a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C22",
+      "claim": "L77F and R60S mutations in the Gal4 dimer interface increased TF-biosensor response by lowering background activity in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "A FACS-based screen of an error-prone PCR library of G-DIG0-V, G-DIG1-V, and G-DIG2-V variants identified mutations L77F and R60S in the Gal4 dimer interface (hereafter GL77F, GR60S) that further increased TF-biosensor response by lowering background activity in the absence of ligand (Figure 2b and Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 2b and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "bd3f46f5-2e35-4966-91d2-46c0ae4305fc",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C23",
+      "claim": "Gal4 mutations identified in digoxin-dependent TF-biosensors also increased progesterone-dependent activation of G-PRO-V biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these Gal4 mutations were identified by screening the libraries of digoxin-dependent TF-biosensors, they also increased progesterone-dependent activation of the G-PRO-V series of biosensors, indicating a shared mechanism of conditional stability in both systems (Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This cross-reactivity result is stated in the text and supported by data in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "ad22663d-6fcb-4e0c-854e-d3ae14afc548",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C24",
+      "claim": "Combining mutations in Gal4 and DIG0 or PRO0 led to activations of up to 60-fold by cognate ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining mutations in Gal4 and DIG0 or PRO0 led to activations of up to 60-fold by cognate ligand, a ten-fold improvement over the most responsive LBD-biosensors (Figure 2c,d and Figure 2\u2014figure supplement 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 2c,d and Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "dbd69f01-a228-40af-9160-91d5b994ce46",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C25",
+      "claim": "TF-biosensors showed a five-fold increase in signal after 1 hr of incubation with ligand and full activation after ~14 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The TF-biosensors were also rapidly activated, showing a five-fold increase in signal after 1 hr of incubation with ligand and full activation after ~14 hr (Figure 2e,f and Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This kinetic result is stated in the text and supported by data in Figure 2e,f and Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "a5fc1459-dbc9-4745-8e71-f8a458f3748c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C26",
+      "claim": "TF-biosensors exhibited a broad range of fluorescence levels across single cells and a population of nonfluorescent cells in the presence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the LBD-biosensors, the TF-biosensors exhibited a broad range of fluorescence levels across single cells, as well as a population of nonfluorescent cells in the presence of ligand (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the text and supported by data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "a5d6582d-7862-4df2-8329-16311faf2db5",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C27",
+      "claim": "Nonfluorescent cells isolated by FACS were found to be inviable, possibly indicating plasmid loss or toxicity from biosensor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used FACS to isolate cells from the nonfluorescent population and found those cells to be inviable, possibly indicating plasmid loss or toxicity from biosensor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the text with speculation about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "09ebd10a-8fb4-41f0-90da-4ab1ca8b27bd",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C28",
+      "claim": "Upon withdrawal of ligand, strains expressing TF-biosensors reached half of their maximum yEGFP fluorescence after approximately 5 hr and nearly undetectable fluorescence after 10\u201315 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon withdrawal of ligand, strains expressing TF-biosensors rapidly exhibited reduction in signal, reaching half of their maximum yEGFP fluorescence after approximately 5 hr and nearly undetectable fluorescence after 10\u201315 hr (Figure 2g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This kinetic result is stated in the text and supported by data in Figure 2g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "d9c4b20b-4a39-4981-82ef-3ba45b623cf2",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C29",
+      "claim": "LexA-based TF-biosensors with DIG1 and B42 TAD showed a strong response to digoxin (nearly 40-fold) only when the promoter contained LexA-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "LexA-based TF-biosensors with DIG1 and a weak TAD (B42) showed a strong response to digoxin (nearly 40-fold) only when the promoter-driving reporter expression contained LexA-binding sites (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This modularity result is stated in the text and supported by data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "c9dac4b6-2514-46f5-ae5e-f1fe36fd77f2",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C30",
+      "claim": "TF-biosensors drove the expression of the HIS3 reporter most effectively when steroid was added to the growth media.",
+      "claim_type": "EXPLICIT",
+      "source": "The TF-biosensors drove the expression of the HIS3 reporter most effectively when steroid was added to the growth media, as assessed by the growth of a histidine auxotrophic strain in media lacking histidine (Figure 3b,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 3b,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "8f9d4a4d-93b9-4cdc-8364-dc84d143584b",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C31",
+      "claim": "Fusion of the Mat\u03b12 degron to the biosensor improved dynamic range by reducing the growth of yeast in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion of the Mat\u03b12 degron to the biosensor improved dynamic range by reducing the growth of yeast in the absence of ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This optimization result is stated in the text and can be inferred from the experimental design described.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "9913a4ff-8a79-43ea-af05-62a57dfe62b5",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C32",
+      "claim": "Deletion of the gene for a multidrug efflux pump improved biosensor sensitivity toward target ligands by increasing ligand retention.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the yeast strain could be modified to improve biosensor sensitivity toward target ligands by the deletion of the gene for a multidrug efflux pump (Ernst et al., 2005), thereby increasing ligand retention (Figure 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 3c\u2013d and citation to Ernst et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "2f51f81b-3406-4ec4-9541-183445317788",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C33",
+      "claim": "TF-biosensors built from PRO1 showed the greatest dynamic range and selectivity for progesterone over pregnenolone.",
+      "claim_type": "EXPLICIT",
+      "source": "TF-biosensors built from PRO1 showed the greatest dynamic range and selectivity for progesterone over pregnenolone when driving yEGFP expression or when coupled with a HIS3 reporter assay (Figure 4a,b and Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 4a,b and Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "7434eb25-683e-4d2f-ad7e-a3a27fcda071",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C34",
+      "claim": "GL77F-PRO1-V biosensor could detect progesterone production, with biosensor response greatest when 3\u03b2-HSD was expressed from a high copy number plasmid and from a strong promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using GL77F-PRO1-V driving a yEGFP reporter, we could detect progesterone production, with biosensor response greatest when 3\u03b2-HSD was expressed from a high copy number plasmid and from a strong promoter (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "252fdef4-a771-4b17-a7d9-68b28d8754b7",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C35",
+      "claim": "Two evolved 3\u03b2-HSD mutants, N139D and F67Y, produced two-fold more progesterone per OD than cells bearing the wild-type enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the mutants, 3\u03b2-HSD N139D and 3\u03b2-HSD F67Y, were assayed for progesterone production using gas chromatography and mass spectrometry and were found to produce two-fold more progesterone per OD than cells bearing the wild-type enzyme (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "184af258-8222-430f-a248-f81370f75d1e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C36",
+      "claim": "Human K562 cells demonstrated greater sensitivity to digoxin, with fluorescence activation increasing up to 100 nM of cognate ligand for digoxin biosensors and 1 mM for progesterone biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "As with yeast, the human cells demonstrated greater sensitivity to digoxin, with fluorescence activation increasing up to 100 nM of cognate ligand for digoxin biosensors and 1 mM for progesterone biosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is stated in the text describing mammalian cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "3b4fa464-f934-473d-a857-48d49686c8eb",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C37",
+      "claim": "Greater than 100-fold activation was observed for the most sensitive progesterone biosensor GL77F-PRO1-V in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed >100-fold activation for the most sensitive progesterone biosensor GL77F-PRO1-V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is stated in the text describing mammalian cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "7dd32caf-9870-4f86-847c-157a6e34da2e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C38",
+      "claim": "The increase in mammalian dynamic range over yeast may arise from more aggressive degradation of destabilized biosensors or greater accumulation of target-stabilized biosensors or reporters resulting from larger cell sizes and slower doubling times.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in mammalian dynamic range over yeast may arise from more aggressive degradation of destabilized biosensors or greater accumulation of target-stabilized biosensors or reporters resulting from larger cell sizes and slower doubling times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference in dynamic range between yeast and mammalian cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "c687ccfe-9fcf-4a45-bf45-cdb29432d132",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C39",
+      "claim": "Fluorescence increased four-fold within 4 hr of target introduction and rose logarithmically for 24\u201348 hr in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The time course data show that fluorescence increased four-fold within 4 hr of target introduction and rose logarithmically for 24\u201348 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This kinetic result is stated in the text describing mammalian cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "4e277387-b966-4c5e-8e26-acf06755733f",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C40",
+      "claim": "Unchecked Cas9 activity can lead to off-target mutations and cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the high programmability and specificity of Cas9-mediated gene editing achieved to date, unchecked Cas9 activity can lead to off-target mutations and cytotoxicity (Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about CRISPR/Cas9 is supported by citations to Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "04c8fd3c-db51-434f-97aa-8abc0ec31bc9",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C41",
+      "claim": "An ~18-fold increase in GFP positive cells with digoxigenin relative to the mock control was observed using DIG-Cas9 fusions.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 48-hr incubation period, we observed an ~18-fold increase in GFP positive cells with digoxigenin relative to the mock control (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "601a6a03-75b7-4958-bb39-5c7673a3c011",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C42",
+      "claim": "The biosensor containing the Mat\u03b12 degron and VP16 TAD showed the highest fold activation of luciferase in the presence of digoxigenin in Arabidopsis protoplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The biosensor containing the Mat\u03b12 degron and VP16 TAD showed the highest fold activation of luciferase in the presence of digoxigenin (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "a4a60c52-5cd6-449a-b03e-863110318652",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C43",
+      "claim": "After 42 hr, 30-50-fold induction of luciferase activity was observed in digoxin-treated Arabidopsis plants compared to the uninduced control.",
+      "claim_type": "EXPLICIT",
+      "source": "After 42 hr, we observed 30-50-fold induction of luciferase activity in digoxin-treated plants compared to the uninduced control (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "c2f9d890-cf35-46da-9723-646559f91100",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C44",
+      "claim": "Both digoxin and digoxigenin were capable of inducing the biosensor in Arabidopsis plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Both digoxin and digoxigenin were capable of inducing the biosensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is stated in the text describing plant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "034befbe-262d-4536-aa8e-da6de4bf5a44",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C45",
+      "claim": "Digoxigenin-dependent luciferase induction was observed in multiple independent transgenic T1 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Digoxigenin-dependent luciferase induction was observed in multiple independent transgenic T1 lines (Figure 6\u2014figure supplement 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "ab4cb22f-fbff-4a4d-b06f-30a8c2e871ad",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C46",
+      "claim": "A rising dose response to digoxigenin was observed in the transgenic Arabidopsis plants.",
+      "claim_type": "EXPLICIT",
+      "source": "and a rising dose response to digoxigenin was observed in the transgenic plants (Figure 6\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the text and supported by data in Figure 6\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "9d2f4f6d-6bab-4be1-ad91-a3ed03ea3b51",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C47",
+      "claim": "The specificity of the digoxigenin biosensor in plants parallels that in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of the digoxigenin biosensor in plants parallels that in yeast cells (Figure 6\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is stated in the text and supported by data in Figure 6\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "82b410e2-c1ec-4485-ab33-72896b9d1be6",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C48",
+      "claim": "The majority of the conditionally-stabilizing mutations are located at the dimer interfaces of both the DIG0 LBD and Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the DIG0 LBD and Gal4 are homodimers, and the majority of the conditionally-stabilizing mutations are located at the dimer interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the Discussion and supported by data shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "32fcb66a-5245-4866-b0ee-cb5ec9a3f848",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C49",
+      "claim": "A computational model of the Gal4-DIG0 complex indicates that the orientation of the two domains allows a homodimeric fusion to form.",
+      "claim_type": "EXPLICIT",
+      "source": "A computational model of the Gal4-DIG0 complex indicates that the orientation of the two domains allows a homodimeric fusion to form (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This computational result is stated in the text and illustrated in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "3e4d1113-506c-46c8-a7ee-c232126fed85",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C50",
+      "claim": "Weakening of the dimer interface, in either the DIG0 or the Gal4 domain, is compensated by ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest an allosteric interplay between ligand binding and dimer formation: weakening of the dimer interface, in either the DIG0 or the Gal4 domain, is compensated by ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic interpretation is stated in the Discussion based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "18bf91ed-4638-4006-b1f4-516961404a8e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C51",
+      "claim": "The DIG0 LBD scaffold is derived from a member of the nuclear transport factor 2 family.",
+      "claim_type": "EXPLICIT",
+      "source": "This LBD scaffold is derived from a member of the nuclear transport factor 2 family, a fold class that typically has a large dimer interface (~1200 \u00c52) that facilitates the large and open ligand-binding site (~600 \u00c52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is stated in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "6cc59965-2f0f-40bf-894b-34082bce3d80",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C52",
+      "claim": "Nuclear transport factor 2 family proteins typically have a large dimer interface (~1200 \u00c52) and a large and open ligand-binding site (~600 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "This LBD scaffold is derived from a member of the nuclear transport factor 2 family, a fold class that typically has a large dimer interface (~1200 \u00c52) that facilitates the large and open ligand-binding site (~600 \u00c52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is stated in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "e185429c-a781-4536-bb9f-3309f93f2e6b",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C53",
+      "claim": "Nuclear transport factor 2 family proteins are well suited for de novo design of LBDs because of their large binding pocket and natural substrate diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "These protein folds are well suited for de novo design of other LBDs because of their large binding pocket and natural substrate diversity (Todd et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is made in the Discussion and supported by citation to Todd et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "71a2e014-ef0c-49c2-b9a6-a2a15be34f28",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C54",
+      "claim": "Exploiting dimer interfaces to modulate stability without impairing ligand binding may be a general mechanism to confer conditional stability on LBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploiting dimer interfaces to modulate stability without impairing ligand binding may be a general mechanism to confer conditional stability on LBDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization proposed in the Discussion based on the results presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "1f2d5f7f-1bf2-49b1-9627-2dc97de13c1c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C55",
+      "claim": "Interface mutations in DIG0 and Gal4 conferring digoxin-dependent stability lead to progesterone-dependent stability in a progesterone biosensor.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is supported by the observation that interface mutations in DIG0 and Gal4 conferring digoxin-dependent stability lead to progesterone-dependent stability in a progesterone biosensor (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the Discussion and supported by data in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "bed3a7ba-919c-4d9e-bf67-ebc6ae284098",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C56",
+      "claim": "Transcriptional control by a product or intermediate has emerged as a promising strategy for metabolic engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional control by a product or intermediate (Zhang et al., 2012; Raman et al., 2014; Tang and Cirino, 2011) and directed evolution of constituent pathway elements (Agresti et al., 2010; Alper et al., 2005; Dietrich et al., 2013) have emerged as promising strategies towards this goal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about metabolic engineering strategies is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "138bbdab-836b-4613-b2b8-b9e1ac21dda0",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C57",
+      "claim": "These biosensor approaches require high selectivity against intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches require high selectivity against intermediates (Zhang and Keasling, 2011), a feature demonstrated here that can be explicitly considered during the computational design and screening process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This requirement is stated in the Discussion and supported by citation to Zhang and Keasling, 2011.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "b4dbfed0-a0fd-4e1f-a5ab-25a6bd799176",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C58",
+      "claim": "The biosensors required only minimal modifications to retain high levels of sensitivity when developed in yeast and deployed across mammalian and plant species.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we engineered biosensors based on a designed scaffold derived from a bacterial protein. These biosensors required only minimal modifications to retain high levels of sensitivity when developed in yeast and deployed across mammalian and plant species, demonstrating unprecedented portability for biosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This portability result is stated in the Discussion and supported by the experimental data across different organisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "149fc9a2-9f81-48f1-9d6d-ae39f0315bdf",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C59",
+      "claim": "In some cases, these biosensors showed a greater dynamic range in mammalian cells relative to yeast, possibly due to larger cell volume and variations in protein degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, these biosensors showed a greater dynamic range in mammalian cells relative to yeast, possibly due to larger cell volume and variations in protein degradation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the Discussion with speculation about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "b627af0e-3ead-49e6-aace-52eb80a9d86a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C60",
+      "claim": "The CRISPR/Cas9 system can result in off-target genetic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR/Cas9 system provides a facile and robust genome-editing platform, but it can result in off-target genetic changes (Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about CRISPR/Cas9 is supported by citations to Fu et al., 2013; Mali et al., 2013; Pattanayak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "9c461a9f-ba89-4413-953e-059fd98143d5",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C61",
+      "claim": "Small molecule inducers including doxycycline and rapamycin may confer leaky expression and cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While small molecule inducers including doxycycline and rapamycin have been used, these molecules may confer leaky expression and cytotoxicity (Xie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about existing inducers is supported by citation to Xie et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "24d7e524-dd07-4184-a81e-2f01063eb9a6",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C62",
+      "claim": "By exploiting the low background of the LBD-biosensors, biosensor-Cas9 fusions with tightly controlled activation were produced.",
+      "claim_type": "EXPLICIT",
+      "source": "By exploiting the low background of the LBD-biosensors, we produced biosensor-Cas9 fusions with tightly controlled activation (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is stated in the Discussion and supported by data in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "1178677c-385f-4b56-ab12-7f6b9f18eae0",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C63",
+      "claim": "Switch-like control over CRISPR/Cas9 activity could reduce background activity and off-target editing.",
+      "claim_type": "EXPLICIT",
+      "source": "This switch-like control over CRISPR/Cas9 activity could reduce background activity and off-target editing, a critical feature for safer gene therapies (Mandal, et al., 2014; Wu et al., 2013; Schwank et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This potential application is stated in the Discussion and supported by citations to Mandal, et al., 2014; Wu et al., 2013; Schwank et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "3dd95167-d89f-4374-b40d-77968f1a9d5e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C64",
+      "claim": "In the transgenic Arabidopsis plants, ligand-dependent activation was observed in all cells, tissues and organs examined.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transgenic Arabidopsis plants, we observed ligand-dependent activation in all cells, tissues and organs examined (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the Discussion and supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "7eaffb59-ed13-4096-abeb-61b04ec6154f",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C65",
+      "claim": "The generality of the biosensor approach arises from the universality of the transcriptional activation and protein degradation machinery across eukaryotes, together with the modularity and tunability of the constituent parts.",
+      "claim_type": "EXPLICIT",
+      "source": "The generality of our approach arises from the universality of the transcriptional activation and protein degradation machinery across eukaryotes, together with the modularity and tunability of the constituent parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation for the generality of the method is stated in the Discussion based on the overall results.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "33bc9b1f-b16b-4c76-a8ce-cc0d5cbf1a4d",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C66",
+      "claim": "Error-prone PCR of DIG10.3 showed a mutation rate of 0\u20137 mutations/kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing of 16 colonies showed a mutation rate of 0\u20137 mutations/kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is stated in the Materials and methods section describing library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "e3a02207-2201-4793-bb83-9cff3174de29",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C67",
+      "claim": "Libraries of DIG0-yEGFP and PRO0-yEGFP were subjected to three rounds of fluorescence activated sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "Libraries of DIG0-yEGFP and PRO0-yEGFP integrated into yeast strain Y7092 were subject to three rounds of fluorescence activated sorting in a BD FACSAria IIu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental procedure is described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "0de50547-17a7-489e-8fe6-64b1545ba23e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C68",
+      "claim": "In the first round of FACS, cells showing the top 5% of fluorescence activation in the presence of steroid were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first round, cells were grown overnight to an OD600 of ~1.0 in YPAD containing steroid (500 \u03bcM digoxigenin or 50 \u03bcM progesterone), and cells showing the top 5% of fluorescence activation were collected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental procedure is described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "aef0cfe3-b5a1-4ae6-9602-a393c4d70b07",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C69",
+      "claim": "In the second sort, cells displaying the lowest ~3% fluorescence activation in the absence of steroid were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second sort, cells displaying the lowest ~3% fluorescence activation were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental procedure is described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "e9d7af05-eaad-425e-bdbd-bdc871b54465",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C70",
+      "claim": "A computational model of the Gal4-DIG10.3 fusion was built using Rosetta Remodel.",
+      "claim_type": "EXPLICIT",
+      "source": "A model of the Gal4-DIG10.3 fusion was built using Rosetta Remodel (Huang et al., 2011) to assess whether the linker between Gal4 and the DIG LBD, which are both dimers, would allow for the formation of a dimer in the fusion construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This computational method is described in the Materials and methods section and supported by citation to Huang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "1649a9b9-caa7-4142-8c79-0dea4184b77e",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C71",
+      "claim": "The lowest energy model of the Gal4-DIG fusion satisfied the dimer constraints, indicating that a homodimer configuration of the fusion is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest energy model satisfied the dimer constraints, indicating that a homodimer configuration of the fusion is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This computational result is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "ed6f46fb-688a-4cd0-ad49-d2fa32ae6af7",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C72",
+      "claim": "Progesterone became toxic at levels of 100 \u03bcM and above, leading to substantial cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Progesterone became toxic at levels of 100 \u03bcM and above, leading to substantial cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the figure legend for Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "092b515c-1702-4eaa-bbd4-47f87e118ae1",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C73",
+      "claim": "Beta-estradiol and hydrocortisone were not soluble in yeast growth media at levels above 25 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-estradiol and hydrocortisone were not soluble in yeast growth media at levels above 25 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the figure legend for Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "3b0005e0-d43a-44c1-b50f-282ace07a76a",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C74",
+      "claim": "The K562 cell line was obtained from the ATCC.",
+      "claim_type": "EXPLICIT",
+      "source": "The K562 cell line was obtained from the ATCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "b45cad69-34a8-4c71-b96d-17b761f178e6",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "claim_id": "C75",
+      "claim": "The K562 cell line was not authenticated and not tested for mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell line was not authenticated and not tested for mycoplasma contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "782f185c-bc80-4068-95e4-1be60ae0722c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method to engineer ligand-binding domains (LBDs) to be conditionally stable through mutagenesis. DIG0-GFP and PRO0-GFP fusions initially showed little ligand-dependent response, but after error-prone PCR mutagenesis and FACS sorting, variants with >5-fold activation were isolated. Mutations were found at dimer interfaces for DIG0 and throughout PRO0, with some mutations being additive and others contributing to sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 provide converging experimental evidence from mutagenesis, FACS sorting, and structural analysis showing that conditionally destabilizing mutations can be introduced into LBDs to create ligand-dependent biosensors. The data in Figures 1b-d and supplementary figures support the isolation of functional variants and characterization of mutation locations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "eff4548c-814b-4d1c-8900-2903c779f617",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TF-biosensors (transcription factor fusions) were engineered by combining LBDs with DNA-binding domains and transcriptional activation domains. Optimization through promoter/TAD selection and identification of Gal4 interface mutations (L77F, R60S) yielded biosensors with up to 60-fold activation, 10-fold improvement over LBD-biosensors alone. These showed rapid activation kinetics (5-fold in 1 hr, full activation ~14 hr) and reversibility (half-max ~5 hr after ligand withdrawal).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 are well-supported by dose-response, time-course, and optimization data shown in Figure 2 and supplements. The systematic optimization and kinetic characterization provide strong evidence for the improved performance of TF-biosensors over simple LBD-fluorescent protein fusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "bbebbdd2-5f42-434c-9f26-42e485833df0",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The biosensor system is modular and tunable. Different DNA-binding domains (LexA vs Gal4), transcriptional activation domains (VP16 vs B42), reporters (yEGFP vs HIS3), degrons (Mat\u03b12), and host strain modifications (PDR5 deletion) can be combined to optimize biosensor performance for different applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 demonstrate modularity through systematic component swapping experiments shown in Figure 3. Each modification is tested experimentally with appropriate controls, showing that the biosensor architecture is flexible and can be tuned for specific applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "83f5ad66-17af-4a40-9a3b-28cde3d164b5",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The progesterone biosensor GL77F-PRO1-V was used to improve biotransformation of pregnenolone to progesterone in yeast. The biosensor showed high selectivity for progesterone over pregnenolone and was used to detect progesterone production from 3\u03b2-HSD expression. Through directed evolution using the biosensor-coupled selection, two 3\u03b2-HSD mutants (N139D and F67Y) were isolated that produced 2-fold more progesterone than wild-type enzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C5 are supported by specificity data (Figure 4a-b), detection experiments (Figure 4d), and GC/MS validation (Figure 4f). The biosensor successfully enabled a metabolic engineering application with quantitative improvement in product titer, though the 2-fold improvement is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Biosensors developed in yeast were directly portable to mammalian K562 cells without codon optimization. Mammalian cells showed greater sensitivity to digoxin (up to 100 nM) than progesterone (1 mM), with the most sensitive progesterone biosensor (GL77F-PRO1-V) showing >100-fold activation. Dynamic range was greater in mammalian cells than yeast, possibly due to differences in cell size, doubling time, or protein degradation machinery. Activation kinetics showed 4-fold increase within 4 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39, C58-C59 are supported by dose-response and time-course data in mammalian cells (Figure 5a-d). The portability is demonstrated experimentally, though the mechanistic explanation for improved dynamic range (C38, C59) remains speculative. The lack of codon optimization yet retention of function is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "d8e42b41-4baf-446b-914e-8be000358e44",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Biosensor-Cas9 fusions were created to enable small molecule-controlled genome editing in mammalian cells. DIG3-Cas9 and PRO1-Cas9 fusions showed tight control with ~18-fold increase in GFP-positive cells upon digoxigenin addition compared to mock control. This approach could reduce off-target editing and provide safer control for gene therapy applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C62 are supported by the CRISPR editing data in Figure 5e showing ligand-dependent activation. However, the claim about reducing off-target editing (C63) is speculative and not directly tested. The 18-fold induction demonstrates proof-of-concept but lacks comprehensive characterization of editing specificity or off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "5747e674-f3f5-4b34-8070-b8b38cd14794",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Biosensors were functional in transgenic Arabidopsis plants. The G-DIG1-V biosensor with Mat\u03b12 degron and VP16 TAD showed 30-50-fold induction of luciferase after 42 hr in digoxin-treated plants. Both digoxin and digoxigenin activated the biosensor, with dose-dependent responses observed across multiple independent T1 lines. Ligand-dependent activation was observed in all examined cells, tissues, and organs, with specificity paralleling that in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 and C64 are supported by luciferase imaging data in Figure 6 and supplements. Multiple independent lines show consistent responses, dose-dependence is demonstrated, and specificity is confirmed. This represents successful transfer of the biosensor technology to a multicellular plant system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "10eba448-c70b-4fc4-aeda-b0616d246f1c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanism of conditional stability involves allosteric coupling between ligand binding and dimer formation. Mutations at dimer interfaces of both DIG0 LBD and Gal4 confer conditional stability, with computational modeling showing that homodimeric fusion formation is geometrically possible. The DIG0 scaffold derives from the nuclear transport factor 2 family with large dimer interfaces (~1200 \u00c5\u00b2) and binding sites (~600 \u00c5\u00b2). Interface mutations from DIG0/Gal4 transfer to progesterone biosensors, suggesting a general mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 integrate structural observations, computational modeling (C49, C70-C71), and cross-reactivity data (C23, C55) to propose a mechanistic model. The model is well-supported by the pattern of mutations and their transferability, though direct biophysical measurements of dimer stability or allosteric coupling are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "aa9ed801-3867-4117-a095-8f8110dbd36f",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Biosensors for digoxin and progesterone were developed from computationally-designed binding proteins. DIG0 binds digoxin/digoxigenin with picomolar affinity, while PRO0 (containing three rational mutations) binds progesterone with nanomolar affinity. These biosensors activate transcription with dynamic ranges up to ~100-fold across yeast, mammalian, and plant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C12-C13 are supported by the overall experimental results across all three organisms. The binding affinities are cited from prior work (Tinberg et al., 2013), and the dynamic ranges are demonstrated experimentally throughout the manuscript, with the highest values observed in mammalian cells (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "5f16736d-2521-49cb-a0bf-1af6ca80d580",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The generality of the biosensor approach arises from the universality of transcriptional activation and protein degradation machinery across eukaryotes, combined with the modularity and tunability of the constituent parts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by the successful demonstration of biosensor function across yeast, mammalian cells, and plants with minimal modifications. The mechanistic explanation invoking conserved eukaryotic machinery is reasonable given the experimental results, though it remains somewhat inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current biosensor methods have limitations including coupling to single output signals, limited repertoires of binding domains, and requirements for high selectivity against intermediates in metabolic engineering applications. Natural LBDs can be engineered to be conditionally stable through mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C11, C15, C56-C57 describe the state of the field and are supported by appropriate citations to prior work. These claims provide context for the current study and are generally accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "a5e475f5-4374-4165-8bbc-9fc194481c89",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental methods included error-prone PCR with mutation rates of 0-7 mutations/kb, three rounds of FACS sorting (collecting top 5% in presence of ligand, lowest 3% in absence, then top 5% again), and computational modeling using Rosetta Remodel showing that homodimeric Gal4-DIG fusion formation is geometrically possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 describe methodological details that are clearly stated in the Materials and Methods section. The mutation rates are quantified by sequencing, FACS parameters are specified, and computational modeling methods are cited appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "474a742e-165f-4201-89a1-56963e0c2fdb",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Progesterone became toxic at concentrations \u2265100 \u03bcM causing substantial cell death. \u03b2-estradiol and hydrocortisone were not soluble in yeast growth media above 25 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 report experimental observations about compound toxicity and solubility that are stated in figure legends. These are important technical limitations for the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "02df07e1-9641-4f79-a0b7-49da2658fe5b",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The K562 cell line was obtained from ATCC but was not authenticated and not tested for mycoplasma contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 transparently report the source and quality control status of the cell line used. The lack of authentication and mycoplasma testing is a methodological limitation that could affect reproducibility, though it does not necessarily invalidate the results shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    },
+    {
+      "id": "62bdf779-210a-45ae-b0a0-08f2f033a77c",
+      "content_id": "9efedbfb-5489-4cfe-a8ff-49231a71bf30",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Biosensors for small molecules can be used in applications ranging from metabolic engineering to orthogonal control of transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general statement about biosensor applications that is supported by the specific applications demonstrated in this manuscript (metabolic engineering in C5, C35; CRISPR control in C6, C41) as well as being general knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:09.402217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5bf9c6dd-605a-4471-8f8d-a399cab2342a",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "93d64cb7-01bf-428e-84ac-dcb73833c357",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "58c3afe4-d9fd-4eb8-8938-c3fc940e3966",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "62e40430-bb74-47f9-ba82-e942ec604f67",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "b179f182-ff2c-4fb5-9a44-10545cc69297",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "f5709815-1748-480f-b230-b18a21d24007",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "6eae82e5-8c6d-4422-b7b8-7d7360707b00",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "75d49e17-8ba4-4a3d-bf66-0c0e9458f3ef",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "d68032a4-ba09-4280-ae1c-5ebe58e494b8",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "be9f96b7-0c45-42ec-8901-ac065ef0e7dc",
+      "result_id": "782f185c-bc80-4068-95e4-1be60ae0722c"
+    },
+    {
+      "claim_id": "5cba8b05-3dfc-408f-aac0-53466b6c265a",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "df39f97c-50b1-4e6d-a949-0789a11bc11a",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "bd3f46f5-2e35-4966-91d2-46c0ae4305fc",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "ad22663d-6fcb-4e0c-854e-d3ae14afc548",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "dbd69f01-a228-40af-9160-91d5b994ce46",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "a5fc1459-dbc9-4745-8e71-f8a458f3748c",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "a5d6582d-7862-4df2-8329-16311faf2db5",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "09ebd10a-8fb4-41f0-90da-4ab1ca8b27bd",
+      "result_id": "eff4548c-814b-4d1c-8900-2903c779f617"
+    },
+    {
+      "claim_id": "d9c4b20b-4a39-4981-82ef-3ba45b623cf2",
+      "result_id": "bbebbdd2-5f42-434c-9f26-42e485833df0"
+    },
+    {
+      "claim_id": "c9dac4b6-2514-46f5-ae5e-f1fe36fd77f2",
+      "result_id": "bbebbdd2-5f42-434c-9f26-42e485833df0"
+    },
+    {
+      "claim_id": "8f9d4a4d-93b9-4cdc-8364-dc84d143584b",
+      "result_id": "bbebbdd2-5f42-434c-9f26-42e485833df0"
+    },
+    {
+      "claim_id": "9913a4ff-8a79-43ea-af05-62a57dfe62b5",
+      "result_id": "bbebbdd2-5f42-434c-9f26-42e485833df0"
+    },
+    {
+      "claim_id": "2f51f81b-3406-4ec4-9541-183445317788",
+      "result_id": "83f5ad66-17af-4a40-9a3b-28cde3d164b5"
+    },
+    {
+      "claim_id": "7434eb25-683e-4d2f-ad7e-a3a27fcda071",
+      "result_id": "83f5ad66-17af-4a40-9a3b-28cde3d164b5"
+    },
+    {
+      "claim_id": "252fdef4-a771-4b17-a7d9-68b28d8754b7",
+      "result_id": "83f5ad66-17af-4a40-9a3b-28cde3d164b5"
+    },
+    {
+      "claim_id": "0bf0db44-291f-466b-869b-9e1a1b62e34a",
+      "result_id": "83f5ad66-17af-4a40-9a3b-28cde3d164b5"
+    },
+    {
+      "claim_id": "184af258-8222-430f-a248-f81370f75d1e",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "3b4fa464-f934-473d-a857-48d49686c8eb",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "7dd32caf-9870-4f86-847c-157a6e34da2e",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "c687ccfe-9fcf-4a45-bf45-cdb29432d132",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "b4dbfed0-a0fd-4e1f-a5ab-25a6bd799176",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "149fc9a2-9f81-48f1-9d6d-ae39f0315bdf",
+      "result_id": "25064caf-61d4-4d2d-b52b-3bbf368ef6c8"
+    },
+    {
+      "claim_id": "4e277387-b966-4c5e-8e26-acf06755733f",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "04c8fd3c-db51-434f-97aa-8abc0ec31bc9",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "6f537899-e84b-4b6e-9888-37fcd65feeb4",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "b627af0e-3ead-49e6-aace-52eb80a9d86a",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "9c461a9f-ba89-4413-953e-059fd98143d5",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "24d7e524-dd07-4184-a81e-2f01063eb9a6",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "1178677c-385f-4b56-ab12-7f6b9f18eae0",
+      "result_id": "d8e42b41-4baf-446b-914e-8be000358e44"
+    },
+    {
+      "claim_id": "601a6a03-75b7-4958-bb39-5c7673a3c011",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "a4a60c52-5cd6-449a-b03e-863110318652",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "c2f9d890-cf35-46da-9723-646559f91100",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "034befbe-262d-4536-aa8e-da6de4bf5a44",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "ab4cb22f-fbff-4a4d-b06f-30a8c2e871ad",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "9d2f4f6d-6bab-4be1-ad91-a3ed03ea3b51",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "3dd95167-d89f-4374-b40d-77968f1a9d5e",
+      "result_id": "5747e674-f3f5-4b34-8070-b8b38cd14794"
+    },
+    {
+      "claim_id": "82b410e2-c1ec-4485-ab33-72896b9d1be6",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "32fcb66a-5245-4866-b0ee-cb5ec9a3f848",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "3e4d1113-506c-46c8-a7ee-c232126fed85",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "18bf91ed-4638-4006-b1f4-516961404a8e",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "6cc59965-2f0f-40bf-894b-34082bce3d80",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "e185429c-a781-4536-bb9f-3309f93f2e6b",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "71a2e014-ef0c-49c2-b9a6-a2a15be34f28",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "1f2d5f7f-1bf2-49b1-9627-2dc97de13c1c",
+      "result_id": "10eba448-c70b-4fc4-aeda-b0616d246f1c"
+    },
+    {
+      "claim_id": "395210b3-9f99-4e2b-8737-4a64be96cc20",
+      "result_id": "aa9ed801-3867-4117-a095-8f8110dbd36f"
+    },
+    {
+      "claim_id": "9fe384d6-66a8-4199-b7c2-22698c9ba5e8",
+      "result_id": "aa9ed801-3867-4117-a095-8f8110dbd36f"
+    },
+    {
+      "claim_id": "f14e3eba-5f0b-48a1-830f-ac3c3e449d1c",
+      "result_id": "aa9ed801-3867-4117-a095-8f8110dbd36f"
+    },
+    {
+      "claim_id": "77d13213-cd56-41a3-bd5c-61bfb858fade",
+      "result_id": "aa9ed801-3867-4117-a095-8f8110dbd36f"
+    },
+    {
+      "claim_id": "7eaffb59-ed13-4096-abeb-61b04ec6154f",
+      "result_id": "5f16736d-2521-49cb-a0bf-1af6ca80d580"
+    },
+    {
+      "claim_id": "7aae5451-fc3c-4c31-8faa-eeee134d2d98",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "6c18a837-75d0-4f96-9d4f-62fdde5aa2ba",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "8dd5186f-fcd3-4722-8824-e7ffcdee3f2a",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "b179f182-ff2c-4fb5-9a44-10545cc69297",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "bed3a7ba-919c-4d9e-bf67-ebc6ae284098",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "138bbdab-836b-4613-b2b8-b9e1ac21dda0",
+      "result_id": "6221a843-0ffd-4bc9-a3c3-62572261a3cb"
+    },
+    {
+      "claim_id": "33bc9b1f-b16b-4c76-a8ce-cc0d5cbf1a4d",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "e3a02207-2201-4793-bb83-9cff3174de29",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "0de50547-17a7-489e-8fe6-64b1545ba23e",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "aef0cfe3-b5a1-4ae6-9602-a393c4d70b07",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "e9d7af05-eaad-425e-bdbd-bdc871b54465",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "1649a9b9-caa7-4142-8c79-0dea4184b77e",
+      "result_id": "a5e475f5-4374-4165-8bbc-9fc194481c89"
+    },
+    {
+      "claim_id": "ed6f46fb-688a-4cd0-ad49-d2fa32ae6af7",
+      "result_id": "474a742e-165f-4201-89a1-56963e0c2fdb"
+    },
+    {
+      "claim_id": "092b515c-1702-4eaa-bbd4-47f87e118ae1",
+      "result_id": "474a742e-165f-4201-89a1-56963e0c2fdb"
+    },
+    {
+      "claim_id": "3b0005e0-d43a-44c1-b50f-282ace07a76a",
+      "result_id": "02df07e1-9641-4f79-a0b7-49da2658fe5b"
+    },
+    {
+      "claim_id": "b45cad69-34a8-4c71-b96d-17b761f178e6",
+      "result_id": "02df07e1-9641-4f79-a0b7-49da2658fe5b"
+    },
+    {
+      "claim_id": "4c5ba2bd-9f8c-45ba-9edc-74a1c9baf7ed",
+      "result_id": "62bdf779-210a-45ae-b0a0-08f2f033a77c"
+    }
+  ],
+  "comparisons": []
+}

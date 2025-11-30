@@ -1,0 +1,44 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "An enzyme produced by a bacteriophage can enter human cells.",
+    "claim_type": "EXPLICIT",
+    "source": "An enzyme produced by a bacteriophage can enter human cells and kill intracellular Streptococcus pyogenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a finding about the enzyme's capability",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "An enzyme produced by a bacteriophage can kill intracellular Streptococcus pyogenes.",
+    "claim_type": "EXPLICIT",
+    "source": "An enzyme produced by a bacteriophage can enter human cells and kill intracellular Streptococcus pyogenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a finding about the enzyme's bactericidal activity against intracellular bacteria",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Streptococcus pyogenes can exist intracellularly in human cells.",
+    "claim_type": "IMPLICIT",
+    "source": "An enzyme produced by a bacteriophage can enter human cells and kill intracellular Streptococcus pyogenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The statement about killing intracellular S. pyogenes implies that this bacterium can be found inside human cells",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  }
+]

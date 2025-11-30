@@ -1,0 +1,1286 @@
+{
+  "submission": {
+    "id": "ab7fa446-06e5-475f-84ec-da82ecc7ea5d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:29:03.311566Z",
+    "updated_at": "2025-11-29T21:29:03.311566Z"
+  },
+  "content": [
+    {
+      "id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "submission_id": "ab7fa446-06e5-475f-84ec-da82ecc7ea5d",
+      "content_type": "manuscript",
+      "content_text": "# Expression signature based on TP53 target genes doesn't predict response to TP53-MDM2 inhibitor in wild type TP53 tumors\n\n## Authors\n\n- Dmitriy Sonkin<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Cancer Treatment and Diagnosis National Cancer Institute Rockville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors. Not all wild type TP53 tumors are sensitive to such inhibitors. In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015). Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines. The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors.\n\n## Introduction\n\nA number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials across multiple tumor types. Mechanistically, only tumors with wild-type (WT) TP53 can potentially be sensitive to TP53-MDM2 inhibitors as confirmed in part by sensitivity of WT MEFs\u00a0cells and by the loss of sensitivity in TP53 knockout MEFs (Efeyan et al., 2007). Therefore, clinical trials of TP53-MDM2 inhibitors only include patients with WT TP53 tumors. Based on pre-clinical work, it is clear that not all WT TP53 tumors are sensitive to TP53-MDM2 inhibitors. Multiple attempts have been made to try to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors. Unfortunately, despite these efforts, there is currently no clinically validated and FDA-approved assay to identify WT TP53 tumors most likely to respond to TP53-MDM2 inhibitors.\n\nRecently, Jeay et al., (2015) attempted to find a messenger RNA (mRNA) predictive expression signature to selective TP53-MDM2 inhibitor NVP-CGM097 using a panel of cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012) with corresponding genetic and genomic datasets. As a result of this work, Jeay et al., (2015) described the mRNA signature based on 13 TP53 transcriptional target genes. The signature was generated using TP53-MDM2 inhibitor\u00a0sensitive versus insensitive cell lines without regard to the TP53 status. As a critical part of the validation work, Jeay et al., (2015) used an independent set of 52 cancer cell lines that were considered to be TP53 WT. Since the signature was generated without considering TP53 status and the fact that TP53-MDM2 inhibitors can only be effective in WT TP53 tumors, the signature is likely to represent a proxy for TP53 status. Therefore, it would not be expected to enhance the ability to predict sensitivity to TP53-MDM2 inhibitors in TP53 WT tumors, so the reported predictive ability of the Jeay et al., (2015) signature in the set of 52 cancer cell lines considered by authors as TP53 WT is surprising.\n\n## Results and discussion\n\nOne potential explanation for the reported predictive ability of the Jeay et al., (2015) signature in a validation set of 52 cancer cell lines that were considered TP53 WT is the possibility that some of these cell lines have TP53 inactivating alterations that were missed during cell lines selection. TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression. The CCLE provides sequencing, copy number and mRNA expression data, enabling careful examination of TP53 status in the set of 52 cancer cell lines used for validation by Jeay et al., (2015). Careful examination of TP53 status using publicly available CCLE mutation calls, copy number and mRNA expression (described in Materials and methods) identified 12 out of 52 cancer cell lines containing inactivating TP53 alterations, which are summarized in Table 1.\n\n**Table 1.**\n List of 12 cell lines with inactivated TP53 in the validation set of 52 cancer cell lines considered to be TP53 wild-type by Jeay et al., (2015).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line name</th>\n      <th>TP53 inactivating mutation(s)</th>\n      <th>Alternative reads/reference reads</th>\n      <th>TP53 mRNA (MAS5-150 201746_at)</th>\n      <th>TP53 CN ratio</th>\n      <th>Jeay et al. 13-gene signature prediction</th>\n      <th>NVP-CGM097 sensitivity</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>KASUMI-1</td>\n      <td>p. R248Q</td>\n      <td>52/0</td>\n      <td>265</td>\n      <td>0.54</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>COLO-818</td>\n      <td>p. C135R</td>\n      <td>34/0</td>\n      <td>257</td>\n      <td>1.14</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>IGR-37</td>\n      <td>p. C229fs</td>\n      <td>110/11</td>\n      <td>9</td>\n      <td>0.59</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>HCC202</td>\n      <td>p. T284fs</td>\n      <td>35/4</td>\n      <td>14</td>\n      <td>0.8</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>EFM-192A</td>\n      <td>p. F270fs</td>\n      <td>7/1</td>\n      <td>10</td>\n      <td>0.74</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>NCI-H1568</td>\n      <td>p. H179R</td>\n      <td>89/1</td>\n      <td>202</td>\n      <td>0.82</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>COLO-783</td>\n      <td>p. P27L</td>\n      <td>38/0</td>\n      <td>304</td>\n      <td>1.05</td>\n      <td>sensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>GA-10</td>\n      <td>p. I232N, p. P152L</td>\n      <td>94/50, 52/76</td>\n      <td>493</td>\n      <td>0.81</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>VMRC-RCW</td>\n      <td>p. I332_splice</td>\n      <td>192/68</td>\n      <td>63</td>\n      <td>1.65</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>JHH-5</td>\n      <td>p. PPQH190del</td>\n      <td>107/41</td>\n      <td>272</td>\n      <td>1.03</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>HDLM-2</td>\n      <td></td>\n      <td></td>\n      <td>1</td>\n      <td>0.94</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n    <tr>\n      <td>RERF-LC-KJ</td>\n      <td></td>\n      <td></td>\n      <td>25</td>\n      <td>1.3</td>\n      <td>insensitive</td>\n      <td>insensitive</td>\n    </tr>\n  </tbody>\n</table>\n\nAs can be seen in Table 1, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression. (Gene expression and Copy Number (CN) cutoffs are defined in Materials and methods). Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 12 cell lines are insensitive to NVP-CGM097.\n\nIn order to re-evaluate the performance of the signature in TP53 WT settings, the 12 cancer cell lines with inactivated TP53 listed in Table 1 have been removed from the Jeay et al., (2015) validation list of cell lines, resulting in set of 40 likely WT cancer cell lines listed in Supplementary file 1A with information on sensitivity to NVP-CGM097 and Jeay et al., (2015) 13-gene signature prediction. Results of reevaluation of signature performance are listed in Table 2.\n\n**Table 2.**\n Performance of Jeay et al., (2015) 13-gene signature prediction in validation set of 40 likely TP53 wild-type cancer cell lines.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Performance measure</th>\n      <th>Cell sensitivity defined by NVP-CGM097</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sensitivity</td>\n      <td>89% (24/27)</td>\n    </tr>\n    <tr>\n      <td>Specificity</td>\n      <td>15% (2/13) {DAN-G removal 8% (1/12) *}</td>\n    </tr>\n    <tr>\n      <td>PPV</td>\n      <td>68.6% (24/35)</td>\n    </tr>\n    <tr>\n      <td>NPV</td>\n      <td>40% (2/5) {DAN-G removal 25% (1/4) *}</td>\n    </tr>\n    <tr>\n      <td>Response rate</td>\n      <td>67.5% (27/40)</td>\n    </tr>\n  </tbody>\n</table>\n\n_* DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating the probable loss of TP53 mRNA.(Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA).NPV - negative predicted value; PPV - positive predicted value._\n\nAs can be seen from Table 2, the 13-gene signature positive predicted value for NVP-CGM097 does not noticeably differ from the response rate to the inhibitor. Also the specificity and negative predicted value (NPV) are low and it is likely that the actual specificity and NPV are even lower considering that DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss. (NVP-CFC218 is another TP53-MDM2 inhibitor used by Jeay et al., (2015) that is structurally and biochemically very similar to NVP-CGM097 and, as can be seen from Supplementary file 1B, signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097).\n\nFigure 1 provides a visual overview of data used for evaluating the 13-gene signature performance for NVP-CGM097 in the validation set of 40 likely TP53 WT cancer cell lines. Figure 1 clearly illustrates that the Jeay et al., (2015) 13-gene signature cannot differentiate between sensitive and insensitive cell lines. Keeping in mind that DAN-G cell line may have TP53 mRNA loss, there is only one cell line, HCC-95, that is correctly predicted to be insensitive. The presented reanalysis of signature performance in this article strongly suggests that 13-gene signature is a proxy for TP53 status. In such case, one can put forward the hypothesis that HCC-95 may harbor an inactivating alteration(s) that has been missed. If this is the case, the Jeay et al., (2015) 13-gene signature has zero specificity and zero NPV in the validation set of TP53 WT cancer cell lines.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10279/elife-10279-fig1-v3.jpg)\n\nIn clinical sequencing, special care is taken to make sure sufficient coverage is obtained across all target regions in order to reliably detect point mutations, insertions/deletions, fusions and copy number aberrations (Frampton et al., 2013). Often the additional step of manual review of sequencing analysis results is added to the workflow to detect false positive/negative calls due to particular sequence composition or computational pipeline artifacts. In preclinical sequencing, such detailed workflow is often too expensive to obtain. In the CCLE, RainDance technology (Mazutis et al., 2009) was used to fill some blind spots in the hybrid capture process, but such a process does not necessarily mitigate all problematic regions. This may explain the potentially missed TP53 inactivating alteration(s) in HCC-95.\n\nIn addition to providing sensitivity to NVP-CGM097 in the validation set, Jeay et al., (2015) also provided sensitivity data to NVP-CFC218 in the set of 356 CCLE cancer cell lines. In this set, Jeay et al., (2015) reported the presence of 113 cell lines with WT TP53 with response rate of 38% to NVP-CFC218. Based on the detection of 12 cell lines with inactivated TP53 in the validation set of 52 cell lines considered to be TP53 WT by Jeay et al., (2015),\u00a0a careful examination of TP53 status in the set of 113 cell lines considered to be TP53 WT resulted in identification of 29 cancer cell lines containing inactivating TP53 alterations, which are summarized in Supplementary file 1C. Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 29 cell lines are insensitive to NVP-CFC218. Sensitivity to NVP-CFC218 in the remaining 84 likely TP53 WT cell lines is summarized in Supplementary file 1D. Analysis of this data indicates the response rate of 51% (43/84).\n\nBased on the current analysis, it is clear that the Jeay et al., (2015) 13-gene signature is a proxy for TP53 status. It has a good, but of course not perfect, ability to detect cell lines with inactivated TP53 and this ability could be useful in some of the preclinical work. For example, it could be useful to look at the cell lines that are insensitive to TP53-MDM2 inhibitor(s) and also predicted by Jeay et al., (2015) 13-gene signature to be insensitive, but not annotated as TP53 inactivated; it is likely that significant fraction of such cell lines harbor undetected TP53 inactivating alterations.\n\nIn summary, it is clear that Jeay et al., (2015) 13-gene signature unfortunately cannot predict response to TP53-MDM2 inhibitor in TP53 WT tumors. Therefore the ability to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors is still out of reach. The development of such prediction capacity would be clinically beneficial and also may provide valuable insights into the understanding of some of important areas of cancer biology.\n\n## Materials and methods\n\nNVP-CGM097 and NVP-CFC218 pharmacologic cell line profiling data, 13-gene signature predictions have been obtained from (Jeay et al., 2015).\n\nAffymetrix U133Plus2 mRNA expression, Affymetrix SNP 6.0 data, OncoMap mutation calls (MacConaill et al., 2009), exome sequencing data (Hodges et al., 2007) have been obtained from CCLE website (http://www.broadinstitute.org/ccle/home). TP53 mutation calls have been obtained from the following two files: CCLE_hybrid_capture1650_hg19_NoCommonSNPs_NoNeutralVariants_CDS_2012.05.07.maf (22-May-2012) and 1650_HC_plus_RD_muts.maf.annotated (24-Nov-2014), both files are available for download from CCLE website. Genomic characterization section in Supplementary methods (Barretina et al., 2012) provides a detailed description of sequencing data generation and variant calling pipeline. Supplementary file 1E provides COSMIC information on TP53 mutations in cell lines listed in the Table 1 and also includes COSMIC sample ID for each of the cell lines.\n\nCopy number (CN) ratio is the ratio of signal intensity in a tumor sample versus normal reference samples normalized to total DNA quantity; thus a CN ratio of 1 corresponds to a diploid locus. CN ratio <0.6 indicates \u2018allelic loss\u2019. CN ratio <0.25 indicates \u2018bi-allelic loss\u2019.\n\nAll mRNA expression values are MAS5 normalized, with a 2% trimmed mean of 150 (Hubbell, Liu, and Mei 2002). TP53 Affymetrix (201746_at) mRNA MAS5-150 normalized expression values below 32 are considered to be indicative of TP53 \u2018mRNA loss\u2019.\n",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "014ede57-92dc-42db-bf9e-943250c9a1f3",
+      "submission_id": "ab7fa446-06e5-475f-84ec-da82ecc7ea5d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado at Boulder , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10279.009](https://doi.org/10.7554/eLife.10279.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Expression signature based on TP53 target genes doesn't predict response to TP53-MDM2 inhibitor in wild type TP53 tumors\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tony Hunter as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe current report by Sonkin challenges the conclusions of a recent paper by Jeay et al. reporting the discovery of a gene signature that could potentially predict the efficacy of small molecule inhibitors of the p53-MDM2 interaction in the treatment of tumors expressing wild-type p53. Upon reanalysis of the p53 mutational status of the cell lines employed, Sonkin determined that Jeay et al. had not assessed the mutational status of p53 correctly for a number of cell lines. When the analysis is repeated with the annotation by Sonkin, the gene signature no longer predicts drug efficacy, simply discriminating between wild-type and mutant cell lines. In this regard, the report by Sonkin is important, as it challenges some of the main conclusions in the report by Jeay et al. about the utility of the gene signature.\n\nHaving said that, it is surprising and unfortunate that neither the original nor the present paper has a clear description of how the variants were called. The original paper says, in the Materials and methods that \"gene level genetic alterations [\u2026] were compiled from the Sanger center COSMIC data and internal sources including Exome Capture Sequencing of 1600 cancer related genes\", but it does not say exactly what methods were used to call and/or validate variants. Likewise, the present paper simply states: \"Careful examination of TP53 status identified 12 out of 52 cancer cell lines containing TP53 alterations\u2026\".\n\nIt is then necessary for Sonkin to provide additional evidence for the mutations he found, just so that the reader can better understand why Jeay et al. missed them. Based on Table 1, these mutations have a lot of reads with alternative alleles, meaning that most algorithms should have caught them. Why did Jeay et al. miss them? Are they in hard-to-capture regions? Perhaps IGV screenshots could be provided in the supplement (along with GC content or read density map from some exomes to show hard-to-capture areas?). What exactly is the 'careful examination' performed by Sonkin? Also, is Sonkin proposing that the information in the Sanger Center and COSMIC databases about p53 mutational status of these cell lines is wrong? Is the method by Sonkin challenging the annotation in these databases and should these repositories be notified about these potential mistakes?\n\nIn brief, a more thorough discussion of the various methodologies employed for variant calling and an effort to explain why Jeay et al. and the public databases are producing different results from those obtained by Sonkin would be required to advance publication of this work, whose potential impact is very high, as it would not only challenge the paper by Jeay et al., but also public databases employed by thousands of researchers around the world.\n",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4e6d325c-0e0e-48e1-baa3-dbc9a69d1339",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C1",
+      "claim": "A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ongoing clinical trials that can be verified through clinical trial registries and literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "79ddcc9b-beb5-488a-80cb-04f453cf21b1",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C2",
+      "claim": "Not all wild type TP53 tumors are sensitive to TP53-MDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all wild type TP53 tumors are sensitive to such inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by preclinical work mentioned in the manuscript and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "2f554221-a9ab-49c4-9847-a74c66db8bce",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C3",
+      "claim": "An mRNA expression signature based on 13 TP53 transcriptional target genes was developed by Jeay et al. 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by citation to the Jeay et al. 2015 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "4293c46e-2690-41c2-b452-48dd02fbab14",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C4",
+      "claim": "23% of cell lines in the validation data set considered to be TP53 wild type contained TP53 inactivating alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the author's reanalysis of the data, with 12 out of 52 cell lines (23%) identified as having TP53 inactivating alterations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "4b8144fe-03b1-4598-8cc0-7ef4457b9631",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C5",
+      "claim": "The 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the author's reanalysis of the data after removing cell lines with TP53 inactivating alterations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "fbf8e7ad-7097-4c79-b76d-7d303254f17b",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C6",
+      "claim": "Only tumors with wild-type TP53 can potentially be sensitive to TP53-MDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, only tumors with wild-type (WT) TP53 can potentially be sensitive to TP53-MDM2 inhibitors as confirmed in part by sensitivity of WT MEFs cells and by the loss of sensitivity in TP53 knockout MEFs (Efeyan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Efeyan et al., 2007 and represents established mechanistic understanding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "2d488abf-7992-44ec-9114-55e58a3390c4",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C7",
+      "claim": "Clinical trials of TP53-MDM2 inhibitors only include patients with WT TP53 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, clinical trials of TP53-MDM2 inhibitors only include patients with WT TP53 tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanistic requirement for WT TP53 and represents current clinical practice.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "bcad7c5a-accd-4950-974c-e5d2770aa835",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C8",
+      "claim": "Not all WT TP53 tumors are sensitive to TP53-MDM2 inhibitors based on pre-clinical work.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on pre-clinical work, it is clear that not all WT TP53 tumors are sensitive to TP53-MDM2 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from preclinical studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "2bb7444c-7f02-4730-b139-e0bbf67dc76e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C9",
+      "claim": "There is currently no clinically validated and FDA-approved assay to identify WT TP53 tumors most likely to respond to TP53-MDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, despite these efforts, there is currently no clinically validated and FDA-approved assay to identify WT TP53 tumors most likely to respond to TP53-MDM2 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of clinical diagnostics that can be verified through FDA databases and clinical literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "25c87ccb-e2bf-4dcc-92ee-92f94c68b9ff",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C10",
+      "claim": "Jeay et al., (2015) used a panel of cell lines from the Cancer Cell Line Encyclopedia (CCLE) with corresponding genetic and genomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Jeay et al., (2015) attempted to find a messenger RNA (mRNA) predictive expression signature to selective TP53-MDM2 inhibitor NVP-CGM097 using a panel of cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012) with corresponding genetic and genomic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to both Jeay et al., 2015 and Barretina et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "66611809-73ab-4496-ac8e-be5cdd7a28f0",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C11",
+      "claim": "The mRNA signature was based on 13 TP53 transcriptional target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this work, Jeay et al., (2015) described the mRNA signature based on 13 TP53 transcriptional target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citation to Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "0170983b-c62b-4f59-ab69-d26b48ce4c7c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C12",
+      "claim": "The signature was generated using TP53-MDM2 inhibitor sensitive versus insensitive cell lines without regard to the TP53 status.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature was generated using TP53-MDM2 inhibitor sensitive versus insensitive cell lines without regard to the TP53 status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used by Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "6afe439a-26c2-4972-b9d7-e195e75846bf",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C13",
+      "claim": "Jeay et al., (2015) used an independent set of 52 cancer cell lines that were considered to be TP53 WT for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a critical part of the validation work, Jeay et al., (2015) used an independent set of 52 cancer cell lines that were considered to be TP53 WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation methodology from Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "c38d6371-1587-4422-ae94-01a41b9226f4",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C14",
+      "claim": "The signature is likely to represent a proxy for TP53 status.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the signature was generated without considering TP53 status and the fact that TP53-MDM2 inhibitors can only be effective in WT TP53 tumors, the signature is likely to represent a proxy for TP53 status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the methodology of signature generation and the mechanism of TP53-MDM2 inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "ccc1d6c2-641d-47e0-ad07-2987bf6a247c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C15",
+      "claim": "The signature would not be expected to enhance the ability to predict sensitivity to TP53-MDM2 inhibitors in TP53 WT tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it would not be expected to enhance the ability to predict sensitivity to TP53-MDM2 inhibitors in TP53 WT tumors, so the reported predictive ability of the Jeay et al., (2015) signature in the set of 52 cancer cell lines considered by authors as TP53 WT is surprising.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the understanding that the signature is a proxy for TP53 status.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "0109e4f1-ad08-42b4-8657-ff0cf3cbde15",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C16",
+      "claim": "TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about mechanisms of TP53 inactivation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "5fa24cc1-8be6-484c-a877-07bbba1c2f3c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C17",
+      "claim": "12 out of 52 cancer cell lines in the validation set contain inactivating TP53 alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful examination of TP53 status using publicly available CCLE mutation calls, copy number and mRNA expression (described in Materials and methods) identified 12 out of 52 cancer cell lines containing inactivating TP53 alterations, which are summarized in Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the author's analysis of CCLE data and is presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "9869126a-9a6a-4a4a-abf8-1f152c6bbff6",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C18",
+      "claim": "All 12 cell lines with inactivated TP53 are insensitive to NVP-CGM097.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 12 cell lines are insensitive to NVP-CGM097.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Table 1 showing all 12 cell lines are insensitive, and is consistent with the mechanism of action.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "8ff69495-a99d-47ab-8209-39a4b4ff26f4",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C19",
+      "claim": "The majority of 12 cell lines have inactivating TP53 point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Table 1, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "b6fee0a2-1ea2-41e5-b954-fbf8d51fca7b",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C20",
+      "claim": "Three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Table 1, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data in Table 1 and inference about the mechanism of mRNA loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "8c2ba608-3813-47da-b584-e54d377c08e0",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C21",
+      "claim": "Two cell lines have loss of TP53 mRNA expression without frameshift mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Table 1, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data presented in Table 1 (HDLM-2 and RERF-LC-KJ).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "8c00830a-6510-4182-be1c-5411d378ee02",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C22",
+      "claim": "After removing 12 cell lines with inactivated TP53, 40 likely WT cancer cell lines remain in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to re-evaluate the performance of the signature in TP53 WT settings, the 12 cancer cell lines with inactivated TP53 listed in Table 1 have been removed from the Jeay et al., (2015) validation list of cell lines, resulting in set of 40 likely WT cancer cell lines listed in Supplementary file 1A with information on sensitivity to NVP-CGM097 and Jeay et al., (2015) 13-gene signature prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the author's reanalysis: 52 - 12 = 40 cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "d679b866-a4f8-4390-ae45-152e39ed8f61",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C23",
+      "claim": "The 13-gene signature has a sensitivity of 89% (24/27) in the validation set of 40 likely TP53 wild-type cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity\t89% (24/27)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "f043ef8b-020a-4a0e-a40a-36744641eb41",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C24",
+      "claim": "The 13-gene signature has a specificity of 15% (2/13) in the validation set of 40 likely TP53 wild-type cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity\t15% (2/13) {DAN-G removal 8% (1/12) *}",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "c248bdde-4a9f-4135-9e5e-993a4214e6c3",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C25",
+      "claim": "The 13-gene signature has a positive predicted value (PPV) of 68.6% (24/35) in the validation set of 40 likely TP53 wild-type cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "PPV\t68.6% (24/35)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "e3f522d9-0447-43c9-b656-55f3e4fe877f",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C26",
+      "claim": "The 13-gene signature has a negative predicted value (NPV) of 40% (2/5) in the validation set of 40 likely TP53 wild-type cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "NPV\t40% (2/5) {DAN-G removal 25% (1/4) *}",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "69d65966-a37b-4762-9b88-1284506cf40c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C27",
+      "claim": "The response rate to NVP-CGM097 is 67.5% (27/40) in the validation set of 40 likely TP53 wild-type cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Response rate\t67.5% (27/40)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "cd2af2b1-a42c-42ca-aeb7-d528480148cc",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C28",
+      "claim": "The 13-gene signature positive predicted value for NVP-CGM097 does not noticeably differ from the response rate to the inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen from Table 2, the 13-gene signature positive predicted value for NVP-CGM097 does not noticeably differ from the response rate to the inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing PPV (68.6%) to response rate (67.5%) in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "4492abfb-7ab4-4140-98ca-03428adb229c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C29",
+      "claim": "The specificity and negative predicted value (NPV) of the 13-gene signature are low.",
+      "claim_type": "EXPLICIT",
+      "source": "Also the specificity and negative predicted value (NPV) are low and it is likely that the actual specificity and NPV are even lower considering that DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data in Table 2 showing specificity of 15% and NPV of 40%.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "9cd5d4c4-01b6-4c8f-bfb9-4f74d2f9711c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C30",
+      "claim": "DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Also the specificity and negative predicted value (NPV) are low and it is likely that the actual specificity and NPV are even lower considering that DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the author's analysis of TP53 mRNA expression data for DAN-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "eb94f40e-d1d5-41a6-be27-91782e10d8a3",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C31",
+      "claim": "NVP-CFC218 is structurally and biochemically very similar to NVP-CGM097.",
+      "claim_type": "EXPLICIT",
+      "source": "(NVP-CFC218 is another TP53-MDM2 inhibitor used by Jeay et al., (2015) that is structurally and biochemically very similar to NVP-CGM097 and, as can be seen from Supplementary file 1B, signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on information from Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "e93801e2-379d-468c-b138-90e174f48e64",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C32",
+      "claim": "The signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097.",
+      "claim_type": "EXPLICIT",
+      "source": "(NVP-CFC218 is another TP53-MDM2 inhibitor used by Jeay et al., (2015) that is structurally and biochemically very similar to NVP-CGM097 and, as can be seen from Supplementary file 1B, signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data presented in Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "bcd0e707-1bf3-40f2-bfab-7f813a6cf57c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C33",
+      "claim": "The Jeay et al., (2015) 13-gene signature cannot differentiate between sensitive and insensitive cell lines in TP53 WT tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 clearly illustrates that the Jeay et al., (2015) 13-gene signature cannot differentiate between sensitive and insensitive cell lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual analysis of Figure 1 showing overlap between sensitive and insensitive predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "5b5304d8-5425-47c9-92eb-b7175086ba8a",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C34",
+      "claim": "There is only one cell line, HCC-95, that is correctly predicted to be insensitive (excluding DAN-G which may have TP53 mRNA loss).",
+      "claim_type": "EXPLICIT",
+      "source": "Keeping in mind that DAN-G cell line may have TP53 mRNA loss, there is only one cell line, HCC-95, that is correctly predicted to be insensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the data presented in Figure 1 and Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "bab0a5c1-e5b5-466e-bf66-85d5b0a1a66f",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C35",
+      "claim": "The 13-gene signature is a proxy for TP53 status.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented reanalysis of signature performance in this article strongly suggests that 13-gene signature is a proxy for TP53 status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reanalysis showing the signature primarily identifies TP53-inactivated cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "290925ce-38c7-45e4-b7d4-295757a968db",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C36",
+      "claim": "HCC-95 may harbor an inactivating alteration(s) that has been missed.",
+      "claim_type": "EXPLICIT",
+      "source": "In such case, one can put forward the hypothesis that HCC-95 may harbor an inactivating alteration(s) that has been missed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the pattern that the signature identifies TP53-inactivated cell lines.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "35980e02-45ba-4815-8d97-360c9dd80f3e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C37",
+      "claim": "If HCC-95 has a missed TP53 inactivating alteration, the Jeay et al., (2015) 13-gene signature has zero specificity and zero NPV in the validation set of TP53 WT cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is the case, the Jeay et al., (2015) 13-gene signature has zero specificity and zero NPV in the validation set of TP53 WT cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional inference based on the hypothesis about HCC-95.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "ecfa07ea-515d-4313-8f0f-a15ff91dc02e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C38",
+      "claim": "In clinical sequencing, special care is taken to ensure sufficient coverage across all target regions to reliably detect various types of alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical sequencing, special care is taken to make sure sufficient coverage is obtained across all target regions in order to reliably detect point mutations, insertions/deletions, fusions and copy number aberrations (Frampton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Frampton et al., 2013 and represents standard clinical practice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "def5c1fc-ab74-43e8-94b5-d1733a21404e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C39",
+      "claim": "Manual review of sequencing analysis results is often added to clinical sequencing workflows to detect false positive/negative calls.",
+      "claim_type": "EXPLICIT",
+      "source": "Often the additional step of manual review of sequencing analysis results is added to the workflow to detect false positive/negative calls due to particular sequence composition or computational pipeline artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents standard practice in clinical sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "7a828ee6-7f45-41da-9724-ca90e1de190c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C40",
+      "claim": "In preclinical sequencing, detailed workflow is often too expensive to obtain.",
+      "claim_type": "EXPLICIT",
+      "source": "In preclinical sequencing, such detailed workflow is often too expensive to obtain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about preclinical research practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "aeeea852-6590-4a4e-a1ee-d03ed00d8d84",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C41",
+      "claim": "In the CCLE, RainDance technology was used to fill some blind spots in the hybrid capture process.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CCLE, RainDance technology (Mazutis et al., 2009) was used to fill some blind spots in the hybrid capture process, but such a process does not necessarily mitigate all problematic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mazutis et al., 2009 and describes CCLE methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "5296a4d2-4db7-496e-9b46-b3ecf54d2611",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C42",
+      "claim": "RainDance technology does not necessarily mitigate all problematic regions in sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CCLE, RainDance technology (Mazutis et al., 2009) was used to fill some blind spots in the hybrid capture process, but such a process does not necessarily mitigate all problematic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the technology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "b97e7100-90ac-49d0-9469-a6997b3cad45",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C43",
+      "claim": "Limitations in preclinical sequencing may explain the potentially missed TP53 inactivating alteration(s) in HCC-95.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain the potentially missed TP53 inactivating alteration(s) in HCC-95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why HCC-95 might have a missed alteration.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "31df55de-f4a8-42f4-a13e-b9eab75fbf69",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C44",
+      "claim": "Jeay et al., (2015) provided sensitivity data to NVP-CFC218 in a set of 356 CCLE cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing sensitivity to NVP-CGM097 in the validation set, Jeay et al., (2015) also provided sensitivity data to NVP-CFC218 in the set of 356 CCLE cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data from Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "52f2188a-5554-49ff-8b29-736ae4f8813c",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C45",
+      "claim": "Jeay et al., (2015) reported the presence of 113 cell lines with WT TP53 with response rate of 38% to NVP-CFC218.",
+      "claim_type": "EXPLICIT",
+      "source": "In this set, Jeay et al., (2015) reported the presence of 113 cell lines with WT TP53 with response rate of 38% to NVP-CFC218.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from Jeay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "ac9642eb-8f93-47e1-a707-99f8616f6d6a",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C46",
+      "claim": "29 cancer cell lines out of 113 considered to be TP53 WT by Jeay et al. contain inactivating TP53 alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the detection of 12 cell lines with inactivated TP53 in the validation set of 52 cell lines considered to be TP53 WT by Jeay et al., (2015), a careful examination of TP53 status in the set of 113 cell lines considered to be TP53 WT resulted in identification of 29 cancer cell lines containing inactivating TP53 alterations, which are summarized in Supplementary file 1C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the author's reanalysis of CCLE data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "4a182cd6-f999-4ef4-a250-5ab95033cb4d",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C47",
+      "claim": "All 29 cell lines with inactivated TP53 are insensitive to NVP-CFC218.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 29 cell lines are insensitive to NVP-CFC218.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data in Supplementary file 1C and the mechanism of action of TP53-MDM2 inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "a5c406a9-3a2b-443a-90c9-152edc5994f3",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C48",
+      "claim": "The response rate to NVP-CFC218 in the remaining 84 likely TP53 WT cell lines is 51% (43/84).",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity to NVP-CFC218 in the remaining 84 likely TP53 WT cell lines is summarized in Supplementary file 1D. Analysis of this data indicates the response rate of 51% (43/84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the author's analysis of data after removing cell lines with TP53 inactivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "057a6415-9813-4b6e-8747-4df68522004a",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C49",
+      "claim": "The Jeay et al., (2015) 13-gene signature has a good, but not perfect, ability to detect cell lines with inactivated TP53.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the current analysis, it is clear that the Jeay et al., (2015) 13-gene signature is a proxy for TP53 status. It has a good, but of course not perfect, ability to detect cell lines with inactivated TP53 and this ability could be useful in some of the preclinical work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reanalysis showing the signature identifies many but not all TP53-inactivated cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "b16a8803-e2a2-4009-b9c2-b90e8640ac2b",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C50",
+      "claim": "The signature's ability to detect TP53 inactivation could be useful in some preclinical work.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a good, but of course not perfect, ability to detect cell lines with inactivated TP53 and this ability could be useful in some of the preclinical work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential utility of the signature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "5a822505-38cc-4208-96f7-00a1af03a8c0",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C51",
+      "claim": "It is likely that a significant fraction of cell lines that are insensitive to TP53-MDM2 inhibitor(s) and predicted by the signature to be insensitive, but not annotated as TP53 inactivated, harbor undetected TP53 inactivating alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it could be useful to look at the cell lines that are insensitive to TP53-MDM2 inhibitor(s) and also predicted by Jeay et al., (2015) 13-gene signature to be insensitive, but not annotated as TP53 inactivated; it is likely that significant fraction of such cell lines harbor undetected TP53 inactivating alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the pattern observed in the reanalysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "9c5735ae-e250-4d7c-b509-46121895c6b6",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C52",
+      "claim": "The ability to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors is still out of reach.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, it is clear that Jeay et al., (2015) 13-gene signature unfortunately cannot predict response to TP53-MDM2 inhibitor in TP53 WT tumors. Therefore the ability to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors is still out of reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the reanalysis showing the signature does not work in TP53 WT tumors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "95565e61-371d-4e0b-ab22-ca274a9568a1",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C53",
+      "claim": "The development of prediction capacity for TP53-MDM2 inhibitor sensitivity would be clinically beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of such prediction capacity would be clinically beneficial and also may provide valuable insights into the understanding of some of important areas of cancer biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the potential value of developing such a predictive tool.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "a444cf8e-7d23-463a-abda-1c15bb30424a",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C54",
+      "claim": "The development of prediction capacity for TP53-MDM2 inhibitor sensitivity may provide valuable insights into cancer biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of such prediction capacity would be clinically beneficial and also may provide valuable insights into the understanding of some of important areas of cancer biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential scientific benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "235fe9c0-169a-40ce-9bac-5b0b53a84e3e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C55",
+      "claim": "TP53 Affymetrix (201746_at) mRNA MAS5-150 normalized expression values below 32 are considered to be indicative of TP53 'mRNA loss'.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 Affymetrix (201746_at) mRNA MAS5-150 normalized expression values below 32 are considered to be indicative of TP53 'mRNA loss'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition established by the author for this analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "755549e7-f2ed-440b-9a03-eda1a3a05305",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C56",
+      "claim": "A CN ratio <0.6 indicates 'allelic loss'.",
+      "claim_type": "EXPLICIT",
+      "source": "CN ratio <0.6 indicates 'allelic loss'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition for interpreting copy number data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "3af178e7-f050-4858-98a8-58c8b7ee1d68",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C57",
+      "claim": "A CN ratio <0.25 indicates 'bi-allelic loss'.",
+      "claim_type": "EXPLICIT",
+      "source": "CN ratio <0.25 indicates 'bi-allelic loss'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition for interpreting copy number data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "685995c1-3a9e-41e1-92fb-cee3d701ae5b",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C58",
+      "claim": "A CN ratio of 1 corresponds to a diploid locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Copy number (CN) ratio is the ratio of signal intensity in a tumor sample versus normal reference samples normalized to total DNA quantity; thus a CN ratio of 1 corresponds to a diploid locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in copy number analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "cb3a758e-0ad0-465e-a415-00c65529a71e",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C59",
+      "claim": "DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating probable loss of TP53 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating the probable loss of TP53 mRNA.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 1 annotation and based on the expression value being just above the cutoff of 32.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "e6a7bfe1-c619-49b4-972d-fd009ba7e4f2",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C60",
+      "claim": "Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "(Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is a methodological definition stated in Table 2 footnote.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "c0858827-db45-4d69-9b34-c42ebeca1d11",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C61",
+      "claim": "If DAN-G is removed from analysis, the specificity becomes 8% (1/12).",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity\t15% (2/13) {DAN-G removal 8% (1/12) *}",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as alternative analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "59ad65f6-ea65-4a20-a963-d414c48a43ae",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "claim_id": "C62",
+      "claim": "If DAN-G is removed from analysis, the NPV becomes 25% (1/4).",
+      "claim_type": "EXPLICIT",
+      "source": "NPV\t40% (2/5) {DAN-G removal 25% (1/4) *}",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is presented as alternative analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f3e3610c-8918-4d51-b6ca-38a25db07661",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TP53-MDM2 inhibitors are under clinical investigation in TP53 wild-type tumors, but not all wild-type tumors respond to these inhibitors. Currently, no clinically validated assay exists to predict which wild-type TP53 tumors will respond.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 establish the clinical context and unmet need. The mechanistic requirement for WT TP53 (C6) is supported by citation, the variable response in WT tumors (C2, C8) is established knowledge, and the lack of validated predictive assays (C9) is verifiable. These background claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Jeay et al. (2015) developed a 13-gene mRNA expression signature based on TP53 transcriptional targets using CCLE cell lines, generating the signature by comparing inhibitor-sensitive versus insensitive cell lines without regard to TP53 status, and validated it on 52 cell lines considered TP53 wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C13 accurately describe the prior work by Jeay et al. (2015) and are directly supported by citations. The description of the methodology and validation approach is factual and verifiable from the cited source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "73e25e2d-9c84-43f0-b47f-a9fd950b18b4",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 13-gene signature likely represents a proxy for TP53 status rather than a predictor of sensitivity within TP53 wild-type tumors, because it was generated without considering TP53 status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 present a logical inference based on the methodology described in C12. Since the signature was trained on sensitive vs. insensitive cell lines without filtering for TP53 status, and TP53-MDM2 inhibitors only work in WT TP53 tumors, the signature would be expected to primarily distinguish WT from mutant TP53 rather than predict response within WT tumors. This reasoning is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reanalysis of the validation dataset identified 12 out of 52 cell lines (23%) with TP53 inactivating alterations that were missed in the original study. These alterations included point mutations, frameshift mutations with mRNA loss, and mRNA loss without detected mutations. All 12 cell lines were insensitive to NVP-CGM097.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C21 are supported by the author's reanalysis of publicly available CCLE data presented in Table 1. The identification of specific mutations, copy number changes, and mRNA expression levels is data-driven. The insensitivity of all 12 cell lines (C18) is consistent with the mechanism requiring WT TP53 and is documented in Table 1. The methodology for defining TP53 inactivation (C16, C55-C58) is clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After removing the 12 cell lines with TP53 inactivation, reanalysis of the remaining 40 likely WT cell lines shows the 13-gene signature has poor predictive performance: sensitivity 89%, specificity 15%, PPV 68.6% (similar to the 67.5% response rate), and NPV 40%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 present the reanalysis results in Table 2. The calculations are verifiable (40 = 52-12), and the performance metrics are correctly computed from the data. The key observation that PPV (68.6%) does not differ meaningfully from the response rate (67.5%) (C28) is accurate and indicates the signature provides no additional predictive value beyond baseline response rate. The low specificity (15%) and NPV (40%) are correctly noted (C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The DAN-G cell line has TP53 mRNA expression of 33, just above the cutoff of 32 for mRNA loss, suggesting possible TP53 inactivation. If DAN-G is excluded, the signature's specificity drops to 8% and NPV to 25%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C59-C62 address an important edge case. The mRNA expression value of 33 for DAN-G is documented, and the cutoff of 32 is clearly defined (C55, C60). The sensitivity analysis excluding DAN-G (C61-C62) is presented in Table 2 and shows even worse performance, strengthening the conclusion that the signature lacks predictive value in WT TP53 tumors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "e0716e07-d04f-47df-b03f-6756fccaee11",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Visual analysis of the data (Figure 1) shows the 13-gene signature cannot differentiate between sensitive and insensitive cell lines in the WT TP53 validation set, with only one cell line (HCC-95) correctly predicted as insensitive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by Figure 1, which shows substantial overlap between predicted-sensitive (red) and predicted-insensitive (blue) cell lines across the range of actual sensitivities. The observation that only HCC-95 is correctly predicted as insensitive (excluding DAN-G) is consistent with the low specificity reported in Table 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of a larger CCLE dataset (356 cell lines) with a second inhibitor (NVP-CFC218) shows similar results: 29 of 113 cell lines (26%) considered WT TP53 by Jeay et al. had TP53 inactivating alterations, all were insensitive, and the response rate in the remaining 84 likely WT cell lines was 51%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32, C44-C48 extend the analysis to a larger dataset and second inhibitor. The similar rate of misclassified cell lines (26% vs 23%) and consistent pattern of all inactivated TP53 cell lines being insensitive (C47) strengthens the main findings. The data is presented in Supplementary files 1C-D. The claim that NVP-CFC218 shows the same pattern (C32) is supported by Supplementary file 1B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "3bf15063-c90b-4bb6-a431-db238955d727",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 13-gene signature is a proxy for TP53 status with good but imperfect ability to detect TP53 inactivation, but it cannot predict response to TP53-MDM2 inhibitors in TP53 wild-type tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, C49, C52 represent the main conclusions. The evidence from the reanalysis (low specificity and NPV in WT tumors, PPV matching baseline response rate, visual overlap in Figure 1) strongly supports that the signature functions as a TP53 status detector rather than a response predictor in WT tumors. The conclusion is logically derived from the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "fe2011f0-ac37-4172-9db3-76070a7641e4",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HCC-95 may harbor an undetected TP53 inactivating alteration, potentially due to limitations in preclinical sequencing compared to clinical sequencing standards. If true, the signature would have zero specificity and NPV in WT TP53 tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C43 are speculative (C36, C37, C43). While the hypothesis about HCC-95 is reasonable given the pattern observed, it remains unverified. The discussion of sequencing limitations (C38-C42) is accurate but doesn't confirm the hypothesis. The conditional conclusion (C37) depends on unproven speculation, making this result uncertain despite being a plausible interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "da60e38d-e449-4fc0-9597-189ca4b38609",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The signature's ability to detect TP53 inactivation could be useful in preclinical work to identify cell lines with undetected TP53 inactivating alterations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 are speculative about potential utility. While the signature does identify some TP53-inactivated cell lines (as shown in the reanalysis), its imperfect performance (missing some inactivated cell lines) and the speculative nature of future applications make this uncertain. No data is presented to validate this proposed use.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "2a619bc6-a2e2-4878-913a-09f7a0d57068",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Development of a predictive assay for TP53-MDM2 inhibitor sensitivity would be clinically beneficial and provide insights into cancer biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are general statements about the value of developing such predictive capacity. Given the established clinical use of these inhibitors (C1) and the demonstrated lack of current predictive tools (C9), these claims about potential benefit are reasonable and supported by the context, though they are forward-looking rather than data-driven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    },
+    {
+      "id": "c35da357-228c-46ba-bdbe-784140c1dbcf",
+      "content_id": "7262e9dc-4b18-4475-bc4a-ea659dc710ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological definitions: TP53 mRNA expression below 32 (MAS5-150 normalized) indicates mRNA loss; CN ratio <0.6 indicates allelic loss; CN ratio <0.25 indicates bi-allelic loss; CN ratio of 1 corresponds to diploid locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 define the methodological criteria used in the analysis. The copy number definitions (C56-C58) are standard in the field. The mRNA expression cutoff (C55) is defined by the author for this analysis and appears reasonable given the data distribution, though the specific threshold choice could be debated. These definitions are clearly stated and consistently applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:29:03.311566Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4e6d325c-0e0e-48e1-baa3-dbc9a69d1339",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "79ddcc9b-beb5-488a-80cb-04f453cf21b1",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "fbf8e7ad-7097-4c79-b76d-7d303254f17b",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "2d488abf-7992-44ec-9114-55e58a3390c4",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "bcad7c5a-accd-4950-974c-e5d2770aa835",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "2bb7444c-7f02-4730-b139-e0bbf67dc76e",
+      "result_id": "f3e3610c-8918-4d51-b6ca-38a25db07661"
+    },
+    {
+      "claim_id": "2f554221-a9ab-49c4-9847-a74c66db8bce",
+      "result_id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690"
+    },
+    {
+      "claim_id": "25c87ccb-e2bf-4dcc-92ee-92f94c68b9ff",
+      "result_id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690"
+    },
+    {
+      "claim_id": "66611809-73ab-4496-ac8e-be5cdd7a28f0",
+      "result_id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690"
+    },
+    {
+      "claim_id": "0170983b-c62b-4f59-ab69-d26b48ce4c7c",
+      "result_id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690"
+    },
+    {
+      "claim_id": "6afe439a-26c2-4972-b9d7-e195e75846bf",
+      "result_id": "2d72eedf-aec9-46ee-a9b1-bff9e8b49690"
+    },
+    {
+      "claim_id": "c38d6371-1587-4422-ae94-01a41b9226f4",
+      "result_id": "73e25e2d-9c84-43f0-b47f-a9fd950b18b4"
+    },
+    {
+      "claim_id": "ccc1d6c2-641d-47e0-ad07-2987bf6a247c",
+      "result_id": "73e25e2d-9c84-43f0-b47f-a9fd950b18b4"
+    },
+    {
+      "claim_id": "4293c46e-2690-41c2-b452-48dd02fbab14",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "0109e4f1-ad08-42b4-8657-ff0cf3cbde15",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "5fa24cc1-8be6-484c-a877-07bbba1c2f3c",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "9869126a-9a6a-4a4a-abf8-1f152c6bbff6",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "8ff69495-a99d-47ab-8209-39a4b4ff26f4",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "b6fee0a2-1ea2-41e5-b954-fbf8d51fca7b",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "8c2ba608-3813-47da-b584-e54d377c08e0",
+      "result_id": "75e7c819-533c-4f73-80ba-6fbf6b0f87c6"
+    },
+    {
+      "claim_id": "8c00830a-6510-4182-be1c-5411d378ee02",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "d679b866-a4f8-4390-ae45-152e39ed8f61",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "f043ef8b-020a-4a0e-a40a-36744641eb41",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "c248bdde-4a9f-4135-9e5e-993a4214e6c3",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "e3f522d9-0447-43c9-b656-55f3e4fe877f",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "69d65966-a37b-4762-9b88-1284506cf40c",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "cd2af2b1-a42c-42ca-aeb7-d528480148cc",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "4492abfb-7ab4-4140-98ca-03428adb229c",
+      "result_id": "eda3bd26-0102-4ea1-b809-d5cb29dba1de"
+    },
+    {
+      "claim_id": "9cd5d4c4-01b6-4c8f-bfb9-4f74d2f9711c",
+      "result_id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f"
+    },
+    {
+      "claim_id": "cb3a758e-0ad0-465e-a415-00c65529a71e",
+      "result_id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f"
+    },
+    {
+      "claim_id": "e6a7bfe1-c619-49b4-972d-fd009ba7e4f2",
+      "result_id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f"
+    },
+    {
+      "claim_id": "c0858827-db45-4d69-9b34-c42ebeca1d11",
+      "result_id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f"
+    },
+    {
+      "claim_id": "59ad65f6-ea65-4a20-a963-d414c48a43ae",
+      "result_id": "7f87f732-f19d-4168-a2cd-31a59cdb5b8f"
+    },
+    {
+      "claim_id": "bcd0e707-1bf3-40f2-bfab-7f813a6cf57c",
+      "result_id": "e0716e07-d04f-47df-b03f-6756fccaee11"
+    },
+    {
+      "claim_id": "5b5304d8-5425-47c9-92eb-b7175086ba8a",
+      "result_id": "e0716e07-d04f-47df-b03f-6756fccaee11"
+    },
+    {
+      "claim_id": "eb94f40e-d1d5-41a6-be27-91782e10d8a3",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "e93801e2-379d-468c-b138-90e174f48e64",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "31df55de-f4a8-42f4-a13e-b9eab75fbf69",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "52f2188a-5554-49ff-8b29-736ae4f8813c",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "ac9642eb-8f93-47e1-a707-99f8616f6d6a",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "4a182cd6-f999-4ef4-a250-5ab95033cb4d",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "a5c406a9-3a2b-443a-90c9-152edc5994f3",
+      "result_id": "3c3b0e85-3bb6-4233-8860-2fb42249a23b"
+    },
+    {
+      "claim_id": "4b8144fe-03b1-4598-8cc0-7ef4457b9631",
+      "result_id": "3bf15063-c90b-4bb6-a431-db238955d727"
+    },
+    {
+      "claim_id": "bab0a5c1-e5b5-466e-bf66-85d5b0a1a66f",
+      "result_id": "3bf15063-c90b-4bb6-a431-db238955d727"
+    },
+    {
+      "claim_id": "057a6415-9813-4b6e-8747-4df68522004a",
+      "result_id": "3bf15063-c90b-4bb6-a431-db238955d727"
+    },
+    {
+      "claim_id": "9c5735ae-e250-4d7c-b509-46121895c6b6",
+      "result_id": "3bf15063-c90b-4bb6-a431-db238955d727"
+    },
+    {
+      "claim_id": "290925ce-38c7-45e4-b7d4-295757a968db",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "35980e02-45ba-4815-8d97-360c9dd80f3e",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "ecfa07ea-515d-4313-8f0f-a15ff91dc02e",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "def5c1fc-ab74-43e8-94b5-d1733a21404e",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "7a828ee6-7f45-41da-9724-ca90e1de190c",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "aeeea852-6590-4a4e-a1ee-d03ed00d8d84",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "5296a4d2-4db7-496e-9b46-b3ecf54d2611",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "b97e7100-90ac-49d0-9469-a6997b3cad45",
+      "result_id": "fe2011f0-ac37-4172-9db3-76070a7641e4"
+    },
+    {
+      "claim_id": "b16a8803-e2a2-4009-b9c2-b90e8640ac2b",
+      "result_id": "da60e38d-e449-4fc0-9597-189ca4b38609"
+    },
+    {
+      "claim_id": "5a822505-38cc-4208-96f7-00a1af03a8c0",
+      "result_id": "da60e38d-e449-4fc0-9597-189ca4b38609"
+    },
+    {
+      "claim_id": "95565e61-371d-4e0b-ab22-ca274a9568a1",
+      "result_id": "2a619bc6-a2e2-4878-913a-09f7a0d57068"
+    },
+    {
+      "claim_id": "a444cf8e-7d23-463a-abda-1c15bb30424a",
+      "result_id": "2a619bc6-a2e2-4878-913a-09f7a0d57068"
+    },
+    {
+      "claim_id": "235fe9c0-169a-40ce-9bac-5b0b53a84e3e",
+      "result_id": "c35da357-228c-46ba-bdbe-784140c1dbcf"
+    },
+    {
+      "claim_id": "755549e7-f2ed-440b-9a03-eda1a3a05305",
+      "result_id": "c35da357-228c-46ba-bdbe-784140c1dbcf"
+    },
+    {
+      "claim_id": "3af178e7-f050-4858-98a8-58c8b7ee1d68",
+      "result_id": "c35da357-228c-46ba-bdbe-784140c1dbcf"
+    },
+    {
+      "claim_id": "685995c1-3a9e-41e1-92fb-cee3d701ae5b",
+      "result_id": "c35da357-228c-46ba-bdbe-784140c1dbcf"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "STOMP is a novel proteomics technique that combines two-photon laser scanning microscopy with photochemical affinity labeling using a 6HisBP photo-tag (1105 Da) to interrogate micron-scale regions in fixed tissue without genetic manipulation. The technique achieves single-micron resolution (0.67 \u00b5m xy, 1.48 \u00b5m z), which is an order of magnitude better than LCM, and uses automated targeting without manual tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C33-C48 collectively describe the STOMP method with appropriate technical detail. The novelty claim (C35) is supported by citation showing prior two-photon photochemistry but not for affinity labeling. The resolution comparison to LCM (C36) is valid given LCM's ~10 \u00b5m resolution (C19). DEPC treatment (C48) to block endogenous histidines is well-supported by citation and addresses a clear technical challenge (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C62"
+    ],
+    "result": "The spatial resolution of STOMP was measured by photo-tagging single voxels and imaging with anti-His antibody, yielding FWHM values of 0.67 \u00b5m (x,y) and 1.48 \u00b5m (z), corresponding to an ellipsoidal volume of 0.38 \u00b5m\u00b3, which defines the minimum analyzable ROI size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe direct experimental measurement of resolution using immunofluorescence visualization of photo-tagged spots (Figure 2). The calculation of ellipsoidal volume (C50) is straightforward geometry. The inference that 0.38 \u00b5m\u00b3 ROIs can be analyzed (C62) logically follows from the measured resolution, though practical application would require pooling multiple such small features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "STOMP was applied to TgCRND8 mouse brain sections (8 months old, methanol-fixed) using ThS to identify plaques. Two-photon excitation accurately targeted plaques as confirmed by anti-His6 immunofluorescence, with minimal non-specific binding shown by dark controls. Two sections (~2\u00d710\u2076 \u00b5m\u00b3 total) were sufficient for mass spectrometry analysis, requiring 12-16 hours of microscope time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe the experimental application to mouse tissue with appropriate controls. The TgCRND8 model is well-established (C51-C52, cited). Dark controls (C56-C57) demonstrate specificity. The tissue volume requirements (C59-C60) and time requirements (C61) provide practical benchmarks. Figure 1C3 and 1D support the targeting accuracy and specificity claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Mass spectrometry analysis of TgCRND8 plaques showed high technical reproducibility (r\u00b2=0.98) and biological reproducibility. A\u03b2 was the most abundant protein, with 454 total proteins identified across replicates. Using SAINT algorithm, 62 proteins had >0.8 probability and 146 had >0.5 probability of plaque association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe the proteomic results with appropriate statistical analysis. Technical reproducibility (C63, Figure 2-supplement 1) is excellent. The SAINT algorithm application (C67-C68) is appropriate for distinguishing true associations from background. The identification of A\u03b2 as most abundant (C65) serves as a positive control validating the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Synaptosomal proteins (SNAP25, VAMP2, v-ATPase, synapsins 1/2) were highly enriched in TgCRND8 plaques, while common synaptic markers (synaptophysin, \u03b1-synuclein, VGLUT1/2) and post-synaptic proteins were absent. Mitochondrial proteins were also identified. Comparison with non-plaque regions showed VAMP2, synapsin 1, and dynamin 1 were significantly more enriched in plaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 describe the proteomic composition findings. The enrichment of specific pre-synaptic proteins (C69) is supported by mass spectrometry data (Table 1) and SAINT scores. The absence of certain markers (C71-C72) is notable and later validated by immunostaining (C80). The non-plaque comparison (C75) strengthens specificity. The mitochondrial protein speculation (C74) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Immunofluorescence validation confirmed that A\u03b2, SNAP25, VAMP2, v-ATPase, synapsin 1, and ApoE colocalize with ThS-positive plaques in TgCRND8 mice, with SNAP25, VAMP2, and v-ATPase showing halos around plaques. Optical sectioning showed these proteins in plaque cores. Syntaxin 1, synaptophysin, and \u03b1-synuclein did not concentrate in plaques, consistent with mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe immunofluorescence validation of mass spectrometry findings. Figure 3 shows clear colocalization of identified proteins with plaques. The halo observation (C78) for some but not all proteins (C79) adds spatial detail. Figure 4 confirms absence of proteins not detected by STOMP (C80). The \u03b1-synuclein finding (C82) is appropriately contextualized with prior literature (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose two non-mutually exclusive mechanisms for pre-synaptic protein enrichment in plaques: (1) damaged dystrophic neurites spilling contents that bind plaques due to physical properties (coiled-coil domains), or (2) direct binding of A\u03b2 fibrils/oligomers to synaptic vesicles interfering with function. They suggest synaptic protein reduction in AD may result from aggregation and entrapment in plaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C90 present mechanistic interpretations. While the proposals are reasonable and supported by cited literature (C84, C86-C88), they remain speculative (C83, C85, C89 appropriately marked as speculation). The STOMP data demonstrate association but cannot distinguish between these mechanisms or establish causality. Additional experiments would be needed to test these hypotheses directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C115"
+    ],
+    "result": "STOMP was successfully applied to formalin-fixed post-mortem human AD brain tissue despite challenges of post-mortem degradation and formalin-induced protein modifications. Mass spectrometry identified 60 statistically enriched proteins with A\u03b2 most abundant, and synaptic proteins comprising 15% of abundant components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95, C115 demonstrate STOMP applicability to human archival tissue. The acknowledgment of technical challenges (C91-C92) followed by successful application (C93) is important for method validation. The proteomic results (C94-C95, Table 2) parallel mouse findings, strengthening biological conclusions. Modified solubilization protocol (C136-C137) addresses formalin fixation issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Immunofluorescence validation of human AD plaques confirmed GFAP and SNAP25 detection by STOMP, while tau and \u03b1-synuclein were not detected by either method. GFAP was detected in human but not mouse plaques, likely due to more intimate astrocyte association in human tissue. Tau in dystrophic neurites surrounds but does not occupy the same space as plaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 describe validation and species differences. Figure 5 supports the immunofluorescence findings. The GFAP difference between species (C99-C101) is well-explained by differential astrocyte association shown in Figures 4 and 5. The tau localization (C103) explains its absence from STOMP analysis and demonstrates the spatial resolution of the technique. The \u03b1-synuclein findings (C105-C106) are appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Immunohistochemistry showed human senile plaques positive for SNAP25 and VAMP2, while synaptophysin displayed a unique punctate lobular profile at plaque periphery (absent in mouse). These analyses demonstrate molecular differences between mouse and human plaques but confirm pre-synaptic protein segregation in/around plaques in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 describe species comparison via immunohistochemistry (Figure 6). The synaptophysin difference (C108) between species is clearly documented. The conclusion about molecular differences (C109) is supported by the comparative data. The broader conclusion about pre-synaptic protein association (C110) is well-supported across both species despite differences in details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Comparison with previous LCM studies showed some overlap in proteins detected (v-ATPase, dynamin, SNAP25, VAMP2, synapsin, clathrin, ankyrin), but only v-ATPase and dynamin were previously shown to be significantly enriched. STOMP's high specificity enables sensitive detection of plaque proteins even when abundant elsewhere in brain, providing direct evidence for association between amyloid plaque formation and synaptic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 compare STOMP to prior methods. The comparison to LCM studies (C111-C112) is appropriately cited and highlights STOMP's advantage in detecting enrichment (C113). The conclusion about plaque-synapse association (C114) is well-supported by the cumulative data from both mouse and human tissue, though mechanistic understanding remains incomplete (see Result 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose STOMP applications to ALS/FTD inclusions (where primary components like TDP-43, FUS are known but secondary components could provide etiological insights), RNA composition analysis (for P-bodies, stress granules implicated in neurodegeneration), and other cell biology applications. The benzophenone chemistry should photo-tag non-protein components as well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C124 describe potential future applications. While the proposals are reasonable given STOMP's capabilities, they remain speculative (C118, C123, C124 appropriately marked). The ALS/FTD application (C116-C118) is logical given the technique's strengths. The RNA analysis proposal (C119-C123) is plausible based on benzophenone chemistry but would require validation. These represent promising directions but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction reviews historical methods for identifying pathological deposits (silver stain, Congo red, ThS), landmark discoveries (prion protein, A\u03b2, TDP-43), and limitations of existing techniques including biochemical purification (loss of soluble components), LCM (~10 \u00b5m resolution, 90% contamination for small features), mass spectrometry imaging (targeted rather than discovery), and proximity labeling (requires genetic manipulation, imperfect localization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C32 provide literature context. Historical facts (C5-C14) are appropriately cited. The technical limitations described for existing methods (C15-C32) are well-documented with citations and provide clear rationale for STOMP development. The LCM contamination calculation (C20) is geometrically sound. The characterization of proximity labeling limitations (C25-C26) accurately describes the technique's constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The Materials and Methods describe STOMP applicability to diverse sample types, TgCRND8 mouse model details, tissue preparation protocols (methanol or formalin fixation), microscopy parameters (Zeiss LSM 510/710, 720 nm two-photon, 488 nm ThS excitation), photo-tagging parameters (6 passes, 4 ms/pixel), and solubilization protocols (with modifications for formalin-fixed tissue including Tris as formaldehyde scavenger).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C125-C138 provide methodological details. The sample type claim (C4) is supported by successful application to mouse and human tissue. Mouse model description (C125-C126) is appropriately cited. Technical parameters (C130-C134) are sufficiently detailed for reproduction. The modified protocol for formalin-fixed tissue (C136-C137) addresses known challenges. Ethical compliance is documented (C129, C138).",
+    "result_type": "MINOR"
+  }
+]

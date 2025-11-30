@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Behavioral choices in the odor-guided spatial choice task are influenced by the choice and outcome on the previous trial, but not by events from two trials back. Mice tended to repeat the same choice as on the previous trial, especially when rewarded, and this influence was not explained by movement duration differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C25 collectively demonstrate that behavior depends on the immediately preceding trial through multiple converging lines of evidence: psychometric analysis (C17-C18), logistic regression showing positive \u03b2 coefficients for previous choice (C19-C20), model comparison showing improved prediction with 1-trial-back but not 2-trials-back information (C21-C22), and control analysis ruling out movement duration confounds (C23). The statistical tests are appropriate and significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "During the pre-stimulus epoch, a large fraction of PPTg neurons (75% for choice, 46% for outcome) exhibited selectivity for the choice and outcome on the previous trial, but few neurons showed selectivity for the current trial or for events two trials back. More neurons preferred contralateral than ipsilateral previous choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 provide strong evidence from ROC-based preference analysis with appropriate Monte Carlo permutation tests (p<0.05). The finding that 75% of neurons show previous-trial selectivity while few show current-trial or 2-trials-back selectivity is statistically robust (Kruskal-Wallis ANOVA with post-hoc comparisons, p-values ranging from 10^-30 to 10^-4). The contralateral bias (49% vs 26%, p=0.001, \u03c7\u00b2 test) is also well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Two-thirds of PPTg neurons maintained their preference for which reward port was chosen during movements in opposite directions (to and from the reward port), suggesting that neural activity reflects choice rather than movement direction per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 address a critical confound through an appropriate control analysis. The finding that 2/3 of neurons maintain port preference across opposite movement directions (p=9.12\u00d710^-6, \u03c7\u00b2 test) provides strong evidence that the neural representation is choice-based rather than purely motor. However, the authors appropriately note this cannot entirely rule out body position effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "PPTg neural activity evolves over the trial from representing previous-trial information (choice and outcome) early in the trial to representing current-trial information later. Previous choice representation persists longer than previous outcome representation, with some neurons continuing to reflect previous choice even after the current choice is made.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49 describe temporal dynamics using linear regression analysis with appropriate time-binning (100ms bins, 10ms steps). The regression coefficients (\u03b2^1_Choice, \u03b2^0_Choice, \u03b2^1_Outcome, \u03b2^0_Outcome) show clear temporal evolution illustrated in Figure 3. The analysis is performed on neurons pre-selected for previous-choice preference (378/506 neurons), which is appropriate but creates a selection bias acknowledged for outcome analysis (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "On ambiguous trials, PPTg firing rates during the pre-stimulus epoch predicted upcoming choice: neurons with higher firing rates were more likely to be followed by choices matching their previous-trial preference. This relationship held even in individual mice whose behavior did not depend on previous choice, suggesting a direct neural influence on choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate a trial-by-trial correlation between neural activity and behavior. The finding that 136/378 neurons showed significant positive slopes vs 30/378 negative slopes (p=0.001, \u03c7\u00b2 test) is robust. Critically, C52 shows this pattern holds within each mouse individually, even those without behavioral dependence on previous choice (Figure 1E), strengthening the causal inference in C53. Monte Carlo permutation tests appropriately assess significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Unilateral pharmacological inactivation of PPTg with muscimol produced a modest but significant ipsilateral bias in choices and increased movement latency and duration, indicating a causal role for PPTg in contralateral movement selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide causal evidence through pharmacological manipulation. The ipsilateral bias (\u03b2_Muscimol > 0 in 14/30 sessions, p<0.05) and increased movement times (p=4.55\u00d710^-20, 5.24\u00d710^-32, 0.0026) are statistically significant. However, the effect size is modest, and only 14/30 sessions showed the predicted direction individually. The use of within-subject controls (pre- and post-saline sessions) strengthens the design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C61"
+    ],
+    "result": "PPTg inactivation decreased the influence of previous choice on current choice (\u03b2^1_Choice was lower in muscimol vs saline sessions, p=0.021), causally linking PPTg activity to the behavioral influence of recent experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C16, and C61 provide the key causal link between PPTg activity and history-dependent behavior. The finding that \u03b2^1_Choice decreased with muscimol (p=0.021, one-tailed Mann-Whitney U test) directly supports the hypothesis. However, the effect is modest and the one-tailed test suggests a directional hypothesis. The result is consistent with the neural recording data but would benefit from replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C63",
+      "C64"
+    ],
+    "result": "PPTg neurons encode representations of recent choices and outcomes that predict and contribute to upcoming action selection, providing a neural substrate for incorporating recent experience into decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C14-C15, C63-C64 represent the main conclusions synthesizing the behavioral, neural recording, and causal manipulation data. The evidence is strong: neural selectivity for previous trials (C3, C14), prediction of upcoming choice (C4, C15), and causal effects of inactivation (addressed in other result groups). The convergence of correlational and causal evidence supports these summary claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "There is a modest positive correlation (r=0.25, p=1.42\u00d710^-8) between neural preference for choice on the previous trial and preference for choice on the current trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 reports a statistically significant but weak correlation. The p-value is highly significant due to large sample size (506 neurons), but the correlation coefficient of 0.25 indicates only 6.25% shared variance. This suggests some neurons maintain choice selectivity across trials, but most do not, which is consistent with the temporal dynamics shown in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C68",
+      "C69",
+      "C71",
+      "C76",
+      "C77",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that PPTg provides a simple mechanism for incorporating recent experience into action selection by conveying previous-trial information to downstream motor regions (particularly SC) where it can be integrated with sensory evidence, though downstream circuits may not always utilize this information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C50, C68-C69, C71, C76-C77, C81-C82 represent mechanistic interpretations and speculation about circuit function. While the PPTg\u2192SC projection is anatomically established (C11, C72), the specific functional role proposed here is not directly tested. The observation that neural representations exist even without behavioral dependence (C69) actually weakens the proposed mechanism. These claims require additional experiments (e.g., SC recordings during PPTg manipulation, pathway-specific manipulations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Behavior in the task can be accounted for by a Bayesian framework in which choices are influenced by both recent trial history and sensory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 invokes a Bayesian framework, but the manuscript does not actually implement or test a Bayesian model. The logistic regression model used is consistent with but does not uniquely support a Bayesian interpretation. The authors acknowledge the framework 'may be imperfect' given that optimal performance should not depend on previous trials. The claim overstates the evidence for a specific computational framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study recorded from 506 PPTg neurons across seven mice (three C57BL/6J and four ChAT-Cre) for electrophysiology, and used three C57BL/6J mice for pharmacology experiments, with no observed differences between mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C93-C96 describe the sample sizes and subjects. The numbers are clearly stated and appropriate for the analyses performed. However, the claim of 'no differences across backgrounds' (C96) is stated without supporting statistical analysis or data presentation, which is a minor weakness in reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C38",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript situates the work within established knowledge about action selection, Bayesian integration, striatal circuits, PPTg-SC connectivity, and prior observations of trial history effects across species and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C12, C38, C65-C67, C70, C72-C75, C78-C79, C84, C86-C87 represent background knowledge supported by appropriate citations. These claims accurately represent prior work and provide necessary context. The citations appear appropriate and the characterizations of previous findings are reasonable, though detailed verification of each cited claim is beyond this review's scope.",
+    "result_type": "MINOR"
+  }
+]

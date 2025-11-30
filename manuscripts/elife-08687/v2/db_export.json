@@ -1,0 +1,1077 @@
+{
+  "submission": {
+    "id": "2d67215a-9e44-43ad-a552-5c9f208c752e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:25:27.534173Z",
+    "updated_at": "2025-11-29T21:25:27.534173Z"
+  },
+  "content": [
+    {
+      "id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "submission_id": "2d67215a-9e44-43ad-a552-5c9f208c752e",
+      "content_type": "manuscript",
+      "content_text": "# Reconstructing the in vivo dynamics of hematopoietic stem cells from telomere length distributions\n\n## Authors\n\n- Benjamin Werner<sup>1</sup> \u2020\n- Fabian Beier<sup>2</sup>\n- Sebastian Hummel<sup>2</sup>\n- Stefan Balabanov<sup>3</sup>\n- Lisa Lassay<sup>4</sup>\n- Thorsten Orlikowsky<sup>4</sup>\n- David Dingli<sup>5</sup>\n- Tim H Br\u00fcmmendorf<sup>2</sup>\n- Arne Traulsen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Evolutionary Theory Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n2. Department of Hematology and Oncology Rheinisch-Westf\u00e4lische Technische Hochschule Aachen University Hospital Aachen Germany\n3. Division of Hematology University Hospital of Z\u00fcrich Z\u00fcrich Switzerland\n4. Department of Pediatrics Rheinisch-Westf\u00e4lische Technische Hochschule Aachen University Hospital Aachen Germany\n5. Division of Hematology, Department of Internal Medicine Mayo Clinic Rochester United States\n6. Department of Molecular Medicine Mayo Clinic Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe investigate the in vivo patterns of stem cell divisions in the human hematopoietic system throughout life. In particular, we analyze the shape of telomere length distributions underlying stem cell behavior within individuals. Our mathematical model shows that these distributions contain a fingerprint of the progressive telomere loss and the fraction of symmetric cell proliferations. Our predictions are tested against measured telomere length distributions in humans across all ages, collected from lymphocyte and granulocyte sorted telomere length data of 356 healthy individuals, including 47 cord blood and 28 bone marrow samples. We find an increasing stem cell pool during childhood and adolescence and an approximately maintained stem cell population in adults. Furthermore, our method is able to detect individual differences from a single tissue sample, i.e. a single snapshot. Prospectively, this allows us to compare cell proliferation between individuals and identify abnormal stem cell dynamics, which affects the risk of stem cell related diseases.\n\n## Introduction\n\nHomeostasis is in most mammalian tissues maintained by the occasional differentiation of infrequently dividing multi-potent stem cells (Li and Clevers, 2010; Busch et al., 2015). These cells are involved in the formation, maintenance, renewal, and aging of tissues (Reya et al., 2001; Morrison and Kimble, 2006). Their longevity imposes the risk of the accumulation of multiple mutations that potentially induce aberrant stem cell proliferation and can ultimately cause the emergence of cancer (Hanahan and Weinberg, 2011). The quantification of aberrant stem cell properties in cancer is impeded by the lack of detailed information about the expected patterns of cell replication in healthy human tissues (Rossi et al., 2008; Vermeulen et al., 2013). Dynamic properties of stem cell populations in vivo are predominantly obtained from sequential experiments in animal models (Morrison and Spradling, 2008; Orford and Scadden, 2008). Unfortunately, these methods are mostly inapplicable to humans and to infer in vivo properties of human stem cell populations remains a challenge. Indirect methods, i.e. biomarkers that reflect the proliferation history of a tissue, may overcome these limitations (Greaves et al., 2006; Graham et al., 2011; Kozar et al., 2013). In the following, we combine data of telomere length distributions and mathematical modelling of the underlying dynamical processes to deduce proliferation properties of human hematopoietic stem cells in vivo.\n\nTelomeres are noncoding repetitive DNA sequences at the ends of all eukaryotic chromosomes. In vertebrates, these sequences consist of hundreds to thousands of repeats of the nucleobase blocks TTAGGG (Griffith et al., 1999). Telomere repeats are progressively lost in most somatic cells with age, as the conventional DNA polymerase is unable to fully copy the lagging DNA strand of chromosomes during cell replication (Olovnikov, 1973). Short telomeres are associated with genetic instability (Hande, 1999; Feldser et al., 2003). They trigger DNA-damage checkpoint pathways and enforce permanent cell cycle arrest ( d'Adda di Fagagna et al., 2003). Thus, telomere length limits the replication capacity of somatic cells (Hayflick and Moorhead, 1961) and can indirectly act as a tumor suppressor (Kinzler and Vogelstein, 1997; Campisi, 2005). This effect can be attenuated by the enzyme telomerase, which tags additional TTAGGG repeats to the end of chromosomes by utilizing single stranded RNA templates (Greider and Blackburn, 1989). Telomerase is primarily expressed in compartments of stem and germ line cells, as well as in numerous tumors (Kim et al., 1994). However, telomerase expression levels are insufficient to prevent the progressive loss of telomere repeats in most healthy human tissues with age (Harley et al., 1990; Rufer et al., 1999). This net loss of telomere repeats during cell replication leads to a characteristic telomere length distribution that reflects the replication history of cells. Since telomere length dynamics is important for a number of genetic and acquired disorders (Hastie et al., 1990; Blasco, 2005; Calado and Young, 2009), it is critical to understand the underlying mechanisms of this fundamental process. We have developed a mathematical model that allows us to interpret data of telomere length shortening in hematopoietic cells obtained from 356 healthy humans. Most importantly, we can infer the patterns of stem cell behavior from the underlying telomere dynamics within individuals from a single tissue sample, i.e. a single snapshot.\n\n### Modelling telomere length dynamics\n\nOur mathematical model recovers the temporal change of telomere length distributions in human hematopoietic cells with a minimal number of required model parameters. Since hematopoietic cells proliferate in a hierarchical organised tissue with slowly dividing stem cells at its root, such a model needs to connect properties of cell proliferation and telomere shortening. Telomere length can be assessed on three different levels of resolution, (i) the level of single telomeres, (ii) the level of single cells and (iii) the level of the tissue. Of course these levels are not independent, for example the knowledge of telomere length in all cells allows to obtain the (average) telomere length of a tissue. The processes that drive telomere length dynamics differ at these levels of resolution. Single telomeres are prone to stochastic events such as oxidative stress or recombination and thus may also shorten by effects independent of proliferation associated attrition (von Zglinicki, 2002; Antal et al., 2007). Healthy human cells contain 184 telomeres, four on each of the 46 chromosomes. Thus, the noise on the level of single telomeres becomes much smaller on the cell level. We capitalise on this and consider telomere length on the cell level in the following. Thus, the average telomere length of a cell shortens by a constant factor during each division. Such an approach might underestimate the number of senescent cells once telomeres become critically short, since it is the length of the shortest telomere rather then the average telomere length that triggers cell cycle arrest (Hemann et al., 2001). Our model is sensitive to the accumulation of cells in the state of cell cycle arrest and we can infer this effect experimentally from population wide telomere length distributions. However, this effect can likely be neglected during adolescence and adulthood, but might have important implications in some tumors, at old age or in conditions associated with abnormal telomere maintenance.\n\nWe further need to consider properties of a hierarchical tissue organization, where few slowly dividing stem cells give rise to shorter lived progeny. Although some of the progeny, particularly primitive progenitor cells, can be long lived and are able to maintain homeostasis without stem cell turnover for intermediate time intervals, eventually all non hematopoietic stem cells will be depleted without continuous stem cell turn over (Busch et al., 2015; Sun et al., 2014). Age dependent differences in telomere shortening across different lineages of hematopoiesis can only persist in the hematopoietic system if they occur on the level of the maintained self-renewing cell population. Cells leaving the stem cell pool have an approximately constant number of cell divisions before they reach maturation (Takano, 2004; Werner et al., 2011). This shifts the distribution to shorter values of telomere length and consequently, the distribution of telomere lengths of mature cells is a good proxy for the distribution of telomere lengths in stem cells (Rodriguez-Brenes et al., 2013). We measured telomere length distributions in lymphocytes, granulocytes and bone marrow sections separately. This allows us to investigate the myeloid and lymphoid lineage of hematopoiesis independently.\n\nIn our model, we assume a population of initially N0 stem cells. In the simplest case, each stem cell would proliferate with the same rate r and the cell cycle time would follow an exponential distribution. However, tissue homeostasis requires continuous stem cell turn over in intermediate time intervals, therefore the proliferation rate of the population of stem cells is adjusted, such that a required constant output of differentiated cells per unit of time is maintained. In the simplest case of a constant stem cell population, the effective proliferation rate becomes r/N0. However, in more complex scenarios, the number of stem cells could differ with age and the effective proliferation rate of stem cells r/Nt also becomes age dependent (Rozhok and DeGregori, 2015; Bowie et al., 2006). This resembles a feedback mechanism and results in an approximately Log-normal distribution of cell cycles, see also Equation S26 in Materials and methods for details. In addition, each stem cell clone is characterised by a certain telomere length (Antal et al., 2007; Simon and Derrida, 2008). This telomere length shortens with each stem cell division by a constant length \u0394c and consequently the remaining proliferation potential is reduced in both daughter cells (Rufer et al., 1999; Allsopp et al., 1992). If the telomeres of a cell reach a critically short length, this cell enters cell cycle arrest and stops proliferation, reflecting a cell\u2019s Hayflick limit (Hayflick and Moorhead, 1961). This can be modelled by collecting cells with the same proliferation potential in states i. A cell enters the next downstream state i\u2192i+1 after a cell division, see also Figure 1, as well as Equations S1,S14 in Materials and methods. Since the next cell to proliferate is chosen at random from the reservoir, cells progressively distribute over all accessible states with time (Olofsson and Kimmel, 1999). This corresponds to the problem of how many cells are expected in a state i at any given time, which we denote by Nit in the following.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig1-v2.jpg)\n\n**Figure 1.:** (a\u2013c) Blood or bone marrow samples were taken from healthy persons with ages between 0 and 85. Telomere length was measured with Flow-FISH and Q-FISH techniques, resulting in individualized telomere length distributions. (d\u2013g) Mathematical framework: Stem cells divide either symmetrically or asymmetrically. Each cell is characterized by an average telomere length. Cells with the same state are collected in compartments. The average of the underlying stochastic process is captured by a system of differential equations. The solution of this equation is a generalised truncated Poisson distribution that gives rise to a traveling wave, see Equation S15. (h,\u00a0i) The combination of modeling and telomere length distribution measurements allows dynamic predictions for individuals, see Figure 6. These predictions can be tested on population wide data of telomere length, for example see Figure 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Compared are analytical results (lines) and averages of stochastic computer simulations (dots) of our mathematical model, see Materials and methods. (a) An example of a population of 100 cells, where each cell has 7 proliferation cycles before it enters cell cycle arrest (cells accumulating in state ). (b) Expected telomere length distributions at 6 distinct time points (time increases with decreasing remaining number of cell divisions). The telomere length distribution gives rise to a traveling wave that progressively widens and shifts towards shorter telomere length. The maximum of this distribution declines proportional to $1\u2215\\sqrt{time}$ (black line).\n\n## Results\n\n### The model predicts characteristic telomere length distributions for different ratios of symmetric and asymmetric stem cell divisions\n\nThe shape of the distribution of cells across cell cycles depends on the patterns of stem cell proliferation, for example the ratio of symmetric versus asymmetric divisions. An asymmetric stem cell division produces one stem and one non-stem cell (for example a progenitor cell that leaves the stem cell compartment). If we restrict the stem cells dynamics to only asymmetric divisions, the process results in a stem cell population of constant size and the number of cells in each state $i$ follows a Poisson distribution\n\n$$\nN^{(i)}\u00a0(t)\u00a0=\u00a0\\frac{N_{0}}{i!}\u00a0\\frac{rt}{N_{0}}^{i}e^{-\\frac{rt}{N_{0}}}.\n$$\n\nA typical example of this distribution is shown in Figure 1\u2014figure supplement 1 and details on the derivation can be found in Materials and methods, see Equation S1. Cells with maximum proliferation capacity (cells in state 0 in our model) are progressively lost and cells accumulate in the final state of cell cycle arrest by passing through all intermediate states.\n\nInferring the dynamics of distribution (1) from in vivo measurements requires sequential sampling and complicated cell sorting, which seems challenging in realistic clinical settings. On the other hand, the measured (observed) telomere length distribution corresponds to a single sample of the underlying Poisson process. The expected shape of this observed distribution is depicted in Figure 1g. It becomes a traveling wave that starts narrowly distributed around an initial telomere length and shifts towards shorter average telomere length with time. We have measured this distribution, which arises from our theoretical model, experimentally in many samples of granulocytes, lymphocytes and bone marrow sections of healthy adult humans, which we discuss in detail below.\n\nIn addition to asymmetric divisions, stem cells can undergo symmetric self-renewal, which is a prerequisite for development, as it allows for a growing stem cell population. In our model, stem cells divide symmetrically with probability $p$ and asymmetrically with probability $1-p$ respectively. In this situation, the number of stem cells is not constant, but increases with each symmetric stem cell self-renewal. As a consequence, the expected distribution also changes and is now described by a generalised Poisson distribution (see Equation S14 in Materials and methods) given by\n\n$$\nN_{p}^{i}t=\\frac{N_{0}}{i!}\\frac{1+p}{p}^{i}\\frac{ln^{i}\\frac{rp}{N_{0}}t+1}{\\sqrt[p]{\\frac{rp}{N_{0}}t+1}}.\n$$\n\nThis distribution also leads to a traveling wave, but the maximum of the distribution decreases considerably slower compared to the case of purely asymmetric stem cell divisions. In the following, we refer to the model that is restricted to only asymmetric stem cell divisions as model 1 and denote the more general case of symmetric and asymmetric cell divisions as model 2.\n\nIdeally, we would like to follow these traveling waves in individual healthy humans over time and compare this sequential data to the dynamics from our model predictions. Unfortunately, the time required to confirm our model across all ages would exceed the life expectancy of the authors. We therefore explored those properties of our analytical model that are directly testable in population wide data of telomere length. One such property is the change of the average telomere length with age, which we measure in a group of 356 healthy individuals.\n\n### The average telomere length decreases nonlinearly in the presence of symmetric stem cell self-renewal\n\nThe average telomere length decreases in most human tissues with age (Harley et al., 1990). This is well known and has been confirmed numerous times. Surprisingly, less is known about the detailed dynamics of this decrease. We can derive the dynamics of the average telomere length from the telomere length distributions directly. The average telomere length corresponds to the expected value of the telomere length distribution (in the following denoted by $E[c(t)]$), see Equation S5 in Materials and methods for details. As the telomere length distribution changes with time, the average telomere length becomes time dependent naturally. In the absence of symmetric stem cell self-renewal (model 1) the average telomere length $Ect$ is expected to decrease linearly\n\n$$\nEct\u2248c-\u0394c\\frac{rt}{N_{0}},\n$$\n\nwith age (denoted by $t$ in the equation above). More specifically, the average telomere length of cells of a particular type, e.g. the population of granulocytes or lymphocytes, shorten by a constant fraction each year. The dynamics changes once a significant fraction of cells enter cell cycle arrest, see Equation S9. The average telomere length transitions from a linear into a power law decline (when the average telomere length becomes very short) and the stem cell pool reaches the state of complete cell cycle exhaustion asymptotically. This transition would enable the identification of an age where a considerable fraction of stem cells enter cell cycle arrest, potentially a mechanism important in aging, carcinogenesis or bone marrow failure syndromes.\n\nFurthermore, we calculated the variance of the underlying stochastic process. This gives us a measure for the expected fluctuation of the average telomere length in a population of healthy humans. We expect the variance to increase linearly in time in the absence of symmetric stem cell self-renewal. Consequently, the standard deviation is proportional to the square root of age. Yet again, similar to the average telomere length, the dynamics of the variance changes once a significant fraction of cells enters cell cycle arrest. The variance starts to decrease and would reach zero, if all cells stopped proliferation.\n\nThe distribution of telomere length changes under the presence of symmetric stem cell self-renewal (model 2). Accordingly, we expect a different decrease of the average telomere length. We find that the telomere length follows a logarithmic decay with age (see also Equation S19), given by\n\n$$\nE_{p}ct\u2248\u00a0c-\u0394c\\frac{1+p}{p}ln(\\frac{rp}{N_{0}}t+1)\n$$\n\nThe average telomere length of a cell population shortens less with increasing age under the presence of symmetric self-renewal, although the decrease of telomeric repeats per cell division (denoted by $\u0394c$ in Equation 4) is constant. This effect emerges naturally in our model due to the increasing number of stem cells with age. In a population with only few cells, each cell proliferation has a considerable impact on the average telomere length, while this impact diminishes in larger populations. If the stem cell population increases progressively, telomere shortening reduces on the tissue level with age.\n\n### In vivo measurements of telomere length suggest an increasing number of hematopietic stem cells during human adolescence\n\nIn order to test the predictions of our model experimentally, we have measured telomere length in lymphocytes and granulocytes in a cohort of 356 healthy humans with ages between 0 and 85 years. Our data includes 47 cord blood samples of healthy children and bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement. We assessed the average telomere length in all 356 samples with established Flow-FISH protocols (Aubert et al., 2012; Baerlocher et al., 2006; Weidner et al., 2014; Beier et al., 2012). This reveals the population wide dynamics of telomere length and contains a significant number of cord blood samples that allow us to investigate differences in cell proliferation during adolescence and homeostasis in adulthood.\n\nIn addition, we have analyzed 28 blood samples of lymphocytes, 10 blood samples of granulocytes and 28 bone marrow biopsies with quantitative-fluorescence in situ hybridisation (Q-FISH) (Beier et al., 2015; Varela et al., 2011; Zijlmans et al., 1997) (see Figure 2 and experimental methods for details). The averages of these samples correspond to the open symbols in Figure 3. From the full distribution, we obtain the telomere length distributions of single individuals and estimate personalised cell proliferation properties, e.g. the ratio of symmetric to asymmetric cell divisions as well as the rate of telomere shortening for each sample separately. We compare these personalised estimates to population wide telomere length to test the consistency of our results on two independent data sets.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig2-v2.jpg)\n\n**Figure 2.:** (a) Maximum projection image of a paraffin-embedded bone marrow section of confocal Q-FISH with DAPI and Cy3. (b, c) Single DAPI and Cy3 staining respectively. (d) Overlay of image analysis of nucleus and telomere detection. (e) Image analysis of the DAPI staining is shown. Detected nuclei are shown in red. (f) Image analysis of the Cy3 staining. Detected telomeres marked in red. For details on\u00a0the Q-FISH analysis please see Materials and methods.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Maximum projection image of confocal Q-FISH with staining of DAPI and Cy3. (b,\u00a0c) Single DAPI and Cy3 staining is shown. (d) Image analysis with nucleus detection marked with red lines. (e) Image analysis of detected single telomeres marked in red.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Representative flow-FISH blot of healthy individual. Based on LDS 751 staining and forward scatter properties, cow thymocytes, lymphocytes and granulocytes can be identified. (b) Telomere intensity of Alexa488 of unstained and stained thymocytes is given. (c) Telomere intensity of Alexa488 of unstained and stained lymphocytes. (d) Telomere intensity of Alexa488 of unstained and stained granulocytes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig3-v2.jpg)\n\n**Figure 3.:** The data from a cohort of 356 individuals (symbols) is captured by a logarithmic decrease of the average telomere length (solid line), which is predicted by our model 2 that allows for symmetric stem cell divisions and thus leads to a slowly increasing stem cell pool. Based on the fit of the average, the mathematical model predicts a standard deviation that increases with the square root of the age (dashed lines). This approach does not take the genetic variability of telomere length in newborns into account. The decrease of the average telomere length slows down in children and becomes almost linear in adults, see also Figure 4. For individuals represented by filled symbols, only information on the average telomere length is available. For individuals represented by open symbols, we additionally analysed the distribution of individually detected telomeres, see Figure 6. An additional parameter estimation on an independent data set is shown in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The data was taken from (Aubert et al., 2012) and confirms the inferred parameter range in Figure 2 independently.\n\nIn order to compare our model with the experimental data, we implemented standard maximum likelihood estimates for a regression analysis. Our experimental finding in adults (we only consider persons of 20 years or older) show that telomere length in granulocytes and lymphocytes decreases approximately linearly with age on the population level. In both cell populations the telomere length of adults decreases with $50\\pm5\u00a0bp/year$ (we state the maximum likelihood estimate and the 95% confidence interval). If for example a cell looses on average 50 bp telomeric repeats per cell division (Rufer et al., 1999), this implies approximately 1 replication per year for the hematopoietic stem cells. This agrees with the observation of rare stem cell turnover under homeostasis (Busch et al., 2015; Sun et al., 2014; Dingli et al., 2006).\n\nHowever, the assumption of strictly asymmetric cell divisions (model 1) fails to explain the pronounced loss of telomere repeats in infants (prediction of model 1 for the initial telomere length in lymphocytes: 9.8\u00b10.15\u00a0kbp, measured average initial telomere length: 10.67\u00b10.4\u00a0kbp, similar results for granulocytes, see also Figure 4 for a comparison of model 1 and model 2). This discrepancy can be resolved by introducing an interplay of symmetric and asymmetric stem cell divisions (model 2) that allows for an increasing number of stem cells. In this situation, the proliferation rate of stem cells becomes age dependent and our model predicts that at the youngest ages, when the number of stem cells is lowest, telomere loss is most pronounced. Maximum likelihood estimates of our general mathematical solution (Equation 4) to the telomere length data on the population level (see Figure 3) reveals for the parameter controlling average loss of telomere length in lymphocytes a value of 75\u00b17\u00a0bp/year, an initial telomere length of 10.4\u00b10.2\u00a0kbp and a probability for symmetric stem cell self-renewal of 0.35 \u00b1 0.07. In granulocytes we find a value of telomere loss of 68\u00b15\u00a0bp/year, an initial telomere length of 10.2\u00b10.3\u00a0kbp and a probability for symmetric stem cell self-renewal of 0.44 \u00b1 0.2. This probability accounts for the increased loss of telomere repeats in infants and substantially improves the prediction of the initial average telomere length. In addition to our group of 356 healthy humans, we have tested our hypothesis in an independent data set of 835 healthy humans, previously published by an unrelated group in (Aubert et al., 2012), see Figure 3\u2014figure supplement 1. This set confirms our parameter estimations, in particular the accelerated decrease of average telomere length during adolescence is also observed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig4-v2.jpg)\n\n**Figure 4.:** Model 1 (red dashed line, best fit to the data) predicts a linear decrease of the average telomere length with age. The linear decrease underestimates the initial accelerated telomere loss during adolescence (the average initial telomere length in newborns is shown by the dark grey rectangle). In contrast, model 2 (black line) predicts a logarithmic decay of the average telomere length with age and is able to capture the increased loss of telomere length during adolescence, as well as the approximately linear decrease in adults.\n\nOur model suggests that the increased loss of telomere repeats in the first years of human life is a consequence of an expanding stem cell population. This expansion is combined with a reduction in proliferation rates of single stem cells. The loss of telomere repeats during cell replication has a more pronounced impact on the average telomere length within a small cell population and diminishes in large stem cell populations. This explains the increased loss of telomeric repeats during adolescence (see Figure 4) naturally as a consequence of growth by an expanding stem cell population. Similarly, a sudden accelerated loss of telomeric repeats in aged individuals could point towards an insufficient stem cell self-renewal. This might provide a promising direction for further investigations with an extended data set of sufficiently high resolution in aged individuals.\n\n### Proliferation properties of stem cells differ during adolescence and adulthood\n\nOur analytical model is consistent with population wide telomere length data. It shows that symmetric stem cell self-renewals are more frequent in adolescence and their effect on the dynamics of average telomere length reduces with age. However, how robust are our conclusions under variation of model parameters or a change of cell proliferation properties with age? One possibility to address these problems is the implementation of Bayesian inference methods (Dempster, 1968). In a nutshell, such methods draw a random set of model parameters either from an uninformed (objective) or informed (subjective) prior distribution and produce independent realizations of the model. These realizations are compared to some (appropriate) data of interest and fits with a predefined statistic significance are retained while unsatisfactory realizations are rejected. Originally developed for phylogenetic tree reconstruction, such methods are increasingly used in other applications (Marjoram and Tavar\u00e9, 2006). Bayesian inference methods allow to quantify the uncertainty in an analysis by providing posterior distributions of model parameters.\n\nIn the following we implement an Approximate Bayesian Computation (ABC) rejection sampling framework (Csill\u00e9ry et al., 2010) on the data presented in Figure 3. We derive posterior distributions for our three free model parameters, the initial telomere length $c$, the relative decrease of telomere length per time $\u0394cr/N_{0}$ and the probability of symmetric stem cell divisions $p$. We draw these variables independently from uniform (uninformed) distributions and test $10^{9}$ independent realizations of our mathematical model 1 and model 2. We seek parameter regimes that maximize the coefficient of determination $R^{2}$ between Equation 3 (model 1) or Equation 4 (model 2) and the average telomere length presented in Figure 3. We discard any parameter combination below a threshold. We perform the same analysis independently on the data set of granulocytes and lymphocytes.\n\nIn both cases, we find localized posterior parameter distributions. For lymphocytes, parameters peak at $\u0394cr/N_{0}=0.071\\pm0.005kbp/year$, $c=10.41\\pm0.3kbp$ and $p=0.32\\pm0.2$, see Figure 5c\u2013e. Only a small parameter range explains the exact patterns of telomere shortening. We find approximately 70% of stem cell divisions are asymmetric and 30% are symmetric self-renewals. This stochastic approach confirms the results of the non-linear model fits using a standard maximum likelihood approach that were discussed in the previous section, but provides further information on the distribution of our parameters.\n\nThe previous analysis assumes a fixed set of parameters for the dynamics of telomere shortening for all ages. In principle, these parameters could also change with age. To see if we can identify ages with different stem cell proliferation parameters, we investigated a third model that allows for successive phases of stem cell dynamics with independent parameter sets for each phase. We consider an additional parameter tT, which corresponds to a transition time. We perform the above Bayesian approach independently for each random partition of the data set. This approach suggests at most two separate phases, with a transition between the 6th and 7th year of life for lymphocytes, see Figure 5f\u2013i, and a transition between the 10th and 15th years of life for granulocytes, see Figure 5j\u2013m. In infants and the first years of life, the probability of stem cell self-renewal shows a significant variance (Figure 5). However, the data resolution is insufficient for this short time window to provide reliable parameter estimates. The probability of symmetric stem cell self-renewal in adults however is in the the range of p\u2208(0,0.2). This is lower as was predicted by the regression analysis across all ages. This suggests a reduction in the self-renewal probability of stem cells after adolescence and points towards an either slower growing or constant stem cell population in adults. This may reflect selection for an optimal stem cell population size to minimize the risk of cancer initiation as suggested in theoretical studies before (Michor et al., 2003).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig5-v2.jpg)\n\n**Figure 5.:** (a, b) Model fit for only asymmetric stem cell divisions (model 1) to the data of average telomere length on the population level. The expected telomere length decreases linearly and two free model parameters, i.e. initial telomere length and stem cell turn over rate are estimated. (c\u2013e) ABC with symmetric and asymmetric stem cell divisions (model 2). In this case one additional free parameter (probability of symmetric stem cell divisions) can be estimated. (f\u2013i) ABC for a two phase extension of the model inferred from population wide data of lymphocytes, panels (j\u2013m) show the same analysis for granulocytes. A likelihood based model selection favours model 2 and rejects model 1 as well as the multiphase model as more likely explanations for the observed data.\n\nNext, we aimed to test which of the three models explains the data best, considering the complexity of the models. We therefore utilise the likelihood estimates of the former subsection and perform a model selection based on the Akaike information criterion (AIC) (Burnham, 2004). Model 1 scores with an AIC of 2550, model 2 has an AIC of 2328 and a multiphase model with a minimum of 7 parameters yields an AIC of 2361. The AIC is minimized by model 2. Based on this approach, model 1 as well as a multiphase model can be rejected as more likely explanations for the telomere length shortening presented in Figure 3 (given the above numbers and according to standard procedures, the relative likelihood of model 1 to better explain the data compared to model 2 is assumed to be $p\u224810^{-48}$, the relative likelihood of the multi-phase model to better explain the data compared to model 2 is assumed to be $p\u224810^{-8}$). This selection is robust under the choice of different statistical methods. For example, a BIC approach selects the models in the same order.\n\n### A single sample of the telomere length distribution can inform about stem cell dynamics\n\nThe actual stem cell population sizes and their dynamics do not only vary with age, but also between individuals. This has immediate consequences on the susceptibility of individuals towards certain diseases (Calado and Young, 2009; Br\u00fcmmendorf and Balabanov, 2006) and could potentially be used in individualised treatment strategies. Our model describes the telomere length distributions in individuals and quantifies three parameters, i.e. initial telomere length, increase of stem cell pool size and stem cell replication rates of an individual from a single tissue sample. We therefore extended our experimental protocols to further test our theoretical results. First, we measured single telomere signals of peripheral blood sorted for lymphocytes in 28 individuals and sorted for granulocytes in 10 individuals by quantitative confocal FISH in addition to the average telomere length that is provided by flow FISH. Second, we investigated the telomere length distribution in paraffin-embedded bone marrow sections of an additional cohort of 28 healthy individuals using quantitative confocal FISH (Beier, 2005), see Figure 2. We compare our general telomere length distribution that allows for any ratio of symmetric and asymmetric stem cell divisions (model 2) to the data set of all 66 individuals. Cases of four representative individuals are shown in Figure 6. All cases can be found in Figure 6\u2014figure supplements 1\u20133 and all individual cell proliferation properties as well as quality of fits are summarised in Supplementary file 1. The average telomere length of these 66 distributions are shown as open symbols in Figure 3.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig6-v2.jpg)\n\n**Figure 6.:** Telomere length distributions within the nucleus of individual cells are measured once in single individuals (symbols). This data is fitted with our model 2 (black line, see Equation S29 for details), leading to estimates for the parameters of the theoretical distribution. These parameters can be used to extrapolate the distribution to any other age (gray lines). The dashed line shows the prediction for the maximum of the distribution (Equation S18). Telomere length distributions differ between individuals and change in different patterns, depending on the exact proliferation parameters in individuals. Additional cases are shown the Figure 6\u2014figure supplements 1\u20133. A summary of all fitting parameters can be found in Supplementary file 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** For experimental details see Materials and methods, for details on the nonlinear fitting and individual parameters estimates as well as quality of fits, see Materials and methods and Supplementary file 1A.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** For experimental details see Materials and methods, for details on the nonlinear fitting and individual parameters estimates as well as quality of fits, see Materials and methods and Supplementary file 1B.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** For experimental details see Materials and methods, for details on the nonlinear fitting and individual parameters estimates as well as quality of fits, see Materials and methods and Supplementary file 1C.\n\nThe fits of our calculated distribution (see Equation S15 for the distribution and Equation S29 for details on the fitting procedure) reveal substantial differences in initial telomere length, increase of stem cell pool size and stem cell replication rates between the 66 individuals, but also between granulocytes, lymphocytes and bone marrow samples. We find a low probability of symmetric self-renewal (p between 0.005 to 0.03 per cell division) in all individual samples. This agrees with our results on the average telomere length shortening in adults at the population level and supports our observation of an approximately maintained active stem cell number in individuals after adolescence. Also the average telomere loss per year varies between individuals and ranges from 18 bp/year to 110 bp/year. However, the averages of all individual parameter sets agree with the estimated proliferation properties inferred from the population wide data of telomere length. We find differences between individual samples of lymphocytes and granulocytes. While the loss of telomeric repeats slows down with age in granulocytes, it slightly accelerates in lymphocytes, see Figure 7. These cells represent the myeloid and lymphoid lineage respectively. In our model, such a reduced rate of telomere loss can be explained with an increased reservoir of myeloid specific stem and progenitor cells and is in agreement with a skewed differentiation potential towards the myeloid lineage of aged hematopoietic stem cells (Geiger et al., 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08687/elife-08687-fig7-v2.jpg)\n\n**Figure 7.:** Shown is the rate of telomeric shortening (bp/year) of granulocytes (circles), lymphocytes (triangle) and bone marrow sections (rectangle), inferred from telomere length distributions of 66 different individuals (see Figure 5 and supplemental figures and Supplementary file 1 for a summary of all parameters). Differences between individuals are large, but the average telomere shortening rate conforms to parameter estimates of population wide data of telomere length, see for example Figure 5. Cells in the bone marrow show a lower proliferation rate and consequently the rate of telomere loss is reduced (gray dotted line). The rate of telomere loss decreases with age in granulocytes (\u22120.78 bp/year, dark red line) and in bone marrow sections (\u22120.36 bp/year, grey dotted line), but increases in lymphocytes (+0.27 bp/year, dark green dashed line). This observation agrees with a skewed differentiation potential towards the myeloid lineage of aged hematopoietic stem cells (Geiger et al., 2013). The lines are only meant to represent a trend of increase or decrease with age. The change with age is most probably not linear.\n\n## Discussion\n\nOur knowledge about the dynamics of tissue specific stem cells comes mostly from lineage tracing experiments in transgenic mouse models. They provided insights into many aspects of tissue formation and maintenance, e.g. the intestinal crypt, but also the hematopoietic system (Busch et al., 2015; Sun et al., 2014; Itzkovitz et al., 2012). However, there is variation between different transgenic mouse models and their significance for human stem cell properties remains a challenging question. In some cases, clonal lineages can be traced by naturally occurring somatic mutations, e.g. particular mtDNA mutations in human intestinal crypts (Baker et al., 2014). However, the in vivo dynamic properties of human hematopoietic stem cells remain poorly characterized.\n\nHere, we have utilized telomere length distributions of hematopoietic cells as a biomarker that contains information about the proliferation history of cells. We developed a mathematical model that allows us to infer dynamic properties of stem cell populations from data of telomere length distributions. These properties were analyzed in different cell types, e.g. lymphocytes, granulocytes and bone marrow sections of individuals of different ages. These calculated distributions describe the change of telomere length within the human population. The expected changes with age were confirmed in a representative group of 356 healthy individuals and the conclusions are consistent with our individualized parameter estimations.\n\nThe population wide data of average telomere length reveals different stem cell properties in adolescence and adulthood. Telomere length decrease is logarithmic and occurs at a faster rate during adolescence, suggesting a stem cell pool expansion in the first years of human life compatible with growth. This decrease becomes almost linear in adults and is in line with an approximately constant stem cell population. It is an interesting question why the number of stem cells would reach a certain targeted size. This could be simply because of spatial constrains in the bone marrow. Yet, from an evolutionary perspective, intermediate stem cell pool sizes were suggested to minimize the risk of cancer initiation (Rodriguez-Brenes et al., 2013; Michor et al., 2003). Such an optimization requires feedback signals that ensures the maintenance of an intermediate sized stem cell population, feedback signals that might be prone to (epi)genetic change and potentially are involved in cancer and ageing.\n\nIt is still a debated question if stem cells in mammals are maintained by predominantly asymmetric divisions, or alternatively by a population strategy of balanced symmetric self-renewal and symmetric differentiation. While the former strategy can be implemented on the single cell level, the latter strategy would require further feedback signals. From a modelling perspective, a population strategy of\u00a0symmetric\u00a0self-renewal and symmetric differentiation was suggested to minimize the clonal load within a stem cell population (Shahriyari et al., 2013). On the other hand, experimental findings seem to point towards predominantly asymmetric divisions, but this might also differ across tissues (Morrison and Kimble, 2006). In our model, the stem cell pool is maintained by asymmetric cell divisions. A balance of symmetric and asymmetric cell divisions would on average result in the same telomere length dynamics and thus would be indistinguishable from asymmetric divisions on the population level, only the interpretation of $p$, the probability of symmetric self-renewal would change in this case. Yet, the variance of the distribution would be expected to increase under the presence of symmetric differentiation and symmetric self-renewal. However, likely this effect is weak compared to the measurement related noise of telomere length.\n\nOur method quantifies the parameters of telomere dynamics from a single blood sample or paraffin-embedded tissue samples of an individual. It is independent of any particular tissue organization and thus can be applied, in principle, to any tissue. This general method will be of particular interest to distinguish stem cell dynamics in healthy and sick individuals. We expect characteristic changes in telomere length distributions in certain (hematopoietic) stem cell disorders such as chronic leukemias (Braig et al., 2014) and bone marrow failure syndromes (Calado and Young, 2009; Beier, 2005). Therefore, our model can serve as a tool to infer stem cell dynamics in vivo retrospectively and prospectively from a single tissue sample. Such an approach can not only increase our understanding of disease dynamics but may also contribute to personalized disease diagnosis and prognosis in the future.\n\n## Materials and methods\n\n### Patients\n\nPeripheral blood of 309 healthy blood donors was obtained from the blood donor bank in Aachen. Q-FISH of peripheral blood cytospins was performed on 28 healthy blood samples. 47 cord blood and blood samples from healthy children and adolescents were obtained from the Department of Pediatrics and Neonatology of the University Hospital of Aachen. Bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement were used for bone marrow analysis. All samples were taken with informed consent and according to the guidelines of the ethics committees at University Hospital Aachen.\n\n### Flow-FISH\n\nThe Flow-FISH technique provides the mean telomere length per nucleus. Flow-FISH was carried out according to previously published protocols (Aubert et al., 2012; Baerlocher et al., 2006; Weidner et al., 2014; Beier et al., 2012). Briefly, after osmotic lysis of erythrocytes with ammonium chloride, white blood cells were mixed with cow thymocytes. Cells were hybridized with FITC labeled, telomere specific (CCCTAA)3- peptide nucleic acid (PNA) probe (Panagene) and DNA was counterstained with LDS 751 (Sigma). FACS analysis was carried out on Navios or FC-500 (both Beckman Coulter). Thymocytes, lymphocytes and granulocytes subsets were identified based on LDS571 staining and forward scatter. Mean telomere length was calculated by subtracting the unstained autofluorescence value of the respective lymphocyte, granulocyte or thymocyte subpopulation. Cow thymocytes with a determined telomere length were used as an internal control to convert telomere length in kilobase (kb). All measurements were carried out in triplicate.\n\n### Quantitative-Fluorescence in situ hybdridsation (Q-FISH)\n\nQ-FISH offers the possibility to analyze the distribution pattern of individual telomeres. For cytospins of peripheral blood cells, erythrocytes were lysed using ammonium chloride (Stem cell Technologies,\u00a0Vancouver, British Columbia, Canada) and 50,000 cells were centrifuged for cytospin. Cells were fixed with 70% ethanol solution for 30 seconds and air dried for 15 min. Bone marrow sections were deparaffinized with xylol and rehydrated with ethanol following standard protocols. Deparaffinized bone marrow tissue sections, metaphases and peripheral blood cells were processed following previously published protocols (Beier et al., 2015; Varela et al., 2011; Zijlmans et al., 1997). After initial washing with PBS, slides were fixed in formaldehyde (Sigma) (4%) in PBS for 2 min. Slides were further washed (three times for 5 min) with PBS followed by dehydration with ethanol and air drying for 30 min. Hybridization mixture containing 70% formamide (Sigma), 0.5% Magnesium chloride (Sigma), 0.25% (wt/vol) blocking reagent (Boeringer) 0.3 \u03bcg/ml Cy-3-conjugated (C3TA2)3 peptide nucleic acid probe (Pnagene), in 10 mM Tris (pH 7.2, Sigma) was added to the slide. After adding a coverslip; DNA was denatured for 3\u00a0min at 85\u00b0C. Hybridization was carried out for 2 h at room temperature. After washing the slides twice with 70% formamide/10 mM Tris (pH 7.2)/0.1% bovine serum albumin (BSA), slides were washed again (three times for 5 min) with 0.05 M Tris/0.15 M NaCl (pH 7.5) containing 0.05% Tween-20. After dehydration with ethanol slides were air dried and stained with PBS containing 0.1 ng/ml of 4\u2019-6-diamidino-2-phenylindole (DAPI) for 5 min. After mounting the cells (Vectashield, Vectorlabs), a coverslip was added.\n\n### Image analysis\n\nConfocal microscopy analysis was carried out at a Leica TCS-sp5 confocal microscope (Leica). Images were acquired at 63x magnification and 1.5-2.0 digital zoom. Multi-tracking mode was used to acquire images. Stacks of DAPI and Cy3 staining were taken with a step size of 1 \u03bcm. Peripheral blood cells and bone marrows were captured including five steps (z-range 4 \u03bcm). Maximum projection of the images was carried out and Definiens XD 1.5 image analysis software (Definiens GmbH) was used for quantitative image analysis. Nucleus and telomere detection was carried out based on DAPI and Cy3 intensity patterns. A valid image analysis was assumed in case of a correct detection of 90% of all visible telomeres. All image analysis was carried out single-blinded. Individual telomere signals were calculated after subtraction of the mean background value per detected nucleus. For bone marrow section and peripheral blood cells, values of all detected telomeres were used for analysis. Paraffin embedded lymphocytes of three healthy donors and granulocytes of a patient with chronic myeloid leukemia with a determined telomere length were used as controls for bone marrow biopsies. Linear regression of the control cells was carried out to convert telomere length from arbitrary units to kb. Telomere length in kb of the Q-FISH analysis of peripheral blood cells was calculated based on the linear regression of the corresponding Flow-FISH values.\n\n### Mathematical model of telomere length dynamics\n\nWe assume a finite number of $1+c$ accessible telomere states of stem cells, where each state $i$ contains cells of equal average telomere length. Initially, $N_{0}$ cells are in state $0$ and cells will progressively enter downstream states after cell divisions. An asymmetric division of a cell in state $i$ leads to one more differentiated cell (more committed within a hierarchically tissue organization) and one stem cell. The committed (progenitor) cell leaves the pool of stem cells and does not further contribute to dynamics in the stem cell population. The second cell keeps the stem cell properties and enters state $i+1$, reflecting the shortening of its telomeres by a length of $\u0394c$. Similarly, a symmetric cell division results in two stem cells, both entering the next subsequent state. In our model, stem cells divide symmetrically with probability $p$ and asymmetrically with probability $1-p$, respectively. A cell in state $c$ enters cell cycle arrest and cannot reach subsequent states - the next proliferating cell is randomly chosen amongst all cells not yet in state $c$.\n\n#### Stochastic simulations\n\nWe implement individual based stochastic simulations of our telomere model. We initialize our program with $N_{0}$ cells in state $0$. The next cell to proliferate is chosen randomly amongst all cells not yet in state $c$. If a cell is chosen, we draw a random number $\u03be\\in0,1$. If $\u03be>p$, one cell enters the next subsequent compartment (corresponding to an asymmetric cell division). If $\u03be\\leqp$, two cells enter the next subsequent compartment (corresponding to a symmetric stem cell division). In both cases, the mother cell is removed. Iterating over many cell divisions leads to a distribution of cells amongst the accessible $1+c$ cell cycle states. Recording the temporal change of the distribution allows us to infer further properties of interest such as the time dependence of the average and the variance of the distribution. All simulations are implemented in C++, and are analyzed and visualized in Mathematica 10.0 and R 3.2.1.\n\n#### Asymmetric cell divisions\n\nWe first discuss the telomere length dynamics under asymmetric cell divisions (corresponding to $p=0$ and called model 1 in our further notation). We call $N^{i}t$ the number of cells in state $i$ at time $t$. We further choose the initial condition $N^{0}0=N_{0}$. Asymmetric cell divisions strictly conserve the size of the cell pool $\\sum_{i=0}^{c}N^{i}t=N_{0}$. We apply a deterministic, time continuous approximation of the underlying stochastic process and capture the average dynamics of telomere shortening by a system of coupled differential equations,\n\n$$\nN\u02d9^{i}t=-r\\frac{N^{i}}{N_{0}}i=0-r\\frac{N^{i}}{N_{0}}+r\\frac{N^{i-1}}{N_{0}}0<i<cr\\frac{N^{i-1}}{N_{0}}i=c.\n$$\n\nHere, $r$ represents the proliferation rate of a cell. Cells move towards higher states progressively and accumulate in state $c$, where they enter cell cycle arrest.\n\nThe general solution of (Equation S1) can be derived recursively and is given by\n\n$$\nN^{i}t=\\frac{N_{0}}{i!}\\frac{rt}{N_{0}}^{i}\u00a0e^{-\\frac{rt}{N_{0}}}0\\leqi<cN_{0}1-\\suml=0c-1\\frac{1}{l!}\\frac{rt}{N_{0}}^{l}e^{-\\frac{rt}{N_{0}}}\u00a0i=c.\n$$\n\nThe number of cells in states $i<c$ resembles a truncated Poisson distribution with rate parameter $\\frac{r}{N_{0}}$ and shape parameter $i$. Figure 1g shows a comparison of solution (Equation S2) to exact individual based stochastic computer simulations. The number of cells in state $0$ decreases exponentially. Cells in states $i=1,\u2026,c-1$ are initially absent, undergo a maximum and vanish in the long run again. Only cells in state $c$ accumulate over time.\n\nInferring distribution (Equation S2) from in vivo data requires several blood samples at sequential time intervals. A single measurement of the telomere length distribution at time $t^{\u2032}$ corresponds to the interception points of a vertical line, drawn at time $t^{\u2032}$, and the number of cells in every state in the model given by Equation S2. Thus, the observed distribution at time $t^{\u2032}$ in Figure 1g is given by\n\n$$\nf_{t^{\u2032}}\u00a0c={N^{0}t^{\u2032},\u2026,N^{c}t^{\u2032}}.\n$$\n\nThis distribution becomes a traveling wave that shifts towards shorter average telomere length in time, see Figure 1\u2014figure supplement 1. The maximum of this wave reaches state $i$ after time $t_{max}^{i}=\\frac{iN_{0}}{r}$. Plugging this into Equation S2, we find for the maximum of this traveling wave\n\n$$\nN^{i}t_{max}^{i}=\\frac{N_{0}}{i!}\\frac{i}{e}^{i}\u2248\\frac{N_{0}}{\\sqrt{2\\pii}}=\\frac{N_{0}}{\\sqrt{\\frac{2\\pir}{N_{0}}t_{max}^{i}}},\n$$\n\nwhere we applied Stirling\u2019s formula. The most abundant telomere length declines proportional to $\\frac{1}{\\sqrt{t_{max}}}$ in time if cells undergo asymmetric cell divisions only.\n\nNext we calculate the time dependence of the average telomere length $Ect$. This corresponds to the first moment of the distribution (Equation S2), given by\n\n$$\nEct=\\frac{1}{N_{0}}\\sumi=0cc-\u0394ciN^{i}t\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0=\\sumi=0c\\frac{c-\u0394ci}{i!}\\frac{rt}{N_{0}}^{i}\u00a0e^{-\\frac{rt}{N_{0}}}\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0=\\sumi=0c\\frac{c}{i!}\\frac{rt}{N_{0}}^{i}\u00a0e^{-\\frac{rt}{N_{0}}}-\u0394c\\sumi=0c\\frac{i}{i!}\\frac{rt}{N_{0}}^{i}\u00a0e^{-\\frac{rt}{N_{0}}},\n$$\n\nwhere cells in state c\u00a0do not contribute. To calculate this sum we first note that the upper incomplete gamma function is defined as\u00a0$\u03931+c,\\frac{rt}{N}=\\int_{\\frac{rt}{N}}^{\u221e}dx\u00a0x^{c}e^{-x}$, but can also be represented by incomplete exponential sums\u00a0$\u03931+c,\\frac{rt}{N}=c!e^{-\\frac{rt}{N}}\\sum_{i=0}^{c}\\frac{1}{i!}\\frac{rt}{N}^{i}$. If we set\u00a0$x=\\frac{rt}{N}$, we can write\n\n$$\n\\sumi=0c\\frac{c}{i!}x^{i}e^{-x}=\\frac{c}{c!}\u03931+c,x\n$$\n\nthe second term is\n\n$$\n\\sumi=0c\\frac{i}{i!}x^{i}e^{-x}=x\\sumi=0c\\frac{x^{i}}{i!}e^{-x}+x\\frac{\u2202}{\u2202x}\\sumi=0c\\frac{x^{i}}{i!}e^{-x},\n$$\n\nand thus we have\n\n$$\ne^{-x}\\sumi=0c\\frac{i}{i!}x^{i}=x\\sumi=0c\\frac{x^{i}}{i!}e^{-x}+x\\frac{\u2202}{\u2202x}\\sumi=0c\\frac{x^{i}}{i!}e^{-x}=x\\frac{\u03931+c,x}{c!}-\\frac{x^{1+c}}{c!}e^{-x}.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n$$\n\nIn the last step we used the property of the upper incomplete gamma function $\\frac{\u2202}{\u2202x}\u0393n+1,x=-x^{n}e^{-x}$. Collecting all terms in Equation S5 again gives\n\n$$\nEct=\\frac{\u0394c}{c!}\\frac{rt}{N_{0}}^{1+c}e^{-\\frac{rt}{N_{0}}}+\\frac{cN_{0}-\u0394crt}{N_{0}}\\frac{\u03931+c,\\frac{rt}{N_{0}}}{c!}.\n$$\n\nThe expression for the average telomere length (Equation S9) simplifies significantly for certain parameter regimes. For example for the hematopoietic system in humans we expect $N_{0}$ at least to be in the order of a few hundred of cells and $c$ is strictly larger than zero. Thus the first term in Equation S9 is very small and negligible. The second term is dominated by the linearly decaying term, as the incomplete gamma function is $\u03931+c,\\frac{rt}{N_{0}}\u2248c!$ for $t\u226ar/N_{0}$, i.e. sufficiently small $t$. Thus in this situation expression (S9) is well approximated by\n\n$$\nEct\u2248\\frac{cN_{0}-\u0394crt}{N_{0}}\n$$\n\nuntil only few cells have reached state $c$. The linear approximation Equation S10 is excellent, until most cells reach states of very short telomeres. In the situation of critically short telomeres, the full solution (Equation S9) has to be used and the average telomere length reaches zero asymptotically.\n\nOur approach allows us to calculate additional properties of the system. The knowledge of the exact distribution enables us to derive all moments of the distribution. For example, we can derive analytical expressions for the time dependence of the variance $\\sigma^{2}t$. First note, that the moment generating function for the distribution (Equation S2), $M_{c}z=Ee^{cz}t$, is\n\n$$\nM_{c}z=1+\\frac{e^{e^{-z}-1\\frac{rt}{N_{0}}}\u0393\u00a01+c,\\frac{e^{-z}rt}{N_{0}}}{c!}-\\frac{\u0393\u00a01+c,\\frac{rt}{N_{0}}}{c!}.\n$$\n\nWe recover the average (Equation S9) of the telomere length distribution via $Ect=\\frac{\u2202}{\u2202x}M_{c}0$. The variance can be calculated via\n\n$$\n\\sigma^{2}t=Ect^{2}-E^{2}ct=\\frac{\u2202^{2}}{\u2202x^{2}}M_{c}0-\\frac{\u2202}{\u2202x}M_{c}0^{2}=\\frac{rt}{N_{0}}^{1+c}\\frac{N_{0}c-rt}{N_{0}c!}e^{-\\frac{rt}{N_{0}}}+c-\\frac{rt}{N_{0}}^{2}+\\frac{rt}{N_{0}}\\frac{\u0393\u00a01+c,\\frac{rt}{N_{0}}}{c!}-E^{2}ct.\n$$\n\nAgain, the first term of Equation S12 is negligible for a biological meaningful parameter range. The quadratic term $c-rt/N_{0}^{2}$ is compensated by an identical term in $E^{2}ct$ (see Equation S9). Again, the gamma function is approximately equal to $c!$ for sufficiently small times. Thus, expression (Equation S12) is initially dominated by the linear term and consequently, the variance grows linear as $\\sigma^{2}=\\frac{rt}{N_{0}}$. The standard deviation increases in time as\n\n$$\n\\sigma=\\sqrt{\\frac{rt}{N_{0}}}.\n$$\n\nThe linear approximation of the variance is excellent. Only if cells start to accumulate in state $c$ (cell cycle arrest) the variance decreases.\n\n#### Symmetric cell divisions\n\nIn the following, we modify the system of differential Equation S1 (model 1) to incorporate symmetric stem cell divisions (model 2). We assume a cell division to be symmetric with probability $p$ and asymmetric with probability $1-p$ respectively. Note that the number of stem cells is not constant but increases due to symmetric cell divisions. Initially there are $N_{0}$ cells with telomeres of length $c$. We assume a number of stem cell divisions that is constant within a fixed time interval, reflecting the necessity to produce a fixed number of differentiated cells during a unit of time. However, time intervals between stem cell divisions remain stochastic in the individual based model. As a consequence, the stem cell pool increases linearly in time, $N_{p}t=N_{0}+rpt$. Thus, the system of differential equations changes to\n\n$$\nN\u02d9_{p}^{i}t=-\\frac{rN_{p}^{i}}{rpt+N_{0}}i=0-\\frac{rN_{p}^{i}}{rpt+N_{0}}+\\frac{r1+pN_{p}^{i-1}}{rpt+N_{0}}0<i<c\\frac{rN_{p}^{i-1}}{rpt+N_{0}}i=c.\n$$\n\nThe solution to this system of differential equations is\n\n$$\nN_{p}^{i}t=\\frac{N_{0}}{i!}\\frac{1+p}{p}^{i}\\sqrt[-p]{t^{*}}ln^{i}(t^{*})\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\\leqi<cN_{0}(1+p)^{i-1}1-\\frac{\u0393(i,\u00a0p^{-1}ln(t^{*}))}{(i-1)!}\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0i=c\n$$\n\nwhere we used $t^{*}=\\frac{rp}{N_{0}}t+1$ as an abbreviation. Using l\u2019Hopital and $e^{x}=limn\u2192\\infty(1+\\frac{x}{n})^{n}$ we recover the Equation S2 for $p\u21920$ and the solution turns into a Poisson distribution again,\n\n$$\nlimp\u21920N_{p}^{i}t=\\frac{N_{0}}{i!}\\frac{rt}{N_{0}}^{i}e^{-\\frac{rt}{N_{0}}}=N^{i}t.\n$$\n\nNote that we assumed a constant number of cell divisions within a fixed time interval. Due to the increasing stem cell pool size, this effectively causes a reduction in the proliferation rate of individual stem cells with age.\n\nSimilar to the former subsection, the time dependence of the maximum of the distribution can be calculated for $i=1,\u2026,c-1$. The time until the maximum of the telomere length distribution reaches length $i$ becomes\n\n$$\nt_{max,p}^{i}=N_{0}\\frac{e^{ip}-1}{rp}.\n$$\n\nThe time to reach the maximum increases exponentially in $i$ for symmetric cell divisions, in contrast to the linear increase for only asymmetric cell divisions. However, Equation S17 reduces to the result we obtained in the former subsection in the limit $p\u21920$. The cell count at the maximum becomes\n\n$$\nN^{i}t_{max,p}^{i}\u2248\\frac{N_{0}1+p^{i}}{\\sqrt{2\\pii}}.\n$$\n\nThe maximum decreases considerably slower with $i$ (given the same initial size of the stem cell pool) compared to the case of only asymmetric cell divisions Equation S4, where we have used Stirling\u2019s formula for the approximation. Similar to the former subsection we can calculate the average of the telomere length distribution. This time the average becomes\n\n$$\nE_{p}ct=\\frac{1}{N_{p}t}\\sumi=0cc-i\u0394cN_{p}^{i}t=\\frac{\u0394c\u03c1^{1+c}}{c!}\\frac{ln^{1+c}t^{*}}{t^{*}^{\u03c1}}+\\frac{\u0393\u00a01+c,\u03c1\u00a0ln\u00a0t^{*}}{c!}c-\u0394c\u03c1\u00a0ln\u00a0t^{*}\n$$\n\nwith $t^{*}=\\frac{rp}{N_{0}}t+1$ and $\u03c1=\\frac{1+p}{p}$. Similar to Equation S9, this expression is dominated by the second term of the equation. The average decreases approximately logarithmically for sufficiently small $t$,\n\n$$\nE_{p}ct\u2248c-\u0394c\\frac{1+p}{p}ln(\\frac{rp}{N_{0}}t+1).\n$$\n\nThe temporal decrease of the average telomere length speeds up with decreasing $p$. In the limit $p\u21920$, we recover the result (Equation S10) of a linear decreasing average. Similar to the former section we can derive the variance of the distribution, using the moment generating function $M_{p}x=E_{p}e^{cx}t$, via\n\n$$\n\\sigma_{p}^{2}t=\\frac{\u2202^{2}}{\u2202x^{2}}M_{p}0-\\frac{\u2202}{\u2202x}M_{p}0^{2}.\n$$\n\nHowever, the result becomes less accessible and informative. Thus we restrict ourselves to a numerical solution of Equation S21. The logarithmic decay of the average telomere length has consequences on the interpretation of experimental results of telomere length distributions. In infants an accelerated decrease of telomere length can be observed. This can be explained immediately by an expanding stem cell pool. The stem cell pool contains only a few $N_{0}$ stem cells initially (newborns). These stem cells divide symmetrically with probability $p$ and asymmetrically with probability $1-p$ respectively. The symmetric cell divisions cause an increase of the stem cell pool size and an indirect decrease in cell proliferation rates. The logarithmic decay is pronounced initially, but flattens after some time (as the number of stem cells increases). Thus, in adults the logarithmic decay is difficult to distinguish from a linear decay, see for example Figure 4 in the main text.\n\n### Connections to the Normal and Log-Normal distribution\n\nThe number of cells in each state $i$ follows a Poisson distribution\n\n$$\nN^{(i)}(t)=\\frac{N_{0}}{i!}\\frac{rt}{N_{0}}^{i}e^{-\\frac{rt}{N_{0}}}\n$$\n\nin the case of only asymmetric stem cell divisions, see Equation S2 for details. We introduce $x=\\frac{rt}{N_{0}}$, and upon normalisation (S22) becomes\n\n$$\nN^{(i)}(x)\u221d\\frac{x^{i}}{i!}e^{-x},\n$$\n\nwhere $x$ is a Poisson distributed variable. For $x$ sufficiently large, this random variable is well described by a normal distribution and we have\u00a0x \u221d Normal distribution.\n\nIf we allow for symmetric cell divisions, cells in state $i$ followed a generalised Poisson distribution\n\n$$\nN_{p}^{(i)}(t)=\\frac{N_{0}}{i!}\\frac{1+p}{p}^{i}ln^{i}\u00a0\\frac{rpt}{N_{0}}+1\\sqrt[-p]{\\frac{rpt}{N_{0}}+1},\n$$\n\nsee\u00a0Equation S15 for details. Choosing $y=\\frac{rpt}{N_{0}}+1$ and neglecting normalisation factors we can write\n\n$$\nN_{p}^{(i)}(y)\u221d\\frac{1}{i!}ln^{i}(y)\\sqrt[-p]{y}\n$$\n\nIf we change variables again and choose $y=e^{x}$, Equation S25 becomes\n\n$$\nN_{p}^{(i)}(y=e^{x})\u221d\\frac{1}{i!}ln^{i}e^{x}\\sqrt[-p]{e^{x}}=\\frac{x^{i}}{i!}e^{-\\frac{x}{p}}\u221dN^{(i)}(x).\n$$\n\nAs $x=\\frac{rt}{N_{0}}$ is approximately normally distributed, and $y=e^{x}$, $y=\\frac{rpt}{N_{0}}+1$ follows a Log-normal distribution.\n\n### Parameter evaluation for the average telomere length on population level by Bayesian inference method\n\nWe implement Approximate Bayesian Computation (ABC) rejection samplings to derive posterior parameter distributions for the predicted average telomere length under asymmetric (model 1, Equation S10) and combined symmetric and asymmetric (model 2, Equation S20) cell proliferations respectively. Utilizing Equation S10, we have to infer two parameters: (i) the average decrease of telomere length per time $r/N_{0}$ and (ii) the initial telomere length $c$. In the case of Equation S20 a third variable has to be determined: (iii) the probability of symmetric cell divisions $p$. We draw these variables independently from uniform distributions (prior) with ranges $r/No\u00a0\\in\u00a0[0,0.2]\\frac{kbp}{year}$, $c\\in7,15kbp$ and $p\\in0,1$ and produce $5\\times10^{8}$ independent realizations of Equation S10,S20. We calculate the coefficient of determination $R^{2}$ between each of these realizations and the average telomere length from a data set of 356 healthy individuals (see for example Figure 1 in the main text) via\n\n$$\nR^{2}=1-\\frac{\\sum_{i}Ect_{i}-yt_{i}}{\\sum_{i}y\u00af-yt_{i}}.\n$$\n\nHere, $yt_{i}$ denotes, the measured telomere length of an individual with age $t_{i},\u00a0y\u00af$ is the average measured telomere length of the population and $Ect_{i}$ the value of a single realization of Equation S10 or Equation S20 at time $t_{i}$ given the random set of parameter values. We seek parameter regimes that maximize $R^{2}$ and discard any parameter combination below a certain threshold.\n\n#### Bayesian parameter evaluation for asymmetric cell divisions\n\nFor a linear fit according to Equation S10 with 2 parameters we find $R_{max}^{2}=0.5314$ as the maximum value for the coefficient of determination. To determine the possible rate of parameters we discard any parameter combination with $R^{2}<0.53$. This gives sharp posterior distributions for both parameter values that peak at $\u0394cr/N_{0}\u00a0=\u00a00.056\u00a0\\frac{kbp}{year}\u00a0$ and $c=10.15kbp$, see Figure 5a,b. This concurs with best parameter estimations from linear fitting $c_{f}=9.85\\pm0.2kbp$ and $\u0394cr_{f}/N_{f}\u00a0=\u00a00.05\\pm0.005\u00a0\\frac{kbp\u00a0}{year}$. This scenario underestimates the initial telomere length ($c=10.15$, whereas the average initial telomere length in the data is $c\u00af=10.67kbp$).\n\n#### Bayesian parameter evaluation for an interplay of symmetric and asymmetric cell divisions\n\nFor a logarithmic fit according to Equation S20 with three parameters we get an improved coefficient of determination $R_{max}^{2}=0.541$. We discard any parameter combination that results in $R^{2}<0.54$. Again we find localized posterior parameter distributions that peak at $\u0394cr/n_{0}\u00a0=\u00a00.071\u00a0\\frac{kbp}{year}\u00a0$, $c=10.41kbp$ and $p=0.32$, see Figure 5c\u2013e. This approach improves the prediction of the initial telomere length. The average loss of telomere length per year is higher compared to only asymmetric proliferation and the probability of symmetric cell divisions peaks in a range of $p\\in0.25,\u00a00.4$. This concurs with a nonlinear fit, where we find $p_{f}=0.37\\pm0.2$, $c_{f}=10.4\\pm0.3kbp$ and $\u0394cr_{f}/N_{f}\u00a0=\u00a00.071\\pm0.005\u00a0\\frac{kbp}{year}\u00a0$. However, we note this is an average over all individuals with an age distribution from $0$ to $85$.\n\n#### Bayesian parameter evaluation for a phase transition extension of the model\n\nIn the following we partition the data into two subsets and analyze an extension of the model. We introduce an additional parameter $t_{T}$ that resembles a transition time. This transition time is drawn from a uniform distribution with $t_{T}\\in0,80$. We perform above Bayesian approach according to Equation S20 independently for each random partition of the data set. This gives in total seven posterior distributions. This approach gives $R_{max}^{2}=0.573$ as the maximum value for the coefficient of determination and we discard any parameter combination with $R^{2}<0.57$. The transition occurs in children at the age of 6 to 7, see Figure 5f\u2013i, and a clear distinction of the posterior parameter distributions between phase 1 and phase 2 can be observed. The parameter estimations confirm with the interpretation of a growing stem cell pool. We find an increased rate of telomere shortening, compared to phase 2 as well as an increased probability of symmetric cell divisions.\n\n#### Non linear fitting of calculated telomere length distributions to measured distributions in single individuals\n\nIn the previous subsection, the average telomere shortening at the population level was investigated. We found indications for an increasing stem cell pool with age in particular in children due to infrequent symmetric stem cell divisions. In the following, we shift from the population level towards the telomere length distribution in healthy individuals. Equation S15 allows us to compare theoretical predictions to measured telomere length distributions and to infer individual proliferation parameters of stem cell populations in vivo from a single blood sample under an interplay of symmetric cell divisions (with probability $p$) and asymmetric cell divisions (with probability $1-p$). However, Equation S2 is contained as the special case ($p=0$), according to Equation S15. The expected number of cells that have not entered cell cycle arrest is given by\n\n$$\nN_{p}^{i}t=\\frac{N_{0}}{i!}\\frac{1+p}{p}^{i}\\frac{ln^{i}\\frac{rp}{N_{0}}t+1}{\\sqrt[p]{\\frac{rp}{N_{0}}t+1}}.\n$$\n\nWe set $t^{*}=\\frac{rp}{N_{0}}t+1$, normalize (S28) and obtain for the expected telomere length distribution\n\n$$\n\u03c1_{p}x,t=\\frac{1}{(c-x)!t^{*}}\\frac{1+p}{p}^{c-x}\\sqrt[-p]{t^{*}}ln^{c-x}(t^{*})\u00a0.\n$$\n\nWe perform non-linear fits of Equation S29 to measured telomere distributions in healthy individuals, leaving three free parameters $t^{*}$, $p$ and $c$ to be determined. Results of the nonlinear fits can be seen in Figure 6\u2014figure supplements 1\u20133. The corresponding fitting parameters are denoted in Supplementary file 1.\n",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "2e332929-5d59-4652-9cb8-6536717fd59a",
+      "submission_id": "2d67215a-9e44-43ad-a552-5c9f208c752e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank J\u00fclicher, Max Planck Institute for the Physics of Complex Systems , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08687.018](https://doi.org/10.7554/eLife.08687.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Reconstructing the in vivo dynamics of hematopoietic stem cells from telomere length distributions\" for peer review at eLife. Your submission has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom is am member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The referees find the work very interesting and of high quality. Using simple models for symmetric and asymmetric stem cell divisions, key parameter that characterizes the in vivo dynamics of telomere length distributions are reconstructed from measured telomere length distributions.\n\nBefore the manuscript could be accepted, several points raised by the referees should be addressed and clarified in a revised manuscript. These concern in particular the possibility to use a likelihood based inference approach and questions about the relationship between measured data (telomere length) and model states (numbers of stem cell divisions).\n\nReviewer #1:\n\nThe authors study the length distributions of telomeres in hematopoietic stem cells. Using simple stochastic models of telomere shortening during cell division, parameters characterizing the in vivo dynamics of hematopoietic stem cells are reconstructed.\n\nThis work is elegant and very interesting. Overall the paper is based on a simple and elegant idea. It provides information on stem cell dynamics in humans. However, when reading the manuscript it remains unclear to me how robust and sound the conclusions and results are. There are a number of points that need to be addressed by the authors before the strength of the work can be fully appreciated.\n\nMajor points:\n\nA basic problem I have when reading the manuscript is that the models of telomere length reduction address the telomere length distribution in the stem cell population. However the telomere length data is obtained for the cell population taken from blood or bone marrow that contains differentiated cells. So in order to analyze the data it appears that one would need a model for the telomere length distribution of those cells found in the samples. Why should this distribution correspond to the one of the stem cell pool described by the model? This is quite unclear.\n\nA related point is that the authors discuss very simple scenarios where only one step of differentiation from the stem cell pool is considered. In practice, differentiated blood cells could arise via several differentiation steps in a more complex scheme. This might change the telomere length distribution of the circulating cells. Such issues are not addressed in the paper.\n\nA question arises from the statement in that \"a cell loses typically 30 to 50kbp telomeric repeats per cell division\" (subsection \u201cIn vivo measurements of telomere length suggest an increasing number of hematopietic stem cells during human adolescence\u201d). This implies that the loss of repeats per division is itself a stochastic variable with mean and variance. In this case the distribution of telomere length differs from the distribution of cell states i. This is not discussed. Rather, the distinction is blurred by a confusing mix of language. For example in the subsection \u201cProliferation properties of stem cells differ during adolescence and adulthood\u201d, the units of r/N0 are given as kbp/year even though by definition r/N0 is a rate with units 1 over time.\n\nThe presentation of the work is sometimes confusing because of imprecise language and confusing terminology. For example, in the subsection \u201cThe model predicts characteristic telomere length distributions for different ratios of symmetric and asymmetric stem cell divisions\u201d you state: \"Each stem cell proliferates randomly with a rate r\". Again, in the subsection \u201cAsymmetric cell divisions\u201d: \"r represents the proliferation rate of a cell\". However looking carefully at Equation (S1) suggests that the parameter r is not what the authors say it is. The proliferation rate per cell rather appears to be given by the ratio r/N0 when using the terminology of the authors. Similarly, for the case with symmetric divisions, the proliferation rate per cell is r/(rpt+N0). This is consistent with the statement that the proliferation rate of a stem cell decreases with time but is inconsistent with the definition of r in the text.\n\nThe statement \"the assumption of strictly asymmetric divisions fails to explain the pronounced loss of telomere in infants\" is unclear. What exactly is the evidence for a pronounced loss in infants? If one fits a linear law to the data in Figure 2 there would be a lot of variability at young age but not a \"pronounced loss\".\n\nRelated to this last point is the statement in the caption to Figure 2: \"The decrease of the average telomere length slows down in children and becomes almost linear in adults.\" I do not understand how this statement follows from the data shown. The data does not appear to support this statement.\n\nThe statement of fact that the \"increased loss\" of telomere length at young age is \"an immediate consequence of an expanding stem cell population\" is a strong statement, without a clear reasoning. It rather seems to be a suggestion based on the model that is here stated as plain fact. Also, the evidence for an \"increased loss\" is not compelling, as it is not easily seen in the data in Figure 2. I do not understand where this claim stems from. The statement about \"increased loss\u2026 during adolescence\" is unclear too. Which part of the data is meant here?\n\nThe distinction of two phases discussed in Figure 4 is not very convincing and seems a bit arbitrary. Also, in Figure 4, it is unclear what data was analyzed with the Bayesian method. What problem is solved by introducing the distinction between two phases? The Bayesian approach also becomes conceptually puzzling when the probability p is now itself becoming distributed by a very broad probability distribution in phase 1 (Figure 4 h). What does this mean?\n\nThe linear fits to the data in Figure 6 are not really compelling as the data seems to be consistent with widely varying linear behaviors.\n\nReviewer #2:\n\nIn their manuscript entitled 'Reconstructing the in vivo dynamics of hematopoietic stem cells from telomere length distributions' Werner et al. use a simple mathematical model of symmetric/asymmetric stem cell divisions and link it telomere length distributions measured experimentally in hematopoietic cells. Studying the properties of the model, they identify qualitative differences in the resulting telomere distribution between a strictly asymmetric and a mixed symmetric/asymmetric model of cell division. Fitting the model to the data, they claim that during childhood stem cell divisions are predominately symmetric leading to an expanding stem cell pool, while during adulthood stem cell divisions are mostly asymmetric.\n\nThe manuscript is well written, the theoretical results/calculations are well explained, sometimes maybe even in too much detail in the Introduction but definitely sound, and the application of the model to experimental data reveals interesting insight into (individual) human stem cell dynamics.\n\nI very much liked that the authors took a Bayesian approach to model estimation, because the indeterminacies in the model need to be quantified. My main criticism (details below) however revolves around some modeling aspects and the precise inference method used to fit the model to the experimental data.\n\nBefore publication, I encourage the authors include the following improvements/clarification into the manuscript:\n\nMajor points:\n\nThe applied inference approach (termed 'Bayesian inference method') seems to be very simplistic. The authors essentially apply Approximate Bayesian Computation (ABC) rejection sampling (this term should be mentioned in the manuscript). These likelihood-free methods are usually applied when the likelihood function of the model is intractable. However, the authors show (e.g. S10, S20) that they can solve for the relevant quantities of their model. Hence a likelihood based inference approach is possible (e.g. maximum likelihood estimation + profile likelihoods, or full MCMC for posterior distributions) and should be used (in order to avoid the pitfalls associated with ABC). In fact, fitting S10 is just a linear regression problem.\n\nYou consider three different models of increasing complexity: 1) strictly asymmetric, 2) mixed symmetric/asymmetric, and 3) a two-phase model. Obviously, more complex model can fit the data better. However, can you show that the more complicated models are indeed necessary using some model selection techniques? Especially model 3) might be hard to justify: Looking at Figure 2, one cannot really observe two different phases and model 2) seems to do fairly well already. Here I strongly suggest to do Bayesian model selection e.g. using Bayes factor \u2013 recently it has been shown that this can be efficiently calculated e.g. using thermodynamic integration also in the context of biological dynamical systems.\n\nIn your model, cells are distinguished according to the number of times they have divided (the states i). In the experiment you can only observe telomere length for a cell, not number of divisions.\n\nHow are those two quantities related in your model (what's your observation/error model for the data)? This seems nontrivial, e.g. because a certain state i in the model doesn't correspond to a fixed observed telomere length (you mention that each division yield a loss of ~30-50bp) and this uncertainty will propagate with each division. Hence, based on a measured telomere length inferring the number of divisions is probably not unique (e.g. what about a measurement of telomere length = 55? It could have divided once, losing 55bp at once. Or it might have divided twice losing a bit less then 30bp each time). Please discuss these non-uniqueness using either Bayesian credible intervals or more so identifiability analysis using profile likelihood/posterior methods.\n\nAccording to the stochastic model, you implicitly assume that cell-cycle times (in your case the waiting times in state i) are distributed exponentially (which they are clearly not in the real stem cell system). Please discuss if/how this assumption impacts on the results. Alternatively people nowadays often use delayed models by having the cell go through multiple states before actually dividing \u2013 then the Poisson model would be replaced by a log normal in the limit I believe. Here comparison to actual cell cycle distributions would be helpful.\n\nFor the section \"Proliferation properties of stem cells during adolescence and adulthood\" it remains unclear what data is actually fitted with this procedure. Are the same data shown in Figure 2? If so, it seems strange that you already discuss the fitted model in a previous paragraph and describe this 'Bayesian inference method' only later.\n\nIn the next section (\u201cA single sample of telomere length distribution\u2026\u201d) you analyze the entire telomere distribution instead of only looking at the average. First, it is worth mentioning that these data correspond to the open symbols in Figure 2 (which of course shows only the mean again). Second, did you refit the model to those distributions? If so, how was this done?\n\nReviewer #3:\n\nThe authors develop a mathematical model in order to interpret data of telomere length shortening in hematopoietic stem cells from a relatively large number of patients. The mathematical model is used to infer dynamic properties of stem cell populations from data on telomere length distributions. Such analysis could quantify parameters of telomere dynamics from a single blood sample of a person. The model can be used as a tool to retrospectively infer stem cell dynamics, which could become useful in the personalized diagnosis and prognosis of disease.\n\nI think that this is a very nice paper and of very high impact for the field. It is a show-case for how biologically realistic mathematical models can be coupled with clinical data in order to arrive at clinically useful insights, with potential to influence disease understanding and diagnosis. Therefore, I think that the quality of the paper is definitely suitable for a high-impact journal, such as eLife, and I recommend that this paper is published in the journal after some revisions.\n\nI think that revisions could improve the paper further, and my suggestions are given as follows:\n\nFollowing the Introduction, you have a section on \"Modeling telomere length dynamics\". I think that this could be improved. In particular, it is hard to get a detailed enough picture of the exact modeling approach from this section. Some of the details that I was missing in this section are explained in the Results section. So perhaps, all model description could be placed in a modeling section, and the Results section could just describe the results. This might make it easier to read the paper. Of course, a detailed and clear model description is given in the supplementary materials, so my comment is just about the readability of this particular section in the main text\n\nI have a question regarding the model structure, and it might be useful to discuss this somewhere in the paper. With a certain probability, asymmetric division occurs, where stem cell division leads to one stem daughter cell and one differentiating cell. With the opposite probability, symmetric division was assumed to occur, where division gives rise to 2 stem cells. This is a biologically reasonable model. However, it is also possible to formulate this differently. For example, you can assume that with a certain probability, a stem cell divides to give rise to 2 stem daughter cells, and with the opposite probability, it divides to give rise to 2 differentiated daughter cells. In this way, you then probably would need to include feedback mechanisms to obtain stable and realistic dynamics. Would such a difference influence your results or not? I am not suggesting analyzing further models, but a discussion on model robustness might be useful for the paper.\n\nAlong similar thoughts, it could be helpful for the Discussion to include some text that discusses whether the reported results could change if different mathematical formulations or assumptions are used.\n\nFor clarity, the Abstract could point out more strongly that data have been collected for this and experimental procedures were used.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Reconstructing the in vivo dynamics of hematopoietic stem cells from telomere length distributions\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.. The manuscript has been significantly improved and the points of the referees have been taken into account. There is one technical comment of referee two that the authors should consider before acceptance, as outlined below. The new Figure 2\u2014figure supplement 1 clarifying the difference between the two models is very useful and might be well suited as a main figure.\n\nReviewer #1:\n\nThe authors have carefully addressed the reviewer comments. The issues raised in my first report have been clarified and the text is now much clearer.\n\nReviewer #2:\n\nIn revised version of their manuscript \"Reconstructing the in vivo dynamics of hematopoietic stem cells from telomere length distributions\", the authors have incorporated the comments and suggestions of the three reviewers, increasing the quality of the manuscript considerably. Especially some confusion due to inconsistent nomenclature has been sorted out and makes the manuscript much easier to read.\n\nIn particular, the authors responded to all my concerns/issues and could sort out most of them. However, I would like to comment on some specific points and ask for additional clarification if possible.\n\nFitting procedure:\n\nI have the feeling that it is a bit confusing/redundant now; to summarize this is what I found as fitting setup:\n\n1) You fit your models in the section \"In vivo measurements of telomere length\u2026\" giving some parameter estimates;\n\n2) You perform ABC-rejection sampling in the next section, giving some idea about the posterior parameter distribution and uncertainties;\n\n3) You do maximum likelihood estimates of the parameters (+ confidence intervals), again giving some idea about the uncertainties.\n\nSo, you fit the same data, with three different methods (actually I'm not sure what the difference between 1 and 3 is). This seems unnecessary and confusing. Why doing basically the same thing three times? Is this for different models, or for comparison? What\u2019s the difference between 1 and 3?\n\nOne observes that the estimates a (slightly) different, e.g. telomere_loss_ABC = 0.071 vs telormere_loss_MLE=0.075. Is this difference due to the different \"error measure\", i.e. R2 for ABC and quadratic distance/Gaussian error for MLE? Since you do ABC to get a handle on the uncertainties, you should report them (as you did for the MLE), i.e. the boundaries of the credibility intervals.\n\nOne major advantage of having the full posterior is that you can look at correlations of parameters. The one-dimensional confidence/credibility intervals (or an approximation) you can also obtain from MLE. Consider showing e.g. pairwise scatter-plots of the posterior samples to show whether there are some correlations/dependencies.\n\nThis whole subject discussed above should be straightened out in the final manuscript. Choose one suitable method and stick to it (I would suggest MCMC + Bayes factors, which gives you posterior uncertainties and model comparison or the ABC version). Otherwise the reader will get lost.\n\nModel selection:\n\nThanks for incorporating some model selection. Any particular reason why you choose AIC and not BIC? Does the BIC select the same model? Since the multiphase model is inferior to model 2, you should be careful not to interpret this model too much.\n\nFigure 2:\n\nThanks for showing the fits in Figure 2\u2014figure supplement 1. This helps a lot to see why model 1 doesn't explain the data so well. Is there any reason not to put this figure into the main manuscript (instead of the old Figure 2 which doesn't show the linear fit)?\n\nAbout my question on exponential waiting times:\n\nMy question was about cell cycle times, i.e. the time from a cell's \"birth\" (the division of its mother cell) until it divides. From what I understood when reading the supplement section \"Connections to the Normal and Lognormal distribution\", you look at the \"distribution\" N(i)(t), i.e. the number of cells across states, which is Poisson (model 1) or generalized Poisson (model 2). These can then be approximated by normals/lognormals.\n\nHowever, to me this is fundamentally different from a normal/lognormally distributed cell cycle time. The cell cycle time tells us when a single cell is going to divide. Your N(i)(t) tells us how a population of states spreads over the states i. I don't see an immediate connection between those to quantities. Please comment on that.\n\nReviewer #3:\n\nThe authors have addressed all of my comments and improved the manuscript accordingly. I think it should be accepted for publication in the current form.\n",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e465644b-f92f-4a96-b3ce-d363a3323880",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C1",
+      "claim": "Telomere length distributions contain a fingerprint of progressive telomere loss and the fraction of symmetric cell proliferations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mathematical model shows that these distributions contain a fingerprint of the progressive telomere loss and the fraction of symmetric cell proliferations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the mathematical model developed in the study and tested against measured data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "c78b4b86-b852-40b8-88c3-44dd103dafa7",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C2",
+      "claim": "The study analyzed telomere length distributions from 356 healthy individuals, including 47 cord blood and 28 bone marrow samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our predictions are tested against measured telomere length distributions in humans across all ages, collected from lymphocyte and granulocyte sorted telomere length data of 356 healthy individuals, including 47 cord blood and 28 bone marrow samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "fbaabf6b-ce55-4a60-a51e-8dd541c36179",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C3",
+      "claim": "There is an increasing stem cell pool during childhood and adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an increasing stem cell pool during childhood and adolescence and an approximately maintained stem cell population in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is derived from analysis of telomere length data across different age groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "756b7336-2cc2-489b-b6e6-1dc42a3441cd",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C4",
+      "claim": "The stem cell population is approximately maintained in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an increasing stem cell pool during childhood and adolescence and an approximately maintained stem cell population in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is derived from analysis of telomere length data in adult populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "3cd13f5c-c645-4690-8d43-ad4f9e86cf50",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C5",
+      "claim": "The method can detect individual differences from a single tissue sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our method is able to detect individual differences from a single tissue sample, i.e. a single snapshot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the mathematical model and individual sample analyses presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "a1597798-40ec-42f3-a012-05b131da19a7",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C6",
+      "claim": "Homeostasis in most mammalian tissues is maintained by occasional differentiation of infrequently dividing multi-potent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostasis is in most mammalian tissues maintained by the occasional differentiation of infrequently dividing multi-potent stem cells (Li and Clevers, 2010; Busch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "e23263d2-e096-42c0-885b-5d28ea041564",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C7",
+      "claim": "Stem cells are involved in the formation, maintenance, renewal, and aging of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are involved in the formation, maintenance, renewal, and aging of tissues (Reya et al., 2001; Morrison and Kimble, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "22eb814d-bfdb-483c-ad7a-4acdfe2e79e2",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C8",
+      "claim": "The longevity of stem cells imposes the risk of accumulation of multiple mutations that can cause cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Their longevity imposes the risk of the accumulation of multiple mutations that potentially induce aberrant stem cell proliferation and can ultimately cause the emergence of cancer (Hanahan and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research on cancer biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "3667e263-34db-43dc-a49e-f4efe1265217",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C9",
+      "claim": "Telomeres are noncoding repetitive DNA sequences at the ends of all eukaryotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomeres are noncoding repetitive DNA sequences at the ends of all eukaryotic chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about telomere structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "588d8f8d-a3ab-4af8-9e1b-eecfb82256e3",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C10",
+      "claim": "In vertebrates, telomere sequences consist of hundreds to thousands of repeats of the nucleobase blocks TTAGGG.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, these sequences consist of hundreds to thousands of repeats of the nucleobase blocks TTAGGG (Griffith et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "d42b5f6a-afd2-4db2-83c8-5a7c30600b5c",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C11",
+      "claim": "Telomere repeats are progressively lost in most somatic cells with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere repeats are progressively lost in most somatic cells with age, as the conventional DNA polymerase is unable to fully copy the lagging DNA strand of chromosomes during cell replication (Olovnikov, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research on the end-replication problem.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "37a4df5d-90ba-457e-af9e-00b50e7d0301",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C12",
+      "claim": "Short telomeres are associated with genetic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Short telomeres are associated with genetic instability (Hande, 1999; Feldser et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "800df062-b2f6-47a5-b8bb-bdde6f5234cc",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C13",
+      "claim": "Short telomeres trigger DNA-damage checkpoint pathways and enforce permanent cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "They trigger DNA-damage checkpoint pathways and enforce permanent cell cycle arrest ( d'Adda di Fagagna et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "d800f242-7d16-45e0-a9df-e451c4e43032",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C14",
+      "claim": "Telomere length limits the replication capacity of somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, telomere length limits the replication capacity of somatic cells (Hayflick and Moorhead, 1961) and can indirectly act as a tumor suppressor (Kinzler and Vogelstein, 1997; Campisi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research including the Hayflick limit.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "2bf04a1f-b0a6-4699-a371-a9c8b675c279",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C15",
+      "claim": "Telomerase is an enzyme that tags additional TTAGGG repeats to the end of chromosomes by utilizing single stranded RNA templates.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect can be attenuated by the enzyme telomerase, which tags additional TTAGGG repeats to the end of chromosomes by utilizing single stranded RNA templates (Greider and Blackburn, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the foundational research on telomerase.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "04f0fc60-01a9-4b06-8dd0-24043cea3eda",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C16",
+      "claim": "Telomerase is primarily expressed in compartments of stem and germ line cells, as well as in numerous tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomerase is primarily expressed in compartments of stem and germ line cells, as well as in numerous tumors (Kim et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "58394733-3e1e-4400-b613-ad60f53437bf",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C17",
+      "claim": "Telomerase expression levels are insufficient to prevent the progressive loss of telomere repeats in most healthy human tissues with age.",
+      "claim_type": "EXPLICIT",
+      "source": "However, telomerase expression levels are insufficient to prevent the progressive loss of telomere repeats in most healthy human tissues with age (Harley et al., 1990; Rufer et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "da8af58d-9087-43e7-bffe-da8236a5e468",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C18",
+      "claim": "Healthy human cells contain 184 telomeres, four on each of the 46 chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy human cells contain 184 telomeres, four on each of the 46 chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "416735e6-fe16-4ba8-94d6-35f1a0bafb68",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C19",
+      "claim": "The average telomere length of a cell shortens by a constant factor during each division.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the average telomere length of a cell shortens by a constant factor during each division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption of the mathematical model based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "38019ee2-ab34-400f-a5e6-7444ec404a84",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C20",
+      "claim": "It is the length of the shortest telomere rather than the average telomere length that triggers cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach might underestimate the number of senescent cells once telomeres become critically short, since it is the length of the shortest telomere rather then the average telomere length that triggers cell cycle arrest (Hemann et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "2f05d81a-df35-4582-bd8f-61f85eb9a5dd",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C21",
+      "claim": "All non-hematopoietic stem cells will eventually be depleted without continuous stem cell turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some of the progeny, particularly primitive progenitor cells, can be long lived and are able to maintain homeostasis without stem cell turnover for intermediate time intervals, eventually all non hematopoietic stem cells will be depleted without continuous stem cell turn over (Busch et al., 2015; Sun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "2a416486-a696-4f8a-83a6-6cac968c87c9",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C22",
+      "claim": "Cells leaving the stem cell pool have an approximately constant number of cell divisions before they reach maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells leaving the stem cell pool have an approximately constant number of cell divisions before they reach maturation (Takano, 2004; Werner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "16826748-329e-4d54-a4db-946898fa2831",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C23",
+      "claim": "The distribution of telomere lengths of mature cells is a good proxy for the distribution of telomere lengths in stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This shifts the distribution to shorter values of telomere length and consequently, the distribution of telomere lengths of mature cells is a good proxy for the distribution of telomere lengths in stem cells (Rodriguez-Brenes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research and is a key assumption of the model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "a6b32898-fab4-4184-8970-13cf8b20f76a",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C25",
+      "claim": "The expected telomere length distribution becomes a traveling wave that starts narrowly distributed around an initial telomere length and shifts towards shorter average telomere length with time.",
+      "claim_type": "EXPLICIT",
+      "source": "It becomes a traveling wave that starts narrowly distributed around an initial telomere length and shifts towards shorter average telomere length with time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "8f62ce93-f66a-4aef-a818-3c84fbb2e1b5",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C27",
+      "claim": "Under the presence of symmetric stem cell self-renewal, the telomere length follows a logarithmic decay with age.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the telomere length follows a logarithmic decay with age (see also Equation S19), given by",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical prediction from model 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "d38a0cc0-605a-4e89-b215-fe0b01da08ea",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C28",
+      "claim": "Telomere length was measured in lymphocytes and granulocytes in a cohort of 356 healthy humans with ages between 0 and 85 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test the predictions of our model experimentally, we have measured telomere length in lymphocytes and granulocytes in a cohort of 356 healthy humans with ages between 0 and 85 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "7574bb9c-f23b-4f29-847a-5509064cf701",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C29",
+      "claim": "The data includes 47 cord blood samples of healthy children and bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data includes 47 cord blood samples of healthy children and bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the experimental data set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "349bf805-fc07-4142-9610-1ec9852a0a09",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C30",
+      "claim": "Average telomere length in all 356 samples was assessed with established Flow-FISH protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the average telomere length in all 356 samples with established Flow-FISH protocols (Aubert et al., 2012; Baerlocher et al., 2006; Weidner et al., 2014; Beier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology with citations to established protocols.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "227d81ed-c474-49d2-87ac-e23826b9e756",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C31",
+      "claim": "28 blood samples of lymphocytes, 10 blood samples of granulocytes and 28 bone marrow biopsies were analyzed with quantitative-fluorescence in situ hybridisation (Q-FISH).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we have analyzed 28 blood samples of lymphocytes, 10 blood samples of granulocytes and 28 bone marrow biopsies with quantitative-fluorescence in situ hybridisation (Q-FISH) (Beier et al., 2015; Varela et al., 2011; Zijlmans et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional experimental data collection with citations to methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "f2c56170-0514-46d8-a9ee-66efd2832f2b",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C33",
+      "claim": "If a cell loses on average 50 bp telomeric repeats per cell division, this implies approximately 1 replication per year for hematopoietic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "If for example a cell looses on average 50 bp telomeric repeats per cell division (Rufer et al., 1999), this implies approximately 1 replication per year for the hematopoietic stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data combined with cited knowledge about telomere loss per division.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "ebd94640-44f7-4e3c-97e5-3a91b4007299",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C34",
+      "claim": "The assumption of strictly asymmetric cell divisions (model 1) fails to explain the pronounced loss of telomere repeats in infants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the assumption of strictly asymmetric cell divisions (model 1) fails to explain the pronounced loss of telomere repeats in infants (prediction of model 1 for the initial telomere length in lymphocytes: 9.8\u00b10.15 kbp, measured average initial telomere length: 10.67\u00b10.4 kbp, similar results for granulocytes, see also Figure 4 for a comparison of model 1 and model 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model predictions to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "ff983b2a-7724-41ed-b877-f7b67657009b",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C35",
+      "claim": "For lymphocytes, the parameter controlling average loss of telomere length is 75\u00b17 bp/year, initial telomere length is 10.4\u00b10.2 kbp, and probability for symmetric stem cell self-renewal is 0.35 \u00b1 0.07.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum likelihood estimates of our general mathematical solution (Equation 4) to the telomere length data on the population level (see Figure 3) reveals for the parameter controlling average loss of telomere length in lymphocytes a value of 75\u00b17 bp/year, an initial telomere length of 10.4\u00b10.2 kbp and a probability for symmetric stem cell self-renewal of 0.35 \u00b1 0.07.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are parameter estimates from fitting model 2 to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "fe79099e-cee4-4116-a5ec-cdd3d7594dce",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C36",
+      "claim": "For granulocytes, the telomere loss is 68\u00b15 bp/year, initial telomere length is 10.2\u00b10.3 kbp, and probability for symmetric stem cell self-renewal is 0.44 \u00b1 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In granulocytes we find a value of telomere loss of 68\u00b15 bp/year, an initial telomere length of 10.2\u00b10.3 kbp and a probability for symmetric stem cell self-renewal of 0.44 \u00b1 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are parameter estimates from fitting model 2 to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "630f9f0b-c139-414f-ace7-d5798d05999d",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C37",
+      "claim": "An independent data set of 835 healthy humans confirms the parameter estimations, particularly the accelerated decrease of average telomere length during adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to our group of 356 healthy humans, we have tested our hypothesis in an independent data set of 835 healthy humans, previously published by an unrelated group in (Aubert et al., 2012), see Figure 3\u2014figure supplement 1. This set confirms our parameter estimations, in particular the accelerated decrease of average telomere length during adolescence is also observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes validation of findings using an independent dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "cbaac0a7-bc9a-40fe-ba41-73a75eb48042",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C38",
+      "claim": "The increased loss of telomere repeats in the first years of human life is a consequence of an expanding stem cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that the increased loss of telomere repeats in the first years of human life is a consequence of an expanding stem cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data based on the mathematical model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "7fc02e90-53c2-473d-b00d-d3d689865ba6",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C39",
+      "claim": "Approximately 70% of stem cell divisions are asymmetric and 30% are symmetric self-renewals.",
+      "claim_type": "EXPLICIT",
+      "source": "We find approximately 70% of stem cell divisions are asymmetric and 30% are symmetric self-renewals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Bayesian inference analysis of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "688bcd17-866f-401d-a0c9-56741233d1e0",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C40",
+      "claim": "There is a transition in stem cell dynamics between the 6th and 7th year of life for lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach suggests at most two separate phases, with a transition between the 6th and 7th year of life for lymphocytes, see Figure 5f\u2013i, and a transition between the 10th and 15th years of life for granulocytes, see Figure 5j\u2013m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multi-phase Bayesian analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "ed8ad7f0-d81b-4570-a6cb-f68a3a015830",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C41",
+      "claim": "There is a transition in stem cell dynamics between the 10th and 15th years of life for granulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach suggests at most two separate phases, with a transition between the 6th and 7th year of life for lymphocytes, see Figure 5f\u2013i, and a transition between the 10th and 15th years of life for granulocytes, see Figure 5j\u2013m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multi-phase Bayesian analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "003db3fb-38e1-4d6f-9d18-31e82dcd1583",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C42",
+      "claim": "The probability of symmetric stem cell self-renewal in adults is in the range of p\u2208(0,0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of symmetric stem cell self-renewal in adults however is in the the range of p\u2208(0,0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Bayesian analysis of adult data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "56c570c6-3bf9-4e2d-804a-58c9a4e66db3",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C43",
+      "claim": "Model 2 (with symmetric and asymmetric divisions) is the best explanation for the observed data based on Akaike information criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Model 1 scores with an AIC of 2550, model 2 has an AIC of 2328 and a multiphase model with a minimum of 7 parameters yields an AIC of 2361. The AIC is minimized by model 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical model selection analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "5ce38ed3-849c-45bc-8ffa-57123412bd34",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C45",
+      "claim": "A low probability of symmetric self-renewal (p between 0.005 to 0.03 per cell division) was found in all individual samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a low probability of symmetric self-renewal (p between 0.005 to 0.03 per cell division) in all individual samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from fitting the model to individual telomere length distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "3123af69-825a-4708-801c-0e1de1aef2ce",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C46",
+      "claim": "The average telomere loss per year varies between individuals and ranges from 18 bp/year to 110 bp/year.",
+      "claim_type": "EXPLICIT",
+      "source": "Also the average telomere loss per year varies between individuals and ranges from 18 bp/year to 110 bp/year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from individual sample analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "501acaaf-56aa-462d-b5dc-a78e8a90dc07",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C47",
+      "claim": "The loss of telomeric repeats slows down with age in granulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find differences between individual samples of lymphocytes and granulocytes. While the loss of telomeric repeats slows down with age in granulocytes, it slightly accelerates in lymphocytes, see Figure 7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of individual samples shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "8bf8c671-a323-4f0b-9a7e-dcbbd494d4cb",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C48",
+      "claim": "The loss of telomeric repeats slightly accelerates with age in lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find differences between individual samples of lymphocytes and granulocytes. While the loss of telomeric repeats slows down with age in granulocytes, it slightly accelerates in lymphocytes, see Figure 7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of individual samples shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "569f0675-f249-4399-b309-5102d378e0c6",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C49",
+      "claim": "The reduced rate of telomere loss in granulocytes is in agreement with a skewed differentiation potential towards the myeloid lineage of aged hematopoietic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, such a reduced rate of telomere loss can be explained with an increased reservoir of myeloid specific stem and progenitor cells and is in agreement with a skewed differentiation potential towards the myeloid lineage of aged hematopoietic stem cells (Geiger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings supported by citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "3d9cacc3-1582-4d0e-9e16-9351c325bbde",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C50",
+      "claim": "The rate of telomere loss decreases with age in granulocytes at -0.78 bp/year.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of telomere loss decreases with age in granulocytes (\u22120.78 bp/year, dark red line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "f44a6e46-de59-4ffa-a508-bc317184dad0",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C51",
+      "claim": "The rate of telomere loss increases with age in lymphocytes at +0.27 bp/year.",
+      "claim_type": "EXPLICIT",
+      "source": "but increases in lymphocytes (+0.27 bp/year, dark green dashed line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "e86aacf9-1c75-4fca-8262-82141bc5422f",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C52",
+      "claim": "The rate of telomere loss in bone marrow sections decreases with age at -0.36 bp/year.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of telomere loss decreases with age in granulocytes (\u22120.78 bp/year, dark red line) and in bone marrow sections (\u22120.36 bp/year, grey dotted line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "98829496-bb0e-4ad9-8344-bc6ff5e2d234",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C53",
+      "claim": "Peripheral blood of 309 healthy blood donors was obtained from the blood donor bank in Aachen.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral blood of 309 healthy blood donors was obtained from the blood donor bank in Aachen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of experimental samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "5c78bc9f-4678-4102-9b2b-bb4e6b4ac519",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C54",
+      "claim": "Q-FISH of peripheral blood cytospins was performed on 28 healthy blood samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Q-FISH of peripheral blood cytospins was performed on 28 healthy blood samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology applied to a subset of samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "4af726ee-c3b3-4907-9461-0d2823507f4b",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C55",
+      "claim": "47 cord blood and blood samples from healthy children and adolescents were obtained from the Department of Pediatrics and Neonatology of the University Hospital of Aachen.",
+      "claim_type": "EXPLICIT",
+      "source": "47 cord blood and blood samples from healthy children and adolescents were obtained from the Department of Pediatrics and Neonatology of the University Hospital of Aachen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of pediatric samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "ec5b3cf9-349f-4a8c-a399-e8cf1ae04370",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C56",
+      "claim": "Bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement were used for bone marrow analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone marrow biopsies of 28 patients with diagnosed Hodgkin lymphoma without bone marrow involvement were used for bone marrow analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of bone marrow samples used as healthy controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "64f6bc86-375a-498f-a780-d76994f78c70",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "claim_id": "C57",
+      "claim": "All samples were taken with informed consent and according to the guidelines of the ethics committees at University Hospital Aachen.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were taken with informed consent and according to the guidelines of the ethics committees at University Hospital Aachen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "333600d8-1c52-44c2-90ed-ea81487150b7",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The mathematical model predicts that telomere length distributions form a traveling wave that contains information about progressive telomere loss and the fraction of symmetric cell divisions. Under symmetric stem cell self-renewal, the model predicts logarithmic decay of average telomere length with age, while asymmetric divisions alone produce linear decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C25, and C27 describe core mathematical predictions that are internally consistent and derived from the differential equations presented. The traveling wave behavior and logarithmic vs. linear decay patterns are mathematically sound predictions that follow from the model assumptions and are later tested against experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study collected telomere length data from 356 healthy individuals aged 0-85 years, including 47 cord blood samples and 28 bone marrow biopsies from Hodgkin lymphoma patients without bone marrow involvement. Average telomere length was measured using Flow-FISH in all samples, and 66 samples were additionally analyzed with Q-FISH to obtain full telomere length distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28-C31, and C53-C57 consistently describe the sample collection, methodology, and ethical approval. The use of established Flow-FISH and Q-FISH protocols with appropriate citations supports the validity of the measurements. The use of Hodgkin lymphoma patients without bone marrow involvement as healthy controls is reasonable but could introduce subtle confounding factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "2419b46e-5a26-4271-8104-576077f1eb61",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of telomere length data reveals an expanding stem cell pool during childhood and adolescence (with approximately 30-35% symmetric divisions population-wide), followed by an approximately maintained stem cell population in adults (with 0-20% symmetric divisions). Bayesian analysis suggests transitions in stem cell dynamics occur between ages 6-7 years for lymphocytes and 10-15 years for granulocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C38-C42 present a coherent picture supported by multiple analytical approaches (maximum likelihood estimation, Bayesian inference, and model selection via AIC). The findings are validated on an independent dataset of 835 individuals (C37), strengthening confidence. The transition ages and probability estimates are derived from rigorous statistical methods with appropriate uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "5fa5a045-cb20-433e-85a4-1aaf922e52f8",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Model 1 (asymmetric divisions only) fails to explain the accelerated telomere loss in infants, underestimating initial telomere length. Model 2 (incorporating symmetric divisions) provides superior fit with parameter estimates of 75\u00b17 bp/year loss for lymphocytes (p=0.35\u00b10.07) and 68\u00b15 bp/year for granulocytes (p=0.44\u00b10.2). Model selection via AIC strongly favors Model 2 over Model 1 and multiphase models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C43 present a clear model comparison with quantitative parameter estimates and statistical model selection. The AIC values (Model 1: 2550, Model 2: 2328, multiphase: 2361) provide strong statistical evidence favoring Model 2. The parameter estimates include confidence intervals and are validated on independent data (C37), supporting the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "7096e2e4-4150-4339-8870-5317991a7f0f",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The method can detect individual differences in stem cell dynamics from single tissue samples. Individual analysis of 66 samples reveals low symmetric self-renewal probability (p=0.005-0.03) in adults and substantial inter-individual variation in telomere loss rates (18-110 bp/year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C45, and C46 describe individual-level analysis that complements population-level findings. The individual parameter estimates are consistent with population-level results (C39, C42), providing internal validation. The wide range of telomere loss rates (18-110 bp/year) reflects genuine biological variation, though quality of individual fits should be assessed (mentioned in Supplementary file 1 but not fully evaluated here).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "317f9512-40ee-4d7b-a076-665bb50fa9c5",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Telomere loss rates differ between cell lineages and change with age: granulocytes show decreasing loss rates (-0.78 bp/year with age), lymphocytes show slightly increasing rates (+0.27 bp/year), and bone marrow shows intermediate decreasing rates (-0.36 bp/year). This pattern is consistent with age-related myeloid skewing of hematopoietic stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 describe lineage-specific differences supported by individual sample analysis (Figure 7) and consistent with cited prior work on myeloid skewing (C49). The quantitative rates are derived from data, though the manuscript notes these trends are likely non-linear. The biological interpretation linking reduced granulocyte telomere loss to increased myeloid progenitor pools is plausible and supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "7a5916ca-2ea5-400c-a4be-e82aca3bc9c2",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Assuming 50 bp telomere loss per cell division implies approximately 1 hematopoietic stem cell replication per year in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 presents a straightforward calculation combining the measured population-level telomere loss rate (~50 bp/year in adults) with established knowledge about per-division telomere loss (50 bp, cited from Rufer et al., 1999). This inference is mathematically sound and consistent with prior observations of rare stem cell turnover under homeostasis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "c6c54972-124c-45f4-800f-25ae1a58e87d",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript establishes biological background on stem cell biology, telomere structure and function, and the rationale for using telomere length as a biomarker of stem cell proliferation history. Key assumptions include that mature cell telomere distributions proxy stem cell distributions and that average telomere length shortens by a constant factor per division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C23 present established biological knowledge supported by appropriate citations. The key modeling assumption (C23) that mature cell telomere distributions proxy stem cell distributions is supported by citation and is reasonable given constant differentiation divisions (C22). However, the model's use of average telomere length (C19) rather than shortest telomere (C20) is acknowledged as a potential limitation that may underestimate senescent cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    },
+    {
+      "id": "880a5e63-9dc8-48d9-9fea-d3d668420612",
+      "content_id": "ff053af5-514e-418d-9c1f-41c74278d80e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An independent dataset of 835 healthy humans from Aubert et al. (2012) confirms the parameter estimations and the accelerated telomere loss during adolescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 describes external validation on a large independent dataset that confirms the key findings. This substantially strengthens confidence in the results, as the patterns are reproducible across different cohorts and measurement protocols. The validation specifically confirms the accelerated adolescent telomere loss, a key prediction distinguishing Model 2 from Model 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:27.534173Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e465644b-f92f-4a96-b3ce-d363a3323880",
+      "result_id": "333600d8-1c52-44c2-90ed-ea81487150b7"
+    },
+    {
+      "claim_id": "a6b32898-fab4-4184-8970-13cf8b20f76a",
+      "result_id": "333600d8-1c52-44c2-90ed-ea81487150b7"
+    },
+    {
+      "claim_id": "8f62ce93-f66a-4aef-a818-3c84fbb2e1b5",
+      "result_id": "333600d8-1c52-44c2-90ed-ea81487150b7"
+    },
+    {
+      "claim_id": "c78b4b86-b852-40b8-88c3-44dd103dafa7",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "d38a0cc0-605a-4e89-b215-fe0b01da08ea",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "7574bb9c-f23b-4f29-847a-5509064cf701",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "349bf805-fc07-4142-9610-1ec9852a0a09",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "227d81ed-c474-49d2-87ac-e23826b9e756",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "98829496-bb0e-4ad9-8344-bc6ff5e2d234",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "5c78bc9f-4678-4102-9b2b-bb4e6b4ac519",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "4af726ee-c3b3-4907-9461-0d2823507f4b",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "ec5b3cf9-349f-4a8c-a399-e8cf1ae04370",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "64f6bc86-375a-498f-a780-d76994f78c70",
+      "result_id": "b0d3848a-f96f-48be-9ff4-13c884a7ff5e"
+    },
+    {
+      "claim_id": "fbaabf6b-ce55-4a60-a51e-8dd541c36179",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "756b7336-2cc2-489b-b6e6-1dc42a3441cd",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "cbaac0a7-bc9a-40fe-ba41-73a75eb48042",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "7fc02e90-53c2-473d-b00d-d3d689865ba6",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "688bcd17-866f-401d-a0c9-56741233d1e0",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "ed8ad7f0-d81b-4570-a6cb-f68a3a015830",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "003db3fb-38e1-4d6f-9d18-31e82dcd1583",
+      "result_id": "2419b46e-5a26-4271-8104-576077f1eb61"
+    },
+    {
+      "claim_id": "ebd94640-44f7-4e3c-97e5-3a91b4007299",
+      "result_id": "5fa5a045-cb20-433e-85a4-1aaf922e52f8"
+    },
+    {
+      "claim_id": "ff983b2a-7724-41ed-b877-f7b67657009b",
+      "result_id": "5fa5a045-cb20-433e-85a4-1aaf922e52f8"
+    },
+    {
+      "claim_id": "fe79099e-cee4-4116-a5ec-cdd3d7594dce",
+      "result_id": "5fa5a045-cb20-433e-85a4-1aaf922e52f8"
+    },
+    {
+      "claim_id": "56c570c6-3bf9-4e2d-804a-58c9a4e66db3",
+      "result_id": "5fa5a045-cb20-433e-85a4-1aaf922e52f8"
+    },
+    {
+      "claim_id": "3cd13f5c-c645-4690-8d43-ad4f9e86cf50",
+      "result_id": "7096e2e4-4150-4339-8870-5317991a7f0f"
+    },
+    {
+      "claim_id": "5ce38ed3-849c-45bc-8ffa-57123412bd34",
+      "result_id": "7096e2e4-4150-4339-8870-5317991a7f0f"
+    },
+    {
+      "claim_id": "3123af69-825a-4708-801c-0e1de1aef2ce",
+      "result_id": "7096e2e4-4150-4339-8870-5317991a7f0f"
+    },
+    {
+      "claim_id": "501acaaf-56aa-462d-b5dc-a78e8a90dc07",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "8bf8c671-a323-4f0b-9a7e-dcbbd494d4cb",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "569f0675-f249-4399-b309-5102d378e0c6",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "3d9cacc3-1582-4d0e-9e16-9351c325bbde",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "f44a6e46-de59-4ffa-a508-bc317184dad0",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "e86aacf9-1c75-4fca-8262-82141bc5422f",
+      "result_id": "317f9512-40ee-4d7b-a076-665bb50fa9c5"
+    },
+    {
+      "claim_id": "f2c56170-0514-46d8-a9ee-66efd2832f2b",
+      "result_id": "7a5916ca-2ea5-400c-a4be-e82aca3bc9c2"
+    },
+    {
+      "claim_id": "a1597798-40ec-42f3-a012-05b131da19a7",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "e23263d2-e096-42c0-885b-5d28ea041564",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "22eb814d-bfdb-483c-ad7a-4acdfe2e79e2",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "3667e263-34db-43dc-a49e-f4efe1265217",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "588d8f8d-a3ab-4af8-9e1b-eecfb82256e3",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "d42b5f6a-afd2-4db2-83c8-5a7c30600b5c",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "37a4df5d-90ba-457e-af9e-00b50e7d0301",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "800df062-b2f6-47a5-b8bb-bdde6f5234cc",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "d800f242-7d16-45e0-a9df-e451c4e43032",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "2bf04a1f-b0a6-4699-a371-a9c8b675c279",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "04f0fc60-01a9-4b06-8dd0-24043cea3eda",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "58394733-3e1e-4400-b613-ad60f53437bf",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "da8af58d-9087-43e7-bffe-da8236a5e468",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "416735e6-fe16-4ba8-94d6-35f1a0bafb68",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "38019ee2-ab34-400f-a5e6-7444ec404a84",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "2f05d81a-df35-4582-bd8f-61f85eb9a5dd",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "2a416486-a696-4f8a-83a6-6cac968c87c9",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "16826748-329e-4d54-a4db-946898fa2831",
+      "result_id": "c6c54972-124c-45f4-800f-25ae1a58e87d"
+    },
+    {
+      "claim_id": "630f9f0b-c139-414f-ace7-d5798d05999d",
+      "result_id": "880a5e63-9dc8-48d9-9fea-d3d668420612"
+    }
+  ],
+  "comparisons": []
+}

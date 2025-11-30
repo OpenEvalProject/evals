@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Helix H7 in \u03b2-tubulin, which contains the buried residue T238, undergoes conformational changes between curved and straight tubulin states and may act as a structural relay within the tubulin subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C72 are directly supported by structural data shown in Figure 1A and cited structural studies. Claims C73 and C74 provide additional context from prior literature about H7's potential functional role. Together these establish the structural basis for targeting this region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C96",
+      "C97"
+    ],
+    "result": "In vivo, yeast cells expressing \u03b2:T238A tubulin form static microtubules that are over 50% longer than wild-type microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C96, and C97 are directly supported by time-lapse imaging data presented in Figure 1B and Videos 1-2, with quantitative measurements provided. The data clearly demonstrate the hyperstable phenotype in living cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "\u03b2:T238A microtubules have normal ultrastructure as assessed by negative stain electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by electron micrographs in Figure 1C showing that mutant microtubules appear structurally normal. This control experiment establishes that the dynamic changes are not due to gross structural defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C100",
+      "C101"
+    ],
+    "result": "In vitro, \u03b2:T238A and wild-type microtubules show similar concentration-dependent elongation rates, with statistically significant differences in x-intercepts but not slopes, indicating little effect on elongation biochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C100, and C101 are supported by quantitative analysis of elongation data in Figure 1D. Statistical testing confirms the slope similarity and x-intercept difference. The interpretation that elongation biochemistry is largely unaffected is reasonable given the similar slopes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C102"
+    ],
+    "result": "\u03b2:T238A microtubules undergo catastrophe less frequently than wild-type, which is particularly notable given that mutant microtubules were growing slower due to lower tubulin concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C102 are supported by catastrophe frequency measurements in Figure 1E with appropriate sample sizes (N=99, 115). The contextual observation in C102 strengthens the finding by noting the conservative nature of the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "\u03b2:T238A microtubules shrink approximately 100-fold more slowly than wild-type (1.1 vs 96 \u03bcm/min), indicating that the mutation significantly strengthens lattice contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 are supported by shrinking rate measurements in Figure 1E. The dramatic difference in shrinking rates is well-documented with appropriate replicates (N=16). The inference about strengthened lattice contacts (C9) is reasonable given the magnitude of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Even with the non-hydrolyzable GTP analog GTP\u03b3S, \u03b2:T238A shows substantially more nucleation than wild-type, ruling out defective GTPase activity as the cause and establishing that GTP\u03b3S better mimics GTP than GMPCPP for yeast tubulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by fluorescence imaging and spindown assays in Figure 2A-B. The logic is sound: if increased nucleation persists when hydrolysis cannot occur, then GTPase defects cannot explain the phenotype. The GMPCPP vs GTP\u03b3S comparison is empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "\u03b2:T238A microtubules contain similarly low amounts of GTP and Pi as wild-type when assembled with GTP\u03b3S, demonstrating that the mutant remains competent for GTP hydrolysis and that altered dynamics cannot be attributed to GTP or GDP\u00b7Pi accumulation, requiring a non-enzymatic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by TLC analysis in Figure 2C-D with appropriate replicates (n=3). The data clearly show that both wild-type and mutant have low GTP and Pi content, ruling out GTPase defects. The conclusion that a non-enzymatic mechanism must be responsible (C18) follows logically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TOG domains bind with similar affinity to unpolymerized \u03b2:T238A and wild-type tubulin (within a factor of two), indicating that the mutation does not significantly change the conformation of unpolymerized tubulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by analytical ultracentrifugation data in Figure 3B. The rationale (C19) is based on established TOG binding preferences from prior work. The measured affinities are very similar, and the conclusion (C21) that unpolymerized conformation is not significantly altered is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Bim1 (yeast EB1 protein) discriminates between GTP-like and GDP-like lattice conformations, tracking growing ends and coating GTP\u03b3S-containing microtubules, similar to vertebrate EB1 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 establish the basis for using Bim1 as a conformational probe. C22-C23 cite prior structural and functional studies. C24-C25 present control data showing expected Bim1 behavior. C26 makes a reasonable inference by analogy to vertebrate systems, supported by the observed behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Bim1-GFP coats the entire length of GDP-containing \u03b2:T238A microtubules with cap-like intensity, demonstrating that the mutation attenuates the conformational response to GTP hydrolysis and substantially uncouples the conformational cycle from the nucleotide cycle in the lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C31 are supported by fluorescence microscopy data in Figure 4B showing concentration-dependent Bim1 binding (n=9 microtubules per condition). The interpretation that the mutation attenuates conformational response to hydrolysis is well-justified given that GDP-containing mutant microtubules bind Bim1 like GTP-containing microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The structural consequence of the \u03b2:T238A mutation resembles the effect of taxol, which also promotes an expanded conformation in a GDP lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 makes a reasonable comparison to taxol based on cited structural studies (Alushin et al., 2014) and the Bim1 binding data showing GTP-like conformation with GDP nucleotide. The analogy is appropriate and helps contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "TOG domains induce dose-dependent depolymerization of stabilized microtubules with linear kinetics, consistent with a collisional mechanism where TOG stabilizes the curved, faster-dissociating conformation at microtubule ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by depolymerization assays in Figure 5. C32 cites prior work establishing that EB1 doesn't bind at the very end. C33 and C35 present the experimental observation of dose-dependent depolymerization. C36 provides a mechanistic interpretation consistent with the linear dose-response. C34 is more speculative but reasonable given TOG binding preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "\u03b2:T238A microtubules depolymerize substantially slower than wild-type in TOG-induced depolymerization assays, and since TOG domains bind similarly to wild-type and mutant curved tubulin, the simplest explanation is that the mutation changes the propensity of terminal subunits to become/remain straight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by TOG-induced depolymerization data in Figure 5 (N=30 for main conditions, N=20 for controls). C40 references earlier binding data. C41-C42 provide logical interpretation: since TOG affinity is unchanged, the difference must reflect altered conformational propensity at the microtubule end. The reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Substitutions at position 238 show a trend with sidechain size: T238S is similar to T238A (static microtubules, benomyl resistant), while T238V is more wild-type-like (dynamic microtubules, less benomyl resistant), suggesting steric overpacking rather than hydrogen bonding destabilizes the straight GDP conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by benomyl sensitivity assays (Figure 6A) and in vivo dynamics measurements (Figure 6B) with appropriate sample sizes. The interpretation (C47) that steric effects rather than hydrogen bonding are responsible is reasonable given the strong effect of the Thr\u2192Ser change and the trend with sidechain volume.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The \u03b2:C354A mutation, which reduces packing volume near T238, also shows slow shrinking and Bim1-GFP coating similar to \u03b2:T238A, suggesting both mutations stabilize microtubules through a common conformational mechanism involving changes in packing volume near helix H7 that tune the allosteric response to GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 cites prior work on C354A. C49-C50 are supported by Bim1-GFP binding data in Figure 6C showing similar coating patterns. C51 provides evolutionary context from sequence analysis. C52 synthesizes these findings into a coherent mechanistic model. The convergent evidence from two independent mutations strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C66",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Conservative buried mutations in \u03b2-tubulin can diminish the conformational response to GDP in the lattice and uncouple the conformational and nucleotide cycles, affecting microtubule dynamics by dramatically reducing catastrophe frequency and shrinking rate while attenuating post-GTPase conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C66, C77-C79 represent summary statements of the main findings, integrating data from multiple experiments (in vivo and in vitro dynamics, Bim1 binding, TOG depolymerization, nucleotide content analysis). These conclusions are well-supported by the collective evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The \u03b2:T238A mutation substantially suppresses conformational changes normally occurring after GTP hydrolysis in the lattice, with the mutant retaining more GTP-like character than wild-type, and the majority of mutation-induced effects are confined to post-GTPase conformational changes, likely explaining the slow shrinking and lower catastrophe frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 synthesize findings from Bim1 binding experiments and dynamics measurements. The interpretation that effects are primarily post-GTPase is supported by the pattern of results: minimal elongation effects but dramatic shrinking and catastrophe effects, combined with GTP-like Bim1 binding to GDP-containing mutant microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The lack of substantial elongation effects is somewhat surprising given expectations, but increased nucleation with GTP\u03b3S indicates the mutation does affect GTP-lattice conformational transitions; the energetics of curved-to-straight transitions may not be rate-limiting for elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61 discuss unexpected aspects of the results and propose speculative explanations. C59 notes the surprise, C60 presents contradictory evidence (increased nucleation), and C61 offers a speculative resolution. While the observations are supported, the mechanistic explanation remains uncertain and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The differential response to the mutation inside versus outside microtubules is consistent with the view that curved conformation is the ground state of tubulin independent of nucleotide, that nucleotide acts across the longitudinal interface, and that lattice interactions drive conformational transitions, with observed changes largely explained by impaired allosteric response to GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 integrate current findings with prior structural and mechanistic studies (extensively cited). The interpretation is consistent with the data showing no change in unpolymerized tubulin conformation but dramatic changes in the lattice. The synthesis with prior work is appropriate and well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "By describing microtubules with identical nucleotide composition but different dynamics, the data demonstrate that allostery in the lattice dictates catastrophe frequency and shrinking rate, showing that catastrophe can occur despite diminished post-GTPase conformational changes and that the strength of allosteric response to GDP controls these dynamic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C80, and C81 represent key conceptual conclusions supported by the comparison of wild-type and mutant microtubules. The data clearly show that microtubules with the same nucleotide (GDP) but different conformational responses have dramatically different dynamics, directly demonstrating the importance of allostery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cooperative conformational linkage in the lattice likely amplifies individual responses to nucleotide, and together with intrinsic curvature bias, the allosteric response to GDP elevates and separates threshold concentrations for elongation and nucleation, underlies fast shrinking that makes catastrophe decisive, and makes microtubules more amenable to cellular regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 present speculative interpretations about the functional significance of allostery and its role in microtubule regulation. While these ideas are reasonable and consistent with the data, they represent hypotheses about broader implications rather than directly tested conclusions. The speculation is clearly identified in the text (C68: 'we speculate').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior work established that \u03b2:T238A causes hyperstable microtubules but the mechanism was unknown, that tubulin cycles through multiple conformations during polymerization, that regulatory proteins selectively bind different tubulin conformations, but linking conformational changes to dynamics has remained challenging with limited mutant studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C95 establish the background context and knowledge gaps that motivated the study. These are appropriately cited from prior literature and accurately represent the state of the field. They establish the rationale for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Because T238 is buried and solvent-inaccessible, the dramatic changes in dynamics cannot result from direct perturbation of polymerization interfaces or regulatory protein interactions; wild-type and mutant could not be measured at equivalent concentrations due to differential nucleation properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 makes a logical inference from the buried nature of the mutation site. C99 describes an experimental limitation that is transparently reported. Both are well-justified: C98 by structural considerations, C99 by the observed nucleation differences documented in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Although yeast microtubules have been reported to contain more GTP than vertebrate microtubules, multiple lines of evidence (fast shrinking, little GTP in GTP\u03b3S microtubules, normal EB1 recognition) suggest wild-type yeast microtubules are unlikely to contain substantial GTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 address a potential complication in interpreting the nucleotide content data. C103 cites prior work, C104 presents control data, and C105 synthesizes multiple observations to reach a reasonable conclusion. The logic is sound and the authors appropriately acknowledge uncertainty about the GTP-containing material observed.",
+    "result_type": "MINOR"
+  }
+]

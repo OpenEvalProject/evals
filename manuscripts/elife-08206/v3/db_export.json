@@ -1,0 +1,1913 @@
+{
+  "submission": {
+    "id": "5f1340a6-7937-4aea-8a31-ad51341b5dec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:00:25.401341Z",
+    "updated_at": "2025-11-29T22:00:25.401341Z"
+  },
+  "content": [
+    {
+      "id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "submission_id": "5f1340a6-7937-4aea-8a31-ad51341b5dec",
+      "content_type": "manuscript",
+      "content_text": "# Extracellular space preservation aids the connectomic analysis of neural circuits\n\n## Authors\n\n- Marta Pallotto<sup>1</sup> ([ORCID: 0000-0001-7694-0398](https://orcid.org/0000-0001-7694-0398))\n- Paul V Watkins<sup>1</sup>\n- Boma Fubara<sup>1</sup>\n- Joshua H Singer<sup>2</sup>\n- Kevin L Briggman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Circuit Dynamics and Connectivity Unit, National Institute of Neurological Disorders and Stroke National Institutes of Health Bethesda United States\n2. Department of Biology University of Maryland College Park United States\n3. Department of Biomedical Optics Max Planck Institute for Medical Research Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDense connectomic mapping of neuronal circuits is limited by the time and effort required to analyze 3D electron microscopy (EM) datasets. Algorithms designed to automate image segmentation suffer from substantial error rates and require significant manual error correction. Any improvement in segmentation error rates would therefore directly reduce the time required to analyze 3D EM data. We explored preserving extracellular space (ECS) during chemical tissue fixation to improve the ability to segment neurites and to identify synaptic contacts. ECS preserved tissue is easier to segment using machine learning algorithms, leading to significantly reduced error rates. In addition, we observed that electrical synapses are readily identified in ECS preserved tissue. Finally, we determined that antibodies penetrate deep into ECS preserved tissue with only minimal permeabilization, thereby enabling correlated light microscopy (LM) and EM studies. We conclude that preservation of ECS benefits multiple aspects of the connectomic analysis of neural circuits.\n\n## Introduction\n\nA number of recent technological advances have automated the collection of serial section electron microscopy (EM) data from the nervous system (Briggman and Bock 2012). Complete (connectomic) mapping of synaptic connectivity in these datasets, however, is hampered by the lack of automated analysis methods. The two most important goals for neuronal circuit reconstruction are the reliable reconstruction of neuronal morphologies and the identification of synapses. The delineation of morphologies has proven to be the most difficult step to automate. Current machine learning-based analysis methods enable semi-automated reconstructions (segmentations) of neurons that still require significant human effort to correct (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014). Many of the errors encountered during the automated segmentation of neuronal morphologies are related to the dense packing of neurites in neuropil, which frequently leads to the artifactual merging of neighboring neurons (Jain et al., 2010). Merging errors are particularly difficult to detect and correct, so most current approaches attempt to reduce merging errors by biasing the output of algorithms to generate over-segmentations of neurons (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014). Over-segmentation splits neurons into many small objects that must then be reassembled into complete morphologies, a labor-intensive process. Here, we illustrate that automated segmentation error rates are improved by reducing the packing density of neurites in neuropil.\n\nThe preparation of tissue for EM requires finding a compromise among several potential artifacts. One of the most significant, but often underappreciated, artifacts encountered during aldehyde-based fixation is the loss of extracellular space (ECS). Although this artifact was described decades ago, it has been omitted from major texts describing the ultrastructure of the nervous system (Peters et al., 1991). The artifact was first recognized by Van Harreveld and Malhotra (1967) and was convincingly demonstrated by comparing the appearance of aldehyde-fixed tissue with that of frozen tissue (Van Harreveld and Steiner 1970a; 1970b; Harreveld and Fifkova 1975). The ultrastructure of rapidly frozen tissue revealed appreciable ECS volume fractions of 15\u201325%, depending on the brain region (van Harreveld and Khattab 1968; Harreveld and Fifkova 1975; Korogod et al., 2015), compared to less than 5% ECS in aldehyde-fixed tissue. The presence of large in\u00a0vivoECS volume fractions was corroborated by complementary methods including brain conductivity measurements, tracer diffusion studies, and more modern high-pressure freezing experiments (Rostaing et al., 2004; Sykova and Nicholson 2008; Korogod et al., 2015). The primary cause of ECS loss is a net inward flux of ions during tissue fixation, which increases intracellular osmolarity, leading to a redistribution of water into cells and resulting in a swelling of cellular compartments (Van Harreveld and Malhotra 1967). Cragg subsequently developed a method to preserve ECS during chemical fixation using a simple ion substitution protocol that replaces extracellular sodium and chloride with a membrane-impermeant molecule such as sucrose prior to fixation (Cragg 1979; 1980), preventing the net inward ion flux that leads to swelling (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig1-v3.jpg)\n\n**Figure 1.:** (A) A model of the changes brain tissue undergoes during chemical tissue fixation and possible interventions to preserve ECS. (B) ECS fraction of mouse olfactory bulb (x), retina (o), and cortex (\u25a1) correlates with increasing fixative vehicle concentration. Dashed line is the linear fit to olfactory bulb data, solid line is the linear fit to cortex data (olfactory bulb: R = 0.80, p = 0.0006; cortex: R = 0.79, p = 0.0113). (C\u2013F) EM images from the external plexiform layer of the mouse olfactory bulb from a perfused brain (C) or from acute sections fixed with increasing buffer concentrations (D\u2013F). ECS fractions are 0.6% (C), 5.8% (D), 11.3% (E), and 23.9% (F). Scale bars: 1 \u00b5m (C\u2013F). ECS: Extracellular space; EM: Electron microscopy.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Vibratome sections were cut from the cerebral cortex of acutely isolated brains (for ECS preservation) or from perfused animals. Section thickness was nominally 500 \u00b5m as determined by the slice thickness setting of the vibratome. Sections were stained for EM and the cross-sectional thickness measured from EM images (mean +/- SEM; n = 20 slices from 6 animals, one-way ANOVA: p = 0.46). (B) Sample images from the edges (Bi, Biii) and center (Bii) of a 500-\u00b5m-thick section of the mouse olfactory bulb. ECS is evenly preserved across the section. ECS: Extracellular space; EM: Electron microscopy.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A,B) Vibratome sections were cut from the olfactory bulbs of acutely isolated brains at either 4\u00b0C or 25\u00b0C and then fixed at 25\u00b0C in 0.1 M CB + 2% GA. (C,D) Vibratome sections were cut from the olfactory bulbs of acutely isolated brains at either 4\u00b0C or 25\u00b0C and then fixed at 25\u00b0C in 0.2 M CB + 2% GA. ECS preservation was similar under both conditions indicating the temperature of solutions during tissue dissection is not a major determinant for ECS preservation. Scale bars: 1 \u03bcm. ECS: Extracellular space; EM: Electron microscopy.\n\nBecause ECS preservation results in a sparser packing of neurites, we hypothesized that error rates from the automated segmentation of ECS-preserved tissue would be reduced. We tested this hypothesis in the study presented here. Our goal was not to approximate the actual in vivo distribution of ECS. Rather, we reasoned that any manipulation of the ultrastructure that improved image segmentation, including perhaps exaggerating ECS volume fractions beyond physiological ranges, would be beneficial for connectomics so long as the manipulation did not alter synaptic connectivity. By utilizing an ECS-preserving chemical fixation protocol, we were able to titrate the ECS volume fraction in a variety of brain regions. We measured a significant reduction in automated segmentation error rates as the ECS fraction increased, indicating that ECS preservation improves the ability to automatically reconstruct neuronal morphologies from EM data.\n\nWe then explored the second important goal of connectomics, the reliable identification of synapses. Electrical synapses are particularly difficult to identify in conventionally prepared (swollen) tissue (Rash et al., 1998). We focused on identifying electrical synapses in a known retinal circuit and found that gap junctions were readily identifiable in ECS-preserved tissue, again due to the increased separation between neurites. Finally, we demonstrate that ECS preservation leads to significant improvements in the diffusion of antibodies into tissue sections with minimal disruption of ultrastructure, an important prerequisite for correlating immunofluorescence with EM. Therefore, we conclude that there are multiple practical benefits to preserving ECS that improve the connectomic analysis of neuronal circuits.\n\n## Results\n\n### Preservation of extracellular space\n\nCragg described an ECS preservation protocol for chemical immersion fixation that involved briefly bathing acute slices in an unbuffered sucrose solution and then fixing sections in a sucrose/phosphate buffer with glutaraldehyde. We initially applied Cragg\u2019s protocol to acute brain sections of the mouse cortex, hippocampus and olfactory bulb and, while ECS was preserved, membranes appeared excessively wrinkled. We therefore developed an alternative strategy to preserve ECS by simply varying the osmolarity of the fixative buffer. Because the loss of ECS during chemical fixation ultimately is due to an imbalance in osmolarity across cellular membranes, we reasoned that adjusting the osmolarity of the fixation buffer would enable us to control the ECS fraction in fixed tissue (Figure 1A). It is known that buffer molecules rather than fixative molecules contribute most to the physiological osmotic pressure (Young 1935; Bone and Ryan 1972). Overall, we noticed smoother membranes using the osmolarity-based approach compared to the sucrose/phosphate protocol.\n\nWe observed that the preserved ECS fraction was positively correlated with the osmolarity of the fixation buffer (Figure 1B,C\u2013F). For example, a volume fraction of 23.9% in the external plexiform layer (EPL) of the olfactory bulb was observed (Figure 1F) when fixed with 2% glutaraldehyde buffered with 175 mM sodium cacodylate buffer (CB, 343 mOsm) compared to 5.8% ECS when fixed with 100 mM CB (204 mOsm, Figure 1D). By comparison, fixing tissue by transcardial perfusion, in which the blood\u2013brain barrier remains intact, consistently yielded <1% ECS in the EPL (Figure 1B,C). We observed that we could achieve unrealistically large ECS fractions of >25% in the olfactory bulb by raising the buffer osmolarity above 400\u2013450 mOsm, but we began to observe significant membrane ruptures and excessive cellular shrinkage under these conditions. To examine whether overall tissue dimensions changed (either swelled or shrinked) as a function of the preserved ECS fraction, we measured the cross-sectional thickness of 500 \u00b5m cortical sections by EM (Figure 1\u2014figure supplement 1). We did not observe a correlation between the fixative osmolarity and section thickness (p=0.46, one-way ANOVA), indicating macroscopic tissue dimensions are not affected by osmolarity-based ECS preservation. We also noted that ECS was preserved uniformly across 500-\u00b5m-thick sections, the maximum thickness that we tested (Figure 1\u2014figure supplement 1). Preservation of ECS was similar whether tissue was sectioned at 4\u00b0C or 20\u00b0C (Figure 1\u2014figure supplement 2), indicating the described protocol is suitable if alterations of neuronal morphology due to cold shock are a concern (Kirov et al., 2004; Bourne et al., 2007).\n\nWe repeated the above experiments for various brain regions including the cerebral cortex and obtained similar results (Figure 1B). The only exception was the mouse retina, for which we were unable to preserve ECS by changing the osmolarity of the fixative buffer. Replacing the fixative buffer with unbuffered sucrose, although, restored our ability to preserve ECS in an osmolarity-dependent way (Figure 1B). One possible explanation for this is that cellular membranes in the retina are permeable to the cacodylate anion (138\u2009g/mol), but not to sucrose (342\u2009g/mol). This observation indicates that the protocol requires fine-tuning for different brain regions, but we were able to control ECS preservation in every region we have studied.\n\n### Reduction in 2D automated segmentation error rates\n\nGiven the ability to predictably control ECS volume fractions, we next investigated whether the increased separation between neighboring neurites in ECS-preserved data would lead to lower error rates in the automated analyses of EM data. Qualitatively, we observed that ECS-preserved data are far easier for human annotators to analyze (e.g. to trace neurons over long distances to create skeleton representations). We therefore asked whether such data also were quantitatively easier to segment by automated machine learning algorithms. We used 2D EM images from the EPL of the mouse olfactory bulb as representative samples containing densely\u00a0packed neuropil. Samples were prepared by perfusion fixation, yielding an ECS fraction of 0.6%, or by acute slice fixation as described above, yielding ECS fractions of 5.8%, 11.3%, and 23.9% (Figure 2A). We then manually labeled a portion of these images (Figure 2A, second column) and used the labeled data to train convolutional neural networks (CNNs, see 'Materials\u00a0and\u00a0methods'). The networks were trained to classify each pixel as belonging either to intracellular space (including cytosol and organelles), to plasma membrane, or to ECS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig2-v3.jpg)\n\n**Figure 2.:** (A) Four raw EM images (first column) of varying ECS fractions (0.6, 5.8, 11.3, and 23.9%) were analyzed. The lowest ECS fraction (0.6%) is the perfused preparation while the others are the acute slice preparations. Pixels in each image were annotated (second column) as either intracellular (white), extracellular (gray), or plasma membrane (black). Representative test image pixel classifications (third column) yielded network classification errors of 9.3, 8.1, 6.7, and 7.2% for the four examples shown. Intracellular pixel probabilities were thresholded and segmented (fourth column) to yield minimum Rand errors of 0.11, 0.06, 0.06, and 0.07 for the four examples shown. (B) Pixel classification errors plotted versus ECS fraction from an ninefold cross-validation, median values in red, shows no significant difference between perfused and acute preparations (K-W test: p=0.05). (C) Rand error plotted versus ECS fraction for the ninefold cross-validation, median values in red, shows a significant difference between perfused and acute preparations (K-W test: p<0.01; Wilcoxon rank-sum test: p=0.0017 [5.8%], p=0.0091 [11.3%], p=0.031 [23.9%]). (D) Total number of splits and merger per object in each test image plotted versus ECS fraction for the ninefold cross-validation, median values in red, shows a significant difference between perfused and acute preparations (K-W test: p<0.001; Wilcoxon rank-sum test: p=0.00049 [5.8%], p=0.00035 [11.3%], p=0.00035 [23.9%]). Scale bars: 2 \u03bcm. p-Values: *p<0.05, **p<0.01, ***p<0.001. ECS: Extracellular space; EM: Electron microscopy.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Split/merger curves parameterized by threshold of the network output. Shaded area is the standard error of the mean, lines are the mean number of splits/mergers per object, and the circles are the mean of the minimum total splits + mergers per object. (B) Network segmentations at the minimum warping error threshold, same regions as in Figure 2A. Warping errors were 0.68 (0.6% ECS), 0.32 (5.8% ECS), 0.52 (11.3% ECS), and 0.56 (23.9% ECS) for the four examples shown. (C) Cumulative distributions of the number of ground truth intracellular pixels per object for the four datasets. The difference in these distributions motivated the use of a Bernoulli sampling procedure for calculating the adapted Rand Error metrics in Figure 2C. Scale bars: 2 \u03bcm. ECS: Extracellular space.\n\nWe then quantified the number of misclassified pixels, the classification error (Figure 2A, third column), on test images. Similar pixel classification errors were observed regardless of ECS fraction (Figure 2B), indicating that networks were equally able to learn the statistics of the images. We, however, were interested primarily in the degree to which ECS preservation affected the ability of neural networks to segment actual cells (Jain et al., 2010). We therefore joined (segmented) regions of neighboring intracellular pixels and measured segmentation performance using two common segmentation metrics (see 'Materials\u00a0and\u00a0methods'). We color-coded segmentations using a four-color map method (Figure 2A, fourth column) such that neighboring objects do not share a color. This approach helps to highlight the locations of two predominant error-types: mergers between neurons that should have been segmented as independent objects as well as the splitting of neurons into multiple objects. We observed a significant reduction in segmentation errors that correlated with increasing ECS fraction, regardless of the error metric we used (Figure 2C,\u00a0D, Figure 2\u2014figure supplement 1). Therefore, despite sharing similar pixel classification errors, images that contained some degree of ECS were easier to automatically segment. This is because ECS provides more separation between neighboring neurons leading to, for example, fewer mergers between cells.\n\n### Reduction in 3D automated segmentation error rates\n\nIt remained possible that while 2D segmentation is improved in ECS data, 3D segmentation would not show a similar improvement perhaps because many ECS-preserved neurite diameters were smaller than their conventionally-fixed counterparts. We therefore collected 3D serial block-face scanning electron microscopy (SBEM,\u00a0Denk and Horstmann, 2004) data from two of the olfactory bulb samples shown in Figure 2A (top and bottom rows). We collected 10 x 10 x 12 \u00b5m3 volumes from the 0.6% ECS tissue (LowECS) and the 23.9% ECS tissue (HighECS) at a voxel resolution of 9.8 x 9.8 x 25 nm3 (Figure 3A,\u00a0B)\u00a0(Pallotto et al., 2015).\u00a0We hand-labeled sub-volumes dispersed throughout the volumes as training data and then trained network architectures identical to those used for the 2D automated segmentation in order to classify each voxel. The resulting probability maps were then segmented to create automated labels as a function of threshold (see 'Materials\u00a0and\u00a0methods').\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig3-v3.jpg)\n\n**Figure 3.:** (A) A 10 x 10 x 12 \u03bcm3 3D SBEM cube (left) of perfused tissue (LowECS), a dense skeletonization of all neurites in the volume (middle), and an automated segmentation of the volume (right). (B) A 10 x 10 x 12 \u03bcm3 3D SBEM cube (left) of ECS-preserved tissue (HighECS), a dense skeletonization of all neurites in the volume (middle), and an automated segmentation of the volume (right). (C) Adapted Rand error of automated segmentations compared to dense skeletonizations as a function of the segmentation threshold for the HighECS (brown) and LowECS (blue) data volumes. (D) The fraction of merged skeleton nodes versus split skeleton edges as a function of network threshold. Solid points indicate the minimum sum of the error fractions. (E) The total error-free skeleton path length recovered as a function of network threshold. Shaded regions in C\u2013E are the 99% confidence intervals based on a Bernoulli sampling of the data. Scale bars in A,\u00a0B = 1 \u03bcm. SBEM: Serial block-face scanning electron microscopy.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cumulative distribution frequency (CDF) of number of intracellular ground truth voxels per object. The distribution medians are significantly different (Wilcoxon rank-sum test, p <0.0001). (B) CDF of path length per skeleton, medians 10.2 (LowECS) and 10.1 (HighECS) \u03bcm. The distributions are not significantly different (two-sample Kolmogorov\u2013Smirnov (KS) test, p = 0.91). (C) CDF of the number of nodes annotated per skeleton, medians 16 (LowECS) and 17 (HighECS) nodes. The distributions not significantly different (two-sample KS test, p = 0.77).\n\nTo assess segmentation performance across the entire volumes, we densely skeletonized the neurites within each volume; these skeletons served as a ground truth (GT) measure of neurite continuity (Figure 3A,\u00a0B). Notably, the total number of skeletons (LowECS=220, HighECS=217), the total skeletonized path length (LowECS = 3.29 mm, HighECS = 3.40 mm) and the median neurite path length (LowECS = 10.2 [7.6 \u2013 13.3] \u00b5m, HighECS = 10.1 [6.6 \u2013 12.7] \u00b5m, median [IQR]) were similar between the two datasets. The distributions of neurite path lengths were not significantly different between the two datasets (Kolmogorov\u2013Smirnov test, p=0.91). Together these measurements indicate that the basic statistics of 3D neurite continuity are not altered for the HighECS data compared to the LowECS perfused tissue (Figure 3\u2014figure supplement 1).\n\nWe then varied the probability threshold for each network (see 'Materials\u00a0and\u00a0methods') and measured the Rand error of the resulting segmentations at the node locations of the dense skeletons. Similar to the 2D results, we observed a significantly lower Rand error for the HighECS dataset (Figure 3C). The threshold level that led to the minimum error rate was also lower for the HighECS dataset, indicating that fewer mergers were encountered compared to the LowECS data. We also measured the number of merged skeleton nodes and split skeleton edges as a function of network threshold (Figure 3D). The two datasets yielded similar minimum edge split error rates, but the LowECS data achieved a lower node merger error rate. Finally, we measured the total error-free skeleton path length that was recovered as a function of network threshold. We recovered 40% and 47% of the total GT path length for the LowECS and HighECS datasets, respectively (Figure 3E). We note that the error metrics were calculated based on a watershed of the network output and that no additional steps to improve the segmentations, such as supervoxel agglomeration (Jain et al., 2011; Nunez-Iglesias et al., 2014), were applied. In summary, the improvements in automated segmentation that were observed in 2D images were also found in a 3D analysis of ECS preserved compared to perfused tissue.\n\n### Identification of gap junctions in ECS-preserved tissue\n\nWe next explored whether ECS preservation would improve the identification of synaptic contacts between neurons. Chemical synapses indicated by clusters of presynaptic vesicles are relatively easy to identify in most brain regions. The identification of electrical synapses (gap junctions), however, remains difficult even in the highest resolution electron micrographs. The number of missed electrical synapses based on thin section images has been estimated to be as high as 75\u201395% (Rash et al., 1998). Unless gap junctions are captured in cross-section in an electron micrograph, electron tomography is usually required to positively identify a gap junction (Rash et al., 1998). But performing electron tomography on every putative gap junction in a large EM volume would prohibitively slow data acquisition of even modestly large volumes. We hypothesized that gap junctions would be easier to identify in ECS-preserved tissue given the reduction in incidental (non-synaptic) contacts between cells.\n\nWe tested this idea in the well-studied AII amacrine cell circuit of the mammalian retina (Demb and Singer 2012). The AII amacrine cell receives ribbon-type chemical synapses from rod bipolar cells and conventional chemical synapses from other amacrine cells. Importantly, it is known that AIIs are coupled electrically to each other as well as to the terminals of ON cone bipolar cells by gap junctions (Hartveit and Veruki 2012). We therefore sought to identify gap junctions on a portion of an AII amacrine cell reconstructed from 3D SBEM data.\n\nWe volumetrically reconstructed an AII amacrine cell and then annotated all contacts onto a distal portion of its dendritic tree. Contacts were identified as membranes closely apposed (within 50 nm) to the AII\u2019s dendrite (n = 171 total contacts). For the majority of these contacts, we observed a clear cleft between the apposed membranes (n = 150 cleft contacts), but, as well, we noted many instances in which we could not observe any cleft (n = 21 tight contacts) (Figure 4A\u2013D, see also Supplemental Data stacks). For each contact, we then traced the cell forming the contact through the 3D SBEM volume and classified each cell into four categories: AII amacrine cell, ON cone bipolar cell, presynaptic amacrine cell, or other (see 'Materials\u00a0and\u00a0methods'). The \u2018other\u2019 category included a variety of cell types including bipolar, amacrine, ganglion and glial cells that, although making cleft contact with the AII, formed no obvious synapse (e.g. no presynaptic clouds of vesicles were observed). Of the 150 cleft contacts, 13 were attributed to chemical synapses from amacrine cells. The remaining 137 cleft contacts assigned to the \u2018other\u2019 category were deemed to be incidental contacts or ribbon-type synapses (Figure 4E,F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig4-v3.jpg)\n\n**Figure 4.:** (A) Reconstructed dendrites of an AII amacrine cell (gray) and surface renderings of tight (yellow) and cleft (black) contacts. (B-D) Example EM images and volumetric reconstructions of (B) an AII (gray) to AII (blue) tight contact, (C) an AII (gray) to cone bipolar cell (green) tight contact (C), and (D) a cleft contact identified as a chemical synapse between a presynaptic amacrine cell (cyan) and the AII cell (gray). (E) Tight contact surface renderings color-coded by the identity of the synaptic partner: AII amacrine cell (blue), cone bipolar cell (green), presynaptic amacrine cell (cyan). (F) Summary of the number of contacts color-coded by the cell type of the contacting cell: AII (blue), cone bipolar (green), presynaptic amacrine cell (cyan), other (black). Scale bars: 2 \u00b5m (A,E), 1 \u00b5m (B\u2013D). EM: Electron microscopy.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Surface area and the volume of the convex hull bounding each contact are plotted for cleft contacts (gray), AII amacrine cell tight contacts (blue) and cone bipolar cell tight contacts (green).\n\nWe then asked whether the tight contacts were actually indicative of gap junctions (electrical synapses) onto the AII amacrine cell. Of the 21 tight contacts we annotated, 4 were formed with a neighboring AII amacrine cell and 17 were formed with ON cone bipolar cell terminals (Figure 4E,F). Thus, in every instance, the tight contact was formed with a cell type known to be electrically coupled to the AII amacrine cell indicating that tight contacts in ECS preserved data are consistent with gap junctions. Moreover, AII-AII gap junctions were found in sublamina 5 of the IPL, and AII-ON cone bipolar gap junctions were found in sublaminae 3 and 4, as previously reported (Strettoia et al., 1992). We noted that the gap junctions were not identifiable based on contact geometry measurements, such as surface area, alone (Figure 4\u2014figure supplement 1). The preservation of ECS therefore enabled the identification of gap junctions due to the relative scarcity of contacts amongst cells and the simple segregation of contacts into tight versus cleft categories.\n\n### Improved diffusion depths of antibodies\n\nFinally, we explored whether ECS preservation could improve the ability to correlate fluorescent immuno-labeling of proteins with EM ultrastructure. A long-standing problem with preparing brain tissue for immunohistochemical observation is the incomplete diffusion of antibodies into large tissue volumes. Antibodies are large proteins and therefore strong permeabilization of tissue is typically\u00a0required for labeling thick tissue sections. Often, the degree of permeabilization required to label thick samples destroys the fine tissue ultrastructure. We hypothesized that the preservation of ECS would allow antibodies to penetrate deeper into tissue and would, therefore, require only minimal permeabilization. We tested this idea in the mouse retina using antibodies against the vesicular acetylcholine (VAChT) and GABA (VGAT) transporters, two antibodies that generate distinct labeling patterns in the retina. Following a fixation and minimal permeabilization procotol that we developed in order to preserve ECS and decent tissue ultrastructure (see 'Materials\u00a0and\u00a0methods'), we incubated 200-\u00b5m-thick retinal sections with primary and secondary antibodies for relatively short durations (9\u2009hr each) and measured the labelling depth. We observed deeper penetration of both antibodies in ECS-preserved retina (Figure 5A\u2013C). VAChT penetrated 28.1 \u00b1 2.4 \u00b5m in ECS-preserved samples versus 6.8 \u00b1 0.5 \u00b5m in control samples; VGAT penetration was 16.9 \u00b1 1.0 \u00b5m versus 6.1 \u00b1 0.4 \u00b5m for ECS-preserved and control samples, respectively. The labeling patterns were consistent with the known expression patterns of the two transporters in the retina (Koulen 1997; Johnson et al., 2003). We processed these same pieces of retina for EM and confirmed that the penetration depth correlated with the ECS fraction (Figure 5D, 0.2% vs. 19.2% ECS fraction). Furthermore, the ultrastructure of the weakly permeabilized tissue was well preserved (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08206/elife-08206-fig5-v3.jpg)\n\n**Figure 5.:** (A) Flat-mounted retinas were immunolabeled for vACHT with and without ECS preservation. Retinas were then cross-sectioned and confocal images were taken to directly visualize penetration depth. (B) Same as A, but immunolabeled for vGAT. (C) Fullwidth half-maximal penetration distances (mean +/- SEM) for retinas with and without ECS preservation (n =\u00a020 retina slices from two animals, unpaired Student\u2019s t-test, vACHT: ***p<0.0001, vGAT: ***p<0.0001). (D) EM images collected from the regions of interest in panel B indicated by dotted rectangles. Scale bars: 50 \u03bcm (A,B), 1 \u03bcm (D).\n\n## Discussion\n\nThe major bottleneck for automating connectivity mapping in large neuronal circuits is no longer data acquisition (Briggman and Bock 2012), but rather data analysis. Manual data analysis allows targeted reconstructions of small population of neurons (Briggman et al., 2011) but is unfeasible for dense reconstructions. Automating image segmentation is therefore necessary for any reasonable scalability; trained human annotators, however, will still be required to correct the results of automated image processing algorithms (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014). Therefore, any reduction in the error rates of automated segmentations of large EM datasets will directly reduce the required human effort to correct, or \u2018proofread\u2019, errors.\n\nOur findings indicate that preserving ECS aids the connectomic analysis of neuronal circuits in multiple ways. The loss of ECS during the conventional chemical fixation of brain tissue leads to densely packed neurites and tightly apposed plasma membranes that complicate automated analyses of EM data. We reasoned that preserving some degree of ECS would improve automated image segmentation methods due to the increased separation of non-synaptic membrane appositions. We emphasize that our goal was not to preserve in vivo-like ECS or neuronal volumes. Indeed, freezing tissue is likely the only way to approximate in vivo-like morphologies (Korogod et al., 2015). Our goal was rather to measure image segmentation performance as a function of increasing ECS volume fractions. In other words, because changes in ECS are unavoidable during the chemical fixation of brain tissue, why not adjust the artifact to be more beneficial to us from a data analysis standpoint? Indeed, it was possible that actually exceeding in vivo ECS volume fractions would lead to the best segmentation performance. On the contrary, we found that while preserving ECS improved segmentation performance, the performance did not continue to improve with increasing ECS fractions (Figure 2C,D). One of the reasons for the diminishing returns on segmentation performance is the shrinkage of cells that accompanies increasing ECS fractions which makes segmenting thin processes, particularly glial sheets, more error prone. There, therefore, appears to be an optimal ECS fraction from the standpoint of image segmentation that balances the increased separation between neurites with the shrinkage of cellular compartments. Modest ECS fractions of 6% already significantly improve segmentation performance compared to fractions of <1% (Figure 2C,D), typical of standard perfusion fixation protocols.\n\nMost current EM segmentation strategies rely on generating over-segmentations (neurons are split into many objects) to avoid accidental mergers between neighboring neurons. These over-segmented objects then are joined together algorithmically (Jain et al., 2011; Nunez-Iglesias et al., 2013; 2014) and/or by human annotators (Takemura et al., 2013; Kim et al., 2014). The segmentation of ECS-preserved data results in fewer mergers, leading to better initial segmentations, and therefore should reduce the human effort required to generate accurate reconstructions. We modified a state-of-the-art CNN originally designed for natural image classification (Krizhevsky et al., 2012) to analyze EM data. The CNNs we trained achieved similar pixel classification error rates regardless of the ECS fraction of a sample (Figure 2B), but segmentation errors were reduced substantially by increasing ECS fractions (Figure 2C,D and\u00a0Figure 3). In other words, pixel classification errors have a more detrimental impact on segmentation when cells are tightly packed versus when they are separated by ECS. This basic observation should hold regardless of the particular analysis approach used (Rigoll et al., 2008; Jurrus et al., 2010; Turaga et al., 2010; Berning et al., 2015). Our analysis showed that the improved segmentation performance in 2D images also extends to 3D segmentation (Figure 3).\n\nIn order to prepare tissue with the ECS volume fractions we desired, we modified an existing protocol for ECS preservation in chemically fixed tissues. The modification we made involved simply changing the osmolarity of the buffer used during fixation. This approach, however, was not successful in the mouse retina; we had to rather change to unbuffered sucrose fixation to preserve ECS in the retina. We have successfully preserved ECS uniformly across 500-\u00b5m-thick acute brain slices, the thickest slices we tested. High-pressure freezing is an alternative to chemical fixation that also preserves ECS (Rostaing et al., 2004; Sykova and Nicholson 2008). The maximum slice thickness that is adequately preserved using this technique, however, is at most 200 \u00b5m: too thin to contain many neuronal circuits. The chemical preservation protocol we used is also far less expensive to implement than high-pressure freezing and is simple to evaluate in different brain regions and species.\n\nA 500-\u00b5m section is a sufficiently large volume to contain many of the local neuronal circuits in the brain, such as a cortical column. Because improvements in data acquisition speeds eventually will allow larger volumes to be acquired, extending uniform ECS preservation to, for example, a whole mouse brain is an important goal. A previous study described a transcardial perfusion-based approach to preserve ECS throughout the brain involving transient opening of the blood-brain barrier and ion replacement (Cragg 1980), but the uniformity of the ECS fraction across the brain was not evaluated. Given the benefits we observed, further exploration and validation of this whole-brain ECS preservation method is warranted.\n\nThe unambiguous identification of gap junctions is a long-standing problem in the analysis of brain circuits by EM. When ECS is lost, conventional transmission EM with pixel resolutions of a few nm can resolve gap junctions only when they are oriented such that they are captured in cross-section; electron tomography is required to resolve gap junctions oriented obliquely to the image plane (Rash et al., 1998). Performing electron tomography on each putative gap junction in a large tissue volume is impractical. We therefore determined whether ECS preservation aided gap junction detection at a moderate pixel resolution (10 nm) using SBEM (Denk and Horstmann, 2004 )\u00a0data.\u00a0We found that subsets of all contacts onto an AII amacrine cell in the mouse retina are tight contacts with no visible cleft. We identified all these tight contacts as being formed with cells known to be coupled electrically to AIIs (Figure 4). Although we performed this analysis manually, we anticipate a relatively straightforward method for automating the detection of tight contacts between cells. Along the same lines, the automated identification of chemical synapses may also be aided simply because there are fewer incidental contacts between cells in ECS-preserved data. Importantly, the analysis of the AII amacrine cell circuitry demonstrates that the known synaptic connectivity is present in ECS-preserved tissue.\n\nCorrelating fluorescence immunohistochemistry with EM data can add significant functional information to purely structural descriptions of circuits. However, there is usually a tradeoff between the degree of permeabilization required for antibody penetration and the quality of ultrastructural preservation. The preservation of ECS retains large diffusion pathways, allowing deeper penetration of large antibody proteins into tissue (Figure 5). The increased access to antibodies allowed for the use of a minimal permeabilization pre-embedding protocol that preserves satisfactory tissue ultrastructure for subsequent EM examination of antibody-labeled tissue.\n\nThe ECS-preserved EM images of the brain we report here appear substantially different from the vast majority of published EM data over the last 50 years. Practitioners of rapid freezing-based tissue preservation, however, have appreciated the loss of ECS as a major artifact in conventional EM tissue processing for decades. We wish to, in particular, note the pioneering work of Anthonie Van Harreveld who first elucidated this artifact in EM and whose careful analyses directly led to the ECS-preserving interventions that we employed. The relatively minor changes to existing tissue fixation protocols that preserve ECS ultimately benefit several aspects of the connectomic analysis of neuronal circuits.\n\n## Materials and methods\n\n### Tissue fixation protocols\n\nWe fixed and examined tissue from a variety of brain regions of C57BL/6 mice, aged 9-12 weeks in accordance with NIH animal ethics guidelines.\n\nFor ECS preservation in acute slices, mice were deeply anesthetized using a mixture of ketamine hydrochloride (100 mg/kg IP) and xylazine hydrochloride (10 mg/kg IP) or isoflurane (Forane, Baxter,\u00a0Deerfield, IL) and then swiftly decapitated. We cut 300\u2013500-\u00b5m slices on a vibratome (Leica) according to the procedure of (Bischofberger et al., 2006). Slices were cut at 4\u00b0C or at 20\u00b0C in ACSF containing (in mM): 124 NaCl, 3 KCl, 1.3 MgSO4.7H2O, 84 NaHCO3, 1.25 NaH2PO4.H20, 20 glucose, 2 CaCl2.2H2O and equilibrated with a 95% O2 \u2013 5% CO2 gas mixture. Slices were then transferred into the fixative solution at 20\u00b0C, containing 2% glutaraldehyde (GA, Electron Microscopy Sciences,\u00a0Hatfield, PA) buffered (pH 7.4) with one of the following sodium-cacodylate buffer (CB, Sigma-Aldrich,\u00a0St. Louis, MO) concentrations (in mM): 100, 150, 175, or 200. Slices were fixed for 8\u2009hr, rinsed with CB buffer of the same concentration used for fixation for 4\u2009hr and then stained for EM.\n\nFor perfusion-fixed tissue, we followed the rapid perfusion approach of (Tao-Cheng et al., 2007). Mice were transcardially perfused with 2% GA, 2% paraformaldehyde (PFA, Electron Microscopy Sciences), in 150 mM CB buffer (pH 7.4). The brain was extracted and postfixed for 8\u2009hr in the same fixative solution. Subsequently, the tissue was rinsed in 150 mM CB buffer for 4\u2009hr. Tissue sections from the perfused brains were cut on a vibratome (Leica,\u00a0Germany) at 300\u2013500 \u00b5m and stained for EM.\n\nFor isolated retinas, retinas were isolated from the eye cup in Ames solution (Sigma-Aldrich), flat mounted on filter paper and then incubated for 5 min at 20\u00b0C in a modified Ames solution. The modified Ames solution was prepared by diluting Ames 1:1 with distilled water and then adding 5% sucrose. We then transferred retinas into a fixative at 20\u00b0C containing 2% GA in unbuffered sucrose (for ECS preservation) or 2% GA buffered with 150 mM CB (pH 7.4). Retinas were fixed for 1\u2009hr, rinsed with 150 mM CB buffer and stained for EM. Retina tissue samples were taken from an eccentricity approximately halfway between the optic disk and the peripheral edge of the retina.\n\n### EM tissue staining\n\nWe used the ROTO (reduced osmium-thiocarbohydrazide-osmium) en bloc staining protocol suitable for SBEM previously described (Briggman et al., 2011). Briefly, samples were stained in a solution containing 1% osmium tetroxide, 1.5% potassium ferrocyanide, and 150 mM CB for 2\u2009hr at room temperature. The osmium stain was amplified with 1% aqueous thiocarbohydrazide (1\u2009hr at 50\u00b0C), and then 2% aqueous osmium tetroxide (1\u2009hr at room temperature). The samples were then stained with 2% aqueous uranyl acetate for 12\u2009hr at room temperature and lead aspartate for 2\u201312\u2009hr at room temperature. Samples were embedded in Epon resin.\n\n### ECS quantification from 2D images\n\nAll 2D EM images were acquired from ultrathin (50\u2013100 nm) sections mounted on copper TEM grids in a scanning electron microscope with a field-emission cathode (Nova NanoSEM 450, FEI Company,\u00a0Netherlands) using a solid-state back-scattered electron detector. Incident beam energies were 2.0\u20132.5\u00a0kV and pixel resolution was typically 9.8 nm. For quantification of ECS in 2D, we randomly selected 9.8 x 9.8 \u00b5m2 regions from EM images of dense neuropil and manually labeled ECS pixels. Labeling was performed blinded to the fixation conditions. We intentionally avoided annotating regions containing cells bodies or blood vessels that would distort ECS fraction estimates due to their large volumes. For olfactory bulb data, we collected images from the neuropil of the EPL. For retina data, we imaged the neuropil of the inner plexiform layer. For cerebral cortex, we imaged neuropil from layers 2/3. The ECS percentage was measured as the fraction of labeled ECS pixels in the annotated region.\n\n### Antibody labeling\n\nFlat-mounted retinas were incubated in the modified ACSF solution for 5 min at 20\u00b0C and then fixed for 1\u2009hr with 2% PFA + 0.01% GA in either 7.5% sucrose (for ECS preservation) or 150 mM CB (pH 7.4). Retinas were then rinsed 3\u00a0x 15 min in 150 mM CB at room temperature, embedded in 3% agarose prepared in 150 mM CB and vibratome sectioned into 200\u00b5m slices. The slices were cut at an eccentricity approximately halfway between the optic disk and the peripheral edge of the retina. Slices were rinsed in 50 mM glycine in 150 mM CB for 30 min, and in a 300 mOsm PB-BSA washing buffer containing 120 mM phosphate buffer (pH 7.4), 0.5% BSA (Sigma-Aldrich), and 0.05% sodium azide (Sigma-Aldrich) for 2x 10 min. They were then transferred to a blocking solution containing 120 mM PB (pH 7.4), 1% BSA, 10% normal donkey serum (NDS, Abcam,\u00a0United\u00a0Kingdom), 0.5% Tween 20 (Sigma-Aldrich), and 0.05% sodium azide for 1\u2009hr at 20\u00b0C. Primary antibody staining was performed on free floating agitated slices for 9\u2009hr at 4\u00b0C with antibodies targeting either the vesicular GABA transporter (Synaptic Systems,\u00a0Germany, cat no. 131003, rabbit anti-VGAT) or the vesicular acetylcholine transporter (Synaptic Systems, cat no. 139103, rabbit anti-VAChT) at dilutions of 1:250 and 1:300, respectively, in the blocking solution except with 3% NDS (instead of 10% NDS). Retinas were then rinsed in PB-BSA for 2\u2009hr at 4\u00b0C and then stained with a donkey anti-rabbit fluorescent secondary antibody, DyLight 650 (Abcam), at 1:300 dilution in the blocking solution (with 3% NDS) for 9\u2009hr at 4\u00b0C. Retinas were then rinsed in PB-BSA 2x 10 min and transferred to 150 mM CB. The slices were then re-embedded in 3% agarose in 150 mM CB and cut in half to assay the degree of antibody penetration. Retinal cross-sections from the cut surface were imaged on a confocal microscope (Carl Zeiss AG,\u00a0Germany) with a 633-nm laser and a LP650 emission filter. All images were acquired under identical confocal imaging parameters. The antibody penetration distance was measured by averaging the signal across the depth of the inner plexiform layer and quantifying the full-width half-maximum (FWHM) distance of the staining profiles from the two edges. The FWHM distances from both edges were averaged to yield one data point per tissue slice. Following confocal imaging, all retinas fixed again in 150 mM CB + 2% GA and were subsequently stained for EM using the method above.\n\n### SBEM data collection\n\nFor the 3D segmentation analysis, we collected two volumes from samples obtained from the EPL of the mouse olfactory bulb containing 0.6% (dataset M0027_11, LowECS) or 23.9% (dataset M0007_33, HighECS) 2D ECS fractions. Data were collected using a custom serial block-face microtome designed by K.L. Briggman. The specimens were cut out of the flat-embedding blocks and re-embedded in Epon Hard on aluminium stubs. The samples were then trimmed to a block face of ~200 \u03bcm wide and ~300 \u03bcm long. The samples were imaged in a scanning electron microscope with a field-emission cathode (NanoSEM 450, FEI). Back-scattered electrons were detected using a concentric segmented back-scatter detector. The incident electron beam had an energy of 2.4 keV and a current of ~200 pA. Images were acquired with a pixel dwell time of 2 \u03bcs and size of 9.8 nm \u00d7 9.8 nm which corresponds to a dose of about 42 electrons/nm2. Imaging was performed at high vacuum, with the sides of the blocks sputter coated with a 100-nm-thick layer of gold. The section thickness was set to 25 nm. Five hundred and twelve consecutive block faces were imaged from each sample, resulting in aligned data volumes of 4096 \u00d7 3536 \u00d7 512 voxels (corresponding to an approximate spatial volume of 40 \u00d7 35 \u00d7 12.8 \u00b5m3). Then, 10 \u00d7 10 \u00d7 12 \u00b5m3 regions were selected from the two volumes for the 3D segmentation analysis.\n\nFor the gap junction analysis of the retina, a 73.2 x 27.6 x 57.6 \u00b5m3 (6100 x 2300 x 2300 voxels) block of ECS-preserved mouse retina (dataset k0731, 17.4% ECS) was acquired by SBEM at a resolution of 12 x 12 x 25 nm3 using a microtome designed by W. Denk. The dataset spanned the inner plexiform layer including the ganglion cell layer and a portion of the inner nuclear layer. The retina was cut out of the flat-embedding block and re-embedded in Epon Hard on aluminium stubs. The retina was then trimmed to a block face ~200 \u03bcm wide and ~200 \u03bcm long. The samples were imaged in a scanning electron microscope with a field-emission cathode (UltraPlus, Carl Zeiss). Back-scattered electrons were detected using a custom-designed detector based on a special silicon diode (AXUV, International Radiation Detectors,\u00a0Torrance,\u00a0CA) combined with a custom-built current amplifier. The incident electron beam had an energy of 1.4 keV and a current of ~1 nA. Images were acquired with a pixel dwell time of 0.45 \u03bcs and size of 12 nm \u00d7 12 nm, which corresponds to a dose of ~31 electrons/nm2. Imaging was performed at high vacuum, with the sides of the blocks sputter coated with a 100-nm-thick layer of gold. The section thickness was set to 25 nm.\n\nAll data sets were split into cubes (128 \u00d7 128 \u00d7 128 voxels) for viewing in KNOSSOS (www.knossostool.org,\u00a0Helmstaedter, et al., 2011).\n\n### Gap junction analysis\n\nAn AII amacrine cell was initially identified by tracing a cell that received a ribbon type synapse from a rod bipolar cell. A portion of this AII cell was volumetrically reconstructed manually using ITK-Snap (www.itksnap.org, [Yushkevich et al., 2006]). Contacts onto the surface of the AII from neighboring cells were manually annotated and each contact was classified as either a tight contact, based on the absence of any discernable gap between the two membranes, or a cleft contact for membranes that came within ~50 nm of each other. K.L.B and J.H.S. then independently skeletonized the cells forming these contacts using Knossos (www.knossostool.org). Cells were skeletonized until each cell\u2019s identity could be unambiguously determined as either: an AII amacrine cell (based on visualizing connectivity with rod bipolar cell terminals), a cone bipolar cell (based on presence of ribbon synapses and the absence of rod bipolar cell connectivity), a presynaptic amacrine cell (based on presence of a conventional chemical synapse at the contact), or \u2018other\u2019. The \u2018other\u2019 category included ganglion cell dendrites, amacrine cell dendrites, rod or cone bipolar cell axons not forming synaptic junctions, and Muller glial cells. None of the cells in the \u2018other\u2019 category formed a chemical synaptic contact onto the AII amacrine cell.\n\n### Automated segmentation: training and testing data\n\nFor 2D segmentation comparisons, test and training images were obtained from EM images from the EPL of the mouse olfactory bulb containing 0.6%, 5.8%, 11.3%, or 23.9% ECS. A portion of each of these images (1920 x 1728 pixels, 18.8 \u00b5m x 16.9 \u00b5m) was hand-labeled using ITK-Snap, and each pixel was classified as either: membrane (MEM), ECS or intracellular space (ICS). GT integer labels were obtained from these hand-labeled images by running connected components (four connectivity) on ICS pixels only. The labeled region was subdivided into nine sub-images of size 640 x 576 pixels to perform a ninefold cross-validation of neural network performance. For each EM image, nine independent CNNs were trained on eight of the sub-images and then tested on the remaining sub-image.\n\nFor 3D segmentation comparisons, training cubes were obtained from the M0027_11 and M007_33 data volumes. We densely hand-labeled voxels from six sub-volumes (each 128 x 128 x 128 voxels, 1.25 x 1.25 x 3.20 \u00b5m3) contained within the data volumes. Sub-volumes were labeled so that ICS voxels from distinct neurites had different integer labels and so that ECS voxels were all labeled with the same integer label. Manual labels were automatically corrected by, in order: (1) removing very small foreground (ICS and ECS) and background (MEM) components of less than 5 pixels in xy, xz, and yz (orthogonal) image slices (eight\u00a0connectivity); (2) removing adjacency between ICS components with different labels in orthogonal image slices (eight connectivity) by setting pixels on each side of any adjacencies to MEM; (3) finding ICS components with the same label value that were not connected in 3D and assigning different label values to unconnected components (six\u00a0connectivity); and (4) removing very small 3D ICS labels that contained less than 27 voxels.\n\n### Automated segmentation: dense skeletonization\n\nThe M0027_11 and M0007_33 data volumes were densely skeletonized using Knossos for comparison with full 3D segmentations. Only neurons were skeletonized, glial processes (identified based on cellular morphology) and ECS were not skeletonized.\n\n### Automated segmentation: neural network training\n\nWe used a CNN with a parallelized GPU implementation (Krizhevsky et al., 2012; Zeiler and Fergus 2013) modified from (https://github.com/akrizhevsky/cuda-convnet2). Networks were trained on 3GB Nvidia GTX 780Ti and 6GB GTX TITAN Black graphics cards (EVGA). The CNNs processed 2D images to learn labels for both 2D and 3D EM data. Training images were sampled from randomized pixels in the EM data such that the network was trained to learn, in parallel, the identity of all the pixels (ICS, ECS, or MEM) in a 16 x 16 pixel patch located in the center of 64 x 64 pixel input images (Jain et al., 2007; Ciresan et al., 2012). We trained seven-stage convolutional networks containing (1) an input convolutional layer with 96 kernels of size 7, response normalization across 31 feature maps, and max pool subsampling of size 3 with stride of 2 (overlapped pooling resulting in an overall downsampling factor of 2); (2) a convolutional layer with 256 kernels of size 5 and the same normalization and subsampling as the first layer; (3,4) two convolutional layers with 384 kernels of size 3; (5) a convolutional layer with 256 kernels of size 3 and the same subsampling as the first layer; (6,7) two fully connected hidden layers of size 4096 each with a dropout rate of 0.5 (Hinton et al., 2012); and (8) an output layer of size 768 (16x16 output pixels x 3 pixel identities). Each output represents the conditional probability that a particular output pixel belongs to one of ICS, ECS or MEM (Bishop 1995). Convolutional layer units used the ReLU nonlinearity (Krizhevsky et al., 2012) while fully connected hidden layer units used a linear activation function. The output layer used the logistic nonlinearity and gradients were calculated using a cross-entropy error function for multiple independent attributes (Bishop 1995). Average gradients were calculated and back-propagated for each mini-batch size of 128 image examples. Weights in the fully connected and output layers were updated with a weight decay of 0.02 and all weights and biases used a weight momentum term of 0.9 (Krizhevsky et al., 2012). Randomized training images were augmented using simple transformations of the input image, which included all combinations of transposes and reflections for a total of eight possible augmentations (in two dimensions) (Ciresan et al., 2012).\n\nFor 2D image segmentations, nine networks were trained for each ECS dataset using a ninefold cross-validation described above. For 3D volume segmentations, five networks were trained for each volume using all six sub-volumes of training data. Three networks were trained using images taken from the xy planes of each volume (based on the original orientation of the EM data). Two networks were trained by reslicing the original volumes to create xz and yz oriented images. The final voxel probabilities used to create EM segmentations were a weighted average of the five networks, with the probabilities from the xz and yz networks weighted at 0.5 relative to the xy networks. The randomized presentation of images to the network was balanced so that the center pixel ICS, ECS, or MEM identities were presented with equal probability. Because this procedure changes the prior probabilities and does not guarantee the same equal balancing for all 256 (16 x 16) output pixels, the output probabilities of test images were reweighted using Bayes\u2019 rule (Vucetic and Obradovic 2001). The test probabilities (the target prior) represented the actual frequency of ICS, ECS and MEM voxels over all training data. Training frequencies used in the reweighting procedure were measured by tallying the count of ICS, ECS, and MEM pixels that were actually presented to each of the 256 outputs during training.\n\nNetworks were trained using 0.8 million images per training epoch. Learning rates for all weights were initialized at 0.00005 and for all biases at 0.0001. Different randomizations of the training data were presented during each epoch. The learning rate decayed exponentially but discretely 16 times per epoch with a time constant of 5 epochs. All networks were run for 10 training epochs.\n\n### Automated segmentation: segmentation\n\nNetwork output probabilities for each output were exported for test voxels and the output was classified as either MEM, ECS, or ICS based on the maximum probability (winner-take-all).\n\nTo create segmented labels, we used a customized watershed procedure that relied on iteratively running connected components to find local peaks within the ICS and ECS CNN probability outputs for each pixel. ICS and ECS probabilities were set to zero if they were not the winning probability, and then probabilities were binarized at increasing thresholds. For 2D segmentations the thresholds were 0.3, 0.4, 0.5; then from 0.5 to 0.99 in steps of 0.01; and then 0.995, 0.999, 0.9995, 0.9999, 0.99995, 0.99999, 0.999995, and 0.999999. For 3D segmentations thresholds were 0.3 to 0.9 in steps of 0.1; then 0.95, 0.975, 0.99; and then 0.995, 0.999, 0.9995, 0.9999, 0.99995, 0.99999, 0.999995, and 0.999999. At each binarization step, connected components (four\u00a0connectivity for 2D,\u00a0six connectivity for 3D) were created for all pixels above the threshold. Any components that fell below a minimum size threshold parameter (Tmin) of 64 pixels for 2D or 256 voxels for 3D were accumulated in a binary mask. Tests for the sensitivity of this parameter revealed that it had less than 1% impact on all metrics measured across the ranges tested (Tmin = 8, 16, 32, 64, 128, 256). This step essentially was a method for detecting local peaks in the probabilities. Moving from low to high thresholds, connected components was run on the logical OR of the accumulated binary mask and the remaining binarized pixels above the current threshold level. These components were then dilated toward filling in the surrounding region of voxels with the matching winner-take-all identity using a topological warping technique that does not allow components to become split or merged (Kong and Rosenfeld 1989; Legland et al., 2011). Any remaining ICS or ECS winner-take-all voxels were merged to the nearest (Euclidean distance) ICS or ECS component, respectively. For display of 2D segmentations, we used four colors to label the different components so that no neighboring components were the same color (Appel and Haken 1977).\n\n### Automated segmentation: 2D metrics\n\nPixel categorization error was calculated as the fraction of correctly labeled pixel identities from the CNNs (winner-take-all max probability out of ICS, ECS, MEM) compared to GT test images. To compare components of automated segmentations and GT segmentations, we used the Adapted Rand Error (ARE) and warping error to compare ICS components only.\n\nThe ARE was calculated as 1 minus the F-score of the precision and recall of the Rand Index (Hubert and Arabie 1985; Jain et al., 2010). In order to account for significantly different GT component sizes (pixels per component), which can bias the ARE when comparing different ECS datasets, we applied a Bernoulli sampling procedure that sampled (without replacement) GT ICS components and pixels within those components. We used the minimum number of components (n = 71) across the 36 possible sub-images (four ECS fractions x nine sub-images) as the expected number of components selected on each sampling iteration. A portion of pixels within each of the sampled components was then selected. We used the minimum number of pixels per component (n = 20) as the expected number of pixels selected from each component. The ARE was then calculated using only the selected pixels for a particular sampling iteration. We used the median ARE of 1000 samples as the final metric for this procedure.\n\nWe also compared 2D segmentations using the warping error (Jain et al., 2010). Difference pixels were classified by the type of topologic error that they represented, and only split and merger pixels were counted. Connected split and merger pixels (i.e., belonging to the same components being split or merged) were counted as a single split or merger by running connected components (eight\u00a0connectivity) on pixel errors. We divided the number of splits and mergers by the number of GT components in each test image to fairly compare between datasets (yielding splits per GT component and mergers per GT component).\n\n### Automated segmentation: 3D metrics\n\nFor 3D segmentations, we compared automated segmentations with the dense skeletonization for each data volume. Using the skeletons as GT, we calculated: (1) a skeleton node-based ARE; (2) the fraction of split edges and merged nodes and (3) the total error-free path length (TEFPL).\n\nOverlap between skeletons and segmented 3D supervoxels was calculated as a confusion matrix, where rows correspond to skeletons and columns to supervoxels. Each entry in the matrix is the number of nodes on a given skeleton that are contained within a particular supervoxel. The sum total of all entries is therefore equal to the total number of skeleton nodes (n=5130 LowECS, n=5364 HighECS). The ARE was then calculated based on this confusion matrix using the same calculation as that used for pixel-wise 2D segmentation. Bernoulli sampling was not required in this case as the number of nodes per skeleton was not statistically different between the datasets (Figure 3\u2014figure supplement 1A). Any nodes that overlapped with membrane areas of the segmentations were represented in the confusion matrix as belonging to a single membrane supervoxel. Both ICS and ECS supervoxels were used in creating the confusion matrix. Overall, only a very few number of skeleton nodes fell into either membrane (n=8, LowECS; n=12, HighECS) or ECS supervoxel locations (n=0, LowECS; n=1, HighECS).\n\nWe also used the supervoxel/skeleton confusion matrix to calculate the fraction of merged nodes. Summing along the rows of the logical confusion matrix (true at locations with at least one node) creates a marginal that indicates which supervoxels overlap with more than one skeleton. All nodes that are within these supervoxels were then counted as merged nodes. The number of merged nodes can then range from zero to the total number of nodes (if all nodes were part of a single supervoxel), which we divided by to get the fraction of merged nodes. To calculate the fraction of split edges, we iterated over the edges of skeletons. An edge was split if both nodes belonging to the edge were located in different supervoxels. If either node was located in a membrane area, the edge was also considered as being split. The number of split edges can then range from zero to the total number of edges (if all supervoxels only contained a single node), which we divided by to get fraction of split edges. To calculate TEFPL, an edge was error free if it was not split and if neither of its nodes was a merged node. We summed the path lengths of all error free edges to get TEFPL, which was expressed as a percentage of the total path length in each volume.\n\n### Statistical analyses\n\nAll statistical analyses were performed using GraphPad Prism (GraphPad Software) or Matlab (The Mathworks). For comparison between two groups of equal size, the non-parametric Kruskal\u2013Wallis\u00a0test was applied to assess whether there was any significance between medians, then the Wilcoxon rank-sum test was used for pairwise comparisons in the cases where the Kruskal\u2013Wallis test was significant (Figure 2B\u2013D). For comparison between two groups of equal size, unpaired t-tests were used (Figure 5C). For correlation coefficients, the Student's t-test was used with n-2 degrees of freedom (Figure 1B). Confidence intervals for 3D skeleton-based error metrics were calculated using a Bernoulli sampling with an expected value of 95% of the minimum number of skeletons (n = 206).\n",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a4ab64ee-0437-4dfd-9a30-e48e02af1687",
+      "submission_id": "5f1340a6-7937-4aea-8a31-ad51341b5dec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08206.026](https://doi.org/10.7554/eLife.08206.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Extracellular space preservation aids the connectomic analysis of neural circuits\" for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by Pallotto et al. addresses a significant problem in the field of serial electron microscopy applied to connectomics: the inability of current segmentation algorithms to accurately and quickly trace the finest neuronal wires and their connections. The approach of this paper is very interesting and relatively novel since the investigators are focused on improving sample preparation for segmentation algorithms rather than what the majority of the field is focused on, building better algorithms. The issue is related to the shrinkage of the extracellular space associated with the normal aldehyde fixation and processing procedures used for EM. As has long been known (from Van Harreveld's work in the 1950's and 1960's), the ECM is compressed during fixation and subsequent processing, as compartments like dendrites and astroglia swell a little at the expense of the ECM, which is compressed. Strategies to avoid this involve difficult to implement methods such as high pressure freezing and freeze substitution, (the methods introduced by Van Harreveld). This extreme method of stopping action by vitrification is not easy to use or apply to brains without also being concerned with the effects of anoxia on the way to the snap-freezing step. Anoxia itself results in similar differential changes in compartment sizes, at the expense of the ECM space. High osmolality and pressure in perfusions have been tried but results are very inconsistent. This work chose to investigate the utility of a work around using stabilized slice preparations, thus avoiding the concerns above, but introducing the obvious issue of the preparation having been ripped from the brain and then stabilized to be as good as a slice is in faithfully representing the in vivo physiology and anatomy. Since it is well known that significant synaptic remodeling occurs during slice stabilization (at least for the hippocampus where it has been studied carefully) the results here must be considered in the context of the preparation having already endured some likelihood of synaptic and other morphological changes. Nevertheless, the work shows a practical method for swelling extracellular space to make automated tracing more feasible for connectomics work. However, care should be taken to make sure the community does not conclude that this makes the spaces \"as they were\" in nature. There are a number of other serious concerns that need to be addressed in the revised version.\n\nEssential revisions:\n\n1) The authors have not convincingly demonstrated that preservation of the extracellular space will actually substantially improve the automatic segmentation process. The authors only examined 2D segmentation and even within the 2D segmentation results, it is not clear that a certain fraction of ECS maximizes segmentation accuracy with the various metrics used to evaluate segmentation accuracy (see Figure 2B-D). Even more problematic is the lack of 3D automatic segmentation results. This is worrisome since there seem to be an abundance of very small neuronal processes (due to the inevitable 'shrinking' of cells caused by ECS preservation relative to standard EM datasets.) This has been well known in the efforts of the current connectomics community for preservation of the ECS and has remained a source of errors for tracing cellular processes in EM datasets. Examples of small processes can be seen in Figure 1F and it is not clear whether they can be accurately traced over 3D either manually or by automatic segmentation. Without 3D segmentation results of these small processes, it remains possible that ECS preservation improves 2D segmentation but could actually worsen 3D segmentation and not improve our ability to trace the finest neuronal processes. Thus 3D segmentation results are important for demonstrating that this study has made a significant advance.\n\n2) Although the authors clearly demonstrate that ECS preservation can improve human annotation of putative electrical contacts, it is not clear from the study the false positive and negative rates for this detection. We agree with the authors that putative electrical synapses seem to occur in their dataset between cells known to have these connections, but it is difficult to evaluate whether it is possible to get an accurate number of these connections. Given that a 'goal' of dense circuit reconstruction is to move past qualitative descriptions of the type of connectivity between neurons (i.e. they are electrically or synaptically coupled) to quantitating numbers of connections, data about false positive and negative rates would make this result more compelling.\n\n3) The argument that this approach is going to be valuable for connectomics should rely on the assumption (or better a demonstration) that connections are not altered during acute slice preparation. While it may be true that large-scale connectivity could not change in a few minutes during slice prep, however it is a shame that the authors do not reference the work of Kristin Harris' group showing that spines are lost on neurons in slices during cold shock (Kirov et al., Neuroscience 2004). There was also a follow-up paper showing that this can be largely avoided by preparing slices at room temp (Bourne et al., Neuropharmacology 2007). In the current manuscript, the authors are slicing before fixation at ice-temp. They do not state so clearly in the Materials and methods, but one has to assume from the Materials and methods description here that the slices then went directly into ice-cold fixative. So there is no warm recovery period and one would expect that there would be a severe loss of spines and other changes in microtubules, known to be cold sensitive. True, the synapses are probably still there, but they would appear to be onto dendrites instead of spines. This could make it difficult to distinguish excitatory and inhibitory synapses, for one thing. It means that this approach would not be well suited for use in any study focused on neuronal morphology, rather than just finding connections (with the concern about artifacts of slice preps as above). The authors should ensure that they further emphasize these potential limitations of their approach.\n\n4) In the improved diffusion depths of antibodies experiment, authors should provide the negative control data in both fixation conditions. Did authors harvest the retina pieces in the same location? Sample size is critical for the antibody penetration because flat mounted retina has different thickness in the central, middle and peripheral portion. Additionally, slice images of XZ, YZ should be added in the Figure 4A and B to provide convincing idea.\n",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "90dd0507-8066-4f7a-8987-aaf2d5c4ca6c",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C1",
+      "claim": "Dense connectomic mapping of neuronal circuits is limited by the time and effort required to analyze 3D electron microscopy (EM) datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Dense connectomic mapping of neuronal circuits is limited by the time and effort required to analyze 3D electron microscopy (EM) datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b83c1aa1-9165-46bb-80d0-9c112f1600e1",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C2",
+      "claim": "Algorithms designed to automate image segmentation suffer from substantial error rates and require significant manual error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Algorithms designed to automate image segmentation suffer from substantial error rates and require significant manual error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known problem with current methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "2a06e459-77e7-4043-8263-b8fa7b2d7970",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C3",
+      "claim": "ECS preserved tissue is easier to segment using machine learning algorithms, leading to significantly reduced error rates.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS preserved tissue is easier to segment using machine learning algorithms, leading to significantly reduced error rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3062a195-c5da-4b5f-ad6e-5ad82651ded4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C4",
+      "claim": "Electrical synapses are readily identified in ECS preserved tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed that electrical synapses are readily identified in ECS preserved tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "22bd60d1-ded9-4207-8ec2-ce066475c6f2",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C5",
+      "claim": "Antibodies penetrate deep into ECS preserved tissue with only minimal permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we determined that antibodies penetrate deep into ECS preserved tissue with only minimal permeabilization, thereby enabling correlated light microscopy (LM) and EM studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "0aff750a-bd98-4f41-adf2-d15c9f6d190f",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C6",
+      "claim": "Preservation of ECS benefits multiple aspects of the connectomic analysis of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that preservation of ECS benefits multiple aspects of the connectomic analysis of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, supported by multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c1f97a9e-aa15-4238-ae91-899b01d03aeb",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C7",
+      "claim": "Current machine learning-based analysis methods enable semi-automated reconstructions (segmentations) of neurons that still require significant human effort to correct.",
+      "claim_type": "EXPLICIT",
+      "source": "Current machine learning-based analysis methods enable semi-automated reconstructions (segmentations) of neurons that still require significant human effort to correct (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "80b144a1-68b9-40c8-982e-9eda8edc6a3d",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C8",
+      "claim": "Many of the errors encountered during the automated segmentation of neuronal morphologies are related to the dense packing of neurites in neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the errors encountered during the automated segmentation of neuronal morphologies are related to the dense packing of neurites in neuropil, which frequently leads to the artifactual merging of neighboring neurons (Jain et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and forms the basis for the study's hypothesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ed06580e-7e5a-4d58-adb1-661d1e9640ab",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C9",
+      "claim": "Merging errors are particularly difficult to detect and correct.",
+      "claim_type": "EXPLICIT",
+      "source": "Merging errors are particularly difficult to detect and correct, so most current approaches attempt to reduce merging errors by biasing the output of algorithms to generate over-segmentations of neurons (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "98c3c83f-6770-41fb-a597-63c8f6e50150",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C10",
+      "claim": "Automated segmentation error rates are improved by reducing the packing density of neurites in neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we illustrate that automated segmentation error rates are improved by reducing the packing density of neurites in neuropil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "bfc9ddcd-45d9-4888-8666-ba2502a346df",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C11",
+      "claim": "One of the most significant, but often underappreciated, artifacts encountered during aldehyde-based fixation is the loss of extracellular space (ECS).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most significant, but often underappreciated, artifacts encountered during aldehyde-based fixation is the loss of extracellular space (ECS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known artifact in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "2ef23fcd-287a-4e6b-8608-2399cd30c4c6",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C12",
+      "claim": "The artifact of ECS loss was first recognized by Van Harreveld and Malhotra (1967).",
+      "claim_type": "EXPLICIT",
+      "source": "The artifact was first recognized by Van Harreveld and Malhotra (1967) and was convincingly demonstrated by comparing the appearance of aldehyde-fixed tissue with that of frozen tissue (Van Harreveld and Steiner 1970a; 1970b; Harreveld and Fifkova 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c3dcfe15-70b5-426f-a719-56ef0ec496c4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C13",
+      "claim": "The ultrastructure of rapidly frozen tissue revealed appreciable ECS volume fractions of 15\u201325%, depending on the brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultrastructure of rapidly frozen tissue revealed appreciable ECS volume fractions of 15\u201325%, depending on the brain region (van Harreveld and Khattab 1968; Harreveld and Fifkova 1975; Korogod et al., 2015), compared to less than 5% ECS in aldehyde-fixed tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a5cda8c9-ebde-4aeb-ade2-457f2347b185",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C14",
+      "claim": "Aldehyde-fixed tissue contains less than 5% ECS.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultrastructure of rapidly frozen tissue revealed appreciable ECS volume fractions of 15\u201325%, depending on the brain region (van Harreveld and Khattab 1968; Harreveld and Fifkova 1975; Korogod et al., 2015), compared to less than 5% ECS in aldehyde-fixed tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to frozen tissue, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "6f889c13-ca5d-4f7e-8def-de1b1cecdeb0",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C15",
+      "claim": "The presence of large in vivo ECS volume fractions was corroborated by complementary methods including brain conductivity measurements, tracer diffusion studies, and more modern high-pressure freezing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of large in vivoECS volume fractions was corroborated by complementary methods including brain conductivity measurements, tracer diffusion studies, and more modern high-pressure freezing experiments (Rostaing et al., 2004; Sykova and Nicholson 2008; Korogod et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies using different methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "9fc9318a-995f-401a-8d07-5466d349f241",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C16",
+      "claim": "The primary cause of ECS loss is a net inward flux of ions during tissue fixation, which increases intracellular osmolarity, leading to a redistribution of water into cells and resulting in a swelling of cellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cause of ECS loss is a net inward flux of ions during tissue fixation, which increases intracellular osmolarity, leading to a redistribution of water into cells and resulting in a swelling of cellular compartments (Van Harreveld and Malhotra 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is explained and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "263d4b1b-23ec-4e26-bbd2-69f2bb310239",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C17",
+      "claim": "Cragg developed a method to preserve ECS during chemical fixation using a simple ion substitution protocol that replaces extracellular sodium and chloride with a membrane-impermeant molecule such as sucrose prior to fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cragg subsequently developed a method to preserve ECS during chemical fixation using a simple ion substitution protocol that replaces extracellular sodium and chloride with a membrane-impermeant molecule such as sucrose prior to fixation (Cragg 1979; 1980), preventing the net inward ion flux that leads to swelling (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a historical method described with citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3dcf8346-7154-4b4b-9c4c-980d10a66eee",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C18",
+      "claim": "ECS fraction of mouse olfactory bulb, retina, and cortex correlates with increasing fixative vehicle concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS fraction of mouse olfactory bulb (x), retina (o), and cortex (\u25a1) correlates with increasing fixative vehicle concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with statistical analysis (R = 0.80, p = 0.0006 for olfactory bulb; R = 0.79, p = 0.0113 for cortex).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "5691bfa5-0dda-4732-96f3-cd037e512ce8",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C19",
+      "claim": "A volume fraction of 23.9% in the external plexiform layer (EPL) of the olfactory bulb was observed when fixed with 2% glutaraldehyde buffered with 175 mM sodium cacodylate buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a volume fraction of 23.9% in the external plexiform layer (EPL) of the olfactory bulb was observed (Figure 1F) when fixed with 2% glutaraldehyde buffered with 175 mM sodium cacodylate buffer (CB, 343 mOsm) compared to 5.8% ECS when fixed with 100 mM CB (204 mOsm, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific experimental result shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "96fa5fd9-a097-4f18-bac7-8981df3e3314",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C20",
+      "claim": "Fixing tissue by transcardial perfusion, in which the blood\u2013brain barrier remains intact, consistently yielded <1% ECS in the EPL.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, fixing tissue by transcardial perfusion, in which the blood\u2013brain barrier remains intact, consistently yielded <1% ECS in the EPL (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b51f0ae5-77e4-4407-af2b-c70feeee4c58",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C21",
+      "claim": "Unrealistically large ECS fractions of >25% in the olfactory bulb can be achieved by raising the buffer osmolarity above 400\u2013450 mOsm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that we could achieve unrealistically large ECS fractions of >25% in the olfactory bulb by raising the buffer osmolarity above 400\u2013450 mOsm, but we began to observe significant membrane ruptures and excessive cellular shrinkage under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation about the limits of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "8cc5ea22-fe01-4acf-9d30-77b8a053dbfe",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C22",
+      "claim": "Macroscopic tissue dimensions are not affected by osmolarity-based ECS preservation.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a correlation between the fixative osmolarity and section thickness (p=0.46, one-way ANOVA), indicating macroscopic tissue dimensions are not affected by osmolarity-based ECS preservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of section thickness measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3b241431-2502-454a-9635-23f9d48aa3b0",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C23",
+      "claim": "ECS was preserved uniformly across 500-\u00b5m-thick sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that ECS was preserved uniformly across 500-\u00b5m-thick sections, the maximum thickness that we tested (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "dd467a00-8384-41bf-a1f5-8df45b899083",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C24",
+      "claim": "Preservation of ECS was similar whether tissue was sectioned at 4\u00b0C or 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Preservation of ECS was similar whether tissue was sectioned at 4\u00b0C or 20\u00b0C (Figure 1\u2014figure supplement 2), indicating the described protocol is suitable if alterations of neuronal morphology due to cold shock are a concern (Kirov et al., 2004; Bourne et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "52ca2bff-64b1-4d29-bab0-32d64a3698fc",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C25",
+      "claim": "Replacing the fixative buffer with unbuffered sucrose restored the ability to preserve ECS in the mouse retina in an osmolarity-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception was the mouse retina, for which we were unable to preserve ECS by changing the osmolarity of the fixative buffer. Replacing the fixative buffer with unbuffered sucrose, although, restored our ability to preserve ECS in an osmolarity-dependent way (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "50f01eea-26d6-4394-86b5-af0ecfc2f8ed",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C26",
+      "claim": "Cellular membranes in the retina are permeable to the cacodylate anion (138 g/mol), but not to sucrose (342 g/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this is that cellular membranes in the retina are permeable to the cacodylate anion (138 g/mol), but not to sucrose (342 g/mol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a possible explanation for the retina-specific observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "81079b6b-27f9-4234-bd5c-586558c0598f",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C27",
+      "claim": "ECS-preserved data are far easier for human annotators to analyze.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively, we observed that ECS-preserved data are far easier for human annotators to analyze (e.g. to trace neurons over long distances to create skeleton representations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a qualitative observation by the researchers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "e028c7aa-e6e2-4a21-8af2-cf71b21d773a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C28",
+      "claim": "Similar pixel classification errors were observed regardless of ECS fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar pixel classification errors were observed regardless of ECS fraction (Figure 2B), indicating that networks were equally able to learn the statistics of the images.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "6894a0b1-f8e4-4403-9028-6aacf5d93ac1",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C29",
+      "claim": "A significant reduction in segmentation errors was observed that correlated with increasing ECS fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in segmentation errors that correlated with increasing ECS fraction, regardless of the error metric we used (Figure 2C, D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 2C and 2D with statistical analysis (K-W test: p<0.01 for Rand error; p<0.001 for splits+mergers).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c377a0b3-6ce6-4562-9e2e-072277820fb7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C30",
+      "claim": "Images that contained some degree of ECS were easier to automatically segment despite sharing similar pixel classification errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, despite sharing similar pixel classification errors, images that contained some degree of ECS were easier to automatically segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "044eb48a-2494-4b9b-883b-cfc583e7e380",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C31",
+      "claim": "ECS provides more separation between neighboring neurons leading to fewer mergers between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because ECS provides more separation between neighboring neurons leading to, for example, fewer mergers between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed improvement in segmentation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "7d25b41d-0695-49b6-84c9-60e071fe0fec",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C32",
+      "claim": "The total number of skeletons was similar between the LowECS (220) and HighECS (217) datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the total number of skeletons (LowECS=220, HighECS=217), the total skeletonized path length (LowECS = 3.29 mm, HighECS = 3.40 mm) and the median neurite path length (LowECS = 10.2 [7.6 \u2013 13.3] \u00b5m, HighECS = 10.1 [6.6 \u2013 12.7] \u00b5m, median [IQR]) were similar between the two datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are quantitative measurements from the 3D datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "75eb3db5-0ec2-4741-8dc5-4f921f7b96a6",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C33",
+      "claim": "The distributions of neurite path lengths were not significantly different between the LowECS and HighECS datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of neurite path lengths were not significantly different between the two datasets (Kolmogorov\u2013Smirnov test, p=0.91).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "48534e65-d9dc-4b45-a06c-8818235af499",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C34",
+      "claim": "The basic statistics of 3D neurite continuity are not altered for the HighECS data compared to the LowECS perfused tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these measurements indicate that the basic statistics of 3D neurite continuity are not altered for the HighECS data compared to the LowECS perfused tissue (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from multiple measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "f9741f5a-8242-41cb-9e41-5de69d9a159e",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C35",
+      "claim": "A significantly lower Rand error was observed for the HighECS dataset compared to the LowECS dataset in 3D segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the 2D results, we observed a significantly lower Rand error for the HighECS dataset (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "af2ebf00-10c9-49e9-8f22-eb5baecb2864",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C36",
+      "claim": "The threshold level that led to the minimum error rate was lower for the HighECS dataset, indicating that fewer mergers were encountered compared to the LowECS data.",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold level that led to the minimum error rate was also lower for the HighECS dataset, indicating that fewer mergers were encountered compared to the LowECS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "238a94d6-f7fe-4e46-99ea-2cbec37b4153",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C37",
+      "claim": "40% and 47% of the total GT path length was recovered for the LowECS and HighECS datasets, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered 40% and 47% of the total GT path length for the LowECS and HighECS datasets, respectively (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b740d49d-da55-4530-beff-6cd8cda8bbbe",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C38",
+      "claim": "The improvements in automated segmentation that were observed in 2D images were also found in a 3D analysis of ECS preserved compared to perfused tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the improvements in automated segmentation that were observed in 2D images were also found in a 3D analysis of ECS preserved compared to perfused tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the 3D analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ab2d37a6-b56c-4d06-a300-6f6abd441179",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C39",
+      "claim": "The number of missed electrical synapses based on thin section images has been estimated to be as high as 75\u201395%.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of missed electrical synapses based on thin section images has been estimated to be as high as 75\u201395% (Rash et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited estimate from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ff4ed862-b40d-49e8-a8b2-ba08cabd1c73",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C40",
+      "claim": "Unless gap junctions are captured in cross-section in an electron micrograph, electron tomography is usually required to positively identify a gap junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless gap junctions are captured in cross-section in an electron micrograph, electron tomography is usually required to positively identify a gap junction (Rash et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "d7faa5cb-87f4-4b64-8e06-222a634585f6",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C41",
+      "claim": "Gap junctions would be easier to identify in ECS-preserved tissue given the reduction in incidental (non-synaptic) contacts between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that gap junctions would be easier to identify in ECS-preserved tissue given the reduction in incidental (non-synaptic) contacts between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis tested in the gap junction analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "1072050d-c2e4-4bba-8c99-b17b802a440a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C42",
+      "claim": "The AII amacrine cell receives ribbon-type chemical synapses from rod bipolar cells and conventional chemical synapses from other amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The AII amacrine cell receives ribbon-type chemical synapses from rod bipolar cells and conventional chemical synapses from other amacrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about AII amacrine cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "84248732-cc75-4015-a421-cf35240919a2",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C43",
+      "claim": "AIIs are coupled electrically to each other as well as to the terminals of ON cone bipolar cells by gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it is known that AIIs are coupled electrically to each other as well as to the terminals of ON cone bipolar cells by gap junctions (Hartveit and Veruki 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "6d26cd20-3008-42ed-9314-b1eee309df97",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C44",
+      "claim": "171 total contacts were annotated onto a distal portion of an AII amacrine cell's dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Contacts were identified as membranes closely apposed (within 50 nm) to the AII's dendrite (n = 171 total contacts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the gap junction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "cdb67d1c-038b-4717-8b18-541bb3c0c1ee",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C45",
+      "claim": "For the majority of contacts onto the AII amacrine cell, a clear cleft between the apposed membranes was observed (n = 150 cleft contacts).",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of these contacts, we observed a clear cleft between the apposed membranes (n = 150 cleft contacts), but, as well, we noted many instances in which we could not observe any cleft (n = 21 tight contacts) (Figure 4A\u2013D, see also Supplemental Data stacks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "5dea8931-18a4-413f-a75c-fea0455fe4d5",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C46",
+      "claim": "21 tight contacts with no visible cleft were observed onto the AII amacrine cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of these contacts, we observed a clear cleft between the apposed membranes (n = 150 cleft contacts), but, as well, we noted many instances in which we could not observe any cleft (n = 21 tight contacts) (Figure 4A\u2013D, see also Supplemental Data stacks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "42987cad-9db9-460e-a7f4-9f9578c82d6a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C47",
+      "claim": "Of the 150 cleft contacts, 13 were attributed to chemical synapses from amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 150 cleft contacts, 13 were attributed to chemical synapses from amacrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the contact classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a24b88a6-aa40-4f5a-9f8a-9527ead6010b",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C48",
+      "claim": "Of the 21 tight contacts annotated, 4 were formed with a neighboring AII amacrine cell and 17 were formed with ON cone bipolar cell terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 21 tight contacts we annotated, 4 were formed with a neighboring AII amacrine cell and 17 were formed with ON cone bipolar cell terminals (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figures 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "954db737-4cd2-493b-b1c6-bb5093f49710",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C49",
+      "claim": "In every instance, the tight contact was formed with a cell type known to be electrically coupled to the AII amacrine cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in every instance, the tight contact was formed with a cell type known to be electrically coupled to the AII amacrine cell indicating that tight contacts in ECS preserved data are consistent with gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the contact analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "072080de-6c9a-400b-9d8c-184b1a350e24",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C50",
+      "claim": "Tight contacts in ECS preserved data are consistent with gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in every instance, the tight contact was formed with a cell type known to be electrically coupled to the AII amacrine cell indicating that tight contacts in ECS preserved data are consistent with gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the contact analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "01425ec1-b130-4c5c-ae53-c7c0b724f703",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C51",
+      "claim": "AII-AII gap junctions were found in sublamina 5 of the IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AII-AII gap junctions were found in sublamina 5 of the IPL, and AII-ON cone bipolar gap junctions were found in sublaminae 3 and 4, as previously reported (Strettoia et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is consistent with previous reports, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ab2ef1be-6851-4be7-a9c3-ff1362f76d73",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C52",
+      "claim": "AII-ON cone bipolar gap junctions were found in sublaminae 3 and 4 of the IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AII-AII gap junctions were found in sublamina 5 of the IPL, and AII-ON cone bipolar gap junctions were found in sublaminae 3 and 4, as previously reported (Strettoia et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is consistent with previous reports, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "0e087387-4988-4992-9eaa-24f0c272a476",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C53",
+      "claim": "Gap junctions were not identifiable based on contact geometry measurements, such as surface area, alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the gap junctions were not identifiable based on contact geometry measurements, such as surface area, alone (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "1439158f-686f-4f19-88e0-624da849f39c",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C54",
+      "claim": "The preservation of ECS enabled the identification of gap junctions due to the relative scarcity of contacts amongst cells and the simple segregation of contacts into tight versus cleft categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The preservation of ECS therefore enabled the identification of gap junctions due to the relative scarcity of contacts amongst cells and the simple segregation of contacts into tight versus cleft categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about how ECS preservation aids gap junction identification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ff42da2d-025b-4434-8c3c-9a39c7d65e6e",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C55",
+      "claim": "A long-standing problem with preparing brain tissue for immunohistochemical observation is the incomplete diffusion of antibodies into large tissue volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing problem with preparing brain tissue for immunohistochemical observation is the incomplete diffusion of antibodies into large tissue volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b0b0c2aa-f748-403c-88d0-e2683517ded6",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C56",
+      "claim": "Strong permeabilization of tissue is typically required for labeling thick tissue sections with antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies are large proteins and therefore strong permeabilization of tissue is typically required for labeling thick tissue sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known requirement in immunohistochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "682fdcb4-6314-447b-8ea1-97eb415f2ec7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C57",
+      "claim": "The degree of permeabilization required to label thick samples often destroys the fine tissue ultrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, the degree of permeabilization required to label thick samples destroys the fine tissue ultrastructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem in immunohistochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "af84dd0e-d643-4f02-a7fe-231301340b96",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C58",
+      "claim": "The preservation of ECS would allow antibodies to penetrate deeper into tissue and would require only minimal permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the preservation of ECS would allow antibodies to penetrate deeper into tissue and would, therefore, require only minimal permeabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis tested in the antibody penetration experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "1e566278-1b9c-40aa-af89-54d620bb4951",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C59",
+      "claim": "Deeper penetration of both VAChT and VGAT antibodies was observed in ECS-preserved retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed deeper penetration of both antibodies in ECS-preserved retina (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5A-C with quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "0e6e9e0c-a743-43d6-bf2f-947b44dd85d4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C60",
+      "claim": "VAChT penetrated 28.1 \u00b1 2.4 \u00b5m in ECS-preserved samples versus 6.8 \u00b1 0.5 \u00b5m in control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "VAChT penetrated 28.1 \u00b1 2.4 \u00b5m in ECS-preserved samples versus 6.8 \u00b1 0.5 \u00b5m in control samples; VGAT penetration was 16.9 \u00b1 1.0 \u00b5m versus 6.1 \u00b1 0.4 \u00b5m for ECS-preserved and control samples, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are quantitative measurements from the antibody penetration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "240724e9-c1f6-467d-95c7-9f0ea113869a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C61",
+      "claim": "VGAT penetration was 16.9 \u00b1 1.0 \u00b5m in ECS-preserved samples versus 6.1 \u00b1 0.4 \u00b5m in control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "VAChT penetrated 28.1 \u00b1 2.4 \u00b5m in ECS-preserved samples versus 6.8 \u00b1 0.5 \u00b5m in control samples; VGAT penetration was 16.9 \u00b1 1.0 \u00b5m versus 6.1 \u00b1 0.4 \u00b5m for ECS-preserved and control samples, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are quantitative measurements from the antibody penetration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "dabbb32d-ff9e-4cd2-8590-26355ebcfa93",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C62",
+      "claim": "The labeling patterns of VAChT and VGAT were consistent with the known expression patterns of the two transporters in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "The labeling patterns were consistent with the known expression patterns of the two transporters in the retina (Koulen 1997; Johnson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "f408e0d6-7d35-414f-913c-ef8b29117aee",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C63",
+      "claim": "The penetration depth of antibodies correlated with the ECS fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We processed these same pieces of retina for EM and confirmed that the penetration depth correlated with the ECS fraction (Figure 5D, 0.2% vs. 19.2% ECS fraction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b2e8bdfd-a71c-4e7e-81ac-cd96d3542d78",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C64",
+      "claim": "The ultrastructure of the weakly permeabilized tissue was well preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ultrastructure of the weakly permeabilized tissue was well preserved (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3150b5de-e74d-497d-98ab-a041e7dab718",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C65",
+      "claim": "The major bottleneck for automating connectivity mapping in large neuronal circuits is no longer data acquisition, but rather data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The major bottleneck for automating connectivity mapping in large neuronal circuits is no longer data acquisition (Briggman and Bock 2012), but rather data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current state of the field, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "559a71f2-8f91-4bf3-9f3d-d2b0b18cfef6",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C66",
+      "claim": "Manual data analysis allows targeted reconstructions of small population of neurons but is unfeasible for dense reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual data analysis allows targeted reconstructions of small population of neurons (Briggman et al., 2011) but is unfeasible for dense reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c0f713b0-0469-461e-891a-0591c9b72e30",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C67",
+      "claim": "Automating image segmentation is necessary for any reasonable scalability of connectomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Automating image segmentation is therefore necessary for any reasonable scalability; trained human annotators, however, will still be required to correct the results of automated image processing algorithms (Helmstaedter et al., 2013; Takemura et al., 2013; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a necessity, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "8e20f070-ac86-4249-b00e-87db1fac26b5",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C68",
+      "claim": "Any reduction in the error rates of automated segmentations of large EM datasets will directly reduce the required human effort to correct, or 'proofread', errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, any reduction in the error rates of automated segmentations of large EM datasets will directly reduce the required human effort to correct, or 'proofread', errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the impact of improved segmentation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a94c2388-002b-4e10-b354-66f4430cd415",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C69",
+      "claim": "Preserving ECS aids the connectomic analysis of neuronal circuits in multiple ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that preserving ECS aids the connectomic analysis of neuronal circuits in multiple ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "4feca0e9-f26b-4509-99e5-6f530a47907d",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C70",
+      "claim": "The loss of ECS during the conventional chemical fixation of brain tissue leads to densely packed neurites and tightly apposed plasma membranes that complicate automated analyses of EM data.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of ECS during the conventional chemical fixation of brain tissue leads to densely packed neurites and tightly apposed plasma membranes that complicate automated analyses of EM data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "7e3dd23d-cef6-48c0-9437-dbccd941fee5",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C71",
+      "claim": "The goal was not to preserve in vivo-like ECS or neuronal volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that our goal was not to preserve in vivo-like ECS or neuronal volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the study's objective.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "b266299c-018b-463b-b65c-c65f0c9314ee",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C72",
+      "claim": "Freezing tissue is likely the only way to approximate in vivo-like morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, freezing tissue is likely the only way to approximate in vivo-like morphologies (Korogod et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "19e204c2-2af3-493f-917e-dd5bc70fa483",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C73",
+      "claim": "While preserving ECS improved segmentation performance, the performance did not continue to improve with increasing ECS fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, we found that while preserving ECS improved segmentation performance, the performance did not continue to improve with increasing ECS fractions (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "12b9aab8-57cd-439b-99d9-a6c80786135d",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C74",
+      "claim": "One of the reasons for the diminishing returns on segmentation performance is the shrinkage of cells that accompanies increasing ECS fractions which makes segmenting thin processes, particularly glial sheets, more error prone.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the reasons for the diminishing returns on segmentation performance is the shrinkage of cells that accompanies increasing ECS fractions which makes segmenting thin processes, particularly glial sheets, more error prone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed plateau in performance improvement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "28a1fcfe-492d-4cb8-8953-1ead3d8659d4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C75",
+      "claim": "There appears to be an optimal ECS fraction from the standpoint of image segmentation that balances the increased separation between neurites with the shrinkage of cellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "There, therefore, appears to be an optimal ECS fraction from the standpoint of image segmentation that balances the increased separation between neurites with the shrinkage of cellular compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "69d18bb1-1bec-4f6e-bab7-efac5f91aab7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C76",
+      "claim": "Modest ECS fractions of 6% already significantly improve segmentation performance compared to fractions of <1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Modest ECS fractions of 6% already significantly improve segmentation performance compared to fractions of <1% (Figure 2C,D), typical of standard perfusion fixation protocols.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 2C and 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a8e2757c-7421-4373-85e2-3906fe84994b",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C77",
+      "claim": "Most current EM segmentation strategies rely on generating over-segmentations to avoid accidental mergers between neighboring neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Most current EM segmentation strategies rely on generating over-segmentations (neurons are split into many objects) to avoid accidental mergers between neighboring neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known strategy in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "6962e19d-421f-468f-b851-79207f1c5b59",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C78",
+      "claim": "The segmentation of ECS-preserved data results in fewer mergers, leading to better initial segmentations.",
+      "claim_type": "EXPLICIT",
+      "source": "The segmentation of ECS-preserved data results in fewer mergers, leading to better initial segmentations, and therefore should reduce the human effort required to generate accurate reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the segmentation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "35b9cdad-6990-43b6-a3b3-0b7da655bc85",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C79",
+      "claim": "The CNNs trained achieved similar pixel classification error rates regardless of the ECS fraction of a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNNs we trained achieved similar pixel classification error rates regardless of the ECS fraction of a sample (Figure 2B), but segmentation errors were reduced substantially by increasing ECS fractions (Figure 2C,D and Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 2B, 2C, 2D, and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a44e4ee2-9221-4ae2-81cd-49dd414e74ff",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C80",
+      "claim": "Pixel classification errors have a more detrimental impact on segmentation when cells are tightly packed versus when they are separated by ECS.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, pixel classification errors have a more detrimental impact on segmentation when cells are tightly packed versus when they are separated by ECS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "245d0e04-d341-4305-98ee-1cee16801f47",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C81",
+      "claim": "The improved segmentation performance in 2D images also extends to 3D segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis showed that the improved segmentation performance in 2D images also extends to 3D segmentation (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "43a91c04-1b13-4e94-9ec8-17f31cf2c219",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C82",
+      "claim": "High-pressure freezing is an alternative to chemical fixation that also preserves ECS.",
+      "claim_type": "EXPLICIT",
+      "source": "High-pressure freezing is an alternative to chemical fixation that also preserves ECS (Rostaing et al., 2004; Sykova and Nicholson 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known alternative method, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "f9a7ebe1-bcde-4bcd-805b-62ff46ad57b4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C83",
+      "claim": "The maximum slice thickness that is adequately preserved using high-pressure freezing is at most 200 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum slice thickness that is adequately preserved using this technique, however, is at most 200 \u00b5m: too thin to contain many neuronal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of high-pressure freezing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ce4db801-b8d4-4ac0-9aed-f6889db98a86",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C84",
+      "claim": "The chemical preservation protocol used is far less expensive to implement than high-pressure freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemical preservation protocol we used is also far less expensive to implement than high-pressure freezing and is simple to evaluate in different brain regions and species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "2ab1bb30-1c03-44e5-b3d4-ab9fa4403e8a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C85",
+      "claim": "A 500-\u00b5m section is a sufficiently large volume to contain many of the local neuronal circuits in the brain, such as a cortical column.",
+      "claim_type": "EXPLICIT",
+      "source": "A 500-\u00b5m section is a sufficiently large volume to contain many of the local neuronal circuits in the brain, such as a cortical column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical consideration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "a94ed927-adb4-48b2-aca6-d4d9f45d6fa3",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C86",
+      "claim": "A previous study described a transcardial perfusion-based approach to preserve ECS throughout the brain involving transient opening of the blood-brain barrier and ion replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study described a transcardial perfusion-based approach to preserve ECS throughout the brain involving transient opening of the blood-brain barrier and ion replacement (Cragg 1980), but the uniformity of the ECS fraction across the brain was not evaluated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to previous work with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "2edb7a0a-7252-49a8-9f4b-fa79032de43e",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C87",
+      "claim": "The unambiguous identification of gap junctions is a long-standing problem in the analysis of brain circuits by EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The unambiguous identification of gap junctions is a long-standing problem in the analysis of brain circuits by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3f5c01d5-c84c-4905-8ae8-dfb7afb1bcbd",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C88",
+      "claim": "Performing electron tomography on each putative gap junction in a large tissue volume is impractical.",
+      "claim_type": "EXPLICIT",
+      "source": "But performing electron tomography on every putative gap junction in a large EM volume would prohibitively slow data acquisition of even modestly large volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "8defa492-2d50-4491-b441-71cd43175ad9",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C89",
+      "claim": "The automated identification of chemical synapses may also be aided simply because there are fewer incidental contacts between cells in ECS-preserved data.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same lines, the automated identification of chemical synapses may also be aided simply because there are fewer incidental contacts between cells in ECS-preserved data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about an additional benefit of ECS preservation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "7c61a5ec-2b57-4d56-a631-ea0c01a2ab4c",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C90",
+      "claim": "The analysis of the AII amacrine cell circuitry demonstrates that the known synaptic connectivity is present in ECS-preserved tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the analysis of the AII amacrine cell circuitry demonstrates that the known synaptic connectivity is present in ECS-preserved tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the gap junction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "9932c40e-9912-4d56-b88a-f265ed43f121",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C91",
+      "claim": "Correlating fluorescence immunohistochemistry with EM data can add significant functional information to purely structural descriptions of circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlating fluorescence immunohistochemistry with EM data can add significant functional information to purely structural descriptions of circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known benefit of correlative microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "dbe7ea48-b865-42f5-804f-97f620bd76fb",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C92",
+      "claim": "There is usually a tradeoff between the degree of permeabilization required for antibody penetration and the quality of ultrastructural preservation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is usually a tradeoff between the degree of permeabilization required for antibody penetration and the quality of ultrastructural preservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem in correlative microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "6ee4d974-9217-4f1c-aa48-7c0983f6bc8b",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C93",
+      "claim": "The preservation of ECS retains large diffusion pathways, allowing deeper penetration of large antibody proteins into tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The preservation of ECS retains large diffusion pathways, allowing deeper penetration of large antibody proteins into tissue (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "187c5cf2-bf9e-49f8-a5af-3ab57e51a701",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C94",
+      "claim": "The increased access to antibodies allowed for the use of a minimal permeabilization pre-embedding protocol that preserves satisfactory tissue ultrastructure for subsequent EM examination of antibody-labeled tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased access to antibodies allowed for the use of a minimal permeabilization pre-embedding protocol that preserves satisfactory tissue ultrastructure for subsequent EM examination of antibody-labeled tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the benefit of ECS preservation for correlative microscopy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "0c061394-db2f-4f70-99e6-5045554676b4",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C95",
+      "claim": "The ECS-preserved EM images of the brain reported in this study appear substantially different from the vast majority of published EM data over the last 50 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The ECS-preserved EM images of the brain we report here appear substantially different from the vast majority of published EM data over the last 50 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about how the images differ from conventional EM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "7993a2a3-bb45-4cd2-aa53-5acd148771b7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C96",
+      "claim": "Practitioners of rapid freezing-based tissue preservation have appreciated the loss of ECS as a major artifact in conventional EM tissue processing for decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Practitioners of rapid freezing-based tissue preservation, however, have appreciated the loss of ECS as a major artifact in conventional EM tissue processing for decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "5c20e498-2912-4e1d-9a9e-9bd3153d5ad7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "claim_id": "C97",
+      "claim": "The relatively minor changes to existing tissue fixation protocols that preserve ECS ultimately benefit several aspects of the connectomic analysis of neuronal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively minor changes to existing tissue fixation protocols that preserve ECS ultimately benefit several aspects of the connectomic analysis of neuronal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss of extracellular space (ECS) during aldehyde-based fixation is a well-documented artifact. Rapidly frozen tissue shows 15-25% ECS volume fractions compared to <5% in aldehyde-fixed tissue, with the loss caused by net inward ion flux during fixation leading to cellular swelling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 establish the historical and mechanistic basis for ECS loss during conventional fixation, supported by multiple citations to prior work (Van Harreveld, Cragg, and others). The mechanism (ion flux causing osmotic imbalance) and quantitative measurements from frozen vs. fixed tissue are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "882017c8-d4f1-4457-baf8-00a8001b4618",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed an osmolarity-based protocol to preserve ECS during chemical fixation by varying buffer concentration. ECS fraction correlates positively with fixative osmolarity (R=0.80, p=0.0006 for olfactory bulb), achieving up to 23.9% ECS without affecting macroscopic tissue dimensions. The protocol works uniformly across 500-\u00b5m sections and at different temperatures, though retina required unbuffered sucrose instead of cacodylate buffer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 describe the methodological development with quantitative data (Figure 1). Statistical correlations are provided (p<0.05), section thickness measurements show no correlation with osmolarity (p=0.46), and the retina exception is documented with a plausible mechanistic explanation (C26). The data support the protocol's effectiveness and reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "287dc1ed-42e8-4fcc-9935-194e7f529714",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In 2D segmentation analysis, ECS-preserved tissue showed significantly reduced segmentation errors (p<0.01 for Rand error, p<0.001 for splits+mergers) despite similar pixel classification errors across all ECS fractions. The improvement is attributed to increased separation between neurites reducing merger errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 present the core 2D segmentation findings with appropriate statistical tests (Kruskal-Wallis, Wilcoxon rank-sum) and multiple error metrics (Figure 2). The finding that pixel classification errors remain constant while segmentation improves (C28, C29) is particularly compelling and well-documented. The mechanistic explanation (C31) logically follows from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "3D segmentation analysis of LowECS (0.6%) vs HighECS (23.9%) datasets showed that basic neurite statistics were preserved (similar skeleton counts, path lengths, p=0.91), but HighECS data had significantly lower Rand error, fewer mergers, and recovered 47% vs 40% of ground truth path length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 demonstrate that improvements extend to 3D with proper controls showing neurite continuity is preserved (C32-C34). The statistical validation (Kolmogorov-Smirnov test) and multiple metrics (Rand error, merger/split rates, path length recovery) provide convergent evidence. However, the absolute recovery rates (40-47%) are modest, suggesting room for improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ddc09a0a-e224-437f-ae75-44f0357e2182",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Segmentation performance improvement plateaus at higher ECS fractions due to cellular shrinkage making thin processes more error-prone. An optimal ECS fraction exists that balances neurite separation with cellular shrinkage, with modest 6% ECS already providing significant improvement over <1% ECS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 identify important limitations and practical considerations. The plateau effect is shown in Figure 2C,D, and the explanation regarding glial sheet segmentation (C74) is reasonable. The identification of 6% as sufficient (C76) is practically important and statistically supported (p<0.01).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "ad74b658-a91d-4b79-984e-046e1918a679",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gap junctions in ECS-preserved retina can be identified as 'tight contacts' without visible clefts. Analysis of 171 contacts on an AII amacrine cell revealed 21 tight contacts, all formed with cell types known to be electrically coupled to AIIs (4 AII-AII, 17 AII-cone bipolar), with anatomical locations matching prior reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C54 present a compelling case for gap junction identification. The perfect correspondence between tight contacts and known electrical coupling partners (C49) is striking. Anatomical validation (C51-C52) matches literature. However, the sample size is limited (n=1 cell, 21 tight contacts), and the method requires knowing expected coupling partners a priori, limiting generalizability. The claim that geometry alone cannot identify gap junctions (C53) is important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ECS preservation dramatically improves antibody penetration depth in retinal tissue with minimal permeabilization. VAChT penetrated 28.1\u00b12.4 \u00b5m in ECS-preserved vs 6.8\u00b10.5 \u00b5m in control samples (p<0.0001); VGAT showed 16.9\u00b11.0 \u00b5m vs 6.1\u00b10.4 \u00b5m penetration. Labeling patterns matched known expression and ultrastructure was well preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C64 demonstrate a clear practical benefit with strong quantitative data (Figure 5). Statistical significance is robust (p<0.0001), effect sizes are large (4-fold improvement for VAChT), and validation against known expression patterns (C62) strengthens the findings. The preservation of ultrastructure (C64) addresses a key concern for correlative microscopy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "3827d29c-132f-479d-943e-c5e942e78f1a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Current connectomic analysis is limited by time-intensive manual correction of automated segmentation errors, particularly merger errors from densely packed neurites. The bottleneck has shifted from data acquisition to analysis, making any reduction in automated segmentation error rates directly valuable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C9, C65-C68 establish the motivation and context for the study, supported by appropriate citations to prior work. These are well-established problems in the field and provide clear rationale for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study's main conclusion is that ECS preservation benefits multiple aspects of connectomic analysis: improved automated segmentation, easier gap junction identification, and enhanced antibody penetration, all achieved through relatively minor modifications to existing fixation protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C10, C69-C70, C97 represent the study's overarching conclusions, which are well-supported by the experimental results in multiple domains (segmentation, gap junctions, immunolabeling). The claim of 'multiple benefits' is substantiated by independent lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors clarify that their goal was not to preserve in vivo-like ECS (which requires freezing) but to optimize for data analysis. Their chemical protocol is less expensive than high-pressure freezing, works on thicker sections (500 \u00b5m vs 200 \u00b5m maximum), and is suitable for local circuits like cortical columns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C82-C86 provide important context and comparisons to alternative methods. The practical advantages over high-pressure freezing are clearly stated, and the 500-\u00b5m thickness capability is experimentally demonstrated (C23). These claims appropriately scope the work's objectives and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "9fd67850-e8f4-4540-a8df-e27f1e01875b",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current segmentation strategies intentionally create over-segmentations to avoid mergers. ECS preservation reduces mergers, yielding better initial segmentations that should reduce manual proofreading effort. The key insight is that pixel classification errors have more detrimental effects when cells are tightly packed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 explain the practical implications of the findings for existing workflows. The observation that identical pixel classification errors lead to different segmentation outcomes depending on ECS (C79-C80) is a key mechanistic insight supported by Figures 2 and 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "d8f69366-f06e-44ac-9021-bdfda3ed4661",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gap junction identification is a long-standing EM problem, with electron tomography being impractical for large volumes. ECS preservation may also aid automated chemical synapse identification by reducing incidental contacts. The AII amacrine analysis validates that known connectivity is preserved in ECS-fixed tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 contextualize the gap junction findings. C89 is speculative but reasonable. C90 is important for validating that the fixation method doesn't alter biological connectivity, though this is based on a single cell type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "1035a010-d187-4271-a7fb-7b39eed49b0a",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Correlative light and electron microscopy typically faces a tradeoff between permeabilization for antibody access and ultrastructural preservation. ECS preservation resolves this by providing diffusion pathways for antibodies while maintaining ultrastructure with minimal permeabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 explain the rationale and outcome for the immunolabeling experiments. The resolution of the permeabilization-preservation tradeoff is well-demonstrated by the data in Figure 5, showing both deep penetration and preserved ultrastructure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "4b5c8afa-a0f6-4075-9793-dc489ee25e89",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The ECS-preserved images appear substantially different from conventional EM data from the past 50 years, though practitioners of rapid freezing methods have long recognized ECS loss as a major artifact in conventional EM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 provide historical context, acknowledging that while the images look different from most published work, the underlying artifact has been known in specialized communities. This appropriately credits prior work while explaining why the approach may seem novel to many.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    },
+    {
+      "id": "c4fcdc2f-4778-4e59-889f-5179c2bbab71",
+      "content_id": "d8618ec8-a565-4164-bc16-2d8f8324f052",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The retina's unique requirement for unbuffered sucrose (rather than cacodylate buffer) is explained by hypothesized differential membrane permeability to cacodylate (138 g/mol) vs sucrose (342 g/mol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C26 proposes a mechanistic explanation for the retina exception, but this is explicitly speculative ('One possible explanation'). No direct evidence for differential permeability is provided. While plausible based on molecular weight, this remains an untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:25.401341Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bfc9ddcd-45d9-4888-8666-ba2502a346df",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "2ef23fcd-287a-4e6b-8608-2399cd30c4c6",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "c3dcfe15-70b5-426f-a719-56ef0ec496c4",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "a5cda8c9-ebde-4aeb-ade2-457f2347b185",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "6f889c13-ca5d-4f7e-8def-de1b1cecdeb0",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "9fc9318a-995f-401a-8d07-5466d349f241",
+      "result_id": "a393dacd-fe60-4d6d-a3b1-dace968e7fae"
+    },
+    {
+      "claim_id": "263d4b1b-23ec-4e26-bbd2-69f2bb310239",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "3dcf8346-7154-4b4b-9c4c-980d10a66eee",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "5691bfa5-0dda-4732-96f3-cd037e512ce8",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "96fa5fd9-a097-4f18-bac7-8981df3e3314",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "b51f0ae5-77e4-4407-af2b-c70feeee4c58",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "8cc5ea22-fe01-4acf-9d30-77b8a053dbfe",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "3b241431-2502-454a-9635-23f9d48aa3b0",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "dd467a00-8384-41bf-a1f5-8df45b899083",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "52ca2bff-64b1-4d29-bab0-32d64a3698fc",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "50f01eea-26d6-4394-86b5-af0ecfc2f8ed",
+      "result_id": "882017c8-d4f1-4457-baf8-00a8001b4618"
+    },
+    {
+      "claim_id": "81079b6b-27f9-4234-bd5c-586558c0598f",
+      "result_id": "287dc1ed-42e8-4fcc-9935-194e7f529714"
+    },
+    {
+      "claim_id": "e028c7aa-e6e2-4a21-8af2-cf71b21d773a",
+      "result_id": "287dc1ed-42e8-4fcc-9935-194e7f529714"
+    },
+    {
+      "claim_id": "6894a0b1-f8e4-4403-9028-6aacf5d93ac1",
+      "result_id": "287dc1ed-42e8-4fcc-9935-194e7f529714"
+    },
+    {
+      "claim_id": "c377a0b3-6ce6-4562-9e2e-072277820fb7",
+      "result_id": "287dc1ed-42e8-4fcc-9935-194e7f529714"
+    },
+    {
+      "claim_id": "044eb48a-2494-4b9b-883b-cfc583e7e380",
+      "result_id": "287dc1ed-42e8-4fcc-9935-194e7f529714"
+    },
+    {
+      "claim_id": "7d25b41d-0695-49b6-84c9-60e071fe0fec",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "75eb3db5-0ec2-4741-8dc5-4f921f7b96a6",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "48534e65-d9dc-4b45-a06c-8818235af499",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "f9741f5a-8242-41cb-9e41-5de69d9a159e",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "af2ebf00-10c9-49e9-8f22-eb5baecb2864",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "238a94d6-f7fe-4e46-99ea-2cbec37b4153",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "b740d49d-da55-4530-beff-6cd8cda8bbbe",
+      "result_id": "5d0983f7-d65b-41e0-876b-585dcd7e69c7"
+    },
+    {
+      "claim_id": "19e204c2-2af3-493f-917e-dd5bc70fa483",
+      "result_id": "ddc09a0a-e224-437f-ae75-44f0357e2182"
+    },
+    {
+      "claim_id": "12b9aab8-57cd-439b-99d9-a6c80786135d",
+      "result_id": "ddc09a0a-e224-437f-ae75-44f0357e2182"
+    },
+    {
+      "claim_id": "28a1fcfe-492d-4cb8-8953-1ead3d8659d4",
+      "result_id": "ddc09a0a-e224-437f-ae75-44f0357e2182"
+    },
+    {
+      "claim_id": "69d18bb1-1bec-4f6e-bab7-efac5f91aab7",
+      "result_id": "ddc09a0a-e224-437f-ae75-44f0357e2182"
+    },
+    {
+      "claim_id": "ab2d37a6-b56c-4d06-a300-6f6abd441179",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "ff4ed862-b40d-49e8-a8b2-ba08cabd1c73",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "d7faa5cb-87f4-4b64-8e06-222a634585f6",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "1072050d-c2e4-4bba-8c99-b17b802a440a",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "84248732-cc75-4015-a421-cf35240919a2",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "6d26cd20-3008-42ed-9314-b1eee309df97",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "cdb67d1c-038b-4717-8b18-541bb3c0c1ee",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "5dea8931-18a4-413f-a75c-fea0455fe4d5",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "42987cad-9db9-460e-a7f4-9f9578c82d6a",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "a24b88a6-aa40-4f5a-9f8a-9527ead6010b",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "954db737-4cd2-493b-b1c6-bb5093f49710",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "072080de-6c9a-400b-9d8c-184b1a350e24",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "01425ec1-b130-4c5c-ae53-c7c0b724f703",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "ab2ef1be-6851-4be7-a9c3-ff1362f76d73",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "0e087387-4988-4992-9eaa-24f0c272a476",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "1439158f-686f-4f19-88e0-624da849f39c",
+      "result_id": "ad74b658-a91d-4b79-984e-046e1918a679"
+    },
+    {
+      "claim_id": "ff42da2d-025b-4434-8c3c-9a39c7d65e6e",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "b0b0c2aa-f748-403c-88d0-e2683517ded6",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "682fdcb4-6314-447b-8ea1-97eb415f2ec7",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "af84dd0e-d643-4f02-a7fe-231301340b96",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "1e566278-1b9c-40aa-af89-54d620bb4951",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "0e6e9e0c-a743-43d6-bf2f-947b44dd85d4",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "240724e9-c1f6-467d-95c7-9f0ea113869a",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "dabbb32d-ff9e-4cd2-8590-26355ebcfa93",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "f408e0d6-7d35-414f-913c-ef8b29117aee",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "b2e8bdfd-a71c-4e7e-81ac-cd96d3542d78",
+      "result_id": "af61fb5f-fc1a-4b4e-a710-42b9d05ed837"
+    },
+    {
+      "claim_id": "90dd0507-8066-4f7a-8987-aaf2d5c4ca6c",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "b83c1aa1-9165-46bb-80d0-9c112f1600e1",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "c1f97a9e-aa15-4238-ae91-899b01d03aeb",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "80b144a1-68b9-40c8-982e-9eda8edc6a3d",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "ed06580e-7e5a-4d58-adb1-661d1e9640ab",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "3150b5de-e74d-497d-98ab-a041e7dab718",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "559a71f2-8f91-4bf3-9f3d-d2b0b18cfef6",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "c0f713b0-0469-461e-891a-0591c9b72e30",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "8e20f070-ac86-4249-b00e-87db1fac26b5",
+      "result_id": "3827d29c-132f-479d-943e-c5e942e78f1a"
+    },
+    {
+      "claim_id": "2a06e459-77e7-4043-8263-b8fa7b2d7970",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "3062a195-c5da-4b5f-ad6e-5ad82651ded4",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "22bd60d1-ded9-4207-8ec2-ce066475c6f2",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "0aff750a-bd98-4f41-adf2-d15c9f6d190f",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "98c3c83f-6770-41fb-a597-63c8f6e50150",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "a94c2388-002b-4e10-b354-66f4430cd415",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "4feca0e9-f26b-4509-99e5-6f530a47907d",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "5c20e498-2912-4e1d-9a9e-9bd3153d5ad7",
+      "result_id": "625424b5-282e-45bf-bdbe-b9b0e8cc5ecc"
+    },
+    {
+      "claim_id": "7e3dd23d-cef6-48c0-9437-dbccd941fee5",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "b266299c-018b-463b-b65c-c65f0c9314ee",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "43a91c04-1b13-4e94-9ec8-17f31cf2c219",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "f9a7ebe1-bcde-4bcd-805b-62ff46ad57b4",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "ce4db801-b8d4-4ac0-9aed-f6889db98a86",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "2ab1bb30-1c03-44e5-b3d4-ab9fa4403e8a",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "a94ed927-adb4-48b2-aca6-d4d9f45d6fa3",
+      "result_id": "c6c81ab3-9753-4fd1-b22e-01cf59f753b5"
+    },
+    {
+      "claim_id": "a8e2757c-7421-4373-85e2-3906fe84994b",
+      "result_id": "9fd67850-e8f4-4540-a8df-e27f1e01875b"
+    },
+    {
+      "claim_id": "6962e19d-421f-468f-b851-79207f1c5b59",
+      "result_id": "9fd67850-e8f4-4540-a8df-e27f1e01875b"
+    },
+    {
+      "claim_id": "35b9cdad-6990-43b6-a3b3-0b7da655bc85",
+      "result_id": "9fd67850-e8f4-4540-a8df-e27f1e01875b"
+    },
+    {
+      "claim_id": "a44e4ee2-9221-4ae2-81cd-49dd414e74ff",
+      "result_id": "9fd67850-e8f4-4540-a8df-e27f1e01875b"
+    },
+    {
+      "claim_id": "245d0e04-d341-4305-98ee-1cee16801f47",
+      "result_id": "9fd67850-e8f4-4540-a8df-e27f1e01875b"
+    },
+    {
+      "claim_id": "2edb7a0a-7252-49a8-9f4b-fa79032de43e",
+      "result_id": "d8f69366-f06e-44ac-9021-bdfda3ed4661"
+    },
+    {
+      "claim_id": "3f5c01d5-c84c-4905-8ae8-dfb7afb1bcbd",
+      "result_id": "d8f69366-f06e-44ac-9021-bdfda3ed4661"
+    },
+    {
+      "claim_id": "8defa492-2d50-4491-b441-71cd43175ad9",
+      "result_id": "d8f69366-f06e-44ac-9021-bdfda3ed4661"
+    },
+    {
+      "claim_id": "7c61a5ec-2b57-4d56-a631-ea0c01a2ab4c",
+      "result_id": "d8f69366-f06e-44ac-9021-bdfda3ed4661"
+    },
+    {
+      "claim_id": "9932c40e-9912-4d56-b88a-f265ed43f121",
+      "result_id": "1035a010-d187-4271-a7fb-7b39eed49b0a"
+    },
+    {
+      "claim_id": "dbe7ea48-b865-42f5-804f-97f620bd76fb",
+      "result_id": "1035a010-d187-4271-a7fb-7b39eed49b0a"
+    },
+    {
+      "claim_id": "6ee4d974-9217-4f1c-aa48-7c0983f6bc8b",
+      "result_id": "1035a010-d187-4271-a7fb-7b39eed49b0a"
+    },
+    {
+      "claim_id": "187c5cf2-bf9e-49f8-a5af-3ab57e51a701",
+      "result_id": "1035a010-d187-4271-a7fb-7b39eed49b0a"
+    },
+    {
+      "claim_id": "0c061394-db2f-4f70-99e6-5045554676b4",
+      "result_id": "4b5c8afa-a0f6-4075-9793-dc489ee25e89"
+    },
+    {
+      "claim_id": "7993a2a3-bb45-4cd2-aa53-5acd148771b7",
+      "result_id": "4b5c8afa-a0f6-4075-9793-dc489ee25e89"
+    },
+    {
+      "claim_id": "50f01eea-26d6-4394-86b5-af0ecfc2f8ed",
+      "result_id": "c4fcdc2f-4778-4e59-889f-5179c2bbab71"
+    }
+  ],
+  "comparisons": []
+}

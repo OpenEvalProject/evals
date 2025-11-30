@@ -1,0 +1,1976 @@
+{
+  "submission": {
+    "id": "d13eac00-58a4-4f9c-82b1-9dff37407200",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:36:09.959782Z",
+    "updated_at": "2025-11-29T22:36:09.959782Z"
+  },
+  "content": [
+    {
+      "id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "submission_id": "d13eac00-58a4-4f9c-82b1-9dff37407200",
+      "content_type": "manuscript",
+      "content_text": "# Mutational scanning reveals the determinants of protein insertion and association energetics in the plasma membrane\n\n## Authors\n\n- Assaf Elazar<sup>1</sup>\n- Jonathan Weinstein<sup>1</sup>\n- Ido Biran<sup>1</sup>\n- Yearit Fridman<sup>1</sup>\n- Eitan Bibi<sup>1</sup>\n- Sarel Jacob Fleishman<sup>1</sup> ([ORCID: 0000-0002-6831-3770](https://orcid.org/0000-0002-6831-3770)) \u2020\n\n### Affiliations\n\n1. Department of Biomolecular Sciences Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsertion of helix-forming segments into the membrane and their association determines the structure, function, and expression levels of all plasma membrane proteins. However, systematic and reliable quantification of membrane-protein energetics has been challenging. We developed a deep mutational scanning method to monitor the effects of hundreds of point mutations on helix insertion and self-association within the bacterial inner membrane. The assay quantifies insertion energetics for all natural amino acids at 27 positions across the membrane, revealing that the hydrophobicity of biological membranes is significantly higher than appreciated. We further quantitate the contributions to membrane-protein insertion from positively charged residues at the cytoplasm-membrane interface and reveal large and unanticipated differences among these residues. Finally, we derive comprehensive mutational landscapes in the membrane domains of Glycophorin A and the ErbB2 oncogene, and find that insertion and self-association are strongly coupled in receptor homodimers.\n\n## Introduction\n\nThe past four decades have seen persistent efforts to decipher the contributions to membrane-protein energetics\u00a0(Reynolds et al., 1974; Cymer et al., 2015). Membrane-protein folding can be conceptually divided into two thermodynamic stages\u00a0(Popot and Engelman, 1990; Cymer et al., 2015), each of which affects membrane-protein structure, function, and expression levels: the insertion into the membrane of transmembrane segments as \u03b1 helices, and their association to form helix bundles\u00a0(Ben-Tal et al., 1996; Heinrich and Rapoport, 2003; Moll and Thompson, 1994; White and Wimley, 1999; Popot and Engelman, 1990). While significant progress has been made in structure prediction, design, and engineering of soluble proteins\u00a0(Fleishman and Baker, 2012), important but fewer successes were reported in design of membrane proteins\u00a0(Joh et al., 2014; Li et al., 2004), largely owing to the complexity of the plasma membrane and the lack of systematic and accurate measurements of membrane-protein energetics\u00a0(Cymer et al., 2015).\n\nRecently, experimental systems that offer a realistic model for biological membranes have advanced. von Heijne and co-workers quantitated the partitioning of engineered peptides fused to the bacterial transmembrane protein, leader peptidase (Lep), between membrane-inserted and translocated states, and highlighted the importance of interactions between the translocon and the nascent polypeptide chain in determining partitioning\u00a0(Hessa et al., 2007; \u00d6jemalm et al., 2013). The insertion energetics obtained from this assay, however, were significantly lower than expected from previous theoretical and experimental studies; for instance, the apparent atomic-solvation parameter, which quantifies the free-energy contribution from the partitioning of hydrophobic surfaces to the membrane core, was only 10 cal/mol/\u00c52 according to the Lep measurements\u00a0(Ojemalm et al., 2011), compared to ~30\u00a0cal/mol/\u00c52 from previous analyses\u00a0(Andrew Karplus, 1997; Vajda et al., 1995). Additionally, the magnitude of the insertion\u00a0free energies for individual amino acids were substantially lower according to the Lep system\u00a0(Hessa et al., 2007; Ojemalm et al., 2011; \u00d6jemalm et al., 2013) compared to other studies\u00a0(Moon and Fleming, 2011; Shental-Bechor et al., 2006). These discrepancies led to suggestions that the Lep measurements were 'compressed' relative to others due to interactions between the engineered protein and other membrane constituents (Johansson and Lindahl, 2009; Shental-Bechor et al., 2006).\n\nMembrane-protein energetics are governed not only by the\u00a0insertion but also by the association of helices into bundles. A significant body of work has shown that association is driven by packing interactions and short sequence motifs comprising small-xxx-small residues, where small is any of the small polar residues (Ser, Gly, or Ala) and x is any residue\u00a0(Russ and Engelman, 2000; Senes et al., 2004; Melnyk et al., 2004). However, while it is recognized that insertion and association both play roles in protein energetics\u00a0(Duong et al., 2007; Finger et al., 2006; Moll and Thompson, 1994; Ben-Tal et al., 1996; Heinrich and Rapoport, 2003; Popot and Engelman, 1990), the interplay between these two aspects has not been subjected to systematic experimental analysis. Given the remaining open questions on membrane-protein and protein-protein interactions within the membrane, we established a high-throughput assay to shed light on both factors and their coupling in a systematic and unbiased way within the bacterial plasma membrane.\n\n## Results\n\n### dsT\u03b2L: a high-throughput assay for measuring membrane-protein energetics\n\nTo overcome gaps in our understanding of membrane-protein energetics, we adapted the TOXCAT-\u03b2\u2212lactamase (T\u03b2L) screen\u00a0(Lis and Blumenthal, 2006; Russ and Engelman, 1999; Langosch et al., 1996) for high-throughput analysis by deep mutational scanning\u00a0(Boucher et al., 2014; Fowler and Fields, 2014); we refer to this new method as deep-sequencing TOXCAT-\u03b2\u2212lactamase (dsT\u03b2L). T\u03b2L is a genetic screen based on a chimera, in which a membrane-spanning segment is flanked on the amino terminus by the ToxR dimerization-dependent transcriptional activator of a chloramphenicol-resistance gene and on the carboxy terminus by \u03b2-lactamase (Figure 1a). In this construct, bacterial survival on ampicillin monitors membrane integration\u00a0(Broome-Smith et al., 1990; Jaurin et al., 1982), and survival on chloramphenicol correlates with self-association of the membrane span\u00a0(Lis and Blumenthal, 2006; Russ and Engelman, 1999; Langosch et al., 1996). Furthermore, \u03b2-lactamase and ToxR function only in the periplasm and cytoplasm, respectively; therefore, unlike previous assays of membrane-protein insertion\u00a0(Hessa et al., 2007), the orientation of the inserted segment relative to the membrane is known, and only proteins inserted with their carboxy terminus located in the periplasm would be selected. Most studies using the TOXCAT screen fused maltose-binding protein (MBP) in the carboxy-terminal domain (instead of \u03b2-lactamase) and used the MBP-null E. coli strain MM39 and maltose as sole carbon source to monitor membrane integration\u00a0(Russ and Engelman, 1999; Langosch et al., 1996; Melnyk et al., 2004; Li et al., 2004). Unlike this conventional TOXCAT experiment, in T\u03b2L survival on ampicillin depends linearly on \u03b2\u2212lactamase expression levels\u00a0(Broome-Smith et al., 1990; Jaurin et al., 1982; Li et al., 2004; Lis and Blumenthal, 2006), thus providing a more sensitive reporter for membrane insertion than MBP. Furthermore, the MM39 strain is not amenable to high-throughput transformation as required by our study; with T\u03b2L, we were able to use the high-transformation efficiency E. cloni cells (see Materials\u00a0and\u00a0methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig1-v3.jpg)\n\n**Figure 1.:** (a) The T\u03b2L genetic construct fuses a membrane segment to two antibiotic\u00a0selection markers: \u03b2-lactamase and ToxR, which report on insertion and self-association, respectively. (b) Libraries encoding every point mutation of a membrane segment are plated on selective and non-selective medium. Following overnight growth, the libraries are extracted and DNA segments, which encode the membrane domain, are subjected to deep-sequencing analysis.\n\nPrevious studies based on ToxR activity measured the effects of mutations using colony growth and enzyme-linked immunosorbant assay (ELISA), which do not allow high-throughput analysis\u00a0(Mendrola et al., 2002; Langosch et al., 1996; Lis and Blumenthal, 2006; Russ and Engelman, 2000; Melnyk et al., 2004). Here, instead, we subject libraries encoding every amino acid substitution in the membrane domain to selection on agar plates containing either ampicillin alone or ampicillin and chloramphenicol to monitor insertion and self-association, respectively (Figure 1b); the same bacterial population is also plated on non-selective agar and serves as a reference to control for clonal-representation biases. Following overnight growth, the bacteria in each plate are pooled, plasmids encoding the T\u03b2L construct are extracted from each pool, and the variable gene segment, which encodes the membrane span, is amplified by PCR. The three resulting DNA samples are subjected to deep sequencing, which reports the relative frequency of each mutant in the selected and reference populations (Boucher et al., 2014) (see equation 1 in Materials\u00a0and\u00a0methods). If the cytoplasmic protein fraction were perfectly constant among different mutants, the measured population frequencies could be interpreted as the relative propensities of each mutant to insert into the membrane or to self-associate in the membrane. This condition is unlikely to hold for all mutants; still, the agreement reported below with multiple lines of biophysical evidence on purified proteins suggests that the population frequencies provide a reasonable measure for changes in membrane-insertion and self-association partitioning. Hence, if we treat the population frequencies as if the mutants\u2019 partitioning between cytosolic, membrane-inserted, and self-associated fractions were under thermodynamic control, following the Boltzmann equation we can derive, at each position i in the membrane span, apparent free energy changes for insertion or self-association due to the substitution from wild type to amino acid aa, $\\Delta\\DeltaG_{aa,i}^{app}$ (see equations 2\u20133 in Materials\u00a0and\u00a0methods). Although confounding factors, such as nonspecific interactions between the inserted segment and other bacterial membrane proteins, may affect the readout from the experiment, insertion and self-association are likely to dominate, since every mutant in this library differs from the wild type by only one amino acid; furthermore, all mutants are subjected to identical selection conditions, including temperature and antibiotic, thereby minimizing experimental noise\u00a0(Mackenzie and Fleming, 2008).\n\n### Systematic per-position contributions to membrane-protein insertion\n\nWe used dsT\u03b2L to comprehensively map the sequence determinants of membrane insertion in a single-pass membrane segment (Figure 2a). To minimize the effects of self-association on experimental readout, we chose the C-terminal portion of human L-Selectin (CLS), which does not self-associate\u00a0(Srinivasan et al., 2011) (Figure 2\u2014figure supplement 1). Furthermore, the CLS amino acid sequence includes several polar amino acids (Figure 2a, bottom); we therefore reasoned that its membrane-expression levels would be sensitive even to point mutations. To verify that the deep-sequencing data reflected trends observed in experiments with single clones, we selected 10 single-point substitutions at the membrane-spanning segment\u2019s amino terminus and at its core, and subjected them to experimental analysis on a clone-by-clone basis. Each clone and the wild type were grown overnight in non-selective medium, normalized to the same density, and plated in serial dilutions on ampicillin-containing agar to estimate relative viability (Figure 2\u2014figure supplement 2). Nine of the 10 selected single-point substitutions (all but Val302Lys) showed qualitatively similar trends of viability in deep sequencing and single-clone analysis. The resolution of the deep-sequencing data, however, is much greater than that seen in the single-clone assays; for instance, whereas both charge mutations, Met303Glu and Ala311Arg, are highly deleterious according to deep sequencing and plate viability, the \u2206\u2206Ginsertionapp\u00a0value from deep sequencing for the former is 3.7\u00a0kcal/mol compared to 1.3\u00a0kcal/mol for the latter, emphasizing the larger dynamic range of deep sequencing compared to traditional viability screens. We next expressed these 10 mutants in non-selective conditions, isolated membrane preparations for each (Molloy, 2008), and measured membrane-localization levels relative to wild type using Western blots with an antibody targeting \u03b2-lactamase (Figure 2\u2014figure supplement 3\u00a0see Materials\u00a0and\u00a0methods). All clones expressed in the membrane fraction and ran at the expected size of ~55\u00a0kDa. Of the 10 tested mutations, 6 showed the expected trends, including mutations that increased (Met303Leu, Val304Phe, and Ala311Leu) or decreased expression (Val302Lys, Leu310Ala, and Ala311Arg) in agreement with the deep-sequencing and single-clone viability\u00a0data (Figure 2\u2014figure supplement 3). For instance, Ala311Arg was much less viable and showed lower membrane localization than wild type, whereas Ala311Leu was more viable and had higher membrane localization. However, three mutants to charges at the amino terminus (Val311His, Met303Glu, and Val304Asp) increased expression levels according to Western blots but were disruptive according to dsT\u03b2L. We attribute this difference to the fact that ampicillin viability reports not only on membrane-expression levels but also on\u00a0the\u00a0appropriate membrane integration, which is not captured by Western blots.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig2-v3.jpg)\n\n**Figure 2.:** (a) Each tile reports the apparent change in free energy $\\Delta\\DeltaG_{insertion}^{app}$ relative to wild type for every CLS point mutant (see equation 3 in Materials\u00a0and\u00a0methods). Gray tiles mark substitutions that were eliminated from the analysis due to low counts (<100) in the reference population. (b) Per-position insertion profiles for each amino acid residue. (c) Comparison of dsT\u03b2L insertion results at the plasma membrane mid-plane (Z\u00a0=\u00a00) with values from the Moon scale\u00a0(Moon and Fleming, 2011). (d) The apparent atomic-solvation parameter is the slope of the linear regression of $\\Delta\\DeltaG_{insertion}^{app}$ and computed\u00a0change in solvent-accessible surface area (SASA) due to each mutation (slope\u00a0=\u00a0-37\u00a0cal/mol/\u00c52, r2\u00a0=\u00a00.48, p<0.0001) (see Materials\u00a0and\u00a0methods). (inset) Inferring the atomic-solvation parameter from the relationship of $\\Delta\\DeltaG_{insertion}^{app}$ at Z\u00a0=\u00a00 for aliphatic residues and their change in SASA computed on a model poly-Ala \u03b1 helix (slope=-32\u00a0cal/mol/\u00c52, p\u00a0=\u00a00.002).\u00a0CLS,\u00a0C-terminal portion of human L-Selectin\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** By plating wild-type human CLS (a) and the library encoding every single-site mutation in its putative membrane span (b) on agar containing different antibiotic markers (spectinomycin on the left; ampicillin in the middle; and chloramphenicol on the right), we show that human CLS inserts into the membrane (ampicillin marker, middle plate) but does not self associate (Srinivasan et al., 2011) (right plate). Supplementary file 2 lists antibiotic concentrations.\u00a0CLS,\u00a0C-terminal portion of human L-Selectin\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** 10 single-point substitutions at the membrane-spanning segment\u2019s amino terminus and at its core were grown overnight in non-selective medium, normalized to the same density, and plated in serial dilutions on agar containing 400\u00a0\u03bcg/ml ampicillin to estimate relative viability.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Cells harboring the wild-type construct and point\u00a0mutations were fractionated by ultra-centrifugation. Whole-cell extract and pelleted membrane fractions are shown with anti-\u03b2-lactamase antibody. The band intensity was analyzed by densitometry and normalized to wild type and displayed as log2 fold change.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Comparing the membrane mid-plane insertion\u00a0energy\u00a0(parameter c in Supplementary file 1 with corresponding values from previously published hydrophobicity scales\u00a0(Wimley et al., 1996; Kyte and Doolittle, 1982; Kessel and Ben-Tal, 2002; Hessa et al., 2007; Moon and Fleming, 2011). Black points represent aliphatic amino acids, blue represent polar amino acids, orange aromatic amino acids. The aliphatic insertion data in dsT\u03b2L and the Hessa scale\u00a0(Hessa et al., 2007) and Moon scale\u00a0(Moon and Fleming, 2011) are highly correlated (r2\u00a0=\u00a00.79 and r2\u00a0=\u00a00.90, respectively). The slope of the correlation line for the aliphatics is close to 1 for the Moon scale, whereas it is 0.26 for the Hessa scale, reflecting a roughly four-fold lower change in hydrophobicity upon membrane insertion in the Hessa et al.\u00a0(2007) assays\u00a0compared to the dsT\u03b2L assay.\n\nWe next computed the apparent free-energy change of each substitution across the membrane relative to a substitution to Ala, and at each position i computed the running average over five neighboring positions [i-2\u2026i+2] (Figure 2b; Supplementary file 1). The resulting profiles describe the energetics of inserting each of the twenty amino acids relative to Ala at each position across the bacterial plasma membrane (Figure 2b). Although the location of the membrane mid-plane (Z\u00a0=\u00a00) could not be determined unambiguously in this assay, we estimated it by aligning the hydrophobic residues\u2019 profiles (Leu, Ile, Met, and Phe), thereby locating the profiles' troughs and the presumed membrane mid-plane at CLS position Ala311.\n\nThe small and polar amino acids, Ser, Thr, and Cys have shallow, nearly neutral profiles, ranging from \u22120.1 to +0.8\u00a0kcal/mol. By contrast, the helix-distorting amino acids, Gly and Pro, which expose the polar protein backbone to the hydrophobic membrane environment, have a high disruptive profile, which peaks (~2\u00a0kcal/mol) at the membrane mid-plane, emphasizing the strong unfavorable impact of exposing the polar protein backbone to the membrane environment. The large polar (Asn, His, and Gln) and charged residues (Asp, Glu, Lys, and Arg) are all highly disruptive in the membrane mid-plane. We note that\u00a0the energetic penalties for Asp, Asn, His, Gln, Glu, and Lys cannot be determined precisely from the dsT\u03b2L assay, since the number of reads for substitutions to these residues at the membrane mid-plane in the selected population is nearly 0, reflecting exceedingly large negative-selection pressures (Figure 1; Supplementary file 2).\n\nAt the membrane mid-plane, the hydrophobic residues, Val, Ile, Leu, Met, and Phe, show the expected troughs, which are shallower for the small amino acid Val (approximately \u22120.5\u00a0kcal/mol) than for the large amino acids (<\u22121.5\u00a0kcal/mol). We compared the dsT\u03b2L values for hydrophobic residues in the membrane mid-plane to values from five hydrophobicity scales (Figure 2\u2014figure supplement 4). dsT\u03b2L fits well to the Moon scale (Figure 2c, r2\u00a0=\u00a00.90, with a slope close to 1), which similar to dsT\u03b2L measures substitution effects in a bacterial membrane \u2013 albeit the outer membrane\u00a0(Moon and Fleming, 2011). The correspondence between dsT\u03b2L, which is based on in vivo\u00a0measurement of membrane integration in a bacterial population, with biophysical assays on purified proteins, partly confirms the use of dsT\u03b2L for studying membrane-protein energetics.\n\nThe dsT\u03b2L profile for Trp is similar to the profiles of the aliphatic residues, whereas Tyr makes a nearly neutral contribution to insertion in the membrane core. These profiles diverge from statistical inferences from membrane-protein structures and partitioning experiments, which show that Tyr and Trp preferentially line the membrane-water interface\u00a0(Ulmschneider et al., 2005; Schramm et al., 2012; Senes et al., 2007; Nakashima and Nishikawa, 1992; Yau et al., 1998). Further experimental analysis of the role of aromatic residues in membrane-protein stability is warranted, and one possible explanation for these differences is that in the dsT\u03b2L assay aromatic residues on the membrane-spanning segment lack neighboring aromatic residues with which to form stabilizing stacking interactions; indeed, experimental stability measurements have shown that stacking makes a significant contribution to the net stabilization provided by aromatic residues in membrane proteins (Hong et al., 2007, 2013).\n\n### Hydrophobicity in the membrane core is similar to that of organic solvents and protein cores\n\nRecently, controversy has surrounded the question of how hydrophobic are biological membranes\u00a0(Johansson and Lindahl, 2009). On the one hand, theoretical considerations and values inferred from hydrocarbons in solution suggested that the free energy contribution due to inserting aliphatic groups into the membrane, or the atomic-solvation parameter, is ~30 \u00b1 5\u00a0cal/mol/\u00c52 of nonpolar surface area\u00a0(Vajda et al., 1995;\u00a0Andrew Karplus, 1997); on the other hand, the Lep measurements suggested values of only 10\u00a0cal/mol/\u00c52 (Ojemalm et al., 2011). We analyzed dsT\u03b2L data for 39 substitutions from one aliphatic residue (Ala, Val, Ile, Leu, and Met) to another at the core of the membrane (\u22129\u00a0\u00c5<Z<13\u00a0\u00c5) and inferred an apparent atomic-solvation parameter of 37 \u00b1 6\u00a0cal/mol/\u00c52 (Figure 2d). We additionally derived an atomic-solvation parameter of 32 \u00b1 4\u00a0cal/mol/\u00c52 by analyzing the apparent insertion free energies at the membrane mid-plane ($\\Delta\\DeltaG_{z=0}^{app}$) for each of the aliphatic residues (Figure 2d, inset). The values we infer for the atomic-solvation parameter are therefore in fair agreement with values for protein cores and hydrocarbons in aqueous solution\u00a0(Vajda et al., 1995), and 3\u20134 times larger than the value inferred from the Lep system\u00a0(Ojemalm et al., 2011). We further note that while the ranking of apparent insertion free energies of aliphatic amino acids in dsT\u03b2L and Lep (Hessa et al., 2007) is similar (r2\u00a0=\u00a00.79, Figure 2\u2014figure supplement 4), the magnitude of the insertion free-energy changes is nearly four times greater according to dsT\u03b2L. We conclude that our results support the view that the hydrophobicity of the plasma membrane core is similar to that of hydrocarbons and much higher than measured in the Lep system.\n\n### Large differences and strong asymmetries in insertion of positively charged residues\n\nA hallmark of plasma membrane proteins is the charge asymmetry known as the \u2018positive-inside\u2019 rule, according to which the cytoplasmic-facing side of the protein is much more positively charged than the periplasmic or extracellular-facing side\u00a0(von Heijne, 1989). This asymmetry has been used to successfully predict the orientation of membrane proteins\u00a0(von Heijne, 1989), but experimental quantification of the energetics of this asymmetry met with difficulty; previous studies measured only a small energy difference (-0.5\u00a0kcal/mol) between inserting Arg and Lys in the cytoplasmic relative to the extracellular-facing side of the membrane and no asymmetry for His\u00a0(Lerch-Bader et al., 2008; \u00d6jemalm et al., 2013). A striking feature of the dsT\u03b2L profiles, by contrast, is that they show clear and large asymmetries for Arg, Lys, and His, in agreement with the \u2018positive-inside\u2019 rule (Figure 2b). The three profiles, however, are not identical: whereas Lys and Arg are favored by 2\u00a0kcal/mol near the cytoplasm compared to near the periplasm, the titratable amino acid His shows a more modest asymmetry of 1\u00a0kcal/mol; moreover, of these three amino acids, only Arg stabilizes the segment near the cytosol, whereas Lys and His are nearly neutral at the cytosol-membrane interface. This difference between Arg and Lys, which has not been noted until now, may be due to charge delocalization in the Arg sidechain and Arg\u2019s ability to form more hydrogen bonds with lipid phosphate headgroups.\n\nWe compared the relative propensity of each of the 20 amino acids at each position across the membrane (Figure 3; equation 4 in Materials\u00a0and\u00a0methods). The results clearly reflect the asymmetric distribution of charges across the plasma membrane, with Arg as the most favored amino acid at the cytoplasmic surface, giving way to the large and hydrophobic amino acids, Leu, Ile, and Phe. Since the propensities reflect protein-lipid interactions, they could be used to engineer variants of natural membrane proteins that exhibit higher stability and expression levels by mutating membrane-facing positions to the highest-propensity identity. Furthermore, the results suggest that the insertion profiles could be used for bioinformatics prediction of the locations and orientations of membrane-spanning proteins, [manuscript in preparation\u00a0(Elazar et al.)].\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig3-v3.jpg)\n\n**Figure 3.:** (a) The relative frequencies of each amino acid within the membrane (see equation 4 in Materials and methods) in sequence-logo format; the height of each letter corresponds to the amino acid\u2019s propensity.\n\nWith the accumulation of membrane-protein molecular structures, it has become possible to derive knowledge-based potentials for the insertion of amino acids across the membrane from distributions of amino acids observed in structures (Ulmschneider et al., 2005). We compared the dsT\u03b2L profiles to three knowledge-based profiles published over the past decade\u00a0(Senes et al., 2007; Ulmschneider et al., 2005; Schramm et al., 2012)\u00a0(Figure 4). The dsT\u03b2L profiles\u00a0are similar to the knowledge-based ones for the weakly polar and hydrophobic residues (Val, Ser, and Thr), but they diverge with respect to the more hydrophobic and polar residues: for instance, the\u00a0dsT\u03b2L apparent insertion energy for Leu, Ile, and Phe at the membrane mid-plane is \u22122\u00a0kcal/mol and around \u22120.5kcal/mol for the other scales. Additionally, the only knowledge-based scale that attempted to derive an asymmetric insertion potential (Schramm et al., 2012) reported much smaller asymmetries for Lys and Arg, of around 0.5\u00a0kcal/mol, compared to 2kcal/mol in dsT\u03b2L. These differences are likely due to the fact that knowledge-based potentials reflect the frequencies of amino acids in membrane\u00a0proteins and are biased by functional constraints; indeed polar residues are often found in the membrane core, where they have important roles in oligomerization, substrate binding, transport, and conformational change. Furthermore, the dsT\u03b2L experiment is based on a single-pass segment, where every position is exposed to the membrane, whereas the knowledge-based profiles are derived from all structures, including multi-pass proteins, where many residues mediate interactions with other protein segments or line water-filled cavities.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig4-v3.jpg)\n\n**Figure 4.:** Equations for the knowledge-based profiles were taken from Ulmschneider et al. (2005),\u00a0Schramm et al. (2012), and\u00a0Senes et al. (2007).\n\n### Strong coupling between insertion and self-association in membrane-spanning homodimers\n\nInsertion and association of membrane-spanning helices are thermodynamically coupled\u00a0(Kessel and Ben-Tal, 2002; Moll and Thompson, 1994; Popot and Engelman, 1990), but except in one study\u00a0(Duong et al., 2007) these two aspects were assayed separately\u00a0(Fleming et al., 1997; Finger et al., 2009; Hessa et al., 2007; Mendrola et al., 2002). To test the coupling between insertion and association, we applied dsT\u03b2L to two model systems for studying membrane protein self-association: the membrane domains of the human erythrocyte sialoglycoprotein Glycophorin A (GpA) and the ErbB2 oncogene, and compared survival on ampicillin and chloramphenicol to survival on ampicillin alone.\n\nSome of the amino acid positions that mediate self-association in GpA and ErbB2 according to their experimentally determined structures\u00a0(Bocharov et al., 2008; MacKenzie et al., 1997) show large decreases in chloramphenicol viability upon mutation.\u00a0Unexpectedly, however, many other mutations that have large effects on chloramphenicol viability are not close to the dimerization surfaces (Figure 5\u2014figure supplement 1), suggesting that factors other than self-association dominate the chloramphenicol-viability landscape. To test whether these confounding results are due to variability in expression levels among the mutants, we subtracted from the observed effects of every mutant the expected effects due to expression-level changes according to the dsT\u03b2L insertion profiles (see equation 5 in Materials\u00a0and\u00a0methods). The corrected self-association\u00a0mutational landscapes now correctly\u00a0discriminate positions that mediate self-association from those that do not (Figure 5a), and clearly highlight the interaction motifs in GpA and ErbB2. We compared the results from the systematic self-association landscape of GpA to a previous analysis of 24 GpA mutants that were individually screened for self-association using TOXCAT and corrected for differences in membrane expression using Western blots (Figure 5b)\u00a0(Duong et al., 2007). The results from dsT\u03b2L and the previous study are consistent (r2\u00a0=\u00a00.66; Figure 5b), confirming the use of the dsT\u03b2L insertion scale to correct self-association mutational landscapes in single-pass homodimers. Furthermore, by systematically probing every position across the membrane, our results highlight additional positions that are sensitive to mutation, such as GpA\u2019s Gly86, which was previously not subjected to mutagenesis\u00a0(Lemmon et al., 1992; Duong et al., 2007). Moreover, it is notable that although the vast majority of mutations are either neutral or disruptive to self-association, some mutations, for instance to Met in the GpA amino terminus, may promote self-association in the context of the T\u03b2L construct (Figure 5a). Our results further confirm the strong interplay between membrane-protein expression levels and association, and the importance of accounting for both in biophysical experiments on membrane proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig5-v3.jpg)\n\n**Figure 5.:** (a) The mutational landscapes discriminate positions that are involved in self-association (known associating residues are depicted in boldface) from those that do not. (b)\u00a0Comparison of expression-corrected apparent free energy of insertion for 24 Glycophorin A (GpA) mutants (Duong et al., 2007) with results from the dsT\u03b2L self-association mutation landscapes. (c) Dimer models that associate through positions that are sensitive to mutation (* in panel a), and do not associate through positions that are insensitive to mutation (\u2020 in panel a). The models (green) are close to the experimental structures (blue) for Glycophorin A\u00a0(MacKenzie et al., 1997) (1.3\u00a0\u00c5 root mean square deviation) and ErbB2\u00a0(Bocharov et al., 2008) (1.9\u00a0\u00c5). Another ErbB2 model, which agrees with biochemical and computational evidence\u00a0(Endres et al., 2013; Arkhipov et al., 2013; Fleishman et al., 2002) but has not been observed in experimental structures, is also suggested.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Chloramphenicol resistance in the dsT\u03b2L assay is expected to correlate with self-association\u00a0(Lis and Blumenthal, 2006; Russ and Engelman, 1999; Langosch et al., 1996). While mutations at some positions that mediate self-association disrupt viability, the majority of extreme effects observed in the mutational landscapes can be attributed to insertion rather than self-association. For instance, the charged and polar residues are highly disfavored in the membrane core, whereas the large hydrophobic residues, Leu and Phe, are favored in most positions in the membrane core. Figure 5a shows mutational landscapes where the effects of insertion were subtracted.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12125/elife-12125-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** In addition to the model structures of Figure 5b modeling constrained by the dsT\u03b2L, experimental data produced three models for Glycophorin A and two for ErbB2. Improvements in the RosettaMembrane\u00a0(Yarov-Yarovoy et al., 2006) energy function would be needed to eliminate these alternative models.\n\nWe also tested whether the systematic mutational landscapes generated by dsT\u03b2L could be used to provide constraints for structure modeling of receptor membrane domains\u00a0(Fleishman et al., 2002; Kim et al., 2003; Polyansky et al., 2014). We used the Rosetta biomolecular-modeling software\u00a0(Das and Baker, 2008; Yarov-Yarovoy et al., 2006) to generate 100,000 structure models of GpA and ErbB2 directly from their sequences, and selected structures that self-associate through positions that are sensitive to mutation according to dsT\u03b2L but not through positions that are insensitive to mutation (Figure 5c, Figure 5\u2014figure supplement 2). In both cases, fewer than five models passed the selection criteria and of those, some models were within 2\u00a0\u00c5 of experimentally determined structures.\n\n## Discussion\n\nDespite progress in measuring protein energetics within biological membranes, significant open questions remained, among them, what is the hydrophobicity at the core of biological membranes; what is the magnitude of the bias for positively charged residues at the cytoplasm surface; and how strong is the coupling between membrane-protein insertion and association energetics? To shed light on these fundamental questions, we established a high-throughput genetic screen and used it to generate systematic mutation landscapes of insertion and self-association in the plasma membrane of live bacteria.\n\nThe apparent insertion energies in dsT\u03b2L are in line with biophysical stability measurements on outer-membrane proteins\u00a0(Moon and Fleming, 2011), and the inferred atomic-solvation parameter is close to measurements in model systems and protein cores\u00a0(Andrew Karplus, 1997; Vajda et al., 1995). Our measurements, however, are three to four times larger than the corresponding ones using the Lep system\u00a0(Ojemalm et al., 2011; 2013; Hessa et al., 2007). To be sure, we are not the first to note these large differences\u00a0(Johansson and Lindahl, 2009; Shental-Bechor et al., 2006); yet, we find it significant that our measurements, similar to those in the Lep system, use biological membranes. The observation that the dsT\u03b2L insertion measurements for aliphatic side chains have the same ranking but are fourfold larger in magnitude compared to those from Lep (Figure 2\u2014figure supplement 4) may indicate that the Lep system measures only a part of the energy contribution to insertion. While further investigation is needed, we speculate that the reason for the large differences between dsT\u03b2L and Lep is that total membrane-protein expression levels were not quantified in the Lep system\u00a0(Hessa et al., 2007; Ojemalm et al., 2011; 2013).\n\nWe note the following two caveats regarding the dsT\u03b2L insertion profiles. First, the penalties for most polar residues at the membrane mid-plane are likely to indicate lower bounds on their insertion energies, since the number of clones counted in the deep-sequencing data for these mutants is close to 0 (supplementary data). Second, statistical analyses\u00a0(Ulmschneider et al., 2005; Schramm et al., 2012; Senes et al., 2007) and experiments\u00a0(Hessa et al., 2007) demonstrated that the aromatics Tyr and Trp are preferred in the water-membrane interface rather than in the core, although dsT\u03b2L shows the reverse (Figure 2b). We suggest that these results reflect the fact that dsT\u03b2L is based on a monomeric construct where the aromatics are fully exposed to the membrane environment; however, these uncertainties require further research.\n\nThe TOXCAT genetic screen has made essential contributions to our understanding of self-association in the membrane\u00a0(Lindner and Langosch, 2006; Lis and Blumenthal, 2006; Russ and Engelman, 1999; Finger et al., 2009; Mendrola et al., 2002; Li et al., 2004; Srinivasan et al., 2011\ufeffReuven et al., 2012). Some early reports demonstrated that chloramphenicol survival also depends on membrane-protein expression levels\u00a0(Russ and Engelman, 1999; Duong et al., 2007). Our results strongly support this view and show that expression levels are a dominant factor in chloramphenicol survival. This dominance is perhaps not surprising in retrospect, given that a mutation\u2019s effects on monomer concentrations are counted twice in computing its effects on homodimer concentrations, and therefore on chloramphenicol viability (see equation (5) in Materials\u00a0and\u00a0methods). A key contribution of unbiased and systematic assays, such as dsT\u03b2L, is that they clarify such trends unambiguously. Furthermore, the dsT\u03b2L insertion profiles derived from the monomeric CLS provide a self-consistent way to factor out the contributions from insertion energetics in future assays on membrane-protein association or function in unrelated membrane proteins, thereby eschewing the need to measure the expression levels of individual mutants.\n\nDeep mutational scanning has made important inroads to analysis and optimization of diverse protein systems\u00a0(Whitehead et al., 2012; Fowler and Fields, 2014; Boucher et al., 2014). The main strengths of deep mutational scanning are the ability to measure the effects of all point mutations without bias and that all mutants experience strictly equal experimental conditions, thereby limiting experimental noise. The structural simplicity of the model systems tested here, consisting of a single \u03b1 helix or of helix homodimers, plays a further role in the ability to accurately infer energetics. Combined with structural modeling, the assay can provide essential information both on association energetics and the molecular architecture of membrane receptors. More generally the data on protein-membrane and protein-protein energetics obtained from dsT\u03b2L will be used to improve models of membrane-protein energetics and to design, screen, and engineer high-expression mutants of specific membrane proteins (Fleishman and Baker, 2012; Joh et al., 2014).\n\n## Materials and methods\n\n### Plasmids and bacterial strains\n\nThe p-Mal plasmid was generously provided by the Mark Lemmon laboratory. We replaced the maltose-binding protein domain at the open-reading frame carboxy-terminus with \u03b2-lactamase\u00a0(Lis and Blumenthal, 2006). The restriction sites in multiple-cloning site 1 were changed to XhoI and SpeI. The p-Mal plasmid contains a gene for spectinomycin resistance, which is constitutively expressed, providing selection pressure for transformation. The open-reading frame encompassing the T\u03b2L construct is also constitutively expressed and is under the control of the weak ToxR promoter.\n\nThe DNA coding sequence for the transmembrane constructs used in the paper:\n\n>human CLS\n\nCCGCTGTTCATCCCGGTTGCAGTTATGGTTACCGCTTTTAGTGGATTGGCGTTTATCATCTGGCTGGCT (amino acid sequence: PLFIPVAVMVTAFSGLAFIIWLA)\n\n>Glycophorin A\n\nCTCATTATTTTTGGGGTGATGGCTGGTGTTATTGGAACGATCCTGATC (amino acid sequence: LIIFGVMAGVIGTILI)\n\n>ErbB2\n\nCTGACGTCTATCATCTCTGCGGTGGTTGGCATTCTGCTGGTCGTGGTCTTGGGCGTGGTCTTTGGCATCCTGATC (amino acid sequence: LTSIISAVVGILLVVVLGVVFGILI)\n\nThe CLS\u00a0construct\u00a0was deposited in\u00a0the AddGene\u00a0repository\u00a0[pMAL_dst\u03b2L-(Plasmid #73805)].\n\nAll experiments were conducted using the high-transformation efficiency E. cloni cells (Lucigen Corporation, Middleton, WI).\n\n### Library construction\n\nCustomized MatLab 8.0 (MathWorks, Nattick, Massachusetts) scripts for generating primers were written (supplementary files) to generate forward and reverse DNA oligos of lengths 40\u201385 base pairs, where the central codon is replaced by the degenerate codon NNS, where N is any of the four nucleotides (ATGC) and S is G or C, encoding all possible natural amino acids. Resulting primers were ordered from Sigma (Sigma-Aldrich, Rehovot, Israel). For example, to replace the central 302nd codon of human CLS with an NNS codon, the following two primers were ordered:\n\n>forward\n\nGCTGTTCATCCCGGTTGCAGTTNNSTGGTTACCGCTTTTAGTGGATTG\n\n>reverse\n\nCAATCCACTAAAAGCGGTAACCASNNAACTGCAACCGGGATGAACAGC\n\nEach pair of oligos was then cloned into the wild type by restriction-free (RF) cloning (van den Ent and L\u00f6we, 2006).\n\n### Transformation, growth, plating, and harvesting\n\nThe resulting plasmids from the library-construction step above were electroporated into E. cloni and plated on agar plates containing 50\u00a0\u03bcg/ml spectinomycin. Plasmids for each position were transformed and plated separately and positions with fewer than 200 colonies were retransformed. All positions were then pooled and used to inoculate 10\u00a0ml of Luria Broth medium (LB) with 50\u00a0\u03bcg/ml spectinomycin and grown in a shaker at 200 rpm and 37\u00b0C over-night, diluted 1:1000 and grown to OD\u00a0=\u00a00.2\u20130.4. The libraries were then diluted to OD\u00a0=\u00a00.1 and 200\u00a0\u03bcl of the resulting cultures were plated at different dilutions (1:1, 1:10, 1:100, 1:1000) on large 12-cm petri dishes containing spectinomycin, ampicillin alone, or ampicillin and chloramphenicol. After overnight incubation at 37\u00b0C, p-Mal plasmids were extracted from the resulting colonies using a miniprep kit (Qiagen, Valencia, California).\n\n### Determining concentrations of antibiotics that result in maximal dynamic range\n\nEvery wild-type membrane-spanning segment exhibits different sensitivity to chloramphenicol and ampicillin. To determine the concentrations that are most likely to provide maximal dynamic range, we started by cloning mutants that are predicted to reduce insertion of the membrane-spanning segment or its self association\u00a0(Mendrola et al., 2002). Results are represented in Supplementary file 1. We next titrated the wild-type construct as well as the mutant on plates with varying concentrations of antibiotic to find the concentration that shows the largest difference in viability between the wild type and the compromising mutants. Supplementary file 2 provides the ampicillin and chloramphenicol concentrations used in each of the experiments reported in the paper.\n\n### Deep sequencing\n\n#### DNA preparation\n\nIn order to connect the adaptors for deep sequencing, the membrane-spanning segments were amplified from the p-Mal plasmids using KAPA Hifi DNA-polymerase (Kapa Biosystems, London, England) using a two-step PCR.\n\nPCR 1:\n\n>forward\n\nCTCTTTCCCTACACGACGCTCTTCCGATCTCTTGGGGAATCGACTCGAG\n\n>reverse\n\nCTGGAGTTCAGACGTGTGCTCTTCCGATCTGTTTAAAGCTGGATTGGCTTGG\n\n1\u03bcl of the PCR product was taken to the next PCR step:\n\n>forward\n\nAATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGC\n\n>reverse barcode 1\n\nCAAGCAGAAGACGGCATACGAGAT <barcode>GTGACTGGAGTTCAGACGTGTGC\n\n>reverse barcode 2\n\nCAAGCAGAAGACGGCATACGAGAT <barcode>GTGACTGGAGTTCAGACGTGTGC\n\nThe DNA samples from each of the populations (unselected; ampicillin-selected; and chloramphenicol and ampicillin selected) were PCR-amplified using DNA barcodes for deep sequencing. The following barcodes were used:\n\n>barcode1\n\nTCGCCAGA\n\n>barcode2\n\nCGAGTTAG\n\n>barcode3\n\nACATCCTT\n\n>barcode4\n\nGACTATTG\n\nAll the primers were ordered as PAGE-purified oligos. The concentration of the PCR product was verified using Qu-bit assay (Life Technologies, Grand Island, New York).\n\n#### Deep-sequencing runs\n\nDNA samples were run on an Illumina MiSeq using 150-bp paired-end kits. The quality control for a typical run showed that the membrane-spanning segment was at high-quality (source data) FASTQ sequence files were obtained for each run and customized MatLab 8.0 scripts were written to generate the selection heat maps from the data (scripts are available in supplementary files). Briefly, the script starts by translating the DNA sequence to amino acid sequence; it then eliminates sequences that harbor more than one amino acid mutation relative to wild type; counts each variant in each population; and eliminates variants with fewer than 100 counts in the reference population (to reduce statistical uncertainty). In a typical experiment, at least 70% of the reads passed these quality-control measures.\n\n#### Completeness and dynamic range of the deep sequencing results on insertion energetics\n\nThe ampicillin selected and the unselected populations of CLS mutants were subjected to deep sequencing analysis yielding more than 4 million reads for each population. Out of 540 possible single-point substitutions, 472 (~87%) mutants were each counted more than 100 times in the reference population; the remaining mutants were eliminated from analysis to reduce uncertainty (gray tiles in Figure 2a). The dsT\u03b2L assay has a large dynamic range; for instance, at position 307 in the membrane center, the number of reads in the selected population for Lys, Gln, and Glu is 0, whereas the number of reads for Leu is nearly 110,000, spanning five orders of magnitude.\n\n#### Sequencing analysis\n\nTo derive the mutational landscapes (Figures 2a and 4a) we compute the frequency $p^{i,j}$ of each mutant relative to wild-type in the selected and reference pools, where i is the position and j is the substitution, relative to wild-type:\n\n$$\np^{i,j}=\\frac{count^{i,j}}{count_{wild\u2212type}}\n$$\n\nwhere count is the number of reads for each mutant. The selection coefficients are then computed as the ratio\n\n$$\ns^{i,j}=\\frac{(p^{i,j})_{selected}}{(p^{i,j})_{reference}}\n$$\n\nwhere selected refers to the selected population (ampicillin in the case of the CLS insertion analysis, and ampicillin plus chloramphenicol in self-association analyses) and reference refers to the reference population (spectinomycin-selection in the case of CLS insertion analysis, and ampicillin in the case of self-association analysis). The resulting $s^{i,j}$ values are then transformed to apparent changes in free energy ($\\Delta\\DeltaG^{app}$) due to each single-point substitution through the Gibbs free-energy equation:\n\n$$\n\\Delta\\DeltaG_{i,j}^{app}=\u2212RTln(s^{i,j})\n$$\n\nwhere R is the gas constant, T is the absolute temperature (310K), and ln is the natural logarithm.\n\n#### Polynomial fitting and smoothing of insertion plots\n\nThe readout from the insertion selection in dsT\u03b2L comprises contributions from the local environment of each position; for example, substitution to a small residue might form a cavity if surrounded by large residues. To reduce such sequence-specific effects, the insertion free-energy values relative to alanine were smoothed using the MatLab smooth function over a window of 5 residues (2 on each side), excluding gray tiles (with insufficient data), and plotted as points in Figure 2b. The points were then fitted using the polynomial fitting function polyfit to yield 4th-order polynomials (Figure 2b lines and Supplementary file 1). Two centrally located polar amino acid positions, CLS positions Ser307 and Gly308, were discarded from the analysis due to their inconsistency with the general trends of the insertion profiles, likely because mutations at these polar positions distort the helix backbone.\n\n#### Position-specific amino acids preference\n\nTo compute the amino acid preference at each position in the membrane (Figure 2c), we calculated the Boltzmann-weighted probability of every amino acid residue at each position in the membrane-spanning domain of human CLS(Srinivasan et al., 2011) using the following formula (MatLab script in supplement files):\n\n$$\np^{i,\u00a0j}=\\frac{e^{-E_{app}^{i,j}/RT}}{-E_{app}^{i,x}/RT}\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u2009\u03a3x^{e}\n$$\n\nwhere R is the gas constant, T\u00a0=\u00a0310K and $E_{app}^{i,j}$\u00a0are the apparent free energy of transfer of amino acid j at position i relative to alanine (Figure 2b).\n\n### Inferring the atomic-solvation parameter\n\nWe generated a model of the CLS membrane domain by threading its sequence on a canonical \u03b1 helix, and used Rosetta to singly introduce each substitution from one aliphatic identity (Ala, Val, Ile, Met, Leu, and Phe) to another in the membrane core. Amino acid sidechains were combinatorially repacked and the change in solvent-accessible surface area (\u0394SASA) was computed. Four additional data points (marked with asterisks, Figure 2d) were extracted from Glycophorin A\u2019s position Ala82, which is located at the membrane center and away from the dimerization interface. To compute the atomic-solvation parameter from the insertion energies of the aliphatics at the membrane mid plane (Figure 2d, inset), we compared the insertion energy at the membrane mid plane for each aliphatic residue $\\Delta\\DeltaG_{z=0}^{app}$ with computed \u0394SASA of a change from that residue to Ala on a canonical poly-Ala \u03b1 helix.\n\n#### Computing the apparent dimerization free-energy change\n\nToxR activity depends on homodimer concentrations\u00a0(Langosch et al., 1996; Russ and Engelman, 1999), and homodimer concentrations depend on both monomer insertion into the membrane and self-association strength. The measured effects of every point mutation on self-association (Figure 5\u2014figure supplement 1) therefore comprise contributions from insertion (multiplied by two because the homodimer comprises two mutants) and dimerization\u00a0(Duong et al., 2007). To isolate the mutation\u2019s effects on self-association (Figure 5a), we subtract from every data point twice the contribution to insertion at the relevant position along the membrane normal.\n\n$$\n\\Delta\\DeltaG_{dimerization_{j,x}}^{app}=\\Delta\\DeltaG_{measured_{j,x}}^{app}_{}\u22122\\Delta\\DeltaG_{insertion_{i,j,x}}^{app}_{}\n$$\n\nwhere, i, j, and x are the wild-type identity, mutation, and the position along the membrane normal, respectively, \u0394\u0394Gmeasured is the measured change in self-association free energy (see equation (3)), and $\\Delta\\Delta$Ginsertion is the free-energy change expected for a mutation from i to j at position x according to the insertion polynomials of Supplementary file 1.\n\n#### \u03b2 \u2013lactamase blot analysis\n\nCells were grown in 5 ml LB overnight at 37\u00b0C.\u00a0The cells were then diluted at a 1:100 ratio into 50 ml LB and were grown to A600 = 0.6, harvested on ice, washed in TBS buffer, and equal amounts of cells were re-suspended in extraction buffer (50\u00a0mM Tris pH 8 [Bio-Lab,\u00a0Israel], 100\u00a0mM NaCl, 5% [w/w] sucrose and 1\u00a0mM AEBSF [Sigma-Aldrich]). The cells were then disrupted by three cycles of sonication with Microson XL at 12 watts for 10 s with 60 s intervals. Samples were centrifuged for 15 min at 13,000 rpm in order to discard cell debris, supernatant was ultracentrifuged for 1\u2009hr at 300,000\u00a0g using Optima TLX with TLA100.1 rotor in order to sediment membranes to the pellet. The pellet was re-suspended in 100\u00a0mM Na(HCO3)2 and incubated for 15 min at 4\u00b0C and ultra-centrifuged for 1\u2009hr at 300,000\u2009g. Pellet and extract protein concentration were measured with Lowry protein assay\u00a0(Peterson, 1977), and equal amounts of protein were loaded on 12.5% Tris-Glycine SDS PAGE gels. Gels were transferred to Protran nitrocellulose membranes (Whatman) and incubated with mouse anti-\u03b2-lactamase antibody (Santa Cruz, Dallas) and a horse-radish-peroxidase-fused rabbit anti-mouse secondary antibody, and imaged using SuperSignal West Femto Maximum Sensitivity Substrate\u00a0(Thermo, Waltham, MA). ECL and the chemiluminescence signal was detected using the ChemiDoc MP System (Bio-Rad). Band densitometry was analyzed with imageJ\u00a0(Schneider et al., 2012).\n\n#### Ab initio modeling using Rosetta\n\nFor each membrane segment, we start by generating all-helical backbone-conformation fragments using the Rosetta utility fragment picker (Gront et al., 2011) and construct a C2 symmetry definition file using the Rosetta symmetry utility function (https://www.rosettacommons.org). We then use the Rosetta Fold-and-Dock application\u00a0(Das et al., 2009), which samples symmetric degrees of freedom for both docking and folding of the homodimer using the RosettaMembrane energy function\u00a0(Yarov-Yarovoy et al., 2006). Example files and command lines for running fragment picker and fold-and-dock are available in supplementary files.\n\n#### Constraining structure models with experimental results\n\nFor each position in the membrane-spanning region of the target protein, we assign two labels: likely mediating binding \u2013 if at least four substitutions from wild-type disrupted binding by at least 2kcal/mol (* in Figure 5a); and unlikely to mediate binding \u2013 if at least four substitutions improved or did not change binding (\u2020). For each of the 20% lowest-energy Rosetta models, we tested whether at least two of the residues that likely mediate binding are within 5\u00a0\u00c5 of the partner monomer and all positions, which are unlikely to mediate binding, are outside a 4\u00a0\u00c5 shell. Structures that passed the filter above were clustered using the Rosetta clustering application with default parameters. The clusters were visually inspected and models showing significant kinks were eliminated.\n",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "0f9e6306-cde4-4886-afe0-5f4329dca9bf",
+      "submission_id": "d13eac00-58a4-4f9c-82b1-9dff37407200",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12125.018](https://doi.org/10.7554/eLife.12125.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Mutational scanning reveals the determinants of protein insertion and association energetics in the plasma membrane\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Yibing Shan (Reviewing Editor) and John Kuriyan as the Senior Editor. One of the two reviewers, William DeGrado, has agreed to share his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper describes a mutational scanning analysis to determine the energetics of membrane insertion of transmembrane helices and helix-helix association in membrane. Much of the method is new, which uses a modified TOXCAT assay coupled with high throughput screening and deep sequencing. The results suggest a membrane hydrophobicity higher than previously estimated, energetic asymmetry for several amino acids between the periplasmic and the cytoplasmic lipid layers, and a significant difference in the membrane energetics of Arg and Lys. The helix-helix association data confirm that the GxxxG motif represents favored dimerization interfaces. These results may inform analysis and design of membrane proteins and they are of broad interest to the community.\n\nEssential revisions:\n\nThe reviewers suggested a number of important revisions that would help strengthen this manuscript.\n\n1) The reviewers pointed out an important caveat for the present analysis: strictly speaking, the results should be considered propensities rather than free energies of membrane insertion and helix-helix association, without calibrating the expression level, or the relative population of the membrane-inserted protein vs the protein in cytosol. We suggest the authors Western Blot the expression levels of a small set (~10) of mutants and hopefully to show small variances in the expression levels. In any event this caveat should be discussed in the revised manuscript.\n\n2) Both reviewers thought the discussion concerning TM topology is a distraction from the main focus. It would be better to remove this discussion from this manuscript and to publish it separately with further development.\n\n3) The results reported in Figure 2b (Z-dependent energetic profiles) should be analyzed in comparison with bioinformatics results (Senes et al., 2007; Ulmschneider et al. 2005; Ulmschneider et al. 2006; Schramm et al., 2012).\n\n4) The reviewers asked for further description of the present dsT\u03b2L system and for a more detailed comparison of the present system with the previously developed Lep system. Why the choice of \u03b2-lactamase instead of the maltose binding protein? What is the precise sequence of L-selectin used in the system? Why the high sensitivity of membrane insertion to even conservative TM mutations? The authors attribute the lower membrane hydrophobicity estimated by previous work (Hessa et al., 2007) to translocon interactions of the Lep system. Please elaborate this point, as the present system also passes through translocons to be embedded in the membrane.\n\nIndividual reviewer comments:\n\nReviewer #1:\n\nSarel Fleishman et al. present a mutational scanning analysis to determine the energetics of TM helix insertion into a membrane. Using a modified TOXCAT assay coupled with high throughput screening and deep sequencing they have derived insertion profiles for each amino acid at all positions within a selected TM helix. Based on these results they conclude that (i.) membranes are more hydrophobic than anticipated based on previous findings, and (ii.) Arg and Lys differ in their membrane insertion asymmetry. Furthermore, the authors have identified an asymmetry for several amino acids and have used their data to predict the membrane topology of a set of E. coli proteins with experimentally determined TM topologies. In addition, the authors have used their insertion energetics together with association energetic to model the structure of two selected TM helix dimers.\n\nI found the first part, i.e. the selection of amino acids and the determination of membrane insertion preferences, rather convincing, albeit some open questions remain, which are outlined in detail below. However, the authors mention throughout the entire manuscript many times that they present \"the first systematic mutation analysis of insertion and self-association in the plasma membrane of live bacteria\". This is simply wrong, and the entire idea is not that new. ToxR-based assays are in use for quite a while and it is common that authors present some analysis of the proteins expression levels. Thus, the entire statement, that membrane insertion and association energetics have never been studied in parallel simply is wrong. In fact, in MT Doung et al. (JMB (2007) 371, 422) the authors have adjusted their measured CAT activities to the expression levels. Furthermore, in Finger et al. (JMB (2006) 358, 1221) the authors have used a system very similar to TOXCAT and they have systematically followed the changes associated with changing expression levels. Thus, I do not see the new concept here. Similarly, I found the results of the modeling little convincing (subsection \u201cHigh-precision structure modeling constrained by systematic self-association measurements\u201d, last paragraph). Especially for small TM helix dimers there are many good predictions out, and I do not see that the current modeling results are superior.\n\nI feel that the authors should consider concentrating on the first part of the manuscript and on the prediction of the TM topology. In the subsection \u201cTopology prediction\u201d they mention that another manuscript is in preparation. They might consider combining these two manuscripts, which would certainly improve the current manuscript. The analysis of the TM topology would certainly enhance the visibility of the present work.\n\nOpen questions:\n\n1) In the second paragraph of the Introduction and later on: It is mentioned several times that the differences observed between the current results and previous results (Hessa et al. 2007) are due to interactions between the engineered protein and other components of the membrane, such as the translocon. However, in the present study the authors also express a fusion protein and a large part of that has to pass the translocon. While the fusion proteins analyzed in the present study certainly differ from the Lep systems, as we have a soluble domain, one could argue that the passage of the large soluble protein domain into the periplasm somehow influences the results.\n\nAlong the same lines: I do not understand the argumentation that the lower membrane hydrophobicity see with the Lep system is due to the translocon (Discussion, second paragraph). Also in E. coli the TM segments are inserted into the membrane via the SecYEG translocon! Please clarify.\n\n2) In the first paragraph of the subsection \u201cdsT\u03b2L: a high-throughput assay for measuring membrane-protein energetics\u201d: I agree that the orientation of the segment within the membrane is known due to the system set up. However, the question arises whether the authors have missed all the proteins in their analysis which have a different topology. Thus, does the entire assay really determine insertion energetic or energetics of insertion in only one defined way?\n\n3) System set up: When the equilibrium between soluble and membrane inserted residue is somehow affected by an amino acid, thus when a residue forces (or abolishes) insertion of a TM helix into the membrane, some \u03b2-lactamase might still be expressed into the periplasm (just less or more). As far as I understand the assay, one would still select the clones, as they grow on the selective agar, and add their sequence to the analysis. How meaningful is an analysis of residues, which are only partly integrated into the membrane are also expressed as soluble versions? Why should there be a negative selection if the selection pressure allows growth of all constructs? This problem might also influence the later presented interaction analysis. In principle the authors mention and use this argument in a different context in the Discussion (second paragraph).\n\n4) In the subsection \u201cHigh-precision structure modeling constrained by systematic self-association measurements\u201d, second paragraph: It is clear that some mutations severely affect the expression level of a given protein. While this is here presented in the context of dimerization, a reduced expression level might also affect survival on ampicillin plates. So the question arises, what is actually measured and compared? Membrane insertion propensity of an amino acid or the impact of a substitution on the expression level? Probably both.\n\n5) When \"mutations form polar residues distort the helix backbone\" and these are therefore discarded, how valuable is then the analysis of any polar residue in the present analysis. Is the argument valid for all positions?\n\nReviewer #2: This paper describes an elegant approach to screen for helix-helix interactions in the membrane, which relies on deep-sequencing of populations that have been selected for transmembrane peptide insertion and/or dimerization as well as the unselected controls. Much of the method is new. The results are interesting and can help enable the design and analysis membrane proteins; they should be of broad interest to the community. However, I have many suggestions to improve the clarity of the presentation, the interpretation of the results, and some of the computational methods briefly presented in the paper. Although these comments are lengthy, I do feel this is a very interesting and important paper that should be rapidly published.\n\nThe authors used an unusual membrane protein in this study to compare and contrast with earlier study based on Lep. The system is based on the single-span membrane protein, ToxR, which lacks a signal sequence. The construct contains a water-soluble N-terminal DNA-binding domain, a transmembrane helix, and a C-terminal \u03b2-lactamase (bla) as a periplasmic selectable marker. Thus, the entire system is in reverse order from the more common Type I insertion process, with no efficient signal protein to direct insertion into the membrane. The protein system studied here is also different from other bacterial Type II membrane proteins in that it has a full N-terminal domain. One strong point of this paper is that it allows comparison of this unusual insertion process with previous systems. However, the authors do not discuss these differences, and there is no discussion of whether their system is cotranslationally or post-translationally inserted, whether it requires SecA and SecB, and whether it uses the SecYEG.\n\nThe authors use an elegant series of selections to define the background population, the pool of protein sequences that insert properly, and the pool of protein sequences that both insert and dimerize. The authors point out that much of this has been accomplished previously using other methods, but not in a high-throughput manner. (Also the Bouchner manuscript was cited in such a way that it seemed that some of the present work was presented previously, which can easily be fixed.) The authors do not comment on why MBP is removed from the starting construct and \u03b2 lactamase is used instead. Did they find growth +/- maltose to be an insufficient screen?\n\nThe constructed system would appear, perhaps serendipitously, to be very sensitive to small changes. Even an Ala to Leu change in the TM sequence can have a large change selective advantage, which almost certainly relates to the efficiency of insertion. Nevertheless, I am not sure whether they have shown this using a membrane prep. and Western analysis of a dozen variants spanning different insertion efficiencies, which would be standard in most papers on this subject. Also, the authors do not address whether the L-selectin's TM sequence is acting as a cleaved signal peptide or whether it is retained as a TM tether for the bla domain.\n\nThe extreme sensitivity to single mutations through the entire TM sequence is unusual, as similar studies generally show only localized regions to be important. Indeed, if any conservative mutation in a TM sequence led to a significant change in fitness it would be difficult to understand how proteins evolve and show such sequence variability. I therefore became curious what the actual sequence for L-selectin's TM was used. Following the gene sequence from the Methods section,\n\nAGCCAGCCAGATGATAAACGCCAATCCACTAAAAGCGGTAACCATAACTGCAACCGGGATGAACAGCGG\n\nand translating in all three possible reading frames, the most hydrophobic peptide sequence would be:\n\nASQMINANPLKAVTITATGMNS\n\nThere are many polar amino acids in this stretch. This clearly is not the sequence that was used by Renhao Li's lab in the reference provided in the manuscript [1]. Either there is a major problem in what was intended versus what was actually cloned, or this is a typo that could have led to confusion in the literature. Either way, the correct amino acid sequence should be shown, along with the adjacent sequence N-terminal and C-terminal to the insert. If the native TM from human L-selectin was indeed cloned properly, the authors might wish to discuss how such small changes make large differences in fitness. Normally, one would expect that the sequence would need to be teetering on the edge of stability or function to be so sensitive throughout its sequence.\n\nThe authors would like to use the counts of amino acid types at a given position in the sequence observed in the control population versus that in the bla-selected pool to compute the free energy of insertion of the TM helix. There is good reason to believe that this reflects the insertion efficiency (although even this is difficult to be sure of without Western analysis for confirmation). However, it is a real stretch to equate this with true free energies. For insertion efficiency to be interpreted as free energies then the system would need to be under thermodynamic or pseudo-thermodynamic equilibrium. This was achieved in the Lep system by quantifying the two populations of inserted states, and in Karen Fleming's system by quantifying the concentration of the inserted and un-inserted populations of protein. In this case, however, we have no idea the concentration of the un-inserted protein and whether the rate-determining step in this unusual case represents engagement with accessory proteins, insertion into the translocon, or release from the translocon. Furthermore, the concentration of soluble protein in the cell vs. the protein inserted into the membrane is not measured. I feel, the authors should report their primary data as propensities or frequencies and restrict their conclusions to statements like: \"if we treat these insertion frequency signatures as if they were under thermodynamic control following a Boltzmann we find that\u2026\" Plots derived based on this assumption are fine, but only after appropriate discussion of the caveats.\n\nThe authors do not compare their Z-dependent position profiles for the individual amino acids to the corresponding frequency plots obtained from bioinformatics analysis of membrane protein crystal structures [2-5]. Also, it is not clear how they decide on the Z-position in the membrane for their inserted TM helix. Clearly it depends on the surrounding sequence, which was not provided. Comparing the present scale to bioinformatics scales, the distributions behave in the expected manner for hydrophobic residues, which is reassuring. Also, if the propensities from earlier papers are converted to energies using the somewhat questionable method of reverse Boltzmann statistics employed in the present paper (see supplement of [5]) they would appear to support the magnitude of the solvation parameter being similar to that found in Karen Fleming's analysis, supporting the analysis presented in the current paper. This is a striking finding, and one of the reasons I feel that the current paper should be accepted with revision. However, beyond this, the differences between the present scale and previous experimental or bioinformatics scales are not subtle. Tyr and Trp do not show more favorable interaction in the headgroup region than the center of the bilayer in the current analysis, even though it is seen in virtually every other experimental and bioinformatics study. Glu, Asp, Gln, Asn are essentially flat, and do not become more favorable as the depth of insertion approaches +/- 20 \u00c5 as in previous studies. If this is due to averaging and is not significant, the profiles should not be shown. The profiles for Lys and Arg are also different from expectation. \u0394\u0394G for Arg vs. Ala is around 0 at -5 \u00c5 (very close to the center of the bilayer!) and Lys is unfavorable in the cytoplasmic headgroup region. This must be telling us something about the specific system they are studying, which should be expanded on. I very much doubt that these data can be used alone for making general conclusions, although when appropriately analyzed to understand differences with other systems they will be quite informative.\n\nFigure 2c shows a nice correlation with the Moon Fleming values, but it is not clear what is plotted for dsTBL (\u0394\u0394G at Z=0?). Figure 2d would appear to contain a small selection of the data from a very large number of potential sequences that have been obtained from the deep sequencing. What is the slope and correlation if all sequences are used, or if it is computationally difficult how do they change after choosing 25 sequences versus 50 versus 100 sequences? What if the smoothed value of DDG at Z=0 is used to compute the values? What if one plots the X-values of Figure 2c vs. the area of the sidechains in a poly-Ala helical backbone?\n\nDo the data in Figure 4a teach us anything new that would not have been gleaned from Mark Lemmon's, Don Engelman's and Axel Brunger's first papers in the early 1990s or Kevin MacKenzie's and Karen Fleming's subsequent papers [6-11] or does this serve as a calibration exercise? How do the data in Figure 4b compare to the analysis of Mark Lemmon [12] and subsequent papers?\n\nHigh-precision structure modeling constrained by systematic self-associationmeasurements. In reading this section one is struck by the fact that the computational power required is many orders of magnitude greater than what was used by Axel Brunger to analyze glycophorin A two decades ago [13, 14], and yet the derived structures are not as close in RMSD to those predicted by his group prior to the structure determination of glycophorin. His method also works on asymmetric sequences. Also, the authors do not discuss methods that use mutagenesis results in a prospective way to predict structures, which, again, appear to perform better than the current method [15-17].\n\n\"Since dsT\u03b2L is the first experimental scale to report large insertion asymmetries for positively charged residues we examined whether the profiles could be used to predict membrane-protein topology directly from sequence using a benchmark comprising 607 bacterial membrane proteins of experimentally determined topology (Daley et al. 2005). The dsT\u03b2L-based predictor (see Methods) correctly assigns topology in ~70% of the cases, within the performance range of statistics-based predictors (70-80%) (Tsirigos et al. 2015). Prediction accuracy increases to 81% where the computed energy gap between inserting the protein in one orientation or the other is larger than 3kcal/mol (Figure 3b). It is encouraging that the dsT\u03b2L predictor, which is based on an experimental scale measured on a single-pass membrane protein, performs on par with methods that were fitted using experimental topology data. We are currently testing the ability of dsT\u03b2L to predict other structural properties of membrane proteins directly from sequence.\"\n\nThese prediction values are poorer than what is seen using analogous structural bioinformatics scales (e.g., 5), and similar to what is seen when using hydrophobicity alone. If the differences between Lys and Arg are indeed generally applicable one would expect an improvement. In any event, this one subsection appears to be the topic of a future paper (stated by the authors in the Methods section). I am sure there will be sufficient space to properly compare their novel prediction method to existing methods in this future paper. As is, I think this small subsection detracts from what is otherwise an interesting paper.\n\nIn conclusion, this is a very interesting paper describing the first (?) application of deep-sequencing methods to the problem of helix-helix interactions in the membrane. Given the novelty and importance of the work, I have endeavored to provide some perspective and suggestions in this review. I would urge the editors to publish the paper. Even if published as is, I don't think it would be a fine addition to the literature, and the issues I address would ultimately be worked out in future papers.\n\nFinally, the authors should comment on the large difference in the length of the inserted sequences used as TM helices for glycophorin A versus ErbB2.\n\nGlycophorin: LIIFGVMAGVIGTILI (16 residues)\n\nErbB2: LTSIISAVVGILLVVVLGVVFGILI (25-residues)\n\nReferences:\n\n[1] Srinivasan, S., Deng, W., and Li, R. (2011) L-selectin transmembrane and cytoplasmic domains are monomeric in membranes, Biochim Biophys Acta 1808, 1709-1715.\n\n[2] Senes, A., Chadi, D. C., Law, P. B., Walters, R. F., Nanda, V., and Degrado, W. F. (2007) E(z), a depth-dependent potential for assessing the energies of insertion of amino acid side-chains into membranes: derivation and applications to determining the orientation of transmembrane and interfacial helices, J Mol Biol 366, 436-448.\n\n[3] Ulmschneider, M. B., Sansom, M. S., and Di Nola, A. (2005) Properties of integral membrane protein structures: derivation of an implicit membrane potential, Proteins 59, 252-265.\n\n[4] Ulmschneider, M. B., Sansom, M. S., and Di Nola, A. (2006) Evaluating tilt angles of membrane-associated helices: comparison of computational and NMR techniques, Biophys J 90, 1650-1660.\n\n[5] Schramm, C. A., Hannigan, B. T., Donald, J. E., Keasar, C., Saven, J. G., Degrado, W. F., and Samish, I. (2012) Knowledge-based potential for positioning membrane-associated structures and assessing residue-specific energetic contributions, Structure 20, 924-935.\n\n[6] Lemmon, M. A., Flanagan, J. M., Treutlein, H. R., Zhang, J., and Engelman, D. M. (1992) Sequence Specificity in the Dimerization of Transmembrane \u03b1 Helices, Biochemistry 31, 12719-12725.\n\n[7] Treutlein, H. R., Lemmon, M. A., Engelman, D. M., and Brunger, A. t. (1992) The glycophorin A transmembrane domain dimer: sequence-specific propensity for a right-handed supercoil of helices, Biochemistry 31, 12726-12733.\n\n[8] Lemmon, M. A., and Engelman, D. M. (1994) Specificity and promiscuity in membrane helix interactions, Quarterly reviews of biophysics 27, 157-218.\n\n[9] Lemmon, M. A., Treutlein, H. R., Adams, P. D., Brunger, A. T., and Engelman, D. M. (1994) A dimerization motif for transmembrane \u03b1 helices, Nature, Structural biology 1, 157-163.\n\n[10] Mingarro, I., Whitley, P., Lemmon, M. A., and von Heijne, G. (1996) Ala-insertion scanning mutagenesis of the glycophorin A transmembrane helix: a rapid way to map helix-helix interactions in integral membrane proteins, Protein Sci 5, 1339-1341.\n\n[11] MacKenzie, K. R., and Fleming, K. G. (2008) Association energetics of membrane spanning \u03b1-helices, Curr Opin Struct Biol 18, 412-419.\n\n[12] Mendrola, J. M., Berger, M. B., King, M. C., and Lemmon, M. A. (2002) The single transmembrane domains of ErbB receptors self-associate in cell membranes, J Biol Chem 277, 4704-4712.\n\n[13] Adams, P. D., Arkin, I. T., Engelman, D. M., and Brunger, A. T. (1995) Computational searching and mutagenesis suggest a structure for the pentameric transmembrane domain of phospholamban, Nature Structural Biology 2, 154-162.\n\n[14] Adams, P. D., Engelman, D. M., and Br\u00fcnger, A. T. (1996) Improved prediction for the structure of the dimeric transmembrane domain of glycophorin obtained through global searching, Proteins 26, 257-261.\n\n[15] Berger, B. W., Kulp, D. W., Span, L. M., DeGrado, J. L., Billings, P. C., Senes, A., Bennett, J. S., and DeGrado, W. F. (2010) Consensus motif for integrin transmembrane helix association, Proc Natl Acad Sci U S A 107, 703-708.\n\n[16] Metcalf, D. G., Law, P. B., and DeGrado, W. F. (2007) Mutagenesis data in the automated prediction of transmembrane helix dimers, Proteins 67, 375-384.\n\n[17] Soto, C. S., Hannigan, B. T., and DeGrado, W. F. (2011) A photon-free approach to transmembrane protein structure determination, J Mol Biol 414, 596-610.\n",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a0cf9801-c399-4d0e-ad98-b493f460f7d0",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C1",
+      "claim": "The T\u03b2L genetic construct fuses a membrane segment to two antibiotic selection markers: \u03b2-lactamase and ToxR, which report on insertion and self-association, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The T\u03b2L genetic construct fuses a membrane segment to two antibiotic selection markers: \u03b2-lactamase and ToxR, which report on insertion and self-association, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and illustrated in Figure 1a showing the construct design.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "be0a5fd0-9482-4ac3-945f-08b11f7ad5f4",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C2",
+      "claim": "Bacterial survival on ampicillin monitors membrane integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In this construct, bacterial survival on ampicillin monitors membrane integration (Broome-Smith et al., 1990; Jaurin et al., 1982)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "050b1635-5681-49a5-8c58-4b96ff5d412e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C3",
+      "claim": "Survival on chloramphenicol correlates with self-association of the membrane span.",
+      "claim_type": "EXPLICIT",
+      "source": "survival on chloramphenicol correlates with self-association of the membrane span (Lis and Blumenthal, 2006; Russ and Engelman, 1999; Langosch et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "f4afeac7-f530-4fea-93ac-394f10daacd9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C4",
+      "claim": "\u03b2-lactamase and ToxR function only in the periplasm and cytoplasm, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, \u03b2-lactamase and ToxR function only in the periplasm and cytoplasm, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the functional compartmentalization of these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "ca70ddf6-f0fd-48f3-84cd-fedd020ba65a",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C5",
+      "claim": "Only proteins inserted with their carboxy terminus located in the periplasm would be selected in the T\u03b2L assay.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore, unlike previous assays of membrane-protein insertion (Hessa et al., 2007), the orientation of the inserted segment relative to the membrane is known, and only proteins inserted with their carboxy terminus located in the periplasm would be selected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional requirements of \u03b2-lactamase and ToxR in specific cellular compartments.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "22b5e844-c108-4ce4-9284-5766442da871",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C6",
+      "claim": "Survival on ampicillin depends linearly on \u03b2-lactamase expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike this conventional TOXCAT experiment, in T\u03b2L survival on ampicillin depends linearly on \u03b2\u2212lactamase expression levels (Broome-Smith et al., 1990; Jaurin et al., 1982; Li et al., 2004; Lis and Blumenthal, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "4bcb0376-bdcd-4192-860b-04720b96f1e6",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C7",
+      "claim": "T\u03b2L provides a more sensitive reporter for membrane insertion than MBP.",
+      "claim_type": "EXPLICIT",
+      "source": "thus providing a more sensitive reporter for membrane insertion than MBP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the linear dependence of ampicillin survival on \u03b2-lactamase expression levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b48331e0-0e48-4044-9726-6fcdb32e44b9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C8",
+      "claim": "The C-terminal portion of human L-Selectin (CLS) does not self-associate.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the effects of self-association on experimental readout, we chose the C-terminal portion of human L-Selectin (CLS), which does not self-associate (Srinivasan et al., 2011) (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation and experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "f8033014-e8e9-4bdc-99da-946f5f5dbe2e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C9",
+      "claim": "Nine of the 10 selected single-point substitutions (all but Val302Lys) showed qualitatively similar trends of viability in deep sequencing and single-clone analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine of the 10 selected single-point substitutions (all but Val302Lys) showed qualitatively similar trends of viability in deep sequencing and single-clone analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of experimental data from two different methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "dd717f65-9aa9-4a73-8cab-309eb7913468",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C10",
+      "claim": "The resolution of the deep-sequencing data is much greater than that seen in the single-clone assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of the deep-sequencing data, however, is much greater than that seen in the single-clone assays",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing specific \u0394\u0394G values from the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "91b3caa6-18fc-4ee2-9571-888b6d96f7f8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C11",
+      "claim": "All tested clones expressed in the membrane fraction and ran at the expected size of ~55 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "All clones expressed in the membrane fraction and ran at the expected size of ~55 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Western blot analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "febcbaea-d0d7-4a52-b9e9-2e3cd555c66c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C12",
+      "claim": "Six of the 10 tested mutations showed the expected trends in membrane localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 10 tested mutations, 6 showed the expected trends, including mutations that increased (Met303Leu, Val304Phe, and Ala311Leu) or decreased expression (Val302Lys, Leu310Ala, and Ala311Arg) in agreement with the deep-sequencing and single-clone viability data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Western blot data comparing membrane localization with deep-sequencing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "77737809-26c4-4fe8-9827-4fb5a9072724",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C13",
+      "claim": "Three mutants to charges at the amino terminus (Val311His, Met303Glu, and Val304Asp) increased expression levels according to Western blots but were disruptive according to dsT\u03b2L.",
+      "claim_type": "EXPLICIT",
+      "source": "However, three mutants to charges at the amino terminus (Val311His, Met303Glu, and Val304Asp) increased expression levels according to Western blots but were disruptive according to dsT\u03b2L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of Western blot and dsT\u03b2L data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6a29b2e6-62e9-4255-92d1-51a956e1a9b5",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C14",
+      "claim": "Ampicillin viability reports not only on membrane-expression levels but also on the appropriate membrane integration.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this difference to the fact that ampicillin viability reports not only on membrane-expression levels but also on the appropriate membrane integration, which is not captured by Western blots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between Western blot and dsT\u03b2L results for certain mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "1a5059e3-8bed-450a-9b80-5e71ce72c6eb",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C15",
+      "claim": "The small and polar amino acids, Ser, Thr, and Cys have shallow, nearly neutral insertion profiles, ranging from \u22120.1 to +0.8 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The small and polar amino acids, Ser, Thr, and Cys have shallow, nearly neutral profiles, ranging from \u22120.1 to +0.8 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "d40fe05c-9930-4283-ab2b-bc51c143aa3f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C17",
+      "claim": "The high disruptive profile of Gly and Pro emphasizes the strong unfavorable impact of exposing the polar protein backbone to the membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "emphasizing the strong unfavorable impact of exposing the polar protein backbone to the membrane environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed high energy penalty for Gly and Pro insertion.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "c41e804d-b5b5-4c03-95a1-b3c0073e786f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C18",
+      "claim": "The large polar (Asn, His, and Gln) and charged residues (Asp, Glu, Lys, and Arg) are all highly disruptive in the membrane mid-plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The large polar (Asn, His, and Gln) and charged residues (Asp, Glu, Lys, and Arg) are all highly disruptive in the membrane mid-plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e724a1a0-e8b0-415c-9ebe-f4cf1a1de459",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C19",
+      "claim": "The energetic penalties for Asp, Asn, His, Gln, Glu, and Lys at the membrane mid-plane cannot be determined precisely from the dsT\u03b2L assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the energetic penalties for Asp, Asn, His, Gln, Glu, and Lys cannot be determined precisely from the dsT\u03b2L assay, since the number of reads for substitutions to these residues at the membrane mid-plane in the selected population is nearly 0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the low read counts in the deep-sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "414b5f6b-0da8-4494-8b51-2cebf6757385",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C20",
+      "claim": "The hydrophobic residues, Val, Ile, Leu, Met, and Phe, show troughs at the membrane mid-plane.",
+      "claim_type": "EXPLICIT",
+      "source": "At the membrane mid-plane, the hydrophobic residues, Val, Ile, Leu, Met, and Phe, show the expected troughs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "392f213c-008b-496c-84c0-0d3af758f6e3",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C21",
+      "claim": "The trough for Val is shallower (approximately \u22120.5 kcal/mol) than for the large amino acids (<\u22121.5 kcal/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "which are shallower for the small amino acid Val (approximately \u22120.5 kcal/mol) than for the large amino acids (<\u22121.5 kcal/mol)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "5b1f86ab-28d2-4b91-a29a-18a64f086f91",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C22",
+      "claim": "dsT\u03b2L fits well to the Moon scale (r2 = 0.90, with a slope close to 1).",
+      "claim_type": "EXPLICIT",
+      "source": "dsT\u03b2L fits well to the Moon scale (Figure 2c, r2 = 0.90, with a slope close to 1), which similar to dsT\u03b2L measures substitution effects in a bacterial membrane \u2013 albeit the outer membrane (Moon and Fleming, 2011)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical comparison of dsT\u03b2L data with the Moon scale shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "078b3264-9c96-460a-ab44-ffb6b2832284",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C23",
+      "claim": "The correspondence between dsT\u03b2L and biophysical assays on purified proteins partly confirms the use of dsT\u03b2L for studying membrane-protein energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The correspondence between dsT\u03b2L, which is based on in vivo measurement of membrane integration in a bacterial population, with biophysical assays on purified proteins, partly confirms the use of dsT\u03b2L for studying membrane-protein energetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the agreement between dsT\u03b2L and the Moon scale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6198492d-474f-4cc7-b2cd-ef7b73f892a3",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C24",
+      "claim": "The dsT\u03b2L profile for Trp is similar to the profiles of the aliphatic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The dsT\u03b2L profile for Trp is similar to the profiles of the aliphatic residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "781996b2-e29c-4d13-8b18-5e40dc01cdd7",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C25",
+      "claim": "Tyr makes a nearly neutral contribution to insertion in the membrane core.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Tyr makes a nearly neutral contribution to insertion in the membrane core",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "4f79c46b-9ad3-4c6d-bc06-7c7f92bee4e8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C26",
+      "claim": "The dsT\u03b2L profiles for Tyr and Trp diverge from statistical inferences from membrane-protein structures and partitioning experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These profiles diverge from statistical inferences from membrane-protein structures and partitioning experiments, which show that Tyr and Trp preferentially line the membrane-water interface (Ulmschneider et al., 2005; Schramm et al., 2012; Senes et al., 2007; Nakashima and Nishikawa, 1992; Yau et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with multiple cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "524815af-c3f7-4173-9eb2-b7dfaceec191",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C27",
+      "claim": "In the dsT\u03b2L assay aromatic residues on the membrane-spanning segment lack neighboring aromatic residues with which to form stabilizing stacking interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "one possible explanation for these differences is that in the dsT\u03b2L assay aromatic residues on the membrane-spanning segment lack neighboring aromatic residues with which to form stabilizing stacking interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "cbc2bec2-cc30-48c3-8639-4983b95ae385",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C28",
+      "claim": "Experimental stability measurements have shown that stacking makes a significant contribution to the net stabilization provided by aromatic residues in membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, experimental stability measurements have shown that stacking makes a significant contribution to the net stabilization provided by aromatic residues in membrane proteins (Hong et al., 2007, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a133841d-78a8-47cb-829a-91779d45661f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C29",
+      "claim": "The apparent atomic-solvation parameter inferred from dsT\u03b2L is 37 \u00b1 6 cal/mol/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed dsT\u03b2L data for 39 substitutions from one aliphatic residue (Ala, Val, Ile, Leu, and Met) to another at the core of the membrane (\u22129 \u00c5<Z<13 \u00c5) and inferred an apparent atomic-solvation parameter of 37 \u00b1 6 cal/mol/\u00c52 (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of dsT\u03b2L data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "ece7a57e-ec0b-4d31-abd1-9f929e96c093",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C31",
+      "claim": "The atomic-solvation parameter values inferred from dsT\u03b2L are in fair agreement with values for protein cores and hydrocarbons in aqueous solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The values we infer for the atomic-solvation parameter are therefore in fair agreement with values for protein cores and hydrocarbons in aqueous solution (Vajda et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with cited values.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "d2501a27-a15d-467b-ba46-31515a5ac2dc",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C32",
+      "claim": "The atomic-solvation parameter from dsT\u03b2L is 3\u20134 times larger than the value inferred from the Lep system.",
+      "claim_type": "EXPLICIT",
+      "source": "and 3\u20134 times larger than the value inferred from the Lep system (Ojemalm et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with the cited Lep system value.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "73beead3-76a5-49bf-a858-0043d15aea1e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C33",
+      "claim": "The ranking of apparent insertion free energies of aliphatic amino acids in dsT\u03b2L and Lep is similar (r2 = 0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that while the ranking of apparent insertion free energies of aliphatic amino acids in dsT\u03b2L and Lep (Hessa et al., 2007) is similar (r2 = 0.79, Figure 2\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical comparison shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "9a65dd01-c56c-43cc-910c-2f2ef7de41f9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C34",
+      "claim": "The magnitude of the insertion free-energy changes is nearly four times greater according to dsT\u03b2L compared to Lep.",
+      "claim_type": "EXPLICIT",
+      "source": "the magnitude of the insertion free-energy changes is nearly four times greater according to dsT\u03b2L",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of dsT\u03b2L and Lep data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "35c8cba4-ea0b-472e-a7ed-c2e3952baeb7",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C35",
+      "claim": "The hydrophobicity of the plasma membrane core is similar to that of hydrocarbons and much higher than measured in the Lep system.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that our results support the view that the hydrophobicity of the plasma membrane core is similar to that of hydrocarbons and much higher than measured in the Lep system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the atomic-solvation parameter analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "eac7b6f9-cc54-4c99-a311-d317fb8bce5c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C36",
+      "claim": "The dsT\u03b2L profiles show clear and large asymmetries for Arg, Lys, and His, in agreement with the 'positive-inside' rule.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking feature of the dsT\u03b2L profiles, by contrast, is that they show clear and large asymmetries for Arg, Lys, and His, in agreement with the 'positive-inside' rule (Figure 2b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "5cb12d0d-9448-4e46-ad3a-041688cea0d9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C37",
+      "claim": "Lys and Arg are favored by 2 kcal/mol near the cytoplasm compared to near the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Lys and Arg are favored by 2 kcal/mol near the cytoplasm compared to near the periplasm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "9907e0f6-344a-48fc-8668-1d76795172df",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C38",
+      "claim": "His shows a more modest asymmetry of 1 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "the titratable amino acid His shows a more modest asymmetry of 1 kcal/mol",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "761de31f-12a4-454a-b6a7-41de5c370be4",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C39",
+      "claim": "Only Arg stabilizes the segment near the cytosol, whereas Lys and His are nearly neutral at the cytosol-membrane interface.",
+      "claim_type": "EXPLICIT",
+      "source": "moreover, of these three amino acids, only Arg stabilizes the segment near the cytosol, whereas Lys and His are nearly neutral at the cytosol-membrane interface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the insertion profiles shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "db69ea4e-945f-445e-941d-467a3351af16",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C40",
+      "claim": "The difference between Arg and Lys may be due to charge delocalization in the Arg sidechain and Arg's ability to form more hydrogen bonds with lipid phosphate headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference between Arg and Lys, which has not been noted until now, may be due to charge delocalization in the Arg sidechain and Arg's ability to form more hydrogen bonds with lipid phosphate headgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "be1ccb9c-2b72-457d-a7f5-30cd7e050902",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C41",
+      "claim": "Previous studies measured only a small energy difference (-0.5 kcal/mol) between inserting Arg and Lys in the cytoplasmic relative to the extracellular-facing side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "but experimental quantification of the energetics of this asymmetry met with difficulty; previous studies measured only a small energy difference (-0.5 kcal/mol) between inserting Arg and Lys in the cytoplasmic relative to the extracellular-facing side of the membrane and no asymmetry for His (Lerch-Bader et al., 2008; \u00d6jemalm et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "2d4a5fde-f4c5-49e9-b0cf-89fd78c1b107",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C42",
+      "claim": "The insertion profiles could be used for bioinformatics prediction of the locations and orientations of membrane-spanning proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the results suggest that the insertion profiles could be used for bioinformatics prediction of the locations and orientations of membrane-spanning proteins, [manuscript in preparation (Elazar et al.)]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on the observed propensities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b1ac6abc-af29-4288-8e24-0213913aeeb1",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C43",
+      "claim": "The dsT\u03b2L profiles are similar to the knowledge-based ones for the weakly polar and hydrophobic residues (Val, Ser, and Thr).",
+      "claim_type": "EXPLICIT",
+      "source": "The dsT\u03b2L profiles are similar to the knowledge-based ones for the weakly polar and hydrophobic residues (Val, Ser, and Thr)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with knowledge-based profiles shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "72b6535c-9f18-4a23-8791-b4bd9ce8bb07",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C44",
+      "claim": "The dsT\u03b2L profiles diverge from knowledge-based profiles with respect to the more hydrophobic and polar residues.",
+      "claim_type": "EXPLICIT",
+      "source": "but they diverge with respect to the more hydrophobic and polar residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with knowledge-based profiles shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "f062e50b-6acd-484a-af1f-ca431bc301a4",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C45",
+      "claim": "The dsT\u03b2L apparent insertion energy for Leu, Ile, and Phe at the membrane mid-plane is \u22122 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, the dsT\u03b2L apparent insertion energy for Leu, Ile, and Phe at the membrane mid-plane is \u22122 kcal/mol and around \u22120.5kcal/mol for the other scales",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the dsT\u03b2L data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6ecf4f25-45e0-4803-8e55-1e69da6f0958",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C46",
+      "claim": "The only knowledge-based scale that attempted to derive an asymmetric insertion potential reported much smaller asymmetries for Lys and Arg, of around 0.5 kcal/mol, compared to 2kcal/mol in dsT\u03b2L.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the only knowledge-based scale that attempted to derive an asymmetric insertion potential (Schramm et al., 2012) reported much smaller asymmetries for Lys and Arg, of around 0.5 kcal/mol, compared to 2kcal/mol in dsT\u03b2L",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with the cited knowledge-based scale.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "f011ec0c-52e9-4d65-b01f-e6d3ac58c52e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C47",
+      "claim": "Knowledge-based potentials reflect the frequencies of amino acids in membrane proteins and are biased by functional constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences are likely due to the fact that knowledge-based potentials reflect the frequencies of amino acids in membrane proteins and are biased by functional constraints",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of knowledge-based potentials.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e6ba9b9e-51c9-4ab9-8860-6c43709b37e8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C48",
+      "claim": "Polar residues are often found in the membrane core, where they have important roles in oligomerization, substrate binding, transport, and conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed polar residues are often found in the membrane core, where they have important roles in oligomerization, substrate binding, transport, and conformational change",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about membrane protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a0bd2a2c-f1f8-477b-b4af-5e51c853ba87",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C49",
+      "claim": "Some of the amino acid positions that mediate self-association in GpA and ErbB2 according to their experimentally determined structures show large decreases in chloramphenicol viability upon mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the amino acid positions that mediate self-association in GpA and ErbB2 according to their experimentally determined structures (Bocharov et al., 2008; MacKenzie et al., 1997) show large decreases in chloramphenicol viability upon mutation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of dsT\u03b2L data with known structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "93fe11e5-e0d1-4f37-a74f-4aa9ab1961b0",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C50",
+      "claim": "Many mutations that have large effects on chloramphenicol viability are not close to the dimerization surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, however, many other mutations that have large effects on chloramphenicol viability are not close to the dimerization surfaces (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the mutational landscapes shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a6bb3379-a7bd-4d80-98cb-cd7d4e9cd5b2",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C51",
+      "claim": "Factors other than self-association dominate the chloramphenicol-viability landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that factors other than self-association dominate the chloramphenicol-viability landscape",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that many mutations affecting chloramphenicol viability are not at dimerization interfaces.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "428dcd03-c584-4715-8933-2a3c259dc18b",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C52",
+      "claim": "The corrected self-association mutational landscapes correctly discriminate positions that mediate self-association from those that do not.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected self-association mutational landscapes now correctly discriminate positions that mediate self-association from those that do not (Figure 5a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the corrected mutational landscapes shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "2c87247e-f6e9-444e-afd9-439c5fab7d79",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C53",
+      "claim": "The corrected self-association mutational landscapes clearly highlight the interaction motifs in GpA and ErbB2.",
+      "claim_type": "EXPLICIT",
+      "source": "and clearly highlight the interaction motifs in GpA and ErbB2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the corrected mutational landscapes shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "53a1fbf2-fbc7-4bd6-9d11-01cad35ef10b",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C54",
+      "claim": "The results from dsT\u03b2L and the previous TOXCAT study on GpA are consistent (r2 = 0.66).",
+      "claim_type": "EXPLICIT",
+      "source": "The results from dsT\u03b2L and the previous study are consistent (r2 = 0.66; Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical comparison shown in Figure 5b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e7d37218-d477-4b0e-9ce1-a484cad988ff",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C55",
+      "claim": "The consistency between dsT\u03b2L and the previous study confirms the use of the dsT\u03b2L insertion scale to correct self-association mutational landscapes in single-pass homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming the use of the dsT\u03b2L insertion scale to correct self-association mutational landscapes in single-pass homodimers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the agreement between dsT\u03b2L and previous TOXCAT results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6a0e9f48-3ee3-420d-8a5b-d6fccba0940f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C56",
+      "claim": "GpA's Gly86 is sensitive to mutation but was previously not subjected to mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by systematically probing every position across the membrane, our results highlight additional positions that are sensitive to mutation, such as GpA's Gly86, which was previously not subjected to mutagenesis (Lemmon et al., 1992; Duong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the dsT\u03b2L data and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a944a7ca-4be5-4902-82a5-ef5b8d454217",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C57",
+      "claim": "Some mutations, for instance to Met in the GpA amino terminus, may promote self-association in the context of the T\u03b2L construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is notable that although the vast majority of mutations are either neutral or disruptive to self-association, some mutations, for instance to Met in the GpA amino terminus, may promote self-association in the context of the T\u03b2L construct (Figure 5a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the corrected mutational landscapes shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "12efc560-02ad-496c-94f3-ebfbc948f7d2",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C58",
+      "claim": "The results confirm the strong interplay between membrane-protein expression levels and association.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results further confirm the strong interplay between membrane-protein expression levels and association",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the need to correct for insertion effects in the self-association data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a315a8ad-bf7c-43f1-b95a-0fb3d633cc40",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C59",
+      "claim": "It is important to account for both insertion and association in biophysical experiments on membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and the importance of accounting for both in biophysical experiments on membrane proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the strong coupling observed between insertion and association.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "47d217c2-3bf6-497a-a4ed-7ca394e275f0",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C60",
+      "claim": "Fewer than five models passed the selection criteria for GpA and ErbB2 structure modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, fewer than five models passed the selection criteria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structure modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "18ebb0f8-b190-48bd-85b5-f6f14385dd5d",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C61",
+      "claim": "Some models that passed the selection criteria were within 2 \u00c5 of experimentally determined structures.",
+      "claim_type": "EXPLICIT",
+      "source": "and of those, some models were within 2 \u00c5 of experimentally determined structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of models with experimental structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a4e09d07-68a2-47e2-813c-7a7171a74ad8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C62",
+      "claim": "The systematic mutational landscapes generated by dsT\u03b2L can be used to provide constraints for structure modeling of receptor membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether the systematic mutational landscapes generated by dsT\u03b2L could be used to provide constraints for structure modeling of receptor membrane domains (Fleishman et al., 2002; Kim et al., 2003; Polyansky et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the structure modeling results shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "adde50da-a5c4-4e06-bb36-935411ebdadb",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C63",
+      "claim": "The apparent insertion energies in dsT\u03b2L are in line with biophysical stability measurements on outer-membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent insertion energies in dsT\u03b2L are in line with biophysical stability measurements on outer-membrane proteins (Moon and Fleming, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with cited measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "4b6797d8-6800-4d40-afec-1cc5f01ac71e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C64",
+      "claim": "The inferred atomic-solvation parameter is close to measurements in model systems and protein cores.",
+      "claim_type": "EXPLICIT",
+      "source": "and the inferred atomic-solvation parameter is close to measurements in model systems and protein cores (Andrew Karplus, 1997; Vajda et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with cited measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "767e13eb-c1e3-48cb-aca9-d8ee03c69827",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C65",
+      "claim": "The dsT\u03b2L measurements are three to four times larger than the corresponding ones using the Lep system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements, however, are three to four times larger than the corresponding ones using the Lep system (Ojemalm et al., 2011; 2013; Hessa et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with cited Lep system measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "722497d6-bc6d-4571-9adb-693deb8e0302",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C66",
+      "claim": "The observation that the dsT\u03b2L insertion measurements for aliphatic side chains have the same ranking but are fourfold larger in magnitude compared to those from Lep may indicate that the Lep system measures only a part of the energy contribution to insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the dsT\u03b2L insertion measurements for aliphatic side chains have the same ranking but are fourfold larger in magnitude compared to those from Lep (Figure 2\u2014figure supplement 4) may indicate that the Lep system measures only a part of the energy contribution to insertion",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the observed differences.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "135d7fb2-7e29-4302-8429-bee3bfbc46bb",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C67",
+      "claim": "The reason for the large differences between dsT\u03b2L and Lep may be that total membrane-protein expression levels were not quantified in the Lep system.",
+      "claim_type": "EXPLICIT",
+      "source": "While further investigation is needed, we speculate that the reason for the large differences between dsT\u03b2L and Lep is that total membrane-protein expression levels were not quantified in the Lep system (Hessa et al., 2007; Ojemalm et al., 2011; 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "0b85b313-b669-4c64-93d5-f6299fa1b1f9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C68",
+      "claim": "The penalties for most polar residues at the membrane mid-plane are likely to indicate lower bounds on their insertion energies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the penalties for most polar residues at the membrane mid-plane are likely to indicate lower bounds on their insertion energies, since the number of clones counted in the deep-sequencing data for these mutants is close to 0 (supplementary data)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low read counts in the deep-sequencing data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "916b7534-2054-4138-8123-2a31e843bb73",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C69",
+      "claim": "Statistical analyses and experiments demonstrated that the aromatics Tyr and Trp are preferred in the water-membrane interface rather than in the core.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, statistical analyses (Ulmschneider et al., 2005; Schramm et al., 2012; Senes et al., 2007) and experiments (Hessa et al., 2007) demonstrated that the aromatics Tyr and Trp are preferred in the water-membrane interface rather than in the core, although dsT\u03b2L shows the reverse (Figure 2b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cited statistical analyses and experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b0bfb8f2-a7c1-44f8-8abd-474e01b57305",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C70",
+      "claim": "The dsT\u03b2L results for aromatics reflect the fact that dsT\u03b2L is based on a monomeric construct where the aromatics are fully exposed to the membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that these results reflect the fact that dsT\u03b2L is based on a monomeric construct where the aromatics are fully exposed to the membrane environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "74d3bee5-8a4d-4682-9a8e-7df09f2904e3",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C71",
+      "claim": "The TOXCAT genetic screen has made essential contributions to our understanding of self-association in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The TOXCAT genetic screen has made essential contributions to our understanding of self-association in the membrane (Lindner and Langosch, 2006; Lis and Blumenthal, 2006; Russ and Engelman, 1999; Finger et al., 2009; Mendrola et al., 2002; Li et al., 2004; Srinivasan et al., 2011\ufeffReuven et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "d2cbe5e0-0225-4722-b72c-6ef0e1ace060",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C72",
+      "claim": "Some early reports demonstrated that chloramphenicol survival also depends on membrane-protein expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Some early reports demonstrated that chloramphenicol survival also depends on membrane-protein expression levels (Russ and Engelman, 1999; Duong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "739af3de-e51b-4dad-9c0b-cd68ffe0fce8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C73",
+      "claim": "Expression levels are a dominant factor in chloramphenicol survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results strongly support this view and show that expression levels are a dominant factor in chloramphenicol survival",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the need to correct for insertion effects in the self-association data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "2951da2e-d7a0-484d-afaa-efe98790ee60",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C74",
+      "claim": "A mutation's effects on monomer concentrations are counted twice in computing its effects on homodimer concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This dominance is perhaps not surprising in retrospect, given that a mutation's effects on monomer concentrations are counted twice in computing its effects on homodimer concentrations, and therefore on chloramphenicol viability (see equation (5) in Materials and methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the mathematical relationship between monomer and homodimer concentrations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "ed6b0e87-e8c7-4967-a26a-42e37c29291c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C75",
+      "claim": "A key contribution of unbiased and systematic assays, such as dsT\u03b2L, is that they clarify trends unambiguously.",
+      "claim_type": "EXPLICIT",
+      "source": "A key contribution of unbiased and systematic assays, such as dsT\u03b2L, is that they clarify such trends unambiguously",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the value of systematic approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "76e7e14f-4781-4690-9b36-d10505f54ac5",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C76",
+      "claim": "The dsT\u03b2L insertion profiles derived from the monomeric CLS provide a self-consistent way to factor out the contributions from insertion energetics in future assays on membrane-protein association or function in unrelated membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the dsT\u03b2L insertion profiles derived from the monomeric CLS provide a self-consistent way to factor out the contributions from insertion energetics in future assays on membrane-protein association or function in unrelated membrane proteins, thereby eschewing the need to measure the expression levels of individual mutants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the dsT\u03b2L insertion profiles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "69218ee9-dbd2-4f2c-8d44-2f801ce2cc2f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C77",
+      "claim": "Deep mutational scanning has made important inroads to analysis and optimization of diverse protein systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep mutational scanning has made important inroads to analysis and optimization of diverse protein systems (Whitehead et al., 2012; Fowler and Fields, 2014; Boucher et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a54780a5-cd86-4569-a755-3f0361f485be",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C78",
+      "claim": "The main strengths of deep mutational scanning are the ability to measure the effects of all point mutations without bias and that all mutants experience strictly equal experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The main strengths of deep mutational scanning are the ability to measure the effects of all point mutations without bias and that all mutants experience strictly equal experimental conditions, thereby limiting experimental noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the advantages of deep mutational scanning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "57f2d6ab-7588-4b95-8e38-ef52a729940c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C79",
+      "claim": "The structural simplicity of the model systems tested plays a role in the ability to accurately infer energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural simplicity of the model systems tested here, consisting of a single \u03b1 helix or of helix homodimers, plays a further role in the ability to accurately infer energetics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about factors contributing to the success of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "0da12c72-584a-4ed6-b559-64f11752cb66",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C80",
+      "claim": "The data on protein-membrane and protein-protein energetics obtained from dsT\u03b2L will be used to improve models of membrane-protein energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally the data on protein-membrane and protein-protein energetics obtained from dsT\u03b2L will be used to improve models of membrane-protein energetics and to design, screen, and engineer high-expression mutants of specific membrane proteins (Fleishman and Baker, 2012; Joh et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed future application of the dsT\u03b2L data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e7dc4d98-2b5e-4dd8-ae5e-53b1c3a72b40",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C81",
+      "claim": "Insertion of helix-forming segments into the membrane and their association determines the structure, function, and expression levels of all plasma membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of helix-forming segments into the membrane and their association determines the structure, function, and expression levels of all plasma membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "4754600e-f483-48f4-bc37-617f524b89d3",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C82",
+      "claim": "The hydrophobicity of biological membranes is significantly higher than appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "revealing that the hydrophobicity of biological membranes is significantly higher than appreciated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dsT\u03b2L insertion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "d229e34d-f065-4be1-8785-c2622a6d6a55",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C83",
+      "claim": "There are large and unanticipated differences among positively charged residues in their contributions to membrane-protein insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "We further quantitate the contributions to membrane-protein insertion from positively charged residues at the cytoplasm-membrane interface and reveal large and unanticipated differences among these residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the dsT\u03b2L insertion profiles for Arg, Lys, and His.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "2d16153e-5505-4095-b954-4b4f1886ea1b",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C84",
+      "claim": "Insertion and self-association are strongly coupled in receptor homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we derive comprehensive mutational landscapes in the membrane domains of Glycophorin A and the ErbB2 oncogene, and find that insertion and self-association are strongly coupled in receptor homodimers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the need to correct self-association data for insertion effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b25fcb79-4ca3-49bc-b242-685aae9d21c5",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C85",
+      "claim": "Membrane-protein folding can be conceptually divided into two thermodynamic stages: the insertion into the membrane of transmembrane segments as \u03b1 helices, and their association to form helix bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane-protein folding can be conceptually divided into two thermodynamic stages (Popot and Engelman, 1990; Cymer et al., 2015), each of which affects membrane-protein structure, function, and expression levels: the insertion into the membrane of transmembrane segments as \u03b1 helices, and their association to form helix bundles (Ben-Tal et al., 1996; Heinrich and Rapoport, 2003; Moll and Thompson, 1994; White and Wimley, 1999; Popot and Engelman, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "c2c4db36-e7ce-43bd-ae33-4ebb1d6b327a",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C86",
+      "claim": "Important but fewer successes were reported in design of membrane proteins compared to soluble proteins, largely owing to the complexity of the plasma membrane and the lack of systematic and accurate measurements of membrane-protein energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "While significant progress has been made in structure prediction, design, and engineering of soluble proteins (Fleishman and Baker, 2012), important but fewer successes were reported in design of membrane proteins (Joh et al., 2014; Li et al., 2004), largely owing to the complexity of the plasma membrane and the lack of systematic and accurate measurements of membrane-protein energetics (Cymer et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e789a4b1-dd71-4478-932b-0ed1f13255c7",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C87",
+      "claim": "von Heijne and co-workers quantitated the partitioning of engineered peptides fused to the bacterial transmembrane protein, leader peptidase (Lep), between membrane-inserted and translocated states.",
+      "claim_type": "EXPLICIT",
+      "source": "von Heijne and co-workers quantitated the partitioning of engineered peptides fused to the bacterial transmembrane protein, leader peptidase (Lep), between membrane-inserted and translocated states, and highlighted the importance of interactions between the translocon and the nascent polypeptide chain in determining partitioning (Hessa et al., 2007; \u00d6jemalm et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "c2828404-0971-4176-afca-c0f74a8ab493",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C88",
+      "claim": "The apparent atomic-solvation parameter according to the Lep measurements was only 10 cal/mol/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, the apparent atomic-solvation parameter, which quantifies the free-energy contribution from the partitioning of hydrophobic surfaces to the membrane core, was only 10 cal/mol/\u00c52 according to the Lep measurements (Ojemalm et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "799b98e2-1ef0-46c7-bdf0-29c5e4f53269",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C89",
+      "claim": "Previous analyses reported an atomic-solvation parameter of ~30 cal/mol/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to ~30 cal/mol/\u00c52 from previous analyses (Andrew Karplus, 1997; Vajda et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e38e9200-aa7f-436c-926c-eb7b86a0b92e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C90",
+      "claim": "The magnitude of the insertion free energies for individual amino acids were substantially lower according to the Lep system compared to other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the magnitude of the insertion free energies for individual amino acids were substantially lower according to the Lep system (Hessa et al., 2007; Ojemalm et al., 2011; \u00d6jemalm et al., 2013) compared to other studies (Moon and Fleming, 2011; Shental-Bechor et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "46ee5f38-20f8-45d8-a885-49371853ef90",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C91",
+      "claim": "These discrepancies led to suggestions that the Lep measurements were 'compressed' relative to others due to interactions between the engineered protein and other membrane constituents.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies led to suggestions that the Lep measurements were 'compressed' relative to others due to interactions between the engineered protein and other membrane constituents (Johansson and Lindahl, 2009; Shental-Bechor et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "2de8f273-772b-4cbd-866b-b787204c3ff8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C92",
+      "claim": "Association is driven by packing interactions and short sequence motifs comprising small-xxx-small residues, where small is any of the small polar residues (Ser, Gly, or Ala) and x is any residue.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant body of work has shown that association is driven by packing interactions and short sequence motifs comprising small-xxx-small residues, where small is any of the small polar residues (Ser, Gly, or Ala) and x is any residue (Russ and Engelman, 2000; Senes et al., 2004; Melnyk et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a38d9e17-8112-436a-aaf2-4bbd6da74369",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C93",
+      "claim": "Insertion and association both play roles in protein energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while it is recognized that insertion and association both play roles in protein energetics (Duong et al., 2007; Finger et al., 2006; Moll and Thompson, 1994; Ben-Tal et al., 1996; Heinrich and Rapoport, 2003; Popot and Engelman, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "a0a53a7e-1b4b-4230-8aa4-184a7223ba8e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C94",
+      "claim": "The interplay between insertion and association has not been subjected to systematic experimental analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "the interplay between these two aspects has not been subjected to systematic experimental analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e23fc746-d3ba-4c1d-86ba-3a31baab4f72",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C95",
+      "claim": "Out of 540 possible single-point substitutions in CLS, 472 (~87%) mutants were each counted more than 100 times in the reference population.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 540 possible single-point substitutions, 472 (~87%) mutants were each counted more than 100 times in the reference population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the deep-sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "83074677-de56-4e47-b721-b52f25e8b114",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C96",
+      "claim": "At position 307 in the membrane center, the number of reads in the selected population for Lys, Gln, and Glu is 0, whereas the number of reads for Leu is nearly 110,000, spanning five orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, at position 307 in the membrane center, the number of reads in the selected population for Lys, Gln, and Glu is 0, whereas the number of reads for Leu is nearly 110,000, spanning five orders of magnitude",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the deep-sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "59dbb1f9-6577-48fc-9ce2-5ba4aab1463d",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C97",
+      "claim": "The membrane mid-plane was estimated by aligning the hydrophobic residues' profiles and locating the profiles' troughs at CLS position Ala311.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the location of the membrane mid-plane (Z = 0) could not be determined unambiguously in this assay, we estimated it by aligning the hydrophobic residues' profiles (Leu, Ile, Met, and Phe), thereby locating the profiles' troughs and the presumed membrane mid-plane at CLS position Ala311",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the insertion profiles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "7c9c6306-a3ea-4c61-bb09-f12526fa5cac",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "claim_id": "C98",
+      "claim": "Two centrally located polar amino acid positions, CLS positions Ser307 and Gly308, were discarded from the analysis due to their inconsistency with the general trends of the insertion profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Two centrally located polar amino acid positions, CLS positions Ser307 and Gly308, were discarded from the analysis due to their inconsistency with the general trends of the insertion profiles, likely because mutations at these polar positions distort the helix backbone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the insertion profiles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "219184ac-0691-4d6c-864b-bb3b6828a78c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The T\u03b2L genetic construct enables dual monitoring of membrane insertion via ampicillin survival (\u03b2-lactamase activity) and self-association via chloramphenicol survival (ToxR activity), with known membrane orientation and improved sensitivity compared to previous MBP-based assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 collectively establish the T\u03b2L construct design and its functional properties. The construct design is clearly illustrated (C1), the functional basis is supported by established literature (C2-C4, C6), and the orientation specificity is logically inferred from compartmentalization (C5). The improved sensitivity claim (C7) follows from the linear dependence of ampicillin survival on \u03b2-lactamase levels (C6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "67007a37-d22b-4a2a-8978-a430ffffbea9",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L assay was validated using CLS (a non-self-associating membrane segment) through comparison of deep sequencing with single-clone viability assays and Western blots, showing that 9/10 mutations had qualitatively similar trends, though deep sequencing provided greater resolution and captured membrane integration effects not detected by Western blots alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 provide comprehensive validation of the dsT\u03b2L method. The choice of CLS is justified (C8), and validation through multiple orthogonal methods (single-clone assays C9-C10, Western blots C11-C13) demonstrates consistency. The discrepancy for three mutants (C13) is reasonably explained by the assay measuring both expression and proper integration (C14), which Western blots cannot distinguish.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "727dc452-c278-49e7-b2ee-59b0c52b05ca",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L insertion profiles reveal that small polar amino acids (Ser, Thr, Cys) have nearly neutral insertion energies, helix-distorting residues (Gly, Pro) and large polar/charged residues are highly disruptive at the membrane mid-plane, while hydrophobic residues show favorable insertion with size-dependent effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21 describe systematic insertion profiles across amino acid types based on deep sequencing data (Figure 2b). The patterns are internally consistent and align with chemical principles (hydrophobic effect, backbone exposure). The caveat about precise quantification for highly polar residues (C19) is appropriately noted due to low read counts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "37693809-430d-4153-851b-4d266c3e72f4",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L measurements correlate well with the Moon scale for outer membrane proteins (r\u00b2 = 0.90, slope \u2248 1), providing validation that the in vivo bacterial assay reflects membrane-protein energetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 establish external validation through strong statistical correlation with an independent biophysical measurement system. The high r\u00b2 value and slope near 1 indicate quantitative agreement, supporting the validity of dsT\u03b2L for measuring membrane energetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "53ce20ec-8402-45c0-8220-9a331e7ec24e",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L profiles for aromatic residues (Trp favored in membrane core, Tyr nearly neutral) diverge from statistical and experimental studies showing interface preference, possibly because the monomeric dsT\u03b2L construct lacks neighboring aromatics for stabilizing stacking interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24-C28 identify a discrepancy between dsT\u03b2L and prior work on aromatic residues. While the observation is data-supported (C24-C26), the explanation (C27) is speculative and the supporting evidence for stacking contributions (C28) comes from different systems. This discrepancy requires further investigation to resolve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6f80008b-f9cb-438c-926a-c153cc00a666",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The atomic-solvation parameter inferred from dsT\u03b2L is 37 \u00b1 6 cal/mol/\u0172, in agreement with values for protein cores and hydrocarbons (~30 cal/mol/\u0172) but 3-4 times larger than the Lep system value (10 cal/mol/\u0172), supporting the view that biological membrane cores have hydrocarbon-like hydrophobicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 present a key quantitative finding with clear statistical analysis (C29), appropriate comparisons to literature values (C31-C34), and a well-supported conclusion (C35). The analysis is based on 39 aliphatic substitutions and includes an independent calculation method (Figure 2d inset), strengthening confidence in the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L profiles reveal large asymmetries for positively charged residues consistent with the 'positive-inside' rule: Arg and Lys are favored by 2 kcal/mol near the cytoplasm vs. periplasm (His by 1 kcal/mol), with only Arg stabilizing the cytosol-membrane interface, representing a novel distinction between Arg and Lys not previously quantified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 describe a major finding on charge asymmetry with clear quantitative data (C36-C39). The distinction between Arg and Lys (C39) is novel and data-supported, though the mechanistic explanation (C40) is speculative. The contrast with previous studies showing much smaller asymmetries (C41) highlights the improved sensitivity of dsT\u03b2L.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "28f6436b-1546-479d-8519-802244db5893",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L profiles agree with knowledge-based potentials for weakly polar/hydrophobic residues but diverge for more hydrophobic and polar residues, likely because knowledge-based potentials reflect amino acid frequencies biased by functional constraints rather than pure insertion energetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 systematically compare dsT\u03b2L with knowledge-based scales, identifying both agreements and discrepancies. The explanation (C47-C48) that knowledge-based potentials reflect functional constraints in native proteins is reasonable and well-articulated, distinguishing the experimental measurement of insertion energetics from structural statistics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Raw chloramphenicol viability data for GpA and ErbB2 showed that many mutations affecting viability were not at dimerization interfaces, but after correcting for insertion effects using the CLS-derived profiles, the corrected landscapes correctly discriminated self-association positions and highlighted interaction motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 demonstrate the strong coupling between insertion and self-association. The observation that raw data is confounded (C49-C51) followed by successful correction (C52-C53) provides compelling evidence for the importance of accounting for insertion energetics when studying self-association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "6d9a0a91-04aa-4d2e-8961-3789aba32c2d",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The corrected dsT\u03b2L self-association data for GpA correlates with previous TOXCAT measurements (r\u00b2 = 0.66), validates the correction approach, identifies previously unmutated sensitive positions (e.g., Gly86), and reveals some mutations that may promote self-association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 provide external validation of the self-association correction method through comparison with independent measurements (C54-C55). The moderate correlation (r\u00b2 = 0.66) is reasonable given methodological differences. The identification of new sensitive positions (C56) demonstrates the value of systematic mutagenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "c5cbea67-a768-4794-8ff4-764defc6291f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The results confirm strong coupling between membrane-protein expression levels and association, emphasizing the importance of accounting for both factors in biophysical experiments on membrane proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 present a key conceptual conclusion supported by the need to correct self-association data for insertion effects. This is a logical inference from the data showing that insertion effects dominate raw chloramphenicol survival measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "01c8235a-5935-48a0-884d-32b6c47cd8b3",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Structure modeling of GpA and ErbB2 using dsT\u03b2L mutational landscapes as constraints produced fewer than five models passing selection criteria, with some models within 2 \u00c5 of experimental structures, demonstrating that systematic mutational data can constrain structure prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 demonstrate a practical application of the dsT\u03b2L data for structure modeling. The stringent filtering (C60) and close agreement with experimental structures (C61) support the utility of the approach, though the small number of successful models suggests the method requires further refinement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L measurements align with biophysical measurements on outer-membrane proteins and model systems but are 3-4 times larger than Lep system measurements, possibly because the Lep system measures only part of the insertion energy or because expression levels were not quantified in Lep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C67 address a major discrepancy in the field. While the dsT\u03b2L measurements are internally consistent and agree with some literature (C63-C64), the large difference from Lep (C65) is concerning. The explanations offered (C66-C67) are speculative and require further investigation to definitively resolve this discrepancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "e64042d1-128d-45ea-a2c4-075378b8d44c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L assay has limitations: polar residue penalties at the membrane mid-plane are likely lower bounds due to near-zero read counts, and the aromatic residue results diverge from prior work, possibly reflecting the monomeric construct's lack of aromatic neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 appropriately acknowledge limitations of the method. The recognition that polar residue energies are lower bounds (C68) is important for interpretation. The aromatic discrepancy (C69-C70) is honestly reported with a plausible but speculative explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous TOXCAT studies showed chloramphenicol survival depends on expression levels; dsT\u03b2L strongly confirms expression is a dominant factor due to the quadratic relationship between monomer and homodimer concentrations, and the CLS insertion profiles provide a self-consistent way to correct for insertion effects in future studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 place the work in context of prior TOXCAT literature and articulate the key insight about the dominance of expression effects. The mathematical explanation (C74) is sound, and the proposed utility of the CLS profiles for future work (C76) is a reasonable inference from the successful correction of GpA/ErbB2 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "0cf96671-7e8b-40a0-a97c-94e4c3ac8138",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Deep mutational scanning enables unbiased measurement of all point mutations under equal conditions, and the structural simplicity of single helices/homodimers facilitates accurate energetic inference; the dsT\u03b2L data will be used to improve membrane-protein energetics models and protein engineering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 discuss the methodological advantages and future applications. The strengths of deep mutational scanning (C77-C78) are well-established in the literature. The role of structural simplicity (C79) is a reasonable inference. The proposed applications (C80) are logical extensions of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b907ead3-e1e1-4747-af2a-5d9a29e989ef",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The dsT\u03b2L deep sequencing achieved high coverage (87% of 540 possible mutations with >100 counts) and large dynamic range (spanning five orders of magnitude in read counts between favorable and unfavorable mutations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 document the technical quality of the deep sequencing data. The high coverage and large dynamic range support the reliability of the quantitative measurements and the ability to detect both favorable and highly unfavorable mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "383ea216-c654-4223-a8ba-3b9a53a9d1d8",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The membrane mid-plane location was estimated by aligning hydrophobic residue profiles, and two centrally located polar positions (Ser307, Gly308) were excluded from analysis due to inconsistency with general trends, likely due to helix backbone distortion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 describe methodological decisions in data analysis. The approach to locating the membrane mid-plane (C97) is reasonable given the constraints of the assay. The exclusion of two positions (C98) is appropriately justified and represents a minor limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "b507373d-56a7-465d-b27d-d79f19764dab",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The insertion profiles could be used for bioinformatics prediction of membrane protein locations and orientations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 is a speculative suggestion about future applications with reference to a manuscript in preparation. While plausible, this application has not been demonstrated in the current work and cannot be evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "4ad7958e-cd68-421d-9d90-8ac62a36ec4c",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study reveals that biological membrane hydrophobicity is significantly higher than previously appreciated, identifies large differences among positively charged residues in membrane insertion, and demonstrates strong coupling between insertion and self-association in receptor homodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 summarize the major findings of the paper as stated in the abstract. These high-level conclusions are well-supported by the detailed results presented in the manuscript, including the atomic-solvation parameter analysis (C82), charge asymmetry measurements (C83), and GpA/ErbB2 correction analysis (C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    },
+    {
+      "id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335",
+      "content_id": "a881f851-1cfa-4616-b895-158fbdf23a36",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The introduction establishes that membrane-protein folding involves insertion and association stages, that membrane protein design lags behind soluble protein design due to lack of systematic energetic measurements, and that previous Lep system measurements showed unexpectedly low hydrophobicity and have not systematically examined the interplay between insertion and association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C94 establish the background and motivation for the study through citations to prior work. These claims accurately represent the state of the field and identify genuine gaps in knowledge that the current work addresses. The characterization of prior work appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:36:09.959782Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0cf9801-c399-4d0e-ad98-b493f460f7d0",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "be0a5fd0-9482-4ac3-945f-08b11f7ad5f4",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "050b1635-5681-49a5-8c58-4b96ff5d412e",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "f4afeac7-f530-4fea-93ac-394f10daacd9",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "ca70ddf6-f0fd-48f3-84cd-fedd020ba65a",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "22b5e844-c108-4ce4-9284-5766442da871",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "4bcb0376-bdcd-4192-860b-04720b96f1e6",
+      "result_id": "219184ac-0691-4d6c-864b-bb3b6828a78c"
+    },
+    {
+      "claim_id": "b48331e0-0e48-4044-9726-6fcdb32e44b9",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "f8033014-e8e9-4bdc-99da-946f5f5dbe2e",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "dd717f65-9aa9-4a73-8cab-309eb7913468",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "91b3caa6-18fc-4ee2-9571-888b6d96f7f8",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "febcbaea-d0d7-4a52-b9e9-2e3cd555c66c",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "77737809-26c4-4fe8-9827-4fb5a9072724",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "6a29b2e6-62e9-4255-92d1-51a956e1a9b5",
+      "result_id": "67007a37-d22b-4a2a-8978-a430ffffbea9"
+    },
+    {
+      "claim_id": "1a5059e3-8bed-450a-9b80-5e71ce72c6eb",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "d40fe05c-9930-4283-ab2b-bc51c143aa3f",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "c41e804d-b5b5-4c03-95a1-b3c0073e786f",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "e724a1a0-e8b0-415c-9ebe-f4cf1a1de459",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "414b5f6b-0da8-4494-8b51-2cebf6757385",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "392f213c-008b-496c-84c0-0d3af758f6e3",
+      "result_id": "727dc452-c278-49e7-b2ee-59b0c52b05ca"
+    },
+    {
+      "claim_id": "5b1f86ab-28d2-4b91-a29a-18a64f086f91",
+      "result_id": "37693809-430d-4153-851b-4d266c3e72f4"
+    },
+    {
+      "claim_id": "078b3264-9c96-460a-ab44-ffb6b2832284",
+      "result_id": "37693809-430d-4153-851b-4d266c3e72f4"
+    },
+    {
+      "claim_id": "6198492d-474f-4cc7-b2cd-ef7b73f892a3",
+      "result_id": "53ce20ec-8402-45c0-8220-9a331e7ec24e"
+    },
+    {
+      "claim_id": "781996b2-e29c-4d13-8b18-5e40dc01cdd7",
+      "result_id": "53ce20ec-8402-45c0-8220-9a331e7ec24e"
+    },
+    {
+      "claim_id": "4f79c46b-9ad3-4c6d-bc06-7c7f92bee4e8",
+      "result_id": "53ce20ec-8402-45c0-8220-9a331e7ec24e"
+    },
+    {
+      "claim_id": "524815af-c3f7-4173-9eb2-b7dfaceec191",
+      "result_id": "53ce20ec-8402-45c0-8220-9a331e7ec24e"
+    },
+    {
+      "claim_id": "cbc2bec2-cc30-48c3-8639-4983b95ae385",
+      "result_id": "53ce20ec-8402-45c0-8220-9a331e7ec24e"
+    },
+    {
+      "claim_id": "a133841d-78a8-47cb-829a-91779d45661f",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "ece7a57e-ec0b-4d31-abd1-9f929e96c093",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "d2501a27-a15d-467b-ba46-31515a5ac2dc",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "73beead3-76a5-49bf-a858-0043d15aea1e",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "9a65dd01-c56c-43cc-910c-2f2ef7de41f9",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "35c8cba4-ea0b-472e-a7ed-c2e3952baeb7",
+      "result_id": "6f80008b-f9cb-438c-926a-c153cc00a666"
+    },
+    {
+      "claim_id": "eac7b6f9-cc54-4c99-a311-d317fb8bce5c",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "5cb12d0d-9448-4e46-ad3a-041688cea0d9",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "9907e0f6-344a-48fc-8668-1d76795172df",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "761de31f-12a4-454a-b6a7-41de5c370be4",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "db69ea4e-945f-445e-941d-467a3351af16",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "be1ccb9c-2b72-457d-a7f5-30cd7e050902",
+      "result_id": "8d3c99f1-365f-45df-8677-c8b00b5fa8aa"
+    },
+    {
+      "claim_id": "b1ac6abc-af29-4288-8e24-0213913aeeb1",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "72b6535c-9f18-4a23-8791-b4bd9ce8bb07",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "f062e50b-6acd-484a-af1f-ca431bc301a4",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "6ecf4f25-45e0-4803-8e55-1e69da6f0958",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "f011ec0c-52e9-4d65-b01f-e6d3ac58c52e",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "e6ba9b9e-51c9-4ab9-8860-6c43709b37e8",
+      "result_id": "28f6436b-1546-479d-8519-802244db5893"
+    },
+    {
+      "claim_id": "a0bd2a2c-f1f8-477b-b4af-5e51c853ba87",
+      "result_id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a"
+    },
+    {
+      "claim_id": "93fe11e5-e0d1-4f37-a74f-4aa9ab1961b0",
+      "result_id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a"
+    },
+    {
+      "claim_id": "a6bb3379-a7bd-4d80-98cb-cd7d4e9cd5b2",
+      "result_id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a"
+    },
+    {
+      "claim_id": "428dcd03-c584-4715-8933-2a3c259dc18b",
+      "result_id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a"
+    },
+    {
+      "claim_id": "2c87247e-f6e9-444e-afd9-439c5fab7d79",
+      "result_id": "e150c1d5-be61-48e9-bba2-2fd9b516df0a"
+    },
+    {
+      "claim_id": "53a1fbf2-fbc7-4bd6-9d11-01cad35ef10b",
+      "result_id": "6d9a0a91-04aa-4d2e-8961-3789aba32c2d"
+    },
+    {
+      "claim_id": "e7d37218-d477-4b0e-9ce1-a484cad988ff",
+      "result_id": "6d9a0a91-04aa-4d2e-8961-3789aba32c2d"
+    },
+    {
+      "claim_id": "6a0e9f48-3ee3-420d-8a5b-d6fccba0940f",
+      "result_id": "6d9a0a91-04aa-4d2e-8961-3789aba32c2d"
+    },
+    {
+      "claim_id": "a944a7ca-4be5-4902-82a5-ef5b8d454217",
+      "result_id": "6d9a0a91-04aa-4d2e-8961-3789aba32c2d"
+    },
+    {
+      "claim_id": "12efc560-02ad-496c-94f3-ebfbc948f7d2",
+      "result_id": "c5cbea67-a768-4794-8ff4-764defc6291f"
+    },
+    {
+      "claim_id": "a315a8ad-bf7c-43f1-b95a-0fb3d633cc40",
+      "result_id": "c5cbea67-a768-4794-8ff4-764defc6291f"
+    },
+    {
+      "claim_id": "47d217c2-3bf6-497a-a4ed-7ca394e275f0",
+      "result_id": "01c8235a-5935-48a0-884d-32b6c47cd8b3"
+    },
+    {
+      "claim_id": "18ebb0f8-b190-48bd-85b5-f6f14385dd5d",
+      "result_id": "01c8235a-5935-48a0-884d-32b6c47cd8b3"
+    },
+    {
+      "claim_id": "a4e09d07-68a2-47e2-813c-7a7171a74ad8",
+      "result_id": "01c8235a-5935-48a0-884d-32b6c47cd8b3"
+    },
+    {
+      "claim_id": "adde50da-a5c4-4e06-bb36-935411ebdadb",
+      "result_id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5"
+    },
+    {
+      "claim_id": "4b6797d8-6800-4d40-afec-1cc5f01ac71e",
+      "result_id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5"
+    },
+    {
+      "claim_id": "767e13eb-c1e3-48cb-aca9-d8ee03c69827",
+      "result_id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5"
+    },
+    {
+      "claim_id": "722497d6-bc6d-4571-9adb-693deb8e0302",
+      "result_id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5"
+    },
+    {
+      "claim_id": "135d7fb2-7e29-4302-8429-bee3bfbc46bb",
+      "result_id": "13522be6-c0d6-4b09-b86b-cf528f0cddc5"
+    },
+    {
+      "claim_id": "0b85b313-b669-4c64-93d5-f6299fa1b1f9",
+      "result_id": "e64042d1-128d-45ea-a2c4-075378b8d44c"
+    },
+    {
+      "claim_id": "916b7534-2054-4138-8123-2a31e843bb73",
+      "result_id": "e64042d1-128d-45ea-a2c4-075378b8d44c"
+    },
+    {
+      "claim_id": "b0bfb8f2-a7c1-44f8-8abd-474e01b57305",
+      "result_id": "e64042d1-128d-45ea-a2c4-075378b8d44c"
+    },
+    {
+      "claim_id": "74d3bee5-8a4d-4682-9a8e-7df09f2904e3",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "d2cbe5e0-0225-4722-b72c-6ef0e1ace060",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "739af3de-e51b-4dad-9c0b-cd68ffe0fce8",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "2951da2e-d7a0-484d-afaa-efe98790ee60",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "ed6b0e87-e8c7-4967-a26a-42e37c29291c",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "76e7e14f-4781-4690-9b36-d10505f54ac5",
+      "result_id": "3e0f4c0e-57de-4f98-a136-f0fced3c0b0f"
+    },
+    {
+      "claim_id": "69218ee9-dbd2-4f2c-8d44-2f801ce2cc2f",
+      "result_id": "0cf96671-7e8b-40a0-a97c-94e4c3ac8138"
+    },
+    {
+      "claim_id": "a54780a5-cd86-4569-a755-3f0361f485be",
+      "result_id": "0cf96671-7e8b-40a0-a97c-94e4c3ac8138"
+    },
+    {
+      "claim_id": "57f2d6ab-7588-4b95-8e38-ef52a729940c",
+      "result_id": "0cf96671-7e8b-40a0-a97c-94e4c3ac8138"
+    },
+    {
+      "claim_id": "0da12c72-584a-4ed6-b559-64f11752cb66",
+      "result_id": "0cf96671-7e8b-40a0-a97c-94e4c3ac8138"
+    },
+    {
+      "claim_id": "e23fc746-d3ba-4c1d-86ba-3a31baab4f72",
+      "result_id": "b907ead3-e1e1-4747-af2a-5d9a29e989ef"
+    },
+    {
+      "claim_id": "83074677-de56-4e47-b721-b52f25e8b114",
+      "result_id": "b907ead3-e1e1-4747-af2a-5d9a29e989ef"
+    },
+    {
+      "claim_id": "59dbb1f9-6577-48fc-9ce2-5ba4aab1463d",
+      "result_id": "383ea216-c654-4223-a8ba-3b9a53a9d1d8"
+    },
+    {
+      "claim_id": "7c9c6306-a3ea-4c61-bb09-f12526fa5cac",
+      "result_id": "383ea216-c654-4223-a8ba-3b9a53a9d1d8"
+    },
+    {
+      "claim_id": "2d4a5fde-f4c5-49e9-b0cf-89fd78c1b107",
+      "result_id": "b507373d-56a7-465d-b27d-d79f19764dab"
+    },
+    {
+      "claim_id": "e7dc4d98-2b5e-4dd8-ae5e-53b1c3a72b40",
+      "result_id": "4ad7958e-cd68-421d-9d90-8ac62a36ec4c"
+    },
+    {
+      "claim_id": "4754600e-f483-48f4-bc37-617f524b89d3",
+      "result_id": "4ad7958e-cd68-421d-9d90-8ac62a36ec4c"
+    },
+    {
+      "claim_id": "d229e34d-f065-4be1-8785-c2622a6d6a55",
+      "result_id": "4ad7958e-cd68-421d-9d90-8ac62a36ec4c"
+    },
+    {
+      "claim_id": "2d16153e-5505-4095-b954-4b4f1886ea1b",
+      "result_id": "4ad7958e-cd68-421d-9d90-8ac62a36ec4c"
+    },
+    {
+      "claim_id": "b25fcb79-4ca3-49bc-b242-685aae9d21c5",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "c2c4db36-e7ce-43bd-ae33-4ebb1d6b327a",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "e789a4b1-dd71-4478-932b-0ed1f13255c7",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "c2828404-0971-4176-afca-c0f74a8ab493",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "799b98e2-1ef0-46c7-bdf0-29c5e4f53269",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "e38e9200-aa7f-436c-926c-eb7b86a0b92e",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "46ee5f38-20f8-45d8-a885-49371853ef90",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "2de8f273-772b-4cbd-866b-b787204c3ff8",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "a38d9e17-8112-436a-aaf2-4bbd6da74369",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    },
+    {
+      "claim_id": "a0a53a7e-1b4b-4230-8aa4-184a7223ba8e",
+      "result_id": "f2ca885f-a4a5-4d61-8e1f-6a18602ec335"
+    }
+  ],
+  "comparisons": []
+}

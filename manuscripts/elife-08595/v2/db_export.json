@@ -1,0 +1,921 @@
+{
+  "submission": {
+    "id": "90f1c06d-30a4-405e-bbd2-03b801bb6eb6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:49:25.308332Z",
+    "updated_at": "2025-11-29T21:49:25.308332Z"
+  },
+  "content": [
+    {
+      "id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "submission_id": "90f1c06d-30a4-405e-bbd2-03b801bb6eb6",
+      "content_type": "manuscript",
+      "content_text": "# The evolution of adhesiveness as a social adaptation\n\n## Authors\n\n- Thomas Garcia<sup>1</sup> \u2020\n- Guilhem Doulcier<sup>2</sup> ([ORCID: 0000-0003-3720-9089](https://orcid.org/0000-0003-3720-9089))\n- Silvia De Monte<sup>2</sup>\n\n### Affiliations\n\n1. Institut d'\u00e9cologie et des sciences de l'environnement Universit\u00e9 Pierre et Marie Curie Paris France\n2. Institut de Biologie de l\u2019\u00c9cole Normale Sup\u00e9rieure \u00c9cole Normale Sup\u00e9rieure, PSL Research University Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nCellular adhesion is a key ingredient to sustain collective functions of microbial aggregates. Here, we investigate the evolutionary origins of adhesion and the emergence of groups of genealogically unrelated cells with a game-theoretical model. The considered adhesiveness trait is costly, continuous and affects both group formation and group-derived benefits. The formalism of adaptive dynamics reveals two evolutionary stable strategies, at each extreme on the axis of adhesiveness. We show that cohesive groups can evolve by small mutational steps, provided the population is already endowed with a minimum adhesiveness level. Assortment between more adhesive types, and in particular differential propensities to leave a fraction of individuals ungrouped at the end of the aggregation process, can compensate for the cost of increased adhesiveness. We also discuss the change in the social nature of more adhesive mutations along evolutionary trajectories, and find that altruism arises before directly beneficial behavior, despite being the most challenging form of cooperation.\n\n## 1\u00a0Introduction\n\nSome of the most peculiar behaviors observed in biological populations arise from conflicts between individual interests and collective function. The existence of different levels of organization generates situations where a behavior that is beneficial for others is associated with individual costs, in terms of reproductive success. The ubiquity of genetically encoded traits that underpin cooperative behavior has thus long been considered an evolutionary paradox, as such traits should be purged by natural selection acting at the individual level. Such paradoxical situations appear in what are known as 'major evolutionary transitions' (Maynard-Smith and Szathm\u00e1ry, 1995), an instance of which is the transition from autonomously replicating unicellular to multicellular organisms (Michod and Roze, 2001; Wolpert and Szathm\u00e1ry, 2002; Sachs, 2008; Rainey and Kerr, 2010; Ratcliff et al., 2012; Hammerschmidt et al., 2014). Evolutionary transitions all face the possibility that a part of the population free rides and exploits the collective benefit produced by the action of others. For instance, cancerous cells that divide faster disrupt the survival of their host (Frank, 2007).\n\nMathematical models, mostly based on population genetics or game theory, have pointed out several solutions to this evolutionary conundrum. In most game-theoretical and trait-group models, collective-level processes derive from individual-level behavior, and cooperation can be sustained by mechanisms that affect either population structure or individual decisions. The former mechanisms produce assortment between cooperators, arising for instance during group formation (Avil\u00e9s, 2002; Fletcher and Zwick, 2004; Santos et al., 2006; Guttal and Couzin, 2010; Powers et al., 2011) or due to limited dispersal (Nowak and May, 1992; Pfeiffer and Bonhoeffer, 2003). The emergent topology of interaction makes cooperation profitable on average despite cooperators being outcompeted within every group, as exemplified by the so-called Simpson\u2019s paradox (Chuang et al., 2009). The latter mechanisms are instead effective in random population structures and alter individual strategy enough to offset cooperation\u2019s cost. These mechanisms typically rely on players modifying their behavior conditionally to interactants\u2019 types. For instance, reciprocity (Trivers, 1971; Nowak and Sigmund, 1998), peer recognition (Antal et al., 2009) and 'green beard' mechanisms (Brown and Buckling, 2008) or policing (Boyd et al., 2003) are all means by which individuals preferentially direct cooperation toward other cooperators, or retaliate against defectors. Such mechanisms require players to collect and interpret information about others, and are therefore better suited to model elaborate forms of cooperation, rather than the origin of cooperative groups themselves. Ultimately, all explanations for the evolutionary success of cooperative strategies rely on the fact that individual fitness depends on the social context, whether it is shaped by the population structure or the nature of the cooperative act.\n\nThe interest in knowing which mechanisms are effective in the evolution of pristine modes of collective organization has recently spawned numerous theoretical efforts to model microbial assemblages (Nadell et al., 2013; Levin, 2014). Although capable of thriving in isolation, most unicellular species participate\u2014in parts of their life cycle, at least\u2014to multicellular aggregates that offer instances of \u2018intermediate\u2019 integration of cells into higher levels of organismality (Smukalla et al., 2008; Nadell et al., 2009; Queller and Strassmann, 2009; Rainey and Kerr, 2010; Ratcliff et al., 2012; Celiker and Gore, 2013). Microbial societies can be highly regulated, such as in the multicellular fruiting bodies of slime moulds and myxobacteria, where cells within the collective commit to a developmental program analogous to that of permanent multicellular organisms, including the soma-like 'suicide\u2019 of a part of the population. At a lesser degree of sophistication, many other forms of collectives are known in microbial organisms, ranging from colonies to biofilms (Grosberg, 2007; Nadell et al., 2009; Niklas, 2014). A central feature of most microbial aggregates is their ability to persist long enough to affect the survival of their composing units. Such persistence is mediated by various forms of adhesion (Jiang et al., 1998; Gresham, 2013) ensuring local cohesion between cells of the same or different kind. For instance, cells that fail to completely separate at the moment of division are selected for in regimes favoring increased aggregate size (Ratcliff, 2013), a feature reinforced by genetic homogeneity within groups (Nadell et al., 2010). Although apparently an achievable initial step to foster multicellularity (Kirk, 2005), incomplete division is however unlikely to be the only mechanism at play in the emergence of multicellular organization in the tree of life, as some biological populations form aggregates from dispersed cells and can be composed of multiple genetically distinct strains (Nanjundiah and Sathe, 2011). Such cases turn out to be particularly challenging for the different theoretical solutions to the evolution of collective function (Tarnita et al., 2013).\n\nHere, we focus on populations where groups disperse after individual reproduction and emerge anew from a well-mixed pool at the next generation. By affecting group formation as well as the performance of a group, differential attachment is an established means to create positive assortment, which enables the concomitant evolution of adhesive traits and sizeable groups in idealized, well-mixed populations (Simon et al., 2013; Garcia and De Monte, 2013) as well as more realistic, spatially explicit settings (Garcia et al., 2014). These models address the binary competition between more adhesive \u2018cooperators\u2019 and less adhesive \u2018defectors\u2019 and demonstrate that segregation between types can be generated even if encounters among players occur at random. The stickier type is favored as soon as its frequency exceeds a threshold (Garcia and De Monte, 2013), in spite of the costs associated with increased adhesion. In actual biological populations, however, social propensity needs not result from individual features that abide by a binary logic. For instance, the FLO1 gene governing flocculation in yeast is highly variable: the level of adhesion changes as a function of the number of tandem repeats within FLO1 (Smukalla et al., 2008). This molecular mechanism may underpin a diversity of cell-cell interaction strengths that are better described as a trait with continuous, rather than discrete, values. In this context, the process of adaptation is mathematically formalized with the theory of adaptive dynamics (Geritz et al., 1998; Waxman and Gavrilets, 2005), describing evolution as a mutation-substitution process where mutants successively invade a monomorphic resident population. Since mutants are each time initially rare, the aforementioned frequency threshold can potentially hinder the evolution of stickiness as a gradually increasing trait.\n\nIn the following, we show that, even in the absence of selective pressures favoring large groups, natural selection can promote and sustain costly adhesion nearly from scratch, and we discuss the theoretical and applied implications of our mechanism in puzzling out the evolutionary origins of social behavior.\n\n## 2 Adhesiveness as a quantitative trait affecting group formation and function\n\n### 2.1 Life cycle and population structuring\n\nWe study the evolution of adhesiveness in the context, developed by Garcia and De Monte (2013), where the trait, associated with a fitness cost, plays a role both in the emergence of population structure\u2014through group formation\u2014and in the collective function of groups. Benefits derived by excreted extracellular glues, for instance, are potentially shared with neighboring individuals, while being individually costly. At the same time, glues affect the way a population clusters in groups. Here, we will consider adhesiveness as a continuous trait described by the real number $z\\in[0,1]$.\n\nIndividuals undergo successive life cycles defined by the alternation of a dispersed and a grouped phase, as illustrated in Figure 1. In the Aggregation Phase (AP), initially dispersed individuals form groups in a process that is influenced by the values of their trait. In the Reproductive Phase (RP), individuals leave offspring according to the benefits collected within their groups. Finally, all individuals are dispersed anew into a global pool in the Dispersal Phase (DP).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig1-v2.jpg)\n\n**Figure 1.:** At each generation, individuals undergo a succession of three steps: an aggregation phase (AP) during which they form groups depending on their adhesiveness trait; a reproduction phase (RP) in which they leave offspring with a probability dependent on their strategies and their payoffs in groups; a dispersal phase (DP) when all individuals are scattered anew for the next generation. Such life cycle is consistent with those observed in facultative multicellular microorganisms such as dictyostelids and myxobacteria.\n\nThese assumptions, that include as a special case trait-group models with random group formation (Wilson, 1975), reflect actual life cycles found in species such as dictyostelids (Li and Purugganan, 2011; Strassmann and Queller, 2011) and myxobacteria (Xavier, 2011). Such modeled life cycle constitutes a worse-case scenario for the evolution of cooperative traits. Indeed, when aggregates are allowed to persist for more than one individual generation, positive assortment between cooperators is amplified throughout successive reproductive episodes. This can ultimately favor cooperation when population re-shuffling occurs in time scales shorter than that of defectors\u2019 takeover within groups (Wilson, 1987; Fletcher and Zwick, 2004; Killingback et al., 2006; Traulsen and Nowak, 2006; Cremer et al., 2012).\n\nThe individual trait under the effect of natural selection is adhesiveness $z$. Higher values of $z$ increase the probability that an individual joins a group (in AP), and at the same time enhance group cohesion, hence group-related benefits (in RP). Adhesiveness is costly, and the cost is assumed proportional to its value: $C(z)=cz$. In Section 4.4, we consider the more realistic case when the cost of glue production increases faster than linearly, for instance because of metabolic or physical constraints. The cost of adhesiveness is here assumed to be context-independent, thus it does not change conditionally to individuals belonging or not to a group. This choice reflects the standard assumption in quantitative genetics that the trait is genetically encoded. The context-dependent part is thus restricted to the benefit term. Situations where increased attachment has no cost have been modelled by Avil\u00e9s (2002). Assuming that adhesive ungrouped individuals do not undergo adhesion costs, or that they earn direct benefits just as grouped individuals do, would relax the social dilemma and promote even more efficiently increased adhesion.\n\nIn the RP, each individual in a group is assigned a net payoff according to a Public Goods Game (PGG) (Kollock (1998); Doebeli and Hauert (2005)), that models in the simplest terms the reproductive success of individuals taking part in a social enterprise. The net payoff is the sum of two terms: the cost of adhesiveness, and a benefit $B$ drawn from belonging to a group, and therefore equal for all its members. This second term encapsulates the cohesion of the group and depends on the average adhesiveness $z\u0304$ of its members: $B=B(z\u0304)$ (Br\u00e4nnstr\u00f6m et al., 2011), with $B$ an increasing function of $z\u0304$. In the following, we opt for a linear function $B(z\u0304)=bz\u0304$. This choice is conservative, since nonlinear (e.g. saturating) functions alleviate the constraints on the evolution of social traits (Archetti and Scheuring, 2012). Ultimately, a $z$-individual in a group of average adhesiveness $z\u0304$ gets a net payoff $bz\u0304-cz$. If an individual does not belong to any group, it does not get any group-related benefit and its payoff is merely $-cz$.\n\nThe average payoff of one strategy, determining its reproductive success, is obtained by averaging over all social contexts experienced, meaning that the probabilities of occurrence of each possible group composition must be known. Specifying the realized group structure in populations with multiple traits is a daunting task even under simple rules of group formation, so that the evolution of the trait $z$ can only be known by explicitly simulating the aggregation process. Since microbial populations are vast, and their interactions complex, this kind of numerical simulations can be extremely time-consuming.\n\nIf mutations on $z$ occur seldom with respect to the demographic time scale of trait substitution, however, the payoff of a mutant can be assessed in the background structure provided by the resident, monomorphic population. In this case, the realized repartition of players inside groups can be deduced from specific rules of group formation, and the framework of adaptive dynamics allows to study the gradual evolution of the trait in general settings. Section 3 discusses the adaptive dynamics of the trait in infinitely large populations where its value is associated with a given group size distribution. The general results will be applied in Section 4 to a specific aggregation model where adhesiveness underpins the probability of attachment among cells, that we introduce in the next paragraph.\n\n### 2.2 Group formation based on attachment\n\nThe effect of adhesiveness on group formation can be exemplified by a simple model where the trait underpins physical attachment. Such model, introduced by Garcia and De Monte (2013), will be used later in Section 4 to illustrate the general results of Section 3.\n\nDuring AP, individuals belonging to an initially dispersed, infinite population are distributed at random into patches of size $T$, akin for instance to the attraction domains observed in Dictyostelium discoideum aggregation (Goldbeter, 2006). Within every patch, one group is nucleated by a randomly drawn recruiter. Each focal individual among the remaining $T-1$ is given one opportunity to attach to the recruiter, and does so with a probability that depends on both the recruiter and the focal individual\u2019s adhesivenesses. If it fails to stick to the recruiter, the individual remains alone. So as to preclude any assortment a priori between individuals with same adhesiveness, the probability that an individual of trait $z_{1}$ attaches to a recruiter of trait $z_{2}$ must be the geometric mean of the two adhesivenesses: $p_{attach}(z_{1},z_{2})=\\sqrt{z_{1}z_{2}}$ (see Garcia and De Monte (2013) for an explanation). Any other choice for $p_{attach}(z_{1},z_{2})$ entails more positive assortment of the stickier type, hence further facilitates an increase in adhesiveness. Note that this model is not spatially structured. Unlike works based on individuals playing on lattices (Nowak and May, 1992; Doebeli and Hauert, 2005; Perc et al., 2013) or on an explicit continuous space (e.g. Meloni et al. (2009); Chen et al. (2011); Garcia et al. (2014)), positive phenotypic assortment is not correlated with spatial proximity.\n\nIn Garcia and De Monte (2013)\u2019s model, players possessed a binary attachment strategy with fixed cost, according to the standard choice of modeling \u2018cooperator\u2019 and \u2018defector\u2019 strategies. With this assumption, cooperation typically spreads once a threshold frequency of cooperators is overcome in the population, so that it is impossible for an initially rare cooperative mutant to be successful. Moreover, this threshold increases when adhesivenesses of the two types get closer, to such extent that even demographic stochasticity would be insufficient to favor mutations of small phenotypic effect. We will show that if attachment is based on a continuous trait, both these limitations are overcome.\n\nIn a monomorphic population of trait z, the aggregation process produces groups of various sizes (smaller than or equal to T) and a component of ungrouped individuals, as illustrated in Figure 2. Increasing the adhesiveness level z leads to a rise in average group size, and a decrease in the fraction of individuals that remain ungrouped. These group size distributions define the population structure associated with a given value z of adhesiveness. In the next Section, we provide a condition for increased adhesiveness to be selected, given the group size distributions that characterize a particular group formation process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig2-v2.jpg)\n\n**Figure 2.:** Group size distribution experienced by individuals in a momomorphic population with trait value $z$, for the aggregation process based on adhesion.\u00a0The size of each patch is $T=100$. The distribution is composed of a fraction $1-z$ of ungrouped individuals ($n=1$) and a binomial distribution of grouped individuals centered on $n=zT$. Here, we display this distribution for 5 distinct values of $z$.\n\n## 3 Adaptive dynamics of adhesiveness\n\nPredicting the evolutionary outcome on adhesiveness in specific biological populations requires to determine how it influences the population structure. In this Section, we show that general conclusions can be drawn, nevertheless, from qualitative properties of the aggregation phase. Notably, the evolutionary success of adhesion critically depends on how it affects the recruitment of individuals within groups.\n\nLet us consider a monomorphic resident population composed only of individuals of trait $\u1e91$, challenged with the appearance of a rare mutant of trait $z=z^+\u00a0dz$, where $dz$ is small. In this context, at most two trait values\u2014resident and mutant\u2014are present in the population at a given point in evolutionary time. Determination of average payoffs only relies on the knowledge of the distribution $g(n,z,z^)$ of group sizes experienced by a $z$-mutant in a population composed of individuals with trait $z^$, i.e. the probability that a mutant belongs to a group of size $n$. In particular, we call $u(z,z^)=g(1,z,z^)\u00a0$ the probability that a $z$-mutant remains alone. These distributions can be derived\u2014analytically, numerically, or by direct observation\u2014for any given group formation process, and summarize the effect of adhesiveness on group formation.\n\nIn line with the adaptive dynamics framework, we assume that the evolutionary dynamics of the trait $z$ is fully determined by the selection gradient (Geritz et al., 1998). In Section S1 of the Supplementary Information (SI), we calculate the invasion fitness of mutants $S(z,z^)$ for a group formation process characterized by its group size distribution $g(n,z^,z^)$ and by the proportion $u(z,z^)$ of ungrouped individuals. The selection gradient is the variation of the invasion fitness with a change in adhesiveness:\n\n$$\n\\nablaS(z^)=\\frac{\u2202S(z,z^)}{\u2202z}_{z=z^}=bz^h(z^)+b\\sumn\\geq2\\frac{1}{n}g(n,z^,z^)-c,\n$$\n\nwhere:\n\n$$\nh(z^)=-\\frac{\u2202u(z,z^)}{\u2202z}_{z=z^}\n$$\n\nSince higher adhesiveness makes individuals more likely to join groups, $u(\u22c5,z^)$ is a decreasing function of $z$ and $h(z^)>0$.\n\nThe change $dS$ in invasion fitness associated with an infinitesimal increase of the adhesiveness trait has three components. The third, negative term is the additional cost $-cdz$. The second, positive term, corresponds to direct benefits associated with the change in adhesiveness. It becomes negligible when groups are large, consistent with the observation that sociality gets established more easily in small groups (Olson, 1971; Powers et al., 2011). Even when this term cannot offset the cost of increased adhesiveness, the first component can compensate. This component corresponds to the increased chance $h(z^)dz$ for $z$-individuals to join a group, multiplied by the payoff $bz^$ drawn from it, and thus reflects the gain associated with the new interaction neighborhood created by a change in adhesiveness.\n\nThe adaptive dynamics framework states that a more adhesive mutant $z>z^$ will replace the resident if the selection gradient in Equation 1 is positive. A sufficient condition for an increase in adhesiveness, that holds locally for any $z^$, is then:\n\n$$\nbz^h(z^)>c\n$$\n\nThe function $h(z)$ measures the impact of adhesiveness on the fraction of cells that remain ungrouped at the end of aggregation. Depending on its variation, Equation 3 can provide a global solution to the long-term evolutionary outcome. For instance, when $h$ increases (i.e. if $u$ is concave), or decreases slowly with $z$, then if the inequality is satisfied for one particular value of the trait, it also holds for larger values. Adhesiveness then steadily increases until it reaches its maximal value $z=1$.\n\nOn the contrary, evolutionarily stable coexistence between grouped and ungrouped cells is only possible if $\\nablaS(z^)$ switches from positive to negative for some value $z^\\in]0,1[$. A necessary condition for this to happen is that the first term in Equation 1 goes below $c$. A first possibility is that $z^$ is small, but then, arguably, groups would be small too and direct benefits large, so that the second term might keep $\\nablaS(z^)$ positive. A second possibility is that $h(z^)$ is small, meaning that the effect of adhesiveness on the proportion of ungrouped cells is limited. This emphasizes qualitatively the importance of ungrouped individuals on the evolutionary trajectory, and how their proportion might be considered a first-order proxy of population structure.\n\nIf all individuals are randomly distributed among groups of fixed size, or even group size distribution is assigned a priori (as considered e.g. by Pe\u00f1a (2012)), the fraction of ungrouped cells is independent of $z^$. According to Equation 3, then, the evolution of increased adhesiveness is still possible, but it will be the consequence of direct, group-derived benefits (second term of Equation 1).\n\nLife cycles consisting of alternate phases of dispersion and aggregation are more likely to leave ungrouped cells than life cycles based on single-cell bottlenecks followed by clonal growth of groups. Equation 3 implies that a subpopulation of nonaggregated cells might boost the evolution of collective function even when cells are genetically unrelated and benefits are weak, and suggests a possible route to the evolution of multicellularity in genetically heterogeneous populations.\n\n## 4 The evolution of adhesiveness by attachment\n\nThe results of Section 3 are valid for any group formation process taking place in the AP. In this Section, we study in detail the evolutionary dynamics of adhesiveness when groups are formed according to the rules introduced in Section 2.2.\n\n### 4.1 Evolutionary equilibria\n\nFor any $b>2c$, the evolutionary dynamics is bistable. The actual evolutionary outcome depends on whether the initial adhesiveness value is smaller or larger than a threshold value $z^{*}$, where the selection gradient vanishes. Its analytical expression is computed in Section S2 of the SI.\n\nIf initial adhesiveness is lower than $z^{*}$, additional group-related benefits are too small to offset the cost of increased adhesion; the resident trait $z^$ gradually declines and all individuals are eventually ungrouped. This population structure corresponds to permanently unicellular organisms. If initial adhesiveness is greater than $z^{*}$, instead, adhesiveness keeps increasing until its maximum value $z^=1$ and all individuals belong to groups of identical size $T$. This outcome corresponds to the usual setting of multiplayer game-theoretical models.\n\nThe threshold $z^{*}$ increases with $T$ due to diminishing direct benefits, and converges to a maximum value\n\n$$\nz_{\u221e}^{*}=\\frac{2c}{b}\n$$\n\nin the limit of infinite T. Figure 3 displays the threshold z* as a function of the benefit-to-cost ratio b\u2215c for two different values of T (blue and red full lines) and in the limit case T\u2192+\u221e (black full line). Overcoming adhesiveness level z\u221e* guarantees the selection of increased adhesiveness even in cases when groups are allowed to be very large, as commonly happens in microbial populations. The equilibrium z* can be classified as a 'garden of Eden', i.e. a noninvasible equilibrium that is not convergence-stable (Nowak, 1990) (see Section S2 of the SI).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig3-v2.jpg)\n\n**Figure 3.:** Threshold adhesiveness value $z^{*}$ required for the evolution of increased adhesion.In the case of group formation by attachment, the theoretical value of $z^{*}$ in the limit of infinite $T$ is $z^{*}=2c\u2215b$, as demonstrated in Section 4.1. Analytical thresholds (full lines) as well as numerical estimations (circles) are displayed for small ($20$) and large ($100$) values of $T$. As $T$ decreases, threshold values decrease too because of enhanced direct benefits. Numerical results are consistent with analytical predictions. Error bars indicate the variability\u2014associated with the finite size of the population\u2014in the estimation of the threshold across multiple computations of the aggregation process.\n\nIn the following section, we focus on the evolutionary trajectories leading to an increase in adhesiveness, and discuss how the social nature of the trait changes in the course of evolution.\n\n### 4.2 Social behavior along evolutionary trajectories\n\nCooperation, defined as a behavior that increases other individuals\u2019 fitness at a personal cost, has been classified in two categories, depending on the sign of the net effect of the behavior on the cooperator (West et al., 2007; Wilson, 1975, 1990). Indeed, marginal gains retrieved from a cooperator\u2019s own contribution to the common good might be large enough to compensate its systematic cost: in this case, cooperation is termed mutualistic or directly beneficial, otherwise, it is coined altruistic (West et al., 2007). Note that in both cases, cooperators fare worse than the defective members of the same group. The distinction in the status of cooperative acts is also known as weak vs. strong altruism (Wilson, 1975, 1990; Fletcher and Doebeli, 2009).\n\nIn randomly assorted populations, directly beneficial cooperation is favored by natural selection while altruistic cooperation is not (Wilson, 1975). Therefore, directly beneficial cooperation can be expected to establish first, as it is more easily obtained, potentially providing the substrate for altruistic forms of cooperation to spread later.\n\nThis idea seems to be supported by the common observation of directly beneficial behavior in microbes. In invertase-secreting yeast, a small proportion of the hydrolized glucose is retained by the producer, providing advantage to cooperator cells at low frequencies (Gore et al., 2009). Similarly, the bacterium Lactococcus lactis expresses an extracellular protease that helps transform milk proteins into digestible peptides: Bachmann et al. (2011) showed that such cooperative behavior can persist owing to a small fraction of the peptides being immediately captured by the proteolytic cells. In Pseudomonas aeruginosa colonies grown on solid substrates, the diffusion of pyoverdine is locally confined as cells are densely packed, relaxing the burden of public good production (Julou et al., 2013). On the other hand, extremely sacrificial behavior such as altruistic suicide seems restricted to Myxobacteria and cellular slime moulds and its evolution appears to require mechanisms of reinforcement, though the peculiar life cycle of such organisms reduces the influence of genetic relatedness.\n\nIt is important to notice that the status of a cooperative trait (whether directly beneficial or altruistic) can be defined only relatively to a given population structure. In the case of linear PGGs within groups of fixed size $N$, direct benefits of a cooperator amount to $b\u2215N$ and cooperation is mutualistic whenever $b\u2215N>c$. Group size is thus crucial to define the status of a cooperative trait; the maintenance of cooperation in several models actually owes to alternating phases when it is altruistic or directly beneficial, generally because of group size variations (Hauert et al., 2002; Fletcher and Zwick, 2004; Killingback et al., 2006).\n\nIn our model, the population structure depends on the value of the social trait itself. At any point along an evolutionary trajectory, we can compute the average 'gain from switching' (Pe\u00f1a et al., 2014) of a more adhesive mutation, that quantifies the balance between the additional cost of increased adhesion, and the marginal return from its additional contribution to group cohesion. Here, the gain from switching is calculated in the social context established by less adhesive residents, characterized by the group size distribution $g(n,z^,z^)$. We call 'altruisitic\u2019 any positive mutation on adhesiveness such that its gain from switching is negative, and \u2019directly beneficial\u2019 any mutation whose gain from switching is positive. These definitions extend those for groups of fixed size and encapsulate the concept of altruism as a situation in which individual costs are not immediately recovered by marginal benefits, all other things unchanged (but see Kerr et al. (2004) for other individual-based interpretations of altruism).\n\nThe condition for a small positive mutation to be altruistic in a resident population of trait $z^$ is, as showed in Section S3 of the SI:\n\n$$\nr_{alt}\u00a0(z^)\u00a0b<c\n$$\n\nwhere:\n\n$$\nr_{alt}(z^)\u00a0=\\sumn\\geq2\\frac{g(\u00a0n,\u00a0z^,\u00a0z^\u00a0)}{n}.\n$$\n\nThis condition is comparable to that found in the classical PGG with fixed group size ($b<Nc$), as $1/r_{alt}(z^)$ is homogeneous to a group size and can be linked to the average group size in the population. Indeed, for the differential attachment model of Section 2.2,\n\n$$\nr_{alt}\u00a0(z^)\u00a0=\u00a0\\frac{z^}{\\gamma^_{z^}}\u00a0,\n$$\n\nwhere $\\gamma^_{z^}$ is the average group size (across groups, not individuals\u2014not to be confused with insider\u2019s view of group size or crowding (Jarman, 1974; Reiczigel et al., 2008)). In highly adhesive populations ($z^\u22481$) with groups of size $T$ and no ungrouped individuals, Equation 5 is then simply $b\u2215c<T$; while in poorly adhesive populations ($z^\u22480$) where all individuals are ungrouped, no direct benefit is possible, so that $r_{alt}$ vanishes and Equation 5 is always satisfied.\n\nFigure 4 displays, for various values z^ of the resident trait, the benefit-to-cost ratio 1\u2215rmin above which an increase in adhesiveness is favored and the benefit-to-cost ratio 1\u2215ralt below which such a mutation is classified as altruistic. Let us suppose that the benefit-to-cost ratio b\u2215c remains fixed all along an evolutionary trajectory as the resident trait varies. Depending on its values, an increase in adhesiveness can be attributed a different social status: (1) if b\u2215c>T, social mutations are altruistic at the onset of social evolution, and directly beneficial when z^ becomes larger; (2) if 2<b\u2215c<T, social mutations are altruistic throughout the evolutionary trajectory; (3) if b\u2215c<2, social mutations never invade.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig4-v2.jpg)\n\n**Figure 4.:** For any resident adhesiveness value $z^$between $0$ and $1$, we display, in black:\u00a0the minimal benefit-to-cost ratio $1/r_{min}=2/z^$ for a social (or positive) mutation to be selected; in red: the maximal benefit-to-cost ratio such that this mutation is altruistic. Let us choose a fixed $b\u2215c$ (i.e. an horizontal line in the graph). According to the value of $b\u2215c$, the fate and the social status of positive mutations change. For low $b\u2215c$ ($<2$), all social mutations are altruistic but none of them is ever selected: the population is doomed to full asociality. For intermediate $b\u2215c$ (between $2$ and $T$), social mutations are favored as soon as $z^$ overcomes a threshold (crossing of the black line with the horizontal line $y=b\u2215c$), and are altruistic all along the evolutionary dynamics. For large $b\u2215c$ ($>T$), once the threshold is overcome and $z^$ increases, social mutations are altruistic until some value of $z^$ (crossing of the red line with the horizontal line $y=b\u2215c$); afterwards, social mutations turn directly beneficial.\n\nThe first case in particular demonstrates that the status of a social mutation can change along an evolutionary trajectory, and that this change is more likely to occur the smaller the maximal size groups can attain. Contrary to what we expected, the social dilemma raised by costly mutations in adhesiveness relaxes over the course of evolution, leading from altruistic to mutually beneficial behavior. Indeed, even when the benefit-to-cost ratio is large (greater than the maximal group size $T$), social mutations are not directly beneficial at start. This is because, adhesiveness being small, chances are high to be left outside groups and miss any group-related benefit whatsoever.\n\nThis suggests that altruism may play a more important role in the origin of social behavior than it is currently assumed, and that it could be a first attainable step even when it involves large costs, eventually paving the way to the evolution of less sacrificial behavior.\n\n### 4.3 Individual-based simulations\n\nThe generality of the analytical results obtained in Sections 3 and 4 rely on a number of hypotheses that are not strictly realized in actual biological populations: infinite population size; infinitesimal mutational steps; the equivalence between positive growth rate (when rare) and the fixation of the trait; the linear dependence of group-related benefits on group average composition. Whereas the soundness of adaptive dynamics equations as limits of individual-based processes has been mathematically proved (Champagnat and Lambert, 2007), the introduction of potential nonlinearities in the payoff function of our model quickly makes analytical calculations intractable.\n\nWe thus implemented the life cycle described in Section 2.2 in an individual-based model (detailed in Section 4 of the SI). This way, we could check the validity of the results of Section 4.1, here summarized by Pairwise Invasibility Plots (PIP) (Geritz et al., 1998), and repeat the analysis also for biologically interesting, non-linear payoff functions.\n\nFigure 5 displays the PIP for the individual-based model, representing the sign of the invasion fitness for each pair of resident z^ and mutant z trait values. A single interior singular strategy z* can be observed and characterized as a 'garden of Eden' in accordance with the analytical results of Section 4.1: in a neighbourhood of z*, the population can be successively invaded either by mutants with decreasing trait values until z^=0, or by mutants with increasing trait values until z^=1. Figure 3 confirms the consistence between the thresholds obtained with the theoretical analyses (full lines) with those obtained by numerical simulations (circles) for two values of T. However, stochastic fluctuations due to a finite population size can, when the maximal group size T is small, decrease such threshold to the extent that increased adhesiveness evolves for scratch (blue circles).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig5-v2.jpg)\n\n**Figure 5.:** A positive invasion fitness (gray) means that the mutant can invade the population and replace the resident trait whereas a negative invasion fitness (white) means that the mutant is outcompeted. A singular point is found around $0.1=2c\u2215b=z^{*}$, consistently with analytical predictions. This equilibrium can be characterized as a 'garden of Eden' (non-invasible repellor), which means that, depending on the position of the initial value $z^_{0}$ of $z^$ with respect to $z^{*}$, evolutionary dynamics leads to the selection of either $z^=0$ (when $z^_{0}<z^{*}$) or $z^=1$ (when $z^_{0}>z^{*}$), i.e. either full asociality or full sociality. Parameters: $T=100$, $N=5000$, $b\u2215c=20$.\n\n### 4.4 Evolutionary equilibria for other forms of collective fitness\n\nWhile a linear PGG is a parsimonious\u2014and tractable\u2014way to depict social dilemmas occurring in multicellular aggregates, it is reasonable to imagine that actual cost and benefit functions are more convoluted. Notably, excessive group sizes and investments in adhesion might be constrained by intrinsic properties of microorganisms. By numerical simulations, we thus explored two alternative, nonlinear functional forms of the benefit or the cost function.\n\nFirst, we considered the situation when there is a physical upper limit to the size of functional groups. For instance, fruiting bodies of Dictyostelium become unstable and topple over if they are too large (Savill and Hogeweg, 1997). We model this by adding a group size threshold above which group benefits become null (Figure 6). Second, we modelled possible trade-offs between the production of the glue and other cell functions, so that producing large amounts of glue results in a disproportionate decrease in fitness (Goymer et al., 2006). This scenario corresponds to a cost function that is linear for small values of the adhesiveness z but diverges as z gets closer to 1 (Figure 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig6-v2.jpg)\n\n**Figure 6.:** Pairwise invasibility plot obtained when group-related benefits are null above group size $\\alphaT$.Here, the change in the benefit function leads to the appearance of a second equilibrium $z_{+}$ that is convergence-stable and non-invasible. As soon as the initial value of the adhesiveness trait $\u1e91$ is larger than the adhesiveness threshold $z^{*}$, selection favors adhesion level $z^{+}$ at equilibrium. Parameters: $T=100$, $N=5000$.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08595/elife-08595-fig7-v2.jpg)\n\n**Figure 7.:** As in the previous case, an other equilibrium appears that is a CSS (convergence-stable strategy), hence the evolutionary endpoint as soon as the initial adhesiveness value overcomes the threshold $z^{*}$. Parameters: $T=100$, $N=5000$.\n\nBoth cases lead to the appearance of a second internal singular strategy $z^{+}^{}<1$ that can be characterized as a continuously stable (i.e. convergence-stable and noninvasible) strategy. This adaptive equilibrium is associated with populations structured in groups of sizes distributed around an average $z^{+}T$ and a proportion $1-z^{+}^{}$ of solitary individuals. Such an evolutionary outcome is more in line with observations of cellular slime moulds, where groups coexist with a fraction of nonaggregated cells (Dubravcic et al., 2014; Tarnita et al., 2015).\n\n## 5 Discussion\n\nThe evolutionary stability of social behavior against the invasion by \u2019cheating\u2019 types, that do not contribute to collective functions, has been extensively studied within the formalism of evolutionary game theory. This paradox is typically modelled as a social dilemma involving two competing strategies: one 'social' (or 'cooperative') and one 'asocial' (or 'defective'). In this work, we model adhesiveness as a mechanism underpinning social behavior (Garcia and De Monte, 2013; Garcia et al., 2014; Schluter et al., 2015). Adhesiveness affects social interactions within groups, but also the formation of groups themselves. In the theoretical framework of adaptive dynamics, we describe the evolutionary trajectory of a continuous adhesion trait entailing a cost for its carrier. We address the very first steps in the emergence of collective behavior, as well as the long-term evolution of cohesive groups, in populations undergoing cycles of dispersal-aggregation-reproduction akin to those of facultatively multicellular microbes.\n\nWe assume that, other than its individual cost, adhesiveness provides collective benefits to groups by contributing to group cohesion. Benefits are equally shared between group members so that individual gains depend only on group composition, and not group size. Even ahead of its effects on reproductive success, adhesiveness structures the population during the aggregation phase, as it increases the probability of attachment upon interaction. These assumptions model a feature often associated with social behavior in microbial populations: the production of extracellular glues. Glues are individually costly, since their production diverts energy allocated to growth. At the same time, they enhance cohesion and resilience of multicellular aggregates, and thus the fitness of the constituent cells.\n\nFor generic rules of group formation, we find that, if the initial value of the trait exceeds a value that is inversely proportional to the benefit-to-cost ratio, enhanced adhesiveness will be selected. In parallel to the rise in adhesiveness, the eco-evolutionary feedback between population composition and structure sustains the gradual surge of group size. This provides a scenario for the transition from poorly (or incidentally) social populations with small or loose groups to highly social populations structured in large cohesive groups. Unlike models with binary strategies, the evolution of sociality is possible from rare mutations in adhesiveness: the stickier type does not need to overcome a frequency threshold.\n\n### 5.1 The ecology of adhesive cells\n\nSocial behavior is expected to occur in populations already endowed with some minimal ability of attachment before the multicellular stage evolved. Is this condition relevant to biologically realistic settings? Adhesiveness is a trait that is highly variable among microbial species, depending on the physical properties of the cell surface, as well as on the amount and quality of compounds they excrete. Directed selection experiments show that the secretion of extracellular products providing some kind of collective advantage\u2014such as polysaccharides improving the strength of aggregates and stress resistance\u2014can be achieved on a relatively fast time scale (Rainey and Rainey, 2003; Xavier and Foster, 2007). Overcoming a threshold in adhesiveness should thus not be a strong constraint on the evolution of social behavior, as long as the collective function provides a sufficient benefit.\n\nCells with no or little capacity of motion can rely on spatial patterning through clonal growth to ensure a high degree of local genetic and phenotypic homogeneity. Adhesion, on the other hand, can play such an assortative role for cells that actively move. Adhesiveness may therefore significantly contribute to the evolution of multicellular organization by causing both assortment during group formation, and cell sorting at a later, developmental, stage (Savill and Hogeweg, 1997), thus underpinning both collective function and division of labor.\n\nA change in adhesion per se, and not specifically to other cells, may however have drawbacks, if it is associated with a modification in dispersal properties. In D. discoideum at the onset of the aggregation phase, for instance, enhanced chemotaxis upon starvation (Sch\u00e4fer et al., 2013) increases adherence to both the substrate and the neighboring cells. If higher adhesiveness drives more effective crawling, increased dispersal and the subsequent genetic heterogeneity in multicellular chimeras might oppose the selection for collective function. The emergence of sociality in spite of spatial mixing has been addressed in a simple model where cells are described as interacting persistent random walkers (Garcia et al., 2014). In this model, however, cell velocity and adhesiveness were independent parameters. Their concomitant variation might lead, in a spatially explicit setting, to insights on the conditions under which stable polymorphism is possible in a population with gradually evolving adhesiveness.\n\n### 5.2 Solitary individuals\n\nIn the aggregation phase, populations of social amoebae D. discoideum do not only form multicellular groups, they also leave behind solitary cells. Recent experiments show that the existence of an ungrouped component is widespread in lab and wild strains. Theoretical arguments support the idea that nonaggregated cells play an essential role in the evolution of some peculiarities of those organisms (Dubravcic et al., 2014; Tarnita et al., 2015; Rainey, 2015). Neglecting cells that are outside groups alters population-level statistics, such as the average fitness of a given strategy, and thus affect the prediction of evolutionary outcomes.\n\nAlthough widely disregarded in experiments, typically focused on the multicellular body, the possible role of solitary cells in the evolution of cooperative or social behavior has been a recurrent theme in theoretical works. Early simulations modeling the evolution of cellular slime moulds suggested that individuals \u2019diffusing\u2019 out of groups may contribute to the maintenance of cooperative behavior by forgoing the systematic cost of grouping, together with its potential benefits (Armstrong, 1984).\n\nHauert et al. (2002) stressed that a 'loner' strategy\u2014whereby individuals adopt an autarkic lifestyle\u2014can provide a way out of the deadlock of the tragedy of the commons by a periodic soaring of individuals that opt out of the collective enterprise. Even though the predicted oscillations in group size have never, to our knowledge, been observed in microbial populations, they might be conceived as primitive life cycles including a collective phase.\n\nSolitary behavior has also been explained as an adaptation to variable environmental conditions (Dubravcic et al., 2014; Tarnita et al., 2015; Rainey, 2015): cells hedge their evolutionary bets between commitment to a developmental program with uncertain outcome (they may end up in the stalk or in the spores) and the wait for the re-establishment of conditions favorable to growth. The theoretical prediction in this case is that the fraction of lonely cells reflects the optimal probability of remaining outside groups given the pattern of environmental variation.\n\nThe evolutionary model discussed here also supports the claim that lonely cells, which happen to remain outside groups by chance, are of primary importance for the onset of sociality. As discussed in Section 3 for a general group formation process, and illustrated in Section 4 with a toy model for aggregation, nonaggregated individuals might tip the balance in favor of stickier types. This conclusion is reinforced by the fact that, in our model, the fitness of an individual depends on the composition of the group it belongs to\u2014as opposed to the assumption in Dubravcic et al. (2014) and Tarnita et al. (2015) that, when in groups, the probability of becoming spores is constant. At the evolutionary equilibrium, however, the ungrouped component of the population vanishes, unless nonlinearities are introduced in the functional dependence of collective benefits and/or individual costs on adhesiveness, as observed in Section 4.3.\n\nSome important differences between Dubravcic et al. (2014) and Tarnita et al. (2015) and our model should be noted. When group formation is based on adhesiveness, lonely individuals occur also in the absence of temporal variation of the environment and of selective advantage due to dispersal. Moreover, in our model, being ungrouped is not a strategy determined by a fixed probability, as failure to join a group is contingent on the emergent population structure. A pivotal issue is thus when the decision to join groups is made by microbial organisms. Populations of facultatively multicellular species face two \u2019lotteries\u2019 where stochasticity affects the fitness of an individual: joining groups and, once in a group, reproducing or dying. If the trait under selection is, as in Dubravcic et al. (2014) and Tarnita et al. (2015), the probability of staying alone, cells decide to be in a group before the fitness cost of giving up reproduction is possibly assigned. If it is adhesiveness, as in our model, social behavior in groups is decided at the same time as aggregative behavior. Experimental evidence suggests that conditions preceding the aggregation phase influence the partition between lonely and aggregated cells (Dubravcic et al., 2014), and between stalk and spore cells (Gomer and Firtel, 1987; Jang and Gomer, 2011). The role of adhesiveness itself in influencing such decisions is unknown. Further experiments are needed, together with models that explore the possible role of competition within aggregates, to clarify to what extent social interactions within the multicellular phase are linked to group size distribution, including singletons.\n\n### 5.3 The nature of social traits\n\nDirectly beneficial cooperation is by definition more easily established than altruistic cooperation (West et al., 2007). Example of microbial populations where individuals draw direct benefits from the production of extracellular compounds are numerous (Gore et al., 2009; Bachmann et al., 2011; Julou et al., 2013; Zhang and Rainey, 2013). One could thus expect that, by sustaining the onset of cooperation, directly beneficial behavior sets the scene for the later establishment of altruistic traits, of which 'suicide for the good of the group' is emblematic.\n\nDeciding the nature (altruistic or not) of a given social mutation is not just a matter of costs and benefits, but also depends on the way the population is structured. As a consequence, the nature of a directional change in the trait value can vary along an evolutionary trajectory, if it entails modifications in the average local interaction environment. We show that the status of mutations increasing adhesiveness can change along with the gradual evolution of the trait, even when benefit and cost parameters are fixed. When adhesion starts to increase, mutations are always altruistic, meaning that they entail a net cost to the individual compared to the resident trait. Nonetheless, these altruistic mutants thrive because of their role in the earlier aggregation phase. For large enough benefit-to-cost ratios, though, positive mutations become directly beneficial at a later time along the evolutionary trajectory. Altruistic behavior emerges first, and direct benefits only appear afterwards. This means that directly beneficial interactions, while frequently observed in nature, might not necessarily be the stepping stone for the evolution of cooperation, but rather an evolutionary endpoint.\n\nThe gradual increase in adhesiveness is a mechanistic\u2014and seemingly readily achievable\u2014way by which unicellular organisms may have made the transition to complex, multicellular organization (De Monte and Rainey, 2014;\u00a0Rainey and De Monte, 2014). Such a mechanism not only accounts for assortment, but potentially underpins spatial segregation in tissues (Steinberg, 2007; Mar\u00e9e and Hogeweg, 2001), through which evolutionary forces might have moulded the developmental program of the multicellular body. The relevance of adhesion in structuring the collective phase of organisms that aggregate from sparse cells however requires more experimental observations, that will hopefully shed light on the biological and physical processes involved in the major evolutionary transition to multicellularity.\n",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d8c8e955-217e-41b1-9027-b104dae6c9e4",
+      "submission_id": "90f1c06d-30a4-405e-bbd2-03b801bb6eb6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arne Traulsen, Max Planck Institute for Evolutionary Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08595.010](https://doi.org/10.7554/eLife.08595.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"The evolution of adhesiveness as a social adaptation\" for peer review at eLife. Your submission has been favorably evaluated by Diethard Tautz (Senior editor), a Reviewing editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nGeneral assessment and major comments:\n\nThe Garcia et al. manuscript is a very elegant take on the evolution of social traits in the absence of explicit spatial structure or reciprocity. The paper argues that cell adhesiveness is a likely first step in the major evolutionary transition from unicellular organisms to multi-cellular organisms. However, since producing adhesives is costly, the usual conflict between individual and group level benefits occur.\n\nThis paper explores the origins of cellular adhesiveness as both a means of aggregating individuals into groups (creating population structure) and as a trait with fitness consequences to individuals and groups (once groups are formed). The analytical version of the model is based on adaptive dynamics and therefore allows for the exploration of small changes to a continuous trait. The main findings are that adhesiveness can evolve to high levels via small steps and that this can be true even when the trait initially has a net cost (strong altruism), as opposed to weak altruism paving the way for strong altruism. Overall, the article seems very well written and interesting and could make an important contribution.\n\nThe paper is full of good ideas and interesting insights on the origins of multicellularity, but all referees express concerns in terms of the presentation:\n\n1) The model is not described very well. It is difficult to understand how the simulation model worked. It does not seem to be possible, based on the material in the paper, to reproduce the figures, for example:\n\nWhat is N? Is it a multiple of T? Why not have N=T? What is the vertical axis in Figure 4?\n\nHow does the RP work? Is it a Moran process? The first paragraph of subheading \u201cNumerical simulations\u201d is hard to follow. What is the \"competition between groups\"? If each individual leaves at most one offspring, how is the population kept fixed?\n\n2) The authors expand on their own work to show that adhesiveness (the trait that makes individuals more likely to attach to others and form groups) can evolve in a population of well-mixed individuals that keep aggregating and dispersing as part of their life cycle. This is potentially an important contribution to the study of social behavior because it would show that pre-existing assorting forces are not necessary for sociality to evolve. However, in paragraph three, Discussion, one of the main conclusions of this study \u2013 where adhesiveness is a continuous trait \u2013 is that the evolution of sociality is possible from rare mutations. However, at the same time, they can't really evolve from scratch. There needs to be a threshold amount of adhesiveness present in the resident type for a more sticky one to evolve, as discussed in the subheading \u201cThe ecology of adhesive cells\u201d discussing why this is likely but I didn't find that discussion sufficiently persuasive. If the model shows that basically stickiness can't evolve from scratch, then how would there be a certain amount of stickiness present in the population to begin with? What are some examples where we expect this to have happened?\n\nThe authors highlight the adaptive dynamics (AD) analysis. It is described before the \"real\" model is described, and the simulation is described simply as a test of the \"robustness\" of the AD analysis. This seems backwards. The result of the AD analysis is not particularly interesting (limits at z=0 or z=1 depending on the starting point) and if AD was really the proper model then (as is pointed out many times in the paper) the process of increasing adhesiveness could never get started, due to the positive threshold that must be overcome. It seems the AD analysis is basically an interesting \"sanity check\" on the simulation model, that is valid in certain limiting cases. (The work of Champagnat in the reference, and elsewhere, shows just how \"hard\" it is to get an AD limit from a sequence of stochastic models.) This is not to make light of the nice analytical results in section 2, but we think it should be made clearer that the most important insights in the paper come from the computer simulation of the mathematically intractable versions of the model. (Assuming the authors agree with this.)\n\n3) It is great that the authors talk about adhesiveness as a continuous trait, especially because this turns the very binary problem of cooperation-defection or social-asocial into a much more nuanced question. But despite posing the problem so generally, the authors still use the social-asocial language, even when it doesn't make much sense. For example in paragraph five, subheading \u201cSocial behavior along evolutionary trajectories: altruistic sociality\u201d, where both the resident and the mutant are actually sticky but one is a tiny bit less so and is then called asocial. That seems confusing (despite the fact that many people do this) and we would suggest finding a clearer way to refer to these traits that fits with the continuum perspective which, again, I think is a very good one.\n\n4) The difference between cooperation and altruism has always been confusing. Indeed the way the authors present it is one way in which it has been described but not the only one and this part of the manuscript and its conclusions can lead to confusion. It seems that a lot of what people have termed cooperation and studied in the context of the Prisoner's dilemma is altruism according to the author's definition (see e.g. Nowak et al. work). And in many works altruism has been defined as an extreme form of cooperation, such as suicide (stalk cells in D. discoideum or worker ants in eusocial colonies). The authors don't seem to be talking about the latter when they're saying that altruism can evolve first. They seem to be talking about the former, which most people would interpret as actual cooperation (as opposed to mutually beneficial behavior). We are perfectly aware that the semantics of this field is a mess, but one ought to be very careful in phrasing the conclusions of this part of the study. Perhaps moving away from cooperation-altruism and phrasing it more generally and in more nuanced ways would help. Another possibility, if the authors want to stick with cooperation-altruism, is to explain the different definitions and cite other literatures as well. Because the results of this section seem very similar to, for example, people claiming that cooperation (rather than altruism) can evolve on networks if b/c > k.\n\n5) There is a related philosophical quibble concerning the distinction between net direct benefits (sometimes called weak altruism) and net costs (sometimes called strong altruism). If a social behavior gives a benefit to the actor that is greater than its cost, this may seem to be substantially different than the case where the actor's cost is greater than any benefit it receives. But it is relative fitness that matters and if the actor's social behavior benefits all group members, but others do not pay the cost borne by the actor, then there is no substantial difference. For simplicity assume that the actor provides benefit B to the group at cost C to the actor. If this benefit is split evenly among group members (including the actor) then actors (weak altruists) get B/n - C whereas other group members get B/n. Whether B/n - C is positive or negative doesn't affect the fact that actors in a group are at a disadvantage compared to non-actors in the group. Whether actors (altruists) are favored depends on population structure (assortment), not whether B/n - C is positive or negative. Weak altruists can be selected against if the interaction structure is unfavorable and strong altruists can be selected for if it is favorable. Of course the degree of assortment needed can be affected by the values of B and C (and therefore by whether B/n -C is positive or negative), but this is a matter of degrees of assortment, not a fundamentally different mechanism. Comparing two scenarios where B/n - C values are 2 and 6 respectively is not inherently different from comparing two scenarios where the values are -2 and +2 respectively. So it is not surprising or \"counter-intuitive\" that strong altruism can proceed weak altruism in the evolutionary trajectories of the model. The amount of assortment simply favors each in its turn.\n\n6) As for the conclusion that the status of a social mutation can change along an evolutionary trajectory, that's a great point and an interesting conclusion. However, the conditions under which it happens seem very restrictive (the b/c ratio has to be very high). The authors should discuss the intuition and biological feasibility of such a scenario.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The evolution of adhesiveness as a social adaptation\" for further consideration at eLife. Your revised article has been favorably evaluated by Diethard Tautz (Senior editor), a Reviewing editor, and three reviewers. The manuscript has been improved but there are some minimal remaining issues that would ideally be addressed before publication (as you will see, the only reason that the paper was not immediately accepted is to give you a chance to incorporate a reply to two queries), as outlined below:\n\nReviewer #1:\n\nI think the authors have addressed all my concerns, so at this point I am ready to recommend the paper be published in eLife.\n\nIn my first review I made a comment that I would like to retract now. At the time I saw the AD analysis as being \"uninteresting\" because the result was simply a limit at z = 0 or 1 depending on the starting point. Soon after I posted that review I realized that this was not a reasonable complaint. Fortunately this comment was seen for what it was and no harm was done!\n\nReviewer #2:\n\nI'm satisfied with the authors' revisions (and with the way they've addressed my concerns). I find the new manuscript acceptable.\n\nReviewer #3:\n\nI think this revised manuscript is substantially improved and I am satisfied that the authors have addressed my comments from the initial submission. I recommend acceptance.\n\nThat said, I have a couple of additional comments:\n\nIn reading the response to reviewers on item 6 I was struck by the detail that in calculating the benefits and costs across the population, that all individuals (including loners) paid the cost of adhesiveness, while only those that made it into groups experienced the benefits. (I missed that detail in the first version, and its role in determining b/c ratios.) I don't think I understand the justification for this. If an extracellular matrix was the trait that caused adhesiveness and also benefited other group members, then loners might get at least some benefit from their own excretions of extracellular matrix. Also, one could imagine a different mechanism of adhesion that did not manifest itself unless a group was joined. In this case loners would not pay the cost. I would leave it up to the authors to decide whether providing some intuition behind this analysis decision is helpful.\n\nLastly, in paragraph one, Introduction, the problem of free riders is discussed. I'm wondering if that applies to this model? Is it true that one of the mechanisms that makes this model work is that free riding is mitigated because those that are less helpful automatically are more likely to be excluded from groups (they are less adhesive)? Again, I leave it up to the authors, but if having a single trait for both adhesiveness and group beneficial behavior is instrumental in reducing free-riding (and therefore instrumental in the reported results), it would be helpful to state this explicitly.\n",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc1dca98-292f-4f4e-be0d-dde29c1ce969",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C1",
+      "claim": "Cellular adhesion is a key ingredient to sustain collective functions of microbial aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular adhesion is a key ingredient to sustain collective functions of microbial aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "820a650e-61e0-42f1-9e98-e8cae3188098",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C2",
+      "claim": "The formalism of adaptive dynamics reveals two evolutionary stable strategies at each extreme on the axis of adhesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "The formalism of adaptive dynamics reveals two evolutionary stable strategies, at each extreme on the axis of adhesiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by analytical results in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d88bb4cd-f32d-4367-9bb2-5d3c30215d0a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C3",
+      "claim": "Cohesive groups can evolve by small mutational steps, provided the population is already endowed with a minimum adhesiveness level.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that cohesive groups can evolve by small mutational steps, provided the population is already endowed with a minimum adhesiveness level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated through adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "c27bae1b-5e21-43af-b171-92f6a20580c1",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C4",
+      "claim": "Assortment between more adhesive types can compensate for the cost of increased adhesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Assortment between more adhesive types, and in particular differential propensities to leave a fraction of individuals ungrouped at the end of the aggregation process, can compensate for the cost of increased adhesiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by the analytical results in Section 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "97715354-e7cc-4388-a3b9-3646ec4c104a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C5",
+      "claim": "Altruism arises before directly beneficial behavior in the evolution of adhesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "We also discuss the change in the social nature of more adhesive mutations along evolutionary trajectories, and find that altruism arises before directly beneficial behavior, despite being the most challenging form of cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Section 4.2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "dcff58dd-56fe-43a3-b6e9-e050f71062ac",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C6",
+      "claim": "Major evolutionary transitions face the possibility that a part of the population free rides and exploits the collective benefit produced by the action of others.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary transitions all face the possibility that a part of the population free rides and exploits the collective benefit produced by the action of others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "0868ea75-eadc-4f79-8434-e36c940ab27d",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C7",
+      "claim": "Cancerous cells that divide faster disrupt the survival of their host.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, cancerous cells that divide faster disrupt the survival of their host (Frank, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example from Frank (2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d224ccde-ad19-4980-b4b1-bd9e99a3f5c2",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C8",
+      "claim": "Cooperation can be sustained by mechanisms that produce assortment between cooperators during group formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The former mechanisms produce assortment between cooperators, arising for instance during group formation (Avil\u00e9s, 2002; Fletcher and Zwick, 2004; Santos et al., 2006; Guttal and Couzin, 2010; Powers et al., 2011) or due to limited dispersal (Nowak and May, 1992; Pfeiffer and Bonhoeffer, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "06efa4d1-aaeb-4506-9cc3-679a790c717a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C9",
+      "claim": "Most unicellular species participate in multicellular aggregates that offer instances of 'intermediate' integration of cells into higher levels of organismality.",
+      "claim_type": "EXPLICIT",
+      "source": "Although capable of thriving in isolation, most unicellular species participate\u2014in parts of their life cycle, at least\u2014to multicellular aggregates that offer instances of 'intermediate' integration of cells into higher levels of organismality (Smukalla et al., 2008; Nadell et al., 2009; Queller and Strassmann, 2009; Rainey and Kerr, 2010; Ratcliff et al., 2012; Celiker and Gore, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "cfa1b59a-1ada-4cd9-aa60-1cd24d65f03c",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C10",
+      "claim": "Adhesion ensures local cohesion between cells in microbial aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Such persistence is mediated by various forms of adhesion (Jiang et al., 1998; Gresham, 2013) ensuring local cohesion between cells of the same or different kind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jiang et al., 1998 and Gresham, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "161b78b5-4f55-4cbd-8d7d-3fbf7efe9d61",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C11",
+      "claim": "Cells that fail to completely separate at the moment of division are selected for in regimes favoring increased aggregate size.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, cells that fail to completely separate at the moment of division are selected for in regimes favoring increased aggregate size (Ratcliff, 2013), a feature reinforced by genetic homogeneity within groups (Nadell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ratcliff, 2013 and Nadell et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "e7582d95-9061-4d93-9666-01ccb2c10abf",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C12",
+      "claim": "The FLO1 gene governing flocculation in yeast is highly variable, with adhesion level changing as a function of the number of tandem repeats within FLO1.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the FLO1 gene governing flocculation in yeast is highly variable: the level of adhesion changes as a function of the number of tandem repeats within FLO1 (Smukalla et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smukalla et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "f94d1094-d931-425f-90a0-1b2c684463b7",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C13",
+      "claim": "Individuals undergo successive life cycles defined by the alternation of a dispersed and a grouped phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals undergo successive life cycles defined by the alternation of a dispersed and a grouped phase, as illustrated in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "cee93ebd-68e8-4607-9c41-fff8f4a9e347",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C14",
+      "claim": "The life cycle consists of an Aggregation Phase (AP), a Reproductive Phase (RP), and a Dispersal Phase (DP).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Aggregation Phase (AP), initially dispersed individuals form groups in a process that is influenced by the values of their trait. In the Reproductive Phase (RP), individuals leave offspring according to the benefits collected within their groups. Finally, all individuals are dispersed anew into a global pool in the Dispersal Phase (DP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "f9741e66-c7f3-404c-ba59-74050c0f561b",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C15",
+      "claim": "The modeled life cycle is consistent with those observed in facultative multicellular microorganisms such as dictyostelids and myxobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Such life cycle is consistent with those observed in facultative multicellular microorganisms such as dictyostelids and myxobacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d044d8ad-710d-4f21-b961-6f5b34ded41e",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C16",
+      "claim": "Higher values of adhesiveness increase the probability that an individual joins a group.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher values of z increase the probability that an individual joins a group (in AP), and at the same time enhance group cohesion, hence group-related benefits (in RP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "29bfd774-5961-4d65-9115-ddfd15178033",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C17",
+      "claim": "The cost of adhesiveness is assumed proportional to its value: C(z)=cz.",
+      "claim_type": "EXPLICIT",
+      "source": "Adhesiveness is costly, and the cost is assumed proportional to its value: C(z)=cz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "e9cda7f2-f348-4eb8-9d83-0d0caef1b9fe",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C18",
+      "claim": "The net payoff for a z-individual in a group of average adhesiveness z\u0304 is bz\u0304-cz.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, a z-individual in a group of average adhesiveness z\u0304 gets a net payoff bz\u0304-cz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "1aca3ec8-bed8-4259-9423-fc5155c875b6",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C19",
+      "claim": "If an individual does not belong to any group, its payoff is merely -cz.",
+      "claim_type": "EXPLICIT",
+      "source": "If an individual does not belong to any group, it does not get any group-related benefit and its payoff is merely -cz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "6e7e00f0-a3c0-4667-8cba-ce2012718e67",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C20",
+      "claim": "During the aggregation phase, individuals are distributed at random into patches of size T.",
+      "claim_type": "EXPLICIT",
+      "source": "During AP, individuals belonging to an initially dispersed, infinite population are distributed at random into patches of size T, akin for instance to the attraction domains observed in Dictyostelium discoideum aggregation (Goldbeter, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption with citation to Goldbeter, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "3d4a5afe-cabb-42b9-bf40-74f1209b2de9",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C21",
+      "claim": "Within every patch, one group is nucleated by a randomly drawn recruiter.",
+      "claim_type": "EXPLICIT",
+      "source": "Within every patch, one group is nucleated by a randomly drawn recruiter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "e9f5b3ea-a213-440c-8e63-9ced121cbb50",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C23",
+      "claim": "Increasing the adhesiveness level z leads to a rise in average group size and a decrease in the fraction of individuals that remain ungrouped.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the adhesiveness level z leads to a rise in average group size, and a decrease in the fraction of individuals that remain ungrouped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the aggregation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "cf97e931-8b0d-48ee-986f-36d66c14e766",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C26",
+      "claim": "Life cycles consisting of alternate phases of dispersion and aggregation are more likely to leave ungrouped cells than life cycles based on single-cell bottlenecks followed by clonal growth of groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Life cycles consisting of alternate phases of dispersion and aggregation are more likely to leave ungrouped cells than life cycles based on single-cell bottlenecks followed by clonal growth of groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "5e40c212-c985-429a-9ce1-b1ca8d2330bc",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C27",
+      "claim": "A subpopulation of nonaggregated cells might boost the evolution of collective function even when cells are genetically unrelated and benefits are weak.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation 3 implies that a subpopulation of nonaggregated cells might boost the evolution of collective function even when cells are genetically unrelated and benefits are weak, and suggests a possible route to the evolution of multicellularity in genetically heterogeneous populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from Equation 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "afb68b1d-c790-478a-9c64-6f834397af3b",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C28",
+      "claim": "For any b>2c, the evolutionary dynamics is bistable.",
+      "claim_type": "EXPLICIT",
+      "source": "For any b>2c, the evolutionary dynamics is bistable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "87f0ee57-766c-4f19-bc41-4079ac7cd5f6",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C30",
+      "claim": "The equilibrium z* can be classified as a 'garden of Eden', i.e. a noninvasible equilibrium that is not convergence-stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The equilibrium z* can be classified as a 'garden of Eden', i.e. a noninvasible equilibrium that is not convergence-stable (Nowak, 1990) (see Section S2 of the SI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result with citation to Nowak, 1990.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "99afb216-2d2d-4576-9f72-ab580c63787a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C31",
+      "claim": "In randomly assorted populations, directly beneficial cooperation is favored by natural selection while altruistic cooperation is not.",
+      "claim_type": "EXPLICIT",
+      "source": "In randomly assorted populations, directly beneficial cooperation is favored by natural selection while altruistic cooperation is not (Wilson, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to Wilson, 1975.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d47bf159-1180-4f65-b7de-e77f8fa21148",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C32",
+      "claim": "In invertase-secreting yeast, a small proportion of the hydrolized glucose is retained by the producer, providing advantage to cooperator cells at low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In invertase-secreting yeast, a small proportion of the hydrolized glucose is retained by the producer, providing advantage to cooperator cells at low frequencies (Gore et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Gore et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "bcb8aa0d-7d46-463d-945a-88b46ba8922f",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C33",
+      "claim": "The bacterium Lactococcus lactis expresses an extracellular protease that helps transform milk proteins into digestible peptides, and such cooperative behavior can persist owing to a small fraction of the peptides being immediately captured by the proteolytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the bacterium Lactococcus lactis expresses an extracellular protease that helps transform milk proteins into digestible peptides: Bachmann et al. (2011) showed that such cooperative behavior can persist owing to a small fraction of the peptides being immediately captured by the proteolytic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bachmann et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "9dcc01a0-ac63-48bf-8522-8f60b8fa76f9",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C34",
+      "claim": "In Pseudomonas aeruginosa colonies grown on solid substrates, the diffusion of pyoverdine is locally confined as cells are densely packed, relaxing the burden of public good production.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pseudomonas aeruginosa colonies grown on solid substrates, the diffusion of pyoverdine is locally confined as cells are densely packed, relaxing the burden of public good production (Julou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Julou et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "c55903ca-1fc6-4694-b473-6dc98bd9f133",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C37",
+      "claim": "Depending on the benefit-to-cost ratio b/c, an increase in adhesiveness can be attributed different social statuses along an evolutionary trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Let us suppose that the benefit-to-cost ratio b\u2215c remains fixed all along an evolutionary trajectory as the resident trait varies. Depending on its values, an increase in adhesiveness can be attributed a different social status: (1) if b\u2215c>T, social mutations are altruistic at the onset of social evolution, and directly beneficial when z^ becomes larger; (2) if 2<b\u2215c<T, social mutations are altruistic throughout the evolutionary trajectory; (3) if b\u2215c<2, social mutations never invade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "082fcd80-f6f4-4181-807a-a56b1cd29d90",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C38",
+      "claim": "The social dilemma raised by costly mutations in adhesiveness relaxes over the course of evolution, leading from altruistic to mutually beneficial behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to what we expected, the social dilemma raised by costly mutations in adhesiveness relaxes over the course of evolution, leading from altruistic to mutually beneficial behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "379770aa-4424-4845-a361-45de28d7d9ad",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C39",
+      "claim": "Altruism may play a more important role in the origin of social behavior than it is currently assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that altruism may play a more important role in the origin of social behavior than it is currently assumed, and that it could be a first attainable step even when it involves large costs, eventually paving the way to the evolution of less sacrificial behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "4e6f2bc4-c10b-4409-bc8f-1aa59966467a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C40",
+      "claim": "The PIP for the individual-based model shows a single interior singular strategy z* characterized as a 'garden of Eden'.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 displays the PIP for the individual-based model, representing the sign of the invasion fitness for each pair of resident z^ and mutant z trait values. A single interior singular strategy z* can be observed and characterized as a 'garden of Eden' in accordance with the analytical results of Section 4.1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "180e6bf5-f73c-4526-9983-981be82a507a",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C41",
+      "claim": "Stochastic fluctuations due to a finite population size can decrease the adhesiveness threshold when the maximal group size T is small.",
+      "claim_type": "EXPLICIT",
+      "source": "However, stochastic fluctuations due to a finite population size can, when the maximal group size T is small, decrease such threshold to the extent that increased adhesiveness evolves for scratch (blue circles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "df84066f-3d7e-4c02-bd51-e3f9d8929020",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C42",
+      "claim": "When there is a physical upper limit to the size of functional groups, a second equilibrium z+ appears that is convergence-stable and non-invasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the change in the benefit function leads to the appearance of a second equilibrium z+ that is convergence-stable and non-invasible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 6 and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "6902d544-92a0-4da3-a76a-a731f9b28b05",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C44",
+      "claim": "Populations of social amoebae D. discoideum do not only form multicellular groups, they also leave behind solitary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aggregation phase, populations of social amoebae D. discoideum do not only form multicellular groups, they also leave behind solitary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "1a6e125b-6d14-42fb-8a21-b606882f824b",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C45",
+      "claim": "Recent experiments show that the existence of an ungrouped component is widespread in lab and wild strains of D. discoideum.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments show that the existence of an ungrouped component is widespread in lab and wild strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reference to recent experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "884f599e-dc05-4e8b-bde0-51e5dfb7161d",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C46",
+      "claim": "Theoretical arguments support the idea that nonaggregated cells play an essential role in the evolution of some peculiarities of social amoebae.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical arguments support the idea that nonaggregated cells play an essential role in the evolution of some peculiarities of those organisms (Dubravcic et al., 2014; Tarnita et al., 2015; Rainey, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dubravcic et al., 2014; Tarnita et al., 2015; Rainey, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "744c0f26-7ad1-456f-9985-0351628556b4",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C47",
+      "claim": "Lonely cells that remain outside groups by chance are of primary importance for the onset of sociality.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary model discussed here also supports the claim that lonely cells, which happen to remain outside groups by chance, are of primary importance for the onset of sociality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "114d541b-83ea-43c3-ad89-b1e0f69c276b",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C48",
+      "claim": "At the evolutionary equilibrium, the ungrouped component of the population vanishes, unless nonlinearities are introduced in the functional dependence of collective benefits and/or individual costs on adhesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "At the evolutionary equilibrium, however, the ungrouped component of the population vanishes, unless nonlinearities are introduced in the functional dependence of collective benefits and/or individual costs on adhesiveness, as observed in Section 4.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "e0df7ef6-d5d0-4998-900c-7463ccdcbcea",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C49",
+      "claim": "Directly beneficial interactions, while frequently observed in nature, might not necessarily be the stepping stone for the evolution of cooperation, but rather an evolutionary endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that directly beneficial interactions, while frequently observed in nature, might not necessarily be the stepping stone for the evolution of cooperation, but rather an evolutionary endpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "3abbb83b-39ef-4bd5-9d01-786705f49e39",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "claim_id": "C50",
+      "claim": "The gradual increase in adhesiveness is a mechanistic way by which unicellular organisms may have made the transition to complex, multicellular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradual increase in adhesiveness is a mechanistic\u2014and seemingly readily achievable\u2014way by which unicellular organisms may have made the transition to complex, multicellular organization (De Monte and Rainey, 2014; Rainey and De Monte, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion with citations to De Monte and Rainey, 2014; Rainey and De Monte, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical model where individuals undergo life cycles alternating between dispersed and grouped phases (Aggregation, Reproduction, Dispersal). Adhesiveness is modeled as a continuous trait z that affects both group formation probability and group-derived benefits, with a linear cost C(z)=cz and payoff structure bz\u0304-cz for grouped individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C21 collectively establish the model framework with clear definitions of life cycle phases, trait effects, and payoff structure. The model assumptions are explicitly stated and internally consistent, providing a well-defined theoretical foundation for subsequent analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "a7de7a25-ea8d-413b-8396-797fadf7b725",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using adaptive dynamics, the authors identify two evolutionary stable strategies at the extremes of adhesiveness (z=0 and z=1), with a bistable evolutionary dynamics for b>2c. An intermediate threshold z* exists as a 'garden of Eden' equilibrium that is non-invasible but not convergence-stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28, C30, and C40 are mutually consistent and supported by both analytical derivations (Section 4.1) and individual-based simulations (Figure 5). The characterization of z* as a 'garden of Eden' is mathematically justified and validated computationally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cohesive groups can evolve by small mutational steps if initial adhesiveness exceeds a minimum threshold. The mechanism relies on assortment created by differential propensities to remain ungrouped, which can compensate for adhesiveness costs even when cells are genetically unrelated and benefits are weak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C23, C26, and C27 are supported by the analytical condition in Equation 3 and the demonstration that ungrouped individuals create positive assortment. The mechanism is novel and mathematically justified, though the biological relevance depends on the realism of the aggregation model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Along evolutionary trajectories, the social nature of adhesiveness mutations changes from altruistic to directly beneficial as adhesiveness increases. Altruism arises first despite being more challenging, suggesting it may play a more important role in the origin of social behavior than currently assumed, with directly beneficial interactions representing an evolutionary endpoint rather than a stepping stone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C38, C39, and C49 are supported by the analysis in Section 4.2 and Figure 4, which demonstrates how the gain from switching changes along evolutionary trajectories. The classification of mutations as altruistic vs. directly beneficial is mathematically rigorous based on Equation 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "d5d1686e-a2f6-4622-856a-1ee04f56a6d7",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stochastic fluctuations due to finite population size can decrease the adhesiveness threshold when maximal group size T is small, potentially allowing increased adhesiveness to evolve from scratch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by numerical simulations shown in Figure 3 (blue circles), demonstrating that demographic stochasticity can facilitate the evolution of adhesiveness below the deterministic threshold. This is a biologically relevant finding for small populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "484e626c-8f5c-484d-b8cb-4cd6d07db110",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When nonlinearities are introduced (physical upper limits on group size or nonlinear costs), a second convergence-stable equilibrium z+ appears with intermediate adhesiveness, maintaining a fraction of ungrouped individuals at evolutionary equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C48 are supported by individual-based simulations shown in Figures 6 and 7. The emergence of intermediate equilibria under nonlinear benefit/cost functions is demonstrated computationally, though analytical treatment is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "a8e253cd-2399-4ed2-bf83-1d7970075d17",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model supports the importance of solitary cells in the evolution of sociality, consistent with observations in D. discoideum where ungrouped cells are widespread. Lonely cells that remain outside groups by chance are of primary importance for the onset of sociality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 connect the model predictions to biological observations and prior theoretical work. The role of ungrouped cells is supported by the analytical results (Equation 3) and is consistent with cited experimental and theoretical literature on D. discoideum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "53d0b97f-0163-4f07-9db4-5835008a68f1",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The gradual increase in adhesiveness provides a mechanistic and readily achievable route by which unicellular organisms may have made the transition to complex, multicellular organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is an inference about evolutionary history that extends beyond what the model directly demonstrates. While the model shows adhesiveness can evolve gradually under certain conditions, the claim about actual evolutionary transitions requires additional empirical support and consideration of alternative mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about cellular adhesion in microbial aggregates, evolutionary transitions, cooperation mechanisms, and the variability of adhesion-related genes like FLO1 in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C12 represent established knowledge from the literature, appropriately cited. These claims provide context and motivation for the study but do not constitute novel findings of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    },
+    {
+      "id": "542b89bf-69ab-4485-9268-f07b57af9ea6",
+      "content_id": "0fcbcbaa-ef96-4095-a1cd-9cda900a6537",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work showing that directly beneficial cooperation is favored in randomly assorted populations, with examples from yeast invertase secretion, L. lactis protease production, and P. aeruginosa pyoverdine diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 accurately represent cited prior work and provide context for understanding the significance of the finding that altruism can arise before directly beneficial behavior. The citations appear appropriate and the characterizations accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:49:25.308332Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f94d1094-d931-425f-90a0-1b2c684463b7",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "cee93ebd-68e8-4607-9c41-fff8f4a9e347",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "f9741e66-c7f3-404c-ba59-74050c0f561b",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "d044d8ad-710d-4f21-b961-6f5b34ded41e",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "29bfd774-5961-4d65-9115-ddfd15178033",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "e9cda7f2-f348-4eb8-9d83-0d0caef1b9fe",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "1aca3ec8-bed8-4259-9423-fc5155c875b6",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "6e7e00f0-a3c0-4667-8cba-ce2012718e67",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "3d4a5afe-cabb-42b9-bf40-74f1209b2de9",
+      "result_id": "7abc08e9-3278-4e21-bfe1-09f6823d4e6b"
+    },
+    {
+      "claim_id": "820a650e-61e0-42f1-9e98-e8cae3188098",
+      "result_id": "a7de7a25-ea8d-413b-8396-797fadf7b725"
+    },
+    {
+      "claim_id": "afb68b1d-c790-478a-9c64-6f834397af3b",
+      "result_id": "a7de7a25-ea8d-413b-8396-797fadf7b725"
+    },
+    {
+      "claim_id": "87f0ee57-766c-4f19-bc41-4079ac7cd5f6",
+      "result_id": "a7de7a25-ea8d-413b-8396-797fadf7b725"
+    },
+    {
+      "claim_id": "4e6f2bc4-c10b-4409-bc8f-1aa59966467a",
+      "result_id": "a7de7a25-ea8d-413b-8396-797fadf7b725"
+    },
+    {
+      "claim_id": "d88bb4cd-f32d-4367-9bb2-5d3c30215d0a",
+      "result_id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e"
+    },
+    {
+      "claim_id": "c27bae1b-5e21-43af-b171-92f6a20580c1",
+      "result_id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e"
+    },
+    {
+      "claim_id": "e9f5b3ea-a213-440c-8e63-9ced121cbb50",
+      "result_id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e"
+    },
+    {
+      "claim_id": "cf97e931-8b0d-48ee-986f-36d66c14e766",
+      "result_id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e"
+    },
+    {
+      "claim_id": "5e40c212-c985-429a-9ce1-b1ca8d2330bc",
+      "result_id": "4f596d13-8afc-46da-aa7b-d8ea9b521e9e"
+    },
+    {
+      "claim_id": "97715354-e7cc-4388-a3b9-3646ec4c104a",
+      "result_id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e"
+    },
+    {
+      "claim_id": "c55903ca-1fc6-4694-b473-6dc98bd9f133",
+      "result_id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e"
+    },
+    {
+      "claim_id": "082fcd80-f6f4-4181-807a-a56b1cd29d90",
+      "result_id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e"
+    },
+    {
+      "claim_id": "379770aa-4424-4845-a361-45de28d7d9ad",
+      "result_id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e"
+    },
+    {
+      "claim_id": "e0df7ef6-d5d0-4998-900c-7463ccdcbcea",
+      "result_id": "39816ae0-65b2-4081-ac7a-d9b612f82e4e"
+    },
+    {
+      "claim_id": "180e6bf5-f73c-4526-9983-981be82a507a",
+      "result_id": "d5d1686e-a2f6-4622-856a-1ee04f56a6d7"
+    },
+    {
+      "claim_id": "df84066f-3d7e-4c02-bd51-e3f9d8929020",
+      "result_id": "484e626c-8f5c-484d-b8cb-4cd6d07db110"
+    },
+    {
+      "claim_id": "114d541b-83ea-43c3-ad89-b1e0f69c276b",
+      "result_id": "484e626c-8f5c-484d-b8cb-4cd6d07db110"
+    },
+    {
+      "claim_id": "6902d544-92a0-4da3-a76a-a731f9b28b05",
+      "result_id": "a8e253cd-2399-4ed2-bf83-1d7970075d17"
+    },
+    {
+      "claim_id": "1a6e125b-6d14-42fb-8a21-b606882f824b",
+      "result_id": "a8e253cd-2399-4ed2-bf83-1d7970075d17"
+    },
+    {
+      "claim_id": "884f599e-dc05-4e8b-bde0-51e5dfb7161d",
+      "result_id": "a8e253cd-2399-4ed2-bf83-1d7970075d17"
+    },
+    {
+      "claim_id": "744c0f26-7ad1-456f-9985-0351628556b4",
+      "result_id": "a8e253cd-2399-4ed2-bf83-1d7970075d17"
+    },
+    {
+      "claim_id": "3abbb83b-39ef-4bd5-9d01-786705f49e39",
+      "result_id": "53d0b97f-0163-4f07-9db4-5835008a68f1"
+    },
+    {
+      "claim_id": "bc1dca98-292f-4f4e-be0d-dde29c1ce969",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "dcff58dd-56fe-43a3-b6e9-e050f71062ac",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "0868ea75-eadc-4f79-8434-e36c940ab27d",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "d224ccde-ad19-4980-b4b1-bd9e99a3f5c2",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "06efa4d1-aaeb-4506-9cc3-679a790c717a",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "cfa1b59a-1ada-4cd9-aa60-1cd24d65f03c",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "161b78b5-4f55-4cbd-8d7d-3fbf7efe9d61",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "e7582d95-9061-4d93-9666-01ccb2c10abf",
+      "result_id": "f3ddfdce-d224-4e8d-bc5d-58ea94ea6fbe"
+    },
+    {
+      "claim_id": "99afb216-2d2d-4576-9f72-ab580c63787a",
+      "result_id": "542b89bf-69ab-4485-9268-f07b57af9ea6"
+    },
+    {
+      "claim_id": "d47bf159-1180-4f65-b7de-e77f8fa21148",
+      "result_id": "542b89bf-69ab-4485-9268-f07b57af9ea6"
+    },
+    {
+      "claim_id": "bcb8aa0d-7d46-463d-945a-88b46ba8922f",
+      "result_id": "542b89bf-69ab-4485-9268-f07b57af9ea6"
+    },
+    {
+      "claim_id": "9dcc01a0-ac63-48bf-8522-8f60b8fa76f9",
+      "result_id": "542b89bf-69ab-4485-9268-f07b57af9ea6"
+    }
+  ],
+  "comparisons": []
+}

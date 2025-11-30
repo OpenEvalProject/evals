@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes background knowledge about CFTR structure and ATP-dependent gating mechanism. CFTR is a chloride channel mutated in CF patients, belongs to the ABC protein superfamily, and is gated by ATP following PKA-mediated phosphorylation. ATP-binding induces NBD dimerization that opens the pore, while ATP hydrolysis at site 2 disrupts the dimer and closes the pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C16 collectively describe well-established knowledge about CFTR structure and function, supported by multiple citations to prior literature (Riordan et al., 1989; Vergani et al., 2005; Smith et al., 2002; Chen et al., 2003; Aleksandrov et al., 2002; Basso et al., 2003). This background information provides the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work established that a hydrogen bond between R555 and T1246 forms in open but not closed ATP-bound channels. Single mutations R555K and T1246N prevent this bond formation by disrupting proper spacing, while the double mutation R555K-T1246N restores it. These positions have co-evolved as a pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe prior findings from Vergani et al., 2005, establishing the R555-T1246 hydrogen bond as a marker of NBD dimerization in ATP-bound channels. This prior work provides the conceptual framework and specific mutations used in the current study to probe spontaneous gating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Wild-type CFTR exhibits rare spontaneous openings without ATP, but certain CF mutants (e.g., G551D) rely on spontaneous gating as their only mechanism. Mutations at positions 355 and 978 enhance spontaneous activity, with additive effects in the P355A-K978C double mutant that shift spontaneous Po into a tractable range for quantitative study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C28 establish the rationale for using the P355A-K978C background construct. The claims are supported by citations to prior work (Szollosi et al., 2010; Bompadre et al., 2007; Jih et al., 2013; Wang et al., 2010; Wei et al., 2014) and experimental data in Figure 1. The background construct enables quantitative analysis of spontaneous gating that would be impossible in wild-type CFTR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The P355A-K978C double mutant exhibits robust ATP-independent chloride currents and high Po both with and without ATP, showing minimal PKA dependence. This background mutation increases spontaneous Po from 0.000053 to 0.15 and Po in ATP from 0.11 to 0.80 in pre-phosphorylated channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 characterize the P355A-K978C background construct using macroscopic current recordings (Figure 1c-d). The data demonstrate that this construct has sufficiently high spontaneous activity for quantitative analysis while maintaining ATP responsiveness. Sample sizes are adequate (n=5-21) and controls (chloride removal, PKA manipulation) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C41",
+      "C45",
+      "C46"
+    ],
+    "result": "Single mutations R555K and T1246N in the P355A-K978C background dramatically reduce spontaneous Po (to ~0.034-0.044), but the double mutant R555K-T1246N restores high spontaneous Po (0.11). This non-additive behavior indicates a stabilizing hydrogen bond forms between R555 and T1246 in the spontaneous open state, implying the NBD dimer interface tightens at site 2 during ATP-independent pore opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C41, C45-C46 present the core thermodynamic mutant cycle analysis demonstrating NBD dimerization during spontaneous gating. The non-additive effects of single vs. double mutations (Figure 2b-e) provide strong evidence for a state-dependent interaction. Sample sizes are adequate (n=18-21), and the logic follows established mutant cycle principles. The conclusion that NBD dimerization occurs during spontaneous opening is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Kinetic analysis reveals that R555K and T1246N mutations reduce spontaneous Po primarily by decreasing opening rates (restored in the double mutant), with minimal effects on closing rates. The coupling free energy change is significant for the transition state relative to closed (\u0394\u0394Gint(T-C) = -2.30 \u00b1 0.46 kT, p=0.0001) but not for transition relative to open (\u0394\u0394Gint(T-O) = +0.62 \u00b1 0.34 kT, p=0.09). This indicates the R555-T1246 hydrogen bond forms already in the transition state for spontaneous opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 present kinetic analysis showing when during the gating cycle the NBD interface tightens (Figure 2f-j). The statistical analysis is appropriate with adequate sample sizes (n=15-19), and the p-values support the conclusions. The finding that the hydrogen bond forms in the transition state parallels prior findings for ATP-bound channels (Vergani et al., 2005; Sorum et al., 2015), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C57",
+      "C71"
+    ],
+    "result": "Spontaneous openings are strictly coupled to NBD dimerization, which can occur even without ATP. Coordinated NBD/pore movements are intrinsic to CFTR, with ATP altering the stability but not the fundamental structural architecture of open and closed conformations. The inherent open-channel-state structure is similarly organized in the absence or presence of ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C57, C71 state the main conclusions of the study. These are well-supported by the mutant cycle analysis (C37-C54) showing that the same R555-T1246 interaction that marks NBD dimerization in ATP-bound channels also forms during spontaneous opening. The conclusion that ATP modulates stability rather than changing fundamental architecture is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The findings have implications for understanding CFTR gating mechanisms. ATP binding sites are likely inaccessible in open channels even without bound ATP, suggesting ATP binding/unbinding occurs only in closed channels. This means the ATP-free open state is unlikely part of the ATP-dependent gating cycle, and CFTR gating principles differ fundamentally from ligand-gated channels that follow cyclic equilibrium mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58-C66 discuss mechanistic implications of the findings. The inference that ATP binding sites are occluded in spontaneous open channels (C60-C61) logically follows from the finding of NBD dimerization. The distinction from ligand-gated channels (C63-C66) is well-reasoned, supported by citations (Grosman and Auerbach, 2001), and follows from the structural constraints demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Various modulators (PKA phosphorylation, ivacaftor, intracellular loop mutations) affect both unliganded and liganded CFTR activity in correlated ways, which can be explained by energetic stabilization or destabilization of the inherent open-channel-state structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 discuss how the findings provide a unified explanation for diverse modulatory effects on CFTR. The claims are supported by citations to prior work (Wang et al., 2010; Jih et al., 2013; Wei et al., 2014; Wang et al., 2014). The proposed explanation is a reasonable inference from the finding that open-channel structure is similar with and without ATP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The P355A-K978C gain-of-function mutations stabilize the transition state by ~4.8 kT, far less than they stabilize the open state (~8.1 kT). This suggests these mutations affect protein positions that have not yet reached fully open-like conformations in the transition state, and the pore is likely still closed in the transition state for spontaneous openings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 analyze the energetic effects of the background mutations (Figure 3c). The calculations are based on measured Po and burst duration changes, and the logic is sound. The conclusion that the pore remains closed in the transition state is consistent with similar findings for ATP-bound channels and is a reasonable inference from the energetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C81",
+      "C82"
+    ],
+    "result": "Comparison of spontaneous WT gating with ATP-driven gating of hydrolysis-deficient mutants suggests bound ATP stabilizes the open state by ~10.3 kT and the transition state by ~5.2 kT. Although the NBD interface tightens in the transition state, ATP's 'molecular glue' effect strengthens further in the stable open state, implying additional rearrangements occur within the dimer interface between transition and open states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77, C81-C82 attempt to quantify ATP's energetic contribution by comparing different constructs and conditions. However, this comparison involves multiple assumptions: (1) that K1250R mutant gating accurately represents ATP-bound equilibrium gating, (2) that WT spontaneous gating represents the unliganded state, and (3) that differences between these reflect solely ATP binding effects. The analysis does not account for potential differences in phosphorylation states or other confounding factors. While the qualitative conclusion is reasonable, the quantitative estimates should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study used standard electrophysiological methods: Xenopus oocytes were injected with CFTR cRNA, and inside-out patch-clamp recordings were performed at 25\u00b0C and -80 mV. Spontaneous gating parameters were extracted from the last ~4 minutes of 5-minute ATP-free segments to allow for ATP dissociation from site 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 describe the experimental methods. The approaches are standard and appropriate for CFTR channel studies. The decision to analyze the last ~4 minutes of ATP-free recordings (C88) is justified by the known ATP retention time at site 1 (C89, supported by Tsai et al., 2010). Controls such as chloride removal (C87, Figure 1\u2014figure supplement 1) validate that measured currents are CFTR-mediated.",
+    "result_type": "MINOR"
+  }
+]

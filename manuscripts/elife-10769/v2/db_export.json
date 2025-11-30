@@ -1,0 +1,2409 @@
+{
+  "submission": {
+    "id": "5289880a-f10d-4d5a-9e0c-81c0fd4fcffb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:52:57.410685Z",
+    "updated_at": "2025-11-29T22:52:57.410685Z"
+  },
+  "content": [
+    {
+      "id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "submission_id": "5289880a-f10d-4d5a-9e0c-81c0fd4fcffb",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial DNA copy number variation across human cancers\n\n## Authors\n\n- Ed Reznik<sup>1</sup> ([ORCID: 0000-0002-6511-5947](https://orcid.org/0000-0002-6511-5947)) \u2020\n- Martin L Miller<sup>2</sup>\n- Yasin \u015eenbabao\u011flu<sup>1</sup> ([ORCID: 0000-0003-0958-958X](https://orcid.org/0000-0003-0958-958X))\n- Nadeem Riaz<sup>3</sup>\n- Judy Sarungbam<sup>4</sup>\n- Satish K Tickoo<sup>4</sup>\n- Hikmat A Al-Ahmadie<sup>4</sup>\n- William Lee<sup>1</sup>\n- Venkatraman E Seshan<sup>5</sup>\n- A Ari Hakimi<sup>1</sup>\n- Chris Sander<sup>1</sup>\n\n### Affiliations\n\n1. Computational Biology Program Memorial Sloan Kettering Cancer Center New York United States\n2. Cancer Research UK Cambridge Institute Cambridge United Kingdom\n3. Department of Radiation Oncology Memorial Sloan Kettering Cancer Center New York United States\n4. Department of Pathology Memorial Sloan Kettering Cancer Center New York United States\n5. Department of Epidemiology and Biostatistics Memorial Sloan Kettering Cancer Center New York United States\n6. Urology Service, Department of Surgery Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations, deletions, and changes in copy number of mitochondrial DNA (mtDNA), are observed throughout cancers. Here, we survey mtDNA copy number variation across 22 tumor types profiled by The Cancer Genome Atlas project. We observe a tendency for some cancers, especially of the bladder, breast, and kidney, to be depleted of mtDNA, relative to matched normal tissue. Analysis of genetic context reveals an association between incidence of several somatic alterations, including IDH1 mutations in gliomas, and mtDNA content. In some but not all cancer types, mtDNA content is correlated with the expression of respiratory genes, and anti-correlated to the expression of immune response and cell-cycle genes. In tandem with immunohistochemical evidence, we find that some tumors may compensate for mtDNA depletion to sustain levels of respiratory proteins. Our results highlight the extent of mtDNA copy number variation in tumors and point to related therapeutic opportunities.\n\n## Introduction\n\nHuman cells contain many copies of the 16-kilobase mitochondrial genome, which encodes 13 essential components of the mitochondrial electron transport chain and ATP synthase. Alterations of mitochondrial DNA (mtDNA), via inactivating genetic mutations or depletion of the number of copies of mtDNA in a cell, can impair mitochondrial respiration and contribute to pathologies as diverse as encephelopathies and neuropathies (El-Hattab and Scaglia, 2013), and the process of aging (Balaban et al., 2005; Finkel and Holbrook, 2000). In cancer, a number of studies have examined the role of mtDNA mutations in carcinogenesis (Wallace, 2012; Ju et al., 2014; Larman et al., 2012; He et al., 2010). However, the contribution of changes in the gross number of mtDNA genomes in a tumor (i.e. the \u2018mtDNA copy number\u2019) to tumor development and progression has not been adequately investigated.\n\nIn contrast to the fixed (diploid) copy number of the nuclear genome, many copies of mtDNA exist within each cell, and these levels can fluctuate. Because mitochondria undergo a constant process of fusion and fission, it is difficult to meaningfully determine the number of mtDNA molecules per mitochondrion. Instead, studies have focused on measuring mtDNA copy number per cell, with estimates for\u00a0humans\u00a0that vary between a few hundred and over one hundred thousand copies, depending on the tissue under examination (Wai et al., 2010). Furthermore, because mtDNA serves as a template for the transcription of essential electron transport chain complexes, the quantity of mtDNA in a cell may serve a surrogate marker for the cell\u2019s capacity to conduct oxidative phosphorylation if the copy number of mtDNA is rate-limiting. For instance, a recent study estimated that energy-intensive tissues such as cardiac and skeletal muscle contained between 4000 and 6000 copies of mtDNA per cell, while liver, kidney, and lung tissues averaged between 500 and 2000 copies (D'Erchia et al., 2015).\n\nMitochondrial dysfunction plays several distinct roles in cancer (Schon et al., 2012; Wallace, 2012; Larman et al., 2012). First, the normal functions of mitochondria (e.g. respiration) may be subverted to support the growth of the tumor. A canonical example of this is the observation that many tumors suppress mitochondrial respiration in favor of increased uptake of glucose and secretion of lactate (\u2018the Warburg effect\u2019), a phenomenon which has found clinical utility for imaging of tumors using FDG-PET (Vander Heiden et al., 2009). Second, mitochondria are susceptible to mutations in nuclear- and mitochondrially-encoded genes, and a subset of tumors are known to be caused by mutations of the mitochondrial enzymes FH, SDH, and IDH (King et al., 2006). Furthermore, mtDNA dysfunction affecting the electron transport chain can lead to generation of excess reactive oxygen species (ROS), contributing to tumor cell metastasis (Ishikawa et al., 2008).\n\nTo date, no comprehensive analysis of mtDNA copy number changes in tumors has been completed, despite a large literature of isolated reports (Yu, 2011). Large-scale studies of mtDNA in cancer have instead focused on the analysis of mutations and heteroplasmy, largely ignoring the contribution of mtDNA copy number variation to the development and progression of tumors. Here, we use whole-genome and whole-exome sequencing data to examine changes in mtDNA copy number across a panel of cancer types profiled by The Cancer Genome Atlas (TCGA) consortium. Using the resulting mtDNA copy number estimates, we ask fundamental questions about mtDNA and cancer. We investigate whether evidence of the Warburg effect can be found in patterns of mtDNA accumulation or depletion. We further examine the connection between gene expression levels and mtDNA copy number, and identify a subset of mitochondrially-localized metabolic pathways exhibiting a high degree of co-expression with mtDNA levels. Finally, we ask whether gross variations of mtDNA copy number are linked to the incidence of somatic alterations (including mutations and copy number alterations) across cancer types. Altogether, our results shed light on the contribution of aberrant mitochondrial function, through changes in mtDNA content, to cancer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig1-v2.jpg)\n\n**Figure 1.:** (A) Reads were analyzed to determine the number aligning to each chromosome. Relative abundance of mitochondrial DNA was calculated as the ratio of mtDNA reads to nuclear DNA reads, and corrected for tumor purity and ploidy. The results of these calculations were employed in three different types of analysis. (B) Comparisons across samples profiled by both whole exome and whole genome sequencing provided validation of mtDNA copy number estimates. (C) Pairs of matched tumor/adjacent-normal samples were compared to uncover patterns of mtDNA accumulation and depletion. (D) Using all data available (including tumor samples lacking matched normal samples), statistical associations between mtDNA copy number and (1) mutation/copy number alterations, and (2) gene expression, were calculated.\n\n## Results\n\n### Calculation of mtDNA abundance\n\nTo estimate the copy number of mtDNA in a tumor sample, we implemented a computationally efficient and fast approach based on comparing the number of sequencing reads aligning to (1) the mitochondrial (MT) genome and (2) the nuclear genome. Comparable approaches have been used to estimate somatic copy number alterations within the nuclear genome in cancer [for a review, see Zhao et al. (2013)]. The approach assumes that regions of the genome of equal ploidy should be sequenced to comparable depth. In a normal human cell, the autosomal nuclear genome is at a fixed (diploid) copy number. Thus, by calculating the ratio of reads aligning to the mitochondrial and nuclear genomes, respectively, it is possible to estimate mtDNA ploidy relative to a diploid standard. This approach to assaying mtDNA copy number has been proposed and implemented by others in prior work (Guo et al., 2013; D'Erchia et al., 2015; Samuels et al., 2013).\n\nTo estimate mtDNA copy number, we calculated the ratio of (1) the number of sequencing reads mapping to the MT genome ($r_{m}$) to (2) the number of reads mapping to the nuclear genome ($r_{n}$) (Equation 1). Because tumor cells can exhibit large-scale genomic\u00a0amplifications and deletions, and may be infiltrated by stromal and immune cells, we applied a ploidy/purity correction (\u2018$R$\u2019), described in detail in the Materials\u00a0and\u00a0methods. This calculation yields the relative mtDNA copy number $m$. Assuming two samples have been processed in identical manners, the sample with a higher value of $m$ contains more copies of mtDNA (Guo et al., 2013; D'Erchia et al., 2015). In line with previous studies (e.g. [Ju et al., 2014]), we observed significant variation in mean mtDNA copy number between sequencing centers, as well as between each batch (i.e., each TCGA plate ID) within a single sequencing center. We applied a batch correction to control for this effect (see Materials\u00a0and\u00a0methods).\n\n$$\nm=\\frac{r_{m}}{r_{n}}\\timesR\n$$\n\nWe applied this method to whole\u00a0exome sequencing (WXS) and whole\u00a0genome sequencing (WGS) data from 22 distinct TCGA studies (Figure 2, see Materials\u00a0and\u00a0methods for further details on data collection). To validate estimates of mtDNA copy number, we compared estimates from samples submitted to both WXS and WGS. Although mitochondrial reads are abundant in both WGS and WXS, the two sequencing methods capture mtDNA at different efficiencies: exome sequencing involves the targeted enrichment of exonic regions prior to sequencing and does not target mtDNA (Samuels et al., 2013), while WGS sequences cellular DNA in an unbiased manner. If our approach to estimating mtDNA copy number is accurate, then we expect that the two sequencing platforms should offer comparable estimates of mtDNA copy number across a panel of samples,\u00a0i.e., samples with high mtDNA copy number in WGS should have similarly high mtDNA copy number in WXS. We compared mtDNA copy number estimates in 1110 samples across 8 tumor types profiled by both WXS and WGS, controlling for sequencing center and TCGA plate ID. We confirmed that across all combinations of cancer types and sequencing centers, WXS and WGS offer significantly correlated estimates of mtDNA copy number (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig2-v2.jpg)\n\n**Figure 2.:** Whole-exome and whole-genome sequencing data were obtained from 22 TCGA studies. Abbreviations for each cancer type follow the standard TCGA nomenclature. The data were processed at four different sequencing centers, each of which was analyzed separately. Over 1000 samples were paired instances of tumor/adjacent-normal tissue from the same patient, which were used to quantify changes in mtDNA content across tumors.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each point is one sample, X-axis indicates copy number from whole exome sequencing, Y-axis indicates copy number from whole genome sequencing. All correlations are statistically significant (Spearman $\u03c1$ p-value, BLCA:\u00a02\u00d710-14; BRCA: 6\u00d710-18; GBM:\u00a02\u00d710-13; HNSC:\u00a01\u00d710-18;\u00a0KIRC:\u00a03\u00d710-12; LUAD: 4\u00d710-10; THCA:\u00a04\u00d710-23; UCEC:\u00a02\u00d710-31).\n\n### Gross changes in mtDNA content are evident in many cancers\n\nDo tumors have different numbers of copies of mtDNA compared\u00a0to normal tissue? We investigated whether tumor samples showed a significant change in mtDNA content, relative to matched normal tissues. To do so, for each pair of tumor/adjacent-normal samples collected from the same patient, sequenced at a single sequencing center and within the same batch (1090 pairs in total), we calculated the ratio\n\n$$\nr=log_{2}\u2062(\\frac{m_{T}}{m_{N}})\n$$\n\nwhere $m_{T}$ and $m_{N}$ are the mtDNA copy number estimates in tumor and normal tissues, respectively. We then used non-parametric Wilcoxon signed rank tests to assess whether each cancer type was signficantly enriched for tumor samples with higher or lower mtDNA content\u00a0than matched normal tissue. The analysis was restricted to 15 cancer types for which we had at least 10 matched tumor/normal pairs. To ensure a meaningful comparison, we only used adjacent-normal tissue (and not blood) for the analysis. We elected to focus on analyzing whole-exome sequencing data, for which we had the largest number of samples. A complete list of all calculations is available in Supplementary file 1.\n\nStrikingly, seven of the fifteen tumor types analyzed showed a statistically significant (BH-corrected Mann-Whitney p-value <0.05) decrease in mtDNA abundance in tumor samples (Figure 3A). These \u2018mtDNA-depleted\u2019 tumor types included bladder\u00a0(BLCA), breast\u00a0(BRCA), esophogeal\u00a0(ESCA), head and neck squamous\u00a0cell\u00a0(HNSC), kidney (both clear-cell,\u00a0KIRC, and papillary, KIRP,\u00a0but not chromophobe, KICH,\u00a0subtypes), and liver (LIHC)\u00a0cancers. Despite a tendency towards mtDNA depletion, all tumor types contained at least one sample with higher mtDNA content than adjacent normal tissue. Nevertheless, the depletion effect was exceptionally strong in several tumor types: except for a handful of WGS samples, nearly all bladder\u00a0tumors\u00a0were depleted of mtDNA. Similarly, 87% of clear-cell kidney tumor samples contained less mtDNA than their normal tissue counterparts. In contrast, a single tumor type, lung adenocarcinoma\u00a0(LUAD), showed statistically significant mtDNA accumulation. In cases where sufficient numbers of both WGS and WXS data were available (bladder, breast, head and neck, clear-cell kidney, thyroid, endometrial, and lung adenocarcinomas), we observed a consistent effect across samples processed by both platforms (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-v2.jpg)\n\n**Figure 3.:** Normalized histograms and density plots illustrate log2 ratio of mtDNA content in tumor tissue, to mtDNA content in normal tissue. Each row is a different tumor type. Statistical significance of trends is assessed using a Wilcoxon sign rank test, and p-values are corrected using the Benjamini-Hochberg procedure. Cancer\u00a0types displaying significant depletion/accumulation of mtDNA are colored in blue/red. Seven of fiteen tumor types show a significant depletion of mtDNA content (a shift of the distribution to the left of the dashed line), relative to normal tissue. One tumor type, lung adenocarcinomas, shows an increase in mtDNA content, relative to normal tissue.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Trends in WGS are in agreement with those in Figure 2 in whole exome sequencing (WXS). All data for this figure can be found in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Horizontal line indicates a log ratio of zero (i.e., tumor and normal tissue have identical copy number).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Horizontal line indicates a log ratio of zero (i.e., tumor and normal tissue have identical copy number).\n\nOur estimates of tumor mtDNA content are based on sequencing DNA of bulk tumor tissue, which includes stromal and immune cell infiltration. While the effect of purity on mtDNA copy number is partially accounted for by the correction factor $R$, it is still possible that tumor impurity may bias the calculation of copy number (for example, if immune cells have lower mtDNA copy number than adjacent-normal tissue). Although our computational method is unable to deconvolve sequencing traces arising from tumor cells vs. infiltrate, we nevertheless investigated the statistical association between tumor mtDNA content and stromal/immune infiltration. We obtained estimates of stromal and immune cell infiltration based on gene expression data for eight tumor types calculated using the ESTIMATE algorithm (Yoshihara et al., 2013). We correlated these values with estimates of mtDNA copy number, with full results reported in Figure 3\u2014figure supplements 2\u20135 and Figure 3\u2014source data 1, with p-values reported as uncorrected for multiple hypothesis testing. We observed a recurrent but weak negative correlation between tumor mtDNA content and immune infilitration score. Further detailed study is required to trace the contribution of infiltrating cells to mtDNA content.\n\nTo further relate changes in mtDNA content to clinical progression of disease, we used Cox regression to determine if tumor mtDNA copy number was a significant predictor of patient survival (Figure 4). In total, five cancer types showed statistically significant association between patient survival and mtDNA content. In three cancer types (adrenocortical\u00a0carcinoma, p-value 0.026; chromophobe renal cell carcinoma, p-value 0.053; and low-grade\u00a0glioma, p-value 0.009), high tumor mtDNA content was associated with better survival. The opposite trend, of poor survival in patients with high tumor mtDNA, was observed in clear-cell renal cell carcinoma (p-value 0.023) and melanoma (p-value 0.043). The finding regarding KICH is particularly intriguing given the central role mitochondrial dysfunction has been proposed to play in the disease (Davis et al., 2014). That mtDNA copy number correlates with better or worse survival, depending on cancer type, suggests that other confounding factors strongly tied to survival, such as the presence of somatic mutations, may influence mtDNA levels. In a later section, we will investigate this hypothesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig4-v2.jpg)\n\n**Figure 4.:** For visualization purposes, patients are partitioned into two groups, based on tumor mtDNA copy number relative to the median mtDNA copy number across all tumor samples in the cancer type. Cox regression identified a significant association between high tumor mtDNA and better survival in these two tumor types (ACC, p-value 0.026; KICH, p-value 0.053).\n\n### mtDNA copy number is correlated to the expression of mitochondrial metabolic genes\n\nProteins encoded in mtDNA localize exclusively to the mitochondrial electron transport chain and ATP synthase, and fluctuations in mtDNA copy number are well-known to influence the level of transcription of these genes. It has also been observed that complete depletion of mtDNA in cell lines by exposure to ethidium bromide affects a number of additional signaling pathways (Chandel and Schumacker, 1999). Thus, we were compelled to ask if changes in mtDNA content narrowly influenced changes in the expression of oxidative phosphorylation genes, or if they were more broadly connected to the other functions of mitochondria.\n\nOur approach to this question was to search for gene sets whose transcriptional signatures were highly correlated to mtDNA copy number. To do so, we calculated the non-parametric Spearman correlation between the expression of each gene and mtDNA copy number, and then used the mean-rank gene set test implemented in limma (Law et al., 2014) to identify gene sets which were significantly enriched for highly correlated genes.The approach was applied in an unbiased manner to all Reactome gene sets in the Canonical Pathways group from the MSigDB database (Liberzon et al., 2011).\n\nIn general, each tissue exhibited specific gene sets which were strongly correlated to mtDNA copy number levels. However, when aggregating across all cancer types, mitochondrially-localized metabolic pathways showed the most\u00a0frequent\u00a0significant correlation with mtDNA abundance (Figure 5 and Supplementary file 2, Worksheet Fig5Data). This recurrent positive correlation between expression of mitochondrial genes and mtDNA copy number across many tumor types served as a second, independent validation that estimates of mtDNA copy number reflected in vivo mtDNA ploidy. We also calculated the correlation between mtDNA copy number and the expression of TFAM, a critical transcription and replication factor which binds to mtDNA in nucleoids, and found a significant positive correlation (Spearman p-value <0.05) in 34% of studies (Figure 5\u2014source data 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig5-v2.jpg)\n\n**Figure 5.:** (A) Correlations between all genes and mtDNA content are calculated. Then, gene sets enriched for high/low correlation coefficients are identified. (B) mtDNA copy number is most strongly correlated to metabolic pathways including respiratory electron transport and the TCA cycle, which are localized to the mitochondria. Enrichment score corresponds to the -log10 p-value of the statistical enrichment test, accounting for the sign of the correlation (i.e. positive or negative correlation). Red blocks indicate an enrichment for positive correlation, blue blocks indicate an enrichment for negative correlation. The top ten most frequently\u00a0positively correlated gene sets across all studies are depicted. Full results are available in Supplementary file 2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Enrichment score corresponds to the -log10 p-value of the statistical enrichment test, accounting for the sign of the correlation (i.e., positive or negative). Red blocks indicate an enrichment for po\u00a0sitive correlation, blue blocks indicate an enrichment for negative correlation. Full results are available in Figure 5\u2014source data 1.\n\nIn line with expectation, we found that the \u2018TCA Cycle and Respiratory Electron Transport\u2019 gene set was the most frequently\u00a0correlated to mtDNA copy number (1st out of 674 gene sets). Among the remaining top positively correlated gene sets, many were metabolism-related, and included\u00a0mitochondrial beta oxidation of fatty acids, and branched chain amino acid (BCAA) catabolism. BCAAs (valine, leucine, isoleucine) are essential amino acids whose catabolism depends on the activity of an enzyme complex, branched chain $\\alpha$-keto acid dehydrogenase, located in the inner mitochondrial membrane (Hutson et al., 1988), and prior work has demonstrated that dietary supplementation of BCAA\u2019s promotes mitochondrial biogenesis (Valerio et al., 2011; D'Antona et al., 2010). Furthermore, a recent study has shown that elevated plasma levels of BCAAs are found 2 to 5 years before a cohort of patients developed pancreatic ductal adenocarcinoma (Mayers et al., 2014).\n\nA number of gene sets showed recurrent negative correlation to mtDNA copy number (Figure 5\u2014figure supplement 1 and Supplementary file 2, Worksheet Fig5Data). Several of these gene sets, including those related to mRNA processing and the cell cycle, are associated with known non-metabolic functions of mitochondria in the cell. In particular, the replication of mitochondria and mtDNA is intimately linked to the cell cycle (Chatre and Ricchetti, 2013), and the nucleotide precursors to mtDNA are in part produced de novo, via a pathway that is only active during the S phase of the cell cycle (Sigoillot et al., 2003). Several immune pathways, including those related to interferon signaling, are also frequently negatively correlated with mtDNA content. This is interesting in light of the role that mitochondria play in innate immunity (West et al., 2011; Weinberg et al., 2015). Of particular interest is a recent report by West and colleagues (West et al., 2015), demonstrating that mtDNA stress induced by depletion of TFAM triggered the innate immune response via interferon-stimulated genes and anti-viral signaling. Of the seven tumor types shown to be depleted of mtDNA in Figure 3, five (BLCA, BRCA, ESCA, HNSC, KIRC ) exhibit a negative correlation between expression of immune system genes and tumor tissue (but not necessarily normal tissue) mtDNA content.\n\nA subset of tumor types did not show strong positive correlation between mtDNA copy number and expression of mitochondrial metabolic genes. In some cases, this was the result of an apparently dominant correlation with another pathway. Interestingly, in prostate adjacent normal tissue, the expression of mitochondrial respiratory genes was anti-correlated to mtDNA content (see Supplementary file 2). We speculate that this effect may be associated with the unique mitochondrial metabolism of prostate epithelia, which secrete large amounts of citrate generated in the mitochondria, rather than oxidizing it further and using the resulting NADH in the respiratory electron transport chain (Costello et al., 1997; 2004).\n\n### Association with mutations and copy number alterations\n\nThe landscape of genetic events driving tumors is diverse, and the presence and activity of these genetic lesions is now being used in design of clinical trials and development of new treatments (Rubio-Perez et al., 2015). We sought to understand whether mtDNA abundance was associated with the incidence of particular mutations/copy number alterations (CNAs) in patient samples. To do so, we evaluated whether patients with a particular genetic lesion showed statistically significant increases or decreases in tumor mtDNA abundance, compared to wild-type samples. We restricted analysis to whole-exome sequencing data and which were not under embargo by the TCGA as of March 2015. All results for the analysis are reported in Figure 6 and Supplementary files 3 and 4.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig6-v2.jpg)\n\n**Figure 6.:** Each point corresponds to a single alteration (e.g TP53 mutation). Direction of arrow indicates whether alteration increases or decreases mtDNA content. X-axis in (A) and (C) indicates the fraction of samples in a cancer-type that contained the alteration (i.e., $\u2248$ 20% of LGG samples were 10q deleted). (A) 73 out of\u00a01896 copy number alterations (CNAs) tested were found to be significantly associated with mtDNA content (Mann-Whitney p-value <0.05). CNAs from the UCEC cancer type were excluded because of strong association between mtDNA copy number and the \u2018copy-number high\u2019 serous-like subtype in UCEC, shown in (B). (B) The UCEC serous-like subtype displays a marked increase in tumor mtDNA copy number, relative to endometrial tumors of other subtypes. (C) Relatively few mutations (3 out of 3954 tested) associate significantly with tumor mtDNA content (Mann-Whitney p-value <0.05). The UCEC associations are likely the result of the correlation to the serous-like subtype. (D) IDH1 and PTEN mutation status is linked to tumor mtDNA copy number in LGG.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Samples are sorted by increasing mtDNA copy number on the X-axis, with percentile indicated on the Y-axis.\n\nThe most apparent result of our analysis was the association of a large number of CNAs in endometrial carcinomas (UCEC) with increased mtDNA abundance. Recent work by the TCGA proposed a subtype stratification of endometrial carcinomas based on mutation and CNA frequency (Kandoth et al., 2013). Among these subtypes is a serous-like \u2018copy-number-high\u2019 subtype with large numbers of somatic CNAs. We obtained the UCEC subtype classifications and confirmed that serous-like endometrial carcinomas exhibited substantially higher mtDNA copy number than all other subtypes (Mann-Whitney p-value 7\u00d710-6, Figure 6), explaining the large number of associations we observed. TP53 mutations are enriched in the serous-like subtype, and these mutations also showed statistically significant association with mtDNA abundance (BH-corrected p-value 0.012).\n\nAfter removing associations in UCEC, we were left with a small number of statistically significant mutations and CNAs associated with mtDNA abundance. Among these, the strongest signal arose\u00a0from increased tumor mtDNA content in IDH1-mutant low grade gliomas (Figure 6, BH-corrected p-value 0.012). Both IDH1 and IDH2 activating mutations induce production of the so-called \u2018onco-metabolite\u2019 2-hydroxyglutarate, which competitively inhibits $\\alpha$-ketoglutarate-dependent histone demethylases and 5-methylcytosine hydroxylases, inducing a hypermethylation phenotype (Turcan et al., 2012; Xu et al., 2011). Surprisingly, IDH2 mutations showed no statistically significant change in mtDNA abundance, suggesting that the effect is specific to the cytosolic isoform IDH1. Notably, mutations in PTEN were associated with a significant decrease in mtDNA abundance (BH-corrected p-value 0.033). These results echo a complementary finding by Navis and colleagues (Navis et al., 2013), who reported that a mutant IDH1 R132H oligodendroglioma xenograft model displayed high densities of mitochondria and increased levels of mitochondrial metabolic activity. They proposed that an increase in mitochondrial mass would increase activity of mitochondrial IDH2 and compensate for loss of activity introduced by mutant IDH1.\n\nFinally, prompted by a recent report implicating mutations in mtDNA itself with the pathology of kidney chromophobe carcinomas (KICH) (Davis et al., 2014), we investigated the connection between mtDNA copy number and mtDNA mutations in KICH. Using somatic mtDNA mutation calls provided by the TCGA (Davis et al., 2014), we examined whether mtDNA-mutated samples were likely to have more or fewer mtDNA copies than unmutated samples. We found that samples with mtDNA indels contained much higher quantities of mtDNA than unmutated samples (Mann-Whitney U-test p-value 0.002, Figure 6\u2014figure supplement 1). The same effect was not found when examining only single nucleotide variants. These results suggest that the presence of inactivating mtDNA mutations may induce increased mtDNA replication, perhaps as a response to inadequate mitochondrial energy production.\n\n### Immunohistochemical investigation of respiratory protein content\n\nSo far, our findings have indicated that a number of tumor types appear to be depleted of mtDNA relative to normal tissue, and that in some (but not all) cases, the amount of mtDNA in a sample is correlated to the expression of respiratory genes. However, in some cancer types (e.g. bladder), tumors exhibited depletion of mtDNA (Figure 3), but expression of mitochondrial genes was not correlated to mtDNA copy number (Figure 5). This discrepancy is reminiscent of prior work describing mtDNA depletion which was not accompanied by a\u00a0drop\u00a0in respiratory activity or mitochondrial protein expression. Instead, a compensation of respiratory activity was\u00a0described\u00a0in cases of mtDNA depletion caused by either\u00a0genetic alterations (Seidel-Rogol and Shadel, 2002; Barth\u00e9l\u00e9my et al., 2001; Dorado et al., 2011) or reverse-transcriptase inhibitors (Kim et al., 2008; Mir\u00f3 et al., 2004; Stankov et al., 2007).\n\nTo investigate whether mtDNA depletion was associated with a concurrent decrease of mitochondrial protein expression, we examined the abundance of a mitochondrial protein using immunohistochemistry (IHC) (Thermo Fisher Scientific Mitochondria Ab-2, Clone MTC02, see Materials and methods) in 3 tumor/normal pairs of clear-cell renal cell carcinoma, papillary renal cell carcinoma, and high-grade muscle-invasive urothelial bladder carcinoma (corresponding to TCGA studies KIRC, KIRP, and BLCA respectively; Figure 7, and Figure 7\u2014source data 1). In KIRC, which was the most strongly mtDNA-depleted tumor type in Figure 3, we found significant depletion of mitochondrial\u00a0protein in all tumor samples compared to adjacent normal renal parenchyma. In KIRP, for which 69% of paired samples were depleted of mtDNA in Figure 3, we observed a more subtle depletion of mitochondrial\u00a0protein in 2/3 tumor samples, compared to adjacent normal renal parenchyma. In BLCA, we found that 2/3 BLCA tumors showed increased levels of mitochondrial\u00a0protein, which contrasted with Figure 3, where nearly all samples showed evidence of mtDNA depletion.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10769/elife-10769-fig7-v2.jpg)\n\n**Figure 7.:** In all H&E stains, red \u2018T\u2019 indicates tumor tissue, while blue \u2018N\u2019 indicates normal tissue. Orientation of tumor/normal tissue is mirrored in bottom panel. (A) H&E-stained section shows clear cell renal cell carcinoma (top left, KIRC Sample 1 from Figure 7\u2014source data 1) with the classical features of tumor nests with clear cytoplasm, separated by intricate, branching vascular septae, and adjacent non-neoplastic renal parenchyma (lower right). (B) KIRC Sample 1 immunohistochemical staining with MITO Ab2 antibody reveals markedly lower mitochondrial content (cytoplasmic, brown granular positivity) in clear cell RCC compared to normal tubules. (C) H&E-stained section shows papillary renal cell carcinoma type 1 (KIRP Sample 3) with tumor (top right) and normal tubules (lower left). (D) KIRP Sample 3 immunohistochemical stain with MITO Ab2 antibody shows KIRP with a slightly weaker positivity compared to normal tubules. (E) H&E-stained section showing invasive high grade urothelial carcinoma (lower left) with sheets of tumor cells in the lamina propria and the overlying normal urothelium (top right). (F) Immunohistochemical staining with MITO Ab2 antibody reveals slightly higher mitochondrial staining in urothelial carcinoma compared to normal urothelium.\n\nCollectively, our results from IHC regarding mitochondrial protein expression agree with those from sequencing in 2/3 cancer types (KIRC and KIRP). In a third cancer type (BLCA), mtDNA depletion as quantified by sequencing is not mirrored by a synchronous down-regulation of mitochondrial protein levels. As mentioned earlier, our results from gene expression analysis (Figure 5) indicate that mtDNA copy number is correlated to mitochondrial respiratory gene expression in KIRC and KIRP, but not BLCA. In fact, in BLCA, the gene sets most strongly correlated\u00a0to mtDNA copy number were associated with the cell cycle and immune response. This suggests that other mechanisms compensate for the depletion of mtDNA in BLCA (and potentially in other cancer types), which is further discussed in the concluding section. Taken together, these results support the notion that factors besides mtDNA copy number can\u00a0determine the rate of mitochondrial transcription, and that mtDNA depletion is not sufficient evidence to conclude that mitochondrial respiration is down-regulated in a tumor.\n\n## Discussion\n\nIn this study, we have investigated the variation of mtDNA copy number levels across many tumor types, arriving at several intriguing observations. Across nearly half of the tumor types we studied, we found evidence for depletion of mtDNA, relative to adjacent normal tissues. Orthogonal measurements of transcription levels (via RNA-Seq) and mitochondrial protein levels (via IHC) in a subset of these samples linked this variation to downregulation of mitochondrially-localized metabolic pathways, in some but not all tumor types.\n\nOur findings of gross changes in mtDNA content in tumors echo a number of prior but isolated observations, largely based on quantitative PCR measurements and with substantially smaller sample sizes, of mtDNA copy number changes in cancers (see [Yu, 2011] for a thorough review). For example, oncocytomas (not analyzed in this work) are well-known to be characterized by the excessive accumulation of mitochondria (Tickoo et al., 2000). Furthermore, decreases in mtDNA copy number have been reported in breast cancer (Mambo et al., 2005; Fan et al., 2009), liver cancer (Lee, 2004), and clear-cell kidney cancers (Meierhofer et al., 2004; Nilsson et al., 2015). While the majority of our observations agree with prior work (when comparing to [Yu, 2011]), some of our results are in contradiction to prior studies. The discordance between findings seems in part due to inadequate sample sizes, and incomplete or unavailable matched normal tissue. For example, in contrast to (Mambo et al., 2005) and (Wang et al., 2005), we find no clear increase or decrease in mtDNA content in thyroid or endometrial carcinomas, respectively. However, (Mambo et al., 2005) profiled 20 paired thyroid tumors, versus 66 paired thyroid tumors in this report; and (Wang et al., 2005) utilized unpaired samples of tumor and normal endometrial tissue (Wang et al., 2005), versus 32 paired samples here.\n\nWe further showed that mtDNA ploidy\u00a0alone cannot be used as a surrogate for the respiratory activity of a tumor sample. The literature contains several reports of mtDNA copy number depletion without reduction in mitochondrial transcription/respiratory activity, both in\u00a0vitro\u00a0and in vivo. In (Seidel-Rogol and Shadel, 2002), HeLa cells depleted of mtDNA by culture in ethidium bromide showed substantial mitochondrial transcription despite the fact that mtDNA, TFAM, and mitochondrial RNA polymerase were all at depleted levels. There, the authors suggest that an excess of TFAM and mitochondrial RNA polymerase prior to\u00a0depletion\u00a0may ensure that, even once depleted, transcription is sustained. Another report examined mtDNA depletion as a result of thymidine kinase 2 deficiency in mice, and observed a down-regulation of the mitochondrial transcriptional terminator MTERF3 in heart tissue. As a result, the expression of mitochondrial transcripts (ND6 and COX1) increased in heart tissue, as did the ratio of the levels of these transcripts to mtDNA levels. The consequence of this transcriptional compensation was that the heart tissue was spared from respiratory deficiency (Dorado et al., 2011). In tandem with our report, these findings emphasize a nuanced connection between mtDNA copy number and respiratory gene expression. We would argue strongly that future studies investigating changes in mtDNA in tumors should quantify mtDNA protein expression in parallel with estimating mtDNA copy number. A number of related open questions remain to be resolved, including what mechanisms determine the incidence and/or extent of compensation to mtDNA depletion, and what the consequences of mtDNA depletion may be when such compensation takes place (e.g. upregulation of the immune response).\n\nWhile mtDNA depletion or accumulation may typify certain cancer types, we further identified that subsets of patient samples, characterized by the presence of particular somatic mutations/copy number alterations, were enriched/depleted in mtDNA. The presence of activating IDH1 mutations (in low grade gliomas) or a large number of copy number alterations (in serous-like endometrial carcinomas) is strongly correlated to high tumor mtDNA content. If these tumors (and others with increased mtDNA content) have an increased dependence on mitochondrial metabolism to proliferate, using mitochondrially-targeted therapies (e.g. metformin) may be a therapeutic opportunity. Similarly, vulnerability to mitochondrially-targeted therapies might arise from disabling passenger mutations in genes required for mtDNA copy number maintenance (e.g. DNA polymerase gamma). Both hypotheses should be amenable to investigation in carefully chosen cell line models of cancer.\n\nA number of reports have now described extensive genetic heterogeneity of some tumor types (e.g. kidney cancers [Gerlinger et al., 2012]), where spatially distinct biopsies isolated from the same patients have non-overlapping somatic alterations. However, no reports have examined how mitochondrial DNA mutations and copy number vary spatially across a tumor. Variation of this kind, if it exists, might reflect functional diversity in mitochondrial metabolic activity and signaling in different regions of a tumor. Alternately, it would be of particular interest to trace the time-evolution of mtDNA content in a single patient over the course of treatment. As critical players in immunity, signaling, and metabolism, we suspect that mitochondria will inevitably play a role in the evolution of resistance to therapeutic intervention.\n\n## Materials and methods\n\n### Data acquisition\n\nWhole exome sequencing (WXS) and whole genome sequencing (WGS) BAM files for 22 distinct TCGA studies were obtained from the TCGA CGHub repository (Figure 2) (Wilks et al., 2014). We restricted our analyses to sequence data aligned to GRCH37 using the mitochondrial Cambridge Reference Sequence (CRS). We focused only on primary tumor, adjacent normal tissue, and normal blood samples (\u201801\u2019, \u201811\u2019, and \u201810\u2019 in the sample type field of the TCGA barcode). We further restricted our analyses to samples which were not whole-genome amplified prior to sequencing (i.e., we only used samples containing \u2019D\u2019 in the analyte field of the TCGA barcode), because such amplification could potentially bias the relative abundances of mitochondrial and nuclear DNA in the sample.\n\nSamtools (Li et al., 2009) was used to extract reads aligning to the mitochondrial genome meeting the following critieria: (1) passed quality-control, (2) were not marked as duplicate reads, (3) were properly\u00a0paired, and (4) were aligned with\u00a0Phred-scaled mapping quality (MAPQ)\u00a0>30. The number of such reads aligning to the mitochondrial genome was compared to the number of such reads aligning to the nuclear genome.\n\nThe pipeline described above includes a number of controls to ensure that mtDNA copy number estimates are not influenced by nuclear integrations of mitochondrial sequences (NUMTs) (Hazkani-Covo et al., 2010). A direct result of restricting analysis to properly paired reads is that reads whose mate mapped to a different chromosome are removed prior to copy number calculation. Furthermore, by requiring a conservative Phred-scaled minimal mapping quality of 30 (equivalent to a 99.9% likelihood that reads are aligned to the correct genomic location), reads with homology to nuclear-encoded NUMTs are removed prior to copy number calculations. Prior work has established that more lenient mapping quality thresholds of 20 are sufficient for accurately calling mtDNA copy number (Ding et al., 2015)\n\nA complete list of all copy number estimates is available in Supplementary file 1.\n\n### Purity and ploidy calculation and correction\n\nAffymetrix SNP6 arrays for tumor and normal samples were acquired for 22 cancer types from the TCGA. Arrays for each individual cancer type were processed together, quantile-normalized and median polished with Affymetrix power tools using the birdseed algorithm to obtain allele-specific intensities. PennCNV (Wang et al., 2007) was used to generate log R ratio and B-allele frequencies for each tumor. ASCAT (Van Loo et al., 2010) was used to generate allele-specific copy number and estimate tumor ploidy and purity using matched arrays from tumor and normal tissue.\n\nIn order to estimate mtDNA copy number in Equation 1, we compared the number of reads aligning to the mitochondrial genome to the number of reads aligning to a genome of known ploidy. For samples of normal tissue, we assumed this known ploidy was equal to 2. For tumor tissue which may be infilitrated by stromal/immune cells and copy-number altered, we need to correct for the \u2018effective ploidy\u2019 of the sample. We define this correction factor to be\n\n$$\nR_{Tumor}=\\frac{Purity\\timesPloidy+(1-Purity)\\times2}{2}\n$$\n\nwhere the purity and ploidy values are obtained from ASCAT, as described above. When a sample is composed of pure normal tissue, $R$=1.\n\n### Correction for sequencing center and plate ID\n\nInspection of mtDNA copy number results indicated a potential association between mtDNA copy number and processing batch. This is consistent with prior reports, e.g. (Ju et al., 2014), which described large variation in efficiency of mtDNA depletion in exome sequencing in a sequencing-center-dependent manner. We separately examined the log10 mtDNA copy number for each TCGA plate ID for (1) blood, and (2) tissue-derived (tumor and adjacent-normal tissue) samples. Kruskal-Wallis tests using either blood or tissue-derived mtDNA copy number indicated significant differences in median mtDNA copy number between TCGA plates in 21/22 whole exome sequencing (WXS) datasets (p-value <0.05). In contrast 3/10 whole genome sequencing (WGS) datasets showed significant differences between TCGA plates using tissue-derived mtDNA copy number (5/10 using blood-derived mtDNA copy number). Manual inspection further indicated that the magnitude of the batch effect was smaller in WGS compared to WXS.\n\nWe also calculated, for each TCGA plate $i$ in a given cancer type, the mean mtDNA copy number in (1) blood ($m_{i}^{b}$) and (2) tumor/adjacent-normal tissue ($m_{i}^{t}$). We observed a statistically significant positive linear correlation (Pearson p-value <0.1 ) between $m^{t}$ and $m^{b}$ in 17/19 cancer types profiled with WXS, but in 0/7 cancer types profiled with WGS (analysis restricted to studies with adequate numbers of samples, defined as at least 3 different TCGA plate IDs with at least 3 blood and 3 tissue samples). Importantly, in many cancer types, tumor and blood from the same patient were often processed in different TCGA plates (e.g. 30% in BLCA, 30% in BRCA, and 48% in STAD), and there was no reason a priori to expect that blood and tumor mtDNA estimates should be correlated across batches. The existence of such a correlation suggested a TCGA-plate-dependent contribution to the observed copy number of all samples (both blood and tissue-derived) processed within that plate.\n\nTaken together, the results above suggested that a batch effect associated with TCGA plate ID/sequencing center was present in WXS, and possibly also in WGS. Based on these considerations, the small magnitude of the batch effect in WGS, and the prior literature describing significant variation in mtDNA sequencing depth in exome sequencing due to differences in exonic enrichment (Ju et al., 2014), we elected to control for a batch effect in WXS, but not WGS. Importantly, in Supplementary file 1, we report uncorrected mtDNA copy number, corrected mtDNA copy number, and plate IDs for all samples analyzed, so that future work by others may model the effect in whatever manner they see fit.\n\nThe set of observed log10 mtDNA copy numbers $M$ are indexed by the TCGA plate $i$, the tissue type (either tumor/adjacent-normal or blood) $j$, and the sample $k$. We fit the following linear model to the mtDNA copy numbers $M_{i\u2062j\u2062k}$:\n\n$$\nM_{i\u2062j\u2062k}=\\mu+\\sump\u2062l\u2062a\u2062t\u2062e\\alpha_{i}\u2062P_{i}+\\sumt\u2062i\u2062s\u2062s\u2062u\u2062e\\beta_{j}\u2062T_{j}+\u03f5_{i\u2062j\u2062k}\n$$\n\nwhere $P_{i}$ and $T_{j}$ are indicator variables corresponding to the plate and tissue that a sample comes from. The parameter $\\mu$ is the grand mean of mtDNA copy number, $\\alpha$ the effect attributable to the plate and $\\beta$ that attributable to the tissue. The residual $\u03f5$ is the sum of the true log10 mtDNA copy number and measurement error. We constructed a linear model corresponding to Equation 4 for each cancer type. Then, we corrected the observed log10 mtDNA copy number for each WXS sample according to the contribution $\\alpha^$ from the corresponding TCGA plate ID. Corrected copy number values were used for subsequent survival, gene expression, and somatic alteration analysis.\n\n### Survival analysis\n\nSurvival analysis was performed with univariate Cox proportional hazards regression models where the independent and dependent variables were the log10-transformed corrected mtDNA copy number and the overall survival respectively. The p-values for the significance of mtDNA copy number as a predictor of survival were obtained from Wald tests.\n\n### Gene set analysis\n\nRSEM normalized RNA-Seq gene expression data were downloaded from the Broad Firehose, using the most recent data as of November 4, 2014. Data were filtered to remove genes with average read count less than 16. We calculated the nonparametric Spearman correlation and associated p-value between the expression of each gene and the copy number of mtDNA. To remove putatively spurious correlations, we identified all genes with a p-value greater than 0.05, and set the correlation coefficient for those genes equal to zero. We then use the geneSetTest function in the limma (Law et al., 2014) package to test whether particular gene sets showed an enrichment for positive/negative correlations, relative to the distribution of correlations across all genes. Thus, a single p-value was calculated for each alternative hypothesis. All p-values were adjusted using the Benjamini-Hochberg procedure. The method described above was applied to every Reactome pathway in the MSigDB canonical pathways gene set. The enrichment score depicted in Figure 5 is the -log10 corrected p-value of this statistical test, with the color (red or blue) indicating the direction of enrichment.\n\nThe analysis was run separately for tumor and normal tissues. We applied our gene set analysis pipeline to all studies for which we had at least 20 samples of RNA-Seq data (in order to retain sufficient statistical power). Analyses were run for each combination of tumor type\u00a0and tissue, and ensuing results were then aggregated across all studies. All results from the analyses are provided in the Supplementary file 2.\n\n### Mutation and copy number alteration analysis\n\nFor each study, Gistic2 and MutSigCV results were downloaded from the Broad Firehose (most recent data as of Nov 14, 2014). From Gistic, we retained all arm-level and focal alterations with q-value less than 0.1. For mutations, we obtained the MAF file from the output of MutSig. For each gene, we calculated the number of patients in which this gene exhibited a nonsynonymous, coding mutation (i.e., missense, non-sense, frameshift, in-frame insertion/deletions,\u00a0and splice-site mutations), excluding those with greater than 600 non-synonnymous coding mutations). We then retained any genes which were mutated in greater than 4% of patients.Non-parametric Mann-Whitney U-tests were used to evaluate whether tumors bearing a particular somatic alteration contained significantly higher/lower amounts of mtDNA in tumor samples. After testing all associations, p-values obtained from the U-tests were corrected using the Benjamini-Hochberg procedure.\n\n### Histology\n\nAll tissues were fixed in 10% neutral-buffered formalin and paraffin embedded as part of a routine surgical pathology procedure and 5-micron-thick sections stained with Hematoxylin and eosin (H&E) were reviewed. Immunohistochemical (IHC) analysis was performed on 5-micron-thick sections by Ventana, Discovery XT immunohistochemical stainer. The sections were deparaffinized and subjected to heat induced antigen retrieval using CC1 at high pH before primary incubation with MITO Ab2 (mouse monoclonal, clone MTC02, Neomarkers, 1:50 dilution). Slides were then counterstained with hematoxylin, dehydrated and cover-slipped.\n",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1f054326-34a5-4cca-8ce1-60eca108c3e8",
+      "submission_id": "5289880a-f10d-4d5a-9e0c-81c0fd4fcffb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chi Van Dang, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10769.027](https://doi.org/10.7554/eLife.10769.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Mitochondrial DNA Copy Number Variation Across Human Cancers\" for peer review at eLife. Your submission has been favorably evaluated by Randy Schekman as Senior editor and two reviewers, one of whom, Chi Dang, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Reznik et al. reports a comprehensive informatic analysis of mitochondrial DNA content in ~13,000 tumor samples from the TCGA effort. This study is potentially of high significance as it addresses systematically mtDNA copy number changes in various solid tumors for the first time. Other studies have done this before, but usually only on one tumor type and often with not enough samples to draw strong conclusions. This remarkable study uncovers the broad depletion of mtDNA in tumor vs normal samples across many, but not all tumor types. This study goes further to try and relate mtDNA copy number changes to gene expression and mutational changes, which is lauded and interesting. Informatic analyses also reveal that mtDNA content correlates with specific changes such as IDH1 mutation. Further, mtDNA content correlates with clinical outcome for certain tumor types. If the mtDNA copy number changes found are indeed valid, the study does break interesting new ground and moves the field forward.\n\nEssential revisions:\n\n1) There are hundreds of insertions of mtDNA sequences in the nuclear genome (so called NUMTs), some are even full-length mtDNA insertions. The authors do not mention these or acknowledge that they would be incorrectly assigned as actual mtDNA reads in the whole-genome sequencing method of mtDNA copy number. This may lead to false positive results regarding mtDNA copy number in the tumors and need to be subtracted from the analysis.\n\n2) The ASCAT algorithm seems quite good at factoring out ploidy differences, but less robust with regard to the purity issue. Thus, there remains concern that the differences in mtDNA copy number observed somehow reflects the different cell composition of the tumor versus control normal tissue. For example, immune and stromal cells might have lower basal mtDNA copy number than resident tissue. The tumor samples assayed almost certainly have a high percentage of these cell types compared to normal tissue and hence the trend toward depletion in many of the tumor samples may simply reflect this. Can the authors provide some histology to bolster their conclusions? It is too much to do this for all the samples, but one or two representative cases to support their conclusions seem necessary.\n\n3) TFAM is an abundant mtDNA-binding protein and transcription/replication factor that often correlates with mtDNA copy number. Can the authors address whether mutations, gene expression changes, or amounts of TFAM correlate with the mtDNA copy number changes they report?\n\n4) Recently mtDNA stress (depletion and TFAM reductions) has been shown to activate innate immune pathways (e.g. interferon stimulated genes) (West et al. Nature 2015). Is there a gene expression profile indicative of this in the tumors that show mtDNA depletion?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mitochondrial DNA Copy Number Variation Across Human Cancers\" for further consideration at eLife. Your revised article has been favorably evaluated by Randy Schekman as Senior editor and two reviewers, one of whom is a member of our Board of Reviewing Editors. The manuscript has been improved but, as requested, we are granting you an extra month for the additional data analysis.\n",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c631e4f-e74a-4624-9389-cbf12abadd46",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C1",
+      "claim": "Mutations, deletions, and changes in copy number of mitochondrial DNA (mtDNA) are observed throughout cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations, deletions, and changes in copy number of mitochondrial DNA (mtDNA), are observed throughout cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the study's findings and prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "41497101-9c19-4f44-ad83-01f17c552524",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C2",
+      "claim": "Some cancers, especially of the bladder, breast, and kidney, tend to be depleted of mtDNA relative to matched normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a tendency for some cancers, especially of the bladder, breast, and kidney, to be depleted of mtDNA, relative to matched normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the data presented in Figure 3 showing statistically significant mtDNA depletion in these cancer types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "c5b49b95-e467-4d3b-bcea-5ac578693825",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C3",
+      "claim": "There is an association between incidence of IDH1 mutations in gliomas and mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of genetic context reveals an association between incidence of several somatic alterations, including IDH1 mutations in gliomas, and mtDNA content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6 demonstrating increased mtDNA content in IDH1-mutant low grade gliomas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "4def95e4-8756-4621-9d77-23400c4e7036",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C4",
+      "claim": "In some but not all cancer types, mtDNA content is correlated with the expression of respiratory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In some but not all cancer types, mtDNA content is correlated with the expression of respiratory genes, and anti-correlated to the expression of immune response and cell-cycle genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis presented in Figure 5 showing variable correlation patterns across cancer types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "a65379f8-dfd2-41d6-a2bb-e75a13af4763",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C5",
+      "claim": "In some but not all cancer types, mtDNA content is anti-correlated to the expression of immune response and cell-cycle genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In some but not all cancer types, mtDNA content is correlated with the expression of respiratory genes, and anti-correlated to the expression of immune response and cell-cycle genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis presented in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "d1c43623-685c-415e-9cb3-01d2b0120482",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C6",
+      "claim": "Some tumors may compensate for mtDNA depletion to sustain levels of respiratory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In tandem with immunohistochemical evidence, we find that some tumors may compensate for mtDNA depletion to sustain levels of respiratory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical data in Figure 7 showing that bladder cancer maintains mitochondrial protein levels despite mtDNA depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "c9eb1d5f-fba5-464c-bd75-0eb8af261fd7",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C7",
+      "claim": "Human cells contain many copies of the 16-kilobase mitochondrial genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cells contain many copies of the 16-kilobase mitochondrial genome, which encodes 13 essential components of the mitochondrial electron transport chain and ATP synthase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the mitochondrial genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6d607dda-fd60-475d-a1db-fc496631a54b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C8",
+      "claim": "The mitochondrial genome encodes 13 essential components of the mitochondrial electron transport chain and ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cells contain many copies of the 16-kilobase mitochondrial genome, which encodes 13 essential components of the mitochondrial electron transport chain and ATP synthase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mitochondrial genome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ee1f8dd7-6e4a-4d59-a85d-993f24d2d4ed",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C9",
+      "claim": "Alterations of mitochondrial DNA via inactivating genetic mutations or depletion of the number of copies of mtDNA in a cell can impair mitochondrial respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of mitochondrial DNA (mtDNA), via inactivating genetic mutations or depletion of the number of copies of mtDNA in a cell, can impair mitochondrial respiration and contribute to pathologies as diverse as encephelopathies and neuropathies (El-Hattab and Scaglia, 2013), and the process of aging (Balaban et al., 2005; Finkel and Holbrook, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "7fb47202-3ac6-4cdd-8abb-1c6e26a1ac23",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C10",
+      "claim": "Alterations of mitochondrial DNA can contribute to pathologies as diverse as encephalopathies and neuropathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of mitochondrial DNA (mtDNA), via inactivating genetic mutations or depletion of the number of copies of mtDNA in a cell, can impair mitochondrial respiration and contribute to pathologies as diverse as encephelopathies and neuropathies (El-Hattab and Scaglia, 2013), and the process of aging (Balaban et al., 2005; Finkel and Holbrook, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El-Hattab and Scaglia, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6397ac96-23ad-40ce-a9c0-cc7882a9a8ba",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C11",
+      "claim": "Alterations of mitochondrial DNA can contribute to the process of aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of mitochondrial DNA (mtDNA), via inactivating genetic mutations or depletion of the number of copies of mtDNA in a cell, can impair mitochondrial respiration and contribute to pathologies as diverse as encephelopathies and neuropathies (El-Hattab and Scaglia, 2013), and the process of aging (Balaban et al., 2005; Finkel and Holbrook, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Balaban et al., 2005 and Finkel and Holbrook, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1470fae3-5fc2-4b5d-a1a4-c7b40263094e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C12",
+      "claim": "A number of studies have examined the role of mtDNA mutations in carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer, a number of studies have examined the role of mtDNA mutations in carcinogenesis (Wallace, 2012; Ju et al., 2014; Larman et al., 2012; He et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "23d5cf9c-d23c-4dda-bf0f-d4c730e15ff7",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C13",
+      "claim": "The contribution of changes in the gross number of mtDNA genomes in a tumor to tumor development and progression has not been adequately investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the contribution of changes in the gross number of mtDNA genomes in a tumor (i.e. the 'mtDNA copy number') to tumor development and progression has not been adequately investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "bf4346f6-1484-4edd-b545-837517c38472",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C14",
+      "claim": "In contrast to the fixed (diploid) copy number of the nuclear genome, many copies of mtDNA exist within each cell, and these levels can fluctuate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the fixed (diploid) copy number of the nuclear genome, many copies of mtDNA exist within each cell, and these levels can fluctuate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mtDNA copy number variation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "2f815cbe-1acd-482e-b3a2-9f239cc4d8a5",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C15",
+      "claim": "Mitochondria undergo a constant process of fusion and fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Because mitochondria undergo a constant process of fusion and fission, it is difficult to meaningfully determine the number of mtDNA molecules per mitochondrion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mitochondrial dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "67ca450e-076e-4993-a16a-90e2afda2208",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C16",
+      "claim": "It is difficult to meaningfully determine the number of mtDNA molecules per mitochondrion.",
+      "claim_type": "EXPLICIT",
+      "source": "Because mitochondria undergo a constant process of fusion and fission, it is difficult to meaningfully determine the number of mtDNA molecules per mitochondrion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the dynamic nature of mitochondria.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f26d2f7a-79c2-4567-8f92-167f3adff4fa",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C17",
+      "claim": "Studies have focused on measuring mtDNA copy number per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, studies have focused on measuring mtDNA copy number per cell, with estimates for humans that vary between a few hundred and over one hundred thousand copies, depending on the tissue under examination (Wai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wai et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0035d2b7-c9df-4f6d-9714-eff1c6d78922",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C18",
+      "claim": "Estimates of mtDNA copy number per cell for humans vary between a few hundred and over one hundred thousand copies, depending on the tissue under examination.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, studies have focused on measuring mtDNA copy number per cell, with estimates for humans that vary between a few hundred and over one hundred thousand copies, depending on the tissue under examination (Wai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wai et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "bb170144-521d-496c-b6b8-58c63c3a93bb",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C19",
+      "claim": "The quantity of mtDNA in a cell may serve as a surrogate marker for the cell's capacity to conduct oxidative phosphorylation if the copy number of mtDNA is rate-limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because mtDNA serves as a template for the transcription of essential electron transport chain complexes, the quantity of mtDNA in a cell may serve a surrogate marker for the cell's capacity to conduct oxidative phosphorylation if the copy number of mtDNA is rate-limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the role of mtDNA in encoding respiratory chain components.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "df129685-8028-47ae-bdb9-c76bfafb125e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C20",
+      "claim": "Energy-intensive tissues such as cardiac and skeletal muscle contain between 4000 and 6000 copies of mtDNA per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a recent study estimated that energy-intensive tissues such as cardiac and skeletal muscle contained between 4000 and 6000 copies of mtDNA per cell, while liver, kidney, and lung tissues averaged between 500 and 2000 copies (D'Erchia et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to D'Erchia et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "86432dad-5e39-4a8e-b937-5a3cf0f87701",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C21",
+      "claim": "Liver, kidney, and lung tissues average between 500 and 2000 copies of mtDNA per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a recent study estimated that energy-intensive tissues such as cardiac and skeletal muscle contained between 4000 and 6000 copies of mtDNA per cell, while liver, kidney, and lung tissues averaged between 500 and 2000 copies (D'Erchia et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to D'Erchia et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "cf4b3543-901d-4688-b975-84df617303fe",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C22",
+      "claim": "Mitochondrial dysfunction plays several distinct roles in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial dysfunction plays several distinct roles in cancer (Schon et al., 2012; Wallace, 2012; Larman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e8b435e0-fd07-4a2b-9490-fc7dbcf083ed",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C23",
+      "claim": "Many tumors suppress mitochondrial respiration in favor of increased uptake of glucose and secretion of lactate (the Warburg effect).",
+      "claim_type": "EXPLICIT",
+      "source": "A canonical example of this is the observation that many tumors suppress mitochondrial respiration in favor of increased uptake of glucose and secretion of lactate ('the Warburg effect'), a phenomenon which has found clinical utility for imaging of tumors using FDG-PET (Vander Heiden et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vander Heiden et al., 2009 and is established knowledge about cancer metabolism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "841bd3e5-a9e6-486f-aff1-7906a0b658d9",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C24",
+      "claim": "The Warburg effect has found clinical utility for imaging of tumors using FDG-PET.",
+      "claim_type": "EXPLICIT",
+      "source": "A canonical example of this is the observation that many tumors suppress mitochondrial respiration in favor of increased uptake of glucose and secretion of lactate ('the Warburg effect'), a phenomenon which has found clinical utility for imaging of tumors using FDG-PET (Vander Heiden et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vander Heiden et al., 2009 and is established clinical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3457086b-1a4f-4c89-ae5c-cd57e8a4e371",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C25",
+      "claim": "A subset of tumors are known to be caused by mutations of the mitochondrial enzymes FH, SDH, and IDH.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, mitochondria are susceptible to mutations in nuclear- and mitochondrially-encoded genes, and a subset of tumors are known to be caused by mutations of the mitochondrial enzymes FH, SDH, and IDH (King et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "12ff2ffe-556b-4c1b-b7fe-5f50d37ab1a4",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C26",
+      "claim": "mtDNA dysfunction affecting the electron transport chain can lead to generation of excess reactive oxygen species (ROS), contributing to tumor cell metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mtDNA dysfunction affecting the electron transport chain can lead to generation of excess reactive oxygen species (ROS), contributing to tumor cell metastasis (Ishikawa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ishikawa et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e9d8595e-7c6f-45d4-9986-da39818be8a3",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C27",
+      "claim": "No comprehensive analysis of mtDNA copy number changes in tumors has been completed to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no comprehensive analysis of mtDNA copy number changes in tumors has been completed, despite a large literature of isolated reports (Yu, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature supported by citation to Yu, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ec357e79-caba-46b4-8b08-e8e3d8ef6859",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C28",
+      "claim": "Large-scale studies of mtDNA in cancer have focused on the analysis of mutations and heteroplasmy, largely ignoring the contribution of mtDNA copy number variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale studies of mtDNA in cancer have instead focused on the analysis of mutations and heteroplasmy, largely ignoring the contribution of mtDNA copy number variation to the development and progression of tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "95b0ff12-c782-4100-9e8f-d227efed755d",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C29",
+      "claim": "Whole-genome and whole-exome sequencing data were used to examine changes in mtDNA copy number across a panel of cancer types profiled by The Cancer Genome Atlas (TCGA) consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use whole-genome and whole-exome sequencing data to examine changes in mtDNA copy number across a panel of cancer types profiled by The Cancer Genome Atlas (TCGA) consortium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b46d4694-4bf9-42bd-8fba-0c2a685308ba",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C30",
+      "claim": "Regions of the genome of equal ploidy should be sequenced to comparable depth.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach assumes that regions of the genome of equal ploidy should be sequenced to comparable depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the sequencing-based copy number estimation method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "983af7f6-b489-48f5-8d6f-f5be4a4f233b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C31",
+      "claim": "In a normal human cell, the autosomal nuclear genome is at a fixed (diploid) copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "In a normal human cell, the autosomal nuclear genome is at a fixed (diploid) copy number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1c9a793e-a9e6-4730-8737-4c6b1bc124df",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C32",
+      "claim": "By calculating the ratio of reads aligning to the mitochondrial and nuclear genomes, it is possible to estimate mtDNA ploidy relative to a diploid standard.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by calculating the ratio of reads aligning to the mitochondrial and nuclear genomes, respectively, it is possible to estimate mtDNA ploidy relative to a diploid standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0a500775-8ff9-4e9c-8599-5bf73cca2aa1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C33",
+      "claim": "This approach to assaying mtDNA copy number has been proposed and implemented by others in prior work.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach to assaying mtDNA copy number has been proposed and implemented by others in prior work (Guo et al., 2013; D'Erchia et al., 2015; Samuels et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ee03d3d9-17a4-44c2-82c5-abe23a92ce97",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C37",
+      "claim": "Significant variation in mean mtDNA copy number was observed between sequencing centers.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies (e.g. [Ju et al., 2014]), we observed significant variation in mean mtDNA copy number between sequencing centers, as well as between each batch (i.e., each TCGA plate ID) within a single sequencing center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis and citation to Ju et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "2b27c936-b6da-4ce0-80ec-c508be8dc2c7",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C38",
+      "claim": "Significant variation in mean mtDNA copy number was observed between each batch within a single sequencing center.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies (e.g. [Ju et al., 2014]), we observed significant variation in mean mtDNA copy number between sequencing centers, as well as between each batch (i.e., each TCGA plate ID) within a single sequencing center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis and citation to Ju et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "9ea2903d-e6ca-433f-bffe-a239d6509073",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C39",
+      "claim": "A batch correction was applied to control for variation between sequencing centers and batches.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a batch correction to control for this effect (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "58454ab8-6ce5-47b7-b7c4-58cf7e45aa01",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C40",
+      "claim": "The method was applied to whole exome sequencing (WXS) and whole genome sequencing (WGS) data from 22 distinct TCGA studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this method to whole exome sequencing (WXS) and whole genome sequencing (WGS) data from 22 distinct TCGA studies (Figure 2, see Materials and methods for further details on data collection).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data used in the study, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "def536dd-866f-44aa-a42d-0856cb9e96f2",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C41",
+      "claim": "Mitochondrial reads are abundant in both WGS and WXS.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mitochondrial reads are abundant in both WGS and WXS, the two sequencing methods capture mtDNA at different efficiencies: exome sequencing involves the targeted enrichment of exonic regions prior to sequencing and does not target mtDNA (Samuels et al., 2013), while WGS sequences cellular DNA in an unbiased manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about sequencing methodology supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1fd875c9-89a9-41fe-a196-c1d02ebc9b45",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C42",
+      "claim": "Exome sequencing involves the targeted enrichment of exonic regions prior to sequencing and does not target mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mitochondrial reads are abundant in both WGS and WXS, the two sequencing methods capture mtDNA at different efficiencies: exome sequencing involves the targeted enrichment of exonic regions prior to sequencing and does not target mtDNA (Samuels et al., 2013), while WGS sequences cellular DNA in an unbiased manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about exome sequencing methodology, supported by citation to Samuels et al., 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "a3d3b197-33e2-4638-b996-8cc908d5afa9",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C43",
+      "claim": "WGS sequences cellular DNA in an unbiased manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mitochondrial reads are abundant in both WGS and WXS, the two sequencing methods capture mtDNA at different efficiencies: exome sequencing involves the targeted enrichment of exonic regions prior to sequencing and does not target mtDNA (Samuels et al., 2013), while WGS sequences cellular DNA in an unbiased manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about whole genome sequencing methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6e801792-9864-4d13-9718-885cdfe49cd1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C44",
+      "claim": "mtDNA copy number estimates from 1110 samples across 8 tumor types profiled by both WXS and WGS were compared.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared mtDNA copy number estimates in 1110 samples across 8 tumor types profiled by both WXS and WGS, controlling for sequencing center and TCGA plate ID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f071b587-db58-4302-94bf-d57f4a8401e5",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C45",
+      "claim": "Across all combinations of cancer types and sequencing centers, WXS and WGS offer significantly correlated estimates of mtDNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that across all combinations of cancer types and sequencing centers, WXS and WGS offer significantly correlated estimates of mtDNA copy number (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "05b5b7fd-c1ec-4091-849a-db189c8cd5aa",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C46",
+      "claim": "Seven of fifteen tumor types analyzed showed a statistically significant decrease in mtDNA abundance in tumor samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, seven of the fifteen tumor types analyzed showed a statistically significant (BH-corrected Mann-Whitney p-value <0.05) decrease in mtDNA abundance in tumor samples (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "53a5f2d9-ce41-4290-a53c-4a99d565d28b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C47",
+      "claim": "mtDNA-depleted tumor types include bladder (BLCA), breast (BRCA), esophageal (ESCA), head and neck squamous cell (HNSC), kidney (both clear-cell, KIRC, and papillary, KIRP, but not chromophobe, KICH, subtypes), and liver (LIHC) cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'mtDNA-depleted' tumor types included bladder (BLCA), breast (BRCA), esophogeal (ESCA), head and neck squamous cell (HNSC), kidney (both clear-cell, KIRC, and papillary, KIRP, but not chromophobe, KICH, subtypes), and liver (LIHC) cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "063b4120-d145-463a-8062-6801c7b2efe7",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C48",
+      "claim": "All tumor types contained at least one sample with higher mtDNA content than adjacent normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a tendency towards mtDNA depletion, all tumor types contained at least one sample with higher mtDNA content than adjacent normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "01d13758-1c85-476e-869f-e22756e9e7dd",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C49",
+      "claim": "Nearly all bladder tumors were depleted of mtDNA except for a handful of WGS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the depletion effect was exceptionally strong in several tumor types: except for a handful of WGS samples, nearly all bladder tumors were depleted of mtDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "bafc4cb2-9ba8-40e4-8034-2742d859c394",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C50",
+      "claim": "87% of clear-cell kidney tumor samples contained less mtDNA than their normal tissue counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 87% of clear-cell kidney tumor samples contained less mtDNA than their normal tissue counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1be37a47-de1a-47d0-a361-e61562c85c17",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C51",
+      "claim": "Lung adenocarcinoma (LUAD) showed statistically significant mtDNA accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a single tumor type, lung adenocarcinoma (LUAD), showed statistically significant mtDNA accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "24ad9598-984c-4a39-8827-4c246319d363",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C52",
+      "claim": "In cases where sufficient numbers of both WGS and WXS data were available, a consistent effect was observed across samples processed by both platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where sufficient numbers of both WGS and WXS data were available (bladder, breast, head and neck, clear-cell kidney, thyroid, endometrial, and lung adenocarcinomas), we observed a consistent effect across samples processed by both platforms (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of WGS and WXS data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "8f5539ef-ba15-4f8e-9222-5325da385bcd",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C53",
+      "claim": "A recurrent but weak negative correlation was observed between tumor mtDNA content and immune infiltration score.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a recurrent but weak negative correlation between tumor mtDNA content and immune infilitration score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 3\u2014figure supplements 2\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "beafe6d3-150e-414b-92ce-f007b9db1d33",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C54",
+      "claim": "In adrenocortical carcinoma, high tumor mtDNA content was associated with better survival (p-value 0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "In three cancer types (adrenocortical carcinoma, p-value 0.026; chromophobe renal cell carcinoma, p-value 0.053; and low-grade glioma, p-value 0.009), high tumor mtDNA content was associated with better survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Cox regression analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "5d70bf93-3cfe-4842-b0ce-105cd51f5e61",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C55",
+      "claim": "In chromophobe renal cell carcinoma, high tumor mtDNA content was associated with better survival (p-value 0.053).",
+      "claim_type": "EXPLICIT",
+      "source": "In three cancer types (adrenocortical carcinoma, p-value 0.026; chromophobe renal cell carcinoma, p-value 0.053; and low-grade glioma, p-value 0.009), high tumor mtDNA content was associated with better survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Cox regression analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "10a06dd0-33ad-41cd-9be7-f2babca239b3",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C56",
+      "claim": "In low-grade glioma, high tumor mtDNA content was associated with better survival (p-value 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "In three cancer types (adrenocortical carcinoma, p-value 0.026; chromophobe renal cell carcinoma, p-value 0.053; and low-grade glioma, p-value 0.009), high tumor mtDNA content was associated with better survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Cox regression analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "dd384674-bd8d-4eef-9482-5184823936fb",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C57",
+      "claim": "In clear-cell renal cell carcinoma, poor survival was observed in patients with high tumor mtDNA (p-value 0.023).",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite trend, of poor survival in patients with high tumor mtDNA, was observed in clear-cell renal cell carcinoma (p-value 0.023) and melanoma (p-value 0.043).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Cox regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "77008577-0e92-4754-ab69-c38e0ec4a32e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C58",
+      "claim": "In melanoma, poor survival was observed in patients with high tumor mtDNA (p-value 0.043).",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite trend, of poor survival in patients with high tumor mtDNA, was observed in clear-cell renal cell carcinoma (p-value 0.023) and melanoma (p-value 0.043).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Cox regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b70d9537-250e-45ec-9904-903c503ca36d",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C59",
+      "claim": "Fluctuations in mtDNA copy number are well-known to influence the level of transcription of mitochondrial electron transport chain and ATP synthase genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins encoded in mtDNA localize exclusively to the mitochondrial electron transport chain and ATP synthase, and fluctuations in mtDNA copy number are well-known to influence the level of transcription of these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e5bec5ac-b464-4177-9761-7f1a8819e134",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C60",
+      "claim": "Complete depletion of mtDNA in cell lines by exposure to ethidium bromide affects a number of additional signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been observed that complete depletion of mtDNA in cell lines by exposure to ethidium bromide affects a number of additional signaling pathways (Chandel and Schumacker, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chandel and Schumacker, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "67f5bfae-5963-4118-a31b-e8ad6f88464c",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C61",
+      "claim": "Each tissue exhibited specific gene sets which were strongly correlated to mtDNA copy number levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, each tissue exhibited specific gene sets which were strongly correlated to mtDNA copy number levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the gene set enrichment analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "023cddfa-b6eb-4677-af93-6a8944b5767b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C62",
+      "claim": "When aggregating across all cancer types, mitochondrially-localized metabolic pathways showed the most frequent significant correlation with mtDNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when aggregating across all cancer types, mitochondrially-localized metabolic pathways showed the most frequent significant correlation with mtDNA abundance (Figure 5 and Supplementary file 2, Worksheet Fig5Data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0a4fe94c-5980-406a-ac3f-da93a99b5ccc",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C63",
+      "claim": "The recurrent positive correlation between expression of mitochondrial genes and mtDNA copy number across many tumor types served as a second, independent validation that estimates of mtDNA copy number reflected in vivo mtDNA ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "This recurrent positive correlation between expression of mitochondrial genes and mtDNA copy number across many tumor types served as a second, independent validation that estimates of mtDNA copy number reflected in vivo mtDNA ploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biological expectation that mtDNA copy number should correlate with expression of mitochondrial genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "24bf6f80-d13d-4789-965a-cc1e41f91b94",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C64",
+      "claim": "A significant positive correlation (Spearman p-value <0.05) between mtDNA copy number and TFAM expression was found in 34% of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also calculated the correlation between mtDNA copy number and the expression of TFAM, a critical transcription and replication factor which binds to mtDNA in nucleoids, and found a significant positive correlation (Spearman p-value <0.05) in 34% of studies (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "d9ee1bc6-81e3-4b31-928e-08ca799509ec",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C65",
+      "claim": "The 'TCA Cycle and Respiratory Electron Transport' gene set was the most frequently correlated to mtDNA copy number (1st out of 674 gene sets).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with expectation, we found that the 'TCA Cycle and Respiratory Electron Transport' gene set was the most frequently correlated to mtDNA copy number (1st out of 674 gene sets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "93f90384-d4b8-47f2-9c98-1753b726bf7f",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C66",
+      "claim": "Among the top positively correlated gene sets, many were metabolism-related, and included mitochondrial beta oxidation of fatty acids, and branched chain amino acid (BCAA) catabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the remaining top positively correlated gene sets, many were metabolism-related, and included mitochondrial beta oxidation of fatty acids, and branched chain amino acid (BCAA) catabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6a7000c8-21f1-4dd6-be47-4e2dba012c9c",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C69",
+      "claim": "Elevated plasma levels of BCAAs are found 2 to 5 years before a cohort of patients developed pancreatic ductal adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study has shown that elevated plasma levels of BCAAs are found 2 to 5 years before a cohort of patients developed pancreatic ductal adenocarcinoma (Mayers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mayers et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "676383cf-b76b-45a4-a02c-e687df93e9fa",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C70",
+      "claim": "Several gene sets related to mRNA processing and the cell cycle showed recurrent negative correlation to mtDNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of gene sets showed recurrent negative correlation to mtDNA copy number (Figure 5\u2014figure supplement 1 and Supplementary file 2, Worksheet Fig5Data). Several of these gene sets, including those related to mRNA processing and the cell cycle, are associated with known non-metabolic functions of mitochondria in the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "72778af4-4c8b-4a17-b638-2f0f7462b613",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C71",
+      "claim": "The replication of mitochondria and mtDNA is intimately linked to the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the replication of mitochondria and mtDNA is intimately linked to the cell cycle (Chatre and Ricchetti, 2013), and the nucleotide precursors to mtDNA are in part produced de novo, via a pathway that is only active during the S phase of the cell cycle (Sigoillot et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chatre and Ricchetti, 2013 and Sigoillot et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "90a9c506-0bee-45bd-9c7f-0b2038637d10",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C72",
+      "claim": "The nucleotide precursors to mtDNA are in part produced de novo via a pathway that is only active during the S phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the replication of mitochondria and mtDNA is intimately linked to the cell cycle (Chatre and Ricchetti, 2013), and the nucleotide precursors to mtDNA are in part produced de novo, via a pathway that is only active during the S phase of the cell cycle (Sigoillot et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sigoillot et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "be8857c1-0421-4c6c-ba0f-a8d7b9adef7f",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C73",
+      "claim": "Several immune pathways, including those related to interferon signaling, are frequently negatively correlated with mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Several immune pathways, including those related to interferon signaling, are also frequently negatively correlated with mtDNA content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0c611dc5-d223-4d01-af8b-20a348103f5a",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C74",
+      "claim": "mtDNA stress induced by depletion of TFAM triggered the innate immune response via interferon-stimulated genes and anti-viral signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is a recent report by West and colleagues (West et al., 2015), demonstrating that mtDNA stress induced by depletion of TFAM triggered the innate immune response via interferon-stimulated genes and anti-viral signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to West et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f08a5add-274b-4111-aa57-d07861b6c4f1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C75",
+      "claim": "Of the seven tumor types shown to be depleted of mtDNA, five (BLCA, BRCA, ESCA, HNSC, KIRC) exhibit a negative correlation between expression of immune system genes and tumor tissue mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven tumor types shown to be depleted of mtDNA in Figure 3, five (BLCA, BRCA, ESCA, HNSC, KIRC ) exhibit a negative correlation between expression of immune system genes and tumor tissue (but not necessarily normal tissue) mtDNA content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the gene set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e162e979-e2ec-4a73-8485-ae6f76808bc3",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C76",
+      "claim": "In prostate adjacent normal tissue, the expression of mitochondrial respiratory genes was anti-correlated to mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in prostate adjacent normal tissue, the expression of mitochondrial respiratory genes was anti-correlated to mtDNA content (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the gene set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "365c7654-0bc1-4ece-a5e2-d561df595bf5",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C77",
+      "claim": "The anti-correlation between mitochondrial respiratory gene expression and mtDNA content in prostate tissue may be associated with the unique mitochondrial metabolism of prostate epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this effect may be associated with the unique mitochondrial metabolism of prostate epithelia, which secrete large amounts of citrate generated in the mitochondria, rather than oxidizing it further and using the resulting NADH in the respiratory electron transport chain (Costello et al., 1997; 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to Costello et al., 1997 and 2004.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3dc0fcf3-ac5e-47db-a470-ed20b1dc7a90",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C78",
+      "claim": "Prostate epithelia secrete large amounts of citrate generated in the mitochondria, rather than oxidizing it further and using the resulting NADH in the respiratory electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this effect may be associated with the unique mitochondrial metabolism of prostate epithelia, which secrete large amounts of citrate generated in the mitochondria, rather than oxidizing it further and using the resulting NADH in the respiratory electron transport chain (Costello et al., 1997; 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Costello et al., 1997 and 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "5a56b373-5481-4244-a8b0-ea7d4a6213fd",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C79",
+      "claim": "A large number of CNAs in endometrial carcinomas (UCEC) were associated with increased mtDNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The most apparent result of our analysis was the association of a large number of CNAs in endometrial carcinomas (UCEC) with increased mtDNA abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "691a6303-dce4-4afb-9c0f-540229dd934d",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C80",
+      "claim": "Serous-like endometrial carcinomas exhibited substantially higher mtDNA copy number than all other subtypes (Mann-Whitney p-value 7\u00d710-6).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the UCEC subtype classifications and confirmed that serous-like endometrial carcinomas exhibited substantially higher mtDNA copy number than all other subtypes (Mann-Whitney p-value 7\u00d710-6, Figure 6), explaining the large number of associations we observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0063a8c2-fc63-45e9-8351-b1f0d077120e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C81",
+      "claim": "TP53 mutations are enriched in the serous-like subtype of endometrial carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 mutations are enriched in the serous-like subtype, and these mutations also showed statistically significant association with mtDNA abundance (BH-corrected p-value 0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "5cc4078e-863d-4a88-b4f8-10f0131b3128",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C82",
+      "claim": "TP53 mutations showed statistically significant association with mtDNA abundance in endometrial carcinomas (BH-corrected p-value 0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 mutations are enriched in the serous-like subtype, and these mutations also showed statistically significant association with mtDNA abundance (BH-corrected p-value 0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3107ab1a-673d-4a4c-9b8f-bb77e7861b4f",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C83",
+      "claim": "Increased tumor mtDNA content in IDH1-mutant low grade gliomas was the strongest signal after removing associations in UCEC (BH-corrected p-value 0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "After removing associations in UCEC, we were left with a small number of statistically significant mutations and CNAs associated with mtDNA abundance. Among these, the strongest signal arose from increased tumor mtDNA content in IDH1-mutant low grade gliomas (Figure 6, BH-corrected p-value 0.012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "428747ff-ae50-45bc-b71a-c5a8718da477",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C85",
+      "claim": "IDH2 mutations showed no statistically significant change in mtDNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, IDH2 mutations showed no statistically significant change in mtDNA abundance, suggesting that the effect is specific to the cytosolic isoform IDH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1118a74a-0533-4d34-afaf-62730c4d1b7a",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C86",
+      "claim": "The effect of IDH mutations on mtDNA abundance is specific to the cytosolic isoform IDH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, IDH2 mutations showed no statistically significant change in mtDNA abundance, suggesting that the effect is specific to the cytosolic isoform IDH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential association of IDH1 vs IDH2 mutations with mtDNA content.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6c909bef-4acb-4452-b42f-ac67571f1654",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C87",
+      "claim": "Mutations in PTEN were associated with a significant decrease in mtDNA abundance (BH-corrected p-value 0.033).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, mutations in PTEN were associated with a significant decrease in mtDNA abundance (BH-corrected p-value 0.033).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "a38d2838-b01a-4fc3-99cd-ddfd0314f4d1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C88",
+      "claim": "A mutant IDH1 R132H oligodendroglioma xenograft model displayed high densities of mitochondria and increased levels of mitochondrial metabolic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results echo a complementary finding by Navis and colleagues (Navis et al., 2013), who reported that a mutant IDH1 R132H oligodendroglioma xenograft model displayed high densities of mitochondria and increased levels of mitochondrial metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Navis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ca63881f-bc14-4129-89e0-880157a7520b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C89",
+      "claim": "An increase in mitochondrial mass would increase activity of mitochondrial IDH2 and compensate for loss of activity introduced by mutant IDH1.",
+      "claim_type": "EXPLICIT",
+      "source": "They proposed that an increase in mitochondrial mass would increase activity of mitochondrial IDH2 and compensate for loss of activity introduced by mutant IDH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by Navis et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ded3d156-1656-4dad-89f7-0a559d789ad2",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C90",
+      "claim": "In KICH, samples with mtDNA indels contained much higher quantities of mtDNA than unmutated samples (Mann-Whitney U-test p-value 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that samples with mtDNA indels contained much higher quantities of mtDNA than unmutated samples (Mann-Whitney U-test p-value 0.002, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "37760e73-c7b3-489f-ab04-73a867bb78d0",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C91",
+      "claim": "The same effect of increased mtDNA in mutated samples was not found when examining only single nucleotide variants in KICH.",
+      "claim_type": "EXPLICIT",
+      "source": "The same effect was not found when examining only single nucleotide variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ac548969-3410-40dc-89b5-2d2fe16c47c2",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C92",
+      "claim": "The presence of inactivating mtDNA mutations may induce increased mtDNA replication, perhaps as a response to inadequate mitochondrial energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the presence of inactivating mtDNA mutations may induce increased mtDNA replication, perhaps as a response to inadequate mitochondrial energy production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed association between mtDNA indels and increased mtDNA copy number.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f42a6a07-b731-4f0e-9e03-9a3968e3e169",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C93",
+      "claim": "Prior work has described mtDNA depletion which was not accompanied by a drop in respiratory activity or mitochondrial protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy is reminiscent of prior work describing mtDNA depletion which was not accompanied by a drop in respiratory activity or mitochondrial protein expression. Instead, a compensation of respiratory activity was described in cases of mtDNA depletion caused by either genetic alterations (Seidel-Rogol and Shadel, 2002; Barth\u00e9l\u00e9my et al., 2001; Dorado et al., 2011) or reverse-transcriptase inhibitors (Kim et al., 2008; Mir\u00f3 et al., 2004; Stankov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b963bd63-67ea-439c-924d-29dc0002fb40",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C94",
+      "claim": "A compensation of respiratory activity was described in cases of mtDNA depletion caused by genetic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy is reminiscent of prior work describing mtDNA depletion which was not accompanied by a drop in respiratory activity or mitochondrial protein expression. Instead, a compensation of respiratory activity was described in cases of mtDNA depletion caused by either genetic alterations (Seidel-Rogol and Shadel, 2002; Barth\u00e9l\u00e9my et al., 2001; Dorado et al., 2011) or reverse-transcriptase inhibitors (Kim et al., 2008; Mir\u00f3 et al., 2004; Stankov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Seidel-Rogol and Shadel, 2002; Barth\u00e9l\u00e9my et al., 2001; Dorado et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3ab0f275-47e4-4c56-bc58-f6650a301c75",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C95",
+      "claim": "A compensation of respiratory activity was described in cases of mtDNA depletion caused by reverse-transcriptase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy is reminiscent of prior work describing mtDNA depletion which was not accompanied by a drop in respiratory activity or mitochondrial protein expression. Instead, a compensation of respiratory activity was described in cases of mtDNA depletion caused by either genetic alterations (Seidel-Rogol and Shadel, 2002; Barth\u00e9l\u00e9my et al., 2001; Dorado et al., 2011) or reverse-transcriptase inhibitors (Kim et al., 2008; Mir\u00f3 et al., 2004; Stankov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2008; Mir\u00f3 et al., 2004; Stankov et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b8d099dc-cc63-4b2f-96a4-381909afe9f9",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C96",
+      "claim": "In KIRC, significant depletion of mitochondrial protein was found in all tumor samples compared to adjacent normal renal parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "In KIRC, which was the most strongly mtDNA-depleted tumor type in Figure 3, we found significant depletion of mitochondrial protein in all tumor samples compared to adjacent normal renal parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "adb72f09-63ab-4e9f-a3c9-1ba7f8b20b1e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C97",
+      "claim": "In KIRP, a more subtle depletion of mitochondrial protein was observed in 2/3 tumor samples, compared to adjacent normal renal parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "In KIRP, for which 69% of paired samples were depleted of mtDNA in Figure 3, we observed a more subtle depletion of mitochondrial protein in 2/3 tumor samples, compared to adjacent normal renal parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "c8e9625f-a84e-4bca-b220-a57c02c10c88",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C98",
+      "claim": "In BLCA, 2/3 BLCA tumors showed increased levels of mitochondrial protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In BLCA, we found that 2/3 BLCA tumors showed increased levels of mitochondrial protein, which contrasted with Figure 3, where nearly all samples showed evidence of mtDNA depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "49f5fba2-3b5d-4590-8d28-d3c6800d4f41",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C99",
+      "claim": "Results from IHC regarding mitochondrial protein expression agree with those from sequencing in 2/3 cancer types (KIRC and KIRP).",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results from IHC regarding mitochondrial protein expression agree with those from sequencing in 2/3 cancer types (KIRC and KIRP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the comparison between IHC and sequencing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "41369493-a3f1-437c-ac11-b89d8b364db5",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C100",
+      "claim": "In BLCA, mtDNA depletion as quantified by sequencing is not mirrored by a synchronous down-regulation of mitochondrial protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In a third cancer type (BLCA), mtDNA depletion as quantified by sequencing is not mirrored by a synchronous down-regulation of mitochondrial protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing sequencing and IHC results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "bb4ddb38-9f3e-47af-a02c-ca4d5e958085",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C101",
+      "claim": "mtDNA copy number is correlated to mitochondrial respiratory gene expression in KIRC and KIRP, but not BLCA.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned earlier, our results from gene expression analysis (Figure 5) indicate that mtDNA copy number is correlated to mitochondrial respiratory gene expression in KIRC and KIRP, but not BLCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e3dc11fa-0e72-4d8a-8598-848e9d4d67cf",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C102",
+      "claim": "In BLCA, the gene sets most strongly correlated to mtDNA copy number were associated with the cell cycle and immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in BLCA, the gene sets most strongly correlated to mtDNA copy number were associated with the cell cycle and immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set enrichment analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "9a7e180e-6eec-4524-ba44-bb3b3229dd61",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C103",
+      "claim": "Other mechanisms compensate for the depletion of mtDNA in BLCA (and potentially in other cancer types).",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that other mechanisms compensate for the depletion of mtDNA in BLCA (and potentially in other cancer types), which is further discussed in the concluding section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between mtDNA depletion and maintained mitochondrial protein levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "9a96be90-33df-4ec1-a377-d91265295de2",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C104",
+      "claim": "Factors besides mtDNA copy number can determine the rate of mitochondrial transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results support the notion that factors besides mtDNA copy number can determine the rate of mitochondrial transcription, and that mtDNA depletion is not sufficient evidence to conclude that mitochondrial respiration is down-regulated in a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the IHC and gene expression results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "092c531b-8039-4687-8137-f0deccc6eb22",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C105",
+      "claim": "mtDNA depletion is not sufficient evidence to conclude that mitochondrial respiration is down-regulated in a tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results support the notion that factors besides mtDNA copy number can determine the rate of mitochondrial transcription, and that mtDNA depletion is not sufficient evidence to conclude that mitochondrial respiration is down-regulated in a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the IHC and gene expression results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "95c79f5c-24f8-43d5-9764-0b6769e779e2",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C106",
+      "claim": "Across nearly half of the tumor types studied, evidence for depletion of mtDNA was found, relative to adjacent normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Across nearly half of the tumor types we studied, we found evidence for depletion of mtDNA, relative to adjacent normal tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "5207395d-55f3-4bb9-a7c4-19aee7e028e1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C107",
+      "claim": "Orthogonal measurements of transcription levels (via RNA-Seq) and mitochondrial protein levels (via IHC) in a subset of samples linked mtDNA variation to downregulation of mitochondrially-localized metabolic pathways, in some but not all tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthogonal measurements of transcription levels (via RNA-Seq) and mitochondrial protein levels (via IHC) in a subset of these samples linked this variation to downregulation of mitochondrially-localized metabolic pathways, in some but not all tumor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from gene expression and IHC analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "79ccc3cb-a1a4-4e30-b42d-3b6ea25bc1f1",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C108",
+      "claim": "Findings of gross changes in mtDNA content in tumors echo a number of prior but isolated observations, largely based on quantitative PCR measurements and with substantially smaller sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings of gross changes in mtDNA content in tumors echo a number of prior but isolated observations, largely based on quantitative PCR measurements and with substantially smaller sample sizes, of mtDNA copy number changes in cancers (see [Yu, 2011] for a thorough review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "76a2e4ca-8db8-4bc0-97c5-9525e9d9420e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C109",
+      "claim": "Oncocytomas are well-known to be characterized by the excessive accumulation of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, oncocytomas (not analyzed in this work) are well-known to be characterized by the excessive accumulation of mitochondria (Tickoo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tickoo et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "21af0d92-6519-4072-a3f6-951f8295a8cd",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C110",
+      "claim": "Decreases in mtDNA copy number have been reported in breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, decreases in mtDNA copy number have been reported in breast cancer (Mambo et al., 2005; Fan et al., 2009), liver cancer (Lee, 2004), and clear-cell kidney cancers (Meierhofer et al., 2004; Nilsson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mambo et al., 2005 and Fan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b028ea78-4a52-4555-bee4-652aea1b5ec9",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C111",
+      "claim": "Decreases in mtDNA copy number have been reported in liver cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, decreases in mtDNA copy number have been reported in breast cancer (Mambo et al., 2005; Fan et al., 2009), liver cancer (Lee, 2004), and clear-cell kidney cancers (Meierhofer et al., 2004; Nilsson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f2e6a82b-9a5f-43d6-8ce3-86a5792b0f9f",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C112",
+      "claim": "Decreases in mtDNA copy number have been reported in clear-cell kidney cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, decreases in mtDNA copy number have been reported in breast cancer (Mambo et al., 2005; Fan et al., 2009), liver cancer (Lee, 2004), and clear-cell kidney cancers (Meierhofer et al., 2004; Nilsson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Meierhofer et al., 2004 and Nilsson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "915cc2fe-8176-4134-9aac-bec21ed54b50",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C113",
+      "claim": "The majority of observations in this study agree with prior work.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of our observations agree with prior work (when comparing to [Yu, 2011]), some of our results are in contradiction to prior studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature cited in Yu, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "a15b6909-b857-4eda-aaa9-e3175382b044",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C114",
+      "claim": "The discordance between findings seems in part due to inadequate sample sizes, and incomplete or unavailable matched normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The discordance between findings seems in part due to inadequate sample sizes, and incomplete or unavailable matched normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the reasons for discordance with prior studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3bd4e15e-fd04-4533-938e-4313994632cf",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C115",
+      "claim": "No clear increase or decrease in mtDNA content was found in thyroid carcinomas, in contrast to Mambo et al., 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in contrast to (Mambo et al., 2005) and (Wang et al., 2005), we find no clear increase or decrease in mtDNA content in thyroid or endometrial carcinomas, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current study's findings to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "57e2399f-d0b9-4c4a-8139-410b026b809d",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C116",
+      "claim": "No clear increase or decrease in mtDNA content was found in endometrial carcinomas, in contrast to Wang et al., 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in contrast to (Mambo et al., 2005) and (Wang et al., 2005), we find no clear increase or decrease in mtDNA content in thyroid or endometrial carcinomas, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current study's findings to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6d8c972a-03e2-46b7-b895-dffe551616d8",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C117",
+      "claim": "mtDNA ploidy alone cannot be used as a surrogate for the respiratory activity of a tumor sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that mtDNA ploidy alone cannot be used as a surrogate for the respiratory activity of a tumor sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the IHC and gene expression results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "9e4168c0-1e7c-4543-931d-8a42b887d7d8",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C118",
+      "claim": "HeLa cells depleted of mtDNA by culture in ethidium bromide showed substantial mitochondrial transcription despite depleted levels of mtDNA, TFAM, and mitochondrial RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "In (Seidel-Rogol and Shadel, 2002), HeLa cells depleted of mtDNA by culture in ethidium bromide showed substantial mitochondrial transcription despite the fact that mtDNA, TFAM, and mitochondrial RNA polymerase were all at depleted levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seidel-Rogol and Shadel, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "d4b35c98-7da4-4341-9447-860a66a6f6a9",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C119",
+      "claim": "An excess of TFAM and mitochondrial RNA polymerase prior to depletion may ensure that, even once depleted, transcription is sustained.",
+      "claim_type": "EXPLICIT",
+      "source": "There, the authors suggest that an excess of TFAM and mitochondrial RNA polymerase prior to depletion may ensure that, even once depleted, transcription is sustained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from Seidel-Rogol and Shadel, 2002.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "f858999c-1f40-43bd-af60-883edb6cdd4c",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C120",
+      "claim": "mtDNA depletion as a result of thymidine kinase 2 deficiency in mice was associated with down-regulation of the mitochondrial transcriptional terminator MTERF3 in heart tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Another report examined mtDNA depletion as a result of thymidine kinase 2 deficiency in mice, and observed a down-regulation of the mitochondrial transcriptional terminator MTERF3 in heart tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dorado et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0639a94c-c6b6-49dc-b3da-a349c53c9844",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C121",
+      "claim": "Down-regulation of MTERF3 resulted in increased expression of mitochondrial transcripts (ND6 and COX1) in heart tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the expression of mitochondrial transcripts (ND6 and COX1) increased in heart tissue, as did the ratio of the levels of these transcripts to mtDNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dorado et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0e5a6052-081b-4ebd-ac29-9143dfd869f7",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C122",
+      "claim": "The consequence of transcriptional compensation in thymidine kinase 2 deficient mice was that the heart tissue was spared from respiratory deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequence of this transcriptional compensation was that the heart tissue was spared from respiratory deficiency (Dorado et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dorado et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "d164a83d-7265-4fa5-a2d4-cfac1d1fee1a",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C123",
+      "claim": "Future studies investigating changes in mtDNA in tumors should quantify mtDNA protein expression in parallel with estimating mtDNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "We would argue strongly that future studies investigating changes in mtDNA in tumors should quantify mtDNA protein expression in parallel with estimating mtDNA copy number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "6a1ae866-fef7-4872-a90c-cc1c0037dd3e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C124",
+      "claim": "Subsets of patient samples, characterized by the presence of particular somatic mutations/copy number alterations, were enriched/depleted in mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While mtDNA depletion or accumulation may typify certain cancer types, we further identified that subsets of patient samples, characterized by the presence of particular somatic mutations/copy number alterations, were enriched/depleted in mtDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "26b48ff7-436d-465b-9c47-e2ba6fa4446b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C125",
+      "claim": "The presence of activating IDH1 mutations (in low grade gliomas) is strongly correlated to high tumor mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of activating IDH1 mutations (in low grade gliomas) or a large number of copy number alterations (in serous-like endometrial carcinomas) is strongly correlated to high tumor mtDNA content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "e6b9c1d1-fac9-44de-a6ec-ca28e71caa29",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C126",
+      "claim": "A large number of copy number alterations (in serous-like endometrial carcinomas) is strongly correlated to high tumor mtDNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of activating IDH1 mutations (in low grade gliomas) or a large number of copy number alterations (in serous-like endometrial carcinomas) is strongly correlated to high tumor mtDNA content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "0ad9c130-45f7-437d-9370-a03096c9d046",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C127",
+      "claim": "If tumors with increased mtDNA content have an increased dependence on mitochondrial metabolism to proliferate, using mitochondrially-targeted therapies (e.g. metformin) may be a therapeutic opportunity.",
+      "claim_type": "EXPLICIT",
+      "source": "If these tumors (and others with increased mtDNA content) have an increased dependence on mitochondrial metabolism to proliferate, using mitochondrially-targeted therapies (e.g. metformin) may be a therapeutic opportunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "5470dacd-f567-4955-bd4f-c3fb047f248c",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C128",
+      "claim": "Vulnerability to mitochondrially-targeted therapies might arise from disabling passenger mutations in genes required for mtDNA copy number maintenance (e.g. DNA polymerase gamma).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, vulnerability to mitochondrially-targeted therapies might arise from disabling passenger mutations in genes required for mtDNA copy number maintenance (e.g. DNA polymerase gamma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic vulnerabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "85ce3e7c-b07d-4da2-b5c3-26187fc3c176",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C129",
+      "claim": "Both hypotheses about therapeutic opportunities should be amenable to investigation in carefully chosen cell line models of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Both hypotheses should be amenable to investigation in carefully chosen cell line models of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1f1212b8-015c-4df1-b61c-adc404a79ae3",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C130",
+      "claim": "A number of reports have described extensive genetic heterogeneity of some tumor types (e.g. kidney cancers), where spatially distinct biopsies isolated from the same patients have non-overlapping somatic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of reports have now described extensive genetic heterogeneity of some tumor types (e.g. kidney cancers [Gerlinger et al., 2012]), where spatially distinct biopsies isolated from the same patients have non-overlapping somatic alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gerlinger et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "7adb3682-5f5d-4157-8ac0-213236814abb",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C131",
+      "claim": "No reports have examined how mitochondrial DNA mutations and copy number vary spatially across a tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no reports have examined how mitochondrial DNA mutations and copy number vary spatially across a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "c1a61101-5ab4-4560-8e2f-e02c9900b950",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C132",
+      "claim": "Variation of mtDNA mutations and copy number spatially across a tumor, if it exists, might reflect functional diversity in mitochondrial metabolic activity and signaling in different regions of a tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation of this kind, if it exists, might reflect functional diversity in mitochondrial metabolic activity and signaling in different regions of a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential spatial heterogeneity of mtDNA.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "8b81ca38-7c7c-419b-a2a6-87ed05315368",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "claim_id": "C133",
+      "claim": "Mitochondria will inevitably play a role in the evolution of resistance to therapeutic intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "As critical players in immunity, signaling, and metabolism, we suspect that mitochondria will inevitably play a role in the evolution of resistance to therapeutic intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of mitochondria in therapeutic resistance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a computational method to estimate mtDNA copy number from whole-genome and whole-exome sequencing data by calculating the ratio of mitochondrial to nuclear DNA reads, corrected for tumor purity and ploidy. The method was validated by demonstrating significant correlation between WXS and WGS estimates across 1110 samples from 8 tumor types, and batch effects from sequencing centers were identified and corrected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C45 collectively describe a well-validated methodological approach. The method builds on established principles (C30-C33) and prior work (C33), includes appropriate corrections for batch effects (C37-C39), and demonstrates strong cross-platform validation (C44-C45, Figure 2\u2014figure supplement 1). The correlation between WXS and WGS provides independent validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Seven of fifteen tumor types (bladder, breast, esophageal, head and neck, clear-cell kidney, papillary kidney, and liver cancers) showed statistically significant mtDNA depletion relative to matched normal tissue, with particularly strong depletion in bladder (nearly all samples) and clear-cell kidney (87% of samples) cancers. Lung adenocarcinoma was the only tumor type showing significant mtDNA accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C46-C52, and C106 are strongly supported by statistical analysis (Mann-Whitney tests with BH correction, p<0.05) shown in Figure 3. The findings are consistent across both WXS and WGS platforms (C52, Figure 3\u2014figure supplement 1), and specific quantitative observations (C49-C50) are directly supported by the data. The statistical approach is appropriate for paired sample comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ead76a80-e461-40c0-a06e-7c2b21f24004",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A recurrent but weak negative correlation was observed between tumor mtDNA content and immune infiltration score across multiple cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is supported by correlation analysis (Figure 3\u2014figure supplements 2-5), but the authors acknowledge the correlation is weak and note that p-values are uncorrected for multiple hypothesis testing. The biological interpretation is complicated by the fact that mtDNA estimates are already partially corrected for purity, making the independent contribution of immune infiltration unclear. Additional analysis would be needed to establish causality or mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "ddedba80-a494-4016-82f0-bab5954b9dd6",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High tumor mtDNA content was associated with better survival in adrenocortical carcinoma (p=0.026), chromophobe renal cell carcinoma (p=0.053), and low-grade glioma (p=0.009), but with worse survival in clear-cell renal cell carcinoma (p=0.023) and melanoma (p=0.043).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by Cox regression analysis shown in Figure 4. The statistical tests are appropriate for survival analysis, and p-values are reported. However, the p-value for chromophobe RCC (0.053) is marginally non-significant at the conventional 0.05 threshold. The opposing directions of association across cancer types suggest context-dependent effects, which the authors appropriately acknowledge may be confounded by somatic mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "da0013ae-1381-4975-b96e-823efa08173e",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mtDNA copy number showed tissue-specific correlation patterns with gene expression. Across cancer types, mitochondrially-localized metabolic pathways (TCA cycle, respiratory electron transport, fatty acid oxidation, BCAA catabolism) showed the most frequent positive correlation with mtDNA abundance. In some cancer types (KIRC, KIRP), mtDNA correlated with respiratory gene expression, but not in others (BLCA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C61-C66, and C101 are supported by gene set enrichment analysis using appropriate statistical methods (Spearman correlation, limma mean-rank gene set test) shown in Figure 5. The recurrent correlation between mtDNA and mitochondrial gene expression serves as independent validation of the copy number estimates (C63). The tissue-specific patterns are well-documented, and the finding that TFAM correlates with mtDNA in only 34% of studies (C64) appropriately acknowledges variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gene sets related to cell cycle, mRNA processing, and immune pathways (particularly interferon signaling) showed recurrent negative correlation with mtDNA content. Five of seven mtDNA-depleted tumor types exhibited negative correlation between immune gene expression and tumor mtDNA content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 are supported by gene set enrichment analysis (Figure 5\u2014figure supplement 1). The negative correlation with immune pathways is particularly interesting given prior work (C74, West et al. 2015) showing that mtDNA stress triggers innate immune responses. The connection to cell cycle genes is supported by established knowledge about mitochondrial replication being linked to cell cycle (C71-C72). The observation in C75 provides specific support for the immune correlation pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "3e64399f-062a-4b34-8667-a22b52d0cf57",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific somatic alterations were associated with mtDNA abundance: serous-like endometrial carcinomas with high copy number alterations showed substantially elevated mtDNA (p=7\u00d710\u207b\u2076); IDH1 mutations in low-grade gliomas were associated with increased mtDNA (BH-corrected p=0.012), while IDH2 mutations showed no effect; PTEN mutations were associated with decreased mtDNA (BH-corrected p=0.033).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C79-C87, and C124-C126 are supported by statistical analysis (Mann-Whitney tests with BH correction) shown in Figure 6. The association with UCEC serous-like subtype is particularly strong (p=7\u00d710\u207b\u2076). The differential effect of IDH1 vs IDH2 mutations (C85-C86) is intriguing and supported by the data, though the mechanistic interpretation requires caution. The findings echo prior work (C88, Navis et al. 2013) showing increased mitochondrial density in IDH1-mutant models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "de80c83b-f593-475a-b6b3-20e20fce0368",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In chromophobe kidney cancer, samples with mtDNA indels (but not SNVs) contained significantly higher mtDNA copy number than unmutated samples (p=0.002), suggesting that inactivating mtDNA mutations may induce compensatory mtDNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 are supported by statistical analysis (Mann-Whitney U-test, p=0.002) shown in Figure 6\u2014figure supplement 1. The differential effect of indels vs SNVs (C91) strengthens the interpretation that functional inactivation drives the response. However, C92 is appropriately framed as speculation ('may induce', 'perhaps'), as the mechanism is inferred rather than directly demonstrated. The finding is biologically plausible as a compensatory response to mitochondrial dysfunction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "b1d12e43-f26f-46b5-a0e3-312debff7f79",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Immunohistochemical analysis revealed that mtDNA depletion does not always correlate with reduced mitochondrial protein levels. In KIRC and KIRP, mtDNA depletion was accompanied by reduced mitochondrial protein, but in BLCA, 2/3 tumors maintained or increased mitochondrial protein despite mtDNA depletion, suggesting compensatory mechanisms can sustain respiratory protein levels independent of mtDNA copy number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C96-C105, C107, and C117 are supported by IHC data (Figure 7) and gene expression analysis (Figure 5). The discordance between mtDNA depletion and protein levels in BLCA (C98, C100) is well-documented and consistent with gene expression patterns showing that BLCA mtDNA correlates with cell cycle/immune genes rather than respiratory genes (C102). This finding is supported by prior literature showing compensation in mtDNA-depleted systems (C93-C95, C118-C122). The conclusion that mtDNA depletion is insufficient to conclude respiratory downregulation (C105, C117) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "df65d655-d09d-438a-b326-cc08a0aa6016",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and motivation: The mitochondrial genome encodes 13 essential respiratory chain components, and mtDNA alterations can impair respiration and contribute to various pathologies including cancer. Despite extensive study of mtDNA mutations in cancer, comprehensive analysis of mtDNA copy number variation across tumor types has been lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C28 provide established background knowledge supported by appropriate citations to prior literature. These claims establish the biological context (C7-C8, C14-C21), the role of mtDNA alterations in disease (C9-C11), mitochondrial dysfunction in cancer (C22-C26), and the gap in knowledge that motivates the study (C13, C27-C28). All claims are either established facts or appropriately cited to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings of mtDNA depletion in breast, liver, and clear-cell kidney cancers agree with prior isolated reports based on qPCR with smaller sample sizes. Some discordances with prior studies (thyroid and endometrial carcinomas) are attributed to inadequate sample sizes and lack of matched normal tissue in earlier work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C116 appropriately contextualize the current findings relative to prior literature (Yu 2011 review, and specific studies). The authors correctly note that their larger sample sizes and use of matched normal tissue provide more robust evidence. The specific comparisons to prior work (C110-C112 showing agreement, C115-C116 showing disagreement) are appropriately cited and the explanations for discordance (C114) are reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "40cb84c0-f29e-4316-bd15-df197960e113",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature demonstrates that mtDNA copy number fluctuations influence transcription of respiratory genes, but complete mtDNA depletion can affect additional pathways. Compensatory mechanisms can maintain transcription despite depletion, as shown in HeLa cells and mouse models. The unique finding of anti-correlation between respiratory gene expression and mtDNA in prostate tissue may relate to the specialized citrate-secreting metabolism of prostate epithelia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C76-C78, and C118-C122 are supported by appropriate citations to prior literature. The prostate finding (C76) is an interesting observation from the data, and the speculation about citrate metabolism (C77-C78) is appropriately framed and supported by citations (Costello et al.). The discussion of compensatory mechanisms (C118-C122) provides important biological context for interpreting the IHC findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "a213b6ed-d9ce-460e-b461-f1026fb6a372",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Supporting evidence from prior literature: Elevated plasma BCAAs precede pancreatic cancer development; IDH1-mutant glioma models show high mitochondrial density; and compensation of respiratory activity has been documented in cases of mtDNA depletion caused by genetic alterations or drug treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C88-C89, and C93-C95 are appropriately cited to prior literature and provide relevant context for interpreting the current findings. These claims support the biological plausibility of the observed associations between mtDNA content and metabolic pathways (C69), IDH1 mutations (C88-C89), and compensatory mechanisms (C93-C95).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    },
+    {
+      "id": "23384f3c-5c1c-4629-844c-626afec80bca",
+      "content_id": "4522a1b0-0d05-4976-ac9e-bbd06a732d76",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Future directions and implications: The authors recommend that future studies quantify mitochondrial protein expression alongside mtDNA copy number. They speculate that tumors with high mtDNA content may be vulnerable to mitochondrially-targeted therapies, and suggest investigating spatial heterogeneity of mtDNA across tumors and the role of mitochondria in therapeutic resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123, C127-C133 represent appropriate recommendations and speculation based on the study findings. The recommendation to measure protein expression (C123) is well-justified by the IHC results. The therapeutic speculations (C127-C128) are appropriately framed as hypotheses and suggestions for cell line studies (C129). The discussion of spatial heterogeneity (C130-C132) and therapeutic resistance (C133) identifies important gaps in knowledge, with C130 appropriately cited to prior work on genetic heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:57.410685Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95b0ff12-c782-4100-9e8f-d227efed755d",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "b46d4694-4bf9-42bd-8fba-0c2a685308ba",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "983af7f6-b489-48f5-8d6f-f5be4a4f233b",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "1c9a793e-a9e6-4730-8737-4c6b1bc124df",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "0a500775-8ff9-4e9c-8599-5bf73cca2aa1",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "ee03d3d9-17a4-44c2-82c5-abe23a92ce97",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "2b27c936-b6da-4ce0-80ec-c508be8dc2c7",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "9ea2903d-e6ca-433f-bffe-a239d6509073",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "58454ab8-6ce5-47b7-b7c4-58cf7e45aa01",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "def536dd-866f-44aa-a42d-0856cb9e96f2",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "1fd875c9-89a9-41fe-a196-c1d02ebc9b45",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "a3d3b197-33e2-4638-b996-8cc908d5afa9",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "6e801792-9864-4d13-9718-885cdfe49cd1",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "f071b587-db58-4302-94bf-d57f4a8401e5",
+      "result_id": "88acbcf0-55bb-49d1-a3fc-7efc10d1fb3f"
+    },
+    {
+      "claim_id": "41497101-9c19-4f44-ad83-01f17c552524",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "05b5b7fd-c1ec-4091-849a-db189c8cd5aa",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "53a5f2d9-ce41-4290-a53c-4a99d565d28b",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "063b4120-d145-463a-8062-6801c7b2efe7",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "01d13758-1c85-476e-869f-e22756e9e7dd",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "bafc4cb2-9ba8-40e4-8034-2742d859c394",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "1be37a47-de1a-47d0-a361-e61562c85c17",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "24ad9598-984c-4a39-8827-4c246319d363",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "95c79f5c-24f8-43d5-9764-0b6769e779e2",
+      "result_id": "1d8ab1e8-245a-4e0b-a1ac-1dd3e9b3911b"
+    },
+    {
+      "claim_id": "8f5539ef-ba15-4f8e-9222-5325da385bcd",
+      "result_id": "ead76a80-e461-40c0-a06e-7c2b21f24004"
+    },
+    {
+      "claim_id": "beafe6d3-150e-414b-92ce-f007b9db1d33",
+      "result_id": "ddedba80-a494-4016-82f0-bab5954b9dd6"
+    },
+    {
+      "claim_id": "5d70bf93-3cfe-4842-b0ce-105cd51f5e61",
+      "result_id": "ddedba80-a494-4016-82f0-bab5954b9dd6"
+    },
+    {
+      "claim_id": "10a06dd0-33ad-41cd-9be7-f2babca239b3",
+      "result_id": "ddedba80-a494-4016-82f0-bab5954b9dd6"
+    },
+    {
+      "claim_id": "dd384674-bd8d-4eef-9482-5184823936fb",
+      "result_id": "ddedba80-a494-4016-82f0-bab5954b9dd6"
+    },
+    {
+      "claim_id": "77008577-0e92-4754-ab69-c38e0ec4a32e",
+      "result_id": "ddedba80-a494-4016-82f0-bab5954b9dd6"
+    },
+    {
+      "claim_id": "4def95e4-8756-4621-9d77-23400c4e7036",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "a65379f8-dfd2-41d6-a2bb-e75a13af4763",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "67f5bfae-5963-4118-a31b-e8ad6f88464c",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "023cddfa-b6eb-4677-af93-6a8944b5767b",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "0a4fe94c-5980-406a-ac3f-da93a99b5ccc",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "24bf6f80-d13d-4789-965a-cc1e41f91b94",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "d9ee1bc6-81e3-4b31-928e-08ca799509ec",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "93f90384-d4b8-47f2-9c98-1753b726bf7f",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "bb4ddb38-9f3e-47af-a02c-ca4d5e958085",
+      "result_id": "da0013ae-1381-4975-b96e-823efa08173e"
+    },
+    {
+      "claim_id": "676383cf-b76b-45a4-a02c-e687df93e9fa",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "72778af4-4c8b-4a17-b638-2f0f7462b613",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "90a9c506-0bee-45bd-9c7f-0b2038637d10",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "be8857c1-0421-4c6c-ba0f-a8d7b9adef7f",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "0c611dc5-d223-4d01-af8b-20a348103f5a",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "f08a5add-274b-4111-aa57-d07861b6c4f1",
+      "result_id": "47308eec-07eb-465e-ab3c-8b5c502c6ffb"
+    },
+    {
+      "claim_id": "c5b49b95-e467-4d3b-bcea-5ac578693825",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "5a56b373-5481-4244-a8b0-ea7d4a6213fd",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "691a6303-dce4-4afb-9c0f-540229dd934d",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "0063a8c2-fc63-45e9-8351-b1f0d077120e",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "5cc4078e-863d-4a88-b4f8-10f0131b3128",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "3107ab1a-673d-4a4c-9b8f-bb77e7861b4f",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "428747ff-ae50-45bc-b71a-c5a8718da477",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "1118a74a-0533-4d34-afaf-62730c4d1b7a",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "6c909bef-4acb-4452-b42f-ac67571f1654",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "6a1ae866-fef7-4872-a90c-cc1c0037dd3e",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "26b48ff7-436d-465b-9c47-e2ba6fa4446b",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "e6b9c1d1-fac9-44de-a6ec-ca28e71caa29",
+      "result_id": "3e64399f-062a-4b34-8667-a22b52d0cf57"
+    },
+    {
+      "claim_id": "ded3d156-1656-4dad-89f7-0a559d789ad2",
+      "result_id": "de80c83b-f593-475a-b6b3-20e20fce0368"
+    },
+    {
+      "claim_id": "37760e73-c7b3-489f-ab04-73a867bb78d0",
+      "result_id": "de80c83b-f593-475a-b6b3-20e20fce0368"
+    },
+    {
+      "claim_id": "ac548969-3410-40dc-89b5-2d2fe16c47c2",
+      "result_id": "de80c83b-f593-475a-b6b3-20e20fce0368"
+    },
+    {
+      "claim_id": "d1c43623-685c-415e-9cb3-01d2b0120482",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "b8d099dc-cc63-4b2f-96a4-381909afe9f9",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "adb72f09-63ab-4e9f-a3c9-1ba7f8b20b1e",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "c8e9625f-a84e-4bca-b220-a57c02c10c88",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "49f5fba2-3b5d-4590-8d28-d3c6800d4f41",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "41369493-a3f1-437c-ac11-b89d8b364db5",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "bb4ddb38-9f3e-47af-a02c-ca4d5e958085",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "e3dc11fa-0e72-4d8a-8598-848e9d4d67cf",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "9a7e180e-6eec-4524-ba44-bb3b3229dd61",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "9a96be90-33df-4ec1-a377-d91265295de2",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "092c531b-8039-4687-8137-f0deccc6eb22",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "5207395d-55f3-4bb9-a7c4-19aee7e028e1",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "6d8c972a-03e2-46b7-b895-dffe551616d8",
+      "result_id": "b1d12e43-f26f-46b5-a0e3-312debff7f79"
+    },
+    {
+      "claim_id": "8c631e4f-e74a-4624-9389-cbf12abadd46",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "c9eb1d5f-fba5-464c-bd75-0eb8af261fd7",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "6d607dda-fd60-475d-a1db-fc496631a54b",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "ee1f8dd7-6e4a-4d59-a85d-993f24d2d4ed",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "7fb47202-3ac6-4cdd-8abb-1c6e26a1ac23",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "6397ac96-23ad-40ce-a9c0-cc7882a9a8ba",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "1470fae3-5fc2-4b5d-a1a4-c7b40263094e",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "23d5cf9c-d23c-4dda-bf0f-d4c730e15ff7",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "bf4346f6-1484-4edd-b545-837517c38472",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "2f815cbe-1acd-482e-b3a2-9f239cc4d8a5",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "67ca450e-076e-4993-a16a-90e2afda2208",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "f26d2f7a-79c2-4567-8f92-167f3adff4fa",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "0035d2b7-c9df-4f6d-9714-eff1c6d78922",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "bb170144-521d-496c-b6b8-58c63c3a93bb",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "df129685-8028-47ae-bdb9-c76bfafb125e",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "86432dad-5e39-4a8e-b937-5a3cf0f87701",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "cf4b3543-901d-4688-b975-84df617303fe",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "e8b435e0-fd07-4a2b-9490-fc7dbcf083ed",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "841bd3e5-a9e6-486f-aff1-7906a0b658d9",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "3457086b-1a4f-4c89-ae5c-cd57e8a4e371",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "12ff2ffe-556b-4c1b-b7fe-5f50d37ab1a4",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "e9d8595e-7c6f-45d4-9986-da39818be8a3",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "ec357e79-caba-46b4-8b08-e8e3d8ef6859",
+      "result_id": "df65d655-d09d-438a-b326-cc08a0aa6016"
+    },
+    {
+      "claim_id": "79ccc3cb-a1a4-4e30-b42d-3b6ea25bc1f1",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "76a2e4ca-8db8-4bc0-97c5-9525e9d9420e",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "21af0d92-6519-4072-a3f6-951f8295a8cd",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "b028ea78-4a52-4555-bee4-652aea1b5ec9",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "f2e6a82b-9a5f-43d6-8ce3-86a5792b0f9f",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "915cc2fe-8176-4134-9aac-bec21ed54b50",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "a15b6909-b857-4eda-aaa9-e3175382b044",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "3bd4e15e-fd04-4533-938e-4313994632cf",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "57e2399f-d0b9-4c4a-8139-410b026b809d",
+      "result_id": "fbbcb96e-740d-4161-91a5-0e2c86d60ce0"
+    },
+    {
+      "claim_id": "b70d9537-250e-45ec-9904-903c503ca36d",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "e5bec5ac-b464-4177-9761-7f1a8819e134",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "e162e979-e2ec-4a73-8485-ae6f76808bc3",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "365c7654-0bc1-4ece-a5e2-d561df595bf5",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "3dc0fcf3-ac5e-47db-a470-ed20b1dc7a90",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "9e4168c0-1e7c-4543-931d-8a42b887d7d8",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "d4b35c98-7da4-4341-9447-860a66a6f6a9",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "f858999c-1f40-43bd-af60-883edb6cdd4c",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "0639a94c-c6b6-49dc-b3da-a349c53c9844",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "0e5a6052-081b-4ebd-ac29-9143dfd869f7",
+      "result_id": "40cb84c0-f29e-4316-bd15-df197960e113"
+    },
+    {
+      "claim_id": "6a7000c8-21f1-4dd6-be47-4e2dba012c9c",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "a38d2838-b01a-4fc3-99cd-ddfd0314f4d1",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "ca63881f-bc14-4129-89e0-880157a7520b",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "f42a6a07-b731-4f0e-9e03-9a3968e3e169",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "b963bd63-67ea-439c-924d-29dc0002fb40",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "3ab0f275-47e4-4c56-bc58-f6650a301c75",
+      "result_id": "a213b6ed-d9ce-460e-b461-f1026fb6a372"
+    },
+    {
+      "claim_id": "d164a83d-7265-4fa5-a2d4-cfac1d1fee1a",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "0ad9c130-45f7-437d-9370-a03096c9d046",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "5470dacd-f567-4955-bd4f-c3fb047f248c",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "85ce3e7c-b07d-4da2-b5c3-26187fc3c176",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "1f1212b8-015c-4df1-b61c-adc404a79ae3",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "7adb3682-5f5d-4157-8ac0-213236814abb",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "c1a61101-5ab4-4560-8e2f-e02c9900b950",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    },
+    {
+      "claim_id": "8b81ca38-7c7c-419b-a2a6-87ed05315368",
+      "result_id": "23384f3c-5c1c-4629-844c-626afec80bca"
+    }
+  ],
+  "comparisons": []
+}

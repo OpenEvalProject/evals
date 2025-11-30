@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C135"
+    ],
+    "result": "NGFR is a bona fide transcriptional target of p53. p53 binds to the NGFR promoter and induces its expression in response to chemotherapeutic agents in multiple cancer cell lines. This induction is p53-dependent, as demonstrated by loss-of-function and gain-of-function experiments, luciferase reporter assays, and ChIP assays showing direct p53 binding to a responsive element (RE1) in the NGFR promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C30-C42, and C135 collectively demonstrate that NGFR is a direct transcriptional target of p53 through multiple complementary approaches: drug-induced expression (C30-C35), ectopic p53 expression (C36-C37), p53 knockdown (C38), luciferase reporter assays (C39-C40), and ChIP assays (C41-C42). The data are consistent across multiple cell lines and experimental methods, providing strong converging evidence for this regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C26",
+      "C127"
+    ],
+    "result": "NGFR knockdown induces apoptosis, reduces cell viability, and decreases clonogenic capacity in cancer cells. The effect is more pronounced in p53-containing cells (H460) compared to p53-deficient cells (H1299), suggesting p53-dependent and independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C26, and C127 demonstrate that NGFR depletion has significant anti-proliferative effects through flow cytometry (C43-C44), cell viability assays (C45-C46), and colony formation assays (C47). The differential effect between H460 and H1299 cells (C47) supports both p53-dependent and independent mechanisms. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C48",
+      "C29",
+      "C102"
+    ],
+    "result": "NGFR is highly expressed in human gliomas (68.75% of samples) and is amplified in breast cancers harboring wild-type TP53. This expression pattern suggests NGFR may contribute to tumorigenesis in cancers with functional p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C48 provide direct experimental evidence from 48 human glioma samples showing elevated NGFR expression. Claims C29 and C102 provide bioinformatic support from TCGA database analysis showing NGFR amplification correlates with wild-type p53 status in breast cancer. The convergence of experimental and database evidence supports the clinical relevance of NGFR in human cancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C23",
+      "C125",
+      "C137"
+    ],
+    "result": "NGFR negatively regulates p53 protein levels and transcriptional activity. Ectopic NGFR reduces p53 levels induced by chemotherapeutic agents, while NGFR knockdown elevates p53 and its target genes (p21, PUMA) across multiple cancer cell lines. RNA-seq analysis confirms global upregulation of p53 target genes upon NGFR depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide complementary gain-of-function and loss-of-function evidence that NGFR suppresses p53 activity. The use of multiple cell lines (H460, HepG2, SK-N-SH, SK-MEL-103, SK-MEL-147, HCT116 p53+/+), multiple readouts (protein levels, target gene expression, RNA-seq), and appropriate controls (p53-null cells) provides robust support. Claims C23, C125, and C137 summarize the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C24",
+      "C136"
+    ],
+    "result": "NGFR enhances MDM2-mediated p53 ubiquitination and proteasomal degradation. NGFR knockdown prolongs p53 half-life, while ectopic NGFR enhances MDM2-mediated p53 ubiquitination in a dose-dependent manner. This degradation is blocked by the proteasome inhibitor MG132.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide mechanistic evidence for NGFR's role in p53 degradation through cycloheximide chase assays (C55), in vivo ubiquitination assays (C56), and proteasome inhibitor experiments (C57-C58). The dose-dependent effect (C56) and MG132 rescue (C58) strengthen the conclusion. Claims C24 and C136 summarize this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C134"
+    ],
+    "result": "NGFR inhibits p53 transcriptional activity independently of MDM2. In MDM2-null cells, NGFR still binds p53, represses p53-induced luciferase activity and target gene expression, and prevents p53 association with target promoters. This activity is also independent of MDMX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 and C134 demonstrate MDM2-independent p53 inhibition using MEF p53-/-;Mdm2-/- cells and MEF p53-/-;Mdm2-/-;Mdmx-/- cells. Multiple complementary assays (co-IP, luciferase reporter, q-PCR, ChIP) consistently show NGFR can suppress p53 activity without MDM2/MDMX. The use of triple knockout cells (C134) is particularly strong evidence. However, the claim that NGFR cannot alter p53 protein levels without MDM2 (C59) is important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C75",
+      "C76"
+    ],
+    "result": "NGFR directly binds to MDM2 through specific domain interactions. NGFR's N-terminal extracellular/transmembrane domain (aa 1-272) binds to MDM2's C-terminal region (aa 284-491). This interaction occurs in the nucleus and is detected with both ectopic and endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 and C75-C76 provide comprehensive evidence for NGFR-MDM2 interaction through co-IP assays with ectopic proteins (C65), domain mapping in cells (C66, C68), in vitro GST-pull down assays (C67), endogenous protein interactions (C69), and nuclear fractionation experiments (C75-C76). The convergence of in vitro and in vivo data, along with domain mapping, provides strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NGFR directly binds to p53's central DNA-binding domain (aa 101-300). This interaction is detected by co-IP assays, GST-pull down assays, and occurs in the nucleus. The N-terminal region of NGFR (aa 1-272) mediates this binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 demonstrate direct NGFR-p53 interaction through reciprocal co-IP assays (C77), domain mapping in cells (C78, C80), in vitro GST-pull down assays (C79), and nuclear localization (C81-C82). The identification of the DNA-binding domain as the interaction site (C78-C79) provides a mechanistic explanation for how NGFR inhibits p53 transcriptional activity. Multiple complementary approaches strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Full-length NGFR is present in both the cytoplasm and nucleus of cancer cells. Confocal microscopy shows NGFR in all cellular compartments, with nuclear levels increasing upon doxorubicin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide evidence for nuclear localization of NGFR through cell fractionation (C70-C72) and confocal microscopy (C73-C74). The observation that nuclear NGFR increases with doxorubicin treatment (C74) is consistent with p53 activation inducing NGFR expression. This nuclear localization is critical for the proposed mechanism of direct p53 inhibition. However, the mechanism of nuclear translocation is not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C130"
+    ],
+    "result": "NGFR depletion sensitizes cancer cells to chemotherapeutic agents in a p53-dependent manner. NGFR knockdown enhances p53 induction by cisplatin and doxorubicin, and reduces IC50 of cisplatin by 2.2-fold in H460 cells and 1.6-fold in HCT116 p53+/+ cells. No sensitization is observed in p53-null cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 and C130 demonstrate that NGFR knockdown sensitizes cells to chemotherapy through enhanced p53 activation (C83-C84) and reduced IC50 values (C85-C86). The lack of effect in p53-null cells (C87-C88) confirms p53-dependence. The use of multiple drugs (cisplatin, doxorubicin) and cell lines strengthens the conclusion. This has important therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C27",
+      "C131"
+    ],
+    "result": "NGFR knockdown suppresses tumor growth in vivo. Stable NGFR depletion in H460 cells reduces cell growth, colony formation, and xenograft tumor growth in SCID mice. Tumor weight is approximately 10-fold lower in NGFR-depleted tumors, with elevated expression of p53 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94, C27, and C131 provide comprehensive in vivo validation through stable knockdown experiments, in vitro assays (C89-C91), and xenograft studies (C92-C94). The dramatic 10-fold reduction in tumor weight (C93) with n=6 mice and p<0.01 is statistically robust. The elevation of p53 target genes in tumors (C94) confirms mechanism. This is strong translational evidence for NGFR as a therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "MDMX binds to NGFR, but NGFR can inactivate p53 independently of both MDM2 and MDMX. In triple knockout MEF cells (p53-/-;Mdm2-/-;Mdmx-/-), NGFR still inhibits p53-induced p21 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 demonstrate that while MDMX interacts with NGFR (C133), NGFR's inhibitory effect on p53 does not require MDMX (C134). The use of triple knockout cells is rigorous and definitively shows MDM2/MDMX-independent activity. However, only one readout (p21 expression) is shown for the triple knockout experiment, which is somewhat limited compared to other experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Cancers hijack NGFR as an oncogenic inhibitor of p53. This represents a novel mechanism by which tumors with wild-type p53 evade p53-mediated tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is a high-level conclusion supported by the collective evidence from all other results. The demonstration that: (1) p53 induces NGFR expression, (2) NGFR inhibits p53 through multiple mechanisms, (3) NGFR is highly expressed in human cancers with wild-type p53, and (4) NGFR depletion activates p53 and suppresses tumor growth, collectively support this overarching conclusion. This represents a significant conceptual advance in understanding p53 regulation in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background information on p53 and MDM2/MDMX regulation. These claims establish the known roles of p53 as a tumor suppressor, MDM2 as a key negative regulator of p53, and the importance of the MDM2-p53 feedback loop in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are all supported by citations to published literature and represent well-established background knowledge. These claims provide essential context for understanding the significance of NGFR as a novel p53 regulator but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background information on NGFR structure, expression, and known functions. NGFR is a 75 kD transmembrane receptor widely expressed in the nervous system, involved in neurogenesis, and has context-dependent roles in cancer (promoting survival in some cancers, suppressing growth in others).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 and C104-C106 are supported by citations to published literature and provide essential background on NGFR. These establish the known biology of NGFR and highlight the paradoxical roles in different cancers, which motivates the current study. However, these are not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Literature-based evidence that NGFR is highly expressed in multiple cancer types (melanoma, schwannoma, breast, glioma, head and neck, osteosarcoma, neuroblastoma) and promotes cell survival and metastasis. Many of these cancers harbor wild-type p53, and MDM2/MDMX have been implicated in p53 suppression in these contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 and C109-C118 are all supported by citations to published literature. These claims establish the clinical relevance of NGFR in human cancers and the correlation with wild-type p53 status, which provides important context for the mechanistic findings. However, these are not new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C107",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Additional literature context on NGFR and p53 biology. NGFR is a target of p73, can mediate p53-dependent neuron death through JNK signaling, is a biomarker for stem cells and cancer stem cells, and p53 regulates stem cell differentiation and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C107, C119-C124 are supported by citations to published literature. These provide additional context connecting NGFR to p53 family members, stem cell biology, and alternative signaling pathways. While relevant for discussion, these are not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "NGF treatment did not affect p53 level and activity in H460, HCT116, and HepG2 cancer cells, suggesting NGFR's inhibitory function is ligand-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 states that data are not shown, making it impossible to evaluate the quality of the evidence. While this observation supports the ligand-independent mechanism proposed by the authors, the lack of presented data is a significant limitation. This claim should be supported by actual experimental data in supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "NGFR's function in inactivating p53 is ligand-independent because it occurred in the nucleus and without ligand treatment of cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by the nuclear localization data (C70-C74) and the observation that NGFR-p53 interactions and functional effects occur without exogenous ligand addition. However, the evidence for ligand-independence is somewhat indirect, relying primarily on the nuclear localization and lack of ligand addition in experiments. Direct testing with ligand addition (C108) would strengthen this conclusion but data are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C128",
+      "C129"
+    ],
+    "result": "NGFR ablation activates p53, attenuates cancer cell survival, and reduces clonogenic capability. These effects are demonstrated across multiple cell lines and experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C128, and C129 are summary statements supported by the detailed experimental evidence in other claim groups (particularly C43-C47, C51-C54, C89-C91). These represent valid conclusions from the collective data but are redundant with more specific claims already evaluated.",
+    "result_type": "MAJOR"
+  }
+]

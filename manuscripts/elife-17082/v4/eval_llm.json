@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C57",
+      "C110"
+    ],
+    "result": "5hmC sites exhibit 28-53% lower C>T mutation frequency compared to 5mC sites in brain cancers. This reduction is consistently observed across five brain cancer types (GBM, LGG, NRB, MDB, PA) in both exome and whole genome sequencing data, with the CpG>T signature being the dominant mutational pattern modulated by cytosine modification state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44-C46, C55-C57, and C110 collectively demonstrate a robust and consistent reduction in C>T mutations at 5hmC sites compared to 5mC sites across multiple brain cancer types and sequencing platforms. The data are supported by statistical testing (p<0.001, p<0.05 in all types) and visual evidence in Figures 1E and 2A-B. The effect size (28-53%) is substantial and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Regional 5hmC levels are significantly anti-correlated with CpG>T mutation frequency (r=-0.71), while 5mC levels show positive correlation (r=0.66). A clear linear relationship exists between 5hmCrel (ratio of 5hmC to total modification) and C>T mutation frequency across all tested brain cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C81-C83 demonstrate strong correlations supported by genome-wide visualization (Figure 1D) and binned analysis (Figure 4A). The linear relationship is statistically significant across all cancer types by regression slope testing. The consistency across chromosomes (Figure 1\u2014figure supplements 1-2) and cancer types strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "The reduced mutation frequency at 5hmC sites is independent of gene expression levels and regional genomic effects. Both highly and lowly expressed genes show significantly lower C>T transitions at 5hmC compared to 5mC sites, and paired analysis controlling for regional context confirms the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 and C80 provide multiple lines of evidence ruling out confounding factors. The stratification by gene expression (Figure 3A-D), paired site analysis (Figure 3E-F), and spatial analysis around modified sites (Figure 3\u2014figure supplement 1G) all support independence from regional effects. The consistency across these control analyses is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C111"
+    ],
+    "result": "The mutation frequency of unmodified cytosine is similar to 5hmC, while 5mC exhibits much higher mutation frequency. When only fully modified sites are considered, increasing 5hmC levels (decreasing 5mC) associate with significant decreases in C>T mutation frequency, resulting in 5hmC mutational load comparable to unmodified cytosines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 and C111 are supported by systematic binning analysis shown in Figure 4B-E. The data demonstrate that elevated mutation rates are specific to 5mC rather than reflecting a general property of modified cytosines. The gradient analysis controlling for methylation or hydroxymethylation levels provides strong evidence for the differential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "5hmCrel is the best individual predictor of CpG>T mutation frequency in 100kb genomic windows (D\u00b2=0.11), significantly outperforming bisulfite sequencing measurements alone. 5hmCrel contributes significantly to explained deviance beyond gene expression (p<2e-100), with specificity for modified cytosine mutations but not T>N mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by comprehensive GLM analysis (Figure 5A-D). The predictive power of 5hmCrel is demonstrated across multiple window sizes (Figure 5B) and mutation definitions. The specificity for modified cytosine mutations (decreasing contribution for C>T, C>N, N>N) and lack of effect on T>N mutations provides strong evidence for a direct mechanistic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C126"
+    ],
+    "result": "The protective effect of 5hmC against C>T mutations extends to kidney and blood cancers. Tissue-specific 5hmC patterns are the best predictors of CpG>T mutations in corresponding cancer types, with tissue-matched 5hmC maps substantially outperforming ESC-derived maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 and C126 demonstrate tissue-specific effects supported by Figure 6A-B and supplementary analyses. The diagonal pattern in Figure 6A showing best prediction from matched tissue types is striking. The poor performance of ESC maps compared to tissue-specific maps provides strong evidence that the pre-cancerous tissue modification landscape influences mutation accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C104",
+      "C114",
+      "C115"
+    ],
+    "result": "Across eight human tissue types measured by HPLC, reduced 5hmC levels associate with increased proportion of CpG>T mutations in corresponding cancers. The relative impact of hydroxymethylation on mutagenesis decreases proportionally to tissue 5hmC levels, suggesting a general property of this modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C104, C114-C115 are supported by HPLC measurements (Figure 6\u2014figure supplement 3) and correlation analysis (Figure 6C). The strong negative correlation across multiple tissue types (excluding smoking-affected lung) demonstrates generalizability. The proportional relationship between tissue 5hmC levels and mutation impact supports a mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C58",
+      "C59"
+    ],
+    "result": "CpG>T mutations correlate with patient age in both 5mC and 5hmC sites, with steeper slopes for 5mC than 5hmC. This suggests the differential mutability mechanisms were present throughout patients' lives in pre-cancerous cells, not only after cancer origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by age correlation analysis (Figure 2C) and citation to Alexandrov et al., 2015. The differential slopes provide evidence for lifelong accumulation with modification-specific rates. However, the inference about pre-cancerous mechanisms (C62) is reasonable but indirect, relying on the age correlation pattern rather than direct measurement in pre-cancerous cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "C>T mutation depletion at 5hmC sites is robust across a wide range of threshold definitions for 5mChigh and 5hmChigh. More stringent 5hmC definitions (\u226570% of modifications) result in even greater differences (42-59%) in mutation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by systematic threshold analysis (Figure 2\u2014figure supplement 1A-I). The robustness across thresholds strengthens confidence in the main finding. The authors appropriately note that more stringent definitions reduce site numbers for subsequent analyses, justifying their chosen thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109",
+      "C134"
+    ],
+    "result": "Lung cancer deviates from the general pattern, with smoking-related effects appearing to differentially affect CpG>T mutations. Heavy smokers show markedly lower CpG>T mutation frequency in modified sites relative to other mutations, suggesting a yet-undefined smoking-induced mutagenic mechanism preferentially affecting unmethylated CpG sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106, C109, and C134 identify an interesting deviation in lung cancer but the mechanistic explanation remains speculative (C134 explicitly labeled as speculation). The observation is supported by data stratification, but the proposed mechanism requires experimental validation. The citation to Pleasance et al. 2010 (C107-C108) supports smoking-related C>A enrichment at modified sites, but the connection to differential CpG>T effects needs further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Two potential mechanisms could explain reduced 5hmC mutability: (1) lower deamination rates of 5hmC compared to 5mC (4.4-38x lower for cytosine deaminases), and (2) more efficient repair of 5hmU (the deamination product of 5hmC) compared to thymine by DNA glycosylases, particularly SMUG1 which specifically repairs 5hmU:G but not T:G mismatches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C123 propose plausible mechanisms supported by cited biochemical studies (Nabel et al. 2012, Rangam et al. 2012 for deaminase activity; multiple citations for glycosylase activities). However, these remain speculative explanations (C116, C120, C123 explicitly speculative) for the observed mutation patterns. The authors appropriately note that determining relative contributions would be challenging. Direct experimental validation in the context of cancer mutagenesis is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C84",
+      "C85"
+    ],
+    "result": "C>A and C>G transversions are an order of magnitude less frequent than C>T transitions at both 5mC and 5hmC sites. The relationship between these transversions and modification state varies inconsistently across cancer types, with C>T showing the most consistent difference between 5mChigh and 5hmChigh sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70, C84-C85 document the analysis of non-C>T mutations. The data (Figure 1E, Figure 4A) support the lower frequency and inconsistent patterns. The authors appropriately focus subsequent analyses on C>T mutations given their dominance and consistency. However, the inconsistent patterns for C>A and C>G across cancer types suggest these may be influenced by additional factors not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The tissue-specific predictive power of 5hmC maps suggests the DNA modification landscape in cancer-progenitor cells is sufficiently similar to tissue average to influence CpG>T mutation accumulation. The actual impact may be larger than measured due to tissue heterogeneity, and the correlation across tissues points toward a shared underlying mutagenic process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127, C131-C133 make reasonable inferences from the tissue-specific prediction results, but involve assumptions about tissue heterogeneity and cancer cell-of-origin that cannot be directly validated with the bulk tissue data. C132 is explicitly a prediction. The logic is sound but would benefit from single-cell or cell-type-specific validation. The inference about shared mutagenic processes (C133) is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CpG dinucleotides are mutational hot-spots in most cancers, with elevated C>T mutation rates related to 5-methylcytosine. 5mC is an epigenetically modified base in CpGs involved in transcription silencing, with spontaneous deamination to thymine occurring four-fold faster than cytosine to uracil deamination, likely facilitating CpG depletion in vertebrate germlines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C16-C19 establish background knowledge supported by citations (Alexandrov et al. 2013, Lawrence et al. 2013, Lindahl and Nyberg 1974). These are well-established facts in the field rather than novel findings of this study. C19 involves evolutionary inference but is widely accepted. This provides appropriate context for the study's novel findings about 5hmC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Multiple factors influence regional mutation frequencies including chromatin organization, replication timing, metabolic load, mutagen exposure, and transcription-coupled repair. Cytidine deaminase motifs are enriched at mutational hot-spots, suggesting their potential role in causing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 summarize established knowledge from cited literature (Lawrence et al. 2013, Schuster-B\u00f6ckler and Lehner 2012, Koren et al. 2012, Ames et al. 1993, Poon et al. 2013, Nik-Zainal et al. 2012, Taylor et al. 2013). These provide appropriate background context. C15 is appropriately qualified as speculative ('could be') based on motif enrichment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DNA methylation is universal in vertebrates and essential for development, with roles in gene expression, genomic stability, and other processes. 5hmC was discovered in 2009, is produced by TET enzymes from 5mC, varies widely in abundance across cell types (particularly enriched in brain), and has been implicated in demethylation and transcriptional regulation. 5hmC depletion in tumors and TET2 mutations in hematological malignancies indicate a role in carcinogenesis, though the molecular mechanism is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C35 establish background on DNA methylation and 5hmC through extensive citations to prior literature. These are well-documented facts providing context for the study. C34 involves inference about carcinogenesis role based on depletion and mutations, which is reasonable but the mechanism remains unclear (C35). This background appropriately motivates the study's investigation of 5hmC's effect on mutation rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "5hmC serves as a demethylation intermediate in zygotes and ES cells but exists as a stable, long-lived modification in adult mouse tissue with little cell division. This stability led to the hypothesis that 5hmC could substantially influence DNA mutability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by citations to multiple studies (Tahiliani et al. 2009, Inoue and Zhang 2011, Wossidlo et al. 2011, Bachman et al. 2014, Brazauskas and Kriaucionis 2014). C38 is the authors' hypothesis motivating the study, appropriately labeled as such. The hypothesis is reasonable given the stability of 5hmC and known effects of 5mC on mutation rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C124",
+      "C125"
+    ],
+    "result": "Prior work by Supek et al. reported elevated C>G transversions at 5hmC sites using ESC maps, but these findings are limited by differences between ESCs and somatic tissues. The current study addresses this limitation by using tissue-specific 5hmC maps, noting methodological differences in site classification between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C124-C125 appropriately contextualize prior work and identify its limitations. The citations support the statements about ESC differences (Schultz et al. 2015) and mutation origins in pre-cancerous cells (multiple citations in C41). The methodological comparison (C125) helps explain different effect sizes observed. This provides appropriate justification for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "5hmC predominantly occurs in CpG context, and brain tissue exhibits particularly high levels of 5hmC, justifying the focus on CpG sites and initial investigation in brain cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by established knowledge (C51) and data visualization (Figure 1A for C52). These provide appropriate justification for the study's analytical focus and tissue selection. The high 5hmC levels in brain make it an optimal tissue for detecting effects with maximum sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Mutation frequency differs substantially at the aligned positions of DNA modifications but is indistinguishable in surrounding areas, supporting that the effect is site-specific rather than regional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by spatial analysis around modified sites (Figure 3\u2014figure supplement 1G). This provides additional evidence ruling out regional effects and supporting direct modification-specific effects on mutation rates. This is a useful control analysis strengthening the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The relationship between 5hmC and CpG>T mutation rate is detectable at both exome and genome-wide scales and is independent of other region-specific influences on mutation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 summarize findings demonstrated across multiple analyses (exome vs. genome, gene expression stratification, paired analysis, spatial analysis). These are well-supported conclusions integrating multiple lines of evidence. The consistency across scales and after controlling for confounders strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Solid tumors originate from defined cell subsets within tissues. For example, glioblastomas are proposed to originate from stem/progenitor cells in the subventricular zone, while medulloblastomas have mixed cellular origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 cite established understanding about cancer cell-of-origin (Visvader 2011). This background is relevant for interpreting the tissue-level 5hmC measurements in the context of cancer mutations. The authors appropriately acknowledge this complexity when discussing their bulk tissue measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "The linear relationship between 5hmC levels and CpG>T mutation rate could potentially be used to identify other environmental mutagens with differential effects on modified cytosines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is explicitly speculative about future applications. While the suggestion is reasonable given the smoking-related deviation observed, this represents a proposed future direction rather than a demonstrated result. The feasibility and utility of this approach would need to be validated experimentally.",
+    "result_type": "MINOR"
+  }
+]

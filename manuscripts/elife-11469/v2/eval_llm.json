@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C46",
+      "C87"
+    ],
+    "result": "The authors constructed an experimentally validated regulatory network model for HSPCs by identifying and validating cis-regulatory regions. They focused on nine major HSPC regulators (ERG, FLI1, GATA2, GFI1B, LYL1, MEIS1, PU.1, RUNX1, TAL1), identified 35 candidate cis-regulatory regions based on ChIP-Seq data (\u22653 TFs bound and H3K27ac), tested 25 of these in transgenic mouse embryos, and validated 9 new haematopoietic regulatory elements, nearly doubling the known in vivo validated elements. This resulted in 19 comprehensively validated cis-regulatory regions for network reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C39, and C46 collectively describe a systematic experimental approach combining ChIP-Seq, transgenic mouse validation, and reporter assays. The identification of 35 candidate regions (C32), testing of 25 regions (C35), validation of 9 new regions (C38), and selection of 19 final regions (C46) are well-documented with specific numbers and criteria. The transgenic data from 188 embryos (C38) provides strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors performed ChIP-Seq for H3K27ac and nine TFs in the 416b myeloid progenitor cell line, creating what they claim is the most complete genome-scale TF-binding analysis in haematopoietic progenitor cell lines. TF binding patterns in 416b and HPC7 cells were closely related, with 71% of TF occupancy unchanged between cell types, 16% gained in 416b, and 13% lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe new ChIP-Seq experiments in 416b cells with quantitative comparisons to HPC7 cells. The specific percentages (71%, 16%, 13%) and the statement about comprehensiveness (C41) are supported by the data shown in Figure 2. However, the claim of being 'most complete' (C41) is a comparative statement that depends on the literature at the time and is difficult to fully verify.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors performed comprehensive TFBS mutagenesis across 19 regulatory regions, testing 87 reporter constructs (19 wild-type, 68 mutants) by luciferase assays. They found that for each motif class, mutation can result in activation, repression, or no change, even within single gene loci. This demonstrates that TF binding does not always predict functional outcome and highlights the importance of functional studies for network reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 describe extensive mutagenesis experiments with specific numbers (87 constructs) and clear results shown in Figure 3. The observation that the same motif can have different effects in different contexts (C51, C52) is well-documented. The conclusion about the dangers of extrapolating function from ChIP-Seq alone (C53) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors constructed a three-tier dynamic Bayesian network (DBN) representing a first-order time-homogeneous Markov process that incorporates TF binding, regulatory region activity, and gene expression. Model simulations show that single cells rapidly adopt characteristic expression levels for each gene, with some showing perpetual fluctuations. The model is compatible with co-expression of all nine genes and reaches the same steady state from different initial conditions, suggesting it captures aspects of HSPC regulatory networks that maintain stem/progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 describe the computational model construction and basic simulation results shown in Figure 4. The model architecture is clearly defined (C55, C56), and the simulation results (C59-C61) are documented in the figures. The inference that the model captures maintenance mechanisms (C63) is reasonable but somewhat speculative, as acknowledged by the use of 'suggests' and 'may have captured.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The model recapitulates known biology of TAL1 and LYL1, where individual deletion has minor effects but combined deletion causes severe phenotypes. Simulated single perturbations of LYL1 or TAL1 caused significant changes in expression profiles but minimal shifts in median expression levels, while simultaneous deletion caused substantial shifts in Gata2 and Runx1 expression. Experimental validation in 416b cells showed similar patterns, with TAL1 knockdown causing significant profile changes in Tal1, Fli1, and Gfi1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 compare model predictions with known biology (C64-C66, cited) and new experimental data (C71). The simulation results (C67-C70) shown in Figure 5 demonstrate the model's ability to capture the differential effects of single vs. double perturbations. The experimental validation (C71) provides support, though there are some discrepancies between predicted and observed genes affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model demonstrates network resilience to single TF perturbations. Simulated PU.1 removal had no effect on other TFs, while experimental PU.1 knockdown showed significant changes only in Spi1 and Runx1 median expression. Simulated GFI1B overexpression affected Gfi1b, Meis1, Erg, and Runx1, while experimental overexpression showed significant changes mainly in Gfi1b. These results emphasize network resilience and suggest the model captures key mechanistic aspects of HSPC regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe additional perturbation experiments with both computational and experimental validation shown in Figure 6. The general agreement between model and experiment (C76-C78) is supported, though perfect concordance is not achieved. The conclusion about network resilience (C76) is well-supported by the observation of significant profile changes with minimal median shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model can capture effects of the AML-ETO oncogene. Simulation of AML-ETO (by fixing Runx1 at maximum and converting activating inputs to repressive) caused significant expression changes in all eight core HSPC TFs. Experimental validation showed significant changes in six of nine TFs (all except Tal1, Erg, Gata2), demonstrating significant overlap between predictions and experimental validation, though notable differences exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 describe modeling of a leukemic perturbation with experimental validation shown in Figure 6c. The simulation approach (C81) is clearly defined, and the experimental results (C82) show partial agreement with predictions. The acknowledgment of both overlap (C83) and differences (C84) is appropriate. The conclusion that the model can capture many changes (C85) is supported, though the imperfect agreement indicates limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C88",
+      "C89",
+      "C108",
+      "C113",
+      "C120"
+    ],
+    "result": "Model simulation coupled with experimental validation revealed mechanisms for cell state stability in HSPCs. The regulatory network shows high stabilization of the HSPC expression state, likely capturing aspects of regulatory mechanisms maintaining the steady state of primary haematopoietic progenitor cells. This is reinforced by the model being based on in vivo validated regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C88, C89, C108, C113, and C120 describe the main biological insight about cell state stability. The observation of network stability (C108) is supported by the perturbation experiments showing resilience to single TF changes. The inference that this captures maintenance mechanisms (C113, C120) is reasonable given the in vivo validation of regulatory elements and comparison with primary cell data (C112, cited), though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model shows good agreement with experimental data but is not correct in all cases. Both computational and experimental data showed significant changes in gene expression profiles with minimal fold-change alterations to median expression levels. Such alterations were prevalent in single and double perturbations, while substantial median shifts were mostly restricted to double perturbations. This suggests the approach can reveal fine-grained aspects of biological networks and that the network is largely resistant to individual TF perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 provide an honest assessment of model performance and interpretation of the statistical patterns observed. The distinction between profile changes and median shifts (C95, C96) is well-documented in Figure 5 supplement 1. The acknowledgment of limitations (C93, C94) is appropriate. The inferences about network properties (C97, C98) are reasonable interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The statistically significant small-fold changes in HSPC network genes may be responsible for mild phenotypes when major HSPC regulators are deleted in adult HSPCs. For example, Tal1-/- mice are not viable due to requirements in embryonic development, yet TAL1 deletion in adult HSCs causes only minor phenotypes. These small fold-changes would be impossible to detect using conventional expression profiling and only become apparent through statistical analysis of single-cell expression distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C103 present a speculative interpretation (C99 uses 'may be') connecting the observed small changes to known mild phenotypes. While the cited examples (C100, C101) are established, the causal connection to small fold-changes is not directly tested. The methodological point about single-cell analysis (C102, C103) is valid but the biological interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "This model differs from previous developmental network models by capturing state maintenance rather than developmental progression. The model is based on haematopoietic progenitor cell lines that can self-renew, and recent in vivo data shows primary haematopoietic progenitors also have substantial self-renewal capability. Different design principles are at play, with this network showing abundant auto-regulatory feedback loops and partially redundant enhancer elements that may serve to stabilize cellular state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 provide conceptual framing comparing this work to prior developmental models. The distinction between developmental progression and state maintenance (C109, C110, C114) is well-articulated. The connection to in vivo data (C112, cited) strengthens the biological relevance (C113). The observations about network architecture (C115) are supported by the data, though the functional interpretation (C116) is somewhat speculative (uses 'may serve').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "At the Runx1 locus, RUNX1 protein provides positive feedback at some enhancers and negative feedback at others. This arrangement may not only stabilize expression levels but also provide means to up- or down-regulate RUNX1 in response to diverse external stimuli acting on specific RUNX1 co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 describes an observed regulatory structure at the Runx1 locus supported by the luciferase data. However, C118 is highly speculative (uses 'tempting to speculate') about the functional significance of this arrangement. The proposed mechanism for responding to external stimuli is not tested experimentally and remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C89",
+      "C121"
+    ],
+    "result": "The model can be utilized to analyze core network perturbations caused by leukemic oncogenes, specifically demonstrating how the AML-ETO fusion protein perturbs key HSPC regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C89, and C121 describe the application of the model to leukemic perturbations. This is supported by the AML-ETO simulation and experimental validation (covered in detail in another result group). The model successfully predicted many of the observed changes, demonstrating its utility for analyzing oncogenic perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The study reports widely applicable experimental and computational strategies for generating fully validated regulatory network models in complex mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is a summary statement about the broader applicability of the approach. The combination of ChIP-Seq, transgenic validation, mutagenesis, and computational modeling represents a comprehensive strategy that could be applied to other systems. The claim is supported by the successful execution of this approach in the HSPC system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C18"
+    ],
+    "result": "Background claims about transcription factor biology and network modeling. TF binding sites are short (6-10 bp) and found throughout the genome by chance. Functional TFBSs occur as evolutionarily conserved clusters, and enhancers can act over long distances, necessitating comprehensive analysis of entire gene loci. GRNs carry most mechanistic information when constructed from detailed knowledge of TFs and cis-regulatory elements. Network simulations can reveal molecular mechanisms underlying complex biological processes. No single experimental method can provide the complex data required for accurate network models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 and C18 present established knowledge about transcription factor biology and network modeling, supported by citations and general understanding in the field. These provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19"
+    ],
+    "result": "Prior work on network modeling in hematopoietic systems has limitations. Boolean models in blood stem cells and myeloid progenitors did not account for underlying regulatory structure. ODE-based models with full regulatory information were restricted to small circuits. Large consortia created comprehensive networks but previous studies did not combine network analysis with comprehensive functional validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 and C19 provide critical assessment of prior work, supported by appropriate citations. These claims establish the gap in the literature that this study addresses. The assessments appear accurate based on the cited work, though full verification would require examining the original papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Essential information for network reconstruction includes: (i) comprehensive TF binding data, (ii) in vivo validation of TF-bound regions as bona fide regulatory elements, and (iii) molecular data on functional consequences of TF-binding events (e.g., activation vs. repression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 articulate the authors' framework for what constitutes a comprehensive network model. This is a reasonable set of requirements based on understanding of gene regulation, and the study is designed to meet these criteria. These are methodological principles rather than experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Pictorial network representations commonly shown in ChIP-Seq publications do not encode underlying gene regulatory logic and cannot provide executable computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 provide critical assessment of how network models are typically presented in the literature. This is a valid methodological critique supported by citation (C90) and distinguishes the current work from typical practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "TFs involved in early repression of a locus are not required for maintenance of the silenced state (shown for CD4 and CD8 silencers). Therefore, identification of negative regulatory inputs may require expansion of datasets across sequential developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 cites established work on CD4/CD8 silencers. Claim C105 is a reasonable inference about limitations of the current approach and suggests future directions. This acknowledges a potential limitation of studying a single cell state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "TF-mediated cellular programming experiments have shown that modules of 3-4 TFs can confer cell-type specific transcriptional programs, consistent with the notion that a network of nine key HSPC regulators can capture useful information about HSPC regulatory programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C107 connect the current work to cellular reprogramming studies (cited). The inference that nine TFs is a reasonable number (C107) is supported by analogy to reprogramming, though this is somewhat indirect evidence.",
+    "result_type": "MINOR"
+  }
+]

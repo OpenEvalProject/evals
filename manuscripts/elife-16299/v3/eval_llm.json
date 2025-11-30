@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors developed a quantitative assay for Acb1 secretion using mild cell wall extraction conditions that avoid cell lysis. Under these conditions (pH 9.4 Tris-HCl buffer without reducing agents, 2% sorbitol, on ice), Acb1 but not the cytosolic control protein Cof1 was detected in cell wall extracts of starving cells. Secretion peaked at 3 hr of starvation, with approximately 1% of total intracellular Acb1 being secreted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide direct experimental evidence from western blots (Figures 1B-E) showing that the new mild extraction conditions specifically detect secreted Acb1 without cell lysis (no Cof1 release), with quantification showing ~1% secretion at 3 hr. Claims C106-C107 correctly state the significance of this assay. The use of Cof1 as a lysis control is well-justified given the similar properties of the two proteins (C23-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ESCRT-I, -II, and -III proteins are required for Acb1 secretion, showing 67-82% reductions in secretion when deleted. In contrast, ESCRT-0 (Vps27, Hse1) and Vps4 (along with its accessory proteins Did2, Ist1, Vta1, Vps60) are not required for Acb1 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide quantitative data from the cell wall extraction assay (Figure 2) showing consistent and statistically significant reductions in Acb1 secretion for ESCRT-I, -II, and -III deletions, while ESCRT-0 and Vps4-related deletions show no effect. The statistical analyses are reported with p-values and error bars. This represents a comprehensive screen of ESCRT components with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "ESCRT proteins have differential roles in CUPS biogenesis versus stability. None of the ESCRT proteins tested affected initial CUPS formation at 30 min of starvation. However, after 2.5 hr of starvation, ESCRT-II and ESCRT-III (particularly Vps20 and Snf7) are required for CUPS stability, while ESCRT-0, ESCRT-I, and Vps4 are not. CUPS reabsorption into the ER upon re-growth is independent of all ESCRT proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C41 are supported by fluorescence microscopy data (Figure 3A-C) showing quantification of CUPS morphology at different time points in various ESCRT deletion strains. The temporal analysis distinguishes biogenesis (30 min) from stability (2.5 hr) effects, and the re-growth experiments demonstrate ESCRT-independence of CUPS reabsorption. This provides clear evidence for stage-specific ESCRT requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C16"
+    ],
+    "result": "Snf7 localizes transiently to CUPS during starvation. When co-expressed with untagged Snf7, Snf7-GFP localized to 1-3 large structures per cell during starvation, with reduced vacuole membrane staining. Time-lapse imaging revealed that Snf7 and Grh1 exist on separate compartments that periodically contact or coalesce. Between 1-2.5 hr of starvation, 17 rapid co-localization events (10-20 s) were observed in 62 cells. Between 2.5-3 hr (when Acb1 secretion peaks), 37 co-localization events occurred in 96 cells, with 22 being rapid (10-30 s) and 15 being stable (up to 10 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 are supported by extensive live-cell imaging data (Figures 4A-D) with quantitative analysis of co-localization frequency and duration. The temporal correlation between increased Snf7-Grh1 co-localization and peak Acb1 secretion strengthens the mechanistic link. The use of co-expression to overcome dominant-negative effects is well-justified (C42, C45, C46). However, the interpretation that \"all CUPS\" contact Snf7 compartments (C54) is speculative given that only ~15% show co-localization at any given time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Snf7 recruitment to membranes for unconventional secretion follows a similar hierarchy to MVB biogenesis. Loss of ESCRT-I, -II, or Vps20 abolished vacuolar membrane localization of Snf7 in growth conditions, while loss of Vps2 or Vps24 resulted in Snf7 localization similar to wild type. During starvation, ESCRT-I and -II mutants showed more cytosolic Snf7 distribution, while Vps2/Vps24 deletions retained Snf7 at the vacuole membrane. In vps4\u0394 cells, Snf7 accumulated in punctate structures and could co-localize with Grh1 during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C73 are supported by fluorescence microscopy data (Figure 5) showing Snf7-RFP localization in various ESCRT deletion backgrounds during both growth and starvation. The data demonstrate that ESCRT-I and -II enhance Snf7 recruitment and Vps20 acts as nucleator, consistent with the known MVB pathway hierarchy (C57-C59). The unique behavior of vps4\u0394 cells (C62, C71-C72) provides important mechanistic insight into Vps4-independent ESCRT-III function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C17",
+      "C114",
+      "C130"
+    ],
+    "result": "Snf7 recruitment to CUPS and Acb1 secretion are accelerated in vps4\u0394 cells. Time-lapse imaging showed that in wild type cells, no Snf7-Grh1 co-localization was observed in 65 cells between 10-50 min of starvation. In contrast, in vps4\u0394 cells, Snf7 localized to CUPS in 20 of 72 cells during this early time period, usually rapidly for 10-30 s. Correspondingly, vps4\u0394 cells secreted more than two-fold more Acb1 than wild type at 1 hr of starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by time-lapse confocal microscopy (Figure 6A) and cell wall extraction assays (Figure 6B-C) showing earlier Snf7 recruitment and accelerated Acb1 secretion in vps4\u0394 cells. The quantitative analysis of co-localization events and secretion levels provides strong evidence. This result is consistent with the finding that Vps4 is not required for Acb1 secretion (C35, C81) and suggests that Vps4-mediated disassembly may normally limit the rate of the process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Snf7 polymerization is required for Acb1 secretion, but Vps4-mediated disassembly is not. Cells expressing the polymerization-defective Snf7-L121D mutant were unable to secrete Acb1, similar to cells with empty vector, while cells expressing wild type Snf7 showed normal secretion. Loss of Vps4 led to slightly accelerated secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by cell wall extraction assays (Figure 6D-E) showing that the Snf7-L121D mutant, which cannot homooligomerize, fails to rescue Acb1 secretion in snf7\u0394 cells. This provides direct evidence that Snf7 polymerization is functionally required. Combined with the vps4\u0394 data (C35, C78), this demonstrates a Vps4-independent role for ESCRT-III in unconventional secretion, which is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CUPS ultrastructure reveals a maturation process dependent on Snf7. CLEM analysis identified CUPS as a convoluted network of tubules and vesicles with a spheroidal shape, cavity at the center, and average diameter of ~200 nm. During starvation, Grh1-containing structures became larger and less fenestrated. A large fenestrated saccule that engulfs Grh1-positive membranes was present in 15% of CUPS at 45 min and 50% at 2.5 hr. In snf7\u0394 cells, initial CUPS formation at 45 min was normal, but after 2.5 hr, >80% of Grh1-positive membranes were small vesicles and the engulfing saccule was never observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C96 are supported by extensive CLEM analysis (Figure 7A-B, Videos 1-2) providing 3D ultrastructural characterization of CUPS at different stages. The quantification of CUPS morphology and size at different time points in wild type and snf7\u0394 cells (Figure 7B) demonstrates the requirement for Snf7 in CUPS maturation. The identification of the engulfing saccule is a key structural finding that correlates with functional data on Snf7 requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Immunoelectron microscopy reveals that Acb1 is contained in mature CUPS. Three stages were identified: Stage 1 - Grh1 is in tubules and vesicles with little Acb1; Stage 2 - a tubular/sheet-like structure approaches and initiates engulfment of Grh1-positive membranes; Stage 3 - Grh1 is encased in a saccule that contains Acb1. The initial Grh1-positive tubulo-vesicular clusters resemble the mammalian ERGIC compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 are supported by immunoelectron microscopy data (Figure 8) using dual labeling for Grh1 (15 nm gold) and Acb1 (10 nm gold). The three stages provide a structural framework for CUPS maturation. However, the authors appropriately note (in text) that these images alone cannot definitively establish a sequential pathway, though combined with CLEM data they are suggestive. The comparison to ERGIC (C101) is reasonable based on morphology but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C122"
+    ],
+    "result": "The authors propose a model for CUPS maturation and Acb1 secretion. They suggest that all CUPS contact or fuse with Snf7-containing compartments, which is necessary for maturation into secretion-competent organelles. In the absence of Snf7, CUPS disintegrate. Snf7 may be required for sealing CUPS membranes to generate a compartment sealed from the cytoplasm. Acb1 acquisition occurs post-production of Grh1-containing membranes, possibly by attachment to the engulfing saccule. The mature stable CUPS is a double-membrane bounded multivesicular/multilamellar compartment distinct from MVBs, and serves as the source for Acb1 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 and C115-C119, C122 represent interpretations and models based on the data. While the data support that Snf7 is required for CUPS stability and that Acb1 is found in mature CUPS, several aspects remain speculative: (1) The claim that \"all CUPS\" contact Snf7 compartments (C54) is not directly demonstrated since only ~15% show co-localization at any time; (2) The mechanism of Snf7 action (sealing, C56) is proposed but not tested; (3) The origin of the saccule and mechanism of Acb1 acquisition (C115-C116) are acknowledged as unknown. These are reasonable working models but require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors conclude that canonical MVBs are not involved in Acb1 secretion. The pathway requires ESCRT-III but is independent of Vps4, unlike all other known ESCRT-dependent processes (HIV budding, cytokinesis, nuclear envelope re-sealing) which require Vps4. The lack of ESCRT-0 requirement is consistent with this, as ESCRT-0 mainly recognizes transmembrane MVB cargoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 represent well-supported conclusions based on the comprehensive ESCRT deletion analysis (C31-C36) and comparison to known ESCRT-dependent processes (C110-C111, supported by citations). The independence from ESCRT-0 and Vps4 clearly distinguishes this pathway from canonical MVB biogenesis. The comparison to other ESCRT-dependent processes (C110) is appropriately cited, and the distinction regarding Vps4 requirement is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors compare their findings to IL-1\u03b2 secretion in mammalian cells and propose that unconventional protein secretion pathways may be more similar than currently appreciated. They suggest that immature CUPS may correspond to phagophores, and stable CUPS may be functional orthologs of amphisomes. Different cargoes might use different chaperones for capture into vesicles, explaining why ESCRT-0 is required for IL-1\u03b2 but not Acb1 secretion. Importantly, this pathway does not use conventional Vps4 and MVB-mediated exosome release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C139 represent comparisons to other systems and speculative interpretations. While C131 is supported by citation to Zhang et al., 2015, the proposed relationships between CUPS and phagophores/amphisomes (C135-C136) are explicitly stated as speculation. The suggestion that different cargoes use different capture mechanisms (C137) is reasonable but untested. The overall conclusion that unconventional secretion pathways are similar (C138) is a reasonable inference but requires more comparative data across systems. These represent interesting hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background information on unconventional protein secretion, Acb1/DBI function, prior work on GrhA/Grh1, CUPS composition and biogenesis, and yeast cell wall structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 and C20-C25 provide background information supported by appropriate citations to prior literature. These establish the context for the current study and are not new findings. The information about Acb1/Cof1 properties (C23-C25) is relevant for justifying their use in the lysis control assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C45",
+      "C57",
+      "C58",
+      "C59",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Additional background information on CUPS reabsorption, ESCRT-III tagging effects, ESCRT assembly hierarchy in MVB biogenesis, and the Rim signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C42, C45, C57-C59, and C123-C127 provide background information supported by citations. C128-C129 report findings from the current study regarding ESCRT-0 and Vps4 independence, which are already covered in other result groups. These are supporting details rather than major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The authors propose two possible explanations for Snf7 immobilization in vps2\u0394 or vps24\u0394 cells: Snf7 was sequestered during growth before starvation, or Vps2/Vps24 are directly required for Snf7 relocalization during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 presents alternative speculative explanations for an observation (C69-C70) without providing data to distinguish between them. This represents an unresolved mechanistic question that would require additional experiments to address.",
+    "result_type": "MINOR"
+  }
+]

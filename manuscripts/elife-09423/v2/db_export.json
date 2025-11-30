@@ -1,0 +1,1974 @@
+{
+  "submission": {
+    "id": "8cc0db24-9826-437f-abcd-83351dbe4a7d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:16:46.132971Z",
+    "updated_at": "2025-11-29T21:16:46.132971Z"
+  },
+  "content": [
+    {
+      "id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "submission_id": "8cc0db24-9826-437f-abcd-83351dbe4a7d",
+      "content_type": "manuscript",
+      "content_text": "# Corticostriatal dynamics encode the refinement of specific behavioral variability during skill learning\n\n## Authors\n\n- Fernando J Santos<sup>1</sup>\n- Rodrigo F Oliveira<sup>1</sup>\n- Xin Jin<sup>2</sup>\n- Rui M Costa<sup>1</sup> ([ORCID: 0000-0003-1707-1051](https://orcid.org/0000-0003-1707-1051)) \u2020\n\n### Affiliations\n\n1. Champalimaud Neuroscience Programme Funda\u00e7\u00e3o Champalimaud Lisbon Portugal\n2. Molecular Neurobiology Laboratory Salk Institute for Biological Studies La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLearning to perform a complex motor task requires the optimization of specific behavioral features to cope with task constraints. We show that when mice learn a novel motor paradigm they differentially refine specific behavioral features. Animals trained to perform progressively faster sequences of lever presses to obtain reinforcement reduced variability in sequence frequency, but increased variability in an orthogonal feature (sequence duration). Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training and subsequently decreased with learning, without changes in average firing rate. As training progressed, variability in corticostriatal activity became progressively more correlated with behavioral variability, but specifically with variability in frequency. Corticostriatal plasticity was required for the reduction in frequency variability, but not for variability in sequence duration. These data suggest that during motor learning corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes.\n\n## Introduction\n\nAnimals have the ability to learn novel motor skills, allowing them to perform complex patterns of movement to improve the outcomes of their actions. Acquiring novel skills usually requires exploration of the behavioral space, which is critical for learning (Skinner, 1981; Sutton and Barto, 1998; Grunow and Neuringer, 2002; Kao et al., 2005; Olveczky et al., 2005; Tumer and Brainard, 2007; Miller et al., 2010; Wu et al., 2014). It also requires the selection of the appropriate behavioral features that lead to the desired outcomes (Skinner, 1981). It has been postulated that the motor system can learn complex movements by optimizing motor variability in task-relevant dimensions, correcting only deviations that interfere with the final output of the action (Todorov and Jordan, 2002; Scott, 2004; Valero-Cuevas et al., 2009; Diedrichsen et al., 2010). By optimizing the precision of an action endpoint, for example, humans can perform smooth movements even in the presence of noise (Harris and Wolpert, 1998). Selecting task-relevant features and decreasing task-relevant variability might therefore be a critical component of motor learning (Franklin and Wolpert, 2008; Cohen and Sternad, 2009; Valero-Cuevas et al., 2009; Costa, 2011; Shmuelof et al., 2012).\n\nThe reduction of motor variability specifically in relevant domains suggests that the neural activity giving rise to the task-relevant output is selected during learning. However, it is still unclear how the differential refinement of behavioral variability is encoded at the neural level. It has been suggested that cortical and basal ganglia circuits are important for the selection of task-relevant features (Costa et al., 2004; Barnes et al., 2005; Kao et al., 2005; Olveczky et al., 2005; Jin and Costa, 2010; Woolley et al., 2014). Consistently, it has been previously shown that the initial stages of learning have increased behavioral (Tumer and Brainard, 2007; Jin and Costa, 2010; Miller et al., 2010) and neuronal (Costa et al., 2004; Barnes et al., 2005) variability, but as specific movements are consolidated, neural variability is reduced in these circuits (Costa et al., 2004; Kao et al., 2005). This suggests that after initial motor and neural exploration, specific patterns are selected and consolidated (Costa, 2011). In this study, we investigated if the dynamics of neural activity in cortical and striatal circuits reflect the changes of variability in specific behavioral domains, and if corticostriatal plasticity is critical for the refinement of particular behavior features.\n\n## Results\n\n### Behavior variability is selectively reduced during motor learning\n\nWe trained mice to perform a fast lever-pressing task where they were required to press a lever at increasingly higher frequencies, in order to obtain a 20 mg food pellet. After introducing the animals (N = 20) to the behavioral apparatus and 1 day of continuous reinforcement, where each lever-press was reinforced, animals were trained intensively with three daily sessions for 3 days to perform fast lever presses. In the fast press schedules we introduced a covert minimum frequency target, defined by the inverse of three consecutive inter-press intervals (3 IPIs, 4 presses), which increased across sessions from 0 Hz to a maximum of 4.5 Hz (Figure 1A; see \u2018Materials and methods\u2019). The total number of lever presses per minute increased throughout training (F8,152 = 41.34, p < 0.0001; Figure 1\u2014figure supplement 1A) and animals rapidly started to organize their behavior in self-paced bouts or sequences of lever presses, until there were almost no single presses (Figure 1C,E and Video 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the training protocol, starting with magazine habituation and CRF training in the first 2 days, followed by 3 days of the fast press schedules (S1\u2013S9) where we introduce an increasingly higher covert target, defined as the inverse of the sum of three consecutive inter-press intervals (IPIs). (B) Joint distribution of the frequency (log scale) for all individual IPIs, in the first, middle and last session of the fast press schedules, for all the 20 animals. Vertical dashed lines correspond to the IPI threshold used for sequence definition (IPI = 2 s, 0.5 Hz) and the final covert target (IPI = 3/660 ms, 4.5 Hz). (C) Percentage of lever presses comprised within sequences. (D) Number of sequences performed per minute. (E) Left: Example of sequences performed by a representative animal, aligned at the time of sequence initiation. Individual lever presses are marked as black ticks, the full sequence duration is shaded in grey and the IPIs that meet the session minimum target are shaded in orange; Top right: Probability of a magazine check immediately after a successful covert target; Bottom right: Probability of a magazine check having occurred after a reinforced lever-press vs a non-reinforced lever-press. (F) Distance of all three consecutive IPIs (summed) from the final covert target (\u2211(3 IPIs) <660 ms, \u223c4.5 Hz). (G) Spread of the distance between all three consecutive IPIs (summed) around the final minimum frequency target. (H) Percentage of sequences containing the minimum frequency target of the last session (end-target: 3 IPIs <660 ms, \u223c4.5 Hz). Shaded areas correspond to mean \u00b1 SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Lever presses per minute (F8,152 = 41.34, p < 0.0001). (B) Percentage of reinforced sequences (F8,152 = 57.31, p < 0.0001, Post hoc comparisons: Fisher's LSD test, (0.75 Hz) Session 3 vs Session 4 t152 = 3.847, p = 0.0002; (3 Hz) Session 6 vs Session 7 t152 = 0.7681, p = 0.4436; (4.5 Hz) Session 8 vs Session 9 t152 = 2.639, p = 0.0092). Shaded areas correspond to mean \u00b1 SEM. (C, D) Histograms with distribution of instantaneous lever-press frequencies, using linear (C) and log scales (D), defined as the inverse of all the individual IPIs from the 20 animals. Vertical dashed lines correspond to the IPI threshold used for sequence definition (IPI = 2 s, 0.5 Hz) and the final minimum frequency target (IPI = 220 ms, 4.5 Hz).\n\n![Video 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-media1.mp4.jpg)\n\n**Video 1.:** A 20 mg food pellet was delivered in the magazine when the animal performed three consecutive presses within 660 ms (covert target = 4.5 Hz).\n\nThe distribution of the instantaneous lever press frequencies (calculated as the inverse of the each IPI) shows a clear shift from initial sessions, where animals did mostly slow frequency presses (0\u20130.5 Hz; but already some higher frequency presses of 0.5\u20134.5 Hz and >4.5 Hz), to latter sessions where the distribution was shifted towards faster pressing speeds (Figure 1\u2014figure supplement 1C). A clear multimodal distribution became evident in log scale, with long IPIs (frequencies <0.5 Hz, Figure 1B and Figure 1\u2014figure supplement 1D) representing pauses in pressing or magazine checks. This allowed us to identify the sequences or bouts of pressing a posteriori, based on behavioral performance (either by a pause in pressing higher than 2 s or by the occurrence of checking behavior, i.e., magazine checks between presses; see \u2018Materials and methods\u2019), independently of the requirements for a specific training session. Importantly, reinforcement delivery did not provide an external cue that could be used by the animals to anticipate a reward, as the probability of performing a magazine check immediately after a successful covert target (instead of performing another press) was not significantly different from 0.5 both on early (t19 = 0.9232, p = 0.3675) and late sessions (t19 = 1.763, p = 0.0940), and did not change throughout learning (F8,152 = 1.753, p = 0.0907, Figure 1E, top right). Because a large number of sequences did not contain covert patterns (were not reinforced) we have also calculated the probability of a magazine check having occurred after a reinforced lever-press vs a non-reinforced lever-press, and observed that this was rather low (\u223c0.25) and did not change from early to late sessions (Post hoc comparison: t144 = 1.184, p = 0.283, Figure 1E, bottom right).\n\nThe percentage of lever presses performed within a sequence increased significantly from 56.98 \u00b1 3.98 in the first session of covert target introduction, to 98.26 \u00b1 0.53 in the last training session (F8,152 = 60.22, p < 0.0001; Figure 1C), and the number of sequences performed per minute increased with training (F8,152 = 32.23, p < 0.0001; Figure 1D). The percentage of reinforced sequences tended to decrease, since the difficulty of the task increased across sessions, but tended to stabilize or increase when the same target difficulty was repeated in two consecutive sessions (F8,152 = 57.31, p < 0.0001; Figure 1\u2014figure supplement 1B).\n\nImportantly, with training, the distance of consecutive IPIs (summed in bins of 3 IPIs to mimic the online criteria) to the final target frequency (3 IPIs <660 ms, \u223c4.5 Hz) decreased consistently (F8,152 = 25.76, p < 0.0001; Figure 1F), indicating that animals shaped their behavior gradually to approach the end target. Not only did the distance to the end target decrease, but the spread around the target also decreased (F8,152 = 9.616, p < 0.001; calculated as the standard deviation around the target frequency, Figure 1G). Consistently, animals gradually increased the percentage of press bouts that would achieve the minimum target frequency of the last session (end-target: 3 IPIs <660 ms, \u223c4.5 Hz; F8,152 = 14.15, p < 0.0001; Figure 1H). These data indicate that animals learned to shape their behavior to get closer to the covert target.\n\nThe mean frequency of each pressing bout (sequence frequency) decreased slightly (F8,152 = 2.372, p = 0.0195, Figure 2A), while the duration of each pressing bout (sequence duration) increased with training (F8,152 = 22.69, p < 0.0001, Figure 2B). Importantly, the sequence-to-sequence variability of the behavioral parameters (measured both by the variance and by the Fano factor, Figure 2C\u2013F) was differentially modulated during training. While the variability of sequence frequency decreased significantly throughout training (variance: F8,152 = 4.450, p < 0.0001, Figure 2C; Fano factor: F8,152 = 5.343, p < 0.0001, Figure 2E), the variability of sequence duration significantly increased (variance: F8,152 = 11.15, p < 0.0001, Figure 2D; Fano factor: F8,152 = 16.86, p < 0.0001, Figure 2F). The sequence-to-sequence variability of these two behavioral features was independent as there was no correlation between the variability in sequence frequency and the variability in sequence duration (variance: R2 = 0.0135; Fano factor: R2 = 0.0119, Figure 2\u2014figure supplement 1). This is in contrast with a strong correlation observed between variability in sequence duration and the variability in sequence length\u2014number of presses (variance: R2 = 0.8710; Fano factor: R2 = 0.8839, Figure 2\u2014figure supplement 1). The decrease in frequency variability cannot be explained by animals reaching a ceiling in pressing frequency, since the average frequency did not increase with training (it actually decreased slightly). Furthermore, frequency variability started stabilizing after session 4 where the target constrains are still rather loose (3 IPIs in less than 4 s) and this is a frequency that animals can reach in 78.91 \u00b1 5.09% of the sequences at the end of training.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Frequency and duration of lever-press sequences (C\u2013F) Variability, measured as the variance and Fano factor, for sequence frequency and sequence duration. (G\u2013H) Fano factor of both frequency and duration, normalized to the first session, for the frequency and control tasks. Shaded areas correspond to mean \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scatter plots of the paired values, variances and Fano factors, for frequency/duration and number of presses/duration. Each point corresponds to one session of one individual animal, with darker colors depicting later sessions. Line corresponds to the best linear fit of all the data, with the correspondent R2 value.\n\nIn order to test the specificity of these results, a different group of animals (N = 8) was trained on a control task (Figure 2H), where sequences of exactly four consecutive presses were reinforced but where the frequency at which these sequences were performed was not relevant. In contrast with the results observed for the frequency task, in which the sequence-to-sequence variability in frequency decreased (F8,152 = 5.343, p < 0.0001) and in duration increased (F8,152 = 16.86, p < 0.0001) (Figure 2G), in this control task the variability of sequence frequency did not decrease with training (F8,56 = 1.049, p = 0.4113), while variability in sequence duration did (F8,56 = 4.589, p = 0.0002) (Figure 2H).\n\nThese data indicate that the decrease in variability in sequence frequency was task-specific.\n\nTo further investigate this, we analyzed if the variability of these two behavioral dimensions was different in reinforced vs non-reinforced sequences (Figure 3). We verified that sequences leading to reinforcement had indeed significantly lower variability in frequency compared to non-reinforced sequences (main effect of reinforcement, F1,38 = 7.608, p = 0.0089, Figure 3C and F1,38 = 28.34, p < 0.0001, Figure 3E), but there were no significant differences in the variability of sequence duration between reinforced and non-reinforced sequences (Figure 3D,F). These results suggest that mice selectively reduced variability in the behavioral domains where variability affected the probability of reinforcement (sequence frequency), but not in domains where variability did not change this probability (sequence duration).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Comparison of frequency and duration between reinforced (RF) and non-reinforced (Non-RF) sequences. (C, D) Variance and (E, F) variability, measured as the Fano factor, for reinforced and non-reinforced sequences. Black lines correspond to mean values for non-reinforced sequences. Red lines correspond to mean values for reinforced sequences. Shaded areas correspond to mean \u00b1 SEM.\n\n### Variability of motor cortex and striatal activity decreases with learning\n\nIn order to investigate the dynamics of cortical and striatal circuits during the acquisition and performance of the fast lever pressing task, we continuously recorded extracellular neuronal activity simultaneously in layer 5 of the primary motor cortex (M1), and in the dorsal striatum (DS) of mice during the full duration of training (4 days, N = 7 animals, average of 18 M1 units and 10 DS units simultaneously recorded per animal, per session). Non-stop continuous electrophysiological recordings across 4 days encompassing all the sessions of training allowed us to track the activity of a subset of \u2018stable\u2019 cells throughout the whole period of training (49 M1 units, 21 DS Units). Putative single-units were isolated based on waveform characteristics, inter-spike intervals (ISI) and clustering statistics using principal component analysis (PCA). Units were considered \u2018stable\u2019 if the statistics in PCA space and waveform proprieties did not change significantly across sessions (see \u2018Materials and methods\u2019 and Figure 4\u2014figure supplement 1C).\n\nWe found a high sequence-to-sequence variability in the activity of individual neurons (measured by the Fano factor of the firing rate) in the first couple of sessions, that then decreased with training (DS: F8,48 = 2.767, p < 0.05; M1: F8,48 = 2.771, p < 0.05; Figure 4A). These dynamics in neuronal variability were observed during the performance of lever-press sequences, but not during baseline periods (measured from 5 to 2 s before the initiation of each sequence), when the animals were not actively engaged in lever pressing (DS: F8,48 = 1.117, p = 0.3324; M1: F8,48 = 1.459, p = 0.1973; Figure 4B), or during periods flanking the sequence (first press: DS F8,48 = 1.213, p = 0.3121; M1 F8,48 = 0.1374, p = 0.9971; last press: DS F8,48 = 0.5227, p = 0.8335; M1 F8,48 = 0.8677, p = 0.5499; Figure 4\u2014figure supplement 2). The decrease in neuronal variability was also observed when using exclusively \u2018stable\u2019 cells for this analysis (DS: F8,160 = 5.223, p < 0.0001; M1 F8,384 = 12.72, p < 0.0001; Figure 4C), showing that the differences in variability throughout learning could be observed in individual cells, and did not represent a shift in the population of neurons recorded across days. Importantly, the average firing rate of individual cells did not change significantly, neither across sessions nor across days (p > 0.05 for all conditions, Figure 4E\u2013H), suggesting that the reduction in variability was not attributable to overall changes in firing rate, but instead to the selection/refinement of a particular firing patterns related to sequence execution.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Neuronal variability (measured as the Fano factor of firing rates) during sequence performance and baseline periods, for all the recorded neuronal units and exclusively for \u2018stable units\u2019, for both M1 (blue traces) and dorsal striatum (DS, red traces). (E\u2013H) Firing rates during sequence performance and baseline, for all the recorded units and exclusively for stable units, for M1 (blue traces) and DS (red traces). (I, J) Fano factor (FF) and firing rate (FR) modulation relative to baseline values, for individual units recorded across the training sessions (stable units) within DS (top colorplots) and M1 (bottom colorplots). Right panels depict average modulation. Shaded areas correspond to mean \u00b1 SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Depiction of electrode array tip localization for motor cortex (top) and DS (bottom) for each individual animal. (B) Example coronal brain slice magnification using cresyl violet staining for confirmation of electrodes position. Atlas adapted from Paxinos and Franklin (2004). (C) Illustration of an example stable cell. Diagram illustrating the criteria for stability of cells across different recording sessions (top left, c1: cluster centroid during one session, c2: centroid of the same cluster in the subsequent session, see \u2018Materials and methods\u2019). Average waveform in each session (bottom left). Cluster projection using principal component analysis (PCA) across the training sessions (right).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Fano factor calculated for 1 s intervals around the first (DS F8,48 = 1.213, p = 0.3121; M1 F8,48 = 0.1374, p = 0.9971) and last presses (DS F8,48 = 0.5227, p = 0.8335; M1 F8,48 = 0.8677, p = 0.5499) of a sequence. Red lines correspond to mean value for DS, blue lines correspond to mean value for M1. Shaded areas represent mean \u00b1 SEM.\n\nFurther analysis of these dynamics for individual stable cells clearly showed higher variability relative to baseline during the initial sessions (first session DS: W = 134, p = 0.0107; first session M1: W = 1119, p < 0.0001), that decreased throughout training until it reached the same levels of baseline at the end of training (last session DS: W = 73, p = 0.2157; last session M1: W = 253, p = 0.2121; Figure 4I). Again, average firing rates did not show any significant modulation in relation to baseline throughout the whole period of training (DS: F8,160 = 1.031, p = 0.4153; M1: F8,384 = 1.757, p = 0.084; Figure 4J).\n\nThis decrease in sequence-to-sequence variability of neural activity did not seem to result from the behavior becoming more stereotyped with training, as variability in behavior decreased for frequency but increased for duration (Figure 2). To further control that the decrease in neural variability was due to gross changes in behavior we restricted our analyses to sequences matched for frequency (t48 = 1.800, p = 0.0781) and duration (t48 = 1.733, p = 0.0895) between early and late sessions (Figure 5A,B). We observed that neuronal variability was still elevated in early sessions and decreased as training progressed (DS: F8,48 = 2.732, p = 0.0144; M1: F8,48 = 2.491, p = 0.0239; Figure 5C). Again, these dynamics were not observed during baseline periods (DS: F8,48 = 1.483, p = 0.1884; M1: F8,48 = 1.241, p = 0.2965; Figure 5D) and no changes in firing rates were evident in sequence (DS: F8,48 = 0.4684, p = 0.8723; M1: F8,48 = 0.4040, p = 0.9128; Figure 5E) or baseline periods (DS: F8,48 = 0.2208, p = 0.9855; M1: F8,48 = 0.3354, p = 0.9479; Figure 5F). Single unit analysis also revealed a significant decrease in Fano factor modulation throughout training (DS: F8,160 = 2.688, p = 0.0084; M1:F8,384 = 9.705, p < 0.0001; Figure 5G) with no modulation in firing rates (DS: F8,160 = 0.3008, p = 0.9648; M1:F8,384 = 1.406, p < 0.1923; Figure 5H).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) Frequency and duration of matched sequences. (C, D) Neuronal variability, measured as the Fano factor of the firing rate, for sequences of matched duration and frequency, for both recorded areas, during sequences and baseline. (E, F) Firing rates, for sequences of matched duration and frequency, during sequences and baseline. (G, H) Fano factor (FF) and firing rate (FR) modulation relative to baseline values, for individual units recorded across the training sessions (stable units) within DS (top colorplots) and M1 (bottom colorplots), for sequences of matched duration and frequency. Right panels depict average modulation. Error bars correspond to mean \u00b1 SEM.\n\n### Corticostriatal variability becomes correlated with specific behavioral variability\n\nThe results above suggest that the decrease in corticostriatal variability is not related to a general decrease in behavioral variability. We therefore investigated if the changes in sequence-to-sequence variability in neural activity were related to the changes in sequence-to-sequence variability of specific behavioral dimensions. We re-calculated the Fano factor of the behavioral features and the neuronal activity using a moving average of a reduced number of trials (5) to provide a higher within session resolution of the variability dynamics and therefore permit the correlation of behavioral and neuronal dynamics across training for each animal (Figure 6A, see \u2018Materials and methods\u2019). Analyses of the relationship between the variability of the recorded units and the variability of each independent behavior feature revealed a significant increase in correlation between neuronal and behavior variability, specific for sequence frequency (Figure 6C), but not for duration (Figure 6D). These results were observed when using only task-relevant or non-task-relevant neurons (data not shown). They were also observed using different number of trials for calculating the moving average of the Fano factor (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example traces from a single animal representing variability, calculated as the Fano factor, using a moving window of five consecutive trials shifted by one for sequence frequency (dark blue trace), sequence duration (green trace), M1 units firing rate during sequences (blue trace) and baseline (grey trace), and DS units firing rate during sequences (red trace) and baseline (grey trace). Vertical dashed lines represent separation of different training sessions. Shaded areas correspond to mean \u00b1 SEM. (B) Correlation between the variability (FF) in M1 and DS. (C, D) Correlation between variability traces from neuronal firing rates in M1 (blue bars) or DS (red bars), and variability of sequence frequency or duration. Error bars denote correlation coefficient \u00b1standard error of the correlation. *p < 0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Correlation between the firing rate and (A) sequence frequency or (B) sequence duration. Error bars denote correlation coefficient \u00b1standard error of the correlation.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A, B) Correlation between variability traces from neuronal firing rates of cortical and striatal units, and between neuronal variability and variability of sequence frequency and duration using 3 (A) or 7 (B) consecutive trials. Error bars denote correlation coefficient \u00b1standard error of the correlation. *p < 0.05.\n\nThese results show that the decrease in variability in M1 and DS is not just a reflection of a more constrained performance of the movement as training progresses; variability of the movement decreased in a specific dimension but it increased in others were no significant correlation with neuronal variability was evident. Furthermore, no significant correlations were observed between the firing rate of neurons and the variability any of the behavior features (Figure 6\u2014figure supplement 1), indicating again that the observed relationship between neuronal and behavior dynamics was not the reflex of a general increase in correlation between neuronal activity and behavior.\n\nThe data presented above suggested that as training progressed variability in M1 and striatum became more correlated with variability in a specific domain of behavior that changed the probability of reinforcement. This suggests that neural variability in M1 and striatum could also become more coupled with training. We verified that at the onset of training the sequence-to-sequence variability of neural activity in DS and M1 in each animal was not correlated. However, a strong correlation between the variability in DS and M1 rapidly emerged during training (p < 0.05 for all except the first training session, Figure 6B), suggesting that as behavioral variability is refined, neural variability in M1 and striatum becomes correlated.\n\n### Corticostriatal plasticity is required for the refinement of behavior variability\n\nThe results presented above show that a coupled reduction in corticostriatal variability accompanies the reduction in variability of sequence frequency, but not of sequence duration, suggesting that corticostriatal plasticity is necessary to select the appropriate motor features and hence reduce variability within specific domains. We decided to directly test if the observed reduction in sequence frequency variability is dependent on corticostriatal plasticity by using mutant mice with NMDA receptors deleted specifically at glutamatergic synapses of striatal projection neurons (RGS9-LCre::Grin1tm1Yql; referred to in the figures as striatal projection neuron SPN NR1-KO), which have impaired corticostriatal plasticity (Dang et al., 2006), and control littermates. Mutant animals had more difficulty learning the task, so we adapted the training protocol to one session per day for both mutant and littermate controls (and repeated sessions when needed), in order to achieve comparable performance levels (see \u2018Materials and methods\u2019, Table 1 and Figure 7A).\n\n**Table 1.**\n Training protocol and respective number of animals reaching performance criteria for the SPN NR1-KO group and littermate controls\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Training protocol</th>\n      <th>Free</th>\n      <th>0.375 Hz</th>\n      <th>0.375/0.75 Hz (30 reinf)</th>\n      <th>0.75 Hz</th>\n      <th>1.5 Hz</th>\n      <th>1.5/3 Hz (30 reinf)</th>\n      <th>3/6 Hz (10 reinf)</th>\n      <th>6/7.5 Hz (10 reinf)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\"># of subjects reaching criteria</td>\n      <td>NR1\u2013KO</td>\n      <td>7</td>\n      <td>7</td>\n      <td>6</td>\n      <td>6</td>\n      <td>5</td>\n      <td>4</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td>5</td>\n      <td>5</td>\n      <td>5</td>\n      <td>5</td>\n      <td>5</td>\n      <td>5</td>\n      <td>5</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of the adapted training sessions for mutant animals and littermate controls. Animals would remain in the same training session until reaching a stable performance. (B) Distance of the sum of all three consecutive IPIs from the final covert target (\u2211(3 IPIs) <660 ms, \u223c4.5 Hz) in SPN NR1 mutants and littermate controls (C) Spread of the distance between three consecutive IPIs around the final covert target. (D\u2013G) Behavior parameters and variability, measured as the Fano factor, during early and late training sessions in SPN NR1 mutants and littermate controls groups. Bars correspond to mean, with data from individual animals plotted on the background (red: SPN NR1-KO; black: littermate controls).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09423/elife-09423-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Histograms depicting the sampled statistic (difference between the means of two groups), after sampling with replacement the original data 100.000 times. Red vertical lines correspond to the 5% confidence intervals. Green vertical line corresponds to the mean of the sampled data. Blue vertical line corresponds to the difference between the original data groups (H0).\n\nAs expected, the distance to target (Controls: p = 0.0450, t5 = 2.657, Figure 7B) and spread around the target (Controls: p = 0.0179, t5 = 3.466, Figure 7C) decreased in littermate controls. However, neither of these measures changed with training in mutants (Mutants: p = 0.3535, t6 = 1.005; and p = 0.2817, t6 = 1.183, respectively; Figure 7B,C).\n\nIn general, no significant difference was observed for any of the behavior features between the two groups of animals. However, planned comparisons did show that RGS9-LCre::Grin1tm1Yql mutants did not decrease sequence frequency variability during training, in contrast to littermate controls which did (significant main effect of training time: F1,10 = 10.13, p = 0.009; Posthocs: Mutant group: t10 = 1.38, p = 0.1964; Control group: t10 = 3.00, p = 0.0134). Importantly, no differences in the modulation of sequence duration variability were observed between the two groups (no significant main effect for genotype: Duration FF: F1,10 = 0.02, p = 0.887) (Figure 7D\u2013G). These statistical results were robust as they were confirmed using bootstrapping statistics (using 100.000 random samples of the data, with replacement) (Figure 7\u2014figure supplement 1). These data suggest that corticostriatal plasticity is required for the reduction in variability of specific behavioral features that change the probability of reinforcement.\n\n## Discussion\n\nIn this study we show that when mice are trained on a difficult operant paradigm they differentially refine specific behavioral features. When mice were asked to perform progressively faster covert patterns of lever presses to obtain a reinforcer, they reduced variability in sequence frequency, but increased variability in an orthogonal uncorrelated feature (sequence duration). These results are interesting because both features would be classically considered task-relevant\u2014a covert sequence of four presses, which is the minimum to produce a reinforcer in this task, has to have a minimal duration. However, although both features could be considered relevant for the task, only changes in frequency variability were differentially reinforced. Reinforced sequences had lower variability in frequency than non-reinforced sequences, but had equal variability in duration as non-reinforced sequences. Thus, our results indicate that animals reduced frequency variability because that was what was reinforced throughout training. Consistent with this interpretation, in a task where the exact number of presses (correlated with duration) was reinforced but the frequency at which the sequence was performed was not, variability in duration decreased and in frequency increased. This in line with data demonstrating differential modulation of the different components of task space during learning (Todorov and Jordan, 2002; M\u00fcller and Sternad, 2004; Cohen and Sternad, 2009).\n\nIn previous studies from our group where animals performed operant tasks where the constrains were more relaxed (Jin and Costa, 2010), animals decreased variability in all behavioral domains (i.e., they became more stereotypical overall). However, when faced with a more challenging task as in the present study, they decreased variability in the domain that was critical for getting a reinforcer, but increased variability in orthogonal domains (i.e., they were more stereotypical in just a particular domain). It could be that the increase in variability in the orthogonal behavioral domains happens because in difficult tasks animals try to minimize the effort to obtain reinforcers, and hence do not attempt to reduce variability in more than one independent domain. Alternatively, it could also be that mice increased the duration of the sequence (and the correlated number of presses) as a strategy to try to increase the probability of getting a successful covert pattern in that sequence. However, this second possibility is less likely, given that the two behavioral features were not correlated, and that sequences of different durations were equally likely to get reinforced. These data suggest that in more challenging motor tasks it is difficult to reduce variability in all domains, and animals seem to differentially refine the motor patterns that led to reinforcement. Consistently, the number of sequences that comply with the minimum frequency required for the last session (end-target) increased with training and the distance to the end-target decreased with training, indicating that mice implicitly learned to shape their behavior to match the task requirements.\n\nAt the neural level, we observed initial high sequence-to-sequence variability of neuronal activity in corticostriatal circuits that decreased with training. Variability in the spike patterns of individual neurons and populations of neurons may be the bases for a process of behavioral exploration (or trial) (Olveczky et al., 2005; Kao et al., 2005; Mandelblat-Cerf et al., 2009), while a decrease in neural variability may reflect a process of selection of specific patterns of neural activity that lead to specific behavioral outputs (Costa et al., 2004; Kao et al., 2005; Fee and Goldberg, 2011). It has been suggested that a decrease in corticostriatal variability as a motor task is learned (Costa et al., 2004; Barnes et al., 2005) could correspond to the process of selection and consolidation of specific motor patterns (Costa, 2011). Here, we show that this decrease in neural variability in corticostriatal circuits correlates specifically with the decrease in variability of a particular behavior domain. These data suggest that the neural patterns in motor cortex and sensorimotor striatum that give rise to the behavioral patterns that are reinforced are progressively selected. Provocatively, it also suggests that changes in motor variability that are not specifically reinforced but are part of a strategy or driven by effort reduction may be encoded somewhere else.\n\nFinally, we also show that corticostriatal plasticity is important for the refinement of specific behavior features. Our data therefore suggests an important role for corticostriatal plasticity in selecting the appropriate implicit neural and behavioral patterns that are reinforced (Costa, 2011). However corticostriatal plasticity did not seem to be necessary for the increase in behavioral variability in other domains (Goldberg and Fee, 2011). Although in this study we don't investigate the mechanisms underlying the generation of variability, several studies have suggested that the basal ganglia, dopaminergic system, specific cortical circuits, or cerebellar circuits could subserve this function (Olveczky et al., 2005; Costa et al., 2006; Leblois et al., 2010; Costa, 2011; Fee and Goldberg, 2011; Shmuelof and Krakauer, 2011; Woolley et al., 2014).\n\nTaken together, our findings suggest that corticostriatal plasticity is important to select the neural patterns that lead to the movement patterns that are reinforced. They highlight that corticostriatal plasticity is not only important for choosing which action to do, but also to shape how to do it to obtain a desired outcome.\n\n## Materials and methods\n\n### Animals\n\nAll experiments were carried in accordance to the ethics committee guidelines of the Champalimaud Foundation and Instituto Gulbenkian de Ci\u00eancia, and with approval of the Portuguese DGAV (Ref. 0421). Experiments were carried out using 20 male, 3 to 5 month old C57BL6/J mice. From these, 13 animals were used exclusively for behavioral training while the remaining seven underwent microelectrode array implantation for neuronal data recordings. Animals were maintained on a light\u2013dark cycle of 12 hr:12 hr starting at 7 AM. All experiments were done during the light cycle. Mice were housed in groups of four animals prior to surgery and individually after the electrodes were implanted. 3 to 6 months old RGS9-LCre::Grin1tm1Yql homozygous mice (N = 7) and Cre negative littermate controls (N = 5) were used for the mutant mouse behavioral experiments.\n\n### Surgery and in vivo extracellular recordings\n\nSeven C57Bl6/J mice were implanted bilaterally with two micro-electrode arrays (2 \u00d7 8), 35\u201350 \u00b5m tungsten electrodes with micro-polished tips. One array targeted the primary motor cortex (M1, layer 5) while the second was targeting the (DS, sensorimotor area that receives projections from the same area in M1). Craniotomies and electrode array positioning were done according to coordinates from the Mouse Brain Atlas (Paxinos and Franklin, 2008). M1 array was placed 1 mm rostral and 1.6 mm lateral from bregma, and lowered \u223c1 mm from the surface of the brain. DS array was placed 0.5 mm rostral and 2.1 mm lateral from bregma, and lowered \u223c2.3 mm from the surface of the brain. Electrodes were manually lowered at slow rates while constantly monitoring neural activity in all the channels in order to control for proper electrode function and correct positioning. Final verification of electrode position was done after all the experiments were finished, by perfusing animals with PFA and histological confirmation of Nissl stained 70 \u00b5m brain slices (Figure 4\u2014figure supplement 1A,B). After surgery animals were allowed to recover for at least 2 weeks before starting any other experimental procedure. Single and multi unit activity was recorded using Blackrock Microsystems Neural Signal Processor, allowing for online sorting of identified units. Further offline sorting of selected units was done using Plexon Offline Sorter v3 (Plexon Inc, Dallas, TX, United States), based on waveform characteristics, ISI and PCA clustering. Units stability was assessed from waveforms and PCA cluster proprieties. For PCA cluster comparison data from all the training sessions was pooled together to calculate common eigen vectors. Data from individual sessions was then projected into this common PC space, allowing us to determine cluster centroids and dispersion for each session. Clusters were considered stable whenever the centroid in a given session was comprised within the interval of the centroid of the previous session \u00b11.96 * standard deviation of the cluster, in the first two principal components (Figure 4\u2014figure supplement 1C for a graphical representation of this criteria).\n\n### Behavioural training\n\nAnimals were trained using operant chambers (MedAssociates Inc, St. Albans, VT, United States) placed inside sound attenuating boxes. A retractable lever was extruded in the beginning of each session, simultaneous to the onset of a light. Animals were required to perform a sequence of presses at a minimum frequency in order to obtain a 20 mg food pellet (Bio-Serv, Flemington, NJ, United States). 24 hr before the first training session animals were placed under a food restriction schedule. Body weight was constantly monitored in order to be kept above 85% of the initial weight. In order to facilitate learning, animals were initially exposed to one session of magazine training were food pellets would be available on a random time schedule, and to three sessions of continuous reinforcement schedule (CRF) 1 day before training, where single lever presses would be reinforced. On the following training sessions animals were reinforced if they performed a sequence of consecutive presses at a minimum frequency (covert target), defined by the inverse of three consecutive inter-press intervals (IPIs), which increased with training. On the first session there was no minimum frequency target, meaning that any consecutive 3 IPIs would lead to reinforcement. In consecutive sessions the minimum frequency that would lead to reinforcement was increased or maintained in the following order: 0.375 Hz, 0.75 Hz, 0.75 Hz, 1.5 Hz, 3 Hz, 3 Hz, 4.5 Hz and 4.5 Hz. This constant increase in the minimum frequency of the covert target forced the animals to systematically adapt to the task requirements and perform faster sequences of presses from session to session. The training protocol for mutant animals and littermate controls was adapted due to difficulties learning the task, to one daily session and using automatic progressive schedules once a minimum number of reinforcements (30 or 10) was achieved. (Table 1 for performance summary.)\n\n### Sequences of lever presses\n\nSequences of presses were differentiated based on IPI and occurrence of a magazine head entry. An IPI >2 s (determined based on the distribution of IPIs) or a head-entry were used to define the bouts or sequences of presses. The 2 s cutoff was determined from the joint distribution of the instantaneous IPIs (and the corresponding log distribution) from all the animals, by determining the valley between the two main peaks of IPIs (Figure 1\u2014figure supplement 1C,D). Frequency of each sequence was defined as the inverse of the average IPI of each sequence. Duration of each sequence was defined as the time between the first and the last press event. Length of each sequence was defined as the number of press events in each sequence. For the matched sequences analysis, sequences with a duration of 0.2\u20132 s and a frequency higher than 2 Hz were selected.\n\n### Task-related neurons\n\nNeural activity was averaged in 20-ms bins, shifted by 1 ms, and averaged across trials to construct the peri-event histogram (PETH). Data from the PETH from 5000 to 2000 ms before lever press were considered as baseline activity. A positive modulation in firing rate was defined if at least 20 consecutive bins had firing rate larger than a threshold of 99% above baseline activity, and a negative modulation of firing rate was defined if at least 20 consecutive bins had a firing rate smaller than a threshold of 95% below baseline activity (Belova et al., 2007). Paired t-tests between baseline firing rate and sequence firing rate were used to classify individual neurons as sequence-related.\n\n### Analysis and statistics\n\nThe programs to run the tasks presented in this study can be found at http://tinyurl.com/or7ug72. Analyses were done in Matlab (MathWorks, Natick, MA, United States) or GraphPad Prism (GraphPad Software Inc, La Jolla, CA, United States). Normality was verified for all tests using the D'Agostino-Pearson omnibus normality test, or the Kolmogorov\u2013Smirnov test when sample size was too small. Repeated measures ANOVA were used to evaluate changes in behavior and neuronal features. Probability of a magazine check after lever-press was evaluated using one-way ANOVA and post hoc comparisons using Fisher's LSD test, but one subject was excluded from these analysis due to a lack of recorded timestamps for magazine head-entries. Paired t-tests were used to evaluate differences in percentage of lever-presses. Increases in FF modulation were assessed by the Wilcoxon Rank Signed test. Repeated measures two-way ANOVA was used to verify the general effect of the RGS9-NR1 mutants experiment. Bootstrapping statistics were used on the data from the RGS9-NR1 mutants and littermate controls to validate the results from the post hoc tests. Histograms were built from 100000 randomized samples with replacement. Sample sizes were calculated based on \u03b1 = 0.05 and power of 0.7. Trial to trial variability of neuronal and behavior data was assessed using Fano factor. We calculate the Fano factor of individual units by dividing the variance of firing rates across all the trials of a session by the mean over those trials. Fano factor and firing rate modulations for individual stable cells were calculated as the ratio between the difference of values for sequence and baseline and the values during baseline (Fano factor: [FFsequence \u2212 FFbaseline]/FFbaseline; firing rate: [FRsequence \u2212 FRbaseline]/FRbaseline). Fano factor of the behavioral features was calculated by dividing the variance in the individual features by the mean of the feature for all the trials. To establish correlations between the variability of the neuronal data and the variability of the behavior, Fano factors were calculated using three, five or seven consecutive trials, allowing us to increase the resolution of the variability measures. Correlations between neuronal and behavior data were evaluated using Pearson's linear correlations. To avoid correlations bias due to sample size, statistical significance of all the correlations was assessed using the significance criteria for the session with smaller size. Within animal correlations averaged using Fisher's z transformation (Silver and Dunlap, 1987) returned similar results to grouped correlations for all the tested conditions (data not shown).\n",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f55af8f8-63d5-4fa2-a3ff-b7f000b0be1b",
+      "submission_id": "8cc0db24-9826-437f-abcd-83351dbe4a7d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ole Kiehn, Karolinska Institutet , Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09423.019](https://doi.org/10.7554/eLife.09423.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cCorticostriatal dynamics encode the refinement of outcome-relevant variability during skill learning\u201d for consideration at eLife. Your full submission has been evaluated by Timothy Behrens (Senior Editor) a member of the Board of Reviewing Editors and three peer reviewers and the decision was reached after extensive discussions between the reviewers. Based on our discussions and the individual reviews below, we have reached the decision that we will reject the paper as is.\n\nThe reviewers agree that the study addresses an important issue in neuroscience and is of potential interest for a broad audience. There are, however, strong concerns whether the main claims of the paper are supported by the data as presented. An elaborated and unbiased analysis is needed to show that the behavior and electrophysiological results indeed support the main claims in the study. Because of eLife's policy direct invitation for revision should not require elaborated work we are forced to reject the paper. However, we would be willing to look at a new manuscript that addresses the main concerns that were raised against the study. It is essential that, in particular the point about outcome-relevant specificity, is addressed appropriately.\n\nThe main elements of concerns are outlined here and further elaborated in the specific comments from the reviewers.\n\n1) The analysis should provide clear evidence that the reduction in frequency variability is in fact real and that the animal is refining its behavior. The authors need to demonstrate that the behavior is indeed refined and that the variance will decrease not just because the duration of presses decreases or that the number of presses in each sequence is very small in the first sessions. It also should be clear that the effect is not just the out of sequence presses that decrease rather than the in sequence that increase. For analysis of the neuron data is should be clear that on what segment the firing rate is measured. If the firing rate is measured on the entire duration of the pressing sequence then it is liable to the same criticism as pointed out above. Namely, measuring the firing rate in longer time windows will have smaller variance.\n\n2) The main part of the story rests on the claim that it is only variability in the outcome relevant aspect of the behavior that decreases with learning. This is in contrast to variability in sequence length or duration, allegedly outcome-irrelevant aspects. Yet the data suggest that longer sequences improve task-performance and that the mice increase them with learning. Thus length/duration seems to be outcome relevant, despite the experimental protocol not explicitly rewarding on these features.\n\nThis point needs to be substantiated with further analysis to show an outcome-relevant specificity. It will be important to discuss why behaviors under FR3/0.66s protocol in this study and FR4/0.5s protocol in earlier study give rise to very different behavioral patterns. The authors should include a re-analysis of the FR4/FR8 behavioral results in this paper to show that, under slightly different operant requirements, mice can selectively reduce the variability of press length instead of press frequency. They should directly test the simple possibility that M1/DS activity linearly encode press frequency (for example average press frequency of a sequence; or max frequency of a sequence; or instantaneous frequency associated with each press) using correlation analysis. If such is the case, the authors should quantify the overlap between sequence-related neurons and press-related neurons, and see if the two populations show more overlap over training blocks. Alternatively, the absence of significant correlation would suggest that M1/DS activity is coding for properties related to press frequency in non-linear ways, and FF correlation is a novel approach to reveal this hidden relationship. As additional controls to establish the specificity of the observed FF correlation, the authors should (1) clearly indicate whether this analysis involve all neurons, or only sequence-related neurons, (2) indicate what the time window used to calculate average firing rate within a press, (3) provide a correlation analysis done on a per-neuron basis, (4) indicate if lever-press related neurons show the same correlation, as well as what happen to other task-unrelated M1/DS neurons.\n\n3) The number of animals in Figure 7 seems very small, there are no error bars and the effects seem to be governed, in some cases by 1-2 animals. The authors should demonstrate that the main result is not due to these animals only.\n\nReviewer #1:\n\nIn this paper, Santos et al. investigated whether motor variability in the outcome-relevant dimension specifically reduces during learning, and whether such reduction is mediated by neuronal activity in corticostriatal circuits. By requiring mice to increase peak press frequency in order to obtain reward, the authors found that variability in press frequency is selectively decreased. Such a reduction in behavioral variability is correlated with a concomitant reduction in M1/DS neuronal activity variability over learning blocks, and abolished in mice with deficient corticostriatal plasticity. These results are potentially very interesting in that they provide elegant experimental support for a widely-held prediction in motor control literature, and also provide a new conceptual framework to analyze behavioral and neuronal dynamics during learning when the mapping between neuronal activity and behavior continues to evolve. I have a number of concerns that I wish the authors address using existing data.\n\n1) A big part of the story rests on the behavioral finding that the variability of press frequency decreased while the variability for press length and duration increased. I was initially concerned that there may be a trivial explanation of this result, or that any animal undergoing press-related operant training may show similar behavior. However, after comparing the current results with those in Xin and Costa (2010) and Xin, Tecuapetla, and Costa (2014), I think it is likely the case that, in earlier studies, mice learn to optimize the number of press under extended FR4 or FR8 training protocol, and thus specifically reduced variability for the number of presses.\n\nI think it is very important for the authors to emphasize this comparison and discuss why behaviors under FR3/0.66s protocol in this study and FR4/0.5s protocol in earlier study give rise to very different behavior patterns. To that end, the authors should perhaps include a re-analysis of the FR4/FR8 behavioral results in this paper to show that, under slightly different operant requirements, mice can selectively reduce the variability of press length instead of press frequency.\n\n2) The moving-window FF correlation between the behavioral features and neural activity (Figure 6) is fascinating. This analysis shows that M1/DS activity FF (but not baseline activity FF) was correlated specifically with FF of average press frequency, but not length or duration. The use of FF to investigate the evolution of neural coding during learning is very clever because, without knowing exactly what behavioral parameters M1/DS activity encode and how the encoding may evolve during learning, the FF correlation strongly supports that M1/DS activity must encode properties related to the average press frequency.\n\nTo elaborate on this observation, the authors should directly test the simple possibility that M1/DS activity linearly encode press frequency (for example average press frequency of a sequence; or max frequency of a sequence; or instantaneous frequency associated with each press) using correlation analysis. The presence of significant correlation indicates that M1/DS neurons are encoding for press frequency. If such is the case, the authors should quantify the overlap between sequence-related neurons and press-related neurons, and see if the two populations show more overlap over training blocks. Alternatively, the absence of significant correlation would suggest that M1/DS activity is coding for properties related to press frequency in non-linear ways, and FF correlation is a novel approach to reveal this hidden relationship.\n\nAs additional controls to establish the specificity of the observed FF correlation, the authors should: (1) clearly indicate whether this analysis involve all neurons, or only sequence-related neurons; (2) specify what is the time window used to calculate average firing rate within a press (i.e. first press to the last press); can the authors include another window around the onset of the press sequence (i.e. [-1s to first press] or [-0.5s to 0.5s] of first press)?; (3) specify what was the correlation analysis done on a per-neuron basis and then averaged across all neurons (Figure 6C-E) and neuron pairs (Figure B)?; and (4) clarify whether lever-press related neurons show the same correlation. What about other task-unrelated M1/DS neurons? One would hope not.\n\nReviewer #2:\n\nThe paper claims that mice reduce performance variability during performance improvement on a lever-pressing task, but only in the outcome-relevant dimension. They then go on to show that trial-by-trial variability in the average firing rate correlates with performance variability in the outcome-relevant dimension, and more so late in learning. They then use a knockout mouse to probe whether variability reduction requires cortical input to the striatum.\n\nFigure 1D plots the sequence rate, and 2A the sequence frequency. I assume that these are the same, but why are the graphs so different? Then the authors switch to talking about variability in pressing frequency, which is something different. But if we assume that what they call sequence frequency in 2A is in fact pressing frequency (I have no idea if that's the case, but it's a fair assumption given the rest of the paper), then I become confused, because Figure 1\u2013figure supplement 1C and D clearly shows that instantaneous pressing frequency is increased with learning, yet 2A suggest otherwise.\n\nThe authors suggest that sequence frequency is task-relevant but that the length of the sequence is not. Yet their own data (Figure 3B) shows that the longer the sequence the more reward is being delivered, hence from the mouse's point of view sequence length seems to be a relevant dimension. If one wanted to make the claim that the mouse decreases the variability in the task relevant dimension over other task-irrelevant ones, then one should design a task that has two explicit and comparable dimensions and make reward contingent first on one and then the other in separate experiments. For example, one could make the first interval in 3-tap sequence subject to some reward criteria, but the second interval not, and then switch it up in the next experiment. If variability decreases for the relevant interval but not the irrelevant one no matter which the reward was contingent on, then that would, to me at least, be a far more compelling result. As it stands they are comparing dimensions that both seem relevant for reward, one which has an increase in variability with learning, another which has a decrease.\n\nFurther down, why do the authors compare all neurons when they look at neuronal variability during the task? It seems to me that this analysis should be done only on task-related neurons.\n\nThere are also other confounds, like reward probability decreasing with learning, something that on its own is known to affect motor variability.\n\nReviewer #3:\n\nThe manuscript suggests that the refinement of behavior in success related dimensions is correlated with refinement in corticostriatal spiking patterns. This is an important point to be made and the type of experiment the authors did is suitable. The idea itself is not completely novel and several previous studies have suggested this and shown reduction in variance as learning progresses; nevertheless, this is a nice demonstration of the concept and therefore can be important to the field. I do have some concerns with the analyses that dampen my enthusiasm and raise questions about the interpretation of the results. The authors need to make a cleaner and unbiased analysis to show that the behavior and electrophysiological results indeed support the main claim.\n\nSummary of substantive concerns:\n\n1) Are the animals really refining their behavior? The major changes along the training process seem to be:\n\n1.1) The percentage of lever presses within sequences increase (Figure 1C). Alternatively the \u2018out of sequence\u2019 presses decrease (Figure 1\u2013figure supplement 1D, all points left of -0.3 dashed line);\n\n1.2) The mean number of presses in a sequence increases (Figure 2B, C);\n\n1.3) The sequence frequency increases (Figure 1D).\n\nThe mean frequency in the sequences does not change much (Figure 2\n\nA). This, in fact, may raise concerns about the change in Figures 2D, G. If the IPI in the sequences is drawn (i.i.d.) from a distribution with some fixed (\u03bc) mean, it follows that the distribution of the press rate in some duration has a related mean (1/\u03bc) but also, due to the central limit theorem, that the variance will decrease with the duration. Therefore, the authors need to find a controlled way to demonstrate that the behavior is indeed refined and not that the animals simply make longer pressing sequences and hit their targets by chance.\n\nI think some simple controlled analyses can be done to address this (e.g. sampling similar periods of time etc.), but it has to be shown.\n\n2) The mean number of presses in each sequence is very small in the first sessions (<3, Figure 2B) and the Fano Factor that approaches 1 (Figure 2G) suggests just that. Also, the distributions between the dashed lines in Figure 1\u2013figure supplement 1D do not seem to change much in sessions 3-8. It is therefore important to show that the main result is not due to this effect alone (the low number of presses in sessions 1-2).\n\n3) The case for independence of behavioral dimensions in not clear enough. Figure 2\u2013figure supplement 1 is claiming so but it is not entirely clear to me what is the main conclusion. It needs to be better explained.\n\n4) It is not clear on what segment the firing rate is measured? This is crucial. If the firing rate is measured on the entire duration of the pressing sequence then it is liable to the same criticism as point 1 above. Namely, measuring the firing rate in longer time windows will have smaller variance. Having a mutual cause may explain the result in Figure 6C.\n\n5) The number of animals in Figure 7 seems very small, there are no error bars and the effects seem to be governed, in some cases by 1-2 animals. The authors should demonstrate that the main result is not due to these animals only.\n\n6) In general, the definition of refinement is a bit over-stated here. Reduction is variability is one aspect, yet I could think of several other approaches to define \u2018refinement\u2019 that could be interesting as well and produce a richer manuscript with more interesting conclusions.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your work entitled \u201cCorticostriatal dynamics encode the refinement of outcome-relevant variability during skill learning\u201d for peer review at eLife. Your submission has been favorably evaluated by Timothy Behrens (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this manuscript, Santos et al. investigated whether variability of specific task parameters are reduces during learning, and whether such reduction is mediated by neuronal activity in corticostriatal circuits. By requiring mice to learn a task that involve increased press frequency in order to obtain reward, the authors find that the variability of press frequency is a decreased meter while variability of press duration is not. They conclude that the animals learn to reduce the variability of the frequency as outcome-relevant parameter while outcome irrelevant parameters, like duration, is not changed. They find that the reduction in frequency variability is correlated with a concomitant reduction in M1/DS neuronal activity variability over learning blocks, and abolished in mice with deficient corticostriatal plasticity.\n\nThe manuscript is a resubmission. There were several concerns whether the main claims of the manuscript as submitted before were supported by the data as presented. In particular further evidence to support that outcome specificity was restricted to press frequency was requested. The authors have provided new analysis and a set of new experiments to meet these concerns. However, while the reviewers agree that the study has improved after revision the issue of outcome-specificity is still not resolved. Given the paper's focus, this is a major issue that must be addressed. After extensive discussion among reviewers, and editors there is an agreement that the task as presented does not isolate frequency as the only causal dimension in the task. The fact that reward is dispensed based on frequency does not preclude other relevant behavioral parameters, even if those are orthogonal to, or uncorrelated with, sequence frequency. In fact, both sequence frequency and duration are modulated by learning. Success on the task is therefore likely to also depend on duration since it is coupled to sequence length. Therefore, the task does not isolate frequency as the only task-relevant parameter, and the dichotomy between task-relevant (frequency) and task-irrelevant (duration) parameters does not hold. Hence it cannot be claimed that learning is only tuning frequency as the outcome-relevant parameter. Duration is relevant by default in reward accumulation tasks. This may not be reflected in the tuning of neuronal firing patterns while frequency may in this task. This distinction may be interesting but is not spelled out in the manuscript. Careful wording is needed to clarify this and to discuss how the two outcome-relevant parameters that are being compared, sequence frequency and duration, differ. This is important because the difference in the neural correlates of these task aspects, and how they change with learning, is not due to one being task-relevant and the other not, but rather to these being qualitatively different aspects of the task. As the text is now this is not the message the reader will be left with. Thus the dimension along which the two task-relevant parameters differ should be discussed, and an attempt to generalize the results beyond this task should be made. The authors must revise their statements carefully to reflect this and explicitly explain the confounding factor introduced by press duration. This new message should also be reflected in the title and in a more nuanced description in the Abstract, and Introduction of the outcome relevant concept as well as in an expanded discussion of these issues.\n\nA number of other issues were also raised by the reviewers, as outlined below in the detailed report. In particular whether animals know that they are rewarded (see review #2). An analysis based on behavioral data should clarify whether the mice indeed learn to anticipate reward. If so this is also a task-relevant parameter that is learned by the animals.\n\nReviewer #1:\n\nIn this paper, Santos et al. investigated whether motor variability in the outcome-relevant dimension specifically reduces during learning, and whether such reduction is mediated by neuronal activity in corticostriatal circuits. By requiring mice to increase peak press frequency in order to obtain reward, the authors found that variability in press frequency is selectively decreased. In contrast, in a control task that required 4 consecutive presses to obtain reward, variability in press duration but not press frequency decreased. The reduction in outcome-relevant behavioral variability is correlated with a concomitant reduction in M1/DS neuronal activity variability over learning blocks, and abolished in mice with deficient corticostriatal plasticity.\n\nThese results are potentially very interesting in that they provide elegant experimental support for a widely-held prediction in motor control literature, and also provide a new conceptual framework to analyze behavioral and neuronal dynamics during learning when the mapping between neuronal activity and behavior continues to evolve. I have a number of concerns that the authors should address.\n\n1) The resubmitted manuscript has significantly improved with the addition of the new control experiment. The pattern of behavioral refinement in the control task is the opposite of the main task, which provides strong support that the behavioral refinement reported in this manuscript is specific to the outcome-relevant dimension. The authors should provide further information of this control task to support this key point, by providing un-normalized results of the control task as in Figure 2A-F, as well as comparison between rewarded and non-rewarded trials as in Figure 3.\n\n2) In prior studies, Xin and Costa indicated that mice could not hear reward delivery and waited until the end of press sequence to check for reward. Is that still the case in this study? From Figure 1E, it seems that mice commonly check for reward right after reaching the press frequency criteria. The authors should provide an analysis to show how many presses do mice continue to press after reaching the criteria frequency in each press. A reduction of this quantity over training sessions will support that mice gained some knowledge of the reward criteria.\n\nThis analysis is also important to address lingering concerns about whether press length/duration is an outcome-relevant dimension. If both length and frequency are relevant, mice should generate long sequences with occasional fast presses. This scenario should predict that fast presses can take place anywhere in the sequence. On the other hand, if press frequency is the only outcome-relevant dimension, the fast presses should occur mostly toward the end of the sequence.\n\nReviewer #2:\n\nMy main concern with the initial submission was that the authors pitted two aspects of the task against each other: frequency and duration. While both are clearly correlated with success and both change with learning, the authors called one (frequency) task relevant and the other (duration) not relevant. I think this is misleading and incorrect. This was pointed out in the previous referee report, and the authors revised manuscript does not seem to address this issue.\n\nThe authors say that the two aspects aren't correlated with each other, and that this somehow means that if one dimension is task-relevant (frequency) the other (duration) can't be. At least that is how I infer their logic, but this does not make sense. Independent and uncorrelated aspects of a behavior can of course both be task-relevant.\n\nThe mice have to press the lever 4 times in a specified time span. Initially this window is long and they get reward easily, so no need for long durations. Then the task becomes harder. If they go to the reward magazine with the same duration, they now get less reward, but if they increase their duration, the chance of getting 4 presses in the allotted time increases, so they learn to increase the duration while also decreasing the frequency. Both are relevant for the task.\n\nThe authors also introduce a \u2018control\u2019 that shows that the variance in frequency goes down in the original task because it is task-relevant. I never doubted this. Frequency is task relevant, but so is duration. The control is irrelevant for the point I was making.\n\nThere are other issues I raised that the authors did not respond to, e.g. do animals know when reward is available, etc. (their analysis on this point is not addressing the point). The authors should show that the probability of mice going to the reward port is not influenced by the reward dropping into the magazine. The data they refer to in this regard (Figure 3) actually seems to suggest that mice do learn this. Early, the rewarded trials are longer than unrewarded, later they are shorter (3B). This is consistent with the mice \u2018learning\u2019 when a reward is available either by picking up on a cue or having an internal sense.\n\nReviewer #3:\n\nThe authors resubmitted the manuscript after doing considerable additional analyses and a control experiment. I find the paper to be fairly convincing now, as the authors addressed the concerns in a serious manner. The results now point to reduction in variability along with improvement in a motor task. This constitutes a nice finding. I hope the authors can convince us further by supplying:\n\n1) Figure 2C (var of freq) computed on equal durations from all the sessions. Perhaps I missed it, but I did not see a clear demonstration that the reduction in freq is not related to the increase in duration. There is nice indirect evidence, and even a control experiment, and they are fairly convincing \u2013 but a direct demonstration would be appreciated.\n\n2) Is there any relationship/correlation across individuals between the behavioral improvement and the physiological finding? This would strengthen the study.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cCorticostriatal dynamics encode the refinement of behavioral variability during skill learning\u201d for further consideration at eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor), a Reviewing Editor, and three reviewers.\n\nIn the previous decision letters clear guidance was given for how presentation and discussion should be improved so the paper conveys a clear message supported by the data. A substantial effort was placed in the discussion among reviewers to reach a consensus about the necessary changes. There is a feeling amongst all three reviewers that this has not yet happened and that you have chosen to be selective in your response thereby missing the opportunity to improve the manuscript and meet the raised criticism. We would however like to give you a chance to revise the manuscript so that it meets the raised criticism.\n\nThree main issues still need to be considered:\n\nYou were asked to acknowledge that both features you look at (frequency and duration) are outcome-relevant. You have done this only in part. The Discussion mostly uses the old and misleading narrative. This should be remedied.\n\nYou were asked to parse the distinction between frequency and duration, and speculate as to why the neural firing patterns associated with these features evolve differently during learning. It was clearly stated that duration and frequency, though both outcome-relevant, are fundamentally different aspects of the task. This needs to be discussed. Frequency has to do with the action that is being reinforced while duration is a strategic decision. The fact that neuronal correlates associated with these fundamentally different processes evolve differently is perhaps not surprising. However, there is no discussion of these differences and what they mean in a form that allows one to generalize to other tasks and situations.\n\nFinally, you were asked to demonstrate whether mice learn to anticipate the reward. You say in the text that you looked at the \u201cprobability of a magazine check after a reinforced lever-press\u201d and found that this did not change with learning. In the figure and associated legend you say that you looked at the \u201cProbability of a reinforcement preceding a magazine check\u201d and show that this doesn't change. It is not clear whether these are the same metrics and how they are calculated and whether they allow one to infer anything about the animal's ability to anticipate reward. We advise that you simply show that the probability of checking the magazine does not depend on whether the preceding lever press was reinforced (i.e. the last one in a covert sequence) or not, and show that this is stable over the course of learning.\n",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a57b1f64-8b0c-4337-a8a4-9d6ace838da3",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C1",
+      "claim": "Mice trained to perform progressively faster sequences of lever presses to obtain reinforcement reduced variability in sequence frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals trained to perform progressively faster sequences of lever presses to obtain reinforcement reduced variability in sequence frequency, but increased variability in an orthogonal feature (sequence duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing decrease in frequency variability across training sessions (Figure 2C,E)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "41766138-5da7-416c-bcbc-f0c9aadc569e",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C2",
+      "claim": "Mice trained to perform progressively faster sequences of lever presses increased variability in sequence duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals trained to perform progressively faster sequences of lever presses to obtain reinforcement reduced variability in sequence frequency, but increased variability in an orthogonal feature (sequence duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing increase in duration variability across training sessions (Figure 2D,F)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "4e917a6e-64ac-435a-8b98-ac9934a134ee",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C3",
+      "claim": "Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training and subsequently decreased with learning, without changes in average firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiological recordings showing higher Fano factor in early sessions (Figure 4A)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "901fc1e6-5b57-41ba-9a80-fb4992abbf32",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C4",
+      "claim": "Trial-to-trial variability of the activity of motor cortex and striatal projection neurons subsequently decreased with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training and subsequently decreased with learning, without changes in average firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiological recordings showing decreased Fano factor across training (Figure 4A)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "9a269b7f-d97d-482c-b17d-7357c341909e",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C5",
+      "claim": "Average firing rate of motor cortex and striatal projection neurons did not change with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training and subsequently decreased with learning, without changes in average firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiological data showing no significant changes in firing rate across sessions (Figure 4E-H)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "31d41b2b-87b3-4875-ae44-363b585022d4",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C6",
+      "claim": "As training progressed, variability in corticostriatal activity became progressively more correlated with behavioral variability in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "As training progressed, variability in corticostriatal activity became progressively more correlated with behavioral variability, but specifically with variability in frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis showing increasing correlation between neural and frequency variability (Figure 6C)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "579bbde6-96c6-4916-8e8d-6617ac579f10",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C7",
+      "claim": "Variability in corticostriatal activity did not become correlated with variability in sequence duration.",
+      "claim_type": "IMPLICIT",
+      "source": "As training progressed, variability in corticostriatal activity became progressively more correlated with behavioral variability, but specifically with variability in frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specific correlation with frequency but not duration (Figure 6D)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "ecd042ad-c9d2-4f70-b5c7-a9372be59c54",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C8",
+      "claim": "Corticostriatal plasticity was required for the reduction in frequency variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Corticostriatal plasticity was required for the reduction in frequency variability, but not for variability in sequence duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutant mouse experiments showing impaired frequency variability reduction in SPN NR1-KO mice (Figure 7F)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "d6de4a8b-f5dc-498a-96ae-ac77ac427b1e",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C9",
+      "claim": "Corticostriatal plasticity was not required for changes in variability in sequence duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Corticostriatal plasticity was required for the reduction in frequency variability, but not for variability in sequence duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutant mouse experiments showing no difference in duration variability modulation between groups (Figure 7G)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "89e5c455-d8d5-40bc-a687-5dd83cf1a25b",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C10",
+      "claim": "During motor learning corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that during motor learning corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from combined behavioral, electrophysiological, and genetic manipulation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "39846433-d407-43ba-949d-82e9514ddc01",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C11",
+      "claim": "Acquiring novel skills requires exploration of the behavioral space, which is critical for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquiring novel skills usually requires exploration of the behavioral space, which is critical for learning (Skinner, 1981; Sutton and Barto, 1998; Grunow and Neuringer, 2002; Kao et al., 2005; Olveczky et al., 2005; Tumer and Brainard, 2007; Miller et al., 2010; Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "4e164f9a-9f0b-437b-b973-0cb35b011c35",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C12",
+      "claim": "Acquiring novel skills requires the selection of the appropriate behavioral features that lead to the desired outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It also requires the selection of the appropriate behavioral features that lead to the desired outcomes (Skinner, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "1036e53e-af72-433e-84ca-b2a40816c515",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C13",
+      "claim": "The motor system can learn complex movements by optimizing motor variability in task-relevant dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been postulated that the motor system can learn complex movements by optimizing motor variability in task-relevant dimensions, correcting only deviations that interfere with the final output of the action (Todorov and Jordan, 2002; Scott, 2004; Valero-Cuevas et al., 2009; Diedrichsen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior theoretical work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "46ccb5ab-df4a-4b0d-b386-843709d2cefc",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C14",
+      "claim": "Humans can perform smooth movements even in the presence of noise by optimizing the precision of an action endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "By optimizing the precision of an action endpoint, for example, humans can perform smooth movements even in the presence of noise (Harris and Wolpert, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior empirical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f731a6db-7d0c-48a7-97fe-a186f6317511",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C15",
+      "claim": "Selecting task-relevant features and decreasing task-relevant variability might be a critical component of motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Selecting task-relevant features and decreasing task-relevant variability might therefore be a critical component of motor learning (Franklin and Wolpert, 2008; Cohen and Sternad, 2009; Valero-Cuevas et al., 2009; Costa, 2011; Shmuelof et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7e084452-fde3-46d5-a378-5185ab534585",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C16",
+      "claim": "Cortical and basal ganglia circuits are important for the selection of task-relevant features.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that cortical and basal ganglia circuits are important for the selection of task-relevant features (Costa et al., 2004; Barnes et al., 2005; Kao et al., 2005; Olveczky et al., 2005; Jin and Costa, 2010; Woolley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "b9d6153d-3d22-4c04-a650-6d699bec678d",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C17",
+      "claim": "The initial stages of learning have increased behavioral variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, it has been previously shown that the initial stages of learning have increased behavioral (Tumer and Brainard, 2007; Jin and Costa, 2010; Miller et al., 2010) and neuronal (Costa et al., 2004; Barnes et al., 2005) variability, but as specific movements are consolidated, neural variability is reduced in these circuits (Costa et al., 2004; Kao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior empirical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "e4d5f822-666a-4952-8658-1aa27470aca2",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C18",
+      "claim": "The initial stages of learning have increased neuronal variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, it has been previously shown that the initial stages of learning have increased behavioral (Tumer and Brainard, 2007; Jin and Costa, 2010; Miller et al., 2010) and neuronal (Costa et al., 2004; Barnes et al., 2005) variability, but as specific movements are consolidated, neural variability is reduced in these circuits (Costa et al., 2004; Kao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior empirical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "65442de2-ac36-4241-a2cc-9b8a5a508c20",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C19",
+      "claim": "As specific movements are consolidated, neural variability is reduced in cortical and basal ganglia circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, it has been previously shown that the initial stages of learning have increased behavioral (Tumer and Brainard, 2007; Jin and Costa, 2010; Miller et al., 2010) and neuronal (Costa et al., 2004; Barnes et al., 2005) variability, but as specific movements are consolidated, neural variability is reduced in these circuits (Costa et al., 2004; Kao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior empirical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "36f13778-37fb-4f53-86ee-fe0e24e9c8c4",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C20",
+      "claim": "After initial motor and neural exploration, specific patterns are selected and consolidated.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that after initial motor and neural exploration, specific patterns are selected and consolidated (Costa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior theoretical work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "97825f6a-586a-4c54-b44e-f502ac842348",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C21",
+      "claim": "The total number of lever presses per minute increased throughout training.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of lever presses per minute increased throughout training (F8,152 = 41.34, p < 0.0001; Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing increase in press rate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8eed0e6e-4569-4346-b6b4-3e0200eb2722",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C22",
+      "claim": "Animals rapidly started to organize their behavior in self-paced bouts or sequences of lever presses.",
+      "claim_type": "EXPLICIT",
+      "source": "animals rapidly started to organize their behavior in self-paced bouts or sequences of lever presses, until there were almost no single presses (Figure 1C,E and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data and video showing sequence organization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f04cab1d-2059-4808-a85f-61b297b3fe75",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C23",
+      "claim": "The percentage of lever presses performed within a sequence increased significantly from 56.98 \u00b1 3.98 in the first session to 98.26 \u00b1 0.53 in the last training session.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of lever presses performed within a sequence increased significantly from 56.98 \u00b1 3.98 in the first session of covert target introduction, to 98.26 \u00b1 0.53 in the last training session (F8,152 = 60.22, p < 0.0001; Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing increase in sequence organization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "ed8b8963-188a-4636-a01f-ca8a4e7ce756",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C24",
+      "claim": "The number of sequences performed per minute increased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "the number of sequences performed per minute increased with training (F8,152 = 32.23, p < 0.0001; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing increase in sequence rate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "167a1571-bb2d-440e-a3ba-6a4294388887",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C25",
+      "claim": "The distance of consecutive IPIs to the final target frequency decreased consistently with training.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, with training, the distance of consecutive IPIs (summed in bins of 3 IPIs to mimic the online criteria) to the final target frequency (3 IPIs <660 ms, \u223c4.5 Hz) decreased consistently (F8,152 = 25.76, p < 0.0001; Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing decreased distance to target",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "2a80c345-fe61-4e97-bdc9-9fc53fcaa811",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C26",
+      "claim": "The spread around the target frequency decreased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did the distance to the end target decrease, but the spread around the target also decreased (F8,152 = 9.616, p < 0.001; calculated as the standard deviation around the target frequency, Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing decreased spread",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "528c567c-cd56-49a0-843e-708ed41ce01a",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C27",
+      "claim": "Animals gradually increased the percentage of press bouts that would achieve the minimum target frequency of the last session.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, animals gradually increased the percentage of press bouts that would achieve the minimum target frequency of the last session (end-target: 3 IPIs <660 ms, \u223c4.5 Hz; F8,152 = 14.15, p < 0.0001; Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing increased target achievement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "2e4c9fbd-8eb6-4e0e-bf2c-63bb7d408894",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C28",
+      "claim": "Animals learned to shape their behavior to get closer to the covert target.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that animals learned to shape their behavior to get closer to the covert target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple behavioral measures showing approach to target",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "af1638f7-8327-4605-baca-235309901f45",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C29",
+      "claim": "The mean frequency of each pressing bout decreased slightly with training.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean frequency of each pressing bout (sequence frequency) decreased slightly (F8,152 = 2.372, p = 0.0195, Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing slight decrease in mean frequency",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3bb0aa36-ffce-4592-8298-feb52bd20e74",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C30",
+      "claim": "The duration of each pressing bout increased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "while the duration of each pressing bout (sequence duration) increased with training (F8,152 = 22.69, p < 0.0001, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing increase in sequence duration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "e7a70778-dd16-4e03-a2fd-a013cc112623",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C31",
+      "claim": "The variance of sequence frequency decreased significantly throughout training.",
+      "claim_type": "EXPLICIT",
+      "source": "While the variability of sequence frequency decreased significantly throughout training (variance: F8,152 = 4.450, p < 0.0001, Figure 2C; Fano factor: F8,152 = 5.343, p < 0.0001, Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figures showing decreased frequency variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "1a6c7f4f-6bf9-4bef-842f-f101e493c859",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C32",
+      "claim": "The variability of sequence duration significantly increased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "the variability of sequence duration significantly increased (variance: F8,152 = 11.15, p < 0.0001, Figure 2D; Fano factor: F8,152 = 16.86, p < 0.0001, Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figures showing increased duration variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "4972b40b-628e-42a6-9086-603a7d73dc0c",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C33",
+      "claim": "The sequence-to-sequence variability of sequence frequency and sequence duration was independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence-to-sequence variability of these two behavioral features was independent as there was no correlation between the variability in sequence frequency and the variability in sequence duration (variance: R2 = 0.0135; Fano factor: R2 = 0.0119, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing lack of relationship between frequency and duration variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7511522c-3dfc-4f10-be73-0f56264c12a3",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C34",
+      "claim": "There is a strong correlation between variability in sequence duration and variability in sequence length.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast with a strong correlation observed between variability in sequence duration and the variability in sequence length\u2014number of presses (variance: R2 = 0.8710; Fano factor: R2 = 0.8839, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing strong relationship between duration and length variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "31fd49b1-069e-4c88-a93a-1a96daa17abc",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C35",
+      "claim": "In the control task, the variability of sequence frequency did not decrease with training.",
+      "claim_type": "EXPLICIT",
+      "source": "in this control task the variability of sequence frequency did not decrease with training (F8,56 = 1.049, p = 0.4113)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of control task data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7202629b-a045-4edc-a52c-88da95770838",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C36",
+      "claim": "In the control task, variability in sequence duration decreased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "while variability in sequence duration did (F8,56 = 4.589, p = 0.0002) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of control task data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "e1048663-58b2-4c03-975d-bc38c0bc73b9",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C37",
+      "claim": "The decrease in variability in sequence frequency was task-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the decrease in variability in sequence frequency was task-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison between frequency task and control task",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5f1569af-9b8e-49a1-93e3-02edd8c12dd4",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C38",
+      "claim": "Sequences leading to reinforcement had significantly lower variability in frequency compared to non-reinforced sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that sequences leading to reinforcement had indeed significantly lower variability in frequency compared to non-reinforced sequences (main effect of reinforcement, F1,38 = 7.608, p = 0.0089, Figure 3C and F1,38 = 28.34, p < 0.0001, Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figures comparing reinforced vs non-reinforced sequences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3207d8ed-8d6e-4fe3-8ade-d1dc07597a01",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C39",
+      "claim": "There were no significant differences in the variability of sequence duration between reinforced and non-reinforced sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "but there were no significant differences in the variability of sequence duration between reinforced and non-reinforced sequences (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by figures showing no difference in duration variability between reinforced and non-reinforced sequences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "73adc48d-a8b0-48b7-a28a-31d3574296f2",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C40",
+      "claim": "Mice selectively reduced variability in the behavioral domains where variability affected the probability of reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mice selectively reduced variability in the behavioral domains where variability affected the probability of reinforcement (sequence frequency), but not in domains where variability did not change this probability (sequence duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of reinforced vs non-reinforced sequences",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8634b46a-62dd-4bdd-a47c-5fc57d7d97cb",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C41",
+      "claim": "An average of 18 M1 units and 10 DS units were simultaneously recorded per animal, per session.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the dynamics of cortical and striatal circuits during the acquisition and performance of the fast lever pressing task, we continuously recorded extracellular neuronal activity simultaneously in layer 5 of the primary motor cortex (M1), and in the dorsal striatum (DS) of mice during the full duration of training (4 days, N = 7 animals, average of 18 M1 units and 10 DS units simultaneously recorded per animal, per session).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods and data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "ea33c90b-bf0e-43e5-a644-d77ace9d5cb8",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C42",
+      "claim": "49 M1 units and 21 DS units were tracked as stable cells throughout the whole period of training.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-stop continuous electrophysiological recordings across 4 days encompassing all the sessions of training allowed us to track the activity of a subset of 'stable' cells throughout the whole period of training (49 M1 units, 21 DS Units).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stable cell tracking methodology and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "b7a83edb-2fb9-42ce-914b-4d763e3a7be7",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C43",
+      "claim": "Sequence-to-sequence variability in the activity of individual neurons in DS decreased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high sequence-to-sequence variability in the activity of individual neurons (measured by the Fano factor of the firing rate) in the first couple of sessions, that then decreased with training (DS: F8,48 = 2.767, p < 0.05; M1: F8,48 = 2.771, p < 0.05; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing decreased neural variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5b55d09e-736e-4470-a79a-897a00141424",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C44",
+      "claim": "Sequence-to-sequence variability in the activity of individual neurons in M1 decreased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high sequence-to-sequence variability in the activity of individual neurons (measured by the Fano factor of the firing rate) in the first couple of sessions, that then decreased with training (DS: F8,48 = 2.767, p < 0.05; M1: F8,48 = 2.771, p < 0.05; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing decreased neural variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "57b4efb2-2b23-4d96-9753-b90ef34a0488",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C45",
+      "claim": "Dynamics in neuronal variability were observed during the performance of lever-press sequences, but not during baseline periods.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics in neuronal variability were observed during the performance of lever-press sequences, but not during baseline periods (measured from 5 to 2 s before the initiation of each sequence), when the animals were not actively engaged in lever pressing (DS: F8,48 = 1.117, p = 0.3324; M1: F8,48 = 1.459, p = 0.1973; Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure comparing sequence vs baseline variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "b7187107-91a7-41d5-a7aa-45a11368b110",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C46",
+      "claim": "The decrease in neuronal variability was observed when using exclusively stable cells for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in neuronal variability was also observed when using exclusively 'stable' cells for this analysis (DS: F8,160 = 5.223, p < 0.0001; M1 F8,384 = 12.72, p < 0.0001; Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of stable cell data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "331e8ba0-2a5b-44e4-82dc-1aa0554cccc6",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C47",
+      "claim": "The differences in variability throughout learning could be observed in individual cells and did not represent a shift in the population of neurons recorded across days.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that the differences in variability throughout learning could be observed in individual cells, and did not represent a shift in the population of neurons recorded across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from stable cell analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "ecedd938-b2e9-4a48-b2f8-890a0210e226",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C48",
+      "claim": "The average firing rate of individual cells did not change significantly across sessions or across days.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the average firing rate of individual cells did not change significantly, neither across sessions nor across days (p > 0.05 for all conditions, Figure 4E\u2013H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figures showing stable firing rates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "75da28a5-361d-4a31-83e3-c9a4e52d1b0c",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C49",
+      "claim": "The reduction in variability was not attributable to overall changes in firing rate, but instead to the selection/refinement of particular firing patterns related to sequence execution.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the reduction in variability was not attributable to overall changes in firing rate, but instead to the selection/refinement of a particular firing patterns related to sequence execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from dissociation between variability and firing rate changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "adf9c8b5-469d-45a3-9590-58ab441a827d",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C50",
+      "claim": "Individual stable cells showed higher variability relative to baseline during the initial sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of these dynamics for individual stable cells clearly showed higher variability relative to baseline during the initial sessions (first session DS: W = 134, p = 0.0107; first session M1: W = 1119, p < 0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of individual cell data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "a7a1033e-7903-4cd7-8814-713bc20b16b8",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C51",
+      "claim": "Individual stable cells reached the same levels of variability as baseline at the end of training.",
+      "claim_type": "EXPLICIT",
+      "source": "that decreased throughout training until it reached the same levels of baseline at the end of training (last session DS: W = 73, p = 0.2157; last session M1: W = 253, p = 0.2121; Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of individual cell data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "d7f72a7c-3762-44fc-acc7-fc5cb6327f0a",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C52",
+      "claim": "Average firing rates did not show any significant modulation in relation to baseline throughout the whole period of training.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, average firing rates did not show any significant modulation in relation to baseline throughout the whole period of training (DS: F8,160 = 1.031, p = 0.4153; M1: F8,384 = 1.757, p = 0.084; Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing stable firing rate modulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "93680167-b8e5-46b7-8c13-2159a691e4b8",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C53",
+      "claim": "Neuronal variability was still elevated in early sessions and decreased as training progressed when analyzing sequences matched for frequency and duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that neuronal variability was still elevated in early sessions and decreased as training progressed (DS: F8,48 = 2.732, p = 0.0144; M1: F8,48 = 2.491, p = 0.0239; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of matched sequence data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "a6aa5ba1-b9aa-4790-8c0f-02ce0d3c6576",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C54",
+      "claim": "The decrease in neural variability was not due to gross changes in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in sequence-to-sequence variability of neural activity did not seem to result from the behavior becoming more stereotyped with training, as variability in behavior decreased for frequency but increased for duration (Figure 2). To further control that the decrease in neural variability was due to gross changes in behavior we restricted our analyses to sequences matched for frequency (t48 = 1.800, p = 0.0781) and duration (t48 = 1.733, p = 0.0895) between early and late sessions (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by matched sequence analysis controlling for behavioral changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f758462e-748f-492c-80eb-65ccae54124f",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C55",
+      "claim": "The decrease in corticostriatal variability is not related to a general decrease in behavioral variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The results above suggest that the decrease in corticostriatal variability is not related to a general decrease in behavioral variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from dissociation between neural and behavioral variability patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "63ba042b-187c-4829-9ced-8fb186656996",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C56",
+      "claim": "There was a significant increase in correlation between neuronal and behavior variability specific for sequence frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of the relationship between the variability of the recorded units and the variability of each independent behavior feature revealed a significant increase in correlation between neuronal and behavior variability, specific for sequence frequency (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and figure showing increased correlation with frequency",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "ba00ac96-4055-4d21-b487-414681dfffae",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C57",
+      "claim": "There was no significant increase in correlation between neuronal and behavior variability for sequence duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of the relationship between the variability of the recorded units and the variability of each independent behavior feature revealed a significant increase in correlation between neuronal and behavior variability, specific for sequence frequency (Figure 6C), but not for duration (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and figure showing no correlation with duration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7041bc8c-b6f7-4d34-9bb6-8189a45e8e3c",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C58",
+      "claim": "The decrease in variability in M1 and DS is not just a reflection of a more constrained performance of the movement as training progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the decrease in variability in M1 and DS is not just a reflection of a more constrained performance of the movement as training progresses; variability of the movement decreased in a specific dimension but it increased in others were no significant correlation with neuronal variability was evident.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from differential correlations with different behavioral dimensions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "49d4420c-b8c7-4024-9de4-db881a727e65",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C59",
+      "claim": "No significant correlations were observed between the firing rate of neurons and the variability of any of the behavior features.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no significant correlations were observed between the firing rate of neurons and the variability any of the behavior features (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing no relationship between firing rate and behavioral variability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "e786987e-0c93-436d-8dea-d35d6fd1395a",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C60",
+      "claim": "The observed relationship between neuronal and behavior dynamics was not the reflex of a general increase in correlation between neuronal activity and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating again that the observed relationship between neuronal and behavior dynamics was not the reflex of a general increase in correlation between neuronal activity and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from lack of correlation between firing rate and behavioral variability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "a64c31bc-68c4-4c87-a577-bf1ace30a66f",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C61",
+      "claim": "At the onset of training the sequence-to-sequence variability of neural activity in DS and M1 in each animal was not correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that at the onset of training the sequence-to-sequence variability of neural activity in DS and M1 in each animal was not correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of early training data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7b912668-557b-40db-95e2-5516c5045a19",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C62",
+      "claim": "A strong correlation between the variability in DS and M1 rapidly emerged during training.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a strong correlation between the variability in DS and M1 rapidly emerged during training (p < 0.05 for all except the first training session, Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and figure showing emergence of M1-DS correlation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "fe28ef8d-a4c2-42d7-87c0-5a0567a64509",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C63",
+      "claim": "As behavioral variability is refined, neural variability in M1 and striatum becomes correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that as behavioral variability is refined, neural variability in M1 and striatum becomes correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from emergence of M1-DS correlation during training",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "83800ffd-f312-458d-9bc0-0c4259589fbc",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C64",
+      "claim": "Mutant animals with NMDA receptors deleted specifically at glutamatergic synapses of striatal projection neurons have impaired corticostriatal plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We decided to directly test if the observed reduction in sequence frequency variability is dependent on corticostriatal plasticity by using mutant mice with NMDA receptors deleted specifically at glutamatergic synapses of striatal projection neurons (RGS9-LCre::Grin1tm1Yql; referred to in the figures as striatal projection neuron SPN NR1-KO), which have impaired corticostriatal plasticity (Dang et al., 2006), and control littermates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work characterizing the mutant",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "36202bbf-bf5b-4431-9360-248cb672735c",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C65",
+      "claim": "The distance to target decreased in littermate controls with training.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the distance to target (Controls: p = 0.0450, t5 = 2.657, Figure 7B) and spread around the target (Controls: p = 0.0179, t5 = 3.466, Figure 7C) decreased in littermate controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of control animal data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "0542a46a-dbf5-48a4-a7ae-72af66559bde",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C66",
+      "claim": "The spread around the target decreased in littermate controls with training.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the distance to target (Controls: p = 0.0450, t5 = 2.657, Figure 7B) and spread around the target (Controls: p = 0.0179, t5 = 3.466, Figure 7C) decreased in littermate controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of control animal data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f7a1b08a-4775-4ece-8a29-d6e277283498",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C67",
+      "claim": "Neither distance to target nor spread around the target changed with training in mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither of these measures changed with training in mutants (Mutants: p = 0.3535, t6 = 1.005; and p = 0.2817, t6 = 1.183, respectively; Figure 7B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure of mutant animal data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5c0b5f93-3097-469e-aa76-99e8bd3375e8",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C68",
+      "claim": "RGS9-LCre::Grin1tm1Yql mutants did not decrease sequence frequency variability during training, in contrast to littermate controls which did.",
+      "claim_type": "EXPLICIT",
+      "source": "However, planned comparisons did show that RGS9-LCre::Grin1tm1Yql mutants did not decrease sequence frequency variability during training, in contrast to littermate controls which did (significant main effect of training time: F1,10 = 10.13, p = 0.009; Posthocs: Mutant group: t10 = 1.38, p = 0.1964; Control group: t10 = 3.00, p = 0.0134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis comparing mutant and control groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3651e987-3e02-47eb-b771-ddaba3d59822",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C69",
+      "claim": "No differences in the modulation of sequence duration variability were observed between mutant and control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no differences in the modulation of sequence duration variability were observed between the two groups (no significant main effect for genotype: Duration FF: F1,10 = 0.02, p = 0.887) (Figure 7D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure comparing mutant and control groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "0843b9aa-0164-4e50-88d5-f8241c43f6b9",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C70",
+      "claim": "Corticostriatal plasticity is required for the reduction in variability of specific behavioral features that change the probability of reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that corticostriatal plasticity is required for the reduction in variability of specific behavioral features that change the probability of reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from mutant mouse experiments showing selective impairment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "fcda2748-ad92-4ec3-9ab9-f748e6bc833d",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C71",
+      "claim": "Both sequence frequency and duration would be classically considered task-relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are interesting because both features would be classically considered task-relevant\u2014a covert sequence of four presses, which is the minimum to produce a reinforcer in this task, has to have a minimal duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about task structure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3f981b0b-77a3-41c1-8fad-e2fd28565bd0",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C72",
+      "claim": "Only changes in frequency variability were differentially reinforced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although both features could be considered relevant for the task, only changes in frequency variability were differentially reinforced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from analysis of reinforcement contingencies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "f96ba490-0938-451b-9377-e21f1080ea30",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C73",
+      "claim": "Animals reduced frequency variability because that was what was reinforced throughout training.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results indicate that animals reduced frequency variability because that was what was reinforced throughout training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from reinforcement analysis and control task comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "47f17172-06c0-48b9-a409-51669464a9e7",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C74",
+      "claim": "The results are in line with data demonstrating differential modulation of the different components of task space during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This in line with data demonstrating differential modulation of the different components of task space during learning (Todorov and Jordan, 2002; M\u00fcller and Sternad, 2004; Cohen and Sternad, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "561a2e37-17f9-45fd-abee-447efc571216",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C75",
+      "claim": "In previous studies where animals performed operant tasks where the constrains were more relaxed, animals decreased variability in all behavioral domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies from our group where animals performed operant tasks where the constrains were more relaxed (Jin and Costa, 2010), animals decreased variability in all behavioral domains (i.e., they became more stereotypical overall).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work from the same group",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3fe4af01-8336-444e-a251-77fc37e6da9b",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C76",
+      "claim": "When faced with a more challenging task, animals decreased variability in the domain that was critical for getting a reinforcer, but increased variability in orthogonal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when faced with a more challenging task as in the present study, they decreased variability in the domain that was critical for getting a reinforcer, but increased variability in orthogonal domains (i.e., they were more stereotypical in just a particular domain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from current study results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "c7ba71ae-7e5b-4e7e-89fd-9dfae6cc17ec",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C77",
+      "claim": "The increase in variability in the orthogonal behavioral domains might happen because in difficult tasks animals try to minimize the effort to obtain reinforcers.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be that the increase in variability in the orthogonal behavioral domains happens because in difficult tasks animals try to minimize the effort to obtain reinforcers, and hence do not attempt to reduce variability in more than one independent domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed results",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "2a67b5b2-5950-4b5b-be96-b968caafadaf",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C78",
+      "claim": "Mice might have increased the duration of the sequence as a strategy to try to increase the probability of getting a successful covert pattern in that sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it could also be that mice increased the duration of the sequence (and the correlated number of presses) as a strategy to try to increase the probability of getting a successful covert pattern in that sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Alternative speculative explanation for observed results",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5b5d6670-0e34-4c5b-b441-2e3a86a7e746",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C79",
+      "claim": "The second possibility (that mice increased duration as a strategy) is less likely, given that the two behavioral features were not correlated, and that sequences of different durations were equally likely to get reinforced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this second possibility is less likely, given that the two behavioral features were not correlated, and that sequences of different durations were equally likely to get reinforced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on data showing independence of features",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "d567e0d4-3fd8-426a-be00-0c8a62a18f78",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C80",
+      "claim": "In more challenging motor tasks it is difficult to reduce variability in all domains, and animals seem to differentially refine the motor patterns that led to reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that in more challenging motor tasks it is difficult to reduce variability in all domains, and animals seem to differentially refine the motor patterns that led to reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of current and prior studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "fcc696c4-2b9f-448f-991f-183a6a893e8e",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C81",
+      "claim": "The number of sequences that comply with the minimum frequency required for the last session increased with training.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the number of sequences that comply with the minimum frequency required for the last session (end-target) increased with training and the distance to the end-target decreased with training, indicating that mice implicitly learned to shape their behavior to match the task requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing approach to target",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "9bb068f8-c3de-4a49-a17f-a26101f93759",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C82",
+      "claim": "Mice implicitly learned to shape their behavior to match the task requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the number of sequences that comply with the minimum frequency required for the last session (end-target) increased with training and the distance to the end-target decreased with training, indicating that mice implicitly learned to shape their behavior to match the task requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from behavioral shaping data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5fcde15e-3ebe-4657-af74-4895580018ae",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C83",
+      "claim": "Variability in the spike patterns of individual neurons and populations of neurons may be the bases for a process of behavioral exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in the spike patterns of individual neurons and populations of neurons may be the bases for a process of behavioral exploration (or trial) (Olveczky et al., 2005; Kao et al., 2005; Mandelblat-Cerf et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "3c75c70e-f0b6-4c17-8732-70c57d1a9bf1",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C84",
+      "claim": "A decrease in neural variability may reflect a process of selection of specific patterns of neural activity that lead to specific behavioral outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "while a decrease in neural variability may reflect a process of selection of specific patterns of neural activity that lead to specific behavioral outputs (Costa et al., 2004; Kao et al., 2005; Fee and Goldberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5d6bfb8f-9246-4069-85df-296d8db9e12f",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C85",
+      "claim": "A decrease in corticostriatal variability as a motor task is learned could correspond to the process of selection and consolidation of specific motor patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that a decrease in corticostriatal variability as a motor task is learned (Costa et al., 2004; Barnes et al., 2005) could correspond to the process of selection and consolidation of specific motor patterns (Costa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "a660d3ec-b5ed-46bd-919b-eefc820bded3",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C86",
+      "claim": "The decrease in neural variability in corticostriatal circuits correlates specifically with the decrease in variability of a particular behavior domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that this decrease in neural variability in corticostriatal circuits correlates specifically with the decrease in variability of a particular behavior domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from correlation analysis in current study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "5b94a245-2172-4916-a92e-643afdbd1927",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C87",
+      "claim": "The neural patterns in motor cortex and sensorimotor striatum that give rise to the behavioral patterns that are reinforced are progressively selected.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the neural patterns in motor cortex and sensorimotor striatum that give rise to the behavioral patterns that are reinforced are progressively selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from correlation between neural and behavioral variability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "9cfaf60b-5914-4f13-8379-712cf672185c",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C88",
+      "claim": "Changes in motor variability that are not specifically reinforced but are part of a strategy or driven by effort reduction may be encoded somewhere else.",
+      "claim_type": "EXPLICIT",
+      "source": "Provocatively, it also suggests that changes in motor variability that are not specifically reinforced but are part of a strategy or driven by effort reduction may be encoded somewhere else.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of lack of correlation with duration variability",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "89ea51c5-8a05-4ec5-9352-053ae8e1efc0",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C89",
+      "claim": "Corticostriatal plasticity is important for the refinement of specific behavior features.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also show that corticostriatal plasticity is important for the refinement of specific behavior features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from mutant mouse experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "cb6c9c9a-07ed-4bf9-9c3f-3585dc18e3e0",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C90",
+      "claim": "Corticostriatal plasticity plays an important role in selecting the appropriate implicit neural and behavioral patterns that are reinforced.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore suggests an important role for corticostriatal plasticity in selecting the appropriate implicit neural and behavioral patterns that are reinforced (Costa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from mutant mouse experiments with citation to prior theoretical work",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8a4b7e2f-e657-4905-bcfc-49fe123dfcbb",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C91",
+      "claim": "Corticostriatal plasticity did not seem to be necessary for the increase in behavioral variability in other domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However corticostriatal plasticity did not seem to be necessary for the increase in behavioral variability in other domains (Goldberg and Fee, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from mutant mouse experiments showing no effect on duration variability",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "1f0b1017-db52-4042-803b-d05588b38baa",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C92",
+      "claim": "Several studies have suggested that the basal ganglia, dopaminergic system, specific cortical circuits, or cerebellar circuits could subserve the function of generating variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Although in this study we don't investigate the mechanisms underlying the generation of variability, several studies have suggested that the basal ganglia, dopaminergic system, specific cortical circuits, or cerebellar circuits could subserve this function (Olveczky et al., 2005; Costa et al., 2006; Leblois et al., 2010; Costa, 2011; Fee and Goldberg, 2011; Shmuelof and Krakauer, 2011; Woolley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "4625ee11-5be5-4074-9a03-a734c176ef48",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C93",
+      "claim": "Corticostriatal plasticity is important to select the neural patterns that lead to the movement patterns that are reinforced.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings suggest that corticostriatal plasticity is important to select the neural patterns that lead to the movement patterns that are reinforced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion drawn from all experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8a46be8d-313e-49d9-9235-ff03f8397ba6",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C94",
+      "claim": "Corticostriatal plasticity is not only important for choosing which action to do, but also to shape how to do it to obtain a desired outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "They highlight that corticostriatal plasticity is not only important for choosing which action to do, but also to shape how to do it to obtain a desired outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion drawn from all experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "de5b7ef2-820f-44b8-a9ff-3c9c78e879d7",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C95",
+      "claim": "All experiments were carried out using 20 male, 3 to 5 month old C57BL6/J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were carried out using 20 male, 3 to 5 month old C57BL6/J mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "d9e2a78e-2a85-40f3-8ce1-964951a2f5a2",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C96",
+      "claim": "13 animals were used exclusively for behavioral training while 7 underwent microelectrode array implantation for neuronal data recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "From these, 13 animals were used exclusively for behavioral training while the remaining seven underwent microelectrode array implantation for neuronal data recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "2afa127c-3567-46b1-82e0-bfbe7590a932",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C97",
+      "claim": "Seven C57Bl6/J mice were implanted bilaterally with two micro-electrode arrays targeting M1 layer 5 and DS.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven C57Bl6/J mice were implanted bilaterally with two micro-electrode arrays (2 \u00d7 8), 35\u201350 \u00b5m tungsten electrodes with micro-polished tips. One array targeted the primary motor cortex (M1, layer 5) while the second was targeting the (DS, sensorimotor area that receives projections from the same area in M1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of surgical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "4b410b86-3b55-48e8-8d51-354324f761f2",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C98",
+      "claim": "The probability of performing a magazine check immediately after a successful covert target was not significantly different from 0.5 both on early and late sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, reinforcement delivery did not provide an external cue that could be used by the animals to anticipate a reward, as the probability of performing a magazine check immediately after a successful covert target (instead of performing another press) was not significantly different from 0.5 both on early (t19 = 0.9232, p = 0.3675) and late sessions (t19 = 1.763, p = 0.0940), and did not change throughout learning (F8,152 = 1.753, p = 0.0907, Figure 1E, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing magazine check probability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "9bce9bce-5958-4aae-a7de-3bdde58a6192",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C99",
+      "claim": "The probability of a magazine check having occurred after a reinforced lever-press vs a non-reinforced lever-press was rather low (\u223c0.25) and did not change from early to late sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a large number of sequences did not contain covert patterns (were not reinforced) we have also calculated the probability of a magazine check having occurred after a reinforced lever-press vs a non-reinforced lever-press, and observed that this was rather low (\u223c0.25) and did not change from early to late sessions (Post hoc comparison: t144 = 1.184, p = 0.283, Figure 1E, bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and figure showing magazine check probability after reinforcement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "605aaaa2-aefa-4f3b-b5ba-d7c7657de3ed",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "claim_id": "C100",
+      "claim": "Reinforcement delivery did not provide an external cue that could be used by the animals to anticipate a reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, reinforcement delivery did not provide an external cue that could be used by the animals to anticipate a reward, as the probability of performing a magazine check immediately after a successful covert target (instead of performing another press) was not significantly different from 0.5 both on early (t19 = 0.9232, p = 0.3675) and late sessions (t19 = 1.763, p = 0.0940), and did not change throughout learning (F8,152 = 1.753, p = 0.0907, Figure 1E, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from magazine check probability analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During motor learning, mice selectively reduced variability in sequence frequency (the task-relevant dimension that determined reinforcement probability) while increasing variability in sequence duration (an orthogonal, non-reinforced dimension). This differential modulation was task-specific, as demonstrated by a control task where frequency was not reinforced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C31-C32 provide converging statistical evidence (repeated measures ANOVA with p<0.0001) showing opposite trajectories for frequency vs. duration variability. Claims C33-C34 demonstrate independence between these features. The control task (C35-C37) provides critical evidence that the frequency variability reduction was specific to the reinforcement contingency, not a general learning effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "0d439dac-f45a-4366-b9d4-080b8a594275",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reinforced sequences had significantly lower variability in frequency compared to non-reinforced sequences, but no difference in duration variability. This demonstrates that mice selectively reduced variability only in the behavioral domain where variability affected reinforcement probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 provide direct statistical comparisons (F1,38 = 7.608, p = 0.0089 for frequency; no effect for duration) between reinforced and non-reinforced sequences. Claims C40, C72-C73 appropriately interpret these findings as evidence for selective refinement based on reinforcement contingencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "7c927e41-fb2b-4e0d-8b53-a556acc89689",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural variability (measured by Fano factor) in motor cortex (M1) and dorsal striatum (DS) was elevated early in training and decreased with learning, without changes in average firing rate. This decrease was specific to task performance periods (not baseline) and was observed in individual stable neurons tracked across training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C43-C44 establish the basic finding with appropriate statistics (DS: F8,48 = 2.767, p<0.05; M1: F8,48 = 2.771, p<0.05). Claims C45-C47 provide critical controls showing task-specificity and that effects are not due to population shifts. Claims C48-C52 demonstrate dissociation between variability and firing rate changes, strengthening the interpretation that this reflects pattern selection rather than overall activity changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "1db59f0a-7890-4285-9cc4-eee2b5afd922",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The decrease in neural variability persisted even when analyzing sequences matched for frequency and duration between early and late training, demonstrating that neural variability changes were not simply due to gross behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 provide matched-sequence analysis controlling for behavioral parameters (DS: F8,48 = 2.732, p = 0.0144; M1: F8,48 = 2.491, p = 0.0239). This is a critical control that strengthens the interpretation that neural changes reflect learning-related refinement rather than behavioral stereotypy. Claim C55 appropriately concludes that neural and behavioral variability are dissociable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Variability in corticostriatal activity became progressively more correlated with behavioral variability in sequence frequency (the reinforced dimension) but not with duration variability. This correlation was specific to neural variability, not firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C56-C57 establish the selective correlation with frequency using moving-window analysis (Figure 6C vs 6D). Claims C58-C60 provide important controls showing this is not a general correlation effect. The specificity of the correlation to the reinforced behavioral dimension is a key finding linking neural and behavioral refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "01f01e11-4696-4d34-aa97-fe7f594df4b6",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neural variability in M1 and DS was initially uncorrelated but became strongly correlated during training, suggesting that corticostriatal circuits become coordinated as behavioral variability is refined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 provide correlation analysis showing emergence of M1-DS coupling (p<0.05 for all sessions except first, Figure 6B). Claim C63 appropriately interprets this as evidence for circuit-level coordination during learning. This finding suggests network-level changes accompany behavioral refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "0a8f908b-467d-4eb4-beea-a29447f788a8",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Corticostriatal plasticity was required for the reduction in frequency variability but not for changes in duration variability. Mutant mice lacking NMDA receptors in striatal projection neurons failed to reduce frequency variability during training while controls did, but both groups showed similar modulation of duration variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 establish the genetic model and basic behavioral phenotypes. Claim C68 provides the critical statistical evidence (main effect F1,10 = 10.13, p = 0.009; controls decreased frequency variability t10 = 3.00, p = 0.0134; mutants did not t10 = 1.38, p = 0.1964). Claim C69 shows no genotype effect on duration variability (F1,10 = 0.02, p = 0.887). This selective impairment provides causal evidence linking corticostriatal plasticity to refinement of reinforced behavioral features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mice learned to organize their behavior into sequences of lever presses and progressively approached the covert frequency target across training, as evidenced by increased sequence organization, decreased distance to target, decreased spread around target, and increased percentage of sequences meeting the end-target criterion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 provide multiple converging behavioral measures with appropriate statistics (all p<0.0001) showing progressive task acquisition. Claims C28, C81-C82 appropriately conclude that mice implicitly learned to shape behavior toward task requirements. These claims establish the basic behavioral learning that forms the foundation for the neural analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "0eb43271-7a51-4e88-b70c-c7c06b3f5f4b",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mean sequence frequency decreased slightly while sequence duration increased with training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 report basic behavioral measures with statistics (frequency: F8,152 = 2.372, p = 0.0195; duration: F8,152 = 22.69, p<0.0001). These changes in mean values provide context for understanding the variability changes, though the slight decrease in frequency argues against a ceiling effect explanation for reduced frequency variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "621e6995-3544-4cc9-821e-d8de43421a8f",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sequence duration variability was strongly correlated with sequence length variability (R\u00b2 = 0.8710 for variance; R\u00b2 = 0.8839 for Fano factor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 provides correlation analysis showing strong relationship between duration and length variability. This helps explain why duration variability increased (as animals performed longer sequences) and demonstrates that duration and length are not independent features, unlike duration and frequency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "bc835851-78ed-4567-8c5f-bf40b0701d6a",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reinforcement delivery did not provide an external cue that animals could use to anticipate reward, as magazine check probability after successful targets was not different from chance and did not change with learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 provide statistical evidence that magazine check probability was ~0.5 after successful targets and ~0.25 after reinforced vs non-reinforced presses, with no change across training. Claim C100 appropriately concludes this demonstrates the covert nature of the reinforcement contingency. This is an important control showing animals were not using external cues to guide behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "e90e92b7-b514-4a66-932c-40f0fde94ac7",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used 20 male C57BL6/J mice (13 for behavior only, 7 with bilateral electrode arrays in M1 and DS), recording an average of 18 M1 and 10 DS units per animal per session, with 49 M1 and 21 DS units tracked as stable across training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C95-C97 provide methodological details about subjects, recording approach, and data yield. These are straightforward descriptive claims about experimental design that are well-documented in the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "93328aee-e1b5-423a-8b46-4d0dd74930eb",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "During motor learning, corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes. Neural patterns that give rise to reinforced behavioral patterns are progressively selected, and corticostriatal plasticity shapes not only which action to perform but how to perform it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions synthesizing the behavioral, neural, and genetic findings. Claims C10, C86-C87, C93-C94 are well-supported by the convergence of evidence showing: (1) selective behavioral refinement in reinforced dimensions, (2) neural variability decreases correlating specifically with reinforced behavioral variability, and (3) genetic disruption of corticostriatal plasticity selectively impairing refinement of reinforced features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "376e2462-3569-47f0-9a93-4f6a34abdf8a",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In challenging motor tasks, animals differentially refine motor patterns, decreasing variability in domains critical for reinforcement while increasing variability in orthogonal domains. The increase in duration variability may reflect effort minimization rather than a strategic attempt to increase reinforcement probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 establish that both features are task-relevant but only frequency was differentially reinforced. Claims C76-C80 discuss possible mechanisms for increased duration variability, with C79 providing evidence (lack of correlation, equal reinforcement probability) favoring the effort minimization explanation over the strategic explanation. This interpretation is reasonable given the data, though somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "050f0eeb-3a82-49c8-9371-294d2506522b",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings are consistent with prior literature on motor learning, behavioral exploration, optimal feedback control, and the role of corticostriatal circuits in selecting task-relevant features and consolidating motor patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20, C74-C75, C83-C85, C92 cite extensive prior literature to contextualize the current findings. These claims appropriately reference relevant theoretical frameworks (optimal feedback control, exploration-exploitation) and prior empirical work on motor learning and neural variability. The citations appear appropriate and accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    },
+    {
+      "id": "840fb542-55b4-42e5-977f-59c271a9d7be",
+      "content_id": "8ca7f20f-0789-464a-b83d-cee71a168094",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Corticostriatal plasticity is important for selecting neural patterns leading to reinforced movements, but changes in motor variability that are not specifically reinforced may be encoded elsewhere. Corticostriatal plasticity was not necessary for increased variability in non-reinforced domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 are well-supported by the mutant mouse data showing selective impairment. Claim C88 is more speculative but represents a reasonable interpretation of the finding that neural variability correlated only with frequency (reinforced) and not duration (non-reinforced) variability. This suggests different neural substrates for different aspects of behavioral variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:46.132971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a57b1f64-8b0c-4337-a8a4-9d6ace838da3",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "41766138-5da7-416c-bcbc-f0c9aadc569e",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "e7a70778-dd16-4e03-a2fd-a013cc112623",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "1a6c7f4f-6bf9-4bef-842f-f101e493c859",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "4972b40b-628e-42a6-9086-603a7d73dc0c",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "31fd49b1-069e-4c88-a93a-1a96daa17abc",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "7202629b-a045-4edc-a52c-88da95770838",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "e1048663-58b2-4c03-975d-bc38c0bc73b9",
+      "result_id": "d1aa7734-0ddc-45aa-bee4-e45703af58ae"
+    },
+    {
+      "claim_id": "5f1569af-9b8e-49a1-93e3-02edd8c12dd4",
+      "result_id": "0d439dac-f45a-4366-b9d4-080b8a594275"
+    },
+    {
+      "claim_id": "3207d8ed-8d6e-4fe3-8ade-d1dc07597a01",
+      "result_id": "0d439dac-f45a-4366-b9d4-080b8a594275"
+    },
+    {
+      "claim_id": "73adc48d-a8b0-48b7-a28a-31d3574296f2",
+      "result_id": "0d439dac-f45a-4366-b9d4-080b8a594275"
+    },
+    {
+      "claim_id": "3f981b0b-77a3-41c1-8fad-e2fd28565bd0",
+      "result_id": "0d439dac-f45a-4366-b9d4-080b8a594275"
+    },
+    {
+      "claim_id": "f96ba490-0938-451b-9377-e21f1080ea30",
+      "result_id": "0d439dac-f45a-4366-b9d4-080b8a594275"
+    },
+    {
+      "claim_id": "4e917a6e-64ac-435a-8b98-ac9934a134ee",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "901fc1e6-5b57-41ba-9a80-fb4992abbf32",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "9a269b7f-d97d-482c-b17d-7357c341909e",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "b7a83edb-2fb9-42ce-914b-4d763e3a7be7",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "5b55d09e-736e-4470-a79a-897a00141424",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "57b4efb2-2b23-4d96-9753-b90ef34a0488",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "b7187107-91a7-41d5-a7aa-45a11368b110",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "331e8ba0-2a5b-44e4-82dc-1aa0554cccc6",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "ecedd938-b2e9-4a48-b2f8-890a0210e226",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "75da28a5-361d-4a31-83e3-c9a4e52d1b0c",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "adf9c8b5-469d-45a3-9590-58ab441a827d",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "a7a1033e-7903-4cd7-8814-713bc20b16b8",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "d7f72a7c-3762-44fc-acc7-fc5cb6327f0a",
+      "result_id": "7c927e41-fb2b-4e0d-8b53-a556acc89689"
+    },
+    {
+      "claim_id": "93680167-b8e5-46b7-8c13-2159a691e4b8",
+      "result_id": "1db59f0a-7890-4285-9cc4-eee2b5afd922"
+    },
+    {
+      "claim_id": "a6aa5ba1-b9aa-4790-8c0f-02ce0d3c6576",
+      "result_id": "1db59f0a-7890-4285-9cc4-eee2b5afd922"
+    },
+    {
+      "claim_id": "f758462e-748f-492c-80eb-65ccae54124f",
+      "result_id": "1db59f0a-7890-4285-9cc4-eee2b5afd922"
+    },
+    {
+      "claim_id": "31d41b2b-87b3-4875-ae44-363b585022d4",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "579bbde6-96c6-4916-8e8d-6617ac579f10",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "63ba042b-187c-4829-9ced-8fb186656996",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "ba00ac96-4055-4d21-b487-414681dfffae",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "7041bc8c-b6f7-4d34-9bb6-8189a45e8e3c",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "49d4420c-b8c7-4024-9de4-db881a727e65",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "e786987e-0c93-436d-8dea-d35d6fd1395a",
+      "result_id": "60d54ec6-9d93-4ed7-96ea-775f43ac8121"
+    },
+    {
+      "claim_id": "a64c31bc-68c4-4c87-a577-bf1ace30a66f",
+      "result_id": "01f01e11-4696-4d34-aa97-fe7f594df4b6"
+    },
+    {
+      "claim_id": "7b912668-557b-40db-95e2-5516c5045a19",
+      "result_id": "01f01e11-4696-4d34-aa97-fe7f594df4b6"
+    },
+    {
+      "claim_id": "fe28ef8d-a4c2-42d7-87c0-5a0567a64509",
+      "result_id": "01f01e11-4696-4d34-aa97-fe7f594df4b6"
+    },
+    {
+      "claim_id": "ecd042ad-c9d2-4f70-b5c7-a9372be59c54",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "d6de4a8b-f5dc-498a-96ae-ac77ac427b1e",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "83800ffd-f312-458d-9bc0-0c4259589fbc",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "36202bbf-bf5b-4431-9360-248cb672735c",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "0542a46a-dbf5-48a4-a7ae-72af66559bde",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "f7a1b08a-4775-4ece-8a29-d6e277283498",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "5c0b5f93-3097-469e-aa76-99e8bd3375e8",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "3651e987-3e02-47eb-b771-ddaba3d59822",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "0843b9aa-0164-4e50-88d5-f8241c43f6b9",
+      "result_id": "0a8f908b-467d-4eb4-beea-a29447f788a8"
+    },
+    {
+      "claim_id": "97825f6a-586a-4c54-b44e-f502ac842348",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "8eed0e6e-4569-4346-b6b4-3e0200eb2722",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "f04cab1d-2059-4808-a85f-61b297b3fe75",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "ed8b8963-188a-4636-a01f-ca8a4e7ce756",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "167a1571-bb2d-440e-a3ba-6a4294388887",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "2a80c345-fe61-4e97-bdc9-9fc53fcaa811",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "528c567c-cd56-49a0-843e-708ed41ce01a",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "2e4c9fbd-8eb6-4e0e-bf2c-63bb7d408894",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "fcc696c4-2b9f-448f-991f-183a6a893e8e",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "9bb068f8-c3de-4a49-a17f-a26101f93759",
+      "result_id": "8e032bc7-1c7d-4b1f-92d2-625a100a50c6"
+    },
+    {
+      "claim_id": "af1638f7-8327-4605-baca-235309901f45",
+      "result_id": "0eb43271-7a51-4e88-b70c-c7c06b3f5f4b"
+    },
+    {
+      "claim_id": "3bb0aa36-ffce-4592-8298-feb52bd20e74",
+      "result_id": "0eb43271-7a51-4e88-b70c-c7c06b3f5f4b"
+    },
+    {
+      "claim_id": "7511522c-3dfc-4f10-be73-0f56264c12a3",
+      "result_id": "621e6995-3544-4cc9-821e-d8de43421a8f"
+    },
+    {
+      "claim_id": "4b410b86-3b55-48e8-8d51-354324f761f2",
+      "result_id": "bc835851-78ed-4567-8c5f-bf40b0701d6a"
+    },
+    {
+      "claim_id": "9bce9bce-5958-4aae-a7de-3bdde58a6192",
+      "result_id": "bc835851-78ed-4567-8c5f-bf40b0701d6a"
+    },
+    {
+      "claim_id": "605aaaa2-aefa-4f3b-b5ba-d7c7657de3ed",
+      "result_id": "bc835851-78ed-4567-8c5f-bf40b0701d6a"
+    },
+    {
+      "claim_id": "8634b46a-62dd-4bdd-a47c-5fc57d7d97cb",
+      "result_id": "e90e92b7-b514-4a66-932c-40f0fde94ac7"
+    },
+    {
+      "claim_id": "ea33c90b-bf0e-43e5-a644-d77ace9d5cb8",
+      "result_id": "e90e92b7-b514-4a66-932c-40f0fde94ac7"
+    },
+    {
+      "claim_id": "de5b7ef2-820f-44b8-a9ff-3c9c78e879d7",
+      "result_id": "e90e92b7-b514-4a66-932c-40f0fde94ac7"
+    },
+    {
+      "claim_id": "d9e2a78e-2a85-40f3-8ce1-964951a2f5a2",
+      "result_id": "e90e92b7-b514-4a66-932c-40f0fde94ac7"
+    },
+    {
+      "claim_id": "2afa127c-3567-46b1-82e0-bfbe7590a932",
+      "result_id": "e90e92b7-b514-4a66-932c-40f0fde94ac7"
+    },
+    {
+      "claim_id": "89e5c455-d8d5-40bc-a687-5dd83cf1a25b",
+      "result_id": "93328aee-e1b5-423a-8b46-4d0dd74930eb"
+    },
+    {
+      "claim_id": "a660d3ec-b5ed-46bd-919b-eefc820bded3",
+      "result_id": "93328aee-e1b5-423a-8b46-4d0dd74930eb"
+    },
+    {
+      "claim_id": "5b94a245-2172-4916-a92e-643afdbd1927",
+      "result_id": "93328aee-e1b5-423a-8b46-4d0dd74930eb"
+    },
+    {
+      "claim_id": "4625ee11-5be5-4074-9a03-a734c176ef48",
+      "result_id": "93328aee-e1b5-423a-8b46-4d0dd74930eb"
+    },
+    {
+      "claim_id": "8a46be8d-313e-49d9-9235-ff03f8397ba6",
+      "result_id": "93328aee-e1b5-423a-8b46-4d0dd74930eb"
+    },
+    {
+      "claim_id": "fcda2748-ad92-4ec3-9ab9-f748e6bc833d",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "3fe4af01-8336-444e-a251-77fc37e6da9b",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "c7ba71ae-7e5b-4e7e-89fd-9dfae6cc17ec",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "2a67b5b2-5950-4b5b-be96-b968caafadaf",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "5b5d6670-0e34-4c5b-b441-2e3a86a7e746",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "d567e0d4-3fd8-426a-be00-0c8a62a18f78",
+      "result_id": "376e2462-3569-47f0-9a93-4f6a34abdf8a"
+    },
+    {
+      "claim_id": "39846433-d407-43ba-949d-82e9514ddc01",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "4e164f9a-9f0b-437b-b973-0cb35b011c35",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "1036e53e-af72-433e-84ca-b2a40816c515",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "46ccb5ab-df4a-4b0d-b386-843709d2cefc",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "f731a6db-7d0c-48a7-97fe-a186f6317511",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "7e084452-fde3-46d5-a378-5185ab534585",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "b9d6153d-3d22-4c04-a650-6d699bec678d",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "e4d5f822-666a-4952-8658-1aa27470aca2",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "65442de2-ac36-4241-a2cc-9b8a5a508c20",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "36f13778-37fb-4f53-86ee-fe0e24e9c8c4",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "47f17172-06c0-48b9-a409-51669464a9e7",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "561a2e37-17f9-45fd-abee-447efc571216",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "5fcde15e-3ebe-4657-af74-4895580018ae",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "3c75c70e-f0b6-4c17-8732-70c57d1a9bf1",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "5d6bfb8f-9246-4069-85df-296d8db9e12f",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "1f0b1017-db52-4042-803b-d05588b38baa",
+      "result_id": "050f0eeb-3a82-49c8-9371-294d2506522b"
+    },
+    {
+      "claim_id": "9cfaf60b-5914-4f13-8379-712cf672185c",
+      "result_id": "840fb542-55b4-42e5-977f-59c271a9d7be"
+    },
+    {
+      "claim_id": "89ea51c5-8a05-4ec5-9352-053ae8e1efc0",
+      "result_id": "840fb542-55b4-42e5-977f-59c271a9d7be"
+    },
+    {
+      "claim_id": "cb6c9c9a-07ed-4bf9-9c3f-3585dc18e3e0",
+      "result_id": "840fb542-55b4-42e5-977f-59c271a9d7be"
+    },
+    {
+      "claim_id": "8a4b7e2f-e657-4905-bcfc-49fe123dfcbb",
+      "result_id": "840fb542-55b4-42e5-977f-59c271a9d7be"
+    }
+  ],
+  "comparisons": []
+}

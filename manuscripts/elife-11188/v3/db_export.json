@@ -1,0 +1,1984 @@
+{
+  "submission": {
+    "id": "5c4c3549-46ed-466a-bb06-7ab974b2ab53",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:43:55.412510Z",
+    "updated_at": "2025-11-29T21:43:55.412510Z"
+  },
+  "content": [
+    {
+      "id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "submission_id": "5c4c3549-46ed-466a-bb06-7ab974b2ab53",
+      "content_type": "manuscript",
+      "content_text": "# Excitation and inhibition onto central courtship neurons biases Drosophila mate choice\n\n## Authors\n\n- Benjamin R Kallman<sup>1</sup>\n- Heesoo Kim<sup>1</sup>\n- Kristin Scott<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Helen Wills Neuroscience Institute University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to distinguish males from females is essential for productive mate selection and species propagation. Recent studies in Drosophila have identified different classes of contact chemosensory neurons that detect female or male pheromones and influence courtship decisions. Here, we examine central neural pathways in the male brain that process female and male pheromones using anatomical, calcium imaging, optogenetic, and behavioral studies. We find that sensory neurons that detect female pheromones, but not male pheromones, activate a novel class of neurons in the ventral nerve cord to cause activation of P1 neurons, male-specific command neurons that trigger courtship. In addition, sensory neurons that detect male pheromones, as well as those that detect female pheromones, activate central mAL neurons to inhibit P1. These studies demonstrate that the balance of excitatory and inhibitory drives onto central courtship-promoting neurons controls mating decisions.\n\n## Introduction\n\nAcross the animal kingdom, the ability to distinguish males from females is critical to select among potential mates. The specificity of mating decisions is exemplified by the Drosophila courtship ritual, in which males follow, sing to, and copulate with females but not males. Although much progress has been made in identifying the circuits that underlie mating decisions in the male fly brain, the sensory neurons that detect sex-specific cues and the pathways that they activate to generate sex-specific behaviors are incompletely understood.\n\nA major advance in elucidating the neural circuits that govern male mating decisions has come from the discovery that a male-specific splice form of the Fruitless trancriptional regulator (FruM) is expressed in peripheral and central neurons that drive courtship behavior (Manoli et al., 2005; Stockinger et al., 2005), arguing that FruM marks neural circuits for courtship. Studies of the function of FruM-positive neurons has led to the identification of olfactory and gustatory neurons that detect pheromones, as well as central neurons that drive behavioral subprograms of courtship (Datta et al., 2008; Ha and Smith, 2006; Kurtovic et al., 2007; Lu et al., 2012; Ruta et al., 2010; Thistle et al., 2012; Toda et al., 2012; von Philipsborn et al., 2011).\n\nOne set of neurons that has emerged as a central driver of male mating behavior is the group of P1 (a.k.a. pMPe, pMP4 or pC1) neurons in the protocerebrum (Cachero et al., 2010; Kimura et al., 2008; Lee et al., 2002; Yu et al., 2010). Inducible activation of these neurons leads to sustained male courtship behaviors (Inagaki et al., 2014; Kohatsu et al., 2011; Pan et al., 2012; von Philipsborn et al., 2011). Moreover, these neurons are activated by female pheromones and this activation is partially inhibited in the presence of the male inhibitory pheromone, cis vaccenyl actate (cVA) (Kohatsu et al., 2011). These data show that P1 neurons receive sensory cues signaling females or males and drive courtship decisions, suggesting that they may be command neurons for courtship behaviors.\n\nThe sensory pathways that converge onto P1 neurons are poorly defined. Diverse sensory stimuli contribute to courtship decisions, including visual, auditory, and chemosensory cues. Important sensory cues detected primarily by contact chemosensory neurons are sex-specific cuticular hydrocarbons that act as pheromones. Multiple gustatory receptors and neurons have been implicated in pheromone detection (Bray and Amrein, 2003; Koh et al., 2014; Miyamoto and Amrein, 2008; Moon et al., 2009; Watanabe et al., 2011). We and others recently showed that leg chemosensory neurons expressing the PPK23 pickpocket ion channel detect pheromones (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012). PPK23 is expressed in sensory neurons of many leg chemosensory bristles, with generally two PPK23 cells per bristle. One cell responds selectively to male pheromones (M cells) and the other cell to female pheromones (F cells) (Pikielny, 2012; Thistle et al., 2012). In contrast, the PPK25 channel is expressed in one of the two PPK23-positive cells per bristle, and PPK25 is required for cellular and behavioral responses to female pheromones, arguing that it selectively labels F cells (Starostina et al., 2012; Vijayan et al., 2014). Unlike other classes of gustatory neurons implicated in pheromone detection, PPK23 cells are Fruitless-positive (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012). This suggested that it may be possible to trace pheromonal pathways from PPK23 cells in the periphery to the central nervous system by using FruM neurons as a guide.\n\nHere, we examine sensory pathways in the male brain, from pheromone-sensing cells on the legs to the ventral nerve cord to the protocerebrum, in order to elucidate the neural circuits that allow the male fly to distinguish between appropriate and inappropriate mates. These studies define sensory pathways that act as excitatory and inhibitory drives onto P1, providing insight into the functional connectivity of the courtship circuit.\n\n## Results\n\n### Genetic access to sensory neurons that detect female or male pheromones\n\nTo examine pathways activated by female excitatory pheromones and male inhibitory pheromones, we focused on different subpopulations of PPK23 cells as specific sensory inputs. By GCaMP6s calcium imaging (Chen et al., 2013) of PPK23 cells in a background in which PPK25 cells were independently labeled, we first confirmed that the PPK25-positive cells (F cells) are tuned to female pheromones and the PPK25-negative cells (M cells) to male pheromones (Figure 1A,B; Table 1 contains genotypes of flies used for all experiments). In addition, we found that F cells are the only leg neurons that express the vesicular glutamate transporter-Gal4 driver (vGlut-Gal4) (Daniels et al., 2008), suggesting that the two classes differ in their neurotransmitter profiles and providing an additional marker that selectively labels F cells (Figure 1C,D). F cells and M cells also differ in their axonal projection patterns: F cells terminate in the ventral nerve cord (VNC) whereas M cells also have fibers that project to the subesophageal zone (SEZ) of the central brain (Figure 1E,G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig1-v3.jpg)\n\n**Figure 1.:** (A) F cells (PPK23+ PPK25+) respond to female pheromones whereas M cells (PPK23+ PPK25-) respond to male pheromones; n = 7 bristles. The female pheromone mix contained 7,11-heptacosadiene and 7,11-nonacosadiene. The male pheromone mix contained 7-tricosene and cis-vaccenyl acetate. (B) GCaMP6s marks two PPK23 cells per bristle (left). CD8::tdTomato marks the PPK25 cell (middle). Maximum \u0394F of both PPK23 cells to female (red) or male pheromones (blue) (right). (C) vGlut (magenta) is expressed in one PPK23 cell (green) under each bristle. Transgenic flies with ppk23-LexA, lexAop-CD2::GFP, vGlut-Gal4, UAS-CD8::tdTomato were used for cell labeling. (D) vGlut (green) and PPK25 (magenta) are expressed in the same cell under each bristle. Flies contained vGlut-LexA::VP16, lexAop-CD2::GFP, ppk25-Gal4, UAS-CD8::tdTomato. (E) Axons from F cells in the legs (green) do not project to the central brain (left) but instead terminate in the six leg neuromeres of the ventral nerve cord (VNC, right). Brains are counterstained with nc82 (magenta) to show neuropil. (F) Expression of dTRPA1 in F cells promoted male-female courtship upon heat-evoked neural activation; n = 11\u201321/condition. Number of unilateral wing extensions per 10-minute trial was recorded. (G) M cells from the legs project to the SEZ in the brain (arrow shows fibers entering from the cervical connective) and VNC. Other SEZ axons come from the proboscis, with fibers entering from the labellar nerve. (H) dTRPA1-mediated activation of M cells suppressed male-female courtship. n = 10\u201312/condition. Number of unilateral wing extensions per 10-minute trial was recorded. Scale bars, 5 (B), 10, (C, D) 25 (G, SEZ) or 50 \u03bcm (E, G, VNC). Data are Mean \u00b1 SEM. Kruskal-Wallis test, Dunn\u2019s post-hoc (A) or 2-way ANOVA, Bonferroni post-hoc (F, H). **p< 0.01. See also Figure 1\u2014figure supplement 1, on selectively targeting F or M cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) vGlut-QF (green) is expressed in PPK25 cells (magenta), similar to vGlut-LexA in Figure 1D. Flies were vGlut-QF2, QUAS-Gal80, ppk25-Gal4, UAS-CD8::tdTomato. (B) (left), Ablating F cells (ppk25-Gal4) using diphtheria toxin leaves M cells intact, with one GFP-positive cell/bristle rather than two. This strategy was used to label M cells in Figure 1G. (middle), Suppressing Gal4-dependent expression in F cells (ppk23-Gal4, UAS-CD8::tdTomato, vGlut-LexA, lexAop-Gal80) leaves expression intact in M cells. This strategy was used to activate M cells in Figure 1H. (right), Suppressing LexA-dependent expression in F cells (ppk23-LexA, lexAop-CD2::GFP, vGlut-QF2, QUAS-Gal80) leaves expression intact in M cells. This strategy was used to activate M cells in Figures 2B, 4B, and 5E. Different approaches were used to accommodate chromosome locations of transgenes. Scale bars, 10 \u03bcm.\n\n**Table 1.**\n Genotypes of flies used for experiments in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure panel</th>\n      <th>Genotype</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1A</td>\n      <td>w-/y; ppk23-LexA/ppk25-Gal4; lexAop-GCaMP6S/UAS-CD8::tdTomato</td>\n    </tr>\n    <tr>\n      <td>Figure 1B</td>\n      <td>same as Figure 1A</td>\n    </tr>\n    <tr>\n      <td>Figure 1C</td>\n      <td>w-/y; ppk23-LexA/vGlut-Gal4; lexAop-CD2::GFP/UAS-CD8::tdTomato</td>\n    </tr>\n    <tr>\n      <td>Figure 1D</td>\n      <td>w-/y; vGlutMI04979-LexA::QFAD/ppk25-Gal4; lexAop-CD2::GFP/UAS-CD8::tdTomato</td>\n    </tr>\n    <tr>\n      <td>Figure 1E</td>\n      <td>w-/y; UAS-CD8::GFP/+; ppk25-Gal4/+</td>\n    </tr>\n    <tr>\n      <td>Figure 1F</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 1G</td>\n      <td>w-/y; ppk23-LexA/ppk25-Gal4; lexAop-CD2::GFP/UAS-DTI</td>\n    </tr>\n    <tr>\n      <td>Figure 1H</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 1A</td>\n      <td>w-/y; vGlutMI04979-QF2/ppk25-Gal4; QUAS-mCD8::GFP/UAS-CD8::tdTomato</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 1B</td>\n      <td>(left) w-/y; ppk23-LexA/ppk25-Gal4; lexAop-CD2::GFP/UAS-DTI (middle) w-/y; vGlutMI04979-LexA::QFAD/ppk23-Gal4; QUAS-Gal80/UAS-CD8::tdTomato (right) w-/y; vGlutMI04979-QF2/ppk23-LexA; QUAS-Gal80/lexAop-CD2::GFP</td>\n    </tr>\n    <tr>\n      <td>Figure 2A</td>\n      <td>w-/y; P1-Gal4-AD/UAS-CD8::GFP;P1-Gal4-DBD/+</td>\n    </tr>\n    <tr>\n      <td>Figure 2B</td>\n      <td>F cell stim: w-/y; vGlutMI04979-LexA::QFAD/lexAop-P2X2; R71G01-Gal4/UAS-GCaMP6S M cell stim: w-/y; ppk23-LexA, lexAop-P2X2/ vGlutMI04979-QF2; R71G01-Gal4, UAS-GCaMP6S/QUAS-Gal80</td>\n    </tr>\n    <tr>\n      <td>Figure 3A</td>\n      <td>w-/y; UAS-CD8::GFP/+; R56C09-Gal4/+</td>\n    </tr>\n    <tr>\n      <td>Figure 3B\u2013C</td>\n      <td>w-/y; +/+; R56C09-Gal4/UAS-DenMark, UAS-synaptotagmin-GFP</td>\n    </tr>\n    <tr>\n      <td>Figure 3D</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 3E</td>\n      <td>w-/y; R56C09-LexA/ppk25-Gal4; lexAop-CD2::GFP/UAS-CD8::tdTomato</td>\n    </tr>\n    <tr>\n      <td>Figure 3F</td>\n      <td>w-, UAS-CD8::tdTomato/y; P1-Gal4-AD/R56C09-LexA; P1-Gal4-DBD/lexAop-CD2::GFP</td>\n    </tr>\n    <tr>\n      <td>Figure 4A</td>\n      <td>w-/y; UAS-CD8::GFP/+; R56C09-Gal4/+</td>\n    </tr>\n    <tr>\n      <td>Figure 4B</td>\n      <td>F cell stim: UAS-CD8::tdTomato/y; vGlutMI04979-LexA::QFAD/lexAop-P2X2; R56C09-Gal4/UAS-GCaMP6S M cell stim: UAS-CD8::tdTomato/y; ppk23-LexA, lexAop-P2X2/ vGlutMI04979-QF2; R56C09-Gal4, UAS-GCaMP6S/QUAS-Gal80 F+M cell stim: UAS-CD8::tdTomato/y; ppk23-LexA/lexAop-P2X2; R56C09-Gal4/UAS-GCaMP6S</td>\n    </tr>\n    <tr>\n      <td>Figure 4C</td>\n      <td>w-, UAS-CD8::tdTomato/y; P1-Gal4-AD/R56C09-LexA; P1-Gal4-DBD/lexAop-CD2::GFP</td>\n    </tr>\n    <tr>\n      <td>Figure 4D</td>\n      <td>w-/y; UAS-GCaMP6S/R56C09-LexA; R71G01-Gal4/lexAop-Chrimson</td>\n    </tr>\n    <tr>\n      <td>Figure 5A</td>\n      <td>w-/y; ppk23-LexA/lexAop-P2X2; fru-Gal4/UAS-GCaMP6S</td>\n    </tr>\n    <tr>\n      <td>Figure 5B</td>\n      <td>w-/y; UAS&gt;stop&gt;CD8::GFP/lexAop-FLPL; R43D01-Gal4/fru-LexA</td>\n    </tr>\n    <tr>\n      <td>Figure 5C</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 5D</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 5E</td>\n      <td>F cell stim: w-/y; vGlutMI04979-LexA::QFAD/lexAop-P2X2; R43D01-Gal4/UAS-GCaMP6S M cell stim: w-/y; ppk23-LexA, lexAop-P2X2/ vGlutMI04979-QF2; R43D01-Gal4, UAS-GCaMP6S/QUAS-Gal80</td>\n    </tr>\n    <tr>\n      <td>Figure 5F</td>\n      <td>same as Figure 5e and F+M cell stim: ppk23-LexA/lexAop-P2X2; R43D01-Gal4/UAS-GCaMP6S</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1A</td>\n      <td>w-/y; UAS-CD8::GFP/+; R43D01-Gal4/+</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1B</td>\n      <td>w-/y; UAS-CD8::GFP/+; R43D01-Gal4/+</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1C</td>\n      <td>w-/y; UAS&gt;stop&gt;nsyb-GFP 19a/lexAop-FLPL; R43D01-Gal4/fru-LexA</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1D</td>\n      <td>w-/y; UAS&gt;stop&gt;Dscam17.1-GFP 19a/lexAop-FLPL; R43D01-Gal4/fru-LexA</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1E</td>\n      <td>w-/y; UAS-CD8::GFP/ppk23-LexA; R43D01-Gal4/lexAop-myr::mCherry</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1F</td>\n      <td>w-/y; ppk23-LexA/lexAop-P2X2; R43D01-Gal4/R71G01-Gal4, UAS-GCaMP6S</td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014figure supplement 1G</td>\n      <td>w-/y; R43D01-LexA/+; lexAop-CD2::GFP/+</td>\n    </tr>\n    <tr>\n      <td>Figure 6A</td>\n      <td>w-, UAS-CD8::tdTomato/y; P1-Gal4DBD/R43D01-LexA; P1-Gal4AD/lexAop-CD2::GFP</td>\n    </tr>\n    <tr>\n      <td>Figure 6B</td>\n      <td>see figure, genotype includes UAS-Dicer (X)</td>\n    </tr>\n    <tr>\n      <td>Figure 6C</td>\n      <td>see Figure</td>\n    </tr>\n    <tr>\n      <td>Figure 6D</td>\n      <td>w-/y; ppk23-LexA/lexAop-P2X2; R71G01-Gal4, UAS-GCaMP6S/R43D01-Gal4</td>\n    </tr>\n    <tr>\n      <td>Figure 6E</td>\n      <td>w-/y; R43D01-LexA/UASArcLight; R71G01-Gal4/lexAop-Chrimson</td>\n    </tr>\n    <tr>\n      <td>Figure 6F</td>\n      <td>same as Figure 6E</td>\n    </tr>\n  </tbody>\n</table>\n\nTo ask whether F or M cell activation is sufficient to modify courtship behavior, we used genetic strategies to express the heat-activated cation channel dTRPA1 (Hamada et al., 2008) selectively in F or M cells. A single male was placed in a chamber with a virgin female and number of single wing extensions by the male was monitored, as this motor subprogram occurs specifically during courtship song production. Males expressing dTRPA1 in F cells tested at 30\u00b0C (a temperature that activates dTRPA1) had a significantly higher wing extension rate than genetically identical flies tested at the non-activating temperature of 23\u00b0C or control flies at either temperature (Figure 1F). In contrast, males expressing dTRPA1 in M cells had a significantly lower wing extension rate at 30\u00b0C compared to genetic and temperature controls (Figure 1H). Thus, F and M cells comprise genetically and anatomically distinct chemosensory neuron classes that respond to female or male pheromones and promote or inhibit courtship.\n\n### F cell stimulation activates P1 neurons\n\nThe ability to genetically access and specifically activate cells responding to female or male pheromones provided the opportunity to trace sex-selective pathways in the male brain and examine the neural substrates for courtship decisions. We genetically accessed F cells with the ppk25-Gal4, vGlut-LexA and vGlut-QF2 drivers, all of which specifically label F cells in the legs (Figure 1C,D, and Figure 1\u2014figure supplement 1). To selectively access M cells (PPK23-positive, PPK25-negative cells), we used a driver that labels both F and M cells (ppk23-LexA) while driving Gal80 with F cell drivers (Figure 1\u2014figure supplement 1). The ATP-gated cation channel P2X2 (Lima and Miesenbock, 2005) was selectively expressed in these sensory classes and ATP was applied to the legs for robust cell-specific activation.\n\nMale-specific, Fru-positive P1 neurons (Cachero et al., 2010; Kimura et al., 2008; Lee et al., 2002; Yu et al., 2010) are prominent courtship-promoting neurons in the protocerebrum that trigger sustained courtship behaviors upon ectopic activation (Inagaki et al., 2014; Kohatsu et al., 2011; Pan et al., 2012; von Philipsborn et al., 2011). As P1 neurons have been shown to respond to hydrocarbon extracts from female and male abdomens (Kohatsu et al., 2011), we tested whether F and M cells provided specific sensory inputs onto P1 neurons. P1 activity was monitored by GCaMP6s calcium imaging in live flies expressing P2X2 in both F and M cells (F+M), F cells, or M cells while ATP was applied to the legs (Figure 2A,B). Activation of F cells triggered calcium increases in P1, demonstrating that sensory neurons that detect female pheromones activate courtship-promoting P1 neurons. In contrast, we observed no significant calcium response in P1 neurons upon M cell activation. Activating F+M cells using the same ppk23-LexA driver (without expression of Gal80 in F cells) caused robust calcium responses in P1 neurons. These experiments argue that F cells, but not M cells, activate P1 neurons. This is in contrast to a previous study that observed calcium increases in P1 neurons in response to male abdomens (Kohatsu et al., 2011); however, male abdomens may activate other sensory neurons in addition to M cells, such as Fru-negative pheromone-sensing neurons, gustatory neurons, or mechanosensory neurons. The selective activation of single classes of sensory cells allows us to disambiguate sensory cues and determine the contribution of specific sensory inputs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig2-v3.jpg)\n\n**Figure 2.:** (A) Male-specific P1 neurons (green) are located in the protocerebrum. Scale bar, 50 \u03bcm. Flies contained P1-Gal4DBD, P1-Gal4AD, UAS-CD8::GFP. (B) ATP-mediated stimulation of F+M cells (ppk23-LexA, lexAop-P2X2), F cells (vGlut-LexA) but not M cells (ppk23-LexA, lexAop-P2X2, vGlut-QF2, QUAS-Gal80) triggered calcium increases in P1 neurons; n = 5\u20138/condition. Mock is no P2X2. Traces on the left show averaged \u25b3F/F with mean in black and SEM shaded. Arrows indicate stimulus. Schematics show cells monitored with GCaMP6s (green) and connections tested. Data are also displayed as bar graph (right). Differences in expression levels of ppk23-LexA and vGlut-LexA may contribute to different response magnitudes of F+M versus F cell stimulation. Mean \u00b1 SEM of maximum \u25b3F/F. Kruskal-Wallis test, Dunn\u2019s post-hoc to mock, *p<0.05, **p<0.01, ***p<0.001.\n\n### PPN1 neurons respond to F cell stimulation and activate P1 neurons\n\nAs F cells terminating in the VNC do not directly contact P1, we screened existing Gal4 collections (Gohl et al., 2011; Jenett et al., 2012) for neurons that might contact F cell projections and project to higher brain regions. We identified a pair of neurons with dendrites in the VNC and axons in the protocerebrum, marked specifically by R56C09-Gal4, which we name Pheromone Projection Neuron class 1 (PPN1) (Figure 3A\u2013C). PPN1 neurons have cell bodies on the dorsal surface of the third leg neuromere, send projections to all leg and wing neuromeres in the VNC, and terminate in the ventrolateral protocerebrum. PPN1 dendrites are in close proximity to PPK25 axons and PPN1 axons overlap with P1 fibers, as shown by double labeling experiments (Figure 3E,F). To test whether PPN1 is involved in courtship behavior, we expressed dTRPA1 in PPN1 neurons and monitored male courtship towards females upon heat-induced neural activation. Consistent with a role in promoting courtship, activating PPN1 with dTRPA1 increased male courtship behavior toward females, as measured by unilateral wing extension rate (Figure 3D). Unlike other neurons of the courtship circuit, PPN1 is not Fru-positive based on intersectional approaches with Fru-Flp and Fru-LexA and PPN1 projections are not sexually dimorphic (data not shown). Nonetheless, the anatomical and behavioral studies suggest that PPN1 might transmit F cell activation to P1 to promote courtship.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig3-v3.jpg)\n\n**Figure 3.:** (A) PPN1 neurons have cell bodies in the third leg neuromere of the VNC and send projections to the six leg neuromeres and wing neuromere of the VNC and to the ventrolateral protocerebrum of the brain. R56C09-Gal4 drives expression of UAS-CD8::GFP exclusively in the pair of PPN1 neurons. (B-C) PPN1 has dendrites in the VNC (B, DenMark, magenta) and axons in the ventrolateral protocerebrum (C, syt-GFP, green). B and C are from the same animal containing R56C09-Gal4, UAS-DenMark, UAS-synaptotagmin-GFP. (D) Activation of PPN1 with dTRPA1 causes increased male-female courtship at 30\u00b0C; mean \u00b1 SEM, n = 16\u201330/condition, **p<0.01 (2-way ANOVA, Bonferroni post-hoc). (E) Overlap is observed in the VNC between PPN1 dendrites (green) and incoming PPK25 axons (magenta). R56C09-LexA, lexAop-CD2::GFP, ppk25-Gal4, UAS-CD8::tdTomato flies were used. F. Overlap between PPN1 (green) and P1 (magenta) in the anterior ventrolateral protocerebrum (50 \u03bcm collapsed Z-stack). Scale bars, 25 \u03bcm (F) 50 \u03bcm (A-E).\n\nTo test whether PPN1 receives pheromonal signals, we stimulated F cells or M cells by ATP-mediated activation of P2X2 while monitoring calcium changes in PPN1 axons in the higher brain. These studies revealed calcium increases in PPN1 axons upon F cell stimulation but not M cell stimulation (Figure 4A). As with P1, activating F+M cells using the same ppk23-LexA driver (without expression of Gal80 in F cells) triggered robust calcium responses in PPN1, further arguing that PPN1 neurons are downstream of F cells and not M cells. To more directly test whether F cell activity is transmitted to P1 by PPN1, we expressed the red-shifted opsin Chrimson (Klapoetke et al., 2014) in PPN1 and monitored calcium changes in P1. Activation of PPN1 with red light generated calcium responses in P1 (Figure 4B). Red light had no effect on P1 activity in control animals not fed the essential cofactor retinal. Together, these experiments argue that female pheromones activate a neural pathway from F cells to PPN1 to P1 to drive courtship behavior.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig4-v3.jpg)\n\n**Figure 4.:** (A) Calcium imaging of PPN1 axons while activating different sensory classes revealed that PPN1 is activated by F+M and F cell stimulation but not M cell stimulation; n = 5\u20137/condition. Mock is no P2X2. Arrows indicate stimulus. (B) Chrimson-mediated activation of PPN1 triggers calcium increases in P1 by GCaMP6s calcium imaging; n = 5\u20136/condition. Arrows indicate stimulus. Schematics show cells monitored with GCaMP6s (green) and connections tested. Data are Mean \u00b1 SEM. Kruskal-Wallis test, Dunn\u2019s post-hoc to mock (A) or Mann-Whitney test (B). *p<0.05, **p<0.01.\n\n### M cells and F cells activate mAL neurons\n\nAs M cell stimulation did not activate P1, we searched for other targets of F and M cells by monitoring calcium responses in all Fru neurons upon F+M cell stimulation, observing activity throughout the brain using spinning disk confocal microscopy. One set of neurons was prominently activated by F+M stimulation (Figure 5A). These were anatomically identifiable as mAL neurons (a.k.a. aDT2, aDTb) by their distinct arborization patterns (Cachero et al., 2010; Ito et al., 2012; Kimura et al., 2005; Yu et al., 2010). Based on their anatomy and neurotransmitter profile, mAL neurons have been proposed to be sexually dimorphic GABAergic interneurons that convey inhibitory courtship signals to the higher brain in males (Koganezawa et al., 2010). However, the behavioral role of mAL neurons in courtship, the sensory stimuli that activate mAL, and the relationship between mAL and other components of the courtship circuit have not been determined. To examine these questions, we visually screened Gal4 lines (Jenett et al., 2012) and identified R43D01-Gal4, which includes Fru-positive, GABAergic mAL neurons (Figure 5B and Figure 5\u2014figure supplement 1). Consistent with the notion that mAL might be downstream of pheromone-sensing sensory neurons, we found that M cell axons and mAL dendrites overlap in the SEZ (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig5-v3.jpg)\n\n**Figure 5.:** (A) Example image of a GCaMP6s \u0394F heat map in fru-LexA neurons upon P2X2-mediated activation of F+M cells. (B) mAL neurons labeled by the intersection of R43D01-Gal4 and fru-LexA connect the SEZ and protocerebrum. (C) Activating mAL neurons with dTRPA1 suppresses courtship toward females; n = 10/condition. (D) Silencing mAL neurons with tetanus toxin or knocking down vGAT with R43D01-Gal4 induces male-male chaining; n = 8\u201310 groups/condition, 6\u20139 males per group. For C and D, >> means >stop>. Chaining index represents the fraction of time 3 or more males were courting over the 10-min trial. (E) P2X2-mediated stimulation of either F or M cells activates mAL neurons by GCaMP calcium imaging. Arrows indicate stimulus. (F) Maximum \u0394F/F in mAL cell bodies; n = 5\u20139/condition. Mock is no P2X2. Scale bars, 50 \u03bcm (A, B). Data are Mean \u00b1 SEM, 2-way ANOVA, Bonferroni post-hoc (C), Mann-Whitney test (D), or Kruskal-Wallis test, Dunn\u2019s post-hoc to mock (F). *p<0.05, ***p<0.001. See also Figure 5\u2014figure supplement 1, for anatomical characterization of mAL neurons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) mAL neurons labeled by R43D01-Gal4 (green, CD8::GFP) are immunopositive for GABA (magenta). (B) mAL neurons labeled by R43D01-Gal4 (green, CD8::GFP) express FruM (magenta). (C) mAL neurons have presynaptic termini (green, nsyb-GFP) in the higher brain and SEZ. (D) mAL neurons have dendrites (green, Dscam17.1-GFP) primarily in the SEZ. (E) M cell axons (magenta, myr::mCherry) interdigitate with mAL fibers (green, CD8::GFP) in the SEZ. (F) A representative image of the mAL axonal tract in the higher brain before and after 2-photon-mediated lesioning. (G) R43D01-LexA labels mAL neurons and some olfactory sensory neurons (green, CD2::GFP). This line was used in Figure 6E. Scale bars, 5 \u03bcm (A), 10 \u03bcm (B, F), 25 \u03bcm (E), 50 \u03bcm (C, D, G).\n\nTo test whether mAL neurons participate in courtship behavior, we conditionally activated or inactivated them using the genetic intersection of R43D01-Gal4 and Fru-LexA and monitored courtship behavior. Activation of mAL neurons with dTRPA1 greatly suppressed courtship toward females compared to controls (Figure 5C), as measured by unilateral wing extension rate. Inactivation of mAL neurons with tetanus toxin caused robust male-male chaining, a behavior in which three or more males serially court each other (Figure 5D), and which was almost never observed in control animals. Furthermore, expression of RNAi against the vesicular GABA transporter (vGAT) using R43D01-Gal4 also caused male-male chaining (Figure 5D), arguing that GABA release from mAL inhibits courtship. Thus, activation of mAL inhibits courtship, whereas inactivation enhances courtship, demonstrating an inhibitory role for mAL in courtship decisions.\n\nFinally, we tested the specificity of the response of mAL neurons to pheromone sensory cell stimulation, using the R43D01-Gal4 line to express GCaMP6s and the same drivers used for the PPN1 and P1 experiments to express P2X2 in M and F cells (Figure 5E,F). Surprisingly, both M cells and F cells activated mAL, arguing that detection of female as well as male pheromones provides an inhibitory courtship drive. As F cells additionally activated PPN1 and P1 courtship-promoting neurons, whereas M cells did not, this suggests that the balance between excitation and inhibition underlies the decision to court.\n\n### mAL neurons inhibit P1 courtship command neurons\n\nHow do mAL neurons inhibit courtship? P1 neurons are in close proximity to mAL termini (Figure 6A), suggesting that they may be candidate targets of GABAergic mAL neurons. To test whether P1 neurons receive inhibitory signals, we generated flies containing an RNAi against the GABA-A receptor subunit Resistant to dieldrin (Rdl) (Ffrench-Constant et al., 1991) in P1 neurons and examined the behavioral consequence. Males expressing Rdl RNAi in P1 neurons displayed increased courtship toward other males, arguing that P1 neurons receive GABAergic inhibition (Figure 6B). In addition, whereas Chrimson-mediated activation of P1 neurons induced courtship behavior in solitary males, co-activation of P1 and R43D01-Gal4 neurons suppressed this behavior (Figure 6C), arguing that mAL suppresses P1-mediated courtship. To more directly test whether inhibitory signals from mAL impinge on P1, we simultaneously stimulated F and M cells and monitored activity in P1 before and after 2-photon guided lesioning of mAL axons (Figure 6D and Figure 5\u2014figure supplement 1). Indeed, simultaneous stimulation of F and M cells caused transient activation of P1 and lesioning mAL axons significantly increased P1 activation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig6-v3.jpg)\n\n**Figure 6.:** (A) Overlap between mAL (green) and P1 (magenta) in the superior lateral protocerebrum (collapsed 97-\u03bcm stack). Scale bar is 25 \u03bcm. (B) Knockdown of GABAA receptor Rdl in P1 neurons induces male-male chaining; n = 10/condition. (C) Chrimson-mediated activation of P1 neurons causes wing extension (wing ext.) in solitary males, which is suppressed by co-activation of neurons expressing R43D01-Gal4. (D). Lesioning mAL axons increases GCaMP response in P1 upon P2X2-mediated stimulation of F+M cells. (E) Chrimson-mediated activation of mAL neurons causes P1 hyperpolarization, as detected by increased ArcLight fluorescence. Arrow indicates laser. F. Maximum \u0394F/Fin P1; n = 10\u201311/condition. Data are Mean \u00b1 SEM. Mann-Whitney test (B, F), Fisher\u2019s exact test (C), or paired t-test (D). *p<0.05, **p<0.01, ***p<0.001.\n\nThese data suggest that mAL neurons inhibit P1 neurons via GABA-A receptors. To test directly whether mAL input onto P1 causes hyperpolarization, we expressed ArcLight (Cao et al., 2013), a fluorescent voltage sensor, in P1 neurons and monitored its fluorescence using 2-photon imaging (Figure 6E). Chrimson-mediated activation of mAL neurons, using R43D01-LexA (Figure 5\u2014figure supplement 1), evoked a rapid increase in ArcLight fluorescence in P1 neurons, indicating hyperpolarization. No fluorescence change was observed in control flies lacking the R43D01-LexA transgene. These experiments demonstrate that mAL neurons provide an inhibitory drive onto P1 neurons.\n\n## Discussion\n\nThis work identifies pheromone-responsive neural circuits underlying mating decisions (Figure 7). We used cell-specific activation to determine sensory pathways that impinge on courtship-promoting P1 neurons, providing insight into the functional connectivity of the courtship circuit. Female pheromones trigger neural pathways that excite and inhibit P1, with PPN1 providing an excitatory drive onto P1 and mAL providing an inhibitory drive. F cell activation leads to P1 activation and increased courtship behavior, arguing that the sum of inputs onto P1 produces excitation or that the sequence of inputs, i.e., fast excitation followed by inhibition, provides a temporal window for excitation. In contrast, M cells activate mAL neurons to inhibit P1 and inhibit courtship behavior. These studies argue that the balance of excitation and inhibition onto P1 neurons is different following F cell or M cell activation: F cell activation leads to overall P1 activation whereas M cell activation leads to overall P1 inhibition.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/11188/elife-11188-fig7-v3.jpg)\n\n**Figure 7.:** F cells on the leg express PPK23, PPK25, and VGlut, and respond to female pheromones. M cells on the leg express PPK23 and respond to male pheromones. The M cell neurotransmitter is unknown. F cells activate PPN1, a class of projection neuron with cell bodies and dendrites in the VNC and long-range axonal projections to the ventrolateral protocerebrum. PPN1 axons are in close proximity to P1 fibers, and PPN1 activation causes activation of P1. M cells on the leg activate GABAergic mAL neurons, which connect the SEZ and superior lateral protocerebrum. mAL axons interdigiate with P1 fibers, and mAL acitvation causes hyperpolarization of P1, likely through the GABA-A receptors containing the Rdl subunit. F cells also provide an inhibitory drive onto P1 via mAL. The contact between F cells and mAL is not direct (dotted line). Other connections may not be monosynaptic.\n\nOur calcium imaging studies provide strong support that the pathways identified in this study are activated by F and M cell stimulation, and our behavioral experiments demonstrate that activation of these neurons directly contributes to courtship decisions. However, we do not exclude the possibility that additional intermediary neurons may also be activated by F or M cells. Indeed, a recent study identified vAB3 neurons, with projections in the first leg neuromere in the VNC, the SEZ and protocerebrum, as activated by female but not male pheromones (Clowney et al., 2015). This study also showed that mAL neurons are activated by male and female abdomens and provided evidence that mAL inhibits P1. Our independent observations are consistent with this work and extend the findings by providing behavioral evidence that each identified component of the circuit promotes or inhibits courtship as predicted by its response properties, by using cell-type specific activation strategies coupled with cell-type specific imaging studies to directly test potential connections, and by identifying PPN1 as a novel neural component of the courtship circuit. Together, the studies argue that pheromones activate multiple excitatory and inhibitory interneurons that impinge on P1.\n\nA caveat of our studies is that they rely on ectopic expression of reporters, and expression levels of P2X2 and GCaMP6s may influence the ability to detect responding cells. Nevertheless, the same driver was used to express P2X2 in M cells in all calcium-imaging experiments, but application of ATP only elicited calcium responses in mAL neurons. Furthermore, the ppk23-LexA driver (in F+M cells) that we used for M cell activation was sufficient to produce ATP-mediated activation of P1 and PPN1, and these responses were abolished in the presence of Gal80 in F cells. Thus, the observation that M cells activate mAL but not P1 or PPN1 is unlikely due to technical limitations.\n\nThis study demonstrates a specific computational logic used by the nervous system to integrate different sensory inputs. Pheromones provide excitatory or inhibitory drives onto P1, such that P1 activity reflects the integration of positive and negative sensory inputs, with female pheromones causing net excitation and male pheromones causing net inhibition. P1 also integrates inputs from other sensory systems, as P1 neurons respond to visual stimuli (Kohatsu and Yamamoto, 2015) and olfactory pheromones (Clowney et al., 2015; Kohatsu et al., 2011). Thus, diverse sensory stimuli may alter the weight of excitation versus inhibition onto P1 and bias the decision to court. Altering the weights of excitation or inhibition through experience or evolution is an appealing strategy to dynamically modulate the response to potential mates or to tune attraction to conspecifics. Taken together, these studies reveal an elegant strategy used by the nervous system in which excitatory and inhibitory inputs directly converge onto a common output to control a significant behavioral decision.\n\n## Materials\u00a0and\u00a0methods\n\n### Fly strains\n\n#### The following fly lines were used\n\nppk23-LexA (a gift from Dr. Barry Dickson); lexAop2-IVS-GCaMP6S-SV40 (BDSC #44273); ppk25-Gal4 (Starostina et al., 2012); ppk23-Gal4, lexAop-Gal80, UAS-mCD8::tdTomato (X II III) (Thistle et al., 2012); vGlut-Gal4 (OK371-Gal4) (Daniels et al., 2008); vGlut-LexA::VP16 (Baek et al., 2013); vGlutMI04979-LexA::QFAD, vGlutMI04979-QF2 (Diao et al., 2015); UAS-mCD8::GFP and lexAop-CD2::GFP (Lai and Lee, 2006); UAS-DTI (Han et al., 2000); fru-Gal4 (Stockinger et al., 2005); fru-LexA (Mellert et al., 2010); lexAop2-FLPL(attp40) (BDSC #55820); UAS-GCaMP6S (Chen et al., 2013); UAS-dTRPA1 (Hamada et al., 2008); UAS-syt-eGFP (Zhang et al., 2002); UAS-Denmark (Nicolai et al., 2010); UAS-CD4::GFP1-10 and lexAop-CD4::GFP11 (Gordon and Scott, 2009); UAS-P2X2 (Lima and Miesenbock, 2005); lexAop-P2X2 (Yao et al., 2012); UAS>stop>CD8::GFP, UAS>stop>dTRPA1myc, UAS>stop>TNTactive, UAS>stop>TNTinactive (von Philipsborn et al., 2011); UAS-Empty-RNAi (BDSC #36303); UAS-vGAT-shRNA (BDSC #41958); UAS-Dicer2 (X) (BDSC #24644); UAS-Dicer2(II) (BDSC #24650); UAS-Rdl-RNAi (BDSC #31286); QUAS-Gal80 (BDSC #51950); P1-Gal4 (Inagaki et al., 2014); R71G01-Gal4 (Pan et al., 2012); R43D01-Gal4 (BDSC #48151); PPN1-Gal4 (R56C09-Gal4, BDSC #39145); PPN1-LexA (R56C09-LexA, BDSC #53584); UAS-IVS-CsChrimson.mVenus(attp18) (BDSC #55134); LexAop2-IVS-CsChrimson.mVenus(attp2) (BDSC #55139); UAS-ArcLight (Cao et al., 2013); UAS>stop>nsyb-GFP 19a; UAS>stop>Dscam17.1-GFP 19a (Yu et al., 2010), QUAS-mCD8::GFP (BDSC #30003).\n\n### Leg bristle GCaMP6s imaging\n\nSingle bristle imaging was performed as previously described (Thistle et al., 2012). Flies containing ppk23-LexA, LexAop-GCaMP6S, ppk25-Gal4, UAS-CD8::tdTomato were placed in a custom imaging chamber and their forelegs were secured with wax. Female (7,11-heptacosadiene and 7,11-nonacosadiene) or male (7-tricosene and cis-vaccenyl acetate) pheromone mixes (100 ng/\u03bcL, Cayman Chemical,\u00a0\u00a0\u00a0Ann\u00a0\u00a0Arbor,\u00a0\u00a0MI) were applied to single bristles on the three distal leg segments for 30\u2009s. GCaMP6s responses were captured using a 3i spinning disk confocal system equipped with a 20x air objective and 1.6x optical zoom. Responses in the two PPK23 cells under each bristle were analyzed based on their expression of CD8::tdTomato; M cells were tdTomato-negative, and F cells were tdTomato-positive. The change in fluorescence in each cell was calculated as follows: 100*((Ft-F0)/F0), where F0 is the mean fluorescence intensity during the 4\u2009s prior to stimulation.\n\nThe heat map in Figure 1B was created in Fiji. The average fluorescence intensity of the 10 frames preceding each stimulation (female and male mixes) was subtracted from the frame at which the fluorescence intensity of the responding cell was at a maximum. The resulting images from each stimulation were then merged into a two-channel image. The channels corresponding to the female or male pheromone stimulation were pseudocolored red and blue, respectively.\n\n### Central brain GCaMP6s imaging and ATP stimulations\n\nGCaMP imaging experiments were performed as previously described (Harris et al., 2015). Virgin males were collected at eclosion and were aged in isolation for 2 to 6 days before imaging. They were briefly anaesthetized with CO2 and placed into a small slit on a custom-built plastic mount at the neck such that the head was isolated from the rest of the body. The head was then immobilized using nail polish. Two small pieces of plastic were affixed with nail polish to the underside of the plastic mount on either side of the thorax, such that the legs were forced into a forward-facing position. The proboscis was covered with wax to prevent labellar taste input. The head cuticle was dissected with fine forceps in ice-cold adult hemolymph-like solution (AHL) (Wang et al., 2003), and obscuring air sacs and other debris were removed. Eyes were damaged or removed to minimize visual input from the imaging laser. A coverglass was placed at a 45-degree angle to the plane of the plastic mount such that the head was isolated from the rest of the body.\n\nGCaMP6s responses were captured using a fixed-stage 3i spinning disk confocal system equipped with a 20x water objective and 1.6x (mAL and P1) or 2.5x (PPN1) optical zoom and a 488 nm laser. During the stimulation, stacks of 15\u201320 Z-slices (1\u20131.5 \u03bcm/Z-slice, for mAL and P1) or 8\u201312 Z-slices (0.5\u20130.8 \u03bcm/Z-slice, for PPN1) were obtained with a 100-ms exposure per Z-slice, resulting in each imaging volume/timepoint being acquired every 1.7\u20133.9\u2009s. For each trial, 20 imaging timepoints were acquired.\n\nFor P2X2-mediated stimulation of M and/or F cells, ~4 \u03bcL of 100 mM ATP (adjusted to pH 7) was pipetted onto a small cube of 2% agar, which was placed on the end of a glass capillary (OD 1.0 mm, ID 0.78 mm). The capillary was placed into an electrode holder that was secured to a micromanipulator. The agar cube was advanced such that it touched the flies\u2019 legs at timepoint 6 of 20. The cube was left within reach of the flies\u2019 legs for 3 timepoints before being removed.\n\nF and M cells were exogenously activated to ensure specific stimulation of different sensory classes. Delivery of synthetic pheromones requires solubilization in ethanol or hexane, solvents that dissolve the fly\u2019s endogenous cuticular hydrocarbons, which may independently activate F or M cells. It was possible to apply pheromone solutions to the tip of a single sensory bristle without detriment (Figure 1A).\n\nFor PPN1 imaging, because GCaMP6s baseline fluorescence was very low, a red reporter (UAS-CD8::tdTomato) was included in order to visualize axonal endings. One stack of 15\u201320 Z-slices from the 561 nm laser line was obtained at the beginning of each imaging session. These were later used to define regions of interest for imaging analysis.\n\n### Chrimson-mediated activation of PPN1\n\nFor PPN1 activation experiments, we fed isolated adult male flies for a minimum of 3 days on standard fly food supplemented with all-trans retinal (final concentration 400 \u03bcM). These flies, as well as control males fed normal food, were kept in constant darkness until the experiment. Imaging was performed similarly to above (\u201cGCaMP6s imaging\u201d) except that a 635 nm laser (Laserglow,\u00a0Canada) was directed at the thorax. The laser was turned to its highest power (~0.01 mW/mm2) but was in standby mode until frame 6 of 20, at which time the key was turned to open the shutter. The laser was left on for 6 frames. During imaging, a 525/45 bandpass emission filter (Semrock,\u00a0Rochester,\u00a0\u00a0NY) was used to prevent the 635 nm laser light from interfering with the GCaMP signal. In some cases, we found that the 488 nm imaging laser was sufficient to activate Chrimson and trigger calcium responses in downstream neurons (i.e., ppk23>Chrimson, P1>GCaMP6s). In addition, we found that Chrimson was weakly activated in the absence of retinal (see ArcLight imaging below). However, these phenomena were not observed in PPN1>Chrimson flies, likely due to weak PPN1 or Chrimson transgene expression.\n\n### GCaMP imaging analysis\n\nFor Figures 2, 4 and 6D, calcium imaging data were processed in Fiji. For PPN1, a red anatomy scan (with 561nm laser) measuring CD8::tdTomato fluorescence was taken prior to GCaMP calcium imaging. A maximum intensity Z-projection for the anatomy scan and each GCaMP timepoint was used for analysis. The anatomy projection was used to draw an ROI covering the axonal region in the ventrolateral protocerebrum (\u201canatomical ROI\u201d). A second ROI was drawn in a region lacking both tdTomato and G-CaMP signal (\u201cbackground ROI\u201d). Mean fluorescence levels from the background ROI was subtracted from the anatomical ROI at each GCaMP timepoint resulting in the fluorescence trace over time: Ft. \u25b3F/F(%) was calculated as follows: 100*((Ft-F0)/F0), where F0 is the mean fluorescence intensity during time points 2 to 5. For P1 fibers, \u25b3F/F(%) was calculated in the same way, except that in place of an anatomical CD8::tdTomato scan, \u201canatomical ROIs\u201d covering P1 commisural fibers were drawn using the maximum projection across time of the GCaMP signal. Maximum \u25b3F/F(%) was calculated by subtracting the average \u25b3F/F(%) of the 3 timepoints preceding the stimulation from the maximum \u25b3F/F(%) of the 4 timepoints following the stimulation. Due to unavoidable differences in the background fluorescence between pre- and post-ablation imaging scans, the \u25b3F/F values presented in Figure 6D were calculated without background subtraction.\n\nFor Figure 5, calcium imaging data were processed in Matlab. ROIs were drawn around mAL cell bodies in single slices. \u25b3F/F(%) was calculated as follows: 100*((Ft-F0)/F0), where F0 is the mean fluorescence intensity during time points 2 to 5 and Ft is the fluorescence at each timepoint. Maximum \u25b3F/F(%) was calculated by subtracting the average \u25b3F/F(%) of the 3 timepoints preceding the stimulation from the maximum \u25b3F/F(%) of the 4 timepoints following the stimulation.\n\nFor the heatmap in Figure 5A, \u25b3F values were calculated for each pixel in each slice at each timepoint, generating a 4-dimensional data set. These data were collapsed spatially into a 3-dimensional data set using a maximum intensity projection in the Z dimension. The heat map represents the maximum \u25b3F values that occurred during stimulus (timepoints 6\u20139). This heatmap was overlaid on a grayscale image that is the maximum intensity projection of the average baseline fluorescence (timepoints 2\u20135). The color bar scale represents the minimum (blue) to maximum (dark red) \u25b3F.\n\nFor all GCaMP data, averaging the \u25b3F/F(%) traces across animals required re-sampling the individual \u25b3F/F(%) traces at 10\u2009Hz (completed with Matlab using a linear interpolation), due to the variable duration of timepoints between animals.\n\n### Two-photon laser-mediated ablations\n\nAblations were performed on a Zeiss LSM 780 NLO AxioExaminer microscope. Flies expressed GCaMP6s in both mAL and P1 neurons, visualized using 488 nm light. A rectangular ROI (approximately 5 \u03bcm x 15 \u03bcm) was drawn to cover the width of the tract carrying mAL axons in a single z-section located in the middle of the tract. We then scanned the ROI 10 times (3.15 \u03bcs pixel dwell time) with intense 760 nm light (~50 mW at the front lens). Lesions were considered successful when the mAL axonal tract became discontinous. Mock ablations were performed identically except that the ROI was moved lateral to the mAL axonal tract (at the edge of the optic lobe). All ablations were performed bilaterally. Pre- and post-ablation stimulation of F and M cells were performed on a spinning disk microscope as described above. We waited 10\u201320\u2009min after the ablation to stimulate the fly with ATP (\u201cpost-ablation\u201d condition).\n\n### ArcLight imaging with mAL activation\n\nIsolated adult male flies were fed standard fly food supplemented with all-trans retinal (final concentration 400 \u03bcM) for a minimum of 2 days and were kept in constant darkness until the experiment. Three- to 5-day-old flies were prepared as described above (GCaMP6s imaging). Imaging was performed on a Zeiss LSM 780 NLO AxioExaminer microscope. To find the region of greatest mAL-P1 overlap, Chrimson.mVenus in mAL neurons was briefly imaged with low-intensity 514 nm light, and the ROI to be scanned (approximately 30 \u03bcm\u00a0x 30 \u03bcm) was drawn around the distal mAL axons where they interdigitate with P1 fibers (\u201csignal ROI\u201d). A second region of interest (\u201cbackground ROI\u201d) was drawn in an area lacking ArcLight or Chrimson.mVenus fluorescence. ArcLight was excited with 925 nm light and scanned at approximately 15\u2009Hz. To activate mAL neurons, flies were stimulated 5 times (~5\u2009s/stimulation, ~30\u00a0s between stimulations) with a 635-nm laser (Laserglow,\u00a0\u00a0Canada, ~0.01 mW/mm2). We observed weak responses in flies expressing Chrimson in mAL but not fed retinal. These responses were significantly smaller than the responses in flies fed retinal.\n\n### ArcLight imaging analysis\n\nTo calculate \u25b3F/F of P1 ArcLight signal, the background ROI intensity trace was first subtracted from the signal ROI intensity trace, resulting in F. For each fly, the 5 laser stimulations were then aligned such that laser onset for each stimulation was t = 0 and the average was taken. \u25b3F/F(%) for each animal was calculated as follows: 100*((F-F0)/F0), where F0 is the mean fluorescence intensity over the period from 0.7 to 2.6\u2009s preceding the stimulation. Maximum \u25b3F/F(%) was calculated by subtracting the average \u25b3F/F(%) of 2\u2009s preceding the stimulation from the maximum \u25b3F/F(%) of 2\u2009s following the stimulation.\n\n### Courtship behavior\n\nCourtship behavior experiments were performed essentially as described (Thistle et al., 2012), with the following modifications: male-female assays were recorded for 10\u2009min; assays involving UAS-dTRPA1 were performed at room temperature (~23\u00b0C) and 30\u00b0C; for Figure 3E, due to the relative weakness of UAS>stop>TRPA1myc, male flies were pre-incubated at 30\u00b0C for 5\u2009min before being presented with a female; assays involving Chrimson were performed under white light (~0.05 mW/mm2) with male flies fed 400 \u03bcM all-trans retinal for a minimum of 3 days in the dark. We found that bright white light was sufficient to activate Chrimson and cause behavioral phenotypes.\n\n### Immunohistochemistry\n\nAntibody staining and immunohistochemistry were performed as previously described (Wang et al., 2004). The following primary antibodies were used: rabbit anti-GFP (Invitrogen,\u00a0\u00a0Carlsbad,\u00a0\u00a0CA, 1:1,000), mouse anti-GFP (Invitrogen, Carlsbad,\u00a0\u00a0CA,\u00a0\u00a01:1,000), mouse anti-nc82 (Hybridoma Bank,\u00a0\u00a0Iowa\u00a0\u00a0City,\u00a0IA, 1:500), rabbit anti-RFP (Clontech, Mountain\u00a0\u00a0View,\u00a0\u00a0CA,\u00a0\u00a01:500); rabbit anti-GABA (Sigma-Aldrich,\u00a0\u00a0St.\u00a0\u00a0Louis,\u00a0\u00a0MO, 1:1,000); rabbit anti-FruM (1:100). For GRASP experiments, we used a mouse monoclonal antibody that specifically recognizes reconstituted GFP (Sigma-Aldrich,\u00a0\u00a0St.\u00a0\u00a0Louis,\u00a0\u00a0MO, 1:200). Secondary antibodies were Alexa Fluor goat anti-mouse 488, goat anti-rabbit 488, goat anti-mouse 568, goat anti-rabbit 568 (Life Technologies, Carlsbad,\u00a0\u00a0CA,\u00a0\u00a01:100).\n\n### Transgene generation\n\nTo generate R43D01-LexA, 1157 bp fragment from genomic DNA, including the entire R43D01 tile from the FlyLight collection (Pfeiffer et al., 2012), was amplified using the primers ttgagcacggatttcagcag and ggggtcctcaaatgtgtcgatttgt. This fragment was recombined into the pBPLexA::p65Uw plasmid (Pfeiffer et al., 2010), and inserted into the VK00018 landing site (Venken et al., 2006).\n",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "cfdfa31e-c7a1-47f1-b800-263713257faf",
+      "submission_id": "5c4c3549-46ed-466a-bb06-7ab974b2ab53",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11188.013](https://doi.org/10.7554/eLife.11188.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Excitation and inhibition onto central courtship neurons biases Drosophila mate choice\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mani Ramaswami as Reviewing Editor and a Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKallman et al. present a highly interesting study that elucidates the neuronal circuitry underlying the processing of female and male pheromones. This study is a tour de force, supported by beautiful data. The authors use a wide range of advanced methods including functional imaging, optogenetics, anatomical methods as well as behavioral assays to dissect in detail the neural pathways involved in courtship behavior. The authors show that F cells (PPK25-positive/vGlut-positive), which are tuned to female pheromones, promote courtship behavior, while their anatomical counterpart, the so-called M cells (PPK25-negative/vGlut-negative), which are responsive to male pheromones, inhibit this behavior. Both cell populations represent genetically and anatomically distinct neuronal classes, which enables the authors to study and manipulate them separately from each other. By using highly sophisticated genetic tools, the authors dissect the neuronal pathway of female pheromone processing. They convincingly show that F cells excite P1 neurons in the protocerebrum via PPN1 neurons, which represent pheromone projection neurons that provide the link between F cells in the VNC and P1 neurons in the higher brain to trigger courtship in the end. In addition, the authors study the neuronal pathway underlying male pheromone processing and elucidate the circuitry up to the higher brain. They provide evidence that M cells inhibit P1 neurons via activation of GABAergic mAL neurons in the protocerebrum which results in courtship inhibition. The authors conclude that the balance of an excitatory and inhibitory input onto P1 neurons depends on the activation of F and M cells and therefore contributes to courtship decisions. To their credit, the authors offer rational interpretations that are nuanced with appropriate caveats about alternative explanations and scenarios. In conclusion, this is a very beautiful and impressive study which is comprehensive and convincing. It represents a lot of work and is a welcome addition to the literature.\n\nA few minor concerns that need to be taken care of to improve the current manuscript are enumerated below.\n\n1) Figure 2B: Why is the evoked calcium response significantly higher in P1 neurons when both the male and female pheromones are applied simultaneously in comparison to the application of the female pheromones alone? The authors argue that F cells are the only neurons that activate P1 neurons. However, if this assumption is true, one would not expect a synergistic effect. The authors should attempt to explain this effect and, if necessary, nuance their model accordingly.\n\n2) Figure 3: A double labeling of PPN1 neurons with ppk25-Gal4 or vGlut-Gal4 is missing to label F cells selectively. Since the ppk23-Gal4 lines labels both, M and F cells, it is not clear whether F cells indeed have contacts with PPN1 neurons. In addition, the authors should identify and name the brain area where PPN1 and P1 neurons overlap using the nomenclature published by Ito et al. (2014; Neuron).\n\n3) Figure 5A: The authors write in the figure legend that they monitored the calcium response following artificial activation of M cells via P2X2 expression, while they say in the manuscript that F+M cells were stimulated (subheading \u201cM cells and F cells activate mAL neurons\u201d). Since the authors used the ppk23-LexA line, they indeed stimulated F+M cells. Please modify the figure legend accordingly.\n\n4) Figure 6A: Please identify and label the brain area as mentioned above.\n\n5) Please show a complete scheme of the neuronal circuitry at the end of the manuscript including all known neurotransmitter profiles (GABA, vGlut) and ion channels (PPK23, PPK25) to illustrate and simplify the final outcome of the study. Ideally, the anatomical location of the neurons (leg, VNC and brain) should also be indicated in such a diagram.\n\n6) Paragraph three, Introduction, possibly needs a grammatical correction \u2013 \"one set of neurons that has emerged\u2026 is the P1 neurons.\" \u2013 maybe change to \"is the group of P1 neurons\u201d?\n\n7. Paragraph one of the Results states that \"only the F neurons express the vesicular glutamate transporter.\" These are, in fact specifically labeled by the VGLUT-Gal4 line, which may not be quite the same thing as what is stated.\n",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f615f1e-613c-481c-8208-d8174133f8ff",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C1",
+      "claim": "The ability to distinguish males from females is essential for productive mate selection and species propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to distinguish males from females is essential for productive mate selection and species propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological reproduction that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "8a2c9e5a-39a9-4169-a36a-03dd53cad93e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C2",
+      "claim": "Recent studies in Drosophila have identified different classes of contact chemosensory neurons that detect female or male pheromones and influence courtship decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in Drosophila have identified different classes of contact chemosensory neurons that detect female or male pheromones and influence courtship decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior research findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "1a1f5bbf-b652-4420-a400-6669076a2d26",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C3",
+      "claim": "Sensory neurons that detect female pheromones, but not male pheromones, activate a novel class of neurons in the ventral nerve cord to cause activation of P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that sensory neurons that detect female pheromones, but not male pheromones, activate a novel class of neurons in the ventral nerve cord to cause activation of P1 neurons, male-specific command neurons that trigger courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by calcium imaging and optogenetic experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "0305f3ff-ff07-4076-88b4-9e266a53d486",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C4",
+      "claim": "P1 neurons are male-specific command neurons that trigger courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that sensory neurons that detect female pheromones, but not male pheromones, activate a novel class of neurons in the ventral nerve cord to cause activation of P1 neurons, male-specific command neurons that trigger courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of P1 neurons is based on established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "df607f91-016b-4155-a5e4-5c1696513469",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C5",
+      "claim": "Sensory neurons that detect male pheromones activate central mAL neurons to inhibit P1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sensory neurons that detect male pheromones, as well as those that detect female pheromones, activate central mAL neurons to inhibit P1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by calcium imaging and behavioral experiments in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "454d96b4-15f8-4f8a-a20b-e5762ba38d45",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C6",
+      "claim": "Sensory neurons that detect female pheromones activate central mAL neurons to inhibit P1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sensory neurons that detect male pheromones, as well as those that detect female pheromones, activate central mAL neurons to inhibit P1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by calcium imaging experiments in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "60bfb738-7421-49d6-8fa8-7b313998676d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C7",
+      "claim": "The balance of excitatory and inhibitory drives onto central courtship-promoting neurons controls mating decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrate that the balance of excitatory and inhibitory drives onto central courtship-promoting neurons controls mating decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "21eef729-0b82-4784-b55f-be484e06ff3e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C8",
+      "claim": "Male Drosophila follow, sing to, and copulate with females but not males.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of mating decisions is exemplified by the Drosophila courtship ritual, in which males follow, sing to, and copulate with females but not males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila courtship behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "92de9b1e-aebb-400c-b0e6-6f931a0db9a8",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C9",
+      "claim": "A male-specific splice form of the Fruitless transcriptional regulator (FruM) is expressed in peripheral and central neurons that drive courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advance in elucidating the neural circuits that govern male mating decisions has come from the discovery that a male-specific splice form of the Fruitless trancriptional regulator (FruM) is expressed in peripheral and central neurons that drive courtship behavior (Manoli et al., 2005; Stockinger et al., 2005), arguing that FruM marks neural circuits for courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e20f1187-fada-4fc4-bc8f-45f107e2979e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C10",
+      "claim": "FruM marks neural circuits for courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advance in elucidating the neural circuits that govern male mating decisions has come from the discovery that a male-specific splice form of the Fruitless trancriptional regulator (FruM) is expressed in peripheral and central neurons that drive courtship behavior (Manoli et al., 2005; Stockinger et al., 2005), arguing that FruM marks neural circuits for courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression pattern of FruM and cited research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "a9bd0ea5-d573-4291-bd38-b62adde2adee",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C11",
+      "claim": "Studies of the function of FruM-positive neurons has led to the identification of olfactory and gustatory neurons that detect pheromones, as well as central neurons that drive behavioral subprograms of courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of the function of FruM-positive neurons has led to the identification of olfactory and gustatory neurons that detect pheromones, as well as central neurons that drive behavioral subprograms of courtship (Datta et al., 2008; Ha and Smith, 2006; Kurtovic et al., 2007; Lu et al., 2012; Ruta et al., 2010; Thistle et al., 2012; Toda et al., 2012; von Philipsborn et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "9a856fb2-31ff-4b8d-9a21-9bc40b184c9c",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C12",
+      "claim": "P1 neurons are located in the protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "One set of neurons that has emerged as a central driver of male mating behavior is the group of P1 (a.k.a. pMPe, pMP4 or pC1) neurons in the protocerebrum (Cachero et al., 2010; Kimura et al., 2008; Lee et al., 2002; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "b55786b9-2206-4512-949f-c214001b3266",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C13",
+      "claim": "Inducible activation of P1 neurons leads to sustained male courtship behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducible activation of these neurons leads to sustained male courtship behaviors (Inagaki et al., 2014; Kohatsu et al., 2011; Pan et al., 2012; von Philipsborn et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "293366cd-d650-4f39-bcd9-1dc3e6d13729",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C14",
+      "claim": "P1 neurons are activated by female pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these neurons are activated by female pheromones and this activation is partially inhibited in the presence of the male inhibitory pheromone, cis vaccenyl actate (cVA) (Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2842d718-7b0c-469a-bc12-910b95971a2e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C15",
+      "claim": "P1 neuron activation is partially inhibited in the presence of the male inhibitory pheromone, cis vaccenyl acetate (cVA).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these neurons are activated by female pheromones and this activation is partially inhibited in the presence of the male inhibitory pheromone, cis vaccenyl actate (cVA) (Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2c754c85-8434-4da8-8a54-8af7ce76d84b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C16",
+      "claim": "P1 neurons receive sensory cues signaling females or males and drive courtship decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that P1 neurons receive sensory cues signaling females or males and drive courtship decisions, suggesting that they may be command neurons for courtship behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited experimental data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "455180c1-d24e-410d-9005-2ebec31c021b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C17",
+      "claim": "P1 neurons may be command neurons for courtship behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that P1 neurons receive sensory cues signaling females or males and drive courtship decisions, suggesting that they may be command neurons for courtship behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on prior data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "c689fc6b-a47c-467e-ac22-dbd9e5a417f3",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C18",
+      "claim": "The sensory pathways that converge onto P1 neurons are poorly defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory pathways that converge onto P1 neurons are poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "5b970437-2937-4a99-b6ee-6e1c6fbc52c6",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C19",
+      "claim": "Diverse sensory stimuli contribute to courtship decisions, including visual, auditory, and chemosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse sensory stimuli contribute to courtship decisions, including visual, auditory, and chemosensory cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila courtship.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "81702086-7ad4-447d-a5f7-a9892c9f535e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C20",
+      "claim": "Sex-specific cuticular hydrocarbons act as pheromones detected primarily by contact chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Important sensory cues detected primarily by contact chemosensory neurons are sex-specific cuticular hydrocarbons that act as pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "dd6eb4b4-301f-4c8b-b32b-acec5e5d82fb",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C21",
+      "claim": "Multiple gustatory receptors and neurons have been implicated in pheromone detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple gustatory receptors and neurons have been implicated in pheromone detection (Bray and Amrein, 2003; Koh et al., 2014; Miyamoto and Amrein, 2008; Moon et al., 2009; Watanabe et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "50466d61-143c-4a43-8693-cb7280ebb243",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C22",
+      "claim": "Leg chemosensory neurons expressing the PPK23 pickpocket ion channel detect pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others recently showed that leg chemosensory neurons expressing the PPK23 pickpocket ion channel detect pheromones (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "75b3e36a-4511-4c7f-93a6-f000a0ee8a04",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C23",
+      "claim": "PPK23 is expressed in sensory neurons of many leg chemosensory bristles, with generally two PPK23 cells per bristle.",
+      "claim_type": "EXPLICIT",
+      "source": "PPK23 is expressed in sensory neurons of many leg chemosensory bristles, with generally two PPK23 cells per bristle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about PPK23 expression pattern.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e68a67e0-fbb9-4f5f-99ec-6aae78039b91",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C24",
+      "claim": "One PPK23 cell per bristle responds selectively to male pheromones (M cells) and the other cell to female pheromones (F cells).",
+      "claim_type": "EXPLICIT",
+      "source": "One cell responds selectively to male pheromones (M cells) and the other cell to female pheromones (F cells) (Pikielny, 2012; Thistle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2a29ec5d-05b5-4fa8-a75c-16139e307e40",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C25",
+      "claim": "The PPK25 channel is expressed in one of the two PPK23-positive cells per bristle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PPK25 channel is expressed in one of the two PPK23-positive cells per bristle, and PPK25 is required for cellular and behavioral responses to female pheromones, arguing that it selectively labels F cells (Starostina et al., 2012; Vijayan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "b7f650f9-f6c7-402e-908d-4ee0bf0746fa",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C26",
+      "claim": "PPK25 is required for cellular and behavioral responses to female pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PPK25 channel is expressed in one of the two PPK23-positive cells per bristle, and PPK25 is required for cellular and behavioral responses to female pheromones, arguing that it selectively labels F cells (Starostina et al., 2012; Vijayan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2486318b-ba5c-4cc9-a770-6a75e058df41",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C27",
+      "claim": "PPK25 selectively labels F cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PPK25 channel is expressed in one of the two PPK23-positive cells per bristle, and PPK25 is required for cellular and behavioral responses to female pheromones, arguing that it selectively labels F cells (Starostina et al., 2012; Vijayan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited research about PPK25 expression and function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "26cff5e9-df2f-4665-a9cd-3bd9a089184f",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C28",
+      "claim": "PPK23 cells are Fruitless-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other classes of gustatory neurons implicated in pheromone detection, PPK23 cells are Fruitless-positive (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "fba8c8ff-803c-43fe-8044-879194a5b23a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C29",
+      "claim": "F cells (PPK23+ PPK25+) respond to female pheromones whereas M cells (PPK23+ PPK25-) respond to male pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "By GCaMP6s calcium imaging (Chen et al., 2013) of PPK23 cells in a background in which PPK25 cells were independently labeled, we first confirmed that the PPK25-positive cells (F cells) are tuned to female pheromones and the PPK25-negative cells (M cells) to male pheromones (Figure 1A,B; Table 1 contains genotypes of flies used for all experiments).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by calcium imaging experiments shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2ac10fcb-250e-4324-803b-afaa32f06505",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C30",
+      "claim": "F cells are the only leg neurons that express the vesicular glutamate transporter-Gal4 driver (vGlut-Gal4).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that F cells are the only leg neurons that express the vesicular glutamate transporter-Gal4 driver (vGlut-Gal4) (Daniels et al., 2008), suggesting that the two classes differ in their neurotransmitter profiles and providing an additional marker that selectively labels F cells (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "8157d469-3c2f-4007-83a5-d2888b0fd927",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C31",
+      "claim": "F cells and M cells differ in their neurotransmitter profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that F cells are the only leg neurons that express the vesicular glutamate transporter-Gal4 driver (vGlut-Gal4) (Daniels et al., 2008), suggesting that the two classes differ in their neurotransmitter profiles and providing an additional marker that selectively labels F cells (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential expression of vGlut-Gal4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "78a511cd-2a0e-466b-9ff8-7ded9ce3704b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C32",
+      "claim": "F cells terminate in the ventral nerve cord (VNC).",
+      "claim_type": "EXPLICIT",
+      "source": "F cells and M cells also differ in their axonal projection patterns: F cells terminate in the ventral nerve cord (VNC) whereas M cells also have fibers that project to the subesophageal zone (SEZ) of the central brain (Figure 1E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "72095162-74a0-49e4-b654-46675330654a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C33",
+      "claim": "M cells have fibers that project to the subesophageal zone (SEZ) of the central brain.",
+      "claim_type": "EXPLICIT",
+      "source": "F cells and M cells also differ in their axonal projection patterns: F cells terminate in the ventral nerve cord (VNC) whereas M cells also have fibers that project to the subesophageal zone (SEZ) of the central brain (Figure 1E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "78d65afc-d68e-41f3-ad24-9453385e3dca",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C34",
+      "claim": "Expression of dTRPA1 in F cells promoted male-female courtship upon heat-evoked neural activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Males expressing dTRPA1 in F cells tested at 30\u00b0C (a temperature that activates dTRPA1) had a significantly higher wing extension rate than genetically identical flies tested at the non-activating temperature of 23\u00b0C or control flies at either temperature (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "7afa8d1a-fc0e-4f9f-88ba-bbc4f8b53f1b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C35",
+      "claim": "Males expressing dTRPA1 in M cells had a significantly lower wing extension rate at 30\u00b0C compared to genetic and temperature controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, males expressing dTRPA1 in M cells had a significantly lower wing extension rate at 30\u00b0C compared to genetic and temperature controls (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "f04f1056-5ee3-480e-a76b-71fde7071f99",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C36",
+      "claim": "F and M cells comprise genetically and anatomically distinct chemosensory neuron classes that respond to female or male pheromones and promote or inhibit courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, F and M cells comprise genetically and anatomically distinct chemosensory neuron classes that respond to female or male pheromones and promote or inhibit courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "90c760e1-5548-42c9-bf79-d93ca7cb8690",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C37",
+      "claim": "Activation of F cells triggered calcium increases in P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of F cells triggered calcium increases in P1, demonstrating that sensory neurons that detect female pheromones activate courtship-promoting P1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6e4abcea-b846-4054-a5aa-e84454ae5de8",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C38",
+      "claim": "No significant calcium response was observed in P1 neurons upon M cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed no significant calcium response in P1 neurons upon M cell activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "59d600ea-a86f-45c4-bae2-f81e17a42279",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C39",
+      "claim": "Activating F+M cells using the ppk23-LexA driver caused robust calcium responses in P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating F+M cells using the same ppk23-LexA driver (without expression of Gal80 in F cells) caused robust calcium responses in P1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e5f15d6b-e8f4-47a2-bc2b-a8249106d53a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C40",
+      "claim": "F cells, but not M cells, activate P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments argue that F cells, but not M cells, activate P1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "915050ca-6279-4e2b-b998-61d041df9282",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C41",
+      "claim": "PPN1 neurons have cell bodies on the dorsal surface of the third leg neuromere.",
+      "claim_type": "EXPLICIT",
+      "source": "PPN1 neurons have cell bodies on the dorsal surface of the third leg neuromere, send projections to all leg and wing neuromeres in the VNC, and terminate in the ventrolateral protocerebrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e945421b-52fd-4f11-8f80-fdd2ac85ced1",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C42",
+      "claim": "PPN1 neurons send projections to all leg and wing neuromeres in the VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "PPN1 neurons have cell bodies on the dorsal surface of the third leg neuromere, send projections to all leg and wing neuromeres in the VNC, and terminate in the ventrolateral protocerebrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "d802224f-49b9-4d57-abbc-628256db3d1f",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C43",
+      "claim": "PPN1 neurons terminate in the ventrolateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "PPN1 neurons have cell bodies on the dorsal surface of the third leg neuromere, send projections to all leg and wing neuromeres in the VNC, and terminate in the ventrolateral protocerebrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e9bbafd7-3303-47b9-ac15-7472fb388441",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C44",
+      "claim": "PPN1 dendrites are in close proximity to PPK25 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "PPN1 dendrites are in close proximity to PPK25 axons and PPN1 axons overlap with P1 fibers, as shown by double labeling experiments (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "746ea366-4fdf-4b14-8ac6-47a3327a5b1d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C45",
+      "claim": "PPN1 axons overlap with P1 fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "PPN1 dendrites are in close proximity to PPK25 axons and PPN1 axons overlap with P1 fibers, as shown by double labeling experiments (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "572bbc5b-4f17-4bde-a2d3-f34bbf9744e4",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C46",
+      "claim": "Activating PPN1 with dTRPA1 increased male courtship behavior toward females, as measured by unilateral wing extension rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role in promoting courtship, activating PPN1 with dTRPA1 increased male courtship behavior toward females, as measured by unilateral wing extension rate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "197e8ccb-0e25-4b53-94ff-e90f3b3d95c2",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C47",
+      "claim": "PPN1 is not Fru-positive based on intersectional approaches with Fru-Flp and Fru-LexA.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other neurons of the courtship circuit, PPN1 is not Fru-positive based on intersectional approaches with Fru-Flp and Fru-LexA and PPN1 projections are not sexually dimorphic (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding, though data are not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "bb930b46-d95a-4336-a49e-12e61ff8ceea",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C48",
+      "claim": "PPN1 projections are not sexually dimorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other neurons of the courtship circuit, PPN1 is not Fru-positive based on intersectional approaches with Fru-Flp and Fru-LexA and PPN1 projections are not sexually dimorphic (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding, though data are not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6d207933-eb5f-4354-9418-75d2c45ce23f",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C49",
+      "claim": "F cell stimulation activates PPN1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed calcium increases in PPN1 axons upon F cell stimulation but not M cell stimulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6c73ff6c-eab6-4e8b-afeb-00e3e070c7e3",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C50",
+      "claim": "M cell stimulation does not activate PPN1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed calcium increases in PPN1 axons upon F cell stimulation but not M cell stimulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "0b3da710-4fa7-433a-8741-7e2dce381191",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C51",
+      "claim": "Activating F+M cells using the ppk23-LexA driver triggered robust calcium responses in PPN1.",
+      "claim_type": "EXPLICIT",
+      "source": "As with P1, activating F+M cells using the same ppk23-LexA driver (without expression of Gal80 in F cells) triggered robust calcium responses in PPN1, further arguing that PPN1 neurons are downstream of F cells and not M cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "32dce2a3-a8ec-413e-95fe-9f4edb13367d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C52",
+      "claim": "PPN1 neurons are downstream of F cells and not M cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As with P1, activating F+M cells using the same ppk23-LexA driver (without expression of Gal80 in F cells) triggered robust calcium responses in PPN1, further arguing that PPN1 neurons are downstream of F cells and not M cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "efa5388f-c4f0-4c81-af1e-ed457eb050f7",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C53",
+      "claim": "Activation of PPN1 with red light generated calcium responses in P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of PPN1 with red light generated calcium responses in P1 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by optogenetic activation and calcium imaging in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "a43c5339-5dcd-47df-bed8-b12858cde357",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C54",
+      "claim": "Female pheromones activate a neural pathway from F cells to PPN1 to P1 to drive courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments argue that female pheromones activate a neural pathway from F cells to PPN1 to P1 to drive courtship behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "878c1ee5-b180-4338-ad8c-62c6e4da9c3d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C55",
+      "claim": "mAL neurons are anatomically identifiable by their distinct arborization patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "These were anatomically identifiable as mAL neurons (a.k.a. aDT2, aDTb) by their distinct arborization patterns (Cachero et al., 2010; Ito et al., 2012; Kimura et al., 2005; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on anatomical characterization supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6448292c-d1ec-4ed7-a739-9fee50768297",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C56",
+      "claim": "mAL neurons have been proposed to be sexually dimorphic GABAergic interneurons that convey inhibitory courtship signals to the higher brain in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their anatomy and neurotransmitter profile, mAL neurons have been proposed to be sexually dimorphic GABAergic interneurons that convey inhibitory courtship signals to the higher brain in males (Koganezawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal from prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "86a77c78-0ed4-4998-842c-655ee73195ac",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C57",
+      "claim": "R43D01-Gal4 includes Fru-positive, GABAergic mAL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine these questions, we visually screened Gal4 lines (Jenett et al., 2012) and identified R43D01-Gal4, which includes Fru-positive, GABAergic mAL neurons (Figure 5B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical and immunohistochemical characterization in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "8dbf850b-90de-405c-91d7-70111e8d5c4e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C58",
+      "claim": "M cell axons and mAL dendrites overlap in the SEZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that mAL might be downstream of pheromone-sensing sensory neurons, we found that M cell axons and mAL dendrites overlap in the SEZ (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6eda1c4a-f0cc-447c-8aa3-bd9167accff4",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C59",
+      "claim": "Activating mAL neurons with dTRPA1 suppresses courtship toward females.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of mAL neurons with dTRPA1 greatly suppressed courtship toward females compared to controls (Figure 5C), as measured by unilateral wing extension rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "bbccc89a-207c-46d5-afe6-2b6c10fb5980",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C60",
+      "claim": "Inactivation of mAL neurons with tetanus toxin caused robust male-male chaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of mAL neurons with tetanus toxin caused robust male-male chaining, a behavior in which three or more males serially court each other (Figure 5D), and which was almost never observed in control animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "d0109dd0-05c9-41c3-ba4b-610e000288ee",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C61",
+      "claim": "Expression of RNAi against the vesicular GABA transporter (vGAT) using R43D01-Gal4 caused male-male chaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of RNAi against the vesicular GABA transporter (vGAT) using R43D01-Gal4 also caused male-male chaining (Figure 5D), arguing that GABA release from mAL inhibits courtship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "af015785-4237-4210-a7c5-51314425c10d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C62",
+      "claim": "GABA release from mAL inhibits courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of RNAi against the vesicular GABA transporter (vGAT) using R43D01-Gal4 also caused male-male chaining (Figure 5D), arguing that GABA release from mAL inhibits courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "06beb69e-efdc-478f-a358-c26a7ce9cb04",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C63",
+      "claim": "Activation of mAL inhibits courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of mAL inhibits courtship, whereas inactivation enhances courtship, demonstrating an inhibitory role for mAL in courtship decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "7f009fc2-7e28-4083-9d0c-4fa0ed217a2f",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C64",
+      "claim": "Inactivation of mAL enhances courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of mAL inhibits courtship, whereas inactivation enhances courtship, demonstrating an inhibitory role for mAL in courtship decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "2e7e3b84-b3a0-4ce3-9015-d09a897b2a9c",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C65",
+      "claim": "Both M cells and F cells activated mAL.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, both M cells and F cells activated mAL, arguing that detection of female as well as male pheromones provides an inhibitory courtship drive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "f1f0969d-d9b9-4e1a-a08d-5a3f1be0ded6",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C66",
+      "claim": "Detection of female as well as male pheromones provides an inhibitory courtship drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, both M cells and F cells activated mAL, arguing that detection of female as well as male pheromones provides an inhibitory courtship drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "d448c2d5-561d-4566-a7ae-7555e1a97033",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C67",
+      "claim": "F cells additionally activated PPN1 and P1 courtship-promoting neurons, whereas M cells did not.",
+      "claim_type": "EXPLICIT",
+      "source": "As F cells additionally activated PPN1 and P1 courtship-promoting neurons, whereas M cells did not, this suggests that the balance between excitation and inhibition underlies the decision to court.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from earlier experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "08ad054a-f327-4f1d-b7da-cae364e912bd",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C68",
+      "claim": "The balance between excitation and inhibition underlies the decision to court.",
+      "claim_type": "EXPLICIT",
+      "source": "As F cells additionally activated PPN1 and P1 courtship-promoting neurons, whereas M cells did not, this suggests that the balance between excitation and inhibition underlies the decision to court.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "88c947a5-6f76-492e-a65e-692cc20a36f5",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C69",
+      "claim": "P1 neurons are in close proximity to mAL termini.",
+      "claim_type": "EXPLICIT",
+      "source": "P1 neurons are in close proximity to mAL termini (Figure 6A), suggesting that they may be candidate targets of GABAergic mAL neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "22cb2014-861d-4b0a-be1a-ee186fe53664",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C70",
+      "claim": "P1 neurons may be candidate targets of GABAergic mAL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "P1 neurons are in close proximity to mAL termini (Figure 6A), suggesting that they may be candidate targets of GABAergic mAL neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on anatomical proximity.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "3abe3eac-4f96-4fd6-8c86-3a93b164c7df",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C71",
+      "claim": "Males expressing Rdl RNAi in P1 neurons displayed increased courtship toward other males.",
+      "claim_type": "EXPLICIT",
+      "source": "Males expressing Rdl RNAi in P1 neurons displayed increased courtship toward other males, arguing that P1 neurons receive GABAergic inhibition (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "afead798-8df1-45ec-a4e2-09b414c114b7",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C72",
+      "claim": "P1 neurons receive GABAergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Males expressing Rdl RNAi in P1 neurons displayed increased courtship toward other males, arguing that P1 neurons receive GABAergic inhibition (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "cced2c51-bd89-481d-ab68-ec562aba807a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C73",
+      "claim": "Chrimson-mediated activation of P1 neurons induced courtship behavior in solitary males.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas Chrimson-mediated activation of P1 neurons induced courtship behavior in solitary males, co-activation of P1 and R43D01-Gal4 neurons suppressed this behavior (Figure 6C), arguing that mAL suppresses P1-mediated courtship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "9c33b12e-f196-47d2-b512-1e233383dd4c",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C74",
+      "claim": "Co-activation of P1 and R43D01-Gal4 neurons suppressed courtship behavior in solitary males.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas Chrimson-mediated activation of P1 neurons induced courtship behavior in solitary males, co-activation of P1 and R43D01-Gal4 neurons suppressed this behavior (Figure 6C), arguing that mAL suppresses P1-mediated courtship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "c17746f3-a440-4ae5-a865-b71246db1abb",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C75",
+      "claim": "mAL suppresses P1-mediated courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas Chrimson-mediated activation of P1 neurons induced courtship behavior in solitary males, co-activation of P1 and R43D01-Gal4 neurons suppressed this behavior (Figure 6C), arguing that mAL suppresses P1-mediated courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "52f50b7d-d092-432f-8ebf-1475764cb02d",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C76",
+      "claim": "Simultaneous stimulation of F and M cells caused transient activation of P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simultaneous stimulation of F and M cells caused transient activation of P1 and lesioning mAL axons significantly increased P1 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "907a500e-8f5a-4b99-ad6d-a8b5d87534b4",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C77",
+      "claim": "Lesioning mAL axons significantly increased P1 activation upon simultaneous stimulation of F and M cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simultaneous stimulation of F and M cells caused transient activation of P1 and lesioning mAL axons significantly increased P1 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by calcium imaging experiments in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "3746e11b-631d-4141-95a9-4d053cad8976",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C78",
+      "claim": "mAL neurons inhibit P1 neurons via GABA-A receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that mAL neurons inhibit P1 neurons via GABA-A receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "ab72aee5-938a-447d-909b-01151f8163a2",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C79",
+      "claim": "Chrimson-mediated activation of mAL neurons evoked a rapid increase in ArcLight fluorescence in P1 neurons, indicating hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Chrimson-mediated activation of mAL neurons, using R43D01-LexA (Figure 5\u2014figure supplement 1), evoked a rapid increase in ArcLight fluorescence in P1 neurons, indicating hyperpolarization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by voltage imaging experiments in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "aefbf263-63a6-45eb-9d78-69f70b546ff0",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C80",
+      "claim": "mAL neurons provide an inhibitory drive onto P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that mAL neurons provide an inhibitory drive onto P1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "b8be988d-7cf5-4037-9092-6670f720226a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C81",
+      "claim": "Female pheromones trigger neural pathways that excite and inhibit P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pheromones trigger neural pathways that excite and inhibit P1, with PPN1 providing an excitatory drive onto P1 and mAL providing an inhibitory drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "251c31ea-2d6f-409c-ac1e-0917e4360355",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C82",
+      "claim": "PPN1 provides an excitatory drive onto P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pheromones trigger neural pathways that excite and inhibit P1, with PPN1 providing an excitatory drive onto P1 and mAL providing an inhibitory drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "9e0203d1-b1bc-4f48-a36d-5513526aa8a2",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C83",
+      "claim": "mAL provides an inhibitory drive onto P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pheromones trigger neural pathways that excite and inhibit P1, with PPN1 providing an excitatory drive onto P1 and mAL providing an inhibitory drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "74775cf3-2d57-41b3-a16c-cd32250b3cf2",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C84",
+      "claim": "F cell activation leads to P1 activation and increased courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "F cell activation leads to P1 activation and increased courtship behavior, arguing that the sum of inputs onto P1 produces excitation or that the sequence of inputs, i.e., fast excitation followed by inhibition, provides a temporal window for excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "91501d41-500e-4fd7-8f27-a1c748d5f3b2",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C85",
+      "claim": "The sum of inputs onto P1 produces excitation or the sequence of inputs provides a temporal window for excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "F cell activation leads to P1 activation and increased courtship behavior, arguing that the sum of inputs onto P1 produces excitation or that the sequence of inputs, i.e., fast excitation followed by inhibition, provides a temporal window for excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "1f281ef0-d9db-450e-bea1-3abeea3b9f60",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C86",
+      "claim": "M cells activate mAL neurons to inhibit P1 and inhibit courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, M cells activate mAL neurons to inhibit P1 and inhibit courtship behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "54fb3836-90be-4acc-a777-85e6b0589f10",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C87",
+      "claim": "The balance of excitation and inhibition onto P1 neurons is different following F cell or M cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that the balance of excitation and inhibition onto P1 neurons is different following F cell or M cell activation: F cell activation leads to overall P1 activation whereas M cell activation leads to overall P1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "ef4f6c9d-6919-4d57-9238-ecf932e583f0",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C88",
+      "claim": "F cell activation leads to overall P1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that the balance of excitation and inhibition onto P1 neurons is different following F cell or M cell activation: F cell activation leads to overall P1 activation whereas M cell activation leads to overall P1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "f2cfdf94-e8fa-4a20-983a-2046f7dc2d8e",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C89",
+      "claim": "M cell activation leads to overall P1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies argue that the balance of excitation and inhibition onto P1 neurons is different following F cell or M cell activation: F cell activation leads to overall P1 activation whereas M cell activation leads to overall P1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "499097c4-fcc8-46e7-868c-1b94e4695ab6",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C90",
+      "claim": "P1 neurons respond to visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "P1 also integrates inputs from other sensory systems, as P1 neurons respond to visual stimuli (Kohatsu and Yamamoto, 2015) and olfactory pheromones (Clowney et al., 2015; Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "15365853-d88e-4050-8d81-b6d571300b9b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C91",
+      "claim": "P1 neurons respond to olfactory pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "P1 also integrates inputs from other sensory systems, as P1 neurons respond to visual stimuli (Kohatsu and Yamamoto, 2015) and olfactory pheromones (Clowney et al., 2015; Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "f1e55d88-ed20-4997-935c-2625b61ea288",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C92",
+      "claim": "Diverse sensory stimuli may alter the weight of excitation versus inhibition onto P1 and bias the decision to court.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, diverse sensory stimuli may alter the weight of excitation versus inhibition onto P1 and bias the decision to court.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "a54d15ec-1540-4e60-9f07-f71c51de7864",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C93",
+      "claim": "Altering the weights of excitation or inhibition through experience or evolution is an appealing strategy to dynamically modulate the response to potential mates or to tune attraction to conspecifics.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering the weights of excitation or inhibition through experience or evolution is an appealing strategy to dynamically modulate the response to potential mates or to tune attraction to conspecifics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "c7327311-00b6-40e4-8313-3ea547fd12a1",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C94",
+      "claim": "Excitatory and inhibitory inputs directly converge onto P1 to control courtship decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these studies reveal an elegant strategy used by the nervous system in which excitatory and inhibitory inputs directly converge onto a common output to control a significant behavioral decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "94be7ec9-2929-4bad-8c62-90db204dc1dc",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C96",
+      "claim": "Ablating F cells using diphtheria toxin leaves M cells intact, with one GFP-positive cell per bristle rather than two.",
+      "claim_type": "EXPLICIT",
+      "source": "(left), Ablating F cells (ppk25-Gal4) using diphtheria toxin leaves M cells intact, with one GFP-positive cell/bristle rather than two.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by anatomical imaging in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "9f055c74-3e02-44f8-b714-7a1fe33c43f0",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C102",
+      "claim": "A recent study identified vAB3 neurons as activated by female but not male pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study identified vAB3 neurons, with projections in the first leg neuromere in the VNC, the SEZ and protocerebrum, as activated by female but not male pheromones (Clowney et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "6973f170-a451-47db-9f1c-7790d2421400",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C103",
+      "claim": "A recent study showed that mAL neurons are activated by male and female abdomens.",
+      "claim_type": "EXPLICIT",
+      "source": "This study also showed that mAL neurons are activated by male and female abdomens and provided evidence that mAL inhibits P1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by reference to a recent study (Clowney et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "41bb35f7-3d02-4212-99e8-8b310e58f5e3",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C104",
+      "claim": "A recent study provided evidence that mAL inhibits P1.",
+      "claim_type": "EXPLICIT",
+      "source": "This study also showed that mAL neurons are activated by male and female abdomens and provided evidence that mAL inhibits P1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by reference to a recent study (Clowney et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e029cdb8-a703-4a35-b4dc-c366a6608450",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C105",
+      "claim": "Pheromones activate multiple excitatory and inhibitory interneurons that impinge on P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the studies argue that pheromones activate multiple excitatory and inhibitory interneurons that impinge on P1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "b3e552dd-f0ea-422b-8b47-76632c716944",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C106",
+      "claim": "Expression levels of P2X2 and GCaMP6s may influence the ability to detect responding cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A caveat of our studies is that they rely on ectopic expression of reporters, and expression levels of P2X2 and GCaMP6s may influence the ability to detect responding cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "3cd85586-6c5a-4118-8c03-37017f2a12b0",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C107",
+      "claim": "The observation that M cells activate mAL but not P1 or PPN1 is unlikely due to technical limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observation that M cells activate mAL but not P1 or PPN1 is unlikely due to technical limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from control experiments described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "70c5c4e2-c269-4de6-bb94-dc0e641eb9e9",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C108",
+      "claim": "P1 activity reflects the integration of positive and negative sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pheromones provide excitatory or inhibitory drives onto P1, such that P1 activity reflects the integration of positive and negative sensory inputs, with female pheromones causing net excitation and male pheromones causing net inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "1459e1d1-18f3-45af-b7b2-e0c5e1b69e7c",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C109",
+      "claim": "Female pheromones cause net excitation of P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Pheromones provide excitatory or inhibitory drives onto P1, such that P1 activity reflects the integration of positive and negative sensory inputs, with female pheromones causing net excitation and male pheromones causing net inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "9165fcdc-9289-4dbd-a792-d2786abd1095",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "claim_id": "C110",
+      "claim": "Male pheromones cause net inhibition of P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Pheromones provide excitatory or inhibitory drives onto P1, such that P1 activity reflects the integration of positive and negative sensory inputs, with female pheromones causing net excitation and male pheromones causing net inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3527e5ae-3a56-4198-91a2-54d57e57379f",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "F cells (PPK23+, PPK25+, vGlut+) respond to female pheromones and promote courtship, while M cells (PPK23+, PPK25-) respond to male pheromones and inhibit courtship. These cell types differ in neurotransmitter profiles, axonal projections, and behavioral effects upon activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are well-supported by calcium imaging (Figure 1A,B), anatomical characterization (Figure 1C-E,G), and behavioral experiments (Figure 1F,H). The data demonstrate clear functional and anatomical distinctions between F and M cells, with appropriate controls and statistical significance reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "930928d9-2c8f-43d6-8b73-b8ee0beadaa6",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "F cells, but not M cells, activate P1 courtship-promoting neurons. Activation of F cells triggers calcium increases in P1, while M cell activation produces no significant P1 response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by calcium imaging experiments (Figure 2B) showing differential P1 responses to F versus M cell stimulation. The use of appropriate genetic controls (F+M, F only, M only, mock) strengthens the conclusion. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "3d29b6ff-b697-4327-9e2a-4071fa79991b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PPN1 neurons are a novel class of projection neurons with cell bodies in the VNC and axons terminating in the ventrolateral protocerebrum. PPN1 dendrites are proximal to F cell axons, PPN1 axons overlap with P1 fibers, and PPN1 activation promotes courtship behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are well-supported by anatomical imaging (Figure 3A-C,E,F) and behavioral experiments (Figure 3D). However, C47-C48 lack shown data, creating minor uncertainty. The anatomical and behavioral evidence collectively support PPN1 as a courtship-promoting neuron, though the lack of Fru expression is unusual for this circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "70dd5320-fa09-4035-92f6-d1628779cce7",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "F cells activate PPN1 neurons, which in turn activate P1 neurons, establishing a neural pathway from female pheromone detection to courtship promotion. M cells do not activate PPN1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 are supported by calcium imaging showing F cell activation of PPN1 (Figure 4A) and optogenetic experiments showing PPN1 activation of P1 (Figure 4B). The pathway F\u2192PPN1\u2192P1 is well-established through multiple experimental approaches with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "8f2b6995-ce11-4605-8709-16397c9f8b04",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mAL neurons are GABAergic, Fru-positive interneurons that inhibit courtship. Activation of mAL suppresses courtship toward females, while inactivation or disruption of GABA release causes male-male chaining. M cell axons overlap with mAL dendrites in the SEZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C64 are well-supported by anatomical characterization (Figure 5B, Figure 5\u2014figure supplement 1), behavioral experiments (Figure 5C,D), and genetic manipulations. The bidirectional behavioral effects (activation suppresses, inactivation enhances courtship) provide strong evidence for mAL's inhibitory role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "82cb3f7a-267a-4966-b1a5-77b04f2cdc7b",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both F cells and M cells activate mAL neurons, indicating that detection of both female and male pheromones provides inhibitory courtship drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by calcium imaging experiments (Figure 5E,F) showing mAL activation by both F and M cell stimulation. This surprising finding is well-documented with appropriate controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "a52de235-9667-4c5e-af87-4494fe200701",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "mAL neurons inhibit P1 neurons via GABAergic signaling. P1 neurons are in close proximity to mAL termini, express GABA-A receptors (Rdl), and are hyperpolarized by mAL activation. Lesioning mAL axons increases P1 responses to pheromone stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C80 are well-supported by anatomical proximity (Figure 6A), behavioral genetics (Figure 6B,C), calcium imaging with lesions (Figure 6D), and voltage imaging (Figure 6E,F). The convergence of multiple experimental approaches provides strong evidence for direct GABAergic inhibition of P1 by mAL.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The balance of excitatory and inhibitory drives onto P1 neurons controls mating decisions. F cells provide net excitation (via PPN1) and inhibition (via mAL) to P1, resulting in overall activation. M cells provide only inhibition (via mAL), resulting in overall P1 inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C67-C68, C81-C89, C94, C108-C110 represent the central conclusion of the manuscript. This model is well-supported by the convergence of anatomical, calcium imaging, optogenetic, and behavioral data. The balance model explains how P1 integrates opposing signals to control courtship decisions. Some claims (C85) involve speculation about temporal dynamics, but the core conclusion is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "f4be50bf-3ac4-4300-92a5-e260d6cca5e1",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ablating F cells using diphtheria toxin leaves M cells intact, with one GFP-positive cell per bristle rather than two.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by anatomical imaging (Figure 1\u2014figure supplement 1B) demonstrating selective ablation of F cells while preserving M cells. This validates the genetic strategy used to selectively manipulate M cells in subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "931d142a-3e34-4576-9054-c1473b097b54",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A recent study (Clowney et al., 2015) identified vAB3 neurons activated by female pheromones and showed that mAL neurons are activated by male and female abdomens and inhibit P1. Multiple excitatory and inhibitory interneurons impinge on P1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 accurately cite and summarize findings from Clowney et al., 2015. The authors appropriately acknowledge convergent findings and place their work in context. The claim that multiple interneurons impinge on P1 is supported by both the current study and cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "de410c99-1b9c-4f4e-bf8e-66ec4dc01dea",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Expression levels of P2X2 and GCaMP6s may influence detection of responding cells, but the observation that M cells activate mAL but not P1 or PPN1 is unlikely due to technical limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 represent appropriate methodological caveats and controls. The authors acknowledge potential technical limitations while providing evidence (control experiments) that their key findings are not artifacts. This demonstrates scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "38ff8ae1-e71b-46df-8dc9-8e0ce1cf25a1",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "P1 neurons respond to visual and olfactory stimuli in addition to contact pheromones. Diverse sensory stimuli may alter the balance of excitation versus inhibition onto P1, and this balance could be modulated by experience or evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 are supported by citations to prior work. However, C92-C93 are speculative extrapolations about how the circuit might function more broadly. While reasonable hypotheses, these claims extend beyond the data presented and represent future directions rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    },
+    {
+      "id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c",
+      "content_id": "b6b48ed5-fb80-4ca8-9887-9872cc53f543",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the context of Drosophila courtship behavior, the role of FruM in marking courtship circuits, P1 neurons as courtship command neurons, and PPK23/PPK25 cells as pheromone-detecting sensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C28 represent established knowledge from prior research, appropriately cited. These provide necessary context for the current study. C17-C18 acknowledge gaps in knowledge that motivate the current work. All claims are well-supported by citations or general biological knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:43:55.412510Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fba8c8ff-803c-43fe-8044-879194a5b23a",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "2ac10fcb-250e-4324-803b-afaa32f06505",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "8157d469-3c2f-4007-83a5-d2888b0fd927",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "78a511cd-2a0e-466b-9ff8-7ded9ce3704b",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "72095162-74a0-49e4-b654-46675330654a",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "78d65afc-d68e-41f3-ad24-9453385e3dca",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "7afa8d1a-fc0e-4f9f-88ba-bbc4f8b53f1b",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "f04f1056-5ee3-480e-a76b-71fde7071f99",
+      "result_id": "3527e5ae-3a56-4198-91a2-54d57e57379f"
+    },
+    {
+      "claim_id": "90c760e1-5548-42c9-bf79-d93ca7cb8690",
+      "result_id": "930928d9-2c8f-43d6-8b73-b8ee0beadaa6"
+    },
+    {
+      "claim_id": "6e4abcea-b846-4054-a5aa-e84454ae5de8",
+      "result_id": "930928d9-2c8f-43d6-8b73-b8ee0beadaa6"
+    },
+    {
+      "claim_id": "59d600ea-a86f-45c4-bae2-f81e17a42279",
+      "result_id": "930928d9-2c8f-43d6-8b73-b8ee0beadaa6"
+    },
+    {
+      "claim_id": "e5f15d6b-e8f4-47a2-bc2b-a8249106d53a",
+      "result_id": "930928d9-2c8f-43d6-8b73-b8ee0beadaa6"
+    },
+    {
+      "claim_id": "915050ca-6279-4e2b-b998-61d041df9282",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "e945421b-52fd-4f11-8f80-fdd2ac85ced1",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "d802224f-49b9-4d57-abbc-628256db3d1f",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "e9bbafd7-3303-47b9-ac15-7472fb388441",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "746ea366-4fdf-4b14-8ac6-47a3327a5b1d",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "572bbc5b-4f17-4bde-a2d3-f34bbf9744e4",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "197e8ccb-0e25-4b53-94ff-e90f3b3d95c2",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "bb930b46-d95a-4336-a49e-12e61ff8ceea",
+      "result_id": "3d29b6ff-b697-4327-9e2a-4071fa79991b"
+    },
+    {
+      "claim_id": "6d207933-eb5f-4354-9418-75d2c45ce23f",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "6c73ff6c-eab6-4e8b-afeb-00e3e070c7e3",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "0b3da710-4fa7-433a-8741-7e2dce381191",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "32dce2a3-a8ec-413e-95fe-9f4edb13367d",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "efa5388f-c4f0-4c81-af1e-ed457eb050f7",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "a43c5339-5dcd-47df-bed8-b12858cde357",
+      "result_id": "70dd5320-fa09-4035-92f6-d1628779cce7"
+    },
+    {
+      "claim_id": "878c1ee5-b180-4338-ad8c-62c6e4da9c3d",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "6448292c-d1ec-4ed7-a739-9fee50768297",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "86a77c78-0ed4-4998-842c-655ee73195ac",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "8dbf850b-90de-405c-91d7-70111e8d5c4e",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "6eda1c4a-f0cc-447c-8aa3-bd9167accff4",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "bbccc89a-207c-46d5-afe6-2b6c10fb5980",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "d0109dd0-05c9-41c3-ba4b-610e000288ee",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "af015785-4237-4210-a7c5-51314425c10d",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "06beb69e-efdc-478f-a358-c26a7ce9cb04",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "7f009fc2-7e28-4083-9d0c-4fa0ed217a2f",
+      "result_id": "8f2b6995-ce11-4605-8709-16397c9f8b04"
+    },
+    {
+      "claim_id": "2e7e3b84-b3a0-4ce3-9015-d09a897b2a9c",
+      "result_id": "82cb3f7a-267a-4966-b1a5-77b04f2cdc7b"
+    },
+    {
+      "claim_id": "f1f0969d-d9b9-4e1a-a08d-5a3f1be0ded6",
+      "result_id": "82cb3f7a-267a-4966-b1a5-77b04f2cdc7b"
+    },
+    {
+      "claim_id": "88c947a5-6f76-492e-a65e-692cc20a36f5",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "22cb2014-861d-4b0a-be1a-ee186fe53664",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "3abe3eac-4f96-4fd6-8c86-3a93b164c7df",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "afead798-8df1-45ec-a4e2-09b414c114b7",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "cced2c51-bd89-481d-ab68-ec562aba807a",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "9c33b12e-f196-47d2-b512-1e233383dd4c",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "c17746f3-a440-4ae5-a865-b71246db1abb",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "52f50b7d-d092-432f-8ebf-1475764cb02d",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "907a500e-8f5a-4b99-ad6d-a8b5d87534b4",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "3746e11b-631d-4141-95a9-4d053cad8976",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "ab72aee5-938a-447d-909b-01151f8163a2",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "aefbf263-63a6-45eb-9d78-69f70b546ff0",
+      "result_id": "a52de235-9667-4c5e-af87-4494fe200701"
+    },
+    {
+      "claim_id": "60bfb738-7421-49d6-8fa8-7b313998676d",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "d448c2d5-561d-4566-a7ae-7555e1a97033",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "08ad054a-f327-4f1d-b7da-cae364e912bd",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "b8be988d-7cf5-4037-9092-6670f720226a",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "251c31ea-2d6f-409c-ac1e-0917e4360355",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "9e0203d1-b1bc-4f48-a36d-5513526aa8a2",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "74775cf3-2d57-41b3-a16c-cd32250b3cf2",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "91501d41-500e-4fd7-8f27-a1c748d5f3b2",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "1f281ef0-d9db-450e-bea1-3abeea3b9f60",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "54fb3836-90be-4acc-a777-85e6b0589f10",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "ef4f6c9d-6919-4d57-9238-ecf932e583f0",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "f2cfdf94-e8fa-4a20-983a-2046f7dc2d8e",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "c7327311-00b6-40e4-8313-3ea547fd12a1",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "70c5c4e2-c269-4de6-bb94-dc0e641eb9e9",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "1459e1d1-18f3-45af-b7b2-e0c5e1b69e7c",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "9165fcdc-9289-4dbd-a792-d2786abd1095",
+      "result_id": "7dab5169-1b7e-477f-9ed4-ff8f1589b72a"
+    },
+    {
+      "claim_id": "94be7ec9-2929-4bad-8c62-90db204dc1dc",
+      "result_id": "f4be50bf-3ac4-4300-92a5-e260d6cca5e1"
+    },
+    {
+      "claim_id": "9f055c74-3e02-44f8-b714-7a1fe33c43f0",
+      "result_id": "931d142a-3e34-4576-9054-c1473b097b54"
+    },
+    {
+      "claim_id": "6973f170-a451-47db-9f1c-7790d2421400",
+      "result_id": "931d142a-3e34-4576-9054-c1473b097b54"
+    },
+    {
+      "claim_id": "41bb35f7-3d02-4212-99e8-8b310e58f5e3",
+      "result_id": "931d142a-3e34-4576-9054-c1473b097b54"
+    },
+    {
+      "claim_id": "e029cdb8-a703-4a35-b4dc-c366a6608450",
+      "result_id": "931d142a-3e34-4576-9054-c1473b097b54"
+    },
+    {
+      "claim_id": "b3e552dd-f0ea-422b-8b47-76632c716944",
+      "result_id": "de410c99-1b9c-4f4e-bf8e-66ec4dc01dea"
+    },
+    {
+      "claim_id": "3cd85586-6c5a-4118-8c03-37017f2a12b0",
+      "result_id": "de410c99-1b9c-4f4e-bf8e-66ec4dc01dea"
+    },
+    {
+      "claim_id": "499097c4-fcc8-46e7-868c-1b94e4695ab6",
+      "result_id": "38ff8ae1-e71b-46df-8dc9-8e0ce1cf25a1"
+    },
+    {
+      "claim_id": "15365853-d88e-4050-8d81-b6d571300b9b",
+      "result_id": "38ff8ae1-e71b-46df-8dc9-8e0ce1cf25a1"
+    },
+    {
+      "claim_id": "f1e55d88-ed20-4997-935c-2625b61ea288",
+      "result_id": "38ff8ae1-e71b-46df-8dc9-8e0ce1cf25a1"
+    },
+    {
+      "claim_id": "a54d15ec-1540-4e60-9f07-f71c51de7864",
+      "result_id": "38ff8ae1-e71b-46df-8dc9-8e0ce1cf25a1"
+    },
+    {
+      "claim_id": "0f615f1e-613c-481c-8208-d8174133f8ff",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "8a2c9e5a-39a9-4169-a36a-03dd53cad93e",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "21eef729-0b82-4784-b55f-be484e06ff3e",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "92de9b1e-aebb-400c-b0e6-6f931a0db9a8",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "e20f1187-fada-4fc4-bc8f-45f107e2979e",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "a9bd0ea5-d573-4291-bd38-b62adde2adee",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "9a856fb2-31ff-4b8d-9a21-9bc40b184c9c",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "b55786b9-2206-4512-949f-c214001b3266",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "293366cd-d650-4f39-bcd9-1dc3e6d13729",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "2842d718-7b0c-469a-bc12-910b95971a2e",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "2c754c85-8434-4da8-8a54-8af7ce76d84b",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "455180c1-d24e-410d-9005-2ebec31c021b",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "c689fc6b-a47c-467e-ac22-dbd9e5a417f3",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "5b970437-2937-4a99-b6ee-6e1c6fbc52c6",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "81702086-7ad4-447d-a5f7-a9892c9f535e",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "dd6eb4b4-301f-4c8b-b32b-acec5e5d82fb",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "50466d61-143c-4a43-8693-cb7280ebb243",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "75b3e36a-4511-4c7f-93a6-f000a0ee8a04",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "e68a67e0-fbb9-4f5f-99ec-6aae78039b91",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "2a29ec5d-05b5-4fa8-a75c-16139e307e40",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "b7f650f9-f6c7-402e-908d-4ee0bf0746fa",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "2486318b-ba5c-4cc9-a770-6a75e058df41",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    },
+    {
+      "claim_id": "26cff5e9-df2f-4665-a9cd-3bd9a089184f",
+      "result_id": "e517b5eb-5ec7-4132-bfd0-d9993ecf3c6c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1823 @@
+{
+  "submission": {
+    "id": "4850ff66-fe21-493d-82e0-f204089fe6d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:50:05.700430Z",
+    "updated_at": "2025-11-29T22:50:05.700430Z"
+  },
+  "content": [
+    {
+      "id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "submission_id": "4850ff66-fe21-493d-82e0-f204089fe6d2",
+      "content_type": "manuscript",
+      "content_text": "# Probing the catalytic functions of Bub1 kinase using the small molecule inhibitors BAY-320 and BAY-524\n\n## Authors\n\n- Anna P Baron<sup>1</sup>\n- Conrad von Schubert<sup>1</sup>\n- Fabien Cubizolles<sup>1</sup>\n- Gerhard Siemeister<sup>2</sup>\n- Marion Hitchcock<sup>2</sup>\n- Anne Mengel<sup>2</sup>\n- Jens Schr\u00f6der<sup>2</sup>\n- Amaury Fern\u00e1ndez-Montalv\u00e1n<sup>2</sup>\n- Franz von Nussbaum<sup>2</sup>\n- Dominik Mumberg<sup>2</sup>\n- Erich A Nigg<sup>1</sup> ([ORCID: 0000-0003-4835-5719](https://orcid.org/0000-0003-4835-5719)) \u2020\n\n### Affiliations\n\n1. Biozentrum University of Basel Basel Switzerland\n2. Global Drug Discovery Bayer Pharma AG Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe kinase Bub1 functions in the spindle assembly checkpoint (SAC) and in chromosome congression, but the role of its catalytic activity remains controversial. Here, we use two novel Bub1 inhibitors, BAY-320 and BAY-524, to demonstrate potent Bub1 kinase inhibition both in vitro and in intact cells. Then, we compared the cellular phenotypes of Bub1 kinase inhibition in HeLa and RPE1 cells with those of protein depletion, indicative of catalytic or scaffolding functions, respectively. Bub1 inhibition affected chromosome association of Shugoshin and the chromosomal passenger complex (CPC), without abolishing global Aurora B function. Consequently, inhibition of Bub1 kinase impaired chromosome arm resolution but exerted only minor effects on mitotic progression or SAC function. Importantly, BAY-320 and BAY-524 treatment sensitized cells to low doses of Paclitaxel, impairing both chromosome segregation and cell proliferation. These findings are relevant to our understanding of Bub1 kinase function and the prospects of targeting Bub1 for therapeutic applications.\n\n## Introduction\n\nDuring eukaryotic cell division, the spindle assembly checkpoint (SAC) contributes to ensure the accuracy of chromosome segregation. This evolutionarily conserved surveillance mechanism monitors the status of kinetochore (KT)-microtubule (MT) interactions and delays anaphase onset until all chromosomes have undergone bipolar attachment to the spindle. Both KT-MT interactions and SAC activity are regulated by several KT-associated protein kinases, including Aurora B, Monopolar spindle 1 (Mps1) and Budding uninhibited by benzimidazoles 1 (Bub1) (Maciejowski et al., 2010; Meraldi and Sorger, 2005; Santaguida et al., 2011). SAC activity depends on a diffusible inhibitor of the ubiquitin ligase anaphase-promoting complex/cyclosome (APC/C), termed mitotic checkpoint complex (MCC) (Foley and Kapoor, 2013; Lara-Gonzalez et al., 2012; Musacchio, 2011; Sacristan and Kops, 2015). Once the SAC is silenced in response to chromosome biorientation, APC/C activation then triggers the onset of chromatid separation and mitotic exit, respectively (Funabiki and Wynne, 2013).\n\nThe serine/threonine kinase Bub1 is one of the first proteins to accumulate at unattached kinetochores (Jablonski et al., 1998). Its recruitment is governed by Mps1-dependent phosphorylation of MELT motifs on the KMN complex member KNL-1 (London et al., 2012; Overlack et al., 2015; Shepperd et al., 2012; Vleugel et al., 2013; Yamagishi et al., 2012). Bub1 has been implicated in the regulation of chromosome cohesion, KT-MT interactions and SAC function. In particular, Bub1 was shown to be important for the centromere/KT recruitment of Shugoshin proteins (Sgo1 and Sgo2), the chromosomal passenger complex (CPC) comprising Aurora B kinase, CENP-E, CENP-F, BubR1, Mad1 and Mad2 (Boyarchuk et al., 2007; Kitajima et al., 2005; Klebig et al., 2009; Liu et al., 2013; Perera et al., 2007; Taylor and McKeon, 1997).\n\nSo far, only few substrates of Bub1 have been identified. Best characterized is the phosphorylation of histone H2A on threonine 120 (T120) (Kawashima et al., 2010). Phosphorylation of this site by Bub1 can be demonstrated not only in vitro but also in living cells (Kawashima et al., 2010; Lin et al., 2014; Sharp-Baker and Chen, 2001). Histone H2A phosphorylation on T120 triggers the centromere localization of Sgo1, which in turn recruits the CPC subunit Borealin (Kawashima et al., 2010; Liu et al., 2013; Tsukahara et al., 2010; Yamagishi et al., 2010). Centromere recruitment of the CPC is further enhanced by the kinase Haspin, which phosphorylates histone H3 at T3 and triggers the centromere binding of the CPC component Survivin (Du et al., 2012; Kelly et al., 2010; Wang et al., 2010). Another intriguing potential substrate of Bub1 is the APC/C co-activator Cdc20 (Lin et al., 2014; Tang et al., 2004a). Whether Bub1 phosphorylates Cdc20 in living cells remains to be determined, but recent studies strongly suggest that Bub1 binding to Cdc20 is important for SAC function (Di Fiore et al., 2015; Vleugel et al., 2015).\n\nGenetic, biochemical or siRNA-mediated depletion of Bub1 protein clearly interferes with chromosome alignment and SAC activity, but the importance of Bub1 catalytic activity has long been subject to debate (Bolanos-Garcia and Blundell, 2011; Elowe, 2011; Funabiki and Wynne, 2013). For example, while a Bub1 mutant completely lacking the kinase domain is checkpoint proficient in Saccharomyces cerevisiae (Fernius and Hardwick, 2007), conflicting data have been reported on the importance of Bub1 kinase activity in fission yeast Schizosaccharomyces pombe (Rischitor et al., 2007; Vanoosthuyse et al., 2004; Yamaguchi et al., 2003). Similarly, in Xenopus egg extracts, catalytically inactive Bub1 can sustain the SAC (Sharp-Baker and Chen, 2001), although kinase-proficient Bub1 may be more efficient (Boyarchuk et al., 2007; Chen, 2004). In mammalian cells, several studies point to the conclusion that Bub1 mutants devoid of catalytic activity are able to restore many, albeit not all, aspects of chromosome congression and SAC function (Klebig et al., 2009; McGuinness et al., 2009; Perera and Taylor, 2010a; Ricke et al., 2012).\n\nTo address the role of Bub1 kinase activity in mammalian mitosis, we have made use of two novel small molecule inhibitors, BAY-320 and BAY-524. Using biochemical and cellular assays, we show that these ATP-competitive inhibitors potently and specifically block human Bub1 both in vitro and in living cells. By comparing phenotypes provoked by Bub1 kinase inhibition and Bub1 protein depletion, we are able to differentiate between catalytic and non-catalytic functions of Bub1. Our data indicate that Bub1 catalytic activity is largely dispensable for chromosome alignment and SAC function, arguing that Bub1 largely operates as a scaffolding protein. However, even though Bub1 inhibition per se exerts only minor effects on mitotic fidelity, BAY-320 and BAY-524 treatment sensitizes cells to clinically relevant low doses of Paclitaxel, resulting in remarkable impairment of chromosome segregation and cell proliferation.\n\n## Results\n\n### BAY-320 and BAY-524 specifically inhibit Bub1 kinase\n\nThe chemical synthesis of small molecule inhibitors against Bub1 has recently been described (Hitchcock et al., 2013). In this study, we used the two substituted benzylpyrazole compounds, 2-[5-cyclopropyl-1-(4-ethoxy-2,6-difluorobenzyl)-4-methyl-1H-pyrazol-3-yl]-5-methoxy-N-(pyridin-4-yl)pyrimidin-4-amine and 2-[1-(4-ethoxy-2,6-difluorobenzyl)-5-methoxy-4-methyl-1H-pyrazol-3-yl]-5-methoxy-N-(pyridin-4-yl)pyrimidin-4-amine, abbreviated as BAY-320 and BAY-524, respectively (Figure 1A). In vitro inhibition of Bub1 by BAY-320 and BAY-524 was demonstrated by monitoring both Bub1 autophosphorylation and phosphorylation of histone H2A on T120 (Kawashima et al., 2010) (Figure 1B). In presence of 2 mM ATP, both compounds inhibited the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085) with an IC50 of 680 \u00b1 280 nM and 450 \u00b1 60 nM, respectively (Supplementary file 1). When tested against a panel of 222 protein kinases, BAY-320 showed only modest cross reactivity with other kinases, even when used at a concentration of 10 \u03bcM (Supplementary file 2). Furthermore, quantitative measurements of BAY-320 interactions with 403 human kinases, using an active site-directed competition-binding assay, showed exquisite binding selectivity for Bub1 (Supplementary file 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig1-v1.jpg)\n\n**Figure 1.:** (A) Chemical structure of ATP-competitive inhibitors BAY-320 and BAY-524. (B) In vitro kinase assays showing dose-dependent inhibition of Bub1 kinase activity towards histone H2A. The\u00a0assays were performed by mixing human wild-type (WT) or kinase-dead (KD) LAP-Bub1, ectopically expressed in and purified from mitotic HEK 293T cells, with recombinantly expressed histone H2A as a substrate, \u03b3-32P-ATP and increasing doses of the Bub1 inhibitors BAY-320 and BAY-524. After 30 min at 30\u00b0C, reactions were stopped and analyzed by gel electrophoresis. Bub1 autophosphorylation and H2A phosphorylation were visualized by autoradiography (32P) and protein levels monitored by Coomassie brilliant blue staining (CBB). Histone H2A-T120 phosphorylation (pT120-H2A) was detected by phospho-antibody probing of Western blots (WB) and Bub1 was monitored as control. (C, D) Inhibition of Bub1 reduces histone H2A-T120 phosphorylation. Asynchronous cultures of HeLa S3 (left panels) and RPE1 cells (right panels) were treated with the proteasomal inhibitor MG132 for 2\u00a0hr, followed by the addition of 3.3 \u03bcM nocodazole and increasing doses of BAY-320 (C) or BAY-524 (D) for 1 hr. The\u00a0cells were fixed and analyzed by immunofluorescence microscopy (IFM). Scatter plots show centromeric levels of pT120-H2A (n\u00a0=\u00a019\u201328 cells per condition). Bars represent mean values. (E) HeLa S3 cells were synchronized by thymidine block, released for 10 hr in the presence of solvent (control), 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524 and analyzed by quantitative IF (top panels). Cells transfected with mock (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr were synchronized and analyzed in parallel (bottom panels). The\u00a0cells were stained with antibodies raised against Bub1 and pT120-H2A. Human CREST serum was used to identify centromeres and DNA was stained with DAPI; scale bars represent 10 \u00b5m. (F) Histograms showing the average signal intensities of centromeric pT120-H2A observed in the experiments described in (E); n\u00a0=\u00a073\u2013107 cells per condition. Error bars represent standard error of the mean (SEM). (G) To monitor the efficacy of Bub1 kinase inhibition within cells, HeLa S3 cells were synchronized by thymidine block and released for 14 hr in the presence of 3.3 \u03bcM nocodazole as well as Bub1 inhibitors or solvent as indicated. Prometaphase-arrested cells were harvested by shake-off and mitotic cell extracts were treated with or without phosphatase inhibitor for 30 min at 30\u00b0C. Histone isolation was followed by Western blot analysis of pT120-H2A. Equal loading was monitored by Ponceau S staining.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B)\u00a0BAY-320 and BAY-524 treatment coordinately reduces histone H2A-T120 phosphorylation as well as Aurora B centromere/KT binding, until maximal Bub1 inhibition is reached at 10 \u03bcM. Asynchronous cultures of HeLa S3 (left panels) and RPE1 cells (right panels) were treated with the proteasomal inhibitor MG132 for 2\u00a0hr, followed by the addition of 3.3 \u03bcM nocodazole and increasing doses of BAY-320 (A) or BAY-524 (B) for 1 hr. The\u00a0cells were fixed and analyzed by immunofluorescence microscopy (IFM). Scatter plots show centromere/KT levels of pT120-H2A and Aurora B (n\u00a0=\u00a019\u201328 cells per condition). Bars represent mean values. (C) Untreated HeLa cells (red) or HeLa cells treated with nocodazole for 16\u00a0hr, followed by various concentrations of BAY-320 (green) or solvent (black) for 1\u00a0hr, were fixed and analyzed by quantitative in-cell western. Plot shows total pT120-H2A signal intensity. Grey area highlights the concentration range between 3 and 10 \u03bcM. The IC50 (reflecting the inhibition of Bub1 kinase activity compared to control and normalized to cell number) was determined to be 379 +/- 156 nM.\n\nTo test whether BAY-320 and BAY-524 also inhibit Bub1 in intact cells, increasing doses of inhibitors were applied to mitotically synchronized hTERT-RPE1 (RPE1) and HeLa cells, and phospho-histone H2A-T120 staining at kinetochores was monitored by immunofluorescence (Figure 1C\u2013F and Figure 1\u2014figure supplement 1A, B) and in-cell western assays (Figure 1\u2014figure supplement 1C). These studies revealed that near-maximal inhibition of Bub1 could be achieved by using BAY-320 at 3\u201310 \u03bcM and BAY-524 at 7\u201310 \u03bcM and these concentrations were therefore used in all future experiments on intact cells. To corroborate the above immunofluorescence data, histones were purified from control and inhibitor-treated cells. Examination of histone H2A phosphorylation by Western blotting revealed that treatment of cells with either BAY-320 or BAY-524 drastically reduced T120 phosphorylation (Figure 1G). Thus, BAY-320 and BAY-524 act as potent and selective inhibitors of Bub1 kinase in both biochemical and cellular assays and thus constitute attractive tools to study Bub1 catalytic function during mitosis.\n\n### Impact of Bub1 kinase inhibition and Bub1 depletion on mitotic progression\n\nNext, we set out to directly compare the impact of Bub1 kinase inhibition with the previously reported consequences of Bub1 depletion (Boyarchuk et al., 2007; Johnson et al., 2004; Kitajima et al., 2005; Klebig et al., 2009; Logarinho et al., 2008; Meraldi and Sorger, 2005; Tang et al., 2004b) or genetic Bub1 knock-out (Jeganathan et al., 2007; Perera and Taylor, 2010a; Perera et al., 2007; Ricke et al., 2012). In a first series of experiments, we used time-lapse imaging to compare progression through mitosis in asynchronously growing HeLa and RPE1 cells in response to either Bub1 inhibition or siRNA-mediated Bub1 depletion. In line with previous results (Kitajima et al., 2005; Tang et al., 2004b), depletion of Bub1 from HeLa cells significantly prolonged duration of mitosis, due to delayed chromosome alignment and delays in prometa- and metaphase (Figure 2A and C, Figure 2\u2014figure supplement 1A). In stark contrast, treatment with either BAY-320 or BAY-524 provoked at most minor effects on mitotic progression, marked by a short delay of anaphase onset (Figure 2B and C, Figure 2\u2014figure supplement 1B and C). Furthermore, in contrast to aneuploid HeLa cells, diploid RPE1 cells were not significantly affected by either Bub1 inhibition or depletion (Figure 2D and Figure 2\u2014figure supplement 1D). Efficiency of siRNA-mediated depletion was monitored by Western blotting (Figure 2\u2014figure supplement 1E). Flow-cytometric analyses confirmed that Bub1 depletion from HeLa cells causes an increase in the G2/M population of HeLa but not RPE1 cells and that Bub1 inhibition by BAY-320 or BAY-524 did not detectably affect cell cycle profiles in either cell line (Figure 2\u2014figure supplement 1F and G). We conclude that the\u00a0inhibition of Bub1 kinase activity in either HeLa or RPE1 cells produces at most subtle effects on mitotic progression, whereas Bub1 depletion exerts more profound effects, at least in HeLa cells. These results are consistent with the demonstration that Bub1 kinase activity is not required for the development and viability of mice (Perera and Taylor, 2010b; Ricke et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig2-v1.jpg)\n\n**Figure 2.:** (A, B)\u00a0Representative stills from time-lapse recordings of asynchronously growing cultures of HeLa S3 cells stably expressing GFP-tagged histone H2B. The\u00a0cells were either treated with Bub1 inhibitors (3 \u03bcM BAY-320 and 7 \u03bcM BAY-524) or transfected with control (Gl2) or Bub1 siRNA for 48 hr prior to time-lapse microscopy. Scale bars represent 10 \u00b5m. (C, D) Graphs show the cumulative frequency of mitotic duration determined by cell rounding/flattening. Indicated averages represent the time spent in mitosis (n\u00a0=\u00a0100 cells per condition).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Representative stills from time-lapse recordings described in Figure 2. Micrographs show fluorescence or DIC images of HeLa S3 cells stably expressing GFP-tagged histone H2B. Time is indicated relative to mitotic entry. (C, D) Hela S3 cells stably expressing GFP-H2B were treated with solvent (control) or Bub1 inhibitors at indicated doses and monitored by fluorescence time-lapse imaging. Dot plots show the time from mitotic entry to anaphase onset; bars represent mean values (n\u00a0=\u00a080 cells per condition). (E) Representative Western blots show Bub1 depletion efficiencies. Asynchronous cultures of HeLa S3 or RPE1 cells were transfected with control (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr, harvested and analyzed by Western blotting; \u03b1-tubulin served as loading control. (F, G) Cell cycle distribution of exponentially growing HeLa S3 (F) and RPE1 (G) cells upon treatment with solvent (control), 3 \u03bcM BAY-B320, 7 \u03bcM BAY-B524 or after Bub1 protein depletion (siGl2 served as control). After 48 hr of treatment or siRNA oligonucleotide transfection cells were permeabilized and DNA was stained with propidium iodide. Cellular DNA content was determined using flow cytometry and frequencies of G1, S and G2/M phases were determined. Considering that Bub1 inhibition did not influence cell cycle profiles in HeLa and RPE1 cells and that the increase in the G2/M population after depletion of Bub1 from HeLa cells correlated with an increase in mitotic duration (Figure 2), we anticipate that the increase in the corresponding G2/M population mostly reflects mitotic cells.\n\n### Bub1 kinase regulates Shugoshin localization and chromatid cohesion\n\nOne of the most interesting effects of Bub1 depletion described so far relates to sister chromatid cohesion (Boyarchuk et al., 2007; Fernius and Hardwick, 2007; Kitajima et al., 2005; Tang et al., 2004b). In particular, depletion of Bub1 was shown to cause persistent arm cohesion and a redistribution of Sgo proteins from centromeres to chromosome arms (Kitajima et al., 2005). To directly demonstrate a role for Bub1 kinase activity in sister chromatid cohesion, we analyzed chromosome spreads prepared from mitotic HeLa cells or RPE1 cells after treatment with Bub1 inhibitors (Figure 3A, Figure 3\u2014figure supplement 1A) or Bub1-specific siRNA for comparison (Figure 3B and Figure 3\u2014figure supplement 1B). While mitotic chromosome spreads from nocodazole-treated control cells showed the expected X-shape structure, indicative of centromere cohesion, most cells treated with either Bub1 inhibitors or Bub1 siRNA showed sister chromatids whose arms remained paired (Figure 3A\u2013C and Figure 3\u2014figure supplement 1). Moreover, centromeric levels of Sgo1 and Sgo2 were reduced to ~20% of control values in BAY-320 or BAY-524 treated cells (Figure 3D and E) and, concomitantly, a significant redistribution of Sgo2 to chromosome arms could be observed (Figure 3F and G). We thus conclude that Bub1 catalytic activity contributes to the regulation of sister chromatid cohesion and the localization of Sgo proteins.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig3-v1.jpg)\n\n**Figure 3.:** (A, B)\u00a0HeLa S3 cells were synchronized by thymidine block and released for 12 hr in the presence of 3.3 \u03bcM nocodazole as well as solvent (control), 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. Cells transfected with mock (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr were synchronized and analyzed in parallel. Micrographs show representative chromosome spreads prepared from mitotic cells. Insets show magnifications of chromosomes; they illustrate representative chromatid cohesion states. (C) Quantification of results of the experiments described in (A) and (B) as well as Figure 3\u2014figure supplement 1; n\u00a0= 200 cells per condition. (D) HeLa S3 cells were released from a thymidine arrest into solvent, 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. The\u00a0cells were fixed and stained for Sgo1, Sgo2, CREST and DNA (DAPI) and analyzed by IFM. Scale bars represent 10 \u00b5m. (E)\u00a0Histogram showing average centromeric Sgo levels observed in the experiments described in (A); n\u00a0=\u00a043\u2013120 cells per condition. Error bars represent SEM. (F)\u00a0Asynchronous cultures of RPE1 cells were treated with indicated doses of Bub1 inhibitors for 3 hr, fixed and analyzed by IFM. Scale bar represents 5 \u00b5m. (G) Dot plot showing the quantitative results of the experiment shown in (F). Sgo2 levels at centromeres and chromosome arms were determined in metaphase cells (n\u00a0=\u00a0150 centromere/arm regions from 15 different cells). Bars represent mean values.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B)\u00a0RPE1 cells were synchronized by thymidine block (4 mM) and released for 12 hr in the presence of 3.3 \u03bcM nocodazole as well as solvent (control), 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. The\u00a0cells transfected with mock (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr were synchronized and analyzed in parallel. Micrographs show representative chromosome spreads prepared from mitotic cells. Insets show magnifications of chromosomes; this illustrates representative chromatid cohesion states. Data relate to Figure 3C. Scale bars represent 10 \u00b5m.\n\n### Bub1 inhibition affects CPC localization\n\nIn addition to preserving sister chromatid cohesion, Sgo1 and Sgo2 play important roles in the recruitment of the CPC, comprising Aurora B kinase (Kawashima et al., 2007; Tsukahara et al., 2010). This prompted us to investigate the impact of Bub1 inhibition on Aurora B localization and activity. Consistent with the marked effects on centromere localization of Sgo1/2, we also observed significant effects of Bub1 inhibition on Aurora B localization. After treatment of HeLa cells with BAY-320 or BAY-524, all CPC subunits examined were partially displaced from centromeres (Figure 4A and B, Figure 4\u2014figure supplement 1A). While Bub1 inhibition reduced centromeric levels of Aurora B, Borealin and INCENP by ~50% (Figure 4A and B, left panels), depletion of Bub1 lowered centromere levels of these CPC components by ~70% (Figure 4A and B, right panels). We emphasize that, due to a lack of resolution, these experiments do not discriminate between centromere- and KT-associated pools of the CPC.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig4-v1.jpg)\n\n**Figure 4.:** (A, C) Untreated or siRNA transfected (siBub1, siGl2 for control) HeLa S3 cells were synchronized by thymidine block and released for 10 hr, as indicated (BAY-320 was used at 3 \u03bcM, BAY-524 at 7 \u03bcM). Cells were fixed and stained for Aurora B, Borealin, INCENP, pS7-CENP-A, pS10-histone H3, MCAK, CREST and DNA (DAPI) and analyzed by IFM. Scale bars represent 10 \u00b5m. (B, D) Histograms show quantitative results of the experiments described in (A, C). Measurements represent centromeric levels except for pS10-histone H3 signals, which was monitored along chromosome arms (n\u00a0=\u00a040\u2013113 cells per condition). Scale bars represent 10 \u00b5m, error bars represent SEM. (E)\u00a0FRET experiments were performed on HeLa Kyoto cells stably expressing chromatin (H2B)- or centromere (CENP-B)-fused FRET reporters for Aurora B activity. Cells were synchronized in mitosis by 6 hr treatment with 3.3 \u03bcM nocodazole, before the indicated inhibitors and 20 \u03bcM MG132 were added prior to live fluorescence microscopy. Heat-map represents the phosphorylation status of the reporter. Scale bar represents 10 \u00b5m. (F) Left panel: scatter plot depicts CFP/FRET emission ratios of reporter targeted to chromatin (H2B; n\u00a0=\u00a023\u201352 cells per condition). Right panel: scatter plot depicts TFP/FRET emission ratios of reporter targeted to centromeres (CENP-B, n\u00a0=\u00a016\u201334 cells per condition). Bars represent mean values; ***p<0.001 (from unpaired two-tailed Student\u2019s t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B)\u00a0Panels relate to the quantitative data shown in Figure 4B and D. Scale bars represent 10 \u00b5m. (C)\u00a0HeLa Kyoto cells stably expressing the chromatin-targeted Aurora B FRET reporter were transfected with control (Gl2) or Bub1 siRNA oligonucleotides for 48 hr and synchronized by 6 hr treatment with 3.3 \u03bcM nocodazole, before 20 \u03bcM MG132 were added prior to live fluorescence microscopy. Top panel: heat-map represents the phosphorylation status of the reporter. Scale bar represents 10 \u03bcm. Bottom panel: dot plot shows measured CFP/FRET emission ratios (n\u00a0=\u00a014\u201319 cells per condition). Bars represent mean values; ***p < 0.001 (from unpaired two-tailed Student\u2019s t-test.\n\nTo examine the impact of Bub1 inhibition on the catalytic activity of Aurora B at both centromeres and chromosome arms, we next monitored phosphorylation of CENP-A Ser7 (Zeitlin et al., 2001) and histone H3 Ser10 (Hirota et al., 2005; Hsu et al., 2000), respectively. Compared to control cells, both Bub1 inhibition and depletion reduced CENP-A and histone H3 phosphorylation by ~50% and ~10\u201320%, respectively (Figure 4C and D, Figure 4\u2014figure supplement 1B), suggesting that interference with Bub1 primarily affects Aurora B activity at centromeres. This conclusion was corroborated by showing that both inhibition and depletion of Bub1 reduced the centromere association of the Aurora B effector protein MCAK (Andrews et al., 2004) by ~50% (Figure 4C and D). Furthermore, use of biosensors for Aurora B activity (Fuller et al., 2008) revealed a reduction in fluorescence resonance energy transfer (FRET) ratios for sensors tethered to either chromosome arms (through fusion to H2B) or centromeres (through fusion to histone CENP-B) (Figure 4E and F, Figure 4\u2014figure supplement 1C). Collectively, these observations demonstrate that Bub1-dependent phosphorylation plays a major role in the regulation of Aurora B localization and activity. However, neither Bub1 inhibition nor Bub1 depletion resulted in complete removal of Aurora B from centromeres, prompting us to examine the relative contributions of Bub1 and Haspin to the process of CPC recruitment.\n\n### Bub1 and Haspin cooperate to recruit CPC to centromeres\n\nWhile inhibition of Bub1 by BAY-320 or BAY-524 or inhibition of Haspin by 5-Iodotubercidin (De Antoni et al., 2012) similarly reduced centromere levels of the CPC components Aurora B, Borealin and INCENP to ~40%, combined inhibition of both kinases resulted in a ~80% reduction in CPC levels at centromeres (Figure 5A and B, Figure 5\u2014figure supplement 1A). As an important control, treatment of cells with only BAY-320 or BAY-524 did not detectably affect the phosphorylation of the Haspin substrate histone H3 (T3), attesting to the specificity of the two Bub1 inhibitors (Figure 5A and B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig5-v1.jpg)\n\n**Figure 5.:** (A) HeLa S3 cells were released from a thymidine block into 3.3 \u00b5M nocodazole, before they were additionally treated for 2 hr with the proteasomal inhibitor MG132 and indicated kinase inhibitors. The Haspin inhibitor 5-iodotubercidin (5-ITu [De Antoni et al., 2012]) was used at a concentration of 2.5 \u00b5M, BAY-320 at 3 \u03bcM and BAY-524 at 7 \u03bcM. Cells were fixed, stained for pT3-H3, Aurora B, Borealin, INCENP, CREST and DNA (DAPI) and analyzed by IFM. Anti-pT3-H3 antibody was used to monitor Haspin and Bub1 inhibition, respectively. Scale bar represents 10 \u00b5m. (B) Histograms show average centromeric (AurB, Borealin, INCENP) or chromosome arm (pT3-H3) signal intensities observed in the experiments shown in (A); n\u00a0=\u00a020\u2013100 cells per condition. Error bars represent SEM, ***p < 0.001 (from unpaired two-tailed Student\u2019s t-test). (C) RPE1 cells expressing endogenously EGFP-tagged Aurora B were incubated with the indicated drugs for several hours before EGFP signals were recorded by live fluorescence imaging. Scale bar represents 5 \u00b5m. (D) Scatter plots depict Aurora B-EGFP signal intensities at centromeres or arms after treatment with indicated drugs (n\u00a0=\u00a084\u2013185 centromeres/arm regions from 5\u20136 cells per condition). Bars represent mean values. For comparison, dashed lines mark the mean values of Aurora B-EGFP signal intensities at arms and centromeres in control cells. Measurements relate to the experiment shown in (C).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Panels relate to the quantitative data shown in Figure 5B. Scale bars represent 5 \u00b5m. (B) Asynchronous cultures of RPE1 cells expressing endogenously EGFP-tagged Aurora B were treated with indicated doses of Bub1 inhibitors for 3 hr, fixed and analyzed by IFM. Scale bar represents 5 \u00b5m. (C) Dot plots show the quantitative results of the experiment shown in (C). EGFP-Aurora B and Sgo2 levels at centromeres and chromosome arms were determined in metaphase cells (n\u00a0=\u00a0100 centromeres\u00a0or\u00a0arm regions from 10 different cells). Bars represent mean values.\n\nTo quantify CPC localization over chromosome arms, analysis of fixed cells proved inadequate. We therefore used an RPE1 cell line expressing one endogenous allele of Aurora B tagged with EGFP (von Schubert et al., 2015) to monitor the subcellular localization of this kinase in living cells. Following Bub1 inhibition, Aurora B-EGFP levels at chromosome arms increased approximately twofold, concomitant with the described reduction of Aurora B at centromeres (Figure 5C and D) (Boyarchuk et al., 2007; Ricke et al., 2012). Interestingly, this change in localization showed a strong correlation with the redistribution of Sgo2 (Figure 5\u2014figure supplement 1B and C). In contrast, treatment of cells with the Haspin inhibitor 5-Iodotubercidin did not induce any significant redistribution of Aurora B from centromeres to chromosome arms; instead, inhibition of Haspin caused an overall reduction of EGFP signals at both centromeres and chromosome arms (Figure 5C and D). Combined inhibition of Bub1 and Haspin displaced Aurora B from both centromeres and chromosome arms (Figure 5C and D), in line with the analysis of fixed cells described above. Taken together, these data corroborate the notion that Bub1 and Haspin cooperate in the recruitment of CPC to centromeres through phosphorylation of histone H2A-T120 and histone H3-T3, respectively. In addition, they reveal a role for Bub1 kinase activity, but not Haspin, in restricting CPC localization to the centromere.\n\nConsidering the role of Aurora B kinase in the regulation of KT-MT interactions and SAC signaling, the above results raised the question of what contributions Bub1 activity might possibly make to chromosome congression and/or the SAC. Although our initial analyses had not revealed a major impact of BAY-320 or BAY-524 on the overall timing of mitotic progression (Figure 2), we considered the possibility that inhibition of Bub1 might provoke compensatory effects on mitotic timing, notably a delay in congression and a concomitant acceleration of mitotic exit. According to such a scenario, effects on timing might conceivably cancel each other. In support of this possibility, we emphasize that the\u00a0inhibition of mitotic kinases with pleiotropic functions have previously been shown to provoke opposing phenotypes (Santaguida et al., 2011; von Schubert et al., 2015). To explore the possibility of compensatory effects of Bub1 inhibition, we thus carried out more detailed analyses of mitotic progression, notably KT-recruitment of SAC components, SAC signaling and chromosome congression.\n\n### Bub1 inhibition produces minor effects on SAC signaling in HeLa or RPE1 cells\n\nDepletion of Bub1 is known to weaken SAC signaling in human cells (Klebig et al., 2009; Meraldi and Sorger, 2005; Perera et al., 2007). To test the impact of Bub1 catalytic activity on SAC function, we first analyzed KT levels of Mad1, Mad2 and BubR1 in BAY-320 or BAY-524 treated cells. With the possible exception of a very minor effect on BubR1, the localization of none of these SAC proteins was significantly affected by Bub1 inhibition (Figure 6A and B, Figure 6\u2014figure supplement 1A). In sharp contrast, and in agreement with previous reports (Boyarchuk et al., 2007; Johnson et al., 2004; Overlack et al., 2015; Sharp-Baker and Chen, 2001), Bub1 depletion decreased KT recruitment of all three proteins by 80\u201390% (Figure 6A and B, Figure 6\u2014figure supplement 1B). Thus, the recruitment of several SAC components to KTs strongly depends on Bub1 protein, but not Bub1 kinase activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig6-v1.jpg)\n\n**Figure 6.:** (A) Inhibition of Bub1 kinase does not significantly affect recruitment of SAC effectors to unattached KTs. HeLa S3 cells were synchronized by thymidine block and released for 10 hr in the presence of solvent (control), 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. Cells transfected with mock (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr were synchronized and analyzed in parallel. The\u00a0cells were fixed and stained for Bub1, Mad1, closed Mad2 (C-Mad2), CREST and DNA (DAPI) and analyzed by IFM. (B) Histogram shows average KT levels of indicated proteins (n\u00a0=\u00a020\u201350 cells per condition) observed in the experiment shown in (A). Error bars represent SEM. (C)\u00a0RPE1 cells expressing endogenously tagged Bub1-EGFP were synchronized in mitosis by overnight treatment with the Eg5 inhibitor STLC (10 \u03bcM) and subsequently treated with 3.3 \u00b5M nocodazole and 20 \u03bcM MG132 as well as solvent (control), 10 \u03bcM BAY-320 or 10 \u03bcM BAY-524. Bub1-EGFP KT levels were recorded by 1 sec time-lapse microscopy. After 5 sec, a single KT pair was bleached and fluorescence recovery was monitored. Traces illustrate average fluorescence recovery at KT pairs (n = 10\u201316 KT pairs per condition); shaded areas represent standard deviation (SD). Half-times and plateaus were determined by non-linear curve fitting based on a one-phase association. (D, E) Asynchronously growing cultures of HeLa S3 (D) or RPE1 (E) cells stably expressing GFP-tagged histone H2B were either directly treated with 3.3 \u00b5M nocodazole and the kinase inhibitors BAY-320 (3 \u03bcM) and BAY-524 (7 \u03bcM) or transfected with control (Gl2) or Bub1 siRNA for 48 hr prior to addition of nocodazole. Cell fates (continued arrest, apoptosis or slippage) and duration of mitotic arrest were determined by fluorescence time-lapse imaging (n\u00a0=\u00a0150 cells per condition, accumulated from 3 independent experiments). Frequencies of observed cell fates as well as average times of arrest are indicated. (F) Asynchronously growing HeLa S3 cells or HeLa cells stably expressing GFP-tagged histone H2B were treated with 3.3 \u00b5M nocodazole and 0.5 \u00b5M of the Mps1 inhibitor Reversine as well as solvent (control), 3 and 10 \u03bcM BAY-320, 7 and 10 \u03bcM BAY-524 or 2.5 \u00b5M of the Aurora B inhibitor ZM-447439 (ZM) (left panel). Alternatively, cells were transfected with control (Gl2) or Bub1 siRNA oligonucleotides for 48 hr prior to addition of 3.3 \u03bcM nocodazole and 0.5 \u00b5M Reversine (right panel). The\u00a0cells were monitored by fluorescence time-lapse microscopy and the time elapsed from nuclear envelope breakdown to SAC override and mitotic slippage was determined. Traces illustrate the cumulative frequency of mitotic duration before slippage (n\u00a0=\u00a050 cells per condition). (G) Asynchronously growing RPE1 cells stably expressing GFP-tagged histone H2B were treated and analyzed as described in (F). Scale bars represent 10 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scale bars represent 10 \u00b5m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A)\u00a0Schematic illustrating the targeting strategy used to introduce the EGFP open-reading frame into the indicated locus of RPE1 cells. The EGFP open reading frame was fused to the 3\u2019 exon of one allele of the BUB1L gene. (B) HeLa cells were synchronized by thymidine block and released for 10 hr in the presence of solvent (control), 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. Cells were fixed and stained for Bub1, CREST and DNA (DAPI) and analyzed by IFM. Scale bar represents 10 \u00b5m. (C) Histogram shows average Bub1 KT levels as measured in the experiment shown in (B); n\u00a0=\u00a020\u201322 cells per condition.\n\nThe association of Bub1 with unattached KTs is dynamic (Howell et al., 2004), raising the question of how Bub1 turnover at KTs is regulated. In the case of the SAC kinase Mps1, autophosphorylation constitutes a major mechanism for controlling Mps1 levels at KTs (Hewitt et al., 2010; Jelluma et al., 2010; von Schubert et al., 2015), and a recent study suggests that Bub1 turnover at KTs is also regulated by autophosphorylation (Asghar et al., 2015). To determine whether Bub1 dynamics at KTs is affected by inhibition of Bub1 activity, we made use of an RPE1 cell line harboring one allele of Bub1 tagged by EGFP at the endogenous locus (Figure 6C, Figure 6\u2014figure supplement 2A). After the\u00a0treatment of cells with nocodazole to assure complete MT depolymerization and full SAC activation (Santaguida et al., 2011; Yang et al., 2009), Bub1 levels and turnover at KTs were measured by immunofluorescence microscopy and fluorescence recovery after photobleaching (FRAP), respectively. In comparison to control cells, neither BAY-320 nor BAY-524 detectably affected steady-state Bub1 levels at KTs (Figure 6\u2014figure supplement 2B and C), in line with a recent report (Liu et al., 2015). More importantly, FRAP experiments revealed only minor effects of Bub1 inhibition on Bub1 dynamics at KTs (Figure 6C). The extent of fluorescence recovery after FRAP was not significantly different in control cells and inhibitor treated cells, revealing an immobile fraction of ~42%, in excellent agreement with previous data (Asghar et al., 2015; Howell et al., 2004). The half-time of Bub1 recovery at KTs after FRAP was ~18 sec in controls, again in good agreement with previous data (Asghar et al., 2015; Howell et al., 2004). However, whereas Asghar and colleagues observed a ~50% reduction in the half-time of recovery of an exogenously expressed, catalytically inactive EGFP-Bub1 mutant, we found that recovery of endogenously tagged wild-type EGFP-Bub1 was only marginally accelerated by Bub1 inhibition (half-time reduced from 18 s to 12\u201315 s) (Figure 6C). When considering this discrepancy, it is important to bear in mind that our data reflect turnover of chemically inhibited wild-type Bub1 expressed at endogenous levels, whereas Ashghar and colleagues monitored mutant versions of overexpressed Bub1, raising the possibility that their results may have been influenced by expression levels and/or mutation-induced structural alterations. We conclude that the effects of Bub1 activity on Bub1 turnover at KTs are at most minor, particularly when compared to the striking effects of Mps1 activity on Mps1 dynamics at KTs (Hewitt et al., 2010; Jelluma et al., 2010; von Schubert et al., 2015).\n\nAs a further read-out for the effects of Bub1 inhibition on SAC activity, we used live cell imaging to monitor the responses of nocodazole-arrested HeLa and RPE1 cells to BAY-320 or BAY-524 and compared these to the responses seen in Bub1-depleted cells (Figure 6D and E). Over a 24\u2009hr observation period, the percentage of HeLa cells maintaining a SAC arrest dropped from 17% in controls to 4% and 2% in response to Bub1 inhibition by BAY-320 and BAY-524, respectively (Figure 6D, left panel). These shifts in cell fates were largely compensated by increases in the percentages of cells undergoing apoptosis, from 74% in controls to 94% in Bub1-inhibited cells. In contrast, although the duration of mitosis was slightly reduced upon Bub1 inhibition, the extent of mitotic slippage remained at less than 10% under all conditions. In RPE1 cells, maintenance of SAC arrest over 24\u2009hr was more pronounced, but again the percentage of arrested cells dropped from 61% in controls to 51%/44% in response to Bub1-inhibition, with increasing proportions of cells undergoing apoptosis or mitotic slippage (Figure 6E, left panel). For comparison, depletion of Bub1 from either HeLa or RPE1 cells resulted in a 2\u20133 fold increase in mitotic slippage at the expense of apoptosis, while the proportion of cells sustaining an arrest remained roughly constant (Figure 6D and E, right panels). Collectively, these results indicate that Bub1 activity contributes to the\u00a0maintenance of maximal SAC activity, but that Bub1 protein levels are more important, most likely reflecting the observed role of Bub1 in the KT recruitment of SAC components (Figure 6A).\n\nImportantly, we also compared the requirements for Bub1 activity and Bub1 protein in a cellular background in which SAC activity was partially compromised by the\u00a0treatment of HeLa or RPE1 cells with a low dose of Reversine, a widely used inhibitor of the SAC kinase Mps1 (Santaguida et al., 2010). In agreement with the results described above, Bub1 inhibition marginally reduced the time that Reversine-treated cells remained arrested before overriding nocodazole-induced arrest (Figure 6F and G, left panels). Addition of Aurora B or Plk1 inhibitors, used as positive controls, led to the expected shortening of the duration of mitotic arrest (Figure 6F and G, left panels) (Saurin et al., 2011; von Schubert et al., 2015). Similarly, Bub1 depletion also caused a drastic shortening of arrest (Figure 6F and G, right panels). Taken together with previous studies (Klebig et al., 2009; Perera and Taylor, 2010a; Perera et al., 2007; Ricke et al., 2012), these observations demonstrate that the scaffolding function of Bub1 is required for the SAC, but its catalytic activity is largely dispensable.\n\n### Bub1 inhibition does not significantly impair chromosome congression\n\nTo analyze the impact of Bub1 inhibition on chromosome alignment, we treated cells with the Eg5 inhibitor Monastrol (Kapoor et al., 2000) and then monitored the restoration of KT-MT attachments during spindle bipolarization in response to drug washout (Figure 7A and B). While nearly 28% of Bub1-depleted cells failed to completely align all chromosomes, more than 90% of Bub1-inhibited cells showed complete alignment that was indistinguishable from control cells. Inhibition of Aurora B, analyzed for control, resulted in the expected impairment of alignment (Figure 7A and B). To complement these assays, we also used immunofluorescence microscopy to quantify the frequency of micronucleation, a read-out for chromosome segregation errors, in HeLa and RPE1 cells. While partial inhibition of Aurora B kinase provoked an increase in micronucleation in both cell lines, as expected (Gohard et al., 2014; Tao et al., 2009), Bub1 inhibition only marginally increased the frequency of micronucleation (Figure 7C). This result supports the view that Bub1 inhibition causes surprisingly mild defects in chromosome congression or segregation (Figure 2 and 7A). Further corroborating this conclusion, we found that BAY-320 or BAY-524 treatment exerted no significant effects on the kinetochore recruitment of the motor protein CENP-E (Figure 7D and E, left panels). In contrast, Bub1 depletion reduced CENP-E levels at KTs by ~40% (Figure 7D and E, right panels), in agreement with previous reports (Johnson et al., 2004; Sharp-Baker and Chen, 2001). Taken together, these results show that Bub1 kinase activity is largely dispensable for chromosome congression and segregation. It follows that even though Bub1 inhibition results in a marked reduction of Aurora B levels at centromeres (Figure 4), these levels are still sufficient to ensure largely faithful chromosome segregation. Conversely, Bub1 protein is clearly important for efficient chromosome congression, presumably reflecting the role of Bub1 in CENP-E recruitment to KTs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig7-v1.jpg)\n\n**Figure 7.:** (A)\u00a0HeLa S3 cells were transfected with control (Gl2) or Bub1 siRNA-oligonucleotides for 48 hr, synchronized by thymidine block and released for 12 hr in the presence of the Eg5 inhibitor monastrol to induce the formation of monopolar spindles. The capacity of spindle bipolarization and metaphase plate formation was tested by monastrol wash-out and addition of MG132 and indicated drugs for 2 hr (n = 170\u2013200 cells). Percentages indicate the frequencies of depicted spindle morphologies. (B)\u00a0Histograms show the frequencies of full, partial (\u22645 unaligned chromosomes) or failed metaphase chromosome alignments that were observed in the experiment shown in (A). (C) HeLa S3 and RPE1 cells were treated for 16 hr with the indicated drugs, fixed and analyzed by IFM. Histograms show the frequency of micronucleation among interphase cells (n\u00a0=\u00a0300 cells per condition). (D)\u00a0Depletion but not inhibition of Bub1 kinase affects recruitment of CENP-E to unattached kinetochores. Untreated HeLa S3 cells or cells transfected with control (Gl2) or Bub1 siRNA-oligonucleotides (for 48 hr) were synchronized by thymidine block and released for 10 hr in the presence or absence of 3 \u03bcM BAY-320 or 7 \u03bcM BAY-524. The\u00a0cells were fixed and stained for CENP-E, CREST, DNA (DAPI) and analyzed by IFM. (E)\u00a0Histograms show average CENP-E KT levels observed in prometaphase cells. Data relate to micrographs shown in (D). Error bars represent SEM. Scale bars represent 10 \u00b5m.\n\n### Bub1 inhibition sensitizes HeLa cells to clinically relevant doses of Paclitaxel\n\nInterference with the SAC proteins Mps1 or BubR1 was previously shown to exert synergistic effects with Paclitaxel treatment of tumor cells, significantly elevating the frequency of chromosome missegregation and lethality (Janssen et al., 2009; Lee et al., 2004). Thus, we asked how inhibition of Bub1 kinase activity by BAY-320 or BAY-524 would impact on cells in which MT dynamics was compromised by low doses of Paclitaxel. Importantly, when used at clinically relevant doses of 1\u20134 nM, Paclitaxel induces spindle defects and aneuploidy without delaying mitotic progression (Brito and Rieder, 2009; Chen and Horwitz, 2002; Ikui et al., 2005; Janssen et al., 2009). While single treatment with 1\u20134 nM Paclitaxel produced modest impairment of cell proliferation, the concomitant application of the Bub1 inhibitors, BAY-320 at 3 \u03bcM or BAY-524 at 7 or 10 \u03bcM, clearly exacerbated inhibition of proliferation. Effects were particularly drastic in aneuploid HeLa cells (Figure 8A and B, top panels), while diploid RPE1 cells were less affected (Figure 8A and B, bottom panels). For comparison, we also examined the effects of combining low dose Paclitaxel treatment with partial inhibition of Mps1 by Reversine (Janssen et al., 2009). This analysis shows that the combination of Paclitaxel with either Mps1 or Bub1 inhibition produced similar synergistic effects, albeit with cell-type specific differences (Figure 8A and B). Using extensive dose-response analyses, synergy between BAY-320 and Paclitaxel treatment was further confirmed for both HeLa (Figure 8C) and non-small cell lung cancer cells (Figure 8D). In future, it will be interesting to determine to what extent combined treatments differentially affect aneuploid versus diploid cells (Janssen et al., 2009; Kops et al., 2004; Maia et al., 2015).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/12187/elife-12187-fig8-v1.jpg)\n\n**Figure 8.:** (A) Micrographs show colony formation of HeLa (top panel) and RPE1 cells (bottom panel) treated for 7 days with solvent (control) or the indicated kinase inhibitors in the presence or absence of 4 nM Paclitaxel. (B) Histograms quantify colony formation in HeLa (top panels) and RPE1 cells (bottom panels) treated with the indicated kinase inhibitors in the presence or absence of 1\u20134 nM Paclitaxel for 7 days. (C, D) IC50-Isobolograms confirm the synergistic effect of BAY-320 and Paclitaxel on cell survival. HeLa cells (C) or NCI-H1299 non-small cell lung cancer cells (D) were grown in the presence various concentrations of BAY-320 (0.1\u201310 \u03bcM) and paclitaxel (1\u2013100 nM) in mono (Z1, Z11) and in nine different fixed-ratio combinations (Z2-Z10). IC50 values were determined and the respective BAY-320 and Paclitaxel concentrations plotted in IC50 Isobolograms (left panel). The grey dashed lines indicate the results expected for additivity. Combination indices (CIs) were calculated according to the median-effect model of Chou-Talalay (Chou, 2006) and plotted over fixed-ratio combinations Z2-Z10 (right panel). The red dashed line indicates a CI of 0.8 (defined as upper limit for a synergistic interaction). (E) Time-lapse stills of HeLa cells expressing H2B-GFP illustrate chromosome segregation defects that were used to classify cell fates in the experiments described in (F); arrowheads point to chromosome bridges and lagging chromosomes. (F) HeLa (top panels) and RPE1 cells (bottom panels) stably expressing H2B-GFP were treated with solvent (control) or the indicated kinase inhibitors in the presence or absence of 1\u20134 nM Paclitaxel and monitored by fluorescence time-lapse imaging. Histograms show the frequencies of chromosome segregation defects, following the classification illustrated in (E) (n\u00a0=\u00a0100 cells per condition).\n\nTo assess whether the observed impairment of proliferation results from errors in chromosome segregation (Kops et al., 2004), we scored HeLa and RPE1 cells expressing GFP-H2B for mild and severe chromosomal defects, as illustrated in Figure 8E. Following application of the above Paclitaxel and Bub1/Mps1 inhibitor treatments, the frequencies of chromosomal defects were monitored by fluorescence time-lapse imaging and quantified (Figure 8F). Consistent with the micronucleation data described above (Figure 7), Bub1 inhibition alone did not significantly elevate the frequency of chromosome missegregation in either HeLa or RPE1 cells (Figure 8F). For comparison, interference with the SAC by inhibition of Mps1 led to a marked increase in segregation defects in both cell lines, as expected (Figure 8F). Most importantly, HeLa cells displayed an even higher frequency of severe chromosome segregation defects when Bub1 inhibition was combined with 1\u20134 nM Paclitaxel, comparable to the consequences of combined Mps1 inhibition and Paclitaxel treatment (Figure 8F). In contrast, Bub1 inhibition only marginally elevated the rate of Paclitaxel-induced chromosome missegregation in RPE1 cells, while combinatorial treatment with Reversine still resulted in a high rate of mild segregation defects. Considering the strong correlation in the data shown in Figures 7 and 8, it is tempting to conclude that chromosome segregation errors constitute the most likely cause for the observed impairment of cell proliferation when Bub1 inhibition is combined with low dose Paclitaxel treatment. Thus, although inhibition of Bub1 kinase activity per se exerts only minor effects on SAC functionality, chromosome segregation and mitotic progression, treatment with BAY-320 or BAY-524 sensitizes cells to low, clinically relevant doses of Paclitaxel. These findings are clearly relevant for the potential therapeutic use of Bub1 inhibitors.\n\n## Discussion\n\nBub1 kinase is important for chromosome congression and the fidelity of chromosome segregation in species from yeast to vertebrates (reviewed in [Elowe, 2011; Funabiki and Wynne, 2013]). However, the role of the catalytic activity of Bub1 in different species remained a matter of debate. Here, we have characterized two novel small molecule inhibitors of Bub1, BAY-320 and BAY-524, and used these reagents to explore the role of Bub1 catalytic activity in mitotic processes. A systematic comparison of the phenotypic consequences of Bub1 inhibition with those of siRNA-mediated Bub1 depletion leads us to conclude that Bub1 functions primarily as a scaffolding protein. However, we see prominent effects of Bub1 kinase inhibition on chromosome arm cohesion and CPC localization and subtle effects on mitotic progression, including the efficacy of the SAC. Finally, we demonstrate a striking synergy between inhibition of Bub1 activity and Paclitaxel-induced interference with MT dynamics, which manifests itself in a marked increase in chromosome segregation errors and drastically reduced cell proliferation. Our results contribute to clarify the role of Bub1 kinase activity in different mitotic processes. Moreover, they have important implications for potential use of Bub1 inhibitors in therapeutic applications.\n\n### Validation of BAY-320 and BAY-524 as Bub1 inhibitors\n\nClarification of the role of Bub1 activity in mitosis has previously been hampered by the absence of specific inhibitors. While genetic or siRNA-mediated depletion experiments generally suffer from poor temporal resolution, small molecule inhibitors offer a unique opportunity for acute kinase inactivation. The only previously described inhibitor of Bub1 is the bulky ATP analog 2OH-BNPP1 (Kang et al., 2008; Krenn et al., 2012; Liu et al., 2015; Nyati et al., 2015), but neither the specificity nor the efficacy of this compound in intact cells have been thoroughly characterized. Here, we document that both BAY-320 and BAY-524 effectively inhibit Bub1 kinase activity, in intact cells as well as in vitro. In addition to inhibiting phosphorylation of histone H2A-T120, both compounds cause a persistence of chromosome arm cohesion, validating their efficacy (Kawashima et al., 2010; Liu et al., 2015). Moreover, in vitro assays performed on a large panel of kinases showed that inhibition of off-target substrates required at least 20x higher concentrations of BAY-320 than inhibition of Bub1, and for one potentially relevant off-target, the kinase Haspin, we show that intracellular phosphorylation of a major substrate of this kinase is not decreased by inhibitor concentrations that effectively inhibit Bub1. Furthermore, a binding assay performed on a panel of 403 human kinases documents exquisite selectivity of BAY-320 for Bub1. Thus, we are confident that these new Bub1 inhibitors constitute highly effective and specific tools to explore the role of Bub1 kinase activity.\n\n### Impact of Bub1 inhibition on mitotic progression\n\nThe major conclusion emerging from the present study is that the overall impact of Bub1 inhibition on mitotic progression is surprisingly mild, clearly less severe than the impact of Bub1 depletion. This reinforces the notion that the requirement for Bub1 during chromosome congression and segregation primarily reflects a scaffolding function (Fernius and Hardwick, 2007; Klebig et al., 2009; Perera and Taylor, 2010b; Rischitor et al., 2007; Sharp-Baker and Chen, 2001). It is difficult to exclude that a small fraction of total Bub1 kinase activity might be refractory to inhibition and suffice for functionality, but we emphasize that genetic elimination of Bub1 kinase activity is compatible with mouse development, arguing similarly against an essential role of Bub1 kinase activity for mitotic progression (Ricke et al., 2012). Thus, inhibitor studies and genetic data concur to indicate that lack of Bub1 kinase activity produces only mild disturbances of mitotic progression.\n\nWe show that Bub1 inhibition by BAY-320 or BAY-524 results in loss of Shugoshin and CPC subunits proteins from centromeres/KTs, and that CPC levels at these locations are further reduced upon simultaneous inhibition of Bub1 and Haspin, in line with the established roles of these kinases in the phosphorylation of histones H2A-T120 and H3-T3, respectively (Wang et al., 2011; Yamagishi et al., 2010). Furthermore, both Sgo2 and Aurora B relocalize to chromosome arms when Bub1 is inhibited. Phosphorylation of Sgo2 by Aurora B promotes Sgo2 interaction with phosphatase 2A (PP2A) (Tanno et al., 2010), and PP2A in turn protects cohesin proteins against phosphorylation (Kitajima et al., 2006; Riedel et al., 2006). Thus, colocalization of Sgo2 and Aurora B in Bub1-inhibited cells provides a straightforward explanation for the observed persistence of arm cohesion (Kitajima et al., 2005; Perera et al., 2007). However, alternative mechanisms should not be excluded and it might be rewarding to explore a possible connection between Bub1 kinase and the Sororin-Wapl pathway (Peters and Nishiyama, 2012).\n\nIt may appear surprising that the persistent chromosome arm cohesion observed in Bub1 inhibited cells did not markedly prolong mitotic timing (Figure 2). However, we note that depletion of Wapl also causes persistent cohesion without significantly affecting mitotic progression (Lara-Gonzalez and Taylor, 2012). In contrast to Bub1 inhibition, depletion of Bub1 markedly extended mitotic timing (Figure 2). One straightforward explanation for this observation is that Bub1 depletion, but not Bub1 inhibition, caused the displacement of CENP-E from KTs, a motor protein required for efficient chromosome congression (Bancroft et al., 2015; Putkey et al., 2002; Tanudji et al., 2004). A mechanism centered on CENP-E may also explain the observation that Bub1 depletion exerted a more extensive mitotic delay in the hypertriploid HeLa cells than in diploid RPE1 cells. Considering the important role of Aurora B in the regulation of KT-MT interactions (Carmena et al., 2012; Funabiki and Wynne, 2013), it is remarkable that the observed reduction of centromere/KT-associated CPC caused by Bub1 inhibition did not exert a more profound effect on the fidelity of chromosome segregation. This suggests that approximately half the normal centromere/KT levels of CPC are sufficient to confer functionality. In line with this conclusion, we note that partial impairment of CPC recruitment to centromeres/KTs did not abolish viability or trigger extensive defects in chromosome segregation in budding yeast or chicken DT40 cells (Campbell and Desai, 2013; Yue et al., 2008).\n\nInhibition of Bub1 kinase activity did not significantly reduce the KT recruitment of Mad1, Mad2 and BubR1 and barely affected the ability of nocodazole-treated cells to maintain a SAC arrest. Even when SAC activity was compromised by partial inhibition of the SAC kinase Mps1, Bub1 inhibition triggered only minor weakening of SAC signaling. In striking contrast, Bub1 depletion produced a drastic weakening of the SAC in this sensitized background. For comparison, combined inhibition of Mps1 and either Plk1 or Aurora B resulted in a complete SAC shutdown and immediate mitotic exit, in line with previous results (Saurin et al., 2011; von Schubert et al., 2015). Collectively these findings confirm that mitotic functions of Bub1 depend primarily on Bub1 protein rather than kinase activity. In future, it will be interesting to explore whether Bub1 activity contributes to purported non-mitotic functions of Bub1 (Nyati et al., 2015; Yang et al., 2012).\n\n### Use of Bub1 inhibitors for therapeutic applications\n\nInhibition of SAC kinases has emerged as a potentially attractive strategy to kill tumor cells (Janssen et al., 2009; Salmela and Kallio, 2013). Several inhibitors of the SAC kinase Mps1 were shown to exert anti-tumor effects in mouse models (Colombo et al., 2010; Kusakabe et al., 2015; Tannous et al., 2013; Tardif et al., 2011), but toxicity associated with single agent therapy remains a concern (Martinez et al., 2015). Instead, combination of anti-SAC compounds with MT-targeting agents may constitute a more rewarding strategy (Jema\u00e0 et al., 2013; Maia et al., 2015). Our present data suggest that it may be attractive to use inhibitors of Bub1 in combinatorial therapy. While BAY-320 and BAY-524 had comparatively little effect on mitotic progression when used as single agents, they showed extensive anti-proliferative activity, accompanied by strong increases in chromosome segregation errors, when combined with therapeutic doses of Paclitaxel. A plausible explanation for this synergy is that Paclitaxel increases KT-MT attachment errors to levels that can no longer be corrected when Aurora B/CPC is partially displaced upon Bub1 inhibition. Interestingly, these synergistic effects were substantially more pronounced in aneuploid HeLa cells than in near-diploid RPE1 cells, suggesting a potential therapeutic window. These findings clearly encourage further exploration of the potential use of Bub1 inhibitors for therapeutic applications.\n\n## Materials and methods\n\n### Preparation of BAY-320 and BAY-524 inhibitors\n\nBAY-320 and BAY-524 were synthesized as described previously (Hitchcock et al., 2013). For biochemical and cellular experiments BAY-320 and BAY-524 were used from stock solutions in dimethyl sulfoxide (DMSO). Working concentration of Bub1 inhibitors are indicated in Figures and Figure legends, respectively.\n\n### Determination of IC50-concentrations\n\nInhibitory activities BAY-320 and BAY-524 towards Bub1 in presence of 2 mM ATP were quantified as previously published (Hitchcock et al., 2013). A time-resolved fluorescence energy transfer (TR-FRET) kinase assay was used to measure phosphorylation of the synthetic peptide Biotin-Ahx-VLLPKKSFAEPG (C-terminus in amide form, Biosyntan, Berlin, Germany) by the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085). Recombinant human Bub1 (704\u20131085) was expressed in Hi5 insect cells with an N-terminal His6-tag and purified by affinity- (Ni-NTA) and size exclusion chromatography.\n\n### Kinase selectivity profiling\n\nBAY-320 was screenedin vitro, at 10 \u00b5M and 10 \u00b5M ATP, against a panel of 222 kinases using the Eurofins kinase profiler screen (Millipore). In addition, BAY-320 was screened, at 300 and 1000 nM, in an active site-directed competition-binding assay measuring 403 human kinases (Lead Hunter, DiscoverX Kinome Scan).\n\n### In vitro kinase assay\n\nHEK 293T cells were transfected with plasmids coding for LAP-tagged Bub1 wild-type (WT) or the K821R kinase-dead (KD) mutant (kindly provided by G. Kops, Utrecht, Netherlands) (Suijkerbuijk et al., 2012). After induction of mitotic arrest (18\u2009hr incubation with 1 \u03bcg/ml of nocodazole), the\u00a0cells were harvested and lysed in kinase lysis buffer (50\u00a0mM HEPES pH7.5, 150\u00a0mM NaCl, 5\u00a0mM EDTA, 0.5% NP-40, 1\u00a0mM Na3VO4, 1\u00a0mM \u03b2-glycerophosphate, 1\u00a0mM NaF and complete protease inhibitor (Roche)). Lysates were cleared by centrifugation for 15 min at 21,000\u2009g, 4\u00b0C, and LAP-Bub1 proteins isolated by a 2\u2009hr incubation with S-protein-agarose (Novagen, EMD Chemical, CA, USA). Beads were washed six times in lysis buffer containing increasing concentrations of NaCl (150 mM, 200 mM, 300 mM, 400 mM, 500 mM and 600\u00a0mM) and three times in kinase buffer (20 mM HEPES pH7.5, 100 mM KCl, 10 mM MgCl, 1\u00a0mM Na3VO4, 1\u00a0mM -glycerophosphate, 1\u00a0mM NaF, 1\u00a0mM DTT). The bead-bound LAP-Bub1 was then aliquoted and used for kinase assays in 30-\u03bcl reaction volumes. Kinase reactions were carried out at 30\u00b0C in kinase buffer in the\u00a0presence of 100 \u03bcM ATP, 5 \u03bcCi \u03b3-32P-ATP, 1 \u03bcg recombinant histone H2A (NEB, Frankfurt am Main, Germany) as substrate, and serial dilutions of Bub1 inhibitors. The\u00a0reactions were stopped after 30\u2009min by the\u00a0addition of sample buffer and heating to 95\u00b0C. The\u00a0samples were then resolved by SDS-PAGE and visualized by autoradiography and Western blotting.\n\n### Cell culture\n\nHeLa S3 cells, HeLa S3 cells expressing histone H2B-GFP (Sillj\u00e9 et al., 2006), HeLa Kyoto cells expressing a FRET reporter for Aurora B fused to histone H2B (van der Waal et al., 2012) and HEK293T cells were grown under standard conditions in DMEM-Glutamax medium (Invitrogen, CA, USA), supplemented with 10% heat-inactivated fetal calf serum (FCS) (PAN Biotech, Aidenbach, Germany) and penicillin-streptomycin (Pen-Strep; 100 IU/ml and 100 mg/ml respectively, Gibco Life Technologies, Zug, Switzerland). hTERT-RPE1 cells and hTERT-RPE1 cells expressing histone H2B-GFP (kind gift of Stephen Taylor, University of Manchester, UK) were cultured in F12 DMEM nutrient mixture F-12 HAM (Sigma Aldrich, MO, USA) supplemented with 10% heat-inactivated FCS, L-glutamine (2 mM; PAN Biotech, Aidenbach, Germany), sodium bicarbonate (0.35%; Sigma-Aldrich, MO, USA) and Pen-Strep. NCI-H1299 cells were grown under standard conditions in RPMI-1640 medium supplemented with L-glutamine (Biochrome, Berlin, Germany) and 10% fetal calf serum (Biochrome, Berlin, Germany). All cell lines were routinely tested for mycoplasma, using PCR (by the lab in Basel) or the MycoAlert Mycoplasma Detection Assay (by the lab in Berlin). HeLa cells (ACC-57) were obtained from the German Collection of Microorganisms and Cell Cultures, Braunschweig, and authentication was done at provider prior to shipment; NCI-H1299 (CRL-5803) were obtained from ATCC and authentication was done by STR profiling (authentication service at German Collection of Microorganisms and Cell Cultures, Braunschweig). Thymidine arrest was performed for 24\u00a0hr and cells were either released into fresh medium for 10\u2009hr or into medium supplemented with Nocodazole for 12\u201314\u2009hr. Thymidine (Sigma-Aldrich) was used at 2 mM if not stated otherwise, Nocodazole (Sigma-Aldrich) at 3.3 \u03bcM if not stated otherwise, RO-3306 at 10 \u03bcM (Calbiochem,\u00a0Darmstadt,\u00a0Germany), Paclitaxel (Calbiochem) at 1\u20134 nM, Reversine (Enzo Life Sciences, Lausen, Switzerland) at 0.25 and 0.5 \u03bcM, ZM-447439 (Tocris Bioscience, [Ditchfield et al., 2003]) at 1.25, 2.5 and 5.0 \u03bcM, 5-Iodotubercidin (5\u2019Itu, Santa Cruz Biotechnology, TX, US) at 2.5 \u03bcM, Monastrol (Enzo Life Sciences) at 150 \u03bcM and MG132 (Calbiochem) at 10\u00a0and\u00a020 \u03bcM.\n\n### Transient plasmid transfection and siRNA-mediated protein depletion\n\nTransient transfections of HEK293T cells with plasmids and small interfering RNA (siRNA) duplexes were performed using TransIT-LT1 transfection reagent (Mirus Bio, Madison, WI) and Oligofectamine (Invitrogen), respectively, according to manufacturers protocols. The following siRNA duplex oligonucleotides were used: siGl2 CGTACGCGGAATACTTCGA (Elbashir et al., 2001), siBub1 CCAGGCTGAACCCAGAGAGTT (Tang 2004). All siRNA duplex oligonucleotides were ordered from Qiagen\u00a0(Hilden, Germany).\n\n### Fluorescence-activated cell sorting\n\nHeLa S3 or RPE1 cells were incubated with kinase inhibitors or depleted of the indicated proteins for 48\u2009hr. Cell suspensions were then fixed with 70% ice-cold ethanol and incubated with 0.2 mg/ml RNase (Sigma-Aldrich) and 5 \u03bcg/ml propidium iodide (Sigma-Aldrich). Cellular DNA content was determined by flow cytometry using FACSCanto II (BD Biosciences Clontech, San Jose, CA, USA) and FlowJo (Treestar, Ashland, OR, USA) instruments.\n\n### Cell extracts and sample preparation for Western blot analysis\n\nCells extracts were prepared on ice for 30\u2009min in Tris lysis buffer (20 mM Tris, pH 7.4, 150 mM NaCl, 0.5% IGEPAL CA-630, 30 \u03bcg/ml RNAse, 30 \u03bcg/ml DNAse, 1 mM DTT, protease inhibitors cocktail (Roche, Basel, Switzerland) and phosphatase inhibitor cocktails (cocktails 2 and 3, Sigma-Aldrich). Lysates were cleared by centrifugation for 15 min at 21,000\u2009g, 4\u00b0C, and proteins were resolved by SDS-PAGE and analyzed by Western blotting.\n\n### Histone isolation\n\nHeLa S3 cells were as described above and mitotic cells were collected by shake-off. The\u00a0cells were the washed with cold PBS and lysed at 4\u00b0C for 30\u2009min using histone lysis buffer (50 mM Tris pH 7.8, 300 mM NaCl, 1% IGEPAL CA-630). Nuclei were collected by centrifugation (110\u2009g, 4\u00b0C, 10\u2009min) and washed three times with histone lysis buffer. After an additional wash with Tris-EDTA (100 mM Tris, 1 mM EDTA), the nuclear pellet was incubated for 2\u2009hr in 0.4 M HCl at 4\u00b0C. After high-speed centrifugation of the sample, 6 volumes of acetone were added to the supernatant, followed by overnight incubation at -20\u00b0C. Histones were collected by centrifugation, washed with acetone, air-dried and resolved by SDS-PAGE.\n\n### Antibodies\n\nAntibodies used for Western blotting: anti-Bub1 ([Hanisch et al., 2006] or ab9000, Abcam, Cambridge, UK), anti-pT120-H2A (Active Motif, Carlsbad, CA, USA) and anti-\u03b1-tubulin (DM1A, Sigma-Aldrich). Antibodies used for immunofluorescence microscopy: anti-Mad1 (clone 117\u2013468 [Fava et al., 2011]), anti-cMad2 (clone 107\u2013276 [Fava et al., 2011]) anti-Borealin (Klein et al., 2006), anti-INCENP (clone 58\u2013217, ab23956, Abcam), anti-Bub1 (antibody against Bub1 hybridoma (clone 62\u2013406) was produced after mice were injected with Bub1 recombinant protein spanning residues 1\u2013318, anti-Bub1 (ab9000, Abcam), CREST anti-human auto-immune serum (Immunovision, Springdale, AR, USA), anti-Aurora B (AIM-1, BD Biosciences, San Jose, CA, USA), anti-Bub1 (ab9000, Abcam), anti-CENP-E (1H12, Abcam), anti-Mad2 (A300-301A, Bethyl Laboratories, Montgomery, TX, USA), anti-Sgo1 (Abnova, Taipei, Taiwan), anti-Sgo2 (Bethyl Laboratories), anti-pT120-H2A (Active Motif, Carlsbad, CA, USA; ABIN482721), anti-pS7CENP-A (clone NL41, Merck Millipore, Billerica, MA, USA), anti-pT3-H3 (clone 9714, Cell Signaling Technology, Danvers, MA, USA) and anti-pS10-H3 (Millipore, Billerica, MA, USA). The polyclonal MCAK (R120) antibody was raised in rabbits by immunization with bacterially expressed His-MCAKaa588-725. For immunofluorescence experiments, all primary antibodies were detected with AlexaRed-594-, AlexaRed-564-, and AlexaGreen-488-labeled secondary anti-mouse and anti-rabbit antibodies (Invitrogen, Carlsbad, CA, USA) or Cy5-conjugated donkey antibodies (Dianova, Hamburg, Germany). For Western blotting, signals were detected using HRP-conjugated anti-mouse or anti-rabbit antibodies (Pierce, Rockford, IL, USA).\n\n### In-cell western\n\nHeLa cells were seeded into 96-well plates for 5\u2009hr at 37\u00b0C (ca. 25\u2019000 cells/well). Then, cells were treated with Nocodazole for 16\u00a0hr and varying concentrations of test compounds for 1\u2009hr. The\u00a0cells were fixed, washed and blocked with buffer before incubating with the primary antibody (Phospho-Histone H2A; ABIN482721; 1:200) overnight at 2\u20138\u00b0C. After washing, secondary IRDye-labeled antibody mix with cell stains was added for 1\u00a0hr and washed again. Plates were scanned with a LiCor Odyssey Infrared Imager at 800 nm for P-H2A and at 700 nm for Draq5/Sapphire, a cell stain. The signal ratio (800/700 nm) for cells treated only with Nocodazole was set to 100% and the corresponding ratio for untreated cells to 0%. The IC50 value was then determined by curve fitting (using a four parameter fit).\n\n### Immunofluorescence microscopy, image processing, quantification and live cell imaging\n\nFor fluorescence microscopy cells were grown on coverslips and fixed in PTEMF buffer (20 mM PIPES, pH 6.8, 0.2% Triton X-100, 10 mM EGTA, 1 mM MgCl2, 4% formaldehyde) or methanol at -20\u00b0C (for CENP-A pS7), respectively. Images of randomly selected cell were acquired as z-stacks using a DeltaVision microscope (GE Healthcare) on an Olympus IX71 base (Applied Precision, WA, USA), equipped with a Plan Apochromat N 60x/NA1.42 oil immersion objective (Olympus) and a CoolSNAP HQ2 camera (Photometrics). Serial optical sections were deconvolved and projected using SoftWorx software (GE Healthcare). Images were quantified as previously described (von Schubert et al., 2015) using automated pipelines run by Cell Profiler software (Carpenter et al., 2006). Results from 2\u20133 independent experiments were pooled and statistical analysis was done with GraphPad Prism software. Error bars on histograms illustrate SEM. Scale bars represent 10 \u03bcm.\n\nFor time-lapse imaging, cells were imaged using a Nikon ECLIPSE Ti microscope equipped with a CoolLED pE-1 illumination system and a 20x/NA0.75 air Plan Apochromat objective (Nikon) in a climate-controlled environment. Images were acquired at multiple positions at indicated time intervals. MetaMorph 7.7 software (MDS Analytical Technologies, Sunnyvale, CA, USA) was used for acquisition and processing of data. FRET, FRAP, and high sensitivity microscopy (monitoring endogenously EGFP-tagged proteins) experiments were carried out using a spinning disk confocal system (Intelligent Imaging Innovations) based on a Zeiss Axio Observer stand equipped with a Photometric Evolve 512 back-illuminated EMCCD camera, 63x/NA1.4 plan apochromat objective and diode lasers and run by SlideBook software. FRET analyses were carried out by excitation with a 440 nm diode laser and by recording of CFP (CFP signal) and YFP (FRET signal) fluorescence emission in z-stacks. Background-corrected FRET ratios (CFP signal/FRET signal) were calculated in ImageJ using the Ratio Plus plugin. FRAP analysis of EGFP-Bub1 was performed with a 488 diode laser on one KT pair per cell. Overall bleaching was corrected using the signal intensities at a cytoplasmic region not targeted for photobleaching (average of the first 4 frames). Fluorescence recovery half-times and plateaus were determined by non-linear curve fitting based on a one-phase association in Prism software (GraphPad).\n\n### Colony formation assay\n\nAsynchronous cell cultures (50,000/well) were plated on 6-well plates (Falcon). After 7 days of proliferation in the presence of the indicated drugs, the\u00a0cells were fixed with ice-cold methanol at -20\u00b0C and stained with 0.1% Cresyl Violet according to standard procedures. Dried culture plates were scanned and intensities measured using ImageJ after black-and-white-conversion and inversion of the images.\n\n### IC50\u00a0isobolograms\n\nBAY-320 plus Paclitaxel combination studies were conducted with HeLa and NCI-H1299 cells. Cells were plated into 384-well plates at 600 (HeLa) or 700 (NCI-H1299) cells per well. After 24\u00a0hr, cells were treated with BAY-320 (concentration range, 1E-07 M to 1E-05 M) and Paclitaxel (concentration range, 1E-09 M to 1E-07 M) for single compound treatments, and in nine different fixed-ratio combinations of BAY-320 (D1) and Paclitaxel (D2) (0.9xD1+0.1xD2, 0.8xD1+0.2xD2, 0.7xD1+0.3xD2, 0.6xD1+0.4xD2, 0.5xD1+0.5xD2, 0.4xD1+0.6xD2, 0.3xD1+0.7xD2, 0.2xD1+0.8xD2, 0.1xD1+0.9xD2). Cell viability was assessed after 96\u2009hr exposure, using the Cell Titre-Glo Luminescent Cell Viability Assay (Promega). IC50 values were determined by means of a 4-parameter fit after normalization of measurement data to vehicle (DMSO)-treated cells (=100%) and readings taken immediately before compound addition (=0%). IC50 isobolograms were plotted with the actual concentrations of the two compounds on the x- and y-axis, and the combination index (CI) was calculated according to the median-effect model of Chou-Talalay (Chou, 2006). A CI of \u22640.8 was defined as more than additive (i.e. synergistic) interaction, and a CI of \u22651.2 was defined as antagonistic interaction.\n\n### rAAV-mediated gene targeting\n\nFor gene targeting, homology arms to human Bub1 (BUB1) gene were amplified from RPE1 cell genomic DNA. Targeting constructs allowing the insertion of an EGFP tag C-terminal to Bub1 were assembled by 4-piece ligation in a NotI-digested pAAV vector. Recombinant adenovirus-associated virus (rAAV) particles were generated as previously described (Berdougo et al., 2009). RPE1 cells were infected with 3 ml of viral supernatant for 48\u00a0hr and then expanded into fresh medium for an additional 48\u00a0hr. FACS sorting was used to select EGFP-positive cells, as previously described (Collin et al., 2013). To facilitate detection of fluorescence at mitotic stages, cells were synchronized with RO-3306 (10 \u03bcM) for 18\u00a0hr and released into nocodazole (50\u00a0nM) for 2\u2009hr, before they were trypsinized and subjected to sorting in the continued presence of nocodazole (10\u00a0nM). Infected or uninfected cells were filtered (30 \u03bcm, Partec) and EGFP-positive cells (488 excitation, 514/30 emission filter) were isolated on an Aria IIIu (BD) cell sorter by selecting the 514/30 channel against a 585/42 filter detecting cellular autofluorescence. Single cells were sorted into 96-well plates filled with conditioned medium and positive clones screened for by fluorescence microscopy.\n",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "7160ce51-ec61-4a04-9a39-44cea9e093fb",
+      "submission_id": "4850ff66-fe21-493d-82e0-f204089fe6d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Pines, The Gurdon Institute , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12187.021](https://doi.org/10.7554/eLife.12187.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Probing the catalytic functions of Bub1 kinase using the small molecule inhibitors BAY-320 and BAY-524\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors (Jonathon Pines). The evaluation has been overseen by the Reviewing Editor and Ivan Dikic as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study the authors have developed small molecule inhibitors that specifically inhibit the Bub1 kinase. They demonstrate the specificity of their inhibitors in vitro on a panel of kinases, and in vivo using phosphorylation of Histone H2A threonine 120 as a read out. They show that inhibiting Bub1 causes mild effects on the timing of mitosis and on chromosome congression, but causes persistent cohesion of chromosomes arms concomitant with the chromosome passenger complex remaining on the arms. Although the effects of the Bub1 kinase inhibitors alone only mildly affect mitosis, they have a synergistic effect with low doses of taxol.\n\nEssential revisions:\n\nAll three reviewers recognised the quality of the study, and that specific Bub1 kinase inhibitors would be very useful research tools. There were two major experimental concerns, however:\n\n1) More evidence for the specificity of the compounds should be presented. At present this mostly consists of a patent and kinase assays on a panel of kinases.\n\n2) Are the effects of the compounds in cells specific to inhibiting Bub1? The authors are using a relatively high concentration of the inhibitors (3 and 7 \u03bcM for BAY-320 and BAY-524, respectively), and the toxic concentration is 10 \u03bcM. Moreover, there is still some residual H2A-T120 phosphorylation (Figure 1C and D), which suggests Bub1 activity is not maximally inhibited under these conditions.\n\nPlease address these concerns by providing further experimental data. For example, what are the phenotypes of cells treated with the inhibitors in which Bub1 has been depleted and rescued with a kinase-dead construct? If the inhibitors are specific to Bub1 there should be no further effect of the inhibitors.\n\nIn addition to this experimental concern, the reviewers suggest some re-writing is required to clarify what is currently known about the function of Bub1 kinase activity. One reviewer makes the following suggestions:\n\n\u201cI would suggest that much of the general introductory material in paragraphs 1 and 2 be condensed. Also, the last paragraph that summarises the results can be replaced by a single sentence, e.g. \u2018To address the role of Bub1 kinase activity we characterised two novel inhibitors BAY-320 and BAY-524\u2019. Condensing this text will then allow the authors to provide more detail with regards to what is known about Bub1. For example, in the Results they describe Sgo1, that H2A is a substrate, the link with Haspin etc.; this should all be in the Introduction. Also, what is the prior art regarding Bub1's kinase activity? They say it is controversial but I don't think that is sufficient. Indeed, there is literature that supports the authors\u2019 claims and this should be included. By way of an example, Perera at al deleted Bub1 in MEFs and added back kinase-dead mutants showing that a catalytic mutant or a mutant lacking the entire kinase domain restored BubR1 localisation, SAC function and chromosome alignment but failed to restore Sgo1 localisation. Klebig et al. described similar findings using an RNAi-complementation assay. Similarly, McGuinness et al. showed that in meiosis I, a Bub1 mutant lacking the entire kinase domain restored SAC function. There are other primary papers that should be cited here, e.g. describing work in various model systems. NB, as alluded to above, the authors could highlight the technical challenges with complementation assays as a means of justifying the use of small molecule inhibitors.\u201d\n",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5542c0d-ab4d-4e05-8a33-16e3db757fcc",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C1",
+      "claim": "BAY-320 inhibits the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085) with an IC50 of 680 \u00b1 280 nM in the presence of 2 mM ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In presence of 2 mM ATP, both compounds inhibited the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085) with an IC50 of 680 \u00b1 280 nM and 450 \u00b1 60 nM, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The IC50 value is derived from in vitro kinase assays measuring inhibition of Bub1 autophosphorylation and histone H2A phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0cdaadfd-7db5-4dd2-a1b5-3dec88ba630a",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C2",
+      "claim": "BAY-524 inhibits the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085) with an IC50 of 450 \u00b1 60 nM in the presence of 2 mM ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In presence of 2 mM ATP, both compounds inhibited the recombinant catalytic domain of human Bub1 (amino acids 704\u20131085) with an IC50 of 680 \u00b1 280 nM and 450 \u00b1 60 nM, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The IC50 value is derived from in vitro kinase assays measuring inhibition of Bub1 autophosphorylation and histone H2A phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "1e1eef8a-0e78-408a-9bd6-aad3ddcbab24",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C3",
+      "claim": "BAY-320 shows only modest cross reactivity with other kinases when tested at 10 \u03bcM against a panel of 222 protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "When tested against a panel of 222 protein kinases, BAY-320 showed only modest cross reactivity with other kinases, even when used at a concentration of 10 \u03bcM (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from a kinase selectivity profiling assay testing BAY-320 against 222 kinases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "a13377d0-ea32-4f86-b084-839cccb4f410",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C4",
+      "claim": "BAY-320 shows exquisite binding selectivity for Bub1 when tested against 403 human kinases using an active site-directed competition-binding assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, quantitative measurements of BAY-320 interactions with 403 human kinases, using an active site-directed competition-binding assay, showed exquisite binding selectivity for Bub1 (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from a competition-binding assay measuring BAY-320 interactions with 403 human kinases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "9b87d63a-f83b-47c4-ab0c-6c02eed47338",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C5",
+      "claim": "Near-maximal inhibition of Bub1 in intact cells can be achieved by using BAY-320 at 3\u201310 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed that near-maximal inhibition of Bub1 could be achieved by using BAY-320 at 3\u201310 \u03bcM and BAY-524 at 7\u201310 \u03bcM and these concentrations were therefore used in all future experiments on intact cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence and in-cell western assays monitoring phospho-histone H2A-T120 staining at kinetochores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "748431b4-8ecf-4107-9ef0-6678f7338462",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C6",
+      "claim": "Near-maximal inhibition of Bub1 in intact cells can be achieved by using BAY-524 at 7\u201310 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed that near-maximal inhibition of Bub1 could be achieved by using BAY-320 at 3\u201310 \u03bcM and BAY-524 at 7\u201310 \u03bcM and these concentrations were therefore used in all future experiments on intact cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence and in-cell western assays monitoring phospho-histone H2A-T120 staining at kinetochores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "3d118101-6b42-4726-a6d7-f34f2dac3237",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C7",
+      "claim": "Treatment of cells with either BAY-320 or BAY-524 drastically reduces histone H2A T120 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of histone H2A phosphorylation by Western blotting revealed that treatment of cells with either BAY-320 or BAY-524 drastically reduced T120 phosphorylation (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis of purified histones from control and inhibitor-treated cells shows reduced T120 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "c605dda9-8bce-4310-a2d2-7895a1bf3a9d",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C8",
+      "claim": "Depletion of Bub1 from HeLa cells significantly prolongs duration of mitosis due to delayed chromosome alignment and delays in prometa- and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous results (Kitajima et al., 2005; Tang et al., 2004b), depletion of Bub1 from HeLa cells significantly prolonged duration of mitosis, due to delayed chromosome alignment and delays in prometa- and metaphase (Figure 2A and C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing mitotic duration in Bub1-depleted HeLa cells, supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "91d9339e-c20f-4f36-bc8c-2a83e3c8b72f",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C9",
+      "claim": "Treatment with either BAY-320 or BAY-524 provokes at most minor effects on mitotic progression in HeLa cells, marked by a short delay of anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, treatment with either BAY-320 or BAY-524 provoked at most minor effects on mitotic progression, marked by a short delay of anaphase onset (Figure 2B and C, Figure 2\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing mitotic duration in BAY-320 or BAY-524 treated HeLa cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "2d230b26-f7e0-41d6-a655-18dbf83a659f",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C10",
+      "claim": "Diploid RPE1 cells are not significantly affected by either Bub1 inhibition or depletion in terms of mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in contrast to aneuploid HeLa cells, diploid RPE1 cells were not significantly affected by either Bub1 inhibition or depletion (Figure 2D and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing mitotic duration in RPE1 cells treated with Bub1 inhibitors or depleted of Bub1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "e0f15031-ddb7-4fb3-a400-ca29706cf044",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C11",
+      "claim": "Bub1 depletion causes an increase in the G2/M population of HeLa cells but not RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow-cytometric analyses confirmed that Bub1 depletion from HeLa cells causes an increase in the G2/M population of HeLa but not RPE1 cells and that Bub1 inhibition by BAY-320 or BAY-524 did not detectably affect cell cycle profiles in either cell line (Figure 2\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data showing cell cycle distribution after Bub1 depletion or inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "bb768fb6-3718-4c18-abe1-bd17cfc9ad33",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C12",
+      "claim": "Bub1 inhibition by BAY-320 or BAY-524 does not detectably affect cell cycle profiles in either HeLa or RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow-cytometric analyses confirmed that Bub1 depletion from HeLa cells causes an increase in the G2/M population of HeLa but not RPE1 cells and that Bub1 inhibition by BAY-320 or BAY-524 did not detectably affect cell cycle profiles in either cell line (Figure 2\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data showing cell cycle distribution after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "5133533d-72d1-4256-af0d-a059090a9340",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C13",
+      "claim": "Bub1 catalytic activity contributes to the regulation of sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that Bub1 catalytic activity contributes to the regulation of sister chromatid cohesion and the localization of Sgo proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Chromosome spread analysis showing persistent arm cohesion in cells treated with Bub1 inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "2e299615-39e1-4ba4-86e3-c1bb85916bf1",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C14",
+      "claim": "Bub1 catalytic activity contributes to the localization of Sgo proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that Bub1 catalytic activity contributes to the regulation of sister chromatid cohesion and the localization of Sgo proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data showing reduced centromeric levels of Sgo1 and Sgo2 and redistribution of Sgo2 to chromosome arms after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "32377e56-3e1a-425a-90b4-84317769fc15",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C15",
+      "claim": "Centromeric levels of Sgo1 and Sgo2 are reduced to ~20% of control values in BAY-320 or BAY-524 treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, centromeric levels of Sgo1 and Sgo2 were reduced to ~20% of control values in BAY-320 or BAY-524 treated cells (Figure 3D and E) and, concomitantly, a significant redistribution of Sgo2 to chromosome arms could be observed (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric Sgo1 and Sgo2 levels after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "e7c2cb96-2cb1-4b4b-8004-ee39dbc6cefb",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C16",
+      "claim": "A significant redistribution of Sgo2 to chromosome arms occurs in BAY-320 or BAY-524 treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, centromeric levels of Sgo1 and Sgo2 were reduced to ~20% of control values in BAY-320 or BAY-524 treated cells (Figure 3D and E) and, concomitantly, a significant redistribution of Sgo2 to chromosome arms could be observed (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing Sgo2 levels at centromeres and chromosome arms after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "deae069c-e5bd-4737-8e68-b0268b96c5c5",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C17",
+      "claim": "Bub1 inhibition reduces centromeric levels of Aurora B, Borealin and INCENP by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "While Bub1 inhibition reduced centromeric levels of Aurora B, Borealin and INCENP by ~50% (Figure 4A and B, left panels), depletion of Bub1 lowered centromere levels of these CPC components by ~70% (Figure 4A and B, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric levels of CPC components after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "880c596f-c8b5-430e-9aaf-ea0c38f98821",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C18",
+      "claim": "Depletion of Bub1 lowers centromere levels of Aurora B, Borealin and INCENP by ~70%.",
+      "claim_type": "EXPLICIT",
+      "source": "While Bub1 inhibition reduced centromeric levels of Aurora B, Borealin and INCENP by ~50% (Figure 4A and B, left panels), depletion of Bub1 lowered centromere levels of these CPC components by ~70% (Figure 4A and B, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric levels of CPC components after Bub1 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "fd0fb30e-445a-45d7-baea-45d1ce290c39",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C19",
+      "claim": "Both Bub1 inhibition and depletion reduce CENP-A Ser7 phosphorylation by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control cells, both Bub1 inhibition and depletion reduced CENP-A and histone H3 phosphorylation by ~50% and ~10\u201320%, respectively (Figure 4C and D, Figure 4\u2014figure supplement 1B), suggesting that interference with Bub1 primarily affects Aurora B activity at centromeres.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing CENP-A Ser7 phosphorylation levels after Bub1 inhibition or depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "4331da85-ab4d-4802-9ef7-e5c998f6db45",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C20",
+      "claim": "Both Bub1 inhibition and depletion reduce histone H3 Ser10 phosphorylation by ~10\u201320%.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control cells, both Bub1 inhibition and depletion reduced CENP-A and histone H3 phosphorylation by ~50% and ~10\u201320%, respectively (Figure 4C and D, Figure 4\u2014figure supplement 1B), suggesting that interference with Bub1 primarily affects Aurora B activity at centromeres.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing histone H3 Ser10 phosphorylation levels after Bub1 inhibition or depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "5021873b-1f03-4184-ad02-cfa211665b70",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C21",
+      "claim": "Interference with Bub1 primarily affects Aurora B activity at centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control cells, both Bub1 inhibition and depletion reduced CENP-A and histone H3 phosphorylation by ~50% and ~10\u201320%, respectively (Figure 4C and D, Figure 4\u2014figure supplement 1B), suggesting that interference with Bub1 primarily affects Aurora B activity at centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential effects on CENP-A (centromeric) versus histone H3 (chromosome arm) phosphorylation suggest centromere-specific effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "85ca5512-6035-4131-8486-a325bc1642ec",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C22",
+      "claim": "Both inhibition and depletion of Bub1 reduce the centromere association of the Aurora B effector protein MCAK by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, use of biosensors for Aurora B activity (Fuller et al., 2008) revealed a reduction in fluorescence resonance energy transfer (FRET) ratios for sensors tethered to either chromosome arms (through fusion to H2B) or centromeres (through fusion to histone CENP-B) (Figure 4E and F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing MCAK levels at centromeres after Bub1 inhibition or depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "5f2b6ea3-bc3a-4ad2-ad95-53fad8470104",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C23",
+      "claim": "Bub1-dependent phosphorylation plays a major role in the regulation of Aurora B localization and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations demonstrate that Bub1-dependent phosphorylation plays a major role in the regulation of Aurora B localization and activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence including CPC localization, substrate phosphorylation, and FRET-based activity measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "cd911f0d-c2d4-4867-948a-5b65aa19472e",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C24",
+      "claim": "Inhibition of Bub1 by BAY-320 or BAY-524 reduces centromere levels of CPC components Aurora B, Borealin and INCENP to ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhibition of Bub1 by BAY-320 or BAY-524 or inhibition of Haspin by 5-Iodotubercidin (De Antoni et al., 2012) similarly reduced centromere levels of the CPC components Aurora B, Borealin and INCENP to ~40%, combined inhibition of both kinases resulted in a ~80% reduction in CPC levels at centromeres (Figure 5A and B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric CPC levels after Bub1 or Haspin inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "978b8847-fdbf-4d72-acaa-9daa2d392194",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C25",
+      "claim": "Inhibition of Haspin by 5-Iodotubercidin reduces centromere levels of CPC components Aurora B, Borealin and INCENP to ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhibition of Bub1 by BAY-320 or BAY-524 or inhibition of Haspin by 5-Iodotubercidin (De Antoni et al., 2012) similarly reduced centromere levels of the CPC components Aurora B, Borealin and INCENP to ~40%, combined inhibition of both kinases resulted in a ~80% reduction in CPC levels at centromeres (Figure 5A and B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric CPC levels after Haspin inhibition, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "eaf5db85-3d3b-48e4-9782-b5f06bd35c41",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C26",
+      "claim": "Combined inhibition of both Bub1 and Haspin results in a ~80% reduction in CPC levels at centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhibition of Bub1 by BAY-320 or BAY-524 or inhibition of Haspin by 5-Iodotubercidin (De Antoni et al., 2012) similarly reduced centromere levels of the CPC components Aurora B, Borealin and INCENP to ~40%, combined inhibition of both kinases resulted in a ~80% reduction in CPC levels at centromeres (Figure 5A and B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing centromeric CPC levels after combined Bub1 and Haspin inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "e00ffa74-5a20-41da-8b07-c2c895f07e07",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C27",
+      "claim": "Treatment of cells with only BAY-320 or BAY-524 does not detectably affect the phosphorylation of the Haspin substrate histone H3 (T3).",
+      "claim_type": "EXPLICIT",
+      "source": "As an important control, treatment of cells with only BAY-320 or BAY-524 did not detectably affect the phosphorylation of the Haspin substrate histone H3 (T3), attesting to the specificity of the two Bub1 inhibitors (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data showing histone H3 T3 phosphorylation levels after Bub1 inhibitor treatment, demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "1ae745ad-1216-4810-a386-a36d6d0db3e3",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C28",
+      "claim": "Following Bub1 inhibition, Aurora B-EGFP levels at chromosome arms increase approximately twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Bub1 inhibition, Aurora B-EGFP levels at chromosome arms increased approximately twofold, concomitant with the described reduction of Aurora B at centromeres (Figure 5C and D) (Boyarchuk et al., 2007; Ricke et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live cell imaging data of endogenously EGFP-tagged Aurora B showing redistribution to chromosome arms after Bub1 inhibition, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "086916f3-0899-46f3-a4a7-67b91ed7eff9",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C29",
+      "claim": "Treatment of cells with the Haspin inhibitor 5-Iodotubercidin does not induce any significant redistribution of Aurora B from centromeres to chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment of cells with the Haspin inhibitor 5-Iodotubercidin did not induce any significant redistribution of Aurora B from centromeres to chromosome arms; instead, inhibition of Haspin caused an overall reduction of EGFP signals at both centromeres and chromosome arms (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live cell imaging data of endogenously EGFP-tagged Aurora B showing no redistribution after Haspin inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "4f38d1c1-1913-470d-b5af-75555393e098",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C30",
+      "claim": "Inhibition of Haspin causes an overall reduction of Aurora B-EGFP signals at both centromeres and chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment of cells with the Haspin inhibitor 5-Iodotubercidin did not induce any significant redistribution of Aurora B from centromeres to chromosome arms; instead, inhibition of Haspin caused an overall reduction of EGFP signals at both centromeres and chromosome arms (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live cell imaging data of endogenously EGFP-tagged Aurora B after Haspin inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "41e0396e-03ab-4a76-8614-60647160957d",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C31",
+      "claim": "Combined inhibition of Bub1 and Haspin displaces Aurora B from both centromeres and chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined inhibition of Bub1 and Haspin displaced Aurora B from both centromeres and chromosome arms (Figure 5C and D), in line with the analysis of fixed cells described above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live cell imaging data of endogenously EGFP-tagged Aurora B after combined Bub1 and Haspin inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "5c18ab39-fbb3-4563-9680-a808b93c8213",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C32",
+      "claim": "Bub1 and Haspin cooperate in the recruitment of CPC to centromeres through phosphorylation of histone H2A-T120 and histone H3-T3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data corroborate the notion that Bub1 and Haspin cooperate in the recruitment of CPC to centromeres through phosphorylation of histone H2A-T120 and histone H3-T3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence showing effects of Bub1 and Haspin inhibition on CPC localization, combined with knowledge of their respective histone substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "af036ad2-9c4e-4545-a290-8773858ef9e4",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C33",
+      "claim": "Bub1 kinase activity, but not Haspin, plays a role in restricting CPC localization to the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they reveal a role for Bub1 kinase activity, but not Haspin, in restricting CPC localization to the centromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential effects of Bub1 versus Haspin inhibition on Aurora B redistribution to chromosome arms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "36b2eea3-e861-4398-b4dc-2ce638e50cbd",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C34",
+      "claim": "Depletion of Bub1 weakens SAC signaling in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Bub1 is known to weaken SAC signaling in human cells (Klebig et al., 2009; Meraldi and Sorger, 2005; Perera et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies demonstrating weakened SAC signaling after Bub1 depletion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "bac50937-faeb-479f-b885-31c61dd96285",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C35",
+      "claim": "Bub1 inhibition does not significantly affect the localization of Mad1, Mad2, or BubR1 to kinetochores, with the possible exception of a very minor effect on BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "With the possible exception of a very minor effect on BubR1, the localization of none of these SAC proteins was significantly affected by Bub1 inhibition (Figure 6A and B, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing kinetochore levels of SAC proteins after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "291d64af-62ba-4342-9e5f-5bc5511f637d",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C36",
+      "claim": "Bub1 depletion decreases kinetochore recruitment of Mad1, Mad2, and BubR1 by 80\u201390%.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, and in agreement with previous reports (Boyarchuk et al., 2007; Johnson et al., 2004; Overlack et al., 2015; Sharp-Baker and Chen, 2001), Bub1 depletion decreased KT recruitment of all three proteins by 80\u201390% (Figure 6A and B, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing kinetochore levels of SAC proteins after Bub1 depletion, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "db4e7fac-3413-481d-8dfe-c25b4a9559c5",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C37",
+      "claim": "The recruitment of several SAC components to kinetochores strongly depends on Bub1 protein, but not Bub1 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the recruitment of several SAC components to KTs strongly depends on Bub1 protein, but not Bub1 kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential effects of Bub1 inhibition versus depletion on SAC protein recruitment to kinetochores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "d4ec148d-10ab-4fc2-a9f2-d576d6b1e96b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C38",
+      "claim": "Neither BAY-320 nor BAY-524 significantly affects steady-state Bub1 levels at kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to control cells, neither BAY-320 nor BAY-524 detectably affected steady-state Bub1 levels at KTs (Figure 6\u2014figure supplement 2B and C), in line with a recent report (Liu et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data showing Bub1 levels at kinetochores after inhibitor treatment, with citation to a recent report.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "820720c1-e381-443c-b529-15b60b23b87c",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C39",
+      "claim": "FRAP experiments reveal only minor effects of Bub1 inhibition on Bub1 dynamics at kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, FRAP experiments revealed only minor effects of Bub1 inhibition on Bub1 dynamics at KTs (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FRAP data showing Bub1 turnover at kinetochores after inhibitor treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "189192cf-c8e5-4baa-b9b8-e3bb4e5e70b5",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C40",
+      "claim": "The extent of fluorescence recovery after FRAP of endogenously tagged EGFP-Bub1 is not significantly different in control cells and inhibitor treated cells, revealing an immobile fraction of ~42%.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of fluorescence recovery after FRAP was not significantly different in control cells and inhibitor treated cells, revealing an immobile fraction of ~42%, in excellent agreement with previous data (Asghar et al., 2015; Howell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data showing similar recovery plateaus in control and inhibitor-treated cells, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "498ef254-bb5e-464f-b007-cb089eb40930",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C41",
+      "claim": "The half-time of Bub1 recovery at kinetochores after FRAP is ~18 sec in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-time of Bub1 recovery at KTs after FRAP was ~18 sec in controls, again in good agreement with previous data (Asghar et al., 2015; Howell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data showing Bub1 recovery kinetics in control cells, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "fa9e969f-bab9-4756-a139-c439a433ff45",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C42",
+      "claim": "Recovery of endogenously tagged wild-type EGFP-Bub1 is only marginally accelerated by Bub1 inhibition (half-time reduced from 18 s to 12\u201315 s).",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas Asghar and colleagues observed a ~50% reduction in the half-time of recovery of an exogenously expressed, catalytically inactive EGFP-Bub1 mutant, we found that recovery of endogenously tagged wild-type EGFP-Bub1 was only marginally accelerated by Bub1 inhibition (half-time reduced from 18 s to 12\u201315 s) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FRAP data showing Bub1 recovery kinetics after inhibitor treatment, compared to previous study using overexpressed mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "6ef3acc4-5205-4cba-9f95-a0d79ee1d253",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C43",
+      "claim": "The effects of Bub1 activity on Bub1 turnover at kinetochores are at most minor, particularly when compared to the striking effects of Mps1 activity on Mps1 dynamics at kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the effects of Bub1 activity on Bub1 turnover at KTs are at most minor, particularly when compared to the striking effects of Mps1 activity on Mps1 dynamics at KTs (Hewitt et al., 2010; Jelluma et al., 2010; von Schubert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data showing minor effects of Bub1 inhibition on Bub1 dynamics, with citations to studies showing major effects of Mps1 inhibition on Mps1 dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "e87529fb-0b2c-4956-9675-c55a82df0e1b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C44",
+      "claim": "The percentage of HeLa cells maintaining a SAC arrest over 24 hr drops from 17% in controls to 4% and 2% in response to Bub1 inhibition by BAY-320 and BAY-524, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a 24 hr observation period, the percentage of HeLa cells maintaining a SAC arrest dropped from 17% in controls to 4% and 2% in response to Bub1 inhibition by BAY-320 and BAY-524, respectively (Figure 6D, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing cell fates in nocodazole-arrested HeLa cells after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "683b535a-ec9c-4136-b35d-f6a6a130b3a1",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C45",
+      "claim": "In nocodazole-arrested HeLa cells, the percentage of cells undergoing apoptosis increases from 74% in controls to 94% in Bub1-inhibited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These shifts in cell fates were largely compensated by increases in the percentages of cells undergoing apoptosis, from 74% in controls to 94% in Bub1-inhibited cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Time-lapse imaging data showing cell fates in nocodazole-arrested HeLa cells after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "6e85737c-2bbf-4010-887b-d4478fe3f60b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C46",
+      "claim": "In nocodazole-arrested RPE1 cells, the percentage of arrested cells drops from 61% in controls to 51%/44% in response to Bub1-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In RPE1 cells, maintenance of SAC arrest over 24 hr was more pronounced, but again the percentage of arrested cells dropped from 61% in controls to 51%/44% in response to Bub1-inhibition, with increasing proportions of cells undergoing apoptosis or mitotic slippage (Figure 6E, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing cell fates in nocodazole-arrested RPE1 cells after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b852d0dc-8cf4-486d-8984-c9c2aecb0a8a",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C47",
+      "claim": "Depletion of Bub1 from either HeLa or RPE1 cells results in a 2\u20133 fold increase in mitotic slippage at the expense of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, depletion of Bub1 from either HeLa or RPE1 cells resulted in a 2\u20133 fold increase in mitotic slippage at the expense of apoptosis, while the proportion of cells sustaining an arrest remained roughly constant (Figure 6D and E, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing cell fates in nocodazole-arrested cells after Bub1 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0d932811-a31a-436c-962b-8051b75465f7",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C48",
+      "claim": "Bub1 activity contributes to the maintenance of maximal SAC activity, but Bub1 protein levels are more important.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that Bub1 activity contributes to the maintenance of maximal SAC activity, but that Bub1 protein levels are more important, most likely reflecting the observed role of Bub1 in the KT recruitment of SAC components (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of effects of Bub1 inhibition versus depletion on SAC maintenance and SAC protein recruitment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "025a3865-99d3-42f7-bf58-0e324c1ca0de",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C49",
+      "claim": "Bub1 inhibition marginally reduces the time that Reversine-treated cells remain arrested before overriding nocodazole-induced arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results described above, Bub1 inhibition marginally reduced the time that Reversine-treated cells remained arrested before overriding nocodazole-induced arrest (Figure 6F and G, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing duration of mitotic arrest in cells treated with Reversine and Bub1 inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "ba16f0ab-29a2-42dc-bf7e-a0cf4f30da9b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C50",
+      "claim": "Bub1 depletion causes a drastic shortening of mitotic arrest in Reversine-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Bub1 depletion also caused a drastic shortening of arrest (Figure 6F and G, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing duration of mitotic arrest in cells treated with Reversine after Bub1 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "7735e807-2e8c-453d-b091-e565f475d0f6",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C51",
+      "claim": "The scaffolding function of Bub1 is required for the SAC, but its catalytic activity is largely dispensable.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with previous studies (Klebig et al., 2009; Perera and Taylor, 2010a; Perera et al., 2007; Ricke et al., 2012), these observations demonstrate that the scaffolding function of Bub1 is required for the SAC, but its catalytic activity is largely dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of effects of Bub1 inhibition versus depletion on SAC function, combined with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "711d6eb0-4c1e-42e6-8b83-67af5c0b115d",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C52",
+      "claim": "Nearly 28% of Bub1-depleted cells fail to completely align all chromosomes after Monastrol washout.",
+      "claim_type": "EXPLICIT",
+      "source": "While nearly 28% of Bub1-depleted cells failed to completely align all chromosomes, more than 90% of Bub1-inhibited cells showed complete alignment that was indistinguishable from control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Microscopy data showing chromosome alignment after Monastrol washout in Bub1-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "f367330f-240b-4cc4-b3aa-62726fcfc8f7",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C53",
+      "claim": "More than 90% of Bub1-inhibited cells show complete chromosome alignment that is indistinguishable from control cells after Monastrol washout.",
+      "claim_type": "EXPLICIT",
+      "source": "While nearly 28% of Bub1-depleted cells failed to completely align all chromosomes, more than 90% of Bub1-inhibited cells showed complete alignment that was indistinguishable from control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Microscopy data showing chromosome alignment after Monastrol washout in Bub1-inhibited cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b5f0fcf3-05c9-4674-a245-c64a07c5c90a",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C54",
+      "claim": "Bub1 inhibition only marginally increases the frequency of micronucleation in HeLa and RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While partial inhibition of Aurora B kinase provoked an increase in micronucleation in both cell lines, as expected (Gohard et al., 2014; Tao et al., 2009), Bub1 inhibition only marginally increased the frequency of micronucleation (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data showing frequency of micronucleation after Bub1 inhibition, with citations to previous studies on Aurora B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0b220057-8094-4497-aba6-16ef9bdd9066",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C55",
+      "claim": "BAY-320 and BAY-524 treatment exerts no significant effects on the kinetochore recruitment of the motor protein CENP-E.",
+      "claim_type": "EXPLICIT",
+      "source": "Further corroborating this conclusion, we found that BAY-320 or BAY-524 treatment exerted no significant effects on the kinetochore recruitment of the motor protein CENP-E (Figure 7D and E, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing CENP-E levels at kinetochores after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "6c720005-508c-4470-b110-79020c7eff91",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C56",
+      "claim": "Bub1 depletion reduces CENP-E levels at kinetochores by ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Bub1 depletion reduced CENP-E levels at KTs by ~40% (Figure 7D and E, right panels), in agreement with previous reports (Johnson et al., 2004; Sharp-Baker and Chen, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative immunofluorescence data showing CENP-E levels at kinetochores after Bub1 depletion, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "dd8a8fbd-3c17-4158-9f5b-45c94e31d552",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C57",
+      "claim": "Bub1 kinase activity is largely dispensable for chromosome congression and segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that Bub1 kinase activity is largely dispensable for chromosome congression and segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence including chromosome alignment assays, micronucleation frequency, and CENP-E recruitment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "fffe2568-d294-44db-af8f-2359ef9af3cf",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C58",
+      "claim": "Even though Bub1 inhibition results in a marked reduction of Aurora B levels at centromeres, these levels are still sufficient to ensure largely faithful chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that even though Bub1 inhibition results in a marked reduction of Aurora B levels at centromeres (Figure 4), these levels are still sufficient to ensure largely faithful chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of Aurora B reduction at centromeres with minimal effects on chromosome segregation fidelity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "a2a05c4c-46ca-4ced-b6ae-a4435fa2c180",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C59",
+      "claim": "Bub1 protein is important for efficient chromosome congression, presumably reflecting the role of Bub1 in CENP-E recruitment to kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Bub1 protein is clearly important for efficient chromosome congression, presumably reflecting the role of Bub1 in CENP-E recruitment to KTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Effects of Bub1 depletion on chromosome alignment and CENP-E recruitment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "411a0b52-23fd-462f-a3c8-8e385db982ed",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C60",
+      "claim": "Single treatment with 1\u20134 nM Paclitaxel produces modest impairment of cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "While single treatment with 1\u20134 nM Paclitaxel produced modest impairment of cell proliferation, the concomitant application of the Bub1 inhibitors, BAY-320 at 3 \u03bcM or BAY-524 at 7 or 10 \u03bcM, clearly exacerbated inhibition of proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Colony formation assay data showing cell proliferation after Paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0ba5519f-eafa-46ab-b0c6-81bcb242c94f",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C61",
+      "claim": "Concomitant application of Bub1 inhibitors BAY-320 or BAY-524 with 1\u20134 nM Paclitaxel clearly exacerbates inhibition of proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "While single treatment with 1\u20134 nM Paclitaxel produced modest impairment of cell proliferation, the concomitant application of the Bub1 inhibitors, BAY-320 at 3 \u03bcM or BAY-524 at 7 or 10 \u03bcM, clearly exacerbated inhibition of proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Colony formation assay data showing cell proliferation after combined Paclitaxel and Bub1 inhibitor treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "4ae33749-de51-422e-b7a0-4395152153a9",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C62",
+      "claim": "Effects of combined Paclitaxel and Bub1 inhibitor treatment are particularly drastic in aneuploid HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects were particularly drastic in aneuploid HeLa cells (Figure 8A and B, top panels), while diploid RPE1 cells were less affected (Figure 8A and B, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colony formation assay data comparing effects in HeLa versus RPE1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "2a3b7cd9-9e3b-4d55-94a5-7ae7ff15369f",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C63",
+      "claim": "Diploid RPE1 cells are less affected by combined Paclitaxel and Bub1 inhibitor treatment compared to aneuploid HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects were particularly drastic in aneuploid HeLa cells (Figure 8A and B, top panels), while diploid RPE1 cells were less affected (Figure 8A and B, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colony formation assay data comparing effects in HeLa versus RPE1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "aaaae033-f761-4511-906e-5f20ab8abe02",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C64",
+      "claim": "The combination of Paclitaxel with either Mps1 or Bub1 inhibition produces similar synergistic effects, albeit with cell-type specific differences.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that the combination of Paclitaxel with either Mps1 or Bub1 inhibition produced similar synergistic effects, albeit with cell-type specific differences (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colony formation assay data comparing effects of Paclitaxel combined with Mps1 or Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "05d7523b-7b92-457d-8889-b61627e0bd1c",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C65",
+      "claim": "Synergy between BAY-320 and Paclitaxel treatment is confirmed for both HeLa and non-small cell lung cancer cells using extensive dose-response analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using extensive dose-response analyses, synergy between BAY-320 and Paclitaxel treatment was further confirmed for both HeLa (Figure 8C) and non-small cell lung cancer cells (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "IC50 isobologram and combination index analyses showing synergy between BAY-320 and Paclitaxel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "ecf1f14e-29fb-4c84-8648-930d435c1af9",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C66",
+      "claim": "Bub1 inhibition alone does not significantly elevate the frequency of chromosome missegregation in either HeLa or RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the micronucleation data described above (Figure 7), Bub1 inhibition alone did not significantly elevate the frequency of chromosome missegregation in either HeLa or RPE1 cells (Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing frequency of chromosome segregation defects after Bub1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "651f3f7e-3056-4a41-9376-53d296d6a246",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C67",
+      "claim": "HeLa cells display a high frequency of severe chromosome segregation defects when Bub1 inhibition is combined with 1\u20134 nM Paclitaxel, comparable to the consequences of combined Mps1 inhibition and Paclitaxel treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, HeLa cells displayed an even higher frequency of severe chromosome segregation defects when Bub1 inhibition was combined with 1\u20134 nM Paclitaxel, comparable to the consequences of combined Mps1 inhibition and Paclitaxel treatment (Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging data showing frequency of chromosome segregation defects after combined Bub1 inhibition and Paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "bfcfb0b6-5a06-4768-84e8-c071b9277acc",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C68",
+      "claim": "Bub1 inhibition only marginally elevates the rate of Paclitaxel-induced chromosome missegregation in RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Bub1 inhibition only marginally elevated the rate of Paclitaxel-induced chromosome missegregation in RPE1 cells, while combinatorial treatment with Reversine still resulted in a high rate of mild segregation defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Time-lapse imaging data showing frequency of chromosome segregation defects in RPE1 cells after combined Bub1 inhibition and Paclitaxel treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "6be1496a-4c4f-4f9e-a8e3-b72b1c021818",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C69",
+      "claim": "Chromosome segregation errors constitute the most likely cause for the observed impairment of cell proliferation when Bub1 inhibition is combined with low dose Paclitaxel treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the strong correlation in the data shown in Figures 7 and 8, it is tempting to conclude that chromosome segregation errors constitute the most likely cause for the observed impairment of cell proliferation when Bub1 inhibition is combined with low dose Paclitaxel treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation between chromosome segregation defects and impaired proliferation in combined treatment experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0189b338-b7cc-4768-a244-d491b971cb9d",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C70",
+      "claim": "Although inhibition of Bub1 kinase activity per se exerts only minor effects on SAC functionality, chromosome segregation and mitotic progression, treatment with BAY-320 or BAY-524 sensitizes cells to low, clinically relevant doses of Paclitaxel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although inhibition of Bub1 kinase activity per se exerts only minor effects on SAC functionality, chromosome segregation and mitotic progression, treatment with BAY-320 or BAY-524 sensitizes cells to low, clinically relevant doses of Paclitaxel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings showing minimal effects of Bub1 inhibition alone but synergistic effects with Paclitaxel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "9e09ce34-07c1-4204-a4c0-2eab55376b3e",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C71",
+      "claim": "The major conclusion emerging from the present study is that the overall impact of Bub1 inhibition on mitotic progression is surprisingly mild, clearly less severe than the impact of Bub1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "The major conclusion emerging from the present study is that the overall impact of Bub1 inhibition on mitotic progression is surprisingly mild, clearly less severe than the impact of Bub1 depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of effects of Bub1 inhibition versus depletion across multiple mitotic processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "43973ad2-37d6-4fe9-83d9-df7517dd273c",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C72",
+      "claim": "The requirement for Bub1 during chromosome congression and segregation primarily reflects a scaffolding function.",
+      "claim_type": "EXPLICIT",
+      "source": "This reinforces the notion that the requirement for Bub1 during chromosome congression and segregation primarily reflects a scaffolding function (Fernius and Hardwick, 2007; Klebig et al., 2009; Perera and Taylor, 2010b; Rischitor et al., 2007; Sharp-Baker and Chen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of effects of Bub1 inhibition versus depletion, combined with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "c7d32c7d-3158-4b9b-9ec3-adc0b5a93999",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C73",
+      "claim": "Genetic elimination of Bub1 kinase activity is compatible with mouse development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is difficult to exclude that a small fraction of total Bub1 kinase activity might be refractory to inhibition and suffice for functionality, but we emphasize that genetic elimination of Bub1 kinase activity is compatible with mouse development, arguing similarly against an essential role of Bub1 kinase activity for mitotic progression (Ricke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to a previous study showing mouse viability without Bub1 kinase activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b869cbc4-19f6-4e51-a1e1-175da54ea09a",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C74",
+      "claim": "Inhibitor studies and genetic data concur to indicate that lack of Bub1 kinase activity produces only mild disturbances of mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inhibitor studies and genetic data concur to indicate that lack of Bub1 kinase activity produces only mild disturbances of mitotic progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Integration of current inhibitor study results with previous genetic studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b71d7afb-a702-4bf4-9603-e3484f85a4ef",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C75",
+      "claim": "Phosphorylation of Sgo2 by Aurora B promotes Sgo2 interaction with phosphatase 2A (PP2A).",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Sgo2 by Aurora B promotes Sgo2 interaction with phosphatase 2A (PP2A) (Tanno et al., 2010), and PP2A in turn protects cohesin proteins against phosphorylation (Kitajima et al., 2006; Riedel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies establishing the Sgo2-Aurora B-PP2A pathway.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "5bbe9c46-3c39-4ff9-9883-e880b03076b0",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C76",
+      "claim": "PP2A protects cohesin proteins against phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Sgo2 by Aurora B promotes Sgo2 interaction with phosphatase 2A (PP2A) (Tanno et al., 2010), and PP2A in turn protects cohesin proteins against phosphorylation (Kitajima et al., 2006; Riedel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies establishing PP2A's role in protecting cohesin.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "a565e94e-1602-439a-8849-d431742ceb78",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C77",
+      "claim": "Colocalization of Sgo2 and Aurora B in Bub1-inhibited cells provides a straightforward explanation for the observed persistence of arm cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, colocalization of Sgo2 and Aurora B in Bub1-inhibited cells provides a straightforward explanation for the observed persistence of arm cohesion (Kitajima et al., 2005; Perera et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Integration of observed Sgo2/Aurora B redistribution with known mechanisms of cohesion protection, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "c61dc131-e270-4854-b4e1-256fe3f43545",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C78",
+      "claim": "Depletion of Wapl causes persistent cohesion without significantly affecting mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that depletion of Wapl also causes persistent cohesion without significantly affecting mitotic progression (Lara-Gonzalez and Taylor, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to a previous study showing similar phenotype with Wapl depletion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "e9b68fb9-4613-4dd7-9f6d-4f0ffe1c3f07",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C79",
+      "claim": "One straightforward explanation for the extended mitotic timing after Bub1 depletion is that Bub1 depletion, but not Bub1 inhibition, causes the displacement of CENP-E from kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "One straightforward explanation for this observation is that Bub1 depletion, but not Bub1 inhibition, caused the displacement of CENP-E from KTs, a motor protein required for efficient chromosome congression (Bancroft et al., 2015; Putkey et al., 2002; Tanudji et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential effects on CENP-E recruitment combined with knowledge of CENP-E's role in chromosome congression from cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "ad021095-f884-4363-ae34-55735409ece4",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C80",
+      "claim": "Approximately half the normal centromere/kinetochore levels of CPC are sufficient to confer functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that approximately half the normal centromere/KT levels of CPC are sufficient to confer functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation that ~50% reduction in CPC levels does not severely impair chromosome segregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "de0649b9-5072-4ebf-9889-b57692d6eb28",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C81",
+      "claim": "Partial impairment of CPC recruitment to centromeres/kinetochores did not abolish viability or trigger extensive defects in chromosome segregation in budding yeast or chicken DT40 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this conclusion, we note that partial impairment of CPC recruitment to centromeres/KTs did not abolish viability or trigger extensive defects in chromosome segregation in budding yeast or chicken DT40 cells (Campbell and Desai, 2013; Yue et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies in other organisms showing similar tolerance to partial CPC reduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "2894075f-d396-4af9-8ee1-65f8a30d4576",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C82",
+      "claim": "Combined inhibition of Mps1 and either Plk1 or Aurora B results in a complete SAC shutdown and immediate mitotic exit.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, combined inhibition of Mps1 and either Plk1 or Aurora B resulted in a complete SAC shutdown and immediate mitotic exit, in line with previous results (Saurin et al., 2011; von Schubert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Time-lapse imaging data showing mitotic exit after combined kinase inhibition, with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "15129084-fbfa-41d1-b9fa-c9e77d9f9c1e",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C83",
+      "claim": "Inhibition of SAC kinases has emerged as a potentially attractive strategy to kill tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of SAC kinases has emerged as a potentially attractive strategy to kill tumor cells (Janssen et al., 2009; Salmela and Kallio, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies discussing SAC kinase inhibition as a therapeutic strategy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "4b6ef5b0-551f-4787-bea4-61ea6f89cd06",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C84",
+      "claim": "Several inhibitors of the SAC kinase Mps1 were shown to exert anti-tumor effects in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Several inhibitors of the SAC kinase Mps1 were shown to exert anti-tumor effects in mouse models (Colombo et al., 2010; Kusakabe et al., 2015; Tannous et al., 2013; Tardif et al., 2011), but toxicity associated with single agent therapy remains a concern (Martinez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies showing anti-tumor effects of Mps1 inhibitors and associated toxicity concerns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "6bb15b40-dcd8-42b5-bab8-f706d0daaf0e",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C85",
+      "claim": "Combination of anti-SAC compounds with MT-targeting agents may constitute a more rewarding strategy than single agent therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, combination of anti-SAC compounds with MT-targeting agents may constitute a more rewarding strategy (Jema\u00e0 et al., 2013; Maia et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies suggesting combination therapy approaches.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "1b608307-271d-4340-8ddd-f8acc2b3b1fd",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C86",
+      "claim": "A plausible explanation for the synergy between Bub1 inhibition and Paclitaxel is that Paclitaxel increases KT-MT attachment errors to levels that can no longer be corrected when Aurora B/CPC is partially displaced upon Bub1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible explanation for this synergy is that Paclitaxel increases KT-MT attachment errors to levels that can no longer be corrected when Aurora B/CPC is partially displaced upon Bub1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Integration of known effects of Paclitaxel on microtubules with observed effects of Bub1 inhibition on Aurora B localization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "7e196f84-1dab-47c3-a548-e0ee26c2067b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C87",
+      "claim": "The synergistic effects of Bub1 inhibition and Paclitaxel were substantially more pronounced in aneuploid HeLa cells than in near-diploid RPE1 cells, suggesting a potential therapeutic window.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these synergistic effects were substantially more pronounced in aneuploid HeLa cells than in near-diploid RPE1 cells, suggesting a potential therapeutic window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of effects in HeLa versus RPE1 cells showing differential sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b61a8a0c-f1da-492a-9337-4104400d31a4",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C88",
+      "claim": "BAY-320 and BAY-524 act as potent and selective inhibitors of Bub1 kinase in both biochemical and cellular assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, BAY-320 and BAY-524 act as potent and selective inhibitors of Bub1 kinase in both biochemical and cellular assays and thus constitute attractive tools to study Bub1 catalytic function during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of in vitro and cellular assay data demonstrating potency and selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "a19643e4-8205-4b6b-a5ec-ca5f6559c01c",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C89",
+      "claim": "BAY-320 and BAY-524 constitute attractive tools to study Bub1 catalytic function during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, BAY-320 and BAY-524 act as potent and selective inhibitors of Bub1 kinase in both biochemical and cellular assays and thus constitute attractive tools to study Bub1 catalytic function during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of inhibitor characterization demonstrating their utility for studying Bub1 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "be0aad0b-7335-450b-8cb6-b8872629f92c",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C90",
+      "claim": "The kinase Bub1 functions in the spindle assembly checkpoint (SAC) and in chromosome congression.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase Bub1 functions in the spindle assembly checkpoint (SAC) and in chromosome congression, but the role of its catalytic activity remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Bub1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "1299e334-17ca-40c4-aec6-81547f5e1bf1",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C91",
+      "claim": "The role of Bub1 catalytic activity remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase Bub1 functions in the spindle assembly checkpoint (SAC) and in chromosome congression, but the role of its catalytic activity remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement acknowledging ongoing debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "530f4ce4-4b20-4fa2-b1e1-561937cf8713",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C92",
+      "claim": "Bub1 inhibition affected chromosome association of Shugoshin and the chromosomal passenger complex (CPC), without abolishing global Aurora B function.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 inhibition affected chromosome association of Shugoshin and the chromosomal passenger complex (CPC), without abolishing global Aurora B function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from immunofluorescence and FRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "d3c7b7d0-5368-4c8f-9a37-b11c17f34b04",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C93",
+      "claim": "Inhibition of Bub1 kinase impaired chromosome arm resolution but exerted only minor effects on mitotic progression or SAC function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, inhibition of Bub1 kinase impaired chromosome arm resolution but exerted only minor effects on mitotic progression or SAC function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from chromosome spread analysis, time-lapse imaging, and SAC assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "22abd6f8-c47a-45f6-8cc3-ebb6e6845f52",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C94",
+      "claim": "BAY-320 and BAY-524 treatment sensitized cells to low doses of Paclitaxel, impairing both chromosome segregation and cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, BAY-320 and BAY-524 treatment sensitized cells to low doses of Paclitaxel, impairing both chromosome segregation and cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from colony formation assays and time-lapse imaging of chromosome segregation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "66a6fa55-5dbe-456b-94f6-25feae812121",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "claim_id": "C95",
+      "claim": "The findings are relevant to our understanding of Bub1 kinase function and the prospects of targeting Bub1 for therapeutic applications.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are relevant to our understanding of Bub1 kinase function and the prospects of targeting Bub1 for therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the broader significance of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BAY-320 and BAY-524 are potent and selective inhibitors of Bub1 kinase. Both compounds inhibit recombinant Bub1 with IC50 values of 680\u00b1280 nM and 450\u00b160 nM respectively in vitro, show high selectivity against panels of 222 and 403 kinases, and effectively inhibit Bub1 in intact cells at 3-10 \u03bcM (BAY-320) and 7-10 \u03bcM (BAY-524) as demonstrated by reduced histone H2A T120 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C88-C89 provide converging evidence from in vitro kinase assays (IC50 values), selectivity profiling against large kinase panels, and cellular assays (immunofluorescence, in-cell western, Western blotting) demonstrating both potency and selectivity. The data are internally consistent and supported by appropriate controls including kinase-dead mutants and dose-response curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bub1 kinase inhibition has minimal effects on mitotic progression compared to Bub1 depletion. While Bub1 depletion significantly prolongs mitosis in HeLa cells, treatment with BAY-320 or BAY-524 causes only minor delays in anaphase onset. Neither inhibition nor depletion significantly affects mitotic progression in diploid RPE1 cells, and inhibition does not alter cell cycle profiles in either cell line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 and C71-C74 are supported by time-lapse imaging data, flow cytometry, and comparison with previous genetic studies (C73). The differential effects of inhibition versus depletion clearly demonstrate that Bub1's role in mitotic progression is primarily scaffolding rather than catalytic. The data are consistent across multiple cell lines and experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bub1 catalytic activity regulates sister chromatid cohesion and Shugoshin localization. Bub1 inhibition causes persistent chromosome arm cohesion, reduces centromeric Sgo1 and Sgo2 levels to ~20% of control, and causes redistribution of Sgo2 to chromosome arms. This is explained by colocalization of Sgo2 and Aurora B on chromosome arms, which protects cohesin through the Sgo2-Aurora B-PP2A pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by chromosome spread analysis and quantitative immunofluorescence showing both reduced centromeric Sgo levels and Sgo2 redistribution. Claims C75-C77 integrate these observations with established mechanistic knowledge (cited studies) to provide a coherent explanation. The data are consistent and the mechanistic interpretation is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "470a9ca7-ed58-4215-a9aa-7edc428087d9",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bub1 inhibition affects CPC localization and Aurora B activity at centromeres. Bub1 inhibition reduces centromeric levels of Aurora B, Borealin, and INCENP by ~50%, while depletion reduces them by ~70%. Both inhibition and depletion reduce CENP-A Ser7 phosphorylation by ~50% but histone H3 Ser10 phosphorylation by only ~10-20%, indicating that Bub1 primarily affects Aurora B activity at centromeres rather than chromosome arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 and C92 are supported by quantitative immunofluorescence data showing dose-dependent effects on CPC components and Aurora B substrates, plus FRET-based activity measurements. The differential effects on centromeric versus chromosome arm substrates provide strong evidence for the spatial specificity of Bub1's role. The data are internally consistent and well-quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bub1 and Haspin cooperate in CPC recruitment to centromeres, but Bub1 uniquely restricts CPC to centromeres. Individual inhibition of either Bub1 or Haspin reduces centromeric CPC levels to ~40%, while combined inhibition reduces them to ~80%. Bub1 inhibition causes Aurora B redistribution to chromosome arms (~2-fold increase), while Haspin inhibition causes overall reduction without redistribution. This demonstrates cooperation in recruitment through H2A-T120 and H3-T3 phosphorylation, with Bub1 having an additional role in restricting CPC localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C33 are supported by quantitative immunofluorescence in fixed cells and live cell imaging of endogenously tagged Aurora B-EGFP. The additive effects of combined inhibition and differential effects on Aurora B redistribution provide strong evidence for both cooperation and distinct roles. Control experiments (C27) demonstrate inhibitor specificity. The data are comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "1bce82bf-3929-4678-9e6e-a1f586c1425e",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bub1 protein, but not its kinase activity, is required for SAC function. Bub1 inhibition does not significantly affect kinetochore recruitment of Mad1, Mad2, or BubR1, while depletion reduces recruitment by 80-90%. Bub1 inhibition has minimal effects on Bub1 dynamics at kinetochores (FRAP) and causes only modest weakening of SAC arrest in nocodazole-treated cells, while depletion causes more severe SAC defects. This demonstrates that Bub1's scaffolding function is required for the SAC, but its catalytic activity is largely dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C51 are supported by multiple complementary approaches: quantitative immunofluorescence of SAC proteins, FRAP analysis of endogenously tagged Bub1, and time-lapse imaging of cell fates in nocodazole-arrested cells. The differential effects of inhibition versus depletion are consistent across all assays. The data are well-controlled and include comparison with previous studies (citations). The conclusion is strongly supported by the systematic comparison of inhibition versus depletion phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "920e91fd-088b-4216-8f0a-eb821967850b",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bub1 kinase activity is largely dispensable for chromosome congression and segregation. More than 90% of Bub1-inhibited cells show complete chromosome alignment after Monastrol washout (versus 72% for Bub1-depleted cells), and Bub1 inhibition only marginally increases micronucleation frequency. Bub1 inhibition does not affect CENP-E recruitment to kinetochores, while depletion reduces it by ~40%. This indicates that ~50% of normal centromeric Aurora B levels are sufficient for faithful chromosome segregation, and that Bub1 protein (not kinase activity) is important for chromosome congression through CENP-E recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 and C79-C81 are supported by multiple assays: Monastrol washout experiments, micronucleation frequency measurements, and CENP-E localization studies. The data consistently show minimal effects of kinase inhibition versus substantial effects of protein depletion. Claims C80-C81 provide supporting evidence from other organisms. The mechanistic interpretation linking CENP-E recruitment to chromosome congression defects is well-supported by cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "cb3d53d6-4a80-4216-a3ec-d525713257c9",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bub1 inhibition sensitizes cells to low-dose Paclitaxel in a synergistic manner. While Bub1 inhibition alone has minimal effects on chromosome segregation, combining BAY-320 or BAY-524 with 1-4 nM Paclitaxel dramatically impairs both chromosome segregation and cell proliferation. This synergy is particularly pronounced in aneuploid HeLa cells compared to diploid RPE1 cells, suggesting a potential therapeutic window. The impaired proliferation correlates strongly with increased chromosome segregation errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C70, C87, and C94 are supported by colony formation assays, IC50 isobologram analysis demonstrating synergy (combination index <0.8), and time-lapse imaging quantifying chromosome segregation defects. The data are consistent across multiple cell lines (HeLa, RPE1, NCI-H1299) and show clear dose-dependent effects. The correlation between segregation errors and proliferation defects (C69) is well-documented. The differential sensitivity of aneuploid versus diploid cells is an important observation for therapeutic applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "0de3e74b-9cdf-40c3-8129-8d885295fb80",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are contextualized within the broader field of SAC kinase inhibition for cancer therapy. Genetic elimination of Bub1 kinase activity is compatible with mouse development (C73), and the therapeutic potential of SAC kinase inhibition has been established for Mps1 (C83-C84). The synergy between Bub1 inhibition and Paclitaxel is mechanistically explained by Paclitaxel increasing KT-MT attachment errors beyond the correction capacity of partially displaced Aurora B/CPC (C86).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C78-C86 provide important context from prior work (all supported by citations) and mechanistic interpretation of the current findings. The mechanistic explanation in C86 is a reasonable inference based on established knowledge of Paclitaxel's effects on microtubules and Aurora B's role in error correction. These contextual claims appropriately frame the significance of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "22f03805-98ca-433a-9bff-2fc16db609a7",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study addresses a controversial question in the field regarding the role of Bub1 catalytic activity in mitosis and has implications for therapeutic targeting of Bub1. These claims frame the motivation and significance of the work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 and C95 are framing statements that accurately represent the state of the field (C90-C91 acknowledge the controversy) and the significance of the findings (C95). These are appropriately supported by the comprehensive characterization of Bub1 inhibitors and their effects presented in the other results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    },
+    {
+      "id": "9ba324f2-5356-4de1-a687-cccac2f8b961",
+      "content_id": "510d0b66-97cc-4f69-8d84-e1e8668cb34c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Summary claim that Bub1 kinase inhibition impaired chromosome arm resolution but exerted only minor effects on mitotic progression or SAC function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is a summary statement that accurately reflects the findings documented in multiple other result groups (particularly results 2, 3, 6, and 7). It is well-supported by the comprehensive data presented throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:05.700430Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5542c0d-ab4d-4e05-8a33-16e3db757fcc",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "0cdaadfd-7db5-4dd2-a1b5-3dec88ba630a",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "1e1eef8a-0e78-408a-9bd6-aad3ddcbab24",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "a13377d0-ea32-4f86-b084-839cccb4f410",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "9b87d63a-f83b-47c4-ab0c-6c02eed47338",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "748431b4-8ecf-4107-9ef0-6678f7338462",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "3d118101-6b42-4726-a6d7-f34f2dac3237",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "b61a8a0c-f1da-492a-9337-4104400d31a4",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "a19643e4-8205-4b6b-a5ec-ca5f6559c01c",
+      "result_id": "ae12d8b6-ff1d-4b58-9d15-7b38de4ab5f7"
+    },
+    {
+      "claim_id": "c605dda9-8bce-4310-a2d2-7895a1bf3a9d",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "91d9339e-c20f-4f36-bc8c-2a83e3c8b72f",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "2d230b26-f7e0-41d6-a655-18dbf83a659f",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "e0f15031-ddb7-4fb3-a400-ca29706cf044",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "bb768fb6-3718-4c18-abe1-bd17cfc9ad33",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "9e09ce34-07c1-4204-a4c0-2eab55376b3e",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "43973ad2-37d6-4fe9-83d9-df7517dd273c",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "b869cbc4-19f6-4e51-a1e1-175da54ea09a",
+      "result_id": "cc8709eb-5bbc-4057-920d-9bf8e4262dba"
+    },
+    {
+      "claim_id": "5133533d-72d1-4256-af0d-a059090a9340",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "2e299615-39e1-4ba4-86e3-c1bb85916bf1",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "32377e56-3e1a-425a-90b4-84317769fc15",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "e7c2cb96-2cb1-4b4b-8004-ee39dbc6cefb",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "b71d7afb-a702-4bf4-9603-e3484f85a4ef",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "5bbe9c46-3c39-4ff9-9883-e880b03076b0",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "a565e94e-1602-439a-8849-d431742ceb78",
+      "result_id": "bd273a16-f1e9-49fd-9b33-1e5567bb432b"
+    },
+    {
+      "claim_id": "deae069c-e5bd-4737-8e68-b0268b96c5c5",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "880c596f-c8b5-430e-9aaf-ea0c38f98821",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "fd0fb30e-445a-45d7-baea-45d1ce290c39",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "4331da85-ab4d-4802-9ef7-e5c998f6db45",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "5021873b-1f03-4184-ad02-cfa211665b70",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "85ca5512-6035-4131-8486-a325bc1642ec",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "5f2b6ea3-bc3a-4ad2-ad95-53fad8470104",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "530f4ce4-4b20-4fa2-b1e1-561937cf8713",
+      "result_id": "470a9ca7-ed58-4215-a9aa-7edc428087d9"
+    },
+    {
+      "claim_id": "cd911f0d-c2d4-4867-948a-5b65aa19472e",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "978b8847-fdbf-4d72-acaa-9daa2d392194",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "eaf5db85-3d3b-48e4-9782-b5f06bd35c41",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "e00ffa74-5a20-41da-8b07-c2c895f07e07",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "1ae745ad-1216-4810-a386-a36d6d0db3e3",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "086916f3-0899-46f3-a4a7-67b91ed7eff9",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "4f38d1c1-1913-470d-b5af-75555393e098",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "41e0396e-03ab-4a76-8614-60647160957d",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "5c18ab39-fbb3-4563-9680-a808b93c8213",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "af036ad2-9c4e-4545-a290-8773858ef9e4",
+      "result_id": "b0e28e5a-3668-4ac2-a7a6-e39c4fae6df4"
+    },
+    {
+      "claim_id": "36b2eea3-e861-4398-b4dc-2ce638e50cbd",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "bac50937-faeb-479f-b885-31c61dd96285",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "291d64af-62ba-4342-9e5f-5bc5511f637d",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "db4e7fac-3413-481d-8dfe-c25b4a9559c5",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "d4ec148d-10ab-4fc2-a9f2-d576d6b1e96b",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "820720c1-e381-443c-b529-15b60b23b87c",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "189192cf-c8e5-4baa-b9b8-e3bb4e5e70b5",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "498ef254-bb5e-464f-b007-cb089eb40930",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "fa9e969f-bab9-4756-a139-c439a433ff45",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "6ef3acc4-5205-4cba-9f95-a0d79ee1d253",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "e87529fb-0b2c-4956-9675-c55a82df0e1b",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "683b535a-ec9c-4136-b35d-f6a6a130b3a1",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "6e85737c-2bbf-4010-887b-d4478fe3f60b",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "b852d0dc-8cf4-486d-8984-c9c2aecb0a8a",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "0d932811-a31a-436c-962b-8051b75465f7",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "025a3865-99d3-42f7-bf58-0e324c1ca0de",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "ba16f0ab-29a2-42dc-bf7e-a0cf4f30da9b",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "7735e807-2e8c-453d-b091-e565f475d0f6",
+      "result_id": "1bce82bf-3929-4678-9e6e-a1f586c1425e"
+    },
+    {
+      "claim_id": "711d6eb0-4c1e-42e6-8b83-67af5c0b115d",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "f367330f-240b-4cc4-b3aa-62726fcfc8f7",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "b5f0fcf3-05c9-4674-a245-c64a07c5c90a",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "0b220057-8094-4497-aba6-16ef9bdd9066",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "6c720005-508c-4470-b110-79020c7eff91",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "dd8a8fbd-3c17-4158-9f5b-45c94e31d552",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "fffe2568-d294-44db-af8f-2359ef9af3cf",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "a2a05c4c-46ca-4ced-b6ae-a4435fa2c180",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "e9b68fb9-4613-4dd7-9f6d-4f0ffe1c3f07",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "ad021095-f884-4363-ae34-55735409ece4",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "de0649b9-5072-4ebf-9889-b57692d6eb28",
+      "result_id": "920e91fd-088b-4216-8f0a-eb821967850b"
+    },
+    {
+      "claim_id": "411a0b52-23fd-462f-a3c8-8e385db982ed",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "0ba5519f-eafa-46ab-b0c6-81bcb242c94f",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "4ae33749-de51-422e-b7a0-4395152153a9",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "2a3b7cd9-9e3b-4d55-94a5-7ae7ff15369f",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "aaaae033-f761-4511-906e-5f20ab8abe02",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "05d7523b-7b92-457d-8889-b61627e0bd1c",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "ecf1f14e-29fb-4c84-8648-930d435c1af9",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "651f3f7e-3056-4a41-9376-53d296d6a246",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "bfcfb0b6-5a06-4768-84e8-c071b9277acc",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "6be1496a-4c4f-4f9e-a8e3-b72b1c021818",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "0189b338-b7cc-4768-a244-d491b971cb9d",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "7e196f84-1dab-47c3-a548-e0ee26c2067b",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "22abd6f8-c47a-45f6-8cc3-ebb6e6845f52",
+      "result_id": "cb3d53d6-4a80-4216-a3ec-d525713257c9"
+    },
+    {
+      "claim_id": "c7d32c7d-3158-4b9b-9ec3-adc0b5a93999",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "c61dc131-e270-4854-b4e1-256fe3f43545",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "de0649b9-5072-4ebf-9889-b57692d6eb28",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "2894075f-d396-4af9-8ee1-65f8a30d4576",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "15129084-fbfa-41d1-b9fa-c9e77d9f9c1e",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "4b6ef5b0-551f-4787-bea4-61ea6f89cd06",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "6bb15b40-dcd8-42b5-bab8-f706d0daaf0e",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "1b608307-271d-4340-8ddd-f8acc2b3b1fd",
+      "result_id": "0de3e74b-9cdf-40c3-8129-8d885295fb80"
+    },
+    {
+      "claim_id": "be0aad0b-7335-450b-8cb6-b8872629f92c",
+      "result_id": "22f03805-98ca-433a-9bff-2fc16db609a7"
+    },
+    {
+      "claim_id": "1299e334-17ca-40c4-aec6-81547f5e1bf1",
+      "result_id": "22f03805-98ca-433a-9bff-2fc16db609a7"
+    },
+    {
+      "claim_id": "66a6fa55-5dbe-456b-94f6-25feae812121",
+      "result_id": "22f03805-98ca-433a-9bff-2fc16db609a7"
+    },
+    {
+      "claim_id": "d3c7b7d0-5368-4c8f-9a37-b11c17f34b04",
+      "result_id": "9ba324f2-5356-4de1-a687-cccac2f8b961"
+    }
+  ],
+  "comparisons": []
+}

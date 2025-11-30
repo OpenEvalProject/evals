@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CS-SOM neurons originate from layers 5 and 6 of the auditory cortex and project unidirectionally to the dorsal striatum. These neurons exhibit electrophysiological properties characteristic of somatostatin interneurons, including wide action potentials, low rheobase, and specific membrane properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C29 provide converging anatomical, morphological, and electrophysiological evidence for CS-SOM neurons. The viral tracing experiments (C12-C13, C27-C28) demonstrate projection patterns, laminar distribution is shown (C14), and comprehensive electrophysiological characterization (C16-C25) confirms SOM interneuron identity. The unidirectional nature (C29) is supported by differential viral labeling patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CS-SOM neurons provide monosynaptic GABAergic inhibition to striatal SPNs. Optogenetic activation of CS-SOM axons evokes IPSCs with short latency (~2.2 ms), which are blocked by gabazine but not by glutamate receptor antagonists, and a large proportion of recorded neurons are SPNs based on dendritic spine morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 provide strong evidence for direct GABAergic transmission. The short latency (C31-C32) supports monosynaptic connectivity, pharmacological dissection (C33-C34) confirms GABAergic transmission independent of glutamatergic signaling, and biophysical characterization (C35-C38) is comprehensive. Post-hoc morphological identification (C39-C40) validates SPN identity, though only 50% recovery rate introduces some uncertainty about the full population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CS-SOM activation delays action potential generation in SPNs by an average of 159.16 \u00b1 66.45 ms during current injection, demonstrating functional control of spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate functional consequences of CS-SOM inhibition on SPN output. The experimental design combining current injection with optogenetic activation is appropriate, and the measured delay (C43) shows substantial variability (large SEM) but consistent effect direction. The sample size (n=6) is modest but adequate for this proof-of-principle demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CS-SOM neurons innervate both direct pathway (dSPN) and indirect pathway (iSPN) SPNs with similar strength and kinetics, showing no preferential targeting of either pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 provide statistical evidence for equivalent innervation of both SPN subtypes. The comparison of IPSC amplitude (C52-C54, p=0.7), charge (C55-C57, p=0.3), and rise times (C58) with appropriate non-parametric tests supports the conclusion. The sample size (n=7 each) is adequate, and the inference about synaptic distribution (C59) from rise time data is reasonable though indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Motor cortex CS-SOM neurons also project to dorsal striatum and directly inhibit SPNs with properties similar to auditory cortex projections, suggesting this is a general feature of corticostriatal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C71 extend the auditory cortex findings to motor cortex. The anatomical (C61), electrophysiological (C62-C66), and morphological (C67-C68) data parallel the auditory cortex results. The generalization to a broader organizational principle (C71) is reasonable given observation in two functionally distinct cortical areas, though testing in additional cortical regions would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The identity of long-range corticostriatal GABAergic neurons may vary across cortical regions, with evidence for somatostatin neurons in auditory/motor/frontal cortex but parvalbumin or VIP neurons in other regions, suggesting heterogeneous interneuron subtypes contribute to this projection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately contextualize the current findings within conflicting prior literature. The authors acknowledge that different studies (C73-C74) have identified different interneuron subtypes in corticostriatal projections from different cortical areas, and reasonably conclude heterogeneity exists (C75). This represents good scientific practice in reconciling discrepant findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "CS-SOM neurons may regulate synaptic integration in SPNs by targeting dendrites and shaping the output of both direct and indirect pathways rather than separating their activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C79, C81-C82 propose functional roles but C79 and C82 are explicitly speculative. While C76 is supported by the spike timing data and C81 by the D1/D2 experiments, the mechanistic claims about dendritic integration (C79) lack direct evidence of synaptic location, and the functional interpretation (C82) requires additional behavioral or circuit-level experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C91",
+      "C93"
+    ],
+    "result": "The discovery of direct cortical inhibition to striatum may have profound consequences for sensorimotor transformation, learning, and memory through mechanisms involving spine dynamics and the balance of excitation/inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C91, and C93 are explicitly speculative (\"likely to have,\" \"might play a role,\" \"may suggest\") and represent hypotheses for future work rather than demonstrated results. While these are reasonable speculations grounded in the data and prior literature (C89-C90), they lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C92"
+    ],
+    "result": "Contrary to the prevailing assumption that dorsal striatum receives exclusively excitatory cortical inputs, this study demonstrates that the cortex also provides direct inhibitory GABAergic inputs via CS-SOM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C92 frame the central finding. C1 accurately represents prior assumptions, and C2/C92 state the main discovery supported by the comprehensive experimental evidence throughout the manuscript. This represents a paradigm-shifting finding that challenges established models of corticostriatal connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work established that cortical regulation of striatal SPNs occurs through excitatory projections and local inhibitory circuits, with some evidence for long-range GABAergic projections from somatostatin neurons, though the cells of origin and physiological function were unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C11 accurately summarize established knowledge and identify the gap addressed by this study. The claims are well-supported by appropriate citations and correctly frame the novelty of the current work (C11). This provides proper context for evaluating the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Direct and indirect pathway SPNs are distinguished by D1 vs D2 dopamine receptor expression and have opposing functional roles in behavior, with fluorescent reporters in transgenic mice specifically labeling SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 accurately represent established knowledge about striatal pathways with appropriate citations. Claims C50-C51 describe methodological validation showing recovered neurons have dendritic spines characteristic of SPNs. The reliance on prior characterization of the reporter mice (C49) is appropriate and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "ChR2-positive axons remain photoexcitable when severed from their parent somata, enabling optogenetic activation of axon terminals in slice preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 cites established prior work demonstrating that ChR2-expressing axons can be activated independently of the soma. This is a well-validated technical principle that justifies the experimental approach of activating cortical axons in striatal slices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Established principles of cortical and striatal organization include dendritic targeting by SOM interneurons, convergence of multiple cortical areas in striatum, activity-dependent plasticity, and roles in sensorimotor learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 accurately summarize relevant background knowledge with appropriate citations. These provide important context for interpreting the functional significance of CS-SOM projections and support the discussion of potential mechanisms and implications. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

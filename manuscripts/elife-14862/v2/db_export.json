@@ -1,0 +1,1633 @@
+{
+  "submission": {
+    "id": "7dbb8aca-57b3-4eab-9452-6972a7c85d4d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:59:01.260717Z",
+    "updated_at": "2025-11-29T23:59:01.260717Z"
+  },
+  "content": [
+    {
+      "id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "submission_id": "7dbb8aca-57b3-4eab-9452-6972a7c85d4d",
+      "content_type": "manuscript",
+      "content_text": "# ELKS controls the pool of readily releasable vesicles at excitatory synapses through its N-terminal coiled-coil domains\n\n## Authors\n\n- Richard G Held<sup>1</sup>\n- Changliang Liu<sup>1</sup>\n- Pascal S Kaeser<sup>1</sup> ([ORCID: 0000-0002-1558-1958](https://orcid.org/0000-0002-1558-1958)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn a presynaptic nerve terminal, synaptic strength is determined by the pool of readily releasable vesicles (RRP) and the probability of release (P) of each RRP vesicle. These parameters are controlled at the active zone and vary across synapses, but how such synapse specific control is achieved is not understood. ELKS proteins are enriched at vertebrate active zones and enhance P at inhibitory hippocampal synapses, but ELKS functions at excitatory synapses are not known. Studying conditional knockout mice for ELKS, we find that ELKS enhances the RRP at excitatory synapses without affecting P. Surprisingly, ELKS C-terminal sequences, which interact with RIM, are dispensable for RRP enhancement. Instead, the N-terminal ELKS coiled-coil domains that bind to Liprin-\u03b1 and Bassoon are necessary to control RRP. Thus, ELKS removal has differential, synapse-specific effects on RRP and P, and our findings establish important roles for ELKS N-terminal domains in synaptic vesicle priming.\n\n## Introduction\n\nWithin a presynaptic nerve terminal, synaptic vesicle exocytosis is restricted to sites of neurotransmitter release called active zones. The active zone is a dense protein complex that is attached to the presynaptic plasma membrane and is exactly opposed to postsynaptic receptors (Couteaux and Pecot-Dechavassine, 1970; Schoch and Gundelfinger, 2006; S\u00fcdhof, 2012). At the active zone, a small subset of the synaptic vesicles are primed in close proximity to presynaptic Ca2+ channels such that the incoming action potential leads to neurotransmitter release with minimal delay. The proteins of the active zone control the size of this pool of primed, readily releasable vesicles (RRP) and the release probability of those vesicles in response to an action potential (Kaeser and Regehr,\u00a02014; Alabi and Tsien, 2012). Vesicular release probability, referred to in this paper as P, and RRP size together act to set synaptic strength, sometimes referred to as the synaptic probability of release (Stevens, 2003; Zucker and Regehr, 2002). It is well known that RRP size and vesicular release probability differ across synapses, contributing to the generation of unique release properties (Abbott and Regehr, 2004). In the hippocampus, for example, excitatory and inhibitory synapses have markedly different properties (Kraushaar and Jonas, 2000; Salin et al., 1996). The underlying molecular mechanisms that control RRP and P are still only partially understood, and it is not known what components of the release machinery account for their synapse specific control.\n\nELKS, RIM, Munc13, RIM-binding protein (RIM-BP), Bassoon/Piccolo, and Liprin-\u03b1 proteins form a protein complex that defines the active zone (Schoch and Gundelfinger, 2006; S\u00fcdhof, 2012). This protein complex includes many additional proteins that are not active zone specific (Boyken et al., 2013; Muller et al., 2010; Schoch and Gundelfinger, 2006). ELKS (also called Erc, CAST, and Rab6IP2) was identified as an active zone protein through its interactions with RIM and named for its high content in the amino acids E, L, K, and S (Nakata et al., 1999; Wang et al., 2002; Monier et al., 2002; Ohtsuka et al., 2002). ELKS has known in vitro interactions with many active zone proteins and additional neuronal proteins (Figure 1A). It contains a C-terminal region that binds to the PDZ domain of RIM (Wang et al., 2002; Ohtsuka et al., 2002) and multiple coiled-coil stretches, which we have subdivided based on homology between the various vertebrate and invertebrate ELKS isoforms into four coiled-coil domains (CCA-CCD, Figure 1A). The coiled-coil stretches bind in vitro to Liprin-\u03b1 (CCA-CCC, [Ko et al., 2003]), Bassoon (CCC, [Takao-Rikitsu et al., 2004]), and \u03b2-subunits of Ca2+ channels (CCD, [Kiyonaka et al., 2012]). Vertebrate genomes contain two genes for ELKS, Erc1 and Erc2 (Wang et al., 2002), whereas C.elegans expresses a single ELKS homolog (Deken et al., 2005). D. melanogaster expresses a protein called Brp with homology to ELKS in the N-terminal but not the C-terminal half (Wagh et al., 2006; Kittel et al., 2006; Monier et al., 2002). Vertebrate ELKS proteins are expressed as predominant, synaptic \u03b1-isoforms and shorter \u03b2-variants, which account for less than 5% of ELKS (Kaeser et al., 2009; Liu et al., 2014). In addition, ELKS C-terminal variants determine RIM-binding: the B-isoforms are prominently expressed in the brain and contain the RIM binding site, whereas A-isoforms are expressed outside the brain and lack RIM binding (Wang et al., 2002; Kaeser et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of ELKS protein structure. Arrows: transcriptional start sites of \u03b1- and \u03b2-ELKS, CCA-D: coiled-coil regions A - D (ELKS1: CCA1MYG\u2026SKI208,\u00a0CCB 209TIW\u2026ENN358, CCC 359MLR\u2026EAT696, CCD697LEA\u2026EEE988; ELKS2: CCA1MYG\u2026ARM204, CCB205SVL\u2026ENI362, CCC363HLR\u2026NIE656, CCD657DDS\u2026DEE917, B: PDZ-binding sequence (ELKS1: 989GIWA992, ELKS2: 918GIWA921) of the ELKS-B C-terminal splice variant. Binding regions for interacting active zone proteins are indicated with black bars. (B) Sample images and quantification of ELKS1\u03b1 (left) and ELKS2\u03b1 (right) expression levels at excitatory and inhibitory synapses. VGAT or GAD2 (red, inhibitory synapses) and VGluT1 (blue, excitatory synapses) staining was used to define regions of interest (ROIs), respectively (control n = 4 independent cultures, cDKO n = 4, 10 images were averaged per culture). All data are means \u00b1 SEM; *p\u22640.05 as determined by Student's t test. (C) Sample images (top) and correlation of expression levels of ELKS1\u03b1 and ELKS2\u03b1 (bottom) at excitatory (left) and inhibitory (right) synapses. Arrowheads indicate example puncta used to define ROIs. Data points represent the fluorescent intensity of ELKS1\u03b1 within an ROI plotted against the ELKS2\u03b1 signal in the same ROI. Within a single channel, individual puncta are normalized to the average intensity across all puncta (excitatory synapses: 329 ROIs/30 images/3 independent cultures; inhibitory synapses: 250/30/3). \u03c1: Spearman rank correlation between ELKS1\u03b1 and ELKS2\u03b1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western blot for testing specificity of ELKS2\u03b1 (1029, top) and ELKS1\u03b1 (E-1, middle) antibodies against samples of HEK293T cells transfected with ELKS1\u03b1B or ELKS2\u03b1B cDNAs. The ELKS2\u03b1 specific antibodies were raised in rabbits to a non-conserved sequence between ELKS1 and ELKS2 (109LSHTDVLSYTDQ120), the E-1 antibody is commercially available. \u03b2-actin was used as a loading control. (B) Western blot testing reactivity of ELKS2\u03b1 (top) and ELKS1\u03b1 (middle) in cultured cDKO and control hippocampal neurons and whole brain homogenate. \u03b2-actin was used as a loading control. (C) ELKS2\u03b1 antibodies were affinity purified using the ELKS2 peptide and characterized via immunostaining in cultured control and ELKS2\u03b1 cKO neurons. ELKS2\u03b1 cKO neurons were generated from ELKS2\u03b1floxed mice (Kaeser et al., 2009), and neurons were stained for ELKS2\u03b1 (1029), GAD2, and VGluT1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Histogram displaying the frequency distribution of ELKS1\u03b1 intensity within VGAT (black bars, n = 194 ROIs/40 images/4 independent cultures) or VGluT1 (grey bars, n = 207/40/4) labeled puncta. (B) Histogram displaying the frequency distribution of ELKS2\u03b1 intensity within GAD2 (black bars, n = 170/40/4) or VGluT1 (grey bars, n = 205/40/4) labeled puncta. The analysis shown in this figure uses the data presented in the Figure 1B.\n\nThe observation that ELKS binds to several active zone proteins has led to the hypothesis that ELKS scaffolds other active zone proteins, in particular RIM (Takao-Rikitsu et al., 2004; Ohtsuka, 2013; Ohtsuka et al., 2002). Invertebrate studies offer mixed support to this hypothesis. Loss of Brp disrupts the T-bar structures at the fly neuromuscular junction (Kittel et al., 2006), but this function involves the C-terminal region of Brp (Fouquet et al., 2009). In contrast, C. elegans ELKS is not required for recruitment of other active zone proteins (Deken et al., 2005), but a gain of function mutation in syd-2, the C. elegans Liprin-\u03b1 homologue, requires ELKS for its synaptogenic activity (Dai et al., 2006).\n\nRelatively little is known about the role and molecular mechanisms of ELKS in neurotransmitter release at vertebrate synapses. Previous studies showed that ELKS1\u03b1/2\u03b1 boost Ca2+ influx at inhibitory synapses, whereas ELKS2\u03b1 has a regulatory, non-essential function in RRP at these synapses (Liu et al., 2014; Kaeser et al., 2009). In contrast, at excitatory ribbon synapses of rod photoreceptors, ELKS2\u03b1/CAST may have a structural role to enhance synaptic transmission (tom Dieck et al., 2012). These studies suggest the interesting possibility that ELKS may have differential roles in synaptic transmission between synapses. Thus far, ELKS functions have not been studied at small, excitatory synapses, the most abundant synapses in the vertebrate brain. Here, we establish that ELKS is prominently expressed at excitatory hippocampal synapses. In contrast to its roles in enhancing Ca2+ influx and release probability at inhibitory synapses, ELKS1\u03b1/2\u03b1 control the size of the RRP at excitatory hippocampal synapses. These data establish that removal of ELKS has differential, synapse-specific effects on RRP size and P: boosting RRP at excitatory synapses but enhancing P at inhibitory synapses. Using structure-function rescue experiments, we then determine the sequences within ELKS required for RRP enhancement at excitatory synapses. Surprisingly, RIM-binding sequences are dispensable for this function, but CCA-CCC, which include binding sites for Liprin-\u03b1 and Bassoon, control excitatory RRP size. Together, these data show that ELKS selectively controls RRP at excitatory synapses through its N-terminal protein interaction motifs.\n\n## Results\n\n### ELKS1\u03b1 and ELKS2\u03b1 are enriched at excitatory hippocampal synapses\n\nThe distribution of individual ELKS proteins at excitatory and inhibitory synapses is not known. We generated ELKS2\u03b1 specific antisera by immunization of rabbits (Figure 1\u2014figure supplement 1A\u2013C) and used this, in addition to an available ELKS1\u03b1 specific antibody, to determine if either or both ELKS proteins are present at excitatory and inhibitory synapses. We employed immunostainings for ELKS1\u03b1 and ELKS2\u03b1 in cultured hippocampal neurons and analyzed their distribution using confocal microscopy. Both ELKS proteins were present at excitatory and inhibitory synapses and we observed higher intensity staining at excitatory synapses compared to inhibitory synapses for ELKS1\u03b1 and ELKS2\u03b1 (Figure 1B). A recent proteomic study of release site composition found that overall differences between excitatory and inhibitory release sites are small (Boyken et al., 2013). Interestingly, however, ELKS1 and ELKS2 were modestly enriched at docking sites for glutamatergic vesicles, consistent with our observation. We next examined the distribution of ELKS relative to one another to determine whether levels of individual ELKS proteins correlate positively or negatively at excitatory or inhibitory synapses. Synaptic markers for either excitatory or inhibitory synapses were used to define regions of interest (ROI) and co-stained for both ELKS1\u03b1 and ELKS2\u03b1 (Figure 1C). We found a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 at excitatory and inhibitory synapses and both ELKS proteins showed a single peak in the distribution of fluorescence intensity at each synapse (Figure 1\u2014figure supplement 2). Together, these data reveal that ELKS1\u03b1 and ELKS2\u03b1 are enriched at excitatory synapses and they suggest that synapses rich in ELKS1\u03b1 are rich in ELKS2\u03b1 and vice versa.\n\n### ELKS1\u03b1 and ELKS2\u03b1 control neurotransmitter release at excitatory hippocampal synapses\n\nExcitatory transmission was not affected in single ELKS2\u03b1 mutants (Kaeser et al., 2009) and excitatory synaptic transmission was not studied in ELKS1\u03b1/ELKS2\u03b1 double mutants. We thus decided to determine the function of ELKS1\u03b1/2\u03b1 at excitatory synapses in cultured hippocampal neurons employing mice in which the first coding exon of each gene, Erc1 and Erc2, is flanked by loxP sites (Liu et al., 2014; Kaeser et al., 2009). At 3\u20135 days in vitro (DIV), we infected the neurons with lentiviruses that express a cre-recombinase tagged with EGFP driven by a neuron-specific synapsin promoter (Liu et al., 2014) to generate ELKS1\u03b1/ELKS2\u03b1 knockout neurons (cDKO). In all experiments, control neurons were genetically identical with the exception that they were infected with lentiviruses that expressed an inactive, truncated cre protein. We only analyzed cultures in which no non-infected neurons could be detected.\n\nUsing focal stimulation, we recorded action-potential evoked excitatory postsynaptic currents (EPSCs) and directly compared effects to inhibitory PSCs (IPSCs). Similar to the effect on IPSCs (Figure 2A), EPSCs were reduced to ~50% (Figure 2B,C). At inhibitory synapses, removal of ELKS resulted in a 30% decrease in presynaptic Ca2+ influx which led to a reduction in P (Liu et al., 2014) and prolonged IPSC rise times (Figure 2A). When we examined the EPSC rise times, there was no effect of ELKS1\u03b1/2\u03b1 cDKO (Figure 2B,C), suggesting that ELKS may operate differently at excitatory synapses. To determine whether the deficit in excitatory transmission was presynaptic, we recorded miniature EPSCs (mEPSCs) in the presence of TTX. mEPSC frequency was reduced by ~50%, but there was no change in mEPSC amplitude, rise time (Figure 2D), or decay kinetics (control \u03c4 = 5.727 ms, n = 16/3; cDKO \u03c4 = 6.321\u00a0ms, n = 15/3; p>0.05). The number and size of excitatory synapses was also unchanged (Figure 2\u2014figure supplement 1). Thus, ELKS1\u03b1/2\u03b1 cDKO reduces release from excitatory presynaptic nerve terminals, but the mechanisms may be different from inhibitory synapses.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Sample traces and quantification of IPSC (A), AMPAR-EPSC (B), and NMDAR-EPSC (C) amplitudes and rise times in control and ELKS1\u03b1/2\u03b1 cDKO neurons. Bar graphs show quantification of the peak amplitude (middle) and quantification of the rise time from 20% to 80% of the peak amplitude (right, A: control n = 18 cells/4 independent cultures, cDKO n = 18/4; B: control n = 18/4, cDKO n = 16/4; C: control n = 15/3, cDKO n = 15/3). (D) Sample traces (top) and quantification (bottom) of mEPSC frequency, amplitude, and 20\u201380% rise time (control n = 16/3, cDKO n = 15/3). Sample traces on the top left show 10 s of recording time. Sample traces on the top right are the overlayed averaged events from an individual cell in each condition normalized for amplitude. All data are means \u00b1 SEM; *p\u22640.05, **p\u22640.01, ***p\u22640.001 as determined by Student's t test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sample images of excitatory (green) and inhibitory (red) synapses in control and cDKO neurons. (B and C) Quantification for excitatory (B) and inhibitory (C) synapses of fluorescence intensity, synapse number (puncta/10 \u03bcm), and puncta size (control n = 3 independent cultures, cDKO n = 3, 10 images per culture were averaged per condition). All data are means \u00b1 SEM.\n\n### ELKS enhances the size of the RRP but not Ca2+ influx at excitatory synapses\n\nAt inhibitory hippocampal synapses, ELKS boosts presynaptic Ca2+ influx to increase P and to accelerate the IPSC rise. To directly test the prediction that ELKS functions differently at excitatory synapses, we employed imaging to measure the presynaptic Ca2+ transient in response to a single action potential (Figure 3A). Neurons were filled with the Ca2+ indicator Fluo-5F and a fixable Alexa-594 dye and Ca2+ influx into presynaptic boutons was imaged during a single action potential elicited by a brief current injection through the patch pipette. This method has revealed impaired Ca2+ influx at inhibitory ELKS deficient synapses (Liu et al., 2014). After the experiment, cells were fixed and stained with GAD67 antibodies to exclude GAD67 positive inhibitory neurons from the analysis. This method reliably distinguished excitatory and inhibitory neurons in hippocampal cultures (Figure 3\u2014figure supplement 1). We found that there was no change in peak action potential evoked Ca2+ influx into boutons of excitatory neurons (Figure 3A). At inhibitory synapses, decreased Ca2+ influx in ELKS deficient neurons resulted in a reduction in P. Thus, our data suggest that initial P may not be affected at excitatory ELKS1\u03b1/2\u03b1 cDKO synapses. Initial P is inversely correlated with paired-pulse ratios (PPR). We measured PPRs of EPSC amplitudes by monitoring N-Methyl-D-aspartate receptor EPSCs (NMDAR-EPSCs) to circumvent the strong reverberant activity that is present in cultured networks when \u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors are not blocked (Maximov et al., 2007). Consistent with the Ca2+ imaging data, but different from inhibitory synapses (Liu et al., 2014), there were no changes in PPR in ELKS cDKO neurons across all tested interstimulus intervals (Figure 3B). These experiments establish that defects in Ca2+ influx and P are unlikely to explain impaired neurotransmitter release at excitatory synapses of ELKS cDKO neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sample images (top, imaged boutons are numbered and color coded), action potential and imaging traces (middle)\u00a0and\u00a0summary plots\u00a0(bottom) of single action potential-induced Ca2+ transients imaged by Fluo-5F fluorescence in presynaptic boutons\u00a0are shown, the inset shows the same plot for dendrites. Data are shown as mean (line) \u00b1 SEM (shaded area) and analyzed by two-way ANOVA: genotype, n.s.; time, ***p<0.001; interaction, n.s. (Boutons: control n = 60 boutons/6 cells /4 independent cultures, cDKO n = 80/8/4; dendrites: control n = 6 dendrites/6 cells/4 independent cultures, cDKO n = 8/8/4). (B) Sample traces (top) and quantification of paired pulse ratios (PPRs, bottom) of evoked NMDAR-EPSCs. Example traces showing overlayed responses to pairs of stimuli at 50, 100, 500, and 2500 ms interstimulus intervals. PPRs (amplitude 2/amplitude 1) are plotted against the interstimulus interval. Significance as analyzed by two-way ANOVA: genotype, n.s.; interstimulus\u00a0interval, ***p<0.001; interaction, n.s. (control n = 17 cells/3 independent cultures, cDKO n = 19/3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) In each presynaptic Ca2+ imaging experiment, cultured neurons were stained post-hoc with GAD67 antibodies to label the soma and neurites of inhibitory neurons, and the imaged neurons were identified by the Alexa 594 fill (red). The left panel shows an example of non-GABA neuron (negative for GAD67) and the right panel a GABA neuron (positive for GAD67). (B) In an independent experiment, excitatory neurons were marked with a lentivirus expressing TdTomato (arrowheads) under a CaMKII promoter in addition to a lentivirus that labeled all neurons with nuclear EGFP (merged image). Inhibitory neurons were identified by somatic and dendritic GAD67 staining (arrow, GAD67 antibodies have a nuclear background staining in all neurons). Of the 114 neurons we analyzed, 80 were TdTomato positive (excitatory), 23 were GAD67 positive (inhibitory), and 11 were negative for both markers. Thus, 80 out of 91 of the GAD67 negative neurons were identified as excitatory neurons. The remaining neurons may be excitatory, inhibitory, or modulatory.\n\nWe next tested whether the size of the RRP was changed at excitatory synapses. We stimulated release of the entire RRP using a hypertonic sucrose solution (500 mOsm) and quantified RRP size by integrating the total charge transfer during the first ten seconds of the response (Rosenmund and Stevens, 1996). Although the hypertonic stimulus is non-physiological, this method has been used as a snapshot measurement of RRP in cultured neurons and has been insightful for genotype comparisons and for dissecting molecular mechanisms of RRP control (Augustin et al., 1999; Deng et al., 2011; Neher, 2015; Rosenmund and Stevens, 1996). At excitatory synapses, the RRP was reduced by ~40% (Figure 4A) in ELKS cDKO neurons, providing an explanation for a reduction in release in the absence of changes in P at excitatory ELKS1\u03b1/2\u03b1 cDKO synapses. Short action potential trains (10 stimuli at 20\u2009Hz), a more physiological stimulus, resulted in a 50% reduction in charge transfer during the stimulus train in ELKS1\u03b1/2\u03b1 cDKO neurons compared to control neurons (Figure 4B). The delayed charge transfer after stimulation ended was similarly reduced. These data are consistent with a reduced number of RRP vesicles available for release in response to a brief action potential train.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sample traces showing AMPAR-EPSCs in response to superfusion with 500 mOsm sucrose (left). The bar graph on the right shows the AMPAR-EPSC charge transfer, quantified as the area under the curve during the first ten seconds of the response (control n = 30/3, cDKO n = 29/3). (B) Sample traces (left) of NMDAR-EPSCs during a short action potential train (10 stimuli at 20 Hz). The charge transfer during the train and in the two seconds immediately after the train is quantified separately on the right (control n = 14/3, cDKO n = 14/3). All data are means \u00b1 SEM; *p\u22640.05, **p\u22640.01 as determined by Student's t test.\n\nOne possible explanation for the phenotypic differences between inhibitory transmission as observed earlier (Liu et al., 2014) and excitatory transmission as described here is that removal of ELKS has effects that vary between cultures and over time, causing some cultures to have more pronounced effects on RRP size and others to exhibit changes in P. To control for this possibility, we conducted a series of experiments analyzing RRP size and P (as measured by PPRs) for inhibitory and excitatory transmission in the same cultures and matching sample size for all conditions. Both inhibitory and excitatory synapses had a reduction in action potential-evoked EPSC and IPSC amplitudes (Figure 5\u2014figure supplement 1). At inhibitory synapses, ELKS1\u03b1/2\u03b1 cDKO increased the PPR at low interstimulus intervals but had no significant effect on RRP size, consistent with a reduction of P (Figure 5A,C) and with our previous study (Liu et al., 2014). In contrast, excitatory synapses in the same cultures showed no change in PPR but a reduction in RRP size (Figure 5B,D). Notably, there was a small, non-significant trend towards a reduced RRP at inhibitory synapses in this experiment. To further rule out that there is a reproducible RRP reduction at inhibitory hippocampal synapses, we conducted a second experiment measuring RRP with a slightly different protocol as described in the methods section and used in (Liu et al., 2014). Again, no change in RRP was detected (Figure 5\u2014figure supplement 2). Thus, in three independent measurements (Figure 5C, Figure 5\u2014figure supplement 2 and Figure 7F in Liu et al., 2014), no reduction in the inhibitory RRP could be detected. These data confirm our previous experiments and establish synapse-specific roles for ELKS in neurotransmitter release: at excitatory synapses ELKS1\u03b1/2\u03b1 primarily boost the RRP (Figures 1\u20135), whereas at inhibitory synapses ELKS1\u03b1/2\u03b1 mainly control action potential induced Ca2+ influx to enhance P (also see Figures 5 and 8\u00a0in Liu et al., 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example traces (top) showing overlayed IPSC responses to pairs of stimuli at 10, 20, 100, and 500 ms interstimulus intervals. Paired-pulse ratios (amplitude 2/amplitude 1) are plotted against the interstimulus interval (10, 20, 50, 100, 500, and 2500 ms intervals). Significance as analyzed by two-way ANOVA: genotype, ***p<0.001; interstimulus\u00a0interval, ***p<0.001; interaction, n.s. Holm-Sidak post-hoc test: 10 ms, *p<0.05; 20 ms, *p<0.05 (control n = 15 cells/3 independent cultures, cDKO n = 15/3). (B) Example traces (top) showing overlayed EPSC responses to pairs of stimuli at 50, 100, 500, and 2500 ms interstimulus intervals. Paired-pulse ratios (amplitude 2/amplitude 1) are plotted against the interstimulus interval (50, 100, 500, and 2500 ms intervals). Significance as analyzed by two-way ANOVA: genotype, n.s.; interstimulus\u00a0interval, ***p<0.001; interaction, n.s. (control n = 15/3, cDKO n = 15/3). (C) Sample traces showing IPSCs in response to superfusion with 500 mOsm sucrose (left) and quantification (right) of IPSC charge transfer during the first ten seconds of the response (control n = 15/3, cDKO n = 15/3). (D) Sample traces showing EPSCs in response to superfusion with 500 mOsm sucrose (left) and quantification (right) of EPSC charge transfer during the first ten seconds of the response (control n = 15/3, cDKO n = 15/3). Data are means \u00b1 SEM; **p\u22640.01 as determined by Student's t test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Quantification of IPSC (left) and NMDAR-EPSC (right) amplitudes in control and cDKO neurons from the same cultures (control n = 15 cells /3 independent cultures, cDKO n = 15/3). All data are means \u00b1 SEM; *p\u2264 0.05, **p\u22640.01 as determined by Student's t test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Sample traces showing IPSCs in response to superfusion with 500 mOsm sucrose (left) and quantification (right) of IPSC charge transfer during the first ten seconds of the response (control n = 9 cells/3 independent cultures, cDKO n = 9/3). All data are means \u00b1 SEM.\n\n### Removal of ELKS1\u03b1/2\u03b1 does not lead to loss of presynaptic priming proteins\n\nGiven the hypothesis that ELKS is a presynaptic scaffold, we set out to test the possibility that loss of ELKS1\u03b1/2\u03b1 changes presynaptic levels of proteins involved in controlling RRP size at excitatory synapses. RIM and Munc13-1 were of particular interest, since both proteins localize to the active zone and knockouts of either protein have strong RRP impairments at excitatory hippocampal synapses (Augustin et al., 1999; Calakos et al., 2004; Kaeser et al., 2011). Using confocal microscopy, we quantified the synaptic levels of the active zone proteins ELKS, RIM, Munc13-1, Bassoon, and RIM-BP2 in cDKO and control neurons. With the exception of ELKS, no protein was significantly reduced at excitatory or inhibitory synapses (Figure 6). These data are consistent with normal electron microscopic appearance of ELKS1\u03b1/2\u03b1 cDKO synapses (Liu et al., 2014) and indicate that ELKS is not essential to recruit the priming proteins RIM and Munc13-1 to the presynaptic nerve terminal.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig6-v2.jpg)\n\n**Figure 6.:** (A) Sample images of control and ELKS1\u03b1/2\u03b1 cDKO neurons stained with antibodies against active zone proteins. Inhibitory synapses were marked with VGAT (for ELKS,\u00a0RIM and Bassoon) or GAD2 (for Munc13-1 and RIM-BP2), excitatory synapses were marked with VGluT1. (B) Quantification of active zone proteins within ROIs defined by excitatory (left) or inhibitory (right) synaptic markers (RIM: control n = 4 independent cultures, cDKO n = 4; Munc13-1: control n = 4, cDKO n = 4; Bassoon: control n = 3, cDKO n = 3; RIM-BP2: control n = 3, cDKO n = 3; in each culture, 10 images were averaged per culture and genotype). Data are means \u00b1 SEM; ***p\u22640.001 as determined by Student's t test.\n\n### ELKS controls RRP through the N-terminal coiled-coil domains\n\nSince ELKS1\u03b1/2\u03b1 cDKO caused no detectable structural changes at the active zone, we instead turned to electrophysiological rescue experiments to determine how ELKS might control RRP size. ELKS binds directly to the PDZ domain of RIM through its four C-terminal residues and may have roles in active zone anchoring of RIM (Lu et al., 2005; Wang et al., 2002; Ohtsuka et al., 2002; Kaeser et al., 2009). Peptide injection experiments using the RIM-binding domain of ELKS support a role of the RIM-ELKS interactions in release (Takao-Rikitsu et al., 2004). The CCD domain, which is adjacent to the RIM binding sequence, also binds to Ca2+ channel \u03b24 subunits (Kiyonaka et al., 2012). These interactions suggest that the C-terminus of ELKS may tether ELKS to the active zone to support its functions in release.\n\nWe designed lentiviral rescue constructs in which we expressed either full length ELKS1\u03b1B or mutant ELKS1 that lacks either the entire C-terminal region including the PDZ binding motif (\u25b3CCDB) or just CCD (\u25b3CCD) (Figure 7A). All three rescue constructs expressed at levels similar to wild type ELKS1\u03b1 and localized to synapses (Figure 7\u2014figure supplement 1), suggesting that the ELKS C-terminal regions are not necessary for ELKS localization. Surprisingly, ELKS1\u03b1B, ELKS1-\u25b3CCDB, and ELKS1-\u25b3CCD were sufficient to rescue excitatory RRP size in ELKS cDKO neurons (Figure 7B). Thus, the ELKS C-terminal domains that bind to RIM and other presynaptic proteins are not necessary for its control of the RRP at excitatory synapses. Altogether, the C-terminal ELKS domains are unlikely to act as a central scaffolding hub at the active zone.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of ELKS1 rescue constructs; CCA-D: coiled-coil regions A-D, B: PDZ-binding motif; H: human influenza hemagglutinin (HA) tag, deleted sequences are illustrated as dashed lines. (B) Sample traces (left) and quantification (right) of the AMPAR-EPSC charge in response to hypertonic sucrose application, measured as area under the curve during the first ten seconds after the start of the stimulus (control n = 26 cells/5 independent cultures, cDKO n = 27/5, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 21/5, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 23/5, cDKO\u00a0+\u00a0ELKS1-\u25b3CCD n = 21/5). All data are means \u00b1 SEM; *p\u22640.05 as determined by one-way ANOVA followed by Holm-Sidak multiple comparisons post-hoc test comparing each condition to cDKO.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Sample images of control, cDKO, and cDKO + rescue neurons stained with antibodies against ELKS1\u03b1 (E-1), the inhibitory synapse marker VGAT, and the excitatory synapse marker VGluT1. (B,C) Quantification of ELKS1 fluorescent intensity within ROIs defined by VGluT1 (B) or VGAT (C) signals (control n = 3 independent cultures, cDKO n = 3, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCD n = 3, 5\u201310 images per culture were averaged per condition). Data are shown as means \u00b1 SEM. (D) Representative western blot of control, cDKO, and cDKO + rescue neurons used for recording in Figure 7. Samples were blotted using an ELKS1\u03b1 specific antibody (E-1) and \u03b2-actin was used as a loading control.\n\nWe next decided to take an unbiased approach and systematically tested all ELKS protein interaction sites covering the entire sequence of ELKS1\u03b1B in rescue experiments. We generated rescue constructs lacking N-terminal coiled-coils (corresponding to ELKS1\u03b2B) or the central coiled-coil region (\u25b3CCC). ELKS1\u03b1B and ELKS1-\u25b3CCDB were used as positive rescue controls (Figure 8A). All rescue constructs were successfully expressed, albeit at variable levels (Figure 8\u2014figure supplement 1A). Compellingly, neither ELKS1\u03b2B nor ELKS1-\u25b3CCC rescued the RRP in ELKS1\u03b1/2\u03b1 cDKO neurons (Figure 8B). The lack of rescue could be due to either a local function of the deleted coiled-coil regions or to a role for these regions in localizing ELKS to synapses. We distinguished between these possibilities by assessing the localization of each rescue construct using confocal microscopy. Since ELKS1\u03b2B lacks the antigen recognized by our ELKS1 antibody we stained for either the HA tag included in all rescue proteins (Figure 8C and Figure 8\u2014figure supplement 1B) or for ELKS1\u03b1 (Figure 8\u2014figure supplement 1C\u2013E). Synaptic expression of the rescue constructs ranged from 50\u2013200% of wild-type levels of ELKS1. Importantly, all constructs localized to synapses. Thus vertebrate ELKS1 can be localized to synapses likely through multiple redundant interactions. While synaptic levels of rescue ELKS1\u03b1B were low, it rescued entirely. In contrast, ELKS1\u03b2B and ELKS1-\u25b3CCC both failed to rescue, but were expressed above ELKS1\u03b1B levels. Removal of ELKS reveals differential impairments of RRP and P at excitatory and inhibitory synapses, respectively (Figure 5). To test whether such differential effects are also reflected in the ELKS sequences that mediate rescue at each synapse, we tested whether ELKS1\u03b2B, an ELKS isoform that failed to rescue the excitatory RRP, was sufficient to restore inhibitory synaptic transmission (Figure 8\u2014figure supplement 2). ELKS1\u03b2B was able to rescue action-potential evoked IPSC amplitudes, establishing that ELKS\u2019 role in controlling P at inhibitory synapses does not require the N-terminal coiled-coil regions that control the excitatory RRP. Together, these experiments establish that the N-terminal coiled-coil sequences of ELKS1\u03b1 are necessary for ELKS' role in enhancing the RRP at excitatory synapses, but not necessary for localizing ELKS to synapses.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic of ELKS1 rescue constructs; CCA-D: coiled-coil regions A-D, B: PDZ-binding motif; H: human influenza hemagglutinin (HA) tag, black bar: antigen recognized by the ELKS1\u03b1 antibody (E-1) used in figure supplement 1C. Deleted sequences are illustrated as dashed lines, (B) sample traces (left) and quantification (right) of the AMPAR-EPSC charge in response to hypertonic sucrose application, measured as area under the curve during the first ten seconds after the start of the stimulus (control n = 21 cells/4 independent cultures, cDKO n = 22/4, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 19/4, cDKO\u00a0+\u00a0ELKS1\u03b2B n = 18/4, cDKO\u00a0+\u00a0ELKS1-\u25b3CCC n = 20/4, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 21/4). (C) Sample images (left) of control, cDKO, and cDKO + rescue neurons stained with antibodies against HA. Quantification (right) of HA fluorescent intensity within ROIs defined by VGluT1 (control n = 3 independent cultures, cDKO n = 3, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 3, cDKO\u00a0+\u00a0ELKS1\u03b2B n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCC n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 3, 5\u201310 images were averaged per culture and genotype). All data are means \u00b1 SEM; **p\u22640.01, ***p\u22640.001 as determined by one-way ANOVA followed by Holm-Sidak multiple comparisons post-hoc test comparing each condition to cDKO.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Representative western blot of control, cDKO, and cDKO + rescue neurons used for recording in Figure 8. Samples were blotted using a pan-ELKS antibody (P224) and \u03b2-actin was used as a loading control. (B) Quantification of HA staining fluorescent intensity within ROIs defined by VGAT signals (control n = 3 independent cultures, cDKO n = 3, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 3,\u00a0cDKO\u00a0+\u00a0ELKS1\u03b2B n =\u00a03,\u00a0cDKO\u00a0+\u00a0ELKS1-\u25b3CCc n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 3, 5\u201310 images per culture were averaged per condition). Data are shown as means \u00b1 SEM. (C) Representative images of staining with ELKS1\u03b1 antibodies (E-1) in control, cDKO, and cDKO + rescue neurons. Note that ELKS1\u03b2B lacks the antigen for the ELKS1\u03b1 antibody (E-1). (D and E) Quantification of ELKS1 fluorescent intensity within ROIs defined by VGluT1 (D) or VGAT (E) (control n = 3 independent cultures, cDKO n = 3, cDKO\u00a0+\u00a0ELKS1\u03b1B n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCC n = 3, cDKO\u00a0+\u00a0ELKS1-\u25b3CCDB n = 3, 5\u201310 images were averaged per culture and genotype). All data are means \u00b1 SEM.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14862/elife-14862-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Sample traces (left) and quantification (right) of the IPSC amplitude in control, cDKO, cDKO + ELKS1\u03b2B, and control + ELKS1\u03b2B (control n = 11 cells/3 independent cultures, cDKO n = 11/3, cDKO + ELKS1\u03b2B n = 10/3, control + ELKS1\u03b2B n = 12/3). All data are means \u00b1 SEM; **p\u22640.01, ***p\u22640.001 as determined by one-way ANOVA followed by Holm-Sidak multiple comparisons post-hoc test comparing each condition to cDKO. Holm-Sidak multiple comparisons post-hoc tests comparing each condition to control did not reveal significant differences except for control vs. cDKO, *p\u22640.05.\n\n## Discussion\n\nOur findings define a new functional role for ELKS in setting RRP size at excitatory hippocampal synapses. They extend beyond previous understanding of the role of ELKS in supporting presynaptic Ca2+ influx at inhibitory synapses (Liu et al., 2014) and demonstrate that this is not the primary function across all synapses. Most current molecular models of active zone function imply that active zones operate essentially identically across synapses despite the notion that the parameters they control, RRP and P, vary greatly between different types of synapses. Thus far, this assumption has proven principally true for genetic analyses of active zone protein function. For example, it is widely accepted that Munc13 is required at all synapses to prime vesicles and RIMs anchor and activate Munc13 to support priming (Varoqueaux et al., 2002; Andrews-Zwilling et al., 2006; Deng et al., 2011; Calakos et al., 2004; Augustin et al., 1999). Our findings are a starting point for the dissection of synapse-specific architecture and function of the active zone.\n\nOne possibility to explain synapse-specific roles is that ELKS1\u03b1 and ELKS2\u03b1 account for different functions, and that they are localized to specific subsets of synapses. Such differences have been observed for roles of Munc13-1 and bMunc13-2 in short-term plasticity (Rosenmund et al., 2002). Our data make this possibility unlikely in the case of ELKS, because there is a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 levels at all synapses. Furthermore, no ELKS isoform-specific protein interactions are described in the literature, and the interaction sequences are generally well conserved between ELKS1\u03b1 and ELKS2\u03b1 (Monier et al., 2002; Wang et al., 2002).\n\nAnother possibility is that interaction partners of ELKS that mediate RRP control are distributed in a synapse specific fashion, and ELKS protein interactions at the active zone may be engaged differentially depending on the presence of specific interacting proteins. This model is supported by the observation that the sequence requirements for rescue of the excitatory RRP or the IPSC are different. ELKS interacts in vitro with many active zone proteins (Ohtsuka et al., 2002; Wang et al., 2002; Schoch and Gundelfinger, 2006). We find that ELKS N-terminal, but not C-terminal, sequences are required for RRP control. These N-terminal sequences have been shown to bind to Liprin-\u03b1 via CCA-CCC (Ko et al., 2003), to Bassoon via CCC (Takao-Rikitsu et al., 2004), and they may mediate binding to Rab6 (Monier et al., 2002). Because constructs including CCC but lacking CCA/B localize to synapses but do not to rescue, one possible explanation is that Liprin-\u03b1 binding is required for ELKS function in controlling the excitatory RRP. Vertebrate genomes contain four genes encoding Liprin-\u03b1, but it is not known whether Liprin-\u03b1 isoforms are differentially distributed to specific active zones. In fact, it is currently not clear for any of the vertebrate Liprin-\u03b1 isoforms whether there is a tight association with the presynaptic active zone (Zurner et al., 2011; Spangler et al., 2011). Functional roles of vertebrate Liprin-\u03b1 in synaptic transmission are not well understood, but a recent study supports presynaptic roles for Liprin-\u03b12 at hippocampal synapses (Spangler et al., 2013). In invertebrates, Liprin-\u03b1/syd-2 has synaptogenic activities, and effects of a gain of function mutation in syd-2 require ELKS (Dai et al., 2006; Patel et al., 2006), indicating important synaptic roles for Liprin-\u03b1/ELKS interactions. Thus, these previous studies are consistent with the hypothesis that ELKS controls RRP through Liprin-\u03b1. Nevertheless, it is possible that binding to Bassoon, Rab6, or unknown proteins mediate the role of ELKS in enhancing RRP. A recent proteomic analysis of vesicle docking complexes revealed only modest differences in the composition of docking sites at glutamatergic compared to GABAergic synapses (Boyken et al., 2013). Interestingly, however, Bassoon and ELKS were found to be enriched in glutamatergic synapses in this study, perhaps supporting a role for these proteins for promoting excitatory transmission in concert with one another. Furthermore, a recent study showed that Bassoon regulates release indirectly via RIM-BP through a specific Ca2+ channel subunit, which could result in a synapse-specific roles for Bassoon (Davydova et al., 2014). In summary, these studies provide support for the hypothesis that ELKS may operate with Bassoon or Liprin-\u03b1 to promote release in a synapse-specific fashion.\n\nOur studies also reveal that ELKS1\u03b1 and ELKS2\u03b1 are not required for active zone assembly and maintenance at hippocampal synapses, consistent with studies in C. elegans (Deken et al., 2005; Patel et al., 2006). At the D. melanogaster neuromuscular junction, however, Brp is essential for the formation of T-bars. The ELKS homology of Brp is limited to the N-terminal half of the protein (Kittel et al., 2006; Monier et al., 2002), making it possible that such strong scaffolding functions are specific to Brp and absent in ELKS. Alternatively, an ELKS scaffolding function may not be detected in our experiments due to redundant scaffolding activities in other proteins, for example \u03b2-ELKS or RIM (Schoch et al., 2002; Kaeser et al., 2009; Liu et al., 2014).\n\nSeveral studies suggested that there is a good correlation between the number of docked vesicles and the size of the RRP at hippocampal synapses (Schikorski and Stevens, 2001; Imig et al., 2014), but electron microscopic analysis of ELKS1\u03b1/2\u03b1 cDKO synapses using conventional fixation has not revealed a deficit in vesicle docking (Liu et al., 2014). Recent work has achieved better resolution in the analysis of docking by combining high-pressure freezing with EM tomography (Imig et al., 2014; Siksou et al., 2007). We can currently not rule out the possibility that ELKS1\u03b1/2\u03b1 cDKO causes a subtle vesicle docking phenotype undetectable by the methods used in our previous work. An alternative hypothesis to a reduction of RRP at each excitatory synapse is the possibility that a subpopulation of excitatory synapses is very strongly affected by the removal of ELKS. Because the distribution of ELKS\u00a0fluorescence\u00a0intensity across excitatory synapses has a single peak, it is unlikely that ELKS only operates at a subset of excitatory synapses and that these synapses are silent in the absence of ELKS. However, additional work at clearly defined synapse populations with less heterogeneity than mixed hippocampal cultures will be necessary to address these questions.\n\nFinally, although ELKS1\u03b1/2\u03b1 cDKO neurons do not reveal an RRP deficit as measured by hypertonic stimuli at inhibitory synapses (Figure 5\u00a0and Liu et al., 2014), ELKS is known to regulate RRP at these synapses. Enhancing P by increasing extracellular Ca2+ cannot completely rescue synaptic transmission at inhibitory ELKS1\u03b1/2\u03b1 cDKO synapses (Liu et al., 2014), and removal of ELKS2\u03b1 alone leads to an increase in the RRP at inhibitory synapses (Kaeser et al., 2009). These experiments suggest that there may be molecular regulation of the RRP at inhibitory synapses through interplay between ELKS1 and ELKS2, which are both present at inhibitory active zones.\n\nIn the long-term, it will be important to understand how the synapse-specific molecular control of RRP and P contribute to circuit function. Human genetic experiments reveal that mutations in ERC1/ELKS1 may contribute to autism spectrum disorders (Silva et al., 2014), and it is possible that the pathophysiology arises from synapse-specific misregulation of neurotransmitter release.\n\n## Materials and methods\n\n### Mouse lines\n\nAll experiments\u00a0using\u00a0mice were performed according to institutional guidelines at Harvard University. Conditional double knockout (cDKO) mice that remove the ELKS1\u03b1/2\u03b1 proteins were generated by crossing conditional knockout mice for the Erc1 ([Liu et al., 2014] RRID:IMSR_JAX:015830) and Erc2 ([Kaeser et al., 2009] RRID:IMSR_JAX:015831) genes. ELKS1\u03b1/2\u03b1 cDKO mice were maintained as double homozygote line.\n\n### Generation of antibodies\n\nELKS2\u03b1 specific antibodies were raised in rabbits using an ELKS2 peptide (109LSHTDVLSYTDQ120). Peptides were synthesized and conjugated to keyhole lympet hemocynanin (KLH) via an N-terminal cysteine residue. Rabbits were inoculated at Cocalico Biologicals with KLH-conjugated ELKS2 peptides and given booster injections every two weeks, and\u00a0bleeds were collected every three weeks.\u00a0Sera were screened against protein samples harvested from cultured neurons, brain homogenate, and transfected HEK cells expressing either ELKS1\u03b1B or ELKS2\u03b1B. \u03b2-actin was used as a loading control. The serum with the highest immunoreactivity (rabbit 1029, bleed 5) against ELKS2 was affinity purified with the ELKS2 peptide coupled to an affinity column and used at 1:100 dilution.\n\n### Cell cultures and lentiviral infection\n\nPrimary mouse hippocampal cultures from newborn pups were generated as previously described (Kaeser et al., 2008, 2011; Maximov et al., 2007). All lentiviruses were produced in HEK293T cells by Ca2+ phosphate transfection. Neurons were infected with viruses that express cre recombinase or an inactive cre truncation mutant under the human synapsin promoter (Liu et al., 2014). Neuronal cultures were infected with 125\u2013250\u2009\u03bcl of HEK cell supernatant at 3\u20135 days in vitro (DIV). Infection efficiency was monitored by an EGFP tag attached to nuclear cre, and only cultures in which no non-infected cells were found were used for experiments. Expression of rescue proteins was achieved with a second lentivirus driven in neurons by a human synapsin promoter and applied to the neurons at DIV 3. Expression of rescue proteins was monitored by Western blotting and by immunostaining as described below.\n\n### Immunofluorescence stainings and confocal imaging of cultured neurons\n\nNeurons were fixed in 4% paraformaldehyde/phosphate-buffered saline, permeabilized in 0.1% Triton X-100/3% bovine serum albumin/phosphate-buffered saline, and incubated in primary antibodies overnight. The following primary antibodies were used: E-1 (1:500, RRID:AB_10841908), mouse monoclonal antibody, binds to ELKS1\u03b1 isoforms (ELKS1\u03b1B, ELKS1\u03b1A); 1029 (1:100), custom rabbit polyclonal antibody generated against ELKS2\u03b1 (109LSHTDVLSYTDQ120); mouse anti-RIM (1:500, RRID:AB_10611855); rabbit anti-Munc13-1 (1:5000; a gift from Dr. Nils Brose); mouse anti-Bassoon (1:500, RRID:AB_11181058); rabbit anti-RIM-BP2 (1:500, SySy, #316103); rabbit anti-VGAT (1:500, RRID:AB_887869); guinea pig anti-VGAT (1:500, RRID:AB_887873); mouse anti-GAD2 (1:500, RRID:AB_2107894, also called GAD65); guinea pig anti-VGluT1 (1:500, RRID:AB_887878); mouse anti-GAD1 (1:1000, RRID:AB_2278725, also called GAD67). Secondary antibodies conjugated to Alexa Fluor 488, 546, or 633 were used for detection. Images were acquired on Olympus FV1000 or FV1200 confocal microscopes with 60x oil immersion objectives with 1.4 numerical aperture, the pinhole was set to one airy unit, and identical settings were applied to all samples within an experiment. Single confocal sections were analyzed in ImageJ software (NIH). Background was subtracted using the rolling ball method with a radius of 2\u2009\u03bcm. For quantification of synaptic protein levels, regions of interest (ROIs) were defined using VGAT, GAD2, or VGluT1 puncta and the average intensity of the protein of interest (in the 488 channel) inside those ROIs was quantified. In Figure 1, since differences in antibody affinity make raw fluorescence values between two different antibodies non-comparable, individual data points were calculated for each channel (ELKS1\u03b1 or ELKS2\u03b1) by normalizing the fluorescence intensity within a single ROI to the average intensity across all ROIs. In Figure 6, the intensity of the ELKS1\u03b1, RIM, Bassoon, and RIM-BP2 staining in cDKO neurons was normalized to the staining in control neurons. In all other figures where only ELKS1\u03b1 staining is quantified, data are expressed in arbitrary units (a.u.). When necessary, representative images were enhanced for brightness and contrast to facilitate visual inspection; all such changes were made after analysis and were made identically for all experimental conditions. All quantitative data are derived from\u00a0\u22653 cultures; 5\u201310 fields of view were quantified per culture per genotype. For all image acquisition and analyses comparing two or more conditions, the experimenter was blind to the condition.\n\n### Western blotting\n\nWestern blotting was performed according to standard protocols. After SDS-Page electrophoresis, gels were transferred onto nitrocellulose membranes and blocked in 10% (w/v) non-fat milk/5% (v/v) goat serum. Membranes were incubated with primary antibodies in 5% (w/v) non-fat milk/5% (v/v) goat serum for two hours at room temperature or overnight at 4\u00b0C. The following primary antibodies were used: mouse anti-ELKS1\u03b1 (1:1000; E-1, RRID: AB_10841908), rabbit anti-ELKS2\u03b1 (1:500; custom antibody 1029), rabbit anti-ELKS1/2 (1:2000; P224, gift of Dr. Thomas S\u00fcdhof), mouse anti-\u03b2-actin (1:2000; RRID: AB_476692). After washing, membranes were incubated with HRP-conjugated secondary antibodies in 5% (w/v) non-fat milk/5% (v/v) goat serum for one hour at room temperature, and chemiluminescence was used for detection after washing.\n\n### Electrophysiology\n\nElectrophysiological recordings in cultured hippocampal neurons were performed as described (Kaeser et al., 2008, 2009, 2011; Maximov et al., 2007; Liu et al., 2014) at DIV 15\u201319. The extracellular solution contained (in mM): 140 NaCl, 5 KCl, 2 CaCl2, 2 MgCl2,10 HEPES-NaOH (pH 7.4), 10 Glucose (~310 mOsm). For evoked NMDAR excitatory postsynaptic currents (EPSCs) picrotoxin (PTX, 50\u2009\u03bcM) and 6-Cyano-7-nitroquinoxaline-2,3-dione (CNQX, 20\u2009\u03bcM) were added to the bath. For miniature EPSC recordings and RRP measurements tetrodotoxin (TTX, 1\u2009\u03bcM) was added to block action potentials, in addition to PTX (50\u2009\u03bcM) for EPSCs or D-(-)-2-Amino-5-phosphonopentanoic acid (APV, 50\u2009\u03bcM) and CNQX (20\u2009\u03bcM) for IPSCs. All recordings were performed in whole cell patch clamp configuration at room temperature. Glass pipettes for were pulled at 2\u20134 M\u03a9 and filled with intracellular solutions containing (in mM) for EPSC recordings: 120 Cs-methanesulfonate, 10 EGTA, 2 MgCl2, 10 HEPES-CsOH (pH 7.4), 4 Na2-ATP, 1 Na-GTP, 4 QX314-Cl (~300 mOsm) and for IPSC recordings in Figure 1: 120 CsCl, 5 NaCl, 10 EGTA, 1 MgCl2, 10 Sucrose, 10 Hepes-CsOH (pH 7.4), 4 Mg-ATP, 0.4 GTP, 4 QX314-Cl (~300 mOsm) and Figure 5: 40 CsCl, 90\u2009K-Gluconate, 1.8 NaCl, 1.7 MgCl2, 3.5 KCl, 0.05 EGTA, 10 HEPES-CsOH (pH 7.4), 2 MgATP, 0.4 Na2-GTP, 10 Phosphocreatine, 4 QX314-Cl (~300 mOsm). Cells were held at at \u221270 mV for AMPAR-EPSC and IPSC recordings, at +40 mV for NMDAR-EPSC recordings and. Access resistance was monitored during recording and cells were discarded if access exceeded 15 M\u03a9 or 20 M\u03a9 during recording of evoked or spontaneous synaptic currents, respectively. Action potentials in presynaptic neurons were elicited with a bipolar focal stimulation electrode fabricated from nichrome wire. The RRP in Figure 4 and 5 was measured by application of 0.5\u2009M sucrose in extracellular solution applied via a microinjector syringe pump for 10\u2009s at a flow rate of 10\u2009\u03bcL/min. For Figure 5\u2014figure supplement 2, the RRP was measured by focal application of 0.5\u2009M sucrose with a picospritzer for 30\u2009s in the presence of TTX (1\u2009\u03bcM), as described in Liu et al. (2014). Data were acquired with an Axon 700B Multiclamp amplifier and digitized with a Digidata 1440A digitizer. For action potential and sucrose-evoked responses, data were acquired at 5 kHz and low-pass filtered at 2 kHz. For miniature recordings data were acquired at 10 kHz. All data acquisition and analysis was done using pClamp10. For all electrophysiological experiments, the experimenter was blind to the genotype throughout data acquisition and analysis.\n\n### Presynaptic Ca2+ imaging\n\nAll Ca2+-imaging experiments were done in cultured hippocampal neurons infected with lentiviruses (expressing active cre or inactive cre) at DIV 5. Presynaptic Ca2+ transients were examined at DIV15 - 18 in whole cell patch clamp configuration at room temperature. The extracellular solution contained (in mM): 140 NaCl, 5 KCl, 2 CaCl2, 2 MgCl2, 10 Glucose, 0.05 APV, 0.02 CNQX, 0.05 PTX, 10 HEPES-NaOH (pH 7.4, ~310 mOsm). Glass pipettes were filled with intracellular solution containing (in mM) 140\u2009K Gluconate, 0.1 EGTA, 2 MgCl2, 4 Na2ATP, 1 NaGTP, 0.3 Fluo-5F, 0.03 Alexa Fluor 594, 10 HEPES-KOH (pH 7.4, ~300 mOsm). Neurons were filled for 7 min and axons and dendrites were identified in the red channel. Presynaptic boutons were identified by their typical bead-like morphology. Neurons in which the distinction between axons and dendrites was unclear were discarded. 10\u2009min after break-in, presynaptic Ca2+ transients were induced by a single action potential evoked via somatic current injection (5 ms, 800\u20131200\u2009pA) and monitored via Fluo-5F fluorescence. Images were acquired using an Olympus BX51 microscope with a 60x, 1.0 numerical aperture objective. Fluorescence signals were excited by a light-emitting diode at 470 nm, and were collected with a scientific complementary metal\u2013oxide\u2013semiconductor camera at 100 frames/s for 200 ms before and 1s after the action potential. After the experiment, coverslips were fixed using 4% paraformaldehyde/phosphate-buffered saline. Neurons were stained with GAD67 antibodies as described above and imaged neurons, identified post-hoc by their Alexa 594 filling, were identified as either inhibitory or excitatory neurons using confocal microscopy. In additional experiments (Figure 3\u2014figure supplement 1), distinction between excitatory and inhibitory cultured neurons was further characterized by labeling excitatory neurons using a lentivirus expressing tandem dimer tomato (TdTomato) under a CamKII promoter (pFCK(1.3)tdimer2W; gift from Pavel Osten; Addgene plasmid #27233, [Dittgen et al., 2004]). Ca2+ transients were quantified using ImageJ. For the analysis in boutons, ROIs were defined using pictures taken in the red channel, and 7\u201310 boutons were randomly selected from each neuron. Background was subtracted using the rolling ball method with a radius of 1.5\u2009\u03bcm. After background subtraction, (F\u2212F0)/F0 was calculated (F = average green emission in a bouton at a given time point, F0 = average fluorescent intensity in frames 0 to 20 before action potential induction). For dendritic measurements, a second order dendrite was selected from each neuron, and the fluorescence from a nearby empty region was referred to as background and subtracted from the ROI. For all Ca2+ imaging experiments, the experimenter was blind to the genotype throughout data acquisition and analysis.\n\n### Statistics\n\nStatistical significance was set at *p\u22640.05, **p\u22640.01, and ***p\u22640.001. Unless otherwise noted in the figure legends, all tests were performed using Student\u2019s t\u00a0tests to compare means. In cases where significance was determined by one-way ANOVA, Holm-Sidak multiple comparisons tests were used to compare all conditions against the cDKO condition to assess rescue. All experiments were done with using a minimum of three independent cultures and in each culture multiple cells (typically 5\u201310 per culture and genotype) or images (typically 5\u201310 images per culture and genotype) were analyzed.\n",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "f78582b3-420e-4676-b6a8-1763401c791d",
+      "submission_id": "7dbb8aca-57b3-4eab-9452-6972a7c85d4d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard Jahn, Max Planck Institute for Biophysical Chemistry , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14862.020](https://doi.org/10.7554/eLife.14862.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"ELKS controls the pool of readily releasable vesicles at excitatory synapses through its N-terminal coiled-coil domains\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Gary Westbrook as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper, the authors study the function of ELKS at excitatory synapses in cultured neurons. Previous work showed that at inhibitory synapses ELKS stimulates release probability (P) by stimulating calcium influx. Here, the authors find that the removal of both ELKS proteins cause a reduction in Readily Releasable Pool (RRP) in excitatory synapses, indicating that the mechanism of action of ELKS proteins at inhibitory and excitatory synapses is fundamentally different. Molecular dissection shows that the three N-terminal, but not the C-terminal, coiled-coils are responsible.\n\nEssential revisions:\n\nAll reviewers agree that the study is interesting and novel, but that more evidence is required to unequivocally prove that the molecular function of the ELKS proteins is indeed fundamentally different in excitatory and inhibitory synapses. Most importantly, this requires, in our opinion, that key experiments are carried out in parallel at excitatory and inhibitory neurons instead of basing all conclusions on comparing the present data with the previously published work. In the prior J. Neurosci. paper, the conclusion that the RRP was unchanged was based on a low number of cells (and on average the RRP was lower in the cDKO) \u2013 and the finding that increasing calcium concentrations did not rescue release in inhibitory neurons indicates that the RRP must have been lower. Conversely, in the present paper the PPR was actually slightly higher in the cDKO (Figure 3B), and comparing the change in AP-evoked and sucrose-evoked EPSC (Figures 1 and 4) seems to indicate that the vesicular release probability is reduced in the cDKO. Moreover, the results with single KOs also indicate that ELKS affect the RRP in inhibitory synapses, as discussed by the authors. Therefore, the question arises whether ELKS has effects on both P and RRP in both types of synapses, but due to a different organization of the two types of terminals, one effect will be more conspicuous in inhibitory synapses, and another effect will be conspicuous in excitatory synapses. In this case, the differences will not be indicative of a different function of ELKS in the two neuronal types. Thus, we recommend parallel experiments of release probability and RRP in excitatory and inhibitory neurons from the same cultures, while matching the powers of the analysis (i.e. similar number of cells in the two types of neurons). Furthermore, the statistical analysis for multiple comparisons is not appropriate and needs to be corrected.\n\nThe second major issue is that there is presently no mechanistic/molecular explanation for the difference between the synapses, particularly when considering that the molecular machinery involved in vesicle docking and fusion is very similar. While we understand that addressing this point may exceed the scope of this study, this is puzzling and needs to be thoughtfully discussed.\n",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d7b67d1-5817-456e-b9f9-016fbc978071",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C1",
+      "claim": "ELKS proteins are enriched at vertebrate active zones.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS proteins are enriched at vertebrate active zones and enhance P at inhibitory hippocampal synapses, but ELKS functions at excitatory synapses are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about ELKS localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "bd3fbb69-caf7-460c-b53b-3e5b48f898a7",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C2",
+      "claim": "ELKS enhances P at inhibitory hippocampal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS proteins are enriched at vertebrate active zones and enhance P at inhibitory hippocampal synapses, but ELKS functions at excitatory synapses are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and refers to previous work (Liu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "bbb7672e-b6e1-410f-91fa-73d2cc359a4e",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C3",
+      "claim": "ELKS functions at excitatory synapses are not known.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS proteins are enriched at vertebrate active zones and enhance P at inhibitory hippocampal synapses, but ELKS functions at excitatory synapses are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "e1323e0f-42ed-4a1c-986d-c3929db6c0dd",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C4",
+      "claim": "ELKS enhances the RRP at excitatory synapses without affecting P.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying conditional knockout mice for ELKS, we find that ELKS enhances the RRP at excitatory synapses without affecting P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "ad74e5a0-7135-4573-ad1d-bda1fc445166",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C5",
+      "claim": "ELKS C-terminal sequences, which interact with RIM, are dispensable for RRP enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, ELKS C-terminal sequences, which interact with RIM, are dispensable for RRP enhancement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by rescue experiments in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "fc21d602-d863-44b9-938b-fc81b0a07698",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C6",
+      "claim": "The N-terminal ELKS coiled-coil domains that bind to Liprin-\u03b1 and Bassoon are necessary to control RRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the N-terminal ELKS coiled-coil domains that bind to Liprin-\u03b1 and Bassoon are necessary to control RRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by rescue experiments in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "954a6bfd-2673-42e1-8533-fb87a4ad6cf3",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C7",
+      "claim": "ELKS removal has differential, synapse-specific effects on RRP and P.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ELKS removal has differential, synapse-specific effects on RRP and P, and our findings establish important roles for ELKS N-terminal domains in synaptic vesicle priming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by data comparing excitatory and inhibitory synapses in Figures 2-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "2e95ccc7-4c6d-45c3-bde7-7119f005ac78",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C8",
+      "claim": "ELKS N-terminal domains have important roles in synaptic vesicle priming.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ELKS removal has differential, synapse-specific effects on RRP and P, and our findings establish important roles for ELKS N-terminal domains in synaptic vesicle priming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by rescue experiments in Figures 7-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "a85d98b0-b185-41b3-815e-643936e53748",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C9",
+      "claim": "Synaptic strength is determined by the pool of readily releasable vesicles (RRP) and the probability of release (P) of each RRP vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "In a presynaptic nerve terminal, synaptic strength is determined by the pool of readily releasable vesicles (RRP) and the probability of release (P) of each RRP vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "40447354-bdbb-4700-bd8a-a216280ddac1",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C10",
+      "claim": "RRP and P parameters are controlled at the active zone and vary across synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These parameters are controlled at the active zone and vary across synapses, but how such synapse specific control is achieved is not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "2a7b7e98-08ea-442a-aac1-3a1afc4b7da4",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C11",
+      "claim": "The active zone is a dense protein complex that is attached to the presynaptic plasma membrane and is exactly opposed to postsynaptic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The active zone is a dense protein complex that is attached to the presynaptic plasma membrane and is exactly opposed to postsynaptic receptors (Couteaux and Pecot-Dechavassine, 1970; Schoch and Gundelfinger, 2006; S\u00fcdhof, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "fbfc720d-2052-4394-b903-ca1b1e7e7296",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C12",
+      "claim": "At the active zone, a small subset of synaptic vesicles are primed in close proximity to presynaptic Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "At the active zone, a small subset of the synaptic vesicles are primed in close proximity to presynaptic Ca2+ channels such that the incoming action potential leads to neurotransmitter release with minimal delay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "35b2793c-dbd6-4d7e-b689-56e66d6ae028",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C13",
+      "claim": "The proteins of the active zone control the size of the pool of primed, readily releasable vesicles (RRP) and the release probability of those vesicles in response to an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins of the active zone control the size of this pool of primed, readily releasable vesicles (RRP) and the release probability of those vesicles in response to an action potential (Kaeser and Regehr, 2014; Alabi and Tsien, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b52fb263-3aa2-4625-9df5-00320ec2e2b2",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C14",
+      "claim": "RRP size and vesicular release probability differ across synapses, contributing to the generation of unique release properties.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that RRP size and vesicular release probability differ across synapses, contributing to the generation of unique release properties (Abbott and Regehr, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "9ec9826e-b2a3-4aa4-b1c9-6699e781f69a",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C15",
+      "claim": "Excitatory and inhibitory synapses in the hippocampus have markedly different properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, for example, excitatory and inhibitory synapses have markedly different properties (Kraushaar and Jonas, 2000; Salin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "03b48767-d027-4165-a189-e4ab66a108eb",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C16",
+      "claim": "ELKS, RIM, Munc13, RIM-binding protein (RIM-BP), Bassoon/Piccolo, and Liprin-\u03b1 proteins form a protein complex that defines the active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS, RIM, Munc13, RIM-binding protein (RIM-BP), Bassoon/Piccolo, and Liprin-\u03b1 proteins form a protein complex that defines the active zone (Schoch and Gundelfinger, 2006; S\u00fcdhof, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "6eaf1f3b-45b6-4afa-b013-8cbb09c3ba02",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C17",
+      "claim": "ELKS was identified as an active zone protein through its interactions with RIM.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS (also called Erc, CAST, and Rab6IP2) was identified as an active zone protein through its interactions with RIM and named for its high content in the amino acids E, L, K, and S (Nakata et al., 1999; Wang et al., 2002; Monier et al., 2002; Ohtsuka et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "292b3c19-4d63-4556-99bf-059e04102604",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C18",
+      "claim": "ELKS was named for its high content in the amino acids E, L, K, and S.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS (also called Erc, CAST, and Rab6IP2) was identified as an active zone protein through its interactions with RIM and named for its high content in the amino acids E, L, K, and S (Nakata et al., 1999; Wang et al., 2002; Monier et al., 2002; Ohtsuka et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "6191eaac-a3d5-45d9-8f22-00ba25810f30",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C19",
+      "claim": "ELKS contains a C-terminal region that binds to the PDZ domain of RIM.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains a C-terminal region that binds to the PDZ domain of RIM (Wang et al., 2002; Ohtsuka et al., 2002) and multiple coiled-coil stretches, which we have subdivided based on homology between the various vertebrate and invertebrate ELKS isoforms into four coiled-coil domains (CCA-CCD, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "48b93513-ff1e-41f1-ae7a-d42bacbbcad2",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C20",
+      "claim": "ELKS coiled-coil stretches bind in vitro to Liprin-\u03b1 (CCA-CCC).",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil stretches bind in vitro to Liprin-\u03b1 (CCA-CCC, [Ko et al., 2003]), Bassoon (CCC, [Takao-Rikitsu et al., 2004]), and \u03b2-subunits of Ca2+ channels (CCD, [Kiyonaka et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "993b7ade-4170-4f89-96a6-9b4e3625fc58",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C21",
+      "claim": "ELKS coiled-coil stretches bind in vitro to Bassoon (CCC).",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil stretches bind in vitro to Liprin-\u03b1 (CCA-CCC, [Ko et al., 2003]), Bassoon (CCC, [Takao-Rikitsu et al., 2004]), and \u03b2-subunits of Ca2+ channels (CCD, [Kiyonaka et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "76b1655d-c01a-4861-8c0b-68b40b788d6c",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C22",
+      "claim": "ELKS coiled-coil stretches bind in vitro to \u03b2-subunits of Ca2+ channels (CCD).",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil stretches bind in vitro to Liprin-\u03b1 (CCA-CCC, [Ko et al., 2003]), Bassoon (CCC, [Takao-Rikitsu et al., 2004]), and \u03b2-subunits of Ca2+ channels (CCD, [Kiyonaka et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "90761110-fb42-428e-bf5e-5855d0c6d670",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C23",
+      "claim": "Vertebrate genomes contain two genes for ELKS, Erc1 and Erc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate genomes contain two genes for ELKS, Erc1 and Erc2 (Wang et al., 2002), whereas C.elegans expresses a single ELKS homolog (Deken et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8ee43f5b-0134-4519-b89f-71bf10bacd16",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C24",
+      "claim": "C.elegans expresses a single ELKS homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate genomes contain two genes for ELKS, Erc1 and Erc2 (Wang et al., 2002), whereas C.elegans expresses a single ELKS homolog (Deken et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7e4c5841-7b48-4d3c-ba27-6a8f31520ceb",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C25",
+      "claim": "D. melanogaster expresses a protein called Brp with homology to ELKS in the N-terminal but not the C-terminal half.",
+      "claim_type": "EXPLICIT",
+      "source": "D. melanogaster expresses a protein called Brp with homology to ELKS in the N-terminal but not the C-terminal half (Wagh et al., 2006; Kittel et al., 2006; Monier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "453a1583-6da2-4724-bb5b-a7fb36eb79ba",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C26",
+      "claim": "Vertebrate ELKS proteins are expressed as predominant, synaptic \u03b1-isoforms and shorter \u03b2-variants, which account for less than 5% of ELKS.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate ELKS proteins are expressed as predominant, synaptic \u03b1-isoforms and shorter \u03b2-variants, which account for less than 5% of ELKS (Kaeser et al., 2009; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "a5e212e2-4744-4838-9be5-cc8157a8aaeb",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C27",
+      "claim": "ELKS B-isoforms are prominently expressed in the brain and contain the RIM binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ELKS C-terminal variants determine RIM-binding: the B-isoforms are prominently expressed in the brain and contain the RIM binding site, whereas A-isoforms are expressed outside the brain and lack RIM binding (Wang et al., 2002; Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "34b755a5-360f-40b9-b06a-036ffd9a0329",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C28",
+      "claim": "ELKS A-isoforms are expressed outside the brain and lack RIM binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ELKS C-terminal variants determine RIM-binding: the B-isoforms are prominently expressed in the brain and contain the RIM binding site, whereas A-isoforms are expressed outside the brain and lack RIM binding (Wang et al., 2002; Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "0e4e119c-d778-4267-a5b4-1958f6ed4087",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C29",
+      "claim": "ELKS1\u03b1/2\u03b1 boost Ca2+ influx at inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that ELKS1\u03b1/2\u03b1 boost Ca2+ influx at inhibitory synapses, whereas ELKS2\u03b1 has a regulatory, non-essential function in RRP at these synapses (Liu et al., 2014; Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "5045e77c-704d-4dbf-a57c-50d196b0f8e7",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C30",
+      "claim": "ELKS2\u03b1 has a regulatory, non-essential function in RRP at inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that ELKS1\u03b1/2\u03b1 boost Ca2+ influx at inhibitory synapses, whereas ELKS2\u03b1 has a regulatory, non-essential function in RRP at these synapses (Liu et al., 2014; Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "caea2e8a-a0e2-4db9-9ccd-bb568b10e0c4",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C31",
+      "claim": "At excitatory ribbon synapses of rod photoreceptors, ELKS2\u03b1/CAST may have a structural role to enhance synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at excitatory ribbon synapses of rod photoreceptors, ELKS2\u03b1/CAST may have a structural role to enhance synaptic transmission (tom Dieck et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a previous study supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "dc85553b-37f6-4ac7-97d0-4f63a8af1e60",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C32",
+      "claim": "ELKS1\u03b1 and ELKS2\u03b1 are present at excitatory and inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ELKS proteins were present at excitatory and inhibitory synapses and we observed higher intensity staining at excitatory synapses compared to inhibitory synapses for ELKS1\u03b1 and ELKS2\u03b1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "e68e9a40-4944-4a98-ab80-e2ec324ec1ec",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C33",
+      "claim": "ELKS1\u03b1 and ELKS2\u03b1 show higher intensity staining at excitatory synapses compared to inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ELKS proteins were present at excitatory and inhibitory synapses and we observed higher intensity staining at excitatory synapses compared to inhibitory synapses for ELKS1\u03b1 and ELKS2\u03b1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "728b4b08-7e53-44e0-84be-2b80ee24e43f",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C34",
+      "claim": "ELKS1 and ELKS2 were modestly enriched at docking sites for glutamatergic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent proteomic study of release site composition found that overall differences between excitatory and inhibitory release sites are small (Boyken et al., 2013). Interestingly, however, ELKS1 and ELKS2 were modestly enriched at docking sites for glutamatergic vesicles, consistent with our observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited proteomic study that is consistent with the authors' observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "90ffe6dd-0470-41db-97f0-1f75d876d2b0",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C35",
+      "claim": "There is a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 at excitatory and inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 at excitatory and inhibitory synapses and both ELKS proteins showed a single peak in the distribution of fluorescence intensity at each synapse (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 1C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "fb8d4a90-fd18-42c3-9dea-3cd77d0d9980",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C36",
+      "claim": "Both ELKS proteins showed a single peak in the distribution of fluorescence intensity at each synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 at excitatory and inhibitory synapses and both ELKS proteins showed a single peak in the distribution of fluorescence intensity at each synapse (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d27df47f-52cb-461f-8d45-a29127af8214",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C37",
+      "claim": "EPSCs were reduced to ~50% in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effect on IPSCs (Figure 2A), EPSCs were reduced to ~50% (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "76b7b93e-ab14-44c2-9659-6e8c9106941b",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C38",
+      "claim": "Removal of ELKS resulted in a 30% decrease in presynaptic Ca2+ influx at inhibitory synapses which led to a reduction in P.",
+      "claim_type": "EXPLICIT",
+      "source": "At inhibitory synapses, removal of ELKS resulted in a 30% decrease in presynaptic Ca2+ influx which led to a reduction in P (Liu et al., 2014) and prolonged IPSC rise times (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from a previous study (Liu et al., 2014) and confirmed in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b2676de1-2e10-477f-966b-677582450c98",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C39",
+      "claim": "Removal of ELKS prolonged IPSC rise times at inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "At inhibitory synapses, removal of ELKS resulted in a 30% decrease in presynaptic Ca2+ influx which led to a reduction in P (Liu et al., 2014) and prolonged IPSC rise times (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d57cf7a4-6f3b-4cde-abbf-afa1ad43abe5",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C40",
+      "claim": "There was no effect of ELKS1\u03b1/2\u03b1 cDKO on EPSC rise times.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the EPSC rise times, there was no effect of ELKS1\u03b1/2\u03b1 cDKO (Figure 2B,C), suggesting that ELKS may operate differently at excitatory synapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "c483b756-0d2c-4949-b810-053ddf3d81fc",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C41",
+      "claim": "mEPSC frequency was reduced by ~50% in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC frequency was reduced by ~50%, but there was no change in mEPSC amplitude, rise time (Figure 2D), or decay kinetics (control \u03c4 = 5.727 ms, n = 16/3; cDKO \u03c4 = 6.321 ms, n = 15/3; p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "ab07fd14-dcf7-4984-99a1-9efbf08660e4",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C42",
+      "claim": "There was no change in mEPSC amplitude in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC frequency was reduced by ~50%, but there was no change in mEPSC amplitude, rise time (Figure 2D), or decay kinetics (control \u03c4 = 5.727 ms, n = 16/3; cDKO \u03c4 = 6.321 ms, n = 15/3; p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "2b25901b-b02d-4e16-8fd7-23290048632e",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C43",
+      "claim": "There was no change in mEPSC rise time in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC frequency was reduced by ~50%, but there was no change in mEPSC amplitude, rise time (Figure 2D), or decay kinetics (control \u03c4 = 5.727 ms, n = 16/3; cDKO \u03c4 = 6.321 ms, n = 15/3; p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "cb4d3759-984e-4eb1-8587-fc984e305edb",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C44",
+      "claim": "There was no change in mEPSC decay kinetics in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC frequency was reduced by ~50%, but there was no change in mEPSC amplitude, rise time (Figure 2D), or decay kinetics (control \u03c4 = 5.727 ms, n = 16/3; cDKO \u03c4 = 6.321 ms, n = 15/3; p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from electrophysiology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "9fe463ad-8b18-4d6e-b55b-9c2da8599f20",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C45",
+      "claim": "The number and size of excitatory synapses was unchanged in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The number and size of excitatory synapses was also unchanged (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "20f82d99-d098-48e3-b475-bbf45ffde28e",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C46",
+      "claim": "There was no change in peak action potential evoked Ca2+ influx into boutons of excitatory neurons in ELKS1\u03b1/2\u03b1 cDKO.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there was no change in peak action potential evoked Ca2+ influx into boutons of excitatory neurons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Ca2+ imaging experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "ea988f50-59e9-40af-808c-92123fc09772",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C47",
+      "claim": "There were no changes in PPR in ELKS cDKO neurons across all tested interstimulus intervals at excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the Ca2+ imaging data, but different from inhibitory synapses (Liu et al., 2014), there were no changes in PPR in ELKS cDKO neurons across all tested interstimulus intervals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "117546d3-54b6-43d3-8bf3-0fdf06ab00ce",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C48",
+      "claim": "At excitatory synapses, the RRP was reduced by ~40% in ELKS cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At excitatory synapses, the RRP was reduced by ~40% (Figure 4A) in ELKS cDKO neurons, providing an explanation for a reduction in release in the absence of changes in P at excitatory ELKS1\u03b1/2\u03b1 cDKO synapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7841fdec-664d-459c-948c-0995da0bcfe1",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C49",
+      "claim": "Short action potential trains (10 stimuli at 20 Hz) resulted in a 50% reduction in charge transfer during the stimulus train in ELKS1\u03b1/2\u03b1 cDKO neurons compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Short action potential trains (10 stimuli at 20 Hz), a more physiological stimulus, resulted in a 50% reduction in charge transfer during the stimulus train in ELKS1\u03b1/2\u03b1 cDKO neurons compared to control neurons (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8afd19dd-54f2-4e82-8b28-04fbedcea203",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C50",
+      "claim": "The delayed charge transfer after stimulation ended was similarly reduced in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The delayed charge transfer after stimulation ended was similarly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d945ee35-1d1b-4afa-98a7-1cabe126641e",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C51",
+      "claim": "At inhibitory synapses, ELKS1\u03b1/2\u03b1 cDKO increased the PPR at low interstimulus intervals but had no significant effect on RRP size.",
+      "claim_type": "EXPLICIT",
+      "source": "At inhibitory synapses, ELKS1\u03b1/2\u03b1 cDKO increased the PPR at low interstimulus intervals but had no significant effect on RRP size, consistent with a reduction of P (Figure 5A,C) and with our previous study (Liu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 5A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "f0f18a77-46e1-40bd-a93d-b45f67cc431a",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C52",
+      "claim": "Excitatory synapses showed no change in PPR but a reduction in RRP size in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, excitatory synapses in the same cultures showed no change in PPR but a reduction in RRP size (Figure 5B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiology experiments shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7e883c8d-8d3d-45b1-b814-87837f53e3db",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C53",
+      "claim": "With the exception of ELKS, no active zone protein was significantly reduced at excitatory or inhibitory synapses in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of ELKS, no protein was significantly reduced at excitatory or inhibitory synapses (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "a861fc14-44b4-4b04-ba0c-f4b3026d9ecd",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C54",
+      "claim": "ELKS is not essential to recruit the priming proteins RIM and Munc13-1 to the presynaptic nerve terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with normal electron microscopic appearance of ELKS1\u03b1/2\u03b1 cDKO synapses (Liu et al., 2014) and indicate that ELKS is not essential to recruit the priming proteins RIM and Munc13-1 to the presynaptic nerve terminal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on immunostaining data in Figure 6 and previous EM data (Liu et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "de8abff8-8ac0-4007-9c96-8f415e46e4d0",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C55",
+      "claim": "ELKS1\u03b1B, ELKS1-\u25b3CCDB, and ELKS1-\u25b3CCD were sufficient to rescue excitatory RRP size in ELKS cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, ELKS1\u03b1B, ELKS1-\u25b3CCDB, and ELKS1-\u25b3CCD were sufficient to rescue excitatory RRP size in ELKS cDKO neurons (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from rescue experiments shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "12760c9c-faf0-4c38-b8d1-4456ba7978b1",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C56",
+      "claim": "The ELKS C-terminal domains that bind to RIM and other presynaptic proteins are not necessary for its control of the RRP at excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ELKS C-terminal domains that bind to RIM and other presynaptic proteins are not necessary for its control of the RRP at excitatory synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on rescue experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "3f60d446-7a21-486c-8c76-e52e11600017",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C57",
+      "claim": "All rescue constructs localized to synapses, suggesting that the ELKS C-terminal regions are not necessary for ELKS localization.",
+      "claim_type": "EXPLICIT",
+      "source": "All three rescue constructs expressed at levels similar to wild type ELKS1\u03b1 and localized to synapses (Figure 7\u2014figure supplement 1), suggesting that the ELKS C-terminal regions are not necessary for ELKS localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "45ce861a-be67-40db-9f90-223616c6100b",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C58",
+      "claim": "Neither ELKS1\u03b2B nor ELKS1-\u25b3CCC rescued the RRP in ELKS1\u03b1/2\u03b1 cDKO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Compellingly, neither ELKS1\u03b2B nor ELKS1-\u25b3CCC rescued the RRP in ELKS1\u03b1/2\u03b1 cDKO neurons (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from rescue experiments shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "43a07665-cc84-469c-8405-1475f5e33385",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C59",
+      "claim": "All rescue constructs localized to synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all constructs localized to synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from immunostaining experiments shown in Figure 8C and Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "aa1145e0-5e08-43ad-a867-e7ed888609fe",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C60",
+      "claim": "Vertebrate ELKS1 can be localized to synapses likely through multiple redundant interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus vertebrate ELKS1 can be localized to synapses likely through multiple redundant interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that all rescue constructs localized to synapses despite lacking different domains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "38b1826e-fa3f-443e-b2a2-f5f5294cfda3",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C61",
+      "claim": "ELKS1\u03b2B was able to rescue action-potential evoked IPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS1\u03b2B was able to rescue action-potential evoked IPSC amplitudes, establishing that ELKS' role in controlling P at inhibitory synapses does not require the N-terminal coiled-coil regions that control the excitatory RRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from rescue experiments shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b7169384-8458-418c-aee3-c5ce4fdcf356",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C62",
+      "claim": "ELKS' role in controlling P at inhibitory synapses does not require the N-terminal coiled-coil regions that control the excitatory RRP.",
+      "claim_type": "EXPLICIT",
+      "source": "ELKS1\u03b2B was able to rescue action-potential evoked IPSC amplitudes, establishing that ELKS' role in controlling P at inhibitory synapses does not require the N-terminal coiled-coil regions that control the excitatory RRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on rescue experiments shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d99c6565-bf44-4095-8b1b-bbbe42588d36",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C63",
+      "claim": "The N-terminal coiled-coil sequences of ELKS1\u03b1 are necessary for ELKS' role in enhancing the RRP at excitatory synapses, but not necessary for localizing ELKS to synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments establish that the N-terminal coiled-coil sequences of ELKS1\u03b1 are necessary for ELKS' role in enhancing the RRP at excitatory synapses, but not necessary for localizing ELKS to synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on rescue experiments shown in Figures 7-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "a2d8f055-1b85-4d33-a542-4f1d7f3b3f2c",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C64",
+      "claim": "ELKS has synapse-specific roles in neurotransmitter release: at excitatory synapses ELKS1\u03b1/2\u03b1 primarily boost the RRP, whereas at inhibitory synapses ELKS1\u03b1/2\u03b1 mainly control action potential induced Ca2+ influx to enhance P.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm our previous experiments and establish synapse-specific roles for ELKS in neurotransmitter release: at excitatory synapses ELKS1\u03b1/2\u03b1 primarily boost the RRP (Figures 1\u20135), whereas at inhibitory synapses ELKS1\u03b1/2\u03b1 mainly control action potential induced Ca2+ influx to enhance P (also see Figures 5 and 8 in Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on data from Figures 1-5 and previous work (Liu et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "4b55ef40-8583-40dd-b6e6-5a0dda8b4bd9",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C65",
+      "claim": "Most current molecular models of active zone function imply that active zones operate essentially identically across synapses despite the notion that the parameters they control, RRP and P, vary greatly between different types of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Most current molecular models of active zone function imply that active zones operate essentially identically across synapses despite the notion that the parameters they control, RRP and P, vary greatly between different types of synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about the field in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b7c914b2-08de-4a3a-9cf9-50a41d847a79",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C66",
+      "claim": "Munc13 is required at all synapses to prime vesicles and RIMs anchor and activate Munc13 to support priming.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is widely accepted that Munc13 is required at all synapses to prime vesicles and RIMs anchor and activate Munc13 to support priming (Varoqueaux et al., 2002; Andrews-Zwilling et al., 2006; Deng et al., 2011; Calakos et al., 2004; Augustin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "dd0a22ee-9d42-42d9-a467-c042dbb66157",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C67",
+      "claim": "There is a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 levels at all synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data make this possibility unlikely in the case of ELKS, because there is a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 levels at all synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "afd8de0e-9aa9-4efc-a3a4-2628245d72e0",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C68",
+      "claim": "No ELKS isoform-specific protein interactions are described in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no ELKS isoform-specific protein interactions are described in the literature, and the interaction sequences are generally well conserved between ELKS1\u03b1 and ELKS2\u03b1 (Monier et al., 2002; Wang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b9a7de72-6b01-4060-bb7b-ee35ab999dc3",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C69",
+      "claim": "The interaction sequences are generally well conserved between ELKS1\u03b1 and ELKS2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no ELKS isoform-specific protein interactions are described in the literature, and the interaction sequences are generally well conserved between ELKS1\u03b1 and ELKS2\u03b1 (Monier et al., 2002; Wang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "e0b9e470-857b-4a2a-9e10-236750b928f5",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C70",
+      "claim": "The sequence requirements for rescue of the excitatory RRP or the IPSC are different.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the observation that the sequence requirements for rescue of the excitatory RRP or the IPSC are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on rescue experiments shown in Figures 7-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "ed38ef36-3526-4340-87a1-112efe1f9286",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C71",
+      "claim": "ELKS N-terminal sequences have been shown to bind to Liprin-\u03b1 via CCA-CCC.",
+      "claim_type": "EXPLICIT",
+      "source": "These N-terminal sequences have been shown to bind to Liprin-\u03b1 via CCA-CCC (Ko et al., 2003), to Bassoon via CCC (Takao-Rikitsu et al., 2004), and they may mediate binding to Rab6 (Monier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "485b07c1-1590-4b5c-8d3c-4781f54c3003",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C72",
+      "claim": "ELKS N-terminal sequences have been shown to bind to Bassoon via CCC.",
+      "claim_type": "EXPLICIT",
+      "source": "These N-terminal sequences have been shown to bind to Liprin-\u03b1 via CCA-CCC (Ko et al., 2003), to Bassoon via CCC (Takao-Rikitsu et al., 2004), and they may mediate binding to Rab6 (Monier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "81691cb8-80ba-4d76-a7ff-281a9afe2646",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C73",
+      "claim": "ELKS N-terminal sequences may mediate binding to Rab6.",
+      "claim_type": "EXPLICIT",
+      "source": "These N-terminal sequences have been shown to bind to Liprin-\u03b1 via CCA-CCC (Ko et al., 2003), to Bassoon via CCC (Takao-Rikitsu et al., 2004), and they may mediate binding to Rab6 (Monier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "dff767dd-b63d-4606-b78d-c4e355e93979",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C74",
+      "claim": "It is currently not clear for any of the vertebrate Liprin-\u03b1 isoforms whether there is a tight association with the presynaptic active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it is currently not clear for any of the vertebrate Liprin-\u03b1 isoforms whether there is a tight association with the presynaptic active zone (Zurner et al., 2011; Spangler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8e8c1c25-b491-4a6c-9282-70fa525fccfd",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C75",
+      "claim": "A recent study supports presynaptic roles for Liprin-\u03b12 at hippocampal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional roles of vertebrate Liprin-\u03b1 in synaptic transmission are not well understood, but a recent study supports presynaptic roles for Liprin-\u03b12 at hippocampal synapses (Spangler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "6dcf6633-d3f8-4058-8f47-51a6706a2b05",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C76",
+      "claim": "In invertebrates, Liprin-\u03b1/syd-2 has synaptogenic activities, and effects of a gain of function mutation in syd-2 require ELKS.",
+      "claim_type": "EXPLICIT",
+      "source": "In invertebrates, Liprin-\u03b1/syd-2 has synaptogenic activities, and effects of a gain of function mutation in syd-2 require ELKS (Dai et al., 2006; Patel et al., 2006), indicating important synaptic roles for Liprin-\u03b1/ELKS interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b8d122a4-cbe9-4d83-915d-b17136e01c4d",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C77",
+      "claim": "Bassoon and ELKS were found to be enriched in glutamatergic synapses in a recent proteomic analysis of vesicle docking complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent proteomic analysis of vesicle docking complexes revealed only modest differences in the composition of docking sites at glutamatergic compared to GABAergic synapses (Boyken et al., 2013). Interestingly, however, Bassoon and ELKS were found to be enriched in glutamatergic synapses in this study, perhaps supporting a role for these proteins for promoting excitatory transmission in concert with one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited proteomic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d8cf5d70-0be9-4d11-b374-3b0bcfc3f2ba",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C78",
+      "claim": "A recent study showed that Bassoon regulates release indirectly via RIM-BP through a specific Ca2+ channel subunit, which could result in a synapse-specific roles for Bassoon.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study showed that Bassoon regulates release indirectly via RIM-BP through a specific Ca2+ channel subunit, which could result in a synapse-specific roles for Bassoon (Davydova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "62efc896-db47-45cc-98ba-6f50125153d1",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C79",
+      "claim": "ELKS1\u03b1 and ELKS2\u03b1 are not required for active zone assembly and maintenance at hippocampal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies also reveal that ELKS1\u03b1 and ELKS2\u03b1 are not required for active zone assembly and maintenance at hippocampal synapses, consistent with studies in C. elegans (Deken et al., 2005; Patel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on immunostaining data in Figure 6 and consistent with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d0af0076-cea0-4a1d-8d52-c9e6e24213ce",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C80",
+      "claim": "At the D. melanogaster neuromuscular junction, Brp is essential for the formation of T-bars.",
+      "claim_type": "EXPLICIT",
+      "source": "At the D. melanogaster neuromuscular junction, however, Brp is essential for the formation of T-bars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b5830cff-e67f-4b24-8b93-e0a0c1683110",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C81",
+      "claim": "The ELKS homology of Brp is limited to the N-terminal half of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELKS homology of Brp is limited to the N-terminal half of the protein (Kittel et al., 2006; Monier et al., 2002), making it possible that such strong scaffolding functions are specific to Brp and absent in ELKS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "1ad9ccad-26fc-499b-90bd-3e434d544aa3",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C82",
+      "claim": "Several studies suggested that there is a good correlation between the number of docked vesicles and the size of the RRP at hippocampal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies suggested that there is a good correlation between the number of docked vesicles and the size of the RRP at hippocampal synapses (Schikorski and Stevens, 2001; Imig et al., 2014), but electron microscopic analysis of ELKS1\u03b1/2\u03b1 cDKO synapses using conventional fixation has not revealed a deficit in vesicle docking (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "b1ef4c6d-c1f3-479f-97b5-b5e69302072f",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C83",
+      "claim": "Electron microscopic analysis of ELKS1\u03b1/2\u03b1 cDKO synapses using conventional fixation has not revealed a deficit in vesicle docking.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies suggested that there is a good correlation between the number of docked vesicles and the size of the RRP at hippocampal synapses (Schikorski and Stevens, 2001; Imig et al., 2014), but electron microscopic analysis of ELKS1\u03b1/2\u03b1 cDKO synapses using conventional fixation has not revealed a deficit in vesicle docking (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "4383725a-aaae-4aba-9a01-3aecf90bb9e8",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C84",
+      "claim": "Enhancing P by increasing extracellular Ca2+ cannot completely rescue synaptic transmission at inhibitory ELKS1\u03b1/2\u03b1 cDKO synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing P by increasing extracellular Ca2+ cannot completely rescue synaptic transmission at inhibitory ELKS1\u03b1/2\u03b1 cDKO synapses (Liu et al., 2014), and removal of ELKS2\u03b1 alone leads to an increase in the RRP at inhibitory synapses (Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "51d1b7a2-24af-4c2b-b980-395e6f079932",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C85",
+      "claim": "Removal of ELKS2\u03b1 alone leads to an increase in the RRP at inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing P by increasing extracellular Ca2+ cannot completely rescue synaptic transmission at inhibitory ELKS1\u03b1/2\u03b1 cDKO synapses (Liu et al., 2014), and removal of ELKS2\u03b1 alone leads to an increase in the RRP at inhibitory synapses (Kaeser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8c9e6918-f38e-4775-83b4-ecb3d3e6ece9",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C86",
+      "claim": "Mutations in ERC1/ELKS1 may contribute to autism spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Human genetic experiments reveal that mutations in ERC1/ELKS1 may contribute to autism spectrum disorders (Silva et al., 2014), and it is possible that the pathophysiology arises from synapse-specific misregulation of neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited human genetic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "2952861d-7bea-4ab6-b027-7a667875a09f",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "claim_id": "C87",
+      "claim": "It is possible that the pathophysiology of autism spectrum disorders associated with ERC1/ELKS1 mutations arises from synapse-specific misregulation of neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Human genetic experiments reveal that mutations in ERC1/ELKS1 may contribute to autism spectrum disorders (Silva et al., 2014), and it is possible that the pathophysiology arises from synapse-specific misregulation of neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1 and ELKS2\u03b1 are enriched at excitatory hippocampal synapses compared to inhibitory synapses, with a strong positive correlation between ELKS1\u03b1 and ELKS2\u03b1 levels at both synapse types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 provide converging evidence from immunostaining and confocal microscopy (Figure 1B-C) showing ELKS proteins are present at both synapse types but enriched at excitatory synapses, with correlated expression levels. The data are internally consistent and supported by cited proteomic studies (C34).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1/2\u03b1 cDKO reduces excitatory synaptic transmission by ~50% without affecting EPSC rise times, mEPSC amplitude, mEPSC kinetics, or synapse number/size, suggesting a presynaptic deficit distinct from inhibitory synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 collectively demonstrate reduced excitatory transmission in cDKO neurons through multiple electrophysiological measures (Figures 2B-D) while ruling out postsynaptic and structural changes. The lack of rise time changes (C40) contrasts with inhibitory synapses (C39), supporting synapse-specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "98eee388-0137-43d4-8106-9ec3b12aad19",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1/2\u03b1 cDKO does not affect presynaptic Ca2+ influx or paired-pulse ratios at excitatory synapses, indicating that release probability (P) is unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide direct evidence from Ca2+ imaging (Figure 3A) and paired-pulse ratio measurements (Figure 3B) that P is not affected at excitatory synapses. This contrasts with inhibitory synapses where ELKS affects Ca2+ influx and P, establishing synapse-specific functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7af74166-7894-400a-9378-d7441978b52b",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1/2\u03b1 cDKO reduces the readily releasable pool (RRP) by ~40% at excitatory synapses, as measured by hypertonic sucrose application and action potential trains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 demonstrate RRP reduction through two independent methods: hypertonic sucrose (Figure 4A) and physiological stimulus trains (Figure 4B). The convergent results from different experimental approaches strengthen the conclusion that ELKS controls RRP size at excitatory synapses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "8a54858f-71cf-4d22-b482-93127ea63bd9",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ELKS has synapse-specific roles: at excitatory synapses ELKS1\u03b1/2\u03b1 primarily boost RRP without affecting P, whereas at inhibitory synapses ELKS1\u03b1/2\u03b1 mainly control Ca2+ influx to enhance P without affecting RRP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C64 establish differential effects through direct comparison of excitatory and inhibitory synapses in the same cultures (Figure 5). The synapse-specific phenotypes are internally consistent across multiple experiments and represent a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "9d5afe3e-2c46-4e46-996d-8350ff00f6eb",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1/2\u03b1 cDKO does not reduce levels of other active zone proteins (RIM, Munc13-1, Bassoon, RIM-BP2) at excitatory or inhibitory synapses, indicating ELKS is not essential for recruiting these priming proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by quantitative immunostaining (Figure 6) showing no significant changes in active zone protein levels. This argues against a primary scaffolding role for ELKS and is consistent with previous EM data (C54 cites Liu et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "1415ba74-3732-4c35-8afb-e18abb4e3897",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ELKS C-terminal domains (including RIM-binding sequences) are dispensable for RRP control at excitatory synapses, as ELKS1\u03b1B, ELKS1-\u0394CCDB, and ELKS1-\u0394CCD all rescue RRP size and localize to synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by rescue experiments (Figure 7) showing that deletion of C-terminal domains does not prevent RRP rescue or synaptic localization. This surprising finding challenges the hypothesis that RIM-binding is essential for ELKS function at excitatory synapses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "f513289c-9391-4258-aa73-e54a9f1600fe",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ELKS N-terminal coiled-coil sequences (CCA-CCC) are necessary for RRP control at excitatory synapses but not for synaptic localization, as ELKS1\u03b2B and ELKS1-\u0394CCC fail to rescue RRP despite localizing to synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 and C63 are supported by rescue experiments (Figure 8) showing that N-terminal deletions prevent RRP rescue while maintaining synaptic localization. This establishes that N-terminal domains have a local functional role rather than a localization role, and identifies key sequences for RRP control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "88616f1d-71d2-497f-afff-2cbd12bbf0af",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ELKS1\u03b2B rescues inhibitory synaptic transmission, demonstrating that N-terminal coiled-coil regions required for excitatory RRP control are not required for controlling P at inhibitory synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 and C70 are supported by rescue experiments (Figure 8\u2014figure supplement 2) showing differential sequence requirements for excitatory vs. inhibitory function. This provides mechanistic insight into how ELKS achieves synapse-specific functions through distinct protein domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ELKS enhances RRP at excitatory synapses without affecting P through N-terminal coiled-coil domains that bind Liprin-\u03b1 and Bassoon, while C-terminal RIM-binding sequences are dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 summarize the main findings stated in the abstract and are supported by the experimental data in Figures 3-8. The claims accurately reflect the key conclusions about synapse-specific ELKS functions and domain requirements established through knockout and rescue experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "45a4ad62-65d0-40c7-a093-6d4846b45ef0",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1 and ELKS2\u03b1 show strong positive correlation at all synapses, with no isoform-specific protein interactions described and well-conserved interaction sequences, arguing against isoform-specific localization as the basis for synapse-specific functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by the correlation data (Figure 1C) and literature review. This reasoning helps rule out one potential mechanism for synapse-specific function and supports the alternative hypothesis that interaction partners are differentially distributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "45003097-81ea-4a5a-80eb-60ce1389e176",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ELKS N-terminal sequences bind to Liprin-\u03b1 (CCA-CCC), Bassoon (CCC), and possibly Rab6, and these interactions may mediate synapse-specific RRP control, though the precise mechanism remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C78 cite established protein interactions but the functional relevance to RRP control is speculative. While the rescue experiments (C58, C63) show N-terminal domains are necessary, the specific binding partners responsible are not definitively identified. The discussion appropriately acknowledges uncertainty about whether Liprin-\u03b1, Bassoon, or other proteins mediate the effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7b3a2797-d6b9-49be-b929-5d2234bb0846",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ELKS1\u03b1/2\u03b1 are not required for active zone assembly at hippocampal synapses, unlike Drosophila Brp which is essential for T-bar formation, possibly due to structural differences between ELKS and Brp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by immunostaining data (Figure 6) and consistent with C. elegans studies. Claims C80-C81 provide context from other model organisms. The conclusion that ELKS is not essential for active zone assembly is well-supported, though the explanation for species differences remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "7adb1e9b-347c-473a-8d2a-72a273bb4264",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Despite correlation between docked vesicles and RRP size at hippocampal synapses, conventional EM of ELKS1\u03b1/2\u03b1 cDKO synapses has not revealed vesicle docking deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 cites established correlations while C83 reports negative EM findings from previous work (Liu et al., 2014). The authors appropriately note that higher-resolution methods might reveal subtle docking phenotypes. The lack of detected docking deficits is a negative result that requires cautious interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "6a8b26e5-7d6e-4e26-ad91-794f617b7e9e",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "At inhibitory synapses, increasing extracellular Ca2+ cannot fully rescue transmission in ELKS1\u03b1/2\u03b1 cDKO, and ELKS2\u03b1 removal alone increases RRP, suggesting complex regulatory roles beyond simple P control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 cite previous findings (Liu et al., 2014; Kaeser et al., 2009) that suggest ELKS has additional roles at inhibitory synapses beyond Ca2+ influx control. These observations are appropriately cited and provide context for the complexity of ELKS function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    },
+    {
+      "id": "050c0ca6-65ed-4110-8977-f2631af5848c",
+      "content_id": "5f390dc4-c25a-46e0-bc0f-404e5473a229",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Mutations in ERC1/ELKS1 may contribute to autism spectrum disorders, possibly through synapse-specific misregulation of neurotransmitter release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 cites human genetic evidence (Silva et al., 2014) linking ELKS1 mutations to autism. Claim C87 is explicitly speculative about the pathophysiological mechanism. While the speculation is reasonable given the study's findings, it remains untested and represents a hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:59:01.260717Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc85553b-37f6-4ac7-97d0-4f63a8af1e60",
+      "result_id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d"
+    },
+    {
+      "claim_id": "e68e9a40-4944-4a98-ab80-e2ec324ec1ec",
+      "result_id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d"
+    },
+    {
+      "claim_id": "728b4b08-7e53-44e0-84be-2b80ee24e43f",
+      "result_id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d"
+    },
+    {
+      "claim_id": "90ffe6dd-0470-41db-97f0-1f75d876d2b0",
+      "result_id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d"
+    },
+    {
+      "claim_id": "fb8d4a90-fd18-42c3-9dea-3cd77d0d9980",
+      "result_id": "a108d1f8-9cc0-4773-a6e3-95cd19dc4f9d"
+    },
+    {
+      "claim_id": "d27df47f-52cb-461f-8d45-a29127af8214",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "d57cf7a4-6f3b-4cde-abbf-afa1ad43abe5",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "c483b756-0d2c-4949-b810-053ddf3d81fc",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "ab07fd14-dcf7-4984-99a1-9efbf08660e4",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "2b25901b-b02d-4e16-8fd7-23290048632e",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "cb4d3759-984e-4eb1-8587-fc984e305edb",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "9fe463ad-8b18-4d6e-b55b-9c2da8599f20",
+      "result_id": "d8d53bdb-6f1d-4a3d-9b01-0a872ccb7a17"
+    },
+    {
+      "claim_id": "20f82d99-d098-48e3-b475-bbf45ffde28e",
+      "result_id": "98eee388-0137-43d4-8106-9ec3b12aad19"
+    },
+    {
+      "claim_id": "ea988f50-59e9-40af-808c-92123fc09772",
+      "result_id": "98eee388-0137-43d4-8106-9ec3b12aad19"
+    },
+    {
+      "claim_id": "117546d3-54b6-43d3-8bf3-0fdf06ab00ce",
+      "result_id": "7af74166-7894-400a-9378-d7441978b52b"
+    },
+    {
+      "claim_id": "7841fdec-664d-459c-948c-0995da0bcfe1",
+      "result_id": "7af74166-7894-400a-9378-d7441978b52b"
+    },
+    {
+      "claim_id": "8afd19dd-54f2-4e82-8b28-04fbedcea203",
+      "result_id": "7af74166-7894-400a-9378-d7441978b52b"
+    },
+    {
+      "claim_id": "d945ee35-1d1b-4afa-98a7-1cabe126641e",
+      "result_id": "8a54858f-71cf-4d22-b482-93127ea63bd9"
+    },
+    {
+      "claim_id": "f0f18a77-46e1-40bd-a93d-b45f67cc431a",
+      "result_id": "8a54858f-71cf-4d22-b482-93127ea63bd9"
+    },
+    {
+      "claim_id": "a2d8f055-1b85-4d33-a542-4f1d7f3b3f2c",
+      "result_id": "8a54858f-71cf-4d22-b482-93127ea63bd9"
+    },
+    {
+      "claim_id": "7e883c8d-8d3d-45b1-b814-87837f53e3db",
+      "result_id": "9d5afe3e-2c46-4e46-996d-8350ff00f6eb"
+    },
+    {
+      "claim_id": "a861fc14-44b4-4b04-ba0c-f4b3026d9ecd",
+      "result_id": "9d5afe3e-2c46-4e46-996d-8350ff00f6eb"
+    },
+    {
+      "claim_id": "de8abff8-8ac0-4007-9c96-8f415e46e4d0",
+      "result_id": "1415ba74-3732-4c35-8afb-e18abb4e3897"
+    },
+    {
+      "claim_id": "12760c9c-faf0-4c38-b8d1-4456ba7978b1",
+      "result_id": "1415ba74-3732-4c35-8afb-e18abb4e3897"
+    },
+    {
+      "claim_id": "3f60d446-7a21-486c-8c76-e52e11600017",
+      "result_id": "1415ba74-3732-4c35-8afb-e18abb4e3897"
+    },
+    {
+      "claim_id": "45ce861a-be67-40db-9f90-223616c6100b",
+      "result_id": "f513289c-9391-4258-aa73-e54a9f1600fe"
+    },
+    {
+      "claim_id": "43a07665-cc84-469c-8405-1475f5e33385",
+      "result_id": "f513289c-9391-4258-aa73-e54a9f1600fe"
+    },
+    {
+      "claim_id": "aa1145e0-5e08-43ad-a867-e7ed888609fe",
+      "result_id": "f513289c-9391-4258-aa73-e54a9f1600fe"
+    },
+    {
+      "claim_id": "d99c6565-bf44-4095-8b1b-bbbe42588d36",
+      "result_id": "f513289c-9391-4258-aa73-e54a9f1600fe"
+    },
+    {
+      "claim_id": "38b1826e-fa3f-443e-b2a2-f5f5294cfda3",
+      "result_id": "88616f1d-71d2-497f-afff-2cbd12bbf0af"
+    },
+    {
+      "claim_id": "b7169384-8458-418c-aee3-c5ce4fdcf356",
+      "result_id": "88616f1d-71d2-497f-afff-2cbd12bbf0af"
+    },
+    {
+      "claim_id": "e0b9e470-857b-4a2a-9e10-236750b928f5",
+      "result_id": "88616f1d-71d2-497f-afff-2cbd12bbf0af"
+    },
+    {
+      "claim_id": "e1323e0f-42ed-4a1c-986d-c3929db6c0dd",
+      "result_id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45"
+    },
+    {
+      "claim_id": "ad74e5a0-7135-4573-ad1d-bda1fc445166",
+      "result_id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45"
+    },
+    {
+      "claim_id": "fc21d602-d863-44b9-938b-fc81b0a07698",
+      "result_id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45"
+    },
+    {
+      "claim_id": "954a6bfd-2673-42e1-8533-fb87a4ad6cf3",
+      "result_id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45"
+    },
+    {
+      "claim_id": "2e95ccc7-4c6d-45c3-bde7-7119f005ac78",
+      "result_id": "cb42400c-e3e4-4d23-ad1a-0fc90d08ff45"
+    },
+    {
+      "claim_id": "dd0a22ee-9d42-42d9-a467-c042dbb66157",
+      "result_id": "45a4ad62-65d0-40c7-a093-6d4846b45ef0"
+    },
+    {
+      "claim_id": "afd8de0e-9aa9-4efc-a3a4-2628245d72e0",
+      "result_id": "45a4ad62-65d0-40c7-a093-6d4846b45ef0"
+    },
+    {
+      "claim_id": "b9a7de72-6b01-4060-bb7b-ee35ab999dc3",
+      "result_id": "45a4ad62-65d0-40c7-a093-6d4846b45ef0"
+    },
+    {
+      "claim_id": "ed38ef36-3526-4340-87a1-112efe1f9286",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "485b07c1-1590-4b5c-8d3c-4781f54c3003",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "81691cb8-80ba-4d76-a7ff-281a9afe2646",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "dff767dd-b63d-4606-b78d-c4e355e93979",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "8e8c1c25-b491-4a6c-9282-70fa525fccfd",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "6dcf6633-d3f8-4058-8f47-51a6706a2b05",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "b8d122a4-cbe9-4d83-915d-b17136e01c4d",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "d8cf5d70-0be9-4d11-b374-3b0bcfc3f2ba",
+      "result_id": "45003097-81ea-4a5a-80eb-60ce1389e176"
+    },
+    {
+      "claim_id": "62efc896-db47-45cc-98ba-6f50125153d1",
+      "result_id": "7b3a2797-d6b9-49be-b929-5d2234bb0846"
+    },
+    {
+      "claim_id": "d0af0076-cea0-4a1d-8d52-c9e6e24213ce",
+      "result_id": "7b3a2797-d6b9-49be-b929-5d2234bb0846"
+    },
+    {
+      "claim_id": "b5830cff-e67f-4b24-8b93-e0a0c1683110",
+      "result_id": "7b3a2797-d6b9-49be-b929-5d2234bb0846"
+    },
+    {
+      "claim_id": "1ad9ccad-26fc-499b-90bd-3e434d544aa3",
+      "result_id": "7adb1e9b-347c-473a-8d2a-72a273bb4264"
+    },
+    {
+      "claim_id": "b1ef4c6d-c1f3-479f-97b5-b5e69302072f",
+      "result_id": "7adb1e9b-347c-473a-8d2a-72a273bb4264"
+    },
+    {
+      "claim_id": "4383725a-aaae-4aba-9a01-3aecf90bb9e8",
+      "result_id": "6a8b26e5-7d6e-4e26-ad91-794f617b7e9e"
+    },
+    {
+      "claim_id": "51d1b7a2-24af-4c2b-b980-395e6f079932",
+      "result_id": "6a8b26e5-7d6e-4e26-ad91-794f617b7e9e"
+    },
+    {
+      "claim_id": "8c9e6918-f38e-4775-83b4-ecb3d3e6ece9",
+      "result_id": "050c0ca6-65ed-4110-8977-f2631af5848c"
+    },
+    {
+      "claim_id": "2952861d-7bea-4ab6-b027-7a667875a09f",
+      "result_id": "050c0ca6-65ed-4110-8977-f2631af5848c"
+    }
+  ],
+  "comparisons": []
+}

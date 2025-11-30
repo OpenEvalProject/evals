@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "GRA16 contains a PEXEL-like motif (RRLAE, termed TEXEL) that is required for proteolytic processing and efficient export to the host cell nucleus. Mutation of this motif prevents processing, reduces protein stability, and blocks export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from sequence analysis, Western blotting showing loss of processing in the AAAAE mutant, and immunofluorescence demonstrating export defects. The data directly support that the TEXEL motif is necessary for GRA16 processing and trafficking. C8 is a nomenclature decision appropriately based on functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "ASP5 is identified as the *Toxoplasma* ortholog of Plasmodium PMV based on sequence homology (33% similarity, 14% identity) and shared structural features, though with notable differences including a longer signal peptide and absence of the helix-turn-helix motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by BLAST searches, sequence alignments (Figure 2\u2014figure supplement 1), and comparison with published PMV structures. The identification is appropriately conservative, noting both similarities and differences between the two proteases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "ASP5 is present as two major species (~90 and ~55 kDa) and localizes to the Golgi. The catalytic mutant ASP5MUT predominantly shows the ~90 kDa form, suggesting auto-activation produces the ~55 kDa species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by Western blot data (Figure 2A) and immunofluorescence co-localization with the Golgi marker GalNAc-YFP (Figure 2B). The inference about auto-activation (C15) is reasonable based on the loss of the smaller species in the catalytic mutant, though direct evidence of auto-cleavage is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ASP5 specifically cleaves the GRA16 TEXEL peptide after the leucine residue with Km ~48 \u03bcM, optimal activity at pH 5.5, and is potently inhibited by the TEXEL-mimetic compound WEHI-586 (IC50 63 nM). Activity requires the catalytic residues and the RRL motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 are comprehensively supported by fluorogenic peptide cleavage assays (Figure 2C), LC-MS/MS identification of the cleavage site (Figure 2D), kinetic measurements (Figure 2\u2014figure supplement 3), pH optimization, and inhibitor studies (Figure 2F). The controls with catalytic mutant and motif mutations strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ASP5 and PMV have overlapping but distinct substrate specificities. Both cleave RxL-containing sequences, but ASP5 requires arginine at P2 (not tolerated well by PMV) and does not efficiently cleave the KAHRP PEXEL peptide that PMV processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by comparative peptide cleavage assays (Figure 3A) showing differential processing of GRA16 TEXEL vs. KAHRP PEXEL peptides by the two enzymes. The P2 substitution experiment (C31) directly demonstrates the importance of arginine at this position for ASP5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ASP5 has strict substrate specificity requiring arginine at P3 and P2, and leucine at P1 (RRL consensus), while residues at P1' and P2' are dispensable but influence cleavage efficiency. ASP5 processes GRA19 TEXEL (RRLSD) but not the GRA21 RELLD sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are supported by systematic mutagenesis of the TEXEL motif (Figure 3B, 3C) showing loss of activity with conservative and non-conservative substitutions at P1-P3, and enhanced activity with P2' E>A mutation. The inference about GRA21 processing at RRLAE (C38) is reasonable given sequence identity with GRA16.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Structural modeling of ASP5 with GRA16 TEXEL reveals molecular basis for substrate specificity: the P3 arginine interacts with E506/Q549, P1 leucine is surrounded by hydrophobic residues, and P2 arginine forms additional hydrogen bonds accounting for ~50% of binding energy difference vs. threonine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by homology modeling using PMV crystal structures and AutoDock calculations (Figure 3E). The model provides structural explanations consistent with experimental specificity data. However, C48 notes a discrepancy between modeling (predicting reduced binding with P2' E>A) and experimental data (showing enhanced activity), indicating model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Deletion of ASP5 causes a growth defect in plaque assays that is complemented by re-introduction of ASP5. The defect is not due to impaired intracellular replication at 16 hours post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by successful gene disruption (confirmed by PCR/sequencing, Figure 4\u2014figure supplement 1), plaque assays showing smaller plaques (Figure 4A), complementation restoring growth, and replication assays showing no difference at 16 hr (Figure 4B). The inference that the plaque defect is not due to replication (C53) is reasonable but limited to the single timepoint tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In \u0394asp5 parasites, GRA16-HA is not processed correctly and fails to export to the host cell nucleus, instead accumulating in Golgi-like structures and the PV space, confirming ASP5 is essential for GRA16 trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are strongly supported by Western blot showing loss of processing (Figure 4C) and immunofluorescence showing mislocalization (Figure 4D) in \u0394asp5 parasites, mirroring the TEXEL mutant phenotype. This provides direct in vivo validation of ASP5's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ASP5 is required for Toxoplasma-induced up-regulation of host c-Myc. \u0394asp5-infected cells show 6.4-fold reduced c-Myc expression compared to wild-type infection, suggesting ASP5-dependent proteins control this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by immunofluorescence quantification (Figure 5B) and Western blot (Figure 5C) showing dramatic reduction in c-Myc in \u0394asp5-infected cells. C57-C58 appropriately cite prior work. The inference that ASP5-dependent proteins mediate this effect (C61) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MYR1 contains a TEXEL motif (RRLSE) located ~230 residues from the C-terminus that is cleaved by ASP5. This demonstrates the TEXEL can function at novel locations beyond the N-terminus, unlike Plasmodium PEXEL sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 are supported by Western blot showing loss of MYR1 processing in \u0394asp5 (Figure 6A), in vitro cleavage of MYR1 TEXEL peptides by ASP5 (Figure 6B), and mutagenesis showing RRLSE is necessary for processing in vivo (Figure 6D). The comparison with Plasmodium PEXEL location (C71) is appropriately cited and represents an important mechanistic difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ASP5 is required for efficient recruitment of host mitochondria to the PVM (4.3-fold reduction in \u0394asp5). MAF1 is mislocalized in \u0394asp5 parasites but not processed differently, suggesting ASP5 acts on other proteins that interact with MAF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by quantitative TEM (Figure 7B), immunofluorescence showing MAF1 mislocalization (Figure 7C), and Western blot showing no change in MAF1 processing (Figure 7D). The inference that ASP5 acts on MAF1-interacting proteins (C76) is reasonable. However, the authors note this phenotype is variable between labs, suggesting potential context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The nanotubular network is vastly diminished and disorganized in \u0394asp5 vacuoles, suggesting one or more components of this network require ASP5 processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by TEM showing dramatic NTN defects in all \u0394asp5 vacuoles examined (Figure 7E). The inference about ASP5-dependent NTN components (C78) is reasonable but indirect, as the specific substrates are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "GRA24 export is completely blocked in \u0394asp5 parasites and restored by complementation, but GRA24 is not directly processed by ASP5 and lacks a canonical TEXEL, indicating indirect dependence on ASP5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by immunofluorescence showing export block (Figure 8A, Figure 8\u2014figure supplement 1), Western blot showing no size change (Figure 8B), and peptide cleavage assays showing ASP5 does not cleave GRA24 sequences (Figure 8C). The conclusion of indirect dependence (C83) is well-reasoned based on the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNA-seq analysis reveals that ASP5 influences the magnitude of transcriptional changes during infection. Wild-type infection significantly alters 6,771 genes (3,402 up, 3,369 down), while \u0394asp5 infection affects only 1,850 genes, with log-fold changes averaging 60% of wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR 5%) and multiple replicates. The data show dramatic reduction in both number and magnitude of transcriptional changes in \u0394asp5 infection (Figure 9A). The inference that most genes respond partly through ASP5-dependent pathways (C89) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Gene Ontology analysis reveals ASP5 controls up-regulation of genes involved in cell cycle, nucleic acid metabolism, and chromatin binding, and down-regulation of genes involved in autophagy, peroxisome fission, vacuole organization, and protein trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by GO analysis of differentially expressed genes (Table 1) with appropriate statistical testing. The inference about facilitating parasite persistence (C92) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The transcriptional profile of \u0394gra16 infection strongly correlates with \u0394asp5 infection (ROAST P=5\u00d710\u207b\u2075), indicating GRA16-induced changes represent a subset of all ASP5-influenced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by gene set enrichment analysis comparing the current data with published \u0394gra16 data, with appropriate statistical testing (Figure 9C). This validates that GRA16 is one of multiple ASP5-dependent effectors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ASP5 is essential for virulence in mice. Infection with 15 \u0394asp5 parasites is non-lethal and provides protective immunity, while 50 \u0394asp5 parasites show delayed mortality. Wild-type and complemented parasites are uniformly lethal at both doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 are supported by survival studies with appropriate controls including complemented parasites (Figure 10A-C). Seroconversion confirms infection occurred. The dose-response (15 vs. 50 parasites) and re-challenge experiments strengthen the conclusions. Statistical analysis is appropriate (Log-rank test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "This work identifies ASP5 as the first component of the dense granule export machinery in Toxoplasma, demonstrating its control of nanotubular network formation, mitochondrial recruitment, transcriptional changes affecting thousands of genes, and virulence in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are summary statements appropriately supported by the collective evidence from the manuscript. These represent the major conclusions integrating multiple lines of evidence from biochemistry, cell biology, transcriptomics, and in vivo studies.",
+    "result_type": "MAJOR"
+  }
+]

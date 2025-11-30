@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The pre-B\u00f6tzinger complex (pre-B\u00f6tC) is a medullary region that generates rhythmic bursting activity in vitro and in vivo, and progressive increases in extracellular potassium concentration evoke mixed-mode oscillations (MMOs) characterized by alternating large and small amplitude bursts. Similar patterns have been observed in pathological breathing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C24 establish the pre-B\u00f6tC's role in respiratory rhythm generation through multiple experimental observations cited from prior work. The experimental evidence from slice preparations (C16-C17), the induction of MMOs by elevated K+ (C18-C22), and clinical observations (C23-C24) provide converging support for this foundational result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MMOs emerge within heterogeneous excitatory neural networks through progressive neuronal recruitment and synchronization. The MMO pattern depends on distributed neuronal excitability, network connectivity parameters, and cellular bursting properties that include inverse relationships between burst frequency and intra-burst spike frequency, and dependence of recovery period on burst amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 represent the core findings from computational modeling. The demonstration that MMOs arise from network heterogeneity (C3) with specific dependencies on network parameters (C4) and critical cellular properties (C5-C6) is well-supported by systematic simulations shown in Figures 2-4. The identification of key features (C5-C6) is critical for the mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Experimental recordings show that pre-B\u00f6tC neurons exhibit heterogeneous resting membrane potentials and bursting behaviors, with neurons at different excitability levels showing different relationships to XII output. Pharmacological blockade of synaptic transmission desynchronizes neuronal activity and abolishes XII output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe experimental observations from prior work that motivate the modeling approach. The cited evidence (Figure 1B, C1, C2) and multiple references support the existence of neuronal heterogeneity and the importance of synaptic coupling, providing empirical foundation for the computational models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A computational model of 100 Hodgkin-Huxley neurons with INaP-based bursting and distributed excitability (EL) shows that without coupling, neurons exhibit silent, bursting, or tonic behaviors depending on excitability, with asynchronous population activity. The distribution of behaviors follows the excitability gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe the large-scale model structure and baseline (uncoupled) behavior. The model specification is clearly documented (C29-C30, Table 1), and the uncoupled behavior (C31-C35) is demonstrated in Figures 2A and 3A, showing the expected relationship between excitability and neuronal state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "When sparse excitatory synaptic connections are added to the heterogeneous network, overlapping clusters of synchronized neurons emerge dynamically, generating MMOs with alternating LA and SA bursts. Low excitability neurons participate only in LA bursts and exhibit high intra-burst spike frequency but low burst frequency. The generation of LA bursts depends on intrinsic recovery mechanisms in low excitability neurons rather than recruitment intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45 describe the emergence of MMOs in the coupled network and identify the critical role of low excitability neurons. The raster plots and population histograms (Figures 2B, 3B-D) clearly demonstrate cluster formation, differential participation in SA vs LA bursts, and the inverse relationship between burst frequency and spike frequency (C38). The mechanistic insight about recovery-dependent LA burst generation (C44-C45) is supported by the analysis in Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Systematic variation of synaptic weights and connection probability shows that increasing either parameter increases LA burst frequency and decreases the number of SA bursts between LA bursts, with quantal transitions between MMO regimes. At very low weights, only irregular SA bursts occur. IBIs are consistently longer after LA bursts than after SA bursts across all MMO regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 describe parameter dependencies demonstrated in Figure 4. The heat maps (Figure 4A) and activity traces (Figure 4B) systematically show quantal regime transitions with parameter changes. The observation of longer IBIs after LA bursts (C49) is consistently shown across multiple figures (2B3, 3C1, 4B1-B2), providing robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A reduced three-neuron model with different excitability levels (HE, ME, LE) reproduces the key features of the large-scale model. Without coupling, HE bursts at high frequency, ME bursts at low frequency, and LE is silent. With increasing synaptic weights, the network transitions through quantal MMO regimes from only SA bursts to only LA bursts, with LA bursts occurring when the LE neuron activates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the reduced model and its qualitative agreement with the large-scale model. Figure 5 demonstrates the model structure (A1), uncoupled behavior (B1), and regime transitions with increasing weights (C1-E1). The correspondence between LE activation and LA bursts (C56) is clearly shown across panels C-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mathematical analysis of the reduced model reveals that LE neuron activation depends on whether synaptic input lowers the V-nullcline knee below the current hNaP value. The quantal nature of MMOs arises because a discrete number of HE/ME activations is needed for sufficient hNaP recovery in the LE neuron. Increasing synaptic weights allows LE activation with fewer input cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 provide the mechanistic explanation for quantal MMOs using phase plane analysis. The nullcline analysis in Figure 5B3-E3 clearly demonstrates the threshold mechanism (C59-C61) and the role of hNaP recovery (C62). The explanation for quantal transitions (C63-C64) is well-supported by the geometric analysis and is consistent with the simulation results in Figure 6A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Transitions between quantal MMO regimes occur at critical connection weights corresponding to tangencies between the system trajectory and curves of nullcline knees. The 1:1 to 1:2 transition occurs when the ME neuron can no longer activate on every cycle, and the 1:2 to 1:4 transition occurs when the LE neuron can no longer activate on every second cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide mathematical characterization of regime transitions. The tangency analysis is demonstrated in Figure 6C-D, showing the geometric conditions for transitions. This provides rigorous mathematical support for the qualitative observations and explains the discrete nature of regime changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Changes in excitability of individual neuron types have distinct effects: increasing LE excitability changes LA burst frequency without affecting overall oscillation frequency, while increasing HE excitability increases SA burst frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 describe differential effects of changing excitability in specific neuron types. However, the text states 'data not shown' for both claims, meaning no figures or quantitative results are provided to support these assertions. While the claims are mechanistically plausible given the model structure, they lack direct empirical support within the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The reduced model explains why IBIs are longer after LA bursts: stronger excitation during LA bursts pushes V-nullclines to lower hNaP values, causing the active phase to end with more INaP inactivation, requiring longer recovery before subsequent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide mechanistic explanation for the IBI differences observed in both models. The observation (C72) is supported by data in multiple figures. The mechanistic explanation (C73-C75) is supported by the phase plane analysis and the demonstration in Figure 6B showing different loop sizes for SA vs LA bursts in the HE neuron.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Reducing neuronal excitability by 8% or decreasing synaptic weights can eliminate LA bursts, leaving only SA bursts, with the LE and ME neurons becoming quiescent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe manipulations that eliminate LA bursts, demonstrated in Figure 7A-B. Both manipulations produce qualitatively similar outcomes (only SA bursts), supporting the interpretation that either reduced excitability or reduced coupling can prevent LE neuron recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The two key features critical for MMO generation (inverse relationship between burst and spike frequency, and voltage-dependent recovery) are not specific to INaP-based bursting but represent common properties of most intrinsic bursting mechanisms, including those based on Ca2+- or Na+-dependent currents with pump-mediated recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C99-C101 generalize the findings beyond INaP-based mechanisms. While the models use INaP (C99), the authors provide strong theoretical arguments and extensive citations (C101) showing that similar properties arise from other bursting mechanisms. This generalization is well-reasoned and supported by knowledge of bursting dynamics, though not directly tested in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The model predicts that progressive suppression of INaP by riluzole should produce a transitional MMO regime before abolishing rhythmicity. The effects of Cd2+ in eliminating LA bursts could result from either reduced excitability or reduced synaptic connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 are explicitly presented as predictions and hypotheses for future work. C79 is based on simulations in Figure 4B3 showing MMO emergence during INaP suppression, providing some support. However, C80 is more speculative, offering two alternative explanations for Cd2+ effects without definitive evidence to distinguish them. These require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Low excitability neurons play a critical role in MMO generation by synchronizing network activity during LA bursts. These neurons have the highest intra-burst spike frequency, participate only in LA bursts, and their intrinsic recovery properties define LA burst timing and output frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 synthesize key mechanistic insights from both models. The differential participation of neuron types (C82-C83) is clearly shown in Figures 3B-C. The high spike frequency of LE neurons (C84) is demonstrated in Figure 3B3. The critical role of LE recovery in determining LA burst timing (C85) is supported by analysis in both models (Figures 3D, 5-6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Strong mutual excitation during LA bursts causes pauses in tonic spiking neurons and prolonged IBIs. These features indicate that low excitability neurons participate in recurrent network structure rather than receiving feed-forward inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 draw inferences about network structure from observed dynamics. The pause in tonic neurons after LA bursts (C86) is shown in Figure 3B2 and explained by prior work (Dunmyre and Rubin, 2010). The inference about recurrent vs feed-forward structure (C88) is logically sound given that the effects depend on full network activation (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The computational study challenges the interpretation that MMOs in pre-B\u00f6tC indicate separate rhythm- and pattern-generating sub-networks. Instead, a single heterogeneous population with distributed excitability can explain MMOs, with low-excitability neurons synchronizing population activity and their recovery properties defining output frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 present a key conceptual contribution, contrasting the current findings with the 'burstlet concept' of Kam et al. (2013) and Feldman and Kam (2015). The modeling results (C92) clearly demonstrate that a single network can produce MMOs. The mechanistic explanation (C93-C94) is well-supported by the analysis. This represents a substantive reinterpretation of experimental observations, though it remains a computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "While the role of INaP in pre-B\u00f6tC bursting has been debated, all available MMO data were obtained from neonatal animals (P0-P5) within the developmental range where INaP is considered the primary rhythm-generating current, supporting its inclusion in the models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide justification for the modeling choice to use INaP. The existence of debate (C96) and alternative hypotheses (C97) are acknowledged through citations. The argument that experimental MMO data come from the appropriate developmental stage (C98) is well-supported by citations and provides reasonable justification for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The conclusion that key MMO-generating features are common across bursting mechanisms contradicts the opinion of Feldman and Kam (2015) that previous computational models are invalid due to dependence on slow INaP deactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 explicitly addresses a criticism from Feldman and Kam (2015). The rebuttal is well-supported by the demonstration that the critical features (C78, C100-C101) are not specific to INaP kinetics but arise from general properties of bursting mechanisms. This represents a substantive contribution to ongoing scientific debate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MMOs are characterized by alternating large and small amplitude oscillations and have been observed in multiple neural systems including entorhinal cortex, hippocampus, dopaminergic neurons, pre-B\u00f6tC, and motoneurons. Heterogeneity is a ubiquitous property of central pattern generator circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide background context from prior literature. All claims are supported by appropriate citations to experimental observations (C9-C14) and reviews (C8, C15). These establish the broader significance of MMOs and heterogeneity in neural circuits, motivating the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C56",
+      "C65",
+      "C118"
+    ],
+    "result": "Purkinje cell simple spike activity changes significantly during whisking bouts. 67% of recorded Purkinje cells (47/70) showed significant changes in simple spike rate during whisking, with the majority (40/47) increasing and some (7/47) decreasing their firing rates. Changes ranged from +128% to -34%, and nearly all cells (67/70) showed alterations in either rate, coefficient of variation, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C48, C50-C51, C56, C65, and C118 provide converging evidence from electrophysiological recordings showing robust and statistically significant changes in Purkinje cell activity during whisking. The data include appropriate sample sizes (n=70 cells from 47 mice), statistical tests (Mann-Whitney-Wilcoxon, p<0.05), and quantitative measurements of firing rate changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C72",
+      "C75",
+      "C76",
+      "C99",
+      "C100",
+      "C147"
+    ],
+    "result": "Simple spike rate changes predominantly reflect efferent (motor) rather than re-afferent (sensory) signals. Two-thirds of Purkinje cells (31/47) exhibited firing rate changes that preceded whisking onset by a mean of -34.6 \u00b1 7.9 ms, with the population average leading whisker movement by ~18 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C72, C75-C76, C99-C100, and C147 are supported by temporal cross-correlation analysis between neural activity and whisker movement. The temporal lead of neural activity relative to movement onset provides strong evidence for efferent drive. However, the broad distribution of latencies (C77: -178 to 324 ms) indicates heterogeneity in the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C97",
+      "C115",
+      "C116",
+      "C130",
+      "C131"
+    ],
+    "result": "Purkinje cells linearly encode whisker position through changes in simple spike firing rate. Over 60% of cells (44/70) showed significant linear correlations (R\u00b2 = 0.958 \u00b1 0.005) between firing rate and whisker position. Two classes were identified: unidirectional cells (37/44) encoding only forward or backward movements, and bidirectional cells (7/44) encoding the full range of movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C81-C86, C97, C115-C116, C130-C131 demonstrate strong linear encoding through regression analysis with high R\u00b2 values and statistical significance (p<0.05, ANOVA). The classification into unidirectional and bidirectional cells is data-driven and well-supported by Figure 3. The linearity is remarkable given the known non-linear properties of Purkinje cell dendrites (C8, C29-C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Bidirectional Purkinje cells have significantly higher gain values than unidirectional cells (33.5 \u00b1 4.4 vs 12.5 \u00b1 2.0 Hz/degree, p<0.001), making them more sensitive to small-amplitude whisker movements. Despite this, both cell types make similar contributions to encoding as the fraction of time spent within each cell's linear encoding range is constant across the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by statistical comparison (Mann-Whitney-Wilcoxon test, p<0.001) and analysis shown in Figure 3 and supplementary figures. The inverse relationship between gain and encoding range (C93) is demonstrated, and the constant fraction of time within encoding range (C95) supports the inference that both cell types contribute similarly (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C119",
+      "C120",
+      "C155"
+    ],
+    "result": "Single Purkinje cells accurately encode whisker set point, allowing reconstruction of whisker trajectories from spike trains. Reconstructions based on simple spike activity were excellent predictors of actual whisker set points (correlation coefficient range: 0.23-0.89, mean = 0.57 \u00b1 0.05, p<0.001, n=18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115, C119-C120, and C155 are supported by transfer function analysis and reconstruction shown in Figure 5. The correlation coefficients are statistically significant and demonstrate that single cells can encode set point. However, the range of correlation coefficients (0.23-0.89) shows considerable variability, and the mean of 0.57 indicates moderate rather than perfect encoding at the single-cell level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C137"
+    ],
+    "result": "Phase information is sparsely encoded in cerebellar Purkinje cells. Only 1 out of 31 cells showed significant phase tuning (p<0.05, Kuiper test), with the vast majority (30/31) showing no significant phase preference during rhythmic whisking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 and C137 are supported by statistical analysis (Kuiper test) of phase tuning during rhythmic whisking epochs. The sparse encoding of phase (1/31 cells) contrasts with the robust encoding of set point, suggesting different kinematic parameters are represented by different mechanisms. The statistical test is appropriate for circular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C148",
+      "C149"
+    ],
+    "result": "Primary motor cortex (vM1) is not the source of efferent drive to the cerebellum during whisking. Linear representation of whisker position by simple spike firing rate was preserved during vM1 inactivation (n=7/15 cells showed modulation), suggesting whisker-related input derives from other cortical or subcortical processing stations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105, C148-C149 are supported by muscimol inactivation experiments shown in Figure 3\u2014figure supplement 2. The preservation of linear encoding during vM1 inactivation (C103) provides strong evidence that vM1 is not necessary for cerebellar whisking representation. However, the sample size is relatively small (n=15 cells, 7 modulated), and the conclusion about alternative sources (C105, C149) is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Changes in simple spike timing variability occur during whisking. The coefficient of variation (CV) was close to 1 during both rest (0.9 \u00b1 0.1) and whisking (0.8 \u00b1 0.1). Significant changes in CV occurred in 44/47 cells that showed rate modulation, and 20/70 cells showed changes in firing regularity alone, suggesting temporal patterning may independently encode whisker-related signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by analysis of inter-spike interval variability. The finding that some cells (20/70) show changes in CV without rate changes (C54) is interesting and suggests multiple encoding mechanisms. However, the functional significance of CV changes (C55) is speculative and would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Locomotion influences both whisking behavior and cerebellar activity. During locomotion (n=10 recordings), whiskers were more protracted and simple spike firing rates were elevated (p=0.03, paired t-test), independent of the sign of whisking-related modulation. However, locomotion occurred rarely (3.5% of whisking bouts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by behavioral and electrophysiological data shown in Figure 1\u2014figure supplement 1. The statistical significance (p=0.03) and independence from modulation sign are clearly stated. However, the small fraction of time spent running (3.5%) and limited sample size (n=10) suggest this is a secondary finding. The inference that running influences cerebellar activity (C61) is reasonable but based on correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Complex spike activity changes during whisking but does not encode whisker kinematics. Significant changes in complex spike rates were observed in 33/70 cells (p<0.05), but there was no consistent relationship between complex spike and simple spike rate changes (r=0.13, p=0.57), and no correspondence between complex spike incidence and whisker movement amplitude/duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C68-C69 are supported by statistical analysis shown in Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 1. The lack of correlation between CS and SS changes (C64) and absence of correspondence with movement parameters (C68) are clearly demonstrated. This contrasts with the robust encoding by simple spikes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The distribution of temporal correlations between neural activity and whisker movement is broad (-178 to 324 ms) and non-unimodal (Hartigan's dip test, p<0.001, n=38), indicating whisking behavior is represented on multiple timescales among neighboring Purkinje cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by statistical analysis of latency distributions shown in Figure 2E. The Hartigan's dip test is appropriate for detecting multimodality. The broad distribution suggests heterogeneity in the population, with some cells showing delayed responses that may reflect sensory feedback or recurrent processing (C79-C80, which are speculative).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C32",
+      "C33",
+      "C123",
+      "C150"
+    ],
+    "result": "The cerebellum employs a linear coding scheme for whisking kinematics. Despite receiving hundreds of thousands of synaptic inputs across non-linear dendritic trees, Purkinje cells integrate parallel fiber input to generate precise linear information about whisking through changes in firing rate, establishing a whisking coordinate system in the cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31-C33, C123, C150 synthesize the major findings into a coherent conclusion about cerebellar coding. The linear encoding is well-supported by the data (C81, C86), and the contrast with dendritic non-linearity (C8, C29-C30) makes this finding particularly notable. The claim about establishing a 'whisking coordinate system' (C32) is somewhat interpretive but reasonable given the systematic encoding of position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The strong linearity of Purkinje cell output is surprising given non-linear dendritic conductances. This suggests either that non-linear conductances compensate for non-linear synaptic integration within passive dendrites, or that they are disengaged during free whisking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 raise an important mechanistic question but provide only speculative explanations. While the observation of linearity despite dendritic non-linearity is valid (C124), the proposed mechanisms (C125-C126) are not tested experimentally. This would require dendritic recordings or pharmacological manipulations to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Linear computation may provide optimal pattern separation in cerebellar circuits, affording graded sensorimotor representations that are less prone to saturation and increase dynamic range. Molecular layer inhibition may play a crucial role in maximizing the range of cerebellar operation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C129 are largely speculative interpretations of the functional significance of linear encoding. While supported by citations to theoretical work, these claims are not directly tested in the current study. The role of molecular layer inhibition (C129) is inferred from bidirectional encoding but not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Set point information is propagated to the deep cerebellar nucleus through convergence of multiple Purkinje cells. Integration of signals with different rate functions could extend the dynamic range of DCN neurons, and positively and negatively modulated Purkinje cells likely have distinct cellular targets to avoid degrading set point representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C136 make reasonable inferences about downstream processing based on known anatomy (C132 is supported by citation) and the observed diversity of encoding (C90-C91). However, these are speculative statements about circuit organization that are not directly tested. DCN recordings would be needed to confirm these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C140"
+    ],
+    "result": "Phase information may be reconstituted in the deep cerebellar nucleus via spatiotemporal convergence of weakly tuned Purkinje cells, and additional phase tuning may restrict simple spike firing to precise times within the whisking cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138 and C140 are speculative explanations for how phase information might be processed despite sparse encoding in Purkinje cells. These hypotheses are reasonable given the sparse phase tuning observed (C107, C110-C111) but are not tested experimentally. DCN recordings during whisking would be needed to evaluate these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The linear encoding regime provides functional advantages including flexibility to fine-tune whisker movement through fast online feedback, disambiguation of self- and externally generated sensory signals, potential utility for brain-machine interfaces, and circumvention of long cortical feedback delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C154 are speculative statements about functional significance supported by citations but not directly tested. While the accurate encoding demonstrated in the study (C112-C114) is consistent with these proposed functions, experimental validation would require behavioral manipulations, perturbation experiments, or brain-machine interface implementations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Experimental characterization of whisking behavior and Purkinje cell baseline activity. Mice exhibited variable whisking bouts (mean: 1.68 \u00b1 0.04 s) and quiet periods (mean: 7.82 \u00b1 0.25 s). Purkinje cells (n=70 from 47 mice) were identified by their characteristic simple spike (61.9 \u00b1 3.7 Hz at rest) and complex spike (1.6 \u00b1 0.1 Hz) waveforms, consistent with previous awake recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C42-C44 provide methodological details and baseline characterization. The data are clearly presented with appropriate statistics. The consistency with previous literature (C44) validates the recording approach. These are descriptive findings that establish the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Changes in Purkinje cell simple spike firing rate during whisking bouts closely mimicked whisker movement, as demonstrated by peri-event time histograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by visual inspection of Figure 2A-C showing close correspondence between firing rate changes and whisker position. This qualitative observation is quantified by the subsequent correlation analyses (C81, C86) and reconstruction experiments (C112-C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C98"
+    ],
+    "result": "Unidirectional cells showed baseline shifts in firing frequency between movement and non-movement, while bidirectional cells maintained continuous representation of whisker position without large baseline shifts. The high resting firing rate enables bidirectional representation through both increases and decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C98 describe important differences between cell types. The observations are supported by the data in Figure 3, and the inference about high baseline rates enabling bidirectional encoding (C98) is reasonable given the observed firing rates (C42) and bidirectional modulation patterns (C84, C86).",
+    "result_type": "MINOR"
+  }
+]

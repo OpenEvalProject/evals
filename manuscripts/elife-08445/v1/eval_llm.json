@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors generated a quantitative perturbation dataset by systematically mutating 38 variants of the rho enhancer, measuring expression from 935 embryo images. Single activator site mutations uniformly reduced expression to ~60% of wild-type, while double mutations showed variable effects. Snail repressor sites showed differential effectiveness despite similar binding affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is rigorous with adequate sample sizes (minimum 10 embryos per construct), systematic mutagenesis strategy, and quantitative imaging. The observations are well-documented with figures and supplementary data. The use of site-specific integration controls for position effects, and normalization procedures are described. However, the claim about 60% reduction (C6) lacks statistical testing to determine if differences between sites are truly uniform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "120 thermodynamic models were created by combining 15 cooperativity and 8 quenching formulations, trained using CMA-ES optimization. Best-performing models used 3 bins of 60 bp for cooperativity and 4 small bins (25-35 bp) for quenching. Model performance did not strictly correlate with parameter count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive model exploration is well-designed and systematically tests different hypotheses about transcription factor interactions. The use of RMSE as an objective function is appropriate, and the finding that more parameters don't guarantee better performance suggests the models are capturing biological features rather than simply overfitting. The CMA-ES algorithm is appropriate for this optimization problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Models showed construct-specific performance patterns, with wild-type activator constructs being less well-fit. Testing three PWMs for each transcription factor showed that model rankings remained similar across PWM choices, with the Snail PWM matching footprinted sites performing best.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PWM robustness testing (C16-C17) strengthens confidence in the modeling approach by showing results are not overly dependent on specific PWM choices. The observation that wild-type constructs are less well-fit (C15) is interpreted as these being more informative rather than a failure, which is reasonable but somewhat post-hoc. The correspondence with footprinted sites provides independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cross-validation revealed that systematic removal of construct classes (especially Snail mutants) had more profound impact on model performance than random removal. Omission of Snail constructs dramatically increased RMSE, indicating that activator site mutations alone are insufficient to constrain repressor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-validation strategy is well-designed and reveals important information about which data are most informative for parameter estimation. The finding that Snail constructs are critical (C20-C21) demonstrates the value of comprehensive perturbation design. However, the manuscript could benefit from more quantitative reporting of RMSE changes across different leave-out strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Parameter analysis revealed that separating activator and repressor cooperativity improved model performance. Repressor-repressor cooperativities were consistently small, while activator-activator cooperativities were uniformly high without sharp distance dependencies. Distance-dependent repression was observed in many models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the parameter trends are described (C22-C26), the biological interpretation requires caution. The high second-order sensitivities (C27) indicate extensive parameter compensation, meaning individual parameter values may not be uniquely determined. The interpretation of loose activator cooperativity (C25) as explaining flexible binding site positioning is reasonable but somewhat circular - the model structure may impose this result. The consistency with prior repression studies (C26) provides some validation, but independent experimental validation of the predicted cooperativity values would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Sensitivity analysis showed most parameters exhibited low first-order but high second-order sensitivities, indicating extensive mutual dependence and compensation among parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity analysis is appropriately conducted and honestly reported. This finding is critical for interpreting the parameter values and suggests that while models may have good predictive power, individual parameter estimates should be interpreted cautiously. This level of transparency about model limitations is commendable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C46"
+    ],
+    "result": "The top-performing models successfully predicted short-range repression effects in constructs with repositioned Snail sites and accurately modeled heterologous D. melanogaster enhancers and homologous rho enhancers from other Drosophila species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The predictive validation on independent constructs (C28) and evolutionarily divergent sequences (C29) is strong evidence for model generalizability. These are true predictions on data not used for training. However, the manuscript states \"top third of models\" were successful (C28), suggesting some models failed - more detail on failure modes would be informative. The success on divergent species (C29) is particularly impressive and supports the claim of capturing fundamental enhancer grammar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C47"
+    ],
+    "result": "Genome scanning with the model ensemble successfully identified known enhancers flanking the brk gene with strong consensus among 24 models, while showing fewer predictions in the eve locus (a negative control not regulated by Dorsal/Twist). The ensemble approach was effective for enhancer identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome scanning validation (C30-C32) provides important evidence that models can identify enhancers de novo from sequence. The use of eve as a negative control is appropriate. The strong consensus at known brk enhancers (C31) and reduced predictions at eve (C32) support specificity. However, the manuscript notes some predicted regions lack protein occupancy data, and some known binding regions aren't predicted - these discrepancies deserve more investigation. The claim of \"effective\" identification (C47) is supported but could be more quantitatively assessed (e.g., precision/recall metrics).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C36"
+    ],
+    "result": "Using multiple models as a predictive ensemble helps overcome overfitting inherent in individual models, providing a more robust platform for interpreting regulatory information than single models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ensemble approach is well-justified given the parameter compensation issues (C27) and variable model performance on different constructs. The \"jury\" metaphor (C33) is apt. The manuscript demonstrates this with genome scanning where model consensus indicates higher confidence predictions. However, the manuscript could more rigorously compare ensemble performance to individual model performance using held-out test data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C48"
+    ],
+    "result": "The study demonstrates that arrangement and quality of transcription factor binding sites contains a common cis-regulatory grammar shared across distinct elements. Success required high-quality perturbation data and exploration of diverse model structures, showing how experimental and modeling approaches can be combined for genome-wide insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusion (C34, C48) is supported by the successful cross-enhancer predictions and genome scanning results. The identification of key success factors (C35) - comprehensive perturbation data and model diversity - is valuable for future studies. However, the claim of \"common grammar\" (C34) is somewhat overstated given that the study focuses on only three transcription factors in one developmental context. The contrast with protein-protein interaction models is interesting but not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The modeling predicts strong distance-independent cooperativity between Dorsal and Twist activators but weak cooperativity between Snail repressors, effects likely linked to chromatin-based activities of these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the parameter patterns are consistently observed (C37), the biological interpretation (C38) relies heavily on citation to previous work rather than direct experimental validation in this study. Given the high second-order parameter sensitivities (C27), these specific parameter values may not be uniquely determined. The link to chromatin mechanisms is plausible but speculative without direct chromatin measurements. Independent experimental validation of these predicted cooperativity properties would be needed to fully support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C45"
+    ],
+    "result": "The variable effects of pairwise mutations (versus uniform single-site effects) suggest multiple distinct thresholds for biochemical events on the enhancer. The weak repression by Snail4 may result from overlap with the Twist2 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable hypotheses (C13, C45) based on the data patterns, but they remain speculative. The \"multiple thresholds\" interpretation (C13) is one possible explanation for the variable double-mutant effects, but alternative explanations (e.g., context-dependent cooperativity, non-linear activation functions) are not rigorously excluded. The Snail4/Twist2 overlap hypothesis (C45) is plausible but not directly tested. These claims appropriately use cautious language (\"hypothesize,\" \"may\") but require follow-up experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The modeling approach focused on three main regulators and did not account for additional factors like chromatin occupancy, signaling modifications, or additional regulatory proteins. The study deliberately focused on the Dorsal regulon due to available quantitative resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations (C39) are honestly and clearly stated. The rationale for system choice (C40) is sound - the Dorsal system has exceptional quantitative resources. However, these limitations are significant: the models may not generalize to enhancers with different regulatory logic, and the omission of chromatin state and additional factors may explain some prediction failures. The manuscript appropriately acknowledges these constraints.",
+    "result_type": "MINOR"
+  }
+]

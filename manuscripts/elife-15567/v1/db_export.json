@@ -1,0 +1,1856 @@
+{
+  "submission": {
+    "id": "5c3df300-7522-45ca-a771-c402e6811f13",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:17:44.875308Z",
+    "updated_at": "2025-11-30T00:17:44.875308Z"
+  },
+  "content": [
+    {
+      "id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "submission_id": "5c3df300-7522-45ca-a771-c402e6811f13",
+      "content_type": "manuscript",
+      "content_text": "# In vivo super-resolution RESOLFT microscopy of Drosophila melanogaster\n\n## Authors\n\n- Sebastian Schnorrenberg<sup>1</sup>\n- Tim Grotjohann<sup>1</sup>\n- Gerd Vorbr\u00fcggen<sup>2</sup>\n- Alf Herzig<sup>2</sup>\n- Stefan W Hell<sup>1</sup>\n- Stefan Jakobs<sup>1</sup> ([ORCID: 0000-0002-8028-3121](https://orcid.org/0000-0002-8028-3121)) \u2020\n\n### Affiliations\n\n1. Department of NanoBiophotonics Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n2. Department of Molecular Developmental Biology Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n3. Abteilung Entwicklungsbiologie Georg-August-Universit\u00e4t G\u00f6ttingen G\u00f6ttingen Germany\n4. Department of Neurology University Medical Center of G\u00f6ttingen G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite remarkable developments in diffraction unlimited super-resolution microscopy, in vivo nanoscopy of tissues and model organisms is still not satisfactorily established and rarely realized. RESOLFT nanoscopy is particularly suited for live cell imaging because it requires relatively low light levels to overcome the diffraction barrier. Previously, we introduced the reversibly switchable fluorescent protein rsEGFP2, which facilitated fast RESOLFT nanoscopy (Grotjohann et al., 2012). In that study, as in most other nanoscopy studies, only cultivated single cells were analyzed. Here, we report on the use of rsEGFP2 for live-cell RESOLFT nanoscopy of sub-cellular structures of intact Drosophila melanogaster larvae and of resected tissues. We generated flies expressing fusion proteins of alpha-tubulin and rsEGFP2 highlighting the microtubule cytoskeleton in all cells. By focusing through the intact larval cuticle, we achieved lateral resolution of <60 nm. RESOLFT nanoscopy enabled time-lapse recordings comprising 40 images and facilitated recordings 40 \u00b5m deep within fly tissues.\n\n## Introduction\n\nThe various super-resolution fluorescence microscopy (nanoscopy) methods that allow overcoming the diffraction barrier have become an indispensable part of the modern biology toolbox (Huang et al., 2009). Still, entire research fields such as those focusing on the model organism Drosophila melanogaster have been reluctant in adapting live-cell nanoscopy. Indeed, nanoscopy of thick specimen is mostly performed on optically transparent samples such as cleared and fixed tissue (Stelzer, 2015). The relatively few reported examples of nanoscopy in living tissues typically relied on specimen in which individual cells overexpressed a fluorescent protein (N\u00e4gerl et al., 2008; Ch\u00e9reau et al., 2015; Berning et al., 2012; Yuste and Bonhoeffer, 2004; Testa et al., 2012; T\u00f8nnesen et al., 2014).\n\nTo overcome this shortcoming, we previously reported the generation of rsEGFP2 (Grotjohann et al., 2012), a very photostable reversibly switchable fluorescent protein (RSFP). The green fluorescent rsEGFP2 can be reversible photo-switched between a fluorescent 'On-'\u00a0and a non-fluorescent 'Off-'state with light of ~405 nm and ~488 nm. rsEGFP2 was designed to be used within the framework of live-cell RESOLFT (reversible saturable optical fluorescence transition) nanoscopy (Hell et al., 2004; Brakemann et al., 2011; Grotjohann et al., 2011). In its initial application, however, rsEGFP2 was only used to study sub-cellular dynamics in single-layered cultivated cells (Grotjohann et al., 2012).\n\nAs detailed elsewhere (Hell, 2009), in RESOLFT nanoscopy, a light pattern such as a 'doughnut' featuring an intensity zero at is center is scanned across the sample. Several variations of RESOLFT microscopy have been established, including single-beam and parallelized scanning approaches (Brakemann et al., 2011; Chmyrov et al., 2013; Grotjohann et al., 2011). The RESOLFT principle using RSFPs has also been extended to nonlinear structured illumination microscopy (PA NL-SIM) (Li et al., 2015) and light sheet microscopy (Hoyer et al., 2016). In RESOLFT, the scanned light pattern typically induces the transition into the Off-state, so that the On-state molecules are confined to a sub-diffraction volume. RESOLFT nanoscopy stands out from all other far-field super-resolution microscopies that overcome the diffraction barrier by the relatively low light dose that is required to achieve nanoscale resolution. The light intensities used are up to six orders of magnitude lower than those in STED-microscopy (Klar et al., 2000) and are comparable to those typically applied in live-cell confocal fluorescence microscopy (W\u00e4ldchen et al., 2015). Likewise, the total light dose impinging on the sample is lower by 3\u20134 orders of magnitude compared to stochastic single-molecule based nanoscopy approaches (Grotjohann et al., 2012). Furthermore, when implemented in a beam scanning approach, RESOLFT can be combined with confocal detection, which is particularly suitable for the imaging of highly fluorescent tissues because it rejects the out-of-focus fluorescence. Altogether, this suggests that RESOLFT microscopy is particularly suitable for live-cell imaging of complex samples such as tissues.\n\nStill, to our knowledge, neither RESOLFT nor any other diffraction-unlimited super-resolution microscopy approach has so far been used to image subcellular details in living transgenic animals ubiquitously expressing a fusion protein. In this study we demonstrate live-cell RESOLFT nanoscopy on living transgenic fly tissues and intact larvae whose microtubule network was labelled in all cells by ubiquitously expressing rsEGFP2 fused to \u03b1-tubulin.\n\n## Results\n\n### Generation of transgenic flies expressing rsEGFP2-\u03b1-tubulin\n\nIn order to enable RESOLFT nanoscopy of living Drosophila melanogaster, we generated flies expressing rsEGFP2-\u03b1-tubulin ubiquitously under the transcriptional control of the ubiquitin 68E promotor ensuring moderate expression levels of the fusion protein. Confocal images of resected tissues from transgenic adult flies revealed a large variation of the arrangement of the microtubule cytoskeleton depending on the cell type (Figure 1A\u2013J). At 25\u00b0C, the half-time of the life span of these flies was ~41 days, similar to the isogenic wild type strain. The flies were propagated for more than 50 generations without detecting any loss in fitness. The fact that even during oogenesis and spermatogenesis the microtubule network was labelled (Figure 1D,E) suggests no adverse effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin on the embryogenesis and demonstrates the versatility of rsEGFP2 as a live-cell label. Western blots of larval protein extracts probed with antiserum against \u03b1-tubulin demonstrated that the fusion protein was expressed at moderate levels, so that the ratio of endogenous \u03b1-tubulin to rsEGFP2-\u03b1-tubulin was about 3:1 (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig1-v1.jpg)\n\n**Figure 1.:** Confocal recordings of living resected tissues of transgenic wandering third instar larvae (A\u2013C, F\u2013J) and of adult flies (D,E) ubiquitously expressing rsEGFP2-\u03b1-tubulin. (A) Body wall attachment site, (B) eye imaginal disc, (C) salivary glands, (D) sperm, (E) ovaries, (F) intestinal muscles, (G) intestine, (H) salivary duct, (I) salivary duct, (J) body wall muscles. Images display raw data. Scale bars: 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Protein lysates of dissected Oregon R (wild type control) and rsEGFP2-\u03b1-tubulin expressing Drosophila larvae were decorated with antisera against \u03b1-tubulin and GFP. As a loading control, the blots were decorated with an antiserum against actin.\n\nTogether, we generated a stable transgenic fly line ubiquitously expressing rsEGFP2-\u03b1-tubulin in all tissues specifically highlighting the microtubule cytoskeleton without interfering with the fly fitness.\n\n### RESOLFT nanoscopy of resected fly tissues\n\nIn order to investigate the use of RESOLFT nanoscopy for imaging subcellular structures in living resected fly tissues, we prepared various tissues from adult files and maintained the tissues in Schneider\u2019s cell culture medium under the coverslip to ensure the viability of the cells. Images were recorded using a beam-scanning RESOLFT microscope. To unambiguously report the potential and current limitations of beam scanning RESOLFT, all microscopic images display only raw data with linear color maps and no background subtraction throughout the manuscript. All color maps including the actual photon counts are given in Supplementary file 1. Deconvolution or any other mathematical image processing was not applied. To fairly compare a RESOLFT image with the best possible corresponding diffraction-limited image, we recorded the confocal image together with the RESOLFT image using the same pixel sizes and recording times by just omitting the switching off-step. We recorded RESOLFT images of various tissues including body wall muscles (Figure 2A\u2013C) and salivary glands (Figure 2\u2014figure supplement 1), demonstrating a distinct improvement in resolution compared to the corresponding confocal images. The increased resolution is well exemplified in body wall muscle cells, where microtubules are frequently co-aligned over relatively long distances (Figure 2B,C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig2-v1.jpg)\n\n**Figure 2.:** (A) Comparison of confocal and RESOLFT recordings taken on body wall muscles of a larva expressing rsEGFP2-\u03b1-tubulin. (B,C) Magnifications of the areas indicated in (A). (D) RESOLFT and corresponding confocal images were taken at the indicated depths on body wall muscles of a dissected third instar larva ubiquitously expressing rsEGFP2-\u03b1-tubulin. All images display raw data. Scale bars: 1 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Comparison of confocal and RESOLFT recordings taken on resected salivary glands from a larva expressing rsEGFP2-\u03b1-tubulin. (B) Line profiles taken at the positions as indicated in (A). The data points represent an average of three adjacent (25 nm distance) measurements. The averaged data were fitted with a Lorentzian function (solid line). The FWHM was determined on the fitted function. Scale bar: 1\u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Dissected living body wall muscles of a Drosophila melanogaster larva ubiquitously expressing rsEGFP2-\u03b1-tubulin were imaged. We recorded 14 RESOLFT images with 250 nm axial distance between each image. (A) Confocal overview. The image was recorded at the center plane (z = 0) of the RESOLFT image stack. (B) RESOLFT and corresponding confocal image of the 3D stack recorded at z = -0.5 \u00b5m. (C) Maximum intensity projection of the recorded volume displayed in the xy-view. The color coding shows the relative z-position of the microtubule filaments within the recorded volume. (A,B) display raw data, (C) displays raw data smoothed with 1.2 pixel wide Gaussian. See\u00a0Video 1. Scale bars: 2 \u00b5m (A), and 500 nm (B,C).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** This configuration of the microscope improves the optical resolution along all three directions. Dissected living body wall muscles of a Drosophila melanogaster larva ubiquitously expressing rsEGFP2-\u03b1-tubulin were imaged. The imaged volume has a size of 8.5 \u00b5m x 6.8 \u00b5m x 2 \u00b5m. Large image: Maximum intensity projection of the RESOLFT image stack in the xy view. The color coding shows the relative z-position of the microtubule filaments within the recorded volume. Small images: xz and yz sections at the positions indicated in the large image. Images display raw data smoothed with 1.2 pixel wide Gaussian. See\u00a0Video 2. Scale bars: 1 \u00b5m.\n\nIn order to quantify the attained resolution in the RESOLFT images, we measured the diameter of the rsEGFP2-\u03b1-tubulin labeled microtubules by averaging three (Figure 2\u2014figure supplement 1) or ten (Figure 3\u2014figure supplement 1) neighboring intensity profiles, each separated by the edge length of a pixel, across a single filament. This approach excludes the occurrence of erroneous small resolution values, which otherwise may arise from statistical outliers in the signal intensity of individual pixels. The full width at half maximum (FWHM) of these line profiles was determined by fitting a Lorentz curve to the measured data. The FWHM values were consistently around 50\u201360 nm (Figure 2\u2014figure supplement 1B; Figure 3\u2014figure supplement 1), which represents an ~4-fold improvement over the diffraction limited resolution.\n\nSo far, the RESOLFT microscope was used in the 2D mode, i.e. the optical resolution was improved only in the lateral plane, whereas in the axial direction it was diffraction limited. The confocal detection allows optical sectioning of the tissue. To make use of this property, we recorded 14 RESOLFT images of resected body wall muscle tissue with 250 nm axial distance between each image. Thereby one can track individual microtubules in the tissue volume (Figure 2\u2014figure supplement 2; Video 1), albeit at relatively poor axial resolution. In order to track the microtubules more reliably in 3D, we replaced the 2D-doughnut by a 3D-doughnut, which confines the On-state rsEGFP2 molcules in all room directions, thus increasing the resolution along the x,y, and z-axes. Using this we imaged 33 RESOLFT images in a 2 \u00b5m thick volume element with an ~4 fold improved axial resolution (Figure 2\u2014figure supplement 3;\u00a0Video 2).\n\n![Video 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-media1.mp4.jpg)\n\n**Video 1.:** The axial resolution was diffraction limited (confocal detection). Dissected living body wall muscles of a Drosophila melanogaster larva ubiquitously expressing rsEGFP2-\u03b1-tubulin were imaged. The imaged volume has a size of 4.2 \u00b5m x 3.9 \u00b5m x 3.5 \u00b5m.\u00a0We recorded 14 RESOLFT images with 250 nm axial distance between each image. The 3D reconstruction was generated using the program ImageJ with the plugin 3D Project. See Figure 2\u2014figure supplement 2.\n\n![Video 2.](https://cdn.elifesciences.org/articles/15567/elife-15567-media2.mp4.jpg)\n\n**Video 2.:** This configuration of the microscope improved the optical resolution along all three directions. Dissected living body wall muscles of a Drosophila melanogaster larva ubiquitously expressing rsEGFP2-\u03b1-tubulin were imaged. The imaged volume has a size of 8.5 \u00b5m x 6.8 \u00b5m x 2 \u00b5m. We recorded 33 RESOLFT images with 60 nm axial distance between each image. The 3D reconstruction was generated using the program ImageJ with the plugin 3D Project. See Figure 2\u2014figure supplement 3.\n\nWe conclude that RESOLFT nanoscopy facilitates sub-diffraction imaging in living resected tissues to visualize structures not accessible by conventional microscopy.\n\n### RESOLFT imaging within the tissue\n\nImaging resected tissues has the advantage that the cells of interest are typically in the top layers of the tissue, simplifying the recordings. In order to evaluate the strength of 2D-RESOLFT microscopy for imaging of sub-cellular structures buried in a highly fluorescent and scattering tissue, a wandering third instar larvae ubiquitously expressing rsEGFP2-\u03b1-tubulin was cut into half and the inverted front half of the larva was mounted in physiological Schneider\u2019s cell culture medium. We equipped the microscope with a silicone oil immersion objective in order to match the refractive index of the tissue. Still, the confocal images exhibited reduced signal-to-noise ratios already at an imaging depth of 10 \u00b5m due to the pronounced scattering in the tissue. This undesirable effect strengthened with increasing imaging depths such that at an imaging depth of 42 \u00b5m the rsEGFP2-\u03b1-tubulin labeled microtubules were barely discernible when imaged in the confocal mode (Figure 2D).\n\nUsing RESOLFT nanoscopy, the highest attainable resolution and the best signal-to-noise ratio were recorded in the top layer of the opened larvae (Figure 2D). However, also at deeper cell layers, we resolved individual microtubule filaments with a substantially better signal-to-noise ratio than in the confocal case. We attribute this advantage of RESOLFT to the beneficial effect of transferring the rsEGFP2 molecules outside of the focus to a non-fluorescent state before probing the fluorescence, thus improving the contrast.\u00a0The resolution decreased with the penetration depth, but was always better than in the corresponding confocal images. Hence the RESOLFT mode allows retrieving image information deep within scattering and highly fluorescent tissue that is inaccessible by confocal microscopy.\n\n### In vivo RESOLFT nanoscopy of larvae\n\nLiving intact Drosophila larvae are difficult samples for fluorescence microscopy, not only because of their challenging optical properties, but also because of their frequent irregular movements and the cuticle induced light scattering. Moreover, in samples that express the fusion proteins in all cells, very pronounced out-of-focus fluorescence may occur. To enable RESOLFT microscopy in intact larvae, living rsEGFP2-\u03b1-tubulin expressing second instar larvae were placed between two spacers that separated the object slide and the cover glass, forming a cavity filled with Schneider\u2019s cell culture media (Figure 3A). By this, the overall movements of the larvae were largely restrained, although movements of body muscles still occurred. For RESOLFT imaging, we focused through the intact larval cuticle into the underlying tissue without any further treatment of the larvae. Despite the occasional movements of the larvae, we could reliably record RESOLFT images of the microtubule network in these intact animals. Co-aligned microtubules that were fully blurred in the corresponding confocal images could be resolved (Figure 3B\u2013D). As in resected tissues, the measured resolution in the intact larvae was also \u226460 nm (Figure 3E; Figure 3\u2014figure supplement 1), despite the fact that we were focusing through the opaque cuticle into tissue. We conclude that RESOLFT imaging is feasible even on living larvae expressing rsEGFP2-fusion proteins without removing the cuticle and thus leaving the larvae entirely intact.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig3-v1.jpg)\n\n**Figure 3.:** (A) Living second instar larva expressing rsEGFP2-\u03b1-tubulin were placed under a coverslip between two spacers in Schneider\u2019s medium. (B) Confocal overview imaged through the cuticle of the larva. (C) Confocal (top) and corresponding RESOLFT (bottom) image of the area indicated in (B). (D) Top: Magnifications of the areas indicated in (C). Bottom: Line profiles taken at the indicated positions. The data points represent an average of three adjacent (25 nm distance) measurements. (E) Line profiles taken at the positions indicated in (C). The data points represent an average of three adjacent (25 nm distance) measurements. The averaged data were fitted with a Lorentzian function (solid line). The FWHM was determined on the fitted function. See also (Figure 3\u2014figure supplement 1). Images display raw data. Scale bars: 10 \u00b5m (B), 1 \u00b5m (C), and 500 nm (D).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** RESOLFT recording taken on an intact living second instar larva expressing rsEGFP2-\u03b1-tubulin. Ten line profiles were taken at each indicated position. The data points represent an average of ten adjacent measurements (20 nm distance between each measurement). The averaged data were fitted with a Lorentzian function (solid line) and the FWHM was determined on the fit. Scale bar: 1 \u00b5m.\n\n### Time-lapse RESOLFT nanoscopy\n\nNext, we imaged the dynamical change of the microtubule network over time with high spatial resolution. Over a large field of view of 552 \u00b5m2, we imaged dissected\u00a0larval body wall muscles continuously for 2.5\u2009hr in the RESOLFT mode, thereby recording 40 RESOLFT images (Figure 4A, Video 3). At the end of the recording, the microtubules still displayed alternating periods of growth and shrinkage. During this extended imaging period we observed no obvious signs of cellular distress, neither in the recorded area nor in the surrounding cells, despite recognizable photobleaching (Figure 4\u2014figure supplement 1). To follow the growth and depolymerization of individual microtubules, we reduced the field of view to 52 \u00b5m2 and adapted the imaging conditions to record a single RESOLFT image in 9.3 s (Figure 4B, Video 4). At this frame rate we recorded 40 RESOLFT images, facilitating the tracking of microtubule dynamics. Hence RESOLFT microscopy can be utilized for time-lapse recordings of dynamic sub-cellular processes in highly fluorescent tissues.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig4-v1.jpg)\n\n**Figure 4.:** (A) First five of in total 40 RESOLFT image frames of dissected larva tissue expressing rsEGFP2-\u03b1-tubulin. Images were continuously recorded. Recording time of one frame: 227 s. Top: RESOLFT overview; bottom: Magnifications of the areas indicated. (B) Time lapse RESOLFT imaging with high frame rate. Selected frames of in total 40 frames recorded on body wall muscles are displayed. Recording time of one frame: 9.3 s. Data are also represented in Videos 3 and 4. All images display raw data. Scale bars: 5 \u00b5m (A, top row) and 1 \u00b5m (A, bottom row, and B).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15567/elife-15567-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Imaging was performed on body wall muscles of a dissected Drosophila melanogaster larva expressing rsEGFP2-\u03b1-tubulin. The RESOLFT time-lapse recording (151.2 min of continuous recording) was performed in the central part (23 \u00b5m x 24 \u00b5m) of the shown overview image. The displayed confocal overview images were recorded before and after the time-lapse recording. Scale bar: 10 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/15567/elife-15567-media3.mp4.jpg)\n\n**Video 3.:** 40 RESOLFT image frames were continuously recorded. Recording time of one frame: 227 s. The video displays 4 frames per second. Corresponding still images are shown in Figure 4A. Scale bar: 2.5 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/15567/elife-15567-media4.mp4.jpg)\n\n**Video 4.:** 40 RESOLFT image frames were continuously recorded. Recording time of one frame: 9.3 s. The video displays 4 frames per second. Corresponding still images are shown in Figure 4B. Scale bar: 1 \u00b5m.\n\n## Discussion\n\nIn previous RESOLFT studies, live cell recordings of only single cells were reported (Tiwari et al., 2015, Duw\u00e9 et al., 2015; El Khatib et al., 2016; Brakemann et al., 2011; Grotjohann et al., 2011). We extended the use of rsEGFP2 (Grotjohann et al., 2012) to in vivo RESOLFT imaging of tissues and larvae.\n\nDuring this study we did not observe detrimental effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin fusion proteins to the flies. Importantly, we also did not observe phototoxic effects during imaging. We attribute this to the relatively low light intensities required in RESOLFT nanoscopy to overcome the diffraction barrier. Moreover, because of the utilized scanning approach, the individual irradiation times are short and consequently the overall light dose deposited in the imaged volume is small. Nonetheless, the light intensities in RESOLFT microscopy are still higher than what is sometimes regarded as critical intensity threshold in long-term imaging to follow developmental processes over hours or even days (Stelzer, 2015). It should be noted, however, that in in vivo RESOLFT microscopy, typically only a very small part of the sample organism is imaged, whereas the remaining parts are not illuminated. Generally, the phototoxic effects that manifest themselves after the actual experiment are irrelevant as long as the cellular dynamics during the imaging are not disturbed.\n\nThe relatively low light intensities required for RESOLFT nanoscopy and the flexibility of the method offer additional freedom in the choice between resolution and recording time: In RESOLFT nanoscopy, the attained resolution can be adjusted so that, for example, the resolution is decreased in favor of reduced phototoxicity, increased recording speed, or the number of images taken before bleaching. Although in this manuscript we only show raw image data, the RESOLFT data could be deconvolved to increase the contrast and resolution even further if required. As shown here, the RESOLFT modality offers the benefit of allowing to image deeper in tissue. This observation relys on the fact that fluorescence from outside the focal region is precluded because the molecules located in that region are transferred into a non-fluorescent state; their signal cannot perturb the image.\n\nSince the release of rsEGFP2 in 2012 (Grotjohann et al., 2012), a number of novel switchable fluorescent proteins have been reported. Of these, the rsEGFP/rsEGFP2 variants rsFolder (El Khatib et al., 2016), rsGreen (Duw\u00e9 et al., 2015), and rsEGFP-N205S (Chmyrov et al., 2013), the red fluorescent rsCherryRev1.4 (Lavoie-Cardinal et al., 2014), and the positive switching Kohinoor (Tiwari et al., 2015) have been successfully used in RESOLFT nanoscopy. Also organic dyes were used in this concept (Kwon et al., 2015). Still, for the applications shown in this manuscript, namely beam scanning RESOLFT nanoscopy in tissues, rsEGFP2 seems to unite the necessary properties in the most suitable combination. Although rsEGFP2 dramatically outperforms earlier RSFPs such as Dronpa (Ando et al., 2004) or rsEGFP (Grotjohann et al., 2011), we expect generation of superior RSFPs in the future that are even more photostable, brighter, and exhibit better contrast.\n\nWe conclude that with the ongoing developments both on RSFPs as well as on instrumentation, it can be anticipated that the application range of low light RESOLFT nanoscopy in Drosophila as well as in other multicellular organism will be further expanded in the future.\n\n## Materials and methods\n\n### Cloning and fly generation\n\nA synthetic gene sequence encoding the fluorescent protein rsEGFP2 (GenBank #AGE84598.1) attached to the N-terminus of the \u03b1-tubulin 84B (cg1913, UniProt #P06603) protein was synthesized. The DNA was cloned into an attB-containing fly transformation vector under the control of the Ubiquitin p63E promotor-region (3L; 3901762 to 3903743). To generate transgenic flies, a standard phiC31 integrase based germ line transformation procedure was followed, targeting the landing site M{3xP3-RFP.attP}ZH-86Fb using Bloomington stock #24749 (Bischof et al., 2007).\n\n### RESOLFT and conventional microscopy\n\nRESOLFT nanoscopy was performed using a modified 1C RESOLFT QUAD Scanning microscope (Abberior Instruments, Goettingen, Germany). For RESOLFT imaging of Drosophila melanogaster, the following switching scheme was applied to the sample at each scanning position: First, rsEGFP2 proteins were switched into the on-state with light of 405 nm. Second, rsEGFP2 proteins in the periphery of the focal spot were switched off using a 488 nm doughnut-shaped beam. The 2D-doughnut was realized by using a phase plate, whereas the 3D-doughnut was generated by using a spatial light modulator. Third, on-state fluorophores at the center of the spot were read out with a Gaussian shaped beam of 488 nm light. We introduced a short 5 \u00b5s break between each step. The RESOLFT images were recorded with or without line accumulation depending on the signal intensity. A detailed listing of the laser powers, switching times, line accumulations and scanning step sizes of all RESOLFT images shown are provided in Supplementary file 2. The corresponding confocal images were recorded by applying the same switching scheme as used for the RESOLFT imaging without the illumination step using a doughnut shaped beam (step 2).\n\n### Data analysis and image manipulation\n\nAll fluorescence images presented in this work are raw data, neither background subtraction nor any other image data processing has been applied. For the determination of the FWHM, three or ten averaged adjacent line profiles were fitted (standard Lorentz-fit) using Origin 9.1 software.\n\n### Sample preparation\n\nTissues from wandering third instar larvae were dissected in Schneider\u2019s cell culture medium (Life Technologies, Carlsbad, California USA) supplemented with 10% Fetal Bovine Serum (FBS) and mounted under a coverslip in Schneider\u2019s cell culture medium supplemented with 10% FBS. For imaging of intact larvae, second instar larvae were placed between two spacers in Schneider\u2019s medium and covered with a coverslip. The samples were sealed using nontoxic duplicating silicone (Picodent, Wipperfuerth, Germany).\n\n### Western blotting\n\nWandering third instar larvae were dissected in 1x PBS to remove the fat tissue before they were homogenized in protein extraction buffer (10% Glycerol, 50\u2009mM HEPES (pH 7,5), 150\u2009mM NaCl, 0,5% Triton-X-100, 1,5\u2009mM MgCl2, 1\u2009mM EGTA) containing protease inhibitors. Lysate was centrifuged to pellet cellular debris. The supernatant was transferred to a new Eppendorf tube and mixed with Laemmli Buffer (Sigma-Aldrich, St. Louis, Missouri, USA) and denatured for 10 min at 95\u00b0C before loading onto a SDS-polyacrylamide gel. The protein-lysate of approximately two larvae was loaded into each lane of the gel. The SDS gel was blotted using a semi-dry blotter onto a PVDF membrane. The protein-blot was blocked using 5% fat free milk powder dissolved in 1x PBS for 1\u2009hr. The polyclonal \u03b1-tubulin antiserum (Abcam, Cambridge, England) and the anti-GFP antibody (Clonetech) were used in a concentration of 1:5000 in 2,5% fat free milk powder dissolved in 1x PBS for 1\u2009hr. HRP-conjugated secondary antibody (Jackson ImmunoResearch, Suffolk, UK) was used at a dilution of 1:10.000 in 2,5% fat free milk powder dissolved in 1x PBS for 1\u2009hr and detected with an ECL-kit (Perkin Elmer Life Science, Massachusetts, USA) using a custom built imaging system with a CCD-camera.\n",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "f9499c03-0a2a-433b-a8a7-db558f96a622",
+      "submission_id": "5c3df300-7522-45ca-a771-c402e6811f13",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15567.019](https://doi.org/10.7554/eLife.15567.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"In vivo super-resolution RESOLFT microscopy of Drosophila melanogaster\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. One of the two reviewers, Kyu Young Han, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nCurrent fluorescence nanoscopy methods allow visualizing sub-cellular structures with unprecedented resolution. However, in vivo fluorescence nanoscopy has been challenging because it requires fast imaging speed and minimal photodamage. In this aspect, RESOLFT nanoscopy is a very promising tool due to its low dosage of illumination although its imaging speed is somewhat slower than STED microscopy. RESOLFT uses lower doses than STED as well as PALM/STORM techniques and filters out out-of-focus light with the pinhole of the confocal scanning geometry. This combination, in concert with fluorescent proteins, makes it the best-suited super-resolution technique for in vivo imaging. In this manuscript, the authors present significant advances over their 2012 eLife publication on the development of rsEGFP2 as a genetically encodable RESOLFT probe and its application in live-cell RESOLFT nanoscopy.\n\nThey demonstrate (i) a successful preparation of transgenic Drosophila melanogaster stably expressing RSFP-tubulin, and (ii) the extension of applications of RESOLFT nanoscopy to fruit fly tissue sections, deep tissue imaging (> 40 um) and imaging of intact embryo, which are almost impossible for most of fluorescence nanoscopy. The manuscript is written concisely, is easy to understand and the results are presented transparently. The experiments were executed beautifully. The work represents an important milestone in the development of super-resolution microscopy.\n\nEssential revisions:\n\n1) We understand 3D imaging is not a main part of this manuscript. However, a volumetric imaging is essential to visualize three-dimensional distributions of fluorescent markers of interest in tissues. We request adding 3D RESOLFT images of small volume as supplementary data. If it is not viable, please specify its reason in the main text.\n\n2) Since the introduction of RSFP by Grotjohann in 2011, there has been significant progress in the development of diverse RSFP. The authors need to elaborate on this at Discussion section.\n\n3) In terms of temporal and spatial resolution, RESOLFT nanoscopy is in competition with the recently demonstrated photoactivatable nonlinear SIM (PA NL-SIM) microscopy [Li et al., Science (2015)]. Although they imaged cultured cells in that paper, it looks straightforward to apply it for tissue imaging. How would you compare the current RESOLFT nanoscopy with PA NL-SIM microscopy for in vivo imaging? It would be great to briefly address it in the main text.\n",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83d92a8d-dee8-47a5-aea0-3e7ef93b45ef",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C1",
+      "claim": "RESOLFT nanoscopy requires relatively low light levels to overcome the diffraction barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "RESOLFT nanoscopy is particularly suited for live cell imaging because it requires relatively low light levels to overcome the diffraction barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characteristic of RESOLFT nanoscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "52841c2b-9e81-4575-9c6a-64a0d8ec6fd2",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C2",
+      "claim": "rsEGFP2 was previously introduced as a reversibly switchable fluorescent protein that facilitated fast RESOLFT nanoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we introduced the reversibly switchable fluorescent protein rsEGFP2, which facilitated fast RESOLFT nanoscopy (Grotjohann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Grotjohann et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "1adbf5d0-e6da-4886-aa55-9ad4e6a85d76",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C3",
+      "claim": "The study generated flies expressing fusion proteins of alpha-tubulin and rsEGFP2 highlighting the microtubule cytoskeleton in all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated flies expressing fusion proteins of alpha-tubulin and rsEGFP2 highlighting the microtubule cytoskeleton in all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of what was done in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "969f23a3-86a5-4960-a0d1-38f9cd88e20f",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C4",
+      "claim": "By focusing through the intact larval cuticle, lateral resolution of <60 nm was achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "By focusing through the intact larval cuticle, we achieved lateral resolution of <60 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the resolution achieved, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "617e1e1e-8f40-4458-97d9-c49366b66e21",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C5",
+      "claim": "RESOLFT nanoscopy enabled time-lapse recordings comprising 40 images.",
+      "claim_type": "EXPLICIT",
+      "source": "RESOLFT nanoscopy enabled time-lapse recordings comprising 40 images and facilitated recordings 40 \u00b5m deep within fly tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "e9188f50-76e0-4a30-900c-7c0ee2e332ee",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C6",
+      "claim": "RESOLFT nanoscopy facilitated recordings 40 \u00b5m deep within fly tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "RESOLFT nanoscopy enabled time-lapse recordings comprising 40 images and facilitated recordings 40 \u00b5m deep within fly tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "347a1d77-fb8b-452a-89fd-92902a24b2b1",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C7",
+      "claim": "Nanoscopy of thick specimen is mostly performed on optically transparent samples such as cleared and fixed tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, nanoscopy of thick specimen is mostly performed on optically transparent samples such as cleared and fixed tissue (Stelzer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stelzer, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8a70ef5a-a0c5-4f1e-9809-2bf2dba53c03",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C8",
+      "claim": "The relatively few reported examples of nanoscopy in living tissues typically relied on specimen in which individual cells overexpressed a fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively few reported examples of nanoscopy in living tissues typically relied on specimen in which individual cells overexpressed a fluorescent protein (N\u00e4gerl et al., 2008; Ch\u00e9reau et al., 2015; Berning et al., 2012; Yuste and Bonhoeffer, 2004; Testa et al., 2012; T\u00f8nnesen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "1dddbd97-3353-4d38-a8f1-d2b22f12749e",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C9",
+      "claim": "rsEGFP2 is a very photostable reversibly switchable fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this shortcoming, we previously reported the generation of rsEGFP2 (Grotjohann et al., 2012), a very photostable reversibly switchable fluorescent protein (RSFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct characterization of rsEGFP2 with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "059bc9b1-7bca-4f26-9ebd-684ab73380cb",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C10",
+      "claim": "The green fluorescent rsEGFP2 can be reversibly photo-switched between a fluorescent 'On-' and a non-fluorescent 'Off-'state with light of ~405 nm and ~488 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The green fluorescent rsEGFP2 can be reversible photo-switched between a fluorescent 'On-' and a non-fluorescent 'Off-'state with light of ~405 nm and ~488 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the optical properties of rsEGFP2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "77093cb7-5233-4126-b7e6-6c02e9b13088",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C11",
+      "claim": "rsEGFP2 was designed to be used within the framework of live-cell RESOLFT nanoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "rsEGFP2 was designed to be used within the framework of live-cell RESOLFT (reversible saturable optical fluorescence transition) nanoscopy (Hell et al., 2004; Brakemann et al., 2011; Grotjohann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the design purpose of rsEGFP2, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "58eb87d8-6e1d-490a-a83f-d49f7b5f3b0a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C12",
+      "claim": "In its initial application, rsEGFP2 was only used to study sub-cellular dynamics in single-layered cultivated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In its initial application, however, rsEGFP2 was only used to study sub-cellular dynamics in single-layered cultivated cells (Grotjohann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the initial application study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "0dd50895-b58e-405a-a48e-caf2140302f0",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C13",
+      "claim": "The light intensities used in RESOLFT are up to six orders of magnitude lower than those in STED-microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The light intensities used are up to six orders of magnitude lower than those in STED-microscopy (Klar et al., 2000) and are comparable to those typically applied in live-cell confocal fluorescence microscopy (W\u00e4ldchen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison statement supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "eef89fd1-6978-438e-90ae-0d8bbfdf4718",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C14",
+      "claim": "The light intensities used in RESOLFT are comparable to those typically applied in live-cell confocal fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The light intensities used are up to six orders of magnitude lower than those in STED-microscopy (Klar et al., 2000) and are comparable to those typically applied in live-cell confocal fluorescence microscopy (W\u00e4ldchen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison statement supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "c5aeeed8-703b-4c60-9c69-e0da83f9ceb8",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C15",
+      "claim": "The total light dose impinging on the sample in RESOLFT is lower by 3\u20134 orders of magnitude compared to stochastic single-molecule based nanoscopy approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the total light dose impinging on the sample is lower by 3\u20134 orders of magnitude compared to stochastic single-molecule based nanoscopy approaches (Grotjohann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "d423c51c-0fc6-4fc7-b619-a95480438d61",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C16",
+      "claim": "RESOLFT can be combined with confocal detection when implemented in a beam scanning approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when implemented in a beam scanning approach, RESOLFT can be combined with confocal detection, which is particularly suitable for the imaging of highly fluorescent tissues because it rejects the out-of-focus fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the technical capabilities of RESOLFT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "3ec17b62-b8e1-4970-9dde-b10404b2894a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C17",
+      "claim": "Confocal detection is particularly suitable for the imaging of highly fluorescent tissues because it rejects the out-of-focus fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when implemented in a beam scanning approach, RESOLFT can be combined with confocal detection, which is particularly suitable for the imaging of highly fluorescent tissues because it rejects the out-of-focus fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the advantage of confocal detection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "5c585504-9dac-4730-892f-c717ac1fadfe",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C18",
+      "claim": "RESOLFT microscopy is particularly suitable for live-cell imaging of complex samples such as tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that RESOLFT microscopy is particularly suitable for live-cell imaging of complex samples such as tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding technical characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "229e5686-df42-4506-82cc-51a5818232cb",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C19",
+      "claim": "Neither RESOLFT nor any other diffraction-unlimited super-resolution microscopy approach has so far been used to image subcellular details in living transgenic animals ubiquitously expressing a fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, to our knowledge, neither RESOLFT nor any other diffraction-unlimited super-resolution microscopy approach has so far been used to image subcellular details in living transgenic animals ubiquitously expressing a fusion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8ec6019a-f151-441e-9f08-0f92efdf61d7",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C20",
+      "claim": "The study demonstrates live-cell RESOLFT nanoscopy on living transgenic fly tissues and intact larvae whose microtubule network was labelled in all cells by ubiquitously expressing rsEGFP2 fused to \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we demonstrate live-cell RESOLFT nanoscopy on living transgenic fly tissues and intact larvae whose microtubule network was labelled in all cells by ubiquitously expressing rsEGFP2 fused to \u03b1-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of what was demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "a066ec0c-997b-4b69-aef9-ecd5d48771a8",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C21",
+      "claim": "Flies expressing rsEGFP2-\u03b1-tubulin were generated under the transcriptional control of the ubiquitin 68E promotor ensuring moderate expression levels of the fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to enable RESOLFT nanoscopy of living Drosophila melanogaster, we generated flies expressing rsEGFP2-\u03b1-tubulin ubiquitously under the transcriptional control of the ubiquitin 68E promotor ensuring moderate expression levels of the fusion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "88314865-d48e-4c49-8f8c-8ae95c86ffd5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C22",
+      "claim": "Confocal images of resected tissues from transgenic adult flies revealed a large variation of the arrangement of the microtubule cytoskeleton depending on the cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal images of resected tissues from transgenic adult flies revealed a large variation of the arrangement of the microtubule cytoskeleton depending on the cell type (Figure 1A\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "bbc1cc29-f907-4ece-8067-9baa7a6591dd",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C23",
+      "claim": "At 25\u00b0C, the half-time of the life span of transgenic flies expressing rsEGFP2-\u03b1-tubulin was ~41 days, similar to the isogenic wild type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "At 25\u00b0C, the half-time of the life span of these flies was ~41 days, similar to the isogenic wild type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation comparing transgenic and wild-type flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "1417612b-d84f-4eab-b6e2-21e49d3384e6",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C24",
+      "claim": "The transgenic flies were propagated for more than 50 generations without detecting any loss in fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The flies were propagated for more than 50 generations without detecting any loss in fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "469a8df6-6096-4051-b906-c6a4f33fb54f",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C25",
+      "claim": "During oogenesis and spermatogenesis the microtubule network was labelled in transgenic flies expressing rsEGFP2-\u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that even during oogenesis and spermatogenesis the microtubule network was labelled (Figure 1D,E) suggests no adverse effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin on the embryogenesis and demonstrates the versatility of rsEGFP2 as a live-cell label.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "40de1f04-028d-4d6e-bc0a-ef0ce6e1674d",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C26",
+      "claim": "The labelling of the microtubule network during oogenesis and spermatogenesis suggests no adverse effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin on the embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that even during oogenesis and spermatogenesis the microtubule network was labelled (Figure 1D,E) suggests no adverse effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin on the embryogenesis and demonstrates the versatility of rsEGFP2 as a live-cell label.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that labelling occurs during these critical developmental stages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "538df6fd-5a32-43b1-9b36-c497a03c5329",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C27",
+      "claim": "The labelling of the microtubule network during oogenesis and spermatogenesis demonstrates the versatility of rsEGFP2 as a live-cell label.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that even during oogenesis and spermatogenesis the microtubule network was labelled (Figure 1D,E) suggests no adverse effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin on the embryogenesis and demonstrates the versatility of rsEGFP2 as a live-cell label.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that labelling occurs during these critical developmental stages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "2c375990-2c5a-4b85-a288-d6c11bbcecef",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C28",
+      "claim": "Western blots of larval protein extracts probed with antiserum against \u03b1-tubulin demonstrated that the fusion protein was expressed at moderate levels, so that the ratio of endogenous \u03b1-tubulin to rsEGFP2-\u03b1-tubulin was about 3:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots of larval protein extracts probed with antiserum against \u03b1-tubulin demonstrated that the fusion protein was expressed at moderate levels, so that the ratio of endogenous \u03b1-tubulin to rsEGFP2-\u03b1-tubulin was about 3:1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "bfcb681c-db7b-4d9e-bae4-8288b8924b56",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C29",
+      "claim": "A stable transgenic fly line ubiquitously expressing rsEGFP2-\u03b1-tubulin in all tissues specifically highlighting the microtubule cytoskeleton without interfering with the fly fitness was generated.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, we generated a stable transgenic fly line ubiquitously expressing rsEGFP2-\u03b1-tubulin in all tissues specifically highlighting the microtubule cytoskeleton without interfering with the fly fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "d249067f-1c53-4841-9864-b578f1b44327",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C30",
+      "claim": "RESOLFT images of various tissues including body wall muscles and salivary glands were recorded, demonstrating a distinct improvement in resolution compared to the corresponding confocal images.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded RESOLFT images of various tissues including body wall muscles (Figure 2A\u2013C) and salivary glands (Figure 2\u2014figure supplement 1), demonstrating a distinct improvement in resolution compared to the corresponding confocal images.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "4f19e3f4-f278-4567-acf4-9313a16fd016",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C31",
+      "claim": "The increased resolution in RESOLFT imaging is well exemplified in body wall muscle cells, where microtubules are frequently co-aligned over relatively long distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased resolution is well exemplified in body wall muscle cells, where microtubules are frequently co-aligned over relatively long distances (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "2b0d7b2b-a7fb-43ab-9be9-d59e9ac4a722",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C32",
+      "claim": "The FWHM values of rsEGFP2-\u03b1-tubulin labeled microtubules in RESOLFT images were consistently around 50\u201360 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The FWHM values were consistently around 50\u201360 nm (Figure 2\u2014figure supplement 1B; Figure 3\u2014figure supplement 1), which represents an ~4-fold improvement over the diffraction limited resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative measurements shown in Figure 2\u2014figure supplement 1B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8a0d8e80-0ab0-45d5-9f6c-ce1084abd1bc",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C33",
+      "claim": "The FWHM values of 50\u201360 nm represent an ~4-fold improvement over the diffraction limited resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The FWHM values were consistently around 50\u201360 nm (Figure 2\u2014figure supplement 1B; Figure 3\u2014figure supplement 1), which represents an ~4-fold improvement over the diffraction limited resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of RESOLFT resolution to diffraction-limited resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "05a269a0-670e-4b3a-9574-05c28696de39",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C34",
+      "claim": "14 RESOLFT images of resected body wall muscle tissue with 250 nm axial distance between each image were recorded to track individual microtubules in the tissue volume.",
+      "claim_type": "EXPLICIT",
+      "source": "To make use of this property, we recorded 14 RESOLFT images of resected body wall muscle tissue with 250 nm axial distance between each image. Thereby one can track individual microtubules in the tissue volume (Figure 2\u2014figure supplement 2; Video 1), albeit at relatively poor axial resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2\u2014figure supplement 2 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "ad0cec1a-2f6e-4974-bd0d-fa2f8f96b78b",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C35",
+      "claim": "The 2D-doughnut was replaced by a 3D-doughnut to increase the resolution along the x,y, and z-axes.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to track the microtubules more reliably in 3D, we replaced the 2D-doughnut by a 3D-doughnut, which confines the On-state rsEGFP2 molcules in all room directions, thus increasing the resolution along the x,y, and z-axes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the technical modification made.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "0afd62e0-4090-4b91-a614-562045f54ff8",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C36",
+      "claim": "Using the 3D-doughnut, 33 RESOLFT images in a 2 \u00b5m thick volume element with an ~4 fold improved axial resolution were imaged.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this we imaged 33 RESOLFT images in a 2 \u00b5m thick volume element with an ~4 fold improved axial resolution (Figure 2\u2014figure supplement 3; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2\u2014figure supplement 3 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "6ae84ed9-dd59-4d1d-a22a-16d469a701dc",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C37",
+      "claim": "RESOLFT nanoscopy facilitates sub-diffraction imaging in living resected tissues to visualize structures not accessible by conventional microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that RESOLFT nanoscopy facilitates sub-diffraction imaging in living resected tissues to visualize structures not accessible by conventional microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "ffbdb8db-1198-4b84-95b1-c4f17891459e",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C38",
+      "claim": "Confocal images exhibited reduced signal-to-noise ratios already at an imaging depth of 10 \u00b5m due to the pronounced scattering in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the confocal images exhibited reduced signal-to-noise ratios already at an imaging depth of 10 \u00b5m due to the pronounced scattering in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "59deb20d-05f7-45ba-94d9-4d3073189929",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C39",
+      "claim": "At an imaging depth of 42 \u00b5m the rsEGFP2-\u03b1-tubulin labeled microtubules were barely discernible when imaged in the confocal mode.",
+      "claim_type": "EXPLICIT",
+      "source": "This undesirable effect strengthened with increasing imaging depths such that at an imaging depth of 42 \u00b5m the rsEGFP2-\u03b1-tubulin labeled microtubules were barely discernible when imaged in the confocal mode (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "a5896a72-ac54-48e6-86f7-b4dedbf5a6a5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C40",
+      "claim": "Using RESOLFT nanoscopy, the highest attainable resolution and the best signal-to-noise ratio were recorded in the top layer of the opened larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RESOLFT nanoscopy, the highest attainable resolution and the best signal-to-noise ratio were recorded in the top layer of the opened larvae (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "06aa6aea-748a-49df-8b3a-9e7b4d52d28c",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C41",
+      "claim": "At deeper cell layers, RESOLFT resolved individual microtubule filaments with a substantially better signal-to-noise ratio than in the confocal case.",
+      "claim_type": "EXPLICIT",
+      "source": "However, also at deeper cell layers, we resolved individual microtubule filaments with a substantially better signal-to-noise ratio than in the confocal case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "ac3ce153-7028-49a5-8fae-46075d1a20e5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C42",
+      "claim": "The advantage of RESOLFT is attributed to the beneficial effect of transferring the rsEGFP2 molecules outside of the focus to a non-fluorescent state before probing the fluorescence, thus improving the contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this advantage of RESOLFT to the beneficial effect of transferring the rsEGFP2 molecules outside of the focus to a non-fluorescent state before probing the fluorescence, thus improving the contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism underlying the observed advantage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "11c5cc65-dd3a-4120-b98c-d02cb3fefcb5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C43",
+      "claim": "The resolution in RESOLFT decreased with the penetration depth, but was always better than in the corresponding confocal images.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution decreased with the penetration depth, but was always better than in the corresponding confocal images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "7475d231-ad6a-4791-84da-ed99196839b6",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C44",
+      "claim": "The RESOLFT mode allows retrieving image information deep within scattering and highly fluorescent tissue that is inaccessible by confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the RESOLFT mode allows retrieving image information deep within scattering and highly fluorescent tissue that is inaccessible by confocal microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "2cd1d59d-92e9-4a6b-871f-b52f43be9013",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C45",
+      "claim": "Living intact Drosophila larvae are difficult samples for fluorescence microscopy because of their challenging optical properties, frequent irregular movements, and the cuticle induced light scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "Living intact Drosophila larvae are difficult samples for fluorescence microscopy, not only because of their challenging optical properties, but also because of their frequent irregular movements and the cuticle induced light scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges of imaging intact larvae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "65a73d3a-0137-40ea-9033-7d865bf045c9",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C46",
+      "claim": "In samples that express the fusion proteins in all cells, very pronounced out-of-focus fluorescence may occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in samples that express the fusion proteins in all cells, very pronounced out-of-focus fluorescence may occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a potential imaging challenge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "57073452-982b-41f6-bf89-3515c5a5bf36",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C47",
+      "claim": "Living rsEGFP2-\u03b1-tubulin expressing second instar larvae were placed between two spacers that separated the object slide and the cover glass, forming a cavity filled with Schneider's cell culture media.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable RESOLFT microscopy in intact larvae, living rsEGFP2-\u03b1-tubulin expressing second instar larvae were placed between two spacers that separated the object slide and the cover glass, forming a cavity filled with Schneider's cell culture media (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the experimental method, illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "f21b945a-37e8-4335-93dc-a430d41df5cd",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C48",
+      "claim": "The overall movements of the larvae were largely restrained by the spacer setup, although movements of body muscles still occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "By this, the overall movements of the larvae were largely restrained, although movements of body muscles still occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "0c863a29-6ebd-4a42-a8f7-71807d7254ee",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C49",
+      "claim": "For RESOLFT imaging, the microscope was focused through the intact larval cuticle into the underlying tissue without any further treatment of the larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "For RESOLFT imaging, we focused through the intact larval cuticle into the underlying tissue without any further treatment of the larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "5ac45ee9-5c66-4d4a-ac39-78b0f7d6ecc0",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C50",
+      "claim": "Despite the occasional movements of the larvae, RESOLFT images of the microtubule network in intact animals could be reliably recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the occasional movements of the larvae, we could reliably record RESOLFT images of the microtubule network in these intact animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "bfa973f4-bf32-4b1d-ba49-21684d58b7ff",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C51",
+      "claim": "Co-aligned microtubules that were fully blurred in the corresponding confocal images could be resolved in RESOLFT images of intact larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-aligned microtubules that were fully blurred in the corresponding confocal images could be resolved (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "e0f3b12b-3409-480d-a72e-4048d6685baf",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C52",
+      "claim": "The measured resolution in the intact larvae was also \u226460 nm, despite the fact that imaging was done through the opaque cuticle into tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As in resected tissues, the measured resolution in the intact larvae was also \u226460 nm (Figure 3E; Figure 3\u2014figure supplement 1), despite the fact that we were focusing through the opaque cuticle into tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative measurements shown in Figure 3E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "321d7df8-2954-49a6-95c0-2a1d4d644d98",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C53",
+      "claim": "RESOLFT imaging is feasible even on living larvae expressing rsEGFP2-fusion proteins without removing the cuticle and thus leaving the larvae entirely intact.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that RESOLFT imaging is feasible even on living larvae expressing rsEGFP2-fusion proteins without removing the cuticle and thus leaving the larvae entirely intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "edc5defc-6564-4f59-9041-a1c74c2e9f02",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C54",
+      "claim": "Over a large field of view of 552 \u00b5m2, dissected larval body wall muscles were imaged continuously for 2.5 hr in the RESOLFT mode, thereby recording 40 RESOLFT images.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a large field of view of 552 \u00b5m2, we imaged dissected larval body wall muscles continuously for 2.5 hr in the RESOLFT mode, thereby recording 40 RESOLFT images (Figure 4A, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4A and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "cbb70e0b-fd32-4355-b4b8-383e36e36f78",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C55",
+      "claim": "At the end of the 2.5 hr recording, the microtubules still displayed alternating periods of growth and shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the recording, the microtubules still displayed alternating periods of growth and shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "0a782d88-1f07-4ae9-a2d3-17f0eab0207a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C56",
+      "claim": "During the extended imaging period no obvious signs of cellular distress were observed, neither in the recorded area nor in the surrounding cells, despite recognizable photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "During this extended imaging period we observed no obvious signs of cellular distress, neither in the recorded area nor in the surrounding cells, despite recognizable photobleaching (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of experimental observation, with supporting data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "efd8337c-fa12-462b-9a41-61ce97713a77",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C57",
+      "claim": "To follow the growth and depolymerization of individual microtubules, the field of view was reduced to 52 \u00b5m2 and the imaging conditions were adapted to record a single RESOLFT image in 9.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "To follow the growth and depolymerization of individual microtubules, we reduced the field of view to 52 \u00b5m2 and adapted the imaging conditions to record a single RESOLFT image in 9.3 s (Figure 4B, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the experimental approach, with supporting data in Figure 4B and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "e2fc45ae-7b6c-4765-8be5-b1badc52a342",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C58",
+      "claim": "At a frame rate of 9.3 s per image, 40 RESOLFT images were recorded, facilitating the tracking of microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "At this frame rate we recorded 40 RESOLFT images, facilitating the tracking of microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "0fbf483d-c1e4-4382-9324-351e25567a05",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C59",
+      "claim": "RESOLFT microscopy can be utilized for time-lapse recordings of dynamic sub-cellular processes in highly fluorescent tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence RESOLFT microscopy can be utilized for time-lapse recordings of dynamic sub-cellular processes in highly fluorescent tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "08952ec5-8f20-4bbe-b37f-991d0efb13a1",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C60",
+      "claim": "In previous RESOLFT studies, live cell recordings of only single cells were reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous RESOLFT studies, live cell recordings of only single cells were reported (Tiwari et al., 2015, Duw\u00e9 et al., 2015; El Khatib et al., 2016; Brakemann et al., 2011; Grotjohann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "84045b47-3b41-445d-89f7-9488309d354a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C61",
+      "claim": "The use of rsEGFP2 was extended to in vivo RESOLFT imaging of tissues and larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended the use of rsEGFP2 (Grotjohann et al., 2012) to in vivo RESOLFT imaging of tissues and larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of what was accomplished in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "e9c7cadc-3a20-4b8e-add1-9344bd4caded",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C62",
+      "claim": "No detrimental effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin fusion proteins to the flies were observed during this study.",
+      "claim_type": "EXPLICIT",
+      "source": "During this study we did not observe detrimental effects of the ubiquitous expression of rsEGFP2-\u03b1-tubulin fusion proteins to the flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8e9429b3-d2c6-4440-9553-622af3399a28",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C63",
+      "claim": "No phototoxic effects during imaging were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also did not observe phototoxic effects during imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "c7ea71ea-e55e-4b45-98ba-72118f4a3d52",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C64",
+      "claim": "The lack of phototoxic effects is attributed to the relatively low light intensities required in RESOLFT nanoscopy to overcome the diffraction barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this to the relatively low light intensities required in RESOLFT nanoscopy to overcome the diffraction barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the reason for the lack of phototoxicity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "13daa0b3-de17-4173-aa47-91badc0d9991",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C65",
+      "claim": "Because of the utilized scanning approach, the individual irradiation times are short and consequently the overall light dose deposited in the imaged volume is small.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because of the utilized scanning approach, the individual irradiation times are short and consequently the overall light dose deposited in the imaged volume is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical characteristics of the scanning approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "17d459d8-5e76-4ecc-929b-d3b4f3ce5b6d",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C66",
+      "claim": "The light intensities in RESOLFT microscopy are still higher than what is sometimes regarded as critical intensity threshold in long-term imaging to follow developmental processes over hours or even days.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the light intensities in RESOLFT microscopy are still higher than what is sometimes regarded as critical intensity threshold in long-term imaging to follow developmental processes over hours or even days (Stelzer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement comparing RESOLFT light intensities to those used in long-term imaging, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "67aefbf7-5584-44cb-a53c-f399937ec372",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C67",
+      "claim": "In in vivo RESOLFT microscopy, typically only a very small part of the sample organism is imaged, whereas the remaining parts are not illuminated.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, however, that in in vivo RESOLFT microscopy, typically only a very small part of the sample organism is imaged, whereas the remaining parts are not illuminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the typical imaging approach in in vivo RESOLFT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "ec5ae76a-6c19-4d1c-a028-367b511ca4d5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C68",
+      "claim": "The phototoxic effects that manifest themselves after the actual experiment are irrelevant as long as the cellular dynamics during the imaging are not disturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, the phototoxic effects that manifest themselves after the actual experiment are irrelevant as long as the cellular dynamics during the imaging are not disturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the relevance of phototoxicity in imaging experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "09f15699-8538-44cd-b8fa-a2f1f54cac3d",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C69",
+      "claim": "The relatively low light intensities required for RESOLFT nanoscopy and the flexibility of the method offer additional freedom in the choice between resolution and recording time.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively low light intensities required for RESOLFT nanoscopy and the flexibility of the method offer additional freedom in the choice between resolution and recording time: In RESOLFT nanoscopy, the attained resolution can be adjusted so that, for example, the resolution is decreased in favor of reduced phototoxicity, increased recording speed, or the number of images taken before bleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the flexibility of RESOLFT nanoscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "adab87b1-fa11-4121-885c-879639e4a25a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C70",
+      "claim": "In RESOLFT nanoscopy, the attained resolution can be adjusted so that the resolution is decreased in favor of reduced phototoxicity, increased recording speed, or the number of images taken before bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "In RESOLFT nanoscopy, the attained resolution can be adjusted so that, for example, the resolution is decreased in favor of reduced phototoxicity, increased recording speed, or the number of images taken before bleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the flexibility of RESOLFT nanoscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "ee6f760c-2fc3-47f9-930c-7e119b83bdf5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C71",
+      "claim": "The RESOLFT data could be deconvolved to increase the contrast and resolution even further if required.",
+      "claim_type": "EXPLICIT",
+      "source": "Although in this manuscript we only show raw image data, the RESOLFT data could be deconvolved to increase the contrast and resolution even further if required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential post-processing of RESOLFT data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "d0d88903-5e77-421e-ae7c-e6435cfc6001",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C72",
+      "claim": "The RESOLFT modality offers the benefit of allowing to image deeper in tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown here, the RESOLFT modality offers the benefit of allowing to image deeper in tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "7d363548-c530-42e6-82bf-d2f97b80c0ff",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C73",
+      "claim": "The benefit of imaging deeper in tissue relies on the fact that fluorescence from outside the focal region is precluded because the molecules located in that region are transferred into a non-fluorescent state; their signal cannot perturb the image.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation relys on the fact that fluorescence from outside the focal region is precluded because the molecules located in that region are transferred into a non-fluorescent state; their signal cannot perturb the image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism underlying the benefit of RESOLFT for deep tissue imaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "870ea1b9-b62f-41fe-b352-879aec9262b7",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C74",
+      "claim": "Since the release of rsEGFP2 in 2012, a number of novel switchable fluorescent proteins have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the release of rsEGFP2 in 2012 (Grotjohann et al., 2012), a number of novel switchable fluorescent proteins have been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about developments in the field since 2012.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "451d740c-27c5-4c03-9e59-9ef4ad57023c",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C75",
+      "claim": "rsFolder, rsGreen, rsEGFP-N205S, rsCherryRev1.4, and Kohinoor have been successfully used in RESOLFT nanoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, the rsEGFP/rsEGFP2 variants rsFolder (El Khatib et al., 2016), rsGreen (Duw\u00e9 et al., 2015), and rsEGFP-N205S (Chmyrov et al., 2013), the red fluorescent rsCherryRev1.4 (Lavoie-Cardinal et al., 2014), and the positive switching Kohinoor (Tiwari et al., 2015) have been successfully used in RESOLFT nanoscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "1bf1f952-93a3-4837-aa4b-d843bc44d03b",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C76",
+      "claim": "Organic dyes were used in RESOLFT nanoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Also organic dyes were used in this concept (Kwon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "131a47c5-b49e-4b39-84f8-bbae769514a7",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C77",
+      "claim": "For the applications shown in this manuscript, namely beam scanning RESOLFT nanoscopy in tissues, rsEGFP2 seems to unite the necessary properties in the most suitable combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, for the applications shown in this manuscript, namely beam scanning RESOLFT nanoscopy in tissues, rsEGFP2 seems to unite the necessary properties in the most suitable combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of rsEGFP2 relative to other available fluorescent proteins for the specific application.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "9ebb97bd-2b74-4670-927e-5d01362c34d9",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C78",
+      "claim": "rsEGFP2 dramatically outperforms earlier RSFPs such as Dronpa or rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although rsEGFP2 dramatically outperforms earlier RSFPs such as Dronpa (Ando et al., 2004) or rsEGFP (Grotjohann et al., 2011), we expect generation of superior RSFPs in the future that are even more photostable, brighter, and exhibit better contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement supported by citations to prior work on Dronpa and rsEGFP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "b44ddccf-928f-435f-a97c-e50a476cdacd",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C79",
+      "claim": "Superior RSFPs that are even more photostable, brighter, and exhibit better contrast are expected to be generated in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Although rsEGFP2 dramatically outperforms earlier RSFPs such as Dronpa (Ando et al., 2004) or rsEGFP (Grotjohann et al., 2011), we expect generation of superior RSFPs in the future that are even more photostable, brighter, and exhibit better contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "c2e15a5f-89cf-49f0-bfbc-0e1574a17e5c",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C80",
+      "claim": "With the ongoing developments both on RSFPs as well as on instrumentation, it can be anticipated that the application range of low light RESOLFT nanoscopy in Drosophila as well as in other multicellular organism will be further expanded in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that with the ongoing developments both on RSFPs as well as on instrumentation, it can be anticipated that the application range of low light RESOLFT nanoscopy in Drosophila as well as in other multicellular organism will be further expanded in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "23db7d1a-4219-41e4-b4cc-a9cf7c669a99",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C81",
+      "claim": "A synthetic gene sequence encoding the fluorescent protein rsEGFP2 attached to the N-terminus of the \u03b1-tubulin 84B protein was synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "A synthetic gene sequence encoding the fluorescent protein rsEGFP2 (GenBank #AGE84598.1) attached to the N-terminus of the \u03b1-tubulin 84B (cg1913, UniProt #P06603) protein was synthesized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the cloning approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "b1e8bfab-4c64-422d-87ee-a89140c878b0",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C82",
+      "claim": "The DNA was cloned into an attB-containing fly transformation vector under the control of the Ubiquitin p63E promotor-region.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA was cloned into an attB-containing fly transformation vector under the control of the Ubiquitin p63E promotor-region (3L; 3901762 to 3903743).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the cloning approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "fa9e1b9c-35f7-4e72-93f7-4019f41772c2",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C83",
+      "claim": "To generate transgenic flies, a standard phiC31 integrase based germ line transformation procedure was followed, targeting the landing site M{3xP3-RFP.attP}ZH-86Fb using Bloomington stock #24749.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate transgenic flies, a standard phiC31 integrase based germ line transformation procedure was followed, targeting the landing site M{3xP3-RFP.attP}ZH-86Fb using Bloomington stock #24749 (Bischof et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the method used to generate transgenic flies, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "eb884de4-cf48-4c44-8812-757a3528e31d",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C84",
+      "claim": "RESOLFT nanoscopy was performed using a modified 1C RESOLFT QUAD Scanning microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "RESOLFT nanoscopy was performed using a modified 1C RESOLFT QUAD Scanning microscope (Abberior Instruments, Goettingen, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the instrumentation used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "521064e8-744c-4620-9048-1e89e7a36f4f",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C85",
+      "claim": "For RESOLFT imaging of Drosophila melanogaster, rsEGFP2 proteins were first switched into the on-state with light of 405 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "For RESOLFT imaging of Drosophila melanogaster, the following switching scheme was applied to the sample at each scanning position: First, rsEGFP2 proteins were switched into the on-state with light of 405 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "dee13538-c757-4012-a9ea-09da58acd04b",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C86",
+      "claim": "rsEGFP2 proteins in the periphery of the focal spot were switched off using a 488 nm doughnut-shaped beam.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, rsEGFP2 proteins in the periphery of the focal spot were switched off using a 488 nm doughnut-shaped beam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "c2a3a625-1788-4007-8525-9fc0fe398ad2",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C87",
+      "claim": "The 2D-doughnut was realized by using a phase plate, whereas the 3D-doughnut was generated by using a spatial light modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2D-doughnut was realized by using a phase plate, whereas the 3D-doughnut was generated by using a spatial light modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the technical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "782cf340-ed73-4f7b-8d7b-abe5daed7b3b",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C88",
+      "claim": "On-state fluorophores at the center of the spot were read out with a Gaussian shaped beam of 488 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, on-state fluorophores at the center of the spot were read out with a Gaussian shaped beam of 488 nm light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "25c7c362-5dd0-45dd-bcb0-cd96a6ad9be0",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C89",
+      "claim": "A short 5 \u00b5s break was introduced between each step of the switching scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced a short 5 \u00b5s break between each step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "cc87928b-347b-4937-8aaa-d2b202cdae59",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C90",
+      "claim": "The RESOLFT images were recorded with or without line accumulation depending on the signal intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The RESOLFT images were recorded with or without line accumulation depending on the signal intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "404a9e31-80a5-409c-be63-d9d290b5b555",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C91",
+      "claim": "The corresponding confocal images were recorded by applying the same switching scheme as used for the RESOLFT imaging without the illumination step using a doughnut shaped beam.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding confocal images were recorded by applying the same switching scheme as used for the RESOLFT imaging without the illumination step using a doughnut shaped beam (step 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the imaging protocol for confocal images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "d7729173-52c2-4593-8b71-b074bf9b33cc",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C92",
+      "claim": "All fluorescence images presented in this work are raw data, neither background subtraction nor any other image data processing has been applied.",
+      "claim_type": "EXPLICIT",
+      "source": "All fluorescence images presented in this work are raw data, neither background subtraction nor any other image data processing has been applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the image processing (or lack thereof).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "67768304-b16c-4fba-a709-715bef576482",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C93",
+      "claim": "For the determination of the FWHM, three or ten averaged adjacent line profiles were fitted using Origin 9.1 software.",
+      "claim_type": "EXPLICIT",
+      "source": "For the determination of the FWHM, three or ten averaged adjacent line profiles were fitted (standard Lorentz-fit) using Origin 9.1 software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "bc7d0594-2c32-4426-8b2c-28988a29449c",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C94",
+      "claim": "Tissues from wandering third instar larvae were dissected in Schneider's cell culture medium supplemented with 10% Fetal Bovine Serum and mounted under a coverslip in Schneider's cell culture medium supplemented with 10% FBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues from wandering third instar larvae were dissected in Schneider's cell culture medium (Life Technologies, Carlsbad, California USA) supplemented with 10% Fetal Bovine Serum (FBS) and mounted under a coverslip in Schneider's cell culture medium supplemented with 10% FBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sample preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "a7c8add4-de5d-4301-be07-a247f25d65e6",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C95",
+      "claim": "For imaging of intact larvae, second instar larvae were placed between two spacers in Schneider's medium and covered with a coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "For imaging of intact larvae, second instar larvae were placed between two spacers in Schneider's medium and covered with a coverslip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sample preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "fb01062c-0970-4fd4-ae7a-3a10d8b6482a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "claim_id": "C96",
+      "claim": "The samples were sealed using nontoxic duplicating silicone.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were sealed using nontoxic duplicating silicone (Picodent, Wipperfuerth, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sample preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4670192d-1c99-4e4e-82be-c7815e31d0a2",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a stable transgenic Drosophila line ubiquitously expressing rsEGFP2-\u03b1-tubulin fusion protein under the ubiquitin 68E promoter. The flies showed normal lifespan (~41 days at 25\u00b0C), maintained fitness over 50+ generations, and expressed the fusion protein at moderate levels (3:1 ratio of endogenous to fusion protein) without adverse effects on development or reproduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C29, and C62 provide converging evidence from multiple experimental approaches (confocal imaging, lifespan analysis, Western blotting, multi-generational propagation) demonstrating successful generation of a viable transgenic line. The Western blot data (C28) quantitatively confirms moderate expression levels, and the observation of normal oogenesis/spermatogenesis (C25-C27) supports the lack of developmental defects. The consistency across multiple assays and the long-term stability over 50+ generations strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "6fbd7031-d9ba-48b2-8628-db27166d655e",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RESOLFT nanoscopy achieved sub-diffraction resolution imaging of microtubules in resected Drosophila tissues (body wall muscles, salivary glands), with FWHM values consistently around 50-60 nm, representing an approximately 4-fold improvement over diffraction-limited confocal microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by quantitative FWHM measurements shown in multiple figures (Figure 2\u2014figure supplement 1B, Figure 3\u2014figure supplement 1) and direct visual comparison between confocal and RESOLFT images. The resolution measurements are based on averaging multiple line profiles (3 or 10 adjacent profiles) and fitting with Lorentzian functions (C93), which is an appropriate method. The consistent achievement of 50-60 nm resolution across different tissue types strengthens the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "f0683081-08ca-440f-8b70-0b1939b362f7",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrated 3D RESOLFT imaging by recording z-stacks with both 2D-doughnut (14 images, 250 nm axial spacing) and 3D-doughnut configurations (33 images in 2 \u03bcm volume), with the 3D-doughnut providing approximately 4-fold improved axial resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by imaging data in Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, and Videos 1-2. The technical implementation is clearly described (C35, C87), and the improvement in axial resolution with the 3D-doughnut is demonstrated. However, the manuscript acknowledges that the 2D-doughnut approach had 'relatively poor axial resolution' (C34), which is an appropriate limitation to note.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "cd5035b6-f73a-4751-a063-f66cb3e5946a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RESOLFT nanoscopy enabled imaging up to 42 \u03bcm deep within scattering fly tissue with superior signal-to-noise ratio compared to confocal microscopy. While resolution decreased with depth, RESOLFT consistently outperformed confocal imaging at all depths, attributed to switching off-state molecules outside the focal region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 are supported by depth-series imaging data in Figure 2D showing systematic comparison of confocal and RESOLFT at multiple depths (2, 10, 23, 42 \u03bcm). The mechanistic explanation (C42, C73) for improved contrast is consistent with the RESOLFT principle. The acknowledgment that resolution degrades with depth (C43) demonstrates appropriate scientific rigor. The use of silicone oil immersion objective to match tissue refractive index shows proper experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RESOLFT nanoscopy was successfully performed on intact living Drosophila larvae by imaging through the cuticle, achieving \u226460 nm lateral resolution. Larvae were immobilized between spacers while maintaining viability, and individual microtubules were resolved despite occasional larval movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are supported by imaging data in Figure 3 showing successful in vivo imaging through intact cuticle. The sample preparation method is clearly described (C47, C95), and quantitative resolution measurements (C52, Figure 3E, Figure 3\u2014figure supplement 1) confirm achievement of \u226460 nm resolution comparable to resected tissues. This represents a significant technical achievement as imaging through intact cuticle adds optical challenges. The ability to resolve structures despite larval movement (C48, C50) demonstrates robustness of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "7eba4492-c849-4642-b2b5-856394225ead",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Time-lapse RESOLFT imaging was demonstrated over 2.5 hours (40 frames, 552 \u03bcm\u00b2 field of view) and at higher temporal resolution (40 frames at 9.3 s/frame, 52 \u03bcm\u00b2 field of view), showing continued microtubule dynamics without obvious cellular distress despite photobleaching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 are supported by time-lapse data in Figure 4, Videos 3-4, and Figure 4\u2014figure supplement 1. The observation of continued microtubule growth/shrinkage (C55) and lack of cellular distress (C56) provides evidence for cell viability during extended imaging. However, the assessment of 'no obvious signs of cellular distress' (C56) is qualitative and somewhat subjective. The authors acknowledge 'recognizable photobleaching' (C56), which is appropriately transparent. The two different temporal scales (2.5 hr and 9.3 s/frame) demonstrate flexibility of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "86de9510-5ef5-4abd-be08-605e0a73aeff",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No phototoxic effects were observed during RESOLFT imaging, attributed to the relatively low light intensities required (up to 6 orders of magnitude lower than STED, comparable to confocal microscopy) and low total light dose (3-4 orders of magnitude lower than single-molecule approaches).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 states no phototoxic effects were observed, but this is based on qualitative assessment during imaging rather than systematic quantitative measurements of cell viability, proliferation, or molecular markers of stress. The comparative light intensity claims (C13-C15) are supported by citations but represent general knowledge rather than measurements from this specific study. While the mechanistic explanation (C64-C65) is reasonable, the lack of quantitative phototoxicity assessment (e.g., cell viability assays, stress markers) limits the strength of this conclusion. The observation of 'recognizable photobleaching' (C56) suggests some photodamage occurred.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "79827f39-d0d5-4747-899a-5ca7ece3987a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RESOLFT microscopy is particularly suitable for live-cell imaging of complex samples like tissues due to its compatibility with confocal detection (which rejects out-of-focus fluorescence), low light requirements, and flexibility to adjust resolution versus recording speed/phototoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C69-C70 describe technical advantages of RESOLFT that are demonstrated throughout the manuscript. The benefit for deep tissue imaging (C72-C73) is directly supported by the depth-series data (C38-C44). The mechanistic explanation for improved deep tissue imaging (C73) is consistent with the RESOLFT principle. However, some claims (C18, C69-C70) are somewhat general statements about the method rather than specific findings from this study. The flexibility claim (C69-C70) is stated but not systematically demonstrated with parameter optimization experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "3a5c4c9f-3816-4c38-ad04-1e678a3e8ead",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study represents the first application of RESOLFT (or any super-resolution nanoscopy) to image subcellular details in living transgenic animals ubiquitously expressing a fusion protein, extending previous work that was limited to single cells or sparse labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C60-C61 establish the novelty of this work. The statement that no prior work achieved this (C19) is qualified with 'to our knowledge' which is appropriately cautious. The distinction from prior work (C60, supported by multiple citations) is clear: previous RESOLFT studies used only single cells, whereas this work images tissues and intact organisms with ubiquitous expression. This represents a significant advance in the field, though the 'to our knowledge' qualifier acknowledges the possibility of overlooked prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "41e85020-caee-4286-8e12-571bfb1be1b8",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes the work within the field, noting that nanoscopy of thick specimens is typically performed on fixed/cleared tissue, live tissue nanoscopy usually requires sparse labeling, and RESOLFT light intensities exceed thresholds for long-term developmental imaging but are acceptable for short-term experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C66-C68 provide appropriate context from the literature, supported by citations. The acknowledgment that RESOLFT intensities exceed thresholds for very long-term imaging (C66) while arguing they are acceptable for the experiments performed (C67-C68) shows balanced assessment. However, C68 makes a somewhat subjective judgment about when phototoxicity is 'irrelevant' that could be debated. These are primarily literature review claims rather than experimental findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript reviews the development and properties of rsEGFP2 and other reversibly switchable fluorescent proteins, noting that rsEGFP2 was previously used only in single-layered cells and that while newer RSFPs exist, rsEGFP2 remains optimal for beam-scanning RESOLFT in tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C9-C12, and C74-C78 provide background on rsEGFP2 and related fluorescent proteins, all supported by appropriate citations. The assessment that rsEGFP2 is optimal for this application (C77) is a judgment call but reasonable given the successful results. The comparison to earlier RSFPs like Dronpa (C78) is supported by citations. These are primarily review/context claims rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "2638453b-aee2-41b0-beab-9c0a3ae57d8a",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that superior RSFPs will be developed in the future and that the application range of RESOLFT nanoscopy in multicellular organisms will expand. They also note that deconvolution could further improve their data but was not applied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 and C71 are explicitly speculative statements about future developments, appropriately qualified with language like 'we expect' and 'can be anticipated.' These are reasonable predictions based on the demonstrated feasibility in this study. The statement about deconvolution (C71) is transparent about what was not done, which is appropriate. These are discussion/speculation claims rather than experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    },
+    {
+      "id": "8a6272d7-ee73-41b4-873a-9164897248d6",
+      "content_id": "3123fc55-a088-4832-a6ff-f9075f9a0c6c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides detailed methods for fly generation (phiC31 integrase-based transformation), RESOLFT imaging (switching scheme with 405 nm activation, 488 nm doughnut-shaped deactivation, 488 nm Gaussian readout), data analysis (Lorentzian fitting of averaged line profiles), and sample preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C96 describe methods in detail. The fly generation method (C81-C83) follows standard procedures with appropriate citation (C83). The imaging protocol (C84-C91) is clearly described with specific wavelengths, beam shapes, and timing. The statement that all images are raw data without processing (C92) is important for transparency and interpretation. The data analysis method (C93) using averaged line profiles and Lorentzian fitting is appropriate for resolution determination. Sample preparation methods (C94-C96) are clearly described. These methodological details are well-documented and support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:44.875308Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1adbf5d0-e6da-4886-aa55-9ad4e6a85d76",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "a066ec0c-997b-4b69-aef9-ecd5d48771a8",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "88314865-d48e-4c49-8f8c-8ae95c86ffd5",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "bbc1cc29-f907-4ece-8067-9baa7a6591dd",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "1417612b-d84f-4eab-b6e2-21e49d3384e6",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "469a8df6-6096-4051-b906-c6a4f33fb54f",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "40de1f04-028d-4d6e-bc0a-ef0ce6e1674d",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "538df6fd-5a32-43b1-9b36-c497a03c5329",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "2c375990-2c5a-4b85-a288-d6c11bbcecef",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "bfcb681c-db7b-4d9e-bae4-8288b8924b56",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "e9c7cadc-3a20-4b8e-add1-9344bd4caded",
+      "result_id": "4670192d-1c99-4e4e-82be-c7815e31d0a2"
+    },
+    {
+      "claim_id": "d249067f-1c53-4841-9864-b578f1b44327",
+      "result_id": "6fbd7031-d9ba-48b2-8628-db27166d655e"
+    },
+    {
+      "claim_id": "4f19e3f4-f278-4567-acf4-9313a16fd016",
+      "result_id": "6fbd7031-d9ba-48b2-8628-db27166d655e"
+    },
+    {
+      "claim_id": "2b0d7b2b-a7fb-43ab-9be9-d59e9ac4a722",
+      "result_id": "6fbd7031-d9ba-48b2-8628-db27166d655e"
+    },
+    {
+      "claim_id": "8a0d8e80-0ab0-45d5-9f6c-ce1084abd1bc",
+      "result_id": "6fbd7031-d9ba-48b2-8628-db27166d655e"
+    },
+    {
+      "claim_id": "6ae84ed9-dd59-4d1d-a22a-16d469a701dc",
+      "result_id": "6fbd7031-d9ba-48b2-8628-db27166d655e"
+    },
+    {
+      "claim_id": "05a269a0-670e-4b3a-9574-05c28696de39",
+      "result_id": "f0683081-08ca-440f-8b70-0b1939b362f7"
+    },
+    {
+      "claim_id": "ad0cec1a-2f6e-4974-bd0d-fa2f8f96b78b",
+      "result_id": "f0683081-08ca-440f-8b70-0b1939b362f7"
+    },
+    {
+      "claim_id": "0afd62e0-4090-4b91-a614-562045f54ff8",
+      "result_id": "f0683081-08ca-440f-8b70-0b1939b362f7"
+    },
+    {
+      "claim_id": "ffbdb8db-1198-4b84-95b1-c4f17891459e",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "59deb20d-05f7-45ba-94d9-4d3073189929",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "a5896a72-ac54-48e6-86f7-b4dedbf5a6a5",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "06aa6aea-748a-49df-8b3a-9e7b4d52d28c",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "ac3ce153-7028-49a5-8fae-46075d1a20e5",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "11c5cc65-dd3a-4120-b98c-d02cb3fefcb5",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "7475d231-ad6a-4791-84da-ed99196839b6",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "e9188f50-76e0-4a30-900c-7c0ee2e332ee",
+      "result_id": "cd5035b6-f73a-4751-a063-f66cb3e5946a"
+    },
+    {
+      "claim_id": "57073452-982b-41f6-bf89-3515c5a5bf36",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "f21b945a-37e8-4335-93dc-a430d41df5cd",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "0c863a29-6ebd-4a42-a8f7-71807d7254ee",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "5ac45ee9-5c66-4d4a-ac39-78b0f7d6ecc0",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "bfa973f4-bf32-4b1d-ba49-21684d58b7ff",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "e0f3b12b-3409-480d-a72e-4048d6685baf",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "321d7df8-2954-49a6-95c0-2a1d4d644d98",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "969f23a3-86a5-4960-a0d1-38f9cd88e20f",
+      "result_id": "90eaf432-873c-49a0-b4f1-7ce49a2aa73d"
+    },
+    {
+      "claim_id": "edc5defc-6564-4f59-9041-a1c74c2e9f02",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "cbb70e0b-fd32-4355-b4b8-383e36e36f78",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "0a782d88-1f07-4ae9-a2d3-17f0eab0207a",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "efd8337c-fa12-462b-9a41-61ce97713a77",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "e2fc45ae-7b6c-4765-8be5-b1badc52a342",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "0fbf483d-c1e4-4382-9324-351e25567a05",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "617e1e1e-8f40-4458-97d9-c49366b66e21",
+      "result_id": "7eba4492-c849-4642-b2b5-856394225ead"
+    },
+    {
+      "claim_id": "8e9429b3-d2c6-4440-9553-622af3399a28",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "c7ea71ea-e55e-4b45-98ba-72118f4a3d52",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "13daa0b3-de17-4173-aa47-91badc0d9991",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "83d92a8d-dee8-47a5-aea0-3e7ef93b45ef",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "0dd50895-b58e-405a-a48e-caf2140302f0",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "eef89fd1-6978-438e-90ae-0d8bbfdf4718",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "c5aeeed8-703b-4c60-9c69-e0da83f9ceb8",
+      "result_id": "86de9510-5ef5-4abd-be08-605e0a73aeff"
+    },
+    {
+      "claim_id": "d423c51c-0fc6-4fc7-b619-a95480438d61",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "3ec17b62-b8e1-4970-9dde-b10404b2894a",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "5c585504-9dac-4730-892f-c717ac1fadfe",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "09f15699-8538-44cd-b8fa-a2f1f54cac3d",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "adab87b1-fa11-4121-885c-879639e4a25a",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "d0d88903-5e77-421e-ae7c-e6435cfc6001",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "7d363548-c530-42e6-82bf-d2f97b80c0ff",
+      "result_id": "79827f39-d0d5-4747-899a-5ca7ece3987a"
+    },
+    {
+      "claim_id": "229e5686-df42-4506-82cc-51a5818232cb",
+      "result_id": "3a5c4c9f-3816-4c38-ad04-1e678a3e8ead"
+    },
+    {
+      "claim_id": "8ec6019a-f151-441e-9f08-0f92efdf61d7",
+      "result_id": "3a5c4c9f-3816-4c38-ad04-1e678a3e8ead"
+    },
+    {
+      "claim_id": "08952ec5-8f20-4bbe-b37f-991d0efb13a1",
+      "result_id": "3a5c4c9f-3816-4c38-ad04-1e678a3e8ead"
+    },
+    {
+      "claim_id": "84045b47-3b41-445d-89f7-9488309d354a",
+      "result_id": "3a5c4c9f-3816-4c38-ad04-1e678a3e8ead"
+    },
+    {
+      "claim_id": "347a1d77-fb8b-452a-89fd-92902a24b2b1",
+      "result_id": "41e85020-caee-4286-8e12-571bfb1be1b8"
+    },
+    {
+      "claim_id": "8a70ef5a-a0c5-4f1e-9809-2bf2dba53c03",
+      "result_id": "41e85020-caee-4286-8e12-571bfb1be1b8"
+    },
+    {
+      "claim_id": "17d459d8-5e76-4ecc-929b-d3b4f3ce5b6d",
+      "result_id": "41e85020-caee-4286-8e12-571bfb1be1b8"
+    },
+    {
+      "claim_id": "67aefbf7-5584-44cb-a53c-f399937ec372",
+      "result_id": "41e85020-caee-4286-8e12-571bfb1be1b8"
+    },
+    {
+      "claim_id": "ec5ae76a-6c19-4d1c-a028-367b511ca4d5",
+      "result_id": "41e85020-caee-4286-8e12-571bfb1be1b8"
+    },
+    {
+      "claim_id": "52841c2b-9e81-4575-9c6a-64a0d8ec6fd2",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "1dddbd97-3353-4d38-a8f1-d2b22f12749e",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "059bc9b1-7bca-4f26-9ebd-684ab73380cb",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "77093cb7-5233-4126-b7e6-6c02e9b13088",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "58eb87d8-6e1d-490a-a83f-d49f7b5f3b0a",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "870ea1b9-b62f-41fe-b352-879aec9262b7",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "451d740c-27c5-4c03-9e59-9ef4ad57023c",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "1bf1f952-93a3-4837-aa4b-d843bc44d03b",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "131a47c5-b49e-4b39-84f8-bbae769514a7",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "9ebb97bd-2b74-4670-927e-5d01362c34d9",
+      "result_id": "20008d0e-5171-4a9d-9f3e-1e29cc95c6f5"
+    },
+    {
+      "claim_id": "b44ddccf-928f-435f-a97c-e50a476cdacd",
+      "result_id": "2638453b-aee2-41b0-beab-9c0a3ae57d8a"
+    },
+    {
+      "claim_id": "c2e15a5f-89cf-49f0-bfbc-0e1574a17e5c",
+      "result_id": "2638453b-aee2-41b0-beab-9c0a3ae57d8a"
+    },
+    {
+      "claim_id": "ee6f760c-2fc3-47f9-930c-7e119b83bdf5",
+      "result_id": "2638453b-aee2-41b0-beab-9c0a3ae57d8a"
+    },
+    {
+      "claim_id": "23db7d1a-4219-41e4-b4cc-a9cf7c669a99",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "b1e8bfab-4c64-422d-87ee-a89140c878b0",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "fa9e1b9c-35f7-4e72-93f7-4019f41772c2",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "eb884de4-cf48-4c44-8812-757a3528e31d",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "521064e8-744c-4620-9048-1e89e7a36f4f",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "dee13538-c757-4012-a9ea-09da58acd04b",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "c2a3a625-1788-4007-8525-9fc0fe398ad2",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "782cf340-ed73-4f7b-8d7b-abe5daed7b3b",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "25c7c362-5dd0-45dd-bcb0-cd96a6ad9be0",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "cc87928b-347b-4937-8aaa-d2b202cdae59",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "404a9e31-80a5-409c-be63-d9d290b5b555",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "d7729173-52c2-4593-8b71-b074bf9b33cc",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "67768304-b16c-4fba-a709-715bef576482",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "bc7d0594-2c32-4426-8b2c-28988a29449c",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "a7c8add4-de5d-4301-be07-a247f25d65e6",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    },
+    {
+      "claim_id": "fb01062c-0970-4fd4-ae7a-3a10d8b6482a",
+      "result_id": "8a6272d7-ee73-41b4-873a-9164897248d6"
+    }
+  ],
+  "comparisons": []
+}

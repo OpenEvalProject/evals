@@ -1,0 +1,2094 @@
+{
+  "submission": {
+    "id": "42e63c60-7d5a-4efa-8970-55cdbe736d6d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:02:40.722070Z",
+    "updated_at": "2025-11-29T22:02:40.722070Z"
+  },
+  "content": [
+    {
+      "id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "submission_id": "42e63c60-7d5a-4efa-8970-55cdbe736d6d",
+      "content_type": "manuscript",
+      "content_text": "# Ternatin and improved synthetic variants kill cancer cells by targeting the elongation factor-1A ternary complex\n\n## Authors\n\n- Jordan D Carelli<sup>1</sup> ([ORCID: 0000-0001-7625-7505](https://orcid.org/0000-0001-7625-7505))\n- Steven G Sethofer<sup>2</sup>\n- Geoffrey A Smith<sup>1</sup>\n- Howard R Miller<sup>3</sup>\n- Jillian L Simard<sup>2</sup>\n- William C Merrick<sup>4</sup>\n- Rishi K Jain<sup>3</sup>\n- Nathan T Ross<sup>3</sup>\n- Jack Taunton<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Chemistry and Chemical Biology Graduate Program University of California, San Francisco San Francisco United States\n2. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n3. Novartis Institutes for BioMedical Research Cambridge United States\n4. Department of Biochemistry, School of Medicine Case Western Reserve University Cleveland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyclic peptide natural products have evolved to exploit diverse protein targets, many of which control essential cellular processes. Inspired by a series of cyclic peptides with partially elucidated structures, we designed synthetic variants of ternatin, a cytotoxic and anti-adipogenic natural product whose molecular mode of action was unknown. The new ternatin variants are cytotoxic toward cancer cells, with up to 500-fold greater potency than ternatin itself. Using a ternatin photo-affinity probe, we identify the translation elongation factor-1A ternary complex (eEF1A\u00b7GTP\u00b7aminoacyl-tRNA) as a specific target and demonstrate competitive binding by the unrelated natural products, didemnin and cytotrienin. Mutations in domain III of eEF1A prevent ternatin binding and confer resistance to its cytotoxic effects, implicating the adjacent hydrophobic surface as a functional hot spot for eEF1A modulation. We conclude that the eukaryotic elongation factor-1A and its ternary complex with GTP and aminoacyl-tRNA are common targets for the evolution of cytotoxic natural products.\n\n## Introduction\n\nMacrocyclic natural products are a rich source of biologically active compounds, and identification of their targets can open up new opportunities for therapeutic intervention (Driggers et al., 2008; Villar et al., 2014). Cyclic peptide natural products, especially those containing one or more N-methyl (or N-alkyl) amino acids, comprise a privileged class of macrocycles due to their modular structure, relative ease of synthesis, intrinsic cell permeability, and constrained three-dimensional architectures (Bockus et al., 2013; Giordanetto and Kihlberg, 2014; Hewitt et al., 2015). Examples of cyclic peptides with well characterized cellular targets include cyclosporin (Liu et al., 1991), trapoxin and romidepsin (Taunton et al., 1996; Nakajima et al., 1998), and cotransin/CAM741 and decatransin (Besemer et al., 2005; Garrison et al., 2005; Junne et al., 2015). These macrocyclic compounds target conserved eukaryotic proteins that play essential roles in calcium-mediated signaling (cyclophilin/calcineurin), epigenetic regulation (histone deacetylases), and secretory protein biogenesis (Sec61 translocon), respectively. In addition to serving as drugs and potential leads for cancer and immune diseases, these cyclic peptides have proven to be useful as chemical probes, revealing new cellular roles for their target proteins, as well as mechanistic insights into the biochemical processes they orchestrate.\n\nTernatin (1, Figure 1a) is an N-methylated cyclic heptapeptide that inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM) and becomes cytotoxic at ten-fold higher concentrations (Shimokawa et al., 2008a). Previous work established an important role for leucine-4, as substitution with alanine (ternatin-4-Ala, 2) abolished biological activity (Shimokawa et al., 2008b). Motivating the current study, ternatin's molecular target and mechanism of action were completely unknown. While searching for cyclic peptides that, like ternatin, incorporate a \u03b2-hydroxy leucine, we found a patent application that describes partially elucidated structures of five related cyclic heptapeptides isolated from an Aspergillus fungus in Malaysia (Blunt et al., 2010). All five compounds were reported to be cytotoxic to cancer cells in the picomolar to low nanomolar range (IC50 0.1\u201324 nM vs HCT116, MCF7, and P388 cells). One of the more potent congeners, termed \u2018A3\u2019, is shown in Figure 1a. Although only 4 out of 11 stereocenters in A3 were assigned, we were able to map the amino acid sequence, stereochemistry, and N-methylation pattern directly onto the structure of ternatin. The apparent structural similarity to ternatin was not mentioned in the patent application.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig1-v2.jpg)\n\n**Figure 1.:** (a) Design of ternatin variants 3 and 4, based on the partially elucidated structure of A3. (b) Effect of cyclic peptides 1\u20134(three-fold dilutions)\u00a0on HCT116 cell proliferation over 72 hr. (c) Compounds 1 and 4 were tested against a panel of 21 cancer cell lines. Shown is a scatter plot comparing IC50 values of 1 and 4 for each cell line (Spearman correlation, 0.84, p < 0.0001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Chemical structure of 4b, containing (2S,4S)-dehydro-homoleucine. (b) Antiproliferative activity of 4 and epimer 4b toward HCT116 colorectal cancer cells (4b IC50 7.4 \u00b1 1.3 nM).\n\nBased on the potential similarity between A3 and ternatin structures, we hypothesized that replacement of N-Me-Ala-6 and Leu-4 in ternatin with two A3-specific residues \u2013 pipecolic acid and dehydro-homoleucine, respectively \u2013 would be sufficient to confer increased cytotoxic potency. These considerations led to the design of cyclic peptides 3 and 4 as potential \u2018north/south\u2019 hybrids of ternatin and A3 (Figure 1a). Compound 3 differs from ternatin only at position 6, whereas 4 additionally has dehydro-homoleucine at position 4. Here, we demonstrate that ternatin and its structural variants inhibit cellular protein synthesis, with compound 4 showing the greatest potency. We further identify the elongation factor-1A ternary complex (eEF1A\u00b7GTP\u00b7aminoacyl-tRNA) as a direct target of ternatin-related cyclic peptides. This family of N-methylated cyclic heptapeptides represents a new structural class of macrocyclic elongation factor-1A inhibitors.\n\n## Results and discussion\n\nSynthesis of 3 and 4 proceeded uneventfully according to a route previously established for ternatin (see Materials and methods) (Shimokawa et al., 2007). We synthesized both C4 epimers of dehydro-homoleucine (2-amino-4-methylhex-5-enoic acid), maintaining the (S)-stereochemistry at C2 (by analogy to L-leucine at position 4 of ternatin) and varying the C4 side-chain stereochemistry; each epimer was incorporated separately into the final cyclic peptide. The (2S,4R)-epimer depicted in 4 (Figure 1a) was slightly more potent than the (2S,4S)-epimer in cell proliferation assays (Figure 1\u2014figure supplement 1) and was used in all subsequent experiments.\n\nWe first tested the effects of compounds 1\u20134 on HCT116 cells. Ternatin (1)\u00a0potently inhibited HCT116 cell proliferation (IC50 71 \u00b1 10 nM, Figure 1b), whereas ternatin-4-Ala (2) had no effect up to 10 \u03bcM, consistent with its reported lack of activity in an adipogenesis assay (Shimokawa et al., 2008b). Ternatin-4-Ala (2) is thus a valuable negative control compound for mechanism-of-action studies. Structural modifications inspired by the Aspergillus cyclic peptides had significant effects on potency. While substitution with pipecolic acid increased potency two-fold, further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase (IC50 4.6 \u00b1 1.0 nM). To extend these results, we tested 1 and 4 against a panel of 21 cell lines derived from diverse solid and hematological tumors. While IC50 values of 1 and 4 spanned 3\u20134 orders of magnitude, they were correlated across all cell lines (Spearman correlation, 0.84, p<0.0001), with 4 being twenty-fold to >500-fold more potent than 1, depending on the cell line (Figure 1c). This strong correlation suggests that ternatin and 4 kill cancer cells by a similar mechanism. Moreover, the pipecolic acid and dehydro-homoleucine substitutions in 4 resulted in dramatically increased potency across all cell lines tested.\n\nBased on its broad anti-proliferative activity across many cell lines, we speculated that 4 might inhibit a fundamental cellular process. Indeed, global protein synthesis was abolished in cells treated with 4 (Figure 2a). Pulse labeling of newly synthesized proteins with 35S-methionine revealed that 4 inhibits protein synthesis more potently than ternatin, in agreement with the cell proliferation results. The inactive control, ternatin-4-Ala (2), had no effect on protein synthesis (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig2-v2.jpg)\n\n**Figure 2.:** (a) HCT116 cells were treated with compound 4 (five-fold dilutions) for 5 hr before labeling with 35S-Met for 1 hr. Cell lysates were separated by gel electrophoresis. Newly synthesized and total proteins were visualized by autoradiography and Coomassie staining. (b) Cells were treated as in (a), and 35S-labeled proteins were quantified by liquid scintillation counting after TCA precipitation (mean \u00b1 SEM, n = 3). (c) Left panel: HeLa cells were treated with 4 (5 \u03bcM) or DMSO for 20 min. Right panel: HeLa cells were treated with 4 (5 \u03bcM), cycloheximide (CHX, 100 \u03bcg/mL), or DMSO for 15 min, followed by harringtonine (HT, 2 \u03bcg/mL) for 20 min. After compound treatment, lysates were fractionated on 10\u201350% sucrose density gradients with absorbance detection at 254 nm.\n\nProtein synthesis inhibitors tend to block either the initiation or the elongation phase of translation. To distinguish between effects on initiation and elongation, we analyzed ribosome/polysome profiles by sucrose density centrifugation after treating cells with 4. The polysome profile was unchanged in cells treated with 4 compared to DMSO control (Figure 2c, left panel), indicating that global translation initiation was not perturbed. To test for inhibition of translation elongation, we asked whether 4 could abrogate polysome runoff induced by the initiation inhibitor harringtonine (Lindqvist et al., 2010). Similar to the known elongation inhibitor cycloheximide, pretreatment of cells with 4 completely blocked harringtonine-induced polysome depletion (2c, right panel). We conclude that 4 most likely inhibits translation elongation.\n\nTo identify the direct target of ternatins, we designed a photo-affinity probe. Previous efforts to prepare a biotinylated ternatin probe yielded an inactive analogue (Shimokawa et al., 2009). We therefore designed the bifunctional probe 5 (Figure 3a), which incorporates photo-leucine at position 4 and an alkyne at position 6 for tagging via click chemistry conjugation, similar to our previous strategy with cotransin cyclic peptides (MacKinnon et al., 2007; MacKinnon and Taunton, 2009). Probe 5 was active in a cell proliferation assay (IC50 460 \u00b1 71 nM), albeit with ~ten-fold reduced potency compared to ternatin (Figure 3\u2014figure supplement 1). Treatment of cell lysates with increasing concentrations of 5, followed by photolysis and copper-catalyzed click conjugation with tetramethylrhodamine (TAMRA)-azide, revealed preferential labeling of a 50-kDa protein (Figure 3b, Figure 3\u2014figure supplement 1). Labeling of the major 50-kDa band, but not any of the minor bands, was prevented by pretreatment with competitor 4 (Figure 3c). These experiments demonstrate specific and saturable binding of ternatins to a 50-kDa protein in cell lysates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig3-v2.jpg)\n\n**Figure 3.:** (a) Clickable photo-affinity probe 5. (b) HEK293T cell lysates were treated with 5 (two-fold dilutions) for 20 min at room temp followed by UV irradiation (355 nm, 1000 W, 90 s). A control sample with 20 \u03bcM 5 was not irradiated. Samples were subjected to click chemistry with TAMRA-azide, separated by gel electrophoresis, and scanned for in-gel fluorescence. (c) Cell lysates were treated with increasing concentrations of 4 for 10 min before adding 5 (2 \u03bcM) for 20 min, UV irradiation, and processing as in (b). (d) HEK293T cells were transfected with Flag-eEF1A. Lysates were treated with probe 5 (2 \u03bcM) \u00b1 4 and photolyzed as in (b), then immunoprecipitated with magnetic anti-Flag beads. Samples were eluted with SDS, subjected to click chemistry with TAMRA-azide, and analyzed by in-gel fluorescence scanning and Western blotting. Coomassie-stained gels corresponding to (b) and (c) are shown in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) 72-hr cell proliferation assay with serial dilutions of 5. (b) 72-hr HEK293T cell proliferation assay. (c) Coomassie-stained gel corresponding to Figure 3b. (d) Dependence of photo-crosslinking intensity on the concentration of photo-ternatin 5 based on in-gel TAMRA fluorescence (Figure 3b). For each of the indicated bands (p40, p50, and p55), the background-corrected fluorescence intensity at a given concentration of 5 was normalized to its intensity in the sample containing 20 \u03bcM 5. Labeling of p50, but not p40 or p55, achieves saturation at ~10 \u03bcM 5. (e) Coomassie-stained gel corresponding to Figure 3c.\n\nGiven that ternatins inhibit translation elongation, we hypothesized that the 50-kDa target protein was the eukaryotic elongation factor-1A (eEF1A). We tested this by photo-labeling lysates derived from cells expressing Flag-tagged eEF1A. Probe-labeled eEF1A was eluted from anti-Flag beads, visualized by subjecting the eluates to click chemistry with TAMRA-azide (Figure 3d). Photo-labeling of ectopically expressed Flag-eEF1A was reduced in the presence of excess 4 and was not detected in lysates derived from nontransfected cells.\n\neEF1A is an essential GTPase, orthologous to bacterial EF-Tu, whose canonical role is to deliver aminoacyl-tRNA (aa-tRNA) to a translating ribosome (Andersen et al., 2003). In cells, a significant fraction of eEF1A is thought to reside in a ternary complex bound to GTP and aa-tRNA (Gromadski et al., 2007). To test whether ternatins bind preferentially to an RNA-containing complex of eEF1A, we incubated cell lysates with RNase A, which can degrade most forms of RNA, including aa-tRNAs bound to eEF1A (Tzivelekidis et al., 2011). Adding RNase A to lysates before, but not after, photolysis completely prevented labeling of the 50-kDa protein by 5 (Figure 4a), suggesting that an RNA component is essential for photo-ternatin binding. Next, we tested whether 5 labels native eEF1A purified from rabbit reticulocytes. Strikingly, photo-crosslinking of 5 (1 \u03bcM) to purified eEF1A (1 \u03bcM) was observed only in the presence of GTP and aa-tRNA (in this case, Phe-tRNA; Figure 4b, lane 2). Photo-affinity labeling of the ternary complex was competed by excess 4 (10\u00a0\u03bcM). Addition of either GTP or GDP alone was not sufficient, and only weak nonspecific labeling was observed (lanes 1 and 4). These data indicate that ternatins preferentially target the ternary complex of eEF1A\u00b7GTP\u00b7aa-tRNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig4-v2.jpg)\n\n**Figure 4.:** (a) HEK293T cell lysates were treated with RNase A for 20 min before (lanes 3\u20134) or after (lanes 5\u20136) incubation with 5 and UV irradiation. (b) Purified eEF1A was incubated with GTP \u00b1 Phe-tRNA or GDP for 30 min at room temp. Reactions were treated with DMSO or 4 for 10 min, then 5 for 20 min, photolyzed and processed as in Figure 3b. (c) Translation elongation inhibitors didemnin B (DB) and ansatrienin B (AB). (d) A solution of eEF1A, GTP, and Phe-tRNA was incubated with the indicated compound (DB and AB: 0.1, 1.0, 10 \u03bcM) for 10 min before 20-min treatment with 5 (1 \u03bcM), followed by UV irradiation and processing as in Figure 3b. Coomassie-stained gels corresponding to (a) and (d) are shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In (b), the major 50-kDa band is eEF1A and the minor ~45-kDa band is an unknown contaminant.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig4-figsupp2-v2.jpg)\n\nDidemnin B and cytotrienin A have also been implicated as eEF1A inhibitors, although these cytotoxic natural products are structurally unrelated to each other and ternatin. Didemnin (Figure 4c) has been reported to bind eEF1A\u00b7GTP with an affinity of 15 or 200 \u03bcM, depending on the assay conditions (Ahuja et al., 2000; Crews et al., 1994). While its mechanism of action is still debated (Crews et al., 1996; Meng et al., 1998; Ahuja et al., 2000; Vera and Joullie, 2002; Potts et al., 2015), didemnin has been shown to block an eEF1A-dependent step of translation elongation (SirDeshpande and Toogood, 1995; Ahuja et al., 2000; Lindqvist et al., 2010). Cytotrienin A, and likely the related polyketide ansatrienin B (Figure 4c), inhibit translation elongation by a mechanism similar to didemnin's (Lindqvist et al., 2010), although direct binding of these compounds to eEF1A has not been demonstrated. Using the ternary complex assembled from eEF1A, GTP, and Phe-tRNA, we found that didemnin and ansatrienin could compete with photo-ternatin 5 (Figure 4d). Similarly, didemnin and ansatrienin abolished photo-labeling of the 50-kDa band in cell lysates (Figure 4\u2014figure supplement 2), further supporting the assignment of this band as eEF1A. These results suggest that didemnin, ansatrienin/cytotrienin, and ternatins bind eEF1A in a mutually exclusive manner and may have overlapping binding sites.\n\nConclusive evidence identifying the target of a cytotoxic compound is often provided by a resistance-conferring mutation. Recently, eEF1A was identified as the target of nannocystin A (Krastel et al., 2015), a hybrid polyketide/peptide natural product with no obvious structural similarity to ternatin, didemnin, or cytotrienin/ansatrienin (Hoffmann et al., 2015). Nannocystin-resistant HCT116 clones were obtained by chemical mutagenesis and selection, and all resistant clones contained a point mutation at Ala399 (A399V or A399T) in the EEF1A1 gene (Krastel et al., 2015). We tested these cell lines for cross-resistance to our most potent ternatin variant 4. Whereas heterozygous A399V or A399T clones were partially resistant (10-fold and 16-fold higher IC50, respectively), cells homozygous for the A399V mutation were completely resistant to 4 at concentrations as high as 30 \u03bcM (Figure 5a). Consistent with these results, labeling of ectopically expressed Flag-eEF1A by photo-ternatin 5 was abrogated by the A399V mutation (Figure 5b). Thus, mutation of Ala399 in eEF1A likely preserves its essential cellular functions yet prevents ternatin binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig5-v2.jpg)\n\n**Figure 5.:** (a) Effect of 4 (two-fold dilutions) on proliferation of WT and EEF1A1-mutant HCT116 cells over 72 hr. (b) HEK293T cells were transfected with WT or A399V Flag-eEF1A. Lysates were treated with probe 5 and processed as described in Figure 3d. (c) WT HCT116 cells (left) or cells homozygous for A399V EEF1A1 (right) were transduced with a bicistronic lentiviral vector encoding eEF1A (WT or A399V) and mCherry. Cells were labeled with carboxyfluorescein succinimidyl ester (CFSE), treated with 4 for 72 hr (four-fold dilutions), and analyzed by FACS. Proliferation was assessed by CFSE dilution in high mCherry-expressing cells (mean fluorescence intensity, MFI = 6.7\u20137.4 \u00d7 104). CFSE histograms are shown in Figure 5\u2014figure supplement 1. (d) Homozygous A399V EEF1A1 HCT116 cells were transduced with WT eEF1A/mCherry as described in (c). Antiproliferative effects of 4 (left) were analyzed in cells gated according to the indicated mCherry mean fluorescence intensity (right).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** WT HCT116 cells (top row) or cells homozygous for A399V EEF1A1 (bottom row) were transduced with a bicistronic lentiviral vector encoding WT eEF1A (left column) or A399V eEF1A (right column) linked to mCherry by the ribosome-skipping P2A peptide.\u00a0Cells were labeled with carboxyfluorescein succinimidyl ester (CFSE), treated with increasing concentrations of 4 for 72 hr, and analyzed by FACS. (a) CFSE histograms for high mCherry cells (mCherry MFI = 6.7\u20137.4 \u00d7 104) were used to generate dose-response curves in Figure 5c. (b) Scatter plots show mCherry and CFSE fluorescence of single cells treated with 10 \u03bcM 4. Note the correlation between mCherry and CFSE fluorescence among cells homozygous for A399V EEF1A1 and transduced with WT eEF1A (bottom left plot, red box). In this group, only those cells ectopically expressing high levels of WT eEF1A (indicated by high mCherry fluorescence) fail to proliferate in the presence of 10 \u03bcM 4 (indicated by high CFSE fluorescence).\n\nThe above results suggested that eEF1A mutations confer resistance in a recessive manner; conversely, ternatin sensitivity should be dominant. To explore this possibility further, we introduced A399V or WT eEF1A into parental or ternatin-resistant (A399V/A399V EEF1A1) HCT116 cells. To monitor cells across a range of eEF1A expression levels, we utilized a bicistronic lentiviral vector in which eEF1A expression was linked to a fluorescent mCherry reporter via the P2A \u2018self-cleaving\u2019 peptide (Szymczak et al., 2004). After lentiviral transduction, cells were labeled with carboxyfluorescein succinimidyl ester (CFSE) to quantify cell proliferation by FACS analysis (read as CFSE dilution). The antiproliferative effect of 4 was unaltered by expression of A399V or WT eEF1A in parental HCT116 cells. Strikingly, expression of WT (but not A399V) eEF1A in homozygous mutant cells (A399V/A399V EEF1A1) restored sensitivity to 4 (Figure 5c, Figure 5\u2014figure supplement 1). Furthermore, the magnitude of resensitization correlated with the expression level of the WT eEF1A transgene, inferred from mCherry expression (Figure 5d, Figure 5\u2014figure supplement 1). Collectively, these results indicate that eEF1A binding is necessary for the antiproliferative activity of ternatin cyclic peptides.\n\nAla399, which is conserved in yeast and archaebacterial EF1A orthologs, lies on an exposed hydrophobic surface of domain III (Figure 6, left panel)\u00a0(Kobayashi et al., 2010). The corresponding surface of bacterial EF-Tu forms part of the binding site for the antibiotic kirromycin (Figure 6, right panel)\u00a0(Vogeley et al., 2001). Kirromycin binds to the interface of domain III and the GTPase domain I in the context of the ternary complex and stalls translation by preventing the release of EF-Tu following delivery of aa-tRNA to the ribosome A-site. Similar to the case with eEF1A and ternatin, expression of wild-type EF-Tu in a drug-resistant mutant background confers dominant sensitivity to kirromycin (Parmeggiani and Swart, 1985). Thus, ternatin, nannocystin, didemnin, and ansatrienin/cytotrienin may stall translation in a manner analogous to kirromycin.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig6-v2.jpg)\n\n**Figure 6.:** Left: crystal structure of archaeal EF1A (PDB code: 3WXM, 51% identity with human eEF1A), showing the location of A399 (human numbering) on the surface of domain III. Right: crystal structure of EF-Tu (PDB code: 1OB2, 25% sequence identity with human eEF1A), showing the kirromycin binding site at the interface of domain I and III.\n\n### Conclusions and perspective\n\nIn this study, we sought to identify the target of the cytotoxic natural product, ternatin, previously characterized as a potent adipogenesis inhibitor. Inspired by the partially elucidated structure and cytotoxic activity of the cyclic heptapeptide natural product A3, we designed compounds 3 and 4, which are up to 500-fold more potent than ternatin. Ternatins inhibit protein synthesis with potencies that correlate with their ability to block cell proliferation, and photo-ternatin 5 identified eEF1A as a plausible target. Surprisingly, photo-ternatin crosslinked to purified eEF1A only in the context of its ternary complex with GTP and aminoacylated tRNA. To our knowledge, specific binding of a small molecule to the eEF1A ternary complex has not been reported previously. Whether this binding event blocks translation elongation by a mechanism analogous to the antibiotic kirromycin, as suggested by the genetic dominance of ternatin sensitivity, is an exciting question that awaits future biochemical and structural studies.\n\nAlso unexpected was our discovery that two structurally unrelated natural products, didemnin and ansatrienin, compete with 5 for binding to the eEF1A ternary complex. Combined with the recent finding that nannocystin A targets domain III of eEF1A (Krastel et al., 2015), our study suggests that four natural products with highly diverse chemical structures have evolved independently to target a shared interaction surface near Ala399 on eEF1A. A didemnin variant, plitidepsin, is currently in advanced clinical trials for multiple myeloma and T-cell lymphoma (PharmaMar Pipeline). Hence, drugging this surface on eEF1A may have clinical utility. Of the four structurally divergent natural products now identified as eEF1A inhibitors, ternatins\u00a0may be particularly attractive as leads for future medicinal chemistry efforts, due to their relative structural simplicity and accessibility by total synthesis.\n\n## Materials and methods\n\n### Cell culture\n\nHCT116 cells (ATCC,\u00a0Manassas,\u00a0VA) were maintained in McCoy\u2019s 5A media (Gibco, Grand Island, NY) supplemented with 10% fetal bovine serum (Axenia Biologix,\u00a0Dixon,\u00a0CA), 100 units/mL penicillin, and 100 ug/mL streptomycin (Gibco). Mutant HCT116 cells were obtained from Dominic Hoepfner (Krastel et al., 2015). HEK293T cells (ATCC) and HeLa cells (ATCC) were maintained in DMEM (Gibco) supplemented with 10% fetal bovine serum, 100 units/mL penicillin, and 100 \u03bcg/mL streptomycin. All other cell lines were obtained from the Cancer Cell Line Encyclopedia collection and were maintained as described (Barretina et al., 2012). All cell lines were tested for mycoplasma (Lonza,\u00a0CH) before use and were SNP-typed to verify that their identity matched that of the originally procured sample. None of the tested lines are present in the list of cross-contaminated/misidentified cell lines (http://iclac.org/wp-content/uploads/Cross-Contaminations-v7_2.pdf). All cells were cultured at 37\u00b0C in a 5% CO2 atmosphere.\n\n### Proliferation assay (Figure 1b, 3b, Figure 3\u2014figure supplement 1)\n\nGrowing cells were briefly trypsinized and repeatedly pipetted to produce a homogenous cell suspension. 2,500 cells were seeded in 100 \u03bcL complete growth media per well in 96-well clear-bottom plates. After allowing cells to adhere overnight, cells were treated with 25 \u03bcL/well 5X drug stocks (0.1% DMSO final) and incubated for 72\u2009hr. AlamarBlue (Life Technologies, Grand Island, NY) was used to asses cell viability per the manufacturer\u2019s instructions. Briefly, 12.5 \u03bcL alamarBlue reagent was added to each well, and plates were incubated at 37\u00b0C. Fluorescence intensity was measured hourly to determine the linear range for each assay (Ex 545 nm, Em 590 nm, Spectra Max M5, Molecular Devices,\u00a0Sunnyvale,\u00a0CA). Proliferation curves were generated by first normalizing fluorescence intensity in each well to the DMSO-treated plate average. Normalized fluorescence intensity was plotted in GraphPad Prism (GraphPad, La Jolla, CA), and IC50 values calculated from nonlinear regression curves. The reported IC50 values represent the average of at least three independent determinations (\u00b1SEM).\n\n### Proliferation assay (Figure 1c, 5a)\n\nProliferation assays with the 21-cell line panel (Figure 1c) and EEF1A1 mutant and parental HCT116 cells (Krastel et al., 2015) were performed using an ultra-high throughput screening system (GNF Systems, San Diego, CA). For the 21-cell line panel, cells were harvested and suspended at a concentration of 50,000 cells/mL in the appropriate medium. Cells (250 cells/well, 5 \u03bcL/well) were then dispensed into Greiner\u00a0(Monroe,\u00a0NC) white, solid-bottom, TC-treated, 1536-well assay plates (Griener # 789173-A) and incubated for 10\u2009hr at 37\u00b0C (95% humidity, 5% CO2). Compounds (15 nL/well, 16-point two-fold dilution series) and controls (15 nL/well, MG-132 and DMSO) were then added to the assay plates (n = 4) using an Echo acoustic liquid dispenser (Labcyte,\u00a0Sunnyvale,\u00a0CA). Assay plates were incubated 3 days at 37\u00b0C (95% humidity, 5% CO2) before addition of CellTiter Glo (4 \u03bcL/well, Promega,\u00a0Madison,\u00a0WI). Assay plates were incubated for 15\u2009min at room temperature and then luminescence was measured using a ViewLux uHTS Microplate Imager (PerkinElmer,\u00a0Waltham,\u00a0MA). Reported IC50 values were calculated as described (Barretina et al., 2012). Experiments with EEF1A1 mutant and parental HCT116 cells were conducted in the same manner as described above, except compounds were applied by 22-point two-fold dilution series (30 \u03bcM\u20130.1 nM).\n\n### eEF1A-P2A-mCherry cell line generation\n\nWT and A399V eEF1A coding sequences were inserted by Gibson assembly (Gibson et al. 2009) into a pHR lentiviral vector containing an eEF1A promoter and P2A-mCherry sequence (gift of A. Weiss, UCSF). Lentiviral particles were generated as described (http://www.broadinstitute.org/rnai/public/resources/protocols). Briefly, HEK293T packaging cells in 6-well plates were transfected with eEF1A-P2A-mCherry expression plasmid, 2nd-generation packaging plasmid pCMV-dR8.91, and envelope plasmid pMD2.G using TransIT-LT1 transfection reagent (Mirus Bio,\u00a0Madison,\u00a0WI) according to the manufacturer\u2019s instructions. After 24\u2009hr, media was replaced with viral harvest media (complete growth media +12 mg/mL BSA). Virus-containing media was collected after 24 and 48\u2009hr, pooled, and used for infections without further processing. Parental and EEF1A1 A399V homozygous mutant HCT116 cells at 70% confluence in 6-cm dishes were treated with polybrene (8 \u03bcg/mL, AmericanBio,\u00a0Natick,\u00a0MA) and virus (0.5 mL). After 24\u2009hr, cells were trypsinized and passaged in complete growth media.\n\n### Proliferation assay, CFSE dilution (Figure 5c,d)\n\nTrypsinized cells (8.6 \u00d7 105) were washed with PBS, resuspended in 1 mL PBS, and treated with CFSE (1 mL, 5 \u03bcM in PBS, Life Technologies). After 5\u2009min, FBS (2 mL) was added, and cells were washed once with complete growth media. CFSE-labeled cells were plated (8 \u00d7 104 cells/well) in 6-well dishes and treated with 4 or DMSO. After 72\u2009hr, plates were centrifuged (500 \u00d7g, 5\u2009min), media aspirated, and cells trypsinzied. Trypsinized cells were washed with FACS buffer (PBS \u2013Mg/Ca + 2% FBS + 2 mM EDTA) and resuspended in the same buffer (0.4 mL). Samples were analyzed by flow cytometry (BD LSRFortessa, BD, Franklin Lakes, NJ), with data analysis using FlowJo software (Tree Star,\u00a0Ashland,\u00a0OR). mCherry expression gates were defined to span a ten-fold expression range with at least 500 events for each data point.\n\n### 35S-methionine incorporation\n\nHCT116 cells at 80% confluence in 12-well plates were incubated with compounds for 5\u2009hr at 37\u00b0C. The cell culture media was replaced with methionine- and cysteine-free DMEM with the appropriate amount of compound. 35S-methionine (PerkinElmer EasyTag, 40 \u03bcCi/well) was added and cells were incubated for 1\u2009hr. Subsequently, media was aspirated and cells were washed twice with ice-cold phosphate-buffered saline (PBS). For samples analyzed by SDS-PAGE/autoradiography (Figure 2a), cells were lysed in buffer (PBS, 0.5% Triton X-100, Roche complete protease inhibitor cocktail, Roche, Indianapolis, IN) and protein content was normalized by Bradford assay. Dried gels were exposed to a storage phosphor screen (Amersham Biosciences,\u00a0UK) overnight and scanned with a Typhoon imager (GE Life Sciences,\u00a0Pittsburgh,\u00a0PA). Bulk incorporation measurements (Figure 2b) were made by treating cells with cold 10% trichloroacetic acid (TCA, 0.5 mL) for 10\u2009min. Precipitated monolayers were washed with 10% TCA (2 \u00d7 0.5 mL) and solubilized in 0.2\u2009N NaOH (0.5 mL). Aliquots (100 \u03bcL) were diluted into liquid scintillation fluid and radioactivity was quantified by scintillation counting.\n\n### Ribosome/polysome profiles\n\nHeLa cells grown to 80% confluence in 10-cm dishes were treated with DMSO or 4 (5 \u03bcM) for 20\u2009min (Figure 2c, left panel), or were first treated with DMSO, 4 (5 \u03bcM), or cycloheximide (CHX, 100 \u03bcg/mL, Sigma,\u00a0St.\u00a0Louis,\u00a0MO) for 15\u2009min, followed by harringtonine (2 \u03bcg/mL, LKT Laboratories,\u00a0St.\u00a0Paul,\u00a0MN) for 20\u2009min. Following treatment, dishes were placed on ice, media aspirated, and cells were washed once with ice-cold PBS. Cells were scraped into 400 \u03bcL lysis buffer (20 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 1% Triton X-100, 100 \u03bcg/mL CHX). Lysates were incubated for 10\u2009min on ice, then passed through a 26-G needle 5 times. Samples were clarified by centrifugation at 14,000 rpm for 10\u2009min at 4\u00b0C. Lysates were applied to 10\u201350% sucrose gradients (prepared in 20 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 100 \u03bcg/mL CHX), followed by centrifugation at 35,000 rpm for 3\u2009hr in a SW41 rotor at 4\u00b0C. Ribosome/polysome profiles were obtained by flowing the gradient top to bottom through an in-line spectrometer (254 nm, EM-1 Econo UV Monitor, BioRad,\u00a0Hercules,\u00a0CA).\n\n### Lysate preparation for photo-labeling\n\nLysates were prepared from HEK293T cells by washing a monolayer of cells once with ice-cold PBS and briefly freezing at \u201380\u00b0C. Lysis buffer (25 mM HEPES-KOH pH 7.3, 100 mM KOAc, 5 mM MgOAc2, 1 mM TCEP, 1 mM PMSF, Roche EDTA-free complete protease inhibitor) was added, and cells were detached with a cell scraper. Crude lysates were clarified by centrifugation (15\u2009min at 14,000 rpm), protein was quantified by Bradford assay, and the protein concentration was brought to 1.5 mg/mL with lysis buffer. Lysates were processed for photo-labeling as described below. For samples treated with RNase A, RNase A (Roche) was added to lysates (10 mg/mL final concentration) and incubated for 20\u2009min at RT.\n\n### Photo-labeling, general procedure\n\nPhoto-labeling experiments were preformed essentially as described (MacKinnon and Taunton, 2009; MacKinnon et al., 2007). Reactions (100 \u03bcL) were treated with DMSO (1 \u03bcL) or competitor in DMSO as 100X stocks and incubated for 10\u2009min at RT, then treated with photo-probe 5 and incubated for 20\u2009min. Reactions were transferred to 96-well plates and irradiated with long-wave UV light (\u03bbmax = 355 nm, 1000 W, 90\u2009s). To each reaction (34 \u03bcL) was added a click chemistry master mix (8.3 \u03bcL) made from the following stock solutions: 1.7 mM TBTA in 1:4 DMSO/tBuOH [2.5 \u03bcL]; 5 mM TAMRA-N3 [0.5 \u03bcL]; 50 mM TCEP [0.8 \u03bcL, freshly prepared]; 10% SDS [4.5 \u03bcL]. Then, CuSO4 (0.8 \u03bcL, 50 mM stock), was added and reactions were incubated for 1\u2009hr at RT. Reactions were quenched with 5X Laemmli sample buffer, and separated by SDS-PAGE. Gels were scanned for TAMRA fluorescence (532 nm excitation laser, 568 nm emission measured with LPG filter) on a Typhoon FLA 9000 scanner (GE Life Sciences).\n\n### Flag immunoprecipitation and western blotting\n\nHEK293T cells were transfected overnight with Flag-eEF1A DNA (pQCXIP-Flag-eEF1A1, provided by Orna Elroy-Stein [Sivan et al., 2011]) in 6-well dishes using Lipofectamine 2000 (Invitrogen, Grand Island, NY) according to the manufacturer\u2019s instructions. Flag-eEF1A1 A399V was produced by PCR amplification of the plasmid with the following primers:\n\n5\u2019-CTTGAAGTCTGGTGATGTTGCCATTGTTGATATGGTTCC-3\u2019\n\n5\u2019-GGAACCATATCAACAATGGCAACATCACCAGACTTCAAG-3\u2019\n\nLysates were prepared, treated with 5 \u00b1 competitor, and photolyzed as described above. After photolysis, samples were immunoprecipitated overnight at 4\u00b0C with anti-Flag magnetic beads (Sigma). Beads were washed four times with buffer (50 mM Hepes pH 7.5, 150 mM NaCl, 0.5% Triton X-100), then eluted (5\u2009min, 100\u00b0C) in 1% SDS, 25 mM Hepes pH 7.5. Eluates were subjected to click chemistry with TAMRA-N3 and processed for in-gel fluorescence scanning as described above.\n\nGels were transferred to nitrocellulose by the semi-dry method, blocked with Odyssey Blocking Buffer (LI-COR Biosciences,\u00a0Lincoln,\u00a0NE), incubated with anti-EF1A (Millipore,\u00a0DE, cat. 05\u2013235) or anti-Flag (Sigma, cat. F3165), and detected with goat anti-mouse light chain-specific secondary antibody conjugated to 680 nm near-IR dye (Jackson ImmunoResearch Laboratories, West Grove, PA). Blots were scanned on an Odyssey infrared imager (LI-COR Biosciences).\n\n### Reconstitution of eEF1A ternary complex\n\nNative eEF1A was purified from rabbit reticulocytes as described (Carvalho et al., 1984). Bulk rabbit reticulocyte tRNA was purified as described (Merrick, 1979). tRNA was charged with phenylalanine using a crude reticulocyte tRNA synthetase preparation (Merrick, 1979) as described (Walker and Fredrick, 2008). Reactions (100 \u03bcL) were assembled by adding the following components in order: 50 \u03bcL 2X buffer (100 mM HEPES pH 7.3, 250 mM KOAc, 10 mM MgCl2), TCEP (1 \u03bcL,100 mM), GTP or GDP (1 \u03bcL,10 mM), \u00b1 Phe-tRNA (2 \u03bcL, ~0.1 mM), water to 97 \u03bcL, and eEF1A to 1 \u03bcM. Samples were incubated for 20\u2009min at RT before processing for photo-labeling as described above. Ansatrienin B was purchased from Enzo Life Sciences\u00a0(Farmingdale,\u00a0NY) and prepared as a 10 mM stock in DMSO. Didemnin B was obtained from the NCI/DTP chemical repository and was prepared as a 10 mM stock in DMSO.\n\n## Chemical synthesis\n\n### General\n\nMaterials purchased from commercial vendors were of reagent grade and used without further purification. (R)-2,5-Dihydro-3,6-dimethoxy-2-isopropylpyrazine (Sch\u00f6llkopf auxiliary) was purchased from Green Chempharm Inc\u00a0(Bardonia,\u00a0NY). N-Boc amino acids were purchased from Chem-Impex International (Wood Dale, IL). All other reagents were purchased from Sigma-Aldrich unless otherwise noted. (S)-Boc-photo-leucine was prepared from Boc-4,5-dehydro-Leu-OH (Chem-Impex Intl.) as described (MacKinnon et al., 2007). (2R,3R)-ethyl 2-amino-3-hydroxy-4-methylpentanoate (Shimokawa et al., 2007) (11, Figure 8),\u00a0tripeptide\u00a017\u00a0(Figure 8)\u00a0(Shimokawa et al., 2009), and iodides 6a and 6b (Nakamura and Mori, 2000; Smith et al., 1996)\u00a0were prepared as described.\n\nWater and air sensitive reactions were conducted in flame-dried glassware under an inert argon atmosphere. Dry solvents were prepared on a Glass Contour (Laguna Beach, CA) system, which dispenses solvents through either alumina or activated molecular sieve columns. 1H and 13C NMR spectra were obtained on a Varian (Palo Alto, CA) Inova 400 MHz spectrometer, a Bruker\u00a0(Billerica,\u00a0MA) Avance DRX500 spectrometer equipped with a QCI-Cryoprobe, or a Bruker AvanceIII 600 spectrometer, and referenced to the residual solvent peak. Spectral data are reported as follows: chemical shift (in ppm), integration, multiplicity (br, broad; s, singlet; d, doublet; t, triplet; q, quartet; m, multiplet; or as a combination of these), and coupling constant(s) in Hertz. LC-MS analysis was performed on a Waters\u00a0(Milford,\u00a0MA)\n\nAcquity LCT UPLC equipped with a TUV detector (monitored at 215 nm) and a Waters Acquity UPLC 1.7 \u03bcm C-18 column, eluting with a water/MeCN (+0.1% formic acid) gradient at 0.6 mL/min. Purification by reverse-phase HPLC was performed on either a Varian ProStar 210 purification system with a UV-Vis detector (model 345) monitoring at 215 nm, or a Waters binary gradient purification system (model 2545) with a photodiode array detector (model 2998).\n\nTwo dehydro-homolecuine diastereomers were prepared according to the scheme in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig7-v2.jpg)\n\n**Figure 7.:** Reagents and conditions: (a) nBuLi, THF, \u201378\u00b0C; (b) TBAF, THF, 0\u00b0C; (c) Dess-Martin periodinane, CH2Cl2; (d) MePPh3Br, nBuLi, THF, 0\u00b0C; (e) TFA, H2O/MeCN.\n\n#### (2S,5R)-2-((R)-3-((tert-butyldimethylsilyl)oxy)-2-methylpropyl)-5-isopropyl-3,6-dimethoxy-2,5-dihydropyrazine (7a)\n\nTo a solution of Sch\u00f6llkopf auxiliary (7\u2009g, 38 mmol) in dry THF (230 mL) at \u201378\u00b0C was added nBuLi (2.5 M in THF, 14.4 mL, 36 mmol) dropwise. The reaction was stirred for 1\u2009hr at \u201378\u00b0C, then 6a (6\u2009g, 20 mmol in 40 mL THF) was added dropwise. The reaction was kept overnight at \u201378\u00b0C, then quenched with saturated aqueous NH4Cl. The organic and aqueous phases were separated, and the aqueous layer was extracted with EtOAc (3 \u00d7 40 mL). The combined organic layers were washed with brine, dried (MgSO4), filtered, and concentrated. The resulting clear yellow oil was purified by flash column chromatography (1\u201310% EtOAc in hexanes) to provide 7a as a clear oil (4.4\u2009g, 59%). 1H NMR (400 MHz, CDCl3): \u03b4 0.03 (6H, s), 0.69 (3H, d, J = 6.8\u2009Hz), 0.89 (9H, s), 0.90 (3H, d, J = 10\u2009Hz), 1.05 (3H, d, J = 6.8\u2009Hz), 1.39 (1H, m), 1.89 (2H, m), 2.27 (1H, 7d, J = 3.4, 6.8\u2009Hz), 3.40 (1H, dd, J = 6.0, 10.0\u2009Hz), 3.52 (1H, dd, 4.8, 10.0\u2009Hz), 3.67 (3H, s), 3.68 (3H, s), 3.93 (1H, m), 4.04 (1H, m). 13C NMR (100 MHz, CDCl3): \u03b4 5.2, 16.7, 17.6, 18.5, 19.2, 26.1 (3C), 31.8, 32.3, 38.2, 52.4, 52.5, 54.3, 60.6, 68.2, 94.6, 163.3, 164.8. LC-MS (ESI +): 371.44 (+).\n\n#### (2S,5R)-2-((S)-3-((tert-butyldimethylsilyl)oxy)-2-methylpropyl)-5-isopropyl-3,6-dimethoxy-2,5-dihydropyrazine (7b)\n\nIn the same manner as above, 6b (2.8\u2009g, 8.8 mmol) was converted to 7b (2.1\u2009g, 64%). 1H NMR (400 MHz, CDCl3): \u03b4 0.03 (6H, s), 0.69 (3H, d, J = 6.8\u2009Hz), 0.88 (9H, br), 0.94 (3H, d, J = 6.8\u2009Hz), 1.05 (3H, d, J = 6.8\u2009Hz), 1.58 (2H, m), 1.96 (1H, br), 2.27 (1H, 7d, J = 3.2, 6.8\u2009Hz), 3.35 (1H, dd, J = 6.8, 10\u2009Hz), 3.47 (1H, dd, J = 6, 10\u2009Hz), 3.67 (3H, s), 3.68 (3H, s), 3.91 (1H, m), 4.02 (1H, m). 13C NMR (100 MHz, CDCl3): \u03b4 5.2, 16.7, 16.8, 18.5, 19.2, 26.1 (3C), 31.7, 32.4, 38.4, 52.4, 52.5, 53.9, 60.7, 68.9, 94.6, 163.1, 164.8. LC-MS (ESI +): 371.44 (+).\n\n#### (R)-3-((2S,5R)-5-isopropyl-3,6-dimethoxy-2,5-dihydropyrazin-2-yl)-2-methylpropan-1-ol (8a)\n\nTo a solution of 7a (4.8\u2009g, 12.9 mmol) in THF (130 mL) cooled to 0\u00b0C, TBAF (1 M in THF, 15.5 mL, 15.5 mmol) was added slowly. The reaction was warmed to room temperature, stirred overnight, and then saturated aqueous NH4Cl (15 mL) was added. The aqueous layer was extracted with EtOAc (4 \u00d7 20 mL). The combined organic layers were washed with brine (20 mL), dried (MgSO4), filtered, and concentrated. The resulting oil was purified by flash column chromatography on Et3N-treated silica (7:3 hexanes/EtOAc + 3% Et3N) to provide 8a as a clear oil(1.3\u2009g, 87%). 1H NMR (400 MHz, CDCl3): \u03b4 0.71 (3H, d, J = 6.8\u2009Hz). 0.99 (3H, d, J = 6.8\u2009Hz), 1.04 (3H, d, J = 6.8\u2009Hz), 1.63 (1H, m), 1.98 (1H, m), 2.07 (1H, m), 2.25 (1H, m) 3.49 (1H, m), 3.57 (1H, m), 3.69 (3H, s), 3.70 (3H, s), 3.99 (1H, t, J = 3.6\u2009Hz), 4.05 (1H, m), 4.29 (1H, m). 13C NMR (100 MHz, CDCl3): \u03b4 16.8, 16.9, 19.2, 32.1, 32.9, 39.2, 52.5, 52.7, 53.0, 61.1, 67.5, 164.1, 164.7. LC-MS (ESI +): 257.36 (+).\n\n#### (S)-3-((2S,5R)-5-isopropyl-3,6-dimethoxy-2,5-dihydropyrazin-2-yl)-2-methylpropan-1-ol (8b)\n\nIn the same manner as above, 7b (1.8\u2009g, 4.8 mmol) was converted to 8b (1.1\u2009g, 89%). 1H NMR (400 MHz, CDCl3): \u03b4 0.69 (3H, d, J = 6.8\u2009Hz), 0.93 (3H, d, J = 6.8\u2009Hz), 1.05 (3H, d, J = 6.8\u2009Hz), 1.59 (1H, br), 1.94 (1H, m), 2.18\u20132.30 (2H, m), 3.36 (1H, m), 3.57 (1H, m), 3.69 (3H, s), 3.70 (3H, s), 3.94\u20133.99 (2H, m), 5.66 (1H,br). 13C NMR (100 MHz, CDCl3): \u03b4 16.8, 19.1, 19.2, 32.0, 37.1, 42.3, 52.8, 53.2, 55.8, 60.9, 68.9, 163.5, 164.6. LC-MS (ESI +): 257.35 (+).\n\n#### (2R,5S)-2-isopropyl-3,6-dimethoxy-5-((R)-2-methylbut-3-en-1-yl)-2,5-dihydropyrazine (9a)\n\nTo a solution of Dess-Martin periodinane (5.9\u2009g, 14 mmol) in wet CH2Cl2 (55 mL), 8a (2.9\u2009g, 11.1 mmol) in CH2Cl2 (110 mL) was added slowly. After 1\u2009hr, NaOH(1.5 M, 70 mL) was added and the solution was stirred for 10\u2009min. Layers were separated and the organic layer was shaken with NaOH (0.75 M, 70 mL). The combined aqueous layers were extracted with Et2O (3 \u00d7 25 mL). The combined organics were dried (MgSO4), filtered, and concentrated. The resulting aldehyde was azeotropically dried (3 \u00d7 MeCN) then carried on to the next step without purification.\n\nnBuLi (2.5 M in hexanes, 9.3 mL, 23 mmol) was added to oven-dried methyl triphenylphosphonium bromide (8.8\u2009g, 24.5 mmol) in dry THF (170 mL) at 0\u00b0C, and stirred for 30\u2009min until a deep yellow color persisted. The crude aldehyde (2.8\u2009g, 11 mmol) in dry THF (25 mL) was added dropwise at 0\u00b0C, then stirred for 30\u2009min. The reaction was quenched with saturated aqueous NH4Cl. The aqueous layer was extracted with EtOAc (3 \u00d7 20 mL). Combined organics were washed with brine, dried (MgSO4), filtered, and concentrated. The resulting oil was purified by flash column chromatography (1\u20135% EtOAc in hexanes) to give 9a as a clear oil (1.1\u2009g, 40%). 1H NMR (400 MHz, CDCl3): \u03b4 0.68 (3H, d, J = 6.8\u2009Hz), 0.99 (3H, d, J = 7.2\u2009Hz), 1.04 (3H, d, J = 7.2\u2009Hz), 1.48 (1H, m), 1.85 (1H, m), 2.26 (1H, m), 2.47\u20132.56 (1H, br), 3.67 (3H, s), 3.69 (3H, br), 3.89 (1H, t, J = 3.4\u2009Hz), 3.97 (1H, dt, J = 3.6, 8.8\u2009Hz) 4.90 (2H, m), 5.71 (1H, m). 13C NMR (100 MHz, CDCl3): \u03b4 16.8, 19.2, 21.3, 31.8, 34.4, 41.6, 52.4, 52.5, 54.0, 60.9, 113.1, 114.3, 162.9, 164.6. LC-MS (ESI +): 253.34 (+).\n\n#### (2R,5S)-2-isopropyl-3,6-dimethoxy-5-((S)-2-methylbut-3-en-1-yl)-2,5-dihydropyrazine (9b)\n\nIn the same manner as above, 8b (1.1\u2009g, 4.3 mmol) was converted to 9b (450 mg, 42%).1H NMR (400 MHz, CDCl3): \u03b4 0.69 (3H, d, J = 6.8\u2009Hz), 1.03 (3H, d, J = 6.8\u2009Hz), 1.04 (3H, d, J = 6.8\u2009Hz), 1.64 (1H, m), 1.78 (1H, m), 2.27 (1H, m), 2.49 (1H, m), 3.68 (3H, s), 3.69 (3H, s), 3.91 (1H, t, J = 3.2\u2009Hz), 4.01 (1H, m), 4.86 (1H, m), 4.93 (1H, m), 5.71 (1H, m).\u00a0LC-MS (ESI +): 253.34 (+).\n\n#### (2S,4R)-methyl 2-amino-4-methylhex-5-enoate (10a)\n\nTo a solution of 9a (550 mg, 2.1 mmol) in MeCN (10 mL), TFAaq (0.1\u2009N, 15 mL) was added and the reaction stirred overnight. The reaction mixture was evaporated and the resulting white solid was purified by reverse-phase HPLC. Column: Waters XBridge Prep C18, 5 \u03bcm, 30 \u00d7 250 mm. Conditions: 0\u201325% MeCN/H2O (+ 0.1% formic acid in both mobile phases) linear gradient over 40\u2009min, flow rate 20 mL/min. The purified formate salt was dissolved in saturated aqueous NaHCO3 (5 mL), and then the aqueous solution was extracted with Et2O (4 \u00d7 10 mL). The organic fractions were combined and HCl (0.6 mL, 4\u2009N in dioxane) was added. Solvent was evaporated to give 10a as a white solid (140 mg, 0.7 mmol, 34%). 1H NMR (400 MHz, DMSO-d6): \u03b4 0.98 (3H, d, J = 6.8\u2009Hz), 1.66 (1H, ddd, J = 6.0, 8.0, 14.0\u2009Hz), 1.77 (1H, ddd, J = 5.6, 8.8, 14.4), 2.35 (1H, m), 3.73 (3H, s), 3.82 (1H, dd, J = 5.6, 8.0\u2009Hz), 5.02 (1H, m), 5.09 (1H, m), 5.67 (1H, m), 8.14 (3H, br). 13C NMR (100 MHz, DMSO-d6): \u03b4 19.8, 33.2, 37.2, 50.7, 52.7, 114.7, 142.3, 170.7. LC-MS (ESI +): 158.26 (+).\n\n#### (2S,4S)-methyl 2-amino-4-methylhex-5-enoate (10b)\n\nIn the same manner as above, 9b (300 mg, 1.2 mmol) was converted to 10b (168 mg, 75%). 1H NMR (400 MHz, DMSO-d6): \u03b4 0.98 (3H, d, J = 6.8\u2009Hz), 1.74 (2H, t, J = 6.8\u2009Hz), 2.33 (1H, p, J = 7.2\u2009Hz), 3.75 (3H, s), 3.94 (1H, t, J = 6.8\u2009Hz), 5.03 (2H, m), 5.66 (1H, m), 8.28\u20138.40 (3H, br). 13C NMR (100 MHz, DMSO-d6): \u03b4 19.9, 33.1, 37.0, 50.5, 52.6, 114.4, 142.4, 160.3. LC-MS (ESI +): 159.23 (+).\n\n### Synthesis of cyclic peptides\n\nTernatin (1) and ternatin-4-Ala (2) were synthesized as described, and all spectral data were in accordance with those reported (Shimokawa et al., 2008b). Cyclic peptides 3, 4, 4b, and 5, were synthesized by the same route as ternatin (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig8-v2.jpg)\n\n**Figure 8.:** Reagents and conditions: (a) HATU, DIPEA, DCM/DMF; (b) 2 M HCl, MeOH, 30\u00b0C; (c) 1\u2009N LiOH, H2O/THF; (d) HATU, DIPEA, DMF.\n\n#### General procedure for coupling Boc-protected amino acids (a)\n\nA flask was charged with the N-Boc amino acid (1 equiv), N-deprotected peptide methyl ester (1 equiv), HATU (1.1 equiv), and CH2Cl2/DMF (1:1 v/v, 0.1 M peptide methyl ester). The reaction was cooled to 0\u00b0C, and N,N-diisopropylethylamine (3 equiv) was added dropwise, giving a clear yellow solution. The reaction was allowed to warm to room temperature, and was monitored by LC-MS. After 3\u201312\u2009hr, the reaction was quenched by the addition of saturated aqueous NH4Cl (1\u20135 mL) and diluted with EtOAc (10\u201320 mL). The organic layer was separated, and the aqueous layer was extracted with EtOAc (4 \u00d7 10\u201320 mL). The organic fractions were combined and washed with brine (10\u201320 mL), dried (MgSO4), filtered, and concentrated. Peptides were purified by silica gel column chromatography using hexane/EtOAc gradients (dipeptides, tripeptides, tetrapeptides), or isopropyl alcohol/toluene gradients (linear heptapeptides).\n\n#### General procedure for Boc deprotection (b)\n\nThe N-Boc amino ester (1 equiv, 0.5 M in MeOH)\u00a0was treated with HCl (5 equiv, 2 M in MeOH) and gently warmed (30\u201335\u00b0C). Reaction progress was monitored by LC-MS until no starting material remained (2\u2009hr). Solvent was evaporated, and the residue was azeotropically dried with MeCN until the product appeared as a white solid, which was used for the next coupling step without purification.\n\n#### General procedure for ester hydrolysis (c)\n\nThe ester was dissolved in 3:1 THF/H2O (0.1 M) and was treated with 1\u2009N LiOH (10 equiv). Reaction progress was monitored by LC-MS until no starting material remained (1\u20132\u2009hr). The reaction was brought to neutral pH with stoichiometric 1\u2009N HCl and solvent was evaporated. The resulting residue was azeotropically dried with MeCN and used in the next coupling step without further purification.\n\n#### General procedure for macrocyclization (d)\n\nMacrocyclization was carried out under a pseudo-high dilution protocol using two syringe pumps carrying (1) the fully deprotected linear heptapeptide in DMF (1 equiv, 0.02 M), and (2) HATU in DMF (3 equiv, 0.1 M), which were added at 0.01 mL/min to a flask containing DIPEA in DMF (6 equiv, 0.1 M). After addition, the reaction was allowed to stir at room temperature for 24\u2009hr, then the solvent was distilled under reduced pressure (bath temperature <30\u00b0C). The resulting residue was dissolved in EtOAc (10 mL), washed with 1\u2009N HCl (5 mL), saturated aqueous NaHCO3 (5 mL), and brine (2 mL), then dried over MgSO4, filtered, and concentrated. The resulting residue was dissolved in DMSO and purified by reverse phase HPLC. Column: Peeke Scientific Combi-A 5 \u03bcm preparative C18, 50 \u00d7 22 mm. Conditions: MeCN/H2O 40\u201345% (+ 0.1% TFA in both mobile phases) linear gradient over 20\u2009min, flow rate 10 mL/min.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig9-v2.jpg)\n\n1H NMR (600 MHz, DMSO-d6): \u03b4 0.77 (3H, d, J = 7.2\u2009Hz), 0.89 (3H, J = 6.6\u2009Hz), 1.09 (1H, d, J = 6.53\u2009Hz), 1.15\u20131.19 (5H, m), 1.37 (2H, m), 1.41 (9H, s), 1.52\u20131.63 (3H, m), 1.76 (1H, m), 2.61 (1H, m), 2.68 (3H, s), 3.41\u20133.67 (2H, m), 4.01\u20134.11 (2H, m), 4.28\u20134.38 (1H, m), 4.83\u20135.05 (3H, m), 7.91 (1H, d, J = 8.2\u2009Hz). 13C-NMR (150 MHz, DMSO-d6): \u03b4 14.5, 15.0, 16.7, 20.1, 28.5, 29.7, 38.7, 42.6, 50.5, 51.9, 55.7, 60.2, 60.6, 75.2, 75.4, 79.7, 80.0, 154.9, 170.7, 171.3, 171.4. LC-MS (ESI \u2013): 470.36 (\u2013).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig10-v2.jpg)\n\n1H NMR (600 MHz, CDCl3): major conformer \u03b4 0.83\u20130.97 (24H, m), 1.19 (1H, td, J = 7.2, 14.2), 1.27\u20131.82 (20H, m), 1.46 (9H, s), 1.75 (1H, td, J = 7.2, 13.4), 2.78 (3H, s), 2.79 (3H, s), 2.95 (3H, s), 3.23\u20133.39 (1H, m), 3.71 (3H, s), 3.90 (1H, m), 4.06 (1H, d, J = 7.2), 4.41 (1H, q, J = 6.1), 4.48\u20134.56 (1H, m), 4.74 (1H, t, J = 6.8), 4.99 (1H, q, J = 6.3), 5.05 (1H, t, J = 7.8), 5.20 (1H, s), 5.49 (1H, q, J = 6.4), 6.86 (1H, d, J = 8.4), 6.91 (1H, d, J = 7.8), 7.55 (1H, d, J = 7.8). 13C-NMR (150 MHz, DMSO-d6): major conformer \u03b4 11.8, 14.2, 14.6, 17.1, 19.6, 20.0, 21.7, 21.8, 22.8, 23.2, 24.7, 25.0, 25.6, 26.5, 28.4, 29.6, 29.7, 30.2, 30.3, 31.0, 36.0, 36.7, 38.6, 41.1, 43.1, 50.3, 51.2, 52.3, 52.6, 52.7, 54.2, 54.9, 58.6, 60.4, 68.2, 76.9, 80.3, 155.8, 170.1, 171.0, 171.2, 171.7, 172.0, 172.1, 173.0. LC-MS (ESI \u2013): 894.65 (\u2013).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig11-v2.jpg)\n\n1H NMR (600 MHz, CDCl3): major conformer \u03b4 0.99 (3H, d, J = 6.7\u2009Hz), 1.26 (3H, d, J = 6.6\u2009Hz), 1.44 (9H, s), 0.82\u20131.80 (33H, m), 1.94 (1H, m), 2.06 (1H, m), 2.17 (1H, m), 2.26 (1H, m), 2.78 (3H, s), 2.79 (3H, s), 2.94 (3H, s), 3.11 (1H, s), 3.70 (3H, s), 3.88 (1H, m), 4.37\u20134.47 (3H, m), 4.73 (1H, dd, J = 5.5, 8.3\u2009Hz), 4.89\u20134.99 (3H, m), 5.03 (1H, dd, J = 6.7, 8.9\u2009Hz), 5.19 (1H, br), 5.50 (1H, m), 5.59 (1H, m), 6.45 (1H, d, J = 7.9\u2009Hz), 6.87 (1H, d, J = 8.4\u2009Hz), 7.63 (1H, d, J = 7.6\u2009Hz). 13C NMR (150 MHz, CDCl3): major conformer \u03b4 11.90, 14.2, 14.3, 14.7, 19.7, 20.8, 21.9, 22.7, 23.3, 24.8, 25.7, 26.6, 26.7, 28.4 (3C), 29.7, 29.8, 30.2, 30.5, 31.7, 35.1, 36.2, 36.8, 38.7, 38.9, 43.2, 50.4, 50.9, 51.5, 52.4, 52.6, 52.8, 53.5, 55.0, 79.2, 114.8, 142.3, 152.0, 170.2, 171.1, 171.2, 171.8, 172.1, 172.1, 172.8. LC-MS (ESI +): 908.73 (+).\n\n![Figure 12.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig12-v2.jpg)\n\n1H NMR (600 MHz, CDCl3): major conformer \u03b4 0.86 (3H, d, J = 6.5\u2009Hz), 0.97 (3H, d, J =6.7\u2009Hz), 1.25 (3H, d, J = 6.8\u2009Hz), 1.44 (9H, s), 0.86\u20132.11 (32H, m), 2.15 (1H, m), 2.24 (1H, m), 2.77 (3H, s), 2.78 (3H, s), 2.94 (3H, s), 3.10 (1H, s), 3.69 (3H, s), 3.87 (1H, br), 4.10 (1H, br), 4.41 (1H, m), 4.50 (1H, ddd, J = 5.7, 8.1, 13.8\u2009Hz), 4.72 (1H, dd, J = 5.7, 8.0\u2009Hz), 4.91\u20134.98 (3H, m), 5.03 (1H, dd, J = 6.5, 9.1\u2009Hz), 5.18 (1H, m), 5.48 (1H, m), 5.62 (1H, m), 6.53 (1H, d, J = 7.9\u2009Hz), 6.92 (1H, d, J = 8.5\u2009Hz), 7.60 (1H, d, J = 7.5\u2009Hz). 13C NMR (150 MHz, CDCl3): major conformer \u03b4 11.9, 14.1, 14.2, 14.6, 17.2, 19.7, 19.8, 20.0, 21.9, 23.2, 24.8, 25.7, 26.5, 28.4 (3C), 29.0, 29.8, 30.3, 30.5, 30.7, 34.5, 36.2, 36.8, 38.7, 50.4, 50.5, 50.6, 50.7, 52.4, 52.7, 52.8, 54.3, 55.0, 79.1, 113.9, 142.8, 155.9, 170.1, 171.0, 171.3, 171.7, 172.1, 172.2, 172.7. LC-MS (ESI +): 908.52 (+).\n\n#### (S)-Boc-photo-leucine methyl ester (16)\n\nTo a solution of (S)-Boc-photo-leucine (72 mg, 0.3 mmol) in MeOH (4 mL) at RT was added TMS-diazomethane (2 M in hexane) dropwise until a yellow color persisted. The reaction was then concentrated, giving 16 as a clear oil (85 mg, quantitative yield). 1H NMR (400 MHz, CDCl3): \u03b4 1.05 (3H, s), 1.44 (9H, s), 1.86 (1H, m), 3.73 (3H, s), 4.34 (1H, m), 5.12 (1H, m). 13C NMR (100 MHz, CDCl3): \u03b4 19.8, 23.8, 28.4, 38.2, 50.3, 52.7, 80.3, 155.1, 172.3. LC-MS (ESI \u2013): 256.14 (\u2013).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig13-v2.jpg)\n\n1H NMR (500 MHz, CDCl3): major conformer \u03b4 0.84\u20131.05 (24H, m), 1.28\u20131.40 (8H, m), 1.44 (9H, s), 1.61\u20131.77 (5H, m), 1.94\u20132.06 (4H, m), 2.13 (1H, dd, J = 4.3, 15\u2009Hz), 2.82 (3H, s), 2.83 (3H, s), 2.95 (3H, s), 3.12 (1H, s), 3.74 (3H, s), 4.10 (1H, d, J = 6.3\u2009Hz), 4.40\u20134.36 (2H, m), 4.61 (1H, td, J = 8.9, 4.0\u2009Hz), 4.75 (1H, dt, J = 6.6, 3.4\u2009Hz), 4.84\u20134.86 (1H, m), 5.01\u20135.03 (1H, m), 5.09\u20135.12 (1H, m), 5.14\u20135.18 (1H, m), 5.63 (1H, q, J = 6.8\u2009Hz), 6.69 (1H, d, J = 8.5\u2009Hz), 6.84 (1H, d, J = 8.1\u2009Hz), 7.07 (1H, d, J = 8.2\u2009Hz).13C NMR (125 MHz, CDCl3): major conformer \u03b4 11.7, 11.8, 14.0, 14.2, 14.5, 17.9, 19.4, 19.6, 22.8 (3C), 23.3, 23.8, 24.7, 24.8, 26.6, 28.4, 30.3, 30.4, 35.7, 37.3, 48.7, 49.4, 50.7, 52.7, 52.8, 52.9, 54.6, 54.7, 56.2, 62.8, 70.6, 70.7, 75.7, 79.6, 80.4, 80.9, 156.0, 169.2, 169.9, 170.0, 171.3, 171.4, 172.6, 173.9. LC-MS (ESI \u2013): 904.74 (\u2013).\n\n![Figure 14.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig14-v2.jpg)\n\nUsing the general procedures described above, the fully protected linear heptapeptide 13 (60 mg, 0.066 mmol) was deprotected and converted to cyclic peptide 3 (12 mg, 24%). 1H NMR (600 MHz, DMSO-d6): \u03b4 0.79\u20130.95 (21H, m), 1.05 (3H, d, J = 6.4\u2009Hz), 1.21 (5H, s), 1.26 (3H, d, J = 7.2\u2009Hz), 1.34\u20131.42 (5H, m), 1.50 (4H, dd, J = 21.3, 8.1\u2009Hz), 1.61 (3H, t, J = 15.6\u2009Hz), 1.76\u20131.80 (3H, m), 1.89\u20131.98 (2H, m), 2.35 (1H, d, J = 12.7\u2009Hz), 2.47 (2H, dt, J = 3.6, 1.8\u2009Hz), 2.79 (3H, s), 2.84 (3H, s), 3.02 (3H, s), 3.42 (1H, d, J = 9.4\u2009Hz), 3.88 (1H, dd, J = 10.9, 4.0\u2009Hz), 4.04 (1H, d, J = 12.9\u2009Hz), 4.47 (1H, t, J = 4.3\u2009Hz), 4.78 (2H, d, J = 32.4\u2009Hz), 4.86 (1H, d, J = 1.5\u2009Hz), 4.97 (2H, d, J = 27.5\u2009Hz), 5.31 (1H, q, J = 6.5\u2009Hz), 7.41 (1H, d, J = 9.8\u2009Hz), 7.74 (1H, d, J = 9.0\u2009Hz), 8.62 (1H, d, J = 4.9\u2009Hz).13C NMR(150 MHz, DMSO-d6): \u03b4 11.7, 13.5, 13.7, 14.6, 15.3, 20.6, 20.8, 20.9, 22.0, 23.1, 23.5, 24.4, 25.1, 25.2, 25.3, 25.7, 28.4, 29.1, 29.4, 31.1, 33.3, 37.5, 43.1, 43.0, 48.7, 49.2, 50.6, 51.8, 54.4, 55.0, 57.9, 75.3, 167.6, 168.0, 168.6, 172.0, 172.6, 172.7, 173.5.\u00a0LC-MS (ESI \u2013): 762.51 (\u2013).\n\n![Figure 15.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig15-v2.jpg)\n\nUsing the general procedures described above, the fully protected linear heptapeptide 14 (78 mg, 0.078 mmol) was deprotected and converted to cyclic peptide 4 (8.7 mg, 22%). 1H NMR (600 MHz, DMSO-d6): \u03b4 0.82 (3H, d, J = 6.7\u2009Hz), 0.83\u20130.96 (20H, m), 1.09 (3H, d, J = 6.5\u2009Hz), 1.23 (2H, s), 1.28 (3H, d, J = 7.4\u2009Hz), 1.38 (2H, m), 1.52 (2H, m), 1.58\u20131.67 (3H, m), 1.80 (2H, m), 1.94 (1H, m), 2.05 (1H, m), 2.38 (1H, m), 2.83 (3H, s), 2.90 (1H, m), 2.89 (3H, s), 2.99 (3H, s), 3.44 (1H, m), 3.90 (1H, dd, J = 4.1, 10.9\u2009Hz), 4.07 (1H, d, J = 12.6\u2009Hz), 4.52 (1H, dd, J = 3.9, 4.7\u2009Hz), 4.67 (1H, m), 4.81 (1H, t, J = 9.6\u2009Hz), 4.88 (2H, m), 5.00 (2H, m), 5.34 (1H, dd, J = 6.5, 13\u2009Hz), 5.69 (1H, ddd, J = 8.7, 10.0, 17.0\u2009Hz), 7.39 (1H, d, J = 9.8\u2009Hz), 7.76 (1H, d, J = 5.3\u2009Hz), 8.69 (1H, d, J = 4.9\u2009Hz). 13C NMR (150 MHz, DMSO-d6): \u03b4 11.7, 13.6, 13.7, 14.6, 15.4, 20.7, 20.8, 22.1, 23.6, 24.5, 25.2, 25.3, 25.7, 28.4, 29.1, 29.5, 31.1, 33.4, 35.5, 35.6, 35.5, 35.7, 43.2, 48.7, 49.4, 50.7, 51.9, 54.4, 55.1, 58.1, 75.4, 115.1, 142.5, 167.8, 168.1, 168.7, 172.2, 172.7 (2C), 173.7. LC-MS (ESI +): 776.57 (+).\n\n![Figure 16.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig16-v2.jpg)\n\nUsing the general procedures described above, the fully protected linear heptapeptide 15 (50 mg, 0.065 mmol) was deprotected and converted to cyclic peptide 4b (5.8 mg, 12%). 1H NMR (600 MHz, DMSO-d6): \u03b4 0.82 (3H, d, J = 6.7\u2009Hz), 0.84\u20130.90 (15H, m), 0.93 (3H, d, J = 6.9\u2009Hz), 0.98 (3H, d, J = 6.7\u2009Hz), 1.09 (3H, d, J = 6.5\u2009Hz), 1.23 (1H, m), 1.29 (3H, d, J = 7.4\u2009Hz), 1.39 (2H, m), 1.50 (2H, m), 1.64 (3H, m), 1.80 (2H, m), 1.94 (1H, ddd, J = 4.6, 11.0, 13.1\u2009Hz), 2.14 (1H, m), 2.37 (1H, m), 2.83 (3H, s), 2.88 (3H, s), 2.90 (1H, m) 3.06 (3H, s), 3.45 (1H, dd, J = 1.8, 9.5\u2009Hz), 3.91 (1H, dd, J = 4.2, 10.7\u2009Hz), 4.06 (1H, d, J = 12.8\u2009Hz), 4.49 (1H, dd, J = 3.7, 4.9\u2009Hz), 4.80 (1H, t, J = 9.6\u2009Hz), 4.84 (1H, m), 4.86 (1H, m), 4.85\u20135.04 (3H, m), 5.33 (1H, dd, J = 6.2, 12.8\u2009Hz), 5.74 (1H, app sept., J = 6.9, 10.3, 17.2\u2009Hz),7.40 (1H, d, J = 9.8\u2009Hz), 7.81 (1H, d, J = 8.9), 8.62 (1H, d, J = 4.9\u2009Hz). 13C NMR (125 MHz, DMSO-d6): \u03b4 11.6, 13.5, 13.7, 14.6, 15.3, 17.8, 20.6, 20.8, 22.0, 22.5, 23.5, 24.4, 25.1, 25.2, 25.7, 28.4, 29.1, 29.5, 31.2, 33.1, 34.2, 35.2, 43.1, 48.4, 49.2, 50.7, 51.8, 54.4, 54.9, 57.9, 75.2, 112.6, 143.8, 167.7, 168.0, 168.6, 171.9, 172.6, 172.7, 173.5. LC-MS (ESI +): 776.52 (+).\n\n![Figure 17.](https://cdn.elifesciences.org/articles/10222/elife-10222-fig17-v2.jpg)\n\nUsing the general procedures described above, the fully protected linear heptapeptide 17 (45 mg, 0.044 mmol) was deprotected and converted to cyclic peptide 5 (9.2 mg, 27%). 1H NMR (600 MHz, DMSO-d6): \u03b4 0.81 (3H, d, J = 6.6\u2009Hz), 0.84-0.92 (10H, m), 1.01 (3H, s), 1.11 (3H, d, J =6.5\u2009Hz), 1.13-1.41 (11H, m), 1.47-1.55 (2H, m), 1.61-1.71 (3H, m), 1.82-1.86 (1H, m), 1.90 (1H, dd, J = 2.1, 15.5\u2009Hz), 2.00 (1H, ddd, J = 5.8, 12.2, 17.9\u2009Hz), 2.55-2.60 (1H, m), 2.74-2.80 (2H, m), 2.89 (3H, s), 2.91 (3H, s), 3.02 (3H, s), 3.04 (3H, s), 3.37 (1H, d, J = 9.3\u2009Hz),3.98 (1H, dd, J = 3.8, 11.1\u2009Hz), 4.12-4.14 (1H, m), 4.61 (1H, dd, J = 4.8, 3.6\u2009Hz), 4.70 (1H, t, J = 9.6\u2009Hz), 4.77 (1H, ddd, J = 11.7, 9.2, 2.3\u2009Hz), 4.86 (1H, q, 7.2\u2009Hz), 5.19 (1H, dd, J = 11.4, 4.7\u2009Hz), 5.39 (1H, q, J = 6.6\u2009Hz), 7.15 (1H, d, J = 9.8\u2009Hz), 7.1 (1H, m), 8.55 (1H, d, J = 5.0\u2009Hz). 13C NMR (150 MHz, C6D6): \u03b4 11.7, 13.5, 14.4, 14.7, 19.4, 21.3, 22.5, 24.2, 25.4, 26.8, 29.3, 29.4, 29.9, 30.2, 30.2, 30.3, 30.5, 30.9, 33.5, 34.2, 39.2, 49.8, 51.7, 55.3, 55.3, 56.3, 59.2, 68.1, 70.1, 75.9, 80.5, 167.6, 168.1, 169.0, 172.5, 173.1, 174.3, 175.4. LC-MS (ESI \u2013): 772.69 (\u2013).\n",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "19c6c6b1-b863-423e-8fbd-0b2e64a43781",
+      "submission_id": "42e63c60-7d5a-4efa-8970-55cdbe736d6d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben Cravatt, The Scripps Research Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10222.026](https://doi.org/10.7554/eLife.10222.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Ternatin and improved synthetic variants kill cancer cells by targeting the elongation factor-1A ternary complex\" for peer review at eLife. Your submission has been favorably evaluated by John Kuriyan (Senior editor), a Reviewing editor, and three reviewers.\n\nSummary:\n\nReviewer 1: This is a fascinating detective story epitomizing the power of combining chemical tools with biological intuition to elucidate the mode of action of a promising family of natural products and related analogs. The strengths of the manuscript include (1) Synthesis and discovery of a new derivative, ternatinA4, with significantly improved cellular activity over ternatin itself. (2) Demonstration, once again, of the use of photo-leucine, as a useful tool to help detect binding proteins of cyclic peptides. (3) Elucidation of the mode of action of the ternatin family of natural products and identification of the eEF1A-GTP-aminoacyl-tRNA complex as the target. Though ternatin and its analog ternatinA4 are not the first translation inhibitors targeting eEF1A, their structural simplicity and ease of synthesis renders them more ideal leads for future drug development. (4) The data are of high quality and convincing.\n\nReviewer 2: The study nicely demonstrates the utility of chemical biology approaches for target identification and has identified what appears to be the major cellular target of a class of compounds with therapeutic potential. Overall, it is a nice body of work that will be of interest to scientists in the fields of chemical biology and drug discovery.\n\nReviewer 3: In this manuscript by Carelli and co-workers the authors seek to identify the macromolecular target of the ternatin natural product and related derivatives. The authors use similarities between ternatin and other reported cytotoxic natural products to design hybrid compounds (3 and 4), and these molecules are more potent as cell death inducing agents. After showing these compounds inhibit protein synthesis, the authors use a series of labeling studies (utilizing derivative 5) to infer that eEF1A is the biological target. Interestingly, the authors never apparently confirm this target with mass spec (as is standard nowadays) but instead use resistant cell lines that have mutations in this target, and some in vitro experiments, to connect the compound to the target. Overall this type of target ID work is messy and difficult and the authors are commended for doing a very nice job with this study.\n\nMajor comments for revision:\n\n1) Reviewer 2: The authors use ternatin-resistant cell lines containing A399V/T mutations, however these lines appear to have been generated by selection against another protein synthesis inhibitor. In light of this, these cell lines may contain additional mutations that are necessary for ternatin resistance. I suggest that the authors demonstrate that overexpression of a mutant eEFA1 transgene confers similar cellular resistance to the drug.\n\n2) Reviewer 3: In my opinion, it is a missed opportunity that the authors do not come back and try to explain the results of the 21 cell line panel in the context of their data. Could it be that the three highly resistant cell lines have these very mutations in the EE1A1 gene (that confer resistance to 4, Figure 5a)? That would be incredibly exciting. And, actionable \u2013 as the authors mention this eEF1A is not an uncommon target for drugs to hit, and experimental therapeutics that hit this target are in the clinic. If patient outcome could be predicted before treatment (based on this mutation) that would be a most valuable part of this work.\n\nFull reviews:\n\nReviewer #1:\n\nIn this manuscript, Taunton and colleagues elucidated the molecular mechanism of action of ternatin and its synthetic analog with greater antiproliferative potency. The authors began with an astute detective work to identify the relationship between ternatin and some of highly potent antiproliferative cyclic peptides disclosed in the patent literature. They then synthesized a few analogs and identified one (ternatin analog #4 or ternatinA4) with 20- to 50-fold higher potency than the ternatin itself in a large number of cancer cell lines. Based on limited structure-activity relationship, an active photo-affinity label with a clickable handle was made and used to detect a 50-kD protein from cell extract. Guided by the effect of ternatin and analogs on translation elongation, the authors guessed that the 50-kD protein is eEF1A, a GTPase that is involved in the loading of charged tRNA during the elongation phase of protein synthesis. Subsequently, the authors found that ternatinA4 indeed bound to eEF1A in a GTP and aminoacyl-tRNA dependent manner, suggesting that ternatin bound to the ternary complex of eEF1A, GTP and aminoacyl-tRNA. To confirm that eEF1A is the bona fide target for ternatinA4, the authors took advantage of a known Ala399 mutant of eEF1A that was recently reported to confer resistance to another elongation inhibitor nannocystin A. Indeed, the same A399V mutant was found to confer resistance to ternatinA4 to cells and lost binding to ternatinA4. Moreover, the authors also demonstrated that the known eEF1A inhibitors didemnin B and ansatrienin B could both compete against the ternatin photo-affinity label for binding to eEF1A, suggesting that they share the same target.\n\nThis is a fascinating detective story epitomizing the power of combining chemical tools with biological intuition to elucidate the mode of action of a promising family of natural products and related analogs. The strengths of the manuscript include (1) Synthesis and discovery of a new derivative, ternatinA4, with significantly improved cellular activity over ternatin itself. (2) Demonstration, once again, of the use of photo-leucine, as a useful tool to help detect binding proteins of cyclic peptides. (3) Elucidation of the mode of action of the ternatin family of natural products and identification of the eEF1A-GTP-aminoacyl-tRNA complex as the target. Though ternatin and its analog ternatinA4 are not the first translation inhibitors targeting eEF1A, their structural simplicity and ease of synthesis renders them more ideal leads for future drug development. (4) The data are of high quality and convincing.\n\nA few issues remain that the authors may consider addressing to further strengthen the manuscript.\n\n1) Very minor: A gradient symbol was used to show changes in concentrations of compounds used in different experiments (i.e., Figure 2a, Figure 3b, c, Figure 4d). Though the lowest and highest concentrations were shown, it is not immediately obvious what those intermediate concentrations were. As there were only a limited number of lanes, the drug concentration for each lane should be either shown in the figure or figure legends.\n\n2) Minor: In Figure 2c, the authors used inhibition of polysome depletion by an initiation inhibitor as a hint that ternatinA4 likely inhibits the elongation phase of protein synthesis. A more definitive and popular method is to use a dual luciferase reporter with one of the luciferases under the control of an IRES element from a viral transcript. This can be easily done and will complement the polysome depletion assay.\n\n3) Major but optional: Since it has been shown that ternatinA4 binds to the eEF1A-GTP-aminoacyl-tRNA complex, an obvious mechanistic question is what is the functional impact of this interaction on the complex. A couple of obvious questions that come to mind include 1) Does ternatinA4 affect the binding of the eEF1A-GTP-aminoacyl-tRNA complex to the ribosome? 2) Does ternatinA4 inhibit the ribosome-stimulated GTP hydrolysis of the eEF1A complex? It is noted that the authors may not have the assays established in the lab. Hence, these experiments are optional.\n\nReviewer #2:\n\nThe authors describe their efforts to elucidate the mechanism of action of the cytotoxic natural product, ternatin, as well as related compounds. Guided by a photocrosslinkable and clickable ternatin derivative that they design, and cell biological investigation of the effects of the compound on protein synthesis, they identify eEFA1 as the cellular target of ternatin. Their assertion is supported by the demonstration that a single point mutation in eEFA1 abolishes photocrosslinking to their ternatin probe and confers cellular resistance to ternatin.\n\nThe study nicely demonstrates the utility of chemical biology approaches for target identification and has identified what appears to be the major cellular target of a class of compounds with therapeutic potential. Overall, it is a nice body of work that will be of interest to scientists in the fields of chemical biology and drug discovery.\n\nI have only two concerns about the manuscript in its present state:\n\n1) The authors claim that ternatin binds to a ternary complex containing GTP and aminoacyl-tRNA. Their claim is supported by RNaseA digestion of lysate that abrogates cross-linking to the ternatin probe and their reconstitution of the ternary complex. My concern relates to the resconstitution experiment that relies upon Phe-tRNA obtained from extracts. It seems that in this context the authors cannot exclude that some other RNA component may be important for binding, or that eEFA1 is somehow processed by residual activity carried over from the extract. There is no description of the purification protocol used to isolate the tRNA. Furthermore, why was Phe-tRNA used? Will any tRNA suffice or is ternatin binding specific to a complex containing Phe-tRNA?\n\n2) The authors use ternatin-resistant cell lines containing A399V/T mutations, however these lines appear to have been generated by selection against another protein synthesis inhibitor. In light of this, these cell lines may contain additional mutations that are necessary for ternatin resistance. I suggest that the authors demonstrate that overexpression of a mutant eEFA1 transgene confers similar cellular resistance to the drug.\n\nIf these concerns can be addressed, then this manuscript should be published in eLife.\n\nReviewer #3:\n\nIn this manuscript by Carelli and co-workers the authors seek to identify the macromolecular target of the ternatin natural product and related derivatives. The authors use similarities between ternatin and other reported cytotoxic natural products to design hybrid compounds (3 and 4), and these molecules are more potent as cell death inducing agents. After showing these compounds inhibit protein synthesis, the authors use a series of labeling studies (utilizing derivative 5) to infer that eEF1A is the biological target. Interestingly, the authors never apparently confirm this target with mass spec (as is standard nowadays) but instead use resistant cell lines that have mutations in this target, and some in vitro experiments, to connect the compound to the target.\n\nOverall this type of target ID work is messy and difficult and the authors are commended for doing a very nice job with this study.\n\nThere are a few issues/questions, some of which could make the paper much more interesting and useful if answered:\n\n1) The authors assess compounds 1 and 4 in a 21 cell line panel, but this panel does not include the workhorse cell line for this study (HEK293T), very odd. Where does this cell line fall in the two orders of magnitude sensitivity spectrum? That information would be useful in interpreting if the results (Figure 3 and Figure 4) are expected to be typical, or are anomalous.\n\n2) Perhaps more importantly, in my opinion it is a missed opportunity that the authors do not come back and try to explain the results of the 21 cell line panel in the context of their data. Could it be that the three highly resistant cell lines have these very mutations in the EE1A1 gene (that confer resistance to 4, Figure 5a)? That would be incredibly exciting. And, actionable \u2013 as the authors mention this eEF1A is not an uncommon target for drugs to hit, and experimental therapeutics that hit this target are in the clinic. If patient outcome could be predicted before treatment (based on this mutation) that would be a most valuable part of this work.\n\n3) Again, it is strange that the authors go to the trouble to generate nannocystin-resistant HCT116 cells \u2013 why not generate cells that are directly resistant to 1 or 4? I assume this was attempted.\n\n4) There are many places where key data is mentioned but not shown anywhere (effect on actin/tubulin, the nannocystin-resistance of the cell lines, etc.). Most journals now have a \"no data not shown\" policy.\n\n5) \"% DMSO control\" or \"Fraction DMSO control\" (in SI) are used for the IC50 curve Y-axes. More standard would be \"%AV/PI positive\" or \"% cell death\"; the figure legend should state how long the compound/cell incubation is in these experiments, as that can influence the interpretation of the data.\n",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc5af824-975e-4333-ab93-7cf04a50efa0",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C1",
+      "claim": "Ternatin is a cytotoxic natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1, Figure 1a) is an N-methylated cyclic heptapeptide that inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM) and becomes cytotoxic at ten-fold higher concentrations (Shimokawa et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states that ternatin becomes cytotoxic at ten-fold higher concentrations than its adipogenesis inhibition concentration, supported by citation to Shimokawa et al., 2008a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "1fa8c4b3-9e6f-4227-a346-97b6196055c4",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C2",
+      "claim": "Ternatin is an anti-adipogenic natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1, Figure 1a) is an N-methylated cyclic heptapeptide that inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM) and becomes cytotoxic at ten-fold higher concentrations (Shimokawa et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM), supported by citation to Shimokawa et al., 2008a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "7692425e-a6a1-4679-b89b-e945c9dc7f29",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C3",
+      "claim": "Ternatin inhibits adipogenesis at an EC50 of 20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1, Figure 1a) is an N-methylated cyclic heptapeptide that inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM) and becomes cytotoxic at ten-fold higher concentrations (Shimokawa et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides a specific EC50 value of 20 nM for ternatin's inhibition of adipogenesis, supported by citation to Shimokawa et al., 2008a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "3612c0c9-75fc-4293-b26e-5fa4272cc3da",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C4",
+      "claim": "Ternatin is an N-methylated cyclic heptapeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1, Figure 1a) is an N-methylated cyclic heptapeptide that inhibits adipogenesis at low nanomolar concentrations (EC50 20 nM) and becomes cytotoxic at ten-fold higher concentrations (Shimokawa et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes ternatin as an N-methylated cyclic heptapeptide, supported by citation to Shimokawa et al., 2008a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "cbddb13e-7ca1-4d61-bd45-82cca8c5477a",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C5",
+      "claim": "Ternatin's molecular target was unknown prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivating the current study, ternatin's molecular target and mechanism of action were completely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin's molecular target and mechanism of action were completely unknown, providing motivation for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "73756409-9bec-4b28-8441-5820928cb6f0",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C6",
+      "claim": "Ternatin's mechanism of action was unknown prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivating the current study, ternatin's molecular target and mechanism of action were completely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin's molecular target and mechanism of action were completely unknown, providing motivation for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "80cc9105-a5a0-4365-b77f-b2db46e3e42b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C7",
+      "claim": "Leucine-4 plays an important role in ternatin's biological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work established an important role for leucine-4, as substitution with alanine (ternatin-4-Ala, 2) abolished biological activity (Shimokawa et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states that previous work established an important role for leucine-4, supported by citation to Shimokawa et al., 2008b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "521e8047-e5a5-4e9b-a427-eda7b01c6799",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C8",
+      "claim": "Substitution of leucine-4 with alanine in ternatin abolishes biological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work established an important role for leucine-4, as substitution with alanine (ternatin-4-Ala, 2) abolished biological activity (Shimokawa et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that substitution of leucine-4 with alanine abolished biological activity, supported by citation to Shimokawa et al., 2008b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "432f6f67-02d8-48eb-9987-421e85d21c0b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C9",
+      "claim": "Five related cyclic heptapeptides were isolated from an Aspergillus fungus in Malaysia.",
+      "claim_type": "EXPLICIT",
+      "source": "While searching for cyclic peptides that, like ternatin, incorporate a \u03b2-hydroxy leucine, we found a patent application that describes partially elucidated structures of five related cyclic heptapeptides isolated from an Aspergillus fungus in Malaysia (Blunt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that five related cyclic heptapeptides were isolated from an Aspergillus fungus in Malaysia, supported by citation to Blunt et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "068d615c-5ae9-4c28-8925-caf00613a7e9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C10",
+      "claim": "The five cyclic heptapeptides from Aspergillus fungus are cytotoxic to cancer cells in the picomolar to low nanomolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "All five compounds were reported to be cytotoxic to cancer cells in the picomolar to low nanomolar range (IC50 0.1\u201324 nM vs HCT116, MCF7, and P388 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that all five compounds were reported to be cytotoxic to cancer cells in the picomolar to low nanomolar range (IC50 0.1\u201324 nM), referencing the patent application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "7e48aa21-4ced-4d07-9543-6c8db492dd8d",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C11",
+      "claim": "Compound A3 has an IC50 of 0.1\u201324 nM against HCT116, MCF7, and P388 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All five compounds were reported to be cytotoxic to cancer cells in the picomolar to low nanomolar range (IC50 0.1\u201324 nM vs HCT116, MCF7, and P388 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states that all five compounds, including A3, were reported to be cytotoxic with IC50 values of 0.1\u201324 nM against HCT116, MCF7, and P388 cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d08a804c-b100-4755-bafe-6daf5e6a2fc5",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C12",
+      "claim": "Only 4 out of 11 stereocenters in A3 were assigned in the patent application.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only 4 out of 11 stereocenters in A3 were assigned, we were able to map the amino acid sequence, stereochemistry, and N-methylation pattern directly onto the structure of ternatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that only 4 out of 11 stereocenters in A3 were assigned in the patent application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "4ac2e6bf-a76d-421f-be02-5ab47af6e92d",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C13",
+      "claim": "The amino acid sequence, stereochemistry, and N-methylation pattern of A3 can be mapped onto the structure of ternatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only 4 out of 11 stereocenters in A3 were assigned, we were able to map the amino acid sequence, stereochemistry, and N-methylation pattern directly onto the structure of ternatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the amino acid sequence, stereochemistry, and N-methylation pattern of A3 can be mapped directly onto the structure of ternatin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "2d0a4a49-0c29-4074-af07-fb937ed90b2f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C14",
+      "claim": "The structural similarity between A3 and ternatin was not mentioned in the patent application.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent structural similarity to ternatin was not mentioned in the patent application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the apparent structural similarity to ternatin was not mentioned in the patent application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "9ccc6c7b-2c95-45b2-8a56-078bc23cce93",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C15",
+      "claim": "Replacement of N-Me-Ala-6 and Leu-4 in ternatin with pipecolic acid and dehydro-homoleucine would confer increased cytotoxic potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the potential similarity between A3 and ternatin structures, we hypothesized that replacement of N-Me-Ala-6 and Leu-4 in ternatin with two A3-specific residues \u2013 pipecolic acid and dehydro-homoleucine, respectively \u2013 would be sufficient to confer increased cytotoxic potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the hypothesis that replacement of N-Me-Ala-6 and Leu-4 in ternatin with pipecolic acid and dehydro-homoleucine would confer increased cytotoxic potency.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d20f341f-5f2b-414a-a23b-755f965a77b1",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C16",
+      "claim": "Compound 3 differs from ternatin only at position 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Compound 3 differs from ternatin only at position 6, whereas 4 additionally has dehydro-homoleucine at position 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compound 3 differs from ternatin only at position 6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "c9aef83c-28ed-42e2-bdfc-ef9a139b6179",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C17",
+      "claim": "Compound 4 differs from ternatin at positions 4 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Compound 3 differs from ternatin only at position 6, whereas 4 additionally has dehydro-homoleucine at position 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compound 4 has dehydro-homoleucine at position 4 in addition to the position 6 modification in compound 3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "9e378706-c925-46fc-8b50-33f178733894",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C18",
+      "claim": "Ternatin and its structural variants inhibit cellular protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that ternatin and its structural variants inhibit cellular protein synthesis, with compound 4 showing the greatest potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin and its structural variants inhibit cellular protein synthesis, as demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "47217613-0f62-4c32-8bfa-71d0e66e475a",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C19",
+      "claim": "Compound 4 shows the greatest potency in inhibiting cellular protein synthesis among ternatin and its structural variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that ternatin and its structural variants inhibit cellular protein synthesis, with compound 4 showing the greatest potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compound 4 shows the greatest potency in inhibiting cellular protein synthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "9cb0583e-c01b-4f11-84d1-d4487dd16a34",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C20",
+      "claim": "The elongation factor-1A ternary complex (eEF1A\u00b7GTP\u00b7aminoacyl-tRNA) is a direct target of ternatin-related cyclic peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "We further identify the elongation factor-1A ternary complex (eEF1A\u00b7GTP\u00b7aminoacyl-tRNA) as a direct target of ternatin-related cyclic peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the study identifies the elongation factor-1A ternary complex as a direct target of ternatin-related cyclic peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "351c2b6c-eb30-4cf6-b1fa-9962a1eee469",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C21",
+      "claim": "Ternatin-related cyclic peptides represent a new structural class of macrocyclic elongation factor-1A inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of N-methylated cyclic heptapeptides represents a new structural class of macrocyclic elongation factor-1A inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that this family of N-methylated cyclic heptapeptides represents a new structural class of macrocyclic elongation factor-1A inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "fad9ad29-2b28-4b56-8cff-d91e0f4b9891",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C22",
+      "claim": "Synthesis of compounds 3 and 4 proceeded according to a route previously established for ternatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthesis of 3 and 4 proceeded uneventfully according to a route previously established for ternatin (see Materials and methods) (Shimokawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that synthesis of 3 and 4 proceeded according to a route previously established for ternatin, supported by citation to Shimokawa et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "79aea0d1-72e5-4a02-aad1-489689125d89",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C23",
+      "claim": "Both C4 epimers of dehydro-homoleucine were synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized both C4 epimers of dehydro-homoleucine (2-amino-4-methylhex-5-enoic acid), maintaining the (S)-stereochemistry at C2 (by analogy to L-leucine at position 4 of ternatin) and varying the C4 side-chain stereochemistry; each epimer was incorporated separately into the final cyclic peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that both C4 epimers of dehydro-homoleucine were synthesized.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "4ea1b8a2-0102-44ca-a49f-a8e6467e798a",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C24",
+      "claim": "The (2S,4R)-epimer of dehydro-homoleucine was slightly more potent than the (2S,4S)-epimer in cell proliferation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The (2S,4R)-epimer depicted in 4 (Figure 1a) was slightly more potent than the (2S,4S)-epimer in cell proliferation assays (Figure 1\u2014figure supplement 1) and was used in all subsequent experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that the (2S,4R)-epimer was slightly more potent than the (2S,4S)-epimer, with reference to Figure 1\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "fc01a41d-2200-4270-8292-24ceed4dcc49",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C25",
+      "claim": "Ternatin (1) inhibits HCT116 cell proliferation with an IC50 of 71 \u00b1 10 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1) potently inhibited HCT116 cell proliferation (IC50 71 \u00b1 10 nM, Figure 1b), whereas ternatin-4-Ala (2) had no effect up to 10 \u03bcM, consistent with its reported lack of activity in an adipogenesis assay (Shimokawa et al., 2008b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that ternatin (1) inhibited HCT116 cell proliferation with an IC50 of 71 \u00b1 10 nM, with reference to Figure 1b showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "f8aaee9f-e8ef-423f-b423-14c9996edddb",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C26",
+      "claim": "Ternatin-4-Ala (2) has no effect on HCT116 cell proliferation up to 10 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin (1) potently inhibited HCT116 cell proliferation (IC50 71 \u00b1 10 nM, Figure 1b), whereas ternatin-4-Ala (2) had no effect up to 10 \u03bcM, consistent with its reported lack of activity in an adipogenesis assay (Shimokawa et al., 2008b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that ternatin-4-Ala (2) had no effect on HCT116 cell proliferation up to 10 \u03bcM, with reference to Figure 1b showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "afbc5dd6-9141-412a-a3ad-9ae78c6072a2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C27",
+      "claim": "Ternatin-4-Ala (2) is a valuable negative control compound for mechanism-of-action studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatin-4-Ala (2) is thus a valuable negative control compound for mechanism-of-action studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin-4-Ala (2) is a valuable negative control compound for mechanism-of-action studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "84025c5c-7dae-4bca-9689-bfd7aa2422f7",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C28",
+      "claim": "Substitution with pipecolic acid increased ternatin's potency two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "While substitution with pipecolic acid increased potency two-fold, further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase (IC50 4.6 \u00b1 1.0 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that substitution with pipecolic acid increased potency two-fold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "428c2f0b-9981-48b2-a272-86c9d082531d",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C29",
+      "claim": "Further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase in potency.",
+      "claim_type": "EXPLICIT",
+      "source": "While substitution with pipecolic acid increased potency two-fold, further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase (IC50 4.6 \u00b1 1.0 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase in potency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "962ae176-560c-4ff5-ac1b-952a413c251a",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C30",
+      "claim": "Compound 4 has an IC50 of 4.6 \u00b1 1.0 nM against HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While substitution with pipecolic acid increased potency two-fold, further substitution with (2S,4R)-dehydro-homoleucine resulted in an additional ten-fold increase (IC50 4.6 \u00b1 1.0 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compound 4 has an IC50 of 4.6 \u00b1 1.0 nM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "8c8f3e2d-6b4f-482c-af4a-2e7193bd6951",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C31",
+      "claim": "IC50 values of compounds 1 and 4 are correlated across 21 cell lines (Spearman correlation 0.84, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "While IC50 values of 1 and 4 spanned 3\u20134 orders of magnitude, they were correlated across all cell lines (Spearman correlation, 0.84, p<0.0001), with 4 being twenty-fold to >500-fold more potent than 1, depending on the cell line (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that IC50 values of 1 and 4 were correlated across all cell lines with a Spearman correlation of 0.84 and p<0.0001, with reference to Figure 1c showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "486d5466-b602-46fa-a8eb-62f8446a5e78",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C32",
+      "claim": "Compound 4 is twenty-fold to >500-fold more potent than compound 1 across 21 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "While IC50 values of 1 and 4 spanned 3\u20134 orders of magnitude, they were correlated across all cell lines (Spearman correlation, 0.84, p<0.0001), with 4 being twenty-fold to >500-fold more potent than 1, depending on the cell line (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that compound 4 is twenty-fold to >500-fold more potent than compound 1, depending on the cell line, with reference to Figure 1c showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "36b9b05b-9af7-4350-a2b4-0d94960a92f2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C33",
+      "claim": "The strong correlation of IC50 values suggests that ternatin and compound 4 kill cancer cells by a similar mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This strong correlation suggests that ternatin and 4 kill cancer cells by a similar mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the strong correlation suggests that ternatin and 4 kill cancer cells by a similar mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "791813c3-329b-4f2f-a4cb-eff7b90d6049",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C34",
+      "claim": "The pipecolic acid and dehydro-homoleucine substitutions in compound 4 resulted in dramatically increased potency across all cell lines tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the pipecolic acid and dehydro-homoleucine substitutions in 4 resulted in dramatically increased potency across all cell lines tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the pipecolic acid and dehydro-homoleucine substitutions in 4 resulted in dramatically increased potency across all cell lines tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "0bdbb5b3-06b2-4702-a6df-f195a8118b8f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C35",
+      "claim": "Compound 4 might inhibit a fundamental cellular process.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on its broad anti-proliferative activity across many cell lines, we speculated that 4 might inhibit a fundamental cellular process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the speculation that compound 4 might inhibit a fundamental cellular process based on its broad anti-proliferative activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "0e5fda35-eaf8-498d-8fab-4afde17ec681",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C36",
+      "claim": "Global protein synthesis was abolished in cells treated with compound 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, global protein synthesis was abolished in cells treated with 4 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that global protein synthesis was abolished in cells treated with 4, with reference to Figure 2a showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "356e5280-fe9f-4da0-a92a-0c8dfd9173f8",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C37",
+      "claim": "Compound 4 inhibits protein synthesis more potently than ternatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse labeling of newly synthesized proteins with 35S-methionine revealed that 4 inhibits protein synthesis more potently than ternatin, in agreement with the cell proliferation results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compound 4 inhibits protein synthesis more potently than ternatin, as revealed by pulse labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "fe22b931-782a-4d7e-b705-29e2a5b9aaa5",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C38",
+      "claim": "Ternatin-4-Ala (2) has no effect on protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The inactive control, ternatin-4-Ala (2), had no effect on protein synthesis (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that ternatin-4-Ala (2) had no effect on protein synthesis, with reference to Figure 2b showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "272b541c-8ed5-449d-a7c2-47eed25d3b1b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C39",
+      "claim": "The polysome profile was unchanged in cells treated with compound 4 compared to DMSO control.",
+      "claim_type": "EXPLICIT",
+      "source": "The polysome profile was unchanged in cells treated with 4 compared to DMSO control (Figure 2c, left panel), indicating that global translation initiation was not perturbed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that the polysome profile was unchanged in cells treated with 4 compared to DMSO control, with reference to Figure 2c showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "8846c473-3c24-4787-9ee8-c2bc0a168064",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C40",
+      "claim": "Global translation initiation was not perturbed by compound 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The polysome profile was unchanged in cells treated with 4 compared to DMSO control (Figure 2c, left panel), indicating that global translation initiation was not perturbed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that global translation initiation was not perturbed, as indicated by the unchanged polysome profile, with reference to Figure 2c showing the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "0a97d98e-1ef3-4ab2-8293-ec5928ab4858",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C41",
+      "claim": "Pretreatment of cells with compound 4 completely blocked harringtonine-induced polysome depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the known elongation inhibitor cycloheximide, pretreatment of cells with 4 completely blocked harringtonine-induced polysome depletion (2c, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that pretreatment of cells with 4 completely blocked harringtonine-induced polysome depletion, with reference to Figure 2c showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "7652b486-3a9a-459c-b3e1-fc24025bd87f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C42",
+      "claim": "Compound 4 most likely inhibits translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that 4 most likely inhibits translation elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the conclusion that compound 4 most likely inhibits translation elongation, based on the polysome runoff experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "286d0973-55cd-4b24-88c0-cfe1c8d66e11",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C43",
+      "claim": "A photo-affinity probe (5) was designed to identify the direct target of ternatins.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the direct target of ternatins, we designed a photo-affinity probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that a photo-affinity probe was designed to identify the direct target of ternatins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "da949df9-6115-4b0c-9f4a-db9c4009c4b9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C44",
+      "claim": "A biotinylated ternatin probe yielded an inactive analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous efforts to prepare a biotinylated ternatin probe yielded an inactive analogue (Shimokawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that previous efforts to prepare a biotinylated ternatin probe yielded an inactive analogue, supported by citation to Shimokawa et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "3bff970a-4ff8-4b19-8590-da2b378e6b71",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C45",
+      "claim": "Probe 5 incorporates photo-leucine at position 4 and an alkyne at position 6.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore designed the bifunctional probe 5 (Figure 3a), which incorporates photo-leucine at position 4 and an alkyne at position 6 for tagging via click chemistry conjugation, similar to our previous strategy with cotransin cyclic peptides (MacKinnon et al., 2007; MacKinnon and Taunton, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that probe 5 incorporates photo-leucine at position 4 and an alkyne at position 6, with reference to Figure 3a showing the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "a2457cd7-ded8-4489-b464-dc6d2bc76732",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C46",
+      "claim": "Probe 5 was active in a cell proliferation assay with an IC50 of 460 \u00b1 71 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe 5 was active in a cell proliferation assay (IC50 460 \u00b1 71 nM), albeit with ~ten-fold reduced potency compared to ternatin (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that probe 5 was active in a cell proliferation assay with an IC50 of 460 \u00b1 71 nM, with reference to Figure 3\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "e534a758-6827-49f9-a356-ecb5baf76d09",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C47",
+      "claim": "Probe 5 has ~ten-fold reduced potency compared to ternatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe 5 was active in a cell proliferation assay (IC50 460 \u00b1 71 nM), albeit with ~ten-fold reduced potency compared to ternatin (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that probe 5 has ~ten-fold reduced potency compared to ternatin, with reference to Figure 3\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "31eef590-1840-40ab-9684-266fb6f626ae",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C48",
+      "claim": "Treatment of cell lysates with probe 5, followed by photolysis and click chemistry, revealed preferential labeling of a 50-kDa protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cell lysates with increasing concentrations of 5, followed by photolysis and copper-catalyzed click conjugation with tetramethylrhodamine (TAMRA)-azide, revealed preferential labeling of a 50-kDa protein (Figure 3b, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that treatment of cell lysates with probe 5, followed by photolysis and click chemistry, revealed preferential labeling of a 50-kDa protein, with reference to Figure 3b and Figure 3\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "414ebefd-ead0-4149-a3ee-98057e02e5d2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C49",
+      "claim": "Labeling of the major 50-kDa band was prevented by pretreatment with competitor 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling of the major 50-kDa band, but not any of the minor bands, was prevented by pretreatment with competitor 4 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that labeling of the major 50-kDa band was prevented by pretreatment with competitor 4, with reference to Figure 3c showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ec872bd4-639b-4e8c-b252-3419df37980f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C50",
+      "claim": "Ternatins bind specifically and saturably to a 50-kDa protein in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate specific and saturable binding of ternatins to a 50-kDa protein in cell lysates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the experiments demonstrate specific and saturable binding of ternatins to a 50-kDa protein in cell lysates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "94049bdb-eafc-4354-84fc-39ca7fc584d8",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C51",
+      "claim": "The 50-kDa target protein was hypothesized to be eukaryotic elongation factor-1A (eEF1A).",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ternatins inhibit translation elongation, we hypothesized that the 50-kDa target protein was the eukaryotic elongation factor-1A (eEF1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the hypothesis that the 50-kDa target protein was eEF1A, based on the observation that ternatins inhibit translation elongation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "f6f75ee7-2f63-434a-be59-f5ccbdef57fa",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C52",
+      "claim": "Photo-labeling of ectopically expressed Flag-eEF1A was reduced in the presence of excess compound 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Photo-labeling of ectopically expressed Flag-eEF1A was reduced in the presence of excess 4 and was not detected in lysates derived from nontransfected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that photo-labeling of ectopically expressed Flag-eEF1A was reduced in the presence of excess 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "02300674-3a54-4cad-9bed-4d3b86e28750",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C53",
+      "claim": "Photo-labeling of Flag-eEF1A was not detected in lysates derived from nontransfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Photo-labeling of ectopically expressed Flag-eEF1A was reduced in the presence of excess 4 and was not detected in lysates derived from nontransfected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that photo-labeling of Flag-eEF1A was not detected in lysates derived from nontransfected cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ddb533b1-8d42-4cf2-b9e9-96c506332185",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C54",
+      "claim": "eEF1A is an essential GTPase orthologous to bacterial EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "eEF1A is an essential GTPase, orthologous to bacterial EF-Tu, whose canonical role is to deliver aminoacyl-tRNA (aa-tRNA) to a translating ribosome (Andersen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that eEF1A is an essential GTPase orthologous to bacterial EF-Tu, supported by citation to Andersen et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "2a95b0da-1768-43b9-8680-21f1ec2fa5c2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C55",
+      "claim": "The canonical role of eEF1A is to deliver aminoacyl-tRNA to a translating ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "eEF1A is an essential GTPase, orthologous to bacterial EF-Tu, whose canonical role is to deliver aminoacyl-tRNA (aa-tRNA) to a translating ribosome (Andersen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the canonical role of eEF1A is to deliver aminoacyl-tRNA to a translating ribosome, supported by citation to Andersen et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "f18a57f8-ec2f-4134-a424-653ca0d5afc5",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C56",
+      "claim": "A significant fraction of eEF1A is thought to reside in a ternary complex bound to GTP and aa-tRNA in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, a significant fraction of eEF1A is thought to reside in a ternary complex bound to GTP and aa-tRNA (Gromadski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that a significant fraction of eEF1A is thought to reside in a ternary complex bound to GTP and aa-tRNA, supported by citation to Gromadski et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "f70332aa-7b29-4af4-b203-81b996cb07b9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C57",
+      "claim": "Adding RNase A to lysates before photolysis completely prevented labeling of the 50-kDa protein by probe 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding RNase A to lysates before, but not after, photolysis completely prevented labeling of the 50-kDa protein by 5 (Figure 4a), suggesting that an RNA component is essential for photo-ternatin binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that adding RNase A to lysates before photolysis completely prevented labeling of the 50-kDa protein by 5, with reference to Figure 4a showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "462789ab-556e-44f9-8b31-efef0c5d35d9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C58",
+      "claim": "An RNA component is essential for photo-ternatin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding RNase A to lysates before, but not after, photolysis completely prevented labeling of the 50-kDa protein by 5 (Figure 4a), suggesting that an RNA component is essential for photo-ternatin binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that an RNA component is essential for photo-ternatin binding, as suggested by the RNase A experiment, with reference to Figure 4a showing the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d3ceda05-0f2e-4bf0-8226-4fc07718ff8f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C59",
+      "claim": "Photo-crosslinking of probe 5 to purified eEF1A was observed only in the presence of GTP and aa-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, photo-crosslinking of 5 (1 \u03bcM) to purified eEF1A (1 \u03bcM) was observed only in the presence of GTP and aa-tRNA (in this case, Phe-tRNA; Figure 4b, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that photo-crosslinking of probe 5 to purified eEF1A was observed only in the presence of GTP and aa-tRNA, with reference to Figure 4b showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "b7487e7b-6391-4f1d-aed8-df6c86984e9b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C60",
+      "claim": "Photo-affinity labeling of the ternary complex was competed by excess compound 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Photo-affinity labeling of the ternary complex was competed by excess 4 (10 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that photo-affinity labeling of the ternary complex was competed by excess compound 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "150fc860-1930-4118-a702-a6b67cdc690a",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C61",
+      "claim": "Addition of GTP or GDP alone was not sufficient for photo-crosslinking of probe 5 to eEF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of either GTP or GDP alone was not sufficient, and only weak nonspecific labeling was observed (lanes 1 and 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that addition of GTP or GDP alone was not sufficient for photo-crosslinking, and only weak nonspecific labeling was observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ce300703-f4f1-426f-9cc4-7cdf46146df9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C62",
+      "claim": "Ternatins preferentially target the ternary complex of eEF1A\u00b7GTP\u00b7aa-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that ternatins preferentially target the ternary complex of eEF1A\u00b7GTP\u00b7aa-tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the data indicate ternatins preferentially target the ternary complex of eEF1A\u00b7GTP\u00b7aa-tRNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "92cf9373-1e6a-413c-855a-efdf27f38576",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C63",
+      "claim": "Didemnin B has been reported to bind eEF1A\u00b7GTP with an affinity of 15 or 200 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Didemnin (Figure 4c) has been reported to bind eEF1A\u00b7GTP with an affinity of 15 or 200 \u03bcM, depending on the assay conditions (Ahuja et al., 2000; Crews et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that didemnin has been reported to bind eEF1A\u00b7GTP with an affinity of 15 or 200 \u03bcM, supported by citations to Ahuja et al., 2000 and Crews et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "5df7f3a9-5526-4078-a20c-10a57d223b38",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C64",
+      "claim": "Didemnin has been shown to block an eEF1A-dependent step of translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "While its mechanism of action is still debated (Crews et al., 1996; Meng et al., 1998; Ahuja et al., 2000; Vera and Joullie, 2002; Potts et al., 2015), didemnin has been shown to block an eEF1A-dependent step of translation elongation (SirDeshpande and Toogood, 1995; Ahuja et al., 2000; Lindqvist et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that didemnin has been shown to block an eEF1A-dependent step of translation elongation, supported by citations to SirDeshpande and Toogood, 1995; Ahuja et al., 2000; and Lindqvist et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "74302f99-9bea-4374-bce8-827007a3ac6b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C65",
+      "claim": "Cytotrienin A and ansatrienin B inhibit translation elongation by a mechanism similar to didemnin's.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytotrienin A, and likely the related polyketide ansatrienin B (Figure 4c), inhibit translation elongation by a mechanism similar to didemnin's (Lindqvist et al., 2010), although direct binding of these compounds to eEF1A has not been demonstrated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that cytotrienin A and likely ansatrienin B inhibit translation elongation by a mechanism similar to didemnin's, supported by citation to Lindqvist et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "592f1d23-ec5a-408f-b8a8-e2927e42fbf5",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C66",
+      "claim": "Direct binding of cytotrienin A and ansatrienin B to eEF1A has not been demonstrated prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytotrienin A, and likely the related polyketide ansatrienin B (Figure 4c), inhibit translation elongation by a mechanism similar to didemnin's (Lindqvist et al., 2010), although direct binding of these compounds to eEF1A has not been demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that direct binding of cytotrienin A and ansatrienin B to eEF1A has not been demonstrated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "00795042-43aa-48e8-aeb0-0de625b37bf7",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C67",
+      "claim": "Didemnin and ansatrienin could compete with photo-ternatin 5 for binding to the eEF1A ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the ternary complex assembled from eEF1A, GTP, and Phe-tRNA, we found that didemnin and ansatrienin could compete with photo-ternatin 5 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that didemnin and ansatrienin could compete with photo-ternatin 5 for binding to the ternary complex, with reference to Figure 4d showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "29e66fb0-64f3-4d74-acf4-6c8d866f80f3",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C68",
+      "claim": "Didemnin and ansatrienin abolished photo-labeling of the 50-kDa band in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, didemnin and ansatrienin abolished photo-labeling of the 50-kDa band in cell lysates (Figure 4\u2014figure supplement 2), further supporting the assignment of this band as eEF1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that didemnin and ansatrienin abolished photo-labeling of the 50-kDa band in cell lysates, with reference to Figure 4\u2014figure supplement 2 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "195b74ee-3357-45a4-822b-dff709feb901",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C69",
+      "claim": "Didemnin, ansatrienin/cytotrienin, and ternatins bind eEF1A in a mutually exclusive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that didemnin, ansatrienin/cytotrienin, and ternatins bind eEF1A in a mutually exclusive manner and may have overlapping binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the results suggest didemnin, ansatrienin/cytotrienin, and ternatins bind eEF1A in a mutually exclusive manner.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "30b77d2e-8669-416c-a4c5-edc640cc7c50",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C70",
+      "claim": "Didemnin, ansatrienin/cytotrienin, and ternatins may have overlapping binding sites on eEF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that didemnin, ansatrienin/cytotrienin, and ternatins bind eEF1A in a mutually exclusive manner and may have overlapping binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the results suggest didemnin, ansatrienin/cytotrienin, and ternatins may have overlapping binding sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "7b860454-3ec6-4b6d-9232-ad4db9b8324e",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C71",
+      "claim": "eEF1A was identified as the target of nannocystin A.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, eEF1A was identified as the target of nannocystin A (Krastel et al., 2015), a hybrid polyketide/peptide natural product with no obvious structural similarity to ternatin, didemnin, or cytotrienin/ansatrienin (Hoffmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that eEF1A was identified as the target of nannocystin A, supported by citation to Krastel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "239a6212-d7ed-400c-9fa8-101506d5fbaf",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C72",
+      "claim": "Nannocystin-resistant HCT116 clones were obtained by chemical mutagenesis and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Nannocystin-resistant HCT116 clones were obtained by chemical mutagenesis and selection, and all resistant clones contained a point mutation at Ala399 (A399V or A399T) in the EEF1A1 gene (Krastel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that nannocystin-resistant HCT116 clones were obtained by chemical mutagenesis and selection, supported by citation to Krastel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "7abf7243-4a93-4247-9f7a-5aa27e7b3ee6",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C73",
+      "claim": "All nannocystin-resistant HCT116 clones contained a point mutation at Ala399 (A399V or A399T) in the EEF1A1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Nannocystin-resistant HCT116 clones were obtained by chemical mutagenesis and selection, and all resistant clones contained a point mutation at Ala399 (A399V or A399T) in the EEF1A1 gene (Krastel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that all resistant clones contained a point mutation at Ala399 (A399V or A399T) in the EEF1A1 gene, supported by citation to Krastel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "85162cc0-262e-4c6b-b8e6-a8c9c6dbcd78",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C74",
+      "claim": "Heterozygous A399V or A399T clones were partially resistant to compound 4 (10-fold and 16-fold higher IC50, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas heterozygous A399V or A399T clones were partially resistant (10-fold and 16-fold higher IC50, respectively), cells homozygous for the A399V mutation were completely resistant to 4 at concentrations as high as 30 \u03bcM (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that heterozygous A399V or A399T clones were partially resistant with 10-fold and 16-fold higher IC50, respectively, with reference to Figure 5a showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "51f01c90-5492-492e-a23a-6bc850e92f50",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C75",
+      "claim": "Cells homozygous for the A399V mutation were completely resistant to compound 4 at concentrations as high as 30 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas heterozygous A399V or A399T clones were partially resistant (10-fold and 16-fold higher IC50, respectively), cells homozygous for the A399V mutation were completely resistant to 4 at concentrations as high as 30 \u03bcM (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that cells homozygous for the A399V mutation were completely resistant to 4 at concentrations as high as 30 \u03bcM, with reference to Figure 5a showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d7162c5b-461b-4d21-9be3-4142405c8677",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C76",
+      "claim": "Labeling of ectopically expressed Flag-eEF1A by photo-ternatin 5 was abrogated by the A399V mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, labeling of ectopically expressed Flag-eEF1A by photo-ternatin 5 was abrogated by the A399V mutation (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that labeling of ectopically expressed Flag-eEF1A by photo-ternatin 5 was abrogated by the A399V mutation, with reference to Figure 5b showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "efa1e8ba-0371-415a-a9ae-7bfbf9f6ff2c",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C77",
+      "claim": "Mutation of Ala399 in eEF1A likely preserves its essential cellular functions yet prevents ternatin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mutation of Ala399 in eEF1A likely preserves its essential cellular functions yet prevents ternatin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that mutation of Ala399 in eEF1A likely preserves its essential cellular functions yet prevents ternatin binding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "b250ebf2-d460-4beb-b35f-432c664b87e9",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C78",
+      "claim": "eEF1A mutations confer resistance in a recessive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The above results suggested that eEF1A mutations confer resistance in a recessive manner; conversely, ternatin sensitivity should be dominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the results suggested eEF1A mutations confer resistance in a recessive manner.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "71563d99-c24f-45ab-a7d1-32363832b695",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C79",
+      "claim": "Ternatin sensitivity should be dominant.",
+      "claim_type": "EXPLICIT",
+      "source": "The above results suggested that eEF1A mutations confer resistance in a recessive manner; conversely, ternatin sensitivity should be dominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin sensitivity should be dominant, as a logical consequence of the recessive nature of resistance mutations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "05ad4724-023e-470f-99ed-5c596a897fc2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C80",
+      "claim": "Expression of WT eEF1A in homozygous mutant cells (A399V/A399V EEF1A1) restored sensitivity to compound 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, expression of WT (but not A399V) eEF1A in homozygous mutant cells (A399V/A399V EEF1A1) restored sensitivity to 4 (Figure 5c, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that expression of WT eEF1A in homozygous mutant cells restored sensitivity to 4, with reference to Figure 5c and Figure 5\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "e03003fc-c578-4d1a-b5fc-b4d85374b2d0",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C81",
+      "claim": "The magnitude of resensitization correlated with the expression level of the WT eEF1A transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the magnitude of resensitization correlated with the expression level of the WT eEF1A transgene, inferred from mCherry expression (Figure 5d, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that the magnitude of resensitization correlated with the expression level of the WT eEF1A transgene, with reference to Figure 5d and Figure 5\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "270da842-16dc-4ef9-b47e-e75bf3d32065",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C82",
+      "claim": "eEF1A binding is necessary for the antiproliferative activity of ternatin cyclic peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that eEF1A binding is necessary for the antiproliferative activity of ternatin cyclic peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the results indicate eEF1A binding is necessary for the antiproliferative activity of ternatin cyclic peptides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "04ac2d57-e260-4456-961c-abced0b79b8c",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C83",
+      "claim": "Ala399 is conserved in yeast and archaebacterial EF1A orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ala399, which is conserved in yeast and archaebacterial EF1A orthologs, lies on an exposed hydrophobic surface of domain III (Figure 6, left panel) (Kobayashi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that Ala399 is conserved in yeast and archaebacterial EF1A orthologs, supported by citation to Kobayashi et al., 2010, with reference to Figure 6 showing the structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ad81c4de-3afb-49fb-a272-b33faaede78b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C84",
+      "claim": "Ala399 lies on an exposed hydrophobic surface of domain III of eEF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Ala399, which is conserved in yeast and archaebacterial EF1A orthologs, lies on an exposed hydrophobic surface of domain III (Figure 6, left panel) (Kobayashi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that Ala399 lies on an exposed hydrophobic surface of domain III, supported by citation to Kobayashi et al., 2010, with reference to Figure 6 showing the structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d8d7f407-2dce-4f59-b68a-13efdaf1f2cc",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C85",
+      "claim": "The corresponding surface of bacterial EF-Tu forms part of the binding site for the antibiotic kirromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding surface of bacterial EF-Tu forms part of the binding site for the antibiotic kirromycin (Figure 6, right panel) (Vogeley et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that the corresponding surface of bacterial EF-Tu forms part of the binding site for kirromycin, supported by citation to Vogeley et al., 2001, with reference to Figure 6 showing the structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "dfa90ba9-bbed-4207-8584-37938adee2aa",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C86",
+      "claim": "Kirromycin binds to the interface of domain III and the GTPase domain I in the context of the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Kirromycin binds to the interface of domain III and the GTPase domain I in the context of the ternary complex and stalls translation by preventing the release of EF-Tu following delivery of aa-tRNA to the ribosome A-site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that kirromycin binds to the interface of domain III and the GTPase domain I in the context of the ternary complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "6a73f1f9-ae91-449b-a29f-7ec2be07e8a4",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C87",
+      "claim": "Kirromycin stalls translation by preventing the release of EF-Tu following delivery of aa-tRNA to the ribosome A-site.",
+      "claim_type": "EXPLICIT",
+      "source": "Kirromycin binds to the interface of domain III and the GTPase domain I in the context of the ternary complex and stalls translation by preventing the release of EF-Tu following delivery of aa-tRNA to the ribosome A-site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that kirromycin stalls translation by preventing the release of EF-Tu following delivery of aa-tRNA to the ribosome A-site.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ec633f7c-cc48-4cd6-aba3-1250f769cf65",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C88",
+      "claim": "Expression of wild-type EF-Tu in a drug-resistant mutant background confers dominant sensitivity to kirromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the case with eEF1A and ternatin, expression of wild-type EF-Tu in a drug-resistant mutant background confers dominant sensitivity to kirromycin (Parmeggiani and Swart, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that expression of wild-type EF-Tu in a drug-resistant mutant background confers dominant sensitivity to kirromycin, supported by citation to Parmeggiani and Swart, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "35269a73-28fc-44d6-914a-6fb630b12465",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C89",
+      "claim": "Ternatin, nannocystin, didemnin, and ansatrienin/cytotrienin may stall translation in a manner analogous to kirromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ternatin, nannocystin, didemnin, and ansatrienin/cytotrienin may stall translation in a manner analogous to kirromycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatin, nannocystin, didemnin, and ansatrienin/cytotrienin may stall translation in a manner analogous to kirromycin.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ccbe597f-b536-4c94-916c-0899102c1a22",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C90",
+      "claim": "Compounds 3 and 4 are up to 500-fold more potent than ternatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by the partially elucidated structure and cytotoxic activity of the cyclic heptapeptide natural product A3, we designed compounds 3 and 4, which are up to 500-fold more potent than ternatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that compounds 3 and 4 are up to 500-fold more potent than ternatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "753bb87a-d6f0-4e9c-ae77-e558aed5c154",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C91",
+      "claim": "Ternatins inhibit protein synthesis with potencies that correlate with their ability to block cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatins inhibit protein synthesis with potencies that correlate with their ability to block cell proliferation, and photo-ternatin 5 identified eEF1A as a plausible target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatins inhibit protein synthesis with potencies that correlate with their ability to block cell proliferation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "1cc220c5-c0d1-43a9-b50d-6e5e3c94e52f",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C92",
+      "claim": "Photo-ternatin 5 identified eEF1A as a plausible target.",
+      "claim_type": "EXPLICIT",
+      "source": "Ternatins inhibit protein synthesis with potencies that correlate with their ability to block cell proliferation, and photo-ternatin 5 identified eEF1A as a plausible target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that photo-ternatin 5 identified eEF1A as a plausible target.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "cf66dd6d-40af-48ef-8b91-70843664a087",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C93",
+      "claim": "Photo-ternatin crosslinked to purified eEF1A only in the context of its ternary complex with GTP and aminoacylated tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, photo-ternatin crosslinked to purified eEF1A only in the context of its ternary complex with GTP and aminoacylated tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that photo-ternatin crosslinked to purified eEF1A only in the context of its ternary complex with GTP and aminoacylated tRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "68371971-e207-45dc-bfe9-b3da909ea533",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C94",
+      "claim": "Specific binding of a small molecule to the eEF1A ternary complex has not been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, specific binding of a small molecule to the eEF1A ternary complex has not been reported previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that specific binding of a small molecule to the eEF1A ternary complex has not been reported previously.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "0d860f64-b5b6-4c91-9584-1bef195afd74",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C95",
+      "claim": "Four natural products with highly diverse chemical structures have evolved independently to target a shared interaction surface near Ala399 on eEF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the recent finding that nannocystin A targets domain III of eEF1A (Krastel et al., 2015), our study suggests that four natural products with highly diverse chemical structures have evolved independently to target a shared interaction surface near Ala399 on eEF1A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the study suggests four natural products with highly diverse chemical structures have evolved independently to target a shared interaction surface near Ala399 on eEF1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "37c23851-4d2f-44a2-a6c7-fa22f7bcffc6",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C96",
+      "claim": "A didemnin variant, plitidepsin, is currently in advanced clinical trials for multiple myeloma and T-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "A didemnin variant, plitidepsin, is currently in advanced clinical trials for multiple myeloma and T-cell lymphoma (PharmaMar Pipeline).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that plitidepsin is currently in advanced clinical trials for multiple myeloma and T-cell lymphoma, with reference to PharmaMar Pipeline.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "a634d6c7-bffe-4b96-bab9-8a2f506244bb",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C97",
+      "claim": "Drugging the surface near Ala399 on eEF1A may have clinical utility.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, drugging this surface on eEF1A may have clinical utility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that drugging this surface on eEF1A may have clinical utility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d09d3b8d-4b8e-41d8-b210-a0b347da8e63",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "claim_id": "C98",
+      "claim": "Ternatins may be particularly attractive as leads for future medicinal chemistry efforts due to their relative structural simplicity and accessibility by total synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four structurally divergent natural products now identified as eEF1A inhibitors, ternatins may be particularly attractive as leads for future medicinal chemistry efforts, due to their relative structural simplicity and accessibility by total synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that ternatins may be particularly attractive as leads for future medicinal chemistry efforts due to their relative structural simplicity and accessibility by total synthesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0d7e1f9-348d-4457-9eb7-5a88968934d4",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ternatin is characterized as an N-methylated cyclic heptapeptide natural product with anti-adipogenic activity (EC50 20 nM) and cytotoxic effects at higher concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are all supported by citation to Shimokawa et al., 2008a, establishing the basic structural and biological properties of ternatin. These are well-documented prior findings that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "d19f44fd-fe86-4dc2-a812-5edcb55167ae",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior to this study, ternatin's molecular target and mechanism of action were completely unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 establish the knowledge gap motivating the study. This is a straightforward statement about the state of knowledge and provides clear justification for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "2bfc435f-847c-40f6-b388-ed32073b8046",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Leucine-4 is essential for ternatin's biological activity, as substitution with alanine abolishes activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 are supported by citation to prior work (Shimokawa et al., 2008b). This structure-activity relationship informed the design of the photo-affinity probe and validates ternatin-4-Ala as a negative control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Five related cyclic heptapeptides, including A3, were isolated from an Aspergillus fungus with picomolar to low nanomolar cytotoxicity. Despite incomplete stereochemical assignment, A3's structure could be mapped onto ternatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 describe prior work from a patent application (Blunt et al., 2010) that inspired the design of compounds 3 and 4. The structural similarity between A3 and ternatin, though not mentioned in the patent, is a reasonable inference based on the described amino acid sequence and modifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "468f87a5-01db-410b-bf34-f21af11bd492",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors hypothesized that replacing N-Me-Ala-6 and Leu-4 in ternatin with pipecolic acid and dehydro-homoleucine (from A3) would increase cytotoxic potency, leading to the design of compounds 3 and 4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 describe the rational design strategy for compounds 3 and 4. This is a clear hypothesis based on structural analysis of A3 and ternatin, which was subsequently tested experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "08681c69-5108-40fe-8253-7c0d211ed0f3",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Compounds 3 and 4 were synthesized using established methods, with both C4 epimers of dehydro-homoleucine prepared. The (2S,4R)-epimer was slightly more potent than the (2S,4S)-epimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe the synthesis and initial characterization of compounds 3 and 4. The synthesis followed established protocols (Shimokawa et al., 2007), and the stereochemical preference is supported by data in Figure 1\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "89465731-01db-4ecb-b4aa-a91872a54986",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ternatin inhibits HCT116 cell proliferation with IC50 71 \u00b1 10 nM, while ternatin-4-Ala is inactive. Substitution with pipecolic acid (compound 3) increases potency 2-fold, and further substitution with dehydro-homoleucine (compound 4) increases potency an additional 10-fold (IC50 4.6 \u00b1 1.0 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 present cell proliferation data showing the structure-activity relationships. The data are clearly presented in Figure 1b with error bars indicating replicate measurements. The inactive control (ternatin-4-Ala) validates the assay and confirms the importance of position 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "a08f74e7-45c3-4176-872b-0b1609623122",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Across 21 cancer cell lines, IC50 values of compounds 1 and 4 are strongly correlated (Spearman correlation 0.84, p<0.0001), with compound 4 being 20-500-fold more potent than ternatin, suggesting a similar mechanism of action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 present a comprehensive cell line profiling study with appropriate statistical analysis. The strong correlation supports a shared mechanism of action, and the data are clearly presented in Figure 1c. The statistical test (Spearman correlation) is appropriate for this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "cf08a463-a1b0-42c6-b077-e1ecb6d1dfa4",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Compound 4 abolishes global protein synthesis in cells, with greater potency than ternatin. The inactive control ternatin-4-Ala has no effect on protein synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 identify protein synthesis as the cellular process inhibited by ternatins. The data are supported by 35S-methionine pulse labeling experiments (Figure 2a,b) with appropriate controls. The inactive analog serves as an important negative control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "58aebdbb-896d-42e3-9ea4-30b0ad487146",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Compound 4 inhibits translation elongation rather than initiation, as evidenced by unchanged polysome profiles and the ability to block harringtonine-induced polysome runoff.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 use polysome profiling to distinguish between effects on translation initiation versus elongation. The experimental design is appropriate, using harringtonine (an initiation inhibitor) and cycloheximide (an elongation inhibitor) as controls. The data in Figure 2c clearly support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A photo-affinity probe (5) was designed incorporating photo-leucine at position 4 and an alkyne at position 6. The probe retained activity (IC50 460 \u00b1 71 nM), though with ~10-fold reduced potency compared to ternatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe the design and validation of the photo-affinity probe. The probe design is rational, based on prior work with cotransin peptides. The retention of biological activity, though reduced, is critical for target identification and is well-documented in Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "688a84de-26df-48aa-b88e-3499381d7bd6",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Photo-affinity labeling with probe 5 revealed specific and saturable binding to a 50-kDa protein in cell lysates, with labeling prevented by competitor compound 4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 present the photo-affinity labeling results identifying a specific target protein. The data show concentration-dependent labeling (Figure 3b) and competition by compound 4 (Figure 3c), demonstrating specificity. The saturation analysis in Figure 3\u2014figure supplement 1 further supports specific binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "bee26056-d04c-4502-8714-e2e80ef082b2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 50-kDa target protein was hypothesized to be eEF1A based on its role in translation elongation. Photo-labeling of ectopically expressed Flag-eEF1A was reduced by competitor 4 and not detected in non-transfected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 present the hypothesis that the target is eEF1A and provide supporting evidence through immunoprecipitation experiments (Figure 3d). The hypothesis is logical given the translation elongation phenotype, and the experimental validation is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "fbdb3c84-2dfe-453b-93b9-dd9eb4abb054",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "eEF1A is an essential GTPase orthologous to bacterial EF-Tu that delivers aminoacyl-tRNA to translating ribosomes. A significant fraction of cellular eEF1A resides in a ternary complex with GTP and aa-tRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide background information about eEF1A supported by appropriate citations (Andersen et al., 2003; Gromadski et al., 2007). This establishes the biological context for the target identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "cbfa202a-f282-4b48-bd06-e813e907f693",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RNase A treatment before (but not after) photolysis completely prevented labeling of the 50-kDa protein, indicating that an RNA component is essential for photo-ternatin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 demonstrate RNA-dependence of ternatin binding through a well-controlled experiment (Figure 4a). The timing of RNase treatment (before vs. after photolysis) is a critical control that distinguishes RNA requirement for binding from RNA protection by crosslinking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "99399bc6-3a87-47e4-83e5-2ac18346e476",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Photo-crosslinking of probe 5 to purified eEF1A occurred only in the presence of both GTP and aa-tRNA (Phe-tRNA), not with GTP or GDP alone. This labeling was competed by excess compound 4, indicating ternatins preferentially target the eEF1A\u00b7GTP\u00b7aa-tRNA ternary complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 present a key finding using reconstituted purified components (Figure 4b). The requirement for both GTP and aa-tRNA is clearly demonstrated, and competition by compound 4 confirms specificity. This is a surprising and novel finding about ternatin's binding specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "b2ddcf09-dbef-4be5-bac7-7b45bc93076b",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Didemnin B and cytotrienin A/ansatrienin B are structurally unrelated natural products that have been reported to bind eEF1A and inhibit translation elongation, though direct binding to eEF1A has not been demonstrated for cytotrienin/ansatrienin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 provide context about other eEF1A inhibitors, supported by appropriate citations. The acknowledgment that direct binding has not been demonstrated for cytotrienin/ansatrienin is important for interpreting the competition experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "9a763754-1eab-4185-8f5d-71579b96f41e",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Didemnin and ansatrienin compete with photo-ternatin 5 for binding to the eEF1A ternary complex in both reconstituted and cell lysate systems, suggesting mutually exclusive binding and potentially overlapping binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 demonstrate that structurally diverse eEF1A inhibitors compete for binding, supported by data in Figure 4d and Figure 4\u2014figure supplement 2. This is the first demonstration of direct binding of ansatrienin to eEF1A and suggests a common binding site. The inference about overlapping binding sites is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "e118a8d2-6f5a-4117-b848-59cb90f7271d",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Nannocystin-resistant HCT116 clones obtained by chemical mutagenesis all contained point mutations at Ala399 (A399V or A399T) in the EEF1A1 gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe prior work (Krastel et al., 2015) identifying eEF1A as the target of nannocystin through resistance mutations. This provides a genetic tool for validating eEF1A as the ternatin target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "87e7207a-594a-4fae-aca5-afe8601b71df",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Heterozygous A399V or A399T mutations conferred partial resistance to compound 4 (10-16-fold higher IC50), while homozygous A399V cells were completely resistant. The A399V mutation abrogated photo-labeling by probe 5, indicating the mutation preserves essential eEF1A function while preventing ternatin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 provide genetic validation that eEF1A is the relevant target for ternatin's cytotoxic effects. The dose-dependent resistance (heterozygous vs. homozygous) and loss of photo-labeling (Figure 5a,b) strongly support this conclusion. The inference that the mutation preserves essential function is reasonable given cell viability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "18788042-91c4-4bd3-ad5b-f88c391215e1",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "eEF1A mutations confer resistance in a recessive manner, while ternatin sensitivity is dominant. Expression of WT eEF1A in homozygous mutant cells restored sensitivity to compound 4 in a dose-dependent manner, demonstrating that eEF1A binding is necessary for ternatin's antiproliferative activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 present elegant genetic complementation experiments (Figure 5c,d) demonstrating the dominance of ternatin sensitivity. The correlation between WT eEF1A expression level and resensitization provides strong evidence for on-target activity. This is a rigorous validation of the target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "8b428a15-3341-4ba0-8bde-bd429b92a25e",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Ala399 is conserved in yeast and archaebacterial EF1A orthologs and lies on an exposed hydrophobic surface of domain III. The corresponding surface in bacterial EF-Tu forms part of the kirromycin binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 provide structural context for the resistance mutation, supported by citations and structural data (Figure 6). The comparison to kirromycin binding is informative for understanding the potential mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "3667e0e0-ead0-4009-b45b-84d870cc217c",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Kirromycin binds at the interface of domains III and I in the EF-Tu ternary complex and stalls translation by preventing EF-Tu release. Expression of WT EF-Tu in resistant mutants confers dominant kirromycin sensitivity, similar to the ternatin/eEF1A system, suggesting ternatins may stall translation analogously to kirromycin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C89 draw an analogy between ternatin and kirromycin mechanisms. While the genetic dominance pattern is similar (C88, supported by citation), the mechanistic analogy (C89) is speculative. Direct biochemical evidence for translation stalling by ternatins is not provided, making this inference uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Compounds 3 and 4 are up to 500-fold more potent than ternatin. Ternatins inhibit protein synthesis with potencies correlating with antiproliferative activity. Photo-ternatin 5 identified eEF1A as the target and, surprisingly, crosslinked only to the ternary complex with GTP and aa-tRNA\u2014a binding specificity not previously reported for small molecules targeting eEF1A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 summarize key findings. The potency improvements, correlation between protein synthesis inhibition and cell proliferation, target identification, and novel binding specificity are all well-supported by the data presented. The novelty claim (C94) is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "58c27a67-17dc-4334-9f33-b107a8de01a2",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Four natural products with highly diverse chemical structures (ternatin, nannocystin, didemnin, ansatrienin/cytotrienin) have evolved independently to target a shared interaction surface near Ala399 on eEF1A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 synthesizes findings from this study with prior work on nannocystin. The competition experiments and resistance mutations support convergent evolution targeting this surface. This is a significant conclusion about natural product evolution and eEF1A as a druggable target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "ee79a32a-25cb-4925-9aad-c7f78f0ef2da",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "A didemnin variant (plitidepsin) is in advanced clinical trials for multiple myeloma and T-cell lymphoma, suggesting clinical utility for targeting the Ala399 surface on eEF1A. Ternatins may be attractive leads for medicinal chemistry due to their structural simplicity and synthetic accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C98 discuss translational implications. The clinical trial status of plitidepsin (C96) is factual. The suggestions about clinical utility (C97) and medicinal chemistry potential (C98) are reasonable speculations based on the findings, appropriately qualified with \"may.\"",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    },
+    {
+      "id": "897248fd-998a-40b4-8d5a-370b3a749614",
+      "content_id": "c5226090-0e90-410f-bfa4-dce9f8d8816d",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Ternatin and its structural variants inhibit cellular protein synthesis, with compound 4 showing the greatest potency. The eEF1A ternary complex is identified as a direct target, representing a new structural class of macrocyclic eEF1A inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 present the main conclusions of the study. All are well-supported by the comprehensive data including protein synthesis assays, photo-affinity labeling, reconstitution experiments, and genetic validation. The classification as a new structural class is justified by comparison to known eEF1A inhibitors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:40.722070Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bc5af824-975e-4333-ab93-7cf04a50efa0",
+      "result_id": "a0d7e1f9-348d-4457-9eb7-5a88968934d4"
+    },
+    {
+      "claim_id": "1fa8c4b3-9e6f-4227-a346-97b6196055c4",
+      "result_id": "a0d7e1f9-348d-4457-9eb7-5a88968934d4"
+    },
+    {
+      "claim_id": "7692425e-a6a1-4679-b89b-e945c9dc7f29",
+      "result_id": "a0d7e1f9-348d-4457-9eb7-5a88968934d4"
+    },
+    {
+      "claim_id": "3612c0c9-75fc-4293-b26e-5fa4272cc3da",
+      "result_id": "a0d7e1f9-348d-4457-9eb7-5a88968934d4"
+    },
+    {
+      "claim_id": "cbddb13e-7ca1-4d61-bd45-82cca8c5477a",
+      "result_id": "d19f44fd-fe86-4dc2-a812-5edcb55167ae"
+    },
+    {
+      "claim_id": "73756409-9bec-4b28-8441-5820928cb6f0",
+      "result_id": "d19f44fd-fe86-4dc2-a812-5edcb55167ae"
+    },
+    {
+      "claim_id": "80cc9105-a5a0-4365-b77f-b2db46e3e42b",
+      "result_id": "2bfc435f-847c-40f6-b388-ed32073b8046"
+    },
+    {
+      "claim_id": "521e8047-e5a5-4e9b-a427-eda7b01c6799",
+      "result_id": "2bfc435f-847c-40f6-b388-ed32073b8046"
+    },
+    {
+      "claim_id": "432f6f67-02d8-48eb-9987-421e85d21c0b",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "068d615c-5ae9-4c28-8925-caf00613a7e9",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "7e48aa21-4ced-4d07-9543-6c8db492dd8d",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "d08a804c-b100-4755-bafe-6daf5e6a2fc5",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "4ac2e6bf-a76d-421f-be02-5ab47af6e92d",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "2d0a4a49-0c29-4074-af07-fb937ed90b2f",
+      "result_id": "f1d6a836-9fa3-4985-ac80-76b96c53bf66"
+    },
+    {
+      "claim_id": "9ccc6c7b-2c95-45b2-8a56-078bc23cce93",
+      "result_id": "468f87a5-01db-410b-bf34-f21af11bd492"
+    },
+    {
+      "claim_id": "d20f341f-5f2b-414a-a23b-755f965a77b1",
+      "result_id": "468f87a5-01db-410b-bf34-f21af11bd492"
+    },
+    {
+      "claim_id": "c9aef83c-28ed-42e2-bdfc-ef9a139b6179",
+      "result_id": "468f87a5-01db-410b-bf34-f21af11bd492"
+    },
+    {
+      "claim_id": "fad9ad29-2b28-4b56-8cff-d91e0f4b9891",
+      "result_id": "08681c69-5108-40fe-8253-7c0d211ed0f3"
+    },
+    {
+      "claim_id": "79aea0d1-72e5-4a02-aad1-489689125d89",
+      "result_id": "08681c69-5108-40fe-8253-7c0d211ed0f3"
+    },
+    {
+      "claim_id": "4ea1b8a2-0102-44ca-a49f-a8e6467e798a",
+      "result_id": "08681c69-5108-40fe-8253-7c0d211ed0f3"
+    },
+    {
+      "claim_id": "fc01a41d-2200-4270-8292-24ceed4dcc49",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "f8aaee9f-e8ef-423f-b423-14c9996edddb",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "afbc5dd6-9141-412a-a3ad-9ae78c6072a2",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "84025c5c-7dae-4bca-9689-bfd7aa2422f7",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "428c2f0b-9981-48b2-a272-86c9d082531d",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "962ae176-560c-4ff5-ac1b-952a413c251a",
+      "result_id": "89465731-01db-4ecb-b4aa-a91872a54986"
+    },
+    {
+      "claim_id": "8c8f3e2d-6b4f-482c-af4a-2e7193bd6951",
+      "result_id": "a08f74e7-45c3-4176-872b-0b1609623122"
+    },
+    {
+      "claim_id": "486d5466-b602-46fa-a8eb-62f8446a5e78",
+      "result_id": "a08f74e7-45c3-4176-872b-0b1609623122"
+    },
+    {
+      "claim_id": "36b9b05b-9af7-4350-a2b4-0d94960a92f2",
+      "result_id": "a08f74e7-45c3-4176-872b-0b1609623122"
+    },
+    {
+      "claim_id": "791813c3-329b-4f2f-a4cb-eff7b90d6049",
+      "result_id": "a08f74e7-45c3-4176-872b-0b1609623122"
+    },
+    {
+      "claim_id": "0bdbb5b3-06b2-4702-a6df-f195a8118b8f",
+      "result_id": "cf08a463-a1b0-42c6-b077-e1ecb6d1dfa4"
+    },
+    {
+      "claim_id": "0e5fda35-eaf8-498d-8fab-4afde17ec681",
+      "result_id": "cf08a463-a1b0-42c6-b077-e1ecb6d1dfa4"
+    },
+    {
+      "claim_id": "356e5280-fe9f-4da0-a92a-0c8dfd9173f8",
+      "result_id": "cf08a463-a1b0-42c6-b077-e1ecb6d1dfa4"
+    },
+    {
+      "claim_id": "fe22b931-782a-4d7e-b705-29e2a5b9aaa5",
+      "result_id": "cf08a463-a1b0-42c6-b077-e1ecb6d1dfa4"
+    },
+    {
+      "claim_id": "272b541c-8ed5-449d-a7c2-47eed25d3b1b",
+      "result_id": "58aebdbb-896d-42e3-9ea4-30b0ad487146"
+    },
+    {
+      "claim_id": "8846c473-3c24-4787-9ee8-c2bc0a168064",
+      "result_id": "58aebdbb-896d-42e3-9ea4-30b0ad487146"
+    },
+    {
+      "claim_id": "0a97d98e-1ef3-4ab2-8293-ec5928ab4858",
+      "result_id": "58aebdbb-896d-42e3-9ea4-30b0ad487146"
+    },
+    {
+      "claim_id": "7652b486-3a9a-459c-b3e1-fc24025bd87f",
+      "result_id": "58aebdbb-896d-42e3-9ea4-30b0ad487146"
+    },
+    {
+      "claim_id": "286d0973-55cd-4b24-88c0-cfe1c8d66e11",
+      "result_id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1"
+    },
+    {
+      "claim_id": "da949df9-6115-4b0c-9f4a-db9c4009c4b9",
+      "result_id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1"
+    },
+    {
+      "claim_id": "3bff970a-4ff8-4b19-8590-da2b378e6b71",
+      "result_id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1"
+    },
+    {
+      "claim_id": "a2457cd7-ded8-4489-b464-dc6d2bc76732",
+      "result_id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1"
+    },
+    {
+      "claim_id": "e534a758-6827-49f9-a356-ecb5baf76d09",
+      "result_id": "6e2f3262-cf0a-4664-a9e7-6b68a3f8f1d1"
+    },
+    {
+      "claim_id": "31eef590-1840-40ab-9684-266fb6f626ae",
+      "result_id": "688a84de-26df-48aa-b88e-3499381d7bd6"
+    },
+    {
+      "claim_id": "414ebefd-ead0-4149-a3ee-98057e02e5d2",
+      "result_id": "688a84de-26df-48aa-b88e-3499381d7bd6"
+    },
+    {
+      "claim_id": "ec872bd4-639b-4e8c-b252-3419df37980f",
+      "result_id": "688a84de-26df-48aa-b88e-3499381d7bd6"
+    },
+    {
+      "claim_id": "94049bdb-eafc-4354-84fc-39ca7fc584d8",
+      "result_id": "bee26056-d04c-4502-8714-e2e80ef082b2"
+    },
+    {
+      "claim_id": "f6f75ee7-2f63-434a-be59-f5ccbdef57fa",
+      "result_id": "bee26056-d04c-4502-8714-e2e80ef082b2"
+    },
+    {
+      "claim_id": "02300674-3a54-4cad-9bed-4d3b86e28750",
+      "result_id": "bee26056-d04c-4502-8714-e2e80ef082b2"
+    },
+    {
+      "claim_id": "ddb533b1-8d42-4cf2-b9e9-96c506332185",
+      "result_id": "fbdb3c84-2dfe-453b-93b9-dd9eb4abb054"
+    },
+    {
+      "claim_id": "2a95b0da-1768-43b9-8680-21f1ec2fa5c2",
+      "result_id": "fbdb3c84-2dfe-453b-93b9-dd9eb4abb054"
+    },
+    {
+      "claim_id": "f18a57f8-ec2f-4134-a424-653ca0d5afc5",
+      "result_id": "fbdb3c84-2dfe-453b-93b9-dd9eb4abb054"
+    },
+    {
+      "claim_id": "f70332aa-7b29-4af4-b203-81b996cb07b9",
+      "result_id": "cbfa202a-f282-4b48-bd06-e813e907f693"
+    },
+    {
+      "claim_id": "462789ab-556e-44f9-8b31-efef0c5d35d9",
+      "result_id": "cbfa202a-f282-4b48-bd06-e813e907f693"
+    },
+    {
+      "claim_id": "d3ceda05-0f2e-4bf0-8226-4fc07718ff8f",
+      "result_id": "99399bc6-3a87-47e4-83e5-2ac18346e476"
+    },
+    {
+      "claim_id": "b7487e7b-6391-4f1d-aed8-df6c86984e9b",
+      "result_id": "99399bc6-3a87-47e4-83e5-2ac18346e476"
+    },
+    {
+      "claim_id": "150fc860-1930-4118-a702-a6b67cdc690a",
+      "result_id": "99399bc6-3a87-47e4-83e5-2ac18346e476"
+    },
+    {
+      "claim_id": "ce300703-f4f1-426f-9cc4-7cdf46146df9",
+      "result_id": "99399bc6-3a87-47e4-83e5-2ac18346e476"
+    },
+    {
+      "claim_id": "92cf9373-1e6a-413c-855a-efdf27f38576",
+      "result_id": "b2ddcf09-dbef-4be5-bac7-7b45bc93076b"
+    },
+    {
+      "claim_id": "5df7f3a9-5526-4078-a20c-10a57d223b38",
+      "result_id": "b2ddcf09-dbef-4be5-bac7-7b45bc93076b"
+    },
+    {
+      "claim_id": "74302f99-9bea-4374-bce8-827007a3ac6b",
+      "result_id": "b2ddcf09-dbef-4be5-bac7-7b45bc93076b"
+    },
+    {
+      "claim_id": "592f1d23-ec5a-408f-b8a8-e2927e42fbf5",
+      "result_id": "b2ddcf09-dbef-4be5-bac7-7b45bc93076b"
+    },
+    {
+      "claim_id": "00795042-43aa-48e8-aeb0-0de625b37bf7",
+      "result_id": "9a763754-1eab-4185-8f5d-71579b96f41e"
+    },
+    {
+      "claim_id": "29e66fb0-64f3-4d74-acf4-6c8d866f80f3",
+      "result_id": "9a763754-1eab-4185-8f5d-71579b96f41e"
+    },
+    {
+      "claim_id": "195b74ee-3357-45a4-822b-dff709feb901",
+      "result_id": "9a763754-1eab-4185-8f5d-71579b96f41e"
+    },
+    {
+      "claim_id": "30b77d2e-8669-416c-a4c5-edc640cc7c50",
+      "result_id": "9a763754-1eab-4185-8f5d-71579b96f41e"
+    },
+    {
+      "claim_id": "7b860454-3ec6-4b6d-9232-ad4db9b8324e",
+      "result_id": "e118a8d2-6f5a-4117-b848-59cb90f7271d"
+    },
+    {
+      "claim_id": "239a6212-d7ed-400c-9fa8-101506d5fbaf",
+      "result_id": "e118a8d2-6f5a-4117-b848-59cb90f7271d"
+    },
+    {
+      "claim_id": "7abf7243-4a93-4247-9f7a-5aa27e7b3ee6",
+      "result_id": "e118a8d2-6f5a-4117-b848-59cb90f7271d"
+    },
+    {
+      "claim_id": "85162cc0-262e-4c6b-b8e6-a8c9c6dbcd78",
+      "result_id": "87e7207a-594a-4fae-aca5-afe8601b71df"
+    },
+    {
+      "claim_id": "51f01c90-5492-492e-a23a-6bc850e92f50",
+      "result_id": "87e7207a-594a-4fae-aca5-afe8601b71df"
+    },
+    {
+      "claim_id": "d7162c5b-461b-4d21-9be3-4142405c8677",
+      "result_id": "87e7207a-594a-4fae-aca5-afe8601b71df"
+    },
+    {
+      "claim_id": "efa1e8ba-0371-415a-a9ae-7bfbf9f6ff2c",
+      "result_id": "87e7207a-594a-4fae-aca5-afe8601b71df"
+    },
+    {
+      "claim_id": "b250ebf2-d460-4beb-b35f-432c664b87e9",
+      "result_id": "18788042-91c4-4bd3-ad5b-f88c391215e1"
+    },
+    {
+      "claim_id": "71563d99-c24f-45ab-a7d1-32363832b695",
+      "result_id": "18788042-91c4-4bd3-ad5b-f88c391215e1"
+    },
+    {
+      "claim_id": "05ad4724-023e-470f-99ed-5c596a897fc2",
+      "result_id": "18788042-91c4-4bd3-ad5b-f88c391215e1"
+    },
+    {
+      "claim_id": "e03003fc-c578-4d1a-b5fc-b4d85374b2d0",
+      "result_id": "18788042-91c4-4bd3-ad5b-f88c391215e1"
+    },
+    {
+      "claim_id": "270da842-16dc-4ef9-b47e-e75bf3d32065",
+      "result_id": "18788042-91c4-4bd3-ad5b-f88c391215e1"
+    },
+    {
+      "claim_id": "04ac2d57-e260-4456-961c-abced0b79b8c",
+      "result_id": "8b428a15-3341-4ba0-8bde-bd429b92a25e"
+    },
+    {
+      "claim_id": "ad81c4de-3afb-49fb-a272-b33faaede78b",
+      "result_id": "8b428a15-3341-4ba0-8bde-bd429b92a25e"
+    },
+    {
+      "claim_id": "d8d7f407-2dce-4f59-b68a-13efdaf1f2cc",
+      "result_id": "8b428a15-3341-4ba0-8bde-bd429b92a25e"
+    },
+    {
+      "claim_id": "dfa90ba9-bbed-4207-8584-37938adee2aa",
+      "result_id": "3667e0e0-ead0-4009-b45b-84d870cc217c"
+    },
+    {
+      "claim_id": "6a73f1f9-ae91-449b-a29f-7ec2be07e8a4",
+      "result_id": "3667e0e0-ead0-4009-b45b-84d870cc217c"
+    },
+    {
+      "claim_id": "ec633f7c-cc48-4cd6-aba3-1250f769cf65",
+      "result_id": "3667e0e0-ead0-4009-b45b-84d870cc217c"
+    },
+    {
+      "claim_id": "35269a73-28fc-44d6-914a-6fb630b12465",
+      "result_id": "3667e0e0-ead0-4009-b45b-84d870cc217c"
+    },
+    {
+      "claim_id": "ccbe597f-b536-4c94-916c-0899102c1a22",
+      "result_id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975"
+    },
+    {
+      "claim_id": "753bb87a-d6f0-4e9c-ae77-e558aed5c154",
+      "result_id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975"
+    },
+    {
+      "claim_id": "1cc220c5-c0d1-43a9-b50d-6e5e3c94e52f",
+      "result_id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975"
+    },
+    {
+      "claim_id": "cf66dd6d-40af-48ef-8b91-70843664a087",
+      "result_id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975"
+    },
+    {
+      "claim_id": "68371971-e207-45dc-bfe9-b3da909ea533",
+      "result_id": "0ac8b9f1-d13e-4725-b1c0-f8251a5fb975"
+    },
+    {
+      "claim_id": "0d860f64-b5b6-4c91-9584-1bef195afd74",
+      "result_id": "58c27a67-17dc-4334-9f33-b107a8de01a2"
+    },
+    {
+      "claim_id": "37c23851-4d2f-44a2-a6c7-fa22f7bcffc6",
+      "result_id": "ee79a32a-25cb-4925-9aad-c7f78f0ef2da"
+    },
+    {
+      "claim_id": "a634d6c7-bffe-4b96-bab9-8a2f506244bb",
+      "result_id": "ee79a32a-25cb-4925-9aad-c7f78f0ef2da"
+    },
+    {
+      "claim_id": "d09d3b8d-4b8e-41d8-b210-a0b347da8e63",
+      "result_id": "ee79a32a-25cb-4925-9aad-c7f78f0ef2da"
+    },
+    {
+      "claim_id": "9e378706-c925-46fc-8b50-33f178733894",
+      "result_id": "897248fd-998a-40b4-8d5a-370b3a749614"
+    },
+    {
+      "claim_id": "47217613-0f62-4c32-8bfa-71d0e66e475a",
+      "result_id": "897248fd-998a-40b4-8d5a-370b3a749614"
+    },
+    {
+      "claim_id": "9cb0583e-c01b-4f11-84d1-d4487dd16a34",
+      "result_id": "897248fd-998a-40b4-8d5a-370b3a749614"
+    },
+    {
+      "claim_id": "351c2b6c-eb30-4cf6-b1fa-9962a1eee469",
+      "result_id": "897248fd-998a-40b4-8d5a-370b3a749614"
+    }
+  ],
+  "comparisons": []
+}

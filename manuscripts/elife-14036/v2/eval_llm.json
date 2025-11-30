@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The DYN1-AID kar9\u0394 system effectively induces spindle misposition in 92% of cells, causing a prolonged anaphase delay (65.9 \u00b1 51.7 min vs. 19.2 \u00b1 4.8 min in wild-type). Most cells (85%) eventually correct spindle position and exit mitosis, while 9% inappropriately exit with mispositioned spindles, and 6% arrest permanently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide quantitative characterization of the DYN1-AID kar9\u0394 system with clear sample sizes and statistical measures. The data in Figure 1C-I support the penetrance of spindle misposition, anaphase duration, and cell fate outcomes. The system provides a robust tool for studying spindle position checkpoint mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Loss of cMT-bud neck interactions precedes mitotic exit in cells that inappropriately exit with mispositioned spindles (2-8 min before spindle breakdown). However, the majority of cells with mispositioned spindles lack cMT-bud neck contacts for extended periods yet remain arrested in anaphase, demonstrating that loss of these interactions does not necessarily cause mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are well-supported by the detailed time-lapse analysis in Figure 2 and Videos 1-4. The data clearly show that while cMT retraction correlates with inappropriate exit in some cells, many cells lacking cMT-bud neck contacts remain arrested, refuting a causal relationship. This is a critical observation that challenges the cMT-budneck model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Laser ablation of cytoplasmic microtubules does not promote exit from mitosis in the vast majority (33/35) of cells with mispositioned spindles, demonstrating that cMT retraction is not the cause of inappropriate mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by the microtubule severing experiments in Figure 3. The data show that only 2/35 cells exited mitosis following cMT ablation, with one occurring 69 min post-ablation (unlikely to be causally related). This provides strong experimental evidence against the cMT-budneck model, though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cdc14 release from the nucleolus precedes both cMT retraction from the bud neck (by ~5 min) and mitotic spindle breakdown (by 5-15 min) in 78.22 \u00b1 3.0% of cells that exit mitosis with mispositioned spindles. Cdc14 release never occurred after cMT retraction, establishing temporal precedence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are strongly supported by the live cell imaging data in Figure 4 and supplements. The coefficient of variation analysis provides quantitative evidence for Cdc14 release timing. The temporal ordering is critical for establishing causality and directly refutes the cMT-budneck model. The use of Cdc14-tdTomato is noted as slightly hypermorphic but validated for localization studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Depletion of Cdc14 suppresses inappropriate mitotic exit in cells with mispositioned spindles, demonstrating that Cdc14 activation causes cMT retraction and exit from mitosis rather than being a consequence of cMT loss. The invariable precedence of cMT disassembly before spindle breakdown is proposed to result from faster disassembly kinetics of single cMTs versus the mitotic spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by the Cdc14 depletion experiment (Figure 5A) and the temporal analysis (Figure 4). C73 provides direct genetic evidence for Cdc14's role. C74-C75 are well-supported conclusions from the combined data. C76 is a reasonable mechanistic proposal based on the data, though it remains speculative and is appropriately framed as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Inappropriate mitotic exit in cells with mispositioned spindles requires both MEN and FEAR network function. Deletion of FEAR network components (SPO12 or SLK19) completely prevents inappropriate exit and Cdc14 release without affecting cMT-bud neck interactions, further demonstrating that cMT interactions do not regulate mitotic exit. High FEAR network activity may cause bypass of the spindle position checkpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are well-supported by the genetic experiments in Figure 5B-E. The MEN requirement (C77) is expected, but the FEAR network requirement (C78) is surprising and well-documented. The observation that SPO12 deletion doesn't affect cMT interactions (C79) while preventing exit provides strong evidence against the cMT-budneck model. C84 is appropriately framed as speculation about FEAR network variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Analysis of binucleate cells (heterokaryons) generated by mating prm3\u0394 cells shows that exit from mitosis occurs when one SPB enters the bud, regardless of whether the other spindle is mispositioned. In Class II cells with one correctly aligned and one misaligned spindle, anaphase duration (15.7 \u00b1 2.3 min) is comparable to Class I cells with both spindles aligned (16.6 \u00b1 3.7 min). In Class II delayed cells, 42/51 exited mitosis only after one spindle moved into the bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 are supported by the heterokaryon experiments in Figures 6-7. The data provide strong evidence that a correctly positioned spindle activates exit rather than a mispositioned spindle inhibiting it. The quantitative analysis of anaphase timing and cell fate outcomes is thorough. The observation that exit can occur even when one spindle hasn't initiated anaphase (C92, 1/51 cells) is striking, though the low frequency warrants caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In Class III heterokaryons where one spindle is pulled entirely into the bud (both spindles mispositioned), exit from mitosis occurs once the bud-localized spindle initiates anaphase. This demonstrates that exit is triggered by a spindle in the bud rather than a correctly positioned spindle, though anaphase entry is required for MEN activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by the Class III heterokaryon analysis in Figure 8D. This is a critical observation that distinguishes between 'correct positioning' and 'presence in the bud' as the spatial signal. The requirement for anaphase entry (C96-C97) is consistent with prior work and adds temporal control to the spatial signal. The data strongly support the zone model over the cMT-budneck model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C105",
+      "C106",
+      "C131",
+      "C132"
+    ],
+    "result": "The heterokaryon data do not support a dominant inhibitory signal from mispositioned spindles preventing MEN activation. Instead, the data support the conclusion that movement of a MEN component-bearing SPB into the bud activates the MEN and triggers exit from mitosis, consistent with the zone model rather than the cMT-budneck model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C105-C106, and C131-C132 represent the major conclusions of the manuscript. These are well-supported by the combined evidence from cMT observation (Figures 2-3), Cdc14 localization (Figure 4), genetic analysis (Figure 5), and heterokaryon experiments (Figures 6-8). The conclusions logically follow from the experimental data and effectively refute the cMT-budneck model while supporting the zone model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Exit from mitosis occurs once one anaphase spindle enters the bud, irrespective of whether the cell harbors a mispositioned spindle. MEN activation requires two signals: (1) a spatial signal\u2014movement of a MEN-bearing SPB into the bud, and (2) a temporal signal indicating anaphase chromosome segregation has occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 synthesize the key mechanistic insights from the heterokaryon experiments. The two-signal model (spatial and temporal) is well-supported by the data showing that both SPB position in the bud and anaphase entry are required. This integrates the current findings with prior work (appropriately cited in C122) to provide a comprehensive model of MEN regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Multiple lines of evidence refute the cMT-budneck model: (1) cMT retraction occurs frequently in arrested cells, (2) cMT ablation doesn't trigger exit, (3) not all cMT-deficient mutants show increased inappropriate exit (e.g., spc72\u0394), and (4) Cdc14 release precedes cMT retraction. The invariable precedence of cMT disassembly before spindle breakdown is proposed to result from faster disassembly kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 summarize the evidence against the cMT-budneck model in the Discussion. C107-C111 are well-supported by the experimental data (Figures 2-4) and reference to an accompanying paper (C109-C110). C112 is a mechanistic proposal that is reasonable but remains speculative. The combined evidence provides a strong case against the cMT-budneck model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "A small fraction of cells (~9-11%) inappropriately exit mitosis despite mispositioned spindles. This is preceded by FEAR network-dependent Cdc14 release from the nucleolus. FEAR network activity is controlled by the spindle assembly checkpoint (SAC) at the metaphase-anaphase transition, and Separase, a SAC target and FEAR component, links SAC activity to Cdc14 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 explain the mechanistic basis for checkpoint 'leakiness' through FEAR network activation. C123-C125 are directly supported by the experimental data (Figures 4-5). C126-C130 integrate prior knowledge (appropriately cited) to explain how SAC regulation of Separase controls FEAR network activity. This provides a plausible explanation for cell-to-cell variability in checkpoint strength, though the specific causes of variability remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Budding yeast employs two redundant spindle positioning mechanisms (Kar9-Myo2 and dynein-Num1) to align the spindle along the mother-bud axis. Cells lacking both pathways are inviable. When spindles are mispositioned, cells arrest in late anaphase by inhibiting the MEN, which activates the phosphatase Cdc14 to trigger exit from mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C15 provide essential background on spindle positioning mechanisms and the MEN. These are well-established facts from prior work, appropriately cited throughout. This background is necessary context for the experimental work but represents prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cdc14 is an essential phosphatase that reverses mitotic CDK activity to trigger exit from mitosis. It is kept inactive by sequestration in the nucleolus by Cfi1/Net1 until anaphase. Two pathways control Cdc14: the FEAR network (transient early anaphase release) and the MEN (sustained late anaphase release essential for exit).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 describe the established regulatory mechanisms controlling Cdc14 activity. These are well-documented facts from prior work, appropriately cited. This background is essential for understanding the experimental results but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The MEN is a GTPase signaling pathway localized to SPBs. The GTPase Tem1 regulates a kinase cascade (Cdc15\u2192Dbf2-Mob1) that promotes Cdc14 release. Tem1 is regulated by the GAP complex Bub2/Bfa1 (inhibited by Kin4) and the putative GEF Lte1. Kin4 localizes to the mother cell and SPBs, while Lte1 localizes to the bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 provide detailed background on MEN components and regulation. These are established facts from prior work, appropriately cited. The note that Lte1's GEF function remains unproven (C36-C37) is accurate. This background is necessary context but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The 'zone model' proposes that the cell is partitioned into a MEN inhibitory zone (mother cell with Kin4) and a MEN activating zone (bud with Lte1). When spindles are mispositioned in the mother, MEN is inactive and cells arrest. Evidence includes experiments where relocalization of Kin4 or Lte1 causes inappropriate arrest or exit, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 describe the zone model and supporting evidence from prior work. These are appropriately cited and provide essential context for the current study's aim to distinguish between competing models. The evidence for the zone model from prior work (C46-C47) is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The 'cMT-budneck model' proposes that stable contact between cytoplasmic microtubules and the bud neck activates a checkpoint response preventing mitotic exit. The model is based on observations that cMT loss precedes exit and that laser ablation of cMTs was reported to trigger exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the competing cMT-budneck model from prior work. These are accurately represented with appropriate citations. The current study aims to test this model, so accurate representation of prior work is essential. The authors appropriately note that their ablation results differ from prior reports (C52).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In budding yeast, the cytokinesis site is determined before mitosis, requiring mechanisms to position the nucleus and prevent exit until proper partitioning. Yeh et al. (1995) demonstrated that cells with mispositioned spindles arrest in late anaphase. This mechanism, termed the spindle position checkpoint (SPoC) by Muhua et al. (1998), operates through MEN inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 provide historical context for the spindle position checkpoint field. These accurately represent prior work with appropriate citations. This background is necessary for framing the current study's contributions but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "MEN signaling occurs at SPBs where Tem1 and Polo kinase recruit and activate Cdc15. Regulators are spatially segregated: Kin4 in the mother cell, Lte1 in the bud. When both SPBs are in the mother, cells arrest; when one SPB enters the bud, MEN activates. The zone model accounts for both inhibitory factors in the mother and activating factors in the bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 synthesize prior knowledge about MEN spatial regulation to explain the zone model mechanism. These are appropriately cited and provide context for interpreting the current results. The emphasis on both positive and negative regulation (C118) is important for understanding the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Checkpoint regulation of asymmetric cell division has been described in other systems. In Drosophila male germline stem cells, cell cycle progression is delayed when centrosomes are mispositioned, and the Kin4 family member Par-1 is important for this delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 provide comparative context from other organisms, appropriately cited. This suggests that spatial control mechanisms may be conserved, though the authors appropriately note that the mechanism in Drosophila remains to be fully characterized. This is relevant context but not a primary finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The main findings are: (1) eliminating cMT-bud neck interactions does not trigger exit from mitosis, (2) loss of these interactions does not precede Cdc14 activation, (3) exit occurs when one SPB enters the bud despite a mispositioned spindle, and (4) exit is triggered by correct spindle position rather than inhibited by improper position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the key findings stated in the abstract. These are well-supported by the experimental data presented in the Results section (Figures 2-8). C6 represents the main conclusion that integrates all findings and is strongly supported by the combined evidence.",
+    "result_type": "MAJOR"
+  }
+]

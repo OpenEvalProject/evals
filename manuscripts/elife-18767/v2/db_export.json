@@ -1,0 +1,1748 @@
+{
+  "submission": {
+    "id": "ca71227e-cf63-4af3-a8f7-b201413902ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:32:57.078517Z",
+    "updated_at": "2025-11-30T00:32:57.078517Z"
+  },
+  "content": [
+    {
+      "id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "submission_id": "ca71227e-cf63-4af3-a8f7-b201413902ff",
+      "content_type": "manuscript",
+      "content_text": "# Mechanistic signs of double-barreled structure in a fluoride ion channel\n\n## Authors\n\n- Nicholas B Last<sup>1</sup>\n- Ludmila Kolmakova-Partensky<sup>1</sup>\n- Tania Shane<sup>1</sup>\n- Christopher Miller<sup>1</sup> ([ORCID: 0000-0002-0273-8653](https://orcid.org/0000-0002-0273-8653)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Howard Hughes Medical Institute, Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Fluc family of F\u2212 ion channels protects prokaryotes and lower eukaryotes from the toxicity of environmental F\u2212. In bacteria, these channels are built as dual-topology dimers whereby the two subunits assemble in antiparallel transmembrane orientation. Recent crystal structures suggested that Fluc channels contain two separate ion-conduction pathways, each with two F\u2212 binding sites, but no functional correlates of this unusual architecture have been reported. Experiments here fill this gap by examining the consequences of mutating two conserved F\u2212-coordinating phenylalanine residues. Substitution of each phenylalanine specifically extinguishes its associated F\u2212 binding site in crystal structures and concomitantly inhibits F\u2212 permeation. Functional analysis of concatemeric channels, which permit mutagenic manipulation of individual pores, show that each pore can be separately inactivated without blocking F\u2212 conduction through its symmetry-related twin. The results strongly support dual-pathway architecture of Fluc channels.\n\n## Introduction\n\nThe F\u2212 ion, ubiquitous in the aqueous biosphere since the dawn of life, has been generally considered an irrelevant nonparticipant in membrane biology. This view was recently upended by the discovery of F\u2212-specific riboswitches in many bacterial genomes (Baker et al., 2012), a breakthrough that over the past few years has revealed F\u2212-transporting membrane proteins underpinning a widespread microbial physiology of resistance to environmental F\u2212 toxicity (Baker et al., 2012; Stockbridge et al., 2012; Li S et al., 2013; Ji et al., 2014; Smith et al., 2015). These F\u2212 exporters fall into two phylogenetically unrelated classes: energy-consuming anion transporters of the CLC superfamily (Stockbridge et al., 2012; Brammer et al., 2014), and electrodiffusive, F\u2212-specific ion channels of the Fluc family (Stockbridge et al., 2013). While CLC proteins have been studied for decades (Miller, 2015), Flucs represent a novel and idiosyncratic class of ion channels. Bacterial Fluc channels assemble as dimers of small subunits (120\u2013130 residues, 4 transmembrane helices) arranged in antiparallel transmembrane topology. This dual-topology architecture, originally inferred from biochemical and electrophysiological behavior (Stockbridge et al., 2013; Stockbridge et al., 2014), was recently observed in crystal structures of two homodimeric Fluc homologues (Stockbridge et al., 2015), as depicted in Figure 1a. The hourglass-shaped channel is complexed with two 'monobody' crystallization chaperones, which plug each of the wide vestibules facing the two aqueous solutions. (Figure 1\u2014figure supplement 1). These ~10\u2009kDa engineered monobodies are also high-affinity channel blockers whose long-lived block-times are readily observed in single-channel recordings (Stockbridge et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig1-v2.jpg)\n\n**Figure 1.:** (a) View of Ec2 channel imagined in membrane (black lines) with subunits colored cyan and yellow and F1-, F2- ions indicated by grey, pink spheres, respectively. From PDB #5A43, rerefined to 2.56 \u00c5 resolution. (b) Ion-coordinating region of WT Ec2. 'Polar track' along one pore (left), and detail of the F\u2212-binding Phe-box region (right). The polar track and Phe-box contain residues from both dimer subunits, with sidechains colored accordingly. (c) Phe-box region of F80I (left) or F83I (right) crystal structures (PDB 5KBN, 5KOM, respectively). F\u2212-omit difference densities are shown in magenta, contoured at 4 \u03c3. (d) F\u2212 flux traces of indicated Fluc variants. Vertical scale bar represents F\u2212 appearing in external medium after addition of valinomycin (arrow).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Structure of WT Ec2 channel (PDB #5A43), also depicting S9 monobodies (grey) bound to each vestibule.\n\nThe structures suggested an additional surprising feature of Fluc proteins: double-barreled architecture. In contrast to most ion channels, in which a single ion-permeation pore spans the membrane along a central axis, Flucs were proposed to contain two pores running along the sides of the complex, with each pore built by residues from both subunits (Stockbridge et al., 2015). However, this is a crystallographically 'dry' inference based on structural results alone, unaccompanied by any functional behavior that would add mechanistic vitality to support or refute this otherwise unprecedented picture. An additional crystallographic ambiguity is that the crevices housing the anion densities are too narrow to show themselves at 2.1\u20132.6\u2009\u00c5 resolution as clearly delineated aqueous pores traversing the protein. For these reasons, we consider that the argument for dual-pathway construction is not yet consummated; it calls for tests based on functional properties of the pores manipulated individually. By solving crystal structures of ion-permeation mutants of a bacterial Fluc channel and analyzing the behavior of fused-dimer constructs, we now unambiguously establish the two-pore character of Fluc channels.\n\n## Results\n\nAll experiments here employ the previously described 'Ec2' Fluc homologue from an E. coli virulence plasmid (Stockbridge et al., 2013). The homodimeric channel's symmetric, dual-topology structure demands that the pores adopt antiparallel orientations and that the two chemically distinct F\u2212 ions in one pore, designated F1\u2212 and F2\u2212, are mirrored symmetrically in the other. In each pore, the two ions are coordinated by dipolar H-bond donors situated along a transmembrane 'polar track' (Figure 1b) that constitutes a possible ion pathway through the channel. Moreover, the F\u2212 coordination shells are completed by conserved phenylalanine residues interacting edge-on with the bound anions (Figure 1b), Phe80 associated with the F1\u2212 pair and Phe83 with the F2\u2212 pair. These four aromatic side chains adopt a striking side-to-face 'Phe-box' arrangement that supports an unusual aromatic-halide coordination motif proposed to be essential for F\u2212-specific binding and permeation (Stockbridge et al., 2015). Edge-on aromatic-anion coordination geometry makes chemical sense in light of the electropositive hydrogens of the quadrupolar aromatic ring (Jackson et al., 2007; Philip et al., 2011; Schwans et al., 2013). The two antiparallel polar tracks and their associated bound F\u2212 ions are well-separated in the crystal structure, with no plausible pathway for ions to transfer between tracks. These structural features led to the proposal, to be tested here, that the two polar tracks represent two separate pores.\n\n### Phe-box residues are essential for F\u2212 binding and transport\n\nMutation of the conserved Phe-box residues in a Fluc homologue from B. pertussis was previously shown to severely inhibit F\u2212 transport, an effect presumed to reflect the replacement of F\u2212-friendly binding sites in the conduction pathways with kinetic barriers to ion movement (Stockbridge et al., 2015). This idea is now tested in Ec2, where we here examine occupancy of the F\u2212-binding sites by solving crystal structures of Phe-box mutants F80I and F83I (Figure 1c, Table 1) and assessing their transport function. Substitution of each aromatic side chain by Ile specifically extinguishes the corresponding pair of F\u2212 densities, one in each pore, while leaving the other pair Phe-coordinated and unperturbed. The mutations cause only local structural disturbances such as alternate rotamers at nearby sidechains Ser84 and Ser110 (C\u03b1 rmsd 0.4\u2009\u00c5, 0.2\u2009\u00c5 for F80I, F83I). Functionally, the mutations are dramatic, reducing F\u2212 flux in reconstituted liposomes to undetectable levels (Figure 1d), a >104-fold rate inhibition compared to the wildtype (WT) channel (Stockbridge et al., 2013). These facts imply that Phe80 and Phe83 lie along F\u2212 permeation pathways and that the functional defect in the mutants stems directly from the loss of the aromatic ring as a F\u2212-binding partner in these pathways.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>F80I\u00a0(PDB\u00a05KBN)</th>\n      <th>F83I\u00a0(PDB\u00a05KOM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>P41</td>\n      <td>P41</td>\n    </tr>\n    <tr>\n      <td>cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>37.9\u20132.48 (2.58\u20132.48)</td>\n      <td>38.0\u20132.69 (2.82\u20132.69)</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.085 (1.42)</td>\n      <td>0.083 (1.04)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3</td>\n      <td>20.4 (2.0)</td>\n      <td>15.9 (2.0)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>1.00 (0.851)</td>\n      <td>1.00 (0.819)</td>\n    </tr>\n    <tr>\n      <td>Completeness</td>\n      <td>0.999 (1.00)</td>\n      <td>0.999 (1.00)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>15.0 (15.2)</td>\n      <td>7.4 (7.5)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement Statistics</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>37.9\u20132.48</td>\n      <td>38.0\u20132.69</td>\n    </tr>\n    <tr>\n      <td>No. Reflections</td>\n      <td>36356</td>\n      <td>28695</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.219 / 0.239</td>\n      <td>0.217 / 0.230</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Favored</td>\n      <td>0.972</td>\n      <td>0.982</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Outliers</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>RMS deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond Lengths (\u00c5)</td>\n      <td>0.0080</td>\n      <td>0.0084</td>\n    </tr>\n    <tr>\n      <td>Bond Angles (\u00b0)</td>\n      <td>1.19</td>\n      <td>1.28</td>\n    </tr>\n  </tbody>\n</table>\n\n### Inactivation of individual pores\n\nThe results above point to the importance of the Phe-box side chains in F\u2212 binding and permeation, and the physical organization of their associated F\u2212 ions makes single-pore architecture implausible. But the homodimeric nature of Ec2 limits our ability to examine individual pores functionally, since any such mutation appears twice in the channel. We therefore constructed a tandem dimer by connecting two copies of the WT Ec2 sequence with a linker containing a foreign transmembrane helix to force an antiparallel arrangement of the two domains (Figure 2a, Figure 2\u2014figure supplement 1). This construct, denoted 'WT/WT', mimics eukaryotic Fluc genes (Smith et al., 2015; Stockbridge et al., 2013), and it reprises an engineered homologue previously used to infer dual-topology assembly of Fluc channels (Stockbridge et al., 2013). The concatemer expresses poorly (~40 \u03bcg/L culture), but well enough for purification and reconstitution in liposomes and planar lipid bilayers (Figure 2b\u2013d). The concatemer is functionally indistinguishable from the homodimeric WT channel with respect to unitary current, high intrinsic open probability, brief, infrequent closings, F\u2212 selectivity, and submicromolar affinity block by monobody proteins (Figure 2\u2014figure supplements 1\u20133). Moreover, the F80I / F80I and F83I / F83I double mutants with identical Phe substitutions in both domains - mimics of the mutant homodimers above - are likewise inactive (Figure 2c). Concatemeric Ec2 thus faithfully recapitulates the behavior of the corresponding homodimers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig2-v2.jpg)\n\n**Figure 2.:** (a) Cartoon of fused-domain construct, showing numbered transmembrane helices in Ec2 domains (open) fused by an 'inversion linker' containing a non-dimerizing glycophorin A helix (grey). (b) Coomassie-stained SDS PAGE gel of purified Ec2 homodimer (left lane) and concatemer (right lane), with soluble-marker ladder positions indicated. (c) Representative F\u2212 efflux traces of indicated concatemeric constructs. (d) Representative single-channel recordings in the presence of 75\u2013150 nM monobody, which induces long-lived nonconducting 'blocked' intervals; conducting intervals in these traces represent times when channels are free of monobody, with intrinsic open probability >95% (Stockbridge et al., 2014). Grey lines represent blocked current level.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fluc helices are indicated by red residues, and underlined residues indicate the artificial inversion linker, which includes a nondimerizing glycophorin A helix (orange residues). Lower case characters indicate the C-terminal His6 affinity tag and linker.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Anion efflux traces shown for WT/WT concatemer, using liposomes loaded with 150 mM KF + 150 mM KCl. Efflux of the different ions was followed by F\u2212- or Cl--selective electrodes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Single-channel traces of the WT/WT Ec2 concatemer here are used to demonstrate that monobody fully blocks the concatemer. Planar bilayers were formed and voltage was set to 200 mV. Recordings were begun in the absence of monobody to catch the first channel insertion into the bilayer (arrow). Initial monobody-free measurements show the high open probability of the channel. At the start of the open bar, monobody (200 nM) was added to the solution without stirring, and discrete monobody blocks commenced after the reagent diffused into solution. The level of current before channel insertion is indistinguishable from the level of monobody block, observed over at least four such experiments.\n\nThis construct allows us to make channel-disruptive mutations along individual pores, and to assess whether channel function is retained by the unperturbed pore. The complete inhibition of F\u2212 flux by either Phe mutant in the homodimer suggests a simple experimental design to test whether Fluc contains two functional pores. We use a liposome-based F\u2212 efflux assay under 'Poisson-dilution' conditions (Stockbridge et al., 2013; Maduke et al., 1999; Wu et al., 2007), where most reconstituted liposomes carry only a single Fluc concatemer. Since efflux through a single channel is much faster than the time response of the F\u2212 detection system, the assay provides a straightforward all-or-none indicator for the presence of functional channels; liposomes containing active channels release F\u2212 immediately upon initiating efflux, regardless of whether one or two pores are active, while liposomes devoid of active channels, as with the functionally disabled Phe mutants (Figures 1d, 2c), show no F\u2212 efflux.\n\nThe flux behavior of the Phe-box mutants in the fused-domain channels meet all expectations of two-pore assembly, as Figure 3 illustrates. All four single Phe mutants, each of which leaves one pore unaltered, score active in these efflux experiments (Figure 3a). Since the two Phe residues from the same domain contribute to different pores, and thus each pore harbors Phe80 from one domain and Phe83 from the other, we can distinguish two classes of double mutants: trans, wherein the two mutations reside in different pores, or cis, with both mutations in the same pore. Two trans double mutants, F80I / F80I and F83I / F83I, are completely inactive, as shown above, while both cis double mutants (F80I / F83I, F83I / F80I) retain channel activity. (We were unable to test trans double mutants in which both Phe residues in the same domain were mutated, as these were biochemically intractable.) These results show that channels with both pathways mutated are inactive irrespective of the particular combination of mutations, while those mutated in only one pathway remain active, as expected for two-pore construction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig3-v2.jpg)\n\n**Figure 3.:** F\u2212 flux traces are shown for concatemeric constructs containing single (a) or double (b) mutants.\n\n### Single-channel behavior of single-pore mutants\n\nAlthough F\u2212-efflux experiments clearly distinguish active from inactive channel mutants, their limited time-resolution (~1 s) precludes quantitative examination of F\u2212 permeation rates. Single-channel electrical recording in planar lipid bilayers provides such information by directly comparing F\u2212 current through WT channels and functionally active mutants. The results (Figure 4, Figure 4\u2014figure supplement 1) are unambiguous: all single Phe-box mutants show unitary conductance of 5.7 + 0.3 pS, roughly half that of WT/WT fused-domain or WT homodimeric channels (10.6 + 0.1 pS). Moreover, the single-pore channels all recapitulate the high open probability, and monobody block of WT. We additionally note that the cis double mutants also show clear single-channel conductance that is nonetheless lower (2.3 + 0.2 pS) than the single mutants, possibly due to subtle, non-local structural disturbance of the conducting pore arising from the double mutation in the inactive pore. This ~2.5-fold drop in conductance, however, pales in comparison to the >104-fold drop observed when adding a second mutation in the trans configuration (Figure 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig4-v2.jpg)\n\n**Figure 4.:** (a) Illustrative single-channel traces in the presence of monobody blocker for indicated concatemers with two WT pores, and with three classes of single-pore mutants. Grey lines mark blocked state. (b) Summary of single-channel conductances of all channels scoring active in (Figure 3 ). (c) Summary for indicated constructs of substate conductance normalized to the full conductance level of the individual constructs. cis-Double-mutant channels were too small for substate analysis. Bars represent mean + s.e. of 10\u201314 separate channels.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Single channel trace of F80I/F83I concatemer initially in the absence and later in the presence (open bar) of 200 nM monobody, as in Figure 2\u2014figure supplement 3. The double phenylalanine single-pore mutant recaptures the WT/WT double-pore protein\u2019s high open probability in the absence of monobody, and complete block by monobody.\n\n## Discussion\n\nBy examining the behavior of the Fluc Ec2 channel at a mechanistic level, these experiments now firmly establish the two-pore architecture suggested by crystal structures. We consider this to be a property of the entire Fluc family, a conclusion further supported by indications of genetic drift in non-symmetric Flucs and the asymmetrical effects of mutations in yeast Fluc channels (Smith et al., 2015; Stockbridge et al., 2015). The results also highlight the importance of the conserved Phe-box residues in crafting coordination spheres for which F\u2212 ions are willing to shed their extensive aqueous hydration shells and enter the water-depleted confines of the ion-conduction pathway.\n\nTwo unexpected features of the mutant channels invite further comment. First, WT Ec2 channels show infrequent, brief excursions to a substate of ~6 pS, approximately one-half the conductance of the open channel (Figure 2d). It is natural to envision these as full closings of a single pore in a two-pore complex (Stockbridge et al., 2013), a picture demanding that such partial closings be absent in the single-pore mutants. However, this idea is plainly contradicted by the kinetically similar substates of ~3 pS appearing in the single-pore mutants here (Figure 4a,c). Instead, the substates in both wildtype and mutant channels must reflect a rare conformation that acts simultaneously on both pores to reduce F\u2212 current in each, perhaps occurring in the wide, water-filled vestibules on the two ends of the channel complex. Second, the striking and aesthetically appealing edge-to-face arrangement of the Phe-box in the WT channel had originally suggested to us that these four sidechains mutually stabilize and orient each other so as to properly coordinate the F\u2212 ions (Stockbridge et al., 2015). However, the Phe-mutant crystal structures here, while validating F\u2212 coordination by the aromatic rings, refute the idea of a mutually stabilizing quartet, since the two Phe side chains remaining in each Ile substitution, though distant from each other, adopt identical orientations and crystallographic order as in the full Phe-box of WT (side chain rmsd 0.2 \u00c5 upon backbone alignment).\n\nFinally, despite the well-defined locations of the F\u2212 ions and the span of the polar track residues, we acknowledge that the detailed trajectories of the two pores remain uncertain due to their very narrow bore. However, as indicated in the conjectural cartoon of Figure 5,\u00a0it is likely that the pores originate and end in the two aqueous vestibules that give the channel a symmetrical hourglass shape. This suggestion follows from monobody interaction with Fluc channels. In crystal structures of both Fluc homologues, monobodies cap and intrude into the vestibules with long loops bearing their diversified sequences (Stockbridge et al., 2015); in channel recordings here, the S9 monobody inhibits both double- and single-pore channels fully to the zero-current level, as though both pores are occluded simultaneously by the blocker. This proposal thus envisions the vestibules as common regions of low selectivity from which F\u2212 ions gain access to the separate F\u2212-specific pathways.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18767/elife-18767-fig5-v2.jpg)\n\n**Figure 5.:** Cartoon envisions the dual-topology homodimeric channel with F\u2212 ions (spheres) in the selective pores (dashed curves) connecting the vestibules. Monobody is shown (grey) bound in one of the vestibules, as in blocking experiments here, such that it occludes both pores simultaneously.\n\n## Materials and methods\n\n### Biochemical\n\nFluc and Ec2 monobody S9 were expressed as previously described (Stockbridge et al., 2014; Stockbridge et al., 2015). For functional studies, purified Fluc was run over a S200 size-exclusion column equilibrated with 25 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES), 100 mM NaCl, 5 mM n-decyl-\u03b2-D-maltoside (DM), pH 7.0. Fluc channels were reconstituted into E. coli polar extract liposomes, and detergent was removed by dialysis against 25 mM HEPES, 300 mM KF, pH 7.0. For Cl- efflux assays, these liposomes were then diluted 1:1 with 25 mM HEPES, 300 mM KCl, pH 7.0, sonicated to clarity, and then freeze-thawed 3 times. For crystallography, Fluc and monobody S9 were purified in 100 mM NaF, 10 mM HEPES, pH 7.0, with the Fluc solution also containing 5 mM DM. All Ec2 variants were constructed with standard PCR techniques.\n\n### Fluc concatemer design\n\nThe base Ec2 construct used here, denoted 'WT', contains a single mutation (R25K) that increases expression but does not affect functionality (Stockbridge et al., 2015). The WT/WT Fluc concatemer was synthetically constructed with a hexahistidine tag, and designed so that the two Fluc domains would differ in nucleotide sequence while maintaining identical protein sequence. A transmembrane inversion linker based on a non-dimerizing glycophorin A variant (Lemmon et al., 1992) was used to join the two flux domains, as described for a Fluc heterodimeric homologue (Stockbridge et al., 2013).\n\n### Anion efflux assays\n\nF\u2212 and Cl\u2212 efflux assays were performed to detect anions released from pre-loaded proteoliposomes, as described (Stockbridge et al., 2015). Liposomes were prepared for Poisson-dilution conditions at low protein density (0.2 \u00b5g protein/mg lipid), such that on average only a single channel protein per proteoliposome is incorporated (Stockbridge et al., 2013), and ~50% of the liposomes are protein-free. The liposomes, loaded with 300 mM F\u2212 or 150 mM F\u2212 + 150 mM Cl- were extruded 21 times through a 0.4 \u00b5m membrane, exchanged into 25 mM HEPES, 300 mM K-isethionate, pH 7.0 and diluted 20-fold into a flux buffer of the same composition also containing 1 mM of the appropriate halide. Efflux was initiated by adding 1 \u03bcM valinomycin and was followed electrochemically by monitoring anion appearance in the suspension using a F\u2212 or Cl\u2212 electrode. All traces are shown as relative anion efflux, calculated as the voltage output from the electrode normalized to the efflux signal upon dissolution of the liposomes with 30 mM octylglucoside. All efflux experiments were repeated 2\u20134 times, and representative traces are shown in figures.\n\n### Single-channel recording\n\nSingle-channel recording was performed via a Nanion Orbit-mini planar bilayer system, using 70% 1-palmitoyl-2-oleoyl-phosphatidylethanolamine / 30% 1-palmitoyl-2-oleoyl-phosphatidylglycerol (Avanti Polar Lipids), 5 mg/mL in n-nonane to form bilayers. Single channels were inserted by addition of Ec2-reconstituted liposomes to the 'cis' side of the bilayer, and current was recorded at +200 mV holding potential (cis side defined as zero voltage) in symmetrical solutions containing 300 mM NaF, 10 mM NaCl, 15 mM MOPS-NaOH pH 7.0, with 75\u2013150 nM of monobody S9 added to the cis chamber unless otherwise noted. Recordings were low-pass filtered at 160 Hz, digitized at 1.25 kHz, and analyzed in Clampfit 10 after further digital filtering at 100 Hz. Channel conductance, averaged from 10\u201314 separate single-channel records under each condition, was measured from the difference between open vs blocked current in each recording. All recordings shown in figures are representative of behavior seen on many channels in multiple reconstitutions.\n\n### Crystallography\n\nEc2 in complex with monobody S9 were crystallized as previously described (Stockbridge et al., 2015). Fluc dimers and S9 monobodies were individually purified and mixed at a 1:1.2 molar ratio at 10 mg/mL total protein. Crystallization well solutions were 100\u2009mM N-(2-Acetamido)iminodiacetic acid, pH 6.2 (F80I) or 6.5 (F83I), 50\u2009mM LiNO3, and 31% (F80I) or 36% (F83I) polyethylene glycol 600. Crystals were formed in hanging drops, mixing 1\u2009\u03bcL each of protein and well solution, and incubating at 22\u00b0C for 14\u201321 days. Crystals were frozen in liquid nitrogen.\n\nDatasets were collected at Advanced Light Source beamline 8.2.2. Diffraction images were processed in iMosflm (Battye et al., 2011), and data were merged and scaled using Aimless (Evans, 2011). The complete F80I dataset consisted of three different datasets from different positions along a single long crystal, merged in Aimless. Initial structure solution of both Phe mutants was done via molecular replacement using Phaser (McCoy et al., 2007) with PDB #5A43 as search model. Refinement was done with Refmac5 (Winn et al., 2003) and Phenix (Adams et al., 2010), using TLS refinement and local NCS averaging. Re-refinement of the previously collated WT Ec2 structure (Stockbridge et al., 2015) additionally used SAD data directly for additional phase information. Real-space refinement was done in COOT (Emsley et al., 2010), and Molprobity (Chen et al., 2010) was used to carry out model validation. Unbiased maps shown in Figure 1 are mFo-DFc maps output by Refmac5 using a model that had never had any fluorides introduced at any point in the refinement. Datasets from second crystals for both F80I and F83I that diffracted to similar resolution reproduce all the major structural findings here, particularly with regard to the pattern of bound F\u2212 and the lack of perturbation of the overall Fluc structure.\n",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b8f0e0e4-5c85-48d8-91e8-45ab15d6538b",
+      "submission_id": "ca71227e-cf63-4af3-a8f7-b201413902ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institutes of Health , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18767.013](https://doi.org/10.7554/eLife.18767.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanistic signs of double-barreled structure of a fluoride ion channel\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Kenton Swartz, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Gary Westbrook as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Last and colleagues investigates the ion conduction mechanism through a novel family of fluoride selective ion channels, called Flucs. In recent years the Fluc family was characterized at the functional and structural level by the Miller lab. These proteins are dual topology dimers whose structure had raised the possibility that they contain two independent pathways for F-. However, electrophysiological recordings of single Fluc channel currents had failed to reveal any of the hallmarks of double barreled channels, such as closures to half conductance states. Actually, the location of the ion permeation pore remained somewhat elusive: four electron density peaks for F- were visible in the structure, but no continuous pore could be discerned. Therefore proof that the Fluc channels form one or two pathways was missing. In the present manuscript Last and colleagues perform a series of brilliantly designed and executed experiments to test the double barreled hypothesis. They show that 2 Phe residues in each Fluc monomer are essential for F- binding and permeation through the channel, mutation of either Phe abolishes one density peak and ion conduction. Then they use a concatameric construct where two Fluc monomers, one mutant and one WT,are tethered together. They show that in these constructs, one pore has WT properties while the other is non-conductive, showing that the Flucs are indeed double-barreled ion channels.\n\nOverall this is an excellent manuscript and appropriate for eLife.\n\nEssential revisions:\n\n1) The manuscript is beautifully but densely written \u2013 it takes a bit of effort for the non-aficionado to navigate, and so it would be of benefit to include more detailed explanations in places. For example:\n\nIn the initial part of the results it is quite hard to discern that the structures of the single F to I mutants are new. The authors should emphasize this a bit more clearly and spell out the new information that they set out to obtain and why.\n\nThe channel records in Figure 2D should be labeled \"WT homodimer + monobody\" (not just \"WT homodimer\"), and then in the legend you could explicitly remind us that the channels don't substantially gate on their own and that closures are monobody-blocking events. (In the current version, it is simply stated that these are records in the presence of monobody.)\n\nFigure 2\u2014figure supplement 3 is hard to understand because it is presented before introduction of the F80I/F83I mutant.\n\nResults section, subsection \u201cSingle-channel behavior of single-pore mutants it is stated that \"the single-pore channels all recapitulate the high open probability, brief closings, and monobody block of WT\". However, you haven't actually shown us any single-channel records of these single-pore channels in the absence of monobody.\n\nIn Figure 4C it is not obvious what is meant by \"substate fraction\" and \"fractional substance conductance\". Please tell us in the figure legend (not just in the text) that this means the substrate current level normalized to the full current level.\n\n2) It is not clear to us that activity of the heteromeric concatamers in the flux assay can be taken as evidence of a two-pore assembly. While this is certainly a possible interpretation of the data, it is not the only one. Given the limited time-resolution of these fluxes, which are essentially all-or-nothing, if the mutant's effect were to reduce conductance of a common pore (or alter Po) high transport would still be expected. Similarly the inactivity of the double mutants could be explained within the context of a single-pore model.\n\nThe observation that the WT/F80I and F83I/WT concatameric channels display half the single-channel current as WT/WT is nicely consistent with the idea that one of two identical pores was eliminated. But then the F801/F83I concatamer, which in principle should also eliminate only one pore, has an even smaller conductance. Given the close proximity of the two apparent pores, this is not so surprising. But then can we really conclude that they are separate pores and not co-joined pores to start with? The authors are careful about the conclusion in their title but not in the abstract. The alternative interpretation really should be discussed, and the wording in the abstract softened. Indeed, even if there are two separate pores, if they can't be gated (\"shot\") independently, it's not really a \"double-barreled\" architecture, so the abstract is a bit misleading. Even without concluding that Flucs are bona fide double-barreled channels, the results still contribute importantly to our understanding of these channels.\n\nWe suggest you tone down your statements in the abstract and at the beginning of the paragraph \"The flux behavior of the Phe-box mutants in the fused-domain channels meet all expectations of two-pore assembly[\u2026]\" and then discuss alternate interpretations in the discussion.\n",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9aeaf404-da36-4600-8297-9a6db217d48a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C1",
+      "claim": "The Fluc family of F\u2212 ion channels protects prokaryotes and lower eukaryotes from the toxicity of environmental F\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fluc family of F\u2212 ion channels protects prokaryotes and lower eukaryotes from the toxicity of environmental F\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of Fluc channels, drawing from established scientific knowledge about these channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "59bd44c8-2778-4cc0-9cfb-af79dbd988b9",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C2",
+      "claim": "In bacteria, Fluc channels are built as dual-topology dimers whereby the two subunits assemble in antiparallel transmembrane orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, these channels are built as dual-topology dimers whereby the two subunits assemble in antiparallel transmembrane orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to prior structural and biochemical work on Fluc channels.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "ab8f8cf2-f6f0-4c0d-bfa2-47074a7ccc22",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C3",
+      "claim": "Recent crystal structures suggested that Fluc channels contain two separate ion-conduction pathways, each with two F\u2212 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent crystal structures suggested that Fluc channels contain two separate ion-conduction pathways, each with two F\u2212 binding sites, but no functional correlates of this unusual architecture have been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior crystallographic studies that proposed the dual-pathway architecture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0106610b-ce91-4458-bfbd-9e5111d027b0",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C4",
+      "claim": "No functional correlates of the dual-pathway architecture have been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent crystal structures suggested that Fluc channels contain two separate ion-conduction pathways, each with two F\u2212 binding sites, but no functional correlates of this unusual architecture have been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature prior to the current work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "9ab49959-f7d3-4b8d-a5f7-e580aef8db13",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C5",
+      "claim": "Substitution of each phenylalanine specifically extinguishes its associated F\u2212 binding site in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of each phenylalanine specifically extinguishes its associated F\u2212 binding site in crystal structures and concomitantly inhibits F\u2212 permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structures of F80I and F83I mutants presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7aa8edf6-606a-4520-83af-6c27544fa890",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C6",
+      "claim": "Substitution of each phenylalanine concomitantly inhibits F\u2212 permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of each phenylalanine specifically extinguishes its associated F\u2212 binding site in crystal structures and concomitantly inhibits F\u2212 permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the F\u2212 flux assays showing loss of transport activity in the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c800621d-29da-4775-94c8-c67f042f84ee",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C7",
+      "claim": "Each pore can be separately inactivated without blocking F\u2212 conduction through its symmetry-related twin.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional analysis of concatemeric channels, which permit mutagenic manipulation of individual pores, show that each pore can be separately inactivated without blocking F\u2212 conduction through its symmetry-related twin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the flux and single-channel data from concatemeric constructs with single-pore mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7f62ed90-aaec-4f0f-b7b6-751253df9329",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C8",
+      "claim": "The results strongly support dual-pathway architecture of Fluc channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The results strongly support dual-pathway architecture of Fluc channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "55693e74-21c6-47e4-85b8-003738a473c3",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C9",
+      "claim": "F\u2212 has been generally considered an irrelevant nonparticipant in membrane biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The F\u2212 ion, ubiquitous in the aqueous biosphere since the dawn of life, has been generally considered an irrelevant nonparticipant in membrane biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the historical view in the field prior to recent discoveries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "96efa7a2-72b4-4d71-8144-0233abe26d4b",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C10",
+      "claim": "The discovery of F\u2212-specific riboswitches in many bacterial genomes upended the view that F\u2212 is irrelevant in membrane biology.",
+      "claim_type": "EXPLICIT",
+      "source": "This view was recently upended by the discovery of F\u2212-specific riboswitches in many bacterial genomes (Baker et al., 2012), a breakthrough that over the past few years has revealed F\u2212-transporting membrane proteins underpinning a widespread microbial physiology of resistance to environmental F\u2212 toxicity (Baker et al., 2012; Stockbridge et al., 2012; Li S et al., 2013; Ji et al., 2014; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the riboswitch discovery and subsequent work on F\u2212 transport proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c4e168eb-81dc-4584-8ffb-edbe5c0b83c1",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C11",
+      "claim": "F\u2212-transporting membrane proteins underpin a widespread microbial physiology of resistance to environmental F\u2212 toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This view was recently upended by the discovery of F\u2212-specific riboswitches in many bacterial genomes (Baker et al., 2012), a breakthrough that over the past few years has revealed F\u2212-transporting membrane proteins underpinning a widespread microbial physiology of resistance to environmental F\u2212 toxicity (Baker et al., 2012; Stockbridge et al., 2012; Li S et al., 2013; Ji et al., 2014; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on F\u2212 transport and resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "8e857074-db38-41f4-ac25-79ca95dcc51a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C12",
+      "claim": "F\u2212 exporters fall into two phylogenetically unrelated classes: energy-consuming anion transporters of the CLC superfamily and electrodiffusive, F\u2212-specific ion channels of the Fluc family.",
+      "claim_type": "EXPLICIT",
+      "source": "These F\u2212 exporters fall into two phylogenetically unrelated classes: energy-consuming anion transporters of the CLC superfamily (Stockbridge et al., 2012; Brammer et al., 2014), and electrodiffusive, F\u2212-specific ion channels of the Fluc family (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies characterizing these two classes of F\u2212 exporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "00982385-05bb-4d7d-a08c-ed03a1f70de5",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C13",
+      "claim": "CLC proteins have been studied for decades.",
+      "claim_type": "EXPLICIT",
+      "source": "While CLC proteins have been studied for decades (Miller, 2015), Flucs represent a novel and idiosyncratic class of ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and reflects established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "6bd222da-6697-44c6-9028-3da8364fd783",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C14",
+      "claim": "Flucs represent a novel and idiosyncratic class of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "While CLC proteins have been studied for decades (Miller, 2015), Flucs represent a novel and idiosyncratic class of ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on the recent discovery and unique properties of Fluc channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "1e659478-65bc-42db-9694-96f2d8c8a039",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C15",
+      "claim": "Bacterial Fluc channels assemble as dimers of small subunits (120\u2013130 residues, 4 transmembrane helices) arranged in antiparallel transmembrane topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial Fluc channels assemble as dimers of small subunits (120\u2013130 residues, 4 transmembrane helices) arranged in antiparallel transmembrane topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior biochemical and structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "432e6bb4-28bd-4f24-bb42-2f50f3aed5fb",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C16",
+      "claim": "Dual-topology architecture of Fluc channels was originally inferred from biochemical and electrophysiological behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This dual-topology architecture, originally inferred from biochemical and electrophysiological behavior (Stockbridge et al., 2013; Stockbridge et al., 2014), was recently observed in crystal structures of two homodimeric Fluc homologues (Stockbridge et al., 2015), as depicted in Figure 1a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b35514eb-e1bc-4d67-b2cf-21b47534e33a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C17",
+      "claim": "Dual-topology architecture was recently observed in crystal structures of two homodimeric Fluc homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "This dual-topology architecture, originally inferred from biochemical and electrophysiological behavior (Stockbridge et al., 2013; Stockbridge et al., 2014), was recently observed in crystal structures of two homodimeric Fluc homologues (Stockbridge et al., 2015), as depicted in Figure 1a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior structural work and reference to Figure 1a showing the structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "22754a22-02e0-4a49-a679-c32cfab5f97b",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C18",
+      "claim": "The hourglass-shaped channel is complexed with two 'monobody' crystallization chaperones, which plug each of the wide vestibules facing the two aqueous solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The hourglass-shaped channel is complexed with two 'monobody' crystallization chaperones, which plug each of the wide vestibules facing the two aqueous solutions. (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7c3bb392-55cb-445f-994d-391c816c3274",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C19",
+      "claim": "Monobodies are ~10 kDa engineered proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These ~10 kDa engineered monobodies are also high-affinity channel blockers whose long-lived block-times are readily observed in single-channel recordings (Stockbridge et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the monobodies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "cdda0f2b-836e-4c0e-a2ed-be612413c7d8",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C20",
+      "claim": "Monobodies are high-affinity channel blockers whose long-lived block-times are readily observed in single-channel recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "These ~10 kDa engineered monobodies are also high-affinity channel blockers whose long-lived block-times are readily observed in single-channel recordings (Stockbridge et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and by single-channel data in the current manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "489a95ec-dd6b-4a34-a604-1ef8ef898c72",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C21",
+      "claim": "Crystal structures suggested that Flucs contain two pores running along the sides of the complex, with each pore built by residues from both subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures suggested an additional surprising feature of Fluc proteins: double-barreled architecture. In contrast to most ion channels, in which a single ion-permeation pore spans the membrane along a central axis, Flucs were proposed to contain two pores running along the sides of the complex, with each pore built by residues from both subunits (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior structural analysis cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "fab090f5-51bc-4ede-97a9-ee7449a8a97c",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C22",
+      "claim": "This double-barreled architecture inference is unaccompanied by any functional behavior that would support or refute this picture.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is a crystallographically 'dry' inference based on structural results alone, unaccompanied by any functional behavior that would add mechanistic vitality to support or refute this otherwise unprecedented picture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of evidence prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "5763f1ee-fc0b-4474-93ea-fb597b7702dd",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C23",
+      "claim": "The crevices housing the anion densities are too narrow to show themselves at 2.1\u20132.6 \u00c5 resolution as clearly delineated aqueous pores traversing the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional crystallographic ambiguity is that the crevices housing the anion densities are too narrow to show themselves at 2.1\u20132.6 \u00c5 resolution as clearly delineated aqueous pores traversing the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the crystallographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7f4461a1-ad7f-4b8c-8a7f-5136822decb9",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C24",
+      "claim": "The argument for dual-pathway construction is not yet consummated and calls for tests based on functional properties of the pores manipulated individually.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, we consider that the argument for dual-pathway construction is not yet consummated; it calls for tests based on functional properties of the pores manipulated individually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the motivation for the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "e480aa4c-2d98-465c-8606-085f3f35811e",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C25",
+      "claim": "By solving crystal structures of ion-permeation mutants of a bacterial Fluc channel and analyzing the behavior of fused-dimer constructs, the authors unambiguously establish the two-pore character of Fluc channels.",
+      "claim_type": "EXPLICIT",
+      "source": "By solving crystal structures of ion-permeation mutants of a bacterial Fluc channel and analyzing the behavior of fused-dimer constructs, we now unambiguously establish the two-pore character of Fluc channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2215d065-e0a2-407c-9e7a-159f19674219",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C26",
+      "claim": "All experiments employ the previously described 'Ec2' Fluc homologue from an E. coli virulence plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments here employ the previously described 'Ec2' Fluc homologue from an E. coli virulence plasmid (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental system used, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2dbd09ff-f889-4956-ba83-477feb1e0644",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C27",
+      "claim": "The homodimeric channel's symmetric, dual-topology structure demands that the pores adopt antiparallel orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "The homodimeric channel's symmetric, dual-topology structure demands that the pores adopt antiparallel orientations and that the two chemically distinct F\u2212 ions in one pore, designated F1\u2212 and F2\u2212, are mirrored symmetrically in the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the structural symmetry of the channel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2c1914a2-9cfb-452d-9ce4-28773e7c79b8",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C28",
+      "claim": "The two chemically distinct F\u2212 ions in one pore, designated F1\u2212 and F2\u2212, are mirrored symmetrically in the other pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The homodimeric channel's symmetric, dual-topology structure demands that the pores adopt antiparallel orientations and that the two chemically distinct F\u2212 ions in one pore, designated F1\u2212 and F2\u2212, are mirrored symmetrically in the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural symmetry observed in crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b1b08900-9f00-48b1-93a6-18664868e9b6",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C29",
+      "claim": "In each pore, the two ions are coordinated by dipolar H-bond donors situated along a transmembrane 'polar track'.",
+      "claim_type": "EXPLICIT",
+      "source": "In each pore, the two ions are coordinated by dipolar H-bond donors situated along a transmembrane 'polar track' (Figure 1b) that constitutes a possible ion pathway through the channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7abfad0e-df83-4af0-a4f8-d0006e042ae5",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C30",
+      "claim": "The polar track constitutes a possible ion pathway through the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In each pore, the two ions are coordinated by dipolar H-bond donors situated along a transmembrane 'polar track' (Figure 1b) that constitutes a possible ion pathway through the channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the structural arrangement of the polar track.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "370a900f-1cd8-40df-b725-2cc0b9c20029",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C31",
+      "claim": "The F\u2212 coordination shells are completed by conserved phenylalanine residues interacting edge-on with the bound anions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the F\u2212 coordination shells are completed by conserved phenylalanine residues interacting edge-on with the bound anions (Figure 1b), Phe80 associated with the F1\u2212 pair and Phe83 with the F2\u2212 pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "3bac567f-599b-43e0-aa1c-b95e1509fdcc",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C32",
+      "claim": "Phe80 is associated with the F1\u2212 pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the F\u2212 coordination shells are completed by conserved phenylalanine residues interacting edge-on with the bound anions (Figure 1b), Phe80 associated with the F1\u2212 pair and Phe83 with the F2\u2212 pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b3ba37d1-5cca-4840-a9a0-0d0e53b34e23",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C33",
+      "claim": "Phe83 is associated with the F2\u2212 pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the F\u2212 coordination shells are completed by conserved phenylalanine residues interacting edge-on with the bound anions (Figure 1b), Phe80 associated with the F1\u2212 pair and Phe83 with the F2\u2212 pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "867fafa1-ef89-4510-b6ec-f0eb39fbc665",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C34",
+      "claim": "These four aromatic side chains adopt a striking side-to-face 'Phe-box' arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "These four aromatic side chains adopt a striking side-to-face 'Phe-box' arrangement that supports an unusual aromatic-halide coordination motif proposed to be essential for F\u2212-specific binding and permeation (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure and prior analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "6c68ce11-51a7-4bd0-a55f-a4f13ea08eb4",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C35",
+      "claim": "The Phe-box arrangement supports an unusual aromatic-halide coordination motif proposed to be essential for F\u2212-specific binding and permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "These four aromatic side chains adopt a striking side-to-face 'Phe-box' arrangement that supports an unusual aromatic-halide coordination motif proposed to be essential for F\u2212-specific binding and permeation (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "af095103-064a-48b6-ac8e-ce5850d156d2",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C36",
+      "claim": "Edge-on aromatic-anion coordination geometry makes chemical sense in light of the electropositive hydrogens of the quadrupolar aromatic ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Edge-on aromatic-anion coordination geometry makes chemical sense in light of the electropositive hydrogens of the quadrupolar aromatic ring (Jackson et al., 2007; Philip et al., 2011; Schwans et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to chemical studies on aromatic-anion interactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0ca73999-150a-4e65-9ebe-97a10adf0dd1",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C37",
+      "claim": "The two antiparallel polar tracks and their associated bound F\u2212 ions are well-separated in the crystal structure, with no plausible pathway for ions to transfer between tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "The two antiparallel polar tracks and their associated bound F\u2212 ions are well-separated in the crystal structure, with no plausible pathway for ions to transfer between tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "d42b3803-1302-45f5-940b-2a91e3d9f967",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C38",
+      "claim": "These structural features led to the proposal that the two polar tracks represent two separate pores.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural features led to the proposal, to be tested here, that the two polar tracks represent two separate pores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "ed576246-1bc0-480c-b12b-7705438777ae",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C39",
+      "claim": "Mutation of the conserved Phe-box residues in a Fluc homologue from B. pertussis was previously shown to severely inhibit F\u2212 transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the conserved Phe-box residues in a Fluc homologue from B. pertussis was previously shown to severely inhibit F\u2212 transport, an effect presumed to reflect the replacement of F\u2212-friendly binding sites in the conduction pathways with kinetic barriers to ion movement (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "5e2b8d47-a25e-4d31-b4d9-53fb313e289d",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C40",
+      "claim": "The inhibitory effect of Phe-box mutations is presumed to reflect the replacement of F\u2212-friendly binding sites in the conduction pathways with kinetic barriers to ion movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the conserved Phe-box residues in a Fluc homologue from B. pertussis was previously shown to severely inhibit F\u2212 transport, an effect presumed to reflect the replacement of F\u2212-friendly binding sites in the conduction pathways with kinetic barriers to ion movement (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis about the effect of the mutations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "8ef026bd-55bb-493a-960a-d896bbbb8817",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C41",
+      "claim": "Crystal structures of F80I and F83I Ec2 mutants were solved.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is now tested in Ec2, where we here examine occupancy of the F\u2212-binding sites by solving crystal structures of Phe-box mutants F80I and F83I (Figure 1c, Table 1) and assessing their transport function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data in Figure 1c and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "f5715168-9145-4786-8178-788f1e06815c",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C42",
+      "claim": "Substitution of each aromatic side chain by Ile specifically extinguishes the corresponding pair of F\u2212 densities, one in each pore, while leaving the other pair Phe-coordinated and unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of each aromatic side chain by Ile specifically extinguishes the corresponding pair of F\u2212 densities, one in each pore, while leaving the other pair Phe-coordinated and unperturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structures shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "6e8f40fd-dbc1-4c39-b82b-24b340e2417e",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C43",
+      "claim": "The mutations cause only local structural disturbances such as alternate rotamers at nearby sidechains Ser84 and Ser110.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations cause only local structural disturbances such as alternate rotamers at nearby sidechains Ser84 and Ser110 (C\u03b1 rmsd 0.4 \u00c5, 0.2 \u00c5 for F80I, F83I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison of mutant and WT structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "ef2db082-1f81-4343-aae2-f4a9aebc9cc2",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C44",
+      "claim": "F80I and F83I mutations reduce F\u2212 flux in reconstituted liposomes to undetectable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the mutations are dramatic, reducing F\u2212 flux in reconstituted liposomes to undetectable levels (Figure 1d), a >104-fold rate inhibition compared to the wildtype (WT) channel (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the flux data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b9ea2b4f-7d19-4baa-a39e-2da25098c60d",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C45",
+      "claim": "F80I and F83I mutations cause a >10^4-fold rate inhibition compared to the wildtype channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the mutations are dramatic, reducing F\u2212 flux in reconstituted liposomes to undetectable levels (Figure 1d), a >104-fold rate inhibition compared to the wildtype (WT) channel (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of flux data with prior WT measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c95ac277-60ca-490b-9b4d-b0f06a01a7e1",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C46",
+      "claim": "Phe80 and Phe83 lie along F\u2212 permeation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These facts imply that Phe80 and Phe83 lie along F\u2212 permeation pathways and that the functional defect in the mutants stems directly from the loss of the aromatic ring as a F\u2212-binding partner in these pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data on the mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "8ada3639-effc-4200-aa65-f5b1db50290b",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C47",
+      "claim": "The functional defect in the mutants stems directly from the loss of the aromatic ring as a F\u2212-binding partner in these pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These facts imply that Phe80 and Phe83 lie along F\u2212 permeation pathways and that the functional defect in the mutants stems directly from the loss of the aromatic ring as a F\u2212-binding partner in these pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference from the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "6428cd7d-4a20-46be-a4e2-4b9dbcf4ebed",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C48",
+      "claim": "A tandem dimer was constructed by connecting two copies of the WT Ec2 sequence with a linker containing a foreign transmembrane helix to force an antiparallel arrangement of the two domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore constructed a tandem dimer by connecting two copies of the WT Ec2 sequence with a linker containing a foreign transmembrane helix to force an antiparallel arrangement of the two domains (Figure 2a, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental construct, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2fdaf759-2b52-4658-8d18-73545ffef883",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C49",
+      "claim": "The tandem dimer construct is denoted 'WT/WT'.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct, denoted 'WT/WT', mimics eukaryotic Fluc genes (Smith et al., 2015; Stockbridge et al., 2013), and it reprises an engineered homologue previously used to infer dual-topology assembly of Fluc channels (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming convention for the construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "4231ab76-89d3-488a-830c-d9cc512ad28c",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C50",
+      "claim": "The WT/WT construct mimics eukaryotic Fluc genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct, denoted 'WT/WT', mimics eukaryotic Fluc genes (Smith et al., 2015; Stockbridge et al., 2013), and it reprises an engineered homologue previously used to infer dual-topology assembly of Fluc channels (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on eukaryotic Fluc genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "4f22c1e4-9747-40cb-9aa7-e4a8086fa3e7",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C51",
+      "claim": "The WT/WT construct reprises an engineered homologue previously used to infer dual-topology assembly of Fluc channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct, denoted 'WT/WT', mimics eukaryotic Fluc genes (Smith et al., 2015; Stockbridge et al., 2013), and it reprises an engineered homologue previously used to infer dual-topology assembly of Fluc channels (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "d58753ff-85d2-4003-8bcc-d0a288b0021a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C52",
+      "claim": "The concatemer expresses poorly (~40 \u03bcg/L culture).",
+      "claim_type": "EXPLICIT",
+      "source": "The concatemer expresses poorly (~40 \u03bcg/L culture), but well enough for purification and reconstitution in liposomes and planar lipid bilayers (Figure 2b\u2013d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the expression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b08ea50d-2f8c-445f-b9bb-57cc3554663a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C53",
+      "claim": "The concatemer is functionally indistinguishable from the homodimeric WT channel with respect to unitary current, high intrinsic open probability, brief, infrequent closings, F\u2212 selectivity, and submicromolar affinity block by monobody proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The concatemer is functionally indistinguishable from the homodimeric WT channel with respect to unitary current, high intrinsic open probability, brief, infrequent closings, F\u2212 selectivity, and submicromolar affinity block by monobody proteins (Figure 2\u2014figure supplements 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b6b36b84-ee3a-4683-b9ce-3ee377ec466c",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C54",
+      "claim": "The F80I / F80I and F83I / F83I double mutants with identical Phe substitutions in both domains are inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the F80I / F80I and F83I / F83I double mutants with identical Phe substitutions in both domains - mimics of the mutant homodimers above - are likewise inactive (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the flux data in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "895e6ae0-4b24-4589-95d5-88875863b012",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C55",
+      "claim": "Concatemeric Ec2 faithfully recapitulates the behavior of the corresponding homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Concatemeric Ec2 thus faithfully recapitulates the behavior of the corresponding homodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the functional comparison of concatemers and homodimers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "f7b3bb6e-6c8a-4e4a-b138-ef9cfdef203f",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C56",
+      "claim": "All four single Phe mutants, each of which leaves one pore unaltered, score active in efflux experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The flux behavior of the Phe-box mutants in the fused-domain channels meet all expectations of two-pore assembly, as Figure 3 illustrates. All four single Phe mutants, each of which leaves one pore unaltered, score active in these efflux experiments (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the flux data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "3a517be4-06b7-42c7-bd03-9409f8415cf9",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C57",
+      "claim": "The two Phe residues from the same domain contribute to different pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the two Phe residues from the same domain contribute to different pores, and thus each pore harbors Phe80 from one domain and Phe83 from the other, we can distinguish two classes of double mutants: trans, wherein the two mutations reside in different pores, or cis, with both mutations in the same pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural arrangement of the Phe residues in the dual-topology dimer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "4a20eed3-4d59-4732-bcf4-5fcdf44b2c9f",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C58",
+      "claim": "Each pore harbors Phe80 from one domain and Phe83 from the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the two Phe residues from the same domain contribute to different pores, and thus each pore harbors Phe80 from one domain and Phe83 from the other, we can distinguish two classes of double mutants: trans, wherein the two mutations reside in different pores, or cis, with both mutations in the same pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural arrangement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "916f6efd-3871-4906-aaed-bc7f3c4b32a1",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C59",
+      "claim": "Two trans double mutants, F80I / F80I and F83I / F83I, are completely inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Two trans double mutants, F80I / F80I and F83I / F83I, are completely inactive, as shown above, while both cis double mutants (F80I / F83I, F83I / F80I) retain channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the flux data in Figure 2c and Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "cc60252d-1fb0-4b18-8039-c679d78c8d78",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C60",
+      "claim": "Both cis double mutants (F80I / F83I, F83I / F80I) retain channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Two trans double mutants, F80I / F80I and F83I / F83I, are completely inactive, as shown above, while both cis double mutants (F80I / F83I, F83I / F80I) retain channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the flux data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "307ed096-bf16-450a-9870-848158c31c23",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C61",
+      "claim": "Channels with both pathways mutated are inactive irrespective of the particular combination of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that channels with both pathways mutated are inactive irrespective of the particular combination of mutations, while those mutated in only one pathway remain active, as expected for two-pore construction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the flux data on double mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c6cd5e17-5b53-4e5b-8a31-6eba3bf49530",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C62",
+      "claim": "Channels mutated in only one pathway remain active, as expected for two-pore construction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that channels with both pathways mutated are inactive irrespective of the particular combination of mutations, while those mutated in only one pathway remain active, as expected for two-pore construction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the flux data, supporting the two-pore model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0c2f5ab5-869b-42fc-8bec-90f461c09feb",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C63",
+      "claim": "All single Phe-box mutants show unitary conductance of 5.7 \u00b1 0.3 pS, roughly half that of WT/WT fused-domain or WT homodimeric channels (10.6 \u00b1 0.1 pS).",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 4, Figure 4\u2014figure supplement 1) are unambiguous: all single Phe-box mutants show unitary conductance of 5.7 + 0.3 pS, roughly half that of WT/WT fused-domain or WT homodimeric channels (10.6 + 0.1 pS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel recording data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "9a0c5000-3248-42d2-8c2c-71e08f10d4c0",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C64",
+      "claim": "The single-pore channels all recapitulate the high open probability and monobody block of WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the single-pore channels all recapitulate the high open probability, and monobody block of WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-channel recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "ef5af561-35b4-45f3-9bb3-78290db74cde",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C65",
+      "claim": "The cis double mutants show clear single-channel conductance that is lower (2.3 \u00b1 0.2 pS) than the single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally note that the cis double mutants also show clear single-channel conductance that is nonetheless lower (2.3 + 0.2 pS) than the single mutants, possibly due to subtle, non-local structural disturbance of the conducting pore arising from the double mutation in the inactive pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-channel recording data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0c8d80f1-f68e-44f3-be03-c4b1a3027b76",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C66",
+      "claim": "The lower conductance of cis double mutants is possibly due to subtle, non-local structural disturbance of the conducting pore arising from the double mutation in the inactive pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally note that the cis double mutants also show clear single-channel conductance that is nonetheless lower (2.3 + 0.2 pS) than the single mutants, possibly due to subtle, non-local structural disturbance of the conducting pore arising from the double mutation in the inactive pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed conductance difference.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "6d09b187-ada0-4c02-aacb-90a453490655",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C67",
+      "claim": "The ~2.5-fold drop in conductance of cis double mutants pales in comparison to the >10^4-fold drop observed when adding a second mutation in the trans configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "This ~2.5-fold drop in conductance, however, pales in comparison to the >104-fold drop observed when adding a second mutation in the trans configuration (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the effects of cis vs trans double mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2e944b73-317b-4ac9-8944-f17ecf32fa3a",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C68",
+      "claim": "These experiments firmly establish the two-pore architecture suggested by crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the behavior of the Fluc Ec2 channel at a mechanistic level, these experiments now firmly establish the two-pore architecture suggested by crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "e0cb8bfc-f849-499c-8049-1fbe25078f78",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C69",
+      "claim": "Two-pore architecture is a property of the entire Fluc family.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider this to be a property of the entire Fluc family, a conclusion further supported by indications of genetic drift in non-symmetric Flucs and the asymmetrical effects of mutations in yeast Fluc channels (Smith et al., 2015; Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization supported by citations to studies on other Fluc homologues.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b7b79ebd-27c2-484d-a6cc-1cea1bf45142",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C70",
+      "claim": "The results highlight the importance of the conserved Phe-box residues in crafting coordination spheres for which F\u2212 ions are willing to shed their extensive aqueous hydration shells and enter the water-depleted confines of the ion-conduction pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also highlight the importance of the conserved Phe-box residues in crafting coordination spheres for which F\u2212 ions are willing to shed their extensive aqueous hydration shells and enter the water-depleted confines of the ion-conduction pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the functional importance of the Phe residues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c9f94f30-d4a2-4e46-b346-ff20d32e4e61",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C71",
+      "claim": "WT Ec2 channels show infrequent, brief excursions to a substate of ~6 pS, approximately one-half the conductance of the open channel.",
+      "claim_type": "EXPLICIT",
+      "source": "First, WT Ec2 channels show infrequent, brief excursions to a substate of ~6 pS, approximately one-half the conductance of the open channel (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel recording data in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "11db256c-add8-4b36-8f27-abe62b861cb6",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C72",
+      "claim": "It is natural to envision the substates as full closings of a single pore in a two-pore complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is natural to envision these as full closings of a single pore in a two-pore complex (Stockbridge et al., 2013), a picture demanding that such partial closings be absent in the single-pore mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the origin of the substates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7e67e531-18c1-4527-9018-17d822d07335",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C73",
+      "claim": "The hypothesis that substates represent full closings of a single pore is contradicted by the kinetically similar substates of ~3 pS appearing in the single-pore mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this idea is plainly contradicted by the kinetically similar substates of ~3 pS appearing in the single-pore mutants here (Figure 4a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "a48ba573-7190-4e43-b853-169612c37bce",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C74",
+      "claim": "The substates in both wildtype and mutant channels must reflect a rare conformation that acts simultaneously on both pores to reduce F\u2212 current in each.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the substates in both wildtype and mutant channels must reflect a rare conformation that acts simultaneously on both pores to reduce F\u2212 current in each, perhaps occurring in the wide, water-filled vestibules on the two ends of the channel complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a revised hypothesis based on the substate data from single-pore mutants.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "546f1ffe-7562-488c-bc90-3a019bd2c7ff",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C75",
+      "claim": "The substates perhaps occur in the wide, water-filled vestibules on the two ends of the channel complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the substates in both wildtype and mutant channels must reflect a rare conformation that acts simultaneously on both pores to reduce F\u2212 current in each, perhaps occurring in the wide, water-filled vestibules on the two ends of the channel complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion about the location of the conformational change.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0b4f2838-54e1-4e63-9b8d-2d2503b7ab04",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C76",
+      "claim": "The edge-to-face arrangement of the Phe-box in the WT channel had originally suggested that these four sidechains mutually stabilize and orient each other so as to properly coordinate the F\u2212 ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the striking and aesthetically appealing edge-to-face arrangement of the Phe-box in the WT channel had originally suggested to us that these four sidechains mutually stabilize and orient each other so as to properly coordinate the F\u2212 ions (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This was a prior hypothesis based on the WT structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "da60ba8a-f11f-4f41-a5d8-4c4b7bcade38",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C77",
+      "claim": "The Phe-mutant crystal structures refute the idea of a mutually stabilizing quartet, since the two Phe side chains remaining in each Ile substitution adopt identical orientations and crystallographic order as in the full Phe-box of WT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Phe-mutant crystal structures here, while validating F\u2212 coordination by the aromatic rings, refute the idea of a mutually stabilizing quartet, since the two Phe side chains remaining in each Ile substitution, though distant from each other, adopt identical orientations and crystallographic order as in the full Phe-box of WT (side chain rmsd 0.2 \u00c5 upon backbone alignment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of mutant and WT crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "c61b2361-98c1-49f5-b92c-7580fbd8fe94",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C78",
+      "claim": "The detailed trajectories of the two pores remain uncertain due to their very narrow bore.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, despite the well-defined locations of the F\u2212 ions and the span of the polar track residues, we acknowledge that the detailed trajectories of the two pores remain uncertain due to their very narrow bore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b02f6e1b-5623-4046-8667-fe7e0801ddb6",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C79",
+      "claim": "It is likely that the pores originate and end in the two aqueous vestibules that give the channel a symmetrical hourglass shape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as indicated in the conjectural cartoon of Figure 5, it is likely that the pores originate and end in the two aqueous vestibules that give the channel a symmetrical hourglass shape.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis about the pore trajectories, illustrated in Figure 5.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "a87a9c88-f4ed-4112-a7e0-ac9201065123",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C80",
+      "claim": "This suggestion follows from monobody interaction with Fluc channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggestion follows from monobody interaction with Fluc channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rationale for the hypothesis about pore trajectories.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "da2a0891-d34e-4abd-8f86-f89ee0fb6c11",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C81",
+      "claim": "In crystal structures of both Fluc homologues, monobodies cap and intrude into the vestibules with long loops bearing their diversified sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In crystal structures of both Fluc homologues, monobodies cap and intrude into the vestibules with long loops bearing their diversified sequences (Stockbridge et al., 2015); in channel recordings here, the S9 monobody inhibits both double- and single-pore channels fully to the zero-current level, as though both pores are occluded simultaneously by the blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior crystal structures and functional data in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "7d3530d3-d87b-4a88-b366-4b84402aae7d",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C82",
+      "claim": "The S9 monobody inhibits both double- and single-pore channels fully to the zero-current level, as though both pores are occluded simultaneously by the blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "In crystal structures of both Fluc homologues, monobodies cap and intrude into the vestibules with long loops bearing their diversified sequences (Stockbridge et al., 2015); in channel recordings here, the S9 monobody inhibits both double- and single-pore channels fully to the zero-current level, as though both pores are occluded simultaneously by the blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-channel recording data showing complete block.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "d3d4ba50-edf6-4f7c-b1bd-f10b489dc3be",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C83",
+      "claim": "The vestibules are envisioned as common regions of low selectivity from which F\u2212 ions gain access to the separate F\u2212-specific pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposal thus envisions the vestibules as common regions of low selectivity from which F\u2212 ions gain access to the separate F\u2212-specific pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the functional role of the vestibules.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "10207ddf-4b96-4d6f-b108-ff687b382b58",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C84",
+      "claim": "The base Ec2 construct used contains a single mutation (R25K) that increases expression but does not affect functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "The base Ec2 construct used here, denoted 'WT', contains a single mutation (R25K) that increases expression but does not affect functionality (Stockbridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct used, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "ebf6954a-b0ea-43dc-9af3-add61bd09e1d",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C85",
+      "claim": "The WT/WT Fluc concatemer was synthetically constructed with a hexahistidine tag.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT/WT Fluc concatemer was synthetically constructed with a hexahistidine tag, and designed so that the two Fluc domains would differ in nucleotide sequence while maintaining identical protein sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b612f1fd-0446-4c06-a1f1-3ab351e5e102",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C86",
+      "claim": "The two Fluc domains in the concatemer differ in nucleotide sequence while maintaining identical protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT/WT Fluc concatemer was synthetically constructed with a hexahistidine tag, and designed so that the two Fluc domains would differ in nucleotide sequence while maintaining identical protein sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "9416e7f8-bf36-408f-abcf-97333347f280",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C87",
+      "claim": "A transmembrane inversion linker based on a non-dimerizing glycophorin A variant was used to join the two flux domains.",
+      "claim_type": "EXPLICIT",
+      "source": "A transmembrane inversion linker based on a non-dimerizing glycophorin A variant (Lemmon et al., 1992) was used to join the two flux domains, as described for a Fluc heterodimeric homologue (Stockbridge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the linker design, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "5cfdb6ad-dbab-4d34-919c-d65abf9d5d40",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C88",
+      "claim": "Liposomes for Poisson-dilution conditions were prepared at low protein density (0.2 \u00b5g protein/mg lipid), such that on average only a single channel protein per proteoliposome is incorporated.",
+      "claim_type": "EXPLICIT",
+      "source": "Liposomes were prepared for Poisson-dilution conditions at low protein density (0.2 \u00b5g protein/mg lipid), such that on average only a single channel protein per proteoliposome is incorporated (Stockbridge et al., 2013), and ~50% of the liposomes are protein-free.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "74c6d1b7-3f77-4945-882b-1413d3a284ae",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C89",
+      "claim": "Under Poisson-dilution conditions, ~50% of the liposomes are protein-free.",
+      "claim_type": "EXPLICIT",
+      "source": "Liposomes were prepared for Poisson-dilution conditions at low protein density (0.2 \u00b5g protein/mg lipid), such that on average only a single channel protein per proteoliposome is incorporated (Stockbridge et al., 2013), and ~50% of the liposomes are protein-free.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the expected outcome of Poisson-dilution reconstitution.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "e8d7995b-9bf5-436c-9685-c241ccbd2475",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "claim_id": "C90",
+      "claim": "Datasets from second crystals for both F80I and F83I that diffracted to similar resolution reproduce all the major structural findings, particularly with regard to the pattern of bound F\u2212 and the lack of perturbation of the overall Fluc structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Datasets from second crystals for both F80I and F83I that diffracted to similar resolution reproduce all the major structural findings here, particularly with regard to the pattern of bound F\u2212 and the lack of perturbation of the overall Fluc structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This indicates reproducibility of the crystallographic results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Fluc channels as a recently discovered class of F\u207b ion channels with dual-topology architecture. Prior work established that bacterial Fluc channels assemble as antiparallel dimers, a topology originally inferred from functional studies and later confirmed by crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 establish the context and prior knowledge about Fluc channels. These are well-supported by multiple citations to prior work and represent accurate characterization of the field's understanding before this study. The claims appropriately distinguish between historical views (C9) and recent discoveries (C10-C17).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior crystal structures suggested a double-barreled architecture with two separate ion-conduction pathways, but this proposal lacked functional validation and was limited by crystallographic resolution. The authors identify this gap as motivation for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C21-C24 accurately describe the state of knowledge prior to this work. The crystallographic limitations (C23) and lack of functional correlates (C4, C22) are appropriately acknowledged. This establishes clear motivation for the functional studies presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Crystal structures of F80I and F83I mutants show that substituting each phenylalanine specifically eliminates its associated F\u207b binding site while causing only local structural perturbations. These mutations abolish F\u207b transport (>10\u2074-fold inhibition), demonstrating that Phe80 and Phe83 are essential for F\u207b permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C41-C47 are strongly supported by crystallographic data (Figure 1c, Table 1) showing specific loss of F\u207b densities and flux data (Figure 1d) showing complete loss of transport. The structural specificity (C42) and minimal global perturbation (C43) strengthen the conclusion that these residues are directly involved in ion permeation. The >10\u2074-fold inhibition is quantitatively supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The dual-topology structure creates two antiparallel pores, each containing two F\u207b binding sites (F1\u207b and F2\u207b) coordinated by polar track residues. The two pores are structurally separated with no pathway for ion transfer between them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 and C37-C38 are supported by the crystal structure data. The antiparallel orientation (C27) follows logically from the dual-topology homodimer structure. The structural separation of pores (C37) is an important observation supporting the dual-pathway model. However, C30 is somewhat speculative about the polar track being the ion pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "8fdcec40-bd08-4727-b096-8ede73499997",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A tandem dimer construct (WT/WT) was engineered with an antiparallel linker to enable individual pore manipulation. This concatemer faithfully recapitulates homodimeric channel behavior in terms of conductance, open probability, selectivity, and monobody block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 describe the concatemer design and validation. The functional equivalence (C53) is well-supported by data in Figure 2 and supplements showing matching properties. The poor expression (C52) is noted but doesn't prevent functional analysis. The construct design (C48, C85-C87) is clearly described and appropriate for testing individual pores.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "003f1434-0167-49b2-a4d5-257ee9b127b4",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-pore mutations in concatemeric channels demonstrate functional independence of the two pores. All four single Phe mutants retain activity, while trans double mutants (affecting both pores) are inactive and cis double mutants (affecting one pore) remain active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C56-C62 present the key functional evidence for dual-pathway architecture. The flux data (Figure 3) clearly show that single-pore mutants are active while trans double mutants are inactive. The cis/trans distinction (C57-C60) is logically sound based on the structural arrangement. This pattern strongly supports independent pores (C61-C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "601d4969-18bd-4449-8b38-ae9cce391fe2",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-channel recordings show that single-pore mutants have approximately half the conductance of WT channels (5.7 vs 10.6 pS), while retaining high open probability and monobody block. Cis double mutants show lower conductance (2.3 pS) but remain functional, in stark contrast to inactive trans double mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are strongly supported by single-channel data (Figure 4). The ~50% conductance reduction in single-pore mutants (C63) provides quantitative support for two independent conducting pores. The retention of other properties (C64) confirms proper folding. The cis double mutant behavior (C65-C67) is interesting, though the explanation (C66) is speculative. The comparison to trans mutants (C67) reinforces the dual-pore model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The combined structural and functional evidence firmly establishes the dual-pathway architecture of Fluc channels. This architecture is proposed to be a general property of the Fluc family, and the results highlight the importance of Phe-box residues in F\u207b coordination and permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C25, and C68-C70 represent the main conclusions. The dual-pathway architecture is strongly supported by converging structural (loss of specific F\u207b sites) and functional (independent pore inactivation, half-conductance) evidence. The generalization to the Fluc family (C69) is supported by citations to other homologues. The mechanistic interpretation about Phe residues (C70) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "WT channels show substates at ~50% conductance, initially hypothesized to represent single-pore closure. However, single-pore mutants also show substates at ~50% of their conductance, refuting this hypothesis and suggesting a conformational change affecting both pores simultaneously, possibly in the vestibules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 describe an unexpected finding that revises a prior hypothesis. The observation of substates in single-pore mutants (C73) clearly contradicts the single-pore closure model (C72). The revised interpretation (C74-C75) is logical but speculative. This represents good scientific practice in acknowledging and explaining data that contradicts initial hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "35a6009f-0552-475a-acd2-f1ab0691f6c5",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Phe-box arrangement was originally hypothesized to represent a mutually stabilizing quartet. However, mutant structures show that the remaining Phe residues maintain identical orientations even when distant from each other, refuting the mutual stabilization hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 describe another hypothesis revision based on structural data. The mutant structures (C77) clearly show that individual Phe residues maintain proper orientation without the full quartet, with quantitative structural comparison (0.2 \u00c5 rmsd). This refutes the prior hypothesis (C76) and demonstrates that the Phe residues are independently stable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "d6d8853a-01fc-4a0c-b646-065daabf48de",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite well-defined F\u207b binding sites, the detailed pore trajectories remain uncertain due to narrow bore. The authors propose that pores originate and terminate in the vestibules, based on monobody structures and the observation that monobody blocks both pores simultaneously to zero current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C83 acknowledge limitations and propose a model for pore trajectories. The uncertainty (C78) is appropriately acknowledged. The monobody blocking data (C81-C82) support the vestibule hypothesis (C79, C83), but this remains somewhat speculative. The complete block of both single- and double-pore channels (C82) is interesting but doesn't definitively prove the vestibule model. More direct evidence would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    },
+    {
+      "id": "2b35d51d-522d-4269-b1d8-9987cbaf7788",
+      "content_id": "e94a6f66-72e6-4bf5-a4ac-5b446cd1d0e6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employs the Ec2 Fluc homologue with Poisson-dilution reconstitution conditions ensuring single channels per liposome. Crystallographic reproducibility was confirmed with independent datasets for both mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C88-C90 describe methodological details. The Poisson-dilution approach (C88-C89) is appropriate for the flux assays and well-established. The crystallographic reproducibility (C90) strengthens confidence in the structural findings. These are standard controls that support the reliability of the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:32:57.078517Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9aeaf404-da36-4600-8297-9a6db217d48a",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "59bd44c8-2778-4cc0-9cfb-af79dbd988b9",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "55693e74-21c6-47e4-85b8-003738a473c3",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "96efa7a2-72b4-4d71-8144-0233abe26d4b",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "c4e168eb-81dc-4584-8ffb-edbe5c0b83c1",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "8e857074-db38-41f4-ac25-79ca95dcc51a",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "00982385-05bb-4d7d-a08c-ed03a1f70de5",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "6bd222da-6697-44c6-9028-3da8364fd783",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "1e659478-65bc-42db-9694-96f2d8c8a039",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "432e6bb4-28bd-4f24-bb42-2f50f3aed5fb",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "b35514eb-e1bc-4d67-b2cf-21b47534e33a",
+      "result_id": "4edbe1a6-3012-4fe4-bb95-5233e213ae5c"
+    },
+    {
+      "claim_id": "ab8f8cf2-f6f0-4c0d-bfa2-47074a7ccc22",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "0106610b-ce91-4458-bfbd-9e5111d027b0",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "489a95ec-dd6b-4a34-a604-1ef8ef898c72",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "fab090f5-51bc-4ede-97a9-ee7449a8a97c",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "5763f1ee-fc0b-4474-93ea-fb597b7702dd",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "7f4461a1-ad7f-4b8c-8a7f-5136822decb9",
+      "result_id": "a3a82fb4-cc01-430c-94ca-6512143b4cd9"
+    },
+    {
+      "claim_id": "9ab49959-f7d3-4b8d-a5f7-e580aef8db13",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "7aa8edf6-606a-4520-83af-6c27544fa890",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "370a900f-1cd8-40df-b725-2cc0b9c20029",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "3bac567f-599b-43e0-aa1c-b95e1509fdcc",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "b3ba37d1-5cca-4840-a9a0-0d0e53b34e23",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "867fafa1-ef89-4510-b6ec-f0eb39fbc665",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "6c68ce11-51a7-4bd0-a55f-a4f13ea08eb4",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "af095103-064a-48b6-ac8e-ce5850d156d2",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "ed576246-1bc0-480c-b12b-7705438777ae",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "5e2b8d47-a25e-4d31-b4d9-53fb313e289d",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "8ef026bd-55bb-493a-960a-d896bbbb8817",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "f5715168-9145-4786-8178-788f1e06815c",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "6e8f40fd-dbc1-4c39-b82b-24b340e2417e",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "ef2db082-1f81-4343-aae2-f4a9aebc9cc2",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "b9ea2b4f-7d19-4baa-a39e-2da25098c60d",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "c95ac277-60ca-490b-9b4d-b0f06a01a7e1",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "8ada3639-effc-4200-aa65-f5b1db50290b",
+      "result_id": "0764c195-b66e-4fd9-8f1f-ca448293f9d5"
+    },
+    {
+      "claim_id": "2dbd09ff-f889-4956-ba83-477feb1e0644",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "2c1914a2-9cfb-452d-9ce4-28773e7c79b8",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "b1b08900-9f00-48b1-93a6-18664868e9b6",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "7abfad0e-df83-4af0-a4f8-d0006e042ae5",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "0ca73999-150a-4e65-9ebe-97a10adf0dd1",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "d42b3803-1302-45f5-940b-2a91e3d9f967",
+      "result_id": "b2d33ac9-7ef3-42dc-b517-bfc13fe2abc3"
+    },
+    {
+      "claim_id": "6428cd7d-4a20-46be-a4e2-4b9dbcf4ebed",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "2fdaf759-2b52-4658-8d18-73545ffef883",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "4231ab76-89d3-488a-830c-d9cc512ad28c",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "4f22c1e4-9747-40cb-9aa7-e4a8086fa3e7",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "d58753ff-85d2-4003-8bcc-d0a288b0021a",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "b08ea50d-2f8c-445f-b9bb-57cc3554663a",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "b6b36b84-ee3a-4683-b9ce-3ee377ec466c",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "895e6ae0-4b24-4589-95d5-88875863b012",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "10207ddf-4b96-4d6f-b108-ff687b382b58",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "ebf6954a-b0ea-43dc-9af3-add61bd09e1d",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "b612f1fd-0446-4c06-a1f1-3ab351e5e102",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "9416e7f8-bf36-408f-abcf-97333347f280",
+      "result_id": "8fdcec40-bd08-4727-b096-8ede73499997"
+    },
+    {
+      "claim_id": "c800621d-29da-4775-94c8-c67f042f84ee",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "f7b3bb6e-6c8a-4e4a-b138-ef9cfdef203f",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "3a517be4-06b7-42c7-bd03-9409f8415cf9",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "4a20eed3-4d59-4732-bcf4-5fcdf44b2c9f",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "916f6efd-3871-4906-aaed-bc7f3c4b32a1",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "cc60252d-1fb0-4b18-8039-c679d78c8d78",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "307ed096-bf16-450a-9870-848158c31c23",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "c6cd5e17-5b53-4e5b-8a31-6eba3bf49530",
+      "result_id": "003f1434-0167-49b2-a4d5-257ee9b127b4"
+    },
+    {
+      "claim_id": "0c2f5ab5-869b-42fc-8bec-90f461c09feb",
+      "result_id": "601d4969-18bd-4449-8b38-ae9cce391fe2"
+    },
+    {
+      "claim_id": "9a0c5000-3248-42d2-8c2c-71e08f10d4c0",
+      "result_id": "601d4969-18bd-4449-8b38-ae9cce391fe2"
+    },
+    {
+      "claim_id": "ef5af561-35b4-45f3-9bb3-78290db74cde",
+      "result_id": "601d4969-18bd-4449-8b38-ae9cce391fe2"
+    },
+    {
+      "claim_id": "0c8d80f1-f68e-44f3-be03-c4b1a3027b76",
+      "result_id": "601d4969-18bd-4449-8b38-ae9cce391fe2"
+    },
+    {
+      "claim_id": "6d09b187-ada0-4c02-aacb-90a453490655",
+      "result_id": "601d4969-18bd-4449-8b38-ae9cce391fe2"
+    },
+    {
+      "claim_id": "7f62ed90-aaec-4f0f-b7b6-751253df9329",
+      "result_id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7"
+    },
+    {
+      "claim_id": "e480aa4c-2d98-465c-8606-085f3f35811e",
+      "result_id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7"
+    },
+    {
+      "claim_id": "2e944b73-317b-4ac9-8944-f17ecf32fa3a",
+      "result_id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7"
+    },
+    {
+      "claim_id": "e0cb8bfc-f849-499c-8049-1fbe25078f78",
+      "result_id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7"
+    },
+    {
+      "claim_id": "b7b79ebd-27c2-484d-a6cc-1cea1bf45142",
+      "result_id": "657dcf12-45e4-4e69-b4a1-81e59b0a76c7"
+    },
+    {
+      "claim_id": "c9f94f30-d4a2-4e46-b346-ff20d32e4e61",
+      "result_id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33"
+    },
+    {
+      "claim_id": "11db256c-add8-4b36-8f27-abe62b861cb6",
+      "result_id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33"
+    },
+    {
+      "claim_id": "7e67e531-18c1-4527-9018-17d822d07335",
+      "result_id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33"
+    },
+    {
+      "claim_id": "a48ba573-7190-4e43-b853-169612c37bce",
+      "result_id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33"
+    },
+    {
+      "claim_id": "546f1ffe-7562-488c-bc90-3a019bd2c7ff",
+      "result_id": "1c1a02f1-e707-43fa-89b6-19ed879b4f33"
+    },
+    {
+      "claim_id": "0b4f2838-54e1-4e63-9b8d-2d2503b7ab04",
+      "result_id": "35a6009f-0552-475a-acd2-f1ab0691f6c5"
+    },
+    {
+      "claim_id": "da60ba8a-f11f-4f41-a5d8-4c4b7bcade38",
+      "result_id": "35a6009f-0552-475a-acd2-f1ab0691f6c5"
+    },
+    {
+      "claim_id": "22754a22-02e0-4a49-a679-c32cfab5f97b",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "7c3bb392-55cb-445f-994d-391c816c3274",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "cdda0f2b-836e-4c0e-a2ed-be612413c7d8",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "c61b2361-98c1-49f5-b92c-7580fbd8fe94",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "b02f6e1b-5623-4046-8667-fe7e0801ddb6",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "a87a9c88-f4ed-4112-a7e0-ac9201065123",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "da2a0891-d34e-4abd-8f86-f89ee0fb6c11",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "7d3530d3-d87b-4a88-b366-4b84402aae7d",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "d3d4ba50-edf6-4f7c-b1bd-f10b489dc3be",
+      "result_id": "d6d8853a-01fc-4a0c-b646-065daabf48de"
+    },
+    {
+      "claim_id": "2215d065-e0a2-407c-9e7a-159f19674219",
+      "result_id": "2b35d51d-522d-4269-b1d8-9987cbaf7788"
+    },
+    {
+      "claim_id": "5cfdb6ad-dbab-4d34-919c-d65abf9d5d40",
+      "result_id": "2b35d51d-522d-4269-b1d8-9987cbaf7788"
+    },
+    {
+      "claim_id": "74c6d1b7-3f77-4945-882b-1413d3a284ae",
+      "result_id": "2b35d51d-522d-4269-b1d8-9987cbaf7788"
+    },
+    {
+      "claim_id": "e8d7995b-9bf5-436c-9685-c241ccbd2475",
+      "result_id": "2b35d51d-522d-4269-b1d8-9987cbaf7788"
+    }
+  ],
+  "comparisons": []
+}

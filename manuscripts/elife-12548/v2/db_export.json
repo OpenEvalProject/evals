@@ -1,0 +1,2266 @@
+{
+  "submission": {
+    "id": "5a61bc40-057a-4e3e-a6ad-5eb6cc6c2124",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:08:44.359364Z",
+    "updated_at": "2025-11-29T22:08:44.359364Z"
+  },
+  "content": [
+    {
+      "id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "submission_id": "5a61bc40-057a-4e3e-a6ad-5eb6cc6c2124",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for activation, assembly and membrane binding of ESCRT-III Snf7 filaments\n\n## Authors\n\n- Shaogeng Tang<sup>1</sup>\n- W Mike Henne<sup>1</sup>\n- Peter P Borbat<sup>3</sup>\n- Nicholas J Buchkovich<sup>1</sup>\n- Jack H Freed<sup>3</sup>\n- Yuxin Mao<sup>1</sup>\n- J Christopher Fromme<sup>1</sup>\n- Scott D Emr<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Weill Institute of Cell and Molecular Biology Cornell University Ithaca United States\n2. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n3. National Biomedical Center for Advanced Electron Spin Resonance Technology Cornell University Ithaca United States\n4. Department of Chemistry and Chemical Biology Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endosomal sorting complexes required for transport (ESCRTs) constitute hetero-oligomeric machines that catalyze multiple topologically similar membrane-remodeling processes. Although ESCRT-III subunits polymerize into spirals, how individual ESCRT-III subunits are activated and assembled together into a membrane-deforming filament remains unknown. Here, we determine X-ray crystal structures of the most abundant ESCRT-III subunit Snf7 in its active conformation. Using pulsed dipolar electron spin resonance spectroscopy (PDS), we show that Snf7 activation requires a prominent conformational rearrangement to expose protein-membrane and protein-protein interfaces. This promotes the assembly of Snf7 arrays with ~30 \u00c5 periodicity into a membrane-sculpting filament. Using a combination of biochemical and genetic approaches, both in vitro and in vivo, we demonstrate that mutations on these protein interfaces halt Snf7 assembly and block ESCRT function. The architecture of the activated and membrane-bound Snf7 polymer provides crucial insights into the spatially unique ESCRT-III-mediated membrane remodeling.\n\n## Introduction\n\nThe endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001), cytokinesis (Carlton and Martin-Serrano, 2007), plasma membrane repair (Jimenez et al., 2014), nuclear pore complex assembly (Webster et al., 2014), and nuclear envelope reformation (Olmos et al., 2015; Vietri et al., 2015). Originally identified using yeast genetics, ESCRTs package ubiquitinated transmembrane proteins into intraluminal vesicles (ILVs) that bud into the interior of the late endosome, creating a MVB that ultimately delivers cargos into the yeast lysosome (vacuole). The ESCRT pathway achieves receptor sorting through an elaborate division of labor. Upstream ESCRT components, ESCRTs-0, I, and II, assemble into stable hetero-multimers to sort ubiquitinated cargo on the endosomal surface by binding ubiquitin and endosomal lipid, phosphatidylinositol 3-phosphate (PI(3)P). In addition, ESCRT-II sets the architecture and initiates the assembly of the ESCRT-III complex, which together with Vps4 is responsible for remodeling endosomal membranes (Henne et al., 2011; Hurley and Hanson, 2010).\n\nESCRT-III is a unique protein complex in that it is metastable and conformationally dynamic, forming hetero-oligomeric filaments of multiple subunits on membranes (Saksena et al., 2009; Teis et al., 2008). Its subunits are inactive monomers in the cytoplasm, which activate and assemble into spiraling polymers on endosomes to drive cargo sequestration, membrane invagination and constriction (Buchkovich et al., 2013; Hanson et al., 2008; Henne et al., 2012; Wollert and Hurley, 2010).\n\nESCRT-III is a hetero-polymer of four \u201ccore' subunits of Vps20, Snf7/Vps32, Vps24 and Vps2 (Babst et al., 2002), and 'accessory' subunits of Ist1, Did2/Vps46, Vps60 (Rue et al., 2008) and Chm7 (Horii et al., 2006). Although all ESCRT-III subunits share a common domain organization, each subunit appears to contribute a specific function. ESCRT-II directly engages Vps20 to trigger a sequential activation and ordered assembly of ESCRT-III subunits at endosomes (Teis et al., 2010). Vps20 nucleates the homo-oligomerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008). Vps2 finally engages the Vps4 complex for ESCRT-III disassembly (Lata et al., 2008b; Obita et al., 2007), making individual subunits available for subsequent rounds of vesicle formation.\n\nESCRT-mediated membrane remodeling produces membrane curvature that pushes away from the cytoplasm, which is topologically opposite to that of the 'classical' clathrin and COP-I/II vesicle budding reactions. This unique membrane bending topology highlights an ancient and central role of the ESCRT machinery in cellular remodeling events. However, due to the relative instability and heterogeneity of ESCRT-III polymers, high-resolution structural studies have generally been problematic. Structural work on Snf7 in particular has been difficult, due to its ability to assemble readily into polymers that interfere with crystallization. Ultimately, atomic-resolution structural information is necessary to understand how ESCRT-III achieves ordered assembly and membrane remodeling in diverse cellular pathways.\n\nEven with limited structural information, previous studies have revealed distinct regions of Snf7 critical to ESCRT function. Snf7 contains a highly structured 'core' domain of four \u03b1-helices (Muziol et al., 2006). The C-terminus, in contrast, is less structured, including an \u03b1-helix (\u03b15) that folds back against the core domain in cis to mediate autoinhibition (Lata et al., 2008a), a microtubule interacting and transport (MIT)-interacting motif (MIM) for Vps4 recognition (Obita et al., 2007), and an \u03b1-helix (\u03b16) for Bro1/Alix interaction (McCullough et al., 2008) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig1-v2.jpg)\n\n**Figure 1.:** (A) The domain organization of Snf7. The core domain used for X-ray crystallography is shown in blue. (B) Overlay of ribbon and space-filling models of the X-ray crystal structure of Snf7core. (C) Electrostatic surface potential of Snf7core with positively charged regions in blue (+10kcal/e-) and negatively charged regions in red (-10kcal/e-). See also Table 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A superdex-200 gel filtration size exclusion chromatogram of Snf7core. (B) A SDS-PAGE Coomassie brilliant blue staining of the gel filtration fractions corresponding to Snf7core.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig1-figsupp3-v2.jpg)\n\nHow is Snf7 activated to promote ESCRT-III assembly? Numerous studies indicate that ESCRT-III subunits are activated by intramolecular conformational changes that promote protein-protein interactions (Henne et al., 2012; Lata et al., 2008a; Saksena et al., 2009; Schuh et al., 2015; Shen et al., 2014), but the structural basis for this is obscure. Available X-ray crystal structures of the autoinhibited Vps24 (Muziol et al., 2006) and Ist1 (Bajorek et al., 2009; Xiao et al., 2009) suggest that these conformational changes involve the disruption of intramolecular interactions between the basic N-terminus and the acidic C-terminus. Upon releasing this autoinhibition, Snf7 subunits assemble into higher-order protofilaments or spirals (Cashikar et al., 2014; Hanson et al., 2008; Henne et al., 2012; Shen et al., 2014) with a range of different morphologies and dimensions.\n\nHere, we present two X-ray crystal structures that unravel the molecular mechanism governing Snf7 conformational activation and polymer assembly. By selectively removing its autoinhibitory C-terminus, we determine the first crystal structure of the Snf7 core domain in the active conformation at 1.6\u00a0\u00c5 resolution. Surprisingly, rather than adopting a rigid four-helix coiled-coil, the core domain undergoes a large-scale conformational rearrangement to extend into a highly elongated structure. This conformational change not only extends a cationic membrane-binding surface, but also exposes hydrophobic and electrostatic protein interacting surfaces for polymerization. In vitro reconstitution and pulsed dipolar electron spin resonance spectroscopy (PDS) demonstrate that full-length Snf7 adopts the same active conformation and assembles into ~30\u00a0\u00c5 periodic protofilaments on a near-native lipid environment. Using negative stain transmission electron microscopy (TEM) and quantitative flow cytometry, we further demonstrate that mutations on key protein interfaces halt Snf7 assembly and block ESCRT function in vivo. Collectively, the molecular architecture of the activated and polymeric ESCRT-III Snf7 filament provides a detailed structural explanation for the mechanism underlying ESCRT-III-mediated membrane remodeling.\n\n## Results\n\n### X-ray crystal structure of Snf7core\n\nDespite reconstituting and visualizing ESCRT-III assembly with the resolution of TEM, it was unclear how Snf7 is conformationally activated, and how this activation coordinates the assembly of Snf7 polymers on membranes. To answer these questions, we sought to determine the structure of Snf7 at atomic resolution.\n\nBecause Snf7 intermolecular interactions rely primarily on core-core and core-membrane interactions (Figure 1A) (Buchkovich et al., 2013; Henne et al., 2012), we purified Snf7core to homogeneity (Figure 1\u2014figure supplement 1). We then crystallized and solved X-ray crystal structures of Snf7core in two conformations at 1.6\u00a0\u00c5 and 2.4\u00a0\u00c5 resolutions, respectively. The structures were determined by molecular replacement using CHMP4B\u03b11-\u03b12 (PDB: 4ABM) (Table 1, Figure 1\u2014figure supplement 2). Although two conformations were determined, they share a similar overall tertiary structure with one notable exception discussed further below.\n\n**Table 1.**\n Crystallographic Data Collection and Refinement Statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Snf7core</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Conformation A</td>\n      <td>Conformation B</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.978</td>\n      <td>0.978</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>50 - 2.4 (2.49 - 2.40)</td>\n      <td>50 - 1.6 (1.6 - 1.55)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21</td>\n      <td>P21</td>\n    </tr>\n    <tr>\n      <td>Unit cell</td>\n      <td>a\u00a0=\u00a029.5\u00c5 b\u00a0=\u00a052.2\u00c5 c\u00a0=\u00a054.5\u00c5 \u03b1\u00a0=\u00a090\u00b0\u03b2\u00a0=\u00a097.5\u00b0\u03b3\u00a0=\u00a090\u00b0</td>\n      <td>a\u00a0=\u00a029.9\u00c5 b\u00a0=\u00a046.2\u00c5 c\u00a0=\u00a044.6\u00c5 \u03b1\u00a0=\u00a090\u00b0\u03b2\u00a0=\u00a098.5\u00b0\u03b3\u00a0=\u00a090\u00b0</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>23263 (1946)</td>\n      <td>73723 (6034)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>6376 (612)</td>\n      <td>16849 (1581)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>3.6 (3.2)</td>\n      <td>4.4 (3.8)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>97.99 (93.72)</td>\n      <td>95.77 (90.65)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma(I)</td>\n      <td>8.04 (2.91)</td>\n      <td>8.85 (1.35)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor</td>\n      <td>54.03</td>\n      <td>25.39</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.0884 (0.249)</td>\n      <td>0.0782 (0.997)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.988 (0.968)</td>\n      <td>0.995 (0.590)</td>\n    </tr>\n    <tr>\n      <td>CC*</td>\n      <td>0.997 (0.992)</td>\n      <td>0.999 (0.861)</td>\n    </tr>\n    <tr>\n      <td>Rwork</td>\n      <td>0.259 (0.398)</td>\n      <td>0.210 (0.330)</td>\n    </tr>\n    <tr>\n      <td>Rfree</td>\n      <td>0.262 (0.533)</td>\n      <td>0.225 (0.356)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>982</td>\n      <td>1097</td>\n    </tr>\n    <tr>\n      <td>macromolecules</td>\n      <td>975</td>\n      <td>992</td>\n    </tr>\n    <tr>\n      <td>water</td>\n      <td>7</td>\n      <td>105</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>123</td>\n      <td>125</td>\n    </tr>\n    <tr>\n      <td>RMS(bonds) (\u00c5)</td>\n      <td>0.015</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>RMS(angles) (o)</td>\n      <td>1.24</td>\n      <td>0.81</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>95</td>\n      <td>99</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>1.7</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>21.56</td>\n      <td>9.9</td>\n    </tr>\n    <tr>\n      <td>Average B-factor</td>\n      <td>91.1</td>\n      <td>39.7</td>\n    </tr>\n    <tr>\n      <td>macromolecules</td>\n      <td>91.2</td>\n      <td>38.9</td>\n    </tr>\n    <tr>\n      <td>solvent</td>\n      <td>69.2</td>\n      <td>47.2</td>\n    </tr>\n  </tbody>\n</table>\n\nAll previous ESCRT-III X-ray crystal structures adopt a canonical four \u03b1-helical core domain fold (Bajorek et al., 2009; Muziol et al., 2006; Xiao et al., 2009). When we superimposed our Snf7 structure with available ESCRT-III structures (Figure 1\u2014figure supplement 3), we were surprised to note that Snf7core does not fold into four \u03b1-helices, but instead, it contains only three \u03b1-helices that pack into a highly elongated structure (Figures 1B\u2013C). Although the \u03b11/2 hairpin is relatively unchanged, \u03b13 and \u03b14 undergo large-scale structural rearrangements from the proposed autoinhibited ESCRT-III fold. \u03b12 extends into a ~90\u00a0\u00c5 long \u03b1-helix combining the \u03b12 and \u03b13 segments that were distinct \u03b1-helices in previously defined ESCRT-III structures (Figures 2A\u2013B). The angle of the flexible loop between \u03b13 and \u03b14 also changes, which enables \u03b14 to position in different orientations relative to the \u03b11-3 hairpin. Despite the conformational change, we designated this elongated \u03b1-helix as \u03b12/3 to maintain a consistent numbering scheme for conserved ESCRT-III helices.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Ribbon diagrams of (A) a homology model of closed Snf7core (Henne et al., 2012) and (B) the X-ray crystal structure of open Snf7core. (C) A close-up view of the side chain interaction between Gln90 and Met130. (D) Western blotting and subcellular fractionation of snf7\u0394 yeast exogenously expressing SNF7 or snf7Q90C M130Cwith and without copper(II) 1,10-phenanthroline. (E) Schematic showing closed and open Snf7core with cysteines (red dots) before and after SDS-denaturing. (F) Snf7 site-directed spin-labeling with MTSL (red). (G\u2013H) Distance between Glu88 and His118 of (G) closed and (H) open Snf7 shown in ribbon. (I and K) Time domain signals and distance distributions from DEER spectroscopy of (I) Snf7R52E E88C H118C in solution, and simulated closed and open Snf7core E88C H118C using MMM, and (K) Snf7R52E E88C H118C: Snf7R52E (1:0, 1:1, 1:2, and 1:8) with liposomes. (J) Schematic showing liposome sedimentation for DEER. MTSL-labeled Snf7 proteins (blue oval) and liposomes (grey circle).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Error bars represent standard deviations.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Ribbon models of closed and open Snf7core showing inter-residue distances between E88, H118 and G140. (B\u2013D) Time domain signals and distance distributions from DEER spectroscopy of (B) full-length Snf7R52E E88C H118C, and full-length Snf7R52E E88C H118C:Snf7R52E (1:1) in solution, (C) full-length Snf7R52E H118C G140Cin solution and simulated closed and open Snf7core H118C G140C using MMM, and (D) full-length Snf7R52E E88C G140C in solution and simulated closed and open Snf7core E88C G140C using MMM. Blue shaded portions of the distributions indicate distance ranges that can be attributed to open and closed conformations.\n\n### Snf7 'opening' coupled with endosomal recruitment\n\nPrevious studies suggested that a 'closed' Snf7 becomes activated by the displacement of \u03b15 away from the core domain (Henne et al., 2012; Lata et al., 2008a). Using a homology model of closed Snf7 (Henne et al., 2012) (Figure 2A), we identified close proximity between conserved residues Gln90 (\u03b12) and Met130 (\u03b14) in the four-helix coiled-coil (Figure 2C).\n\nWe applied a cysteine-based crosslinking strategy to directly monitor the conformational states of Snf7 in vivo. We mutated both Gln90 and Met130 to cysteines, and expressed this mutant in snf7\u0394 yeast (Figure 2\u2014figure supplements 1 and 2). Since conformationally active Snf7 resides on endosomal membranes, we performed subcellular fractionation and collected the supernatant (S13) and the membrane-enriched pellet (P13) fractions. Western blotting analysis showed that Snf7Q90C M130C migrated to ~37\u00a0kDa, comparable to cysteineless Snf7. We then oxidized both fractions using copper(II) 1,10-phenanthroline. Strikingly, in the S13 fraction, ~50% of Snf7Q90C M130C migrated faster, indicating a conformationally closed Snf7 species. Notably, in the P13 fraction, the migration shift did not occur (Figures 2D\u2013E). This is indicative of distinct conformations between the cytoplasmic and the endosome-bound states, and suggests that Snf7 on endosomal membranes adopts an open conformation in which \u03b14 is displaced away from \u03b12.\n\n### Polymeric Snf7 adopts the open conformation\n\nTo investigate Snf7 activation at a structural level, we applied the PDS technique of double electron-electron resonance (DEER) and monitored full-length Snf7 in solution and bound to liposomes. As an approach to characterize protein conformations (Borbat and Freed, 2007; Borbat and Freed, 2014; Jeschke, 2012), PDS can provide distance constraints with a range of ~10\u201390\u00a0\u00c5 by measuring the magnitude of the dipolar coupling between spins of unpaired electrons in nitroxide spin labels (Hubbell et al., 2000). Snf7 assembles into spiraling protofilaments on membranes, presenting two challenges: (1) to characterize the conformational state of Snf7 building blocks; and (2) to determine the protofilament assembly from these structural elements.\n\nTo determine whether Snf7 activation induces the 'open' conformation we observed by X-ray crystallography, we selected two solvent-accessible residues, Glu88 (\u03b12) and His118 (\u03b13), predicted to be separated by a short distance of 20\u00a0\u00c5 in the closed state (Figure 2G), and an expected longer distance of 45\u00a0\u00c5 in the open state (Figure 2H). We labeled these two sites with a nitroxide spin label, MTSL (Figure 2F), and then obtained the distance distribution for the full length Snf7 in solution. The result showed a wide distance spread of ~15\u201350\u00a0\u00c5 (Figure 2I), corresponding to large amplitude motions of the spin labeled positions, but not a distinct closed or open state. Thus, soluble Snf7 is structurally heterogeneous, suggesting that it is conformationally dynamic (Figure 2\u2014figure supplement 3).\n\nTo map the active conformation of Snf7, we reconstituted spin-labeled full-length Snf7R52E polymers on lipid membranes, where R52E is a previously characterized activation mutant that induces Snf7 polymerization (Henne et al., 2012). We mixed the double-labeled Snf7R52E E88C H118C proteins with liposomes and collected the membrane-bound Snf7 polymers by ultracentrifugation (Figure 2J). Intriguingly, membrane-bound Snf7R52E E88C H118C produced a strong ~30\u00a0\u00c5 peak. We also observed a significant population of distances at 40\u201350\u00a0\u00c5, but diminished signal at ~20\u00a0\u00c5 (Figure 2K). We postulated that both the inter- and intra-subunit interspin distances contribute these signals. To isolate the intra-subunit interspin distance, we next produced magnetically diluted samples (Borbat and Freed, 2007; Dzikovski et al., 2011) by mixing double-labeled Snf7R52E E88C H118C with unlabeled Snf7R52E in ratios ranging from 1:1 to 1:8. We observed that the signal changed significantly up to 1:2 dilution, then less for the maximal 1:8 dilution (Figure 2K and Figure 3\u2014figure supplement 2), showing approach to the infinite dilution limit. The data for the 1:8 dilution is characteristic of a single long distance of 45\u00a0\u00c5 with a moderate distance distribution, as expected for spin labels on an \u03b1-helix separated by 29 residues.\n\nIn summary, the reconstructed distance distributions are consistent with structural rearrangements that transform \u03b12 and \u03b13 into one continuous \u03b1-helix in the membrane-bound active conformation. As we did not observe short distances corresponding to the closed conformation, we conclude that only the open conformation is present in Snf7 polymers assembled on membranes. Therefore, the large-scale conformational rearrangement observed in the crystal structures is fully consistent with the PDS data of the full-length Snf7 conformations on the membranes.\n\n### Membrane-bound Snf7 protofilaments exhibit a ~30\u00a0\u00c5 periodicity\n\nWhile examining the arrangement of Snf7 molecules in the crystal lattice, we noted that multiple Snf7 protomers are arrayed into polymeric lattices, reminiscent of the protofilaments previously observed by TEM (Henne et al., 2012). Each of the ~100\u00a0\u00c5 long \u03b11\u20133 hairpin tilts by ~27\u00b0 and polymerizes into a ~45\u00a0\u00c5 diameter single protofilament, with each protomer exhibiting a repeat distance of ~30\u00a0\u00c5 (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overlay of ribbon and space-filling models of a 7-mer Snf7 protofilament with measured dimensions. (B and D) Time domain signals and distance distributions from DEER spectroscopy of (B) full-length Snf7R52E T20C, Snf7R52E K35C, and Snf7R52E E88C with liposomes, (D) full-length Snf7R52E K60C, Snf7R52E H118C, and Snf7R52E G140C with liposomes. (C and E) Schematic showing the spin label positions in a Snf7 protofilament.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The full-length Snf7R52E E88C H118C: Snf7R52E (1:0 and 1:8) with liposomes datasets are re-plotted from Figure 2K as shown in fine lines.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Error bars represent standard deviations.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Scale bars, 200\u00a0nm.\n\nThe spacing of protomers in the crystal is also in agreement with our DEER results of the full-length Snf7 protofilaments assembled on liposomes. We performed a series of DEER measurements on the single-labeled protein at several key positions. Specifically, we selected the middle of the \u03b11-3 hairpin (Thr20, Lys35 and Glu88), and at both ends of \u03b12/3 (Lys60 and His118), and the end of \u03b14 (Gly140) to spin label Snf7. This allowed us to probe the interface between adjacent Snf7 protomers to establish their mutual orientation. Importantly, these cysteine-substituted Snf7 mutants are capable of assembling into protofilaments in vitro and do not impair MVB sorting in vivo (Figure 3\u2014figure supplement 3 and 4).\n\nConsistent with the extensive amount of inter-molecular contacts revealed in the Snf7 crystal, we observed moderately broad distance distributions, specifically at 28\u201332\u00a0\u00c5 for T20C, K35C and E88C (Figures 3B\u2013C), and at 32\u201336\u00a0\u00c5 for K60C, H118C and G140C (Figures 3D\u2013E). The modulation depths of the time-domain echo signals indicate a ~3-spin system, in agreement with the crystalline arrangement of Snf7, where each protomer has two neighboring protomers. The magnetic dilution (Figure 3\u2014figure supplements 1 and 2) readily removed the intersubunit couplings, indicating that protofilaments do not make extensive contacts homogenous with each other.\n\nBased on this series of single-cysteine DEER scanning and the double-cysteine magnetic dilution experiments, we conclude that Snf7 packing adopts a parallel arrangement in a single-layer array with a period of ~30\u00a0\u00c5, and the reconstituted full-length Snf7 spirals on liposomes adopt a packing pattern similar to the Snf7core crystals. Thus, our X-ray crystal structures provide a foundation for in-depth study of the membrane-bound Snf7 polymer.\n\n### Snf7 protomer interactions in the protofilament require two interfaces\n\nIn the Snf7 protofilament, the protomer (i) interacts with the next protomer (i+1) through both hydrophobic and electrostatic interactions (Figures 4A\u2013B), burying ~1060\u00a0\u00c52 of solvent-accessible surface area per protomer. The assembly of the extended \u03b12/3 helix exposes a hydrophobic surface on \u03b13, which was buried in the closed state. This enables the \u03b12/3 helix of protomer (i) to interact with \u03b12/3 of its neighboring protomer (i+1) (Figure 4C). Notably, Gln90, which interacts with Met130 in cis in the closed state, interacts with Met107 in trans in the open state.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Ribbon models of a Snf7 protofilament. The hydrophobic protein interface is shown in black dash-line and the electrostatic interface in grey dash-dot line. (C\u2013D) Close-up views of the hydrophobic interface between \u03b12/3i and \u03b13i+1 and the electrostatic interface between \u03b11i and \u03b12/3i+1. Protomer (i) shown in yellow and protomer (i+1) in red. (E) Conceptual model for the Mup1-pHluorin MVB sorting assay. Vacuole (v). (F) Quantitative MVB sorting data for snf7\u0394 yeast exogenously expressing empty vector, SNF7, snf7L121D, snf7I117E, snf7M114E, snf7M107E, snf7T103E, snf7L99K, snf7M104E, snf7L101E, snf7A97K, snf7I94E, snf7Q90K, snf7M87E, and snf7T83E. Error bars represent standard deviations. (G) Quantitative MVB sorting data for snf7\u0394 yeast exogenously expressing empty vectors, SNF7, snf7R25E H29E K36Eand empty vector, empty vector and snf7E95K E102K E109K, and snf7R25E H29E K36E and snf7E95K E102K E109K. Error bars represent standard deviations. (H) Representative TEM images of recombinant full-length Snf7R52E, Snf7R52E Q90K, Snf7R52E M107E, Snf7R52E R25E H29E K36E, Snf7R52E E95K E102K E109K, and Snf7R52E R25E H29E K36E and Snf7R52E E95K E102K E109K (1:1). Scale bars, 200\u00a0nm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative TEM images of recombinant full-length Snf7R52EI94E and Snf7R52EM114E. Scale bars, 200nm. (B) Superdex-200 gel filtration size exclusion chromatograms of Snf7R52E, Snf7R52EI94E and Snf7R52E M107E. Related to Figure 4H.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** G6PDH used as loading controls.Sequence analyses of Snf7 \u03b12/3 with conserved residues shown in gold and dark red.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Error bars represent standard deviations.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Sequence analyses of Snf7 \u03b12/3 with conserved residues shown in gold and dark red.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig4-figsupp5-v2.jpg)\n\nTo validate the interactions present in this hydrophobic interface, we performed site-directed mutagenesis and tested each mutant in vivo by an established quantitative MVB sorting assay (Buchkovich et al., 2013; Henne et al., 2012). This assay monitors the efficiency of fluorescence quenching after internalization and MVB sorting of Mup1-pH (the plasma membrane methionine transporter, Mup1, fused to the pH-sensitive GFP-derivative, pHluorin) (Figures 4E and Figure 2\u2014figure supplement 1). As a result, mutants M104E, L101E, A97K, I94E, Q90K, M87E and T83E showed severe sorting defects, with sorting efficiencies from 12% to 76%, and mutants L121D, I117E, M114E, M107E, T103E and L99K from 7% to 34% (Figure 4F and Figure 4\u2014figure supplement 2). Correspondingly, we previously demonstrated that the L121D mutant blocks Snf7 polymerization in vivo and in vitro, and missorts the MVB cargo carboxypeptidase S, Cps1 (Saksena et al., 2009). Furthermore, recombinant Snf7R52E Q90K, Snf7R52E I94E, Snf7R52E M107E, and Snf7R52E M114E proteins were able to be purified to homogeneity, but unable to generate protofilaments visible by TEM (Figure 4H and Figure 4\u2014 figure supplement 1).\n\nWe also observed electrostatic interactions between \u03b11 of protomer (i) and \u03b12/3 of protomer (i+1) (Figure 4D). This interaction is also dependent upon the extension of \u03b12/3, and appears to be important for the positioning of \u03b11 in the protofilament. To validate whether these inter-protomer electrostatic interactions occur in vivo, we generated and tested charge-inversion mutations, snf7R25E H29E K36E and snf7E95K E102K E109K, which resulted in severe sorting defects of 16% and 44%, respectively. Strikingly, when co-expressing both mutants in trans, MVB sorting was restored to 91% (Figure 4G and Figure 4\u2014figure supplements 3 and 4). Consistently, Glu95 has been previously indicated to be involved in Snf7 inter-protomer contacts (Shen et al., 2014). These results are further supported by ex vivo crosslinking experiments. In the Snf7 polymer-enriched P13 fraction, cysteine-substituted Lys35 (\u03b11) can be specifically crosslinked to cysteine-substituted Glu95 (\u03b12) or Glu102 (\u03b13) in trans (Figure 4\u2014figure supplement 5). Furthermore, co-incubating recombinant Snf7R52E R25E H29E K36E and Snf7R52E E95K E102K E109K proteins resulted in protofilament formation, but no protofilaments were detected when each mutant was tested individually (Figure 4H).\n\nAltogether, these in vivo and in vitro data provide strong evidence that the observed hydrophobic and electrostatic interfaces are required for Snf7 polymerization in vivo, and that the Snf7 protofilament observed in the crystal lattice is physiologically relevant.\n\n### The Snf7 polymer exposes a cationic membrane-binding surface\n\nWe next mapped the previously determined Snf7 membrane-interacting region (Buchkovich et al., 2013) onto the Snf7 polymer structure (Figure 5A). Strikingly, several key conserved lysine residues, K60 K64 K68 K71 K79 (\u03b12), and K112 K115 (\u03b13), which were in distinct \u03b1-helices in the closed state, are arranged on an elongated and solvent-exposed surface ideal for interacting with the acidic endosomal membrane. The electrostatic membrane-binding regions of all Snf7 protomers face the same direction in the polymer, allowing for a continuous membrane-binding interface (Figure 5B). Thus, the crystal structure of Snf7 polymers reveals a mechanism for coupling polymerization to stable membrane association.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig5-v2.jpg)\n\n**Figure 5.:** (A) A Snf7 protofilament in ribbons placed on a lipid membrane in spheres (grey) (Heller et al., 1993). (B) Electrostatic surface potential showing the membrane interacting surface of a Snf7protofilament with positively charged regions in blue (+10kcal/e-) and negatively charged regions in red (-10kcal/e-).\n\nNotably, ESCRT-III subunits utilize multiple hydrophobic and electrostatic interfaces to interact with endosomal membranes (Buchkovich et al., 2013). Consistent with this, we observed that \u03b11 of Snf7 is moderately positively charged (Figure 1C), and cannot rule out that at some stage of vesicle biogenesis it also comes in contact with the membrane.\n\n### \u03b14 bridges two Snf7 protofilaments\n\nComparison of our Snf7core crystal structures we determined revealed two distinct conformations. Although both structures exhibit an open conformation, we noted two different orientations of \u03b14 with respect to the \u03b11/2 hairpin. In open conformation A, \u03b14 extends in the protofilament plane, whereas in open conformation B, \u03b14 is positioned perpendicular to the protofilament plane. Superimposing the two conformations revealed that \u03b14 can rotate by at least ~90\u00b0 along the axis of the \u03b12/3 helix (Figures 6A\u2013B). Despite the large differences in \u03b14 positioning, \u03b14 makes a similar interaction with the \u03b11/2 hairpin of a Snf7 protomer in a neighboring protofilament in both structures (Figure 6C and Figure 6\u2014figure supplement 4). This supports a model in which the assembly of the extended \u03b12/3 helix upon Snf7 activation results in two key events: (1) \u03b14 can no longer bind in cis to its own protomer; (2) \u03b15 is displaced from the \u03b11/2 hairpin. Together, this enables \u03b14 to contact the \u03b11/2 hairpin of another protomer in trans on a neighboring protofilament.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) Snf7core conformations A (green) and B (blue) superimposed. (B) 90\u00b0 rotation and superimposing with a closed CHMP3 (purple) using its \u03b13 as a reference. (C) Overlay of ribbon and space-filling models of the Snf7core crystal packing of the open conformation A. The dash-line box represents the interfilament contacts. Arrows represent inter-protofilament orientations. (D\u2013E) Close-up views of the hydrophobic interface between \u03b11/2i (blue) and \u03b14j (yellow) of open conformations (D) A and (E) B. (F) Quantitative MVB sorting data for snf7\u0394 yeast exogenously expressing empty vector, SNF7, snf7V126E, snf7M130E, snf7I133E, snf7A51E, snf7L55E, and snf7L67E. Error bars represent standard deviations. See also Table 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scale bars, 200nm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** G6PDH as a loading control.Sequence analyses of Snf7 \u03b11/2 and \u03b14 with conserved residues shown in blue or gold.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Error bars represent standard deviations. Overlay ribbon models of (upper right) closed (purple) and open (blue) Snf7core with Glu102 shown in sticks, and (lower right) open conformation A (green) and B (blue) with Asn59 and Leu121 shown in sticks. Arrows represent conformational rearrangements.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** The dash-line box represent the interfilament contacts shown in Figure 6E.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig6-figsupp5-v2.jpg)\n\nConsistent with the DEER data that two Snf7 protofilaments do not make extensive contacts with each other and do not assemble into homogeneous arrangements, this interfilamental interface only buries 474\u00a0\u00c52 of solvent-accessible surface area per protomer. To test whether these observed interfilamental interactions were functionally important, we mutated residues at their \u03b11/2i-\u03b14j interface (Figures 6D\u2013E). Notably, Met130, which interacts with Gln90 in the closed state, is involved in this interface in the open state. Snf7 mutants of A51E, L55E, L67E, V126E, M130E and I133E led to drastic loss-of-function, with sorting efficiencies from 9% to 55% in vivo, and were unable to assemble into protofilaments in vitro (Figure 6F and Figure 6\u2014figure supplements 1 and 2).\n\nTo gain insights into the importance of the local rearrangement of the Snf7 \u03b13/4 loop in vivo, we mutated the conserved \u03b13/4 loop residue Leu121 to Pro to constrain the rotational angle between \u03b13 and \u03b14. The L121P mutant exhibited a MVB sorting efficiency of 32%, compared to that of the \u03b11/2 loop residue Asn59 mutant N59P of 75% (Figure 6\u2014 figure supplement 3), suggesting that the \u03b13/4 loop functions as an important flexible 'hinge' that may facilitate different architectural stages of Snf7 polymers (Figure 6C and Figure 6\u2014figure supplement 4).\n\nInterestingly, studies have previously shown that the tip of the \u03b11/2 hairpin is important for intra- and inter-molecular contacts of ESCRT-III subunits. For example, X-ray crystal structures of CHMP3 and IST1 are autoinhibited through an intramolecular contact between the \u03b11/2 hairpin and \u03b15 (Figure 6\u2014figure supplement 5) (Bajorek et al., 2009; Muziol et al., 2006); and the Ist1-Did2 co-crystal structure revealed that the MIM1 of CHMP1B forms an intermolecular contact with the \u03b11/2 hairpin of Ist1 (Xiao et al., 2009).\n\n### Conserved Snf7 protein-protein and protein-membrane interfaces\n\nTo gain insights into any functionally important surfaces on the Snf7 structure, we performed CONSURF analysis (Celniker et al., 2013). As a result, we identified seven highly conserved regions in the Snf7core domain (Figure 7A and Figure 7\u2014 figure supplement 1). Strikingly, all of them map to regions of Snf7 assigned specific functions in either polymer assembly or membrane interaction: regions (1) and (2) are located on opposite sides of the extended \u03b12/3 helix and stabilize intrafilamental protein-protein interactions; region (3) is located towards the N-terminus of \u03b11 and region (4) towards the middle of the \u03b12/3 helix, forming the intrafilamental electrostatic interacting surfaces; region (5) corresponds to the beginning of \u03b12, which we previously identified as a cationic membrane-binding surface; regions (6) and (7) are the tip of the \u03b11/2 hairpin and the hydrophobic side of \u03b14, which together stabilize interfilamental interactions. Thus, the Snf7 protein-protein interactions revealed from our X-ray crystal structures and the protein-membrane interactions previously identified (Buchkovich et al., 2013) are evolutionally conserved.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig7-v2.jpg)\n\n**Figure 7.:** (A) Space-filling CONSURF models with high conservation (purple) and low conservation (cyan). Interacting protomers shown in ribbon (blue). Seven conserved regions with assigned functions labeled. Gray arrows indicate the flexibility of \u03b14. (B) Speculative cartoons illustrating four stages in ESCRT-mediated vesicle budding. (C) Space-filling models and schematic cartoons of Snf7core in closed and open states with membrane (grey). (D) Space-filling and close-up ribbon models of a 25-mer Snf7 single filament with membrane. (E) Space-filling and close-up ribbon models of a 23-mer Snf7 normal mode analysis filament with membrane (grey). (F) Schematic of a Snf7 homo-polymer in the neck of a nascent ILV with positive and negative membrane curvatures.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig7-figsupp1-v2.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The first Snf7\u2019s \u03b11 was used for superimposing with the Vps20 \u03b11 (Im et al., 2009) (PDB: 3HTU) for molecular docking.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12548/elife-12548-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) A representative TEM image of recombinant Snf7R52E (left) and a space-filling model of a 61-mer Snf7\u03b11-3 straight filament shown in the same scale (right). (B) A representative TEM image of recombinant full-length Snf7R52E, Vps24 and Vps2 (2:1:1) (left), and space-filling and close-up view of ribbon models of a 97-mer Snf7\u03b11-3 superhelix generated by normal mode analysis with measured dimensions (right). TEM scale bars, 50nm.\n\n### A linear Snf7 filament transformed into a superhelix\n\nA linear Snf7 filament has a simple two-dimensional geometry, and thus is incapable of mediating the drastic three-dimensional membrane remodeling required for membrane deformation and vesicle formation at the endosome (Figure 7B). Since we know that Snf7 can form spirals on a membrane surface, we asked how a linear Snf7 filament (Figure 7D and Figure 7\u2014figure supplement 3) could be transformed into a circular array. Due to the heterogeneity of a Snf7 double filament, we utilized a single linear Snf7 filament to determine a plausible curved Snf7 filament using normal mode analysis (NMA), a simple non-detailed simulation technique used to probe large-scale macromolecular motions by assessing flexibility intrinsic to the structure of a protein (Suhre and Sanejouand, 2004). Remarkably, without any dramatic structural rearrangement within each protomer or alterations of the protein-protein interface, a linear two-dimensional Snf7 filament can bend into a ~70\u00a0nm diameter three-dimensional superhelix with turn length of ~62\u00a0nm, reminiscent of the structure of the Snf7/Vps24/Vps2 co-assembly previously observed (Henne et al., 2012) (Figure 7\u2014figure supplement 3). Importantly, this 3D helical array aligns the cationic membrane-binding surfaces on the outside of the superhelix, ideal for a Snf7 polymer to stabilize a negatively curved membrane surface (Figure 7E).\n\n## Discussion\n\nThe ESCRT-III machinery plays a critical role in numerous fundamental cellular processes, including MVB biogenesis, viral budding and cytokinesis, indicating an ancient and conserved membrane remodeling mechanism. The importance of understanding this mechanism is bolstered by the fact that this is so distinct from all other well characterized membrane budding processes (e.g. clathrin and COP-I/-II), which invariantly bud into the cytoplasm. Although the membrane-bound ESCRT-III polymers have been reconstituted in vitro, the mechanisms governing the polymer assembly and how ESCRT-III coordinates membrane remodeling, remain poorly understood. Here, we focused on Snf7, the predominant ESCRT-III component, in order to fundamentally understand how it achieves membrane remodeling. Using a multi-disciplinary approach that combined X-ray crystallography, PDS, genetics, biochemistry and TEM, we reveal key structural features of Snf7 that allow its dynamic conversion from a soluble monomer to a membrane-bound polymer.\n\nSpecifically, we provide, for the first time, atomic-resolution structures of a conformationally 'open' and assembled ESCRT-III subunit, and report the first application of PDS to characterize the internal organization of protein polymers assembled on a near-native lipid environment. These Snf7 subunits assemble into remarkable linear arrays upon conformational activation, thus providing a structural explanation for the Snf7 spiraling protofilaments previously observed by TEM and mechanistic insights into the spiral-mediated membrane deformation and vesicle formation.\n\n### Snf7 core domain rearrangement required for protein-membrane and protein-protein interactions\n\nA classic model of ESCRT-III activation involves the disruption of intramolecular interactions between \u03b15 and the core domain (Henne et al., 2012; Lata et al., 2008a). In the present study, we provide surprising structural evidence that this activation requires further rearrangement within the core domain itself. Consistent with the available CHMP4B\u03b11/2 structure (Martinelli et al., 2012), \u03b11/2 folds into a rigid ~70\u00a0\u00c5 \u03b1-helical hairpin, which forms intramolecular contacts with at least three short \u03b1-helices, \u03b13, \u03b14, and \u03b15 in the closed state. Notably, upon activation, all of these interactions are reorganized to extend the hairpin to a ~90\u00a0\u00c5 structure available for intermolecular contacts. Comparison of the closed and open states reveals that \u03b14 is displaced by ~60\u00a0\u00c5 as the molecule opens. Intriguingly, a recent small-angle X-ray scattering (SAXS) study showed that Vps20 exists as a 94\u00a0\u00c5 extended 'open' conformation but it is incapable of homo-polymerization (Schuh et al., 2015).\n\nBased on these structural insights, we propose a detailed 'lifecycle' of Snf7 activation and polymerization: 1) In the cytoplasm, Snf7 exists in a dynamic equilibrium of mixed intermediates between the open and closed states; 2) on endosomes, Vps20 \u03b11 directly associates with the ESCRT-II subunit Vps25 (Im et al., 2009), allowing Vps20 to function as a nucleator to engage an open Snf7 from the cytoplasm (Figure 7\u2014figure supplement 2); 3) the open conformation of Snf7 with an extended \u03b12/3 helix presents a cationic membrane-interacting surface to orient itself on endosomes; 4) the N-terminal membrane ANCHR motif further stabilizes Snf7 on the endosomal surface (Figure 7C); 5) the endosomal recruitment shifts the conformational equilibrium and thus triggers a 'domino effect' of Snf7 opening and promotes Snf7 polymerization into a ~30\u00a0\u00c5 periodic array of ordered inter-protomer contacts. In agreement with this, an averaged 32.5\u00a0\u00c5 inter-subunit distance was observed in C. elegans Vps32 spirals (Shen et al., 2014).\n\nBecause X-ray crystal structures of both Vps24 (Muziol et al., 2006) and Ist1 (Bajorek et al., 2009) were determined in their autoinhibitory conformations with an unresolved 'linker' between the core and \u03b15, the four-helix core domain has been treated as a rigid body that remains unaltered between the open and closed states. However, a previous SAXS study suggested that Vps24 can adopt both a 75\u00a0\u00c5 globular and a 105\u00a0\u00c5 extended conformation (Lata et al., 2008a), implying that the core domain extension may be a common theme of ESCRT-III activation. Due to this unexpected conformational change, previous ESCRT-III polymer studies using the 'closed' conformation as a building unit may need careful reevaluation.\n\n### Comparison of ESCRT-III filaments with other membrane-remodeling polymers\n\nThe ESCRT-III Snf7 filament-mediated membrane remodeling is conceptually reminiscent of other membrane remodeling machinery, including bacterial FtsZ (Osawa et al., 2008). Interestingly, both Snf7 and FtsZ/FtsA can drive cytokinetic abscission, and they share at least three distinct structural characteristics: electrostatic protein-membrane interactions, membrane insertion of an amphipathic helix, and oligomeric protein scaffolding.\n\nDespite these similarities, the major difference between FtsZ and Snf7 is that FtsZ requires nucleotide hydrolysis to drive its conformational dynamics. The propagation of conformational changes in the FtsZ polymer is thus coupled with the architectural changes that promote membrane fission. In contrast, ESCRT-III does not bind nor hydrolyze nucleotides to regulate its conformation, but it recruits the AAA-ATPase Vps4 for its disassembly. Although Snf7 can be activated by specific point mutations in vitro, the conformational switching in vivo appears to be tightly regulated by other ESCRT components to prevent pre-mature polymer assembly.\n\nDuring MVB biogenesis, ESCRT-II binds two copies of Vps20, which then nucleates the homo-oligomerization of Snf7. However, in enveloped viral budding and cytokinetic abscission, Bro1/Alix directly bridges ESCRT-I to ESCRT-III, by binding to the C-terminal \u03b16 of Snf7 (McCullough et al., 2008). We speculate that this interaction may directly dissociate the C-terminal autoinhibitory region to trigger Snf7 polymer assembly. Furthermore, CHMP7 was recently shown to trigger Snf7 assembly during nuclear envelope reformation (Vietri et al., 2015), highlighting the distinct spatial and temporal regulation of Snf7 activation between different ESCRT-dependent processes.\n\n### A curved ESCRT-III filament mediates membrane remodeling\n\nILVs that bud into the endosomal lumen contain no outer vesicle coat, yet show consistent diameters, suggesting ESCRTs regulate vesicle size. Somewhat paradoxically, ESCRT-III cannot shape the vesicle exterior because it is segregated in the cytoplasm by the limiting membrane of the endosome. Instead, the ESCRT-III filament appears to predominantly drive membrane deformation by sculpting the neck interior of a growing vesicle. This membrane sculpting requires an intricate balance of competing curvatures. Snf7 has been shown to localize to both the curved necks of invaginations and along highly curved edges of membranes (Buchkovich et al., 2013; Fyfe et al., 2011; Wollert and Hurley, 2010) (Figure 7F). Our collective studies on Snf7 address the balance of membrane curvatures associated with ILV formation. The ANCHR motif of Snf7 acts to sense and stabilize the positively curved rim of the invagination (Figure 7C). Coinciding with this positive curvature stabilization, the helical Snf7 polymer acts as a circular scaffold that triggers and stabilizes the negatively curved circumference of the neck of the invagination (Figure 7E). We propose that as a two-dimensional ESCRT-III spiral elongates into a three-dimensional superhelix, the tight membrane binding of the 'corkscrew' concentrates transmembrane cargoes ahead of the leading edge of the forming and narrowing filament, packaging them into the nascent ILV (Figure 7B).\n\nDespite the reconstitution and high-resolution analysis of Snf7 polymers, key questions remain. The most pressing are the mechanisms governing inter-ESCRT-III subunit interactions, particularly, Vps24 and Vps2, required for the ESCRT-III architectural changes, and a precise mechanochemical role of the AAA-ATPase Vps4 complex during the final membrane constriction and scission coupled with ESCRT-III disassembly. Additional structural studies together with new assays are necessary for further addressing these challenging but exciting questions.\n\n## Materials and methods\n\n### Protein crystallization\n\nThe DNA sequence encoding Saccharomyces cerevisiae Snf7core (residues 12\u2013150) was subcloned into a pET28a vector with an N-terminal His6-Sumo tag. Recombinant proteins were overexpressed in Escherichia coli Rosetta cells and purified by TALON metal affinity resin. The His6-Sumo tag was removed by Ulp1 protease at 4\u00b0C overnight. The mixture was further purified by Superdex-200 gel filtration. The peak corresponding to Snf7core was pooled and concentrated in a buffer of 300\u00a0mM NaCl, 20\u00a0mM HEPES pH7.4.\n\nSnf7core (conformation A) was crystallized in a hanging-drop vapor diffusion system at 4\u00b0C by mixing protein (5.7\u00a0mg/mL) with reservoir solution containing 100\u00a0mM NaCl, 100\u00a0mM MES:NaOH pH5.5, 3% PEG20,000 in 1:1 ratio (v/v). Crystals were transferred into the same solution supplemented with 30% glycerol before cooling to liquid nitrogen temperature under atmosphere pressure. Snf7core (conformation B) crystals were grown in 110\u00a0mM NaCl, 70\u00a0mM MES:NaOH pH5.5, 6% PEG20,000 and subject to high-pressure cryo-cooling (Kim et al., 2005). The crystals were mounted in oil on a pin with a piece of steel piano wire attached to the base, pressurized to 200MPa and cooled to liquid nitrogen temperature. The pressure was then released while keeping the temperature unaltered.\n\n### X-ray crystallography\n\nX-ray diffraction data was collected on Snf7 crystal 'A' to 2.4\u00a0\u00c5 at MacCHESS beam line F1 of Cornell High Energy Synchrotron Source. The crystal belonged to space group P21 with unit cell dimensions a=29.5\u00a0\u00c5 b=52.2\u00a0\u00c5 c=54.5\u00a0\u00c5 \u03b1=90\u00b0\u00a0\u03b2=97.5\u00b0\u00a0\u03b3=90\u00b0. X-ray diffraction data was collected on crystal 'B' to 1.6\u00a0\u00c5. It belonged to space group P21 with unit cell dimensions a=29.9\u00a0\u00c5 b=46.2\u00a0\u00c5 c=44.6\u00a0\u00c5 \u03b1=90\u00b0\u00a0\u03b2=98.5\u00b0\u00a0\u03b3=90\u00b0. Diffraction data were processed using HKL-2000 (Otwinowski and Minor, 1997). There is one Snf7 molecule in the asymmetric unit of both crystals. The structures were solved using Phaser in Phenix (Adams et al., 2010) by molecular replacement with CHMP4B\u03b11-\u03b12 (PDB: 4ABM) as a search model. Refinement and density modification were performed in Phenix. Model building was performed using Coot (Emsley and Cowtan, 2004). Throughout this study, structural images were generated with PyMOL using the 1.6\u00a0\u00c5 structure unless otherwise noted.\n\n### Protein purification\n\nAll Snf7 protein purification for PDS and TEM analyses were performed as previously described (Henne et al., 2012). Briefly, Snf7 constructs were subcloned into a pET23d bacterial expression vector (Novagen) with an N-terminal His6-tag. Recombinant proteins were overexpressed by Escherichia coli BL21 or C41 cells, purified by TALON metal affinity resin and eluted in 150\u00a0mM NaCl, 20\u00a0mM HEPES pH7.4 and 400\u00a0mM Imidazole. The elution fractions were pooled and further purified by Superdex-200 gel filtration in a buffer of 150\u00a0mM NaCl, 20\u00a0mM HEPES pH7.4.\n\n### Site-directed spin-labeling\n\nRecombinant Snf7 cysteine-substituted proteins were purified and enriched on TALON resin, and spin-labeled with 1\u00a0\u03bcg/mL S-(1-oxyl-2,2,5,5-tetramethyl-2,5-dihydro-1H-pyrrol-3-yl)methyl methanesulfonothioate, MTSL (Santa Cruz Biotech) dissolved in acetonitrile at 4\u00b0C overnight. The spin-labeled proteins were eluted in 150\u00a0mM NaCl, 20\u00a0mM HEPES pH7.4, 400\u00a0mM Imidazole and further purified by Superdex-200 gel filtration in a buffer of 150\u00a0mM NaCl, 20\u00a0mM HEPES pH7.4 to remove unreacted spin labels.\n\n### Sample preparations for DEER sectroscopy\n\nFor soluble protein samples, spin-labeled proteins were buffer exchanged in a 10\u00a0kDa molecular weight cutoff protein concentrator (Millipore) to ~80% deuterium buffer of 150\u00a0mM NaCl, 20\u00a0mM HEPES pD7.4 supplemented with 30% (v/v) glycerol-d8. For liposome-reconstituted protein samples, 1\u00a0mg/mL of 800\u00a0nm diameter 60% 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 30% 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS), 10% phosphatidylinositol 3-phosphate (PI(3)P) liposomes were generated as previously described (Buchkovich et al., 2013). 25\u00a0\u03bcL of 10-30\u00a0\u03bcM proteins and 25\u00a0\u03bcL 1\u00a0mg/mL liposomes were coincubated at room temperature for 15\u00a0min and ultracentrifuged in a TLA-100 rotor (Beckman Coulter) for 10\u00a0min at 70,000\u00a0rpm at 20\u00b0C. A total of 6 liposome pellets were combined and resuspended in 20\u00a0\u03bcL deuterium buffer of 150\u00a0mM NaCl, 20\u00a0mM HEPES pD7.4 supplemented with 15% (v/v) glycerol-d8, resulting in a sample of ~10-30\u00a0\u03bcM protein: ~3\u00a0mg/mL lipid for DEER measurements.\n\n### DEER data collection and analysis\n\n20\u00a0\u03bcL spin-labeled samples were loaded into 1.8\u00a0mm inner diameter Pyrex sample tubes (Wilmad-LabGlass), shock frozen in liquid nitrogen prior to DEER measurements. DEER measurements were performed at 60\u00a0K using a home-built Ku band 17.3\u00a0GHz pulse electron spin resonance spectrometer (Borbat et al., 1997; Borbat et al., 2013). A four-pulse DEER sequence (Jeschke and Polyhach, 2007) was used routinely with the detection \u03c0/2- and \u03c0-pulses having widths of 16 and 32\u00a0ns and pump \u03c0-pulse of 16\u00a0ns. The detection pulse sequence was applied at the low-field spectral position, while pumping was performed at a lower by 70\u00a0MHz frequency positioned at the central maximum. A 32-step phase cycle (Gamliel and Freed, 1990) was applied to suppress unwanted contributions to the signal. Nuclear modulation effects caused by surrounding protons were suppressed by averaging the data from 4 measurements with slightly different separations of the first two pulses, i.e. advanced by 9.5\u00a0ns for subsequent measurement. Depending on spin-labeled protein concentration, distance, and phase relaxation time, DEER data were usually acquired in less than 12\u00a0hr.\n\nTime-domain DEER data, V(t), were reconstructed into distance distributions using standard approaches (Borbat and Freed, 2007; Borbat and Freed, 2014; Jeschke, 2012; Jeschke and Polyhach, 2007). First, the signal decay due to intermolecular spin interactions was removed from V(t) by approximating the latter points (about a half of the record) of lnV(t) with a low-order polynomial, usually nearly a straight line, and subtracting it out from lnV(t) so that the antilog yields u(t). Once normalized as $V(t)=\\frac{u(t)}{u(0)}$, it serves as a typical form of DEER data presentation, while\u00a0u(t)-1\u00a0gives background free data, which was subsequently converted to a distance distribution between spin pairs with L-curve Tikhonov regularization (Chiang et al., 2005a) followed, when needed, by maximum entropy method refinement (Chiang et al., 2005b). The modulation depth, defined as 1-V(\u221e), where V(\u221e) is the asymptotic value of V(t), was used to report on the presence and extent of multispin effects (Bode et al., 2007).\n\nFor mapping Snf7 conformation, we employed double spin-labeled Snf7 and magnetic dilution (Borbat and Freed, 2007; Dzikovski et al., 2011; Meyer et al., 2014; Pornsuwan et al., 2013). Figure 3\u2014figure supplement 1 demonstrates a benchmark magnetic dilution study of double-labeled Snf7R52E K60C A66C with unlabeled Snf7R52E. This spin pair at the tip of the \u03b11/2 hairpin was selected as a reference for inspecting bound protein conformational variability and the conditions for isolation of intramolecular distances. The distance of this construct in solution is ~20\u00a0\u00c5, in agreement with spin-label modeling into a homology structure (Figure 2A) using MMM (molecular multiscale modeling) software package (Polyhach et al., 2011). Generic MTSL rotamer library for 298\u00a0K was used to determine conformations of attached spin labeled cysteine side chains and produce distance distributions between pairs of labeled sites. Distance distributions FWHMs were in the range of 0.4-1.2\u00a0nm. Respective background free time-domain data were generated with the help of the same package.\n\nConsistently, Snf7 was found to be structurally more heterogeneous in solution, producing broad distributions based on DEER data for a set of double-labeled Snf7 full-length constructs (Figure 2\u2014 figure supplement 3). Intriguingly, this study revealed a distinct Snf7 conformation in the protofilaments, which manifests itself as a very narrow distance distribution already at mild magnetic dilution (1:2), thus pointing to a low extent of intermolecular contacts. In the absence of unlabeled proteins (1:0 magnetic dilution), Snf7R52E K60C A66C in liposome samples produced broad distributions, which showed a range of distances to neighbors with ~30\u00a0\u00c5 being dominant (Figure 3\u2014figure supplement 1). In addition, the large modulation depth indicated coupling to at least two neighbors. This indicated that for isolating longer distances considerably higher dilution ratios would be desirable.\n\nFigures 2I,K and Figure 3\u2014figure supplement 2 illustrate subsequent application of this method to the membrane-bound Snf7R52E E88C H118C. Note that in Figure 2I, the reconstructed distance distribution of soluble Snf7R52E E88C H118C is normalized at a 4x scale than the MMM simulation data to illustrate the structural heterogeneity. In Figure 2K, the reconstructed distance distributions have a large component of ~30\u00a0\u00c5 originating from distances to immediate neighbors similar to the benchmark case, the magnetically diluted samples have a single peak at ~45\u00a0\u00c5 that is dominant with only a small fraction at 30\u00a0\u00c5 that could still be noticed at 1:8 dilution. A dilution factor in excess of 15 would be necessary to fully reveal the expected signal shape, however the 1:8 dilution sample already has ~5\u00a0\u03bcM protein concentration, making larger ratios problematic to study.\n\nSnf7 polymeric packing was assayed by inspecting intermolecular dipolar couplings for various single-labeled constructs assembled in protofilaments on liposome membranes. Whereas the most pronounced distance is expected to be determined by the proximal neighbors, the widths of distance distributions (Figures 3B\u2013E) obtained in these scans are likely to have contributions from the couplings to more distant neighbors and in addition by the complex nature of the Snf7 polymer in a liposome-reconstituted system where Snf7 spiraling double- protofilaments are observed, and the orientation relative to each other is heterogeneous (Cashikar et al., 2014; Henne et al., 2012). Notably, while searching for 'tip-to-tip' contacts possible in double protofilaments, we did not identify any spin labeled position with a distinct short proximity that is expected to occur at the contacting edge of the single filament, thus ruling out this scenario. We also did not discern any significant distance variation as the spin labeled position is moved from one end of the \u03b11-3 hairpin to the other, thus ruling out any alternating protomer packing in the protofilaments. So far, only parallel protomer packing in a single-layer filament is consistent with the data (see also Result).\n\n### Subcellular fractionation analysis\n\nSubcellular fractionation experiment was performed as previously described (Buchkovich et al., 2013). Briefly, 30\u00a0OD600nmV of mid-log yeast cultures were spheroplasted in Zymolyase and lyzed in 1\u00a0mL of 50\u00a0mM Tris pH7.4, 1\u00a0mM EDTA, 200\u00a0mM sorbitol with protease inhibitors (Roche). Lysates were cleared at 500\u00a0xg for 5\u00a0min at 4\u00b0C, and then fractionated by centrifugation at 13,000\u00a0xg for 10\u00a0min at 4\u00b0C. The supernatant (S13) fraction was collected. The pellet (P13) fraction was resuspended in 1\u00a0mL lysis buffer. Both fractions were then precipitated by 10% trichloroacetic acid for at least 30\u00a0min and washed by acetone twice.\n\n### Dicysteine oxidative crosslinking\n\nThe oxidizing chemical copper(II) 1,10-phenanthroline was prepared freshly. 9\u00a0mg copper(II) sulfate was dissolved in 250\u00a0\u03bcL ionic buffer of 150\u00a0mM postasium acetate, 5\u00a0mM magnesium acetate, 250\u00a0mM sorbitol, 20\u00a0mM HEPES pH7.0. 20\u00a0mg 1,10-phenanthroline was dissolved in 500\u00a0\u03bcL ethanol. Both solutions were mixed creating a brilliant aqua-colored solution with white precipitate. 7\u00a0\u03bcL copper(II) 1,10-phenanthroline solution was added into 450\u00a0\u03bcL of S13 or P13 fractions, and incubated at 4\u00b0C for 15\u00a0min. Samples were then precipitated by 10% trichloroacetic acid, washed twice by acetone and subjected for western blotting analysis.\n\n### Ex vivo dicysteine crosslinking by crosslinker\n\n30\u00a0OD600nmV of mid-log yeast cultures were spheroplasted, lyzed and fractionated. The 1\u00a0mL P13 fractions were equally divided into two subfractions. Subfraction 1 was treated with 20\u00a0\u03bcL DMSO and subfraction 2 with 20\u00a0\u03bcL 20\u00a0mM bismaleimidoethane (BMOE) (Life Technologies) in DMSO for 2hours at 4\u00b0C. Excessive BMOE was quenched by adding 0.2\u00a0\u03bcL 1\u00a0M dithiothreitol. Samples were then precipitated by 10% trichloroacetic acid, washed twice by acetone and subjected for western blotting analysis.\n\n### Flow cytometry, microscopy, western blotting, yeast strain and plasmids\n\nThe quantitative Mup1-pHluorin ESCRT cargo-sorting flow cytometry assay, negative stain TEM, and western blotting were performed as previously described (Buchkovich et al., 2013; Henne et al., 2012). See Supplementary file 1 for a list of plasmids and yeast strains used.\n\n### CONSURF analysis\n\nSaccharomyces cerevisiae Snf7 protein sequence was input as a query sequence for a protein BLAST analysis using the algorithm of blastp (protein-protein BLAST). The top 100 sequences from the result were subjected for ClustalW sequence alignment. The multiple sequence alignment and the Snf7 conformation B structure were then used as input for conservational analysis using the CONSURF server (Ashkenazy et al., 2010; Berezin et al., 2004; Celniker et al., 2013). The overall conservation scores calculated using the Bayesian method were color-coordinately mapped onto the Snf7 structure shown in Figure 7A.\n\n### Normal mode analysis\n\nCalculation of the normal modes of the Snf7 polymer was preformed on the elN\u00e9mo server (Suhre and Sanejouand, 2004), by using a 25-mer of Snf7 of conformation B as an input structure. To model a circular structure with a diameter of ~65\u201370\u00a0nm, perturbation parameters of DQMIN of -10000, DQMAX of 10000, and DQSTEP of 2000 were applied. This yielded 3 nontrivial normal modes numbered 7, 8 and 9. The lowest frequency nontrivial normal mode, mode 7, was used. Using Coot, the middle 12 protomers of the No.7 normal mode were selected and then superimposed in a head-to-tail fashion to manually generate a 23-mer and 94-mer shown in Figures 7E and Figure 7\u2014figure supplement 3.\n\n### Accession number\n\nCoordinates and structure factors for Snf7core have been deposited in the RCSB Protein Data Bank (http://www.rcsb.org) under accession PDB ID 5FD7 (open conformation A) and 5FD9 (open conformation B).\n",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f014b4fb-193e-49c8-8c8d-b8fa630816de",
+      "submission_id": "5a61bc40-057a-4e3e-a6ad-5eb6cc6c2124",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12548.036](https://doi.org/10.7554/eLife.12548.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Structural Basis for Activation, Assembly and Membrane Binding of ESCRT-III Snf7 Filaments\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individual involved in review of your submission has agreed to reveal his identity: Alexey Merz (peer reviewer).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript of Emr and colleagues is a remarkable and elegant investigation into the activation and polymerization of the Snf7 ESCRT-III to drive membrane deformation in MVB formation. Two crystal structures of the Snf7 core reveal that a loop that connects two helices in the inactive form becomes helical to produce a single long \u03b1-helix. The crystal packing suggests a model for the polymer structure that is elegantly confirmed on membranes using site-directed spin labeling and DEER spectroscopy, as well as mutational analysis of inter-filament interfaces. The authors have carefully tested hypotheses generated from the crystal structure to come to a plausible model for the nature of the filament assembly on membrane surfaces. Combined with previous work from the Emr group and others, the manuscript provides an unprecedented detailed insight into the assembly of ESCRTs in the process of MVB generation. The study is likely to be a landmark in the field.\n\nEssential revisions:\n\n1) The authors should validate that at least some of the hydrophobic position mutants used in the sorting assay can be expressed and purified. The implicit assumption is that the single point mutants do not affect the global fold but only the interface, but it is not clear that this is indeed the case. Currently the only analysis is by Westerns, which does not exclude being completely misfolded. Even if the yield of such preps does not match the WT, it would still indicate that folded protein can be obtained.\n\n2) The structural data and analysis are well described, but for the general reader it would help to explain how normal mode analysis provides the alternative conformation that leads to the curved structure used to bend membranes. Since Vps20 nucleates oligomerization of Snf7, the authors might comment on whether Vps20 might stabilize this alternative conformation and thereby promote the spiral structure. Also, the inter-subunit contacts characterized here should be explicitly compared to the h2-h2 interactions inferred by Shen et al. (2014).\n",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5ae598be-a3a6-4aa1-9a68-2b1eedbc4d23",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C1",
+      "claim": "ESCRTs constitute hetero-oligomeric machines that catalyze multiple topologically similar membrane-remodeling processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) constitute hetero-oligomeric machines that catalyze multiple topologically similar membrane-remodeling processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization of ESCRT function stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "162777d8-b8ec-46e4-914c-5d58fa9eee46",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C2",
+      "claim": "ESCRT-III subunits polymerize into spirals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ESCRT-III subunits polymerize into spirals, how individual ESCRT-III subunits are activated and assembled together into a membrane-deforming filament remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9facd98b-96b3-4a2e-883c-83f392236faf",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C3",
+      "claim": "X-ray crystal structures of Snf7 in its active conformation were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we determine X-ray crystal structures of the most abundant ESCRT-III subunit Snf7 in its active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "b87c0625-8800-413d-b4dc-9e82a9756c2e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C4",
+      "claim": "Snf7 activation requires a prominent conformational rearrangement to expose protein-membrane and protein-protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Using pulsed dipolar electron spin resonance spectroscopy (PDS), we show that Snf7 activation requires a prominent conformational rearrangement to expose protein-membrane and protein-protein interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PDS experimental data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d3742ebc-bc25-4205-81da-3aa4256e492b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C5",
+      "claim": "Snf7 arrays assemble with ~30 \u00c5 periodicity into a membrane-sculpting filament.",
+      "claim_type": "EXPLICIT",
+      "source": "This promotes the assembly of Snf7 arrays with ~30 \u00c5 periodicity into a membrane-sculpting filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data and PDS measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "41113bee-03c5-4dc3-bd33-c7ff122822be",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C6",
+      "claim": "Mutations on protein interfaces halt Snf7 assembly and block ESCRT function both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of biochemical and genetic approaches, both in vitro and in vivo, we demonstrate that mutations on these protein interfaces halt Snf7 assembly and block ESCRT function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MVB sorting assays and TEM data shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "dcfa1723-3257-4055-a72a-43e33d051e68",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C7",
+      "claim": "ESCRTs mediate the biogenesis of multivesicular body (MVB) during receptor down-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "e7e3e742-bf3e-458f-9521-70d0cf78069f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C8",
+      "claim": "ESCRTs mediate enveloped virus budding.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "1c6b524d-2a3f-4706-8dfc-8f566bc60cd4",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C9",
+      "claim": "ESCRTs mediate cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001), cytokinesis (Carlton and Martin-Serrano, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "cf42512f-3230-4d32-b184-14dd9e66b8cd",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C10",
+      "claim": "ESCRTs mediate plasma membrane repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001), cytokinesis (Carlton and Martin-Serrano, 2007), plasma membrane repair (Jimenez et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "af32d748-b261-4948-a0d5-19d4cec2e642",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C11",
+      "claim": "ESCRTs mediate nuclear pore complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001), cytokinesis (Carlton and Martin-Serrano, 2007), plasma membrane repair (Jimenez et al., 2014), nuclear pore complex assembly (Webster et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "c4ac671a-0beb-45e8-a1bb-eafb8b26e6da",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C12",
+      "claim": "ESCRTs mediate nuclear envelope reformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRTs) are membrane remodeling machinery that mediate diverse fundamental cellular processes, including the biogenesis of multivesicular body (MVB) during receptor down-regulation (Katzmann et al., 2001), enveloped virus budding (Garrus et al., 2001), cytokinesis (Carlton and Martin-Serrano, 2007), plasma membrane repair (Jimenez et al., 2014), nuclear pore complex assembly (Webster et al., 2014), and nuclear envelope reformation (Olmos et al., 2015; Vietri et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6713d44d-cfeb-4d70-af8f-d589c3e74639",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C13",
+      "claim": "ESCRTs were originally identified using yeast genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally identified using yeast genetics, ESCRTs package ubiquitinated transmembrane proteins into intraluminal vesicles (ILVs) that bud into the interior of the late endosome, creating a MVB that ultimately delivers cargos into the yeast lysosome (vacuole).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical context based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "3583ecdb-8ffe-4cfd-b4a0-ff279ae08345",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C14",
+      "claim": "ESCRTs package ubiquitinated transmembrane proteins into intraluminal vesicles (ILVs) that bud into the interior of the late endosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally identified using yeast genetics, ESCRTs package ubiquitinated transmembrane proteins into intraluminal vesicles (ILVs) that bud into the interior of the late endosome, creating a MVB that ultimately delivers cargos into the yeast lysosome (vacuole).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESCRT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "691c93b3-3fe0-4170-bb55-b47e9dc80646",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C15",
+      "claim": "Upstream ESCRT components (ESCRTs-0, I, and II) assemble into stable hetero-multimers to sort ubiquitinated cargo on the endosomal surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream ESCRT components, ESCRTs-0, I, and II, assemble into stable hetero-multimers to sort ubiquitinated cargo on the endosomal surface by binding ubiquitin and endosomal lipid, phosphatidylinositol 3-phosphate (PI(3)P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESCRT pathway function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "32611d39-0355-43b9-8cfe-9ba68a8e3de5",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C16",
+      "claim": "ESCRT-II sets the architecture and initiates the assembly of the ESCRT-III complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ESCRT-II sets the architecture and initiates the assembly of the ESCRT-III complex, which together with Vps4 is responsible for remodeling endosomal membranes (Henne et al., 2011; Hurley and Hanson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "de6cb900-5f34-4d31-8415-c172ba56d8a9",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C17",
+      "claim": "ESCRT-III together with Vps4 is responsible for remodeling endosomal membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ESCRT-II sets the architecture and initiates the assembly of the ESCRT-III complex, which together with Vps4 is responsible for remodeling endosomal membranes (Henne et al., 2011; Hurley and Hanson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "da752302-c4da-40c8-bfe1-4c345f345d4a",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C18",
+      "claim": "ESCRT-III is a metastable and conformationally dynamic protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III is a unique protein complex in that it is metastable and conformationally dynamic, forming hetero-oligomeric filaments of multiple subunits on membranes (Saksena et al., 2009; Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "2f40189e-4e8a-45a2-bb06-487e80737278",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C19",
+      "claim": "ESCRT-III forms hetero-oligomeric filaments of multiple subunits on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III is a unique protein complex in that it is metastable and conformationally dynamic, forming hetero-oligomeric filaments of multiple subunits on membranes (Saksena et al., 2009; Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "55e374f6-3b04-42b9-8385-439a4005942a",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C20",
+      "claim": "ESCRT-III subunits are inactive monomers in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Its subunits are inactive monomers in the cytoplasm, which activate and assemble into spiraling polymers on endosomes to drive cargo sequestration, membrane invagination and constriction (Buchkovich et al., 2013; Hanson et al., 2008; Henne et al., 2012; Wollert and Hurley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "16ff1b76-45c0-4cf5-84da-72c4ae56530d",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C21",
+      "claim": "ESCRT-III subunits activate and assemble into spiraling polymers on endosomes to drive cargo sequestration, membrane invagination and constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Its subunits are inactive monomers in the cytoplasm, which activate and assemble into spiraling polymers on endosomes to drive cargo sequestration, membrane invagination and constriction (Buchkovich et al., 2013; Hanson et al., 2008; Henne et al., 2012; Wollert and Hurley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "14f3f81d-32eb-4143-923b-5d3dff53a17d",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C22",
+      "claim": "ESCRT-III is a hetero-polymer of four 'core' subunits: Vps20, Snf7/Vps32, Vps24 and Vps2.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III is a hetero-polymer of four \"core' subunits of Vps20, Snf7/Vps32, Vps24 and Vps2 (Babst et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "bec6aecc-f080-47ae-a697-afbc2bef4fdf",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C23",
+      "claim": "ESCRT-III has 'accessory' subunits including Ist1, Did2/Vps46, Vps60, and Chm7.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III is a hetero-polymer of four \"core' subunits of Vps20, Snf7/Vps32, Vps24 and Vps2 (Babst et al., 2002), and 'accessory' subunits of Ist1, Did2/Vps46, Vps60 (Rue et al., 2008) and Chm7 (Horii et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "266e0f00-50dd-4395-9a0b-df6eec258d16",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C24",
+      "claim": "ESCRT-II directly engages Vps20 to trigger a sequential activation and ordered assembly of ESCRT-III subunits at endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-II directly engages Vps20 to trigger a sequential activation and ordered assembly of ESCRT-III subunits at endosomes (Teis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "a38221a2-03a4-47f0-804b-cc49a30661c2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C25",
+      "claim": "Vps20 nucleates the homo-oligomerization of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps20 nucleates the homo-oligomerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "676a4ba7-eb0c-4181-8f3f-8e8ef5767ad7",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C26",
+      "claim": "Snf7 recruits Vps24 and Vps2.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps20 nucleates the homo-oligomerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d842c512-431d-498c-9acc-42be697335fa",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C27",
+      "claim": "Vps2 engages the Vps4 complex for ESCRT-III disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps2 finally engages the Vps4 complex for ESCRT-III disassembly (Lata et al., 2008b; Obita et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "2d704ff2-a99b-49e2-97d0-a7d76fdc4e97",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C28",
+      "claim": "ESCRT-mediated membrane remodeling produces membrane curvature that pushes away from the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-mediated membrane remodeling produces membrane curvature that pushes away from the cytoplasm, which is topologically opposite to that of the 'classical' clathrin and COP-I/II vesicle budding reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESCRT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "ad7e1c21-26f9-4a45-a6c2-53325a3479d5",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C29",
+      "claim": "ESCRT-mediated membrane curvature is topologically opposite to that of clathrin and COP-I/II vesicle budding reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-mediated membrane remodeling produces membrane curvature that pushes away from the cytoplasm, which is topologically opposite to that of the 'classical' clathrin and COP-I/II vesicle budding reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge comparing ESCRT to other membrane remodeling systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "67d742ea-37a4-4583-b677-96ce10f8e31c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C30",
+      "claim": "High-resolution structural studies of ESCRT-III polymers have been problematic due to their relative instability and heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the relative instability and heterogeneity of ESCRT-III polymers, high-resolution structural studies have generally been problematic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in the field based on the nature of ESCRT-III.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f25d2502-c45e-4661-bbb4-8e233e6a7d5c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C31",
+      "claim": "Structural work on Snf7 has been difficult due to its ability to assemble readily into polymers that interfere with crystallization.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural work on Snf7 in particular has been difficult, due to its ability to assemble readily into polymers that interfere with crystallization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical challenge specific to Snf7 structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "59e66e99-114d-4de1-8547-e88630f9a2a9",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C32",
+      "claim": "Snf7 contains a highly structured 'core' domain of four \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7 contains a highly structured 'core' domain of four \u03b1-helices (Muziol et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "37cc6107-0365-40d5-9da4-859cb52d512a",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C33",
+      "claim": "The C-terminus of Snf7 includes an \u03b1-helix (\u03b15) that folds back against the core domain in cis to mediate autoinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus, in contrast, is less structured, including an \u03b1-helix (\u03b15) that folds back against the core domain in cis to mediate autoinhibition (Lata et al., 2008a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "34f1e07b-2586-4d88-b884-8adaeaf107ad",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C34",
+      "claim": "The C-terminus of Snf7 includes a MIT-interacting motif (MIM) for Vps4 recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus, in contrast, is less structured, including an \u03b1-helix (\u03b15) that folds back against the core domain in cis to mediate autoinhibition (Lata et al., 2008a), a microtubule interacting and transport (MIT)-interacting motif (MIM) for Vps4 recognition (Obita et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6c9ed28a-f3d7-4482-aa48-dd8c7f4f258f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C35",
+      "claim": "The C-terminus of Snf7 includes an \u03b1-helix (\u03b16) for Bro1/Alix interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus, in contrast, is less structured, including an \u03b1-helix (\u03b15) that folds back against the core domain in cis to mediate autoinhibition (Lata et al., 2008a), a microtubule interacting and transport (MIT)-interacting motif (MIM) for Vps4 recognition (Obita et al., 2007), and an \u03b1-helix (\u03b16) for Bro1/Alix interaction (McCullough et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "5e50a763-247e-4a90-84f5-0e3c364ad605",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C36",
+      "claim": "ESCRT-III subunits are activated by intramolecular conformational changes that promote protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies indicate that ESCRT-III subunits are activated by intramolecular conformational changes that promote protein-protein interactions (Henne et al., 2012; Lata et al., 2008a; Saksena et al., 2009; Schuh et al., 2015; Shen et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "cb20347c-8b7e-4f0c-9733-cb878e9760ff",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C37",
+      "claim": "Available X-ray crystal structures of autoinhibited Vps24 and Ist1 suggest that conformational changes involve the disruption of intramolecular interactions between the basic N-terminus and the acidic C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Available X-ray crystal structures of the autoinhibited Vps24 (Muziol et al., 2006) and Ist1 (Bajorek et al., 2009; Xiao et al., 2009) suggest that these conformational changes involve the disruption of intramolecular interactions between the basic N-terminus and the acidic C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited crystal structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "4da42458-7a11-4abe-8783-c052f0d06d62",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C38",
+      "claim": "Upon releasing autoinhibition, Snf7 subunits assemble into higher-order protofilaments or spirals.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon releasing this autoinhibition, Snf7 subunits assemble into higher-order protofilaments or spirals (Cashikar et al., 2014; Hanson et al., 2008; Henne et al., 2012; Shen et al., 2014) with a range of different morphologies and dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "fa0cb135-aaec-42bd-a05f-45c8f772db13",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C39",
+      "claim": "Snf7core was crystallized and structures were solved at 1.6 \u00c5 and 2.4 \u00c5 resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "We then crystallized and solved X-ray crystal structures of Snf7core in two conformations at 1.6 \u00c5 and 2.4 \u00c5 resolutions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental result supported by crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "bec82136-d597-44ef-b323-c53f1084e7f7",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C40",
+      "claim": "The Snf7core structures were determined by molecular replacement using CHMP4B\u03b11-\u03b12 (PDB: 4ABM).",
+      "claim_type": "EXPLICIT",
+      "source": "The structures were determined by molecular replacement using CHMP4B\u03b11-\u03b12 (PDB: 4ABM) (Table 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used for structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "2185aacf-7627-4f49-9584-52fa1ca88ebe",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C41",
+      "claim": "Snf7core does not fold into four \u03b1-helices, but instead contains only three \u03b1-helices that pack into a highly elongated structure.",
+      "claim_type": "EXPLICIT",
+      "source": "When we superimposed our Snf7 structure with available ESCRT-III structures (Figure 1\u2014figure supplement 3), we were surprised to note that Snf7core does not fold into four \u03b1-helices, but instead, it contains only three \u03b1-helices that pack into a highly elongated structure (Figures 1B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary structural finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "ccd13ad9-3355-4620-9fb0-1dae1fa1151e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C42",
+      "claim": "In Snf7core, \u03b12 extends into a ~90 \u00c5 long \u03b1-helix combining the \u03b12 and \u03b13 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b12 extends into a ~90 \u00c5 long \u03b1-helix combining the \u03b12 and \u03b13 segments that were distinct \u03b1-helices in previously defined ESCRT-III structures (Figures 2A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "cf6e057b-1529-45b0-856f-7eec88ccc2c3",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C43",
+      "claim": "In the closed state, Gln90 (\u03b12) and Met130 (\u03b14) of Snf7 are in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a homology model of closed Snf7 (Henne et al., 2012) (Figure 2A), we identified close proximity between conserved residues Gln90 (\u03b12) and Met130 (\u03b14) in the four-helix coiled-coil (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of a homology model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "62f3d2cc-ef04-4cee-96f8-e6c43a009080",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C44",
+      "claim": "In the S13 (cytoplasmic) fraction, ~50% of Snf7Q90C M130C migrated faster after oxidation, indicating a conformationally closed Snf7 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in the S13 fraction, ~50% of Snf7Q90C M130C migrated faster, indicating a conformationally closed Snf7 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the crosslinking assay shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d46936d3-7af5-4f7d-811d-58a7c54a370a",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C45",
+      "claim": "In the P13 (membrane-enriched) fraction, the migration shift of Snf7Q90C M130C did not occur after oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in the P13 fraction, the migration shift did not occur (Figures 2D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the crosslinking assay shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "1300554e-3b20-48b7-ba95-0ba5bbca6ec8",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C46",
+      "claim": "Snf7 on endosomal membranes adopts an open conformation in which \u03b14 is displaced away from \u03b12.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indicative of distinct conformations between the cytoplasmic and the endosome-bound states, and suggests that Snf7 on endosomal membranes adopts an open conformation in which \u03b14 is displaced away from \u03b12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crosslinking data in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "3681775d-081e-4a52-a0ec-80d3f8f889a2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C47",
+      "claim": "Soluble Snf7 is structurally heterogeneous and conformationally dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed a wide distance spread of ~15\u201350 \u00c5 (Figure 2I), corresponding to large amplitude motions of the spin labeled positions, but not a distinct closed or open state. Thus, soluble Snf7 is structurally heterogeneous, suggesting that it is conformationally dynamic (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of DEER spectroscopy data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "ff1a17c2-cec0-42df-a75a-bb36d0a50bbe",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C48",
+      "claim": "Membrane-bound Snf7R52E E88C H118C produced a strong ~30 \u00c5 peak in DEER measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, membrane-bound Snf7R52E E88C H118C produced a strong ~30 \u00c5 peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from DEER spectroscopy shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "b6c8fd34-a358-42b8-af3b-dc42338d376f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C49",
+      "claim": "Only the open conformation is present in Snf7 polymers assembled on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "As we did not observe short distances corresponding to the closed conformation, we conclude that only the open conformation is present in Snf7 polymers assembled on membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on DEER spectroscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "bb175f33-885e-438a-b428-bbc9710966cd",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C50",
+      "claim": "Each Snf7 protomer in the crystal lattice exhibits a repeat distance of ~30 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the ~100 \u00c5 long \u03b11\u20133 hairpin tilts by ~27\u00b0 and polymerizes into a ~45 \u00c5 diameter single protofilament, with each protomer exhibiting a repeat distance of ~30 \u00c5 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "b6f5791b-21ee-4763-b017-e676a2a059e2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C51",
+      "claim": "DEER measurements on single-labeled Snf7 showed moderately broad distance distributions at 28\u201332 \u00c5 for T20C, K35C and E88C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the extensive amount of inter-molecular contacts revealed in the Snf7 crystal, we observed moderately broad distance distributions, specifically at 28\u201332 \u00c5 for T20C, K35C and E88C (Figures 3B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from DEER spectroscopy shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "180cbbe4-5a97-43b7-999f-01c787efcea1",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C52",
+      "claim": "DEER measurements on single-labeled Snf7 showed moderately broad distance distributions at 32\u201336 \u00c5 for K60C, H118C and G140C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the extensive amount of inter-molecular contacts revealed in the Snf7 crystal, we observed moderately broad distance distributions, specifically at 28\u201332 \u00c5 for T20C, K35C and E88C (Figures 3B\u2013C), and at 32\u201336 \u00c5 for K60C, H118C and G140C (Figures 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from DEER spectroscopy shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "1d9b1972-e427-4d5f-beb4-ebab883b136b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C53",
+      "claim": "Snf7 packing adopts a parallel arrangement in a single-layer array with a period of ~30 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this series of single-cysteine DEER scanning and the double-cysteine magnetic dilution experiments, we conclude that Snf7 packing adopts a parallel arrangement in a single-layer array with a period of ~30 \u00c5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple DEER experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "28c79c47-0d6c-40ec-92a0-4559f8f92d54",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C54",
+      "claim": "In the Snf7 protofilament, protomer (i) interacts with protomer (i+1) through both hydrophobic and electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Snf7 protofilament, the protomer (i) interacts with the next protomer (i+1) through both hydrophobic and electrostatic interactions (Figures 4A\u2013B), burying ~1060 \u00c52 of solvent-accessible surface area per protomer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d34fc803-66fe-4f0b-9350-19010a7fb66f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C55",
+      "claim": "The assembly of the extended \u03b12/3 helix exposes a hydrophobic surface on \u03b13 that was buried in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of the extended \u03b12/3 helix exposes a hydrophobic surface on \u03b13, which was buried in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation comparing open and closed conformations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "4b018194-afa7-4d3e-9d79-5ce6ca273b4c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C56",
+      "claim": "Snf7 mutants M104E, L101E, A97K, I94E, Q90K, M87E and T83E showed severe MVB sorting defects with sorting efficiencies from 12% to 76%.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, mutants M104E, L101E, A97K, I94E, Q90K, M87E and T83E showed severe sorting defects, with sorting efficiencies from 12% to 76%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "55b6eb9b-cc6f-40e7-9534-0cc1111d8595",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C57",
+      "claim": "Snf7 mutants L121D, I117E, M114E, M107E, T103E and L99K showed MVB sorting defects with sorting efficiencies from 7% to 34%.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, mutants M104E, L101E, A97K, I94E, Q90K, M87E and T83E showed severe sorting defects, with sorting efficiencies from 12% to 76%, and mutants L121D, I117E, M114E, M107E, T103E and L99K from 7% to 34% (Figure 4F and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "379f9d7c-b3d8-4982-a259-ad19d6abb3a9",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C58",
+      "claim": "Recombinant Snf7R52E Q90K, Snf7R52E I94E, Snf7R52E M107E, and Snf7R52E M114E proteins were unable to generate protofilaments visible by TEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recombinant Snf7R52E Q90K, Snf7R52E I94E, Snf7R52E M107E, and Snf7R52E M114E proteins were able to be purified to homogeneity, but unable to generate protofilaments visible by TEM (Figure 4H and Figure 4\u2014 figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from TEM analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "febedde6-d645-428f-8139-8a9820a28f3f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C59",
+      "claim": "Snf7 mutants snf7R25E H29E K36E and snf7E95K E102K E109K resulted in severe MVB sorting defects of 16% and 44%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate whether these inter-protomer electrostatic interactions occur in vivo, we generated and tested charge-inversion mutations, snf7R25E H29E K36E and snf7E95K E102K E109K, which resulted in severe sorting defects of 16% and 44%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "c587af95-ab5f-40a7-88c8-5a93978960df",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C60",
+      "claim": "Co-expressing snf7R25E H29E K36E and snf7E95K E102K E109K in trans restored MVB sorting to 91%.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when co-expressing both mutants in trans, MVB sorting was restored to 91% (Figure 4G and Figure 4\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "28e1b468-c84c-4223-ae35-5b4f157b778c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C61",
+      "claim": "Co-incubating recombinant Snf7R52E R25E H29E K36E and Snf7R52E E95K E102K E109K proteins resulted in protofilament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, co-incubating recombinant Snf7R52E R25E H29E K36E and Snf7R52E E95K E102K E109K proteins resulted in protofilament formation, but no protofilaments were detected when each mutant was tested individually (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from TEM analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "e7038862-1200-45d4-b08e-26e4e1857502",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C62",
+      "claim": "Key conserved lysine residues K60 K64 K68 K71 K79 (\u03b12), and K112 K115 (\u03b13) are arranged on an elongated and solvent-exposed surface ideal for interacting with the acidic endosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, several key conserved lysine residues, K60 K64 K68 K71 K79 (\u03b12), and K112 K115 (\u03b13), which were in distinct \u03b1-helices in the closed state, are arranged on an elongated and solvent-exposed surface ideal for interacting with the acidic endosomal membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure related to membrane binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8d9f2bbd-ce90-45fb-b656-1cd910e1155f",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C63",
+      "claim": "The electrostatic membrane-binding regions of all Snf7 protomers face the same direction in the polymer.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrostatic membrane-binding regions of all Snf7 protomers face the same direction in the polymer, allowing for a continuous membrane-binding interface (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6db48a99-317c-45a0-95f4-6bcb98bbac76",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C64",
+      "claim": "\u03b14 can rotate by at least ~90\u00b0 along the axis of the \u03b12/3 helix between the two open conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposing the two conformations revealed that \u03b14 can rotate by at least ~90\u00b0 along the axis of the \u03b12/3 helix (Figures 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation comparing the two crystal structures shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "40985e25-cdee-41dd-9916-6771b1dc44b6",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C65",
+      "claim": "\u03b14 makes a similar interaction with the \u03b11/2 hairpin of a Snf7 protomer in a neighboring protofilament in both open conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the large differences in \u03b14 positioning, \u03b14 makes a similar interaction with the \u03b11/2 hairpin of a Snf7 protomer in a neighboring protofilament in both structures (Figure 6C and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from both crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8920ab81-ec17-4ad0-ac9a-7fa1812a13aa",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C66",
+      "claim": "Snf7 mutants A51E, L55E, L67E, V126E, M130E and I133E led to drastic loss-of-function with sorting efficiencies from 9% to 55% in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7 mutants of A51E, L55E, L67E, V126E, M130E and I133E led to drastic loss-of-function, with sorting efficiencies from 9% to 55% in vivo, and were unable to assemble into protofilaments in vitro (Figure 6F and Figure 6\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "7c824f27-b1b5-4ac0-9128-8ca570814c07",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C67",
+      "claim": "Snf7 mutants A51E, L55E, L67E, V126E, M130E and I133E were unable to assemble into protofilaments in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7 mutants of A51E, L55E, L67E, V126E, M130E and I133E led to drastic loss-of-function, with sorting efficiencies from 9% to 55% in vivo, and were unable to assemble into protofilaments in vitro (Figure 6F and Figure 6\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from TEM analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0da3f884-5079-43b3-b8a8-07f928cb1ac0",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C68",
+      "claim": "The L121P mutant exhibited a MVB sorting efficiency of 32%.",
+      "claim_type": "EXPLICIT",
+      "source": "The L121P mutant exhibited a MVB sorting efficiency of 32%, compared to that of the \u03b11/2 loop residue Asn59 mutant N59P of 75% (Figure 6\u2014 figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MVB sorting assay shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "aab455ec-b384-485f-a796-cfd984a8ca68",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C69",
+      "claim": "Seven highly conserved regions were identified in the Snf7core domain by CONSURF analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we identified seven highly conserved regions in the Snf7core domain (Figure 7A and Figure 7\u2014 figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from CONSURF sequence conservation analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "686e3dd3-e8e5-4aeb-89df-2d14471155bf",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C70",
+      "claim": "All seven highly conserved regions in Snf7core map to regions assigned specific functions in either polymer assembly or membrane interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, all of them map to regions of Snf7 assigned specific functions in either polymer assembly or membrane interaction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation connecting conservation analysis to functional regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "3de5f655-aa3c-4f47-a677-1ee781d8ec9d",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C71",
+      "claim": "A linear Snf7 filament can bend into a ~70 nm diameter three-dimensional superhelix with turn length of ~62 nm using normal mode analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, without any dramatic structural rearrangement within each protomer or alterations of the protein-protein interface, a linear two-dimensional Snf7 filament can bend into a ~70 nm diameter three-dimensional superhelix with turn length of ~62 nm, reminiscent of the structure of the Snf7/Vps24/Vps2 co-assembly previously observed (Henne et al., 2012) (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from normal mode analysis computational modeling shown in Figure 7E and Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "5a564c17-0697-44d1-b5d3-7571c5ce518b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C72",
+      "claim": "The 3D helical Snf7 array aligns the cationic membrane-binding surfaces on the outside of the superhelix.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this 3D helical array aligns the cationic membrane-binding surfaces on the outside of the superhelix, ideal for a Snf7 polymer to stabilize a negatively curved membrane surface (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the normal mode analysis model shown in Figure 7E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "4356ccdc-1ed1-43ab-8add-a5b2252e2786",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C73",
+      "claim": "Snf7 intermolecular interactions rely primarily on core-core and core-membrane interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Snf7 intermolecular interactions rely primarily on core-core and core-membrane interactions (Figure 1A) (Buchkovich et al., 2013; Henne et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "02c67b9f-4f65-487b-a8eb-065eb963ccd8",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C74",
+      "claim": "Snf7core (residues 12\u2013150) was purified to homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "we purified Snf7core to homogeneity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "e7fdece7-4d24-483d-a9c8-9d7d21c2d31c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C75",
+      "claim": "Snf7core conformation A was crystallized in 100 mM NaCl, 100 mM MES:NaOH pH5.5, 3% PEG20,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7core (conformation A) was crystallized in a hanging-drop vapor diffusion system at 4\u00b0C by mixing protein (5.7 mg/mL) with reservoir solution containing 100 mM NaCl, 100 mM MES:NaOH pH5.5, 3% PEG20,000 in 1:1 ratio (v/v).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the crystallization conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "7d13f848-3446-4e79-9635-5d529ea0c210",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C76",
+      "claim": "Snf7core conformation B crystals were grown in 110 mM NaCl, 70 mM MES:NaOH pH5.5, 6% PEG20,000 and subject to high-pressure cryo-cooling.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7core (conformation B) crystals were grown in 110 mM NaCl, 70 mM MES:NaOH pH5.5, 6% PEG20,000 and subject to high-pressure cryo-cooling (Kim et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the crystallization and cryo-cooling conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d473cdd6-ba7e-46c1-99db-af0cb9231956",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C77",
+      "claim": "X-ray diffraction data for Snf7 crystal A was collected to 2.4 \u00c5 at MacCHESS beam line F1.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray diffraction data was collected on Snf7 crystal 'A' to 2.4 \u00c5 at MacCHESS beam line F1 of Cornell High Energy Synchrotron Source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9fe9a828-c0f5-4b89-b432-751a2f0994d1",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C78",
+      "claim": "Snf7 crystal A belonged to space group P21 with unit cell dimensions a=29.5 \u00c5 b=52.2 \u00c5 c=54.5 \u00c5 \u03b1=90\u00b0 \u03b2=97.5\u00b0 \u03b3=90\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal belonged to space group P21 with unit cell dimensions a=29.5 \u00c5 b=52.2 \u00c5 c=54.5 \u00c5 \u03b1=90\u00b0 \u03b2=97.5\u00b0 \u03b3=90\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d3881b30-4099-4f1a-b216-f428455c3a7e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C79",
+      "claim": "X-ray diffraction data for Snf7 crystal B was collected to 1.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray diffraction data was collected on crystal 'B' to 1.6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "5d86dbcf-ed19-4d73-b377-189f710f5fd8",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C80",
+      "claim": "Snf7 crystal B belonged to space group P21 with unit cell dimensions a=29.9 \u00c5 b=46.2 \u00c5 c=44.6 \u00c5 \u03b1=90\u00b0 \u03b2=98.5\u00b0 \u03b3=90\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "It belonged to space group P21 with unit cell dimensions a=29.9 \u00c5 b=46.2 \u00c5 c=44.6 \u00c5 \u03b1=90\u00b0 \u03b2=98.5\u00b0 \u03b3=90\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "dd1745dd-7b44-4d7c-bd1a-ffcc1f12f776",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C81",
+      "claim": "There is one Snf7 molecule in the asymmetric unit of both crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "There is one Snf7 molecule in the asymmetric unit of both crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6e6be9fa-3436-4c99-b086-fcde5ca0a103",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C82",
+      "claim": "DEER measurements were performed at 60 K using a home-built Ku band 17.3 GHz pulse electron spin resonance spectrometer.",
+      "claim_type": "EXPLICIT",
+      "source": "DEER measurements were performed at 60 K using a home-built Ku band 17.3 GHz pulse electron spin resonance spectrometer (Borbat et al., 1997; Borbat et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method for DEER spectroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6709d8c9-d9ea-450a-ab6f-0f9d56b21234",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C83",
+      "claim": "Liposomes used for reconstitution were 800 nm diameter composed of 60% DOPC, 30% DOPS, 10% PI(3)P.",
+      "claim_type": "EXPLICIT",
+      "source": "For liposome-reconstituted protein samples, 1 mg/mL of 800 nm diameter 60% 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 30% 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS), 10% phosphatidylinositol 3-phosphate (PI(3)P) liposomes were generated as previously described (Buchkovich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the liposome composition used for experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "07aab34c-d3a8-4fa4-82a3-8ab6fd3b8ac3",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C84",
+      "claim": "The modulation depths of the time-domain echo signals indicate a ~3-spin system in Snf7 protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The modulation depths of the time-domain echo signals indicate a ~3-spin system, in agreement with the crystalline arrangement of Snf7, where each protomer has two neighboring protomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of DEER spectroscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0c15e766-f80e-4dc9-9f65-63399547b258",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C85",
+      "claim": "In the crystalline arrangement of Snf7, each protomer has two neighboring protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The modulation depths of the time-domain echo signals indicate a ~3-spin system, in agreement with the crystalline arrangement of Snf7, where each protomer has two neighboring protomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "b89caf84-737c-4bfe-b792-46775562cdc4",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C86",
+      "claim": "Magnetic dilution readily removed the intersubunit couplings in DEER experiments, indicating that protofilaments do not make extensive contacts with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetic dilution (Figure 3\u2014figure supplements 1 and 2) readily removed the intersubunit couplings, indicating that protofilaments do not make extensive contacts homogenous with each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of magnetic dilution DEER experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "110d2238-c74b-48cf-b119-aa8cd409e6ec",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C87",
+      "claim": "The interfilamental interface in Snf7 crystals only buries 474 \u00c52 of solvent-accessible surface area per protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the DEER data that two Snf7 protofilaments do not make extensive contacts with each other and do not assemble into homogeneous arrangements, this interfilamental interface only buries 474 \u00c52 of solvent-accessible surface area per protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural calculation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "552eb1fc-df0d-4398-b64d-06aaa93e9997",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C88",
+      "claim": "The \u03b13/4 loop functions as an important flexible 'hinge' that may facilitate different architectural stages of Snf7 polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "The L121P mutant exhibited a MVB sorting efficiency of 32%, compared to that of the \u03b11/2 loop residue Asn59 mutant N59P of 75% (Figure 6\u2014 figure supplement 3), suggesting that the \u03b13/4 loop functions as an important flexible 'hinge' that may facilitate different architectural stages of Snf7 polymers (Figure 6C and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from mutagenesis data combined with structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f47317e4-e03a-4326-9614-7a7d6ad1d0bd",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C89",
+      "claim": "The tip of the \u03b11/2 hairpin is important for intra- and inter-molecular contacts of ESCRT-III subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, studies have previously shown that the tip of the \u03b11/2 hairpin is important for intra- and inter-molecular contacts of ESCRT-III subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d90ea6c8-413f-4819-a3b7-369fdcdedcf2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C90",
+      "claim": "X-ray crystal structures of CHMP3 and IST1 are autoinhibited through an intramolecular contact between the \u03b11/2 hairpin and \u03b15.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, X-ray crystal structures of CHMP3 and IST1 are autoinhibited through an intramolecular contact between the \u03b11/2 hairpin and \u03b15 (Figure 6\u2014figure supplement 5) (Bajorek et al., 2009; Muziol et al., 2006)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "bd8ab616-c8c2-40e3-84e3-162d07bab81c",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C91",
+      "claim": "The Ist1-Did2 co-crystal structure revealed that the MIM1 of CHMP1B forms an intermolecular contact with the \u03b11/2 hairpin of Ist1.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Ist1-Did2 co-crystal structure revealed that the MIM1 of CHMP1B forms an intermolecular contact with the \u03b11/2 hairpin of Ist1 (Xiao et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9cdbe56b-5f4e-410b-aa3b-8e7ff76bfc35",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C92",
+      "claim": "Snf7 protein-protein interactions revealed from X-ray crystal structures are evolutionally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Snf7 protein-protein interactions revealed from our X-ray crystal structures and the protein-membrane interactions previously identified (Buchkovich et al., 2013) are evolutionally conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on CONSURF conservation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6d8aea15-0e85-43d0-8a16-54f329a8a9a2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C93",
+      "claim": "Snf7 protein-membrane interactions are evolutionally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Snf7 protein-protein interactions revealed from our X-ray crystal structures and the protein-membrane interactions previously identified (Buchkovich et al., 2013) are evolutionally conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on CONSURF conservation analysis and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "1a0df955-28bd-4efd-834e-533a5ec7fc81",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C94",
+      "claim": "In the cytoplasm, Snf7 exists in a dynamic equilibrium of mixed intermediates between the open and closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these structural insights, we propose a detailed 'lifecycle' of Snf7 activation and polymerization: 1) In the cytoplasm, Snf7 exists in a dynamic equilibrium of mixed intermediates between the open and closed states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on structural and biophysical data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8ce97de1-d91e-47d1-bce0-26ccf2da0bcc",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C95",
+      "claim": "On endosomes, Vps20 functions as a nucleator to engage an open Snf7 from the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "2) on endosomes, Vps20 \u03b11 directly associates with the ESCRT-II subunit Vps25 (Im et al., 2009), allowing Vps20 to function as a nucleator to engage an open Snf7 from the cytoplasm (Figure 7\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on structural data and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "89802511-3d12-4037-b68f-cb22caa01506",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C96",
+      "claim": "The open conformation of Snf7 with an extended \u03b12/3 helix presents a cationic membrane-interacting surface to orient itself on endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "3) the open conformation of Snf7 with an extended \u03b12/3 helix presents a cationic membrane-interacting surface to orient itself on endosomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "d350cc97-9652-48d4-b4f1-2f2da86a25c2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C97",
+      "claim": "The N-terminal membrane ANCHR motif further stabilizes Snf7 on the endosomal surface.",
+      "claim_type": "EXPLICIT",
+      "source": "4) the N-terminal membrane ANCHR motif further stabilizes Snf7 on the endosomal surface (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on prior work on the ANCHR motif.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "dc087f97-0d9a-4edf-9519-f423f5987f86",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C98",
+      "claim": "The endosomal recruitment shifts the conformational equilibrium and triggers a 'domino effect' of Snf7 opening and promotes Snf7 polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "5) the endosomal recruitment shifts the conformational equilibrium and thus triggers a 'domino effect' of Snf7 opening and promotes Snf7 polymerization into a ~30 \u00c5 periodic array of ordered inter-protomer contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanistic model based on the structural and biophysical data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8d9fae5a-6422-4bd6-a1af-744435c681a7",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C99",
+      "claim": "An averaged 32.5 \u00c5 inter-subunit distance was observed in C. elegans Vps32 spirals.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, an averaged 32.5 \u00c5 inter-subunit distance was observed in C. elegans Vps32 spirals (Shen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "8300e5c1-1261-4a1b-852a-69d96f4a5fb6",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C100",
+      "claim": "A previous SAXS study suggested that Vps24 can adopt both a 75 \u00c5 globular and a 105 \u00c5 extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous SAXS study suggested that Vps24 can adopt both a 75 \u00c5 globular and a 105 \u00c5 extended conformation (Lata et al., 2008a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "b30202c4-842a-4f76-96f1-1a03e4cab215",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C101",
+      "claim": "The core domain extension may be a common theme of ESCRT-III activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous SAXS study suggested that Vps24 can adopt both a 75 \u00c5 globular and a 105 \u00c5 extended conformation (Lata et al., 2008a), implying that the core domain extension may be a common theme of ESCRT-III activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior SAXS data and the current structural findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0c2e9253-d1af-4e52-a60f-d1538e3b5609",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C102",
+      "claim": "Both Snf7 and FtsZ/FtsA can drive cytokinetic abscission.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both Snf7 and FtsZ/FtsA can drive cytokinetic abscission, and they share at least three distinct structural characteristics: electrostatic protein-membrane interactions, membrane insertion of an amphipathic helix, and oligomeric protein scaffolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge of both systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "55d5fff7-5a00-46a0-a911-4601ab6e7bfc",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C103",
+      "claim": "Snf7 and FtsZ/FtsA share three distinct structural characteristics: electrostatic protein-membrane interactions, membrane insertion of an amphipathic helix, and oligomeric protein scaffolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both Snf7 and FtsZ/FtsA can drive cytokinetic abscission, and they share at least three distinct structural characteristics: electrostatic protein-membrane interactions, membrane insertion of an amphipathic helix, and oligomeric protein scaffolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge of both systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "49287690-e65b-40f5-a477-43924783d2ef",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C104",
+      "claim": "FtsZ requires nucleotide hydrolysis to drive its conformational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these similarities, the major difference between FtsZ and Snf7 is that FtsZ requires nucleotide hydrolysis to drive its conformational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about FtsZ.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "3f7136da-d435-4fb4-9109-1e4b4a084cf2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C105",
+      "claim": "ESCRT-III does not bind nor hydrolyze nucleotides to regulate its conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ESCRT-III does not bind nor hydrolyze nucleotides to regulate its conformation, but it recruits the AAA-ATPase Vps4 for its disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESCRT-III.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "ed2d50b4-b4b5-486f-bcf8-8135ed6e90f6",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C106",
+      "claim": "ESCRT-III recruits the AAA-ATPase Vps4 for its disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ESCRT-III does not bind nor hydrolyze nucleotides to regulate its conformation, but it recruits the AAA-ATPase Vps4 for its disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESCRT-III.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "273e6047-cd89-477f-8b00-227b5b0f252e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C107",
+      "claim": "During MVB biogenesis, ESCRT-II binds two copies of Vps20, which then nucleates the homo-oligomerization of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "During MVB biogenesis, ESCRT-II binds two copies of Vps20, which then nucleates the homo-oligomerization of Snf7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the ESCRT pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "48c24ffb-fb94-43aa-a127-11f44c97108b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C108",
+      "claim": "In enveloped viral budding and cytokinetic abscission, Bro1/Alix directly bridges ESCRT-I to ESCRT-III by binding to the C-terminal \u03b16 of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in enveloped viral budding and cytokinetic abscission, Bro1/Alix directly bridges ESCRT-I to ESCRT-III, by binding to the C-terminal \u03b16 of Snf7 (McCullough et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "60a8dc0d-620a-47bb-b4db-3eb6427d4f50",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C109",
+      "claim": "Bro1/Alix interaction with Snf7 may directly dissociate the C-terminal autoinhibitory region to trigger Snf7 polymer assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this interaction may directly dissociate the C-terminal autoinhibitory region to trigger Snf7 polymer assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0348d79f-6a0e-433e-8eb3-40ca86190e24",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C110",
+      "claim": "CHMP7 triggers Snf7 assembly during nuclear envelope reformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CHMP7 was recently shown to trigger Snf7 assembly during nuclear envelope reformation (Vietri et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6571621e-d4cc-4af2-a4ec-ef2afdb6478b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C111",
+      "claim": "ILVs that bud into the endosomal lumen contain no outer vesicle coat, yet show consistent diameters.",
+      "claim_type": "EXPLICIT",
+      "source": "ILVs that bud into the endosomal lumen contain no outer vesicle coat, yet show consistent diameters, suggesting ESCRTs regulate vesicle size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation that leads to an inference about ESCRT function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "44e49fdd-4760-4be7-a68e-b5e65a75030b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C112",
+      "claim": "ESCRTs regulate vesicle size.",
+      "claim_type": "EXPLICIT",
+      "source": "ILVs that bud into the endosomal lumen contain no outer vesicle coat, yet show consistent diameters, suggesting ESCRTs regulate vesicle size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about ILV characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "aee5e041-a56a-43f6-9b81-3906b196c317",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C113",
+      "claim": "The ESCRT-III filament predominantly drives membrane deformation by sculpting the neck interior of a growing vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the ESCRT-III filament appears to predominantly drive membrane deformation by sculpting the neck interior of a growing vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9061f2fa-1953-452d-9884-0bcb4ad74909",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C114",
+      "claim": "Snf7 has been shown to localize to both the curved necks of invaginations and along highly curved edges of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Snf7 has been shown to localize to both the curved necks of invaginations and along highly curved edges of membranes (Buchkovich et al., 2013; Fyfe et al., 2011; Wollert and Hurley, 2010) (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "82acb4c3-15e9-46bd-bf16-ffc8eb8af163",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C115",
+      "claim": "The ANCHR motif of Snf7 acts to sense and stabilize the positively curved rim of the invagination.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANCHR motif of Snf7 acts to sense and stabilize the positively curved rim of the invagination (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on prior work on the ANCHR motif.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "362b0ad7-8929-4f25-8520-81c3ffe84fbf",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C116",
+      "claim": "The helical Snf7 polymer acts as a circular scaffold that triggers and stabilizes the negatively curved circumference of the neck of the invagination.",
+      "claim_type": "EXPLICIT",
+      "source": "Coinciding with this positive curvature stabilization, the helical Snf7 polymer acts as a circular scaffold that triggers and stabilizes the negatively curved circumference of the neck of the invagination (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "cce25f8d-4f2f-49cb-bf87-9bacdb760635",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C117",
+      "claim": "As a two-dimensional ESCRT-III spiral elongates into a three-dimensional superhelix, the tight membrane binding of the 'corkscrew' concentrates transmembrane cargoes ahead of the leading edge of the forming and narrowing filament, packaging them into the nascent ILV.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that as a two-dimensional ESCRT-III spiral elongates into a three-dimensional superhelix, the tight membrane binding of the 'corkscrew' concentrates transmembrane cargoes ahead of the leading edge of the forming and narrowing filament, packaging them into the nascent ILV (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated as a proposed model by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f533d6b5-0a94-4119-8fbd-345fc8aa03c2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "claim_id": "C118",
+      "claim": "Coordinates and structure factors for Snf7core have been deposited in the RCSB Protein Data Bank under accession PDB ID 5FD7 (open conformation A) and 5FD9 (open conformation B).",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinates and structure factors for Snf7core have been deposited in the RCSB Protein Data Bank (http://www.rcsb.org) under accession PDB ID 5FD7 (open conformation A) and 5FD9 (open conformation B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fcf5f6d8-f5fd-4850-8016-129d90165886",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "X-ray crystal structures of Snf7core in two open conformations were determined at 1.6 \u00c5 and 2.4 \u00c5 resolution. The structures reveal that Snf7core adopts an elongated three-helix structure rather than the expected four-helix bundle, with \u03b12 and \u03b13 forming a continuous ~90 \u00c5 helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C42 describe the primary crystallographic findings, supported by detailed crystallographic data in Table 1 (C75-C81) and purification data (C74). The structural determination is well-documented with appropriate methods (C40), resolution, space group, and unit cell parameters. The unexpected three-helix architecture represents a major structural discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "1e12bdb3-318a-432e-b5f4-3d803acec81a",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Snf7 undergoes a large-scale conformational change from a closed cytoplasmic state to an open membrane-bound state. In vivo crosslinking and DEER spectroscopy demonstrate that cytoplasmic Snf7 is conformationally dynamic, while membrane-bound Snf7 adopts exclusively the open conformation with \u03b14 displaced from \u03b12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conformational transition is supported by multiple complementary approaches: in vivo cysteine crosslinking (C44-C46), DEER spectroscopy in solution (C47) and on membranes (C48-C49), and structural modeling (C43). The convergence of biochemical and biophysical data provides strong evidence for the activation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Membrane-bound Snf7 assembles into protofilaments with ~30 \u00c5 periodicity in a parallel, single-layer arrangement. DEER spectroscopy measurements at multiple positions along the Snf7 core domain confirm inter-protomer distances of 28-36 \u00c5, consistent with the crystal lattice arrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by systematic DEER measurements at multiple labeled positions (C51-C52) and magnetic dilution experiments (C86). The modulation depth analysis (C84-C85) confirms the ~3-spin system expected from the crystal structure. The convergence of crystallographic and solution biophysical data strongly supports the proposed filament architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0552c452-2ef1-4470-887a-c22e3f4510fc",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Snf7 protomers interact through hydrophobic and electrostatic interfaces that are essential for assembly and ESCRT function. Mutations disrupting these interfaces block MVB sorting in vivo (7-76% efficiency) and prevent protofilament formation in vitro. Charge-swap experiments restore function when complementary mutants are co-expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional importance of protein-protein interfaces is demonstrated by comprehensive mutagenesis (C56-C57), in vitro TEM analysis (C58), and elegant charge-swap rescue experiments (C59-C61). The structural interfaces (C54-C55) are validated by both loss-of-function and gain-of-function genetic approaches, providing strong support for their physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "e329a7ad-b81c-4d1c-8c7c-dd9d0c4e8aca",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The open Snf7 conformation exposes a continuous cationic membrane-binding surface formed by conserved lysine residues (K60, K64, K68, K71, K79, K112, K115) arranged along the extended \u03b12/3 helix. All protomers in the polymer orient this surface in the same direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe a key structural feature linking conformation to membrane binding. The arrangement is directly observed in the crystal structure and is consistent with prior biochemical data on membrane binding (cited as C73). The structural basis for membrane interaction is well-supported by the crystallographic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03b14 can rotate ~90\u00b0 between two open conformations while maintaining similar interactions with the \u03b11/2 hairpin of neighboring protofilaments. Mutations at the \u03b11/2-\u03b14 interface severely impair MVB sorting (9-55% efficiency) and abolish protofilament formation. The \u03b13/4 loop functions as a flexible hinge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The two crystal structures (C64-C65) directly demonstrate \u03b14 flexibility. Functional validation through mutagenesis (C66-C67) and TEM (C67) supports the importance of interfilamental contacts. The proline substitution experiment (C68) provides evidence for the hinge function (C88), though the mechanistic interpretation is somewhat speculative. The buried surface area calculation (C87) is consistent with the DEER data showing weak interfilamental contacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9e9a442f-5cf6-44f1-9c4a-f389d6da83e5",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CONSURF analysis identified seven highly conserved regions in Snf7core that map precisely to functionally assigned regions for polymer assembly and membrane interaction, demonstrating evolutionary conservation of both protein-protein and protein-membrane interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conservation analysis (C69-C70) provides independent validation that the structurally and functionally characterized interfaces are evolutionarily important. The mapping of all seven conserved regions to functional sites (C70) strengthens the biological relevance of the structural findings. Claims C92-C93 appropriately conclude evolutionary conservation based on the CONSURF data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "5936f21c-69f3-48c3-88c6-200a6ca97b9e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Normal mode analysis demonstrates that a linear Snf7 filament can bend into a ~70 nm diameter, ~62 nm pitch three-dimensional superhelix without major structural rearrangements, with cationic membrane-binding surfaces oriented outward to stabilize negatively curved membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the normal mode analysis (C71-C72) provides a plausible model for how linear filaments could form helical structures observed by TEM, this is a computational prediction rather than direct experimental evidence. The model is consistent with prior TEM observations (cited in C71) but lacks independent experimental validation. The biological relevance of this specific conformation remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A detailed 'lifecycle' model for Snf7 activation and polymerization is proposed: cytoplasmic Snf7 exists in dynamic equilibrium between open and closed states; Vps20 nucleates open Snf7 on endosomes; the extended \u03b12/3 helix presents a membrane-binding surface; the ANCHR motif stabilizes membrane binding; and endosomal recruitment triggers cooperative Snf7 polymerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This mechanistic model (C94-C98) integrates the structural findings with prior knowledge, but several steps remain speculative. While the open/closed equilibrium is supported by DEER data (C47), the specific nucleation mechanism (C95), the role of the ANCHR motif (C97), and the 'domino effect' (C98) are inferences that require additional experimental validation. The model is reasonable but not fully demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A model for ESCRT-III-mediated membrane remodeling is proposed where the Snf7 filament sculpts the vesicle neck interior, with the ANCHR motif stabilizing positive curvature at the rim and the helical polymer stabilizing negative curvature at the neck circumference, concentrating cargo as the filament elongates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This membrane remodeling model (C113-C117) is explicitly presented as a proposal and integrates structural data with prior localization studies (C114). However, the specific mechanisms for curvature stabilization (C115-C116) and cargo concentration (C117) are speculative and lack direct experimental support. The model is plausible but requires validation through additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on ESCRT function, composition, and prior structural knowledge is presented, including the diverse cellular roles of ESCRTs, the composition and assembly pathway of ESCRT-III, the unique topology of ESCRT-mediated membrane remodeling, and previous structural characterization of ESCRT-III subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C38) provide established background knowledge supported by appropriate citations to prior literature. They accurately represent the state of the field and provide necessary context for the current work. The claims about technical challenges (C30-C31) appropriately motivate the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f147db9e-68d5-48da-922e-8469821ca7b5",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details for protein purification, DEER spectroscopy, and liposome reconstitution are provided, including the rationale for studying Snf7core and the specific experimental conditions used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims (C73, C82-C83) are well-documented and provide sufficient detail for reproducibility. The choice to study Snf7core (C73) is appropriately justified based on prior work showing that core-core and core-membrane interactions are primary determinants of assembly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of prior structural and functional studies on ESCRT-III subunits and comparison with other membrane remodeling systems (FtsZ) is presented, along with speculation about alternative activation mechanisms in different cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These discussion points (C89-C110) appropriately contextualize the findings within the broader literature. The comparisons to prior structures (C89-C91, C100) and to FtsZ (C102-C106) are accurate. The speculation about alternative activation mechanisms (C109) is clearly identified as such. The discussion appropriately acknowledges what is known versus what is inferred.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "9a55dd90-143a-41cd-81f3-903cec730eb3",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ILVs lack outer vesicle coats yet show consistent diameters, suggesting ESCRTs regulate vesicle size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observation (C111) is established knowledge in the field, and the inference about size regulation (C112) is reasonable, though the specific mechanism remains to be determined. This provides appropriate motivation for understanding ESCRT-III structure and function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    },
+    {
+      "id": "0eb5ee8e-63f0-449d-90f2-26abd37a4da2",
+      "content_id": "a4725394-db7c-40ec-9f20-03d665dfb1ff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Structural coordinates have been deposited in the Protein Data Bank under accession codes 5FD7 and 5FD9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Data deposition (C118) is appropriately documented and enables community access to the structural data, supporting reproducibility and enabling future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:44.359364Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9facd98b-96b3-4a2e-883c-83f392236faf",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "fa0cb135-aaec-42bd-a05f-45c8f772db13",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "bec82136-d597-44ef-b323-c53f1084e7f7",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "2185aacf-7627-4f49-9584-52fa1ca88ebe",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "ccd13ad9-3355-4620-9fb0-1dae1fa1151e",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "02c67b9f-4f65-487b-a8eb-065eb963ccd8",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "e7fdece7-4d24-483d-a9c8-9d7d21c2d31c",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "7d13f848-3446-4e79-9635-5d529ea0c210",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "d473cdd6-ba7e-46c1-99db-af0cb9231956",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "9fe9a828-c0f5-4b89-b432-751a2f0994d1",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "d3881b30-4099-4f1a-b216-f428455c3a7e",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "5d86dbcf-ed19-4d73-b377-189f710f5fd8",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "dd1745dd-7b44-4d7c-bd1a-ffcc1f12f776",
+      "result_id": "fcf5f6d8-f5fd-4850-8016-129d90165886"
+    },
+    {
+      "claim_id": "b87c0625-8800-413d-b4dc-9e82a9756c2e",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "cf6e057b-1529-45b0-856f-7eec88ccc2c3",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "62f3d2cc-ef04-4cee-96f8-e6c43a009080",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "d46936d3-7af5-4f7d-811d-58a7c54a370a",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "1300554e-3b20-48b7-ba95-0ba5bbca6ec8",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "3681775d-081e-4a52-a0ec-80d3f8f889a2",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "ff1a17c2-cec0-42df-a75a-bb36d0a50bbe",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "b6c8fd34-a358-42b8-af3b-dc42338d376f",
+      "result_id": "1e12bdb3-318a-432e-b5f4-3d803acec81a"
+    },
+    {
+      "claim_id": "d3742ebc-bc25-4205-81da-3aa4256e492b",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "bb175f33-885e-438a-b428-bbc9710966cd",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "b6f5791b-21ee-4763-b017-e676a2a059e2",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "180cbbe4-5a97-43b7-999f-01c787efcea1",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "1d9b1972-e427-4d5f-beb4-ebab883b136b",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "07aab34c-d3a8-4fa4-82a3-8ab6fd3b8ac3",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "0c15e766-f80e-4dc9-9f65-63399547b258",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "b89caf84-737c-4bfe-b792-46775562cdc4",
+      "result_id": "ec1c2457-6136-4647-8de9-25bffb3dcd4b"
+    },
+    {
+      "claim_id": "41113bee-03c5-4dc3-bd33-c7ff122822be",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "28c79c47-0d6c-40ec-92a0-4559f8f92d54",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "d34fc803-66fe-4f0b-9350-19010a7fb66f",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "4b018194-afa7-4d3e-9d79-5ce6ca273b4c",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "55b6eb9b-cc6f-40e7-9534-0cc1111d8595",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "379f9d7c-b3d8-4982-a259-ad19d6abb3a9",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "febedde6-d645-428f-8139-8a9820a28f3f",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "c587af95-ab5f-40a7-88c8-5a93978960df",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "28e1b468-c84c-4223-ae35-5b4f157b778c",
+      "result_id": "0552c452-2ef1-4470-887a-c22e3f4510fc"
+    },
+    {
+      "claim_id": "e7038862-1200-45d4-b08e-26e4e1857502",
+      "result_id": "e329a7ad-b81c-4d1c-8c7c-dd9d0c4e8aca"
+    },
+    {
+      "claim_id": "8d9f2bbd-ce90-45fb-b656-1cd910e1155f",
+      "result_id": "e329a7ad-b81c-4d1c-8c7c-dd9d0c4e8aca"
+    },
+    {
+      "claim_id": "6db48a99-317c-45a0-95f4-6bcb98bbac76",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "40985e25-cdee-41dd-9916-6771b1dc44b6",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "8920ab81-ec17-4ad0-ac9a-7fa1812a13aa",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "7c824f27-b1b5-4ac0-9128-8ca570814c07",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "0da3f884-5079-43b3-b8a8-07f928cb1ac0",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "110d2238-c74b-48cf-b119-aa8cd409e6ec",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "552eb1fc-df0d-4398-b64d-06aaa93e9997",
+      "result_id": "4ac8ef7c-5c4a-4c6f-9eb2-591c3aa40c82"
+    },
+    {
+      "claim_id": "aab455ec-b384-485f-a796-cfd984a8ca68",
+      "result_id": "9e9a442f-5cf6-44f1-9c4a-f389d6da83e5"
+    },
+    {
+      "claim_id": "686e3dd3-e8e5-4aeb-89df-2d14471155bf",
+      "result_id": "9e9a442f-5cf6-44f1-9c4a-f389d6da83e5"
+    },
+    {
+      "claim_id": "9cdbe56b-5f4e-410b-aa3b-8e7ff76bfc35",
+      "result_id": "9e9a442f-5cf6-44f1-9c4a-f389d6da83e5"
+    },
+    {
+      "claim_id": "6d8aea15-0e85-43d0-8a16-54f329a8a9a2",
+      "result_id": "9e9a442f-5cf6-44f1-9c4a-f389d6da83e5"
+    },
+    {
+      "claim_id": "3de5f655-aa3c-4f47-a677-1ee781d8ec9d",
+      "result_id": "5936f21c-69f3-48c3-88c6-200a6ca97b9e"
+    },
+    {
+      "claim_id": "5a564c17-0697-44d1-b5d3-7571c5ce518b",
+      "result_id": "5936f21c-69f3-48c3-88c6-200a6ca97b9e"
+    },
+    {
+      "claim_id": "1a0df955-28bd-4efd-834e-533a5ec7fc81",
+      "result_id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8"
+    },
+    {
+      "claim_id": "8ce97de1-d91e-47d1-bce0-26ccf2da0bcc",
+      "result_id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8"
+    },
+    {
+      "claim_id": "89802511-3d12-4037-b68f-cb22caa01506",
+      "result_id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8"
+    },
+    {
+      "claim_id": "d350cc97-9652-48d4-b4f1-2f2da86a25c2",
+      "result_id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8"
+    },
+    {
+      "claim_id": "dc087f97-0d9a-4edf-9519-f423f5987f86",
+      "result_id": "29b775a6-2a61-4c3f-9511-b3f47298b1b8"
+    },
+    {
+      "claim_id": "aee5e041-a56a-43f6-9b81-3906b196c317",
+      "result_id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e"
+    },
+    {
+      "claim_id": "9061f2fa-1953-452d-9884-0bcb4ad74909",
+      "result_id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e"
+    },
+    {
+      "claim_id": "82acb4c3-15e9-46bd-bf16-ffc8eb8af163",
+      "result_id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e"
+    },
+    {
+      "claim_id": "362b0ad7-8929-4f25-8520-81c3ffe84fbf",
+      "result_id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e"
+    },
+    {
+      "claim_id": "cce25f8d-4f2f-49cb-bf87-9bacdb760635",
+      "result_id": "6c44d0f3-75b2-4459-9b22-7ff868ac3d7e"
+    },
+    {
+      "claim_id": "5ae598be-a3a6-4aa1-9a68-2b1eedbc4d23",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "162777d8-b8ec-46e4-914c-5d58fa9eee46",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "dcfa1723-3257-4055-a72a-43e33d051e68",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "e7e3e742-bf3e-458f-9521-70d0cf78069f",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "1c6b524d-2a3f-4706-8dfc-8f566bc60cd4",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "cf42512f-3230-4d32-b184-14dd9e66b8cd",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "af32d748-b261-4948-a0d5-19d4cec2e642",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "c4ac671a-0beb-45e8-a1bb-eafb8b26e6da",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "6713d44d-cfeb-4d70-af8f-d589c3e74639",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "3583ecdb-8ffe-4cfd-b4a0-ff279ae08345",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "691c93b3-3fe0-4170-bb55-b47e9dc80646",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "32611d39-0355-43b9-8cfe-9ba68a8e3de5",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "de6cb900-5f34-4d31-8415-c172ba56d8a9",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "da752302-c4da-40c8-bfe1-4c345f345d4a",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "2f40189e-4e8a-45a2-bb06-487e80737278",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "55e374f6-3b04-42b9-8385-439a4005942a",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "16ff1b76-45c0-4cf5-84da-72c4ae56530d",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "14f3f81d-32eb-4143-923b-5d3dff53a17d",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "bec6aecc-f080-47ae-a697-afbc2bef4fdf",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "266e0f00-50dd-4395-9a0b-df6eec258d16",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "a38221a2-03a4-47f0-804b-cc49a30661c2",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "676a4ba7-eb0c-4181-8f3f-8e8ef5767ad7",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "d842c512-431d-498c-9acc-42be697335fa",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "2d704ff2-a99b-49e2-97d0-a7d76fdc4e97",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "ad7e1c21-26f9-4a45-a6c2-53325a3479d5",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "67d742ea-37a4-4583-b677-96ce10f8e31c",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "f25d2502-c45e-4661-bbb4-8e233e6a7d5c",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "59e66e99-114d-4de1-8547-e88630f9a2a9",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "37cc6107-0365-40d5-9da4-859cb52d512a",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "34f1e07b-2586-4d88-b884-8adaeaf107ad",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "6c9ed28a-f3d7-4482-aa48-dd8c7f4f258f",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "5e50a763-247e-4a90-84f5-0e3c364ad605",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "cb20347c-8b7e-4f0c-9733-cb878e9760ff",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "4da42458-7a11-4abe-8783-c052f0d06d62",
+      "result_id": "07ca4ace-d85b-4c17-ba5e-5132c29348f3"
+    },
+    {
+      "claim_id": "4356ccdc-1ed1-43ab-8add-a5b2252e2786",
+      "result_id": "f147db9e-68d5-48da-922e-8469821ca7b5"
+    },
+    {
+      "claim_id": "6e6be9fa-3436-4c99-b086-fcde5ca0a103",
+      "result_id": "f147db9e-68d5-48da-922e-8469821ca7b5"
+    },
+    {
+      "claim_id": "6709d8c9-d9ea-450a-ab6f-0f9d56b21234",
+      "result_id": "f147db9e-68d5-48da-922e-8469821ca7b5"
+    },
+    {
+      "claim_id": "f47317e4-e03a-4326-9614-7a7d6ad1d0bd",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "d90ea6c8-413f-4819-a3b7-369fdcdedcf2",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "bd8ab616-c8c2-40e3-84e3-162d07bab81c",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "8d9fae5a-6422-4bd6-a1af-744435c681a7",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "8300e5c1-1261-4a1b-852a-69d96f4a5fb6",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "b30202c4-842a-4f76-96f1-1a03e4cab215",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "0c2e9253-d1af-4e52-a60f-d1538e3b5609",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "55d5fff7-5a00-46a0-a911-4601ab6e7bfc",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "49287690-e65b-40f5-a477-43924783d2ef",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "3f7136da-d435-4fb4-9109-1e4b4a084cf2",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "ed2d50b4-b4b5-486f-bcf8-8135ed6e90f6",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "273e6047-cd89-477f-8b00-227b5b0f252e",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "48c24ffb-fb94-43aa-a127-11f44c97108b",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "60a8dc0d-620a-47bb-b4db-3eb6427d4f50",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "0348d79f-6a0e-433e-8eb3-40ca86190e24",
+      "result_id": "f64d7adc-fa07-4872-b19f-261cc1c4bfd1"
+    },
+    {
+      "claim_id": "6571621e-d4cc-4af2-a4ec-ef2afdb6478b",
+      "result_id": "9a55dd90-143a-41cd-81f3-903cec730eb3"
+    },
+    {
+      "claim_id": "44e49fdd-4760-4be7-a68e-b5e65a75030b",
+      "result_id": "9a55dd90-143a-41cd-81f3-903cec730eb3"
+    },
+    {
+      "claim_id": "f533d6b5-0a94-4119-8fbd-345fc8aa03c2",
+      "result_id": "0eb5ee8e-63f0-449d-90f2-26abd37a4da2"
+    }
+  ],
+  "comparisons": []
+}

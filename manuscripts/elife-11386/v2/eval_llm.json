@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Rats were trained on a duration categorization task where they judged intervals as long or short, with performance declining near the 1.5 s category boundary. Six male Long-Evans rats were used, with three for neural recordings and three for pharmacological manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe the behavioral task design and performance, supported by Figure 1a-c. Claims C84-C86 provide methodological details about subjects and ethical approval. The behavioral paradigm is well-documented with clear task structure, reward contingencies, and psychometric performance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Striatal neurons recorded from dorsal-central striatum displayed diverse firing patterns during the task, with 57% showing preference for either short (36.7%) or long (20.1%) intervals. A total of 433 cells from 37 sessions across 3 animals were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe neural recording results supported by Figure 2 and ROC analysis with appropriate statistical testing (permutation test, p<0.05). Claims C87-C96 provide detailed methodological information about recording procedures, inclusion criteria, and sample sizes. The results are consistent across all three subjects (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Neural dynamics of short- and long-preferring subpopulations predicted animals' choices on near-boundary trials, with faster evolution leading to long judgments and slower evolution leading to short judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe choice-predictive neural dynamics shown in Figure 2g-h. The temporal evolution of population activity differs systematically based on the animal's subsequent choice, providing evidence that neural state predicts behavior. This is a key finding linking neural dynamics to perceptual decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "For sessions with larger simultaneously recorded populations (upper tercile), neurometric and psychometric performances were strongly correlated (r\u00b2=0.76, p<0.001), demonstrating that striatal ensembles could judge duration as well as the animal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 describe the neurometric analysis shown in Figure 3a-c. The strong correlation between neural and behavioral performance is quantified with appropriate statistics. However, the analysis is restricted to the upper tercile of sessions by population size, which may introduce selection bias. The claim that ensembles could judge \"as well as\" the animal is supported for these larger populations but may not generalize to smaller ensembles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Neural categorization performance was not simply related to the animal's immediate sensorimotor state, as videometric analysis showed consistently poorer performance than neurometric analysis during the interval, with neural activity leading behavioral state by 200-400 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 describe the videometric control analysis shown in Figure 3 and supplements. The time-shifted correlation analysis (C47) provides evidence that neural signals precede behavioral manifestations. However, the videometric analysis has limitations: it only captures visible movements and may miss subtle behavioral correlates. The claim that neural activity reflects \"internal neural representation\" (C49) is an inference that, while reasonable, goes beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Population state evolved continuously during intervals, and when population state at stimulus offset had advanced more/less along the mean trajectory, animals were more likely to judge intervals as long/short, respectively, with effects strongest near the category boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 describe trajectory projection analysis shown in Figure 3f-g and supplements. The analysis demonstrates that trial-by-trial variations in how far population state has progressed predict behavioral choices. However, the analysis involves excluding 40% of trials as outliers, which could bias results. The claim that this represents \"elapsed time\" (C55) is an inference supported by the data but requires the assumption that trajectory progression maps linearly to time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Network state ran ahead or behind depending on whether animals judged near-boundary stimuli as long or short, and decoded estimates of time from population activity ran faster/slower corresponding to long/short judgments, demonstrating choice probability in the neural representation of time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe trajectory and decoding analyses shown in Figure 4. The Bayesian decoder analysis demonstrates that neural population state encodes time information that correlates with behavioral choices. The cross-validated approach is appropriate. However, the decoder was trained on correct trials and tested on both correct and incorrect trials, which could introduce circularity. The claim that judgments \"would match those of the rats\" (C61) if this information were read out is an inference, though well-supported by the neurometric analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Bilateral muscimol infusions into dorsal striatum significantly reduced duration sensitivity (psychometric slope decreased from [1.03, 1.20] to [0.28, 0.67], 95% CI) while animals otherwise performed normally, demonstrating that striatal activity is necessary for duration judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C67 describe the muscimol manipulation results shown in Figure 1c, with detailed methodology in C97-C101. The pharmacological manipulation shows a specific effect on timing sensitivity with appropriate controls (interleaved saline sessions). However, C68 acknowledges important limitations: muscimol could affect reward processing or memory for task rules rather than timing per se. The claim of necessity (C66-C67) is therefore uncertain without additional controls to rule out these alternative explanations. Different muscimol concentrations were used across animals (100 vs 300 mg/L), which is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Striatal dynamics predicted duration judgments, with simultaneously recorded ensembles judging duration as well as the animal. The speed of striatal population state changes supports animals' ability to judge time, forming a central neural representation that guides duration decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study, synthesizing results from neural recordings (C2, C71), neurometric analysis (C3, C72), videometric controls (C73), trajectory/decoding analyses (C5-C6), and pharmacological manipulations (C74). The convergent evidence from multiple complementary approaches (correlational neural recordings, population decoding, behavioral controls, and causal manipulations) provides strong support for the central claim. However, the causal claim (C74) is somewhat weakened by the acknowledged limitations of the muscimol manipulation (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work has identified temporal dynamics in multiple brain regions, but whether such representations inform duration judgments or merely covary with time was unknown. The striatum has been implicated in timing through multiple lines of evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18 cite established knowledge about the striatum and timing signals in various brain regions, supported by appropriate citations. Claims C14-C15, C19 identify the knowledge gap addressed by the current study. These background claims appropriately contextualize the work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The averaged activity patterns of short- and long-preferring neurons resemble moment-by-moment reward likelihood for choosing short or long, similar to signals previously observed in parietal cortex during timing tasks and striatum during value-based decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 makes an inference comparing neural activity to reward contingencies (Figure 1b vs Figure 2f), which is reasonable given the temporal profiles. Claims C36-C37 appropriately cite prior work showing similar signals. This interpretation is plausible but remains somewhat speculative as the study does not directly test whether these signals represent reward expectation versus time per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study addresses a gap in the literature by comparing population clock speed with behavioral judgments. The findings have implications for understanding how striatal timing signals could inform action selection through basal ganglia circuitry, though the mechanisms generating these dynamics remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C69-C70 provide theoretical context and identify the study's contribution. Claims C75-C83 discuss implications and future directions. These are appropriately framed as speculation (C76, C80-C83) or cite relevant anatomical knowledge (C77). The discussion appropriately acknowledges limitations and suggests future research directions without overstating conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "1c11bee3-24cc-4462-b107-f2a66a6f0014",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:26:03.359472Z",
+    "updated_at": "2025-11-30T00:26:03.359472Z"
+  },
+  "content": [
+    {
+      "id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "submission_id": "1c11bee3-24cc-4462-b107-f2a66a6f0014",
+      "content_type": "manuscript",
+      "content_text": "# Uncertainty leads to persistent effects on reach representations in dorsal premotor cortex\n\n## Authors\n\n- Brian M Dekleva<sup>1</sup>\n- Pavan Ramkumar<sup>2</sup>\n- Paul A Wanda<sup>3</sup>\n- Konrad P Kording<sup>1</sup>\n- Lee E Miller<sup>1</sup> ([ORCID: 0000-0001-8675-7140](https://orcid.org/0000-0001-8675-7140)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering McCormick School of Engineering, Northwestern University Evanston United States\n2. Department of Physical Medicine and Rehabilitation Feinberg School of Medicine, Northwestern University Chicago United States\n3. Department of Physiology Feinberg School of Medicine, Northwestern University Chicago United States\n4. Department of Engineering Sciences and Applied Mathematics Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvery movement we make represents one of many possible actions. In reaching tasks with multiple targets, dorsal premotor cortex (PMd) appears to represent all possible actions simultaneously. However, in many situations we are not presented with explicit choices. Instead, we must estimate the best action based on noisy information and execute it while still uncertain of our choice. Here we asked how both primary motor cortex (M1) and PMd represented reach direction during a task in which a monkey made reaches based on noisy, uncertain target information. We found that with increased uncertainty, neurons in PMd actually enhanced their representation of unlikely movements throughout both planning and execution. The magnitude of this effect was highly variable across sessions, and was correlated with a measure of the monkeys\u2019 behavioral uncertainty. These effects were not present in M1. Our findings suggest that PMd represents and maintains a full distribution of potentially correct actions.\n\n## Introduction\n\nEach motor action we perform reflects only one of the many available or considered actions. In some situations, the full set of potential actions comprises a set of discrete choices (e.g., which of these three apples should I pick?). In these cases, the task for the sensorimotor system is to evaluate each option and decide which will lead to the most favorable outcome. However, these 'target selection' situations represent only one type of motor related decision-making. In many other scenarios the sensorimotor system cannot simply select between multiple explicit options, but instead must estimate the best action based on continuous \u2013 and often noisy \u2013 sensory information and learned experience. Reaching toward a familiar object seen only in the peripheral vision, or under poor illumination is one such example.\n\nThough target selection represents only one type of sensorimotor task, it dominates the current literature on neural correlates of motor-related decision making. This is true for both\u00a0eye movements (Basso and Wurtz, 1997; Britten et al., 1996; Fetsch et al., 2011; Newsome and Britten, 1989; Shadlen and Newsome, 2001) and reaching (Bastian et al., 2003; Cisek and Kalaska, 2005; Coallier et al., 2015; Messier and Kalaska, 2000; Thura and Cisek, 2014). These studies vary significantly in the methods by which they provide cues to elicit a motor response. The cues may indicate different parameters of the action, such as the direction or extent of the movement (Bastian et al., 2003; Crammond and Kalaska, 1994; Gail et al., 2009; Messier and Kalaska, 2000; Welsh and Elliott, 2005). They can be discrete (Meegan and Tipper, 1998; Thura and Cisek, 2014; Wood et al., 2011) or continuous (Gold and Shadlen, 2001; Hern\u00e1ndez et al., 2010; Resulaj et al., 2009), and can even span different sensory modalities (Hern\u00e1ndez et al., 2010; Romo et al., 2004). However, all share a common characteristic: the action is directed towards one of several mutually exclusive targets. This mutual exclusivity is a constraint specific to the task of target selection and does not exist in target estimation, since no explicit options are presented. It is therefore not obvious how the results from target selection tasks may or may not extend to the case of target estimation.\n\nIn both target selection and estimation, there is some degree of uncertainty in the decision making process as well as in\u00a0the final decision itself. This uncertainty largely depends on the ambiguity of the available cues. If the task includes a completely unambiguous cue indicating the correct choice, the decision will contain practically no uncertainty whatsoever. For example, one standard multiple-target selection task used in non-human primate reaching studies (e.g., Bastian et al., 2003; Cisek and Kalaska, 2005) briefly presents a monkey with two or more potential reach targets before indicating the correct one. In this situation the animal may be initially uncertain about which target is correct, but that uncertainty vanishes with the disambiguating cue. Variants of this task provide more ambiguous cues and allow the animal to choose one of two targets while still unsure about the correct choice (Coallier et al., 2015; Thura and Cisek, 2014), which\u00a0results in decisions that are made despite a lingering uncertainty.\n\nStudies of reach-related brain areas during target selection tasks have suggested that the dorsal premotor cortex (PMd) plays a significant role in sensorimotor decision-making. Historically, PMd has been viewed as a movement planning area, displaying activity consistent with a representation of upcoming movements to visual targets (Cisek et al., 2003; Shen and Alexander, 1997; Weinrich and Wise, 1982). Later studies showed that these pre-movement representations can include multiple simultaneous potential targets (Cisek and Kalaska, 2005) and reflect motor plans even in the absence of visual targets (Klaes et al., 2011). Furthermore, the representations during multiple-target tasks are modulated by decision-related variables (Coallier et al., 2015; Pastor-Bernier and Cisek, 2011). These more recent results are consistent with an interpretation that activity in PMd modulates with the complexity (or uncertainty) of a motor decision.\n\nIn general, sensorimotor decision-making should take into account the uncertainty present in all task-relevant information sources \u2013 namely the current sensation and prior experience. When sensation provides a highly reliable action cue (e.g., when reaching toward a well-lit, foveated object), it can be used exclusively to plan and execute the appropriate motor output. However, as uncertainty in sensation increases, it becomes more beneficial to combine sensory information with information learned through prior experience. The optimal method for integrating sensory and prior information was formulated centuries ago as Bayes\u2019 theorem (Bayes and Price, 1763). A direct application of Bayes\u2019 theorem states that cues should be weighted in inverse proportion to their variance (Knill and Saunders, 2003; K\u00f6rding and Wolpert, 2006). The Bayes optimal decision will lead to better results than either cue alone, but will still contain a degree of uncertainty.\n\nBayesian models have been used to describe human behavior in a wide array of psychophysical studies, including visual (Knill and Saunders, 2003; Mamassian and Landy, 2001; Weiss et al., 2002), auditory (Battaglia et al., 2003), somatosensory (Goldreich, 2007), cross-modal (Alais and Burr, 2004; Ernst and Banks, 2002; Gu et al., 2008; Rowland et al., 2007), and sensorimotor (Greenwald and Knill, 2009; K\u00f6rding and Wolpert, 2004; Trommersh\u00e4user et al., 2008; van Beers et al., 2002) applications. In these tasks, behavior generally matched the predictions of various Bayesian models of optimal performance, which has been taken as evidence that the brain does indeed incorporate information about the relative uncertainty of various cues when planning and executing movements.\n\nTo probe the effect of target estimation uncertainty on M1 and PMd, we designed a task in which monkeys estimated the location of reach targets using knowledge of the average target location (learned through experience) and noisy visual cues. Although M1 activity appeared to reflect only the direction of the executed reach, we found that the monkeys\u2019 uncertainty about where to reach correlated with changes in PMd activity during both movement planning and execution. The magnitude of these uncertainty-related effects in PMd was spatially tuned. Neurons whose strongest response direction (their preferred direction, or PD) was aligned with the planned reach direction remained largely unchanged, while neurons with PDs opposite the reach direction experienced a significant increase in activity with increased uncertainty. Neurons with intermediate PDs displayed somewhat smaller uncertainty-related effects. The uncertainty-related change in this off-direction neural activity varied considerably across sessions, not only because of experimentally altered prior and likelihood uncertainty, but also apparently because of the monkeys\u2019 own subjective uncertainty in their final action decisions. We found that the magnitude of these cross-session activity\u00a0differences correlated with estimates of the monkey\u2019s decision-related uncertainty.\n\n## Results\n\n### Task performance during reaching to certain and uncertain targets\n\nOur goal in this study was to understand the effect of uncertainty on arm movement representations in the motor system. To this end, we designed a behavioral task in which monkeys (one\u00a0rhesus macaque, one cynomolgus macaque) made decisions about where to reach using a planar robotic manipulandum, based on the learned history of target distributions and uncertain visual cues. During the first block of trials, the monkeys made center-out reaches with an instructed delay to well-specified (zero uncertainty) targets that were randomly distributed across eight locations (Figure 1A, top). In the second block of trials, the target locations were randomly drawn from a circular normal (von Mises) prior distribution centered on a single direction that remained constant for the remainder of the session. Additionally, the monkey did not receive veridical feedback about the location of the target, but instead saw a noisy distribution of five (monkey M) or ten (monkey T) lines (Figure 1A, bottom). These lines were drawn from a likelihood distribution \u2013 also von Mises \u2013 centered on the correct target location, providing the monkey with noisy information about the target location. Each session contained at least two likelihood distributions of low and high variance, randomly interleaved across trials.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig1-v1.jpg)\n\n**Figure 1.:** (A) Monkeys made planar center-out reaches with instructed delay to visual targets. Illustrations on right show target locations (black) and reach trajectories (gray) for trials in the center out and uncertainty blocks for an example session. In the center-out block, targets were distributed uniformly across eight directions and were cued with no uncertainty. In the uncertainty block, targets were sampled from a von Mises distribution and cued with stochastically sampled lines with either low or high variance. (B) Scatter plots of cue centroid versus reach direction for three sessions, with each dot representing a single trial. Under high uncertainty, the endpoints reflected an increased bias toward the average target location \u2013 indicated by a reduction in slope \u2013 and increased variability surrounding the fit line. (C) With the exception of two datasets from monkey M, fits to the behavioral scatter plots reveal reduced slope (negative \u2206cue weighting) for higher uncertainty targets. All datasets show greater residual variance with greater uncertainty.\n\nTherefore, during uncertainty trials, the monkey had two pieces of information available to estimate the target location: (1) the noisy visual cue and (2) a learned estimate of the distribution of previous target locations. According to Bayes\u2019 rule, optimal performance on the task would require the monkey to use the centroid of the displayed line segments (its\u00a0likelihood estimate) and the average target location (prior estimate), weighted according to the inverse of their variances. In general, this means that using an appropriately weighted sum of both the likelihood and prior estimates will, on average, result in smaller\u00a0errors than either cue alone.\n\nFits to the scatter plot between the centroid of the visual cue and the reach direction reveal the monkey\u2019s relative weighting of the visual cue (the likelihood) and its estimate of the average target location (the prior; see\u00a0Materials\u00a0and methods for more information). A fitted line with a slope of zero would indicate complete reliance on the prior, while a slope of one would indicate reliance only on the likelihood. Panel B of Figure 1 shows several representative sessions. In each, the monkey relied more on the visual cue when its uncertainty was low (blue symbols) than when it was high (red symbols). We summarized the difference in visual cue weighting between the uncertainty conditions (\u2206cue weighting) for each session by subtracting the slopes of the fitted lines. The negative values of \u2206cue weighting in Figure 1C reveal that both monkeys almost always relied less on the visual cue during high uncertainty trials. This indicates that the monkeys combined information from both the displayed lines and the average target location in a Bayesian-like manner to estimate the location of the required reach target.\n\nAlthough there was a general tendency towards lesser weighting of the visual cue when it was more uncertain, there was a great deal of variability in that trend across sessions. In some instances, fits to the two uncertainty conditions revealed large differences in visual cue weighting (Figure 1B red and blue fitted slopes, session 14) while in others the relative weighting was nearly identical (Figure 1B, session 18). Similarly, the uncertainty in the final estimate\u00a0(as measured using the variance of the fit residuals) was sometimes very different between two conditions (Figure 1 inset distributions, session 5) and sometimes nearly identical (Figure 1, session 14). We characterized the total difference in this behavioral uncertainty between the two conditions (\u2206behavioral uncertainty) for each session by subtracting the angular dispersion of the residuals. These two within-session metrics (\u2206cue weighting and \u2206behavioral uncertainty) were very weakly correlated for monkey M and negatively correlated for monkey T (Figure 1C). This variability provided a diverse set of uncertainty-related behavioral effects on which to examine neural activity.\n\n### Neural activity\n\nDuring the center out block of trials (zero uncertainty, eight discrete targets) many neurons in PMd displayed a robust burst of activity directly following presentation of the visual cue, followed by a more moderate, tonic response for the remainder of the delay period (e.g., Figure 2B). We more formally described the population trends by calculating the percentage of neurons tuned in the visual (V), delay (D), and movement (M) time periods. The results for each session are shown in Figure 2C. We performed the same analysis for M1 neurons (Figure 2C, right). In general, M1 displayed a bias toward delay and movement period tuning while PMd showed about equal percentages of tuned neurons for each time period.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig2-v1.jpg)\n\n**Figure 2.:** (A) Each monkey was implanted with two 96-channel microelectrode arrays, targeting the primary motor cortex (M1) and dorsal premotor cortex (PMd). (B) An example raster of a neuron in PMd displaying directional tuning, summarized below in three temporal periods: visual (V), delay (D) and movement (M). (C) Percentage of neurons from each session with significant tuning in each of the temporal periods.\n\nDuring the remaining experimental blocks consisting of uncertain targets, we found many neurons in PMd to be more active during high uncertainty trials than low uncertainty trials (red vs. blue in Figure 3). This effect was most prominent during the delay (D) period, with some carryover into movement (M). Some neurons that had been essentially inactive during the block of zero-uncertainty reaches became strongly active during the delay period of high-uncertainty trials (e.g., c77u1 and c29u1, Figure 3). We also noted that there was a greater tendency for increased activity in neurons with PDs not aligned to the direction of movement (e.g., c31u1 and c87u1, Figure 3). Importantly, we found that greater uncertainty only ever led to increased activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig3-v1.jpg)\n\n**Figure 3.:** (A) Raster plot for an example neuron. Activity is aligned to either the visual cue appearance (left) or movement onset (right). Colors indicate zero (black), low (blue), and high (red) uncertainty conditions. Dark black points indicate target onset, go cue, and movement onset\u00a0(B) Directional tuning for other example neurons. Due to the nature of the task, reaches made during uncertain conditions with a non-uniform prior did not span all directions. Many neurons showed an increase in delay (D) or movement (M) activity as a function of uncertainty. Bounds on the tuning plots represent bootstrapped 95% confidence of the mean estimate.\n\nM1 neurons did not display nearly the same degree of modulation with uncertainty as PMd neurons (Figure 4). We observed neurons with strong directional tuning in all time periods, but this tuning was consistent across all uncertainty conditions. In general, analysis of single unit behavior suggested that M1 activity reflected only the reach direction and was largely unaffected by uncertainty.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig4-v1.jpg)\n\n**Figure 4.:** (A) Raster plot for an example neuron with same conventions as Figure 3. (B) Directional tuning for other example neurons. In general, M1 activity was well-modulated by reach direction, but appeared to be largely unaffected by the uncertainty condition. Bounds on the tuning plots represent bootstrapped 95% confidence of the mean estimate.\n\n### Quantifying effects of uncertainty on firing rates\n\nThe anecdotal observations in Figures 3 and 4 strongly suggest that higher uncertainty leads to increased neural discharge in PMd but not in M1. Additionally, the magnitude of the uncertainty-related effect in individual PMd neurons was dependent on the neurons\u2019 tuning characteristics. A neuron experienced the greatest uncertainty-related activity increase when the reaches were directed away from its preferred direction. To further examine this relationship between tuning and uncertainty-related activity changes, we created spatiotemporal activity maps for both cortical areas in the manner of Cisek and Kalaska (2005) (Figure 5). We binned each neuron\u2019s responses based on the angle between its PD and the reach direction. We then averaged across trials, resulting in population activity profiles centered on reach direction.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig5-v1.jpg)\n\n**Figure 5.:** (A) Spatiotemporal activity maps for PMd and M1. Neurons were binned on each trial by the distance between their preferred directions and the reach direction. Color indicates average change in firing rate from baseline in spikes per second. Left and right plots in each panel are aligned to target onset (T) and reach onset (R) respectively. (B) Average change from baseline for SD and OD neurons in the initial center-out block (zero uncertainty; top) and subsequent blocks with low (bue) and\u00a0high (red) uncertainty targets (bottom). High uncertainty trials resulted in reduced early activity for both SD and OD neurons in PMd, but an increase in OD activity for the remainder of the delay and movement phases. ORTH neurons were omitted for visibility. Error bars represent bootstrapped 95% confidence bounds on the mean estimate. For all plots, PDs were calculated separately for visual, delay, and movement epochs.\n\nIn the zero-uncertainty condition, many PMd neurons displayed a burst of activity directly following cue appearance. This quickly resolved into a clear, maintained representation of the upcoming reach direction throughout the remainder of the delay and movement periods (Figure 5A, top left). In contrast, M1 activity built more slowly as the trial evolved, ultimately producing a strong spatial representation of the executed reach direction (Figure 5A, top right). However, while the recruitment of M1 neurons during low and high uncertainty conditions was similar (Figure 5A, right), the representation in PMd differed significantly across these conditions. During high uncertainty trials, the representation of the reach direction in the delay period\u00a0was present but significantly less distinct, most notably due to increased activity in neurons with PDs far away from the reach direction (Figure 5A, bottom left). We partitioned the neurons into three groups for each trial: same direction (SD; preferred direction within 45 degrees of the reach direction), opposite direction (OD; preferred direction within 45 degrees of the anti-reach direction), and orthogonal direction (ORTH; preferred direction within 45 degrees orthogonal\u00a0the reach direction). After averaging the activity of these populations, it became clear that while both SD and OD neurons in PMd were less active immediately after target appearance in high uncertainty trials, the OD neurons showed higher\u00a0activity in the subsequent D and M periods. Thus the main delay-period\u00a0effect of higher target uncertainty was an increase in the PMd activity in neurons with preferred directions away from the reach direction.\n\nTo summarize this uncertainty effect over sessions, we calculated the difference in average firing rates between low and high uncertainty conditions for SD, ORTH, and OD neurons. In most sessions, ORTH and OD activity during the delay and movement periods was significantly greater in the high uncertainty condition, while SD activity showed little change (Figure 6A \u2013 monkey M; Figure 7A \u2013 monkey T). However, the increase in OD activity varied considerably across sessions. We reasoned that the sessions with the greatest OD activity differences might correspond to the sessions with the greatest differences in the monkeys\u2019 uncertainty. To test this, we calculated the difference in behavioral uncertainty (\u2206behavioral uncertainty) between uncertainty conditions for each session (see\u00a0Materials and methods: behavioral task). By plotting the activity differences as a function of \u2206behavioral uncertainty, we found strong positive correlations for OD activity, but none for SD (Figure 6B \u2013 monkey M; Figure 7B \u2013 monkey T). For monkey M, the slope of the relation increased from SD to ORTH to OD neurons (Figure 6B), consistent with the single-session example shown in Figure 5. We found very similar effects of uncertainty among OD neurons for monkey T (Figure 7B). These findings suggest that as the monkeys became less certain about their decision of where to reach, the representations of less likely reach directions increased.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig6-v1.jpg)\n\n**Figure 6.:** (A) Thin lines indicate the average difference in firing rate between high and low uncertainty trials for individal sessions. Heavy lines mark the mean across sessions. While SD neurons displayed an average change near zero, activity for ORTH and OD neurons was consistently higher for high uncertainty trials (B) Differences in firing rate between high and low uncertainty conditions as a function of the difference in behavioral uncertainty for a single time window 500\u2013700 ms after target appearance. The correlation was weak for same-direction neurons, but strongly positive for orthogonal- and opposite-direction neurons. Thus, the greater the difference in behavioral uncertainty, the larger the difference in activity for ORTH and OD neurons. Marker size indicates the number of contributing neurons for each session (C) The slopes from B calculated during the visual period (50\u2013250\u00a0ms after target appearance; left) and for 100\u00a0ms time windows throughout the delay (middle) and movement (right) periods. The larger effect of behavioral uncertainty on OD and ORTH activity compared to SD activity persisted throughout planning and execution. (D) R2 values for the linear fits in C. Filled symbols in\u00a0C and\u00a0D represent significant correlations, p<0.05. All error bars represent bootstrapped 95% confidence bounds on the mean estimates.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig7-v1.jpg)\n\n**Figure 7.:** Although we had only five sessions for monkey T, by splitting larger sessions into multiple blocks we obained 11 total data points. Specifics are given in Figure 7\u2014source data 1.\n\nWe also found that the tuning-related effect of uncertainty persisted throughout the entirety of movement planning and even after the initiation of the reach. We applied the analysis in Figure 6B to different time periods throughout the trial and plotted the slopes (Figure 6C) and R2 (Figure 6D) relating \u2206behavioral uncertainty to changes in SD, ORTH, and OD activity. For both monkeys, the difference in OD activity first displayed a significant correlation with \u2206behavioral uncertainty during the visual period (Figures 6,7, panels C and D). This effect persisted throughout the remainder of the delay period and the initiation of movement. ORTH activity displayed a similar trend but with a consistently shallower slope, indicating a weaker effect of uncertainty. SD neurons never displayed any significant correlation with uncertainty. For monkey T, only OD activity was consistently correlated with uncertainty throughout the delay and movement periods (Figure 7C,D). Thus it appears that movement representations in PMd remain affected by decision-related uncertainty leading up to and throughout execution of a movement.\n\nThere was also substantial cross-session variability in the M1 firing rates between high and low uncertainty. For monkey M, SD activity was generally lower for high uncertainty trials and OD activity was slightly higher (Figure 8A). However, there was rarely any correlation between the firing rate difference and the difference in behavioral uncertainty. For monkey M, SD activity was negatively correlated with uncertainty at the beginning of the delay period (300\u2013400\u00a0ms following target appearance; Figure 8C). This effect dissipated quickly and was never observed for monkey T. As a result, we conclude that behavioral uncertainty had no significant effect on M1 activity during movement planning or execution.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig8-v1.jpg)\n\n**Figure 8.:** All conventions as in Figures 6,7. Specifics of how we obtained datapoints for monkey T in panels B and D are given in Figure 7\u2014source data 1.\n\nAlthough the correlations between behavioral uncertainty and OD activity in PMd were significant, we considered the possibility that the neural effects were actually driven by the monkeys\u2019 relative weighting of the visual and prior information. To disassociate these two possibilities, we examined the independent correlations of OD activity with each of the two metrics in selectively subsampled groups of sessions. When we chose sessions that caused \u2206behavioral uncertainty and \u2206cue weighting to be highly correlated (further exaggerating their normal relation), both metrics explained the change in OD activity (Figure 9A). However, for subsampled groups of sessions with poor correlation between the two metrics, only \u2206behavioral uncertainty remained well correlated with OD activity (Figure 9B). In fact, differences in OD activity correlated better with \u2206behavioral uncertainty than with \u2206cue weighting for almost any randomly subsampled group of sessions for either monkey (Figure 9C,D). This suggests that the firing rate changes in PMd actually reflect differences in the monkeys\u2019 uncertainty about their\u00a0decisions, rather than the weights applied to either\u00a0visual or prior information leading to those decisions.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig9-v1.jpg)\n\n**Figure 9.:** (A) Eighteen sessions (filled symbols) selected for monkey M in order to increase the correlation between \u2206behavioral uncertainty and \u2206cue weighting (top). Across these select sessions both metrics could explain the observed differences in OD activity (bottom). (B) Alternate subsampling that minimized the correlation between the two behavioral metrics (top). This resampling did not change the correlation between changes in OD activity and \u2206behavioral uncertainty (lower left). However, it eliminated the correlation between \u2206cue weighting and OD activity (lower right). (C) Correlations of OD differences with \u2206behavioral uncertainty (filled) and \u2206cue weighting (open) for 1000 unique 18-session subsamples. Each is plotted against the correlation between \u2206behavioral uncertainty and \u2206cue weighting. The correlation with \u2206behavioral uncertainty was consistently stronger than with \u2206cue weighting. The correlation with \u2206cue weighting was only strong when \u2206cue weighting and \u2206behavioral uncertainty were well correlated with each other. (D) Same as in C, but for monkey T. Each subsample contains six trial blocks. Unlike monkey M, \u2206cue weighting and \u2206behavioral uncertainty were negatively correlated across sessions. Regardless, OD activity in PMd was still positively correlated with \u2206behavioral uncertainty.\n\nAnother way of examining the evolution of target-related information in M1 and PMd is to use the neural activity to predict the monkey\u2019s choice of reach direction. For a representative session, we found that although it was possible to predict the monkey's reach direction from PMd activity, the predictions were consistently less accurate for high uncertainty trials than for low uncertainty trials (Figure 10A,\u00a0left). Accuracy rather rapidly reached these levels within about 200\u00a0ms of target appearance, but then increased more slowly throughout the remainder of the trial. On the other hand, the ability to decode reach direction from M1 improved steadily through the delay period (Figure 10A, right). This was true for both high and low uncertainty trials, with only slightly higher delay-period decoding accuracy for low uncertainty trials. At the time of movement initiation, the M1 decoder was equally accurate for both conditions.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig10-v1.jpg)\n\n**Figure 10.:** (A) The performance of PMd (left) and M1 (right) decoders as a function of time for one example session. Performance is defined as one minus the circular variance of the decoder error. (B) PMd decoder performance in low v. high uncertainty conditions for four 200\u00a0ms time windows spanning target appearance to movement in all sessions for both monkeys. Each point represents a single session from monkey M (closed) or monkey T (open) (C) Same as in B, but for M1.\n\nAcross all sessions, we observed results similar to the single session example. The PMd decoder nearly always performed better during low uncertainty trials than high uncertainty trials (Figure 10B), especially during the visual and delay periods. PMd decoding generally did improve at the time of movement, however the difference in decoder performance between low and high uncertainty conditions remained significant. T-Tests on the performance difference between low and high uncertainty revealed significantly better low-uncertainty performance in all behavioral periods for monkey M (p<0.05) and all except the movement time period for monkey T (discounting sessions with overall poor decoding, see\u00a0Materials and methods). In M1, decoding performance was also slightly better for low uncertainty trials during the visual and delay periods (t-test, p<0.05), although only for monkey M (Figure 10C). This effect of uncertainty was much smaller than that observed in PMd. At the time of movement there was no bias in performance between low and high uncertainty trials. In general, we found decoding from M1 to be more accurate than from PMd, and less affected by uncertainty \u2013 especially at the time of movement.\n\n### Controls\n\nWe considered several alternate explanations for the effects of uncertainty, including differences in the visual stimuli, inhomogeneous distribution of the target prior over sessions, and variations in the kinematics of reaching.\n\nTo test for possible visual effects, we performed three control sessions with a single monkey (monkey M) in which half of the high-uncertainty trials contained an additional, different colored line segment at the correct target location (Figure 11A). These sham trials had almost exactly the same visual properties as high uncertainty trials, but did not actually induce any uncertainty. The monkey learned to rely entirely on the new cue line (Figure 11B). Comparing the difference in activity between actual high uncertainty and sham uncertainty trials, we found that OD (and to some extent ORTH) activity was greater only\u00a0for the actual high\u00a0uncertainty condition (Figure 11C). This suggests that our main finding of uncertainty-related changes in ORTH and OD activity cannot be explained simply as the result of differences in the visual information.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig11-v1.jpg)\n\n**Figure 11.:** (A) Design of a control experiment to test whether the uncertainty-related effect could be explained solely by differences in the visual stimuli between conditions. Half of the trials contained a high-uncertainty cue (top left) and the other half contained sham high-uncertainty trials that included an additional line of a different color to indicate the veridical target location (top right). (B) Reaching errors were much smaller for the sham trials, indicating that the monkey learned to rely on the veridical cue. (C) Thin lines indicate the average difference in firing rate between actual and sham uncertainty trials for individal sessions. Heavy lines mark the mean across sessions. OD activity was higher during actual\u00a0high uncertainty trials, despite the nearly equivalent visual properties. (D) Control to test whether the neural effects could be explained by differences in the average target location across sessions. We selected two groups of sessions that each contained a consistent average reach direction. (E) Correlations between changes in OD and ORTH activity and \u2206behavioral uncertainty for the two groups of sessions, 500\u2013700 ms after target appearance. OD and ORTH activity within each group of sessions still correlated with \u2206behavioral uncertainty.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14316/elife-14316-fig11-figsupp1-v1.jpg)\n\n**Figure 11\u2014figure supplement 1.:** (A) Example distribution of peak reach speed for high and low uncertainty conditions. (B) Distribution of peak speeds for same session as in A, subsampled to reverse the condition-dependent difference. (C) Plot showing the difference in average peak speed between low and high uncertainty conditions for the full and reverse-sampled datasets. (D) Thin lines indicate the average difference in firing rate between high and low uncertainty conditions for an individal session, subsampled to reverse the trend of peak speed. Heavy lines mark the mean across sessions. (E) Example distribution of reaction time for high and low uncertainty conditions. (F) Distribution of reaction times for same session as E, subsampled to reverse the condition-dependent difference. (G) Plot showing the difference in average reaction time between low and high uncertainty conditions for the full and reverse-sampled datasets. (H) Same as in D. Average differences in peak speed and reaction time cannot explain the neural effect.\n\nWe also considered the possibility that the effects on neural activity resulted from changes in the average target location (and subsequently the average reach direction) across sessions. We tested this possible explanation by separately analyzing groups of sessions with a shared average target direction. Figure 11D shows the distribution of reach directions for two groups of sessions for Monkey M in which the average target location was at either 0 or 90 degrees. Analyzing these two sets of sessions separately revealed a positive\u00a0correlation between changes in OD/ORTH activity and \u2206behavioral uncertainty (Figure 11E) that was very similar to the full data set (Figures 7 and 8).\n\nWe anticipated that both the reaction time and peak speed might be affected by the target uncertainty, and might indirectly give rise to the firing rate changes we observed in PMd. In fact, these differences were rather small, but to test this possibility, we resampled the trials in each session to reverse the sign of the uncertainty effect on either reaction time or peak speed (Figure 11\u2014figure supplement 1). These manipulations had no effect on the correlation between PMd activity and \u2206behavioral uncertainty, indicating that the difference was not simply driven by kinematics.\n\n## Discussion\n\n### Summary\n\nIn this study, we set out to examine the neural effects of uncertainty on the motor system during a target estimation task. We showed that when visual cues of target location were made less informative, monkeys biased their reach direction toward the average target location that they had learned over the course of previous trials (their prior estimate) in a Bayesian-like manner. Activity in dorsal premotor cortex (PMd) changed systematically as a function of the resulting uncertainty in the monkeys\u2019 final estimate of target location, with higher uncertainty leading to higher activity in PMd neurons. This effect was not present in primary motor cortex (M1). The extent to which uncertainty affected the activity of PMd neurons depended on their directional tuning properties. Neurons with preferred directions aligned to the ultimate reach direction showed no correlation with uncertainty, while those with orthogonal or opposite direction tuning displayed significant increases in activity with increased uncertainty. This can be interpreted as an increase in uncertainty causing in increase in the representation of less likely movements directions.\n\n### Representation of the process of target selection versus estimation\n\nThe uncertainty-related effect in PMd was present not only during movement planning, but also during execution \u2013 a result not readily predicted from previous studies. Several studies have recorded from PMd neurons as monkeys chose between multiple potential reach options (Cisek and Kalaska, 2005; Coallier et al., 2015; Klaes et al., 2011; Pastor-Bernier and Cisek, 2011; Thura and Cisek, 2014). Some even included ambiguous cues (Coallier et al., 2015; Thura and Cisek, 2014), which we might expect to induce uncertainty in the monkeys\u2019 decisions. The resulting representations of potential actions in PMd did, in some sense, reflect\u00a0the monkey's\u00a0uncertainty in the choice prior to movement execution. However, in no studies before ours did the activity changes induced by an ambiguous cue persist throughout movement execution. One study that used gradually accumulating evidence to trigger movement choice (Thura and Cisek, 2014) found that prior to movement,\u00a0greater ambiguity in the cue resulted in a stronger representation of the target that was ultimately not selected. They observed no effect on activity corresponding to the selected target, which reached a consistent peak\u00a0about 300\u00a0ms prior to movement initiation. These observations are well in line with our own results. However, at the time of movement initiation they found no ambiguity-related effects\u00a0on\u00a0activity, for either the\u00a0neurons tuned to the selected target\u00a0or the non-selected target. This is at odds with our finding of a persistent effect of uncertainty on the representation in PMd throughout the execution of movement.\n\nThat we did not observe a resolution in the reach representation prior to movement execution may reflect a difference in the decision-making processes associated with target estimation and target selection. Inherent to target selection is the knowledge that the correct action will only be one of several mutually exclusive options. This constraint represents additional task-relevant information that can (and should) be integrated into the decision-making processes within sensorimotor areas like PMd. In a target selection task, reaching anywhere that is not an explicit target will lead to failure. It is therefore\u00a0reasonable for the system to enforce a policy that before initiating a reach, the representation must\u00a0only reflect one of the explicit target options. However, in target estimation tasks there are no such constraints on the executed action, allowing for a broader movement representation.\n\n### Differences in the roles of PMd and M1\n\nThe different neural responses observed during target selection and target\u00a0estimation has important implications for the assumed roles of M1 and PMd. Results from target selection tasks suggest that movement decisions are made within PMd as the\u00a0result of a biased neural competition between potential actions (Cisek, 2007; Gallivan et al., 2016; Pastor-Bernier and Cisek, 2011). This interpretation \u2013 that PMd ultimately decides on the action \u2013 is especially convincing given the\u00a0previous observations that decision-related variables (e.g., cue\u00a0ambiguity, uncertainty, etc.) had no effect on movement representations in PMd at the time of movement initiation (Thura and Cisek, 2014). However, we observed uncertain representations that persisted throughout movement\u00a0execution, which indicates that PMd may\u00a0not necessarily be\u00a0the final step in the motor decision-making process.\n\nOur results suggest that PMd does not\u00a0actually decide which movement to execute, but rather that it\u00a0maintains a continuously updated estimate of the distribution of\u00a0potentially useful actions. This distribution is likely dependent on a number of factors, including current sensory information and prior experience, as well as constraints specific to the task (e.g., selecting between mutually exclusive targets). In our study, the distribution of actions represented in PMd changed according to the monkey's behavioral uncertainty, but\u00a0was\u00a0relatively static within a single trial. At no point did\u00a0the distribution\u00a0resolve into a single unambiguous reach representation. M1, on the other hand, seemed relatively unaffected by uncertainty and consisently reflected the\u00a0direction of the executed reach. These findings imply that PMd is not solely responsible for 'deciding' which movement to execute, but instead contains only a noisy representation of potential reach directions that must be interpreted in some way by downstream areas like M1. Thus, we suggest that the processing that occurs in the connections between PMd and M1 'denoises' the PMd representation to provide a single, unambiguous movement decision.\n\nThe reach decoding results (Figure 10) support the interpretation that action decisions do not arise solely from PMd. Decoding performance\u00a0at the time of movement initiation was\u00a0significantly higher compared to delay-period levels, especially for high uncertainty trials. However, we still observed a consistent\u00a0bias towards better decoding performance on low uncertainty trials. M1, on the other hand, showed a steady increase in reach-related information leading up to movement initiation that was slightly skewed towards better accuracy under low uncertainty. At the time of movement initiation, M1 was able to decode reach direction with high accuracy, regardless of uncertainty condition. From these observations, we speculate that the decision about where to reach is not explicitly determined in PMd, but rather in the connections between PMd and M1. The noisy representation of potential actions in PMd appears to be interpreted in some way by M1, ultimately producing a single unambiguous motor command.\n\nThe\u00a0process by which M1 obtains a final movement representation\u00a0could potentially occur through a maximum a posteriori (MAP) readout of the PMd representation. This kind of mechanism is not only consistent with the results of the current and previous studies, but could potentially explain the neural basis of sensorimotor learning. For example, we would expect that in very high uncertainty conditions (e.g., a novel behavioral task), PMd might retain nearly equal representations of all possible movements. As a consequence, small fluctuations due to noise within PMd would cause large variability in a downstream readout, driving exploration of the environment. As learning progressed and uncertainty decreased, the distribution\u00a0in PMd would narrow and motor output would begin to converge on the optimal movement decision.\n\n### PMd reflects uncertainty in the decision, not the visual cue\n\nOur task varied the monkeys\u2019 uncertainty in target estimation by manipulating both the history of target distribution and the noise in visual cues. We found that PMd activity changed not as a function of the weighting of either of\u00a0those two pieces of information, but rather in proportion to the total uncertainty in the\u00a0final decision. Thus PMd contains uncertainty-related information pertaining to the final action, which encompasses more than just the reliability of the visual cue. Additionally, if uncertainty in visual information were the sole driving force of changes in PMd planning- and execution-related activity, we would have observed very little difference in activity across sessions, since the visual cue properties were largely equivalent for all sessions. Instead, we found that activity modulated with the total behavioral uncertainty, which is a combination of visual uncertainty and prior expectation. This suggests that PMd likely reflects the combined uncertainty of all information sources relevant to a movement decision.\n\n### Comparison with existing theoretical models of uncertainty\n\nThere exist a number of theoretical models that address the potential neural representation of uncertainty (Deneve, 2008; Hinton and Sejnowski, 1983; Hoyer and Hyvarinen, 2003; Ma et al., 2006; Zemel et al., 1998). The predictions from these models encompass a wide range of neural behaviors, including temporal dynamics (Deneve, 2008) and variability in spike timing (Deneve, 2008; Hoyer and Hyvarinen, 2003). Unfortunately, our experimental design prevents us from performing fair and comprehensive tests of these model predictions. For example, our use of a static visual cue and instructed delay limits the potential interpretations regarding dynamic uncertainty codes. For these reasons, we hesitate to make any strong statements about the validity of any given model.\n\nDespite the limitations of our experimental design, our results do bear some resemblance to admittedly simplistic interpretations of a few theoretical models. A probabilistic population code (PPC) model predicts that firing rates across a population should reflect the probability distribution \u2013 high uncertainty should therefore result in lower peak activity and higher non-peak activity (Ma et al., 2006). We did indeed observe an increase in non-peak activity with increased uncertainty, and the spatiotemporal activity plots in Figure 5 do convincingly resemble probability distributions of reach direction. However, we did not see any consistent decrease in the peak activity with increasing uncertainty, which prevents us from interpreting the population activity as representing a true probability distribution. Our findings also argue against the concept of divisive normalization, in which the total activity remains equivalent when representing multiple potential targets (Cisek and Kalaska, 2005; Pastor-Bernier and Cisek, 2011), at least in the context of target estimation.\n\n### Conclusions\n\nOur results provide new insight into the behavior of PMd during movement planning. It is already well established that PMd can simultaneously represent all potential actions when faced with multiple, mutually exclusive visual targets (Bastian et al., 2003; Cisek and Kalaska, 2005). Our results provide the additional observation that PMd also represents and retains a distribution of potential motor plans that are not explicitly presented, but arise as possibilities during uncertain target estimation. The question of why this representation is maintained for the problem of target estimation but not target selection is an interesting one. One possibility is that it is simply an unavoidable result of noisy inputs to PMd. That is, in the absence of explicit reach targets, the fidelity of the representation in PMd may be limited by the quality of available information. On the other hand, maintaining heightened representations of alternative movements in high uncertainty conditions may\u00a0be useful to the sensorimotor system for more rapid error correction or to drive subsequent motor learning. Experiments designed to test these alternatives could help to further our understanding of the role of PMd in movement planning.\n\n## Materials\u00a0and\u00a0methods\n\nAll surgical and experimental procedures were fully consistent with the guide for the care and use of laboratory animals and approved by the institutional animal care and use committee of Northwestern University under protocol #IS00000367.\n\n### Behavioral task\n\nThe monkeys were seated in front of a vertical monitor and controlled an on-screen cursor using a planar robotic manipulandum. The behavioral task involved two or more blocks of trials. In the first block, monkeys performed a basic center-out reaching task with an instructed delay period. The monkey held the cursor within a central target for a random length center-hold period (700\u20131000 ms), after which a target (15 degrees wide) appeared in one of eight well-defined locations, distributed equally around an outer ring (Figure 1A, top). Following an additional random delay period (700\u20131000 ms) the center target disappeared and the monkey received an auditory signal cueing him to reach to the outer target. Upon reaching the outer ring, the cursor froze. If the cursor was within the target, the monkey heard a success tone and received a small amount of juice. Otherwise, the monkey heard a failure tone and received no juice reward.\n\nIn the remaining (uncertainty) trial blocks, the target locations \u03b8 were not distributed uniformly among eight locations as before, but were instead selected randomly from a von Mises (circular normal) prior\n\n$$\nf(\\theta)=\u00a0\\frac{e^{\u03ba\u00a0cos(\\theta\u2212\u00a0\\mu)}}{2\\pi\u00a0I_{0}(\u03ba)}\n$$\n\nThe mean of this prior distribution (\u03bc) was always fixed for the duration of a session, but could vary in width (\u03ba) across trial blocks. Additionally, during uncertainty trials the monkeys did not receive veridical visual cues about the target until the end of the trial. Instead, during planning and execution they were only shown several small lines (five for monkey M, ten for monkey T) sampled from a likelihood distribution (also von Mises) centered on the target location (Figure 1A, bottom). These lines gave the monkey information about the target location, but with different levels of uncertainty depending on the variance of the distribution. Each session contained two different likelihood distributions, which were randomly interspersed across trials. The exact parameters used for each session are provided in Figure 1\u2014source data 1. Upon reaching to the outer ring, the cursor froze and the ambiguous cue lines were replaced with the actual target (15 degrees, all conditions). The monkey subsequently received (or did not receive) reward as in the center-out trial block.\n\nAlthough we directly specified the variance (and therefore uncertainty) in the target distribution and the visual cue, the monkeys\u2019 subjective estimates of those parameters could deviate considerably from their true values. We therefore used the monkeys\u2019 actual responses throughout the session to estimate two values: the monkeys\u2019 weighting of the current visual cue, and the total uncertainty remaining in the monkeys\u2019 final estimate of the required reach direction. To do this, we assumed a Bayesian-like model of cue integration in which the final estimate was the product of likelihood (visual cue) and prior (distribution of target locations) probability distributions. We modeled both of these as von Mises distributions. The product of two von Mises distributions can be approximated by a third, with mean\n\n$$\n\\mu_{3}=\u00a0\\mu_{1}+tan^{\u22121}(\\frac{sin(\\mu_{2}\u2212\u00a0\\mu_{1})}{\\frac{k_{1}}{k_{2}}\u00a0+cos(\\mu_{2}\u2212\u00a0\\mu_{1})})\n$$\n\nTo obtain an estimate of the relative weighting of the visual cue for each uncertainty condition, we substituted the true target centroid location for $\\mu_{2}$, the true average target location for $\\mu_{1}$, and then fit $(\\frac{k_{1}}{k_{2}})$ to minimize the sum of the squared residuals between the model outputs and the monkeys\u2019 actual reach directions. The resulting equation for $\\mu_{3}$ describes the general function relating the centroid of the visual cue and the reach direction. (red and blue lines; Figure 1B). Except for cases in which $|\\mu_{2}\u2212\u00a0\\mu_{1}|$ is very large, this can be suitably approximated by the linear function\n\n$$\n\\mu_{3}\u2245\u00a0\\mu_{1}+\u00a0\\frac{k_{2}}{k_{1}+k_{2}}\u00a0(\\mu_{2}\u2212\u00a0\\mu_{1})\n$$\n\nIn all further analysis, we use the slope term $(\\frac{k_{2}}{k_{1}+k_{2}})$ as a proxy for our estimate of the monkeys\u2019 relative weighting of the visual cue with respect to the summed prior and likelihood uncertainty. Slopes close to one represent high reliance on the visual cue, while slopes close to zero represent high reliance on the average prior target location.\n\nThe slope metric described above reveals only the monkeys\u2019 relative uncertainties in the likelihood and prior. It does not contain any information about the total magnitude of uncertainty present in the monkeys\u2019 decisions. We estimated this total uncertainty from the monkeys\u2019 behavior, by calculating the angular dispersion of the residuals from each behavioral fit like those shown in Figure 1B. It is important to note that the behavioral uncertainty can be affected by uncertainty in the estimate of average target location, uncertainty in the visual cue, and potentially other internal variables affecting the monkeys\u2019 behavior that we did not control (e.g., motivation, attention).\n\n### Neural recordings and analysis\n\nThroughout the experiments we recorded from neurons in M1 and PMd (Figure 2A) using chronically implanted 96-channel microelectrode arrays (Blackrock Microsystems,\u00a0Salt Lake City UT). We identified single neurons from each session using offline sorter by isolating clusters within a principle component space projected from the waveform shapes of putative neurons (Plexon Inc., Dallas TX). There was likely significant overlap between sessions of the populations of recorded neurons, but we made no effort to track the identity of neurons across sessions. On each session, we used the activity from the center-out block of trials (zero uncertainty, eight target locations) to characterize the directional tuning characteristics of all neurons. Since many neurons (especially those in PMd) can have complex temporal profiles, we calculated preferred directions (PDs) in three distinct time periods: visual (50\u2013250\u00a0ms after target appearance), delay (300\u2013700\u00a0ms post-target), and movement (0\u2013200\u00a0ms after initiation of the reach) using a generalized linear model with Poisson noise:\n\n$$\n\\lambda=\u00a0exp\u2061[\\alpha+\u00a0\\betacos(\\theta\u2212\\theta^{\u2217})]\n$$\n\nwhere $\\lambda$ is a vector of firing rates across trials, $\\theta$ is a vector of reach directions, $\\theta^{*}\u00a0$\u00a0is the preferred direction, and $\\alpha,\u00a0\u00a0\\beta\u00a0$are scaling parameters. For each neuron, we also obtained confidence bounds on the fit parameters through bootstrapping. A neuron was only considered to be significantly tuned if 95% of the bootstrapped estimates of $\\theta^{*}$ were within forty-five degrees of the mean estimate. Due to the lower neuron count for monkey T, we relaxed this constraint to accept neurons with bootstrapped PDs within ninety degrees of the mean. For all analyses, we used only the preferred directions calculated within the appropriate time period (for example, delay-period tuning for all delay-period analyses). When analyzing a given time period, we excluded neurons without significant tuning in that period. Full details on the numbers of tuned neurons for all sessions is provided in Figure 1\u2014source data 1.\n\n### Single trial decoding analysis\n\nWe used a simple decoding approach based on each neuron\u2019s PD, computed from data collected during the center-out (zero-uncertainty) task. We first divided neurons according to their PDs, creating sixteen bins of 22.5 degrees each. We then averaged the activity of all neurons within each bin (after first subtracting pre-target baseline activity levels) and fit a cosine to the resulting activity profile. The peak of this cosine defined the decoded reach direction. We characterized decoder performance for each uncertainty condition as one minus the circular variance of decoder error. Circular variance is bounded by 0 and 1. Therefore, a performance of 0 represents that the decoder did no better than random guessing, and a performance of 1 represents perfect decoding of the reach direction. This metric is similar to VAF, except it is not normalized by the total variance of the reach distribution. This is important for our dataset, which contained very non-uniform distributions of reach directions. It provides a fair comparison of decoder performance regardless of differences in distributions between sessions or uncertainty conditions.\n\nWe assessed the effect of uncertainty condition on decoding performance by performing t-tests on the distributions of differences between low and high uncertainty conditions for each monkey and time period. For monkey T, low neuron counts made decoding on a trial-by-trial basis much less accurate. Therefore, when assessing biases, we only included sessions in which the decoder performance on low uncertainty trials was greater than 0.5.\n",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "bd342006-baab-4de7-8d7a-a4488d6065f8",
+      "submission_id": "1c11bee3-24cc-4462-b107-f2a66a6f0014",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Michael J Frank, Brown University , United States\n\n## Review text\n\nDOI: [10.7554/eLife.14316.017](https://doi.org/10.7554/eLife.14316.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Uncertainty leads to persistent representations of alternative movements in PMd\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Michael Frank as the Reviewing Editor and Timothy Behrens as the Senior Editor. One of the two reviewers has agreed to reveal his identity: Veit Stuphorn.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports neuronal activity in dorsal premotor (PMd) and primary motor cortex (M1) when monkeys select arm movements with varying degrees of uncertainty about the correct movement direction. The main finding is that in PMd, but not M1, increased uncertainty leads to increased activation of neurons representing the non-chosen arm direction. This work builds on and extends the work by Cisek and coworkers in a number of important ways. First, it indicates that PMd does not represent the decision process, but rather represents the distribution of all potentially correct actions. Second, it provides important information about the way uncertainty is represented in the brain.\n\nEssential revisions:\n\nBoth reviewers agreed that the topic is very timely, the experiment is well designed and has potentially very interesting features, and that the contribution has lots of potential. However, they also highlighted a number of issues that need to be cleared up before we can further evaluate the paper. The comments of the two reviewers are amalgamated below.\n\n1) Fundamental information on the experimental details are lacking. How were the animals rewarded in the different prior and likelihood conditions, what was considered \"correct\" behavior? How did the animals perform in the different conditions (RTs, error rates, endpoint distributions, etc.? Without this crucial information on the task design and behavior it is impossible to interpret the results, e.g. the behavior in Figure 1B and C. Were the prior and the likelihood centroids evenly distributed over all directions? In other words, which percentage of sessions was centered on the 90 degrees direction during the whole course of the training of each animal? Depending on the reward structure in the task and the performance of the animals, the current interpretation could be substantially confounded. If in the end we have to admit that the results can be explained by spatial value-based target preference (via reward expectancy) or overtrained default behavior (reaching to 90 degrees) then the relevance or novelty of the finding could be substantially hampered.\n\n2) The different possible conceptualizations of \"uncertainty\" come rather late in the Introduction; the early Introduction sometimes refers to probabilistic uncertainty for selection among mutually exclusive targets (typical dual target tasks); sometimes it refers to a motor control perspective with blurred target information or just the fact that the target has to be memorized instead of being visible. More precise statements and more adequate references (see specific comments below) would be possible if the different scenarios (target estimation vs. target selection) were clearly distinguished from early on. But in their own interpretation in the remaining manuscript, the authors seem to be not clear about what concept they actually want to discuss. Repeatedly they use nomenclature suggesting that they speak of target selection (e.g. when calling the higher activity of OD neurons during high uncertainty a 'persistent representations of alternative movements') while their task is about target estimation. Moreover, the activity level of OD neurons in this case is still below baseline, which seems difficult to sell as \"representation\" of a potential movement. For such statement, I would need some behavioral indication that the animal ever considers an alternative movement to the one towards the 'blurred' target stimulus. (One should stay skeptical that a biased competition model is invalidated by the presented data if the task does not demand the animal to choose between competing behavioral alternatives, but rather just tries to estimate the one demanded movement most precisely \u2013 I doubt that target estimation and target selection are interchangeable cognitive demands in this respect.)\n\n3) Relatedly, one of the most interesting points in this study is the information we might be able to gain from it regarding the representation of uncertainty. However, in this study the authors just state in the Discussion section that the data do not 'fully explain any of the theories', but are best explained by a probabilistic population code model. This is clearly not sufficient. The author should address this issue more directly and at least report the results of their attempts to test the various uncertainty models. Otherwise, the statement is simply not backed up by evidence and a major source of interest in the manuscript is missing.\n\n4) It did not become clear to me how the results and conclusions precisely relate to the earlier cited study by Bastian et al. (2003). Bastian et al. 2003 recorded in M1, not PMd, but otherwise, didn't they show a collapse in the peaks of the population tuning onto the center of multiple (2 or 3) potential reach targets; different to how the earlier results are discussed here, it seems to me that this earlier finding is not evidence for a simultaneous co-representation of 3 targets in parallel, but could mark an \"average\" target representation or the centroid of a prior or likelihood distribution, similar to here? The manuscript would benefit from a more detailed discussion of earlier findings.\n\n5) Also lacking is information on the way neurons were counted over sessions. Since chronic arrays were used for recording, more information is needed on when a channel was counted as \"neuron\" (I presume spike sorting was applied; does the N in table in supplement also include \"multi-unit\" channels?), and \u2013 more importantly \u2013 how the same channel was used towards the statistics across different sessions.\n\n6) The figures are notoriously lacking information on the N number of data samples going into the analysis, the nature of the error bars/confidence limits shown, the meaning of \"delta\" in the several y-axis showing delta-FR, and whether we look at data from one animal or both animals. This problem culminates in Figure 6\u2014figure supplement 1 showing results for the animal T which do not match (SD conditions) the results of the animal shown in the main manuscript (until then I was unclear about the fact that I looked at data from only one animal in the main figure). But how is the discrepancy between animals resolved, how does it affect conclusions? Is Figure 5 an average of both animals? Why were there only 3 sessions recorded in monkey T despite visible differences in behavior to the other monkey (Figure 1C)?\n\n7) The off-target activity increase with target uncertainty seems not to be motivated apriori by Bayes models of uncertainty processing; actually, it remains elusive how well the results fit to corresponding model predictions, e.g. on how prior and likelihood distributions should be integrated and how each should affect behavior/neural tuning. The finding of OD activity increase seems rather unspecific and less conclusive than it could be with this experimental design and theoretical framework with which the study is motivated.\n\n8) The authors find that PMd neurons that encode the non-chosen direction increase their activity under increased uncertainty, while the PMd neurons that encode the chosen direction show unchanged activity. This activity pattern is interesting, because it argues against divisive normalization as has been postulated by a number of authors, including Cisek (Pastor-Benier & Cisek, 2011). Specifically, the increased activity in the non-chosen action representing neurons should have diminished the activity in chosen action representing ones. The authors should discuss this point.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Uncertainty leads to persistent effects on reach representations in dorsal premotor cortex\" for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens (Senior editor), Michael Frank (Reviewing editor), and two reviewers, one of whom is Veit Stuphorn.\n\nBoth reviewers agreed that the manuscript has been substantially. The major issue is a request by Reviewer 1 to do a decoding analysis, the results of which will be informative about the interpretation offered (even if that interpretation is tentative and not completely essential).\n\nReviewer #1:\n\nThe authors have done a very good job in clarifying the main conceptual issues in the paper. I have one remaining question. I would agree with the authors that their findings indicate that PMd might not be the final step in skeletomotor decision-making. However, it would be useful to see a decoding analysis. Taking activity recorded in PMd and M1, how well can the ultimate arm movement direction be decoded at the various times in the trial in the different trial periods. If the hypothesis of the authors is correct, one would expect a strong and consistent encoding of chosen direction in M1 (potentially also earlier than in PMd). On the other hand, PMd should not or only very weakly encode chosen action, in particular in the high-uncertainty condition. Given the data in Figure 5, I am confident that the M1 prediction will turn out to be true, but I am not sure about PMd. How would the hypothesis of the authors be affected, if PMd would also encode chosen direction? Could PMd and M1 just be links in a set of cascading networks in which the initial selection simply gets sharpened?\n\nReviewer #2:\n\nThe authors did an excellent job in revising the manuscript. They re-wrote substantial parts of the manuscript to address my main request for a better distinction between uncertain selection among well specified targets and target uncertainty, thereby making this topic a main theme of the paper which is consistently and very nicely dealt with throughout.\n",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21dc1f0f-81c9-4a1b-a7ef-373b6b246188",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C1",
+      "claim": "Dorsal premotor cortex (PMd) appears to represent all possible actions simultaneously in reaching tasks with multiple targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In reaching tasks with multiple targets, dorsal premotor cortex (PMd) appears to represent all possible actions simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established finding from prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3fcde9c7-3ec8-4121-b9d3-97f99219ffcb",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C2",
+      "claim": "With increased uncertainty, neurons in PMd enhanced their representation of unlikely movements throughout both planning and execution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with increased uncertainty, neurons in PMd actually enhanced their representation of unlikely movements throughout both planning and execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e5c74c14-35f6-4ee6-820a-afcccefd9560",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C3",
+      "claim": "The magnitude of uncertainty-related effects in PMd was highly variable across sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this effect was highly variable across sessions, and was correlated with a measure of the monkeys' behavioral uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through cross-session analysis in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3a39e880-e246-4b0b-a43c-fb6f89d9f21c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C4",
+      "claim": "The magnitude of uncertainty-related effects in PMd was correlated with a measure of the monkeys' behavioral uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this effect was highly variable across sessions, and was correlated with a measure of the monkeys' behavioral uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through correlation analysis in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "a652fe89-1bdc-4d50-9ee9-6781ad65f7bb",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C5",
+      "claim": "Uncertainty-related effects were not present in M1.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were not present in M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figures 4 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "a82981dc-c5bb-4ab2-9c48-2adc7509bb40",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C6",
+      "claim": "PMd represents and maintains a full distribution of potentially correct actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that PMd represents and maintains a full distribution of potentially correct actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, based on inference from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "af5a19be-3cd4-4864-af6a-8204665ce31f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C7",
+      "claim": "Target selection situations represent only one type of motor related decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these 'target selection' situations represent only one type of motor related decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "bf7f3c17-62b6-4997-9188-538fa1e2c60c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C8",
+      "claim": "Target selection dominates the current literature on neural correlates of motor-related decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Though target selection represents only one type of sensorimotor task, it dominates the current literature on neural correlates of motor-related decision making. This is true for both eye movements (Basso and Wurtz, 1997; Britten et al., 1996; Fetsch et al., 2011; Newsome and Britten, 1989; Shadlen and Newsome, 2001) and reaching (Bastian et al., 2003; Cisek and Kalaska, 2005; Coallier et al., 2015; Messier and Kalaska, 2000; Thura and Cisek, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "6f5db701-c28f-4bd2-a01c-6a22d9c2f1c0",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C9",
+      "claim": "Mutual exclusivity is a constraint specific to the task of target selection and does not exist in target estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutual exclusivity is a constraint specific to the task of target selection and does not exist in target estimation, since no explicit options are presented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical distinction between task types in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e7c4827d-e3a2-41fa-87b7-6ecfe6ea90b3",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C10",
+      "claim": "PMd has been viewed as a movement planning area, displaying activity consistent with a representation of upcoming movements to visual targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Historically, PMd has been viewed as a movement planning area, displaying activity consistent with a representation of upcoming movements to visual targets (Cisek et al., 2003; Shen and Alexander, 1997; Weinrich and Wise, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical background and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "079d4183-ead8-4846-821a-bb6a6a7f254d",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C11",
+      "claim": "Pre-movement representations in PMd can include multiple simultaneous potential targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies showed that these pre-movement representations can include multiple simultaneous potential targets (Cisek and Kalaska, 2005) and reflect motor plans even in the absence of visual targets (Klaes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior research findings and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "0102af82-0bde-47a2-a4cd-69c7fcb07c8d",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C12",
+      "claim": "The optimal method for integrating sensory and prior information was formulated centuries ago as Bayes' theorem.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal method for integrating sensory and prior information was formulated centuries ago as Bayes' theorem (Bayes and Price, 1763).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a historical citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "4a45ac59-89cc-41d0-9b16-6b4a51d7b867",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C13",
+      "claim": "Bayes' theorem states that cues should be weighted in inverse proportion to their variance.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct application of Bayes' theorem states that cues should be weighted in inverse proportion to their variance (Knill and Saunders, 2003; K\u00f6rding and Wolpert, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established principle with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ab355cf0-4843-4640-a6ad-93954fd2c2ab",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C14",
+      "claim": "Bayesian models have been used to describe human behavior in a wide array of psychophysical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian models have been used to describe human behavior in a wide array of psychophysical studies, including visual (Knill and Saunders, 2003; Mamassian and Landy, 2001; Weiss et al., 2002), auditory (Battaglia et al., 2003), somatosensory (Goldreich, 2007), cross-modal (Alais and Burr, 2004; Ernst and Banks, 2002; Gu et al., 2008; Rowland et al., 2007), and sensorimotor (Greenwald and Knill, 2009; K\u00f6rding and Wolpert, 2004; Trommersh\u00e4user et al., 2008; van Beers et al., 2002) applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with extensive citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "bf8f3824-7f59-4555-9387-7bc10337bca7",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C15",
+      "claim": "Monkeys made center-out reaches with an instructed delay to well-specified targets that were randomly distributed across eight locations in the first block of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first block of trials, the monkeys made center-out reaches with an instructed delay to well-specified (zero uncertainty) targets that were randomly distributed across eight locations (Figure 1A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and is illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "8c7cc3df-9a65-4a52-aff8-1bcdae86f481",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C16",
+      "claim": "In the second block of trials, target locations were randomly drawn from a circular normal (von Mises) prior distribution centered on a single direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second block of trials, the target locations were randomly drawn from a circular normal (von Mises) prior distribution centered on a single direction that remained constant for the remainder of the session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for the uncertainty condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "1ddb684c-8777-4fe2-b163-3a412eb2c639",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C17",
+      "claim": "The monkey did not receive veridical feedback about the location of the target but instead saw a noisy distribution of five (monkey M) or ten (monkey T) lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the monkey did not receive veridical feedback about the location of the target, but instead saw a noisy distribution of five (monkey M) or ten (monkey T) lines (Figure 1A, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design for providing uncertain visual cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "9d805650-3ffc-4b7e-8d88-0a465e06449f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C18",
+      "claim": "Both monkeys almost always relied less on the visual cue during high uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative values of \u2206cue weighting in Figure 1C reveal that both monkeys almost always relied less on the visual cue during high uncertainty trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "7140e6dc-adac-4c7b-b076-1442afcd320f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C19",
+      "claim": "The monkeys combined information from both the displayed lines and the average target location in a Bayesian-like manner to estimate the location of the required reach target.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the monkeys combined information from both the displayed lines and the average target location in a Bayesian-like manner to estimate the location of the required reach target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the behavioral data showing cue weighting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "cdd0de2e-ce8c-42f5-9b0b-1ab72518e16c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C20",
+      "claim": "Many neurons in PMd displayed a robust burst of activity directly following presentation of the visual cue, followed by a more moderate, tonic response for the remainder of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "During the center out block of trials (zero uncertainty, eight discrete targets) many neurons in PMd displayed a robust burst of activity directly following presentation of the visual cue, followed by a more moderate, tonic response for the remainder of the delay period (e.g., Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observed neural activity patterns and is illustrated in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "fc1ec428-5357-4c74-84c7-1724b1958ef8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C21",
+      "claim": "M1 displayed a bias toward delay and movement period tuning while PMd showed about equal percentages of tuned neurons for each time period.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, M1 displayed a bias toward delay and movement period tuning while PMd showed about equal percentages of tuned neurons for each time period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the tuning analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "dec1d6e5-d3cc-486f-b469-68d7941711af",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C22",
+      "claim": "Many neurons in PMd were more active during high uncertainty trials than low uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "During the remaining experimental blocks consisting of uncertain targets, we found many neurons in PMd to be more active during high uncertainty trials than low uncertainty trials (red vs. blue in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "f663d5b2-70b4-426a-aaae-cdc3ddaecd3f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C23",
+      "claim": "The uncertainty effect in PMd was most prominent during the delay period, with some carryover into movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was most prominent during the delay (D) period, with some carryover into movement (M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal characteristics of the observed neural effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "bf3b8135-bf38-4aca-b5d8-baa518aaf39c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C24",
+      "claim": "Some neurons that had been essentially inactive during the block of zero-uncertainty reaches became strongly active during the delay period of high-uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Some neurons that had been essentially inactive during the block of zero-uncertainty reaches became strongly active during the delay period of high-uncertainty trials (e.g., c77u1 and c29u1, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes specific examples of neural behavior changes with uncertainty.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3d099236-ac02-49d4-bafd-6f928b18c014",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C25",
+      "claim": "There was a greater tendency for increased activity in neurons with PDs not aligned to the direction of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that there was a greater tendency for increased activity in neurons with PDs not aligned to the direction of movement (e.g., c31u1 and c87u1, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a pattern in the neural data related to preferred direction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "692b71dd-8d94-4b9f-b7d4-20bd57969dcf",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C26",
+      "claim": "Greater uncertainty only ever led to increased activity in PMd.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that greater uncertainty only ever led to increased activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an important observation about the directionality of the effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "01c81b27-f890-4915-b39b-9a2b6d7cdbf8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C27",
+      "claim": "M1 neurons did not display nearly the same degree of modulation with uncertainty as PMd neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "M1 neurons did not display nearly the same degree of modulation with uncertainty as PMd neurons (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative finding between the two brain areas, illustrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "21f67222-fd68-4892-b325-c693214af4c4",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C28",
+      "claim": "M1 activity reflected only the reach direction and was largely unaffected by uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, analysis of single unit behavior suggested that M1 activity reflected only the reach direction and was largely unaffected by uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the M1 single unit analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "991c009d-dcc7-4b5e-952b-086d52b09503",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C29",
+      "claim": "A neuron experienced the greatest uncertainty-related activity increase when the reaches were directed away from its preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "A neuron experienced the greatest uncertainty-related activity increase when the reaches were directed away from its preferred direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between tuning and uncertainty effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b896d83d-71b2-418b-a793-a3c54576c5c2",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C30",
+      "claim": "During high uncertainty trials, the representation of the reach direction in PMd in the delay period was present but significantly less distinct, most notably due to increased activity in neurons with PDs far away from the reach direction.",
+      "claim_type": "EXPLICIT",
+      "source": "During high uncertainty trials, the representation of the reach direction in the delay period was present but significantly less distinct, most notably due to increased activity in neurons with PDs far away from the reach direction (Figure 5A, bottom left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the population-level effect of uncertainty on PMd activity, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ee4e13c7-4cb9-44c4-8733-fd8c80beee18",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C31",
+      "claim": "While both SD and OD neurons in PMd were less active immediately after target appearance in high uncertainty trials, the OD neurons showed higher activity in the subsequent D and M periods.",
+      "claim_type": "EXPLICIT",
+      "source": "After averaging the activity of these populations, it became clear that while both SD and OD neurons in PMd were less active immediately after target appearance in high uncertainty trials, the OD neurons showed higher activity in the subsequent D and M periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal dynamics of the uncertainty effect for different neuron populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "dc42383d-6cf0-489f-bf5e-c028dcb5e9e9",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C32",
+      "claim": "The main delay-period effect of higher target uncertainty was an increase in the PMd activity in neurons with preferred directions away from the reach direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the main delay-period effect of higher target uncertainty was an increase in the PMd activity in neurons with preferred directions away from the reach direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the main finding from the population analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b4b41db1-444d-4ae8-ae2c-f96a719f4543",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C33",
+      "claim": "In most sessions, ORTH and OD activity during the delay and movement periods was significantly greater in the high uncertainty condition, while SD activity showed little change.",
+      "claim_type": "EXPLICIT",
+      "source": "In most sessions, ORTH and OD activity during the delay and movement periods was significantly greater in the high uncertainty condition, while SD activity showed little change (Figure 6A \u2013 monkey M; Figure 7A \u2013 monkey T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes the cross-session analysis shown in Figures 6A and 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b2f88c9b-e2bb-43f7-9ea9-e608e4d0669b",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C34",
+      "claim": "The increase in OD activity varied considerably across sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increase in OD activity varied considerably across sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variability observed in the neural data across sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "2ebfb1e9-0a8c-4380-a4ba-7b4e6227a026",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C35",
+      "claim": "Strong positive correlations were found between OD activity differences and \u2206behavioral uncertainty, but none for SD.",
+      "claim_type": "EXPLICIT",
+      "source": "By plotting the activity differences as a function of \u2206behavioral uncertainty, we found strong positive correlations for OD activity, but none for SD (Figure 6B \u2013 monkey M; Figure 7B \u2013 monkey T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the correlation analysis shown in Figures 6B and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "7b699466-63c2-4ad5-acdd-c483510aecd9",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C36",
+      "claim": "For monkey M, the slope of the relation between activity differences and behavioral uncertainty increased from SD to ORTH to OD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For monkey M, the slope of the relation increased from SD to ORTH to OD neurons (Figure 6B), consistent with the single-session example shown in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a pattern in the correlation analysis for monkey M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "7f7b88ad-c17d-431a-9a01-4ac97106bcc9",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C37",
+      "claim": "As the monkeys became less certain about their decision of where to reach, the representations of less likely reach directions increased.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that as the monkeys became less certain about their decision of where to reach, the representations of less likely reach directions increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation between behavioral uncertainty and OD activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "fc1af212-4cf4-4477-808b-143f267aafe8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C38",
+      "claim": "The tuning-related effect of uncertainty persisted throughout the entirety of movement planning and even after the initiation of the reach.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the tuning-related effect of uncertainty persisted throughout the entirety of movement planning and even after the initiation of the reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal extent of the uncertainty effect, shown in Figures 6C,D and 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "7a2641aa-9c6d-4835-ae29-e307dd0ead26",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C39",
+      "claim": "The difference in OD activity first displayed a significant correlation with \u2206behavioral uncertainty during the visual period.",
+      "claim_type": "EXPLICIT",
+      "source": "For both monkeys, the difference in OD activity first displayed a significant correlation with \u2206behavioral uncertainty during the visual period (Figures 6,7, panels C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes when the correlation first becomes significant, shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "44162d11-7246-4f5a-ab4e-0243be850bce",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C40",
+      "claim": "The correlation between OD activity and behavioral uncertainty persisted throughout the remainder of the delay period and the initiation of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect persisted throughout the remainder of the delay period and the initiation of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal persistence of the correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "c9a69aa7-2d98-4231-a4c6-9bc0f9dd98f1",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C41",
+      "claim": "Movement representations in PMd remain affected by decision-related uncertainty leading up to and throughout execution of a movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that movement representations in PMd remain affected by decision-related uncertainty leading up to and throughout execution of a movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the temporal analysis of the uncertainty effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "5ad1dd5b-d676-4f57-969c-2ff6a9e8c513",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C42",
+      "claim": "For monkey M, SD activity was negatively correlated with uncertainty at the beginning of the delay period (300\u2013400 ms following target appearance).",
+      "claim_type": "EXPLICIT",
+      "source": "For monkey M, SD activity was negatively correlated with uncertainty at the beginning of the delay period (300\u2013400 ms following target appearance; Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific finding for M1 in monkey M, shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "2e3b5ac4-cd7d-4057-b839-11026f1f13f0",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C43",
+      "claim": "Behavioral uncertainty had no significant effect on M1 activity during movement planning or execution.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we conclude that behavioral uncertainty had no significant effect on M1 activity during movement planning or execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the M1 analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "4f5a9ba7-544b-4611-9986-e051b7c16b6d",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C44",
+      "claim": "OD activity in PMd correlated better with \u2206behavioral uncertainty than with \u2206cue weighting for almost any randomly subsampled group of sessions for either monkey.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, differences in OD activity correlated better with \u2206behavioral uncertainty than with \u2206cue weighting for almost any randomly subsampled group of sessions for either monkey (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of the subsampling analysis shown in Figure 9C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "0e217a4c-9183-4485-b8b9-4f7c1d47aa1b",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C45",
+      "claim": "The firing rate changes in PMd reflect differences in the monkeys' uncertainty about their decisions, rather than the weights applied to either visual or prior information leading to those decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the firing rate changes in PMd actually reflect differences in the monkeys' uncertainty about their decisions, rather than the weights applied to either visual or prior information leading to those decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the subsampling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "dee6f9fe-c79d-4bf5-b5a3-9cf8c7153655",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C46",
+      "claim": "It was possible to predict the monkey's reach direction from PMd activity, but the predictions were consistently less accurate for high uncertainty trials than for low uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For a representative session, we found that although it was possible to predict the monkey's reach direction from PMd activity, the predictions were consistently less accurate for high uncertainty trials than for low uncertainty trials (Figure 10A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the decoding analysis results for PMd, shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "8486a37f-005f-47b9-9422-fe9f37b8f6d3",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C47",
+      "claim": "PMd decoding accuracy rather rapidly reached stable levels within about 200 ms of target appearance, but then increased more slowly throughout the remainder of the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy rather rapidly reached these levels within about 200 ms of target appearance, but then increased more slowly throughout the remainder of the trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal dynamics of PMd decoding accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "87f7f665-33c8-4c5b-a10e-1daea3f51f57",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C48",
+      "claim": "The ability to decode reach direction from M1 improved steadily through the delay period for both high and low uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the ability to decode reach direction from M1 improved steadily through the delay period (Figure 10A, right). This was true for both high and low uncertainty trials, with only slightly higher delay-period decoding accuracy for low uncertainty trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the M1 decoding results shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "d01d5586-8fd9-4dce-88b6-f535cf8ab77f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C49",
+      "claim": "At the time of movement initiation, the M1 decoder was equally accurate for both uncertainty conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of movement initiation, the M1 decoder was equally accurate for both conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the M1 decoding accuracy at movement onset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e6b309f4-5d7d-4f87-b9bf-6cc409d597c6",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C50",
+      "claim": "The PMd decoder nearly always performed better during low uncertainty trials than high uncertainty trials, especially during the visual and delay periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The PMd decoder nearly always performed better during low uncertainty trials than high uncertainty trials (Figure 10B), especially during the visual and delay periods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes the cross-session decoding analysis for PMd shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "7f9ade98-ecb1-4a24-a038-52f9dccfcf4b",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C51",
+      "claim": "The difference in PMd decoder performance between low and high uncertainty conditions remained significant at the time of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "PMd decoding generally did improve at the time of movement, however the difference in decoder performance between low and high uncertainty conditions remained significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the persistence of the decoding difference into the movement period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "fb80f086-06c5-4d79-9025-df4e12272cad",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C52",
+      "claim": "Decoding from M1 was more accurate than from PMd, and less affected by uncertainty \u2013 especially at the time of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we found decoding from M1 to be more accurate than from PMd, and less affected by uncertainty \u2013 especially at the time of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary comparison of decoding performance between the two areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "25a9bb25-0f9b-4067-b42c-ba2545052819",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C53",
+      "claim": "The monkey learned to rely entirely on the new cue line in the sham uncertainty control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "These sham trials had almost exactly the same visual properties as high uncertainty trials, but did not actually induce any uncertainty. The monkey learned to rely entirely on the new cue line (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavioral results from the control experiment shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b0d8e36b-388e-4a3c-afe0-3120de96ad1f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C54",
+      "claim": "OD (and to some extent ORTH) activity was greater only for the actual high uncertainty condition compared to sham uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the difference in activity between actual high uncertainty and sham uncertainty trials, we found that OD (and to some extent ORTH) activity was greater only for the actual high uncertainty condition (Figure 11C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the neural results from the control experiment shown in Figure 11C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "df19e73a-c204-4cb3-a2a6-dab66ec2e20e",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C55",
+      "claim": "The uncertainty-related changes in ORTH and OD activity cannot be explained simply as the result of differences in the visual information.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that our main finding of uncertainty-related changes in ORTH and OD activity cannot be explained simply as the result of differences in the visual information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the visual control experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "18a76db0-1da0-4558-9442-2ecb72d39897",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C56",
+      "claim": "OD and ORTH activity within each group of sessions with consistent average reach direction still correlated with \u2206behavioral uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing these two sets of sessions separately revealed a positive correlation between changes in OD/ORTH activity and \u2206behavioral uncertainty (Figure 11E) that was very similar to the full data set (Figures 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of the control analysis for average target location, shown in Figure 11E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ba74356a-5e0d-4460-85ae-8143c524c1fb",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C57",
+      "claim": "Resampling trials to reverse the sign of the uncertainty effect on either reaction time or peak speed had no effect on the correlation between PMd activity and \u2206behavioral uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "These manipulations had no effect on the correlation between PMd activity and \u2206behavioral uncertainty, indicating that the difference was not simply driven by kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the kinematic control analysis shown in Figure 11\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "465a5813-780d-4faa-b696-90574454c613",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C58",
+      "claim": "The difference was not simply driven by kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "These manipulations had no effect on the correlation between PMd activity and \u2206behavioral uncertainty, indicating that the difference was not simply driven by kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the kinematic control analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "0a5cca13-139a-4cab-abf2-99579c988379",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C59",
+      "claim": "The uncertainty-related effect in PMd was present not only during movement planning, but also during execution \u2013 a result not readily predicted from previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncertainty-related effect in PMd was present not only during movement planning, but also during execution \u2013 a result not readily predicted from previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a key finding that differs from prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "a40327f6-f278-4c2f-88df-420a5ee4c73a",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C60",
+      "claim": "Several studies have recorded from PMd neurons as monkeys chose between multiple potential reach options.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have recorded from PMd neurons as monkeys chose between multiple potential reach options (Cisek and Kalaska, 2005; Coallier et al., 2015; Klaes et al., 2011; Pastor-Bernier and Cisek, 2011; Thura and Cisek, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "6e34079f-c59f-4fc0-9855-8ab11d1ae4fe",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C61",
+      "claim": "In no studies before ours did the activity changes induced by an ambiguous cue persist throughout movement execution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in no studies before ours did the activity changes induced by an ambiguous cue persist throughout movement execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature of the current study compared to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "90cd3121-3fdc-4120-8ecd-14365bbc1d5e",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C62",
+      "claim": "One study found that prior to movement, greater ambiguity in the cue resulted in a stronger representation of the target that was ultimately not selected.",
+      "claim_type": "EXPLICIT",
+      "source": "One study that used gradually accumulating evidence to trigger movement choice (Thura and Cisek, 2014) found that prior to movement, greater ambiguity in the cue resulted in a stronger representation of the target that was ultimately not selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a prior study with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ea445f3e-25e9-4412-95a2-2d8331718777",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C63",
+      "claim": "A prior study observed no effect on activity corresponding to the selected target, which reached a consistent peak about 300 ms prior to movement initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "They observed no effect on activity corresponding to the selected target, which reached a consistent peak about 300 ms prior to movement initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a prior study (Thura and Cisek, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3dfffe2a-ca74-4ac4-81a9-7eebe09d39ef",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C64",
+      "claim": "A prior study found no ambiguity-related effects on activity at the time of movement initiation, for either the neurons tuned to the selected target or the non-selected target.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the time of movement initiation they found no ambiguity-related effects on activity, for either the neurons tuned to the selected target or the non-selected target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a prior study (Thura and Cisek, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "48c7e22c-870d-401c-8cd0-dddb83c5b584",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C65",
+      "claim": "The lack of resolution in the reach representation prior to movement execution may reflect a difference in the decision-making processes associated with target estimation and target selection.",
+      "claim_type": "EXPLICIT",
+      "source": "That we did not observe a resolution in the reach representation prior to movement execution may reflect a difference in the decision-making processes associated with target estimation and target selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "09338dbb-4b1d-4125-91ea-8cb6f9d78fc6",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C66",
+      "claim": "In a target selection task, reaching anywhere that is not an explicit target will lead to failure.",
+      "claim_type": "EXPLICIT",
+      "source": "In a target selection task, reaching anywhere that is not an explicit target will lead to failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical property of target selection tasks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b653efab-802e-4d19-9bb1-2ad47a874d21",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C67",
+      "claim": "It is reasonable for the system to enforce a policy that before initiating a reach, the representation must only reflect one of the explicit target options in target selection tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore reasonable for the system to enforce a policy that before initiating a reach, the representation must only reflect one of the explicit target options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about sensorimotor processing.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "a55bdffe-ca73-41bd-b601-c795bccc9bb2",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C68",
+      "claim": "In target estimation tasks there are no constraints on the executed action, allowing for a broader movement representation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in target estimation tasks there are no such constraints on the executed action, allowing for a broader movement representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical property of target estimation tasks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "c5e2c780-753a-495d-aab7-924ab2ff42c7",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C69",
+      "claim": "Results from target selection tasks suggest that movement decisions are made within PMd as the result of a biased neural competition between potential actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from target selection tasks suggest that movement decisions are made within PMd as the result of a biased neural competition between potential actions (Cisek, 2007; Gallivan et al., 2016; Pastor-Bernier and Cisek, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an interpretation from prior studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "438dcb9c-eaea-47a5-b0ed-3cc6d39e37c8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C70",
+      "claim": "The observation that decision-related variables had no effect on movement representations in PMd at the time of movement initiation is especially convincing for the interpretation that PMd ultimately decides on the action.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation \u2013 that PMd ultimately decides on the action \u2013 is especially convincing given the previous observations that decision-related variables (e.g., cue ambiguity, uncertainty, etc.) had no effect on movement representations in PMd at the time of movement initiation (Thura and Cisek, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an interpretation from prior work with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b5bc8e6b-6b92-4d8d-8ece-94cdc17b022c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C71",
+      "claim": "The observation of uncertain representations that persisted throughout movement execution indicates that PMd may not necessarily be the final step in the motor decision-making process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed uncertain representations that persisted throughout movement execution, which indicates that PMd may not necessarily be the final step in the motor decision-making process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the current findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "2db06667-f6d9-4d87-b88d-c5e4495b8269",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C72",
+      "claim": "PMd does not actually decide which movement to execute, but rather maintains a continuously updated estimate of the distribution of potentially useful actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that PMd does not actually decide which movement to execute, but rather that it maintains a continuously updated estimate of the distribution of potentially useful actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "99e9034f-691b-490e-9af0-c0037ee5b0e7",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C73",
+      "claim": "The distribution of actions represented in PMd is likely dependent on a number of factors, including current sensory information and prior experience, as well as constraints specific to the task.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution is likely dependent on a number of factors, including current sensory information and prior experience, as well as constraints specific to the task (e.g., selecting between mutually exclusive targets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "c234a6b8-6c16-4d03-bfd5-bc34ad63c51f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C74",
+      "claim": "In the current study, the distribution of actions represented in PMd changed according to the monkey's behavioral uncertainty, but was relatively static within a single trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the distribution of actions represented in PMd changed according to the monkey's behavioral uncertainty, but was relatively static within a single trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b6f02573-c0f5-4aba-baa0-d4d3e6d74c8d",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C75",
+      "claim": "At no point did the distribution in PMd resolve into a single unambiguous reach representation.",
+      "claim_type": "EXPLICIT",
+      "source": "At no point did the distribution resolve into a single unambiguous reach representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "8c96ee4d-da3c-4d35-9b1d-29f2fa8d2494",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C76",
+      "claim": "PMd is not solely responsible for 'deciding' which movement to execute, but instead contains only a noisy representation of potential reach directions that must be interpreted in some way by downstream areas like M1.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings imply that PMd is not solely responsible for 'deciding' which movement to execute, but instead contains only a noisy representation of potential reach directions that must be interpreted in some way by downstream areas like M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "6478b937-c6de-4346-b5da-381049c0a9f9",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C77",
+      "claim": "The processing that occurs in the connections between PMd and M1 'denoises' the PMd representation to provide a single, unambiguous movement decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that the processing that occurs in the connections between PMd and M1 'denoises' the PMd representation to provide a single, unambiguous movement decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggested interpretation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3ee962ac-31b9-4113-8e2c-96b0d803d5f4",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C78",
+      "claim": "The decision about where to reach is not explicitly determined in PMd, but rather in the connections between PMd and M1.",
+      "claim_type": "EXPLICIT",
+      "source": "From these observations, we speculate that the decision about where to reach is not explicitly determined in PMd, but rather in the connections between PMd and M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation based on the decoding results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "9c28b8a4-0299-450b-9b43-43f60b18a3f5",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C79",
+      "claim": "The noisy representation of potential actions in PMd appears to be interpreted in some way by M1, ultimately producing a single unambiguous motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "The noisy representation of potential actions in PMd appears to be interpreted in some way by M1, ultimately producing a single unambiguous motor command.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "48ba4f63-dc30-4519-8197-881bd1318915",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C80",
+      "claim": "The process by which M1 obtains a final movement representation could potentially occur through a maximum a posteriori (MAP) readout of the PMd representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The process by which M1 obtains a final movement representation could potentially occur through a maximum a posteriori (MAP) readout of the PMd representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "d6818d02-aaf8-4e33-94eb-3d419f6ad27f",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C81",
+      "claim": "A MAP readout mechanism is consistent with the results of the current and previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of mechanism is not only consistent with the results of the current and previous studies, but could potentially explain the neural basis of sensorimotor learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation about the consistency of a proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "d57c016b-47d0-4dae-a347-cb671bb6e284",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C82",
+      "claim": "In very high uncertainty conditions, PMd might retain nearly equal representations of all possible movements.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we would expect that in very high uncertainty conditions (e.g., a novel behavioral task), PMd might retain nearly equal representations of all possible movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative prediction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "850b3456-4d11-41a2-8246-4dc6c6fd93f3",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C83",
+      "claim": "Small fluctuations due to noise within PMd would cause large variability in a downstream readout, driving exploration of the environment in high uncertainty conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, small fluctuations due to noise within PMd would cause large variability in a downstream readout, driving exploration of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e5c1f5b9-3d32-4b5a-9d8b-31b9f58a7221",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C84",
+      "claim": "As learning progressed and uncertainty decreased, the distribution in PMd would narrow and motor output would begin to converge on the optimal movement decision.",
+      "claim_type": "EXPLICIT",
+      "source": "As learning progressed and uncertainty decreased, the distribution in PMd would narrow and motor output would begin to converge on the optimal movement decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative prediction about learning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "d3bd068f-a285-47b8-a08c-8f8312fd99cc",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C85",
+      "claim": "PMd activity changed not as a function of the weighting of either visual or prior information, but rather in proportion to the total uncertainty in the final decision.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PMd activity changed not as a function of the weighting of either of those two pieces of information, but rather in proportion to the total uncertainty in the final decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding from the analysis in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "27b8df26-c645-4292-b766-fd1cfab61b8c",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C86",
+      "claim": "PMd contains uncertainty-related information pertaining to the final action, which encompasses more than just the reliability of the visual cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus PMd contains uncertainty-related information pertaining to the final action, which encompasses more than just the reliability of the visual cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e6f98291-05ef-4753-b7df-c2b38ff8bf26",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C87",
+      "claim": "PMd likely reflects the combined uncertainty of all information sources relevant to a movement decision.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that PMd likely reflects the combined uncertainty of all information sources relevant to a movement decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b3071220-b1dd-42ee-a07a-8fe1a3096e13",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C88",
+      "claim": "There exist a number of theoretical models that address the potential neural representation of uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "There exist a number of theoretical models that address the potential neural representation of uncertainty (Deneve, 2008; Hinton and Sejnowski, 1983; Hoyer and Hyvarinen, 2003; Ma et al., 2006; Zemel et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "059c2ec4-7c19-4ad4-a623-379e782991ac",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C89",
+      "claim": "The experimental design prevents fair and comprehensive tests of theoretical model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, our experimental design prevents us from performing fair and comprehensive tests of these model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "0977513a-b5d7-4cb5-8f29-2f3d938abcd1",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C90",
+      "claim": "A probabilistic population code (PPC) model predicts that firing rates across a population should reflect the probability distribution \u2013 high uncertainty should result in lower peak activity and higher non-peak activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A probabilistic population code (PPC) model predicts that firing rates across a population should reflect the probability distribution \u2013 high uncertainty should therefore result in lower peak activity and higher non-peak activity (Ma et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes predictions from a theoretical model with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "cc557470-ec09-4b8d-b583-1bafbf85e6a7",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C91",
+      "claim": "An increase in non-peak activity with increased uncertainty was observed, and the spatiotemporal activity plots resemble probability distributions of reach direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We did indeed observe an increase in non-peak activity with increased uncertainty, and the spatiotemporal activity plots in Figure 5 do convincingly resemble probability distributions of reach direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how the findings relate to PPC model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3e042821-2d99-42f9-b4cb-acb97618aec5",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C92",
+      "claim": "No consistent decrease in the peak activity with increasing uncertainty was observed, which prevents interpreting the population activity as representing a true probability distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not see any consistent decrease in the peak activity with increasing uncertainty, which prevents us from interpreting the population activity as representing a true probability distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a discrepancy between the findings and PPC model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "cbabfabe-774a-40b1-ac0d-14561cfd0aa0",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C93",
+      "claim": "The findings argue against the concept of divisive normalization, in which the total activity remains equivalent when representing multiple potential targets, at least in the context of target estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also argue against the concept of divisive normalization, in which the total activity remains equivalent when representing multiple potential targets (Cisek and Kalaska, 2005; Pastor-Bernier and Cisek, 2011), at least in the context of target estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings in relation to prior models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "d140f093-a76d-4e6d-bda0-a705f9a3aafe",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C94",
+      "claim": "It is already well established that PMd can simultaneously represent all potential actions when faced with multiple, mutually exclusive visual targets.",
+      "claim_type": "EXPLICIT",
+      "source": "It is already well established that PMd can simultaneously represent all potential actions when faced with multiple, mutually exclusive visual targets (Bastian et al., 2003; Cisek and Kalaska, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "838970d0-9c91-4a2e-a3f7-34a6dde5e421",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C95",
+      "claim": "PMd also represents and retains a distribution of potential motor plans that are not explicitly presented, but arise as possibilities during uncertain target estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide the additional observation that PMd also represents and retains a distribution of potential motor plans that are not explicitly presented, but arise as possibilities during uncertain target estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "fc51b015-b0d5-46c0-a749-c0445a2bf9a2",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C96",
+      "claim": "One possibility is that maintaining heightened representations of alternative movements in high uncertainty conditions is simply an unavoidable result of noisy inputs to PMd.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that it is simply an unavoidable result of noisy inputs to PMd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "1ed29285-5058-4c44-8053-1d71f7d423e8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C97",
+      "claim": "In the absence of explicit reach targets, the fidelity of the representation in PMd may be limited by the quality of available information.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in the absence of explicit reach targets, the fidelity of the representation in PMd may be limited by the quality of available information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "81ed1313-cfda-4d81-9389-d4e489a32102",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C98",
+      "claim": "Maintaining heightened representations of alternative movements in high uncertainty conditions may be useful to the sensorimotor system for more rapid error correction or to drive subsequent motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, maintaining heightened representations of alternative movements in high uncertainty conditions may be useful to the sensorimotor system for more rapid error correction or to drive subsequent motor learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "30b19419-1ae0-495b-a6b8-efa319799a9b",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C99",
+      "claim": "All surgical and experimental procedures were fully consistent with the guide for the care and use of laboratory animals and approved by the institutional animal care and use committee of Northwestern University under protocol #IS00000367.",
+      "claim_type": "EXPLICIT",
+      "source": "All surgical and experimental procedures were fully consistent with the guide for the care and use of laboratory animals and approved by the institutional animal care and use committee of Northwestern University under protocol #IS00000367.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a procedural fact about the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "2907ec4d-1bfc-4d0c-be24-19efa13d8bf8",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C100",
+      "claim": "One monkey was a rhesus macaque and one was a cynomolgus macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we designed a behavioral task in which monkeys (one rhesus macaque, one cynomolgus macaque) made decisions about where to reach using a planar robotic manipulandum, based on the learned history of target distributions and uncertain visual cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "775bacde-35f6-4fe3-8d36-dd8cbf6e4ee1",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C101",
+      "claim": "Neural recordings were made from neurons in M1 and PMd using chronically implanted 96-channel microelectrode arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the experiments we recorded from neurons in M1 and PMd (Figure 2A) using chronically implanted 96-channel microelectrode arrays (Blackrock Microsystems, Salt Lake City UT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the recording methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "9426301e-1ee6-4ee0-ad5c-05ea169af80a",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C102",
+      "claim": "Single neurons were identified from each session using offline sorter by isolating clusters within a principle component space projected from the waveform shapes of putative neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified single neurons from each session using offline sorter by isolating clusters within a principle component space projected from the waveform shapes of putative neurons (Plexon Inc., Dallas TX).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spike sorting methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "4b61b10f-4a4b-47d0-acd5-b2af97ac8f33",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C103",
+      "claim": "There was likely significant overlap between sessions of the populations of recorded neurons, but no effort was made to track the identity of neurons across sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "There was likely significant overlap between sessions of the populations of recorded neurons, but we made no effort to track the identity of neurons across sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the recording approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "31027d4b-2cba-4c1d-a904-29b6071b1a54",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "claim_id": "C104",
+      "claim": "Preferred directions (PDs) were calculated in three distinct time periods: visual (50\u2013250 ms after target appearance), delay (300\u2013700 ms post-target), and movement (0\u2013200 ms after initiation of the reach) using a generalized linear model with Poisson noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many neurons (especially those in PMd) can have complex temporal profiles, we calculated preferred directions (PDs) in three distinct time periods: visual (50\u2013250 ms after target appearance), delay (300\u2013700 ms post-target), and movement (0\u2013200 ms after initiation of the reach) using a generalized linear model with Poisson noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis methods for calculating preferred directions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f9746b8-f905-4ddc-8e54-f17daa563aed",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Monkeys performed a target estimation task where they integrated noisy visual cues with learned prior information about target location in a Bayesian-like manner. In high uncertainty conditions, monkeys relied less on visual cues and more on prior information, as evidenced by reduced cue weighting slopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 describe the behavioral task design and demonstrate that monkeys combined visual and prior information appropriately. The behavioral data in Figure 1 shows systematic changes in cue weighting with uncertainty, supporting Bayesian-like integration. The experimental design is clearly described and the behavioral results are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "e526b374-4ed5-42bd-b38d-d1e711b1016a",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PMd neurons showed increased activity during high uncertainty trials, with the effect being tuning-dependent: neurons with preferred directions away from the reach direction (OD neurons) showed the greatest increases, while neurons aligned with reach direction (SD neurons) showed minimal changes. This effect was prominent during delay and persisted into movement execution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22-C26, C29-C32 collectively demonstrate a robust, tuning-dependent uncertainty effect in PMd. The data in Figures 3 and 5 clearly show increased OD activity with uncertainty. The spatiotemporal analysis provides population-level support. The finding that uncertainty only increased (never decreased) activity is an important constraint that strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "c6938faf-7f41-4a55-927f-702f90c4296e",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The magnitude of uncertainty-related increases in PMd OD and ORTH neuron activity varied considerably across sessions and was positively correlated with behavioral uncertainty (measured as angular dispersion of reach endpoints), but not with SD neuron activity. This correlation was strongest for OD neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C33-C37 describe cross-session variability and its correlation with behavioral uncertainty. Figures 6 and 7 show clear positive correlations between OD activity differences and behavioral uncertainty (R\u00b2=0.31 for monkey M, R\u00b2=0.69 for monkey T), while SD shows no correlation. The graded effect (SD < ORTH < OD) for monkey M provides additional support. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "18d343ff-8258-423e-a46e-8540fca0972d",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The uncertainty-related effect in PMd persisted throughout movement planning and execution. The correlation between OD activity and behavioral uncertainty first appeared during the visual period and remained significant through the delay period and into movement initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 describe the temporal dynamics of the uncertainty effect. Figures 6C-D and 7C-D show that the correlation between OD activity and behavioral uncertainty persists from visual period through movement. This temporal persistence is a novel finding compared to prior target selection studies and is well-documented with time-resolved analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "a3fdf134-542a-45d3-8a1b-63cba93e3792",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "M1 neurons showed minimal modulation with uncertainty. M1 activity primarily reflected reach direction and was largely unaffected by uncertainty during movement planning or execution, with only a transient negative correlation for SD neurons in monkey M during early delay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27-C28, C42-C43 describe the lack of uncertainty effects in M1. Figures 4 and 8 show that M1 activity was well-tuned to reach direction but showed no consistent correlation with behavioral uncertainty. The single exception (C42) was transient and limited to one monkey. This provides an important control showing regional specificity of the uncertainty effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "8036c03a-9fb6-4781-a143-41043b6e62c4",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PMd activity changes correlated better with total behavioral uncertainty than with cue weighting. Subsampling analysis showed that OD activity consistently correlated with behavioral uncertainty but not with visual cue weighting when these two metrics were decorrelated, indicating PMd reflects combined uncertainty from all information sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C85-C87 describe the dissociation between behavioral uncertainty and cue weighting. Figure 9 shows that across 1000 subsamples, OD activity consistently correlated with behavioral uncertainty regardless of the correlation between the two behavioral metrics. This analysis effectively rules out the alternative explanation that PMd simply tracks visual cue reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "2d257946-7990-4baa-838e-7908b47db0f4",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Decoding of reach direction from PMd was consistently less accurate for high uncertainty trials throughout planning and execution. M1 decoding was more accurate overall and showed minimal uncertainty effects, with equal accuracy for both conditions at movement initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 describe decoding results. Figure 10 shows clear differences in decoder performance between uncertainty conditions for PMd but not M1. The temporal dynamics are well-characterized. Statistical tests confirmed significant differences for PMd across all periods. This provides an alternative analysis approach that corroborates the firing rate findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "3d9522a6-c6a8-4dbf-b612-2148b5e80fca",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Control experiments with 'sham uncertainty' trials (visually similar to high uncertainty but with a veridical cue) showed that monkeys learned to rely on the veridical cue, and OD/ORTH activity was greater only for actual high uncertainty trials, ruling out visual differences as the explanation for neural effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 describe a critical control experiment. Figure 11A-C shows that despite nearly identical visual properties, neural activity differed between actual and sham uncertainty conditions. The behavioral data confirms monkeys distinguished the conditions. This control effectively rules out low-level visual explanations for the uncertainty effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "edcd6c42-3534-411e-bb86-31a2a9538a21",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When sessions were grouped by consistent average reach direction, OD and ORTH activity within each group still correlated with behavioral uncertainty, ruling out differences in average target location as an explanation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 describes another control analysis shown in Figure 11D-E. By analyzing sessions with consistent average reach directions separately, the authors show the uncertainty effect persists within each group. This rules out the alternative explanation that cross-session differences in average target location drive the neural effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "42c04a18-ec9d-4208-8289-f31f6de38ee1",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Resampling trials to reverse the sign of uncertainty effects on reaction time or peak speed had no effect on the correlation between PMd activity and behavioral uncertainty, indicating the neural effects were not driven by kinematic differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe kinematic control analyses shown in Figure 11\u2014figure supplement 1. By resampling to reverse kinematic differences while preserving uncertainty conditions, the authors show the neural correlations persist. This rules out indirect effects through movement kinematics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PMd represents and maintains a full distribution of potentially correct actions that changes with behavioral uncertainty but remains static within trials and never resolves into a single unambiguous representation, even during movement execution. This suggests PMd maintains a noisy representation that must be interpreted by downstream areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C72, C74-C76, C95 represent the main interpretation of the findings. The persistent uncertainty effects in PMd (C2, C38-C41), lack of resolution before movement (C75), and contrast with M1 (C5, C43) collectively support this interpretation. However, this is an inference from the data rather than a direct demonstration. The interpretation is reasonable but represents a conceptual model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "b33b1235-2ecd-44e5-9793-834caeb4efdf",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The persistence of uncertainty effects through movement execution in PMd differs from prior target selection studies and may reflect fundamental differences between target estimation and target selection tasks. This suggests PMd may not be the final step in motor decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C61, C65, C71 compare current findings to prior work. The temporal persistence through movement (C38-C41) is well-documented and does differ from cited prior studies (C62-C64). The interpretation that this reflects task differences is reasonable speculation supported by the data, though alternative explanations exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that processing in connections between PMd and M1 'denoises' the PMd representation to provide a single movement decision, potentially through a maximum a posteriori (MAP) readout mechanism. This could explain how M1 produces unambiguous motor commands from noisy PMd input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C81 propose a specific mechanistic model. While the contrast between PMd and M1 representations is well-established (C2-C5, C46-C52), the specific mechanism is speculative (C77, C80). The MAP readout is presented as one possibility but is not tested. The model is consistent with the data but lacks direct evidence. This represents a hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ddaa6c8c-90e2-456b-9a4b-e1e6987555e5",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that in very high uncertainty conditions, PMd might retain nearly equal representations of all movements, with noise-driven variability in downstream readout driving exploration. As learning progresses and uncertainty decreases, the distribution would narrow toward optimal decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 are explicitly speculative predictions about learning and exploration. While consistent with the framework established by the current findings, these predictions are not tested in the manuscript. They represent interesting hypotheses for future work but are not supported by the presented data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "ee74a34d-72c2-476c-a89b-5f8237542995",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The data show increased non-peak activity with uncertainty and spatiotemporal patterns resembling probability distributions, but lack the consistent decrease in peak activity predicted by probabilistic population code (PPC) models. The findings also argue against divisive normalization in target estimation contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 compare findings to theoretical models. The observation of increased non-peak activity without decreased peak activity (C91-C92) is clearly documented in Figures 5-7. The conclusion that this is inconsistent with PPC predictions is reasonable. The argument against divisive normalization (C93) is supported by the overall increase in activity with uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Neural recordings were obtained from PMd and M1 using chronically implanted 96-channel arrays. PMd neurons showed robust visual responses followed by tonic delay activity, with equal percentages tuned across visual, delay, and movement periods. M1 showed bias toward delay and movement tuning. Preferred directions were calculated separately for three time periods using GLM with Poisson noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C101-C104 describe recording methods and basic neural properties. Figure 2 shows representative data and tuning percentages. The methods are standard and well-described. The temporal tuning analysis (C104) is appropriate given the complex temporal dynamics. The lack of neuron tracking across sessions (C103) is a limitation but is acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    },
+    {
+      "id": "fd3ce6f7-fe53-44af-afe8-c03547ff71d6",
+      "content_id": "40f7514c-f626-4bfc-96ef-5d78ad1fa7fb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The experimental design prevents fair and comprehensive tests of theoretical model predictions due to the use of static visual cues and instructed delays, which limit interpretations regarding dynamic uncertainty codes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is an explicit acknowledgment of study limitations. The authors correctly identify that their task design (static cues, instructed delays) limits the ability to test certain theoretical predictions about temporal dynamics and spike timing variability. This is an appropriate and honest assessment of the study's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:03.359472Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf8f3824-7f59-4555-9387-7bc10337bca7",
+      "result_id": "7f9746b8-f905-4ddc-8e54-f17daa563aed"
+    },
+    {
+      "claim_id": "8c7cc3df-9a65-4a52-aff8-1bcdae86f481",
+      "result_id": "7f9746b8-f905-4ddc-8e54-f17daa563aed"
+    },
+    {
+      "claim_id": "1ddb684c-8777-4fe2-b163-3a412eb2c639",
+      "result_id": "7f9746b8-f905-4ddc-8e54-f17daa563aed"
+    },
+    {
+      "claim_id": "9d805650-3ffc-4b7e-8d88-0a465e06449f",
+      "result_id": "7f9746b8-f905-4ddc-8e54-f17daa563aed"
+    },
+    {
+      "claim_id": "7140e6dc-adac-4c7b-b076-1442afcd320f",
+      "result_id": "7f9746b8-f905-4ddc-8e54-f17daa563aed"
+    },
+    {
+      "claim_id": "3fcde9c7-3ec8-4121-b9d3-97f99219ffcb",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "dec1d6e5-d3cc-486f-b469-68d7941711af",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "f663d5b2-70b4-426a-aaae-cdc3ddaecd3f",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "bf3b8135-bf38-4aca-b5d8-baa518aaf39c",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "3d099236-ac02-49d4-bafd-6f928b18c014",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "692b71dd-8d94-4b9f-b7d4-20bd57969dcf",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "991c009d-dcc7-4b5e-952b-086d52b09503",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "b896d83d-71b2-418b-a793-a3c54576c5c2",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "ee4e13c7-4cb9-44c4-8733-fd8c80beee18",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "dc42383d-6cf0-489f-bf5e-c028dcb5e9e9",
+      "result_id": "e526b374-4ed5-42bd-b38d-d1e711b1016a"
+    },
+    {
+      "claim_id": "e5c74c14-35f6-4ee6-820a-afcccefd9560",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "3a39e880-e246-4b0b-a43c-fb6f89d9f21c",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "b4b41db1-444d-4ae8-ae2c-f96a719f4543",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "b2f88c9b-e2bb-43f7-9ea9-e608e4d0669b",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "2ebfb1e9-0a8c-4380-a4ba-7b4e6227a026",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "7b699466-63c2-4ad5-acdd-c483510aecd9",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "7f7b88ad-c17d-431a-9a01-4ac97106bcc9",
+      "result_id": "c6938faf-7f41-4a55-927f-702f90c4296e"
+    },
+    {
+      "claim_id": "fc1af212-4cf4-4477-808b-143f267aafe8",
+      "result_id": "18d343ff-8258-423e-a46e-8540fca0972d"
+    },
+    {
+      "claim_id": "7a2641aa-9c6d-4835-ae29-e307dd0ead26",
+      "result_id": "18d343ff-8258-423e-a46e-8540fca0972d"
+    },
+    {
+      "claim_id": "44162d11-7246-4f5a-ab4e-0243be850bce",
+      "result_id": "18d343ff-8258-423e-a46e-8540fca0972d"
+    },
+    {
+      "claim_id": "c9a69aa7-2d98-4231-a4c6-9bc0f9dd98f1",
+      "result_id": "18d343ff-8258-423e-a46e-8540fca0972d"
+    },
+    {
+      "claim_id": "a652fe89-1bdc-4d50-9ee9-6781ad65f7bb",
+      "result_id": "a3fdf134-542a-45d3-8a1b-63cba93e3792"
+    },
+    {
+      "claim_id": "01c81b27-f890-4915-b39b-9a2b6d7cdbf8",
+      "result_id": "a3fdf134-542a-45d3-8a1b-63cba93e3792"
+    },
+    {
+      "claim_id": "21f67222-fd68-4892-b325-c693214af4c4",
+      "result_id": "a3fdf134-542a-45d3-8a1b-63cba93e3792"
+    },
+    {
+      "claim_id": "5ad1dd5b-d676-4f57-969c-2ff6a9e8c513",
+      "result_id": "a3fdf134-542a-45d3-8a1b-63cba93e3792"
+    },
+    {
+      "claim_id": "2e3b5ac4-cd7d-4057-b839-11026f1f13f0",
+      "result_id": "a3fdf134-542a-45d3-8a1b-63cba93e3792"
+    },
+    {
+      "claim_id": "4f5a9ba7-544b-4611-9986-e051b7c16b6d",
+      "result_id": "8036c03a-9fb6-4781-a143-41043b6e62c4"
+    },
+    {
+      "claim_id": "0e217a4c-9183-4485-b8b9-4f7c1d47aa1b",
+      "result_id": "8036c03a-9fb6-4781-a143-41043b6e62c4"
+    },
+    {
+      "claim_id": "d3bd068f-a285-47b8-a08c-8f8312fd99cc",
+      "result_id": "8036c03a-9fb6-4781-a143-41043b6e62c4"
+    },
+    {
+      "claim_id": "27b8df26-c645-4292-b766-fd1cfab61b8c",
+      "result_id": "8036c03a-9fb6-4781-a143-41043b6e62c4"
+    },
+    {
+      "claim_id": "e6f98291-05ef-4753-b7df-c2b38ff8bf26",
+      "result_id": "8036c03a-9fb6-4781-a143-41043b6e62c4"
+    },
+    {
+      "claim_id": "dee6f9fe-c79d-4bf5-b5a3-9cf8c7153655",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "8486a37f-005f-47b9-9422-fe9f37b8f6d3",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "87f7f665-33c8-4c5b-a10e-1daea3f51f57",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "d01d5586-8fd9-4dce-88b6-f535cf8ab77f",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "e6b309f4-5d7d-4f87-b9bf-6cc409d597c6",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "7f9ade98-ecb1-4a24-a038-52f9dccfcf4b",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "fb80f086-06c5-4d79-9025-df4e12272cad",
+      "result_id": "2d257946-7990-4baa-838e-7908b47db0f4"
+    },
+    {
+      "claim_id": "25a9bb25-0f9b-4067-b42c-ba2545052819",
+      "result_id": "3d9522a6-c6a8-4dbf-b612-2148b5e80fca"
+    },
+    {
+      "claim_id": "b0d8e36b-388e-4a3c-afe0-3120de96ad1f",
+      "result_id": "3d9522a6-c6a8-4dbf-b612-2148b5e80fca"
+    },
+    {
+      "claim_id": "df19e73a-c204-4cb3-a2a6-dab66ec2e20e",
+      "result_id": "3d9522a6-c6a8-4dbf-b612-2148b5e80fca"
+    },
+    {
+      "claim_id": "18a76db0-1da0-4558-9442-2ecb72d39897",
+      "result_id": "edcd6c42-3534-411e-bb86-31a2a9538a21"
+    },
+    {
+      "claim_id": "ba74356a-5e0d-4460-85ae-8143c524c1fb",
+      "result_id": "42c04a18-ec9d-4208-8289-f31f6de38ee1"
+    },
+    {
+      "claim_id": "465a5813-780d-4faa-b696-90574454c613",
+      "result_id": "42c04a18-ec9d-4208-8289-f31f6de38ee1"
+    },
+    {
+      "claim_id": "a82981dc-c5bb-4ab2-9c48-2adc7509bb40",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "2db06667-f6d9-4d87-b88d-c5e4495b8269",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "c234a6b8-6c16-4d03-bfd5-bc34ad63c51f",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "b6f02573-c0f5-4aba-baa0-d4d3e6d74c8d",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "8c96ee4d-da3c-4d35-9b1d-29f2fa8d2494",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "838970d0-9c91-4a2e-a3f7-34a6dde5e421",
+      "result_id": "c165437d-3620-4a9a-a8a8-d85f0c36d7d4"
+    },
+    {
+      "claim_id": "0a5cca13-139a-4cab-abf2-99579c988379",
+      "result_id": "b33b1235-2ecd-44e5-9793-834caeb4efdf"
+    },
+    {
+      "claim_id": "6e34079f-c59f-4fc0-9855-8ab11d1ae4fe",
+      "result_id": "b33b1235-2ecd-44e5-9793-834caeb4efdf"
+    },
+    {
+      "claim_id": "48c7e22c-870d-401c-8cd0-dddb83c5b584",
+      "result_id": "b33b1235-2ecd-44e5-9793-834caeb4efdf"
+    },
+    {
+      "claim_id": "b5bc8e6b-6b92-4d8d-8ece-94cdc17b022c",
+      "result_id": "b33b1235-2ecd-44e5-9793-834caeb4efdf"
+    },
+    {
+      "claim_id": "6478b937-c6de-4346-b5da-381049c0a9f9",
+      "result_id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6"
+    },
+    {
+      "claim_id": "3ee962ac-31b9-4113-8e2c-96b0d803d5f4",
+      "result_id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6"
+    },
+    {
+      "claim_id": "9c28b8a4-0299-450b-9b43-43f60b18a3f5",
+      "result_id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6"
+    },
+    {
+      "claim_id": "48ba4f63-dc30-4519-8197-881bd1318915",
+      "result_id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6"
+    },
+    {
+      "claim_id": "d6818d02-aaf8-4e33-94eb-3d419f6ad27f",
+      "result_id": "50de0bff-7ebb-45f4-b80b-d0401147b5e6"
+    },
+    {
+      "claim_id": "d57c016b-47d0-4dae-a347-cb671bb6e284",
+      "result_id": "ddaa6c8c-90e2-456b-9a4b-e1e6987555e5"
+    },
+    {
+      "claim_id": "850b3456-4d11-41a2-8246-4dc6c6fd93f3",
+      "result_id": "ddaa6c8c-90e2-456b-9a4b-e1e6987555e5"
+    },
+    {
+      "claim_id": "e5c1f5b9-3d32-4b5a-9d8b-31b9f58a7221",
+      "result_id": "ddaa6c8c-90e2-456b-9a4b-e1e6987555e5"
+    },
+    {
+      "claim_id": "cc557470-ec09-4b8d-b583-1bafbf85e6a7",
+      "result_id": "ee74a34d-72c2-476c-a89b-5f8237542995"
+    },
+    {
+      "claim_id": "3e042821-2d99-42f9-b4cb-acb97618aec5",
+      "result_id": "ee74a34d-72c2-476c-a89b-5f8237542995"
+    },
+    {
+      "claim_id": "cbabfabe-774a-40b1-ac0d-14561cfd0aa0",
+      "result_id": "ee74a34d-72c2-476c-a89b-5f8237542995"
+    },
+    {
+      "claim_id": "cdd0de2e-ce8c-42f5-9b0b-1ab72518e16c",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "fc1ec428-5357-4c74-84c7-1724b1958ef8",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "775bacde-35f6-4fe3-8d36-dd8cbf6e4ee1",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "9426301e-1ee6-4ee0-ad5c-05ea169af80a",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "4b61b10f-4a4b-47d0-acd5-b2af97ac8f33",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "31027d4b-2cba-4c1d-a904-29b6071b1a54",
+      "result_id": "0aa70118-8ccc-4afd-a36e-4934f0ab2483"
+    },
+    {
+      "claim_id": "059c2ec4-7c19-4ad4-a623-379e782991ac",
+      "result_id": "fd3ce6f7-fe53-44af-afe8-c03547ff71d6"
+    }
+  ],
+  "comparisons": []
+}

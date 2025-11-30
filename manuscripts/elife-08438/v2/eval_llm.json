@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Individual zebrafish tailbud cells can behave as autonomous cellular oscillators. Explanted tailbuds showed persistent Her1-YFP oscillations with a period of 42.5 \u00b1 11.4 min. In serum-only conditions, most individual cells displayed a few pulses that damped out early (median cycles = 2), but when Fgf8b was added, persistent rhythmic behavior was observed (median cycles = 5) without altering the period. From 321 YFP-positive cells, 147 autonomous cells showed rhythmic expression (two or more pulses), with a period distribution of 78.8 \u00b1 15.3 min. Fully isolated cells in 96-well plates also sustained oscillations (period = 62 \u00b1 21 min, median cycles = 5). These results demonstrate that zebrafish segmentation clock cells do not need cell-cell contact to maintain oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C36 collectively provide strong experimental evidence for autonomous oscillations in isolated zebrafish tailbud cells. The data includes measurements from explanted tailbuds (C20-C21), low-density cultures with and without Fgf8b (C22-C30), control experiments ruling out focal drift artifacts (C31-C32), and fully isolated single cells (C34-C35). The experimental design appropriately controls for cell-cell contact, and the statistical reporting includes sample sizes, replicates, and quantitative measurements of period and cycle numbers. The conclusion that cells are autonomous oscillators (C2, C33, C36) is well-supported by the converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The oscillatory signals from individual cells display remarkable variability, including cells that start or stop oscillating, and stuttering rhythms. Amplitude displays slow variation revealed by correlations between consecutive cycles, while period does not show appreciable correlation at this timescale. No correlation was found between period and amplitude of each cycle. A Stuart-Landau oscillator model with slow fluctuations in the amplitude parameter \u03bc and additive white noise in the oscillator variables can account for this heterogeneity. The theory is consistent with a population of cells having the same oscillatory mechanism, captured during different time windows of their dynamics, and provides the first observation of longer timescales of noise in autonomous segmentation clock oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 describe the heterogeneity in oscillatory behavior and provide a theoretical framework to explain it. The experimental observations (C39-C43) are supported by data analysis shown in figures. The theoretical modeling (C44-C48) using the Stuart-Landau oscillator successfully reproduces key features of the data, including amplitude correlations, lack of period correlations, and the fraction of oscillating time. The model parameters were systematically explored (C47-C48), and the conclusions about the consistency of the theory with the data (C49-C50) are appropriately cautious. The integration of experimental observations with theoretical modeling is rigorous and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single cells have longer periods and lower precision than the tissue. Persistent cells (exhibiting sequential peaks over 80% of recording time, n=54) had a mean period of 78.3 min and a median quality factor QP ~4. In comparison, the embryo had a median quality factor QE ~10, indicating that tissue-level oscillations are approximately 3 times more precise than individual persistent cells in vitro. This increase should be considered a lower bound since many cells had lower Q factors. Single mammalian circadian fibroblasts had a median quality factor QF ~20, indicating that zebrafish segmentation clock cells are less precise than circadian clock cells. Theoretical modeling showed that white noise in the oscillator variables, but not amplitude noise, described the observed precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51-C63 provide comprehensive evidence for differences in period and precision between single cells and tissue. The experimental measurements use appropriate methods (wavelet transforms, quality factor calculations) and include proper controls (sampling windows of equivalent lengths, C51). The comparison between cells (QP ~4), embryo tissue (QE ~10), and circadian fibroblasts (QF ~20) is quantitative and statistically sound (C53, C55, C59). The theoretical modeling (C61-C63) appropriately identifies which noise sources contribute to the observed precision. The conclusion that tissue-level coupling increases precision (C56-C58) is well-supported, though appropriately qualified as a lower bound (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C64",
+      "C65",
+      "C78",
+      "C79"
+    ],
+    "result": "Individual cells have longer periods than the tissue, indicating a role for tissue-level processes in setting the period of segmentation. Single cell oscillators isolated from the zebrafish segmentation clock are autonomous, but tissue-level contributions aid in establishing the period and increasing the precision of segmentation. The results provide independent support for a role for collective processes in determining the period of the tissue-level segmentation clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C64-C65, C78-C79 represent the main conclusions of the study, synthesizing the experimental findings on autonomy, period, and precision. These conclusions are well-supported by the experimental data presented in the previous result groups. The claim about longer periods in isolated cells (C38, C78) is supported by direct measurements comparing cells to tissue. The conclusions about autonomy (C64) and the role of collective processes (C65, C79) are appropriately drawn from the comprehensive experimental evidence. These are the primary findings of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The period of oscillations in tailbud explants (42.5 \u00b1 11.4 min) was longer than in intact embryos (27 \u00b1 1 min), a 1.5-fold slowing. The period from low-density cells was approximately two-fold longer than explanted tailbuds. This supports the expectation that coupling with time delays between segmentation clock cells leads to a decrease in the period of the synchronized population. However, the magnitude of the difference is larger than anticipated from embryos with reduced Delta-Notch signaling (20% effect). Fgf8b does not affect period and appears to be permissive for the oscillatory state rather than instructive for the period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C73-C77 address the relationship between cell isolation and period changes. The experimental measurements (C69, C73) are quantitative and include appropriate comparisons. The conclusion that coupling affects period (C74) is supported by the data, though the authors appropriately note that the magnitude of the effect is larger than expected from previous studies (C75). The findings about Fgf8b (C76-C77) are supported by experimental data. However, the authors acknowledge uncertainty about the mechanism of general slowing in explanted tissue, which appropriately qualifies the interpretation. The prediction C68 is tested and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Mechanisms of oscillation in zebrafish based on reaction-diffusion processes, which rely on diffusion across the tissue and do not contain cell-autonomous oscillators, are not supported by the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is a logical conclusion from the demonstration of autonomous oscillations in isolated cells. If individual cells can oscillate without cell-cell contact or diffusible signals from neighbors, then models requiring tissue-level diffusion for oscillation generation are inconsistent with the data. This conclusion is appropriately drawn and supported by the experimental evidence of autonomous oscillations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The heterogeneity of oscillations can be described as trajectories of self-sustained oscillators in the vicinity of a Hopf bifurcation, where excursions across the bifurcation stop and start cycling behavior. Fgf signaling appears to push oscillators above this bifurcation, and the characteristic longer-timescales in amplitude noise may come from the inherent dynamics of the Erk network downstream of the Fgf receptor. Oscillators in the vicinity of a bifurcation may be more readily synchronized by coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C84 present a theoretical interpretation and speculation about the mechanism. While the Hopf bifurcation framework (C80-C81) is consistent with the modeling results, the specific claims about Fgf signaling (C82) and the Erk network (C83) are speculative and not directly tested. Claim C82 is marked as speculation in the evidence, and C83 is explicitly speculative. Claim C84 is supported by citations to previous theoretical work but is not directly tested in this study. These claims represent interesting hypotheses but lack direct experimental validation in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context on segmentation clocks, autonomy in biological oscillators, and previous studies on segmentation clock cells. The segmentation clock comprises coordinated oscillating cells producing rhythmic gene expression patterns. Previous studies in chick and mouse attempted to address cellular autonomy but had limitations. In zebrafish, treatment with DAPT leads to loss of spatial coherence, but oscillations persist in mutant embryos with reduced Notch signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C19 provide background context and literature review. These claims are appropriately supported by citations to previous work and represent accurate summaries of the field's knowledge. They establish the motivation for the current study and are not primary findings of this work. The characterization of previous studies' limitations (C15, C17) is fair and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background on Delta-Notch pathway effects and zebrafish tissue culture. Inhibiting the Delta-Notch pathway results in slower segmentation in zebrafish, interpreted as losing collective effects of coupling with delays. A comparable increase in period was not reported with explanted mouse tailbuds. General developmental slowing of explanted zebrafish tissue has been previously reported. The zebrafish segmentation clock can maintain stable oscillatory output over a three-fold change in frequency due to temperature differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C70-C72 provide relevant background information from previous studies, appropriately cited. These claims contextualize the current findings and are accurately represented. They are not primary findings of this manuscript but support the interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Comparative discussion of mouse segmentation clock and evolutionary speculation. Individual cells from the mouse segmentation clock are also noisy, but the contribution of cell-cell signaling to maintenance of oscillations remains unclear. In the mouse, intercellular signaling may be required for sustaining oscillations. Striking the optimal balance between autonomous and collectively-maintained oscillations could be a tunable evolutionary strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 are speculative statements about other systems (mouse) and evolutionary strategies. Claim C85 is supported by citation but notes that the mechanism remains unclear. Claims C86 and C87 are explicitly speculative and not tested in this study. These represent interesting hypotheses for future work but are not supported by data in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

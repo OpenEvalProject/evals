@@ -1,0 +1,2060 @@
+{
+  "submission": {
+    "id": "a444e1cb-aac6-4c9b-9e1a-78681a9b7f16",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:57:42.086690Z",
+    "updated_at": "2025-11-29T21:57:42.086690Z"
+  },
+  "content": [
+    {
+      "id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "submission_id": "a444e1cb-aac6-4c9b-9e1a-78681a9b7f16",
+      "content_type": "manuscript",
+      "content_text": "# The NF\u03baB-inducing kinase is essential for the developmental programming of skin-resident and IL-17-producing \u03b3\u03b4 T cells\n\n## Authors\n\n- Florian Mair<sup>1</sup>\n- Stefanie Joller<sup>1</sup> ([ORCID: 0000-0002-6906-4892](https://orcid.org/0000-0002-6906-4892))\n- Romy Hoeppli<sup>1</sup>\n- Lucas Onder<sup>2</sup>\n- Matthias Hahn<sup>3</sup>\n- Burkhard Ludewig<sup>2</sup>\n- Ari Waisman<sup>3</sup>\n- Burkhard Becher<sup>1</sup> ([ORCID: 0000-0002-1541-7867](https://orcid.org/0000-0002-1541-7867)) \u2020\n\n### Affiliations\n\n1. Institute of Experimental Immunology University of Zurich Zurich Switzerland\n2. Institute of Immunobiology Kantonsspital St. Gallen St. Gallen Switzerland\n3. Institute for Molecular Medicine, University Medical Center Johannes-Gutenberg University of Mainz Mainz Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b3\u03b4 T cells contribute to first line immune defense, particularly through their ability for rapid production of proinflammatory cytokines. The cytokine profile of \u03b3\u03b4 T cells is hard-wired already during thymic development. Yet, the molecular pathways underlying this phenomenon are incompletely understood. Here we show that signaling via the NF\u03baB-inducing kinase (NIK) is essential for the formation of a fully functional \u03b3\u03b4 T cell compartment. In the absence of NIK, development of V\u03b35+ dendritic epidermal T cells (DETCs) was halted in the embryonic thymus, and impaired NIK function caused a selective loss of IL-17 expression by \u03b3\u03b4 T cells. Using a novel conditional mutant of NIK, we could show in vivo that NIK signaling in thymic epithelial cells is essential for the thymic hardwiring of \u03b3\u03b4 T cell cytokine production.\n\n## Introduction\n\n\u03b3\u03b4 T cells, together with \u03b1\u03b2 T cells and B cells, are the only cells in mammals capable of generating diverse antigenic receptors by somatic gene rearrangement, which enables them to specifically recognize and respond to a vast array of antigens. However, while the essential role of \u03b1\u03b2 T cells and B cells for the induction of long-lasting protective immune responses is undisputed, \u03b3\u03b4 T cells due to their low abundance in peripheral lymphoid organs have been often ignored by the scientific community (Allison and Havran, 1991). This has changed in the past decade, as it became evident that \u03b3\u03b4 T cells are important players not only during protective immune reactions (Lockhart et al., 2006), but also in various models of autoimmune disease (Petermann et al., 2010; Cai et al., 2011; Pantelyushin et al., 2012).\n\nSeveral features distinguish \u03b3\u03b4 T cells from their \u03b1\u03b2 counterparts (reviewed in Vantourout and Hayday, 2013). Most notably, \u03b3\u03b4 T cells recognize qualitatively different antigens. The scope of the potential antigens has not been revealed entirely, but known targets include non-classical MHC molecules (Strid et al., 2008), phosophoantigens (Constant et al., 1994) as well as a discrete set of non-self proteins (Zeng et al., 2012). The second main characteristic of \u03b3\u03b4 T cells is their ability for rapid production of pro-inflammatory cytokines such as INF-\u03b3 and IL-17 independent of TCR engagement (Sutton et al., 2009). This feature has been suggested to be hardwired in developing \u03b3\u03b4 T cells already during thymic development, probably in dependency of self-antigen recognition (Jensen et al., 2008). The surface molecule CD27, which belongs to the tumor necrosis (TNF) receptor superfamily has been shown to distinguish IFN-\u03b3-producing from IL-17-producing \u03b3\u03b4 T cells (Ribot et al., 2009), as does the differential expression of the transcription factors T-bet and ROR\u03b3t and certain chemokine receptors such as CCR6 (Haas et al., 2009).\n\nAlthough the genetic diversity of the TCR\u00a0\u03b3\u03b4 locus would theoretically allow an even higher number of different TCR specificities than for \u03b1\u03b2 T cells (Bonneville et al., 2010), \u03b3\u03b4 T cells show a remarkable limitation in their TCR variability. Moreover, \u03b3\u03b4 T cells with a given TCR specificity often home to non-lymphoid organs, where the majority of mature \u03b3\u03b4 T cells can be found. The prime example of tissue homing-behavior is observed in dendritic epidermal T cells (DETCs), which are found in the murine epidermis and almost exclusively express a clonotypic TCR consisting of the V\u03b35 and V\u03b41 chains (Asarnow et al., 1988). V\u03b35+ DETCs are among the very first T cells to develop during embryogenesis, populating the epidermis already around day 15/16 of fetal development (Xiong et al., 2004). Also other subsets of \u03b3\u03b4 T cells, such as V\u03b34+\u00a0\u03b3\u03b4 T cells (mostly IL-17 producers), which migrate predominantly to the dermis and lung tissue, have been shown to develop only early in ontogeny (Allison and Havran, 1991; Haas et al., 2012; Prinz et al., 2013).\n\nThe underpinning signaling pathways and precise developmental program as well as the mechanisms underlying the pre-determined cytokine profile of \u03b3\u03b4 T cells have been only partially resolved. One major step forward was the identification of Skint-1 (Selection and upkeep of intraepithelial T cells-1), which has an essential function for the development of V\u03b35+ DETCs (Lockhart et al., 2006; Lewis et al., 2006; Boyden et al., 2008). Expression of Skint-1 by medullary thymic epithelial cells (mTECs) (Barbee et al., 2011) leads to a signaling cascade in developing \u03b3\u03b4 thymocytes that induces the typical gene expression profile of DETCs, concomitant to their preferential homing to the skin (Turchinovich and Hayday, 2011; Vantourout and Hayday, 2013). On the other hand, the induction of the typical gene signature of IL-17-producing V\u03b34+\u00a0\u03b3\u03b4 T cells depends on the function of the transcription factor Sox13 (Gray et al., 2013), while the required receptors remain elusive.\n\nIt has been known for some time that signaling pathways leading to activation of NF\u03baB are essential for the function of various immune cell compartments (reviewed in Li and Verma, 2002). The so-called classical pathway of NF\u03baB activation is induced mainly by molecular danger signals such as LPS or certain cytokines such as TNF or IL-1\u03b2. Non-canonical NF\u03baB signaling, which requires the NF\u03baB-inducing kinase (hereafter referred to as NIK, the encoding gene being Map3k14,) (Malinin et al., 1997; Yin, 2001) is activated by a discrete subset of TNF family members, including CD40L, Lymphotoxin (LT), BAFF (B cell activating factor) and RANKL (Receptor activator of NF\u03baB ligand). Signaling via the non-canonical pathway has been shown to fulfill roles in B cell survival (Sen, 2006), activation of T cells (Matsumoto et al., 2002; Ribot et al., 2009), maturation and function of dendritic cells (DCs) (Hofmann et al., 2011) as well as the induction of tolerance (Zhu et al., 2006; Bonneville et al., 2010), but it has not been studied in the context of \u03b3\u03b4 T cell biology in detail. Previous work has suggested that signaling via the CD70-CD27 axis (which belongs to the tumor necrosis factor receptor superfamily) can activate NF\u03baB p52 processing (Ribot et al., 2010). Also, LT\u03b2R signaling has been implicated in the differentiation program of bulk \u03b3\u03b4 thymocytes (Silva-Santos, 2005), and the NF\u03baB family members RelA and RelB were shown to guide the development of IL-17-producing V\u03b34+\u00a0\u03b3\u03b4 T cells (Powolny-Budnicka et al., 2011). Furthermore, the genesis of invariant NKT cells was claimed to depend on signaling via NIK (Elewaut et al., 2003).\n\nIn the present study we set out to systematically analyze the impact of non-canonical NF\u03baB signaling on the development and function of \u03b3\u03b4 T cells. In line with previous studies that were using knockout models of the TNF receptor family member RANKL (Roberts et al., 2012) we found that NIK-deficient mice showed a drastic loss of DETCs in the epidermis. Of note, in the absence of NIK most of the IL-17 production by splenic and lung-resident \u03b3\u03b4 T cells was lost, while their ability to express IFN-\u03b3 was not affected. Mechanistically, this was accompanied by a loss of Rorc and Sox13 expression in NIK-deficient CD27-\u00a0\u03b3\u03b4 T cells, while in turn expression of Tbet and Egr3 was increased. While previous studies reported trans-conditioning of developing \u03b3\u03b4 T cell precursors by CD4+ thymocytes (Silva-Santos, 2005; Powolny-Budnicka et al., 2011), our data suggest that NIK signaling specifically in thymic epithelium is essential for shaping the cytokine profile of the \u03b3\u03b4 T cell compartment.\n\n## Results\n\n### In the absence of NIK the development of DETCs is halted in the embryonic thymus\n\nPrevious studies have shown that the development of DETCs is partially dependent on signaling via the RANK-RANKL axis (Roberts et al., 2012). In line with this, we observed a disturbed pool of DETCs in the epidermis of adult Map3k14-/- mice (Yin, 2001), with only 30-\u201350% of the \u03b3\u03b4 T cells present expressing the canonical V\u03b35+ TCR (Figure 1A). Since DETCs are among the very first T cells to develop in ontogeny and populate the epidermis already prior to birth, we analyzed the epidermis of mouse embryos at day 19 post conception. Whereas there was already a prominent population of V\u03b35+ DETCs present in WT controls, DETCs were virtually absent in the skin of NIK-deficient embryos (Figure 1B,C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig1-v2.jpg)\n\n**Figure 1.:** (A) Lymphocytes isolated from the epidermis of adult heterozygous control (left panel) and Map3k14-/- animals were analysed for the presence of V\u03b35+ DETCs. Pregating is on live singlets and CD45+ CD11b- cells. (B) Analysis of the epidermal \u03b3\u03b4 T cell compartment of heterozygous control (upper panel) and Map3k14-/- embryos (day 19 post conception) after pregating on live singlets and CD45+ CD11b- cells. (C) Summary of the frequency of total \u03b3\u03b4 T cells as well as V\u03b35+ cells within the \u03b3\u03b4 T cell gate. Data are mean +/- SD and are representative of two similar experiments. (D) Analysis of developing V\u03b35+\u03b3\u03b4 thymocytes in the thymi of E19 embryos. Flow Plots have been pregated on live singlets and CD45+ CD4- cells. Lower panel depicts the summary of the frequency of total \u03b3\u03b4 thymocytes as well as V\u03b35+ cells within the \u03b3\u03b4 T cell gate in d19 embryonic thymi, and the median fluorescence intensity of the indicated markers. Data are mean +/- SD and representative of two similar experiments. (E) Analysis of the expression level of CD45RB, CD122, CD24 and CD62L on developing V\u03b35+\u03b3\u03b4 thymocytes isolated from E19 embryonic thymi. Grey shaded histograms depict heterozygous controls, red histograms Map3k14-/- cells. Lower panel shows the summary for the frequency of positive cells for CD45RB and CD122 and the median fluorescence intensity of CD24 and CD62L, respectively. Data are mean +/- SD and are representative of two similar experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Analysis of developing V\u03b35+\u00a0\u03b3\u03b4 thymocytes in E17 thymi. Flow Plots have been pregated on live singlets and CD45+ CD4- cells. Right panels depict the median fluorescence intensity of CD3 and V\u03b35 expression. Data are mean +/- SD and representative of two similar experiments. (B) Analysis of the expression level of CD45RB on developing V\u03b35+\u00a0\u03b3\u03b4 thymocytes isolated from E17 embryonic thymi. Grey shaded histograms depict heterozygous controls, red histograms Map3k14-/- cells. Right panel shows the summary for the frequency of CD45RB positive cells. Data are mean +/- SD and are representative of two similar experiments.\n\nThe absence of DETCs in the epidermis of Map3k14-/- embryos led us to speculate that NIK-deficient DETC precursors fail to develop in the embryonic thymus. To test this notion, we analyzed thymi from Map3k14-/- and heterozygous controls at embryonic day 19 for the presence of V\u03b35+ thymocytes. Indeed, these cells were present in NIK-deficient thymi, albeit at reduced numbers and with a consistent reduction in staining intensity of the TCR (Figure 1D). In order to assess the maturation status of the developing V\u03b35+ thymocytes, we evaluated the expression level of various molecules that have been associated with normal DETC development, such as CD45RB, CD122, CD24 and CD62L (Lewis et al., 2006). The expected upregulation of CD45RB and CD122, which is typical for developing DETCs was not found in Map3k14-/- embryos. In turn, the downregulation of CD24 and CD62L which normally coincides with DETC maturation was also reduced (Figure 1E). Similar observations with respect to the expression of CD45RB were obtained during the analysis of thymi isolated from E17 embryos (Figure 1\u2014figure supplement 1). Taken together, the loss of NIK abrogates normal development of DETC precursors in the embryonic thymus, corroborating previous findings using knockout animals for Tnfrsf11a (Roberts et al., 2012).\n\n### NIK-deficient lymphoid and non-lymphoid CD27-\u03b3\u03b4 T cells show a selective loss of IL-17 production\n\nBased on the role of NIK in the formation of the epidermal DETC pool we assessed the contribution of non-canonical NF\u03baB signaling to the development and function of other \u03b3\u03b4 T cell compartments in more detail. For comparison, throughout our study we included both targeted Map3k14-/- mice (Yin, 2001) as well as aly/aly animals, which harbor a point mutation in NIK, expressing a dysfunctional protein (Shinkura et al., 1999). Both in the spleen and the lung of these mutant animals, the total number of \u03b3\u03b4 T cells as well as the frequency of the two most prominent subclasses expressing the V\u03b34+ and V\u03b31.1+ TCR was unchanged. Also, the distribution of the CD27+ and CD27- subsets of \u03b3\u03b4 T cells was indistinguishable between Map3k14-/- and heterozygous control animals (Figure 2A\u2013C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig2-v2.jpg)\n\n**Figure 2.:** (A) Flow cytometric analysis of the splenic \u03b3\u03b4 T cell compartment of heterozygous control (upper panel) and Map3k14-/- animals after pregating on live singlets and CD45+ CD11b- B220- cells. The distribution of V\u03b31.1+, V\u03b34+, and CD27- V\u03b34+\u00a0\u03b3\u03b4 T cells is shown. (B) Summary of two independent experiments. Data represent mean +/- SD of the indicated cell subsets. (C) Analysis of the lung-resident \u03b3\u03b4 T cell compartment of heterozygous control (upper panel) and Map3k14-/- animals after pregating on live singlets and CD45+ CD11b- B220- cells. The distribution of V\u03b31.1+, V\u03b36+, and CD27- V\u03b36+\u00a0\u03b3\u03b4 T cells is shown. (D) Flow cytometric analysis of IFN-\u03b3, IL-17 and TNF-\u03b1 expression by peripheral \u03b3\u03b4 T cells after PMA/Ionomycin stimulation, isolated from the spleen of heterozygous control (upper panel) and Map3k14-/- animals (lower panel). Left plots have been pregated on CD45+ CD11b- CD4- live singlets. (E) Summary of the frequency of cytokine producing cells within the \u03b3\u03b4 T cell compartment. Data represent mean +/- SD. (F) Flow cytometric analysis of IFN-\u03b3 and IL-17 expression by lung-resident \u03b3\u03b4 T cells isolated from the lung of heterozygous control (upper panel) and Map3k14-/- animals (lower panel). Left plots have been pregated on CD45+ CD11b- CD4- live singlets. (G) Summary of the frequency of cytokine producing cells within the lung-resident \u03b3\u03b4 T cell compartment. Data represent mean +/- SD. (H) Flow cytometric analysis of IFN-\u03b3 and IL-17 expression by dermal \u03b3\u03b4 T cells isolated from the skin of heterozygous control and Map3k14-/- animals. Right panel depicts the frequency of cytokine producing cells within the dermal \u03b3\u03b4 T cell compartment. Data show mean +/- SD and are representative of at least three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Flow cytometric analysis of V\u03b34+ and V\u03b36+ cells within IFN-\u03b3 and IL-17 expressing \u03b3\u03b4 T cells isolated from the lung of heterozygous control (upper panel) and Map3k14-/- animals (lower panel). Left plots have been pregated on CD45+ CD11b- CD3+ TCR\u03b3\u03b4+ live singlets. (B) Summary of the frequency of V\u03b34+ and V\u03b36+ cells within the lung-resident \u03b3\u03b4 T cell compartment. Data represent mean +/- SD.\n\nHowever, when we assessed the primary function of \u03b3\u03b4 T cells, which is the rapid production of pro-inflammatory cytokines, we noticed that after in vitro stimulation of bulk peripheral lymphoid \u03b3\u03b4 T cells their ability to express IL-17 was strongly diminished. In contrast, the frequency of both IFN-\u03b3 and TNF-\u03b1-producing \u03b3\u03b4 T cells was similar between Map3k14-/- and control animals (Figure 2D,E). For lung-resident \u03b3\u03b4 T cells, which include V\u03b36+\u00a0\u03b3\u03b4 T cells as one the most potent sources of IL-17, we also observed a reduction in the ability of NIK-deficient cells for IL-17 secretion, but this was accompanied by a slight increase in the frequency of IFN-\u03b3 production (Figure 2F,G). The ratio of V\u03b34+ to V\u03b36+ cells in the remaining fraction of IL-17-producing \u03b3\u03b4 T cells did not change (Figure 2\u2014figure supplement 1). Similarly, for the steady state dermal \u03b3\u03b4 T cell compartment we observed that in the absence of NIK, \u03b3\u03b4 T cells were impaired in IL-17 expression (Figure 2H).\n\n### NIK-deficiency leads to impaired Rorc and Sox13 expression in CD27-\u03b3\u03b4 T cells\n\nTo reveal the underlying mechanism for the loss of IL-17 in \u03b3\u03b4 T cells, we analyzed the expression of Rorc and Il23r, which are both necessary for normal IL-17 production (Cua and Tato, 2010; Turchinovich and Hayday, 2011). To this end, we purified CD27- and CD27+\u00a0\u03b3\u03b4 T cells (Figure 3A) from Map3k14-/- and heterozygous control animals and analyzed gene expression by qPCR. While in controls, CD27-\u00a0\u03b3\u03b4 T cells expressed high levels of Rorc and Il23r, the same molecules were drastically reduced in NIK-deficient CD27-\u00a0\u03b3\u03b4 T cells (Figure 3B), which was accompanied by an upregulation of Tbet. Furthermore, we assessed the expression of the transcription factors Sox13 and Egr3, which have been proposed to be reciprocal regulators of \u03b3\u03b4 T17 cell development (Turchinovich and Hayday, 2011; Gray et al., 2013). While the expression level of both genes was not affected in CD27+\u00a0\u03b3\u03b4 T cells, NIK-deficiency selectively in CD27-\u00a0\u03b3\u03b4 T cells led to a loss of Sox13 and a gain of Egr3 expression (Figure 3C). Collectively, these data indicate that NIK signaling is essential for ROR\u03b3t and as well as Sox13 expression in CD27-\u00a0\u03b3\u03b4 T cells, thereby conferring their full potential for production of IL-17.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig3-v2.jpg)\n\n**Figure 3.:** (A) Gating strategy used for sorting of CD27+ and CD27-\u03b3\u03b4 T cells. Right plot depicts post-sort reanalysis, which routinely yielded purities >95%. (B) Analysis of the expression level of Rorc, Il23r and Tbet mRNA in sorted CD27+ and CD27-\u00a0\u03b3\u03b4 T cells isolated from the spleen of the indicated genotypes. Data represent mean +/- SD. (C) Analysis of the expression level of Sox13 and Egr3 in sorted CD27+ and CD27- splenic \u03b3\u03b4 T cells isolated from the indicated genotypes. (D) Backskin thickness after Aldara treatment of heterozygous control (open triangles) and Map3k14-/- animals (closed squares). Data are representative of two independent experiments. (E) IL17-A and IL17-F expression of dermal \u03b3\u03b4 T cell on day 6 after Aldara treatment.\n\nIn order to assess the functional impact of NIK-lesioned \u03b3\u03b4 T cells, we treated Map3k14-/- animals with Imiquimod, a well established system for the induction of psoriasis-like skin inflammation in mice (van der Fits et al., 2009; Cai et al., 2011; Pantelyushin et al., 2012). After treatment with Aldara (containing 5% Imiquimod), NIK-deficient animals displayed a slight, but not significant reduction of back skin thickness (Figure 3D). Analysis of the dermal \u03b3\u03b4 T cell compartment not only revealed reduced numbers of \u03b3\u03b4 T cells (data not shown), but also a significant reduction of both IL-17A and IL-17F expression by \u03b3\u03b4 T cells (Figure 3E). This suggests that NIK-signaling also in an inflammatory setting is essential for full IL-17 production by \u03b3\u03b4 T cells, but that other cell types, such as ILCs (Pantelyushin et al., 2012) can compensate this functional impairment during Aldara induced skin inflammation.\n\n### Targeted deletion of NIK in mTECs, but not in \u03b3\u03b4 T cells causes abnormal DETC development\n\nWhile our data and work from others (Roberts et al., 2012) clearly suggest a non-redundant role of non-canonical NF\u03baB signaling in the development of DETCs, it has so far not been possible to determine whether NF\u03baB signaling occurs in a \u03b3\u03b4 T cell intrinsic or extrinsic manner. To dissect the contribution of different cellular compartments in vivo, we generated a novel conditional mouse mutant that allows cell-type specific deletion of the Map3k14 gene using the Cre/LoxP system. Map3k14flox/wt animals were generated by gene targeting in embryonic stem (ES) cells, thereby inserting LoxP sites up- and downstream of Exon 4 and 6 of the Map3k14 gene locus, respectively (Supp. Figure 1). These mice were first crossed to a Deleter-Cre strain, followed by breeding the deleted locus to homozygosity. Examination of the resulting Map3k14del/del mice showed that these mice were lacking lymph nodes, suggesting that the conditional construct is working as expected (Figure 4A). To further verify the phenotype of Map3k14del/del mice, we compared the cytokine production of peripheral \u03b3\u03b4 T cells to WT and Map3k14-/- animals, showing that Map3k14del/del mice phenocopy the full knockout (Figure 4B). The same was true for the epidermal DETC pool (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig4-v2.jpg)\n\n**Figure 4.:** (A) Map3k14flox/wt\u00a0mice have been crossed to Deleter Cre animals for deletion of the Loxp flanked gene locus. After subsequent breeding to homozygosity, Map3k14del/del mice were analyzed for the presence of lymph nodes. Upper panel depicts heterozygous controls. (B) Splenic \u03b3\u03b4 T cells from control, Map3k14-/- and Map3k14del/del mice were assessed for production of IL-17 (left panel) and IFN-\u03b3 (right panel) by intracellular cytokine staining. (C) The epidermal \u03b3\u03b4 T cell compartment of control, Map3k14-/- and Map3k14del/del animals was assessed for the frequency of V\u03b35+ DETCs. (D) Lymphocytes isolated from the epidermis of adult control (upper panel), Map3k14-/- and Ccl19-Cre+ Map3k14flox/flox animals were analysed for the presence of V\u03b35+ DETCs. Pregating is on live singlets and CD45+ cells. Right panel depicts the summary of the frequency of total \u03b3\u03b4 T cells as well as V\u03b35+\u00a0\u03b3\u03b4 T cells in the epidermis of Control, Map3k14-/- and Ccl19-Cre+ Map3k14flox/flox animals. Data represent mean +/- SD. (E) Frequency of total \u03b3\u03b4 T cells in the skin of 12-\u201313 day old control littermates and Foxn1-Cre+ Map3k14flox/flox\u00a0animals. Data represent mean +/- SD and is pooled from several independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of the targeted Map3k14 gene locus showing the position of the Loxp Sites flanking exon 4-\u20136. Abbreviations are denoted in the figure. (B) Schematic representation of the Map3k14 locus after Cre-mediated recombination, leading to a frameshift and a stop codon in exon 7.\n\nAs a next step, we assessed whether the DETC defect observed in complete NIK-knockout animals is due to the requirement for NIK signaling in thymic epithelial cells. To specifically delete NIK in medullary thymic epithelial cells (mTECs), Map3k14flox/flox mice were crossed to Ccl19-Cre mice, which express Cre solely in lymph node stromal cells and mature medullary thymic epithelial cells (Chai et al., 2013; Onder et al., 2015). Ccl19-Cre+ Map3k14flox/flox animals phenocopied the aberrant DETC development observed in germline Map3k14-/- mice, with a loss of V\u03b35 expression by DETCs (Figure 4D). However, we observed some variation in the penetrance of the Ccl19-Cre transgene, with some litters presenting with a phenotype, while others did not, suggesting that the start of Cre expression driven by Ccl19 promotor sharply coincides with the start of DETC development in the embryo. Thus, we decided to utilize an additional strain targeting the thymic epithelium, namely Foxn1-Cre mice in which Cre is under control of the Foxn1 promotor and thus active in all thymic epithelial cells (both cortical and medullary) (Gordon et al., 2007). Corroborating our findings, Foxn1-Cre+ Map3k14flox/flox showed a strong reduction in both frequency and number of skin-resident TCR\u03b3\u03b4high DETCs (Figure 4E).\n\n### NIK signaling specifically in thymic epithelial cells is essential for the formation of the IL-17-producing \u03b3\u03b4 T cell pool\n\nTo assess which cellular compartment requires NIK for the formation of IL-17 committed \u03b3\u03b4 T cells, we first deleted NIK specifically in CD27-\u00a0\u03b3\u03b4 T cells using Rorc-Cre+ Map3k14flox/flox animals. Analysis of Fatemap Rorc-Cre+ R26-Stop-flox-YFP mice showed that around 90% of CD27-\u00a0\u03b3\u03b4 T cells in the lung expressed yellow fluorescent protein (YFP), indicating a good targeting efficiency of this cellular subset (Figure 5A). However, lung-resident \u03b3\u03b4 T cells in Rorc-Cre+ Map3k14flox/flox mice expressed IL-17 at levels comparable to wildtype controls (Figure 5B), suggesting that \u03b3\u03b4 T cell intrinsic signaling is dispensable for the commitment of IL-17-producing \u03b3\u03b4 T cells. To exclude a potential role of NIK signaling in the CD4+\u00a0\u03b1\u03b2 thymocyte compartment (Powolny-Budnicka et al., 2011), we analyzed both peripheral and lung-resident \u03b3\u03b4 T cells in CD4-Cre+ Map3k14flox/flox mice. Their ability for IL-17 production was comparable to wildtype controls (Figure 5C), demonstrating that also within the \u03b1\u03b2 thymocyte compartment NIK signaling is dispensable.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10087/elife-10087-fig5-v2.jpg)\n\n**Figure 5.:** (A) \u03b3\u03b4 T cells were isolated from the lung of Rorc-Cre+ R26-Stop-flox YFP-mice and assessed for the frequency of YFP+ cells within the CD27-\u03b3\u03b4 T cell compartment. (B) Lung-resident \u03b3\u03b4 T cells from adult control, Map3k14-/- and Rorc-Cre+ Map3k14flox/flox mice were assessed for production of IL-17 (left panel) and IFN-\u03b3 (right panel) by intracellular cytokine staining. (C) Lung-resident \u03b3\u03b4 T cells from adult control and CD4-Cre+ Map3k14flox/flox mice were assessed for production of IL-17 (left panel) and IFN-\u03b3 (right panel). (D) Lung-resident as well as splenic \u03b3\u03b4 T cells from adult control and Ccl19-Cre+ Map3k14flox/flox mice were assessed for production of IL-17 and IFN-\u03b3. Data is representative of three independent experiments. (E) Frequency of IL-17-producing \u03b3\u03b4 T cells in the lung of 12-\u201313 day old control littermates and Foxn1-Cre+ Map3k14flox/flox animals, plots have been pregated on live CD45+ singlets, CD3+ TCR\u03b3\u03b4+ cells. Right panels depict the summary of several independent experiments for cytokine production in the lung (left) and spleen (right). Data are mean +/- SD.\n\nBased on these results we speculated whether loss of NIK signaling in TECs will impact on the commitment of IL-17-producing \u03b3\u03b4 T cells. To this end, we analyzed the lung-resident \u03b3\u03b4 T cell compartment of both Ccl19-Cre+ Map3k14flox/flox and Foxn1-Cre+ Map3k14flox/flox mice. While \u03b3\u03b4 T cells isolated from the lung of Ccl19-Cre+ Map3k14flox/flox animals did not present with any abnormalities in cytokine production, \u03b3\u03b4 T cells isolated from P13 Foxn1-Cre+ Map3k14flox/flox mice showed significant defects in their ability for IL-17 production both in the spleen and lung (Figure 5D), suggesting that indeed NIK signaling in thymic epithelial cells is needed for imprinting the cytokine commitment onto developing \u03b3\u03b4 T cells.\n\n## Discussion\n\nIn the past years, \u03b3\u03b4 T cells have attracted growing interest due to their unique features that place them at the interface of adaptive and innate immunity. Nevertheless, in contrast to \u03b1\u03b2 T cells, the signaling events underlying \u03b3\u03b4 T cell development and activation are much less understood (reviewed in Prinz et al., 2013 and Vantourout and Hayday, 2013). Here, we have shown in vivo that NIK signaling in thymic epithelial cells is essential for the full function of two different \u03b3\u03b4 T cell populations, namely skin-resident DETCs as well as CD27- IL-17-producing \u03b3\u03b4 T cells.\n\nPrevious work has suggested an involvement of the NF\u03baB-inducing kinase in the differentiation of both \u03b1\u03b2 and \u03b3\u03b4 T cells (Eshima et al., 2014). Contrary to the findings by Eshima and colleagues we could not observe a consistent overall reduction in the number of \u03b3\u03b4 T cells (except the DETC pool), yet we observed functional impairment of CD27- IL-17-producing \u03b3\u03b4 T cells. This discrepancy might result from two mutually non-exclusive explanations: first, aly/aly mice as well as Map3k14-/- mice due to their complex phenotype (including impairment of thymic negative selection) are prone to develop some degree of tissue inflammation over time, which is accompanied by an expansion of both CD4+ and CD8+ cells (Tsubata et al., 1996; Ishimaru et al., 2006; Zhu et al., 2006) and could thereby induce a relative decrease in the proportion of \u03b3\u03b4 T cells. Second, it has recently been established that the \u03b3\u03b4 T cell compartment cannot be fully reconstituted using bone-marrow chimeric animals (Gray et al., 2011; Haas et al., 2012). Using a genetic model that allows the cell-type specific deletion of NIK avoids all these confounding phenotypes of mice in which the gene locus of NIK (Map3k14) has been deleted in the germ-line.\n\nTwo members of the TNFR family, namely CD40 and RANK, have been implicated both in the development of DETCs and full maturation of mTECs (Hikosaka et al., 2008; Akiyama et al., 2008). In embryogenesis, these events occur at similar time points post conception, and it seems that in the embryonic thymus, developing DETC precursors signal via the RANKL-RANK axis to immature mTECs, inducing their full maturation to Aire+ MHC-IIhigh mTECs (Roberts et al., 2012). Hence, Tnfrsf11a-/- mice have reduced numbers of DETCs. Given that NIK is downstream of RANK (Darnay et al., 1999), one would expect a similar phenotype in Map3k14-/- animals, but the DETC deficiency that we observed in newborn Map3k14-/- mice was much more pronounced than in Tnfrsf11a-/- animals, suggesting that during DETC development several upstream receptors converge in their signaling to NIK, making it a key pathway during thymic DETC development. Importantly, our data obtained using the conditional NIK-mutant strongly suggests that for normal function of the \u03b3\u03b4 T cell compartment, NIK signaling does not act \u03b3\u03b4 cell-intrinsically but in trans by its function in thymic epithelial cells. Conditional deletion of NIK solely in thymic epithelial cells was sufficient to copy the DETC phenotype seen in complete germ-line NIK-knockout animals. We believe this to be the first genetic in vivo demonstration that non-canonical NF\u03baB signaling is not required in DETCs in a cell-intrinsic manner, but through its activity in TECs.\n\nThe ability of CD27-\u00a0\u03b3\u03b4 T cells to rapidly produce IL-17 even after being activated only by cytokines (Sutton et al., 2009; Ribot et al., 2009) has been the focus of intense research. Only the neonatal thymic microenvironment appears to have the capacity to imprint a stable cytokine profile to \u03b3\u03b4 T cells, since the IL-17-producing \u03b3\u03b4 T cell subsets cannot be reconstituted in adult animals by bone marrow transfer (Haas et al., 2012). Very recently, a hallmark paper has provided mechanistic insights into how this can be achieved: during embryonic development of certain \u03b3\u03b4 T cell subsets, the signaling threshold for activation of the TCR becomes markedly altered (Wencker et al., 2013). Hence, mature \u03b3\u03b4 T cells do not necessarily rely on a TCR stimulation as \u201c\u2018signal one\u201d\u2019, although they can still respond to that (Strid et al., 2011).\n\nHowever, while this intriguing mechanism (Wencker et al., 2013) explains the behavior of several \u03b3\u03b4 T cell subsets, the thymic cues orchestrating this hard-wiring of \u03b3\u03b4 T cells remain unclear. Previous work suggested either LT\u03b2R-dependent trans-conditioning by double positive thymocytes or \u03b3\u03b4 T cell intrinsic RelB activation (Silva-Santos, 2005; Powolny-Budnicka et al., 2011). Further work by Silva-Santos and colleagues emphasized the role of TNF-receptor family members such as CD27 as well as NF\u03baBp52 activation (Ribot et al., 2010). However, the contribution of thymic stromal cells to these processes has not been experimentally addressed in vivo. Our data suggest that NF\u03baB signaling via NIK seems to be dispensable both within CD27-\u00a0\u03b3\u03b4 T cells as well as \u03b1\u03b2 T cells, at least for their ability for expression of pro-inflammatory IL-17. Of note, deletion of NIK in all thymic epithelial cells using Foxn1-Cre phenocopied the complete NIK-knockout in terms of IL-17 expression by CD27-\u03b3\u03b4 T cells, while this was not the case using Ccl19-Cre. The latter has been reported to target only maturing medullary thymic epithelial cells (Onder et al., 2015). This would suggest that the instruction of \u03b3\u03b4 T cells is mediated by early or junctional TECs, or that the timing of Ccl19-Cre-mediated recombination sharply coincides with the expression of the \u03b3\u03b4 T cell instructing program in TECs. Based on our observation that NIK signaling in the early thymic stroma has a profound and long-lasting effect on the maturation and cytokine profile of developing \u03b3\u03b4 T cells, further studies are required in order to precisely define the nature of \u03b3\u03b4 T cell instructing molecules, and which thymic epithelial cell type is required for delivery. While our data does not exclude a role for canonical-NF\u03baB signaling via RelA (Powolny-Budnicka et al., 2011), the impact of non-canonical signaling via NIK on the development of DETC precursors and IL-17-producing \u03b3\u03b4 T cells stems from signaling within the thymic stroma, for which the conditional NIK mutant is a unique tool for further studies. Future work will reveal whether NIK-deficient thymic stroma influences only \u03b3\u03b4 T cell development, or also the functional profile of the subsequently emerging \u03b1\u03b2 T cell compartment.\n\n## Materials\u00a0and\u00a0methods\n\n### Mice and animal experiments\n\nC57Bl/6 (wildtype) mice were purchased from Jackson Laboratories and bred in-house at the Laboratory Animal Science Center (LASC) of the University of Zurich under specific pathogen-free (SPF) conditions. Map3k14-/- mice were kindly provided by Robert Schreiber (Washington University School of Medicine, USA), backcrossed to C57Bl/6 background and bred in-house. Alymphoplasia mice (here referred to as aly/aly) were obtained from Clea Laboratories (Japan) and bred in-house. Map3k14flox/wt mice were generated in collaboration with the lab of Ari Waisman (University of Mainz, Germany) by TaconicArtemis. Briefly, a targeting vector containing the Loxp-flanked Exons 4-\u20136 of the Map3k14 loucs was introduced into embryonic stem (ES) cells, ES cell clones with homologous integration were selection and injected into blastocytes (Figure 4\u2014figure supplement 1). Ccl19-Cre mice were generated in the lab of Burkhard Ludewig (Institute of Immunobiology, St. Gallen, Switzerland) by Lucas Onder (Chai et al., 2013). Foxn1-Cre mice were purchased from Jackson (Gordon et al., 2007). For the induction of psoriasis-like skin inflammation 55\u00a0mg of Aldara (containing 5% of Imiquimod) was applied to the shaved back skin of animals. Treatment of animals as well as measurement of skin thickness was done blinded. All animal experiments were approved by local authorities (Swiss cantonal veterinary office Zurich, KVET license numbers 86/2012, 70/2015, 100/2015 and 68/2013) and performed in strict accordance with the corresponding license.\n\n### Lymphocyte isolation from the skin and lung\n\nUnless stated otherwise, ears were taken as the donor organ. Ears were split into dorsal and ventral sides using forceps, followed by incubation with Dispase (2.4 mg/ml, Gibco) in HBSS with Ca2+/Mg2+ at 37\u00b0C for 90 min Epidermal sheets were removed from the dermis, cut into small pieces using scissors and further digested using Collagenase Type 4 (0.4 mg/ml, Sigma) in HBSS with Ca2+/Mg2+ and 10% FCS at 37\u00b0C for 60-\u201390 min The resulting suspension was mechanically disrupted using 19\u00a0g needles and a syringe. After filtering, the cell suspension was used in downstream applications.\n\nLungs were isolated, cut into small pieces using scissors and further digested using Collagenase D (0.5 mg/ml, Roche) in RPMI with 2% FCS and 25 mM HEPES. The resulting suspension was mechanically disrupted using 19\u00a0g needles and a syringe, followed by filtering and downstream analysis.\n\n### Lymphocyte isolation from embryonic thymi\n\nAfter setting up timed matings o/n, female mice were observed for signs of pregnancy, sacrificied on the indicated time points and embryos were isolated and euthanized by decapitation. The day after timed mating was considered day 0. Embryonic thymi were collected using fine forceps and a stereo microscope (Leica), and then dissociated by mechanical disruption using a cell strainer and a syringe pistil.\n\n### Flow cytometry\n\nFlow cytometric analysis was performed following standard methods (reviewed in Perfetto et al., 2004). All flourochrome-conjugated antibodies used were obtained either from BD (NJ,\u00a0USA), BioLegend (CA,\u00a0USA) or eBioscience (CA,\u00a0USA). In all stainings, dead cells were excluded using an Aqua or Near-IR Live/Dead fixable staining reagent (Life Technologies, now Thermo Fisher Scientific, MA, USA / BioLegend), and doublets were excluded by FSC-A vs FSC-H gating. For intracellular cytokine staining, cells were incubated 4 hours in IMDM containing 10% FCS with PMA (50\u00a0ng/ml) / Ionomycin (500\u00a0ng/ml) and GolgiPlug (Brefeldin A, BD). Cytofix/Cytoperm (BD) was used according to the manufacturers instructions, and Perm/Wash buffer was prepared in the lab (PBS containing 0.5% Saponin and 5% BSA). Analysis was performed using a LSR II Fortessa (special order research product, BD, equipped with 405 nm, 488 nm, 561 nm and 640 nm laser lines), cell sorting was carried out using a FACSAria III (BD). Data analysis was performed using FlowJo V9.x and 10.0.x (Treestar, OR,\u00a0USA).\n\n### qPCR analysis\n\nIndicated cellular subsets were sort purified and collected in Trizol reagent. Afterwards, RNA was isolated using PureLink RNA Micro Kit (Thermo Fisher Scientific) following the manufacturers instructions. The eluted RNA was transcribed into cDNA using M-MLV reverse transcriptase (Thermo Fisher Scientific) or Superscript II (Thermo Fisher Scientific) and random primers. cDNA was diluted either 1:5 or 1:10 and used for qPCR with iTaq Universal SYBR Green Supermix (BioRad, CA,\u00a0USA) and a BioRad C1000Touch / CFX384 real-time system according to the manufacturers instructions. The used primers (intron-spanning) were as follows:\n\nPolR2a (145 bp): CTGGTCCTTCGAATCCGCATC\n\nGCTCGATACCCTGCAGGGTCA\n\nMap3k14 (164 bp): CGAAACTGAGGACAACGAG\n\nCACACTGGAAGCCTGTCTG\n\nSkint-1 (143 bp): TTCAGATGGTCACAGCAAGC\n\nGAACCAGCGAATCTCCATGT\n\nRorc (114 bp): CATATGCCTCTCTGACAGAC\n\nAAAAGAGGTTGGTGCGCTG\n\nTbet: CAACAACCCCTTTGCCAAAG\n\nTCCCCCAAGCAGTTGACAGT\n\nEgr3: CAACGACATGGGCTCCATTC\n\nGGCCTTGATGGTCTCCAGTG\n\nSox13: GCTTTACCTATTCAGCCCAT\n\nACCTCTTCACCACAGGGG\n\n### Statistical analysis\n\nUnless stated otherwise, data is displayed as mean +/- standard deviation.\n\nStatistical calculations were performed using GraphPad Prism, and significance was calculated using an unpaired t-test unless stated otherwise.\n",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0f406b15-b2a1-4553-b7c2-832319a7ed42",
+      "submission_id": "a444e1cb-aac6-4c9b-9e1a-78681a9b7f16",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fiona M Powrie, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10087.011](https://doi.org/10.7554/eLife.10087.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Signaling via the NF\u03baB-inducing kinase is essential for the function of skin-resident and IL-17 producing \u03b3\u03b4 T cells\" for peer review at eLife. Your submission has been favorably evaluated by Tadatsugu Taniguchi (Senior editor), Fiona Powrie (Reviewing editor) and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nMair and colleagues analyzed \u03b3\u03b4 T cells in NIK-deficient mice and observed two interesting defects:\n\n1) The embryonic development of \u03b35\u03b41 epidermal T cells is strongly affected;\n\n2) The IL-17 production capacity of \u03b34 and \u03b36 CD27- T cells in spleen and lung is markedly reduced, together with a reduction of Rorc and the receptor for IL-23.\n\nExperiments with a novel conditional knockout crossed with a Cre deleter expressed in lymph node stroma and medullary thymic epithelial cells demonstrated that NIK signaling is required in a cell extrinsic fashion, for the development of \u03b35. Conditional knockout crossed with a FoxN1-deleter, which acts both in cortical and medullary thymic epithelia showed a defect of IL-17 production capacity of \u03b3\u03b4 T cells.\n\nThis study is interesting, well-organized and performed. It contains a substantial amount of work, is technically sound and advances our understanding of T cell development.\n\nSpecific comments:\n\n1) There are reservations regarding the novelty of this study, because of a previous study published in Immunology in 2014 by Eshima et al., which shows a defect of \u03b3\u03b4 T cells in Nik-deficient mice. This paper is not cited and should be discussed.\n\n2) A major conceptual gap which is neither addressed nor properly discussed is which upstream receptor(s) control NIK activity in CD27- \u03b3\u03b4 T cells. Is it LTbR? Or RANK? The issue of upstream receptors is also relevant for DETC development since NIK-/- mice have a stronger phenotype than RANK-/- animals. The authors should at a minimum discuss these issues carefully. Another possibility would be to stimulate thymic stroma (from FTOC) with agonists for these receptors and biochemically check NIK activation.\n\n3) Figure 2 shows reduced IL-17 producers in the spleen and lung of NIK-/- mice. What about the dermis \u2013 in steady-state and upon psoriasis induction \u2013 a model fully established in the Becher lab? Furthermore, how is the disease scored in these animals (if there is an IL-17 phenotype in the dermis)?\n\n4) Figure 4: what is the embryonic THYMIC V\u03b35+ phenotype (at E15-E16) of the CCL19-conditional NIK-/- mice?\n\n5) Figure 5: in comparison with FoxN1-conditional NIK-/- mice, what is the SPLENIC IL-17 phenotype of CCL19-conditional NIK-/- animals? (This could also be shown in Figure 4).\n\n6) The title is misleading: the effect on skin-resident \u03b3\u03b4 T cells (DETC) is not functional, but rather developmental/maturation.\n\n7) The authors should cite Ribot et al., J Immunol, 2010 in the fifth paragraph of the Introduction when discussing the role of non-canonical NKkB signalling in \u03b3\u03b4 T cell biology. This paper shows that CD27 costimulation of CD27+ \u03b3\u03b4 T cells activates non-canonical NF-kB signalling.\n\n8) In the second paragraph of the subsection \u201cIn the absence of NIK the development of DETCs is halted in the embryonic thymus\u201d, when describing Figure 1D: the difference in numbers of V\u03b35+ thymocytes is not significant. The drop in total \u03b3\u03b4 thymocytes (Figure 1D) must therefore be due to non-V\u03b35+ cells. This should be qualified. Given the subsequent clear-cut data in Figure 1E, the text should clarify a maturation defect in thymic development of DETC precursors, which likely accounts for the skin phenotype (Figure 1B).\n\n9) Figure 1: V\u03b35+ thymocyte development peaks at E15-E16, not at E19 when the analysis was performed. The authors should analyse this earlier ontogeny stage for proper assessment of DETC precursor development (rather than thymic maintenance).\n\n10) Figure 2F: did the authors check the V\u03b34 versus V\u03b36 repertoire of IL-17+ \u03b3\u03b4 T cells in the lung of NIK-/- and control mice?\n\n11) Discussion: The authors should qualify their conclusion as follows \"the impact of non-canonical signaling via NIK on the development of DETC precursors and IL-17-producing \u03b3\u03b4 T cells stems from signaling within the thymic stroma\". They cannot generalize this conclusion to other aspects of \u03b3\u03b4 T cell development which were not addressed in this study.\n",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37a16ad6-5e43-4829-b604-cf6427389e93",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C1",
+      "claim": "Signaling via the NF\u03baB-inducing kinase (NIK) is essential for the formation of a fully functional \u03b3\u03b4 T cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that signaling via the NF\u03baB-inducing kinase (NIK) is essential for the formation of a fully functional \u03b3\u03b4 T cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by multiple experimental results throughout the manuscript including data from NIK-deficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "31efbcb4-f7da-487c-9c10-fcb87e6c94ab",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C2",
+      "claim": "In the absence of NIK, development of V\u03b35+ dendritic epidermal T cells (DETCs) was halted in the embryonic thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of NIK, development of V\u03b35+ dendritic epidermal T cells (DETCs) was halted in the embryonic thymus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B,C demonstrating virtually absent DETCs in NIK-deficient embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "8b76527d-c610-40a8-ae94-760c09462db7",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C3",
+      "claim": "Impaired NIK function caused a selective loss of IL-17 expression by \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "impaired NIK function caused a selective loss of IL-17 expression by \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2 showing reduced IL-17 production in NIK-deficient \u03b3\u03b4 T cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "aca0e434-c36e-46e5-8b8d-2c4d39deb2ef",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C4",
+      "claim": "NIK signaling in thymic epithelial cells is essential for the thymic hardwiring of \u03b3\u03b4 T cell cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "we could show in vivo that NIK signaling in thymic epithelial cells is essential for the thymic hardwiring of \u03b3\u03b4 T cell cytokine production",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated using conditional NIK mutants with TEC-specific deletion (Foxn1-Cre and Ccl19-Cre) shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e29e900a-d359-4ea0-a57d-c617fe085160",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C5",
+      "claim": "\u03b3\u03b4 T cells contribute to first line immune defense through their ability for rapid production of proinflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3\u03b4 T cells contribute to first line immune defense, particularly through their ability for rapid production of proinflammatory cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract drawing on established scientific knowledge about \u03b3\u03b4 T cell function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "02345b4b-0cb9-4b4b-9609-abe8a2a523a3",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C6",
+      "claim": "The cytokine profile of \u03b3\u03b4 T cells is hard-wired already during thymic development.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytokine profile of \u03b3\u03b4 T cells is hard-wired already during thymic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "4a781c84-03c9-4068-80f7-f7449c55529d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C7",
+      "claim": "\u03b3\u03b4 T cells are important players during protective immune reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "it became evident that \u03b3\u03b4 T cells are important players not only during protective immune reactions (Lockhart et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lockhart et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2aa0c9aa-8346-46a8-9904-b70f63a0c673",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C8",
+      "claim": "\u03b3\u03b4 T cells are important players in various models of autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "it became evident that \u03b3\u03b4 T cells are important players not only during protective immune reactions (Lockhart et al., 2006), but also in various models of autoimmune disease (Petermann et al., 2010; Cai et al., 2011; Pantelyushin et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Petermann et al., 2010; Cai et al., 2011; Pantelyushin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "4fc25c06-7dec-4b22-8eeb-14e15baff3c7",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C9",
+      "claim": "\u03b3\u03b4 T cells recognize qualitatively different antigens compared to \u03b1\u03b2 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, \u03b3\u03b4 T cells recognize qualitatively different antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature and is supported by subsequent citations about antigen recognition.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "cff96e4e-4bfc-432f-bcab-51ef02a3bee9",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C10",
+      "claim": "Known targets of \u03b3\u03b4 T cells include non-classical MHC molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "known targets include non-classical MHC molecules (Strid et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Strid et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "3ce48e6b-cd11-466c-ab72-f6a9d384a552",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C11",
+      "claim": "Known targets of \u03b3\u03b4 T cells include phosphoantigens.",
+      "claim_type": "EXPLICIT",
+      "source": "known targets include non-classical MHC molecules (Strid et al., 2008), phosophoantigens (Constant et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Constant et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "bdeb36ae-d46a-4d91-8005-df8b1aea1d55",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C12",
+      "claim": "Known targets of \u03b3\u03b4 T cells include a discrete set of non-self proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "known targets include non-classical MHC molecules (Strid et al., 2008), phosophoantigens (Constant et al., 1994) as well as a discrete set of non-self proteins (Zeng et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zeng et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "a2056249-4222-4274-acf2-7efe66bb5b7a",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C13",
+      "claim": "\u03b3\u03b4 T cells have the ability for rapid production of pro-inflammatory cytokines such as IFN-\u03b3 and IL-17 independent of TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "The second main characteristic of \u03b3\u03b4 T cells is their ability for rapid production of pro-inflammatory cytokines such as INF-\u03b3 and IL-17 independent of TCR engagement (Sutton et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sutton et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1cc848a0-0ed6-4596-a994-56eb7e84cf79",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C14",
+      "claim": "The rapid cytokine production feature of \u03b3\u03b4 T cells has been suggested to be hardwired in developing \u03b3\u03b4 T cells already during thymic development, probably in dependency of self-antigen recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature has been suggested to be hardwired in developing \u03b3\u03b4 T cells already during thymic development, probably in dependency of self-antigen recognition (Jensen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jensen et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "a04626e8-949f-4d7d-9f30-e63ed77aee35",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C15",
+      "claim": "The surface molecule CD27 distinguishes IFN-\u03b3-producing from IL-17-producing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface molecule CD27, which belongs to the tumor necrosis (TNF) receptor superfamily has been shown to distinguish IFN-\u03b3-producing from IL-17-producing \u03b3\u03b4 T cells (Ribot et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ribot et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "77cb80fd-af87-4cce-9ce5-923c3b6cce99",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C16",
+      "claim": "Differential expression of the transcription factors T-bet and ROR\u03b3t distinguishes IFN-\u03b3-producing from IL-17-producing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "as does the differential expression of the transcription factors T-bet and ROR\u03b3t and certain chemokine receptors such as CCR6 (Haas et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haas et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "870d2e77-94f1-4dfb-bc5a-818723dd60e7",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C17",
+      "claim": "Differential expression of certain chemokine receptors such as CCR6 distinguishes IFN-\u03b3-producing from IL-17-producing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "as does the differential expression of the transcription factors T-bet and ROR\u03b3t and certain chemokine receptors such as CCR6 (Haas et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haas et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "339c274b-6ce6-4a8a-a08a-c6a10eb11c9d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C18",
+      "claim": "\u03b3\u03b4 T cells show a remarkable limitation in their TCR variability despite the theoretical genetic diversity of the TCR \u03b3\u03b4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the genetic diversity of the TCR \u03b3\u03b4 locus would theoretically allow an even higher number of different TCR specificities than for \u03b1\u03b2 T cells (Bonneville et al., 2010), \u03b3\u03b4 T cells show a remarkable limitation in their TCR variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with citation to Bonneville et al., 2010 for the theoretical diversity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "9a9475fa-240a-4c78-9319-4a92da9d4833",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C19",
+      "claim": "\u03b3\u03b4 T cells with a given TCR specificity often home to non-lymphoid organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, \u03b3\u03b4 T cells with a given TCR specificity often home to non-lymphoid organs, where the majority of mature \u03b3\u03b4 T cells can be found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about \u03b3\u03b4 T cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "8183faa1-f197-4c05-b6cd-b5d26ef2116f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C20",
+      "claim": "Dendritic epidermal T cells (DETCs) are found in the murine epidermis and almost exclusively express a clonotypic TCR consisting of the V\u03b35 and V\u03b41 chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The prime example of tissue homing-behavior is observed in dendritic epidermal T cells (DETCs), which are found in the murine epidermis and almost exclusively express a clonotypic TCR consisting of the V\u03b35 and V\u03b41 chains (Asarnow et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Asarnow et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "a5c21ded-a565-4af9-82ff-fbd3bb5d2712",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C21",
+      "claim": "V\u03b35+ DETCs are among the very first T cells to develop during embryogenesis, populating the epidermis already around day 15/16 of fetal development.",
+      "claim_type": "EXPLICIT",
+      "source": "V\u03b35+ DETCs are among the very first T cells to develop during embryogenesis, populating the epidermis already around day 15/16 of fetal development (Xiong et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xiong et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1f2cbdcb-814d-4895-ab19-cba2fc042173",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C22",
+      "claim": "V\u03b34+ \u03b3\u03b4 T cells (mostly IL-17 producers) migrate predominantly to the dermis and lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Also other subsets of \u03b3\u03b4 T cells, such as V\u03b34+ \u03b3\u03b4 T cells (mostly IL-17 producers), which migrate predominantly to the dermis and lung tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about their developmental timing.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "6fdb9505-fc3e-4a50-a452-1397ee80759e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C23",
+      "claim": "V\u03b34+ \u03b3\u03b4 T cells have been shown to develop only early in ontogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Also other subsets of \u03b3\u03b4 T cells, such as V\u03b34+ \u03b3\u03b4 T cells (mostly IL-17 producers), which migrate predominantly to the dermis and lung tissue, have been shown to develop only early in ontogeny (Allison and Havran, 1991; Haas et al., 2012; Prinz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Allison and Havran, 1991; Haas et al., 2012; Prinz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "21ae9713-9922-460f-9bec-314163abe170",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C24",
+      "claim": "Skint-1 has an essential function for the development of V\u03b35+ DETCs.",
+      "claim_type": "EXPLICIT",
+      "source": "One major step forward was the identification of Skint-1 (Selection and upkeep of intraepithelial T cells-1), which has an essential function for the development of V\u03b35+ DETCs (Lockhart et al., 2006; Lewis et al., 2006; Boyden et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lockhart et al., 2006; Lewis et al., 2006; Boyden et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "20cbbbf0-0f16-4149-9315-a6395e8ace14",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C25",
+      "claim": "Skint-1 is expressed by medullary thymic epithelial cells (mTECs).",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Skint-1 by medullary thymic epithelial cells (mTECs) (Barbee et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbee et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "843bdbe7-d356-4aad-8277-15397e627301",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C26",
+      "claim": "Expression of Skint-1 by mTECs leads to a signaling cascade in developing \u03b3\u03b4 thymocytes that induces the typical gene expression profile of DETCs, concomitant to their preferential homing to the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Skint-1 by medullary thymic epithelial cells (mTECs) (Barbee et al., 2011) leads to a signaling cascade in developing \u03b3\u03b4 thymocytes that induces the typical gene expression profile of DETCs, concomitant to their preferential homing to the skin (Turchinovich and Hayday, 2011; Vantourout and Hayday, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Turchinovich and Hayday, 2011; Vantourout and Hayday, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "aaf80c14-0b39-4cb1-b84f-d521a712e07e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C27",
+      "claim": "The induction of the typical gene signature of IL-17-producing V\u03b34+ \u03b3\u03b4 T cells depends on the function of the transcription factor Sox13.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the induction of the typical gene signature of IL-17-producing V\u03b34+ \u03b3\u03b4 T cells depends on the function of the transcription factor Sox13 (Gray et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gray et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "6b5ab55c-188c-45d2-924e-f6672c5a58e4",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C28",
+      "claim": "Signaling pathways leading to activation of NF\u03baB are essential for the function of various immune cell compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been known for some time that signaling pathways leading to activation of NF\u03baB are essential for the function of various immune cell compartments (reviewed in Li and Verma, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review by Li and Verma, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "3d88b5c5-479d-492f-b2e6-4313fcd9c2f5",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C29",
+      "claim": "The classical pathway of NF\u03baB activation is induced mainly by molecular danger signals such as LPS or certain cytokines such as TNF or IL-1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The so-called classical pathway of NF\u03baB activation is induced mainly by molecular danger signals such as LPS or certain cytokines such as TNF or IL-1\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about NF\u03baB signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "6e6dbc77-2d42-4739-969e-1ca23a92234a",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C30",
+      "claim": "Non-canonical NF\u03baB signaling requires the NF\u03baB-inducing kinase (NIK).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-canonical NF\u03baB signaling, which requires the NF\u03baB-inducing kinase (hereafter referred to as NIK, the encoding gene being Map3k14,) (Malinin et al., 1997; Yin, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Malinin et al., 1997; Yin, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "04a73401-083e-48e2-83d1-f460ff73471f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C31",
+      "claim": "Non-canonical NF\u03baB signaling is activated by a discrete subset of TNF family members, including CD40L, Lymphotoxin (LT), BAFF and RANKL.",
+      "claim_type": "EXPLICIT",
+      "source": "is activated by a discrete subset of TNF family members, including CD40L, Lymphotoxin (LT), BAFF (B cell activating factor) and RANKL (Receptor activator of NF\u03baB ligand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about non-canonical NF\u03baB pathway activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "cdca041a-70ca-40ca-aafd-dcf138a037a8",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C32",
+      "claim": "Signaling via the non-canonical pathway has been shown to fulfill roles in B cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling via the non-canonical pathway has been shown to fulfill roles in B cell survival (Sen, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sen, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "3450a83d-4844-4be3-afe7-d82251928596",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C33",
+      "claim": "Signaling via the non-canonical pathway has been shown to fulfill roles in activation of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling via the non-canonical pathway has been shown to fulfill roles in B cell survival (Sen, 2006), activation of T cells (Matsumoto et al., 2002; Ribot et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Matsumoto et al., 2002; Ribot et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "15df4463-8fa2-4bf6-a367-93805b15f95a",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C34",
+      "claim": "Signaling via the non-canonical pathway has been shown to fulfill roles in maturation and function of dendritic cells (DCs).",
+      "claim_type": "EXPLICIT",
+      "source": "maturation and function of dendritic cells (DCs) (Hofmann et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hofmann et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "5c447634-d6ef-4984-9161-93996e0d851f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C35",
+      "claim": "Signaling via the non-canonical pathway has been shown to fulfill roles in the induction of tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as the induction of tolerance (Zhu et al., 2006; Bonneville et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhu et al., 2006; Bonneville et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e42e502f-e1ed-480c-ba75-5545005ae103",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C36",
+      "claim": "Signaling via the CD70-CD27 axis can activate NF\u03baB p52 processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested that signaling via the CD70-CD27 axis (which belongs to the tumor necrosis factor receptor superfamily) can activate NF\u03baB p52 processing (Ribot et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ribot et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "a3f19854-dd6a-43b8-a981-b83363c38529",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C37",
+      "claim": "LT\u03b2R signaling has been implicated in the differentiation program of bulk \u03b3\u03b4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, LT\u03b2R signaling has been implicated in the differentiation program of bulk \u03b3\u03b4 thymocytes (Silva-Santos, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silva-Santos, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0325b4c2-11e4-4b74-84bc-7213cd491a88",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C38",
+      "claim": "The NF\u03baB family members RelA and RelB were shown to guide the development of IL-17-producing V\u03b34+ \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and the NF\u03baB family members RelA and RelB were shown to guide the development of IL-17-producing V\u03b34+ \u03b3\u03b4 T cells (Powolny-Budnicka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Powolny-Budnicka et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "321fbb7e-2b4f-4fc6-a0b6-89b0a5441740",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C39",
+      "claim": "The genesis of invariant NKT cells was claimed to depend on signaling via NIK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the genesis of invariant NKT cells was claimed to depend on signaling via NIK (Elewaut et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Elewaut et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "641851ff-c06a-4f8a-886b-007427192b0e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C40",
+      "claim": "NIK-deficient mice showed a drastic loss of DETCs in the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies that were using knockout models of the TNF receptor family member RANKL (Roberts et al., 2012) we found that NIK-deficient mice showed a drastic loss of DETCs in the epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and comparison to previous studies (Roberts et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0ff4cbbf-143f-451f-b351-71474879cd9e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C41",
+      "claim": "In the absence of NIK most of the IL-17 production by splenic and lung-resident \u03b3\u03b4 T cells was lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, in the absence of NIK most of the IL-17 production by splenic and lung-resident \u03b3\u03b4 T cells was lost",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e9e185b0-7f2d-4d09-bf63-896664aa6d50",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C42",
+      "claim": "The ability of NIK-deficient \u03b3\u03b4 T cells to express IFN-\u03b3 was not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "while their ability to express IFN-\u03b3 was not affected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2b7acef1-5afe-45d4-bc3b-8282ccc824ed",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C43",
+      "claim": "Loss of IL-17 production in NIK-deficient CD27- \u03b3\u03b4 T cells was accompanied by a loss of Rorc and Sox13 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, this was accompanied by a loss of Rorc and Sox13 expression in NIK-deficient CD27- \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "c6bd124d-3a90-4881-bfb8-6dd3a174becb",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C44",
+      "claim": "Loss of IL-17 production in NIK-deficient CD27- \u03b3\u03b4 T cells was accompanied by increased expression of Tbet and Egr3.",
+      "claim_type": "EXPLICIT",
+      "source": "while in turn expression of Tbet and Egr3 was increased",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1817a737-a5cf-4e81-bcd6-a40c6baf9321",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C45",
+      "claim": "NIK signaling specifically in thymic epithelium is essential for shaping the cytokine profile of the \u03b3\u03b4 T cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "our data suggest that NIK signaling specifically in thymic epithelium is essential for shaping the cytokine profile of the \u03b3\u03b4 T cell compartment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by conditional deletion experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0397c376-1c3d-4c03-b7c4-35ca7e0fdbad",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C46",
+      "claim": "In adult Map3k14-/- mice, only 30-50% of the \u03b3\u03b4 T cells in the epidermis express the canonical V\u03b35+ TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we observed a disturbed pool of DETCs in the epidermis of adult Map3k14-/- mice (Yin, 2001), with only 30-\u201350% of the \u03b3\u03b4 T cells present expressing the canonical V\u03b35+ TCR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "fa76a0cb-dc03-4a56-8b3a-1d5d18dee27e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C47",
+      "claim": "DETCs were virtually absent in the skin of NIK-deficient embryos at day 19 post conception.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas there was already a prominent population of V\u03b35+ DETCs present in WT controls, DETCs were virtually absent in the skin of NIK-deficient embryos (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "a940743d-2135-4d59-8c44-120b8127db36",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C48",
+      "claim": "V\u03b35+ thymocytes were present in NIK-deficient thymi at embryonic day 19, albeit at reduced numbers and with a consistent reduction in staining intensity of the TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these cells were present in NIK-deficient thymi, albeit at reduced numbers and with a consistent reduction in staining intensity of the TCR (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "45854b4d-54dd-42a1-b7ab-9a83a34e7509",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C49",
+      "claim": "The expected upregulation of CD45RB and CD122 typical for developing DETCs was not found in Map3k14-/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected upregulation of CD45RB and CD122, which is typical for developing DETCs was not found in Map3k14-/- embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1bb9b99e-5ae7-4c8b-bca1-495083ecfa9e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C50",
+      "claim": "The downregulation of CD24 and CD62L which normally coincides with DETC maturation was reduced in Map3k14-/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the downregulation of CD24 and CD62L which normally coincides with DETC maturation was also reduced (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1437667e-8d11-46fd-b624-0fd6a04d7e0f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C51",
+      "claim": "The loss of NIK abrogates normal development of DETC precursors in the embryonic thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the loss of NIK abrogates normal development of DETC precursors in the embryonic thymus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "5d1d57bc-fcff-49c5-9705-991d4c4dfe42",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C52",
+      "claim": "In both the spleen and the lung of Map3k14-/- and aly/aly animals, the total number of \u03b3\u03b4 T cells was unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in the spleen and the lung of these mutant animals, the total number of \u03b3\u03b4 T cells as well as the frequency of the two most prominent subclasses expressing the V\u03b34+ and V\u03b31.1+ TCR was unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "7f59f3fb-d193-4c41-95b5-7c0cb6b14f4c",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C53",
+      "claim": "The frequency of the V\u03b34+ and V\u03b31.1+ TCR subclasses was unchanged in Map3k14-/- and aly/aly animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in the spleen and the lung of these mutant animals, the total number of \u03b3\u03b4 T cells as well as the frequency of the two most prominent subclasses expressing the V\u03b34+ and V\u03b31.1+ TCR was unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "14bcdd60-7e61-4b19-8a74-b85806cf04b0",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C54",
+      "claim": "The distribution of the CD27+ and CD27- subsets of \u03b3\u03b4 T cells was indistinguishable between Map3k14-/- and heterozygous control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the distribution of the CD27+ and CD27- subsets of \u03b3\u03b4 T cells was indistinguishable between Map3k14-/- and heterozygous control animals (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "356b61f4-9eac-4799-abb5-4d9f45f039c1",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C55",
+      "claim": "After in vitro stimulation of bulk peripheral lymphoid \u03b3\u03b4 T cells, their ability to express IL-17 was strongly diminished in Map3k14-/- animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we assessed the primary function of \u03b3\u03b4 T cells, which is the rapid production of pro-inflammatory cytokines, we noticed that after in vitro stimulation of bulk peripheral lymphoid \u03b3\u03b4 T cells their ability to express IL-17 was strongly diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "7d099d99-0f4b-44f1-a912-be8f27e524ce",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C56",
+      "claim": "The frequency of both IFN-\u03b3 and TNF-\u03b1-producing \u03b3\u03b4 T cells was similar between Map3k14-/- and control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the frequency of both IFN-\u03b3 and TNF-\u03b1-producing \u03b3\u03b4 T cells was similar between Map3k14-/- and control animals (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e78e2cc0-c84c-455b-bf53-14ae28662b90",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C57",
+      "claim": "Lung-resident \u03b3\u03b4 T cells from NIK-deficient animals showed a reduction in the ability for IL-17 secretion accompanied by a slight increase in the frequency of IFN-\u03b3 production.",
+      "claim_type": "EXPLICIT",
+      "source": "For lung-resident \u03b3\u03b4 T cells, which include V\u03b36+ \u03b3\u03b4 T cells as one the most potent sources of IL-17, we also observed a reduction in the ability of NIK-deficient cells for IL-17 secretion, but this was accompanied by a slight increase in the frequency of IFN-\u03b3 production (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "b0f08607-74e9-4270-89bd-b7873163cb9d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C58",
+      "claim": "In the steady state dermal \u03b3\u03b4 T cell compartment, in the absence of NIK, \u03b3\u03b4 T cells were impaired in IL-17 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for the steady state dermal \u03b3\u03b4 T cell compartment we observed that in the absence of NIK, \u03b3\u03b4 T cells were impaired in IL-17 expression (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "f8fd222c-fc49-4a68-9f66-977720a2d597",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C59",
+      "claim": "In NIK-deficient CD27- \u03b3\u03b4 T cells, Rorc and Il23r were drastically reduced compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While in controls, CD27- \u03b3\u03b4 T cells expressed high levels of Rorc and Il23r, the same molecules were drastically reduced in NIK-deficient CD27- \u03b3\u03b4 T cells (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "001a49dd-3d0c-4d33-8b8f-d5cb2688d849",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C60",
+      "claim": "Loss of Rorc and Il23r in NIK-deficient CD27- \u03b3\u03b4 T cells was accompanied by an upregulation of Tbet.",
+      "claim_type": "EXPLICIT",
+      "source": "which was accompanied by an upregulation of Tbet",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "39438c7c-204d-4909-978f-1eac26697a25",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C61",
+      "claim": "NIK-deficiency selectively in CD27- \u03b3\u03b4 T cells led to a loss of Sox13 and a gain of Egr3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While the expression level of both genes was not affected in CD27+ \u03b3\u03b4 T cells, NIK-deficiency selectively in CD27- \u03b3\u03b4 T cells led to a loss of Sox13 and a gain of Egr3 expression (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "33b171f5-dc0a-4cab-aec5-f2f4788ff838",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C62",
+      "claim": "NIK signaling is essential for ROR\u03b3t expression in CD27- \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that NIK signaling is essential for ROR\u03b3t and as well as Sox13 expression in CD27- \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the qPCR data in Figure 3B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "9bf0f5fa-b669-4931-aa34-b040920571c8",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C63",
+      "claim": "NIK signaling is essential for Sox13 expression in CD27- \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that NIK signaling is essential for ROR\u03b3t and as well as Sox13 expression in CD27- \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the qPCR data in Figure 3B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "d5da68cf-c9ec-46ca-9c07-00d67a48a41c",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C64",
+      "claim": "NIK signaling confers the full potential for production of IL-17 in CD27- \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby conferring their full potential for production of IL-17",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing loss of IL-17 and transcription factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "350c7e08-2fbd-44bb-bc3c-b68ed27e650a",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C65",
+      "claim": "After Imiquimod treatment, NIK-deficient animals displayed a slight, but not significant reduction of back skin thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment with Aldara (containing 5% Imiquimod), NIK-deficient animals displayed a slight, but not significant reduction of back skin thickness (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by measurement data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "d94fc047-eaff-4637-a3a7-4d8865b0fb52",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C66",
+      "claim": "Analysis of the dermal \u03b3\u03b4 T cell compartment after Aldara treatment revealed reduced numbers of \u03b3\u03b4 T cells in NIK-deficient animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the dermal \u03b3\u03b4 T cell compartment not only revealed reduced numbers of \u03b3\u03b4 T cells (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "70ab6c10-e8ea-4a39-812f-482d8f1fdd23",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C67",
+      "claim": "After Aldara treatment, there was a significant reduction of both IL-17A and IL-17F expression by \u03b3\u03b4 T cells in NIK-deficient animals.",
+      "claim_type": "EXPLICIT",
+      "source": "but also a significant reduction of both IL-17A and IL-17F expression by \u03b3\u03b4 T cells (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "34047e72-df86-4efb-92c1-e09f0aba745e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C68",
+      "claim": "NIK-signaling in an inflammatory setting is essential for full IL-17 production by \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that NIK-signaling also in an inflammatory setting is essential for full IL-17 production by \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Aldara treatment experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "6daec346-51e6-460d-a6e2-a3c63ced485b",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C69",
+      "claim": "Other cell types, such as ILCs, can compensate for the functional impairment of \u03b3\u03b4 T cells during Aldara induced skin inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "but that other cell types, such as ILCs (Pantelyushin et al., 2012) can compensate this functional impairment during Aldara induced skin inflammation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that skin inflammation was only slightly reduced despite impaired \u03b3\u03b4 T cell function, with citation to Pantelyushin et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "d98943e5-6e66-41a7-8e14-507f8be59062",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C70",
+      "claim": "Map3k14del/del mice were lacking lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the resulting Map3k14del/del mice showed that these mice were lacking lymph nodes, suggesting that the conditional construct is working as expected (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual inspection shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "30ce6d86-ab11-4eef-b3b6-c989b6fa1804",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C71",
+      "claim": "Map3k14del/del mice phenocopy the full knockout with respect to cytokine production of peripheral \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To further verify the phenotype of Map3k14del/del mice, we compared the cytokine production of peripheral \u03b3\u03b4 T cells to WT and Map3k14-/- animals, showing that Map3k14del/del mice phenocopy the full knockout (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "85334418-9b0c-4e02-95c8-4a707a60301d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C72",
+      "claim": "Map3k14del/del mice phenocopy the full knockout with respect to the epidermal DETC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The same was true for the epidermal DETC pool (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "c3d88022-1ac8-48cc-b9b4-2aae96f273c7",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C73",
+      "claim": "Ccl19-Cre+ Map3k14flox/flox animals phenocopied the aberrant DETC development observed in germline Map3k14-/- mice, with a loss of V\u03b35 expression by DETCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ccl19-Cre+ Map3k14flox/flox animals phenocopied the aberrant DETC development observed in germline Map3k14-/- mice, with a loss of V\u03b35 expression by DETCs (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "51ae237b-1e99-4591-b901-03ccf0d029c5",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C74",
+      "claim": "There was variation in the penetrance of the Ccl19-Cre transgene, with some litters presenting with a phenotype, while others did not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed some variation in the penetrance of the Ccl19-Cre transgene, with some litters presenting with a phenotype, while others did not",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "62f6f435-fd33-4234-80c6-6d0eaf2ad126",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C75",
+      "claim": "The start of Cre expression driven by Ccl19 promotor sharply coincides with the start of DETC development in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the start of Cre expression driven by Ccl19 promotor sharply coincides with the start of DETC development in the embryo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the variable penetrance observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "fead18bd-e580-4cce-bbeb-9d89a4443858",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C76",
+      "claim": "Foxn1-Cre+ Map3k14flox/flox showed a strong reduction in both frequency and number of skin-resident TCR\u03b3\u03b4high DETCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating our findings, Foxn1-Cre+ Map3k14flox/flox showed a strong reduction in both frequency and number of skin-resident TCR\u03b3\u03b4high DETCs (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "56127f39-9e4d-4cff-bbd0-a1e14ac6aa49",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C77",
+      "claim": "Around 90% of CD27- \u03b3\u03b4 T cells in the lung expressed yellow fluorescent protein (YFP) in Fatemap Rorc-Cre+ R26-Stop-flox-YFP mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Fatemap Rorc-Cre+ R26-Stop-flox-YFP mice showed that around 90% of CD27- \u03b3\u03b4 T cells in the lung expressed yellow fluorescent protein (YFP), indicating a good targeting efficiency of this cellular subset (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "9ca36206-753e-4b37-aa1f-24aaa1e74a31",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C78",
+      "claim": "Lung-resident \u03b3\u03b4 T cells in Rorc-Cre+ Map3k14flox/flox mice expressed IL-17 at levels comparable to wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, lung-resident \u03b3\u03b4 T cells in Rorc-Cre+ Map3k14flox/flox mice expressed IL-17 at levels comparable to wildtype controls (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "9c59bdfb-ad09-4461-bae6-d6bbd3671f76",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C79",
+      "claim": "\u03b3\u03b4 T cell intrinsic signaling is dispensable for the commitment of IL-17-producing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that \u03b3\u03b4 T cell intrinsic signaling is dispensable for the commitment of IL-17-producing \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Rorc-Cre conditional deletion experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "cfdeff6d-e284-4f05-a5f6-351741dffa8f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C80",
+      "claim": "Both peripheral and lung-resident \u03b3\u03b4 T cells in CD4-Cre+ Map3k14flox/flox mice had ability for IL-17 production comparable to wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude a potential role of NIK signaling in the CD4+ \u03b1\u03b2 thymocyte compartment (Powolny-Budnicka et al., 2011), we analyzed both peripheral and lung-resident \u03b3\u03b4 T cells in CD4-Cre+ Map3k14flox/flox mice. Their ability for IL-17 production was comparable to wildtype controls (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "f14acee0-6fb4-48ae-975c-9b79ca7ea551",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C81",
+      "claim": "Within the \u03b1\u03b2 thymocyte compartment NIK signaling is dispensable for IL-17 production by \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that also within the \u03b1\u03b2 thymocyte compartment NIK signaling is dispensable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CD4-Cre conditional deletion experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "34e7d416-7379-4b2e-8a95-e37f815bc78f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C82",
+      "claim": "\u03b3\u03b4 T cells isolated from the lung of Ccl19-Cre+ Map3k14flox/flox animals did not present with any abnormalities in cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03b3\u03b4 T cells isolated from the lung of Ccl19-Cre+ Map3k14flox/flox animals did not present with any abnormalities in cytokine production",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e13dfa03-3cf2-4f8b-8e6e-d9fb1076d983",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C83",
+      "claim": "\u03b3\u03b4 T cells isolated from P13 Foxn1-Cre+ Map3k14flox/flox mice showed significant defects in their ability for IL-17 production both in the spleen and lung.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3\u03b4 T cells isolated from P13 Foxn1-Cre+ Map3k14flox/flox mice showed significant defects in their ability for IL-17 production both in the spleen and lung (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5D (should be 5E based on figure).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "fbe1c85e-cdfa-4852-9e41-64519bd7d71f",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C84",
+      "claim": "NIK signaling in thymic epithelial cells is needed for imprinting the cytokine commitment onto developing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that indeed NIK signaling in thymic epithelial cells is needed for imprinting the cytokine commitment onto developing \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conditional deletion experiments using Foxn1-Cre.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0a3b0d91-8975-4e9d-9e2d-cd47bff4496d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C85",
+      "claim": "The DETC defect observed in complete NIK-knockout animals is due to the requirement for NIK signaling in thymic epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As a next step, we assessed whether the DETC defect observed in complete NIK-knockout animals is due to the requirement for NIK signaling in thymic epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested using conditional deletion in TECs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "5e28a93a-0c73-4cf7-8b8d-1999f374caa6",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C86",
+      "claim": "Ccl19-Cre mice express Cre solely in lymph node stromal cells and mature medullary thymic epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically delete NIK in medullary thymic epithelial cells (mTECs), Map3k14flox/flox mice were crossed to Ccl19-Cre mice, which express Cre solely in lymph node stromal cells and mature medullary thymic epithelial cells (Chai et al., 2013; Onder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chai et al., 2013; Onder et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "c127e984-8d96-4af9-83a7-09a278f7d7a9",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C87",
+      "claim": "In Foxn1-Cre mice, Cre is under control of the Foxn1 promotor and thus active in all thymic epithelial cells (both cortical and medullary).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we decided to utilize an additional strain targeting the thymic epithelium, namely Foxn1-Cre mice in which Cre is under control of the Foxn1 promotor and thus active in all thymic epithelial cells (both cortical and medullary) (Gordon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gordon et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "87053dce-81b0-4401-b350-1bb58d12c531",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C88",
+      "claim": "The development of DETCs is partially dependent on signaling via the RANK-RANKL axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the development of DETCs is partially dependent on signaling via the RANK-RANKL axis (Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberts et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "20b10ff4-ed3b-40c2-9a85-7c43de338086",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C89",
+      "claim": "NIK is downstream of RANK.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that NIK is downstream of RANK (Darnay et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Darnay et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "c79d1e6b-d1f2-4868-91c0-9d2f7d65a607",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C90",
+      "claim": "The DETC deficiency observed in newborn Map3k14-/- mice was much more pronounced than in Tnfrsf11a-/- animals.",
+      "claim_type": "EXPLICIT",
+      "source": "one would expect a similar phenotype in Map3k14-/- animals, but the DETC deficiency that we observed in newborn Map3k14-/- mice was much more pronounced than in Tnfrsf11a-/- animals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of phenotypes between different knockout models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "b685ef10-4a46-4d92-9e31-cf0ed7c271ba",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C91",
+      "claim": "During DETC development several upstream receptors converge in their signaling to NIK, making it a key pathway during thymic DETC development.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that during DETC development several upstream receptors converge in their signaling to NIK, making it a key pathway during thymic DETC development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the more severe phenotype in NIK-deficient mice compared to RANK-deficient mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "238d8643-9d96-427c-a477-340c0d311fca",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C92",
+      "claim": "For normal function of the \u03b3\u03b4 T cell compartment, NIK signaling does not act \u03b3\u03b4 cell-intrinsically but in trans by its function in thymic epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data obtained using the conditional NIK-mutant strongly suggests that for normal function of the \u03b3\u03b4 T cell compartment, NIK signaling does not act \u03b3\u03b4 cell-intrinsically but in trans by its function in thymic epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conditional deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "30b246a0-1e90-4a68-bbe1-dfea89c42dd4",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C93",
+      "claim": "Conditional deletion of NIK solely in thymic epithelial cells was sufficient to copy the DETC phenotype seen in complete germ-line NIK-knockout animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional deletion of NIK solely in thymic epithelial cells was sufficient to copy the DETC phenotype seen in complete germ-line NIK-knockout animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Foxn1-Cre and Ccl19-Cre conditional deletion data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "bbb4e4da-ece0-42f8-bc8c-a95c5ef531f0",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C94",
+      "claim": "This is the first genetic in vivo demonstration that non-canonical NF\u03baB signaling is not required in DETCs in a cell-intrinsic manner, but through its activity in TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this to be the first genetic in vivo demonstration that non-canonical NF\u03baB signaling is not required in DETCs in a cell-intrinsic manner, but through its activity in TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0936a8d7-baf5-478b-9cc6-339a766008e3",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C95",
+      "claim": "Only the neonatal thymic microenvironment appears to have the capacity to imprint a stable cytokine profile to \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the neonatal thymic microenvironment appears to have the capacity to imprint a stable cytokine profile to \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "3cce0e51-6bc9-49da-b974-d857c24a102a",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C96",
+      "claim": "The IL-17-producing \u03b3\u03b4 T cell subsets cannot be reconstituted in adult animals by bone marrow transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "since the IL-17-producing \u03b3\u03b4 T cell subsets cannot be reconstituted in adult animals by bone marrow transfer (Haas et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haas et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2fba9176-db09-4653-89af-690272c8de97",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C97",
+      "claim": "During embryonic development of certain \u03b3\u03b4 T cell subsets, the signaling threshold for activation of the TCR becomes markedly altered.",
+      "claim_type": "EXPLICIT",
+      "source": "during embryonic development of certain \u03b3\u03b4 T cell subsets, the signaling threshold for activation of the TCR becomes markedly altered (Wencker et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wencker et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "0ef25ce6-c464-406a-ba63-4cb4b37dcfc6",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C98",
+      "claim": "Mature \u03b3\u03b4 T cells do not necessarily rely on a TCR stimulation as 'signal one', although they can still respond to that.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, mature \u03b3\u03b4 T cells do not necessarily rely on a TCR stimulation as \"'signal one\"', although they can still respond to that (Strid et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Strid et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "6b603609-0bed-4772-820e-fdbe6af7f0f3",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C99",
+      "claim": "Two members of the TNFR family, namely CD40 and RANK, have been implicated both in the development of DETCs and full maturation of mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Two members of the TNFR family, namely CD40 and RANK, have been implicated both in the development of DETCs and full maturation of mTECs (Hikosaka et al., 2008; Akiyama et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hikosaka et al., 2008; Akiyama et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "c175b8d2-e7ea-4c69-908a-49ec634717f0",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C100",
+      "claim": "In the embryonic thymus, developing DETC precursors signal via the RANKL-RANK axis to immature mTECs, inducing their full maturation to Aire+ MHC-IIhigh mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "and it seems that in the embryonic thymus, developing DETC precursors signal via the RANKL-RANK axis to immature mTECs, inducing their full maturation to Aire+ MHC-IIhigh mTECs (Roberts et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberts et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "ec6d928f-3a63-492d-8cb9-0386d659ca66",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C101",
+      "claim": "Tnfrsf11a-/- mice have reduced numbers of DETCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Tnfrsf11a-/- mice have reduced numbers of DETCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2f4a10bf-ffdf-4271-945b-65f6615f557c",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C102",
+      "claim": "The instruction of \u03b3\u03b4 T cells is mediated by early or junctional TECs, or the timing of Ccl19-Cre-mediated recombination sharply coincides with the expression of the \u03b3\u03b4 T cell instructing program in TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "This would suggest that the instruction of \u03b3\u03b4 T cells is mediated by early or junctional TECs, or that the timing of Ccl19-Cre-mediated recombination sharply coincides with the expression of the \u03b3\u03b4 T cell instructing program in TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the differential results between Ccl19-Cre and Foxn1-Cre experiments.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "aed8c900-1208-4f22-a200-cda6e92a9e62",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C103",
+      "claim": "Ccl19-Cre has been reported to target only maturing medullary thymic epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter has been reported to target only maturing medullary thymic epithelial cells (Onder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Onder et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "67166b20-09a6-45c6-b25a-400ec9aa58b7",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C104",
+      "claim": "NIK signaling in the early thymic stroma has a profound and long-lasting effect on the maturation and cytokine profile of developing \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our observation that NIK signaling in the early thymic stroma has a profound and long-lasting effect on the maturation and cytokine profile of developing \u03b3\u03b4 T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "abfe6d8d-cb52-4961-ba2e-311b2d56a4e5",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C105",
+      "claim": "The impact of non-canonical signaling via NIK on the development of DETC precursors and IL-17-producing \u03b3\u03b4 T cells stems from signaling within the thymic stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data does not exclude a role for canonical-NF\u03baB signaling via RelA (Powolny-Budnicka et al., 2011), the impact of non-canonical signaling via NIK on the development of DETC precursors and IL-17-producing \u03b3\u03b4 T cells stems from signaling within the thymic stroma",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conditional deletion experiments with citation acknowledging previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "85419049-b009-4ed0-9df6-1c71bdb5f853",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C106",
+      "claim": "The conditional NIK mutant is a unique tool for further studies on thymic stroma influence on \u03b3\u03b4 T cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "for which the conditional NIK mutant is a unique tool for further studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the generated mouse model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "f091b6a4-8893-48ba-bcfb-3964edb2b47d",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C107",
+      "claim": "Map3k14flox/wt animals were generated by gene targeting in embryonic stem (ES) cells, inserting LoxP sites up- and downstream of Exon 4 and 6 of the Map3k14 gene locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Map3k14flox/wt animals were generated by gene targeting in embryonic stem (ES) cells, thereby inserting LoxP sites up- and downstream of Exon 4 and 6 of the Map3k14 gene locus, respectively (Supp. Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method used to generate the conditional mutant, with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "75858532-8e1b-4e8a-9e4f-66d2ba3cd372",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C108",
+      "claim": "Map3k14flox/wt mice were crossed to a Deleter-Cre strain, followed by breeding the deleted locus to homozygosity.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice were first crossed to a Deleter-Cre strain, followed by breeding the deleted locus to homozygosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the breeding strategy used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2e522d7d-8a88-409b-8684-d81a81f9c00e",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C109",
+      "claim": "All animal experiments were approved by local authorities (Swiss cantonal veterinary office Zurich).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were approved by local authorities (Swiss cantonal veterinary office Zurich, KVET license numbers 86/2012, 70/2015, 100/2015 and 68/2013) and performed in strict accordance with the corresponding license.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "2630042f-e58d-4859-b826-922208ce2918",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "claim_id": "C110",
+      "claim": "The ratio of V\u03b34+ to V\u03b36+ cells in the remaining fraction of IL-17-producing \u03b3\u03b4 T cells did not change in NIK-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of V\u03b34+ to V\u03b36+ cells in the remaining fraction of IL-17-producing \u03b3\u03b4 T cells did not change (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0efbb86f-158a-4da9-b248-90fbdea02256",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NIK is essential for the development of V\u03b35+ dendritic epidermal T cells (DETCs). In NIK-deficient mice, DETC development is halted in the embryonic thymus, with virtually absent DETCs in the epidermis of E19 embryos and only 30-50% of \u03b3\u03b4 T cells expressing the canonical V\u03b35+ TCR in adult epidermis. Embryonic V\u03b35+ thymocytes show reduced numbers, decreased TCR staining intensity, and impaired maturation markers (CD45RB, CD122, CD24, CD62L).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C40, C46-C51 provide converging evidence from multiple developmental timepoints (E19 embryos and adults) using flow cytometry (Figure 1). The data consistently show impaired DETC development in NIK-deficient mice with appropriate controls and quantification. The phenotypic characterization of maturation markers strengthens the conclusion that NIK is required for normal DETC development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "772ce01a-57b7-4e16-925e-520c6dc0cacd",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NIK deficiency causes selective loss of IL-17 production by \u03b3\u03b4 T cells without affecting IFN-\u03b3 production. In Map3k14-/- mice, IL-17 expression is strongly diminished in splenic, lung-resident, and dermal \u03b3\u03b4 T cells, while the total number of \u03b3\u03b4 T cells and their subsets (V\u03b34+, V\u03b31.1+, CD27+, CD27-) remain unchanged. IFN-\u03b3 and TNF-\u03b1 production are preserved or slightly increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C41-C42, C52-C58, C110 are supported by comprehensive flow cytometry data across multiple tissues (spleen, lung, dermis) shown in Figure 2. The selective loss of IL-17 without affecting other cytokines or \u03b3\u03b4 T cell numbers is consistently demonstrated. The data include appropriate controls and quantification, providing strong evidence for the specificity of NIK's role in IL-17 production.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NIK deficiency leads to impaired expression of IL-17-associated transcription factors in CD27- \u03b3\u03b4 T cells. In NIK-deficient CD27- \u03b3\u03b4 T cells, Rorc, Il23r, and Sox13 are drastically reduced, while Tbet and Egr3 are upregulated. This molecular signature explains the loss of IL-17 production capacity in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C59-C64 are supported by qPCR data (Figure 3B,C) showing reciprocal changes in transcription factors associated with IL-17 vs. IFN-\u03b3 production. The selective effect on CD27- but not CD27+ \u03b3\u03b4 T cells demonstrates specificity. The molecular mechanism linking NIK to IL-17 production through ROR\u03b3t and Sox13 is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In an Imiquimod-induced psoriasis model, NIK-deficient animals show reduced IL-17A and IL-17F expression by dermal \u03b3\u03b4 T cells, but only slight, non-significant reduction in skin inflammation. This suggests that other cell types (e.g., ILCs) can compensate for the functional impairment of \u03b3\u03b4 T cells during Aldara-induced skin inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 are supported by experimental data from the Aldara treatment model (Figure 3D,E). The significant reduction in IL-17 production by \u03b3\u03b4 T cells without corresponding reduction in overall inflammation is clearly demonstrated. However, the compensation hypothesis (C69) is inferential and would benefit from direct testing of other IL-17-producing cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "af6c913b-251c-4fdc-99f1-246f12490515",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NIK signaling in thymic epithelial cells (TECs), not in \u03b3\u03b4 T cells themselves, is essential for programming \u03b3\u03b4 T cell cytokine production. Using conditional Map3k14 deletion with Foxn1-Cre (all TECs) and Ccl19-Cre (mature mTECs), the authors demonstrate that TEC-specific NIK deletion phenocopies the germline knockout for both DETC development and IL-17 production. In contrast, deletion in \u03b3\u03b4 T cells (Rorc-Cre) or CD4+ thymocytes (CD4-Cre) does not affect IL-17 production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45, C70-C84, C92-C94, C104-C105 are strongly supported by the conditional deletion experiments (Figures 4-5). The cell-type-specific deletion strategy provides compelling evidence that NIK acts in trans through TECs rather than cell-intrinsically in \u03b3\u03b4 T cells. The Map3k14del/del validation (C70-C72) confirms the conditional allele functions as expected. The differential results between Foxn1-Cre and Ccl19-Cre (C73-C75, C82-C83) suggest timing or TEC subset specificity, though variable penetrance with Ccl19-Cre introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The DETC deficiency in NIK-deficient mice is more severe than in RANK-deficient mice, suggesting that multiple upstream TNF receptor family members (including RANK and CD40) converge on NIK signaling during DETC development. NIK acts downstream of RANK in the RANKL-RANK axis that mediates crosstalk between developing DETC precursors and mTECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91, C99-C101 are supported by comparison with published data on RANK-deficient mice and citations to prior work. The more severe phenotype in NIK-deficient vs. RANK-deficient mice (C90) provides evidence for convergence of multiple receptors on NIK. However, this is primarily inferential based on phenotype comparison rather than direct mechanistic demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "1c344763-c74d-4254-8e77-88ca22ec2719",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The differential effects of Ccl19-Cre vs. Foxn1-Cre suggest that \u03b3\u03b4 T cell instruction may be mediated by early or junctional TECs, or that the timing of Ccl19-Cre expression coincides sharply with the \u03b3\u03b4 T cell instructing program. Ccl19-Cre targets mature mTECs while Foxn1-Cre targets all TECs (cortical and medullary).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87, C102-C103 describe the Cre expression patterns based on citations, which is well-supported. However, the interpretation of differential results (C102) is explicitly speculative by the authors. The variable penetrance of Ccl19-Cre (C74) complicates interpretation. Additional experiments would be needed to definitively determine which TEC subset or developmental timing is critical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "e187de88-3c2c-4385-8711-e6906f74c3e2",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A conditional Map3k14 mouse model was generated by inserting LoxP sites flanking exons 4-6 of the Map3k14 locus in ES cells. Map3k14del/del mice were created by crossing to Deleter-Cre and breeding to homozygosity. All animal experiments were approved by Swiss authorities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 describe methodological details that are standard and appropriately documented. The conditional allele design is shown in supplementary figures and validated by the phenotype of Map3k14del/del mice (C70-C72). Ethical approval is properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge about \u03b3\u03b4 T cell biology, including their role in immunity, antigen recognition, cytokine production, tissue homing, developmental timing, and NF\u03baB signaling pathways. These claims establish the scientific context for the study based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C39, C95-C98 are background statements supported by appropriate citations to published literature. These provide necessary context but are not novel findings of this study. The citations appear appropriate and the statements are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    },
+    {
+      "id": "dfa3dee3-497a-4a45-80ec-b59623dbfbbe",
+      "content_id": "c4467e59-3f07-421a-b3ff-a23155fa942c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The conditional NIK mutant is a unique tool for further studies on thymic stroma influence on \u03b3\u03b4 T cell development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is a reasonable statement about the utility of the generated mouse model, supported by the successful demonstration of its use in the current study. The conditional allele allows cell-type-specific interrogation of NIK function, which is indeed valuable for future mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:42.086690Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "37a16ad6-5e43-4829-b604-cf6427389e93",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "31efbcb4-f7da-487c-9c10-fcb87e6c94ab",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "641851ff-c06a-4f8a-886b-007427192b0e",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "0397c376-1c3d-4c03-b7c4-35ca7e0fdbad",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "fa76a0cb-dc03-4a56-8b3a-1d5d18dee27e",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "a940743d-2135-4d59-8c44-120b8127db36",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "45854b4d-54dd-42a1-b7ab-9a83a34e7509",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "1bb9b99e-5ae7-4c8b-bca1-495083ecfa9e",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "1437667e-8d11-46fd-b624-0fd6a04d7e0f",
+      "result_id": "0efbb86f-158a-4da9-b248-90fbdea02256"
+    },
+    {
+      "claim_id": "8b76527d-c610-40a8-ae94-760c09462db7",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "0ff4cbbf-143f-451f-b351-71474879cd9e",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "e9e185b0-7f2d-4d09-bf63-896664aa6d50",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "5d1d57bc-fcff-49c5-9705-991d4c4dfe42",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "7f59f3fb-d193-4c41-95b5-7c0cb6b14f4c",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "14bcdd60-7e61-4b19-8a74-b85806cf04b0",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "356b61f4-9eac-4799-abb5-4d9f45f039c1",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "7d099d99-0f4b-44f1-a912-be8f27e524ce",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "e78e2cc0-c84c-455b-bf53-14ae28662b90",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "b0f08607-74e9-4270-89bd-b7873163cb9d",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "2630042f-e58d-4859-b826-922208ce2918",
+      "result_id": "772ce01a-57b7-4e16-925e-520c6dc0cacd"
+    },
+    {
+      "claim_id": "2b7acef1-5afe-45d4-bc3b-8282ccc824ed",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "c6bd124d-3a90-4881-bfb8-6dd3a174becb",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "f8fd222c-fc49-4a68-9f66-977720a2d597",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "001a49dd-3d0c-4d33-8b8f-d5cb2688d849",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "39438c7c-204d-4909-978f-1eac26697a25",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "33b171f5-dc0a-4cab-aec5-f2f4788ff838",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "9bf0f5fa-b669-4931-aa34-b040920571c8",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "d5da68cf-c9ec-46ca-9c07-00d67a48a41c",
+      "result_id": "eeb476bc-9bd9-457a-9fe1-f7e6e22fc293"
+    },
+    {
+      "claim_id": "350c7e08-2fbd-44bb-bc3c-b68ed27e650a",
+      "result_id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115"
+    },
+    {
+      "claim_id": "d94fc047-eaff-4637-a3a7-4d8865b0fb52",
+      "result_id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115"
+    },
+    {
+      "claim_id": "70ab6c10-e8ea-4a39-812f-482d8f1fdd23",
+      "result_id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115"
+    },
+    {
+      "claim_id": "34047e72-df86-4efb-92c1-e09f0aba745e",
+      "result_id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115"
+    },
+    {
+      "claim_id": "6daec346-51e6-460d-a6e2-a3c63ced485b",
+      "result_id": "8d6a5311-9ae9-4ef4-959c-a56f5df9c115"
+    },
+    {
+      "claim_id": "aca0e434-c36e-46e5-8b8d-2c4d39deb2ef",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "1817a737-a5cf-4e81-bcd6-a40c6baf9321",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "d98943e5-6e66-41a7-8e14-507f8be59062",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "30ce6d86-ab11-4eef-b3b6-c989b6fa1804",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "85334418-9b0c-4e02-95c8-4a707a60301d",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "c3d88022-1ac8-48cc-b9b4-2aae96f273c7",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "51ae237b-1e99-4591-b901-03ccf0d029c5",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "62f6f435-fd33-4234-80c6-6d0eaf2ad126",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "fead18bd-e580-4cce-bbeb-9d89a4443858",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "56127f39-9e4d-4cff-bbd0-a1e14ac6aa49",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "9ca36206-753e-4b37-aa1f-24aaa1e74a31",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "9c59bdfb-ad09-4461-bae6-d6bbd3671f76",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "cfdeff6d-e284-4f05-a5f6-351741dffa8f",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "f14acee0-6fb4-48ae-975c-9b79ca7ea551",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "34e7d416-7379-4b2e-8a95-e37f815bc78f",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "e13dfa03-3cf2-4f8b-8e6e-d9fb1076d983",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "fbe1c85e-cdfa-4852-9e41-64519bd7d71f",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "0a3b0d91-8975-4e9d-9e2d-cd47bff4496d",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "238d8643-9d96-427c-a477-340c0d311fca",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "30b246a0-1e90-4a68-bbe1-dfea89c42dd4",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "bbb4e4da-ece0-42f8-bc8c-a95c5ef531f0",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "67166b20-09a6-45c6-b25a-400ec9aa58b7",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "abfe6d8d-cb52-4961-ba2e-311b2d56a4e5",
+      "result_id": "af6c913b-251c-4fdc-99f1-246f12490515"
+    },
+    {
+      "claim_id": "87053dce-81b0-4401-b350-1bb58d12c531",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "20b10ff4-ed3b-40c2-9a85-7c43de338086",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "c79d1e6b-d1f2-4868-91c0-9d2f7d65a607",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "b685ef10-4a46-4d92-9e31-cf0ed7c271ba",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "6b603609-0bed-4772-820e-fdbe6af7f0f3",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "c175b8d2-e7ea-4c69-908a-49ec634717f0",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "ec6d928f-3a63-492d-8cb9-0386d659ca66",
+      "result_id": "1b6e3ba0-f668-4c26-99eb-ee46950db0fc"
+    },
+    {
+      "claim_id": "5e28a93a-0c73-4cf7-8b8d-1999f374caa6",
+      "result_id": "1c344763-c74d-4254-8e77-88ca22ec2719"
+    },
+    {
+      "claim_id": "c127e984-8d96-4af9-83a7-09a278f7d7a9",
+      "result_id": "1c344763-c74d-4254-8e77-88ca22ec2719"
+    },
+    {
+      "claim_id": "2f4a10bf-ffdf-4271-945b-65f6615f557c",
+      "result_id": "1c344763-c74d-4254-8e77-88ca22ec2719"
+    },
+    {
+      "claim_id": "aed8c900-1208-4f22-a200-cda6e92a9e62",
+      "result_id": "1c344763-c74d-4254-8e77-88ca22ec2719"
+    },
+    {
+      "claim_id": "f091b6a4-8893-48ba-bcfb-3964edb2b47d",
+      "result_id": "e187de88-3c2c-4385-8711-e6906f74c3e2"
+    },
+    {
+      "claim_id": "75858532-8e1b-4e8a-9e4f-66d2ba3cd372",
+      "result_id": "e187de88-3c2c-4385-8711-e6906f74c3e2"
+    },
+    {
+      "claim_id": "2e522d7d-8a88-409b-8684-d81a81f9c00e",
+      "result_id": "e187de88-3c2c-4385-8711-e6906f74c3e2"
+    },
+    {
+      "claim_id": "e29e900a-d359-4ea0-a57d-c617fe085160",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "02345b4b-0cb9-4b4b-9609-abe8a2a523a3",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "4a781c84-03c9-4068-80f7-f7449c55529d",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "2aa0c9aa-8346-46a8-9904-b70f63a0c673",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "4fc25c06-7dec-4b22-8eeb-14e15baff3c7",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "cff96e4e-4bfc-432f-bcab-51ef02a3bee9",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "3ce48e6b-cd11-466c-ab72-f6a9d384a552",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "bdeb36ae-d46a-4d91-8005-df8b1aea1d55",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "a2056249-4222-4274-acf2-7efe66bb5b7a",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "1cc848a0-0ed6-4596-a994-56eb7e84cf79",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "a04626e8-949f-4d7d-9f30-e63ed77aee35",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "77cb80fd-af87-4cce-9ce5-923c3b6cce99",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "870d2e77-94f1-4dfb-bc5a-818723dd60e7",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "339c274b-6ce6-4a8a-a08a-c6a10eb11c9d",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "9a9475fa-240a-4c78-9319-4a92da9d4833",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "8183faa1-f197-4c05-b6cd-b5d26ef2116f",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "a5c21ded-a565-4af9-82ff-fbd3bb5d2712",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "1f2cbdcb-814d-4895-ab19-cba2fc042173",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "6fdb9505-fc3e-4a50-a452-1397ee80759e",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "21ae9713-9922-460f-9bec-314163abe170",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "20cbbbf0-0f16-4149-9315-a6395e8ace14",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "843bdbe7-d356-4aad-8277-15397e627301",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "aaf80c14-0b39-4cb1-b84f-d521a712e07e",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "6b5ab55c-188c-45d2-924e-f6672c5a58e4",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "3d88b5c5-479d-492f-b2e6-4313fcd9c2f5",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "6e6dbc77-2d42-4739-969e-1ca23a92234a",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "04a73401-083e-48e2-83d1-f460ff73471f",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "cdca041a-70ca-40ca-aafd-dcf138a037a8",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "3450a83d-4844-4be3-afe7-d82251928596",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "15df4463-8fa2-4bf6-a367-93805b15f95a",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "5c447634-d6ef-4984-9161-93996e0d851f",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "e42e502f-e1ed-480c-ba75-5545005ae103",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "a3f19854-dd6a-43b8-a981-b83363c38529",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "0325b4c2-11e4-4b74-84bc-7213cd491a88",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "321fbb7e-2b4f-4fc6-a0b6-89b0a5441740",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "0936a8d7-baf5-478b-9cc6-339a766008e3",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "3cce0e51-6bc9-49da-b974-d857c24a102a",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "2fba9176-db09-4653-89af-690272c8de97",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "0ef25ce6-c464-406a-ba63-4cb4b37dcfc6",
+      "result_id": "fef51ae5-2ad7-4bbc-8ce5-b2b4dcc359cf"
+    },
+    {
+      "claim_id": "85419049-b009-4ed0-9df6-1c71bdb5f853",
+      "result_id": "dfa3dee3-497a-4a45-80ec-b59623dbfbbe"
+    }
+  ],
+  "comparisons": []
+}

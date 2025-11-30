@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Adolescent mice (5 weeks old) show LTP in VTA DA neurons at a lower nicotine dose (0.4 mg/kg) compared to adult mice (3-5 months old), which require a higher dose (1.0 mg/kg) to elicit comparable LTP. This demonstrates age-dependent differential sensitivity to nicotine-induced synaptic potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are well-supported by electrophysiological data shown in Figure 1a-b and Figure 1\u2014figure supplement 1, with appropriate statistical analysis (p<0.01 for adolescents, p<0.05 for adults at 1.0 mg/kg). The AMPAR/NMDAR ratio measurements provide a validated index of LTP, and the dose-response relationship is clearly demonstrated across age groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Low-dose nicotine (0.4 mg/kg) selectively reduces p-eIF2\u03b1 in the VTA of adolescent mice but not adult mice, while a higher dose (1 mg/kg) is required to reduce p-eIF2\u03b1 in adult VTA. This parallels the age-dependent differences in nicotine-induced LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by Western blot data in Figure 1c-e showing significant reduction in p-eIF2\u03b1 in adolescent VTA (p<0.05) but not adult VTA at low dose, with appropriate statistical tests. The parallel between p-eIF2\u03b1 reduction and LTP induction strengthens the mechanistic link between these phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Adult Eif2s1S/A mice with genetically reduced p-eIF2\u03b1 (~50% reduction) show LTP in response to low-dose nicotine (0.4 mg/kg) that does not induce LTP in wild-type adult mice, demonstrating that reduced eIF2\u03b1 phosphorylation increases susceptibility to nicotine's synaptic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are well-supported by electrophysiological data in Figure 1f showing significant LTP in Eif2s1S/A mice (p=0.003) but not control mice (p=0.964) at low nicotine dose. The genetic manipulation provides strong causal evidence linking p-eIF2\u03b1 levels to nicotine susceptibility, though the mechanism by which the mutation reduces p-eIF2\u03b1 could be more explicitly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Pharmacological blockade of p-eIF2\u03b1-mediated translation with ISRIB renders adult mice susceptible to LTP induction by low-dose nicotine (0.4 mg/kg), phenocopying the effect of genetic reduction in p-eIF2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by electrophysiological data in Figure 1g showing significant LTP with ISRIB+nicotine (p<0.001). The pharmacological approach complements the genetic evidence (C21-C24), though the specificity of ISRIB for p-eIF2\u03b1-mediated translation relies on cited literature. The convergence of genetic and pharmacological approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Reducing p-eIF2\u03b1-mediated translational control increases susceptibility to both cocaine and nicotine, establishing p-eIF2\u03b1 as a common regulator of drug-induced synaptic potentiation across multiple drugs of abuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by the current nicotine data combined with cocaine findings from the companion paper (Huang et al., 2016). The parallel effects across two distinct drugs of abuse strengthen the generalizability of the mechanism. However, the claim of p-eIF2\u03b1 as a 'common regulator' would be strengthened by testing additional drugs beyond cocaine and nicotine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Smokers show significantly lower reward-induced BOLD activity in the caudate and putamen compared to non-smokers in response to sweet juice rewards, indicating reduced reward sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by fMRI data in Figure 2a-c with appropriate statistics (p<0.01, n=33 non-smokers, 55 smokers). The interpretation that smokers find sweet drinks 'less rewarding' (C33) is a reasonable inference from reduced BOLD activity, though it assumes BOLD signal directly reflects subjective reward experience. The finding replicates prior work (Rose et al., 2012, 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The SNP rs10144417 in the Eif2s1 gene shows a genotype-by-smoking interaction: AG/GG smokers exhibit lower reward-dependent activity than AA smokers, while no genotype difference exists among non-smokers, indicating this SNP is associated with reward signaling in the context of tobacco use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by fMRI data in Figure 2d showing significant interaction (p<0.05, F1,86=5.836). The statistical approach appropriately tests for interaction rather than main effects. However, the sample sizes for genotype subgroups are not explicitly stated, and multiple testing correction across SNPs is not discussed. The biological interpretation requires validation from the functional studies in C38-C44.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The G variant of rs10144417 increases Eif2s1 promoter activity (~40%) and eIF2\u03b1 protein levels, which paradoxically reduces p-eIF2\u03b1-mediated translation as demonstrated by decreased translation of Ophn1 and Atf4 reporter constructs, both known to be upregulated by increased p-eIF2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by multiple lines of evidence: conservation analysis (Figure 2e), luciferase assays showing increased promoter activity (p<0.001, Figure 2g), Western blots showing increased eIF2\u03b1 protein (Figure 2h), and reduced translation of p-eIF2\u03b1-responsive reporters (p<0.01 for Ophn1, Figure 2j; p<0.0001 for Atf4, Figure 2\u2014supplement 3). The paradoxical finding that increased Eif2s1 expression reduces p-eIF2\u03b1-mediated translation is intriguing but mechanistically unexplained (see C45-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The mechanism by which increased Eif2s1 expression inhibits p-eIF2\u03b1-mediated translation remains undetermined, though several potential mechanisms are proposed including altered eIF2 complex assembly, altered binding to regulatory proteins, titration of phosphorylated subunits, or compensatory changes in kinase/phosphatase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C50 explicitly acknowledge the mechanistic gap (C45) and propose speculative mechanisms (C46-C49) supported by general knowledge about translation initiation factor homeostasis (C50). While the speculation is reasonable and grounded in prior literature, no experimental data are provided to distinguish among these mechanisms. This represents an important limitation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Reduced p-eIF2\u03b1-mediated translational control mediates genetic predisposition to drug-induced synaptic changes, potentially explaining adolescent vulnerability to drugs of abuse. This is supported by mouse models showing increased nicotine susceptibility with reduced p-eIF2\u03b1 and human data showing G variant carriers (with reduced p-eIF2\u03b1-mediated translation) have reduced reward activity and may consume more drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C56 integrate mouse and human findings but involve significant inferential leaps. The link between G variant and reduced p-eIF2\u03b1-mediated translation (C55) is indirect, inferred from increased Eif2s1 expression. The speculation that G variant carriers 'are likely to consume more drugs' (C56) is not directly tested\u2014the study measures brain activity, not drug consumption behavior. The connection to adolescent vulnerability (C52) is speculative as the human study does not stratify by age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The findings may enable new p-eIF2\u03b1-based therapeutic approaches for treating drug abuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is purely speculative about future therapeutic applications. While the mechanistic insights are valuable, no therapeutic interventions are tested, and the feasibility, safety, or efficacy of p-eIF2\u03b1-targeted treatments for addiction remains completely unexplored. This represents a reasonable direction for future work but is not supported by current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Tobacco use is a major global health problem, causing over 6 million deaths annually worldwide and costing over $300 billion per year in the United States, with most smokers beginning by age 18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide epidemiological context supported by authoritative citations (WHO 2011, US DHHS 2014, Xu et al. 2015). These are well-established facts from public health literature and appropriately cited. They establish the public health significance of the research but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Adolescents are more susceptible than adults to nicotine's cellular and behavioral effects. Nicotine modifies dopamine signaling in brain reward regions and potentiates excitatory synaptic connections to VTA DA neurons, though the precise molecular mechanism underlying nicotine-induced LTP remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 summarize established literature (Adriani & Laviola 2004, Counotte et al. 2011, Lydon et al. 2014, Smith et al. 2015, Jasinska et al. 2014, De Biasi & Dani 2011, Rose et al. 2012, Mansvelder & McGehee 2000, Saal et al. 2003) and identify the knowledge gap (C8) that motivates the current study. These are accurate representations of prior work but not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C17"
+    ],
+    "result": "Prior work from the companion paper established that eIF2\u03b1 regulates adolescent vulnerability to cocaine, with adolescent mice showing greater sensitivity to low-dose cocaine in terms of reduced p-eIF2\u03b1, LTP induction, and behavior. Multiple drugs of abuse including nicotine reduce p-eIF2\u03b1 in the VTA, suggesting p-eIF2\u03b1 is a common effector in addiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13, C17 accurately summarize findings from the companion paper (Huang et al., 2016) and establish the foundation for the current nicotine studies. The accuracy of these claims depends on the validity of the companion paper, which is assumed to be peer-reviewed. These provide essential context but are not novel findings of the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Neuronal activity in reward areas of the human brain is strongly associated with drug use indices, with the caudate and putamen having crucial reward-related functional connections to the VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 cite established neuroimaging literature (Rose et al. 2014, Koob & Volkow 2010) to justify the choice of brain regions for fMRI analysis. These are accurate representations of prior knowledge that provide methodological rationale but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Various methodological and background knowledge claims establish that: eIF2 is a heterotrimer; Ophn1 and ATF4 translation are enhanced by increased p-eIF2\u03b1; AMPAR/NMDAR ratio indexes LTP; CPP reflects addiction-related behavioral reinforcement; and nicotine is the main addictive component of tobacco.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 represent established knowledge from the field, appropriately cited where applicable. These provide necessary context for interpreting the experimental findings but are not novel contributions. They are accurately stated and properly attributed to prior literature.",
+    "result_type": "MINOR"
+  }
+]

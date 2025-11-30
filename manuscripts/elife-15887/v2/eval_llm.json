@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "The authors developed a physiological assay to monitor lysosomal Ca2+ refilling using ML-SA1, a specific TRPML1 agonist, with the GCaMP3-ML1 reporter. The assay demonstrates that lysosomal Ca2+ stores can be repeatedly depleted and refilled with a time course of approximately 5 minutes, and the responses are lysosome-specific as confirmed by multiple controls including BAPTA-AM, ML-SI antagonists, GPN pretreatment, and La3+ blocking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C51 collectively establish a robust and well-controlled assay system. The GCaMP3-ML1 probe shows appropriate lysosomal localization (C30-C31), ML-SA1 induces reproducible Ca2+ release (C32, C35, C46), and multiple pharmacological and genetic controls (C33, C36-C37, C43-C44, C48-C49) confirm specificity. The 5-minute refilling time is consistently demonstrated (C45). The assay is validated across multiple cell types (C51), strengthening generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "V-ATPase inhibitors (Bafilomycin-A and Concanamycin-A) rapidly abolish lysosomal acidification but do not prevent Ca2+ refilling of lysosomes, contradicting the prevailing 'pH hypothesis' that lysosomal acidification drives Ca2+ uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide strong experimental evidence that both acute (5 min, C40) and prolonged (1-3 hr, C41-C42) V-ATPase inhibition does not block lysosomal Ca2+ refilling, despite rapidly abolishing LysoTracker staining (C39). This directly challenges the pH hypothesis (C3, C26) with appropriate controls and multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The ER Ca2+ store is essential for lysosomal Ca2+ refilling. Pharmacological depletion of ER Ca2+ using SERCA inhibitors (thapsigargin, CPA) or chelation using TPEN completely blocks lysosomal Ca2+ refilling without affecting the na\u00efve lysosomal Ca2+ store or lysosomal pH. Genetic reduction of ER Ca2+ using IP3R-LBD-ER also reduces lysosomal Ca2+ content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C84 provide convergent evidence from multiple approaches: SERCA inhibitors (C69, C74), ER Ca2+ chelation (C77-C79), and genetic manipulation (C81-C83) all block refilling without affecting na\u00efve stores (C70, C73) or pH (C71). The requirement for extracellular Ca2+ (C65) but not plasma membrane Ca2+ entry (C66) supports an ER-mediated mechanism. The specificity is well-demonstrated through appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "IP3 receptors (IP3Rs) on the ER, but not ryanodine receptors (RyRs), are specifically required for lysosomal Ca2+ refilling. IP3R antagonists (Xestospongin-C, 2-APB) and PLC inhibition (U73122) completely block refilling in wild-type cells but not in IP3R-TKO cells, where refilling still occurs but with delayed kinetics, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C110 provide strong pharmacological (C93-C94, C98, C100) and genetic (C105-C107) evidence for IP3R specificity. The lack of effect of RyR blockers (C102) and the differential response in IP3R-TKO cells (C106-C108) strengthen the conclusion. The observation that IP3R-TKO cells show delayed but present refilling (C108, C110) is appropriately interpreted as potential compensation. The requirement for basal IP3 production (C99-C101) adds mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Using intralysosomal Ca2+ indicators (Fura-Dextran and OG-BAPTA-dextran), the authors confirm that IP3R antagonists and SERCA inhibitors block lysosomal Ca2+ refilling. These measurements are complicated by pH sensitivity of the dyes, and large pH changes (e.g., with Baf-A or NH4Cl) prevent accurate Ca2+ determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 provide independent validation using luminal Ca2+ indicators. The results with Xesto (C115) and TG (C116) are consistent with the GCaMP3-ML1 assay. The authors appropriately acknowledge the pH sensitivity limitations (C113, C118-C119) and note that LysoTracker staining was not affected by their manipulations (C117), supporting Ca2+-specific rather than pH-mediated effects. The technical limitations are well-characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Blocking IP3Rs or reducing ER Ca2+ causes a lysosomal storage disease (LSD)-like phenotype, including increased Lamp1 expression, elevated LysoTracker staining, lysosomal enlargement, and accumulation of autofluorescent lipofuscin-like material, demonstrating functional consequences of impaired lysosomal Ca2+ refilling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 provide multiple independent markers of lysosomal dysfunction following IP3R/ER Ca2+ manipulation. The specificity is supported by the lack of effect with RyR blockers (C123-C124). The phenotype resembles ML1 KO cells (C126), providing biological validation. However, the experiments appear to use relatively short treatment times (18-24 hr), and longer-term studies would strengthen the LSD-like phenotype claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The ER and lysosomes are in close physical proximity, with the majority of lysosomes moving and trafficking together with ER tubules. Ca2+ released from the ER upon SERCA inhibition can be detected by the lysosomal GCaMP3-ML1 probe, suggesting close membrane contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C89 provide imaging evidence for ER-lysosome proximity. The detection of ER Ca2+ release by the lysosomal probe (C87) is consistent with close contact, though alternative explanations (e.g., cytosolic Ca2+ diffusion) are not fully excluded. The time-lapse imaging (C89) strengthens the case for dynamic association. Claim C90 is appropriately speculative about nanojunctions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors propose a two-step model for lysosomal Ca2+ refilling: (1) lysosome store depletion triggers/stabilizes ER-lysosome contacts, and (2) passive Ca2+ transport occurs from ER to lysosomes via a low-affinity mechanism (transporter or channel), taking up to 5 minutes to complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 summarizes the main conclusion, which is well-supported by the experimental data. However, claims C154-C158 are largely speculative hypotheses about the mechanism. The two-step model is reasonable but not directly tested. The proposal of a low-affinity mechanism (C131-C132) is logical given the high local Ca2+ concentrations expected from IP3R release, but no direct evidence for the lysosomal uptake mechanism is provided. The 5-minute time course (C158) is well-established experimentally (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C147",
+      "C148"
+    ],
+    "result": "GPN, a commonly used lysosome-specific reagent, causes membrane permeabilization and releases both Ca2+ and H+ from lysosomes. In BAPTA-AM-treated cells, GPN still induces residual signals in both Fura-2 and GCaMP3 assays, which are abolished by Baf-A, suggesting pH-mediated artifacts. The authors demonstrate that GCaMP3 is sensitive to both Ca2+ and pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 provide important methodological insights about GPN and Ca2+ indicator artifacts. The BAPTA-AM control experiments (C55-C57) are well-designed, and the demonstration of GCaMP3 pH sensitivity in isolated vacuoles (C59) is direct evidence. This work (C147-C148) appropriately cautions about interpreting GPN experiments and highlights the need for careful controls in lysosomal Ca2+ measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Lysosomal Ca2+ refilling does not require endocytosis, cytoskeletal transport, Golgi function, or PI(3,5)P2 signaling, ruling out secretory and endocytic pathways as direct sources of lysosomal Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 states data are not shown, which is problematic for evaluation. Claims C61 and C64 provide some experimental support with appropriate figures. The conclusion (C62) is reasonable but would be stronger with the missing data. The PI(3,5)P2 experiments (C64) are appropriate controls given ML1's regulation by this lipid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors provide a detailed critique of the 'pH hypothesis' and previous literature, arguing that pH manipulations affect Ca2+ measurements through multiple mechanisms including altered Ca2+ buffering, changes in indicator Kd values, and pH-mediated artifacts. They propose that previous interpretations may be flawed and recommend routine use of BAPTA-AM controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C153 provide a thorough discussion of technical limitations in lysosomal Ca2+ measurements. The arguments about Ca2+ buffering (C138-C141), indicator pH sensitivity (C142-C143), and small cytosolic Ca2+ changes (C145) are well-supported by cited literature. The critique of previous work (C146, C153) is appropriately cautious. The recommendation for BAPTA-AM controls (C152) is reasonable. However, some claims are speculative (C153) about the extent of misinterpretation in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The authors discuss broader implications of their findings, including connections to lysosomal storage diseases, ER-organelle contact sites, cholesterol transport, and cellular signaling. They propose that ER-lysosome interaction may serve as a hub for coordinating anabolic and catabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C174 are largely speculative discussions of implications and future directions. Some are well-grounded in the data (C159, C161, C163-C164), while others are more speculative hypotheses (C168, C170, C172-C174). These represent reasonable interpretations and future directions but are not directly tested in the current study. The discussion appropriately acknowledges established knowledge (C165-C167, C169, C171) while proposing new connections.",
+    "result_type": "MINOR"
+  }
+]

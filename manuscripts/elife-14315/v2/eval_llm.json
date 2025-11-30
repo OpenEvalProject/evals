@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Sensory stimulation in mouse SI induces biphasic arteriolar responses (dilation followed by constriction) with depth-dependent kinetics. The fastest dilation onset and rise occurs in deep cortical layers (below layer IV), extending previous findings in rat SI that were limited to the top ~500 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide converging evidence from prior work (C1-C4), current experimental data (C5-C10), and statistical analysis (C10, p<10^-6) demonstrating depth-dependent vascular responses. The extension to layer VI (~900 \u03bcm) and identification of fastest dilation in infragranular layers (C11) represents a novel finding supported by adequate sample size (866 locations, 49 subjects) and appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Optogenetic stimulation of inhibitory neurons in VGAT-ChR2 mice reproduces the biphasic vascular response observed with sensory stimulation, with dilation initiating in deep cortical layers despite surface illumination being confined to the top ~200 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C27 demonstrate that selective IN activation produces biphasic responses similar to sensory stimulation. The immunofluorescence validation (C12), Monte Carlo simulation (C14-C15), adequate sample size (93 arterioles, 217 locations), statistical significance (C22, p<10^-3 and p<10^-5), and appropriate controls (C25) provide strong support. The depth-dependent kinetics parallel sensory responses (C21-C24), establishing IN involvement in neurovascular coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Optogenetic-induced vascular responses result from direct activation of inhibitory neurons without recruitment of pyramidal cells, as demonstrated by electrophysiology, calcium imaging, and pharmacological blockade of glutamatergic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C40 provide multiple lines of evidence excluding PC involvement: LFP suppression without rebound spikes (C28-C30), MUA patterns consistent with IN firing (C31-C33), absence of calcium transients in PCs during OG stimulation (C37), and persistence of responses after glutamatergic blockade (C39). The convergence of electrophysiological, imaging, and pharmacological data strongly supports direct IN-mediated effects, though calcium imaging limitations in INs are acknowledged (C35-C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The neurovascular mechanism requires action potential generation and likely involves dendritic depolarization leading to somatic firing and axonal release of vasoactive agents, rather than antidromic conduction or direct dendritic release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 demonstrate through TTX experiments that spike generation is necessary (C43-C44) and that antidromic propagation is unlikely (C45). The failure to rescue responses with deep fiber stimulation under TTX (C44) argues against antidromic APs and direct ChR2-mediated release from terminals (C47). The logical inference that dendritic depolarization drives somatic firing and axonal release (C48-C49) is well-supported, though alternative mechanisms like back-propagating APs cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Computational modeling of VIP-positive bipolar inhibitory neurons demonstrates that depolarization of superficial dendrites can drive somatic firing in layer V, providing a mechanistic explanation for deep-layer dilation initiation despite surface illumination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 provide computational evidence that dendritic depolarization can reach firing threshold (C54, -40 to -50 mV vs. -43.7 mV threshold). The modeling uses appropriate morphologies (C50) and acknowledges conservative assumptions (passive membrane properties, C55-C56). Experimental validation with fiber stimulation (C57) supports the model predictions. However, the model is limited to passive properties and relies on morphologies from rat cortex adapted to mouse, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C90"
+    ],
+    "result": "Constriction is selective to activation of inhibitory neurons rather than pyramidal cells, as demonstrated by comparing VGAT-ChR2 and Thy1-ChR2 mice with glutamatergic blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C90 demonstrate cell-type specificity through direct comparison: Thy1-ChR2 mice show constriction under control conditions (C60) but only dilation after glutamatergic blockade (C61), indicating indirect activation accounts for constriction (C62). Combined with VGAT-ChR2 data showing constriction persists after glutamatergic blockade (C39), this establishes IN-specific constriction (C63, C90). The sample size for Thy1 experiments is small (n=2 subjects, 28 locations) but the effect is clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C78",
+      "C91"
+    ],
+    "result": "The constrictive effect is mediated by NPY acting on Y1 receptors, providing the first in vivo evidence for the NPY-Y1 pathway in neurovascular coupling. The Y1 antagonist BIBP 3226 abolishes constriction in both optogenetic and sensory responses without affecting dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 and C78, C91 provide strong pharmacological evidence: BIBP 3226 abolishes constriction in both OG (C66, n=52 locations) and sensory responses (C67) without affecting peak dilation. The specificity of the effect (C68 shows non-significant trend in monophasic responses) and consistency with prior in vitro work (C64, C69) support the NPY-Y1 mechanism. This represents a major advance (C78) as the first in vivo demonstration, though the molecular identity of dilatory mechanisms remains unresolved (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C140"
+    ],
+    "result": "The biphasic vascular response is confirmed in awake mice for both sensory and optogenetic stimulation, ruling out anesthesia as a confounding factor and establishing this as a normal physiological feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C140 demonstrate biphasic responses in awake mice (n=4 subjects for sensory, n=3 for OG), addressing a major limitation of the anesthetized experiments (C137). The responses show expected differences from anesthetized conditions (shorter duration, C72; secondary dilation, C73) while maintaining the key biphasic pattern. Sample sizes are modest but adequate for establishing the phenomenon exists in the awake state. This is critical for establishing physiological relevance (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The findings support a feedforward neurovascular coupling mechanism driven by cell-type-specific vasoactive signaling rather than metabolic feedback, as dilation initiates in infragranular layers rather than the most metabolic layer IV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C83-C87, and C107-C110 establish the conceptual framework and interpretation. The observation that dilation initiates below layer IV (C108), which has the highest metabolic load (C4), argues against simple metabolic feedback (C110). The demonstration of cell-type-specific effects (INs vs PCs) and specific molecular pathways (NPY-Y1) supports feedforward signaling (C107). This interpretation is well-supported by the data, though it doesn't exclude metabolic contributions under all conditions (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C96",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The NPY-Y1 pathway underlying vasoconstriction may explain task-related negative BOLD fMRI signals and offers potential therapeutic targets, with implications for interpreting quantitative fMRI in terms of excitatory/inhibitory balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 and C96, C141-C144 present speculative implications of the findings. While the NPY-Y1 mechanism is well-established (supported by C66-C70), the extrapolation to negative BOLD signals (C88), therapeutic applications (C89), and quantitative fMRI interpretation (C141-C144) represents speculation beyond the current data. These are reasonable hypotheses requiring future validation. The connection to metabolic costs (C142) relies on prior theoretical work but hasn't been directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous center-surround patterns of vascular responses correlated with inhibition strength, and the NPY-Y1 pathway may specifically mediate surround and ipsilateral inhibition, though direct comparison with optogenetic responses is not possible due to indiscriminate IN activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 discuss prior findings and their relationship to current results. While the prior center-surround patterns are established (C92-C93), the prediction that NPY-positive INs mediate surround inhibition (C96) is speculative. The acknowledgment that OG stimulation doesn't mimic natural patterns (C94-C95) is appropriate, but this limits the ability to test the prediction. This represents a reasonable hypothesis requiring cell-type-specific manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C138"
+    ],
+    "result": "Discrepancies with a prior laser speckle study showing only monophasic CBF increases may reflect differences in stimulation protocols (high-frequency short pulses vs. longer pulses) and/or anesthetic agents, as NPY-positive neurons may not respond well to high-frequency short pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 and C138 address apparent contradictions with Anenberg et al. 2015. The speculation about stimulation protocol effects (C99-C100) is reasonable given known NPY neuron properties (C100, citing Karagiannis 2009), but remains untested. The anesthesia explanation (C138) is also plausible but speculative. These represent reasonable attempts to reconcile findings but lack direct experimental support. The fundamental difference (presence vs. absence of constriction) is significant and warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Vasoactive agents including NPY are likely released from axonal terminals rather than dendrites, though dendritic release via back-propagating action potentials cannot be completely ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 address the site of vasoactive release. The TTX experiments (C43-C44) support axonal release (C102) by showing dendritic depolarization alone is insufficient. However, the acknowledgment that back-propagating APs could enable dendritic release (C103-C104) is appropriate given prior reports in bipolar INs. The conclusion favors axonal release but appropriately acknowledges uncertainty, making this a well-qualified interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The requirement for spiking should be interpreted in the context of feedforward signaling mechanisms rather than the classical metabolic feedback hypothesis, as vasoactive messengers rather than energy metabolites dominate CBF regulation under healthy conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 provide important conceptual clarification. The distinction between feedforward signaling and metabolic feedback (C105-C107) is well-supported by the data showing cell-type specificity and initiation in non-metabolic layers (C108). The acknowledgment that metabolic factors can be vasoactive (C109) while arguing for dominance of signaling mechanisms (C110) represents a balanced interpretation consistent with the experimental findings and prior literature (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "VIP-positive inhibitory neurons are proposed as candidates for mediating dilation based on their morphology, vasodilatory properties, and co-expression of nNOS, but this requires future validation with cell-type-specific manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C116 acknowledge that dilatory mechanisms remain unresolved (C111) and propose VIP-positive INs as candidates (C115) based on morphology (C113-C114) and known properties (C51, C112). While the hypothesis is well-motivated by prior work (C114) and consistent with the modeling (C50-C58), it lacks direct experimental validation. The call for future cell-type-specific experiments (C116) is appropriate. This represents a reasonable hypothesis requiring additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Conducted vascular responses may contribute to the spread of dilation/constriction throughout cortical depth, as evidenced by slowing kinetics and decreasing amplitude toward the surface, though this doesn't exclude local lamina-specific mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 address the role of conducted responses. The observation of slowing kinetics and amplitude trends (C119) is consistent with propagated responses, supported by extensive prior literature (C117). The acknowledgment that this doesn't exclude local mechanisms (C120) and the reasoning about timing (C121-C122) represent balanced interpretation. The data support conducted responses as a contributing mechanism while appropriately noting they may not be exclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The depth-dependent dilation kinetics agree with human laminar fMRI but conflict with rat line-scanning fMRI, potentially reflecting differences in measurement approaches and the complexity of BOLD signals versus direct diameter measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 compare findings to fMRI studies. The agreement with human data (C123) and disagreement with rat data (C124) are clearly stated. The explanation for discrepancies (C125) acknowledging BOLD complexity is reasonable, and the emphasis on direct measurements (C126) is appropriate. This represents fair assessment of how the findings relate to prior imaging work, though the rat fMRI discrepancy remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Astrocytic contributions to the observed vascular responses were not specifically addressed, though recent evidence argues against calcium-dependent gliotransmitter release in normal neurovascular coupling, and Y1 receptor expression in adult astrocytes appears minimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 acknowledge limitations regarding astrocytes. The statement that astrocytic contributions weren't addressed (C127) is honest, while citing recent negative evidence for calcium-dependent mechanisms (C128) and minimal Y1 expression in adult astrocytes (C131) provides context. The acknowledgment that calcium-independent pathways can't be ruled out (C129) is appropriate. This represents transparent discussion of what wasn't tested while providing relevant literature context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Study limitations include non-physiological optogenetic stimulation patterns, potential ChR2 expression bias, use of anesthesia in most experiments, and possible indirect PC recruitment, though controls address the latter concern and awake experiments confirm key findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C139 provide transparent discussion of limitations. The acknowledgment of non-physiological stimulation (C132), potential expression bias (C133), and anesthesia effects (C137-C139) is appropriate. The clarification that the goal was selective IN activation rather than mimicking natural patterns (C134) is reasonable. The evidence against PC recruitment (C136) and confirmation in awake animals (C140) address major concerns. This represents thorough and honest limitation discussion.",
+    "result_type": "MINOR"
+  }
+]

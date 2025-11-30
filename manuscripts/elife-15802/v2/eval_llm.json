@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors developed a barcoded ubiquitin mutant library (EMPIRIC-BC) that is ~97.5% complete at the amino acid level, with a median of 15 unique barcodes per amino acid substitution. This barcoding strategy allowed determination of allele fitness in a single experiment and substantially reduced sequencing costs compared to previous methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide quantitative measurements of library completeness and barcode representation from experimental data. Claims C88-C89 describe the methodological advantages. The library construction is well-documented with appropriate metrics, and the barcoding approach is properly cited (Fowler et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C47"
+    ],
+    "result": "The fitness landscape of ubiquitin in DMSO control conditions shows that only residues with well-established roles are sensitive (Arg42, Ile44, Lys48, Gly75-Gly76), while much of the protein surface is tolerant to mutation. This landscape is similar to previously published unperturbed data and shows good reproducibility between biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C47 collectively establish the baseline fitness landscape with appropriate controls and statistical validation. The data show good correlation with prior work (Roscoe et al., 2013), biological replicates are well-correlated (R\u00b2=0.79), and the residuals fit expected distributions. The identification of sensitive residues matches established biological knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C48",
+      "C49",
+      "C54",
+      "C71",
+      "C72"
+    ],
+    "result": "Chemical perturbations (Caffeine, DTT, HU) sensitize many ubiquitin mutations, with increased sensitivity localized around the C-terminus and hydrophobic patch. Thirteen new positions are extremely sensitized and an additional thirteen are intermediately sensitized, with 8 of 13 new sensitive positions shared between all three perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C40-C41, C48-C49, C54, C71-C72 provide converging evidence from multiple perturbations showing a shared sensitization pattern. The quantitative findings (13 extremely sensitized, 13 intermediately sensitized, 8 shared positions) are supported by experimental data shown in Figures 4-5 and 8. The spatial localization to functionally important regions is biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C98"
+    ],
+    "result": "MG132 treatment increases mutational tolerance throughout ubiquitin, though the effect is small at the concentration tested, likely due to poor penetrance in yeast cells with wild-type ERG6. This alleviating effect is attributed to MG132 directly perturbing the proteasome and reducing the impact of defects related to Lys48-linked poly-Ub chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C42, and C98 describe the MG132 effect with appropriate caveats about the small effect size and mechanistic interpretation. The observation is supported by experimental data (Figure 5D) and the interpretation is consistent with known MG132 mechanism (cited Lee and Goldberg, 1996). The authors appropriately acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C111"
+    ],
+    "result": "The difference distributions between perturbations are wider than between DMSO replicates, indicating that each perturbation uncovers unique roles of ubiquitin residues in responding to specific perturbations, with different positions important for interactions mediating responses to different stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C111 describe statistical properties of the data distributions that support perturbation-specific effects. The wider distributions indicate genuine biological variation beyond experimental noise, and this interpretation is consistent with the identification of perturbation-specific mutations described elsewhere in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Rosetta modeling predictions show that mutations predicted to be destabilizing have significantly lower experimental fitness than neutral/stabilizing mutations across all conditions. This suggests that ubiquitin stability is more important for fitness under perturbed conditions, and that subtle changes in stability could induce fitness defects that are buffered under control conditions but revealed upon chemical stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present computational predictions validated by experimental data (Figure 6), with significant p-values for all conditions. Claims C101-C103 provide mechanistic interpretation supported by citations (Lange et al., 2008; Phillips et al., 2013). The correlation between predicted stability changes and experimental fitness provides independent validation of the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Lys63 shows perturbation-specific behavior: mutations are mildly deleterious in all conditions except DTT, where most mutants show wild-type-like fitness. This is interpreted as an epistatic interaction where the endocytic defect caused by Lys63 mutation is masked by a similar endocytic defect induced by DTT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C50-C51 describe the experimental observation, which is supported by data. However, claims C52-C53 provide mechanistic interpretation that is speculative. While the interpretation is biologically plausible given the known role of Lys63-linked poly-Ub in endocytosis, direct evidence for the proposed epistatic interaction is not provided. The mechanism remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "His68 shows perturbation-specific sensitization. Mutations to positive residues at Glu64 (which affects Lys63-linked chain conformation) show fitness defects in DMSO that are increased in Caffeine and HU but decreased in DTT, suggesting interactions between Lys63-linked poly-Ub and DTT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide established knowledge about His68 and Glu64 (cited Fujiwara et al., 2004; Liu et al., 2015). Claims C64-C66 describe experimental observations of perturbation-specific effects. The pattern of sensitization and desensitization across conditions is supported by experimental data and is consistent with the known structural biology of these residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study failed to recapitulate the previously reported synthetic lethal interaction between Lys11Arg and DTT. At the lower DTT concentration used (1 mM in liquid culture), the relatively high fitness of Lys11Arg suggests that the structural role of positively charged residues, rather than poly-Lys11 Ub linkages, may dominate the physiological response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe the negative result with appropriate methodological details. Claims C59-C61, C69-C70 provide context from prior work (Xu et al., 2009) and offer a reasonable interpretation. The authors appropriately acknowledge the discrepancy with prior work and provide a plausible explanation based on differences in experimental conditions (concentration, liquid vs. solid media). This is a well-documented negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C73",
+      "C110"
+    ],
+    "result": "Chemical stresses reduce buffering effects in the ubiquitin proteasome system, with the incorporation of new stresses providing a rationale for an additional 1/3 of the protein. The authors suggest that expanding the set of environmental stresses might explain the high sequence conservation of ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C73 summarize the main findings supported by the experimental data. Claim C110 provides a forward-looking interpretation and suggestion for future work. The quantitative estimate (1/3 of protein explained) is supported by the data on newly sensitized positions. The conclusion appropriately acknowledges limitations and suggests future directions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The SUB328 experimental system has limitations: it cannot respond to stress by increasing UBI4 expression and is entirely dependent on DUB-based mechanisms to maintain the free Ub pool. However, this system has been successfully used for many years to assess Ub mutations in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe the experimental system with appropriate citations and acknowledge its limitations. Claim C79 provides validation through prior successful use (cited Roscoe et al., 2013; Sloper-Mould et al., 2001; Lee et al., 2014). The authors appropriately discuss caveats while defending the validity of their approach based on precedent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Students in a graduate-level project-based course were able to generate high quality data and useable computational pipelines during 8 weeks of class time, demonstrating the success of this educational approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by the fact that the manuscript presents high-quality, publishable data generated by students. The reproducibility of the data, correlation with prior work, and successful implementation of the barcoding strategy all validate the educational outcomes. This demonstrates the feasibility of research-based graduate education.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Chemical concentrations were determined to inhibit yeast growth by 25% (IC25) to allow cells to grow for multiple generations in log phase during competition experiments. IC25 values were: Caffeine 7.5 mM, DTT 1 mM, HU 25 mM. DMSO (0.5%) and MG132 (50 \u03bcM) did not inhibit growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C91, C93-C97 describe the experimental design rationale and specific concentration determinations. The IC25 approach is appropriate for competition experiments requiring multiple generations of growth. The concentrations are empirically determined and documented in Figure 4\u2014figure supplement 1. The methodological choices are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Rosetta version 55,534 was used for all simulations, with the crystal structure of human ubiquitin (1UBQ) as input. Three mutations were introduced using Rosetta fixed backbone design to match the S. cerevisiae sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide specific computational methods details including software version, input structure, and protocol. This level of detail supports reproducibility. The approach of adapting the human structure to yeast sequence is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "A minimum fitness score of -0.5 was set based on the average value of stop codon substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes a data analysis decision with clear rationale. Using stop codons as a reference for the minimum fitness score is biologically sensible, as these should represent null alleles. This is documented in Figure 3B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome, and this increased pool could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 present a speculative mechanistic interpretation of the MG132 results. While the hypothesis is plausible and consistent with known Ub biology, it is explicitly marked as speculative in the evidence type. No direct measurements of free Ub pools are provided to support this interpretation. This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C105"
+    ],
+    "result": "Ubiquitin is essential for eukaryotic life and highly conserved, varying in only 3 amino acid positions between yeast and humans (96% sequence identity). This conservation implies that the UPS does not acquire new functions through mutations in ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12 state established facts about ubiquitin conservation. Claim C105 draws a reasonable inference from this conservation. These are well-established aspects of ubiquitin biology that provide context for the study. The inference about functional constraint is standard evolutionary reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior studies using alanine-scanning and EMPIRIC showed that ubiquitin is highly tolerant to mutation under normal growth conditions, with many constraints on the sequence enforced by the E1-Ub interaction, though the high number of tolerant positions remained unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20 accurately summarize prior work with appropriate citations (Sloper-Mould et al., 2001; Roscoe et al., 2013; Roscoe and Bolon, 2014). This establishes the paradox that motivates the current study: high conservation despite high mutational tolerance. The summary of prior work is accurate and properly contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Most shared sensitizing mutations change from being mildly deleterious to being nearly null upon chemical stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes a pattern in the experimental data for shared sensitizing mutations. This is supported by the analysis shown in Figure 9 and is consistent with the overall finding that chemical stress unmasks previously buffered fitness defects. The characterization is appropriate for the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The GC bias in codon coverage is likely due to the cloning method that initially generated the Ub mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 provides a reasonable explanation for an observed library characteristic (C30) with appropriate citation (Hietpas et al., 2012). The interpretation is plausible given that the library was derived from a previously constructed library. This is a minor technical observation about library construction.",
+    "result_type": "MINOR"
+  }
+]

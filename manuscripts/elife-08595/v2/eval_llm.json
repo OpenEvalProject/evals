@@ -1,0 +1,155 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors develop a theoretical model where individuals undergo life cycles alternating between dispersed and grouped phases (Aggregation, Reproduction, Dispersal). Adhesiveness is modeled as a continuous trait z that affects both group formation probability and group-derived benefits, with a linear cost C(z)=cz and payoff structure bz\u0304-cz for grouped individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 collectively establish the model framework with clear definitions of life cycle phases, trait effects, and payoff structure. The model assumptions are explicitly stated and internally consistent, providing a well-defined theoretical foundation for subsequent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C30",
+      "C40"
+    ],
+    "result": "Using adaptive dynamics, the authors identify two evolutionary stable strategies at the extremes of adhesiveness (z=0 and z=1), with a bistable evolutionary dynamics for b>2c. An intermediate threshold z* exists as a 'garden of Eden' equilibrium that is non-invasible but not convergence-stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C30, and C40 are mutually consistent and supported by both analytical derivations (Section 4.1) and individual-based simulations (Figure 5). The characterization of z* as a 'garden of Eden' is mathematically justified and validated computationally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C26",
+      "C27"
+    ],
+    "result": "Cohesive groups can evolve by small mutational steps if initial adhesiveness exceeds a minimum threshold. The mechanism relies on assortment created by differential propensities to remain ungrouped, which can compensate for adhesiveness costs even when cells are genetically unrelated and benefits are weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C23, C26, and C27 are supported by the analytical condition in Equation 3 and the demonstration that ungrouped individuals create positive assortment. The mechanism is novel and mathematically justified, though the biological relevance depends on the realism of the aggregation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C49"
+    ],
+    "result": "Along evolutionary trajectories, the social nature of adhesiveness mutations changes from altruistic to directly beneficial as adhesiveness increases. Altruism arises first despite being more challenging, suggesting it may play a more important role in the origin of social behavior than currently assumed, with directly beneficial interactions representing an evolutionary endpoint rather than a stepping stone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C38, C39, and C49 are supported by the analysis in Section 4.2 and Figure 4, which demonstrates how the gain from switching changes along evolutionary trajectories. The classification of mutations as altruistic vs. directly beneficial is mathematically rigorous based on Equation 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Stochastic fluctuations due to finite population size can decrease the adhesiveness threshold when maximal group size T is small, potentially allowing increased adhesiveness to evolve from scratch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by numerical simulations shown in Figure 3 (blue circles), demonstrating that demographic stochasticity can facilitate the evolution of adhesiveness below the deterministic threshold. This is a biologically relevant finding for small populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C48"
+    ],
+    "result": "When nonlinearities are introduced (physical upper limits on group size or nonlinear costs), a second convergence-stable equilibrium z+ appears with intermediate adhesiveness, maintaining a fraction of ungrouped individuals at evolutionary equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C48 are supported by individual-based simulations shown in Figures 6 and 7. The emergence of intermediate equilibria under nonlinear benefit/cost functions is demonstrated computationally, though analytical treatment is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model supports the importance of solitary cells in the evolution of sociality, consistent with observations in D. discoideum where ungrouped cells are widespread. Lonely cells that remain outside groups by chance are of primary importance for the onset of sociality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 connect the model predictions to biological observations and prior theoretical work. The role of ungrouped cells is supported by the analytical results (Equation 3) and is consistent with cited experimental and theoretical literature on D. discoideum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The gradual increase in adhesiveness provides a mechanistic and readily achievable route by which unicellular organisms may have made the transition to complex, multicellular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is an inference about evolutionary history that extends beyond what the model directly demonstrates. While the model shows adhesiveness can evolve gradually under certain conditions, the claim about actual evolutionary transitions requires additional empirical support and consideration of alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes background knowledge about cellular adhesion in microbial aggregates, evolutionary transitions, cooperation mechanisms, and the variability of adhesion-related genes like FLO1 in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 represent established knowledge from the literature, appropriately cited. These claims provide context and motivation for the study but do not constitute novel findings of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript reviews prior work showing that directly beneficial cooperation is favored in randomly assorted populations, with examples from yeast invertase secretion, L. lactis protease production, and P. aeruginosa pyoverdine diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 accurately represent cited prior work and provide context for understanding the significance of the finding that altruism can arise before directly beneficial behavior. The citations appear appropriate and the characterizations accurate.",
+    "result_type": "MINOR"
+  }
+]

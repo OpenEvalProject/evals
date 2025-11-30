@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C96",
+      "C97"
+    ],
+    "result": "The WizMommeD30 mutation is a single base pair deletion causing a frameshift and premature stop codon, resulting in a null allele with embryonic lethality in homozygotes and reduced protein levels in heterozygotes. This was the only exonic mutation in the linked interval and no other genes in this interval were misexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C96-C97 provide converging genetic, molecular, and expression evidence that WizMommeD30 is a null allele. The sequencing data (C16-C17), embryonic lethality (C18), protein quantification (C19), and RNA-seq validation (C97) collectively support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C127",
+      "C128"
+    ],
+    "result": "Haploinsufficiency for Wiz results in decreased expression at both the GFP transgene and the Avy allele, with statistically significant shifts toward silencing observed in crosses with both WizMommeD30/+ sires (p=0.0002) and dams (p=0.0458).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C46 and C127-C128 demonstrate consistent effects of Wiz haploinsufficiency on two independent reporter systems with appropriate statistical support. The coat color data (Figure 1) provides clear phenotypic evidence with significant p-values for both parental crosses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C104"
+    ],
+    "result": "The anti-Wiz antibody (NBP180586) is specific for Wiz in mouse tissue, detecting multiple isoforms including three at ~100 kDa and one at ~160 kDa in cerebellum. Co-immunoprecipitation confirmed association with known Wiz-interacting proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C104 provide multiple lines of validation for the antibody specificity through Western blot comparison of wildtype vs. null mutant (C47), detection of expected isoforms (C48, C104), and mass spectrometry confirmation of known binding partners (C49).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C50",
+      "C51",
+      "C52",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Wiz ChIP-seq in adult cerebellum identified approximately 40,000 significant peaks (p\u22641\u00d710^-20) that are roughly equally distributed across promoters, intragenic, and intergenic regions, with strong enrichment at transcription start sites (TSS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, C50-C52, and C124-C126 describe the ChIP-seq experimental design, sequencing depth, peak calling results, and genomic distribution. The data show adequate sequencing depth (>30M reads), appropriate alignment rates (>24M), and validation by ChIP-qPCR (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Wiz peaks extensively overlap with CTCF binding sites in cerebellum. The most significant Wiz motif (E-value 2.3\u00d710^-6903) aligns almost perfectly with the CTCF-DNA binding motif and is present in ~70% of Wiz peaks. Approximately one-third of Wiz peaks overlap CTCF peaks, and virtually all CTCF peaks overlap with Wiz peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C53-C59 provide strong computational and comparative evidence for Wiz-CTCF co-localization. The motif analysis (C53-C55), overlap analysis with ENCODE data (C56-C59), and the near-complete overlap of CTCF with Wiz peaks (C59) are well-supported by the data in Figures 3C-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "There is little overlap between Wiz ChIP-seq findings in human kidney cells (Bian et al., 2015) and the current study's findings in mouse cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 reference a comparison with published data, but the manuscript provides limited detail on the methodology used for this comparison and the extent of overlap. The authors note tissue and species differences but do not provide quantitative overlap metrics or discuss whether this reflects technical, biological, or analytical differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RNA-seq identified 36 genes differentially expressed in male E13.5 brains and 44 in female E13.5 brains of WizMommeD30/+ mice, with the majority (31/36 in males, 43/44 in females) decreasing in expression. Twenty-eight genes were commonly downregulated between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C60-C65 describe RNA-seq results with appropriate sample sizes (n=3 for males, n=2 for females) and clear statistical thresholds (fold-change <0.7 or >1.3, adjusted p\u22640.05). The consistency of downregulation across sexes (C64-C65) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Differentially expressed genes in E13.5 brain include clustered protocadherin \u03b2 genes on Chromosome 18 and a poorly annotated cadherin-11-like gene cluster on Chromosome 8. Several genes were also located near telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C66-C71 identify specific gene clusters affected by Wiz haploinsufficiency. The authors appropriately acknowledge annotation limitations for the Chromosome 8 cluster (C68-C69) and note the telomeric location of some genes (C70-C71), which is relevant given Wiz's potential role in heterochromatin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In adult cerebellum, 82 genes were differentially expressed in WizMommeD30/+ mice (29 decreased, 53 increased). Thirteen genes overlapped with those differentially expressed in E13.5 brain, all showing decreased expression. Protocadherin \u03b2 downregulation was more pronounced in embryonic brain than adult cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe adult cerebellum RNA-seq with adequate replication (n=3 per genotype). The overlap analysis (C75-C76) and tissue-specific differences in protocadherin regulation (C77) are well-documented and provide developmental context for Wiz function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Protocadherin \u03b2 genes showed strong Wiz ChIP-seq enrichment at promoters (except Pcdhb1, which lacks a canonical promoter) and at the HS5-1bL enhancer, where enrichment was an order of magnitude higher than at individual promoters. These genes decreased in expression in both embryonic brain and adult cerebellum of Wiz mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C78-C83 integrate ChIP-seq and RNA-seq data to demonstrate direct Wiz binding at protocadherin genes with corresponding expression changes. The exception of Pcdhb1 (C78-C79) is explained by its unique promoter structure, and the strong enhancer enrichment (C80-C81) is validated by ChIP-qPCR (Figure 6B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Genes that decreased in expression in WizMommeD30/+ cerebellum showed high Wiz enrichment and some CTCF enrichment at the TSS, while genes that increased in expression showed little Wiz or CTCF enrichment, suggesting the latter are secondary effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide a mechanistic interpretation linking ChIP-seq binding data to expression changes. The differential enrichment patterns (Figures 6C-D) support the conclusion that downregulated genes are direct Wiz targets while upregulated genes are indirect effects (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C42",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "WizMommeD30/+ mice display an anxiety-like phenotype characterized by decreased activity during specific hours of the dark phase, reduced open arm entries in the elevated plus maze (~25% reduction, p=0.010), and reduced time in light and rearing activity in the light-dark box test. No differences in temperature profiles were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C42, and C89-C95 describe behavioral phenotyping using multiple validated anxiety assays with appropriate sample sizes (n=10-22 per genotype) and statistical analyses. The consistency across multiple behavioral tests (telemetry, EPM, light-dark box) and the specificity of effects (activity but not temperature) strengthen the conclusion of an anxiety-like phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32"
+    ],
+    "result": "Wiz may function as a transcriptional activator, in addition to its known repressor function. This is supported by evidence that G9a can act as a transcriptional activator independent of its methyltransferase activity, and WIZ has been suggested to have a role in G9a's activation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C32 present the novel hypothesis that Wiz functions as a transcriptional activator. This is supported by multiple lines of evidence in the manuscript: decreased expression at reporter loci with Wiz haploinsufficiency (C33-C46), predominant downregulation of genes in RNA-seq (C62-C63), and Wiz binding at genes that decrease in expression (C84). The prior literature on G9a activation function (C31-C32) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C36",
+      "C37",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Protocadherin genes require precise expression patterns for neuronal development, and their dysregulation is associated with neurological phenotypes. CTCF mediates enhancer-promoter looping at the protocadherin \u03b2 locus, and heterochromatinization facilitates single isoform expression. Wiz may have a role in maintaining active loci within heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C36-C37, and C113-C123 provide established biological context from the literature that motivates the study and interprets the findings. The connection between protocadherin expression, neuronal development, and behavior (C13, C121-C123) is well-established, and the speculation about Wiz's role in heterochromatin (C117) is appropriately tentative and based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C119",
+      "C120"
+    ],
+    "result": "This is the first evidence of a role for Wiz in neural function. Prior to this study, no link between Wiz and behavior had been shown in mice or humans. Heterozygosity for rare WIZ mutations in humans could potentially influence neurological disorders with complex genetic etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C119-C120 assert the novelty of the findings and speculate on clinical relevance. The novelty claim (C15, C119) appears supported by the literature review, and the speculation about human disease (C120) is appropriately cautious and based on the mouse behavioral phenotype and the precedent of Kleefstra syndrome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C21",
+      "C35"
+    ],
+    "result": "Wiz was identified in a mouse ENU mutagenesis screen for epigenetic modifiers and is generally considered a transcriptional repressor due to its association with G9a/GLP. Wiz is highly expressed in the brain (embryonic and adult), and the WizMommeD30 strain is the only reported mouse strain with a mutant form of Wiz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C4, C21, and C35 provide background information that is well-supported by citations to prior work. These establish the context for the current study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Wiz has no recognizable catalytic domains but contains 11 C2H2-type zinc finger domains with an unusual widely-spaced configuration (\u226550 amino acids apart, compared to the typical <10 amino acids). Some zinc fingers bind DNA and others mediate protein-protein interactions with G9a/GLP. Similar widely-spaced zinc finger proteins (Zfp292, Rlf, Su(Var)3-7) have been shown to bind DNA in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C98-C103 describe Wiz protein structure and function based on sequence analysis and cited literature. The structural features are well-established (C22, C98-C100), and the functional properties (C23-C24) are supported by cited experimental work. The comparison to other widely-spaced zinc finger proteins (C101-C103) provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The G9a/GLP complex catalyzes H3K9me1/me2 methylation associated with transcriptional repression and located in broad chromatin regions (LOCKs). Wiz stabilizes the G9a/GLP complex, mediates its DNA localization, and is required for normal H3K9me2 levels. CTCF is a transcriptional activator enriched at topologically associated domain boundaries and can mediate enhancer-promoter interactions. Reducing WIZ levels decreases G9a at CTCF-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C105-C112 provide established mechanistic background from the literature about G9a/GLP, Wiz, and CTCF function. These are appropriately cited and provide essential context for interpreting the ChIP-seq and RNA-seq results. The lack of reported Wiz-CTCF co-immunoprecipitation (C108) is noted as a gap in knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Many enzymes that modify histones and DNA have been found to be critical for development and function of the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 provides general background on the importance of epigenetic modifications in neural function. This is well-established knowledge that contextualizes the study's focus on Wiz in the brain.",
+    "result_type": "MINOR"
+  }
+]

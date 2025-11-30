@@ -1,0 +1,2204 @@
+{
+  "submission": {
+    "id": "f12c1392-ae6d-473f-b401-826a0c5bb378",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:00:18.831320Z",
+    "updated_at": "2025-11-29T22:00:18.831320Z"
+  },
+  "content": [
+    {
+      "id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "submission_id": "f12c1392-ae6d-473f-b401-826a0c5bb378",
+      "content_type": "manuscript",
+      "content_text": "# Rate and timing of cortical responses driven by separate sensory channels\n\n## Authors\n\n- Hannes P Saal<sup>1</sup> \u2020\n- Michael A Harvey<sup>1</sup>\n- Sliman J Bensmaia<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Organismal Biology and Anatomy University of Chicago Chicago United States\n2. Department of Neurological Surgery Vanderbilt University Medical Center Nashville United States\n3. Committee on Computational Neuroscience University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe sense of touch comprises multiple sensory channels that each conveys characteristic signals during interactions with objects. These neural signals must then be integrated in such a way that behaviorally relevant information about the objects is preserved. To understand the process of integration, we implement a simple computational model that describes how the responses of neurons in somatosensory cortex\u2014recorded from awake, behaving monkeys\u2014are shaped by the peripheral input, reconstructed using simulations of neuronal populations that reproduce natural spiking responses in the nerve with millisecond precision. First, we find that the strength of cortical responses is driven by one population of nerve fibers (rapidly adapting) whereas the timing of cortical responses is shaped by the other (Pacinian). Second, we show that input from these sensory channels is integrated in an optimal fashion that exploits the disparate response behaviors of different fiber types.\n\n## Introduction\n\nPerception reflects the seamless integration of signals from a variety of sensory receptors that respond preferentially to different aspects of the environment. The classic example of such integration is color vision, where input from different cone receptors is integrated to extract a specific feature of objects, approximately corresponding to their absorption spectrum (Gegenfurtner, 2003). Signals are also combined across different sensory modalities, and this integration process is often optimized to extract stimulus information (Ernst and Banks, 2002). Given that different sensory channels encode different stimulus features and exhibit different response properties, the central nervous system is faced with the challenge of how to integrate such disparate input signals.\n\nThe sense of touch is mediated by at least three main classes of mechanoreceptive afferents, each of which responds to different aspects of skin deformation (Johnson, 2001): slowly-adapting type I (SA1) afferents are most sensitive at low frequencies (<10 Hz), rapidly\u00a0adapting (RA) afferents at intermediate frequencies (in the so-called flutter range, from 10 to 50 Hz), and Pacinian (PC) afferents at high-frequencies (peaking in sensitivity at around 250 Hz). However, the frequency sensitivities of the different afferent classes overlap considerably (Figure 1A), and natural stimuli typically engage more than one class (Saal and Bensmaia, 2014). Not surprisingly, then, information about most tactile events is carried by signals from several afferent classes (Saal and Bensmaia, 2014; Johansson and Flanagan, 2009; Abraira and Ginty, 2013), and this input is integrated across submodalities even at the first stage of cortical processing, namely primary somatosensory cortex (S1)\u00a0(Pei et al., 2009; Carter et al., 2014). Importantly, S1 neurons convey information about contacted objects not only in the strength of their responses but also in their timing (Harvey et al., 2013; Zuo et al., 2015). For example, the amplitude of skin oscillations\u2014such as those elicited during the exploration of textured surfaces\u2014is encoded in the strength of the cortical response whereas their frequency is encoded in its timing. To achieve such multiplexing requires that afferent signals be integrated in a principled way.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig1-v2.jpg)\n\n**Figure 1.:** (A) Frequency\u2013amplitude pairs that elicit responses in rapidly adapting (RA) and Pacinian (PC) afferents. Light blue and orange lines indicate absolute response thresholds for RA and PC afferents (as determined by the peripheral model), respectively, while the dark blue and orange lines denote tuning thresholds (i.e., eliciting one spike on each stimulus cycle). The black line corresponds to the highest amplitude the stimulator could deliver at a given frequency and likely exceeds the maximum amplitude that one is liable to encounter during every day tactile experience. While RA and PC afferents are maximally sensitive at different frequencies, most frequency\u2013amplitude pairs elicit responses from both afferent classes (indicated by the shaded region). (B) Illustration of the model that describes the transformation from peripheral to cortical responses. A broadband noise stimulus activates both RA and PC afferents. RA and PC population responses are each convolved with a temporal filter, then summed and rectified to culminate in the responses of individual S1 neurons. (C) Two examples of vibratory stimuli. (D) Simulated RA (blue) and PC (orange) population firing rates along with spike trains of a subset of neurons in the population. See Figure 1\u2014figure supplement 1 for details on how the peripheral population models were validated. (E) Recorded spikes (black ticks) over five stimulus repeats and model predictions (green traces) for two cortical neurons, whose RA and PC filters (plotting filter magnitude over time) are shown on the left. Cortical neurons differ in their response properties, such as burstiness and temporal precision, and the model captures these broad differences with different RA and PC filters. See Figure 1\u2014figure supplement 2 for assessment of the general predictive power of our model.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Recorded (top) and simulated (bottom) responses of RA and PC populations to sinusoidal skin vibrations of different amplitude and frequency. The model predictions closely approximate measured firing rates. (B) Rate-intensity function for a recorded (top) and simulated (bottom) PC afferent stimulated with 200 Hz sinusoidal vibrations. Both the recorded and modeled PC afferent exhibit entrainment plateaus. (C) Cycle histograms for a recorded (top) and a simulated (bottom) PC afferent. At low amplitudes, a single spike is elicited per cycle, which is precisely timed to occur at the same phase within the cycle (left column). At higher amplitudes, more than one spike per cycle can occur in complex but repeatable patterns (right column)\u00a0(Whitsel et al., 2000). Both of these effects are captured by the model. (D) Mean rate-intensity functions for recorded (top) and simulated (bottom) populations of RA and PC fibers stimulated with bandpass noise skin vibrations of different amplitudes and frequency composition (legend denotes frequency ranges in Hz). The model predictions closely approximate recorded firing rates. (E) Reproducing precise spike timing for bandpass noise stimuli. Top: Example of a noise trace. Bottom: Recorded (black) and simulated (lavender) response a single PC fiber to stimulus. The simulated spike train matches the recorded ones with high temporal precision. (F) Correlation between recorded and simulated RA (blue) and PC (orange) population response for noise stimuli at different temporal resolutions. The lower correlation for the RA responses at the finest temporal resolution reflects the fact that RA responses are not very repeatable at those timescales (Mackevicius et al., 2012). (G) Mean spike triggered averages (STA) for RA (left) and PC (right) fibers calculated from both the recorded (blue and orange) and modeled (lavender) data with respect to the stimulus trace. The STA for the model and the recorded peripheral data agree well.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Predictable variance in the recorded cortical spike trains as a function of bin width. The solid line denotes the mean over the cortical population and the error bars denote the standard error of the mean. Due to jitter in the recorded spike trains, the predictable variance decreases for finer bin sizes.\u00a0(B) Fraction of predictable variance explained by the model as a function of bin width. The solid line denotes the mean over the cortical population and the error bars denote the standard error of the mean.\n\nHere, we measure the responses of S1 neurons to a wide variety of simple and complex vibrotactile stimuli and reconstruct the responses of afferent populations to these same stimuli. We then implement a simple model that allows us to examine how responses of the different afferent populations combine to drive responses in cortex. First, we find that most S1 neurons integrate information from multiple afferent classes. Second, signals from the different classes drive cortical responses in very different ways: RA afferent input exerts an excitatory influence on S1 responses and is the primary determinant of their firing rates; in contrast, PC input exerts a balanced excitatory and inhibitory influence which sharpens the timing of cortical responses without having a major impact on the rates. Finally, we show that the process of integration maximizes information transmission across the range of stimulation conditions that might be encountered during everyday interactions with objects.\n\n## Results\n\nWe recorded the responses of 18 peripheral tactile afferents (14 RA and 4 PC) and 118 cortical neurons in areas 3b (49) and 1 (69) of S1 to a variety of vibrotactile stimuli, ranging from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz and amplitudes ranging from sub-micrometer to more than 500 \u00b5m. Stimulation conditions spanned those that might be experienced when we scan a textured surface (Bensma\u00efa and Hollins, 2003; Bensma\u00efa and Hollins, 2005; Weber et al., 2013; Manfredi et al., 2014). As these stimuli drove RA and PC to the exclusion of SA1 afferents (Muniak et al., 2007), we focused the analysis on these two afferent populations. The goal was to quantitatively predict S1 responses based on afferent responses. Because the stimuli used in the peripheral experiments were analogous but not identical to those used in the cortical experiments, we used simple but precise models of afferent responses (derived from recorded responses, Figure 1\u2014figure supplement 1) to reconstruct RA and PC population responses to the stimuli used in the cortical experiments (Figure 1C,D). To examine how input from these different populations is integrated in cortex, we describe the transformation from the periphery to cortex as a linear filter over the RA and PC population responses whose output is subsequently rectified (based on the linear-nonlinear-Poisson framework (LNP), Figure 1B). This approach allows us to examine the filters estimated for each cortical neuron to assess the contribution (if any) of each afferent population to that neuron\u2019s response and to characterize the dynamics of this integration. To the extent that this simple model captures different response properties of cortical neurons, the respective filters for these neurons will be different (Figure 1E).\n\nTo test the model\u2019s performance, we compared predicted and recorded cortical responses at different timescales. We performed this analysis on a separate data set (consisting of sinusoidal stimuli), to estimate how well the model would generalize to stimuli that differed considerably from the noise traces used to fit the model. We found that the model captures the cortical responses well on both coarse and fine timescales as assessed by calculating the correlation coefficients between the predicted and recorded responses. Indeed, across neurons, the model captured 67% ( \u00b1 2% standard error of the mean) of the predictable variance (Ramirez et al., 2014) for 1 s bins, and 35% ( \u00b1 2%) for 5 ms bins. In other words, the model was able to predict neuronal responses with considerable accuracy given their inherent variability.\n\n### RA and PC input is integrated differently\n\nWe found that most cortical neurons in areas 3b and 1 receive input from both RA and PC afferents, as evidenced by the significant contribution of both to the overall prediction (Figure 2A). Furthermore, the linear filters obtained for each afferent population, while similar across cortical neurons, were consistently different from each other (Figure 2B): First, while the magnitude of the PC filters was correlated with that of the RA filters (r = 0.41), PC filters were consistently of lower magnitude (Figure 2C, t(70) = 6.4, p < 0.01, paired t-test), with the RA contribution on average about three times stronger than the PC one. Second, RA filters were much more extended in time (with a mean above 30 ms) than were PC filters (with a mean below 20 ms)\u00a0(Figure 2D, t(188) = 9.6, p < 0.01, two-sample t-test). Third, while the net contribution of the RA input to the cortical response was positive, PC input was on average balanced; that is, excitatory and suppressive components of the PC filters were of equal magnitude. In fact, for about half of cortical neurons, the PC contribution was net suppressive (Figure 2E); the difference in the net contribution of RA and PC input was significant (t(188) = 16.1, p < 0.01, two-sample t-test). PC filters were also much more diverse and spanned the range of this metric (from -1 to +1), in contrast to RA filters, which, as mentioned above, tended to be net excitatory (>0).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fraction of neurons in areas 3b and 1 that receive input from both RA and PC populations (grey bar) or from only the RA population (blue) as assessed by whether input from the respective class is weighted more highly than might be expected by chance. Most S1 neurons receive input from both RA and PC afferents. (B) Mean RA and PC filters (solid lines) and the 5th and 95th percentile of filter values across all S1 neurons indicated by the light-shaded regions. RA and PC filters are systematically different. (C) Ratios of RA and PC filter magnitudes for neurons integrating information from both afferent classes. RA input tends to be weighted more strongly. (D) Width of RA and PC filters. RA input tends to be integrated over longer timescales than does PC input. Insets show example filters that are close to the population average (over 100 ms). (E) Excitation indices for all RA and PC filters, where 1 denotes purely excitatory input, 0 balanced input, and -1 purely suppressive input. RA filters almost always lead to a net positive excitation of the cortical neurons, while the PC filters are more diverse, on average balanced, and often suppress cortical response. Insets show example filters that are close to the population average (over 100 ms). See Figure 2\u2014figure supplement 1 for validation of the analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Autocorrelation matrix of RA and PC population responses from our data\u00a0set to bandpass noise stimuli. (B) Examples of estimated linear filters from simulated neuronal responses. Top row: Three different filter sets. Middle row: Recovered filters assuming RA/PC populations responses are uncorrelated, leading to biases in the estimated filters. Bottom row: Recovered filters after correcting for autocorrelations in the RA/PC population input. The corrected filters closely match the actual filters. (C) Estimated filter value versus actual filter value across all filters and time points obtained from simulated neuronal responses. Estimated values closely match the actual values. (D) Fraction of simulated neurons correctly classified as having both RA and PC input (green bar) or incorrectly classified as having both RA and PC input when they had only input from one population (red bar). Neurons are classified correctly in the vast majority of cases; importantly in only 3% of cases were neurons misclassified as having both RA and PC input when in fact they only received input from one of the two. (E) Comparison of differences reported between RA and PC filters (grey bars) as reported in the main text (cf. Figure 2) and biases when calculating the same metrics from the simulated neuronal responses (red bars). In all cases, any biases are much smaller than the reported effects and are therefore unlikely to affect the results reported in Figure 2.\n\n### RA input drives cortical firing rates\n\nThe different filter shapes for RA and PC input reflect profound differences in the way the two afferent populations shape cortical responses. Indeed, the firing rates of individual S1 neurons are almost entirely determined by RA input as evidenced by the fact that a model based on RA input alone can predict S1 firing rates\u2014averaged over 1 s\u00a0long periods\u2014almost as well as RA and PC responses combined; this was true for responses to both noise and sinusoids (Figure 3). PC input alone, on the other hand, cannot account for the observed cortical firing rates. Indeed, these would be much more frequency-dependent if driven by this population of nerve fibers.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig3-v2.jpg)\n\n**Figure 3.:** Reconstruction accuracy of the full model compared to one that includes only RA or Pacinian (PC) input as measured by correlation between actual and predicted firing rates (measured over the duration of the trial, namely 1 s). Error bars denote the standard error of the mean across neurons. Firing rates elicited by both noise and sinusoidal stimuli are well predicted by the full model. While the performance of RA-only filters is almost as good as the full model, reconstruction accuracy drops dramatically if only PC input is included.\n\n### PC input determines precise spike timing\n\nWe have previously shown that the responses of mechanoreceptive afferents are highly precise and repeatable, and their timing conveys information about the frequency composition of skin vibrations (Mackevicius et al., 2012) and about the identity of textures scanned across the skin (Weber et al., 2013) at resolutions on the order of milliseconds. Similarly, the temporal patterning of responses in somatosensory cortex is precise and informative down to a millisecond timescale (Harvey et al., 2013). RA and PC input are thus integrated in such a way to culminate in temporally patterned cortical responses. One might expect that the shorter integration window of the PC filters combined with their strong suppressive components would result in this sensory channel driving more precise spike timing than does its RA counterpart. Indeed, when removing the PC contribution from the model, predictions of spike timing in the cortex became less temporally precise (Figure 4A). We quantified this effect in two ways. First, we filtered the recorded and predicted time-varying firing rates to noise stimuli at different temporal resolutions and examined how much of the variance in the responses could be accounted for based on RA input or PC input alone (Figure 4B). We found that only PC input can account for high frequency fluctuations in the cortical responses of many neurons, while RA input is sufficient at coarser temporal resolutions for almost all cortical neurons (Figure 4C). In fact, the more precise the responses of a cortical neuron were, the more of its response variance was explained by PC input (Figure 4\u2014figure supplement 1). Second, we tested how well the model could account for the well-documented patterning in cortical responses to sinusoidal vibrations: over a wide range of frequencies, cortical neurons produce entrained responses to sinusoidal stimulation of the skin (Harvey et al., 2013; Salinas et al., 2000; Mountcastle et al., 1969). That is, they produce one spike or burst of spikes within a very restricted phase of each stimulus cycle. We examined, then, whether we could predict the degree of entrainment of cortical neurons to sinusoidal stimuli from the RA and PC input. We found that the strength of phase-locking to sinusoids ranging in frequency from 50 to 300 Hz was well captured by the model (yielding a correlation between predicted and measured phase-locking of 0.78). Importantly, while RA input was dominant at the low frequencies, only the PC input could account for the observed phase-locking at 200 Hz and above (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig4-v2.jpg)\n\n**Figure 4.:** (A) Responses to noise stimuli from two example neurons with particularly precise responses. Spiking probabilities derived from the full model (green traces) are much more temporally precise than are those derived from a rapidly adapting (RA)-only model (blue traces), reflecting the importance of PC input in shaping the response at fine timescales. Five repetitions of the recorded cortical spike trains are shown below the model traces in black. (B) Fraction of the explained variance (R2) by either the RA (blue) or PC (orange) model relative to the full model across different temporal resolutions for the two neurons shown in A. PC input is important to explain responses on fine timescales. (C) Fraction of explained variance (R2 fraction) relative to the full model by RA and PC input for all neurons at two different temporal resolutions. While RA input can explain most of the observed variance at coarse temporal resolutions (left panel), PC input is needed to explain the timing of cortical responses at fine temporal resolutions (right panel). See Figure 4\u2014figure supplement 1 for further analysis. (D) Vector strengths predicted by RA (blue) and PC (orange) models relative to their measured counterparts at different frequencies across all neurons. RA input accounts for entrainment to sinusoidal stimuli at low frequencies, while PC input is needed at higher frequencies.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Fraction of variance explained by the RA-only model as a function of neural timing precision (as assessed by the highest frequency, the neurons reliably phase-locked) for two different bin sizes. At coarse temporal resolution, RA input explains almost all variance explained by the model independent of whether the neuron's spiking was precise or not. At fine temporal resolutions, RA input alone cannot explain the model's performance. The more precise a neuron's response, the less RA input alone could account for its response, indicating that the PC input accounts for more precise cortical responses.\n\n### RA and PC input is integrated optimally to process natural tactile scenes\n\nHaving established how input from different sensory channels is integrated in somatosensory cortex, we sought to understand why the two channels drive cortical neurons in different ways. We reasoned that the process of integration should reflect differences in the response properties of the input channels. Specifically, PC responses to skin vibrations and scanned textures have been consistently shown to be more temporally precise than their RA counterparts (Weber et al., 2013; Mackevicius et al., 2012). Furthermore, the two afferent classes differ in their frequency sensitivity profile: PC afferents are considerably more sensitive than RA afferents at frequencies above about 150 Hz (see Figure 1A). Finally, we surmised that the process of integration would also reflect the statistics of the stimuli experienced during interactions with objects, as is the case in other sensory modalities (van Hateren, 1992; Field, 1987; Smith and Lewicki, 2006).\n\nWe focused on natural textures, which are ideally suited to address this question. When running our finger across a textured surface, high-frequency oscillations are elicited in the skin (Bensma\u00cfa and Hollins, 2003; 2005; Manfredi et al., 2014), which in turn elicit highly temporally patterned and repeatable responses in both RA and PC afferents (Weber et al., 2013). In cortex, neurons respond to skin oscillations with precisely timed spikes that encode the skin deflections with millisecond precision (Harvey et al., 2013). In light of this, how should RA and PC responses to natural tactile stimuli be integrated to be maximally informative about texture-elicited skin oscillations at a fine temporal resolution? To address this question, we simulated RA and PC responses to different textures scanned across the skin and optimized cortical RA and PC filters for information transmission about skin oscillations.\n\nWe found that the filters optimized to convey information about texture closely matched the filters derived from measured S1 responses: RA filters were mostly excitatory and temporally broad; PC filters were narrower and comprised distinct suppressive components (Figure 5A). The similarities between the recorded and optimized filters also held up quantitatively. First, we found that most (71%) optimized filters comprised contribution from both RA and PC fibers, while the rest relied on RA input alone, similar to what we found in our cortical data set. Second, we found that the optimal filters typically weighted the RA input more strongly than the PC input, as did the filters derived from cortical responses (Figure 5B). Third, the optimal RA filter widths were wider than PC filter widths and largely overlapped the range of the actual filter widths (Figure 5C). Finally, we found that the excitation/suppression indices of the optimized filters approximated those derived from our cortical data set in that RA input was always net excitatory, while PC input spanned the range between highly suppressive, balanced, and excitatory (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10450/elife-10450-fig5-v2.jpg)\n\n**Figure 5.:** (A) Three examples RA and PC filters, each optimized for a different natural texture (colored traces) and paired with a filter from a cortical neuron that most closely matches it (gray traces). (B\u2013D) Comparison of filter statistics for actual (black) and optimized (lavender), and distorted (green) filters for the RA/PC magnitude ratio (B), filter width (C), and excitation/suppression index (D). For the optimized filters, bars denote the range covered by the filters optimized for different textures. For the actual filters, bars indicate the range between the 10th and the 90th percentile.\n\nTo test whether our fitted and optimized filters might be an artifact of our approach rather than reflect the integration properties of S1 neurons, we also optimized filters on a distorted data set. During natural interaction with surfaces, the amplitude of elicited vibrations decreases as their frequency increases, leading to roughly a power\u2013law relationship (Manfredi et al., 2014; Wiertlewski et al., 2011; Delhaye et al., 2012). When we re-optimized the filters to stimuli with a distorted frequency composition, we found that the resulting filters did not match the ones observed in cortex (green bars in Figure 5B\u2013D): The PC signal was weighted more heavily, was integrated over longer timescales, and was mostly excitatory, in contrast to what we observed in both the cortical filters and the ones optimized on our natural texture data set. We conclude that RA and PC integration in S1 is optimized to encode stimuli that are commonly encountered during interactions with objects.\n\n## Discussion\n\nWe set out to examine how input from different mechanoreceptive afferent classes is integrated in the responses of individual cortical neurons. To this end, we simulated the responses of populations of RA and PC tactile afferents and examined how these are combined to drive S1 responses. This modeling effort yielded several important conclusions. First, the vast majority of cortical neurons receive (indirect) input from both RA and PC afferents. Second, RA and PC afferents drive S1 neurons in fundamentally different ways: RA input determines the rate of the response whereas the principal contribution of PC input is to sharpen the temporal precision of the response. Third, the integration of afferent input is consistent with a process that maximizes the information conveyed in the cortical responses by exploiting the different response properties of RA and PC afferents.\n\n### Input from different sensory channels is integrated in the responses of individual S1 neurons\n\nOur results unequivocally show that RA and PC input are integrated in the responses of individual S1 neurons. That is, the responses of S1 neurons cannot be explained from the responses of RA or PC neurons alone. While it has traditionally been assumed that the different tactile submodalities are segregated at least through primary somatosensory cortex (Sur et al., 1981; Sur et al., 1984; Chen et al., 2001; Friedman et al., 2004) (although cortical PC neurons have generally proven elusive, see below), recent evidence suggests that input from different classes of somatosensory afferents is indeed integrated between periphery and cortex (Saal and Bensmaia, 2014; Pei et al., 2009; Carter et al., 2014; Prescott et al., 2014). In this study, stimuli fell in the range of frequencies that excites RA and PC fibers at the exclusion of SA1 fibers, which only respond to low-frequency stimulation. However, SA1 and RA input have been shown to be integrated in the responses of S1 neurons when these were studied with ramp-and-hold skin indentations (Pei et al., 2009) so the convergence of submodality-specific input onto individual S1 neurons seems to be a general phenomenon. However, it is still an open question whether the integration of input from different mechanoreceptors takes place only at the cortical level, or whether they appear already at the subcortical level in either the cuneate nucleus or the thalamus. Convergence of somatosensory submodalities has been observed in the brainstem of rats (Sakurai et al., 2013) and the same is likely true in primates.\n\n### The effect of PC input on S1 responses\n\nOur results reconcile some seemingly contradictory findings regarding the contribution of PC afferents to cortical responses. First, vibrotactile coding in general and the role of PC input specifically have been probed almost exclusively with high-frequency sinusoidal stimuli. These stimuli have been shown to evoke only a short transient response in S1, which then quickly decays back to baseline, a phenomenon that can be accounted for by the balance of excitation and suppression in the PC drive. That PC-elicited responses are short and weak might explain why PC-driven cortical neurons are thought to be extremely rare in S1 (Lebedev and Nelson, 1996; Mountcastle et al., 1990). Second, the main effect of PC input is to shape the timing of cortical spikes, which could account for the extremely precise timing of S1 responses at high frequencies (Harvey et al., 2013) that has been shown to contribute to tactile perception (Zuo et al., 2015). Third, the balanced drive of PC afferents explains why the firing rates of S1 neurons are not dependent on stimulus frequency even though PC rates are (Harvey et al., 2013). Finally, the PC input has been found to inhibit cortical responses (Tommerdahl et al., 2005; Tommerdahl et al., 2010), consistent with our finding that PC filters are often net suppressive.\n\n### Efficient coding and the integration of sensory channels\n\nSensory cortex is tuned to the statistics of the natural environment, as has been demonstrated most notably in vision (van Hateren, 1992; Field, 1987) and audition (Smith and Lewicki, 2006), by invoking the efficient coding principle (Barlow et al., 1961). Generally, it has been assumed that the peripheral input stems from a single homogeneous population of neurons (e.g. retinal ganglion cells). However, this is often not the case: in touch, information is carried by multiple separate populations of neurons, each with different sensitivities and response properties. To encode information efficiently, then, the disparate response properties of these different channels need to be taken into account. While both RA and PC afferents respond to most high-frequency skin vibrations, such as those elicited during texture scanning, both afferent classes do so in different ways. First, RA afferents increase their firing rate with increasing stimulus amplitudes (Arabzadeh et al., 2014), and do so in a manner that is relatively independent of stimulus frequency, while PC responses saturate at low stimulus amplitudes and are highly frequency-dependent (Muniak et al., 2007). RA firing rates therefore convey a much more informative signal about the amplitude of tactile stimuli than do PC firing rates. That S1 firing rates depend mostly on RA input exploits the fact that these afferents convey unambiguous information about stimulus amplitude. Second, PC afferents exhibit much higher temporal precision in their spiking patterns than do RA afferents (Mackevicius et al., 2012), especially for high-frequency skin vibrations such as those elicited when we run our fingers across a texture (Weber et al., 2013), and this precise spike timing conveys information about tactile events and shapes perception (Mackevicius et al., 2012). That the timing of S1 responses is driven primarily by the PC input exploits the highly informative nature of the PC timing signal.\n\nSeparate sensory channels that convey complementary but overlapping information are commonplace in sensory systems and not limited to the sense of touch; the visual (Field and Chichilnisky, 2007), auditory (Cant and Benson, 2003), gustatory (Zhang et al., 2003), olfactory (Uchida et al., 2014), and vestibular (Goldberg, 2000; Sadeghi et al., 2007) systems all involve many types of afferents. Distributing sensory information across channels has distinct advantages such as parsing the behaviorally relevant range (Dominy and Lucas, 2001), keeping energy expenditure low (Gjorgjieva et al., 2014), and optimizing information transmission in the presence of noise (Kastner et al., 2015). To the extent that these parallel input channels represent information in disparate ways (differing in response latency, adaptation properties, or spiking precision, among others), their integration should reflect and exploit such differences, a process that can be described using the type of model introduced here.\n\n## Materials and methods\n\n### Stimuli\n\nThe vibrotactile stimuli have been described previously, for both the peripheral (Muniak et al., 2007) and the cortical (Harvey et al., 2013) experiments. In short, tactile stimuli were delivered to the distal pads of the digits using a stainless steel probe diameter driven by a shaker motor. The shaker motor was calibrated before each experimental run such that stimuli were highly accurate and repeatable. We delivered three types of stimuli that varied in spectral complexity, including simple sinusoids, diharmonic stimuli (only used for the peripheral model fitting), and bandpass noise. The ranges of frequencies and amplitudes spanned the range experienced in everyday tactile experience. While the exact frequencies and amplitudes differed somewhat between the peripheral and cortical data sets, the two stimulus sets were largely overlapping. We were thus able to develop peripheral spiking models that simulated the peripheral responses to the stimuli used in the cortical data set (see below). Individual stimuli in this data set were 1 s long and were repeated five times (frozen noise), yielding a total of about 22 minutes (16 for noise and 6 for the sinusoids) of data from each neuron.\n\n### Electrophysiology\n\n#### Cortical experiments\n\nExperimental procedures have been previously described (Harvey et al., 2013) and are only summarized here. All procedures were in accordance with the rules and regulations of the University of Chicago Animal Care and Use Committee. Extracellular recordings were made in the postcentral gyri in four hemispheres of two awake, behaving Rhesus macaques (Macaca mulatta). Recordings were obtained from neurons in areas 3b and 1 that met the following criteria: (1) action potentials were well isolated from the background noise, (2) the RF of the neuron was on the glabrous skin, and (3) the neuron was clearly driven by light cutaneous stimulation. In total, recordings were obtained from 49 area 3b and 69 area 1 neurons. Some of these data have been previously published (Harvey et al., 2013).\n\n#### Peripheral experiments\n\nExperimental procedures have been previously described (Muniak et al., 2007). All experimental protocols complied with the guidelines of the Johns Hopkins University Animal Care and Use Committee and the National Institutes of Health Guide for the Care and Use of Laboratory Animals. Single unit recordings were made from the ulnar and median nerves of two anesthetized Rhesus macaques using standard methods (Talbot et al., 1968). Recordings were obtained from 14 RA and 4 PC afferents. This data set has been previously used to develop peripheral spiking models (Kim et al., 2010; Dong et al., 2013).\n\n### Peripheral model\n\nWe fit integrate-and-fire (IF) models to the measured responses of individual afferents. Our IF model is similar to an earlier one (Kim et al., 2010), with two main differences. First, we did not employ complex temporal filters with a large number of weights, but instead restricted the model input to six dimensions (positive and negative rectified stimulus positions, velocities and accelerations) plus a delay parameter, as this parameterization has been shown to be sufficient to reproduce afferent responses (Dong et al., 2013). Second, we included an additional parameter, namely a smoothing factor that controls the width of a Gaussian window that is convolved with the stimulus trace initially. Using this parameter allows us to model the fact that the PC afferents\u2019 sensitivity decreases for frequencies higher than ~300 Hz (Muniak et al., 2007; Mountcastle et al., 1972).\n\nFor model fitting, we used the van Rossum spike distance (van Rossum, 2001) between the recorded and model-predicted responses as a cost function and then optimized the model parameters using the patternsearch function in Matlab (The Mathworks, Inc., Natick, MA) using different starting positions. We optimized the model on the noise stimuli first and then alternated between the sinusoidal and diharmonic stimulus sets while decreasing the cost function time constant until the fits did not improve further. In total, we fit single afferent models to 14 RA and 4 PC afferents. RA and PC population responses were generated by averaging over the responses of all RA and PC individual models, respectively. The models have been extensively validated, as detailed in previous studies (Kim et al., 2010; Dong et al., 2013), and captured both the strength and timing of peripheral afferents (Figure 1\u2014figure supplement 1).\n\nOne potential concern is that the reconstructed RA and PC population activity might not accurately reflect the peripheral input on which a given cortical neuron's response relies. While individual peripheral responses are very stereotyped and therefore simple to model, individual afferents still differ in terms of sensitivity, and these differences might be reflected in the cortical responses. To address this issue, we generated different RA and PC populations, using different peripheral models, and also varied the size of the peripheral population used to drive the cortical responses. We found that the recovered filters were robust to these changes.\n\n### Modeling the transformation between periphery and cortex\n\nWe modeled the transformation between the peripheral RA and PC population responses and single unit S1 responses using the LNP\u00a0framework (Schwartz et al., 2006). LNP models have long been fruitfully used for modeling the responses of cortical neurons across several synapses, often even including the sensory receptors. The model describes the process of integration as follows: First, the peripheral RA and PC population responses are each convolved with a linear filter. Second, the resulting responses are summed and rectified to yield time-varying spiking probabilities. Third, spike trains are generated according to the spiking probability in each time bin. The full model (see also Figure 1B) can thus be expressed as follows:\n\n$$\np(s_{t})=r(k_{RA}\\timess_{RA,t}+k_{PC}\\timess_{PC,t})\n$$\n\nwhere p(st) denotes the probability of a cortical spike at time t, kRA and kPC are vectors containing the RA and PC filters, sRA,t and sPC,t are vectors containing the binned RA and PC population responses within a time window 100 ms prior to time t, and r() denotes the rectifying nonlinearity.\n\nTo estimate the linear filters kRA and kPC, we used reverse correlation of the cortical responses onto the RA and PC z-scored population responses covering a time window of 100 ms preceding the cortical response with a bin width of 1 ms. For this procedure, we exclusively used the data from the bandpass noise stimuli as this method can only recover unbiased filters if the RA and PC population responses are uncorrelated with each other over time. Even though our original vibrotactile stimuli exhibited little autocorrelation, the evoked RA and PC population responses were weakly correlated both across time and with each other, which could affect the filter estimation. We addressed this problem using a two-pronged approach. First, we verified that across our entire data set, temporal and population correlations were low (see below). Second, to minimize the impact of any remaining correlations, we calculated the autocorrelation matrix of the RA and PC population input and used its regularized inverse to correct the obtained filters (ridge regression):\n\n$$\nk_{RA,PC}=[S^{T}_{RA,PC,T}\\timesS_{RA,PC,T}+a*I]^{-1}\\timesS^{T}_{RA,PC,T}\\timess_{C,}\n$$\n\nwhere kRA,PC,T is a vector containing both the RA and PC filters, SRA,PC,T is a matrix where each row corresponds to a time t and contains the peripheral population responses sRA and sPC for the 100 ms preceding t, a is the regularization parameter, I is the identity matrix, sC is a binary vector containing the responses of a cortical neuron (0 for no spike, 1 for spike) for all times t, and []-1 denotes the pseudoinverse.\n\nWe varied the regularization parameter a and also tried other correction methods, such as decomposing the autocorrelation matrix using singular-value-decomposition and only preserving strong components (Sripati et al., 2006); we obtained essentially the same results, and thus conclude that the approach is robust and the recovered linear filters accurate (see further analysis below).\n\nThe nonlinearity was a piecewise linear function, chosen over a smoother sigmoidal function, because the firing rates of S1 neurons increase steeply as soon as their respective response threshold is crossed (Harvey et al., 2013):\n\n$$\nr(x)=b_{1},\u00a0if\u00a0x<0,\u00a0r(x)=b_{1}+b_{2}*x,\u00a0if\u00a0x>0\u00a0and\u00a0b_{1}+b_{2}*x<1,\u00a0and\u00a0r(x)=1,\u00a0otherwise.\n$$\n\nTo estimate the parameters b1 and b2, we used an optimization algorithm (lsqcurvefit in Matlab) to fit the time-varying spiking probabilities p(st) such that they matched the observed spiking probabilities to the extent possible.\n\n### Analysis of linear filters\n\nTo measure the magnitude of a filter, we summed its absolute value over time. To determine the temporal width of a filter, we first determined a noise threshold, set to three times the standard deviation of the filter values 80\u2013100 ms before the cortical response; we then counted the total time that each filter\u2019s absolute value was above that threshold. Finally, to measure excitation/suppression indices, we divided the sum of the positive and negative components of a filter by its overall magnitude. When analyzing the impact of removing input from one fiber class, we refitted the filters and nonlinearity using only input from the remaining class.\n\n### Testing the robustness and accuracy of filter estimation\n\nRecovering linear filters accurately from data that exhibit correlations is notoriously difficult and error prone. In our case, one of the main concerns is whether cross-correlations between RA and PC responses might introduce biases in the recovered filters that would lead us to conclude that both populations contribute input, when in reality only one does. Additionally, the RA and PC responses are autocorrelated, which might bias our estimates of the filter width, or their net excitation or suppression, and thereby erroneously yield different filters for the two populations (see Figure 2\u2014figure supplement 1A for the RA/PC covariance matrix). To test whether our method is prone to such biases, we simulated a population of 243 neurons with a variety of different linear filters that differed in width, magnitude, excitation/suppression, temporal offset, and received RA input, PC input, or both. We then used these filters to generate simulated spiking data from the noise vibrations. We set the firing rates to span the range encountered in the measured cortical responses. We then tested whether we could accurately recover the linear filters from the simulated responses and whether there were any biases in the measures we used to quantify these filters. First, we found that the recovered filters matched the filters used to generate the simulated data well (Figure 2\u2014figure supplement 1B,C). Second, we verified that our procedure for determining whether neurons received RA input, PC input, or both, worked correctly in the vast majority of cases: 90% of the simulated neurons that received input from both RA and PC populations were identified as such. Importantly, only 3% of simulated neurons that received input from only one of the peripheral populations were misclassified as receiving input from both (Figure 2\u2014figure supplement 1D). Finally, we also checked whether there might be biases when estimating filter metrics such as overall magnitude, filter width, and excitation/suppression indices in RA as compared to PC filters that might explain the observed differences. We found that these biases were generally very small and in no case could account for the effect sizes observed in the cortical data set (see comparison in Figure 2\u2014figure supplement 1E). In summary, our procedure recovers most filter shapes accurately and the small biases that remain cannot account for the observed effect sizes.\n\n### Timing analysis\n\nTo assess the contribution of RA and PC input at different timescales, we bandpass-filtered the measured and predicted cortical responses to four different frequency ranges, corresponding to different temporal resolutions (3, 5, 13, and 66 ms) and then calculated the correlation coefficients for each neuron. To assess spike timing for the sinusoidal data set, we calculated the vector strength (Goldberg and Brown, 1969) (a measure of how precisely a neuron\u2019s response is aligned with a sinusoidal stimulus) of the recorded and predicted cortical responses.\n\n### Optimizing filters by maximizing information\n\nWe first simulated the responses of populations of RA and PC fibers to 55 natural textures (Manfredi et al., 2014). In brief, textured surfaces were scanned over the fingertip of human subjects at different scanning speeds, while elicited vibrations were recorded using a Laser Doppler vibrometer (Polytec OFV-3001 with OFV 311 sensor head, Polytec, Inc., Irvine, CA). For each texture, we collected 240 (8 subjects \u00d7 3 speeds \u00d7 10 repetitions) 500-ms long vibration traces. The recorded traces were bandpass-filtered to between 50 and 800 Hz and then served as input to the peripheral RA and PC spiking models. To adjust for the distance-dependent decay of the vibrations and the size of the contact location, we added a global scaling factor for each the RA and PC traces which was set to ensure that the mean simulated RA and PC firing rates matched those recorded using the same set of textures (Weber et al., 2013). Indeed, across textures the recorded and simulated firing rates matched well (r = 0.83 for RA and r = 0.92 for PC responses), indicating that our simulated responses capture actual texture-elicited responses well. Some textures, mainly coarser one, elicit responses not only in RA and PC afferents, but also in SA1 afferents; we excluded textures with an average SA1 contribution >10 Hz from further analysis. Since we were interested in tactile environments that cause both RA and PC afferents to respond, we also excluded textures where the RA or PC average firing rate was below 20 Hz. In total, this left 25 textures, whose elicited vibrations where in the high-frequency range and excited RA and PC but not SA1 afferents.\n\nNext, we optimized linear filters for each texture individually by maximizing the mutual information I(S,V) between the responses of our model (S) and the texture-elicited vibration traces (V):\n\n$$\nI(S,V)=\\sum_{S}\\sum_{V\u2009}p(s,v)\u2009log\u2009[p(s,v)/p(s)p(v)]\n$$\n\nThe probability of a spike in an S1 neuron, p(s), can be calculated from the LNP model described above. To estimate p(v), that is, the distribution of stimulus values, we divided the stimulus trace into 1 ms long bins and calculated the absolute value of the deflection amplitude at each time point. The resulting values were divided into 50 bins and p(v) was set to the relative frequencies with which each of the 50 values appeared. We introduced a delay of 15 ms to mimic the response delays observed in cortical responses. For optimization, we calculated the gradient of the mutual information\u00a0I(S,V)\u00a0analytically and then used a standard constrained optimization method (fmincon in Matlab). We restricted the average firing probability, \u03a3t p(st)/T, of the optimized neurons to values observed in our recorded data set to prevent neurons from responding at unnaturally high rates (Tkacik et al., 2010). We found that filters optimized for different firing rates differed in a scale factor, but were otherwise identical. We also used a constant set of parameters for the static nonlinearity; again, we found that these did not affect the shape of the optimized filters but rather changed their scale.\n\nFinally, we ran our procedure for filter optimization on a distorted data set. Specifically, we numerically computed the second derivative (accelerations) of the original texture traces described above and re-normalized them to the magnitude of the original traces before simulating peripheral responses to these stimuli and then optimizing the filters. The differentiated traces contain the same frequencies as the original traces, but the higher frequencies are weighted more strongly.\n",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a06b6528-e410-4786-ac30-d8b41c3901f8",
+      "submission_id": "f12c1392-ae6d-473f-b401-826a0c5bb378",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10450.012](https://doi.org/10.7554/eLife.10450.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Rate and timing of cortical responses driven by separate sensory channels\" for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor (Andrew King), and three reviewers, one of whom, Stefano Panzeri, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, data-based models were used to examine how information from different mechanoreceptive afferent classes is integrated in the responses of individual cortical neurons. The authors report that cortical activity reflects a combination of rapidly-adapting and Pacinian corpuscle inputs, with the former determining overall firing rate whereas the latter are represented by the precise timing of the activity. Their model results suggest that information about textures is represented in the primary somatosensory cortex by the statistically optimal integration of inputs from these two peripheral receptor channels.\n\nEssential revisions:\n\nAlthough the three reviewers agree that this is an interesting and important study and that the analysis is rigorous, they have raised the following issues.\n\n1) Are the authors able to say where the inferred convergence of inputs from these two classes of mechanoreceptors takes place \u2013 in the cortex or at a subcortical level?\n\n2) Given that model assessment largely revolves around predictive power and predictive power is impacted by reliability, the measurements of reliability mentioned in the Results (second paragraph) should probably be shown. Perhaps the authors could plot reliability vs accuracy. The authors should clarify how they measured reliability.\n\n3) On a related note, factors unrelated to the stimuli, such as the stochasticity of spike generation, lead to a lack of reliability, which the authors comment on. The reader is told how well the model predicts the total variance (about half), but the model is probably performing better than this since some of the variance is due to the lack of reliability in the responses. The authors should estimate how much of the predictable variance (rather than the total) the model accounts for (e.g., Sahani & Linden 2003 NIPS; Ramirez et al. 2014 Nat Neurosci).\n\n4) The authors report (Figure 2A) that most cortical neurons receive \"significant contributions\" from RA and PC populations. However, if the RA and PC population responses are correlated, a model-fitting algorithm might generate positive weights from a non-connected PC population even though cortical neurons receive input exclusively from RA afferents. It is particularly hard to exclude the possibility that a small (but statistically significant) input might be an artefact. The authors consider this issue in the Materials and methods. They state that the correlations were \"low\" \u2013 but how low? What is the correlation coefficient between the RA and PC population responses as a function of time resolution? Also, the authors use a whitening procedure to attempt to decorrelate (is equation 2 correct? Is the regularizing term not added?), but these procedures are delicate and it is not clear that the correlation issue has been fully dealt with. Further work is needed to address this. It may be useful to use a simulation approach, i.e. simulate cortical neurons with realistic filters that range from single channel to mixed, analyze them with their methods, and test whether their single/mixed nature is accurately recovered. Furthermore, the results (Figure 2A) are based on a statistical test (no details are provided for how this was done or what the critical P value was). Hence, a neuron that counts as convergent might have a strong input from RA together plus a tiny PC input that passes the statistical test, but is functionally irrelevant. Suppose that you define convergent input as where at least 10% of the total input strength comes from each channel, do you still see the same prominent convergence shown in Figure 2A?\n\n5) The authors claim that cortical (time-averaged) firing rates are due to RA, not PC input. They state that their stimuli \"drove RA and PC to the exclusion of SA1\". On this basis, they consider only RA and PC responses in their study and ignore SA. However, Figures 1\u20132 of the supporting reference (Muniak et al., 2007) do show SA responses to both sinusoidal and noise stimuli. Given these data, it does not seem appropriate to ignore the SA afferents. Do the authors have peripheral recordings of SA1 responses? If so, they could apply their model-fitting approach. If they are correct, the weights from the SA population should turn out to be zero.\n\n6) For the analyses shown in Figures 3\u20134 where full and RA/PC only models are compared, how were the RA/PC only results obtained? Were the cortical models retrained on only RA/PC input or were the RA/PC contributions in the full model simply set to zero? Given the concern about correlations, the authors should check whether they get the same results using the retraining method if that is not already what they did.\n\n7) The conclusion that the precise timing of S1 neurons is mainly driven by PC input depends on how good the models for the RA/PC afferents are. The authors show a single neuron example (Figure 4A) where removing PC input degrades timing precision, but in Figure 4C (right \u2013 the 3 ms resolution case) it is only for a minority of points that PC explains more variance than RA. In fact, for most of the cortical neurons, RA explains more variance. If correct, this seems to undermine the conclusion that PCs drive cortical spike timing. Figure 1\u2014figure supplement 1 shows that the RA afferent model performs poorly at 3 ms resolution. In this case, how is it possible (in Figure 4C right) that they explain so much variance? (It would be useful to define the R squared measure precisely and exactly what \"variance\" is meant).\n\n8) The authors report that \"filters optimized to convey information about texture closely matched the filters derived from measured S1 responses\". This is not currently fully convincing. It seems from the Materials and methods that they find the RA and PC filters that maximize mutual information between the stimulus (measured in a 1 ms bin) and the model's response in that bin. They repeat this for 25 different textures. Then they look through these 25 results and pick out the one that looks most like the filters fitted from spike data (this important part of the process is only mentioned in the legend to Figure 5 \u2013 it should be in the Materials and methods). There are several concerns with this approach.\n\nA) In classic studies of this kind (e.g. Olshausen & Field, Nature, 2006; Attick, Network, 1992), the optimization is carried out by averaging across a bunch of natural stimuli, not on individual stimuli. It is possible that cherry-picking from 25 separate optimizations could result in spurious matches. It would be much more convincing if the optimization was carried out across the whole set of 25 textures.\n\nB) Even using the texture-picking method, \"close\" matches are only shown for 3 examples in Figure 5A. Figure 5B-D show similarities between the distribution of width and other parameters between real and optimized filters, but do not show how close these values are on a neuron by neuron basis (or even the means, medians or shapes of these distributions). If there really is systematic, close matching (which would be impressive), there should be a high correlation coefficient between e.g. actual and optimized filter width, etc. across neurons. Some test or comparison with other models is needed to justify the conclusion that filters for the recorded cells are/aren't optimal. Perhaps the authors could distort the textures or shuffle them somehow to see whether they can create \"suboptimal\" filters.\n\nC) For the mutual information calculation, is it correct that stimulus and response are measured in the same simultaneous time bin? Should response latency not be taken into account?\n\n9) For fitting the afferent models, how did the authors avoid over-fitting? Was cross-validation used when assessing model accuracy in Figure 1\u2014figure 1? Why the unusual approach of sequentially fitting to individual stimulus types \u2013 why not fit on all 3 stimulus sets at once?\n\n10) It is stated in the first paragraph of the Results section that the stimuli for the cortical experiments were \"analogous but not identical\" to the peripheral ones. This is potentially a problem, since statistically fitted, nonlinear models cannot be relied on to extrapolate outside their training set. At present, there are insufficient methodological details to understand how different the stimuli really were. Please detail, in the Materials and methods, exactly what the stimuli were in the two cases. Related to this, it is stated in the Materials and methods that the peripheral recordings were done in anesthetized animals. What about the cortical ones?\n\n11) Materials and methods, subsection \u201cElectrophysiology\u201d. The paper includes only 4 PC afferents. The authors need to justify why this small sample size is sufficient or increase the number. Similarly, it is unclear whether multiple peripheral models can be generated using only 4 recorded afferents (subsection \u201cPeripheral model\u201d).\n",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ed1099f7-6711-41bd-a789-92ff5aca88fc",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C1",
+      "claim": "The sense of touch comprises multiple sensory channels that each conveys characteristic signals during interactions with objects.",
+      "claim_type": "EXPLICIT",
+      "source": "The sense of touch comprises multiple sensory channels that each conveys characteristic signals during interactions with objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific knowledge about the somatosensory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "087c11e5-e407-40a0-8c00-9521e56eba56",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C2",
+      "claim": "The strength of cortical responses is driven by rapidly adapting (RA) nerve fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we find that the strength of cortical responses is driven by one population of nerve fibers (rapidly adapting) whereas the timing of cortical responses is shaped by the other (Pacinian).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and modeling results presented in the manuscript, particularly in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "efcb0cc6-9158-47c2-ba73-044c9401df5c",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C3",
+      "claim": "The timing of cortical responses is shaped by Pacinian (PC) nerve fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we find that the strength of cortical responses is driven by one population of nerve fibers (rapidly adapting) whereas the timing of cortical responses is shaped by the other (Pacinian).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and modeling results presented in the manuscript, particularly in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ad5c4bd5-37fb-48a7-a419-f29471741c2d",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C4",
+      "claim": "Input from RA and PC sensory channels is integrated in an optimal fashion that exploits the disparate response behaviors of different fiber types.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we show that input from these sensory channels is integrated in an optimal fashion that exploits the disparate response behaviors of different fiber types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the optimization analysis presented in Figure 5 and the corresponding text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "0ba09639-7c33-4621-880e-dc6676ba4f10",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C5",
+      "claim": "Signals from different cone receptors are integrated to extract color information in vision.",
+      "claim_type": "EXPLICIT",
+      "source": "The classic example of such integration is color vision, where input from different cone receptors is integrated to extract a specific feature of objects, approximately corresponding to their absorption spectrum (Gegenfurtner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ab5e38f5-e0de-41de-a708-6c7de74839af",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C6",
+      "claim": "Signals are combined across different sensory modalities in an optimized manner to extract stimulus information.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals are also combined across different sensory modalities, and this integration process is often optimized to extract stimulus information (Ernst and Banks, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a924ac81-fc56-4fb7-b873-8a72f19fab6b",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C7",
+      "claim": "The sense of touch is mediated by at least three main classes of mechanoreceptive afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "The sense of touch is mediated by at least three main classes of mechanoreceptive afferents, each of which responds to different aspects of skin deformation (Johnson, 2001): slowly-adapting type I (SA1) afferents are most sensitive at low frequencies (<10 Hz), rapidly adapting (RA) afferents at intermediate frequencies (in the so-called flutter range, from 10 to 50 Hz), and Pacinian (PC) afferents at high-frequencies (peaking in sensitivity at around 250 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "3a1a1030-b9a5-4d27-95ff-9d2eafa4b16f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C8",
+      "claim": "SA1 afferents are most sensitive at low frequencies (<10 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "slowly-adapting type I (SA1) afferents are most sensitive at low frequencies (<10 Hz), rapidly adapting (RA) afferents at intermediate frequencies (in the so-called flutter range, from 10 to 50 Hz), and Pacinian (PC) afferents at high-frequencies (peaking in sensitivity at around 250 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Johnson, 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "8e2021c8-b752-4ce3-a848-74fcf8463870",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C9",
+      "claim": "RA afferents are most sensitive at intermediate frequencies (10 to 50 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "slowly-adapting type I (SA1) afferents are most sensitive at low frequencies (<10 Hz), rapidly adapting (RA) afferents at intermediate frequencies (in the so-called flutter range, from 10 to 50 Hz), and Pacinian (PC) afferents at high-frequencies (peaking in sensitivity at around 250 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Johnson, 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5dababb7-7c04-4d74-8b4d-4a396a9732b0",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C10",
+      "claim": "PC afferents are most sensitive at high frequencies, peaking at around 250 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "slowly-adapting type I (SA1) afferents are most sensitive at low frequencies (<10 Hz), rapidly adapting (RA) afferents at intermediate frequencies (in the so-called flutter range, from 10 to 50 Hz), and Pacinian (PC) afferents at high-frequencies (peaking in sensitivity at around 250 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Johnson, 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "0b370199-0e44-4028-aaf3-5de63691201b",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C11",
+      "claim": "The frequency sensitivities of different afferent classes overlap considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency sensitivities of the different afferent classes overlap considerably (Figure 1A), and natural stimuli typically engage more than one class (Saal and Bensmaia, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1A showing overlapping frequency response ranges and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2e63a733-fa9d-4b10-a2d2-fcec38012c13",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C12",
+      "claim": "Natural stimuli typically engage more than one class of mechanoreceptive afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency sensitivities of the different afferent classes overlap considerably (Figure 1A), and natural stimuli typically engage more than one class (Saal and Bensmaia, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "d7a76c86-96fd-43f9-be2b-629332c53cb6",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C13",
+      "claim": "Information about most tactile events is carried by signals from several afferent classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, then, information about most tactile events is carried by signals from several afferent classes (Saal and Bensmaia, 2014; Johansson and Flanagan, 2009; Abraira and Ginty, 2013), and this input is integrated across submodalities even at the first stage of cortical processing, namely primary somatosensory cortex (S1) (Pei et al., 2009; Carter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "999d516a-4348-4d28-988a-962fa252f15a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C14",
+      "claim": "Input from different mechanoreceptive afferent classes is integrated in primary somatosensory cortex (S1).",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, then, information about most tactile events is carried by signals from several afferent classes (Saal and Bensmaia, 2014; Johansson and Flanagan, 2009; Abraira and Ginty, 2013), and this input is integrated across submodalities even at the first stage of cortical processing, namely primary somatosensory cortex (S1) (Pei et al., 2009; Carter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "562dd998-4c64-4b85-b33c-13dea83ec8d1",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C15",
+      "claim": "S1 neurons convey information about contacted objects in both the strength and timing of their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, S1 neurons convey information about contacted objects not only in the strength of their responses but also in their timing (Harvey et al., 2013; Zuo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "64232c13-fbc7-4e61-acc2-c86cc457207f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C16",
+      "claim": "The amplitude of skin oscillations is encoded in the strength of the cortical response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the amplitude of skin oscillations\u2014such as those elicited during the exploration of textured surfaces\u2014is encoded in the strength of the cortical response whereas their frequency is encoded in its timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an example of how S1 neurons encode information, drawing from established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2f810b28-81b2-4b03-81a9-37fda036c83a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C17",
+      "claim": "The frequency of skin oscillations is encoded in the timing of the cortical response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the amplitude of skin oscillations\u2014such as those elicited during the exploration of textured surfaces\u2014is encoded in the strength of the cortical response whereas their frequency is encoded in its timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an example of how S1 neurons encode information, drawing from established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "f151ba61-9306-48df-b365-eab77d97865e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C18",
+      "claim": "Recordings were obtained from 18 peripheral tactile afferents (14 RA and 4 PC).",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the responses of 18 peripheral tactile afferents (14 RA and 4 PC) and 118 cortical neurons in areas 3b (49) and 1 (69) of S1 to a variety of vibrotactile stimuli, ranging from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz and amplitudes ranging from sub-micrometer to more than 500 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "3edecef5-e3ad-4768-a591-65e260103605",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C19",
+      "claim": "Recordings were obtained from 118 cortical neurons in areas 3b (49) and 1 (69) of S1.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the responses of 18 peripheral tactile afferents (14 RA and 4 PC) and 118 cortical neurons in areas 3b (49) and 1 (69) of S1 to a variety of vibrotactile stimuli, ranging from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz and amplitudes ranging from sub-micrometer to more than 500 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a9b57ebc-a2e1-4d42-b6e6-96e7c10e5138",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C20",
+      "claim": "Stimuli ranged from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the responses of 18 peripheral tactile afferents (14 RA and 4 PC) and 118 cortical neurons in areas 3b (49) and 1 (69) of S1 to a variety of vibrotactile stimuli, ranging from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz and amplitudes ranging from sub-micrometer to more than 500 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental stimuli used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "36095723-0533-44c6-a344-c398cdb01410",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C21",
+      "claim": "Stimuli amplitudes ranged from sub-micrometer to more than 500 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the responses of 18 peripheral tactile afferents (14 RA and 4 PC) and 118 cortical neurons in areas 3b (49) and 1 (69) of S1 to a variety of vibrotactile stimuli, ranging from simple sinusoids to complex bandpass noise with frequencies between 50 and 800 Hz and amplitudes ranging from sub-micrometer to more than 500 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental stimuli used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6fd61cee-4067-4930-85b9-d499a2de85ee",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C22",
+      "claim": "Stimulation conditions spanned those that might be experienced when scanning a textured surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation conditions spanned those that might be experienced when we scan a textured surface (Bensma\u00efa and Hollins, 2003; Bensma\u00efa and Hollins, 2005; Weber et al., 2013; Manfredi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work characterizing natural texture scanning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4f9738d2-78fc-4c86-8000-53c72977c797",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C23",
+      "claim": "The stimuli used drove RA and PC afferents to the exclusion of SA1 afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "As these stimuli drove RA and PC to the exclusion of SA1 afferents (Muniak et al., 2007), we focused the analysis on these two afferent populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and the frequency range of stimuli used.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "75ac5d0c-4235-431f-bc5b-33acc188c50f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C24",
+      "claim": "The model captured 67% (\u00b1 2% standard error of the mean) of the predictable variance for 1 s bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across neurons, the model captured 67% ( \u00b1 2% standard error of the mean) of the predictable variance (Ramirez et al., 2014) for 1 s bins, and 35% ( \u00b1 2%) for 5 ms bins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "c2a8e4d2-9892-45c1-9d47-009599d8f5aa",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C25",
+      "claim": "The model captured 35% (\u00b1 2% standard error of the mean) of the predictable variance for 5 ms bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across neurons, the model captured 67% ( \u00b1 2% standard error of the mean) of the predictable variance (Ramirez et al., 2014) for 1 s bins, and 35% ( \u00b1 2%) for 5 ms bins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "7c49abaa-f80c-4b6f-b764-276be41ef1e8",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C26",
+      "claim": "Most cortical neurons in areas 3b and 1 receive input from both RA and PC afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most cortical neurons in areas 3b and 1 receive input from both RA and PC afferents, as evidenced by the significant contribution of both to the overall prediction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "28d43033-0338-4d8b-ad3a-3b3fce36ca18",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C27",
+      "claim": "RA filters were consistently of lower magnitude than PC filters.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the magnitude of the PC filters was correlated with that of the RA filters (r = 0.41), PC filters were consistently of lower magnitude (Figure 2C, t(70) = 6.4, p < 0.01, paired t-test), with the RA contribution on average about three times stronger than the PC one.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the filter magnitudes shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a77add1d-f2ac-497a-952f-8c9caf2b4276",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C28",
+      "claim": "The RA contribution to cortical responses is on average about three times stronger than the PC contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the magnitude of the PC filters was correlated with that of the RA filters (r = 0.41), PC filters were consistently of lower magnitude (Figure 2C, t(70) = 6.4, p < 0.01, paired t-test), with the RA contribution on average about three times stronger than the PC one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the filter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "51e7de4d-6469-4656-84d1-afdc0fda42be",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C29",
+      "claim": "RA filters were much more extended in time (with a mean above 30 ms) than PC filters (with a mean below 20 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, RA filters were much more extended in time (with a mean above 30 ms) than were PC filters (with a mean below 20 ms) (Figure 2D, t(188) = 9.6, p < 0.01, two-sample t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of filter widths shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "289cd7da-3ba5-498e-8b2f-d299744bc565",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C30",
+      "claim": "The net contribution of RA input to the cortical response was positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, while the net contribution of the RA input to the cortical response was positive, PC input was on average balanced; that is, excitatory and suppressive components of the PC filters were of equal magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the excitation index analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a42cf544-3b24-4f87-a4b9-02c952e48fcc",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C31",
+      "claim": "PC input was on average balanced, with excitatory and suppressive components of equal magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, while the net contribution of the RA input to the cortical response was positive, PC input was on average balanced; that is, excitatory and suppressive components of the PC filters were of equal magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the excitation index analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "911697f9-fcb6-417b-945e-ee6599d0ce9a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C32",
+      "claim": "For about half of cortical neurons, the PC contribution was net suppressive.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for about half of cortical neurons, the PC contribution was net suppressive (Figure 2E); the difference in the net contribution of RA and PC input was significant (t(188) = 16.1, p < 0.01, two-sample t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the excitation index analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9ff23ea5-da44-4de5-848b-4d30d6637abb",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C33",
+      "claim": "The difference in the net contribution of RA and PC input was significant (t(188) = 16.1, p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for about half of cortical neurons, the PC contribution was net suppressive (Figure 2E); the difference in the net contribution of RA and PC input was significant (t(188) = 16.1, p < 0.01, two-sample t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5adc1abe-c132-4c21-81b9-fdbd52ff376b",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C34",
+      "claim": "The firing rates of individual S1 neurons are almost entirely determined by RA input.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the firing rates of individual S1 neurons are almost entirely determined by RA input as evidenced by the fact that a model based on RA input alone can predict S1 firing rates\u2014averaged over 1 s long periods\u2014almost as well as RA and PC responses combined; this was true for responses to both noise and sinusoids (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model comparison results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "7f6b6986-7a45-4f90-ba15-ee2c0220f837",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C35",
+      "claim": "A model based on RA input alone can predict S1 firing rates almost as well as RA and PC responses combined.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the firing rates of individual S1 neurons are almost entirely determined by RA input as evidenced by the fact that a model based on RA input alone can predict S1 firing rates\u2014averaged over 1 s long periods\u2014almost as well as RA and PC responses combined; this was true for responses to both noise and sinusoids (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model comparison results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "38f734e3-8ba3-4ed0-99ce-eb6bddca7742",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C36",
+      "claim": "PC input alone cannot account for the observed cortical firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "PC input alone, on the other hand, cannot account for the observed cortical firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model comparison results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ece1f91f-4b82-48c2-a2bf-013fe901da27",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C37",
+      "claim": "The responses of mechanoreceptive afferents are highly precise and repeatable.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the responses of mechanoreceptive afferents are highly precise and repeatable, and their timing conveys information about the frequency composition of skin vibrations (Mackevicius et al., 2012) and about the identity of textures scanned across the skin (Weber et al., 2013) at resolutions on the order of milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "36dee594-35fc-4524-929d-fb2d42d4c592",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C38",
+      "claim": "The timing of mechanoreceptive afferent responses conveys information about the frequency composition of skin vibrations at millisecond resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the responses of mechanoreceptive afferents are highly precise and repeatable, and their timing conveys information about the frequency composition of skin vibrations (Mackevicius et al., 2012) and about the identity of textures scanned across the skin (Weber et al., 2013) at resolutions on the order of milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "e3710395-673f-42f9-97fa-397df3c6d71b",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C39",
+      "claim": "The temporal patterning of responses in somatosensory cortex is precise and informative down to a millisecond timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the temporal patterning of responses in somatosensory cortex is precise and informative down to a millisecond timescale (Harvey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5350d3f9-44ef-4f57-8630-64e3e4b0bd5e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C40",
+      "claim": "When removing the PC contribution from the model, predictions of spike timing in the cortex became less temporally precise.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when removing the PC contribution from the model, predictions of spike timing in the cortex became less temporally precise (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4f31fa57-39a0-47c2-af33-97205fb050b4",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C41",
+      "claim": "Only PC input can account for high frequency fluctuations in the cortical responses of many neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only PC input can account for high frequency fluctuations in the cortical responses of many neurons, while RA input is sufficient at coarser temporal resolutions for almost all cortical neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal resolution analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "42d9bfe9-a26d-4956-8ac4-d0dc36d9e77c",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C42",
+      "claim": "RA input is sufficient at coarser temporal resolutions for almost all cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only PC input can account for high frequency fluctuations in the cortical responses of many neurons, while RA input is sufficient at coarser temporal resolutions for almost all cortical neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal resolution analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "af4d0b52-ec51-4011-9a4a-8901bfe436be",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C43",
+      "claim": "The more precise the responses of a cortical neuron were, the more of its response variance was explained by PC input.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the more precise the responses of a cortical neuron were, the more of its response variance was explained by PC input (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "e80f10e5-d012-46c8-9454-85f4a40b843d",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C44",
+      "claim": "Cortical neurons produce entrained responses to sinusoidal stimulation of the skin over a wide range of frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we tested how well the model could account for the well-documented patterning in cortical responses to sinusoidal vibrations: over a wide range of frequencies, cortical neurons produce entrained responses to sinusoidal stimulation of the skin (Harvey et al., 2013; Salinas et al., 2000; Mountcastle et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "430fe77c-c670-44c0-b80a-da89b817bb94",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C45",
+      "claim": "The strength of phase-locking to sinusoids ranging in frequency from 50 to 300 Hz was well captured by the model (correlation of 0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the strength of phase-locking to sinusoids ranging in frequency from 50 to 300 Hz was well captured by the model (yielding a correlation between predicted and measured phase-locking of 0.78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4009dfff-e72d-4870-9f39-d40254d91624",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C46",
+      "claim": "RA input was dominant at low frequencies for phase-locking.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while RA input was dominant at the low frequencies, only the PC input could account for the observed phase-locking at 200 Hz and above (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phase-locking analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "fb8eddfe-1d58-4410-9e7c-361d919f7e8f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C47",
+      "claim": "Only PC input could account for the observed phase-locking at 200 Hz and above.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while RA input was dominant at the low frequencies, only the PC input could account for the observed phase-locking at 200 Hz and above (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phase-locking analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "39e68ce5-bad4-431e-9c15-31c8dfb89080",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C48",
+      "claim": "PC responses to skin vibrations and scanned textures are more temporally precise than RA responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, PC responses to skin vibrations and scanned textures have been consistently shown to be more temporally precise than their RA counterparts (Weber et al., 2013; Mackevicius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9411ada5-8de8-46b2-92d4-8b8ce2a0f657",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C49",
+      "claim": "PC afferents are considerably more sensitive than RA afferents at frequencies above about 150 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the two afferent classes differ in their frequency sensitivity profile: PC afferents are considerably more sensitive than RA afferents at frequencies above about 150 Hz (see Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1A showing the frequency-amplitude response profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9910fd41-c25a-4978-b756-13117a3c983e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C50",
+      "claim": "When running a finger across a textured surface, high-frequency oscillations are elicited in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "When running our finger across a textured surface, high-frequency oscillations are elicited in the skin (Bensma\u00cfa and Hollins, 2003; 2005; Manfredi et al., 2014), which in turn elicit highly temporally patterned and repeatable responses in both RA and PC afferents (Weber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2dd4798f-8bae-413f-864b-eedf75fa52dd",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C51",
+      "claim": "Texture-elicited skin oscillations elicit highly temporally patterned and repeatable responses in both RA and PC afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "When running our finger across a textured surface, high-frequency oscillations are elicited in the skin (Bensma\u00cfa and Hollins, 2003; 2005; Manfredi et al., 2014), which in turn elicit highly temporally patterned and repeatable responses in both RA and PC afferents (Weber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "19047fc6-563a-47ed-bf08-bab731d7f400",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C52",
+      "claim": "Cortical neurons respond to skin oscillations with precisely timed spikes that encode the skin deflections with millisecond precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortex, neurons respond to skin oscillations with precisely timed spikes that encode the skin deflections with millisecond precision (Harvey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "e6af8a25-6210-4962-aec0-a110c38a3aac",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C53",
+      "claim": "Most (71%) optimized filters comprised contribution from both RA and PC fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that most (71%) optimized filters comprised contribution from both RA and PC fibers, while the rest relied on RA input alone, similar to what we found in our cortical data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the optimization analysis on natural textures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "bd5f3f35-d1fc-4b57-9412-d0a27c816bda",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C54",
+      "claim": "The optimal filters typically weighted the RA input more strongly than the PC input.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that the optimal filters typically weighted the RA input more strongly than the PC input, as did the filters derived from cortical responses (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the optimization results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6eac385a-19ed-4512-ac98-1c697e5e0d18",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C55",
+      "claim": "The optimal RA filter widths were wider than PC filter widths.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the optimal RA filter widths were wider than PC filter widths and largely overlapped the range of the actual filter widths (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the optimization results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "d3a5fb9c-d4c0-4702-9de9-0fda5d61938a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C56",
+      "claim": "The excitation/suppression indices of the optimized filters approximated those derived from cortical data, with RA input always net excitatory and PC input spanning the range between highly suppressive, balanced, and excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the excitation/suppression indices of the optimized filters approximated those derived from our cortical data set in that RA input was always net excitatory, while PC input spanned the range between highly suppressive, balanced, and excitatory (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the optimization results shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ee580311-b327-4cb2-8c40-93f6cfa62444",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C57",
+      "claim": "During natural interaction with surfaces, the amplitude of elicited vibrations decreases as their frequency increases, leading to roughly a power-law relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "During natural interaction with surfaces, the amplitude of elicited vibrations decreases as their frequency increases, leading to roughly a power\u2013law relationship (Manfredi et al., 2014; Wiertlewski et al., 2011; Delhaye et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "fe18602c-4a2b-4b3b-a473-e345a07c0f1a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C58",
+      "claim": "When filters were optimized to stimuli with distorted frequency composition, the resulting filters did not match those observed in cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "When we re-optimized the filters to stimuli with a distorted frequency composition, we found that the resulting filters did not match the ones observed in cortex (green bars in Figure 5B\u2013D): The PC signal was weighted more heavily, was integrated over longer timescales, and was mostly excitatory, in contrast to what we observed in both the cortical filters and the ones optimized on our natural texture data set.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the distorted optimization analysis shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "3bb3fe7b-5277-4ce2-8b7d-da578d32028e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C59",
+      "claim": "RA and PC integration in S1 is optimized to encode stimuli that are commonly encountered during interactions with objects.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that RA and PC integration in S1 is optimized to encode stimuli that are commonly encountered during interactions with objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optimization analysis comparing natural and distorted stimuli.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "97253f90-6e5c-4511-ac00-1e71a83c7cfd",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C60",
+      "claim": "The vast majority of cortical neurons receive (indirect) input from both RA and PC afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the vast majority of cortical neurons receive (indirect) input from both RA and PC afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6a3f5538-6f9a-4942-ac91-ad1e378a89da",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C61",
+      "claim": "RA input determines the rate of the cortical response whereas the principal contribution of PC input is to sharpen the temporal precision of the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, RA and PC afferents drive S1 neurons in fundamentally different ways: RA input determines the rate of the response whereas the principal contribution of PC input is to sharpen the temporal precision of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the modeling and analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "e20d95c4-760a-4c18-b598-22fa327a3b7c",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C62",
+      "claim": "The integration of afferent input is consistent with a process that maximizes the information conveyed in the cortical responses by exploiting the different response properties of RA and PC afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the integration of afferent input is consistent with a process that maximizes the information conveyed in the cortical responses by exploiting the different response properties of RA and PC afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the optimization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "c00efac2-7911-48ab-aad4-924780efa000",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C63",
+      "claim": "The responses of S1 neurons cannot be explained from the responses of RA or PC neurons alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results unequivocally show that RA and PC input are integrated in the responses of individual S1 neurons. That is, the responses of S1 neurons cannot be explained from the responses of RA or PC neurons alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4c9f52e4-3d78-42c3-a796-43d2fb12bb93",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C64",
+      "claim": "It has traditionally been assumed that different tactile submodalities are segregated at least through primary somatosensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has traditionally been assumed that the different tactile submodalities are segregated at least through primary somatosensory cortex (Sur et al., 1981; Sur et al., 1984; Chen et al., 2001; Friedman et al., 2004) (although cortical PC neurons have generally proven elusive, see below), recent evidence suggests that input from different classes of somatosensory afferents is indeed integrated between periphery and cortex (Saal and Bensmaia, 2014; Pei et al., 2009; Carter et al., 2014; Prescott et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work representing the traditional view.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "fb2de16a-434c-4671-85f2-06fd84558e99",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C65",
+      "claim": "Recent evidence suggests that input from different classes of somatosensory afferents is integrated between periphery and cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has traditionally been assumed that the different tactile submodalities are segregated at least through primary somatosensory cortex (Sur et al., 1981; Sur et al., 1984; Chen et al., 2001; Friedman et al., 2004) (although cortical PC neurons have generally proven elusive, see below), recent evidence suggests that input from different classes of somatosensory afferents is indeed integrated between periphery and cortex (Saal and Bensmaia, 2014; Pei et al., 2009; Carter et al., 2014; Prescott et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "02741d37-ec17-4231-b80a-bbac920cdbb4",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C66",
+      "claim": "SA1 and RA input have been shown to be integrated in the responses of S1 neurons when studied with ramp-and-hold skin indentations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SA1 and RA input have been shown to be integrated in the responses of S1 neurons when these were studied with ramp-and-hold skin indentations (Pei et al., 2009) so the convergence of submodality-specific input onto individual S1 neurons seems to be a general phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "cd607baf-0a2d-48c6-a71e-5a85461d09c4",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C67",
+      "claim": "Convergence of somatosensory submodalities has been observed in the brainstem of rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Convergence of somatosensory submodalities has been observed in the brainstem of rats (Sakurai et al., 2013) and the same is likely true in primates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work in rats.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2f5133f1-f89f-4188-b3ea-4bea63561641",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C68",
+      "claim": "Vibrotactile coding and the role of PC input have been probed almost exclusively with high-frequency sinusoidal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, vibrotactile coding in general and the role of PC input specifically have been probed almost exclusively with high-frequency sinusoidal stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical approach in the field, drawing from general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6aa801d8-5ea7-49b0-9937-d6911616578a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C69",
+      "claim": "High-frequency sinusoidal stimuli evoke only a short transient response in S1, which then quickly decays back to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "These stimuli have been shown to evoke only a short transient response in S1, which then quickly decays back to baseline, a phenomenon that can be accounted for by the balance of excitation and suppression in the PC drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws from established observations and is explained by the current findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "c4669c8f-827b-4a93-9d5a-503f0fb33a24",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C70",
+      "claim": "PC-driven cortical neurons are thought to be extremely rare in S1.",
+      "claim_type": "EXPLICIT",
+      "source": "That PC-elicited responses are short and weak might explain why PC-driven cortical neurons are thought to be extremely rare in S1 (Lebedev and Nelson, 1996; Mountcastle et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and is offered as an explanation based on the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "616e4306-82ed-455c-b54d-f3ca416c710e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C71",
+      "claim": "The extremely precise timing of S1 responses at high frequencies contributes to tactile perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the main effect of PC input is to shape the timing of cortical spikes, which could account for the extremely precise timing of S1 responses at high frequencies (Harvey et al., 2013) that has been shown to contribute to tactile perception (Zuo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "d55b1239-5edc-48b8-8735-5dc55ff5a428",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C72",
+      "claim": "The balanced drive of PC afferents explains why the firing rates of S1 neurons are not dependent on stimulus frequency even though PC rates are.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the balanced drive of PC afferents explains why the firing rates of S1 neurons are not dependent on stimulus frequency even though PC rates are (Harvey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the current findings and a citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2be2da4b-6cc1-49d1-9640-2ea6f917ce32",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C73",
+      "claim": "PC input has been found to inhibit cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the PC input has been found to inhibit cortical responses (Tommerdahl et al., 2005; Tommerdahl et al., 2010), consistent with our finding that PC filters are often net suppressive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ce58ec77-5778-44ba-b5d4-d4b50e3a7465",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C74",
+      "claim": "Sensory cortex is tuned to the statistics of the natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory cortex is tuned to the statistics of the natural environment, as has been demonstrated most notably in vision (van Hateren, 1992; Field, 1987) and audition (Smith and Lewicki, 2006), by invoking the efficient coding principle (Barlow et al., 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in vision and audition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "297cae0a-17ea-480f-a35d-6fe36cf74e06",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C75",
+      "claim": "RA afferents increase their firing rate with increasing stimulus amplitudes in a manner that is relatively independent of stimulus frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RA afferents increase their firing rate with increasing stimulus amplitudes (Arabzadeh et al., 2014), and do so in a manner that is relatively independent of stimulus frequency, while PC responses saturate at low stimulus amplitudes and are highly frequency-dependent (Muniak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "787dde43-69b7-42a8-80be-16e08ecd9723",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C76",
+      "claim": "PC responses saturate at low stimulus amplitudes and are highly frequency-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RA afferents increase their firing rate with increasing stimulus amplitudes (Arabzadeh et al., 2014), and do so in a manner that is relatively independent of stimulus frequency, while PC responses saturate at low stimulus amplitudes and are highly frequency-dependent (Muniak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "1aab6987-19b4-4cdc-81cb-442700137338",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C77",
+      "claim": "RA firing rates convey a more informative signal about the amplitude of tactile stimuli than do PC firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "RA firing rates therefore convey a much more informative signal about the amplitude of tactile stimuli than do PC firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the different response properties of RA and PC afferents.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "146a4565-3b1d-452d-8cd3-ce5ef707cb8d",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C78",
+      "claim": "PC afferents exhibit much higher temporal precision in their spiking patterns than do RA afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, PC afferents exhibit much higher temporal precision in their spiking patterns than do RA afferents (Mackevicius et al., 2012), especially for high-frequency skin vibrations such as those elicited when we run our fingers across a texture (Weber et al., 2013), and this precise spike timing conveys information about tactile events and shapes perception (Mackevicius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "1db60c88-962f-4ac8-9857-564371c12e78",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C79",
+      "claim": "PC precise spike timing conveys information about tactile events and shapes perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, PC afferents exhibit much higher temporal precision in their spiking patterns than do RA afferents (Mackevicius et al., 2012), especially for high-frequency skin vibrations such as those elicited when we run our fingers across a texture (Weber et al., 2013), and this precise spike timing conveys information about tactile events and shapes perception (Mackevicius et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "2ba0eb2c-d211-4adc-b2d0-cf120de9310f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C80",
+      "claim": "Separate sensory channels that convey complementary but overlapping information are commonplace in sensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate sensory channels that convey complementary but overlapping information are commonplace in sensory systems and not limited to the sense of touch; the visual (Field and Chichilnisky, 2007), auditory (Cant and Benson, 2003), gustatory (Zhang et al., 2003), olfactory (Uchida et al., 2014), and vestibular (Goldberg, 2000; Sadeghi et al., 2007) systems all involve many types of afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work across multiple sensory modalities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "f58eef13-87fe-45b1-8fae-7491efe9f9c2",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C81",
+      "claim": "Distributing sensory information across channels has distinct advantages such as parsing the behaviorally relevant range, keeping energy expenditure low, and optimizing information transmission in the presence of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Distributing sensory information across channels has distinct advantages such as parsing the behaviorally relevant range (Dominy and Lucas, 2001), keeping energy expenditure low (Gjorgjieva et al., 2014), and optimizing information transmission in the presence of noise (Kastner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "3eedac46-03e3-4b33-8256-8414c1914e95",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C82",
+      "claim": "Tactile stimuli were delivered to the distal pads of the digits using a stainless steel probe driven by a shaker motor.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, tactile stimuli were delivered to the distal pads of the digits using a stainless steel probe diameter driven by a shaker motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a14e9455-a675-4de4-8328-43a38e63780a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C83",
+      "claim": "Three types of stimuli were delivered: simple sinusoids, diharmonic stimuli, and bandpass noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We delivered three types of stimuli that varied in spectral complexity, including simple sinusoids, diharmonic stimuli (only used for the peripheral model fitting), and bandpass noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "7dce4711-9ef2-482a-9cf3-1eb7bf24cdf8",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C84",
+      "claim": "Individual stimuli were 1 s long and were repeated five times.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual stimuli in this data set were 1 s long and were repeated five times (frozen noise), yielding a total of about 22 minutes (16 for noise and 6 for the sinusoids) of data from each neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "1eb340c3-cdbc-4971-87d6-f1f5f5180111",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C85",
+      "claim": "Extracellular recordings were made in the postcentral gyri in four hemispheres of two awake, behaving Rhesus macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular recordings were made in the postcentral gyri in four hemispheres of two awake, behaving Rhesus macaques (Macaca mulatta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6b7b53db-5310-4a5b-975d-34213459e34f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C86",
+      "claim": "Single unit recordings were made from the ulnar and median nerves of two anesthetized Rhesus macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Single unit recordings were made from the ulnar and median nerves of two anesthetized Rhesus macaques using standard methods (Talbot et al., 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "f1313940-3c34-411f-be9d-15406c575559",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C87",
+      "claim": "Integrate-and-fire models were fit to the measured responses of individual afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit integrate-and-fire (IF) models to the measured responses of individual afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4802ab2e-b682-42d6-91da-fd63c73e48fd",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C88",
+      "claim": "The peripheral models captured both the strength and timing of peripheral afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "The models have been extensively validated, as detailed in previous studies (Kim et al., 2010; Dong et al., 2013), and captured both the strength and timing of peripheral afferents (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior validation work and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9d80e0c5-7fe5-477a-b52e-b1702ac72138",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C89",
+      "claim": "The transformation between peripheral RA and PC population responses and single unit S1 responses was modeled using the LNP framework.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled the transformation between the peripheral RA and PC population responses and single unit S1 responses using the LNP framework (Schwartz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling approach with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5b764023-a355-4c55-ad3b-3ca3baa8124d",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C90",
+      "claim": "LNP models have been fruitfully used for modeling the responses of cortical neurons across several synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "LNP models have long been fruitfully used for modeling the responses of cortical neurons across several synapses, often even including the sensory receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the established use of LNP models in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "21b94b43-4e34-4920-8a3c-7f4546281c93",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C91",
+      "claim": "Textured surfaces were scanned over the fingertip of human subjects at different scanning speeds while elicited vibrations were recorded using a Laser Doppler vibrometer.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, textured surfaces were scanned over the fingertip of human subjects at different scanning speeds, while elicited vibrations were recorded using a Laser Doppler vibrometer (Polytec OFV-3001 with OFV 311 sensor head, Polytec, Inc., Irvine, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods for texture scanning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9086e0ab-2fa3-4a2f-b60d-e2a9759c1d0e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C92",
+      "claim": "For each texture, 240 (8 subjects \u00d7 3 speeds \u00d7 10 repetitions) 500-ms long vibration traces were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "For each texture, we collected 240 (8 subjects \u00d7 3 speeds \u00d7 10 repetitions) 500-ms long vibration traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "320e9f88-9ead-4473-81d2-c41cfda03d96",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C93",
+      "claim": "Across textures, the recorded and simulated firing rates matched well (r = 0.83 for RA and r = 0.92 for PC responses).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across textures the recorded and simulated firing rates matched well (r = 0.83 for RA and r = 0.92 for PC responses), indicating that our simulated responses capture actual texture-elicited responses well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result validating the peripheral models for texture responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "67bc0c39-d804-4e8d-beeb-ce51e772a193",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C94",
+      "claim": "Linear filters were optimized for each texture individually by maximizing the mutual information between the model responses and the texture-elicited vibration traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we optimized linear filters for each texture individually by maximizing the mutual information I(S,V) between the responses of our model (S) and the texture-elicited vibration traces (V):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the optimization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5d17bea0-45f6-4dd8-89ec-35063224aa6d",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C95",
+      "claim": "Most frequency-amplitude pairs elicit responses from both RA and PC afferent classes.",
+      "claim_type": "IMPLICIT",
+      "source": "While RA and PC afferents are maximally sensitive at different frequencies, most frequency\u2013amplitude pairs elicit responses from both afferent classes (indicated by the shaded region).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1A showing the overlapping response regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "cea48910-b62c-48b7-a423-9805a09c3f00",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C96",
+      "claim": "The model predictions closely approximate measured peripheral firing rates for sinusoidal vibrations.",
+      "claim_type": "IMPLICIT",
+      "source": "Recorded (top) and simulated (bottom) responses of RA and PC populations to sinusoidal skin vibrations of different amplitude and frequency. The model predictions closely approximate measured firing rates.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9ae75fd8-2c99-4b60-b9a1-c763712e42be",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C97",
+      "claim": "Both recorded and modeled PC afferents exhibit entrainment plateaus.",
+      "claim_type": "IMPLICIT",
+      "source": "Rate-intensity function for a recorded (top) and simulated (bottom) PC afferent stimulated with 200 Hz sinusoidal vibrations. Both the recorded and modeled PC afferent exhibit entrainment plateaus.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "facd5d8e-b533-4e33-a959-b487855c4294",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C98",
+      "claim": "At low amplitudes, PC afferents produce a single spike per cycle that is precisely timed to occur at the same phase within the cycle.",
+      "claim_type": "IMPLICIT",
+      "source": "At low amplitudes, a single spike is elicited per cycle, which is precisely timed to occur at the same phase within the cycle (left column).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "1e203718-852b-4e5f-b43d-4c9a74f458af",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C99",
+      "claim": "At higher amplitudes, PC afferents can produce more than one spike per cycle in complex but repeatable patterns.",
+      "claim_type": "IMPLICIT",
+      "source": "At higher amplitudes, more than one spike per cycle can occur in complex but repeatable patterns (right column) (Whitsel et al., 2000).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1C and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "07aee407-9695-4e39-abd0-10b7e5c7b865",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C100",
+      "claim": "The simulated spike train matches the recorded ones with high temporal precision for bandpass noise stimuli.",
+      "claim_type": "IMPLICIT",
+      "source": "Recorded (black) and simulated (lavender) response a single PC fiber to stimulus. The simulated spike train matches the recorded ones with high temporal precision.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a8ba13a8-ea70-4fc9-9b73-93b2c0db59df",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C101",
+      "claim": "The lower correlation for RA responses at the finest temporal resolution reflects the fact that RA responses are not very repeatable at those timescales.",
+      "claim_type": "IMPLICIT",
+      "source": "The lower correlation for the RA responses at the finest temporal resolution reflects the fact that RA responses are not very repeatable at those timescales (Mackevicius et al., 2012).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1F and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "be214353-337c-492d-83a4-2277355ec853",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C102",
+      "claim": "The spike triggered averages for the model and the recorded peripheral data agree well.",
+      "claim_type": "IMPLICIT",
+      "source": "The STA for the model and the recorded peripheral data agree well.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "b12b2384-c4d5-4792-aaf8-80db890484aa",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C103",
+      "claim": "Due to jitter in the recorded spike trains, the predictable variance decreases for finer bin sizes.",
+      "claim_type": "IMPLICIT",
+      "source": "Due to jitter in the recorded spike trains, the predictable variance decreases for finer bin sizes.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "af2a7739-df1b-45d5-ad05-ed55599a6672",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C104",
+      "claim": "Cortical neurons differ in their response properties, such as burstiness and temporal precision.",
+      "claim_type": "IMPLICIT",
+      "source": "Cortical neurons differ in their response properties, such as burstiness and temporal precision, and the model captures these broad differences with different RA and PC filters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is evident from Figure 1E showing different neurons with different filter shapes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "5768be95-9c3c-4a0f-bf36-0d31f34b48e2",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C105",
+      "claim": "The model captures broad differences in cortical neuron response properties with different RA and PC filters.",
+      "claim_type": "IMPLICIT",
+      "source": "Cortical neurons differ in their response properties, such as burstiness and temporal precision, and the model captures these broad differences with different RA and PC filters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is evident from Figure 1E showing model predictions matching different neuron types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "83a71f12-df16-4c7a-b3aa-7053b21fc125",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C106",
+      "claim": "The magnitude of PC filters was correlated with that of RA filters (r = 0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the magnitude of the PC filters was correlated with that of the RA filters (r = 0.41), PC filters were consistently of lower magnitude (Figure 2C, t(70) = 6.4, p < 0.01, paired t-test), with the RA contribution on average about three times stronger than the PC one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the filter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "4e632eb6-85a9-4ddb-86fc-b5588b35b015",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C107",
+      "claim": "PC filters were much more diverse than RA filters and spanned the range of excitation/suppression indices from -1 to +1.",
+      "claim_type": "IMPLICIT",
+      "source": "PC filters were also much more diverse and spanned the range of this metric (from -1 to +1), in contrast to RA filters, which, as mentioned above, tended to be net excitatory (>0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is evident from Figure 2E showing the distribution of excitation indices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "fef05647-62f2-4ed0-9ebb-acb2f5f6ddbd",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C108",
+      "claim": "RA filters tended to be net excitatory (>0).",
+      "claim_type": "EXPLICIT",
+      "source": "PC filters were also much more diverse and spanned the range of this metric (from -1 to +1), in contrast to RA filters, which, as mentioned above, tended to be net excitatory (>0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is evident from the excitation index analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "598f0b35-04d2-4281-b75a-093e1e4e2bc1",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C109",
+      "claim": "The balanced drive of PC afferents can account for the short transient response in S1 to high-frequency sinusoidal stimuli.",
+      "claim_type": "IMPLICIT",
+      "source": "These stimuli have been shown to evoke only a short transient response in S1, which then quickly decays back to baseline, a phenomenon that can be accounted for by the balance of excitation and suppression in the PC drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the balanced PC filters to observed cortical response properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "227eb5dc-92e8-4875-ad57-21fafcad248f",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "claim_id": "C110",
+      "claim": "The integration of parallel input channels should reflect and exploit differences in their response properties.",
+      "claim_type": "IMPLICIT",
+      "source": "To the extent that these parallel input channels represent information in disparate ways (differing in response latency, adaptation properties, or spiking precision, among others), their integration should reflect and exploit such differences, a process that can be described using the type of model introduced here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the findings and applicable to sensory systems broadly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recorded responses from 18 peripheral tactile afferents (14 RA, 4 PC) and 118 cortical neurons in S1 areas 3b and 1 to vibrotactile stimuli ranging from 50-800 Hz and sub-micrometer to >500 \u00b5m amplitude, spanning conditions experienced during texture scanning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 and C82-C86 provide clear methodological details about the experimental design. The sample sizes, stimulus parameters, and recording locations are explicitly stated and appropriate for the study objectives. The methods are standard for this field and adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "48084bdb-84b4-4ae8-96c9-5bb960930903",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Integrate-and-fire models were developed to simulate peripheral RA and PC afferent responses, validated against recorded data, and used within an LNP framework to model the transformation from peripheral to cortical responses. The peripheral models accurately captured both firing rates and temporal precision of afferent responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C102 describe the modeling approach and validation. The peripheral models showed strong correlations with recorded data (r=0.83 for RA, r=0.92 for PC, C93), and Figure 1\u2014figure supplement 1 demonstrates good agreement between simulated and recorded responses across multiple metrics. The validation is thorough and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "87eaf39e-78bc-4279-9b40-c841cea41920",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The LNP model captured 67% (\u00b12% SEM) of predictable variance at 1s bins and 35% (\u00b12% SEM) at 5ms bins, with predictable variance decreasing at finer temporal resolutions due to spike train jitter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 and C103 report quantitative model performance metrics with appropriate error estimates. The decrease in predictable variance at finer timescales (C103) is expected given neural variability and is properly acknowledged. The performance levels are reasonable for this type of modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "43275823-a9a0-4cd2-8198-58d54281885e",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Most cortical neurons in S1 areas 3b and 1 receive input from both RA and PC afferents, and S1 responses cannot be explained by either afferent population alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C60, and C63 are supported by Figure 2A showing that most neurons receive significant contributions from both afferent types. The modeling analysis demonstrates that both inputs are necessary to explain cortical responses. This is a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "084c1775-23c1-47dd-898e-484230b30e04",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PC filters were consistently of lower magnitude than RA filters (t(70)=6.4, p<0.01), with RA contribution approximately three times stronger than PC, though filter magnitudes were correlated (r=0.41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C106 report statistical comparisons with appropriate tests and effect sizes. Figure 2C shows the data supporting these claims. The paired t-test is appropriate for comparing filter magnitudes within neurons. However, the claim states \"RA filters were consistently of lower magnitude than PC filters\" (C27) but then states \"RA contribution on average about three times stronger\" (C28), which appears contradictory and may be a transcription error in C27.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a22cca05-64a0-4fae-ab1f-1d5d72134d95",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RA filters were more extended in time (mean >30ms) than PC filters (mean <20ms), with the difference being statistically significant (t(188)=9.6, p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by Figure 2D and appropriate statistical testing. The two-sample t-test is appropriate for comparing filter widths between populations. The effect size is substantial and biologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RA input had net positive contribution to cortical responses while PC input was on average balanced (equal excitatory and suppressive components). For about half of cortical neurons, PC contribution was net suppressive, with significant differences between RA and PC contributions (t(188)=16.1, p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C107-C108 are supported by Figure 2E showing excitation indices. The statistical test is appropriate and the effect is highly significant. This differential contribution pattern is a key finding explaining how the two afferent types drive cortical responses differently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "f8733e73-7d46-48d6-b990-58baa8cb6216",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The firing rates of S1 neurons are almost entirely determined by RA input, as a model based on RA input alone predicts firing rates nearly as well as combined RA and PC input, while PC input alone cannot account for observed firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C34-C36, and C61 are strongly supported by Figure 3 showing that RA-only models perform nearly as well as full models for rate prediction, while PC-only models perform poorly. This is a central finding of the paper demonstrating the differential roles of the two afferent populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PC input primarily shapes the temporal precision of cortical responses. Removing PC input reduces temporal precision of predictions, and only PC input can account for high-frequency fluctuations in cortical responses, while RA input is sufficient at coarser temporal resolutions. Neurons with more precise responses showed greater PC contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C40-C43, and C61 are supported by Figure 4A-C and Figure 4\u2014figure supplement 1. The analysis across multiple temporal resolutions clearly demonstrates PC's role in temporal precision. This is the complementary finding to the RA rate-coding result and represents a major contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "e42b5b88-17aa-4f0f-bd1d-b098c5f25785",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cortical neurons show phase-locked responses to sinusoidal stimulation across a wide frequency range. The model captured phase-locking strength well (r=0.78), with RA input dominant at low frequencies and only PC input accounting for phase-locking at 200 Hz and above.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by Figure 4D and citations to prior work. The phase-locking analysis provides independent validation of the model and confirms the frequency-dependent contributions of RA and PC inputs. The correlation of 0.78 indicates good model performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "24033b94-3058-49de-921b-57e4e0b89a4b",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RA and PC integration in S1 is optimized to encode natural texture stimuli. Filters optimized for information transmission about texture-elicited vibrations closely matched actual cortical filters in key properties: 71% included both RA and PC contributions, RA was weighted more strongly, RA filters were wider than PC filters, and excitation/suppression patterns matched observed data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C53-C56, C59, and C62 are supported by Figure 5 showing close agreement between optimized and actual filters. The optimization analysis provides a normative explanation for the observed integration patterns. However, the claim of \"optimal\" integration (C4, C59, C62) is somewhat strong given that only one optimization criterion (mutual information) was tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "477617d6-a05f-4db4-8bf5-f15aff302ef1",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Natural texture-elicited vibrations show a power-law relationship between amplitude and frequency. When filters were optimized for stimuli with distorted frequency composition, the resulting filters did not match cortical filters, supporting the hypothesis that integration is tuned to natural statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by citations and Figure 5B-D showing that distorted optimization produces different filter properties. This control analysis strengthens the argument that cortical integration reflects natural stimulus statistics. However, only one type of distortion was tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "97dce2e3-a1bc-42ca-a5ee-bb493a584f75",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While traditionally assumed that tactile submodalities are segregated through S1, recent evidence suggests integration occurs between periphery and cortex. SA1 and RA integration has been shown in S1 with ramp-and-hold stimuli, and submodality convergence has been observed in rat brainstem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 accurately represent prior work through appropriate citations. These claims provide important context for the current findings by contrasting traditional views with recent evidence. The citations support the statements made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "a1b808cc-7419-4345-8bed-80f6f97f9d12",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PC input has historically been studied with high-frequency sinusoidal stimuli that evoke only short transient S1 responses, which can be explained by balanced PC excitation and suppression. This may explain why PC-driven cortical neurons are thought to be rare in S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 and C109 provide historical context and offer an explanation for prior observations based on the current findings. The explanation that balanced PC drive accounts for transient responses is a reasonable inference from the data (C31-C32), though it remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "9a9d3923-8132-4c74-9add-756fdeb344fc",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The current findings explain several prior observations: PC input shapes precise spike timing that contributes to perception, balanced PC drive explains frequency-independent S1 firing rates despite frequency-dependent PC rates, and PC input has been found to inhibit cortical responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 connect current findings to prior work through appropriate citations. These interpretations are reasonable given the data, though they remain somewhat inferential. The consistency with multiple prior observations strengthens confidence in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "920e5633-5b29-421e-ae3b-4b431c05f7e0",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Sensory cortex is tuned to natural environment statistics (efficient coding principle). RA afferents convey amplitude information in a frequency-independent manner while PC responses saturate and are frequency-dependent, making RA rates more informative about amplitude. PC afferents show higher temporal precision that conveys information about tactile events and shapes perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 draw on established principles and prior work (appropriately cited) to provide theoretical context for the findings. The characterization of RA and PC response properties is well-established in the literature. These claims support the interpretation of the optimization results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "ec97ab13-e434-4b19-b6cb-4a19f98f8a5c",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple sensory channels with complementary information are common across sensory systems (visual, auditory, gustatory, olfactory, vestibular). Distributing information across channels has advantages including parsing behavioral ranges, reducing energy expenditure, and optimizing information transmission. Integration should exploit differences in channel response properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 and C110 provide broad context by citing work across multiple sensory modalities. The citations support the general principles stated. These claims position the tactile findings within a broader framework of sensory neuroscience.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "6260b2b3-186f-4820-9296-e76d2e74ff35",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on mechanoreceptive afferents: Three main classes (SA1, RA, PC) respond to different frequency ranges with overlapping sensitivities. Natural stimuli engage multiple classes, information is carried by multiple afferents and integrated in S1. S1 neurons encode information in both response strength and timing. Afferent responses are precise and repeatable, with timing conveying information at millisecond resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C17 and C37-C39, C48-C52 provide established background knowledge supported by appropriate citations. These claims accurately represent the state of knowledge in the field and provide necessary context for the study. All statements are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "0769748e-c40d-4189-ad38-893ebea0df0a",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Touch comprises multiple sensory channels conveying characteristic signals during object interactions. This parallels other sensory systems like color vision (cone integration) and cross-modal integration, which are often optimized for information extraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C6 provide general context about sensory integration with appropriate citations. These are well-established principles that frame the study's motivation. The statements accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    },
+    {
+      "id": "d7f2f48a-df8a-4e3e-a1de-93a7ff62e270",
+      "content_id": "cbc0a090-0654-427c-adfc-5212864e56f4",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Most frequency-amplitude pairs elicit responses from both RA and PC afferents. Cortical neurons differ in response properties (burstiness, temporal precision), and the model captures these differences with different RA and PC filters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C104-C105 are supported by Figure 1A showing overlapping response regions and Figure 1E showing model fits to different neuron types. These observations validate the modeling approach and demonstrate its ability to capture neural diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:18.831320Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f151ba61-9306-48df-b365-eab77d97865e",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "3edecef5-e3ad-4768-a591-65e260103605",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "a9b57ebc-a2e1-4d42-b6e6-96e7c10e5138",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "36095723-0533-44c6-a344-c398cdb01410",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "6fd61cee-4067-4930-85b9-d499a2de85ee",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "4f9738d2-78fc-4c86-8000-53c72977c797",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "3eedac46-03e3-4b33-8256-8414c1914e95",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "a14e9455-a675-4de4-8328-43a38e63780a",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "7dce4711-9ef2-482a-9cf3-1eb7bf24cdf8",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "1eb340c3-cdbc-4971-87d6-f1f5f5180111",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "6b7b53db-5310-4a5b-975d-34213459e34f",
+      "result_id": "fa571fbd-9b13-43c8-bd3c-b637a27cf797"
+    },
+    {
+      "claim_id": "f1313940-3c34-411f-be9d-15406c575559",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "4802ab2e-b682-42d6-91da-fd63c73e48fd",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "9d80e0c5-7fe5-477a-b52e-b1702ac72138",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "5b764023-a355-4c55-ad3b-3ca3baa8124d",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "21b94b43-4e34-4920-8a3c-7f4546281c93",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "9086e0ab-2fa3-4a2f-b60d-e2a9759c1d0e",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "320e9f88-9ead-4473-81d2-c41cfda03d96",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "67bc0c39-d804-4e8d-beeb-ce51e772a193",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "cea48910-b62c-48b7-a423-9805a09c3f00",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "9ae75fd8-2c99-4b60-b9a1-c763712e42be",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "facd5d8e-b533-4e33-a959-b487855c4294",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "1e203718-852b-4e5f-b43d-4c9a74f458af",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "07aee407-9695-4e39-abd0-10b7e5c7b865",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "a8ba13a8-ea70-4fc9-9b73-93b2c0db59df",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "be214353-337c-492d-83a4-2277355ec853",
+      "result_id": "48084bdb-84b4-4ae8-96c9-5bb960930903"
+    },
+    {
+      "claim_id": "75ac5d0c-4235-431f-bc5b-33acc188c50f",
+      "result_id": "87eaf39e-78bc-4279-9b40-c841cea41920"
+    },
+    {
+      "claim_id": "c2a8e4d2-9892-45c1-9d47-009599d8f5aa",
+      "result_id": "87eaf39e-78bc-4279-9b40-c841cea41920"
+    },
+    {
+      "claim_id": "b12b2384-c4d5-4792-aaf8-80db890484aa",
+      "result_id": "87eaf39e-78bc-4279-9b40-c841cea41920"
+    },
+    {
+      "claim_id": "7c49abaa-f80c-4b6f-b764-276be41ef1e8",
+      "result_id": "43275823-a9a0-4cd2-8198-58d54281885e"
+    },
+    {
+      "claim_id": "97253f90-6e5c-4511-ac00-1e71a83c7cfd",
+      "result_id": "43275823-a9a0-4cd2-8198-58d54281885e"
+    },
+    {
+      "claim_id": "c00efac2-7911-48ab-aad4-924780efa000",
+      "result_id": "43275823-a9a0-4cd2-8198-58d54281885e"
+    },
+    {
+      "claim_id": "28d43033-0338-4d8b-ad3a-3b3fce36ca18",
+      "result_id": "084c1775-23c1-47dd-898e-484230b30e04"
+    },
+    {
+      "claim_id": "a77add1d-f2ac-497a-952f-8c9caf2b4276",
+      "result_id": "084c1775-23c1-47dd-898e-484230b30e04"
+    },
+    {
+      "claim_id": "83a71f12-df16-4c7a-b3aa-7053b21fc125",
+      "result_id": "084c1775-23c1-47dd-898e-484230b30e04"
+    },
+    {
+      "claim_id": "51e7de4d-6469-4656-84d1-afdc0fda42be",
+      "result_id": "a22cca05-64a0-4fae-ab1f-1d5d72134d95"
+    },
+    {
+      "claim_id": "289cd7da-3ba5-498e-8b2f-d299744bc565",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "a42cf544-3b24-4f87-a4b9-02c952e48fcc",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "911697f9-fcb6-417b-945e-ee6599d0ce9a",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "9ff23ea5-da44-4de5-848b-4d30d6637abb",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "4e632eb6-85a9-4ddb-86fc-b5588b35b015",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "fef05647-62f2-4ed0-9ebb-acb2f5f6ddbd",
+      "result_id": "d1a670c5-e5f8-49bb-a74a-3139ccda85d9"
+    },
+    {
+      "claim_id": "087c11e5-e407-40a0-8c00-9521e56eba56",
+      "result_id": "f8733e73-7d46-48d6-b990-58baa8cb6216"
+    },
+    {
+      "claim_id": "5adc1abe-c132-4c21-81b9-fdbd52ff376b",
+      "result_id": "f8733e73-7d46-48d6-b990-58baa8cb6216"
+    },
+    {
+      "claim_id": "7f6b6986-7a45-4f90-ba15-ee2c0220f837",
+      "result_id": "f8733e73-7d46-48d6-b990-58baa8cb6216"
+    },
+    {
+      "claim_id": "38f734e3-8ba3-4ed0-99ce-eb6bddca7742",
+      "result_id": "f8733e73-7d46-48d6-b990-58baa8cb6216"
+    },
+    {
+      "claim_id": "6a3f5538-6f9a-4942-ac91-ad1e378a89da",
+      "result_id": "f8733e73-7d46-48d6-b990-58baa8cb6216"
+    },
+    {
+      "claim_id": "efcb0cc6-9158-47c2-ba73-044c9401df5c",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "5350d3f9-44ef-4f57-8630-64e3e4b0bd5e",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "4f31fa57-39a0-47c2-af33-97205fb050b4",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "42d9bfe9-a26d-4956-8ac4-d0dc36d9e77c",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "af4d0b52-ec51-4011-9a4a-8901bfe436be",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "6a3f5538-6f9a-4942-ac91-ad1e378a89da",
+      "result_id": "b768d9d4-2c3c-4061-ab7f-832ae805c1ff"
+    },
+    {
+      "claim_id": "e80f10e5-d012-46c8-9454-85f4a40b843d",
+      "result_id": "e42b5b88-17aa-4f0f-bd1d-b098c5f25785"
+    },
+    {
+      "claim_id": "430fe77c-c670-44c0-b80a-da89b817bb94",
+      "result_id": "e42b5b88-17aa-4f0f-bd1d-b098c5f25785"
+    },
+    {
+      "claim_id": "4009dfff-e72d-4870-9f39-d40254d91624",
+      "result_id": "e42b5b88-17aa-4f0f-bd1d-b098c5f25785"
+    },
+    {
+      "claim_id": "fb8eddfe-1d58-4410-9e7c-361d919f7e8f",
+      "result_id": "e42b5b88-17aa-4f0f-bd1d-b098c5f25785"
+    },
+    {
+      "claim_id": "ad5c4bd5-37fb-48a7-a419-f29471741c2d",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "e6af8a25-6210-4962-aec0-a110c38a3aac",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "bd5f3f35-d1fc-4b57-9412-d0a27c816bda",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "6eac385a-19ed-4512-ac98-1c697e5e0d18",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "d3a5fb9c-d4c0-4702-9de9-0fda5d61938a",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "3bb3fe7b-5277-4ce2-8b7d-da578d32028e",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "e20d95c4-760a-4c18-b598-22fa327a3b7c",
+      "result_id": "24033b94-3058-49de-921b-57e4e0b89a4b"
+    },
+    {
+      "claim_id": "ee580311-b327-4cb2-8c40-93f6cfa62444",
+      "result_id": "477617d6-a05f-4db4-8bf5-f15aff302ef1"
+    },
+    {
+      "claim_id": "fe18602c-4a2b-4b3b-a473-e345a07c0f1a",
+      "result_id": "477617d6-a05f-4db4-8bf5-f15aff302ef1"
+    },
+    {
+      "claim_id": "4c9f52e4-3d78-42c3-a796-43d2fb12bb93",
+      "result_id": "97dce2e3-a1bc-42ca-a5ee-bb493a584f75"
+    },
+    {
+      "claim_id": "fb2de16a-434c-4671-85f2-06fd84558e99",
+      "result_id": "97dce2e3-a1bc-42ca-a5ee-bb493a584f75"
+    },
+    {
+      "claim_id": "02741d37-ec17-4231-b80a-bbac920cdbb4",
+      "result_id": "97dce2e3-a1bc-42ca-a5ee-bb493a584f75"
+    },
+    {
+      "claim_id": "cd607baf-0a2d-48c6-a71e-5a85461d09c4",
+      "result_id": "97dce2e3-a1bc-42ca-a5ee-bb493a584f75"
+    },
+    {
+      "claim_id": "2f5133f1-f89f-4188-b3ea-4bea63561641",
+      "result_id": "a1b808cc-7419-4345-8bed-80f6f97f9d12"
+    },
+    {
+      "claim_id": "6aa801d8-5ea7-49b0-9937-d6911616578a",
+      "result_id": "a1b808cc-7419-4345-8bed-80f6f97f9d12"
+    },
+    {
+      "claim_id": "c4669c8f-827b-4a93-9d5a-503f0fb33a24",
+      "result_id": "a1b808cc-7419-4345-8bed-80f6f97f9d12"
+    },
+    {
+      "claim_id": "598f0b35-04d2-4281-b75a-093e1e4e2bc1",
+      "result_id": "a1b808cc-7419-4345-8bed-80f6f97f9d12"
+    },
+    {
+      "claim_id": "616e4306-82ed-455c-b54d-f3ca416c710e",
+      "result_id": "9a9d3923-8132-4c74-9add-756fdeb344fc"
+    },
+    {
+      "claim_id": "d55b1239-5edc-48b8-8735-5dc55ff5a428",
+      "result_id": "9a9d3923-8132-4c74-9add-756fdeb344fc"
+    },
+    {
+      "claim_id": "2be2da4b-6cc1-49d1-9640-2ea6f917ce32",
+      "result_id": "9a9d3923-8132-4c74-9add-756fdeb344fc"
+    },
+    {
+      "claim_id": "ce58ec77-5778-44ba-b5d4-d4b50e3a7465",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "297cae0a-17ea-480f-a35d-6fe36cf74e06",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "787dde43-69b7-42a8-80be-16e08ecd9723",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "1aab6987-19b4-4cdc-81cb-442700137338",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "146a4565-3b1d-452d-8cd3-ce5ef707cb8d",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "1db60c88-962f-4ac8-9857-564371c12e78",
+      "result_id": "920e5633-5b29-421e-ae3b-4b431c05f7e0"
+    },
+    {
+      "claim_id": "2ba0eb2c-d211-4adc-b2d0-cf120de9310f",
+      "result_id": "ec97ab13-e434-4b19-b6cb-4a19f98f8a5c"
+    },
+    {
+      "claim_id": "f58eef13-87fe-45b1-8fae-7491efe9f9c2",
+      "result_id": "ec97ab13-e434-4b19-b6cb-4a19f98f8a5c"
+    },
+    {
+      "claim_id": "227eb5dc-92e8-4875-ad57-21fafcad248f",
+      "result_id": "ec97ab13-e434-4b19-b6cb-4a19f98f8a5c"
+    },
+    {
+      "claim_id": "a924ac81-fc56-4fb7-b873-8a72f19fab6b",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "3a1a1030-b9a5-4d27-95ff-9d2eafa4b16f",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "8e2021c8-b752-4ce3-a848-74fcf8463870",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "5dababb7-7c04-4d74-8b4d-4a396a9732b0",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "0b370199-0e44-4028-aaf3-5de63691201b",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "2e63a733-fa9d-4b10-a2d2-fcec38012c13",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "d7a76c86-96fd-43f9-be2b-629332c53cb6",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "999d516a-4348-4d28-988a-962fa252f15a",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "562dd998-4c64-4b85-b33c-13dea83ec8d1",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "64232c13-fbc7-4e61-acc2-c86cc457207f",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "2f810b28-81b2-4b03-81a9-37fda036c83a",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "ece1f91f-4b82-48c2-a2bf-013fe901da27",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "36dee594-35fc-4524-929d-fb2d42d4c592",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "e3710395-673f-42f9-97fa-397df3c6d71b",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "39e68ce5-bad4-431e-9c15-31c8dfb89080",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "9411ada5-8de8-46b2-92d4-8b8ce2a0f657",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "9910fd41-c25a-4978-b756-13117a3c983e",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "2dd4798f-8bae-413f-864b-eedf75fa52dd",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "19047fc6-563a-47ed-bf08-bab731d7f400",
+      "result_id": "6260b2b3-186f-4820-9296-e76d2e74ff35"
+    },
+    {
+      "claim_id": "ed1099f7-6711-41bd-a789-92ff5aca88fc",
+      "result_id": "0769748e-c40d-4189-ad38-893ebea0df0a"
+    },
+    {
+      "claim_id": "0ba09639-7c33-4621-880e-dc6676ba4f10",
+      "result_id": "0769748e-c40d-4189-ad38-893ebea0df0a"
+    },
+    {
+      "claim_id": "ab5e38f5-e0de-41de-a708-6c7de74839af",
+      "result_id": "0769748e-c40d-4189-ad38-893ebea0df0a"
+    },
+    {
+      "claim_id": "5d17bea0-45f6-4dd8-89ec-35063224aa6d",
+      "result_id": "d7f2f48a-df8a-4e3e-a1de-93a7ff62e270"
+    },
+    {
+      "claim_id": "af2a7739-df1b-45d5-ad05-ed55599a6672",
+      "result_id": "d7f2f48a-df8a-4e3e-a1de-93a7ff62e270"
+    },
+    {
+      "claim_id": "5768be95-9c3c-4a0f-bf36-0d31f34b48e2",
+      "result_id": "d7f2f48a-df8a-4e3e-a1de-93a7ff62e270"
+    }
+  ],
+  "comparisons": []
+}

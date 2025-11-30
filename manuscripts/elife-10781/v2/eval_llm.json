@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior electrophysiological studies have established that slow wave sleep (SWS) is characterized by slow oscillations (0.5-1.5 Hz) that propagate across the brain on timescales of hundreds of milliseconds, as observed in local field potential recordings and EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C17, and C18 are well-supported by multiple citations to established electrophysiological literature. These claims accurately represent the current understanding of slow oscillations during SWS and provide essential background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior rs-fMRI research has predominantly characterized intrinsic brain activity in terms of zero-lag functional connectivity within resting state networks (RSNs), which are generally preserved across wake and sleep states, but conventional analyses do not account for temporal propagation between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, and C21 accurately summarize the state of rs-fMRI research prior to this study, supported by appropriate citations. These claims establish the gap in knowledge that motivates the current investigation of propagation patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous work by the authors demonstrated that BOLD signals exhibit reproducible temporal lag patterns (~1 s timescale) in awake humans that are modulated by task performance and time of day, occurring on timescales much slower than axonal transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C24 are supported by citations to the authors' prior work (Mitra et al., 2014, 2015). These claims establish the methodological foundation and prior findings that the current study builds upon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Lag projection analysis reveals that thalamus shifts from early during wake to late during SWS, while visual cortex shows the opposite pattern, with statistically significant clusters identified in putamen, thalamus, paracentral lobule, visual cortex, medial prefrontal cortex, and brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C32 are directly supported by the lag projection maps in Figure 2 and statistical analysis (Z > 4.5, p < 0.05 corrected). The data clearly demonstrate state-dependent shifts in lag structure across multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Seed-based lag maps from subcortical structures (thalamus, putamen, brainstem) show that cerebral cortex is late relative to subcortical regions during wake but becomes early during SWS, with prefrontal cortex becoming markedly early relative to posterior brain, suggesting front-to-back propagation. However, lag structure within the brainstem-thalamic axis remains relatively constant across states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are well-supported by the seed-based lag maps in Figure 3 and statistical difference maps. The reversal of cortical-subcortical lag relationships is clearly demonstrated, and the preservation of brainstem-thalamic lag structure is evident in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cortical seed-based lag maps reveal region-specific reorganization during SWS: visual cortex becomes early relative to nearly all cortex, medial prefrontal cortex exhibits mixed early and late shifts, and paracentral lobule reverses its lag relationships with sensorimotor cortex and insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by the seed-based lag maps in Figure 4. The data clearly show distinct, region-specific patterns of lag reorganization during SWS, with visual cortex earliness and paracentral lobule reversal being particularly prominent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The range of lag values increases significantly during SWS compared to wake (SD: 0.65 \u00b1 0.07 s vs. 0.42 \u00b1 0.05 s, p < 0.01), suggesting slower BOLD signal propagation during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C46 are supported by quantitative analysis of TD matrices with appropriate statistical testing (permutation resampling with 10,000 trials). The increased variance in lag values during SWS is a clear, statistically significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C59",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Time-delay matrix analysis reveals that intra-RSN lag structure is relatively preserved during SWS (\u03c1 > 0.6), while inter-RSN lag structure is significantly altered (\u03c1 < 0.3), with cross-network blocks losing their ordered early-to-late structure and appearing disorganized during SWS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C50, C59, and C111-C116 are strongly supported by the TD matrix analysis in Figure 5, including quantitative Spearman correlation analysis with appropriate multiple comparison correction. The dissociation between preserved intra-RSN and disrupted inter-RSN propagation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "During SWS, the visual network assumes an 'all early' organization relative to other cortical RSNs, violating the wake principle that no RSN systematically leads or follows others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by the TD matrix analysis in Figure 5A-B and quantitative analysis in Figure 5E showing significant visual network earliness (p < 0.05, corrected). This represents a clear departure from the wake state organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "A subset of the sensorimotor network, corresponding to the paracentral lobule, assumes an 'all late' configuration during SWS, becoming late relative to nearly all other cortical voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 are supported by the TD matrix analysis in Figure 5E and cross-referenced with Figure 2C. The paracentral lobule lateness is clearly demonstrated, though the effect is not statistically significant in Figure 5E because the paracentral lobule represents only part of the a priori defined SMN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The effect of SWS on zero-lag functional connectivity is modest compared to lag structure changes, with RSN topography generally preserved but focal changes observed in visual cortex, paracentral lobule, and thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by the functional connectivity analysis in Figure 6 and citations to prior literature. The comparison demonstrates that lag structure is more sensitive to state changes than traditional functional connectivity measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Lag structure exists in a multi-dimensional space during both wake and SWS, as demonstrated by spatial PCA decomposition of TD matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the PCA analysis shown in Figure 7 and lag thread topographies in supplementary figures. The multi-dimensional nature of lag structure is clearly demonstrated in both states, consistent with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "BOLD signal analysis is consistent with the hypothesis that thalamic hyperpolarization during SWS is modulated by cortex-to-thalamus propagation: cortex leads thalamus during SWS but thalamus leads cortex during wake, while brainstem-to-thalamus propagation remains similar across states, suggesting the thalamus is the site where ascending signals are impeded during SWS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by the seed-based lag maps in Figure 3A and are consistent with prior in vitro work (C107). The reversal of thalamo-cortical propagation direction and preservation of brainstem-thalamic propagation provide strong evidence for the thalamic gating hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The dissociation between preserved within-network and disrupted cross-network propagation suggests that neural communication during SWS is intact within functional networks but disrupted across networks, supporting theories that reduced consciousness during SWS results from loss of integration across networks ('network segregation').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C120 represent speculative interpretations of the findings. While the data clearly show preserved intra-RSN and disrupted inter-RSN propagation, the link to consciousness and neural communication is inferential. The authors appropriately acknowledge this as speculative (C117), but the connection to consciousness theories requires additional validation beyond the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C86"
+    ],
+    "result": "Temporal lags in BOLD signals may reflect propagation of slow and infra-slow electrophysiological activity, based on similarities in spectral content, correlation structure, and apparent propagation between BOLD and electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C86 represent a reasonable hypothesis based on prior literature, but the direct link between BOLD lag patterns and electrophysiological propagation has not been definitively established. The authors appropriately present this as a hypothesis requiring future investigation (C70), particularly for infra-slow activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C96",
+      "C97",
+      "C98",
+      "C101"
+    ],
+    "result": "The observed lag changes may relate to memory consolidation functions of SWS: mPFC earliness may facilitate declarative memory consolidation, putamen-cortex lag reversal may relate to procedural memory consolidation, PCL changes may relate to motor program adjustment or motor behavior abolition, and visual cortex earliness may relate to NREM dreaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C96, C97, C98, and C101 are speculative hypotheses linking observed lag changes to functional outcomes. While these hypotheses are informed by prior literature on memory consolidation and dreaming, they are not directly tested in the current study. The authors appropriately present these as speculative possibilities requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study analyzed 39 subjects scanned in the evening, yielding 70 epochs of wakefulness, 47 epochs of N2 sleep, and 38 epochs of N3 sleep (SWS), with simultaneous fMRI and EEG acquisition using established preprocessing and sleep staging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 describe the study methodology and are supported by detailed methods descriptions and citations to established techniques. The sample size and data quality appear adequate for the analyses performed, though the relatively modest sample size (N=39) is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Sleep is a ubiquitous, essential physiological state characterized by reduced environmental interaction, with sleep deprivation leading to severe consequences, and attended by changes in gene expression, neuromodulators, metabolism, and neural activity, though fundamental functions remain elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide general background on sleep physiology and are well-supported by appropriate citations to established literature. These claims accurately represent current knowledge about sleep and its importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior theories propose that propagated slow activity during SWS plays roles in memory consolidation (particularly anterior-posterior propagation for declarative memory), thalamic hyperpolarization and loss of environmental awareness (via cortex-to-thalamus propagation, never observed in vivo), and reduced consciousness through loss of network integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 accurately summarize prior theoretical frameworks and are supported by appropriate citations. Claim C28 correctly notes the absence of in vivo evidence for cortex-to-thalamus propagation prior to this study, which the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior electrophysiological studies show that slow (0.5-4 Hz) and infra-slow (<0.1 Hz) local field potentials correspond to BOLD signals in wake, sleep, and anesthesia, with 1/f-like spectral content and propagation on timescales of 1-2 seconds during sleep and anesthesia. Slow activity tends to originate in medial prefrontal cortex and propagate posteriorly, with multiple origins and routes. VSD studies in awake rodents show propagation patterns that are bilaterally symmetric, similar to BOLD patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C71-C77, C82-C85 provide a comprehensive review of prior electrophysiological literature and are well-supported by appropriate citations. These claims establish the relationship between BOLD and electrophysiology, though the authors appropriately note that infra-slow propagation has not been investigated at the systems level (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior research has established that SWS is associated with memory consolidation, with mPFC implicated in declarative memory consolidation (accompanied by increased mPFC activity during recall), and that artificially initiating slow wave activity via frontal electrodes boosts recall. SWS is also thought to improve procedural memory, with putamen and paracentral lobule (part of SMA) strongly associated with procedural learning, and sleep-dependent improvements postulated to involve cortico-striatal plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C92-C95 accurately summarize prior research on memory consolidation during SWS and are supported by appropriate citations. These claims provide important context for interpreting the functional significance of the observed lag changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Dreaming occurs in NREM sleep, and recent work shows that BOLD fMRI activity in visual cortex predicts NREM dreaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C100 are supported by appropriate citations (Hobson et al., 2000; Horikawa et al., 2013) and provide context for interpreting the visual cortex earliness finding during SWS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "During wakefulness, the thalamus relays sensory signals to cortex, facilitated by depolarization of thalamocortical cells, thus 'gating' environmental stimuli. During SWS, thalamocortical hyperpolarization prevents signals from reliably reaching cortex, with in vitro work suggesting this hyperpolarization is modulated by slow (<1 Hz) cortex-to-thalamus propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 accurately summarize the established understanding of thalamic function in wake and sleep states, supported by appropriate citations. These claims provide the theoretical framework for interpreting the thalamo-cortical lag reversal observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "During wake, the brain responds to the environment with reciprocal communication between functional systems, evidenced by ascending thalamus-to-cortex propagation and well-ordered inter-RSN propagation. During SWS, off-line activity serves synaptic homeostasis and memory consolidation, with features including reduced environmental responses, altered inter-network communication, but intact intra-network communication, evidenced by reversed thalamo-cortical propagation, altered cross-RSN propagation, and intact within-RSN propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 synthesize the study's findings with prior theoretical frameworks. The empirical observations (C122, C123, C126, C127, C128) are well-supported by the data, while the functional interpretations (C121, C124, C125) are appropriately grounded in cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "PET studies show that SWS and pathological disorders of consciousness are both associated with prominent reductions in thalamic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to Laureys, 2005, and provides relevant context suggesting correspondence between the observed thalamic lag shift and metabolic changes, though the authors appropriately note that more work is needed to establish whether such correspondences are general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "A 'front-to-back' propagation pattern is observed in the present study during SWS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by data shown in Figures 4B and Figure 7\u2014figure supplement 2. This finding is consistent with prior electrophysiological observations (C77) and represents one of multiple propagation patterns present during SWS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "High-density EEG and ECoG recordings have established that slow waves originate in multiple locations and propagate through multiple routes, with the algebraic consequence that lag structure exists in multi-dimensional space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C80 are supported by appropriate citations and logical reasoning. The multi-dimensional nature of lag structure is an important principle that the authors confirm applies to their fMRI data (C81).",
+    "result_type": "MINOR"
+  }
+]

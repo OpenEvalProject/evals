@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Seven rats were successfully trained on a visual accumulation of evidence task, performing over 525,000 trials with 91% accuracy on easiest trials and 70% overall accuracy. Rats demonstrated sensitivity to single-flash differences and completed training in approximately 3,500 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C31-C33 provide converging evidence of successful task training with specific performance metrics, trial counts, and sensitivity measures. The large sample size (525,073 trials) and detailed performance statistics support the behavioral competence claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Behavioral errors increased with the total number of flashes presented (1.14% decrease per flash) but showed minimal dependence on trial duration (0.037% decrease per second), indicating that noise is primarily associated with flash number rather than time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 present a systematic analysis controlling for confounding variables. The regression analysis with specific effect sizes and the comparative magnitude of effects (flash vs. time) provide strong quantitative support for the conclusion that flash number, not duration, drives errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Rats accumulated evidence throughout the entire trial duration with long time constants exceeding trial length, as demonstrated by reverse correlation analysis showing equal weighting of early, middle, and late flashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by reverse correlation analysis (Figure 2B) showing flat psychophysical kernels across time bins. This pattern, consistent across individual rats (Figure 2\u2014figure supplement 4), provides strong evidence for long accumulation time constants and full trial integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C85"
+    ],
+    "result": "The standard deviation of rats' numerical estimates scaled linearly with flash number (scalar variability), not as the square root as predicted by drift-diffusion models. This noise scaling is inconsistent with diffusion-like noise and instead resembles models of numerical cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C46-C48, C53-C54, C85 are strongly supported by signal detection theory modeling (Figure 3) showing linear scaling of \u03c3 with flash number across the range 1-15 flashes. Model comparison (Figure 3F) statistically confirms scalar variability over linear variance and subitizing models. This represents a major departure from standard drift-diffusion assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Dual accumulator models (separate left and right accumulators) significantly outperformed single accumulator models (p<0.001), with the static dual accumulator scalar variability model showing the highest likelihood across all tested models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by systematic model comparison (Figure 4) using bootstrapping and nonparametric testing. The consistent superiority of dual accumulator models across nearly all variants and individual rats (Figure 4\u2014figure supplement 1) provides strong evidence for separate accumulation of left and right evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Rats accumulated flash number rather than flash duration, as demonstrated by lack of preference for longer total flash durations on trials with equal flash numbers (\u0394flashes=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by the jittered flash duration experiment (Figure 5E,F) showing no significant bias toward longer durations when flash numbers were equal. The regression analysis comparing duration vs. flash number models provides clear evidence that rats count discrete events rather than integrate duration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Trial history biases behavior for up to three trials into the future, with reward history increasing probability of returning to the same side and error history decreasing it. These effects combine linearly across consecutive trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C22-C26 are supported by systematic analysis of trial history effects (Figure 6). The temporal extent (3 trials), directionality (reward vs. error), and linear additivity of consecutive rewards are all demonstrated with appropriate statistical analysis. This identifies an important source of behavioral variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C52"
+    ],
+    "result": "Voluntarily head-restrained rats performed the accumulation task with essentially identical performance to unrestrained rats, showing comparable psychometric functions, noise scaling, and temporal integration patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C52 are supported by direct comparison of behavioral metrics between restrained and unrestrained conditions (Figure 7C-F). The similarity in psychometric performance, noise scaling parameters, and reverse correlation patterns demonstrates that voluntary head restraint does not substantially alter task performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The signal detection theory model captured behavioral features including imperfect performance on easy trials without requiring a lapse rate parameter, suggesting noise operates on final accumulator values rather than being added incrementally, though this conclusion remains tentative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 show the model fits data well (Figure 3D), but C67 explicitly acknowledges the conclusion is tentative because the full space of sequential noise models was not systematically explored. The authors appropriately qualify their inference about the timing of noise addition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Behavioral performance showed roughly constant accuracy for fixed flash ratios (supporting scalar variability), but deviated at very low flash numbers where performance improved with additional flashes even at fixed ratios. This deviation was well-predicted by the fitted model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe both the general pattern supporting scalar variability and specific deviations at low flash numbers (Figure 3\u2014figure supplement 3). The model's ability to capture these deviations through the non-linear dependence of \u03c3n on n for n<2 (Figure 3B) demonstrates good model fit to the data's complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Fitting the Brunton et al. accumulation model to the visual task data produced results consistent with the auditory task, including near-zero accumulator memory noise and long time constants. Head-restrained rats showed similar model parameters to unrestrained rats and completed training in similar time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C95-C96 report model fitting results (Figure 2\u2014figure supplement 1) showing consistency with prior auditory task findings. The similarity of parameters between restrained and unrestrained conditions and comparable training times support the validity of the visual task as an analog to the auditory paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Visual stimuli were designed to minimize external noise sources: low flash numbers (0-15), reliable presentation to separate visual hemifields, well-separated light sources, 10ms flash duration, and inter-flash intervals of 240ms-3.45s (unrestrained) or 240ms-1.24s (head-fixed) to avoid adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C57-C59 describe the stimulus design parameters that are clearly specified in the methods and results. The rationale for these design choices (minimizing external noise) is explicitly stated and the parameters are precisely documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Two neural mechanisms could explain scalar variability: logarithmic representation with constant noise or linear representation with proportional noise. The current behavioral results cannot differentiate between these mechanisms as both make identical psychophysical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 accurately describe theoretical possibilities from the literature and appropriately acknowledge the limitation that behavioral data alone cannot distinguish between these mechanistic alternatives. The citation to Dehaene (2001) supports the claim of equivalent psychophysical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work by Brunton et al. (2013) developed a drift-diffusion model for an auditory accumulation task, finding near-zero diffusion noise in the accumulator but requiring a lapse rate parameter to account for errors on easy trials, suggesting additional non-diffusion-like noise sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 accurately describe prior work with appropriate citations. The characterization of Brunton et al.'s findings, model assumptions, and limitations appears consistent with the cited literature and provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Scalar variability has been previously observed in tasks requiring estimation of stimulus duration (Gibbon, 1977) and counting of stimuli (Gallistel and Gelman, 2000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 cite established literature on scalar variability in timing and counting tasks. These citations provide appropriate context for interpreting the current findings within the broader numerical cognition literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Dual accumulators have been previously observed in vertebrate brains, including the goldfish oculomotor system, and are consistent with electrophysiological recordings in primates and rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 cite relevant prior evidence for dual accumulator architectures with appropriate references (Aksay et al., 2007; Bollimunta and Ditterich, 2012; Hanks et al., 2015). This provides biological plausibility for the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "While trial history strategies maximize rewards in dynamic foraging tasks, in this task with independently assigned reward locations, trial history adds noise. This effect has been observed in other studies and should be incorporated into accumulation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 appropriately contextualize the trial history findings with citations to foraging literature and other decision-making studies. The reasoning that trial history is detrimental in this task (due to independent reward assignment) is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Animal procedures were IACUC-approved (protocols #1837, #1853). Seven male Long-Evans or Sprague Dawley rats (200-500g) were water-scheduled during training. Sessions with <100 trials were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 report standard methodological details including ethical approval, subject characteristics, and data inclusion criteria. These are clearly documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The signal detection theory-based model was designed to find the scaling relationship between noise in the accumulator value and number of flashes that best described the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 accurately describes the purpose of the modeling approach as detailed in the methods and results sections. This is a straightforward methodological statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Approximately 40% of rats trained on the head-restrained version were slower to acclimate to the pistons and were excluded from further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 reports an important methodological detail about subject attrition in the head-restrained condition. This exclusion rate is clearly stated and relevant for interpreting the generalizability of the head-restraint results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The behavioral system used open-source Bcontrol software with a 6 kHz state machine and MATLAB interface. Training code is available at http://brodylab.org/code/flash-code. Rats received 25\u03bcL water rewards for correct choices, with 0-15 flashes per side and independently varied trial durations and flash numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide technical details about the behavioral control system, code availability, and task parameters. These are clearly documented in the methods section and represent standard methodological reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C49",
+      "C55",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The authors speculate that scalar variability noise will be critical for understanding decision-making variability generally, and that noise may functionally enable generalization to novel stimulus values during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C55, C81-C82, C84 are explicitly speculative (using terms like 'suggest,' 'speculate,' 'could be'). While these are reasonable hypotheses based on the findings, they represent future directions rather than demonstrated results and lack direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Voluntary head restraint was previously developed as an alternative to forced restraint with animal control over restraint periods, and rats can be trained to perform it in high-throughput facilities with stability sufficient for cellular resolution imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 cite prior work (Girman 1980, 1985; Kampff et al. 2010; Scott et al. 2013) establishing voluntary head restraint methods. These citations appropriately reference the methodological foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The similar performance of voluntarily head-restrained and unrestrained rats suggests the possibility of using cellular resolution optical imaging and perturbation technologies to characterize neural substrates of cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 draws a reasonable inference from the demonstrated behavioral equivalence (C27-C30) to suggest future experimental possibilities. While speculative about future applications, the inference is logically grounded in the empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Noise in behavioral tasks may originate from the natural world, sensory organ detection limits, or variability in neural responses at different processing stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes general principles about noise sources with appropriate citation (Barlow and Levick, 1969). This represents standard background knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Subitizing has been proposed for both simultaneously and sequentially presented stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 cites relevant literature on subitizing (Trick and Pylyshyn, 1994; Camos and Tillmann, 2008; von Glasersfeld, 1982). This provides appropriate context for considering alternative models of numerical representation.",
+    "result_type": "MINOR"
+  }
+]

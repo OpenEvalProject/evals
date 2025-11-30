@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "KPC-1 regulates DMA-1 receptor levels on dendrites. In kpc-1 mutants, DMA-1 protein levels are abnormally elevated on dendritic membranes, as demonstrated by fluorescence imaging, Western blot analysis, and CRISPR-tagged endogenous DMA-1. This upregulation is specific to DMA-1 and occurs post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 provide converging evidence from multiple independent approaches (transgenic reporters, Western blots, CRISPR knockins with YFP and FLAG tags) all showing increased DMA-1 protein in kpc-1 mutants. The specificity is demonstrated by control experiments (C67, C68) showing no change in HPO-30 or dma-1 mRNA levels. The rescue by PVD-autonomous KPC-1 expression (C63) confirms the cell-autonomous relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Dendrite trapping in kpc-1 mutants results from excessive SAX-7/MNR-1/DMA-1 signaling at intermediate targets. Genetic epistasis experiments show that mutations in sax-7, mnr-1, or dma-1 suppress the kpc-1 trapping phenotype. Ectopic expression of SAX-7 in seam cells or in ALM/PLM neurons restores or redirects trapping, and temporal expression of DMA-1 demonstrates that dendrites retain outgrowth capability but are trapped by excessive receptor-ligand interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis data (C19-C21) are compelling and consistent across all three components of the tripartite complex. The ectopic expression experiments (C23, C25) provide strong support for the spatial requirement of ligands. The temporal rescue experiments (C26-C27) elegantly demonstrate that the defect is not in outgrowth capability but in excessive adhesion. Together, these claims provide robust evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "KPC-1 is required during a specific developmental time window (early L3 stage) when secondary dendrites bypass the SAX-7-enriched trap zone. Heat shock-induced temporal expression shows that KPC-1 expression during L2 fails to rescue, early L3 expression fully rescues, and later expression only partially rescues the kpc-1 mutant phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal expression experiments (C15-C17) provide clear evidence for a critical developmental window. The data are consistent with previous RNAi studies (C18) and align with the developmental timing of dendrite outgrowth. The results demonstrate that KPC-1 function is required precisely when dendrites encounter the trap zone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The kpc-1(xr58) allele is a partial loss-of-function mutation causing distinct phenotypes including self-avoidance defects in tertiary branches and reduced quaternary branches. This allele carries a P440S substitution in the catalytic domain and exhibits weaker secondary dendrite trapping than the null allele but severe tertiary branch self-avoidance defects (~70% vs 2% in wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support that xr58 is hypomorphic (C40-C44): the mutation is in the catalytic domain (C41), expressing the P440S mutation in the null background recapitulates the phenotype (C42), low-level wild-type expression mimics xr58 (C43), and RNAi produces similar phenotypes (C44). The quantitative phenotypic data (C37, C38) are clearly presented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "KPC-1 requires self-cleavage of its N-terminal Pro domain for full activation. KPC-1 expressed in S2 cells shows two products corresponding to full-length and Pro domain-cleaved forms. Mutation of both putative cleavage sites (R136A, R143A) eliminates self-cleavage in vitro and produces a null phenotype in vivo. KPC-1 lacking the Pro domain can fully rescue null mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence is strong and follows a logical progression: identification of cleavage products in heterologous cells (C46), mutagenesis of predicted sites eliminating cleavage (C47), CRISPR knockin of these mutations producing null phenotype (C48), and rescue by Pro domain-deleted KPC-1 (C49-C50). This parallels the known activation mechanism of mammalian Furin (C45) and provides mechanistic insight into KPC-1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "DMA-1 overexpression phenocopies kpc-1 mutants. Overexpressing DMA-1 causes self-avoidance defects, secondary dendrite trapping, and reduced quaternary branches similar to kpc-1(xr58). Overexpressing truncated DMA-1 lacking the cytosolic domain produces severe trapping resembling the kpc-1 null phenotype. Overexpression in kpc-1(xr58) enhances the phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenotypic similarity between DMA-1 overexpression and kpc-1 mutants (C52-C55) strongly supports the model that kpc-1 phenotypes result from excessive DMA-1. The enhancement by overexpression in the hypomorphic background (C70) and the severe phenotype from cytosolic-deleted DMA-1 overexpression (C71) provide additional support. The genetic suppression data (referenced in C76) further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "KPC-1 regulates DMA-1 through its extracellular domain, not the cytosolic domain. A CRISPR-generated dma-1 allele lacking the cytosolic domain shows partial function, but removing KPC-1 in this background produces severe trapping, indicating that the extracellular domain is sufficient for SAX-7/MNR-1 response and that KPC-1 acts on the ectodomain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiment with the cytosolic deletion allele (C73-C74) provides clear evidence that KPC-1 does not require the DMA-1 cytosolic domain for its regulatory function. This is consistent with both proteins being type I transmembrane proteins and supports the model of ectodomain interaction. However, C72 is speculative about endocytosis motifs and should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "KPC-1 reduces DMA-1 levels and blocks DMA-1-mediated cell aggregation in heterologous cell systems. In Drosophila S2 cells, DMA-1 and SAX-7/MNR-1 expressing cells form aggregates, but co-expression of KPC-1 with DMA-1 blocks aggregation and reduces DMA-1 protein levels. This effect is specific to DMA-1 and not observed for the control protein mCD8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell aggregation assay (C77-C78) provides functional evidence that KPC-1 disrupts DMA-1 function. The Western blot data (C79) and specificity control (C80) demonstrate that this is due to reduced DMA-1 levels. The membrane localization experiments in S2R+ cells (C82-C83) provide additional support. These heterologous system results corroborate the in vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "KPC-1 targets DMA-1 to late endosomes through direct ectodomain interaction. DMA-1 co-localizes with RAB-7-positive late endosomes (~80%) in wild-type neurons but shows reduced co-localization in kpc-1 mutants. Cytosolic domain-deleted DMA-1 shows reduced endosomal targeting, and this is further diminished in kpc-1 mutants (~10% co-localization). Direct binding between DMA-1 and KPC-1 ectodomains was detected with KD=33 \u03bcM. KPC-1 co-localizes with RAB-7 in S2R+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-localization data (C84-C91) provide strong cell biological evidence for the endosomal trafficking model. The quantification shows clear differences between genotypes and constructs. The biochemical binding data (C92-C93) demonstrate direct interaction with appropriate negative controls. The KD of 33 \u03bcM is relatively weak but reasonable for a trafficking interaction. The KPC-1/RAB-7 co-localization (C94) supports KPC-1's role in endosomal targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C37"
+    ],
+    "result": "Misregulation of DMA-1 causes dendritic self-avoidance defects. In kpc-1(xr58) mutants, tertiary branches show severe self-avoidance defects with ~70% of branches contacting neighbors compared to only 2% in wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The self-avoidance phenotype is clearly documented with quantitative data (C37) showing a dramatic difference between mutant and wild-type. The phenotype is well-illustrated in the figures and is consistent with excessive DMA-1 levels causing inappropriate adhesion between sister branches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Dynamic regulation of guidance receptors is required for proper dendrite development. KPC-1/Furin down-regulates the DMA-1 receptor through direct extracellular interaction to allow dendrites to move away from intermediate targets with enriched SAX-7/MNR-1 ligands. This demonstrates that precise regulation of receptor levels is critical for dendrite branching and patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study and are well-supported by the collective experimental evidence. The model integrates genetic, cell biological, and biochemical data into a coherent mechanism. The conclusion that receptor regulation creates flexibility in guidance responses (C103) is supported by the temporal and spatial manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on PVD dendrite development and SAX-7 localization. PVD neurons develop hierarchical dendritic branches (1\u00b0, 2\u00b0, 3\u00b0, 4\u00b0) that respond to SAX-7 and MNR-1 guidance cues through the DMA-1 receptor. SAX-7 is enriched at sublateral lines where 3\u00b0 branches form and also in a zone near 1\u00b0 dendrites that 2\u00b0 dendrites must traverse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the experimental context and are supported by citations to previous work (C6, C7, C9, C10, C12) and by imaging data presented in the current study (C8, C11, C13). This background is essential for understanding the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "SAX-7 shows differential localization patterns with high enrichment at sublateral lines where tertiary branches form and lower concentration at vertical stripes followed by quaternary branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation (C39) is clearly shown in the imaging data and helps explain why partial loss of KPC-1 function affects different branch orders differently - the varying SAX-7 concentrations create different thresholds for trapping depending on DMA-1 levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "DMA-1 localization in wild-type PVD neurons. DMA-1-GFP shows diffuse localization throughout dendritic compartments and discrete puncta in cell body and primary dendrites that likely represent secretory or endocytic vesicles. Puncta show higher intensity than diffuse dendritic staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These descriptive claims (C57-C59) characterize the baseline DMA-1 distribution and are supported by the imaging data. The interpretation of puncta as vesicles (C58) is reasonable but somewhat speculative. The autonomous function of both proteins (C56) is established by previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "KPC-1 specifically regulates DMA-1 without affecting other transmembrane proteins or dma-1 transcription. HPO-30 membrane levels are unchanged in kpc-1 mutants, and qPCR shows no difference in dma-1 mRNA levels between wild-type and kpc-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative controls (C67, C68) are important for establishing the specificity of KPC-1's effect on DMA-1. The HPO-30 control is particularly valuable as it is another transmembrane protein important for PVD development. The qPCR data confirm post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Literature context on receptor regulation in axon guidance. Classic studies show that the same ligand can trigger different responses depending on receptor composition (Netrin/UNC-40/UNC-5), receptor levels dictate stopping points in gradients (Eph/Ephrin), and dynamic receptor regulation enables midline crossing (Comm/Robo in Drosophila, Robo3 isoforms in mammals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C98-C102) provide important context from the literature and are appropriately cited. They establish the conceptual framework for understanding the significance of the current findings. These are well-established principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background on KPC-1 function. KPC-1 is a proprotein convertase that processes and activates proteins by proteolytic cleavage. It has been shown to cleave insulin peptides for dauer formation and functions in PVD neurons in the same genetic pathway as SAX-7/MNR-1/DMA-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C105-C107) provide background on KPC-1 with appropriate citations. They establish what was known about KPC-1 before this study and set up the contrast with the new findings about its non-proteolytic function in DMA-1 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Hypothesis that KPC-1 functions similarly to PCSK9 in down-regulating receptors through direct ectodomain binding and endosomal targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C109) represents a hypothesis that guided the experimental approach. It is appropriately cited and the subsequent experiments (binding assays, endosomal localization) support this model. However, it should be noted that this is a mechanistic analogy rather than a proven homology.",
+    "result_type": "MINOR"
+  }
+]

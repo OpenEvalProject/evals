@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "fb6472da-f326-4b73-b143-a52ee8b8c32a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:40:33.968944Z",
+    "updated_at": "2025-11-30T00:40:33.968944Z"
+  },
+  "content": [
+    {
+      "id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "submission_id": "fb6472da-f326-4b73-b143-a52ee8b8c32a",
+      "content_type": "manuscript",
+      "content_text": "# Place recognition using batlike sonar\n\n## Authors\n\n- Dieter Vanderelst<sup>1</sup> ([ORCID: 0000-0001-8049-5178](https://orcid.org/0000-0001-8049-5178)) \u2020\n- Jan Steckel<sup>2</sup>\n- Andre Boen<sup>2</sup> ([ORCID: 0000-0002-3489-5063](https://orcid.org/0000-0002-3489-5063))\n- Herbert Peremans<sup>2</sup>\n- Marc W Holderied<sup>1</sup>\n\n### Affiliations\n\n1. School of Biological Sciences University of Bristol Bristol United Kingdom\n2. Active Perception Lab University of Antwerp Antwerp Belgium\n3. Constrained Systems Lab, Faculty of Applied Engineering University of Antwerp Antwerp Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nEcholocating bats have excellent spatial memory and are able to navigate to salient locations using bio-sonar. Navigating and route-following require animals to recognize places. Currently, it is mostly unknown how bats recognize places using echolocation. In this paper, we propose template based place recognition might underlie sonar-based navigation in bats. Under this hypothesis, bats recognize places by remembering their echo signature - rather than their 3D layout. Using a large body of ensonification data collected in three different habitats, we test the viability of this hypothesis assessing two critical properties of the proposed echo signatures: (1) they can be uniquely classified and (2) they vary continuously across space. Based on the results presented, we conclude that the proposed echo signatures satisfy both criteria. We discuss how these two properties of the echo signatures can support navigation and building a cognitive map.\n\n## Introduction\n\nEcholocating bats have excellent spatial memory (Barchi et al., 2013; Holland, 2007; Geva-Sagiv et al., 2015) and are able to navigate to salient locations like roosts, foraging grounds and drinking places (Schnitzler et al., 2003). Experimental results obtained using both Phyllostomus hastatus and Rousettus aegyptiacus suggest that long distance navigation and migration seem to be supported mainly by visual cues (Tsoar et al., 2011; Holland, 2007). However, when displaced by less than about 15 km, both Myotis spp. and Phyllostomus hastatus deprived of sight have been found to successfully return to their roost (Stones and Branick, 1969; Williams et al., 1966). This shows that navigation in bats can be supported by echolocation as well as vision. Navigating and route-following require animals to recognize places (Franz and Mallot, 2000). Currently, it is largely unknown how bats recognize places using echolocation (Schnitzler et al., 2003) and different mechanisms are possible (Geva-Sagiv et al., 2015).\n\n### Model based place recognition\n\nOne possible mechanism for sonar based recognition of places is to localize and classify the individual objects\u00a0in the scene observed from that place is composed of (Lewicki et al., 2014). Under this assumption, bats would reconstruct a (presumably, 3D) model of the layout of a given place and match this with a set of previously stored representations, e.g. (Barchi et al., 2013; Moss and Surlykke, 2001; Schnitzler et al., 2003). In other words, this mechanism implies that bats reconstruct a mental image of the environment from the echoes and use this to recognize a previously visited place.\n\nUnder favourable conditions, extracting a description of a set of localized objects from the echoes is possible as the position, shape, size and texture of objects are all encoded in the binaural spectra of the echoes, e.g. (Reijniers et al., 2010; Schmidt, 1988; Von Helversen and Von Helversen, 2003; Peremans et al., 2012; Wotton and Simmons, 2000; Simon et al., 2011; Genzel and Wiegrebe, 2013). However, a number of limitations of bio-sonar render it uncertain whether bats are able to apply such a place recognition strategy. Low signal-to-noise\u00a0ratio obscures echo spectra (Reijniers et al., 2010). Moreover, ambiguity of cues is introduced by concurrently encoding in the spectral cues both location and other properties of objects. For example, a spectral notch could be introduced by either the head related transfer function (encoding the object\u2019s location) or the transfer function of the reflector (encoding the object\u2019s shape). This complicates extracting both object properties and object positions. Reconstructing the 3D position of objects is further complicated by the fact that, compared to vision, sonar has a limited field of view (Surlykke et al., 2009), a low update rate (Kleeman and Kuc, 2008; Peremans et al., 2012) and a limited range (Stilz and Schnitzler, 2012). While most of these limitations to reconstructing the layout of objects could potentially be addressed by integrating information across calls, this would entail both time and complexity penalties.\n\nIn addition, the capacity for reconstructing the 3D layout of objects is limited by the finite temporal resolution of the bat\u2019s auditory system. The temporal integration in the auditory system severely limits the spatial resolution of biosonar and introduces interference between echoes. In a psychophysical experiment, Wiegrebe and Schmidt (1996) observed a temporal integration constant of about 200\u2009\u03bcs in Megaderma lyra. Simmons and colleagues (Simmons et al., 1989) derived an integration constant of about 200\u2013400\u2009\u03bcs for the bat Eptesicus fuscus. Echoes from objects separated in time by less than the response time of the auditory filters will be integrated (Simmons et al., 1989), thereby limiting bats\u2019 ability to resolve the objects\u2019 locations and properties.\n\nThe limitations imposed by temporal integration can be appreciated by considering the volume of space across which echoes are integrated by the sonar system. This volume can be appropriately described as a section of a spherical shell. The thickness of the shell is determined by the temporal integration of the hearing apparatus. The opening angle of the section is determined by the directionality of the sonar system. Hence, the integrated volume increases rapidly for larger distances from the bat (See Figure 1 and equation therein). For example, at a distance of 7.8 meters, an echolocation system with a beamwidth of 45 degrees is estimated to integrate the echoes originating from a volume of over 1\u2009m3. At the same distance, a system with a functional beamwidth of 60 degrees integrates echoes from a volume of about 2\u2009m3. Echoes originating from reflectors within this volume will be integrated and it is not clear that they will be perceived as individual echoes (Geberl, 2013). Indeed, in general, this volume will contain multiple reflectors. This is especially true when the scene contains complex objects such as leafy trees or bushes (See Yovel et al., 2008 for examples of echo trains returning from vegetation).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig1-v1.jpg)\n\n**Figure 1.:** The integration volume calculated for different beamwidths $\u03d5$ as a function of distance from the bat. The integration volume is approximated as a section of a spherical shell. The opening angle of the section is given by the beam width $\u03d5$. The thickness of the shell $\u0394\u2062r$ is given by the temporal integration of the sonar system. The temporal integration of the sonar system has been assumed to be 200 \u03bcs yielding an integration distance (i.e. thickness of the shell) of about 0.034 m.\n\nFinally, it should be noted that the integration constant used to compute the volume of the sphere represents a very conservative upper boundary for the temporal resolution of the auditory system. Indeed, non-simultaneous masking effects have been found to extend for substantially longer intervals than the integration time (both in bats and humans [Moore, 2012]). For example, Geberl (2013) found non-simultaneous masking in Phyllostomus discolor for temporal separation between echoes up to 6 ms.\n\nSome theoretical mechanisms, e.g. (Fontaine and Peremans, 2009; Matsuo et al., 2004; Saillant et al., 1993), have been proposed that would allow bats to extract environment impulse responses from signals composed of multiple closely spaced echo signals. However, none of them have been unequivocally proven to be exploited by bats. Moreover, so far, these mechanisms have only been tested using simple artificially generated echo trains. To the best of our knowledge, no algorithm has proven to be able to reconstruct the impulse response of a realistically complex reflector such as vegetation.\n\nGrunwald et al. (2004) reported that bats can discriminate between echoes with different impulse response statistics. This shows that the auditory periphery of the bat retains sufficient information to allow responding to the stochastic properties of the underlying impulse responses. However, this does not necessarily imply that bats can reconstruct the impulse response from the echoes, which is required to be able to reconstruct the 3D layout of a scene from the echoes.\n\nIn summary, inherent limitations of biosonar, including (1) the dependence on ambiguous spectral cues for both object localization and classification and (2) the finite temporal resolution of the auditory system, render it unlikely that an explicit 3D representation of a complex scene is available to a cruising bat \u2013 and that such a representation is used to recognize places.\n\nAs the capacity for recognizing places is nevertheless a necessary requirement for any navigation strategy, we propose an alternative mechanism, taking into account these limitations, to explain how echolocating bats might navigate.\n\n### Template based place recognition\n\nInstead of attempting to reconstruct the position, shape and identity of objects from the cochlear output, we propose the cochlear output to be used directly, extending the template based approach described by Wiegrebe (2008). Under this hypothesis, bats are assumed to match the output of the cochlea to a set of stored templates, i.e., classifying the echo signature as one of a set of memorized echo signatures each one recorded at a previously visited place. This approach obviates the need for complex reconstruction algorithms extracting 3D spatial information from the echo signals at the two ears. As it uses the sensory input directly, our approach to place recognition is analogous to the view-based place recognition that is thought to underlie visual navigation in insects (Zeil et al., 2003; Franz and Mallot, 2000).\n\nIn addition to circumventing the computationally hard problem of deriving a 3D spatial representation from complex echo signals, echo templates have been shown to be very discriminative. Kuc (1997) showed\u00a0a\u00a0bio-mimetic sonar device to be capable of detecting which side of a coin was up using very simple echo templates. Their computational simplicity and discriminative power have led sonar based templates being used to recognize places in robotic navigation algorithms before, e.g. (Mataric and Brooks, 1990; Steckel and Peremans, 2013; Kuipers, 2000). However, to the best of our knowledge, no study has looked at the properties of sonar templates accessible to bats operating in complex habitats. Indeed, robotic studies using sonar templates have all been carried out in artificial man-made environments. Moreover, these studies have used emitters, receivers and processing methods that are not necessarily biologically plausible. For example, robots typically (Kleeman and Kuc, 2008) use a ring of sonar ranging devices (Mataric and Brooks, 1990; Kuipers, 2000), each with a limited field of view (Steckel and Peremans, 2012), that extract the delay of the first echo.\n\nIn this paper, using ensonification data, we derive templates from many echo trains from natural habitats. In contrast to most robotic studies, we collect and process the echo data in a biologically plausible way. Next, we assess the viability of our hypothesis by evaluating whether the derived templates are sufficient to support place recognition. Indeed, the viability of a template-based approach to place recognition depends on the following two properties of the templates:\n\nIn this paper, we test whether these conditions are satisfied by collecting many cochlear templates as they could be perceived by bats. In the discussion, we argue that, by satisfying these two criteria, the templates can support navigation. In addition, we discuss how the templates could support the acquisition of a cognitive map.\n\n## Materials\u00a0and\u00a0methods\n\nAll data and computer scripts are available from Zenodo (Vanderelst et al., 2016).\n\n### Ensonification\n\nA custom ensonification device consisting of 31 Knowles FG series microphones (Steckel and Peremans, 2012) and a Senscomp\u00a0(http://www.senscomp.com/ultrasonic-sensors/series-7000-sensors.php) Series 7000 ultrasonic speaker was used (see Figure 2). The speaker produces about 106 d\u2062Bs\u2062p\u2062l at 50 kHz and 1 meter distance. The device was mounted on a pan tilt system (PTU-E46, FLIR, Goleta, CA) allowing us to rotate the device from \u2212150 to 150 degrees in azimuth and from \u221225 to 40 degrees in elevation. The pan tilt system moved the ensonification device through the full extent of its mechanical range in 31 steps of 10 degrees in azimuth and 7 steps of 10.8 degrees in elevation The positional error of the pan tilt system is less than 0.1 degrees.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig2-v1.jpg)\n\n**Figure 2.:** At the front of the device the array of 31 microphones (Knowles FG series) can be seen. The Senscomp Series 7000 ultrasonic speaker is located above this array.\n\nAt each azimuth and elevation direction, three measurements were gathered. The data capture and storage was handled by a single-board computer integrated into the ensonification device. The single board computer controlling the data collection also controlled the pan tilt system through a serial interface cable. The single-board computer was wirelessly connected to a laptop enabling us to start and monitor the data collection. A hyperbolic frequency modulated pulse sweeping from 100 to 40 kHz in 1 ms was emitted. This frequency range was limited by the frequency response of the emitter and the electronics. The recording of the echoes was started at the onset of the emission and ends 34 ms later. The duration of the recording time window was limited by the on-board memory of the data acquisition system. The sampling rate was 219 kSamples/s.\n\nData was collected at three different sites (see Figure 3). The structure of the data is depicted in Figure 3. First, twelve positions in St. Andrews Park (Bristol, UK, 51:27:15.772N, 2:36:52.996W) were selected for ensonification. To ensure the data represented different densities of clutter bats might operate in, four open, four semi-cluttered and four cluttered locations were selected. The data collected at St. Andrews Park consisted of 7812 (12 positions \u00d7 217 directions \u00d7 3 repeats) echo trains at each of the 31 microphones. Second, data was collected in a park in Midreshet Ben Gurion, Israel (30:50:53.318N, 34:46:54.174E). At this site, bats use an artificial corridor lined with boulders as part of their commuting route. In this corridor, the ensonification device was placed at 50 positions along a straight line spaced 20 cm apart. The line approximately ran along the centre of the corridor. At each of the 50 positions, three measurements for each of the 217 directions were collected yielding 32,550 echo trains (50 positions \u00d7 217 directions \u00d7 3 repeats) at each of the 31 microphones. Finally, data was collected at Royal Fort Gardens (Bristol, UK, 51:27:26.417N, 2:36:4.619W). At this third site, 40 positions spaced 25 cm apart along a 10 meter line were sampled yielding 26,040 echo trains (40 positions \u00d7 217 directions \u00d7 3 repeats) at each of the 31 microphones. In total, 66,402 echo trains for each of the 31 microphones were used in this paper, resulting in a data set consisting of a total of 2,058,462 echo trains.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig3-v1.jpg)\n\n**Figure 3.:** Three data sets were collected (corresponding with three field sites). First, at St Andrews park, the ensonification device was placed at twelve different locations in habitats with varying levels of clutter (Open, Semi Cluttered, and Cluttered). At each of the twelve positions, echo trains from 217 azimuth and elevation directions were collected. At the Israel and Royal Fort Gardens site, the ensonification device was placed at 50 and 40 positions along a straight line, respectively. At each of the 50 (spaced 20 cm apart) or 40 (spaced 25 cm apart) positions, echo trains from 217 azimuth and elevation directions were collected.\n\nAt both St. Andrews park and the Israel site data was collected at an approximate height of about 3 meters. In the case of St. Andrews park, overhanging vegetation sometimes restricted the device to be raised to this level. If so, the device was raised as high as possible. In the Royal Fort Park, all data was collected at a height of about 2 meters.\n\n### Template construction\n\nTemplates were derived from the data collected at each of the three sites. The data for each of the 12, 50 and 40 positions in each data set were processed in the same manner. The method used in constructing the templates is summarized in algorithm 1.\n\n#### Algorithm 1: The template construction process\n\nFor each position, the data consisted of 20,181 echo trains collected from 217 azimuth and elevation directions. At each azimuth and elevation direction, 3 measurements were taken using 31 microphones\u00a0(217 directions \u00d7 31\u00a0microphones \u00d7 3 repeats\u00a0=\u00a020,181). Step 1: Each of the 20,181 echo trains was filtered using a model of the bat\u2019s auditory periphery. This model returns a cochleogram. Step 2: The first 5.8 ms were set to zero to avoid the pick up of the emitted signal to be processed. Step 3: The cochleograms returned by the model of the auditory periphery were averaged across frequency and the 31 microphones. This resulted in 3 (corresponding to the 3 r) templates for each of the 217 azimuths & elevation directions. At this point, the data consisted of 651 templates, corresponding to 3 repeats for each of the 217 directions. Step 4: To obtain a realistic directionality, the templates were averaged across 9 neighboring azimuth and elevation directions (See Figure 4 for a depiction of the resulting virtual directionality). Step 5: The templates were sampled at an interval of 350\u2009\u03bcs. Step 6: Finally, templates were averaged across the 3 repeats to obtain a single template for each of the 217 directions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig4-v1.jpg)\n\n**Figure 4.:** Comparison of the simulated beamwidth of M. daubentonii (panel a) (Surlykke et al., 2009) across the range 40 to 100 kHz and the virtual beamwidth of the ensonification device after averaging across 3 neighbouring directions based on the theoretical emission pattern of the Senscomp emitter (panel b). Panel c depicts the difference between the beamwidth of M. daubentonii and the virtual beam. Note that for the beam of M. daubentonii the emission and hearing directionality were combined.\n\nAll 2,058,462 echo trains (217 directions \u00d7 3 repeats \u00d7 31 microphones \u00d7 102 positions) were individually filtered using a model of the bats\u2019 auditory periphery similar to the one proposed by Wiegrebe (2008) to simulate the peripheral hearing system of the bat Phyllostomus discolor. In brief, the model consists of a Gammatone filterbank with central frequencies ranging from 30 kHz to 100 kHz in steps of 5 kHz. Subsequently, each channel is exponentially compressed (using an exponent value of 0.4) and low-pass filtered (1 kHz cut-off, 12 dB slope per octave). The cochleogram returned by the model was dechirped by shifting each frequency channel in time (zero-padding at the end) such that the maximum activation, corresponding to the pick up of the emitted signal, is aligned across frequency channels. The first 5.8 ms (corresponding to about 1\u2009m) of the data in each frequency channel were set to zero to avoid including the pick up of the emitted signal or any lingering decay thereof in the analysis. In the model formulated by Wiegrebe (2008) a similar operation is performed by means of a channel-wise normalized autocorrelation between call and echoes. However, Wiegrebe (2008) worked with simulated calls and echoes. In contrast, in our real measurements, the emission of the pulse saturated the microphones. Hence, we did not have the picked up call available to perform the autocorrelation with. Therefore, we approximated the autocorrelation step in Wiegrebe\u2019s model (Wiegrebe, 2008) by the dechirping operation described above. Both approaches would result in similar templates.\n\nThe resulting cochleograms were averaged across frequencies and the 31 microphones. Hence, the templates used in this paper did not include spectral information. Omitting spectral information reduced the computational complexity of subsequent computations. More importantly, omitting spectral information simplifies the template mechanism (1) making it robust against variations in call design and (2) shows the same mechanism could be used by CF/FM bats as well (see Discussion).\n\nThe beam of the emitter used was more narrow than the typically combined hearing and emission directionality of bats, e.g. (Vanderelst et al., 2010; Jakobsen et al., 2013). Therefore, templates were averaged across 3 neighbouring\u00a0directions of the pan tilt system in elevation and azimuth to approximate the broader directional sensitivity of bats. Using the theoretical beam directionality of the Senscomp ultrasonic emitter, we estimated the resulting beamwidth employed in this paper to have a 3 dB opening angle of 20 degrees at 55 kHz. Figure 4 compares the resulting virtual beamwidth of the ensonification device with the simulated beamwidth of the bat Myotis daubentonii (Jakobsen et al., 2013; Vanderelst and De Mey, 2008). From this plot, it is clear that the virtual beam employed in this paper is somewhat more homogeneous than that of actual bats. Nevertheless, the directivity indices of M. daubentonii and the virtual beam were very similar (about 14 and 15 $d\u2062B$ respectively, Figure 4).\u00a0In a next step, the templates were downsampled to a sampling rate of 2.8 kHz, corresponding to a temporal integration interval of 350\u2009\u03bcs. The integration time of the model of Wiegrebe (2008) is slightly less than 350\u2009$\\mu$s.\n\nFinally, templates were averaged across the three repeats resulting in 217 templates, corresponding to the 217 azimuth and elevation directions for a single location. One template was obtained for each of the 217 directions for each of the 12, 50 or 40 locations at the three respective sites (see Figure 5) resulting in a total of 22,134 templates for use in the remainder of the paper.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig5-v1.jpg)\n\n**Figure 5.:** (a) 360 degree panoramic view of one of the locations in St Andrews park which was ensonified (Semi cluttered 3). (b\u2013d) Examples of three templates from three different azimuth and elevation directions. The assumed noise $\\sigma_{n}^{2}$ on the templates is shown by the shaded areas.\n\n### Template classification\n\nThe classification performance was determined for templates obtained at the St Andrews site. Estimating the probability of correct classification requires the introduction of a noise model. We introduced both a noise floor and stochastic noise on the templates.\n\n#### Noise floor\n\nEven in the absence of reflectors returning an echo, the internal noise of the ensonification device resulted in non-zero values for the templates. To avoid template values below the noise threshold of the device to contribute to the classification performance of the templates, we assessed the template values resulting from measurements taken in absence of any reflector, i.e. the device was pointed upwards in open spaces. These measurements were converted to templates in the same way as described above. The maximum template value obtained from these measurements was taken as the noise threshold $n_{f}$. Any value in the templates below $n_{f}$ was set to $n_{f}$ as that value did not contain any information about the environment beyond the fact that no echo signal was present.\n\n#### Stochastic noise\n\nWe assume each sample of the templates to be subject to independent Gaussian noise with variance $\\sigma_{n}^{2}$. The value of $\\sigma_{n}^{2}$ was derived using a procedure similar to that used by Dau et al. (1996). This is, we determine the value $\\sigma_{n}^{2}$ that allows discriminating two templates corresponding to two single echo signals differing by 2 dB in intensity (at the 75% correctness criterion). In other words, we assume that the just-noticeable echo intensity difference in bats is 2 dB. Based on the evidence we could find, a just-noticeable-difference of 2 dB is a conservative estimate of the intensity discrimination ability of bats (Simmons and Vernon, 1971; Suthers, 1965). The noise floor and stochastic noise are illustrated in Figure 5 by plotting them together with a number of selected templates.\n\n#### Template classification performance\n\nUsing the noise level $\\sigma_{n}^{2}$, we calculated the probability $P_{c}\u2062(i)$ for each template $i$ to be correctly classified. This can be expressed as,\n\n$$\nP_{c}(i)=P(T_{i}^{\u2032}|T_{i},\\sigma_{n}^{2})\n$$\n\nwith $T_{i}^{\u2032}$ a measurement originating from the same direction and location as template $i$ but each sample corrupted with noise ($\\sigma_{n}^{2}$). Therefore, Equation 1 can be read as the probability of correctly classifying measurement $T_{i}^{\u2032}$ as originating from template $T_{i}$ given the noise level $\\sigma_{n}^{2}$.\n\n$P_{c}\u2062(i)$ is given by the probability that the distance between $T_{i}$ and $T_{i}^{\u2032}$ is smaller than the distance between $T_{i}^{\u2032}$ and any other stored template $T_{j}$. Formally,\n\n$$\nP_{c}(i)=P(d(T_{i},T_{i}^{\u2032})\u00a0<\u00a0d(T_{j},T_{i}^{\u2032}))\n$$\n\nwith $d$ defined as the Mahalanobis distance between template $T_{i}$ and measurement $T_{i}^{\u2032}$\n\n$$\nd\u2062(T_{i},T_{i}^{\u2032})=(T_{i}-T_{i}^{\u2032})^{\u2032}\\timesQ^{-1}\\times(T_{i}-T_{i}^{\u2032})\n$$\n\nwith $Q$ a diagonal matrix with $\\sigma_{n}^{2}$ as diagonal elements.\n\nWe estimated $P_{c}\u2062(i)$ using a Monte Carlo approach whereby we generated measurements $T_{i}^{\u2032}$ by adding normally distributed noise to template $T_{i}$. We calculated the distance between the generated measurement and all templates. $P_{c}\u2062(i)$ was calculated by observing the proportion of generated measurements $T_{i}^{\u2032}$ that had a smaller distance to $T_{i}$ than to any other $T_{j}$. We generated at between 100 and 1000 replications of $T_{i}^{\u2032}$ for every template. The process of estimating $P_{c}\u2062(i)$ was stopped when the estimate converged and changes to $P_{c}\u2062(i)$ were smaller than 0.01.\n\nIn addition to the probability of correct classification we calculated the average angular error $e_{i}$ as\n\n$$\ne_{i}=\\sumcP(T_{c}|T_{i},\\sigma_{n}^{2})\u22c5g(i,c)\n$$\n\nwith $g\u2062(c,i)$ the great circle distance (i.e. angular separation) between the positions corresponding with templates $T_{c}$ and $T_{i}$.\n\n### Quantifying template continuity\n\n#### Angular catchment distance\n\nTo quantify how smoothly templates change across angles in the St Andrews data set, we calculated the dissimilarity between templates as a function of the angular separation between them. We used the previously defined distance $d\u2062(T_{i},T_{j})$ to calculate the dissimilarity between templates $T_{i}$ and $T_{j}$.\n\nFor each of the 12 positions $x$, we calculated the average dissimilarity between template $T_{x}^{\u03d5}$ for direction $\u03d5$ and every other template $T_{x}^{\u03d5+\u0394\u2062\u03d5}$ with an angular separation of $\u0394\u2062\u03d5$. The angular catchment distance for each of the 12 positions $x$ was defined as the angular distance $\u0394\u2062\u03d5$ over which the dissimilarity between the templates increased monotonically, in accordance with Zeil et al., 2003.\n\n#### Linear catchment distance\n\nTemplate continuity in the Israel and Royal Fort Gardens data sets was quantified in a similar way. We calculated the distance along the corridor over which the dissimilarity (i.e. Mahalanobis distance, Equation 3) between templates increased monotonically. For each of the 217 directions $\u03d5$ and 40 or 50 positions $x$, the dissimilarity between the template $T_{x}^{\u03d5}$ and each template $T_{x+\u0394\u2062x}^{\u03d5}$ at a different location $x+\u0394\u2062x$ (but same direction $\u03d5$) was calculated using Equation 3. Next, the linear catchment distance for every position $x$ was taken as the average distance $\u0394\u2062x$ over which the dissimilarity increased monotonically. To allow for the noisy character of the data, we used a 1% threshold. This is, we considered dissimilarity to increase monotonically if any decrease, if present, in dissimilarity was less than 1% of the median dissimilarity found between all pairs of templates in our data set. In addition, we required the dissimilarity to be at least 10% of the median dissimilarity between all pairs of templates in our data. This prevented trivial increases in dissimilarity from being taken into account.\u00a0Finally, we took the median catchment distance across all positions $x$ for each of the 217 directions $\u03d5$.\n\n## Results\n\n### Template classification\n\nThe probability of correct classification for each of the 217 directions for the 12 positions in the St. Andrews data set is plotted in Figure 6. For the Open environments, the probability of correct classification was very low (i.e. Pc\u223c0). In contrast, for the Semi cluttered and the Cluttered environments the number of templates that could be recognized with a high probability increased. The fourth Semi cluttered environment was an outlier. The classification probabilities for this position were very low. Physically, this environment might have resembled an Open environment. The branches of the large coniferous tree, the major feature at this position, did not reach low enough for them to generate echoes. Figure 6 also depicts the angular error ei for each of the 217 directions in the 12 positions. These results mirror those for the probability of classification showing large errors in the open conditions and small errors in the cluttered positions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig6-v1.jpg)\n\n**Figure 6.:** Left: Panoramic views taken at the 12 positions. Middle: Probability ($P_{c}$) for each of the 12 St Andrews positions as a function of azimuth and elevation. right: Angular error ($e_{i}$) for each of the 12 St Andrews positions as a function of azimuth and elevation.\n\nIn an additional analysis, we confirmed that only few confusions occurred between templates from different positions. This is, the probability $P_{c}$ for a given template did not decrease markedly ($\u0394P_{c}\u00af\u223c0.01$) when allowing for confusion between a given template (corresponding to one position at one azimuth and elevation direction) and templates taken from other positions (at the same or at a different angle).\n\n### Template continuity\n\n#### Angular catchment area\n\nUsing the St. Andrews data, we assessed the angular catchment area for templates by assessing the increase in dissimilarity between templates as a function of angular separation (Figure 7). For the templates collected in the Open habitats, we observed virtually no increase in dissimilarity as a function of separation angle. In contrast, for the Semi Cluttered and the Cluttered habitats, there was a tendency for the dissimilarity to increase as a function of angular separation (except for Semi Cluttered 4). The angular separation at which the dissimilarity leveled off varied across habitats and habitat types. However, angular catchment areas up to about 90 degrees (Semi 3) and 150 degrees (Cluttered 2) were found. This indicates that, on average, the dissimilarity between templates is a monotonic function of angular separation over a wide range of separation angles.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig7-v1.jpg)\n\n**Figure 7.:** Left column: Examples of the dissimilarity between a reference template and the other 216 directions for an Open, a Semi Cluttered, and a Cluttered habitat. The direction of the reference template (azimuth 0\u00b0 & elevation \u22127\u00b0) is indicated by a white dot. The dissimilarity between the reference template and all other templates is depicted by the contour plots. Right: the average dissimilarity between templates as a function of the angular separation in each of the Open, Semi cluttered and Cluttered habitats. The mean dissimilarity as a function of the angular separation for each of the three types of habitats is indicated by a black dotted line. A horizontal black line indicates the average dissimilarity between randomly selected templates. The dissimilarity between unrelated templates serves as a baseline against which the dissimilarity as a function of angular separation can be compared (Greif and Siemers, 2010).\n\n#### Linear catchment distance\n\nFigures 8a\u2013f and 9a\u2013f illustrate the process of assessing the continuity of the Israel and Royal Fort Gardens data sets respectively. In both figures, panels c and f show the linear catchment distances for the templates for two selected azimuth & elevation directions. The plots illustrate the variability in the linear catchment distances across templates with values ranging from approximately 0 to 3.5\u2009m.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig8-v1.jpg)\n\n**Figure 8.:** Illustration of the process of finding the catchment distance for the Israel data and the median catchment distance as a function of direction. (a) Templates for ensonification direction \u221220$^{\u2218}$\u00b0 azimuth and \u221210\u00b0\u00a0elevation as a function of the position (i.e. 0 to 10 m). (b) The pairwise dissimilarity between the templates in panel (a) as a function of the displacement between the templates. (c) For each position, a linear catchment distance was calculated. This was done by finding the template separation interval across which the distance increased monotonically. (c) The resulting catchment distances for the data in panel (b). (d), (e), (f) similar but for azimuth direction 40\u00b0 and 10\u00b0 elevation. (g) The median catchment distance for each of the 217 azimuth and elevation directions.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig9-v1.jpg)\n\n**Figure 9.:** Similar as Figure 8 but for the Royal Fort Gardens data set.\n\nIn the Israel data, across all positions and directions, the catchment distances\u00a0rangedup to\u00a06.6\u00a0meter. In the Royal Fort Gardens data set, we found catchment distances up to 2.5 meter. Across both data sets the average catchment distance was 0.89 meter (sd: 0.61), see Figure 10a. A Wilcoxon rank sum test confirmed that the linear catchment distances for the Israel data were larger than for the Royal Fort Gardens data (Z=52.3,p\u226a0.01).\u00a0Panels g in Figures 8 and 9 depict the median linear catchment distance as a function of azimuth and elevation.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig10-v1.jpg)\n\n**Figure 10.:** (a) Histogram of the linear attractor sizes for both the Israel and Royal Fort Gardens data set. (b) Plot showing the proportion of templates with a linear attractor distance larger than a given value.\n\nWe confirmed that for both the Royal Fort Gardens data set and the Israel data set the probability of correct classification was high. The average probabilities P\u00afc were 0.82 (sd: 0.21) and 0.99 (sd: 0.03) for the Israel and Royal Fort Gardens data sets, respectively. A Wilcoxon rank sum test confirmed that the templates in the Royal fort gardens were easier to classify correctly. (Z=-95.2,p\u226a0.01). The difference in the distribution of Pc for both data sets can also be appreciated from inspecting Figure 11.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig11-v1.jpg)\n\n**Figure 11.:** 2D histograms of the probability of correct classification $p_{c}$ versus the linear catchment distances for the templates in the Israel (left) and Royal fort (right) data sets.\n\nWe calculated the correlation between the linear catchment distance and the probability of correct classification. We found $\u03c1=-0.18$ (95% C.I.: \u00b10.02, $p\u226a0.01$) and $\u03c1=0.01$ (95% C.I.: \u00b10.02, $p\u226b0.05$) in the Israel and Royal Fort Gardens data set, respectively. When pooling the data for both sets, a negative correlation between the linear catchment distance and the probability of correct classification was found ($\u03c1=-0.32$, 95% C.I.: \u00b10.01, $p\u226a0.01$). The relationship between the probability of correct classification and the linear catchment distance is also depicted in Figure 11 by means of 2D histograms.\n\n## Discussion\n\n### Template properties\n\nIn this paper, we propose template based place recognition might underlie sonar-based navigation in bats. Under this hypothesis, bats would recognize places by remembering their echo signature - rather than their 3D layout. Using ensonification data, we assessed the viability of this alternative hypothesis regarding bat navigation by assessing two critical properties of the templates: (1) unique classification of templates and (2) template continuity. In the following, we discuss our findings regarding these two properties.\n\n#### Template classification\n\nThe data show that the templates, as constructed in the paper, can be reliably classified, even using a system with a dynamic range smaller than a bat\u2019s (Figure 6). The typical emission levels of bats are substantially higher (reaching 140 dB$_{s\u2062p\u2062l}$ at 10 cm for a wide frequency range [Holderied et al., 2005; Surlykke and Kalko, 2008]) than the emission levels for our speaker (maximally 126 dB$_{s\u2062p\u2062l}$ at 50 kHz and 10 cm). Moreover, FM bats have been shown to have hearing thresholds as low as 0 dB$_{s\u2062p\u2062l}$\u00a0(Hoffmann et al., 2008). In contrast, the Knowles FG series microphones used in the paper have an estimated self-noise level of about 25 dB$_{s\u2062p\u2062l}$\u00a0(Avisoft\u00a0Bioacoustics, 2015).\n\nThe finding that templates can be readily classified is in agreement with the results of robotic studies that have shown that sonar templates can be used to recognize locations and viewpoints, e.g., (Steckel and Peremans, 2013; Mataric and Brooks, 1990; Kuipers, 2000). By definition, the probability to correctly classify a template depends on the ratio of its systematic variation compared to its random variability. Hence, lacking systematic variation, templates collected in Open habitats could not be classified. As expected, in the absence of diagnostic echoes place recognition is impossible.\n\nIt is important to stress that the templates could be correctly classified, even though they did not preserve spectral information. Indeed, the templates were constructed by averaging the cochleograms over the frequencies thereby removing spectral cues (Algorithm 1, step 3). In addition, dechirping of the spectrograms (Algorithm 1, step 1) makes the templates largely independent from call duration. This has two implications. First, navigation by templates as proposed here does not depend heavily on call design. Indeed, the spectral and temporal aspects of bats\u2019 calls can vary from call to call, e.g. (Surlykke and Moss, 2000; Kalko, 1995). By using descriptors of the environment that do not depend critically on call design a bat could navigate the same environment largely independent of the call used. A second implication is that template based navigation should also be feasible for bats using narrowband calls. For example, Rhinolophidae use long narrowband calls preceded and/or followed by a short frequency sweep (Schnitzler and Denzinger, 2011). The frequency range of these sweeps is limited compared to the sweeps used by bats using frequency modulated calls. Nevertheless, Rhinolophidae have specialized in hunting under cluttered circumstances and face rather challenging navigation tasks (Schnitzler et al., 2003; Schnitzler and Kalko, 2001). A mechanism for recognizing places that does not rely on spectral cues makes for a more plausible candidate for explaining how these bats can find their way using calls with a limited bandwidth.\n\n#### Template continuity\n\nWe assessed both the angular (St Andrews data, Figure 7) and linear (Israel and Royal Fort Gardens data, Figures 8,9) catchment areas. We found the dissimilarity between templates to increase monotonically for angular separations up to about 50 and 150 degrees in the Semi Cluttered and Cluttered habits respectively. In addition, on average, the dissimilarity between templates increases monotonically for up about 0.89\u2009m of linear separation (see Figure 10a).\n\nWhether these catchment areas are sufficiently large to be functional remains to be tested. However, the linear catchment distances reported here are similar in size to those likely to be experienced by insects using vision based homing. Zeil et al. (Zeil et al., 2003; St\u00fcrzl and Zeil, 2007) collected large sets of panoramic images spaced 10 cm apart in outdoor environments. They calculated the dissimilarity between images as a function of the spacing. They found that linear catchment distances do not exceed 1\u2009m. The catchment distances reported here are also substantially larger than those found in a robotic experiment by Steckel and Peremans (2013). These authors collected sonar based templates in an office environment by driving around a robot equipped with a biomimetic sonar system. They found that displacing the robot by about 14 cm or 20 degrees resulted in leaving the current template\u2019s catchment area. In spite of these small catchment areas, they successfully derived a map of the office using the templates. Hence, successful navigation seems to be possible with catchment areas that are smaller than those found in this paper.\n\nIn addition, the results regarding the angular and linear catchment distances dovetail with the echolocation behaviour of bats as recorded under field conditions. For many templates, the linear catchment distances are larger than the distance bats seem to cover between calls. Seibert et al. (2013) reported a maximum flight speed of about 6\u2009m/s for commuting Pipistrellus pipistrellus across several field conditions. The bats maintained pulse rates higher than 10\u2009Hz. Similar pulse rates and flight speeds were reported for commuting Myotis dasycneme (Verboom et al., 1999; Britton et al., 1997). Finally, commuting Myotis mystacinus were found to adopt flight speeds well below 10 ms\u22121 whilst maintaining pulse rates higher than 10\u2009Hz (Holderied et al., 2006). In summary, pulse rates higher than 10\u2009Hz seem to be the trend across bat species (Siemers et al., 2001) while flight speeds above 10 ms\u22121 are rare (Holderied, 2001).\n\nEven a (low) pulse rate of 10\u2009Hz and a (high) flight speed of 10\u2009m/s results in sampling the environment at 1\u2009m intervals. In our data, a substantial portion of templates (about 64%, Figure 10b) had a catchment diameter larger than 1\u2009m . Note that the diameter of a catchment area is twice the catchment distance. Therefore, in our data catchment diameters are on average 1.77\u2009m wide (i.e.,\u00a02 \u00d7\u00a00.89\u00a0m). A bat flying through the environment and calling at 10\u2009Hz will always sample the template\u2019s catchment region if its diameter is larger than 1\u2009m. Such a template could act as a reliable signpost en route to the bat\u2019s destination.\n\nWhen flying at commuting speeds, bats maintain a low angular velocity. Holderied (2001) showed that commuting bats adapt the curvature of their flight path in function of the current flight speed. Even at 5 ms, he found bats to restrict their angular velocity to about 280 deg/s. At a call rate of 10\u2009Hz, this implies a change in direction of about 28 degrees per call. At 10 ms\u22121, this reduces to about 6 degrees per call. Hence, the changes in the orientation of a commuting bat between calls seem to be less than the angular catchment distances found here. Active scanning would result in larger changes in gaze direction. In a study quantifying the scanning behaviour of Pipistrellus pipistrellus in the field the largest angle between subsequent call directions was found to be 51 degrees. Hence, this study suggests that, even while actively scanning, bats tend to change the direction of their beam by less than the angular catchment distances of templates in cluttered and semi-cluttered environments. In summary, it seems that the angular spatial sample rate maintained by bats is higher than the average angular catchment distances of templates.\n\nWe conclude that the spatial separation of successive calls of bats tends to be less than the size of the catchment areas reported here. In addition, successful navigation is possible with even smaller catchment areas (Zeil et al., 2003; St\u00fcrzl and Zeil, 2007; Steckel and Peremans, 2013). Therefore, we propose that the linear and rotational catchment areas reported here are not trivial and are functionally relevant.\n\nThe template continuity observed in the current data sets is a consequence of both the beam width and the temporal integration in the model of the auditory periphery. As mentioned in the introduction (Figure 1), both parameters determine the volume of space across which echoes are integrated. Wider beams and longer temporal integration result in templates that vary more smoothly with orientation and position in space. For an account of bat navigation that assumes bats to reconstruct a 3D model from an echo train the beam width and temporal integration constitute limitations of the echolocation system by reducing its resolution. In contrast, for a template based approach wider beams and longer integration times are not necessarily a problem. In contrast, these factors might facilitate navigation. As such, the finding that different bat species actively control their emission beams to converge on nearly the same field of view (Jakobsen et al., 2013) could indicate that bats perform an optimal spatial smoothing while navigating the environment. Note that, as shown by these authors, optimal fields of view are task and habitat depending resulting in different trade-offs between beam range and width with corresponding linear and angular catchment area sizes.\n\nIn summary, we tentatively conclude that the templates satisfy both criteria as put forward in the introduction, i.e. they must allow for unique classification and be sufficiently continuous.\n\n### Differences between sites: possible trade-offs for navigating bats\n\nThe Royal Fort Gardens data set resulted in significantly smaller linear catchment distances (Figures 8,9,11). On the other hand, the average probability of correct classification was significantly higher in the Royal Fort Gardens data set (Figure 1). The difference in layout between the two sites can be appreciated from inspecting Figure 3. The Israel site was a more open habitat than the Royal fort site, where the reflecting foliage was closer to the ensonification device than the rocks at the Royal fort site. In addition, the rocks at the Israel site (in spite of being farther away) resulted in stronger echoes than the foliage at the Royal fort site (compare panels a & d in Figures 8,9).\n\nThe larger linear catchment distances for the Israel data suggests that navigation by means of templates is facilitated by (strong) echoes originating from distant reflectors. Distant reflectors move more slowly through the bat\u2019s \u2019field of view\u2019, i.e., they undergo a smaller degree of motion parallax. As our data shows, this results in templates with larger catchment distances. This might facilitate navigation. On the other hand, the Royal Fort Gardens data suggest that the higher motion parallax for closer reflectors results in a better template classification. Indeed, closer reflectors change more abruptly when moving through space. This seems to result in templates that are easier to classify \u2013 at the cost of smaller linear catchment distances. In short, our data reveals a trade-off between the linear catchment distance size and the probability of correct classification of a template. The existence of this trade-off is confirmed by the negative correlation we found between the linear catchment distance size and the probability of correct classification.\n\nHence, our results suggest that navigating bats should maintain a preferred distance to foliage and other reflectors. Indeed, keeping a larger distance would reduce the average object motion parallax and result in larger linear catchment distances. On the other hand, keeping a larger distance would reduce the probability of correctly classifying templates. In addition, flying further away from objects will, in general, result in weaker echoes (in our Israel data this effect has been offset by the strong echoes returned by the rocks). Therefore, our template theory of navigation predicts navigation would be facilitated by keeping a distance from reflectors that balances the opposing effects of motion parallax on the templates\u2019 linear catchment distance and probability of correct classification.\n\n### Using templates for mapping\n\nWhilst successful navigation does not require a map-like representation, e.g. (Cruse and Wehner, 2011; Cheung et al., 2014; Hesslow, 2012; Collett et al., 2013), it is likely that bats use some sort of cognitive map (Geva-Sagiv et al., 2015). However, to the best of our knowledge, the use of such a map has not been demonstrated experimentally (Holland, 2007). Nevertheless, indirect evidence for the existence of a cognitive map, integrating echolocation information if available, is the finding of grid and place cells in bats (Yartsev et al., 2011; Yartsev and Ulanovsky, 2013) and bats\u2019 ability to remember flight routes in a completely dark room (Barchi et al., 2013).\n\nBuilding and maintaining a cognitive map based on sonar templates would require the successful completion of three subtasks: (1) exploring the environment and building a library of templates, (2) integrating the templates into a map-like representation, (3) deriving motor plans from this representation that take the bat from its current location to a desired position. So far, knowledge about how bats could address these challenges is very sparse. However, work has begun on each of these components. Below, we review this work and outline a potential strategy for constructing a cognitive map using the templates as proposed in this paper.\n\n#### Exploring\n\nVanderelst et al. (2015) proposed an algorithm for obstacle avoidance in bats that relies on a very simple, yet robust, mechanism comparing the loudness of the onset of the echoes at the left and right ear and turning away from the side receiving the loudest echo. As shown by the simulation results presented by Vanderelst et al. (2015), this simple obstacle avoidance algorithm is able to steer the bat away from obstacles in both planar and true 3D environments. Furthermore, while it contains a stochastic component this obstacle avoidance behaviour still constrains the movement through the environment causing the bat to follow a limited set of routes through a given environment. The results presented here on the sizes of the catchment areas indicate that any sensorimotor strategy that causes the bats to repeatedly visit approximately the same sites will allow them to explore their environment while building a library of templates describing this environment. Hence, this obstacle avoidance mechanism but also other environment driven guidance behaviours (Geva-Sagiv et al., 2015), e.g. edge following (Mataric and Brooks, 1990; Verboom et al., 1999; Holderied et al., 2006), that make the bats follow a restricted set of routes through the environment while exploring, could\u00a0support a template based description of the environment.\n\n#### Building the map\n\nRecent work in robotics has offered a suggestion about how bats could integrate templates into a map of the environment. Steckel and Peremans (2013) proposed the BatSLAM algorithm to integrate odometry, also called path integration, and templates into a semi-metric map of the environment. BatSLAM is a bio-inspired sonar navigation algorithm, derived from RatSLAM (Milford et al., 2004), mirroring the basic functionality of the mammalian hippocampus. In brief, the algorithm directly uses the spectrogram of the echoes as a template to recognize distinct places. The odometry is used to estimate the relative position of different locations labelled by their respective spectrograms. The algorithm averages across measurements of the very noisy odometry for different travels between the same locations. Finally, agreement between conflicting information is sought by applying a relaxation algorithm. The outcome of this process is a graph-like representation of the relative locations of different recognizable places (see Figure 12). Details of the mapping algorithm have been presented by Steckel and Peremans (2013)\u00a0and Wyeth and Milford (2009). In summary, BatSLAM, and similar algorithms (Grisetti et al., 2010), offer biologically plausible suggestions of how bats can integrate templates and odometry into a semi-metric map of the environment.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/14188/elife-14188-fig12-v1.jpg)\n\n**Figure 12.:** The blue circles represent templates and their catchment areas. The white lines between them represent directions and distances between template locations inferred from odometry, thereby forming a graph-like representation of space. A bat navigating this map (represented by the grey arrow) can use the templates as sign posts at which it reorients itself. Having recognized a particular template (catchment area) the bat knows where it is and approximately which direction it should fly in to arrive at any of the other template locations. Notice that the (catchment areas of) the templates do not cover the complete space.\n\nFurthermore, we would like to point out that the way such a template based map of the environment is built could also explain the tendency of bats to rely on prominent reflectors or landscape elements as landmarks to guide their navigation (Verboom et al., 1999; Jensen et al., 2005). This might occur through two different but converging mechanisms. First, prominent reflectors often result in idiosyncratic and thus highly classifiable templates. As BatSLAM uses recognition of previously visited places to drive the relaxation algorithm, the places associated with such templates will act as anchor points for the graph-like map. Indeed, if a place is highly recognizable odometric errors occurring along the various routes that pass through this place will be easier to remove by the relaxation process. Consequently, the metric positions of the routes passing through this place will be defined more precisely relative to the other important places represented in the map, such as start and goal position. A path planner considering this a desirable property would then preferentially generate routes passing through the catchment area associated with this prominent reflector. In our data, highly recognizable templates in the semi-cluttered environments coincided with the locations of shrubs and trees, suggesting their possible use as landmarks. Secondly, prominent reflectors often generate strong echoes making them detectable from a long distance and resulting in the corresponding templates to have large catchment areas (For example, in this paper, the rocks at the Isreal site, Figures 8,9,10).\n\nThe extent of the catchment area of a template is positively correlated with the probability that this template will be observed and stored in the map during the exploration of the environment. By biasing the templates included in the map, this mechanism would again bias a planner to generate routes passing through the catchment areas of prominent reflectors. In our data, the linear catchment distances were found to be larger in the Israeli corridor of boulders than in the corridor of vegetation in Royal Fort Gardens, suggesting a possible preference for the use of the former as landmarks. We conclude that a navigation strategy relying on a template based map would show a natural preference for routes including prominent landscape features. Hence, we propose that the use of landmarks might be an emergent feature of a mapping strategy recognizing locations using templates (Wystrach et al., 2011).\n\n#### Using the map\n\nUsing the map requires planning a route and executing it. Of these, planning is the least challenging (Brooks, 1991). Many algorithms (Kuipers, 2000; Russell and Norvig, 1995) have been proposed that allow agents to plan a route given a graph-like network of locations and routes between them. Executing the generated plan requires adequate motor control and is a more difficult problem (Brooks, 1991). To the best of our knowledge, no work has been done on how bats select, initiate and execute appropriate sensor-motor loops to use the map to navigate to desired locations (i.e. step 3 in the challenges listed above). In contrast, robotic studies have extensively addressed the issues regarding the execution of a planned sequence of actions (Kuipers, 2000; Siciliano and Khatib, 2008). We propose that an integrated model of bat navigation could draw inspiration from the solutions derived in this field.\n\n### 3D object layout versus template-based scene representation\n\nIn this paper, we have proposed that bats recognize places by remembering their echo signature - rather than their 3D layout. It could be argued that, since bats have been shown to be capable of recognizing objects, they could very well use that same capability to recognize scenes based on the 3D object layout. However, we would like to point out that the behaviour of bats in recognition experiments differs from that of cruising/navigating bats. In recognition experiments, bats typically ensonify the same object from different directions as part of an active object-centred exploration process, e.g. (Genzel et al., 2012; Geipel et al., 2013; Simon et al., 2006). Cruising/navigating bats, on the other hand, fly by objects along their flight path resulting in a more accidental, i.e. less object-centred, and less extensive series of observations of those objects. Such a fly-by mode of echolocation is well suited to the proposed template-based strategy as it requires local \u2019snapshots\u2019 only. Also, we would like to argue that even in the object recognition experiments bats might not be building a 3D reconstruction of the object. They might instead be looking for diagnostic acoustic cues, e.g. spectral cues as hypothesized in the study by Simon et al. (2006). Such an account of object recognition would be easily integrated with our template-based account of place recognition. One possible way the two might interact is that the template-based place descriptors would be used to build a map first and then later (or possibly in parallel) \u2019landmarks\u2019, i.e. uniquely identified objects, would be associated with places on the map.\n\nHence, while we agree that a 3D place description -were it to exist- would be more general and easier to change, we believe it still remains to be proven that such a description is actually built by bats in a navigation context. Indeed, it is our hypothesis that bats would be driven towards an alternative, template based, mechanism either by the inability of their sonar systems to reconstruct a 3D layout of the environment or, if a 3D layout of the environment could be inferred from the echoes, by the associated much higher computational burden placed upon their limited cognitive resources.\n\nTo produce direct evidence that would allow choosing between the two alternatives, we suggest future experiments might be set up to test the prediction by the template based place recognition mechanism advocated here that bats would not be able to distinguish between scenes if their 3D layout is different while their resulting template is similar. Therefore, behavioural evidence in favour of our approach would consist of bats failing to distinguish complex scenes giving rise to many echoes, i.e. with a similar complexity of their natural habitats, that result in the same template, essentially a low-pass filtered range-intensity profile. To test this, one could generate echoes from a complex virtual scene and its mirror image. These should result in the same template whereas a 3D model account predicts bats should be able to distinguish between the two scenes. Alternatively and possibly more straightforward to test, the 3D model account predicts bats would be able to recognize echoes coming from rotated versions of the same underlying scene. The template approach predicts that bats would be unable to make such generalizations for larger rotations, i.e. once the measured template would fall outside the catchment area of the stored template.\n",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4dd8e921-3226-483e-a068-74e6739c3c85",
+      "submission_id": "fb6472da-f326-4b73-b143-a52ee8b8c32a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Eichenbaum, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14188.017](https://doi.org/10.7554/eLife.14188.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Place recognition using batlike bio-sonar\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll the reviewers felt there was considerable merit in the study but at the same time had a diversity of major concerns about the some of the assumptions, analyses, and conclusions. The specific comments are provided in detail below.\n\nReviewer #1:\n\nThis article addresses an interesting hypothesis concerning place recognition in biosonar. The authors suggest that to recognize certain locations echolocating bats might employ place templates based on a specific echo signature rather than the 3 dimensional layout of the echo-acoustic scene. By assessing templates' discriminability and continuity independent of the spectral content of the ensonifying signal the proposed model was able to reliably recognize locations allowing which they claim can be sufficient for a successful navigation and orientation in an echo-acoustic environment. Yet, while this paper is intriguing, it might also be pushing the interpretation a little bit too far and should be considered in the larger scope of knowledge about bats, their navigation abilities and what is known so far regarding the link between their neural circuits and echolocation.\n\nThe paper refers to \"bat echolocation\" but different bats have evolved very different echolocation strategies to navigate in their environments. Previous studies, also using artificial machines, have shown the capacity of bat-like sonar pulses to extract useful information about the environment, the leap towards suggesting that bats maintain a remarkably large library of pulse signatures to navigate in 3D rather than a memory of a 3D layout (perhaps in the hippocampal formation) is not well supported. From an etiological perspective it is unclear what would drive the system to prefer sonar-based place recognition over 3D spatial memory of the environment as that seems much less of an efficient recognition mechanism and one that is much less easily generalizable and amenable to changes in the environment. The authors also argue in the Discussion that \"indirect evidence of a cognitive map exist through findings of grid-cells and place-cells in bats\" but in fact those finding are contradicting their claim because those studies have shown that place/grid-cells can exist in the complete absence of echolocation, thus arguing echolocation is not, in fact, necessary for the formation of spatial maps in the hippocampal formation. Nonetheless the paper and the proposed hypothesis in intriguing albeit unlikely capturing the true nature of bat 3D navigation.\n\nSpecific comments:\n\nIn the second paragraph of the subsection \u201cModel based place recognition\u201d: The authors state that during ensonification of an object spectral cues are generated which encode both location of the object but also general object properties. This induces conflicting information concerning position and shape. This is certainly true but what the authors fail to mention is that bats \u2013 along with most mammals \u2013 have very flexible and most often disproportionally large ears. This allows them to rapidly move their ears independent of their head and therefore still keeps the outgoing ensonification signal directed toward the object of interest. These rapid ear movements introduce dynamic binaural cues relevant for horizontal object localization but more importantly here also relevant for elevation estimation. Efferent feedback signals encode the ears' position, which is integrated in the evaluation of the incoming echoes. This allows for a better localization performance and thereby can reduce possible conflicts of object shape and position.\n\nIn the third paragraph of the subsection \u201cModel based place recognition\u201d: I do not quite agree that spectral cues are degraded when echoes from certain points are temporally integrated due to properties of the auditory system. In fact, distinct spectral cues are generated when temporally peaks are integrated, allowing for object recognition through spectral peak or notch detection (shown in many previous studies). Objects are therefore distinguishable through distinct temporal peaks or when not temporally resolvable through their spectral cues and notches. At the neural level, the work by Jim Simmons further supports this statement. Furthermore, integration can occur at later stages of processing beyond the auditory cortex. While a large fraction of neurophysiological studies have focused on the bat A1, there are many subsequent stages of processing that could lead to a coherent perception of the bat's location in 3D, including the hippocampal formation, basal ganglia, frontal cortex, colliculus, etc.\n\nIn the second paragraph of the subsection \u201cEnsonification\u201d: Why was the employed pulse only ranged down to 40 kHz? More echo-acoustic information could have been extracted in lower frequency ranges that could still be perceived by echolocating bats (see publications concerning bat audiograms \u2013 albeit the authors do not consider the differences of bat echolocation signals across species). Especially the open space locations might be more reliably recognized by employing lower frequencies that have longer travel times with less atmospheric attenuation.\n\nIn the last paragraph of the subsection \u201cTemplate Construction\u201d: It states that the templates were subsampled at a rate of 350 \u03bcs, a rate \"slightly larger than the integration time of the model of Wiegrebe\". Is subsampling an appropriate way to compensate for integration time? As I understand it, within the integration window accumulated information introduces masking because multiple echoes introduced within that time will be \"combined\" or considered together (integrated). It seems to me that subsampling would be less akin to integration and more akin to a \"refractory period\" in which only one echo within the window is taken into consideration, after which no echoes are considered until the end of the window. Would averaging the samples within each 350 \u03bcs block be a more appropriate approximation of integration time?\n\nIn the first paragraph of the subsection \u201cTemplate properties\u201d: I was missing a discussion on object recognition based on echolocation sequencing. The authors only state that this is not necessary when employing their model based on echo signature rather than 3D layout. But many studies have shown that bats do indeed integrate sequences of echoes and can thereby reliably discriminate and classify objects.\n\nIn the second paragraph of the subsection \u201cTemplate properties\u201d: the proposed model failed to recognize the echo signatures of the Open environment. The authors state that this is due to the missing diagnostic echoes. Many bat species travel in higher open spaces and still are able to reliably orient themselves. What do the authors propose how bats navigate instead in such an echo-acoustic situation?\n\nIn the third paragraph of the subsection \u201cUsing templates for mapping\u201d: The authors state that an obstacle avoidance mechanism and other guidance behaviors together with the suggested place recognition template model would allow bats following a restricted set of routes to successfully navigate through their environment. But often new obstacles might come in place disrupting the known echo-acoustic scene. Would the model still be able to reliably recognize the template? It would be interesting by how much echo signature recognition would be disrupted by inserting or deleting temporal characteristics of the templates or by phase warping parts of the signal.\n\nEtiology: In the Abstract and Introduction the authors note that long-distance navigation (Tsoar et al., 2011) requires vision while displaced bats can find their way home from within 15 km by sound (Stones and Branick, 1969 and Williams, Williams and Griffin, 1966). However, the studies cited for these two pieces of evidence refer to distinct species of bats that arose from separate lineages. Rousettus aegyptiacus (Tsoar et al., 2011) is a fruit- eating megabat belonging to the same clade as flying foxes and other fruit bats that rely exclusively on vision. It is the only member of its clade to have evolved echolocation in the form of tongue clicks, which are not as sophisticated as the laryngeal echolocation used by microbats, the clade that contains all other echolocating bats including those used in citations [Stones and Branick, 1969] and [Williams, Williams and Griffin, 1966] (Myotis spp. and Phyllostomus hastatus). The diets and environments of the three species are also quite different. Because the animals evolved to address different environmental pressures it is somewhat misleading to omit the species names in the text, as the findings of one study may not generalize to the species used in the others. The paper never states what genus or even family of bat is most closely modeled by the ensonification device, which is important because many bats have different types of echolocation and foraging strategies. Specifically, which species provided the model for the hyperbolic simulated pulse? Are bats that use calls resembling the simulated pulse found in all three areas ensonified in this study? At what height was the ensonification device placed? Was this the approximate height that bats living in the area might be expected to fly?\n\nAdditional data files and statistical comments:\n\nThe authors offer to make the data available and I think this is wonderful. The analysis overall seems appropriate.\n\nReviewer #2:\n\nThe current paper uses a combination of biophysical measurements and simulations to present a theoretical framework on how bats may navigate by the auditory analysis of self-generated sounds. Specifically, the authors derive echo-acoustic signatures, templates, from the echoes of their ensonifications and test the extent to which these templates carry information in terms of discriminability and smoothness. The authors hypothesise that templates must be discriminable from each other to meaningfully encode a position and/or orientation within a habitat and it must vary monotonously over a certain range of rotation or translation to be considered as 'smooth'.\n\nOverall the scientific approach is very well conceived and executed. The biophysical measurements are clearly motivated and described and the simulation approach is also well justified. The manuscript would benefit, however, from a more precise wording and better justification of some of the simulation assumptions.\n\nFollowing are specific comments, in order of appearance, not importance.\n\nIn the fourth paragraph of the subsection \u201cModel based place recognition\u201d: The definition and implementation of temporal integration is misleading: temporal integration as a peripheral auditory limitation is (i) a feature of the Gammatone filter bank, determined by the duration of the filter impulse responses and (ii) a feature of the low-pass filtering (cutoff frequency not specified in the current paper) applied after compression. The first integration stage is not really a limit of temporal resolution; it only means that shorter events are recoded onto the frequency axis by the filter bank. The second integration is, I guess, already of a similar order as the 350 \u00b5s integration interval applied later. The authors should clarify implicit and explicit integration stages in their model.\n\nIn point 1 of the third paragraph of the subsection \u201cTemplate based place recognition\u201d: The authors use the words 'identify', 'discriminate', 'distinguish' and 'recognize' interchangeably. In psychophysics, (e.g. of object perception) these are quite different levels of perception and so the authors should stick to that expression that matches their simulation, namely discrimination. For identification, for example, discrimination and classification are seen as prerequisites; see e.g. the chapters on object perception in toothed whales in the book by Whitlow Au.\n\nIn point 2 of the third paragraph of the subsection \u201cTemplate based place recognition\u201d: rework definition of smoothness. Only later it becomes clear the monotonicity is required.\n\nIn the second paragraph of the subsection \u201cTemplate Construction\u201d: provide values for compression and low-pass filtering.\n\nIn the third paragraph of the subsection \u201cTemplate Construction\u201d: What is the directionality of the emitting system? If you average cochleograms across microphones, this is quite different than averaging the waveforms. The latter would produce strong directionality but what does averaging the cochleograms produce? This is very unphysiological! Shouldn't you have used the 31 mics like a phased array to thereby impose a bat HRTF on the data?\n\nIn the second paragraph of the subsection \u201cTemplate Construction\u201d: the dechirping appears to be functionally similar to channel wise normalized autocorrelation in Wiegrebe (2008). Why do you deviate from that model here?\n\nIn the first paragraph of the subsection \u201cQuantifying discriminability\u201d: you cannot equalize acoustic noise of mics with noise in the template because of non-linear processing (half-wave rectification and compression) in between.\n\nFigure 5: considering that you have unknown emission directionality the comparison with real bats appears not meaningful.\n\nFigure 6: panoramic view!\n\nIn the third paragraph of the subsection \u201cTemplate properties\u201d: CF bats temporal resolution in the CF part however would be very bad (about equal to call duration, 50 ms!) so CF part is not usable, right?\n\nReviewer #3:\n\nIn this manuscript, the authors distinguish between two hypotheses of echolocation-based navigation in bats: model-based place recognition, in which echo cues underlie 3D reconstruction of a scene, vs. template-based recognition, in which a scene is represented directly from cochlear input. The manuscript proposes the viability of the template model, based on analyzing templates constructed from a large body of real-world ensonification data. The criteria for template viability were that a place template had to be discriminable from others, and that it was continuous, i.e. more similar to templates of nearby vs. distant locations. Simulated classification results (using Mahalanobis distance as a discrimination metric) were generally consistent with the clutter of the scenes surveyed. In open spaces with few landmarks, performance was low; in more cluttered spaces performance was high. Additionally, discriminable scenes tended to be continuous. Finally, the authors discuss their results in the context of constructing cognitive maps that can guide mesoscale navigation in bats.\n\nI enjoyed reading the paper and think it should be published. The analyses generally seem sound and carefully performed. Very few statistics are used in the paper; in some places a more formal analysis might lend weight to the results and interpretations. If I am reading the methods correctly, 3 replicate measurements were used to estimate noise at each position, which strikes me as a low number from which to estimate a distribution, whereas the Wiegrebe model used 20.\n\nAs an experimentalist I would want to know to what extent bats actually behave in the ways predicted by the reported discrimination probabilities and catchment sizes. For example, the Wiegrebe paper that inspired the model did include some comparisons of P. discolor behavior against model predictions. Still, this paper sets the stage nicely for such an evaluation and provides a method for predicting navigation behaviors in a given environment. (I am less convinced that it provides a basis for rejecting object-based navigation mechanisms, which seemed to be an implied aim of the manuscript.)\n\nThe authors argue that inherent limitations of biosonar (spectral ambiguity, integration time) make it unlikely that 3D representation of a scene is available to a cruising bat, and that such a representation is therefore unavailable to recognize places. The bases for this argument are plausible, but stop short of ruling out explicit object layout reconstruction as a navigational cue. After all, bats do perform object recognition and localization. Integrating across multiple echo calls, for example, might allow an echolocating bat to ameliorate the spatial blur imposed by the integration time described in the paper. In this vein, the authors might also elaborate on object recognition vs. place recognition \"modes\" of echolocation. If object-recognition mechanisms are not part of template-based navigation strategy, is there a tradeoff between navigation and object perception performance?\n",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "38ab38ba-d746-434d-83f3-607f132edc39",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C1",
+      "claim": "Echolocating bats have excellent spatial memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Echolocating bats have excellent spatial memory (Barchi et al., 2013; Holland, 2007; Geva-Sagiv et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a68b8566-2e24-4cb0-abe3-cdad7620e76a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C2",
+      "claim": "Echolocating bats are able to navigate to salient locations like roosts, foraging grounds and drinking places.",
+      "claim_type": "EXPLICIT",
+      "source": "are able to navigate to salient locations like roosts, foraging grounds and drinking places (Schnitzler et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "0889699b-03f2-47f1-b84b-7cef4f1dd97e",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C3",
+      "claim": "Long distance navigation and migration in Phyllostomus hastatus and Rousettus aegyptiacus are supported mainly by visual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental results obtained using both Phyllostomus hastatus and Rousettus aegyptiacus suggest that long distance navigation and migration seem to be supported mainly by visual cues (Tsoar et al., 2011; Holland, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "42acced5-0615-46f2-b84b-37fc87e8f5ba",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C4",
+      "claim": "When displaced by less than about 15 km, both Myotis spp. and Phyllostomus hastatus deprived of sight have been found to successfully return to their roost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when displaced by less than about 15 km, both Myotis spp. and Phyllostomus hastatus deprived of sight have been found to successfully return to their roost (Stones and Branick, 1969; Williams et al., 1966)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8f81a755-76d2-4176-843c-6a7c5e6ae601",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C5",
+      "claim": "Navigation in bats can be supported by echolocation as well as vision.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that navigation in bats can be supported by echolocation as well as vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the previous experimental evidence about bats returning to roosts without sight",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8ed4f313-5693-48a7-ae30-d1b401a0bc20",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C6",
+      "claim": "Navigating and route-following require animals to recognize places.",
+      "claim_type": "EXPLICIT",
+      "source": "Navigating and route-following require animals to recognize places (Franz and Mallot, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "3500ab71-afa8-40b6-9ae7-0775fbe0c649",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C7",
+      "claim": "It is largely unknown how bats recognize places using echolocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, it is largely unknown how bats recognize places using echolocation (Schnitzler et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published review",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "02f87f77-4cda-467e-b756-163256de5e09",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C8",
+      "claim": "The position, shape, size and texture of objects are all encoded in the binaural spectra of the echoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under favourable conditions, extracting a description of a set of localized objects from the echoes is possible as the position, shape, size and texture of objects are all encoded in the binaural spectra of the echoes, e.g. (Reijniers et al., 2010; Schmidt, 1988; Von Helversen and Von Helversen, 2003; Peremans et al., 2012; Wotton and Simmons, 2000; Simon et al., 2011; Genzel and Wiegrebe, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "c40a6287-2655-43db-a0c6-49cf915106ee",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C9",
+      "claim": "Low signal-to-noise ratio obscures echo spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "Low signal-to-noise ratio obscures echo spectra (Reijniers et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "13fce188-1813-41bb-aae6-ddf0829d32d9",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C10",
+      "claim": "Sonar has a limited field of view compared to vision.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to vision, sonar has a limited field of view (Surlykke et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "255a7d6a-1c74-49d9-885d-38cb17faeed2",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C11",
+      "claim": "Sonar has a low update rate.",
+      "claim_type": "EXPLICIT",
+      "source": "a low update rate (Kleeman and Kuc, 2008; Peremans et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8218f063-81eb-4d8c-b5e3-60cf43f5e577",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C12",
+      "claim": "Sonar has a limited range.",
+      "claim_type": "EXPLICIT",
+      "source": "a limited range (Stilz and Schnitzler, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8cdd4278-da78-49ce-8366-caeb91b4907a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C13",
+      "claim": "Wiegrebe and Schmidt (1996) observed a temporal integration constant of about 200 \u03bcs in Megaderma lyra.",
+      "claim_type": "EXPLICIT",
+      "source": "In a psychophysical experiment, Wiegrebe and Schmidt (1996) observed a temporal integration constant of about 200 \u03bcs in Megaderma lyra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific experimental study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "cc88226a-a777-4f08-a2c1-6bd18fef90f8",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C14",
+      "claim": "Simmons and colleagues derived an integration constant of about 200\u2013400 \u03bcs for the bat Eptesicus fuscus.",
+      "claim_type": "EXPLICIT",
+      "source": "Simmons and colleagues (Simmons et al., 1989) derived an integration constant of about 200\u2013400 \u03bcs for the bat Eptesicus fuscus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8daf6e9b-2407-4e77-8709-f2903f7c9e4a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C15",
+      "claim": "Echoes from objects separated in time by less than the response time of the auditory filters will be integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Echoes from objects separated in time by less than the response time of the auditory filters will be integrated (Simmons et al., 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "2ee25519-31ec-46cb-9a56-c0bb3d146bb7",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C16",
+      "claim": "At a distance of 7.8 meters, an echolocation system with a beamwidth of 45 degrees integrates echoes originating from a volume of over 1 m\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at a distance of 7.8 meters, an echolocation system with a beamwidth of 45 degrees is estimated to integrate the echoes originating from a volume of over 1 m3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from the integration volume model shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "69b94ee9-4f6c-4035-be07-b31d799214ff",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C17",
+      "claim": "At 7.8 meters distance, a system with a functional beamwidth of 60 degrees integrates echoes from a volume of about 2 m\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same distance, a system with a functional beamwidth of 60 degrees integrates echoes from a volume of about 2 m3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from the integration volume model shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "89cd5990-8bba-468a-ab30-322ccd72c760",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C18",
+      "claim": "Non-simultaneous masking effects have been found to extend for substantially longer intervals than the integration time in both bats and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, non-simultaneous masking effects have been found to extend for substantially longer intervals than the integration time (both in bats and humans [Moore, 2012])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "e272c07f-ea0a-4a34-b30a-e8e6aeeb8a9f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C19",
+      "claim": "Geberl (2013) found non-simultaneous masking in Phyllostomus discolor for temporal separation between echoes up to 6 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Geberl (2013) found non-simultaneous masking in Phyllostomus discolor for temporal separation between echoes up to 6 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "d617f2bb-18ec-4c69-9a1c-a0de54b5b31a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C20",
+      "claim": "Grunwald et al. (2004) reported that bats can discriminate between echoes with different impulse response statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Grunwald et al. (2004) reported that bats can discriminate between echoes with different impulse response statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "6cf7c03c-4666-436c-aca7-81caef03d69d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C21",
+      "claim": "The auditory periphery of the bat retains sufficient information to allow responding to the stochastic properties of the underlying impulse responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the auditory periphery of the bat retains sufficient information to allow responding to the stochastic properties of the underlying impulse responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Grunwald et al. (2004) findings",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a6a791e6-6446-49ba-b68b-5d7b2dcd53a4",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C22",
+      "claim": "Bats can discriminate between echoes with different impulse response statistics does not necessarily imply that bats can reconstruct the impulse response from the echoes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this does not necessarily imply that bats can reconstruct the impulse response from the echoes, which is required to be able to reconstruct the 3D layout of a scene from the echoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the limitations of the evidence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "b54f1e44-afb5-4dfa-bc58-b6a16b7c115e",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C23",
+      "claim": "Kuc (1997) showed a bio-mimetic sonar device to be capable of detecting which side of a coin was up using very simple echo templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Kuc (1997) showed a bio-mimetic sonar device to be capable of detecting which side of a coin was up using very simple echo templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "64bfbe9e-6aa9-49a9-8b78-15425ebb34dd",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C24",
+      "claim": "Sonar based templates have been used to recognize places in robotic navigation algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Their computational simplicity and discriminative power have led sonar based templates being used to recognize places in robotic navigation algorithms before, e.g. (Mataric and Brooks, 1990; Steckel and Peremans, 2013; Kuipers, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to robotic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7c1b679d-1492-434a-bd93-449321ef26e6",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C25",
+      "claim": "A custom ensonification device consisting of 31 Knowles FG series microphones and a Senscomp Series 7000 ultrasonic speaker was used.",
+      "claim_type": "EXPLICIT",
+      "source": "A custom ensonification device consisting of 31 Knowles FG series microphones (Steckel and Peremans, 2012) and a Senscomp (http://www.senscomp.com/ultrasonic-sensors/series-7000-sensors.php) Series 7000 ultrasonic speaker was used (see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the experimental apparatus with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "f4a04f08-dbf4-484d-ac65-f9cd33c98f40",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C26",
+      "claim": "The speaker produces about 106 dBspl at 50 kHz and 1 meter distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The speaker produces about 106 d\u2062Bs\u2062p\u2062l at 50 kHz and 1 meter distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specification of the experimental apparatus",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "295edde1-65a6-4332-b60a-23deff4ef402",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C27",
+      "claim": "The device was mounted on a pan tilt system allowing rotation from \u2212150 to 150 degrees in azimuth and from \u221225 to 40 degrees in elevation.",
+      "claim_type": "EXPLICIT",
+      "source": "The device was mounted on a pan tilt system (PTU-E46, FLIR, Goleta, CA) allowing us to rotate the device from \u2212150 to 150 degrees in azimuth and from \u221225 to 40 degrees in elevation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental apparatus",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8728b3e7-c135-4cec-a8e7-ee72cd9596da",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C28",
+      "claim": "The pan tilt system moved the ensonification device through the full extent of its mechanical range in 31 steps of 10 degrees in azimuth and 7 steps of 10.8 degrees in elevation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pan tilt system moved the ensonification device through the full extent of its mechanical range in 31 steps of 10 degrees in azimuth and 7 steps of 10.8 degrees in elevation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "f59542fe-e66c-4dbb-abc2-d82f263a0a3f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C29",
+      "claim": "The positional error of the pan tilt system is less than 0.1 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional error of the pan tilt system is less than 0.1 degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specification of the experimental apparatus",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "13df9e65-c220-42f6-a9b5-8347ca92aaa5",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C30",
+      "claim": "A hyperbolic frequency modulated pulse sweeping from 100 to 40 kHz in 1 ms was emitted.",
+      "claim_type": "EXPLICIT",
+      "source": "A hyperbolic frequency modulated pulse sweeping from 100 to 40 kHz in 1 ms was emitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "ac1463c9-4dee-4d14-ab95-0e08bd53325d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C31",
+      "claim": "The recording of the echoes was started at the onset of the emission and ends 34 ms later.",
+      "claim_type": "EXPLICIT",
+      "source": "The recording of the echoes was started at the onset of the emission and ends 34 ms later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "45d639c5-1cc6-46fd-93aa-b353fe0901a0",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C32",
+      "claim": "The sampling rate was 219 kSamples/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The sampling rate was 219 kSamples/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "c5a9b87d-c523-4ea5-8cf4-4c55930a13e6",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C33",
+      "claim": "Data was collected at three different sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was collected at three different sites (see Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the experimental design with reference to Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "3a378206-0d3c-454c-9637-4d2a127cb203",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C34",
+      "claim": "Twelve positions in St. Andrews Park (Bristol, UK) were selected for ensonification.",
+      "claim_type": "EXPLICIT",
+      "source": "First, twelve positions in St. Andrews Park (Bristol, UK, 51:27:15.772N, 2:36:52.996W) were selected for ensonification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "75bef1ab-bd8d-4e58-82ce-e59fef64b85f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C35",
+      "claim": "Four open, four semi-cluttered and four cluttered locations were selected at St. Andrews Park.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure the data represented different densities of clutter bats might operate in, four open, four semi-cluttered and four cluttered locations were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1f6c34ac-0670-450f-9bd2-283f01ae272c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C36",
+      "claim": "The data collected at St. Andrews Park consisted of 7812 echo trains at each of the 31 microphones.",
+      "claim_type": "EXPLICIT",
+      "source": "The data collected at St. Andrews Park consisted of 7812 (12 positions \u00d7 217 directions \u00d7 3 repeats) echo trains at each of the 31 microphones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the data collected",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4d9deeaa-e07d-4d78-a51b-b2012ad258ba",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C37",
+      "claim": "Data was collected in a park in Midreshet Ben Gurion, Israel at 50 positions along a straight line spaced 20 cm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, data was collected in a park in Midreshet Ben Gurion, Israel (30:50:53.318N, 34:46:54.174E). At this site, bats use an artificial corridor lined with boulders as part of their commuting route. In this corridor, the ensonification device was placed at 50 positions along a straight line spaced 20 cm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "da92be02-6236-4145-9227-22f87894379d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C38",
+      "claim": "The Israel site data consisted of 32,550 echo trains at each of the 31 microphones.",
+      "claim_type": "EXPLICIT",
+      "source": "At each of the 50 positions, three measurements for each of the 217 directions were collected yielding 32,550 echo trains (50 positions \u00d7 217 directions \u00d7 3 repeats) at each of the 31 microphones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the data collected",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7b74db1d-f82e-4411-9813-81f615b1ab7c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C39",
+      "claim": "Data was collected at Royal Fort Gardens (Bristol, UK) at 40 positions spaced 25 cm apart along a 10 meter line.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, data was collected at Royal Fort Gardens (Bristol, UK, 51:27:26.417N, 2:36:4.619W). At this third site, 40 positions spaced 25 cm apart along a 10 meter line were sampled yielding 26,040 echo trains (40 positions \u00d7 217 directions \u00d7 3 repeats) at each of the 31 microphones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "78242ca1-7859-451e-81fb-712f16efd576",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C40",
+      "claim": "In total, 66,402 echo trains for each of the 31 microphones were used in this paper, resulting in a data set consisting of a total of 2,058,462 echo trains.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 66,402 echo trains for each of the 31 microphones were used in this paper, resulting in a data set consisting of a total of 2,058,462 echo trains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the total data collected",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "2d06827e-afe7-456e-b1f4-607ed560a5ee",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C41",
+      "claim": "All echo trains were individually filtered using a model of the bats' auditory periphery similar to the one proposed by Wiegrebe (2008).",
+      "claim_type": "EXPLICIT",
+      "source": "All 2,058,462 echo trains (217 directions \u00d7 3 repeats \u00d7 31 microphones \u00d7 102 positions) were individually filtered using a model of the bats' auditory periphery similar to the one proposed by Wiegrebe (2008) to simulate the peripheral hearing system of the bat Phyllostomus discolor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the data processing method",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a6758165-b790-4dd4-9608-68b0a3fbfd45",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C42",
+      "claim": "The model consists of a Gammatone filterbank with central frequencies ranging from 30 kHz to 100 kHz in steps of 5 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the model consists of a Gammatone filterbank with central frequencies ranging from 30 kHz to 100 kHz in steps of 5 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the auditory model used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "5f747e9b-326e-472a-8328-39c6140b9f76",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C43",
+      "claim": "The resulting virtual beamwidth of the ensonification device has a 3 dB opening angle of 20 degrees at 55 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the theoretical beam directionality of the Senscomp ultrasonic emitter, we estimated the resulting beamwidth employed in this paper to have a 3 dB opening angle of 20 degrees at 55 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the theoretical beam directionality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "186fa933-968b-4406-87e4-8cd28807891d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C45",
+      "claim": "For the Open environments, the probability of correct classification was very low (i.e. Pc\u223c0).",
+      "claim_type": "EXPLICIT",
+      "source": "For the Open environments, the probability of correct classification was very low (i.e. Pc\u223c0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "cff6672a-062c-4872-9d31-c21f5a7e46eb",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C46",
+      "claim": "For the Semi cluttered and the Cluttered environments the number of templates that could be recognized with a high probability increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the Semi cluttered and the Cluttered environments the number of templates that could be recognized with a high probability increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "9df188b0-154a-43e6-8784-01a1a3a826e5",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C47",
+      "claim": "Angular catchment areas up to about 90 degrees (Semi 3) and 150 degrees (Cluttered 2) were found.",
+      "claim_type": "EXPLICIT",
+      "source": "However, angular catchment areas up to about 90 degrees (Semi 3) and 150 degrees (Cluttered 2) were found.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "b00cf472-30f7-4df1-b89b-0706202fe174",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C48",
+      "claim": "In the Israel data, across all positions and directions, the catchment distances ranged up to 6.6 meter.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Israel data, across all positions and directions, the catchment distances rangedup to 6.6 meter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from the Israel dataset analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "11631970-193d-4f14-8e97-abff740cb9cc",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C49",
+      "claim": "In the Royal Fort Gardens data set, catchment distances up to 2.5 meter were found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Royal Fort Gardens data set, we found catchment distances up to 2.5 meter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from the Royal Fort Gardens dataset analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "9b1457a2-0436-489e-bd6b-8b83d90ad964",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C50",
+      "claim": "Across both data sets the average catchment distance was 0.89 meter (sd: 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "Across both data sets the average catchment distance was 0.89 meter (sd: 0.61), see Figure 10a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical summary of results shown in Figure 10a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7f17f977-d8e2-4d82-9acd-a7b8b197ea09",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C51",
+      "claim": "The linear catchment distances for the Israel data were larger than for the Royal Fort Gardens data.",
+      "claim_type": "EXPLICIT",
+      "source": "A Wilcoxon rank sum test confirmed that the linear catchment distances for the Israel data were larger than for the Royal Fort Gardens data (Z=52.3,p\u226a0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4aa7b30f-9a27-44f6-ac37-c338307383db",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C52",
+      "claim": "The average probabilities of correct classification were 0.82 (sd: 0.21) and 0.99 (sd: 0.03) for the Israel and Royal Fort Gardens data sets, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The average probabilities P\u00afc were 0.82 (sd: 0.21) and 0.99 (sd: 0.03) for the Israel and Royal Fort Gardens data sets, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical summary of results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "cad49833-29b9-4e21-bea4-7ae4bfac3466",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C53",
+      "claim": "The templates in the Royal fort gardens were easier to classify correctly than those in the Israel dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "A Wilcoxon rank sum test confirmed that the templates in the Royal fort gardens were easier to classify correctly. (Z=-95.2,p\u226a0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "02af14cf-0038-4f6e-8ba9-7f41e6f398d8",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C55",
+      "claim": "The templates can be reliably classified, even using a system with a dynamic range smaller than a bat's.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the templates, as constructed in the paper, can be reliably classified, even using a system with a dynamic range smaller than a bat's (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from the classification results shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a315aac2-f381-45fb-b9fd-b7abf1cdd3b4",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C59",
+      "claim": "Templates collected in Open habitats could not be classified due to lacking systematic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, lacking systematic variation, templates collected in Open habitats could not be classified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the classification results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "588fecbe-13d0-4835-b243-498e181d9a4b",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C60",
+      "claim": "The templates could be correctly classified, even though they did not preserve spectral information.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to stress that the templates could be correctly classified, even though they did not preserve spectral information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the results and the template construction method",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "e6cf42b9-6bed-43d6-8307-b067503e6a2c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C61",
+      "claim": "Navigation by templates as proposed here does not depend heavily on call design.",
+      "claim_type": "EXPLICIT",
+      "source": "First, navigation by templates as proposed here does not depend heavily on call design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the finding that templates work without spectral information",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "5e20d70f-be07-41d4-b17b-2603d856b24c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C62",
+      "claim": "Template based navigation should also be feasible for bats using narrowband calls.",
+      "claim_type": "EXPLICIT",
+      "source": "A second implication is that template based navigation should also be feasible for bats using narrowband calls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the finding that templates work without spectral information",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "6a0d5809-973d-4392-8d85-be060d96f98c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C63",
+      "claim": "Zeil et al. found that linear catchment distances do not exceed 1 m in outdoor environments for insects using vision based homing.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeil et al. (Zeil et al., 2003; St\u00fcrzl and Zeil, 2007) collected large sets of panoramic images spaced 10 cm apart in outdoor environments. They calculated the dissimilarity between images as a function of the spacing. They found that linear catchment distances do not exceed 1 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4ea7c2e3-4271-45a5-8600-2236019e6096",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C64",
+      "claim": "Steckel and Peremans (2013) found that displacing a robot by about 14 cm or 20 degrees resulted in leaving the current template's catchment area.",
+      "claim_type": "EXPLICIT",
+      "source": "These authors collected sonar based templates in an office environment by driving around a robot equipped with a biomimetic sonar system. They found that displacing the robot by about 14 cm or 20 degrees resulted in leaving the current template's catchment area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a1b8f6c4-e791-4c37-895f-4cebe2405ad5",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C65",
+      "claim": "Successful navigation seems to be possible with catchment areas that are smaller than those found in this paper.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these small catchment areas, they successfully derived a map of the office using the templates. Hence, successful navigation seems to be possible with catchment areas that are smaller than those found in this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the Steckel and Peremans (2013) results",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "38676bf5-a584-4bf3-8423-08e3d7e68e04",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C66",
+      "claim": "Seibert et al. (2013) reported a maximum flight speed of about 6 m/s for commuting Pipistrellus pipistrellus across several field conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Seibert et al. (2013) reported a maximum flight speed of about 6 m/s for commuting Pipistrellus pipistrellus across several field conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "afe1249b-2d08-48ef-9acd-9ebc47998076",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C67",
+      "claim": "Commuting Pipistrellus pipistrellus maintained pulse rates higher than 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The bats maintained pulse rates higher than 10 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seibert et al. (2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "b1d7ce3c-7899-4dd7-8171-f3e8d3f4224d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C68",
+      "claim": "Pulse rates higher than 10 Hz seem to be the trend across bat species.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, pulse rates higher than 10 Hz seem to be the trend across bat species (Siemers et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "ebe64963-ed4b-40b0-9760-100beb8696f4",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C69",
+      "claim": "Flight speeds above 10 ms\u207b\u00b9 are rare in bats.",
+      "claim_type": "EXPLICIT",
+      "source": "while flight speeds above 10 ms\u22121 are rare (Holderied, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "e5052d8e-0609-460c-bcf2-486e6b3f5356",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C70",
+      "claim": "A pulse rate of 10 Hz and a flight speed of 10 m/s results in sampling the environment at 1 m intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Even a (low) pulse rate of 10 Hz and a (high) flight speed of 10 m/s results in sampling the environment at 1 m intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the pulse rate and flight speed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4559145c-f8f5-411b-8179-454362b35853",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C71",
+      "claim": "About 64% of templates had a catchment diameter larger than 1 m.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, a substantial portion of templates (about 64%, Figure 10b) had a catchment diameter larger than 1 m .",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result shown in Figure 10b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "755f1320-af52-47f8-b9e5-e2161ea3e971",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C72",
+      "claim": "Catchment diameters are on average 1.77 m wide (i.e., 2 \u00d7 0.89 m).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the diameter of a catchment area is twice the catchment distance. Therefore, in our data catchment diameters are on average 1.77 m wide (i.e., 2 \u00d7 0.89 m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the average catchment distance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "9a6059c9-e5d2-4695-bb20-6e3be5bb8006",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C73",
+      "claim": "Holderied (2001) showed that commuting bats adapt the curvature of their flight path in function of the current flight speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Holderied (2001) showed that commuting bats adapt the curvature of their flight path in function of the current flight speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "af24c661-431a-477f-bbcc-a416e075de4b",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C74",
+      "claim": "Even at 5 ms\u207b\u00b9, commuting bats restrict their angular velocity to about 280 deg/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at 5 ms, he found bats to restrict their angular velocity to about 280 deg/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Holderied (2001)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "bddced19-dac4-4fcd-9f22-4ad75b184d25",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C75",
+      "claim": "At a call rate of 10 Hz and angular velocity of 280 deg/s, this implies a change in direction of about 28 degrees per call.",
+      "claim_type": "EXPLICIT",
+      "source": "At a call rate of 10 Hz, this implies a change in direction of about 28 degrees per call.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the angular velocity and call rate",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8ea2f7dd-8107-4bf1-b9e8-0cd55102c930",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C76",
+      "claim": "The template continuity observed in the current data sets is a consequence of both the beam width and the temporal integration in the model of the auditory periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "The template continuity observed in the current data sets is a consequence of both the beam width and the temporal integration in the model of the auditory periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the analysis of the results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "40a35489-c718-424b-bd17-fdd795750cde",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C77",
+      "claim": "Wider beams and longer temporal integration result in templates that vary more smoothly with orientation and position in space.",
+      "claim_type": "EXPLICIT",
+      "source": "Wider beams and longer temporal integration result in templates that vary more smoothly with orientation and position in space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the integration volume concept",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "114b33eb-2a24-420c-a750-f80643bf5360",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C78",
+      "claim": "The finding that different bat species actively control their emission beams to converge on nearly the same field of view could indicate that bats perform an optimal spatial smoothing while navigating the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the finding that different bat species actively control their emission beams to converge on nearly the same field of view (Jakobsen et al., 2013) could indicate that bats perform an optimal spatial smoothing while navigating the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of cited findings",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "29387a5e-4e72-4371-85ca-425438cfc70f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C79",
+      "claim": "The Royal Fort Gardens data set resulted in significantly smaller linear catchment distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The Royal Fort Gardens data set resulted in significantly smaller linear catchment distances (Figures 8,9,11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results shown in Figures 8, 9, and 11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7369b0ba-f634-4d86-9309-75e2e72d6af3",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C80",
+      "claim": "The average probability of correct classification was significantly higher in the Royal Fort Gardens data set.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the average probability of correct classification was significantly higher in the Royal Fort Gardens data set (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results shown in Figure 11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1d3b466c-185b-4b3b-b279-558d210314b3",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C81",
+      "claim": "Navigation by means of templates is facilitated by (strong) echoes originating from distant reflectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger linear catchment distances for the Israel data suggests that navigation by means of templates is facilitated by (strong) echoes originating from distant reflectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the comparison of the two datasets",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "f719c2be-40a7-490d-a57f-40e0a97dbd51",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C82",
+      "claim": "Higher motion parallax for closer reflectors results in a better template classification.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the Royal Fort Gardens data suggest that the higher motion parallax for closer reflectors results in a better template classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the comparison of the two datasets",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1071b93e-f770-4d5e-83a0-0f14c005d2cc",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C83",
+      "claim": "Our data reveals a trade-off between the linear catchment distance size and the probability of correct classification of a template.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, our data reveals a trade-off between the linear catchment distance size and the probability of correct classification of a template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the comparison of the two datasets",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "0d66f689-3df6-47a5-a590-2ca2188cb9ef",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C84",
+      "claim": "Our template theory of navigation predicts navigation would be facilitated by keeping a distance from reflectors that balances the opposing effects of motion parallax on the templates' linear catchment distance and probability of correct classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our template theory of navigation predicts navigation would be facilitated by keeping a distance from reflectors that balances the opposing effects of motion parallax on the templates' linear catchment distance and probability of correct classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on the observed trade-off",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "f5cfaa2f-5a24-4102-be98-e71074be6944",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C85",
+      "claim": "It is likely that bats use some sort of cognitive map.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst successful navigation does not require a map-like representation, e.g. (Cruse and Wehner, 2011; Cheung et al., 2014; Hesslow, 2012; Collett et al., 2013), it is likely that bats use some sort of cognitive map (Geva-Sagiv et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7d59c0f1-8378-49b9-8305-3cf36e9d3748",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C86",
+      "claim": "To the best of our knowledge, the use of a cognitive map has not been demonstrated experimentally in bats.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to the best of our knowledge, the use of such a map has not been demonstrated experimentally (Holland, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published review",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "599f0779-cad8-4e07-bf29-e68200bf04bc",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C87",
+      "claim": "Grid and place cells have been found in bats.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, indirect evidence for the existence of a cognitive map, integrating echolocation information if available, is the finding of grid and place cells in bats (Yartsev et al., 2011; Yartsev and Ulanovsky, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "5568241e-8605-4063-86d6-87d35f2e479e",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C88",
+      "claim": "Bats have the ability to remember flight routes in a completely dark room.",
+      "claim_type": "EXPLICIT",
+      "source": "and bats' ability to remember flight routes in a completely dark room (Barchi et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "c94a1d0b-4320-4df1-81db-f328a60aa560",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C89",
+      "claim": "Vanderelst et al. (2015) proposed an algorithm for obstacle avoidance in bats that relies on comparing the loudness of the onset of the echoes at the left and right ear and turning away from the side receiving the loudest echo.",
+      "claim_type": "EXPLICIT",
+      "source": "Vanderelst et al. (2015) proposed an algorithm for obstacle avoidance in bats that relies on a very simple, yet robust, mechanism comparing the loudness of the onset of the echoes at the left and right ear and turning away from the side receiving the loudest echo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "b2dfaa9c-2f73-424f-b0bf-e1def9558348",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C90",
+      "claim": "The simple obstacle avoidance algorithm is able to steer the bat away from obstacles in both planar and true 3D environments.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by the simulation results presented by Vanderelst et al. (2015), this simple obstacle avoidance algorithm is able to steer the bat away from obstacles in both planar and true 3D environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "41f6db92-6bf5-4298-b831-e28838c05b28",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C91",
+      "claim": "Steckel and Peremans (2013) proposed the BatSLAM algorithm to integrate odometry and templates into a semi-metric map of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Steckel and Peremans (2013) proposed the BatSLAM algorithm to integrate odometry, also called path integration, and templates into a semi-metric map of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a667a557-a3b7-4495-af54-84ce3db29507",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C92",
+      "claim": "BatSLAM is a bio-inspired sonar navigation algorithm, derived from RatSLAM, mirroring the basic functionality of the mammalian hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "BatSLAM is a bio-inspired sonar navigation algorithm, derived from RatSLAM (Milford et al., 2004), mirroring the basic functionality of the mammalian hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a2ca5759-a6d6-4571-94f0-8739bf68dece",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C93",
+      "claim": "The use of landmarks might be an emergent feature of a mapping strategy recognizing locations using templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we propose that the use of landmarks might be an emergent feature of a mapping strategy recognizing locations using templates (Wystrach et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal based on the analysis",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "f3ac9779-2996-43f2-9f6c-a94ad57abab3",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C94",
+      "claim": "To the best of our knowledge, no work has been done on how bats select, initiate and execute appropriate sensor-motor loops to use the map to navigate to desired locations.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, no work has been done on how bats select, initiate and execute appropriate sensor-motor loops to use the map to navigate to desired locations (i.e. step 3 in the challenges listed above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "59c08453-8598-4369-bded-a0ee7b86202d",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C95",
+      "claim": "In recognition experiments, bats typically ensonify the same object from different directions as part of an active object-centred exploration process.",
+      "claim_type": "EXPLICIT",
+      "source": "In recognition experiments, bats typically ensonify the same object from different directions as part of an active object-centred exploration process, e.g. (Genzel et al., 2012; Geipel et al., 2013; Simon et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "47a4a530-cdd2-44c5-8ca2-17987da20686",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C96",
+      "claim": "Cruising/navigating bats fly by objects along their flight path resulting in a more accidental, i.e. less object-centred, and less extensive series of observations of those objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Cruising/navigating bats, on the other hand, fly by objects along their flight path resulting in a more accidental, i.e. less object-centred, and less extensive series of observations of those objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from knowledge about bat behavior",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8ff6639f-81c4-4d75-a40b-491027158ef8",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "claim_id": "C97",
+      "claim": "Even in the object recognition experiments bats might not be building a 3D reconstruction of the object but instead be looking for diagnostic acoustic cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we would like to argue that even in the object recognition experiments bats might not be building a 3D reconstruction of the object. They might instead be looking for diagnostic acoustic cues, e.g. spectral cues as hypothesized in the study by Simon et al. (2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of cited study",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6fcd0825-3151-44f7-abc1-d8c58450d22a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bats have excellent spatial memory and can navigate using echolocation, though the mechanisms for echolocation-based place recognition are largely unknown. While long-distance navigation relies primarily on vision, bats can return to roosts using echolocation alone over shorter distances (<15 km).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the background context through citations to published literature. The claims about bat navigation capabilities (C1-C5) and the knowledge gap regarding echolocation-based place recognition (C7) are well-supported by appropriate citations and provide the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Biosonar has inherent limitations that make 3D scene reconstruction challenging: low signal-to-noise ratio, limited field of view, low update rate, limited range, and finite temporal integration (200-400 \u03bcs). At distances of 7.8 m, integration volumes exceed 1-2 m\u00b3 depending on beamwidth, meaning echoes from multiple objects are integrated together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C22 establish the theoretical limitations of biosonar through citations and calculations. The integration volume calculations (C16-C17) are mathematically derived from the temporal integration constants reported in the literature (C13-C14). The logic connecting temporal integration to spatial resolution limitations is sound and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "6636ab02-cabf-4f5a-b94a-aaba07c57dcc",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Template-based approaches using sonar have been successfully demonstrated in robotics, showing that simple echo templates can discriminate objects and support place recognition in navigation algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 establish precedent for template-based sonar navigation through citations to robotic studies. These provide the conceptual foundation for applying template-based approaches to bat navigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1d0d5ed4-2d80-462a-972d-922038f75f1f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A custom ensonification device with 31 microphones and an ultrasonic speaker was used to collect 2,058,462 echo trains across three field sites (St. Andrews Park with 12 positions in varying clutter levels, Israel with 50 positions along a corridor, and Royal Fort Gardens with 40 positions), sampling 217 azimuth/elevation directions at each position with 3 repeats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C40 provide detailed methodological descriptions of the experimental apparatus and data collection. The specifications are precise and internally consistent (e.g., the total echo train count calculation is verifiable: 102 positions \u00d7 217 directions \u00d7 3 repeats \u00d7 31 microphones = 2,058,462). The experimental design is well-documented with appropriate technical details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "56956941-2a5c-490c-aec0-9292bac02aa6",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Echo trains were processed using a biologically-inspired auditory periphery model (Gammatone filterbank, 30-100 kHz) to create templates. The virtual beamwidth of the device was 20\u00b0 at 55 kHz, comparable to bat beamwidths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 describe the template construction methodology. The auditory model is appropriately cited (C41) and the beamwidth calculation (C43) is based on theoretical considerations. The comparison to bat beamwidths (Figure 4) validates the biological plausibility of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a1fbd52e-c843-415f-aa8d-edc85338a69c",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Templates from cluttered and semi-cluttered environments could be reliably classified with high probability, while templates from open environments showed very low classification probability (~0). This demonstrates that templates can support place recognition in environments with sufficient acoustic structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C55, and C59 present the core classification results from the St. Andrews dataset (Figure 6). The finding that open environments lack classifiable templates is logically consistent with the absence of diagnostic echoes. The results are presented with appropriate statistical analysis (Monte Carlo estimation of classification probability) and the conclusion (C55) is appropriately qualified by noting the system has lower dynamic range than bats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "eba87ae0-f749-41d8-b315-2c767fa6243a",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Angular catchment areas (the angular range over which template dissimilarity increases monotonically) extended up to 90\u00b0 in semi-cluttered and 150\u00b0 in cluttered environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 reports angular catchment distances from the St. Andrews data (Figure 7). The methodology for determining catchment areas (monotonic increase in dissimilarity) is clearly defined and the results are directly shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1073aca6-c800-4cbf-86e4-94e832035db1",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Linear catchment distances (spatial range over which templates vary continuously) averaged 0.89 m (sd: 0.61) across both linear transect datasets, with maximum distances of 6.6 m (Israel) and 2.5 m (Royal Fort Gardens). About 64% of templates had catchment diameters >1 m, with an average diameter of 1.77 m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 and C71-C72 report linear catchment distances from the Israel and Royal Fort Gardens datasets (Figures 8-10). The statistical analysis includes appropriate tests (Wilcoxon rank sum, C51) and the calculations are internally consistent (diameter = 2 \u00d7 distance, C72). The results are well-documented with clear figures showing the analysis process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "4515e8df-ff6f-4b0d-98ee-1fa213379bb7",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Classification probabilities were high for both linear transect datasets (Israel: 0.82\u00b10.21; Royal Fort Gardens: 0.99\u00b10.03), with Royal Fort Gardens templates being significantly easier to classify correctly (Wilcoxon test, Z=-95.2, p<<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 report classification performance for the linear transect datasets with appropriate statistical testing. The results are consistent with the data shown in Figure 11 and the statistical test is appropriate for comparing the two distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "7cd35957-58ed-4688-b41b-de1ecffb8843",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Templates could be correctly classified despite not preserving spectral information, implying that template-based navigation does not depend heavily on call design and should be feasible for bats using narrowband calls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 draw important conclusions from the template construction method (averaging across frequencies) and classification results. The logic is sound: if templates work without spectral information, then the approach is robust to call design variations. However, this remains an inference that would benefit from direct experimental validation with different call types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "8f06058f-633d-49bf-ab5b-addd9f0875aa",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The catchment areas found in this study are comparable to or larger than those reported for vision-based homing in insects (\u22641 m) and sonar-based robotic navigation (14 cm or 20\u00b0), suggesting they are sufficient for functional navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 contextualize the results by comparison to other systems. The comparisons are appropriately cited and the inference (C65) that the observed catchment areas are functionally sufficient is reasonable given the successful navigation demonstrated in the cited robotic study with smaller catchment areas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Bat echolocation behavior (pulse rates >10 Hz, flight speeds typically <10 m/s, angular velocities ~280 deg/s at 5 m/s) results in spatial and angular sampling rates that are compatible with the observed template catchment areas. At 10 Hz and 10 m/s, bats sample at 1 m intervals, and 64% of templates have catchment diameters >1 m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C75 integrate behavioral data from the literature with the experimental results to argue for functional relevance. The calculations (C70, C75) are straightforward and correct. The comparison between bat sampling rates and template catchment areas (C71-C72) provides strong support that the templates could function as navigational signposts. The logic is sound and well-supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "1e1bcc76-19f2-4a58-b867-4dcf3f33c98f",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Template continuity is determined by beamwidth and temporal integration, with wider beams and longer integration producing smoother spatial variation. The convergence of bat species on similar emission beamwidths may reflect optimization of spatial smoothing for navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 present reasonable inferences about the factors controlling template continuity, consistent with the integration volume concept. However, C78 is explicitly speculative (\"could indicate\") and represents an interesting hypothesis rather than a demonstrated result. The claim would require experimental manipulation of beamwidth and integration time to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A trade-off exists between linear catchment distance and classification probability: the Israel site (distant reflectors) showed larger catchment distances but lower classification probability, while Royal Fort Gardens (closer reflectors) showed smaller catchment distances but higher classification probability. This suggests optimal navigation requires balancing distance to reflectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 identify an important trade-off supported by statistical tests (C51, C53) and correlation analysis (reported in text: \u03c1=-0.32 when pooled). The interpretation linking this to motion parallax effects (C81-C82) is reasonable given the physical differences between sites. The prediction (C84) follows logically from the observed trade-off, though it remains a hypothesis requiring experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "008b8e32-0a50-4a21-b4bf-f76961e38260",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "While cognitive maps in bats have not been experimentally demonstrated, indirect evidence exists from grid/place cells and memory of flight routes in darkness, suggesting bats likely use some form of cognitive map that could integrate echolocation information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 appropriately characterize the state of knowledge regarding cognitive maps in bats, with proper citations. The claims correctly distinguish between likelihood based on indirect evidence (C85, C87-C88) and lack of direct experimental demonstration (C86).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Existing work on bat obstacle avoidance algorithms and robotic SLAM systems (BatSLAM) provides potential mechanisms for how bats could explore environments, build template-based maps, and use landmarks. However, how bats execute planned navigation sequences remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 review relevant prior work on navigation components with appropriate citations. The claims accurately represent the cited work and correctly identify gaps in knowledge (C94). The proposal that landmarks might emerge from template-based mapping (C93) is appropriately marked as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    },
+    {
+      "id": "b861510f-a29b-41c3-ace3-4262f72fc207",
+      "content_id": "5d431361-1011-4ab6-864d-c1ed5c402d38",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Object recognition experiments involve active, object-centered exploration, while cruising bats make more incidental observations. Even in recognition experiments, bats may use diagnostic acoustic cues rather than building 3D reconstructions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 distinguish between different behavioral contexts with appropriate citations (C95). The inference about cruising behavior (C96) is reasonable. Claim C97 is explicitly speculative (\"might not be\") and appropriately qualified, representing a hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:40:33.968944Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "38ab38ba-d746-434d-83f3-607f132edc39",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "a68b8566-2e24-4cb0-abe3-cdad7620e76a",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "0889699b-03f2-47f1-b84b-7cef4f1dd97e",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "42acced5-0615-46f2-b84b-37fc87e8f5ba",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "8f81a755-76d2-4176-843c-6a7c5e6ae601",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "8ed4f313-5693-48a7-ae30-d1b401a0bc20",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "3500ab71-afa8-40b6-9ae7-0775fbe0c649",
+      "result_id": "6fcd0825-3151-44f7-abc1-d8c58450d22a"
+    },
+    {
+      "claim_id": "02f87f77-4cda-467e-b756-163256de5e09",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "c40a6287-2655-43db-a0c6-49cf915106ee",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "13fce188-1813-41bb-aae6-ddf0829d32d9",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "255a7d6a-1c74-49d9-885d-38cb17faeed2",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "8218f063-81eb-4d8c-b5e3-60cf43f5e577",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "8cdd4278-da78-49ce-8366-caeb91b4907a",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "cc88226a-a777-4f08-a2c1-6bd18fef90f8",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "8daf6e9b-2407-4e77-8709-f2903f7c9e4a",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "2ee25519-31ec-46cb-9a56-c0bb3d146bb7",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "69b94ee9-4f6c-4035-be07-b31d799214ff",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "89cd5990-8bba-468a-ab30-322ccd72c760",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "e272c07f-ea0a-4a34-b30a-e8e6aeeb8a9f",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "d617f2bb-18ec-4c69-9a1c-a0de54b5b31a",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "6cf7c03c-4666-436c-aca7-81caef03d69d",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "a6a791e6-6446-49ba-b68b-5d7b2dcd53a4",
+      "result_id": "cfa825ff-5c0f-46ed-beb0-86d990cd7405"
+    },
+    {
+      "claim_id": "b54f1e44-afb5-4dfa-bc58-b6a16b7c115e",
+      "result_id": "6636ab02-cabf-4f5a-b94a-aaba07c57dcc"
+    },
+    {
+      "claim_id": "64bfbe9e-6aa9-49a9-8b78-15425ebb34dd",
+      "result_id": "6636ab02-cabf-4f5a-b94a-aaba07c57dcc"
+    },
+    {
+      "claim_id": "7c1b679d-1492-434a-bd93-449321ef26e6",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "f4a04f08-dbf4-484d-ac65-f9cd33c98f40",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "295edde1-65a6-4332-b60a-23deff4ef402",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "8728b3e7-c135-4cec-a8e7-ee72cd9596da",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "f59542fe-e66c-4dbb-abc2-d82f263a0a3f",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "13df9e65-c220-42f6-a9b5-8347ca92aaa5",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "ac1463c9-4dee-4d14-ab95-0e08bd53325d",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "45d639c5-1cc6-46fd-93aa-b353fe0901a0",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "c5a9b87d-c523-4ea5-8cf4-4c55930a13e6",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "3a378206-0d3c-454c-9637-4d2a127cb203",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "75bef1ab-bd8d-4e58-82ce-e59fef64b85f",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "1f6c34ac-0670-450f-9bd2-283f01ae272c",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "4d9deeaa-e07d-4d78-a51b-b2012ad258ba",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "da92be02-6236-4145-9227-22f87894379d",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "7b74db1d-f82e-4411-9813-81f615b1ab7c",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "78242ca1-7859-451e-81fb-712f16efd576",
+      "result_id": "1d0d5ed4-2d80-462a-972d-922038f75f1f"
+    },
+    {
+      "claim_id": "2d06827e-afe7-456e-b1f4-607ed560a5ee",
+      "result_id": "56956941-2a5c-490c-aec0-9292bac02aa6"
+    },
+    {
+      "claim_id": "a6758165-b790-4dd4-9608-68b0a3fbfd45",
+      "result_id": "56956941-2a5c-490c-aec0-9292bac02aa6"
+    },
+    {
+      "claim_id": "5f747e9b-326e-472a-8328-39c6140b9f76",
+      "result_id": "56956941-2a5c-490c-aec0-9292bac02aa6"
+    },
+    {
+      "claim_id": "186fa933-968b-4406-87e4-8cd28807891d",
+      "result_id": "a1fbd52e-c843-415f-aa8d-edc85338a69c"
+    },
+    {
+      "claim_id": "cff6672a-062c-4872-9d31-c21f5a7e46eb",
+      "result_id": "a1fbd52e-c843-415f-aa8d-edc85338a69c"
+    },
+    {
+      "claim_id": "02af14cf-0038-4f6e-8ba9-7f41e6f398d8",
+      "result_id": "a1fbd52e-c843-415f-aa8d-edc85338a69c"
+    },
+    {
+      "claim_id": "a315aac2-f381-45fb-b9fd-b7abf1cdd3b4",
+      "result_id": "a1fbd52e-c843-415f-aa8d-edc85338a69c"
+    },
+    {
+      "claim_id": "9df188b0-154a-43e6-8784-01a1a3a826e5",
+      "result_id": "eba87ae0-f749-41d8-b315-2c767fa6243a"
+    },
+    {
+      "claim_id": "b00cf472-30f7-4df1-b89b-0706202fe174",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "11631970-193d-4f14-8e97-abff740cb9cc",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "9b1457a2-0436-489e-bd6b-8b83d90ad964",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "7f17f977-d8e2-4d82-9acd-a7b8b197ea09",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "4559145c-f8f5-411b-8179-454362b35853",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "755f1320-af52-47f8-b9e5-e2161ea3e971",
+      "result_id": "1073aca6-c800-4cbf-86e4-94e832035db1"
+    },
+    {
+      "claim_id": "4aa7b30f-9a27-44f6-ac37-c338307383db",
+      "result_id": "4515e8df-ff6f-4b0d-98ee-1fa213379bb7"
+    },
+    {
+      "claim_id": "cad49833-29b9-4e21-bea4-7ae4bfac3466",
+      "result_id": "4515e8df-ff6f-4b0d-98ee-1fa213379bb7"
+    },
+    {
+      "claim_id": "588fecbe-13d0-4835-b243-498e181d9a4b",
+      "result_id": "7cd35957-58ed-4688-b41b-de1ecffb8843"
+    },
+    {
+      "claim_id": "e6cf42b9-6bed-43d6-8307-b067503e6a2c",
+      "result_id": "7cd35957-58ed-4688-b41b-de1ecffb8843"
+    },
+    {
+      "claim_id": "5e20d70f-be07-41d4-b17b-2603d856b24c",
+      "result_id": "7cd35957-58ed-4688-b41b-de1ecffb8843"
+    },
+    {
+      "claim_id": "6a0d5809-973d-4392-8d85-be060d96f98c",
+      "result_id": "8f06058f-633d-49bf-ab5b-addd9f0875aa"
+    },
+    {
+      "claim_id": "4ea7c2e3-4271-45a5-8600-2236019e6096",
+      "result_id": "8f06058f-633d-49bf-ab5b-addd9f0875aa"
+    },
+    {
+      "claim_id": "a1b8f6c4-e791-4c37-895f-4cebe2405ad5",
+      "result_id": "8f06058f-633d-49bf-ab5b-addd9f0875aa"
+    },
+    {
+      "claim_id": "38676bf5-a584-4bf3-8423-08e3d7e68e04",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "afe1249b-2d08-48ef-9acd-9ebc47998076",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "b1d7ce3c-7899-4dd7-8171-f3e8d3f4224d",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "ebe64963-ed4b-40b0-9760-100beb8696f4",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "e5052d8e-0609-460c-bcf2-486e6b3f5356",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "4559145c-f8f5-411b-8179-454362b35853",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "755f1320-af52-47f8-b9e5-e2161ea3e971",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "9a6059c9-e5d2-4695-bb20-6e3be5bb8006",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "af24c661-431a-477f-bbcc-a416e075de4b",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "bddced19-dac4-4fcd-9f22-4ad75b184d25",
+      "result_id": "08617ce7-e7fa-43cc-b41b-4a20a9f97acd"
+    },
+    {
+      "claim_id": "8ea2f7dd-8107-4bf1-b9e8-0cd55102c930",
+      "result_id": "1e1bcc76-19f2-4a58-b867-4dcf3f33c98f"
+    },
+    {
+      "claim_id": "40a35489-c718-424b-bd17-fdd795750cde",
+      "result_id": "1e1bcc76-19f2-4a58-b867-4dcf3f33c98f"
+    },
+    {
+      "claim_id": "114b33eb-2a24-420c-a750-f80643bf5360",
+      "result_id": "1e1bcc76-19f2-4a58-b867-4dcf3f33c98f"
+    },
+    {
+      "claim_id": "29387a5e-4e72-4371-85ca-425438cfc70f",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "7369b0ba-f634-4d86-9309-75e2e72d6af3",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "1d3b466c-185b-4b3b-b279-558d210314b3",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "f719c2be-40a7-490d-a57f-40e0a97dbd51",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "1071b93e-f770-4d5e-83a0-0f14c005d2cc",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "0d66f689-3df6-47a5-a590-2ca2188cb9ef",
+      "result_id": "a006f5ef-1596-4f57-9199-a815e1a4f9bb"
+    },
+    {
+      "claim_id": "f5cfaa2f-5a24-4102-be98-e71074be6944",
+      "result_id": "008b8e32-0a50-4a21-b4bf-f76961e38260"
+    },
+    {
+      "claim_id": "7d59c0f1-8378-49b9-8305-3cf36e9d3748",
+      "result_id": "008b8e32-0a50-4a21-b4bf-f76961e38260"
+    },
+    {
+      "claim_id": "599f0779-cad8-4e07-bf29-e68200bf04bc",
+      "result_id": "008b8e32-0a50-4a21-b4bf-f76961e38260"
+    },
+    {
+      "claim_id": "5568241e-8605-4063-86d6-87d35f2e479e",
+      "result_id": "008b8e32-0a50-4a21-b4bf-f76961e38260"
+    },
+    {
+      "claim_id": "c94a1d0b-4320-4df1-81db-f328a60aa560",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "b2dfaa9c-2f73-424f-b0bf-e1def9558348",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "41f6db92-6bf5-4298-b831-e28838c05b28",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "a667a557-a3b7-4495-af54-84ce3db29507",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "a2ca5759-a6d6-4571-94f0-8739bf68dece",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "f3ac9779-2996-43f2-9f6c-a94ad57abab3",
+      "result_id": "d8d5ba6e-bebf-452b-8c54-9d6fe80af9e9"
+    },
+    {
+      "claim_id": "59c08453-8598-4369-bded-a0ee7b86202d",
+      "result_id": "b861510f-a29b-41c3-ace3-4262f72fc207"
+    },
+    {
+      "claim_id": "47a4a530-cdd2-44c5-8ca2-17987da20686",
+      "result_id": "b861510f-a29b-41c3-ace3-4262f72fc207"
+    },
+    {
+      "claim_id": "8ff6639f-81c4-4d75-a40b-491027158ef8",
+      "result_id": "b861510f-a29b-41c3-ace3-4262f72fc207"
+    }
+  ],
+  "comparisons": []
+}

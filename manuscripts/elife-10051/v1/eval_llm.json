@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on SWI/SNF-family remodelers: These enzymes regulate chromatin structure by coupling ATP hydrolysis to nucleosome repositioning and restructuring. They can reposition octamers, eject H2A-H2B dimers, and eject entire octamers. The catalytic subunit contains an SF2 ATPase domain that contacts nucleosomes at the SHL2 site and translocates DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 establish well-documented background knowledge about SWI/SNF remodelers, all supported by appropriate citations to prior literature. These provide essential context for interpreting the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C24",
+      "C30"
+    ],
+    "result": "Prior work on DNA translocation step sizes: The isolated catalytic subunit of SWI/SNF translocates naked DNA in ~2 bp steps, but holoenzyme complexes were reported to move DNA in ~50 bp steps. Related ISWI-family remodelers move DNA in multi-bp compound steps composed of 1-bp fundamental steps. RSC cannot translocate past 2-nt ssDNA gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C21, C24, and C30 accurately summarize prior literature with appropriate citations. These establish the knowledge gap that motivated the current study: whether SWI/SNF remodelers use small or large fundamental step sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-molecule FRET assay development and validation: Mononucleosomes were reconstituted on 601 positioning sequence DNA with FRET dyes on the octamer and DNA. Upon RSC and ATP addition, two classes of traces were observed: exit-side movement (monotonic FRET decrease to zero) and entry-side movement (initial FRET increase then decrease to ~0.17). Roughly equal numbers of each trace type were observed, independent of 601 sequence orientation. Surface attachment did not substantially affect remodeling kinetics compared to ensemble measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C22-C23, C25-C29 describe the experimental design and initial observations with appropriate controls (no ATP, ensemble comparison, sequence orientation). The data in Figures 1B-D and supplements support bidirectional remodeling and validate the surface-based assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Validation of entry-side and exit-side movement assignments using ssDNA gaps: Placing a 2-nt gap at SHL-2 eliminated entry-side traces (>95% exit-side), showing only zero FRET products. Placing a gap at SHL+2 eliminated exit-side traces (>95% entry-side), showing FRET ~0.14 products. These results confirm that entry-side movement results from ATPase action at SHL-2 and exit-side from action at SHL+2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 describe elegant control experiments using the known inability of RSC to translocate past ssDNA gaps (C30). The data in Figures 1E-G and supplements strongly support the directional assignments, with >95% specificity in both cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "H2A-H2B dimer stability during remodeling assessed with H3-labeled nucleosomes: >90% of nucleosomes retained H2A after 20 min remodeling. H3-labeled nucleosomes showed similar FRET dynamics to H2A-labeled nucleosomes, with both exit-side and entry-side movement traces. Gap controls confirmed directional assignments. The similarity of FRET changes suggests they are not specific to H2A-H2B dimer dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by data in Figure 2A-D showing that moving the FRET donor from H2A to H3 produces similar remodeling traces. This argues against major H2A-H2B dimer displacement, though the authors appropriately note that smaller movements cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "H2A/H2A construct shows minimal FRET change during remodeling: Addition of RSC and ATP to nucleosomes with Cy3 and Cy5 on the two H2A subunits resulted in only a small FRET decrease (\u0394FRET ~0.1), partially recapitulated by RSC binding without ATP. This apparent FRET change was due almost entirely to increased Cy3 fluorescence without corresponding Cy5 decrease, suggesting a photophysical artifact rather than true distance change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by data in Figure 2E-F and supplements. The analysis of individual dye intensities (Figure 2\u2014figure supplement 1) provides strong evidence that the small FRET change is a photophysical artifact from RSC binding rather than H2A-H2B dimer movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "H2B-labeled nucleosomes confirm DNA movement without substantial dimer displacement: H2B/H2B nucleosomes showed no appreciable FRET change with RSC and ATP. H2B/[end,+0] nucleosomes showed both entry-side and exit-side movement traces, with gap controls confirming directional assignments. Similar traces with H2A, H3, and H2B labeling suggest FRET dynamics reflect DNA movement relative to the octamer, not H2A-H2B dimer motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by data in Figure 2\u2014figure supplement 2. The consistency across three different octamer labeling positions (H2A, H3, H2B) strongly supports the interpretation that FRET changes primarily reflect DNA movement rather than dimer dynamics, though small-scale movements cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DNA moves along or near its canonical path at the nucleosome entry site: Entry-side movement traces showed substantial FRET increase followed by decrease for H2A/[end,+6] and H3/[end,+6] constructs, consistent with movement along the canonical path. Similar traces were observed with longer linker DNA. Small initial FRET decreases (\u0394FRET ~0.1, corresponding to ~0.5 nm distance change) were observed but attributed to photophysical effects. The data suggest DNA was not lifted by a large distance from the nucleosomal surface as it entered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by data in Figures 1C, 2C, and Figure 3\u2014figure supplement 1. The FRET increase upon entry-side movement is inconsistent with large-scale DNA lifting and supports movement along the canonical path. The photophysical interpretation of small initial FRET decreases is supported by comparison with H2A/H2A controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DNA moves along or near its canonical path at the nucleosome exit site: H2A/[backbone,-15] nucleosomes with Cy5 inside the nucleosome edge showed exit-side traces with transient FRET increase followed by decrease to zero, and entry-side traces with monotonic FRET decrease. Gap controls confirmed directional assignments. The initial FRET increase during exit-side movement indicates DNA was not lifted by a large distance from the nucleosomal surface as it exited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by data in Figure 3B-D. The clever placement of Cy5 inside the nucleosome edge allows discrimination between DNA lifting (which would cause FRET decrease) and movement along the canonical path (which causes the observed FRET increase). The data strongly support movement along or near the canonical path.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Exit-side DNA translocation occurs in ~2 bp steps for H2A/[end,+6] nucleosomes: Exit-side movement traces showed intermittent pauses. Step-finding analysis revealed a step size distribution with a major peak at \u0394FRET ~0.1 and a tail to larger values. Two independent algorithms gave consistent results. Calibration curves indicated the major step size corresponds to ~2 bp. Fitting to a model with uniform step size and missed steps gave \u0394FRET = 0.104 \u00b1 0.002 with 34% missed steps (chi-square method) or 0.102 \u00b1 0.003 with 41% missed steps (HMM method). The missed step probability is reasonable given the 25% expected from time resolution limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by data in Figure 4A-B and supplements. The use of two independent step-finding algorithms strengthens the conclusions. The calibration approach is sound, and the missed step probability is consistent with experimental limitations. However, the tail to larger step sizes and the observation that some missed step probabilities exceed time resolution limitations (C69) suggest occasional larger steps may occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Exit-side step size is similar at higher ATP concentrations: At 20 \u00b5M ATP, step size was 1.7 \u00b1 0.2 bp with 26% missed steps. At 80 \u00b5M ATP, step size was 2.0 \u00b1 0.2 bp with 41% missed steps. These are similar to results at 2 \u00b5M ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by data in Figure 4\u2014figure supplement 4. The consistency across ATP concentrations strengthens the conclusion that ~1-2 bp is the fundamental step size, though the authors appropriately note that measurements were performed at limiting ATP concentrations (up to Km).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Exit-side step size is consistent across different labeling schemes: H3/[end,+6] nucleosomes showed stepwise translocation with \u0394FRET = 0.113 \u00b1 0.003 (34% missed steps), corresponding to 1.9 \u00b1 0.2 bp. H2A/[backbone,+6] nucleosomes showed \u0394FRET = 0.092 \u00b1 0.004 (42% missed steps), corresponding to 1.6 \u00b1 0.1 bp. These are consistent with the 2.0 \u00b1 0.2 bp estimate for H2A/[end,+6].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by data in Figure 4C-F and supplements. The consistency across three different labeling schemes (different dye positions on both octamer and DNA) strongly supports the conclusion that the observed step sizes reflect true DNA translocation rather than labeling artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Entry-side DNA translocation occurs in ~1.6-1.7 bp steps: Entry-side movement traces at 2 \u00b5M ATP showed stepwise FRET increase. Step size distributions showed a major peak at \u0394FRET ~0.1 with a tail to larger values. For H2A/[end,+12], \u0394FRET = 0.088 \u00b1 0.002 with 22% missed steps, corresponding to 1.6 \u00b1 0.1 bp. For H3/[end,+9], \u0394FRET = 0.084 \u00b1 0.001 with 17% missed steps, corresponding to 1.7 \u00b1 0.2 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by data in Figure 5A-D and supplements. The entry-side step sizes are similar to exit-side step sizes, supporting a unified mechanism. The lower missed step probabilities for entry-side movement are consistent with the observed pause duration distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Entry-side step size is similar at higher ATP concentrations: At 20 \u00b5M ATP, step size was 2.0 \u00b1 0.1 bp. At 80 \u00b5M ATP, step size was 1.9 \u00b1 0.2 bp. These are similar to results at 2 \u00b5M ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by data in Figure 5\u2014figure supplement 3. The consistency across ATP concentrations for entry-side movement parallels the exit-side results and strengthens the overall conclusion about fundamental step size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Summary of main findings: RSC translocates DNA primarily in ~1-2 bp increments at both entry and exit sides of the nucleosome, across multiple labeling schemes and ATP concentrations. Under the conditions used (without acceptor nucleosomes, DNA, transcription factors, or chaperones), RSC remodels primarily by DNA translocation without lifting DNA by a large distance from the nucleosomal surface. The data are consistent with DNA movement largely along or close to the canonical wrapping path.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 accurately summarize the experimental findings from claims C62-C84. The conclusions are well-supported by the extensive data across multiple constructs, ATP concentrations, and labeling schemes. The authors appropriately note the specific experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Interpretation of DNA path during remodeling: RSC may cause DNA unwrapping or lifting but still hold the DNA near the nucleosome surface. This interpretation is consistent with electron microscopy structures showing tight fit of the nucleosome in RSC's central cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide reasonable interpretation of the data. The authors appropriately acknowledge that their FRET measurements cannot exclude small-scale DNA lifting or unwrapping if the DNA remains near the surface. The EM structure citation (C90) provides independent support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Quantitative analysis of step sizes: The observed \u0394FRET step sizes of 0.08-0.11 likely correspond to distance changes of ~0.3-0.6 nm. Based on nucleosome crystal structure geometry, 1 bp translocation should produce ~0.3 nm distance change on average, consistent with a ~1-2 bp step size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide quantitative analysis linking FRET changes to physical distances and base pair movements. The calculations are based on established F\u00f6rster radius values and crystal structure data, making them well-supported. This analysis strengthens the interpretation of step sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Comparison with SF2 ATPase translocation mechanisms: Some SF2 ATPase-containing DNA translocases/helicases translocate DNA in 1 bp increments. RSC translocates DNA at the SHL2 site where its ATPase domain engages the nucleosome. The isolated RSC catalytic subunit translocates naked DNA in ~2 bp increments. The SF2 ATPase domain of RSC might translocate DNA at the SHL2 site in 1 bp steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C95-C96 cite prior literature appropriately. Claim C94 is speculative but reasonable given the data and prior work on SF2 ATPases. The speculation is appropriately qualified with \"might.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Reinterpretation of previously observed ~50 bp steps: The previously observed ~50 bp translocation steps likely do not reflect the fundamental step size but may be compound steps composed of many ~1-2 bp steps, reflecting relatively long kinetic pauses imposed by the nucleosomal energy landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide a reasonable reinterpretation of prior literature (C15) in light of the current findings. The interpretation is appropriately qualified as speculative (\"may be\") and is consistent with the observation of missed steps in the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Caveats and limitations: RSC and SWI/SNF complexes have somewhat different nucleosome-binding cavities, so they may not translocate DNA identically. Measurements were performed at limiting ATP concentrations (up to ~Km of 80 \u00b5M), and behavior might differ at higher concentrations. However, behavior at limiting ATP likely reflects the nucleosome's response to individual translocation events at the SHL2 site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 appropriately acknowledge limitations and caveats. The structural differences between RSC and SWI/SNF (C99) are cited. The ATP concentration limitation (C101) is an important caveat, though the interpretation (C103) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Mechanistic implications: The observation that RSC moves DNA in ~1-2 bp increments at both entry and exit sites suggests DNA motion across the nucleosome is likely coupled directly to DNA translocation at the SHL2 site by the ATPase domain. If intranucleosomal loops exist, they must be small (1-2 bp) or accumulate/release gradually in 1-2 bp increments, requiring a specific extrusion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 provide mechanistic interpretation of the findings. The coupling interpretation (C104) is well-supported by the consistency of step sizes at entry and exit sites. The constraints on loop models (C105) are logical consequences of the data, though the authors appropriately note they cannot directly detect loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Comparison with ISWI-family remodelers: The nucleosome translocation step size for RSC is similar to that previously observed for ISWI-family enzymes. For both families, the step sizes likely result from the intrinsic DNA translocation step size of their SF2 ATPase domains. However, SWI/SNF-family remodelers disrupt DNA-octamer contacts more extensively than ISWI-family remodelers. Despite such disruption, RSC likely still holds DNA close to the nucleosome, so disruption does not strongly perturb translocation step sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide thoughtful comparison with ISWI remodelers. The similarity in step sizes (C106) is supported by citation to prior work (C16). The interpretation that both use similar ATPase mechanisms (C107) is reasonable. The distinction regarding DNA-octamer disruption (C108-C109) is supported by citations and provides important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Core conclusions from abstract: RSC primarily translocates DNA around the nucleosome without substantial H2A-H2B dimer displacement. At entry and exit sites, DNA moves largely along or near its canonical wrapping path. Translocation occurs in a stepwise manner with step size distributions peaking at approximately 1-2 bp at both sites. This suggests DNA movement across the nucleosome is likely coupled directly to DNA translocation by the ATPase at its binding site inside the nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 represent the main conclusions stated in the abstract. These are well-supported by the extensive experimental data described in the grouped results above. The conclusions are appropriately qualified (\"primarily,\" \"largely,\" \"likely\") and represent significant advances in understanding SWI/SNF remodeling mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

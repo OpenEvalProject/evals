@@ -1,0 +1,1972 @@
+{
+  "submission": {
+    "id": "5aafc8f2-fe4d-4ea8-a80e-ba632cb1f10c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:22:48.496213Z",
+    "updated_at": "2025-11-29T22:22:48.496213Z"
+  },
+  "content": [
+    {
+      "id": "906c138b-de49-4626-8403-f270f68d1032",
+      "submission_id": "5aafc8f2-fe4d-4ea8-a80e-ba632cb1f10c",
+      "content_type": "manuscript",
+      "content_text": "# Polypyrimidine tract binding protein 1 protects mRNAs from recognition by the nonsense-mediated mRNA decay pathway\n\n## Authors\n\n- Zhiyun Ge<sup>1</sup>\n- Bao Lin Quek<sup>2</sup> ([ORCID: 0000-0001-7306-3908](https://orcid.org/0000-0001-7306-3908))\n- Karen L Beemon<sup>2</sup>\n- J Robert Hogg<sup>1</sup> ([ORCID: 0000-0001-5729-5135](https://orcid.org/0000-0001-5729-5135)) \u2020\n\n### Affiliations\n\n1. Biochemistry and Biophysics Center, National Heart, Lung, and Blood Institute National Institutes of Health Bethesda United States\n2. Department of Biology Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nonsense-mediated mRNA decay (NMD) pathway degrades mRNAs containing long 3'UTRs to perform dual roles in mRNA quality control and gene expression regulation. However, expansion of vertebrate 3'UTR functions has required a physical expansion of 3'UTR lengths, complicating the process of detecting nonsense mutations. We show that the polypyrimidine tract binding protein 1 (PTBP1) shields specific retroviral and cellular transcripts from NMD. When bound near a stop codon, PTBP1 blocks the NMD protein UPF1 from binding 3'UTRs. PTBP1 can thus mark specific stop codons as genuine, preserving both the ability of NMD to accurately detect aberrant mRNAs and the capacity of long 3'UTRs to regulate gene expression. Illustrating the wide scope of this mechanism, we use RNA-seq and transcriptome-wide analysis of PTBP1 binding sites to show that many human mRNAs are protected by PTBP1 and that PTBP1 enrichment near stop codons correlates with 3'UTR length and resistance to NMD.\n\n## Introduction\n\nNonsense-mediated mRNA decay (NMD) is an evolutionarily conserved co-translational mRNA turnover pathway responsible for degrading diverse eukaryotic mRNAs (reviewed in Schweingruber et al., 2013). In addition to its well-known role in detecting aberrant transcripts containing premature termination codons (PTCs), NMD has also been shown to target a broad range of cellular mRNAs under normal conditions (He et al., 2003; Hurt et al., 2013; Lelivelt and Culbertson, 1999; Mendell et al., 2004; Rehwinkel et al., 2005; Weischenfeldt et al., 2008; Weischenfeldt et al., 2012; Longman et al., 2013), including those with spliced introns downstream of the TC, upstream open reading frames (uORFs), or long 3\u2019 untranslated regions (3\u2019UTRs). Together, the pathway is commonly estimated to regulate 5\u201310% of all human genes. NMD thus has an enormous impact on the human transcriptome in all cells, while also performing a surveillance role that modulates the phenotypic consequences of numerous human genetic diseases arising from nonsense mutations (Keeling et al., 2013).\n\nA core set of dedicated NMD proteins works in conjunction with general mRNA metabolism and translation factors to accurately select and degrade specific mRNAs. The superfamily I RNA helicase UPF1 is the focal point of the NMD pathway, with characterized functions throughout the process of target discrimination, translational repression, RNase recruitment, and post-decay RNP remodeling (Czaplinski et al., 1995; Franks et al., 2010; Hogg and Goff, 2010; Isken et al., 2008; Okada-Katsuhata et al., 2012; Unterholzner and Izaurralde, 2004). UPF2 and UPF3B stimulate UPF1\u2019s ATPase and decay-promoting activities and serve as a physical link between UPF1 and the exon junction complex (EJC), a strong activator of decay in vertebrate NMD (Chamieh et al., 2008; Le Hir et al., 2001). Interaction of UPF1 with release factors eRF1/3 at the terminating ribosome promotes phosphorylation of UPF1 by the SMG1 kinase, which in turn mediates recruitment and/or activity of the SMG6 endonuclease, the SMG5/7 complex, and decapping and deadenylation factors (Jonas et al., 2013; Loh et al., 2013; Chakrabarti et al., 2014; Glavan et al., 2006; Huntzinger et al., 2008; Kashima et al., 2006; Nicholson et al., 2014; Ohnishi et al., 2003; Okada-Katsuhata et al., 2012;\u00a0Eberle et al., 2009;\u00a0Unterholzner and Izaurralde, 2004).\n\nThe UPF1 helicase domain forms an extensive surface for high-affinity, sequence-nonspecific RNA binding, allowing the protein to associate with the full diversity of NMD substrates (Chakrabarti et al., 2011; Fiorini et al., 2012; Hurt et al., 2013; Zund et al., 2013; Kurosaki et al., 2014). Elongating ribosomes can disrupt UPF1\u2019s promiscuous RNA binding activity, leading to preferential UPF1 accumulation on 3\u2019UTRs (Hogg and Goff, 2010; Hurt et al., 2013; Zund et al., 2013). We have previously proposed that this property of UPF1 effectively allows it to sense 3\u2019UTR length, predisposing transcripts containing long 3\u2019UTRs to decay (Hogg, 2011; Hogg and Goff, 2010). This model is supported by recent comprehensive analysis of UPF1 targets demonstrating correlations among mRNA 3\u2019UTR length, UPF1 association, and de-repression of gene expression following NMD inhibition (Hurt et al., 2013).\n\nExtensive experiments in several eukaryotic model systems have established a tight link between 3\u2019UTR length and decay susceptibility, suggesting a conserved mechanistic basis for NMD target selection (Amrani et al., 2004; Behm-Ansmant et al., 2007; Buhler et al., 2006; Eberle et al., 2008; Longman et al., 2007; Muhlrad and Parker, 1999; Singh et al., 2008). Directly probing the relationship between 3\u2019UTR length and NMD-sensitivity in human cells, systematic analyses of reporter transcripts revealed a progressive UPF1-dependent decrease in mRNA half-life with increasing 3\u2019UTR length (Buhler et al., 2006; Eberle et al., 2008). While global correlations between 3\u2019UTR length and NMD susceptibility have been described in mammals (Hansen et al., 2009; Hurt et al., 2013; Mendell et al., 2004; Ramani et al., 2009; Yepiskoposyan et al., 2011), these studies have been complicated by the fact that a large number of eukaryotic transcripts with long 3\u2019UTRs appear to evade NMD through as-yet-unknown mechanisms. This is particularly true in human cells, in which the average 3\u2019UTR length has evolved to exceed that necessary to induce NMD of reporter transcripts. Indeed, several TC-proximal human mRNA sequences capable of protecting mRNAs from NMD have been identified (Toma et al., 2015). Thus, mechanisms to protect specific mRNAs from NMD are likely to be a major force shaping human gene expression.\n\nRetroviruses have long served as excellent model systems to explore the functions of host mRNA processing, translation, and decay pathways. As a consequence of evolutionary pressures to maximize the coding potential of compact RNA genomes, retroviral RNAs possess features that are predicted to be targeted by host cell RNA surveillance machineries, including long 3\u2019UTRs, multiple open reading frames, and retained introns (Bolinger and Boris-Lawrie, 2009; Withers and Beemon, 2011). Consequently, some retroviruses have developed protein-based protective mechanisms against NMD to ensure RNA integrity and translation (Mocquet et al., 2012; Nakano et al., 2013). Of known cellular or viral mechanisms for NMD evasion, the most extensively characterized is a cis-acting RNA sequence found in the Rous sarcoma virus (RSV), designated the RNA stability element (RSE; Arrigo and Beemon, 1988; Barker and Beemon, 1991, 1994). The RSE is a 400-nt element located immediately downstream of the gag TC in the unspliced RSV viral RNA that robustly protects the viral RNA from UPF1-dependent decay in chicken cells (Quek and Beemon, 2014; Weil and Beemon, 2006; Weil et al., 2009; Withers and Beemon, 2010, 2011). Despite thorough studies of the RSE structure and function, its mechanism of action has remained unclear.\n\nHere, we elucidate the mechanism underlying the ability of the RSE to protect mRNAs from NMD and show that numerous human transcripts containing long 3\u2019UTRs also exploit this strategy to maintain stability. By affinity purifying endogenously assembled mRNPs containing the RSE, we identify the polypyrimidine tract binding protein 1 (PTBP1) as the key mediator of RSE function. We show that mutations preventing PTBP1 binding to the RSE abolish protection from NMD, while artificial recruitment of PTBP1 immediately downstream of an NMD-triggering TC recapitulates RSE activity. Together, our findings indicate that PTBP1 functions to exclude UPF1 from 3\u2019UTRs, disrupting its ability to accurately discriminate 3\u2019UTR length and induce decay. Furthermore, we performed RNA-seq analysis on human cells depleted of PTBP1 and UPF1 together and in isolation to identify endogenous transcripts with long 3\u2019UTRs protected from NMD by PTBP1. Transcriptome-wide analysis of PTBP1 interaction sites reveals preferential binding of PTBP1 near TCs, a binding pattern correlated with 3\u2019UTR length and resistance to NMD.\n\n## Results\n\n### The RSE protects mRNAs from NMD in human cells\n\nWe first set out to test whether the avian retrovirus-derived RSE retains its anti-NMD function in human cells, reasoning that the ability to function in highly divergent vertebrates would imply a conserved mechanism for mRNA stabilization. For these studies, we used tetracycline (tet)-regulated reporter mRNAs containing a \u03b2-globin mini-gene and the SMG5 3\u2019UTR (Singh et al., 2008). The SMG5 3\u2019UTR triggers NMD as part of an extensive program of autoregulation by the NMD pathway, in a manner proposed to be due to its length (1342 nt; Huang et al., 2011; Singh et al., 2008; Yepiskoposyan et al., 2011). We inserted the 400 nt RSE sequence or a control sequence of the same length (the antisense RSE sequence, AS-RSE) into the reporter mRNAs immediately downstream of the TC, mimicking the natural context of the RSE in the RSV RNA (Figure 1A,B). To assess the specific antagonistic activity of the RSE against NMD, constructs encoding reporter mRNAs were co-transfected with a vector constitutively expressing a control RNA into 293 Tet-off cells treated with control or anti-UPF1 siRNAs. The expression of the tet-regulated mRNAs was induced for 4\u2009hr before transcription was inhibited by addition of doxycycline, and mRNA decay was monitored at the indicated time points (Figure 1C). Transcripts containing only the SMG5 3\u2019UTR exhibited a half-life of ~120 min in cells treated with control siRNAs, in agreement with its previous characterization as an NMD substrate. Transcripts containing the RSE were substantially more stable (half-life ~400 min) than transcripts containing the AS-RSE sequence (<120 min), confirming the protective activity of the RSE (Figure 1C, upper panel). In contrast, in cells depleted of UPF1, all transcripts had half lives of greater than 240 min, indicating that the observed decay in siNT-treated cells was due to the activity of UPF1 (Figure 1C, lower panel).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Schematic of the Rous sarcoma proviral genome. The RSE is located immediately downstream of the gag stop codon. (B) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs used in RNA decay assays. The RSE sequence (middle) and a control sequence, the antisense RSE (AS-RSE) sequence (bottom), were inserted into reporter mRNAs containing the \u03b2-globin gene and the human SMG5 3\u2019UTR (top). (C)\u00a0Decay assays of reporter mRNAs containing the wild-type SMG5 3\u2019UTR or variants supplemented with RSE or AS-RSE sequences. 293 Tet-off cells were treated with non-targeting siRNA (siNT; upper panel) or UPF1 siRNA (siUPF1; lower panel). Constructs encoding the indicated tet-regulated transcripts were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2wt\u03b2; bottom bands). Remaining RNA levels at indicated time points were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (***p<0.001; ****p<0.0001 in two-tailed ANCOVA analysis when compared to pcTET2-\u03b2wt-SMG5). Rapid decay of AS-RSE mRNAs to background levels in siNT samples precluded accurate quantification of decay rate. See also Figure 1\u2014figure supplements 1 and 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs used in RNA decay assays. RSE sequence was inserted in reporter mRNAs either upstream, in the middle, or downstream of the SMG5 3\u2019UTR. (B) Decay assays of reporter mRNAs containing the RSE at different positions in the 3'UTR. Constructs encoding the\u00a0tet-regulated transcripts described in A (pcTET2-\u03b2wt-RSE-SMG5, pcTET2-\u03b2wt-MRSE-SMG5, or pcTET2-\u03b2wt-3\u2019RSE-SMG5; top bands) were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2wt\u03b2; bottom bands) in HeLa Tet-off cells for decay analysis. Remaining RNA levels at indicated time points were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (p-values from two-tailed ANCOVA analysis when compared to pcTET2-\u03b2wt-RSE-SMG5).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs used in RNA decay assays. RSE or antisense RSE (AS-RSE) sequences were inserted in reporter mRNAs upstream of\u00a0a previously-characterized version of the GAPDH-derived 3\u2019UTR engineered to contain the adenovirus major-late intron (AdML intron; Singh et al., 2008), leading to EJC-stimulated NMD. (B) Decay of AdML intron-containing mRNAs in HeLa Tet-off cells. Half-lives and 95% confidence intervals were derived from linear regression of semi-log plots of normalized RNA abundances from three independent experiments (p-values from two-tailed ANCOVA analysis comparing the AS-RSE mRNAs to the RSE mRNAs).\n\nPrevious studies of the RSE have shown that its activity is strongly position-dependent. Specifically, the RSV viral RNA becomes unstable when a TC is created upstream of the natural gag stop codon, an effect due to the increased distance between the RSE and the PTC (Barker and Beemon, 1994; Weil and Beemon, 2006; Withers and Beemon, 2011). Here, we confirmed that the RSE also exhibits this property when used to shield reporter transcripts in human cells, as placement of the RSE in the middle or at the end of the SMG5 3\u2019UTR abolished its protective activity (Figure 1\u2014figure supplement 1). Together, our data suggest that the mechanisms governing RSE-mediated protection from NMD are conserved from birds to humans.\n\nWhile the physiological mRNAs subject to RSE-mediated protection are unspliced retroviral RNAs, we also tested whether the RSE is capable of inhibiting NMD promoted by the presence of a 3\u2019UTR-bound EJC. We inserted the wild-type RSE or antisense RSE sequences upstream of a previously characterized artificial GAPDH-derived 3\u2019UTR engineered to contain the adenovirus major-late intron (AdML; Singh et al., 2008; Figure 1\u2014figure supplement 2). As expected, the intron-containing 3\u2019UTR caused rapid decay of tet-regulated reporter constructs. In contrast, mRNAs containing the RSE were highly stabilized, indicating that the RSE is capable of suppressing both EJC-independent and EJC-stimulated NMD.\n\n### The RSE limits UPF1 association with mRNAs\n\nSince UPF1 recruitment is a prerequisite for NMD, we hypothesized that the RSE may employ the simple strategy of preventing UPF1 from associating with the 3\u2019UTR of the protected transcript. To test this idea, we immunopurified endogenous UPF1 and assayed the recovery of reporter mRNAs containing RSE or control sequences placed upstream of the artificial 3\u2019UTR derived from the GAPDH ORF and 3\u2019UTR, in this case lacking additional intronic sequence (Figure 2A). This GAPDH-derived 3\u2019UTR has been previously used for studies of UPF1 association and decay and can be efficiently protected by a TC-proximal RSE (Figure 2\u2014figure supplement 1; Hogg and Goff, 2010; Singh et al., 2008). Because UPF1 associates with mRNAs in a 3\u2019UTR length-dependent manner (Hogg and Goff, 2010; Kurosaki and Maquat, 2013), we used an NMD-permissive 397 nt fragment of the SMG5 3\u2019UTR (SMG5-397) to equalize 3\u2019UTR lengths among the mRNAs studied and thus allow accurate assessment of the influence of the RSE on UPF1 binding. As additional controls, we tested the ability of UPF1 to bind mRNAs in which the RSE or the SMG5-397 fragments were moved to the 3\u2019 end of the mRNA (3\u2019-RSE and 3\u2019-SMG5-397, respectively).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of reporter mRNA constructs used in immunoprecipitation assays. RNAs containing the GFP ORF and an artificial NMD-inducing 3\u2019UTR comprising a portion of the human GAPDH ORF and the GAPDH 3\u2019UTR (Singh et al., 2008) were modified to contain the RSE or the SMG5-397 sequence 5\u2019 or 3\u2019 of the GAPDH sequence. (B) Upf1 is reduced on 3'UTRs containing a TC-proximal RSE. Plasmids expressing the indicated mRNAs were co-transfected in 293 cells with a construct expressing the GFP ORF followed by the bovine growth hormone (bGH) polyadenylation signal. Endogenous UPF1 was immunoprecipitated from transfected cells, and co-purifying mRNAs were analyzed by northern blot. Bulk goat IgG was used as a non-specific interaction control. (C) Quantification of relative RNA recovery upon UPF1 immunoprecipitation, normalized to the recovery of co-transfected GFP-bGH mRNAs. The amount of RSE-containing RNA recovered was set to 1. Error bars indicate \u00b1 SD; n = 3 (*p<0.05; **p<0.01 in two-tailed Student\u2019s t-tests when compared to RSE recovery). See also Figure 2\u2014figure supplements 1 and 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs used in RNA decay assays. RSE or SMG5-397 sequences were inserted in reporter mRNAs upstream of the artificial GAPDH-derived 3\u2019UTR (Singh et al., 2008). (B) Decay assays of reporter mRNAs containing the RSE or the first 397 nt of the SMG5 3\u2019UTR (SMG5-397) sequence in cells expressing either WT UPF1 (left) or an ATPase-dead UPF1 (right). Constructs encoding the tet-regulated transcripts described in (A) were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2WT\u03b2; bottom bands) in HeLa Tet-off cells. Half-lives and 95% confidence intervals were derived from linear regression of semi-log plots of normalized RNA abundances from three independent experiments (p-values from two-tailed ANCOVA analysis comparing the indicated mRNAs to the SMG5-397 control in the presence of wild-type UPF1).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic of GFP reporter mRNA constructs used in immunoprecipitation assays. RNAs containing the GFP ORF and an artificial NMD-inducing 3\u2019UTR comprising a portion of the human GAPDH ORF and the GAPDH 3\u2019UTR (Singh et al., 2008) were modified to contain the RSE (top) or the SMG5-397 sequence (middle). As a control to illustrate the behavior of mRNAs with short 3\u2019UTRs (untreated condition) or shorter overall length (puromycin treatment), we used constructs without added RSE or SMG5-397 sequence in which the GFP termination codon was changed to CAA (bottom), resulting in termination at the downstream GAPDH stop codon. (B) UPF1 association is reduced on 3'UTRs containing the RSE. Plasmids expressing the indicated mRNAs were co-transfected in 293 cells with a construct expressing the GFP ORF followed by the bovine growth hormone (bGH) polyadenylation signal. Endogenous Upf1 was immunoprecipitated from transfected cells grown in the absence or presence of puromycin (100 \u03bcg/mL for 3\u2009hr) as indicated, and co-purifying mRNAs were analyzed by northern blot. (C) Quantification of relative RNA recovery upon UPF1 immunoprecipitation, normalized to the recovery of co-transfected GFP-bGH mRNAs. The amount of RSE-containing RNA recovered was set to 1. Error bars indicate \u00b1 SD; n \u2265 3 (*p<0.05, **p<0.01 in two-tailed Student\u2019s t-tests when compared to RSE recovery). Under both untreated and puromycin treated conditions, the RSE caused reduced accumulation of UPF1 on mRNAs relative to the SMG5-397 control.\n\nPlasmids encoding the experimental RNAs were co-transfected with a control plasmid producing mRNA containing only the GFP ORF and the bovine growth hormone polyadenylation element (bGH), which associates with UPF1 at low but consistent levels due to its short 3\u2019UTR and serves as an internal standard for RNA recovery throughout immunoprecipitation and RNA isolation (Hogg and Goff, 2010). The extent of UPF1 binding was then assayed by northern blotting of the reporter mRNAs co-immunopurified with endogenous UPF1. As shown in Figure 2B and C, we observed a marked reduction in UPF1 association with RSE-containing RNAs relative to RNAs in which the RSE was moved to the 3\u2019 end of the transcript or replaced with the SMG5-397 element. Together, these data indicate that the RSE prevents NMD by reducing UPF1 binding to 3\u2019UTRs in a sequence- and position-dependent manner (Figure 2B,C).\n\nWhile previous studies have shown that UPF1 association with mRNAs precedes commitment to decay and does not require ongoing translation (Hogg and Goff, 2010; Hurt et al., 2013; Zund et al., 2013), it remained possible that a reduction in UPF1 binding to RSE-containing 3\u2019UTRs was a consequence rather than a cause of NMD inhibition. To rule out this possibility, we performed immunoprecipitations using extracts from cells treated with the chain-terminating translation inhibitor puromycin. Indeed, the RSE retained the capacity to antagonize UPF1 binding in the absence of translation termination events (Figure 2\u2014figure supplement 2). These data suggest that the position of the RSE in the mRNA with respect to the 5\u2019 and 3\u2019 ends may contribute to its ability to disrupt UPF1 binding to mRNAs.\n\n### Identification of proteins associated with RSE-containing mRNAs\n\nTo identify possible protein cofactors of the RSE, we isolated mRNPs containing the RSE in the sense or antisense orientations by an RNA-based affinity purification technique (Hogg and Goff, 2010). Reporter mRNAs tagged with a single copy of the 25 nt Pseudomonas phage 7 coat protein (PP7CP) RNA hairpin binding site (Figure 3\u2014figure supplement 1A) were expressed in 293T cells, and the resulting endogenously assembled mRNPs were purified from cell extracts using the PP7CP tagged with tandem Staphylococcus aureus protein A domains. The isolated mRNPs containing either the RSE sequence or the control sequence displayed a similar profile of co-purifying proteins, while mock purifications from cell extracts containing no tagged RNA yielded very few contaminating proteins (Figure 3\u2014figure supplement 1B, additional data not shown). Comprehensive analysis of the composition of the purified mRNP complexes by tandem mass spectrometry revealed a large number of proteins that were equally represented in the RSE-containing mRNPs and the control mRNPs, many of which are common RNA binding proteins, ribosomal proteins, and translation factors (Figure 3\u2014source data 1). UPF1 was enriched in the control mRNP (Figure 3\u2014figure supplement 1C), consistent with our finding that the RSE inhibits UPF1 association with the 3\u2019UTR (Figure 2). Several proteins were over-represented in mRNPs containing the RSE sequence, including polypyrimidine tract binding protein 1 (PTBP1), heterogeneous nuclear ribonucleoprotein L (hnRNP L), MATRIN 3, and splicing factor, arginine and serine-rich 14 (SFRS14; Figure 3\u2014figure supplement 1C). We were able to confirm the preferential interaction between these proteins and the RSE by immunoblotting of purified mRNPs or co-immunoprecipitation experiments (Figure 3 and additional data not shown).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of reporter mRNA constructs used in immunoprecipitation assays. (B) PTBP1 is reduced on transcripts containing the RSE mutants lacking the putative PTBP1 binding sites. Immunoprecipitations were performed as in Figure 2B. Goat IgG samples were imaged using identical settings to those used for anti-UPF1 samples. (C) Left Panel: Quantification of relative RNA recovery upon PTBP1 immunoprecipitation, normalized to the recovery of co-transfected GFP-bGH mRNAs. Right Panel: Quantification of relative RNA recovery upon UPF1 immunopreciptation, normalized to the recovery of co-transfected GFP-bGH mRNAs. The amount of RSE-containing RNA recovered was set to 1. Error bars indicate \u00b1 SD; n \u2265 3 (*p<0.05 in two-tailed Student\u2019s t-tests when compared to RSE-\u0394PTB recovery. See also Figure 3\u2014figure supplement 1 and Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic of \u03b2-globin reporter mRNA constructs used for PP7-based affinity purification. The RSE sequence (top) and a control sequence, the antisense RSE sequence (AS-RSE; bottom) were inserted into reporter mRNAs containing the \u03b2-globin gene and the GAPDH 3\u2019UTR. (B) mRNP profiles of the transcripts described in (A). Proteins were separated on a 4\u201312% SDS-PAGE gel and visualized by Krypton Infrared Protein Stain (Pierce). (C)\u00a0Purified mRNPs were subjected to trypsin digestion and tandem mass spectrometry. Spectral counts from selected proteins enriched in either the RSE-containing sample or the antisense RSE sample are shown. Complete mass spectrometry data are compiled in Figure 3\u2014source data 1. (D) Control for post-lysis reassortment. Extracts from cells in which protein A-tagged UPF1 was co-expressed with the indicated GFP reporter mRNAs or extracts from cells separately expressing protein A-tagged UPF1 and the exogenous mRNAs were used for affinity purification. mRNAs containing the GAPDH artificial 3\u2019UTR were used as recovery controls. Top panels: Northern blots of co-transfected reporter mRNAs. Identical settings were used to image northern blots of input extracts and purified material from co-expressed and mixed samples, respectively. Bottom panels: immunoblotting of mixed extracts with an \u03b1-UPF1 antibody indicates equal purification efficiency across all conditions. (E) Relative recoveries of the indicated mRNAs with affinity purified UPF1 were determined, normalized to recovery\u00a0of mRNAs containing the GAPDH 3\u2019UTR. Error bars indicate \u00b1 SD; n = 3 (**p<0.01\u00a0in two-tailed Student\u2019s t-test comparing the recovery of RSE-GAPDH to RSE-\u2206PTB-GAPDH).\n\n### A prominent role for PTBP1 in RSE-mediated NMD inhibition\n\nAmong the putative RSE-binding proteins identified, we considered PTBP1 to be a promising putative anti-NMD factor for several reasons. In addition to its established role in alternative splicing, PTBP1 has been implicated as an RNA stability factor (reviewed in Romanelli et al., 2013). Moreover, as expected for a protein responsible for protecting specific mRNAs, PTBP1 has been found to be preferentially associated with long 3\u2019UTRs (Gama-Carvalho et al., 2006). Finally, a variety of techniques have been used to characterize the interaction specificity of PTBP1 and establish that the protein\u2019s four RNA recognition motifs (RRMs) each contribute to binding of degenerate pyrimidine-rich sequences. UV cross-linking and immunoprecipitation (CLIP) experiments indicate that PTBP1 binding is driven both by high-affinity heptameric or hexameric motifs and by local enrichment of pyrimidines (Xue et al., 2009; 2013; Han et al., 2014). Indicative of the potential for robust PTBP1 binding, examination of the RSE sequence revealed as many as eleven CU-rich clusters corresponding to putative PTBP1 binding sites spread throughout the 400 nt element. This includes three instances of CU-rich hexameric sequences identified as over-represented in PTB CLIP sequence tags, as well as five additional clusters containing heptamers enriched in CLIP tags (Xue et al., 2009; see Materials and methods for sequences). Therefore, we predicted that multiple PTBP1 molecules might be recruited to RSE-containing mRNPs, forming an RNP refractory to UPF1 association.\n\nTo test this idea, we constructed two RSE sequence variants. First, we mutated all putative PTBP1 binding sites in the RSE by replacing a subset of U and C residues in CU-rich clusters with G and A residues, respectively (RSE-\u0394PTB; see Materials and methods for sequences). Next, we inserted six previously characterized PTBP1 binding sites into the RSE-\u0394PTB sequence at arbitrary positions (Figure 3A; Xue et al., 2009), with ~60 nt between each site (RSE-\u0394PTB+6xPTBBS). The wild-type RSE and the RSE mutants were inserted into reporter mRNAs upstream of the artificial GAPDH-derived 3\u2019UTR, and the extent of PTBP1 association with the reporter transcripts was assayed by monitoring the co-purification of reporter mRNAs with immunopurified endogenous PTBP1. As shown in Figures 3B and C, PTBP1 association with the RSE-\u0394PTB-containing transcripts was significantly reduced compared to the wild-type RSE-containing transcripts. Reintroducing six PTBP1 binding sites into the RSE-\u0394PTB led to recovery of PTBP1 association to levels similar to those found in association with the wild-type RSE.\n\nWe next investigated whether UPF1 binding was affected by eliminating the putative PTBP1 binding sites in the RSE sequence. To test the possibility that PTBP1 binding causes exclusion of UPF1 from the mRNP, we assayed the co-purification of the same reporter mRNAs with immunopurified endogenous UPF1. Northern blots of co-purified mRNAs indicated transcripts containing the RSE-\u0394PTB sequence displayed substantially increased UPF1 association (Figures 3B and C). The inverse relationship between PTBP1 and UPF1 association is consistent with our hypothesis that PTBP1 prevents UPF1 from associating with the 3\u2019UTRs. Interestingly, although the level of UPF1 association on the transcripts containing RSE-\u0394PTB+6xPTBBS is significantly reduced compared to RSE-\u0394PTB, it was still higher than that of the wild-type RSE, indicating that the natural arrangement of the PTBP1 binding sites in the RSE may be optimal for antagonizing UPF1 binding.\u00a0As a control to ensure that the PTBP1-mediated inhibition of UPF1 binding was due to cellular interactions rather than a consequence of protein-RNA reassortment in extracts, we further tested the ability of stably expressed tandem protein A-tagged UPF1 to co-purify mRNAs expressed in distinct cells (Mili and Steitz, 2004).\u00a0In these experiments, we observed co-purification of mRNAs when tagged UPF1 and mRNAs were expressed in the same cells, but none when reporter RNA-containing extracts from cells lacking tagged protein were mixed with extracts containing tagged UPF1 (Figure 3\u2014figure supplement 1D, Figure 3\u2014figure supplement 1E).\n\n### PTBP1 binding sites promote accumulation of RSV RNAs in chicken cells\n\nAs the physiological role of the RSE is the stabilization of unspliced RSV RNAs, we investigated the role of PTBP1 in stabilization of authentic viral RNAs (Figure 4A). To do so, we replaced the wt RSE sequence in the unspliced RSV RNA with the RSE-\u0394PTB sequence or RSE-\u0394PTB variants containing three or six artificial PTBP1 binding sites (RSE-\u0394PTB+3xPTBBS or RSE-\u0394PTB+6xPTBBS, respectively) and measured the steady state levels of the viral RNAs in chicken embryonic fibroblasts. In these experiments, the RSE-\u0394PTB-containing viral RNAs were present at much lower levels than RNAs protected by the wt RSE sequence. Viral RNAs containing the RSE-\u0394PTB+3xPTBBS sequence exhibited substantial rescue due to the inclusion of artificial PTB binding sites (Figure 4B,C), and six PTBP1 binding sites led to almost complete restoration of RNA levels, consistent with the effects of this RSE variant on PTBP1 and UPF1 binding (Figure 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of unspliced RSV RNA expression constructs used for RNA accumulation assays in chicken fibroblasts. (B) RNase protection assays of RSV unspliced viral RNA containing the wt RSE or RSE variants. Experimental and control constructs were co-transfected into CEFs, and total cellular RNAs were harvested 43\u201348\u2009hr post-transfection. Top band: protected fragment of the probe corresponding to the unspliced viral RNAs from the experimental constructs. Bottom band: stable viral loading control that protects a different sized fragment of the same probe due to a small in-frame deletion. (C) Quantification of RNase protection assays. Levels of the experimental unspliced RSV RNAs (top band) were normalized to levels of the transfection control (bottom band). RNA levels are reported as a fraction of RSV RNA containing wt RSE. Error bars indicate \u00b1 SD; n \u2265 5 (*p<0.05; ****p<0.0001 in two-tailed Student\u2019s t-tests when compared to RSE constructs). (D) Schematic of reporter mRNAs containing the \u03b2-globin gene, RSE variants (RSE, RSE-\u0394PTB, or RSE-\u0394PTB+6xPTBBS), and the full-length human SMG5 3\u2018UTR. (E) Decay assays of the indicated reporter mRNAs. Tet-regulated transcripts (upper bands) were co-transfected with the constitutively expressed wild-type \u03b2 globin reporter (pc\u03b2wt\u03b2; bottom bands) in HeLa Tet-off cells. Levels of tet-regulated reporter mRNAs were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (p-values from two-tailed ANCOVA analyses when compared to pcTET2-\u03b2wt-SMG5). See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Decay assays of pcTET2 -\u03b2wt-RSE-\u0394PTB-SMG5 in HEK293 Tet-off cells treated with non-targeting or anti-UPF1 siRNAs. The reporter constructs (upper band) were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2wt\u03b2;\u00a0bottom bands) into cells 24\u2009hrs\u00a0after the siRNAs were introduced to the cells. Levels of tet-regulated reporter mRNAs were normalized to levels of the wild-type \u03b2-globin transfection control. Relative remaining RNA levels at indicated time points from three independent experiments were used to calculate half-lives and 95% confidence intervals (***p<0.001 in two-tailed ANCOVA analysis, compared to the half-life of \u03b2wt-RSE-\u0394PTB-SMG5 in cells treated with non-targeting siRNAs).\n\n### PTBP1 binding sites stabilize reporter transcripts in human cells\n\nTo test whether PTBP1 binding sites are sufficient to confer stability to NMD targets, we next inserted the wt RSE or the RSE-\u0394PTB mutant sequence into reporter mRNAs containing the SMG5 3\u2019UTR (Figure 4D). mRNA decay assays showed a dramatic UPF1-dependent reduction in the stability of the transcripts containing RSE-\u0394PTB (half-life ~120 min) when compared to transcripts containing the wt RSE (half life >9\u2009hr; Figure 4E; see Figure 4\u2014figure supplement 1 for UPF1 RNAi experiments). In fact, targeted mutation of the putative PTBP1 binding sites in the RSE resulted in transcript stability similar to that of mRNAs containing the inactive antisense RSE sequence. Transcripts containing the RSE-\u0394PTB+6xPTBBS variant (half-life >9\u2009hr) exhibited stability comparable to transcripts containing the\u00a0wt RSE, indicating that the RSE regained most or all of its function after restoration of six PTB binding sites at arbitrarily chosen sites (Figure 4E).\n\n### Introduction of PTBP1 binding sites to NMD-sensitive transcripts inhibits decay\n\nThe results presented above suggest that PTB binding is necessary for the protective activity of the RSE. To determine whether PTB binding downstream of a TC is sufficient to stabilize NMD targets, we constructed a series of reporter transcripts containing three or six model PTBP1 binding sites inserted at the 5\u2019 end of the NMD-inducing SMG5 3\u2019UTR. In these experiments, we tested two arrangements of PTBP1 binding sites: separated by either\u00a08 nt linker sequences (PTB3 and PTB6) or by 100 nt segments of the SMG5 3\u2019UTR to better mimic the arrangement of PTB binding sites in the RSE (PTB3s and PTB6s; Figure 5A). In RNA decay assays, we found that addition of three PTBP1 binding sites significantly improved transcript stability, with the distributed binding sites having a marginally stronger effect (Figure 5B). Importantly, transcripts containing either arrangement of six PTBP1 binding sites were highly stabilized relative to control transcripts, demonstrating that PTBP1 binding is capable of recapitulating RSE function. Consistent with the position-dependence of the full-length RSE (Figure 1\u2014figure supplement 1), mRNAs in which a cluster of six PTBP1 binding sites were introduced into the SMG5 3\u2019UTR 600 nt or 1200 nt downstream of the TC were highly unstable (Figure 5\u2014figure supplement 1A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs used in RNA decay assays. Three or six canonical PTBP1 binding sites were inserted into the SMG5 3\u2018UTR. PTBP1 binding sites were inserted with short linker sequences between each site (PTB3 and PTB6), or spaced at 100 nt intervals within the SMG5 3\u2018UTR (PTB3s and PTB6s). (B) Decay assays of reporter mRNAs containing PTBP1 binding sites. Constructs encoding the indicated tet-regulated transcripts (top bands) were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2wt\u03b2; bottom bands) in HeLa Tet-off cells. Levels of tet-regulated reporter mRNAs were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (p-values from two-tailed ANCOVA analyses when compared to pcTET2-\u03b2wt-SMG5). See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic of tet-regulated \u03b2-globin reporter mRNA constructs containing six closely spaced PTBP1 binding sites at the 5\u2019 end, in the middle, or at the 3'\u00a0end of the SMG5 3\u2019UTR. (B) Decay assays of reporter mRNAs containing the RSE at different positions in the 3'UTR. Constructs encoding the tet-regulated transcripts described in panel A (pcTET2-\u03b2wt-PTB6-SMG5, pcTET2-\u03b2wt-MPTB6-SMG5, or pcTET2-\u03b2wt-3\u2019PTB6-SMG5; top bands) were co-transfected with the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2wt\u03b2; bottom bands) in HeLa Tet-off cells. Remaining RNA levels at indicated time points were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (p-values from two-tailed\u00a0ANCOVA analysis when compared to pcTET2-\u03b2wt-PTB6-SMG5). (C) Schematic of \u03b2-globin reporter mRNA constructs containing four MS2 coat protein binding sites at the 5\u2019 end of the SMG5 3\u2019UTR. (D) Tethering reporter constructs (top bands) were co-transfected with plasmids expressing the indicated MS2 fusion protein (vector control, PAPBC, or PTBP1) and the constitutively expressed wild-type \u03b2-globin reporter (pc\u03b2WT\u03b2; bottom bands). RNA was harvested 30 min after transcription was halted by addition of doxycycline and at 2\u2009hr intervals thereafter. Remaining\u00a0RNA levels at indicated time points were normalized to levels of the wild-type \u03b2-globin transfection control. Half-lives and 95% confidence intervals were obtained from 3 independent experiments (p-values from two-tailed ANCOVA analysis when compared to pcTET2-\u03b2wt-4xMS2-SMG5 co-transfected with MS2 protein alone). \u2021 denotes an aberrantly processed mRNA isoform that was excluded from quantification.\n\nTo further test the specificity of PTBP1\u2019s role as an inhibitor of NMD, we used a tethering approach to artificially target PTBP1 and other RNA binding proteins to sites immediately downstream from NMD-inducing stop codons. For these assays, we fused proteins of interest with the MS2 bacteriophage coat protein and co-expressed them with reporter mRNAs containing four MS2 hairpins placed at the 5\u2019 end of the SMG5 3\u2019UTR. A PABPC1-MS2 coat protein fusion was included in this assay as a positive control, as PABPC1 has previously been reported to antagonize NMD when tethered to NMD-sensitive mRNAs (Amrani et al., 2004). Our results showed that the reporter mRNAs were comparably stabilized by co-expression with MS2-PABC1 or MS2-PTBP1, relative to co-expression with the MS2 coat protein alone (Figure 5\u2014figure supplement 1C,D).\n\n### PTBP1 protects many human transcripts with long 3\u2019UTRs from NMD\n\nTo test the hypothesis that the mechanism used by the RSV viral RNA to evade NMD may be shared by mammalian mRNAs with long 3\u2019UTRs, we performed RNA-seq analysis on 293 Tet-off cells transfected with anti-UPF1 and anti-PTBP1 siRNAs individually or in combination, using a validated non-silencing siRNA as a control. In biological replicates, mRNAs from 495 genes reproducibly decreased in abundance upon depletion of PTBP1, relative to their expression levels in cells treated with control siRNA (Figure 6A; see also Figure 6\u2014source data 1), consistent with previous reports implicating PTBP1 in the stabilization of diverse human mRNAs. To determine whether the down-regulated mRNAs were made susceptible to NMD in the absence of PTBP1, we examined the effects of co-depletion of UPF1 and PTBP1. Of the transcripts down-regulated upon PTBP1 knockdown, we designated mRNAs from 188 genes observed to reproducibly increase in siPTB/siUPF1 vs siPTB alone as 'rescued.' On average, concurrent knockdown of UPF1 and PTBP1 caused an increase in mRNA levels among PTBP1-dependent genes (Figure 6A), while the average accumulation of PTBP1-dependent mRNAs was not altered upon UPF1 depletion alone (Figure 6B). Among all of the PTBP1-dependent genes, the extent of mRNA rescue upon co-depletion correlated with the reduction upon PTBP1 knockdown (Figure 6A,C). Consistent with a role for PTBP1 binding near the stop codon, this correlation was dependent on the presence of putative high-affinity PTBP1 hexamer binding sites in the region downstream of the TC (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig6-v2.jpg)\n\n**Figure 6.:** (A) For mRNAs from 495 genes reproducibly down-regulated by PTBP1 depletion in RNAseq of biological replicates, fold change comparing siPTBP1/siUPF1 to siPTBP1 alone was plotted vs. fold change comparing siPTBP1 to siNT. Mean fold change among all analyzed genes (dashed line; p<0.0001 in two-tailed Student\u2019s t-test of null hypothesis of zero fold change), best fit determined by the least squares method (solid line) and correlation coefficient (Spearman\u2019s \u03c1) are indicated. See also Figure 6\u2014source data 1. (B) Mean fold change in transcript abundance upon PTBP1 depletion versus siNT treatment was plotted against the mean fold change in abundance between siUPF1 and siNT conditions for the set of mRNAs as described in A. (C) Table of Spearman\u2019s correlation coefficients for all mRNAs reproducibly downregulated by siPTBP1, mRNAs containing one or more putative PTBP1 hexamer binding sites within 400 nt of the termination codon, and mRNAs lacking putative PTBP1 hexamers in that region. (D) mRNAs protected from NMD by PTBP1 have long 3\u2019UTRs. Continuous distribution function (CDF) plot of annotated 3\u2019UTR lengths among all expressed exemplar mRNAs (blue), mRNAs down-regulated by PTBP1 depletion (red), and mRNAs rescued by co-depletion of PTBP1 and UPF1 in RNA-seq analyses (green; see Materials and methods for details). Statistical significance was evaluated by two-tailed K-S test, comparing the indicated mRNA sets to the distribution of 3\u2019UTR lengths among all exemplar mRNAs. (E) qRT-PCR analysis of mRNAs protected from NMD by PTBP1. Graph of average abundance of mRNAs normalized to housekeeping UBC control mRNAs (n=3, error bars indicate SD). Statistical significance was determined by two-tailed Student\u2019s t-test, comparing siPTBP1 to siNT and siPTBP1/siUPF1 to siPTBP1. See also Figure 6\u2014figure supplements 1, 2 and Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Sashimi plots were generated from reads mapping to genes rendered susceptible to NMD by PTBP1 depletion in RNA-seq and qRT-PCR experiments using Integrative Genomics Viewer software (Broad Institute). SELT, VRK3, and ZNF322 were omitted from this analysis due to insufficient read coverage spanning exons.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Histograms of sequence reads from PTBP1 CLIP experiments (Xue et al., 2013) mapping to the indicated mRNAs were visualized using the Genomatix genome browser. Schematics of representative RefSeq transcripts are shown, and histograms are autoscaled according to maximum peak height for each gene window. Thin lines indicate introns, thick lines indicate coding regions, and red indicates 3\u2019UTRs. Positions of putative high-affinity hexamer PTBP1 binding sites 3\u2019 of TCs are indicated.\n\nAs 3\u2019UTR length is a major determinant of NMD, we also asked whether the class of mRNAs protected from NMD by PTBP1 exhibited unusually long 3\u2019UTRs. Indeed, mRNAs down-regulated in PTBP1-depleted cells had a median 3\u2019UTR length of 1577 nt, significantly longer than the median 3\u2019UTR length among all mRNAs expressed in the RNAseq dataset (1308 nt; Figure 6D; see Materials and methods for details). Most importantly, the population of mRNAs that were both significantly down-regulated by siPTBP1 treatment and rescued by co-depletion of PTBP1 and UPF1 exhibited an even greater median length of 1843 nt. Together, these data suggest that protection of human mRNAs containing long 3\u2019UTRs by PTBP1 is widely exploited to minimize the impact of NMD on the transcriptome.\n\nTo verify the response of endogenous transcripts to depletion of PTBP1 and UPF1 alone and in combination, we selected a panel of transcripts for follow-up analysis by quantitative reverse transcription-PCR (qRT-PCR). These experiments confirmed that several mRNAs identified in RNA-seq analyses were down-regulated by PTBP1 depletion and fully or partially rescued by co-depletion of PTBP1 and UPF1 (Figure 6E). Importantly, PTBP1 mRNA levels were equal in the PTBP1 and PTBP1/UPF1 double knockdown conditions. Incomplete rescue of PTBP1-dependent mRNAs via UPF1 depletion could either be due to PTBP1 antagonizing multiple RNA decay pathways or due to insufficient UPF1 knockdown for complete abrogation of NMD activity. As alterations in RNA stability could be caused by changes in PTBP1-dependent alternative splicing events, we also examined the RNAseq data for evidence of altered splicing. With the exception of TPM1, a known target of PTBP1 splicing regulation, we did not observe differences in the splicing patterns of the selected genes (Figure 6\u2014figure supplement 1).\n\nAmong nine genes validated by qRT-PCR as protected from NMD by PTB, eight have at least one putative PTB hexamer binding site within 150 nt of the annotated TC, and six of nine have two or more hexamer binding sites in that region (Figure 6\u2014figure supplement 2) In addition, we analyzed previously published whole-genome CLIP data of PTBP1 in HeLa cells to probe a possible relationship between protection from NMD and PTBP1 binding in living cells (Xue et al., 2013). This analysis revealed PTBP1 CLIP reads mapping to the 3\u2019UTRs of each of the validated mRNAs listed above (Figure 6\u2014figure supplement 2; see below for further CLIP analysis).\n\n### PTBP1 binding within 200 nt of the TC correlates with 3\u2019UTR length and protection from NMD\n\nIn order to understand the global relationship between PTBP1 binding and NMD, we analyzed the RNA-seq data described above with respect to published PTBP1 (Xue et al., 2013) and UPF1 CLIP-seq datasets (Zund et al., 2013). As previously reported, analysis of aggregate binding of UPF1 to all mRNAs showed that UPF1 levels are low in coding sequences and increase downstream of TCs to reach a broad plateau throughout 3\u2019UTRs (Figure 7A). In contrast, PTBP1 CLIP signal derived from exons was preferentially located within 200 nt of TCs, consistent with a role for PTBP1 in marking translation termination events.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig7-v2.jpg)\n\n**Figure 7.:** (A) Density of PTBP1 (green, left axis) and UPF1 (red, right axis) CLIP reads derived from peaks called using PIPE-CLIP software, plotted relative to TC position. A bin size of 20 nt was used to determine read density; bin sizes ranging from 5 nt to 20 nt and plots of peak occurrences showed similar patterns. (B) CDF plot of annotated 3\u2019UTR lengths among mRNAs containing or lacking PTBP1 CLIP peaks centered in the indicated intervals relative to the TC. P-values were calculated in two-tailed K-S tests of 3\u2019UTR lengths in the indicated mRNA classes compared to mRNAs lacking PTBP1 peaks. Only mRNAs with 3\u2019UTRs greater than 500 nt were included to avoid bias due to selection of transcripts containing CLIP peaks. (C) CDF plot of log2 fold\u00a0changes in mRNA abundance in UPF1 siRNA vs siNT RNAseq. mRNAs with 3\u2019UTR lengths in the middle 50% of the overall distribution (484\u20132251 nt) were selected to avoid confounding effects of increased 3\u2019UTR lengths among mRNAs with PTBP1 peaks. P-values were determined by two-tailed K-S tests, comparing the indicated mRNA classes to mRNAs lacking PTBP1 peaks from +1\u2013400 nt. (D) CDF plot as in C. mRNAs were classified according to the presence of one or more predicted high-affinity PTBP1 hexamer binding sites in the indicated intervals relative to annotated TCs (see Materials and methods for details; the top 6 hexamers identified in previous PTBP1 CLIP seq, associated with >50% of observed CLIP peaks, were used for this analysis; Xue et al., 2009). Statistical significance was determined by two-tailed K-S tests comparing mRNAs with putative PTBP1 binding sites in the indicated positions to mRNAs lacking hexamer binding sites at positions from 1 to 50 nt downstream of the TC.\n\nHaving observed enrichment of PTBP1 CLIP peaks near TCs, we next asked whether mRNAs with TC-proximal PTBP1 binding exhibited evidence of NMD evasion. In line with a role for PTBP1 in protecting potential NMD substrates, transcripts with PTBP1 CLIP peaks centered within the first 200 nt of the TC had longer 3\u2019UTRs than those lacking peaks near the TC (Figure 7B). As a control, mRNAs with PTBP1 CLIP peaks centered between 200 and 500 nt from the TC exhibited no tendency to contain longer 3\u2019UTRs than normal. Most importantly, mRNAs with PTBP1 peak centers within 200 nt of the TC were significantly less likely to be up-regulated upon UPF1 knockdown than mRNAs without TC-proximal peaks, indicating that this population of PTBP1-bound mRNAs is insensitive to NMD under normal conditions (Figure 7C). To avoid potential confounding effects of differences in 3\u2019UTR lengths among distinct transcript classes, we used mRNAs with 3\u2019UTRs falling between the 25th and 75th percentile of all 3\u2019UTR lengths for these analyses (mRNAs with 3\u2019UTRS from 484\u20132251 nt). Providing further evidence of the importance of PTBP1 binding position relative to the terminating ribosome, mRNAs with PTBP1 CLIP peaks centered from 200 to 500 nt from the TC showed no significant trend toward protection from NMD (Figure 7C).\n\nWe further corroborated this analysis by examining the effect of UPF1 depletion on transcripts containing high-affinity PTBP1 binding sites near the TC. Using this approach, we found evidence that PTBP1 hexamer binding sites located in the immediate vicinity of the terminating ribosome are particularly important in determining protection from UPF1-mediated degradation. Specifically, transcripts containing PTBP1 hexamers within 50 nt of the TC were significantly less likely to be up-regulated upon UPF1 depletion than transcripts lacking putative binding sites in this interval, while transcripts with hexamers located 50\u2013100 from the TC showed no apparent protection from NMD (Figure 7D). Together, these data suggest that human mRNAs have evolved to avoid recognition and degradation by the NMD machinery by recruiting PTBP1 to the vicinity of TCs.\n\n## Discussion\n\nThrough a combination of functional and biochemical assays, we have shown that the RSE functions through PTBP1 to inhibit NMD. This activity is associated with a reduction in UPF1 binding to transcripts containing long 3\u2019UTRs, an early event in the process of NMD. In our model, the RSE and PTBP1 effectively mask the true length of the downstream 3\u2019UTR from UPF1, allowing the mRNA to elude surveillance. The ability of PTBP1 to antagonize UPF1 binding depends on its location on the mRNA; PTBP1 binding at the beginning of the 3\u2019UTR causes a loss of UPF1 binding, while relocation to distal sites reduces this function. This position-dependence has the advantage of allowing stabilization in response to translation termination at the proper stop codon while preserving the ability of NMD to detect premature TCs. In contrast, a position-insensitive mechanism would prevent NMD from accurately detecting de novo nonsense mutations, reducing the scope of quality control.\n\nIn its role as a splicing regulator, PTBP1 functions in a partially redundant manner with its close paralogs, PTBP2 and PTBP3/ROD1 (Keppetipola et al., 2012). In many human cell types, including those used for this study, depletion of PTBP1 leads to induction of PTBP2, which compensates for a subset of PTBP1 functions. As it possesses highly similar biochemical activities, PTBP2 may also stabilize a subset of mRNAs usually protected by PTBP1, meaning that the population of mRNAs identified here as protected from NMD is likely to underestimate the role of PTB paralogs in NMD inhibition. In addition, we expect that marking genuine TCs with PTBP1 is just one strategy employed by long 3\u2019UTRs to evade NMD. Supporting the existence of diverse solutions to the problem, yeast Pub1p was found to stabilize certain NMD targets by means that remain undefined (Ruiz-Echevarria and Peltz, 2000), and manipulation of 3\u2019UTR structure to bring the poly-A tail in spatial proximity to the TC has been shown to stabilize reporter mRNAs (Eberle et al., 2008).\n\nExtensive work on the role of PTB proteins in mediating exon exclusion in pre-mRNA splicing provides a template for a proposed mechanism for PTBP1\u2019s anti-UPF1 activity. PTBP1 contains four RRMs, each with affinity for CU-containing sequences (Oberstrass et al., 2005). Of these, RRM3 and RRM4 are oriented back-to-back, resulting in RNA loops of 15 nt or more between sites of PTBP1 contact (Lamichhane et al., 2010). These short-range looping events may also be accompanied by capture of distant CU-rich sequences by individual RRMs forming larger looped RNA structures (Clerte and Hall, 2009; Kafasla et al., 2009). It has been suggested that long-range interactions involving multiple PTBP1 molcules bound to a single RNA may be responsible for excluding binding of splicing factors, resulting in splicing repression (Chou et al., 2000; Amir-Ahmady et al., 2005; Cherny et al., 2010; Lamichhane et al., 2010; Sharma et al., 2011). Alternatively, PTBP1 may interact with proteins such as MATRIN 3 to promote the assembly of higher-order repressive complexes (Joshi et al., 2011). By direct analogy to its role in splicing, PTBP1 assembled on multiple TC-proximal CU-rich sequences could thus result in a zone of UPF1 exclusion, preventing the initial assembly of UPF1 into mRNPs (Figure 8). In addition to preventing initial UPF1 association with 3\u2019UTRs, PTBP1 could affect UPF1 already bound to an mRNA. In this scenario, PTBP1 may, as has been recently described for cytoplasmic poly-A binding protein, stimulate ATPase-dependent dissociation of UPF1 from the mRNP (Lee et al., 2015).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/11155/elife-11155-fig8-v2.jpg)\n\n**Figure 8.:** In the absence of the RSE or other sequences capable of recruiting PTBP1, UPF1 binds 3\u2019UTRs in a length-dependent manner, potentiating NMD (top). PTBP1 can bind the RSE at multiple sites throughout the 400 nt sequence. This establishes an mRNP structure in the vicinity of the stop codon that is refractory to UPF1 binding, possibly by (1) blocking 5\u2019-3\u2019 translocation of UPF1 or (2) preventing initial binding of UPF1 to the mRNA. The NMD pathway thus judges the 3\u2019UTR to be short and fails to degrade the mRNA.\n\nThe PTB family of proteins is a pioneering example of the coupling of alternative splicing regulation with NMD. A series of studies has elucidated a complex regulatory network in which PTBP1 and PTBP2 auto- and cross-regulate each other to favor production of PTC-containing transcripts that are efficiently degraded by NMD (Markovtsov et al., 2000; Romanelli et al., 2000, 2005; Rahman et al., 2002; Wollerton et al., 2004; Boutz et al., 2007; Spellman et al., 2007). In most tissues, PTBP1 regulates the alternative splicing of PTBP2 to favor production of PTC-containing transcripts that are efficiently degraded by NMD. In the brain and testes, PTBP1 is down-regulated, allowing increased expression of PTBP2 and execution of tissue-specific splicing programs. As in their roles in alternative splicing, we expect that PTBP1 and PTBP2 may stabilize partially overlapping sets of potential NMD substrates in distinct cell types (Keppetipola et al., 2012).\n\n## Materials and methods\n\n### Plasmids and Oligonucleotides\n\nWild-type RSE, RSE mutants, anti-sense RSE, and SMG5-397 sequences were amplified by PCR from the E/S wild-type RSV vector (Withers and Beemon, 2011), pcTET2-\u03b2wt-SMG5 (Jens Lykke-Andersen, UCSD) or synthesized (Integrated DNA Technologies, Coralville, IA) and inserted into reporter mRNAs at the NotI site of pcTET2-\u03b2wt-SMG5, pcTET2-\u03b2wt-GAPDH, or pcTET2-\u03b2wt-GAPDH-AdML or the BamHI (5\u2019) or PmeI (3\u2019) sites of pcDNATPEGFP-GAP (Hogg and Goff, 2010; Singh et al., 2008). To create pcTET2-\u03b2wt-PTB3-SMG5 and pcTET2-\u03b2wt-PTB6-SMG5 or pcTET2-\u03b2wt-4xMS2-SMG5, DNA cassettes containing three or six PTBP1 binding sites (CTCTCTCTTCTTCTT and TCTTCTTCTTCTTCT; as used in Xue et al., 2009) or four MS2 binding sites, respectively, were introduced into the NotI site in the parental pcTET2-\u03b2wt-SMG5 plasmid. For pcTET2-\u03b2wt-MPTB6-SMG5, an AgeI site was engineered into the SMG5 sequence of pcTET2-\u03b2wt-SMG5 600 nt downstream of the TC, and DNA cassettes containing six PTBP1 binding sites were introduced into the AgeI site. To construct pcTET2-\u03b2wt-3\u2019PTB6-SMG5, DNA cassettes containing six PTBP1 binding sites were introduced into the XbaI site in the parental pcTET2-\u03b2wt-SMG5 plasmid, 1343 nt downstream of the TC. In pcTET2-\u03b2wt-PTB3s-SMG5 and pcTET2-\u03b2wt-PTB6s-SMG5, DNA fragments containing the PTBP1 binding sites at desired locations were synthesized (Life Technologies, Frederick, MD) and cloned into pcTET2-\u03b2wt-SMG5 between NotI and AgeI sites. To generate RSV RSE variants, RSE-\u2206PTB and RSE-\u2206PTB+3xPTBBS sequences were amplified by PCR from the respective pcTET2-\u03b2wt-SMG5 variant plasmids and cloned into the E/S wild-type RSV vector between EagI and SpeI sites to replace the wild-type RSE sequence (Withers and Beemon, 2011). For stable expression of tagged UPF1, pBABE hygro (Morgenstern and Land, 1990) was modified to contain tandem protein A domains and a TEV protease cleavage site between the NaeI and NotI sites, and full-length UPF1 coding sequences was inserted between the NotI and XhoI sites. To construct plasmids expressing PTBP1 or PABPC1 with the MS2 coat protein fused at the N-terminus, the MS2cp V75E; A81G mutant (LeCuyer et al., 1995) was amplified by PCR and inserted into the NotI site of pQCXIP (Clontech, Mountain View, CA). DNA fragments encoding PTBP1 or PABC1 were amplified from respective cDNAs (Open Biosystems/Dharmacon, Lafayette, CO) and cloned into pCQXIP-MS2CP plasmid between BamHI and XhoI sites. Sequences of siRNAs (Thermo Scientific, Philadelphia, PA; Dharmacon, Lafayette, CO) used are as follows: UPF1, GAUGCAGUUCCGCUCCAUUUU; PTPB1, CUUCCAUCAUUCCAGAGAAUU; non-targeting, UAAGGCUAUGAAGAGAUAC (Mendell et al., 2004; Wagner and Garcia-Blanco, 2002).\n\n### Cell culture and extracts for mRNP purification and immunoprecipitation\n\nHEK-293T cells maintained in DMEM supplemented with 10% fetal bovine serum, 100U of penicillin/streptomycin, and 0.3 mg/ml L-Glutamine (Life Technologies) were used for mRNP purification experiments. Cells were transfected with desired constructs by calcium phosphate as described (Hogg and Collins, 2007). Cells were harvested 48\u2009hr post transfection, resuspended in hypotonic lysis buffer (HLB; 20 mM HEPES pH 7.6, 2 mM MgCl2, 10% glycerol, 1 mM DTT, supplemented with protease inhibitors), subjected to freeze-thaw lysis, and extracted in 150 mM NaCl as described (Hogg and Collins, 2007).\n\n### Immunoprecipitation and mRNP purification\n\nPP7-based mRNP purification and immunoprecipitation were performed as described, with minor modifications (Hogg and Goff, 2010). For immunoprecipitation, goat anti-Upf1 antibody (Santa Cruz), goat anti-PTBP1 antibody (Abcam, Cambridge, MA), or nonspecific goat IgG (Sigma, St. Louis, MO) pre-bound to protein G Dynabeads (Life Technologies) were incubated in extracts for 1\u2009hr, followed by extensive washing with HLB supplemented with 150 mM NaCl and 0.1% NP-40. Bound RNA was eluted from beads in Trizol reagent (Life Technologies). Where indicated, cells were treated with 100 \u00b5g/ml puromycin (Sigma, St. Louis, MO) for 4\u2009hr prior to cell extract preparation. To quantify the relative recovery of RNA, the amount of RNA in the bound fraction was divided by the amount in the total fraction for experimental and recovery control RNAs, and the recovery of the experimental RNA was normalized using the recovery of the co-expressed control RNA. Average and SD of relative mRNA recoveries from biological replicates performed using extracts from cells transfected separately are reported.\n\nExperiments to test for post-lysis rearrangement of protein-RNA interactions were conducted as described above, except that parental 293 Tet-off cells or cells stably transduced with retroviral vectors encoding tandem protein A-tagged UPF1 were transfected with mRNA expression vectors. Equal amounts of extract (determined by total protein content) prepared from cells expressing both tagged protein and exogenous mRNA were mixed with extracts from parental cells lacking exogenous RNA expression, or extracts from parental cells expressing only exogenous mRNAs were mixed with extracts from cells expressing only tagged UPF1. Affinity purifications were carried out using rabbit IgG conjugated with M-270 epoxy Dynabeads (Life Technologies) according to the manufacturer\u2019s instructions.\n\nFor mRNP purification, whole cell extracts of HEK293T cells were adjusted to 5 mg/mL protein in HLB with 150 mM NaCl. Purified ZZ-tev-PP7CP (0.5 \u00b5g) was mixed with 500 \u00b5l of extracts by rotating for 60\u2009min at 4\u00b0C. 50 \u00b5l of the Rabbit IgG-conjugated M-270 Dynabeads were added to 500 \u00b5l of extracts premixed with ZZ-tev-PP7CP. The mixture was rotated for an additional 60\u2009min at 4\u00b0C to allow binding. The beads were then washed extensively in HLB supplemented with 150 mM NaCl, 0.1% NP-40, and 1 mM DTT. Bound RNA and protein were eluted from beads in LDS sample buffer (Life Technologies) or in HLB supplemented with 1\u00a0M NaCl (in preparation for mass spectrometry).\n\n### Mass spectrometry\n\nProteins eluted from mRNP purifications were precipitated in cold acetone (Thermo Scientific) and subsequently resuspended in 6\u00a0M urea (Thermo Scientific). Proteins were reduced in 20 mM DTT (Thermo Scientific), alkylated in 50 mM iodoacetamide (Thermo Scientific), diluted to 2\u00a0M urea, and digested with trypsin (Promega, Madison, WI) overnight. Peptides were purified using C18 Zip-Tips (EMD Millipore, Taunton, MA), according to the manufacturer\u2019s instructions. Samples were loaded onto a Zorbax C18 trap column (Agilent Tech, Santa Clara, CA) using an on-line Eksigent (Dublin, CA) nano-LC ultra HPLC system to further desalt the peptide mixture. Peptides were separated on a 10 cm Picofrit C18 column (New Objective, Woburn, MA) using a 90\u2009min linear gradient of 5\u201335% acetonitrile/water containing 0.1% formic acid. The samples were ionized via electrospray ionization (ESI) in positive mode and analyzed on a LTQ Orbitrap Velos mass spectrometer (Thermo Electron, San Jose, CA). LC MS/MS experiments were carried out using a 'data-dependent' analysis in which the top 6 most intense precursor ions from the full MS precursor scan were selected for fragmentation via collision-induced dissociation (CID). Precursor ions were measured in the orbitrap at a resolution of 30,000 (m/z = 400) and all fragment ions were analyzed in the linear ion-trap.\n\nAll LC MS/MS data was searched against the human Swissprot database (20312 sequences) using MASCOT to obtain peptide and protein identifications. Mass tolerances of \u00b1 20 ppm and \u00b1 0.8 Da were selected for precursor and fragment ions, respectively. Trypsin was specified as the digestion enzyme allowing for up to 2 missed cleavages. Carbamidomethylation (C) was selected as a static modification and oxidation (M) was selected as a variable modification. MASCOT database search results were then imported into Scaffold (Proteome Software, Portland, OR) for further validation of peptide and protein identifications.\n\n### mRNA decay assays\n\nHeLa Tet-off Advance cells (Clontech, Mountain View, CA) maintained in DMEM supplemented with 10% FBS and 5 ng/ml doxycycline (Sigma, St. Louis, MO) were transfected in 60 mm plates using Turbofect (Thermo Scientific), according to the manufacturer\u2019s instructions. For each plate, 800 ng of the indicated pcTET2-\u03b2wt plasmid was co-transfected with 200 ng pc\u03b2wt\u03b2 and 1000 ng pcDNA3.1 empty vector (Lykke-Andersen et al., 2000; Singh et al., 2008). Cells were split into four equal aliquots in 12-well plates 24\u2009hr post-transfection. The next day, cells were washed with 1 ml PBS and incubated in medium without doxycycline for 4\u2009hr. Transcription was quenched by adding doxycycline to a final concentration of 1 \u00b5g/ml, and cells were harvested in Trizol (Life Technologies) after 30\u2009min and at the indicated intervals. mRNA levels from biological replicates performed using extracts from cells transfected separately are reported for all decay assays. Prism software (GraphPad) was used to graph the fraction of remaining RNA at the indicated time points on semi-log plots, obtain the rate of RNA decay (kdecay) by fitting to a linear equation using the least squares method, determine 95% confidence intervals, and test the significance of differences among the slopes (two-tailed ANCOVA). The half-lives of the mRNAs were calculated using the equation: t1/2 =ln2/kdecay.\n\nTo conduct mRNA decay assays in cells depleted for specific factors by RNAi, 293 Tet-off cells were first transfected with 120 pmol (single siRNA treatment) or 60 pmol (dual siRNA treatment) of each of the indicated siRNAs (Thermo Scientific; Dharmacon, Lafayette, CO) in 6-well plates using Lipofectamine RNAiMAX (Life Technologies), according to the manufacturer\u2019s instructions. Cells were split into four equal aliquots in 24-well plates 24\u2009hr post-transfection. The next day, cells were transfected with reporter constructs using Turbofect (Thermo Scientific). For each well, 100 ng of the indicated pcTET2-\u03b2wt plasmid was co-transfected with 25 ng pc\u03b2wt\u03b2 and 125 ng pcDNA3.1 empty vector, and mRNA decay assays were performed and analyzed as described above.\n\n### Northern blotting\n\nRNA was isolated using Trizol (Life Technologies) and resolved on formaldehyde/agarose gels. 32P-labeled in vitro transcribed probes against \u03b2-globin or random-primed DNA probes against GFP were used for detection of mRNAs. Northern blots were imaged on Storm or Typhoon Trio scanners and quantification was performed using ImageQuant software (GE Healthcare, Pittsburgh, PA).\n\n### RNase protection assays\n\nSecondary chicken embryo fibroblast (CEF) cultures were grown at 39\u00b0C and 5% CO2 in medium 199 supplemented with 2% tryptose phosphate broth, 1% chick serum, 1% calf serum and 1% antibiotic-antimycotic. Transient transfections were performed as described (Paca et al., 2000), using 100 \u00b5g/mL of DEAE-dextran in serum-free medium 199. Cells were transfected with 3 \u00b5g of DNA in 6 cm dishes that were 80% confluent. Probe generation and RNase protection assays were performed as previously described (LeBlanc and Beemon, 2004). Total cellular RNA was harvested from CEFs 43\u201348\u2009hr post-transfection using RNA-Bee (Tel-test). RNAs were hybridized overnight with ~250,000 cpm of [\u03b1-32P] GTP radiolabeled probe, then digested with 10 U/mL of RNase T1 and 5 \u00b5g/mL of RNase A at 33\u00b0C for 45\u2009min. Sodium dodecyl sulfate and proteinase K were added and samples were incubated at 37\u00b0C for 20 min to halt digestion. RNAs were extracted with phenol-chloroform-isoamyl alcohol (25:24:1), followed by ethanol precipitation. RNAs were resuspended in 95% formamide loading dye and denatured for 3\u2009min at 95\u00b0C. Samples were electrophoresed on 6% acrylamide-8 M urea sequencing gels and RNA levels were quantified using a Typhoon Phosphorimager (GE Healthcare) and ImageQuant software (GE Healthcare). mRNA levels from biological replicates performed using extracts from cells transfected separately are reported.\n\n### qPCR\n\n293 Tet-off cells were transfected with siRNAs in 6-well plates using RNAiMAX (Life Technologies), as described above. Cells were harvested 72\u2009hr post-transfection and total RNA was extracted using RNeasy Mini Kit (Qiagen, Venlo, Netherlands). 500 ng of each total RNA sample was used for cDNA synthesis using the Maxima First Strand cDNA Synthesis Kit for RT-qPCR (Thermo Scientific). cDNAs were diluted 1:40 with water and used for qPCR with the FastStart Essential DNA Green Master kit on a LightCycler 96 thermocycler (Roche, Basel, Switzerland). Relative transcript abundances were calculated by the \u0394\u0394Ct method, and statistical significance was assessed by two-tailed Student\u2019s t-test (Prism software, GraphPad). mRNA levels from biological replicates performed using extracts from cells transfected separately are reported.\n\n### RNA-seq\n\nFor RNA-seq, 1\u00a0\u03bcg of each total RNA sample was used for library preparation. Ribosomal RNAs (rRNAs) were subtracted from total RNA with Ribo-Zero rRNA Removal Kits (Human/Mouse/Rat; Epicentre). Following purification, RNA was fragmented and converted into first strand cDNA using reverse transcriptase and random primers, followed by second strand cDNA synthesis using DNA Polymerase I and RNase H. Following adapter ligation, products were purified and amplified by PCR to create final cDNA libraries. cDNA libraries were validated using an Illumina Miseq and paired-end 50\u00a0bp sequencing was performed on an Illumina HiSeq 2000 instrument. Raw data in FASTQ format was aligned to the reference genome hg19 using TopHat2/bowtie2. Reads mapping to the 3\u2019UTRs of RefSeq genes were counted by Bedtools. Every RefSeq transcript and its 3\u2019UTR expression level were normalized by three steps: calculating raw reads into RPKM (reads per-kilobase-per million), 75th percentile normalization and log2 transformation. The dataset was filtered to remove mRNAs represented by fewer than 25 3\u2019UTR-mapped reads, and differentially expressed genes were selected by one-way ANOVA analysis (Figure 6; p<0.05). The RefSeq transcript with the longest annotated 3\u2019UTR for each gene was used for construction of the reference set of mRNAs used in all subsequent analyses (designated 'exemplar' RefSeq mRNAs). For Figures 6 and 7, the six most highly enriched hexamers in PTBP1 CLIP experiments (Xue et al., 2009; UUCUCU, UCUUCU, UCUCUU, UCUCUG, CUUUCU, and CUUCUC), representing over 50% of all PTBP1 CLIP peaks, were used.\n\n### CLIP analysis\n\nPTBP1 (GSE42701; Xue et al., 2013) and UPF1 (GSE47976; Zund et al., 2013) CLIP datasets were obtained from the NCBI SRA database. For UPF1 data, reads not starting with GTT (derived from the iCLIP RT primer) were removed to avoid ambiguous reads, and duplicate reads with identical degenerate barcode sequences were removed with fastx_collapser (http://hannonlab.cshl.edu/fastx_toolkit/commandline.html). The first 7 nucleotides (containing barcodes) of collapsed reads were trimmed before alignment. For PTBP1, sequence duplicates were collapsed, and the first three nucleotides were trimmed before alignment. Novoalign (Novocraft), which allows the detection of small insertions, deletions and substitutions, was used to map CLIP reads to the hg19 human genome. Basic parameters were the same as those previously described (Moore et al., 2014): a maximum of two-nucleotide mismatches and a minimum of 25 high quality matches were allowed. Bam files were then input into PIPE-CLIP (Chen et al., 2014) to identify peaks with default parameters for iCLIP (UPF1) and HITS-CLIP (PTBP1). The peaks were annotated with Pavis (Huang et al., 2013), and HOMER (Heinz et al., 2010) was used to quantify CLIP tag density around stop codons. Only peaks narrower than 500 nucleotides were used for further analysis. Stop codon chromosomal locations were retrieved from the refGene table in hg19 of UCSC. For Figure 7B, only mRNAs with 3\u2019UTRs greater than 500 nt were analyzed to avoid bias due to the selection of transcripts containing CLIP peaks in the indicated intervals.\n\n### Sequences\n\nSequences used for RSE wild-type and mutant constructs are listed below, with mutated putative PTBP1 binding sites underlined.\n\n#### WT RSE sequence\n\nAGGGCCACTGTTCTCACTGTTGCGCTACATCTGGCTATTCCGCTCAAATGGAAGCCAGACCACACGCCTGTGTGGATTGACCAGTGGCCCCTCCCTGAAGGTAAACTTGTAGCGCTAACGCAATTAGTGGAAAAAGAATTACAGTTAGGACATATAGAACCTTCACTTAGTTGTTGGAACACACCTGTCTTCGTGATCCGGAAGGCTTCCGGGTCTTACCGCTTACTGCATGATTTGCGCGCTGTTAACGCCAAGCTTGTTCCTTTTGGGGCCGTCCAACAGGGGGCGCCAGTTCTCTCCGCGCTCCCGCGTGGCTGGCCCCTGATGGTCTTAGACCTCAAGGATTGCTTCTTTTCTATCCCTCTTGCGGAACAAGATCGCGAAGCTTTTGCATTTA\n\n#### RSE-\u0394PTB sequence\n\nAGGGCCACTGTGATCAAGGTTGCGCTACATCTGGAGATGACGAGCAAATGGAAGCCAGACCACACGCCTGTGTGGATTGACCAGTGGCCCAGCCAGGAAGGTAAAATGGTAGCGCTAACGCAATTAGTGGAAAAAGAATTACAGTTAGGACATATAGAACAGTCAAGTAGTTGTTGGAACACACAGGTCTGAGTGATCCGGAAGGCTGACGGGTAGTACCGCTGAATGCATGATTTGCGCGCTGTTAACGCCAAGAGTGTGACTTGTGGGGCCGTCCAACAGGGGGCGCCAGTTAGCGCAGCGCTACCGCGTGGCTGGCACCTGATGGGATTAGACCGAAAGGATTGCTGATGTTATATCCAGCTAGCGGAACAAGATCGCGAAGCTGTTGCATTTA\n",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "d9db2663-7fbd-4e1a-b16e-2e86c7091f98",
+      "submission_id": "5aafc8f2-fe4d-4ea8-a80e-ba632cb1f10c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elisa Izaurralde, Max Planck Institute Development Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11155.028](https://doi.org/10.7554/eLife.11155.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"PTBP1 excludes UPF1 to inhibit nonsense-mediated mRNA decay\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Detlef Weigel as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, the Hogg lab reports a role for the hnRNP protein, PTBP1, in binding to long 3'UTRs of target mRNAs leading to the exclusion of UPF1 and resulting in protection from the NMD response. This is an original and well-written manuscript that tests an interesting hypothesis and identifies PTBP1 as an NMD suppressor. The referees asked for the following experiments to more strongly support the conclusions.\n\nEssential revisions:\n\n1) The effects are relatively weak. One way to strengthen the conclusions will be to insert PTBP1 binding sites downstream of nonsense codons in well characterized NMD reporters (e.g., \u03b2-globin or TCR-\u03b2), that are efficiently degraded by NMD or to tether PTBP1 downstream of a stop codon.\n\n2) The evidence for the competition for mRNA binding model relies on the RNA-IP data. However, no X-linking was involved in the protocol and the authors cannot rule out about post-lysis rearrangements possibly confounding the results (as described by Mili and Steitz). The authors should perform control experiments to test the extent of such rearrangements in their assays.\n\n3) To use the GFP-bGH construct for normalization seems inadequate, since the authors mention that this binds very little UPF1. Thus, there is the risk that one normalizes against essentially unspecific background signal. The authors should use instead a construct for normalization that is known to associate abundantly with UPF1.\n\n4) Figure 8: The data for UPF3b is not convincing. In panel A, the increase in RNA abundance between NT and siUPF1 is about the same as the difference between siPTBP1 and siPTBP1/siUPF1, suggesting that the UPF1-induced increase is independent of PTBP1. Furthermore, panel B should be completed with a determining the half-lives of these two constructs under PTB and UPF1 knockdown.\n",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47e381c3-eaa3-4ba3-9b67-aa56307f16b6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C1",
+      "claim": "The nonsense-mediated mRNA decay (NMD) pathway degrades mRNAs containing long 3'UTRs to perform dual roles in mRNA quality control and gene expression regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonsense-mediated mRNA decay (NMD) pathway degrades mRNAs containing long 3'UTRs to perform dual roles in mRNA quality control and gene expression regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that draws on established scientific knowledge about NMD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "6128df30-df28-40c3-900b-126cdaca907e",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C2",
+      "claim": "Polypyrimidine tract binding protein 1 (PTBP1) shields specific retroviral and cellular transcripts from NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the polypyrimidine tract binding protein 1 (PTBP1) shields specific retroviral and cellular transcripts from NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experimental approaches including decay assays, immunoprecipitation, and RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "34ff055d-1556-4cc1-8136-bd220caa98f6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C3",
+      "claim": "When bound near a stop codon, PTBP1 blocks the NMD protein UPF1 from binding 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "When bound near a stop codon, PTBP1 blocks the NMD protein UPF1 from binding 3'UTRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoprecipitation experiments showing reduced UPF1 binding to mRNAs containing PTBP1 binding sites near stop codons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "29e91ea4-9460-4566-bca4-db0319834d66",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C4",
+      "claim": "PTBP1 enrichment near stop codons correlates with 3'UTR length and resistance to NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "we use RNA-seq and transcriptome-wide analysis of PTBP1 binding sites to show that many human mRNAs are protected by PTBP1 and that PTBP1 enrichment near stop codons correlates with 3'UTR length and resistance to NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data and CLIP-seq analysis showing correlations between PTBP1 binding position, 3'UTR length, and NMD sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "51a73c4e-21cd-4d71-afb2-53ed36b7e743",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C5",
+      "claim": "NMD is estimated to regulate 5\u201310% of all human genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the pathway is commonly estimated to regulate 5\u201310% of all human genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific consensus from the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "92be7cc6-eaf5-4d97-8937-06fa0fffc44b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C6",
+      "claim": "UPF1 is the focal point of the NMD pathway with functions in target discrimination, translational repression, RNase recruitment, and post-decay RNP remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The superfamily I RNA helicase UPF1 is the focal point of the NMD pathway, with characterized functions throughout the process of target discrimination, translational repression, RNase recruitment, and post-decay RNP remodeling (Czaplinski et al., 1995; Franks et al., 2010; Hogg and Goff, 2010; Isken et al., 2008; Okada-Katsuhata et al., 2012; Unterholzner and Izaurralde, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "bbadf0b3-318c-4835-8454-7198cf33f106",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C7",
+      "claim": "The UPF1 helicase domain forms an extensive surface for high-affinity, sequence-nonspecific RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The UPF1 helicase domain forms an extensive surface for high-affinity, sequence-nonspecific RNA binding, allowing the protein to associate with the full diversity of NMD substrates (Chakrabarti et al., 2011; Fiorini et al., 2012; Hurt et al., 2013; Zund et al., 2013; Kurosaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "1cf36499-ab15-4a78-a93e-efff8abbfea5",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C8",
+      "claim": "Elongating ribosomes can disrupt UPF1's promiscuous RNA binding activity, leading to preferential UPF1 accumulation on 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongating ribosomes can disrupt UPF1's promiscuous RNA binding activity, leading to preferential UPF1 accumulation on 3'UTRs (Hogg and Goff, 2010; Hurt et al., 2013; Zund et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "2dfcb698-e141-460e-8af8-9202bdad38f6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C9",
+      "claim": "The average 3'UTR length in human cells has evolved to exceed that necessary to induce NMD of reporter transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly true in human cells, in which the average 3'UTR length has evolved to exceed that necessary to induce NMD of reporter transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of natural 3'UTR lengths with experimental reporter data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "63936855-2dd9-4efb-8ab1-d8c9d19df52d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C10",
+      "claim": "The RSE is a 400-nt element located immediately downstream of the gag TC in the unspliced RSV viral RNA that robustly protects the viral RNA from UPF1-dependent decay in chicken cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSE is a 400-nt element located immediately downstream of the gag TC in the unspliced RSV viral RNA that robustly protects the viral RNA from UPF1-dependent decay in chicken cells (Quek and Beemon, 2014; Weil and Beemon, 2006; Weil et al., 2009; Withers and Beemon, 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on the RSE.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "0ff08eeb-2e5b-4c48-89cc-ce10a2aae72d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C11",
+      "claim": "The RSE protects mRNAs from NMD in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first set out to test whether the avian retrovirus-derived RSE retains its anti-NMD function in human cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by decay assays showing that transcripts containing the RSE have longer half-lives than control transcripts in human cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "4c2a3abc-682f-4ecd-b3d4-92ac5c3e425a",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C12",
+      "claim": "Transcripts containing the RSE had a half-life of approximately 400 minutes compared to less than 120 minutes for transcripts containing the AS-RSE sequence in control siRNA-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts containing the RSE were substantially more stable (half-life ~400 min) than transcripts containing the AS-RSE sequence (<120 min), confirming the protective activity of the RSE (Figure 1C, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured in decay assays shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "469ef811-8904-49ba-a7c9-61189ea46ed8",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C13",
+      "claim": "In cells depleted of UPF1, all transcripts had half lives of greater than 240 min, indicating that the observed decay in siNT-treated cells was due to the activity of UPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in cells depleted of UPF1, all transcripts had half lives of greater than 240 min, indicating that the observed decay in siNT-treated cells was due to the activity of UPF1 (Figure 1C, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing decay rates in control vs UPF1-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "274b6c26-1b4a-459a-ad1f-de309e0498b1",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C14",
+      "claim": "The RSE exhibits position-dependent activity, losing its protective function when placed in the middle or at the end of the SMG5 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirmed that the RSE also exhibits this property when used to shield reporter transcripts in human cells, as placement of the RSE in the middle or at the end of the SMG5 3'UTR abolished its protective activity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by decay assays with RSE at different positions shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "4814663c-fc38-4f36-b3b6-850d8d1ceee1",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C15",
+      "claim": "The RSE is capable of suppressing both EJC-independent and EJC-stimulated NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the intron-containing 3'UTR caused rapid decay of tet-regulated reporter constructs. In contrast, mRNAs containing the RSE were highly stabilized, indicating that the RSE is capable of suppressing both EJC-independent and EJC-stimulated NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by decay assays with intron-containing 3'UTRs shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "062f3264-7436-494b-8a2f-5619b1ba9370",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C16",
+      "claim": "The RSE reduces UPF1 association with mRNAs in a sequence- and position-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the RSE prevents NMD by reducing UPF1 binding to 3'UTRs in a sequence- and position-dependent manner (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments showing reduced UPF1 co-purification with RSE-containing mRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f56137f7-8bdb-48bd-8060-55a49af40730",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C17",
+      "claim": "A marked reduction in UPF1 association with RSE-containing RNAs was observed relative to RNAs in which the RSE was moved to the 3' end of the transcript or replaced with the SMG5-397 element.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2B and C, we observed a marked reduction in UPF1 association with RSE-containing RNAs relative to RNAs in which the RSE was moved to the 3' end of the transcript or replaced with the SMG5-397 element.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured in immunoprecipitation experiments shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "b72a4c57-7fd6-4b3f-83f2-8391a5cc3b32",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C18",
+      "claim": "The RSE retained the capacity to antagonize UPF1 binding in the absence of translation termination events.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the RSE retained the capacity to antagonize UPF1 binding in the absence of translation termination events (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments in puromycin-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c64706fe-1003-4034-addc-ab59a7522cbd",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C19",
+      "claim": "PTBP1 was identified as over-represented in mRNPs containing the RSE sequence compared to control mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several proteins were over-represented in mRNPs containing the RSE sequence, including polypyrimidine tract binding protein 1 (PTBP1), heterogeneous nuclear ribonucleoprotein L (hnRNP L), MATRIN 3, and splicing factor, arginine and serine-rich 14 (SFRS14; Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry analysis of affinity-purified mRNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "cfd47f87-c34e-4f9f-a139-81848d55e222",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C20",
+      "claim": "The RSE sequence contains as many as eleven CU-rich clusters corresponding to putative PTBP1 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indicative of the potential for robust PTBP1 binding, examination of the RSE sequence revealed as many as eleven CU-rich clusters corresponding to putative PTBP1 binding sites spread throughout the 400 nt element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of the RSE using known PTBP1 binding motifs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c12736a1-428d-4908-9ca2-b17cad1a59ac",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C21",
+      "claim": "PTBP1 association with the RSE-\u0394PTB-containing transcripts was significantly reduced compared to the wild-type RSE-containing transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figures 3B and C, PTBP1 association with the RSE-\u0394PTB-containing transcripts was significantly reduced compared to the wild-type RSE-containing transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "5a5b88e2-aece-45d4-8709-b6f7811dbfe6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C22",
+      "claim": "Transcripts containing the RSE-\u0394PTB sequence displayed substantially increased UPF1 association compared to wild-type RSE.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blots of co-purified mRNAs indicated transcripts containing the RSE-\u0394PTB sequence displayed substantially increased UPF1 association (Figures 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "67f76aab-ef52-4654-a20d-af129f48c056",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C23",
+      "claim": "Reintroducing six PTBP1 binding sites into the RSE-\u0394PTB led to recovery of PTBP1 association to levels similar to those found in association with the wild-type RSE.",
+      "claim_type": "EXPLICIT",
+      "source": "Reintroducing six PTBP1 binding sites into the RSE-\u0394PTB led to recovery of PTBP1 association to levels similar to those found in association with the wild-type RSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "698b2aa8-df9c-49f4-8202-36e89c9f4d9c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C24",
+      "claim": "RSE-\u0394PTB-containing viral RNAs were present at much lower levels than RNAs protected by the wt RSE sequence in chicken embryonic fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, the RSE-\u0394PTB-containing viral RNAs were present at much lower levels than RNAs protected by the wt RSE sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RNase protection assays shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8c57878c-efb0-47b6-b5f1-2c9dd82e5b6c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C25",
+      "claim": "Viral RNAs containing the RSE-\u0394PTB+3xPTBBS sequence exhibited substantial rescue of RNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral RNAs containing the RSE-\u0394PTB+3xPTBBS sequence exhibited substantial rescue due to the inclusion of artificial PTB binding sites (Figure 4B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNase protection assays shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "b2f59ede-458c-48bd-b8e6-109e26fe428f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C26",
+      "claim": "Six PTBP1 binding sites led to almost complete restoration of RNA levels in RSV viral RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and six PTBP1 binding sites led to almost complete restoration of RNA levels, consistent with the effects of this RSE variant on PTBP1 and UPF1 binding (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNase protection assays shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "addae379-dd0d-4773-9b62-3517c396432d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C27",
+      "claim": "Targeted mutation of the putative PTBP1 binding sites in the RSE resulted in transcript stability similar to that of mRNAs containing the inactive antisense RSE sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, targeted mutation of the putative PTBP1 binding sites in the RSE resulted in transcript stability similar to that of mRNAs containing the inactive antisense RSE sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by decay assays shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c8efa944-06e7-436f-bb3d-f67fd0a23b4f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C28",
+      "claim": "Transcripts containing the RSE-\u0394PTB+6xPTBBS variant exhibited stability comparable to transcripts containing the wt RSE.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts containing the RSE-\u0394PTB+6xPTBBS variant (half-life >9 hr) exhibited stability comparable to transcripts containing the wt RSE, indicating that the RSE regained most or all of its function after restoration of six PTB binding sites at arbitrarily chosen sites (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by decay assays shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "00976898-ac0a-4452-b3c5-076ae49a9fa3",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C29",
+      "claim": "Addition of three PTBP1 binding sites significantly improved transcript stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In RNA decay assays, we found that addition of three PTBP1 binding sites significantly improved transcript stability, with the distributed binding sites having a marginally stronger effect (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by decay assays shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "a3918cf2-e984-411e-b501-14fddc975773",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C30",
+      "claim": "Transcripts containing either arrangement of six PTBP1 binding sites were highly stabilized relative to control transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, transcripts containing either arrangement of six PTBP1 binding sites were highly stabilized relative to control transcripts, demonstrating that PTBP1 binding is capable of recapitulating RSE function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by decay assays shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "be9d3ac1-6a57-4622-b775-4e06fd041cdc",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C31",
+      "claim": "mRNAs in which a cluster of six PTBP1 binding sites were introduced into the SMG5 3'UTR 600 nt or 1200 nt downstream of the TC were highly unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the position-dependence of the full-length RSE (Figure 1\u2014figure supplement 1), mRNAs in which a cluster of six PTBP1 binding sites were introduced into the SMG5 3'UTR 600 nt or 1200 nt downstream of the TC were highly unstable (Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by decay assays shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "9472af89-132d-46b3-a284-944fab256365",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C32",
+      "claim": "Reporter mRNAs were comparably stabilized by co-expression with MS2-PABC1 or MS2-PTBP1, relative to co-expression with the MS2 coat protein alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the reporter mRNAs were comparably stabilized by co-expression with MS2-PABC1 or MS2-PTBP1, relative to co-expression with the MS2 coat protein alone (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by tethering assays shown in Figure 5\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "ee631c54-61e2-42b5-afce-9e7823c7e39d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C33",
+      "claim": "mRNAs from 495 genes reproducibly decreased in abundance upon depletion of PTBP1 in RNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In biological replicates, mRNAs from 495 genes reproducibly decreased in abundance upon depletion of PTBP1, relative to their expression levels in cells treated with control siRNA (Figure 6A; see also Figure 6\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis comparing PTBP1-depleted cells to control cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c7a6b070-e140-4eb4-af7c-658e8de9da54",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C34",
+      "claim": "188 genes were designated as 'rescued' based on reproducible increases in siPTB/siUPF1 vs siPTB alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the transcripts down-regulated upon PTBP1 knockdown, we designated mRNAs from 188 genes observed to reproducibly increase in siPTB/siUPF1 vs siPTB alone as 'rescued.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis comparing double knockdown to single PTBP1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "021faedc-276e-4470-abf5-43fc55d544dd",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C35",
+      "claim": "Concurrent knockdown of UPF1 and PTBP1 caused an increase in mRNA levels among PTBP1-dependent genes on average.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, concurrent knockdown of UPF1 and PTBP1 caused an increase in mRNA levels among PTBP1-dependent genes (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA-seq analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "85105e2e-8d2c-4732-baea-5637f6b8f255",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C36",
+      "claim": "The average accumulation of PTBP1-dependent mRNAs was not altered upon UPF1 depletion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "while the average accumulation of PTBP1-dependent mRNAs was not altered upon UPF1 depletion alone (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA-seq analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "d82e047d-894e-47bf-9c6b-59e79b38e7ca",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C37",
+      "claim": "mRNAs down-regulated in PTBP1-depleted cells had a median 3'UTR length of 1577 nt, significantly longer than the median 3'UTR length among all mRNAs expressed in the RNAseq dataset (1308 nt).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mRNAs down-regulated in PTBP1-depleted cells had a median 3'UTR length of 1577 nt, significantly longer than the median 3'UTR length among all mRNAs expressed in the RNAseq dataset (1308 nt; Figure 6D; see Materials and methods for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of 3'UTR lengths from RNA-seq data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "05e124f1-2a45-4273-a97c-a4e0ae818730",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C38",
+      "claim": "The population of mRNAs that were both significantly down-regulated by siPTBP1 treatment and rescued by co-depletion of PTBP1 and UPF1 exhibited a median 3'UTR length of 1843 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the population of mRNAs that were both significantly down-regulated by siPTBP1 treatment and rescued by co-depletion of PTBP1 and UPF1 exhibited an even greater median length of 1843 nt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of 3'UTR lengths from RNA-seq data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "72d4f62b-49e9-4f78-b21c-da84e4420433",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C39",
+      "claim": "PTBP1 CLIP signal derived from exons was preferentially located within 200 nt of TCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PTBP1 CLIP signal derived from exons was preferentially located within 200 nt of TCs, consistent with a role for PTBP1 in marking translation termination events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of published PTBP1 CLIP-seq data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "b36c4247-4f7b-4738-a6e6-1929468b916f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C40",
+      "claim": "Transcripts with PTBP1 CLIP peaks centered within the first 200 nt of the TC had longer 3'UTRs than those lacking peaks near the TC.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with a role for PTBP1 in protecting potential NMD substrates, transcripts with PTBP1 CLIP peaks centered within the first 200 nt of the TC had longer 3'UTRs than those lacking peaks near the TC (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of PTBP1 CLIP-seq data and 3'UTR lengths shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "236d94a4-77db-4a3c-bcb9-11cb60b3377b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C41",
+      "claim": "mRNAs with PTBP1 peak centers within 200 nt of the TC were significantly less likely to be up-regulated upon UPF1 knockdown than mRNAs without TC-proximal peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, mRNAs with PTBP1 peak centers within 200 nt of the TC were significantly less likely to be up-regulated upon UPF1 knockdown than mRNAs without TC-proximal peaks, indicating that this population of PTBP1-bound mRNAs is insensitive to NMD under normal conditions (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on combined analysis of PTBP1 CLIP-seq and RNA-seq data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "08cf4ae8-8ff5-4a97-b778-dd84bd47e73f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C42",
+      "claim": "Transcripts containing PTBP1 hexamers within 50 nt of the TC were significantly less likely to be up-regulated upon UPF1 depletion than transcripts lacking putative binding sites in this interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, transcripts containing PTBP1 hexamers within 50 nt of the TC were significantly less likely to be up-regulated upon UPF1 depletion than transcripts lacking putative binding sites in this interval, while transcripts with hexamers located 50\u2013100 from the TC showed no apparent protection from NMD (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of predicted PTBP1 binding sites and RNA-seq data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "841c2cb2-8f66-4617-8b39-0a4d7910292e",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C43",
+      "claim": "The RSE functions through PTBP1 to inhibit NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a combination of functional and biochemical assays, we have shown that the RSE functions through PTBP1 to inhibit NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by multiple experimental approaches including mutagenesis, immunoprecipitation, and decay assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "3ded26de-d458-4b38-b1ce-1e465f584784",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C44",
+      "claim": "The RSE and PTBP1 effectively mask the true length of the downstream 3'UTR from UPF1, allowing the mRNA to elude surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the RSE and PTBP1 effectively mask the true length of the downstream 3'UTR from UPF1, allowing the mRNA to elude surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the experimental data showing reduced UPF1 binding and increased mRNA stability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "d12364b6-8c65-42e9-afe1-338a5654cec8",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C45",
+      "claim": "The ability of PTBP1 to antagonize UPF1 binding depends on its location on the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of PTBP1 to antagonize UPF1 binding depends on its location on the mRNA; PTBP1 binding at the beginning of the 3'UTR causes a loss of UPF1 binding, while relocation to distal sites reduces this function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing position-dependent effects of PTBP1 binding sites on UPF1 association and mRNA stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "698734ab-7747-4624-a1eb-5fb9e98078d3",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C46",
+      "claim": "PTBP1 contains four RRMs, each with affinity for CU-containing sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "PTBP1 contains four RRMs, each with affinity for CU-containing sequences (Oberstrass et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "3151f189-21cd-4629-b8fe-1b178423d860",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C47",
+      "claim": "RRM3 and RRM4 of PTBP1 are oriented back-to-back, resulting in RNA loops of 15 nt or more between sites of PTBP1 contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, RRM3 and RRM4 are oriented back-to-back, resulting in RNA loops of 15 nt or more between sites of PTBP1 contact (Lamichhane et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "b9c1c1fc-0481-438d-8100-c89e98ad1477",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C48",
+      "claim": "PTBP1 and PTBP2 auto- and cross-regulate each other to favor production of PTC-containing transcripts that are efficiently degraded by NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of studies has elucidated a complex regulatory network in which PTBP1 and PTBP2 auto- and cross-regulate each other to favor production of PTC-containing transcripts that are efficiently degraded by NMD (Markovtsov et al., 2000; Romanelli et al., 2000, 2005; Rahman et al., 2002; Wollerton et al., 2004; Boutz et al., 2007; Spellman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research on PTBP1/2 regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "0e00bda8-e155-4f0e-a809-9855c5ea45a0",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C49",
+      "claim": "In most tissues, PTBP1 regulates the alternative splicing of PTBP2 to favor production of PTC-containing transcripts that are efficiently degraded by NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "In most tissues, PTBP1 regulates the alternative splicing of PTBP2 to favor production of PTC-containing transcripts that are efficiently degraded by NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about PTBP1/2 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "fee88ad8-a5ec-43ba-a8d8-00365b8bf6ce",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C50",
+      "claim": "In the brain and testes, PTBP1 is down-regulated, allowing increased expression of PTBP2 and execution of tissue-specific splicing programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain and testes, PTBP1 is down-regulated, allowing increased expression of PTBP2 and execution of tissue-specific splicing programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about tissue-specific PTBP1/2 expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "0b59248e-a990-4d92-bfea-ee99568137b7",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C51",
+      "claim": "UPF1 association with mRNAs precedes commitment to decay and does not require ongoing translation.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies have shown that UPF1 association with mRNAs precedes commitment to decay and does not require ongoing translation (Hogg and Goff, 2010; Hurt et al., 2013; Zund et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "cd7354a8-f016-4da2-b2ca-b38ba8b7fa4a",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C52",
+      "claim": "UPF2 and UPF3B stimulate UPF1's ATPase and decay-promoting activities.",
+      "claim_type": "EXPLICIT",
+      "source": "UPF2 and UPF3B stimulate UPF1's ATPase and decay-promoting activities and serve as a physical link between UPF1 and the exon junction complex (EJC), a strong activator of decay in vertebrate NMD (Chamieh et al., 2008; Le Hir et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "9f30aca4-8d4b-40cb-b1f6-f51f0bb3f9be",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C53",
+      "claim": "Interaction of UPF1 with release factors eRF1/3 at the terminating ribosome promotes phosphorylation of UPF1 by the SMG1 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction of UPF1 with release factors eRF1/3 at the terminating ribosome promotes phosphorylation of UPF1 by the SMG1 kinase, which in turn mediates recruitment and/or activity of the SMG6 endonuclease, the SMG5/7 complex, and decapping and deadenylation factors (Jonas et al., 2013; Loh et al., 2013; Chakrabarti et al., 2014; Glavan et al., 2006; Huntzinger et al., 2008; Kashima et al., 2006; Nicholson et al., 2014; Ohnishi et al., 2003; Okada-Katsuhata et al., 2012; Eberle et al., 2009; Unterholzner and Izaurralde, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "cc242494-e742-4202-bc08-167fbdbd1233",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C54",
+      "claim": "Systematic analyses of reporter transcripts revealed a progressive UPF1-dependent decrease in mRNA half-life with increasing 3'UTR length in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly probing the relationship between 3'UTR length and NMD-sensitivity in human cells, systematic analyses of reporter transcripts revealed a progressive UPF1-dependent decrease in mRNA half-life with increasing 3'UTR length (Buhler et al., 2006; Eberle et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "d409e588-2d66-4444-9a2b-00541ff0925d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C55",
+      "claim": "A large number of eukaryotic transcripts with long 3'UTRs appear to evade NMD through as-yet-unknown mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "these studies have been complicated by the fact that a large number of eukaryotic transcripts with long 3'UTRs appear to evade NMD through as-yet-unknown mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observations from multiple studies showing that not all long 3'UTR-containing mRNAs are degraded by NMD.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "de1c0df0-faa1-42bd-ba0a-ca288aeb1234",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C56",
+      "claim": "Several TC-proximal human mRNA sequences capable of protecting mRNAs from NMD have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several TC-proximal human mRNA sequences capable of protecting mRNAs from NMD have been identified (Toma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "aabf6ec3-9f7e-4900-af59-195f2e14e025",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C57",
+      "claim": "Mechanisms to protect specific mRNAs from NMD are likely to be a major force shaping human gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mechanisms to protect specific mRNAs from NMD are likely to be a major force shaping human gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that many long 3'UTR-containing mRNAs evade NMD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c4b9ac45-1844-452d-a9ca-cb02195482e9",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C58",
+      "claim": "Retroviral RNAs possess features that are predicted to be targeted by host cell RNA surveillance machineries, including long 3'UTRs, multiple open reading frames, and retained introns.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of evolutionary pressures to maximize the coding potential of compact RNA genomes, retroviral RNAs possess features that are predicted to be targeted by host cell RNA surveillance machineries, including long 3'UTRs, multiple open reading frames, and retained introns (Bolinger and Boris-Lawrie, 2009; Withers and Beemon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research and knowledge about retroviral RNA structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "70570e3f-17ba-4c2e-acbb-3edb3d6d820b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C59",
+      "claim": "Some retroviruses have developed protein-based protective mechanisms against NMD to ensure RNA integrity and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, some retroviruses have developed protein-based protective mechanisms against NMD to ensure RNA integrity and translation (Mocquet et al., 2012; Nakano et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "cf3461b0-8c02-490b-8c77-f964e4466da7",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C60",
+      "claim": "PTBP1 has been implicated as an RNA stability factor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its established role in alternative splicing, PTBP1 has been implicated as an RNA stability factor (reviewed in Romanelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "6c6b3a9f-5ee5-4065-baed-1d79eed4d41d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C61",
+      "claim": "PTBP1 has been found to be preferentially associated with long 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as expected for a protein responsible for protecting specific mRNAs, PTBP1 has been found to be preferentially associated with long 3'UTRs (Gama-Carvalho et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f6a18144-0445-4629-97d4-cde0acee7078",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C62",
+      "claim": "PTBP1 binding is driven both by high-affinity heptameric or hexameric motifs and by local enrichment of pyrimidines.",
+      "claim_type": "EXPLICIT",
+      "source": "UV cross-linking and immunoprecipitation (CLIP) experiments indicate that PTBP1 binding is driven both by high-affinity heptameric or hexameric motifs and by local enrichment of pyrimidines (Xue et al., 2009; 2013; Han et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous CLIP studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "4be38add-2a9e-4a2f-ab80-35138c783036",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C63",
+      "claim": "Among nine genes validated by qRT-PCR as protected from NMD by PTB, eight have at least one putative PTB hexamer binding site within 150 nt of the annotated TC.",
+      "claim_type": "EXPLICIT",
+      "source": "Among nine genes validated by qRT-PCR as protected from NMD by PTB, eight have at least one putative PTB hexamer binding site within 150 nt of the annotated TC, and six of nine have two or more hexamer binding sites in that region (Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis of validated genes shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "31fcd64e-ed3c-4edf-bd49-bb21a144ab8a",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C64",
+      "claim": "PTBP1 CLIP reads mapped to the 3'UTRs of each of the validated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed PTBP1 CLIP reads mapping to the 3'UTRs of each of the validated mRNAs listed above (Figure 6\u2014figure supplement 2; see below for further CLIP analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published PTBP1 CLIP-seq data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "af69b832-bd84-46c4-807f-060c9ea47a0c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C65",
+      "claim": "Analysis of aggregate binding of UPF1 to all mRNAs showed that UPF1 levels are low in coding sequences and increase downstream of TCs to reach a broad plateau throughout 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, analysis of aggregate binding of UPF1 to all mRNAs showed that UPF1 levels are low in coding sequences and increase downstream of TCs to reach a broad plateau throughout 3'UTRs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published UPF1 CLIP-seq data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "bdda0f1e-7d0c-41f7-b0e4-c11632eeb13d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C66",
+      "claim": "mRNAs with PTBP1 CLIP peaks centered between 200 and 500 nt from the TC exhibited no tendency to contain longer 3'UTRs than normal.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, mRNAs with PTBP1 CLIP peaks centered between 200 and 500 nt from the TC exhibited no tendency to contain longer 3'UTRs than normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of PTBP1 CLIP-seq data and 3'UTR lengths shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "9476cc32-7a99-4ad5-b8da-df2dfd9d7c48",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C67",
+      "claim": "mRNAs with PTBP1 CLIP peaks centered from 200 to 500 nt from the TC showed no significant trend toward protection from NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Providing further evidence of the importance of PTBP1 binding position relative to the terminating ribosome, mRNAs with PTBP1 CLIP peaks centered from 200 to 500 nt from the TC showed no significant trend toward protection from NMD (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on combined analysis of PTBP1 CLIP-seq and RNA-seq data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "cda24acf-7f35-4f47-a9df-3f7a282cf22b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C68",
+      "claim": "Transcripts with hexamers located 50\u2013100 from the TC showed no apparent protection from NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "while transcripts with hexamers located 50\u2013100 from the TC showed no apparent protection from NMD (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of predicted PTBP1 binding sites and RNA-seq data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "449bccfa-aa66-4783-af2a-73f631780b7e",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C69",
+      "claim": "Human mRNAs have evolved to avoid recognition and degradation by the NMD machinery by recruiting PTBP1 to the vicinity of TCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that human mRNAs have evolved to avoid recognition and degradation by the NMD machinery by recruiting PTBP1 to the vicinity of TCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined analysis of PTBP1 binding positions, 3'UTR lengths, and NMD sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f55e994e-7cd5-4f5c-bcbc-d3c6e959639c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C70",
+      "claim": "Depletion of PTBP1 leads to induction of PTBP2 in many human cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In many human cell types, including those used for this study, depletion of PTBP1 leads to induction of PTBP2, which compensates for a subset of PTBP1 functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about PTBP1/2 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "7441385b-e8b5-4693-993a-4514a6d03a0d",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C71",
+      "claim": "PTBP2 may also stabilize a subset of mRNAs usually protected by PTBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "As it possesses highly similar biochemical activities, PTBP2 may also stabilize a subset of mRNAs usually protected by PTBP1, meaning that the population of mRNAs identified here as protected from NMD is likely to underestimate the role of PTB paralogs in NMD inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the known biochemical similarity between PTBP1 and PTBP2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "59dca741-6398-4405-8606-ca01ca9ce89a",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C72",
+      "claim": "Marking genuine TCs with PTBP1 is just one strategy employed by long 3'UTRs to evade NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we expect that marking genuine TCs with PTBP1 is just one strategy employed by long 3'UTRs to evade NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that not all long 3'UTR-containing mRNAs are protected by PTBP1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c3136bb0-5dcd-49f6-8964-f6aeced489b6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C73",
+      "claim": "Yeast Pub1p was found to stabilize certain NMD targets by means that remain undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the existence of diverse solutions to the problem, yeast Pub1p was found to stabilize certain NMD targets by means that remain undefined (Ruiz-Echevarria and Peltz, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "56dee8cc-aecf-469f-85c5-db84fdceea8a",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C74",
+      "claim": "Manipulation of 3'UTR structure to bring the poly-A tail in spatial proximity to the TC has been shown to stabilize reporter mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and manipulation of 3'UTR structure to bring the poly-A tail in spatial proximity to the TC has been shown to stabilize reporter mRNAs (Eberle et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f5ec48f6-30ef-4cf5-9ef8-c9e8d61634d1",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C75",
+      "claim": "Long-range interactions involving multiple PTBP1 molecules bound to a single RNA may be responsible for excluding binding of splicing factors, resulting in splicing repression.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that long-range interactions involving multiple PTBP1 molcules bound to a single RNA may be responsible for excluding binding of splicing factors, resulting in splicing repression (Chou et al., 2000; Amir-Ahmady et al., 2005; Cherny et al., 2010; Lamichhane et al., 2010; Sharma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research on PTBP1 mechanism in splicing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "a2879ab1-9ace-4173-a8de-f3a359f4a246",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C76",
+      "claim": "PTBP1 may interact with proteins such as MATRIN 3 to promote the assembly of higher-order repressive complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, PTBP1 may interact with proteins such as MATRIN 3 to promote the assembly of higher-order repressive complexes (Joshi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on citation to previous research showing PTBP1-MATRIN 3 interaction.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "e0f08c7c-717d-449a-aca4-4723cb93bb0c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C77",
+      "claim": "PTBP1 assembled on multiple TC-proximal CU-rich sequences could result in a zone of UPF1 exclusion, preventing the initial assembly of UPF1 into mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "By direct analogy to its role in splicing, PTBP1 assembled on multiple TC-proximal CU-rich sequences could thus result in a zone of UPF1 exclusion, preventing the initial assembly of UPF1 into mRNPs (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic model proposed based on the experimental data and analogy to PTBP1's role in splicing.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "918e28c3-5972-4cc9-9a8e-b216ec3e0aa1",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C78",
+      "claim": "PTBP1 may stimulate ATPase-dependent dissociation of UPF1 from the mRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, PTBP1 may, as has been recently described for cytoplasmic poly-A binding protein, stimulate ATPase-dependent dissociation of UPF1 from the mRNP (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on analogy to PABPC1 function.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8d8866a3-7ef7-440c-b84e-c2a936696e73",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C79",
+      "claim": "The position-dependence of PTBP1's anti-NMD activity allows stabilization in response to translation termination at the proper stop codon while preserving the ability of NMD to detect premature TCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This position-dependence has the advantage of allowing stabilization in response to translation termination at the proper stop codon while preserving the ability of NMD to detect premature TCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of position-dependent PTBP1 activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8e7fec71-1f16-436a-a9b2-00214f72c8b4",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C80",
+      "claim": "A position-insensitive mechanism would prevent NMD from accurately detecting de novo nonsense mutations, reducing the scope of quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a position-insensitive mechanism would prevent NMD from accurately detecting de novo nonsense mutations, reducing the scope of quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the consequences of alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "479a50a6-92df-4e4a-8584-12bcc220955b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C81",
+      "claim": "The population of mRNAs identified as protected from NMD is likely to underestimate the role of PTB paralogs in NMD inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning that the population of mRNAs identified here as protected from NMD is likely to underestimate the role of PTB paralogs in NMD inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the known redundancy between PTBP1 and PTBP2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "ae12b58e-20ec-4d05-8cfc-f06904ad59af",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C82",
+      "claim": "PTBP1 and PTBP2 may stabilize partially overlapping sets of potential NMD substrates in distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "As in their roles in alternative splicing, we expect that PTBP1 and PTBP2 may stabilize partially overlapping sets of potential NMD substrates in distinct cell types (Keppetipola et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on analogy to PTBP1/2 roles in splicing.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "7ae97378-0b31-4047-9ba2-fcb698d6ebc3",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C83",
+      "claim": "With the exception of TPM1, no differences in the splicing patterns of the selected genes were observed upon PTBP1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of TPM1, a known target of PTBP1 splicing regulation, we did not observe differences in the splicing patterns of the selected genes (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of RNA-seq data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "ef8f0507-7bb5-4408-9a86-d6c0c061aa3e",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C84",
+      "claim": "Among all of the PTBP1-dependent genes, the extent of mRNA rescue upon co-depletion correlated with the reduction upon PTBP1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all of the PTBP1-dependent genes, the extent of mRNA rescue upon co-depletion correlated with the reduction upon PTBP1 knockdown (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis of RNA-seq data shown in Figure 6A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "863ebcc3-4a6a-4d3b-960b-ef56cf5f4a79",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C85",
+      "claim": "The correlation between rescue and reduction was dependent on the presence of putative high-affinity PTBP1 hexamer binding sites in the region downstream of the TC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for PTBP1 binding near the stop codon, this correlation was dependent on the presence of putative high-affinity PTBP1 hexamer binding sites in the region downstream of the TC (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis stratified by presence of PTBP1 binding sites shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "050bd82c-8c53-4aff-bf72-98018929bd86",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C86",
+      "claim": "Incomplete rescue of PTBP1-dependent mRNAs via UPF1 depletion could either be due to PTBP1 antagonizing multiple RNA decay pathways or due to insufficient UPF1 knockdown for complete abrogation of NMD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Incomplete rescue of PTBP1-dependent mRNAs via UPF1 depletion could either be due to PTBP1 antagonizing multiple RNA decay pathways or due to insufficient UPF1 knockdown for complete abrogation of NMD activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for incomplete rescue.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "7c86fbd9-3194-49a7-8e47-140470e80c05",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C87",
+      "claim": "Protection of human mRNAs containing long 3'UTRs by PTBP1 is widely exploited to minimize the impact of NMD on the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that protection of human mRNAs containing long 3'UTRs by PTBP1 is widely exploited to minimize the impact of NMD on the transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq and CLIP-seq analyses showing many mRNAs with long 3'UTRs are protected by PTBP1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "3673c20b-0f20-4475-b7be-da528df0867f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C89",
+      "claim": "The SMG5 3'UTR is 1342 nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMG5 3'UTR triggers NMD as part of an extensive program of autoregulation by the NMD pathway, in a manner proposed to be due to its length (1342 nt; Huang et al., 2011; Singh et al., 2008; Yepiskoposyan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "ff98801b-b0d8-4cc9-8594-630d0ec409f5",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C90",
+      "claim": "The SMG5 3'UTR triggers NMD as part of an extensive program of autoregulation by the NMD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMG5 3'UTR triggers NMD as part of an extensive program of autoregulation by the NMD pathway, in a manner proposed to be due to its length (1342 nt; Huang et al., 2011; Singh et al., 2008; Yepiskoposyan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "66f39ce1-db09-4654-a5be-5ae25b6f1fb8",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C91",
+      "claim": "PABPC1 has previously been reported to antagonize NMD when tethered to NMD-sensitive mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "A PABPC1-MS2 coat protein fusion was included in this assay as a positive control, as PABPC1 has previously been reported to antagonize NMD when tethered to NMD-sensitive mRNAs (Amrani et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "4b626c5e-c44f-4f70-912e-15b075f582f4",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C92",
+      "claim": "UPF1 was enriched in the control mRNP compared to the RSE-containing mRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "UPF1 was enriched in the control mRNP (Figure 3\u2014figure supplement 1C), consistent with our finding that the RSE inhibits UPF1 association with the 3'UTR (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry analysis shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "9623c8ad-9690-4155-b7ae-8e46d111eb7f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C93",
+      "claim": "The RSE contains three instances of CU-rich hexameric sequences identified as over-represented in PTB CLIP sequence tags.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes three instances of CU-rich hexameric sequences identified as over-represented in PTB CLIP sequence tags, as well as five additional clusters containing heptamers enriched in CLIP tags (Xue et al., 2009; see Materials and methods for sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis using previously identified PTBP1 binding motifs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c9312062-5444-4adf-96fc-5ec18664ee0c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C94",
+      "claim": "The RSE contains five additional clusters containing heptamers enriched in CLIP tags.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes three instances of CU-rich hexameric sequences identified as over-represented in PTB CLIP sequence tags, as well as five additional clusters containing heptamers enriched in CLIP tags (Xue et al., 2009; see Materials and methods for sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis using previously identified PTBP1 binding motifs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "d934f523-bad4-41ff-9c54-b09d2862d64f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "claim_id": "C95",
+      "claim": "The natural arrangement of the PTBP1 binding sites in the RSE may be optimal for antagonizing UPF1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the level of UPF1 association on the transcripts containing RSE-\u0394PTB+6xPTBBS is significantly reduced compared to RSE-\u0394PTB, it was still higher than that of the wild-type RSE, indicating that the natural arrangement of the PTBP1 binding sites in the RSE may be optimal for antagonizing UPF1 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of UPF1 binding to different RSE variants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a45cc65-ced5-42b7-8104-895c8334f729",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The RSE protects mRNAs from NMD in human cells in a position-dependent manner. Transcripts containing the RSE had significantly longer half-lives (~400 min) compared to control sequences (<120 min), and this decay was UPF1-dependent. The protective activity was lost when the RSE was placed in the middle or at the end of the 3'UTR, and the RSE could suppress both EJC-independent and EJC-stimulated NMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 provide converging evidence from decay assays showing that the RSE stabilizes mRNAs in human cells through a UPF1-dependent mechanism. The position-dependence experiments (C14) and EJC-stimulation experiments (C15) demonstrate the specificity and breadth of RSE function. Statistical significance is reported with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "4ed5ee7f-e4d6-4944-b7c8-34b00d5ae6f6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The RSE reduces UPF1 association with mRNAs in a sequence- and position-dependent manner, independent of translation termination. Immunoprecipitation experiments showed marked reduction in UPF1 binding to RSE-containing RNAs compared to controls, and this effect persisted in puromycin-treated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 demonstrate through immunoprecipitation experiments that the RSE mechanistically prevents UPF1 binding to 3'UTRs. The puromycin control (C18) addresses the important question of whether reduced UPF1 binding is cause or consequence of NMD inhibition, strengthening the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f105f878-20cc-47cd-9a21-444a7500c2f6",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PTBP1 was identified as a key mediator of RSE function through mass spectrometry and validated by mutagenesis. The RSE contains eleven putative PTBP1 binding sites, and mutation of these sites (RSE-\u0394PTB) significantly reduced PTBP1 association while increasing UPF1 association. Reintroducing six PTBP1 binding sites restored PTBP1 binding to wild-type levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 establish PTBP1 as the critical RSE-binding protein through multiple complementary approaches: unbiased mass spectrometry identification, sequence analysis, loss-of-function mutagenesis, and gain-of-function rescue. The inverse relationship between PTBP1 and UPF1 binding supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "fbc0eb03-cae6-418c-bb6b-6bf156395049",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PTBP1 binding sites are necessary for RSE function in authentic RSV viral RNAs in chicken cells. RSE-\u0394PTB-containing viral RNAs were present at much lower levels than wild-type, while reintroducing three or six PTBP1 binding sites progressively rescued RNA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate that the PTBP1-dependent mechanism operates in the physiologically relevant context of retroviral RNA stabilization. The dose-dependent rescue with increasing numbers of PTBP1 binding sites provides strong support for the model. However, these are steady-state measurements rather than direct decay assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "1bc97b87-37fe-449d-8fbf-49507c6a78b3",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutation of PTBP1 binding sites in the RSE abolished protection of reporter transcripts in human cells, while restoration of six PTBP1 binding sites fully rescued stability. RSE-\u0394PTB transcripts had half-lives similar to inactive antisense RSE (~120 min), while RSE-\u0394PTB+6xPTBBS exhibited stability comparable to wild-type RSE (>9 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide definitive evidence that PTBP1 binding sites are both necessary and sufficient for RSE function in human cells through loss-of-function and rescue experiments. The dramatic differences in half-lives with appropriate controls strongly support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "3c84b9ac-f0dd-4bbe-9d8c-b122f4809b89",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Introduction of PTBP1 binding sites alone is sufficient to stabilize NMD-sensitive transcripts. Addition of three PTBP1 binding sites significantly improved stability, while six sites highly stabilized transcripts. This effect was position-dependent, requiring placement near the termination codon. Tethering experiments confirmed that PTBP1 recruitment is sufficient for NMD inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 demonstrate sufficiency of PTBP1 binding for NMD protection through gain-of-function experiments with synthetic PTBP1 binding sites and MS2-tethering assays. The position-dependence (C31) and dose-dependence (C29-C30) strengthen the mechanistic model. The tethering experiments (C32) provide orthogonal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PTBP1 protects many human mRNAs with long 3'UTRs from NMD. RNA-seq analysis identified 495 genes down-regulated upon PTBP1 depletion, with 188 rescued by co-depletion of UPF1. PTBP1-dependent mRNAs had significantly longer 3'UTRs (median 1577 nt) than all expressed mRNAs (1308 nt), and rescued mRNAs had even longer 3'UTRs (1843 nt).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 demonstrate genome-wide relevance of PTBP1-mediated NMD protection through RNA-seq with appropriate controls and double knockdown experiments. The correlation between PTBP1-dependence and 3'UTR length supports the proposed mechanism. Statistical significance is reported for 3'UTR length differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "a90debae-46a4-4558-bb04-72360b120b8c",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PTBP1 binding within 200 nt of termination codons correlates with 3'UTR length and protection from NMD. CLIP-seq analysis showed PTBP1 preferentially binds near TCs, and mRNAs with TC-proximal PTBP1 peaks had longer 3'UTRs and were less likely to be up-regulated upon UPF1 knockdown. This protection required PTBP1 binding within 50 nt of the TC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 integrate published CLIP-seq data with the authors' RNA-seq data to demonstrate transcriptome-wide patterns consistent with the proposed mechanism. The position-specificity (within 50 nt of TC) and correlation with NMD resistance provide strong support. Appropriate statistical tests (K-S tests) are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "92f8aa7c-3ab1-46f9-8a31-7530875f9916",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RSE functions through PTBP1 to inhibit NMD by masking 3'UTR length from UPF1. PTBP1 binding at the beginning of the 3'UTR causes loss of UPF1 binding in a position-dependent manner, allowing mRNAs to elude surveillance while preserving NMD's ability to detect premature termination codons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 synthesize the experimental findings into a coherent mechanistic model. The model is well-supported by the data showing reduced UPF1 binding, position-dependence, and functional consequences. The interpretation that PTBP1 'masks' 3'UTR length is reasonable given the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "9b13723b-55b7-4674-828f-97b093f9fc49",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Validated PTBP1-protected genes contain putative PTBP1 binding sites near termination codons. Among nine genes validated by qRT-PCR, eight have at least one PTBP1 hexamer within 150 nt of the TC, and PTBP1 CLIP reads mapped to the 3'UTRs of all validated mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 provide sequence-level validation that PTBP1-protected genes contain the expected binding sites in the expected positions. The integration of sequence analysis with CLIP-seq data strengthens the conclusions, though the sample size is relatively small (n=9).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "43938ee6-e3d0-48c3-8869-f2574b44c1fe",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PTBP1-mediated mRNA stabilization is not primarily due to altered splicing. With the exception of TPM1, no differences in splicing patterns were observed upon PTBP1 depletion. The extent of mRNA rescue upon co-depletion correlated with reduction upon PTBP1 knockdown, and this correlation depended on presence of PTBP1 binding sites near the TC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 address the important alternative explanation that PTBP1 effects are mediated through splicing changes. The RNA-seq analysis showing no splicing changes (except TPM1) and the correlation analysis stratified by binding site presence support the direct NMD protection mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "f265acde-6ec0-4caf-b56d-fa89a1b1da7f",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Analysis of published CLIP-seq data shows distinct binding patterns for UPF1 and PTBP1 relative to termination codons. UPF1 levels are low in coding sequences and increase throughout 3'UTRs, while PTBP1 is enriched within 200 nt of TCs. PTBP1 binding at 200-500 nt from the TC showed no protection from NMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 provide transcriptome-wide validation of the position-dependent mechanism using published datasets. The contrasting binding patterns of UPF1 and PTBP1 and the position-specific protection are consistent with the proposed model. Appropriate statistical tests are reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "bd34ce55-66ad-4863-a402-5e3c806cda43",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mass spectrometry and sequence analysis revealed that UPF1 was enriched in control mRNPs compared to RSE-containing mRNPs, and the RSE contains multiple PTBP1 binding motifs (three hexamers and five heptamers). The natural arrangement of PTBP1 binding sites in the RSE may be optimal for antagonizing UPF1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 provide supporting biochemical and sequence evidence for the mechanism. The observation that natural RSE arrangement is more effective than artificial arrangements (C95) is interesting but based on comparison of UPF1 binding levels rather than direct functional assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "c92903d0-b05d-449a-bd65-69ece91e4d34",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on NMD pathway function and UPF1 properties. NMD degrades mRNAs with long 3'UTRs for quality control and gene regulation, affecting 5-10% of human genes. UPF1 is the focal point of NMD with sequence-nonspecific RNA binding that is disrupted by elongating ribosomes, leading to preferential 3'UTR accumulation. Human 3'UTR lengths have evolved to exceed NMD-triggering thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C9 provide established background knowledge supported by citations to previous literature. These are not novel findings but provide necessary context. C9 is an inference about evolution that is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "ee8e870c-a613-4245-871f-3d3324843aef",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on retroviral RNA features and NMD evasion mechanisms. The RSE is a 400-nt element in RSV that protects viral RNA from NMD in chicken cells. Retroviral RNAs possess features targeted by NMD, and some retroviruses have developed protective mechanisms. Many eukaryotic transcripts with long 3'UTRs evade NMD through unknown mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C54-C59 provide background from previous literature establishing the biological context and rationale for the study. These are well-supported by citations but represent prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8415c9e7-5da9-4098-a898-03a59c886a64",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on PTBP1 function and binding specificity. PTBP1 has been implicated as an RNA stability factor and is preferentially associated with long 3'UTRs. PTBP1 binding is driven by high-affinity heptameric/hexameric motifs and local pyrimidine enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 provide established background on PTBP1 from previous literature, supporting the rationale for investigating PTBP1 as a candidate RSE-binding protein. These are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "1fa97a6f-4197-4046-a505-be6bf260ec30",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on PTBP1 structure and regulation. PTBP1 contains four RRMs with affinity for CU-containing sequences, with RRM3 and RRM4 oriented back-to-back creating RNA loops. PTBP1 and PTBP2 auto- and cross-regulate through NMD-coupled alternative splicing in a tissue-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 provide structural and regulatory background on PTBP1 from previous literature. This information supports the mechanistic discussion but represents prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "8ed40e78-255c-45a3-88ad-80e1cecdda82",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on NMD pathway components and mechanism. UPF1 association with mRNAs precedes decay commitment and does not require ongoing translation. UPF2/UPF3B stimulate UPF1 activity and link to the EJC. UPF1 phosphorylation by SMG1 mediates recruitment of decay factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide mechanistic background on the NMD pathway from previous literature. These are well-established facts that provide context but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "b763c1b2-3fe9-43f7-bb5d-5ade0b829c86",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Discussion of PTBP1/PTBP2 redundancy and implications for the study. PTBP1 depletion induces PTBP2 in many cell types, which may compensate for some PTBP1 functions. The identified population of protected mRNAs likely underestimates the role of PTB paralogs in NMD inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71, C81-C82 discuss limitations of the study related to PTBP1/PTBP2 redundancy. C70 is supported by established knowledge, but C71, C81-C82 are speculative interpretations about what the study may have missed. These are reasonable caveats but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "6bc8fc51-688a-496b-a2be-c7aed3124a07",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Discussion of alternative NMD evasion mechanisms. PTBP1-mediated protection is likely just one strategy for long 3'UTRs to evade NMD. Other mechanisms include yeast Pub1p-mediated stabilization and 3'UTR structural manipulation to bring the poly-A tail near the TC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 discuss alternative mechanisms from the literature. C72 is speculation, while C73-C74 cite previous work. This contextualizes the findings but does not represent novel data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "690f7e8c-51c1-4825-b505-b89e8d59acf0",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Proposed molecular mechanisms for PTBP1-mediated UPF1 exclusion. PTBP1 may exclude UPF1 through long-range RNA looping interactions or by promoting higher-order repressive complexes with proteins like MATRIN 3. PTBP1 could create a zone of UPF1 exclusion or stimulate ATPase-dependent UPF1 dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C78 propose molecular mechanisms based on analogy to PTBP1's role in splicing and PABPC1 function. These are reasonable speculative models supported by citations to related work, but they are not directly tested in this study. The mechanisms remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "a2cf89f8-15e8-40b7-9844-d2020d6f0e91",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Functional significance of position-dependent PTBP1 activity. Position-dependence allows stabilization at proper stop codons while preserving NMD's ability to detect premature termination codons. A position-insensitive mechanism would reduce quality control scope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 provide functional interpretation of the position-dependence observed in the experiments. This is a logical inference about the biological significance of the mechanism, though not directly tested. The reasoning is sound given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "bc3d7fb9-d321-4353-949b-c65c0ee5eadd",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Interpretation of incomplete rescue and evolutionary implications. Incomplete rescue of PTBP1-dependent mRNAs could be due to PTBP1 antagonizing multiple decay pathways or insufficient UPF1 knockdown. The data suggest human mRNAs have evolved to recruit PTBP1 near TCs to avoid NMD, and this protection is widely exploited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87, C69 provide interpretations of the data. C86 is speculation about technical limitations, while C87 and C69 make evolutionary inferences. These are reasonable interpretations supported by the correlative data, but the evolutionary claims are not directly tested and remain inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    },
+    {
+      "id": "a4b5122f-032b-457b-acfd-e176312b172b",
+      "content_id": "906c138b-de49-4626-8403-f270f68d1032",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Background on SMG5 3'UTR and PABPC1 as experimental controls. The SMG5 3'UTR (1342 nt) triggers NMD as part of pathway autoregulation. PABPC1 has been reported to antagonize NMD when tethered to NMD-sensitive mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 provide background on experimental reagents and controls used in the study. These are supported by citations to previous work and establish the rationale for experimental design choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:48.496213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ff08eeb-2e5b-4c48-89cc-ce10a2aae72d",
+      "result_id": "0a45cc65-ced5-42b7-8104-895c8334f729"
+    },
+    {
+      "claim_id": "4c2a3abc-682f-4ecd-b3d4-92ac5c3e425a",
+      "result_id": "0a45cc65-ced5-42b7-8104-895c8334f729"
+    },
+    {
+      "claim_id": "469ef811-8904-49ba-a7c9-61189ea46ed8",
+      "result_id": "0a45cc65-ced5-42b7-8104-895c8334f729"
+    },
+    {
+      "claim_id": "274b6c26-1b4a-459a-ad1f-de309e0498b1",
+      "result_id": "0a45cc65-ced5-42b7-8104-895c8334f729"
+    },
+    {
+      "claim_id": "4814663c-fc38-4f36-b3b6-850d8d1ceee1",
+      "result_id": "0a45cc65-ced5-42b7-8104-895c8334f729"
+    },
+    {
+      "claim_id": "062f3264-7436-494b-8a2f-5619b1ba9370",
+      "result_id": "4ed5ee7f-e4d6-4944-b7c8-34b00d5ae6f6"
+    },
+    {
+      "claim_id": "f56137f7-8bdb-48bd-8060-55a49af40730",
+      "result_id": "4ed5ee7f-e4d6-4944-b7c8-34b00d5ae6f6"
+    },
+    {
+      "claim_id": "b72a4c57-7fd6-4b3f-83f2-8391a5cc3b32",
+      "result_id": "4ed5ee7f-e4d6-4944-b7c8-34b00d5ae6f6"
+    },
+    {
+      "claim_id": "c64706fe-1003-4034-addc-ab59a7522cbd",
+      "result_id": "f105f878-20cc-47cd-9a21-444a7500c2f6"
+    },
+    {
+      "claim_id": "cfd47f87-c34e-4f9f-a139-81848d55e222",
+      "result_id": "f105f878-20cc-47cd-9a21-444a7500c2f6"
+    },
+    {
+      "claim_id": "c12736a1-428d-4908-9ca2-b17cad1a59ac",
+      "result_id": "f105f878-20cc-47cd-9a21-444a7500c2f6"
+    },
+    {
+      "claim_id": "5a5b88e2-aece-45d4-8709-b6f7811dbfe6",
+      "result_id": "f105f878-20cc-47cd-9a21-444a7500c2f6"
+    },
+    {
+      "claim_id": "67f76aab-ef52-4654-a20d-af129f48c056",
+      "result_id": "f105f878-20cc-47cd-9a21-444a7500c2f6"
+    },
+    {
+      "claim_id": "698b2aa8-df9c-49f4-8202-36e89c9f4d9c",
+      "result_id": "fbc0eb03-cae6-418c-bb6b-6bf156395049"
+    },
+    {
+      "claim_id": "8c57878c-efb0-47b6-b5f1-2c9dd82e5b6c",
+      "result_id": "fbc0eb03-cae6-418c-bb6b-6bf156395049"
+    },
+    {
+      "claim_id": "b2f59ede-458c-48bd-b8e6-109e26fe428f",
+      "result_id": "fbc0eb03-cae6-418c-bb6b-6bf156395049"
+    },
+    {
+      "claim_id": "addae379-dd0d-4773-9b62-3517c396432d",
+      "result_id": "1bc97b87-37fe-449d-8fbf-49507c6a78b3"
+    },
+    {
+      "claim_id": "c8efa944-06e7-436f-bb3d-f67fd0a23b4f",
+      "result_id": "1bc97b87-37fe-449d-8fbf-49507c6a78b3"
+    },
+    {
+      "claim_id": "00976898-ac0a-4452-b3c5-076ae49a9fa3",
+      "result_id": "3c84b9ac-f0dd-4bbe-9d8c-b122f4809b89"
+    },
+    {
+      "claim_id": "a3918cf2-e984-411e-b501-14fddc975773",
+      "result_id": "3c84b9ac-f0dd-4bbe-9d8c-b122f4809b89"
+    },
+    {
+      "claim_id": "be9d3ac1-6a57-4622-b775-4e06fd041cdc",
+      "result_id": "3c84b9ac-f0dd-4bbe-9d8c-b122f4809b89"
+    },
+    {
+      "claim_id": "9472af89-132d-46b3-a284-944fab256365",
+      "result_id": "3c84b9ac-f0dd-4bbe-9d8c-b122f4809b89"
+    },
+    {
+      "claim_id": "ee631c54-61e2-42b5-afce-9e7823c7e39d",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "c7a6b070-e140-4eb4-af7c-658e8de9da54",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "021faedc-276e-4470-abf5-43fc55d544dd",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "85105e2e-8d2c-4732-baea-5637f6b8f255",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "d82e047d-894e-47bf-9c6b-59e79b38e7ca",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "05e124f1-2a45-4273-a97c-a4e0ae818730",
+      "result_id": "dfdf108c-6b4d-4330-bd3a-875a5bb9d7e7"
+    },
+    {
+      "claim_id": "72d4f62b-49e9-4f78-b21c-da84e4420433",
+      "result_id": "a90debae-46a4-4558-bb04-72360b120b8c"
+    },
+    {
+      "claim_id": "b36c4247-4f7b-4738-a6e6-1929468b916f",
+      "result_id": "a90debae-46a4-4558-bb04-72360b120b8c"
+    },
+    {
+      "claim_id": "236d94a4-77db-4a3c-bcb9-11cb60b3377b",
+      "result_id": "a90debae-46a4-4558-bb04-72360b120b8c"
+    },
+    {
+      "claim_id": "08cf4ae8-8ff5-4a97-b778-dd84bd47e73f",
+      "result_id": "a90debae-46a4-4558-bb04-72360b120b8c"
+    },
+    {
+      "claim_id": "841c2cb2-8f66-4617-8b39-0a4d7910292e",
+      "result_id": "92f8aa7c-3ab1-46f9-8a31-7530875f9916"
+    },
+    {
+      "claim_id": "3ded26de-d458-4b38-b1ce-1e465f584784",
+      "result_id": "92f8aa7c-3ab1-46f9-8a31-7530875f9916"
+    },
+    {
+      "claim_id": "d12364b6-8c65-42e9-afe1-338a5654cec8",
+      "result_id": "92f8aa7c-3ab1-46f9-8a31-7530875f9916"
+    },
+    {
+      "claim_id": "4be38add-2a9e-4a2f-ab80-35138c783036",
+      "result_id": "9b13723b-55b7-4674-828f-97b093f9fc49"
+    },
+    {
+      "claim_id": "31fcd64e-ed3c-4edf-bd49-bb21a144ab8a",
+      "result_id": "9b13723b-55b7-4674-828f-97b093f9fc49"
+    },
+    {
+      "claim_id": "7ae97378-0b31-4047-9ba2-fcb698d6ebc3",
+      "result_id": "43938ee6-e3d0-48c3-8869-f2574b44c1fe"
+    },
+    {
+      "claim_id": "ef8f0507-7bb5-4408-9a86-d6c0c061aa3e",
+      "result_id": "43938ee6-e3d0-48c3-8869-f2574b44c1fe"
+    },
+    {
+      "claim_id": "863ebcc3-4a6a-4d3b-960b-ef56cf5f4a79",
+      "result_id": "43938ee6-e3d0-48c3-8869-f2574b44c1fe"
+    },
+    {
+      "claim_id": "af69b832-bd84-46c4-807f-060c9ea47a0c",
+      "result_id": "f265acde-6ec0-4caf-b56d-fa89a1b1da7f"
+    },
+    {
+      "claim_id": "bdda0f1e-7d0c-41f7-b0e4-c11632eeb13d",
+      "result_id": "f265acde-6ec0-4caf-b56d-fa89a1b1da7f"
+    },
+    {
+      "claim_id": "9476cc32-7a99-4ad5-b8da-df2dfd9d7c48",
+      "result_id": "f265acde-6ec0-4caf-b56d-fa89a1b1da7f"
+    },
+    {
+      "claim_id": "cda24acf-7f35-4f47-a9df-3f7a282cf22b",
+      "result_id": "f265acde-6ec0-4caf-b56d-fa89a1b1da7f"
+    },
+    {
+      "claim_id": "4b626c5e-c44f-4f70-912e-15b075f582f4",
+      "result_id": "bd34ce55-66ad-4863-a402-5e3c806cda43"
+    },
+    {
+      "claim_id": "9623c8ad-9690-4155-b7ae-8e46d111eb7f",
+      "result_id": "bd34ce55-66ad-4863-a402-5e3c806cda43"
+    },
+    {
+      "claim_id": "c9312062-5444-4adf-96fc-5ec18664ee0c",
+      "result_id": "bd34ce55-66ad-4863-a402-5e3c806cda43"
+    },
+    {
+      "claim_id": "d934f523-bad4-41ff-9c54-b09d2862d64f",
+      "result_id": "bd34ce55-66ad-4863-a402-5e3c806cda43"
+    },
+    {
+      "claim_id": "47e381c3-eaa3-4ba3-9b67-aa56307f16b6",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "51a73c4e-21cd-4d71-afb2-53ed36b7e743",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "92be7cc6-eaf5-4d97-8937-06fa0fffc44b",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "bbadf0b3-318c-4835-8454-7198cf33f106",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "1cf36499-ab15-4a78-a93e-efff8abbfea5",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "2dfcb698-e141-460e-8af8-9202bdad38f6",
+      "result_id": "c92903d0-b05d-449a-bd65-69ece91e4d34"
+    },
+    {
+      "claim_id": "63936855-2dd9-4efb-8ab1-d8c9d19df52d",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "cc242494-e742-4202-bc08-167fbdbd1233",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "d409e588-2d66-4444-9a2b-00541ff0925d",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "de1c0df0-faa1-42bd-ba0a-ca288aeb1234",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "aabf6ec3-9f7e-4900-af59-195f2e14e025",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "c4b9ac45-1844-452d-a9ca-cb02195482e9",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "70570e3f-17ba-4c2e-acbb-3edb3d6d820b",
+      "result_id": "ee8e870c-a613-4245-871f-3d3324843aef"
+    },
+    {
+      "claim_id": "cf3461b0-8c02-490b-8c77-f964e4466da7",
+      "result_id": "8415c9e7-5da9-4098-a898-03a59c886a64"
+    },
+    {
+      "claim_id": "6c6b3a9f-5ee5-4065-baed-1d79eed4d41d",
+      "result_id": "8415c9e7-5da9-4098-a898-03a59c886a64"
+    },
+    {
+      "claim_id": "f6a18144-0445-4629-97d4-cde0acee7078",
+      "result_id": "8415c9e7-5da9-4098-a898-03a59c886a64"
+    },
+    {
+      "claim_id": "698734ab-7747-4624-a1eb-5fb9e98078d3",
+      "result_id": "1fa97a6f-4197-4046-a505-be6bf260ec30"
+    },
+    {
+      "claim_id": "3151f189-21cd-4629-b8fe-1b178423d860",
+      "result_id": "1fa97a6f-4197-4046-a505-be6bf260ec30"
+    },
+    {
+      "claim_id": "b9c1c1fc-0481-438d-8100-c89e98ad1477",
+      "result_id": "1fa97a6f-4197-4046-a505-be6bf260ec30"
+    },
+    {
+      "claim_id": "0e00bda8-e155-4f0e-a809-9855c5ea45a0",
+      "result_id": "1fa97a6f-4197-4046-a505-be6bf260ec30"
+    },
+    {
+      "claim_id": "fee88ad8-a5ec-43ba-a8d8-00365b8bf6ce",
+      "result_id": "1fa97a6f-4197-4046-a505-be6bf260ec30"
+    },
+    {
+      "claim_id": "0b59248e-a990-4d92-bfea-ee99568137b7",
+      "result_id": "8ed40e78-255c-45a3-88ad-80e1cecdda82"
+    },
+    {
+      "claim_id": "cd7354a8-f016-4da2-b2ca-b38ba8b7fa4a",
+      "result_id": "8ed40e78-255c-45a3-88ad-80e1cecdda82"
+    },
+    {
+      "claim_id": "9f30aca4-8d4b-40cb-b1f6-f51f0bb3f9be",
+      "result_id": "8ed40e78-255c-45a3-88ad-80e1cecdda82"
+    },
+    {
+      "claim_id": "f55e994e-7cd5-4f5c-bcbc-d3c6e959639c",
+      "result_id": "b763c1b2-3fe9-43f7-bb5d-5ade0b829c86"
+    },
+    {
+      "claim_id": "7441385b-e8b5-4693-993a-4514a6d03a0d",
+      "result_id": "b763c1b2-3fe9-43f7-bb5d-5ade0b829c86"
+    },
+    {
+      "claim_id": "479a50a6-92df-4e4a-8584-12bcc220955b",
+      "result_id": "b763c1b2-3fe9-43f7-bb5d-5ade0b829c86"
+    },
+    {
+      "claim_id": "ae12b58e-20ec-4d05-8cfc-f06904ad59af",
+      "result_id": "b763c1b2-3fe9-43f7-bb5d-5ade0b829c86"
+    },
+    {
+      "claim_id": "59dca741-6398-4405-8606-ca01ca9ce89a",
+      "result_id": "6bc8fc51-688a-496b-a2be-c7aed3124a07"
+    },
+    {
+      "claim_id": "c3136bb0-5dcd-49f6-8964-f6aeced489b6",
+      "result_id": "6bc8fc51-688a-496b-a2be-c7aed3124a07"
+    },
+    {
+      "claim_id": "56dee8cc-aecf-469f-85c5-db84fdceea8a",
+      "result_id": "6bc8fc51-688a-496b-a2be-c7aed3124a07"
+    },
+    {
+      "claim_id": "f5ec48f6-30ef-4cf5-9ef8-c9e8d61634d1",
+      "result_id": "690f7e8c-51c1-4825-b505-b89e8d59acf0"
+    },
+    {
+      "claim_id": "a2879ab1-9ace-4173-a8de-f3a359f4a246",
+      "result_id": "690f7e8c-51c1-4825-b505-b89e8d59acf0"
+    },
+    {
+      "claim_id": "e0f08c7c-717d-449a-aca4-4723cb93bb0c",
+      "result_id": "690f7e8c-51c1-4825-b505-b89e8d59acf0"
+    },
+    {
+      "claim_id": "918e28c3-5972-4cc9-9a8e-b216ec3e0aa1",
+      "result_id": "690f7e8c-51c1-4825-b505-b89e8d59acf0"
+    },
+    {
+      "claim_id": "8d8866a3-7ef7-440c-b84e-c2a936696e73",
+      "result_id": "a2cf89f8-15e8-40b7-9844-d2020d6f0e91"
+    },
+    {
+      "claim_id": "8e7fec71-1f16-436a-a9b2-00214f72c8b4",
+      "result_id": "a2cf89f8-15e8-40b7-9844-d2020d6f0e91"
+    },
+    {
+      "claim_id": "050bd82c-8c53-4aff-bf72-98018929bd86",
+      "result_id": "bc3d7fb9-d321-4353-949b-c65c0ee5eadd"
+    },
+    {
+      "claim_id": "7c86fbd9-3194-49a7-8e47-140470e80c05",
+      "result_id": "bc3d7fb9-d321-4353-949b-c65c0ee5eadd"
+    },
+    {
+      "claim_id": "449bccfa-aa66-4783-af2a-73f631780b7e",
+      "result_id": "bc3d7fb9-d321-4353-949b-c65c0ee5eadd"
+    },
+    {
+      "claim_id": "3673c20b-0f20-4475-b7be-da528df0867f",
+      "result_id": "a4b5122f-032b-457b-acfd-e176312b172b"
+    },
+    {
+      "claim_id": "ff98801b-b0d8-4cc9-8594-630d0ec409f5",
+      "result_id": "a4b5122f-032b-457b-acfd-e176312b172b"
+    },
+    {
+      "claim_id": "66f39ce1-db09-4654-a5be-5ae25b6f1fb8",
+      "result_id": "a4b5122f-032b-457b-acfd-e176312b172b"
+    }
+  ],
+  "comparisons": []
+}

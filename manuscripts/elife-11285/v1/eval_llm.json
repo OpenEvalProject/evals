@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "A Bayesian spatio-temporal dengue early warning system was developed and applied to forecast dengue risk for June 2014 across Brazil, three months ahead of the World Cup. The model used real-time seasonal climate forecasts (March-May) and February 2014 dengue surveillance data, translating probabilistic predictions into low/medium/high risk warnings using predefined thresholds (100 and 300 cases per 100,000 inhabitants) and alarm trigger probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C69-C75 collectively describe a well-documented methodological framework with appropriate citations to prior work (Lowe et al., 2011, 2013, 2014). The model inputs (climate forecasts, epidemiological data), temporal lead time (3 months), risk thresholds, and probability trigger thresholds are clearly specified and consistent throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The forecast model correctly predicted dengue risk categories for 7 of 12 World Cup host microregions: Fortaleza and Natal (high risk), Belo Horizonte, Manaus and Salvador (medium risk), and Curitiba and Porto Alegre (low risk). For Recife, the model predicted high risk but medium risk was observed, though the mean predicted DIR was nearly equal to the observed DIR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are directly supported by Table 1 and Figure 1, which provide quantitative comparisons between forecasted and observed dengue incidence rates. The 58% accuracy rate (7/12 correct predictions) is clearly documented, and the Recife discrepancy is appropriately acknowledged with explanation of the threshold boundary issue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C43"
+    ],
+    "result": "The model failed to predict the unprecedented high dengue incidence observed in Bras\u00edlia and S\u00e3o Paulo in June 2014, though it assigned a 7% probability of high risk for Bras\u00edlia. These cities experienced unprecedented dengue incidence for the month of June that the model could not capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C43 are supported by Table 1 showing observed DIR of 725 for Bras\u00edlia (predicted low risk) and 161 for S\u00e3o Paulo (predicted low risk). The authors appropriately acknowledge this limitation and provide mechanistic explanations (drought-related water storage, serotype changes) in claims C44-C48, demonstrating scientific integrity in reporting model failures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "When comparing the forecast model to a null model (seasonal average) for predicting high dengue risk across all 553 Brazilian microregions, the forecast model achieved a 57% hit rate versus 33% for the null model, though the forecast model produced more false alarms. The forecast model's hit rate exceeded the null model for all years except 2004, when dengue incidence was at its lowest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by quantitative data in Table 2 and Figure 5, showing contingency table results and cross-validated performance from 2000-2014. The trade-off between higher hit rates and higher false alarm rates is appropriately documented. However, the evaluation could be strengthened by reporting confidence intervals for the performance metrics and discussing the statistical significance of the differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model correctly assigned low risk warnings for 67% of microregions where low risk was observed, and high risk warnings for 57% of microregions where high risk was observed. The model correctly detected high risk with high certainty in northeastern Brazil near Fortaleza and in microregions surrounding Bras\u00edlia, and correctly predicted low risk in South Brazil and large areas of the Amazon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by spatial analysis presented in Figures 2-4, showing conditional probabilities and geographic patterns of forecast performance. The visual evidence from maps corroborates the quantitative performance metrics. The spatial heterogeneity in model performance is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The forecast model was better able to detect extreme dengue incidence rates than the null model, successfully accounting for increased outbreak probability in Belo Horizonte (2010, 2013), Salvador (2010), and Manaus (2011). During years with relatively low dengue incidence, the forecast model produced more precise predictions with narrower prediction intervals than the null model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by time series analysis in Figure 6, showing cross-validated predictions from 2000-2014 for all 12 host microregions. The visual evidence demonstrates that the forecast model's prediction intervals often capture observed values better than the null model, particularly for epidemic years. The claim about narrower intervals during low incidence years is visually verifiable in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A high pressure system over Southeast Brazil from early 2014 prevented cold frontal systems and humid air transport, leading to severe drought in S\u00e3o Paulo and Minas Gerais states. This water supply crisis likely resulted in increased artificial water storage containers, increasing mosquito breeding sites and intensifying dengue transmission in the Southeast region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 are supported by citations to meteorological studies (Coelho et al., 2015a,b), but C47 is speculative (supported only by Otto et al., 2015 citation and marked as INFERENCE). The causal link between drought, water storage, and increased dengue transmission is plausible but not directly demonstrated in this study. No data on water storage practices or mosquito breeding site surveys are provided to validate this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The unforeseen dengue outbreak in Bras\u00edlia may have resulted from a change in the dominant serotype to DENV1 and the immunological status of the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly speculative (marked as SPECULATION in evidence_type) and supported only by a single citation to a Ministry of Health report. No serotype-specific data or seroprevalence surveys are presented to validate this hypothesis. The authors appropriately acknowledge this requires further investigation, but the claim remains unsubstantiated within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The model could, in general, distinguish climate-limiting areas for dengue fever.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by the spatial analysis showing correct low-risk predictions in South Brazil and parts of the Amazon (C82), regions known to have climatic constraints on dengue transmission. The citation to Barcellos and Lowe, 2014b provides additional support. Figure 2 visually demonstrates the model's ability to identify climatically unsuitable regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The dengue incidence rate baseline in Brazil has been increasing over the years, reaching a plateau between 100-300 cases per 100,000 inhabitants since 1998. This plateau appears to result from geographic spread of the disease (from a few hundred cities in the late 1980s to almost 4000 cities, covering 72% of Brazilian territory) rather than increased incidence rates within cities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by citations to Barreto et al., 2011 and Barcellos and Lowe, 2014b. These claims provide important epidemiological context for interpreting the risk thresholds used in the model. The distinction between geographic spread versus intensity increase is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The three-class dengue risk levels (low<100, medium 100-300, high>300 cases per 100,000 inhabitants per year) used by the National Dengue Control Programme have been shown to appropriately capture the occurrence of large epidemics for certain cities, such as Rio de Janeiro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citation to Lowe et al., 2013, which validated these thresholds for Rio de Janeiro. However, the authors appropriately note in the Discussion that these thresholds may not be appropriate for all cities, regions, or seasons, and suggest location-specific thresholds as future work. The claim is accurate but limited in scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The dengue early warning model framework may be useful to public health services ahead of mass gatherings and before the peak dengue season each year to control potentially explosive dengue epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is speculative (marked as SPECULATION) and represents a forward-looking statement about potential utility rather than a demonstrated result. While the model showed reasonable performance (58% accuracy for host cities, 57% hit rate for high-risk detection), no evidence is provided that the warnings actually influenced public health interventions or that such interventions would have been effective. This requires prospective evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The dengue early warnings were disseminated to the Ministry of Health, the general public, and visitors traveling to Brazil prior to the World Cup. The predictions were incorporated into the ECDC health risk assessment and reported by more than 18 international press outlets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 document the real-world dissemination and impact of the forecasts. C56 is supported by citation to ECDC, 2014. These claims establish that this was a genuine operational forecast rather than a retrospective analysis, which is important for evaluating the study's significance. However, no assessment of how the warnings influenced behavior or public health actions is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "This work constitutes the first evaluation of a nationwide dengue early warning issued before a global mass gathering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the literature review in claims C18-C20, which establishes that while climate-based dengue early warning systems have been explored, real-time climate forecasts had not been previously applied to predict dengue epidemics in a practical real-life framework. The novelty claim appears justified based on the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context on dengue epidemiology in Brazil: Dengue is a major public health concern caused by four serotypes transmitted by Aedes mosquitoes. Brazil reports more dengue cases than any other country. Dengue incidence is unequally distributed in Brazil, with higher incidence along the Atlantic coast and central region. Temperature and rainfall control transmission magnitude and seasonality, with large outbreaks typically occurring after rainy and warm periods. Vector presence is necessary but not sufficient for transmission; introduction of new serotypes in susceptible populations is also important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide well-established background information supported by appropriate citations to peer-reviewed literature (Guzman and Harris, 2015; Bhatt et al., 2013; Teixeira et al., 2009; Kraemer et al., 2015; Campbell et al., 2015). These claims establish the scientific context and rationale for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on mass gatherings and early warning systems: International mass gathering events create opportunities for pathogen introduction and expose visitors to local risks. Seasonal climate forecasts combined with early surveillance data can anticipate dengue outbreaks months in advance. While climate information has been incorporated into early warning systems for diseases like malaria and Rift Valley fever, and explored for dengue, real-time climate forecasts had not been previously applied to predict dengue epidemics in a practical real-life framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide literature context supported by appropriate citations (Abubakar et al., 2012; Matos and Barcellos, 2010; Lowe et al., 2014; Anyamba et al., 2009; Thomson et al., 2006; Degallier et al., 2010; Lowe et al., 2011; Stewart-Ibarra and Lowe, 2013). Claim C20 establishes the novelty gap that this study addresses. These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Context on the 2014 World Cup: Brazil hosted the 2014 FIFA World Cup from June 12 to July 13, 2014, involving more than 3 million spectators traveling between 12 host cities. Before the event, the potential risk of communicable disease transmission, including dengue, was highlighted, and several research groups published dengue outlooks ahead of the World Cup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide factual context about the World Cup event that motivated this study. C24 is supported by citations to Gallego et al., 2014 and Wilson and Chen, 2014. These claims accurately describe the public health context and establish why a dengue forecast was needed for this specific event.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Data sources and quality: Dengue data for June 2014 was obtained from SINAN and aggregated from 5570 municipalities (42% with <10,000 inhabitants) to 553 microregions. Dengue notification is prioritized in Brazil's surveillance system, with 50% of cases reported within 3 days and 90% digitized within 7 days. During outbreaks, clinical and epidemiological evidence is used for case confirmation. About 50% of suspect cases are confirmed in epidemic periods versus 30% in low transmission periods. Population estimates were obtained from IBGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 describe data sources and surveillance system characteristics, supported by citations to Barbosa et al., 2015 and IBGE, 2014. These methodological details are important for assessing data quality and potential biases. The acknowledgment of different confirmation rates during epidemic versus non-epidemic periods is important for interpretation but raises questions about temporal consistency in case definitions that could affect model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Null model definition and error types: A null model was defined as the seasonal average of past dengue incidence (mean DIR for June 2000-2013). Failing to predict an epidemic that occurs (type II error - a miss) is much more damaging than predicting an epidemic that does not materialize (type I error - a false alarm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 clearly defines the null model used for comparison. Claim C77, supported by citation to Stephenson, 2000, provides important context for interpreting the trade-off between false alarms and missed events documented in C38-C39. This asymmetry in error costs is appropriate for public health decision-making and justifies the model's tendency toward higher false alarm rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The use of real-time seasonal climate forecasts and early epidemiological reports in routine dengue early warnings is now a priority for the Brazilian Climate and Health Observatory in collaboration with the Brazilian Institute for Space Research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes institutional commitment to operationalizing this approach, indicating real-world impact beyond the research study. This represents a concrete outcome of the work, though it does not constitute a scientific finding per se. The claim is verifiable through the mentioned institutional websites and collaborations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The first GRO-seq transcriptional profiles from ALL patients reveal that structural variation (SV) sites display specific transcriptional features, namely convergent transcription (convT) and Pol2 stalling, with overlap most prominent at SV sites with RAG recognition motifs (RSS). Novel transcribed regions including long non-coding RNAs were identified as recurrent SV-associated hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C26-C30, C32, C34-C37 collectively demonstrate that GRO-seq data from ALL patients reveal reproducible transcriptional features (convT and Pol2 stalling) at breakpoint sites across multiple cytogenetic subtypes. The data show significant enrichment of breakpoints in enhancers overlapping with convT (P=0.00012 for intergenic, P=4.6e-08 for all enhancers) and identify novel transcribed regions at SV hotspots. The findings are supported by statistical analysis and reproducible across biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Genome-wide analysis demonstrates that TADs with high breakpoint frequency are significantly enriched for convT and Pol2 stalling across all pre-B-ALL subtypes examined, with enrichment preserved for breakpoints both with and without RSS motifs and supported by chromatin segmentation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide converging evidence from genome-wide analysis showing significant enrichment in upper quartiles across multiple subtypes (P=0.00038 in ETV6-RUNX1, P=0.00018 in hyperdiploid, P=0.028 in hypodiploid, P=0.00004 in MLL-rearranged). The enrichment is preserved across RSS motif status and transcriptional activity levels, and is supported by independent chromatin segmentation data from B-lymphoid cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Convergent transcription contributes to R-loop generation and RNA polymerase stalling in mammalian cells. RLFS motif-containing regions show significantly higher overlap with Pol2 stalling sites, and both RLFS motifs and convT are associated with elevated DRIP-seq signal indicating R-loop formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C47, C49-C52 demonstrate through multiple independent lines of evidence (DRIP-seq, GRO-seq, computational RLFS analysis) that convT and RLFS contribute to Pol2 stalling and R-loop formation. DRIP-seq shows 2.1-fold elevation at RLFS motifs (P<2.2e-16) and 1.7-fold elevation at convT-positive TSS (P<2.2e-16). RLFS regions show significantly higher overlap with Pol2 stalling (empirical P<0.001), and higher antisense signal at convT regions increases overlap with Pol2 stalling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "Both RSS-independent (NR-breakp) and RSS-dependent (R-breakp) breakpoints show significant genome-wide enrichment for convT and Pol2 stalling, with enrichment increasing with breakpoint recurrence. For R-breakp, 66% overlap with Pol2 stalling and 44% with convT was observed, with 91% convT overlap at highly recurrent sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C64-C69, C82 provide comprehensive statistical evidence for enrichment of both NR-breakp (29% Pol2 stalling overlap, P=4.088e-07; 9% convT overlap, P=5.16e-07) and R-breakp (66% Pol2 stalling, P<2.2e-16; 44% convT, P<2.2e-16). The enrichment increases with recurrence, reaching 91% convT overlap at regions with \u22654 breakpoints. High agreement (78%) between GRO-seq and ChIP-seq validates the findings, and enrichment is preserved across wide expression ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "Wide Pol2 stalling regions are characterized by increased DNA accessibility (DNAse hypersensitivity) and unusually broad H3K4me3 signal. TSS with RSS motifs and breakpoints have significantly wider Pol2 stalling (259 bp difference, P=0.0024) compared to other TSS, and stalling width does not correlate with transcription level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C63, C86-C88, C90 demonstrate through DNAse-seq and ChIP-seq analysis that Pol2 stalling sites have significantly wider DNAse peaks (876 bp increase in B-lymphoblastoid, 412 bp in ES cells, P<2.2e-16). TSS with RSS motifs and breakpoints show significantly wider stalling (259 bp, P=0.0024). The top 5% widest stalling regions show highest odds ratios for overlap with Pol2 S5P, DNAse-seq, and H3K4me3. Stalling width shows negative correlation with gene expression (r=-0.11), indicating stalling events rather than transcription level are important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C100"
+    ],
+    "result": "ETV6-RUNX1 fusion positive pre-B-ALL patients exhibit over ten-fold elevation in RAG1 expression compared to other cytogenetic subtypes, and high expression of RAG1/2 is markedly distinct between different pre-B-ALL subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70, C100 are supported by transcriptome analysis of 1382 pre-B-ALL patients showing ETV6-RUNX1 cases (N=153) have 10.8-fold higher median RAG1 expression (P<2.2e-16, 95% CI 8.6-13.6-fold) compared to other annotated cytogenetic types (N=1008). The statistical analysis is robust with large sample size and appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "High AICDA expression marks pre-B-ALL lacking common cytogenetic changes (the 'other' group) and is particularly prevalent in high-risk cases. The 'other' cytogenetic subtype shows molecular similarity and distinct AICDA elevation, with the highest expression observed in a relapsed case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71-C74, C101-C103 demonstrate through transcriptome analysis that AICDA expression is highest in the 'other' group (N=267) and significantly enriched in high-risk cases (hypergeometric test P=7.19e-47). The t-SNE analysis shows molecular similarity within the 'other' group, and a relapsed case showed highest AICDA with 3.09-fold and 1.93-fold increases in RAG1 and RAG2 at relapse. The large patient cohort (N=1382) and statistical validation support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A novel genome-wide approach using change point analysis was developed to detect Pol2 stalling events across gene bodies, extending beyond promoter-proximal pausing. The approach was validated by high overlap with RLFS-rich regions and high agreement between GRO-seq and ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe a methodological contribution validated through multiple approaches: high overlap with RLFS-rich regions (known structural obstacles to transcription), and 78% agreement between GRO-seq and Pol2 ChIP-seq analyses. The PELT method for change point detection is appropriately applied to identify stalling across full gene bodies rather than just promoter regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Pol2 stalling and convT strongly associate with recurrent breakpoint sites genome-wide and at leukemia-implicated loci. The study demonstrates for the first time that leukemia breakpoints show significant enrichment to enhancers overlapping convT and establishes a genome-wide link between convT, elevated R-loop levels, and Pol2 stalling in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C79-C81 summarize the major findings with appropriate context. The novelty claims are supported by the data presented (first demonstration of enhancer/convT enrichment in leukemia, first genome-wide link between convT and R-loops/Pol2 stalling in human cells). The integration of GRO-seq, DRIP-seq, and WGS data from both normal and leukemic cells provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C31",
+      "C44",
+      "C53",
+      "C77",
+      "C78",
+      "C84",
+      "C85",
+      "C89",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C106"
+    ],
+    "result": "Background knowledge from prior research establishes that: AID drives lymphomagenesis through off-target breaks at enhancers with convT; RAG-mediated V(D)J recombination occurs at RSS sites with multiple regulatory controls; H3K4me3 serves as RAG2 docking site; RSS motifs are found at only 7-40% of breakpoints; stalled polymerases expose ssDNA for AID recruitment; and various mechanisms link transcription to genomic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C25, C31, C44, C53, C77-C78, C84-C85, C89, C95, C97-C99, C106 represent established knowledge from prior research, appropriately cited throughout. These provide the scientific context and rationale for the current study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C38",
+      "C48",
+      "C58",
+      "C61",
+      "C83",
+      "C90",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Speculative claims and hypotheses include: regions correspond to intragenic enhancers generating eRNAs; signal features represent Pol2 stalling; convT may halt transcription; nucleosome depletion may enhance RSS access; wide stalling increases RSS motif likelihood in accessible chromatin; RAG1 access relates to elongation fidelity; stalling properties may favor RAG recognition/cleavage; and various implications for future research and clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C38, C48, C58, C61, C83, C90, C104-C105, C107-C109 represent hypotheses, inferences, and speculation about mechanisms and future directions. While many are reasonable interpretations of the data (e.g., C38 was subsequently validated), they represent proposals rather than demonstrated facts. Claims about clinical translation (C108-C109) and future research directions (C104-C105, C107) are appropriately speculative.",
+    "result_type": "MINOR"
+  }
+]

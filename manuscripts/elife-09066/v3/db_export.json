@@ -1,0 +1,1816 @@
+{
+  "submission": {
+    "id": "74361f47-a51a-4599-8975-91e78a06abf8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:12:33.813861Z",
+    "updated_at": "2025-11-29T22:12:33.813861Z"
+  },
+  "content": [
+    {
+      "id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "submission_id": "74361f47-a51a-4599-8975-91e78a06abf8",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of interprotein electron transfer in bacterial sulfite oxidation\n\n## Authors\n\n- Aaron P McGrath<sup>1</sup>\n- Elise L Laming<sup>2</sup>\n- G Patricia Casas Garcia<sup>3</sup>\n- Marc Kvansakul<sup>3</sup>\n- J Mitchell Guss<sup>2</sup>\n- Jill Trewhella<sup>2</sup>\n- Benoit Calmes<sup>4</sup>\n- Paul V Bernhardt<sup>4</sup>\n- Graeme R Hanson<sup>4</sup>\n- Ulrike Kappler<sup>4</sup> \u2020\n- Megan J Maher<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Structural Biology Program Centenary Institute Sydney Australia\n2. School of Molecular Bioscience University of Sydney Sydney Australia\n3. Department of Biochemistry and Genetics La Trobe Institute for Molecular Science, La Trobe University Melbourne Australia\n4. Centre for Metals in Biology The University of Queensland Brisbane Australia\n5. School of Chemistry and Molecular Biosciences The University of Queensland Brisbane Australia\n6. Centre for Advanced Imaging University of Queensland Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nInterprotein electron transfer underpins the essential processes of life and relies on the formation of specific, yet transient protein-protein interactions. In biological systems, the detoxification of sulfite is catalyzed by the sulfite-oxidizing enzymes (SOEs), which interact with an electron acceptor for catalytic turnover. Here, we report the structural and functional analyses of the SOE SorT from Sinorhizobium meliloti and its cognate electron acceptor SorU. Kinetic and thermodynamic analyses of the SorT/SorU interaction show the complex is dynamic in solution, and that the proteins interact with Kd = 13.5 \u00b1 0.8 \u03bcM. The crystal structures of the oxidized SorT and SorU, both in isolation and in complex, reveal the interface to be remarkably electrostatic, with an unusually large number of direct hydrogen bonding interactions. The assembly of the complex is accompanied by an adjustment in the structure of SorU, and conformational sampling provides a mechanism for dissociation of the SorT/SorU assembly.\n\n## Introduction\n\nAlthough electron transfer reactions are key biochemical events, which underpin fundamental processes, such as respiration and photosynthesis, the study of the molecular details of the interprotein interactions at their core can be largely intractable. In particular, atomic resolution crystal structures of electron transfer complexes are\u00a0rare, due to their fundamentally transient nature (Antonyuk et al., 2013). Electron transfer pathways are made up of chains of redox proteins, which provide a path for the controlled flow of electrons and rely on efficient docking of protein redox partners through noncovalent, dynamic protein-protein interfaces (Moser et al., 1992). Complementary electrostatic surfaces, hydrophobic interactions and dynamics at the protein-protein interface have all been proposed to contribute to efficient interprotein electron transfer (Leys and Scrutton, 2004), with a strong correlation between the driving force for the reaction, the distance between redox centers and the rate of electron transfer (Moser et al., 1992; Marcus and Sutin, 1985).\n\nInterprotein electron transfer processes are central to the redox conversions of cellular sulfur compounds, which are an evolutionarily ancient type of metabolism that has existed as long as cellular life\u00a0(Schidlowski, 1979; Kappler et al., 2008). Sulfur-containing compounds mediate many crucial reactions in the cell (for example, in coenzyme A, sulfur containing amino acids or glutathione), but their reactivity also makes them potentially toxic (Kappler, 2011). Sulfite in particular, is a highly reactive sulfur compound that can cause damage to proteins, DNA and lipids, resulting in oxidative stress and irreversible cellular damage (Feng et al., 2007). In most cells, the detoxification of sulfite by oxidation to sulfate (Equation 1) is catalyzed by sulfite oxidizing enzymes (SOEs) (Kisker et al., 1997).\n\n$$\nSO_{3}^{2-}\u00a0+\u00a0H_{2}O\u00a0\u2192\u00a0SO_{4}^{2-}\u00a0+\u00a02H^{+}\u00a0+\u00a02e^{-}\n$$\n\nSOEs from plants, higher animals and bacteria have been characterized and they all catalyze the same fundamental reaction. However, their cellular functions, catalytic properties (Kappler, 2011; Feng et al., 2007; Kappler and Wilson, 2009; Hille, 2002; H\u00e4nsch et al., 2007) and the identities of their natural electron acceptors vary significantly. Some SOEs transfer electrons to oxygen (Schrader et al., 2003), while others interact with redox proteins such as cytochrome c (Kisker et al., 1997; Kappler and Wilson, 2009; Low et al., 2011; Bailey et al., 2009; Cohen and Fridovich, 1971; Cohen and Fridovich, 1971; Cohen et al., 1971) or as yet unknown cellular components (Kappler, 2011; Low et al., 2011; Bailey et al., 2009; Wilson and Kappler, 2009). To date, three unique crystal structures of SOEs have been reported: from chicken, plant and bacteria, which differ significantly in their domain architectures and redox cofactor compositions. However, none of these studies show details of a SOE in complex with its external electron acceptor (Kisker et al., 1997; Schrader et al., 2003; Kappler and Bailey, 2005). At present, no structural information on the molecular interactions of any of these enzymes with their respective electron acceptors is available and the determinants that dictate the type of electron acceptor individual SOEs employ, while maintaining the efficiency of the basic enzyme reaction are open questions. (Kappler, 2011; Kappler, 2008)\n\nHere, we have investigated an electron transfer complex involving the periplasmic SorT sulfite dehydrogenase from the \u03b1-Proteobacterium Sinorhizobium meliloti, which represents a structurally uncharacterized type of SOE, and its electron acceptor, the c-type cytochrome SorU (Low et al., 2011; Wilson and Kappler, 2009). In S. meliloti the SorT sulfite dehydrogenase is part of a sulfite detoxification system that is induced in response to the degradation of sulfur containing substrates such as\u00a0the organosulfonate taurine (Wilson and Kappler, 2009). Electrons derived from sulfite oxidation are passed on to the SorU cytochrome, and likely then to cytochrome oxidase, as S. meliloti is capable of sulfite respiration (Low et al., 2011). Here, we report the crystal structures of both the isolated SorT and SorU proteins and the biochemical and structural analyses of the SorT/SorU electron transfer complex. This is the first time that a crystal structure of a molybdenum enzyme in complex with its external electron acceptor has been solved.\n\n## Results\n\n### The interactions between SorT and SorU are highly dynamic and efficient in solution\n\nSulfite-oxidizing enzymes, particularly those from bacteria, are known to be highly efficient catalysts (Kappler, 2011; Kappler and Enemark, 2015). Previous work has established that SorT is able to transfer electrons to the SorU cytochrome that is encoded on the same operon; however, no kinetic details of the interaction were reported (Low et al., 2011). With the artificial electron acceptor ferricyanide, SorT was shown to have a\u00a0turnover number of 338 \u00b1 3\u2009s-1 (Low et al., 2011; Wilson and Kappler, 2009). Employing SorU as the substrate, we analyzed the kinetics of the interaction between SorT and SorU and found the interaction to be fast and highly specific, with a KM(SorU) of 32 \u00b1 5 \u03bcM and a kcat of 140 \u00b1 11\u2009s-1, confirming that SorU is the natural electron acceptor of SorT. Measurement of the thermodynamics of the SorT/SorU interaction by isothermal titration calorimetry (ITC) revealed a dissociation constant of Kd = 13.5 \u00b1 0.8 \u03bcM with a determined stoichiometry of 0.8 \u00b1 0.2. These values are in the range observed for other electron transfer complexes (Dell'acqua et al., 2008; Pettigrew et al., 2003) and match a model where SorT sequentially transfers two electrons, derived from sulfite oxidation, to two SorU molecules. In other words, the SorT/SorU complex must form twice (with two different ferric SorU protein molecules) to complete the oxidative half reaction of SorT.\n\nThe KM of SorT for SorU is very close to its affinity for sulfite (KM\u00a0=\u00a015.5 \u00b1 1.9 \u03bcM [Wilson and Kappler, 2009]), and the turnover number in the SorU-based assay is ~40% of that seen with ferricyanide as the electron acceptor (Wilson and Kappler, 2009), where no significant reorientation and docking of the electron acceptor is required. These data reveal interesting details about the formation of the SorT/SorU complex, which appears to form with similar affinities between the two proteins when both are oxidized as in the ITC experiments and in a system where SorT constantly undergoes oxidation and reduction (SorU-based enzyme assay). In addition, the similarity between the determined values of Kd and KM indicates that the affinity of SorT for SorU is unaffected by the presence of substrate or product. However, the kinetic parameters for this interaction are clearly distinct from those for other sulfite-oxidizing enzymes, such as the bacterial SorAB enzyme or chicken sulfite oxidase (CSO), both of which have much higher affinities for their respective electron accepting cytochromes c (both with KM(Cyt c) ca. 2 \u03bcM) (Kappler et al., 2006). The catalytic turnover of CSO is relatively slow (kcat = 47.5 \u00b1 1.9\u2009s-1), due to a mechanism requiring internal rearrangement, while turnover of SorAB with its natural electron acceptor (334 \u00b1 11\u2009s-1) is significantly faster than that for SorT (Kappler and Enemark, 2015; Kappler et al., 2006).\n\n### The crystal structure of the SorT homodimer reveals a head to tail subunit arrangement\n\nIn order to investigate whether there are any structural reasons for these differences, we solved the crystal structure of SorT by molecular replacement and refined it to 2.4\u00a0\u00c5 resolution. The structure shows two homodimeric assemblies per asymmetric unit (Table 1), which is in agreement with the quaternary structure as determined by MALLS (Low et al., 2011; Wilson and Kappler, 2009). Unexpectedly however, within the SorT homodimer the protomers are oriented in a head-to-tail orientation (Figure 1A), a subunit arrangement that has not been previously observed in structures of sulfite-oxidizing enzymes. In keeping with the nomenclature applied to other structurally-characterized SOEs, a \u2018dimerization\u2019 domain typically defines the interface between the two monomers (Kisker et al., 1997; Schrader et al., 2003), but the structure of the SorT dimer does not follow this paradigm.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig1-v3.jpg)\n\n**Figure 1.:** (A) The structure of the SorT homodimer. Molecule A in blue/yellow; molecule B in gray (with transparent surface). For molecule A, the \u2018SUOX-fold domain\u2019 and \u2018dimerization domain\u2019 are represented in blue and yellow, respectively. The molybdopterin cofactor is shown as sticks within the SUOX-fold domain. The corresponding domains of the opposing protomer (shown in molecular surface representation), which constitute the dimer interface are colored to highlight the \u2018head-to-tail\u2019 dimer arrangement. INSET: a closer view of the molybdenum binding-site: the molybdenum atom (green sphere) is coordinated by two dithioline ligands from the molybdopterin (yellow spheres), residue Cys 127, an axial oxo ligand and an equatorial hydroxo or water ligand (red spheres). (B) The structure of SorU. The main three helices are labeled and the heme cofactor is shown in red. INSET: the heme binding site with the heme cofactor, coordinating residues, covalent links to Cys 50 and 57 and hydrophobic residues lining binding site: Phe 39, Val 62, Val 76, Val 80, Val 101 highlighted.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\"></th>\n      <th>SorT</th>\n      <th colspan=\"2\">SorU</th>\n      <th>SorT/SorU complex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Data collection</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Space Group</td>\n      <td>P21</td>\n      <td colspan=\"2\">F222</td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Cell dimensions</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">a, b, c (\u00c5)</td>\n      <td>96.0, 92.2, 109.4</td>\n      <td colspan=\"2\">70.9, 129.2, 197.0</td>\n      <td>109.6, 95.8, 49.9</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 89.7, 90</td>\n      <td colspan=\"2\">90, 90, 90</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">X-ray source</td>\n      <td>AUS MX2</td>\n      <td colspan=\"2\">AUS MX2</td>\n      <td>AUS MX2</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">\u03bb (\u00c5)</td>\n      <td>0.950</td>\n      <td colspan=\"2\">0.954</td>\n      <td>0.954</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Detector</td>\n      <td>ADSC Quantum 315r</td>\n      <td colspan=\"2\">ADSC Quantum 315r</td>\n      <td>ADSC Quantum 315r</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Resolution range (\u00c5)</td>\n      <td>50-2.4 (2.43-2.35)a</td>\n      <td colspan=\"2\">50-2.2 (2.28-2.20)</td>\n      <td>50-2.5 (2.50-2.59)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Observed reflections</td>\n      <td>240521</td>\n      <td colspan=\"2\">96340</td>\n      <td>64273</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Unique reflections</td>\n      <td>77971</td>\n      <td colspan=\"2\">23453</td>\n      <td>18883</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Completeness (%)</td>\n      <td>98.4 (99.4)</td>\n      <td colspan=\"2\">99.9 (100)</td>\n      <td>99.3 (99.6)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Multiplicity</td>\n      <td>3.1 (3.1)</td>\n      <td colspan=\"2\">4.1 (4.1)</td>\n      <td>3.4 (3.4)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">&lt;I/\u03c3(I)&gt;</td>\n      <td>6.7 (2.1)</td>\n      <td colspan=\"2\">8.9 (1.6)</td>\n      <td>8.8 (1.7)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Rmerge (%)b</td>\n      <td>15.9 (66.7)</td>\n      <td colspan=\"2\">13.3 (76.6)</td>\n      <td>13.9 (76.6)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Reflections in working set</td>\n      <td>74024</td>\n      <td colspan=\"2\">22113</td>\n      <td>17781</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Reflections in test set</td>\n      <td>3927</td>\n      <td colspan=\"2\">1201</td>\n      <td>960</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Protomers per ASU</td>\n      <td>4</td>\n      <td colspan=\"2\">4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Total atoms (non-H)</td>\n      <td>11378</td>\n      <td colspan=\"2\">2941</td>\n      <td>3422</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Protein atoms</td>\n      <td>10890</td>\n      <td colspan=\"2\">2542</td>\n      <td>3290</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Metal atoms</td>\n      <td>4</td>\n      <td colspan=\"2\">4</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Water atoms</td>\n      <td>376</td>\n      <td colspan=\"2\">227</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Other atoms</td>\n      <td>108</td>\n      <td colspan=\"2\">168</td>\n      <td>67</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Rwork (%)c</td>\n      <td>20.8 (31.7)</td>\n      <td colspan=\"2\">19.2 (30.8)</td>\n      <td>21.1 (30.2)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Rfree (%)d</td>\n      <td>23.9 (34.7)</td>\n      <td colspan=\"2\">24.0 (34.3)</td>\n      <td>26.0 (36.5)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Rmsd bond lengths (\u00c5)</td>\n      <td>0.008</td>\n      <td colspan=\"2\">0.006</td>\n      <td>0.012</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Rmsd bond angles (deg)</td>\n      <td>1.08</td>\n      <td colspan=\"2\">0.91</td>\n      <td>1.41</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">&lt;B&gt; (\u00c52)e</td>\n      <td>32.5</td>\n      <td colspan=\"2\">20.6</td>\n      <td>38.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Cruickshank's DPI</td>\n      <td>0.07</td>\n      <td colspan=\"2\">0.23</td>\n      <td>0.49</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">PDB ID</td>\n      <td>4PW3</td>\n      <td colspan=\"2\">4PWA</td>\n      <td>4PW9</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues in parenthesis are for highest-resolution shellb Rmerge = \u2211hkl \u2211i\u00a0|\u00a0Ii (hkl) - <I(hkl)>\u00a0|/\u2211hkl \u2211i Ii (hkl)c Rwork = \u2211h |\u00a0Fobs \u2013 Fcalc\u00a0|/\u2211hFobsd Calculated as for Rwork using 10% of the diffraction data that had been excluded from the refinementeAs calculated by BAVERAGE (Winn et al., 2011)_\n\nNevertheless, the fold of the SorT monomers is similar to those of other SOEs (Kisker et al., 1997; Schrader et al., 2003; Kappler and Bailey, 2005), comprising a central \u2018SUOX-fold\u2019 domain (Workun et al., 2008) that harbors the Mo active site and a \u2018dimerization\u2019 domain (Figure 1A). The SorT active site has a square-pyramidal geometry seen in all other SOE structures with a five coordinate molybdenum atom and a single tricyclic pyranopterin cofactor (Figure 1A, Table 2) (George and Pickering, 1999).\n\n**Table 2.**\n Mo coordination geometry in the active site of SorT.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Bond</th>\n      <th>Distance (\u00c5)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mo-S1 (pterin)</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>Mo-S2 (pterin)</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>Mo-S (Cys 127)</td>\n      <td>2.3</td>\n    </tr>\n    <tr>\n      <td>Mo=O</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>Mo-OH/H2O</td>\n      <td>1.9</td>\n    </tr>\n  </tbody>\n</table>\n\nSingle electron reduction of SorT to its EPR active MoV form was achieved using a combination of Ti(III)citrate and a suite of organic redox mediators. The MoV\u00a0EPR spectrum is similar to the so-called \u2018high pH\u2019 EPR signature of SOEs (Figure 2A, Table 3, Appendix 1). An additional feature is the presence of superhyperfine coupling between the unpaired electron on the Mo ion and two nearby I = \u00bd nuclei. This implies that the equatorially coordinated O-donor is an aqua ligand at pH 8 (Figure 2B(ii)) or that a hydroxido ligand is hydrogen bonded with a water molecule whose proximal H-atom is coupled with the electron spin on Mo (Figure 2B(i), Appendix 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig2-v3.jpg)\n\n**Figure 2.:** (A) X-band EPR spectra of the Mo(V) center in SorT. (a) First and (b) second derivative EPR spectra of SorT at 0 mV vs NHE in tricine pH 8.0, \u03c5= 9.43462 GHz, T = 136.3 K. (c) Computer simulation of the second derivative spectrum with the spin Hamiltonian parameters listed in Table 3; (d,e) Expansion of spectra (b) and (c), respectively. (B)\u00a0Schematic structures of the (i) high and (ii) low pH forms of sulfite oxidase.\n\n**Table 3.**\n Spin Hamiltonian parameters for the Mo(V) center of SorT and various low and high pH forms of human, avian, plant and bacterial sulfite oxidases.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Parameter</th>\n      <th>X</th>\n      <th>Y</th>\n      <th>Z</th>\n      <th>\u03b2o</th>\n      <th>Ref</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SorT</td>\n      <td>g</td>\n      <td>1.94930</td>\n      <td>1.95997</td>\n      <td>1.98632</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>A(95Mo)b</td>\n      <td>20.5</td>\n      <td>36.0</td>\n      <td>53.9</td>\n      <td>26</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>A(1H)b,c</td>\n      <td>3.5</td>\n      <td>4.0</td>\n      <td>4.8</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SorAc</td>\n      <td>g</td>\n      <td>1.9541</td>\n      <td>1.9661</td>\n      <td>1.9914</td>\n      <td>-d</td>\n      <td>Klein, et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Human SO</td>\n      <td>g Low pH</td>\n      <td>1.9646</td>\n      <td>1.9723</td>\n      <td>2.0023</td>\n      <td>-</td>\n      <td>Enemark, et al., 2010</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>A(1H)b</td>\n      <td>11.47</td>\n      <td>7.10</td>\n      <td>7.71</td>\n      <td>-</td>\n      <td>Enemark, et al., 2010</td>\n    </tr>\n    <tr>\n      <td>Chicken SO</td>\n      <td>g (Low pH)</td>\n      <td>1.9658</td>\n      <td>1.9720</td>\n      <td>2.0037</td>\n      <td>-</td>\n      <td>Drew and Hanson, 2009</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>A(1H)b</td>\n      <td>11.93</td>\n      <td>7.37</td>\n      <td>7.95</td>\n      <td>-</td>\n      <td>Drew and Hanson, 2009</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>g (High pH)</td>\n      <td>1.9531</td>\n      <td>1.9641</td>\n      <td>1.9872</td>\n      <td></td>\n      <td>Drew and Hanson, 2009</td>\n    </tr>\n    <tr>\n      <td>A. Thaliana SO</td>\n      <td>g (Low pH)</td>\n      <td>1.963</td>\n      <td>1.974</td>\n      <td>2.005</td>\n      <td>-</td>\n      <td>Enemark, et al., 2006</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>A(1H)b</td>\n      <td>11.9</td>\n      <td>9.2</td>\n      <td>10.3</td>\n      <td>--</td>\n      <td>Enemark, et al., 2006</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>g (High pH)</td>\n      <td>1.956</td>\n      <td>1.964</td>\n      <td>1.989</td>\n      <td>-</td>\n      <td>Enemark, et al., 2006</td>\n    </tr>\n  </tbody>\n</table>\n\n_aNon-coincident angle between g and A (rotation about x axis). bUnits 10-4 cm-1. c Two magnetically equivalent protons (I=1/2) were included in the computer simulated spectra. c95Mo hyperfine couplings were unresolved and the shoulders on gz were incorrectly attributed to 95Mo hyperfine resonances. dEuler angles were not determined._\n\nWithin the SorT dimer, the subunit interface involves both the 'SUOX-fold' and the \u2018dimerization\u2019 domains (Figure 1A), resulting in a buried surface area of ~1280 \u00c52 per monomer, which is approximately 9% of the solvent-accessible surface of each monomer. The functional consequences and structural origins of these significant differences among the quaternary structures of SOEs are at this point unknown, as all of these enzymes are highly catalytically active, have similar active site structures and no known kinetic cooperativity that would imply a functional role for the different oligomeric assemblies (Kappler and Wilson, 2009; H\u00e4nsch et al., 2007; Wilson and Rajagopalan, 2004).\n\n### In complex, SorT and SorU form a SorU/SorT2/SorU assembly that reveals a pathway for electron transfer\n\nDespite the dynamic nature of the SorT/SorU interaction, it was possible to co-crystallize SorT with SorU, resulting in the crystal structure of the SorT/SorU complex, where a single SorT/SorU entity is present per asymmetric unit, and the application of crystallographic 2-fold symmetry reveals a SorU/SorT2/SorU assembly (Figure 3A, Table 1). Small-angle X-ray scattering (SAXS) with a sample prepared as a stoichiometric mixture of SorT and SorU (Figure 3B, Table 4, Appendix 2-Figure 1) confirmed that the structure observed in the crystal is preserved in solution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig3-v3.jpg)\n\n**Figure 3.:** (A) The asymmetric unit from the crystal structure of the SorT/SorU complex contains the functional electron transfer complex. The SorU/SorT2/SorU complex is revealed by the application of crystallographic symmetry operators. The positions of the redox active molybdenum (SorT) and heme c (SorU) cofactors are indicated. (B) Two views of an overlay of the SorU/SorT2/SorU crystal structure with the averaged and filtered dummy atom model from 10 ab initio reconstructions as revealed by SAXS analyses. (C) \u2018Open-book unfolding\u2019 of SorT/SorU complex (SorT is shown in blue, SorU in red) indicating the \u2018footprint\u2019 of interfacing residues from each protein. (D) The same view as Panel C, showing the charge complementarity of the SorT/SorU interface (areas of positive charge in blue, negative charge in red and neutral in white).\n\n**Table 4.**\n Data collection and processing parameters for analysis of the SorT/SorU complex in solution by Small Angle X-ray Scattering (SAXS).\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Data collection parameters</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Instrument</td>\n      <td>SAXSess (Anton Paar)</td>\n    </tr>\n    <tr>\n      <td>Beam geometry</td>\n      <td>10 mm slit</td>\n    </tr>\n    <tr>\n      <td>AH, LH (\u00c5-1), GNOM beam geometry definition</td>\n      <td>0.28, 0.12</td>\n    </tr>\n    <tr>\n      <td>q-range measured (\u00c5-1)</td>\n      <td>0.01-0.400</td>\n    </tr>\n    <tr>\n      <td>Exposure time (min)</td>\n      <td>60 (4 x 15)</td>\n    </tr>\n    <tr>\n      <td>SorT2SorU2 concentration range (mg mL-1)</td>\n      <td>2.75-5.5</td>\n    </tr>\n    <tr>\n      <td>Temperature (\u00baC)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Structural parameters*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rg (\u00c5), I(0) (cm-1) from Guinier (desmeared data) q*Rg &lt; 1.3</td>\n      <td>30.8 \u00b1 0.4, 0.223 \u00b1 0.002</td>\n    </tr>\n    <tr>\n      <td>Rg (\u00c5), I(0) (cm-1) from P(r) (q-range 0.01 \u2013 0.25 \u00c5-1)</td>\n      <td>32.0 \u00b1 0.3, 0.235 \u00b1 0.002</td>\n    </tr>\n    <tr>\n      <td>dmax (\u00c5) from P(r)</td>\n      <td>110</td>\n    </tr>\n    <tr>\n      <td>Molecular mass determination*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Molecular mass Mrfrom Guinier I(0) (ratio with expected)</td>\n      <td>108741 (0.984)</td>\n    </tr>\n    <tr>\n      <td>Molecular mass Mrfrom P(r) I(0) (ratio with expected)</td>\n      <td>114593 (1.037)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">SorT2SorU2 parameters calculated from sequence and chemical composition</td>\n    </tr>\n    <tr>\n      <td>Molecular volume (\u00c53)</td>\n      <td>134385</td>\n    </tr>\n    <tr>\n      <td>Molecular weight Mr (Da)</td>\n      <td>110556</td>\n    </tr>\n    <tr>\n      <td>Partial specific volume (cm3 g-1)</td>\n      <td>0.732</td>\n    </tr>\n    <tr>\n      <td>Contrast (X-rays) (\u0394\u03c1 x 1010 cm-2)</td>\n      <td>2.895</td>\n    </tr>\n    <tr>\n      <td>Modeling results and validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Crystal structure Rg, dmax (\u00c5) SorT/SorU2/SorT SorT</td>\n      <td>31.3, 108 27.9, 99</td>\n    </tr>\n    <tr>\n      <td>Crystal structure compare to desmeared I(q) (\u03c7-value) SorT/SorU2/SorT (q-range 0.01 \u2013 0.15 \u00c5-1) SorT (q-range 0.01 \u2013 0.15 \u00c5-1)</td>\n      <td>1.7 2.3</td>\n    </tr>\n    <tr>\n      <td>Results from 10 ab initio shape restorations. P1 symmetry: Average molecular volume (\u00c53) Normalised spatial distribution (NSD) and NSD variation \u03c7 value for fit to desmeared data</td>\n      <td>140800 0.508 (0.008) 1.8</td>\n    </tr>\n    <tr>\n      <td>Software employed</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Calculation of expected Mr, \u25b3\u03c1 and \u03c5 values</td>\n      <td>MULCh</td>\n    </tr>\n    <tr>\n      <td>Primary data reduction, I(q) vs q</td>\n      <td>SAXSQuant 1D</td>\n    </tr>\n    <tr>\n      <td>Desmearing</td>\n      <td>SAXSQuant</td>\n    </tr>\n    <tr>\n      <td>Guinier analysis</td>\n      <td>PRIMUS</td>\n    </tr>\n    <tr>\n      <td>P(r) analysis</td>\n      <td>GNOM</td>\n    </tr>\n    <tr>\n      <td>Model I(q) from crystal coordinates</td>\n      <td>CRYSOL</td>\n    </tr>\n    <tr>\n      <td>ab initio shape restorations</td>\n      <td>DAMMIN</td>\n    </tr>\n    <tr>\n      <td>3D graphics representations</td>\n      <td>PYMOL</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Reported for 2.75 mg ml-1 measurement._\n\nThe central assembly within the SorU/SorT2/SorU complex is the SorT homodimer, which is identical to the structure of the SorT homodimer alone (Figures 1A and 3A, Table 1). The structure of the SorU protein, both within the SorT/SorU complex and when crystallized in isolation (Figure 1B, Table 1), is predominantly \u03b1-helical with three major \u03b1-helices arranged to form a bundle that frames the heme-binding site (Figure 1B) (C47XXC50H, axial ligands: His 51 and Met 87).\n\nIn the SorT/SorU complex, the SorU protein docks within a pocket adjacent to the SorT active site, with the heme cofactor located at the protein-protein interface (Figures 3A and 4A). The shortest \u2018edge-to-edge\u2019 distance between the SorT Mo atom and the propionate group from the SorU heme c cofactor is 8.2\u2009\u00c5, which is well within the distance for fast electron transfer through the protein medium (Page et al., 1999). PATHWAY analysis (Onuchic et al., 1992) (Table 5) further indicates that the dominant electron tunneling pathway from SorT to SorU proceeds from the Mo atom, via the coordinating H2O/OH-, to the guanidinium group of SorT residue Arg 78 and across the protein-protein interface to the heme propionate group and to the pyrrole ring of heme c to the heme iron (Figure 4B, Table 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig4-v3.jpg)\n\n**Figure 4.:** (A) Electron density map in the region of the SorT/SorU interface. The SorT molecule is represented in blue and the\u00a0SorU molecule in red.\u00a0The 2Fo-Fc electron density map (contoured at 1\u03c3) is shown as a blue net and the redox cofactors\u00a0(molybdenum and heme) are colored according to the representation in Panel B. (B) Pathway for electron transfer (Beratan et al., 1992).\n\n**Table 5.**\n Electron transfer parameters between SorT (Mo) and SorU (Fe) as calculated by PATHWAYS (Onuchic et al., 1992).\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Distance (Mo-Fe, \u00c5)</td>\n      <td>16.5 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Atomic packing density (\u03c1)</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>Average decay exponential (\u03b2)</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>Electronic coupling (HDA)</td>\n      <td>3.4 x 10-4</td>\n    </tr>\n    <tr>\n      <td>Maximum ET rate (s-1)</td>\n      <td>1.2 x 107</td>\n    </tr>\n  </tbody>\n</table>\n\n### Conformational change reminiscent of an \u2018induced fit\u2019 mechanism facilitates docking and electron transfer between SorT and SorU\n\nSpecific structural adaptations of the SorU protein take place when the SorT/SorU assembly is formed (Figure 5B). A surface loop on SorU (residues 82\u201393) moves away from the SorT/SorU complex interface, leading to a reorientation of the heme ligand residue Met 87 so that a different Met 87 rotamer coordinates the iron in the SorU structures within and outside of the complex (Figure 5B). This change in the structure of SorU is required to allow a Mo-heme edge-to-edge distance of \u2018closest approach\u2019 of ca. 8\u2009\u00c5 within the SorT/SorU assembly. Without this adjustment (for example, if the SorU residue 82\u201393 loop structure remained rigid) the closest approach for the redox cofactors would be ca. 10\u2009\u00c5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0Structures of the SorT/SorU (left) and SorAB (right) complexes, where the C\u03b1 traces of the heme-containing protomers are colored according to temperature factor. (B)\u00a0Superposition of the SorT and SorU structures within and outside of the electron transfer complex, highlighting conformational changes that were observed to accompany complex formation. The crystal structures of SorT and SorU within the SorT/SorU complex are shown in gray, and the superposed structures of SorT and SorU determined alone are shown in blue and red respectively.\n\nChanges in the conformation of axial heme ligands are known to alter the orbital interactions between the iron atom and the ligand, which can change the redox properties of the heme group (Tai et al., 2013). However, this does not appear to be the case here as the redox potential of the SorU heme was determined by optical spectroelectrochemistry to be +108(\u00b110) and +111(\u00b110) mV vs. NHE (pH 8.0), respectively, in the presence and absence of SorT (Table 6, Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig6-v3.jpg)\n\n**Figure 6.:** (A)\u00a0Plot of EPR intensity (Ip) at 343 mT (from MoV form of SorT) as a function of solution redox potential (E mV vs NHE). The solid line is a fit to the equation\u00a0$I(E)\u00a0=\u00a0\\frac{I_{p}}{1\u00a0=10^{(E-E_{1})/59}\u00a0+\u00a010^{(E_{2}-E)/59}}$ using the potentials E1 = MoVI/V = +110(\u00b110) mV and E2 MoV/IV-18(\u00b110) mV vs NHE). (B)\u00a0Electronic spectra of ferric and ferrous SorU obtained from spectroelectrochemistry. Inset: plot of absorbance at 550 nm (ferrous \u03b1-band) and 406 nm (ferric Soret band) as a function of applied potential. The solid lines are theoretical curves based on the equation $Abs\u00a0=\u00a0\\frac{(\\epsilon_{ox}10^{(E-E')/59})\u00a0+\\epsilon_{red})}{1\u00a0+\u00a010^{(E-E')/59}}C_{tot}$\u00a0where the extinction coefficients refer to the oxidized and reduced forms of the protein and Abs is the absorbance at this same wavelength. ctot is the total protein concentration. The redox potential (E' = +111 mV vs NHE) was obtained by global analysis of all potential dependent spectra across all wavelengths with the program ReactLab Redox (Maeder and King).\n\n**Table 6.**\n Redox potential values for SorT and SorUa.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>Couple</th>\n      <th>E\u00ba (mV vs NHE)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">SorT</td>\n      <td>MoVI/V</td>\n      <td>+110(\u00b110)</td>\n    </tr>\n    <tr>\n      <td>MoV/IV</td>\n      <td>-18(\u00b110)</td>\n    </tr>\n    <tr>\n      <td>SorU</td>\n      <td>FeIII/II</td>\n      <td>+108 (\u00b110)</td>\n    </tr>\n    <tr>\n      <td>SorU (in the presence of SorT)</td>\n      <td>FeIII/II</td>\n      <td>+111 (\u00b110)</td>\n    </tr>\n  </tbody>\n</table>\n\n_aRedox potentials of SorT were determined by redox potentiometry, and SorU redox potentials by optical spectroelectrochemistry._\n\nThe MoVI/V and MoV/IV redox potentials of SorT (+110(\u00b110) mV and -18(\u00b110) mV vs. NHE (pH 8)) were determined by an EPR-monitored redox titration where the initial EPR-silent MoVI form is reduced to the EPR-active MoV state (Figure 2A), which then gives way to the EPR-silent MoIV form at low potential, resulting in a bell-shaped curve (Table 6, Figure 6A). The high MoVI/V potential at pH 8 matches that of the ferris/ferrous redox couple. (3,4).\n\nThe structural change in SorU indicates that an \u2018induced fit\u2019 mechanism is responsible for the formation of a productive SorT/SorU electron transfer complex. This type of mechanism has in the past been used to describe electron transfer complexes (involving electron transfer flavoproteins or ferredoxin reductases) where the protein partners include mobile domains, and where conformational change is necessary for the creation of high affinity protein-protein interfaces (Senda et al., 2007; Toogood et al., 2007). However, although facilitating redox interactions, these systems are distinct from the docking mechanism seen for the SorT and SorU proteins which accompanies modifications to the structure of SorU and allows the two redox centers to attain positions of closest approach for fast electron transfer.\n\n### The SorT/SorU interface features extensive electrostatic interactions\n\nThe SorT/SorU complex interface shows significant charge complementarity, with the negative charge on SorU correlating with a concentration of positive charges at the SorU binding site on SorT (Figures 3C,D). Unlike other known cytochromes c that can act as electron acceptors to SOEs (Low et al., 2011; Brody and Hille, 1999; Kappler et al., 2000), the electrostatic surface of SorU has an overall negative charge (Figures 3C,D). The positive charge on the SorT surface therefore explains the low catalytic activity of SorT with horse heart cytochrome c (7 U/mg, pI ~10), the natural electron acceptor for vertebrate SOEs, compared to the high activity observed with SorU (212 U/mg; pI ~4) (Kappler, 2011; Low et al., 2011; Wilson and Kappler, 2009). In its electrostatic nature, the interaction surface between SorT and SorU is unusual. Structures of other cytochrome-containing electron transfer complexes (Nojiri et al., 2009; Axelrod et al., 2002; Pelletier and Kraut, 1992; Solmaz and Hunte, 2008) show binding interfaces characterized by a \u2018ring\u2019 of electrostatic interactions that encompass contact surfaces that are predominantly hydrophobic. In fact, the \u2018steering\u2019 of electron transfer partners by electrostatic interactions, accompanied by \u2018tuning\u2019 via hydrophobic interactions is a dominant observation for protein-protein electron transfer complexes (Nojiri et al., 2009; Axelrod et al., 2002; Pelletier and Kraut, 1992; Solmaz and Hunte, 2008).\n\n### An unusually large number of hydrogen bonds and salt bridges characterize the SorT/SorU interface\n\nIn addition to the electrostatic interactions that support the formation of the SorT/SorU complex, there are six hydrogen bonds found at the SorT/SorU protein-protein interface, as well as a salt bridge between the SorT active site residue Arg 78 and a propionate group of the SorU heme moiety (Table 7, Figure 7). This is an unusually large number in comparison with structures of other cytochrome-containing electron transfer complexes (Nojiri et al., 2009; Axelrod et al., 2002; Pelletier and Kraut, 1992; Solmaz and Hunte, 2008), which tend to have fewer hydrogen bonds and lack salt bridges. In fact, direct hydrogen bonds between electron transfer proteins are generally considered unfavorable for a transient interaction because of energetically disadvantageous desolvation (Miyashita et al., 2003). Also significant is the observation that no intermolecular interactions at the interface are mediated by water molecules (Figure 7) (Nojiri et al., 2009; Gray and Winkler, 2005). In fact, very little ordered water is observed in proximity to the interfacing region of the SorT molecule (a total of 2 water molecules only and these are hydrogen\u00a0bonded to the SorT molecule rather than mediating the SorT/SorU interaction). However, the current analysis is limited by the moderate resolution of the current structure (2.6\u2009\u00c5), which as a consequence, includes only ca. 0.15 modeled water molecules per residue.\n\n**Table 7.**\n Comparison of the protein-protein interfaces in the SorT/SorU and SorAB structures.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th colspan=\"2\">SorT/SorUa</th>\n      <th colspan=\"2\">SorABb</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>SorT</td>\n      <td>SorU</td>\n      <td>SorA</td>\n      <td>SorB</td>\n    </tr>\n    <tr>\n      <td>Average relative B factorc (\u00c52)</td>\n      <td>0.9</td>\n      <td>1.5</td>\n      <td>1.0</td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>Buried surface area (\u00c52)d</td>\n      <td>644</td>\n      <td>696</td>\n      <td>1254</td>\n      <td>1380</td>\n    </tr>\n    <tr>\n      <td>Interfacing residuesd</td>\n      <td>31</td>\n      <td>21</td>\n      <td>46</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>Hydrogen-bonds</td>\n      <td colspan=\"2\">6</td>\n      <td colspan=\"2\">30e</td>\n    </tr>\n    <tr>\n      <td>Salt-bridges</td>\n      <td colspan=\"2\">1</td>\n      <td colspan=\"2\">2e</td>\n    </tr>\n    <tr>\n      <td>Shape complementarity statisticf</td>\n      <td colspan=\"2\">0.63</td>\n      <td colspan=\"2\">0.77</td>\n    </tr>\n  </tbody>\n</table>\n\n_aThis workbPDB code 2BLF (Kappler and Bailey, 2005)cCalculated as the average for the protomer of interest divided by the average for the entire complex structure.d(Krissinel and Henrick, 2007)eTaken from(Kappler and Bailey, 2005)f(Lawrence and Colman, 1993)_\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig7-v3.jpg)\n\n**Figure 7.:** (A) An open-book representation depicts residues involved in forming stable bonds at the interface between SorT and SorU as corresponding color patches mapped onto the molecular surface. (B) Stereoview of the interface between SorT and SorU. Bonding residues are shown as sticks with bonds shown as dashes between atoms. SorT is shown in light grey and SorU is shown in magenta.\n\nCompared with the subunit interface of the SorAB bacterial sulfite dehydrogenase, which contains 30 hydrogen-bonds and 2 salt bridges (Kappler and Bailey, 2005), supporting a permanent, heterodimeric complex of a heme c subunit (SorB) and a Mo cofactor containing (SorA) catalytic subunit (Kappler and Bailey, 2005) (Table 7), the extent of the subunit interactions in the SorT/SorU structure is modest. The difference between the permanent SorAB and the transient SorT/SorU complexes is also illustrated by calculations of the shape complementarity and the buried surface areas between the protomers (Lawrence and Colman, 1993), with the latter being about twice as large for the SorAB assembly than for SorT/SorU (Table 7). Interestingly, much of the additional contact area between molecules in the SorAB structure derives from the SorB N-terminal structure (residues B501-B518, PDB 2BLF), which extends away from the core of the subunit, wraps around the SorA \u2018SUOX-fold' domain and contributes one salt-bridge and 6 hydrogen\u00a0bonding interactions (Table 7) (Kappler and Bailey, 2005). This feature is absent from the SorU structure.\n\n### The dynamic SorT/SorU interaction observed in solution is reflected in the crystal\n\nDespite the intricate assembly of interactions at the protein-protein interface, but in agreement with the kinetics and thermodynamics of the SorT/SorU interaction in solution, the SorT/SorU contact is dynamic, as illustrated by a temperature factor analysis of the complex structure. Within the SorT/SorU complex, the SorU protein shows a significantly increased average atomic temperature factor (reflecting significant flexibility) relative to the structure of the SorT protomer (1.5 versus 0.9 \u00c52, respectively; Table 7). Furthermore, the relative temperature factors per residue for the SorU molecule increase with increasing distance from the SorT/SorU interface (Figure 5A), indicating that the SorU molecule is dynamic relative to SorT within the crystalline lattice. In contrast, the \u2018static\u2019 SorAB complex shows uniform, low temperature factors for both redox subunits (Table 7, Figure 5A). This observation is an exquisite illustration of \u2018conformational sampling\u2019 within the SorT/SorU electron transfer complex, which results from the conformational flexibility of one protein redox partner relative to the other and both facilitates electron exchange by accessing the optimal orientations of each redox partner and promotes fast dissociation of the complex following transfer (Leys and Scrutton, 2004; van Amsterdam et al., 2002).\n\n## Discussion\n\nBy describing the structure of the SorT/SorU complex in this work, we report the first example of a structure of an SOE in complex with its external electron acceptor; all previous structures of SOEs being of the enzymes and their internal heme domains or subunits only (Kisker et al., 1997; Schrader et al., 2003; Kappler and Bailey, 2005). The structure of the SorT/SorU complex therefore allows insights into electron transfer in what is thought to be a highly prevalent type of bacterial SOE (Low et al., 2011) and into protein-protein electron transfer in general. While the complex shows dynamic adaptations similar to those demonstrated previously for electron transfer complexes and has a dissociation constant of the right order of magnitude, it also shows some features that have not been seen in electron transfer complexes, namely an interface that is stabilized by a relatively large number of hydrogen bonds and salt bridges, and an induced fit docking mechanism.\n\nThe structure of the protein-protein interface in the SorT/SorU structure is particularly intriguing. The relative lack of bound water molecules, mirrors more the observations made of permanent heterodimeric complexes than transient interactions (Gray and Winkler, 2005). Previous investigations into the factors that influence protein-protein docking for electron transfer have shown that the strength of the protein-protein interaction correlates linearly with the product of the total charges on the protein partners (Trana et al., 2012; Xiong et al., 2010). In this way, the affinity between the SorT/SorU proteins (Kd = 13.5 \u00b1 0.8 \u03bcM) correlates with the fast measured turnover rates (kcat of 140 \u00b1 11\u2009s-1) and with the predominantly electrostatic nature of the protein-protein interface.\n\nThe turnover number for SorT with SorU as the electron acceptor is also in the range of values measured for the human sulfite oxidase (HSO) and CSO (25.0 \u00b1 1.3\u2009s-1 and 47.5 \u00b1 1.9\u2009s-1, respectively), but significantly slower than that observed for the permanent SorAB complex (345 \u00b1 11\u2009s-1) (Kappler et al., 2006; Wilson and Rajagopalan, 2004; Brody and Hille, 1999). Importantly, in the structure of SorAB, the docking site of the heme subunit (SorB) with the SorA subunit\u00a0is almost identically positioned to that seen for SorT/SorU, with major differences existing only in the number of hydrogen bonds and salt bridges in the protein-protein interface. For the CSO and HSO enzymes, docking of the mobile heme b domain near the Mo active site has been proposed to be similar to that seen for SorT/SorU (Utesch and Mroginski, 2010). It should be noted, however, that the docking events in CSO (and HSO) and between SorT/SorU serve fundamentally different purposes: for CSO and HSO, domain docking enables intramolecular electron transfer and involves a heme domain that is an intrinsic part of the enzyme. This is a step that precedes interactions with the external electron acceptor for these enzymes. In contrast, and despite the fact that it is occupying a similar docking site to that predicted for CSO and HSO (Utesch and Mroginski, 2010), SorU is the external electron acceptor for SorT and the electron transfer is intermolecular.\n\nThe SorT/SorU complex described here thus represents an elegant compromise between the requirements for fast and efficient electron transfer and reaction specificity. It also illustrates new aspects for highly dynamic protein-protein interactions: (i) A relatively large number of hydrogen bonds and salt bridges may be required to form the initial stable protein complex, but this does not preclude a dynamic protein \u2013 protein interaction; (ii) relatively subtle structural adjustments in one redox partner (SorU) can facilitate electron transfer by ideally locating the redox active cofactors in close proximity; (iii) the comparatively complex binding interface in SorT/SorU can be counterbalanced by the conformational sampling of one protein relative to the other, which enables the rapid dissolution of the complex following electron exchange.\n\nIt remains to be seen whether these principles apply to other SOE \u2013 external electron acceptor interactions. Future work should focus on investigating interaction interfaces in currently little studied SOEs where new types of interactions may be present as for many of these enzymes currently no external electron acceptor is known.\n\n## Materials\u00a0and\u00a0methods\n\n### Protein overexpression, purification, data collection and structure solution\n\nRecombinant SorT and SorU proteins were overproduced and purified as previously described (Low et al., 2011), with minor modifications. SorT was crystallized by hanging drop vapor diffusion with drops consisting of equal volumes (2 \u03bcL) of protein and crystallization solution (0.1 M HEPES pH 7.5, 8% ethylene glycol, 0.1 M manganese (II) chloride tetrahydrate and 17.5% PEG 10,000) at 20\u00b0C. Crystals were cryoprotected in reservoir solution with 30% glycerol before flash-cooling in liquid nitrogen. Small (ca. 20 \u00d7 10 \u00d7 10 \u03bc) crystals of SorU were grown in drops containing equal volumes (2 \u03bcL) of protein and reservoir solution (1.8 M tri-sodium citrate, pH 5.5, 0.1 M glycine), which were harvested and flash-cooled in liquid nitrogen without additional cryoprotection. Purified SorT (20 mM Tris pH 7.8, 2.5% glycerol) and SorU (20 mM Tris pH 7.8, 150 mM NaCl) were mixed and incubated on ice at a molar ratio of 2:1 (SorU:SorT; total protein concentration 8 mgmL-1) before crystallization via hanging-drop vapor diffusion with a reservoir solution containing 0.2 M sodium formate, 0.1 M Bis-Tris propane pH 7.5 and 20% PEG 3350. Crystals grew to a maximum size of ca. 150 x 100 x 20 \u03bc in 4 days at 20\u00b0C and were flash-cooled in liquid nitrogen after brief soaking in mother liquor containing 30% glycerol. All diffraction data were collected on an ADSC Quantum 315r detector at the Australian Synchrotron on beamline MX2 at 100\u2009K and were processed with HKL2000 (Otwinowski and Minor, 1997). Unit cell parameters and data collection statistics are presented in Table 1.\n\nThe crystal structure of SorT was solved by molecular replacement using PHASER (McCoy et al., 2007) with a search model generated with CHAINSAW (Chainsaw, 2008) from the SorA portion of the SorAB crystal structure (29.0% sequence identity, Protein Data Bank entry 2BLF [Kappler and Bailey, 2005]) as a template (Larkin et al., 2007). The resulting model was refined by iterative cycles of amplitude based twin refinement (using twin operators H, K, L and \u2013H, -K, L with estimated twin fractions of 0.495 and 0.505 respectively) within REFMAC (Murshudov et al., 2011), interspersed with manual inspection and correction against calculated electron density maps using COOT (Emsley and Coot, 2004). The refinement of the model converged with residuals R = 0.208 and Rfree = 0.239 (Table 1). The structure of the SorT/SorU complex was solved by molecular replacement using PHASER (McCoy et al., 2007), with the refined SorT structure as a search model. Initial rounds of refinement yielded a difference Fourier electron density map, which clearly showed positive difference density for the location of one molecule of SorU per asymmetric unit, which was manually built using COOT (Emsley and Coot, 2004). Refinement was carried out with REFMAC5 (Murshudov et al., 2011) and PHENIX (Adams et al., 2002) and converged with residuals R = 0.211 and Rfree = 0.260 (Table 1). The refined SorU model, from the SorT/SorU complex structure, was used as a search model to solve the SorU structure by molecular replacement using PHASER (McCoy et al., 2007). Refinement was carried out with REFMAC5 and PHENIX (Adams et al., 2002) and converged with residuals R= 0.192 and Rfree = 0.240. All structures were judged to have excellent geometry as determined by MOLPROBITY (Chen et al., 2010)(Table 1).\n\n### Small-angle X-ray scattering (SAXS)\n\nSAXS analysis of the SorT/SorU complex was performed in a buffer of 20 mM Tris pH 7.8, 2.5% v/v glycerol. Purified SorU and SorT were mixed and incubated on ice at a molar ratio of 2:1 (SorU:SorT), generating two samples of total protein concentrations 2.75 and 6.25 mgmL-1,\u00a0respectively. SAXS data were measured as described previously(Jeffries et al., 2011) with the data collection parameters listed in Table 4. Data were reduced to I(q) vs q (q=4\u03c0sin\u03b8\u03bb,where q=4sin2\u03b8 is the scattering angle) using the program SAXSquant that includes corrections for sample absorbance, detector sensitivity, and the slit geometry of the instrument. Intensities were placed on an absolute scale using the known scattering from H2O. Protein scattering was obtained by subtraction of the scattering from the matched solvents (20 mM Tris pH 7.8, 2.5% v/v glycerol obtained from the flow-through after protein concentration by centrifugal ultrafiltration). Molecular weight (Mr) estimates for the proteins were made using the equation from Orthaber(Orthaber et al., 2000): Mr=NAI(0)C\u25b3\u03c1M2 where NAis Avogadro\u2019s number, C is the protein concentration and \u25b3\u03c1M=\u25b3\u03c1\u03c5$,$ where \u25b3\u03c1 is the protein contrast and \u03c5 the partial specific volume, both of which were determined using the program MULCh(Whitten et al., 2008).\n\nThe ATSAS program package(Volkov and Svergun, 2003) was used for data analysis and modeling, with the specific programs used detailed in Table 4, along with the data ranges and results of each of the calculations. Further detail on data interpretation and analysis for these experiments is detailed in Appendix 2.\n\n### Electron paramagnetic resonance (EPR) spectroscopy\n\nContinuous-wave X-band (ca. 9 GHz) (CW) electron paramagnetic resonance (EPR) spectra were recorded with a Bruker Elexsys E580 CW/pulsed EPR spectrometer fitted with a super high Q resonator; the microwave frequency and magnetic field were calibrated with a Bruker microwave frequency counter and a Bruker ER 036TM Teslameter, respectively. A microwave power of 20 mW was used and optimal spectral resolution was obtained by keeping the modulation amplitude to a 1/10 of the linewidth. A flow-through cryostat in conjunction with a Eurotherm (B-VT-2000) variable temperature controller provided temperatures of 127\u2013133\u2009K at the sample position in the cavity.\n\nBruker\u2019s Xepr (version 2.6b.45) software was used to control the data acquisition including, spectrometer tuning, signal averaging, temperature control and visualization of the spectra. Computer simulation of the EPR spectra were performed with the following spin Hamiltonian (Equation 2)\n\n$$\nH\u00a0=\u00a0\\betaB\u00b7g\u00b7S\u00a0+\u00a0S\u00b7A(^{95,97}Mo)\u00b7\u00a0I\u00a0-g_{n}\\betaB\u00b7I\u00a0+\u00a0\\sum_{i=1}^{2}(S\u00b7A(^{1}H)\u00b7I\u00a0-\u00a0g_{n}\\beta_{n}B\u00b7I)\n$$\n\nusing the XSophe-Sophe-XeprView (version 1.1.4) computer simulation software suite(Hanson et al., 2004; Hanson et al., 2013) on a personal computer, running the Mandriva Linux v2010.2 operating system. Further detail on data interpretation and analysis for these experiments is detailed in Appendix 1.\n\n### EPR-monitored redox potentiometry\n\nThe MoIV/V and MoV/VI redox potentials of SorT were determined by an EPR-monitored redox titration carried out in a Belle technology anaerobic box. The protein solution (1.5 mL, 40-90 \u03bcM in Tris-HCl, pH 8.0\u00a0and\u00a010%\u00a0glycerol) also contained the following redox mediators at concentrations of ~50 \u00b5M: diaminodurol (2,3,5,6-tetramethylphenylene-1,4-diamine, Em,7 +276 mV), dichlorophenolindophenol (Em,7 +217 mV), 2,6-dimethylbenzoquinone (Em,7 +180 mV), phenazine methosulfate (Em,7 +80 mV), 2,5-dihydroxybenzoquinone (Em,7 \u201360 mV) indigo\u00a0trisulfonate\u00a0(Em,7\u00a0-90 mV),\u00a02-hydroxy-1,4-naphthoquinone (Em,7 -152 mV) and anthraquinone 2-sulfonate (Em,7\u00a0-230 mV). The reductant was Ti(III) citrate and the oxidant was NaS2O8 (both ~100 mM). After addition of titrant and equilibration (15\u201330\u2009min), the equilibrium potential was measured with a combination Pt wire/AgAgCl redox electrode attached to a Hanna 8417 meter calibrated against the quinhydrone redox couple (Eo\u2032 (pH 7) = +284 mV vs NHE). A 100 \u03bcL aliquot of protein was withdrawn and transferred to an EPR tube (in the anaerobic box) which was then sealed and then carefully frozen in liquid nitrogen (outside the box). Potentials for all experiments were measured with a combination Pt wire-Ag/AgCl electrode attached to a Hanna 8417 meter. The intensity of the MoV signal (I) was recorded as a function of measured potential (E), Figure 6.\n\n### Optical spectroelectrochemistry\n\nSpectroelectrochemistry of SorU in isolation and the SorT:SorU complex was performed with a Bioanalytical Systems BAS100B/W potentiostat connected to a Bioanalytical Systems thin layer spectroelectrochemical cell (0.5 or 1 mm pathlength) bearing a transparent Au mini-grid working electrode, a Pt wire counter and Ag/AgCl reference electrode. Redox mediators (all Fe complexes) used in the experiment were employed at concentrations of 50 \u03bcM (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/09066/elife-09066-fig8-v3.jpg)\n\nNone exhibit any significant absorption in the spectral range of interest at micromolar concentrations. The total solution volume was ca. 700 \u03bcL. The buffer was 20 mM Tris (pH 8) containing 200 mM NaCl as supporting electrolyte. The SorU concentration was ca. 50 \u03bcM, while experiments on the SorU:SorT complex used approximately equal concentrations of both proteins (50 \u03bcM). Spectra were acquired within a Belle Technology anaerobic box with an Ocean Optics USB2000 fibre optic spectrophotometer. Initially, the cell potential was poised at ca. -100 mV and the system was allowed to equilibrate until no further spectral changes were apparent (fully reduced SorU). The potentials were then increased in 50 mV increments and the spectrum was measured when no further changes were seen (5\u201310\u2009min). When the protein was fully oxidized the potential was scanned in the reverse direction in 50 mV intervals to establish reversibility. Data were fitted using the program ReactLab Redox (Maeder and King).\n\n### Isothermal titration calorimetry (ITC)\n\nAffinity measurements were conducted using a Microcal ITC200 system (GE Healthcare) at 25\u00b0C using SorT and SorU in buffer (25 mM HEPES pH 7.5, 150 mM NaCl and 2.5% glycerol) at final concentrations of 300 \u03bcM and 30 \u03bcM, respectively. SorT at a concentration of 300 \u03bcM was titrated with eighteen injections (2.0 \u03bcl each) of SorU. All affinity measurements were performed in triplicate and fitted using a single site mode. Protein concentrations were estimated using Bicinchoninic acid (BCA) protein assay kit (Thermo Fisher Scientific, Waltham, MA).\n\n### Enzyme kinetics\n\nSulfite dehydrogenase enzyme assays were carried out as described previously (Low et al., 2011; Wilson and Kappler, 2009; Kappler et al., 2000). The reduced \u2013 oxidized extinction coefficient for SorU at 550 nm was 17.486 mM-1 cm-1 as determined by spectroelectrochemistry. Data fitting was carried out using Sigmaplot 12 (Systat).\n",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "1ca8ac55-6fbb-40c7-9c79-8645ae186cbe",
+      "submission_id": "74361f47-a51a-4599-8975-91e78a06abf8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael A Marletta, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09066.025](https://doi.org/10.7554/eLife.09066.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Structural basis of interprotein electron transfer in bacterial sulfite oxidation\" for peer review at eLife. Your submission has been favorably evaluated by Michael Marletta (Senior editor). Michael also served as the Reviewing editor, and sought advice from two reviewers.\n\nThe reviewers have discussed the reviews with one another and Michael Marletta has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by McGrath et al. reports the structure of a sulfite oxidizing enzyme (SorT) and its interaction with an electron acceptor SorU, a c-type cytochrome. The authors make the point of the importance of sulfite oxidizing enzyme (SOEs) in overall sulfur metabolism. They note this work is the first co-structure of an SOE with its native electron acceptor, and they further note this is likely the first such characterization for a Mo-containing enzyme. They compare and contrast their SorT structure to that of other SOE structures. In the co-structure they characterize the possible electron transfer pathway between the Mo of SorT and the heme of the SorU. Conformational changes of SorU that allow this interaction to shorten in the co-protein structure vs rigid docking of the individual monomers is described. The protein electrochemistry shows no significant change in the midpoint potential of SorU upon interacting with SorT. The authors discuss the electrostatic interactions between the two proteins, which they consider unusual for cytochrome based ET complexes, including the presence of salt bridges and 5 H-bonds. They then contrast to a relevant \"permanent\" heterodimer complex between SorB and SorA by which the SorU/SorT interactions are much lower, and the authors discuss specific differences in the protein/protein interactions of the two different pairs. The contrast is extended to looking at the relative temperature factors between proteins of the two pairs, with higher conformational flexibility in the SorU of the SorT/SorT complex. The high conformational flexibility is related by the authors to the thermodynamics of binding and the kinetics of the SorT reaction.\n\nEssential revisions:\n\nWe feel that the focus of the paper is not on the protein-protein interface as we were led to believe. In fact there is no structure of the H bonding interactions (the R/propionate interaction is shown) and no discussion of water molecules at the interface. The authors need to either rewrite the paper to focus on the as advertised protein-protein interaction or refocus on a comparison of this sulfite dehydrogenase with others that have the heme domain tethered to the dehydrogenase domain.\n\nThe authors have done a lot of work and there are not many examples of two proteins that are involved in electron transfer. The work is thus interesting and important. However, there is little discussion of the well characterized proteins with not only structure, but kinetics and where electrostatic interactions have been changed and the kinetic consequences have been evaluated. The work of Brian Hoffman in particular, but also that of Crane and Gray, is relevant. The authors need to define the focus of the paper. Most of the Discussion, for example, was focused on evolution. The Introduction was too general and did not contain enough background information as provided on sulfite dehydrogenases and what is known.\n\nMinor points:\n\n1) The Abstract is way too general and needs details on the system being investigated, the Kd determined for the protein-protein interactions and the details of the interface. What are the oxidation states, for example of the crystallized proteins etc? What is the reaction catalyzed by SorT?\n\n2) The Introduction is also way too general, ex about sulfur metabolism, and should be focused on the systems that have been well studied crystallographically and kinetically and what has been learned.\n\n3) Figure 2A was very difficult to read due to poor choice of font. We could not really see the EPR spectra.\n\n4) Figure 3 should be removed altogether as the reader does not see much and the description in the text is sufficient.\n\n5) A new figure with the interface and the H bonding interactions, waters should be added in addition to Figure 6B with the salt bridge.\n\n6) We think you should consider moving the details about the protein-protein interaction, such as Kd and turnover numbers, first rather than last.\n\n7) Is the catch phrase \"caught in the act\" necessary?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structural basis of interprotein electron transfer in bacterial sulfite oxidation\" for further consideration at eLife. Your revised article has been favorably evaluated by Michael Marletta (Senior editor and Reviewing editor) and two reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nIn the subsection title \u201cThe crystal structure of the SorT homodimer reveals a unique subunit arrangement\u201d, the \u201cunique subunit arrangement\u201d is with respect to what? Why not say a unique head to tail orientation or something alike?\n\nWe found the structures in Figure 2B on the EPR figure confusing. How do you know there is a hydroxide ion?\n",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7af5b740-1adf-40f0-a43b-037419465ce4",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C1",
+      "claim": "Interprotein electron transfer underpins the essential processes of life and relies on the formation of specific, yet transient protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interprotein electron transfer underpins the essential processes of life and relies on the formation of specific, yet transient protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about electron transfer that draws from established scientific understanding of biochemical processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "22e1b013-84d0-4023-b52d-b09c1dc93b18",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C2",
+      "claim": "In biological systems, the detoxification of sulfite is catalyzed by the sulfite-oxidizing enzymes (SOEs), which interact with an electron acceptor for catalytic turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "In biological systems, the detoxification of sulfite is catalyzed by the sulfite-oxidizing enzymes (SOEs), which interact with an electron acceptor for catalytic turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about SOE function in biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "947ebbc2-e596-4e4b-858b-6bfd459f38c0",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C3",
+      "claim": "The SorT/SorU complex has a dissociation constant of Kd = 13.5 \u00b1 0.8 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic and thermodynamic analyses of the SorT/SorU interaction show the complex is dynamic in solution, and that the proteins interact with Kd = 13.5 \u00b1 0.8 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This value is directly measured from isothermal titration calorimetry experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "34645449-b554-4689-82f7-f5b0e9e2044d",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C4",
+      "claim": "The SorT/SorU complex is dynamic in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic and thermodynamic analyses of the SorT/SorU interaction show the complex is dynamic in solution, and that the proteins interact with Kd = 13.5 \u00b1 0.8 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by kinetic and thermodynamic analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "dacd665a-1ab4-4cfb-a15e-e02edc93e865",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C5",
+      "claim": "The SorT/SorU interface is remarkably electrostatic with an unusually large number of direct hydrogen bonding interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures of the oxidized SorT and SorU, both in isolation and in complex, reveal the interface to be remarkably electrostatic, with an unusually large number of direct hydrogen bonding interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the crystal structures obtained in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e1dbeb88-9c31-4e7a-a83b-1b6c08e74d41",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C6",
+      "claim": "The assembly of the SorT/SorU complex is accompanied by an adjustment in the structure of SorU.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of the complex is accompanied by an adjustment in the structure of SorU, and conformational sampling provides a mechanism for dissociation of the SorT/SorU assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed through comparison of SorU structures within and outside the complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "3c6a0fef-41b7-410f-90e7-51556ca3c600",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C7",
+      "claim": "Conformational sampling provides a mechanism for dissociation of the SorT/SorU assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of the complex is accompanied by an adjustment in the structure of SorU, and conformational sampling provides a mechanism for dissociation of the SorT/SorU assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from temperature factor analysis and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "49c8f68a-6cb9-4581-af3b-4e8da53b4d13",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C8",
+      "claim": "Atomic resolution crystal structures of electron transfer complexes are rare due to their fundamentally transient nature.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, atomic resolution crystal structures of electron transfer complexes are rare, due to their fundamentally transient nature (Antonyuk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "fcda8fa8-5dc2-452f-b8b2-2ba9deaa6f11",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C9",
+      "claim": "Electron transfer pathways rely on efficient docking of protein redox partners through noncovalent, dynamic protein-protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron transfer pathways are made up of chains of redox proteins, which provide a path for the controlled flow of electrons and rely on efficient docking of protein redox partners through noncovalent, dynamic protein-protein interfaces (Moser et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "d5bba851-e8e1-4117-bc80-c163ecff2083",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C10",
+      "claim": "There is a strong correlation between the driving force for the reaction, the distance between redox centers and the rate of electron transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementary electrostatic surfaces, hydrophobic interactions and dynamics at the protein-protein interface have all been proposed to contribute to efficient interprotein electron transfer (Leys and Scrutton, 2004), with a strong correlation between the driving force for the reaction, the distance between redox centers and the rate of electron transfer (Moser et al., 1992; Marcus and Sutin, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "ae0f67c2-d91d-4129-9e20-4ef5b95dfec1",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C11",
+      "claim": "Sulfur-containing compounds mediate many crucial reactions in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfur-containing compounds mediate many crucial reactions in the cell (for example, in coenzyme A, sulfur containing amino acids or glutathione), but their reactivity also makes them potentially toxic (Kappler, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "495a0579-9e86-4137-8903-9d2ae6c1c267",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C12",
+      "claim": "Sulfite is a highly reactive sulfur compound that can cause damage to proteins, DNA and lipids, resulting in oxidative stress and irreversible cellular damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfite in particular, is a highly reactive sulfur compound that can cause damage to proteins, DNA and lipids, resulting in oxidative stress and irreversible cellular damage (Feng et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e10f78c6-2f22-40d3-978a-c881e1cb2b88",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C13",
+      "claim": "In most cells, the detoxification of sulfite by oxidation to sulfate is catalyzed by sulfite oxidizing enzymes (SOEs).",
+      "claim_type": "EXPLICIT",
+      "source": "In most cells, the detoxification of sulfite by oxidation to sulfate (Equation 1) is catalyzed by sulfite oxidizing enzymes (SOEs) (Kisker et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "710fb3ed-6a74-49b5-891e-8a99ee4b89cb",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C14",
+      "claim": "SOEs from plants, higher animals and bacteria all catalyze the same fundamental reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "SOEs from plants, higher animals and bacteria have been characterized and they all catalyze the same fundamental reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about SOE function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "26b2b84c-e5d4-45a4-ba59-5672d7e239bb",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C15",
+      "claim": "Some SOEs transfer electrons to oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Some SOEs transfer electrons to oxygen (Schrader et al., 2003), while others interact with redox proteins such as cytochrome c (Kisker et al., 1997; Kappler and Wilson, 2009; Low et al., 2011; Bailey et al., 2009; Cohen and Fridovich, 1971; Cohen and Fridovich, 1971; Cohen et al., 1971) or as yet unknown cellular components (Kappler, 2011; Low et al., 2011; Bailey et al., 2009; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "a410d4e0-6918-4f05-bbda-2ebcc7ca6b01",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C16",
+      "claim": "Some SOEs interact with redox proteins such as cytochrome c.",
+      "claim_type": "EXPLICIT",
+      "source": "Some SOEs transfer electrons to oxygen (Schrader et al., 2003), while others interact with redox proteins such as cytochrome c (Kisker et al., 1997; Kappler and Wilson, 2009; Low et al., 2011; Bailey et al., 2009; Cohen and Fridovich, 1971; Cohen and Fridovich, 1971; Cohen et al., 1971) or as yet unknown cellular components (Kappler, 2011; Low et al., 2011; Bailey et al., 2009; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "79ce112a-31d2-4983-80c1-0df68af70279",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C17",
+      "claim": "Three unique crystal structures of SOEs have been reported: from chicken, plant and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, three unique crystal structures of SOEs have been reported: from chicken, plant and bacteria, which differ significantly in their domain architectures and redox cofactor compositions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a summary of existing structural literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "63aa5346-3fc7-4f99-a39b-cec2e84e99f9",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C18",
+      "claim": "No structural information on the molecular interactions of SOEs with their respective electron acceptors was available prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, no structural information on the molecular interactions of any of these enzymes with their respective electron acceptors is available and the determinants that dictate the type of electron acceptor individual SOEs employ, while maintaining the efficiency of the basic enzyme reaction are open questions. (Kappler, 2011; Kappler, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents the state of knowledge prior to this work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "17fd3fdd-2335-4a9c-a93a-b4a3db82bf9b",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C19",
+      "claim": "SorT sulfite dehydrogenase is from the \u03b1-Proteobacterium Sinorhizobium meliloti.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have investigated an electron transfer complex involving the periplasmic SorT sulfite dehydrogenase from the \u03b1-Proteobacterium Sinorhizobium meliloti, which represents a structurally uncharacterized type of SOE, and its electron acceptor, the c-type cytochrome SorU (Low et al., 2011; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the source organism of the protein studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "454caa38-fd20-40ed-8de2-7642124fa6ee",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C20",
+      "claim": "SorU is a c-type cytochrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have investigated an electron transfer complex involving the periplasmic SorT sulfite dehydrogenase from the \u03b1-Proteobacterium Sinorhizobium meliloti, which represents a structurally uncharacterized type of SOE, and its electron acceptor, the c-type cytochrome SorU (Low et al., 2011; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "86a031c7-20ce-463b-b50f-cec11d35760a",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C21",
+      "claim": "In S. meliloti the SorT sulfite dehydrogenase is part of a sulfite detoxification system that is induced in response to the degradation of sulfur containing substrates such as the organosulfonate taurine.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. meliloti the SorT sulfite dehydrogenase is part of a sulfite detoxification system that is induced in response to the degradation of sulfur containing substrates such as the organosulfonate taurine (Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "4905a456-54a4-412c-9fdc-0750c2c916a3",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C22",
+      "claim": "Electrons derived from sulfite oxidation are passed on to the SorU cytochrome, and likely then to cytochrome oxidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrons derived from sulfite oxidation are passed on to the SorU cytochrome, and likely then to cytochrome oxidase, as S. meliloti is capable of sulfite respiration (Low et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is partially supported by citation and partially speculative about the downstream electron acceptor.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "2532939c-1ebe-47fc-b7cf-a27a44aef1aa",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C23",
+      "claim": "S. meliloti is capable of sulfite respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrons derived from sulfite oxidation are passed on to the SorU cytochrome, and likely then to cytochrome oxidase, as S. meliloti is capable of sulfite respiration (Low et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e88794eb-e7b2-46e1-aa41-bad380e63ce9",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C24",
+      "claim": "This is the first time that a crystal structure of a molybdenum enzyme in complex with its external electron acceptor has been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first time that a crystal structure of a molybdenum enzyme in complex with its external electron acceptor has been solved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the structural work presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "05837b47-2f71-4e41-9b23-91508e9273b9",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C25",
+      "claim": "SorT has a turnover number of 338 \u00b1 3 s-1 with the artificial electron acceptor ferricyanide.",
+      "claim_type": "EXPLICIT",
+      "source": "With the artificial electron acceptor ferricyanide, SorT was shown to have a turnover number of 338 \u00b1 3 s-1 (Low et al., 2011; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "f611445e-d85a-4f85-8b47-d76ed67b8a68",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C26",
+      "claim": "SorT has a KM(SorU) of 32 \u00b1 5 \u03bcM and a kcat of 140 \u00b1 11 s-1 when employing SorU as the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing SorU as the substrate, we analyzed the kinetics of the interaction between SorT and SorU and found the interaction to be fast and highly specific, with a KM(SorU) of 32 \u00b1 5 \u03bcM and a kcat of 140 \u00b1 11 s-1, confirming that SorU is the natural electron acceptor of SorT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on kinetic measurements performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "4eba5731-7e60-47de-aca6-3523314d9edc",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C27",
+      "claim": "SorU is the natural electron acceptor of SorT.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing SorU as the substrate, we analyzed the kinetics of the interaction between SorT and SorU and found the interaction to be fast and highly specific, with a KM(SorU) of 32 \u00b1 5 \u03bcM and a kcat of 140 \u00b1 11 s-1, confirming that SorU is the natural electron acceptor of SorT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by kinetic data showing high specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "cdb52b15-280a-417c-aeca-5c887d7b37c1",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C28",
+      "claim": "The stoichiometry of the SorT/SorU interaction is 0.8 \u00b1 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of the thermodynamics of the SorT/SorU interaction by isothermal titration calorimetry (ITC) revealed a dissociation constant of Kd = 13.5 \u00b1 0.8 \u03bcM with a determined stoichiometry of 0.8 \u00b1 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "3db5b419-89f1-4be9-806d-ab93afa906ea",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C29",
+      "claim": "The SorT/SorU complex must form twice (with two different ferric SorU protein molecules) to complete the oxidative half reaction of SorT.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are in the range observed for other electron transfer complexes (Dell'acqua et al., 2008; Pettigrew et al., 2003) and match a model where SorT sequentially transfers two electrons, derived from sulfite oxidation, to two SorU molecules. In other words, the SorT/SorU complex must form twice (with two different ferric SorU protein molecules) to complete the oxidative half reaction of SorT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stoichiometry and kinetic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "d7e2047e-34c5-4946-99db-38ede7376c9c",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C30",
+      "claim": "The KM of SorT for SorU is very close to its affinity for sulfite (KM = 15.5 \u00b1 1.9 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "The KM of SorT for SorU is very close to its affinity for sulfite (KM = 15.5 \u00b1 1.9 \u03bcM [Wilson and Kappler, 2009]), and the turnover number in the SorU-based assay is ~40% of that seen with ferricyanide as the electron acceptor (Wilson and Kappler, 2009), where no significant reorientation and docking of the electron acceptor is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current data with previously published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "66b31af0-98c3-4c03-9f22-3a370341d4f8",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C31",
+      "claim": "The turnover number in the SorU-based assay is ~40% of that seen with ferricyanide as the electron acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The KM of SorT for SorU is very close to its affinity for sulfite (KM = 15.5 \u00b1 1.9 \u03bcM [Wilson and Kappler, 2009]), and the turnover number in the SorU-based assay is ~40% of that seen with ferricyanide as the electron acceptor (Wilson and Kappler, 2009), where no significant reorientation and docking of the electron acceptor is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data in this study and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "3be77f93-0974-4b75-ac4b-f0412e82e600",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C32",
+      "claim": "The affinity of SorT for SorU is unaffected by the presence of substrate or product.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the similarity between the determined values of Kd and KM indicates that the affinity of SorT for SorU is unaffected by the presence of substrate or product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of Kd and KM values.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "b024316e-cc01-42ad-b80e-19f3bd7b61a8",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C33",
+      "claim": "The bacterial SorAB enzyme and chicken sulfite oxidase (CSO) both have much higher affinities for their respective electron accepting cytochromes c (both with KM(Cyt c) ca. 2 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the kinetic parameters for this interaction are clearly distinct from those for other sulfite-oxidizing enzymes, such as the bacterial SorAB enzyme or chicken sulfite oxidase (CSO), both of which have much higher affinities for their respective electron accepting cytochromes c (both with KM(Cyt c) ca. 2 \u03bcM) (Kappler et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "97f0fdfb-b9b0-4f81-aaf8-ae7726204890",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C34",
+      "claim": "The catalytic turnover of CSO is relatively slow (kcat = 47.5 \u00b1 1.9 s-1), due to a mechanism requiring internal rearrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic turnover of CSO is relatively slow (kcat = 47.5 \u00b1 1.9 s-1), due to a mechanism requiring internal rearrangement, while turnover of SorAB with its natural electron acceptor (334 \u00b1 11 s-1) is significantly faster than that for SorT (Kappler and Enemark, 2015; Kappler et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "aae7fc99-4f3f-4cd3-b924-7da8c1da5d79",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C35",
+      "claim": "The turnover of SorAB with its natural electron acceptor (334 \u00b1 11 s-1) is significantly faster than that for SorT.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic turnover of CSO is relatively slow (kcat = 47.5 \u00b1 1.9 s-1), due to a mechanism requiring internal rearrangement, while turnover of SorAB with its natural electron acceptor (334 \u00b1 11 s-1) is significantly faster than that for SorT (Kappler and Enemark, 2015; Kappler et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares data from this study with cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "cb4b429d-1641-44d2-89ce-4b17127b3e4f",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C36",
+      "claim": "The crystal structure of SorT was refined to 2.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate whether there are any structural reasons for these differences, we solved the crystal structure of SorT by molecular replacement and refined it to 2.4 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the resolution of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "c107a790-dd29-4256-b60d-d3dbac6f3be0",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C37",
+      "claim": "The SorT structure shows two homodimeric assemblies per asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows two homodimeric assemblies per asymmetric unit (Table 1), which is in agreement with the quaternary structure as determined by MALLS (Low et al., 2011; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and confirmed by previous MALLS data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "78009bce-ff36-4747-9327-8a883c32dfaf",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C38",
+      "claim": "Within the SorT homodimer the protomers are oriented in a head-to-tail orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly however, within the SorT homodimer the protomers are oriented in a head-to-tail orientation (Figure 1A), a subunit arrangement that has not been previously observed in structures of sulfite-oxidizing enzymes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "0e4e202c-eeeb-4309-bd94-4fe3f1ec2624",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C39",
+      "claim": "The head-to-tail subunit arrangement has not been previously observed in structures of sulfite-oxidizing enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly however, within the SorT homodimer the protomers are oriented in a head-to-tail orientation (Figure 1A), a subunit arrangement that has not been previously observed in structures of sulfite-oxidizing enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with existing structural knowledge of SOEs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "38078c2b-ce9d-445f-a9a1-355d7bdd0d10",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C40",
+      "claim": "The fold of the SorT monomers is similar to those of other SOEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the fold of the SorT monomers is similar to those of other SOEs (Kisker et al., 1997; Schrader et al., 2003; Kappler and Bailey, 2005), comprising a central 'SUOX-fold' domain (Workun et al., 2008) that harbors the Mo active site and a 'dimerization' domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "b0473167-5380-42fe-95b9-1b3d397356b1",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C41",
+      "claim": "The SorT active site has a square-pyramidal geometry with a five coordinate molybdenum atom and a single tricyclic pyranopterin cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "The SorT active site has a square-pyramidal geometry seen in all other SOE structures with a five coordinate molybdenum atom and a single tricyclic pyranopterin cofactor (Figure 1A, Table 2) (George and Pickering, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e654fd7e-b40c-45ba-b829-a733d201d828",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C42",
+      "claim": "The MoV EPR spectrum of SorT is similar to the so-called 'high pH' EPR signature of SOEs.",
+      "claim_type": "EXPLICIT",
+      "source": "The MoV EPR spectrum is similar to the so-called 'high pH' EPR signature of SOEs (Figure 2A, Table 3, Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EPR spectroscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "1a29ece9-6694-4e40-891a-0086ab542887",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C43",
+      "claim": "The EPR spectrum shows superhyperfine coupling between the unpaired electron on the Mo ion and two nearby I = \u00bd nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional feature is the presence of superhyperfine coupling between the unpaired electron on the Mo ion and two nearby I = \u00bd nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the EPR spectroscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "24d4765e-2719-4b57-8822-1234f39f18ec",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C44",
+      "claim": "The equatorially coordinated O-donor is an aqua ligand at pH 8 or a hydroxido ligand hydrogen bonded with a water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the equatorially coordinated O-donor is an aqua ligand at pH 8 (Figure 2B(ii)) or that a hydroxido ligand is hydrogen bonded with a water molecule whose proximal H-atom is coupled with the electron spin on Mo (Figure 2B(i), Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the EPR data and structural considerations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "307eb21a-7547-4a7b-af6d-7edf5df42671",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C45",
+      "claim": "The SorT homodimer interface involves both the 'SUOX-fold' and the 'dimerization' domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the SorT dimer, the subunit interface involves both the 'SUOX-fold' and the 'dimerization' domains (Figure 1A), resulting in a buried surface area of ~1280 \u00c52 per monomer, which is approximately 9% of the solvent-accessible surface of each monomer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "9bd270f6-d325-499f-83a0-5d00ee5a83bb",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C46",
+      "claim": "The buried surface area in the SorT dimer is ~1280 \u00c52 per monomer, which is approximately 9% of the solvent-accessible surface of each monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the SorT dimer, the subunit interface involves both the 'SUOX-fold' and the 'dimerization' domains (Figure 1A), resulting in a buried surface area of ~1280 \u00c52 per monomer, which is approximately 9% of the solvent-accessible surface of each monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8899c9f3-80a8-4fbd-8430-304138dbaaad",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C47",
+      "claim": "The crystal structure of the SorT/SorU complex shows a single SorT/SorU entity per asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the dynamic nature of the SorT/SorU interaction, it was possible to co-crystallize SorT with SorU, resulting in the crystal structure of the SorT/SorU complex, where a single SorT/SorU entity is present per asymmetric unit, and the application of crystallographic 2-fold symmetry reveals a SorU/SorT2/SorU assembly (Figure 3A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "5ce3643a-00d9-48e4-9751-d0eedd41b3c1",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C48",
+      "claim": "The application of crystallographic 2-fold symmetry reveals a SorU/SorT2/SorU assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the dynamic nature of the SorT/SorU interaction, it was possible to co-crystallize SorT with SorU, resulting in the crystal structure of the SorT/SorU complex, where a single SorT/SorU entity is present per asymmetric unit, and the application of crystallographic 2-fold symmetry reveals a SorU/SorT2/SorU assembly (Figure 3A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from crystallographic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "c283557c-9462-44ab-8bd3-78577c702d7e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C49",
+      "claim": "Small-angle X-ray scattering (SAXS) confirmed that the structure observed in the crystal is preserved in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Small-angle X-ray scattering (SAXS) with a sample prepared as a stoichiometric mixture of SorT and SorU (Figure 3B, Table 4, Appendix 2-Figure 1) confirmed that the structure observed in the crystal is preserved in solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SAXS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "040a910f-f3e7-4da4-b7da-c58e56795cd7",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C50",
+      "claim": "The central assembly within the SorU/SorT2/SorU complex is the SorT homodimer, which is identical to the structure of the SorT homodimer alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The central assembly within the SorU/SorT2/SorU complex is the SorT homodimer, which is identical to the structure of the SorT homodimer alone (Figures 1A and 3A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "a6b1e30a-3c85-4ac8-96cb-2f306c577055",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C51",
+      "claim": "The structure of SorU is predominantly \u03b1-helical with three major \u03b1-helices arranged to form a bundle that frames the heme-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the SorU protein, both within the SorT/SorU complex and when crystallized in isolation (Figure 1B, Table 1), is predominantly \u03b1-helical with three major \u03b1-helices arranged to form a bundle that frames the heme-binding site (Figure 1B) (C47XXC50H, axial ligands: His 51 and Met 87).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e873949d-81f2-425b-ba99-77023fc53492",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C52",
+      "claim": "In the SorT/SorU complex, the SorU protein docks within a pocket adjacent to the SorT active site, with the heme cofactor located at the protein-protein interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SorT/SorU complex, the SorU protein docks within a pocket adjacent to the SorT active site, with the heme cofactor located at the protein-protein interface (Figures 3A and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e5e392fa-d92c-47ec-a667-dbc7a6a907af",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C53",
+      "claim": "The shortest 'edge-to-edge' distance between the SorT Mo atom and the propionate group from the SorU heme c cofactor is 8.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortest 'edge-to-edge' distance between the SorT Mo atom and the propionate group from the SorU heme c cofactor is 8.2 \u00c5, which is well within the distance for fast electron transfer through the protein medium (Page et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e73ef71d-f8e5-4f28-97fc-44ea7ff54655",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C54",
+      "claim": "The 8.2 \u00c5 distance is well within the distance for fast electron transfer through the protein medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortest 'edge-to-edge' distance between the SorT Mo atom and the propionate group from the SorU heme c cofactor is 8.2 \u00c5, which is well within the distance for fast electron transfer through the protein medium (Page et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established knowledge about electron transfer distances.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8b065f41-8bb6-4d69-9f47-17576f18996c",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C55",
+      "claim": "The dominant electron tunneling pathway from SorT to SorU proceeds from the Mo atom, via the coordinating H2O/OH-, to the guanidinium group of SorT residue Arg 78 and across the protein-protein interface to the heme propionate group and to the pyrrole ring of heme c to the heme iron.",
+      "claim_type": "EXPLICIT",
+      "source": "PATHWAY analysis (Onuchic et al., 1992) (Table 5) further indicates that the dominant electron tunneling pathway from SorT to SorU proceeds from the Mo atom, via the coordinating H2O/OH-, to the guanidinium group of SorT residue Arg 78 and across the protein-protein interface to the heme propionate group and to the pyrrole ring of heme c to the heme iron (Figure 4B, Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by PATHWAY computational analysis of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "61c38553-b32f-484b-9aed-34c8eab9e06e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C56",
+      "claim": "Specific structural adaptations of the SorU protein take place when the SorT/SorU assembly is formed.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific structural adaptations of the SorU protein take place when the SorT/SorU assembly is formed (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing SorU structures within and outside the complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "5a4ab1cc-c0f9-410f-8dd4-aeaf9114f5c5",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C57",
+      "claim": "A surface loop on SorU (residues 82\u201393) moves away from the SorT/SorU complex interface, leading to a reorientation of the heme ligand residue Met 87.",
+      "claim_type": "EXPLICIT",
+      "source": "A surface loop on SorU (residues 82\u201393) moves away from the SorT/SorU complex interface, leading to a reorientation of the heme ligand residue Met 87 so that a different Met 87 rotamer coordinates the iron in the SorU structures within and outside of the complex (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "533298f7-fb69-4fae-93b6-5223075cacdd",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C58",
+      "claim": "The structural change in SorU is required to allow a Mo-heme edge-to-edge distance of 'closest approach' of ca. 8 \u00c5 within the SorT/SorU assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in the structure of SorU is required to allow a Mo-heme edge-to-edge distance of 'closest approach' of ca. 8 \u00c5 within the SorT/SorU assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "0905b6cb-89ec-46f6-aefb-5ec34ad1e8cd",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C59",
+      "claim": "Without the structural adjustment in SorU, the closest approach for the redox cofactors would be ca. 10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Without this adjustment (for example, if the SorU residue 82\u201393 loop structure remained rigid) the closest approach for the redox cofactors would be ca. 10 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "0984a53c-0305-4a3f-bd35-d68f8741f092",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C60",
+      "claim": "The redox potential of the SorU heme was determined to be +108(\u00b110) and +111(\u00b110) mV vs. NHE (pH 8.0), respectively, in the presence and absence of SorT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this does not appear to be the case here as the redox potential of the SorU heme was determined by optical spectroelectrochemistry to be +108(\u00b110) and +111(\u00b110) mV vs. NHE (pH 8.0), respectively, in the presence and absence of SorT (Table 6, Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by optical spectroelectrochemistry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8465c947-17db-4365-a041-4c0a7d28417c",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C61",
+      "claim": "The MoVI/V and MoV/IV redox potentials of SorT are +110(\u00b110) mV and -18(\u00b110) mV vs. NHE (pH 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The MoVI/V and MoV/IV redox potentials of SorT (+110(\u00b110) mV and -18(\u00b110) mV vs. NHE (pH 8)) were determined by an EPR-monitored redox titration where the initial EPR-silent MoVI form is reduced to the EPR-active MoV state (Figure 2A), which then gives way to the EPR-silent MoIV form at low potential, resulting in a bell-shaped curve (Table 6, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by EPR-monitored redox titration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "044e1d0d-baf4-43d7-b186-f5913f5374fb",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C62",
+      "claim": "The high MoVI/V potential at pH 8 matches that of the ferric/ferrous redox couple.",
+      "claim_type": "EXPLICIT",
+      "source": "The high MoVI/V potential at pH 8 matches that of the ferris/ferrous redox couple. (3,4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measured redox potentials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "488f065f-945c-434e-a397-4aa0907763e6",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C63",
+      "claim": "An 'induced fit' mechanism is responsible for the formation of a productive SorT/SorU electron transfer complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural change in SorU indicates that an 'induced fit' mechanism is responsible for the formation of a productive SorT/SorU electron transfer complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed structural changes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "d7f3b994-8b3e-4441-b898-96b658e56e7f",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C64",
+      "claim": "The SorT/SorU complex interface shows significant charge complementarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SorT/SorU complex interface shows significant charge complementarity, with the negative charge on SorU correlating with a concentration of positive charges at the SorU binding site on SorT (Figures 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure and electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "b78c2046-03e0-429d-91b0-35e853aa6378",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C65",
+      "claim": "The electrostatic surface of SorU has an overall negative charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other known cytochromes c that can act as electron acceptors to SOEs (Low et al., 2011; Brody and Hille, 1999; Kappler et al., 2000), the electrostatic surface of SorU has an overall negative charge (Figures 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "daa9057f-8737-4719-8a73-49387c06e7a9",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C66",
+      "claim": "SorT has low catalytic activity with horse heart cytochrome c (7 U/mg, pI ~10) compared to high activity with SorU (212 U/mg; pI ~4).",
+      "claim_type": "EXPLICIT",
+      "source": "The positive charge on the SorT surface therefore explains the low catalytic activity of SorT with horse heart cytochrome c (7 U/mg, pI ~10), the natural electron acceptor for vertebrate SOEs, compared to the high activity observed with SorU (212 U/mg; pI ~4) (Kappler, 2011; Low et al., 2011; Wilson and Kappler, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on enzyme activity measurements and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "e489b066-7bb0-4666-ade7-f79507aa19ee",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C67",
+      "claim": "There are six hydrogen bonds at the SorT/SorU protein-protein interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the electrostatic interactions that support the formation of the SorT/SorU complex, there are six hydrogen bonds found at the SorT/SorU protein-protein interface, as well as a salt bridge between the SorT active site residue Arg 78 and a propionate group of the SorU heme moiety (Table 7, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "38a59b50-7ce9-4c51-a1a9-435f65ad89af",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C68",
+      "claim": "There is a salt bridge between the SorT active site residue Arg 78 and a propionate group of the SorU heme moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the electrostatic interactions that support the formation of the SorT/SorU complex, there are six hydrogen bonds found at the SorT/SorU protein-protein interface, as well as a salt bridge between the SorT active site residue Arg 78 and a propionate group of the SorU heme moiety (Table 7, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "b0bc139e-c6a9-4a03-bbf6-5d5ad056690e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C69",
+      "claim": "The number of hydrogen bonds in the SorT/SorU interface is unusually large in comparison with structures of other cytochrome-containing electron transfer complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an unusually large number in comparison with structures of other cytochrome-containing electron transfer complexes (Nojiri et al., 2009; Axelrod et al., 2002; Pelletier and Kraut, 1992; Solmaz and Hunte, 2008), which tend to have fewer hydrogen bonds and lack salt bridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited structures of other electron transfer complexes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "0b3d69a4-f4f1-46e1-bb04-ecd62614f045",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C70",
+      "claim": "Direct hydrogen bonds between electron transfer proteins are generally considered unfavorable for a transient interaction because of energetically disadvantageous desolvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, direct hydrogen bonds between electron transfer proteins are generally considered unfavorable for a transient interaction because of energetically disadvantageous desolvation (Miyashita et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "d3a79a98-fb2d-437f-8d74-f663999660d8",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C71",
+      "claim": "No intermolecular interactions at the SorT/SorU interface are mediated by water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Also significant is the observation that no intermolecular interactions at the interface are mediated by water molecules (Figure 7) (Nojiri et al., 2009; Gray and Winkler, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "2ecc23f7-0779-4a3d-b839-468d781a673a",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C72",
+      "claim": "Very little ordered water is observed in proximity to the interfacing region of the SorT molecule (a total of 2 water molecules only).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, very little ordered water is observed in proximity to the interfacing region of the SorT molecule (a total of 2 water molecules only and these are hydrogen bonded to the SorT molecule rather than mediating the SorT/SorU interaction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8e8cbffa-91a5-40f9-aa82-daf4376fd87d",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C73",
+      "claim": "The SorAB bacterial sulfite dehydrogenase subunit interface contains 30 hydrogen-bonds and 2 salt bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the subunit interface of the SorAB bacterial sulfite dehydrogenase, which contains 30 hydrogen-bonds and 2 salt bridges (Kappler and Bailey, 2005), supporting a permanent, heterodimeric complex of a heme c subunit (SorB) and a Mo cofactor containing (SorA) catalytic subunit (Kappler and Bailey, 2005) (Table 7), the extent of the subunit interactions in the SorT/SorU structure is modest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "39860fb1-4c78-41a5-9014-8813f12f8d8e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C74",
+      "claim": "The buried surface area between protomers is about twice as large for the SorAB assembly than for SorT/SorU.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the permanent SorAB and the transient SorT/SorU complexes is also illustrated by calculations of the shape complementarity and the buried surface areas between the protomers (Lawrence and Colman, 1993), with the latter being about twice as large for the SorAB assembly than for SorT/SorU (Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "93a927d0-5425-4d3e-894b-3cc413111397",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C75",
+      "claim": "Within the SorT/SorU complex, the SorU protein shows a significantly increased average atomic temperature factor relative to the structure of the SorT protomer (1.5 versus 0.9 \u00c52, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the SorT/SorU complex, the SorU protein shows a significantly increased average atomic temperature factor (reflecting significant flexibility) relative to the structure of the SorT protomer (1.5 versus 0.9 \u00c52, respectively; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "ba8adc5f-753e-4605-af9e-edee7b648dd6",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C76",
+      "claim": "The relative temperature factors per residue for the SorU molecule increase with increasing distance from the SorT/SorU interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relative temperature factors per residue for the SorU molecule increase with increasing distance from the SorT/SorU interface (Figure 5A), indicating that the SorU molecule is dynamic relative to SorT within the crystalline lattice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure temperature factor analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "686b8bcb-78b0-40d3-9606-cab34099ebee",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C77",
+      "claim": "The SorU molecule is dynamic relative to SorT within the crystalline lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relative temperature factors per residue for the SorU molecule increase with increasing distance from the SorT/SorU interface (Figure 5A), indicating that the SorU molecule is dynamic relative to SorT within the crystalline lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from temperature factor analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "b8462c50-3e91-4471-8df7-8fff17d2d0d3",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C78",
+      "claim": "The 'static' SorAB complex shows uniform, low temperature factors for both redox subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the 'static' SorAB complex shows uniform, low temperature factors for both redox subunits (Table 7, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cited SorAB structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "43b4ebc2-e5e6-4004-abcd-68de15805345",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C79",
+      "claim": "Conformational sampling within the SorT/SorU electron transfer complex results from the conformational flexibility of one protein redox partner relative to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is an exquisite illustration of 'conformational sampling' within the SorT/SorU electron transfer complex, which results from the conformational flexibility of one protein redox partner relative to the other and both facilitates electron exchange by accessing the optimal orientations of each redox partner and promotes fast dissociation of the complex following transfer (Leys and Scrutton, 2004; van Amsterdam et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from temperature factor analysis and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "c8bfde65-3a8e-4809-b827-cca3c065cade",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C80",
+      "claim": "Conformational sampling facilitates electron exchange by accessing the optimal orientations of each redox partner and promotes fast dissociation of the complex following transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is an exquisite illustration of 'conformational sampling' within the SorT/SorU electron transfer complex, which results from the conformational flexibility of one protein redox partner relative to the other and both facilitates electron exchange by accessing the optimal orientations of each redox partner and promotes fast dissociation of the complex following transfer (Leys and Scrutton, 2004; van Amsterdam et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural observations and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "76d9b71f-efff-473c-a026-4d557d14f7a9",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C81",
+      "claim": "The structure of the SorT/SorU complex is the first example of a structure of an SOE in complex with its external electron acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "By describing the structure of the SorT/SorU complex in this work, we report the first example of a structure of an SOE in complex with its external electron acceptor; all previous structures of SOEs being of the enzymes and their internal heme domains or subunits only (Kisker et al., 1997; Schrader et al., 2003; Kappler and Bailey, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work compared to cited previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "19352b60-4f97-4714-9e92-461cb6ffdc97",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C82",
+      "claim": "The affinity between the SorT/SorU proteins (Kd = 13.5 \u00b1 0.8 \u03bcM) correlates with the fast measured turnover rates (kcat of 140 \u00b1 11 s-1).",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the affinity between the SorT/SorU proteins (Kd = 13.5 \u00b1 0.8 \u03bcM) correlates with the fast measured turnover rates (kcat of 140 \u00b1 11 s-1) and with the predominantly electrostatic nature of the protein-protein interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measured kinetic and thermodynamic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "93250253-f2e2-433d-8ce1-435f94ab89e8",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C83",
+      "claim": "The turnover number for SorT with SorU is in the range of values measured for the human sulfite oxidase (HSO) and CSO (25.0 \u00b1 1.3 s-1 and 47.5 \u00b1 1.9 s-1, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover number for SorT with SorU as the electron acceptor is also in the range of values measured for the human sulfite oxidase (HSO) and CSO (25.0 \u00b1 1.3 s-1 and 47.5 \u00b1 1.9 s-1, respectively), but significantly slower than that observed for the permanent SorAB complex (345 \u00b1 11 s-1) (Kappler et al., 2006; Wilson and Rajagopalan, 2004; Brody and Hille, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares data from this study with cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "9c7938b2-df74-4b4a-a40b-875a41abf975",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C84",
+      "claim": "The turnover number for SorT with SorU is significantly slower than that observed for the permanent SorAB complex (345 \u00b1 11 s-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover number for SorT with SorU as the electron acceptor is also in the range of values measured for the human sulfite oxidase (HSO) and CSO (25.0 \u00b1 1.3 s-1 and 47.5 \u00b1 1.9 s-1, respectively), but significantly slower than that observed for the permanent SorAB complex (345 \u00b1 11 s-1) (Kappler et al., 2006; Wilson and Rajagopalan, 2004; Brody and Hille, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares data from this study with cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "876bd49b-9215-4ef3-90a4-9c00250a7b89",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C85",
+      "claim": "In the structure of SorAB, the docking site of the heme subunit (SorB) with the SorA subunit is almost identically positioned to that seen for SorT/SorU.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the structure of SorAB, the docking site of the heme subunit (SorB) with the SorA subunit is almost identically positioned to that seen for SorT/SorU, with major differences existing only in the number of hydrogen bonds and salt bridges in the protein-protein interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with the cited SorAB structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "2116d82f-5d05-4f53-a2b8-ed16cb90633c",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C86",
+      "claim": "Docking of the mobile heme b domain near the Mo active site in CSO and HSO has been proposed to be similar to that seen for SorT/SorU.",
+      "claim_type": "EXPLICIT",
+      "source": "For the CSO and HSO enzymes, docking of the mobile heme b domain near the Mo active site has been proposed to be similar to that seen for SorT/SorU (Utesch and Mroginski, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited computational predictions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "fee231ef-fb53-4da8-b4ff-c8684c1185dd",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C87",
+      "claim": "For CSO and HSO, domain docking enables intramolecular electron transfer and involves a heme domain that is an intrinsic part of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, however, that the docking events in CSO (and HSO) and between SorT/SorU serve fundamentally different purposes: for CSO and HSO, domain docking enables intramolecular electron transfer and involves a heme domain that is an intrinsic part of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about CSO and HSO structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "6f354812-3ca6-4aac-bf02-2a51c7f652d6",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C88",
+      "claim": "SorU is the external electron acceptor for SorT and the electron transfer is intermolecular.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and despite the fact that it is occupying a similar docking site to that predicted for CSO and HSO (Utesch and Mroginski, 2010), SorU is the external electron acceptor for SorT and the electron transfer is intermolecular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural and kinetic data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "439081df-d014-47d4-9938-bcbfa6aa4618",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C89",
+      "claim": "The SorT/SorU complex represents an elegant compromise between the requirements for fast and efficient electron transfer and reaction specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SorT/SorU complex described here thus represents an elegant compromise between the requirements for fast and efficient electron transfer and reaction specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the structural and kinetic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8f8a9ca1-9f1f-4c51-a298-3cabed00a76b",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C90",
+      "claim": "A relatively large number of hydrogen bonds and salt bridges may be required to form the initial stable protein complex, but this does not preclude a dynamic protein-protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "It also illustrates new aspects for highly dynamic protein-protein interactions: (i) A relatively large number of hydrogen bonds and salt bridges may be required to form the initial stable protein complex, but this does not preclude a dynamic protein \u2013 protein interaction;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and dynamic observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "2e51ce24-e484-4c9d-b3fd-00f782534211",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C91",
+      "claim": "Relatively subtle structural adjustments in one redox partner (SorU) can facilitate electron transfer by ideally locating the redox active cofactors in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) relatively subtle structural adjustments in one redox partner (SorU) can facilitate electron transfer by ideally locating the redox active cofactors in close proximity;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed structural changes in SorU.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "a848dec2-fa2d-412a-98be-2a7c1640c39e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "claim_id": "C92",
+      "claim": "The comparatively complex binding interface in SorT/SorU can be counterbalanced by the conformational sampling of one protein relative to the other, which enables the rapid dissolution of the complex following electron exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) the comparatively complex binding interface in SorT/SorU can be counterbalanced by the conformational sampling of one protein relative to the other, which enables the rapid dissolution of the complex following electron exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and dynamic observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d9048ed1-f026-41fb-94dc-d398d026fe41",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The SorT/SorU complex exhibits dynamic interaction in solution with a dissociation constant (Kd) of 13.5 \u00b1 0.8 \u03bcM, KM(SorU) of 32 \u00b1 5 \u03bcM, and kcat of 140 \u00b1 11 s\u207b\u00b9. The complex forms transiently with a stoichiometry of 0.8 \u00b1 0.2, requiring two sequential binding events to complete the oxidative half-reaction of SorT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C26-C32 provide converging evidence from ITC, kinetic assays, and comparative analysis. The measured Kd and KM values are consistent with a dynamic, transient interaction. The stoichiometry and kinetic parameters support the proposed two-electron transfer mechanism requiring sequential complex formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structures of SorT (2.4 \u00c5 resolution) and the SorT/SorU complex reveal the first structure of a molybdenum enzyme in complex with its external electron acceptor. SorT forms a homodimer with an unexpected head-to-tail orientation, and the complex adopts a SorU/SorT\u2082/SorU assembly confirmed by SAXS in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C36-C41, C47-C50, and C81 are well-supported by crystallographic data at appropriate resolution with proper refinement statistics (R/Rfree values). The novelty claim (C24, C81) is substantiated by comparison with cited prior structures. SAXS data (C49) validates that the crystal structure represents the solution state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the SorT/SorU complex, SorU docks adjacent to the SorT active site with the heme cofactor at the interface. The Mo-heme edge-to-edge distance is 8.2 \u00c5, enabling fast electron transfer through a pathway involving Mo \u2192 H\u2082O/OH\u207b \u2192 Arg78 \u2192 heme propionate \u2192 heme iron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by crystallographic observations and PATHWAY computational analysis. The 8.2 \u00c5 distance (C53) is measured from the structure and is appropriately within the range for efficient electron transfer as supported by citation (C54). The electron transfer pathway (C55) is determined by established computational methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "087f9fff-e579-445f-9929-fb8df9d938be",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Complex formation involves an induced-fit mechanism where a surface loop on SorU (residues 82-93) undergoes conformational change, reorienting Met87 to allow the Mo-heme distance to reach ~8 \u00c5. Without this adjustment, the closest approach would be ~10 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 and C63 are supported by structural comparison of SorU within and outside the complex. The conformational change is directly observed in the crystal structures, and the distance calculations are derived from structural modeling. The induced-fit interpretation (C63) is a reasonable inference from the observed structural changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "a513fdf4-9cd1-40d3-9121-8b843daed4ce",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The redox potentials of SorU heme are +108(\u00b110) and +111(\u00b110) mV vs. NHE in the absence and presence of SorT, respectively. SorT exhibits MoVI/V and MoV/IV potentials of +110(\u00b110) mV and -18(\u00b110) mV vs. NHE at pH 8, with the MoVI/V potential matching the ferric/ferrous couple.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by appropriate electrochemical measurements (optical spectroelectrochemistry and EPR-monitored redox titration). The similarity of SorU potentials in the presence and absence of SorT (C60) demonstrates that complex formation does not significantly alter redox properties. The matching potentials (C62) support thermodynamically favorable electron transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The SorT/SorU interface is remarkably electrostatic with six hydrogen bonds and one salt bridge (Arg78-heme propionate), which is unusually large compared to other electron transfer complexes. The interface shows charge complementarity with minimal water-mediated interactions, explaining the specificity for negatively charged SorU over positively charged cytochrome c.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C64-C72 are supported by crystallographic observations and comparative analysis with cited structures. The number of hydrogen bonds and salt bridges is directly counted from the structure (C67-C68). The comparison with other electron transfer complexes (C69) is substantiated by citations. The activity data with horse heart cytochrome c vs. SorU (C66) provides functional validation of the electrostatic complementarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Temperature factor analysis reveals that SorU is dynamic relative to SorT within the complex, with average B-factors of 1.5 vs. 0.9 \u00c5\u00b2 and increasing flexibility with distance from the interface. This conformational sampling facilitates electron exchange and promotes rapid complex dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77, C79-C80 are supported by crystallographic temperature factor analysis. The quantitative B-factor differences (C75) are calculated from the structure. The gradient of increasing B-factors with distance from the interface (C76) is observed in the data. The interpretation as conformational sampling (C79-C80) is reasonable and supported by citations to established concepts in electron transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "8ff9f635-6767-4f01-8f77-5c3ef89998b1",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison with the permanent SorAB complex reveals that SorT/SorU has fewer interfacial interactions (6 H-bonds and 1 salt bridge vs. 30 H-bonds and 2 salt bridges) and approximately half the buried surface area, with the heme docking site positioned similarly but with distinct dynamic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74, C78, and C85 are supported by structural comparison with the cited SorAB structure. The quantitative differences in hydrogen bonds, salt bridges, and buried surface area are calculated from structural data. The comparison appropriately distinguishes between permanent (SorAB) and transient (SorT/SorU) complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "9b649284-2ce8-49b3-ae6c-97695775e198",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The kinetic parameters of SorT/SorU (kcat = 140 \u00b1 11 s\u207b\u00b9, KM = 32 \u00b1 5 \u03bcM) differ from other SOEs: SorAB shows higher affinity (KM ~2 \u03bcM) and faster turnover (334 \u00b1 11 s\u207b\u00b9), while CSO shows higher affinity but slower turnover (47.5 \u00b1 1.9 s\u207b\u00b9). The SorT/SorU affinity correlates with its fast turnover and electrostatic interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C82-C84 appropriately compare kinetic parameters with cited literature values. The correlation between affinity and turnover (C82) is a reasonable inference from the data. The comparisons provide context for understanding the SorT/SorU system relative to other SOEs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "6e2ab7e8-f2d9-4815-904f-0b1a1c81297e",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EPR spectroscopy reveals that SorT exhibits a 'high pH' MoV signature with superhyperfine coupling to two I = \u00bd nuclei, indicating the equatorial O-donor is either an aqua ligand at pH 8 or a hydroxido ligand hydrogen-bonded to water.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by EPR spectroscopy data with appropriate simulation and comparison to known SOE signatures. The superhyperfine coupling observation (C43) is directly from the data. The interpretation of the equatorial ligand (C44) is a reasonable inference from the EPR data, though it presents two alternative structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "4ff79dd9-115b-460f-80bf-a09fbfb54414",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The SorT homodimer interface involves both the SUOX-fold and dimerization domains, burying ~1280 \u00c5\u00b2 per monomer (~9% of the solvent-accessible surface).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by crystallographic analysis with appropriate surface area calculations. The buried surface area is a standard metric calculated from the structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "79d7c4d9-d214-4a06-a913-9c4965f4ab9b",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While the SorU docking site is similar to that predicted for the mobile heme domains in CSO and HSO, the electron transfer mechanisms differ fundamentally: CSO/HSO involve intramolecular transfer within a single enzyme, whereas SorT/SorU involves intermolecular transfer between separate proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 appropriately distinguish between intramolecular (CSO/HSO) and intermolecular (SorT/SorU) electron transfer. The comparison with computational predictions for CSO/HSO (C86) is supported by citation. The distinction is important for understanding the biological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "ba061631-534e-4803-a4ba-b08d3e214c65",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The SorT/SorU complex represents a compromise between fast electron transfer and specificity, illustrating that: (i) multiple hydrogen bonds and salt bridges can coexist with dynamic interactions, (ii) subtle structural adjustments facilitate optimal cofactor positioning, and (iii) conformational sampling enables rapid complex dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 represent interpretive conclusions that are well-supported by the collective structural, kinetic, and dynamic data presented. These conclusions synthesize multiple lines of evidence into mechanistic principles, though they are inherently more speculative than direct observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "81436069-df84-4e69-a369-93ef269c60ba",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that interprotein electron transfer is fundamental to life, sulfite oxidation is catalyzed by SOEs with various electron acceptors, and no prior structural information existed for SOE-electron acceptor complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C18 provide appropriate background context supported by citations to established literature. These claims set up the rationale for the study and are not primary findings but are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    },
+    {
+      "id": "196d763a-f687-4b0d-90f3-de97357a1ff6",
+      "content_id": "0bdb9e68-cecf-44ee-a54c-59b4d5983f20",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study system involves SorT sulfite dehydrogenase and its electron acceptor SorU (a c-type cytochrome) from S. meliloti, which is part of a sulfite detoxification system induced by organosulfonate degradation and capable of sulfite respiration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 and C25 provide factual background about the biological system supported by citations to prior work. These establish the context and prior characterization of the proteins studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:33.813861Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "947ebbc2-e596-4e4b-858b-6bfd459f38c0",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "34645449-b554-4689-82f7-f5b0e9e2044d",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "f611445e-d85a-4f85-8b47-d76ed67b8a68",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "4eba5731-7e60-47de-aca6-3523314d9edc",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "cdb52b15-280a-417c-aeca-5c887d7b37c1",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "3db5b419-89f1-4be9-806d-ab93afa906ea",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "d7e2047e-34c5-4946-99db-38ede7376c9c",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "66b31af0-98c3-4c03-9f22-3a370341d4f8",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "3be77f93-0974-4b75-ac4b-f0412e82e600",
+      "result_id": "d9048ed1-f026-41fb-94dc-d398d026fe41"
+    },
+    {
+      "claim_id": "e88794eb-e7b2-46e1-aa41-bad380e63ce9",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "cb4b429d-1641-44d2-89ce-4b17127b3e4f",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "c107a790-dd29-4256-b60d-d3dbac6f3be0",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "78009bce-ff36-4747-9327-8a883c32dfaf",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "0e4e202c-eeeb-4309-bd94-4fe3f1ec2624",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "38078c2b-ce9d-445f-a9a1-355d7bdd0d10",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "b0473167-5380-42fe-95b9-1b3d397356b1",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "8899c9f3-80a8-4fbd-8430-304138dbaaad",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "5ce3643a-00d9-48e4-9751-d0eedd41b3c1",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "c283557c-9462-44ab-8bd3-78577c702d7e",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "040a910f-f3e7-4da4-b7da-c58e56795cd7",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "76d9b71f-efff-473c-a026-4d557d14f7a9",
+      "result_id": "2ceb6584-b654-44e7-ab3a-d16d17ba8b3a"
+    },
+    {
+      "claim_id": "a6b1e30a-3c85-4ac8-96cb-2f306c577055",
+      "result_id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689"
+    },
+    {
+      "claim_id": "e873949d-81f2-425b-ba99-77023fc53492",
+      "result_id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689"
+    },
+    {
+      "claim_id": "e5e392fa-d92c-47ec-a667-dbc7a6a907af",
+      "result_id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689"
+    },
+    {
+      "claim_id": "e73ef71d-f8e5-4f28-97fc-44ea7ff54655",
+      "result_id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689"
+    },
+    {
+      "claim_id": "8b065f41-8bb6-4d69-9f47-17576f18996c",
+      "result_id": "84557d94-6dd1-4b65-bdff-2f2ba5ff2689"
+    },
+    {
+      "claim_id": "61c38553-b32f-484b-9aed-34c8eab9e06e",
+      "result_id": "087f9fff-e579-445f-9929-fb8df9d938be"
+    },
+    {
+      "claim_id": "5a4ab1cc-c0f9-410f-8dd4-aeaf9114f5c5",
+      "result_id": "087f9fff-e579-445f-9929-fb8df9d938be"
+    },
+    {
+      "claim_id": "533298f7-fb69-4fae-93b6-5223075cacdd",
+      "result_id": "087f9fff-e579-445f-9929-fb8df9d938be"
+    },
+    {
+      "claim_id": "0905b6cb-89ec-46f6-aefb-5ec34ad1e8cd",
+      "result_id": "087f9fff-e579-445f-9929-fb8df9d938be"
+    },
+    {
+      "claim_id": "488f065f-945c-434e-a397-4aa0907763e6",
+      "result_id": "087f9fff-e579-445f-9929-fb8df9d938be"
+    },
+    {
+      "claim_id": "0984a53c-0305-4a3f-bd35-d68f8741f092",
+      "result_id": "a513fdf4-9cd1-40d3-9121-8b843daed4ce"
+    },
+    {
+      "claim_id": "8465c947-17db-4365-a041-4c0a7d28417c",
+      "result_id": "a513fdf4-9cd1-40d3-9121-8b843daed4ce"
+    },
+    {
+      "claim_id": "044e1d0d-baf4-43d7-b186-f5913f5374fb",
+      "result_id": "a513fdf4-9cd1-40d3-9121-8b843daed4ce"
+    },
+    {
+      "claim_id": "dacd665a-1ab4-4cfb-a15e-e02edc93e865",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "d7f3b994-8b3e-4441-b898-96b658e56e7f",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "b78c2046-03e0-429d-91b0-35e853aa6378",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "daa9057f-8737-4719-8a73-49387c06e7a9",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "e489b066-7bb0-4666-ade7-f79507aa19ee",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "38a59b50-7ce9-4c51-a1a9-435f65ad89af",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "b0bc139e-c6a9-4a03-bbf6-5d5ad056690e",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "0b3d69a4-f4f1-46e1-bb04-ecd62614f045",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "d3a79a98-fb2d-437f-8d74-f663999660d8",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "2ecc23f7-0779-4a3d-b839-468d781a673a",
+      "result_id": "edc1ca95-80cf-4f15-b661-5bd9942c36ab"
+    },
+    {
+      "claim_id": "93a927d0-5425-4d3e-894b-3cc413111397",
+      "result_id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3"
+    },
+    {
+      "claim_id": "ba8adc5f-753e-4605-af9e-edee7b648dd6",
+      "result_id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3"
+    },
+    {
+      "claim_id": "686b8bcb-78b0-40d3-9606-cab34099ebee",
+      "result_id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3"
+    },
+    {
+      "claim_id": "43b4ebc2-e5e6-4004-abcd-68de15805345",
+      "result_id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3"
+    },
+    {
+      "claim_id": "c8bfde65-3a8e-4809-b827-cca3c065cade",
+      "result_id": "aa5880ef-c300-49c7-bb4d-2648a981f6c3"
+    },
+    {
+      "claim_id": "8e8cbffa-91a5-40f9-aa82-daf4376fd87d",
+      "result_id": "8ff9f635-6767-4f01-8f77-5c3ef89998b1"
+    },
+    {
+      "claim_id": "39860fb1-4c78-41a5-9014-8813f12f8d8e",
+      "result_id": "8ff9f635-6767-4f01-8f77-5c3ef89998b1"
+    },
+    {
+      "claim_id": "b8462c50-3e91-4471-8df7-8fff17d2d0d3",
+      "result_id": "8ff9f635-6767-4f01-8f77-5c3ef89998b1"
+    },
+    {
+      "claim_id": "876bd49b-9215-4ef3-90a4-9c00250a7b89",
+      "result_id": "8ff9f635-6767-4f01-8f77-5c3ef89998b1"
+    },
+    {
+      "claim_id": "b024316e-cc01-42ad-b80e-19f3bd7b61a8",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "97f0fdfb-b9b0-4f81-aaf8-ae7726204890",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "aae7fc99-4f3f-4cd3-b924-7da8c1da5d79",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "19352b60-4f97-4714-9e92-461cb6ffdc97",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "93250253-f2e2-433d-8ce1-435f94ab89e8",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "9c7938b2-df74-4b4a-a40b-875a41abf975",
+      "result_id": "9b649284-2ce8-49b3-ae6c-97695775e198"
+    },
+    {
+      "claim_id": "e654fd7e-b40c-45ba-b829-a733d201d828",
+      "result_id": "6e2ab7e8-f2d9-4815-904f-0b1a1c81297e"
+    },
+    {
+      "claim_id": "1a29ece9-6694-4e40-891a-0086ab542887",
+      "result_id": "6e2ab7e8-f2d9-4815-904f-0b1a1c81297e"
+    },
+    {
+      "claim_id": "24d4765e-2719-4b57-8822-1234f39f18ec",
+      "result_id": "6e2ab7e8-f2d9-4815-904f-0b1a1c81297e"
+    },
+    {
+      "claim_id": "307eb21a-7547-4a7b-af6d-7edf5df42671",
+      "result_id": "4ff79dd9-115b-460f-80bf-a09fbfb54414"
+    },
+    {
+      "claim_id": "9bd270f6-d325-499f-83a0-5d00ee5a83bb",
+      "result_id": "4ff79dd9-115b-460f-80bf-a09fbfb54414"
+    },
+    {
+      "claim_id": "2116d82f-5d05-4f53-a2b8-ed16cb90633c",
+      "result_id": "79d7c4d9-d214-4a06-a913-9c4965f4ab9b"
+    },
+    {
+      "claim_id": "fee231ef-fb53-4da8-b4ff-c8684c1185dd",
+      "result_id": "79d7c4d9-d214-4a06-a913-9c4965f4ab9b"
+    },
+    {
+      "claim_id": "6f354812-3ca6-4aac-bf02-2a51c7f652d6",
+      "result_id": "79d7c4d9-d214-4a06-a913-9c4965f4ab9b"
+    },
+    {
+      "claim_id": "439081df-d014-47d4-9938-bcbfa6aa4618",
+      "result_id": "ba061631-534e-4803-a4ba-b08d3e214c65"
+    },
+    {
+      "claim_id": "8f8a9ca1-9f1f-4c51-a298-3cabed00a76b",
+      "result_id": "ba061631-534e-4803-a4ba-b08d3e214c65"
+    },
+    {
+      "claim_id": "2e51ce24-e484-4c9d-b3fd-00f782534211",
+      "result_id": "ba061631-534e-4803-a4ba-b08d3e214c65"
+    },
+    {
+      "claim_id": "a848dec2-fa2d-412a-98be-2a7c1640c39e",
+      "result_id": "ba061631-534e-4803-a4ba-b08d3e214c65"
+    },
+    {
+      "claim_id": "7af5b740-1adf-40f0-a43b-037419465ce4",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "22e1b013-84d0-4023-b52d-b09c1dc93b18",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "49c8f68a-6cb9-4581-af3b-4e8da53b4d13",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "fcda8fa8-5dc2-452f-b8b2-2ba9deaa6f11",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "d5bba851-e8e1-4117-bc80-c163ecff2083",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "ae0f67c2-d91d-4129-9e20-4ef5b95dfec1",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "495a0579-9e86-4137-8903-9d2ae6c1c267",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "e10f78c6-2f22-40d3-978a-c881e1cb2b88",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "710fb3ed-6a74-49b5-891e-8a99ee4b89cb",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "26b2b84c-e5d4-45a4-ba59-5672d7e239bb",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "a410d4e0-6918-4f05-bbda-2ebcc7ca6b01",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "79ce112a-31d2-4983-80c1-0df68af70279",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "63aa5346-3fc7-4f99-a39b-cec2e84e99f9",
+      "result_id": "81436069-df84-4e69-a369-93ef269c60ba"
+    },
+    {
+      "claim_id": "17fd3fdd-2335-4a9c-a93a-b4a3db82bf9b",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    },
+    {
+      "claim_id": "454caa38-fd20-40ed-8de2-7642124fa6ee",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    },
+    {
+      "claim_id": "86a031c7-20ce-463b-b50f-cec11d35760a",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    },
+    {
+      "claim_id": "4905a456-54a4-412c-9fdc-0750c2c916a3",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    },
+    {
+      "claim_id": "2532939c-1ebe-47fc-b7cf-a27a44aef1aa",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    },
+    {
+      "claim_id": "05837b47-2f71-4e41-9b23-91508e9273b9",
+      "result_id": "196d763a-f687-4b0d-90f3-de97357a1ff6"
+    }
+  ],
+  "comparisons": []
+}

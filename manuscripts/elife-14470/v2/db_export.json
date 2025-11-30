@@ -1,0 +1,1930 @@
+{
+  "submission": {
+    "id": "525d857a-ac9e-40b9-9c31-ab88ee711ec5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:17:39.878096Z",
+    "updated_at": "2025-11-30T00:17:39.878096Z"
+  },
+  "content": [
+    {
+      "id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "submission_id": "525d857a-ac9e-40b9-9c31-ab88ee711ec5",
+      "content_type": "manuscript",
+      "content_text": "# PROP1 triggers epithelial-mesenchymal transition-like process in pituitary stem cells\n\n## Authors\n\n- Mar\u00eda In\u00e9s P\u00e9rez Mill\u00e1n<sup>1</sup> \u2020\n- Michelle L Brinkmeier<sup>1</sup>\n- Amanda H Mortensen<sup>1</sup>\n- Sally A Camper<sup>1</sup> ([ORCID: 0000-0001-8556-3379](https://orcid.org/0000-0001-8556-3379)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in PROP1 are the most common cause of hypopituitarism in humans; therefore, unraveling its mechanism of action is highly relevant from a therapeutic perspective. Our current understanding of the role of PROP1 in the pituitary gland is limited to the repression and activation of the pituitary transcription factor genes Hesx1 and Pou1f1, respectively. To elucidate the comprehensive PROP1-dependent gene regulatory network, we conducted genome-wide analysis of PROP1 DNA binding and effects on gene expression in mutant mice, mouse isolated stem cells and engineered mouse cell lines. We determined that PROP1 is essential for stimulating stem cells to undergo an epithelial to mesenchymal transition-like process necessary for cell migration and differentiation. Genomic profiling reveals that PROP1 binds to genes expressed in epithelial cells like Claudin 23, and to EMT inducer genes like Zeb2, Notch2 and Gli2. Zeb2 activation appears to be a key step in the EMT process. Our findings identify PROP1 as a central transcriptional component of pituitary stem cell differentiation.\n\n## Introduction\n\nHereditary pituitary hormone deficiency, or hypopituitarism, is the most common pituitary disease in children and can cause significant morbidity if not treated effectively (Vimpani et al., 1977). There is a strong incentive for developing a pituitary stem cell therapy that could repopulate the pituitary hormone producing cells that are missing in patients with hypopituitarism. A comprehensive knowledge of pituitary stem cell differentiation is therefore relevant from a basic and medical research perspective.\n\nNormal pituitary gland development involves invagination of oral ectoderm to create Rathke\u2019s pouch and evagination of the overlying neural ectoderm, which contains the FGF and BMP signaling center that stimulates pituitary growth. The stem cells in Rathke\u2019s pouch express SOX2, and as they transition to differentiation, they delaminate from the ventral aspect of the cleft, migrate ventrally and rostrally, and become the glandular parenchyma of the anterior lobe (Ward et al., 2005; Rizzoti et al., 2013; Garcia-Lavandeira et al., 2009). Notch signaling is required to prevent premature differentiation (Zhu et al., 2006; Raetzman et al., 2004), but the molecular mechanisms for stimulating progenitors to migrate and differentiate are unknown; and these processes are of central importance for understanding pituitary organogenesis and the pathophysiology of congenital pituitary hormone deficiency.\n\nMutations in several genes are known to cause hypopituitarism in children, and the pituitary transcription factors HESX1, PROP1 and POU1F1 (PIT1) are among them. PROP1 is the most commonly mutated gene, and it is the first pituitary-specific gene in the transcriptional hierarchy (Agarwal et al., 2000; Delado\u00eby et al., 1999; B\u00f6ttner et al., 2004). PROP1 activity is modulated by WNT signaling, enabling it to suppress Hesx1 and activate Pou1f1 expression (Olson et al., 2006). Despite its central role in pituitary organogenesis and important clinical significance, no comprehensive analysis of PROP1 function has been undertaken.\n\nWe hypothesized that PROP1 has a role in stem cell regulation because of the dysmorphic stem cell niche and cell migration defect in Prop1 mutant mice, and because humans with PROP1 mutations tend to have progressive hormone deficiency, which could be attributable to exhausting stem cell pools (B\u00f6ttner et al., 2004; Wu et al., 1998). To test this idea, we used RNA-Seq and ChIP-Seq to identify novel targets and functions of PROP1. This led to the discovery that PROP1 has a key role in stimulating progenitors to undergo an epithelial-to-mesenchymal-like transition (EMT) prior to differentiation. PROP1 binds to promoters and enhancers of genes with demonstrated roles in EMT during development of other organs, including Notch2, Zeb2 and Gli2. Zeb2 expression appears to be a pivotal step in the EMT process. In addition, we show that PROP1 has an indirect role in regulating Sox2 expression and stem cell proliferation. This in-depth molecular analysis of PROP1 action advances our fundamental understanding of pituitary organogenesis and the pathophysiology of hypopituitarism.\n\n## Results\n\n### PROP1 is transiently co-expressed with stem cell marker SOX2\n\nPROP1 is the earliest known exclusive marker of pituitary identity, and it is detectable at embryonic day 11.5 (e11.5) in the mouse and rat (Sornson et al., 1996; Yoshida et al., 2009). Genetic tracing experiments revealed that Sox2-expressing cells in the embryonic pituitary give rise to Sox2-expressing cells postnatally and to all the hormone-producing cell types of the anterior pituitary gland, demonstrating that SOX2-positive cells are the pituitary stem cells (Rizzoti et al., 2013; Andoniadou et al., 2013). We recently demonstrated that all the hormone-producing cells of the anterior and intermediate lobes of the pituitary gland pass through a Prop1 expressing intermediate (Davis et al., 2016). Pituitary stem cells are reported to express PROP1 and SOX2 (Garcia-Lavandeira et al., 2009), but the overlap in expression of these genes during mouse embryogenesis has not been analyzed. PROP1-expressing cells are largely co-incident with SOX2 expressing progenitors at e12.5, although SOX2-positive cells extend over a larger area of Rathke\u2019s pouch (Figure 1A, left panel). Later in development, at e14.5, PROP1 expression is decreased, particularly in the dorsal region of Rathke\u2019s pouch, where the highly proliferative SOX2-positive cells still predominate. At this time, Prop1-expressing cells are predominately located in the transitional zone, where cells are migrating ventrally to populate the anterior lobe (Figure 1A, left panel) (Ward et al., 2005; Suh et al., 2002). One of the known functions of PROP1 is to activate expression of another pituitary-specific transcription factor, POU1F1. Little or no co-localization of POU1F1 and SOX2 is observed in the cell nuclei, either during development or after birth (Figure 1A, right panel). The consistently mutually exclusive expression of SOX2 and POU1F1 supports the idea that POU1F1 regulates a later stage of differentiation, and it suggests that any effect of POU1F1 on pituitary stem cells would be indirect. Thus, PROP1, but not POU1F1, is initially expressed in SOX2 expressing stem cells in the embryonic pituitary, and the co-localization of PROP1 and SOX2 is transient, ceasing as cells migrate and transition to differentiation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left Panel: Double immunofluorescence reveals co-staining of PROP1 (red) and SOX2 (green) at e12.5 in the dorsal and ventral areas of Rathke\u2019s pouch (arrowheads).\u00a0At e14.5 less co-localization was observed (arrowheads). Right Panel: Nuclear expression of SOX2 (green) and POU1F1 (red) is mutually exclusive during development (e14.5) and afterbirth (P7). Cell nuclei were stained with DAPI (blue). (B) Immunofluorescence was performed on embryonic sections of Prop1df/df and normal controls at e13.5 with a primary antibody for CYCLIN E (green). No CYCLIN E expression was detected in the developing pituitary glands of mutants. At e13.5 there are more cells double positive for p27kip1 (green) and p57kip2 (red) in the Prop1dfdf relative to Prop1+/+ (arrowheads). (C) Immunofluorescence reveals no changes in CYCLIN D1 expression at e12.5 but a decreased level later in development of Prop1df/df pituitaries compared to controls. Scale bars 100 \u00b5m.\n\n### PROP1 is necessary for progenitor proliferation and expression of transitional cell markers\n\nThe progenitor cells in Rathke\u2019s pouch exit the cell cycle to undergo differentiation. Non-cycling precursors are restricted both spatially and temporally during normal development and are marked by expression of p57Kip2 and cyclin E. In most tissues, cyclin E marks the transition from G1 to S phase, but it marks non-cycling precursors in the developing pituitary gland (Bilodeau et al., 2009). As differentiation proceeds, p27Kip1 is up-regulated concomitant with extinguishing p57Kip2 expression, and p27Kip1 protects cells from re-entering the cell cycle (Bilodeau et al., 2009). To investigate whether PROP1 has a role in regulating the progression of proliferating stem cells to a transition phase, we evaluated the expression of transitional cell markers in Prop1 loss-of-function mutant (Prop1df/df, p.Ser83Pro) and control pituitaries. Immunofluorescence revealed CYCLIN E expression in the expected transitional zone of non-cycling progenitors in normal e13.5 pituitaries, but it is completely absent at e13.5 in the pituitaries of Prop1df/df mice (Figure 1B). Immunoreactivity for p57kip2 and p27kip1 was spatially and temporally normal in Prop1df/df pituitaries, but the number of double positive cells was abnormally high in mutants (Figure 1B). This suggests that Prop1 deficiency causes an abnormal progression from stem cell to differentiated cell. Cyclin D1 is expressed during the G1 phase of the cell cycle and is essential for cells to passage into S phase. At e12.5, CYCLIN D1 is expressed mainly in the proliferative zone of wild-type and Prop1 mutant pituitaries. However, at e13.5, there is a reduction in CYCLIN D1-positive cells in dwarf pituitaries (Figure 1C). These results show that Prop1 is necessary for several aspects of cell cycle regulation during embryogenesis: promoting proliferation of progenitor cells marked by Cyclin D1, transitioning them out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.\n\n### PROP1 is required to maintain normal SOX2 expression after birth\n\nThe rodent pituitary gland undergoes two distinct waves of cell proliferation and differentiation, one occurring during embryogenesis and a second one during the first 3 weeks afterbirth in the mouse (Gremeaux et al., 2012; Zhu et al., 2007; Carbajo-P\u00e9rez and Watanabe, 1990). The known pattern of Prop1 expression correlates with the first wave of proliferation, which peaks at e12.5 and wanes at e14.5, but expression during the postnatal wave of cell proliferation has not been investigated. Using qRT-PCR, we discovered high Prop1 mRNA levels at postnatal days 3 and 7 (P3 and P7), that are similar to the peak levels at e12.5 and coincident with the second wave of cell proliferation (Figure 2\u2014figure supplement 1). We also used qRT-PCR to assess the temporal expression patterns of Prop1-dependent genes (Pou1f1 and Notch2), and the stem cell markers Sox2, Gfra2 and Sox9 during these waves of pituitary growth (Figure 2\u2014figure supplement 1). We found that Prop1 and all these genes are expressed during the postnatal wave of pituitary expansion, and their mRNA levels are at higher or similar levels to those found in embryonic pituitaries.\n\nTo investigate whether Prop1 has novel roles in the postnatal pituitary expansion phase beyond of its regulation of Pou1f1, and based on our previous observation where PROP1 and SOX2 are co-expressed on the same cells, we performed qRT-PCR assays for stem cell markers in Prop1df/df and Pou1f1dw/dw (p.Trp251Cys) P7 pituitaries. Prop1 mutants have higher Sox2 mRNA levels compared to their wild-type littermates, but Sox2 mRNA levels were not significantly altered in Pou1f1 mutant pituitaries (Figure 2A). Despite the elevation in Sox2 expression in Prop1 mutants, the mRNA levels of Sox9 and Gfra2 were not affected, implying heterogeneity within the stem cell population or at least independent regulation of accepted stem cell markers by Prop1 (Figure 2A). Also, immunofluorescence performed on pituitary sections revealed an increase in SOX2-positive cells in the marginal zone of Prop1 mutants in comparison to both Pou1f1 mutants and control mice (Figure 2B). At P7, pituitaries from Prop1df/df mice have a dysmorphic appearance because progenitors fail to migrate away from the marginal zone, and the overall size of the mutant gland is reduced (Ward et al., 2005). Pituitaries from Pou1f1dw/dw mice are also smaller than normal at this age, but they have normal morphology (Ward et al., 2005; Suh et al., 2002). We assessed whether expression of CYCLIN E is affected by Prop1 or Pou1f1 deficiency during the period of postnatal pituitary growth. Using real-time PCR, we observed that mRNA levels of CyclinE were decreased in P7 pituitaries from both mutants relative to their wild-type littermates (Figure 2C). The increase in SOX2-positive cells around the abnormal marginal zone and the failure to express CYCLIN E in Prop1 mutants is consistent with a role of Prop1 in suppressing stem cell fate and stimulating progenitor cell migration during the second wave of pituitary expansion in postnatal pituitaries.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sox2 mRNA levels are increased in whole pituitaries of Prop1df/df mice at P7 relative to controls. No changes were observed in Pou1f1 mutant P7 pituitaries. Sox9 and Gfra2 mRNA levels are similar in whole pituitaries of Prop1df/df, Pou1f1dw/dw and control pituitaries at p7 (N\u00a0=\u00a03). Samples were normalized to GAPDH. One-way ANOVA (OWA) and * indicates p<0.05 relative to control. (B) SOX2 is expressed in postnatal pituitaries (P7) in cells lining the pituitary cleft and also in the parenchyma of the anterior lobe in mutant and control mice. Immunofluorescence detection of SOX2 (green) was performed on coronal pituitary sections of wild type, Prop1df/df and Pou1f1dw/dw mice. An increase in SOX2 expression was detected only in Prop1 mutant pituitaries. Cell nuclei were stained with DAPI (blue). Scale bars: 100 \u00b5m. The charts represent the percentage of cells that immunostain for the indicated marker, N\u00a0=\u00a05. One-way ANOVA (OWA) and * indicates p<0.05 relative to control. (C) Cyclin E mRNA levels are decreased in Prop1df/dfand Pou1f1dw/dwP7 pituitaries (N\u00a0=\u00a05). Samples were normalized to GAPDH. OWA and * indicates p<0.05 relative to control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relative mRNA levels of Prop1, Notch2, Pit1, Sox2, Gfra2 and Sox9 in pituitaries of wild-type mice (n=7) were determined by semi-quantitative real-time PCR at different time points (e12.5, e14.5, e18.5 and postnatal day 3 and 7). ANOVA, post hoc Fisher analysis: letters and *show a statistically significant difference, p<0.05. Samples were normalized to GAPDH mRNA. Plots denote the mean \u00b1 SEM.\n\nTo further analyze the expression of Prop1 and stem cell markers postnatally, we performed double immunohistochemistry using antibodies against PROP1, SOX2 and SOX9. The missense mutation in Prop1 mutant mice does not lead to enhanced protein degradation (Gage et al., 1996), and the mutated protein can be detect using the PROP1 antibody directed against the N\u00a0terminus. We characterized the specificity of the PROP1 antibody by performing immunofluorescence for PROP1 on e12.5 embryos from wild-type and Prop1-/- mice, which carry a deletion in the Prop1 gene and are not expected to produce a stable protein (Figure 3\u2014figure supplement 1) (Nasonkin et al., 2004). As expected, strong, nuclear PROP1 immunoreactivity is detected throughout the middle zone of Rathke\u2019s pouch in wild-type embryos. No PROP1 staining was detected in the pituitaries of Prop1-/- mice, confirming the specificity of the antibody (Figure 3\u2014figure supplement 1). The expansion of SOX2-positive cells in Prop1df/df\u00a0pituitaries correlates with an expansion of Prop1-expressing cells in the marginal zone (Figure 3A and C). The expanded population of SOX2-expressing cells in Prop1df/df dwarf pituitaries exhibit less co-localization with SOX9 relative to controls (Figure 3B and D). Overall, these results suggest that Prop1 is crucial to promote stem cell engagement in the postnatal pituitary.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig3-v2.jpg)\n\n**Figure 3.:** Double immuno\ufb02uorescence labeling of PROP1 and SOX2 (A) and SOX2 and SOX9 (B) in wild-type control and Prop1 mutants at P3. (C) Quanti\ufb01cation SOX2+, PROP1+ cells among SOX2+ cells in the marginal zone in control and mutants. (D) Quanti\ufb01cation SOX2+, SOX9+ cells among SOX2+ cells in the marginal zone in control and mutants. Data are represented as mean \u00b1 SEM (n = 3 mice, *p<0.05). Scale bars, 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Immunostaining with specific antibody against PROP1 in wild-type and Prop1-/- embryos. Cell nuclei were stained with DAPI (blue).\n\n### Prop1 affects pituitary stem cell properties\n\nAdherent colonies arising from single stem cells can be cultured from postnatal and adult pituitaries in vitro. These colonies represent a mixture of stem cells and cells that have engaged in the transitioning process to differentiation (Andoniadou et al., 2013). We analyzed the number of colony-forming cells (CFCs) per pituitary in normal and mutant mice postnatally, as a measure of the stem cell reserve and engagement (Gaston-Massuet et al., 2011). We demonstrated that both mutants, Prop1df/df and Pou1f1dw/dw, can generate progenitor CFCs in culture that express stem cell markers, such as SOX2, SOX9, GFRA2 and CYCLIN D2 by immunostaining (Figure 4\u2014figure supplement 1). The number of CFC per pituitary at postnatal days 7, 13 and 38 is reduced in Prop1 mutant relative to wild-type pituitaries (Figure 4A, left panel). Colonies from Prop1df/df mice differ qualitatively from those of normal mice. Wild-type mice produce colonies that have two visually distinct types. About half of the colonies are comprised of cells that are compact and piled up, which is typical for undifferentiated progenitors (Gaston-Massuet et al., 2011). The rest of the wild-type colonies are comprised of large, flat cells, but 100% of Prop1 mutant colonies are the flat cell type (Figure 4B and C, left panel). After 4 days in culture, the difference in morphology in the Prop1 mutant colonies is already apparent (Figure 4D). In contrast to Prop1df/df, the pituitaries from Pou1f1dw/dw mice produced similar number of colonies per pituitary gland at all ages analyzed relative to wild types, and their morphology was representative of wild type (Figure 4A\u2013C right panels). Together, these studies demonstrate that Prop1 is necessary to maintain normal stem cell pools during postnatal pituitary maturation and adulthood.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig4-v2.jpg)\n\n**Figure 4.:** (A) Number of colony-forming cells per pituitary after 10 days in culture (N\u00a0=\u00a03\u20136 pituitaries per stage). Two-way ANOVA *p<0.05 for Prop1df/df vs aged matched Prop1+/+ littermates, post hoc Fisher analysis. Plots denote the mean \u00b1 SEM and * indicates p<0.05 relative to control. (B and C) Pictures of the tissue culture plates showing colonies from Prop1 (left) and Pou1f1 (right) mutant pituitaries fixed and stained, show the different morphology of colonies from Prop1df/df pituitaries (arrowheads). (C) Photos taken at higher magnification, 2x. (D) Time lapse microscopy shows the formation of a colony from a single stem cell captured 24\u2009hr after the cells were plated and 4 days later. Colonies from Prop1 mutant pituitaries have an altered morphology since the colony formation starts around day 4. Scale bar 100 \u00b5m. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Immunostaining with specific antibodies performed on fixed colonies show expression of stem cell markers, SOX2, SOX9 and GFRa2 and CYCLIN D2. No differences were found between genotypes. Cell nuclei were stained with DAPI (blue).\n\n### Prop1 regulates expression of EMT pathway genes in stem cell colonies\n\nIn order to discover the mechanism whereby Prop1 deficiency uniquely affects the population of stem cells in the postnatal pituitaries, RNA-Seq experiments were performed on stem cell colonies originating from P13 pituitaries from Prop1df/df, Pou1f1dw/dw and their respective wild-type littermates. Three independent samples of total RNA for each experimental group were collected and analyzed using RNA-Seq technology. A comparison of the gene expression differences in wild types and mutants revealed that the Prop1 mutation had the greatest effect on gene expression in stem-cell-derived colonies. A total of 2035 genes were differentially expressed (p value \u2264 0.05, |log2FC\u0399 \u2265 1) in colonies from Prop1 mutants compared with their wild-type littermates, while only about 1/3 that number were differentially expressed in Pou1f1 mutants compared to their wild-type littermates (752 genes; p value \u2264 0.05, |log2FC\u0399 \u2265 1). The two mutants share a total of 386 genes that are differentially expressed relative to their wild-type littermates (p value \u2264 0.05, |log2FC\u0399 \u2265 1), revealing a set of common effects on colony-forming properties of postnatal pituitary progenitors (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig5-v2.jpg)\n\n**Figure 5.:** (A) A Venn diagram illustrates the total number of genes with significantly different expression in Prop1 mutants relative to their wild-type littermates (blue circle) and Pou1f1 mutants relative to their wild-type counterparts (red circle). The table shows examples of genes up regulated (green) or down regulated (red) (p value \u2264 0.05, |log2FC\u0399 \u2265 1) uniquely in the Prop1 mutant colonies relative to Pou1f1 mutants. (B) RT-qPCR validation of RNA-Seq data. GAPDH was used as an internal control (N\u00a0= 4) OWA and * indicates p<0.05 relative to control. Immunostaining for CDH1 shows an increased in protein expression on colonies from Prop1df/df\u00a0pituitaries compare to control. CYCLIN E immunostaining reveals that Prop1+/+\u00a0colonies express this protein but is absent on Prop1df/df\u00a0colonies. Cell nuclei were stained with DAPI (blue). Scale bar 100 \u00b5m. Plots denote the mean \u00b1 SEM. qPCRs were done using at least three technical replicates.\n\nWe carried out a pathway analysis to determine which major categories of gene expression were uniquely affected by Prop1 deficiency in stem-cell-derived colonies. Remarkably, the gene expression profile supports the idea that Prop1-mutant-derived colonies fail to undergo an Epithelial-Mesenchymal Transition (EMT)-like process that occurs in both wild-type and Pou1f1dw/dw colonies. The epithelial markers E-cadherin (Cdh1) and claudin-23 were uniquely up-regulated in Prop1 mutant colonies. Moreover, markers of EMT including the regulatory gene Zeb2, which is a transcriptional repressor of the Cdh1 gene, are expressed at lower levels only in Prop1df/df colonies (Figure 5A). We detected up-regulation of miR-200a in colonies from Prop1 mutant pituitaries. This microRNA inhibits the accumulation of ZEB proteins at the Cdh1 gene promoter (Vandewalle et al., 2005). Other genes in the EMT-like pathway that exhibited altered expression include the matrix metallopeptidases (Mmps), a disintegrin and metalloproteinases with or without thrombospondin motifs (Adam and Adamts). Moreover, some of the signaling pathways that are down-regulated in colonies from Prop1 mutants are well known for being EMT-inducers, including those mediated by Notch, transforming growth factor \u03b2 (TGF\u03b2), bone morphogenetic protein (BMP), Wnt and SHH signaling (Figure 5A).\n\nWe validated differential expression of selected genes in stem cell colonies from Prop1 mutant and wild-type pituitaries. A qRT-PCR analysis showed that Cdh1 and Claudin 23 were elevated, and Mmp2, Mmp3, Mmp16, Zeb2 and Gli2 were decreased in the Prop1 mutant colonies relative to colonies from wild-type littermates (Figure 5B). Expression of CDH1 was also analyzed by immunohistochemistry. Colonies from Prop1df/df pituitaries showed increased in CDH1-positive cells (Figure 5B). CyclinE was decreased in Prop1 mutant colonies, at mRNA and protein levels, consistent with our findings in pituitary tissue (Figure 5B). Because Zeb2 is an inducer of EMT in other tissues (Vandewalle et al., 2005), we tested whether reduction in Zeb2 expression was sufficient to alter colony morphology and gene expression. We achieved effective reduction of Zeb2 expression with siRNA designed to target Zeb2, but not with the siRNA negative control (Figure 6). Lowered Zeb2 expression was sufficient to reduce expression of Gli2 and increase expression of Cdh1. Treatment with Zeb2 siRNA appeared to block formation of tightly packed colonies typical of normal pituitary stem cell cultures (Figure 6A and B). Thus, in the absence of Prop1 or Zeb2 the colonies fail to initiate the EMT-like process and exhibit abnormal morphology and EMT marker gene expression. This supports the idea that Prop1 induces EMT-like process in the stem cell population.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig6-v2.jpg)\n\n**Figure 6.:** (A) Zeb2, Gli2 and Cdh1 mRNA levels in colonies from Prop1df/+ and Prop1df/df pituitaries treated with Zeb2 siRNA and negative control siRNA (control). Samples were normalized to GAPDH. qPCRs were done using at least three technical replicates. (B) Pictures of the colonies from Prop1df/+ and Prop1df/df pituitaries fixed and stained, show the different morphology of colonies between control siRNA and treated with Zeb2 siRNA.\n\nWe examined expression of the EMT inducer Zeb2 and cadherins during pituitary development in control and Prop1df/df mice (Figure 7A). At e14.5, Zeb2 is normally expressed in cells in the ventral part of the Rathke\u2019s Pouch (Figure 7A, between the two lines), and this zone of enriched expression is almost absent in Prop1 mutant pituitaries. CDH1 is normally expressed throughout the Rathke\u2019s pouch, but CDH1 staining is stronger in the ventral part of the Prop1 mutant pouch, particularly along the marginal zone (Figure 7A, box and higher magnification image), although there was no obvious difference in expression of the mesenchymal marker, N-CADHERIN or CDH2. Next, we explored CDH1 expression at P13, the time point at which the CFCs were collected for subsequent RNA-Seq analysis. We found that Prop1df/df mutants have abnormal expression of CDH1 in cells distant from the marginal zone. Taken together, these results show that Prop1 is necessary for suppressing SOX2 expression in stem cells and for driving them to undergo an EMT-like process critical for populating the anterior lobe with progenitors capable of differentiating into the PIT1 lineage.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig7-v2.jpg)\n\n**Figure 7.:** (A) Upper panel:In situ hybridization using a Zeb2 antisense riboprobe at e14.5 detected expression in the control pituitary. Most of the positive cells are in the ventral area, around the cleft (between the lines). In Prop1df/df pituitaries very few cells are expressing Zeb2. Lower panel: Sagittal sections of 14.5 embryos were stained for CDH1 (green) and CDH2 (red) by immunohistochemistry. In the wild-type pituitary, CDH1 expression is dispersed throughout the Rathke\u2019s Pouch, while CDH2 expression is more concentrated in the rostral area and in the forming anterior lobe. In Prop1 mutant pituitaries, CDH1 expression is increased and concentrated in the area ventral to the lumen, where Zeb2 expression was absent. White boxes indicate where higher magnification photos were taken. (B) Immunohistochemestry for CDH1 at P13 shows that Prop1df/df pituitaries have an expanded expression of this endothelial protein in the anterior lobe compared to control pituitaries. White boxes indicate where higher magnification photos were taken. Cell nuclei were stained with DAPI (blue). Scale bar 100 \u00b5m.\n\n### Identification of putative Prop1 target genes by ChIP sequencing\n\nPou1f1 target genes have been explored (Skowronska-Krawczyk et al., 2014), but only a few direct Prop1 target genes are known (Olson et al., 2006). PROP1 binds DNA near the Hesx1 and Pou1f1 genes and suppresses or activates their expression, respectively (Sornson et al., 1996). Little is known about other direct targets of PROP1 regulation. There are no available cell lines that express Prop1, and chromatin immunoprecipitation (ChIP) analysis is difficult in small, developing tissues. To identify potential Prop1 target genes, we engineered expression of a biotin-tagged PROP1 in pituitary GHFT1 cells, a cell line that was originally developed by targeted oncogenesis in transgenic mice using the Pou1f1 enhancer and promoter sequences to drive SV40\u2009T-antigen expression (Lew et al., 1993). GHFT1 cells are thought to represent immortalization of cells in the pituitary primordium at approximately e14.5 when Prop1 has activated Pou1f1, but the hormone genes that are downstream targets of Pou1f1 are still silent. We generated a stable, derivative, GHFT1 cell line that expresses the bacterial biotin ligase BirA (BirA) using neomycin selection, and a second, stable derivative using puromycin drug selection that expresses BirA and recombinant PROP1 (Prop1Tag). Prop1 was engineered to encode a 23 amino acid BirA recognition motif fused to the amino terminus (Figure 8A) (Yu et al., 2009). We chose to modify the amino terminus of PROP1 because is not well conserved (Ward et al., 2007). Western blot analysis, using a BirA antibody, demonstrated expression of BirA in both the BirA cell line and BirA-Prop1Tag cell line. Using streptavidin horseradish peroxidase, we demonstrated in vivo biotinylation of the recombinant PROP1 in the BirA-Prop1Tag cell line (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic diagram of biotin tagging system. The birA recognition motif tag (red) is shown fused to the amino terminus of PROP1. The biotin acceptor lysine (K) is indicated with *. (B) Western blot of protein extracts from GHFT1 cell clones expressing either BirA alone, or BirA and the recombinant Prop1Tag. Upper panel, probed with anti-alpha-V5 antibody for BirA detection; Middle panel, probed with streptavidin horse radish peroxidase (SA-HRP) and lower panel, probed with anti-Histone 3 antibody for protein loading control. (C) Quantitative ChIP assay at a known PROP1 occupancy site in the Pou1f1 promoter and a negative control site (Hoxd10 promoter) using streptavidin-based ChIP. (D) Streptavidin ChIP-Seq enrichment profiles for PROP1 at the Pou1f1 gene. The known peak at\u00a0\u22127.8 kb is indicated with *. A novel peak at -6\u00a0kb is indicated with ** and (E) validated N\u00a0=\u00a03 OWA and * indicates p<0.05 relative to controls. Data are mean + SEM. Each ChIP experiment was repeated at least twice with similar results. (F) Table containing coordinates of the peaks at the Pou1f1 promoter and the motifs found in the peaks.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Pituitary paraffin sections were prepared from e12.5 embryos of the genotype indicated and immunohistochemistry was performed. A polyclonal antibody against PROP1 detects the PROP1 protein in the pituitary primordium - Rathke\u2019s Pouch (upper panel). The transgenic PROP1-biotag protein can be detected with fluorescein-conjugated streptavidin only when is co-expressed with BirA (lower panel). (B) Body weight at P21. Prop1-/- mice are dwarfed, but the presence of the Prop1-biotag transgene alone or co-expressed with BirA rescues the dwarf phenotype. The mean of body weight of mice of each genotype is graphed. Error bars represent the standard deviation. (n\u00a0=\u00a025\u201340) ANOVA *p<0.05. (C) Dysmorphology characteristic of the Prop1 mutant pituitary gland is rescued by the biotin-tagged Prop1 transgene. Upper panel: Hematoxylin and eosin staining of e16.5 embryos. Lower panel: Immunostaining with POU1F1-1 antibody at e16.5 paraffin sections. Scale bars, 100 \u00b5m.\n\nTo confirm that the Prop1Tag protein has normal function, we generated transgenic mice expressing the Prop1Tag construct, and carried out the appropriate crosses with Rosa26BirA/BirA transgenics and Prop1+/- mice to generate Prop1Tag, Rosa26BirA, Prop1-/- mice. Mice with the latter genotype grew normally, confirming that biotinylated PROP1 is active and functional and able to correct the dwarfism characteristic of Prop1-/- mutants (Figure 8\u2014figure supplement 1). The expression of Pit1 and pituitary dysmorphology were also rescued during development by the Prop1Tag transgene (Figure 8\u2014figure supplement 1).\n\nStreptavidin (SA)-based ChIP was performed on GHFT1 cells containing BirA alone or in combination with Prop1Tag. This takes advantage of the extremely high affinity of avidin for biotinylated proteins (Viens et al., 2004). A quantitative DNA-PCR assay was used to assess enrichment for occupancy of Prop1Tag at a known PROP1 binding site in the Pou1f1 gene. To assess nonspecific background PROP1-DNA binding, a quantitative DNA-PCR assay was carried out for a site in the Hoxd10 promoter, which is not expressed in the pituitary or other structures anterior to the hindbrain (Figure 8C). The known PROP1 binding site in Pou1f1 was highly enriched relative to input and to the controls. The DNA recovered by SA-ChIP was sequenced with a HiSeq 2000 sequencing analyzer and the results analyzed with a standard bioinformatics pipeline. The enrichment profile near the Pou1f1 gene identified the known PROP1-binding sites at the early enhancer and the promoter, as well as another, more prominent site at -6\u00a0kb, demonstrating the efficacy of our approach for identification of novel PROP1-binding sites (Figure 8D and E). We carried out sequence motif searches on the ChIP-Seq peaks (center \u00b1 200 bp) that were recovered throughout the genome using HOMER algorithms. This analysis identified a consensus sequence: TAATNNNATTA in 60% of peaks (p\u00a0=\u00a01e-1599) (Figure 9A). This consensus sequence is the first to be experimentally determined based on genome-wide data and is consistent with the paired homeodomain core consensus expected for PROP1 (Sornson et al., 1996). Interestingly, additional enriched transcription factor binding motifs were also identified in approximately 30\u201338% of peaks (Figure 9A). The best match for the motifs TGAGTCAT and CGATTAGC are Jun-AP1 and CRX, respectively. Because CRX (cone rod homeobox) is not expressed in the pituitary gland, the CGATTAGC motif is likely bound by a different OTX-like paired homeodomain protein that cooperates with PROP1 to direct transcriptional programs associated with target genes (Reed et al., 2008).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig9-v2.jpg)\n\n**Figure 9.:** (A) HOMER analysis of new motif enrichment within PROP1 peaks. (B) Canonical Pathway Analysis of the putative PROP1 target genes found on the ChIP-Seq. (C) Streptavidin ChIP-Seq enrichment profiles. Enrichment peaks corresponding to Gli2, Notch2, Zeb2 and Cldn23 are indicated with asterisks.\u00a0(D) Quantitative ChIP assay on candidate promoters.\u00a0For each gene, primers were designed to amplify region where the PROP1 peak was detected. Note that enrichment of DNA fragments was specific to BirA, Prop1Tag cells, validating the specificity of ChIP-Seq. Experiments were done using three samples for each genotype (N\u00a0=\u00a03). Data are mean + SEM. OWA and * indicates p<0.05 relative to controls. Each ChIP experiment was repeated at least twice with similar results. (E) Table containing coordinates of the peaks found on each gene and the enriched motif found by HOMER. See also Figure 9\u2014source data 1.\n\nTo correlate putative PROP1 target genes with altered gene expression observed in vivo and in CFCs, we carried out a pathway analysis on the genes identified by ChIP-seq (Figure 9B). Most of the genes were involved in regulation of EMT pathway, consistent with what we observed for gene expression in CFCs. Genes in the Axonal Guidance Signaling and Cell-Cell Junction Signaling pathways were also detected (Figure 9\u2014source data 1). We validated the PROP1 Chip-Seq data for selected genes in these pathways: Gli2, Notch2, Zeb2 and Claudin 23, using GHFT1 BirA-Prop1Tag cells and their controls, and confirmed that the enrichment was PROP1-specific (Figure 9C\u2013E). In summary, these data suggest that PROP1 regulates genes involved in the EMT-like process directly. This expands our understanding of the full spectrum of mechanisms by which Prop1 regulates pituitary stem cells.\n\n## Discussion\n\nMutations in several transcription factors, including HESX1, PROP1 and POU1F1 cause pituitary hormone deficiency in mice and humans. HESX1 and POU1F1 are direct targets of PROP1 repression and activation, respectively (Olson et al., 2006; Sornson et al., 1996). POU1F1 stimulates the differentiation of progenitors into thyrotropes, somatotropes and lactotropes (Bodner et al., 1988; Gordon et al., 1993; Ingraham et al., 1988; Lin et al., 1994; Steinfelder et al., 1991) by organizing target gene enhancer regions in the nuclear matrix, using a mechanism involving MATRIN-3, \u03b2-CATENIN, and the AT-rich binding protein, SATB1 (Skowronska-Krawczyk et al., 2014). PROP1 deficiency causes similar hormone deficiencies to those caused by POU1F1 mutations, but in addition, it is uniquely associated with progressive hormone loss, highly dysmorphic Rathke\u2019s pouch, and poor vascularization (Ward et al., 2006). However, the molecular bases for these aspects of PROP1-specific disease pathologies are unknown.\n\nHere, we define two new roles of Prop1: first, PROP1 is a regulator of pituitary stem cell (SOX2+ cell) population and second, PROP1 triggers an EMT-like process in pituitary stem cells that is crucial for normal pituitary morphology and cell specification of the PIT1 lineage. Our genome-wide analysis of PROP1 binding identifies target genes that regulate these processes. We propose that Prop1 mediates progenitor cell proliferation by driving cell cycle progression. In the absence of functional Prop1, embryonic pituitary progenitors fail to maintain expression of the proliferative markers Cyclin D1 and Cyclin D2 (Ward et al., 2005; Raetzman et al., 2004), and they fail to initiate expression of the transitional marker Cyclin E. We did not detect Prop1-binding sites near the CyclinD1, D2 or E genes, suggesting that Prop1 regulation of these genes is indirect. There is a precedent for Gli2 activating expression of these genes in the developing lung (Rutter et al., 2010). Gli2 is necessary for pituitary progenitor proliferation and normal pituitary morphology (Wang et al., 2010). Gli2-deficient mice either lack their anterior pituitary or have pituitary hypoplasia (Wang et al., 2010). Loss-of-function mutations in the human GLI2 gene cause pituitary anomalies and holoprosencephaly (Roessler et al., 2003). Gli2 expression is reduced in colonies derived from Prop1 mutant pituitaries, and PROP1 binds to the 5\u2019 region of the Gli2 gene in cell culture. However, Gli2 expression is not strictly or directly Prop1 dependent because Gli2 is expressed in the mesenchyme surrounding the pituitary early on (at e12.5) and is expressed in pituitary tissue after Prop1 expression wanes (e15.5).\n\nProp1 is required to maintain stem cell pools and stimulate progenitor cells to differentiate. This idea is supported by multiple lines of evidence. First, all the hormone producing cell types of both the anterior and intermediate lobes go through a Prop1 expressing intermediate (Davis et al., 2016). Second, Prop1 mutants have reduced cyclin D1 and D2 expression in the progenitor compartment embryonically. Third, Prop1 mutants have more SOX2-positive cells residing in the marginal zone or residual Rathke\u2019s cleft, and fewer SOX2-positive cells in the parenchyma, in comparison to both Pou1f1 mutants and control mice. Fourth, the SOX2-expressing cells in Prop1 mutants lack SOX9, have reduced colony forming capabilities, and exhibit abnormal colony morphology. PROP1 regulation of Sox2 expression may be indirect, even if they are expressed in the same cell at one point during development and after birth, since PROP1 did not bind the SOX2 promoter in cell culture.\n\nAnother role of PROP1 is to drive an EMT-like process in pituitary stem cells by stimulating expression of Zeb2. We determined this using several different approaches: colony-forming assays, in vivo analysis of Prop1 mutant tissues and genetically engineered cell lines. Prop1 deficiency affects pituitary colony-forming properties, and the Prop1 mutant-specific alterations in gene expression in these CFCs indicate failure of an EMT-like process. The classic pattern of EMT involves loss of Cdh1 (E-Cadherin) and up-regulation of Cdh2 (N-Cadherin). In Prop1 mutants CFCs as well as in pituitary tissues, we observed an increase in Cdh1, however no changes in Cdh2 expression were found. Thus, the process is likely a partial EMT, in which mesenchymal cells do not display all the characteristics of a typical EMT (Leroy and Mostov, 2007). A number of transcription factors, including ZEB family members, regulate EMT. PROP1 binds to the Zeb2 promoter, suggesting the regulation may be direct. The level of Zeb2 expression is decreased in both CFCs and developmental pituitaries from Prop1 mutant mice, and reduction in Zeb2 expression is sufficient to mimic some of the properties of Prop1-deficient CFCs. ZEB family proteins reduce epithelial marker expression and increase mesenchymal marker expression during the induction of EMT in other organs (Peinado et al., 2007). In addition, Zeb2 is repressed through microRNA 200 family members (Brabletz and Brabletz, 2010), and we found an increase in miR-200a transcripts in colonies from Prop1 mutant pituitaries. In humans, mutations on the ZEB2 gene cause Mowat Wilson Syndrome, a disorder associated with mental retardation, microcephaly and short stature (Mowat et al., 1998). Taken together, it is tempting to speculate that affected individuals with this pathology could have also pituitary defects.\n\nDuring development, expansion of organs relies on cell migration and differentiation. These events imply changes in the actin cytoskeleton and altered expression of adhesion molecules and matrix extracellular components. We show altered cell shape, elevated expression of adhesion molecules and reduced levels of matrix metalloproteinases (MMPs) in stem cell colonies from Prop1 mutant mice. MMPs play key roles in embryonic development and are involved in EMT in the morphogenesis of many tissues, including neural crest delamination, endocardial invasion and mammary gland branching formation (Radisky and Radisky, 2010). Several genes down regulated in the stem cell colonies from Prop1 mutant pituitaries were associated with main inducers of the EMT including members of the Notch, TGF-\u03b2, Wnt and Hedgehog pathways. All these signaling pathways are also well known for their critical role in pituitary embryonic development and have important roles in tumorigenesis in both humans and mice. EMT plays an important role in cancer pathogenesis, particularly during growth, maintenance and progression of the tumor with local invasion or metastasis (De Craene and Berx, 2013; Pirozzi et al., 2011; Mani et al., 2008). Pituitary adenomas are tumors with significant prevalence and, although they are often benign, can become invasive (Melmed, 2011). At present, the mechanisms underlying the pathogenic processes of initiation, expansion and invasion of pituitary adenomas are still unknown. Our data provide insight into a role of EMT in pituitary development that could be applied in the context of pituitary tumor formation and to other tissues that contain stem cells that undergo an EMT-like process before differentiating, such as during heart and mammary development (Kim et al., 2014).\n\nIn summary, we showed that Prop1 is required for normal stem cell pools during embryogenesis and postnatal pituitary expansion. Our genome-wide analyses support the idea that Prop1 promotes the transition of progenitors to differentiation by inducing expression of EMT drivers like Zeb2. In addition, Prop1 activates expression of cyclin E, a marker of the transition state, and Pou1f1, a marker of the differentiation state (Figure 10). This study establishes the mechanism of PROP1 action in pituitary progenitor cells, offers new candidate genes for cases of pituitary hormone deficiency with unknown etiology, and lays the foundation for investigating the role of EMT in pituitary tumor formation.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/14470/elife-14470-fig10-v2.jpg)\n\n**Figure 10.:** During normal pituitary development when stem cells transition toward differentiation they exit the cell cycle and express Cyclin E. Our results suggest that for progenitors to differentiate they need to go through an EMT-like process where E-cadherin is down-regulated and the cells lose adhesion. In the absence of Prop1, the expression of genes that can induce EMT, like Zeb2, is reduced, leading to increased cell adhesion and increased expression of tight junction proteins like claudins. Our data suggest that PROP1 is required for progenitors to progress to the transitional stage marked by Cyclin E expression embryonically, and in the absence of Prop1, Sox2 expression is elevated. The failure of progenitors cells to advance to the transitional stage leads to pituitary hormone deficiency and organ dysmorphology.\n\n## Materials and methods\n\n### Mice\n\nAmes dwarf mice (Prop1df/df) were originally obtained from Dr. A. Bartke (Southern Illinois University, Carbondale, IL) from a non-inbred stock (DF/B). Snell dwarf mice (Pou1f1dw/dw) were originally obtained from The Jackson Laboratory from an inbred stock (DW/J) (Bar Harbor, ME) and crossed with Mus castaneus, CAST/EiJ mice for unrelated genetic mapping experiments. (DW/J-Pit1dw \u00d7 CAST/EiJ) F2 mice were used in this work. Prop1-/- mice (officially Prop1tm1Sac) were generated from mouse embryonic stem cells engineered to contain a deletion in Prop1 first exon through a portion of exon 2 (Nasonkin et al., 2004). All transgenic lines have been maintained as colonies at the University of Michigan through heterozygous matings. The morning after conception is designated e0.5, and the day of birth is designated as P1. All mice were housed in a 12-h light, 12-h dark cycle in ventilated cages with unlimited access to tap water and Purina 5058 chow. All procedures using mice were approved by the University of Michigan Committee on Use and Care of Animals, and all experiments were conducted in accordance with the principles and procedures outlined in the National Institutes of Health Guidelines of the Care and Use of Experimental Animals. The genotypes of Prop1df/df and Pou1f1dw/dw mice were determined as described (Ward et al., 2005; Gage et al., 1996). For all experiments, mutants were compared to wild type littermates, to control for the different genetic backgrounds.\n\n### Generation of Prop1-Tag transgenic mice\n\nA 25 kb transgene construct containing the mouse Prop1 gene was used to generate Prop1-Tag transgenic mice (Ward et al., 2007). DNA encoding a 24 amino acid recognition motif for the E. coli biotinylation enzyme BirA was inserted at the ATG site in exon1, placing the Tag at the amino terminus of the PROP1 protein. The Prop1-Tag transgene was microinjected into the pronuclei of eggs from a C57BL/6J crossed with B6D2F1 mice, and the fertilized eggs were transferred into pseudopregnant foster mothers. Transgene positive progeny were detected by genotyping using PCR amplification of genomic DNA with primers that flank the junction of the Tag and Prop1 coding sequence: 5'-GCTAGCCCCATGGCCTCTTCCCTGAGACA-3' and 5'- GCTAGCCATGGAAGAGCCTCCTGCGTT-3', under the following conditions: 92\u00b0C for 2 min, followed by 30 cycles of 92\u00b0C for 10 s, 57\u00b0C for 30 s and 72\u00b0C for 30 s, and a final 10 min extension at 72\u00b0C. Tg(Prop1-Tag)SAC were crossed with mice that ubiquitously express the BirA enzyme (FVB;129P2-Gt(ROSA)26Sortm1.1(birA)Mejr/J) (Driegen et al., 2005) to obtain Prop1Tag;\u00a0Rosa26BirABirAmice. For the rescue experiments, Prop1Tag;\u00a0Rosa26BirABirA\u00a0mice were crossed with mice carrying the Prop1 null allele, and Prop1-Tag;\u00a0Rosa26BirABirA; Prop1+/-\u00a0progeny were crossed again with Prop1+/-\u00a0to produce Prop1-Tag;\u00a0Rosa26BirABirA; Prop1-/-mice (Nasonkin et al., 2004).\n\n### Colony-forming assays\n\nCell culture assays for stem cell colony forming activity were carried out as previously described (Gaston-Massuet et al., 2011). Anterior pituitaries from Prop1+/+, Prop1df/df, Pit1+/+, and Pou1f1dw/dw mice were collected and dissociated into a single-cell suspension following incubation in enzyme mix (0.5% w/v Collagenase type 2 (Lorne Laboratories), 0.1X Trypsin (Invitrogen), 50 \u00b5g/ml DNase I (Worthington) and 2.5 \u00b5g/ml Fungizone (Invitrogen) in Hank\u2019s Balanced Salt Solution (HBSS) (Gibco) for 4\u00a0hr at 37\u00b0C. Following washes in HBSS, cells were suspended in stem cell medium UltraCulture (LONZA) containing 5% Fetal Bovine Serum (Gibco), 20 ng/ml bFGF (R&D Systems) and 50 ng/ml cholera toxin (Sigma), counted and plated in six-well plates at a density of 8000 cells per well. After 10 days in culture, the cells were fixed with 4% formaldehyde for 20 min at room temperature, stained with Meyer\u2019s Hematoxylin and Eosin (SIGMA) or Cresyl Violet (SIGMA) for 2\u00a0min, and the colonies were counted manually. To calculate the number of cells within an entire gland that can form colonies, the colony count was multiplied by the total number of cells recovered from the pituitary gland and the result divided by the number of cells plated (8000).\n\n### RNA extraction and RT-qPCR\n\nFor RNA-Seq experiments and qRT-PCR, total RNA was isolated from cultured cells and pituitaries, using the RNAeasy Kit (Qiagen) following manufacturer\u2019s protocol. Total RNA was utilized to generate cDNA with Oligo dT Primers (Invitrogen) and Superscript II Reverse Transcriptase (Invitrogen) according to the manufacturer\u2019s instructions. The cDNA was used as a template in standard PCR reactions using TaqMan Universal PCR Master Mix (Applied Biosystems) according to the manufacturer\u2019s instructions. Reactions were run using an Applied Biosystems 7500 Real-Time PCR System. Expression of the housekeeping gene GAPDH served as an internal control for each RNA sample. The fold change values and standard deviations were calculated as described (Vesper et al., 2006; Livak and Schmittgen, 2001). For qPCR experiments from developmental pituitaries of dwarf and control mice, total RNA was extracted and the total was used to synthesize cDNA.\n\n### RNA-Seq\n\nAfter isolation of RNA, the Encore Complete RNA-Seq Library Systems (NuGen) protocol was followed using 500 ng of RNA per sample as starting material. Half of the ligated reaction volume was used for PCR (14 cycles) and the other half was kept at \u221280\u00b0C as a backup. Libraries were checked for quality and quantified using the Bioanalyzer 2200 (Agilent, Santa Clara, CA), before being sequenced in barcoded pools on the Illumina Hiseq 2000 instrument (50 single sequencing, 3 lanes; Sequencing Core, UMICH).\n\n### RNA-Seq analysis\n\nReads were aligned through Tophat version 2.0.8 using Bowtie version 2.1.0. Mouse Genome mm10 was used as the reference genome and the UCSC mm10.gtf was used for annotation and junction definitions. All default settings were used with Tophat except that a coverage-based search for junctions was disabled and all reads were mapped at all steps using the read-realign-edit-dist option. Differential expression was assessed using cufflinks version 2.1.1. and the cuffdiff command. Defaults were used for cuffdiff as well except for the multi-read-correct option which helps accurately weight reads that map to multiple locations. Data are output as FPKM values as defined by cufflinks. We extracted a set of significantly differentially expressed genes between the tested conditions (adj. p value \u2264 0.05, |log2FC\u0399 \u2265 1). For Pathways analysis, we imported Entrez Gene IDs into Ingenuity Pathways Analysis (IPA) (Ingenuity Systems; http://www.ingenuity.com). IPA calculates the score p-value that reflects the statistical significance of association between the genes and the pathways or networks by the Fisher\u2019s exact test. RNA-Seq data are available in the GEO database under accession number GSE77357.\n\n### Immunostaining and in situ hybridization\n\nEmbryos and heads from P7 and P14 neonates were fixed for 2\u20134\u2009hr in 4% formaldehyde in PBS (pH 7.2) at room temperature, dehydrated in a graded series of ethanol, and embedded in paraffin. Six-micrometer-thick sections were prepared for immunohistochemistry. CFCs were grown 10 days in culture on coverslips and fixed in 4% paraformaldehyde for 20 min at room temperature. Paraffin sections were incubated in sodium citrate buffer 10\u2009mM, pH=8.5 at 80\u00b0C for 10\u2009min to retrieve the antigens. Incubation with primary antibodies was performed overnight at 4\u00b0C. Sections and cells were washed twice in PBS for 20\u2009min at room temperature and incubated 1\u2009hr at room temperature with biotinylated secondary antibodies. A list of antibodies used in this work is provided in supplemental information. After washing twice in PBS, sections and cells were incubated with the Tyramide Signal Amplification (TSA) fluorescein isothiocyanate (FITC) kit (according to the manufacturer\u2019s protocol, Perkin-Elmer, Boston, MA). All sections and cells were incubated with DAPI to stain cell nuclei. Finally, they were mounted in ProlonGold (Life Technologies). All images were taken using Olympus FluoView 500 Laser Scanning Confocal Microscope. Embryonic pituitary paraffin sections were also prepared for in situ hybridization. An 809\u00a0bp fragment of the mouse Zeb2 cDNA was cloned into pGEM-T easy (Promega) using the following primers: Fw 5\u2019 CATGCGAACTGCCATCTG3\u2019 and Rv 5\u2019TATGCCTCTCGAGCTGGG 3\u2019. The final vector was linearized and labeled with T7 polymerase. The probe was diluted 1:100 and hybridized at 62\u00b0C. The riboprobe was generated and labeled with digoxigenin and precipitated with nitroblue tetrazolium chloride/5-bromo-4-chloro-3-indolyl phosphate (Roche Molecular Biochemicals, Indianapolis, IN) following previously described methods (Suh et al., 2002; Cushman et al., 2001).\n\n### RNA interference methodology\n\nAnterior pituitaries from Prop1+/df and Prop1df/df were collected at postnatal day 12 and dissociated into a single-cell suspension as described above. Following washes in HBSS, cells were suspended in stem cell medium UltraCulture (LONZA) containing 5% Fetal Bovine Serum (Gibco), 20 ng/ml bFGF (R&D Systems) and 50 ng/ml cholera toxin (Sigma), counted and plated in 12-well plates (353043, Falcon) at a density of 5000 cells per well. After 4 days in culture, colonies were treated with either 20 nM Zeb2 Stealth siRNA (MSS216410, ThermoFisher Scientific), 20\u00a0nM negative control siRNA (AM4611, ThermoFisher Scientific) or left untreated. Lipofectamine RNAiMax (13778030, ThermoFisher Scientific) transfection reagent and the siRNAs were diluted independently in Opti-MEM tissue culture media (31985062, ThermoFisher Scientific). The diluted reagents were then combined and incubated at room temperature for 5 min. After the incubation, the siRNA and lipofectamine were added to the pituitary colonies. The colonies were incubated with or without the siRNA overnight after which the media was removed and replaced with fresh stem cell media. After 4 more days in culture the siRNA treatment was repeated. The colonies were grown for an additional 3 days then processed for cresyl violet staining or qRT-PCR. The ThermoFisher Taqman assays utilized were Zeb2 (Mm00497193_m1), Cdh1 (Mm0124357_m1) and Gli2 (Mm01293117_m1).\n\n### GHFT1 stable cell lines\n\nGHFT1 cells (Dr Pamela Mellon, University of San Diego, La Jolla, CA) were maintained at 37\u00b0C/5% CO2 in Dulbecco's Modified Eagle Medium (Invitrogen, Carlsbad, CA) supplemented with 10% heat inactivated fetal bovine serum (Hyclone, Logan, UT) and 100 units/ml penicillin-streptomycin (Invitrogen). All cultured cell lines employed in this study were authenticated by RNA-Seq analysis performed in the lab (Figure 8\u2014source data 1). This authentication was done based on the positive expression of Pou1f1 and absence of expression of Prolactin, Growth hormome and Thyroid-Stimulating Hormone. Prop1 cDNA was cloned into pEF1\u03b1-FLBIO-puro (Kim et al., 2009) to be N-terminally tagged by standard cloning using the BamHI restriction site. The BirA expression vector used was pEF1\u03b1-BirAV5-neo (Kim et al., 2009). Both plasmids were a gift from Alan B. Cantor (Boston Children\u2019s Hospital, Boston, MA). Cells were plated onto 24-well plastic plates (Fisher Scientific, Fair Lawn, NJ) at a density of 3.5 \u00d7 104 cells/well. Prop1 and BirA expressing vectors were transfected into cultured cells using the FuGENE 6 (Promega) at a 3:2 ratio according to the manufacturer\u2019s protocol. To make stable cell lines, transfected cells were incubated with 1.4 mg/ml G-418 solution (Roche) and 5 \u00b5g/ml Puromycin (Sigma) for selection of BirA and Prop1-Tag, respectively.\n\n### Western blot analysis\n\nTotal protein from cultured cells was extracted in a T-PERbuffer (Thermo) and Halt protease and Phosphatase Inhibitor Cocktail (Thermo). Total protein was quantified using a BCA protein assay kit (Thermo). Proteins and ladder (BIO-RAD) were run on 4\u201320% Mini-ProteanTGX Gels from BIO-RAD. Membranes were washed with buffered Tris. Anti-V5 conjugated to horseradish peroxidase antibody (diluted 1:4000, Invitrogen) was used to detect BirA. Anti-Histone H3 antibody (Abcam) was used at a 1:4000 dilution and an anti-rabbit conjugated to horseradish peroxidase was used as a secondary antibody (diluted 1:20000, Thermo). All membranes were blocked and antibodies diluted in a 1% BSA/TBS-Tween solution. Membranes were developed with the SuperSignal West Pico chemiluminescent substrate (Thermo) and stripped with Restore western blot stripping buffer (Thermo).\n\n### Chromatin immunoprecipitation\n\nChIP was performed as described in Kim et al. (2009) . Briefly, for ChIP-Seq, approximately 107 cells were cross-linked with 1% formaldehyde at room temperature for 10\u2009min and neutralized with 0.15\u00a0M glycine. After sonication, 10 \u00b5g of soluble chromatin was incubated with streptavidin magnetic beads (Dynabeads MyOne Streptavidin T1, Invitrogen) at 4\u00b0C overnight. Subsequently, beads were washed and DNA was eluted with elution buffer 1% SDS. After reverse crosslinking, RnaseA and proteinase K digestion, chromatin was purified using a Qiagen PCR purification kit. For ChIP-Seq, the extracted DNA was ligated to specific adaptors followed by deep sequencing with the Illumina HiSeq 2000 system according to the manufacturer\u2019s instructions. The confirmatory ChIPs for specific peaks were performed with immunoprecipitated and reverse cross-linked chromatin that was prepared as described above. Quantitative real time PCR was performed with primers specific for ChIP-Seq peak sequences using SYBR Green (Applied Biosystems) assays. Values were normalized to input. The primers used for real-time PCR are listed on Supplemental Information.\n\n### ChIP-Seq\n\nMultiplex libraries were prepared using Rubicon ThruPlex kit according to their protocol (Cat R40012). Library amplification reaction was performed in 14 cycles. The concentration and quality of purified, amplified DNA were estimated using a high sensitivity DNA assay Bioanalyzer 2200 (Agilent). After quality confirmation, the DNA libraries were sequenced on an Illumina High Seq 2000 (Sequencing Core, UMICH).\n\n### Chip-Seq analysis and motif enrichment\n\nDNA sequence reads were mapped to the reference genome mm10 assembly by Bowtiev0.12.7. MACS2 was used to identify peaks. FastQC and cross-correlation test were performed to evaluate the data quality. Peaks were annotated for their locations regarding to nearby genes by HOMERv4.6. To discover DNA binding motifs enriched among PROP1 peaks, HOMER's findMotifsGenome.pl was used. FIMO was used to identify locations of motifs inside peaks. ChIP-Seq data are available in the GEO database under accession number GSE77302.\n",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "027cd3b4-1c41-4a41-8bf0-f278da93c58d",
+      "submission_id": "525d857a-ac9e-40b9-9c31-ab88ee711ec5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Janet Rossant, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14470.023](https://doi.org/10.7554/eLife.14470.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"PROP1 triggers epithelial-mesenchymal transition-like process in pituitary stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Janet Rossant as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: JP Martinez-Barbera.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn an interesting study, P\u00e9rez Millan et al. provide molecular evidence supporting the idea that the PROP1 transcription factor initiates an EMT-like process during pituitary development. This idea was implicit in descriptions of PROP1 mutant mice initiated almost 20 years ago and pursued by Dr Camper, but the present work provides RNA-seq and ChIP-seq data for PROP1 in the support of this hypothesis. Changes in gene expression in PROP1 mutant pituitaries, such as for the genes encoding E-cadherin, claudin 23, MP2/3, ZEB2, Notch2 and GLI2, are correlated with presence of PROP1 ChIP-seq peaks in their vicinity. The authors also show that PROP1 expression overlaps with the progenitor marker Sox2, presumably as progenitors exit the stem state towards differentiation. They also show that the transitional marker cyclin E is much less expressed in PROP1 mutant pituitaries despite the fact that the cell cycle inhibitors p57 and p27 are expressed normally in developing pituitaries. Finally, they show that the colony-forming ability of PROP1 mutant pituitaries is qualitatively, but not quantitatively, altered to yield more of a differentiated rather than progenitor appearance.\n\nWhile the data presented are interesting, provocative and highly suggestive of the importance of a PROP1-dependent EMT-like process, the reviewers were concerned that the evidence presented is largely correlative. As detailed in the individual critiques below, the major common concern was that the data on changes in E-cadherin expression were not very convincing and that some form of more functional assessment of the proposed target genes in PROP1 mutants would help support the hypothesis proposed in the title of the paper. While there are a number of issues raised by the referees, the three key areas that must be addressed before we can consider a revised manuscript are listed below. If you feel you can address these in the required two-month time frame, we will be happy to receive a revised manuscript. If you have concerns about this, please let us know and we can discuss further. It may help us if you responded to this decision letter with a list of the experiments you feel address the major concerns of the reviewers and a reasonable timetable for their completion.\n\nEssential revisions:\n\n1) The role of Prop1 in EMT is not characterized very well. Although potential target genes involved in EMT are identified by ChIP-seq, the E-Cadherin immunostaining is not convincing. Functional characterization of the importance of some of the target genes would help support the conclusions. At least one of the proposed PROP1-dependent regulators of EMT should be assessed by mutagenesis in order to offer a convincing piece of work. Perhaps the authors could try a functional approach in the adherent culture system.\n\n2) A better characterization of the Sox2 and Prop1-expressing cells postnatally is required.\n\n3) It is unexpected to see formation of the same number of colonies in vitro, when in vivo the proportion of Sox2 positive cells is increased in Prop1 mutants. The authors comment that mutant colonies do not have the same morphology as wild-type ones so maybe prevention of the EMT like-transition is perturbing colony formation? Clonogenic differences need to be better presented and discrepancies with Sox2-immunostaining need to be clarified.\n",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85e736e7-c397-45db-8e61-f6417b5f9bd3",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C1",
+      "claim": "Mutations in PROP1 are the most common cause of hypopituitarism in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PROP1 are the most common cause of hypopituitarism in humans; therefore, unraveling its mechanism of action is highly relevant from a therapeutic perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established fact in the abstract without experimental data in this manuscript, suggesting it is based on prior knowledge from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a2507ebb-a31b-4020-b36e-935e517f9ce4",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C2",
+      "claim": "PROP1 is essential for stimulating stem cells to undergo an epithelial to mesenchymal transition-like process necessary for cell migration and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that PROP1 is essential for stimulating stem cells to undergo an epithelial to mesenchymal transition-like process necessary for cell migration and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genome-wide analysis of PROP1 DNA binding and effects on gene expression in mutant mice, mouse isolated stem cells and engineered mouse cell lines as described in the abstract and detailed throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "468025e8-ca46-478b-8c0c-536c83eb34df",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C3",
+      "claim": "PROP1 binds to genes expressed in epithelial cells like Claudin 23.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic profiling reveals that PROP1 binds to genes expressed in epithelial cells like Claudin 23, and to EMT inducer genes like Zeb2, Notch2 and Gli2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-Seq data showing PROP1 binding to the Claudin 23 gene as shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "f7e76ccc-6cec-42d6-8522-8dceea126657",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C4",
+      "claim": "PROP1 binds to EMT inducer genes like Zeb2, Notch2 and Gli2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic profiling reveals that PROP1 binds to genes expressed in epithelial cells like Claudin 23, and to EMT inducer genes like Zeb2, Notch2 and Gli2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-Seq data and validation experiments shown in Figure 9C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "fa644cdd-13fa-48bd-bfb5-46555b7cb6a1",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C5",
+      "claim": "Zeb2 activation appears to be a key step in the EMT process in pituitary stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb2 activation appears to be a key step in the EMT process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by siRNA knockdown experiments showing that reduction in Zeb2 expression mimics Prop1 deficiency effects on colony morphology and gene expression (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "78583cab-bbec-41b3-85af-9ba4301ea58c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C6",
+      "claim": "PROP1 is detectable at embryonic day 11.5 (e11.5) in the mouse and rat.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 is the earliest known exclusive marker of pituitary identity, and it is detectable at embryonic day 11.5 (e11.5) in the mouse and rat (Sornson et al., 1996; Yoshida et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "bbbb1415-f64c-4a1c-b263-f041a241e5ee",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C7",
+      "claim": "Sox2-expressing cells in the embryonic pituitary give rise to Sox2-expressing cells postnatally and to all the hormone-producing cell types of the anterior pituitary gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic tracing experiments revealed that Sox2-expressing cells in the embryonic pituitary give rise to Sox2-expressing cells postnatally and to all the hormone-producing cell types of the anterior pituitary gland, demonstrating that SOX2-positive cells are the pituitary stem cells (Rizzoti et al., 2013; Andoniadou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior genetic tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "edeab1ac-ec43-427a-9813-7b0f830aef08",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C8",
+      "claim": "All the hormone-producing cells of the anterior and intermediate lobes of the pituitary gland pass through a Prop1 expressing intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently demonstrated that all the hormone-producing cells of the anterior and intermediate lobes of the pituitary gland pass through a Prop1 expressing intermediate (Davis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "de7cbe14-1aac-45d1-83f2-49427f009e8c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C9",
+      "claim": "PROP1-expressing cells are largely co-incident with SOX2 expressing progenitors at e12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1-expressing cells are largely co-incident with SOX2 expressing progenitors at e12.5, although SOX2-positive cells extend over a larger area of Rathke's pouch (Figure 1A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunofluorescence data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "be9b0ccb-b4c6-448e-803a-162b3c4062d3",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C10",
+      "claim": "At e14.5, PROP1 expression is decreased, particularly in the dorsal region of Rathke's pouch.",
+      "claim_type": "EXPLICIT",
+      "source": "Later in development, at e14.5, PROP1 expression is decreased, particularly in the dorsal region of Rathke's pouch, where the highly proliferative SOX2-positive cells still predominate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "01e44839-4983-4092-8e46-40e2888a6b88",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C11",
+      "claim": "At e14.5, Prop1-expressing cells are predominately located in the transitional zone, where cells are migrating ventrally to populate the anterior lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time, Prop1-expressing cells are predominately located in the transitional zone, where cells are migrating ventrally to populate the anterior lobe (Figure 1A, left panel) (Ward et al., 2005; Suh et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 1A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "1635cfa0-812e-4a6e-aec4-2f6a33d0f103",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C12",
+      "claim": "Little or no co-localization of POU1F1 and SOX2 is observed in the cell nuclei, either during development or after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Little or no co-localization of POU1F1 and SOX2 is observed in the cell nuclei, either during development or after birth (Figure 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunofluorescence data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "5872874f-63a1-436a-9ddf-455c953308ce",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C13",
+      "claim": "The consistently mutually exclusive expression of SOX2 and POU1F1 supports the idea that POU1F1 regulates a later stage of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The consistently mutually exclusive expression of SOX2 and POU1F1 supports the idea that POU1F1 regulates a later stage of differentiation, and it suggests that any effect of POU1F1 on pituitary stem cells would be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of mutually exclusive expression patterns shown in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "e807794a-de72-4c47-b62d-7e7b75c29e5b",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C14",
+      "claim": "PROP1, but not POU1F1, is initially expressed in SOX2 expressing stem cells in the embryonic pituitary.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PROP1, but not POU1F1, is initially expressed in SOX2 expressing stem cells in the embryonic pituitary, and the co-localization of PROP1 and SOX2 is transient, ceasing as cells migrate and transition to differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the immunofluorescence data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "93a125ee-c7fe-4e4f-97a3-041fd4964e65",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C15",
+      "claim": "The co-localization of PROP1 and SOX2 is transient, ceasing as cells migrate and transition to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PROP1, but not POU1F1, is initially expressed in SOX2 expressing stem cells in the embryonic pituitary, and the co-localization of PROP1 and SOX2 is transient, ceasing as cells migrate and transition to differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal analysis of PROP1 and SOX2 expression shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "43244d97-9a6c-4b49-ba4d-31c3e355bcb8",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C16",
+      "claim": "No CYCLIN E expression was detected in the developing pituitary glands of Prop1df/df mutants at e13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence was performed on embryonic sections of Prop1df/df and normal controls at e13.5 with a primary antibody for CYCLIN E (green). No CYCLIN E expression was detected in the developing pituitary glands of mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "62e6af7f-553d-4b3a-a3cd-9c7b94f33bc8",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C17",
+      "claim": "At e13.5 there are more cells double positive for p27kip1 and p57kip2 in the Prop1df/df relative to Prop1+/+.",
+      "claim_type": "EXPLICIT",
+      "source": "At e13.5 there are more cells double positive for p27kip1 (green) and p57kip2 (red) in the Prop1dfdf relative to Prop1+/+ (arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c0b21bad-9feb-41be-8975-2da2275d3f58",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C18",
+      "claim": "At e13.5, there is a reduction in CYCLIN D1-positive cells in Prop1df/df pituitaries compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at e13.5, there is a reduction in CYCLIN D1-positive cells in dwarf pituitaries (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "01779c21-2067-4471-b111-ca497c50f650",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C19",
+      "claim": "Prop1 is necessary for promoting proliferation of progenitor cells marked by Cyclin D1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Prop1 is necessary for several aspects of cell cycle regulation during embryogenesis: promoting proliferation of progenitor cells marked by Cyclin D1, transitioning them out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the immunofluorescence data showing reduced Cyclin D1 expression in Prop1 mutants (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "021d531b-9c44-4fd0-b2ce-5fec870f19e4",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C20",
+      "claim": "Prop1 is necessary for transitioning progenitor cells out of the cell cycle to express Cyclin E.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Prop1 is necessary for several aspects of cell cycle regulation during embryogenesis: promoting proliferation of progenitor cells marked by Cyclin D1, transitioning them out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the absence of Cyclin E expression in Prop1 mutants shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "32df480c-38d7-41b9-86b9-308a8a79bc42",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C21",
+      "claim": "Prop1 is necessary for progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Prop1 is necessary for several aspects of cell cycle regulation during embryogenesis: promoting proliferation of progenitor cells marked by Cyclin D1, transitioning them out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the increased number of double positive p27kip1/p57kip2 cells in Prop1 mutants shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "686387f7-a7da-4a8e-a2cc-3fad03d922d6",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C22",
+      "claim": "The rodent pituitary gland undergoes two distinct waves of cell proliferation and differentiation, one occurring during embryogenesis and a second one during the first 3 weeks afterbirth in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The rodent pituitary gland undergoes two distinct waves of cell proliferation and differentiation, one occurring during embryogenesis and a second one during the first 3 weeks afterbirth in the mouse (Gremeaux et al., 2012; Zhu et al., 2007; Carbajo-P\u00e9rez and Watanabe, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "8fe304e5-15d4-46a3-aaf9-646853f70da9",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C23",
+      "claim": "High Prop1 mRNA levels are present at postnatal days 3 and 7 (P3 and P7), similar to the peak levels at e12.5 and coincident with the second wave of cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using qRT-PCR, we discovered high Prop1 mRNA levels at postnatal days 3 and 7 (P3 and P7), that are similar to the peak levels at e12.5 and coincident with the second wave of cell proliferation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d5e4eb7f-fd4b-41d4-a8e5-a6feecdd5562",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C24",
+      "claim": "Prop1 mutants have higher Sox2 mRNA levels compared to their wild-type littermates at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Prop1 mutants have higher Sox2 mRNA levels compared to their wild-type littermates, but Sox2 mRNA levels were not significantly altered in Pou1f1 mutant pituitaries (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2293e3e9-80e1-4b6b-bec7-0c594734be70",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C25",
+      "claim": "Sox2 mRNA levels were not significantly altered in Pou1f1 mutant pituitaries at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Prop1 mutants have higher Sox2 mRNA levels compared to their wild-type littermates, but Sox2 mRNA levels were not significantly altered in Pou1f1 mutant pituitaries (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "7cbfe13a-1200-4a41-b9af-b7dda8ebd065",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C26",
+      "claim": "The mRNA levels of Sox9 and Gfra2 were not affected in Prop1 mutants at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the elevation in Sox2 expression in Prop1 mutants, the mRNA levels of Sox9 and Gfra2 were not affected, implying heterogeneity within the stem cell population or at least independent regulation of accepted stem cell markers by Prop1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "4fd6afa9-fd5f-4a94-8a7b-5a44990dfb2c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C27",
+      "claim": "There is an increase in SOX2-positive cells in the marginal zone of Prop1 mutants in comparison to both Pou1f1 mutants and control mice at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, immunofluorescence performed on pituitary sections revealed an increase in SOX2-positive cells in the marginal zone of Prop1 mutants in comparison to both Pou1f1 mutants and control mice (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data and quantification shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "88a19f27-4547-40c9-8529-66316a7a9e7e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C28",
+      "claim": "CyclinE mRNA levels are decreased in P7 pituitaries from both Prop1df/df and Pou1f1dw/dw mutants relative to their wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using real-time PCR, we observed that mRNA levels of CyclinE were decreased in P7 pituitaries from both mutants relative to their wild-type littermates (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a3c22310-0900-4f5b-8114-02637d13803a",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C29",
+      "claim": "The expansion of SOX2-positive cells in Prop1df/df pituitaries correlates with an expansion of Prop1-expressing cells in the marginal zone at P3.",
+      "claim_type": "EXPLICIT",
+      "source": "The expansion of SOX2-positive cells in Prop1df/df pituitaries correlates with an expansion of Prop1-expressing cells in the marginal zone (Figure 3A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunofluorescence data shown in Figure 3A and quantification in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "8f8a4d64-ea1d-4a28-9839-8a88378d59dc",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C30",
+      "claim": "The expanded population of SOX2-expressing cells in Prop1df/df dwarf pituitaries exhibit less co-localization with SOX9 relative to controls at P3.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded population of SOX2-expressing cells in Prop1df/df dwarf pituitaries exhibit less co-localization with SOX9 relative to controls (Figure 3B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunofluorescence data shown in Figure 3B and quantification in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "548f4098-7d2e-4fea-b3c1-bbb9bd690cdf",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C31",
+      "claim": "Both Prop1df/df and Pou1f1dw/dw mutants can generate progenitor CFCs in culture that express stem cell markers, such as SOX2, SOX9, GFRA2 and CYCLIN D2.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that both mutants, Prop1df/df and Pou1f1dw/dw, can generate progenitor CFCs in culture that express stem cell markers, such as SOX2, SOX9, GFRA2 and CYCLIN D2 by immunostaining (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c080ba8b-7f9f-492a-ae06-53fd9cff904c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C32",
+      "claim": "The number of CFC per pituitary at postnatal days 7, 13 and 38 is reduced in Prop1 mutant relative to wild-type pituitaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of CFC per pituitary at postnatal days 7, 13 and 38 is reduced in Prop1 mutant relative to wild-type pituitaries (Figure 4A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by colony-forming assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "6a1b71b7-3962-435b-9438-fff8bef99b5f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C33",
+      "claim": "100% of Prop1 mutant colonies are the flat cell type, whereas about half of wild-type colonies are compact and piled up.",
+      "claim_type": "EXPLICIT",
+      "source": "About half of the colonies are comprised of cells that are compact and piled up, which is typical for undifferentiated progenitors (Gaston-Massuet et al., 2011). The rest of the wild-type colonies are comprised of large, flat cells, but 100% of Prop1 mutant colonies are the flat cell type (Figure 4B and C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by colony morphology analysis shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "ee69ef61-4c2e-4bda-9860-51bbc7ca20aa",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C34",
+      "claim": "The pituitaries from Pou1f1dw/dw mice produced similar number of colonies per pituitary gland at all ages analyzed relative to wild types.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Prop1df/df, the pituitaries from Pou1f1dw/dw mice produced similar number of colonies per pituitary gland at all ages analyzed relative to wild types, and their morphology was representative of wild type (Figure 4A\u2013C right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by colony-forming assay data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a439a9f3-c5e4-4bb5-8a22-8d36f1574a3e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C35",
+      "claim": "A total of 2035 genes were differentially expressed (p value \u2264 0.05, |log2FC\u0399 \u2265 1) in colonies from Prop1 mutants compared with their wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2035 genes were differentially expressed (p value \u2264 0.05, |log2FC\u0399 \u2265 1) in colonies from Prop1 mutants compared with their wild-type littermates, while only about 1/3 that number were differentially expressed in Pou1f1 mutants compared to their wild-type littermates (752 genes; p value \u2264 0.05, |log2FC\u0399 \u2265 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq analysis of stem cell colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "843b3206-ab78-43e2-bb5c-798c10e200f8",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C36",
+      "claim": "752 genes were differentially expressed (p value \u2264 0.05, |log2FC\u0399 \u2265 1) in Pou1f1 mutants compared to their wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2035 genes were differentially expressed (p value \u2264 0.05, |log2FC\u0399 \u2265 1) in colonies from Prop1 mutants compared with their wild-type littermates, while only about 1/3 that number were differentially expressed in Pou1f1 mutants compared to their wild-type littermates (752 genes; p value \u2264 0.05, |log2FC\u0399 \u2265 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq analysis of stem cell colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "37d43dae-2138-43fe-abf8-b86239faf618",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C37",
+      "claim": "The two mutants share a total of 386 genes that are differentially expressed relative to their wild-type littermates (p value \u2264 0.05, |log2FC\u0399 \u2265 1).",
+      "claim_type": "EXPLICIT",
+      "source": "The two mutants share a total of 386 genes that are differentially expressed relative to their wild-type littermates (p value \u2264 0.05, |log2FC\u0399 \u2265 1), revealing a set of common effects on colony-forming properties of postnatal pituitary progenitors (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-Seq analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a25f4e58-da0a-4e2e-8e33-f93312f3ab99",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C38",
+      "claim": "The epithelial markers E-cadherin (Cdh1) and claudin-23 were uniquely up-regulated in Prop1 mutant colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The epithelial markers E-cadherin (Cdh1) and claudin-23 were uniquely up-regulated in Prop1 mutant colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c39c85fd-ae3b-4f24-bd83-9ffdb0ac6896",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C39",
+      "claim": "Markers of EMT including the regulatory gene Zeb2 are expressed at lower levels only in Prop1df/df colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, markers of EMT including the regulatory gene Zeb2, which is a transcriptional repressor of the Cdh1 gene, are expressed at lower levels only in Prop1df/df colonies (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "e6ad2cc8-598b-441e-8755-86343b943d72",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C40",
+      "claim": "miR-200a is up-regulated in colonies from Prop1 mutant pituitaries.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected up-regulation of miR-200a in colonies from Prop1 mutant pituitaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "45d7da14-cdd9-45e3-acc7-5a2ba94f09ea",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C41",
+      "claim": "Cdh1 and Claudin 23 were elevated in the Prop1 mutant colonies relative to colonies from wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "A qRT-PCR analysis showed that Cdh1 and Claudin 23 were elevated, and Mmp2, Mmp3, Mmp16, Zeb2 and Gli2 were decreased in the Prop1 mutant colonies relative to colonies from wild-type littermates (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR validation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "fd6cdb94-fc05-4996-8b24-674eb6ff613c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C42",
+      "claim": "Mmp2, Mmp3, Mmp16, Zeb2 and Gli2 were decreased in the Prop1 mutant colonies relative to colonies from wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "A qRT-PCR analysis showed that Cdh1 and Claudin 23 were elevated, and Mmp2, Mmp3, Mmp16, Zeb2 and Gli2 were decreased in the Prop1 mutant colonies relative to colonies from wild-type littermates (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR validation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "1230275d-2a66-47ae-a4ef-e3e65cd1a0ca",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C43",
+      "claim": "Colonies from Prop1df/df pituitaries showed increased CDH1-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonies from Prop1df/df pituitaries showed increased in CDH1-positive cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "87d4dbfe-ca1a-4a9a-8614-67c3fe10362b",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C44",
+      "claim": "CyclinE was decreased in Prop1 mutant colonies, at mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "CyclinE was decreased in Prop1 mutant colonies, at mRNA and protein levels, consistent with our findings in pituitary tissue (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR and immunostaining data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d29ea75d-5204-4189-a6e4-a54fec56bcb2",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C45",
+      "claim": "Lowered Zeb2 expression was sufficient to reduce expression of Gli2 and increase expression of Cdh1.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowered Zeb2 expression was sufficient to reduce expression of Gli2 and increase expression of Cdh1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by siRNA knockdown experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "884bda7e-b1d0-4fda-ac0b-197a29148d0e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C46",
+      "claim": "Treatment with Zeb2 siRNA appeared to block formation of tightly packed colonies typical of normal pituitary stem cell cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with Zeb2 siRNA appeared to block formation of tightly packed colonies typical of normal pituitary stem cell cultures (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by siRNA knockdown experiments and colony morphology analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "66733f5f-0392-40f3-9912-5cda2ffd7d83",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C47",
+      "claim": "At e14.5, Zeb2 is normally expressed in cells in the ventral part of the Rathke's Pouch, and this zone of enriched expression is almost absent in Prop1 mutant pituitaries.",
+      "claim_type": "EXPLICIT",
+      "source": "At e14.5, Zeb2 is normally expressed in cells in the ventral part of the Rathke's Pouch (Figure 7A, between the two lines), and this zone of enriched expression is almost absent in Prop1 mutant pituitaries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a06c47dc-c941-4c4f-b038-6d7905432385",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C48",
+      "claim": "CDH1 staining is stronger in the ventral part of the Prop1 mutant pouch at e14.5, particularly along the marginal zone.",
+      "claim_type": "EXPLICIT",
+      "source": "CDH1 is normally expressed throughout the Rathke's pouch, but CDH1 staining is stronger in the ventral part of the Prop1 mutant pouch, particularly along the marginal zone (Figure 7A, box and higher magnification image), although there was no obvious difference in expression of the mesenchymal marker, N-CADHERIN or CDH2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "f309190a-31ea-406d-880c-2c6d0665a727",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C49",
+      "claim": "Prop1df/df mutants have abnormal expression of CDH1 in cells distant from the marginal zone at P13.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we explored CDH1 expression at P13, the time point at which the CFCs were collected for subsequent RNA-Seq analysis. We found that Prop1df/df mutants have abnormal expression of CDH1 in cells distant from the marginal zone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "fd0503a8-509f-4d2e-94d9-f6b32de183f4",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C50",
+      "claim": "PROP1 binds DNA near the Hesx1 and Pou1f1 genes and suppresses or activates their expression, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 binds DNA near the Hesx1 and Pou1f1 genes and suppresses or activates their expression, respectively (Sornson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "be946192-740c-4a8c-8498-3e07b3ebff35",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C51",
+      "claim": "The known PROP1 binding site in Pou1f1 was highly enriched relative to input and to the controls in streptavidin-based ChIP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The known PROP1 binding site in Pou1f1 was highly enriched relative to input and to the controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative ChIP-PCR data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2b2c0a85-eba0-4855-b791-61172f3909a9",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C52",
+      "claim": "The enrichment profile near the Pou1f1 gene identified the known PROP1-binding sites at the early enhancer and the promoter, as well as another, more prominent site at -6 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment profile near the Pou1f1 gene identified the known PROP1-binding sites at the early enhancer and the promoter, as well as another, more prominent site at -6 kb, demonstrating the efficacy of our approach for identification of novel PROP1-binding sites (Figure 8D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-Seq data shown in Figure 8D and validation in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "06edb17b-3999-49a8-a891-6abff2162206",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C53",
+      "claim": "A consensus sequence TAATNNNATTA was identified in 60% of PROP1 ChIP-Seq peaks (p = 1e-1599).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified a consensus sequence: TAATNNNATTA in 60% of peaks (p = 1e-1599) (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HOMER motif analysis of ChIP-Seq peaks shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a547bbed-9474-4ec1-bb0d-cdc2a57f04d3",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C54",
+      "claim": "The consensus sequence TAATNNNATTA is consistent with the paired homeodomain core consensus expected for PROP1.",
+      "claim_type": "EXPLICIT",
+      "source": "This consensus sequence is the first to be experimentally determined based on genome-wide data and is consistent with the paired homeodomain core consensus expected for PROP1 (Sornson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of the experimentally determined motif with known homeodomain binding motifs and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "347b2510-37c4-4380-835c-69d229dde79c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C55",
+      "claim": "Additional enriched transcription factor binding motifs were identified in approximately 30\u201338% of PROP1 ChIP-Seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, additional enriched transcription factor binding motifs were also identified in approximately 30\u201338% of peaks (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HOMER motif analysis shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c9535926-06dc-4d3c-9c03-549212afe353",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C56",
+      "claim": "Most of the genes identified by ChIP-seq were involved in regulation of EMT pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes were involved in regulation of EMT pathway, consistent with what we observed for gene expression in CFCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pathway analysis of ChIP-Seq data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "84f226f3-7224-46b0-acae-207dbba65060",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C57",
+      "claim": "PROP1 binds to the Gli2, Notch2, Zeb2 and Claudin 23 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the PROP1 Chip-Seq data for selected genes in these pathways: Gli2, Notch2, Zeb2 and Claudin 23, using GHFT1 BirA-Prop1Tag cells and their controls, and confirmed that the enrichment was PROP1-specific (Figure 9C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-Seq data shown in Figure 9C and validation by quantitative ChIP-PCR shown in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "e55372ad-4b73-48da-902a-d6a602f96aae",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C58",
+      "claim": "PROP1 has an indirect role in regulating Sox2 expression and stem cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that PROP1 has an indirect role in regulating Sox2 expression and stem cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Sox2 expression is altered in Prop1 mutants but PROP1 did not bind the SOX2 promoter in ChIP experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "af4c5564-9ad8-4f95-a4f9-0f906207fad5",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C59",
+      "claim": "PROP1 deficiency causes similar hormone deficiencies to those caused by POU1F1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 deficiency causes similar hormone deficiencies to those caused by POU1F1 mutations, but in addition, it is uniquely associated with progressive hormone loss, highly dysmorphic Rathke's pouch, and poor vascularization (Ward et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "07ac1d87-cff2-4a59-8ffd-05b6f6302ed6",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C60",
+      "claim": "PROP1 deficiency is uniquely associated with progressive hormone loss, highly dysmorphic Rathke's pouch, and poor vascularization.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 deficiency causes similar hormone deficiencies to those caused by POU1F1 mutations, but in addition, it is uniquely associated with progressive hormone loss, highly dysmorphic Rathke's pouch, and poor vascularization (Ward et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "de09d80e-d8ed-4235-b300-db41715a57ba",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C61",
+      "claim": "PROP1 is a regulator of pituitary stem cell (SOX2+ cell) population.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we define two new roles of Prop1: first, PROP1 is a regulator of pituitary stem cell (SOX2+ cell) population and second, PROP1 triggers an EMT-like process in pituitary stem cells that is crucial for normal pituitary morphology and cell specification of the PIT1 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple lines of evidence including altered Sox2 expression, colony-forming assays, and immunofluorescence data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "01bcc699-1a03-441f-9c59-8e5dddab6a9c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C62",
+      "claim": "PROP1 triggers an EMT-like process in pituitary stem cells that is crucial for normal pituitary morphology and cell specification of the PIT1 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we define two new roles of Prop1: first, PROP1 is a regulator of pituitary stem cell (SOX2+ cell) population and second, PROP1 triggers an EMT-like process in pituitary stem cells that is crucial for normal pituitary morphology and cell specification of the PIT1 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data showing altered expression of EMT markers, ChIP-Seq data showing PROP1 binding to EMT genes, and functional validation with Zeb2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "287648ae-9f7f-4bdb-b852-7ea2494fff92",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C63",
+      "claim": "Prop1 mediates progenitor cell proliferation by driving cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Prop1 mediates progenitor cell proliferation by driving cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing altered expression of cell cycle markers in Prop1 mutants (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "1fd5e867-e4c4-4d24-b68a-6d1e751355ef",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C64",
+      "claim": "In the absence of functional Prop1, embryonic pituitary progenitors fail to maintain expression of the proliferative markers Cyclin D1 and Cyclin D2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of functional Prop1, embryonic pituitary progenitors fail to maintain expression of the proliferative markers Cyclin D1 and Cyclin D2 (Ward et al., 2005; Raetzman et al., 2004), and they fail to initiate expression of the transitional marker Cyclin E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in this manuscript (Figure 1) and citations to prior published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "035d372e-ddd1-420b-a0b4-4d46f5d01b5f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C65",
+      "claim": "Prop1-deficient progenitors fail to initiate expression of the transitional marker Cyclin E.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of functional Prop1, embryonic pituitary progenitors fail to maintain expression of the proliferative markers Cyclin D1 and Cyclin D2 (Ward et al., 2005; Raetzman et al., 2004), and they fail to initiate expression of the transitional marker Cyclin E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data showing absence of Cyclin E in Prop1 mutants (Figure 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "e8a5f2a0-7474-4048-8291-6bbadb835b1f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C66",
+      "claim": "Prop1 regulation of Cyclin D1, D2 and E genes is indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect Prop1-binding sites near the CyclinD1, D2 or E genes, suggesting that Prop1 regulation of these genes is indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of PROP1 binding sites near these genes in ChIP-Seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d041f3b3-1bc8-49e3-ba9f-19b10acbcfe4",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C67",
+      "claim": "Gli2 is necessary for pituitary progenitor proliferation and normal pituitary morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Gli2 is necessary for pituitary progenitor proliferation and normal pituitary morphology (Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "175f0a2e-4e55-4c68-8e89-c881c3bc3a46",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C68",
+      "claim": "Gli2-deficient mice either lack their anterior pituitary or have pituitary hypoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Gli2-deficient mice either lack their anterior pituitary or have pituitary hypoplasia (Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "6ccf760a-3c19-43fb-8596-64b40daf4d7a",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C69",
+      "claim": "Loss-of-function mutations in the human GLI2 gene cause pituitary anomalies and holoprosencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in the human GLI2 gene cause pituitary anomalies and holoprosencephaly (Roessler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "43b67a0d-0de5-40a0-90d8-602f40346eb7",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C70",
+      "claim": "Gli2 expression is reduced in colonies derived from Prop1 mutant pituitaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Gli2 expression is reduced in colonies derived from Prop1 mutant pituitaries, and PROP1 binds to the 5' region of the Gli2 gene in cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data (Figure 5) and ChIP-Seq data (Figure 9).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d333ebed-6ac9-4ea4-b809-836de0134b4f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C71",
+      "claim": "PROP1 binds to the 5' region of the Gli2 gene in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Gli2 expression is reduced in colonies derived from Prop1 mutant pituitaries, and PROP1 binds to the 5' region of the Gli2 gene in cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-Seq data shown in Figure 9C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "f7f3e8a6-01f9-4b77-90ee-11c54e36194b",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C72",
+      "claim": "Gli2 expression is not strictly or directly Prop1 dependent because Gli2 is expressed in the mesenchyme surrounding the pituitary early on (at e12.5) and is expressed in pituitary tissue after Prop1 expression wanes (e15.5).",
+      "claim_type": "EXPLICIT",
+      "source": "However, Gli2 expression is not strictly or directly Prop1 dependent because Gli2 is expressed in the mesenchyme surrounding the pituitary early on (at e12.5) and is expressed in pituitary tissue after Prop1 expression wanes (e15.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal and spatial expression patterns of Gli2 and Prop1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "62864096-ed1c-4ef2-8fed-856f380dc73f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C73",
+      "claim": "Prop1 is required to maintain stem cell pools and stimulate progenitor cells to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Prop1 is required to maintain stem cell pools and stimulate progenitor cells to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple lines of evidence including colony-forming assays, altered Sox2 expression, and cell cycle marker analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "259ee0a8-e27a-4db6-8789-342cb89dec35",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C74",
+      "claim": "Prop1 mutants have more SOX2-positive cells residing in the marginal zone or residual Rathke's cleft, and fewer SOX2-positive cells in the parenchyma, in comparison to both Pou1f1 mutants and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, Prop1 mutants have more SOX2-positive cells residing in the marginal zone or residual Rathke's cleft, and fewer SOX2-positive cells in the parenchyma, in comparison to both Pou1f1 mutants and control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "ebdc49b2-c89d-4d72-b053-9a35d37b5e61",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C75",
+      "claim": "The SOX2-expressing cells in Prop1 mutants lack SOX9.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the SOX2-expressing cells in Prop1 mutants lack SOX9, have reduced colony forming capabilities, and exhibit abnormal colony morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "1c931b33-0a41-4ac6-ab52-10b8e8030328",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C76",
+      "claim": "SOX2-expressing cells in Prop1 mutants have reduced colony forming capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the SOX2-expressing cells in Prop1 mutants lack SOX9, have reduced colony forming capabilities, and exhibit abnormal colony morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by colony-forming assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "30745c17-c9fc-4cde-b956-3df64024bf1d",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C77",
+      "claim": "SOX2-expressing cells in Prop1 mutants exhibit abnormal colony morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the SOX2-expressing cells in Prop1 mutants lack SOX9, have reduced colony forming capabilities, and exhibit abnormal colony morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by colony morphology analysis shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "646a092c-8691-470c-b374-ff2bb3568299",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C78",
+      "claim": "PROP1 regulation of Sox2 expression may be indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 regulation of Sox2 expression may be indirect, even if they are expressed in the same cell at one point during development and after birth, since PROP1 did not bind the SOX2 promoter in cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of PROP1 binding to the Sox2 promoter in ChIP-Seq experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "b9c2a46c-2a73-44ea-95f5-7707e2042e6e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C79",
+      "claim": "PROP1 drives an EMT-like process in pituitary stem cells by stimulating expression of Zeb2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another role of PROP1 is to drive an EMT-like process in pituitary stem cells by stimulating expression of Zeb2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-Seq showing PROP1 binding to Zeb2, RNA-Seq showing reduced Zeb2 expression in Prop1 mutants, and siRNA knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d9716541-2966-49ea-a616-6798784d8d1e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C80",
+      "claim": "In Prop1 mutants CFCs as well as in pituitary tissues, an increase in Cdh1 was observed, however no changes in Cdh2 expression were found.",
+      "claim_type": "EXPLICIT",
+      "source": "In Prop1 mutants CFCs as well as in pituitary tissues, we observed an increase in Cdh1, however no changes in Cdh2 expression were found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data (Figure 5) and immunohistochemistry data (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "cb46a64d-4c4c-4dd5-bc95-85289ad752de",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C81",
+      "claim": "The process in pituitary stem cells is likely a partial EMT, in which mesenchymal cells do not display all the characteristics of a typical EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the process is likely a partial EMT, in which mesenchymal cells do not display all the characteristics of a typical EMT (Leroy and Mostov, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Cdh1 increases but Cdh2 does not change, and is supported by citation to prior work on partial EMT.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "97caaee1-7ee6-4b04-a5df-3b9a1b04dd07",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C82",
+      "claim": "PROP1 binds to the Zeb2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "PROP1 binds to the Zeb2 promoter, suggesting the regulation may be direct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-Seq data shown in Figure 9C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "86faf59a-2a0c-4376-b856-c404ba794ecf",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C83",
+      "claim": "The level of Zeb2 expression is decreased in both CFCs and developmental pituitaries from Prop1 mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of Zeb2 expression is decreased in both CFCs and developmental pituitaries from Prop1 mutant mice, and reduction in Zeb2 expression is sufficient to mimic some of the properties of Prop1-deficient CFCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data (Figure 5), in situ hybridization (Figure 7A), and siRNA knockdown experiments (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "012cc717-f1e3-4b6d-9593-1056d2041114",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C84",
+      "claim": "Reduction in Zeb2 expression is sufficient to mimic some of the properties of Prop1-deficient CFCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of Zeb2 expression is decreased in both CFCs and developmental pituitaries from Prop1 mutant mice, and reduction in Zeb2 expression is sufficient to mimic some of the properties of Prop1-deficient CFCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by siRNA knockdown experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a76cbe16-cbdb-47d2-aeb7-de5360f66b6d",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C85",
+      "claim": "ZEB family proteins reduce epithelial marker expression and increase mesenchymal marker expression during the induction of EMT in other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "ZEB family proteins reduce epithelial marker expression and increase mesenchymal marker expression during the induction of EMT in other organs (Peinado et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "5ba7ad7f-8db4-4d52-b897-dd4bd0cd4128",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C86",
+      "claim": "Zeb2 is repressed through microRNA 200 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Zeb2 is repressed through microRNA 200 family members (Brabletz and Brabletz, 2010), and we found an increase in miR-200a transcripts in colonies from Prop1 mutant pituitaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work and RNA-Seq data showing increased miR-200a in Prop1 mutants.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "45dd88af-ee8d-4599-82d0-5d6fa5aa4919",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C87",
+      "claim": "Mutations on the ZEB2 gene cause Mowat Wilson Syndrome, a disorder associated with mental retardation, microcephaly and short stature.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, mutations on the ZEB2 gene cause Mowat Wilson Syndrome, a disorder associated with mental retardation, microcephaly and short stature (Mowat et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "9d7dcf7f-a3d9-4cb3-bb22-1ca8d4ae95ea",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C88",
+      "claim": "Individuals with Mowat Wilson Syndrome could have pituitary defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it is tempting to speculate that affected individuals with this pathology could have also pituitary defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the role of Zeb2 in pituitary development discovered in this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "7600841f-2f92-41b9-9547-4c7333520d99",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C89",
+      "claim": "Altered cell shape, elevated expression of adhesion molecules and reduced levels of matrix metalloproteinases (MMPs) were observed in stem cell colonies from Prop1 mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We show altered cell shape, elevated expression of adhesion molecules and reduced levels of matrix metalloproteinases (MMPs) in stem cell colonies from Prop1 mutant mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by colony morphology analysis (Figure 4) and RNA-Seq data (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "51105a0a-70bc-4f98-ad76-653ed00ae656",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C90",
+      "claim": "MMPs play key roles in embryonic development and are involved in EMT in the morphogenesis of many tissues, including neural crest delamination, endocardial invasion and mammary gland branching formation.",
+      "claim_type": "EXPLICIT",
+      "source": "MMPs play key roles in embryonic development and are involved in EMT in the morphogenesis of many tissues, including neural crest delamination, endocardial invasion and mammary gland branching formation (Radisky and Radisky, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "5e652c04-8cfa-4bf4-86d4-094582b1eb0e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C91",
+      "claim": "Several genes down regulated in the stem cell colonies from Prop1 mutant pituitaries were associated with main inducers of the EMT including members of the Notch, TGF-\u03b2, Wnt and Hedgehog pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes down regulated in the stem cell colonies from Prop1 mutant pituitaries were associated with main inducers of the EMT including members of the Notch, TGF-\u03b2, Wnt and Hedgehog pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data and pathway analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "b7475f0e-9f0d-41f9-b768-20fad73464f5",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C92",
+      "claim": "EMT plays an important role in cancer pathogenesis, particularly during growth, maintenance and progression of the tumor with local invasion or metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "EMT plays an important role in cancer pathogenesis, particularly during growth, maintenance and progression of the tumor with local invasion or metastasis (De Craene and Berx, 2013; Pirozzi et al., 2011; Mani et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "d733b4f6-6d21-44fd-aed5-082006571b37",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C93",
+      "claim": "Pituitary adenomas are tumors with significant prevalence and, although they are often benign, can become invasive.",
+      "claim_type": "EXPLICIT",
+      "source": "Pituitary adenomas are tumors with significant prevalence and, although they are often benign, can become invasive (Melmed, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "25379977-da4d-4ea0-805c-d7601201fc10",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C94",
+      "claim": "The mechanisms underlying the pathogenic processes of initiation, expansion and invasion of pituitary adenomas are still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, the mechanisms underlying the pathogenic processes of initiation, expansion and invasion of pituitary adenomas are still unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "f2648c5b-0028-4429-ab2f-adece440db00",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C95",
+      "claim": "Prop1 is required for normal stem cell pools during embryogenesis and postnatal pituitary expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we showed that Prop1 is required for normal stem cell pools during embryogenesis and postnatal pituitary expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by colony-forming assays, Sox2 expression analysis, and cell cycle marker studies throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "89d5f766-7c16-4a6d-bdaa-f608c850fa85",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C96",
+      "claim": "Prop1 promotes the transition of progenitors to differentiation by inducing expression of EMT drivers like Zeb2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genome-wide analyses support the idea that Prop1 promotes the transition of progenitors to differentiation by inducing expression of EMT drivers like Zeb2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-Seq data showing PROP1 binding to Zeb2, RNA-Seq showing altered Zeb2 expression, and functional validation with siRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a2e21d47-f377-47a9-be10-a1d29539f168",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C97",
+      "claim": "Prop1 activates expression of cyclin E, a marker of the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Prop1 activates expression of cyclin E, a marker of the transition state, and Pou1f1, a marker of the differentiation state (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data showing absence of Cyclin E in Prop1 mutants (Figure 1B, Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "f98338d1-2816-423a-b937-92ba7626bdad",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "claim_id": "C98",
+      "claim": "Prop1 activates expression of Pou1f1, a marker of the differentiation state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Prop1 activates expression of cyclin E, a marker of the transition state, and Pou1f1, a marker of the differentiation state (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by prior knowledge and ChIP-Seq data showing PROP1 binding to Pou1f1 (Figure 8).",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acb68469-0969-4340-8712-2d95018708bb",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PROP1 and SOX2 are transiently co-expressed in embryonic pituitary stem cells. At e12.5, PROP1-expressing cells largely overlap with SOX2-expressing progenitors, but by e14.5, PROP1 expression decreases in the dorsal region and becomes concentrated in the transitional zone where cells migrate ventrally. This co-localization is transient and ceases as cells migrate and differentiate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C14-C15 are supported by immunofluorescence data in Figure 1A showing temporal and spatial overlap of PROP1 and SOX2 at e12.5 and their separation by e14.5. The data directly demonstrate the transient nature of co-expression during the transition from stem cell to differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2e44de18-7f7e-4ffc-9842-1260032291fa",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "POU1F1 and SOX2 show mutually exclusive expression patterns during development and after birth, suggesting POU1F1 regulates a later stage of differentiation and any effect on stem cells would be indirect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by immunofluorescence data in Figure 1A showing no co-localization of POU1F1 and SOX2 at e14.5 and P7. The inference that POU1F1 acts at a later differentiation stage is reasonable given the mutually exclusive expression pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "033e3592-069f-49e9-8d74-47ee6f0e7a49",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PROP1 is necessary for multiple aspects of cell cycle regulation during embryogenesis. Prop1 mutants show absence of CYCLIN E expression, increased double-positive p27kip1/p57kip2 cells, and reduced CYCLIN D1-positive cells at e13.5, indicating PROP1 is required for promoting progenitor proliferation, transitioning cells out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are well-supported by immunofluorescence data in Figure 1B-C showing altered expression of cell cycle markers in Prop1 mutants. The data demonstrate clear differences in CYCLIN E (absent in mutants), p27kip1/p57kip2 (increased double-positive cells), and CYCLIN D1 (reduced at e13.5) between mutants and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "87be8d2a-9081-4789-976b-8479066b815b",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PROP1 has distinct effects on stem cell markers during postnatal pituitary expansion. High Prop1 mRNA levels are present at P3 and P7, coincident with the second wave of proliferation. Prop1 mutants show elevated Sox2 mRNA and increased SOX2-positive cells in the marginal zone at P7, while Sox9 and Gfra2 levels are unchanged. Both Prop1 and Pou1f1 mutants show decreased CyclinE mRNA at P7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are supported by qRT-PCR data (Figure 2\u2014figure supplement 1, Figure 2A, 2C) and immunofluorescence quantification (Figure 2B). The data show specific effects of Prop1 deficiency on Sox2 but not other stem cell markers, and shared effects with Pou1f1 mutants on CyclinE.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "1ab10fd2-afc6-4101-941c-46641c405989",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At P3, the expansion of SOX2-positive cells in Prop1 mutant pituitaries correlates with expansion of Prop1-expressing cells in the marginal zone, but these SOX2-expressing cells show reduced co-localization with SOX9 compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by double immunofluorescence data and quantification in Figure 3A-D. The data demonstrate both the expansion of SOX2+/PROP1+ cells and the reduced SOX2+/SOX9+ co-localization in mutants, suggesting altered stem cell properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c128607a-820c-43d5-8991-93a9d1e3909a",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prop1 mutants show reduced colony-forming capacity and altered colony morphology compared to wild-type, while Pou1f1 mutants show normal colony formation. At P7, P13, and P38, Prop1 mutants have fewer CFCs per pituitary, and 100% of Prop1 mutant colonies are flat cells rather than the compact, piled-up morphology typical of undifferentiated progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C76-C77 are supported by colony-forming assay data in Figure 4A-D. The quantitative data show significant reductions in CFC numbers in Prop1 mutants across multiple time points, and morphological analysis clearly demonstrates the difference in colony types between genotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-Seq analysis of stem cell colonies reveals that Prop1 deficiency causes extensive gene expression changes consistent with failure of EMT. 2035 genes were differentially expressed in Prop1 mutant colonies (vs. 752 in Pou1f1 mutants), with unique upregulation of epithelial markers (Cdh1, Claudin 23, miR-200a) and downregulation of EMT markers (Zeb2, Mmp2, Mmp3, Mmp16, Gli2) in Prop1 mutants. These changes were validated by qRT-PCR and immunostaining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44 are supported by RNA-Seq data (Figure 5A), qRT-PCR validation (Figure 5B), and immunostaining (Figure 5B). The comprehensive genomic analysis with independent validation provides strong evidence for the EMT-related gene expression changes specific to Prop1 deficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "36035018-7685-4591-909f-5109c6bfca3c",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Zeb2 is a key mediator of the EMT-like process in pituitary stem cells. siRNA knockdown of Zeb2 in wild-type colonies was sufficient to reduce Gli2 expression, increase Cdh1 expression, and block formation of tightly packed colonies, mimicking the Prop1 mutant phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C5, C84 are supported by siRNA knockdown experiments in Figure 6 showing that Zeb2 reduction recapitulates key aspects of Prop1 deficiency. This functional validation demonstrates Zeb2 is a critical downstream effector of PROP1 in the EMT-like process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2ed745e9-0674-4008-80e5-5207f2e757fb",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Zeb2 and CDH1 expression patterns are altered in Prop1 mutant pituitaries during development and postnatally. At e14.5, Zeb2 expression in the ventral Rathke's pouch is nearly absent in mutants, while CDH1 staining is stronger in the ventral region and marginal zone. At P13, Prop1 mutants show abnormal CDH1 expression distant from the marginal zone. Cdh1 is increased in both CFCs and tissues, while Cdh2 is unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49, C80, C83 are supported by in situ hybridization (Figure 7A), immunohistochemistry (Figure 7A-B), and RNA-Seq data (Figure 5). The consistent pattern of reduced Zeb2 and increased Cdh1 across multiple time points and experimental approaches provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2f2d7be6-3c8c-415c-8594-3042825db4ca",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ChIP-Seq analysis identified genome-wide PROP1 binding sites and a consensus binding motif. The known PROP1 binding site in Pou1f1 was highly enriched, and a novel binding site at -6 kb was identified. HOMER analysis identified the consensus sequence TAATNNNATTA in 60% of peaks (p=1e-1599), consistent with the paired homeodomain core consensus. Additional enriched motifs were found in 30-38% of peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by ChIP-Seq data (Figure 8C-E) and motif analysis (Figure 9A). The validation of known binding sites and identification of novel sites with appropriate motifs demonstrates the technical success of the ChIP-Seq approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PROP1 directly binds to genes involved in EMT regulation. Pathway analysis showed most ChIP-Seq identified genes were involved in EMT pathway regulation. PROP1 binding to Gli2, Notch2, Zeb2, and Claudin 23 was validated by quantitative ChIP-PCR, confirming PROP1-specific enrichment at these loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C3-C4, C82 are supported by ChIP-Seq data (Figure 9B-E) with pathway analysis and independent validation by quantitative ChIP-PCR. The convergence of genomic binding data with the EMT gene expression phenotype provides strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "86e04391-8431-488f-97e4-448e5bd2c1dd",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PROP1 has two major roles in pituitary development: regulating stem cell populations and triggering an EMT-like process necessary for cell migration and differentiation. PROP1 is required to maintain normal stem cell pools during embryogenesis and postnatal expansion, and promotes progenitor transition to differentiation by inducing expression of EMT drivers like Zeb2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C73, C79, C95-C96 represent the major conclusions supported by multiple converging lines of evidence: altered Sox2 expression, colony-forming defects, EMT gene expression changes, ChIP-Seq showing PROP1 binding to EMT genes, and functional validation with Zeb2 knockdown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "571f8ebd-8693-496a-98b3-d07d32a0a2b9",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PROP1 regulation of Sox2 and cell cycle genes (Cyclin D1, D2, E) appears to be indirect, as PROP1 did not bind to the promoters of these genes in ChIP-Seq experiments despite their altered expression in Prop1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C66, C78 are supported by the absence of PROP1 binding sites near these genes in ChIP-Seq data, combined with the observed changes in their expression in mutants. The inference of indirect regulation is reasonable given this evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "697de903-9b48-4d30-b714-3dbfe69ce51e",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gli2 expression is reduced in Prop1 mutant colonies and PROP1 binds to the 5' region of Gli2, but Gli2 expression is not strictly Prop1-dependent as it is expressed in surrounding mesenchyme at e12.5 and in pituitary tissue after Prop1 expression wanes at e15.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by RNA-Seq data (Figure 5), ChIP-Seq data (Figure 9C-D), and temporal expression analysis. The nuanced conclusion that PROP1 influences but does not strictly control Gli2 expression is appropriate given the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "fe6f1ad8-c24f-40fc-8430-596d6d438b11",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The EMT-like process in pituitary stem cells is likely a partial EMT, where cells do not display all characteristics of typical EMT, as evidenced by increased Cdh1 without changes in Cdh2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by the observation that Cdh1 increases while Cdh2 remains unchanged (C80), which differs from classical EMT. The inference of partial EMT is reasonable and supported by citation to prior work on this phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "c1876b0b-003d-4395-91f9-cf4676eeaef6",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Both Prop1 and Pou1f1 mutants can generate progenitor colony-forming cells in culture that express stem cell markers SOX2, SOX9, GFRA2, and CYCLIN D2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by immunostaining data in Figure 4\u2014figure supplement 1 showing expression of these markers in colonies from both mutant genotypes. This establishes that the colonies used for subsequent analysis retain stem cell characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "842dec38-cbf0-4291-b17d-ac1da6ecb602",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PROP1 mediates progenitor cell proliferation by driving cell cycle progression and activates expression of Cyclin E, a marker of the transition state. In the absence of Prop1, embryonic progenitors fail to maintain Cyclin D1/D2 expression and fail to initiate Cyclin E expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C97 are supported by cell cycle marker data in Figure 1B-C and Figure 5B. The data consistently show altered expression of these markers in Prop1 mutants across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "a6e030d6-55a9-4267-80b8-3251309c042f",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prop1 mutants have more SOX2-positive cells in the marginal zone and fewer in the parenchyma compared to both Pou1f1 mutants and controls. These SOX2-expressing cells in Prop1 mutants lack SOX9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by immunofluorescence data in Figure 2B and Figure 3B,D. The spatial distribution differences and lack of SOX9 co-localization are clearly demonstrated with quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "be0a734e-e554-4f50-9abe-4994b0809e98",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PROP1 activates expression of Pou1f1, a marker of the differentiation state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by ChIP-Seq data showing PROP1 binding to Pou1f1 (Figure 8) and prior knowledge of this regulatory relationship. This is a well-established function of PROP1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "2f6aed24-a642-4254-b57d-2fc191a6d8b4",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Mutations in PROP1 are the most common cause of hypopituitarism in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is presented as established knowledge from the field without experimental validation in this manuscript. This is appropriate for background information and is consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    },
+    {
+      "id": "772b5275-14ca-4db2-b922-ecc1f042dec7",
+      "content_id": "4fc13dec-af90-4b88-80a6-4478212f8148",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Individuals with Mowat Wilson Syndrome (caused by ZEB2 mutations) could have pituitary defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly stated as speculation by the authors. While the role of Zeb2 in pituitary development discovered in this study makes this hypothesis reasonable, there is no direct evidence presented to support this claim. This would require clinical investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:39.878096Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de7cbe14-1aac-45d1-83f2-49427f009e8c",
+      "result_id": "acb68469-0969-4340-8712-2d95018708bb"
+    },
+    {
+      "claim_id": "be9b0ccb-b4c6-448e-803a-162b3c4062d3",
+      "result_id": "acb68469-0969-4340-8712-2d95018708bb"
+    },
+    {
+      "claim_id": "01e44839-4983-4092-8e46-40e2888a6b88",
+      "result_id": "acb68469-0969-4340-8712-2d95018708bb"
+    },
+    {
+      "claim_id": "e807794a-de72-4c47-b62d-7e7b75c29e5b",
+      "result_id": "acb68469-0969-4340-8712-2d95018708bb"
+    },
+    {
+      "claim_id": "93a125ee-c7fe-4e4f-97a3-041fd4964e65",
+      "result_id": "acb68469-0969-4340-8712-2d95018708bb"
+    },
+    {
+      "claim_id": "1635cfa0-812e-4a6e-aec4-2f6a33d0f103",
+      "result_id": "2e44de18-7f7e-4ffc-9842-1260032291fa"
+    },
+    {
+      "claim_id": "5872874f-63a1-436a-9ddf-455c953308ce",
+      "result_id": "2e44de18-7f7e-4ffc-9842-1260032291fa"
+    },
+    {
+      "claim_id": "43244d97-9a6c-4b49-ba4d-31c3e355bcb8",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "62e6af7f-553d-4b3a-a3cd-9c7b94f33bc8",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "c0b21bad-9feb-41be-8975-2da2275d3f58",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "01779c21-2067-4471-b111-ca497c50f650",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "021d531b-9c44-4fd0-b2ce-5fec870f19e4",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "32df480c-38d7-41b9-86b9-308a8a79bc42",
+      "result_id": "033e3592-069f-49e9-8d74-47ee6f0e7a49"
+    },
+    {
+      "claim_id": "8fe304e5-15d4-46a3-aaf9-646853f70da9",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "d5e4eb7f-fd4b-41d4-a8e5-a6feecdd5562",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "2293e3e9-80e1-4b6b-bec7-0c594734be70",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "7cbfe13a-1200-4a41-b9af-b7dda8ebd065",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "4fd6afa9-fd5f-4a94-8a7b-5a44990dfb2c",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "88a19f27-4547-40c9-8529-66316a7a9e7e",
+      "result_id": "87be8d2a-9081-4789-976b-8479066b815b"
+    },
+    {
+      "claim_id": "a3c22310-0900-4f5b-8114-02637d13803a",
+      "result_id": "1ab10fd2-afc6-4101-941c-46641c405989"
+    },
+    {
+      "claim_id": "8f8a4d64-ea1d-4a28-9839-8a88378d59dc",
+      "result_id": "1ab10fd2-afc6-4101-941c-46641c405989"
+    },
+    {
+      "claim_id": "c080ba8b-7f9f-492a-ae06-53fd9cff904c",
+      "result_id": "c128607a-820c-43d5-8991-93a9d1e3909a"
+    },
+    {
+      "claim_id": "6a1b71b7-3962-435b-9438-fff8bef99b5f",
+      "result_id": "c128607a-820c-43d5-8991-93a9d1e3909a"
+    },
+    {
+      "claim_id": "ee69ef61-4c2e-4bda-9860-51bbc7ca20aa",
+      "result_id": "c128607a-820c-43d5-8991-93a9d1e3909a"
+    },
+    {
+      "claim_id": "1c931b33-0a41-4ac6-ab52-10b8e8030328",
+      "result_id": "c128607a-820c-43d5-8991-93a9d1e3909a"
+    },
+    {
+      "claim_id": "30745c17-c9fc-4cde-b956-3df64024bf1d",
+      "result_id": "c128607a-820c-43d5-8991-93a9d1e3909a"
+    },
+    {
+      "claim_id": "a439a9f3-c5e4-4bb5-8a22-8d36f1574a3e",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "843b3206-ab78-43e2-bb5c-798c10e200f8",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "37d43dae-2138-43fe-abf8-b86239faf618",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "a25f4e58-da0a-4e2e-8e33-f93312f3ab99",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "c39c85fd-ae3b-4f24-bd83-9ffdb0ac6896",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "e6ad2cc8-598b-441e-8755-86343b943d72",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "45d7da14-cdd9-45e3-acc7-5a2ba94f09ea",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "fd6cdb94-fc05-4996-8b24-674eb6ff613c",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "1230275d-2a66-47ae-a4ef-e3e65cd1a0ca",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "87d4dbfe-ca1a-4a9a-8614-67c3fe10362b",
+      "result_id": "9eaa7cf0-56bc-4727-ac95-a586b8b4404f"
+    },
+    {
+      "claim_id": "d29ea75d-5204-4189-a6e4-a54fec56bcb2",
+      "result_id": "36035018-7685-4591-909f-5109c6bfca3c"
+    },
+    {
+      "claim_id": "884bda7e-b1d0-4fda-ac0b-197a29148d0e",
+      "result_id": "36035018-7685-4591-909f-5109c6bfca3c"
+    },
+    {
+      "claim_id": "fa644cdd-13fa-48bd-bfb5-46555b7cb6a1",
+      "result_id": "36035018-7685-4591-909f-5109c6bfca3c"
+    },
+    {
+      "claim_id": "012cc717-f1e3-4b6d-9593-1056d2041114",
+      "result_id": "36035018-7685-4591-909f-5109c6bfca3c"
+    },
+    {
+      "claim_id": "66733f5f-0392-40f3-9912-5cda2ffd7d83",
+      "result_id": "2ed745e9-0674-4008-80e5-5207f2e757fb"
+    },
+    {
+      "claim_id": "a06c47dc-c941-4c4f-b038-6d7905432385",
+      "result_id": "2ed745e9-0674-4008-80e5-5207f2e757fb"
+    },
+    {
+      "claim_id": "f309190a-31ea-406d-880c-2c6d0665a727",
+      "result_id": "2ed745e9-0674-4008-80e5-5207f2e757fb"
+    },
+    {
+      "claim_id": "d9716541-2966-49ea-a616-6798784d8d1e",
+      "result_id": "2ed745e9-0674-4008-80e5-5207f2e757fb"
+    },
+    {
+      "claim_id": "86faf59a-2a0c-4376-b856-c404ba794ecf",
+      "result_id": "2ed745e9-0674-4008-80e5-5207f2e757fb"
+    },
+    {
+      "claim_id": "be946192-740c-4a8c-8498-3e07b3ebff35",
+      "result_id": "2f2d7be6-3c8c-415c-8594-3042825db4ca"
+    },
+    {
+      "claim_id": "2b2c0a85-eba0-4855-b791-61172f3909a9",
+      "result_id": "2f2d7be6-3c8c-415c-8594-3042825db4ca"
+    },
+    {
+      "claim_id": "06edb17b-3999-49a8-a891-6abff2162206",
+      "result_id": "2f2d7be6-3c8c-415c-8594-3042825db4ca"
+    },
+    {
+      "claim_id": "a547bbed-9474-4ec1-bb0d-cdc2a57f04d3",
+      "result_id": "2f2d7be6-3c8c-415c-8594-3042825db4ca"
+    },
+    {
+      "claim_id": "347b2510-37c4-4380-835c-69d229dde79c",
+      "result_id": "2f2d7be6-3c8c-415c-8594-3042825db4ca"
+    },
+    {
+      "claim_id": "c9535926-06dc-4d3c-9c03-549212afe353",
+      "result_id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a"
+    },
+    {
+      "claim_id": "84f226f3-7224-46b0-acae-207dbba65060",
+      "result_id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a"
+    },
+    {
+      "claim_id": "468025e8-ca46-478b-8c0c-536c83eb34df",
+      "result_id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a"
+    },
+    {
+      "claim_id": "f7e76ccc-6cec-42d6-8522-8dceea126657",
+      "result_id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a"
+    },
+    {
+      "claim_id": "97caaee1-7ee6-4b04-a5df-3b9a1b04dd07",
+      "result_id": "4bbc1e61-eb9e-464e-b71f-48de6927b70a"
+    },
+    {
+      "claim_id": "de09d80e-d8ed-4235-b300-db41715a57ba",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "01bcc699-1a03-441f-9c59-8e5dddab6a9c",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "62864096-ed1c-4ef2-8fed-856f380dc73f",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "b9c2a46c-2a73-44ea-95f5-7707e2042e6e",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "f2648c5b-0028-4429-ab2f-adece440db00",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "89d5f766-7c16-4a6d-bdaa-f608c850fa85",
+      "result_id": "86e04391-8431-488f-97e4-448e5bd2c1dd"
+    },
+    {
+      "claim_id": "e55372ad-4b73-48da-902a-d6a602f96aae",
+      "result_id": "571f8ebd-8693-496a-98b3-d07d32a0a2b9"
+    },
+    {
+      "claim_id": "e8a5f2a0-7474-4048-8291-6bbadb835b1f",
+      "result_id": "571f8ebd-8693-496a-98b3-d07d32a0a2b9"
+    },
+    {
+      "claim_id": "646a092c-8691-470c-b374-ff2bb3568299",
+      "result_id": "571f8ebd-8693-496a-98b3-d07d32a0a2b9"
+    },
+    {
+      "claim_id": "43b67a0d-0de5-40a0-90d8-602f40346eb7",
+      "result_id": "697de903-9b48-4d30-b714-3dbfe69ce51e"
+    },
+    {
+      "claim_id": "d333ebed-6ac9-4ea4-b809-836de0134b4f",
+      "result_id": "697de903-9b48-4d30-b714-3dbfe69ce51e"
+    },
+    {
+      "claim_id": "f7f3e8a6-01f9-4b77-90ee-11c54e36194b",
+      "result_id": "697de903-9b48-4d30-b714-3dbfe69ce51e"
+    },
+    {
+      "claim_id": "cb46a64d-4c4c-4dd5-bc95-85289ad752de",
+      "result_id": "fe6f1ad8-c24f-40fc-8430-596d6d438b11"
+    },
+    {
+      "claim_id": "548f4098-7d2e-4fea-b3c1-bbb9bd690cdf",
+      "result_id": "c1876b0b-003d-4395-91f9-cf4676eeaef6"
+    },
+    {
+      "claim_id": "287648ae-9f7f-4bdb-b852-7ea2494fff92",
+      "result_id": "842dec38-cbf0-4291-b17d-ac1da6ecb602"
+    },
+    {
+      "claim_id": "1fd5e867-e4c4-4d24-b68a-6d1e751355ef",
+      "result_id": "842dec38-cbf0-4291-b17d-ac1da6ecb602"
+    },
+    {
+      "claim_id": "035d372e-ddd1-420b-a0b4-4d46f5d01b5f",
+      "result_id": "842dec38-cbf0-4291-b17d-ac1da6ecb602"
+    },
+    {
+      "claim_id": "a2e21d47-f377-47a9-be10-a1d29539f168",
+      "result_id": "842dec38-cbf0-4291-b17d-ac1da6ecb602"
+    },
+    {
+      "claim_id": "259ee0a8-e27a-4db6-8789-342cb89dec35",
+      "result_id": "a6e030d6-55a9-4267-80b8-3251309c042f"
+    },
+    {
+      "claim_id": "ebdc49b2-c89d-4d72-b053-9a35d37b5e61",
+      "result_id": "a6e030d6-55a9-4267-80b8-3251309c042f"
+    },
+    {
+      "claim_id": "f98338d1-2816-423a-b937-92ba7626bdad",
+      "result_id": "be0a734e-e554-4f50-9abe-4994b0809e98"
+    },
+    {
+      "claim_id": "85e736e7-c397-45db-8e61-f6417b5f9bd3",
+      "result_id": "2f6aed24-a642-4254-b57d-2fc191a6d8b4"
+    },
+    {
+      "claim_id": "9d7dcf7f-a3d9-4cb3-bb22-1ca8d4ae95ea",
+      "result_id": "772b5275-14ca-4db2-b922-ecc1f042dec7"
+    }
+  ],
+  "comparisons": []
+}

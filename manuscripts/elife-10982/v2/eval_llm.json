@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The complete complement of SNAREs required for procollagen VII export from the ER includes t-SNAREs BNIP1, STX18, and USE1, and v-SNARE YKT6. Depletion of these SNAREs results in 72-91% block in collagen VII secretion and intracellular accumulation of collagen VII in the ER (59-74% of cells), while other v-SNAREs (SEC22B, BET1) show no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 provide strong experimental evidence through siRNA knockdown experiments showing specific effects on collagen VII secretion and ER accumulation. The data include both quantitative secretion assays (Figure 1A,B) and immunofluorescence colocalization with ER markers (Figure 1C,D). Knockdown efficiencies are documented (C1E), and effects are confirmed in multiple cell lines (Figure 1\u2014figure supplement 1). The specificity of YKT6 among v-SNAREs strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "YKT6 localizes to ERGIC membranes, with a Manders' overlap coefficient of 0.705 \u00b1 0.118 between YKT6 and ERGIC-53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide direct experimental evidence through colocalization microscopy (Figure 1F) with quantitative analysis. The Manders' coefficient indicates substantial overlap, and this is consistent with prior knowledge (C36) about YKT6 localization to ERGIC and Golgi membranes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ERGIC-53-containing membranes are closely apposed to procollagen VII patches in the ER, and this apposition persists after SNARE depletion but is disrupted by TANGO1 depletion. This indicates that TANGO1, not SNAREs, recruits ERGIC membranes to procollagen-enriched ER domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide compelling evidence through temperature block-release experiments and systematic depletion studies (Figure 2A,B). The key observation that SNARE depletion maintains ERGIC-ER apposition while TANGO1 depletion disrupts it (88% knockdown efficiency, C42) strongly supports the conclusion that TANGO1 acts as the tethering factor. Quantitative colocalization analysis strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The TEER domain (residues 1177-1396) of TANGO1, containing the first coiled coil, is sufficient to recruit ERGIC-53 and YKT6-containing membranes to the ER when expressed as an ER-targeted construct, while a control coiled-coil domain from TMCC3 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide strong evidence through gain-of-function experiments (Figure 3B-F). Both TEER and CC-TMCC3 localize to the ER (C47-C48), but only TEER recruits ERGIC-53 and YKT6-containing membranes (C49-C52), demonstrating specificity. The use of a negative control (CC-TMCC3) and quantitative colocalization analysis strengthen the conclusion that TEER is sufficient for recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "When targeted to mitochondria (Mit-TEER), the TEER domain specifically recruits ERGIC-53 and YKT6-containing membranes to mitochondrial surfaces, while the control Mit-CC-TMCC3 does not. Protease protection assays confirm that both constructs are inserted into outer mitochondrial membranes with cytoplasmic exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 provide strong evidence through heterologous localization experiments (Figures 4-5). The protease protection assay (C55, Figure 4D) confirms proper topology. The specific recruitment of ERGIC-53 and YKT6 by Mit-TEER but not Mit-CC-TMCC3 (C56-C59) demonstrates that TEER function is independent of ER context. This elegant experiment strongly supports the sufficiency of TEER for membrane recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mit-TEER specifically recruits YKT6-containing ERGIC membranes but does not recruit Golgi membranes (Mannosidase II, TGN46) or COPII coats (Sec31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate specificity through negative controls (Figure 6A,C). Testing multiple compartment markers (early Golgi, late Golgi, COPII) and showing no recruitment strengthens the conclusion that TEER specifically targets ERGIC membranes. This addresses potential concerns about non-specific membrane recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Mit-TEER does not interact with endogenous TANGO1 at ER exit sites and does not significantly localize to the ER (Manders' coefficient 0.306 \u00b1 0.05). In TANGO1 knockout cells (\u0394TANGO1), Mit-TEER still recruits ERGIC-53 membranes, confirming that TEER acts independently of endogenous TANGO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 address a critical alternative explanation through multiple lines of evidence: lack of colocalization with endogenous TANGO1 (C64), minimal ER targeting (C65-C66), and functional recruitment in TANGO1 knockout cells (C67-C69). The CRISPR knockout approach (Figure 6\u2014figure supplement 1) provides strong validation. These controls are essential for establishing that TEER functions cell-autonomously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The mechanism of mega-carrier formation for procollagen VII export involves TANGO1-mediated recruitment of ERGIC membranes that fuse with procollagen-enriched ER domains, fundamentally differing from conventional COPII vesicle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C79-C81 synthesize the experimental findings into a mechanistic model. The conclusion that ERGIC membrane fusion drives mega-carrier growth (C80) is well-supported by the SNARE requirements (Result 1), TANGO1's recruitment function (Results 3-7), and the specificity for ERGIC membranes (Result 6). The distinction from conventional COPII vesicle formation (C81) is justified by the unique membrane fusion requirement and ERGIC contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Based on ~40,000 TANGO1 molecules per cell and a few hundred ER exit sites, there are approximately 100-200 TANGO1-cTAGE5 dimers per exit site, potentially packaging 100-200 procollagen trimers per mega-carrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85 involve calculations based on literature values (C82-C83) and assumptions about stoichiometry. While the arithmetic is straightforward, the conclusion assumes: (1) all TANGO1 is at ER exit sites, (2) each TANGO1 binds one procollagen trimer, and (3) all TANGO1 at an exit site participates in a single carrier. These assumptions are not experimentally validated in this study. The calculation provides a reasonable estimate but requires further experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "After packing procollagen, carrier separation is triggered by TANGO1 dissociation from procollagen VII and Sec23/Sec24, followed by Sec13/Sec31 recruitment for carrier movement along the secretory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C87-C88 are presented as speculative hypotheses (\"we suggest,\" \"would then be recruited\") without experimental support in this manuscript. While the model is plausible and consistent with known COPII biology, no data are provided to test when or how TANGO1 dissociates, whether this triggers fission, or how Sec13/Sec31 recruitment is regulated. These remain important questions for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C71",
+      "C72"
+    ],
+    "result": "Membrane fusion is required for TANGO1-dependent procollagen VII export from the ER, and mega-carrier growth depends on addition of membranes from a non-ER source rather than expansion of ER membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19, C71-C72 establish the conceptual framework supported by prior work (Nogueira et al., 2014) and extended by the current findings. The requirement for four SNARE coiled-coil domains (C20) and the identification of the complete SNARE complement (Result 1) provide strong support. The conclusion that membranes come from a non-ER source (C72) is validated by identifying ERGIC as the source (Results 2-7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TANGO1 knockdown does not alter general ER protein export or retrograde traffic. The proposed model involves TANGO1 binding procollagen VII via its SH3 domain, cTAGE5 recruiting Sec12 to expand the COPII shell, and PRD binding to Sec23/Sec24 potentially exposing TEER for ERGIC recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citations to prior work showing specificity of TANGO1 function. Claims C75-C76 cite established findings about TANGO1 and cTAGE5 domains. Claim C77 is speculative but reasonable given Sec12's role as a Sar1 GEF. Claim C78 is presented as a hypothesis (\"may expose\") connecting the experimental findings to a mechanistic model. While C77-C78 lack direct experimental support in this study, they represent plausible mechanistic proposals consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C24",
+      "C25",
+      "C36"
+    ],
+    "result": "Background information on collagen biology, TANGO1 function, and SNARE proteins establishes the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C18, C24-C25, C36 provide established background knowledge supported by appropriate citations. These claims contextualize the problem (collagen size vs. COPII vesicle dimensions), introduce key players (TANGO1, SNAREs), and reference alternative hypotheses (Sec31 ubiquitination, Sedlin). All are appropriately cited and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  }
+]

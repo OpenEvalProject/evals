@@ -1,0 +1,1071 @@
+{
+  "submission": {
+    "id": "5a2606ed-25a0-4e43-8178-0e2deef1f03d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:36:40.008638Z",
+    "updated_at": "2025-11-29T23:36:40.008638Z"
+  },
+  "content": [
+    {
+      "id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "submission_id": "5a2606ed-25a0-4e43-8178-0e2deef1f03d",
+      "content_type": "manuscript",
+      "content_text": "# Quantitative perturbation-based analysis of gene expression predicts enhancer activity in early Drosophila embryo\n\n## Authors\n\n- Rupinder Sayal<sup>1</sup>\n- Jacqueline M Dresch<sup>3</sup>\n- Irina Pushel<sup>1</sup>\n- Benjamin R Taylor<sup>6</sup>\n- David N Arnosti<sup>1</sup> ([ORCID: 0000-0003-0983-6982](https://orcid.org/0000-0003-0983-6982)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology Michigan State University East Lansing United States\n2. Department of Biochemistry DAV University Jalandhar India\n3. Department of Mathematics Michigan State University East Lansing United States\n4. Department of Mathematics and Computer Science Clark University Worcester United States\n5. Stowers Institute for Medical Research Kansas City United States\n6. Department of Computer Science and Engineering Michigan State University East Lansing United States\n7. School of Computer Science Georgia Institute of Technology Atlanta United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnhancers constitute one of the major components of regulatory machinery of metazoans. Although several genome-wide studies have focused on finding and locating enhancers in the genomes, the fundamental principles governing their internal architecture and cis-regulatory grammar remain elusive. Here, we describe an extensive, quantitative perturbation analysis targeting the dorsal-ventral patterning gene regulatory network (GRN) controlled by Drosophila NF-\u03baB homolog Dorsal. To understand transcription factor interactions on enhancers, we employed an ensemble of mathematical models, testing effects of cooperativity, repression, and factor potency. Models trained on the dataset correctly predict activity of evolutionarily divergent regulatory regions, providing insights into spatial relationships between repressor and activator binding sites. Importantly, the collective predictions of sets of models were effective at novel enhancer identification and characterization. Our study demonstrates how experimental dataset and modeling can be effectively combined to provide quantitative insights into cis-regulatory information on a genome-wide scale.\n\n## Introduction\n\nDevelopmentally expressed genes in metazoans are regulated by diverse cis-regulatory elements, including distally-acting sequences termed enhancers (Levine, 2010; Smith and Shilatifard, 2014; Heinz et al., 2015). Despite more than three decades of progress, surprisingly little is known about constraints on internal structural organization of binding sites ('grammar') within these elements (Dickel et al., 2013). Some enhancers show little evolutionary variation, and permit no change in transcription factor binding sites without catastrophic effects on function (Thanos and Maniatis, 1995; Kim and Maniatis, 1997). Many developmental enhancers, however, demonstrate a more flexible deployment of binding sites, thus functionally conserved elements can exhibit a large degree of evolutionary variation (Junion et al., 2012). Although high-throughput studies have dramatically increased our knowledge of genome-wide transcription factor occupancy and transcript expression, we have a limited ability to interpret the functional relevance of quantitative aspects of protein binding or DNA sequence variation. A quantitative understanding of the internal enhancer grammar of cis-regulatory elements will provide researchers with powerful tools to better understand the significance of genetic variation that is observed within and between species, critical for exploitation of burgeoning genomic resources. Thermodynamic models employ tools from statistical physics to model gene activity, providing a framework for understanding transcription factor interactions with specific DNA sequences to regulate gene expression (Bintu et al., 2005; Ay and Arnosti, 2011; Dresch and Drewell, 2012) Previous efforts at thermodynamic modeling in eukaryotic systems have demonstrated that diverse types of data can be fit, providing at least a qualitative level of prediction (Zinzen et al., 2006; Segal et al., 2008; He et al., 2010; Drewell et al., 2014). However, earlier studies relied on heterogeneous and low-resolution datasets, inherently limiting modeling effectiveness. In addition, few types of models were tested, reducing the chance that essential properties of transcription factor interactions will be captured.\n\nHere, we tested the hypothesis that an in-depth and quantitative analysis of key transcriptional regulators on an archetypal enhancer would reveal common transcriptional behaviors of these proteins for genome-wide analysis. To harness the potential of thermodynamic modeling approaches, we developed an in-depth enhancer perturbation analysis that takes advantage of the quantitative setting of the Drosophila blastoderm embryo. The rhomboid (rho) enhancer directs gene expression in the presumptive neuroectoderm under the control of the activator Dorsal, a homolog of NF-\u03baB. The Twist activator and Snail repressor provide additional essential inputs (Figure 1A). To extract fundamental information from this data set, we created and fit a comprehensive set of thermodynamic models designed to capture likely interactions between transcription factors as they interact with the enhancer. An extensive set of other coordinately-regulated Dorsal/Twist/Snail target genes was then used to assess the power of this modeling approach for interpretation of cis-regulatory variation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig1-v1.jpg)\n\n**Figure 1.:** (A) rhomboid (rho) enhancer with footprinted Dorsal activator sites shown in green, Twist activator sites in yellow, and Snail repressor sites in red. (B) Drosophila embryo stained to measure rho reporter readout in the neuroectoderm with quantitative expression measured using confocal laser scanning microscopy. The embryo is oriented anterior up and dorsal to the right. rho-lacZ mRNA is shown in red, seven even-skipped mRNA stripes in green, and snail mRNA in the mesoderm (left) also in green. Average expression after normalization over embryos containing the wild-type enhancer in the region of interest (white box) is plotted in black at right; dashed red line indicates standard error; vertical dotted line indicating dorsal-most boundary of sna expression. (C) Effects on expression of removal of single activator sites \u2013 expression levels decrease by a similar extent when either Dorsal or Twist activator sites are removed. (D) Effects of double activator site mutation \u2013 expression levels are variably impacted depending on which pairs of sites are affected. (E) Effects on expression of removal of pairs of Snail repressor sites, leading to partial depression in ventral regions, or no derepression. For panels C\u2013E, solid black lines indicate wild-type enhancer expression; solid blue lines indicate expression of the tested rho enhancer; dashed red lines indicate standard error; n = number of embryos imaged for the given construct shown (in top right of each panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Averaged quantitative expression for each of the 38 variations of the rho enhancer that were tested; standard error of measurements indicated by gray lines surrounding mean values. Number of embryos imaged for each construct noted in corner (n).\n\n## Results\n\n### Generation of a quantitative deep perturbation dataset\n\nrho is first expressed in two lateral stripes in the presumptive neurogenic ectoderm of the Drosophila embryo under cooperative activation by Dorsal and Twist (Ip et al., 1992; Hong et al., 2008). Expression is excluded from the mesoderm (ventral region) by Snail, a short-range repressor that interferes with activators located within ~100 bp of a Snail binding site (Gray et al., 1994). We systematically mutated all activator and repressor binding sites in rho neurectodermal enhancer, removing Dorsal or Twist sites individually or in pairs to diminish activation, and removing multiple Snail sites to reduce repression (Figure 1, Figure 1\u2014figure supplement 1, and Supplementary file 1). All 38 enhancers were cloned and integrated into the fly genome using a site-specific integration vector (Bischof et al., 2007). We measured the transcriptional output using fluorescent in situ hybridization (FISH) and confocal laser scanning microscopy, and analyzed gene expression data using an image-processing pipeline (Ay et al., 2008). Expression data from a total of 935 images - a minimum of ten embryos per construct - was normalized and combined to provide average expression patterns for each enhancer variant (Figure 1B, Figure 1\u2014figure supplement 1, and Supplementary file 2).\n\nMutation of any single Dorsal or Twist activator binding site resulted in a measurable reduction of peak intensity and retraction of the rho stripe from the dorsal region, where activators Dorsal and Twist are present in limiting concentrations (Liberman et al., 2009; Rushlow et al., 1989). Strikingly, despite the differences in predicted binding affinities and relative positions of the motifs, the elimination of any site individually had similar quantitative effects, reducing gene expression to approximately 60% of the peak wild-type level (Figure 1C, Figure 1\u2014figure supplement 1, and Supplementary file 2). In contrast to this uniform picture, the impact of mutation of combinations of two Dorsal or Twist binding sites was highly variable, ranging from slightly lower expression to almost complete loss of activity (Figure 1D, Figure 1\u2014figure supplement 1, and Supplementary file 2). Overall, the double activator site mutagenesis revealed a complex picture of the contributions of activator sites to gene expression. We hypothesize that the variable effects of different pairwise mutations, as opposed to the rather similar effects of individual site loss, indicates that there are multiple and distinct thresholds for specific biochemical events occurring on the enhancer. In contrast to the perturbation of Dorsal and Twist elements, removal of Snail repressor binding sites revealed stark differences in the significance of individual motifs for overall activity. Mutation of all four Snail sites caused pervasive expression in the mesoderm, as expected, while constructs with a single intact Snail2 or Snail3 site showed substantial but not complete repression (Figure 1\u2014figure supplement 1 and Supplementary file 2). Snail1 and Snail4 motifs were not nearly as effective at mediating repression, although these have similar binding affinities (Figure 1E, Figure 1\u2014figure supplement 1, and Supplementary file 2). Snail4 and Twist2 sites overlap, which may impair Snail binding and reduce repression efficiency.\n\n### Thermodynamic modeling of rho enhancer perturbation dataset\n\nDirect examination of the data described above showed that the inter-relationships among activator and repressor sites were complex, and mutant phenotypes were not simply additive. Such complexity is a familiar facet of cis-element mutagenesis studies (Swanson et al., 2010; Evans et al., 2012). To extract the non-intuitive, quantitative information about transcription factor function and interactions from these results, we created an extensive set of quantitative models. Based on the likely importance of cooperativity (Kazemian et al., 2013), we tested models that incorporated a variety of conceptions of distance-dependent homotypic and heterotypic cooperativity, as well as different distance-dependent 'quenching' or repressive interactions between repressors and activators (Veitia, 2003; Wagner, 1999; Kulkarni and Arnosti, 2005; Arnosti et al., 1996; Barolo and Levine, 1997). We systematically tested continuous and step functions to determine possible distance relationships affecting interactions. In all, 15 formulations for cooperativity and eight formulations for quenching were employed (Table 1). Combining these two types of formulations resulted in 120 different models, which were trained on the quantitative expression data of the 38 enhancer variants. Parameters were estimated using CMA-ES, a global genetic algorithm, and overall performance was calculated from the fit to all constructs, using root mean square error (RMSE) as the objective function (Hansen et al., 2003). Examination of model performance at three levels \u2013 global RMSE, construct-by-construct RMSE, and specific portions of the expression patterns - provided complementary insights into the nature of how the training data are fit, and the potential utility of the models on other enhancer sequences.\n\n**Table 1.**\n Parameters in each model. Number of parameters in cooperativity and quenching model combinations. 3 scaling factor parameters for Dorsal, Twist, and Snail are included in all models. Column 1 contains the nomenclature and number of parameters (in parentheses) for all 15 cooperativity models. Columns 2\u20139 in Row 2 contain nomenclature and number of parameters (in parentheses) for 8 quenching models. Each cooperativity and quenching scheme is described in the materials and methods section. The parameters being fitted for continuous functions are clearly laid out in this section. The following example illustrates the parameters in binned cooperativity and quenching functions. Model C14Q5: Parameters 1\u20133 are scaling factors for Dorsal, Twist, and Snail respectively. Parameters 4\u201315 reflect cooperativity (separate parameters existing for each type of protein-protein interaction)\u2013 parameters 4\u20136 represent Dorsal-Dorsal cooperativity (at 1\u201360 bp, 61\u2013120 bp, and 121+ bp between bound Dorsal proteins), likewise parameters 7\u20139 represent Twist-Twist cooperativity, parameters 10\u201312 represent Dorsal-Twist cooperativity, and parameters 13\u201315 represent Snail-Snail cooperativity. Paramters 16\u201323 reflect quenching \u2013 parameters 16\u201319 represent Snail quenching Dorsal (at 1\u201325 bp, 26\u201350 bp, 51\u201375 bp, and 76+ bp between bound proteins), likewise parameters 20\u201323 represent Snail quenching Twist.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"8\">Quenching Model</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cooperativity Model</td>\n      <td>Q1 \u2013 MSB (0)</td>\n      <td>Q2 \u2013 Linear (2)</td>\n      <td>Q3 \u2013 Logistic (2)</td>\n      <td>Q4 \u2013 Gaussian (2)</td>\n      <td>Q5 \u2013 Binned 4_25 (8)</td>\n      <td>Q6 \u2013 Binned 4_35 (8)</td>\n      <td>Q7 \u2013 Binned 4_45 (8)</td>\n      <td>Q8 \u2013 Binned 10_10 (20)</td>\n    </tr>\n    <tr>\n      <td>C1 \u2013 Linear (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C2 \u2013 Logistic (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C3 \u2013 Gaussian (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C4 \u2013 Binned 2_25 (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C5 \u2013 Binned 2_50 (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C6 \u2013 Binned 2_75 (4)</td>\n      <td>7</td>\n      <td>9</td>\n      <td>9</td>\n      <td>9</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>C7 \u2013 Binned 3_50 (6)</td>\n      <td>9</td>\n      <td>11</td>\n      <td>11</td>\n      <td>11</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td>C8 \u2013 Binned 3_60 (6)</td>\n      <td>9</td>\n      <td>11</td>\n      <td>11</td>\n      <td>11</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td>C9 \u2013 Binned 3_70 (6)</td>\n      <td>9</td>\n      <td>11</td>\n      <td>11</td>\n      <td>11</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td>C10 \u2013 Protein Binned 2_25 (8)</td>\n      <td>11</td>\n      <td>13</td>\n      <td>13</td>\n      <td>13</td>\n      <td>19</td>\n      <td>19</td>\n      <td>19</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>C11 \u2013 Protein Binned 2_50 (8)</td>\n      <td>11</td>\n      <td>13</td>\n      <td>13</td>\n      <td>13</td>\n      <td>19</td>\n      <td>19</td>\n      <td>19</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>C12 \u2013 Protein Binned 2_75 (8)</td>\n      <td>11</td>\n      <td>13</td>\n      <td>13</td>\n      <td>13</td>\n      <td>19</td>\n      <td>19</td>\n      <td>19</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>C13 \u2013 Protein Binned 3_50 (12)</td>\n      <td>15</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>23</td>\n      <td>23</td>\n      <td>23</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td>C14 \u2013 Protein Binned 3_60 (12)</td>\n      <td>15</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>23</td>\n      <td>23</td>\n      <td>23</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td>C15 \u2013 Protein Binned 3_70 (12)</td>\n      <td>15</td>\n      <td>17</td>\n      <td>17</td>\n      <td>17</td>\n      <td>23</td>\n      <td>23</td>\n      <td>23</td>\n      <td>35</td>\n    </tr>\n  </tbody>\n</table>\n\nAt a global level, the performance of the models was clearly co-dependent on both the cooperativity and repression formulations (Figure 2A). Overall cooperativity formulation performance varied according to the type of quenching formulation; the best quenching scheme for one cooperativity scheme was not necessarily optimal for other cooperativity schemes. Such interactive effects are likely a reflection of parameter compensation. Models with more parameters tended to outperform those with the fewest, as expected, but it was notable that this was not a strict correlation; the models with the most parameters were not as effective as those with fewer. Additionally, there were measureable differences between models with identical numbers of parameters, suggesting that the different formulation of the schemes was interrogating aspects of enhancer grammar critical for the rho enhancer variants we were fitting. Best overall fits were observed using a model with cooperativity values parameterized in three 'bins' of 60 bp (scheme C14) and quenching in four small 25 or 35 bp bins (schemes Q5 and Q6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heat map representation of results of thermodynamic modeling of rho perturbation dataset; the performance of each model is represented by a rectangle. Models were globally fit using Root Mean Square Error (RMSE), scale shown at right. Each model employs a distinct repression (quenching) scheme represented on horizontal axis, and a protein-protein cooperativity scheme on vertical axis. (B) Construct-by-construct performance ranking of 120 thermodynamic models ranked top to bottom. Vertical features are indicative of specific constructs that showed overall better or worse fit. (C) Examples of fitting of individual constructs by models ranking high (C14Q5; 1st overall), medium (C8Q7; 96th overall), or low (C4Q4; 120th overall). Black points indicate measured average mRNA levels; red lines are model predictions. The high-ranking model correctly predicts both low expression (repression) in mesoderm and activation in neuroectoderm, medium model exhibits modest deviations in prediction of both repression and activation, and the low-ranked model exhibits particularly poor fits for repression activity.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Random five-fold cross validation was performed on 24 models as described in Materials and Methods to test for overfitting. Compared to fitting on the complete data set, most models showed only a modest decrease in performance in predicting left out sets (left column, complete data set, right column, modeling on randomly selected partial data sets). In contrast, selective removal of specific data sets corresponding to one type of mutagenic perturbation (all constructs with mutation to Snail sites, all constructs with mutations to Dorsal sites, etc.) led to parameter sets that were generally significantly less able to fit left-out data (central column). The comprehensive perturbation of the different types of motifs on the enhancers was thus an essential aspect of good model fitting. The low-performing model C4Q4 actually performed better during cross-validation, likely because the parameters determined from the original run do not represent a global minimum. (B) Construct-specific RMSE scores illustrate impact of specific portions of the data set on model performance. Here, predictions for 38 constructs are plotted for the 24 models that were fit on a data set lacking all Snail mutant constructs. The performance is specifically diminished for constructs 23\u201333, which represent Snail mutant enhancers (compare to Figure 2B). (C) Removal of bHLH site perturbation constructs changes little in overall fitting. (D) The removal of constructs with Dorsal site mutations is associated with poorer performance across a spectrum of models on constructs that represent Dorsal site mutants (columns 8, 11\u201312, 15\u201316). (E) Similarly, omission of mutant constructs with perturbed Dorsal and Twist sites degrades performance especially on constructs 4\u20135, 9\u201310, 14, 17\u201321 that represent Dorsal+Twist mutations. (F) Removal of Twist alone mutants especially impacts fitting on construct 17, the Twist1+2 mutant construct. Weak performance of C11Q4 and C2Q6 across the spectrum in B, C, and D represents suboptimal parameter estimation by the genetic algorithm specifically in these runs.\n\nTo examine construct-specific performance, we plotted a heat map illustrating individual construct fits for all 120 models (Figure 2B). The models, represented by rows, were ranked from best to worst based on global performance, and individual fits for each of the 38 rho enhancer variants were plotted in columns. The higher ranked models (blue rows) have generally lower RMSEs across all constructs, and groups of models with similar structures had similar patterns of better or worse performance on particular constructs. Some constructs were fit generally less well by most models. Those constructs containing the wild-type ensemble of activators (columns 1, 25, 28, 32) were among those that were less well fit than the bulk of constructs, from which we had removed activator sites; apparently the generally narrower neuroectodermal expression pattern of those constructs with some activator sites removed drove overall parameter fitting. Individual plots of the measured and predicted activity of individual enhancer modules show that some error arises from the models underestimating the activator potential specifically in more dorsal regions of the embryo, where activator concentration is limiting (Figure 2C; e.g. construct 1: DMRW). The lower quality fit for these constructs does not represent a model failure; rather, these constructs are likely to be especially informative for activator function, and a modeling effort that entirely lacks these types of constructs would be more over-fit and less informative than the present one. Further examination of individual plots for specific genes provides additional insight into the nature of which features influence RMSE scores the most (Figure 2C). A top-ranking model (C14Q5) accurately captures high and low levels of Snail repression, deviating only in underestimating the expression of rho in regions most limiting for Dorsal and Twist. An intermediate-scoring model (C8Q7) was partially successful in capturing general trends of activation with occasional overestimation of activity. This model misestimated Snail repression in some cases as well. The lowest performing model (C4Q4) suffered from poor estimation in Dorsal/Twist activity, as well as a general absence of repression by Snail.\n\nThermodynamic models calculate protein occupancy on an enhancer using descriptions of binding preferences distilled from position weight matrices (PWMs), which can incorporate in vitro or in vivo protein-DNA interaction data. A number of studies have tested DNA-binding preferences of Dorsal, Twist, and Snail, therefore we tested the effects of different PWMs on model performance. Three similar but non-identical PWMs were tested for each factor, and all possible combinations of these PWMs were utilized in refitting the data set with a selection of 24 of the entire set of models, including most of the top performers. Overall ranks of model performance remained similar, although RMSEs were lowest using the PWM of Snail that was employed in the global analysis in Figure 2; this PWM predicted all four sites previously identified by in vitro footprinting (Figure 3). Thus, the biophysical information about protein-DNA interactions for the transcription factors in this system appears to be sufficiently complete to provide a robust platform for thermodynamic modeling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig3-v1.jpg)\n\n**Figure 3.:** (A) Three versions of each binding site were considered as discussed in Materials and methods, drawing from previously reported in vitro or in vivo binding studies. (B) The correspondence between previously identified bindings sites from DNAseI footprinting studies (colored squares) and predicted binding sites using the diverse PWMs (circles) is superimposed on the structure of the rho enhancer. The size of the circles indicates the significance of the match using the particular PWM for that factor; Twist sites in green, Dorsal in blue, and Snail in red. (C) Heatmap showing global performance of 24 selected models using 27 different PWM combinations for Dorsal, Twist and Snail. Results were clustered by performance; columns of PWM settings were arranged with lowest average RMSE values to the left, then rows of models were arranged with lowest global RMSE towards the top. (D) PWMs used for different settings are denoted by \u2018X\u2019s; Snail3 PWM (used in the rest of this study) shows strong correlation with best model fitting.\n\nIn addition to information about biophysical parameters of the system, model performance can be dramatically influenced by the nature of the perturbations studied. We used cross-validation, a statistical technique in which segments of the data set are left out during model fitting, to reveal possible overfitting, and determine the impact of certain portions of the data set on overall success in fitting. We performed cross-validation for the 24 models studied above both by leaving out specific parts of the dataset with common attributes (e.g. all Dorsal or Snail site mutations) as well as by randomly removing portions of the dataset. We used these two complementary approaches to not only test how much data is needed for the model fitting to be successful, but also to emphasize how important experimental design is in a study such as this one. Some studies rely on rely on saturation mutagenesis to achieve the same effect, but testing thousands of variants is impractical in this system, so a targeted survey was called for (White et al., 2013). As anticipated, models were in general less able to fit constructs that were left out of the dataset, indicating the contribution that these particular enhancer constructs made to the fitting (Figure 2\u2014figure supplement 1). Despite similar performance on the entire dataset, individual models showed differing levels of sensitivity to changes in the scope of the data set used for model fitting. For instance, RMSE values for C13Q5 were modestly increased by either systematic or random leave-sets-out treatment, while C11Q4 was more dramatically impacted. In general, removal of entire classes of constructs had a more profound impact than removal of randomly selected constructs.\n\nTo better understand how specific constructs contribute to model performance, we analyzed how leaving out certain sets of constructs affects model predictions on each individual construct, including those used for fitting and those left out (Figure 2\u2014figure supplement 1). The most profound effects were seen with the omission of the Snail repressor site constructs, where almost all models had striking increases in RMSE for all Snail constructs. Evidently, the elimination of activator sites alone is not sufficient to provide insights into how Snail affects the enhancer\u2019s expression. Collectively, the scope of mutations assayed, targeting recognized Twist, Dorsal, and Snail sites, was sufficient to provide the required information to the modeling effort. The different effects of activator and repressor site mutations illustrate the importance of perturbation of each of these elements to fully explore the functional terrain of the enhancer; for a small number of constructs, a random perturbation of cis-regulatory sequences may not uncover the most informative changes related to transcriptional relationships (Patwardhan et al., 2012; Sharon et al., 2012; Smith et al., 2013).\n\nAll thermodynamic models used here characterized transcription factor activity by estimating parameters for activation and repression potential, as well as the distance-dependence of cooperativity and repression. Several broad trends emerged from analysis of parameter values across many model types, revealing possible biological implications for the modeled enhancer (Figure 4, Figure 4\u2014figure supplement 1, Supplementary file 3). First, overall model performance was improved by specifying separate parameters for activator and repressor cooperativity (Figure 2A; C1-9 vs. C10-C15). In these latter models, repressor-repressor cooperativities were consistently small, implying that different Snail sites did not show more than additive contributions, a finding that is consistent with the induction of localized chromatin compaction by this class of short-range repressor, which may interfere with simultaneous interactions by repressors (Li and Arnosti, 2011). Activator-activator cooperativities were in contrast uniformly high, and in general did not show sharp distance dependencies. Such interactions may represent indirect interactions among activators, and may reflect joint repulsion of nucleosomes, or cooperative attraction of coactivators important for engaging the transcriptional machinery. The loose cooperative interactions of activators would explain the need for clustering of these proteins\u2019 binding sites without strong constraints on their exact positioning, a flexibility that is seen with many developmental enhancers (Figure 4B; Arnosti and Kulkarni, 2005). This long-distance cooperativity contrasts with the short-range interactions often included in thermodynamic descriptions of transcription factor cooperativity (Segal et al., 2008). A second trend noted in many but not all models was the distance-dependence of transcriptional repression, a feature inferred from previous studies of the Knirps, Snail, and Giant short-range repressors (Gray et al., 1994; Arnosti et al., 1996; Hewitt et al., 1999); (Figure 4\u2014figure supplement 1B; Supplementary file 3). Thus, the overall landscape of estimated parameters both reflects certain known aspects of repression, and sheds light on activator cooperativity, which may involve primarily indirect, not rigidly constrained interactions in this system.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative estimated cooperativity parameters for Dorsal and Twist transcriptional activators show a trend of high levels of cooperativity with little distance dependence, consistent with indirect, long-range effects i. Dorsal-Dorsal, ii. Dorsal-Twist, iii. Twist-Twist, and iv. Snail-Snail cooperativity values of model C13Q3. Low values estimated for repressor cooperativity are consistent with weak interactions between Snail proteins. One of the five runs for fitting this model had significantly higher RMSE than the other four; the corresponding parameters are indicated by a gray line. Other runs produced similar RMSE and parameters (magenta and blue). (B) Illustration of how global long-range cooperative interactions between activators permit relaxed constraints on binding site arrangement, while distance-dependent repressor positioning anchors Snail sites to activator sites.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Scaling factors (related to estimated transcription factor 'potency') identified by 120 models for i. Dorsal, ii. Twist, and iii. Snail. Models ranking 1\u201334 had similar, lower scaling factors for Dorsal, compared to relatively higher values for models ranking 35\u201386. The scaling factors for the lowest ranked models 87\u2013120 varied widely. No such trends were observed for better or worse performing models with respect to Twist scaling factors; significantly, there are only two Twist sites on the minimal rho enhancer, and thus fewer perturbations to constrain these values. Snail scaling factor values were clustered for the top 40 models, and then showed greater variation for lower performing models. For each model, the scaling factor is shown for the parameter estimation run (of five total) with the lowest RMSE. (B) Parameters estimated for model C11Q8 for i. scaling factors, ii. homotypic and heterotypic cooperativity, and iii. quenching parameters representing action of Snail on Dorsal and Twist. Global parameter estimation was carried out five times, with overall RMSE shown iv.. Although global fits were very similar, the parameter values vary, and showed evidence of compensation. In particular, the scaling factor for Twist obtained in the first and second runs (green triangle and blue square) is higher than the values obtained in the other runs. This higher scaling factor parameter is associated with a markedly lower Twist-Twist homotypic cooperativity parameter, shown in position 3 (the only interval for this model that is filled; dashed line in lane 4 signifies that there are no Twist sites at the spacing represented by this interval). The trade-off between overall activity and cooperativity is likely to account for much of the second order effects noted for many models (Figure 4\u2014figure supplement 2). In iii., Snail quenching parameters for action on Dorsal (1\u201310) and Twist (11\u201320) show generally lower values for more distant 'bins', consistent with a short-range of action.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The 24 selected models used for PWM and cross validation were examined for first- and second-order relative sensitivity (complete results in Figure 4\u2014figure supplement 2; Figure 4\u2014figure supplement 2\u2014source data 1). Here we show high-scoring C14Q5 model (A), as well as lower-scoring C3Q4 and C2Q1 models (B, C). As shown with these three examples, most parameters exhibited much higher second-order than first-order effects, indicating that compensatory relationships among parameters are predominant. Even with such compensation, certain types of parameters (e.g. relatively high activator cooperativities) are preferred (also seen in Figure 4\u2014figure supplement 1). Model structures influenced the first- and second-order sensitivities; models using quenching schemes Q2-4 exhibited a significant degree of first order sensitivity for the Dorsal scaling factor (B), while almost every other model combination showed a significant extent of first-order sensitivity for the Snail scaling factor (A, C). Overall sensitivities, first- and second-order combined, were dominated in most models by those for the Snail scaling factor, consistent with the significant impact the particular Snail PWM had on modeling performance (see Figure 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig5-v1.jpg)\n\n**Figure 5.:** Discovery of short-range repression from modeling of rho perturbation dataset. (A) High ranking model C13Q6 (3rd overall) correctly predicts distance-dependent significance of Snail sites within enhancer element; specifically, the third but not fourth construct positioned ectopic Snail binding sites (purple balls) close enough to Dorsal 1 and Dorsal 4 motifs to repress the expression in ventral-most parts of the embryo. (B) lower ranking model C2Q7 (78th overall) correctly predicts activation potential, but fails to detect distance effects impacting repression by Snail. (C) Shows cartoons of the qualitative expression found by Gray and colleagues and the reporter genes tested in embryos (Gray et al., 1994). (D) Correctly predicted expression patterns of cis-regulatory elements i. D. melanogaster vnd enhancer, ii. D. melanogaster twi proximal element, iii. D. erecta rho enhancer, and iv. D. ananassae rho enhancer. X-axis denotes distance from ventral end of the embryo, and Y-axis denotes expression values. Predictions of model C14Q5 (ranked 1st overall) are shown as red lines; measured average transgene expression in black points.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig6-v1.jpg)\n\n**Figure 6.:** (A, B) neuroectodermal elements scored for repression by Snail and activation by Dorsal and Twist, respectively. (C, D) mesodermal elements scored for lack of repression by Snail and preferential activation in mesoderm, respectively. Lowest ranked models performed poorly for correct prediction of Snail activity on neuroectodermal enhancers, but were also not liable to make a false positive call on Snail activity for mesodermal elements (A, C). The D. erecta rho element was correctly called by most models, while some sog, vn, vnd, and brk constructs were less well fit by most models, indicating that there are likely enhancer-specific features of these elements that are not sampled by rho variations. For mesodermal elements derived from snail and twist proximal regions, those models that correctly scored Snail activity as low were able to produce more 'mesoderm-specific' type patterns. No model scored consistently highly across all constructs, but many performed well in a complementary fashion, suggesting that individual models are not overfit in identical manners. Activity of regulatory elements was experimentally measured in transgenic D. melanogaster, and output compared with the predicted expression from 24 models thermodynamic models fit on D. melanogaster rho expression. Fitting for predicted vs. measured expression was assessed using quantitative measures for correct expression as described in Materials and Methods. Lower scores represent better fits. D.erecta, D.ananassae, D.mojavensis, D.grimshawi, and D.virilis putative rho elements were assayed (sequences indicated in Supplementary file 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig7-v1.jpg)\n\n**Figure 7.:** (A) Predicted expression activity of a genomic region (36 kb) flanking the neurectodermal brk gene, using a panel of 24 models, including 21 higher and three lower performing models. Blue marks indicate predicted mesodermal pattern, red neuroectodermal. The transcribed area for brk is indicated by the black rectangle; green peaks indicate in vivo binding for Dorsal, Twist, and Snail; previously mapped embryonic enhancers are indicated by gray rectangles. Rows of plots below the gene show expression patterns of: first row \u2013 top model, second row \u2013 composite of all 24 model predictions, third row \u2013 average of all 24 model predictions in solid black with standard deviation from the mean shown above and below in dotted black lines. Note that the average plot is similar to a plot of a weighted average using RMSEs or AICs to weight each model\u2019s output. (B) Similar scan of the even-skipped locus (32 kb), which is not regulated by Dorsal, and where few areas are consistently identified as potential Dorsal/Twist/Snail enhancers.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08445/elife-08445-fig7-figsupp1-v1.jpg)\n\nAs we noted in previous studies, estimated parameters from thermodynamic models show different levels of sensitivity due to the structure of models and of data (Dresch et al., 2010). We tested the set of 24 models with synthetic data sets to determine sensitivities, and determined that most parameters showed extensive mutual dependence and compensation, evidenced by the low first-order and high second-order sensitivities (Figure 4\u2014figure supplements 1 and 2). The observed convergence of cooperativity and quenching parameters for a number of models during our data fitting thus suggests that although first-order sensitivities are low, there is important information inherent in these values.\n\nThe objective of our study was to develop a quantitative understanding of novel enhancer sequences, using our models in a predictive mode. To test their efficacy, we first asked whether the perturbation analysis and modeling of rho was capable of uncovering a key property of modular enhancers in the embryo, namely the short range of transcriptional repressors that prevents 'cross-talk' with other nearby elements (Gray et al., 1994; Courey and Jia, 2001; Payankaulam et al., 2010). Previous work showed that Snail protein is representative of this major functional class of repressors, in studies that involved moving Snail binding sites within transcriptional regulatory regions (Gray et al., 1994). Our perturbation dataset did not involve moving Snail binding sites around, however, the top third of models in our test set were able to accurately capture the effects of loss of Snail sites from a 700 bp native rho element, as well as correctly characterize modified enhancers in which novel Snail sites were inserted into active as well as inactive locations (Figure 5A\u2013C). To determine whether modeling from rho can be broadly extended to other regulatory elements, we measured the quantitative output of other enhancers targeted by Dorsal and Twist, and compared their expression patterns with the predictions of a spectrum of our models. Heterologous elements from D. melanogaster and homologous rho enhancers from other Drosophila species were successfully modeled by the models trained on the rho dataset (Figure 5D and Figure 6).\n\nThe previous assays tested the models on elements already known to act as Dorsal response elements and to bind Dorsal/Twist. To determine whether models would be able to identify and correctly quantitatively score enhancers embedded in general genomic sequences, we tested the panel of models on 30\u201340 kb regions flanking a number of developmental genes. The regions were tiled in 500 bp overlapping sequences and predictions generated with parameters from the rho dataset fitting. Analysis of the neuroectodermal brk and sog genes, as well as the more widely expressed twi gene showed that most intergenic sequences did not give rise to any appreciable predicted expression (Figure 7 and Figure 7\u2014figure supplement 1). To help one visualize how well the models agreed (or disagreed) on particular regions, average predictions from all 24 models were also generated for each 500 bp window, and plotted along with the standard deviation above and below the mean. A strong consensus among the 24 models for activity was found in two regions flanking the brk gene; these regions include mapped embryonic enhancers (primary and shadow) that are known to bind Dorsal and Twist in vivo (Figure 7A). Some regions were less uniformly predicted by the models, and in these cases there was less uniformity about the prediction for mesodermal or neuroectodermal expression, indicating that Snail activity was variably predicted. These predictions tended to agree well with genomic protein occupancy information, although there were some regions predicted as enhancers where there was no protein occupancy measured. In contrast, there were fewer predicted active elements in the region surrounding even-skipped (eve) locus, which is expressed in an anterior-posterior pattern independent of Dorsal/Twist. In addition, for intergenic regions flanking eve, there was greater variability among models in predicted expression levels, patterns of expression, and whether an element was even likely to be active (Figure 7B). Similar results were noted for neuroectodermal and mesodermal-specific short gastrulation (sog) and twist (twi) genes respectively, as well as the non-target gene fushi tarazu (ftz) (Figure 7\u2014figure supplement 1). The use of multiple models as a predictive 'jury' may help overcome the overfitting that is inherent in modeling, as the effects of such bias for a given model may be more or less prominent in different contexts. The ensemble approach of averaging the 24 model predictions provides a convenient metric for transcriptional potential predictions, yet the graphic display of the individual models also serves an important role, to highlight particular regions where there is a high degree of uniformity about the prediction (e.g. primary and shadow brk enhancers) and those in which the models diverge sharply (eve proximal region).\n\n## Discussion\n\nBioinformatic sequence analysis and direct comparison of chromatin features have been used to identify cis regulatory elements in metazoan genomes, however the significance of patterns of binding sites within such elements remains obscure. Many models simply rely on the number of sites to infer some level of activity (Kazemian et al., 2010; Heintzman et al., 2009; Bonn et al., 2012). Our study indicates that the arrangement and quality of transcription factor binding sites contains an essential common 'grammar' of cis-regulatory regions that is shared across distinct regulatory elements; this stands in contrast to recent studies suggesting that in some cases transcription factors may recognize their target sequences primarily through protein-protein rather than protein-DNA interactions (Kulkarni and Arnosti, 2005; Junion et al., 2012). Our models were biologically constrained, leading to structural similarities between the different model formulations. Although this may contribute to the clustering of parameter values we have observed, given the overall quality of predictions across the genome, we believe these models and parameter values to be biologically informative. Predictions of enhancer activity from sequence alone remain a challenge, but our study clearly shows that with a suitable training set, there are identifiable aspects of enhancer composition that allow for functional insights of mesodermal and neuroectodermal genes of the Dorsal regulon. Models such as these can guide future studies that mine population- and species-level variation of genomic sequences (Mackay, 2010).\n\nTwo features were important for the successful implementation of this thermodynamic modeling: development of a high quality perturbation dataset, which in our case involved several dozen carefully designed constructs whose transcriptional output was measured quantitatively, and exploration of a variety of model structures. As we determined when applying these models to genome discovery, using a panel of models provides a more robust platform for interpreting possible regulatory information; the particular parameter sets developed from fitting the rho perturbation data may represent a certain level of overfitting with respect to all potential Dorsal/Twist target enhancers. These errors are partially cancelled out when the predictions of several dozen models can be evaluated, providing in effect a type of 'weather report' showing a certain chance of regulation at each element. Here, we have also used an ensemble approach to combine these predictions, averaging model predictions; an approach similar to that which was implemented in a recent study by Samee et. al. (Samee et al., 2015). However, in their work they use a single thermodynamic model formulation and average the predictions obtained from different parameter sets with similar fits to their perturbation data.\n\nIn addition to recapitulating known facets of cis-regulatory grammar in Drosophila including the distance-dependent activity of repressors, this modeling approach identified critical quantitative features of activator and repressor interactions at enhancers. Specifically, for Dorsal and Twist, key regulators of dorsal-ventral polarity in the early embryo, our modeling predicts strong distance-independent homo- and heterotypic cooperativity between activators, but weak cooperativity between the Snail short-range repressors. These effects are likely linked to chromatin-based activities of these proteins (Li and Arnosti, 2011). Previous, simpler models suggest that direct protein-protein interactions within a range of ~50 bp are likely to dominate such functional interactions (Segal et al., 2008). The extensive survey of model structure allowed us to reject assumptions this simplifying assumption. These predicted properties of transcription factor activity were robustly observed for differently structured models, making us confident that they are biologically relevant and not the result of overfitting, and the initial application of models to genomic sequences points to the future use of these models in genomic characterization of the Dorsal-Twist regulon. Our ability to gain insight into the transcriptional landscape of this network is a proof of concept demonstrating the utility of such a modeling approach for identifying regulatory relationships in other systems.\n\nOur modeling approach was focused on three main regulators of rho activity, and did not take into account additional factors affecting cis-regulatory elements, such as intrinsic chromatin occupancy, modification of transcription factor activity by signaling, or additional proteins involved in regulation of some of the enhancers. Nonetheless, future models will incorporate such additional layers of information in more complex treatments, such as including basal chromatin patterns to bias the accessibility of transcription factor sites (Bryant et al., 2008; Floer et al., 2010). Our study has addressed only a fraction of the diversity of factors present in the fly embryo; we deliberately focused on the early Dorsal regulon for the richness of quantitative resources available to it, including transcription factor concentrations, binding specificity of trans-acting factors, and genomic data on in vivo targets. With continuing advances in genomics and high-throughput technologies, quantitative modeling can extend our knowledge of other regulons, building on extensive descriptions of gene and protein expression, genomic protein occupancy, and genomic variation. A greater promise for modeling the quantitative grammar of genomes will be in 'personalized genomics', in which investigators predict the effects of sequence variation in human populations, and their physiological relevance in development and disease (Corradin and Scacheri, 2014; Newman and Young, 2010).\n\n## Materials and methods\n\n### Reporter gene constructs\n\nThe 318-bp rhomboid neurectodermal enhancers were cloned into AgeI and FseI restriction sites of the pHonda1 pattB-based targeted integration vector (Ip et al., 1992; Sayal et al., 2011). Enhancers were assembled from 40\u201360 bp overlapping synthetic 5\u2019-phosphorylated oligonucleotides with 10 bp overhangs, which were annealed, and then ligated into pHonda1. The footprinted binding sites for Dorsal, Twist and Snail, as well as two predicted E-box motifs thought to be bound by bHLH factors, were mutated as follows using sequences previously shown to affect rho enhancer activity (Ip et al., 1992; Jiang et al., 1991):\n\nDorsal1 - GGGAAAAACAC to TTTAAAAACAC\n\nDorsal2 - CGGAATTTCCT to CGTCAGTTAAT\n\nDorsal3 - GGGAAATTCCC to TCTAGATTATC\n\nDorsal4 - GGGAAAGGCCA to AGGCCTGGTCA\n\nTwist1 - CGCATATGTT to ACGCGTTGTT*\n\nTwist2 - AGCACATGTT to ACGCGTTGTT\n\nSnail1 \u2013 CAACTTGCGG to CAGAGCTCGG\n\nSnail2 - CACCTTGCTG to CAGGAGCTTG*\n\nSnail3 \u2013 CCACTTGCGCT to CCGCCGGCGT*\n\nSnail4 \u2013 GCACATGTTT to GCATATGTTT\n\nbHLH1 - CATTTG to TGATTC*\n\nbHLH2 - CAAGTG to TAGCGA*\n\n(*novel mutations developed for this study)\n\nThe bHLH1 and bHLH2 sites were mutated simultaneously. The mutations are predicted to reduce the binding score for each transcription factor to near background values. Additional wild-type enhancers for other genes were created by PCR amplification from genomic DNA or by assembly using oligonucleotides as indicated above. We used the Clusterdraw bioinformatics tool to identify putative rhomboid regulatory sequences in non-D. melanogaster genomes (Small et al., 1992; Papatsenko, 2007). Supplementary file 1 contains details of rhomboid and other genes\u2019 enhancer sequences and their nomenclature. All constructs were integrated into the same site on chromosome 2 (chromosomal location 51D; Bloomington stock center\u2019s stock #24483). DNA microinjections were performed in-house and by Rainbow Transgenic Flies, Inc. Transgenic lines were made homozygous, and only embryos from homozygous fly lines were used for confocal microscopy.\n\n### Immunofluorescent in situ hybridization\n\nEmbryos were collected and fixed as previously described (Small et al., 1992; Kosman et al., 2004; Janssens et al., 2005). Immunofluorescent in situ hybridization was done essentially as previously described with some modifications (Kosman et al., 2004; Janssens et al., 2005). All washes were done in 1\u2009ml volume. About 50\u2009\u03bcl of fixed embryos stored at -20\u00b0C in methanol were briefly washed six times with 100% ethanol, followed by a wash in xylenes for 30\u2009min, and lastly, six times again with 100% ethanol. The embryos were then washed four times with 50%methanol-50%phosphate buffer-0.1%-Tween 80 (PBT; 137\u2009mM NaCl, 4.3\u2009mM Na2HPO4, and 1.4\u2009mM NaH2PO4) and then with PBT four times, each for 2\u2009min with continuous rocking. Embryos were washed in (1:1, v/v ratio) PBT/ hybridization solution (hybridization solution: 50% formamide, 5X SSC [0.75M NaCl and 75\u2009mM Na-citrate], 100\u2009\u03bcg/mL sonicated salmon sperm DNA, 50\u2009\u03bcg/mL heparin, and 0.1% Tween 80) for 10\u2009min, and then briefly in hybridization solution for 2\u2009min. New hybridization solution was added, and the tubes were placed for 1\u2009hr in a water bath at 55\u00b0C. Previously titrated antisense RNA probes of digU-labeled lacZ and biotin-labeled eve and sna were heated in 65\u2009\u03bcL hybridization solution at 80\u00b0C for 3\u2009min and directly placed on ice for 1\u2009min; hybridization solution was completely removed from the embryos, and the probes were added to the embryos in a final volume of 65\u2009\u03bcL in each tube, and incubated at 55\u00b0C overnight. After incubation, 1\u2009mL of 55\u00b0C hybridization solution was added to each tube; all tubes were rocked at room temperature for 1\u2009min, hybridization solution was changed, and tubes were incubated for another 1\u2009hr at 55\u00b0C, followed by four washes with hybridization solution for 15\u2009min each at 55\u00b0C and with hybridization solution and PBT (1:1, v/v ratio) two times at room temperature for 15\u2009min. Five more washes were done with PBT for 10\u2009min with rocking at room temperature. The embryos were washed with a blocking solution consisting of a mixture of PBT and 10% casein in maleic acid buffer (Western Blocking Reagent; Roche,\u00a0Indianapolis,\u00a0IN 11921673001) (4:1, v/v ratio). 0.5\u2009ml of a 4:1 v/v mixture of PBT and 10X blocking solution containing primary antibodies (3\u2009\u03bcl of sheep anti-digoxigenin, (Roche 11333089001); 1\u2009\u03bcl of mouse anti-biotin (Invitrogen 03\u20133700) was added, and the tubes were rocked at 4\u00b0C overnight. Embryos were washed four times each with PBT for 15\u2009min at room temperature. 0.4\u2009ml of mixture of PBT and 10% casein blocking reagent and PBT (4:1 v/v), containing 8.0\u2009\u03bcl of each secondary antibody (donkey anti-sheep Alexa 555 (Invitrogen A-21436) for detection of lacZ mRNA and donkey anti-mouse Alexa 488 (Invitrogen A-21202) for detection of eve and sna mRNA) Secondary antibodies that had been pre-absorbed for at least 2\u2009hr against fixed yw embryos in PBT and 0.4\u2009\u03bcl of TOPRO-3 DNA dye (Invitrogen, T3605) were also added to each vial. Tubes were covered with aluminum foil to protect them from light and incubated overnight with rocking at 4oC. Embryos were then washed with PBT four times at room temperature for 5\u2009min. with rocking, and washed in glycerol-PBT (7:3, v/v ratio) for 2\u2009hr until the embryos settled to the bottom of the tubes. The embryos were then resuspended in 0.4\u2009mL glycerol-PBT (9:1, v/v ratio) and 0.2\u2009mL of PermafluorTM mounting medium (Fisher TA-030FM), mounted on labeled slides, and covered with large rectangular Corning cover slips (No. 1.5; 24 X 50\u2009mm). The slides were protected from light and stored flat at room temperature until the embryos were imaged.\n\n### Confocal laser scanning microscopy\n\nAn Olympus Spectral FluoView FV1000 Confocal Laser Scanning Microscope (Olympus, Center Valley, PA) configured on an IX81 inverted microscope was used for capturing the confocal fluorescent images. For each scan of mounted embryos on a particular day of imaging, the same microscope settings for wild-type rho transgenic embryos were employed to all images to allow for direct comparison of intensities. The 488\u00a0nm argon laser was used for excitation of the Alexa 488; the 559\u00a0nm solid-state laser was used for excitation of the Alexa 555, and the 635\u00a0nm solid-state laser was used for excitation of the TOPRO-3. Emitted fluorescence was detected using a 500\u2013545\u00a0nm band pass filter for detection of the Alexa 488, a 570\u2013625\u00a0nm band pass filter for detection of Alexa 555, and a 655-755\u00a0nm band pass filter for detection of TOPRO-3. The pinhole aperture was set to 1.0 Airy unit. PMT voltage was set at maximum for images obtained from embryos transgenic for the wild-type rhoNEE enhancer, avoiding saturation of signal intensities. Other constructs were imaged subsequently on a single day without changing any of the microscope settings. Embryos were imaged at a scan speed of 12.9\u2009s/scan and a Kalman average of 2. A total of 21\u201330 confocal images through the Z thickness were acquired for each embryo with a Z-step interval of 1.16\u2009\u03bcm per step. CLSM image data was stored as three separate stacks and projections of images for each channel. The section dimensions were 333\u2009mm in length and width, and 1.73\u2009mm in depth. Fluorescence pixels were recorded as 12-bit images and stored as TIFF files. To control for fading of signal post-staining, rho constructs containing the wild-type ensemble of activators were stained in parallel and used to normalize overall signal intensity for each imaging day. Stained embryos were imaged within a week to minimize loss of signal. Differences in probe bleaching, laser intensity, gain settings of the CCD etc. all impact overall signal intensity. For the 348 control images captured over 53 imaging sessions, the range of average peak intensities, prior to any background subtraction or normalization, was 56.8 \u2013 255 units (only 3 were at 255, saturation value). The mean was 138.0, with a standard deviation of 36.8. Thus, for the large majority of captured signals, the day-to-day differences in intensities were not very great, and normalization procedures were not changing values by large factors. The background signals from non-expressing portions of the embryos were 52.4 +/- 23.8 (S.D.), thus considerably (2X) below the signal; and in all cases the strong signals measured on any day were well above background measured on any day.\n\n### Image processing\n\nAll confocal microscopy images were processed in a six-step procedure involving binary image generation, rotation, resizing, background subtraction, normalization and intensity-value extraction. Binary image generation, rotation and resizing were done as described previously (Myasnikova et al., 2005; Ay et al., 2008). The area of interest for all embryos comprised a region spanning from 40\u201360% egg length on the anterior-posterior axis. Ten samples, uniformly spaced, were taken from this region, plotted together and averaged along the dorsal-ventral axis (as is illustrated in Figure 1). For background subtraction, analysis of background signals from non-transgenic, yw flies showed a parabolic-shape (Bergman et al., 2005; Myasnikova et al., 2005), therefore a quadratic function was fit to the region of the signal representing the dorsal ectoderm, where rho is not expressed, and subtracted from the raw fluorescent signal. To normalize signals, values from each image were normalized to the average peak (>95%) wild-type signal obtained during the same imaging session. This procedure allows for images to be compared for a single construct imaged on multiple days, as well as to compare intensity from one construct to another. The average intensity profiles, along with standard error calculations are given in Figure 1\u2014figure supplement 1 and Supplementary file 2.\n\nFor model fitting, we discretized the continuous expression data. We did this by taking the data in the region from 0\u201340% of the DV axis (approximately 102 pixels in each image), and averaging every 6 pixels to result in 17 data points corresponding to this region; hence a data point every 2.5% of egg height (as is illustrated in Figures 2 and 5). We excluded the dorsal ectoderm from our modeling efforts, as we wanted to focus our attention on the areas of the embryo with varying expression levels across mutant constructs.\n\n### Confocal image dataset\n\nFor the 59 constructs analyzed, a total of 935 embryo images were taken, with a minimum of 10 images per construct. Late stage 5 (pre-gastrulation) cellularizing embryos were used for analysis, and eve expression was used to select the embryos in a narrow age range. Embryos were also selected based on their rotation, so that the rhomboid lateral stripe was near the center of the image, with a sufficient number of pixels in the dorsal region of the embryo for background estimation.\n\n### Sequence analysis\n\nBecause there are slight differences in the reported PWMs for Dorsal, Twist, and Snail, we considered information from a variety of sources. For Dorsal, PWMs were obtained from two sources: a PWM generated by MEME analysis (with default settings) of footprinted binding sites found in FlyReg (Bergman et al., 2005; Noyes et al., 2008), herein referred to as DL1, and bacterial one-hybrid experiments (Zinzen et al., 2006; Noyes et al., 2008; Ozdemir et al., 2011), referred to as DL2. The two position probability matrices were then averaged, and the log values calculated from this averaged matrix were used to yield a third hybrid PWM for Dorsal, DL3. For Twist, PWMs were used from two different SELEX experiments (Zinzen et al., 2006; Ozdemir et al., 2011), herein referred to as TW1 and TW2 respectively. Subsequently, averaging the two PWMs as described above for Dorsal then derived a third hybrid PWM, referred to as TW3. For Snail, three different sources were used: SELEX data from BDTNP (http://bdtnp.lbl.gov), SELEX data from a previously published study (Zinzen et al., 2006), and a PWM generated by MEME analysis of footprinted binding sites found in FlyReg (Bergman et al., 2005; Bailey et al., 2009), herein referred to as SN1, SN2 and SN3 respectively. For analysis of enhancer sequences, we used the MAST program from the MEME software suite to identify putative binding sites (Zinzen et al., 2006; Bailey et al., 2009). The thresholds used in thermodynamic modeling were evaluated by recovery of known footprinted binding sites, although for some settings not all PWMs were able to find all footprinted sites. P-values for binding sites used in Figure 2\u20135 were set at p=0.001 for all factors. PWMs used were: DL1, TW3 and SN3.\n\n### Quantitative data for dorsal, twist, and snail concentrations\n\nQuantitative values for concentrations of Dorsal, Twist and Snail were obtained for early Drosophila embryo (stage 5) from a previously published study (Fakhouri et al., 2010; Zinzen et al., 2006). The published data consisted of 1000 average concentrations for each protein uniformly distributed along the DV axis. Since we were only concerned with the portion of the embryo in the ventral region, we took the region from 0 \u2013 40% of the DV axis and chose a subset of the 1000 data point (17 uniformly distributed data points corresponding to this region; hence a data point every 2.5% of egg height) as our Dorsal, Twist, and Snail concentration gradients. The data used for modeling is given below:\n\nDorsal: 0.85326 0.77516 0.68914 0.59981 0.51152 0.42792 0.35175 0.28472 0.22757 0.18021 0.14193 0.11165 0.08811 0.07001 0.05618 0.0456 0.03746\n\nTwist: 0.93224 0.88219 0.81279 0.70658 0.54216 0.34085 0.17674 0.08318 0.03873 0.01842 0.00892 0.00433 0.00208 0.00097 0.00044 0.00019 0.00008\n\nSnail: 0.985 0.976 0.967 0.957 0.902 0.441 0.043 0.005 0.001 0 0 0 0 0 0 0 0\n\n### Structure of models\n\nThe modeling approach implemented in this study is a thermodynamic-based modeling approach, similar to models used in previous studies (Zinzen et al., 2006; Segal et al., 2008; Fakhouri et al 2010; He et al., 2010;). These models are derived using the law of mass action and thermodynamic equilibrium assumptions. They take information regarding the number and arrangement of TF binding sites, as well as TF concentrations, and output predicted levels of gene expression.\n\nHere, we use thermodynamic models that assume RNA polymerase (RNAP) is recruited by bound TFs, and thus model transcriptional output as proportional to the probability of the enhancer being in an \u2018active state\u2019. Other assumptions used by all models tested in this manuscript include:\n\nTo test different hypotheses about biochemical mechanisms of transcription factor activity on enhancers, several different schemes involving transcription factor cooperativity and short-range repression were implemented in our modeling effort. To create models that considered the diverse cooperativity and repression (referred to as quenching) relationships we propose, all possible pair-wise combinations of the fifteen cooperativity and eight quenching approaches were considered, generating 120 different models.\n\nFor short-range repression, we used three continuous functions (Linear-Q2, Logistic-Q3 and Gaussian Decay-Q4) to describe change in repressor activity the percentage of time that the repressor is actively repressing (or quenching) an adjacently bound activator, as a function of the distance, d, in base pairs, from the repressor binding site to the activator binding site.\n\nWhen implemented, a=1 and b>0 is a model parameter for quenching functions. For cooperativity functions, \u2018a\u2019 and \u2018b\u2019 are both model parameters. An alternative approach involved 'binning' distances between activators and repressors. We fit quenching parameters (Q) for each of the bins. We also used the non-monotonic 'quenching' function (Q1) derived from our analysis of short-range repression by the Giant protein in synthetic enhancer constructs (Hansen et al., 2003; Fakhouri et al., 2010; Suleimenov et al., 2013).\n\nThe binned quenching schemes are described as follows. The distances between binding sites were calculated from the center of the binding sites. Because of minimal center-to-center distances between Snail and Twist or Dorsal, the actual minimal distance possible is 11 bp in the wild-type rho enhancer sequence.\n\nScheme Q5: q1: 1\u201325 bp, q2: 26\u201350 bp, q3: 51\u201375 bp, q4: 76\u2013100 bp\n\nScheme Q6: q1: 1\u201335 bp, q2: 36\u201370 bp, q3: 71\u2013105, q4: 106\u2013140 bp\n\nScheme Q7: q1: 1\u201345 bp, q2: 46\u201390 bp, q3: 91\u2013135, q4: 136\u2013180 bp\n\nScheme Q8: q1: 1\u201310 bp, q2: 11\u201320 bp\u2026 q9: 81\u201390 bp, q10: 91\u2013100 bp\n\nFor cooperativity functions, we use the same functions as above (1\u20133) to describe the multiplicative effect of cooperative binding between two adjacently bound activators, as a function of the distance, d, in base pairs, between the activator binding sites. When implemented as cooperativity functions, a>0 and b>0 are both model parameters.\n\nWe considered two different ways of estimating cooperativity between transcription factors: heterotypic (between Dorsal and Twist) and homotypic (Dorsal-Dorsal, Twist-Twist, or Snail-Snail). We tested three different continuous functions (Linear-C1, Logistic-C2 and Gaussian Decay-C3), which were parameterized with a single pair of parameters for all homotypic interactions, and separate values for Dorsal-Twist cooperativity. Additional models with 'binned' distances were also considered. For each of the binned schemes, we used a simpler form in which all homotypic interactions are parameterized with the same values, and a more complex form where each type of protein interaction for a given bin size receives distinct parameters. Each of these schemes therefore generates two model forms \u2013 binned and protein-binned respectively.\n\nSchemes C4 and C10: c1: 1\u201325 bp, c2: >25 bp\n\nSchemes C5 and C11: c1: 1\u201350 bp, c2: >50 bp\n\nSchemes C6 and C12: c1: 1\u201375 bp, c2: >75 bp\n\nSchemes C7 and C13: c1: 1\u201350 bp, c2: 51\u2013100 bp, c3: >101 bp\n\nSchemes C8 and C14: c1: 1\u201360 bp, c2: 61\u2013120 bp, c3: >121 bp\n\nSchemes C9 and C15: c1: 1\u201370 bp, c2: 71\u2013140 bp, c3: >141 bp\n\nFor a summary of parameters in each model, see Table 1.\n\n### Parameter estimation\n\nA global parameter estimation strategy, CMA-ES (Covariance Matrix Adaptation - Evolutionary Strategy) was applied to estimate the parameters (Hansen et al., 2003; Segal et al., 2008; Fakhouri et al., 2010; Suleimenov et al., 2013). Root mean square error (RMSE) was used as a measure of performance of different cooperativity and quenching schemes, as described previously (Matsumoto and Nishimura, 1998; Segal et al., 2008; Fakhouri et al., 2010). This RMSE was calculated using the 17 discrete expression points, as described above, and corresponding data points coming from the model predictions. Note that we used these 17 points, taken from 0\u201340% of the DV axis, and RMSE which gives each point equal weight, because we wanted to focus on the region of the embryo in which varying expression levels were observed and use the same scoring method with no bias across all construct. Due to the stochastic nature of starting points and fixed maximum number of runs for CMA-ES, estimations were run five times, which was empirically found to be sufficient to produce similar, minimal RMSE values for at least three of the runs in at least 47% of cases.\n\n### Model comparison\n\nSince we tested a number of different model formulations, to evaluate the performance of an ensemble of models, we used multiple different approaches. In one approach (results shown in Figure 7 and Figure 7\u2014figure supplement 1), we calculated the average expression profiles of a panel of models on 500 bp fragments from genomic sequences flanking a number of developmental genes. We also investigated ensemble approaches using weighted averages, including an average weighted by the model\u2019s performance (one minus the RMSE), and an average weighted by the model\u2019s AIC (Akaike Information Criteria), a fitness measure which penalizes for the number of model parameters. The results obtained from these three ensemble approaches were similar. Therefore, only the unweighted average expression profiles are shown in Figure 7 and and Figure 7\u2014figure supplement 1.\n\n### Computations\n\nAll image processing was done using ImageJ and MATLAB. Binding site locations were determined using the MAST algorithm in the MEME suite (Bailey et al., 2009). All thermodynamic modeling was done using code written in C++ and run on the HPCC (High Performance Computational Cluster) at Michigan State University. Scripts to run MAST, create input files and run multiple versions of the model were written in C++ and Python. The C++ source code for the thermodynamic models used is available at http://www.github.com/arnosti-lab/ThermoModel, the MEME suite is available at http://meme.ebi.edu.au/meme/doc/download.html, and the C-source code for the CMA\u2013ES algorithm is available at http://www.lri.fr/~hansen/cmaes_inmatlab.html#cpp (Bailey and Gribskov, 1998; Hansen et al., 2003).\n\n### Cross validation\n\n#### Systematic cross-validation\n\nConstructs were divided into five sets based on the type of mutation as follows; constructs are numbered as shown in Supplementary file 1.\n\nDorsal site knockouts: Constructs 2,3,6,7,8,11,12,15,16\n\nTwist site knockouts: Constructs 4,5,17\n\nDorsal and Twist site knockouts: Constructs 9,10,13,14,18,19,20,21\n\nSnail site knockouts: Constructs 23\u201333\n\nbHLH site knockouts: Constructs 34\u201338 (see Supplementary file 1 for construct details).\n\nParameter estimation was performed using 24 selected models while leaving out data from each of the five sets of constructs. Expression was subsequently predicted for all 38 constructs using parameters obtained, and RMSE over the constructs left out as well as over all 38 constructs was used to analyze the effects of data provided by each set of constructs to the model.\n\n### Random, five\u00a0fold cross-validation\n\nThe 38 constructs to be fitted were separated into 5 randomized partitions of size eight (three partitions) and seven (two partitions). The partitions were computer-generated using the Python random.shuffle method, which is based on the Mersenne Twister algorithm (Zinzen et al., 2006; Matsumoto and Nishimura, 1998; Dresch et al., 2010). This process was repeated five times to give five different partitioning schemes. All 38 constructs were then predicted using parameters from each run, and average RMSE of the constructs left out was considered.\n\n### Sensitivity analysis\n\nSensitivity analysis was performed for the 24 selected models as previously described (Zinzen et al., 2006; Dresch et al., 2010). Uninformative parameters, i.e., those with empty bins, were excluded from the analysis. First-order relative sensitivity denotes the sensitivity of model to changes in values of a particular parameter, while second-order sensitivity denotes the sensitivity of model to changes in values of a parameter in combination with other parameters. A parameter with high first-order relative sensitivity is likely to be informative on its own, whereas a parameter with high second-order relative sensitivity implies that the model may have high predictive power, but the parameter values are not informative on their own due to inter-parameter dependencies.\n\nScoring of predictions from experimentally measured enhancers cloned into pHonda1 that were not included in the model fitting shown in Figure 6.\n\nFor neurectodermal enhancers, a four-point scheme was applied to score Snail repression as well as neurectodermal activation. Snail repression was measured at nucleus 4. Snail repression was scored as:\n\nNeurectodermal activation was scored at the peak in a four-point scheme:\n\nFor mesodermal enhancers, scoring was done on a five-point scale for activation and four-point scale for Snail activity. The activation score is given below:\n\nSnail repression scale is given below:\n",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "0694c141-8dde-4a1d-bde9-44832ff8ada0",
+      "submission_id": "5a2606ed-25a0-4e43-8178-0e2deef1f03d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08445.027](https://doi.org/10.7554/eLife.08445.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Quantitative perturbation-based analysis of gene expression predicts enhancer activity in early Drosophila embryo\" for peer review at eLife. Your submission has been favorably evaluated by Naama Barkai (Senior editor), a Reviewing editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nSayal et al. report extensive experimental and computational studies of rho-expression in the dorsal-ventral patterning gene regulatory network of Drosophila. The aim is to understand how rho-expression depends on binding sites of transcription factors (Twist, Snail, Dorsal) in the rho enhancer. To this end, constructs with individual transcription factor binding sites removed are analyzed and the resulting patterns of rho expression fitted to different models of transcription factor binding, cooperation, and activity.\n\nEssential revisions:\n\n1) The reviewers and the BRE are concerned about the multi-model analysis. They all agree that this analysis is unclear and non-standard. The reviewers were also concerned about the procedure over-fitting to the data. Select comments attached below. Clarification and possibly rethinking the mode of analysis is needed for the revision. One of the main claims of the paper is the ability to estimate biophysical parameters, this claim has to be convincingly demonstrated.\n\nA few comments from the reviewers on this issue:\n\n\"The concept of ensemble of models is not new and is the subject both of Bayesian statistics (which is essentially about learning how much we can trust each possible model) and non-Bayesian formulations (e.g., mixture-of-experts models). I suspect that employing one of these methodologies would actually lead to a useful predictive rule which might apply on the non-rho enhancers. Right now the discussion that points to the models that support the observations is weak.\"\n\n\"Based on their cross-validation results, the individual models are overfit. They claim that fitting a suite of models addresses this because they can identify trends amongst models. However, the set of models is highly related; they vary only in the particular pair-wise interactions that are allowed and the way that the distance-dependence is encoded. I believe it's more appropriate to address overfitting using sensitivity analysis, which they did. Sensitivity analysis should reveal which subset of parameters are well constrained by the data and which are not. But their conclusion is that cooperativity and quenching parameters show extensive mutual dependence, leaving it unclear precisely which parameters they can interpret across models.\"\n\n\"The authors find extensive \"parameter compensation\", meaning that the data does not constrain the model parameters, implying generally a good model fit but poor predictive performance (unless the instances where prediction is sought are similar to examples already seen during model training). Given the large number of parameters, one would expect a good fit (and also a good cross-validation on examples similar to training data) even if the overlap between models and properties of the enhancer, or models among themselves is poor.\"\n\n\"Possibly the question how impressive the predictions are can be settled on the basis of the present data. The overlap between predicted and observed expression levels can be plotted on a scatter plot against distance of the enhancer configuration to the most similar configuration in the training set. Results would differ somewhat depending on what distance measure is used, but I expect one can obtain insight into how serious the overfitting is.\"\n\n2) With regards to the experimental data, rigorous measurement of expression levels by typical in situ is not trivial. The analysis here measured differences in expression level by keeping the acquisition settings on the microscope constant and normalizing maximum expression to a WT stain imaged on the same day. However, there can also be significant error from batch to batch variation in probes and stains, which are not accounted for here. This issue should be addressed by examining batch to batch variability and demonstrating that it's not an issue for their system, or by simulating data with more uncertainty in the levels of expression and see if this qualitatively effects their results.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Quantitative perturbation-based analysis of gene expression predicts enhancer activity in early Drosophila embryo\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai (Senior editor), a Reviewing editor, and three reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance. This includes in particular the minor comments of reviewer #1. In addition, in response to reviewer #2 comment, please be more explicit about the main result that was learnt from your analysis (beside the general modeling success)\n\nReviewer #1:\n\nThe authors have diligently responded to the previous comments and the manuscript is more clear as a result. Overall, I find the main conclusions \u2013 that activators cooperate in a distance independent way while repressors cooperate less and have distance dependent function relative to activators \u2013 to be quite interesting. The modeling strategy is somewhat unusual, and while it's presented fairly clearly in the text, I don't find the figures always give great insight. However, for most aspects, I think readers can assess what they did and draw their own conclusions about the validity of the modeling approach and whether it provided useful insights. I do not see any technical errors that would undermine their main conclusions, and I think they are appropriately circumspect. I can therefore support publication.\n\nReviewer #1 (Minor Comments):\n\nI still have minor concerns about how their imaging data is being analyzed and incorporated into the model. These are mostly issues of clarification and how to make best use of the dataset that they have in hand.\n\nFirst, in response to my previous concern about the variation in their imaging data, the authors quantified variability in their control embryos, which were stained in different batches and imaged on different days, and used to calibrate the acquisition settings of their microscope, thus serving as the effective normalization for peak expression for their test constructs. They analyze the variation in this full set, reporting that their mean peak expression was 138+/- 36.8, and that background was 52.4 +/- 23.8. They are thus seeing about 2X expression above background for their WT controls across all stains by this metric. This is a useful number and it's good to include (I would leave out the qualitative description of it's meaning that follows, but that's a personal preference for numbers over verbal description).\n\nHowever, if increases in background and signal are correlated (for example if you have embryos that are brighter or dimmer overall, which is often the case with fluorescent stains), this might be actually be over-estimating their error. Instead, or in addition, they could include the standard error for the WT images used to calibrate the microscope for each construct in Figure 1, instead of plotting only the average WT trace across all of these data without any error. It's possible that they did not collect sufficient data on the WT constructs during each imaging session, in which case this wouldn't be helpful. An alternative would be to plot the standard error for the average WT trace after normalization.\n\nI'm looking for some clarification on the imaging primarily because many of their constructs decrease or move expression moderately and it's helpful to know whether any of those constructs fall within experimental error. In the methods, it states that they imaged each test construct on a single day, so it's not possible to do the bulk analysis of error described above for each construct. The standard error for each construct shown in Figure 1 is therefore representative of the variation in their dataset. Including the error for WT in Figure 1 would largely address this issue.\n\nI appreciate that they introduced noise into their predictions to try to assess how their error in expression measurement might impact their conclusions. This reveals the sensitivity of the top models, and their likely over-fitting, which confirms the utility of not focusing on a single model, but it is not necessary to include this analysis in this already large paper.\n\nSecond, to clarify how the expression measurements feed into their models, the authors could include a more explicit description of the inputs, outputs and scoring scheme for their models in the section \"Thermodynamic modeling of rho enhancer perturbation dataset\". For example, did they use continuous expression data as their input, or select expression levels at specific points? The latter seems to be the case based on Figure 2C where black dots are specific measurements. How/why were these points selected? The output also appears to be at discrete points based on this Figure, where red lines are predictions and I am assuming that the line is from linking together these discrete points. Finally, the RMSE score they use equally weights errors in regions of high expression and low expression. Some alternative scores have been used in other work to emphasize other features of expression patterns (for example the Sinha group has used the weighted Pattern Generating Potential). It is not necessary to score their models differently, but they should discuss the trade-offs of their particular scoring scheme. And how is the RMSE score calculated? Is it done on the continuous data (red lines in Figure 2 vs. continuous expression measurements), or on the point by point data as above? I could not find this information in the main text or the methods. I suggest that it is included in the main text as a verbal description of their procedures, and any additional information be put in the methods. It also seems possible and potentially useful to include their experimental error in Figure 2, to allow comparison of biological variability against their model performance.\n\nReviewer #2:\n\nThe revised version of Sayal et al. has improved in some ways. Overall I am supportive of this type of work, which involves careful experimental measurements followed by an honest attempt to fit the data to a physically inspired model. The strengths of the paper are the quantitative data, and the attempt to validate the model predictions both by testing the activity of enhancers from other species and by using the model to predict the locations of other enhancers, some of which are already known.\n\nThe main weakness of the paper remains the decision to center the analysis around a collection of 120 related models rather than attempting to find the best model, or a small number of competing models. This gives the analysis a very unsystematic feel; different models are highlighted and put forward in different parts of the paper. The result is that the claims of the paper are vague (that experiments and models can help reveal regulatory principles) rather than something concrete about the grammar of this system. There is no clear statement of what the authors have learned besides the idea that modeling is a good thing.\n\nIn my opinion the issue of over fitting has been dealt with adequately by the experiments in which the activity of orthologous enhancers are predicted and measured and by the demonstration that there is little correlation between the accuracy of new predictions and the similarity of the tested construct to constructs in the training data.\n\nReviewer #3:\n\nThe additional checks requested in the previous round of review alleviate my concern concerning overfitting. My assessment is that this work goes beyond a resource of detailed experimental data, and the statistical analysis unveils aspects of the underlying biology. Detailed analysis of the data can be done in the future and is beyond the scope of this paper. For this reason I recommend publication in eLife.\n",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "163a42d4-d9df-40b5-9516-b716e11924f3",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C1",
+      "claim": "The rhomboid (rho) enhancer directs gene expression in the presumptive neuroectoderm under the control of the activator Dorsal, a homolog of NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "The rhomboid (rho) enhancer directs gene expression in the presumptive neuroectoderm under the control of the activator Dorsal, a homolog of NF-\u03baB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Introduction section and is supported by the experimental design described throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "c323446f-9d42-4f4c-a123-29405fffdbb3",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C2",
+      "claim": "The Twist activator and Snail repressor provide additional essential inputs to the rhomboid enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Twist activator and Snail repressor provide additional essential inputs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A showing the binding sites for these factors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "6ebdb92f-3dff-42ab-a491-f6ea11408295",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C3",
+      "claim": "38 enhancer variants were systematically created by mutating activator and repressor binding sites in the rho neuroectodermal enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically mutated all activator and repressor binding sites in rho neurectodermal enhancer, removing Dorsal or Twist sites individually or in pairs to diminish activation, and removing multiple Snail sites to reduce repression (Figure 1, Figure 1\u2014figure supplement 1, and Supplementary file 1). All 38 enhancers were cloned and integrated into the fly genome using a site-specific integration vector (Bischof et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the systematic mutagenesis approach and references the methods used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "6f4b2aca-dbbd-45a8-bd37-1e3894d5f036",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C4",
+      "claim": "Expression data from a total of 935 images was analyzed, with a minimum of ten embryos per construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression data from a total of 935 images - a minimum of ten embryos per construct - was normalized and combined to provide average expression patterns for each enhancer variant (Figure 1B, Figure 1\u2014figure supplement 1, and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of images analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "aaac3b8b-9172-4ecd-8ecd-ba0aa50d9fc3",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C5",
+      "claim": "Mutation of any single Dorsal or Twist activator binding site resulted in a measurable reduction of peak intensity and retraction of the rho stripe from the dorsal region.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of any single Dorsal or Twist activator binding site resulted in a measurable reduction of peak intensity and retraction of the rho stripe from the dorsal region, where activators Dorsal and Twist are present in limiting concentrations (Liberman et al., 2009; Rushlow et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is directly stated and supported by citations to previous work on activator concentrations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "ded97c99-dcf8-45e1-a8fd-c57870531d42",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C6",
+      "claim": "Elimination of any single activator site individually reduced gene expression to approximately 60% of the peak wild-type level.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, despite the differences in predicted binding affinities and relative positions of the motifs, the elimination of any site individually had similar quantitative effects, reducing gene expression to approximately 60% of the peak wild-type level (Figure 1C, Figure 1\u2014figure supplement 1, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative measurements shown in figures and supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "f21b1675-71c0-4ea1-82b3-d4036fd51d76",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C7",
+      "claim": "The impact of mutation of combinations of two Dorsal or Twist binding sites was highly variable, ranging from slightly lower expression to almost complete loss of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this uniform picture, the impact of mutation of combinations of two Dorsal or Twist binding sites was highly variable, ranging from slightly lower expression to almost complete loss of activity (Figure 1D, Figure 1\u2014figure supplement 1, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the variable effects observed in double mutants with supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "a0a579e0-2a8e-445d-8994-583e5cd1ac6b",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C8",
+      "claim": "Mutation of all four Snail sites caused pervasive expression in the mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of all four Snail sites caused pervasive expression in the mesoderm, as expected, while constructs with a single intact Snail2 or Snail3 site showed substantial but not complete repression (Figure 1\u2014figure supplement 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the experimental results of Snail site mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "9c32d010-00f5-49e3-82a8-730c94a3c5d3",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C9",
+      "claim": "Snail1 and Snail4 motifs were not nearly as effective at mediating repression as Snail2 and Snail3, although these have similar binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Snail1 and Snail4 motifs were not nearly as effective at mediating repression, although these have similar binding affinities (Figure 1E, Figure 1\u2014figure supplement 1, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the effectiveness of different Snail sites despite similar binding affinities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "0933d3e7-5de9-41ab-872c-6305f8eb6fb6",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C10",
+      "claim": "120 different thermodynamic models were created by combining 15 cooperativity formulations with 8 quenching formulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, 15 formulations for cooperativity and eight formulations for quenching were employed (Table 1). Combining these two types of formulations resulted in 120 different models, which were trained on the quantitative expression data of the 38 enhancer variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the model generation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "dc922a0a-9730-49a4-9e3d-c813fa479a4b",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C11",
+      "claim": "Best overall fits were observed using a model with cooperativity values parameterized in three 'bins' of 60 bp (scheme C14) and quenching in four small 25 or 35 bp bins (schemes Q5 and Q6).",
+      "claim_type": "EXPLICIT",
+      "source": "Best overall fits were observed using a model with cooperativity values parameterized in three 'bins' of 60 bp (scheme C14) and quenching in four small 25 or 35 bp bins (schemes Q5 and Q6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the best-performing model structures based on RMSE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "66f5c1b2-5032-4cc4-a5d9-ed6f43ccaeac",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C12",
+      "claim": "Models with more parameters tended to outperform those with the fewest, but this was not a strict correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Models with more parameters tended to outperform those with the fewest, as expected, but it was notable that this was not a strict correlation; the models with the most parameters were not as effective as those with fewer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript analyzes the relationship between model complexity and performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "70dc0ff6-a360-45b3-baf5-56f3f5adcbc3",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C13",
+      "claim": "The variable effects of different pairwise mutations indicate that there are multiple and distinct thresholds for specific biochemical events occurring on the enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the variable effects of different pairwise mutations, as opposed to the rather similar effects of individual site loss, indicates that there are multiple and distinct thresholds for specific biochemical events occurring on the enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis based on the observed data patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "61ee78d2-3cdf-4b63-8556-e50866f9138b",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C14",
+      "claim": "Parameters were estimated using CMA-ES, a global genetic algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters were estimated using CMA-ES, a global genetic algorithm, and overall performance was calculated from the fit to all constructs, using root mean square error (RMSE) as the objective function (Hansen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used for parameter estimation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "ba40557d-5c98-40c3-9790-64f566e6227a",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C15",
+      "claim": "Constructs containing the wild-type ensemble of activators were among those that were less well fit than the bulk of constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some constructs were fit generally less well by most models. Those constructs containing the wild-type ensemble of activators (columns 1, 25, 28, 32) were among those that were less well fit than the bulk of constructs, from which we had removed activator sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript analyzes construct-specific model performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "24bdce54-4068-462e-99a0-33c9fa2bf135",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C16",
+      "claim": "Three similar but non-identical PWMs were tested for each transcription factor (Dorsal, Twist, and Snail).",
+      "claim_type": "EXPLICIT",
+      "source": "Three similar but non-identical PWMs were tested for each factor, and all possible combinations of these PWMs were utilized in refitting the data set with a selection of 24 of the entire set of models, including most of the top performers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes testing different PWM combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "6064222e-6534-4c31-b96a-115d4ddf61fb",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C17",
+      "claim": "Overall ranks of model performance remained similar across different PWM combinations, although RMSEs were lowest using the Snail PWM employed in the global analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall ranks of model performance remained similar, although RMSEs were lowest using the PWM of Snail that was employed in the global analysis in Figure 2; this PWM predicted all four sites previously identified by in vitro footprinting (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares model performance across different PWM settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "9dfc8679-f2b4-47d5-80d2-4f10e9e96f1c",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C18",
+      "claim": "The biophysical information about protein-DNA interactions for the transcription factors in this system appears to be sufficiently complete to provide a robust platform for thermodynamic modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the biophysical information about protein-DNA interactions for the transcription factors in this system appears to be sufficiently complete to provide a robust platform for thermodynamic modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the PWM testing results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "2413fbf1-0b22-4ca7-9009-45cd6e982712",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C19",
+      "claim": "Removal of entire classes of constructs had a more profound impact on model performance than removal of randomly selected constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, removal of entire classes of constructs had a more profound impact than removal of randomly selected constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes cross-validation results comparing systematic vs. random data removal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "e90ae1df-5f26-4c54-91bb-61aff666e0f5",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C20",
+      "claim": "The omission of the Snail repressor site constructs resulted in striking increases in RMSE for all Snail constructs in almost all models.",
+      "claim_type": "EXPLICIT",
+      "source": "The most profound effects were seen with the omission of the Snail repressor site constructs, where almost all models had striking increases in RMSE for all Snail constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript analyzes the impact of leaving out specific construct types during cross-validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "36d53eeb-b2bf-4cb8-99dc-94b65595eb6e",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C21",
+      "claim": "The elimination of activator sites alone is not sufficient to provide insights into how Snail affects the enhancer's expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, the elimination of activator sites alone is not sufficient to provide insights into how Snail affects the enhancer's expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the cross-validation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "d990ff9c-fe06-449b-9df2-57402c15f2e5",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C22",
+      "claim": "Overall model performance was improved by specifying separate parameters for activator and repressor cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, overall model performance was improved by specifying separate parameters for activator and repressor cooperativity (Figure 2A; C1-9 vs. C10-C15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares model performance across different cooperativity parameterization schemes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "14f6233b-18c5-4449-8f03-0bcf1cfb443f",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C23",
+      "claim": "Repressor-repressor cooperativities were consistently small in models with separate parameters for activator and repressor cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these latter models, repressor-repressor cooperativities were consistently small, implying that different Snail sites did not show more than additive contributions, a finding that is consistent with the induction of localized chromatin compaction by this class of short-range repressor, which may interfere with simultaneous interactions by repressors (Li and Arnosti, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript analyzes parameter values and relates them to biological mechanisms with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "57536989-ac8d-4db8-8da9-fa2835ab5e4f",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C24",
+      "claim": "Activator-activator cooperativities were uniformly high and in general did not show sharp distance dependencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Activator-activator cooperativities were in contrast uniformly high, and in general did not show sharp distance dependencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript analyzes parameter values across models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "5880cf4a-13cb-4df5-80e6-bed3c05b37e8",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C25",
+      "claim": "The loose cooperative interactions of activators would explain the need for clustering of these proteins' binding sites without strong constraints on their exact positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The loose cooperative interactions of activators would explain the need for clustering of these proteins' binding sites without strong constraints on their exact positioning, a flexibility that is seen with many developmental enhancers (Figure 4B; Arnosti and Kulkarni, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is presented as an interpretation of the parameter values with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "1b57fd4a-fb76-4cb9-aceb-c29f2f8e252f",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C26",
+      "claim": "Distance-dependence of transcriptional repression was noted in many but not all models.",
+      "claim_type": "EXPLICIT",
+      "source": "A second trend noted in many but not all models was the distance-dependence of transcriptional repression, a feature inferred from previous studies of the Knirps, Snail, and Giant short-range repressors (Gray et al., 1994; Arnosti et al., 1996; Hewitt et al., 1999); (Figure 4\u2014figure supplement 1B; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies this trend in parameter values and relates it to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "93362e7a-5a69-409d-ac38-17f779c943da",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C27",
+      "claim": "Most parameters showed extensive mutual dependence and compensation, evidenced by low first-order and high second-order sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the set of 24 models with synthetic data sets to determine sensitivities, and determined that most parameters showed extensive mutual dependence and compensation, evidenced by the low first-order and high second-order sensitivities (Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "e85fa6a3-a161-4906-9046-974eab452291",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C28",
+      "claim": "The top third of models were able to accurately capture the effects of loss of Snail sites from a 700 bp native rho element and correctly characterize modified enhancers with novel Snail sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our perturbation dataset did not involve moving Snail binding sites around, however, the top third of models in our test set were able to accurately capture the effects of loss of Snail sites from a 700 bp native rho element, as well as correctly characterize modified enhancers in which novel Snail sites were inserted into active as well as inactive locations (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the predictive performance of models on constructs testing short-range repression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "b2eb3c07-130b-4a1d-af86-4943f0863f9a",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C29",
+      "claim": "Heterologous elements from D. melanogaster and homologous rho enhancers from other Drosophila species were successfully modeled by the models trained on the rho dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether modeling from rho can be broadly extended to other regulatory elements, we measured the quantitative output of other enhancers targeted by Dorsal and Twist, and compared their expression patterns with the predictions of a spectrum of our models. Heterologous elements from D. melanogaster and homologous rho enhancers from other Drosophila species were successfully modeled by the models trained on the rho dataset (Figure 5D and Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes testing models on independent enhancer sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "3b9214a7-6d0b-4b48-a822-b8bc84bcfbda",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C30",
+      "claim": "Analysis of the neuroectodermal brk and sog genes showed that most intergenic sequences did not give rise to any appreciable predicted expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the neuroectodermal brk and sog genes, as well as the more widely expressed twi gene showed that most intergenic sequences did not give rise to any appreciable predicted expression (Figure 7 and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes genome scanning results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "2b3c9364-e97a-4309-8d19-39d42bfbfcc4",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C31",
+      "claim": "A strong consensus among the 24 models for activity was found in two regions flanking the brk gene, which include mapped embryonic enhancers known to bind Dorsal and Twist in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong consensus among the 24 models for activity was found in two regions flanking the brk gene; these regions include mapped embryonic enhancers (primary and shadow) that are known to bind Dorsal and Twist in vivo (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares model predictions with known enhancer locations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "f2022adc-860d-471f-9d79-57b2793c0225",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C32",
+      "claim": "There were fewer predicted active elements in the region surrounding even-skipped (eve) locus, which is expressed in an anterior-posterior pattern independent of Dorsal/Twist.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were fewer predicted active elements in the region surrounding even-skipped (eve) locus, which is expressed in an anterior-posterior pattern independent of Dorsal/Twist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript uses eve as a negative control for model predictions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "53a4574f-48f0-4a1b-8992-5a6ec696f3f7",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C33",
+      "claim": "The use of multiple models as a predictive 'jury' may help overcome the overfitting that is inherent in modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of multiple models as a predictive 'jury' may help overcome the overfitting that is inherent in modeling, as the effects of such bias for a given model may be more or less prominent in different contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an interpretation of the ensemble modeling approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "dcdc0a4b-d515-429c-a6b1-02dfeaa1d6ff",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C34",
+      "claim": "The arrangement and quality of transcription factor binding sites contains an essential common 'grammar' of cis-regulatory regions that is shared across distinct regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that the arrangement and quality of transcription factor binding sites contains an essential common 'grammar' of cis-regulatory regions that is shared across distinct regulatory elements; this stands in contrast to recent studies suggesting that in some cases transcription factors may recognize their target sequences primarily through protein-protein rather than protein-DNA interactions (Kulkarni and Arnosti, 2005; Junion et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful cross-enhancer predictions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "471af9fa-c350-40a3-b3c4-c44c20f66b46",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C35",
+      "claim": "Two features were important for the successful implementation of thermodynamic modeling: development of a high quality perturbation dataset and exploration of a variety of model structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Two features were important for the successful implementation of this thermodynamic modeling: development of a high quality perturbation dataset, which in our case involved several dozen carefully designed constructs whose transcriptional output was measured quantitatively, and exploration of a variety of model structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "0532dbc4-9003-428a-95e6-5b7361a96b65",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C36",
+      "claim": "Using a panel of models provides a more robust platform for interpreting possible regulatory information than using a single model.",
+      "claim_type": "EXPLICIT",
+      "source": "As we determined when applying these models to genome discovery, using a panel of models provides a more robust platform for interpreting possible regulatory information; the particular parameter sets developed from fitting the rho perturbation data may represent a certain level of overfitting with respect to all potential Dorsal/Twist target enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the genome scanning results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "f79d0bb2-1cec-4466-b785-075cab2716be",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C37",
+      "claim": "For Dorsal and Twist, the modeling predicts strong distance-independent homo- and heterotypic cooperativity between activators, but weak cooperativity between the Snail short-range repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, for Dorsal and Twist, key regulators of dorsal-ventral polarity in the early embryo, our modeling predicts strong distance-independent homo- and heterotypic cooperativity between activators, but weak cooperativity between the Snail short-range repressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding from the parameter analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "bc6a1d31-e031-4069-a628-aa49ae3dee61",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C38",
+      "claim": "These predicted properties of transcription factor activity are likely linked to chromatin-based activities of these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects are likely linked to chromatin-based activities of these proteins (Li and Arnosti, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "9058d081-3fef-4a43-b8c3-a5382e96bfe9",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C39",
+      "claim": "The modeling approach was focused on three main regulators of rho activity and did not take into account additional factors such as intrinsic chromatin occupancy, modification of transcription factor activity by signaling, or additional proteins involved in regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling approach was focused on three main regulators of rho activity, and did not take into account additional factors affecting cis-regulatory elements, such as intrinsic chromatin occupancy, modification of transcription factor activity by signaling, or additional proteins involved in regulation of some of the enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "c08360ba-0432-459a-9266-e70b67c68fc8",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C40",
+      "claim": "The study deliberately focused on the early Dorsal regulon for the richness of quantitative resources available to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study has addressed only a fraction of the diversity of factors present in the fly embryo; we deliberately focused on the early Dorsal regulon for the richness of quantitative resources available to it, including transcription factor concentrations, binding specificity of trans-acting factors, and genomic data on in vivo targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the system choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "a5ebfbf5-2d32-49f1-8d24-0aff30e4d930",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C41",
+      "claim": "rho is first expressed in two lateral stripes in the presumptive neurogenic ectoderm of the Drosophila embryo under cooperative activation by Dorsal and Twist.",
+      "claim_type": "EXPLICIT",
+      "source": "rho is first expressed in two lateral stripes in the presumptive neurogenic ectoderm of the Drosophila embryo under cooperative activation by Dorsal and Twist (Ip et al., 1992; Hong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "5d269727-406a-41a6-99f6-dea6fbb99a7e",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C42",
+      "claim": "Expression is excluded from the mesoderm (ventral region) by Snail, a short-range repressor that interferes with activators located within ~100 bp of a Snail binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression is excluded from the mesoderm (ventral region) by Snail, a short-range repressor that interferes with activators located within ~100 bp of a Snail binding site (Gray et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "0e89269a-126a-4e77-a1d8-cb75da53d43a",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C43",
+      "claim": "All 38 enhancers were integrated into the fly genome using a site-specific integration vector.",
+      "claim_type": "EXPLICIT",
+      "source": "All 38 enhancers were cloned and integrated into the fly genome using a site-specific integration vector (Bischof et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "1ee0f955-acf1-4f8d-a9d9-d7f52b688659",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C44",
+      "claim": "Transcriptional output was measured using fluorescent in situ hybridization (FISH) and confocal laser scanning microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the transcriptional output using fluorescent in situ hybridization (FISH) and confocal laser scanning microscopy, and analyzed gene expression data using an image-processing pipeline (Ay et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "1b7dc085-d9fc-41b9-8a95-cf15780570e5",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C45",
+      "claim": "Snail4 and Twist2 sites overlap, which may impair Snail binding and reduce repression efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Snail4 and Twist2 sites overlap, which may impair Snail binding and reduce repression efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation for the observed weak repression by Snail4.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "534edf29-cbc7-48bf-9c09-a2f176ba9554",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C46",
+      "claim": "Models trained on the dataset correctly predict activity of evolutionarily divergent regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Models trained on the dataset correctly predict activity of evolutionarily divergent regulatory regions, providing insights into spatial relationships between repressor and activator binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a key finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "51bfb8fa-8f5a-4ef8-8c85-7dfccdf4a10e",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C47",
+      "claim": "The collective predictions of sets of models were effective at novel enhancer identification and characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the collective predictions of sets of models were effective at novel enhancer identification and characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a key finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "4f2d370d-9b18-42d4-b450-e7f391f43df8",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C48",
+      "claim": "The study demonstrates how experimental dataset and modeling can be effectively combined to provide quantitative insights into cis-regulatory information on a genome-wide scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates how experimental dataset and modeling can be effectively combined to provide quantitative insights into cis-regulatory information on a genome-wide scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as the main conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "b43b68b2-3d9f-4d17-aa9b-3ba1ca102e8d",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C49",
+      "claim": "Thermodynamic models employ tools from statistical physics to model gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermodynamic models employ tools from statistical physics to model gene activity, providing a framework for understanding transcription factor interactions with specific DNA sequences to regulate gene expression (Bintu et al., 2005; Ay and Arnosti, 2011; Dresch and Drewell, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "25af86a6-11a0-466a-b85e-d780e87e814a",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C50",
+      "claim": "Previous efforts at thermodynamic modeling in eukaryotic systems have demonstrated that diverse types of data can be fit, providing at least a qualitative level of prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous efforts at thermodynamic modeling in eukaryotic systems have demonstrated that diverse types of data can be fit, providing at least a qualitative level of prediction (Zinzen et al., 2006; Segal et al., 2008; He et al., 2010; Drewell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "964be3b4-5117-4c4c-b60a-01adf1918170",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "claim_id": "C51",
+      "claim": "Earlier modeling studies relied on heterogeneous and low-resolution datasets, inherently limiting modeling effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, earlier studies relied on heterogeneous and low-resolution datasets, inherently limiting modeling effectiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "951a6e0d-9267-446d-9931-5eb0ff010e81",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a quantitative perturbation dataset by systematically mutating 38 variants of the rho enhancer, measuring expression from 935 embryo images. Single activator site mutations uniformly reduced expression to ~60% of wild-type, while double mutations showed variable effects. Snail repressor sites showed differential effectiveness despite similar binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is rigorous with adequate sample sizes (minimum 10 embryos per construct), systematic mutagenesis strategy, and quantitative imaging. The observations are well-documented with figures and supplementary data. The use of site-specific integration controls for position effects, and normalization procedures are described. However, the claim about 60% reduction (C6) lacks statistical testing to determine if differences between sites are truly uniform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "d39a258a-1ce6-4f7d-ac56-a81f3cbf3d4f",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "120 thermodynamic models were created by combining 15 cooperativity and 8 quenching formulations, trained using CMA-ES optimization. Best-performing models used 3 bins of 60 bp for cooperativity and 4 small bins (25-35 bp) for quenching. Model performance did not strictly correlate with parameter count.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comprehensive model exploration is well-designed and systematically tests different hypotheses about transcription factor interactions. The use of RMSE as an objective function is appropriate, and the finding that more parameters don't guarantee better performance suggests the models are capturing biological features rather than simply overfitting. The CMA-ES algorithm is appropriate for this optimization problem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "5b91b7c6-101b-4c4e-be3d-2dfa5f2dad7f",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Models showed construct-specific performance patterns, with wild-type activator constructs being less well-fit. Testing three PWMs for each transcription factor showed that model rankings remained similar across PWM choices, with the Snail PWM matching footprinted sites performing best.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The PWM robustness testing (C16-C17) strengthens confidence in the modeling approach by showing results are not overly dependent on specific PWM choices. The observation that wild-type constructs are less well-fit (C15) is interpreted as these being more informative rather than a failure, which is reasonable but somewhat post-hoc. The correspondence with footprinted sites provides independent validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "2cd52deb-9882-45a3-91e0-6cab4c352063",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-validation revealed that systematic removal of construct classes (especially Snail mutants) had more profound impact on model performance than random removal. Omission of Snail constructs dramatically increased RMSE, indicating that activator site mutations alone are insufficient to constrain repressor function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cross-validation strategy is well-designed and reveals important information about which data are most informative for parameter estimation. The finding that Snail constructs are critical (C20-C21) demonstrates the value of comprehensive perturbation design. However, the manuscript could benefit from more quantitative reporting of RMSE changes across different leave-out strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Parameter analysis revealed that separating activator and repressor cooperativity improved model performance. Repressor-repressor cooperativities were consistently small, while activator-activator cooperativities were uniformly high without sharp distance dependencies. Distance-dependent repression was observed in many models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the parameter trends are described (C22-C26), the biological interpretation requires caution. The high second-order sensitivities (C27) indicate extensive parameter compensation, meaning individual parameter values may not be uniquely determined. The interpretation of loose activator cooperativity (C25) as explaining flexible binding site positioning is reasonable but somewhat circular - the model structure may impose this result. The consistency with prior repression studies (C26) provides some validation, but independent experimental validation of the predicted cooperativity values would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "b6661d7f-1927-471e-b136-92c624609416",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sensitivity analysis showed most parameters exhibited low first-order but high second-order sensitivities, indicating extensive mutual dependence and compensation among parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sensitivity analysis is appropriately conducted and honestly reported. This finding is critical for interpreting the parameter values and suggests that while models may have good predictive power, individual parameter estimates should be interpreted cautiously. This level of transparency about model limitations is commendable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "3bd6bbf2-4c99-406e-979c-cdf13672dbfe",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The top-performing models successfully predicted short-range repression effects in constructs with repositioned Snail sites and accurately modeled heterologous D. melanogaster enhancers and homologous rho enhancers from other Drosophila species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The predictive validation on independent constructs (C28) and evolutionarily divergent sequences (C29) is strong evidence for model generalizability. These are true predictions on data not used for training. However, the manuscript states \"top third of models\" were successful (C28), suggesting some models failed - more detail on failure modes would be informative. The success on divergent species (C29) is particularly impressive and supports the claim of capturing fundamental enhancer grammar.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "142240f1-fbf3-442e-9e8e-e297ac2a4a23",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genome scanning with the model ensemble successfully identified known enhancers flanking the brk gene with strong consensus among 24 models, while showing fewer predictions in the eve locus (a negative control not regulated by Dorsal/Twist). The ensemble approach was effective for enhancer identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genome scanning validation (C30-C32) provides important evidence that models can identify enhancers de novo from sequence. The use of eve as a negative control is appropriate. The strong consensus at known brk enhancers (C31) and reduced predictions at eve (C32) support specificity. However, the manuscript notes some predicted regions lack protein occupancy data, and some known binding regions aren't predicted - these discrepancies deserve more investigation. The claim of \"effective\" identification (C47) is supported but could be more quantitatively assessed (e.g., precision/recall metrics).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "8571b76a-c749-4e58-a7f9-2490fc0dd73a",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using multiple models as a predictive ensemble helps overcome overfitting inherent in individual models, providing a more robust platform for interpreting regulatory information than single models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ensemble approach is well-justified given the parameter compensation issues (C27) and variable model performance on different constructs. The \"jury\" metaphor (C33) is apt. The manuscript demonstrates this with genome scanning where model consensus indicates higher confidence predictions. However, the manuscript could more rigorously compare ensemble performance to individual model performance using held-out test data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "790449fc-06ed-4737-9580-b580269031e9",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that arrangement and quality of transcription factor binding sites contains a common cis-regulatory grammar shared across distinct elements. Success required high-quality perturbation data and exploration of diverse model structures, showing how experimental and modeling approaches can be combined for genome-wide insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The main conclusion (C34, C48) is supported by the successful cross-enhancer predictions and genome scanning results. The identification of key success factors (C35) - comprehensive perturbation data and model diversity - is valuable for future studies. However, the claim of \"common grammar\" (C34) is somewhat overstated given that the study focuses on only three transcription factors in one developmental context. The contrast with protein-protein interaction models is interesting but not directly tested here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "d9e7823d-f122-43ef-bde5-6c28b32c1b5e",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The modeling predicts strong distance-independent cooperativity between Dorsal and Twist activators but weak cooperativity between Snail repressors, effects likely linked to chromatin-based activities of these proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the parameter patterns are consistently observed (C37), the biological interpretation (C38) relies heavily on citation to previous work rather than direct experimental validation in this study. Given the high second-order parameter sensitivities (C27), these specific parameter values may not be uniquely determined. The link to chromatin mechanisms is plausible but speculative without direct chromatin measurements. Independent experimental validation of these predicted cooperativity properties would be needed to fully support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "5d74afb5-5184-409e-aeae-db14362fa4a5",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The variable effects of pairwise mutations (versus uniform single-site effects) suggest multiple distinct thresholds for biochemical events on the enhancer. The weak repression by Snail4 may result from overlap with the Twist2 binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are reasonable hypotheses (C13, C45) based on the data patterns, but they remain speculative. The \"multiple thresholds\" interpretation (C13) is one possible explanation for the variable double-mutant effects, but alternative explanations (e.g., context-dependent cooperativity, non-linear activation functions) are not rigorously excluded. The Snail4/Twist2 overlap hypothesis (C45) is plausible but not directly tested. These claims appropriately use cautious language (\"hypothesize,\" \"may\") but require follow-up experiments for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    },
+    {
+      "id": "c1f96aa3-3358-49f8-bbd3-bc12539e3187",
+      "content_id": "3c3eb870-1ca5-4677-bac1-c9c2b790705f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The modeling approach focused on three main regulators and did not account for additional factors like chromatin occupancy, signaling modifications, or additional regulatory proteins. The study deliberately focused on the Dorsal regulon due to available quantitative resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations (C39) are honestly and clearly stated. The rationale for system choice (C40) is sound - the Dorsal system has exceptional quantitative resources. However, these limitations are significant: the models may not generalize to enhancers with different regulatory logic, and the omission of chromatin state and additional factors may explain some prediction failures. The manuscript appropriately acknowledges these constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:36:40.008638Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6ebdb92f-3dff-42ab-a491-f6ea11408295",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "6f4b2aca-dbbd-45a8-bd37-1e3894d5f036",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "aaac3b8b-9172-4ecd-8ecd-ba0aa50d9fc3",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "ded97c99-dcf8-45e1-a8fd-c57870531d42",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "f21b1675-71c0-4ea1-82b3-d4036fd51d76",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "a0a579e0-2a8e-445d-8994-583e5cd1ac6b",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "9c32d010-00f5-49e3-82a8-730c94a3c5d3",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "0e89269a-126a-4e77-a1d8-cb75da53d43a",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "1ee0f955-acf1-4f8d-a9d9-d7f52b688659",
+      "result_id": "951a6e0d-9267-446d-9931-5eb0ff010e81"
+    },
+    {
+      "claim_id": "0933d3e7-5de9-41ab-872c-6305f8eb6fb6",
+      "result_id": "d39a258a-1ce6-4f7d-ac56-a81f3cbf3d4f"
+    },
+    {
+      "claim_id": "dc922a0a-9730-49a4-9e3d-c813fa479a4b",
+      "result_id": "d39a258a-1ce6-4f7d-ac56-a81f3cbf3d4f"
+    },
+    {
+      "claim_id": "66f5c1b2-5032-4cc4-a5d9-ed6f43ccaeac",
+      "result_id": "d39a258a-1ce6-4f7d-ac56-a81f3cbf3d4f"
+    },
+    {
+      "claim_id": "61ee78d2-3cdf-4b63-8556-e50866f9138b",
+      "result_id": "d39a258a-1ce6-4f7d-ac56-a81f3cbf3d4f"
+    },
+    {
+      "claim_id": "ba40557d-5c98-40c3-9790-64f566e6227a",
+      "result_id": "5b91b7c6-101b-4c4e-be3d-2dfa5f2dad7f"
+    },
+    {
+      "claim_id": "24bdce54-4068-462e-99a0-33c9fa2bf135",
+      "result_id": "5b91b7c6-101b-4c4e-be3d-2dfa5f2dad7f"
+    },
+    {
+      "claim_id": "6064222e-6534-4c31-b96a-115d4ddf61fb",
+      "result_id": "5b91b7c6-101b-4c4e-be3d-2dfa5f2dad7f"
+    },
+    {
+      "claim_id": "9dfc8679-f2b4-47d5-80d2-4f10e9e96f1c",
+      "result_id": "5b91b7c6-101b-4c4e-be3d-2dfa5f2dad7f"
+    },
+    {
+      "claim_id": "2413fbf1-0b22-4ca7-9009-45cd6e982712",
+      "result_id": "2cd52deb-9882-45a3-91e0-6cab4c352063"
+    },
+    {
+      "claim_id": "e90ae1df-5f26-4c54-91bb-61aff666e0f5",
+      "result_id": "2cd52deb-9882-45a3-91e0-6cab4c352063"
+    },
+    {
+      "claim_id": "36d53eeb-b2bf-4cb8-99dc-94b65595eb6e",
+      "result_id": "2cd52deb-9882-45a3-91e0-6cab4c352063"
+    },
+    {
+      "claim_id": "d990ff9c-fe06-449b-9df2-57402c15f2e5",
+      "result_id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b"
+    },
+    {
+      "claim_id": "14f6233b-18c5-4449-8f03-0bcf1cfb443f",
+      "result_id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b"
+    },
+    {
+      "claim_id": "57536989-ac8d-4db8-8da9-fa2835ab5e4f",
+      "result_id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b"
+    },
+    {
+      "claim_id": "5880cf4a-13cb-4df5-80e6-bed3c05b37e8",
+      "result_id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b"
+    },
+    {
+      "claim_id": "1b57fd4a-fb76-4cb9-aceb-c29f2f8e252f",
+      "result_id": "aaaaeb4e-70fa-4360-b1dd-6dfca1e3a66b"
+    },
+    {
+      "claim_id": "93362e7a-5a69-409d-ac38-17f779c943da",
+      "result_id": "b6661d7f-1927-471e-b136-92c624609416"
+    },
+    {
+      "claim_id": "e85fa6a3-a161-4906-9046-974eab452291",
+      "result_id": "3bd6bbf2-4c99-406e-979c-cdf13672dbfe"
+    },
+    {
+      "claim_id": "b2eb3c07-130b-4a1d-af86-4943f0863f9a",
+      "result_id": "3bd6bbf2-4c99-406e-979c-cdf13672dbfe"
+    },
+    {
+      "claim_id": "534edf29-cbc7-48bf-9c09-a2f176ba9554",
+      "result_id": "3bd6bbf2-4c99-406e-979c-cdf13672dbfe"
+    },
+    {
+      "claim_id": "3b9214a7-6d0b-4b48-a822-b8bc84bcfbda",
+      "result_id": "142240f1-fbf3-442e-9e8e-e297ac2a4a23"
+    },
+    {
+      "claim_id": "2b3c9364-e97a-4309-8d19-39d42bfbfcc4",
+      "result_id": "142240f1-fbf3-442e-9e8e-e297ac2a4a23"
+    },
+    {
+      "claim_id": "f2022adc-860d-471f-9d79-57b2793c0225",
+      "result_id": "142240f1-fbf3-442e-9e8e-e297ac2a4a23"
+    },
+    {
+      "claim_id": "51bfb8fa-8f5a-4ef8-8c85-7dfccdf4a10e",
+      "result_id": "142240f1-fbf3-442e-9e8e-e297ac2a4a23"
+    },
+    {
+      "claim_id": "53a4574f-48f0-4a1b-8992-5a6ec696f3f7",
+      "result_id": "8571b76a-c749-4e58-a7f9-2490fc0dd73a"
+    },
+    {
+      "claim_id": "0532dbc4-9003-428a-95e6-5b7361a96b65",
+      "result_id": "8571b76a-c749-4e58-a7f9-2490fc0dd73a"
+    },
+    {
+      "claim_id": "dcdc0a4b-d515-429c-a6b1-02dfeaa1d6ff",
+      "result_id": "790449fc-06ed-4737-9580-b580269031e9"
+    },
+    {
+      "claim_id": "471af9fa-c350-40a3-b3c4-c44c20f66b46",
+      "result_id": "790449fc-06ed-4737-9580-b580269031e9"
+    },
+    {
+      "claim_id": "4f2d370d-9b18-42d4-b450-e7f391f43df8",
+      "result_id": "790449fc-06ed-4737-9580-b580269031e9"
+    },
+    {
+      "claim_id": "f79d0bb2-1cec-4466-b785-075cab2716be",
+      "result_id": "d9e7823d-f122-43ef-bde5-6c28b32c1b5e"
+    },
+    {
+      "claim_id": "bc6a1d31-e031-4069-a628-aa49ae3dee61",
+      "result_id": "d9e7823d-f122-43ef-bde5-6c28b32c1b5e"
+    },
+    {
+      "claim_id": "70dc0ff6-a360-45b3-baf5-56f3f5adcbc3",
+      "result_id": "5d74afb5-5184-409e-aeae-db14362fa4a5"
+    },
+    {
+      "claim_id": "1b7dc085-d9fc-41b9-8a95-cf15780570e5",
+      "result_id": "5d74afb5-5184-409e-aeae-db14362fa4a5"
+    },
+    {
+      "claim_id": "9058d081-3fef-4a43-b8c3-a5382e96bfe9",
+      "result_id": "c1f96aa3-3358-49f8-bbd3-bc12539e3187"
+    },
+    {
+      "claim_id": "c08360ba-0432-459a-9266-e70b67c68fc8",
+      "result_id": "c1f96aa3-3358-49f8-bbd3-bc12539e3187"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The crystal structure of IE1-CTD bound to the nucleosome core particle was determined at 2.8 \u00c5 resolution, revealing detailed molecular interactions. The structure shows IE1-CTD adopts a v-shaped conformation and binds to the acidic patch through specific hydrogen bonds and hydrophobic interactions involving residues His481, Thr480, Val484, Thr485, Ser487, Arg486, and Met483 with H2A and H2B histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic data (C2, C76-C78) demonstrate appropriate resolution and refinement statistics (Rwork=19.5%, Rfree=24.4%). The detailed structural observations (C14-C24) are directly supported by the electron density maps shown in figures and represent standard crystallographic analysis. The molecular interactions described are consistent with the resolution obtained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Structural comparison reveals that IE1-CTD shares some binding features with LANA but has unique characteristics. The acidic patch can be divided into three binding zones (I, II, III), with IE1-CTD uniquely occupying zone II via Thr485, zone III via His481, and binding the N-terminal segment (476-480) to H2B \u03b11, which distinguishes it from other acidic patch-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C28-C29) and zone classification (C30-C33) are based on direct crystallographic observations and comparison with multiple published structures. The identification of unique IE1 binding features (C35-C38) is well-supported by the structural data and comparative analysis shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ITC measurements demonstrate that wild-type IE1-CTD binds NCP with KD=0.4 \u03bcM, and structure-guided mutagenesis reveals critical binding determinants. The N-terminal segment deletion (\u0394476-480) reduces affinity 30-fold (KD=12 \u03bcM), H481A mutation reduces it ~100-fold (KD=43.4 \u03bcM), and the H2A E56R mutation abolishes IE1-CTD binding while reducing LANA binding ~100-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ITC data (C39-C47) provide quantitative binding measurements with appropriate error estimates and stoichiometry values (N~2) consistent with two binding sites per NCP. The systematic mutagenesis approach validates the structural observations and demonstrates the importance of specific residues identified in the crystal structure. The differential effects on IE1 vs LANA binding support the structural distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "IE1 and LANA interact differently with Glu56 of H2A in zone III: His481 of IE1 forms a hydrogen bond at 2.9 \u00c5 distance, while Thr14 of LANA makes van der Waals contact at ~5 \u00c5. This difference explains why the H2A E56R mutation more severely affects IE1 binding (undetectable) compared to LANA (KD increases from 0.25 to 23.4 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations (C50-C51) are directly measured from crystal structures at appropriate resolution. The differential binding effects (C47, C49) measured by ITC provide functional validation of the structural differences, demonstrating that the distinct interaction modes have measurable consequences for binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "AUC experiments demonstrate that IE1-CTD specifically alters 30-nm chromatin fiber compaction without affecting 10-nm nucleosomal arrays. IE1-CTD binding shifts the sedimentation coefficient of 30-nm fibers from 51.5 S to 48 S, indicating looser folding. This chromatin-altering activity requires the CTD domain and depends on binding to the acidic patch, as demonstrated by loss of activity with IE1\u0394CTD and with H2A E56R mutant chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AUC data (C52-C55, C62) provide quantitative measurements of chromatin compaction states with appropriate controls. The requirement for CTD (C58-C59) and acidic patch binding (C62) is demonstrated through systematic deletion and mutation analysis. The interpretation that IE1-CTD creates an altered chromatin state (C56-C57) is reasonable given the intermediate sedimentation coefficient between 10-nm and 30-nm structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "IE1-CTD mutants (H481A, T485V, \u0394476-480) retain the ability to decondense 30-nm chromatin fiber despite reduced NCP-binding affinity, possibly due to incomplete loss of binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the AUC data (C60) show that mutants retain chromatin-altering activity, the explanation (C61) is speculative. The mutants have 30-100 fold reduced binding affinity, yet retain function, which is not fully explained. Alternative mechanisms or threshold effects may be involved, requiring additional experiments to clarify the relationship between binding affinity and chromatin-altering activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Unlike IE1-CTD, LANA does not alter the folding of preformed H1-containing 30-nm chromatin fiber, although it affects 10-nm nucleosomal arrays. This demonstrates that not all acidic patch-binding proteins affect chromatin folding in the same way, suggesting that distinct binding modes can exert differential influences on chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AUC experiments (C64-C65, C67-C68) provide direct comparative data showing differential effects of IE1 and LANA on chromatin structure. The conclusion (C69-C70) that different acidic patch-binding modes have different functional consequences is well-supported by the combination of structural and functional data, though the mechanistic basis remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Full-length IE1 binds NCP approximately five-fold weaker than IE1-CTD alone, possibly due to self-inhibitory effects of other domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ITC data (C41) demonstrate the five-fold difference in binding affinity between full-length IE1 and IE1-CTD. However, the explanation of self-inhibitory effects (C42) is speculative without additional structural or functional data. The observation itself is well-supported, but the mechanistic interpretation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Zones II and III of the acidic patch are less frequently occupied among known NCP-binding proteins and represent promising sites for isolating histone mutants with differential protein-binding specificity. The H2A E56R variant serves as a useful IE1-noninteracting mutant for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural analysis (C73) comparing multiple protein-NCP complexes supports the identification of zones II and III as less conserved binding sites. The utility of H2A E56R as an IE1-specific mutant (C74) is validated by the ITC and AUC experiments showing loss of IE1 binding and chromatin-altering activity while LANA retains partial binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C79",
+      "C80"
+    ],
+    "result": "The interaction between IE1-CTD and the H2A-H2B acidic patch impairs higher-order chromatin compaction, suggesting that IE1 loosens host chromatin folding during hCMV infections by interfering with H4 tail-acidic patch interactions required for 30-nm fiber formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data (C2, C17) and AUC experiments (C55-C56, C63) directly demonstrate that IE1-CTD binding to the acidic patch alters chromatin compaction. The mechanistic hypothesis (C80) that IE1 competes with H4 tail binding is reasonable given prior knowledge (C6, C79) about H4 tail-acidic patch interactions in chromatin folding. However, direct competition experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C25",
+      "C26",
+      "C27",
+      "C66"
+    ],
+    "result": "Background context establishes that the nucleosome acidic patch mediates chromatin folding through H4 tail interactions, multiple proteins bind this patch, and IE1 is known to associate with mitotic chromatin through its CTD domain binding the acidic patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5-C13, C25-C27, C66) represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for interpreting the current findings but do not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The discovery of IE1's chromatin-modulating activity should facilitate understanding of its functions in viral pathogenesis, particularly regarding transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C71) is entirely speculative about future research directions. While the discovery of chromatin-altering activity is well-supported, the implications for viral pathogenesis and transcriptional regulation require additional experimental validation in relevant biological contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Structural data have been deposited in the Protein Data Bank under accession code 5E5A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward data deposition statement that can be verified through the PDB database.",
+    "result_type": "MINOR"
+  }
+]

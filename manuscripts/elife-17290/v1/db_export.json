@@ -1,0 +1,2229 @@
+{
+  "submission": {
+    "id": "032882a7-49f5-4e97-aa6c-e885e257708b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:17:49.794246Z",
+    "updated_at": "2025-11-30T00:17:49.794246Z"
+  },
+  "content": [
+    {
+      "id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "submission_id": "032882a7-49f5-4e97-aa6c-e885e257708b",
+      "content_type": "manuscript",
+      "content_text": "# Functional CRISPR screening identifies the ufmylation pathway as a regulator of SQSTM1/p62\n\n## Authors\n\n- Rowena DeJesus<sup>1</sup>\n- Francesca Moretti<sup>2</sup>\n- Gregory McAllister<sup>1</sup>\n- Zuncai Wang<sup>1</sup>\n- Phil Bergman<sup>1</sup>\n- Shanming Liu<sup>1</sup>\n- Elizabeth Frias<sup>1</sup>\n- John Alford<sup>1</sup>\n- John S Reece-Hoyes<sup>1</sup>\n- Alicia Lindeman<sup>1</sup>\n- Jennifer Kelliher<sup>1</sup>\n- Carsten Russ<sup>1</sup>\n- Judith Knehr<sup>2</sup>\n- Walter Carbone<sup>2</sup> ([ORCID: 0000-0001-6150-8295](https://orcid.org/0000-0001-6150-8295))\n- Martin Beibel<sup>2</sup>\n- Guglielmo Roma<sup>2</sup>\n- Aylwin Ng<sup>3</sup>\n- John A Tallarico<sup>1</sup>\n- Jeffery A Porter<sup>1</sup>\n- Ramnik J Xavier<sup>3</sup>\n- Craig Mickanin<sup>1</sup>\n- Leon O Murphy<sup>1</sup>\n- Gregory R Hoffman<sup>1</sup> \u2020\n- Beat Nyfeler<sup>2</sup> ([ORCID: 0000-0003-0624-9571](https://orcid.org/0000-0003-0624-9571)) \u2020\n\n### Affiliations\n\n1. Developmental and Molecular Pathways Novartis Institutes for BioMedical Research Cambridge United States\n2. Developmental and Molecular Pathways Novartis Institutes for BioMedical Research Basel Switzerland\n3. Gastrointestinal Unit and Center for the Study of Inflammatory Bowel Disease Massachusetts General Hospital, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSQSTM1 is an adaptor protein that integrates multiple cellular signaling pathways and whose expression is tightly regulated at the transcriptional and post-translational level. Here, we describe a forward genetic screening paradigm exploiting CRISPR-mediated genome editing coupled to a cell selection step by FACS to identify regulators of SQSTM1. Through systematic comparison of pooled libraries, we show that CRISPR is superior to RNAi in identifying known SQSTM1 modulators. A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade. We show that ufmylation regulates SQSTM1 by eliciting a cell type-specific ER stress response which induces SQSTM1 expression and results in its accumulation in the cytosol. This study validates pooled CRISPR screening as a powerful method to map the repertoire of cellular pathways that regulate the fate of an individual target protein.\n\n## Introduction\n\nSQSTM1 is a multifunctional adaptor protein that is mutated and deregulated in several pathological conditions, including Paget disease, neurodegeneration, metabolic dysfunction or cancer (Laurin et al., 2002; Rodriguez et al., 2006; Rubino et al., 2012; Takamura et al., 2011). As a scaffolding protein, SQSTM1 regulates different cellular signaling cascades such as nuclear factor-\u03baB (NF-\u03baB) activation or the mammalian target of rapamycin complex 1 (mTORC1) (Duran et al., 2011; Katsuragi et al., 2015). Furthermore, SQSTM1 plays a critical role in autophagy, a catabolic process that results in the lysosomal degradation of cytosolic components (He and Klionsky, 2009; Mizushima and Komatsu, 2011). In autophagy, SQSTM1 functions as an adaptor that recruits ubiquitinated cargo into forming autophagosomes via its LC3 interacting domain (Bj\u00f8rk\u00f8y et al., 2005; Stolz et al., 2014). Cargo along with SQSTM1 is then trafficked into lysosomes for degradation. Intracellular levels of SQSTM1 are controlled through turnover by autophagy but also at the transcriptional level upon insults such as oxidative, proteotoxic or endoplasmic reticulum (ER) stress (Jain et al., 2010; Kageyama et al., 2014; Liu et al., 2012).\n\nHere we describe a forward genetic screening approach for novel regulators of SQSTM1 exploiting CRISPR-Cas9 for genome editing. The CRISPR-Cas9 system relies on single guide RNAs (sgRNAs) to target the endonuclease enzyme Cas9 to a genetic locus where it cleaves DNA (Cong et al., 2013; Sternberg et al., 2014). Repairing of the double strand break by non-homologous end joining results in the insertions and deletions of base pairs often causing loss-of-function phenotypes when targeted to coding regions. We first compared CRISPR to a previously established pooled RNAi approach (Eng et al., 2016; Hoffman et al., 2014) by screening focused libraries of sgRNA and shRNA reagents and found that CRISPR is superior in identifying known modulators of SQSTM1. In light of this validation data, we carried out a genome-wide CRISPR screen, which robustly uncovered the core macroautophagy machinery and identified several novel regulators of SQSTM1. One example is ubiquitin fold modifier 1 (UFM1) and its conjugation machinery which we validated as bona fide modulators of SQSTM1. The mechanism of SQSTM1 accumulation upon impaired ufmylation is autophagy-independent and relies on the activation of the unfolded protein response (UPR) inducing SQSTM1 expression and its accumulation in the cytosol. This study shows that FACS-based pooled CRISPR screening is a powerful forward genetic tool for interrogating complex signaling networks and can be applied for the discovery of cellular targets that modulate protein fate which holds great promise for disease-causing candidates such as oncogenes in cancer or misfolded proteins linked to proteinopathies.\n\n## Results and discussion\n\n### Optimization of a FACS-based pooled CRISPR screen for modulators of SQSTM1\n\nTo enable a pooled CRISPR screen for modulators of SQSTM1, we established a neuroglioma H4 cell line which stably expresses Cas9 and green fluorescent protein (GFP)-tagged SQSTM1 (H4 Cas9 GFP-SQSTM1 cells). The cell line was validated by analyzing GFP-SQSTM1 upon autophagy pathway perturbation with the CRISPR-Cas9 system. Induction of autophagy with sgRNAs targeting MTOR decreased GFP-SQSTM1 fluorescence, while inhibition of autophagy with sgRNAs against the lipid kinase PIK3C3 (also known as VPS34) robustly accumulated GFP-SQSTM1 (Figure 1A). Using this cell line, we developed a pooled CRISPR screening workflow which relies on isolating cell populations based on their GFP fluorescence by FACS (Figure 1B). In brief, pooled sgRNA-encoding libraries are introduced into H4 Cas9 GFP-SQSTM1 cells by lentiviral infection, selected for stable integration, and FACS is used to separate cells into GFP high (upper quartile of GFP fluorescence) or GFP low (lower quartile of GFP fluorescence) populations (Figure 1\u2014figure supplement 1). Genomic DNA is isolated from these cell populations and analyzed by deep sequencing to determine the abundance of the sgRNA-encoding sequences. To validate the screening workflow, we analyzed the distribution of 4\u20135 sgRNAs targeting MTOR, PIK3C3, PLK1 and SQSTM1 in GFP high versus GFP low cells at day 7 post-infection (Figure 1C). Cytotoxicity was monitored by the representation of sgRNA sequences in unsorted cells versus the input library. Consistent with autophagy modulation, MTOR sgRNAs were enriched in GFP low cells while PIK3C3 sgRNAs were enriched in GFP high cells. MTOR and PIK3C3 sgRNAs showed an unchanged distribution in unsorted cells versus the input library suggesting that these reagents did not significantly impair cell proliferation. We also expected SQSTM1 sgRNAs to be enriched in GFP low cells due to a knockout of the GFP-SQSTM1 reporter. However, we observed an equal distribution in GFP high and GFP low cells and found that SQSTM1 sgRNA sequences were under-represented in unsorted cells versus the input library, similar to sgRNAs against the essential gene PLK1. Cas9-mediated cytotoxicity has been reported when targeted to regions of gene amplification (Wang et al., 2015; Munoz et al., 2016). Therefore it is likely that SQSTM1 sgRNAs target both endogenous SQSTM1 and multiple GFP-SQSTM1 chromosome integrants in the H4 reporter clone which results in cytotoxicity in response to DNA damage. We conclude that our pooled CRISPR screening strategy in H4 Cas9 GFP-SQSTM1 cells can identify modulators of SQSTM1 and discriminate cytotoxic hits.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scramble, MTOR and PIK3C3 sgRNAs were introduced into H4 Cas9 GFP-SQSTM1 cells by lentiviral infection and GFP fluorescence was analyzed after 7 days. Representative images show nuclei (blue) and GFP-SQSTM1 (green). Scale bar corresponds to 20 \u00b5m. (B) Pooled screening workflow of GFP-SQSTM1 assay. H4 Cas9 GFP-SQSTM1 cells are transduced with lentiviral libraries of sgRNAs or shRNAs and selected for stable integration. Fluorescence activated cell sorting (FACS) is used to isolate cell populations based on GFP upper quartile fluorescence (GFP high) or GFP lower quartile fluorescence (GFP low). A representative GFP FACS histogram is shown in Figure 1\u2014figure supplement 1. Abundance of sgRNA and shRNA sequences is quantified by deep sequencing of the corresponding barcodes in the genomic DNA of the isolated cell populations as well as unsorted cells. (C) Distribution of individual sgRNAs targeting MTOR, PIK3C3, PLK1 or SQSTM1 at day 7. GFP-SQSTM1 modulation was assessed as log2 fold ratio of each sgRNA sequence based on the abundance in the GFP high versus GFP low cell population. Anti-proliferative effects were assessed as log2 fold ratio of each sgRNA based on the abundance in unsorted cells versus the input library. (D\u2013F) H4 Cas9 GFP-SQSTM1 cells were transduced with CRISPR or RNAi lentiviral libraries covering 2677 genes with an average of 20 sgRNA or shRNA reagents per gene. Both screens were run in duplicate and the mean is shown. Gene-centric visualization of (D) average log2 fold change (FC) or (E) redundant siRNA activity (RSA) scores in GFP high versus GFP low cells. Selected autophagy and MTOR pathway components are highlighted in red. (F) Log2 fold change (FC) distribution of all shRNAs and sgRNAs in GFP high versus GFP low cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig1-figsupp1-v1.jpg)\n\n### Pooled CRISPR screening is superior to RNAi in identifying known regulators of SQSTM1\n\nTo compare CRISPR to a previously established pooled RNAi approach (Eng et al., 2016; Hoffman et al., 2014), we screened focused deep-coverage libraries of sgRNA and shRNA reagents in H4 Cas9 GFP-SQSTM1 cells using the FACS-based workflow outlined in Figure 1B. Each library pool covered 2677 genes, including many autophagy core components, with an average of 20 sgRNAs and 20 shRNAs per gene. When the average fold change per gene was analyzed, both CRISPR and RNAi identified many known modulators of SQSTM1, including MTOR, RPTOR, RB1CC1 (also known as FIP200), BECN1, PIK3C3, ULK1 or ATG7 (Figure 1D). However, several well-characterized modulators of SQSTM1 including ATG5, ATG10, ATG13 or ATG16L1 were exclusively identified by CRISPR. A complete knockout of these targets by CRISPR may be needed to robustly impair the autophagic clearance of SQSTM1, in line with previous reports (Hosokawa et al., 2006; Mizushima et al., 2010) suggesting that some autophagy proteins, including ATG5, are functional even when expressed at very low levels. Moreover, CRISPR outperformed RNAi in a significance analysis using redundant siRNA activity (RSA) statistics (K\u00f6nig et al., 2007) where more known modulators of SQSTM1 scored with statistically significant p-values by CRISPR (Figure 1E). In comparison to shRNAs, sgRNAs showed a tighter distribution when all CRISPR and RNAi reagents were analyzed in GFP high versus GFP low cells (Figure 1F). Taken together, this data suggests that CRISPR is superior to RNAi in separating hits from the bulk of inactive reagents in these libraries.\n\n### A genome-wide screen for modulators of SQSTM1 robustly identifies canonical macroautophagy components\n\nTo identify modulators of SQSTM1 at genome-wide scale, we screened a sgRNA library covering 18,360 genes with an average of 5 sgRNAs per gene in the FACS-based GFP-SQSTM1 assay (Figure 2A\u2013E). By analyzing sgRNA sequences enriched in GFP low cells, we identified MTOR, RPTOR and RHEB among the top ranked genes, in line with their depletion activating autophagy and inducing degradation of SQSTM1 (Figure 2A). We also observed several components of the mediator complex and an enrichment analysis of the top ranked 100 genes revealed transcriptional regulation by RNA polymerase II as significantly enriched GO biological process (Figure 2C). CRISPR-mediated depletion of these mediator complex components likely decreases GFP-SQSTM1 by reducing reporter expression, a hypothesis which we evaluated with the mini-pool follow-up approach discussed below.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013E) H4 Cas9 GFP-SQSTM1 cells were transduced with a genome-wide CRISPR library covering 18,360 genes with an average of 5 sgRNAs per gene. 7 days post-infection, FACS was used to isolate GFP high and GFP low cell populations, and abundance of sgRNA sequences was quantified by deep sequencing. Gene-centric visualization of significance and maximal fold change in (A) GFP low versus GFP high cells, or (B) GFP high versus GFP low cells. Top scoring genes are highlighted and entire dataset is reported in Figure 2\u2014source data 1. Gene enrichment analysis of the top ranked 100 hits in (C) GFP low versus GFP high cells, or (D) GFP high versus GFP low cells. (E) Heatmap of the RSA significance scores in GFP high versus GFP low cells for core components of canonical macroautophagy. (F\u2013G) A mini-pool of sgRNAs was picked from the genome-wide screen targeting the top ranked 600 hits in GFP high and GFP low cells. The mini-pool was screened in H4 Cas9 GFP-SQSTM1 cells based on GFP fluorescence and in the parental H4 Cas9 cell population based on endogenous SQSTM1 staining. Heatmap of log2 fold changes (FC) for top ranked hits in (F) low versus high cells, or (G) high versus low cells. Hits are ranked based on log2 FC in the genome-wide screen. Entire mini-pool data is reported in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The performance of the focused sgRNA library with 20 sgRNA per gene (Figure 1) was compared to the genome-wide library with 5 sgRNA per gene by analyzing gene-centric maximal fold changes in GFP high versus GFP low cells. Selected autophagy and MTOR pathway components are highlighted in red.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The map abstracts the extent of mutual overlap between pathways and biological process-related gene sets and identifies subclusters of highly connected gene sets that are over-represented among hits from the CRISPR screen. Nodes represent enriched gene sets of biological processes, molecular function and pathways. Node size corresponds to the number of down-regulated genes in each gene set. Node color scales according to the gene set enrichment score (-Log10\u00a0P-value). All gene sets that are significantly enriched (p<0.05) are displayed in the map. The extent of mutually overlapping genes between gene sets (Jaccard coefficient) is represented by thickness & color intensity of edges connecting the nodes. Strongly connected network components were identified using Tarjan\u2019s algorithm. With this representation, a strong enrichment and connectivity signal was observed for pathways and processes labeled in bold, including autophagy and processes regulating MTOR signaling.\n\nsgRNA sequences enriched in GFP high cells targeted many autophagy genes such as ATG9A, RB1CC1, ATG16L1, ATG7, ATG3, ATG5, WIPI2, MAP1LC3B and ATG14 (Figure 2B). Autophagy-related categories were the most significantly enriched GO biological processes when the top ranked 100 genes in GFP high cells were analyzed (Figure 2D). The genome-wide GFP-SQSTM1 CRISPR screen comprehensively mapped the canonical macroautophagy pathway and identified components of the initiation, nucleation and elongation machinery (Figure 2E). In comparison to the 20 sgRNAs per gene in the focused CRISPR library (Figure 1), the 5 sgRNA per gene in the genome-wide library performed equally well in identifying autophagy pathway components when the maximal fold change was analyzed per gene (Figure 2\u2014figure supplement 1). Autophagy pathway components which did not significantly score were restricted to genes which have functional homologs. These include ATG4A, ATG4C, ATG4D, ULK2, ATG16L2, WIPI1 and ATG9B which were all inactive while their homologs ATG4B, ULK1, ATG16L1, WIPI2 and ATG9A robustly scored. By analyzing subclusters of highly connected gene sets, a strong enrichment and connectivity signal was confirmed for several pathways and processes, including autophagy and MTOR signaling (Figure 2\u2014figure supplement 2).\n\nTo validate the results from the primary screen, we generated a mini-pool containing the single most potent sgRNA-encoding sequences from the primary screen against the top-ranked 300 genes in the GFP low and GFP high category. Screening of the mini-pool in H4 Cas9 GFP-SQSTM1 cells showed a high confirmation rate when the top-ranked hits from the primary screen were analyzed (Figure 2F and G). To exclude GFP reporter-specific hits, we used the mini-pool to screen a parental H4 Cas9 cell population followed by immunofluorescence-based staining of endogenous SQSTM1. Similar to the GFP assay, we used FACS to isolate a high and low cell population based on the SQSTM1 staining intensity. This approach confirmed that the MTOR and autophagy pathways are key regulators of SQSTM1. However, components of the mediator complex or targets linked to translation such as SBDS and DPH1 failed to robustly score which suggests that these specifically regulate the GFP-SQSTM1 reporter (Figure 2F and G).\n\n### Identification of novel regulators of SQSTM1\n\nWe analyzed the mini-pool data for novel modulators of SQSTM1. sgRNAs against HNRNPM, SLC39A14, SRRD and PGK1 were enriched in cells displaying high levels of both GFP-SQSTM1 and endogenous SQSTM1 (Figure 3A), and to our knowledge, these candidates have not been linked to the regulation of SQSTM1. When these sgRNAs were individually tested in H4 Cas9 cells, we observed a robust increase in SQSTM1 levels by immunoblot, similar to the depletion of ATG7 (Figure 3B). This data demonstrates that the FACS-based pooled CRISPR results can be confirmed at the level of individual sgRNAs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig3-v1.jpg)\n\n**Figure 3.:** (A) Comparison of log2 fold changes in the mini-pool screen for GFP-SQSTM1 and endogenous SQSTM1. Selected MTOR and autophagy pathway genes are marked in green or red while novel candiates are highlighted in black. (B) Indicated sgRNAs were introduced into H4 Cas9 cells by lentiviral infection, protein lysates were collected 7 days post-infection and probed by immunoblot. (C) Cartoon of the ufmylation cascade. (D\u2013E) Accumulation of GFP-SQSTM1 upon depletion of ufmylation. Indicated sgRNAs were introduced into H4 Cas9 GFP-SQSTM1 cells by lentiviral infection and cells were probed 7 days post-infection by (D) immunoblot or (E) high-content imaging. Representative images show nuclei (blue) and GFP-SQSTM1 (green). Scale bar corresponds to 20 \u00b5m. (F) Indicated sgRNAs were introduced into H4 Cas9 clone 4 by lentiviral infection, protein lysates collected 7 days post-infection and probed by immunoblot.\n\nWe also noticed that ubiquitin-fold modifier 1 (UFM1) and components of its conjugation machinery scored as modulators of endogenous and GFP-tagged SQSTM1 (Figure 3A). UFM1 is a ubiquitin-like molecule which is post-translationally processed by UFM1-specific proteases (UFSP1 and UFSP2) and then conjugated to target proteins via the ubiquitin-like modifier activating enzyme 5 (UBA5), ubiquitin-fold modifier conjugating enzyme 1 (UFC1) and the UFM1-specific ligase (UFL1) (Figure 3C) (Daniel and Liebau, 2014; Komatsu et al., 2004). Protein ufmylation was already exposed in the primary screen as one of the most significantly enriched biological processes in GFP-SQSTM1 high cells (Figure 2D) and all components of the cascade scored with the exception of UFSP1. Ufmylation has been implicated in the control of cell differentiation, growth and endoplasmic reticulum (ER) homeostasis (Daniel and Liebau, 2014). Knockout of the murine homolog of UFL1 has been linked to impaired autophagy (Zhang et al., 2015), but the role of ufmylation in the autophagic process is controversial (Cai et al., 2015). To confirm ufmylation as modulator of SQSTM1, we individually tested sgRNAs against UFM1, UBA5, UFL1, UFC1 and UFSP2 and confirmed efficient depletion of the corresponding target proteins (Figure 3D) as well as robust accumulation of GFP-SQSTM1 and endogenous SQSTM1 (Figure 3D\u2013F).\n\n### Impairment of protein ufmylation elicits an ER stress response and induces SQSTM1 expression\n\nWe next sought to elucidate the mechanism by which ufmylation regulates SQSTM1. Depletion of UFM1 increased SQSTM1 and slightly augmented the levels of the autophagy cargo receptors CALCOCO2 (also known as NDP52) and TAX1BP1; however, levels of LC3-I and LC3-II appeared largely unchanged (Figure 3F). UFM1-depleted cells were as sensitive to the V-ATPase inhibitor Bafilomycin A1 as the control cells suggesting that autophagic flux of LC3 is unchanged (Figure 4A). In contrast to LC3B, we did not see lysosomal localization of UFM1 when tagged with the mCherry-GFP tandem reporter (Nyfeler et al., 2012) (Figure 4B) suggesting that UFM1 is not an alternative lysosomal targeting signal. Moreover, while ATG7-depleted cells were unable to degrade GFP-SQSTM1, UFM1 knockout cells still cleared GFP-SQSTM1 when autophagy was activated by the MTOR inhibitor AZD8055, albeit with a reduced rate than cells infected with a scramble sgRNA control (Figure 4C). Taken together, we conclude that autophagy-independent mechanisms likely contribute to the increase in SQSTM1 in UFM1-depleted cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17290/elife-17290-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scramble, ATG7 and UFM1 sgRNAs were introduced into H4 Cas9 clone 4 by lentiviral infection. 7 days post-infection cells were treated with 0.1% DMSO or 50 nM Bafilomycin A1 for 2, 4 or 8 hr and protein lysates were collected and probed by immunoblot.\u00a0(B) Representative images of H4 cells stably expressing mCherry-GFP-LC3B or mCherry-GFP-UFM1. Scale bar corresponds to 20 \u00b5m. Note that the absence of mCherry-positive puncta in mCherry-GFP-UFM1 expressing cells suggests that UFM1 is not delivered to endolysosomal compartments. (C) GFP-SQSTM1 clearance in ATG7- and UFM1-depleted cells. Scramble, ATG7 and UFM1 sgRNAs were introduced into H4 Cas9 GFP-SQSTM1 cells by lentiviral infection. 7 days post-infection cells were treated with 0.1% DMSO or 0.5 \u00b5M AZD8055 for 8 hr or 24 hr, fixed, and subjected to high content imaging. GFP fluorescence was quantified as ratio of GFP-SQSTM1 puncta area in DMSO- versus AZD8055-treated cells and is shown as mean +/- SD from three independent experiments. Statistical significance was assessed via a two-tailed paired t-test (*p<0.05, **p<0.01). (D) UFM1 knockout induces ER stress and increases SQSTM1 mRNA levels. Scramble and UFM1 sgRNAs were introduced into H4 Cas9 cells by lentiviral infection. 7 days post-infection total RNA was extracted and subjected to RNA sequencing. The volcano plot visualizes genes differentially expressed in UFM1-depleted versus cells infected with a scramble sgRNA. Selected ER stress markers and SQSTM1 are highlighted and entire dataset is reported in Figure 4\u2014source data 1. (E) Time course analysis of ER stress and SQSTM1 induction. Indicated sgRNAs were introduced into H4 Cas9 cells by lentiviral infection, protein lysates collected 4, 6 and 8 days post-infection and probed by immunoblot. (F) Total RNA was collected from H4 Cas9 cells treated with 0.1% DMSO or 10 \u00b5g/ml tunicamycin for 24 hr, SQSTM1 mRNA was quantified by RT-qPCR analysis and normalized to HPRT1. The mean +/- SD of biological triplicates is shown. (G) Indicated sgRNAs were introduced into Huh-1 Cas9 or HepG2 Cas9 cells by lentiviral infection, protein lysates collected 7 days post-infection and probed by immunoblot.\n\nSince ufmylation has been implicated in the control of transcription factor activity (Yoo et al., 2014), we analyzed the RNA expression profile upon UFM1 depletion in H4 cells. Compared to control sgRNA-infected cells, 526 genes were down-regulated while 276 genes were up-regulated more than twofold (p-value <10-5) when UFM1 was deleted. A gene set enrichment analysis identified the ER unfolded protein response as most significantly enriched biological process for the upregulated genes. Similar to known ER stress markers such as HSPA5 (also known as BiP) or CANX, we observed that knockout of UFM1 increased SQSTM1 expression (~\u00a01.7-fold, Figure 4D). Induction of ER stress by tunicamycin also increased mRNA levels of SQSTM1 (Figure 4F), in line with SQSTM1 being a target of the UPR (Liu et al., 2012). In a UFM1-depletion time course experiment, accumulation of SQSTM1 was preceded by the induction of ER stress as measured by XBP1 splicing and CHOP (Figure 4E). Interestingly, UFM1 knockout induced CHOP and SQSTM1 also in Huh-1 but not in HepG2 cells which did not show any signs of ER stress or SQSTM1 accumulation despite efficient depletion of UFM1. This data suggests that impairment of ufmylation results in a cell type-specific ER stress response which in turn induces SQSTM1 expression and its accumulation in the cytosol. SQSTM1 has been shown to act as a key regulator of the cytosolic response to various cellular insults by forming aggresome-like induced structures (ALIS) which incorporate ubiquitinated proteins and heat shock proteins (Liu et al., 2012). We hypothesize that other ubiquitin-binding cargo receptors such as NDP52 or TAX1BP1 may also get recruited into ALIS thereby accumulating in UFM1 knockout cells (Figure 3F). Alternatively, the increase in SQSTM1 in UFM1-depleted cells may induce competition for the autophagy machinery resulting in other autophagy cargo receptors being less efficiently cleared. Given the interaction of UBA5 and ATG8 homologs (Habisov et al., 2016), ufmylation may directly link autophagy to the regulation of the ER stress response and future studies will be needed to test if transcription factors of the unfolded protein response are directly modified by UFM1.\n\nIn summary, this study demonstrates that CRISPR-Cas9 genome editing can be exploited as a robust forward genetic screening approach to identify bona fide modulators of protein fate when combined to a phenotypic selection step by FACS. The systematic comparison of RNAi and CRISPR with focused libraries revealed a superior discovery rate of known SQSTM1 modulators by CRISPR (Figure 1D and 1E). Consistent with our observation, CRISPR has been reported to outperform RNAi in identifying essential genes (Munoz et al., 2016; Evers et al., 2016). Like RNAi, CRISPR has intrinsic limitations such as potential off-target editing (Fu et al., 2013; Hsu et al., 2013), and FACS-based phenotypic screens such as GFP-SQSTM1 will be restricted to probe for non-essential modulators. Hence, RNAi and CRISPR-based approaches have to be evaluated depending on the screening paradigm, and combined parallel approaches may help to mitigate the intrinsic limitations of both technologies (Deans et al., 2016; Morgens et al., 2016). By following-up the genome-wide GFP-SQSTM1 CRISPR screen with a mini-pool screen for modulators of endogenous SQSTM1, we exposed MTOR complex 1 and canonical macroautophagy as key regulators of SQSTM1 (Figure 3A). Furthermore, this study identified novel modulators of SQSTM1 (Figure 3B) including the entire biochemical cascade of the ufmylation process (Figure 3A and C), thus providing a resource to further unravel the regulation of SQSTM1.\n\n## Materials and methods\n\n### Mammalian cell culture\n\nH4 (ATCC, HTB-148), HepG2 (ATCC, HB-8065) and Huh-1 (JCRB, JCRB0199) cell lines were confirmed by SNP analysis and verified to be mycoplasma-free by routine testing. All cells were kept in a humidified incubator at 37\u00b0C and 5% CO2 and were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% FBS, 1% L-glutamine and 1% Penicillin/Streptomycin. Cell culture reagents were obtained from Invitrogen. H4 GFP-SQSTM1 cells were generated by retroviral delivery of EGFP-SQSTM1 (Dowdle et al., 2014) in pRetro-X Tight (Clontech, Mountain View, CA) into human neuroglioma H4 cells followed by the isolation of GFP-positive cells by FACS. pRetro-X Tight was modified to eliminate puromycin resistance by removing the EcoRI - RsrII fragment. H4 Cas9 GFP-SQSTM1 cells were generated by lentiviral delivery of Cas9 in pNGx-LV-c004 (Supplementary file 1A) into H4 GFP-SQSTM1 cells followed by selection with blasticidin. Individual clones were expanded, tested for Cas9 and GFP-SQSTM1 expression by western blot and immunofluorescence, and H4 Cas9 GFP-SQSTM1 clone 2 was picked for the screen and validation experiments. H4 Cas9 cells were generated by lentiviral delivery of Cas9 in pNGx-LV-c004 into H4 cells followed by selection with blasticidin. The H4 Cas9 polyclonal population or the isolated clone 4 was used as indicated in the figure legends. HepG2 and Huh1 Cas9 cells were generated by lentiviral delivery of Cas9 in pNGx-LV-c004 followed by selection with blasticidin and isolation of single clones. H4 mCherry-GFP-LC3 and H4 mCherry-GFP-UFM1 lines were generated by lentiviral delivery of mCherry-GFP-LC3 and mCherry-GFP-UFM1 in pLenti6.3 followed by selection for stable integration with blasticidin. Coding sequences for MAP1LC3B and UFM1 were derived from Invitrogen entry clones (IOH13267, IOH7279).\n\n### Pooled RNAi and CRISPR screening\n\n#### shRNA and sgRNA library design and construction\n\nFor the focused libraries, custom sgRNA and shRNA libraries were constructed by Cellecta as previously described (Hoffman et al., 2014). These libraries cover around 2700 genes with an average of 20 unique shRNAs or sgRNAs per gene (Munoz et al., 2016). The genome-wide sgRNA library targeting 18,360 protein-coding genes was constructed using chip-based oligonucleotide synthesis to generate spacer-tracrRNA-encoding fragments that were PCR-amplified and cloned as a pool into the BpiI site of the pRSI16 lentiviral plasmid (Cellecta, Mountain View, CA). Olfactory receptors were omitted from the library. The sgRNA designs were based on published sequences (Wang et al., 2014) and five sgRNAs were selected per gene targeting the most proximal 5\u2019 exons. 277 genes did not have published sgRNA sequence information and new sgRNAs were designed for these targets that contained an NGG PAM motif, filtering for GC content greater than 40% and less than 80%, eliminating homopolymer stretches greater then 4, and removing any guides with off-target locations having fewer than 4 mismatches across the genome. Sequencing of the plasmid pool showed robust normalization with >90% clones present at a representation of +/\u2212 five\u00a0fold from the median counts in the pool.\n\nFor the mini-pool library (Figure 2\u2014source data 2), sgRNA sequences were picked for the top-ranked 300 genes in either the GFP low or GFP high category from the genome-wide screen. The mini-pool library was constructed using chip-based oligonucleotide synthesis (Custom Array) to generate spacer-encoding fragments that were PCR-amplified and cloned as a pool into the BbsI site of pNGx-LV-g003 lentiviral plasmid (Supplementary file 1A). Sequencing of the plasmid pool showed robust normalization with >90% clones present at a representation of +/\u2212 fivefold from the median counts in the pool.\n\n#### Viral packaging\n\nshRNA and sgRNA libraries were packaged into lentiviral particles using HEK293T cells as described previously (Hoffman et al., 2014). Packaging was scaled up by growing cells in cell stacks (Corning,\u00a0Corning,\u00a0NY). For each cell stack, 210 million cells were transfected 24\u2009hr after plating using 510.3 \u00b5L of TransIT reagent (Mirus,\u00a0Madison,\u00a0WI) diluted in 18.4\u2009mL of OPTI-MEM that was combined with 75.6 \u00b5g of the shRNA or sgRNA libraries and 94.5 \u00b5g of lentiviral packaging mix (Cellecta, psPAX2 and pMD2 plasmids that encode Gag/Pol and VSV-G, respectively). 72\u2009hr post transfection, lentivirus was harvested, aliquoted, and frozen at -80\u00b0C. Viral titer was measured by FACS in HCT116 cells and was typically in the range of 5 x 106 TU/mL.\n\n#### FACS-based screening procedure\n\nAll screens were run in duplicate. shRNA and sgRNA libraries were transduced at an MOI of 0.5 aiming for coverage of on average 1000 cells per shRNA or gRNA reagent. MOI was determined by using a 12-point dose response ranging from 0 to 400 \u00b5L of viral supernatants in the presence of 5 \u00b5g/mL polybrene and measuring infection rate by FACS as percentage of RFP-positive cells. Selection was optimized by determining the puromycin dose required to achieve >95% cell killing in 72\u2009hr. Cell viability was measured with a Cell Titer Glo assay (Promega,\u00a0Madison,\u00a0WI) for a 6-point dose response ranging from 0 to 5 \u00b5g puromycin. For the genome-wide screen, 67 million cells were seeded at 33.5 million cells per cell stack (Corning). 24\u2009hr after plating, the culture media was replaced with fresh media containing 5\u2009\u03bcg/mL polybrene and lentivirus at an MOI of 0.5. 24\u2009hr after infection, the culture media was replaced with fresh media containing puromycin. 72\u2009hr after puromycin addition, cells were trypsinized and plated into new cell stacks at 67 million cells per cell stack. An aliquot of cells was analyzed by FACS to confirm infection and selection efficiency, and the percentage of RFP-positive cells was typically >95%. Cells were maintained in culture and split as needed to ensure confluence did not exceed 90%. The sgRNA and shRNA libraries were screened 7 days and 5 days post infection, respectively. For FACS, cells were harvested, resuspended at 30 million cells/mL, and live, single, RFP-positive cells were sorted (BD ARIA III) from the lower GFP quartile (GFP low) or from the upper GFP quartile (GFP high). For the genome-wide screen, 700 million cells were harvested and 50 million cells were sorted by FACS in the GFP low and GFP high category. 50 million unsorted cells were also collected as an input sample.\n\nCells stained for endogenous SQSTM1 were harvested and fixed in 4% paraformaldehyde. The samples were then washed with PBS, permeabilized in 0.1% Triton X-100 for 10\u2009min, blocked using Odyssey block buffer (LI-COR,\u00a0Lincoln,\u00a0NE) for 30\u2009min, and incubated with SQSTM1/p62 primary antibody (BD Biosciences, 1:500) in 1:1 PBS/Odyssey block buffer for 1\u2009hr at room temperature. After washing with PBS, cells were incubated with Alexa647-tagged secondary antibody (Molecular Probes,\u00a0Waltham,\u00a0MA), incubated in the dark for 30\u2009min at room temperature, washed again with PBS, strained through a 40\u2009\u03bcm mesh filter and resuspended at 20 million cells/mL. Single, RFP-positive cells were sorted (BD ARIAIII) from the lower Alexa647 quartile (SQSTM1 low) or upper Alexa647 quartile (SQSTM1 high). For the mini-pool screen, cells were seeded, infected and selected as previously described for the genome-wide screen. 60 million cells were harvested and prepared for FACS sorting. 2 million cells were sorted by FACS in the SQSTM1 low and SQSTM1 high category, and 2 million cells were collected for the unsorted population.\n\n#### Illumina library construction and sequencing\n\nGenomic DNA from live cells was isolated using the QIAamp DNA Blood Maxi kit (Qiagen,\u00a0Germany) and quantified using PicoGreen (Invitrogen,\u00a0Waltham,\u00a0MA) following the manufacturer\u2019s instructions. Genomic DNA from 4% paraformaldehyde-fixed cells was isolated using phenol chloroform extraction. Illumina sequencing libraries were generated using PCR amplification with primers specific to the genome integrated lentiviral vector backbone sequence. For the focused shRNA and the genome-wide sgRNA libraries, a total of 24\u00a0x 4\u2009\u03bcg PCR reactions were performed per transduced sample. For the mini-pool sgRNA library, a total of 4\u00a0x 0.25\u2009\u03bcg PCR reactions were performed per transduced sample. PCR reactions were performed in a volume of a 100\u2009\u03bcl containing a final concentration of 0.5\u2009\u03bcM of each PCR primer (Integrated DNA Technologies,\u00a0Coralville,\u00a0IA), 0.5\u2009mM dNTPs (Clontech) and 1x Titanium Taq and buffer (Clontech). For the shRNA samples an additional third \u2018index\u2019 PCR primer at a final concentration of 0.01\u2009\u03bcM was used. PCR primer sequences for all libraries are shown in Supplementary file 1B. PCR cycling conditions used were as follows: 1x 98\u00b0C for 5\u2009min; 28x 95\u00b0C for 15 s, 65\u00b0C for 15 s, 72\u00b0C for 30 s; 1x 72\u00b0C for 5\u2009min. The resulting Illumina libraries were purified using 1.8x SPRI AMPure XL beads (Beckman Coulter,\u00a0Indianapolis, IN) following the manufacturer\u2019s recommendations and qPCR quantified using primers specific to the Illumina sequences using standard methods. Illumina sequencing libraries were pooled and sequenced with a HiSeq 2500 instrument (Illumina, San Diego, CA). sgRNA libraries were sequenced with 1x30\u00a0b (sgRNA) and 1x11\u00a0b (sample index) reads. shRNA libraries were sequenced with 1x50\u00a0b (shRNA barcode) and 1x9\u00a0b (sample index) reads. Sequencing was performed following the manufacturer\u2019s recommendations, using custom sequencing primers (see Supplementary file 1B). The number of reads was adjusted to cover each sgRNA or shRNA with approximately 1000 reads.\n\n#### Data analysis\n\nRaw sequencing reads were aligned to the appropriate library using Bowtie (Langmead et al., 2009) allowing for no mismatches and counts were generated. Differential fold change estimates were generated using DESeq2 (Love et al., 2014) to compare the representation in the 'low' gate to the 'high' gate in the FACS sort. Additionally, to assess effects on proliferation, the fold change of the unsorted cell population compared to the input library was generated. For gene-based hit calling, Redundant siRNA Activity (RSA) (K\u00f6nig et al., 2007) and average or maximal fold changes were calculated across all reagents for a given gene. Biological contextualization was assessed by measuring the significance of overlap between screen hits and Gene Ontology Biological Process groups using a hypergeometric test and correcting for multiple hypothesis testing using Benjamini-Hochberg.\n\n#### High-level concept Map of enriched pathways and processes\n\nStatistical enrichment of pathways and process-related gene sets was determined for screen hits using the hypergeometric test implemented in the R programming language. The gene sets were compiled from multiple sources including Reactome, NetPath, KEGG, Wikipathways, BioCarta and Gene Ontology. We applied graph theoretic approaches to the construction of high-level concept maps as described previously (Anderson et al., 2011; Orvedahl et al., 2011; Tomlins et al., 2007). Briefly, the enrichment analyses were abstracted as a network graph, with nodes denoting enriched pathways and processes. In the network, node size scales according to the number of hit genes in each pathway or process, while the node color intensity corresponds to the gene set enrichment score, -Log10(P). For graph edges, we computed Jaccard coefficients to determine similarity between pathways and process-related gene sets enriched among the screen hits. Sub-clusters of strongly connected nodes in the network were identified using Tarjan\u2018s algorithm (Tarjan, 1972).\n\n### Validation of individual sgRNAs\n\nFor each sgRNA expression clone (Supplementary file 1C), spacer-encoding sense and antisense oligonucleotides with appropriate overhangs were synthesized (IDT), annealed, cloned into the BbsI restriction site of the pNGx-LV-g003 vector (Supplementary file 1A), and verified by sequencing. Lentiviral particles were generated in HEK293T cells using the ViraPower Lentiviral Packaging Mix (Invitrogen) following manufacturer\u2019s instructions. H4 Cas9 and H4 Cas9 GFP-SQSTM1 cells were seeded at 250,000 cells/well in 6-well or 100,000 cells/well in 12-well and infected with 400\u2009\u03bcL or 200\u2009\u03bcL of virus supernatant, respectively. Infected cells were selected with 1\u2009\u03bcg/mL puromycin and analyzed seven days post-infection. Where indicated, cells were treated with 50 nM bafilomycin A1 (Tocris,\u00a0United\u00a0Kindom), 500 nM AZD8055 (ChemieTek,\u00a0Indianapolis,\u00a0IN), 10\u2009\u03bcg/mL tunicamycin (Sigma-Aldrich,\u00a0St. Louis, MO) or 0.1% DMSO.\n\n### RT-qPCR analysis\n\nCells were lysed and processed using the RNeasy Plus Kit (Qiagen) according to the manufacturer\u2019s instructions. cDNA synthesis was performed with the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems,\u00a0Waltham,\u00a0MA). qPCR was performed with the TaqMan Gene Expression Master Mix and the following TaqMan probes from Applied Biosystems: HPRT1 (Hs02800695_m1), SQSTM1 (Hs01061917_g1). The qPCR reactions were run on a ViiA7 real-time PCR machine (Applied Biosystems). Relative quantification of SQSTM1 mRNA was performed using HPRT1 mRNA as normalization control and the 2-\u0394\u0394Ct method.\n\n### RNA sequencing\n\nRNA sequencing libraries were prepared using the Illumina TruSeq RNA Sample Prep kit v2 and sequenced using the Illumina HiSeq2500 platform. Samples were sequenced to a length of 2\u00a0x\u00a076 base-pairs. A total of 491 million 76 bp paired-end reads were mapped to the Homo sapiens genome (HG19) (Pruitt et al., 2007) (release 59, May 3, 2013), and a custom junction database by using an in-house gene and exon quantification pipeline based on the aligner Bowtie (Langmead and Salzberg, 2012), version 2.0.2. On average, 95% of the total reads were mapped to the genome or the transcripts, and 90.6% of the aligned reads mapped to expressed sequences. The genome and the transcript alignments were used to derive gene counts based on human Ensembl gene IDs (v78, December 2014). Gene counts were divided by the total number of mapped reads for each sample and multiplied by one million to obtain Counts Per Million (CPMs) to account for varying library sizes. Differential expression analysis was performed on the CPMs using a limma/voom workflow with R version 3.1.0 (Ritchie et al., 2015). The statistical model consisted of one factor with two levels for the UFM1 status (control or knockout). Genes with counts per million values below 0.5 for at least two out of three replicates in both groups were excluded from the analysis. The following test was performed: UFM1 knockout versus control. Results are reported in terms of log2 fold changes and negative log10 adjusted P values (Benjamini Hochberg false discovery rate) in Figure 4\u2014source data 1. For the enrichment analysis of differentially regulated genes, we used an in-house implementation of overrepresentation analysis using hypergeometric testing and a Benjamini-Hochberg FDR correction.\n\n### Western blotting\n\nCells were lysed in RIPA buffer (Thermo Scientific,\u00a0Waltham,\u00a0MA) supplemented with protease inhibitor cocktail (Roche) followed by sonication. Alternatively, protein lysates were prepared in RIPA buffer containing protease inhibitors and 1% SDS followed by purification with QIAshredder columns (Qiagen). Protein concentration was determined with the Pierce BCA protein assay kit (Thermo Scientific) or the Bio-Rad DC protein assay kit (Bio-Rad,\u00a0Hercules,\u00a0CA). Samples were mixed with NuPAGE LDS sample buffer containing NuPAGE sample reducing agent, denatured for 10\u2009min at 70\u00b0C and loaded onto NuPAGE Novex 4\u201312% Bis-Tris protein gels (Invitrogen). Proteins were transferred to PVDF membranes using the Trans-Blot turbo blotting system (Bio-Rad). After blocking for 1\u2009hr in Odyssey blocking buffer, membranes were incubated over night at 4\u00b0C with primary antibodies in Odyssey blocking buffer supplemented with 0.1% Tween-20 (Bio-Rad). Secondary antibodies (anti-rabbit IRDye 800CW from LI-COR; anti-mouse Alexa Fluor 680 from Invitrogen) were diluted in Odyssey blocking buffer supplemented with 0.1% Tween-20 and incubated with membranes for 1\u2009hr at room temperature. Proteins were visualized using Odyssey infrared imaging system. Alternatively, membranes were blocked with PBS/0.1% Tween-20/5% milk. Primary and secondary (anti-rabbit HRP or anti-mouse HRP from Thermo Fisher Scientific) antibodies were diluted in PBS/0.1% Tween-20/5% milk and incubated over night at 4\u00b0C and for 1\u2009hr at room temperature, respectively. Proteins were visualized using the SuperSignal West Pico chemiluminescent substrate (Thermo\u00a0Scientific) by autoradiography. Protein quantification was performed using ImageJ and statistical significance was assessed using GraphPad Prism 6. The primary antibodies used in this study are reported in Supplementary file 1D.\n\n### Imaging and image analysis\n\nCells were fixed in 4% paraformaldehyde supplemented with Hoechst 33342. After three washes with PBS, cells were subjected to automated epifluorescence microscopy using an InCell Analyzer 2000 (GE Healthcare,\u00a0United\u00a0Kingdom). Four fields per well were imaged using 20 X magnification, DAPI and FITC filters. Images were analyzed with the CellProfiler software (Broad Institute). Briefly, FITC images were segmented using the ilastik tool and a probability map was generated to identify GFP-SQSTM1 dots. Nuclei were identified on the basis of Hoechst 33,342 staining. The total area covered by GFP-SQSTM1 puncta was quantified using the probability map, divided by the nuclei count and averaged across fields. Statistical significance was assed using GraphPad Prism 6.\n",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b7af92f0-282d-48ee-9142-421723e805b1",
+      "submission_id": "032882a7-49f5-4e97-aa6c-e885e257708b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17290.013](https://doi.org/10.7554/eLife.17290.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Functional CRISPR screening identifies the ufmylation pathway as a regulator of SQSTM1/p62\" for consideration by eLife. Your article has been favorably evaluated by Arup Chakraborty (Senior editor) and four reviewers, including Narendra Wajapeyee and Michael R Green, who is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nDeJesus et al. in this very interesting study perform a genome-wide CRISPR/CAS9-based screening and identified ufmylation pathway as a regulator of SQSTM1/p62. This study also showed that CRISPR-based approach was superior to RNAi at least in this context in identifying the regulators of p62 stability. All of the autophagy assays are appropriate, controlled and consistent with the conclusions of the manuscript. In addition, the experiments and data in support of the conclusion that ufmylation regulates SQSTM and ER stress in an autophagy-independent manner are appropriate. The work is expected to be of general interest to scientists interested in genome-wide screening and specific interest to those in the autophagy field. The sole substantive concern is that the manuscript needs to be written in a more balanced manner as detailed below.\n\nEssential revisions:\n\n1) One concern for the side-by-side comparison is that the standard CRISPR library was not used but rather the authors used a so called \"focused CRISPR library\", which contains 20 sgRNAs per gene. It is not clear that the standard CRISPR library, which contains 5 sgRNAs per gene, would perform as well and therefore the major conclusion may be misleading. The authors need to revise the text to explicitly discuss this issue.\n\n2) The authors should discuss potential drawbacks of the CRISPR screen such as the inability to obtain positives for genes that are essential for cellular viability. They should also mention that like RNAi, CRISPR/Cas9 can have off-target effects.\n\n3) The authors should discuss that the conclusion that CRISPR screens are superior to RNAi screens cannot be generalized for all scenarios without performing experiments, similar to what the authors have done in this manuscript.\n",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df55097c-6dfb-4a16-877b-201c23b1fe43",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C1",
+      "claim": "SQSTM1 is an adaptor protein that integrates multiple cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is an adaptor protein that integrates multiple cellular signaling pathways and whose expression is tightly regulated at the transcriptional and post-translational level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization statement about SQSTM1 that draws from established scientific knowledge about the protein's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "93f45d5d-7b11-4ccb-a1f4-30bb151ad6c0",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C2",
+      "claim": "SQSTM1 expression is tightly regulated at the transcriptional and post-translational level.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is an adaptor protein that integrates multiple cellular signaling pathways and whose expression is tightly regulated at the transcriptional and post-translational level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about SQSTM1 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "0f505829-7bc3-4fb7-8f7c-987d5c8332ac",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C3",
+      "claim": "CRISPR is superior to RNAi in identifying known SQSTM1 modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Through systematic comparison of pooled libraries, we show that CRISPR is superior to RNAi in identifying known SQSTM1 modulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the focused library comparison shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "387ae4a2-8ef8-4b73-9fd6-0d3d29fca115",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C4",
+      "claim": "A genome-wide CRISPR screen exposed MTOR signalling as a key regulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "fdd1b699-ae46-45cd-a662-f46301080426",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C5",
+      "claim": "A genome-wide CRISPR screen exposed the entire macroautophagy machinery as a key regulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "f017f770-8c7c-46ac-a09d-eb30352feaba",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C6",
+      "claim": "HNRNPM is a novel modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen and validation experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "db1dfdfa-4526-430b-873f-1a03f1f1c7b7",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C7",
+      "claim": "SLC39A14 is a novel modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen and validation experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "fc5b4906-7f40-4fa9-a296-7c37eb40b4cf",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C8",
+      "claim": "SRRD is a novel modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen and validation experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a1f8955f-d6bf-4611-a5f4-c030d7c30b11",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C9",
+      "claim": "PGK1 is a novel modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen and validation experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "446ab663-cd7d-436d-b160-582d04c0a370",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C10",
+      "claim": "The ufmylation cascade is a novel modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide CRISPR screen exposed MTOR signalling and the entire macroautophagy machinery as key regulators of SQSTM1 and identified several novel modulators including HNRNPM, SLC39A14, SRRD, PGK1 and the ufmylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the genome-wide screen and validation experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "1ad5d6ec-4db4-4c2a-b811-ea1b77bf886e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C11",
+      "claim": "Ufmylation regulates SQSTM1 by eliciting a cell type-specific ER stress response which induces SQSTM1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ufmylation regulates SQSTM1 by eliciting a cell type-specific ER stress response which induces SQSTM1 expression and results in its accumulation in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including RNA sequencing and time course experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "c5ce68d1-6bbf-4e55-a0ec-603e44613133",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C12",
+      "claim": "Ufmylation regulates SQSTM1 by eliciting a cell type-specific ER stress response which results in SQSTM1 accumulation in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ufmylation regulates SQSTM1 by eliciting a cell type-specific ER stress response which induces SQSTM1 expression and results in its accumulation in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including imaging and immunoblot analysis shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "845614af-84f2-42b8-a120-6c11cc39f944",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C13",
+      "claim": "SQSTM1 is mutated and deregulated in Paget disease.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is a multifunctional adaptor protein that is mutated and deregulated in several pathological conditions, including Paget disease, neurodegeneration, metabolic dysfunction or cancer (Laurin et al., 2002; Rodriguez et al., 2006; Rubino et al., 2012; Takamura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ec1bcf7f-4353-41d6-bf45-5153f56f07a7",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C14",
+      "claim": "SQSTM1 is mutated and deregulated in neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is a multifunctional adaptor protein that is mutated and deregulated in several pathological conditions, including Paget disease, neurodegeneration, metabolic dysfunction or cancer (Laurin et al., 2002; Rodriguez et al., 2006; Rubino et al., 2012; Takamura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "0cbd982c-36eb-44ca-b203-3da973e518aa",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C15",
+      "claim": "SQSTM1 is mutated and deregulated in metabolic dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is a multifunctional adaptor protein that is mutated and deregulated in several pathological conditions, including Paget disease, neurodegeneration, metabolic dysfunction or cancer (Laurin et al., 2002; Rodriguez et al., 2006; Rubino et al., 2012; Takamura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "19a1bb3f-b914-41d9-87b7-530820b7fb03",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C16",
+      "claim": "SQSTM1 is mutated and deregulated in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 is a multifunctional adaptor protein that is mutated and deregulated in several pathological conditions, including Paget disease, neurodegeneration, metabolic dysfunction or cancer (Laurin et al., 2002; Rodriguez et al., 2006; Rubino et al., 2012; Takamura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "4756e34a-2e7c-46bf-9825-ac22622ac3cb",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C17",
+      "claim": "SQSTM1 regulates nuclear factor-\u03baB (NF-\u03baB) activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a scaffolding protein, SQSTM1 regulates different cellular signaling cascades such as nuclear factor-\u03baB (NF-\u03baB) activation or the mammalian target of rapamycin complex 1 (mTORC1) (Duran et al., 2011; Katsuragi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ad29e887-bd81-42ea-91fc-5722f7e3aa49",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C18",
+      "claim": "SQSTM1 regulates the mammalian target of rapamycin complex 1 (mTORC1).",
+      "claim_type": "EXPLICIT",
+      "source": "As a scaffolding protein, SQSTM1 regulates different cellular signaling cascades such as nuclear factor-\u03baB (NF-\u03baB) activation or the mammalian target of rapamycin complex 1 (mTORC1) (Duran et al., 2011; Katsuragi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "5c324605-74da-4f11-b5ff-a1bf1028197d",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C19",
+      "claim": "SQSTM1 plays a critical role in autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SQSTM1 plays a critical role in autophagy, a catabolic process that results in the lysosomal degradation of cytosolic components (He and Klionsky, 2009; Mizushima and Komatsu, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9cde3082-c3ec-46ac-ac26-99601af60558",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C20",
+      "claim": "Autophagy is a catabolic process that results in the lysosomal degradation of cytosolic components.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SQSTM1 plays a critical role in autophagy, a catabolic process that results in the lysosomal degradation of cytosolic components (He and Klionsky, 2009; Mizushima and Komatsu, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "41f94e9e-8b78-452a-9c5f-389a12eeab44",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C21",
+      "claim": "In autophagy, SQSTM1 functions as an adaptor that recruits ubiquitinated cargo into forming autophagosomes via its LC3 interacting domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In autophagy, SQSTM1 functions as an adaptor that recruits ubiquitinated cargo into forming autophagosomes via its LC3 interacting domain (Bj\u00f8rk\u00f8y et al., 2005; Stolz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a238317f-7c00-4019-b2df-18c61f02802b",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C22",
+      "claim": "Cargo along with SQSTM1 is trafficked into lysosomes for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cargo along with SQSTM1 is then trafficked into lysosomes for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the autophagy process supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ac4e6202-23ab-4345-b894-8b536f7153cd",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C23",
+      "claim": "Intracellular levels of SQSTM1 are controlled through turnover by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular levels of SQSTM1 are controlled through turnover by autophagy but also at the transcriptional level upon insults such as oxidative, proteotoxic or endoplasmic reticulum (ER) stress (Jain et al., 2010; Kageyama et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "18436547-02c1-4eb7-a0bc-6f0d95e61fe8",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C24",
+      "claim": "Intracellular levels of SQSTM1 are controlled at the transcriptional level upon oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular levels of SQSTM1 are controlled through turnover by autophagy but also at the transcriptional level upon insults such as oxidative, proteotoxic or endoplasmic reticulum (ER) stress (Jain et al., 2010; Kageyama et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "8e05574c-f998-41c1-99a0-89404925f9c4",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C25",
+      "claim": "Intracellular levels of SQSTM1 are controlled at the transcriptional level upon proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular levels of SQSTM1 are controlled through turnover by autophagy but also at the transcriptional level upon insults such as oxidative, proteotoxic or endoplasmic reticulum (ER) stress (Jain et al., 2010; Kageyama et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "d32796b8-44da-4260-b693-863658b843da",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C26",
+      "claim": "Intracellular levels of SQSTM1 are controlled at the transcriptional level upon endoplasmic reticulum (ER) stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular levels of SQSTM1 are controlled through turnover by autophagy but also at the transcriptional level upon insults such as oxidative, proteotoxic or endoplasmic reticulum (ER) stress (Jain et al., 2010; Kageyama et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a2235874-d1ac-4e0e-b041-48bfebc7483b",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C27",
+      "claim": "The CRISPR-Cas9 system relies on single guide RNAs (sgRNAs) to target the endonuclease enzyme Cas9 to a genetic locus where it cleaves DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR-Cas9 system relies on single guide RNAs (sgRNAs) to target the endonuclease enzyme Cas9 to a genetic locus where it cleaves DNA (Cong et al., 2013; Sternberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CRISPR-Cas9 mechanism supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "2775d3fb-6680-4d47-96ec-9283d74b4e70",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C28",
+      "claim": "Repairing of the double strand break by non-homologous end joining results in the insertions and deletions of base pairs often causing loss-of-function phenotypes when targeted to coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Repairing of the double strand break by non-homologous end joining results in the insertions and deletions of base pairs often causing loss-of-function phenotypes when targeted to coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DNA repair mechanism and its consequences, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "008cb750-ba28-48c4-a5c2-84c1f71738f6",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C29",
+      "claim": "Induction of autophagy with sgRNAs targeting MTOR decreased GFP-SQSTM1 fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of autophagy with sgRNAs targeting MTOR decreased GFP-SQSTM1 fluorescence, while inhibition of autophagy with sgRNAs against the lipid kinase PIK3C3 (also known as VPS34) robustly accumulated GFP-SQSTM1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7a7c5537-124d-40f4-ac86-eeb0271f1adf",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C30",
+      "claim": "Inhibition of autophagy with sgRNAs against the lipid kinase PIK3C3 robustly accumulated GFP-SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of autophagy with sgRNAs targeting MTOR decreased GFP-SQSTM1 fluorescence, while inhibition of autophagy with sgRNAs against the lipid kinase PIK3C3 (also known as VPS34) robustly accumulated GFP-SQSTM1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "653ec923-1261-48e0-9dfe-bcc33d13e8b7",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C31",
+      "claim": "PIK3C3 is also known as VPS34.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of autophagy with sgRNAs targeting MTOR decreased GFP-SQSTM1 fluorescence, while inhibition of autophagy with sgRNAs against the lipid kinase PIK3C3 (also known as VPS34) robustly accumulated GFP-SQSTM1 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "90878e92-7e86-46a4-a407-fea5fb0db08e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C32",
+      "claim": "MTOR sgRNAs were enriched in GFP low cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with autophagy modulation, MTOR sgRNAs were enriched in GFP low cells while PIK3C3 sgRNAs were enriched in GFP high cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "8db33d33-1d27-4c9a-a059-089dd8a8ffb3",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C33",
+      "claim": "PIK3C3 sgRNAs were enriched in GFP high cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with autophagy modulation, MTOR sgRNAs were enriched in GFP low cells while PIK3C3 sgRNAs were enriched in GFP high cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "82512182-a541-4c1e-bc56-a151e2e6a40e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C34",
+      "claim": "MTOR and PIK3C3 sgRNAs showed an unchanged distribution in unsorted cells versus the input library.",
+      "claim_type": "EXPLICIT",
+      "source": "MTOR and PIK3C3 sgRNAs showed an unchanged distribution in unsorted cells versus the input library suggesting that these reagents did not significantly impair cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "1acee798-e89d-4fb4-a3b5-f32264d4f04d",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C35",
+      "claim": "MTOR and PIK3C3 sgRNAs did not significantly impair cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "MTOR and PIK3C3 sgRNAs showed an unchanged distribution in unsorted cells versus the input library suggesting that these reagents did not significantly impair cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the unchanged distribution of sgRNAs in unsorted cells versus input library.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a2c6afa2-8513-4ea9-a692-2e48007cfa41",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C36",
+      "claim": "SQSTM1 sgRNA sequences were under-represented in unsorted cells versus the input library.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed an equal distribution in GFP high and GFP low cells and found that SQSTM1 sgRNA sequences were under-represented in unsorted cells versus the input library, similar to sgRNAs against the essential gene PLK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7c35bbde-969f-4fa2-a850-32932a272a2e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C37",
+      "claim": "Cas9-mediated cytotoxicity has been reported when targeted to regions of gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-mediated cytotoxicity has been reported when targeted to regions of gene amplification (Wang et al., 2015; Munoz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "dd6e5faf-68d9-455f-b7a0-950fe4b2f4de",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C38",
+      "claim": "SQSTM1 sgRNAs target both endogenous SQSTM1 and multiple GFP-SQSTM1 chromosome integrants in the H4 reporter clone which results in cytotoxicity in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it is likely that SQSTM1 sgRNAs target both endogenous SQSTM1 and multiple GFP-SQSTM1 chromosome integrants in the H4 reporter clone which results in cytotoxicity in response to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on inference from the observed data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9f6de19b-07f2-4041-b76a-e0f616eaa692",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C39",
+      "claim": "Both CRISPR and RNAi identified many known modulators of SQSTM1, including MTOR, RPTOR, RB1CC1, BECN1, PIK3C3, ULK1 or ATG7.",
+      "claim_type": "EXPLICIT",
+      "source": "When the average fold change per gene was analyzed, both CRISPR and RNAi identified many known modulators of SQSTM1, including MTOR, RPTOR, RB1CC1 (also known as FIP200), BECN1, PIK3C3, ULK1 or ATG7 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "830d69a6-98fe-4a51-aa92-ca7402f1faa6",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C40",
+      "claim": "RB1CC1 is also known as FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "When the average fold change per gene was analyzed, both CRISPR and RNAi identified many known modulators of SQSTM1, including MTOR, RPTOR, RB1CC1 (also known as FIP200), BECN1, PIK3C3, ULK1 or ATG7 (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "5daf66e0-ad46-48f4-8e24-e68ce74b6e3e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C41",
+      "claim": "ATG5, ATG10, ATG13 and ATG16L1 were exclusively identified by CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several well-characterized modulators of SQSTM1 including ATG5, ATG10, ATG13 or ATG16L1 were exclusively identified by CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "1b41d59b-c6a8-4197-87b4-413b1cfd1d6b",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C42",
+      "claim": "A complete knockout of ATG5, ATG10, ATG13 and ATG16L1 by CRISPR may be needed to robustly impair the autophagic clearance of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete knockout of these targets by CRISPR may be needed to robustly impair the autophagic clearance of SQSTM1, in line with previous reports (Hosokawa et al., 2006; Mizushima et al., 2010) suggesting that some autophagy proteins, including ATG5, are functional even when expressed at very low levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and supported by citations to previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a916aaa9-d203-42a4-9b11-41f4dc47ff8a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C43",
+      "claim": "Some autophagy proteins, including ATG5, are functional even when expressed at very low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete knockout of these targets by CRISPR may be needed to robustly impair the autophagic clearance of SQSTM1, in line with previous reports (Hosokawa et al., 2006; Mizushima et al., 2010) suggesting that some autophagy proteins, including ATG5, are functional even when expressed at very low levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "cd0b66e0-636e-4cc6-bec0-254f4d01e383",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C44",
+      "claim": "CRISPR outperformed RNAi in a significance analysis using redundant siRNA activity (RSA) statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CRISPR outperformed RNAi in a significance analysis using redundant siRNA activity (RSA) statistics (K\u00f6nig et al., 2007) where more known modulators of SQSTM1 scored with statistically significant p-values by CRISPR (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "d88a2ac0-6be1-4216-8c00-3f680cc1eba4",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C45",
+      "claim": "sgRNAs showed a tighter distribution than shRNAs when all CRISPR and RNAi reagents were analyzed in GFP high versus GFP low cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to shRNAs, sgRNAs showed a tighter distribution when all CRISPR and RNAi reagents were analyzed in GFP high versus GFP low cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e2548656-67d4-48c7-b67c-6cb290da8a22",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C46",
+      "claim": "MTOR, RPTOR and RHEB were among the top ranked genes in GFP low cells in the genome-wide screen.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing sgRNA sequences enriched in GFP low cells, we identified MTOR, RPTOR and RHEB among the top ranked genes, in line with their depletion activating autophagy and inducing degradation of SQSTM1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "fc20ec91-799d-4069-b542-d0d98a0886c2",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C47",
+      "claim": "Depletion of MTOR, RPTOR and RHEB activates autophagy and induces degradation of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing sgRNA sequences enriched in GFP low cells, we identified MTOR, RPTOR and RHEB among the top ranked genes, in line with their depletion activating autophagy and inducing degradation of SQSTM1 (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the MTOR pathway and its role in autophagy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7e3cd3d6-d065-4572-91ae-5f7c10601d5f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C48",
+      "claim": "Several components of the mediator complex were observed among top ranked genes in GFP low cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed several components of the mediator complex and an enrichment analysis of the top ranked 100 genes revealed transcriptional regulation by RNA polymerase II as significantly enriched GO biological process (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "732eb872-7cb2-4919-bf9e-61ec1df407e1",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C49",
+      "claim": "Transcriptional regulation by RNA polymerase II was a significantly enriched GO biological process among the top ranked 100 genes in GFP low cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed several components of the mediator complex and an enrichment analysis of the top ranked 100 genes revealed transcriptional regulation by RNA polymerase II as significantly enriched GO biological process (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by enrichment analysis of experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "6956a978-19e1-4726-9d7b-cbdc80c28beb",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C50",
+      "claim": "CRISPR-mediated depletion of mediator complex components likely decreases GFP-SQSTM1 by reducing reporter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-mediated depletion of these mediator complex components likely decreases GFP-SQSTM1 by reducing reporter expression, a hypothesis which we evaluated with the mini-pool follow-up approach discussed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis that is later tested with the mini-pool approach.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9c2bb98d-1fb1-4d86-8cc0-cd3ccd887c52",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C51",
+      "claim": "sgRNA sequences enriched in GFP high cells targeted many autophagy genes such as ATG9A, RB1CC1, ATG16L1, ATG7, ATG3, ATG5, WIPI2, MAP1LC3B and ATG14.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNA sequences enriched in GFP high cells targeted many autophagy genes such as ATG9A, RB1CC1, ATG16L1, ATG7, ATG3, ATG5, WIPI2, MAP1LC3B and ATG14 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "d085866f-0b91-44d6-89a5-4782c20bb67c",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C52",
+      "claim": "Autophagy-related categories were the most significantly enriched GO biological processes when the top ranked 100 genes in GFP high cells were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy-related categories were the most significantly enriched GO biological processes when the top ranked 100 genes in GFP high cells were analyzed (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by enrichment analysis of experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "5a16ab3c-4d7d-439f-9d8f-5aeb767c5682",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C53",
+      "claim": "The genome-wide GFP-SQSTM1 CRISPR screen comprehensively mapped the canonical macroautophagy pathway and identified components of the initiation, nucleation and elongation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome-wide GFP-SQSTM1 CRISPR screen comprehensively mapped the canonical macroautophagy pathway and identified components of the initiation, nucleation and elongation machinery (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "3d3d4976-e27d-42a4-bca9-a79c97c50038",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C54",
+      "claim": "The 5 sgRNA per gene in the genome-wide library performed equally well as the 20 sgRNAs per gene in the focused CRISPR library in identifying autophagy pathway components when the maximal fold change was analyzed per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the 20 sgRNAs per gene in the focused CRISPR library (Figure 1), the 5 sgRNA per gene in the genome-wide library performed equally well in identifying autophagy pathway components when the maximal fold change was analyzed per gene (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "fc25da67-f084-4251-ae9f-de47cc416452",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C55",
+      "claim": "Autophagy pathway components which did not significantly score were restricted to genes which have functional homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy pathway components which did not significantly score were restricted to genes which have functional homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ba427e32-c6d0-462d-a964-a446b3646ea9",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C56",
+      "claim": "ATG4A, ATG4C, ATG4D, ULK2, ATG16L2, WIPI1 and ATG9B were all inactive while their homologs ATG4B, ULK1, ATG16L1, WIPI2 and ATG9A robustly scored.",
+      "claim_type": "EXPLICIT",
+      "source": "These include ATG4A, ATG4C, ATG4D, ULK2, ATG16L2, WIPI1 and ATG9B which were all inactive while their homologs ATG4B, ULK1, ATG16L1, WIPI2 and ATG9A robustly scored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the genome-wide screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "3f350a4c-e514-405a-a2b3-c467be86ba6a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C57",
+      "claim": "A strong enrichment and connectivity signal was confirmed for autophagy and MTOR signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing subclusters of highly connected gene sets, a strong enrichment and connectivity signal was confirmed for several pathways and processes, including autophagy and MTOR signaling (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by network analysis of experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "66f65b1b-c356-4649-944e-49fc50f4444c",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C58",
+      "claim": "Screening of the mini-pool in H4 Cas9 GFP-SQSTM1 cells showed a high confirmation rate when the top-ranked hits from the primary screen were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of the mini-pool in H4 Cas9 GFP-SQSTM1 cells showed a high confirmation rate when the top-ranked hits from the primary screen were analyzed (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "fe54ba4d-bb48-4355-a7fb-8749c0fa8abd",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C59",
+      "claim": "The MTOR and autophagy pathways are key regulators of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the GFP assay, we used FACS to isolate a high and low cell population based on the SQSTM1 staining intensity. This approach confirmed that the MTOR and autophagy pathways are key regulators of SQSTM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the mini-pool screen with endogenous SQSTM1 staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7c604c97-5ccd-4eb9-8105-c034847e5f42",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C60",
+      "claim": "Components of the mediator complex failed to robustly score in the endogenous SQSTM1 mini-pool screen.",
+      "claim_type": "EXPLICIT",
+      "source": "However, components of the mediator complex or targets linked to translation such as SBDS and DPH1 failed to robustly score which suggests that these specifically regulate the GFP-SQSTM1 reporter (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "16368b57-ee58-4f81-9fdf-44c67e916644",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C61",
+      "claim": "Targets linked to translation such as SBDS and DPH1 failed to robustly score in the endogenous SQSTM1 mini-pool screen.",
+      "claim_type": "EXPLICIT",
+      "source": "However, components of the mediator complex or targets linked to translation such as SBDS and DPH1 failed to robustly score which suggests that these specifically regulate the GFP-SQSTM1 reporter (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e78b1c04-b298-4c2f-a9f0-d9b461bd9c6a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C62",
+      "claim": "Mediator complex components and translation-linked targets specifically regulate the GFP-SQSTM1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, components of the mediator complex or targets linked to translation such as SBDS and DPH1 failed to robustly score which suggests that these specifically regulate the GFP-SQSTM1 reporter (Figure 2F and G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential results between GFP-SQSTM1 and endogenous SQSTM1 screens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "073b02a7-e314-4d5f-a063-8ff1fa0e6fd7",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C63",
+      "claim": "sgRNAs against HNRNPM, SLC39A14, SRRD and PGK1 were enriched in cells displaying high levels of both GFP-SQSTM1 and endogenous SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs against HNRNPM, SLC39A14, SRRD and PGK1 were enriched in cells displaying high levels of both GFP-SQSTM1 and endogenous SQSTM1 (Figure 3A), and to our knowledge, these candidates have not been linked to the regulation of SQSTM1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "33f197b4-ef34-4978-8ba2-df43b7accd44",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C64",
+      "claim": "HNRNPM, SLC39A14, SRRD and PGK1 have not been linked to the regulation of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs against HNRNPM, SLC39A14, SRRD and PGK1 were enriched in cells displaying high levels of both GFP-SQSTM1 and endogenous SQSTM1 (Figure 3A), and to our knowledge, these candidates have not been linked to the regulation of SQSTM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the findings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "149623c6-5037-460c-ac3e-6344049e8c19",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C65",
+      "claim": "Individual sgRNAs against HNRNPM, SLC39A14, SRRD and PGK1 caused a robust increase in SQSTM1 levels by immunoblot.",
+      "claim_type": "EXPLICIT",
+      "source": "When these sgRNAs were individually tested in H4 Cas9 cells, we observed a robust increase in SQSTM1 levels by immunoblot, similar to the depletion of ATG7 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "f2ce12f5-7d23-427a-9d10-d43f66818682",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C66",
+      "claim": "UFM1 and components of its conjugation machinery scored as modulators of endogenous and GFP-tagged SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that ubiquitin-fold modifier 1 (UFM1) and components of its conjugation machinery scored as modulators of endogenous and GFP-tagged SQSTM1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "c3a1118b-7066-4003-ba25-6f09f4217c96",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C67",
+      "claim": "UFM1 is a ubiquitin-like molecule which is post-translationally processed by UFM1-specific proteases (UFSP1 and UFSP2).",
+      "claim_type": "EXPLICIT",
+      "source": "UFM1 is a ubiquitin-like molecule which is post-translationally processed by UFM1-specific proteases (UFSP1 and UFSP2) and then conjugated to target proteins via the ubiquitin-like modifier activating enzyme 5 (UBA5), ubiquitin-fold modifier conjugating enzyme 1 (UFC1) and the UFM1-specific ligase (UFL1) (Figure 3C) (Daniel and Liebau, 2014; Komatsu et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the ufmylation pathway supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "413822b6-b601-46a1-84e0-c120333fa81a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C68",
+      "claim": "UFM1 is conjugated to target proteins via the ubiquitin-like modifier activating enzyme 5 (UBA5), ubiquitin-fold modifier conjugating enzyme 1 (UFC1) and the UFM1-specific ligase (UFL1).",
+      "claim_type": "EXPLICIT",
+      "source": "UFM1 is a ubiquitin-like molecule which is post-translationally processed by UFM1-specific proteases (UFSP1 and UFSP2) and then conjugated to target proteins via the ubiquitin-like modifier activating enzyme 5 (UBA5), ubiquitin-fold modifier conjugating enzyme 1 (UFC1) and the UFM1-specific ligase (UFL1) (Figure 3C) (Daniel and Liebau, 2014; Komatsu et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the ufmylation pathway supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "2cd0fd77-de73-4ef5-a5a9-040282bb7e71",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C69",
+      "claim": "Protein ufmylation was exposed in the primary screen as one of the most significantly enriched biological processes in GFP-SQSTM1 high cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein ufmylation was already exposed in the primary screen as one of the most significantly enriched biological processes in GFP-SQSTM1 high cells (Figure 2D) and all components of the cascade scored with the exception of UFSP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by enrichment analysis of experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7817e31e-096a-45a6-b59a-dc7afc732fa2",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C70",
+      "claim": "All components of the ufmylation cascade scored in the primary screen with the exception of UFSP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein ufmylation was already exposed in the primary screen as one of the most significantly enriched biological processes in GFP-SQSTM1 high cells (Figure 2D) and all components of the cascade scored with the exception of UFSP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the genome-wide screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "291ccec8-6891-4e9b-ae6c-d071796c3a15",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C71",
+      "claim": "Ufmylation has been implicated in the control of cell differentiation, growth and endoplasmic reticulum (ER) homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ufmylation has been implicated in the control of cell differentiation, growth and endoplasmic reticulum (ER) homeostasis (Daniel and Liebau, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "36d28a5d-b69d-4ce2-aa45-fb14f764785b",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C72",
+      "claim": "Knockout of the murine homolog of UFL1 has been linked to impaired autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of the murine homolog of UFL1 has been linked to impaired autophagy (Zhang et al., 2015), but the role of ufmylation in the autophagic process is controversial (Cai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "2c6fb979-5a46-433f-9905-67c47556b989",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C73",
+      "claim": "The role of ufmylation in the autophagic process is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of the murine homolog of UFL1 has been linked to impaired autophagy (Zhang et al., 2015), but the role of ufmylation in the autophagic process is controversial (Cai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "f3fdf59f-8371-4f0b-a3bf-a4655fb9f11d",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C74",
+      "claim": "Individual sgRNAs against UFM1, UBA5, UFL1, UFC1 and UFSP2 confirmed efficient depletion of the corresponding target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm ufmylation as modulator of SQSTM1, we individually tested sgRNAs against UFM1, UBA5, UFL1, UFC1 and UFSP2 and confirmed efficient depletion of the corresponding target proteins (Figure 3D) as well as robust accumulation of GFP-SQSTM1 and endogenous SQSTM1 (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b40a3eef-a36d-4d68-b07b-92346de1fc3f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C75",
+      "claim": "Individual sgRNAs against UFM1, UBA5, UFL1, UFC1 and UFSP2 caused robust accumulation of GFP-SQSTM1 and endogenous SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm ufmylation as modulator of SQSTM1, we individually tested sgRNAs against UFM1, UBA5, UFL1, UFC1 and UFSP2 and confirmed efficient depletion of the corresponding target proteins (Figure 3D) as well as robust accumulation of GFP-SQSTM1 and endogenous SQSTM1 (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "63220320-730f-4c0e-bc52-a20951f26cfd",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C76",
+      "claim": "Depletion of UFM1 increased SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of UFM1 increased SQSTM1 and slightly augmented the levels of the autophagy cargo receptors CALCOCO2 (also known as NDP52) and TAX1BP1; however, levels of LC3-I and LC3-II appeared largely unchanged (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "aa57cc42-3498-4434-b9fd-fd0c1f3c256c",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C77",
+      "claim": "Depletion of UFM1 slightly augmented the levels of the autophagy cargo receptors CALCOCO2 and TAX1BP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of UFM1 increased SQSTM1 and slightly augmented the levels of the autophagy cargo receptors CALCOCO2 (also known as NDP52) and TAX1BP1; however, levels of LC3-I and LC3-II appeared largely unchanged (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "39461267-a053-4bbd-b906-532cc8103645",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C78",
+      "claim": "CALCOCO2 is also known as NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of UFM1 increased SQSTM1 and slightly augmented the levels of the autophagy cargo receptors CALCOCO2 (also known as NDP52) and TAX1BP1; however, levels of LC3-I and LC3-II appeared largely unchanged (Figure 3F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a4e7bb86-f118-4224-b794-8ee61363f7e5",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C79",
+      "claim": "Levels of LC3-I and LC3-II appeared largely unchanged upon UFM1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of UFM1 increased SQSTM1 and slightly augmented the levels of the autophagy cargo receptors CALCOCO2 (also known as NDP52) and TAX1BP1; however, levels of LC3-I and LC3-II appeared largely unchanged (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "18630c54-3f2d-46c1-8574-757aab030307",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C80",
+      "claim": "UFM1-depleted cells were as sensitive to the V-ATPase inhibitor Bafilomycin A1 as the control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "UFM1-depleted cells were as sensitive to the V-ATPase inhibitor Bafilomycin A1 as the control cells suggesting that autophagic flux of LC3 is unchanged (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9d4b922d-5720-434b-9344-0f3623fa7336",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C81",
+      "claim": "Autophagic flux of LC3 is unchanged in UFM1-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "UFM1-depleted cells were as sensitive to the V-ATPase inhibitor Bafilomycin A1 as the control cells suggesting that autophagic flux of LC3 is unchanged (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Bafilomycin A1 sensitivity data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e216a492-909d-4cd9-99be-b13a096259ea",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C82",
+      "claim": "UFM1 does not show lysosomal localization when tagged with the mCherry-GFP tandem reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to LC3B, we did not see lysosomal localization of UFM1 when tagged with the mCherry-GFP tandem reporter (Nyfeler et al., 2012) (Figure 4B) suggesting that UFM1 is not an alternative lysosomal targeting signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "02826946-2100-46ae-bfb8-cea15352e8c3",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C83",
+      "claim": "UFM1 is not an alternative lysosomal targeting signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to LC3B, we did not see lysosomal localization of UFM1 when tagged with the mCherry-GFP tandem reporter (Nyfeler et al., 2012) (Figure 4B) suggesting that UFM1 is not an alternative lysosomal targeting signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of lysosomal localization observed in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "92d6ef92-5f30-4e14-82d7-f1d22dc65429",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C84",
+      "claim": "ATG7-depleted cells were unable to degrade GFP-SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while ATG7-depleted cells were unable to degrade GFP-SQSTM1, UFM1 knockout cells still cleared GFP-SQSTM1 when autophagy was activated by the MTOR inhibitor AZD8055, albeit with a reduced rate than cells infected with a scramble sgRNA control (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e126fb75-865e-410b-b467-319160838929",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C85",
+      "claim": "UFM1 knockout cells still cleared GFP-SQSTM1 when autophagy was activated by the MTOR inhibitor AZD8055.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while ATG7-depleted cells were unable to degrade GFP-SQSTM1, UFM1 knockout cells still cleared GFP-SQSTM1 when autophagy was activated by the MTOR inhibitor AZD8055, albeit with a reduced rate than cells infected with a scramble sgRNA control (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b99b9702-3cfe-4668-a200-b311399b2da1",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C86",
+      "claim": "UFM1 knockout cells cleared GFP-SQSTM1 with a reduced rate compared to cells infected with a scramble sgRNA control when autophagy was activated by AZD8055.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while ATG7-depleted cells were unable to degrade GFP-SQSTM1, UFM1 knockout cells still cleared GFP-SQSTM1 when autophagy was activated by the MTOR inhibitor AZD8055, albeit with a reduced rate than cells infected with a scramble sgRNA control (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "d17de88e-26c4-47a6-b979-9f2881d7ddb0",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C87",
+      "claim": "Autophagy-independent mechanisms likely contribute to the increase in SQSTM1 in UFM1-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that autophagy-independent mechanisms likely contribute to the increase in SQSTM1 in UFM1-depleted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from multiple experimental observations including LC3 flux, lysosomal localization, and GFP-SQSTM1 clearance experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b92b9058-88c1-45f7-8072-a4521cfef077",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C88",
+      "claim": "Compared to control sgRNA-infected cells, 526 genes were down-regulated more than twofold (p-value <10-5) when UFM1 was deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control sgRNA-infected cells, 526 genes were down-regulated while 276 genes were up-regulated more than twofold (p-value <10-5) when UFM1 was deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "cb048c5b-14e9-4586-93a6-66a4780c8c40",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C89",
+      "claim": "Compared to control sgRNA-infected cells, 276 genes were up-regulated more than twofold (p-value <10-5) when UFM1 was deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control sgRNA-infected cells, 526 genes were down-regulated while 276 genes were up-regulated more than twofold (p-value <10-5) when UFM1 was deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ca682ec4-a3de-4502-a5b9-45a7a13d7f07",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C90",
+      "claim": "The ER unfolded protein response was identified as the most significantly enriched biological process for the upregulated genes upon UFM1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "A gene set enrichment analysis identified the ER unfolded protein response as most significantly enriched biological process for the upregulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by enrichment analysis of RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "67f843b6-94e7-4595-916c-42a1c0605d1e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C91",
+      "claim": "Knockout of UFM1 increased SQSTM1 expression (~1.7-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to known ER stress markers such as HSPA5 (also known as BiP) or CANX, we observed that knockout of UFM1 increased SQSTM1 expression (~ 1.7-fold, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA sequencing data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "744660e9-4f65-4930-aa43-9e4c978134ca",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C92",
+      "claim": "HSPA5 is also known as BiP.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to known ER stress markers such as HSPA5 (also known as BiP) or CANX, we observed that knockout of UFM1 increased SQSTM1 expression (~ 1.7-fold, Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e762ff79-d6d1-4a02-8de0-eb77af07216f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C93",
+      "claim": "Induction of ER stress by tunicamycin increased mRNA levels of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ER stress by tunicamycin also increased mRNA levels of SQSTM1 (Figure 4F), in line with SQSTM1 being a target of the UPR (Liu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "7a19ea5d-a54c-486a-a272-cab418c72f4f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C94",
+      "claim": "SQSTM1 is a target of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ER stress by tunicamycin also increased mRNA levels of SQSTM1 (Figure 4F), in line with SQSTM1 being a target of the UPR (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a99d4420-5d2a-4396-915d-2dcaf7b9804d",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C95",
+      "claim": "In a UFM1-depletion time course experiment, accumulation of SQSTM1 was preceded by the induction of ER stress as measured by XBP1 splicing and CHOP.",
+      "claim_type": "EXPLICIT",
+      "source": "In a UFM1-depletion time course experiment, accumulation of SQSTM1 was preceded by the induction of ER stress as measured by XBP1 splicing and CHOP (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "8ae245b7-a3e1-4199-91f4-60e96ccd0ec8",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C96",
+      "claim": "UFM1 knockout induced CHOP and SQSTM1 in Huh-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, UFM1 knockout induced CHOP and SQSTM1 also in Huh-1 but not in HepG2 cells which did not show any signs of ER stress or SQSTM1 accumulation despite efficient depletion of UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "46f60d6f-e1bc-487d-ad46-fc9a7b128032",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C97",
+      "claim": "UFM1 knockout did not induce CHOP or SQSTM1 in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, UFM1 knockout induced CHOP and SQSTM1 also in Huh-1 but not in HepG2 cells which did not show any signs of ER stress or SQSTM1 accumulation despite efficient depletion of UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "da01ce57-590a-46a4-a9d4-9fd1d469fdcf",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C98",
+      "claim": "HepG2 cells did not show any signs of ER stress or SQSTM1 accumulation despite efficient depletion of UFM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, UFM1 knockout induced CHOP and SQSTM1 also in Huh-1 but not in HepG2 cells which did not show any signs of ER stress or SQSTM1 accumulation despite efficient depletion of UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9bb88c6c-f70f-4b5b-9173-fb998fef6b72",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C99",
+      "claim": "Impairment of ufmylation results in a cell type-specific ER stress response which induces SQSTM1 expression and its accumulation in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggests that impairment of ufmylation results in a cell type-specific ER stress response which in turn induces SQSTM1 expression and its accumulation in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the differential responses observed in Huh-1 versus HepG2 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "06794f7d-7d61-494d-9b23-37398d95e598",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C100",
+      "claim": "SQSTM1 acts as a key regulator of the cytosolic response to various cellular insults by forming aggresome-like induced structures (ALIS) which incorporate ubiquitinated proteins and heat shock proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SQSTM1 has been shown to act as a key regulator of the cytosolic response to various cellular insults by forming aggresome-like induced structures (ALIS) which incorporate ubiquitinated proteins and heat shock proteins (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "27481445-677a-4772-83b0-1d904753e82a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C101",
+      "claim": "Other ubiquitin-binding cargo receptors such as NDP52 or TAX1BP1 may get recruited into ALIS thereby accumulating in UFM1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that other ubiquitin-binding cargo receptors such as NDP52 or TAX1BP1 may also get recruited into ALIS thereby accumulating in UFM1 knockout cells (Figure 3F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "4b9d97c0-834f-4deb-b250-dbce3d578946",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C102",
+      "claim": "The increase in SQSTM1 in UFM1-depleted cells may induce competition for the autophagy machinery resulting in other autophagy cargo receptors being less efficiently cleared.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the increase in SQSTM1 in UFM1-depleted cells may induce competition for the autophagy machinery resulting in other autophagy cargo receptors being less efficiently cleared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "644aa127-11cd-4fe8-abcf-76be552a7367",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C103",
+      "claim": "UBA5 interacts with ATG8 homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the interaction of UBA5 and ATG8 homologs (Habisov et al., 2016), ufmylation may directly link autophagy to the regulation of the ER stress response and future studies will be needed to test if transcription factors of the unfolded protein response are directly modified by UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a842cbc7-3926-49e8-bad0-5c60e9cc1715",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C104",
+      "claim": "Ufmylation may directly link autophagy to the regulation of the ER stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the interaction of UBA5 and ATG8 homologs (Habisov et al., 2016), ufmylation may directly link autophagy to the regulation of the ER stress response and future studies will be needed to test if transcription factors of the unfolded protein response are directly modified by UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the cited interaction and the authors' findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e5f8c1dc-c9af-4b33-86ad-7ef7cb79ae41",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C105",
+      "claim": "Future studies will be needed to test if transcription factors of the unfolded protein response are directly modified by UFM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the interaction of UBA5 and ATG8 homologs (Habisov et al., 2016), ufmylation may directly link autophagy to the regulation of the ER stress response and future studies will be needed to test if transcription factors of the unfolded protein response are directly modified by UFM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b9e66f81-405e-4ff4-aaf8-bc3db6221aad",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C106",
+      "claim": "CRISPR-Cas9 genome editing can be exploited as a robust forward genetic screening approach to identify bona fide modulators of protein fate when combined with a phenotypic selection step by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this study demonstrates that CRISPR-Cas9 genome editing can be exploited as a robust forward genetic screening approach to identify bona fide modulators of protein fate when combined to a phenotypic selection step by FACS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e411e9d9-f782-4dd4-babc-6da0ede2f2b9",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C107",
+      "claim": "CRISPR has been reported to outperform RNAi in identifying essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation, CRISPR has been reported to outperform RNAi in identifying essential genes (Munoz et al., 2016; Evers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "85a5280b-02d4-4bc3-b096-479564f03f16",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C108",
+      "claim": "CRISPR has potential off-target editing as an intrinsic limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Like RNAi, CRISPR has intrinsic limitations such as potential off-target editing (Fu et al., 2013; Hsu et al., 2013), and FACS-based phenotypic screens such as GFP-SQSTM1 will be restricted to probe for non-essential modulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "487bbf5c-bef3-4c10-ad5a-620fc8380499",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C109",
+      "claim": "FACS-based phenotypic screens such as GFP-SQSTM1 will be restricted to probe for non-essential modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Like RNAi, CRISPR has intrinsic limitations such as potential off-target editing (Fu et al., 2013; Hsu et al., 2013), and FACS-based phenotypic screens such as GFP-SQSTM1 will be restricted to probe for non-essential modulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of FACS-based screening requiring viable cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "bd198e3a-250f-4d6f-bde5-6fca90c039d5",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C110",
+      "claim": "RNAi and CRISPR-based approaches have to be evaluated depending on the screening paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, RNAi and CRISPR-based approaches have to be evaluated depending on the screening paradigm, and combined parallel approaches may help to mitigate the intrinsic limitations of both technologies (Deans et al., 2016; Morgens et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' findings and supported by citations to previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "09a8e059-5c78-4b4c-8672-4b64d903d474",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C111",
+      "claim": "Combined parallel approaches may help to mitigate the intrinsic limitations of both RNAi and CRISPR technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, RNAi and CRISPR-based approaches have to be evaluated depending on the screening paradigm, and combined parallel approaches may help to mitigate the intrinsic limitations of both technologies (Deans et al., 2016; Morgens et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "5003ffa8-ab9c-473e-a756-4f87e67127a4",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C112",
+      "claim": "The mini-pool screen for modulators of endogenous SQSTM1 exposed MTOR complex 1 and canonical macroautophagy as key regulators of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "By following-up the genome-wide GFP-SQSTM1 CRISPR screen with a mini-pool screen for modulators of endogenous SQSTM1, we exposed MTOR complex 1 and canonical macroautophagy as key regulators of SQSTM1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "e6a41e95-1a1c-41aa-b962-1effca33bd47",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C113",
+      "claim": "This study identified the entire biochemical cascade of the ufmylation process as a modulator of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this study identified novel modulators of SQSTM1 (Figure 3B) including the entire biochemical cascade of the ufmylation process (Figure 3A and C), thus providing a resource to further unravel the regulation of SQSTM1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A, 3B, and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "a75ef359-34f5-46c9-b5ab-f6109d9dc090",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C114",
+      "claim": "This study provides a resource to further unravel the regulation of SQSTM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this study identified novel modulators of SQSTM1 (Figure 3B) including the entire biochemical cascade of the ufmylation process (Figure 3A and C), thus providing a resource to further unravel the regulation of SQSTM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader impact of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "c3fd7d4f-5b26-48df-9ad7-85725b560ca6",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "claim_id": "C115",
+      "claim": "Pooled CRISPR screening is a powerful method to map the repertoire of cellular pathways that regulate the fate of an individual target protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This study validates pooled CRISPR screening as a powerful method to map the repertoire of cellular pathways that regulate the fate of an individual target protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e946cf2-0a5d-4439-ab53-febae02f1826",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR is superior to RNAi in identifying known SQSTM1 modulators. Both methods identified common regulators (MTOR, RPTOR, RB1CC1, BECN1, PIK3C3, ULK1, ATG7), but CRISPR exclusively identified ATG5, ATG10, ATG13, and ATG16L1. CRISPR showed better performance in RSA significance analysis and tighter sgRNA distribution compared to shRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39, C41, C44, and C45 provide converging experimental evidence from focused library screens (Figure 1D-F) demonstrating CRISPR's superiority. The explanation in C42-C43 about complete knockout requirements is supported by literature citations and provides mechanistic insight. The data show clear quantitative differences in detection sensitivity between the two methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A genome-wide CRISPR screen comprehensively mapped MTOR signaling and the entire macroautophagy machinery as key regulators of SQSTM1. The screen identified components of initiation, nucleation, and elongation machinery, with non-scoring autophagy genes restricted to those with functional homologs. The 5 sgRNA/gene library performed equally well as the 20 sgRNA/gene focused library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C46-C57 are strongly supported by genome-wide screen data (Figure 2A-E, supplements). The comprehensive identification of autophagy pathway components, enrichment analyses, and network analysis provide robust evidence. The observation about functional homologs (C55-C56) is well-supported by the data showing differential activity between homologous genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A mini-pool validation screen confirmed high hit rates from the primary screen and distinguished GFP-reporter-specific hits from true SQSTM1 regulators. MTOR and autophagy pathways were confirmed as key regulators, while mediator complex components and translation-linked targets (SBDS, DPH1) specifically regulated only the GFP-SQSTM1 reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C112 are supported by mini-pool screen data comparing GFP-SQSTM1 and endogenous SQSTM1 (Figure 2F-G, 3A). The differential scoring between reporter and endogenous protein provides strong evidence for distinguishing artifact from genuine regulators. This orthogonal validation strengthens the primary screen findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "d9cbd554-05e4-4045-83e2-30e67b3d714a",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HNRNPM, SLC39A14, SRRD, and PGK1 were identified as novel modulators of SQSTM1. These candidates were enriched in cells with high GFP-SQSTM1 and endogenous SQSTM1, and individual sgRNA validation confirmed robust SQSTM1 accumulation by immunoblot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 and C63-C65 are supported by both pooled screen data (Figure 3A) and individual sgRNA validation (Figure 3B). The convergence of evidence from mini-pool enrichment and orthogonal validation by immunoblot provides strong support. The novelty claim (C64) is appropriately qualified as being to the authors' knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The entire ufmylation cascade (UFM1, UBA5, UFL1, UFC1, UFSP2) was identified as a novel modulator of SQSTM1. All components except UFSP1 scored in the primary screen, and individual sgRNA validation confirmed efficient target depletion and robust SQSTM1 accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C66, C69-C70, C74-C75, and C113 are strongly supported by genome-wide screen data (Figure 2D, 3A), enrichment analysis showing ufmylation as a top biological process, and comprehensive validation experiments (Figure 3D-F). The identification of the complete cascade with one exception (UFSP1) strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "64f784d9-740f-4faa-94cf-b65af0623b0e",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "UFM1 depletion increases SQSTM1 through autophagy-independent mechanisms. UFM1-depleted cells showed unchanged LC3 levels and flux, no lysosomal localization of UFM1, and retained ability to clear GFP-SQSTM1 upon autophagy activation (albeit at reduced rates compared to ATG7 depletion).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C87 are supported by multiple orthogonal experiments (Figures 3F, 4A-C) including Bafilomycin A1 flux assays, tandem reporter localization, and MTOR inhibitor treatment. The convergence of evidence from different experimental approaches strongly supports the conclusion that ufmylation regulates SQSTM1 independently of canonical autophagy. The quantitative comparison with ATG7 depletion provides important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "117421f8-17b3-4670-a9d2-ba287f0d435f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "UFM1 knockout induces an ER stress response that increases SQSTM1 expression. RNA-seq showed 276 upregulated and 526 downregulated genes, with ER unfolded protein response as the most enriched process. SQSTM1 mRNA increased ~1.7-fold, and time-course experiments showed ER stress induction (XBP1 splicing, CHOP) preceded SQSTM1 accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91, C93-C95 are strongly supported by RNA-seq data (Figure 4D), RT-qPCR (Figure 4F), and time-course immunoblots (Figure 4E). The temporal relationship between ER stress markers and SQSTM1 accumulation provides mechanistic insight. The tunicamycin experiment (C93) provides orthogonal validation that ER stress induces SQSTM1, consistent with cited literature (C94).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "53934b76-b808-4f56-8b4e-b0f92fad96a8",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ufmylation regulates SQSTM1 through a cell type-specific ER stress response. UFM1 knockout induced CHOP and SQSTM1 in H4 and Huh-1 cells but not in HepG2 cells, despite efficient UFM1 depletion in all cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C96-C99 are supported by comparative experiments across three cell lines (Figure 4G). The differential response in HepG2 cells despite efficient UFM1 depletion provides strong evidence for cell type-specificity. This is a key finding that explains variability in ufmylation's role and is well-supported by the data, though the mechanism underlying cell type-specificity remains unexplored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The GFP-SQSTM1 reporter system responds appropriately to autophagy modulation. MTOR sgRNAs decreased GFP-SQSTM1 fluorescence and enriched in GFP low cells, while PIK3C3 sgRNAs accumulated GFP-SQSTM1 and enriched in GFP high cells. Neither significantly impaired cell proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 are supported by validation experiments (Figure 1A, 1C) demonstrating the reporter system functions as expected. The unchanged distribution in unsorted cells versus input library (C34) supports the inference about lack of proliferation effects (C35). This validation is essential for interpreting the screening results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "14a0a266-a9e6-4a74-ba9f-e38e527fe1b2",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SQSTM1 sgRNAs showed cytotoxicity, likely due to targeting both endogenous SQSTM1 and multiple GFP-SQSTM1 chromosome integrants, resulting in DNA damage-induced cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 is supported by data (Figure 1C), but C38 is speculative inference based on cited literature (C37) about Cas9-mediated cytotoxicity at amplified loci. While the explanation is plausible, direct evidence for multiple integrants or DNA damage response is not provided. Alternative explanations (e.g., SQSTM1 essentiality in this context) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "4c752002-ebe6-4df9-84ea-1c8182e41a67",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mediator complex components were identified in GFP low cells, with transcriptional regulation by RNA polymerase II as a significantly enriched GO process. These likely decrease GFP-SQSTM1 by reducing reporter expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by screen data and enrichment analysis (Figure 2A, 2C). Claim C50 is initially speculative but was subsequently validated by the mini-pool screen showing these components don't regulate endogenous SQSTM1 (C60, C62). The hypothesis-testing approach strengthens the overall conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "748b5fc2-6fb3-4334-822f-e528902e829f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two hypotheses are proposed for NDP52 and TAX1BP1 accumulation in UFM1 knockout cells: recruitment into ALIS or competition for autophagy machinery due to increased SQSTM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C102 are explicitly speculative hypotheses without experimental testing. While the observation of NDP52/TAX1BP1 accumulation is supported (C77), the mechanistic explanations remain untested. These represent reasonable hypotheses for future investigation but lack supporting evidence in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "9344a254-9de3-4288-9b35-13ab84825b69",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ufmylation may link autophagy to ER stress regulation through UBA5-ATG8 interactions, and future studies are needed to test if UPR transcription factors are directly modified by UFM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is supported by citation, but C104-C105 are speculative proposals for future work. While the hypothesis is reasonable given the UBA5-ATG8 interaction and the study's findings, no direct evidence for this link or UFM1 modification of transcription factors is provided. These represent interesting directions but are not tested in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "4004b729-1dee-43cc-a1ea-f9ed8123580c",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This study validates pooled CRISPR screening combined with FACS as a robust forward genetic approach to identify modulators of protein fate and map cellular pathways regulating target proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106 and C115 are supported by the comprehensive experimental data throughout the study, including successful identification of known regulators, discovery of novel modulators, and orthogonal validation. The systematic comparison with RNAi and multi-tiered validation approach provide strong evidence for the method's utility. This represents a valid methodological conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "2cd860c0-b064-4dda-85f1-b36c13a0068f",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CRISPR and RNAi have complementary strengths and limitations. CRISPR outperforms RNAi for essential genes but has off-target risks. FACS-based screens are restricted to non-essential modulators. Combined approaches may mitigate limitations of both technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C111 are supported by citations to prior literature and logical inference from the study design. The limitation regarding FACS-based screens (C109) is a valid inference since dead cells cannot be sorted. The recommendation for combined approaches (C110-C111) is reasonable and supported by citations, though not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    },
+    {
+      "id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30",
+      "content_id": "b667c492-2692-415a-a745-e7c20e494c75",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information about SQSTM1 function, regulation, disease associations, autophagy mechanisms, CRISPR-Cas9 technology, and ufmylation pathway, supported by literature citations and established knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C13-C28, C31, C40, C71-C73, C78, C92, C94, and C100 provide background context supported by appropriate citations to prior literature or represent established knowledge in the field. These claims are not novel findings but provide necessary context for interpreting the study's results. The citations appear appropriate and the statements align with established understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:17:49.794246Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f505829-7bc3-4fb7-8f7c-987d5c8332ac",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "9f6de19b-07f2-4041-b76a-e0f616eaa692",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "5daf66e0-ad46-48f4-8e24-e68ce74b6e3e",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "1b41d59b-c6a8-4197-87b4-413b1cfd1d6b",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "a916aaa9-d203-42a4-9b11-41f4dc47ff8a",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "cd0b66e0-636e-4cc6-bec0-254f4d01e383",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "d88a2ac0-6be1-4216-8c00-3f680cc1eba4",
+      "result_id": "5e946cf2-0a5d-4439-ab53-febae02f1826"
+    },
+    {
+      "claim_id": "387ae4a2-8ef8-4b73-9fd6-0d3d29fca115",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "fdd1b699-ae46-45cd-a662-f46301080426",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "e2548656-67d4-48c7-b67c-6cb290da8a22",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "fc20ec91-799d-4069-b542-d0d98a0886c2",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "9c2bb98d-1fb1-4d86-8cc0-cd3ccd887c52",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "d085866f-0b91-44d6-89a5-4782c20bb67c",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "5a16ab3c-4d7d-439f-9d8f-5aeb767c5682",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "3d3d4976-e27d-42a4-bca9-a79c97c50038",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "fc25da67-f084-4251-ae9f-de47cc416452",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "ba427e32-c6d0-462d-a964-a446b3646ea9",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "3f350a4c-e514-405a-a2b3-c467be86ba6a",
+      "result_id": "48c21eed-b6e7-4eb0-aae8-f9eda7854004"
+    },
+    {
+      "claim_id": "66f65b1b-c356-4649-944e-49fc50f4444c",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "fe54ba4d-bb48-4355-a7fb-8749c0fa8abd",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "7c604c97-5ccd-4eb9-8105-c034847e5f42",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "16368b57-ee58-4f81-9fdf-44c67e916644",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "e78b1c04-b298-4c2f-a9f0-d9b461bd9c6a",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "5003ffa8-ab9c-473e-a756-4f87e67127a4",
+      "result_id": "b5fa6818-e5c5-44aa-9905-24c952dedb2b"
+    },
+    {
+      "claim_id": "f017f770-8c7c-46ac-a09d-eb30352feaba",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "db1dfdfa-4526-430b-873f-1a03f1f1c7b7",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "fc5b4906-7f40-4fa9-a296-7c37eb40b4cf",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "a1f8955f-d6bf-4611-a5f4-c030d7c30b11",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "073b02a7-e314-4d5f-a063-8ff1fa0e6fd7",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "33f197b4-ef34-4978-8ba2-df43b7accd44",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "149623c6-5037-460c-ac3e-6344049e8c19",
+      "result_id": "d9cbd554-05e4-4045-83e2-30e67b3d714a"
+    },
+    {
+      "claim_id": "446ab663-cd7d-436d-b160-582d04c0a370",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "f2ce12f5-7d23-427a-9d10-d43f66818682",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "c3a1118b-7066-4003-ba25-6f09f4217c96",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "413822b6-b601-46a1-84e0-c120333fa81a",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "2cd0fd77-de73-4ef5-a5a9-040282bb7e71",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "7817e31e-096a-45a6-b59a-dc7afc732fa2",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "f3fdf59f-8371-4f0b-a3bf-a4655fb9f11d",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "b40a3eef-a36d-4d68-b07b-92346de1fc3f",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "e6a41e95-1a1c-41aa-b962-1effca33bd47",
+      "result_id": "ec9217ea-d3e5-421e-a4f2-5fbd8d94ec1f"
+    },
+    {
+      "claim_id": "63220320-730f-4c0e-bc52-a20951f26cfd",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "aa57cc42-3498-4434-b9fd-fd0c1f3c256c",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "a4e7bb86-f118-4224-b794-8ee61363f7e5",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "18630c54-3f2d-46c1-8574-757aab030307",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "9d4b922d-5720-434b-9344-0f3623fa7336",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "e216a492-909d-4cd9-99be-b13a096259ea",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "02826946-2100-46ae-bfb8-cea15352e8c3",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "92d6ef92-5f30-4e14-82d7-f1d22dc65429",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "e126fb75-865e-410b-b467-319160838929",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "b99b9702-3cfe-4668-a200-b311399b2da1",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "d17de88e-26c4-47a6-b979-9f2881d7ddb0",
+      "result_id": "64f784d9-740f-4faa-94cf-b65af0623b0e"
+    },
+    {
+      "claim_id": "b92b9058-88c1-45f7-8072-a4521cfef077",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "cb048c5b-14e9-4586-93a6-66a4780c8c40",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "ca682ec4-a3de-4502-a5b9-45a7a13d7f07",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "67f843b6-94e7-4595-916c-42a1c0605d1e",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "e762ff79-d6d1-4a02-8de0-eb77af07216f",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "7a19ea5d-a54c-486a-a272-cab418c72f4f",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "a99d4420-5d2a-4396-915d-2dcaf7b9804d",
+      "result_id": "117421f8-17b3-4670-a9d2-ba287f0d435f"
+    },
+    {
+      "claim_id": "1ad5d6ec-4db4-4c2a-b811-ea1b77bf886e",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "c5ce68d1-6bbf-4e55-a0ec-603e44613133",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "8ae245b7-a3e1-4199-91f4-60e96ccd0ec8",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "46f60d6f-e1bc-487d-ad46-fc9a7b128032",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "da01ce57-590a-46a4-a9d4-9fd1d469fdcf",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "9bb88c6c-f70f-4b5b-9173-fb998fef6b72",
+      "result_id": "53934b76-b808-4f56-8b4e-b0f92fad96a8"
+    },
+    {
+      "claim_id": "008cb750-ba28-48c4-a5c2-84c1f71738f6",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "7a7c5537-124d-40f4-ac86-eeb0271f1adf",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "90878e92-7e86-46a4-a407-fea5fb0db08e",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "8db33d33-1d27-4c9a-a059-089dd8a8ffb3",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "82512182-a541-4c1e-bc56-a151e2e6a40e",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "1acee798-e89d-4fb4-a3b5-f32264d4f04d",
+      "result_id": "c6462471-5852-4cc3-bdb7-f54975f1bf9d"
+    },
+    {
+      "claim_id": "a2c6afa2-8513-4ea9-a692-2e48007cfa41",
+      "result_id": "14a0a266-a9e6-4a74-ba9f-e38e527fe1b2"
+    },
+    {
+      "claim_id": "7c35bbde-969f-4fa2-a850-32932a272a2e",
+      "result_id": "14a0a266-a9e6-4a74-ba9f-e38e527fe1b2"
+    },
+    {
+      "claim_id": "dd6e5faf-68d9-455f-b7a0-950fe4b2f4de",
+      "result_id": "14a0a266-a9e6-4a74-ba9f-e38e527fe1b2"
+    },
+    {
+      "claim_id": "7e3cd3d6-d065-4572-91ae-5f7c10601d5f",
+      "result_id": "4c752002-ebe6-4df9-84ea-1c8182e41a67"
+    },
+    {
+      "claim_id": "732eb872-7cb2-4919-bf9e-61ec1df407e1",
+      "result_id": "4c752002-ebe6-4df9-84ea-1c8182e41a67"
+    },
+    {
+      "claim_id": "6956a978-19e1-4726-9d7b-cbdc80c28beb",
+      "result_id": "4c752002-ebe6-4df9-84ea-1c8182e41a67"
+    },
+    {
+      "claim_id": "27481445-677a-4772-83b0-1d904753e82a",
+      "result_id": "748b5fc2-6fb3-4334-822f-e528902e829f"
+    },
+    {
+      "claim_id": "4b9d97c0-834f-4deb-b250-dbce3d578946",
+      "result_id": "748b5fc2-6fb3-4334-822f-e528902e829f"
+    },
+    {
+      "claim_id": "644aa127-11cd-4fe8-abcf-76be552a7367",
+      "result_id": "9344a254-9de3-4288-9b35-13ab84825b69"
+    },
+    {
+      "claim_id": "a842cbc7-3926-49e8-bad0-5c60e9cc1715",
+      "result_id": "9344a254-9de3-4288-9b35-13ab84825b69"
+    },
+    {
+      "claim_id": "e5f8c1dc-c9af-4b33-86ad-7ef7cb79ae41",
+      "result_id": "9344a254-9de3-4288-9b35-13ab84825b69"
+    },
+    {
+      "claim_id": "b9e66f81-405e-4ff4-aaf8-bc3db6221aad",
+      "result_id": "4004b729-1dee-43cc-a1ea-f9ed8123580c"
+    },
+    {
+      "claim_id": "c3fd7d4f-5b26-48df-9ad7-85725b560ca6",
+      "result_id": "4004b729-1dee-43cc-a1ea-f9ed8123580c"
+    },
+    {
+      "claim_id": "e411e9d9-f782-4dd4-babc-6da0ede2f2b9",
+      "result_id": "2cd860c0-b064-4dda-85f1-b36c13a0068f"
+    },
+    {
+      "claim_id": "85a5280b-02d4-4bc3-b096-479564f03f16",
+      "result_id": "2cd860c0-b064-4dda-85f1-b36c13a0068f"
+    },
+    {
+      "claim_id": "487bbf5c-bef3-4c10-ad5a-620fc8380499",
+      "result_id": "2cd860c0-b064-4dda-85f1-b36c13a0068f"
+    },
+    {
+      "claim_id": "bd198e3a-250f-4d6f-bde5-6fca90c039d5",
+      "result_id": "2cd860c0-b064-4dda-85f1-b36c13a0068f"
+    },
+    {
+      "claim_id": "09a8e059-5c78-4b4c-8672-4b64d903d474",
+      "result_id": "2cd860c0-b064-4dda-85f1-b36c13a0068f"
+    },
+    {
+      "claim_id": "df55097c-6dfb-4a16-877b-201c23b1fe43",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "93f45d5d-7b11-4ccb-a1f4-30bb151ad6c0",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "845614af-84f2-42b8-a120-6c11cc39f944",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "ec1bcf7f-4353-41d6-bf45-5153f56f07a7",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "0cbd982c-36eb-44ca-b203-3da973e518aa",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "19a1bb3f-b914-41d9-87b7-530820b7fb03",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "4756e34a-2e7c-46bf-9825-ac22622ac3cb",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "ad29e887-bd81-42ea-91fc-5722f7e3aa49",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "5c324605-74da-4f11-b5ff-a1bf1028197d",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "9cde3082-c3ec-46ac-ac26-99601af60558",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "41f94e9e-8b78-452a-9c5f-389a12eeab44",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "a238317f-7c00-4019-b2df-18c61f02802b",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "ac4e6202-23ab-4345-b894-8b536f7153cd",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "18436547-02c1-4eb7-a0bc-6f0d95e61fe8",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "8e05574c-f998-41c1-99a0-89404925f9c4",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "d32796b8-44da-4260-b693-863658b843da",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "a2235874-d1ac-4e0e-b041-48bfebc7483b",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "2775d3fb-6680-4d47-96ec-9283d74b4e70",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "653ec923-1261-48e0-9dfe-bcc33d13e8b7",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "830d69a6-98fe-4a51-aa92-ca7402f1faa6",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "291ccec8-6891-4e9b-ae6c-d071796c3a15",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "36d28a5d-b69d-4ce2-aa45-fb14f764785b",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "2c6fb979-5a46-433f-9905-67c47556b989",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "39461267-a053-4bbd-b906-532cc8103645",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "744660e9-4f65-4930-aa43-9e4c978134ca",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "7a19ea5d-a54c-486a-a272-cab418c72f4f",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    },
+    {
+      "claim_id": "06794f7d-7d61-494d-9b23-37398d95e598",
+      "result_id": "07be2daa-70ad-4474-9cb9-c6f0d1553f30"
+    }
+  ],
+  "comparisons": []
+}

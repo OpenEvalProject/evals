@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "XLG2/3, AGB1, and AGG1/2 (but not XLG1, AGG3, or GPA1) are required for flg22-induced immunity and resistance to Pseudomonas syringae. The xlg2 and agb1 mutants show similar defects in flg22-induced ROS and Pst resistance, while xlg2 xlg3 double mutants show additive defects, indicating that these G protein components work together in FLS2-mediated immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 collectively demonstrate through genetic analysis (mutant phenotypes in ROS production and bacterial resistance) that specific heterotrimeric G protein components are required for FLS2 immunity. The data show consistent phenotypes across multiple mutants and are supported by prior literature (C4, C11). The additive effect in double mutants (C9-C10) and differential susceptibility (C6) provide strong genetic evidence for the roles of these proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "XLG2/3 form heterotrimers with AGB1, and this interaction is dynamically regulated by flg22 treatment. Flg22 treatment causes dissociation of XLG2 from AGB1, suggesting that plant heterotrimeric G proteins are regulated upon ligand activation similar to animal G proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 demonstrate XLG2/3-AGB1 interaction through multiple complementary assays (luciferase complementation, Co-IP) in different systems (Nb plants, Arabidopsis protoplasts). The flg22-induced dissociation (C20) is clearly shown and the analogy to animal G proteins (C21) is appropriately qualified as a suggestion. The functional validation of tagged proteins (C19) strengthens confidence in the interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "G protein mutants show defects in flg22-induced phosphorylation of RbohD at S39, a BIK1-dependent modification required for ROS production. AGB1 positively regulates RbohD S39 phosphorylation, as shown by reduced phosphorylation in agb1 mutants and constitutive phosphorylation upon AGB1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 demonstrate a clear biochemical link between G proteins and RbohD phosphorylation using phospho-specific antibodies and genetic complementation. The data show reduced phosphorylation in agb1 (C23), rescue by complementation (C24), and gain-of-function by overexpression (C25), providing strong evidence for positive regulation. This connects G protein function to a known downstream signaling event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "XLG2/3 and AGB1 directly interact with the FLS2-BIK1 receptor complex, with XLG2/3 showing stronger interactions than AGB1. These interactions are dynamically regulated by flg22 treatment, which induces dissociation of G proteins from the receptor complex in a BIK1 kinase activity-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 provide comprehensive evidence for G protein-receptor complex interactions through multiple approaches: LC-MS/MS identification (C27-C28), luciferase complementation (C32-C34), and Co-IP assays (C35-C36). The flg22-induced dissociation (C36-C37) and requirement for BIK1 kinase activity (C38-C40) are well-demonstrated. The use of kinase-dead BIK1 as a control (C39-C40) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "XLG2 interacts with FLS2 and BIK1 primarily through its C-terminal domain, which directly binds the FLS2 kinase domain. The C-terminal fragment of XLG2 shows flg22-regulated dissociation from BIK1 similar to full-length XLG2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 map the interaction domains using domain deletion analysis and GST pull-down assays. The direct interaction with FLS2 kinase domain (C41) is demonstrated by in vitro binding, and the differential binding strength of N vs C termini (C42-C43) is shown by multiple assays. The similar regulation of the C-terminal fragment (C45) validates that this domain is sufficient for dynamic regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "XLG2 and AGB1 preferentially interact with dephosphorylated BIK1. Phosphatase treatment of BIK1 enhances its interaction with both XLG2 and AGB1 in vitro, suggesting that G proteins have greater affinity for non-phosphorylated BIK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 demonstrate phosphorylation-dependent binding through GST pull-down assays with and without phosphatase treatment. The weak interaction with untreated BIK1 (C46, C50) and strong enhancement by dephosphorylation (C47, C49) provide clear biochemical evidence. This finding is consistent with the flg22-induced dissociation observed in cells and provides a molecular mechanism for the dynamic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "XLG2/3, AGB1, and AGG1/2 (but not GPA1) are required for BIK1 protein accumulation. BIK1 protein levels are reduced in xlg2/3, agb1, and agg1/2 mutants despite normal transcript levels, indicating post-transcriptional regulation. This effect is specific to BIK1, as FLS2 and BAK1 accumulation is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 demonstrate G protein regulation of BIK1 stability through multiple genetic backgrounds and promoters. The normal transcript levels (C53-C54) rule out transcriptional effects, and the specificity for BIK1 vs other proteins (C52, C59) indicates selective regulation. The consistency across different G protein components (C55-C58) and lack of effect in gpa1 (C60-C61) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The heterotrimeric G proteins (XLG2/3, AGB1, AGG1/2) attenuate proteasome-dependent degradation of BIK1 and PBL20. Proteasome inhibitors restore BIK1 accumulation in agb1 mutants, and in vitro degradation assays show accelerated BIK1 and PBL20 degradation in G protein mutant extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 establish the mechanism of G protein regulation of BIK1 stability through proteasome inhibitor experiments (C63) and in vitro degradation assays (C65-C67). The restoration of BIK1 by proteasome inhibitors (C63) and accelerated degradation in mutant extracts (C66) provide strong mechanistic evidence. Extension to PBL20 (C67) suggests broader regulation of RLCK family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Increasing BIK1 levels by transgene expression largely restores flg22-induced RbohD phosphorylation, ROS production, and Pst resistance in xlg2/3 and agb1 mutants. BIK1 protein level is rate-limiting for flg22-induced immune responses, as BIK1 overexpression enhances immunity even in wild-type plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 demonstrate through genetic complementation that BIK1 stability is a major mechanism by which G proteins regulate immunity. The restoration of RbohD phosphorylation (C69), ROS production (C71, C77), and bacterial resistance (C75, C78) by BIK1 transgenes in mutant backgrounds provides strong evidence. The enhanced immunity in WT with BIK1 overexpression (C73, C76) supports that BIK1 is rate-limiting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Flg22 treatment induces phosphorylation of XLG2 in its N-terminus, particularly at residues Ser141, Ser148, Ser150, and Ser151. LC-MS/MS analysis identified 23 phospho-peptides corresponding to at least 15 phospho-sites, with nearly half located in the 141-156 region. Site-directed mutagenesis confirmed these are major phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 identify XLG2 phosphorylation through mobility shift assays (C80-C81), LC-MS/MS analysis (C83-C85), and site-directed mutagenesis (C86). The phosphatase sensitivity (C81) confirms phosphorylation, the LC-MS/MS provides comprehensive site identification, and mutagenesis validates the major sites. The specificity for XLG2/3 but not XLG1 (C82) is consistent with their differential roles in immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "BIK1 directly phosphorylates XLG2 N-terminus in vitro, including at residues S148 and S150. The kinase-dead BIK1K105E mutant does not phosphorylate XLG2, confirming BIK1 kinase activity is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 demonstrate direct phosphorylation through in vitro kinase assays using recombinant proteins. The use of radioactive ATP (C87) and phospho-specific antibodies (C88) provides complementary evidence. The kinase-dead control (C87-C88) confirms specificity. This establishes BIK1 as a direct kinase for XLG2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "XLG2 phosphorylation at Ser141, Ser148, Ser150, and Ser151 is required but not sufficient for full immune function. Non-phosphorylatable XLG2 mutants only partially restore flg22-induced ROS and Pst resistance in xlg2/3 mutants, while phospho-mimicking mutants do not constitutively activate immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 demonstrate the functional importance of XLG2 phosphorylation through complementation with phospho-site mutants. The partial restoration by non-phosphorylatable mutants (C90, C93) and lack of constitutive activation by phospho-mimicking mutants (C89, C91) indicate phosphorylation is necessary but not sufficient. This is appropriate interpretation given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "XLG2 phospho-site mutations do not affect BIK1 stability or XLG2-BIK1 interaction dynamics. Phospho-site mutants show normal BIK1 accumulation and normal flg22-regulated dissociation from BIK1, indicating phosphorylation regulates a different aspect of XLG2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 rule out BIK1 stability as the mechanism by which XLG2 phosphorylation affects immunity. The normal BIK1 accumulation (C95) and interaction dynamics (C96) with phospho-site mutants provide clear negative data. This appropriately narrows the mechanism and motivates investigation of other effectors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "XLG2 constitutively interacts with RbohD in both Arabidopsis and Nicotiana benthamiana plants. This interaction provides a mechanism by which XLG2 phosphorylation could regulate ROS production independent of BIK1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 identify XLG2-RbohD interaction through Co-IP (C98) and luciferase complementation (C99) in two plant systems. The constitutive nature of the interaction (C101-C102) is clearly demonstrated. This provides a plausible alternative effector for phosphorylated XLG2 (C100), though the mechanistic details remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study establishes a dual mechanism model: (1) Before activation, XLG2/3-AGB1-AGG1/2 heterotrimers stabilize BIK1 by preventing proteasome-dependent degradation; (2) Upon flg22 activation, BIK1 phosphorylates XLG2 N-terminus to regulate ROS production, likely through XLG2-RbohD interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 synthesize the major findings into a coherent model supported by the collective data. The pre-activation mechanism (C104) is well-supported by BIK1 stability data and complementation experiments. The post-activation mechanism (C105) is supported by phosphorylation data and XLG2-RbohD interaction, though mechanistic details remain incomplete. The model appropriately integrates the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Plant receptor kinases fulfill the role of GPCRs by directly coupling to heterotrimeric G proteins. This is supported by examples from maize (CT2-CLV1) and Arabidopsis (GPA1/AGG1/2 with BAK1/CERK1), along with the current findings of XLG2 interaction with FLS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 place the findings in broader context of plant G protein signaling. The citations to prior work (C106-C107) are appropriate, and the synthesis (C108) is a reasonable inference from the collective evidence. However, this is primarily a discussion point synthesizing prior and current work rather than a novel finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "G proteins coupled to FLS2 undergo multiple dynamic regulations during signaling: flg22-induced dissociation of XLG2 from AGB1 (likely reflecting GTP binding), dissociation from BIK1 triggered by BIK1 phosphorylation, and enhanced interaction with dephosphorylated BIK1. These regulations may be necessary for downstream effector activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 synthesize the dynamic regulation data into a coherent picture. The flg22-induced dissociations (C110-C112) are well-documented, and the enhanced interaction with dephosphorylated BIK1 (C113) provides mechanistic insight. The speculation about necessity for effector regulation (C114) is appropriately qualified. This integrates multiple lines of evidence about G protein dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "G proteins specifically regulate BIK1 proteasome-dependent degradation but not general proteasome-mediated protein degradation. Loss of G proteins accelerates BIK1 degradation (blocked by proteasome inhibitors), while FLS2 accumulation is unaffected. A major G protein function is maintaining signaling competence of the FLS2-BIK1 complex in the pre-activation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 establish specificity of G protein regulation through comparison of BIK1 vs FLS2 degradation. The proteasome inhibitor experiments (C116-C117) and normal FLS2 levels (C119-C120) demonstrate selectivity. The conclusion about maintaining signaling competence (C121) is well-supported by the BIK1 complementation data. This appropriately interprets the mechanistic and functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Flg22 induces XLG2 N-terminal phosphorylation, likely by BIK1 family kinases. This phosphorylation plays a positive role in immunity but does not affect BIK1 stability or interaction, suggesting phosphorylated XLG2 regulates other components, potentially RbohD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 integrate phosphorylation data with functional analysis. The phosphorylation is well-documented (C122), BIK1 as the kinase is supported by in vitro data (C123), and functional importance is shown by mutant analysis (C124-C125). The inference about alternative targets (C126-C127) is reasonable given the negative data on BIK1 stability/interaction, though the RbohD mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "RbohD is subject to multiple regulatory mechanisms including phosphorylation by CPK5 and BIK1, calcium binding, and additionally regulation by phosphorylated XLG2, though the underlying mechanism remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 place XLG2 regulation of RbohD in context of known RbohD regulatory mechanisms. The prior work is appropriately cited (C128), and the addition of XLG2 regulation (C129) is supported by the phosphorylation and interaction data. The acknowledgment that the mechanism is unknown (C129) is appropriate given the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Arabidopsis heterotrimeric G proteins show both similarities and differences compared to animal G proteins. Like animal G proteins, they dissociate upon receptor activation and activate downstream effectors. Unlike animal G proteins, they additionally regulate signaling competence of the receptor complex prior to activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 provide appropriate comparative analysis. The similarity in ligand-induced dissociation (C130) is well-demonstrated by the flg22 data. The difference in pre-activation regulation (C131) is supported by the BIK1 stability data. This comparison appropriately highlights both conserved and novel features of plant G protein signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Background on FLS2 as a model PRR: FLS2 forms a complex with BAK1 and BIK1 to perceive flg22 and activate defense responses. FLS2 and BIK1 stability are regulated by ubiquitin-proteasome system, and BIK1 phosphorylates RbohD to prime ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 provide established background information appropriately cited to prior literature. These are not novel findings from this study but provide necessary context for interpreting the results. The citations are appropriate and the statements accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Background on plant heterotrimeric G proteins: Plants contain canonical G\u03b1, G\u03b2, G\u03b3 proteins and non-canonical XLG proteins. These proteins play roles in diverse biological processes including immunity. Prior work showed XLG2, AGB1, and AGG1/2 (but not GPA1) are required for PRR-mediated immunity, though the mechanism was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C151 provide comprehensive background on plant G proteins, appropriately cited to prior literature. These establish the knowledge gap that the current study addresses. The statements accurately represent prior work and set up the rationale for the current investigation. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  }
+]

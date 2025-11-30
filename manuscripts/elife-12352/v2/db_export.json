@@ -1,0 +1,2276 @@
+{
+  "submission": {
+    "id": "5540ab2e-0021-4563-9c06-c500d124b718",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:50:57.099214Z",
+    "updated_at": "2025-11-29T22:50:57.099214Z"
+  },
+  "content": [
+    {
+      "id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "submission_id": "5540ab2e-0021-4563-9c06-c500d124b718",
+      "content_type": "manuscript",
+      "content_text": "# Cascade of neural processing orchestrates cognitive control in human frontal cortex\n\n## Authors\n\n- Hanlin Tang<sup>1</sup>\n- Hsiang-Yu Yu<sup>3</sup>\n- Chien-Chen Chou<sup>3</sup>\n- Nathan E Crone<sup>5</sup>\n- Joseph R Madsen<sup>6</sup>\n- William S Anderson<sup>7</sup>\n- Gabriel Kreiman<sup>1</sup> ([ORCID: 0000-0003-3505-8475](https://orcid.org/0000-0003-3505-8475)) \u2020\n\n### Affiliations\n\n1. Program in Biophysics Harvard University Boston United States\n2. Department of Ophthalmology, Boston Children's Hospital Harvard Medical School Boston United States\n3. Department of Neurology Taipei Veterans General Hospital Taipei Taiwan\n4. National Yang-Ming University Taipei Taiwan\n5. Department of Neurology Johns Hopkins School of Medicine Baltimore United States\n6. Department of Neurosurgery, Boston Children's Hospital Harvard Medical School Boston United States\n7. Department of Neurosurgery Johns Hopkins Medical School Baltimore United States\n8. Center for Brain Science Harvard University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRapid and flexible interpretation of conflicting sensory inputs in the context of current goals is a critical component of cognitive control that is orchestrated by frontal cortex. The relative roles of distinct subregions within frontal cortex are poorly understood. To examine the dynamics underlying cognitive control across frontal regions, we took advantage of the spatiotemporal resolution of intracranial recordings in epilepsy patients while subjects resolved color-word conflict. We observed differential activity preceding the behavioral responses to conflict trials throughout frontal cortex; this activity was correlated with behavioral reaction times. These signals emerged first in anterior cingulate cortex (ACC) before dorsolateral prefrontal cortex (dlPFC), followed by medial frontal cortex (mFC) and then by orbitofrontal cortex (OFC). These results disassociate the frontal subregions based on their dynamics, and suggest a temporal hierarchy for cognitive control in human cortex.\n\n## Introduction\n\nFlexible control of cognitive processes is fundamental to daily activities, including the execution of goal-directed tasks according to stimulus inputs and context dependencies. An important case of cognitive control arises when input stimuli elicit conflicting responses and subjects must select the task-relevant response despite competition from an often stronger but task-irrelevant response (Miller, 2000; Miller and Cohen, 2001). A canonical example of this type of conflict is the Stroop task: subjects are asked to name the font color of a word where the semantic meaning conflicts with the color signal (e.g. the word 'red' shown in green versus red). Such incongruent inputs lead to longer reaction times, attributed to weaker signals (color processing) that must be emphasized over the automatic processing of word information (Stroop, 1935). The Stroop task is frequently used in cognitive neuroscience and clinical psychology and forms the foundation for theories of cognitive control.\n\nNeurophysiological, neuroimaging, and lesion studies have ascribed a critical role in cognitive control to networks within frontal cortex (Miller, 2000; Miller and Cohen, 2001), yet the neural circuit dynamics and mechanisms responsible for orchestrating control processes remain poorly understood. Lesion studies (Cohen and Servan-Schreiber, 1992; Perrett, 1974), human neuroimaging measurements (Egner and Hirsch, 2005a; MacDonald, 2000), and macaque single unit recordings (Johnston et al., 2007) implicate the dorsolateral prefrontal cortex (dlPFC) in providing top-down signals to bias processing in favor of the task-relevant stimuli (Botvinick et al., 2001; Miller and Cohen, 2001). The medial frontal cortex (mFC) also participates in cognitive control, possibly in a conflict monitoring capacity (Botvinick et al., 2001; Ridderinkhof et al., 2004; Rushworth et al., 2004). Recordings and lesions studies in the macaque anterior cingulate cortex (ACC) (Ito et al., 2003; Nakamura et al., 2005) suggest that ACC neurons are principally involved in monitoring for errors and making between-trial adjustments (Brown and Braver, 2005; Ito et al., 2003; Johnston et al., 2007; Roth\u00e9 et al., 2011)\u2014an idea that has received support by a recent study in the human ACC (Sheth et al., 2012). Recent work has also demonstrated that the supplementary motor area and the medial frontal cortex play an important role in monitoring for errors (Bonini et al., 2014). An alternative and influential theoretical framework posits that the ACC monitors for potential conflicts and subsequently directs the dlPFC to engage control processes (Botvinick et al., 2001; Shenhav et al., 2013). Several human neuroimaging studies are consistent with this notion (Botvinick et al., 1999; Kerns, 2006; Kerns et al., 2004; MacDonald, 2000) but the relative contributions of dlPFC, mFC, and ACC to cognitive control remain a matter of debate (Aarts et al., 2008; Cole et al., 2009; Fellows and Farah, 2005; Mansouri et al., 2007; Milham and Banich, 2005; Milham et al., 2003; Rushworth et al., 2004).\n\nPreviously, some neuroimaging studies have suggested that these frontal cortex regions can be differentiated based on the presence or absence of conflict signals (MacDonald, 2000). The challenge in dissociating the relative roles of these regions during Stroop-like tasks is that increased task difficulty recruits a host of executive functions (attention, decision-making, uncertainty, cognitive control). These functions are associated with neural activity spanning tens to hundreds of milliseconds and the underlying dynamics are difficult to untangle with the low temporal resolution of existing neuroimaging techniques (Shenhav et al., 2013). Human single neuron studies provide millisecond resolution but have focused on individual regions (Sheth et al., 2012). We took advantage of the high spatiotemporal resolution of intracranial recordings in human epilepsy patients and the ability to record simultaneously from multiple regions to directly investigate the dynamics of conflict responses during cognitive control. We hypothesized that subregions of frontal cortex could be differentiated based on the temporal profile of their conflict responses. We recorded intracranial field potentials from 1397 electrodes in 15 subjects while they performed the Stroop task or a variation in which they were asked to read the word instead of focusing on its color.\n\nWe observed conflict-selective activity throughout several regions in frontal cortex: ACC, mFC, dlPFC, and also orbitofrontal cortex\u00a0(OFC). Several analyses link these signals to cognitive control. Neural responses increased for incongruent compared to congruent trials, and these signals correlated with behavioral reaction time, depended on the task, and exhibited adaptation over trials. We compared pairs of simultaneously recorded electrodes to disassociate these different regions based on the timing of these conflict responses rather than their presence or absence. Conflict responses emerged first in the ACC and subsequently emerged in dlPFC and mFC and finally in OFC. These observations propose a plausible flow of signals underlying cognitive control.\n\n## Results\n\nWe recorded field potentials from 15 epilepsy patients implanted with intracranial electrodes in frontal cortex as they performed the Stroop task (Figure 1, Supplementary file 1). After 500 ms of a fixation cross, subjects were presented with one of three words (Red, Blue, Green), which were colored either red, blue, or green. We refer to congruent trials (C) where the font color matched the word (60% of the trials) compared to incongruent trials (I) where the font color conflicted with the word (40% of the trials). Within each trial type, the word-color combinations were counter-balanced and randomly interleaved. The stimuli were presented for 2 s (in two subjects, for 3 s). Subjects were asked to respond verbally and either name the color (Stroop task), or read the word (Reading task) in separate blocks. Performance during congruent trials was essentially at ceiling (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig1-v2.jpg)\n\n**Figure 1.:** (A) Subjects were presented with one of three words (Red, Blue or Green); each word was randomly colored red, blue, or green. Trials were incongruent (I) when the word and color did not match, and were congruent (C) otherwise. The word-color combinations were counter-balanced and randomly interleaved. Subjects performed the Stroop task (name the color), and the Reading task (read the word) in separate blocks. (B) Distribution of z-scored behavioral reaction times (speech onset) across all subjects (n = 15) for congruent (black) or incongruent (brown) trials during the Stroop task. Bin size = 0.2. Dashed lines indicate average reaction times. (C) Distribution of z-scored reaction times during the Reading task. (D) Z-scored reaction time across subjects for different trial histories during the Stroop Task (cI: incongruent trial preceded by congruent trial; iI: incongruent trial preceded by incongruent trial; iC: congruent trial preceded by incongruent trial; cC: congruent trial preceded by congruent trial). Error bars indicate s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A-B) Percent correct for each subject for the Stroop task (A) or Reading task (B) during congruent (black) or incongruent (brown) trials. Subjects made more errors for incongruent trials compared to congruent trials during the Stroop task (P < 0.001, signed-rank test). One subject (Subject 6) did not participate in the Reading task. (C-D) Average behavioral reaction time (speech onset) for each subject for the Stroop task (C) or Reading task (D). Error bars indicate s.e.m. Subjects had delayed responses for incongruent trials compared to congruent trials during the Stroop task (P < 0.001, signed-rank test).\n\nAn ANOVA conducted on subjects\u2019 performance with stimulus type (congruent or incongruent) and task (Stroop or Reading) as repeated measures revealed a significant interaction between stimulus type and task (F = 22.9, P < 0.001). For the Stroop task, subjects made more errors during incongruent trials (average error rate: 5 \u00b1 3%, P < 0.001 paired t-test), as demonstrated in previous studies (Bugg et al., 2008; Egner and Hirsch, 2005b; Kerns et al., 2004). There was no difference in the number of error trials during the Reading task (P = 0.76, paired t-test). Subsequent analyses focused on correct trials only unless otherwise stated. Subjects\u2019 reaction times also had a significant interaction between stimulus type and task (F = 65.2, P < 10\u20135, ANOVA). Consistent with previous observations (Stroop, 1935), subjects\u2019 response times during the Stroop task were delayed for incongruent trials compared to congruent trials (Figure 1B, average delay: 215 \u00b1 93 ms, P < 0.001, paired t-test, see also Figure 1\u2014figure supplement 1C for individual subject data). The reaction time delays were shorter in the Reading task (Figure 1C, average delay: 22 \u00b1 31 ms, P = 0.02, paired t-test). Trial history also has a strong effect on reaction time (known as Gratton effect in the literature [Gratton et al., 1992)]). A repeated measures ANOVA revealed an interaction between previous and current trial type (F = 19.5, P < 0.001). Incongruent trials that were preceded by a congruent trial (cI trials) elicited slower reaction times compared to incongruent trials that were preceded by an incongruent trial (iI trials) (Figure 1D, average reaction time difference: 34 \u00b1 14 ms, P = 0.03, paired t-test). A similar Gratton effect was found for iC versus cC trials (Figure 1D, average reaction time difference: 72 \u00b1 136ms, P < 0.001, paired t-test).\n\nWe recorded intracranial field potentials from 1397 electrodes (average 93 \u00b1 31 electrodes per subject) while subjects performed the Stroop and Reading tasks. The number of electrodes per subject and the location of these electrodes were strictly dictated by clinical needs. Therefore, there was a wide distribution of electrode locations, as is typical in this type of recordings (Liu et al., 2009). We excluded electrodes in epileptogenic regions. We focused on the neural signals in the gamma band (70\u2013120\u2009Hz) given their prominence in sensory, motor and cognitive phenomena (Crone et al., 1998a; Liu et al., 2009; Oehrn et al., 2014); results for other frequency bands are shown in Figure 2\u2014figure supplement 2 and Figure 4\u2014figure supplement 1 and 2. Presentation of the visual stimuli evoked rapid and color/word selective neural responses in visual cortical areas within 200 ms of stimulus onset, as expected from previous studies (e.g.\u00a0Liu et al., 2009]). Other electrodes were activated for different motor (verbal) outputs (e.g.\u00a0Bouchard et al., 2013; Crone et al., 1998a).\n\n### Conflict responses in frontal cortex\n\nWe focused on 469 electrodes located in areas within frontal lobe which have been previously implicated in executive function: medial frontal cortex (mFC, n = 111), orbitofrontal cortex (OFC, n = 156), dorsolateral prefrontal cortex (dlPFC, n = 168) and the anterior cingulate cortex (ACC, n = 34). We applied a non-parametric analysis of variance (ANOVA) to measure whether and when the physiological responses differed between congruent and incongruent trials. An electrode was considered conflict-selective if the F-statistic was greater than a significance threshold computed by a permutation test with P = 0.001 for 50 consecutive milliseconds (Materials and methods). The latency was defined as the first time of this threshold-crossing.\n\nFigure 2 shows an example electrode from the left Anterior Cingulate Cortex that responded differentially between congruent and incongruent trials during the Stroop task. These signals were better aligned to the speech onset than to the stimulus onset, as shown in the response-aligned view (compare Figure 2A\u2013C with Figure 2D\u2013F). During the Stroop task, the response-aligned signals were significantly stronger for the incongruent (brown) trials compared to the congruent (black) trials (Figure 2D, P < 10\u20135, ANOVA), and were invariant to the particular word/color combinations (Figure 2G). Incongruent trials could be discriminated from congruent trials at a latency of 669 \u00b1 31 ms (mean \u00b1 s.e.m.) before the onset of the response (Figure 2D). This conflict response was also specific to the Stroop task; there was a significant interaction between congruency and task (F = 13.5, P = 0.007, ANOVA). The same stimuli did not elicit differential activity during the Reading task (Figure 2F). We assessed the correlation between the neural signal strength and behavioral reaction times in single trials. The maximal gamma power during each incongruent trial (using the average gamma power yielded similar results) was positively correlated with the behavioral reaction times (Figure 2H, \u03c1 = 0.25, P = 0.02).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig2-v2.jpg)\n\n**Figure 2.:** (A) Average gamma power signals aligned to the stimulus onset from an electrode during the Stroop task, for congruent (black) or incongruent (brown) stimuli. For display purposes only, we z-scored the gamma power by subtracting the average and dividing by the standard deviation of power during the baseline period (500 ms prior to stimulus onset). Shaded areas indicate s.e.m. The total number of trials for each condition is indicated in the upper right. (B) Single-trial data for congruent (left) and incongruent (right) trials. Each row is a trial, and the color indicates the z-scored gamma power (color scale on upper right). Trials are sorted by behavioral response time (black line). (C) Same as (A), but showing data from the Reading task. (D-F) Same as in A-C, but aligning the data to behavioral response time. Gamma power was better aligned to the behavioral response, and was stronger for incongruent compared to congruent trials. The dashed line indicates the response-aligned latency, defined as the first time point at which incongruent and congruent trials can be discriminated. (G) Signals elicited by each of the 9 possible stimulus combinations. (H) There was a correlation between the maximal z-scored gamma power and behavioral reaction times during incongruent trials (Pearson correlation coefficient = 0.25, P = 0.02, permutation test). Each point in this plot represents a single trial.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Here we show a different conflict selective electrode, located in the dlPFC (format as in Figure 2).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A-F) Responses in the theta power frequency band, z-scored. Same format as Figure 2\u2014figure supplement 1. (G-L) Responses in the gamma power frequency band, z-scored. Same format as Figure 2\u2014figure supplement 1.\n\nAny differences between congruent and incongruent trials in the stimulus-aligned analyses can be confounded by the reaction time differences; therefore, we focus subsequent analyses on the response-aligned signals. More example electrodes are shown in Figure 2\u2014figure supplement 1 (dlPFC) and Figure 2\u2014figure supplement 2 (OFC).\n\nUsing the aforementioned criteria, we identified n = 51 conflict selective frontal cortex electrodes during the Stroop task, with contributions from 13 subjects (Supplementary files 2 and 3). These electrodes were distributed throughout different subregions within frontal cortex (Figure 3A). To evaluate whether random variation in the signals could give rise to apparent conflict-selective electrodes, we randomly shuffled the congruent/incongruent trial labels 10,000 times and applied the same statistical criteria (Materials and methods). Across our population, we found n = 4.4 \u00b1 0.03 false positive electrodes (mean \u00b1 s.e.m., out of 469 electrodes), which corresponds to a false discovery rate (FDR) of q = 0.01, which is significantly less than our observation of n = 51 electrodes. The number of conflict-selective electrodes within each subregion was significantly greater than expected by chance (Figure 3B, P < 0.01, all regions). We repeated the analyses during the Reading task. In contrast with the Stroop task, we only observed n = 3 conflict-selective frontal cortex electrodes during the Reading task (out of 469 electrodes), a number that is within the false positive rate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig3-v2.jpg)\n\n**Figure 3.:** (A) Location of conflict-selective electrodes (black/gray) shown on a reference brain, with each region colored (Materials and methods). Electrodes from the right hemisphere were mapped to the left hemisphere for display purposes. For more detail, see Supplementary file 2. (B) Percent of total electrodes in each region that were selective for conflict. Chance levels were computed using a permutation test (black line). The number of observed electrodes was significantly above chance for all regions (P < 0.01, permutation test, Materials and methods).\n\nTo account for within-subject and across-subject variation, we used a multilevel model (Aarts et al., 2014) to conduct a group analysis of the physiological responses, with electrodes nested within subjects (Materials and methods). Across the population, we observed a significant interaction between the factors congruency and task on the gamma power (\u03c72=9.2, P = 0.002). Consistent with the single electrode examples, gamma power was greater for incongruent compared to congruent trials, but only during the Stroop task (Figure 4A, Stroop: P < 10\u20133, Reading: P = 0.56). We computed the average response in each region (Figure 4B). Each electrode\u2019s response was normalized by dividing the power during incongruent trials by the power in congruent trials (dividing the brown curve by the black curve in Figure 2), computing the logarithm and finally pooling within each region. The pooled responses in the OFC are visually less compelling (Figure 4B, bottom right subplot) due to the heterogeneity in the latency of the individual electrodes but the responses in the OFC were as vigorous as the ones in other areas (e.g. Figure 2\u2014figure supplement 2). Similar conclusions were reached when plotting the pooled responses aligned to stimulus onset (Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig4-v2.jpg)\n\n**Figure 4.:** (A) Distribution of gamma power log-ratio (Incongruent/Congruent) for the Stroop task (blue) and Reading task (green). Bin size = 0.05. Gamma power showed a significant interaction between Congruency and Task (P = 0.002, multilevel model, Materials and methods). Power was larger for incongruent versus congruent trials during the Stroop task (P < 0.001, n = 51 frontal cortex electrodes) but not during the Reading task (green, P = 0.56). The statistical analyses directly compare the gamma power, we show the log-ratios here for display purposes only. (B) Normalized gamma power log-ratio averaged across electrodes from each of the four different frontal cortex regions during the Stroop task. We divided the power during incongruent trials by the power during congruent trials, then computed the log and finally averaged across electrodes. Data are aligned to the behavioral response onset (t=0). (C) Distribution of Pearson correlation coefficients between the maximal gamma power and behavioral reaction time during incongruent trials for n = 51 frontal cortex electrodes. These correlations were significantly positive (P < 10\u20135, sign-rank test). Bin size = 0.1. (D) For incongruent trials, there was a significant interaction between trial history and task (P\u00a0=\u00a00.03, multilevel model). Gamma power was larger for incongruent trials preceded by congruent trials (cI) compared to incongruent trials preceded by incongruent trials (iI), particularly during the Stroop task (blue, P = 0.001), compared to the Reading task (green, P = 0.72). Data beyond the range of the x-axis are shown in the first or last bins. (E) For congruent trials, there was no interaction between trial history and task (P = 0.17, multilevel model). Gamma power was similar in congruent trials preceded by incongruent trials (iC) compared to congruent trials preceded by congruent trials (cC) during the Stroop task (blue, P = 0.16) and during the Reading task (green, P = 0.19).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Distribution of theta power log-ratio (Incongruent/Congruent) for the Stroop task (blue) and Reading task (green). Bin size = 0.05. P values in black denote interaction statistics whereas P values in blue and green denote the statistics for the Stroop and Reading tasks respectively. As discussed in Figure 4, the average log-ratios are presented here for display purposes only and the statistical tests are based on the raw power values. (B) Distribution of the gamma power log-ratio between incongruent trials preceded by congruent trials (cI) compared to incongruent trials preceded by incongruent trials (iI). (C) Distribution of the gamma power log-ratio between congruent trials preceded by incongruent trials (iC) compared to congruent trials preceded by congruent trials (cC). (D-F) Same as (A-C), but for power in the beta band.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** For the anterior cingulate cortex electrode in Figure 2: (A) Phase-amplitude distribution during the Stroop task for the example electrode shown in Figure 2 (see Materials and methods for calculation of cross-frequency coupling). (B) The observed Modulation Index (MI, black arrow) is significantly greater than the surrogate distribution generated by adding a lag between the phase and amplitude measurements, demonstrating that the amplitude of the gamma band is strongly coupled to the phase of the theta band. (C) During the Stroop task, the difference in Modulation Index between congruent and incongruent trials (black arrow) was not significantly different from 0 (P = 0.61). The null distribution (gray bars) was generated by randomly permuting the congruent and incongruent labels. Across the population of electrodes: (D) The percent of total electrodes in each region (Frontal cortex or non-frontal cortex) that had significant phase-amplitude coupling. Shown on the right is the percentage of the n = 51 conflict selective electrodes that showed significant coupling. (E) The MI of congruent compared to incongruent trials for all Frontal cortex electrodes (gray dots) and the subset that were conflict-selective in the gamma band (blue dots). For both groups, there was no significant difference in the MI between congruent and incongruent trials (Frontal Cortex, P = 0.45; Conflict-selective, P = 0.52; signed-rank test). For this comparison, the number of congruent and incongruent trials was equalized before computing the MI.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Same as in Figure 4B, but data are aligned to the stimulus response onset (t=0).\n\n### Behavioral relevance of physiological responses\n\nSeveral lines of evidence demonstrate a link between the neural signals described in the previous section and cognitive control: the neural signals correlated with reaction times, showed behavioral adaptation, and demonstrated error monitoring.\n\nAs shown in previous studies, there was a wide distribution of behavioral reaction times (Figure 1B). Consistent with the example electrode in Figure 2, behavioral reaction times across the population correlated with the strength of the physiological signals, even after controlling for trial history (Figure 4C, P < 10\u20135, sign-rank test).\n\nThe strength of these neural signals also revealed a neural correlate of the behavioral Gratton effect documented in Figure 1D: gamma power was greater in cI compared to iI trials (Figure 4D). Using the aforementioned multilevel model, we found a significant interaction between trial history (cI or iI) and task (\u03c72=4.4, P = 0.03). This Gratton effect was stronger in the Stroop task (P < 0.001) than in the Reading task (P = 0.72). These differences were not observed for cC versus iC trials, where the interaction was not significant (\u03c72=1.9, P = 0.17) (Figure 4E). This analysis was performed after removing stimulus repetition trials. The Gratton effect was present in all four frontal regions and there were no statistically significant differences in the strength of the effect across regions (F = 0.25, P\u00a0=\u00a00.86, ANOVA). To control for reaction time effects on these comparisons, we ran an analysis of covariance (ANCOVA) to test for a main effect of trial history on the gamma power with the behavioral reaction time as a covariate (Materials and methods). The neural Gratton effect during the Stroop task persisted under these controlled conditions (P = 0.0002, multilevel model). We also explicitly ruled out reaction time differences by subsampling to match the reaction time distribution between conditions, with similar results (P = 0.01, multilevel model). Together, these results suggest that the neural signals described here code for an internally perceived level of conflict that exhibits conflict adaptation and correlates with the across-trial variability in reaction times.\n\n### Conflict responses in other frequency bands\n\nThe results presented above focus on the neural signals filtered within the gamma frequency band (70\u2013120\u2009Hz). We also examined the responses elicited in the broadband signals (1 to 100\u2009Hz) as well as in the theta, (4 to 8\u2009Hz), beta, (9 to 30\u2009Hz), and low gamma (30\u201370\u2009Hz) bands. No conflict selective responses were observed in the broadband signals or low gamma band. We found conflict-selective responses both in the theta and beta bands (see example in Figure 2\u2014figure supplement 2a\u2013f). Across theta and beta frequency bands, we also observed a significant interaction between Congruency and Task (theta: P < 10\u20135, beta: P < 10\u20134, multilevel model). Consistent with the results reported in the gamma frequency band, conflict responses in the theta and beta bands were more prominent during the Stroop task compared to the Reading task (Figure 4\u2014figure supplement 1). In contrast to the results in the gamma band, power in the theta and beta bands decreased during incongruent trials. Furthermore, power in the theta and beta frequency bands was not correlated with reaction times (theta: P = 0.43, beta: P = 0.09, sign-rank test).\n\nIn addition to separately examining the responses in different frequency bands, an important aspect of encoding of cognitive information is the relationship between signals across frequencies. In particular, several studies have demonstrated that the amplitude of the gamma band is coupled to the phase of slower oscillations in the theta band (Canolty et al., 2006; Oehrn et al., 2014; Tort et al., 2008). We therefore examined the degree of cross-frequency coupling between the signals in the gamma and theta bands (Figure 4\u2014figure supplement 2). Consistent with previous studies, we found that 50% of the electrodes demonstrated significant theta-gamma coupling. However, the strength of this coupling was not different between congruent and incongruent trials across the population of conflict-selective electrodes (P = 0.52, sign-rank test).\n\n### Error monitoring signals\n\nThe conflict responses reported above are based on correct trials only. Yet, error monitoring has also been ascribed to frontal cortical circuits (Bonini et al., 2014; Shenhav et al., 2013; Yeung et al., 2004). To investigate whether the same electrodes responding to conflict are also involved in successful error monitoring, we analyzed the neural signals during self-corrected trials. In these trials, subjects initially made an erroneous response and rapidly corrected themselves with the right answer. Given the high performance level of all subjects, the number of such trials is low. However, these trials are particularly interesting because we can be certain that there was successful error detection (as opposed to error trials without any self-correction). An example self-corrected trial from the ACC electrode shown previously is illustrated in Figure 5A. The subject initially made an incorrect response (green), which was rapidly followed with the correct response (red). Increased gamma power was observed after onset of the erroneous response. In contrast, the following corrected behavioral response exhibited no such post-response signal. Additionally, these error-monitoring signals were not observed in correct incongruent trials (Figure 2D), and were consistent across the n =\u00a011 self-corrected trials for this subject (Figure 5B, P = 0.001, signed rank test). Another example electrode is shown in Figure 5C\u2013D. There were only two subjects contributing n = 7 conflict-signaling electrodes that had a sufficient number of self-correction trials (greater than five trials) for this analysis. For each electrode, we compared the difference in neural signals during the one-second post-response window between the initial error and the following self-correction. Of those n = 7 electrodes, n = 5 electrodes showed evidence of error monitoring (Figure 5E, P < 0.05, sign-rank test). Although the number of electrodes and trials in this analysis is small, these results provide a direct correlate of error monitoring signals. Furthermore, these results highlight that the same electrodes that respond to conflict leading up to the behavioral response can also show post-response error monitoring.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig5-v2.jpg)\n\n**Figure 5.:** (A) An example self-correction trial from the ACC electrode in Figure 2 when the word Green colored in red was presented. The single trial gamma power is shown on top, with the speech waveform below. The dashed lines indicate the onset of the initially incorrect response ('green') and the following corrected response in bold ('no \u2013 red'). Note the increased gamma power after an error response. (B) Average gamma power aligned to the onset of the initial error response (blue) and the onset of the corrected response (black) for n = 11 self-correction trials. Shaded areas indicate s.e.m. The post-response power was significantly greater after the error (P = 0.001, signed-rank test). (C-D) Same as (A-B) for another example electrode in the dorsolateral prefrontal cortex. The post-response power was significantly greater after the error response (P = 0.002, signed-rank test). (E) Across the n = 7 electrodes with n = 10 or greater self-correction trials, the z-scored gamma power during the initial error response was larger than during the corrected response. Electrodes with significant differences (P < 0.05, signed-rank test) are colored black. Letters mark the examples in (A) and (C).\n\n### Regional differences in conflict response latencies\n\nWe observed conflict-selective responses in the anterior cingulate cortex, medial frontal cortex, dorsolateral prefrontal cortex and orbitofrontal cortex. To examine the dynamics of cognitive control orchestrating the transformation of conflicting visual signals to motor outputs, we compared, across those four regional groups, the latencies relative to behavioral response onset at which the congruent and incongruent trials could be discriminated. Comparing latencies across regions is difficult, especially across subjects with varying reaction times. For a controlled and direct comparison, we restricted the analysis to compute the latency differences between pairs of simultaneously recorded electrodes. This within-subject pairwise analysis had increased power to examine the relative dynamics between frontal lobe areas (Figure 6). The relative latencies were significantly different across the regions (P = 0.01, permutation test, post-hoc testing was controlled for multiple comparisons using the Benjamin-Hochberg procedure, Materials and methods). Conflict responses in the ACC preceded those in all the other frontal lobe regions, followed 207 \u00b1 40 ms later by dorsolateral prefrontal cortex and 388 \u00b1 83 ms later by medial frontal cortex. Signals in orbitofrontal cortex emerged 319 \u00b1 78 ms after dlPFC. This entire processing cascade took approximately 500 ms. For comparison, subjects\u2019 behavioral reaction times to incongruent trials were 1105 \u00b1 49 ms. The latency difference between ACC and dlPFC is based on 6 electrode pairs: one ACC electrode and six simultaneously recorded dlPFC electrodes. There was only one pair of simultaneous recordings between ACC and OFC and we do not report this value in Figure 6. The other region comparisons have contributions from multiple electrodes in multiple subjects (Supplementary file 3). These results suggest a temporal hierarchy of cognitive control mechanisms culminating in speech onset.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12352/elife-12352-fig6-v2.jpg)\n\n**Figure 6.:** Latency differences between different regions computed from all pairs of simultaneously recorded electrodes. np denotes the number of electrode pairs. Because we only consider simultaneously recorded electrodes here, not all the electrodes modulated by conflict can be paired with any other electrode. Supplementary file 3 shows the number of electrodes modulated by conflict in each area and subject. There was only one electrode pair between ACC and OFC and therefore we do not show the latency difference between these two regions here. Significant latency differences (P < 0.05, permutation test, Materials and methods) are shown in black, and non-significant differences in gray. ACC leads both mFC (P = 0.001) and dlPFC (P = 0.02), with OFC following dlPFC (P = 0.009).\n\n## Discussion\n\nWe used intracranial field potentials to measure the dynamics of conflict responses across frontal cortex leading up to the behavioral response in the Stroop task. Previous physiological and functional neuroimaging studies have documented the involvement of multiple of these frontal cortex areas in the Stroop or similar tasks (Botvinick et al., 1999; Kolling et al., 2012; MacDonald, 2000; Niendam et al., 2012; Oehrn et al., 2014; Sheth et al., 2012). The intracranial field potential recordings reported here show conflict-selective signals in ACC (e.g. Figure 2), dlPFC (e.g. Figure 2\u2014figure supplement 1), mFC (e.g. Figure 4B) and OFC (e.g. Figure 2\u2014figure supplement 2). The mFC and dlPFC have been previously implicated in cognitive control, and these structures are extensively connected to the rest of frontal cortex areas (Ridderinkhof et al., 2004). The role of the OFC in cognitive control during Stroop-like tasks has not been reported previously, possibly because of technical challenges in neuroimaging near this area (Weiskopf et al., 2006).\n\nWe presented several lines of evidence that demonstrate that these conflict-selective physiological signals are relevant for behavior during the Stroop task. Longer behavioral reaction times were correlated with greater gamma power on a trial-by-trial basis during the Stroop task but not during the Reading task, even after accounting for trial history and for differences between congruent and incongruent stimuli (Figure 2H, 4C). The same identical stimuli can elicit a range of behavioral reaction times and this internal degree of conflict can be captured, at least partly, by the strength of gamma power in frontal cortex in each trial.\n\nThe neural correlates of behavioral adaptation (Gratton effect\u00a0[Gratton et al., 1992]) were observed in the ACC, consistent with prior studies based on human single neuron recordings (Sheth et al., 2012), neuroimaging (Botvinick et al., 1999; Kerns, 2006) and also in accordance with the behavioral effects of ACC resection (Sheth et al., 2012). Conflict responses throughout the other frontal cortex regions also demonstrated the neural Gratton effect, suggesting a more distributed network involved in across-trial adaptation than previously hypothesized. The physiological responses in these areas were stronger in cI trials (incongruent trials that were preceded by congruent trials) than iI trials (Figure 4D). While the increased activity in cI trials compared to iI trials is consistent with neuroimaging studies (Botvinick et al., 1999), single neuron recordings in a different Stroop-like task report the opposite relationship (iI > cI) (Sheth et al., 2012). These differences point to potentially interesting distinctions between the activity of individual neurons and coarser population measures that warrant further investigation.\n\nAnother discrepancy between neuroimaging studies and single unit recordings is the presence of conflict responses and error signals. Single unit recording in macaque ACC typically find error monitoring signals but not conflict-selective responses (Cole et al., 2009; Emeric et al., 2010; Ito et al., 2003; Taylor et al., 2006), see however (Ebitz and Platt, 2015), whereas human neuroimaging studies report both types of signals in ACC. There has been significant debate concerning whether action monitoring and conflict detection represent distinct processes (Carter et al., 1998; Carter et al., 2000; Nee et al., 2011; Swick and Turken, 2002). Because both processes may co-occur on the same trials, high temporal resolution is required to disassociate the two computations. A recent human intracranial study has found error signals in supplementary motor area and medial frontal cortex (Bonini et al., 2014), and a human single unit study reported conflict signals in ACC (Sheth et al., 2012). The current work demonstrates the coexistence of both error signals and conflict signals. The analysis of the few self-correction trials in our data suggests that the same areas responsible for pre-behavioral conflict signals can also produce post-behavioral response error-monitoring signals (Figure 5). In addition, the relative timing of the conflict and error signals surrounding the neural responses confirms computational predictions based on a connectionist architecture to explain the mechanisms of conflict (Yeung et al., 2004) and scalp EEG studies (Hughes and Yeung, 2011). These results are consistent with computational models suggesting that these signals may represent a general error-likelihood prediction, of which conflict and error detection are special cases (Brown and Braver, 2005).\n\nIt has been suggested that ACC and supplementary eye field neurons in macaque monkeys respond to specific stimulus and/or behavioral combinations but are not directly modulated by conflict (Cole et al., 2009; Nakamura et al., 2005). At the level of the intracranial field potentials reported here, the modulation of conflict trials observed in the four frontal cortex regions could not be ascribed to specific stimulus or behavioral responses (e.g. Figure 2G) and were also task dependent (compare Figure 2A versus 2C). In these patients, we did not have access to single neuron responses and we therefore cannot rule out the possibility that individual neurons show distinct patterns of responses that are averaged out at the field potential level.\n\nBesides the high gamma band, we also observed conflict responses in the beta and theta bands, but not the low gamma band (e.g. Figure 4\u2014figure supplement 1). Previous work has suggested differential roles for distinct oscillatory components of the local field potential (Cavanagh and Frank, 2014; Kahana et al., 2001; Ullsperger et al., 2014; von Stein and Sarnthein, 2000). There were clear differences in the type of information conveyed by distinct frequencies components. Lack of significant correlations with reaction time in the theta and beta bands suggests that the gamma band better captures the behavior. Additionally, conflict responses were characterized by increased power in the gamma band, but decreased power in the theta and beta bands (Figure 4\u2014figure supplement 1). Previous scalp EEG recordings (Cavanagh and Frank, 2014; Ullsperger et al., 2014; van Driel et al., 2015) have demonstrated that conflict and/or error trials elicit increased theta power, suggesting potentially interesting differences in how theta is captured across spatial scales. We also observed a decrease in beta power, which is consistent with previous studies that correlate frontal cortex activation with desynchronization in the beta band and increased synchronization in the gamma bands (Crone et al., 1998a; Crone et al., 1998b). Differences across tasks, recording methods, and targeted regions should be interpreted with caution. The roles of different oscillatory components in neocortex are not clearly understood. One possibility is that lower frequency bands reflect the summed dendritic input of the nearby neural population (Logothetis et al., 2001; Mitzdorf, 1987) and can act as channels for communication (Cavanagh and Frank, 2014), whereas higher frequency bands represent the population spiking rate (Buzsaki et al., 2012; Ray and Maunsell, 2011). Along these lines, we speculate that the theta desynchronization we observe could reflect a reduction of inputs, leading to inhibition of the prepotent but erroneous response.\n\nWhile we observed conflict responses throughout frontal cortex, the spatiotemporal resolution of our intracranial recordings allowed us to separate regions by the latency at which conflict-selective responses emerge with respect to speech onset. By comparing pairs of simultaneously recorded electrodes, we found that conflict responses in the ACC lead the dlPFC by ~200 ms. Medial frontal cortex is anatomically close and extensively connected to the ACC, and the two regions are often grouped together (Cavanagh et al., 2009; Ridderinkhof et al., 2004). Yet, conflict responses in the mFC trail the ACC by hundreds of milliseconds, suggesting an important distinction between the two regions (Rushworth et al., 2004). The relative latency measurements place the OFC at the bottom of this cascade. The hierarchical cascade of processes described here is consistent with predictions from mechanistic models of cognitive control (e.g. see Figure 2 in Shenhav et al, Neuron 2013). In particular, stimulus related signals are evident along the ventral visual stream early on and feed onto frontal cortex, where we find that ACC activity precedes activity in other frontal regions, followed by dlPFC, and finally mFC, and OFC.\n\nSince the local field potential pools over many neurons, latency measures can be influenced by a variety of factors, such as the proportion of neurons selective for conflict and their laminar organization. Yet, at least in the ACC, the temporal profile of conflict responses we observed is similar to responses from human single unit recordings (Sheth et al., 2012). The relatively long delays between regions are also particularly intriguing. There are monosynaptic connections that link these four regions within frontal cortex and yet, it takes 100\u2013200 ms to detect the relative activation between these areas (Figure 6).\n\nDaily decisions require integration of different goals, contexts, input signals, and the consequences of the resulting actions. The current study provides initial steps to elucidate not only which brain areas participate in cognitive control on a trial-by-trial basis but also their relative interactions and differential roles. The relative latency measurements and correlations between neural activity and reaction time provide a framework to constrain theories of cognitive control, and propose a plausible flow of conflict responses through frontal cortex.\n\n## Materials and methods\n\n### Subjects\n\nSubjects were 15 patients (10 male, Ages 10\u201350, Supplementary file 1) with pharmacologically intractable epilepsy treated at Children\u2019s Hospital Boston (CHB), Johns Hopkins Medical Institution (JHMI), Brigham and Women\u2019s Hospital (BWH), or Taipei Veterans General Hospital (TVGH). These subjects were implanted with intracranial electrodes in frontal cortex for clinical purposes. Five other subjects participated in this task but they were excluded from the analyses because they did not have any electrodes in frontal cortex. All studies were approved by each hospital\u2019s institutional review boards and were carried out with the subjects\u2019 informed consent.\n\n### Recordings\n\nSubjects were implanted with 2\u00a0mm diameter intracranial subdural electrodes (Ad-Tech, Racine, WI, USA) that were arranged into grids or strips with 1 cm separation. Electrode locations were determined by clinical considerations. There were 1397 electrodes (15 subjects). Sampling rates ranged from 256\u2009Hz to 1000\u2009Hz depending on the equipment at each institution: CHB (XLTEK, Oakville, ON, Canada), BWH (Bio-Logic, Knoxville, TN, USA), JHMI (Nihon Kohden, Tokyo, Japan), and TVGH (Natus, San Carlos, CA). All the data were collected during periods without any seizure events or immediately\u00a0following any seizures.\n\n### Task procedures\n\nA schematic of the task is shown in Figure 1. After 500 ms of fixation, subjects were presented with a word stimulus for 2 s. The stimulus presentation was 3 s in two subjects. Stimuli were one of three words (Red, Blue, Green) presented in the subjects\u2019 primary language (CHB, BWH, JHMI: English; TVGH: Mandarin) either in red, blue, or green font color. Stimuli subtended approximately 5 degrees of visual angle and were centered on the screen. Trials were either congruent (C), where the font color matched the word, or incongruent (I), where the font color conflicted with the word. The order of congruent and incongruent trials was randomized. Approximately 40% of the trials were incongruent trials. Within congruent trials and within incongruent trials all color-word combinations were counter balanced and randomly interleaved. Subjects were asked to either name the color (Stroop task) or read the word (Reading task) within the time limit imposed by the stimulus presentation time.\n\nEach block contained 18 trials, and the two tasks were completed in separate blocks. Most subjects completed 18 blocks of the Stroop task and 9 blocks of the Reading task (Supplementary file 1). Audio was recorded using a microphone at 8192\u2009Hz sampling rate. No correct/incorrect feedback was provided.\n\n### Electrode localization\n\nElectrodes were localized by co-registering the preoperative magnetic resonance imaging (MRI) with the postoperative computer tomography (CT) (Destrieux et al., 2010; Liu et al., 2009). In 4 subjects without a postoperative CT, electrodes were localized using intraoperative photographs and preoperative MRI. For each subject, the brain surface was reconstructed from the MRI and then assigned to one of 75 regions by Freesurfer. Depth electrodes were assigned to either a subcortical structure or to gyri/sulci.\n\nWe focused on those electrodes in four frontal cortex regions (ACC: anterior and middle-anterior cingulate gyrus, mFC: superior frontal gyrus, dlPFC: middle frontal gyrus, and OFC: orbitofrontal gyrus).\n\n### Behavioral analyses\n\nTo determine the behavioral reaction time for each trial, the short-time energy was computed from the audio recordings. For an audio signal x(t), the short-time energy E(t) is defined as:\n\n$$\nE(t)=\\summ=0m=T[x(m)w(t\u2212m)]^{2},\n$$\n\nwhere T is the length of the recording and w(t) is a 300-point Hamming window (~40 ms). Speech onset was defined as the first time when the energy crossed a threshold set as 1 standard deviation above the baseline. Only trials where the subject gave a single verbal response and the speech onset could be identified were considered correct trials.\n\n### Preprocessing\n\nUnless otherwise noted, analyses in this manuscript used correct trials only. Electrodes with significant spectral noise were excluded from analysis (n = 25 out of 1397 total electrodes). For each electrode, a notch filter was applied at 60\u2009Hz, and the common average reference computed from all channels was subtracted. Power in the theta (4\u20138\u2009Hz), beta (9\u201330\u2009Hz), and high-gamma band (70\u2013120\u2009Hz) was extracted using a moving window multi-taper Fourier transform (Chronux toolbox [Mitra and Bokil, 2008]) with a time-bandwidth product of five and seven tapers. The window size was 200 ms with 10 ms increments. In several figures, the gamma power was z-scored for display purposes (see figure legends).\n\n### Analyses of neural response selectivity\n\nTo determine whether and when an electrode responded selectively to conflict, we used a sliding F-statistic procedure (Liu et al., 2009). Electrodes with differential responses between congruent and incongruent trials were selected by computing the F-statistic, for each time bin, comparing the neural responses between congruent and incongruent trials. Electrodes were denoted as \u2018conflict selective\u2019 if (1) the F-statistic exceeded a significance threshold for 50 consecutive milliseconds, and (2) the average neural response exceeded one standard deviation above the baseline period at least once during the trial. A null distribution generated by randomly permuting the labels was used to set the significance threshold with P\u00a0=\u00a00.001. The latency at which congruent and incongruent stimuli could be discriminated was defined as the first time of this threshold crossing. For the response-aligned view, only electrodes where the latency preceded the response were included in subsequent analysis. This selection process was independently performed for each electrode in both stimulus-aligned and response-aligned analyses, and separately for the Stroop and Reading task.\n\nWe used a permutation test with 10,000 shuffles to obtain a false discovery rate for our selection process. The congruent/incongruent trial labels were randomized 10,000 times and we measured the average number of electrodes across our population that passed the selection procedure.\n\n### Single electrode analyses\n\nFor the selected electrodes obtained with the procedure described in the previous section, we performed a number of within-electrode analyses. We measured single-trial correlations with behavioral reaction times, assessed the significance of interactions and simple/main effects, and controlled for confounds in measuring the neural Gratton effect.\n\n#### Single-trial analyses\n\nFor single trial comparisons across conditions, signal power for each trial was computed for both response-aligned and stimulus-aligned analyses. For stimulus-aligned data, the signal power was defined as the maximal power from stimulus onset to 1 s after stimulus onset. For response-aligned analyses, the signal power was defined as the maximal power from one second before the response to the response onset. Analyses using the average power within the same window yielded similar results. Single-trial response latency was defined as the time of maximal activation relative to stimulus onset.\n\n#### Interaction effects\n\nFor conflict-selective electrodes, we measured the significance of task dependence by performing, at each time bin, an ANOVA on the gamma power with the factors Congruency and Task (Nieuwenhuis et al., 2011). The peak F-statistic of the interaction term over the pre-response window was compared against a null distribution generated by randomly shuffling the trial labels. Simple effects were tested using this same approach.\n\n#### Neural Gratton effect\n\nWe evaluated the neural signal difference between trials with different histories (e.g. cI versus iI), while removing trials with stimulus repetitions. Given that (1) reaction times are different for the cI versus iI trials (Figure 1) and (2) gamma power is significantly correlated with reaction time in incongruent trials (Figure 4), we would expect differences in gamma power in cI versus iI trials. To control for this potential confounding effect in our measurements of trial history dependence, we applied two methods. First, for each electrode, we performed an ANCOVA on the gamma power with trial history (cI or iI, for example) as the group and reaction time as a covariate. We computed the regression line, extracted the RT-adjusted gamma power from the y-intercept and used this value in the group analysis. Second, we performed a matched reaction time analysis, where the distribution of reaction times was equalized by subsampling the trials in a histogram-matching procedure with 200\u00a0ms bins. This resulted in using only ~50% of the trials. The same analysis was then applied to this reaction time matched dataset.\n\n### Group analysis\n\nTo account for both within-subject and across-subject variance, statistical testing of the electrophysiological data was conducted with multilevel models (Aarts et al., 2014; Goldstein, 2011) (also known as random effect models). Random factors included electrodes nested within subjects. Significance of interactions and/or main effects was assessed with a likelihood ratio test against a null model excluding that particular term.\n\nFor comparison of latency across regions, we restricted our analyses to simultaneous measurements made within each subject. We computed the latency difference for each pair of simultaneously recorded electrodes from different regions. The F-statistic of this latency difference across the groups was compared against a null distribution generated by shuffling, within each subject, the region labels (n = 10,000 shuffles). Post hoc testing used the Benjamin-Hochberg procedure to control for multiple comparisons.\n\n### Cross-frequency coupling\n\nTo measure cross-frequency coupling between the theta and gamma frequency bands, we used the Modulation Index (MI) defined previously (Tort et al., 2008). Activity in the theta (4\u20138\u2009Hz) and high gamma (70\u2013120\u2009Hz) bands was obtained with a zero-phase least-squares finite impulse response (FIR) filter. Instantaneous phase and amplitude was extracted with the Hilbert Transform. For the Stroop and Reading Task separately, the MI was computed as the Kullback-Leiber distance between the phase-amplitude histogram and a uniform distribution. For comparison between tasks, the number of trials was equalized. This MI was compared against a surrogate distribution generated by randomly lagging the time series across 1000 repetitions. Similar results were obtained with the measure defined in Canolty et al. (Canolty et al., 2006). Results were also similar when a surrogate distribution was created by randomly pairing low-frequency phase with high-frequency power from different trials.\n\nTo compare the strength of cross-frequency coupling between congruent and incongruent conditions, we computed the difference in MI between the two conditions while equalizing the trial count. This difference was compared against a null distribution generated by randomly shuffling the congruent and incongruent labels.\n",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "b255888b-5db5-4035-824e-a7e9a2252da2",
+      "submission_id": "5540ab2e-0021-4563-9c06-c500d124b718",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hiram Brownell, Boston College , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12352.028](https://doi.org/10.7554/eLife.12352.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Cascade of neural processing orchestrates cognitive control in human frontal cortex\" for consideration by eLife. Your article has been favourably evaluated by David Van Essen (Senior Editor) and three peer reviewers, one of whom, Hiram Brownell, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper reports a human ECoG study, which provides evidence for conflict-related signals in dorsal anterior cingulate cortex, and shows that such signals propagate subsequently to dorsolateral and orbitofrontal cortex. The results are important for two reasons: (1) They add to another recent human intracranial study (by Sheth and colleagues) in strongly contradicting non-human primate studies, which have \u2013 at least until recently \u2013 found no evidence for conflict signaling in monkey cingulate, despite the apparent presence of such signals in a large number of human fMRI studies; (2) they provide some of the strongest evidence yet that conflict signals arise earliest in dorsal cingulate, with dorsolateral PFC following later. This finding is consistent with a recent crop of theoretical perspectives on frontal lobe function, which have generally placed cingulate in the role of recruiting dorsolateral PFC when there is a demand for cognitive control.\n\nEssential revisions:\n\n1) Add clarity about how electrodes were chosen to go into the analysis of the temporal hierarchy of conflict related signals. For example, Figure 6 says there are 36 electrode pairs between DLPFC and OFC, yet Figure 3B says there are only 24 electrodes in DLPFC that showed a significant difference in \u03b3 power between incongruent and congruent trials. Is the latter a prerequisite to be included in the former? The concern is that the peak timing in one or two electrodes might then become particularly influential in determining the calculated difference in timings. The authors should clarify whether this is a problem, and how they dealt with it when computing the statistics on latency difference.\n\n2) Provide more detail about the distribution of significant electrodes in each individual subject for each region. (This will make clear whether electrodes were only clustered in a few subjects or evenly distributed across the population, and also make clear where the significant pairs of electrodes came from).\n\n3) One reviewer suggested that it would make more sense to test/plot the logarithm of the \u03b3 power ratio when comparing the incongruent and congruent responses (Figure 4B/D/E). The ratio, if not log-transformed, is biased towards having values that are pushed further away from 1 if the numerator is larger than the denominator rather than vice versa (i.e. if incongruent power is double that of congruent, the ratio is 2; if congruent power is double incongruent, the ratio is 0.5). The log (ratio), by contrast, would show the same deviation from zero for an equivalent change in either numerator or denominator.\n\n4) The OFC is said to show variable latencies across subjects, causing a flatter-looking response profile than other areas (Figure 4B). Might this be because the OFC is more sensory-evoked than other areas recorded? It looks a bit like this from the example electrode, but of course there will be substantial heterogeneity across recordings. Consider adding including as a supplement helpful the sensory-locked equivalent of Figure 4B for all regions, as a supplement.\n\n5) Earlier work by Nakamura and Olson in 2005 (J Neurophys 93, 884-908) looked at apparent conflict responses in monkey supplementary eye fields, and concluded that such signals were essentially epiphenomenal. The neurons they examined all showed response-selective activity, and the 'conflict' activity seen at the population level turned out to reflect non-linear modulation of response-related activity when responses competed. This always struck me as a very serious problem for the 'conflict monitoring' theory. The question is how the present authors can rule out this kind of explanation for their own results. The second paragraph of the subsection \u201cConflict responses in frontal cortex\u201d reports that \u03b3-band power was invariant to the particular word-color combination presented, which makes it sound like the neural responses being recorded were not response specific. If this were indeed the case, then it would clearly rule out a Nakamura-Olson scenario. And this conclusion would be possible if the data being reported involved single-neuron recordings. However, it is not clear that the reported findings, in an ECoG setting where you're seeing population-level effects, can rule out this alternative interpretation.\n",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8b87e1a-d3b1-4c4e-aadd-c091ef40dc5c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C1",
+      "claim": "Rapid and flexible interpretation of conflicting sensory inputs in the context of current goals is a critical component of cognitive control that is orchestrated by frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid and flexible interpretation of conflicting sensory inputs in the context of current goals is a critical component of cognitive control that is orchestrated by frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of frontal cortex in cognitive control, drawing from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ef0a71c7-d58b-443e-bf3d-c3dafda71020",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C2",
+      "claim": "The relative roles of distinct subregions within frontal cortex are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative roles of distinct subregions within frontal cortex are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "d949f12e-fd83-49ed-b158-6dae8d400829",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C3",
+      "claim": "Differential activity preceding behavioral responses to conflict trials was observed throughout frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed differential activity preceding the behavioral responses to conflict trials throughout frontal cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the intracranial recordings data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e4d633fe-e3cb-4fe4-b9dc-3b1a6ede2a14",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C4",
+      "claim": "The differential activity in frontal cortex was correlated with behavioral reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "this activity was correlated with behavioral reaction times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analyses shown in the results (e.g., Figure 2H, Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "59b527ad-7e42-4aa6-b7fc-4bf1c275db1e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C5",
+      "claim": "Conflict-selective signals emerged first in anterior cingulate cortex (ACC) before dorsolateral prefrontal cortex (dlPFC).",
+      "claim_type": "EXPLICIT",
+      "source": "These signals emerged first in anterior cingulate cortex (ACC) before dorsolateral prefrontal cortex (dlPFC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ea75da0c-c8f0-4483-b0ad-32f712b77201",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C6",
+      "claim": "Conflict-selective signals in ACC were followed by signals in medial frontal cortex (mFC).",
+      "claim_type": "EXPLICIT",
+      "source": "These signals emerged first in anterior cingulate cortex (ACC) before dorsolateral prefrontal cortex (dlPFC), followed by medial frontal cortex (mFC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "07498383-5408-46d3-b19a-bac115368df8",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C7",
+      "claim": "Conflict-selective signals in mFC were followed by signals in orbitofrontal cortex (OFC).",
+      "claim_type": "EXPLICIT",
+      "source": "followed by medial frontal cortex (mFC) and then by orbitofrontal cortex (OFC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0fceab72-98da-4ba4-97a0-468fdcf9d640",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C8",
+      "claim": "The results suggest a temporal hierarchy for cognitive control in human cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results disassociate the frontal subregions based on their dynamics, and suggest a temporal hierarchy for cognitive control in human cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the latency data showing sequential activation of frontal regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "6aa07328-db44-4f2a-8f65-6f44519a29f0",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C9",
+      "claim": "Flexible control of cognitive processes is fundamental to daily activities, including the execution of goal-directed tasks according to stimulus inputs and context dependencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexible control of cognitive processes is fundamental to daily activities, including the execution of goal-directed tasks according to stimulus inputs and context dependencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cognitive control based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "65aa814c-5786-42d7-8ca1-fb04cf6f86cf",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C10",
+      "claim": "An important case of cognitive control arises when input stimuli elicit conflicting responses and subjects must select the task-relevant response despite competition from an often stronger but task-irrelevant response.",
+      "claim_type": "EXPLICIT",
+      "source": "An important case of cognitive control arises when input stimuli elicit conflicting responses and subjects must select the task-relevant response despite competition from an often stronger but task-irrelevant response (Miller, 2000; Miller and Cohen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ab912fd9-01a3-4030-8e20-eff47d0b6047",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C11",
+      "claim": "In the Stroop task, subjects are asked to name the font color of a word where the semantic meaning conflicts with the color signal.",
+      "claim_type": "EXPLICIT",
+      "source": "A canonical example of this type of conflict is the Stroop task: subjects are asked to name the font color of a word where the semantic meaning conflicts with the color signal (e.g. the word 'red' shown in green versus red).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Stroop task paradigm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7483e49c-6f57-427a-9987-b740cc339057",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C12",
+      "claim": "Incongruent inputs in the Stroop task lead to longer reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "Such incongruent inputs lead to longer reaction times, attributed to weaker signals (color processing) that must be emphasized over the automatic processing of word information (Stroop, 1935).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding from the Stroop task literature, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7030a5ec-3747-4761-9bf3-01cfd2b61aa1",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C13",
+      "claim": "The Stroop task is frequently used in cognitive neuroscience and clinical psychology and forms the foundation for theories of cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "The Stroop task is frequently used in cognitive neuroscience and clinical psychology and forms the foundation for theories of cognitive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance and use of the Stroop task in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "df418662-87b2-49c9-af25-8c92ef5918a1",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C14",
+      "claim": "Neurophysiological, neuroimaging, and lesion studies have ascribed a critical role in cognitive control to networks within frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurophysiological, neuroimaging, and lesion studies have ascribed a critical role in cognitive control to networks within frontal cortex (Miller, 2000; Miller and Cohen, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "eff1d573-aa4f-4ef3-b588-38923ed9ef95",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C15",
+      "claim": "The neural circuit dynamics and mechanisms responsible for orchestrating control processes remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "yet the neural circuit dynamics and mechanisms responsible for orchestrating control processes remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "886ca217-0990-48fe-9129-8666c30f7eb6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C16",
+      "claim": "Lesion studies, human neuroimaging measurements, and macaque single unit recordings implicate the dorsolateral prefrontal cortex (dlPFC) in providing top-down signals to bias processing in favor of the task-relevant stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesion studies (Cohen and Servan-Schreiber, 1992; Perrett, 1974), human neuroimaging measurements (Egner and Hirsch, 2005a; MacDonald, 2000), and macaque single unit recordings (Johnston et al., 2007) implicate the dorsolateral prefrontal cortex (dlPFC) in providing top-down signals to bias processing in favor of the task-relevant stimuli (Botvinick et al., 2001; Miller and Cohen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "314fbad0-2df1-42b6-b9ab-d8e505713058",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C17",
+      "claim": "The medial frontal cortex (mFC) participates in cognitive control, possibly in a conflict monitoring capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The medial frontal cortex (mFC) also participates in cognitive control, possibly in a conflict monitoring capacity (Botvinick et al., 2001; Ridderinkhof et al., 2004; Rushworth et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and includes speculative language ('possibly').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "4d7631ce-10ff-46ae-be7c-9f89ae0a79ca",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C18",
+      "claim": "Recordings and lesions studies in the macaque anterior cingulate cortex (ACC) suggest that ACC neurons are principally involved in monitoring for errors and making between-trial adjustments.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings and lesions studies in the macaque anterior cingulate cortex (ACC) (Ito et al., 2003; Nakamura et al., 2005) suggest that ACC neurons are principally involved in monitoring for errors and making between-trial adjustments (Brown and Braver, 2005; Ito et al., 2003; Johnston et al., 2007; Roth\u00e9 et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "1b07ebc6-0d7b-48ec-85f3-d88115698d07",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C19",
+      "claim": "A recent study in the human ACC supports the idea that ACC is involved in error monitoring and between-trial adjustments.",
+      "claim_type": "EXPLICIT",
+      "source": "an idea that has received support by a recent study in the human ACC (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "048f20bc-5490-42e2-ab3b-f206f43a4d0f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C20",
+      "claim": "Recent work has demonstrated that the supplementary motor area and the medial frontal cortex play an important role in monitoring for errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has also demonstrated that the supplementary motor area and the medial frontal cortex play an important role in monitoring for errors (Bonini et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "6dbb9fd2-3cdb-4040-a854-7d4048321666",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C21",
+      "claim": "An alternative theoretical framework posits that the ACC monitors for potential conflicts and subsequently directs the dlPFC to engage control processes.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative and influential theoretical framework posits that the ACC monitors for potential conflicts and subsequently directs the dlPFC to engage control processes (Botvinick et al., 2001; Shenhav et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "4094deea-67dd-4fc7-b2a2-a2c795dd2fb1",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C22",
+      "claim": "Several human neuroimaging studies are consistent with the notion that ACC monitors for conflicts and directs dlPFC to engage control processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several human neuroimaging studies are consistent with this notion (Botvinick et al., 1999; Kerns, 2006; Kerns et al., 2004; MacDonald, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ac398b88-757c-468b-b532-ebbf77817762",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C23",
+      "claim": "The relative contributions of dlPFC, mFC, and ACC to cognitive control remain a matter of debate.",
+      "claim_type": "EXPLICIT",
+      "source": "but the relative contributions of dlPFC, mFC, and ACC to cognitive control remain a matter of debate (Aarts et al., 2008; Cole et al., 2009; Fellows and Farah, 2005; Mansouri et al., 2007; Milham and Banich, 2005; Milham et al., 2003; Rushworth et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work showing conflicting views.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "3cfbc5a6-dc04-4a1d-be5a-acb2bca50776",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C24",
+      "claim": "Some neuroimaging studies have suggested that frontal cortex regions can be differentiated based on the presence or absence of conflict signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, some neuroimaging studies have suggested that these frontal cortex regions can be differentiated based on the presence or absence of conflict signals (MacDonald, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e293dbbc-0029-4b5f-89cf-0039b1ece830",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C25",
+      "claim": "Increased task difficulty recruits a host of executive functions including attention, decision-making, uncertainty, and cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "The challenge in dissociating the relative roles of these regions during Stroop-like tasks is that increased task difficulty recruits a host of executive functions (attention, decision-making, uncertainty, cognitive control).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about executive functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "84b9026f-81b4-41d0-968e-8b0e2cfe84a0",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C26",
+      "claim": "Executive functions are associated with neural activity spanning tens to hundreds of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "These functions are associated with neural activity spanning tens to hundreds of milliseconds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the temporal dynamics of neural activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "a23d63f6-b603-472b-bddb-567730acd146",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C27",
+      "claim": "The underlying dynamics of executive functions are difficult to untangle with the low temporal resolution of existing neuroimaging techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "and the underlying dynamics are difficult to untangle with the low temporal resolution of existing neuroimaging techniques (Shenhav et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and reflects a known limitation of neuroimaging.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "96e48d18-ac3d-4ca7-b89e-782d680fccc1",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C28",
+      "claim": "Human single neuron studies provide millisecond resolution but have focused on individual regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Human single neuron studies provide millisecond resolution but have focused on individual regions (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "dc026948-b48a-482e-a30f-bbc434bbee82",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C29",
+      "claim": "Intracranial recordings in human epilepsy patients provide high spatiotemporal resolution and the ability to record simultaneously from multiple regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We took advantage of the high spatiotemporal resolution of intracranial recordings in human epilepsy patients and the ability to record simultaneously from multiple regions to directly investigate the dynamics of conflict responses during cognitive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f2e17851-88fd-4656-83be-4d1e679a966f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C30",
+      "claim": "The authors hypothesized that subregions of frontal cortex could be differentiated based on the temporal profile of their conflict responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that subregions of frontal cortex could be differentiated based on the temporal profile of their conflict responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e5aa7fa5-f2bc-4aba-b243-3f57d4384fce",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C31",
+      "claim": "Intracranial field potentials were recorded from 1397 electrodes in 15 subjects while they performed the Stroop task or a variation in which they were asked to read the word instead of focusing on its color.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded intracranial field potentials from 1397 electrodes in 15 subjects while they performed the Stroop task or a variation in which they were asked to read the word instead of focusing on its color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7c3cd840-8c10-4e13-b103-73ac8d107001",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C32",
+      "claim": "Conflict-selective activity was observed throughout several regions in frontal cortex: ACC, mFC, dlPFC, and OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed conflict-selective activity throughout several regions in frontal cortex: ACC, mFC, dlPFC, and also orbitofrontal cortex (OFC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "c159cc8e-f75e-431d-b62b-a0b43b9a3365",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C33",
+      "claim": "Neural responses increased for incongruent compared to congruent trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural responses increased for incongruent compared to congruent trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in multiple figures (e.g., Figure 2, Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cda0c881-1c6e-4e74-9072-ed9bcffeabed",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C34",
+      "claim": "The conflict-selective signals correlated with behavioral reaction time.",
+      "claim_type": "EXPLICIT",
+      "source": "and these signals correlated with behavioral reaction time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analyses shown in the results (e.g., Figure 2H, Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f5da9496-a26c-4f11-b6e7-8917d9a275f4",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C35",
+      "claim": "The conflict-selective signals depended on the task.",
+      "claim_type": "EXPLICIT",
+      "source": "depended on the task",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparisons between Stroop and Reading tasks shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "b099d882-afbc-4d7a-9448-e0ab9ecb2479",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C36",
+      "claim": "The conflict-selective signals exhibited adaptation over trials.",
+      "claim_type": "EXPLICIT",
+      "source": "and exhibited adaptation over trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Gratton effect analyses shown in the results (Figure 4D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "8fa8ceb0-bd6e-4353-a9c1-0e6ae593f5d7",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C37",
+      "claim": "Conflict responses emerged first in the ACC and subsequently emerged in dlPFC and mFC and finally in OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Conflict responses emerged first in the ACC and subsequently emerged in dlPFC and mFC and finally in OFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "142d5b60-aacc-4954-9129-c867b3b426f1",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C38",
+      "claim": "The observations propose a plausible flow of signals underlying cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations propose a plausible flow of signals underlying cognitive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the latency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "817224a4-9ee5-47ed-9588-e1f54f78667a",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C39",
+      "claim": "Subjects made more errors during incongruent trials in the Stroop task (average error rate: 5 \u00b1 3%, P < 0.001 paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "For the Stroop task, subjects made more errors during incongruent trials (average error rate: 5 \u00b1 3%, P < 0.001 paired t-test), as demonstrated in previous studies (Bugg et al., 2008; Egner and Hirsch, 2005b; Kerns et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "4df21eeb-16bc-45ba-bb23-86d8e2cfbe8e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C40",
+      "claim": "There was no difference in the number of error trials during the Reading task (P = 0.76, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in the number of error trials during the Reading task (P = 0.76, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "57ef274b-22dc-405e-9cfe-f3a7967aa7c9",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C41",
+      "claim": "Subjects' response times during the Stroop task were delayed for incongruent trials compared to congruent trials (average delay: 215 \u00b1 93 ms, P < 0.001, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Stroop, 1935), subjects' response times during the Stroop task were delayed for incongruent trials compared to congruent trials (Figure 1B, average delay: 215 \u00b1 93 ms, P < 0.001, paired t-test, see also Figure 1\u2014figure supplement 1C for individual subject data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "d2c33614-612b-49f2-91f7-c4ae98b1ec14",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C42",
+      "claim": "The reaction time delays were shorter in the Reading task (average delay: 22 \u00b1 31 ms, P = 0.02, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction time delays were shorter in the Reading task (Figure 1C, average delay: 22 \u00b1 31 ms, P = 0.02, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "4188744f-ff48-45a1-94ea-c66592f029ad",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C43",
+      "claim": "Trial history has a strong effect on reaction time (Gratton effect).",
+      "claim_type": "EXPLICIT",
+      "source": "Trial history also has a strong effect on reaction time (known as Gratton effect in the literature [Gratton et al., 1992)]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e05b3630-e55b-4dac-b588-fd0e48d8bf01",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C44",
+      "claim": "Incongruent trials that were preceded by a congruent trial (cI trials) elicited slower reaction times compared to incongruent trials that were preceded by an incongruent trial (iI trials) (average reaction time difference: 34 \u00b1 14 ms, P = 0.03, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Incongruent trials that were preceded by a congruent trial (cI trials) elicited slower reaction times compared to incongruent trials that were preceded by an incongruent trial (iI trials) (Figure 1D, average reaction time difference: 34 \u00b1 14 ms, P = 0.03, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "37b1687b-9362-45d7-8411-ba0408a146eb",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C45",
+      "claim": "A similar Gratton effect was found for iC versus cC trials (average reaction time difference: 72 \u00b1 136ms, P < 0.001, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar Gratton effect was found for iC versus cC trials (Figure 1D, average reaction time difference: 72 \u00b1 136ms, P < 0.001, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "15779007-2a6e-49c1-b134-4a5dfc3276ee",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C46",
+      "claim": "Presentation of the visual stimuli evoked rapid and color/word selective neural responses in visual cortical areas within 200 ms of stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Presentation of the visual stimuli evoked rapid and color/word selective neural responses in visual cortical areas within 200 ms of stimulus onset, as expected from previous studies (e.g. Liu et al., 2009]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "81bac928-b8b0-4bd3-8aa0-28ec89c0b16b",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C47",
+      "claim": "The study focused on 469 electrodes located in areas within frontal lobe which have been previously implicated in executive function: medial frontal cortex (mFC, n = 111), orbitofrontal cortex (OFC, n = 156), dorsolateral prefrontal cortex (dlPFC, n = 168) and the anterior cingulate cortex (ACC, n = 34).",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on 469 electrodes located in areas within frontal lobe which have been previously implicated in executive function: medial frontal cortex (mFC, n = 111), orbitofrontal cortex (OFC, n = 156), dorsolateral prefrontal cortex (dlPFC, n = 168) and the anterior cingulate cortex (ACC, n = 34).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode selection for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "1cc603cf-641f-4e80-b1bc-40bfac84b4f7",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C48",
+      "claim": "An electrode was considered conflict-selective if the F-statistic was greater than a significance threshold computed by a permutation test with P = 0.001 for 50 consecutive milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "An electrode was considered conflict-selective if the F-statistic was greater than a significance threshold computed by a permutation test with P = 0.001 for 50 consecutive milliseconds (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical criteria used for electrode selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0835b38c-2978-4ad3-8483-b8e95645bf17",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C49",
+      "claim": "The latency was defined as the first time of threshold-crossing for conflict selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency was defined as the first time of this threshold-crossing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the definition of latency used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7737db2a-3bb9-4bbb-a0e4-53ea8fa70985",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C50",
+      "claim": "An example electrode from the left Anterior Cingulate Cortex responded differentially between congruent and incongruent trials during the Stroop task.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows an example electrode from the left Anterior Cingulate Cortex that responded differentially between congruent and incongruent trials during the Stroop task.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ae874050-47c9-4832-894f-1a1c9e3ceeb4",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C51",
+      "claim": "The signals from the example ACC electrode were better aligned to the speech onset than to the stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These signals were better aligned to the speech onset than to the stimulus onset, as shown in the response-aligned view (compare Figure 2A\u2013C with Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing stimulus-aligned and response-aligned views in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "3a5e1ccf-6386-4446-b02a-d7f903cc6be2",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C52",
+      "claim": "During the Stroop task, the response-aligned signals from the example ACC electrode were significantly stronger for the incongruent trials compared to the congruent trials (P < 10\u20135, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "During the Stroop task, the response-aligned signals were significantly stronger for the incongruent (brown) trials compared to the congruent (black) trials (Figure 2D, P < 10\u20135, ANOVA)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "423ea59c-e2a3-439f-a9e8-82152d531962",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C53",
+      "claim": "The signals from the example ACC electrode were invariant to the particular word/color combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "and were invariant to the particular word/color combinations (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "fe615516-fec0-4065-a8e6-da997db328cb",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C54",
+      "claim": "Incongruent trials could be discriminated from congruent trials at a latency of 669 \u00b1 31 ms (mean \u00b1 s.e.m.) before the onset of the response for the example ACC electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "Incongruent trials could be discriminated from congruent trials at a latency of 669 \u00b1 31 ms (mean \u00b1 s.e.m.) before the onset of the response (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the latency analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0ba5bdff-0507-40f6-8f25-199926c556cd",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C55",
+      "claim": "The conflict response in the example ACC electrode was specific to the Stroop task; there was a significant interaction between congruency and task (F = 13.5, P = 0.007, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "This conflict response was also specific to the Stroop task; there was a significant interaction between congruency and task (F = 13.5, P = 0.007, ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis comparing Stroop and Reading tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "137f5cb5-f5e3-47e7-acff-b9c481bdb63f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C56",
+      "claim": "The same stimuli did not elicit differential activity during the Reading task for the example ACC electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "The same stimuli did not elicit differential activity during the Reading task (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "627fff2d-ed0c-4d1c-9368-dffb09154328",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C57",
+      "claim": "The maximal gamma power during each incongruent trial was positively correlated with the behavioral reaction times for the example ACC electrode (\u03c1 = 0.25, P = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal gamma power during each incongruent trial (using the average gamma power yielded similar results) was positively correlated with the behavioral reaction times (Figure 2H, \u03c1 = 0.25, P = 0.02).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "493e93d0-14db-4607-8157-679f2d9c36ac",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C58",
+      "claim": "n = 51 conflict selective frontal cortex electrodes were identified during the Stroop task, with contributions from 13 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the aforementioned criteria, we identified n = 51 conflict selective frontal cortex electrodes during the Stroop task, with contributions from 13 subjects (Supplementary files 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the electrode selection criteria applied to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e018d29f-35ad-4162-b019-1ab1509d156e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C59",
+      "claim": "The conflict-selective electrodes were distributed throughout different subregions within frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These electrodes were distributed throughout different subregions within frontal cortex (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "2d053906-201c-44e4-94e1-a093cd162aba",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C60",
+      "claim": "Random shuffling of congruent/incongruent trial labels yielded n = 4.4 \u00b1 0.03 false positive electrodes (mean \u00b1 s.e.m., out of 469 electrodes), corresponding to a false discovery rate (FDR) of q = 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Across our population, we found n = 4.4 \u00b1 0.03 false positive electrodes (mean \u00b1 s.e.m., out of 469 electrodes), which corresponds to a false discovery rate (FDR) of q = 0.01",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on permutation testing to assess false positive rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "bdb9510f-baf6-4e2f-8552-f4130c51bd74",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C61",
+      "claim": "The number of conflict-selective electrodes within each subregion was significantly greater than expected by chance (P < 0.01, all regions).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of conflict-selective electrodes within each subregion was significantly greater than expected by chance (Figure 3B, P < 0.01, all regions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on permutation testing shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7b3d697c-c85d-40d9-bb90-6394ccf04800",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C62",
+      "claim": "Only n = 3 conflict-selective frontal cortex electrodes were observed during the Reading task (out of 469 electrodes), a number that is within the false positive rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with the Stroop task, we only observed n = 3 conflict-selective frontal cortex electrodes during the Reading task (out of 469 electrodes), a number that is within the false positive rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on applying the same electrode selection criteria to the Reading task data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "b6b2de0a-8fa3-4bf1-bb1f-1c1716dc9503",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C63",
+      "claim": "Across the population, there was a significant interaction between the factors congruency and task on the gamma power (\u03c72=9.2, P = 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population, we observed a significant interaction between the factors congruency and task on the gamma power (\u03c72=9.2, P = 0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multilevel model analysis of the population data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cee84f4a-d123-4431-bf5b-7e3ddd58db8b",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C64",
+      "claim": "Gamma power was greater for incongruent compared to congruent trials during the Stroop task (P < 10\u20133) but not during the Reading task (P = 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the single electrode examples, gamma power was greater for incongruent compared to congruent trials, but only during the Stroop task (Figure 4A, Stroop: P < 10\u20133, Reading: P = 0.56).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on multilevel model analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "9a39849e-2e62-4de9-aee8-7a6c5b9c9b13",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C65",
+      "claim": "Behavioral reaction times across the population correlated with the strength of the physiological signals, even after controlling for trial history (P < 10\u20135, sign-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the example electrode in Figure 2, behavioral reaction times across the population correlated with the strength of the physiological signals, even after controlling for trial history (Figure 4C, P < 10\u20135, sign-rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "8c65e837-2e9e-43b4-969d-d7d2099b8a11",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C66",
+      "claim": "Gamma power was greater in cI compared to iI trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of these neural signals also revealed a neural correlate of the behavioral Gratton effect documented in Figure 1D: gamma power was greater in cI compared to iI trials (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of trial history effects shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "ca65749a-ee45-4301-825c-caa72cb9e94c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C67",
+      "claim": "There was a significant interaction between trial history (cI or iI) and task (\u03c72=4.4, P = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the aforementioned multilevel model, we found a significant interaction between trial history (cI or iI) and task (\u03c72=4.4, P = 0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multilevel model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "fb9e4e50-e661-4ba2-9cbb-c84172b841f9",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C68",
+      "claim": "The Gratton effect was stronger in the Stroop task (P < 0.001) than in the Reading task (P = 0.72).",
+      "claim_type": "EXPLICIT",
+      "source": "This Gratton effect was stronger in the Stroop task (P < 0.001) than in the Reading task (P = 0.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multilevel model analysis comparing tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cff63ed7-a527-4cce-b12c-fe71d770cd3c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C69",
+      "claim": "The differences in gamma power between cC versus iC trials were not significant; the interaction was not significant (\u03c72=1.9, P = 0.17).",
+      "claim_type": "EXPLICIT",
+      "source": "These differences were not observed for cC versus iC trials, where the interaction was not significant (\u03c72=1.9, P = 0.17) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on multilevel model analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "679db44e-43e3-4200-a86b-f6c1a837b990",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C70",
+      "claim": "The Gratton effect was present in all four frontal regions and there were no statistically significant differences in the strength of the effect across regions (F = 0.25, P = 0.86, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis was performed after removing stimulus repetition trials. The Gratton effect was present in all four frontal regions and there were no statistically significant differences in the strength of the effect across regions (F = 0.25, P = 0.86, ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ANOVA analysis across regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "2563b154-9406-42f9-a8ac-acd318a27398",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C71",
+      "claim": "The neural Gratton effect during the Stroop task persisted under conditions controlling for reaction time (P = 0.0002, multilevel model).",
+      "claim_type": "EXPLICIT",
+      "source": "The neural Gratton effect during the Stroop task persisted under these controlled conditions (P = 0.0002, multilevel model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ANCOVA analysis controlling for reaction time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "922a0b83-702b-4a2e-826d-578a0eb4b16e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C72",
+      "claim": "The neural Gratton effect persisted when reaction time distributions were matched between conditions by subsampling (P = 0.01, multilevel model).",
+      "claim_type": "EXPLICIT",
+      "source": "We also explicitly ruled out reaction time differences by subsampling to match the reaction time distribution between conditions, with similar results (P = 0.01, multilevel model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis with matched reaction time distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f6d5eeaf-cf2a-4d79-8501-16a24174f104",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C73",
+      "claim": "The neural signals code for an internally perceived level of conflict that exhibits conflict adaptation and correlates with the across-trial variability in reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the neural signals described here code for an internally perceived level of conflict that exhibits conflict adaptation and correlates with the across-trial variability in reaction times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data on Gratton effect and reaction time correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "51600be7-1a62-4253-9e0a-e7ea51941b55",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C74",
+      "claim": "Conflict-selective responses were found in the theta and beta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "We found conflict-selective responses both in the theta and beta bands (see example in Figure 2\u2014figure supplement 2a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of different frequency bands shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "21754e6f-683d-4321-922e-ecbd40b4c268",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C75",
+      "claim": "Across theta and beta frequency bands, there was a significant interaction between Congruency and Task (theta: P < 10\u20135, beta: P < 10\u20134, multilevel model).",
+      "claim_type": "EXPLICIT",
+      "source": "Across theta and beta frequency bands, we also observed a significant interaction between Congruency and Task (theta: P < 10\u20135, beta: P < 10\u20134, multilevel model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multilevel model analysis of theta and beta band data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "440f0916-9977-4b24-bfa4-4b6fc9db6e69",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C76",
+      "claim": "Conflict responses in the theta and beta bands were more prominent during the Stroop task compared to the Reading task.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results reported in the gamma frequency band, conflict responses in the theta and beta bands were more prominent during the Stroop task compared to the Reading task (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "2d371045-c295-4c62-a1b9-fca4a7b7d9a6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C78",
+      "claim": "Power in the theta and beta frequency bands was not correlated with reaction times (theta: P = 0.43, beta: P = 0.09, sign-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, power in the theta and beta frequency bands was not correlated with reaction times (theta: P = 0.43, beta: P = 0.09, sign-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on correlation analysis of theta and beta band data with reaction times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "b44940dc-ae86-4288-b4d4-4a87ca6df27b",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C79",
+      "claim": "50% of the electrodes demonstrated significant theta-gamma coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that 50% of the electrodes demonstrated significant theta-gamma coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cross-frequency coupling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "d3a389a1-9f91-4f15-9f01-fac86ed96fd4",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C80",
+      "claim": "The strength of theta-gamma coupling was not different between congruent and incongruent trials across the population of conflict-selective electrodes (P = 0.52, sign-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the strength of this coupling was not different between congruent and incongruent trials across the population of conflict-selective electrodes (P = 0.52, sign-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cross-frequency coupling analysis comparing congruent and incongruent trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "10e2a38c-4567-417f-a8a0-b6745a8e818d",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C81",
+      "claim": "An example self-corrected trial from the ACC electrode showed increased gamma power after onset of the erroneous response.",
+      "claim_type": "EXPLICIT",
+      "source": "An example self-corrected trial from the ACC electrode shown previously is illustrated in Figure 5A. The subject initially made an incorrect response (green), which was rapidly followed with the correct response (red). Increased gamma power was observed after onset of the erroneous response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "401eab3d-d129-4344-ba52-7788c42ca3b2",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C82",
+      "claim": "The following corrected behavioral response exhibited no post-response signal in the example self-corrected trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the following corrected behavioral response exhibited no such post-response signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the example trial shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "a0f51061-acb6-48e7-96cb-451641c14154",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C83",
+      "claim": "Error-monitoring signals were not observed in correct incongruent trials for the example ACC electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these error-monitoring signals were not observed in correct incongruent trials (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with correct trial data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "25cae00a-13f7-4e3d-a086-4514cd012cde",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C84",
+      "claim": "The error-monitoring signals were consistent across the n = 11 self-corrected trials for the example subject (P = 0.001, signed rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "and were consistent across the n = 11 self-corrected trials for this subject (Figure 5B, P = 0.001, signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of self-corrected trials shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "84b7e0f9-752e-448c-a00c-d361e964ba68",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C85",
+      "claim": "Of n = 7 conflict-signaling electrodes with sufficient self-correction trials, n = 5 electrodes showed evidence of error monitoring (P < 0.05, sign-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Of those n = 7 electrodes, n = 5 electrodes showed evidence of error monitoring (Figure 5E, P < 0.05, sign-rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of error monitoring signals shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e59f28c9-23d3-4643-bc53-53c5f820058f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C86",
+      "claim": "The same electrodes that respond to conflict leading up to the behavioral response can also show post-response error monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these results highlight that the same electrodes that respond to conflict leading up to the behavioral response can also show post-response error monitoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the error monitoring data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "1ad06220-53df-4f82-b904-33448c3f3618",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C87",
+      "claim": "The relative latencies of conflict responses were significantly different across the regions (P = 0.01, permutation test).",
+      "claim_type": "EXPLICIT",
+      "source": "The relative latencies were significantly different across the regions (P = 0.01, permutation test, post-hoc testing was controlled for multiple comparisons using the Benjamin-Hochberg procedure, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of latency differences between regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0446d4bd-2384-47dc-8acb-65b1df39c8f6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C88",
+      "claim": "Conflict responses in the ACC preceded those in all the other frontal lobe regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conflict responses in the ACC preceded those in all the other frontal lobe regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency comparisons shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "c3485689-e1b0-4883-9a20-6aa9c7ed4f4f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C89",
+      "claim": "Conflict responses in dlPFC emerged 207 \u00b1 40 ms after ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "followed 207 \u00b1 40 ms later by dorsolateral prefrontal cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "5ff4d647-a50a-4ff0-b3f3-9ce5dc15f779",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C90",
+      "claim": "Conflict responses in mFC emerged 388 \u00b1 83 ms after ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "and 388 \u00b1 83 ms later by medial frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "14b12d8b-27a5-441e-b550-9891d9ceb385",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C91",
+      "claim": "Signals in orbitofrontal cortex emerged 319 \u00b1 78 ms after dlPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals in orbitofrontal cortex emerged 319 \u00b1 78 ms after dlPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e87b9067-1a7e-4275-bd19-2c8f20712be2",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C92",
+      "claim": "The entire processing cascade took approximately 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This entire processing cascade took approximately 500 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on summing the latency differences between regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f0b78450-891f-433a-8b53-58d65cd806e6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C93",
+      "claim": "Subjects' behavioral reaction times to incongruent trials were 1105 \u00b1 49 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, subjects' behavioral reaction times to incongruent trials were 1105 \u00b1 49 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "92249cdc-46f7-4c37-b29d-d2ce82c75338",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C94",
+      "claim": "The latency difference between ACC and dlPFC is based on 6 electrode pairs: one ACC electrode and six simultaneously recorded dlPFC electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency difference between ACC and dlPFC is based on 6 electrode pairs: one ACC electrode and six simultaneously recorded dlPFC electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data underlying the ACC-dlPFC latency comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "9b6a871d-c9f0-4bbd-8418-199a3e590c6b",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C95",
+      "claim": "The results suggest a temporal hierarchy of cognitive control mechanisms culminating in speech onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a temporal hierarchy of cognitive control mechanisms culminating in speech onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the latency data showing sequential activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "71513f79-5dfc-479d-8e88-c530b47838ca",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C96",
+      "claim": "Previous physiological and functional neuroimaging studies have documented the involvement of multiple frontal cortex areas in the Stroop or similar tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous physiological and functional neuroimaging studies have documented the involvement of multiple of these frontal cortex areas in the Stroop or similar tasks (Botvinick et al., 1999; Kolling et al., 2012; MacDonald, 2000; Niendam et al., 2012; Oehrn et al., 2014; Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e24301d0-195e-49d9-9b06-bb9a6376adc7",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C97",
+      "claim": "The role of the OFC in cognitive control during Stroop-like tasks has not been reported previously, possibly because of technical challenges in neuroimaging near this area.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of the OFC in cognitive control during Stroop-like tasks has not been reported previously, possibly because of technical challenges in neuroimaging near this area (Weiskopf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the OFC finding and speculation about why it hasn't been reported before, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e98f98ef-84a5-4b9c-b94c-39de80661f0c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C98",
+      "claim": "The neural correlates of behavioral adaptation (Gratton effect) were observed in the ACC, consistent with prior studies based on human single neuron recordings, neuroimaging and behavioral effects of ACC resection.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural correlates of behavioral adaptation (Gratton effect [Gratton et al., 1992]) were observed in the ACC, consistent with prior studies based on human single neuron recordings (Sheth et al., 2012), neuroimaging (Botvinick et al., 1999; Kerns, 2006) and also in accordance with the behavioral effects of ACC resection (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "af9406f5-c60e-4cc1-bb45-011391ada5ac",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C99",
+      "claim": "Conflict responses throughout the other frontal cortex regions also demonstrated the neural Gratton effect, suggesting a more distributed network involved in across-trial adaptation than previously hypothesized.",
+      "claim_type": "EXPLICIT",
+      "source": "Conflict responses throughout the other frontal cortex regions also demonstrated the neural Gratton effect, suggesting a more distributed network involved in across-trial adaptation than previously hypothesized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Gratton effect data across multiple regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "380e1f6d-70b4-41b4-9a73-5a5caf3b6f85",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C100",
+      "claim": "The increased activity in cI trials compared to iI trials is consistent with neuroimaging studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While the increased activity in cI trials compared to iI trials is consistent with neuroimaging studies (Botvinick et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "d54c5b88-9b35-4d4b-8914-1400d34a3a89",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C101",
+      "claim": "Single neuron recordings in a different Stroop-like task report the opposite relationship (iI > cI).",
+      "claim_type": "EXPLICIT",
+      "source": "single neuron recordings in a different Stroop-like task report the opposite relationship (iI > cI) (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "82ec602b-5194-4382-a9dd-b37bc63a0263",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C102",
+      "claim": "Single unit recording in macaque ACC typically find error monitoring signals but not conflict-selective responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Single unit recording in macaque ACC typically find error monitoring signals but not conflict-selective responses (Cole et al., 2009; Emeric et al., 2010; Ito et al., 2003; Taylor et al., 2006), see however (Ebitz and Platt, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "5c31dfb8-a12d-4a16-aeb5-49fcea25dc13",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C103",
+      "claim": "Human neuroimaging studies report both error monitoring and conflict detection signals in ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas human neuroimaging studies report both types of signals in ACC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from neuroimaging studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "a306c366-63fb-4bf2-b49d-2b8e78f25501",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C104",
+      "claim": "There has been significant debate concerning whether action monitoring and conflict detection represent distinct processes.",
+      "claim_type": "EXPLICIT",
+      "source": "There has been significant debate concerning whether action monitoring and conflict detection represent distinct processes (Carter et al., 1998; Carter et al., 2000; Nee et al., 2011; Swick and Turken, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work showing debate in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "47b38378-8ebb-44b0-8025-0ca6bb188d11",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C105",
+      "claim": "A recent human intracranial study has found error signals in supplementary motor area and medial frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent human intracranial study has found error signals in supplementary motor area and medial frontal cortex (Bonini et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "481ab765-c045-4e13-88dc-81de2e171ff0",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C106",
+      "claim": "A human single unit study reported conflict signals in ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "and a human single unit study reported conflict signals in ACC (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "6353b075-acca-498c-ab90-7d6bde4d5fb6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C107",
+      "claim": "The current work demonstrates the coexistence of both error signals and conflict signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The current work demonstrates the coexistence of both error signals and conflict signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from the error monitoring analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "b23f16c7-a916-499a-ba85-543ec6015506",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C108",
+      "claim": "The relative timing of the conflict and error signals surrounding the neural responses confirms computational predictions based on a connectionist architecture to explain the mechanisms of conflict and scalp EEG studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the relative timing of the conflict and error signals surrounding the neural responses confirms computational predictions based on a connectionist architecture to explain the mechanisms of conflict (Yeung et al., 2004) and scalp EEG studies (Hughes and Yeung, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "25d4a7d1-c317-45b3-ac78-9b52c3c8a695",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C109",
+      "claim": "The results are consistent with computational models suggesting that conflict and error signals may represent a general error-likelihood prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with computational models suggesting that these signals may represent a general error-likelihood prediction, of which conflict and error detection are special cases (Brown and Braver, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of computational models, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "2d98ab32-0995-4baf-be0b-50d21d9c8ca6",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C110",
+      "claim": "It has been suggested that ACC and supplementary eye field neurons in macaque monkeys respond to specific stimulus and/or behavioral combinations but are not directly modulated by conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that ACC and supplementary eye field neurons in macaque monkeys respond to specific stimulus and/or behavioral combinations but are not directly modulated by conflict (Cole et al., 2009; Nakamura et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "09ad24ce-5a35-46b7-beda-5a69ba86b817",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C111",
+      "claim": "At the level of the intracranial field potentials, the modulation of conflict trials could not be ascribed to specific stimulus or behavioral responses and were also task dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of the intracranial field potentials reported here, the modulation of conflict trials observed in the four frontal cortex regions could not be ascribed to specific stimulus or behavioral responses (e.g. Figure 2G) and were also task dependent (compare Figure 2A versus 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "a3b5c43c-8c95-408a-a422-fdf6af4d52f0",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C112",
+      "claim": "Previous work has suggested differential roles for distinct oscillatory components of the local field potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested differential roles for distinct oscillatory components of the local field potential (Cavanagh and Frank, 2014; Kahana et al., 2001; Ullsperger et al., 2014; von Stein and Sarnthein, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "25c3fb7f-b062-48db-9fa3-6b6ef0eb3f8f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C113",
+      "claim": "Previous scalp EEG recordings have demonstrated that conflict and/or error trials elicit increased theta power.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous scalp EEG recordings (Cavanagh and Frank, 2014; Ullsperger et al., 2014; van Driel et al., 2015) have demonstrated that conflict and/or error trials elicit increased theta power",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "07189bda-ef6a-4e05-962a-2fb4843d2c48",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C114",
+      "claim": "The decrease in beta power observed in this study is consistent with previous studies that correlate frontal cortex activation with desynchronization in the beta band and increased synchronization in the gamma bands.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a decrease in beta power, which is consistent with previous studies that correlate frontal cortex activation with desynchronization in the beta band and increased synchronization in the gamma bands (Crone et al., 1998a; Crone et al., 1998b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "14ec46a3-0c97-497a-9ca7-58dfec50d7bf",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C115",
+      "claim": "One possibility is that lower frequency bands reflect the summed dendritic input of the nearby neural population and can act as channels for communication.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that lower frequency bands reflect the summed dendritic input of the nearby neural population (Logothetis et al., 2001; Mitzdorf, 1987) and can act as channels for communication (Cavanagh and Frank, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of different frequency bands, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "9c6dd100-b8cc-4d61-91ee-fb4401664847",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C116",
+      "claim": "Higher frequency bands represent the population spiking rate.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas higher frequency bands represent the population spiking rate (Buzsaki et al., 2012; Ray and Maunsell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0dc3a982-9bcc-49b9-9107-af796991af7a",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C117",
+      "claim": "The theta desynchronization observed could reflect a reduction of inputs, leading to inhibition of the prepotent but erroneous response.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, we speculate that the theta desynchronization we observe could reflect a reduction of inputs, leading to inhibition of the prepotent but erroneous response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional role of theta desynchronization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "dffac48a-658d-4bad-9a25-9ad9adc7d363",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C118",
+      "claim": "Conflict responses in the ACC lead the dlPFC by ~200 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing pairs of simultaneously recorded electrodes, we found that conflict responses in the ACC lead the dlPFC by ~200 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements from simultaneously recorded electrodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7956d649-ffba-4d4f-92f4-1a3f1c3cc31f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C119",
+      "claim": "Medial frontal cortex is anatomically close and extensively connected to the ACC, and the two regions are often grouped together.",
+      "claim_type": "EXPLICIT",
+      "source": "Medial frontal cortex is anatomically close and extensively connected to the ACC, and the two regions are often grouped together (Cavanagh et al., 2009; Ridderinkhof et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "8716c0bb-edf5-493e-a36e-169da93becb2",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C120",
+      "claim": "Conflict responses in the mFC trail the ACC by hundreds of milliseconds, suggesting an important distinction between the two regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, conflict responses in the mFC trail the ACC by hundreds of milliseconds, suggesting an important distinction between the two regions (Rushworth et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements and is an interpretation of the data, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "889e0c67-74f6-4b68-8242-7a699330e9b2",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C121",
+      "claim": "The relative latency measurements place the OFC at the bottom of the cascade of conflict processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative latency measurements place the OFC at the bottom of this cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on latency measurements showing OFC activates last.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "2b52d48d-4668-4b13-9096-ce9d27349f42",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C122",
+      "claim": "The hierarchical cascade of processes is consistent with predictions from mechanistic models of cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "The hierarchical cascade of processes described here is consistent with predictions from mechanistic models of cognitive control (e.g. see Figure 2 in Shenhav et al, Neuron 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of computational models, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "844a2013-7035-48ac-864c-78284f1ac8e7",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C123",
+      "claim": "Stimulus related signals are evident along the ventral visual stream early on and feed onto frontal cortex, where ACC activity precedes activity in other frontal regions, followed by dlPFC, and finally mFC, and OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, stimulus related signals are evident along the ventral visual stream early on and feed onto frontal cortex, where we find that ACC activity precedes activity in other frontal regions, followed by dlPFC, and finally mFC, and OFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the temporal sequence of activation based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "6a8786c8-8311-48b2-85c9-437b332d8653",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C124",
+      "claim": "At least in the ACC, the temporal profile of conflict responses observed is similar to responses from human single unit recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, at least in the ACC, the temporal profile of conflict responses we observed is similar to responses from human single unit recordings (Sheth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous work, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f8fadbaa-0024-4c77-bee4-e175af518089",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C125",
+      "claim": "There are monosynaptic connections that link the four frontal regions, yet it takes 100\u2013200 ms to detect the relative activation between these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "There are monosynaptic connections that link these four regions within frontal cortex and yet, it takes 100\u2013200 ms to detect the relative activation between these areas (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the timing of activation relative to anatomical connectivity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cf83d91a-7c5f-4d58-97c3-ab633ce22d8a",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C126",
+      "claim": "The current study provides initial steps to elucidate not only which brain areas participate in cognitive control on a trial-by-trial basis but also their relative interactions and differential roles.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study provides initial steps to elucidate not only which brain areas participate in cognitive control on a trial-by-trial basis but also their relative interactions and differential roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "17fdb5db-18d6-4be8-b9f3-88e5b8bee23e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "claim_id": "C127",
+      "claim": "The relative latency measurements and correlations between neural activity and reaction time provide a framework to constrain theories of cognitive control, and propose a plausible flow of conflict responses through frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative latency measurements and correlations between neural activity and reaction time provide a framework to constrain theories of cognitive control, and propose a plausible flow of conflict responses through frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the implications of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Behavioral performance in the Stroop task showed classic conflict effects: subjects made more errors (5\u00b13%, P<0.001) and had longer reaction times (215\u00b193 ms delay, P<0.001) for incongruent vs. congruent trials. The Reading task showed minimal conflict effects. Trial history effects (Gratton effect) were also observed, with cI trials showing slower reaction times than iI trials (34\u00b114 ms, P=0.03).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 provide converging behavioral evidence with appropriate statistical tests (paired t-tests, ANOVA) showing significant effects. The results replicate well-established Stroop phenomena and are consistent with cited prior work. Sample size (n=15 subjects) is reasonable for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Intracranial recordings from 1397 electrodes in 15 subjects identified 51 conflict-selective electrodes in frontal cortex during the Stroop task (ACC: n=4, mFC: n=9, dlPFC: n=24, OFC: n=14), significantly above chance (FDR q=0.01). Only 3 conflict-selective electrodes were found during the Reading task, within the false positive rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C62 describe rigorous electrode selection using permutation testing (P=0.001, 50ms threshold) with appropriate false discovery rate control. The task-specificity (51 electrodes in Stroop vs. 3 in Reading) strongly supports that these signals reflect cognitive control rather than general task engagement. Methods are clearly described and statistically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "55c93924-298c-419f-80da-cb5bf270af0c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Example ACC electrode showed conflict-selective responses better aligned to speech onset than stimulus onset, with significantly stronger signals for incongruent vs. congruent trials (P<10\u207b\u2075). Responses were invariant to specific word/color combinations, task-specific (interaction F=13.5, P=0.007), and correlated with reaction times (\u03c1=0.25, P=0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 provide detailed single-electrode evidence supporting the main findings. The response-aligned analysis appropriately controls for reaction time differences. Task-specificity and stimulus-invariance strengthen the interpretation that signals reflect conflict processing rather than sensory or motor confounds. Statistical tests are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "0db9d9c8-c607-4aba-86b3-2940676f7c08",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Population analysis using multilevel models showed significant interaction between congruency and task (\u03c7\u00b2=9.2, P=0.002), with gamma power greater for incongruent vs. congruent trials during Stroop (P<10\u207b\u00b3) but not Reading (P=0.56). Neural signals correlated with reaction times across the population (P<10\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 employ appropriate multilevel modeling to account for within-subject and across-subject variance. The significant interaction and task-specificity provide strong evidence for conflict-related processing. The correlation with reaction times links neural activity to behavior. Statistical approach is rigorous and well-suited to the nested data structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "7d0eb92e-5687-4253-a36e-d767fd771b64",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neural signals showed a Gratton effect: gamma power was greater for cI vs. iI trials with significant interaction between trial history and task (\u03c7\u00b2=4.4, P=0.03), stronger in Stroop (P<0.001) than Reading (P=0.72). This effect persisted after controlling for reaction time (P=0.0002) and with matched RT distributions (P=0.01). No effect was found for cC vs. iC trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 demonstrate neural correlates of behavioral adaptation with appropriate controls for reaction time confounds (ANCOVA, matched distributions). The specificity to incongruent trials (cI vs. iI but not cC vs. iC) and task-dependence strengthen the interpretation. Statistical controls are thorough and address potential confounds. The finding extends prior work by showing distributed Gratton effects across frontal regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e1a6174f-550d-4203-9ebd-c7f179fc5724",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conflict-selective responses were observed in theta and beta bands with significant congruency\u00d7task interactions (theta: P<10\u207b\u2075, beta: P<10\u207b\u2074), more prominent during Stroop than Reading. Unlike gamma, theta and beta power decreased during incongruent trials and did not correlate with reaction times (theta: P=0.43, beta: P=0.09).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76, C78 show frequency-specific effects with appropriate statistical testing. The dissociation between frequency bands (gamma correlates with RT, theta/beta do not) suggests different functional roles. However, the interpretation of these differences remains speculative. The findings are descriptive but well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "c346de74-893d-4124-8352-afc24b6b71be",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "50% of electrodes showed significant theta-gamma coupling, but coupling strength did not differ between congruent and incongruent trials across conflict-selective electrodes (P=0.52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 report cross-frequency coupling analysis with appropriate statistical testing. The null result (no difference between conditions) is clearly stated. While the presence of coupling is consistent with prior work, its lack of modulation by conflict is informative but limits mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of self-corrected trials showed increased gamma power after erroneous responses but not after corrected responses. Of 7 conflict-signaling electrodes with sufficient trials, 5 showed evidence of error monitoring (P<0.05), demonstrating that the same electrodes can show both pre-response conflict signals and post-response error monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C86 provide interesting evidence for co-localization of conflict and error signals, but the analysis is limited by small sample size (n=7 electrodes from 2 subjects, with only 10-11 trials per electrode). While the pattern is consistent and statistically significant for individual electrodes, the generalizability is uncertain. The finding is valuable but requires replication with larger samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Latency analysis of simultaneously recorded electrode pairs revealed a temporal hierarchy: conflict responses emerged first in ACC, followed by dlPFC (207\u00b140 ms later), mFC (388\u00b183 ms after ACC), and OFC (319\u00b178 ms after dlPFC). The entire cascade took ~500 ms, well before the average behavioral response (1105\u00b149 ms). Regional differences were statistically significant (P=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C37, C87-C95 present the key temporal hierarchy finding using appropriate within-subject pairwise comparisons to control for individual differences. The use of simultaneously recorded electrodes is methodologically sound. However, the ACC-dlPFC comparison is based on only 6 electrode pairs from one ACC electrode, which is a significant limitation. The statistical significance and consistency with theoretical predictions support the finding, but the limited sampling from ACC (n=4 total conflict-selective electrodes) warrants caution in generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The temporal sequence of conflict responses (ACC\u2192dlPFC\u2192mFC\u2192OFC) suggests a temporal hierarchy for cognitive control in human cortex, consistent with mechanistic models. This provides a framework to constrain theories of cognitive control and proposes a plausible flow of conflict signals through frontal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C38, C95, C122, C123, C126, C127 present the main interpretive conclusion based on the latency data. The interpretation is reasonable and consistent with computational models (supported by citations). However, the causal directionality is inferred from timing rather than demonstrated through perturbation. The conclusion is appropriately qualified as 'suggesting' and 'proposing' rather than definitively establishing causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cfee25a6-870a-4001-9e6e-dff66edc2981",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Conflict-selective activity was observed throughout ACC, mFC, dlPFC, and OFC. Neural responses increased for incongruent vs. congruent trials, correlated with reaction times, depended on task, and exhibited adaptation over trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 summarize the main empirical findings that are well-supported by the detailed analyses in other claim groups. These provide converging evidence linking neural signals to cognitive control through multiple criteria (conflict-selectivity, RT correlation, task-dependence, adaptation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "6239b7f3-0456-4d82-b462-061c2aa6153f",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The role of OFC in cognitive control during Stroop-like tasks has not been reported previously, possibly due to technical challenges in neuroimaging near this area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 makes a novelty claim about OFC involvement. The statement is appropriately qualified ('possibly') and supported by citation regarding technical limitations of fMRI in OFC. The finding of conflict-selective OFC responses is novel and well-documented in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "e57a4aa2-e147-4301-8f9e-77bc8c5c76a5",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Neural Gratton effects were observed in ACC (consistent with prior work) and throughout other frontal regions, suggesting a more distributed network for across-trial adaptation than previously hypothesized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 extend prior findings by showing distributed Gratton effects. The ACC finding replicates prior work (appropriately cited), while the extension to other regions is novel. The interpretation of a 'more distributed network' is reasonable given the data, though the functional significance of this distribution remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "08611559-f9b7-40a7-a451-b4d764badae4",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrates coexistence of conflict and error signals, with timing consistent with computational predictions and EEG studies. Results are consistent with models suggesting these signals represent general error-likelihood prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 integrate the error monitoring findings with computational models. The consistency with prior predictions strengthens the interpretation, though the limited sample size for error trials (noted in C81-C86 evaluation) means this conclusion should be considered preliminary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "cf5efc3a-e127-47e4-b327-5099a0d13e0c",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "At the level of intracranial field potentials, conflict modulation could not be ascribed to specific stimulus or behavioral responses and was task-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 addresses an important alternative explanation (stimulus/response specificity) with appropriate evidence from Figure 2G showing invariance to word/color combinations and task-dependence. This strengthens the interpretation that signals reflect abstract conflict rather than specific sensory-motor associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "3cdb599e-7eba-478c-b73a-a1c5f4754f97",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Decreased beta power during conflict is consistent with previous studies correlating frontal cortex activation with beta desynchronization and gamma synchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C114 relates the beta findings to prior work with appropriate citations. The consistency with established patterns of beta/gamma modulation during cortical activation supports the validity of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "91e5347f-7f59-4209-8922-a00607b6cc1b",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ACC leads dlPFC by ~200 ms. mFC trails ACC by hundreds of milliseconds despite anatomical proximity, suggesting functional distinction. OFC is at the bottom of the processing cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118, C120, C121 highlight specific regional comparisons from the latency analysis. The ACC-mFC distinction is particularly interesting given their anatomical proximity. The interpretation is supported by the data and appropriately qualified, though limited by the small number of ACC electrodes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    },
+    {
+      "id": "f7ab482c-196c-440e-827e-c87d94afedd3",
+      "content_id": "8b638c47-d754-4bb3-8b40-7342adaab947",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Despite monosynaptic connections between frontal regions, it takes 100-200 ms to detect relative activation between areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C125 raises an interesting observation about the discrepancy between anatomical connectivity and functional timing. However, the interpretation is complicated by the fact that field potential latencies reflect population dynamics rather than direct synaptic transmission times. The claim conflates anatomical connectivity with functional processing time, which may involve recurrent processing, integration, and threshold effects. The observation is valid but the implied puzzle may reflect methodological considerations rather than a biological mystery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:57.099214Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "817224a4-9ee5-47ed-9588-e1f54f78667a",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "4df21eeb-16bc-45ba-bb23-86d8e2cfbe8e",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "57ef274b-22dc-405e-9cfe-f3a7967aa7c9",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "d2c33614-612b-49f2-91f7-c4ae98b1ec14",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "4188744f-ff48-45a1-94ea-c66592f029ad",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "e05b3630-e55b-4dac-b588-fd0e48d8bf01",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "37b1687b-9362-45d7-8411-ba0408a146eb",
+      "result_id": "5e98a133-9506-4c8a-ab4f-7ec8df03f560"
+    },
+    {
+      "claim_id": "e5aa7fa5-f2bc-4aba-b243-3f57d4384fce",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "81bac928-b8b0-4bd3-8aa0-28ec89c0b16b",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "1cc603cf-641f-4e80-b1bc-40bfac84b4f7",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "0835b38c-2978-4ad3-8483-b8e95645bf17",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "493e93d0-14db-4607-8157-679f2d9c36ac",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "e018d29f-35ad-4162-b019-1ab1509d156e",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "2d053906-201c-44e4-94e1-a093cd162aba",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "bdb9510f-baf6-4e2f-8552-f4130c51bd74",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "7b3d697c-c85d-40d9-bb90-6394ccf04800",
+      "result_id": "80b1bc79-ca82-4838-b46a-2f5ef1470aba"
+    },
+    {
+      "claim_id": "7737db2a-3bb9-4bbb-a0e4-53ea8fa70985",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "ae874050-47c9-4832-894f-1a1c9e3ceeb4",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "3a5e1ccf-6386-4446-b02a-d7f903cc6be2",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "423ea59c-e2a3-439f-a9e8-82152d531962",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "fe615516-fec0-4065-a8e6-da997db328cb",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "0ba5bdff-0507-40f6-8f25-199926c556cd",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "137f5cb5-f5e3-47e7-acff-b9c481bdb63f",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "627fff2d-ed0c-4d1c-9368-dffb09154328",
+      "result_id": "55c93924-298c-419f-80da-cb5bf270af0c"
+    },
+    {
+      "claim_id": "b6b2de0a-8fa3-4bf1-bb1f-1c1716dc9503",
+      "result_id": "0db9d9c8-c607-4aba-86b3-2940676f7c08"
+    },
+    {
+      "claim_id": "cee84f4a-d123-4431-bf5b-7e3ddd58db8b",
+      "result_id": "0db9d9c8-c607-4aba-86b3-2940676f7c08"
+    },
+    {
+      "claim_id": "9a39849e-2e62-4de9-aee8-7a6c5b9c9b13",
+      "result_id": "0db9d9c8-c607-4aba-86b3-2940676f7c08"
+    },
+    {
+      "claim_id": "8c65e837-2e9e-43b4-969d-d7d2099b8a11",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "ca65749a-ee45-4301-825c-caa72cb9e94c",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "fb9e4e50-e661-4ba2-9cbb-c84172b841f9",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "cff63ed7-a527-4cce-b12c-fe71d770cd3c",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "679db44e-43e3-4200-a86b-f6c1a837b990",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "2563b154-9406-42f9-a8ac-acd318a27398",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "922a0b83-702b-4a2e-826d-578a0eb4b16e",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "f6d5eeaf-cf2a-4d79-8501-16a24174f104",
+      "result_id": "7d0eb92e-5687-4253-a36e-d767fd771b64"
+    },
+    {
+      "claim_id": "51600be7-1a62-4253-9e0a-e7ea51941b55",
+      "result_id": "e1a6174f-550d-4203-9ebd-c7f179fc5724"
+    },
+    {
+      "claim_id": "21754e6f-683d-4321-922e-ecbd40b4c268",
+      "result_id": "e1a6174f-550d-4203-9ebd-c7f179fc5724"
+    },
+    {
+      "claim_id": "440f0916-9977-4b24-bfa4-4b6fc9db6e69",
+      "result_id": "e1a6174f-550d-4203-9ebd-c7f179fc5724"
+    },
+    {
+      "claim_id": "2d371045-c295-4c62-a1b9-fca4a7b7d9a6",
+      "result_id": "e1a6174f-550d-4203-9ebd-c7f179fc5724"
+    },
+    {
+      "claim_id": "b44940dc-ae86-4288-b4d4-4a87ca6df27b",
+      "result_id": "c346de74-893d-4124-8352-afc24b6b71be"
+    },
+    {
+      "claim_id": "d3a389a1-9f91-4f15-9f01-fac86ed96fd4",
+      "result_id": "c346de74-893d-4124-8352-afc24b6b71be"
+    },
+    {
+      "claim_id": "10e2a38c-4567-417f-a8a0-b6745a8e818d",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "401eab3d-d129-4344-ba52-7788c42ca3b2",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "a0f51061-acb6-48e7-96cb-451641c14154",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "25cae00a-13f7-4e3d-a086-4514cd012cde",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "84b7e0f9-752e-448c-a00c-d361e964ba68",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "e59f28c9-23d3-4643-bc53-53c5f820058f",
+      "result_id": "103e2e2d-c0cc-4d4c-8af3-1985c92ab85e"
+    },
+    {
+      "claim_id": "59b527ad-7e42-4aa6-b7fc-4bf1c275db1e",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "ea75da0c-c8f0-4483-b0ad-32f712b77201",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "07498383-5408-46d3-b19a-bac115368df8",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "8fa8ceb0-bd6e-4353-a9c1-0e6ae593f5d7",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "1ad06220-53df-4f82-b904-33448c3f3618",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "0446d4bd-2384-47dc-8acb-65b1df39c8f6",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "c3485689-e1b0-4883-9a20-6aa9c7ed4f4f",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "5ff4d647-a50a-4ff0-b3f3-9ce5dc15f779",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "14b12d8b-27a5-441e-b550-9891d9ceb385",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "e87b9067-1a7e-4275-bd19-2c8f20712be2",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "f0b78450-891f-433a-8b53-58d65cd806e6",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "92249cdc-46f7-4c37-b29d-d2ce82c75338",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "9b6a871d-c9f0-4bbd-8418-199a3e590c6b",
+      "result_id": "4b7f2648-c03d-45c6-8500-9add1ce3e8e5"
+    },
+    {
+      "claim_id": "0fceab72-98da-4ba4-97a0-468fdcf9d640",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "142d5b60-aacc-4954-9129-c867b3b426f1",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "9b6a871d-c9f0-4bbd-8418-199a3e590c6b",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "2b52d48d-4668-4b13-9096-ce9d27349f42",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "844a2013-7035-48ac-864c-78284f1ac8e7",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "cf83d91a-7c5f-4d58-97c3-ab633ce22d8a",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "17fdb5db-18d6-4be8-b9f3-88e5b8bee23e",
+      "result_id": "f4aac4fa-ad18-4b15-98cb-24f8c286e099"
+    },
+    {
+      "claim_id": "7c3cd840-8c10-4e13-b103-73ac8d107001",
+      "result_id": "cfee25a6-870a-4001-9e6e-dff66edc2981"
+    },
+    {
+      "claim_id": "c159cc8e-f75e-431d-b62b-a0b43b9a3365",
+      "result_id": "cfee25a6-870a-4001-9e6e-dff66edc2981"
+    },
+    {
+      "claim_id": "cda0c881-1c6e-4e74-9072-ed9bcffeabed",
+      "result_id": "cfee25a6-870a-4001-9e6e-dff66edc2981"
+    },
+    {
+      "claim_id": "f5da9496-a26c-4f11-b6e7-8917d9a275f4",
+      "result_id": "cfee25a6-870a-4001-9e6e-dff66edc2981"
+    },
+    {
+      "claim_id": "b099d882-afbc-4d7a-9448-e0ab9ecb2479",
+      "result_id": "cfee25a6-870a-4001-9e6e-dff66edc2981"
+    },
+    {
+      "claim_id": "e24301d0-195e-49d9-9b06-bb9a6376adc7",
+      "result_id": "6239b7f3-0456-4d82-b462-061c2aa6153f"
+    },
+    {
+      "claim_id": "e98f98ef-84a5-4b9c-b94c-39de80661f0c",
+      "result_id": "e57a4aa2-e147-4301-8f9e-77bc8c5c76a5"
+    },
+    {
+      "claim_id": "af9406f5-c60e-4cc1-bb45-011391ada5ac",
+      "result_id": "e57a4aa2-e147-4301-8f9e-77bc8c5c76a5"
+    },
+    {
+      "claim_id": "6353b075-acca-498c-ab90-7d6bde4d5fb6",
+      "result_id": "08611559-f9b7-40a7-a451-b4d764badae4"
+    },
+    {
+      "claim_id": "b23f16c7-a916-499a-ba85-543ec6015506",
+      "result_id": "08611559-f9b7-40a7-a451-b4d764badae4"
+    },
+    {
+      "claim_id": "25d4a7d1-c317-45b3-ac78-9b52c3c8a695",
+      "result_id": "08611559-f9b7-40a7-a451-b4d764badae4"
+    },
+    {
+      "claim_id": "09ad24ce-5a35-46b7-beda-5a69ba86b817",
+      "result_id": "cf5efc3a-e127-47e4-b327-5099a0d13e0c"
+    },
+    {
+      "claim_id": "07189bda-ef6a-4e05-962a-2fb4843d2c48",
+      "result_id": "3cdb599e-7eba-478c-b73a-a1c5f4754f97"
+    },
+    {
+      "claim_id": "dffac48a-658d-4bad-9a25-9ad9adc7d363",
+      "result_id": "91e5347f-7f59-4209-8922-a00607b6cc1b"
+    },
+    {
+      "claim_id": "8716c0bb-edf5-493e-a36e-169da93becb2",
+      "result_id": "91e5347f-7f59-4209-8922-a00607b6cc1b"
+    },
+    {
+      "claim_id": "889e0c67-74f6-4b68-8242-7a699330e9b2",
+      "result_id": "91e5347f-7f59-4209-8922-a00607b6cc1b"
+    },
+    {
+      "claim_id": "f8fadbaa-0024-4c77-bee4-e175af518089",
+      "result_id": "f7ab482c-196c-440e-827e-c87d94afedd3"
+    }
+  ],
+  "comparisons": []
+}

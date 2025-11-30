@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "IMP3 directly interacts with ULBP2 mRNA as demonstrated by RNA affinity purification followed by mass spectrometry. IMP3 was identified as the top hit with highest coverage, most unique peptides, and most total peptides when proteins bound to biotinylated ULBP2 3'UTR were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C43 are well-supported by the RNA affinity purification methodology (C98-C100) and mass spectrometry data shown in Figure 1. The experimental approach is sound: biotinylated RNA was used to pull down binding proteins, and IMP3 was identified as the top candidate by multiple metrics. The methodological details and controls (non-specific band at 120 kDa noted) strengthen confidence in the specificity of the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C102"
+    ],
+    "result": "Knockdown of IMP3 in RKO cells (achieving <10% remaining protein and ~13% remaining mRNA) results in significant increase of ULBP2 mRNA levels and >30% elevation in ULBP2 surface expression, with no changes in ULBP1 or ULBP3. Rescue experiments confirm specificity by reversing these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are well-supported by Western blot (Figure 2A-B), qRT-PCR (Figure 2C-D), and FACS data (Figure 2E-F) showing consistent effects across protein, mRNA, and surface expression levels. The rescue experiment (C102, Figure 2\u2014figure supplement 1) effectively controls for off-target effects of the shRNA, strengthening the conclusion that observed effects are specifically due to IMP3 loss. The specificity for ULBP2 (not ULBP1 or ULBP3) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Overexpression of IMP3 in RKO cells (9-fold protein increase) causes inverse effects compared to knockdown: ~20% reduction in ULBP2 mRNA and ~10% decrease in ULBP2 surface expression, with no effect on ULBP1 or ULBP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by Western blot (Figure 3A-B), qRT-PCR (Figure 3C-D), and FACS data (Figure 3E-F). The inverse relationship between IMP3 levels and ULBP2 expression strengthens the causal link established by knockdown experiments. However, the magnitude of effect is smaller in overexpression (~10% decrease) than knockdown (~30% increase), which could suggest saturation effects or that endogenous IMP3 levels are already near-maximal for ULBP2 regulation in RKO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C103",
+      "C104"
+    ],
+    "result": "The effect of IMP3 on ULBP2 expression is conserved across multiple cell lines: knockdown in HCT116 (85% protein loss) and 293T (near-complete protein loss) increases ULBP2 surface expression by >30% and ~15% respectively, while overexpression decreases ULBP2 by 25% and 35% respectively. Rescue experiments in 293T confirm specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C103-C104 are supported by Western blot (Figure 4A-B), FACS data (Figure 4C-F), and rescue experiments (Figure 4\u2014figure supplement 1). Testing across three different cell lines (RKO, HCT116, 293T) of different tissue origins strengthens the generalizability of the findings. The consistent directional effects despite varying magnitudes across cell lines suggests this is a robust biological mechanism. The rescue experiment in 293T provides additional control for off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C113"
+    ],
+    "result": "IMP3 directly decreases ULBP2 mRNA stability. After 16 hours of transcription inhibition with D-Actinomycin, ULBP2 mRNA levels remain at ~45% in IMP3-knockdown cells compared to only ~30% in control cells, indicating that IMP3 binding destabilizes ULBP2 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by D-Actinomycin treatment experiments (Figure 5) with appropriate controls (DMSO, ULBP3 as negative control). The methodology is sound: D-Actinomycin blocks new transcription (C113), allowing measurement of mRNA decay rates. The significant difference in ULBP2 stability between knockdown and control cells, with no difference for ULBP3, demonstrates specificity. This provides direct mechanistic evidence that IMP3 binding reduces ULBP2 mRNA half-life.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Luciferase reporter assays confirm that IMP3 directly affects ULBP2 mRNA stability through its 3'UTR. IMP3 knockdown significantly increases luciferase activity only when the reporter is fused to ULBP2 3'UTR, not with control UTRs (ULBP1, ULBP3, CD247).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by luciferase assay data (Figure 6B). The specificity for ULBP2 3'UTR (not ULBP1, ULBP3, or CD247) strengthens the conclusion. Combined with the D-Actinomycin stability data (C63-C65), this provides converging evidence that IMP3 directly regulates ULBP2 through its 3'UTR. The use of multiple control UTRs is a strength of the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C105"
+    ],
+    "result": "The IMP3 binding site in ULBP2 3'UTR is located between nucleotides 100-200. Truncation analysis shows that constructs containing nucleotides 1-100 lose IMP3-dependent regulation, while all constructs containing nucleotides 1-200 or longer retain significant IMP3-dependent luciferase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C105 are supported by systematic truncation analysis using luciferase reporters (Figure 6D). The experimental design is logical: progressive 5' to 3' truncations narrow down the binding region. The statistical analysis (C105) confirms that the 1-100bp fragment behaves differently from longer fragments. This provides strong evidence localizing the binding site to the 100-200bp region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "IMP3 binds to a single CATT motif at position 161-164 in the ULBP2 3'UTR. Mutation of this motif (CATT to CAGG) completely abolishes IMP3-dependent regulation of luciferase activity, despite a second CATT motif existing at position 292-295.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by site-directed mutagenesis experiments (Figure 6E-F). The use of a previously identified IMP3 binding motif from PAR-CLIP studies (C72, Hafner et al. 2010) provides rational basis for the mutation. The complete loss of IMP3-dependent regulation upon mutating the 161-164 motif, despite the presence of a second CATT motif at 292-295, strongly suggests this is the sole functional binding site. This is consistent with the truncation data localizing the site to 100-200bp.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "IMP3-mediated downregulation of stress ligands has functional consequences for NK cell recognition. IMP3 knockdown in RKO, HCT116, and 293T cells significantly increases NK cell-mediated lysis, and this effect is abolished by blocking NKG2D with antibodies, demonstrating that the enhanced killing is specifically due to NKG2D recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by 35S-release cytotoxicity assays (Figure 7A-C) with appropriate controls including NKG2D blocking antibodies. The consistent effect across three cell lines strengthens the conclusion. The NKG2D blocking experiment (C79) is critical: it demonstrates that the differences in killing are specifically due to NKG2D-ligand interactions rather than other changes caused by IMP3 manipulation. This establishes the functional relevance of IMP3's regulation of stress ligands for immune evasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C106",
+      "C107"
+    ],
+    "result": "IMP3 also regulates MICB expression in RKO cells. IMP3 knockdown increases MICB surface expression by ~50% and mRNA levels, while overexpression dramatically reduces MICB to ~20% of control levels. MICA expression is unaffected. Rescue experiments confirm specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86, C106-C107 are supported by FACS analysis (Figure 8A-D) and qRT-PCR (Figure 8E) with rescue experiments (Figure 8\u2014figure supplement 1). The cell line-specific expression patterns (RKO: MICB+/MICA-, 293T: MICA+/MICB-) provide internal controls. The magnitude of MICB regulation by IMP3 overexpression (~80% reduction) is notably larger than for ULBP2, suggesting potentially different regulatory mechanisms. The rescue experiments strengthen confidence in specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C108",
+      "C109"
+    ],
+    "result": "IMP3 regulates MICB through a mechanism distinct from ULBP2. Unlike ULBP2, IMP3 does not affect MICB mRNA stability (D-Actinomycin assay) or 3'UTR-dependent regulation (luciferase assay), suggesting indirect regulation, likely through an unidentified transcription factor or regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C108-C109 are supported by negative results in D-Actinomycin stability assays (Figure 8F) and luciferase assays (Figure 8G) for MICB, contrasting with positive results for ULBP2. The conclusion of indirect regulation (C108-C109) is a reasonable inference from these data. However, C109 is speculative about the specific mechanism (transcription factor). The contrast between ULBP2 (direct mRNA stability) and MICB (indirect, mechanism unknown) is well-established, though the exact mechanism for MICB requires future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on stress-induced ligands and NK cell biology: NKG2D ligands (MICA, MICB, ULBP1-6) are upregulated by cellular stress and enable NK cell recognition. These ligands are often suppressed by cancer cells and viruses. Despite widespread mRNA expression, surface expression is tightly controlled, suggesting post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C24-C37 represent established background knowledge supported by appropriate citations. These claims provide necessary context for understanding the significance of the study. C37 is an inference that post-transcriptional regulation is important, which is reasonable given the observation that mRNA is present but protein is not expressed (C35-C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on IMP3 and RNA-binding proteins: IMP3 is an oncogenic RNA-binding protein with 6 RNA-binding domains, expressed in various cancers and associated with poor prognosis. It regulates cell proliferation, migration, and invadopodia formation through binding and stabilizing target mRNAs. Previous work showed that miRNAs and RBPs regulate MICA/MICB expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23, C38-C39 represent established background knowledge supported by appropriate citations. These provide context for IMP3's known oncogenic functions and previous work on stress ligand regulation. This background establishes the rationale for investigating IMP3's role in regulating NKG2D ligands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Discussion of IMP3's physiological role and therapeutic potential: IMP3 is expressed in testis and placenta where it may protect trophoblasts from NK cells. IMP3 might be an excellent drug target due to restricted expression in healthy tissues but widespread occurrence in cancers. Inhibiting IMP3 could elevate stress ligand expression and enhance immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C97 mix established facts (C90-C91, C94 with citations) with speculation (C92-C93, C95-C97). The speculation about placental function (C93) and therapeutic potential (C95-C97) is reasonable given the data but lacks direct experimental support. C92 makes an inference about CD44's role in trophoblasts that may overextend from the data. These are appropriate discussion points but should be clearly distinguished from experimentally supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cell line descriptions: RKO is a human colon carcinoma cell line, HCT116 is a human colorectal carcinoma cell line, and 293T is a human embryonic kidney cell line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are factual descriptions of established cell lines with ATCC catalog numbers provided. These are methodological details necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "RKO cells express numerous NKG2D ligands, making them suitable for studying stress ligand regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by FACS data in subsequent figures (Figures 2, 3, 8) showing expression of multiple NKG2D ligands (ULBP2, ULBP3, MICB) on RKO cells. This justifies the choice of RKO as a model system.",
+    "result_type": "MINOR"
+  }
+]

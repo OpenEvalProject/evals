@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "Foxa.a, Foxd, and Fgf9/16/20 are transcriptional targets of n\u03b2-catenin in vegetal cells at the 16-cell stage. Loss-of-function experiments show that \u03b2-catenin inhibition eliminates Foxd and Fgf9/16/20 expression, while gain-of-function experiments with BIO treatment induce all three genes in ectoderm lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C17, and C18 are well-supported by experimental data in Figure 1b-c showing loss of Foxd/Fgf9/16/20 expression upon \u03b2-catenin inhibition and ectopic activation upon \u03b2-catenin stabilization. The data are consistent with prior work (C13) and provide clear evidence for \u03b2-catenin-dependent regulation of these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "Each of the three factors (Foxa.a, Foxd, and Fgf9/16/20) is individually required for correct initiation of both NN (Zic-r.b) and E (Lhx3/4) lineage gene expression at the 32-cell stage. Fgf9/16/20 activates ERK in vegetal lineages, and inhibition of any single factor disrupts both mesoderm and endoderm marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C23, C25, and C26 are strongly supported by experimental data in Figure 2a, Table 1, and Figure 2\u2014figure supplement 1. Morpholino knockdown of each factor individually prevents proper initiation of both NN and E lineage markers, demonstrating their requirement for both lineages. The independence of their maintenance (C26) is also experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Endoderm gene expression is continuously reduced following inhibition of any NNE factor through early gastrula stage. However, only Foxa.a inhibition causes complete loss of endoderm at larval stages, while Foxd or FGF-signal inhibition alone allows endoderm recovery. Double inhibition of Foxd and FGF-signaling prevents endoderm recovery, indicating redundancy between these two factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by data in Figure 2\u2014figure supplement 1-2 showing temporal gene expression patterns and alkaline phosphatase activity. The compensatory mechanism between Foxd and FGF-signaling is demonstrated by single versus double inhibition experiments, though the molecular basis for this compensation is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "NNE factors (Foxd and FGF-signals) repress the ectoderm genetic program in NN cells, as double inhibition causes ectopic ectoderm gene (Efna.d) expression in NN but not E cells. The lack of derepression in E cells suggests n\u03b2-catenin can repress ectoderm genes both via and independently of NNE factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by experimental data in Figure 2b showing cell-type-specific ectopic Efna.d expression. The inference about dual mechanisms of ectoderm repression (C40) is reasonable given the differential response of NN versus E cells, though direct mechanistic evidence is limited to prior citations (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Co-expression of Foxa.a, Foxd, and Fgf9/16/20 occurs exclusively in mesendoderm lineages (NNE and B-line) at 16- and 32-cell stages. At 32-cell stage, E cells continue expressing all three genes while NN cells express only Foxa.a and Fgf9/16/20, though Foxd transcripts transiently segregate into NN cells during division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by expression data in Figures 1 and 2\u2014figure supplement 1a, combined with prior work (C43). The transient presence of Foxd in NN cells is inferred from previous observations of transcript segregation, making the co-expression window brief but present in both lineages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "Injection of Foxd mRNA into embryos converts a-line ectoderm cells (which already express Foxa.a and have ERK activation) to a mesendoderm state, inducing ectopic expression of mesoderm markers Zic-r.b and Bra. This conversion depends on FGF signaling, as MEK inhibition suppresses the ectopic mesoderm markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are well-supported by experimental data in Figure 3 and Figure 3\u2014figure supplement 1. The sufficiency of Foxd to convert Foxa.a/ERK-positive cells to mesoderm is clearly demonstrated, and the FGF-dependence is confirmed by U0126 treatment. The mechanism involves Foxd-mediated activation of Fgf9/16/20 and repression of Efna.d (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Foxd mRNA injection alone is insufficient to induce endoderm gene expression in ectoderm cells. However, when combined with BIO treatment (mimicking the second n\u03b2-catenin activation), the ectopic NNE-like state switches to endoderm fate, with repression of mesoderm markers (Zic-r.b, Bra) and activation of endoderm marker (Lhx3/4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by data in Figure 3b-c showing that the ectopic mesendoderm state responds to \u03b2-catenin modulation similarly to endogenous NNE cells. This demonstrates that the induced state is functionally equivalent to the natural mesendoderm state and can be programmed by the second \u03b2-catenin signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Foxd mRNA injection rescues NN-lineage gene expression (Zic-r.b and Bra) in \u03b2-catenin-knockdown embryos in an FGF-signaling-dependent manner. This demonstrates that co-expression of Foxd, Foxa.a, and Fgf9/16/20 is sufficient to induce a mesendoderm regulatory state that can be programmed into mesoderm or endoderm by modulating n\u03b2-catenin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by rescue experiments in Figure 4. The ability of Foxd to rescue mesoderm markers in \u03b2-catenin-deficient embryos (which retain Foxa.a expression) provides strong evidence for sufficiency of the three-factor combination, though the rescue is partial and FGF-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Ectopic co-expression of all three factors (Foxa.a, Foxd, and Fgf9/16/20) using FT promoter-driven constructs in isolated ectoderm explants is sufficient to reprogramme ectoderm to mesendoderm. Strong Bra induction occurs only with all three factors together, accompanied by downregulation of ectoderm genes. Addition of BIO treatment converts the reprogrammed state to endoderm (Lhx3/4 expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C63-C65, and C67 are strongly supported by reprogramming experiments in Figure 5 using isolated ectoderm explants. The combinatorial requirement is clearly demonstrated, and the ability to direct the induced state toward either mesoderm or endoderm by \u03b2-catenin modulation validates the mesendoderm ground state model. The use of isolated explants eliminates confounding signals from vegetal cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C61"
+    ],
+    "result": "The transient mesendoderm regulatory state in ascidian embryos is defined by co-expression of Foxa.a, Foxd, and Fgf9/16/20. This state is both necessary (each factor required for both lineages) and sufficient (can reprogram ectoderm) for mesendoderm specification, and can be programmed into mesoderm or endoderm by differential n\u03b2-catenin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61 represent the main conclusions of the manuscript, synthesizing the necessity data (Figure 2), sufficiency in endogenous context (Figures 3-4), and reprogramming experiments (Figure 5). The evidence collectively supports this model, though some aspects (like the precise molecular mechanisms of lineage choice) remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "BIO treatment induces nuclear translocation of \u03b2-catenin in isolated ectoderm explants at the 76-cell stage, confirming that the chemical treatment effectively activates the \u03b2-catenin pathway in the experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by immunofluorescence data in Figure 5\u2014figure supplement 2 showing nuclear \u03b2-catenin in BIO-treated explants. This control experiment validates the experimental approach for mimicking the second n\u03b2-catenin activation in isolated explants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript describes the established lineage relationships in ascidian embryos: the first A-V division segregates mesendoderm (A- and B-line) from ectoderm (a- and b-line) at 8-cell stage; A4.1 blastomeres generate NNE cells at 16-cell stage; NNE cells divide to produce NN and E cells at 32-cell stage; NN cells segregate into notochord and neural at 64-cell stage; E cells generate endoderm and some mesoderm; and neural plate generates muscle precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 describe established developmental biology of ascidian embryos, supported by classical literature citations (Conklin 1905, Nishida 1987, Shi and Levine 2008, etc.) and illustrated in Figure 1a. These provide essential context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Germ layer segregation in ascidian embryos occurs through two sequential n\u03b2-catenin-driven binary fate decisions: the first (8-16 cell stage) segregates mesendoderm (ON) from ectoderm (OFF); the second (32-cell stage) segregates endoderm (ON+ON) from notochord-neural (ON+OFF). These switches activate lineage-specific transcription factors Zic-r.b (NN) and Lhx3/4 (E).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 describe the two-step \u03b2-catenin model established in prior work by the authors (Hudson et al. 2013) and others, illustrated in Figure 1a. This model provides the conceptual framework for the current study but represents previously published work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C93"
+    ],
+    "result": "The mesendoderm regulatory architecture in ascidians is similar to C. elegans, where individual factors (Foxa.a/Foxd in ascidians; MED1/2 in C. elegans) directly activate both mesoderm and endoderm target genes. Foxa.a and Foxd can bind upstream sequences of both Zic-r.b (NN) and Lhx3/4 (E), suggesting direct regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C93 are supported by prior work (Kubo et al. 2010 for ascidians; multiple citations for C. elegans). The comparison provides important evolutionary context, though the directness of regulation in ascidians is inferred from binding data rather than demonstrated functionally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C71"
+    ],
+    "result": "Nuclear \u03b2-catenin promotes mesendoderm over ectoderm lineages in many bilaterian embryos, representing a likely ancestral developmental mechanism conserved across diverse organisms including ascidians, sea urchins, vertebrates, and cnidarians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C71 describe well-established general principles supported by extensive literature (multiple citations in C71). These provide important evolutionary context but represent prior knowledge rather than findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In sea urchins and anamniote vertebrates, mesendoderm is described as a 'mixed regulatory state' with simultaneous activation of mesoderm and endoderm GRNs prior to lineage segregation. Some genes interacting with both GRNs have been identified in echinoderms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 describe alternative mesendoderm regulatory architectures in other organisms, supported by citations. This comparison is used to distinguish the ascidian/nematode model (with obligate mesendoderm lineage specifiers) from the 'mixed-lineage' model, providing important conceptual context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "Foxa.a has both \u03b2-catenin-dependent expression in vegetal mesendoderm lineages and \u03b2-catenin-independent expression in a-line anterior ectoderm. In \u03b2-catenin-inhibited embryos, Foxa.a expression persists in NNE and a-lineage cells, likely due to transformation of vegetal cells to animal cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C15, and C16 are supported by data in Figure 1b-c and prior work. The dual regulation of Foxa.a is important for interpreting the rescue experiments (where Foxa.a is present even in \u03b2-catenin knockdown embryos), though the inference about cell transformation (C16) is based on prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work showed that Foxa.a is required for both NN and endoderm lineages, Foxd specifically for NN lineage but not endoderm, and Fgf9/16/20 contributes to notochord induction from NN lineage. The current study revises this understanding by showing all three factors are required for both lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe prior understanding from cited work (Imai et al. 2002a,b, 2006; Yasuo and Hudson 2007). The current study's finding that all three factors are required for both lineages (C2, C22) represents a significant revision of this prior model, highlighting the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Zic-r.b expression recovers at 64-cell stage in FGF-inhibited embryos but remains repressed in Foxa.a/Foxd-inhibited embryos. The 32- and 64-cell stage expression can be mediated by separate enhancers. FGF signaling is required for notochord but must be attenuated for neural fate in the NN lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by data in Figure 2\u2014figure supplement 1a and prior work. These observations explain the temporal dynamics of gene expression and the differential requirements for FGF signaling in notochord versus neural fates, providing important mechanistic details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In a-line ectoderm cells, Foxa.a is expressed and ERK1/2 is activated in the a6.5 pair at 32-cell stage. Despite possessing two of three mesendoderm specifiers (Foxa.a and activated ERK), these cells do not adopt NNE-like lineage, demonstrating that all three factors are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by expression data in Figure 3a and prior work. This natural experiment demonstrates the necessity of all three factors for mesendoderm specification and provides the rationale for the Foxd mRNA injection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Efna.d is a known antagonist of FGF signals in Ciona, and its inhibition results in widespread ERK1/2 activation in ectoderm lineages. This explains how Foxd overexpression (which represses Efna.d) leads to broad ERK activation and mesoderm marker induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 describe established knowledge from prior work (Ohta and Satou 2013; Picco et al. 2007; Shi and Levine 2008) that explains the mechanism underlying the Foxd overexpression phenotype (C51). This provides important mechanistic context for interpreting the gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The Fucosyltransferase-like (FT) gene promoter becomes active in ectoderm cells from the 64-cell stage, when the ectoderm genetic program is already underway and these cells no longer express the three mesendoderm factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by data in Figure 5\u2014figure supplement 1 and prior work (Imai et al. 2004; Pasini et al. 2012). This timing is crucial for the reprogramming experiments, as it ensures the ectoderm cells are already committed when the ectopic factors are expressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The transient regulatory state induced by the first n\u03b2-catenin input in NNE cells likely confers a distinct transcriptional response to the second n\u03b2-catenin input in E cells. At 8-16 cell stage, n\u03b2-catenin promotes Foxa.a, Foxd, and Fgf9/16/20 expression and represses ectoderm genes in vegetal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 represent key conceptual points about how the same signal (n\u03b2-catenin) is interpreted differently at different stages. C81 is an inference from the overall model, while C82 is supported by prior work. These claims articulate the central hypothesis that motivated the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The three mesendoderm factors have ongoing roles beyond initial specification: ERK1/2 activity persists in notochord and endoderm until early gastrula; Fgf9/16/20 is required at 64-cell stage for notochord induction and neural repression; Foxa.a is continuously expressed in both lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by prior work (multiple citations) and suggest that these factors function not only in initial specification but also in subsequent lineage maintenance and differentiation. This provides important context for interpreting the persistent phenotypes observed in loss-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript discusses bipotential progenitors in various systems: NN cells generate both notochord and neural tissue in ascidians; similar neuromesodermal progenitors exist in zebrafish, mouse, and human; even the C. elegans MS lineage produces some neurons; and ascidian E cells generate both endoderm and mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 provide comparative developmental biology context, supported by extensive citations. These comparisons emphasize that germ layer segregation is a progressive process across animals and that the ascidian NNE cell fits within a broader pattern of bipotential progenitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C94"
+    ],
+    "result": "Nuclear \u03b2-catenin represses the ectoderm gene program in vegetal cells. In \u03b2-catenin knockdown embryos, ectopic ectoderm gene (Efna.d) expression occurs in both NN and E cells. This repression can occur via physical interaction between \u03b2-catenin/Tcf7 and Gata.a, preventing Gata.a from binding DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C94 are supported by data in Figure 2b and prior work (Hudson et al. 2013; Oda-Ishii et al. 2016; Rothb\u00e4cher et al. 2007). The molecular mechanism (C94) is from recent prior work and provides important context for understanding how \u03b2-catenin promotes mesendoderm fate.",
+    "result_type": "MINOR"
+  }
+]

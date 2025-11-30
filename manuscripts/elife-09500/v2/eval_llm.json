@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study developed a high-resolution kinetochore tracking method using spinning disk confocal microscopy with 2-second temporal resolution and 3D Gaussian mixture model fitting, achieving theoretical positional accuracy of \u00b12.8 nm (x,y) and \u00b15.7 nm (z). The method was validated with >90% cell viability and reproduced known kinetochore dynamics (mean inter-kinetochore distance ~910 nm, oscillation half-period 35 s). A Bayesian switching point detection algorithm achieved 94% accuracy on simulated data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe a well-validated methodological advance with appropriate controls (phototoxicity assessment, consistency with prior work, algorithm validation on simulated data). The theoretical accuracy calculations and algorithm performance metrics provide quantitative support for the technical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of 9,022 switching events from 1,529 sister pairs across 55 cells revealed that directional switching is initiated by both leading (54.3% LIDS) and trailing (34.8% TIDS) kinetochores, with 10.9% joint switches. This demonstrates a lead-to-trail bias of 1.56:1 and that trailing sister switching, while suppressed, occurs frequently in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C36, C108-C109 present a major finding based on large-scale quantitative analysis. The dataset size (>9,000 events) and clear quantitative metrics provide strong statistical support. The observation of frequent TIDS contradicts predictions of the standard tension model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "LIDS and TIDS exhibit distinct inter-sister distance signatures. For LIDS, inter-sister distance increases from 14% to 20% stretch over 20 s before switching, stabilizes 4 s prior, then decreases to 5% stretch after switching. For TIDS, inter-sister distance is lower before switching, with maximum stretch (25%) reached only 4 s after the switch, indicating TIDS builds tension during the switch itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C45, C49-C53 describe stereotypical dynamic signatures supported by aligned trajectory data (Figure 4A). The temporal profiles are quantitatively characterized with specific stretch percentages and timing. The distinct TIDS signature is a key observation that challenges existing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C117",
+      "C118"
+    ],
+    "result": "Trail-driven switching (TIDS) generates chromatin overstretch that relaxes over the following half-period, with centromeric spring force increasing trailing sister velocity. This observation rules out tension threshold-based switching mechanisms, as the standard tension model is incompatible with overstretch and subsequent relaxation following TIDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C63-C66, C117-C118 present a critical finding that contradicts the long-standing tension model. The overstretch observation during TIDS (C5, C63) is well-supported by the data in Figure 4A. The logical inference that this rules out tension threshold mechanisms (C6, C65, C117-C118) follows directly from the incompatibility of overstretch with threshold-based models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C79",
+      "C110"
+    ],
+    "result": "Kinetochore oscillations are robust to switching order. Following LIDS, inter-sister distance rises during the subsequent run; following TIDS, it relaxes. Despite these differences, the median coherent run time is identical (27.1\u00b10.21 s for TIDS vs 26.7\u00b10.29 s for LIDS, p=5.5%), and LIDS bias is maintained (1.53 after TIDS vs 1.64 after LIDS). Kinetochore dynamics are nearly identical after TIDS and LIDS except for inter-sister distance direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C59-C60, C79, C110 demonstrate robustness through quantitative comparison of run times and switching biases. The statistical test (p=5.5%) supports the claim of identical timing. This invariance is a key observation supporting the clock model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C80",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The data support a clock-based model where intrinsic switching times of kinetochore-attached microtubule fibers are set by mechanical clocks on both lead and trailing sisters, with centromeric spring tension operating as feedback to slow (trailing sister) or accelerate (lead sister) the clocks. The degree of centromeric chromatin stretch is a major determinant orchestrating switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C80, C112, C114-C116 propose a new mechanistic model supported by the invariance of run times (C79, C57) and the distinct tension dynamics of LIDS vs TIDS. The clock model is consistent with all major observations and provides a unified explanation for both switching types. However, the molecular basis of the clocks remains speculative (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Twist angle and inter-sister distance are inversely correlated (r=-0.13, p<10^-200). For LIDS, twist falls before and increases after switching; for TIDS, the opposite occurs. This correlation is explained mechanistically by high tension aligning sisters (reducing twist) and low tension allowing twist to increase under fluctuations, indicating mechanical compliance in kinetochore-K-fiber attachments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 present a secondary finding with strong statistical support (p<10^-200) and clear temporal signatures (Figure 5). The mechanistic explanation (C73-C75) is reasonable and consistent with known mechanical properties. This provides additional evidence for the role of tension in kinetochore dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A key pattern emerges: TIDS is associated with lower inter-sister distance than LIDS 4 s prior to the event regardless of preceding event type. LIDS events have mean separation above 920 nm, while TIDS events are below 920 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 identify a predictive signature distinguishing LIDS from TIDS based on prior inter-sister distance (Figure 4B). This observation supports the clock model by showing that switching type depends on tension state rather than a universal threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "TIDS complete faster than LIDS (median 4.05\u00b10.15 s vs 4.31\u00b10.13 s, p=1.3\u00d710^-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 reports a statistically significant difference in switching completion time with appropriate statistical testing. This supports the proposed mechanism where high tension during TIDS accelerates the lead sister clock.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The proposed mechanism involves tension-dependent stabilization: the trailing sister is kept polymerizing by centromeric chromatin tension (consistent with kinetochore catastrophe inhibition under tension). If tension falls too low, TIDS occurs. During LIDS, the second sister switches under loss of tension. When tension remains high, the lead sister switches due to its clock, with escalating force during TIDS potentially accelerating the lead sister clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C87 propose detailed mechanistic explanations supported by the observed dynamics and prior work (C83, C88). However, these are largely inferences from the data rather than direct demonstrations. The connection to yeast kinetochore biophysics (C83) provides some support, but direct evidence for these specific mechanisms in human cells is lacking. The speculation in C87 is acknowledged as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The switching process is highly stochastic. Coherent run duration has large variability (coefficient of variation 0.45), similar for LIDS (29.6\u00b112.7 s) and TIDS (29.2\u00b113.6 s). Inter-sister distance distributions for LIDS and TIDS show only marginal separation before switching and are far from bimodal. The signatures in Figure 4 are mean behaviors detectable only on averaging, not universal behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C104 characterize the stochastic nature of the system with appropriate statistical measures (coefficient of variation, distribution analysis). The observation that signatures emerge only on averaging (C103-C104) is well-supported by the distribution data (Figure 4 supplement 2). This stochasticity is consistent with the underlying microtubule dynamics (C96-C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Event classification (LIDS vs TIDS) is physical and not due to noisy fluctuations from localization measurement noise, as demonstrated by clear stereotypical behavior with both prior and post-event signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by the distinct and reproducible signatures observed for LIDS and TIDS (C40-C43, C49-C53). The consistency of these signatures across thousands of events argues against classification being an artifact of measurement noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C121"
+    ],
+    "result": "A baseline rest length of 788 nm was determined from nocodazole-treated cells (16-24 hr treatment to depolymerize microtubules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C121 describe a standard experimental approach for determining rest length. The method is appropriate and the value is used consistently throughout the analysis for calculating stretch percentages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Directional switching may be a composite process integrating multiple signals beyond tension. It remains unknown to what extent stochasticity in switching time and type explains trajectory diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 appropriately acknowledge limitations and uncertainties in the current understanding. These are reasonable speculations given the observed stochasticity and are presented as open questions rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The mechanical clocks likely reflect time- and force-dependent rescue and catastrophe of K-fiber microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 proposes a molecular mechanism for the clocks but is explicitly speculative. While consistent with known microtubule dynamics and supported by yeast studies (C83, C88), direct evidence for this mechanism in human cells is not provided. This represents a reasonable hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Kinetochores utilize multiple sensory and fail-safe mechanisms ensuring high-fidelity chromosome organization despite high stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is a reasonable inference from the observed robustness of kinetochore oscillations (C59, C110) despite high stochasticity (C91-C104). The data demonstrate that the system maintains consistent timing and bias despite variable tension dynamics.",
+    "result_type": "MINOR"
+  }
+]

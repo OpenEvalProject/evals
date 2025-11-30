@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C117"
+    ],
+    "result": "A novel masked classification method with signal subtraction was developed and applied to identify three distinct conformational states of the PS1 subunit in apo-state \u03b3-secretase, revealing differential ordering of TM2 (ordered only in class 1) and variable orientations of TM6 across all three classes at 4.0-4.3 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 and C117 collectively demonstrate the successful development and validation of the masked classification approach. The method identified three conformational classes with good density (C45-C47), achieved interpretable resolutions (C47-C48), and revealed specific structural differences in TM2 and TM6 (C49-C50). The 93% accuracy on simulated data (C117) validates the method's reliability. Multiple control experiments (Figure 2 supplements) support robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "An unidentified kinked \u03b1-helix was observed in classes 1 and 2 (but not class 3) within a cavity formed by TM2, TM3, and TM5 of PS1, with mass spectrometry and Western blot confirming the presence of multiple single-transmembrane proteins in the sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are well-supported by cryo-EM density (C56-C59, Figure 4), correlation with FAD mutation sites (C60), and orthogonal biochemical validation via mass spectrometry and Western blot (C61-C62, Figure 4 supplement 1). The structural observations are consistent across multiple lines of evidence, though the exact identity of the helix remains unresolved at the achieved resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The DAPT-bound \u03b3-secretase structure was determined at 4.2 \u00c5 resolution, revealing a single conformational state with marked rigidification of PS1, particularly ordering of TM2 and associated linkers, while Aph-1, nicastrin, and Pen-2 remain largely unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C63-C71 are supported by the cryo-EM data (Table 1, Figure 5). The resolution is sufficient for main-chain modeling (C64), masked classification reveals a single dominant state (C65), and specific structural changes in PS1 are documented (C69-C71, Figure 5 supplement 3). The contrast with the heterogeneous apo-state strengthens the conclusion of inhibitor-induced rigidification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The DAPT-bound structure closely resembles apo-state class 1 (RMSD 0.4 \u00c5), with DAPT tentatively localized to a hydrophobic pocket near the active site formed by TM2, TM3, TM5, TM6, and TM7, bringing catalytic aspartates within 8.0 \u00c5 and involving residues implicated in FAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by structural comparisons (C74-C75, Figure 5 supplement 4), density analysis (C76-C78, Figure 5C), and correlation with prior biochemical data (C82). The tentative assignment of DAPT density (C78) is appropriately cautious given the 4.2 \u00c5 resolution. The identification of interacting residues (C80-C81) and their connection to FAD mutations strengthens biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C91",
+      "C95",
+      "C98"
+    ],
+    "result": "Conformational mobility in TM2 and TM6 of presenilin is greatly reduced upon binding of DAPT or the additional helix, with TM2 ordering only when the cavity between TM2, TM3, and TM5 is occupied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C90-C91, C95, and C98 synthesize the key findings from both apo and DAPT-bound structures. The observation that TM2 orders only when the cavity is occupied (either by the kinked helix or DAPT) is directly supported by the structural data (Figures 3-5). The correlation between TM6 flexibility and active site geometry (C91) is evident from the distance measurements in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a substrate entry model where the kinked \u03b1-helix represents substrate-mimicking proteins, substrate enters through a lateral gate formed by TM2, the kink positions the cleavage site near the active site, and DAPT inhibits by blocking substrate access while stabilizing a similar conformation to the substrate-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C116 represent a mechanistic hypothesis integrating structural observations with prior biochemical data. While the model is internally consistent and supported by correlations with NMR structures (C106), photolabeling data (C103), and mutational studies (C104, C110, C112), it remains speculative (as acknowledged by terms like 'hypothesize,' 'tempting to speculate'). The model requires direct validation with authentic substrates, which is noted as future work. The structural similarity between DAPT-bound and class 1 (C115) supports but does not prove the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The masked cryo-EM classification with signal subtraction method fills a methodological gap for studying molecular dynamics at the secondary structure level in protein domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the successful application to \u03b3-secretase, validation with simulated data (C117, 93% accuracy), and multiple control experiments (Figure 2 supplements). The method addresses a genuine technical challenge in cryo-EM and demonstrates practical utility for complexes in the size range where traditional approaches struggle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C92"
+    ],
+    "result": "Significant conformational variations in Pen-2 were observed, with Pen-2 rotating away from PS1 in class 3, concurrent with large conformational changes in PS1 that position the catalytic aspartates closer together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C92 are supported by the structural data (Figure 3, Video 2, Table 1). The observation that Pen-2 conformation correlates with PS1 conformational changes and active site geometry is directly visible in the reconstructions. However, the functional significance of these changes remains interpretive (C55 uses 'potentially'), as the authors acknowledge uncertainty about whether this relates to the activation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The conserved PAL motif changes conformation upon DAPT binding, with residues 280-283 forming an \u03b1-helical turn stabilized by Glu280-His163 interaction, and residues 285-288 and 378-381 forming hydrogen-bonded \u03b2-strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe specific structural features in the DAPT-bound structure that are visible in the density (Figure 5C). The connection to the Paisa mutation (C86) adds biological context. These are well-documented structural observations at the achieved resolution, though their functional implications remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Four proteins previously observed to co-purify with \u03b3-secretase (TMP21, p24a, Vamp-8, Sec22B) were identified by mass spectrometry, with TMP21 known to act as a negative regulator of \u03b3-cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by mass spectrometry data (Figure 4 supplement 1) and citations to prior work. This provides context for the identity of the kinked helix and connects the structural findings to known regulatory mechanisms. The claims are factual and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "Background knowledge about \u03b3-secretase function, substrate specificity, disease relevance, complex composition, and component roles is presented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C30, C93-C94, and C97 represent established knowledge from the literature, appropriately cited. These provide necessary context for the study but are not novel findings. They are accurately stated and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors' previous 3.4 \u00c5 cryo-EM structure of \u03b3-secretase revealed disorder in PS1, particularly in TM2, TM6, and the TM6-TM7 linker, with an unidentified rod-shaped density and an inactive active site conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C31-C39 accurately summarize findings from the authors' prior work (Bai et al., 2015a), providing essential context for the current study. These are appropriately cited and set up the motivation for the new methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Initial attempts at masked 3D classification on the apo-state data yielded only a single class with good density, resulting in a 3.4 \u00c5 map from 160,000 particles but failing to reveal conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe the limitations of conventional masked classification that motivated the development of the signal subtraction approach. These are straightforward methodological observations that establish the need for the improved method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "In the DAPT-bound structure, TM2 contains 32 residues at ~40\u00b0 to the membrane plane, and TM3 extends 7 residues longer than in the apo-state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are specific structural measurements from the DAPT-bound structure. These are straightforward observations supported by the model and density, providing detailed characterization of the ordering that occurs upon inhibitor binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The kink in TM6 may facilitate the U-turn required to position the auto-proteolytic cleavage site into the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is explicitly presented as speculation ('may expedite') about the functional role of the observed TM6 kink. While structurally plausible, this hypothesis lacks direct experimental support and would require additional studies (e.g., with the linker in different conformations or mutagenesis) to validate.",
+    "result_type": "MINOR"
+  }
+]

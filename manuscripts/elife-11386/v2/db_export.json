@@ -1,0 +1,1931 @@
+{
+  "submission": {
+    "id": "7dc38288-cd57-4faa-b186-5167026c96bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:57:48.735050Z",
+    "updated_at": "2025-11-29T21:57:48.735050Z"
+  },
+  "content": [
+    {
+      "id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "submission_id": "7dc38288-cd57-4faa-b186-5167026c96bf",
+      "content_type": "manuscript",
+      "content_text": "# Striatal dynamics explain duration judgments\n\n## Authors\n\n- Thiago S Gouv\u00eaa<sup>1</sup> ([ORCID: 0000-0002-0727-5838](https://orcid.org/0000-0002-0727-5838))\n- Tiago Monteiro<sup>1</sup> ([ORCID: 0000-0002-2836-8961](https://orcid.org/0000-0002-2836-8961))\n- Asma Motiwala<sup>1</sup> ([ORCID: 0000-0002-7693-2731](https://orcid.org/0000-0002-7693-2731))\n- Sofia Soares<sup>1</sup> ([ORCID: 0000-0002-4594-0202](https://orcid.org/0000-0002-4594-0202))\n- Christian Machens<sup>1</sup> ([ORCID: 0000-0003-1717-1562](https://orcid.org/0000-0003-1717-1562))\n- Joseph J Paton<sup>1</sup> ([ORCID: 0000-0002-7693-2731](https://orcid.org/0000-0002-7693-2731)) \u2020\n\n### Affiliations\n\n1. Champalimaud Neuroscience Programme Champalimaud Centre for the Unknown Lisbon Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe striatum is an input structure of the basal ganglia implicated in several time-dependent functions including reinforcement learning, decision making, and interval timing. To determine whether striatal ensembles drive subjects' judgments of duration, we manipulated and recorded from striatal neurons in rats performing a duration categorization psychophysical task. We found that the dynamics of striatal neurons predicted duration judgments, and that simultaneously recorded ensembles could judge duration as well as the animal. Furthermore, striatal neurons were necessary for duration judgments, as muscimol infusions produced a specific impairment in animals' duration sensitivity. Lastly, we show that time as encoded by striatal populations ran faster or slower when rats judged a duration as longer or shorter, respectively. These results demonstrate that the speed with which striatal population state changes supports the fundamental ability of animals to judge the passage of time.\n\n## Introduction\n\nTime, like space, is a fundamental dimension of the environment, yet how it is processed in the brain is poorly understood. A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus\u00a0(Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal\u00a0(Kim et al., 2013; Xu et al., 2014), parietal\u00a0(Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor\u00a0(Lebedev et al., 2008) cortices, cerebellum\u00a0(Mauk and Buonomano, 2004), and the striatum\u00a0(Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015). However, any dynamics that result in a continuously-evolving and non-repeating population state can be used to encode time\u00a0(Buonomano, 2014), and it is not known whether such temporal representations would inform subjects\u2019 judgments of duration or merely covary with elapsing time. The striatum, a brain structure known to be involved in reinforcement learning and decision making\u00a0(Lau and Glimcher, 2008; Samejima et al., 2005; Lee et al., 2015), has been implicated in interval timing by several lines of evidence\u00a0(Hinton and Meck, 2004; Harrington et al., 2009; Wencil et al., 2010; Malapani, 1998; Meck, 2006). However, whether dynamics in striatal activity can explain the perceptual performance of behaving subjects is unknown. To determine whether striatal ensembles drive subjects\u2019 judgments of duration, we manipulated and recorded from striatal neurons in rats performing a duration categorization psychophysical task.\n\n## Results\n\nTo measure the duration sensitivity of subjects\u2019 timing judgments, we trained rats to judge whether time intervals belonged to a long or short category\u00a0(Gouv\u00eaa et al., 2014) (see Materials\u00a0and\u00a0methods; Figure 1a). At each self-initiated trial, two brief tones (interval onset, offset) were presented separated in time by an interval randomly selected from the set I = {0.6, 1.05, 1.26, 1.38, 1.62, 1.74, 1.95, 2.4} seconds. Judgments about interval duration were reported at two laterally located nose ports: choosing the left side was reinforced with water after intervals longer than 1.5 seconds (long stimuli), and the right side otherwise (short stimuli, Figure 1b). Animals were required to withhold choice until interval offset. Animals made virtually no errors when categorizing the easiest (i.e. shortest and longest) intervals, but categorization performance declined as intervals approached the 1.5 second categorical boundary (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig1-v2.jpg)\n\n**Figure 1.:** (a) Rats triggered interval stimuli (i.e. two brief auditory tones separated by a silent interval of random duration) by inserting their snout into a central port. Following interval offset, animals reported their long vs short judgment at two lateral choice ports. Correct trials yielded a water reward, while incorrect or premature responses produced a white noise sound and a time out. Top view, high-speed video was acquired throughout task performance. (b) Reward contingency. (c) Averaged psychometric curves following bilateral muscimol or saline injections in dorsal striatum (mean \u00b1 standard deviation across session means, and logistic fit; n = 3 rats, 4 sessions each). Inset: slope of psychometric curves on consecutive saline and muscimol sessions. All raw data for Figure 1 can be found in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Histology slices and schematic representation of the location of saline and muscimol injections. Coronal slices at intermediate anterior posterior (AP) positions are shown for reference at +0.84mm (left, rat Albert), +1.68\u00a0mm (center, rat Yuri) and + 0.60\u00a0mm (right, rat Zack) from Bregma. Vertical grey bars represent the location of the cannula placements. Yellow asterisks (*) show the approximate dorsal-ventral (DV) position from where the injectors extended 1.5 mm bellow the cannulae.\n\nWe recorded action potentials during task performance (see Materials\u00a0and\u00a0methods), from populations of single striatal neurons targeting dorsal-central striatum, an area where manipulations produced timing deficits\u00a0(Meck, 2006) (Figure 2a. For a reconstruction of striatal recording sites see Figure 2\u2014figure supplement 1.). We observed that striatal neurons displayed diverse firing patterns, with different units firing at different times within the interval period (Figure 2b\u2013d). Can such firing patterns support duration judgments? To determine whether and the degree to which individual neurons could contribute to duration judgments, for each trial, we counted spikes in the last 500 ms of the interval period and compared spike count distributions of short vs long stimulus trials using a receiver operating characteristic (ROC) analysis (see Materials\u00a0and\u00a0methods). We found that the majority of neurons (~57%) preferred either short or long stimuli (Figure 2e; short-preferring: n = 159/433, 36.7%; long-preferring: n = 87/433, 20.1%; permutation test, p<0.05). As expected, short-preferring neurons displayed higher firing on average prior to the 1.5 s category boundary, after which long-preferring neurons displayed higher firing (Figure 2f). These averaged activity patterns resemble the likelihood of receiving reward on a\u00a0moment-by-moment by basis should the animal choose short or long (compare with reward contingency in Figure 1b). Such signals, previously observed in the parietal cortex of monkeys performing a similar timing task\u00a0(Leon and Shadlen, 2003) and in the striatum in a value based decision task\u00a0(Lau and Glimcher, 2008), are potentially useful for guiding choice. However, were animals\u2019 judgments indeed guided by such signals, it should be possible to predict choices reported later in the trial using neural activity collected during interval stimuli. Indeed, in trials wherein a near boundary interval was judged as long, firing of the short (long) preferring subpopulation dropped (rose) faster, so that the two curves crossed before the 1.5 s boundary (Figure 2g). Conversely, in trials wherein the same interval was judged as short, the two curves evolved more slowly so that at the time of interval offset the short preferring subpopulation was still firing at a higher level and a crossing point had not yet been reached (Figure 2h).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig2-v2.jpg)\n\n**Figure 2.:** (a) Psychometric function for neural recording sessions (mean \u00b1 standard deviation across sessions and logistic fit, n = 37 sessions from 3 rats). (b,c) Raster plot and peri-stimulus time histogram (PSTH) of two example cells for trials in which the longest stimulus interval (2.4 s) was presented. Time = 0 corresponds to stimulus onset. (d) Normalized PSTHs of all neurons for trials in which the longest stimulus interval was presented. Arrowheads indicate cells shown in (b,c). Blue and red ticks indicate cells with significant short and long preferences, respectively. (e) Histogram of preference indices. Blue and red outlines indicate subpopulations with significant short and long preferences, respectively. (f) Averaged, normalized PSTH of the two subpopulations outlined in (e) for trials in which the longest stimulus interval was presented (mean \u00b1 SEM). (g) Same as in (f), for trials in which a near-boundary stimulus interval (1.62 s) was judged as long. For comparison, curves shown in (f) are reproduced as a watermark. (h) same as (g) for trials in which the stimulus was judged as short. For single subjects, see Figure 2\u2014figure supplement 2 . Behavior and neural spike count data for Figure 2 and Figure 2\u2014figure supplements 1 and 2 can be found in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Movable microwire bundle array (Innovative Neurophysiology) used for all neural recordings.\u00a0(b) Histogram of firing rates for all selected cells (bin size 1 spike/s). (c) Schematic representation of the striatal recording sites. Coronal slices at intermediate AP positions are shown for reference (left to right, rats Bertrand, Edgar and Fernando). Colored rectangles show the approximate DV position of the wire bundles across recording sessions and horizontal black lines represent session by session recording sites, for 10, 9 and 18 recording sessions, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a,f,k) Psychometric functions for the recording sessions of rats Bertrand (a), Edgar (f) and Fernando (k) (mean \u00b1 standard deviation across sessions and logistic fit). (b,g,l) Histograms of preference indices for the same individual animals. Blue and red outlines indicate subpopulations with significant short and long preferences, respectively. (c,h,m) Averaged, normalized PSTHs of the two subpopulations outlined in (b,g,l) for trials in which the a near-boundary stimulus interval (1.62 s) was judged as long (mean \u00b1 SEM). (d,i,n) same as in (c,h,m) for short judgment trials. (e,j,o) Normalized PSTHs of all neurons for each animal for trials in which the longest stimulus interval was presented. Blue and red ticks indicate cells with significant short and long preferences, respectively.\n\nThe observation of large proportions of short- and long-preferring neurons whose dynamics predicted choice is evidence that duration judgments are guided by the state of striatal populations. Might the information afforded by ensembles of striatal neurons account for the pattern of subjects\u2019 judgments across all stimuli? To test this hypothesis, we compared session to session fluctuations in behavioral performance with the separability of activity states of simultaneously recorded ensembles at the offset of short as compared to long intervals. Briefly, for each trial in a session we characterized neural population state as a vector r = (r1, r2,... , rN), where rn is the number of spikes fired by neuron n \u2208 [1,N] within the last 500 ms of the interval period. Next, for each session we found the linear discriminant that best separated population state vectors according to whether they came from a long or a short interval trial (Figure 3a; see Materials\u00a0and\u00a0methods). A threshold placed along the linear discriminant was then used as a decision rule (black line in Figure 3a) to generate a \u2018neural duration judgment\u2019 for each trial. This procedure allowed us to obtain, for each session, a quantitative description of how well simultaneously recorded neurons could categorize stimuli, i.e., a neurometric function comparable to the behavioral psychometric function (Figure 3b). Consistent with duration information being encoded at the population level, we found that for sessions in which greater numbers of neurons were recorded simultaneously (i.e. upper tercile of sessions with regard to population size) psychometric and neurometric performances were similar and strongly correlated (r2 = 0.76, p<0.001; Figure 3c). These results demonstrate that a read out of stimulus category from even modestly-sized ensembles of striatal neurons was in many cases sufficient to explain the pattern of duration judgments produced by behaving subjects.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig3-v2.jpg)\n\n**Figure 3.:** (a) Low dimensional representation of population state at interval offset for one example session. Black line is the decision rule (see text). (b) Example psychometric, neurometric and videometric curves for the same session as in (a). (c) Slopes of psychometric and neurometric curves for all sessions. Color indicates terciles of population size. Highlighted data point corresponds to the session in (a-b). Inset: regression slope of neurometric and videometric curves for sessions in the upper tercile. See Figure 3\u2014figure supplement 2 for psychometric-videometric comparison at interval offset and choice. (d) Performance of an ideal observer analysis in predicting stimulus category, applied to neural (orange) and video (blue) data obtained at different times relative to interval offset. Thin lines corresponds to individual sessions. Thick lines are averages. (e) The orange and blue curves (thin lines in panel (d)) for corresponding sessions were regressed against each other at different time shifts. The regression R2\u00a0values for each session are shown in thin grey lines. The average over all sessions is shown in black. Sizes of black squares indicate the number of sessions with significant positive correlations (largest squares at 200 and 100 ms correspond to 5 sessions and smallest one at -200 ms to 1, out of a total of 8 sessions). (f) Psychometric curves constructed from trials separated according to whether the population state at stimulus offset had advanced more or less along the mean trajectory. Color indicates terciles shown in (g). (g) Distributions of projection on normalized mean trajectory for all trials for each stimulus are shown (stimuli color coded as in [a]). The equal area bins shown correspond to the groups of trials used for constructing the three psychometric curves shown in panel (f). Data in f-g are from rat Bertrand. See Figure 3\u2014figure supplement 3 for\u00a0the remaining two subjects.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Example frames for a 0.60 and 2.40 s stimulus trials (top and bottom, respectively) at stimulus offset. (b) Superimposed frames (thresholded and background subtracted) for each stimulus type (same color conventions as in Figure 3a). (c) sum of all frames shown in (b). (d) Same as in (c) but excluding the easiest short (0.60 s) and long (2.40 s) stimulus trials. The data show are from the same session presented in Figure 3b.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Neurometric (orange data points) or videometric (purple data points) logistic slope plotted against the psychometric slope for each session in the upper tercile with respect to simultaneously recorded population size. (b) Videometric slope plotted against the psychometric slope where the videometric curve was built using image frames taken at the time that animals expressed their choice.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Psychometric curves constructed from trials separated according to whether the population state at stimulus offset had advanced more or less along the mean trajectory for rats Edgar (top) and Fernando (bottom) (b) Distributions of projection on normalized mean trajectory for all trials for each stimulus are shown for rats Edgar (left) and Fernando (right). The equal area bins shown correspond to the groups of trials used for constructing the three psychometric curves shown in (a).\n\nIt has been previously reported\u00a0that duration judgments could be predicted by animals\u2019 ongoing behavior during the interval period\u00a0(Gouv\u00eaa et al., 2014; Matthews and Lerer, 1987; Killeen and Fetterman, 1988; Fetterman et al., 1998; Machado, 1997; Machado and Keen, 2003). In addition, it is well known that striatal neurons can fire around movements\u00a0(Alexander and Crutcher, 1990; Jin and Costa, 2010). Could the categorization performance of striatal ensembles reflect activity related to movements the animal might be making during the task? To test to what degree ongoing behavior could explain the categorization performance of striatal neural activity, we applied an analogous classification analysis to video images taken of the animal just before interval offset (see Materials\u00a0and\u00a0methods). We found that our ability to categorize intervals using video frames was consistently poorer as compared to neural data collected at the analogous time periods during the task (Figure 3b, inset in Figure 3c, Video 1, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2a). In contrast, we were able to categorize stimuli as well as the animal using video frames taken at the point when animals expressed their choice at one of the reward ports (Figure 3\u2014figure supplement 2b). Furthermore, movement related responses in the striatum are known to occur both pre- and post-movement onset, much later than in other motor areas such as pre-motor and motor cortex\u00a0(Alexander and Crutcher, 1990). Thus, if purely movement-related activity were responsible for the categorization performance of striatal ensembles, we would expect ensemble performance to display a similar time course to that of video frames. Applying the same analyses at multiple points in time ranging from 500 ms preceding to 500 ms following stimulus offset revealed a strikingly different profile of categorization performance for video frames as compared to neural ensembles (Figure 3d\u2013e). Specifically, the time course of duration categorization by neural ensembles was best correlated with the duration categorization by video frames when using spikes collected between 400 ms and 200 ms preceding a reference video frame. These indicate that the categorization performance of striatal neurons was not simply related to the immediate sensorimotor state of the animal, and instead likely reflects that striatal neurons encode an internal neural representation of the state of animals\u2019 categorical decisions.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-media1.mp4.jpg)\n\n**Video 1.:** Superimposed video clips (thresholded and background subtracted) for each stimulus type and for the corresponding stimulus duration (same color conventions as in Figure 3a and Figure 3\u2014figure supplement 1). Red stop marks signal the end of each video and the corresponding stimulus duration.\n\nWe have shown thus far that categorical information about interval duration contained in the firing of striatal populations at the time of stimulus offset can explain the precision of animals\u2019 judgments about duration. However, in the task employed here, categorical judgments must be derived from a continuously evolving decision variable that represents how much time has elapsed since the onset of the stimulus. As indicated by the diversity of firing patterns (Figure 2d), the state of population activity evolved continuously during interval stimuli (Figure 3g, Figure 4a, Figure 3\u2014figure supplement 3b), a feature not captured by binary classification. Might trial to trial variations in population state predict the apparent speed of animals\u2019 internal representation of elapsed time? To test this possibility, we performed two additional analyses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig4-v2.jpg)\n\n**Figure 4.:** (a) Low dimensional representation of population state during entire interval period of correct trials. Line colors indicate interval duration (warmer colors are longer intervals, as in Figure 3a). Dots are placed at the interval offset end, and their color indicates judgment (blue: short; red: long). (b\u2013g) Population state and decoded time for a single long, near boundary stimulus interval (1.62 s). (b) Yellow curve is same as in (a). Red dots are 6 time points evenly spaced between interval onset and offset. Blue dots are projections of population state during short judgment trials. Grey lines link population states at equivalent time points. (c) Average cumulative distance travelled in full neural space along trajectory represented in (b) on long versus short judgment trials. (d) Posterior probability of time given population state at the time points indicated in (b), averaged within trials of each judgment type. (e,f) Same as (d) for the entire interval period. (g) Difference between posteriors for long and short judgment trials. Arrowheads indicate same time points used in (b,d). n = 433 neurons from 3 rats. See Figure 4\u2014figure supplement 1 for a different near boundary stimulus, and Figure 4\u2014figure supplement 2 for data from individual subjects.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Low dimensional representation of population state during entire interval period of correct trials. Line colors indicate interval duration (same color code as in Figures 3 and 4). Dots are placed at the interval offset end, and their color indicates judgment (blue: short; red: long). (b-g) Population state and decoded time for a single short, near boundary stimulus interval (1.38 s). (b) Green curve is the population state trajectory for long judgment trials. Red dots are 6 time points evenly spaced between interval onset and offset. Blue dots are projections of population state during short judgment trials. Grey lines link population states at equivalent time points. (c) Average cumulative distance travelled in full neural space along trajectory represented in (b) on long versus short judgment trials. (d) Posterior probability of time given population state at the time points indicated in (b), averaged within trials of each judgment type. (e,f) Same as (d) for the entire interval period. (g) Difference between posteriors for long and short judgment trials. Arrowheads indicate same time points used in (b,d).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11386/elife-11386-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a,e,i) Low dimensional representation of population state during entire interval period of correct trials of rats Bertrand (a), Edgar (e) and Fernando (i). Line colors indicate interval duration (warmer colors are longer intervals, as in Figures 3 and 4). Dots are placed at the interval offset end, and their color indicate choice (blue: short; red: long). (b,f,j) Yellow/green line is same as in (a,e,i) for a single near boundary stimulus interval (1.62/1.38 s; stimulus of highest choice variance for each subject). Red dots are 6 time points evenly spaced between interval onset and offset. Blue dots are projections of population state during short judgment trials. Grey lines link population states at equivalent time points. (c,g,k) Average cumulative distance travelled in full neural space along trajectory represented in (b,f,j) on long versus short judgment trials. (d,h,l) Difference between posteriors for long and short judgment trials for rats Bertrand (d), Edgar (h) and Fernando (l).\n\nFirst, we projected the state of simultaneously recorded neuronal populations at stimulus offset in individual trials onto the mean trajectory within each session, noted the fraction of the mean trajectory traversed for each trial, and pooled the data for each stimulus over all sessions within a given subject. Indeed, when population state at stimulus offset had advanced relatively more or less along the mean trajectory, animals were more likely to judge intervals as long or short respectively (Figure 3f\u2013g, Figure 3\u2014figure supplement 3). This effect was observed most consistently for interval stimuli that were closer to the category boundary, and thus variations in projected population state led to horizontal shifts in the psychometric curves (see Materials\u00a0and\u00a0methods). These data are consistent with striatal population state encoding a representation of elapsed time that is used by animals to determine categorical judgments. Indeed, such a pattern of population activity has been proposed as a suitable neural code for elapsing time\u00a0(Buonomano, 2014; Buonomano and Merzenich, 1995).\n\nHowever, if such a representation encodes elapsed time, and not only subjects\u2019 judgments in this task, neural activity should continuously traverse a non-repeating trajectory in state space in a manner that predicts duration judgments during presentation of particular stimuli. Indeed, even in a low dimensional projection of population activity, we found that network state ran ahead or behind depending on whether the animal judged a near boundary stimulus as long or short (Figure 4b\u2013c, Figure 4\u2014figure supplement 1b,c, Figure 4\u2014figure supplement 2b,f,j). The correspondence between population trajectory and duration judgments further suggests that striatal dynamics may form an internal representation of elapsed time that informed categorical decisions about duration. To directly test this hypothesis, we focused on stimuli near the category boundary and decoded time from the population using a naive Bayes decoder and asked whether such a representation correlated with animals\u2019 judgments, exhibiting choice probability\u00a0(Britten et al., 1996). We found that decoded estimates of time ran faster or slower when animals judged a given stimulus as long or short, respectively (Figure 4d\u2013g, Figure 4\u2014figure supplement 1d-g,\u00a0cross validated naive Bayes decoder; see Materials\u00a0and\u00a0methods). This indicates that striatal activity provides information about elapsing time, the continuously varying decision variable necessary to inform judgments in the task. Furthermore, if this information were read out and used to guide judgments, those judgments would match those of the rats.\n\nIf the striatal activity we describe above directly supported task performance, manipulating the striatum should modify duration judgments. To test whether this was the case, we bilaterally injected the GABAa receptor agonist muscimol (see Materials\u00a0and\u00a0methods). As a result, the duration sensitivity of animals\u2019 judgments dropped significantly as compared to interleaved saline control sessions (Figure 1c; psychometric slope on saline sessions = [1.03 1.20] vs on muscimol sessions = [0.28 0.67]; 95% confidence intervals), yet animals otherwise performed normally. These results, by demonstrating that duration categorization in this task was dependent on a normally functioning striatum, suggest that the neural signals we observed directly supported duration judgments. However, the possibility that muscimol infusions changed other functions important for task performance such as reward processing or memory for the mapping between time and choice can not be ruled out.\n\n## Discussion\n\nAttempts to understand the neural mechanisms of time estimation have begun to focus on continuously evolving population dynamics as a general mechanism for time encoding across the brain\u00a0(MacDonald et al., 2011; Mauk and Buonomano, 2004; Buonomano, 2014; Buonomano and Merzenich, 1995; Gershman et al., 2013). According to this view, time may be encoded by any reproducible pattern of activity across a population of neurons for as long as the pattern is continuously changing and non-repeating. However, no study to date has directly compared the speed of such \u201cpopulation clocks\u201d with the duration judgments of the behaving subjects in which they are found. We show that as rats judged the duration of interval stimuli, striatal neurons displayed dynamics in firing rate that contained information about elapsed time. Furthermore, this information was sufficient to account for the animals\u2019 perceptual decisions, and was not accompanied by systematic differences in outwardly expressed behavior over time. Combined with the observation that striatal inactivation caused a specific decrement in timing performance, these data suggest that striatal dynamics form a central neural representation of time that guides animals\u2019 decisions about duration. Such a coding mechanism in the striatum is well situated to inform the appropriate selection of actions through downstream circuitry involving the globus pallidus, substantia nigra, and various extrinsic connections between the basal ganglia and brainstem, thalamic, and cortical motor areas\u00a0(Steiner and Tseng, 2010). An intriguing question for future studies is how the striatal dynamics we observed during the interval discrimination task are generated. Neurons in multiple cortical layers spread across the entire cortical mantle, as well as thalamic, pallidal, and neuromodulatory populations provide input to the striatum. While time coding has been assessed in some of these populations, a careful analysis of simultaneously recorded populations that might uncover causal relationships between signals in multiple brain areas has not been carried out. Furthermore, local striatal circuitry may also play a role in shaping dynamics. However, the coding properties tested here could be tested in other brain areas where timing signals have been identified such as the hippocampus\u00a0(Pastalkova et al., 2008; MacDonald et al., 2011), medial prefrontal\u00a0(Kim et al., 2013; Xu et al., 2014), parietal\u00a0(Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor\u00a0(Lebedev et al., 2008) cortices, and the cerebellum\u00a0(Mauk and Buonomano, 2004), among others. By comparing the signals recorded simultaneously in multiple brain areas during time estimation tasks, it should be possible to identify signatures of functional interaction between brain areas where they exist. Such an approach promises to elucidate where and how time information encoded at the population level is used by the brain to support the myriad time-dependent functions we and other organisms rely on for survival.\n\n## Materials and methods\n\n### Subject\n\nSix male Long-Evans hooded rats (Rattus norvegicus) between the ages of 6 and 24 months were used for this study. Three rats were used for neural recordings and three rats for pharmacological manipulations. All experiments were in accordance with the European Union Directive 86/609/EEC and approved by the Portuguese Veterinary General Board (Direc\u00e7\u00e3o-Geral de Veterin\u00e1ria, project approval 014303 - 0420/000/000/2011).\n\n### Behavior\n\nRats were trained to perform a\u00a0previously\u00a0described two-alternative forced-choice timing task\u00a0(Gouv\u00eaa et al., 2014). Briefly, animals had to categorize time intervals as either long or short by making left/right choices. For each session the animals were placed in a custom made behavioral box containing 3 nose ports and a speaker. Each trial was self-initiated by entry into the central nose port and was followed by a pair of brief auditory tones (square pulses at 7,500 Hz, 150 ms) separated by an interval selected randomly out of 8 possible durations (0.6, 1.05, 1.26, 1.38, 1.62, 1.74, 1.95 and 2.4 s). Judgments were reported at two laterally located\u00a0nose ports. Left responses were reinforced with a drop of water (solenoid valves, Lee Company) after intervals longer than 1.5 seconds, and right responses otherwise. Incorrect responses were punished with a brief white noise burst (150 ms) and a time out (10 s). High speed video (120 fps) was collected from above during task performance. Psychometric functions were fitted using the following two-parameter logistic function\n\n$$\nf(x)=\\frac{1}{1+e^{-b(x-c)}}\n$$\n\nwhere b controls the slope and c is the inflection point of the curve.\n\n### Electrophysiology\n\nRats were implanted with 32-channel tungsten microwire moveable array bundles (Figure 2\u2014figure supplement 1a, Innovative Neurophysiology) under isoflurane anaesthesia. All recordings (Figure 2\u2014figure supplement 1) targeted dorsal striatum with coordinates centred at +0.2\u00a0mm AP and \u00b1 3 mm ML (rat Bertrand), and +0.84\u00a0mm AP and \u00b1 2.5\u00a0mm ML (rats Edgar and Fernando), from Bregma. Rats were given a week of post-surgical recovery and array placements were confirmed with histology (Figure 2\u2014figure supplement 1c). Neural signals were recorded at 30 kHz during behavior, amplified and band-pass filtered at 250\u2013750 Hz (Cerebus - Blackrock Microsystems). Each independent bundle was moved 50-100 \u03bcm after every recording session to ensure that independent neural populations were sampled across recording sessions. Waveforms corresponding to action potentials from single neurons were sorted offline using principal component analysis (PCA) (offline sorter, Plexon). All remaining analysis were run in Matlab (Mathworks) software. We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions). The general result was found in all subjects. Sample size was not computed during study design. To build PSTHs, spikes were counted in 2-ms bins and convolved with a Gaussian kernel with 25-bin standard deviation. PSTHs in Figure 2d were ordered by angular position in the space formed by the first 2 principal components describing firing dynamics (i.e., dimensions are all time bins within interval period, samples are each neuron\u2019s mean PSTH). This method\u00a0(Geffen et al., 2009) orders cells with respect to their dynamics while taking into consideration the full response profile over the relevant temporal window, and not just a single response feature such as peak response time.\n\n### Pharmacology\n\nWe implanted 3-mm 20-gauge stainless steel guide cannulae (Bilaney) bilaterally into the striatum of 3 rats [+0.84\u00a0mm anterior-posterior (AP), \u00b1 2.5\u00a0mm medial-lateral (ML), from Bregma, and -3mm dorsal-ventral (DV, from cortex surface) under isoflurane anesthesia. After one week of post-surgical recovery and 4 days of training, rats were injected with either vehicle (saline, PBS 1x) or muscimol (GABA-A agonist, 100 mg/L (rats Albert and Yuri) and 300 mg/L (rat Zack), SigmaTM) solutions in four alternate days. Two 1-\u03bcL syringes (Hamilton), attached to an injection pump (Harvard Apparatus) through 20-gauge internal cannulae that extended 1.5 mm bellow the guide cannulae, injected 0.6 \u03bcL of solution per site during 2.5 min. The internal cannulae were left in place for an additional 1.5 min and the rats were given a 45-min recovery period in their home-cage before starting the task. Cannula placements were confirmed by histology (Figure 1\u2014figure supplement 1). The general result was found in all sessions of all subjects. Sample size was not computed during study design.\n\n### Preference index\n\nWe counted spikes during the last 500 ms of the stimulus period, and built two separate spike count distributions for short and long judgment trials. Next, we used a ROC analysis to measure the separation between distributions (95% bootstrap confidence interval, 1000 iterations). We then transformed the area under the ROC curve (auROC \u2208 [0,1]) into a preference index (k = 2*auROC - 1; k \u2208 [\u22121,1]). We adopted the convention that neurons with positive preference indices fired preferentially for long stimuli (Figure 2e).\n\n### Low dimensional representations of population state\n\nWe refer to the vector describing instantaneous firing rates (measured within 500-ms wide, 10-ms apart, overlapping time bins) across a population of neurons as the population state. The population state vector is a high dimensional variable (i.e., it has as many dimensions as neurons). With the purpose of visualizing population state in 2d plots, we employed standard dimensionality reduction techniques. In Figure 3a, we chose to represent in the abscissa a direction that emphasizes the separability between short and long stimulus trials (i.e., the direction that maximizes variance between groups while minimizing variance within groups; Fisher\u2019s linear discriminant; see below), and in the ordinate the axis of maximal variance that is also orthogonal to the abscissa (i.e. first principal component calculated in the null space of the linear discriminant). In Figure 4a\u2013b, population state is represented in the space formed by the first 2 principal components describing population state, calculated during presentation of the interval for which choice variance is maximal (i.e. dimensions are neurons, samples are averaged spike counts for the time bins within that interval).\n\n### Neurometric curves\n\nFor each trial in a session we characterized neural population state as a vector r = (r1, r2,... , rN), where rn is the number of spikes fired by neuron n \u2208 [1,N] within the last 500 ms of the interval period in that trial. Next, for all trials but one from each session (training set; leave-one-out cross-validation procedure), we found the linear discriminant that best separated population state vectors according to whether they came from long or short interval trials (Fisher\u2019s linear discriminant analysis, LDA). The linear discriminant is given by\n\n$$\nw\u00a0=argmax\\frac{w^{T}S_{B}w}{w^{T}S_{W}w}=S_{W}^{-1}(\\mu_{1}-\\mu_{2})\n$$\n\nwhere w is the vector of coefficients for the linear discriminant, SB is the between class covariance, SW the within class covariance and \u00b51 and \u00b52 are the means of all points in class 1 and class 2 respectively. A threshold placed along the linear discriminant was then used as a decision rule applied to neural data from the remaining trial (test set). Figure 3a depicts population vectors from an example session (projection 1: linear discriminant, no cross-validation; projection 2: first principal component of the orthogonal subspace; black line: decision rule). We iterated over this procedure until all trials had been tested, thus obtaining for each trial a \u2018neural duration judgment\u2019. In analogy with behavioral judgments, we used two parameter logistic fits to obtain a quantitative description of the performance of simultaneously recorded neurons in categorizing stimuli -the neurometric function (Figure 3b, orange curve).\n\n### Videometric curves\n\nFull session videos (256x192 pixels resolution) were cut into 3-s long clips with Bonsai\u00a0(Lopes et al., 2015). Individual frames from approximately 75 ms before interval offset were used for this analysis (Figure 3\u2014figure supplement 1). This buffer was added to ensure that all frames used preceded stimulus offset. Images were first represented as vectors composed of individual pixel luminance values. Given that image sequences tend to lie on curved low dimensional manifolds in pixel space\u00a0(Pless, 2003), any slight differences in behavioral state reflected in images collected at the offset of short and long interval categories are not necessarily expected to be linearly separable. Thus, we employed isomap\u00a0(Tenenbaum and Silva, 2000), a non-linear dimensionality reduction method, to obtain an information rich yet low dimensional representation of animals\u2019 ongoing behavior. This approach has the advantage over tracking methods that it does not make assumptions as to what part of the animals\u2019 movements might provide information about stimulus category. The neighborhood size, used to compute the shortest paths between data points, was set to 25 frames to minimize, on average, the dimensionality at which the reconstruction error elbow occurred. In analogy with the neurometric curves, for each stimulus type, we then trained a linear discriminant (leave-one-out cross-validation procedure) to classify frames into those that were recorded during trials where a \u2018short\u2019 or \u2018long\u2019 stimulus interval was presented. The classification was performed in the reduced space determined by isomap. As a positive control for the method, we repeated the same analysis for frames captured at the moment animals expressed their judgment by inserting their snout at one of the two choice ports (Figure 3\u2014figure supplement 2). Here, the neighborhood size was chosen to be the minimum for which all frames (from a single session) could be included in a single embedding. This analysis was done for all usable videos (8 out of 11) of sessions in the upper tercile with regard to population size.\n\n### Time course of classification performance from neural and video data\n\nTo compare how the decoding performance using neural and video data evolved over time, the classification analyses described in Neurometric curves and Videometric curves was performed every 100 ms within a one second window centered around stimulus offset. Video frames at the each time point and neural data in a 200 ms time bin terminating at each time point were used for the analysis. This generated neural and video classification curves that described the ability of simultaneously recorded neural ensembles and video frames to correctly classify interval stimuli as long or short (Figure 3d). To determine the relative timing of classification ability in neural ensembles and behavior, we regressed the neural classification curve against the video classification curve for shifts ranging from \u2212300 ms to 300 ms in 100 ms steps (Figure 3e).\n\n### Psychometric curves split by population state at interval offset\n\nWe projected neural activity (of populations composed of simultaneously recorded neurons) on individual trials in high dimensional neural space onto the mean trajectory of those neurons during the delay period for correct trials. Neural activity was defined as the vector of firing rates of the population obtained by convolving spike trains using a causal kernel given by gamma density function with parameters \u03b8 = 100 ms and k = 2. We normalized these projections by the length of the mean trajectory of that group of neurons for the longest interval. Pooling normalized projections over all sessions for each animal, we plotted, for each stimulus, distributions of normalized projections at interval offset. To test whether distance traversed along the mean trajectory is predictive of animals' perceptual report, we separated the distribution of pooled projections for each stimulus into 3 bins. Psychometric curves were constructed using trials from each bin. To quantify the key differences\u00a0between each of these psychometric curves, we performed model comparison using the following 4 parameter logistic function\n\n$$\nf(x)=d+\\frac{a-d}{1+e^{-b(x-c)}}\n$$\n\nwhere b controls the slope, c is the inflection point and a and d are the maximum and minimum values of the curve respectively. For two of three animals (Bertrand and Edgar), the model that best accounted for the differences between the three curves (based on Bayesian Information Criterion (BIC) scores) was one with only horizontal shifts between the curves. In the third animal (Fernando), the model that best fit the data was one in which the fit to the three curves differed in both horizontal shift and slope.\n\nA trial's projection on the mean trajectory can be interpreted as a method for decoding time from neural state. Hence, trials that are outliers in the distribution of projections on the mean could potentially correspond to trials where the animal was disengaged. To remove such trials we defined a fraction (60%) of normalized trajectory around the mode of the distribution of pooled projections for each stimulus and excluded trials with projections outside this window.\n\n### Population decoder\n\nWe decoded elapsed time from striatal population activity using a cross validated, flat prior naive Bayes decoder. For each neuron n \u2208 [1,N], spike counts rn were observed in 500-ms wide, 10-ms apart, overlapping time bins within the interval period (time referring to the right edge of the bin). For a given rn, the probability that the current time is t was estimated as the\u00a0likelihood of observing rn\u00a0spikes at time t:\n\n$$\nP(t|r_{n})\u221dP(r_{n}|t)\n$$\n\nTo obtain the likelihood term P(rn\u00a0| t), we estimated the joint distribution P(rn, t) by computing, for each time bin, a weighted histogram of spike counts across all correct trials. For trials in which stimulus interval i was presented, spike counts contributed to the histogram with weight wi defined\u00a0as the normalized choice variance associated with that interval,\n\n$$\nw_{i}=P(C_{S}|i)P(C_{L}|i)\n$$\n\nwhere CS and CL indicate short and long choices respectively. As a result, near boundary interval\u00a0trials had a greater influence on the estimate of the joint distribution. Histograms were then smoothed using local linear regression (lowess) and normalized to unit area. When decoding from correct trials, leave-one-out cross validation was implemented by computing the joint distribution from all correct trials but the decoded one; incorrect trials were decoded using an estimate of the joint distribution computed from all correct trials. Multi-session population state vectors r = (r1, r2,... , rN) were obtained by concatenating together data from trials of same stimulus and choice type.\u00a0By assuming statistical independence between spike counts of different neurons in r, we could compute population estimates of t as the product of single neuron estimates:\n\n$$\nP(t|r)\u221d\\prodn=1NP(r_{n}|t)\n$$\n\nData presented is the average over 100 random concatenations.\n",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0135efb9-cf08-4342-a017-b01e2ff24517",
+      "submission_id": "7dc38288-cd57-4faa-b186-5167026c96bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy Behrens, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11386.018](https://doi.org/10.7554/eLife.11386.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Striatal dynamics explain duration judgments\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Timothy Behrens as the Senior and Reviewing Editor.\n\nThe following individual involved in review of your submission has agreed to reveal his identity: Patrick Simen (Reviewer).\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper addresses an important and understudied problem: how does the brain encode time on the scale of a second or so? The authors use a behavioral task in which rats are trained to nose poke left or right depending on the interval between two auditory tones \u2013 specifically, whether the interval was short or long in relation to a 1.5 s reference. Striatal recordings from hundreds of cells revealed a robust temporal code: it was possible to determine elapsed time from the onset of the trial based on the current population vector with a high degree of accuracy. Furthermore, it was possible to predict the incorrect behavioral responses based on whether the population trajectory was \"running early\" or \"running late\". Together with timing-effects of muscimol infusions in striatum (although see concerns below), these data provide and important physiological link between striatal processing and sensory timing.\n\nEssential revisions:\n\n1) The reviewers raised serious concerns about the muscimol data.\n\nFirst, the data are from two rats. The reviewers do not think it is easy to make interpretations from two animals and ask that you increase the number. Whilst it is eLife policy not to ask for major new data acquisition under revision, the reviewing editor agrees that this is important to solidify the results in this case and believe that you could collect the data within the two month framework. The reviewers think that a good benchmark for a muscimol experiment is 5-6 animals. Please let us know early if you will not be able to perform the extra data acquisition.\n\nSecond, the reviewers were concerned that it is very difficult to tell where the cannulae are from the graphic (they are many hundreds of microns wide) \u2013 they might very well be in the dorsolateral striatum. Actual histology would be better.\n\nLastly in this section, there were questions about the behavioural effects of muscimol.\n\nWhy didn't muscimol systematically retard or advance the timer if it is truly a clock? It appears that muscimol infusions just increased the variability of the choices, but that doesn't mean that the striatum isn't just listening to a \"clock\" somewhere else in the brain. I would love to see that a striatal clock could, for example be physiologically sped up or slowed down, as in the amphetamine studies of Meck and colleagues, but I don't think that's what's shown here. Given the role of striatum in reward-guided behavior, I could imagine that inactivating it just makes the task not worth paying attention to, or that the decision stage is disrupted while the \"clock\", wherever it is, is still intact.\n\n2) With respect to the video analysis and controls for movement.\n\nThe reviewers thought that the video analysis likely did a good job controlling for motion effects, but did not think they were clearly presented and had some specific concerns (see point from reviewer directly below). In the discussion, one reviewer suggested including a video that could make the classification clearer. There were also suggestions that the claim could be strengthened by including basic motor control tasks (open-field, circling, paw-rearing) in the muscimol animals, but in the discussion it was agreed that whilst such data would be convincing if you have it, this is not essential.\n\nSpecific point from reviewer:\n\nI don't understand the author's valiant effort to use classifiers to analyze movement. Traditionally, force-controlled or highly stereotyped motor tasks (see work by Whishaw) are required \u2013 in this domain, video assessing kinematics is useful. As presented, I'm not sure if we're looking at movement preparation, licking, reward expectation, etc. See relevant work by Cowan et al., and David Redish on the issue of 'embodied' movement. The animals' behavioral reports are most helpful; as these at least have some consistent events.\n\n3) There were also questions pertaining to the analysis and interpretation of the neural data.\n\nI don't think the evidence is particularly strong that time is specifically encoded in the striatum in the way proposed. It seems plausible to me that the striatal neurons are just encoding an output stage of the decision process, in which a short or long choice is preferred. Yes, it is possible to decode subjective time from it, but I would imagine you could do that with population activity recorded from many different brain areas (in particular, areas examined in several of the papers cited here).\n\nand relatedly:\n\nThis paper provides nice support for the notion that time is encoded in the evolving population dynamics of neurons. The authors also provide some evidence that the striatum is directly involved in the task. Less clear, and admittedly far outside the scope of this paper or any other single paper, is whether the code/dynamics is generated within the striatum. A few sentences as to the authors' thoughts on this issue would be useful, and help guide future research.\n\nWith respect to the following comment from one reviewer \u2013 in the discussion the reviewers and editor agreed that the figures could be clarified, but leave it up to you whether you think this can be best achieved using a PCA.\n\nThe neuronal analyses are unclear to me. In Figure 2, The rasters are helpful, as are the averages, but I'd favor something like PCA to help explain the dataset, as it seems like all patterns are represented in their large population (Figure 2D). For Figure 3C is the color population size in terms of neurons? I think I don\u2019t understand what is being plotted in Figure 3F? I'd like more detail on the 'neurometric' ideal observer \u2013 it'd be nice to see the predictions for a single session, and for single population, and even a single neuron as I'm not sure how much neuron population size matters (is that Figure 3C?), and I'm not sure what the 'density' in Figure 3G shows \u2013 or the corresponding plots in the supplement. At the end of the day, is it surprising that striatal neurons predict temporal durations? Also, could the authors define 'psychometric'? It's not clear what this means. Figure 3 likely needs to be greatly clarified for most audiences.\n\n4) The reviewers were not clear on where in the striatum the authors are interested in. The author's electrodes span the whole striatum, and dorsolateral striatum is completely different than dorsomedial striatum. See work from Henry Yin. Some electrodes even seem to reach ventral striatum.\n",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6c0df9d5-e928-445e-a6a8-dd3bb998be44",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C1",
+      "claim": "The striatum is an input structure of the basal ganglia implicated in reinforcement learning, decision making, and interval timing.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum is an input structure of the basal ganglia implicated in several time-dependent functions including reinforcement learning, decision making, and interval timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the striatum's role in various cognitive functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "c86ef7c9-8b2b-48b0-a2b1-094d2b112846",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C2",
+      "claim": "The dynamics of striatal neurons predicted duration judgments in rats performing a duration categorization task.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dynamics of striatal neurons predicted duration judgments, and that simultaneously recorded ensembles could judge duration as well as the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from neural recordings during task performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f7bfecc8-8717-449b-b250-f01ddc04328c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C3",
+      "claim": "Simultaneously recorded striatal ensembles could judge duration as well as the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dynamics of striatal neurons predicted duration judgments, and that simultaneously recorded ensembles could judge duration as well as the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the neurometric analysis comparing neural ensemble performance to behavioral performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "27a2eae1-8de5-47e3-8e1c-ff95da78ad85",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C4",
+      "claim": "Striatal neurons were necessary for duration judgments, as muscimol infusions produced a specific impairment in animals' duration sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, striatal neurons were necessary for duration judgments, as muscimol infusions produced a specific impairment in animals' duration sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological manipulation data showing impaired performance after muscimol infusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "c555c387-24ca-45f7-a979-e1c0dfc0f421",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C5",
+      "claim": "Time as encoded by striatal populations ran faster when rats judged a duration as longer.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we show that time as encoded by striatal populations ran faster or slower when rats judged a duration as longer or shorter, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by decoding analysis showing correlation between neural trajectory speed and behavioral judgments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "959eebd3-197b-48e3-aebf-c9deca2bc889",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C6",
+      "claim": "Time as encoded by striatal populations ran slower when rats judged a duration as shorter.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we show that time as encoded by striatal populations ran faster or slower when rats judged a duration as longer or shorter, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by decoding analysis showing correlation between neural trajectory speed and behavioral judgments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "ec9df8bc-9cde-4562-9b4a-1c6124803b80",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C7",
+      "claim": "The speed with which striatal population state changes supports the fundamental ability of animals to judge the passage of time.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the speed with which striatal population state changes supports the fundamental ability of animals to judge the passage of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined results of neural recordings, manipulations, and decoding analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "6bcd98e9-94d1-4c70-95e2-62d762d1c6cb",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C8",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "5ec5051e-732c-4294-b870-0876adcfd5a7",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C9",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "13b07147-d137-4619-b06b-a0fa9b0cb58a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C10",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in parietal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "3edd4a7e-fc05-4294-bc3d-48e0505771fd",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C11",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "965274ca-a1ab-4c61-84b2-08a3ed0e2bb5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C12",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "c2fd222f-0989-4472-bccd-ad12ea708b89",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C13",
+      "claim": "Dynamics that allow for robust representation of time by populations of neurons have been identified in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have identified dynamics that allow for robust representation of time by populations of neurons in multiple areas including the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, cerebellum (Mauk and Buonomano, 2004), and the striatum (Matell et al., 2003; Jin et al., 2009; Adler, 2012; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "10396772-5bb2-4644-bdca-55878d0e282d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C14",
+      "claim": "Any dynamics that result in a continuously-evolving and non-repeating population state can be used to encode time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, any dynamics that result in a continuously-evolving and non-repeating population state can be used to encode time (Buonomano, 2014), and it is not known whether such temporal representations would inform subjects' judgments of duration or merely covary with elapsing time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "79227c71-fe31-45ab-b044-1b2839bb9cab",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C15",
+      "claim": "It is not known whether temporal representations in neural dynamics inform subjects' judgments of duration or merely covary with elapsing time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, any dynamics that result in a continuously-evolving and non-repeating population state can be used to encode time (Buonomano, 2014), and it is not known whether such temporal representations would inform subjects' judgments of duration or merely covary with elapsing time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "14d4b054-4dd6-4523-8062-e47fc4ea5f5b",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C16",
+      "claim": "The striatum is known to be involved in reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum, a brain structure known to be involved in reinforcement learning and decision making (Lau and Glimcher, 2008; Samejima et al., 2005; Lee et al., 2015), has been implicated in interval timing by several lines of evidence (Hinton and Meck, 2004; Harrington et al., 2009; Wencil et al., 2010; Malapani, 1998; Meck, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "a8028d71-9cce-4b98-ab75-9f7e602e4ced",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C17",
+      "claim": "The striatum is known to be involved in decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum, a brain structure known to be involved in reinforcement learning and decision making (Lau and Glimcher, 2008; Samejima et al., 2005; Lee et al., 2015), has been implicated in interval timing by several lines of evidence (Hinton and Meck, 2004; Harrington et al., 2009; Wencil et al., 2010; Malapani, 1998; Meck, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "ced1f0e9-cf0c-42c7-9712-3c5cc6812f3b",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C18",
+      "claim": "The striatum has been implicated in interval timing by several lines of evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum, a brain structure known to be involved in reinforcement learning and decision making (Lau and Glimcher, 2008; Samejima et al., 2005; Lee et al., 2015), has been implicated in interval timing by several lines of evidence (Hinton and Meck, 2004; Harrington et al., 2009; Wencil et al., 2010; Malapani, 1998; Meck, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0fb88e56-f71f-4528-a0a3-f0ed45c3923c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C19",
+      "claim": "Whether dynamics in striatal activity can explain the perceptual performance of behaving subjects is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether dynamics in striatal activity can explain the perceptual performance of behaving subjects is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies the knowledge gap addressed by the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "da8fd463-5bda-43b7-85d3-2b32233f8192",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C20",
+      "claim": "Rats were trained to judge whether time intervals belonged to a long or short category.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the duration sensitivity of subjects' timing judgments, we trained rats to judge whether time intervals belonged to a long or short category (Gouv\u00eaa et al., 2014) (see Materials and methods; Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and behavioral task used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "5cbf5082-b3d2-4697-8f3c-b9056addb13d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C21",
+      "claim": "Two brief tones separated in time by an interval randomly selected from the set I = {0.6, 1.05, 1.26, 1.38, 1.62, 1.74, 1.95, 2.4} seconds were presented at each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "At each self-initiated trial, two brief tones (interval onset, offset) were presented separated in time by an interval randomly selected from the set I = {0.6, 1.05, 1.26, 1.38, 1.62, 1.74, 1.95, 2.4} seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus parameters used in the behavioral task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "9e4af722-085a-468b-9d28-9dc7588fe766",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C22",
+      "claim": "Choosing the left side was reinforced with water after intervals longer than 1.5 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Judgments about interval duration were reported at two laterally located nose ports: choosing the left side was reinforced with water after intervals longer than 1.5 seconds (long stimuli), and the right side otherwise (short stimuli, Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the reward contingency in the behavioral task, also shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "e94940a8-8ed3-4629-902e-b807c9ad53c5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C23",
+      "claim": "Choosing the right side was reinforced with water after intervals shorter than or equal to 1.5 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Judgments about interval duration were reported at two laterally located nose ports: choosing the left side was reinforced with water after intervals longer than 1.5 seconds (long stimuli), and the right side otherwise (short stimuli, Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the reward contingency in the behavioral task, also shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "4eafc598-524d-4bba-8ac5-5e77ea3a0b3e",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C24",
+      "claim": "Animals were required to withhold choice until interval offset.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals were required to withhold choice until interval offset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a constraint of the behavioral task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f7cd0815-4a06-4b25-a795-81e7ba84fc27",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C25",
+      "claim": "Animals made virtually no errors when categorizing the easiest (i.e. shortest and longest) intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals made virtually no errors when categorizing the easiest (i.e. shortest and longest) intervals, but categorization performance declined as intervals approached the 1.5 second categorical boundary (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes behavioral performance data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "59355bc9-7a80-4eb8-bbbb-3e3c1cc73709",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C26",
+      "claim": "Categorization performance declined as intervals approached the 1.5 second categorical boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals made virtually no errors when categorizing the easiest (i.e. shortest and longest) intervals, but categorization performance declined as intervals approached the 1.5 second categorical boundary (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes behavioral performance data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "473444d4-776f-430a-b91f-15f442a23878",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C27",
+      "claim": "Action potentials were recorded from populations of single striatal neurons targeting dorsal-central striatum during task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded action potentials during task performance (see Materials and methods), from populations of single striatal neurons targeting dorsal-central striatum, an area where manipulations produced timing deficits (Meck, 2006) (Figure 2a. For a reconstruction of striatal recording sites see Figure 2\u2014figure supplement 1.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the neural recording methodology and target brain region.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "4baa819d-7341-44cd-850b-81e6f72d3b2a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C28",
+      "claim": "Dorsal-central striatum is an area where manipulations produced timing deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded action potentials during task performance (see Materials and methods), from populations of single striatal neurons targeting dorsal-central striatum, an area where manipulations produced timing deficits (Meck, 2006) (Figure 2a. For a reconstruction of striatal recording sites see Figure 2\u2014figure supplement 1.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "1e99f314-7649-490f-a71d-a287236d085d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C29",
+      "claim": "Striatal neurons displayed diverse firing patterns, with different units firing at different times within the interval period.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that striatal neurons displayed diverse firing patterns, with different units firing at different times within the interval period (Figure 2b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural activity patterns observed in the data and shown in Figure 2b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "58d67be1-25a4-435e-9882-25a62e1efe3c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C30",
+      "claim": "The majority of neurons (~57%) preferred either short or long stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of neurons (~57%) preferred either short or long stimuli (Figure 2e; short-preferring: n = 159/433, 36.7%; long-preferring: n = 87/433, 20.1%; permutation test, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ROC analysis of neural data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "1d5ad203-7430-473e-98a7-d80dea21e591",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C31",
+      "claim": "36.7% of neurons were short-preferring.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of neurons (~57%) preferred either short or long stimuli (Figure 2e; short-preferring: n = 159/433, 36.7%; long-preferring: n = 87/433, 20.1%; permutation test, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ROC analysis of neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "d4ef8d47-b122-4620-9165-9669599df638",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C32",
+      "claim": "20.1% of neurons were long-preferring.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of neurons (~57%) preferred either short or long stimuli (Figure 2e; short-preferring: n = 159/433, 36.7%; long-preferring: n = 87/433, 20.1%; permutation test, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ROC analysis of neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "63e13dfe-4559-4f99-ae90-8ce67874bf6d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C33",
+      "claim": "Short-preferring neurons displayed higher firing on average prior to the 1.5 s category boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, short-preferring neurons displayed higher firing on average prior to the 1.5 s category boundary, after which long-preferring neurons displayed higher firing (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes temporal dynamics of neural activity shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "b916ebc7-aae3-4103-8b9b-90104946e249",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C34",
+      "claim": "Long-preferring neurons displayed higher firing after the 1.5 s category boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, short-preferring neurons displayed higher firing on average prior to the 1.5 s category boundary, after which long-preferring neurons displayed higher firing (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes temporal dynamics of neural activity shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "07b43258-575b-4617-9244-272ef3cc3c4c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C35",
+      "claim": "The averaged activity patterns of short- and long-preferring neurons resemble the likelihood of receiving reward on a moment-by-moment basis should the animal choose short or long.",
+      "claim_type": "EXPLICIT",
+      "source": "These averaged activity patterns resemble the likelihood of receiving reward on a moment-by-moment by basis should the animal choose short or long (compare with reward contingency in Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference comparing neural activity patterns to reward contingencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "8110eb12-8259-49ce-ba95-33553e945e7b",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C36",
+      "claim": "Similar signals have been previously observed in the parietal cortex of monkeys performing a similar timing task.",
+      "claim_type": "EXPLICIT",
+      "source": "Such signals, previously observed in the parietal cortex of monkeys performing a similar timing task (Leon and Shadlen, 2003) and in the striatum in a value based decision task (Lau and Glimcher, 2008), are potentially useful for guiding choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "4f0ad82d-e7dc-45c2-9926-faf48d2137e3",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C37",
+      "claim": "Similar signals have been previously observed in the striatum in a value based decision task.",
+      "claim_type": "EXPLICIT",
+      "source": "Such signals, previously observed in the parietal cortex of monkeys performing a similar timing task (Leon and Shadlen, 2003) and in the striatum in a value based decision task (Lau and Glimcher, 2008), are potentially useful for guiding choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "1da06ca9-4b0e-46e5-8136-a0630e9fceb5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C38",
+      "claim": "In trials wherein a near boundary interval was judged as long, firing of the short preferring subpopulation dropped faster and the long preferring subpopulation rose faster, so that the two curves crossed before the 1.5 s boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in trials wherein a near boundary interval was judged as long, firing of the short (long) preferring subpopulation dropped (rose) faster, so that the two curves crossed before the 1.5 s boundary (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural dynamics that predict choice, shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "cab43843-e31b-4288-bdd9-6fba4dad2199",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C39",
+      "claim": "In trials wherein a near boundary interval was judged as short, the short and long preferring subpopulations evolved more slowly so that at interval offset the short preferring subpopulation was still firing at a higher level and a crossing point had not yet been reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in trials wherein the same interval was judged as short, the two curves evolved more slowly so that at the time of interval offset the short preferring subpopulation was still firing at a higher level and a crossing point had not yet been reached (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural dynamics that predict choice, shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "65a908b4-15a7-4b8c-b325-beb0aeae3a3a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C40",
+      "claim": "For sessions in which greater numbers of neurons were recorded simultaneously (upper tercile), psychometric and neurometric performances were similar and strongly correlated (r2 = 0.76, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with duration information being encoded at the population level, we found that for sessions in which greater numbers of neurons were recorded simultaneously (i.e. upper tercile of sessions with regard to population size) psychometric and neurometric performances were similar and strongly correlated (r2 = 0.76, p<0.001; Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from comparing behavioral and neural performance shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "56a7f736-0221-4e03-aed6-457d6b4e033a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C41",
+      "claim": "A read out of stimulus category from even modestly-sized ensembles of striatal neurons was in many cases sufficient to explain the pattern of duration judgments produced by behaving subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that a read out of stimulus category from even modestly-sized ensembles of striatal neurons was in many cases sufficient to explain the pattern of duration judgments produced by behaving subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the neurometric analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "b4261032-a54f-44c4-a5c3-883d23f54214",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C42",
+      "claim": "Duration judgments could be predicted by animals' ongoing behavior during the interval period.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that duration judgments could be predicted by animals' ongoing behavior during the interval period (Gouv\u00eaa et al., 2014; Matthews and Lerer, 1987; Killeen and Fetterman, 1988; Fetterman et al., 1998; Machado, 1997; Machado and Keen, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "1bcab417-8c5e-4a0e-ac6e-2e5ee50c48c7",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C43",
+      "claim": "Striatal neurons can fire around movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is well known that striatal neurons can fire around movements (Alexander and Crutcher, 1990; Jin and Costa, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "7f037c2b-f27e-4c5d-9e8e-ae613cc928d2",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C44",
+      "claim": "The ability to categorize intervals using video frames was consistently poorer as compared to neural data collected at the analogous time periods during the task.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our ability to categorize intervals using video frames was consistently poorer as compared to neural data collected at the analogous time periods during the task (Figure 3b, inset in Figure 3c, Video 1, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from comparing videometric and neurometric analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "823e811e-9fe6-4967-b6dc-4a8204f6a6ac",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C45",
+      "claim": "Stimuli could be categorized as well as the animal using video frames taken at the point when animals expressed their choice at one of the reward ports.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we were able to categorize stimuli as well as the animal using video frames taken at the point when animals expressed their choice at one of the reward ports (Figure 3\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from videometric analysis at choice time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "41d380c3-36c7-40ae-a916-4b021f16757d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C46",
+      "claim": "Movement related responses in the striatum are known to occur both pre- and post-movement onset, much later than in other motor areas such as pre-motor and motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, movement related responses in the striatum are known to occur both pre- and post-movement onset, much later than in other motor areas such as pre-motor and motor cortex (Alexander and Crutcher, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "4d22f1c7-0592-432b-8677-af222731b8a5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C47",
+      "claim": "The time course of duration categorization by neural ensembles was best correlated with the duration categorization by video frames when using spikes collected between 400 ms and 200 ms preceding a reference video frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the time course of duration categorization by neural ensembles was best correlated with the duration categorization by video frames when using spikes collected between 400 ms and 200 ms preceding a reference video frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the time-shifted correlation analysis shown in Figure 3d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "b31f93e4-7440-416c-a72a-05f3227c6b43",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C48",
+      "claim": "The categorization performance of striatal neurons was not simply related to the immediate sensorimotor state of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "These indicate that the categorization performance of striatal neurons was not simply related to the immediate sensorimotor state of the animal, and instead likely reflects that striatal neurons encode an internal neural representation of the state of animals' categorical decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the time-shifted correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "e7e91f88-75f0-4d49-b422-40ed6ce36aae",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C49",
+      "claim": "Striatal neurons likely encode an internal neural representation of the state of animals' categorical decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "These indicate that the categorization performance of striatal neurons was not simply related to the immediate sensorimotor state of the animal, and instead likely reflects that striatal neurons encode an internal neural representation of the state of animals' categorical decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the time-shifted correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "9218628b-d29d-4c5d-89ad-03f797844b35",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C50",
+      "claim": "The state of population activity evolved continuously during interval stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by the diversity of firing patterns (Figure 2d), the state of population activity evolved continuously during interval stimuli (Figure 3g, Figure 4a, Figure 3\u2014figure supplement 3b), a feature not captured by binary classification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the temporal dynamics of population activity shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f1d74318-9665-4caf-a070-f50019fc28f3",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C51",
+      "claim": "When population state at stimulus offset had advanced relatively more along the mean trajectory, animals were more likely to judge intervals as long.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when population state at stimulus offset had advanced relatively more or less along the mean trajectory, animals were more likely to judge intervals as long or short respectively (Figure 3f\u2013g, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the trajectory projection analysis shown in Figure 3f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "65a001ce-ee34-4f2b-b54b-35b0ee38949c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C52",
+      "claim": "When population state at stimulus offset had advanced relatively less along the mean trajectory, animals were more likely to judge intervals as short.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when population state at stimulus offset had advanced relatively more or less along the mean trajectory, animals were more likely to judge intervals as long or short respectively (Figure 3f\u2013g, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the trajectory projection analysis shown in Figure 3f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "fd2885ed-a68d-4d92-9fe7-f982455916b4",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C53",
+      "claim": "The effect of population state advancement on judgment was observed most consistently for interval stimuli that were closer to the category boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was observed most consistently for interval stimuli that were closer to the category boundary, and thus variations in projected population state led to horizontal shifts in the psychometric curves (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pattern in the trajectory projection analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "56a5a2d1-531a-4d41-9745-20c84d081a4f",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C54",
+      "claim": "Variations in projected population state led to horizontal shifts in the psychometric curves.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was observed most consistently for interval stimuli that were closer to the category boundary, and thus variations in projected population state led to horizontal shifts in the psychometric curves (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pattern in the trajectory projection analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "a6ec4632-6148-4fcc-b7a3-956b4c08cd9a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C55",
+      "claim": "Striatal population state encodes a representation of elapsed time that is used by animals to determine categorical judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with striatal population state encoding a representation of elapsed time that is used by animals to determine categorical judgments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the trajectory projection analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "69bf29f4-bdff-4340-9043-ec9b4c65267f",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C56",
+      "claim": "A pattern of continuously evolving, non-repeating population activity has been proposed as a suitable neural code for elapsing time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such a pattern of population activity has been proposed as a suitable neural code for elapsing time (Buonomano, 2014; Buonomano and Merzenich, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "a93d3342-f607-49a3-bc7b-6621292bfd83",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C57",
+      "claim": "Network state ran ahead or behind depending on whether the animal judged a near boundary stimulus as long or short.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even in a low dimensional projection of population activity, we found that network state ran ahead or behind depending on whether the animal judged a near boundary stimulus as long or short (Figure 4b\u2013c, Figure 4\u2014figure supplement 1b,c, Figure 4\u2014figure supplement 2b,f,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes results from the trajectory analysis shown in Figure 4b-c and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "1094ce52-474c-4faa-b879-203b4c3b0a65",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C58",
+      "claim": "Decoded estimates of time ran faster when animals judged a given stimulus as long.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decoded estimates of time ran faster or slower when animals judged a given stimulus as long or short, respectively (Figure 4d\u2013g, Figure 4\u2014figure supplement 1d-g, cross validated naive Bayes decoder; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the Bayesian decoding analysis shown in Figure 4d-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "53b8c00a-00fa-478f-91e4-1d6ecfea2507",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C59",
+      "claim": "Decoded estimates of time ran slower when animals judged a given stimulus as short.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decoded estimates of time ran faster or slower when animals judged a given stimulus as long or short, respectively (Figure 4d\u2013g, Figure 4\u2014figure supplement 1d-g, cross validated naive Bayes decoder; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the Bayesian decoding analysis shown in Figure 4d-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "70204994-3ac6-4fbe-bd18-1c4b5cbd55de",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C60",
+      "claim": "Striatal activity provides information about elapsing time, the continuously varying decision variable necessary to inform judgments in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that striatal activity provides information about elapsing time, the continuously varying decision variable necessary to inform judgments in the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the decoding analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f69835fd-0a9f-4c6a-9834-ec0785c2b938",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C61",
+      "claim": "If striatal time information were read out and used to guide judgments, those judgments would match those of the rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if this information were read out and used to guide judgments, those judgments would match those of the rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional role of striatal activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0225a1e8-5f82-4743-b7e1-bdb180bea6a2",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C62",
+      "claim": "The duration sensitivity of animals' judgments dropped significantly after bilateral muscimol injections as compared to interleaved saline control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the duration sensitivity of animals' judgments dropped significantly as compared to interleaved saline control sessions (Figure 1c; psychometric slope on saline sessions = [1.03 1.20] vs on muscimol sessions = [0.28 0.67]; 95% confidence intervals), yet animals otherwise performed normally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the pharmacological manipulation experiment shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "87a35ca7-3432-4297-8633-8afa614dd9c0",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C63",
+      "claim": "Psychometric slope on saline sessions was [1.03 1.20] (95% confidence intervals).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the duration sensitivity of animals' judgments dropped significantly as compared to interleaved saline control sessions (Figure 1c; psychometric slope on saline sessions = [1.03 1.20] vs on muscimol sessions = [0.28 0.67]; 95% confidence intervals), yet animals otherwise performed normally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "e5ea1c98-1b95-4933-a737-62eda80e3c52",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C64",
+      "claim": "Psychometric slope on muscimol sessions was [0.28 0.67] (95% confidence intervals).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the duration sensitivity of animals' judgments dropped significantly as compared to interleaved saline control sessions (Figure 1c; psychometric slope on saline sessions = [1.03 1.20] vs on muscimol sessions = [0.28 0.67]; 95% confidence intervals), yet animals otherwise performed normally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "826b3654-2e75-4a86-8f9b-a54691478d9d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C65",
+      "claim": "Animals otherwise performed normally after muscimol infusions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the duration sensitivity of animals' judgments dropped significantly as compared to interleaved saline control sessions (Figure 1c; psychometric slope on saline sessions = [1.03 1.20] vs on muscimol sessions = [0.28 0.67]; 95% confidence intervals), yet animals otherwise performed normally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specificity of the muscimol effect on timing performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0084e96b-cef2-44c0-88ab-cd42133623e5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C66",
+      "claim": "Duration categorization in this task was dependent on a normally functioning striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, by demonstrating that duration categorization in this task was dependent on a normally functioning striatum, suggest that the neural signals we observed directly supported duration judgments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the muscimol manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "54683aa2-fc77-4d56-b858-89652b70b010",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C67",
+      "claim": "The neural signals observed directly supported duration judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, by demonstrating that duration categorization in this task was dependent on a normally functioning striatum, suggest that the neural signals we observed directly supported duration judgments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined recording and manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "33bb9bd9-d10b-4577-8845-8c421d0996c6",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C68",
+      "claim": "The possibility that muscimol infusions changed other functions important for task performance such as reward processing or memory for the mapping between time and choice cannot be ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the possibility that muscimol infusions changed other functions important for task performance such as reward processing or memory for the mapping between time and choice can not be ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in interpreting the muscimol results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "2d531994-e2dd-4734-8765-5e6566da87b9",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C69",
+      "claim": "Time may be encoded by any reproducible pattern of activity across a population of neurons for as long as the pattern is continuously changing and non-repeating.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this view, time may be encoded by any reproducible pattern of activity across a population of neurons for as long as the pattern is continuously changing and non-repeating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about population coding of time.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "11511fc3-90f4-4a72-9736-13f13627834f",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C70",
+      "claim": "No study to date has directly compared the speed of population clocks with the duration judgments of the behaving subjects in which they are found.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no study to date has directly compared the speed of such \"population clocks\" with the duration judgments of the behaving subjects in which they are found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "d3a2d76b-6e96-4d06-a7b3-466fb33fb2bc",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C71",
+      "claim": "As rats judged the duration of interval stimuli, striatal neurons displayed dynamics in firing rate that contained information about elapsed time.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that as rats judged the duration of interval stimuli, striatal neurons displayed dynamics in firing rate that contained information about elapsed time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding from the neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f3960742-03b2-4b23-b80c-4316b94bff2d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C72",
+      "claim": "The information in striatal dynamics was sufficient to account for the animals' perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this information was sufficient to account for the animals' perceptual decisions, and was not accompanied by systematic differences in outwardly expressed behavior over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the neurometric and videometric analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "e1579917-ab0a-4f8c-8c5d-7effd69c201a",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C73",
+      "claim": "The information in striatal dynamics was not accompanied by systematic differences in outwardly expressed behavior over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this information was sufficient to account for the animals' perceptual decisions, and was not accompanied by systematic differences in outwardly expressed behavior over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the videometric analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0d26807e-d188-440a-b1ce-d403b4669f0c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C74",
+      "claim": "Striatal dynamics form a central neural representation of time that guides animals' decisions about duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the observation that striatal inactivation caused a specific decrement in timing performance, these data suggest that striatal dynamics form a central neural representation of time that guides animals' decisions about duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion drawn from the combined recording and manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "738a2c74-47b7-4ba3-b171-ee9c88febedd",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C75",
+      "claim": "A striatal coding mechanism for time is well situated to inform the appropriate selection of actions through downstream circuitry involving the globus pallidus, substantia nigra, and various extrinsic connections between the basal ganglia and brainstem, thalamic, and cortical motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a coding mechanism in the striatum is well situated to inform the appropriate selection of actions through downstream circuitry involving the globus pallidus, substantia nigra, and various extrinsic connections between the basal ganglia and brainstem, thalamic, and cortical motor areas (Steiner and Tseng, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional implications of striatal timing signals, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "d4bf88d9-919a-45ec-a11b-68fa7d0ccad6",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C76",
+      "claim": "How the striatal dynamics observed during the interval discrimination task are generated is an intriguing question for future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing question for future studies is how the striatal dynamics we observed during the interval discrimination task are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a direction for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "54fe278a-e1f9-4aa1-9bda-d7a718bda394",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C77",
+      "claim": "Neurons in multiple cortical layers spread across the entire cortical mantle, as well as thalamic, pallidal, and neuromodulatory populations provide input to the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in multiple cortical layers spread across the entire cortical mantle, as well as thalamic, pallidal, and neuromodulatory populations provide input to the striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about striatal inputs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "9e725760-a949-4351-b55c-16865052f9e7",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C78",
+      "claim": "Time coding has been assessed in some of the populations that provide input to the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "While time coding has been assessed in some of these populations, a careful analysis of simultaneously recorded populations that might uncover causal relationships between signals in multiple brain areas has not been carried out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current state of knowledge about timing signals in striatal input regions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "20ac4458-0cf9-4e53-bc89-42980880f25e",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C79",
+      "claim": "A careful analysis of simultaneously recorded populations that might uncover causal relationships between signals in multiple brain areas has not been carried out.",
+      "claim_type": "EXPLICIT",
+      "source": "While time coding has been assessed in some of these populations, a careful analysis of simultaneously recorded populations that might uncover causal relationships between signals in multiple brain areas has not been carried out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "765c2379-1b87-4257-a197-b4a460f1e49b",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C80",
+      "claim": "Local striatal circuitry may play a role in shaping dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, local striatal circuitry may also play a role in shaping dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms underlying striatal dynamics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "685fe35a-b3d0-4d41-b035-0691e06504b0",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C81",
+      "claim": "The coding properties tested in striatum could be tested in other brain areas where timing signals have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the coding properties tested here could be tested in other brain areas where timing signals have been identified such as the hippocampus (Pastalkova et al., 2008; MacDonald et al., 2011), medial prefrontal (Kim et al., 2013; Xu et al., 2014), parietal (Leon and Shadlen, 2003; Janssen and Shadlen, 2005) and motor (Lebedev et al., 2008) cortices, and the cerebellum (Mauk and Buonomano, 2004), among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests future research directions, with citations to areas where timing signals exist.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "75de81d7-3edb-4186-a1fa-271e16caefd2",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C82",
+      "claim": "By comparing signals recorded simultaneously in multiple brain areas during time estimation tasks, it should be possible to identify signatures of functional interaction between brain areas where they exist.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the signals recorded simultaneously in multiple brain areas during time estimation tasks, it should be possible to identify signatures of functional interaction between brain areas where they exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "d8d4858b-1c16-444a-a98d-df8b95032fde",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C83",
+      "claim": "Comparing signals from multiple brain areas promises to elucidate where and how time information encoded at the population level is used by the brain to support time-dependent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach promises to elucidate where and how time information encoded at the population level is used by the brain to support the myriad time-dependent functions we and other organisms rely on for survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential impact of future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f66c7141-735c-4f8d-bd50-308b2c69cb6f",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C84",
+      "claim": "Six male Long-Evans hooded rats between the ages of 6 and 24 months were used for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Six male Long-Evans hooded rats (Rattus norvegicus) between the ages of 6 and 24 months were used for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "51657e54-7fe9-406a-b687-17af27ab76b8",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C85",
+      "claim": "Three rats were used for neural recordings and three rats for pharmacological manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rats were used for neural recordings and three rats for pharmacological manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "a1ecf4c5-7fa2-41ba-b35f-98c3a12734ad",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C86",
+      "claim": "All experiments were in accordance with the European Union Directive 86/609/EEC and approved by the Portuguese Veterinary General Board.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were in accordance with the European Union Directive 86/609/EEC and approved by the Portuguese Veterinary General Board (Direc\u00e7\u00e3o-Geral de Veterin\u00e1ria, project approval 014303 - 0420/000/000/2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "7c109a56-5b42-4435-b745-a17fcf0d1883",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C87",
+      "claim": "Rats were implanted with 32-channel tungsten microwire moveable array bundles under isoflurane anaesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats were implanted with 32-channel tungsten microwire moveable array bundles (Figure 2\u2014figure supplement 1a, Innovative Neurophysiology) under isoflurane anaesthesia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the surgical procedure for neural recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0794b09c-ecdc-4813-804f-b6e517d22e15",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C88",
+      "claim": "All recordings targeted dorsal striatum with coordinates centred at +0.2 mm AP and \u00b1 3 mm ML (rat Bertrand), and +0.84 mm AP and \u00b1 2.5 mm ML (rats Edgar and Fernando), from Bregma.",
+      "claim_type": "EXPLICIT",
+      "source": "All recordings (Figure 2\u2014figure supplement 1) targeted dorsal striatum with coordinates centred at +0.2 mm AP and \u00b1 3 mm ML (rat Bertrand), and +0.84 mm AP and \u00b1 2.5 mm ML (rats Edgar and Fernando), from Bregma.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the anatomical targeting for neural recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "298afb98-a902-4729-abd4-76afac9d2004",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C89",
+      "claim": "Neural signals were recorded at 30 kHz during behavior, amplified and band-pass filtered at 250\u2013750 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural signals were recorded at 30 kHz during behavior, amplified and band-pass filtered at 250\u2013750 Hz (Cerebus - Blackrock Microsystems).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the neural recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f6f79208-9a91-48ec-8ba2-f62a5546ee44",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C90",
+      "claim": "Each independent bundle was moved 50-100 \u03bcm after every recording session to ensure that independent neural populations were sampled across recording sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each independent bundle was moved 50-100 \u03bcm after every recording session to ensure that independent neural populations were sampled across recording sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording procedure to sample different neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "e914d509-6f77-4858-a64a-aed7553e37f4",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C91",
+      "claim": "All isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance and a minimum of 250 trials were selected for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for neural data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0836f663-3ac6-4607-87ac-f934a98d8630",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C92",
+      "claim": "433 cells from 37 recording sessions in 3 animals were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the sample size for neural recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "566f1eb6-15f4-4858-98af-41ca25e2cedd",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C93",
+      "claim": "Rat Bertrand contributed 136 units from 10 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the sample size breakdown by subject.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "655a8003-31a5-47e8-8a9e-682e6cd732df",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C94",
+      "claim": "Rat Edgar contributed 163 units from 9 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the sample size breakdown by subject.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "64256608-28a7-4fa3-a1ed-1c4e1310a3e1",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C95",
+      "claim": "Rat Fernando contributed 134 units from 18 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected all isolated units with a mean session firing rate >0.5 Hz and from sessions with >70% correct performance (averaged across all stimuli) and a minimum of 250 trials (n=433 cells, 37 recording sessions, 3 animals; rat Bertrand: 136 units, 10 sessions; rat Edgar: 163 units, 9 sessions; rat Fernando: 134 units, 18 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the sample size breakdown by subject.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "154c870a-177e-4827-a934-823658d86a70",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C96",
+      "claim": "The general result was found in all subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The general result was found in all subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This indicates consistency of findings across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "bd0238e1-fd10-43af-b551-e10f6290aeb5",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C97",
+      "claim": "3-mm 20-gauge stainless steel guide cannulae were implanted bilaterally into the striatum of 3 rats at coordinates +0.84 mm AP, \u00b1 2.5 mm ML from Bregma, and -3mm DV from cortex surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted 3-mm 20-gauge stainless steel guide cannulae (Bilaney) bilaterally into the striatum of 3 rats [+0.84 mm anterior-posterior (AP), \u00b1 2.5 mm medial-lateral (ML), from Bregma, and -3mm dorsal-ventral (DV, from cortex surface) under isoflurane anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure for pharmacological manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "7ae330da-cc17-4348-aee1-15ef8e39fb84",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C98",
+      "claim": "Rats were injected with either vehicle (saline, PBS 1x) or muscimol (GABA-A agonist, 100 mg/L for rats Albert and Yuri, and 300 mg/L for rat Zack) solutions in four alternate days.",
+      "claim_type": "EXPLICIT",
+      "source": "After one week of post-surgical recovery and 4 days of training, rats were injected with either vehicle (saline, PBS 1x) or muscimol (GABA-A agonist, 100 mg/L (rats Albert and Yuri) and 300 mg/L (rat Zack), SigmaTM) solutions in four alternate days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pharmacological manipulation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "5ac2eddd-30ad-4b58-a0df-4110fef66f03",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C99",
+      "claim": "0.6 \u03bcL of solution per site was injected during 2.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Two 1-\u03bcL syringes (Hamilton), attached to an injection pump (Harvard Apparatus) through 20-gauge internal cannulae that extended 1.5 mm bellow the guide cannulae, injected 0.6 \u03bcL of solution per site during 2.5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the injection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "03f79e27-2ea3-45c1-914c-5d104cb3297d",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C100",
+      "claim": "The internal cannulae were left in place for an additional 1.5 min after injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal cannulae were left in place for an additional 1.5 min and the rats were given a 45-min recovery period in their home-cage before starting the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "84d16dea-c97f-4ad6-99f4-8bc478e8f9f7",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "claim_id": "C101",
+      "claim": "Rats were given a 45-min recovery period in their home-cage before starting the task after injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal cannulae were left in place for an additional 1.5 min and the rats were given a 45-min recovery period in their home-cage before starting the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d45a90d0-1fa1-43ba-a326-c81afe226904",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rats were trained on a duration categorization task where they judged intervals as long or short, with performance declining near the 1.5 s category boundary. Six male Long-Evans rats were used, with three for neural recordings and three for pharmacological manipulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 describe the behavioral task design and performance, supported by Figure 1a-c. Claims C84-C86 provide methodological details about subjects and ethical approval. The behavioral paradigm is well-documented with clear task structure, reward contingencies, and psychometric performance data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "922fe727-ce27-4f24-8109-70c05363b21c",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Striatal neurons recorded from dorsal-central striatum displayed diverse firing patterns during the task, with 57% showing preference for either short (36.7%) or long (20.1%) intervals. A total of 433 cells from 37 sessions across 3 animals were analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 describe neural recording results supported by Figure 2 and ROC analysis with appropriate statistical testing (permutation test, p<0.05). Claims C87-C96 provide detailed methodological information about recording procedures, inclusion criteria, and sample sizes. The results are consistent across all three subjects (C96).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "f64ac998-93b0-4bc9-a2ec-30ea924038d6",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural dynamics of short- and long-preferring subpopulations predicted animals' choices on near-boundary trials, with faster evolution leading to long judgments and slower evolution leading to short judgments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 describe choice-predictive neural dynamics shown in Figure 2g-h. The temporal evolution of population activity differs systematically based on the animal's subsequent choice, providing evidence that neural state predicts behavior. This is a key finding linking neural dynamics to perceptual decisions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "2fdab85c-dd1d-4cb5-92e8-b06580e39448",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For sessions with larger simultaneously recorded populations (upper tercile), neurometric and psychometric performances were strongly correlated (r\u00b2=0.76, p<0.001), demonstrating that striatal ensembles could judge duration as well as the animal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 describe the neurometric analysis shown in Figure 3a-c. The strong correlation between neural and behavioral performance is quantified with appropriate statistics. However, the analysis is restricted to the upper tercile of sessions by population size, which may introduce selection bias. The claim that ensembles could judge \"as well as\" the animal is supported for these larger populations but may not generalize to smaller ensembles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "2befca8f-b8dd-4cd2-952a-726821142eda",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neural categorization performance was not simply related to the animal's immediate sensorimotor state, as videometric analysis showed consistently poorer performance than neurometric analysis during the interval, with neural activity leading behavioral state by 200-400 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 describe the videometric control analysis shown in Figure 3 and supplements. The time-shifted correlation analysis (C47) provides evidence that neural signals precede behavioral manifestations. However, the videometric analysis has limitations: it only captures visible movements and may miss subtle behavioral correlates. The claim that neural activity reflects \"internal neural representation\" (C49) is an inference that, while reasonable, goes beyond what the data directly demonstrate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "7a23d40e-0265-4c14-a708-084b33c313f2",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Population state evolved continuously during intervals, and when population state at stimulus offset had advanced more/less along the mean trajectory, animals were more likely to judge intervals as long/short, respectively, with effects strongest near the category boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 describe trajectory projection analysis shown in Figure 3f-g and supplements. The analysis demonstrates that trial-by-trial variations in how far population state has progressed predict behavioral choices. However, the analysis involves excluding 40% of trials as outliers, which could bias results. The claim that this represents \"elapsed time\" (C55) is an inference supported by the data but requires the assumption that trajectory progression maps linearly to time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Network state ran ahead or behind depending on whether animals judged near-boundary stimuli as long or short, and decoded estimates of time from population activity ran faster/slower corresponding to long/short judgments, demonstrating choice probability in the neural representation of time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe trajectory and decoding analyses shown in Figure 4. The Bayesian decoder analysis demonstrates that neural population state encodes time information that correlates with behavioral choices. The cross-validated approach is appropriate. However, the decoder was trained on correct trials and tested on both correct and incorrect trials, which could introduce circularity. The claim that judgments \"would match those of the rats\" (C61) if this information were read out is an inference, though well-supported by the neurometric analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "99051a97-8c54-4550-b804-5709f9670af0",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bilateral muscimol infusions into dorsal striatum significantly reduced duration sensitivity (psychometric slope decreased from [1.03, 1.20] to [0.28, 0.67], 95% CI) while animals otherwise performed normally, demonstrating that striatal activity is necessary for duration judgments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C67 describe the muscimol manipulation results shown in Figure 1c, with detailed methodology in C97-C101. The pharmacological manipulation shows a specific effect on timing sensitivity with appropriate controls (interleaved saline sessions). However, C68 acknowledges important limitations: muscimol could affect reward processing or memory for task rules rather than timing per se. The claim of necessity (C66-C67) is therefore uncertain without additional controls to rule out these alternative explanations. Different muscimol concentrations were used across animals (100 vs 300 mg/L), which is not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "0edc881e-8042-4d1b-9d1f-16346be89fe9",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Striatal dynamics predicted duration judgments, with simultaneously recorded ensembles judging duration as well as the animal. The speed of striatal population state changes supports animals' ability to judge time, forming a central neural representation that guides duration decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions of the study, synthesizing results from neural recordings (C2, C71), neurometric analysis (C3, C72), videometric controls (C73), trajectory/decoding analyses (C5-C6), and pharmacological manipulations (C74). The convergent evidence from multiple complementary approaches (correlational neural recordings, population decoding, behavioral controls, and causal manipulations) provides strong support for the central claim. However, the causal claim (C74) is somewhat weakened by the acknowledged limitations of the muscimol manipulation (C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has identified temporal dynamics in multiple brain regions, but whether such representations inform duration judgments or merely covary with time was unknown. The striatum has been implicated in timing through multiple lines of evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C18 cite established knowledge about the striatum and timing signals in various brain regions, supported by appropriate citations. Claims C14-C15, C19 identify the knowledge gap addressed by the current study. These background claims appropriately contextualize the work and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "8c1fb4c6-8fa3-49c5-ab6d-6c9c46b6f873",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The averaged activity patterns of short- and long-preferring neurons resemble moment-by-moment reward likelihood for choosing short or long, similar to signals previously observed in parietal cortex during timing tasks and striatum during value-based decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 makes an inference comparing neural activity to reward contingencies (Figure 1b vs Figure 2f), which is reasonable given the temporal profiles. Claims C36-C37 appropriately cite prior work showing similar signals. This interpretation is plausible but remains somewhat speculative as the study does not directly test whether these signals represent reward expectation versus time per se.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    },
+    {
+      "id": "a9341eff-cc77-4b6a-8d45-172242e36c0b",
+      "content_id": "7ce4543c-a7bc-481d-8da2-0669a1962654",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study addresses a gap in the literature by comparing population clock speed with behavioral judgments. The findings have implications for understanding how striatal timing signals could inform action selection through basal ganglia circuitry, though the mechanisms generating these dynamics remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C69-C70 provide theoretical context and identify the study's contribution. Claims C75-C83 discuss implications and future directions. These are appropriately framed as speculation (C76, C80-C83) or cite relevant anatomical knowledge (C77). The discussion appropriately acknowledges limitations and suggests future research directions without overstating conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:57:48.735050Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "da8fd463-5bda-43b7-85d3-2b32233f8192",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "5cbf5082-b3d2-4697-8f3c-b9056addb13d",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "9e4af722-085a-468b-9d28-9dc7588fe766",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "e94940a8-8ed3-4629-902e-b807c9ad53c5",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "4eafc598-524d-4bba-8ac5-5e77ea3a0b3e",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "f7cd0815-4a06-4b25-a795-81e7ba84fc27",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "59355bc9-7a80-4eb8-bbbb-3e3c1cc73709",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "f66c7141-735c-4f8d-bd50-308b2c69cb6f",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "51657e54-7fe9-406a-b687-17af27ab76b8",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "a1ecf4c5-7fa2-41ba-b35f-98c3a12734ad",
+      "result_id": "d45a90d0-1fa1-43ba-a326-c81afe226904"
+    },
+    {
+      "claim_id": "473444d4-776f-430a-b91f-15f442a23878",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "4baa819d-7341-44cd-850b-81e6f72d3b2a",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "1e99f314-7649-490f-a71d-a287236d085d",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "58d67be1-25a4-435e-9882-25a62e1efe3c",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "1d5ad203-7430-473e-98a7-d80dea21e591",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "d4ef8d47-b122-4620-9165-9669599df638",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "63e13dfe-4559-4f99-ae90-8ce67874bf6d",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "b916ebc7-aae3-4103-8b9b-90104946e249",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "7c109a56-5b42-4435-b745-a17fcf0d1883",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "0794b09c-ecdc-4813-804f-b6e517d22e15",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "298afb98-a902-4729-abd4-76afac9d2004",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "f6f79208-9a91-48ec-8ba2-f62a5546ee44",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "e914d509-6f77-4858-a64a-aed7553e37f4",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "0836f663-3ac6-4607-87ac-f934a98d8630",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "566f1eb6-15f4-4858-98af-41ca25e2cedd",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "655a8003-31a5-47e8-8a9e-682e6cd732df",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "64256608-28a7-4fa3-a1ed-1c4e1310a3e1",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "154c870a-177e-4827-a934-823658d86a70",
+      "result_id": "922fe727-ce27-4f24-8109-70c05363b21c"
+    },
+    {
+      "claim_id": "1da06ca9-4b0e-46e5-8136-a0630e9fceb5",
+      "result_id": "f64ac998-93b0-4bc9-a2ec-30ea924038d6"
+    },
+    {
+      "claim_id": "cab43843-e31b-4288-bdd9-6fba4dad2199",
+      "result_id": "f64ac998-93b0-4bc9-a2ec-30ea924038d6"
+    },
+    {
+      "claim_id": "65a908b4-15a7-4b8c-b325-beb0aeae3a3a",
+      "result_id": "2fdab85c-dd1d-4cb5-92e8-b06580e39448"
+    },
+    {
+      "claim_id": "56a7f736-0221-4e03-aed6-457d6b4e033a",
+      "result_id": "2fdab85c-dd1d-4cb5-92e8-b06580e39448"
+    },
+    {
+      "claim_id": "b4261032-a54f-44c4-a5c3-883d23f54214",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "1bcab417-8c5e-4a0e-ac6e-2e5ee50c48c7",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "7f037c2b-f27e-4c5d-9e8e-ae613cc928d2",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "823e811e-9fe6-4967-b6dc-4a8204f6a6ac",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "41d380c3-36c7-40ae-a916-4b021f16757d",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "4d22f1c7-0592-432b-8677-af222731b8a5",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "b31f93e4-7440-416c-a72a-05f3227c6b43",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "e7e91f88-75f0-4d49-b422-40ed6ce36aae",
+      "result_id": "2befca8f-b8dd-4cd2-952a-726821142eda"
+    },
+    {
+      "claim_id": "9218628b-d29d-4c5d-89ad-03f797844b35",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "f1d74318-9665-4caf-a070-f50019fc28f3",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "65a001ce-ee34-4f2b-b54b-35b0ee38949c",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "fd2885ed-a68d-4d92-9fe7-f982455916b4",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "56a5a2d1-531a-4d41-9745-20c84d081a4f",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "a6ec4632-6148-4fcc-b7a3-956b4c08cd9a",
+      "result_id": "7a23d40e-0265-4c14-a708-084b33c313f2"
+    },
+    {
+      "claim_id": "a93d3342-f607-49a3-bc7b-6621292bfd83",
+      "result_id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494"
+    },
+    {
+      "claim_id": "1094ce52-474c-4faa-b879-203b4c3b0a65",
+      "result_id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494"
+    },
+    {
+      "claim_id": "53b8c00a-00fa-478f-91e4-1d6ecfea2507",
+      "result_id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494"
+    },
+    {
+      "claim_id": "70204994-3ac6-4fbe-bd18-1c4b5cbd55de",
+      "result_id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494"
+    },
+    {
+      "claim_id": "f69835fd-0a9f-4c6a-9834-ec0785c2b938",
+      "result_id": "31a3b72f-fd37-4eeb-95f5-f5540f6f8494"
+    },
+    {
+      "claim_id": "0225a1e8-5f82-4743-b7e1-bdb180bea6a2",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "87a35ca7-3432-4297-8633-8afa614dd9c0",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "e5ea1c98-1b95-4933-a737-62eda80e3c52",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "826b3654-2e75-4a86-8f9b-a54691478d9d",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "0084e96b-cef2-44c0-88ab-cd42133623e5",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "54683aa2-fc77-4d56-b858-89652b70b010",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "33bb9bd9-d10b-4577-8845-8c421d0996c6",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "bd0238e1-fd10-43af-b551-e10f6290aeb5",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "7ae330da-cc17-4348-aee1-15ef8e39fb84",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "5ac2eddd-30ad-4b58-a0df-4110fef66f03",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "03f79e27-2ea3-45c1-914c-5d104cb3297d",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "84d16dea-c97f-4ad6-99f4-8bc478e8f9f7",
+      "result_id": "99051a97-8c54-4550-b804-5709f9670af0"
+    },
+    {
+      "claim_id": "c86ef7c9-8b2b-48b0-a2b1-094d2b112846",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "f7bfecc8-8717-449b-b250-f01ddc04328c",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "c555c387-24ca-45f7-a979-e1c0dfc0f421",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "959eebd3-197b-48e3-aebf-c9deca2bc889",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "ec9df8bc-9cde-4562-9b4a-1c6124803b80",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "d3a2d76b-6e96-4d06-a7b3-466fb33fb2bc",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "f3960742-03b2-4b23-b80c-4316b94bff2d",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "e1579917-ab0a-4f8c-8c5d-7effd69c201a",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "0d26807e-d188-440a-b1ce-d403b4669f0c",
+      "result_id": "0edc881e-8042-4d1b-9d1f-16346be89fe9"
+    },
+    {
+      "claim_id": "6c0df9d5-e928-445e-a6a8-dd3bb998be44",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "6bcd98e9-94d1-4c70-95e2-62d762d1c6cb",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "5ec5051e-732c-4294-b870-0876adcfd5a7",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "13b07147-d137-4619-b06b-a0fa9b0cb58a",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "3edd4a7e-fc05-4294-bc3d-48e0505771fd",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "965274ca-a1ab-4c61-84b2-08a3ed0e2bb5",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "c2fd222f-0989-4472-bccd-ad12ea708b89",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "10396772-5bb2-4644-bdca-55878d0e282d",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "79227c71-fe31-45ab-b044-1b2839bb9cab",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "14d4b054-4dd6-4523-8062-e47fc4ea5f5b",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "a8028d71-9cce-4b98-ab75-9f7e602e4ced",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "ced1f0e9-cf0c-42c7-9712-3c5cc6812f3b",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "0fb88e56-f71f-4528-a0a3-f0ed45c3923c",
+      "result_id": "bd544bec-7718-4d3c-ba8b-eefc0743c0f0"
+    },
+    {
+      "claim_id": "07b43258-575b-4617-9244-272ef3cc3c4c",
+      "result_id": "8c1fb4c6-8fa3-49c5-ab6d-6c9c46b6f873"
+    },
+    {
+      "claim_id": "8110eb12-8259-49ce-ba95-33553e945e7b",
+      "result_id": "8c1fb4c6-8fa3-49c5-ab6d-6c9c46b6f873"
+    },
+    {
+      "claim_id": "4f0ad82d-e7dc-45c2-9926-faf48d2137e3",
+      "result_id": "8c1fb4c6-8fa3-49c5-ab6d-6c9c46b6f873"
+    },
+    {
+      "claim_id": "69bf29f4-bdff-4340-9043-ec9b4c65267f",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "2d531994-e2dd-4734-8765-5e6566da87b9",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "11511fc3-90f4-4a72-9736-13f13627834f",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "738a2c74-47b7-4ba3-b171-ee9c88febedd",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "d4bf88d9-919a-45ec-a11b-68fa7d0ccad6",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "54fe278a-e1f9-4aa1-9bda-d7a718bda394",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "9e725760-a949-4351-b55c-16865052f9e7",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "20ac4458-0cf9-4e53-bc89-42980880f25e",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "765c2379-1b87-4257-a197-b4a460f1e49b",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "685fe35a-b3d0-4d41-b035-0691e06504b0",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "75de81d7-3edb-4186-a1fa-271e16caefd2",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    },
+    {
+      "claim_id": "d8d4858b-1c16-444a-a98d-df8b95032fde",
+      "result_id": "a9341eff-cc77-4b6a-8d45-172242e36c0b"
+    }
+  ],
+  "comparisons": []
+}

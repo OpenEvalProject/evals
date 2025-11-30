@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Rev-erb double knockout (DKO) model was generated using Tie2-Cre-mediated deletion of floxed Rev-erb\u03b1 and Rev-erb\u03b2 alleles, resulting in 90% reduction of Rev-erb\u03b1 and 80% reduction of Rev-erb\u03b2 targeted exonic mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide clear evidence for the knockout strategy and deletion efficiency. RNA-Seq data (Figure 1\u2014figure supplement 1) demonstrates the expected compensatory de-repression between Rev-erb family members and quantifies deletion efficiency. The model is well-characterized for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C92"
+    ],
+    "result": "Rev-erbs repress signal-dependent gene expression in a context-dependent manner, with differential effects varying by polarization state. Gene ontology analysis revealed enrichment for wound healing-associated genes among de-repressed genes in Rev-erb DKO macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30, C31, and C92 are supported by comprehensive RNA-Seq data comparing WT and Rev-erb DKO macrophages under multiple polarization conditions (Figure 1b-e). The context-dependent effects are clearly demonstrated, and gene ontology analysis provides functional interpretation. The data quality and replication appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C89"
+    ],
+    "result": "Rev-erb deficiency in bone marrow-derived hematopoietic cells results in accelerated wound closure in vivo, with enhanced immune cell infiltration, increased macrophage presence at wound sites, and enhanced macrophage migration in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 and C89 are supported by bone marrow transplantation experiments with >94% reconstitution efficiency (C35), wound healing measurements analyzed by linear mixed effects model (Figure 2a-b), histological analysis (Figure 2c-e), and in vitro migration assays (Figure 2f). The statistical analysis is appropriate for the hierarchical study design. However, the authors acknowledge that Rev-erbs are deleted from all hematopoietic lineages, so the specific contribution of macrophages versus other immune cells remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C95"
+    ],
+    "result": "Tissue homogenate treatment of macrophages in vitro recapitulates key aspects of the in vivo wound response, with 5590 genes showing concordant expression changes and significant enrichment for wound healing-related biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 and C95 are supported by RNA-Seq comparison of in vivo wounds and in vitro tissue homogenate-treated macrophages (Figure 3b-d). The overlap of 5590 genes and gene ontology enrichment for wound healing processes validates the tissue homogenate model. However, C42 is partially speculative about the exact composition of DAMPs, MAMPs, and other factors in the homogenate, which is acknowledged by the authors as unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Single-cell RT-Q-PCR analysis demonstrates that genes characteristic of distinct macrophage polarization states (M(LPS), M(IL4), M(TGF\u03b2)) can be co-expressed within individual cells following tissue homogenate treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by single-cell RT-Q-PCR data (Figure 4). The analysis of 70 tissue homogenate-treated cells across 30 genes demonstrates co-expression of genes from different polarization states within individual cells. The clustering analysis revealing two main groups distinguished by Fos and Rela expression adds biological insight. The technical approach is sound, though the number of cells analyzed is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Tissue homogenate induces H3K27ac at thousands of genomic regions and drives distinct genomic binding patterns for p65, Fos, and Smad3 compared to single ligand stimulation (KLA or TGF\u03b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by ChIP-Seq data for H3K27ac and transcription factors (Figure 5). The identification of ~2500 and ~5000 H3K27ac-gained regions at 3 and 6 hours, respectively, and the demonstration of distinct binding patterns for p65, Fos, and Smad3 under tissue homogenate versus single ligand conditions are well-documented. De novo motif analysis provides additional support. However, all ChIP-Seq experiments appear to be N=1, which limits confidence in peak calling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C100"
+    ],
+    "result": "The complex tissue damage signal promotes unprecedented co-localization of NF-\u03baB (p65) and Smad3 at enhancers, with 82% of Smad3 binding sites co-occupied by p65 after tissue homogenate treatment compared to only 6% after TGF\u03b2 treatment alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C61-C63, C65-C67, and C100 are supported by ChIP-Seq data comparing TGF\u03b2 and tissue homogenate treatments (Figure 6a, 7b-c). The dramatic increase in co-localization from 6% to 82% is striking and well-quantified. The identification of novel binding sites unique to tissue homogenate treatment (blue boxes in Figure 6a) and sites where both factors bind under tissue homogenate but only one under single ligand conditions (yellow boxes) provides mechanistic insight. However, the N=1 for ChIP-Seq experiments is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C97"
+    ],
+    "result": "De novo motif analysis of tissue homogenate-activated enhancers identified Nrf2 as an unexpected mediator of the wound response, which was validated by demonstrating Nrf2 target gene upregulation and genome-wide Nrf2 binding following tissue homogenate treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70, C71, and C97 are supported by motif analysis (Figure 7a), RNA-Seq data showing upregulation of Nrf2 target genes (Figure 7d), and ChIP-Seq demonstrating Nrf2 binding (Figure 6a). This represents a genuine discovery enabled by unbiased enhancer analysis. The convergence of multiple lines of evidence (motif enrichment, target gene expression, direct binding) strongly supports Nrf2 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Tissue homogenate treatment induces coordinated genomic co-localization of PU.1, Smad3, Nrf2, Fos, and p65, with an eight-fold increase in co-binding (from 1.4% to 12.05% of peaks) compared to vehicle treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by hierarchical clustering analysis (Figure 7e) and Venn diagram analysis (Figure 7f-g) of ChIP-Seq data. The quantification of co-localization and the demonstration that tissue homogenate uniquely drives coordinated binding of multiple transcription factors provides strong evidence for signal integration at enhancers. However, the N=1 for ChIP-Seq remains a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C98",
+      "C99"
+    ],
+    "result": "Chemical inhibition experiments demonstrate that NF-\u03baB, TGF\u03b2/Smad, and Nrf2 signaling pathways each contribute functionally to the integrated transcriptional response to tissue damage, with gene-specific dependencies on individual or multiple pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 and C98-C99 are supported by RT-Q-PCR data from inhibitor experiments (Figure 8a-c). The use of IKK inhibitor VII, SB-43154, and glutathione to block NF-\u03baB, TGF\u03b2, and Nrf2 pathways, respectively, provides functional validation of the ChIP-Seq findings. The demonstration of differential gene sensitivity (e.g., Cx3cr1 sensitive to all three pathways, Dusp5 sensitive only to NF-\u03baB) supports the model of integrated signaling. Sample sizes (N=6-8) are adequate for RT-Q-PCR. However, pharmacological inhibitors can have off-target effects, and genetic validation would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C107"
+    ],
+    "result": "The Rev-erb agonist SR-9009 suppresses a subset of tissue homogenate-induced genes that are de-repressed in Rev-erb DKO macrophages, including Cx3cr1, Gpr84, and Pgd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C107 are supported by RT-Q-PCR data (Figure 8d) showing that SR-9009 treatment reduces expression of specific genes. This provides pharmacological validation that Rev-erb activity can modulate the wound response. However, the agonist experiments are limited to a small number of genes, and the N=6 sample size is modest. The consistency with the DKO phenotype strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C88",
+      "C108"
+    ],
+    "result": "Rev-erbs integrate multiple damage-activated signaling pathways at enhancers to regulate a wound repair phenotype, acting to repress a specific combination of genes downstream of NF-\u03baB, Smad, and Nrf2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C88, and C108 represent the central conclusion of the manuscript, integrating findings from RNA-Seq, ChIP-Seq, in vivo wound healing, and inhibitor experiments. The model is well-supported by the collective data showing: (1) Rev-erb binding at enhancers co-occupied by signal-dependent transcription factors, (2) de-repression of wound healing genes in Rev-erb DKO, (3) accelerated wound healing in vivo, and (4) functional contributions of NF-\u03baB, Smad3, and Nrf2 pathways. The integration of multiple experimental approaches provides strong support for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The majority of Rev-erb binding sites identified in RAW264.7 macrophages co-localize with NCoR binding sites in BMDMs, suggesting Rev-erbs occupy a similar cistrome in primary macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is based on comparison of Rev-erb ChIP-Seq from RAW264.7 cells (a transformed cell line) with NCoR ChIP-Seq from BMDMs (primary cells). While co-localization with the obligate co-repressor NCoR provides indirect support, the comparison across different cell types and the lack of direct Rev-erb ChIP-Seq in BMDMs (acknowledged by the authors as unsuccessful) limits confidence. The inference is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "The findings suggest potential therapeutic applications of Rev-erb antagonists for delayed wound healing and Rev-erb agonists for fibrotic diseases, based on the role of Rev-erbs in regulating wound repair genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32, C103-C106, and C109 are largely speculative about therapeutic applications. While C32, C103, C104, and C106 cite literature on wound healing defects and fibrotic diseases, claims C105 and C109 about potential therapeutic benefit are speculative and acknowledged as such by the authors ('it is possible that', 'it will be of interest to evaluate'). No therapeutic efficacy data are presented. These represent reasonable hypotheses for future work but are not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Rev-erb expression is circadian in vivo, suggesting that Rev-erb effects on macrophage gene expression and wound healing may vary over the course of the day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C91 are based on citation to previous literature (C90) and speculation about physiological implications (C91). While the circadian expression of Rev-erbs is well-established, the current study does not examine time-of-day effects on wound healing or macrophage function. The speculation is reasonable but untested. This represents an interesting hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Transcription factor binding maps are context-dependent, and co-localization of factors in response to complex signals enables integration of multiple signaling components necessary for wound repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C102 represent conceptual conclusions drawn from the ChIP-Seq data. C101 is well-supported by the demonstration that p65, Fos, and Smad3 binding patterns differ substantially between single ligand and tissue homogenate treatments. C102 is more speculative ('we speculate') but is a reasonable interpretation of the co-localization data. The context-dependence of transcription factor binding is clearly demonstrated and represents an important general principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Enhancer analysis can be used to identify transcriptional mediators of unknown environmental factors, as demonstrated by the discovery of Nrf2 involvement through de novo motif analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 represents a methodological conclusion supported by the successful identification of Nrf2 as a mediator of the tissue damage response through unbiased enhancer motif analysis. This approach led to a genuine discovery that was subsequently validated by multiple experimental approaches. The claim is well-supported and highlights the utility of enhancer-based approaches for hypothesis generation.",
+    "result_type": "MINOR"
+  }
+]

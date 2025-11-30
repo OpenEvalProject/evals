@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "d04a71dc-8746-424f-8699-812601d2678a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:42:45.186562Z",
+    "updated_at": "2025-11-29T23:42:45.186562Z"
+  },
+  "content": [
+    {
+      "id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "submission_id": "d04a71dc-8746-424f-8699-812601d2678a",
+      "content_type": "manuscript",
+      "content_text": "# The leak channel NALCN controls tonic firing and glycolytic sensitivity of substantia nigra pars reticulata neurons\n\n## Authors\n\n- Andrew Lutas<sup>1</sup> ([ORCID: 0000-0002-6991-2898](https://orcid.org/0000-0002-6991-2898))\n- Carolina Lahmann<sup>1</sup>\n- Magali Soumillon<sup>2</sup>\n- Gary Yellen<sup>1</sup> ([ORCID: 0000-0003-4228-7866](https://orcid.org/0000-0003-4228-7866)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Harvard Medical School Boston United States\n2. Broad Institute Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCertain neuron types fire spontaneously at high rates, an ability that is crucial for their function in brain circuits. The spontaneously active GABAergic neurons of the substantia nigra pars reticulata (SNr), a major output of the basal ganglia, provide tonic inhibition of downstream brain areas. A depolarizing 'leak' current supports this firing pattern, but its molecular basis remains poorly understood. To understand how SNr neurons maintain tonic activity, we used single-cell RNA sequencing to determine the transcriptome of individual mouse SNr neurons. We discovered that SNr neurons express the sodium leak channel, NALCN, and that SNr neurons lacking NALCN have impaired spontaneous firing. In addition, NALCN is involved in the modulation of excitability by changes in glycolysis and by activation of muscarinic acetylcholine receptors. Our findings suggest that disruption of NALCN could impair the basal ganglia circuit, which may underlie the severe motor deficits in humans carrying mutations in NALCN.\n\n## Introduction\n\nSome neurons are capable of continuously firing action potentials in the complete absence of synaptic input (H\u00e4usser et al., 2004). This spontaneous activity is established by the intrinsic membrane properties that set the neuronal membrane potential and support repeated firing of action potentials (Bean, 2007). Electrophysiological studies of spontaneously active neurons have frequently reported the presence of a tonic current that maintains these neurons at a more depolarized membrane potential and likely allows them to continuously fire action potentials\u00a0(Atherton and Bevan, 2005; Raman et al., 2000; Jackson et al., 2004; Taddese and Bean, 2002; Khaliq and Bean, 2010). This current, often referred to as a 'leak' or 'background' current, has characteristics of a nonselective cation current \u2013 it is sodium-dependent and has a reversal potential close to 0 mV. However, the molecular identity of the channel(s) that carry this leak current in many spontaneously firing neurons remains an open question.\n\nIn the substantia nigra pars reticulata (SNr), GABAergic neurons fire spontaneously at relatively high firing rates, typically 30 spikes per second (Sanderson et al., 1986; Gulley et al., 1999; Maurice et al., 2003; Deransart et al., 2003). This spontaneous firing is necessary for the tonic inhibition of downstream targets of the SNr and thus critical for the function of the basal ganglia (Chevalier and Deniau, 1990; Hikosaka, 2007). SNr neurons have a leak current (a sodium-dependent tonic current) that maintains their membrane potential sufficiently depolarized to allow for spontaneous triggering of action potentials in the absence of any synaptic input (Atherton and Bevan, 2005; Zhou and Lee, 2011). It has been suggested that a member of the Transient Receptor Potential (TRP) channel family, TRPC3, is the basis for the tonic depolarizing current in SNr neurons (Zhou et al., 2008). However, we previously found that the spontaneous firing of SNr neurons was unaffected by genetic deletion of TRPC3, arguing against this possibility (Lutas et al., 2014). We also previously reported that the tonic depolarizing current in SNr neurons is decreased in response to metabolic inhibition, resulting in slowed firing (Lutas et al., 2014). Here we report our efforts to identify the nonselective cation channel (NSCC) that supports the spontaneous firing of SNr neurons and determine the molecular identity of the glycolysis-sensitive NSCC.\n\nWe used single-cell RNA sequencing to determine the gene expression profile of SNr neurons and, specifically, the relative expression levels of NSCCs. We found that the sodium leak channel, NALCN (Lu et al., 2007), was the highest expressed NSCC in SNr neurons. Electrophysiological experiments using pharmacological inhibitors supported a critical function of NALCN in maintaining firing, and conditional knockout of NALCN in SNr neurons impaired firing, confirming its importance. In addition, we found that the loss of NALCN significantly impaired modulation of SNr firing by glycolytic inhibition and by muscarinic metabotropic receptor activation, indicating that NALCN was involved in the regulation of SNr neuron excitability. Recent studies have reported that NALCN is expressed by other neurons in the brain (Lu et al., 2007; Flourakis et al., 2015; Goldberg et al., 2012), indicating that our findings in the SNr may be more broadly applicable. Furthermore, our results identify key cellular responses that are impaired in the absence of NALCN, and may have therapeutic value as human mutations in NALCN lead to severe motor and cognitive deficits (Chong et al., 2015; Aoyagi et al., 2015; Al-Sayed et al., 2013; K\u00f6ro\u011flu et al., 2013; Fukai et al., 2016).\n\n## Results\n\n### A NSCC is responsible for the spontaneous firing of SNr neurons\n\nA tetrodotoxin-insensitive, tonic depolarizing current is necessary for spontaneous firing of SNr neurons, and this current has been attributed to constitutive activity of a NSCC (Atherton and Bevan, 2005; Zhou et al., 2008). We previously found that inhibition of glycolysis in SNr neurons leads to a decrease in a tonic, depolarizing current and slows SNr firing (Lutas et al., 2014). We thus sought to identify the ion channel that carries this glycolysis-dependent tonic depolarizing current in SNr neurons. We initially used pharmacological tools that nonspecifically block multiple types of NSCCs. Flufenamic acid (FFA; 100 \u03bcM), a commonly used NSCC blocker, rapidly decreased SNr firing (Figure 1A,B). The effect of FFA on SNr firing was dose dependent, and at higher concentrations, FFA could even silence SNr firing (Kd = 4.7 \u00d7 10\u2013510-5\u2009M; Figure 1C). Similarly, 2-aminoethoxydiphenylborane (2-APB; 100\u2009\u03bcM), which also blocks multiple NSCCs including many TRP channels (Lievremont et al., 2005; Chen et al., 2012), decreased SNr firing (Figure 1D,E). The effect of 2-APB on SNr firing was also dose dependent and capable of silencing firing at sufficiently high concentrations (Kd = 2.6 \u00d7 10\u20135\u2009M; Figure 1F). These results are consistent with earlier studies and support an important role of NSCCs in maintaining the spontaneous firing of SNr neurons (Zhou and Lee, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig1-v2.jpg)\n\n**Figure 1.:** (A,D) Representative time course of SNr neuron firing rate with application of NSCC blocker flufenamic acid (FFA; 100 \u03bcM) (A) and 2-aminoethoxydiphenylborane (2-APB; 100 \u03bcM) (D). Inset in panel a shows 1 s recordings before and after FFA. Scale bar: 100 pA, 200 ms. (B,E) Scatter plot of mean firing rate of SNr neurons before and after FFA application (30.7 \u00b1 3.7 versus 15.2 \u00b1 2.0 spikes/s; paired t-test; p = 0.00013; n = 9) (B) and before and after 2-APB (23.6 \u00b1 2.8 versus 3.9 \u00b1 1.9 spikes/s; paired t-test; p<0.0001; n = 8) (E). Box plots indicate the population median, interquartile range, and maximum and minimum values. (C,F) Dose response of FFA (C) and 2-APB (F) on firing rate. Data are fit with a Hill function (red line). (G) Mean basal firing rate of SNr neurons from wild-type mice (WT; 37.3 \u00b1 2.7; n = 20), mice lacking TRPC3 (TRPC3 KO; 28.6 \u00b1 4.3; n = 10) and mice lacking all seven TRPC channels (hepta-TRPC KO; 28.7 \u00b1 3.4; n = 7). Error bars indicate s.e.m. n.s.p>0.05; one-way ANOVA. (H) Representative time course of SNr firing rate with application of TRPC channel blocker SKF-96365 (100 \u03bcM). (I) Mean firing rate of SNr neurons before and after SKF-96365 application (30.0 \u00b1 3.1 versus 30.7 \u00b1 3.2 spikes/s; paired t-test; p = 0.19; n = 9), and box plot summary of the population statistics before and after SKF-96365. For panels B, E, I: n.s.p>0.05; ***p<0.001.\n\nBased on previous work, TRPC3 has been proposed as the molecular basis of the tonic depolarizing current in SNr neurons. Zhou and coworkers reported that SNr neurons express TRPC3 but no other TRP channels, and that the constitutive activity of TRPC3 is necessary for the spontaneous firing of SNr neurons (Zhou et al., 2008). Surprisingly, however, we previously found that SNr neurons from mice lacking TRPC3 continue to fire spontaneously at high rates that were not significantly different from wild-type (WT) SNr neurons (data from Lutas et al., 2014; Figure 1G). Furthermore, the firing rate of SNr neurons lacking all seven TRPC members (TRPC1-7) was not significantly attenuated either, arguing against compensation by other TRPC channels in the TRPC3 knockout animals (data from Lutas et al., 2014; Figure 1G). Consistent with this, an inhibitor of TRPC channels, SKF-96365 (100\u2009\u03bcM), did not decrease the firing rate of SNr neurons (Figure 1H,I). Taken together, these results indicate that TRPC channels are not required to maintain the spontaneous firing of SNr neurons and are unlikely to provide the basis for the tonic depolarizing current.\n\n### RNA sequencing of individual SNr neurons\n\nTo clarify which NSSC are expressed by SNr neurons, we chose an unbiased approach that took advantage of advances in RNA sequencing (RNA-seq) technology to obtain whole transcriptome gene expression data from individual SNr neurons. This method required the isolation of GABAergic neurons that reside within the SNr from other cell types, especially the neighboring dopaminergic neurons. While currently there is no selective marker for SNr neurons, we could effectively isolate SNr neurons by a combination of anatomical localization and fluorescent marking of GABAergic neurons. We made acute coronal brain slices containing the SNr from brains of GAD1-EGFP transgenic mice, in which all GABAergic neurons are fluorescently labeled (Figure 2A). Then, we dissected out the SNr regions from brain slices, dissociated this tissue to isolate individual cells, and manually collected GFP-positive neurons with a micromanipulator while observing the cells in a fluorescent microscope (Figure 2B). We collected 87 GFP-positive SNr neurons, thus isolating GABAergic SNr neurons from neighboring dopaminergic neurons of the substantia nigra pars compacta and also separating them from dopamine neurons located within the SNr. To improve our ability to detect ion channel genes, which have comparatively low expression levels, we employed the SMART-seq2 method for preparing samples for RNA sequencing, which allows for reads to be made across the full sequence of gene transcripts (Picelli et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig2-v2.jpg)\n\n**Figure 2.:** (A) (left)\u00a0Drawing depicting a coronal section of the mouse brain containing the substantia nigra pars compacta (SNc) and SNr. Bright field (right top)\u00a0and green fluorescent (right bottom)\u00a0images of a coronal brain section from a GAD1-EGFP mouse with the substantia nigra region of one hemisphere partially microdissected. (B) Scheme for the plating and collecting of individual GFP-positive neurons. (C) Gene expression results for the 62 samples that were of high quality. The rows indicate gene expression results for neuron specific marker genes (Map2, Nefl, Snap25) and marker genes for neuronal subtypes: glutamatergic (Slc17a6, Slc17a7, Slc17a8), GABAergic (Gad1, Gad2, Slc32a1), and dopaminergic (Th, Ddc, Slc6a3). Expression is indicated by the log2 transform of the number of transcripts per million (TPM) plus 1.\n\nTo ensure high-quality data, we focused our analysis on samples that had greater than 5000 genes detected (7955 \u00b1 170; n = 62). We first confirmed the selectivity of our SNr neuron RNA sequencing by examining cell-type marker genes (Figure 2C). GFP-positive cells expressed general neuronal markers Map2, Nefl, and Snap25. As expected, they also expressed GABAergic neuron markers Gad1, Gad2 (glutamic acid decarboxylases required for GABA synthesis) and Slc32a1 (the vesicular GABA transporter) (Figure 2C). In contrast, these cells had little or no expression of dopaminergic neuron markers Th (tyrosine hydroxylase required for the synthesis of a dopamine precursor), Ddc (a decarboxylase required for dopamine synthesis), and Slc6a3 (the dopamine transporter) (Figure 2C). There was also little to no expression of glutamatergic neuronal markers Slc17a6, Slc17a7, and Slc17a8 (vesicular glutamate transporters) (Figure 2C). We were therefore able to obtain whole transcriptome gene expression results from GABAergic SNr neurons, which guided our search for the NSCC that maintains the spontaneous firing of SNr neurons.\n\n### SNr neurons express several NSCCs\n\nTo generate a candidate list of NSCCs in SNr neurons, we examined the expression of known NSCCs. In contrast to a previous study, we found that SNr neurons express several members of the TRP channel family in addition to TRPC3 (Figure 3A). Interestingly, we found that NSCCs other than TRP channels were also expressed by SNr neurons. In particular, NALCN stood out as a promising candidate for the tonic depolarizing current, as it had the highest expression of all NSCCs (Figure 3B) and its expression was in the top 20% of all ion channels (Figure 3C and Figure 3\u2014figure supplement 1). In addition, we found that SNr neurons express Unc80, Unc79, and Fam155a, three genes whose protein products are known to interact with NALCN (Xie et al., 2013; Ren, 2011) (Figure 3D). We therefore hypothesized that the spontaneous firing rate of SNr neurons requires functional NALCN.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative gene expression levels of TRP channels (left) and other NSCCs (right)\u00a0in individual SNr neurons and the population average. (B) Bar graph of the mean log2 (TPM +1) for the top 20 NSCCs in descending order. Error bars indicate s.e.m. (C) Cumulative distribution plot of the mean expression level of all ion channels that were consistently expressed by SNr neurons (73 out of 232 total ion channel genes). The average level of expression of Nalcn is indicate by arrow and dashed line. (D) Histograms of expression of Nalcn, Unc79, Unc80, and Fam155a in SNr neurons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average expression in log2(TPM + 1) of ion channel genes sorted (descending order) and grouped by type. Error bars indicate s.e.m.\n\n### NALCN is a component of the machinery that sustains the spontaneous firing of SNr neurons\n\nWe first investigated whether NALCN is functionally active in SNr neurons using the trivalent cation gadolinium (Gd3+), which has been shown to block NALCN (Lu et al., 2007). To prevent precipitation of Gd3+ salts, we used a modified ACSF that was buffered by HEPES instead of sodium bicarbonate and sodium phosphate; the basal firing rate of SNr neurons in this modified ACSF is ~60% lower than that in the standard ACSF. Application of Gd3+ (100\u2009\u03bcM) rapidly silenced the firing of SNr neurons, suggesting that NALCN may be functionally active in these neurons (Figure 4A,B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative time course of SNr neuron firing rate with application of gadolinium (Gd3+; 100 \u03bcM). (B) Comparison of firing rates before and after Gd3+ application (8.2 \u00b1 0.9 versus 0.6 \u00b1 0.3 spikes/s; paired t-test; p=0.00018; n = 6). ***p<0.001.\n\nGiven that Gd3+ is not a specific blocker and may affect other channels, blockade of channels other than NALCN may be contributing to the effects of Gd3+ on firing rate. To overcome the caveats inherent in the use of nonspecific pharmacological blockers, we used a genetic approach to directly test whether NALCN is necessary for the spontaneous activity of SNr neurons. We used transgenic mice in which an exon of Nalcn is flanked by loxP sites (Nalcnfl/fl) (Flourakis et al., 2015) to conditionally eliminate NALCN in SNr neurons. The cre-dependent knockout was induced by unilateral injection of an adeno-associated virus (AAV) vector expressing fluorescently tagged cre recombinase driven by a neuron-specific promoter (hSyn-EGFP-cre) (Figure 5A). After expression for 1\u20132 weeks, acute brain slices were prepared and GFP-positive (NALCN KO) cells were targeted for cell-attached patch clamp recordings (Figure 5B). GFP-negative (control) cells from the injected and uninjected hemispheres were used as controls. Consistent with an important role of NALCN in maintaining spontaneous firing of SNr neurons, the spontaneous firing rate of NALCN KO SNr neurons was significantly lower than control SNr neurons (Figure 5C,D). In contrast, the firing rate of virally transduced SNr neurons from WT mice was unaffected, confirming that the slower firing rate of Nalcnfl/fl SNr neurons transduced with EGFP-cre was not a consequence of the viral transduction (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic depicting unilateral injections of the adeno-associated virus containing the hSyn-EGFP-cre construct. (B) Bright field (left) and fluorescent (right) images of an example EGFP-cre positive SNr neuron from which recordings were obtained. (C) Firing rates of EGFP-cre negative (21.0 \u00b1 1.3 spikes/s; n = 45) versus positive (11.9 \u00b1 0.9 spikes/s; n = 43) neurons from Nalcnfl/fl transgenic mice (unpaired t-test; ***p<0.0001). Box plot notches indicate the 95% confidence intervals. (D) Mean firing rate of EGFP-cre negative (23.9 \u00b1 2.5 spikes/s; n = 27) and positive (25.2 \u00b1 1.3 spikes/s; n = 39) neurons from WT mice (unpaired t-test; P = 0.62), and EGFP-cre negative and positive neurons from Nalcnfl/fl mice. n.s.p>0.05; ***p<0.001; one-way ANOVA with Bonferroni post hoc correction. (E) Steady-state I-V recordings from EGFP-cre negative (black symbols; n = 19) and positive (green; n = 21) neurons. (F) Steady-state current (pA) at -60 mV from EGFP-cre negative (n = 19) and positive (n = 21) neurons (unpaired t-test; ***p<0.0001).\n\nTo confirm that the NALCN-mediated inward leak current was disrupted in the NALCN KO neurons, we performed whole-cell voltage-clamp recordings to measure steady-stead inward currents. As predicted, NALCN KO neurons showed reduced inward currents compared to control SNr neurons (Figure 5E). At \u221260 mV, which is about the typical membrane potential during interspike intervals and the steady-state resting potential of SNr neurons when action potentials are blocked (Lutas et al., 2014), NALCN KO neurons had significantly less inward current compared to control SNr neurons (Figure 5F). These data confirm that a decreased steady-state inward current mediates the slowing in firing rate observed for NALCN KO neurons.\n\n### NALCN contributes to the glycolysis-sensitivity of SNr firing\n\nThe spontaneous activity of SNr neurons is modulated by cellular metabolism (Lutas et al., 2014; Yamada, 2001; Ma et al., 2007). We previously reported that inhibiting glycolysis while in the continued presence of the mitochondrial fuel beta-hydroxybutyrate (\u03b2HB) slows the firing rate of SNr neurons by a mechanism that involves decreasing a tonically active nonselective cation current (Lutas et al., 2014). We therefore tested the effect of glycolytic inhibition on SNr neurons lacking NALCN, to learn whether NALCN underlies the glycolysis-sensitive nonselective cation current. We measured spontaneous firing rates of control and NALCN KO SNr neurons, and tested the effect of inhibition of glycolysis in the presence of the mitochondrial fuel beta-hydroxybutyrate (\u03b2HB).\n\nControl SNr neurons showed a robust decrease in firing rate with inhibition of glycolysis using iodoacetic acid (IAA; 1\u2009mM), similar to our previous results (Lutas et al., 2014) (Figure 6A,B). In contrast, NALCN KO SNr neurons showed only a modest change in firing rate after inhibition of glycolysis (Figure 6A,B). We wondered whether the smaller effect of IAA on NALCN KO neurons might simply be due to the lower initial firing rate, because of a non-linearity in the relationship between firing rate and the ionic current. We thus used elevated extracellular [K+] (from 2.5 to 4\u2009mM) to increase the basal firing rate of NALCN KO cells to approximately the firing rate of control cells. In increased extracellular [K+] bath solution, NALCN KO neurons still fired significantly slower than control neurons (Figure 6\u2014figure supplement 1A), and in both potassium concentrations, NALCN KO neurons fired about 60% slower than control neurons (Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig6-v2.jpg)\n\n**Figure 6.:** (A) Time course of the average firing rate of control (GFP-negative; black line) and NALCN KO neurons (GFP-positive; green line) with application of glycolytic inhibitor, IAA (1 mM). Shaded error region indicates s.e.m. (B) Mean firing rate of SNr neurons during baseline and after application of IAA. Black square symbols: GFP-negative control experiments in 2.5 mM KCl bath solution (21.9 \u00b1 3.2 versus 9.1 \u00b1 1.8 spikes/s; paired t-test; p<0.0001; n = 10). Green square symbols: NALCN KO experiments in 2.5 mM KCl bath solution (10.6 \u00b1 1.3 versus 8.1 \u00b1 1.4 spikes/s; paired t-test; p=0.03; n = 9). Green circle symbols: NALCN KO experiments in 4 mM KCl bath solution (19.5 \u00b1 3.0 versus 15.5 \u00b1 2.0 spikes/s; paired t-test; p=0.02; n = 8). *p<0.05; ***p<0.001. (C) Baseline normalized firing rate showing the fold change after application of IAA in control (2.5 mM KCl) and both NALCN KO conditions (2.5 and 4 mM KCl). **p<0.01; ***p<0.001; one-way ANOVA with Bonferroni post hoc correction.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Mean firing rate of EGFP-cre negative (30.2 \u00b1 3.9 spikes/s; n = 18) and positive (16.8 \u00b1 2.0 spikes/s; n = 13) neurons from Nalcnfl/fl mice in elevated potassium (4 mM KCl) bath solution (unpaired t-test; **p=0.009). (B) Normalized mean firing rate of Nalcnfl/fl\u00a0EGFP-cre negative and positive neurons in 2.5 mM and 4 mM KCl bath solution. n.s.p>0.05; **p<0.01; ***p<0.001; one-way ANOVA with Bonferroni post hoc correction.\n\nNALCN KO neurons recorded in either of the two potassium concentrations had significantly smaller reductions in firing rate in response to glycolytic inhibition compared to control neurons (~20% versus ~60%), indicating that the difference was not simply a result of the lower starting firing rate of NALCN KO SNr neurons (Figure 6B,C). Together, these data suggest that NALCN is a major component of the glycolysis-sensitive nonselective cation current in SNr neurons.\n\n### The response of SNr neurons lacking NALCN to muscarinic receptor activation is blunted\n\nSpontaneous firing of SNr neurons can also be modulated by other signaling processes, particularly activation of metabotropic receptors (Zhou and Lee, 2011). It has been postulated that metabotropic receptor-mediated changes in SNr excitability required the activity of TRPC3 channels (Zhou and Lee, 2011; Zhou et al., 2009). Interestingly, metabotropic receptor activation can also modulate NALCN activity (Swayne et al., 2009; Kim et al., 2012). We tested whether TRPC3 and NALCN underlie the changes in SNr firing in response to metabotropic receptor activation. We focused on muscarinic receptor activation as this receptor has been shown to activate NALCN channels in pancreatic beta-cells (Swayne et al., 2009).\n\nActivation of muscarinic acetylcholine receptors (mAChR) using oxotremorine-M (Oxo-M; 10\u2009\u03bcM) rapidly increased SNr firing rate by over two-fold (Figure 7A). In contrast, the effect of Oxo-M on the firing rate of SNr neurons lacking NALCN was less prominent (Figure 7A). In control neurons, the maximum firing rate in Oxo-M was significantly greater than the basal firing rate (Figure 7B). While NALCN KO SNr neurons also increased their firing rate in response to Oxo-M (Figure 7B), the normalized peak response to Oxo-M was substantially smaller than in control SNr neurons (Figure 7C). For both the control and NALCN KO neurons, no significant correlation existed between the response to Oxo-M and the basal firing rate, indicating that the difference between control and NALCN KO responses to Oxo-M was not explained by the different starting firing rates (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig7-v2.jpg)\n\n**Figure 7.:** (A) Time course of the baseline normalized mean firing rate of control and NALCN KO SNr neurons with application of Oxo-M (10 \u03bcM). Shaded error region indicates s.e.m. (B) Mean firing rate during the baseline period versus the maximum firing rate during Oxo-M application of control (84.5 \u00b1 11.4 versus 32.3 \u00b1 4.7 spikes/s; paired t-test; p<0.0001; n = 13) and NALCN KO SNr neurons (20.6 \u00b1 3.8 versus 11.1 \u00b1 1.7 spikes/s; paired t-test; p=0.002; n = 12). **p<0.01; ***p<0.001. (C) Peak firing rate during Oxo-M normalized to baseline firing rate of control versus NALCN KO neurons (2.8 \u00b1 0.3 versus 1.8 \u00b1 0.1; paired t-test; p=0.008). **p<0.01. (D) Scatter plot of the peak normalized firing rate with Oxo-M versus the basal firing rate of control and NALCN KO SNr neurons. Red lines are linear regression fits of the data. Control: p=0.2; NALCN KO: p=0.6; Pearson correlation. (E) Baseline and peak firing rate in Oxo-M of WT, TRPC3 KO and hepta-TRPC KO SNr neurons. (F) Peak fold increase in firing rate with Oxo-M of WT (2.7 \u00b1 0.3; n = 5), TRPC3 KO (4.5 \u00b1 1.0; n = 7) and hepta-TRPC KO neurons (4.1 \u00b1 1.2; n = 3). n.s.p>0.05; one-way ANOVA.\n\nContrary to the results from NALCN KO neurons, SNr neurons lacking TRPC3 or all seven TRPC channels still exhibited large increases in firing rate after application of Oxo-M, similar to WT SNr neurons (Figure 7E). The peak fold increase of WT, TRPC KO, and KO of all seven TRPC was not significantly different (Figure 7F). These results indicate that NALCN, but not TRPC3, is important for the regulation of SNr neuron excitability by mAChR activation.\n\n### Other highly expressed NSCCs do not contribute to the spontaneous activity of SNr neurons\n\nWhile conditional knockout of NALCN significantly diminished the spontaneous firing of SNr neurons, SNr neurons were not completely silenced, indicating that other nonselective cation channels may contribute to maintaining spontaneous firing. Our RNA-seq results identified additional nonselective cation channel candidates, including channels that have not been previously investigated in the SNr. Although TRPML1 was the next highest expressed NSCCs candidate in our sequencing results (Figure 3B), TRPML channels are not found in the plasma membrane and likely do not contribute to the membrane potential in neurons (Cheng et al., 2010). We also did not focus on HCN channels as it has been previously shown that inhibitors of HCN channels are without effect on SNr firing (Atherton and Bevan, 2005).\n\nWe proceeded to test whether perturbing the function of other highly expressed NSCCs for which blockers or genetic tools were available could modify SNr firing. We first tested whether TRPM7, which is known to function as a channel in the plasma membrane (Bates-Withers et al., 2011), was involved in maintaining spontaneous firing by conditionally ablating TRPM7 in SNr neurons. We used a transgenic Trpm7fl/fl mouse line (Jin et al., 2008) to virally transduce neurons with the hSyn-EGFP-cre vector. We found that knockout of TRPM7 was without effect on SNr firing (Figure 8A), arguing against a role of TRMP7 in the spontaneous activity of SNr neurons.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/15271/elife-15271-fig8-v2.jpg)\n\n**Figure 8.:** (A) Mean firing rate of control (23.5 \u00b1 1.9; n = 42) and TRPM7 KO (25.8 \u00b1 2.0; n = 43) SNr neurons. n.s.p=0.42; unpaired t-test. (B) Mean firing rate before (28.8 \u00b1 3.6) and after (30.6 \u00b1 3.7) application of a TRPM2 channel blocker, clotrimazole (10 \u03bcM). *p=0.01; paired t-test. (C) Dose response curve of the effect of carbenoxolone (CBX) on baseline normalized firing rate (red line; Hill function) compared with predicted dose response curve of CBX blockade of pannexin channels (dashed black line; simulated Hill function; k = 5 \u00d7 10\u20136M).\n\nWe next tested the involvement of TRPM2, another NSCC we found to be expressed by SNr neurons. Previous studies have shown that TRPM2 is activated by NMDA receptors or by hydrogen peroxide leading to elevated firing of SNr neurons (Lee et al., 2013). However, no evidence of constitutively open TRPM2 channels has been reported in the SNr, making it unlikely that this channel supports the spontaneous firing. We found that rather than decreasing SNr firing rate, a blocker of TRPM2, clotrimazole (Hill et al., 2004), produced a significant but very small increase in firing rate (Figure 8B). These results do not support a substantial role for TRPM2 in baseline firing.\n\nLastly, we tested whether pannexin channels (PANX1 and PANX2) are involved in the basal firing rate of SNr neurons. These channels are inhibited by carbenoxolone (CBX), but this drug can block other ion channels as well (Connors, 2012). Inhibition by CBX at relatively lower concentrations can be indicative of a role of pannexin channels (Ma et al., 2009; Bruzzone et al., 2005). Therefore, we tested several concentrations of CBX on SNr spontaneous firing and found a dose-dependent inhibition of firing (Figure 8C). However, the observed IC50 was much\u00a0higher (Kd = 1.5 \u00d7 10\u20134\u2009M) than expected for a pannexin-dependent effect (Kd = 5 \u00d7 10\u20136\u2009M), arguing against an important role of pannexin channels. Overall, these results suggest that NALCN is the main NSCC that contributes to spontaneous firing of SNr neurons, while the other highly expressed NSCCs are not critically involved in spontaneous firing.\n\n## Discussion\n\nMany neuron types display pronounced, intrinsically-regulated spontaneous firing patterns that are crucial for normal circuit function (H\u00e4usser et al., 2004; Bean, 2007). However, the molecular machinery that sustains this firing is not fully understood (H\u00e4usser et al., 2004; Ren, 2011). \u201cLeak current\u201d has long been a catch-all term to describe the depolarizing current that is one component of spontaneous firing (Atherton and Bevan, 2005; Raman et al., 2000; Jackson et al., 2004; Taddese and Bean, 2002; Khaliq and Bean, 2010). Spontaneously firing GABAergic SNr neurons provide a key source of inhibitory tone to target areas including the superior colliculus and pedunculopontine nucleus (Hikosaka, 2007). In SNr neurons, a sodium-dependent, TTX-insensitive depolarizing current has been attributed to a NSCC, but the molecular identity of this current remains undefined (Atherton and Bevan, 2005). Identifying the molecular basis of this current is important to enable detailed investigation of how its properties and regulation underlie SNr tonic inhibition of basal ganglia targets.\n\nIn order to address this, we performed whole transcriptome sequencing of SNr neurons and detected expression of several NSCCs that could potentially generate the tonic depolarizing current. We discovered that SNr neurons express NALCN, which stood out as a prime candidate for the channel carrying the depolarizing leak current in these cells. Using a combination of pharmacological and genetic techniques, we showed that: 1) NALCN is functionally active in SNr neurons; 2) NALCN is an important component of the machinery that maintains spontaneous firing in SNr neurons, 3) NALCN is required for sensitivity of SNr neuron firing to glycolysis, and 4) NALCN is important for muscarinic receptor-dependent stimulation of SNr neuron firing. Taken together, our findings support a critical role of NALCN in both maintenance of spontaneous firing of SNr neurons and physiological modulation of SNr neuron excitability.\n\nNALCN is highly conserved evolutionarily. In the invertebrate species D. melanogaster, C. elegans, and L. stagnalis, their respective NALCN homologs are critical for pacemaker neuron function in circadian rhythms (Nash et al., 2002; Lear et al., 2005), locomotion (Yeh et al., 2008; Gao et al., 2015), and respiration (Lu and Feng, 2011). In mice, germ-line ablation of NALCN produces animals that develop normally, but die soon after birth from impairment in the rhythmically active neurons that regulate respiration (Lu et al., 2007). Hippocampal neurons cultured from NALCN KO mice show significantly hyperpolarized membrane potentials indicating an important function of NALCN in maintaining depolarized membrane potentials. A recent study employing conditional knockout of NALCN in forebrain excitatory neurons demonstrated that NALCN is necessary for appropriate excitability of neurons of the suprachiasmatic nucleus and underlies circadian rhythms in flies and rodents (Flourakis et al., 2015). In addition, this study reported that the forebrain NALCN knockout mice died ~21 days after birth, further indicating the critical function of this channel. Our results demonstrate that NALCN is necessary for normal spontaneous firing of SNr neurons and for the regulation of SNr excitability. The combined results of these studies are consistent with the idea that NALCN is a critical component of neuronal excitability in many rhythmically active neurons (Ren, 2011).\n\nNALCN also appears to mediate several modulatory influences on SNr firing. We find that it is important for regulation of SNr neuronal excitability in response to changes in glycolysis, an effect we had seen previously when investigating metabolic influences on SNr firing rate (Lutas et al., 2014). Together with our finding that the increased firing produced by muscarinic receptor activation is blunted in NALCN KO SNr neurons, these results suggest that tuning the level of NALCN activity may set both the tonic and phasic excitability of SNr neurons.\n\nInterestingly, NALCN has also been found in insulin-releasing pancreatic beta cells, and muscarinic receptor activation can increase NALCN activity in these cells (Swayne et al., 2009). Our finding that NALCN activity decreases when we block glycolysis in SNr neuron may also occur in beta cells. In beta cells, a decrease in NALCN activity along with an increase in ATP-sensitive potassium channel activity when glucose levels are low would work together to hyperpolarize beta cells and prevent insulin release. Therefore, the metabolic sensitivity of NALCN may be a broadly used modality to confer metabolic sensitivity to NALCN-expressing cells.\n\nOne question that arises from our results is how the activity of NALCN is decreased by the inhibition of glycolysis. A possible insight comes from the finding that metabotropic receptor signaling can modulate the activity of NALCN in neurons (Lu et al., 2009) and pancreatic beta cells (Swayne et al., 2009). Interestingly, this metabotropic receptor signaling does not modulate NALCN via canonical G-protein coupled signaling; rather, channel activity is regulated by phosphorylation of the channel by Src kinases (Ren, 2011). Phosphorylation of NALCN may be the major regulator of NALCN activity, either activating or inhibiting channel activity. During inhibition of glycolysis, the drop in cytosolic [ATP] and increase in [AMP] activates AMP kinase (AMPK) (Kahn et al., 2005), which may directly phosphorylate NALCN at a site that leads to decreased NALCN activity. An example of this possibility is the ion channel Cystic Fibrosis Transmembrane Conductance Regulator (CFTR), which is activated by Src kinases phosphorylation (Billet et al., 2015), but inhibited by AMPK phosphorylation (Hallows et al., 2000; Kongsuphol et al., 2009). Alternatively, there may be crosstalk between AMPK and the ability of Src family kinases to activate NALCN (such crosstalk is seen in regulation of metabolism by the Src family kinase Fyn and AMPK (Bastie et al., 2007)). An exciting direction for future studies will be to better understand how intracellular signaling pathways regulate NALCN activity in neurons.\n\nOur findings may also have clinical relevance, as mutations in NALCN have been implicated in several human disorders (Cochet-Bissuel et al., 2014). Recent studies have found that mutations in NALCN result in severe motor and cognitive deficits in humans (Chong et al., 2015; Aoyagi et al., 2015; Al-Sayed et al., 2013; K\u00f6ro\u011flu et al., 2013; Fukai et al., 2016). In addition, humans carrying mutations in UNC80, a protein that is important for the function of NALCN (Ren, 2011), show severe deficits that mirror those observed in humans with mutations in NALCN (Perez et al., 2015; Shamseldin et al., 2016; Stray-Pedersen et al., 2016). The SNr is a main output of the basal ganglia motor circuit and provides tonic inhibition of target areas (Hikosaka, 2007). Our finding that SNr neurons require NALCN for appropriate tonic firing, suggests that NALCN mutations could contribute to basal ganglia related motor disorders. For example, disruption of the normal tonic firing of SNr neurons by injection of GABA receptor agonists, leads to excessive muscle tension and dystonia (Burbaud et al., 1998). In addition, hyperactivity of the SNr is observed in Parkinsonian animals (Wichmann et al., 1999) and ablation of the SNr can ameliorate symptoms of Parkinson\u2019s diseases (Wichmann et al., 2001). Therefore, understanding the function of NALCN in modulating the tonic activity of SNr neurons may lead to a more detailed mechanistic understanding of motor dysfunction in humans and potentially provide a new therapeutic target for motor disorders.\n\nWhile NALCN is a major contributor to the spontaneous firing rate of SNr neurons, elimination of NALCN resulted in only a halving in the firing rates of SNr neurons. This observation is in contrast to the effects of Gd3+, which completely silenced firing of WT SNr neurons; this suggests that other Gd3+-sensitive currents, in addition to NALCN, may drive the firing of SNr neurons. We tested the possibility that other NSCCs that we found to be expressed in SNr neurons (TRPM7, TRPM2, and pannexin) may contribute to the firing rate; however, we found that TRPM7 knock-out or pharmacological inhibition of TRPM2 or pannexin were without effect on the firing rate of SNr neurons. Therefore, we were unable to identify NSCCs, other than NALCN, that are critical for spontaneous firing. One interesting possibility to explain the continued firing in the NALCN KO is that the expression of inward-current-carrying leak channels may be balanced homeostatically with outward-current-carrying leak potassium channels. In that case, loss of NALCN would lead to decreased expression of leak potassium channels and therefore offset the decreased inward current, allowing spontaneous firing to persist. While this idea is attractive, we did not find direct evidence of this possibility. In our single-cell gene expression dataset, there was no significant correlation between the expression of NALCN and the two highest expressed leak potassium channels, KCNK1 and KCNK3. Additionally, the results of our steady-state I-V recordings were inconsistent with a decrease in leak potassium current. If outward leak currents were decreasing along with inward leak currents, we would expect to observe a significant increase in the membrane resistance of SNr neurons lacking NALCN, but we did not. It remains possible that changes in the expression of other ion channels may compensate for the loss of NALCN in the knockout, as spontaneous firing is a critical function of the SNr.\n\n## Materials and methods\n\n### Animals\n\nThe Harvard Medical Area Standing Committee on Animals approved all procedures involving animals. Brain slice electrophysiology experiments were performed using brains of male and female 2 to 3 week old wild-type (WT) mice (C57/BL6; Charles River Laboratories), Nalcnfl/fl\u00a0mice (Flourakis et al., 2015), and Trpm7fl/fl mice (Jin et al., 2008). TRPC3 knockout mice and mice lacking all seven TRPC channels (TRPC1-7) were previously described (Lutas et al., 2014). GAD1-EGFP mice (Tamamaki et al., 2003) were used for single-cell SNr neuron collection.\n\n### Acute brain slice preparation\n\nPreparation of brain slices was performed as previously described (Lutas et al., 2014). Briefly, mice were first anesthetized via isoflurane inhalation and then decapitated. Using a vibrating tissue slicer (Campden, Lafayette, IN; 7000smz-2), we made acute coronal midbrain slices (275 \u00b5m) containing the substantia nigra region. Coronal slices (typically 2\u20133 slices per animal) were hemi-sectioned to obtain 6 total slices containing the SNr region. All slicing procedures were performed in ice-cold slicing solution followed by immediate incubation in ACSF at 37\u00b0C for 35 min. Slices were then kept at room temperature in ACSF for 25 min to 3\u2009hr before being used for recording. Slicing solution and ACSF were continuously oxygenated with 95% O2 and 5% CO2.\n\n### Solutions\n\nThe solutions used in this study were similar to those previously described (Lutas et al., 2014). Slicing solution consisting of (mM): 215 sucrose, 2.5 KCl, 24 NaHCO3, 1.25 NaH2PO4, 0.5 CaCl2, 7 MgCl2, 10 D-glucose (~310 mOsm, pH = 7.4). ACSF consisted of (mM): 125 NaCl, 2.5 or 4 KCl, 25 NaHCO3, 1.25 NaH2PO4, 1.5 CaCl2, 1 MgCl2,10 D-glucose (~300 mOsm, pH = 7.4). For experiments using the mitochondrial fuel \u03b2HB (2.5\u2009mM), we used sodium (R)-3-hydroxybutyrate, which is the specific enantiomer of \u03b2HB that can be metabolized. The pipette solution for loose patch cell-attached recordings consisted of (mM): 150 NaCl, 2.5 KCl, 10 HEPES, 1.5 CaCl2, 1 MgCl2 (~300 mOsm; pH 7.4). For whole-cell recordings, the pipette solution consisted of the following (in mM): 140\u2009K-gluconate, 10 NaCl, 10 HEPES, 1 MgCl2, and 0.1 EGTA, pH 7.3 (\u223c300 mOsm)\n\nFor the collection of single-cells, dissociated tissue was maintained in a HEPES-based ACSF (mM): 200 sucrose or 150 NaCl, 6 MgSO4, 2 KCl, 0.5 CaCl2, 10 HEPES, 10 Glucose. When NaCl was used, 1\u2009mM Na-lidocaine was included. pH was adjusted to 7.4 with NaOH. 1% fetal bovine serum (FBS) was added to the solution shortly before the experiment. All solutions used for dissociation and collections of cells were filtered using 0.2 \u00b5m syringe filters (VWR, Philadelphia, PA).\n\n### Electrophysiology\n\nThe spontaneous firing rate of GABAergic neurons of the SNr was monitored using loose-patch cell-attached recordings as previously described (Lutas et al., 2014). Briefly, we used borosilicate pipettes (Warner Instruments, Hamden, CT) which had tip resistances of ~2 M\u2126 when filled with HEPES-buffered ACSF solution. Whole-cell voltage-clamp recordings to characterize current\u2013voltage (I\u2013V) relationships were performed as previously described (Lutas et al., 2014). Voltage steps (150 ms duration) were made from an initial holding potential of -30 mV in 10 mV decrements, and steady-state current was calculated from the average of a 10 ms window at the end of each 150 ms voltage step. Experiments were completed within 1\u2009min of breaking into the neuron. Reported voltages have been corrected for liquid junction potentials of 15 mV. Pipettes had tip resistances of 2\u20134 M\u03a9.\n\nAll recordings were performed at 34\u00b0C with continuous perfusion (flow rate: 5\u2009mL/min) in a custom made dual-perfusion chamber. Neurons were visualized using an upright microscope (BX51WI; Olympus, Center Valley, PA) equipped with IR-DIC and controlled using TILL Vision (TILL Photonics, Grafelfing,\u00a0Germany). All recordings were collected and amplified via a Multiclamp 700B (Molecular Devices, Sunnyvale, CA). Recordings were low-pass filtered at 4 kHz and sampled at 10 kHz. Signals were digitized using a Digidata 1321A (Molecular Devices) and acquired using pClamp 10 (Molecular Devices).\n\n### Pharmacology\n\nAll chemicals used were obtained from Sigma-Aldrich (St. Louis, MO) or Tocris Bioscience (Bristol, UK). Recordings were performed in the continuous presence of synaptic blockers of ionotropic glutamate (kynurenic acid; 1\u2009mM) and GABA receptors (picrotoxin; 100 \u00b5M) to eliminate spontaneous synaptic events. No difference was observed in basal firing rates between experiments performed in the presence or absence of synaptic blockers, consistent with previous findings (Atherton and Bevan, 2005). All hydrophobic drugs were dissolved in DMSO to obtain stock solutions. Final DMSO concentrations in ACSF were <0.1% and this concentration of DMSO had no effect on SNr spontaneous firing. Inhibition of glycolysis was achieved using iodoacetic acid (IAA) as previously described (Lutas et al., 2014). For whole cell recordings, sodium lidocaine (1\u2009mM) and tetraethylammonium chloride (1\u2009mM) were included in the bath solution.\n\n### Data analysis\n\nAll analysis was performed using Matlab (R2014b; Mathworks, Natick, MA). Electrophysiological recordings were digitally high-pass filtered at 1\u2009Hz and a threshold was used to detect individual action potentials in bins of one second. For drug applications, 60 s in each condition (baseline or drug) were used as a measure of mean firing frequency. For normalized firing rate plots, individual experiments were normalized to a 60 s baseline average. Graphs depicting the time course of firing rate with drug application were smoothed using a 10 s moving window average. For whole cell I-V recordings, all recordings analyzed had input resistances greater than 120 M\u03a9 and access resistances less than 25 M\u03a9. Descriptive statistics are reported as mean \u00b1 SEM. Sample size reported indicates number of neurons. For comparisons between two populations, paired or unpaired two-tail Student\u2019s t-test was used. For multiple comparisons, one-way ANOVA with Bonferroni post hoc test with alpha = 0.05 was used.\n\nFor dose response curves, a Hill function was fit to the data using Origin 9.1 (Origin Lab, Wellesley, MA). The maximum and minimum values for the Hill function were fixed to 1 and 0, and the Hill coefficient was fixed to 1.\n\n### Manual single-cell collection for RNA-seq\n\nCollection of single SNr neurons was performed using a protocol modified from a previously published manual cell sorting method (Hempel et al., 2007). Coronal mouse brain slices (275 \u00b5m) were prepared from GAD1-EGFP mice. Slices containing the substantia nigra region were incubated for 30 min at room temperature in slicing solution bubbled with 95% O2/ 5% CO2, which also contained a proteolytic enzyme (Pronase E, 2 mg/mL, P5147 Sigma). To silence neuronal firing and prevent excitotoxicity, slices were then rinsed with HEPES-based ACSF containing 1% FBS and which either had NaCl completed replaced by equiosmolar sucrose or, if NaCl was not removed, the ACSF contained the sodium channel blocker Na-lidocaine (1\u2009mM).\n\nThe region containing the SNr was microdissected under a dissecting microscope from two brain slices, which produced four total SNr pieces per mouse. These SNr regions were placed into an Eppendorf tube containing 500 \u00b5L of HEPES-based ACSF with 1% FBS. The tissue was then gently triturated with fire-polished Pasteur pipettes (230\u2009mm; Wheaton, Millville, NJ) of progressively smaller tip diameter (400, 250, 150 \u00b5m). Typically less than 10 passages were performed with each Pasteur pipette and these were performed slowly to avoid formation of bubbles. The solution contained the dissociated tissue was then diluted in 20\u2009mL of HEPES-based ACSF with 1% FBS and poured into a sterile 140\u2009mm petri dish (VWR). The petri dish was placed in an inverted fluorescence microscope (Nikon, Tokyo, Japan;\u00a0Eclipse TE300) to detect GFP positive cells. Individual cells were collected by aspiration into unfilamented borosilicate pipettes (Warner Instruments, G150-4) pulled to have tip diameters around the size of a cell soma (10\u201330 \u00b5m). Pipettes were positioned using a micromanipulator (Sutter Instruments, Novato, CA;\u00a0MPC100) while visually monitoring with 160x magnification. Pipettes were not pre-filled with solution and slight positive pressure was maintained when entering the solution in the petri dish to prevent solution from entering the pipette. Unfilamented capillary tubes were used to minimize capillary action. Typically only a few millimeters of solution entered the pipette tip and the meniscus of the solution was clearly visible in the field of view.\n\nWhen a GFP positive cell was identified, the pipette was rapidly lowered into the solution and brought into close apposition to the cell. Slight suction via syringe was applied to gently capture the cell and the pipette was immediately withdrawn from the solution. The pipette tip was broken into the bottom of a PCR tube contained 5 \u00b5L of TCL-buffer (Qiagen) and pressure was applied via syringe to eject any solution in the pipette. The PCR tube was then flash frozen in ethanol with dry ice and stored at \u221280\u00b0C until being sent for library preparation and sequencing. Around 15 cells were collected from each dissociated cell preparation and this collection was completed in 1\u20132\u2009hr. A total of 96 cells were collected for sequencing.\n\n### Single-cell RNA sequencing\n\nIndividual neurons were lysed in 5\u2009\u03bcL of TCL buffer (Qiagen), and cDNA libraries were prepared by the Broad Technology Labs (BTL) and sequenced by the Broad Genomics Platform. Libraries were prepared according to the Smart-Seq2 protocol (Picelli et al., 2013; 2014)\u00a0with some modifications (Trombetta et al., 2014). Briefly, total RNA was purified using RNA-SPRI beads and poly(A)-tail mRNA was converted to cDNA before being amplified. cDNA was subject to transposon-based fragmentation that used dual-indexing to barcode each fragment of each converted transcript with a combination of barcodes specific to each sample. Barcoded cDNA fragments were then pooled prior to sequencing. Paired-end reads (2 x 25 bp) were generated using an Illumina Next-Seq500 (San Diego, CA).\n\n### Analysis of sequencing results\n\nData was initially processed through the BTL pipeline: data was separated by barcode and aligned using Tophat version 2.0.10 (Kim et al., 2013) to the mouse genome (Genome Reference Consortium GRCm38). Transcripts were quantified using the Cufflinks suite version 2.2.1 (Trapnell et al., 2012). Data was processed if 50% of the reads align and there were at least 100,000 aligned pairs per cell. Data was initially normalized as fragments per kilobase pair per million mapped reads (FPKM) and then converted to the number of transcripts per million (TPM). The gene expression results are reported as the log2 transform of the TPM + 1. A gene was considered expressed by an individual sample if TPM > 1. Only samples with greater than 5000 genes detected were used for analysis. For determining the consistently expressed ion channel genes, only ion channels detected in at least 50% of samples were included in the cumulative distribution plot.\n\n### Injections of virus for conditional knockout\n\nStereotaxic guided surgeries were performed in mice postnatal day 7 or 8. Mice were anesthetized with isoflurane (induction: 4\u20134.5%; maintenance: 2\u20133% ). Local anesthetics (50\u2009\u03bcL of a 1:1 mixture of 0.25% lidocaine and 0.0625% bupivacaine) were injected at the incision site. The analgesic ketoprofen (10 mg/kg) was injected subcutaneously at the beginning of the surgery. Body temperature was maintained at 37\u00b0C by a heated pad below the mouse. The skull was exposed via a small incision and a small hole was drilled to target the SNr. SNr coordinates (from lambda in mm): 1.1 anterior, -1.1 lateral, -3.6 from pia. To conditionally disrupt Nalcn or Trpm7, we injected mice with a virus carrying an EGFP tagged cre construct (AAV9.hSyn.HI.eGFP-Cre.WPRE.SV40; catalog number AV-9-PV1848; UPenn Viral Vector Core). The virus was diluted in saline to a final titer of 5.54 x 1011 genome copies/mL. Using a pulled glass capillary pipette (Wiretrol II, Drummond Scientific Company, Broomall, PA) connected to an UltraMicroPump III (WPI, Sarasota, FL) microinjector, 200 nL of virus was injected at a rate of 100 nL/min. The pipette was left in place for 5 min before removal. We waited 1\u20132 weeks post-injection before performing brain slice electrophysiology from these mice.\n",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "915c3a27-ca33-4864-8bc1-15efbe2877b0",
+      "submission_id": "d04a71dc-8746-424f-8699-812601d2678a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Indira M Raman, Northwestern University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15271.015](https://doi.org/10.7554/eLife.15271.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The leak channel NaLCN controls tonic firing and glycolytic sensitivity of substantia nigra pars reticulata neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editor, and the evaluation has been overseen by Richard Aldrich as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Dejian Ren (peer reviewer).\n\nSummary:\n\nThis manuscript identifies NALCN as the primary non-selective cation channel that drives spontaneous firing in GABAergic substantia nigra pars reticulata (SNr) neurons. The spontaneous firing or \"pacemaking\" properties of neurons are of interest, because knowing which ionic currents drive repetitive firing will not only help explain how these neurons code information but might also identify possible therapeutic targets, since disruptions of basal activity are associated with disease states. Here, the authors rule out some candidate ion channels for making SNr neurons fire, and then take the more comprehensive approach of doing RNA-seq and finding high expression of NALCN, the sodium leak conductance channel. This work shows that Nalcn mRNA is highly expressed in SNr neurons and also demonstrates the glycolysis sensitivity of channel function as well as the susceptibility to modulation by neurotransmitters. It thus reveals NALCN as a fundamental yet tunable regulator of excitability in central neurons.\n\nEssential revisions:\n\nThe reviewers expressed uniform enthusiasm for the work; these are included as \"general comments\". (1) The primary issue raised by the reviewers was the value of having some kind of direct measure of the NALCN current, e.g., under voltage clamp, to demonstrate the modulation and/or to confirm changes with viral knockdown. (2) In addition, a few points were raised that would be good to address in the Discussion: (a) hints from the present data set about the role of other inward currents (from Gd sensitivity) or lack of outward currents (from expression data) in facilitating firing and (b) mechanisms of modulation by glycolysis.\n\nGeneral comments from the three reviewers.\n\nReviewer 1: This is a high-quality and clearly written manuscript identifying NaLCN as the primary non-selective cation channel that drives spontaneous firing in GABAergic substantia nigra neurons. The spontaneous firing or \"pacemaking\" properties of various neurons are of interest, especially those in the basal ganglia (here, the substantia nigra pars reticulata SNr) because disruptions of basal activity are associated with diseases like Parkinson's. Knowing what ionic currents drive repetitive firing will not only help explain how these cells code information but might also identify possible therapeutic targets. Here, the authors rule out some obvious candidates for what makes SNr neurons fire, and then take the more comprehensive approach of doing RNA-seq and finding high expression of the fairly recently discovered NaLCN, the sodium leak conductance channel. The data are convincing and well presented. This manuscript goes beyond previous physiological work from other labs (on other neurons), not only in showing at the RNA level that NACLN is highly expressed in SNr neurons but also in demonstrating the glycolysis sensitivity of channel function, and the susceptibility to modulation by neurotransmitters. It thus sets up NALCN as a fundamental yet tunable regulator of excitability in central neurons.\n\nReviewer 2: This paper addresses a very important neurobiology question: why some neurons spontaneously fire? It has been known for decades that, in many spontaneously firing neurons, a tonically active cation conductance \"constantly\" drives the membrane potential toward threshold to generate spontaneous firing. A commonly held model, although rarely tested, is that some of the non-selective TRP channels code the cation conductance. With several elegant approaches, the authors in this paper overthrow this model and establish a new paradigm. To \"unbiasedly\" identify the conductance, the authors first painstakingly obtained single cell transcriptomes of 62 identified SNr neurons (known to spontaneously fire). With this data set (which by itself is a useful resource to the community), the authors fished out all the ion channel genes with high expression in the neurons. Guided by the finding that NALCN and its associated subunits UNC79 and UNC80 are the highest expressors, the authors used pharmacological tools and a Nalcn conditional knockout to demonstrate that NALCN indeed is a key to spontaneous firing in the SNr neurons. In addition, they discovered that NALCN is required for the normal regulation of firing rates by glycolysis inhibition and by mAChR activation. Finally, the authors provide data against the TRP-based model: inhibiting or knocking out several TRP channels had no major effect on the spontaneous firing. The paper establishes the long-sought molecular identity of a conductance essential for a highly important behavior of some neurons. It also clears up a common misconception in the field. The experiments are well done and the conclusions are convincing.\n\nReviewer 3: This elegant paper is a continuation of ongoing research on the mechanism of spontaneous firing of the GABAergic neurons in the substantia nigra pars reticulata (SNr). First, authors developed a method to identify, isolate, and collect samples from SNr GABAergic neurons. Then, using transcriptome analysis, the determined all expressed nonselective cation channels (NSCCs) channels according to their weight in the whole transcriptome expression. Then, they functionally evaluate channels with the highest expression. One of the strongest points is that authors clearly demonstrate that controversial TRPCs channels, which previously thought to modulate SNr neuronal firing, are not involved in it. The data clearly point out sodium NaLCN leak channel as a primary mediator of the SNr neuronal tonic firing, based on intersectional pharmacology and knock down experiments. Authors evaluated a number of other highly expressed channels, but found none of them to be involved in the neuronal firing modulation. Furthermore they document regulation of NaLCN channels by glycolytic pathways and mGluRs. The paper is well written, reasonably organized and easy to read. It has outstanding scientific value and substantially contributes to the field of neuroscience, specifically to our understanding of mechanisms of spontaneous neuronal activity. The NaLCN \u2013 dependent mechanism demonstrated in this work could lead to a development of new drugs targeting NaLCN channel.\n",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea725258-6002-4412-b16b-e767f4996d34",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C1",
+      "claim": "GABAergic neurons of the substantia nigra pars reticulata (SNr) fire spontaneously at high rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The spontaneously active GABAergic neurons of the substantia nigra pars reticulata (SNr), a major output of the basal ganglia, provide tonic inhibition of downstream brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known characteristic of SNr neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "dac1262e-9a5f-4187-805d-8011c269e3f7",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C2",
+      "claim": "SNr neurons provide tonic inhibition of downstream brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The spontaneously active GABAergic neurons of the substantia nigra pars reticulata (SNr), a major output of the basal ganglia, provide tonic inhibition of downstream brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known function of SNr neurons in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "18442dd6-599b-4e47-8cf1-e6d8e9583a47",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C3",
+      "claim": "A depolarizing 'leak' current supports the spontaneous firing pattern of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A depolarizing 'leak' current supports this firing pattern, but its molecular basis remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge, though the molecular basis is unknown.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "05dd0ed0-845e-4a65-bd7a-6cb2d93cc15f",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C4",
+      "claim": "SNr neurons express the sodium leak channel NALCN.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that SNr neurons express the sodium leak channel, NALCN, and that SNr neurons lacking NALCN have impaired spontaneous firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on single-cell RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8eb3bc4d-eeca-4e83-8a7c-e32225634aad",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C5",
+      "claim": "SNr neurons lacking NALCN have impaired spontaneous firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that SNr neurons express the sodium leak channel, NALCN, and that SNr neurons lacking NALCN have impaired spontaneous firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on conditional knockout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ac556298-c93b-42e2-a33e-0cc8e4ad2a8b",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C6",
+      "claim": "NALCN is involved in the modulation of SNr excitability by changes in glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NALCN is involved in the modulation of excitability by changes in glycolysis and by activation of muscarinic acetylcholine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on experimental data comparing control and NALCN KO neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3700516c-bbab-49a9-b326-87e7a69244ac",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C7",
+      "claim": "NALCN is involved in the modulation of SNr excitability by activation of muscarinic acetylcholine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NALCN is involved in the modulation of excitability by changes in glycolysis and by activation of muscarinic acetylcholine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on experimental data with muscarinic receptor activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "cfb15753-a70f-4ca3-a380-1ba7072e81bb",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C8",
+      "claim": "Disruption of NALCN could impair the basal ganglia circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that disruption of NALCN could impair the basal ganglia circuit, which may underlie the severe motor deficits in humans carrying mutations in NALCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental findings and known human mutations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ff6f85e6-991e-4050-824a-12e383d913d5",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C9",
+      "claim": "Humans carrying mutations in NALCN have severe motor deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that disruption of NALCN could impair the basal ganglia circuit, which may underlie the severe motor deficits in humans carrying mutations in NALCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about human NALCN mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ac3d16f8-78dc-4da5-aaf7-60b37aa24ec1",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C10",
+      "claim": "SNr neurons fire spontaneously at typically 30 spikes per second.",
+      "claim_type": "EXPLICIT",
+      "source": "In the substantia nigra pars reticulata (SNr), GABAergic neurons fire spontaneously at relatively high firing rates, typically 30 spikes per second (Sanderson et al., 1986; Gulley et al., 1999; Maurice et al., 2003; Deransart et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "48c7b135-6455-4803-9edb-3d77a885be19",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C11",
+      "claim": "Spontaneous firing of SNr neurons is necessary for tonic inhibition of downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This spontaneous firing is necessary for the tonic inhibition of downstream targets of the SNr and thus critical for the function of the basal ganglia (Chevalier and Deniau, 1990; Hikosaka, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8828e3c3-7dfc-4b15-8c63-173b77368615",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C12",
+      "claim": "SNr neurons have a sodium-dependent tonic current that maintains their membrane potential sufficiently depolarized to allow for spontaneous triggering of action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "SNr neurons have a leak current (a sodium-dependent tonic current) that maintains their membrane potential sufficiently depolarized to allow for spontaneous triggering of action potentials in the absence of any synaptic input (Atherton and Bevan, 2005; Zhou and Lee, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "a61db60c-2256-434f-b8c8-d3fe8dab81ef",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C13",
+      "claim": "TRPC3 has been suggested as the basis for the tonic depolarizing current in SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that a member of the Transient Receptor Potential (TRP) channel family, TRPC3, is the basis for the tonic depolarizing current in SNr neurons (Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "238b4846-34b9-4109-a6f6-33e6fb9e50e6",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C14",
+      "claim": "The spontaneous firing of SNr neurons was unaffected by genetic deletion of TRPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we previously found that the spontaneous firing of SNr neurons was unaffected by genetic deletion of TRPC3, arguing against this possibility (Lutas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9f00c7bd-347c-4d0f-87e6-8ea78cc00d07",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C15",
+      "claim": "The tonic depolarizing current in SNr neurons is decreased in response to metabolic inhibition, resulting in slowed firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We also previously reported that the tonic depolarizing current in SNr neurons is decreased in response to metabolic inhibition, resulting in slowed firing (Lutas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "2a2d266b-b5ee-45bc-a0ce-53ecf44ff4a3",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C16",
+      "claim": "Flufenamic acid (FFA; 100 \u03bcM) rapidly decreased SNr firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Flufenamic acid (FFA; 100 \u03bcM), a commonly used NSCC blocker, rapidly decreased SNr firing (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "b1709f2d-e2cb-48e4-9e28-f4b8177acdf3",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C19",
+      "claim": "2-aminoethoxydiphenylborane (2-APB; 100 \u03bcM) decreased SNr firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 2-aminoethoxydiphenylborane (2-APB; 100 \u03bcM), which also blocks multiple NSCCs including many TRP channels (Lievremont et al., 2005; Chen et al., 2012), decreased SNr firing (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D,E and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "4283edf1-55c7-4d0d-a95c-5c43540400df",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C20",
+      "claim": "The effect of 2-APB on SNr firing was dose dependent and capable of silencing firing at sufficiently high concentrations with Kd = 2.6 \u00d7 10\u20135 M.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of 2-APB on SNr firing was also dose dependent and capable of silencing firing at sufficiently high concentrations (Kd = 2.6 \u00d7 10\u20135 M; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "004b0c69-1528-435e-9b76-e507d71b4ba4",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C21",
+      "claim": "The firing rate of SNr neurons lacking all seven TRPC members (TRPC1-7) was not significantly attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the firing rate of SNr neurons lacking all seven TRPC members (TRPC1-7) was not significantly attenuated either, arguing against compensation by other TRPC channels in the TRPC3 knockout animals (data from Lutas et al., 2014; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "df24cdaf-4c68-466b-aeed-8c66c38c5876",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C22",
+      "claim": "SKF-96365 (100 \u03bcM), an inhibitor of TRPC channels, did not decrease the firing rate of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, an inhibitor of TRPC channels, SKF-96365 (100 \u03bcM), did not decrease the firing rate of SNr neurons (Figure 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "7e81067e-96ad-43ce-8861-a648740df059",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C23",
+      "claim": "TRPC channels are not required to maintain the spontaneous firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that TRPC channels are not required to maintain the spontaneous firing of SNr neurons and are unlikely to provide the basis for the tonic depolarizing current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data with TRPC knockouts and inhibitors.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ddee7416-3141-4f79-b184-631e0789fd45",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C24",
+      "claim": "GFP-positive cells from GAD1-EGFP mice expressed general neuronal markers Map2, Nefl, and Snap25.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-positive cells expressed general neuronal markers Map2, Nefl, and Snap25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "99dad767-cf37-4da7-97bc-f07893125387",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C25",
+      "claim": "GFP-positive cells from GAD1-EGFP mice expressed GABAergic neuron markers Gad1, Gad2, and Slc32a1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, they also expressed GABAergic neuron markers Gad1, Gad2 (glutamic acid decarboxylases required for GABA synthesis) and Slc32a1 (the vesicular GABA transporter) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9131c945-4270-4c2e-9465-e8bdaeec4e8f",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C26",
+      "claim": "GFP-positive cells from GAD1-EGFP mice had little or no expression of dopaminergic neuron markers Th, Ddc, and Slc6a3.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these cells had little or no expression of dopaminergic neuron markers Th (tyrosine hydroxylase required for the synthesis of a dopamine precursor), Ddc (a decarboxylase required for dopamine synthesis), and Slc6a3 (the dopamine transporter) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "26344df7-2e04-4cd2-b11d-d5c1a2056759",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C27",
+      "claim": "GFP-positive cells from GAD1-EGFP mice had little to no expression of glutamatergic neuronal markers Slc17a6, Slc17a7, and Slc17a8.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also little to no expression of glutamatergic neuronal markers Slc17a6, Slc17a7, and Slc17a8 (vesicular glutamate transporters) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3996fba8-6c41-4bd1-ac63-4197cb971c25",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C28",
+      "claim": "SNr neurons express several members of the TRP channel family in addition to TRPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to a previous study, we found that SNr neurons express several members of the TRP channel family in addition to TRPC3 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d4959408-9c4d-41f7-8329-2485bbe7ac74",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C29",
+      "claim": "NALCN had the highest expression of all NSCCs in SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that NSCCs other than TRP channels were also expressed by SNr neurons. In particular, NALCN stood out as a promising candidate for the tonic depolarizing current, as it had the highest expression of all NSCCs (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ded8c343-9790-4774-ae02-3fb38daedba6",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C30",
+      "claim": "NALCN expression was in the top 20% of all ion channels in SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, NALCN stood out as a promising candidate for the tonic depolarizing current, as it had the highest expression of all NSCCs (Figure 3B) and its expression was in the top 20% of all ion channels (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "f80d42ff-7690-4e5b-a498-e53be1d55e37",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C31",
+      "claim": "SNr neurons express Unc80, Unc79, and Fam155a, three genes whose protein products are known to interact with NALCN.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that SNr neurons express Unc80, Unc79, and Fam155a, three genes whose protein products are known to interact with NALCN (Xie et al., 2013; Ren, 2011) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 3D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "21f1f598-fbcb-43d9-bbd5-59172b7dbf54",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C32",
+      "claim": "Application of Gd3+ (100 \u03bcM) rapidly silenced the firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of Gd3+ (100 \u03bcM) rapidly silenced the firing of SNr neurons, suggesting that NALCN may be functionally active in these neurons (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "81050be3-0adc-4d1b-b2d8-223c23bf79b6",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C33",
+      "claim": "The spontaneous firing rate of NALCN KO SNr neurons was significantly lower than control SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an important role of NALCN in maintaining spontaneous firing of SNr neurons, the spontaneous firing rate of NALCN KO SNr neurons was significantly lower than control SNr neurons (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "55dcbc32-7ea0-46dd-b39e-9b6262ccb56a",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C34",
+      "claim": "The firing rate of virally transduced SNr neurons from WT mice was unaffected by EGFP-cre expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the firing rate of virally transduced SNr neurons from WT mice was unaffected, confirming that the slower firing rate of Nalcnfl/fl SNr neurons transduced with EGFP-cre was not a consequence of the viral transduction (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9a315fef-11c2-4081-9213-d986cc2377e7",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C35",
+      "claim": "NALCN KO neurons showed reduced inward currents compared to control SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, NALCN KO neurons showed reduced inward currents compared to control SNr neurons (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "810ae5fa-6d7a-4b43-bf24-0e9d9288e501",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C36",
+      "claim": "At \u221260 mV, NALCN KO neurons had significantly less inward current compared to control SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At \u221260 mV, which is about the typical membrane potential during interspike intervals and the steady-state resting potential of SNr neurons when action potentials are blocked (Lutas et al., 2014), NALCN KO neurons had significantly less inward current compared to control SNr neurons (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5F and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "415af29a-9291-4531-9112-c5c3b68d9131",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C37",
+      "claim": "Control SNr neurons showed a robust decrease in firing rate with inhibition of glycolysis using iodoacetic acid (IAA; 1 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Control SNr neurons showed a robust decrease in firing rate with inhibition of glycolysis using iodoacetic acid (IAA; 1 mM), similar to our previous results (Lutas et al., 2014) (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "518d5317-9531-405d-aa87-3e47093cfda2",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C38",
+      "claim": "NALCN KO SNr neurons showed only a modest change in firing rate after inhibition of glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NALCN KO SNr neurons showed only a modest change in firing rate after inhibition of glycolysis (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "734e2b04-3226-44e8-ba39-213e50f05956",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C39",
+      "claim": "NALCN KO neurons recorded in either 2.5 mM or 4 mM potassium had significantly smaller reductions in firing rate in response to glycolytic inhibition compared to control neurons (~20% versus ~60%).",
+      "claim_type": "EXPLICIT",
+      "source": "NALCN KO neurons recorded in either of the two potassium concentrations had significantly smaller reductions in firing rate in response to glycolytic inhibition compared to control neurons (~20% versus ~60%), indicating that the difference was not simply a result of the lower starting firing rate of NALCN KO SNr neurons (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "6324bbe0-0cdb-41f0-9c4c-84cf013f0588",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C40",
+      "claim": "NALCN is a major component of the glycolysis-sensitive nonselective cation current in SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that NALCN is a major component of the glycolysis-sensitive nonselective cation current in SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing reduced glycolytic sensitivity in NALCN KO neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "6dce1a6a-58bf-4b0e-96b6-41eedba1d232",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C41",
+      "claim": "Activation of muscarinic acetylcholine receptors using oxotremorine-M (Oxo-M; 10 \u03bcM) rapidly increased SNr firing rate by over two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of muscarinic acetylcholine receptors (mAChR) using oxotremorine-M (Oxo-M; 10 \u03bcM) rapidly increased SNr firing rate by over two-fold (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "1f34ac33-c15e-432e-be1e-e09b750b1f91",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C42",
+      "claim": "The effect of Oxo-M on the firing rate of SNr neurons lacking NALCN was less prominent than in control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the effect of Oxo-M on the firing rate of SNr neurons lacking NALCN was less prominent (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "f9e5706d-cc6a-4ea3-b2de-adbc499c0750",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C43",
+      "claim": "The normalized peak response to Oxo-M was substantially smaller in NALCN KO SNr neurons than in control SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While NALCN KO SNr neurons also increased their firing rate in response to Oxo-M (Figure 7B), the normalized peak response to Oxo-M was substantially smaller than in control SNr neurons (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d015cb81-b029-4a47-a295-5832945855f1",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C44",
+      "claim": "For both control and NALCN KO neurons, no significant correlation existed between the response to Oxo-M and the basal firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the control and NALCN KO neurons, no significant correlation existed between the response to Oxo-M and the basal firing rate, indicating that the difference between control and NALCN KO responses to Oxo-M was not explained by the different starting firing rates (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "a1e4717d-b64d-45cc-9b77-c5eee6735111",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C45",
+      "claim": "SNr neurons lacking TRPC3 or all seven TRPC channels exhibited large increases in firing rate after application of Oxo-M, similar to WT SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the results from NALCN KO neurons, SNr neurons lacking TRPC3 or all seven TRPC channels still exhibited large increases in firing rate after application of Oxo-M, similar to WT SNr neurons (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "b6771899-e9cc-448f-980f-9585f47e7ddc",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C46",
+      "claim": "The peak fold increase of WT, TRPC KO, and KO of all seven TRPC was not significantly different in response to Oxo-M.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak fold increase of WT, TRPC KO, and KO of all seven TRPC was not significantly different (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "53aba297-80f8-4a3c-aec8-d85a70660a51",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C47",
+      "claim": "NALCN, but not TRPC3, is important for the regulation of SNr neuron excitability by mAChR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that NALCN, but not TRPC3, is important for the regulation of SNr neuron excitability by mAChR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data comparing NALCN KO and TRPC KO responses to Oxo-M.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "1ec31703-d217-4caa-8a9c-3b0d77ca8f42",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C48",
+      "claim": "Conditional knockout of NALCN significantly diminished but did not completely silence the spontaneous firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While conditional knockout of NALCN significantly diminished the spontaneous firing of SNr neurons, SNr neurons were not completely silenced, indicating that other nonselective cation channels may contribute to maintaining spontaneous firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing reduced but not absent firing in NALCN KO neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "5553a77d-863b-471a-bb3a-60ec5bbaf878",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C49",
+      "claim": "Knockout of TRPM7 was without effect on SNr firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knockout of TRPM7 was without effect on SNr firing (Figure 8A), arguing against a role of TRMP7 in the spontaneous activity of SNr neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "df15d38b-3727-4bc1-858c-9c78aa515b77",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C50",
+      "claim": "A blocker of TRPM2, clotrimazole (10 \u03bcM), produced a significant but very small increase in SNr firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rather than decreasing SNr firing rate, a blocker of TRPM2, clotrimazole (Hill et al., 2004), produced a significant but very small increase in firing rate (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "905065fd-c2d1-4f10-8642-7ace890ff6be",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C51",
+      "claim": "Carbenoxolone (CBX) produced a dose-dependent inhibition of SNr firing with an IC50 much higher than expected for a pannexin-dependent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we tested several concentrations of CBX on SNr spontaneous firing and found a dose-dependent inhibition of firing (Figure 8C). However, the observed IC50 was much higher (Kd = 1.5 \u00d7 10\u20134 M) than expected for a pannexin-dependent effect (Kd = 5 \u00d7 10\u20136 M), arguing against an important role of pannexin channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "e9f59553-2bc7-4fe2-a1d4-14743a452685",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C52",
+      "claim": "NALCN is the main NSCC that contributes to spontaneous firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that NALCN is the main NSCC that contributes to spontaneous firing of SNr neurons, while the other highly expressed NSCCs are not critically involved in spontaneous firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data testing multiple NSCCs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "235babe0-735c-4cb3-a8b6-7f09eb4133de",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C53",
+      "claim": "NALCN is necessary for normal spontaneous firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that NALCN is necessary for normal spontaneous firing of SNr neurons and for the regulation of SNr excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d75c515b-bfcf-474d-8df1-94ae1dd56c56",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C54",
+      "claim": "NALCN is necessary for the regulation of SNr excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that NALCN is necessary for normal spontaneous firing of SNr neurons and for the regulation of SNr excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8cbab397-9a64-4487-bcbb-41ecc55c59ea",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C55",
+      "claim": "NALCN is a critical component of neuronal excitability in many rhythmically active neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined results of these studies are consistent with the idea that NALCN is a critical component of neuronal excitability in many rhythmically active neurons (Ren, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current study and previous studies, with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "eaccb896-0f35-404f-a7e7-3156e5b676b4",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C56",
+      "claim": "NALCN mediates several modulatory influences on SNr firing.",
+      "claim_type": "EXPLICIT",
+      "source": "NALCN also appears to mediate several modulatory influences on SNr firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data on glycolysis and muscarinic receptor modulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "55cf3b12-b3cb-49fd-b358-e7d3555e1ec9",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C57",
+      "claim": "NALCN is important for regulation of SNr neuronal excitability in response to changes in glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that it is important for regulation of SNr neuronal excitability in response to changes in glycolysis, an effect we had seen previously when investigating metabolic influences on SNr firing rate (Lutas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d757118c-4d3b-46ed-92d4-ade01e704e66",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C58",
+      "claim": "Tuning the level of NALCN activity may set both the tonic and phasic excitability of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our finding that the increased firing produced by muscarinic receptor activation is blunted in NALCN KO SNr neurons, these results suggest that tuning the level of NALCN activity may set both the tonic and phasic excitability of SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "e5a9c2c0-c514-404a-ae97-40ab859f0479",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C59",
+      "claim": "NALCN has been found in insulin-releasing pancreatic beta cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NALCN has also been found in insulin-releasing pancreatic beta cells, and muscarinic receptor activation can increase NALCN activity in these cells (Swayne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "1f5d6034-6844-4b82-8455-463db7132794",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C60",
+      "claim": "Muscarinic receptor activation can increase NALCN activity in pancreatic beta cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NALCN has also been found in insulin-releasing pancreatic beta cells, and muscarinic receptor activation can increase NALCN activity in these cells (Swayne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "bf209acf-4283-4ec1-80c4-e96a8f88b3b6",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C61",
+      "claim": "The metabolic sensitivity of NALCN may be a broadly used modality to confer metabolic sensitivity to NALCN-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the metabolic sensitivity of NALCN may be a broadly used modality to confer metabolic sensitivity to NALCN-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the findings in SNr neurons and beta cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "14e7404a-d124-4cac-a5cb-5ea42c4941e4",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C62",
+      "claim": "Metabotropic receptor signaling can modulate the activity of NALCN in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible insight comes from the finding that metabotropic receptor signaling can modulate the activity of NALCN in neurons (Lu et al., 2009) and pancreatic beta cells (Swayne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9df1136a-8f3f-4ab4-9bad-8adff9514401",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C63",
+      "claim": "Metabotropic receptor signaling modulates NALCN via phosphorylation of the channel by Src kinases rather than canonical G-protein coupled signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this metabotropic receptor signaling does not modulate NALCN via canonical G-protein coupled signaling; rather, channel activity is regulated by phosphorylation of the channel by Src kinases (Ren, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "fd2d4139-08ff-4923-aa9e-d218e3aa05fe",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C64",
+      "claim": "Mutations in NALCN have been implicated in several human disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings may also have clinical relevance, as mutations in NALCN have been implicated in several human disorders (Cochet-Bissuel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "dcba5f8c-abcb-4e24-a418-74023086df27",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C65",
+      "claim": "Mutations in NALCN result in severe motor and cognitive deficits in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have found that mutations in NALCN result in severe motor and cognitive deficits in humans (Chong et al., 2015; Aoyagi et al., 2015; Al-Sayed et al., 2013; K\u00f6ro\u011flu et al., 2013; Fukai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "7e50bdc7-7617-4840-b6fb-057c559bfd1b",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C66",
+      "claim": "Humans carrying mutations in UNC80 show severe deficits that mirror those observed in humans with mutations in NALCN.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, humans carrying mutations in UNC80, a protein that is important for the function of NALCN (Ren, 2011), show severe deficits that mirror those observed in humans with mutations in NALCN (Perez et al., 2015; Shamseldin et al., 2016; Stray-Pedersen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "dcb5cb9c-570b-48aa-bbd6-90bc79ea2df7",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C67",
+      "claim": "The SNr is a main output of the basal ganglia motor circuit and provides tonic inhibition of target areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNr is a main output of the basal ganglia motor circuit and provides tonic inhibition of target areas (Hikosaka, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "db795902-1f7a-4274-8137-998c5db5076c",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C68",
+      "claim": "SNr neurons require NALCN for appropriate tonic firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that SNr neurons require NALCN for appropriate tonic firing, suggests that NALCN mutations could contribute to basal ganglia related motor disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and known clinical associations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "198dcda3-af98-4f61-b340-1a3d6f3fa79b",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C69",
+      "claim": "Disruption of the normal tonic firing of SNr neurons by injection of GABA receptor agonists leads to excessive muscle tension and dystonia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, disruption of the normal tonic firing of SNr neurons by injection of GABA receptor agonists, leads to excessive muscle tension and dystonia (Burbaud et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3aa1fea0-6183-4fa6-b726-c559c6d51b24",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C70",
+      "claim": "Hyperactivity of the SNr is observed in Parkinsonian animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, hyperactivity of the SNr is observed in Parkinsonian animals (Wichmann et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "430c55ee-ee5c-434f-a098-c753378efc8e",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C71",
+      "claim": "Ablation of the SNr can ameliorate symptoms of Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "and ablation of the SNr can ameliorate symptoms of Parkinson's diseases (Wichmann et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "6ed5f557-d299-4db3-bd93-9c8d246afd74",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C72",
+      "claim": "Understanding the function of NALCN in modulating the tonic activity of SNr neurons may lead to a more detailed mechanistic understanding of motor dysfunction in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, understanding the function of NALCN in modulating the tonic activity of SNr neurons may lead to a more detailed mechanistic understanding of motor dysfunction in humans and potentially provide a new therapeutic target for motor disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "48a1559d-bb1f-4005-96d1-c4f3fe5f06c5",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C73",
+      "claim": "Understanding the function of NALCN in modulating the tonic activity of SNr neurons may potentially provide a new therapeutic target for motor disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, understanding the function of NALCN in modulating the tonic activity of SNr neurons may lead to a more detailed mechanistic understanding of motor dysfunction in humans and potentially provide a new therapeutic target for motor disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "bac27e8b-d381-4a67-a691-ccbcd3ffb82a",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C74",
+      "claim": "Elimination of NALCN resulted in only a halving in the firing rates of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While NALCN is a major contributor to the spontaneous firing rate of SNr neurons, elimination of NALCN resulted in only a halving in the firing rates of SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental data on NALCN KO neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "0826d5bd-f286-4034-ab72-c634b5e4fc79",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C75",
+      "claim": "Gd3+ completely silenced firing of WT SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in contrast to the effects of Gd3+, which completely silenced firing of WT SNr neurons; this suggests that other Gd3+-sensitive currents, in addition to NALCN, may drive the firing of SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the effects of Gd3+ and NALCN knockout.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "43d91f8b-54c7-49a0-9749-3362b5c7052b",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C76",
+      "claim": "Other Gd3+-sensitive currents, in addition to NALCN, may drive the firing of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in contrast to the effects of Gd3+, which completely silenced firing of WT SNr neurons; this suggests that other Gd3+-sensitive currents, in addition to NALCN, may drive the firing of SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "48fca5af-906c-466f-ad0f-e32149a71758",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C77",
+      "claim": "TRPM7 knock-out or pharmacological inhibition of TRPM2 or pannexin were without effect on the firing rate of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the possibility that other NSCCs that we found to be expressed in SNr neurons (TRPM7, TRPM2, and pannexin) may contribute to the firing rate; however, we found that TRPM7 knock-out or pharmacological inhibition of TRPM2 or pannexin were without effect on the firing rate of SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental data testing other NSCCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d5fc1165-30eb-4e1c-95c1-bbb437d37d09",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C78",
+      "claim": "Loss of NALCN would lead to decreased expression of leak potassium channels and therefore offset the decreased inward current, allowing spontaneous firing to persist.",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting possibility to explain the continued firing in the NALCN KO is that the expression of inward-current-carrying leak channels may be balanced homeostatically with outward-current-carrying leak potassium channels. In that case, loss of NALCN would lead to decreased expression of leak potassium channels and therefore offset the decreased inward current, allowing spontaneous firing to persist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis to explain the continued firing in NALCN KO neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "6d5a4281-d7a8-44c8-87ec-1de80c2cfa0d",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C79",
+      "claim": "There was no significant correlation between the expression of NALCN and the two highest expressed leak potassium channels, KCNK1 and KCNK3, in the single-cell gene expression dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In our single-cell gene expression dataset, there was no significant correlation between the expression of NALCN and the two highest expressed leak potassium channels, KCNK1 and KCNK3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "b41ebb41-6aa6-4858-9e87-505b6379d3d0",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C80",
+      "claim": "The results of steady-state I-V recordings were inconsistent with a decrease in leak potassium current in NALCN KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the results of our steady-state I-V recordings were inconsistent with a decrease in leak potassium current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d5153dfe-51ae-4df6-9d23-2eb95325af0d",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C81",
+      "claim": "Changes in the expression of other ion channels may compensate for the loss of NALCN in the knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains possible that changes in the expression of other ion channels may compensate for the loss of NALCN in the knockout, as spontaneous firing is a critical function of the SNr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility to explain the continued firing in NALCN KO neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "1c00a89e-efa0-44fa-a412-80046691a00c",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C82",
+      "claim": "The Harvard Medical Area Standing Committee on Animals approved all procedures involving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The Harvard Medical Area Standing Committee on Animals approved all procedures involving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3768dfce-b047-4ac6-a12d-8ebe0040f047",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C83",
+      "claim": "Brain slice electrophysiology experiments were performed using brains of male and female 2 to 3 week old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain slice electrophysiology experiments were performed using brains of male and female 2 to 3 week old wild-type (WT) mice (C57/BL6; Charles River Laboratories), Nalcnfl/fl mice (Flourakis et al., 2015), and Trpm7fl/fl mice (Jin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "bba6ddc4-ecd5-462c-b0bc-99910ac5d978",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C84",
+      "claim": "NALCN is expressed by other neurons in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have reported that NALCN is expressed by other neurons in the brain (Lu et al., 2007; Flourakis et al., 2015; Goldberg et al., 2012), indicating that our findings in the SNr may be more broadly applicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "320b0574-9c9c-4ef4-9900-80851cb98e7d",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C85",
+      "claim": "The findings in the SNr may be more broadly applicable to other neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have reported that NALCN is expressed by other neurons in the brain (Lu et al., 2007; Flourakis et al., 2015; Goldberg et al., 2012), indicating that our findings in the SNr may be more broadly applicable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the current findings and previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "ce31703f-bb58-4faf-b76c-303aebb311ac",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C86",
+      "claim": "In mice, germ-line ablation of NALCN produces animals that develop normally, but die soon after birth from impairment in the rhythmically active neurons that regulate respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, germ-line ablation of NALCN produces animals that develop normally, but die soon after birth from impairment in the rhythmically active neurons that regulate respiration (Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "7a6c87a9-e163-406b-9775-fa1a52b9267e",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C87",
+      "claim": "Hippocampal neurons cultured from NALCN KO mice show significantly hyperpolarized membrane potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal neurons cultured from NALCN KO mice show significantly hyperpolarized membrane potentials indicating an important function of NALCN in maintaining depolarized membrane potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known finding, likely from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "d9891237-99bc-4108-80f8-957df9bff45b",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C88",
+      "claim": "Conditional knockout of NALCN in forebrain excitatory neurons demonstrated that NALCN is necessary for appropriate excitability of neurons of the suprachiasmatic nucleus and underlies circadian rhythms in flies and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study employing conditional knockout of NALCN in forebrain excitatory neurons demonstrated that NALCN is necessary for appropriate excitability of neurons of the suprachiasmatic nucleus and underlies circadian rhythms in flies and rodents (Flourakis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "20bdf1ff-a6a8-4540-b074-8e94cf781fa9",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C89",
+      "claim": "Forebrain NALCN knockout mice died ~21 days after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this study reported that the forebrain NALCN knockout mice died ~21 days after birth, further indicating the critical function of this channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study (Flourakis et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "517b295f-8c19-4469-bade-b9958c0b9aad",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "claim_id": "C90",
+      "claim": "In the invertebrate species D. melanogaster, C. elegans, and L. stagnalis, their respective NALCN homologs are critical for pacemaker neuron function in circadian rhythms, locomotion, and respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the invertebrate species D. melanogaster, C. elegans, and L. stagnalis, their respective NALCN homologs are critical for pacemaker neuron function in circadian rhythms (Nash et al., 2002; Lear et al., 2005), locomotion (Yeh et al., 2008; Gao et al., 2015), and respiration (Lu and Feng, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of GABAergic SNr neurons revealed that NALCN is the most highly expressed nonselective cation channel (NSCC), with expression in the top 20% of all ion channels. SNr neurons also express NALCN-interacting proteins Unc80, Unc79, and Fam155a, and multiple TRP channel family members beyond TRPC3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C24-C31 are well-supported by RNA-seq data shown in Figures 2C and 3A-D. The cell type validation (C24-C27) confirms isolation of GABAergic SNr neurons, and the expression data (C28-C31) clearly demonstrates NALCN as the highest expressed NSCC with appropriate interacting partners. The methodology appears sound with appropriate quality control (>5000 genes detected).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9310e802-3af9-4e64-98c6-41ba1111abd2",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TRPC channels are not required for spontaneous firing of SNr neurons. Genetic deletion of TRPC3 alone or all seven TRPC channels (TRPC1-7) did not significantly affect firing rates, and the TRPC inhibitor SKF-96365 had no effect on firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C21-C23 are supported by data in Figure 1G-I showing no significant difference in firing rates between WT and TRPC knockout neurons, and no effect of pharmacological TRPC inhibition. This contradicts prior literature (C13) and is a key negative result that motivated the search for alternative NSCCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "11c70dd1-72a0-465e-96fa-49d3af935422",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nonspecific NSCC blockers flufenamic acid (FFA) and 2-APB dose-dependently decreased SNr firing, with complete silencing at high concentrations (Kd = 4.7\u00d710\u207b\u2075 M for FFA; Kd = 2.6\u00d710\u207b\u2075 M for 2-APB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C19-C20 are supported by experimental data in Figure 1A-F showing dose-dependent effects with quantified Kd values. However, these are nonspecific blockers affecting multiple NSCCs, so while they support a role for NSCCs generally, they cannot identify the specific channel involved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3daa2ccf-cfe9-44be-9779-4c2b7320984c",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Application of gadolinium (Gd\u00b3\u207a, 100 \u03bcM) rapidly silenced the firing of SNr neurons, suggesting NALCN may be functionally active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 is supported by data in Figure 4A-B showing complete silencing with Gd\u00b3\u207a. However, the authors acknowledge Gd\u00b3\u207a is not specific to NALCN and may affect other channels. The discrepancy between complete silencing by Gd\u00b3\u207a (C75) versus only 50% reduction in NALCN KO (C74) suggests other Gd\u00b3\u207a-sensitive currents contribute (C76), making this result uncertain for specifically implicating NALCN.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Conditional knockout of NALCN in SNr neurons significantly reduced spontaneous firing rate by approximately 50% and decreased steady-state inward current at -60 mV, demonstrating that NALCN is necessary for normal spontaneous firing and appropriate tonic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C33-C36, C53, C68 are strongly supported by genetic knockout data in Figure 5C-F. The viral transduction control (C34) rules out artifacts from the procedure. The electrophysiological measurements (C35-C36) provide mechanistic support showing reduced inward current. Statistical significance is reported (p<0.0001) with appropriate sample sizes (n=43-45 for firing rate, n=19-21 for I-V).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "7ed681c4-532a-4a50-9196-59d0789a4ecc",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NALCN is a major component of the glycolysis-sensitive current in SNr neurons. Control neurons showed ~60% reduction in firing with glycolytic inhibition (IAA), while NALCN KO neurons showed only ~20% reduction, even when baseline firing rates were normalized by elevated extracellular potassium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C40, C57 are well-supported by data in Figure 6A-C. The experimental design appropriately addresses the confound of different baseline firing rates by testing NALCN KO neurons in both 2.5 mM and 4 mM KCl (C39, Figure 6\u2014figure supplement 1). The normalized response analysis (C39) strengthens the conclusion that NALCN mediates glycolytic sensitivity independent of baseline firing rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NALCN is important for muscarinic acetylcholine receptor (mAChR) modulation of SNr excitability. Oxotremorine-M (Oxo-M) increased control neuron firing by ~2.8-fold but only ~1.8-fold in NALCN KO neurons, with no correlation between response magnitude and baseline firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41-C44, C47, C54 are supported by data in Figure 7A-D. The lack of correlation between Oxo-M response and baseline firing rate (C44, Figure 7D) addresses a potential confound. Statistical significance is reported (p=0.008 for normalized peak response). This contrasts with TRPC knockout results (C45-C46) which showed normal Oxo-M responses, strengthening the specificity for NALCN.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "89e44be1-8f64-48ad-bab5-9665196d6da8",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SNr neurons lacking TRPC3 or all seven TRPC channels exhibited normal increases in firing rate after muscarinic receptor activation with Oxo-M, indicating TRPC channels are not required for this modulatory response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by data in Figure 7E-F showing no significant difference in Oxo-M response between WT, TRPC3 KO, and hepta-TRPC KO neurons. This provides important negative control data that strengthens the specificity of the NALCN findings and further refutes the prior hypothesis that TRPC3 mediates muscarinic modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "b383004e-bae8-4451-9d9d-abde427d59a0",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Other highly expressed NSCCs (TRPM7, TRPM2, pannexin) do not contribute significantly to spontaneous firing of SNr neurons. TRPM7 knockout had no effect, TRPM2 blocker clotrimazole slightly increased firing, and carbenoxolone showed dose-dependent inhibition with IC50 inconsistent with pannexin involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52, C77 are supported by data in Figure 8A-C. The TRPM7 knockout (C49) provides strong genetic evidence. The clotrimazole result (C50) showing increased rather than decreased firing argues against TRPM2 involvement. The carbenoxolone IC50 analysis (C51) appropriately compares observed Kd (1.5\u00d710\u207b\u2074 M) to expected pannexin Kd (5\u00d710\u207b\u2076 M), arguing against pannexin involvement. These negative results support NALCN as the primary NSCC.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "bd6c6c94-441c-4471-9a80-608457e0005f",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NALCN knockout reduced but did not eliminate spontaneous firing (50% reduction), contrasting with complete silencing by Gd\u00b3\u207a, suggesting other Gd\u00b3\u207a-sensitive currents may contribute. Homeostatic compensation by reduced leak potassium channels was not supported by gene expression correlation or I-V data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76, C78-C81 represent honest discussion of limitations. The discrepancy between partial knockout effect (C74) and complete Gd\u00b3\u207a silencing (C75) is acknowledged, leading to speculation about other currents (C76). The authors appropriately test and reject the homeostatic compensation hypothesis (C78) using both RNA-seq correlation analysis (C79) and electrophysiology (C80). This strengthens confidence in the overall conclusions by addressing alternative explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings have potential clinical relevance, as mutations in NALCN and its interacting protein UNC80 cause severe motor and cognitive deficits in humans. Since SNr neurons require NALCN for appropriate tonic firing and the SNr is a major basal ganglia output, NALCN dysfunction could contribute to motor disorders and may represent a therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8-C9, C64-C73 are largely speculative (C8, C72-C73) or cite prior clinical literature (C9, C64-C66). While the connection between SNr function and motor control is well-established (C67, C69-C71), the direct link between the current findings and human NALCN mutations remains inferential (C68). No patient data or animal behavioral studies are presented to support the clinical relevance, making this uncertain despite being biologically plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8a262c57-b4aa-4669-8ab2-e068e15c2712",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NALCN is a critical component of neuronal excitability in many rhythmically active neurons across species, mediating multiple modulatory influences. The findings in SNr neurons may be broadly applicable to other NALCN-expressing neurons in the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56, C58, C61, C84-C90 synthesize the current findings with extensive prior literature on NALCN function across species and cell types. The comparative biology (C86-C90) and prior mammalian studies (C84, C87-C89) provide strong context. However, claims about broad applicability (C85) and metabolic sensitivity as a general mechanism (C61) are somewhat speculative. The tuning hypothesis (C58) is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SNr GABAergic neurons fire spontaneously at high rates (~30 spikes/second), providing tonic inhibition of downstream brain areas. This spontaneous firing is supported by a sodium-dependent depolarizing leak current that maintains membrane potential sufficiently depolarized for action potential generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C12 represent well-established background knowledge supported by multiple citations to prior literature. These claims provide essential context for the study but are not novel findings. The characterization is consistent with the experimental observations throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "52fe7976-b400-4d46-a593-aa68febdc666",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work suggested TRPC3 as the basis for the tonic depolarizing current in SNr neurons, but the authors previously found that genetic deletion of TRPC3 did not affect spontaneous firing. The authors also previously reported that the tonic depolarizing current is decreased by metabolic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 accurately represent prior literature (C13) and the authors' previous work (C14-C15). These claims establish the rationale for the current study by identifying gaps in understanding. The contradiction between C13 and C14 motivated the unbiased RNA-seq approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "8377ab0f-d6e7-4f4e-82f7-5c6c925a4e96",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "NALCN has been found in pancreatic beta cells where muscarinic receptor activation increases NALCN activity. Metabotropic receptor signaling modulates NALCN via phosphorylation by Src kinases rather than canonical G-protein signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C62-C63 are supported by citations to prior literature and provide important mechanistic context for understanding NALCN regulation. These claims help interpret the muscarinic receptor findings in SNr neurons and suggest potential mechanisms for glycolytic sensitivity, though the specific mechanisms in SNr neurons were not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    },
+    {
+      "id": "3154af22-65b5-46c2-8874-d0e9956cc45e",
+      "content_id": "759e1314-5db9-42b6-a648-bd7dd4a3bc80",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "All animal procedures were approved by the Harvard Medical Area Standing Committee on Animals. Brain slice electrophysiology experiments used 2-3 week old male and female mice of various genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 represent standard methodological information. Ethical approval is stated (C82) and experimental subjects are described (C83). These are necessary procedural details but not scientific results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:45.186562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05dd0ed0-845e-4a65-bd7a-6cb2d93cc15f",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "ddee7416-3141-4f79-b184-631e0789fd45",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "99dad767-cf37-4da7-97bc-f07893125387",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "9131c945-4270-4c2e-9465-e8bdaeec4e8f",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "26344df7-2e04-4cd2-b11d-d5c1a2056759",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "3996fba8-6c41-4bd1-ac63-4197cb971c25",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "d4959408-9c4d-41f7-8329-2485bbe7ac74",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "ded8c343-9790-4774-ae02-3fb38daedba6",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "f80d42ff-7690-4e5b-a498-e53be1d55e37",
+      "result_id": "0b1eb16b-469c-47d0-8fcb-5b2cec0fa289"
+    },
+    {
+      "claim_id": "238b4846-34b9-4109-a6f6-33e6fb9e50e6",
+      "result_id": "9310e802-3af9-4e64-98c6-41ba1111abd2"
+    },
+    {
+      "claim_id": "004b0c69-1528-435e-9b76-e507d71b4ba4",
+      "result_id": "9310e802-3af9-4e64-98c6-41ba1111abd2"
+    },
+    {
+      "claim_id": "df24cdaf-4c68-466b-aeed-8c66c38c5876",
+      "result_id": "9310e802-3af9-4e64-98c6-41ba1111abd2"
+    },
+    {
+      "claim_id": "7e81067e-96ad-43ce-8861-a648740df059",
+      "result_id": "9310e802-3af9-4e64-98c6-41ba1111abd2"
+    },
+    {
+      "claim_id": "2a2d266b-b5ee-45bc-a0ce-53ecf44ff4a3",
+      "result_id": "11c70dd1-72a0-465e-96fa-49d3af935422"
+    },
+    {
+      "claim_id": "b1709f2d-e2cb-48e4-9e28-f4b8177acdf3",
+      "result_id": "11c70dd1-72a0-465e-96fa-49d3af935422"
+    },
+    {
+      "claim_id": "4283edf1-55c7-4d0d-a95c-5c43540400df",
+      "result_id": "11c70dd1-72a0-465e-96fa-49d3af935422"
+    },
+    {
+      "claim_id": "21f1f598-fbcb-43d9-bbd5-59172b7dbf54",
+      "result_id": "3daa2ccf-cfe9-44be-9779-4c2b7320984c"
+    },
+    {
+      "claim_id": "8eb3bc4d-eeca-4e83-8a7c-e32225634aad",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "81050be3-0adc-4d1b-b2d8-223c23bf79b6",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "55dcbc32-7ea0-46dd-b39e-9b6262ccb56a",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "9a315fef-11c2-4081-9213-d986cc2377e7",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "810ae5fa-6d7a-4b43-bf24-0e9d9288e501",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "235babe0-735c-4cb3-a8b6-7f09eb4133de",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "db795902-1f7a-4274-8137-998c5db5076c",
+      "result_id": "7c1f2a22-1e32-4d33-b1fe-9711ea79b970"
+    },
+    {
+      "claim_id": "ac556298-c93b-42e2-a33e-0cc8e4ad2a8b",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "415af29a-9291-4531-9112-c5c3b68d9131",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "518d5317-9531-405d-aa87-3e47093cfda2",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "734e2b04-3226-44e8-ba39-213e50f05956",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "6324bbe0-0cdb-41f0-9c4c-84cf013f0588",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "55cf3b12-b3cb-49fd-b358-e7d3555e1ec9",
+      "result_id": "7ed681c4-532a-4a50-9196-59d0789a4ecc"
+    },
+    {
+      "claim_id": "3700516c-bbab-49a9-b326-87e7a69244ac",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "6dce1a6a-58bf-4b0e-96b6-41eedba1d232",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "1f34ac33-c15e-432e-be1e-e09b750b1f91",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "f9e5706d-cc6a-4ea3-b2de-adbc499c0750",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "d015cb81-b029-4a47-a295-5832945855f1",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "53aba297-80f8-4a3c-aec8-d85a70660a51",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "d75c515b-bfcf-474d-8df1-94ae1dd56c56",
+      "result_id": "29e18c7b-99c3-4ca4-a404-741c92d0dd5e"
+    },
+    {
+      "claim_id": "a1e4717d-b64d-45cc-9b77-c5eee6735111",
+      "result_id": "89e44be1-8f64-48ad-bab5-9665196d6da8"
+    },
+    {
+      "claim_id": "b6771899-e9cc-448f-980f-9585f47e7ddc",
+      "result_id": "89e44be1-8f64-48ad-bab5-9665196d6da8"
+    },
+    {
+      "claim_id": "53aba297-80f8-4a3c-aec8-d85a70660a51",
+      "result_id": "89e44be1-8f64-48ad-bab5-9665196d6da8"
+    },
+    {
+      "claim_id": "1ec31703-d217-4caa-8a9c-3b0d77ca8f42",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "5553a77d-863b-471a-bb3a-60ec5bbaf878",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "df15d38b-3727-4bc1-858c-9c78aa515b77",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "905065fd-c2d1-4f10-8642-7ace890ff6be",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "e9f59553-2bc7-4fe2-a1d4-14743a452685",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "48fca5af-906c-466f-ad0f-e32149a71758",
+      "result_id": "b383004e-bae8-4451-9d9d-abde427d59a0"
+    },
+    {
+      "claim_id": "bac27e8b-d381-4a67-a691-ccbcd3ffb82a",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "0826d5bd-f286-4034-ab72-c634b5e4fc79",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "43d91f8b-54c7-49a0-9749-3362b5c7052b",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "d5fc1165-30eb-4e1c-95c1-bbb437d37d09",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "6d5a4281-d7a8-44c8-87ec-1de80c2cfa0d",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "b41ebb41-6aa6-4858-9e87-505b6379d3d0",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "d5153dfe-51ae-4df6-9d23-2eb95325af0d",
+      "result_id": "bd6c6c94-441c-4471-9a80-608457e0005f"
+    },
+    {
+      "claim_id": "cfb15753-a70f-4ca3-a380-1ba7072e81bb",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "ff6f85e6-991e-4050-824a-12e383d913d5",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "fd2d4139-08ff-4923-aa9e-d218e3aa05fe",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "dcba5f8c-abcb-4e24-a418-74023086df27",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "7e50bdc7-7617-4840-b6fb-057c559bfd1b",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "dcb5cb9c-570b-48aa-bbd6-90bc79ea2df7",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "db795902-1f7a-4274-8137-998c5db5076c",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "198dcda3-af98-4f61-b340-1a3d6f3fa79b",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "3aa1fea0-6183-4fa6-b726-c559c6d51b24",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "430c55ee-ee5c-434f-a098-c753378efc8e",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "6ed5f557-d299-4db3-bd93-9c8d246afd74",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "48a1559d-bb1f-4005-96d1-c4f3fe5f06c5",
+      "result_id": "c3532e86-3828-4bb9-a274-f6d0f8fc2227"
+    },
+    {
+      "claim_id": "8cbab397-9a64-4487-bcbb-41ecc55c59ea",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "eaccb896-0f35-404f-a7e7-3156e5b676b4",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "d757118c-4d3b-46ed-92d4-ade01e704e66",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "bf209acf-4283-4ec1-80c4-e96a8f88b3b6",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "bba6ddc4-ecd5-462c-b0bc-99910ac5d978",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "320b0574-9c9c-4ef4-9900-80851cb98e7d",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "ce31703f-bb58-4faf-b76c-303aebb311ac",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "7a6c87a9-e163-406b-9775-fa1a52b9267e",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "d9891237-99bc-4108-80f8-957df9bff45b",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "20bdf1ff-a6a8-4540-b074-8e94cf781fa9",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "517b295f-8c19-4469-bade-b9958c0b9aad",
+      "result_id": "8a262c57-b4aa-4669-8ab2-e068e15c2712"
+    },
+    {
+      "claim_id": "ea725258-6002-4412-b16b-e767f4996d34",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "dac1262e-9a5f-4187-805d-8011c269e3f7",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "18442dd6-599b-4e47-8cf1-e6d8e9583a47",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "ac3d16f8-78dc-4da5-aaf7-60b37aa24ec1",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "48c7b135-6455-4803-9edb-3d77a885be19",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "8828e3c3-7dfc-4b15-8c63-173b77368615",
+      "result_id": "9ec2b270-c6b5-4916-8ad9-cd9af47c2989"
+    },
+    {
+      "claim_id": "a61db60c-2256-434f-b8c8-d3fe8dab81ef",
+      "result_id": "52fe7976-b400-4d46-a593-aa68febdc666"
+    },
+    {
+      "claim_id": "238b4846-34b9-4109-a6f6-33e6fb9e50e6",
+      "result_id": "52fe7976-b400-4d46-a593-aa68febdc666"
+    },
+    {
+      "claim_id": "9f00c7bd-347c-4d0f-87e6-8ea78cc00d07",
+      "result_id": "52fe7976-b400-4d46-a593-aa68febdc666"
+    },
+    {
+      "claim_id": "e5a9c2c0-c514-404a-ae97-40ab859f0479",
+      "result_id": "8377ab0f-d6e7-4f4e-82f7-5c6c925a4e96"
+    },
+    {
+      "claim_id": "1f5d6034-6844-4b82-8455-463db7132794",
+      "result_id": "8377ab0f-d6e7-4f4e-82f7-5c6c925a4e96"
+    },
+    {
+      "claim_id": "14e7404a-d124-4cac-a5cb-5ea42c4941e4",
+      "result_id": "8377ab0f-d6e7-4f4e-82f7-5c6c925a4e96"
+    },
+    {
+      "claim_id": "9df1136a-8f3f-4ab4-9bad-8adff9514401",
+      "result_id": "8377ab0f-d6e7-4f4e-82f7-5c6c925a4e96"
+    },
+    {
+      "claim_id": "1c00a89e-efa0-44fa-a412-80046691a00c",
+      "result_id": "3154af22-65b5-46c2-8874-d0e9956cc45e"
+    },
+    {
+      "claim_id": "3768dfce-b047-4ac6-a12d-8ebe0040f047",
+      "result_id": "3154af22-65b5-46c2-8874-d0e9956cc45e"
+    }
+  ],
+  "comparisons": []
+}

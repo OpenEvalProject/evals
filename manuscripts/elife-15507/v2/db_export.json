@@ -1,0 +1,1738 @@
+{
+  "submission": {
+    "id": "8816d794-e950-420c-9dbd-00be7c1d0a40",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:23:37.073289Z",
+    "updated_at": "2025-11-29T23:23:37.073289Z"
+  },
+  "content": [
+    {
+      "id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "submission_id": "8816d794-e950-420c-9dbd-00be7c1d0a40",
+      "content_type": "manuscript",
+      "content_text": "# ESCRT-III activation by parallel action of ESCRT-I/II and ESCRT-0/Bro1 during MVB biogenesis\n\n## Authors\n\n- Shaogeng Tang<sup>1</sup> ([ORCID: 0000-0002-3904-492X](https://orcid.org/0000-0002-3904-492X))\n- Nicholas J Buchkovich<sup>1</sup>\n- W Mike Henne<sup>1</sup>\n- Sudeep Banjade<sup>1</sup>\n- Yun Jung Kim<sup>1</sup>\n- Scott D Emr<sup>1</sup> ([ORCID: 0000-0002-5408-6781](https://orcid.org/0000-0002-5408-6781)) \u2020\n\n### Affiliations\n\n1. Weill Institute for Cell and Molecular Biology Cornell University Ithaca United States\n2. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endosomal sorting complexes required for transport (ESCRT) pathway facilitates multiple fundamental membrane remodeling events. Previously, we determined X-ray crystal structures of ESCRT-III subunit Snf7, the yeast CHMP4 ortholog, in its active and polymeric state (Tang et al., 2015). However, how ESCRT-III activation is coordinated by the upstream ESCRT components at endosomes remains unclear. Here, we provide a molecular explanation for the functional divergence of structurally similar ESCRT-III subunits. We characterize novel mutations in ESCRT-III Snf7 that trigger activation, and identify a novel role of Bro1, the yeast ALIX ortholog, in Snf7 assembly. We show that upstream ESCRTs regulate Snf7 activation at both its N-terminal core domain and the C-terminus \u03b16 helix through two parallel ubiquitin-dependent pathways: the ESCRT-I-ESCRT-II-Vps20 pathway and the ESCRT-0-Bro1 pathway. We therefore provide an enhanced understanding for the activation of the spatially unique ESCRT-III-mediated membrane remodeling.\n\n## Introduction\n\nThe endosomal sorting complex required for transport (ESCRT) pathway mediates topologically unique membrane budding events. In multivesicular body (MVB) biogenesis, ESCRT-0, I and II sort ubiquitinated cargo by binding ubiquitin and endosomal lipids. ESCRT-III assembles into spiraling polymers for cargo sequestration, and together with the AAA-ATPase Vps4, remodels the membranes to generate cargo-laden intralumenal vesicles (ILVs).\n\nESCRT-III is a metastable and conformationally dynamic hetero-polymer of four 'core' subunits, Vps20, Snf7/Vps32, Vps24 and Vps2 (Babst et al., 2002). All subunits share a common domain organization of an N-terminal helical core domain and a flexible C-terminus, but provide distinct functions. ESCRT-II engages Vps20 to nucleate the polymerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008). Finally, Vps2 engages Vps4 for ESCRT-III disassembly (Obita et al., 2007).\n\nHow is Snf7 activated to promote ESCRT-III assembly and cargo sequestration? Previous studies have shown that ESCRT-II and Vps20 modulate Snf7 protofilaments, emphasizing a role of the upstream ESCRTs in defining the assembly and architecture of the ESCRT-III complex (Henne et al., 2012; Teis et al., 2010). Recently, we have determined X-ray crystal structures of Snf7 protofilaments in the active conformation (Tang et al., 2015). Here, using genetics and biochemistry, we identify two parallel ubiquitin-dependent pathways that regulate Snf7 activation through both the Snf7\u2009N-terminal core domain and the C-terminal \u03b16 helix, providing an enhanced understanding of the activation of ESCRT-III-mediated membrane remodeling at endosomes.\n\n## Results\n\n### The \u03b11/2 hairpin confers Vps20 with a unique identity\n\nAlthough Vps20 and Snf7 display a high degree of homology, they cannot complement each other. In order to identify regions of Vps20 essential for its function, we designed a series of Vps20-Snf7 chimeras and analyzed them by an established quantitative Mup1-pHluorin MVB sorting assay (Henne et al., 2012). Although a full-length Vps20 is required for function, retaining only the \u03b11/2 hairpin of Vps20 while replacing the remainder of Vps20 with Snf7 (Vps201-105-Snf7107-240) is sufficient for sorting, albeit at ~70% efficiency (Figure 1A, Figure 1\u2014figure supplements 1\u20132), suggesting that \u03b11/2 is the minimal region unique to Vps20. This is consistent with the role of \u03b11 of Vps20 in binding to the ESCRT-II subunit Vps25 (Im et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain organization of Vps20(red)-Snf7(blue) chimera (left) and quantitative MVB sorting data (right) for vps20\u0394 yeast exogenously expressing VPS20, vps201-197-snf7211-240, vps201-172-snf7181-240, vps201-147-snf7150-240, vps201-118-snf7120-240, vps201-105-snf7107-240, vps201-59-snf761-240, vps201-5-snf711-240, and SNF7.\u00a0Error bars represent standard deviations from 3\u20135 independent experiments. (B) Screening strategy to identify snf7 suppressors in vps20\u0394 yeast. (C) Canavanine sensitivity assay for vps20\u0394 yeast exogenously expressing empty vector, VPS20, SNF7, snf7Q90L, and snf7N100I. (D) Domain organization of Snf7, with the locations of Gln90 and Asn100. WebLogo of protein sequence analysis (Doerks et al., 2002) of Snf7 orthologs from Saccharomyces cerevisiae, Homo sapiens, Mus musculus, Xenopus laevis, Drosophila melanogaster, Caenorhabditis elegans, Schizosaccharomyces pombe. (E) Close-up view of the side chain interactions of Gln90 (left) and Asn100 (right) in a 'closed' Snf7 homology model (Henne et al., 2012). (F) Liposome sedimentation assays of Snf7WT and Snf7Q90L. Liposome-bound (B) proteins and unbound (U) proteins. (G) CD scanning spectra from 200\u00a0nm to 260\u00a0nm of wild-type Snf7\u03b11\u20134 (left), Snf7\u03b11\u20134 Q90L (middle), and Snf7\u03b11\u20134 N100I proteins with (red) and without (blue) liposomes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Domain organization (left) and quantitative MVB sorting data (right) for (A) snf7\u0394 yeast exogenously expressing empty vector, SNF7, and VPS20, and for (B) vps20\u0394 yeast exogenously expressing empty vector, SNF7, VPS20, vps201-200, vps201-172, and vps201-147. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Canavanine sensitivity assay for vps20\u0394 yeast exogenously expressing VPS20, empty vector, vps201-147, and vps201-147-snf7150-240. (B) Representative images of vps20\u0394 SNF7-GFP yeast exogenously expressing VPS20, empty vector, vps201-147, and vps201-147-snf7150-240. GFP images (left) and composite images of GFP and DIC (right).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Domain organization of Snf7 closed and open conformations, highlighting the core domain. (B) Ribbon models of Snf7 closed (homology) (Henne et al., 2012) and open conformations (right, PDB: 5FD9), with the locations of Gln90 and Asn100.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Domain organization and quantitative MVB sorting data (left) for snf7\u0394 yeast exogenously expressing empty vector, SNF7, snf7Q90L, and snf7N100I. Error bars represent standard deviations from 3\u20135 independent experiments. Representative TEM images (right) of Snf7Q90L. Scale bars 100 nm.\n\n### Screening for Vps20-independent Snf7 activation mutants\n\nTo investigate the role of Vps20 in nucleating Snf7 in vivo, we next applied an unbiased random mutagenic approach. We performed error-prone polymerase chain reaction on SNF7 and selected mutants that suppress the vps20\u0394 phenotype by growth on L-canavanine (Figure 1B). Two snf7 point mutations in conserved residues, snf7Q90L and snf7N100I, showed a partial rescue of the canavanine sensitivity of vps20\u0394 (Figures 1C-1D). Remarkably, in 'closed' Snf7, Gln90 of \u03b12 is proximal to \u03b14 (Tang et al., 2015), and Asn100 is an asparagine cap of the \u03b12 helix (Figure 1E). We propose that these mutations destabilize closed Snf7 by displacing \u03b14 from \u03b12 and extending the \u03b12/3 helix.\n\nSince conformationally active Snf7 resides on membranes, we performed liposome sedimentation assays. As predicted, Q90L enhances Snf7 membrane association from 41% to 78% (Figure 1F). To further identify whether these substitutions trigger 'opening' in the core domain, we applied circular dichroism (CD) spectroscopy (Greenfield, 2006; Peter et al., 2004) on Snf7\u03b11-\u03b14, a truncated Snf7 construct with reduced membrane binding compared to the full-length proteins (Buchkovich et al., 2013). In the presence of liposomes, we observed a decrease of the negative absorption band at 208 nm and an increase at 222 nm in Q90L and N100I mutants, indicating an increase of \u03b1-helicity (Figure 1G). These data agree with the hypothesis that Snf7Q90L and Snf7N100I trigger structural rearrangements, where the \u03b12/3 loop becomes \u03b1-helical and extends into one elongated \u03b1-helix (Figure 1\u2014figure supplement 3) as observed in the open structures (McCullough et al., 2015; Tang et al., 2015). Notably, this structural rearrangement still occurs only upon membrane binding. Moreover, snf7Q90L\u00a0and snf7N100I complement snf7\u0394 in vivo, and Snf7Q90L assembles into protofilaments in vitro (Figure 1\u2014figure supplement 4), confirming a functional role of the mutants in activating Snf7.\n\n### Auto-activated Snf7 bypasses Vps20\n\nGiven that snf7Q90Land snf7N100I only modestly suppress vps20\u0394, we hypothesized that a more stabilized 'open' Snf7 on endosomal membranes would improve the suppression. We combined the activation mutations with R52E (Henne et al., 2012) to further trigger 'opening', and swapped \u03b10 of Snf7 with the N-terminal myristoylation motif of Vps20 to enhance its membrane-binding affinity (Buchkovich et al., 2013). This yielded myr-snf7R52E Q90L\u00a0and myr-snf7R52E Q90L N100I, hereafter denoted as snf7** and snf7***, which sorted cargo with increased efficiencies, albeit not completely restoring wild-type levels (Figure 2A, Figure 2\u2014figure supplements 1\u20132).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig2-v2.jpg)\n\n**Figure 2.:** (A) Domain organization of Snf7 mutants (left) and quantitative MVB sorting data (right) for vps20\u0394 yeast exogenously expressing empty vector, VPS20, SNF7, snf7Q90L, snf7N100I, snf7R52E, snf7R52E Q90L, snf7R52E Q90L N100I, myr-snf7, myr-snf7R52E Q90L, and myr-snf7R52E Q90L N100I.\u00a0Error bars represent standard deviations from 3\u20135 independent experiments. The data of myr-snf7 (vps201-5-snf711-240) and SNF7 were re-plotted from Figure 1A\u00a0for\u00a0comparsion. Mutants myr-snf7R52E Q90L and myr-snf7R52E Q90L N100I are referred to snf7** and snf7***, respectively. (B) Representative images of vps20\u0394 yeast exogenously expressing GFP-CPS1 with VPS20, snf7**, and snf7***. GFP images (left) and composite images of GFP and DIC (right). (C) Canavanine sensitivity assay for vps20\u0394 yeast exogenously expressing empty vector, VPS20, SNF7, snf7**, and snf7***. (D) Representative TEM images of ILV-containing MVBs from vps20\u0394 vam7\u0394 yeast exogenously expressing vam7tsf, with VPS20, snf7**, and snf7***. Scale bars 100 nm. (E\u2013F) Quantitation of ILV (N=150 ILV summed per sample) outer diameter from (D) in frequency distributions (E), and averaged measurements (F). Error bars represent standard deviations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Domain organization of Snf7 mutants (left) and quantitative MVB sorting data (right) for snf7\u0394 yeast exogenously expressing empty vector, VPS20, SNF7, snf7Q90L, snf7N100I, snf7R52E, snf7R52E Q90L, myr-snf7, and myr-snf7R52E Q90L. Error bars represent standard deviations from 3\u20135 independent experiments. The data from snf7Q90L and snf7N100I were partially re-plotted from Figure 1\u2014figure supplement 4 for comparison.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Domain organization of Snf7 mutants (left) and quantitative MVB sorting data (right) for vps20\u0394 snf7\u0394 yeast exogenously expressing empty vector and empty vector, VPS20 and SNF7, VPS20 and empty vector, empty vector and SNF7, empty vector and myr-snf7R52E Q90L, and empty vector and myr-snf7R52E Q90L N100I. Error bars represent standard deviations from 3\u20135 independent experiments. (B) Western blotting analyses of vps20\u0394 snf7\u0394 yeast expressing SNF7, snf7Q90L, snf7N100I, snf7R52E, myr-snf7, snf7**, and snf7***. G6PDH used as loading controls.\n\nConsistent with these observations, the ESCRT-dependent cargo GFP-Cps1 partially localized to the vacuolar lumen in vps20\u0394 with snf7** or snf7*** (Figure 2B), indicating a substantial level of MVB sorting. Moreover, snf7** and snf7*** were also able to rescue the canavanine sensitivity of vps20\u0394 (Figure 2C). Thus, these snf7 suppressors exhibit the ability to sort cargo at MVB.\n\nTo visualize whether the snf7 suppressors could produce ILVs in vivo, we utilized a temperature sensitive allele of the vacuolar SNARE vam7 to accumulate MVBs and examined yeast with thin-section TEM (Buchkovich et al., 2013; Sato et al., 1998) (Figure 2D). We observed that while ILVs in wild-type cells have a diameter of ~32 nm, snf7** and snf7*** show a decrease in ILV number and an increase in ILV diameter to ~43\u00a0nm (Figures 2E\u2013F, See Materials and methods). Since ESCRT-II and Vps20 set the architecture of ESCRT-III, we propose that the variation in ILV size is a result of aberrant ESCRT-III architecture, although we cannot completely rule out the possibility of changes in dynamics of ESCRT-III disassembly by Vps4 (Nickerson et al., 2010).\n\n### Auto-activated Snf7 bypasses ESCRT-I and ESCRT-II\n\nIntrigued by the vps20\u0394 suppression, we next wanted to test if these auto-activated Snf7 mutants could also bypass the loss of other ESCRT components (Figure 3A). Among them, the downstream ESCRT-III subunits Vps24 and Vps2 are known to modulate Snf7 architecture (Henne et al., 2012; Teis et al., 2008) and recruit the AAA-ATPase Vps4 via their C-terminal MIM motifs for ESCRT-III disassembly (Obita et al., 2007). We found that auto-activated Snf7 does not suppress vps24\u0394, vps2\u0394 or vps4\u0394 (Figure 3B, Figure 3\u2014figure supplement 1). This is consistent with the role of the suppressors in activating but not modulating or disassembling Snf7 filaments, reinforcing the division of labor among ESCRT-III subunits.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cartoon of the ESCRT pathway in MVB Biogenesis.\u00a0(B\u2013D & F\u2013G) Quantitative MVB sorting data for (B) vps20\u0394, vps24\u0394, vps2\u0394 and vps4\u0394 yeast, (C) vps36\u0394, vps22\u0394, vps25\u0394 and vps36\u0394 vps25\u0394 yeast, (D) vps23\u0394, vps28\u0394, vps37\u0394 and vps23\u0394 vps25\u0394 yeast, (E) vps27\u0394, vps27\u0394 vps20\u0394, vps27\u0394 vps25\u0394 and vps27\u0394 vps23\u0394 yeast, (G) bro1\u0394, bro1\u0394 vps20\u0394, bro1\u0394 vps25\u0394 and bro1\u0394 vps23\u0394 yeast exogenously expressing VPS20, SNF7, snf7**, and snf7***, respectively. The data from vps20\u0394 were partially re-plotted from Figure 2A for comparison. (F) Quantitative MVB sorting data for vps20\u0394 hse1\u0394, vps25\u0394 hse1\u0394, and vps23\u0394 hse1\u0394 yeast exogenously expressing VPS20/VPS25/VPS23 and HSE1, and VPS20/VPS25/VPS23 and empty vector, snf7*** and HSE1, and snf7*** and empty vector, respectively. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantitative MVB sorting data for vps20\u0394 vps24\u0394, vps20\u0394 vps2\u0394 and vps20\u0394 vps4\u0394 yeast exogenously expressing VPS20, SNF7, snf7**, and snf7***, respectively. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Multiple sequence alignment between Saccharomyces cerevisiae Snf7 and Vps20 and rational design of Snf77mut. Quantitative MVB sorting data for vps20\u0394 yeast exogenously expressing empty vector, VPS20, snf7**, snf7***, vps201-59-snf761-240, vps201-59-snf761-240 Q90L, snf7T20D V24L R27K I30K N31D L33I S34H (snf77mut), snf77mut R52E Q90L, snf77mut R52E Q90L N100I, snf7** 7mut, and snf7*** 7mut. Error bars represent standard deviations from 3\u20135 independent experiments. The data of snf7** and snf7*** were partially re-plotted from Figure 2A and vps201-59-snf761-240 from Figure 1A for comparison.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Quantitative MVB sorting data for vps20\u0394 vps36\u0394, vps20\u0394 vps22\u0394 and vps20\u0394 vps25\u0394 yeast exogenously expressing VPS20, SNF7, snf7**, and snf7***, respectively. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Cartoon diagram of ESCRT-II Arms. Quantitative MVB sorting data for vps20\u0394 vps36\u0394, vps20\u0394 vps22\u0394 and vps20\u0394 vps25\u0394 yeast exogenously expressing empty vector and empty vector, VPS20 and VPS36/VPS22/VPS25, VPS20 and vps36D548R (vps36arm) / vps22D214A (vps22arm) / vps25R83D (vps25arm), snf7** and vps36arm / vps22arm/ vps25arm, and snf7*** and vps36arm / vps22arm / vps25arm, respectively. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Quantitative MVB sorting data for vps20\u0394 vps23\u0394, vps20\u0394 vps28\u0394 and vps20\u0394 vps37\u0394 yeast exogenously expressing VPS20, SNF7, snf7**, and snf7***, respectively. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Representative TEM images of ILV-containing MVBs from vps23\u0394 vam7\u0394 yeast exogenously expressing vam7tsf, with VPS23, snf7**, and snf7***. Scale bars 100 nm. (B\u2013C) Quantitation of ILV (N=150 ILV summed per sample) outer diameter from (A) in frequency distributions (B), and averaged measurements (C). Error bars represent standard deviations.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Representative images of vps20\u0394 yeast exogenously expressing VPH1-GFP (left) and GFP-CPS1K8R K12R\u00a0(right) with VPS20, and snf7***. GFP images and composite images of GFP and DIC.\n\nPrevious studies showed that ESCRT-III assembly is regulated by ESCRT-II (Henne et al., 2012; Teis et al., 2010) (Figure 3A). ESCRT-II is a Y-shaped heterotetramer of Vps36, Vps22 and two Vps25 (arms). Vps36 GLUE domain binds ubiquitinated cargo and endosome-specific phosphatidylinositol 3-phosphate, PI3P; and each Vps25 'arm' binds one molecule of the ESCRT-III nucleator, Vps20. Since repurposing Snf7 to bind ESCRT-II does not improve the suppression (Figure 3\u2014figure supplement 2), we next tested the functionality of the suppressors in ESCRT-II single and double deletion mutants. Strikingly, snf7** and snf7*** resulted in better suppression in ESCRT-II deletion compared to vps20\u0394, with sorting efficiencies of ~60%\u201370% (Figure 3C, Figure 3\u2014figure supplements 3\u20134).\n\nWe next tested ESCRT-I mutants. ESCRT-I is a heterotetramer of Vps23, Vps28, Vps37 and Mvb12. Vps23 UEV domain recognizes ubiquitinated cargo, Vps37\u2009N-terminal helix binds to membranes, and Vps28 CTD engages Vps36 GLUE domain of ESCRT-II. We expressed the suppressors in ESCRT-I single and ESCRT-I/II double deletion mutants and we observed near wild-type sorting efficiencies (Figure 3D) with enlarged ILV sizes (Figure 3\u2014figure supplements 5\u20136). Our data suggest that ESCRT-I and ESCRT-II set up the ESCRT-III architecture to program vesicle dimension.\n\n### Auto-activated Snf7 does not bypass Bro1 and ESCRT-0\n\nBecause ESCRT-I and ESCRT-II cluster ubiquitinated cargo prior to their packaging into ILVs, the observed suppression indicated that the auto-activated Snf7 might sort cargo in a ubiquitin-independent manner. We next tested whether auto-activated Snf7 could bypass the remaining ubiquitin-binding ESCRT components, ESCRT-0 (Vps27 and Hse1) and, the yeast ALIX ortholog, Bro1/Vps31. Interestingly, the engineered snf7 suppressors do not sort cargo in vps27\u0394 or bro1\u0394 (Figures 3E and G), or hse1\u0394 in combination with vps20\u0394, vps25\u0394 (ESCRT-II) or vps23\u0394 (ESCRT-I) (Figure 3F). To test whether ubiquitin-binding of ESCRT-0 and Bro1 is critical, we expressed ubiquitin-binding mutants vps27S270D S313D (vps27UIM) and bro1I377R L386R (bro1UBD) (Bilodeau et al., 2002; Pashkova et al., 2013). They reduced the functionality of snf7*** in vps20\u0394, vps25\u0394 or vps23\u0394 (Figure 4A, Figure 4\u2014figure supplement 1). These data suggest that despite the ESCRT-I/II-independence, the suppression is still ubiquitin-dependent (Figure 3\u2014figure supplement 7), perhaps through another subset of machinery of ESCRT-0 and Bro1. We thus propose that ESCRT-0/Bro1 are required to sort ubiquitinated cargo for ESCRT-III sequestration in parallel to ESCRT-I/II.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Quantitative MVB sorting data for (A) vps20\u0394 vps27\u0394, vps25\u0394 vps27\u0394, and vps23\u0394 vps27\u0394 yeast exogenously expressing VPS20/VPS25/VPS23 and VPS27, snf7*** and VPS27, and snf7*** and vps27S270D S313D(vps27UIM), and vps20\u0394 bro1\u0394, vps25\u0394 bro1\u0394, and vps23\u0394 bro1\u0394 yeast exogenously expressing VPS20/VPS25/VPS23 and BRO1, snf7*** and BRO1, and snf7*** and bro1I377R L386R(bro1UBD), respectively, and for (B) vps20\u0394 bro1\u0394, vps25\u0394 bro1, and vps23\u0394 bro1\u0394 yeast exogenously expressing snf7*** and BRO1, snf7*** L231K L234K (snf7*** BRO1) and BRO1, and snf7***and bro1I144D L336D(bro1SNF7), respectively.\u00a0Error bars represent standard deviations from 3\u20135 independent experiments. (C\u2013D) Representative TEM images of (C) Snf7WT, Bro1, and Snf7WT with Bro1 (1:1), and (D) Snf71-225 and Snf7R52E. Scale bars 100 nm. Cartoon diagrams of Snf7 activation. (E) Cartoon diagrams of closed and open Snf7, with the locations of Vps20-dependent activation sites, Arg52, Gln90, and Asn100, and Bro1-dependent activation region, \u03b16. (F) Conceptual models of parallel ESCRT-III Snf7 activation pathways in MVB biogenesis of wild-type (left) and the core domain auto-activated Snf7 mutant, Snf7* (right).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15507/elife-15507-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Quantitative MVB sorting data for (A) vps27\u0394 yeast exogenously expressing VPS27 and vps27S270D S313D and bro1\u0394 east exogenously expressing BRO1 and bro1I377R L386R, and (B) snf7\u0394 yeast exogenously expressing SNF7 and snf7L231K L234K, and bro1\u0394 east exogenously expressing BRO1 and bro1I144D L336D. Error bars represent standard deviations from 3\u20135 independent experiments.\n\n### Bro1 binds to Snf7 \u03b16 helix and activates Snf7\n\nBro1 has been shown to directly interact with Snf7, and X-ray crystal structures suggest that the C-terminal \u03b16 helix of Snf7 binds to the Bro1 domain of Bro1 (Kim et al., 2005; McCullough et al., 2008; Wemmer et al., 2011). To test whether this interaction is required for snf7 suppression, we mutated residues at the Snf7-Bro1 interface. Notably, neither the Bro1-binding defective Snf7*** L231K L234K mutant (snf7*** BRO1), nor the Snf7-binding defective Bro1I144D L336D mutant (bro1SNF7), suppresses vps20\u0394, vps25\u0394 or vps23\u0394 (Figure 4B, Figure 4\u2014figure supplement 1). This strongly suggests that \u03b16 of Snf7 is also auto-inhibitory, and that a physical binding between Snf7 \u03b16 and Bro1 is a prerequisite for Snf7 activation.\n\nWe next tested if the Snf7-Bro1 interaction would release the \u03b16 auto-inhibition. While the recombinant Snf7WT does not assemble due to auto-inhibition, coincubation with Bro1 resulted in Snf7 protofilament assembly (Figure 4C), indicating that Bro1 directly triggers Snf7 activation. In agreement with this, the \u03b16 truncated Snf7 (Snf71-225) releases auto-inhibition and assembles into protofilaments (Figure 4D). Therefore, our data suggest that while Snf7 N100I, Q90L, and R52E release auto-inhibition in \u03b13, \u03b14, and \u03b15, respectively, \u03b16 of Snf7 is also auto-inhibitory and its activation is Bro1-dependent (Figure 4E).\n\n## Discussion\n\nThe ancient and conserved ESCRT-III membrane-remodeling machinery plays a critical role in numerous fundamental cellular processes, including MVB biogenesis, viral budding and cytokinesis. Building on our previous study (Tang et al., 2015), we focused on the predominant ESCRT-III subunit, Snf7, to understand the molecular mechanisms governing ESCRT-III for its dynamic conversion from an auto-inhibited soluble monomer to a membrane-bending polymer. Remarkably, a recent cryo-EM study on ESCRT-III IST1/CHMP1B co-polymer suggested that CHMP1B (Did2/Vps46) undergoes a similar structural rearrangement for assembly (McCullough et al., 2015), implying that the core domain extension is a common theme of ESCRT-III activation.\n\nHere, using a mutagenic approach, we identified novel Snf7 point mutations that release the auto-inhibition of \u03b13 and \u03b14 as observed in the conformationally open structures. Surprisingly, this leads to Snf7 activation that functionally bypasses the ESCRT-III nucleator Vps20, as well as the ESCRT-II and ESCRT-I complexes. This suggests that Snf7, along with its downstream ESCRT components, Vps24, Vps2 and Vps4, but not ESCRT-I/II, are among the minimal machinery required for membrane remodeling.\n\nOur data suggest that ESCRT-III activation is mediated by two parallel pathways, ESCRT-I/II and ESCRT-0/Bro1 (Figure 4F). Bro1, directly triggers ESCRT-III assembly by binding to the C-terminal \u03b16 of Snf7 (Figure 4C). Given that ESCRT-0 directly engages Bro1 (Lee et al., 2016) to recognize ubiquitinated cargo (Pashkova et al., 2013), we showed that Snf7 \u03b16 binding to Bro1 relieves autoinhibiton of Snf7. This adds to the roles for Bro1, besides its recruitment of the Doa4 deubiquitinase in the MVB pathway (Luhtala and Odorizzi, 2004).\n\nConsistent with our observation, a very recent study suggested that ALIX and ESCRT-I/II function as parallel CHMP4B (Snf7 ortholog in human) recruiters in cytokinetic abscission (Christ et al., 2016).\n\nWhile biochemical data suggest that Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro, our genetic evidence indicat that the conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes: 1) ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7; 2) ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7 (Figures 4E\u2013F). Our results provide novel insights into a two-stage activation pathway for ESCRT-III-mediated membrane remodeling.\n\n## Materials and methods\n\n### Fluorescence microscopy, canavanine plating assay, western blotting, protein purification and liposome sedimentation\n\nFluorescence microscopy, western blotting and recombinant Snf7 purification for CD, TEM and liposome sedimentation analysis were performed as described (Buchkovich et al., 2013; Henne et al., 2012; Tang et al., 2015), and canavanine plating assay as described (Lin et al., 2008).\n\nFor Bro1 purification, Saccharomyces cerevisiae BRO1 was cloned into the pET23d vector (Novagen, Billerica, MA, USA) with an N-terminal His6-tag, induced by 1\u2009mM IPTG at 18oC overnight from BL21 E. coli cells, and purified by TALON metal affinity resin (Clontech). Protein-bound TALON resins were washed in 500\u2009mM NaCl, 20\u2009mM HEPES pH\u00a07.4, 20\u2009mM imidazole, and eluted in 150\u2009mM NaCl, 20\u2009mM HEPES pH\u00a07.4, 400\u2009mM imidazole.\n\n### Flow cytometry\n\nThe quantitative Mup1-pHluorin ESCRT cargo-sorting flow cytometry assay was performed as described (Buchkovich et al., 2013; Henne et al., 2012; Tang et al., 2015). Briefly, mid-log yeast cell cultures grown with the addition of 20\u2009\u03bcg/mL L-methionine for 2\u2009hr were resuspended in 1x PBS buffer. Mean green fluorescence (FL1-A channel) of 100,000 events was recorded and gated on a BD Accuri C6 flow cytometer. For single ESCRT mutants, take Figure 1A for example: NBY42 (vps20\u0394 MUP1-PH) yeast cells were transformed with 1) pRS416 empty vector, 2) pRS416 VPS20, or 3) different mutants, respectively. Gated mean FL1-A values, F, of each sample are recorded and sorting scores are calculated as:\n\n$$\nMVB\u00a0Sorting\u00a0%=(1\u2212\\frac{F_{Mutant}\u2212F_{VPS20}}{F_{empty\u00a0vector}\u2212F_{VPS20}})\\times100%\n$$\n\nSorting scores of 3 to 5 independent experiments are used to calculate standard deviation.\n\nFor double ESCRT mutants, take Figure 3D panel vps23\u0394vps25\u0394 for example. STY64 (vps23\u0394 vps25\u0394 MUP1-PH) yeast cells were co-transformed with 1) pRS415 empty vector and pRS416 empty vector, 2) pRS415 VPS25 and pRS416 VPS23, 3) pRS415 empty vector and pRS416 VPS20, 4) pRS415 empty vector and pRS416 SNF7, 5) pRS415 empty vector and pRS416 snf7**, or 6) pRS415 empty vector and pRS416 snf7***, respectively. MVB sorting scores are calculated as:\n\n$$\nMVB\u00a0Sorting\u00a0%=(1\u2212\\frac{F_{Mutant}\u2212F_{VPS25+VPS23}}{F_{empty\u00a0vector+empty\u00a0vector}\u2212F_{VPS25+VPS23}})\\times100%\n$$\n\nSorting scores of 3 to 5 independent experiments are used to calculate standard deviation.\n\n### Yeast strain and plasmids\n\nSee Supplementary file 1 for a list of plasmids and yeast strains used in this study.\n\n### SNF7 random mutagenesis for vps20\u0394 suppressor screening\n\nThe DNA sequence of Saccharomyces cerevisiae SNF7 with 500bp of 5\u2019UTR and 500bp of 3\u2019UTR was amplified by Taq DNA polymerase with 20 \u00b5M MnCl2 and manipulated dNTP (N=A, T, G, or C) concentrations of 250 \u00b5M for three dNTPs and 25 \u00b5M for the other dNTP. Four individual 50 \u00b5L PCR reactions with different dNTP ratios were mixed, purified and transformed in vps20\u0394 yeast, along with a restriction enzyme digested vector of 3\u2019UTR-pRS416-5\u2019UTR. Yeast cells were plated and grown on YNB-uracil for 3 days at 26oC, and replica plated on YNB-uracil with 4.0 \u00b5g/mL of L-canavanine. Canavanine-resistant yeast colonies were selected, and gap-repaired pRS416 snf7 mutant were prepped, amplified and sequenced.\n\n### Circular dichroism spectroscopy\n\nCD experiments were carried out using an Aviv Biomedical CD spectrometer Model 202\u201301. 10\u2009\u03bcM Snf7core mutants were buffer exchanged by Superdex-200 gel filtration (GE Healthcare Life Sciences) to 10\u2009mM sodium phosphate buffer pH\u00a07.5. For solution samples, Snf7core was mixed with an equal volume of buffer. For liposome samples, Snf7core was mixed with an equal volume of 1.0 mg/mL liposomes of 800 nm diameter, with 60% 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 30% 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS), 10% phosphatidylinositol 3-phosphate (PI(3)P). The preparation of liposomes was performed as previously described (Henne et al., 2012).\n\nThe degrees of ellipticity were measured at 4oC and scanned from 260 nm to 200 nm. Molar ellipticity, \u03b8, was then normalized using the following equation and plotted versus wavelength, where n=142 is the number of peptide bonds.\n\n$$\n\\theta\u00a0(deg\u2219cm^{2}/dmol)\u00a0=\u00a0\\frac{Ellipticity(mdeg)}{Pathlength(mm)\u2219[Protein](\\muM)\u2219n}\\times10^{6}\n$$\n\n### Negative stain transmission electron microscopy\n\nVisualization of ESCRT-III assembly using purified recombinant ESCRT components was performed as previously described (Henne et al., 2012).\n\nVisualization of MVB in vam7tsf yeast cells was performed as previously described (Buchkovich et al., 2013). Briefly, 30 ODV of mid-log vam7tsf yeast cells were grown at 38oC for 3\u2009hr, and then fixed with 2.5% (v/v) glutaraldehyde for 1\u2009hr and spheroplasted with zymolyase and gluculase before embedding in 2% ultra-low temperature agarose. Cells were incubated in 1% osmium tetroxide/1% potassium ferrocyanide for 30\u2009min, 1% thiocarbohydrazide for 5\u2009min, and 1% osmium tetroxide/1% postassium ferrocyanide for 5\u2009min. After dehydration through an ethanol series, samples were transitioned into 100% propylene oxide and embedded in Spurr\u2019s resin. Note that osmotic gradients during fixation or dehydration might account for the MVB morphological defects and the larger mean ILV diameter compared to samples prepared by high-pressure freezing and automated freeze-substitution. However, all yeast cells used in these experiments were treated equally. All TEM was performed on a Morgnani 268 transmission electron microscope (FEI) with an AMT digital camera.\n",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "afee42bd-d752-4bc3-8180-4db21638ece2",
+      "submission_id": "8816d794-e950-420c-9dbd-00be7c1d0a40",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15507.025](https://doi.org/10.7554/eLife.15507.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"ESCRT-III activation mutants mediate MVB biogenesis independent of ESCRT-I and ESCRT-II\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom, (William Weis) is a member of our Board of Reviewing Editors.\n\nThe following individual involved in review of your submission has agreed to reveal their identity: Alexey Merz (peer reviewer).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors previously determined the active, polymerizing conformation of Snf7 as part of ESCRT-III function in MVB formation. This Research Advance exploits these structural data in combination with genetic screens to understand how the active conformation of Snf7 is regulated. They show that the two N-terminal \u03b1 helices of Snf7 are essential for Vps20 (the most proximal upstream component) regulation, and find mutations that can bypass upstream ESCRT-I and II mutants. Intriguingly, although ESCRT-I and II cluster ubiquitylated cargo, the activated Snf7 mutants still require such cargo for MVB formation. Perhaps the most interesting finding is that Bro1, which is known to bind to Snf7 helix 6, does so to relieve autoinhibition of Snf7, demonstrating that Snf7 helix 6 also confers autoinhibition to Snf7 filament assembly in addition to the previously documented autoinhibition that prevents remodeling of helices 3,4 and 5. This two-stage mechanism of activation is intriguing and probably adds an important level of regulation to the system. Overall, this is a logical follow up to the previous eLife paper and adds considerable new data to understanding regulation of ESCRT-III.\n\nThe authors should address the following in a revised manuscript:\n\n1) More background is needed for the non-specialist \u2013 it is a bit too 'insider'. The Introduction is very minimal, and going through the mutation data on ESCRT-I and -II suppression is difficult without more background on the roles of some of these factors. For example, apart from a cartoon no background is provided regarding the 'arms' of the ESCRT-II complex.\n\n2) In the CD experiments shown in Figure 1G, a reference is needed to explain the red shift of the spectrum in the presence of liposomes. In general, more helical structure is associated with increased negative ellipticity at 208 and 222 nm, not a spectral shift. Also, comparing 1F and 1G, why is there no change with WT in 1G when there is 41% binding in 1F? Is this due to use of the truncated construct? This is not made clear.\n\n3) Figure 2D; Figure 3\u2014figure supplement 6: The variation in ILV size relies on samples prepared from vam7tsf vacuole-fusion-deficient spheroplasts fixed in conventional fixative. This accounts for the relatively poor preservation of the MVB morphology. Osmotic gradients during fixation or dehydration probably account for the morphological defects and the larger mean vesicle sizes versus MVBs in the same strains prepared by high-pressure freezing and automated freeze-substitution. The limitations of this approach should be mentioned particularly since there is a strong possibility that the composition (lipids, proteins, lipid:protein ratios) in the vesicles of suppressed cells vary, resulting in divergent robustness to the stresses of conventional fixation. Also, the legend for Figure 2 should specify whether n=150 refers to the number of ILVs, MVBs, or cells, and whether n=150 summed over the experiment or per-treatment. Finally, could some of the size differences be due to the somewhat smaller amount of Snf7 mutant protein relative to WT (Figure 2\u2014figure supplement 2B)?\n\n4) At the end of the subsection \u201cAuto-activated Snf7 bypasses Vps20\u201c: an alternative possibility is that the variation in ILV sizes is due to changes in disassembly of the ESCRT III polymers by Vps4. The possibility that the vesicle sizes reflect divergent ESCRT III dynamics (vs. static architecture) is underscored by previous work (Odorizzi et al., 2006; 2010) showing that mutants deficient for Did2, a Vps4 ATPase regulator, have vesicle morphology phenotypes highly similar to those described in the present paper.\n\n5) The MVB sorting assays should be briefly described in Methods. In particular, the authors should reiterate how 0% and 100% are calibrated, and the figure legends need to specify the number of independent experiments summarized for each panel or experiment.\n\n6) A concern in the experiments in Figure 3E is that expression of Hse1-DUB might mildly interfere with normal Hse1 function through a mechanism other than de-ubiquitination. Such a defect might not be evident in a WT background where MVB formation is robust, but it could potentially manifest in the suppressed background where MVB formation might be barely possible. The standard control in experiments using the Piper group's Hse1-DUB fusions is to use fusions containing a catalytically dead DUB domain. These controls need to be included in a supplemental panel. The related experiments in Figure 4A and B (Vps27 and Bro1 Ub-interaction mutants) are strong, however, so it is recommended that either the Hse1-DUB experiment be omitted, or that it should be presented with these needed controls.\n",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "59887b34-a2f3-40d0-9463-6cf7a143ef87",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C1",
+      "claim": "The ESCRT pathway facilitates multiple fundamental membrane remodeling events.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal sorting complexes required for transport (ESCRT) pathway facilitates multiple fundamental membrane remodeling events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ESCRT function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "6acb6897-26c5-4af7-bf1f-00b76258dd96",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C2",
+      "claim": "X-ray crystal structures of ESCRT-III subunit Snf7 in its active and polymeric state were previously determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we determined X-ray crystal structures of ESCRT-III subunit Snf7, the yeast CHMP4 ortholog, in its active and polymeric state (Tang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "6d3a434e-9410-4e5c-8277-c82c07690322",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C3",
+      "claim": "Snf7 is the yeast CHMP4 ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we determined X-ray crystal structures of ESCRT-III subunit Snf7, the yeast CHMP4 ortholog, in its active and polymeric state (Tang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and represents established knowledge about protein homology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "21756455-41a3-4cc2-b730-3d19f5c9c175",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C4",
+      "claim": "How ESCRT-III activation is coordinated by upstream ESCRT components at endosomes was unclear prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, how ESCRT-III activation is coordinated by the upstream ESCRT components at endosomes remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "447f4828-e3dd-4b3f-a857-cc2cf7630162",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C5",
+      "claim": "This study provides a molecular explanation for the functional divergence of structurally similar ESCRT-III subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide a molecular explanation for the functional divergence of structurally similar ESCRT-III subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the study supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "2703b1a0-7d8e-498c-9746-069447a0ba8f",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C6",
+      "claim": "Novel mutations in ESCRT-III Snf7 that trigger activation were characterized in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterize novel mutations in ESCRT-III Snf7 that trigger activation, and identify a novel role of Bro1, the yeast ALIX ortholog, in Snf7 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mutagenesis experiments and functional assays presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "4b1ab9cb-eff2-4cae-bb8f-5ab5aa607098",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C7",
+      "claim": "Bro1 is the yeast ALIX ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterize novel mutations in ESCRT-III Snf7 that trigger activation, and identify a novel role of Bro1, the yeast ALIX ortholog, in Snf7 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about protein homology between yeast and mammalian systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "9d48f10d-28e9-46f4-9cd3-15b2b75c981f",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C8",
+      "claim": "A novel role of Bro1 in Snf7 assembly was identified in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterize novel mutations in ESCRT-III Snf7 that trigger activation, and identify a novel role of Bro1, the yeast ALIX ortholog, in Snf7 assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the biochemical and genetic experiments showing Bro1's role in Snf7 activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "3e6117c7-2a1f-477e-96b5-4eedc505f72d",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C9",
+      "claim": "Upstream ESCRTs regulate Snf7 activation at both its N-terminal core domain and the C-terminus \u03b16 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that upstream ESCRTs regulate Snf7 activation at both its N-terminal core domain and the C-terminus \u03b16 helix through two parallel ubiquitin-dependent pathways: the ESCRT-I-ESCRT-II-Vps20 pathway and the ESCRT-0-Bro1 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the genetic and biochemical data showing dual regulation of Snf7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "a6a9ad38-0e88-40c7-9914-1e902c5d53cb",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C10",
+      "claim": "Snf7 activation is regulated through two parallel ubiquitin-dependent pathways: the ESCRT-I-ESCRT-II-Vps20 pathway and the ESCRT-0-Bro1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that upstream ESCRTs regulate Snf7 activation at both its N-terminal core domain and the C-terminus \u03b16 helix through two parallel ubiquitin-dependent pathways: the ESCRT-I-ESCRT-II-Vps20 pathway and the ESCRT-0-Bro1 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the suppressor analysis and ubiquitin-binding mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "9d8760b7-5242-4e21-8194-2233f271e471",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C11",
+      "claim": "ESCRT-0, I and II sort ubiquitinated cargo by binding ubiquitin and endosomal lipids in MVB biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivesicular body (MVB) biogenesis, ESCRT-0, I and II sort ubiquitinated cargo by binding ubiquitin and endosomal lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT function in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f3f72858-b555-4c6f-987d-bd000dff4113",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C12",
+      "claim": "ESCRT-III assembles into spiraling polymers for cargo sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III assembles into spiraling polymers for cargo sequestration, and together with the AAA-ATPase Vps4, remodels the membranes to generate cargo-laden intralumenal vesicles (ILVs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-III function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "56211155-cb35-44ef-a622-a48dc9517a54",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C13",
+      "claim": "ESCRT-III together with Vps4 remodels membranes to generate cargo-laden intralumenal vesicles (ILVs).",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III assembles into spiraling polymers for cargo sequestration, and together with the AAA-ATPase Vps4, remodels the membranes to generate cargo-laden intralumenal vesicles (ILVs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "1fe1a845-36f8-47e3-9e94-e0bd64277765",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C14",
+      "claim": "ESCRT-III is a metastable and conformationally dynamic hetero-polymer of four 'core' subunits: Vps20, Snf7/Vps32, Vps24 and Vps2.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III is a metastable and conformationally dynamic hetero-polymer of four 'core' subunits, Vps20, Snf7/Vps32, Vps24 and Vps2 (Babst et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "d6767d4a-10c5-4d23-853c-187fbbc5d40a",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C15",
+      "claim": "All ESCRT-III subunits share a common domain organization of an N-terminal helical core domain and a flexible C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "All subunits share a common domain organization of an N-terminal helical core domain and a flexible C-terminus, but provide distinct functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established structural knowledge about ESCRT-III subunits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "d66cd3d4-8efd-4d0b-8db0-4b997f0a4a7e",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C16",
+      "claim": "ESCRT-III subunits provide distinct functions despite sharing common domain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "All subunits share a common domain organization of an N-terminal helical core domain and a flexible C-terminus, but provide distinct functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional divergence demonstrated in the study and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f8bfc1d1-3fad-4316-bfcc-f8f09c0a6afd",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C17",
+      "claim": "ESCRT-II engages Vps20 to nucleate the polymerization of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-II engages Vps20 to nucleate the polymerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "e168cabf-9da0-44a9-9d1a-73825149517e",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C18",
+      "claim": "Snf7 is the most abundant ESCRT-III subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-II engages Vps20 to nucleate the polymerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-III composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "817add47-b12b-4c76-ab16-a031e6fde1cb",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C19",
+      "claim": "Snf7 recruits Vps24 and Vps2 after its polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-II engages Vps20 to nucleate the polymerization of the most abundant ESCRT-III subunit, Snf7, which then recruits Vps24 and Vps2 (Teis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "00612590-ebf0-480f-ae7b-d868d0745499",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C20",
+      "claim": "Vps2 engages Vps4 for ESCRT-III disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Vps2 engages Vps4 for ESCRT-III disassembly (Obita et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "c1a0b210-18e4-44dd-ba3c-3f81e7c786d4",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C21",
+      "claim": "ESCRT-II and Vps20 modulate Snf7 protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that ESCRT-II and Vps20 modulate Snf7 protofilaments, emphasizing a role of the upstream ESCRTs in defining the assembly and architecture of the ESCRT-III complex (Henne et al., 2012; Teis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "2cfbd4b3-7f8e-449a-b407-4df0eeadc050",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C22",
+      "claim": "Upstream ESCRTs play a role in defining the assembly and architecture of the ESCRT-III complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that ESCRT-II and Vps20 modulate Snf7 protofilaments, emphasizing a role of the upstream ESCRTs in defining the assembly and architecture of the ESCRT-III complex (Henne et al., 2012; Teis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "180fdff4-fca8-4f7e-9774-0c913fc35901",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C23",
+      "claim": "X-ray crystal structures of Snf7 protofilaments in the active conformation were recently determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we have determined X-ray crystal structures of Snf7 protofilaments in the active conformation (Tang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "57388018-2aec-4e8f-958a-2ec26a3ba005",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C24",
+      "claim": "Two parallel ubiquitin-dependent pathways regulate Snf7 activation through both the Snf7 N-terminal core domain and the C-terminal \u03b16 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using genetics and biochemistry, we identify two parallel ubiquitin-dependent pathways that regulate Snf7 activation through both the Snf7 N-terminal core domain and the C-terminal \u03b16 helix, providing an enhanced understanding of the activation of ESCRT-III-mediated membrane remodeling at endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by the genetic and biochemical experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0954d9ad-7458-4c64-b9f9-b24988a01574",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C25",
+      "claim": "Vps20 and Snf7 display a high degree of homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Vps20 and Snf7 display a high degree of homology, they cannot complement each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis and functional complementation experiments.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "61052070-ea46-4c98-9e48-51ec7bde46e1",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C26",
+      "claim": "Vps20 and Snf7 cannot complement each other functionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Vps20 and Snf7 display a high degree of homology, they cannot complement each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the complementation experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "b3c0948b-a960-44fa-93b4-d005cc046658",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C27",
+      "claim": "Retaining only the \u03b11/2 hairpin of Vps20 while replacing the remainder with Snf7 (Vps201-105-Snf7107-240) is sufficient for sorting at ~70% efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a full-length Vps20 is required for function, retaining only the \u03b11/2 hairpin of Vps20 while replacing the remainder of Vps20 with Snf7 (Vps201-105-Snf7107-240) is sufficient for sorting, albeit at ~70% efficiency (Figure 1A, Figure 1\u2014figure supplements 1\u20132), suggesting that \u03b11/2 is the minimal region unique to Vps20.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative MVB sorting data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0473a9e0-c236-49e4-b2d7-5aea4e7b639b",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C28",
+      "claim": "\u03b11/2 is the minimal region unique to Vps20.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a full-length Vps20 is required for function, retaining only the \u03b11/2 hairpin of Vps20 while replacing the remainder of Vps20 with Snf7 (Vps201-105-Snf7107-240) is sufficient for sorting, albeit at ~70% efficiency (Figure 1A, Figure 1\u2014figure supplements 1\u20132), suggesting that \u03b11/2 is the minimal region unique to Vps20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the chimera experiments showing partial function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "a6019f05-f831-4b61-aa0e-2bcdec8791fb",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C29",
+      "claim": "\u03b11 of Vps20 binds to the ESCRT-II subunit Vps25.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the role of \u03b11 of Vps20 in binding to the ESCRT-II subunit Vps25 (Im et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "c49070e7-eb6f-45ee-bd9f-10bd85e7fec5",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C30",
+      "claim": "snf7Q90L and snf7N100I are point mutations in conserved residues that partially rescue the canavanine sensitivity of vps20\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Two snf7 point mutations in conserved residues, snf7Q90L and snf7N100I, showed a partial rescue of the canavanine sensitivity of vps20\u0394 (Figures 1C-1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the canavanine sensitivity assay shown in Figure 1C and sequence conservation in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "a0b0848e-9190-404c-bfce-8e32060cd958",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C31",
+      "claim": "In 'closed' Snf7, Gln90 of \u03b12 is proximal to \u03b14.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in 'closed' Snf7, Gln90 of \u03b12 is proximal to \u03b14 (Tang et al., 2015), and Asn100 is an asparagine cap of the \u03b12 helix (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data from the cited crystal structure and shown in Figure 1E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "cd0bcd1a-90ed-489c-853c-7e1f889e9b87",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C32",
+      "claim": "Asn100 is an asparagine cap of the \u03b12 helix in Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in 'closed' Snf7, Gln90 of \u03b12 is proximal to \u03b14 (Tang et al., 2015), and Asn100 is an asparagine cap of the \u03b12 helix (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f9f0bab2-bda7-4b03-8df9-1ec83388cf46",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C33",
+      "claim": "Q90L and N100I mutations destabilize closed Snf7 by displacing \u03b14 from \u03b12 and extending the \u03b12/3 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these mutations destabilize closed Snf7 by displacing \u03b14 from \u03b12 and extending the \u03b12/3 helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal based on structural analysis and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "802ab911-facb-4245-8087-5043e89e2986",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C34",
+      "claim": "Q90L enhances Snf7 membrane association from 41% to 78%.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, Q90L enhances Snf7 membrane association from 41% to 78% (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by liposome sedimentation assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "411ceb84-1cbd-4af1-b70b-8065d6126e68",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C35",
+      "claim": "In the presence of liposomes, Q90L and N100I mutants show a decrease of the negative absorption band at 208 nm and an increase at 222 nm, indicating an increase of \u03b1-helicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of liposomes, we observed a decrease of the negative absorption band at 208 nm and an increase at 222 nm in Q90L and N100I mutants, indicating an increase of \u03b1-helicity (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by circular dichroism spectroscopy data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "badd0b96-d7f8-4676-bf19-217ba594abd2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C36",
+      "claim": "Snf7Q90L and Snf7N100I trigger structural rearrangements where the \u03b12/3 loop becomes \u03b1-helical and extends into one elongated \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "These data agree with the hypothesis that Snf7Q90L and Snf7N100I trigger structural rearrangements, where the \u03b12/3 loop becomes \u03b1-helical and extends into one elongated \u03b1-helix (Figure 1\u2014figure supplement 3) as observed in the open structures (McCullough et al., 2015; Tang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD data and comparison to known open structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "dbfc5cde-cd22-496d-9ed5-b75b2f5744ad",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C37",
+      "claim": "The structural rearrangement in Snf7Q90L and Snf7N100I occurs only upon membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this structural rearrangement still occurs only upon membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CD experiments that required liposomes to observe the conformational change.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "39b05663-24a8-4ac8-9f1a-655d9458ccc3",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C38",
+      "claim": "snf7Q90L and snf7N100I complement snf7\u0394 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, snf7Q90L and snf7N100I complement snf7\u0394 in vivo, and Snf7Q90L assembles into protofilaments in vitro (Figure 1\u2014figure supplement 4), confirming a functional role of the mutants in activating Snf7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation assays shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "949646b2-bd38-4ada-9e85-87cfdcfe9535",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C39",
+      "claim": "Snf7Q90L assembles into protofilaments in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, snf7Q90L and snf7N100I complement snf7\u0394 in vivo, and Snf7Q90L assembles into protofilaments in vitro (Figure 1\u2014figure supplement 4), confirming a functional role of the mutants in activating Snf7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "7fa56ac2-95e2-406e-93f6-8a5f25e8f2b2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C40",
+      "claim": "myr-snf7R52E Q90L (snf7**) and myr-snf7R52E Q90L N100I (snf7***) sorted cargo with increased efficiencies in vps20\u0394, albeit not completely restoring wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded myr-snf7R52E Q90L and myr-snf7R52E Q90L N100I, hereafter denoted as snf7** and snf7***, which sorted cargo with increased efficiencies, albeit not completely restoring wild-type levels (Figure 2A, Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative MVB sorting data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "2a712fcb-7d2d-468f-8d5d-48bd343dd6f3",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C41",
+      "claim": "The ESCRT-dependent cargo GFP-Cps1 partially localized to the vacuolar lumen in vps20\u0394 with snf7** or snf7***.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, the ESCRT-dependent cargo GFP-Cps1 partially localized to the vacuolar lumen in vps20\u0394 with snf7** or snf7*** (Figure 2B), indicating a substantial level of MVB sorting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "38cf94de-7888-4452-8b81-7c525776afc5",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C42",
+      "claim": "snf7** and snf7*** rescue the canavanine sensitivity of vps20\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, snf7** and snf7*** were also able to rescue the canavanine sensitivity of vps20\u0394 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the canavanine sensitivity assay shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "d8837f93-e279-47c2-bbcc-f2bd8cb69f81",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C43",
+      "claim": "ILVs in wild-type cells have a diameter of ~32 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that while ILVs in wild-type cells have a diameter of ~32 nm, snf7** and snf7*** show a decrease in ILV number and an increase in ILV diameter to ~43 nm (Figures 2E\u2013F, See Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM measurements shown in Figures 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "27d1c823-8d28-4e40-bd18-eb1ff93f9c59",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C44",
+      "claim": "snf7** and snf7*** show a decrease in ILV number and an increase in ILV diameter to ~43 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that while ILVs in wild-type cells have a diameter of ~32 nm, snf7** and snf7*** show a decrease in ILV number and an increase in ILV diameter to ~43 nm (Figures 2E\u2013F, See Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM measurements shown in Figures 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "09a48a18-465d-4ed6-8a6b-f1874cf8843e",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C45",
+      "claim": "ESCRT-II and Vps20 set the architecture of ESCRT-III.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ESCRT-II and Vps20 set the architecture of ESCRT-III, we propose that the variation in ILV size is a result of aberrant ESCRT-III architecture, although we cannot completely rule out the possibility of changes in dynamics of ESCRT-III disassembly by Vps4 (Nickerson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous knowledge and the observed ILV size changes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "d224bcc4-949a-403e-99f8-c91938669888",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C46",
+      "claim": "The variation in ILV size with snf7** and snf7*** is likely a result of aberrant ESCRT-III architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ESCRT-II and Vps20 set the architecture of ESCRT-III, we propose that the variation in ILV size is a result of aberrant ESCRT-III architecture, although we cannot completely rule out the possibility of changes in dynamics of ESCRT-III disassembly by Vps4 (Nickerson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data and previous knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0fb054ed-199b-4920-b7ad-4f8e0f881566",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C47",
+      "claim": "Auto-activated Snf7 does not suppress vps24\u0394, vps2\u0394 or vps4\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that auto-activated Snf7 does not suppress vps24\u0394, vps2\u0394 or vps4\u0394 (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MVB sorting data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "db7583d0-e40e-4827-bb3e-d6fc4e2eb5e2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C48",
+      "claim": "The inability of auto-activated Snf7 to suppress vps24\u0394, vps2\u0394 or vps4\u0394 is consistent with the role of the suppressors in activating but not modulating or disassembling Snf7 filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the role of the suppressors in activating but not modulating or disassembling Snf7 filaments, reinforcing the division of labor among ESCRT-III subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the suppression data that supports functional specialization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "5ced7be2-73d9-4e3d-8310-8a85b0f6e816",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C49",
+      "claim": "There is a division of labor among ESCRT-III subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the role of the suppressors in activating but not modulating or disassembling Snf7 filaments, reinforcing the division of labor among ESCRT-III subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential suppression patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "a1b3ae2d-274f-4c1c-b2ad-4dada892dfad",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C50",
+      "claim": "ESCRT-II is a Y-shaped heterotetramer of Vps36, Vps22 and two Vps25 (arms).",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-II is a Y-shaped heterotetramer of Vps36, Vps22 and two Vps25 (arms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established structural knowledge about ESCRT-II.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "03cf25ce-1c0b-41a3-89c8-d2f36bc56c67",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C51",
+      "claim": "Vps36 GLUE domain binds ubiquitinated cargo and endosome-specific phosphatidylinositol 3-phosphate, PI3P.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps36 GLUE domain binds ubiquitinated cargo and endosome-specific phosphatidylinositol 3-phosphate, PI3P; and each Vps25 'arm' binds one molecule of the ESCRT-III nucleator, Vps20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-II function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "e3535721-139a-4673-b0d8-1a96975c1551",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C52",
+      "claim": "Each Vps25 'arm' binds one molecule of the ESCRT-III nucleator, Vps20.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps36 GLUE domain binds ubiquitinated cargo and endosome-specific phosphatidylinositol 3-phosphate, PI3P; and each Vps25 'arm' binds one molecule of the ESCRT-III nucleator, Vps20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-II-Vps20 interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "ae0924c8-4aec-4897-955f-47972c21ee36",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C53",
+      "claim": "snf7** and snf7*** resulted in better suppression in ESCRT-II deletion compared to vps20\u0394, with sorting efficiencies of ~60%\u201370%.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, snf7** and snf7*** resulted in better suppression in ESCRT-II deletion compared to vps20\u0394, with sorting efficiencies of ~60%\u201370% (Figure 3C, Figure 3\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative MVB sorting data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "1efff13a-86f3-484a-a0f9-c6bc5c79ef28",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C54",
+      "claim": "ESCRT-I is a heterotetramer of Vps23, Vps28, Vps37 and Mvb12.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-I is a heterotetramer of Vps23, Vps28, Vps37 and Mvb12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established structural knowledge about ESCRT-I.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "060f3ea7-9b1a-4550-840d-8c7114e9071c",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C55",
+      "claim": "Vps23 UEV domain recognizes ubiquitinated cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps23 UEV domain recognizes ubiquitinated cargo, Vps37 N-terminal helix binds to membranes, and Vps28 CTD engages Vps36 GLUE domain of ESCRT-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-I function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f39a96c2-b395-4ea0-8c86-9e5b326f4123",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C56",
+      "claim": "Vps37 N-terminal helix binds to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps23 UEV domain recognizes ubiquitinated cargo, Vps37 N-terminal helix binds to membranes, and Vps28 CTD engages Vps36 GLUE domain of ESCRT-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-I function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0641f143-8b48-41fd-884f-64381d68f5fe",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C57",
+      "claim": "Vps28 CTD engages Vps36 GLUE domain of ESCRT-II.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps23 UEV domain recognizes ubiquitinated cargo, Vps37 N-terminal helix binds to membranes, and Vps28 CTD engages Vps36 GLUE domain of ESCRT-II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ESCRT-I-ESCRT-II interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f82f1efc-eb97-4b76-b780-d2c8deba3d46",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C58",
+      "claim": "Auto-activated Snf7 suppressors showed near wild-type sorting efficiencies in ESCRT-I single and ESCRT-I/II double deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the suppressors in ESCRT-I single and ESCRT-I/II double deletion mutants and we observed near wild-type sorting efficiencies (Figure 3D) with enlarged ILV sizes (Figure 3\u2014figure supplements 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative MVB sorting data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0fd0b242-cf4d-49d5-be17-5e75a429f099",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C59",
+      "claim": "Auto-activated Snf7 suppressors produce enlarged ILV sizes in ESCRT-I deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the suppressors in ESCRT-I single and ESCRT-I/II double deletion mutants and we observed near wild-type sorting efficiencies (Figure 3D) with enlarged ILV sizes (Figure 3\u2014figure supplements 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM data shown in Figure 3\u2014figure supplements 5\u20136.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "ae8c20cc-5c21-4d03-aa82-92f242bec557",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C60",
+      "claim": "ESCRT-I and ESCRT-II set up the ESCRT-III architecture to program vesicle dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that ESCRT-I and ESCRT-II set up the ESCRT-III architecture to program vesicle dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ILV size changes observed when ESCRT-I/II are bypassed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "58f7f8a8-f827-45bf-9064-0ec441c09185",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C61",
+      "claim": "The engineered snf7 suppressors do not sort cargo in vps27\u0394 or bro1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the engineered snf7 suppressors do not sort cargo in vps27\u0394 or bro1\u0394 (Figures 3E and G), or hse1\u0394 in combination with vps20\u0394, vps25\u0394 (ESCRT-II) or vps23\u0394 (ESCRT-I) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MVB sorting data shown in Figures 3E, 3F, and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "990e70ff-b5a7-4de1-99ae-0c0377989dd5",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C62",
+      "claim": "The engineered snf7 suppressors do not sort cargo in hse1\u0394 in combination with vps20\u0394, vps25\u0394 or vps23\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the engineered snf7 suppressors do not sort cargo in vps27\u0394 or bro1\u0394 (Figures 3E and G), or hse1\u0394 in combination with vps20\u0394, vps25\u0394 (ESCRT-II) or vps23\u0394 (ESCRT-I) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MVB sorting data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "09ded732-84ed-43b5-a3ed-bd8d70a0f114",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C63",
+      "claim": "Ubiquitin-binding mutants vps27S270D S313D (vps27UIM) and bro1I377R L386R (bro1UBD) reduced the functionality of snf7*** in vps20\u0394, vps25\u0394 or vps23\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "They reduced the functionality of snf7*** in vps20\u0394, vps25\u0394 or vps23\u0394 (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MVB sorting data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "37ec3661-3c4c-4a6d-83ad-e7b44e095be7",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C64",
+      "claim": "Despite ESCRT-I/II-independence, the suppression by auto-activated Snf7 is still ubiquitin-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that despite the ESCRT-I/II-independence, the suppression is still ubiquitin-dependent (Figure 3\u2014figure supplement 7), perhaps through another subset of machinery of ESCRT-0 and Bro1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the requirement for ubiquitin-binding by ESCRT-0 and Bro1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "2c9d0180-33b3-4a38-99b1-0ce8543a55a2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C65",
+      "claim": "ESCRT-0/Bro1 are required to sort ubiquitinated cargo for ESCRT-III sequestration in parallel to ESCRT-I/II.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus propose that ESCRT-0/Bro1 are required to sort ubiquitinated cargo for ESCRT-III sequestration in parallel to ESCRT-I/II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the genetic suppression patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "cc150c7b-dc01-41fd-a61d-fa1f974ad3b9",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C66",
+      "claim": "X-ray crystal structures suggest that the C-terminal \u03b16 helix of Snf7 binds to the Bro1 domain of Bro1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bro1 has been shown to directly interact with Snf7, and X-ray crystal structures suggest that the C-terminal \u03b16 helix of Snf7 binds to the Bro1 domain of Bro1 (Kim et al., 2005; McCullough et al., 2008; Wemmer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "797a34ea-c16c-4a62-b904-b54097ca3570",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C67",
+      "claim": "Neither the Bro1-binding defective Snf7*** L231K L234K mutant (snf7*** BRO1), nor the Snf7-binding defective Bro1I144D L336D mutant (bro1SNF7), suppresses vps20\u0394, vps25\u0394 or vps23\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neither the Bro1-binding defective Snf7*** L231K L234K mutant (snf7*** BRO1), nor the Snf7-binding defective Bro1I144D L336D mutant (bro1SNF7), suppresses vps20\u0394, vps25\u0394 or vps23\u0394 (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MVB sorting data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "6d0d4f01-7400-4777-9c86-60bd7f71961f",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C68",
+      "claim": "\u03b16 of Snf7 is auto-inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that \u03b16 of Snf7 is also auto-inhibitory, and that a physical binding between Snf7 \u03b16 and Bro1 is a prerequisite for Snf7 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for Bro1 binding for suppression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "35af8bb1-2c64-4474-81db-ed1bff31bf36",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C69",
+      "claim": "A physical binding between Snf7 \u03b16 and Bro1 is a prerequisite for Snf7 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that \u03b16 of Snf7 is also auto-inhibitory, and that a physical binding between Snf7 \u03b16 and Bro1 is a prerequisite for Snf7 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for Bro1 binding for suppression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "e247d073-7e0d-45ea-bc18-cc4ebcb80d8b",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C70",
+      "claim": "Coincubation of recombinant Snf7WT with Bro1 resulted in Snf7 protofilament assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "While the recombinant Snf7WT does not assemble due to auto-inhibition, coincubation with Bro1 resulted in Snf7 protofilament assembly (Figure 4C), indicating that Bro1 directly triggers Snf7 activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "4fdce44e-24ee-42ac-a639-69f97557ce04",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C71",
+      "claim": "Bro1 directly triggers Snf7 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the recombinant Snf7WT does not assemble due to auto-inhibition, coincubation with Bro1 resulted in Snf7 protofilament assembly (Figure 4C), indicating that Bro1 directly triggers Snf7 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the biochemical assembly assay.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "642c76a2-7923-4ac2-82c9-7a7bb7e4b31a",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C72",
+      "claim": "The \u03b16 truncated Snf7 (Snf71-225) releases auto-inhibition and assembles into protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, the \u03b16 truncated Snf7 (Snf71-225) releases auto-inhibition and assembles into protofilaments (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "9cf14ced-9e57-4024-b1cb-b1e3b3cd37d8",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C73",
+      "claim": "Snf7 N100I, Q90L, and R52E release auto-inhibition in \u03b13, \u03b14, and \u03b15, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest that while Snf7 N100I, Q90L, and R52E release auto-inhibition in \u03b13, \u03b14, and \u03b15, respectively, \u03b16 of Snf7 is also auto-inhibitory and its activation is Bro1-dependent (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the findings supported by the mutational and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f1aefc85-d049-42a7-a6e5-b689e6180448",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C74",
+      "claim": "\u03b16 of Snf7 is auto-inhibitory and its activation is Bro1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest that while Snf7 N100I, Q90L, and R52E release auto-inhibition in \u03b13, \u03b14, and \u03b15, respectively, \u03b16 of Snf7 is also auto-inhibitory and its activation is Bro1-dependent (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings supported by the mutational and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "38b9e366-998f-4b57-a242-4c114695730f",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C75",
+      "claim": "A recent cryo-EM study on ESCRT-III IST1/CHMP1B co-polymer suggested that CHMP1B (Did2/Vps46) undergoes a similar structural rearrangement for assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a recent cryo-EM study on ESCRT-III IST1/CHMP1B co-polymer suggested that CHMP1B (Did2/Vps46) undergoes a similar structural rearrangement for assembly (McCullough et al., 2015), implying that the core domain extension is a common theme of ESCRT-III activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "f16b6bd3-8d9d-47fa-896f-9ae93e50b0d9",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C76",
+      "claim": "The core domain extension is a common theme of ESCRT-III activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a recent cryo-EM study on ESCRT-III IST1/CHMP1B co-polymer suggested that CHMP1B (Did2/Vps46) undergoes a similar structural rearrangement for assembly (McCullough et al., 2015), implying that the core domain extension is a common theme of ESCRT-III activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of structural data across ESCRT-III subunits.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "913cd582-b327-4ac5-b0cf-adabd539fb94",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C77",
+      "claim": "Novel Snf7 point mutations release the auto-inhibition of \u03b13 and \u03b14 as observed in the conformationally open structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a mutagenic approach, we identified novel Snf7 point mutations that release the auto-inhibition of \u03b13 and \u03b14 as observed in the conformationally open structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutagenesis data and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "4c2f7768-d27a-43ac-b801-243a1c9c81e7",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C78",
+      "claim": "Snf7 activation functionally bypasses the ESCRT-III nucleator Vps20, as well as the ESCRT-II and ESCRT-I complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this leads to Snf7 activation that functionally bypasses the ESCRT-III nucleator Vps20, as well as the ESCRT-II and ESCRT-I complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the suppression data in various ESCRT deletion backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "84bc626b-66fe-413e-a102-1d3e04da587d",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C79",
+      "claim": "Snf7, along with its downstream ESCRT components Vps24, Vps2 and Vps4, but not ESCRT-I/II, are among the minimal machinery required for membrane remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Snf7, along with its downstream ESCRT components, Vps24, Vps2 and Vps4, but not ESCRT-I/II, are among the minimal machinery required for membrane remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the suppression patterns showing which components are dispensable.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "bcf87015-0efd-410b-8aba-cf746bcbf936",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C80",
+      "claim": "ESCRT-III activation is mediated by two parallel pathways, ESCRT-I/II and ESCRT-0/Bro1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that ESCRT-III activation is mediated by two parallel pathways, ESCRT-I/II and ESCRT-0/Bro1 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion supported by the genetic and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "c0e57a9d-744c-4750-a17f-6c40cd354b1a",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C81",
+      "claim": "Bro1 directly triggers ESCRT-III assembly by binding to the C-terminal \u03b16 of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "Bro1, directly triggers ESCRT-III assembly by binding to the C-terminal \u03b16 of Snf7 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the biochemical assembly assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "8c8fc23c-6559-4b38-a664-251ace36ba65",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C82",
+      "claim": "ESCRT-0 directly engages Bro1 to recognize ubiquitinated cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ESCRT-0 directly engages Bro1 (Lee et al., 2016) to recognize ubiquitinated cargo (Pashkova et al., 2013), we showed that Snf7 \u03b16 binding to Bro1 relieves autoinhibiton of Snf7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0bdc0fcb-3cdc-4e5e-8d6b-ce32b6364dcf",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C83",
+      "claim": "Snf7 \u03b16 binding to Bro1 relieves autoinhibition of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ESCRT-0 directly engages Bro1 (Lee et al., 2016) to recognize ubiquitinated cargo (Pashkova et al., 2013), we showed that Snf7 \u03b16 binding to Bro1 relieves autoinhibiton of Snf7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the biochemical and genetic data on Bro1-Snf7 interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "8750d912-d3a2-4836-93ee-6041f50ce43b",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C84",
+      "claim": "Bro1 recruits the Doa4 deubiquitinase in the MVB pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This adds to the roles for Bro1, besides its recruitment of the Doa4 deubiquitinase in the MVB pathway (Luhtala and Odorizzi, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0d6c385c-aac9-4587-b8f9-1348a9e929f6",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C85",
+      "claim": "A recent study suggested that ALIX and ESCRT-I/II function as parallel CHMP4B (Snf7 ortholog in human) recruiters in cytokinetic abscission.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation, a very recent study suggested that ALIX and ESCRT-I/II function as parallel CHMP4B (Snf7 ortholog in human) recruiters in cytokinetic abscission (Christ et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "7d64dc1a-39e5-47a8-b3da-8375e2fdd8a1",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C86",
+      "claim": "Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While biochemical data suggest that Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro, our genetic evidence indicat that the conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes: 1) ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7; 2) ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7 (Figures 4E\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the biochemical assembly assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "b92b58c0-8006-4f96-bcbc-3df885a13855",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C87",
+      "claim": "The conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While biochemical data suggest that Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro, our genetic evidence indicat that the conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes: 1) ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7; 2) ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7 (Figures 4E\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by the genetic and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "e15df03f-aeed-4295-ba67-4248330f7c07",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C88",
+      "claim": "ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "While biochemical data suggest that Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro, our genetic evidence indicat that the conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes: 1) ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7; 2) ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7 (Figures 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion supported by the genetic and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "73dc302b-b66b-4ddb-9aab-fc02b102c7ea",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C89",
+      "claim": "ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7.",
+      "claim_type": "EXPLICIT",
+      "source": "While biochemical data suggest that Snf7 can be activated by specific point mutations in the core domain or truncation at the C-terminus in vitro, our genetic evidence indicat that the conformational equilibrium of Snf7 is tightly regulated by two pathways in vivo to achieve ubiquitin-dependent cargo sorting at endosomes: 1) ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7; 2) ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7 (Figures 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion supported by the genetic and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "aef0c957-52e2-40d7-8885-b97953beadb9",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C90",
+      "claim": "This study provides novel insights into a two-stage activation pathway for ESCRT-III-mediated membrane remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide novel insights into a two-stage activation pathway for ESCRT-III-mediated membrane remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the overarching conclusion of the study supported by all the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "d75178fc-81aa-4d2a-9789-44f994d3f753",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C91",
+      "claim": "ILVs in wild-type cells prepared by the chemical fixation method have a mean diameter of approximately 32 nm.",
+      "claim_type": "IMPLICIT",
+      "source": "We observed that while ILVs in wild-type cells have a diameter of ~32 nm, snf7** and snf7*** show a decrease in ILV number and an increase in ILV diameter to ~43 nm (Figures 2E\u2013F, See Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This measurement is from TEM analysis of chemically fixed samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "173b02da-fff2-4a2f-b9ba-c9b3a2a7de17",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C92",
+      "claim": "Osmotic gradients during fixation or dehydration might account for MVB morphological defects and larger mean ILV diameter compared to samples prepared by high-pressure freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that osmotic gradients during fixation or dehydration might account for the MVB morphological defects and the larger mean ILV diameter compared to samples prepared by high-pressure freezing and automated freeze-substitution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological caveat acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "556b85b5-9fa7-4706-9cf6-de0b13d0cc09",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C93",
+      "claim": "All yeast cells used in the TEM experiments were treated equally.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all yeast cells used in these experiments were treated equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental methodology to ensure valid comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "0d3dfee7-7d8d-44a7-bc85-2638c37dd6e2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C94",
+      "claim": "Vps4 is an AAA-ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III assembles into spiraling polymers for cargo sequestration, and together with the AAA-ATPase Vps4, remodels the membranes to generate cargo-laden intralumenal vesicles (ILVs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about Vps4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "005b2c38-4b0c-4795-ad2d-53df42d8307a",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C95",
+      "claim": "Downstream ESCRT-III subunits Vps24 and Vps2 modulate Snf7 architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the downstream ESCRT-III subunits Vps24 and Vps2 are known to modulate Snf7 architecture (Henne et al., 2012; Teis et al., 2008) and recruit the AAA-ATPase Vps4 via their C-terminal MIM motifs for ESCRT-III disassembly (Obita et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "c00f219b-ebdc-46dd-876c-5b1d989d15df",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "claim_id": "C96",
+      "claim": "Vps24 and Vps2 recruit the AAA-ATPase Vps4 via their C-terminal MIM motifs for ESCRT-III disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the downstream ESCRT-III subunits Vps24 and Vps2 are known to modulate Snf7 architecture (Henne et al., 2012; Teis et al., 2008) and recruit the AAA-ATPase Vps4 via their C-terminal MIM motifs for ESCRT-III disassembly (Obita et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b2c1570-729d-46c9-bd37-56c8ae99a6c8",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The \u03b11/2 hairpin of Vps20 is the minimal region unique to Vps20 that confers its distinct function from Snf7. A chimeric protein retaining only the \u03b11/2 hairpin of Vps20 while replacing the remainder with Snf7 (Vps20^1-105-Snf7^107-240) is sufficient for MVB sorting at ~70% efficiency, consistent with the role of \u03b11 in binding ESCRT-II subunit Vps25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by quantitative MVB sorting data (Figure 1A) showing that the Vps20^1-105-Snf7^107-240 chimera achieves ~70% sorting efficiency. The interpretation that \u03b11/2 is the minimal unique region is consistent with prior structural knowledge (C29) about \u03b11 binding to Vps25. The data provide clear functional evidence for the minimal region required for Vps20 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "92db4d36-daf8-406c-aad2-e932ae52d287",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Novel point mutations snf7^Q90L and snf7^N100I partially suppress vps20\u0394 by destabilizing the closed conformation of Snf7. These mutations enhance membrane association (Q90L increases binding from 41% to 78%) and trigger structural rearrangements where the \u03b12/3 loop becomes \u03b1-helical upon membrane binding, as evidenced by CD spectroscopy showing increased \u03b1-helicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 are well-supported by multiple lines of evidence: canavanine sensitivity assays (Figure 1C), structural analysis showing Q90 proximity to \u03b14 and N100 as an asparagine cap (Figure 1E), liposome sedimentation assays (Figure 1F), and CD spectroscopy (Figure 1G). The mechanistic proposal (C33) is reasonable given the structural context, though it remains somewhat inferential. The requirement for membrane binding (C37) is clearly demonstrated by the CD experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "93db9133-2fed-4e41-a033-51569bd3dc55",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The snf7^Q90L and snf7^N100I mutants are functional in vivo, complementing snf7\u0394, and Snf7^Q90L assembles into protofilaments in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by complementation assays and TEM data shown in Figure 1\u2014figure supplement 4. These results confirm that the mutations produce functional proteins capable of both in vivo complementation and in vitro assembly, validating their role in Snf7 activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Engineered auto-activated Snf7 mutants (snf7** and snf7***) combining multiple activation mutations and membrane targeting suppress vps20\u0394 with increased efficiency. These suppressors enable cargo sorting and ILV formation, though ILVs are enlarged (~43 nm vs ~32 nm in wild-type), likely due to aberrant ESCRT-III architecture in the absence of ESCRT-II and Vps20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are supported by quantitative MVB sorting data (Figure 2A), fluorescence microscopy showing GFP-Cps1 localization (Figure 2B), canavanine sensitivity assays (Figure 2C), and TEM measurements of ILV diameter (Figures 2E-F). The interpretation that ILV size variation results from aberrant ESCRT-III architecture (C46) is reasonable but acknowledged as not definitive, with the authors noting they cannot rule out changes in Vps4 dynamics. The methodological caveat about chemical fixation (C92) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "da947c73-63cd-4c15-a1eb-c1ed725c8aba",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Auto-activated Snf7 does not suppress deletions of downstream ESCRT-III components (vps24\u0394, vps2\u0394) or vps4\u0394, consistent with a division of labor among ESCRT-III subunits where the suppressors activate but do not modulate or disassemble Snf7 filaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by MVB sorting data (Figure 3B, Figure 3\u2014figure supplement 1) showing lack of suppression in these deletion backgrounds. The interpretation (C48-C49) logically follows from the data and is consistent with established knowledge about the distinct roles of ESCRT-III subunits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "6683dd00-e82a-4950-b7b8-b29d307e17f6",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Auto-activated Snf7 suppressors bypass ESCRT-II and ESCRT-I, achieving 60-70% sorting efficiency in ESCRT-II deletions and near wild-type efficiency in ESCRT-I and ESCRT-I/II double deletions. However, ILV sizes are enlarged, suggesting that ESCRT-I and ESCRT-II normally set up ESCRT-III architecture to program vesicle dimension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C58-C60 are supported by quantitative MVB sorting data (Figures 3C-D) and TEM analysis (Figure 3\u2014figure supplements 5-6). The data clearly demonstrate functional bypass of ESCRT-I and ESCRT-II. The interpretation that these complexes program vesicle dimension (C60) is a reasonable inference from the consistent observation of enlarged ILVs when they are bypassed, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Auto-activated Snf7 suppressors do not bypass ESCRT-0 (Vps27/Hse1) or Bro1, and ubiquitin-binding mutants of Vps27 and Bro1 reduce suppressor functionality. Despite ESCRT-I/II-independence, suppression remains ubiquitin-dependent, suggesting ESCRT-0/Bro1 are required to sort ubiquitinated cargo for ESCRT-III sequestration in parallel to ESCRT-I/II.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by MVB sorting data in various deletion backgrounds (Figures 3E-G, 4A) and experiments with ubiquitin-binding mutants. The data clearly show that ESCRT-0 and Bro1 cannot be bypassed by the auto-activated Snf7 mutants, and that ubiquitin-binding is required. The proposal of parallel pathways (C65) is a reasonable interpretation of the genetic data, though it represents a model rather than direct mechanistic proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The C-terminal \u03b16 helix of Snf7 is auto-inhibitory and its activation requires physical binding to Bro1. Bro1 directly triggers Snf7 activation, as demonstrated by in vitro assembly assays showing that wild-type Snf7 forms protofilaments only when coincubated with Bro1, while \u03b16-truncated Snf7 assembles spontaneously. Interface mutants that disrupt Snf7-Bro1 binding abolish suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C74 are strongly supported by multiple lines of evidence: prior structural data (C66), genetic suppression analysis with interface mutants (C67), and biochemical assembly assays (C70, C72) shown in Figures 4C-D. The TEM data clearly demonstrate that Bro1 triggers Snf7 assembly in vitro and that \u03b16 truncation releases auto-inhibition. The interpretation that \u03b16 is auto-inhibitory and requires Bro1 for activation (C68-C69, C74) is well-supported by the convergent genetic and biochemical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Core domain extension is a common theme of ESCRT-III activation, as similar structural rearrangements occur in other ESCRT-III subunits. Novel Snf7 point mutations release auto-inhibition of \u03b13 and \u03b14, leading to Snf7 activation that functionally bypasses Vps20, ESCRT-II, and ESCRT-I, suggesting that Snf7 with downstream components Vps24, Vps2, and Vps4 constitute minimal machinery for membrane remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 are supported by the mutagenesis and suppression data throughout the manuscript, with C75 supported by citation to cryo-EM studies. The conclusion that Snf7, Vps24, Vps2, and Vps4 are minimal machinery (C79) is a reasonable inference from the suppression patterns, though it should be noted that this is in the context of pre-activated Snf7 mutants and does not address cargo sorting requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "2645f217-7830-4efb-8b13-8dabd09a40e9",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ESCRT-III activation is mediated by two parallel ubiquitin-dependent pathways: ESCRT-I/ESCRT-II/Vps20 activates the N-terminal core domain of Snf7, while ESCRT-0/Bro1 activates the C-terminal \u03b16 of Snf7. This two-stage activation pathway provides novel insights into ESCRT-III-mediated membrane remodeling at endosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C90 represent the central conclusion of the study, supported by the convergent genetic and biochemical evidence from all experiments. The parallel pathway model is well-supported by: (1) genetic suppression patterns showing ESCRT-I/II can be bypassed but ESCRT-0/Bro1 cannot, (2) biochemical demonstration of Bro1-mediated activation, (3) requirement for ubiquitin-binding by both pathways, and (4) mutational analysis showing distinct activation sites. While the model is somewhat inferential, it provides a coherent explanation for all the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "ff45bbf7-f61d-4230-8c6b-972f7c8f7847",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite high sequence homology, Vps20 and Snf7 cannot functionally complement each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by complementation experiments shown in the figures. This establishes the functional divergence that motivates the chimera analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "bfd1ea03-04ac-4abb-bb71-993e91416668",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A recent study in mammalian cells showed that ALIX and ESCRT-I/II function as parallel CHMP4B recruiters in cytokinetic abscission, consistent with the findings in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by citation and provides independent validation of the parallel pathway model in a different biological context. This strengthens the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "87a54d91-1dbb-4ca3-b4f1-d2a5544b6c83",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Snf7 can be activated by specific point mutations in the core domain or C-terminal truncation in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is directly supported by the biochemical assembly assays shown throughout the manuscript (Figures 1F-G, 4C-D). This establishes the biochemical basis for the genetic suppression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    },
+    {
+      "id": "38d96dba-bb68-45a6-86e5-6ed2196737e7",
+      "content_id": "279bd8f3-126f-492b-851f-6eeb4e105448",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ILV diameter measurements from chemically fixed samples may be affected by osmotic gradients during fixation or dehydration, though all samples were treated equally for valid comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 represent appropriate methodological caveats. The authors acknowledge potential artifacts from chemical fixation (C92) while noting that equal treatment of all samples (C93) allows valid relative comparisons. This is scientifically appropriate and does not undermine the comparative conclusions about ILV size differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:23:37.073289Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b3c0948b-a960-44fa-93b4-d005cc046658",
+      "result_id": "0b2c1570-729d-46c9-bd37-56c8ae99a6c8"
+    },
+    {
+      "claim_id": "0473a9e0-c236-49e4-b2d7-5aea4e7b639b",
+      "result_id": "0b2c1570-729d-46c9-bd37-56c8ae99a6c8"
+    },
+    {
+      "claim_id": "a6019f05-f831-4b61-aa0e-2bcdec8791fb",
+      "result_id": "0b2c1570-729d-46c9-bd37-56c8ae99a6c8"
+    },
+    {
+      "claim_id": "c49070e7-eb6f-45ee-bd9f-10bd85e7fec5",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "a0b0848e-9190-404c-bfce-8e32060cd958",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "cd0bcd1a-90ed-489c-853c-7e1f889e9b87",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "f9f0bab2-bda7-4b03-8df9-1ec83388cf46",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "802ab911-facb-4245-8087-5043e89e2986",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "411ceb84-1cbd-4af1-b70b-8065d6126e68",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "badd0b96-d7f8-4676-bf19-217ba594abd2",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "dbfc5cde-cd22-496d-9ed5-b75b2f5744ad",
+      "result_id": "92db4d36-daf8-406c-aad2-e932ae52d287"
+    },
+    {
+      "claim_id": "39b05663-24a8-4ac8-9f1a-655d9458ccc3",
+      "result_id": "93db9133-2fed-4e41-a033-51569bd3dc55"
+    },
+    {
+      "claim_id": "949646b2-bd38-4ada-9e85-87cfdcfe9535",
+      "result_id": "93db9133-2fed-4e41-a033-51569bd3dc55"
+    },
+    {
+      "claim_id": "7fa56ac2-95e2-406e-93f6-8a5f25e8f2b2",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "2a712fcb-7d2d-468f-8d5d-48bd343dd6f3",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "38cf94de-7888-4452-8b81-7c525776afc5",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "d8837f93-e279-47c2-bbcc-f2bd8cb69f81",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "27d1c823-8d28-4e40-bd18-eb1ff93f9c59",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "09a48a18-465d-4ed6-8a6b-f1874cf8843e",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "d224bcc4-949a-403e-99f8-c91938669888",
+      "result_id": "193c7d12-aa3f-4bcc-9c7d-80d8d0a5a948"
+    },
+    {
+      "claim_id": "0fb054ed-199b-4920-b7ad-4f8e0f881566",
+      "result_id": "da947c73-63cd-4c15-a1eb-c1ed725c8aba"
+    },
+    {
+      "claim_id": "db7583d0-e40e-4827-bb3e-d6fc4e2eb5e2",
+      "result_id": "da947c73-63cd-4c15-a1eb-c1ed725c8aba"
+    },
+    {
+      "claim_id": "5ced7be2-73d9-4e3d-8310-8a85b0f6e816",
+      "result_id": "da947c73-63cd-4c15-a1eb-c1ed725c8aba"
+    },
+    {
+      "claim_id": "ae0924c8-4aec-4897-955f-47972c21ee36",
+      "result_id": "6683dd00-e82a-4950-b7b8-b29d307e17f6"
+    },
+    {
+      "claim_id": "f82f1efc-eb97-4b76-b780-d2c8deba3d46",
+      "result_id": "6683dd00-e82a-4950-b7b8-b29d307e17f6"
+    },
+    {
+      "claim_id": "0fd0b242-cf4d-49d5-be17-5e75a429f099",
+      "result_id": "6683dd00-e82a-4950-b7b8-b29d307e17f6"
+    },
+    {
+      "claim_id": "ae8c20cc-5c21-4d03-aa82-92f242bec557",
+      "result_id": "6683dd00-e82a-4950-b7b8-b29d307e17f6"
+    },
+    {
+      "claim_id": "58f7f8a8-f827-45bf-9064-0ec441c09185",
+      "result_id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde"
+    },
+    {
+      "claim_id": "990e70ff-b5a7-4de1-99ae-0c0377989dd5",
+      "result_id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde"
+    },
+    {
+      "claim_id": "09ded732-84ed-43b5-a3ed-bd8d70a0f114",
+      "result_id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde"
+    },
+    {
+      "claim_id": "37ec3661-3c4c-4a6d-83ad-e7b44e095be7",
+      "result_id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde"
+    },
+    {
+      "claim_id": "2c9d0180-33b3-4a38-99b1-0ce8543a55a2",
+      "result_id": "83058e0f-1ad9-4a83-ad2f-81e289a73fde"
+    },
+    {
+      "claim_id": "cc150c7b-dc01-41fd-a61d-fa1f974ad3b9",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "797a34ea-c16c-4a62-b904-b54097ca3570",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "6d0d4f01-7400-4777-9c86-60bd7f71961f",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "35af8bb1-2c64-4474-81db-ed1bff31bf36",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "e247d073-7e0d-45ea-bc18-cc4ebcb80d8b",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "4fdce44e-24ee-42ac-a639-69f97557ce04",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "642c76a2-7923-4ac2-82c9-7a7bb7e4b31a",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "9cf14ced-9e57-4024-b1cb-b1e3b3cd37d8",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "f1aefc85-d049-42a7-a6e5-b689e6180448",
+      "result_id": "6d9d445d-ee9f-4574-b46f-76cb89ef1ac2"
+    },
+    {
+      "claim_id": "38b9e366-998f-4b57-a242-4c114695730f",
+      "result_id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89"
+    },
+    {
+      "claim_id": "f16b6bd3-8d9d-47fa-896f-9ae93e50b0d9",
+      "result_id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89"
+    },
+    {
+      "claim_id": "913cd582-b327-4ac5-b0cf-adabd539fb94",
+      "result_id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89"
+    },
+    {
+      "claim_id": "4c2f7768-d27a-43ac-b801-243a1c9c81e7",
+      "result_id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89"
+    },
+    {
+      "claim_id": "84bc626b-66fe-413e-a102-1d3e04da587d",
+      "result_id": "ee75c841-dd6f-4522-9f2b-ad6ef4da8c89"
+    },
+    {
+      "claim_id": "bcf87015-0efd-410b-8aba-cf746bcbf936",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "c0e57a9d-744c-4750-a17f-6c40cd354b1a",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "8c8fc23c-6559-4b38-a664-251ace36ba65",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "0bdc0fcb-3cdc-4e5e-8d6b-ce32b6364dcf",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "b92b58c0-8006-4f96-bcbc-3df885a13855",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "e15df03f-aeed-4295-ba67-4248330f7c07",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "73dc302b-b66b-4ddb-9aab-fc02b102c7ea",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "aef0c957-52e2-40d7-8885-b97953beadb9",
+      "result_id": "2645f217-7830-4efb-8b13-8dabd09a40e9"
+    },
+    {
+      "claim_id": "0954d9ad-7458-4c64-b9f9-b24988a01574",
+      "result_id": "ff45bbf7-f61d-4230-8c6b-972f7c8f7847"
+    },
+    {
+      "claim_id": "61052070-ea46-4c98-9e48-51ec7bde46e1",
+      "result_id": "ff45bbf7-f61d-4230-8c6b-972f7c8f7847"
+    },
+    {
+      "claim_id": "0d6c385c-aac9-4587-b8f9-1348a9e929f6",
+      "result_id": "bfd1ea03-04ac-4abb-bb71-993e91416668"
+    },
+    {
+      "claim_id": "7d64dc1a-39e5-47a8-b3da-8375e2fdd8a1",
+      "result_id": "87a54d91-1dbb-4ca3-b4f1-d2a5544b6c83"
+    },
+    {
+      "claim_id": "d75178fc-81aa-4d2a-9789-44f994d3f753",
+      "result_id": "38d96dba-bb68-45a6-86e5-6ed2196737e7"
+    },
+    {
+      "claim_id": "173b02da-fff2-4a2f-b9ba-c9b3a2a7de17",
+      "result_id": "38d96dba-bb68-45a6-86e5-6ed2196737e7"
+    },
+    {
+      "claim_id": "556b85b5-9fa7-4706-9cf6-de0b13d0cc09",
+      "result_id": "38d96dba-bb68-45a6-86e5-6ed2196737e7"
+    }
+  ],
+  "comparisons": []
+}

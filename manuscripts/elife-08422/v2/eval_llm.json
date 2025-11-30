@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Hypoxia followed by re-oxygenation induces neuronal death and an inflammatory response in the newt brain. Newts tolerate gradual reduction to 10% oxygen over 48 hours, but re-oxygenation leads to a 3.3-fold increase in TUNEL+ cells, a 3.2-fold increase in apoptotic neurons, and a 2.8-fold increase in proliferating microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide converging evidence from TUNEL staining (C2, C3, C4), NeuN/TUNEL double labeling (C4), and IBA1/PCNA staining (C7) with appropriate quantification and statistical testing. The experimental design is clearly described (C1) and controls are appropriate. The conclusion that hypoxia/re-oxygenation causes neuronal loss and inflammatory response (C5, C10) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Re-oxygenation, but not hypoxia alone, triggers ependymoglia cell proliferation and increased neurogenesis in the forebrain. After re-oxygenation, there is a 1.8-fold increase in proliferating ependymoglia cells (confirmed by both PCNA and EdU labeling) and a 2.4-fold increase in newly formed neurons after 35 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 demonstrate a temporal specificity with no change during hypoxia alone (C12) but significant increases after re-oxygenation (C13, C14). The use of two independent proliferation markers (PCNA and EdU) provides technical validation (C13, C14), and the long-term chase experiment (C15) appropriately demonstrates neurogenesis rather than just proliferation. Statistical significance is reported for all quantifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ROS accumulates in ependymoglia cells after re-oxygenation, and NOX-derived (but not mitochondrial) ROS is required for ependymoglia proliferation and neurogenesis. Apocynin (NOX inhibitor) reduces ROS levels, decreases ependymoglia proliferation by 2.0-fold, and reduces neurogenesis by 2.0-fold, while Mitotempo (mitochondrial ROS inhibitor) has no effect on proliferation despite reducing mitochondrial ROS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 provide strong pharmacological evidence with appropriate controls. The differential effects of apocynin (C20, C22, C25) versus Mitotempo (C23, C24) are particularly compelling, demonstrating specificity for NOX-derived ROS. Controls showing apocynin does not affect basal proliferation (C21) strengthen the interpretation. The co-localization of Mitosox with mitofusin-1 (C23) validates the mitochondrial ROS measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C56",
+      "C57"
+    ],
+    "result": "Young neurons and ependymoglia cells show similar ROS levels in vitro, suggesting that neuronal differentiation does not require increased ROS production. This contrasts with some prior reports suggesting ROS accumulation in newborn neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28 and C57 are based on in vitro neurosphere cultures comparing GFAP+ and DCX+ cells, which may not fully recapitulate in vivo conditions. The authors acknowledge this limitation and appropriately state the result does not demonstrate ROS is unimportant for differentiation (C57), only that increased ROS production is not required. The discrepancy with prior literature (C27, C56) is noted but not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C89"
+    ],
+    "result": "Ependymoglia cell activation after re-oxygenation is independent of microglia activation. Dexamethasone treatment reduces microglia proliferation by 3.8-fold but does not affect ependymoglia proliferation, and apocynin does not reduce microglia activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide clear pharmacological dissociation between microglia and ependymoglia responses using dexamethasone. The lack of effect of apocynin on microglia (C32) further supports independence. Controls are appropriate and statistical testing is reported. The conclusion (C33) is well-supported, though the authors appropriately note this doesn't rule out microglia involvement under other conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C90",
+      "C91"
+    ],
+    "result": "Ependymoglia cells respond to hypoxia/re-oxygenation in a cell-autonomous manner. In vitro neurosphere cultures show a 1.4-fold increase in proliferating GFAP+ cells after hypoxia/re-oxygenation, which is abolished by apocynin but not affected by apocynin alone under normoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 demonstrate that isolated ependymoglia cells in neurosphere culture respond to hypoxia/re-oxygenation similarly to in vivo, supporting cell autonomy. The apocynin sensitivity in vitro (C36) parallels in vivo results. Controls showing no effect of apocynin on basal proliferation (C37) are appropriate. Combined with the microglia independence data (C89, C91), the cell-autonomous conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C92",
+      "C93"
+    ],
+    "result": "ROS production is required for ependymoglia proliferation and dopamine neuron regeneration in the normally quiescent midbrain under normoxic conditions. After 6-OHDA ablation, ROS accumulates in ependymoglia cells, and apocynin treatment reduces ependymoglia proliferation by 3.3-fold and inhibits dopamine neuron regeneration without affecting baseline TH+ neuron numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 extend the ROS requirement to normoxic regeneration, demonstrating generalizability beyond hypoxia/re-oxygenation. The 6-OHDA model is well-established (C40-C43), ROS accumulation is documented (C44), and apocynin effects on both proliferation (C45) and regeneration (C47) are quantified with appropriate controls (C46). This is a key result linking ROS to regenerative capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "NOX-derived ROS, rather than mitochondrial ROS, plays a dominant role in controlling ependymoglia cell proliferation in the newt brain. While prior studies suggested opposing roles for these ROS sources, mitochondrial ROS inhibition does not affect ependymoglia proliferation in newts despite reducing mitochondrial ROS accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide clear experimental evidence distinguishing NOX from mitochondrial ROS effects, with appropriate controls showing Mitotempo reduces mitochondrial ROS (C53) but doesn't affect proliferation (C53), while apocynin does both (C54). The contrast with prior literature (C52) is appropriately acknowledged. The conclusion about NOX dominance (C55) is well-supported by the differential pharmacological effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C88",
+      "C94",
+      "C95"
+    ],
+    "result": "ROS production is an important component of NSC regulation in the newt brain, and this role may have been evolutionarily recruited to the capacity for neuronal regeneration. ROS accumulation occurs in NSCs both after re-oxygenation and during normoxic dopamine neuron regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C88-C95 synthesize the major findings into an overarching conclusion. The data supporting ROS involvement in NSC regulation (C94) is strong across multiple experimental paradigms. However, the evolutionary hypothesis (C60, C95) is speculative and appropriately presented as such. The core conclusion about ROS importance in NSC regulation is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike zebrafish, where NSC activation depends on microglia, newt NSC activation after hypoxia/re-oxygenation is independent of microglia, suggesting partially non-overlapping signaling mechanisms between species during neuronal regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 make an important cross-species comparison. The zebrafish data is from prior literature (C74), and the newt data showing microglia independence is well-supported (C75). The authors appropriately acknowledge that different experimental paradigms were used and that microglia might be important under other conditions (C76), making the conclusion appropriately cautious while still supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "NSCs resist ROS-related damage, as they do not show apoptotic phenotype despite systemic manipulation of oxygen tension and ROS accumulation that leads to increased neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 report a negative finding (absence of apoptotic NSCs) that is biologically significant. The observation is clearly stated (C77) and the interpretation about NSC resistance is reasonable (C78). However, the manuscript does not provide quantitative data on the extent of examination or sensitivity of detection methods, which would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Many hypoxia-tolerant vertebrates are good regenerators, and ROS signaling has been linked to regeneration in multiple contexts across species. The phylogenetically uneven distribution of regenerative capacity may reflect both ancestral traits and species-specific evolutionary adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 provide extensive literature context supporting connections between hypoxia tolerance, ROS signaling, and regeneration across species. All claims are appropriately cited. The discussion of evolutionary patterns (C68) is speculative but clearly presented as such and supported by multiple examples of species-specific differences (C69-C73). This contextualizes the current findings well.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The red-spotted newt is an appropriate model for studying hypoxia/re-oxygenation and neuronal regeneration, as it experiences hypoxic conditions in its natural habitat, possesses extensive regenerative capacity, and has well-characterized neural stem cells (ependymoglia) that can undergo both constitutive and injury-induced neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 and C96-C99 establish the biological rationale and model system characteristics. All claims about newt biology and regenerative capacity are appropriately cited to prior literature. The characterization of ependymoglia cells (C84-C86) is well-established in prior work. The ecological context (C80, C96-C99) provides strong justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The newt brain model, with its population of rarely dividing ependymoglia stem cells, provides advantages over mixed stem/progenitor cell cultures for studying ROS effects on NSC activation. The data support that increased ROS signaling is important for NSC activation leading to neuronal replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 position the current work relative to prior conflicting literature on ROS and stem cells. The advantage of the newt model (C50) is valid and appropriately cited. The conclusion about ROS importance (C51) is well-supported by the experimental data, though it is an inference from multiple lines of evidence rather than a single direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "All experiments were performed on adult red-spotted newts according to ethical guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 describes the experimental animals and ethical compliance, which is appropriately documented in the methods section.",
+    "result_type": "MINOR"
+  }
+]

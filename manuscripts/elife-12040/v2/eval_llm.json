@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C62",
+      "C65",
+      "C120"
+    ],
+    "result": "The authors engineered a family of four photoswitchable NMDA receptor subunits (LiGluNs) using MAG photoswitches that can be reversibly controlled with light. LiGluN2A(V713C) and LiGluN2B(V714C) were created as photo-agonists that generate inward currents when illuminated with 380 nm light and turn off with 488-510 nm light. These engineered receptors preserve wild-type glutamate potency, activation kinetics, and do not alter total NMDA receptor expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C35, C41-C45, C48-C53, C61-C62, C65, and C120 collectively demonstrate successful engineering of light-gated NMDA receptor subunits. The data show reversible photocurrents in both HEK293 cells and hippocampal neurons (Figures 1d-e), preserved pharmacological properties (Figure 1\u2014figure supplement 2), and lack of toxicity or non-specific effects (Figure 1\u2014figure supplement 3). The quantitative measurements with error bars and sample sizes support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The temporal properties of MAG photoswitching can be controlled by light intensity to mimic physiological NMDA receptor kinetics. Brief high-intensity pulses (2 ms at 375 nm) trigger fast activation comparable to synaptic NMDA receptors, while the deactivation speed can be tuned from tens to hundreds of milliseconds. MAG photoswitches are bistable, maintaining their state in darkness until reversed by light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by experimental data in Figures 1f-i showing controlled activation/deactivation kinetics with appropriate comparisons to published synaptic NMDA receptor kinetics (with citations). The bistability is demonstrated in Figure 1i showing sustained photocurrents in darkness. The ability to sculpt temporal profiles addresses a key advantage of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "LiGluN2A and LiGluN2B photocurrents have similar amplitudes and activation kinetics, but LiGluN2B deactivates approximately 3 times more slowly than LiGluN2A under identical light conditions. Photoactivation of both subtypes triggers action potential firing in presynaptic neurons, as evidenced by increased EPSC frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by comparative data in Figure 2c-g and Figure 2\u2014figure supplement 1-2. The ~3-fold difference in deactivation kinetics is quantified and statistically significant (p<0.001, Mann-Whitney test shown in supplement). The inference about presynaptic action potentials (C69) is reasonable based on increased EPSC frequency, though direct confirmation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Photo-antagonist LiGluN subunits were developed by attaching L-MAG0 at positions where the glutamate moiety blocks ligand binding. LiGluN2A(G712C) produces 56-66% inhibition of NMDA currents, comparable to the selective antagonist NVP-AAM077. LiGluN1a(E406C) produces 31% inhibition without affecting glycine potency. Combined expression of both photo-antagonist subunits yields 74% inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by quantitative data in Figure 3b-f with appropriate sample sizes and error bars. The comparison to NVP-AAM077 (C75) is supported by citations. The preservation of glycine potency (C78) is shown in Figure 1\u2014figure supplement 2e,f. The additive effect of combining both photo-antagonist subunits (C79) demonstrates the approach works at both binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Photo-antagonism of LiGluN2A(G712C) and LiGluN1a(E406C) with 370 nm light hyperpolarizes cultured hippocampal neurons and suppresses action potential firing, with gradual recovery upon 510 nm illumination. This effect is specific to transfected neurons, with no photo-effect in non-transfected controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by current clamp data in Figure 4a-d and voltage clamp data in Figure 4\u2014figure supplement 1. Statistical analysis (Figure 4\u2014figure supplement 2) shows significant effects in transfected but not non-transfected neurons. The specificity controls (C81, C84) are essential and properly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "LiGluN subunits incorporate into synaptic NMDA receptors at autapses without significantly changing receptor number or kinetics. Photo-antagonism reversibly inhibits evoked NMDA EPSCs by 20-50%, with the degree of inhibition varying primarily with labeling efficiency rather than total receptor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are supported by autapse recordings in Figure 5. The similarity of eEPSC amplitude and kinetics between transfected and non-transfected neurons (C85) supports normal incorporation. Reversible photo-antagonism is demonstrated in Figure 5c-d. The lack of correlation between inhibition magnitude and EPSC amplitude (C90, Figure 5\u2014figure supplement 1b) supports the labeling efficiency interpretation (C91), though this remains somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Photo-antagonism of LiGluN2A and LiGluN1a blocks LTP induction in hippocampal CA1 neurons following Schaffer collateral stimulation. Slices with photo-antagonism OFF (green light) showed robust LTP (185% of baseline), while slices with photo-antagonism ON (violet light) showed no LTP (67% of baseline). Control experiments demonstrate this effect is specific to photo-antagonism and not due to the light protocol itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by LTP experiments in Figure 6 using organotypic slices from GluN2A-knockout mice. The experimental design is appropriate with proper controls including unlabeled slices exposed to 390 nm light (C96). Statistical significance is shown (p-value indicated in Figure 6d). The use of knockout mice ensures specificity for the introduced LiGluN subunits. This demonstrates functional control over a key form of synaptic plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Single-spine photo-agonism of LiGluN2A(V713C) induces spine-specific calcium elevation and structural plasticity. Illumination at 405 nm triggers calcium rises confined to the illuminated spine and induces spine expansion that peaks at ~5 minutes (167% of baseline) and persists for at least 45 minutes (131% of baseline). Non-illuminated nearby spines and unlabeled controls show no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by single-spine imaging data in Figure 7. Calcium compartmentalization is shown with R-GECO (Figure 7b-c). Spine expansion is quantified with appropriate statistics (paired t-tests, p<0.001) and proper controls (nearby spines, unlabeled slices). The conclusion that activation of postsynaptic GluN2A is sufficient for structural LTP (C107) is supported but should be interpreted cautiously as this is in a knockout background with artificial stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Photo-antagonism of LiGluN1a/GluN2A reversibly blocks glutamate uncaging-induced spine expansion at single synapses. During photo-antagonism, glutamate uncaging produces only transient expansion (118% peak, returning to baseline). After removing photo-antagonism with green light, a second uncaging bout induces persistent expansion (147% above new baseline).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by single-spine uncaging experiments in Figure 8. The experimental design cleverly uses two successive uncaging bouts to demonstrate reversibility and confirm spine competence. Statistical analysis shows the first expansion is not significant (p>0.1) while the second is significant (p<0.01). Controls of nearby spines are included (C110). This demonstrates temporal gating of structural plasticity at individual synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In vivo photo-antagonism of LiGluN2A(G712C) in transgenic zebrafish disrupts activity-dependent pruning of retinal ganglion cell axons during the 5-7 dpf critical period. Episodic photo-antagonism produces a 16.4% increase in arbor radius, comparable to 25 \u03bcM MK-801 treatment (13.8% increase), without affecting initial development or general behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 are supported by in vivo zebrafish experiments in Figure 9. The transgenic line is properly characterized (C112-C114). The photo-antagonism effect is statistically significant and comparable to MK-801 (C115-C117), validating the approach. Behavioral controls (C118, Figure 9\u2014figure supplement 1b) demonstrate lack of toxicity. This demonstrates the utility of the approach for chronic in vivo manipulations. The episodic illumination protocol (10 s every 30 min) cleverly exploits MAG bistability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about NMDA receptor structure, function, and biological roles establish the scientific context and motivation for developing subunit-specific optical control tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C17 are general knowledge statements about NMDA receptors supported by appropriate citations. These provide necessary background but are not novel findings of this study. The complexity described (C17) motivates the need for the tools developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Existing approaches for manipulating NMDA receptors (pharmacological agents, genetic manipulations, caged compounds, photo-reactive amino acids) have limitations in temporal control, spatial confinement, reversibility, or subunit specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C32 accurately describe limitations of existing approaches and are supported by appropriate citations. These establish the need for the new tools but are not novel findings. The characterization of limitations is fair and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PTL technology has been previously applied to generate light-gated versions of various neurotransmitter receptors and channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe prior applications of PTL technology and are supported by appropriate citations. This establishes the technical foundation for the current work but represents prior art rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C63",
+      "C64"
+    ],
+    "result": "MAG in its cis form acts as a full agonist for LiGluN2A (comparable to glutamate) but as a super-agonist for LiGluN2B (more potent than glutamate), as inferred from responses in the presence of saturating glutamate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C63-C64 are inferences based on observations during saturating glutamate application (Figures 1d-e, 2b). For LiGluN2A, no additional current during photo-agonism suggests equal efficacy (C47). For LiGluN2B, a small increase suggests higher potency (C64). These are reasonable inferences but indirect measurements. Direct dose-response curves for MAG would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C141"
+    ],
+    "result": "Summary claims about the properties and capabilities of the LiGluN toolset, including subunit selectivity, normal function, synaptic incorporation, and applications to studying NMDA receptor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C130 and C141 are summary statements supported by the collective experimental evidence presented throughout the paper. These synthesize the major findings but do not represent independent results. They accurately reflect what was demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion of technical limitations including incomplete labeling efficiency, partial MAG isomerization, stereochemistry effects, temporal constraints of maleimide conjugation, and receptor turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 acknowledge limitations of the approach and are supported by citations and logical inference. The incomplete photo-agonism/antagonism (C131) is evident in the data (typically 30-75% of maximum). These are honest assessments of limitations, though some (like C133) are speculative. The discussion of SNAP-tag alternatives (C134) points to ongoing improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "Discussion of future directions including two-photon compatible MAG variants and potential applications in various model organisms and for studying NMDA receptor mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C140 and C142 discuss future possibilities supported by citations to recent advances. However, these are speculative statements about potential applications rather than demonstrated results. The citations support that two-photon MAGs exist (C138) and that the approach works in some model organisms (C140), but broader applications remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1927 @@
+{
+  "submission": {
+    "id": "34c83bdf-dc04-43c7-86c4-b5a38ac0c496",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:30:41.670721Z",
+    "updated_at": "2025-11-29T23:30:41.670721Z"
+  },
+  "content": [
+    {
+      "id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "submission_id": "34c83bdf-dc04-43c7-86c4-b5a38ac0c496",
+      "content_type": "manuscript",
+      "content_text": "# Synthetic protein interactions reveal a functional map of the cell\n\n## Authors\n\n- Lisa K Berry<sup>1</sup>\n- Gu\u00f0j\u00f3n \u00d3lafsson<sup>1</sup>\n- Elena Ledesma-Fern\u00e1ndez<sup>1</sup>\n- Peter H Thorpe<sup>1</sup> ([ORCID: 0000-0003-1649-6816](https://orcid.org/0000-0003-1649-6816)) \u2020\n\n### Affiliations\n\n1. Mitotic Control Laboratory The Francis Crick Institute, Mill Hill Laboratory London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo understand the function of eukaryotic cells, it is critical to understand the role of protein-protein interactions and protein localization. Currently, we do not know the importance of global protein localization nor do we understand to what extent the cell is permissive for new protein associations \u2013 a key requirement for the evolution of new protein functions. To answer this question, we fused every protein in the yeast Saccharomyces cerevisiae with a partner from each of the major cellular compartments and quantitatively assessed the effects upon growth. This analysis reveals that cells have a remarkable and unanticipated tolerance for forced protein associations, even if these associations lead to a proportion of the protein moving compartments within the cell. Furthermore, the interactions that do perturb growth provide a functional map of spatial protein regulation, identifying key regulatory complexes for the normal homeostasis of eukaryotic cells.\n\n## Introduction\n\nPost-translational protein modifications such as phosphorylation or ubiquitylation often alter the affinity of one protein for other proteins or cellular components, which drive their movement within the cell (Scott and Pawson, 2009). Protein relocalization is critical for many cellular processes, including the asymmetric division of adult stem cells, which underlies metazoan development. The importance of protein localization is also highlighted by diseases ranging from cystic fibrosis to cancer that result, in part, from protein mislocalization (Hung and Link, 2011). The evolution of new modes of protein regulation requires new associations to form, but currently we do not know how tolerant the cell is of novel protein interactions. For example, can a nuclear kinase relocate to the cytoplasm without consequence?\n\nVarious methodologies have been developed to allow specific affinity-based relocation of proteins in vivo. For example, some systems are designed to disable a location-specific function by sequestering proteins to a specific compartment (Haruki et al., 2008; Robinson et al., 2010). Alternatively, a leucine zipper-based system was developed to screen for pairwise protein associations, provided that selection for a phenotype is possible (Devit et al., 2005). However, none of these approaches have systematically assessed the effects of creating pairwise protein associations, one at a time, across the entire proteome. To address this, we made use of the Synthetic Physical Interaction (SPI) system (Olafsson and Thorpe, 2015)\u00a0to create high-affinity interactions between each of the ~six-thousand members of the eukaryotic yeast proteome and target proteins in each of the major cellular compartments. This has allowed us to assay the effect of each of these in vivo binary protein interactions individually upon the normal growth of cells. We find that most protein-protein interactions are benign to the normal growth of cells, but that specific interactions do perturb growth - these interactions are termed Synthetic Physical Interactions or SPIs (Olafsson and Thorpe, 2015). The SPIs are enriched for functional regulators, indicating that constitutive colocalization of a regulator with its target causes a growth defect. We are able to use SPIs to identify novel regulatory proteins; for example, we examine SPIs between the kinetochore protein Nuf2 and both Hmo1 and Sgf29 and find that these two proteins are required to regulate the levels of outer kinetochore proteins. Furthermore, the SPIs correlate with the quaternary structure of large protein complexes such as the kinetochore or nuclear pore. As such, the SPIs provide a powerful tool to complement existing physical and genetic interactions.\n\n## Results\n\nThe SPI system uses a GFP-binding protein (GBP) derived from an alpaca antibody (Rothbauer et al., 2006), which when fused to a target protein of interest creates binary associations in vivo with GFP-tagged proteins (Rothbauer et al., 2006; Rothbauer et al., 2008; Grallert et al., 2013). We define a target protein as one fused with the GBP and a query protein as one tagged with GFP. By introducing GBP-target proteins into strains encoding GFP-query proteins, we induce an affinity between the target and query proteins via the strong binding of GBP to GFP. We used the Selective Ploidy Ablation technique (Reid et al., 2011)\u00a0to introduce a plasmid encoding the GBP-target protein into the collection of ~6000 GFP strains, each of which has a chromosomally integrated GFP introduced at the 3\u2019 end of a specific open-reading frame (Huh et al., 2003). In each resulting haploid strain, the GBP-target protein is plasmid-encoded and the GFP-query protein is endogenously-encoded; we are therefore able to create a binary protein-protein interaction and assess the effects of this interaction upon growth. We used two independent controls, which were separately transferred into the GFP collection. The first control encodes the GBP alone, and the second encodes the target protein. These two constructs control both for the effects of binding a protein to the GFP tag and also for the ectopic expression of the target gene in each GFP strain. We chose 23 different target proteins that represent 18 of the major cellular compartments (Figure 1A and Figure 1\u2014source data 1), such as the nucleus (Pus1 and Rad52), the cell membrane (Psr1), and the endoplasmic reticulum (Sec63). The genes encoding these target proteins were fused with GBP and transferred into every strain of the GFP collection (Figure 1\u2014source data 1). Thus, for each target protein, we create ~6000 strains each of which contains the target GBP-tagged protein together with a specific GFP-query protein. The effect on growth was assayed by comparing the colony sizes of strains containing the GBP-GFP interaction with the two controls (Figure 1B,C)(Dittmar et al., 2010). The two controls gave equivalent results (Figure 1\u2014figure supplement 1 and as previously reported Olafsson and Thorpe, 2015) and consequently an average growth score was used.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic diagram of S. cerevisiae indicating the cellular compartments and target proteins within the cell that were associated\u00a0with each member of the proteome. (B) A 1536 colony plate from the Sec63 screen. The inset below shows the highlighted row from the Sec63-GBP plate, the Sec63 control plate and the GBP-only control plates respectively. Growth defects are indicated with a black line. (C) The z-scores of all 5734 proteins in each of the 23 screens. For each screen, the strains are ranked according to order of z-scores, positive z-scores indicate a growth defect relative to controls. The inset highlights the strains with the largest growth defects in each screen.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) x-axis: z-scores quantifying the difference in colony sizes between strains expressing the target protein fused with GBP and strains expressing the target protein alone, to control for the effects of ectopic expression. y-axis: z-scores quantifying the difference in colony sizes between strains expressing the target protein fused with GBP and strains expressing the GBP alone, to control for the effects of binding a protein to the GFP tag. A positive z-score indicates a growth defect of the GBP-tagged target protein relative to its control. (B) The relative growth (Log Growth Ratios, LGRs) from the high-density re-testing of Sec63-GBP SPIs relative to the two controls (the target protein alone \u2013 x-axis and the GBP alone \u2013 y-axis). The relative growth of the negative controls (no GFP tagged protein) are shown in green, whereas the retested Sec63 SPIs are shown in blue.\n\nWe expected that many of the forced associations would disrupt cellular homeostasis, but unexpectedly, we found that 98% of GBP\u2013GFP combinations (129,098 out of 131,882) do not affect the growth of cells (Figure 1C). These data imply that cells are surprisingly permissive for most protein-protein interactions and as a corollary that cells are broadly tolerant of proteins being relocated within the cell.\n\nIn cases where fluorescent imaging was able to detect protein relocalization, we confirmed that ~72% of interactions do occur. Since the GBP tag is linked to red fluorescent protein (RFP), we were able to assay colocalization with GFP. We examined 552 GBP-GFP combinations - each of the 23 GBP-tagged target proteins separately combined with a random selection of 24 GFP-tagged query proteins - using live cell imaging (Figure 2\u2014source data 1, for examples see Figure 2 and Figure 2\u2014figure supplement 1). Of the 524 GBP-GFP combinations that we could score, 210 (40%) are already in the same compartment and so we cannot determine whether GFP and GBP associate, of the remaining 314, 225 were detectably colocalized (Figure 2C), indicating that in the majority of cases the protein-protein associations do occur (Figure 2, Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 1). These observations are therefore consistent with the notion that most synthetic protein-protein interactions do not cause a growth defect.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cdc11-GBP relocalizes to the Golgi when bound to Sec26-GFP. (B) Cdc55-GFP relocalizes to the mitochondria when bound to Om45-GBP. (C) Bar chart of the proportion of colocalization (n=552), note that the colocalized category includes 210 combinations where the target and query proteins are within the same compartment and so protein-protein association will not be apparent from this microscopy analysis. (D) Bar chart of the direction of movement of GFP and GBP (n=225). \u2018To query protein - GFP\u2019 indicates relocation of the majority of the GBP target protein to GFP (see A); \u2018To target protein - RFP\u2019 denotes relocation of the majority of the GFP query proteins to the GBP-RFP target (see B). \u2018Both locations\u2019 indicates that GBP and GFP proteins are in both their normal location and those of the other protein (e.g. Figure 2\u2014figure supplement 1B). \u2018Neither location\u2019 denotes both GFP and GBP proteins are colocalized, but not to either of their normal locations (e.g. Figure 2\u2014figure supplement 1C), whereas \u2018Regionally colocalized\u2019 indicates one protein is in the same region of the cell as the second protein, but not completely colocalized (see E). \u2018Foci only\u2019 designates that the proteins relocalized to discrete foci (see Figure 2\u2014figure supplement 1E). Two categories are omitted from this analysis, first those cells which were uncharacterized, typically because the cells were dead. Second, cells in which the target and query protein reside in the same cellular location, such that microscopy is not informative on whether or not they are associated, this latter category make up ~40% of our combinations. (E) Hta2-GBP is displaced from the nucleus when bound to Spt6. The scale bars are 5\u00a0\u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) GBP cololcalizes with Rpa49-GFP. (B) Both GFP and RFP can be detected in the nucleus and peroxisomes when Ski6-GFP and SKL-GBP bind. (C) Pan1-GFP and Om45-GBP colocalize in neither of their expected locations. (D) Med7-GFP and Pus1-GBP both localize to the nucleus, so displacement due to colocalization is impossible to detect. (E) Pan1-GFP and Nup53-GBP colocalize to form foci in the cell. (F) Okp1-GFP and Cdc11-GBP do not colocalize. The GFP kinetochore signal and RFP bud neck signal are still clearly visible in the combined strain.\u00a0Scale bars are 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Localization of PIL1-GBP-RFP is shown, along with Htb1-GFP, Htb2-GFP, Hta2-GFP, and Hhf2-GFP. DIC, GFP, RFP and merged images then show the colocalization of each histone subunit (GFP) with Pil1-GBP-RFP.\u00a0Scale bars are 5 \u00b5m.\n\nThe microscopy analysis also allows us to examine whether the GBP-tagged target protein recruits the GFP protein to its location or vice versa. We anticipated that each binary protein association would create a \u2018tug-of-war\u2019 between the target protein and the query protein. The image data support this notion; where it is possible to distinguish the location of two proteins in the cell, we observed that there are roughly equal instances of the GBP protein recruiting the GFP protein as the reverse (Figure 3 and Figure 3\u2014figure supplement 1). However, this generalization is not true for some classes/types of proteins. When we look at individual GBP or GFP proteins, we find that structural components more often recruit proteins to their location than enzymes that are not anchored to a specific location (Figure 3, Figure 3\u2014figure supplement 1 and Figure 2\u2014source data 1). For example, GFP-tagged cytosolic query proteins such as Cdc55 and Snf1 mostly relocalize to their target proteins (Figure 2B and Figure 3\u2014figure supplement 1), whereas the GFP-tagged nucleolar proteins Rpa49 and Pwp2 more often recruit GBP-tagged target proteins to their location (Figure 3\u2014figure supplement 1). There are some rare cases where the two proteins localize to both locations and also where one or both proteins mislocalize to a new location that is foreign to both (Figure 2D). An example of the latter is the recruitment of the nucleosome remodeling protein, Spt6, to the histone subunit Hta2. Constitutive recruitment of a nucleosome remodeler to the chromatin might be expected to give a phenotype and indeed we find that the histone subunit Hta2-GBP is strikingly no longer restricted to the nucleus (Figure 2E) concomitant with a strong growth defect. It is possible that we are overestimating the extent of relocalization caused by the GFP-GBP interaction. First, since the target and query proteins are not stoichiometrically matched, some of the GFP or GBP protein will likely remain at its native location. Second, it is possible that in some cases either the GFP tag or the\u00a0GBP tag is cleaved from its query or target protein respectively, thus giving a false indication of colocalization. It is also possible that imaging underestimates the proportion of relocalization, since we could not score the 210 combinations where proteins are already in the same compartment, these are perhaps more likely to associate via the GFP-GBP interaction. Furthermore, it should be noted that in some cases where we could not detect that the GFP and GBP proteins were colocalized, there was nevertheless either a growth phenotype or a change in the location of one of the proteins. For example, of the 15 Iqg1 associations that failed to show protein colocalization (Figure 3), 14 show mislocalization of either the Iqg1 target protein or the GFP query protein.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig3-v1.jpg)\n\n**Figure 3.:** (A) The proportion of the 24 query proteins that colocalized in the direction indicated. Categories used to characterize the direction of colocalization are described in Figure 2. The \u2018Uncharacterized\u2019 category includes strains where there were no cells to image, which is often the case if the interaction perturbs growth.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A pie chart for each of the 24 randomly selected query proteins shows the proportion of the 23 target proteins observed to have colocalized in the direction indicated. Categories used to characterize the direction of colocalization are described in Figure 2.\n\nAround 2% of the forced interactions restrict growth (Figure 1C, 4A and Figure 1\u2014source data 1). However, we note that of the 6000 GFP-tagged proteins used in this study, only ~4000 have been validated and are clearly observable (Huh et al., 2003). We therefore reanalyzed the proteome-wide data using only 3905 GFP strains with unambiguous fluorescence signal (Tkach et al., 2012)\u00a0and find that ~3% restrict growth (Figure 4\u2014source data 1), consistent with the notion that most protein-protein associations do not restrict growth. We did not use a specific threshold cutoff to define a SPI, rather we confirmed the SPIs with the greatest impact on cell growth for each GBP by repeating the assay starting with the strongest interaction and proceeding sequentially through the SPIs until the false discovery rate (FDR) reached 40% (Figure 4\u2014figure supplement 1). Associations that produced a growth defect relative to controls with 16 replicates in the confirmation experiments are considered SPIs. Thus, some SPIs result from relatively mild growth defects, as outlined in Figure 4\u2014source data 1. We note that the false negative rate may be significant, since we did not test further than the 40% FDR and due to the limitations of measuring growth by colony size. Using this approach, we confirmed 2784 SPIs in total produced by 727 GFP-tagged query proteins with one or more of the 23 target proteins (Figure 4\u2014figure supplement 2 and Figure 4\u2014source data 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-v1.jpg)\n\n**Figure 4.:** (A) Cluster analysis of the SPI data. The 23 screens are arranged horizontally and the 727 GFP strains clustered vertically. High z-scores (positive; >2) in yellow and low (negative; < -1) scores in blue. Three distinct clusters are highlighted (a, b, and c) and described in Figure 4\u2014figure supplement 6. (B) Spearman\u2019s Rank Correlation Coefficients for the different SPI screens shows similar compartments give similar SPIs, for example, Sec63 and Loa1 cluster together as do two kinetochore proteins Nuf2 and Dad2. (C) The notched box-and-whisker plot indicates the distributions of the retest log growth ratios and indicates that SPIs produced by a query protein and a target protein from different compartments produce stronger growth defects than those from the same compartments (***indicates a p-value = 1.8x10-5,\u00a0Wilcoxon's rank-sum). The plot shows the median value (bar) and quartiles (box), the whiskers show the minimum of the range or 1.5 interquartile ranges, outlying data points are indicated as circles and the notches indicate the 95% confidence intervals of the medians. (D) The GFP proteins with SPIs have, on average, more protein-protein interactions than non-SPI query proteins, the notched box-and-whisker plot is in the same format as panel B (***indicates a p-value <.2x10-16, Wilcoxon\u2019s rank-sum). The 727 SPI query proteins (red) are superimposed upon the yeast interactome with proteins with \u226510 interactions shown as larger squares. (E) The CLIK interaction density plot for Sec63 is shown (see Figure 4\u2014figure supplement 5 for the other CLIK plots). The ~500 Sec63 associations that show the strongest growth restriction have a high interaction density (inset).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Strains were ordered from highest to lowest z-score and the strongest 80 growth defects were retested with 16 replicates (80 strains with 16 controls per plate). The FDR was calculated for each batch of 20 strains working down the list of z-scores, shown here in blue. Black lines indicate three-point moving averages. Vertical dashed lines group points from each retest plate together. No more retests were performed once a screen had reached 40% FDR, indicated by a horizontal green dashed line.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The distribution of SPIs is shown as a bar chart illustrating that most SPI query proteins give a SPI with only one or a few target proteins. Nevertheless, 75 query proteins have SPIs with at least 10 target proteins, the \u2018Frequent SPIs\u2019. (B) Frequent SPI query proteins have a lower mean abundance than non-frequent SPI query proteins (t-test, p>0.006). Error bars indicate standard error of the mean. (C) Frequency data shown in (A) plotted in terms of protein abundance. The mean abundance values in each category are indicated as red lines a linear trendline is shown in black.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The number of verified SPIs in each abundance category is shown for each screen, where abundance categories are bins containing an equal number (421) of proteins. The dashed line indicates the number of SPIs expected per category if distribution was entirely unbiased. (B) GBP-tagged protein levels were assessed via RFP fluorescence. Addition of copper to the medium increased the total protein concentration by as much as twofold. (C) 400 GFP strains were chosen to provide representatives in each protein abundance category, with a bias toward those in the highest abundance category. These GFP strains were retested with the four GBP-tagged proteins at different copper concentrations (0, 20, and 80\u00a0\u00b5M) and the proportion of SPIs within each category are indicated. Addition of copper did not increase the proportion of SPIs specifically with the high-abundance protein categories. It is of note that increasing the amount of Hta2-GBP produced more SPIs in all abundance categories, whereas increasing the amount of Nop10-GBP reduced the number of SPIs in all categories. Hence, although the amount of GBP protein can affect the SPIs, it does not correlate with GFP protein levels.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) From the Nuf2 SPI screen 41 frequent SPI query proteins (left panel) and 40 non-frequent SPI query proteins (right panel) were retested both as haploids and diploids. The numbers in the box to the left of the ORF name indicate the number of screens, out of 23, that the GFP-query protein was detected as a SPI. All the frequent SPI query proteins were not dominantly restricted for growth when associated Nuf2, compared with 15% (6/40) of the non-frequent SPI query proteins. (B) An example of the raw data with one frequent SPI (Nuf2-Tbf1) and one non-frequent SPI (Nuf2-Pan1) illustrate the suppression of the former SPI in diploid cells. (C) The mean log growth ratio of the combined 41 frequent and 40 non-frequent SPI query proteins from the Nuf2 SPI screen shows that there is no difference between frequent and non-frequent haploid SPI query proteins, in contrast the frequent diploid SPI query proteins are suppressed compared to non-frequent diploid SPI query proteins. Error bars indicate standard error of the mean, and **indicates a t-test p-value of 0.006; n.s. indicates not statistically significant.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Strains are ranked according to z-score and plotted in this order along the x- and y- axes (at position 0 is the strain with the strongest growth defect). Points are plotted where a genetic or physical interaction exists between two strains, and colors indicate high density of interactions.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Many components of the mediator complex, transcription factor complex, and mRNA cleavage and polyadenylation specificity factor complex cluster together the SPI data (cluster a in Figure 4A). (B) Almost all components of the COP1 vesicle coat (or coatomer), nuclear pore outer ring (specifically the NUP84 complex), and signal recognition particle (SRP) subunits cluster together (cluster b in Figure 4A). (C) Members of the TRAMP complex cluster together and are specifically SPIs with the target protein Pus1 (cluster c in Figure 4A). p-Values for gene ontology (GO) term enrichments are indicated.\n\nOne possible cause of the SPIs is that the target protein would sequester the GFP-tagged query protein away from its normal location. Should this be the case, we would expect low-abundance proteins to be more susceptible to growth defects. However, this is not generally the case for most SPIs, consistent with our earlier findings (Olafsson and Thorpe, 2015),\u00a0since we found there was no correlation between protein abundance and the z-scores (a relative measure of growth) from the 23 GBP screens (R2 values \u22640.004). To address the issue further we grouped all GFP strains into eight categories based upon the abundance of their GFP proteins, each group has 421 proteins. We then plotted the proportion of GFP strains within each group that produced SPIs with a given GBP target (Figure 4\u2014figure supplement 3A). Broadly, there are no abundance categories that are consistently enriched for SPIs with all GBP associations. However, we did note that in some cases the group of most abundant proteins had fewer SPIs than the other groups (for example Hta2 and Sec63, see Figure 4\u2014figure supplement 3A). To assess whether the levels of the GBP-tagged protein would influence the SPIs, we altered the GBP-tagged protein levels by virtue of their constitutive copper promoter. The CUP1 promoter functions in the absence of copper and its expression can be gradually increased by adding copper to the growth media. We confirmed that upon addition of increasing amounts of copper, the levels of the GBP target proteins increased, as assayed by quantitative fluorescence imaging of the RFP tag attached to GBP (Figure 4\u2014figure supplement 3B). We then retested 400 GFP strains, representing both high and low abundance proteins, with four different GBP target proteins, two of which had less SPIs with high-abundance proteins than expected (Hta2 and Sec63). The results indicate that increasing the expression of the GBP proteins does not specifically increase the number of SPIs within high abundance categories (Figure 4\u2014figure supplement 3C). Nevertheless, we expected that a subset of proteins would be particularly sensitive to the effects of forced association and relocalization and this proved true. When we examine all the 727 SPI query proteins collectively (Figure 4A), we find that 75 GFP query proteins produce SPIs with at least 10 of our 23 GBP-tagged target proteins (Figure 4\u2014figure supplement 2A). These \u2018frequent SPI query proteins\u2019 are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8). We have previously shown that these interactions are mostly suppressed by having an untagged copy of the query protein present in the cell (Olafsson and Thorpe, 2015). In heterozygous diploid strains, the untagged version of the SPI query protein is able to complement for the tagged version of the protein that is mislocalized via its association with the target protein. To confirm that the frequent SPI query proteins fall into this category we retested 41 SPIs from the Nuf2 screen that fall into the frequent SPI query proteins group and 40 from the non-frequent SPI query proteins group. Consistent with our expectation all 41 frequent SPIs are suppressed in heterozygous diploid cells, whereas 15% (6 out of 40) SPIs in the non-frequent group were reproduced in diploid cells (Figure 4\u2014figure supplement 4). Thus, we conclude that these frequent SPI query proteins are predominantly those whose essential function is location-dependent and whose sequestration to another compartment results in a growth defect (as is routinely achieved using other systems Haruki et al., 2008).\n\nTo understand whether associations to similar areas of the cell create growth defects from common sets of query proteins, we compared the SPIs generated from each target protein. Spearman\u2019s correlation coefficient analysis (Lubbock et al., 2013)\u00a0indicates that, in specific cases, SPI screens using target proteins from the same cellular compartment give similar SPIs (Figure 4B). For example, the Pus1 and Rad52 target proteins, which are both in the nucleus, produce SPIs with a similar set of query GFP proteins. However, it is interesting to note that some target proteins from the same cellular compartment give quite distinct sets of SPIs. For example, the SPI data for nuclear proteins Nop10 (nucleolus), Heh2 (nuclear membrane), and Hta2 (histone) cluster together but are distinct from both Pus1 and Rad52 (two nuclear enzymes). We suggest that these SPIs segregate into two different classes because Pus1 and Rad52 are non-essential nuclear enzymes, whereas Nop10, Heh2, and Hta2 are structural components, which may be more sensitive to movement. We next asked whether SPI query proteins would be located in the same cellular compartment as their target protein. SPIs between query and target proteins that normally localize to the same cellular compartment are enriched (10.4% of our confirmed SPIs are with target and query proteins from the same compartment, versus an expected value of 7.1% for the full dataset, p-value = 1.8x10-9, Fisher's Exact test). Also, this notion is true in specific cases, particularly for nuclear proteins. For example, SPIs with a nucleolar protein, Nop10, are enriched for nucleolar components (21 out of 115, p-value = 1.8x10-8, Fisher\u2019s exact test) or SPIs with the microtubule-associated kinetochore component Nuf2, which are enriched for microtubule components (described below). This pattern was typical of nuclear proteins, but not evident for other proteins: for example, the SPIs with the mitochondrial protein Om45 did not include any mitochondrial proteins. However, it should be noted that although there are more SPIs between proteins in the same compartment, SPIs produced by proteins in different compartments tend to give a greater growth defect (Figure 4C).\n\nUnexpectedly, we find that SPI query proteins are enriched for characterized physical interactions, compared with non-SPIs (p<2.2 x 10\u201316, Wilcoxon\u2019s rank-sum). This is visualized by overlaying all the confirmed SPI query proteins onto a graph of the yeast physical interaction dataset (HINT database (Das and Yu, 2012), Figure 4D). We also asked the same question for each SPI screen using the Cutoff Linked to Interaction Knowledge tool (CLIK), which examines quantitative data for interaction density (Dittmar et al., 2013). The CLIK tool ranks all genes/proteins by their z-score (high scores bottom left, low scores top right) and then plots the interaction density between all proteins (using data from the Biogrid database Stark et al., 2006). If, from a specific target screen, the most growth restricted query proteins are collectively enriched for genetic or physical interactions then a cluster of high density will be visible in the bottom left of the density plot. Most SPI screens have a strong enrichment for genetic and physical interactions indicating that the strongest SPIs share interactions (Figure 4E and Figure 4\u2014figure supplement 5), which is a predictor of common function. The overlap with physical interactions is particularly surprising; indicating that proteins that normally interact together can induce a growth defect when constitutively bound. Collectively, these observations are consistent with the idea that proteins and their regulators are often located within the same compartment, but their temporal or spatial physical association is tightly regulated.\n\nThe SPIs for each target protein are also enriched for proteins involved in regulating their function. Gene ontology enrichment analysis for the SPIs demonstrates that specific functional classes of proteins are enriched for each cellular compartment. For example, SPIs for the DNA repair protein Rad52 are enriched for components of the nuclear pore (Ndc1, Nic96, Nup1, Nup85, Nup49, Nup57, Nup84, Nup145, and Nup192; p-value = 7x10-9), specifically the Nup84 complex, which functions in specialized types of DNA repair (Nagai et al., 2008). Another example is the kinetochore protein Nuf2, whose SPIs are enriched for proteins involved in microtubule organization (Ark35, Bir1, Cbf2, Cdc14, Ctf19, Dad2, Dad4, Dsn1, Ipl1, Kip1, Kip3, Okp1, Spc24, Spc29, Spc42, Spc105, Spc110, Stu1, and Tub4; p-value = 8x10-13). Nuf2 is an outer kinetochore protein whose calponin-homology domain directs microtubule binding (Wei et al., 2007; Ciferri et al., 2008). As such, the SPIs may include numerous novel regulators of their target proteins (Olafsson and Thorpe, 2015). To test this, we examined three Nuf2 SPIs in more detail. Hmo1, Sgf29 (both chromatin-associated proteins) and Sst2 (a GTPase activating protein) all gave a strong SPI phenotype with the kinetochore protein Nuf2. Only one of these mutants, hmo1\u2206, gives a chromosomal instability phenotype (Stirling et al., 2011)\u00a0and none have a reported role in kinetochore function. The SPI data (Figure 4A) cluster Hmo1 adjacent to Dad4, an outer kinetochore protein and with other kinetochore proteins (Mcm21, Okp1, Nkp2, Ctf19, and Spc24). To test whether the Hmo1-Nuf2 SPI was unique in the kinetochore, we tested various other kinetochore target proteins fused with GBP in an Hmo1-GFP strain. We find that in addition to Nuf2, Hmo1 has SPIs with Mif2 and Ctf19, but not Kre28, Mtw1, Dad2, Ctf3, Chl4, Skp1, Cnn1, or Cbf1 (Figure 5A). These data suggest that the Hmo1 SPI is specific to central/outer kinetochore components. We examined fluorescently\u00a0tagged kinetochore proteins in hmo1\u2206, sgf29\u2206, and sst2\u2206 cells. We chose two kinetochore proteins, Mtw1 and Dad4, both of which are at the central and outer kinetochore, respectively, and adjacent to Nuf2, Ctf19 and Mif2 and also have been used in quantitative studies (Joglekar et al., 2006; Ledesma-Fern\u00e1ndez and Thorpe, 2015). Strikingly, we find that hmo1\u2206 and, to a lesser extent, sgf29\u2206 cells both have elevated levels of Dad4 outer kinetochore protein associated with their centromeres, although the levels of Mtw1 were unaffected (Figure 5B,C and 5D). However, Hmo1 stimulates the activity of the SWI/SNF chromatin remodeling complex (Hepp et al., 2014)\u00a0and therefore may affect expression of the DAD4 gene. To test whether the hmo1\u2206 mutant was affecting Dad4 protein levels we quantified total cellular Dad4-YFP fluorescence in wild-type and mutant cells and find approximately one third of hmo1\u2206 cells have higher levels of Dad4 than those found in wild-type cells (Figure 5\u2014figure supplement 1). Nearly half of the hmo1\u2206 cells have Dad4 levels in the wild-type range (+/- one standard deviation of the wild-type mean); hence cellular Dad4 protein levels are not sufficient to explain the aberrant Dad4 foci seen in most hmo1\u2206 cells (Figure 5B). Furthermore, it has previously been shown that Hmo1 is associated with purified kinetochores (Akiyoshi et al., 2010),\u00a0consistent with a direct role at the kinetochore. These data support the notion that in specific cases SPIs define functional regulators.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig5-v1.jpg)\n\n**Figure 5.:** (A) The Hmo1-GFP query protein encoding strain was transformed separately with 13 plasmids encoding different kinetochore proteins target proteins tagged with GBP (4 replicates each). The growth relative to controls (GBP alone and target protein alone) was assessed as in Figure 1. (B) Deletion of HMO1, SGF29, and SST2 were separately introduced into strains encoding Dad4-YFP and Mtw1-YFP at their endogenous loci. Fluorescence imaging of these strains reveals that hmo1\u2206 mutants have large-bright Dad4-YFP kinetochore foci (red arrows) and some weak foci (green arrows). sgf29\u2206 mutants contain bright Dad4-YFP foci (red arrows). In all cases, there are no effects upon Mtw1-YFP foci (right panels). Scale bars in all images are 5\u00a0\u00b5m. (C) Quantitation of the Dad4-YFP kinetochore foci fluorescence levels from these cells indicates that the levels of Dad4-YFP at kinetochores are affected by deletion of either HMO1 or SGF29. The left notched box and whiskers plot indicates the median (background subtracted) fluorescence values of kinetochore foci in relative units. The plot shows the median value (bar) and quartiles (box), the whiskers show the minimum of the range or 1.5 interquartile ranges, outlying data points are indicated as circles (note that several outlying data points are not shown as they are beyond the scale of the plot). The notches indicate the 95% confidence intervals of the medians (***indicates p-values <10\u201310 from a Wilcoxen\u2019s rank-sum test). It should be noted that the distribution of kinetochore intensities do not conform to a normal distribution, particularly for the hmo1\u2206 mutant. The right panels show the distribution of fluorescent intensities of kinetochore foci of the same data plotted to the left (note that several outlying data points are beyond the scale of the plot). These data indicate the abundance of both the low and high intensity Dad4 foci of the hmo1\u2206 mutant (green and red arrowheads in Figure 5A, respectively) (D) Mtw1 kinetochore foci fluorescence levels are plotted as in panel C, we could not detect a difference from wild type cells in all three mutants.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The histogram indicates the levels of Dad4-YFP fluorescence (relative units, r.u.) in both wild-type (blue) and hmo1\u2206 (red) cells. The plots below show the mean cellular fluorescence (wild type=972 r.u. and hmo1\u2206=1591 r.u. and the error bars indicate the standard deviation of the mean). The dashed lines indicate + and \u2013 one standard deviation of the mean of wild-type cells.\n\nFor each cellular compartment there are relatively few GFP proteins that produce SPIs with just one target protein. The query GFP proteins that produce SPIs have on average 3.8 SPIs with the 23 target proteins. However, those GFP proteins with just one SPI may be informative. For example, the histone subunits Hta2, Htb1, Htb2, and Hhf2 as well as the chromosomal proteins Bub1 and Mft1 have unique SPIs with the eisosome component Pil1. These interactions may indicate a nuclear role for Pil1, which relocalizes from the plasma membrane in response to DNA damage (Tkach et al., 2012)\u00a0and associates with histones and chromosomal proteins (Lambert et al., 2009; Akiyoshi et al., 2010). Indeed, the Pil1-histone SPIs result from Pil1 recruitment into the nucleus (Figure 2\u2014figure supplement 2).\n\nSince selected SPI query proteins are enriched for physical and genetic interactions and contain proteins involved in regulating the biology of their target, we next performed hierarchical clustering analysis in order to test whether SPI data can be used to assess functional associations between proteins (Figure 4A). We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6). It is important to note that SPIs are not a substitute for physical interaction data, but rather represent a common phenotype in response to forced association. Collectively, the clustering of protein complexes, gene ontology enrichment and physical and genetic enrichment indicate that specific target proteins show SPIs with sets of query proteins that share a common location, potentially common components of larger protein complexes. Thus, although the proteome-wide SPI data themselves do not directly give structural information, the SPI data groups query proteins within these known protein complexes.\n\nWe next asked whether the SPI data would correlate with the quaternary structure of multi-protein complexes, since protein associations with one part of a complex may give a similar growth phenotype that contrasts with a different part of that same complex. We chose the kinetochore as an example, since this is a large array of between 60 and 100 proteins that are arranged into defined sub-complexes (Biggins, 2013). We selected these proteins (and some kinetochore-associated proteins) and clustered them based upon their SPI scores from the 23 screens. We find that key sub-complexes within the kinetochore are clustered together purely based upon their 23 SPI scores (Figure 6). For example, three of the four members of the COMA complex cluster together (Ctf19, Okp1, and Mcm21) with two members of the Ctf3 complex (Mcm22 and Nkp2), and Cse4 and Chl4, which are\u00a0all part of the\u00a0constitutive centromere associated network (CCAN) of inner kinetochore proteins that bind to centromeric DNA. Three of the four MIND complex members (Dsn1, Nnf1, and Nsl1) also cluster with Spc24, Kre28 and Nuf2, which are all part of the KMN network of outer kinetochore proteins. In contrast, the DAM/DASH complex, which is composed of 10 different proteins, segregates into distinct clusters (with Dad2, 3, and 4 distinct from Dam1, Ask1, Dad1, Spc34, and Duo1). Dad2, 3 and 4 are small central domain subunits of the DAM/DASH complex that are important for structural integrity of the complex and therefore potentially sensitive to association with other proteins (consequently they have many SPIs). In contrast Dam1, Duo1, and Spc34 are key interaction hubs for the decameric complex (Shang et al., 2003) and Ask1\u2019s C-terminus plays an important role in intercomplex interactions (Ramey et al., 2011). Thus these proteins form external surfaces on the complex, which may be more tolerant of protein association. A similar correlation with the quaternary structure can be made for another large protein assembly, the nuclear pore complex (Figure 6\u2014figure supplement 1). Hence, although SPIs do not substitute for physical interaction data they indicate a common phenotype produced by specific protein-protein associations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig6-v1.jpg)\n\n**Figure 6.:** High z-scores (positive; >2) are shown in yellow and low (negative; < -1) scores in blue (as in Figure 4A). The different protein complexes within the kinetochore are color-coded as indicated in the legend. Based on the SPI data alone, key complexes within the kinetochore cluster together as indicated by the colored boxed regions of the plot.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13053/elife-13053-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The SPI data are sufficient to cluster NPC subunits and karyopherins into some of the key functional complexes, such as the Nup84 complex of the outer ring of the nuclear pore. The data also cluster Gle1 with Dbp5. Gle1 normally regulates the activity of Dbp5. z-scores of NPC and NPC-associated GFP strains in all of the SPI screens are plotted as a heat-map. High z-scores (positive; >2) in yellow and low (negative; < -1) z-scores in blue. Both the screens and the GFP-tagged genes are clustered as in Figure 4A.\n\n## Discussion\n\nThe SPI technology has allowed us to create binary protein associations throughout the cell and in many cases these interactions result in protein relocalization. However, only a small fraction of these interactions lead to a measurable growth phenotype, suggesting that cells are highly tolerant of both protein mislocalization and protein-protein associations. There are exceptions, proteins that do affect growth in almost any location. For example the ubiquitin hydrolase, Doa4 and numerous proteins involved in transport (Figure 4\u2014source data 1). Furthermore, there are proteins whose association with specific proteins causes a growth defect. We find that these SPIs are enriched for proteins that physically interact (Figure 4). Collectively the SPI data allow us to both identify regulatory proteins (Olafsson and Thorpe, 2015\u00a0and Figure 5) and provide information on quaternary structure of specific large complexes within the cell (Figure 6). These data illustrate that SPIs can be used, like physical interactions, to reveal the functional organization of the cell. However, since the readout of SPIs is phenotypic, in this case cell growth, the SPIs indicate functional interactions rather than physical interactions per se. Thus, the SPI methodology provides a powerful in vivo proteomics tool to map the mechanisms underlying spatial regulation within cells. The SPI technology may be particularly informative to define interactions that are detrimental under conditions of stress, drug treatment or other specific cellular perturbations. Many disease pathologies result, at least in part, from the mislocalization of proteins in cells (Hung and Link, 2011). Recent studies are discovering the extent to which specific drugs induce global changes in protein location (Tkach et al., 2012; Breker et al., 2013; Chong et al., 2015). Combining this cellular pharmacodynamics knowledge with SPI data opens the possibility of using drugs to induce therapeutic changes in protein localization; of the 727 SPI query proteins identified here, ~76% (549) have human homologs compared to 56% (3766) of the whole yeast genome (6604 ORFs) (YeastMine, Balakrishnan et al., 2012). This study provides the first comprehensive map of the effects of forced protein associations within cells.\n\n## Materials and methods\n\n### Yeast strains and methods\n\nAll yeast strains used in this study are listed in Table 1. W303 strains are ADE2+RAD5+ derivatives of W303 (can1-100 his3-11,15 leu2-3,112 ura3-1 unless otherwise indicated Thomas and Rothstein, 1989; Zou and Rothstein, 1997). GFP strains are all based upon BY4741 (his3\u22061 leu2\u22060 met15\u22060 ura3\u22060 Brachmann et al., 1998; Huh et al., 2003). Yeast were grown in standard growth medium including 2% (weight/volume) of the indicated carbon source (Sherman, 2002). Yeast plasmids were created using the gap-repair cloning technique, which combines a linearized plasmid with PCR products using in vivo recombination. All PCR products were generated using primers from Sigma Life Science and PfuII Ultra proof reading polymerase (Agilent Technologies, UK) or Q5 polymerase (New England Biolabs, USA). All plasmid constructs (listed in Figure 1\u2014source data 2) were validated using Sanger sequencing (Beckman Coulter Genomics, UK).\n\n**Table 1.**\n Yeast strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain name</th>\n      <th>Genetic background</th>\n      <th>Relevant genotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>W8164-2B</td>\n      <td>W303</td>\n      <td>MAT\u03b1 CEN1-16::Gal-Kl-URA3</td>\n      <td>(Zou and Rothstein, 1997)</td>\n    </tr>\n    <tr>\n      <td>GFP strains</td>\n      <td>BY4741</td>\n      <td>MATa his3\u22061 leu2\u22060 met15\u22060 ura3\u22060 XXX-GFP::HIS3</td>\n      <td>(Huh et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>PT147-7C</td>\n      <td>W303</td>\n      <td>MATa TRP1 lys2\u2206 DAD4-YFP::NAT SPC42-RFP::</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>PT12-13D</td>\n      <td>W303</td>\n      <td>MATa TRP1 MTW1-YFP hmo1\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T403</td>\n      <td>W303</td>\n      <td>MATa TRP1 lys2\u2206 DAD4-YFP::NAT SPC42-RFP::HYG hmo1\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T404</td>\n      <td>W303</td>\n      <td>MATa TRP1 lys2\u2206 DAD4-YFP::NAT SPC42-RFP::HYG sgf29\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T402</td>\n      <td>W303</td>\n      <td>MATa TRP1 lys2\u2206 DAD4-YFP::NAT SPC42-RFP::HYG sst2\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T406</td>\n      <td>W303</td>\n      <td>MATa TRP1 MTW1-YFP hmo1\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T407</td>\n      <td>W303</td>\n      <td>MATa TRP1 MTW1-YFP sgf29\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>T405</td>\n      <td>W303</td>\n      <td>MATa TRP1 MTW1-YFP sst2\u2206::KAN</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Selective ploidy ablation (SPA) screening\n\nThe SPA screening method is a mating-based approach for yeast transformation, and we followed the established protocol (Reid et al., 2011). The SPA method relies upon a universal donor strain (UDS, W8164-2B) that includes conditional centromeres on each and every chromosome. This strain is transformed with a plasmid encoding the GBP-tagged target protein (or controls) and then mated en masse with the collection of GFP strains. The resulting diploids are converted back to haploids by first destabilizing and then counter-selecting against all of the chromosomes from the UDS. The resulting colonies are then assessed for growth by measuring colony size as described below. In the first step, plasmid constructs (encoding GBP alone, target protein alone or target-GBP) were transferred into the UDS by transformation. The three resulting strains were separately mated with arrays of MATa GFP strains (Huh et al., 2003)\u00a0on YPD agar plates for 24\u2009hr. The resulting colonies were then copied to synthetic galactose medium lacking leucine to destabilize the donor chromosomes for 24\u2009hr. Finally, colonies were copied onto galactose medium lacking leucine, including the drug 5-Fluoroorotic acid (5-FOA) to counter-select against the UDS chromosomes. Plates were then grown at 30\u02daC for 48\u201372\u2009hr prior to imaging. All mating and copying of yeast colonies utilized a RoToR pinning robot (Singer Instruments, UK) with a minimum of four replicates per strain.\n\n### Quantitative analysis of high-throughput yeast growth\n\nAfter SPA screening, the resulting agar plates were scanned using a desktop flatbed scanner (Epson V750 Pro, Seiko Epson Corporation, Japan) at 300\u00a0dpi resolution in transmission mode. These images were processed and analyzed using the ScreenMill suite of software (Dittmar et al., 2010), which assesses growth based upon the two-dimensional size of the colonies. The software was run in default mode, both for the kinetochore-specific screen and for the proteome-wide screen. For retesting strains for growth defects, plate images were normalized using specific controls on the plate as a reference, rather than the default plate median. This is necessary when the majority of the strains on a plate are affected since this will influence the plate median.\n\n### Spatial smoothing algorithm\n\nColonies arrayed on agar plates often grow faster on one side of the plate than the other. This growth effect can be caused by temperature or humidity gradients within incubators, variable thickness of agar (and hence concentration of nutrients), or uneven pinning pressure during plate copying. These anomalies can result in one side of the plate producing an overall higher z-score than the other. To correct for these type of biases, algorithms adjust colony size data to reflect overall even growth across a plate (Collins et al., 2006; Baryshnikova et al., 2010). The ScreenMill suite of software used for our analysis does not contain such corrections and so we employed a simple algorithm to correct z-scores for spatial anomalies (Olafsson and Thorpe, 2015).\n\n### Fluorescence microscopy\n\nTo examine the levels and location of tagged proteins within the cells, we used epifluorescence microscopy. Log phase cells were embedded in 0.7% low melting point agarose dissolved in the appropriate growth medium. The depth of agarose between the slide and coverslip is fixed at 6\u20138\u00b5m, slightly larger than the diameter of the average yeast cell, which maintains a consistent distance from the coverslip to the cell nucleus. Cells were imaged with a Zeiss Axioimager Z2 microscope (Carl Zeiss AG, Germany), using a 63x 1.4NA oil immersion lens, illuminated using a Zeiss Colibri LED illumination system (GFP=470\u00a0nm, YFP=505\u00a0nm, and RFP=590\u00a0nm). Bright field contrast was enhanced with differential interference contrast (DIC) prisms. The resulting light was captured using either a Hamamatsu ORCA ERII CCD camera containing an ER-150 interline CCD sensor with 6.45 \u00b5m pixels, binned 2x2 (Hamamatsu Photonics, Japan) or a Hamamatsu Flash 4 Lte. CMOS camera containing a FL-400 sensor with 6.5\u00a0\u00b5m pixels, binned 2x2. The exposure times were set to ensure that pixels were not saturated and were identical between control and experimental images. All images were acquired using either Axiovision or Zen software from Zeiss. Images shown in the figures were prepared using Volocity imaging software (Perkin Elmer Inc., USA) and control and experimental images have identical linear contrast adjustments unless otherwise stated.\n\n### Fluorescence image analysis\n\nTo quantify the relative amount of RFP in cells containing GBP-RFP tags we used custom scripts for the Volocity image analysis software (Perkin Elmer Inc. USA). Briefly, red fluorescence regions were identified within the three-dimensional images based upon an intensity threshold. These regions were then dilated by a fixed amount (~600\u00a0nm) in each direction to ensure that we assay all of the red fluorescence signal. The regions were further dilated (2.4\u00a0\u00b5m) to create an outer background region, which was subtracted from each fluorescence measurement (the script is available online https://sourceforge.net/projects/berry-et-al/files/RFP_quantitation.assf/download).\n\nTo quantify the relative levels of Dad4-YFP and Mtw1-YFP kinetochore proteins within kinetochore foci, we employed a custom ImageJ script (Ledesma-Fern\u00e1ndez and Thorpe, 2015). To quantify the total cellular levels of Dad4-YFP we measured the YFP fluorescence signal from maximum projection images (from a stack of vertically separated z planes) for each cell and subtracted a mean background signal specific to each image (this script is available at https://sourceforge.net/projects/berry-et-al/files/general_cell_quan.ijm/download).\n\n### Bioinformatics analysis\n\nMichael Eisen\u2019s cluster program (version 3.0) was used to cluster the SPI data (Eisen et al., 1998). We used hierarchical centroid linkage clustering of both the GBP screens and the GFP-tagged genes. For the quaternary structure examples (Figure 6, Figure 4\u2014figure supplement 6 and Figure 6\u2014figure supplement 1) only a selected subset of the GFP strains were used for the cluster analysis. Cluster diagrams were visualized using Java Treeview (Saldanha, 2004). Gene ontology enrichment analysis was performed using the GOrilla algorithm (cbl-gorilla.cs.technicon.ac.il [Eden et al., 2009]).\n",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "d6675bf4-a45d-4f65-b378-a8075d0543e5",
+      "submission_id": "34c83bdf-dc04-43c7-86c4-b5a38ac0c496",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Randy Schekman, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\n## Review text\n\nDOI: [10.7554/eLife.13053.030](https://doi.org/10.7554/eLife.13053.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Synthetic protein interactions reveal a functional map of the cell\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Randy Schekman as the Senior and Reviewing Editor.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Stanley Fields and Nevan Krogan (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a screen using their newly developed SPI system, which allows for the creation of artificial interactions between pairs of proteins. They create binary interactions between each of the ~6,000 yeast proteins and 23 target proteins that represent the major cellular compartments. The effects of these interactions on growth are assayed by measuring colony sizes. In spite of these interactions often leading to protein relocalization, they find only a small fraction lead to a measurable growth phenotype, suggesting that the cells are tolerant of both protein movement and association. The authors highlight how their method can be used to discover new regulatory relationships and to provide structural information on large cellular complexes.\n\nThe SPI system provides an exciting complement to PPIs and genetic interactions, and the scale of the collected dataset is impressive. The manuscript is well written and for the most part the methods are clearly described. Together, the importance and quality of the work makes it suited for publication in eLife as a tool/resource. However, there are a number of important points that need to be addressed.\n\nEssential revisions:\n\n1) The analysis on a limited number (24) of GFP-fusion proteins suggests that for only roughly ~20% of time when they co-express a GFP-fusion query protein with a target protein do they see mislocalization of the GFP fusion outside of where it is normally found. But even this may be a large over estimation of the degree to which their system is causing protein mislocalization. First, they do not evaluate what fraction of the GFP-fusion is mislocalized. Second, cleavage of the GFP from the fusion protein will result in mislocalization of the GFP domain but not of the rest of the protein. Finally, they report on ~6000 individual GFP fusion proteins obtained from the library developed in Huh et al. (2003). But in that paper only ~4500 of the fusion proteins were validated and observable. Thus unless the remaining 1500 strains were made and validated separately, they are suspect. In the end because of these and other concerns, I think it is not possible evaluate from these data what fraction of the proteins tolerate being effectively mislocalized to a cellular location that is different from where it is naturally found. This limitation must be discussed and explained.\n\n2) The potentially most interesting result reported here is the detection of Synthetic Physical Interactions (SPIs), where a forced interaction does cause a growth phenotype. But it's not entirely clear that one learns all that much from these results. The one example of an SPI that they do examine in more detail in Figure 5 could easily be an indirect relationship rather than a direct molecular link (yeast null for chromatin associated proteins, hmo1 and Sgf29, show increase levels of a kinetochore protein Dad4). This would be much more compelling if the authors had data indicating some direct physical interaction (IP/mass spec) or biochemical rational for how hmo1 could regulate the kinetochore to support their claim that SPIs can identify functional regulators- this could easily be a case where hmo1 regulates transcription of Dad4 directly or indirectly. If so, please include this in the revised version or at least comment on relevant data in support of a direct and/or functional interaction.\n\n3) The clustering of complexes (Figure 6) is not that convincing. the approach seems like an awkward strategy for obtaining information that is much more effectively obtained by mass-spec. For example, the histones fall into two distinct categories and the CPC, NDC80, Spc105 and MAPs complexes don't seem to cluster at all. This seeming disparity with known interactions requires explanation.\n\n4) Results, second paragraph: \u201cwe found that 98% of GBP-GFP combinations [\u2026] do not affect the growth of cells.\u201d Do 98% not affect growth at all, or are they using a z-score threshold? If z-score, this should be clarified, as it is not necessarily the same as \"no effect on growth\".\n\n5) Results, third paragraph and Figure 2: \u201cFluorescent imaging confirmed that ~83% of interactions do occur and typically result in protein relocation [\u2026] Of the 524 GBP-GFP combinations that we could score, 435 were detectably colocalized (Figure 2C), indicating that in most cases the protein-protein fusions do occur.\u201d Figure 2C shows this and 2D breaks it down in more detail. However, ~50% of the colocalized strains belong to the \"indistinguishable\" category = proteins that normally colocalize (2D). It is misleading to include this category for estimating how often relocation/interaction occurs. Correcting for this will result in a percentage dramatically lower than 83%. Similarly, this should be clarified in the counts in the text (\"435 of 524\") and the Figure 2C legend.\n\n6) Results, fifth paragraph: \u201cAround 2% of the forced interactions restrict growth [\u2026]\u201d Specify z-score cutoff used to qualify as restriction in main text.\n\n7) Results, fifth paragraph: \u201c[\u2026]of the 727 SPI proteins [\u2026]\u201d -> of the 727 SPI query proteins.\n\n8) Results, fifth paragraph: \u201c[\u2026] whose sequestration to another compartment is lethal [\u2026]\u201d Did they show it's actually lethal or just decreases growth (i.e. sick)?\n\n9) Results, fifth paragraph: Discuss why there is a difference in suppression of interactions between the frequent and non-frequent SPI groups.\n\n10) Results, sixth paragraph and Figure 4B: It's here stated that target proteins from the same cellular compartment give similar SPIs. While the figure and analysis are suggestive of this, it would be better to carry out a statistical test to corroborate the statement. E.g. Box plots of the distributions of SPIs from same vs. different compartments, accompanied by a Wilcoxon rank-sum test to determine significance.\n\n11) Results, seventh paragraph and Figure 4C: The authors are comparing two distributions of PPI counts (SPI vs. non-SPI) and compute a p-value for the difference using Spearman's rank correlation. I doubt Spearman's rank correlation can be used to produce a p-value for the difference between two distributions. Additionally, the stated p-value (2.2E-16) appears extremely optimistic given the large overlap of the box plots.\n\n12) Results, seventh paragraph and Figure 4D: The CLIK analysis should be described better.\n\n13) Results, eighth paragraph: Describe or reference the gene ontology enrichment analysis.\n\n14) Results, eighth paragraph: Was fluorescently tagged Nuf2 examined in these cells as well? How is Nuf2 affected?\n\n15) Figure 5A: Explain why Mtw1 was chosen.\n\n16) Figure 5B and 5C: Describe in much more detail how to interpret these plots. Also, what are the error bars? Finally, is the p-value (E-10) really correct? Depending on what the error bars represent this looks low.\n\n17) Results, last paragraph: \u201c[\u2026] SPI data can be used to predict protein complexes [\u2026]\u201d Substantiate this claim. Show if the SPI data actually have predictive power with a ROC or precision recall curve.\n\n18) Results, last paragraph: Try to interpret why the DAM/DASH complex segregates into distinct clusters.\n\n19) Discussion: I suggest explicitly writing \"physical interactions\" instead of \"interactions\" to not confuse with SPIs.\n\n20) Discussion: \u201c[\u2026] and derive quaternary structure [\u2026]\u201d \u2018provide information on\u2019 would be more appropriate than \u2018derive\u2019.\n\n21) Discussion: \u201c[\u2026] 54% (394) are conserved in human cells.\u201d May be worth discussing how this compare to the conservation of the complete yeast genome to human?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Synthetic protein interactions reveal a functional map of the cell\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Randy Schekman as the Senior and Reviewing Editor. Stanley Fields and Nevan Krogan have agreed to share their identity. There remains one concern with the language in your Abstract. Please adjust this according to the suggestion of reviewer #1.\n\nReviewer #1:\n\nThe authors have largely addressed the concerns I raised and put in appropriate caveats in their revised manuscript. I am still concerned that their Abstract is misleading in claiming to establish that proteins have an \"unanticipated tolerance for forced protein associations and consequently their relocation\". I think it is likely that in many, perhaps the large majority, of the cases where apparent relocation of a protein does not disrupt function has to do with at least partial retention of the protein in its correct locations. It would indeed be quite surprising if most nuclear proteins could function in the cytosol or most organellar localized proteins could function outside of their native organelle. I do not think this is what the authors intend to say (and certainly is not what they have shown) but I could easily see how a casual reader of the Abstract could be left with this impression.\n\nReviewer #2:\n\nI find the revised version acceptable.\n\nReviewer #3:\n\nI am happy with the revisions and support publication.\n",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a02c68c1-4c99-46ba-98e0-12ceb973bf34",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C1",
+      "claim": "The SPI system uses a GFP-binding protein (GBP) derived from an alpaca antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "The SPI system uses a GFP-binding protein (GBP) derived from an alpaca antibody (Rothbauer et al., 2006), which when fused to a target protein of interest creates binary associations in vivo with GFP-tagged proteins (Rothbauer et al., 2006; Rothbauer et al., 2008; Grallert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to prior work (Rothbauer et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "78c6a969-0bc8-47f0-b160-f8e9fb04a37d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C2",
+      "claim": "GBP fused to a target protein creates binary associations in vivo with GFP-tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The SPI system uses a GFP-binding protein (GBP) derived from an alpaca antibody (Rothbauer et al., 2006), which when fused to a target protein of interest creates binary associations in vivo with GFP-tagged proteins (Rothbauer et al., 2006; Rothbauer et al., 2008; Grallert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by multiple citations (Rothbauer et al., 2006; Rothbauer et al., 2008; Grallert et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "a30624e2-4c28-4c33-b69a-f4cb83e80f01",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C3",
+      "claim": "23 different target proteins representing 18 major cellular compartments were chosen for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose 23 different target proteins that represent 18 of the major cellular compartments (Figure 1A and Figure 1\u2014source data 1), such as the nucleus (Pus1 and Rad52), the cell membrane (Psr1), and the endoplasmic reticulum (Sec63).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and references Figure 1A and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "d3e253d7-f5ec-4511-b36a-6e4a912cca33",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C4",
+      "claim": "98% of GBP\u2013GFP combinations (129,098 out of 131,882) do not affect the growth of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected that many of the forced associations would disrupt cellular homeostasis, but unexpectedly, we found that 98% of GBP\u2013GFP combinations (129,098 out of 131,882) do not affect the growth of cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numerical data and references Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "baf67640-50dd-44ad-b9f9-f1ace1532fb1",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C5",
+      "claim": "Cells are surprisingly permissive for most protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that cells are surprisingly permissive for most protein-protein interactions and as a corollary that cells are broadly tolerant of proteins being relocated within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the data showing that 98% of combinations do not affect growth.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "3cae3f45-8964-40ca-b2e2-ca4d0b6aa70a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C6",
+      "claim": "Cells are broadly tolerant of proteins being relocated within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that cells are surprisingly permissive for most protein-protein interactions and as a corollary that cells are broadly tolerant of proteins being relocated within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the observation that most forced protein associations do not affect growth.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "acc99ee4-1fe2-40e8-88ba-1d4df5842a9f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C7",
+      "claim": "Approximately 72% of interactions result in detectable protein colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where fluorescent imaging was able to detect protein relocalization, we confirmed that ~72% of interactions do occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and based on microscopy data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1d9322bb-d164-4607-91d4-f1db8e880bd5",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C8",
+      "claim": "552 GBP-GFP combinations were examined using live cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined 552 GBP-GFP combinations - each of the 23 GBP-tagged target proteins separately combined with a random selection of 24 GFP-tagged query proteins - using live cell imaging (Figure 2\u2014source data 1, for examples see Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated with specific numbers and references to figures and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "596d218e-0046-483b-999e-8f17ce470520",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C9",
+      "claim": "Of 314 GBP-GFP combinations where proteins were not already in the same compartment, 225 were detectably colocalized.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 524 GBP-GFP combinations that we could score, 210 (40%) are already in the same compartment and so we cannot determine whether GFP and GBP associate, of the remaining 314, 225 were detectably colocalized (Figure 2C), indicating that in the majority of cases the protein-protein associations do occur (Figure 2, Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numerical data and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "daf43865-26e6-4186-924a-bca203ae6e7f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C10",
+      "claim": "Most synthetic protein-protein interactions do not cause a growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are therefore consistent with the notion that most synthetic protein-protein interactions do not cause a growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the colocalization data and growth data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "2656cec7-f096-4d62-8d19-c30245912dc8",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C11",
+      "claim": "There are roughly equal instances of the GBP protein recruiting the GFP protein as the reverse.",
+      "claim_type": "EXPLICIT",
+      "source": "The image data support this notion; where it is possible to distinguish the location of two proteins in the cell, we observed that there are roughly equal instances of the GBP protein recruiting the GFP protein as the reverse (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of microscopy images showing direction of protein movement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "bc944435-7ad9-4d8d-b50c-f2bbd67d8c68",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C12",
+      "claim": "Structural components more often recruit proteins to their location than enzymes that are not anchored to a specific location.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this generalization is not true for some classes/types of proteins. When we look at individual GBP or GFP proteins, we find that structural components more often recruit proteins to their location than enzymes that are not anchored to a specific location (Figure 3, Figure 3\u2014figure supplement 1 and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of microscopy data showing differential recruitment patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "86ab4dd5-18dd-4e7f-a881-a1522667018b",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C13",
+      "claim": "Constitutive recruitment of a nucleosome remodeler to chromatin results in Hta2-GBP no longer being restricted to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of the latter is the recruitment of the nucleosome remodeling protein, Spt6, to the histone subunit Hta2. Constitutive recruitment of a nucleosome remodeler to the chromatin might be expected to give a phenotype and indeed we find that the histone subunit Hta2-GBP is strikingly no longer restricted to the nucleus (Figure 2E) concomitant with a strong growth defect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by microscopy data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "dcea136a-d309-4635-ad92-d6bcd73be5e8",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C14",
+      "claim": "The Hta2-Spt6 interaction results in a strong growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutive recruitment of a nucleosome remodeler to the chromatin might be expected to give a phenotype and indeed we find that the histone subunit Hta2-GBP is strikingly no longer restricted to the nucleus (Figure 2E) concomitant with a strong growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and based on growth measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "adf578f6-a17f-413b-891e-0b9c9f1f5579",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C15",
+      "claim": "Around 2% of the forced interactions restrict growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 2% of the forced interactions restrict growth (Figure 1C, 4A and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with reference to figures showing growth data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8b16cb36-9472-4733-9358-344215962538",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C16",
+      "claim": "Approximately 3% of interactions with validated GFP strains restrict growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that of the 6000 GFP-tagged proteins used in this study, only ~4000 have been validated and are clearly observable (Huh et al., 2003). We therefore reanalyzed the proteome-wide data using only 3905 GFP strains with unambiguous fluorescence signal (Tkach et al., 2012) and find that ~3% restrict growth (Figure 4\u2014source data 1), consistent with the notion that most protein-protein associations do not restrict growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reanalysis of data using only validated GFP strains, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "75f38750-8ea4-43ec-9861-cab14c90b02a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C17",
+      "claim": "2784 SPIs were confirmed in total produced by 727 GFP-tagged query proteins with one or more of the 23 target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we confirmed 2784 SPIs in total produced by 727 GFP-tagged query proteins with one or more of the 23 target proteins (Figure 4\u2014figure supplement 2 and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "74eae2cd-1c4d-429a-9c68-4dcfff533599",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C18",
+      "claim": "75 GFP query proteins produce SPIs with at least 10 of the 23 GBP-tagged target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examine all the 727 SPI query proteins collectively (Figure 4A), we find that 75 GFP query proteins produce SPIs with at least 10 of our 23 GBP-tagged target proteins (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "17bdae97-f344-4873-a3b2-1ec8ce7adc1e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C19",
+      "claim": "Frequent SPI query proteins are on average of lower abundance than less frequent SPI query proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with statistical data and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "29404845-d568-4324-ae1a-14ccbb45228d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C20",
+      "claim": "Frequent SPI query proteins are enriched for essential genes (approximately 83%).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "26ddc31d-c5fd-4606-baaf-27a831df101f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C21",
+      "claim": "Frequent SPI query proteins are enriched for proteins involved in RNA metabolism (p-value = 9.26x10-5).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific p-value indicating statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "2bea2290-b9f7-4dd9-956c-810fcc012367",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C22",
+      "claim": "Frequent SPI query proteins are enriched for proteins involved in mRNA polyadenylation (p-value = 1.63x10-9).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific p-value indicating statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b4c0e8c4-9ed0-46ee-9028-c2c9202a2693",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C23",
+      "claim": "Frequent SPI query proteins are enriched for proteins involved in cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific p-values indicating statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "fc25e705-6e0a-4941-bfa5-75dc072154a9",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C24",
+      "claim": "Frequent SPI query proteins are enriched for proteins involved in microtubule nucleation (p-value = 5.09x10-8).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific p-value indicating statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "53d2bf88-1782-4a1c-b060-43a5954f1ef9",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C25",
+      "claim": "Frequent SPI query proteins are enriched for spindle pole body proteins (p-value = 3.22x10-8).",
+      "claim_type": "EXPLICIT",
+      "source": "These 'frequent SPI query proteins' are on average of lower abundance than less frequent SPI query proteins (Figure 4\u2014figure supplement 2B,C), also they are enriched for essential genes (\u224883%) and for proteins whose gene ontology (GO) terms include RNA metabolism (p-value = 9.26x10-5), mRNA polyadenylation (p-value = 1.63x10-9), cytoplasmic and nuclear transport (p-values = 1.14x10-8 and 1.69x10-7, respectively), microtubule nucleation (p-value = 5.09x10-8), and spindle pole body (p-value = 3.22x10-8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific p-value indicating statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e5c67c48-c0cb-46d0-b166-e6b51fb98eb3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C26",
+      "claim": "All 41 frequent SPIs from the Nuf2 screen are suppressed in heterozygous diploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our expectation all 41 frequent SPIs are suppressed in heterozygous diploid cells, whereas 15% (6 out of 40) SPIs in the non-frequent group were reproduced in diploid cells (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and references to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8d80472c-d22f-4b94-b5ed-1502bfe7d7ec",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C27",
+      "claim": "15% (6 out of 40) of non-frequent SPIs from the Nuf2 screen were reproduced in diploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our expectation all 41 frequent SPIs are suppressed in heterozygous diploid cells, whereas 15% (6 out of 40) SPIs in the non-frequent group were reproduced in diploid cells (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and references to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c86430a3-9de4-473c-9540-1d644a479bcb",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C28",
+      "claim": "Frequent SPI query proteins are predominantly those whose essential function is location-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that these frequent SPI query proteins are predominantly those whose essential function is location-dependent and whose sequestration to another compartment results in a growth defect (as is routinely achieved using other systems Haruki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the diploid suppression data, with a citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "371dc9af-ca5f-4c1f-ab7b-f86741b24fc3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C29",
+      "claim": "SPI screens using target proteins from the same cellular compartment give similar SPIs in specific cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Spearman's correlation coefficient analysis (Lubbock et al., 2013) indicates that, in specific cases, SPI screens using target proteins from the same cellular compartment give similar SPIs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with reference to statistical analysis and a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "110680b8-b8f9-4661-95cd-f7c97331a3ad",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C30",
+      "claim": "The Pus1 and Rad52 target proteins, which are both in the nucleus, produce SPIs with a similar set of query GFP proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Pus1 and Rad52 target proteins, which are both in the nucleus, produce SPIs with a similar set of query GFP proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as an example of similar SPIs from the same compartment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e349f70d-fe81-4595-8cae-56a8881654c9",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C31",
+      "claim": "SPIs between query and target proteins that normally localize to the same cellular compartment are enriched (10.4% of confirmed SPIs vs. expected 7.1%, p-value = 1.8x10-9).",
+      "claim_type": "EXPLICIT",
+      "source": "SPIs between query and target proteins that normally localize to the same cellular compartment are enriched (10.4% of our confirmed SPIs are with target and query proteins from the same compartment, versus an expected value of 7.1% for the full dataset, p-value = 1.8x10-9, Fisher's Exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific percentages and statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "5cff4248-f0d6-46dc-adf8-1b61f4fb75d3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C32",
+      "claim": "SPIs with the nucleolar protein Nop10 are enriched for nucleolar components (21 out of 115, p-value = 1.8x10-8).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this notion is true in specific cases, particularly for nuclear proteins. For example, SPIs with a nucleolar protein, Nop10, are enriched for nucleolar components (21 out of 115, p-value = 1.8x10-8, Fisher's exact test) or SPIs with the microtubule-associated kinetochore component Nuf2, which are enriched for microtubule components (described below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8ee6c3ff-d40b-42a6-9e2f-4c2a2345ddde",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C33",
+      "claim": "SPIs produced by proteins in different compartments tend to give a greater growth defect than those from the same compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that although there are more SPIs between proteins in the same compartment, SPIs produced by proteins in different compartments tend to give a greater growth defect (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and references Figure 4C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "f694cf4c-5262-4137-8986-0574bea9883f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C34",
+      "claim": "SPI query proteins are enriched for characterized physical interactions compared with non-SPIs (p<2.2 x 10\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we find that SPI query proteins are enriched for characterized physical interactions, compared with non-SPIs (p<2.2 x 10\u201316, Wilcoxon's rank-sum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with a specific p-value from a statistical test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c75b7dda-cca8-4e58-abd0-04f07a740e07",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C35",
+      "claim": "Most SPI screens have a strong enrichment for genetic and physical interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most SPI screens have a strong enrichment for genetic and physical interactions indicating that the strongest SPIs share interactions (Figure 4E and Figure 4\u2014figure supplement 5), which is a predictor of common function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and references figures showing CLIK analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1a3da781-579e-4765-a449-194d1ebb388c",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C36",
+      "claim": "SPIs for the DNA repair protein Rad52 are enriched for components of the nuclear pore (p-value = 7x10-9).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SPIs for the DNA repair protein Rad52 are enriched for components of the nuclear pore (Ndc1, Nic96, Nup1, Nup85, Nup49, Nup57, Nup84, Nup145, and Nup192; p-value = 7x10-9), specifically the Nup84 complex, which functions in specialized types of DNA repair (Nagai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific protein names, p-value, and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b332024c-cb06-45d8-9a14-19458e1363b3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C37",
+      "claim": "SPIs for the kinetochore protein Nuf2 are enriched for proteins involved in microtubule organization (p-value = 8x10-13).",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the kinetochore protein Nuf2, whose SPIs are enriched for proteins involved in microtubule organization (Ark35, Bir1, Cbf2, Cdc14, Ctf19, Dad2, Dad4, Dsn1, Ipl1, Kip1, Kip3, Okp1, Spc24, Spc29, Spc42, Spc105, Spc110, Stu1, and Tub4; p-value = 8x10-13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific protein names and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "538e26a8-0812-4c17-ba0b-4bb918a17c9e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C38",
+      "claim": "Nuf2 is an outer kinetochore protein whose calponin-homology domain directs microtubule binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuf2 is an outer kinetochore protein whose calponin-homology domain directs microtubule binding (Wei et al., 2007; Ciferri et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "124dac13-ce82-4a8d-b55f-dc6224b12cde",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C39",
+      "claim": "Hmo1, Sgf29, and Sst2 all gave a strong SPI phenotype with the kinetochore protein Nuf2.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmo1, Sgf29 (both chromatin-associated proteins) and Sst2 (a GTPase activating protein) all gave a strong SPI phenotype with the kinetochore protein Nuf2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on SPI screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b2cf97d7-4a74-4599-8fc5-a5e287773a08",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C40",
+      "claim": "Only hmo1\u2206 gives a chromosomal instability phenotype among Hmo1, Sgf29, and Sst2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these mutants, hmo1\u2206, gives a chromosomal instability phenotype (Stirling et al., 2011) and none have a reported role in kinetochore function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "58984f36-3fa1-4e86-8c38-371667c9ba29",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C41",
+      "claim": "Hmo1, Sgf29, and Sst2 have no reported role in kinetochore function.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these mutants, hmo1\u2206, gives a chromosomal instability phenotype (Stirling et al., 2011) and none have a reported role in kinetochore function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8107a161-6f41-4be2-a0ca-9101a74f355a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C42",
+      "claim": "Hmo1 has SPIs with Nuf2, Mif2, and Ctf19, but not with Kre28, Mtw1, Dad2, Ctf3, Chl4, Skp1, Cnn1, or Cbf1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in addition to Nuf2, Hmo1 has SPIs with Mif2 and Ctf19, but not Kre28, Mtw1, Dad2, Ctf3, Chl4, Skp1, Cnn1, or Cbf1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with specific protein names and references Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c66afcca-21dd-4f06-b918-1213151b556c",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C43",
+      "claim": "The Hmo1 SPI is specific to central/outer kinetochore components.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the Hmo1 SPI is specific to central/outer kinetochore components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the specific pattern of SPIs observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "2ff8a6dd-6d22-4d58-a5e8-69bba6069561",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C44",
+      "claim": "hmo1\u2206 and sgf29\u2206 cells have elevated levels of Dad4 outer kinetochore protein associated with their centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that hmo1\u2206 and, to a lesser extent, sgf29\u2206 cells both have elevated levels of Dad4 outer kinetochore protein associated with their centromeres, although the levels of Mtw1 were unaffected (Figure 5B,C and 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by fluorescence microscopy data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "91f616a4-51e9-4937-83b2-411b94313e29",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C45",
+      "claim": "The levels of Mtw1 were unaffected in hmo1\u2206 and sgf29\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that hmo1\u2206 and, to a lesser extent, sgf29\u2206 cells both have elevated levels of Dad4 outer kinetochore protein associated with their centromeres, although the levels of Mtw1 were unaffected (Figure 5B,C and 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by fluorescence microscopy data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8c3f4af6-048d-4f66-825a-0bd98b4de725",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C46",
+      "claim": "Approximately one third of hmo1\u2206 cells have higher levels of Dad4 than those found in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the hmo1\u2206 mutant was affecting Dad4 protein levels we quantified total cellular Dad4-YFP fluorescence in wild-type and mutant cells and find approximately one third of hmo1\u2206 cells have higher levels of Dad4 than those found in wild-type cells (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b9096aee-dbb5-4ff9-a621-8abcf7e56f57",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C47",
+      "claim": "Nearly half of the hmo1\u2206 cells have Dad4 levels in the wild-type range.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly half of the hmo1\u2206 cells have Dad4 levels in the wild-type range (+/- one standard deviation of the wild-type mean); hence cellular Dad4 protein levels are not sufficient to explain the aberrant Dad4 foci seen in most hmo1\u2206 cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and based on quantitative fluorescence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "3b0418f1-96ad-4687-8ad9-d8ceec32d24d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C48",
+      "claim": "Cellular Dad4 protein levels are not sufficient to explain the aberrant Dad4 foci seen in most hmo1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly half of the hmo1\u2206 cells have Dad4 levels in the wild-type range (+/- one standard deviation of the wild-type mean); hence cellular Dad4 protein levels are not sufficient to explain the aberrant Dad4 foci seen in most hmo1\u2206 cells (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from comparing total cellular Dad4 levels with kinetochore foci intensity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "830b9671-e17f-42fe-ae20-a61e22078a3b",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C49",
+      "claim": "Hmo1 is associated with purified kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has previously been shown that Hmo1 is associated with purified kinetochores (Akiyoshi et al., 2010), consistent with a direct role at the kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "53d9db9d-f9c4-425a-8392-07b7c3347dec",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C50",
+      "claim": "Hmo1 stimulates the activity of the SWI/SNF chromatin remodeling complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Hmo1 stimulates the activity of the SWI/SNF chromatin remodeling complex (Hepp et al., 2014) and therefore may affect expression of the DAD4 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "75a8cf71-c140-4ed6-9692-bd9510369ca8",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C51",
+      "claim": "In specific cases SPIs define functional regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the notion that in specific cases SPIs define functional regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the Hmo1/Sgf29 kinetochore data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "3fb63a09-7bf9-4627-adcd-67e9d8b4684f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C52",
+      "claim": "The histone subunits Hta2, Htb1, Htb2, and Hhf2 as well as the chromosomal proteins Bub1 and Mft1 have unique SPIs with the eisosome component Pil1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the histone subunits Hta2, Htb1, Htb2, and Hhf2 as well as the chromosomal proteins Bub1 and Mft1 have unique SPIs with the eisosome component Pil1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on SPI data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1ed6085c-be2c-4b86-89da-85e9e87c18fb",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C53",
+      "claim": "Pil1 relocalizes from the plasma membrane in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions may indicate a nuclear role for Pil1, which relocalizes from the plasma membrane in response to DNA damage (Tkach et al., 2012) and associates with histones and chromosomal proteins (Lambert et al., 2009; Akiyoshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e32181f3-4769-471d-a0df-378a443241c1",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C54",
+      "claim": "Pil1 associates with histones and chromosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions may indicate a nuclear role for Pil1, which relocalizes from the plasma membrane in response to DNA damage (Tkach et al., 2012) and associates with histones and chromosomal proteins (Lambert et al., 2009; Akiyoshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "44361fc2-56f0-4884-a67a-6c6b567aa42f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C55",
+      "claim": "The Pil1-histone SPIs result from Pil1 recruitment into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Pil1-histone SPIs result from Pil1 recruitment into the nucleus (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by microscopy data in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "29c439f5-61ca-45ad-9ae6-26fd55653b0b",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C56",
+      "claim": "Query proteins from specific large functional complexes cluster together in hierarchical clustering analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "a4f6689f-bb69-41b8-9203-efc4e6494f98",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C57",
+      "claim": "The mediator complex clusters together in SPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "5e0d2999-eb2c-41b0-8e0e-7e2c36ac4c94",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C58",
+      "claim": "Members of the COP1 coatomer cluster together in SPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e8e5327a-ab7f-40e9-a38e-2ed5b576a40d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C59",
+      "claim": "The outer ring of the nuclear pore clusters together in SPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e4844856-5e96-4584-99ae-320bfee2d118",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C60",
+      "claim": "The signal recognition particle clusters together in SPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "546f2889-27db-4815-af58-593c247fc40f",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C61",
+      "claim": "The TRAMP complex clusters together in SPI data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that query proteins from specific large functional complexes cluster together, for example, the mediator complex, which is involved in activating transcription, clusters together as do members of the COP1 coatomer, the outer ring of the nuclear pore, the signal recognition particle and TRAMP complex (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "943f1a3f-c75d-4b4c-beb7-b127b11aa551",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C62",
+      "claim": "SPIs are not a substitute for physical interaction data.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that SPIs are not a substitute for physical interaction data, but rather represent a common phenotype in response to forced association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as an interpretation of what SPIs represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "599da83b-441f-4a8b-b531-580caa9d4f52",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C63",
+      "claim": "SPIs represent a common phenotype in response to forced association.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that SPIs are not a substitute for physical interaction data, but rather represent a common phenotype in response to forced association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a definition of what SPIs represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c8de1df5-e86e-4ea8-9fbd-fbd371191e12",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C64",
+      "claim": "Key sub-complexes within the kinetochore are clustered together purely based upon their 23 SPI scores.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that key sub-complexes within the kinetochore are clustered together purely based upon their 23 SPI scores (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "eae48464-126e-42c8-8372-40a6f5207b6c",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C65",
+      "claim": "Three of the four members of the COMA complex cluster together (Ctf19, Okp1, and Mcm21).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, three of the four members of the COMA complex cluster together (Ctf19, Okp1, and Mcm21) with two members of the Ctf3 complex (Mcm22 and Nkp2), and Cse4 and Chl4, which are all part of the constitutive centromere associated network (CCAN) of inner kinetochore proteins that bind to centromeric DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on clustering analysis of kinetochore proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "bdaf8970-bda9-451c-9a73-74226e9c26a3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C66",
+      "claim": "Three of the four MIND complex members (Dsn1, Nnf1, and Nsl1) cluster with Spc24, Kre28 and Nuf2.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the four MIND complex members (Dsn1, Nnf1, and Nsl1) also cluster with Spc24, Kre28 and Nuf2, which are all part of the KMN network of outer kinetochore proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on clustering analysis of kinetochore proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "ef57f9ad-d849-46f9-a279-916832f519fe",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C67",
+      "claim": "The DAM/DASH complex segregates into distinct clusters with Dad2, 3, and 4 distinct from Dam1, Ask1, Dad1, Spc34, and Duo1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DAM/DASH complex, which is composed of 10 different proteins, segregates into distinct clusters (with Dad2, 3, and 4 distinct from Dam1, Ask1, Dad1, Spc34, and Duo1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on clustering analysis of kinetochore proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1a499d14-c5e6-44eb-bb31-3df8456a701e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C68",
+      "claim": "Dad2, 3 and 4 are small central domain subunits of the DAM/DASH complex that are important for structural integrity of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Dad2, 3 and 4 are small central domain subunits of the DAM/DASH complex that are important for structural integrity of the complex and therefore potentially sensitive to association with other proteins (consequently they have many SPIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated based on known structural information about the DAM/DASH complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "4c5aed35-e40b-43a4-aeda-24d3dfdc4a2a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C69",
+      "claim": "Dam1, Duo1, and Spc34 are key interaction hubs for the decameric DAM/DASH complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast Dam1, Duo1, and Spc34 are key interaction hubs for the decameric complex (Shang et al., 2003) and Ask1's C-terminus plays an important role in intercomplex interactions (Ramey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "179fac73-560f-4b05-b33d-39c245f33f35",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C70",
+      "claim": "Ask1's C-terminus plays an important role in intercomplex interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast Dam1, Duo1, and Spc34 are key interaction hubs for the decameric complex (Shang et al., 2003) and Ask1's C-terminus plays an important role in intercomplex interactions (Ramey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8ecd7b63-1927-443e-b4fc-f2f72f0f1022",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C71",
+      "claim": "SPI data correlate with the quaternary structure of the nuclear pore complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar correlation with the quaternary structure can be made for another large protein assembly, the nuclear pore complex (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "8e9d0d06-489d-46ae-929c-4f7857c0cc1a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C72",
+      "claim": "SPIs indicate a common phenotype produced by specific protein-protein associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, although SPIs do not substitute for physical interaction data they indicate a common phenotype produced by specific protein-protein associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion about what SPIs represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "502104cd-fc81-4b68-82cf-809db1288862",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C73",
+      "claim": "Cells have a remarkable and unanticipated tolerance for forced protein associations.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis reveals that cells have a remarkable and unanticipated tolerance for forced protein associations, even if these associations lead to a proportion of the protein moving compartments within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "0cd40b5d-0ade-41ae-b4d1-5ed0b7da0769",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C74",
+      "claim": "Cells are tolerant of forced protein associations even if these associations lead to a proportion of the protein moving compartments within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis reveals that cells have a remarkable and unanticipated tolerance for forced protein associations, even if these associations lead to a proportion of the protein moving compartments within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "21d10298-bc67-4c31-8723-1c86caf7e2ca",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C75",
+      "claim": "The interactions that perturb growth provide a functional map of spatial protein regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interactions that do perturb growth provide a functional map of spatial protein regulation, identifying key regulatory complexes for the normal homeostasis of eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "0e303ea5-3363-4c85-b23b-d723fea0613b",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C76",
+      "claim": "SPIs identify key regulatory complexes for the normal homeostasis of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interactions that do perturb growth provide a functional map of spatial protein regulation, identifying key regulatory complexes for the normal homeostasis of eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1d6a1a00-bb04-46ed-b734-3934a566b440",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C77",
+      "claim": "Post-translational protein modifications such as phosphorylation or ubiquitylation often alter the affinity of one protein for other proteins or cellular components, which drive their movement within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-translational protein modifications such as phosphorylation or ubiquitylation often alter the affinity of one protein for other proteins or cellular components, which drive their movement within the cell (Scott and Pawson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c5f6c66f-b62a-4ab3-bda6-ee4e00b0c35c",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C78",
+      "claim": "Protein relocalization is critical for many cellular processes, including the asymmetric division of adult stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein relocalization is critical for many cellular processes, including the asymmetric division of adult stem cells, which underlies metazoan development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "4b78221a-606c-434e-bca8-66a4fca16b7c",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C79",
+      "claim": "Diseases ranging from cystic fibrosis to cancer result, in part, from protein mislocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of protein localization is also highlighted by diseases ranging from cystic fibrosis to cancer that result, in part, from protein mislocalization (Hung and Link, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "ea5efb11-841f-4094-b971-cd0899b9e4cb",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C80",
+      "claim": "The evolution of new modes of protein regulation requires new associations to form.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of new modes of protein regulation requires new associations to form, but currently we do not know how tolerant the cell is of novel protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a premise for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "370ece6a-da4e-4ad8-ad84-876bda61c549",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C81",
+      "claim": "SPIs are enriched for functional regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The SPIs are enriched for functional regulators, indicating that constitutive colocalization of a regulator with its target causes a growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "d2b1208c-3b47-4f86-86d3-cde3754a4ad0",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C82",
+      "claim": "Constitutive colocalization of a regulator with its target causes a growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "The SPIs are enriched for functional regulators, indicating that constitutive colocalization of a regulator with its target causes a growth defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the enrichment of functional regulators in SPIs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1b881088-4b01-4a8d-a97f-7c1a886a8b6e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C83",
+      "claim": "SPIs can be used to identify novel regulatory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We are able to use SPIs to identify novel regulatory proteins; for example, we examine SPIs between the kinetochore protein Nuf2 and both Hmo1 and Sgf29 and find that these two proteins are required to regulate the levels of outer kinetochore proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by experimental data on Hmo1 and Sgf29.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "f20bf640-8210-4b47-b379-5b9b2266f44e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C84",
+      "claim": "Hmo1 and Sgf29 are required to regulate the levels of outer kinetochore proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We are able to use SPIs to identify novel regulatory proteins; for example, we examine SPIs between the kinetochore protein Nuf2 and both Hmo1 and Sgf29 and find that these two proteins are required to regulate the levels of outer kinetochore proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by experimental data showing altered Dad4 levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "146cd9e3-24f8-46c9-9211-e442bc5fd23e",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C85",
+      "claim": "The SPIs correlate with the quaternary structure of large protein complexes such as the kinetochore or nuclear pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the SPIs correlate with the quaternary structure of large protein complexes such as the kinetochore or nuclear pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by clustering analysis of kinetochore and nuclear pore proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "683df0b2-2ed3-46ca-b96d-fb8c864c8695",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C86",
+      "claim": "The SPIs provide a powerful tool to complement existing physical and genetic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the SPIs provide a powerful tool to complement existing physical and genetic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion about the utility of SPIs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "7e59f8a3-5880-41ea-9371-b0b77f15ac9b",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C87",
+      "claim": "The Selective Ploidy Ablation technique was used to introduce a plasmid encoding the GBP-target protein into the collection of ~6000 GFP strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Selective Ploidy Ablation technique (Reid et al., 2011) to introduce a plasmid encoding the GBP-target protein into the collection of ~6000 GFP strains, each of which has a chromosomally integrated GFP introduced at the 3' end of a specific open-reading frame (Huh et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to prior methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e35494a8-7d1d-41a2-bea9-4693003dba20",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C88",
+      "claim": "Two independent controls were used: one encoding the GBP alone, and one encoding the target protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two independent controls, which were separately transferred into the GFP collection. The first control encodes the GBP alone, and the second encodes the target protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as part of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e2e5a95c-e38a-43f7-b36f-3d4c0ad79f74",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C89",
+      "claim": "The two controls control for the effects of binding a protein to the GFP tag and for the ectopic expression of the target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "These two constructs control both for the effects of binding a protein to the GFP tag and also for the ectopic expression of the target gene in each GFP strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as the rationale for the control design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "2a3ca754-171f-4b7d-afd2-220a6c9b3e8a",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C90",
+      "claim": "The two controls gave equivalent results.",
+      "claim_type": "EXPLICIT",
+      "source": "The two controls gave equivalent results (Figure 1\u2014figure supplement 1 and as previously reported Olafsson and Thorpe, 2015) and consequently an average growth score was used.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by figure data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "aa6f670d-d6ad-4389-a3f8-82fdce4711ad",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C91",
+      "claim": "Most protein-protein interactions are benign to the normal growth of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that most protein-protein interactions are benign to the normal growth of cells, but that specific interactions do perturb growth - these interactions are termed Synthetic Physical Interactions or SPIs (Olafsson and Thorpe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a main finding and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "f3d430c1-2986-48d9-9ca2-58f625081909",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C92",
+      "claim": "Specific interactions that perturb growth are termed Synthetic Physical Interactions or SPIs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that most protein-protein interactions are benign to the normal growth of cells, but that specific interactions do perturb growth - these interactions are termed Synthetic Physical Interactions or SPIs (Olafsson and Thorpe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a definition and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "779eba99-604d-4a85-9356-ec614b74184d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C93",
+      "claim": "The SPI methodology provides a powerful in vivo proteomics tool to map the mechanisms underlying spatial regulation within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the SPI methodology provides a powerful in vivo proteomics tool to map the mechanisms underlying spatial regulation within cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion about the utility of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e3989b3f-cfaa-481f-9d75-93e175887677",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C94",
+      "claim": "Approximately 76% (549) of the 727 SPI query proteins have human homologs compared to 56% (3766) of the whole yeast genome.",
+      "claim_type": "EXPLICIT",
+      "source": "of the 727 SPI query proteins identified here, ~76% (549) have human homologs compared to 56% (3766) of the whole yeast genome (6604 ORFs) (YeastMine, Balakrishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with specific numbers and citation to database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "df096bde-1768-43ee-91ce-94955965bd50",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "claim_id": "C95",
+      "claim": "This study provides the first comprehensive map of the effects of forced protein associations within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides the first comprehensive map of the effects of forced protein associations within cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary of the study's contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f888f919-a534-4c4d-8622-4d4f7bff8d55",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employs a GFP-binding protein (GBP) system derived from alpaca antibodies to create binary protein associations in vivo across the yeast proteome using the Selective Ploidy Ablation technique.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C87 describe the methodological foundation of the study. The GBP system is well-established in prior literature (C1, C2 with multiple citations), and the SPA technique is appropriately cited (C87). These are methodological claims supported by established prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "24bf83e2-d36a-4061-bf65-f922e121c0bb",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The experimental design includes 23 target proteins representing 18 cellular compartments, with two independent controls (GBP alone and target protein alone) that gave equivalent results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C88, C89, and C90 describe the experimental design. The selection of 23 target proteins is explicitly stated with figure references (C3), the control design is clearly described (C88, C89), and the equivalence of controls is demonstrated with data (C90). This represents sound experimental design with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "c9974497-76d3-42c4-a7b9-63079020db89",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "98% of forced GBP-GFP protein associations (129,098 out of 131,882) do not affect cell growth, indicating that cells have remarkable tolerance for forced protein associations and protein relocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C73-C74, and C91 collectively establish the major finding of cellular tolerance. The quantitative data is explicitly stated (C4: 98%, 129,098/131,882) with figure references. The inference that cells are permissive for protein interactions (C5, C6) follows logically from the growth data. This is a well-supported major conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "d57d0c72-7606-4f08-83d1-76f73a5ae371",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microscopy analysis of 552 GBP-GFP combinations shows that approximately 72% of interactions result in detectable protein colocalization, with 225 of 314 testable combinations showing colocalization, confirming that most synthetic protein-protein interactions occur but do not cause growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 describe the microscopy validation. The sample size (C8: 552 combinations) and quantitative results (C7: ~72%; C9: 225/314) are explicitly stated with figure references. The conclusion (C10) logically follows from combining the colocalization data with the growth data. This provides important validation of the interaction system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "e175a04b-ac78-4977-810c-4cfd21443a59",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of protein movement direction shows roughly equal instances of GBP recruiting GFP versus the reverse, though structural components more often recruit proteins to their location than non-anchored enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 describe directional analysis of protein recruitment. Both claims are supported by microscopy data with figure references (Figure 3 and supplements). The observation about structural components (C12) represents a biologically meaningful pattern in the data. The claims are well-supported by the imaging analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "0fc8d43c-0831-40c0-8de9-fe0b3093a699",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Constitutive recruitment of the nucleosome remodeling protein Spt6 to histone Hta2 results in Hta2-GBP no longer being restricted to the nucleus, concomitant with a strong growth defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C14 describe a specific example of a deleterious interaction. Both the mislocalization (C13) and growth defect (C14) are explicitly stated and supported by microscopy data (Figure 2E). This provides a clear example of how forced associations can disrupt cellular function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "156ec239-4127-4a77-901d-e52ea083f2c3",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Approximately 2-3% of forced interactions restrict growth (termed Synthetic Physical Interactions or SPIs), with 2784 SPIs confirmed from 727 GFP-tagged query proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C92 quantify the SPIs. The percentages (C15: ~2%; C16: ~3%) and absolute numbers (C17: 2784 SPIs, 727 proteins) are explicitly stated with appropriate data references. The reanalysis using only validated GFP strains (C16) strengthens the conclusion. The definition of SPIs (C92) is appropriately cited to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "75 'frequent SPI query proteins' produce SPIs with at least 10 of 23 target proteins; these are of lower abundance, enriched for essential genes (~83%), and enriched for specific GO terms including RNA metabolism, mRNA polyadenylation, transport, microtubule nucleation, and spindle pole body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 characterize frequent SPI proteins. The quantitative data (C18: 75 proteins; C19: lower abundance; C20: ~83% essential) and GO enrichments (C21-C25) are explicitly stated with statistical significance (p-values ranging from 10^-5 to 10^-9). The enrichment analysis is appropriate and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "53801590-b733-4bfa-8eed-915beecce697",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "All 41 frequent SPIs from the Nuf2 screen are suppressed in heterozygous diploid cells, while only 15% of non-frequent SPIs are reproduced in diploids, indicating that frequent SPI query proteins are predominantly those whose essential function is location-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe the diploid suppression experiment. The quantitative results (C26: 41/41 suppressed; C27: 6/40 or 15% reproduced) are explicitly stated with figure references. The conclusion (C28) logically follows from the diploid suppression pattern and is appropriately contextualized with prior work. This provides mechanistic insight into frequent SPIs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b9407b7d-a910-4a2f-baba-be9367c60194",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SPI screens using target proteins from the same cellular compartment give similar SPIs in specific cases, with enrichment for same-compartment interactions (10.4% vs. 7.1% expected, p=1.8x10^-9), though cross-compartment SPIs tend to produce stronger growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 describe compartment-specific patterns. The correlation analysis (C29) is appropriately cited, specific examples are provided (C30, C32), and statistical enrichment is demonstrated (C31: p=1.8x10^-9). The observation about cross-compartment severity (C33) is supported by figure reference. These patterns are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "1138797e-2d1d-4f0c-986e-d74ca0018b3d",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SPI query proteins are enriched for characterized physical interactions (p<2.2x10^-16), with most SPI screens showing strong enrichment for genetic and physical interactions, including specific examples like Rad52 SPIs enriched for nuclear pore components (p=7x10^-9) and Nuf2 SPIs enriched for microtubule organization proteins (p=8x10^-13).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe enrichment for known interactions. The statistical evidence is strong (C34: p<2.2x10^-16; C36: p=7x10^-9; C37: p=8x10^-13), and the CLIK analysis (C35) is appropriately applied. The specific examples (C36, C37) are well-documented with protein lists and citations. This demonstrates that SPIs capture functionally relevant interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "f9f0514a-8cc2-432c-8c13-7490df101f79",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SPIs can identify novel regulatory proteins: Hmo1 and Sgf29 show SPIs with kinetochore protein Nuf2, and deletion of HMO1 or SGF29 results in elevated Dad4 levels at kinetochores while Mtw1 levels remain unaffected, indicating these proteins regulate outer kinetochore protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C51, C83-C84 describe the Hmo1/Sgf29 case study. The SPI data (C39, C42) is explicitly stated, the specificity to central/outer kinetochore (C43) is demonstrated, and the Dad4 elevation (C44, C46) is quantified with microscopy data while Mtw1 is unaffected (C45). The analysis of total Dad4 levels (C46-C48) addresses potential confounders. Prior associations (C49, C50) provide context. This is a well-executed validation demonstrating the utility of SPIs for identifying regulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "5df9e434-3c69-4ac7-9a2a-2c48bee6a051",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Histone subunits and chromosomal proteins have unique SPIs with eisosome component Pil1, which relocalizes from the plasma membrane in response to DNA damage and associates with histones, with Pil1-histone SPIs resulting from Pil1 recruitment into the nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe Pil1 interactions. The unique SPIs (C52) are explicitly stated, the biological context (C53, C54) is supported by citations to prior work, and the nuclear recruitment (C55) is demonstrated with microscopy data. This provides another example of SPIs revealing functional relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Hierarchical clustering analysis shows that query proteins from specific large functional complexes cluster together, including the mediator complex, COP1 coatomer, nuclear pore outer ring, signal recognition particle, and TRAMP complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 describe clustering of protein complexes. The clustering analysis is explicitly stated (C56) with figure references, and specific examples (C57-C61) are provided. This demonstrates that SPI data can group functionally related proteins, though the authors appropriately note that SPIs are not substitutes for physical interaction data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SPI data correlate with the quaternary structure of large protein complexes: kinetochore sub-complexes (COMA, MIND, DAM/DASH) cluster based on their SPI scores, with the DAM/DASH complex segregating into distinct clusters reflecting structural versus interaction hub roles, and similar correlations observed for the nuclear pore complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 and C85 describe structural correlations. The kinetochore clustering (C64-C67) is demonstrated with figure references, and the structural interpretation (C68-C70) is supported by citations to prior structural work. The nuclear pore correlation (C71) extends the finding. This represents a novel application of SPI data to infer structural organization, though it relies on prior structural knowledge for interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "6af36731-6675-44b5-b9e2-04142e55fa49",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SPIs are not a substitute for physical interaction data but rather represent a common phenotype in response to forced association, indicating a common phenotype produced by specific protein-protein associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, and C72 provide important conceptual clarification about what SPIs represent. These are interpretive statements that appropriately contextualize the limitations and meaning of the SPI approach. The claims are consistent with the data presented and represent appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The interactions that perturb growth provide a functional map of spatial protein regulation, identifying key regulatory complexes for cellular homeostasis, with SPIs enriched for functional regulators and providing a powerful tool to complement existing physical and genetic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76, C81-C82, C86, C93, and C95 represent the overarching conclusions of the study. These are supported by the collective evidence from the SPI screens, enrichment analyses, and case studies (particularly Hmo1/Sgf29). The claim that this is the 'first comprehensive map' (C95) is reasonable given the scale of the study. These conclusions are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "4c53a5f8-350e-47d8-abb7-8478a39dec69",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Approximately 76% (549) of the 727 SPI query proteins have human homologs compared to 56% (3766) of the whole yeast genome, suggesting potential translational relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 provides translational context. The percentages are explicitly stated with citation to the YeastMine database. This is a straightforward comparative analysis that appropriately contextualizes the potential relevance of the findings to human biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    },
+    {
+      "id": "5c5db692-4998-4d5f-9a55-6a183e944337",
+      "content_id": "937dc3d0-be5a-41c2-af5b-ea54cf0124be",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study is motivated by established knowledge that post-translational modifications drive protein relocalization, which is critical for cellular processes and disease, and that the evolution of protein regulation requires new associations to form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 provide background context. These are appropriately cited to prior literature (C77, C79) or represent established biological principles (C78, C80). These claims establish the rationale for the study and are well-supported by prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:30:41.670721Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a02c68c1-4c99-46ba-98e0-12ceb973bf34",
+      "result_id": "f888f919-a534-4c4d-8622-4d4f7bff8d55"
+    },
+    {
+      "claim_id": "78c6a969-0bc8-47f0-b160-f8e9fb04a37d",
+      "result_id": "f888f919-a534-4c4d-8622-4d4f7bff8d55"
+    },
+    {
+      "claim_id": "7e59f8a3-5880-41ea-9371-b0b77f15ac9b",
+      "result_id": "f888f919-a534-4c4d-8622-4d4f7bff8d55"
+    },
+    {
+      "claim_id": "a30624e2-4c28-4c33-b69a-f4cb83e80f01",
+      "result_id": "24bf83e2-d36a-4061-bf65-f922e121c0bb"
+    },
+    {
+      "claim_id": "e35494a8-7d1d-41a2-bea9-4693003dba20",
+      "result_id": "24bf83e2-d36a-4061-bf65-f922e121c0bb"
+    },
+    {
+      "claim_id": "e2e5a95c-e38a-43f7-b36f-3d4c0ad79f74",
+      "result_id": "24bf83e2-d36a-4061-bf65-f922e121c0bb"
+    },
+    {
+      "claim_id": "2a3ca754-171f-4b7d-afd2-220a6c9b3e8a",
+      "result_id": "24bf83e2-d36a-4061-bf65-f922e121c0bb"
+    },
+    {
+      "claim_id": "d3e253d7-f5ec-4511-b36a-6e4a912cca33",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "baf67640-50dd-44ad-b9f9-f1ace1532fb1",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "3cae3f45-8964-40ca-b2e2-ca4d0b6aa70a",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "502104cd-fc81-4b68-82cf-809db1288862",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "0cd40b5d-0ade-41ae-b4d1-5ed0b7da0769",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "aa6f670d-d6ad-4389-a3f8-82fdce4711ad",
+      "result_id": "c9974497-76d3-42c4-a7b9-63079020db89"
+    },
+    {
+      "claim_id": "acc99ee4-1fe2-40e8-88ba-1d4df5842a9f",
+      "result_id": "d57d0c72-7606-4f08-83d1-76f73a5ae371"
+    },
+    {
+      "claim_id": "1d9322bb-d164-4607-91d4-f1db8e880bd5",
+      "result_id": "d57d0c72-7606-4f08-83d1-76f73a5ae371"
+    },
+    {
+      "claim_id": "596d218e-0046-483b-999e-8f17ce470520",
+      "result_id": "d57d0c72-7606-4f08-83d1-76f73a5ae371"
+    },
+    {
+      "claim_id": "daf43865-26e6-4186-924a-bca203ae6e7f",
+      "result_id": "d57d0c72-7606-4f08-83d1-76f73a5ae371"
+    },
+    {
+      "claim_id": "2656cec7-f096-4d62-8d19-c30245912dc8",
+      "result_id": "e175a04b-ac78-4977-810c-4cfd21443a59"
+    },
+    {
+      "claim_id": "bc944435-7ad9-4d8d-b50c-f2bbd67d8c68",
+      "result_id": "e175a04b-ac78-4977-810c-4cfd21443a59"
+    },
+    {
+      "claim_id": "86ab4dd5-18dd-4e7f-a881-a1522667018b",
+      "result_id": "0fc8d43c-0831-40c0-8de9-fe0b3093a699"
+    },
+    {
+      "claim_id": "dcea136a-d309-4635-ad92-d6bcd73be5e8",
+      "result_id": "0fc8d43c-0831-40c0-8de9-fe0b3093a699"
+    },
+    {
+      "claim_id": "adf578f6-a17f-413b-891e-0b9c9f1f5579",
+      "result_id": "156ec239-4127-4a77-901d-e52ea083f2c3"
+    },
+    {
+      "claim_id": "8b16cb36-9472-4733-9358-344215962538",
+      "result_id": "156ec239-4127-4a77-901d-e52ea083f2c3"
+    },
+    {
+      "claim_id": "75f38750-8ea4-43ec-9861-cab14c90b02a",
+      "result_id": "156ec239-4127-4a77-901d-e52ea083f2c3"
+    },
+    {
+      "claim_id": "f3d430c1-2986-48d9-9ca2-58f625081909",
+      "result_id": "156ec239-4127-4a77-901d-e52ea083f2c3"
+    },
+    {
+      "claim_id": "74eae2cd-1c4d-429a-9c68-4dcfff533599",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "17bdae97-f344-4873-a3b2-1ec8ce7adc1e",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "29404845-d568-4324-ae1a-14ccbb45228d",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "26ddc31d-c5fd-4606-baaf-27a831df101f",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "2bea2290-b9f7-4dd9-956c-810fcc012367",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "b4c0e8c4-9ed0-46ee-9028-c2c9202a2693",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "fc25e705-6e0a-4941-bfa5-75dc072154a9",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "53d2bf88-1782-4a1c-b060-43a5954f1ef9",
+      "result_id": "0c20a58e-e237-400f-875a-5cef0d2f6ad2"
+    },
+    {
+      "claim_id": "e5c67c48-c0cb-46d0-b166-e6b51fb98eb3",
+      "result_id": "53801590-b733-4bfa-8eed-915beecce697"
+    },
+    {
+      "claim_id": "8d80472c-d22f-4b94-b5ed-1502bfe7d7ec",
+      "result_id": "53801590-b733-4bfa-8eed-915beecce697"
+    },
+    {
+      "claim_id": "c86430a3-9de4-473c-9540-1d644a479bcb",
+      "result_id": "53801590-b733-4bfa-8eed-915beecce697"
+    },
+    {
+      "claim_id": "371dc9af-ca5f-4c1f-ab7b-f86741b24fc3",
+      "result_id": "b9407b7d-a910-4a2f-baba-be9367c60194"
+    },
+    {
+      "claim_id": "110680b8-b8f9-4661-95cd-f7c97331a3ad",
+      "result_id": "b9407b7d-a910-4a2f-baba-be9367c60194"
+    },
+    {
+      "claim_id": "e349f70d-fe81-4595-8cae-56a8881654c9",
+      "result_id": "b9407b7d-a910-4a2f-baba-be9367c60194"
+    },
+    {
+      "claim_id": "5cff4248-f0d6-46dc-adf8-1b61f4fb75d3",
+      "result_id": "b9407b7d-a910-4a2f-baba-be9367c60194"
+    },
+    {
+      "claim_id": "8ee6c3ff-d40b-42a6-9e2f-4c2a2345ddde",
+      "result_id": "b9407b7d-a910-4a2f-baba-be9367c60194"
+    },
+    {
+      "claim_id": "f694cf4c-5262-4137-8986-0574bea9883f",
+      "result_id": "1138797e-2d1d-4f0c-986e-d74ca0018b3d"
+    },
+    {
+      "claim_id": "c75b7dda-cca8-4e58-abd0-04f07a740e07",
+      "result_id": "1138797e-2d1d-4f0c-986e-d74ca0018b3d"
+    },
+    {
+      "claim_id": "1a3da781-579e-4765-a449-194d1ebb388c",
+      "result_id": "1138797e-2d1d-4f0c-986e-d74ca0018b3d"
+    },
+    {
+      "claim_id": "b332024c-cb06-45d8-9a14-19458e1363b3",
+      "result_id": "1138797e-2d1d-4f0c-986e-d74ca0018b3d"
+    },
+    {
+      "claim_id": "124dac13-ce82-4a8d-b55f-dc6224b12cde",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "b2cf97d7-4a74-4599-8fc5-a5e287773a08",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "58984f36-3fa1-4e86-8c38-371667c9ba29",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "8107a161-6f41-4be2-a0ca-9101a74f355a",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "c66afcca-21dd-4f06-b918-1213151b556c",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "2ff8a6dd-6d22-4d58-a5e8-69bba6069561",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "91f616a4-51e9-4937-83b2-411b94313e29",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "8c3f4af6-048d-4f66-825a-0bd98b4de725",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "b9096aee-dbb5-4ff9-a621-8abcf7e56f57",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "3b0418f1-96ad-4687-8ad9-d8ceec32d24d",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "830b9671-e17f-42fe-ae20-a61e22078a3b",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "53d9db9d-f9c4-425a-8392-07b7c3347dec",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "75a8cf71-c140-4ed6-9692-bd9510369ca8",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "1b881088-4b01-4a8d-a97f-7c1a886a8b6e",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "f20bf640-8210-4b47-b379-5b9b2266f44e",
+      "result_id": "f9f0514a-8cc2-432c-8c13-7490df101f79"
+    },
+    {
+      "claim_id": "3fb63a09-7bf9-4627-adcd-67e9d8b4684f",
+      "result_id": "5df9e434-3c69-4ac7-9a2a-2c48bee6a051"
+    },
+    {
+      "claim_id": "1ed6085c-be2c-4b86-89da-85e9e87c18fb",
+      "result_id": "5df9e434-3c69-4ac7-9a2a-2c48bee6a051"
+    },
+    {
+      "claim_id": "e32181f3-4769-471d-a0df-378a443241c1",
+      "result_id": "5df9e434-3c69-4ac7-9a2a-2c48bee6a051"
+    },
+    {
+      "claim_id": "44361fc2-56f0-4884-a67a-6c6b567aa42f",
+      "result_id": "5df9e434-3c69-4ac7-9a2a-2c48bee6a051"
+    },
+    {
+      "claim_id": "29c439f5-61ca-45ad-9ae6-26fd55653b0b",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "a4f6689f-bb69-41b8-9203-efc4e6494f98",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "5e0d2999-eb2c-41b0-8e0e-7e2c36ac4c94",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "e8e5327a-ab7f-40e9-a38e-2ed5b576a40d",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "e4844856-5e96-4584-99ae-320bfee2d118",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "546f2889-27db-4815-af58-593c247fc40f",
+      "result_id": "72c4d0fc-a5cd-4fb4-b6af-41a6d9ad32ef"
+    },
+    {
+      "claim_id": "c8de1df5-e86e-4ea8-9fbd-fbd371191e12",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "eae48464-126e-42c8-8372-40a6f5207b6c",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "bdaf8970-bda9-451c-9a73-74226e9c26a3",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "ef57f9ad-d849-46f9-a279-916832f519fe",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "1a499d14-c5e6-44eb-bb31-3df8456a701e",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "4c5aed35-e40b-43a4-aeda-24d3dfdc4a2a",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "179fac73-560f-4b05-b33d-39c245f33f35",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "8ecd7b63-1927-443e-b4fc-f2f72f0f1022",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "146cd9e3-24f8-46c9-9211-e442bc5fd23e",
+      "result_id": "b61c8543-e67b-4fbe-bc86-6b402c8f51df"
+    },
+    {
+      "claim_id": "943f1a3f-c75d-4b4c-beb7-b127b11aa551",
+      "result_id": "6af36731-6675-44b5-b9e2-04142e55fa49"
+    },
+    {
+      "claim_id": "599da83b-441f-4a8b-b531-580caa9d4f52",
+      "result_id": "6af36731-6675-44b5-b9e2-04142e55fa49"
+    },
+    {
+      "claim_id": "8e9d0d06-489d-46ae-929c-4f7857c0cc1a",
+      "result_id": "6af36731-6675-44b5-b9e2-04142e55fa49"
+    },
+    {
+      "claim_id": "21d10298-bc67-4c31-8723-1c86caf7e2ca",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "0e303ea5-3363-4c85-b23b-d723fea0613b",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "370ece6a-da4e-4ad8-ad84-876bda61c549",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "d2b1208c-3b47-4f86-86d3-cde3754a4ad0",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "683df0b2-2ed3-46ca-b96d-fb8c864c8695",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "779eba99-604d-4a85-9356-ec614b74184d",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "df096bde-1768-43ee-91ce-94955965bd50",
+      "result_id": "26f058bc-bb8a-4811-a96c-eea1f3b5d0c8"
+    },
+    {
+      "claim_id": "e3989b3f-cfaa-481f-9d75-93e175887677",
+      "result_id": "4c53a5f8-350e-47d8-abb7-8478a39dec69"
+    },
+    {
+      "claim_id": "1d6a1a00-bb04-46ed-b734-3934a566b440",
+      "result_id": "5c5db692-4998-4d5f-9a55-6a183e944337"
+    },
+    {
+      "claim_id": "c5f6c66f-b62a-4ab3-bda6-ee4e00b0c35c",
+      "result_id": "5c5db692-4998-4d5f-9a55-6a183e944337"
+    },
+    {
+      "claim_id": "4b78221a-606c-434e-bca8-66a4fca16b7c",
+      "result_id": "5c5db692-4998-4d5f-9a55-6a183e944337"
+    },
+    {
+      "claim_id": "ea5efb11-841f-4094-b971-cd0899b9e4cb",
+      "result_id": "5c5db692-4998-4d5f-9a55-6a183e944337"
+    }
+  ],
+  "comparisons": []
+}

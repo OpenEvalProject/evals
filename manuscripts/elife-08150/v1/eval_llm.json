@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors established an experimental system using static and shaking cell cultures to distinguish cell-free from cell-to-cell HIV-1 infection. Static cultures allow both infection modes while shaking cultures permit only cell-free infection, with shaking not inducing nonspecific effects on HIV-1 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe a well-established experimental approach (Sourisseau et al., 2007) that was validated in this study. The control experiment (C17, Figure 2\u2014figure supplement 1) confirms shaking does not cause artifacts. This experimental design is fundamental to the study's ability to separate the two infection modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors developed a mathematical model (Equations 1-3) that explicitly incorporates both cell-free and cell-to-cell infection modes, fitting experimental data well. The model reveals that the basic reproduction number R0 can be decomposed into two additive components: Rcf (cell-free) and Rcc (cell-to-cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe the mathematical framework. The model fits data well (C21, Figure 2), and the mathematical derivation showing R0 = Rcf + Rcc (C22) is presented in the mathematical appendix. The additive decomposition despite nonlinear interactions is a notable theoretical result that enables quantitative comparison of the two modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C40"
+    ],
+    "result": "Using MCMC parameter estimation, the authors quantified that cell-to-cell infection accounts for approximately 60% of total HIV-1 infection in vitro (Rcc/(Rcf+Rcc) = 0.57 \u00b1 0.07), with R0 = 5.83 \u00b1 0.94, Rcf = 2.44 \u00b1 0.23, and Rcc = 3.39 \u00b1 0.91, making cell-to-cell infection the predominant mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C40 present the core quantitative findings with appropriate statistical measures (means and standard deviations from MCMC). The values are shown in Table 1 and Figure 3. The Bayesian approach with MCMC appropriately captures parameter uncertainty. The conclusion that cell-to-cell infection is predominant (60%) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C41"
+    ],
+    "result": "Cell-to-cell infection shortens viral generation time from 2.47 \u00b1 0.32 days (cell-free only) to 2.22 \u00b1 0.32 days (both modes), representing a 0.90-fold reduction that enables more efficient viral spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C41 present generation time calculations derived from the mathematical model (Table 2). The 10% reduction in generation time is mathematically sound given the model structure. However, the biological significance of this relatively modest reduction could be questioned, though it is presented appropriately as a quantitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "Cell-to-cell infection increases the Malthus coefficient (viral fitness) from 0.49 \u00b1 0.05 to 1.86 \u00b1 0.37 per day, representing a 3.80-fold increase that corresponds to 944-fold higher viral load after 5 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C42 present Malthus coefficient calculations (Table 2). The 3.80-fold increase in fitness is substantial and mathematically derived from the model. The 944-fold viral load difference after 5 days follows from exponential growth with different rates. This is a strong quantitative result showing the impact of cell-to-cell infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C51"
+    ],
+    "result": "Virtual experiments simulating pure cell-to-cell infection show that blocking cell-free infection would have limited impact on HIV-1 spread, as cell-to-cell infection dynamics closely approximate the combined infection dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C51 describe in silico simulations (Figure 4) using estimated parameters. The virtual experiment appropriately demonstrates that cell-to-cell infection alone produces dynamics closer to both modes combined than to cell-free alone. This supports the conclusion that blocking cell-free infection would have limited impact, though this is a model-based prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The estimated 60% contribution of cell-to-cell infection is consistent with previous modeling studies by Komarova and colleagues, despite methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 appropriately compares results to prior work. The consistency with Komarova et al. (2013a,b) provides external validation, though the authors note their model accounts for differences in death rates between conditions that previous models did not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors speculate that cell-to-cell infection may contribute even more than 60% to viral spread in vivo, based on higher cell density in lymphoid tissues, convergence of infected cells to lymph nodes, and resistance to immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C48 are largely speculative extrapolations from in vitro to in vivo conditions. While the reasoning is plausible (higher cell density, immune evasion), these are hypotheses not tested in this study. The claim is appropriately presented as speculation ('may be much higher') but lacks direct supporting evidence from in vivo experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors discuss that cell-to-cell infection may permit viral replication under antiretroviral therapy due to higher multiplicity of infection, potentially serving as a barrier to HIV-1 cure, though conflicting evidence exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C54 discuss implications for therapy, citing both supporting (Sigal et al., 2011) and contradicting evidence (Titanji et al., 2013; Agosto et al., 2014). The authors appropriately acknowledge uncertainty (C54). This is speculative discussion of clinical implications not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cell growth parameters were independently estimated: growth rates of 0.47 \u00b1 0.10 (static) and 0.54 \u00b1 0.09 (shaking) per day, carrying capacities of (1.51 \u00b1 0.02) \u00d7 10^6 (static) and (1.22 \u00b1 0.02) \u00d7 10^6 (shaking) cells per flask, and viral clearance rate of 2.3 per day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe parameter estimation from separate experiments (Figure 2\u2014figure supplement 2). The growth parameters are appropriately estimated independently. However, the clearance rate c = 2.3 per day is estimated indirectly from the experimental protocol (90% daily reduction) rather than measured directly, which introduces some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Key kinetic parameters were estimated from MCMC fitting: \u03b2 = 4.18 \u00b1 1.41 \u00d7 10^-6 (p24 day)^-1, \u03c9 = 1.09 \u00b1 0.33 \u00d7 10^-6 (cell day)^-1, p = 0.50 \u00b1 0.16 day^-1, and \u03b4 = 0.50 \u00b1 0.10 day^-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present parameter estimates from Table 1. The MCMC approach appropriately quantifies uncertainty. The parameters have reasonable biological values and enable model fits shown in Figure 2. The relatively large uncertainty in \u03b2 and \u03c9 (coefficients of variation ~34% and 30%) reflects inherent variability but is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors conclude that cell-to-cell infection accounts for ~60% of viral infection, shortens generation time by 0.9 times, increases viral fitness by 3.9 times, and plays a critical role in efficient viral spread, with limited impact expected from blocking cell-free infection alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C13-C15 summarize the main conclusions. These are well-supported by the quantitative analyses (Tables 1-2, Figures 2-4). The 3.9-fold fitness increase (C5, C14) matches the 3.80-fold Malthus coefficient increase. The conclusion about limited impact of blocking cell-free infection (C6) follows logically from the 60% contribution of cell-to-cell infection, though it remains a model-based prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors establish background knowledge that cell-to-cell infection is an important viral spread mechanism that is technically difficult to isolate experimentally, with previous studies providing inconsistent estimates of its relative contribution due to nonlinear interactions between infection modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C12 establish the scientific context and motivation. These are appropriately supported by citations to prior literature. The statement about technical difficulty (C2, C10) and inconsistent prior estimates (C12) justifies the need for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors conclude that cell-to-cell infection is important for multiple viruses beyond HIV-1, and that integrating mathematical modeling with experiments provides a powerful approach to quantify viral dynamics inaccessible to conventional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide broader context and methodological conclusions. C55 is supported by citations. C56-C57 appropriately summarize the value of the mathematical-experimental approach demonstrated in this study, though the generalizability to other viruses would require additional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72"
+    ],
+    "result": "The authors describe experimental methods including cell culture conditions, virus preparation, infection protocols, measurement techniques (ELISA, flow cytometry), detection thresholds, and the definition of basic reproduction number R0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 and C72 describe standard experimental methods appropriately supported by citations to prior work and manufacturer protocols. Detection thresholds are clearly stated (C64-C66). The definition of R0 (C72) is standard in epidemiology. These methodological details are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

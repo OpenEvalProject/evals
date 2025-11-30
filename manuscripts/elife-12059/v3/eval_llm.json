@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Microtubule-free twigs are a general feature of Drosophila neurons across multiple CNS regions and life stages, hosting the majority (>80%) of synaptic inputs. This structural organization was observed in motor neurons, interneurons, brain neurons, and adult visual system neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C25 collectively demonstrate through EM reconstructions and quantitative analysis across multiple neuron types, developmental stages, and CNS regions that twigs are ubiquitous and constitute the primary site of synaptic input. The data is supported by Figures 1 and 2 showing consistent patterns across diverse neuronal populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Strong synaptic connections (\u22653 synapses) between neurons are distributed across multiple twigs rather than concentrated on single twigs. Individual twigs are typically small (median 1 \u00b5m, 1 synapse), with connections of 3+ synapses spanning multiple twigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C31 provide quantitative evidence from both larval motor neurons and adult visual system that numerically strong connections are distributed across multiple twigs. Figure 3I-J demonstrates the size distribution of twigs and the relationship between synapse count and twig distribution, supporting the robustness of strong connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C51",
+      "C53",
+      "C54",
+      "C61"
+    ],
+    "result": "Omission of individual twigs accounts for 96% of reconstruction errors, but strong synaptic connections are robust to these errors because they span multiple twigs. Error rates are much higher for twigs (16.2 \u00b5m/error) than backbone (375.8 \u00b5m/error).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C51, C53-C54, C61 demonstrate through validation data that twig omission is the dominant error type (89/91 false negatives in twigs), but that >40 missed twigs had no connectivity impact. The distribution of synapses across multiple twigs for strong connections provides inherent robustness to individual twig omission errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C55",
+      "C56"
+    ],
+    "result": "The iterative reconstruction method achieves similar accuracy to consensus methods while requiring approximately 4\u00d7 less time (26.37 vs 107.73 hours for six neurons). The method identified 88% of twigs containing 91.7% of synapses and recovers >99% of edges with \u22653 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C49, C55-C56 provide direct validation comparing iterative and consensus methods. Both methods produced identical wiring diagram edges with similar synapse counts, but the iterative method required substantially less time. The quantitative error analysis supports the efficiency claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Presynaptic sites show strong spatial association with mitochondria (97% within 3 \u00b5m) and microtubules (50% on backbone, 90% within 3 \u00b5m), while most mitochondria (348/425) are associated with backbone rather than twigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide quantitative spatial analysis of mitochondria and presynaptic sites shown in Figure 4. The strong correlation between presynaptic sites and mitochondria (97% within 3 \u00b5m despite only 47% of cable being within this distance) supports the inference of active spatial organization. The data is internally consistent across motor neurons and interneurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Five symmetric pairs of identified neurons form 1-3 hop pathways from proprioceptive sensory neuron dbd to motor neuron RP2, including two GABAergic premotor interneurons (A27j, A31k) and three glutamatergic A02 lineage neurons. These pathways are positioned to mediate proprioceptive feedback including a hypothesized 'mission accomplished' signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the reconstructed sensorimotor circuit with anatomical, connectivity, and immunohistochemical evidence (Figures 6-7). The identification of specific neuron types, their connectivity patterns, and neurotransmitter profiles provides strong support. The functional interpretations (C39-C40) are appropriately framed as hypotheses consistent with prior work and the observed circuit structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Motor neurons aCC and RP2 receive 1-28 synaptic inputs from individual presynaptic partners (max 7.3% from single neuron), with the distribution well-fit by an exponential survival function indicating the top 22 partners contribute 63% of inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide quantitative characterization of motor neuron connectivity supported by Figure 3G-H. The exponential fit provides a mathematical model of the connectivity distribution. The data is clearly presented and the statistical modeling is appropriate for describing the ranked distribution of synaptic partners.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Compartment-based analysis of 3834 synapses in the proprio-motor circuit reveals 79% axo-dendritic, 11% axo-axonic, 9% dendro-dendritic, and 1% dendro-axonic connections. Specific microcircuit motifs include dendro-dendritic coordination between premotor neurons and axo-axonic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe the compartmental connectivity analysis enabled by the synapse flow centrality method. The quantitative breakdown of synapse types and identification of specific circuit motifs (Figure 7) are well-supported. The functional interpretations (C42, C45) are appropriately presented as inferences from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Synapse clustering analysis reveals that dbd axon branches synapse onto homologous A08a interneurons in respective segments, with each A08a receiving convergent input from dbd of two consecutive segments, potentially reflecting coordinated segmental movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 demonstrate the application of synapse clustering to reveal circuit organization (Figure 8). The anatomical observation of bilateral symmetry and segmental organization is well-documented. The functional interpretation regarding coordinated movement is appropriately framed as a hypothesis supported by prior behavioral observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Validation analysis shows the iterative method had 111 synapses on consensus-only neurites and 229 on iterative-only neurites out of 1341 total. False positives added 30 incorrect inputs. Modeling suggests symmetric connections of \u22652 synapses can be trusted, and the first 4 \u00b5m of twigs detects ~90% of partners with 2+ synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52, C57-C60 provide detailed quantitative validation and error modeling. The comparison between methods is thorough, and the probabilistic modeling of false positive and false negative errors (Figures 11-12) appropriately uses the observed error rates and synapse distributions. The conclusions about reliability thresholds are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Nine lab members reconstructed 425 neuronal arbors spanning 51.8 mm of cable with 24,068 presynaptic and 50,927 postsynaptic relations in 469 hours of reconstruction plus 240 hours of review, averaging ~73 \u00b5m of proofread arbor with synapses per hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 provide direct quantitative measures of the reconstruction effort. These are straightforward descriptive statistics of the work performed and are internally consistent with the methods description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Proprioceptive neuron axon terminals almost entirely lack presynaptic input, suggesting proprioceptive input is privileged and not under fast central modulation, unlike other sensory modalities in the larva.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe an observation from the circuit reconstruction with appropriate comparison to other systems. The interpretation is clearly framed as a suggestion and appropriately contextualized with citations to related findings in other organisms. The absence of presynaptic input is a negative result that is well-documented in the reconstruction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Microtubules in neural processes are visible in EM sections whether cut transverse or obliquely, span several sections (traced over 16 sections shown), and maintain their relative orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe basic observations about microtubule visibility and continuity in EM data, demonstrated in Figure 1B-C. These are straightforward observations that support the use of microtubules as a reconstruction feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Glutamatergic synapses vary considerably in size and postsynaptic partner number (3 to >15), while serotonergic synapses typically span only 2 sections (100 nm) and contact 2-3 postsynaptic partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe morphological characteristics of different synapse types shown in Figure 1\u2014figure supplement 1. These are descriptive observations of synapse ultrastructure that provide context for synapse identification and annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The EM volume covers approximately the posterior half of abdominal segment A2 and nearly complete segment A3, comprising 22,775\u00d718,326\u00d7462 voxels (91\u00d773\u00d721 \u00b5m\u00b3), imaged as serial 45 nm sections at 4.4\u00d74.4 nm resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide technical specifications of the EM dataset. These are straightforward descriptive parameters of the imaging and are consistent with the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Current approaches to EM circuit mapping face challenges: manual reconstruction is slow and error-prone, consensus methods multiply labor, and computational approaches are sensitive to noise particularly in anisotropic data, requiring human proofreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 describe established challenges in the field, supported by multiple citations to prior work. These claims provide context for the study's motivation and are appropriately presented as background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Expert neuroanatomists use large-scale features to resolve ambiguities. In stereotyped Drosophila neurons, mesoscale anatomy is key to circuit structure, but little is known about fine-scale synapse distribution. Missing small dendrites can be acceptable (56% omission still useful), while prioritizing high-impact errors improves efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 establish the conceptual framework and knowledge gaps that motivate the study. These are appropriately cited to prior work and clearly distinguish established knowledge (C11-C15, C17) from gaps (C16). The claims provide important context for understanding the study's contribution.",
+    "result_type": "MINOR"
+  }
+]

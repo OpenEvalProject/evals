@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36"
+    ],
+    "result": "Random search is a universal behavioral strategy used by organisms from bacteria to humans to locate randomly distributed food. C. elegans uses this strategy and can tune the spatial scale of random search to its physiological state and food availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35, and C36 establish the ecological and behavioral context for the study. C1 is well-established knowledge about random search across diverse organisms. C35 and C36 are supported by multiple citations describing C. elegans ecology and behavioral plasticity. These foundational claims are well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "C. elegans locomotion consists of three main behavioral states (forward, reverse, and pause) with characteristic speed distributions and temporal dynamics. The speed distribution is bimodal with peaks at ~180 \u00b5m/s and near zero. Pauses during forward-to-reverse transitions are longer than reverse-to-forward transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C7, C42, C43, C44, and C45 describe the basic behavioral phenomenology observed in the tracking data. These claims are directly supported by experimental observations shown in Figure 1, including speed distributions, autocovariance functions, and statistical comparisons (p<10^-5 for pause duration differences). The characterization of three behavioral states is consistent with prior work and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The stochastic switch model represents the command neuron network as two binary stochastic units that can exist in four distinct states. This representation is justified by observations of bistable membrane potentials in command neurons and correlated activity within neuronal pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 describe the model structure and its biological justification. C9 is supported by electrophysiological recordings (Figure 2B) and cited literature (Kato et al., 2015). Claims C46, C47, and C48 provide additional support from calcium imaging studies showing correlated activity within pools and reciprocal activity between pools. The model assumptions are well-justified by experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C49"
+    ],
+    "result": "The hidden Markov model with two pause states provides a statistically significant better fit to the data than models with only one pause state (p<10^-100). The hidden Markov model approach replaces arbitrary velocity thresholds with empirically determined state transition rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by rigorous statistical testing using the likelihood ratio test, showing highly significant improvement with two pause states. C49 describes the methodological advantage of the hidden Markov model approach. Both claims are well-supported by the statistical analysis presented in Table 1 and the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C15"
+    ],
+    "result": "The system typically cycles clockwise through states F, X, R, Y during locomotion. FX transitions can occur at any locomotory phase without postural preference (r=0.14), while RY transitions show strong postural preference (r=0.71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C15 are supported by the transition probability analysis (Figure 3) and postural analysis (Figure 4). The weak vector strength for FX transitions and strong vector strength for RY transitions are directly measured from the data. These findings reveal fundamental differences in how forward and reverse locomotion terminate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C41"
+    ],
+    "result": "Ablation of command neurons reduces tonic drive to the locomotory pattern generator, as evidenced by reduced undulation frequency and velocity. The tracking system used achieves ~10-fold improvement in spatial resolution over previous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is a proposed explanation for observed ablation effects, supported by citations and consistent with the data in Figure 5A and Table 3. C41 is a technical claim supported by comparison with cited previous work (Kocabas et al., 2012). Both claims are adequately supported, though C17 is mechanistic speculation rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The stochastic neuronal model predicts reciprocal inhibition between AVA and AVB command neurons. This prediction is experimentally validated: both AVA\u2192AVB and AVB\u2192AVA connections show reversal potentials more negative than zero-current potential, indicating inhibition. The inhibition is likely monosynaptic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C61, C62, C63, and C64 describe a major prediction of the model and its experimental validation. The model prediction (C61) is derived from synaptic weight analysis. Experimental validation (C62, C63) is provided by optogenetic stimulation combined with electrophysiology (Figure 6B-E), showing inhibitory reversal potentials. C64 is a reasonable inference based on known neurotransmitter properties. This is a strong example of model prediction followed by experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C33",
+      "C34"
+    ],
+    "result": "The model predicts that inhibition of forward command neurons is required for deterministic escape behavior. This is validated by showing ASH\u2192AVB connection is inhibitory. The Push-Pull motif provides 2.3-fold reduction in escape latency compared to Pull motif alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C33, and C34 describe model predictions about escape behavior and experimental validation. C33 is a prediction from theoretical analysis of circuit motifs. C22 provides experimental validation showing inhibitory ASH\u2192AVB connection (Figure 9C,D). C34 is a quantitative prediction from the model. The logic is sound and the experimental validation supports the model's predictions about deterministic behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Reciprocal inhibition between AVA and AVB command neurons is experimentally validated: reversal potentials of synaptic currents from both AVA\u2192AVB and AVB\u2192AVA are more negative than zero-current potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 report experimental findings from optogenetic stimulation combined with electrophysiology (Figure 6B-D). The measurements show inhibitory reversal potentials for both connections, with statistical significance (p=0.043 for AVA\u2192AVB, p=0.019 for AVB\u2192AVA, n=9 and n=17 respectively). This is direct experimental evidence supporting the model's prediction of reciprocal inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C67",
+      "C68"
+    ],
+    "result": "The frequency of locomotory undulations was decreased in HYP mutants and increased in DEP mutants compared to wild-type controls, consistent with effects on tonic drive to the pattern generator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C67, and C68 report experimental observations from genetic manipulation studies (Table 5). The effects are statistically significant and consistent with the hypothesis that HYP mutations reduce and DEP mutations increase tonic drive to the locomotory pattern generator. The data support the interpretation that membrane potential changes affect undulation frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C72"
+    ],
+    "result": "HYP mutations are hypothesized to cause chronic hyperpolarization while DEP mutations cause chronic depolarization of command neurons. Analysis of mutant effects indicates roles for both membrane potential and input resistance changes in regulating dwell times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are hypotheses about mutation mechanisms, which are reasonable given the genetic manipulations (glutamate signaling disruption vs. constitutively active receptors). C72 is a conclusion from model-based analysis of mutant phenotypes (Figure 7, Table 6). The analysis shows that \u0394V hypothesis better explains dX changes while \u0394r hypothesis better explains dF and dR changes, supporting a role for both mechanisms. The logic is sound though the mechanistic claims remain somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "None of the control-point weights (h\u2131, h\u211b, w\u2131\u2131) was sufficient on its own to produce all three search modes (cropping, local search, ranging).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by systematic exploration of the model's parameter space (Figure 8D-F, Table 7). The analysis shows that individual control-point weights cannot generate all three search modes, but combinations of weights can. This demonstrates the necessity of multi-dimensional control for behavioral flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Random search in C. elegans can be understood in terms of a neuronal flip-flop circuit involving reciprocal inhibition between two populations of stochastic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the main conclusion of the paper, supported by the collective evidence from model fitting, prediction validation, and experimental confirmation of reciprocal inhibition. The model successfully predicts behavioral effects of ablations, genetic perturbations, and synaptic connectivity. The predictive success across multiple independent tests provides strong support for this mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Five pairs of premotor command interneurons organized into forward and reverse groups control locomotion. The locomotory state is determined by which motor neuron set is more activated. Command neuron activation has a strong stochastic component. Multiple classes of sensory and interneurons regulate forward locomotion duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C39, and C40 summarize established knowledge about C. elegans locomotion circuitry, all supported by multiple citations to prior work. These claims provide the biological foundation for the modeling approach. While these are not novel findings, they are accurately represented and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In the model, forward locomotion terminates when forward command neurons turn OFF (can happen at any phase), while reverse locomotion terminates when forward neurons turn ON (most likely at a particular phase). Phasic feedback from the pattern generator could explain phase-specific termination of reverse locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 describe model features that explain the observed differences in postural preferences at FX vs. RY transitions. C53 is a speculative explanation supported by citation (Li et al., 2006). These claims are consistent with the data (Figure 4) and provide a mechanistic interpretation, though C53 remains speculative and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "C. elegans escape responses can be produced by two pathways, one requiring reverse command neurons and one that does not. The ASH-mediated escape circuit may be specialized for short latency responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is established knowledge supported by citations (Chalfie et al., 1985; Piggott et al., 2011). C79 is a conclusion from model analysis showing the Push-Pull motif reduces escape latency 2.3-fold. The conclusion is supported by the model predictions and experimental validation of inhibitory ASH\u2192AVB connection, though direct measurement of escape latencies in different genetic backgrounds would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The Stochastic Switch Model is cast at a minimally sufficient level of biological detail to capture stochastic dynamics. Likely sources of stochasticity are quantal synaptic transmission and ion channel gating. The stochasticity could be intrinsic to command neurons, their presynaptic neurons, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is a characterization of the modeling philosophy, justified by the model's predictive success. Claims C81 and C82 are reasonable speculations about biological sources of stochasticity, with C82 supported by citation (Gordus et al., 2015). These claims appropriately acknowledge the abstract nature of the model while proposing plausible biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model has several acknowledged limitations: it does not account for temporal correlations in velocity, locomotion slowing before pauses suggests velocity history should be included, and the model does not explain effects of command neuron number and activation level on velocity and undulation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C85 are acknowledged limitations of the model. C83 and C85 are straightforward statements of what the model does not include. C84 is supported by data (Figure 1G,H) showing gradual slowing before pauses. These are appropriate acknowledgments of model limitations that could be addressed in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Previous models have also proposed two pause states (Stephens et al., 2008) and reciprocal inhibition between command neurons (Rakowski et al., 2013), though with different approaches and interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 compare the current model with previous work, both supported by citations. These comparisons are accurate and help contextualize the current work within the field. The discussion appropriately notes both similarities and differences with prior models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mammalian sleep shows parallels to C. elegans locomotion: both involve stochastic switching between opposing states controlled by mutually inhibitory circuits. Lesions of sleep/wake nuclei reduce dwell times in both states, similar to command neuron ablations. This suggests synaptic uncoupling and dwell time changes may be a general principle of reciprocal inhibition in stochastic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, C90, and C91 describe established knowledge about mammalian sleep, supported by citations. C92 proposes a general principle based on parallels between C. elegans and mammalian systems. The comparison is well-supported by cited literature (Saper et al., 2010) and the parallel is striking. However, C92 remains a hypothesis that would require additional comparative studies to fully validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The command neurons are required for almost half of the C. elegans behavioral repertoire. The Stochastic Switch Model could serve as a multipurpose module for computing C. elegans behavior across multiple contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is inferred from known functions of command neurons and the catalog of C. elegans behaviors (Faumont et al., 2012). C94 is a proposal based on the model's ability to account for random search, biased random walks, and deterministic escape behaviors. Both claims are reasonable given the evidence presented, though C94 is speculative about future applications.",
+    "result_type": "MINOR"
+  }
+]

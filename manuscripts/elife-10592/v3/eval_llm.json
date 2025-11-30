@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "TRAF2 and SPHK1 are dispensable for TNF-mediated canonical NF-\u03baB and MAPK signalling in macrophages. TNF stimulation of wild-type, Traf2LC, and Sphk1-/- BMDMs showed identical kinetics of I\u03baB\u03b1 degradation and JNK/ERK phosphorylation, and TNF was not cytotoxic to these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C60, C61, and C62 are directly supported by Western blot data (Figure 1A, 1B) and flow cytometry data (Figure 1C) showing no differences in TNF signalling between wild-type, Traf2LC, and Sphk1-/- macrophages. This is a surprising finding that contradicts prior expectations but is well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TRAF2, but not SPHK1, is required for full-strength TNF signalling in MEFs, MDFs, and keratinocytes. Loss of TRAF2 caused delayed TNF-induced NF-\u03baB and MAPK activation and increased sensitivity to TNF-induced cell death, while Sphk1-/- cells showed normal signalling and resistance to TNF-induced death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C68-C72, C74-C76 are consistently supported by Western blot data (Figures 2A, 2B, 2D, 2E) showing delayed signalling in Traf2-/- but not Sphk1-/- cells, and by cell death assays (Figures 2C, 2F) showing increased sensitivity only in Traf2-/- cells. The data are consistent across multiple cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "TNF-induced RIPK1 ubiquitylation is delayed in Traf2-/- MDFs but normal in Sphk1-/- cells. RIPK1 ubiquitylation occurred within 5-15 min in wild-type and Sphk1-/- cells but was delayed until 60 min in Traf2-/- cells, correlating with delayed NF-\u03baB activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by TUBE IP data (Figures 3A, 3B) showing differential RIPK1 ubiquitylation kinetics. The correlation with delayed NF-\u03baB activation (C83) is appropriately stated as a correlation rather than causation. The data directly address the controversy about SPHK1's role in TRAF2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Keratinocyte-specific deletion of TRAF2 causes psoriasis-like epidermal hyperplasia and skin inflammation. Traf2EKO mice developed inflamed skin from 6 weeks of age with grossly thickened epidermis, widespread keratin-14 and keratin-6 expression, leukocyte infiltration, and apoptotic cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C87-C89, C91, C93-C95 are well-supported by histological images (Figure 4B), survival data (Figure 4F), and immunostaining showing epidermal hyperplasia, keratin expression patterns, CD45+ leukocyte infiltration, and cleaved caspase-3+ apoptotic cells. The phenotype is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TNF deletion delays but does not prevent skin inflammation in Traf2EKO mice. Traf2EKOTnf-/- mice did not develop inflammation at 6 weeks like Traf2EKO mice, but inflammation appeared at ~20 weeks and became severe by 30 weeks, without apoptotic cells, suggesting TNF-induced cell death drives early inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C98-C104 are supported by images (Figure 4D, 4E), survival data (Figure 4F), and absence of CC3+ cells in Traf2EKOTnf-/- mice. The inference that TNF induces cell death (C104) is reasonable given the absence of apoptotic cells when TNF is deleted. This distinguishes the Traf2EKO model from other TNF-dependent skin inflammation models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Early TNF-dependent inflammation in Traf2EKO mice is caused by apoptotic, not necroptotic, cell death. MLKL deletion did not prevent inflammation, but combined MLKL and caspase-8 deletion rescued early inflammation. MLKL oligomerization occurred only when caspases were inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C106-C110 are supported by images (Figures 5A, 5B) showing no rescue with MLKL deletion alone but rescue with Mlkl-/-Casp8-/- deletion, and by Blue Native PAGE data (Figure 5C) showing MLKL oligomerization only with caspase inhibition. This definitively establishes apoptosis as the primary cell death mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Psoriasis-like inflammation in Traf2EKO mice is characterized by neutrophil and CD4+ T cell infiltration, with increased IFN\u03b3-producing CD4+ T cells in Traf2EKOTnf-/- mice. However, hematopoietic cell-derived IFN\u03b3 is not a major contributor to inflammation, as shown by bone marrow chimera experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by flow cytometry data (Figures 6A-G) showing neutrophil and CD4+ T cell infiltration, and by bone marrow chimera experiments (Figure 7) showing that both wild-type and Ifng-/- chimeras developed inflammation equally. The conclusion about IFN\u03b3's role (C115) is appropriately cautious and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C116",
+      "C117",
+      "C118",
+      "C125",
+      "C126"
+    ],
+    "result": "Loss of TRAF2 causes constitutive non-canonical NF-\u03baB activation and altered inflammatory gene expression in keratinocytes. NIK and p52 were elevated in Traf2-/- keratinocytes independently of TNF, and many inflammatory genes including Csf1, IL-23, TNFSF9, Cr1l, and Cxcl16 were highly elevated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C116-C118, C125-C126 are supported by Western blot data (Figure 8A) showing NIK and p52 elevation, and by qPCR array data (Figure 8E) showing altered inflammatory gene expression. The independence from TNF (C118) is demonstrated by lack of change upon TNF stimulation. This provides a mechanism for TNF-independent inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C135",
+      "C138"
+    ],
+    "result": "Simultaneous deletion of TNF and NF-\u03baB2 completely prevents psoriasis-like inflammation in Traf2EKO mice, while deletion of Map3k14 or Nfkb2 alone does not. Traf2EKOTnf-/-Nfkb2-/- mice remained healthy up to 36 weeks without inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C128-C131, C135, C138 are supported by images and survival data (Figures 9, 10) showing that neither Map3k14 nor Nfkb2 deletion alone prevented inflammation, but combined Tnf-/-Nfkb2-/- deletion completely rescued the phenotype. This demonstrates that both TNF-dependent cell death and non-canonical NF-\u03baB contribute to inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "TRAF2 has essential tissue-specific functions that do not overlap with those of SPHK1. This is the main conclusion of the study based on comparative analysis of Traf2 and Sphk1 knockout cells across multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is the overarching conclusion supported by the entire body of experimental data showing that Traf2-/- but not Sphk1-/- cells have defects in TNF signalling (in certain cell types), sensitivity to TNF-induced death, and development of skin inflammation. This directly refutes the hypothesis that SPHK1-derived S1P is required for TRAF2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "TNF-dependent cell death drives early inflammation in Traf2EKO mice, while constitutive non-canonical NF-\u03baB activation may drive later-onset inflammation in Traf2EKOTnf-/- mice. These represent distinct mechanisms operating at different time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are interpretations stated in the discussion and supported by the genetic rescue experiments showing TNF deletion delays but doesn't prevent inflammation, and combined Tnf-/-Nfkb2-/- deletion completely prevents it. The speculation about later-onset disease (C59) is appropriately cautious and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Loss of TRAF2 does not affect keratinocyte proliferation or IL-17 signalling in vitro. No difference in proliferation was observed between Traf2-/- and wild-type keratinocytes, and IL-17 signalling and IL-17-induced proliferation were unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C122-C123 are supported by MTS assay data (Figures 8B, 8D) and Western blot data (Figure 8C). This rules out intrinsic proliferative advantage and IL-17 signalling defects as mechanisms for epidermal hyperplasia, suggesting that inflammation drives proliferation rather than cell-intrinsic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Traf2LC macrophages are sensitive to low-dose Smac-mimetic-induced death, while wild-type macrophages are resistant. After SM treatment, both genotypes initially produce similar TNF levels, but Traf2LC macrophages produce less TNF after 8 hours, likely due to SM-induced death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by flow cytometry data (Figure 1C) and ELISA data (Figure 1D). The inference about reduced TNF production due to cell death (C67) is reasonable given the correlation between cell death and reduced TNF secretion. This demonstrates that TRAF2 protects macrophages from SM-induced death even though it's not required for TNF signalling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C77",
+      "C78",
+      "C79",
+      "C86"
+    ],
+    "result": "TNF-induced death in Traf2-/- cells is associated with caspase cleavage and can be blocked by combined caspase and RIPK1 kinase inhibition. Caspase-8 and -3 cleavage correlates with cell death, QVD reduces death by ~50%, and QVD+Nec completely blocks death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C77-C79, C86 are supported by Western blot data (Figures 2B, 2D, 3B) showing caspase cleavage and by MTS assay data (Figure 2F) showing partial rescue with QVD and complete rescue with QVD+Nec. This characterizes the cell death mechanism and explains why both apoptosis and necroptosis inhibitors are needed for complete protection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "No significant mast cell infiltration was detected in the inflamed area of Traf2EKO mice by toluidine blue staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by toluidine blue staining images (Figure 4B) showing absence of mast cells. This is a negative result that helps characterize the inflammatory infiltrate and distinguish this model from mast cell-driven inflammation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Traf2-/- keratinocytes spontaneously secrete TNF in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by ELISA data (Figure 4C) showing significantly elevated TNF secretion by Traf2-/- keratinocytes compared to wild-type. This provides a mechanism for autocrine TNF signalling and cell death in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The anatomical location of skin lesions differs between Traf2EKO, Traf2EKOMap3k14aly/aly, and Traf2EKONfkb2-/- mice. Traf2EKO lesions appear in submental/forehead areas, while Traf2EKOMap3k14aly/aly and Traf2EKONfkb2-/- lesions appear around legs and ventral areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are supported by images (Figures 9A, 10A, 10C) showing different lesion locations. This observation is interesting but the biological significance is unclear. It may reflect different inflammatory mechanisms or regional differences in keratinocyte biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Three of thirteen Traf2EKOTnf-/-Nfkb2-/- mice developed early skin lesions around the mouth and anus, likely due to opportunistic infections associated with NF\u03baB2 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are supported by images (Figure 10C, 10D) and by analogy to other NF\u03baB2-deficient mice that are susceptible to infections. The inference about opportunistic infections (C137) is reasonable given the known immunodeficiency in NF\u03baB2-deficient mice and the anatomical location of lesions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The Traf2EKO mouse model might represent a clinically relevant model of psoriasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C15 is stated as speculation in the abstract. While the model shows psoriasis-like features (epidermal hyperplasia, keratin expression, immune cell infiltration), the claim of clinical relevance requires validation against human psoriasis pathology and potentially therapeutic response. The authors appropriately use 'might' to indicate uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Inhibition of non-canonical NF-\u03baB signalling might be beneficial in chronic inflammatory disease together with TNF inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is stated as speculation in the discussion. While the mouse data show that combined Tnf-/-Nfkb2-/- deletion prevents inflammation, translating this to therapeutic benefit in human disease requires clinical validation. The suggestion is reasonable based on the data but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Increased proliferation can be genetically separated from apoptotic cell death in Traf2EKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is an inference from the observation that Traf2EKOTnf-/- mice show epidermal hyperplasia without apoptotic cells (C103). This demonstrates that proliferation and cell death are separable processes, though the mechanism driving proliferation in the absence of cell death remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C90",
+      "C92",
+      "C127",
+      "C140",
+      "C141"
+    ],
+    "result": "Background knowledge and literature review claims about TRAF2, SPHK1, S1P, and related signaling pathways. These include TRAF2's structure and function, the controversy about TRAF2 RING domain E3 ligase activity, S1P biology, and the Alvarez et al. hypothesis about S1P as a TRAF2 cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C17-C46, C90, C92, C127, C140-C141 are background knowledge claims supported by citations to the literature. These provide context for the current study and are appropriately referenced. The authors accurately represent both sides of the controversy about TRAF2 RING domain function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Out of more than 600 inflammatory genes analyzed, about 300 genes were constitutively expressed in keratinocytes under serum-free conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by qPCR array data (Figure 8E). This is a methodological observation about baseline gene expression that provides context for interpreting the differential expression between genotypes.",
+    "result_type": "MINOR"
+  }
+]

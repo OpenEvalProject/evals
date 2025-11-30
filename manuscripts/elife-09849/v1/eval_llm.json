@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C32",
+      "C33",
+      "C34",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study recorded 1368 cells (1301 principal cells, 67 interneurons) from 6 rats across 45 sessions during a context-guided odor-reward association task. Rats were implanted with hyperdrives containing 24 tetrodes targeting CA1, and recordings were performed during correct trials (1.5s nose poke with rewarded odor) and incorrect trials (1.5s nose poke with non-rewarded odor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C32-C34, and C90-C101 provide comprehensive methodological details including subject characteristics, surgical procedures, recording parameters, and behavioral task design. The methods are sufficiently detailed and internally consistent, supporting the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C40"
+    ],
+    "result": "During odor sampling, theta (4-12 Hz), beta (15-35 Hz), low gamma (35-55 Hz), and high gamma (65-90 Hz) frequencies exhibited dynamic amplitude profiles with significant changes over time. Low gamma amplitude showed a significant interaction effect with increased amplitude during correct trials in the last second of odor sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide statistical evidence (repeated measures ANOVA with specific F-values and p-values) demonstrating amplitude changes across frequencies. The significant interaction effect for low gamma (C18: p=0.0008) is properly documented. The interpretation (C40) reasonably follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C41",
+      "C42",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C62"
+    ],
+    "result": "Interneurons exhibited unique engagement patterns across the four rhythmic circuits that related to task performance. Beta15-35Hz coherent interneurons were predominantly coherent during correct trials only, while theta4-12Hz coherent interneurons were often coherent during all trials. Engagement arose from reorganization of spike timing rather than firing rate changes, as interneurons showed higher firing rates during incorrect trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide robust statistical evidence (chi-square tests with Bonferroni corrections, Wilcoxon signed-rank tests) for differential interneuron engagement. The finding that firing rates were higher during incorrect trials (C21: p=0.0013) while coherence was lower rules out firing rate as an explanation. Phase analysis (C41-C42) supports the reorganization interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C43",
+      "C44",
+      "C45",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Principal cells preferentially exhibited spike-phase coherence during correct trials only across all rhythms, with stronger coherence during correct trials despite no differences in firing rates between trial types. Beta15-35Hz, low gamma35-55Hz, and high gamma65-90Hz coherent principal cells showed this pattern more consistently than theta4-12Hz coherent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 provide comprehensive statistical evidence (chi-square tests for all rhythms, Wilcoxon signed-rank test for firing rates) demonstrating selective principal cell engagement during correct trials. Phase analysis (C43-C45) reveals rhythm-specific differences in phase consistency. The lack of firing rate differences (C23: p=0.5750) strengthens the coherence findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C46",
+      "C63",
+      "C88"
+    ],
+    "result": "Interneurons were significantly more engaged in multiple rhythms than principal cells, with the largest proportion coherent to all four rhythms during correct trials. During incorrect trials, interneurons were most often coherent to theta4-12Hz only, indicating that flexible engagement in multiple rhythmic circuits is important for task-related processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C46 provide statistical evidence (chi-square tests) demonstrating differential multi-rhythm engagement between interneurons and principal cells, and between correct and incorrect trials. The interpretation (C63, C88) is well-supported by the quantitative data showing distinct engagement patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The majority of principal cells exhibited coherence to a single rhythmic circuit during both correct and incorrect trials, suggesting that theta4-12Hz, beta15-35Hz, low gamma35-55Hz, and high gamma65-90Hz reflect functionally distinct processing states. This contrasts with interneurons, indicating that the two cell types interact with rhythmic circuits in markedly different ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C64-C67 are supported by the data presented in Figures 2 and 5, showing that principal cells predominantly engage single rhythms while interneurons engage multiple rhythms. The interpretation that different rhythms reflect distinct processing states (C64) logically follows from the single-rhythm engagement pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C48",
+      "C49",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Amplitude correlations between frequency pairs revealed that theta4-12Hz and low gamma35-55Hz amplitudes were anti-correlated, while theta4-12Hz-beta15-35Hz and beta15-35Hz-low gamma35-55Hz amplitudes were positively correlated. This suggests potential co-modulation of beta15-35Hz with theta4-12Hz and low gamma35-55Hz, but temporal segregation between theta4-12Hz and low gamma35-55Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C49 provide statistical evidence (Tukey's HSD tests with specific p-values) for differential amplitude correlations. Claim C48 shows no significant coherence correlations for interneurons coherent to all rhythms (p=0.1648). The interpretations (C68-C70) are appropriately cautious given the variability across sessions shown in Figure 5-supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C50",
+      "C52",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Principal cells coherent to each rhythm differentially represented task dimensions. Theta4-12Hz coherent cells showed increases in information for all task dimensions after odor delivery. Beta15-35Hz coherent cells exhibited significant increases only for odor-position conjunctions at the end of the poke, suggesting beta15-35Hz circuits are particularly selective for processing odor-position information critical for task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide statistical evidence (Friedman's tests with specific chi-square values and p-values) demonstrating differential information content across rhythms and time intervals. The finding that beta15-35Hz cells only showed significant increases for odor-position information (C29: p=0.0376) supports the interpretation that this rhythm is selective for associative memory processing (C52, C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C58",
+      "C87",
+      "C89"
+    ],
+    "result": "Distinct processing states arise from the engagement of rhythmically identifiable circuits with unique roles in organizing task-relevant processing. Beta15-35Hz rhythm engagement was most correlated with correct performance and may instigate distinct information processing critical for memory function. Different rhythms make unique contributions to hippocampal information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C6, C89) is well-supported by the convergent evidence from multiple analyses showing rhythm-specific engagement patterns (C19-C22), differential information representation (C28-C29), and distinct relationships to task performance. Claims C30-C31 represent reasonable interpretations, though C31 is appropriately labeled as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The engagement of principal cells in single rhythmic circuits may provide a mechanism for the hippocampus to simultaneously engage subpopulations in distinct task-relevant processes through multiplexing via frequency division, potentially facilitated by differences in innervation or intrinsic resonance properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 are speculative mechanistic proposals (appropriately labeled as SPECULATION) that extend beyond the data presented. While the single-rhythm engagement pattern is well-documented, the proposed mechanisms involving differential innervation, intrinsic resonance, and multiplexing require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Three potential mechanisms for beta15-35Hz rhythm generation are proposed: (1) rhythmic input from upstream structures like LEC, (2) local generation by the hippocampus, or (3) broad coordination across distributed networks through a central rhythm generator. Prior work supports LEC involvement in beta rhythms during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C86 present speculative mechanisms (appropriately labeled) supported by citations to prior work (C79-C81, C85). However, the current study does not directly test these mechanisms or provide data distinguishing between them. These remain plausible hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background knowledge claims establish that hippocampal oscillations are dynamic and arise from temporal coordination in neural networks, with different frequency ranges (theta, beta, gamma) reflecting inputs from different brain regions (MEC, CA3, LEC). Interneurons are positioned to shape rhythmic organization, and oscillatory changes occur during memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13, C35-C39 are appropriately supported by citations to prior work and represent established knowledge in the field. These provide necessary context for interpreting the current findings and are not novel claims of this study.",
+    "result_type": "MINOR"
+  }
+]

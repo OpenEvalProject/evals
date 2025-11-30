@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prp43 fused to Ntr1's G-patch motif (Prp43_Ntr1GP) efficiently disassembles ILS complexes with ~80% efficiency, producing identical dissociation products (IL RNA, free U6 snRNA, 18S U5 and 20S U2 snRNPs) as the full NTR complex. This activity is independent of Ntr2 and Ntr1-CTD, demonstrating that the G-patch domain is necessary and sufficient for ILS disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C72 are well-supported by direct experimental comparison in Figure 1B vs 1E, showing quantitatively similar disassembly efficiency (~80% IL RNA release) and identical product profiles. The lack of effect upon Ntr2 addition (C69, Figure 1F) provides strong evidence for independence from these cofactors. However, the study lacks statistical analysis of replicate experiments and error bars on quantifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C90"
+    ],
+    "result": "Prp43_Ntr1GP, but not the full NTR complex, efficiently disassembles wild-type Bact complexes, suggesting that Ntr2 and Ntr1-CTD act as negative regulators that prevent NTR from disrupting properly assembled spliceosomes prior to catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential activity is clearly demonstrated by comparing Figures 2A (NTR - no disassembly) and 2C (Prp43_Ntr1GP - efficient disassembly). This supports the 'doorkeeper' model proposed in C138-C140. However, the mechanism of negative regulation is not directly tested - alternative explanations such as steric hindrance or altered binding kinetics are not excluded. The conclusion about 'preventing disassembly of properly assembled spliceosomes' (C10, C90) is an inference that requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prp43_Ntr1GP disassembles Bact complexes by displacing U2 snRNP from pre-mRNA while leaving U2 SF3a/b proteins associated with U2 snRNA. The U5 snRNP remains bound to pre-mRNA along with NTC proteins, and free U6 snRNA is released.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches support this result: gradient fractionation (C74-C76), immunoprecipitation (C78-C79), UV crosslinking (C84-C85), and mass spectrometry (C82-C83). The quantitative dissociation of U2 from pre-mRNA is convincingly demonstrated by Cus1-TAP pulldown (C87, Figure 2F). The preservation of U2 SF3a/b-U2 snRNA association (C83, C147) is important for distinguishing U2 displacement from U2 snRNP disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prp43_Ntr1GP disassembles 67% of B complexes, completely displacing U2 snRNP from the pre-mRNA branch site. Approximately one-third of U2 remains associated with the tri-snRNP as a U2.U4/U6.U5 tetra-snRNP, while the remainder forms free 20S U2 snRNPs. NTC proteins bind directly to pre-mRNA after disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The B complex disassembly is well-documented through gradient analysis (C94-C97), immunoprecipitation (C98-C101), mass spectrometry (C102-C103), and crosslinking (C106-C107). The bipartite distribution of U2 (tetra-snRNP vs free 20S) is clearly shown. However, the 67% disassembly efficiency (C94) is lower than for other complexes, and the manuscript doesn't adequately explain this difference or provide error estimates. The conclusion about 'complete displacement' (C109) may be overstated given the partial disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C125"
+    ],
+    "result": "Prp43_Ntr1GP displaces U2 snRNP from the pre-mRNA in A complexes while leaving U1 snRNP bound to the 5' splice site, demonstrating that the U2 snRNP-branch site interaction is the main target across all spliceosomal complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The A complex data (Figure 4) clearly show U2 displacement with U1 retention, supporting the specificity of Prp43_Ntr1GP for the U2-BS interaction. The immunoprecipitation with anti-Nam8 (C114, Figure 4C) convincingly demonstrates selective U2 displacement. This result, combined with similar findings in B, Bact, and ILS complexes, strongly supports the conclusion that U2-BS is the primary target (C116, C125). However, the study lacks direct mechanistic evidence for how this displacement occurs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Prp43_Ntr1GP efficiently disassembles Act\u03946Bact complexes (lacking intron nucleotides downstream of the branch site), demonstrating that these downstream nucleotides are not required for Prp43 docking or activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 5 clearly shows efficient disassembly of Act\u03946Bact complexes by Prp43_Ntr1GP, supporting the conclusion that downstream intron sequences are dispensable. This is an important negative result that helps constrain models of Prp43 binding and mechanism. However, the manuscript doesn't quantify the efficiency compared to wild-type Bact complexes, which would strengthen the conclusion. The inference about 'docking' (C121) goes beyond what is directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Prp43_Ntr1GP and Prp43 alone crosslink exclusively to pre-mRNA (not to U2 or other snRNAs) in Bact complexes, with Prp43_Ntr1GP showing higher crosslinking efficiency than Prp43 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The UV crosslinking data (Figure 6B) clearly demonstrate exclusive pre-mRNA crosslinking for both Prp43 and Prp43_Ntr1GP. The higher efficiency of Prp43_Ntr1GP (C123) is visually apparent but not quantified. This result supports pre-mRNA as the RNA binding site for Prp43. However, the crosslinking was performed in the absence of ATP, so these represent binding interactions rather than active disassembly intermediates. The conclusion about 'prior to actively displacing U2' (C124) is an inference that assumes the crosslinked state represents a functional intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "Prp43_Ntr1GP crosslinks reproducibly to U2 SF3b proteins Cus1 and Hsh155 at multiple lysine residues in the C-terminal OB-fold domain of Prp43 and the G-patch region, suggesting these proteins help recruit and position Prp43 near the U2 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BS3 crosslinking data (Figure 6\u2014source data 1, Figure 6\u2014figure supplement 1) demonstrate reproducible protein-protein interactions between Prp43_Ntr1GP and U2 proteins. The mapping to specific domains (C129) adds molecular detail. However, the functional significance of these interactions is inferred rather than directly tested - the manuscript doesn't show that disrupting these contacts impairs Prp43 recruitment or activity. The conclusion about 'recruitment and positioning' (C131) is speculative. Additional non-reproducible crosslinks (C130) suggest some promiscuity in the crosslinking approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Prp43 recognizes its target site(s) in the spliceosome independently of Ntr2 and Ntr1-CTD, as demonstrated by crosslinking of both Prp43 alone and Prp43_Ntr1GP to pre-mRNA. Ntr1/Ntr2 recognize their binding sites independently of Prp43, and must bind at neighboring positions in the ILS to enable productive Ntr1 G-patch interaction with Prp43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crosslinking data (C133, Figure 6) support independent Prp43 binding. The model of independent recognition followed by productive interaction (C135-C137) is consistent with the data but represents a mechanistic inference. The claim about NTR component instability (C134) is supported by citation but not directly demonstrated here. The model would be strengthened by direct mapping of Ntr1/Ntr2 binding sites and testing whether they can bind in the absence of Prp43.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Ntr2 and Ntr1-CTD act as a 'doorkeeper' that ensures productive Prp43 interaction only with spliceosomes that should be disassembled (like ILS), preventing disassembly of properly assembled spliceosomes like Bact. Prp43_Ntr1GP bypasses this access control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 'doorkeeper' model is well-supported by the differential activity of NTR vs Prp43_Ntr1GP on Bact complexes (Figure 2). The inference that Ntr1/Ntr2 lack a productive binding site in Bact (C139) is reasonable but not directly tested. The model is conceptually appealing and consistent with all observations, but alternative mechanisms (conformational changes, competitive inhibition) are not rigorously excluded. The conclusion would be strengthened by identifying the molecular basis of the 'doorkeeper' function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C172",
+      "C173"
+    ],
+    "result": "The U2 snRNP-branch site interaction is the principal target of Prp43 in the spliceosome, as it is the only structure common to all complexes (A, B, Bact, ILS) that are disassembled by Prp43_Ntr1GP. Prp43 dislodges U2 snRNP as an intact particle, and all other dissociation products result from this primary disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logic that U2-BS is the common target (C142-C143) is sound and supported by consistent U2 displacement across all complexes tested. The preservation of U2 SF3a/b-U2 snRNA association (C147) supports displacement of an intact particle (C148-C149). However, the claim that 'all other dissociation products are generated as a consequence' (C173) is a strong inference that isn't directly proven - the manuscript doesn't rule out that Prp43 might have multiple sequential targets. The 'keystone' model (C164) is favored but acknowledged as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "In ILS and Bact complexes, Prp43_Ntr1GP disrupts U2/U6 helices I and II, the 5' intron-U6 ACAGA box interaction, and U2-U5 interactions. However, U2/U6 helix II is likely not a direct target, as evidenced by stable tetra-snRNP formation in B complex disassembly and retention of U4/U6 base-pairing. Prp43_Ntr1GP shows specificity, not disrupting U1-5'SS or U5-pre-mRNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disruption of multiple RNA-RNA interactions (C161-C163) is well-documented. The argument against U2/U6 helix II as a direct target (C167) is logical and supported by the B complex data showing stable tetra-snRNPs (C165, C168). The selectivity evidence (C169-C170) strengthens the conclusion that Prp43 is not promiscuous (C171). However, the distinction between direct targets and downstream consequences remains somewhat ambiguous - the manuscript favors a 'keystone' model (C164) but doesn't definitively prove it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Based on known properties of Prp43 and the experimental data, the authors propose that Prp43_Ntr1GP likely translocates along pre-mRNA in a 5' to 3' direction, displacing U2 proteins and disrupting U2 snRNA-BS base-pairing, acting as an RNPase coupled with RNA duplex unwinding. An alternative model suggests Prp43 could act locally without significant translocation, similar to DEAD-box proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic models (C152-C154) are explicitly presented as speculative interpretations based on prior work (C150-C151) and the current data. The manuscript appropriately acknowledges both possibilities and doesn't claim to distinguish between them. The data are consistent with both models but don't directly test directionality, processivity, or translocation. Additional experiments (e.g., with directional blocks, single-molecule studies) would be needed to distinguish these mechanisms. This represents appropriate scientific speculation rather than unsupported claims.",
+    "result_type": "MINOR"
+  }
+]

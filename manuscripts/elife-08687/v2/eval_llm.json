@@ -1,0 +1,154 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C27"
+    ],
+    "result": "The mathematical model predicts that telomere length distributions form a traveling wave that contains information about progressive telomere loss and the fraction of symmetric cell divisions. Under symmetric stem cell self-renewal, the model predicts logarithmic decay of average telomere length with age, while asymmetric divisions alone produce linear decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, and C27 describe core mathematical predictions that are internally consistent and derived from the differential equations presented. The traveling wave behavior and logarithmic vs. linear decay patterns are mathematically sound predictions that follow from the model assumptions and are later tested against experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study collected telomere length data from 356 healthy individuals aged 0-85 years, including 47 cord blood samples and 28 bone marrow biopsies from Hodgkin lymphoma patients without bone marrow involvement. Average telomere length was measured using Flow-FISH in all samples, and 66 samples were additionally analyzed with Q-FISH to obtain full telomere length distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C31, and C53-C57 consistently describe the sample collection, methodology, and ethical approval. The use of established Flow-FISH and Q-FISH protocols with appropriate citations supports the validity of the measurements. The use of Hodgkin lymphoma patients without bone marrow involvement as healthy controls is reasonable but could introduce subtle confounding factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of telomere length data reveals an expanding stem cell pool during childhood and adolescence (with approximately 30-35% symmetric divisions population-wide), followed by an approximately maintained stem cell population in adults (with 0-20% symmetric divisions). Bayesian analysis suggests transitions in stem cell dynamics occur between ages 6-7 years for lymphocytes and 10-15 years for granulocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C38-C42 present a coherent picture supported by multiple analytical approaches (maximum likelihood estimation, Bayesian inference, and model selection via AIC). The findings are validated on an independent dataset of 835 individuals (C37), strengthening confidence. The transition ages and probability estimates are derived from rigorous statistical methods with appropriate uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C43"
+    ],
+    "result": "Model 1 (asymmetric divisions only) fails to explain the accelerated telomere loss in infants, underestimating initial telomere length. Model 2 (incorporating symmetric divisions) provides superior fit with parameter estimates of 75\u00b17 bp/year loss for lymphocytes (p=0.35\u00b10.07) and 68\u00b15 bp/year for granulocytes (p=0.44\u00b10.2). Model selection via AIC strongly favors Model 2 over Model 1 and multiphase models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C43 present a clear model comparison with quantitative parameter estimates and statistical model selection. The AIC values (Model 1: 2550, Model 2: 2328, multiphase: 2361) provide strong statistical evidence favoring Model 2. The parameter estimates include confidence intervals and are validated on independent data (C37), supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46"
+    ],
+    "result": "The method can detect individual differences in stem cell dynamics from single tissue samples. Individual analysis of 66 samples reveals low symmetric self-renewal probability (p=0.005-0.03) in adults and substantial inter-individual variation in telomere loss rates (18-110 bp/year).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45, and C46 describe individual-level analysis that complements population-level findings. The individual parameter estimates are consistent with population-level results (C39, C42), providing internal validation. The wide range of telomere loss rates (18-110 bp/year) reflects genuine biological variation, though quality of individual fits should be assessed (mentioned in Supplementary file 1 but not fully evaluated here).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Telomere loss rates differ between cell lineages and change with age: granulocytes show decreasing loss rates (-0.78 bp/year with age), lymphocytes show slightly increasing rates (+0.27 bp/year), and bone marrow shows intermediate decreasing rates (-0.36 bp/year). This pattern is consistent with age-related myeloid skewing of hematopoietic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe lineage-specific differences supported by individual sample analysis (Figure 7) and consistent with cited prior work on myeloid skewing (C49). The quantitative rates are derived from data, though the manuscript notes these trends are likely non-linear. The biological interpretation linking reduced granulocyte telomere loss to increased myeloid progenitor pools is plausible and supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Assuming 50 bp telomere loss per cell division implies approximately 1 hematopoietic stem cell replication per year in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 presents a straightforward calculation combining the measured population-level telomere loss rate (~50 bp/year in adults) with established knowledge about per-division telomere loss (50 bp, cited from Rufer et al., 1999). This inference is mathematically sound and consistent with prior observations of rare stem cell turnover under homeostasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript establishes biological background on stem cell biology, telomere structure and function, and the rationale for using telomere length as a biomarker of stem cell proliferation history. Key assumptions include that mature cell telomere distributions proxy stem cell distributions and that average telomere length shortens by a constant factor per division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C23 present established biological knowledge supported by appropriate citations. The key modeling assumption (C23) that mature cell telomere distributions proxy stem cell distributions is supported by citation and is reasonable given constant differentiation divisions (C22). However, the model's use of average telomere length (C19) rather than shortest telomere (C20) is acknowledged as a potential limitation that may underestimate senescent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "An independent dataset of 835 healthy humans from Aubert et al. (2012) confirms the parameter estimations and the accelerated telomere loss during adolescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 describes external validation on a large independent dataset that confirms the key findings. This substantially strengthens confidence in the results, as the patterns are reproducible across different cohorts and measurement protocols. The validation specifically confirms the accelerated adolescent telomere loss, a key prediction distinguishing Model 2 from Model 1.",
+    "result_type": "MAJOR"
+  }
+]

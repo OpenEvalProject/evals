@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "The authors successfully produced and purified recombinant human GPIHBP1 in Drosophila S2 cells. They identified an internal cleavage site at Arg38, which was not evolutionarily conserved, and created an R38G mutant that yielded high levels of pure, monomeric GPIHBP1^1-131 and a truncated GPIHBP1^34-131.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C30 describe the protein production strategy, the cleavage problem, the evolutionary analysis leading to the R38G mutation, and the successful purification of monomeric proteins. These are supported by size-exclusion chromatography data (Figure 1C) and SDS-PAGE analysis (Figure 1\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "GPIHBP1 comprises two functionally distinct domains: an intrinsically disordered acidic N-terminal domain (residues 1-33) and a folded C-terminal LU domain. The acidic domain exhibits characteristics of intrinsic disorder including large hydrodynamic volume, susceptibility to proteolysis, and extremely rapid hydrogen-deuterium exchange (100% uptake at 10 s). The acidic domain does not affect the structure of the LU domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C37 collectively establish the two-domain architecture of GPIHBP1. The intrinsically disordered nature of the acidic domain is supported by multiple lines of evidence: disorder prediction algorithms (Figure 1B), anomalous size-exclusion chromatography behavior (Figure 1C), proteolytic susceptibility (C33), and HDX-MS data showing 100% deuterium uptake at 10 s (Figure 1D-E, C34-C35). The independence of the two domains is demonstrated by identical HDX profiles for the LU domain in full-length and truncated GPIHBP1 (Figure 1\u2014figure supplement 3, C36-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "HDX-MS analysis reveals that the LU domain of GPIHBP1 becomes less dynamic upon LPL binding, particularly in \u03b2-strands D and E. Strand D is a key binding interface for LPL, as supported by prior mutagenesis data and disease-associated mutations. The acidic domain shows no change in deuterium uptake upon LPL binding, suggesting it either does not participate in binding or engages in very transient interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 describe HDX-MS findings on GPIHBP1\u2022LPL interactions. The reduced dynamics in strands D and E upon LPL binding are documented in Figure 1D-E (C38). The interpretation that strand D is a binding interface (C40) is supported by convergent evidence from HDX-MS, prior mutagenesis studies showing impaired binding with alanine substitutions at Thr85, Ser87, and Trp89 (C41), and disease-associated mutations Ser87\u2192Pro and Thr88\u2192Arg (C42). The lack of change in acidic domain deuterium uptake (C45) supports the interpretation of transient interactions (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HDX-MS identifies two distinct binding sites on LPL for GPIHBP1: residues 402-419 in the CTD interact with the LU domain, while residues 279-293 at the interdomain interface interact with the acidic domain. These assignments are supported by differential deuterium uptake patterns and clinical mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe the mapping of GPIHBP1 binding sites on LPL. The assignment of residues 402-419 as the LU domain binding site (C47) is based on differential HDX-MS showing that GPIHBP1^1-131, but not GPIHBP1^1-33, attenuates deuterium uptake in this region (C48, Figure 2A,C). This is corroborated by disease-associated mutations C418Y and E421K that impair GPIHBP1 binding (C49-C50). The acidic domain binding site at residues 279-293 (C51-C52) is supported by HDX-MS data (Figure 2B) and the presence of a heparin-binding site enriched in basic residues (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SPR measurements reveal that full-length GPIHBP1^1-131 binds the CTD of LPL with ~10-fold higher affinity (K_D = 0.12 \u03bcM) than truncated GPIHBP1^34-131 (K_D = 1.41 \u03bcM). This difference is primarily due to a 10-fold faster association rate constant (k_on) for full-length GPIHBP1, while dissociation rates (k_off) are similar. The W89S mutation abolishes binding, and the R38G mutation does not significantly affect binding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 describe SPR kinetic measurements (Table 1, Figure 3). The binding affinities and kinetic rate constants are directly measured by SPR (C54-C55, C59-C60). The lack of binding for CTDC418Y (C56) and GPIHBP1W89S (C57) serve as important negative controls. The interpretation that the acidic domain primarily affects k_on rather than k_off (C59-C60) is supported by the kinetic data. Control experiments with deglycosylated protein (C61) and wild-type GPIHBP1 (C62) confirm the robustness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The acidic domain and LU domain of GPIHBP1 serve different roles in regulating LPL binding kinetics. The acidic domain primarily increases the association rate (k_on), while both domains contribute to tighter binding with full-length LPL compared to the isolated CTD. Microscale thermophoresis confirms nanomolar affinity (K_D = 5.7 nM) for full-length GPIHBP1 with LPL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C66 synthesize the kinetic findings. The differential roles of the two domains (C4) are demonstrated by the 10-fold difference in k_on but similar k_off values between full-length and truncated GPIHBP1 (Table 1). The 5-fold slower k_off for full-length LPL compared to CTD alone (C63) indicates tighter binding with intact LPL (C64). The MST measurements (C65-C66, Figure 5) provide independent validation of the binding affinities under solution conditions, showing excellent agreement with SPR data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LPL undergoes time-dependent global unfolding of its catalytic N-terminal domain at room temperature, as evidenced by bimodal isotope envelopes in HDX-MS. This unfolding provides a structural explanation for the time-dependent loss of LPL catalytic activity. The unfolding rate is approximately half the rate of activity loss, consistent with a model where unfolding of one subunit in the homodimer inactivates both. The CTD remains stable during this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe a novel finding about LPL instability. The global unfolding of the NTD is directly demonstrated by HDX-MS showing bimodal isotope envelopes for peptides in the catalytic domain (C67, Figure 6A-B). The correlation with activity loss (C68) is supported by parallel activity assays (Figure 6D). The kinetic discrepancy between unfolding and activity loss (C69) leads to a mechanistic interpretation about homodimer inactivation (C70) that is reasonable but somewhat speculative. The stability of the CTD (C71-C72) is demonstrated by unchanged deuterium uptake (Figure 6B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The acidic domain of GPIHBP1 stabilizes LPL catalytic activity by mitigating global unfolding of the catalytic domain. GPIHBP1^1-131 and the isolated acidic peptide GPIHBP1^1-33 both inhibit LPL unfolding, while GPIHBP1^34-131 has a much weaker protective effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C102-C105 describe the stabilization function of the acidic domain. The protective effect is demonstrated by HDX-MS showing reduced unfolding in the presence of GPIHBP1^1-131 and GPIHBP1^1-33 (C102-C104, Figure 6C). The quantitative data in Table 2 show that the acidic domain (present in GPIHBP1^1-131 and GPIHBP1^1-33) provides the primary stabilization effect, while GPIHBP1^34-131 has a much weaker effect (C105). This is corroborated by preservation of both triolein hydrolase and esterase activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The acidic domain of GPIHBP1 interacts with the interdomain interface of LPL (residues 279-290), and this interaction stabilizes the catalytic domain by limiting dissociation/unfolding of the LPL homodimer. Disease-associated mutations at the interdomain interface (E410V, G409R, S259R) are located near the proposed binding site and alter the electrostatics of the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 connect the binding site identification with the stabilization mechanism. The interaction between the acidic domain and LPL residues 279-290 (C73) is supported by HDX-MS (Figure 2B) and cross-linking data (C83, C92). The stabilization being primarily mediated by the acidic domain (C74) is demonstrated by Table 2. The mechanistic interpretation about limiting homodimer dissociation (C75) is reasonable but somewhat speculative. The mapping of disease mutations to the interdomain interface (C76-C77, Figure 7B) provides genetic support, and the observation about altered electrostatics (C78) is a logical inference from the nature of the mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Zero-length cross-linking with EDC efficiently forms 1:1 complexes between LPL and GPIHBP1^1-131 or GPIHBP1^1-33, but not with GPIHBP1^34-131 or GPIHBP1 alone. Mass spectrometry identifies cross-links between the acidic domain (residues 1-33) and Lys298, Lys416, Lys424, and Lys430 in LPL, and one cross-link between the LU domain (Glu102) and LPL residues 423-430.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C87-C95 describe cross-linking experiments that provide direct evidence for protein-protein contacts. The formation of 1:1 complexes (C87, C89) and the absence of cross-linking in negative controls (C88, C94) are demonstrated by SDS-PAGE (Figure 7A). The stoichiometry interpretation (C90) is reasonable. The identification of specific cross-linked residues (C91-C93) is supported by high-resolution mass spectrometry (Figure 7\u2014figure supplement 1). The requirement for NHS-ester to detect GPIHBP1^34-131 cross-links (C94-C95) indicates weaker or less favorable interactions, consistent with the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose a two-step binding mechanism: the acidic domain of GPIHBP1 first forms an electrostatic 'encounter complex' with basic residues in LPL's CTD, which then guides maturation of the interaction through tighter binding between the LU domain and residues 402-419 in LPL. This model explains how GPIHBP1 mobilizes HSPG-bound LPL in the interstitial space through long-range electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82, C84-C86, C96-C101 present a mechanistic model for GPIHBP1\u2022LPL interactions in vivo. While the model is consistent with the biophysical data (fast k_on for full-length GPIHBP1, similar k_off values, cross-linking to basic residues), it is largely speculative regarding the in vivo function. The proposal that the acidic domain mobilizes HSPG-bound LPL (C80, C99) is a reasonable hypothesis based on the kinetic data (C100) and prior knowledge about HSPG interactions (C96-C98), but lacks direct experimental validation in the current study. The two-step binding mechanism (C81-C82) is a plausible interpretation of the kinetic and structural data, but alternative mechanisms cannot be excluded. The 1:1 stoichiometry (C86) is supported by SPR fitting and cross-linking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides extensive background on GPIHBP1 and LPL biology, including their physiological roles, structural features, disease associations, and prior challenges in studying GPIHBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C23 present established knowledge about GPIHBP1 and LPL from prior research. These claims are appropriately supported by citations throughout the manuscript and provide necessary context for the current work. The information about protein structures, disease mutations, and prior experimental challenges is well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors suggest that peptides derived from GPIHBP1's acidic domain could be used to stabilize LPL for X-ray crystallography studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is a speculative suggestion for future work. While it is a reasonable hypothesis based on the demonstrated stabilization effects of the acidic domain on LPL (Table 2, Figure 6C), it has not been tested experimentally. The suggestion is plausible but remains to be validated.",
+    "result_type": "MINOR"
+  }
+]

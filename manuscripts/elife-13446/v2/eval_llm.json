@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on p53 mutations in cancer, specifically highlighting that complete loss of P53 is frequent in osteosarcoma (OS), the most common bone cancer, with poor survival rates for metastatic disease. This contrasts with point mutations common in other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish the clinical and genetic context for OS through citations to prior literature and established knowledge. These background claims are well-supported by appropriate references to epidemiological and genomic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior genetic studies (GWAS in humans and dogs, mouse models) have implicated cAMP-related pathways in OS susceptibility and development, including mutations in GRM4, GRIK4, RANK, Prkar1a, and Prkaca.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 summarize prior work linking cAMP pathways to OS through citations to GWAS studies and mouse models. These are appropriately cited background claims that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PTHrP and PTH activate PTHR1, leading to cAMP production, PKA activation, and CREB1 phosphorylation. PTHrP acts in a paracrine manner in normal osteoblasts, and elevated PTHR1 and PTHrP expression are features of OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 establish the PTHrP-cAMP-CREB1 signaling axis through citations to prior mechanistic studies. These background claims are well-supported and provide the biological framework for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Loss of p53 in primary osteoblasts leads to decreased expression of p53 target genes and increased expression of CREB1 target genes, elevated CREB1 and pCREB1 protein levels, and increased cAMP levels, demonstrating that derepression of cAMP/CREB1 pathways is an early event following p53 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by qPCR, Western blot, and cAMP assay data (Figure 1A-C). The experimental design using tamoxifen-inducible p53 deletion with appropriate controls is sound, and the data clearly show the inverse relationship between p53 and CREB1 pathway activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Knockdown of either CREB1 or PTHrP prevents hyperproliferation of p53-deficient osteoblasts and induces apoptosis in already-transformed p53-KO cells, while normal osteoblasts are largely unaffected, demonstrating that PTHrP and CREB1 are required for the hyperproliferative phenotype of p53-deficient osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by proliferation assays and apoptosis data using two independent shRNAs (Figure 1E-H). The differential effects on p53-WT versus p53-KO cells are clearly demonstrated with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "PTHrP is a critical OS cell-derived autocrine stimulus of elevated cAMP in OS. Neutralizing PTHrP antibody or PTHrP knockdown reduces cAMP levels, proliferation, CREB1 target gene expression, and induces apoptosis in OS cells but not primary osteoblasts. In vivo, PTHrP knockdown reduces tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C52 are supported by multiple complementary approaches: antibody neutralization, shRNA knockdown, cAMP assays, proliferation assays, apoptosis assays, and in vivo tumor growth experiments (Figure 2). The data consistently demonstrate PTHrP as an autocrine driver of cAMP in OS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "PTHrP overexpression alone in normal osteoblasts causes cell death and is not sufficient to support OS initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by cell death assay data after PTHrP overexpression (Figure 2\u2014figure supplement 2A-C). This negative result is important for demonstrating that PTHrP elevation requires the p53-deficient context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "OS cells produce higher basal cAMP levels than primary osteoblasts and show sustained cAMP accumulation and persistent pCREB1 activation in response to forskolin, resulting in aberrantly extended transcriptional activation of CREB1 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by cAMP kinetics assays, Western blots, qPCR, and ChIP data (Figure 3A-F). The time-course experiments clearly demonstrate the altered dynamics of cAMP-CREB1 signaling in OS versus normal osteoblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CREB1 is more prominently phosphorylated in osteoblastic OS than in fibroblastic OS or primary osteoblasts, with 2-3 fold higher Creb1 expression in osteoblastic OS confirmed in both mouse and human OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by Western blot, qPCR, and RNA-seq data (Figure 3G-H). The subtype-specific differences in CREB1 expression and phosphorylation are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "During osteoblast differentiation, CREB1 levels decrease in normal osteoblasts (both mouse and human) but are maintained in OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by Western blot and qPCR data during differentiation time courses (Figure 3I, supplementary figures). This demonstrates a fundamental difference in CREB1 regulation between normal and malignant osteoblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "OS cells show 2-3 fold decreased expression of negative regulators of cAMP (phosphodiesterases, AKAPs, protein phosphatases), which would favor cAMP accumulation following GPCR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by qPCR data (Figure 3J). The inference in C65 about functional consequences is reasonable based on established knowledge of these proteins' roles in cAMP regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Continuous cAMP elevation (forskolin treatment) in primary osteoblasts alters cell surface phenotypes, reduces expression of differentiation markers (Runx2, Osx), impairs mineralization, and increases features associated with immature osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by flow cytometry, qPCR, and mineralization assay data (Figure 4A-E). The experiments demonstrate that sustained cAMP elevation blocks osteoblast differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In OS cells, forskolin treatment produces opposite effects compared to primary osteoblasts, with less profound changes in differentiation markers and increased mineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by flow cytometry, qPCR, and mineralization assay data (Figure 4F-J). This demonstrates the distinct response of OS cells to cAMP elevation compared to normal osteoblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CREB1 knockdown in fibroblastic OS reduces differentiation markers and mineralization, demonstrating that continuously elevated cAMP has distinct effects on normal osteoblasts versus OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by qPCR and mineralization assay data after CREB1 knockdown (Figure 4\u2014figure supplement 1J-L). This further demonstrates the requirement for CREB1 in OS differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CREB1 is dispensable for normal osteoblast function but required for proliferation of fibroblastic OS and survival of osteoblastic OS, with differential dependence between OS subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by proliferation and apoptosis assays after CREB1 knockdown in different cell types (Figure 5A-C). The subtype-specific differences in CREB1 dependence are clearly demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "OS subtypes can be discriminated by CREB1 target gene signatures, with osteoblastic OS showing highest expression of PTHrP-specific and archetypal CREB1 target genes, enrichment of pCREB1 and pPolII on target gene promoters, and increased CREB1 activity corresponding to elevated cAMP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by qPCR and ChIP-qPCR data (Figure 6A-C). The gene signature analysis and chromatin occupancy data provide strong evidence for differential CREB1 activity between OS subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Pathway analysis of somatic SNV mutations in human OS reveals enrichment of cAMP-related pathways (ion channels, transporters, PI3K, calcium signaling, PKA) in the top 20 pathways, with genes in the cAMP interactome most highly enriched in OS compared to other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by bioinformatic pathway analysis and enrichment analysis of published human OS sequencing data (Figure 7A-B). The statistical analysis using hypergeometric distribution is appropriate, though the interpretation should be cautious given the complexity of OS genomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The authors conclude that increased cAMP levels and autocrine PTHrP activation are early consequences of p53 deletion in osteoblasts, and that the PTHrP-cAMP-CREB1 axis is required for both the hyperproliferative phenotype of p53-deficient osteoblasts and maintenance of established OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are summary conclusions supported by the collective experimental data from the manuscript. The evidence from multiple complementary approaches (genetic manipulation, pharmacological intervention, in vivo studies) strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C93"
+    ],
+    "result": "The authors propose that the PTHrP-cAMP-CREB1 axis represents a tractable pathway for therapeutic inhibition in OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C90, and C93 are speculative conclusions about therapeutic potential. While the data demonstrate dependence of OS on this pathway, no therapeutic intervention studies or inhibitor testing are presented. This remains a hypothesis requiring validation through drug studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Prior work by the authors showed that reducing PTHR1 expression enhanced OS differentiation and mineralization in vivo, and that osteoblastic OS had higher intracellular PTHrP levels than fibroblastic OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 cite prior published work by the authors (Ho et al., 2015). These are appropriately cited background claims that support the current study's focus on the PTHrP pathway.",
+    "result_type": "MINOR"
+  }
+]

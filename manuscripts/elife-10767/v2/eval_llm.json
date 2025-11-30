@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C84",
+      "C85",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CDKG1 is a novel sizer protein that regulates mitotic division number through the RB pathway. Loss of CDKG1 leads to fewer divisions and large daughters, while mis-expression causes supernumerous divisions and small daughters. CDKG1 acts genetically upstream of MAT3/RBR and specifically affects S/M phase size control without altering commitment size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic, epistasis, and phenotypic data (C21, C23, C28, C29, C103, C104) strongly support CDKG1's role as a mitotic sizer. Loss-of-function and gain-of-function phenotypes (C3, C4) are complementary and specific to S/M phase (C27, C103, C104). The epistasis analysis (C28, C29, C102) clearly places CDKG1 upstream of MAT3/RBR. This represents a major discovery of a novel cell size regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C107"
+    ],
+    "result": "CDKG1 is a novel CDK subfamily member distinct from CDK1/CDKA but more closely related to core cell cycle CDKs than to CDK4/6. It has a unique N-terminal domain and a variant SDSTIRE motif replacing the canonical PSTAIRE. CDKG1 can functionally complement yeast cdc28-13 in a kinase-activity-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (C32, C33), sequence analysis (C30, C31), and functional complementation data (C34, C35, C36) provide strong evidence for CDKG1 as a novel CDK subfamily. The yeast complementation assay demonstrates functional conservation of essential CDK features. The structural and evolutionary characterization is thorough and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C108"
+    ],
+    "result": "CDKG1 specifically interacts with D-type cyclins (CYCD2, CYCD3, CYCD4) but not with A- or B-type cyclins. CYCD2 and CYCD3 show stronger interactions than CYCD4. CDKG1 can bind MAT3/RBR directly without requiring D-cyclins, while CYCD3 also binds MAT3/RBR directly but CYCD2 requires CDKG1 for MAT3/RBR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent assays (Y2H, co-IP, GST pull-down) consistently demonstrate CDKG1's specific interaction with D-cyclins (C37, C38, C39, C40, C45) and with MAT3/RBR (C43, C46). The differential binding properties of CYCD2 vs CYCD3 (C47, C48) are well-documented. The LxCxE motif requirement (C44) provides mechanistic insight. These protein-protein interactions are critical for understanding CDKG1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C109"
+    ],
+    "result": "CDKG1 can phosphorylate MAT3/RBR in vitro, with activity stimulated ~1.7-fold by CYCD3. This phosphorylation requires active CDKG1 kinase domain. CDKG1 associates with MAT3/RBR in vivo specifically during S/M phase. However, CDKG1 is not the predominant kinase for MAT3/RBR, which is likely phosphorylated by multiple CDKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro kinase assays (C49, C50, C53, C54) and in vivo co-IP data (C55) demonstrate that CDKG1 can phosphorylate MAT3/RBR. The observation that bulk MAT3/RBR phosphorylation is unchanged in cdkg1 mutants (C56, C57) is appropriately interpreted as indicating multiple kinases target MAT3/RBR (C58, C101). This is consistent with the known complexity of RB phosphorylation (C99, C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CDKG1 protein and mRNA accumulate in late G1 and peak just before S/M, with expression scaling allometrically with mother cell size. Large mother cells produce higher concentrations of CDKG1 than small mother cells. This scaling relationship differs from control proteins like histone H3 and tubulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot (C59, C60, C67, C68), qRT-PCR (C61, C70), and quantitative analysis (C69, C71) provide strong evidence for cell-size-dependent CDKG1 accumulation. The comparison to control proteins (C71) demonstrates the specificity of this scaling relationship. The allometric scaling (C69) is a key feature distinguishing CDKG1 from simple linear accumulation and is central to its proposed sizer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nuclear-localized CDKG1 undergoes progressive dilution and degradation with each round of cell division. Nuclear volume halves with each division while N/C ratio remains constant, indicating CDKG1 concentration decreases due to both dilution and net degradation. The CDKG1/nuclear DNA ratio drops more than two-fold with each division. All CDKG1 is synthesized in mother cells prior to S/M and is not replaced during division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative immunofluorescence (C72, C73, C74, C78) combined with nuclear volume measurements (C75) provides strong evidence for CDKG1 dilution and degradation. The inference that CDKG1 is not resynthesized during division (C77) is well-supported by the data. The calculation of CDKG1/DNA ratio (C78) provides a potential mechanism for counting divisions. This is a critical mechanistic insight into how CDKG1 might function as a sizer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C87",
+      "C88"
+    ],
+    "result": "CDKG1 has an unusually long (1.7 kb) and uridine-rich (27% U) 3' UTR that controls its cell-cycle-specific expression pattern. The 3' UTR confers S/M-phase-specific accumulation to a heterologous reporter gene, suggesting it regulates mRNA stability in a cell-cycle-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase reporter experiments (C63, C64) demonstrate that the CDKG1 3' UTR is sufficient to confer cell-cycle-specific expression. The unusual properties of the 3' UTR (C62) and the correlation between reporter and endogenous CDKG1 mRNA patterns (C64) support the conclusion that the 3' UTR regulates mRNA stability (C65, C87, C88). While the exact mechanism remains speculative (C88), the functional role of the 3' UTR is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mis-expression of CDKG1 under constitutive promoters (PSAD or PL23) causes a small-cell phenotype due to supernumerous divisions during S/M, without affecting commitment size. This phenotype requires kinase activity and is unstable, being lost upon repeated passage. Expression in daughter cells, where CDKG1 is normally absent, is observed in mis-expression lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell size distribution data (C79, C80) and expression analysis (C81) demonstrate that CDKG1 mis-expression causes extra divisions specifically during S/M. The requirement for kinase activity (C82) and instability of the phenotype (C83) are well-documented. These gain-of-function experiments complement the loss-of-function data and strongly support CDKG1's role as a limiting component of size control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "cdkg1-2 mutants pass commitment at a slightly larger size than wild type (~205-225 \u00b5m\u00b3 vs ~190-210 \u00b5m\u00b3) but earlier in time due to being born larger. After commitment, cdkg1 mutants have a normal ~8 hr delay before S/M. This distinguishes cdkg1 from mat3, dp1, and e2f1 mutants that have altered commitment sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The commitment assay data (C24, C26) and comparison to other mutants (C25) demonstrate that CDKG1 specifically affects S/M phase size control rather than commitment. The slightly larger commitment size is appropriately attributed to larger birth size rather than a defect in the commitment checkpoint itself. This specificity is important for understanding the distinct roles of different RB pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "CYCD3 is the most abundant D-type cyclin mRNA in Chlamydomonas and is expressed in a pattern similar to CDKG1 mRNA, making it a likely partner for CDKG1 during S/M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-PCR data (C51, C52) demonstrate CYCD3 abundance and co-expression with CDKG1. Combined with the strong Y2H interaction (C38) and kinase stimulation by CYCD3 (C49), this supports CYCD3 as the primary cyclin partner for CDKG1. This is a reasonable inference though direct genetic evidence for CYCD3's role in size control is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Chlamydomonas divides by multiple fission with a prolonged G1 phase followed by rapid S/M cycles producing 2^n daughters. Size control operates during S/M (larger mothers divide more times) and at commitment (cells must reach ~2x birth size). Committed cells remain in G1 for 5-8 hours and will divide at least once even without further growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established properties of Chlamydomonas cell cycle supported by extensive prior literature (C1, C11, C12, C13, C14, C15, C16). The authors appropriately cite previous work and use this background to frame their investigation of CDKG1. This provides essential context but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The Chlamydomonas RB pathway (MAT3/RBR, E2F1, DP1) regulates both commitment size and cell division number. mat3 mutants pass commitment at small size and divide too many times, producing small daughters. These defects are suppressed by mutations in E2F1 or DP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summarizes prior work by the authors (C17, C18, C19, C20) that provides the foundation for the current study. The citations to previous publications are appropriate. This background is essential for understanding CDKG1's placement in the pathway but represents prior findings rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "CDKG1 was previously annotated as a Chlamydomonas-specific cyclin dependent kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward citation to prior annotation work (C22). The current study significantly revises this annotation by showing CDKG1 is part of a broader CDKG subfamily (C32) rather than being Chlamydomonas-specific. This represents correction of prior annotation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "D-type cyclins in Chlamydomonas contain a conserved LxCxE motif in their N-termini that is important for binding RBR proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge from prior work (C41, C42) confirmed by the LxCxE mutation experiment (C44). The presence of this motif in Chlamydomonas D-cyclins is consistent with their proposed role in the RB pathway but represents known biology rather than a novel discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Cell-size checkpoints were first described in yeasts. Sizer proteins have been difficult to identify. In budding yeast, multiple pathways affect cell size including G1 cyclins, Whi5p, and SBF, but no consensus mechanism exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is accurate background information from the literature (C7, C8, C9, C10) that contextualizes the difficulty of identifying sizer proteins and the significance of the CDKG1 discovery. This represents field knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Other mechanisms must exist that trigger exit from S/M in the absence of CDKG1, but do so prematurely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable inference from the observation that cdkg1 mutants still exit S/M but with fewer divisions (C85). However, this represents speculation about unknown mechanisms rather than a demonstrated result. No data is provided to identify or characterize these other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors discuss various models for cell size control including mRNA stability control, CLN3 as a sizer in yeast, N:C ratio sensing in embryos, cell-size effects on physiology, size-dependent differentiation in Volvox, and comparisons to Whi5 dilution and CDK6 overexpression in lymphoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate citations to relevant literature (C89-C98) that provide context for interpreting CDKG1 function. The comparison of CDKG1/DNA ratio dynamics (C92) to N:C sensing mechanisms is appropriate. However, these represent discussion points and literature context rather than primary findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Animal RBRs are phosphorylated on over a dozen sites by multiple CDKs. MAT3/RBR has 16 predicted CDK phosphorylation sites. At least three CDKs (CDKA1, CDKB1, CDKG1) are likely active during S/M in Chlamydomonas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This combines prior knowledge about RB phosphorylation complexity (C99) with previous annotation of MAT3/RBR (C100) and literature on Chlamydomonas CDKs (C101). This provides important context for interpreting why CDKG1 loss doesn't eliminate bulk MAT3/RBR phosphorylation (C56, C57) but represents background information rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors compare CDKG1 to animal CDK4/6, noting both are non-essential CDKs with variant PSTAIRE motifs that bind D-cyclins, phosphorylate RB proteins, and integrate growth/size information into cell cycle control. They propose that CDK complexity was lost in fungi rather than gained in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallels between CDKG1 and CDK4/6 (C107-C110) are well-supported by the data presented throughout the manuscript. The evolutionary interpretation (C106) is a reasonable inference from the phylogenetic analysis (C32, C33) but remains somewhat speculative without broader taxonomic sampling. This represents an important conceptual advance but is primarily interpretive rather than a direct experimental finding.",
+    "result_type": "MINOR"
+  }
+]

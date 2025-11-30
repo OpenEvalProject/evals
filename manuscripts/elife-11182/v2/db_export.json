@@ -1,0 +1,2241 @@
+{
+  "submission": {
+    "id": "9be6d905-5288-433a-9691-1851b8509359",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:54:36.302489Z",
+    "updated_at": "2025-11-29T21:54:36.302489Z"
+  },
+  "content": [
+    {
+      "id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "submission_id": "9be6d905-5288-433a-9691-1851b8509359",
+      "content_type": "manuscript",
+      "content_text": "# Sampling the conformational space of the catalytic subunit of human \u03b3-secretase\n\n## Authors\n\n- Xiao-chen Bai<sup>1</sup>\n- Eeson Rajendra<sup>1</sup>\n- Guanghui Yang<sup>2</sup>\n- Yigong Shi<sup>2</sup> \u2020\n- Sjors HW Scheres<sup>1</sup> ([ORCID: 0000-0002-0462-6540](https://orcid.org/0000-0002-0462-6540)) \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n2. Ministry of Education Key Laboratory of Protein Science, Tsinghua-Peking Joint Center for Life Sciences, Center for Structural Biology, School of Life Sciences Tsinghua University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman \u03b3-secretase is an intra-membrane protease that cleaves many different substrates. Aberrant cleavage of Notch is implicated in cancer, while abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease. Our previous cryo-EM structure of \u03b3-secretase revealed considerable disorder in its catalytic subunit presenilin. Here, we describe an image classification procedure that characterizes molecular plasticity at the secondary structure level, and apply this method to identify three distinct conformations in our previous sample. In one of these conformations, an additional transmembrane helix is visible that cannot be attributed to the known components of \u03b3-secretase. In addition, we present a \u03b3-secretase structure in complex with the dipeptidic inhibitor N-[N-(3,5-difluorophenacetyl)-L-alanyl]-S-phenylglycine t-butyl ester (DAPT). Our results reveal how conformational mobility in the second and sixth transmembrane helices of presenilin is greatly reduced upon binding of DAPT or the additional helix, and form the basis for a new model of how substrate enters the transmembrane domain.\n\n## Introduction\n\n\u03b3-Secretase clears the anchors of type-I membrane proteins that are left behind in the membrane after shedding of their ectodomain. The substrate specificity of this intra-membrane protease is remarkably relaxed. It will cleave a wide range of substrates, as long as they form a single hydrophobic transmembrane helix, and the remaining ectodomain is not too large (Struhl and Adachi, 2000). As a manifestation of its promiscuous substrate specificity, \u03b3-secretase also cleaves its substrate in different positions. For two of its most studied substrates, the Notch receptor and the amyloid precursor protein (APP), \u03b3-secretase performs an initial endopeptidase-like \u03b5-cleavage, which is followed by carboxypeptidase-like trimming, called \u03b3-cleavage. Cleavage of APP leads to secretion of \u03b2-amyloid (A\u03b2) peptides into the extracellular environment. Abundant deposits of A\u03b2 peptides in the brain, clinically known as \u03b2-amyloid plaques, are a defining characteristic of Alzheimer's disease (AD). Variability in the position of both \u03b5\u2013 and \u03b3-cleavages results in A\u03b2 peptides with lengths ranging from 36 to 49 residues, with A\u03b240 being the most common form. Longer peptides seem to be more prone to aggregation, and increased ratios of A\u03b242/A\u03b240 are thought to play a role in AD pathogenesis (Tanzi and Bertram, 2005).\n\nBecause of its central role in A\u03b2 generation, \u03b3-secretase is an attractive target for treatment of AD. However, a clinical trial with the \u03b3-secretase inhibitor semagacestat had to be interrupted prematurely due to strong side effects, including skin cancer, weight loss and a faster decline of the cognitive skills of patients receiving the highest dose of the drug (De Strooper, 2014). Probably, global inhibition of the complex to reduce the formation of A\u03b2-peptides is undesirable, as this may also affect other pathways such as Notch signaling. Therefore, the development of modulators of \u03b3-secretase activity that leave \u03b5-cleavage intact but stimulate \u03b3-cleavage has been suggested as an alternative (Wolfe, 2012). Moreover, the development of specific inhibitors of Notch cleavage may be beneficial for the treatment of cancer. However, such developments are currently hindered by a lack of quantitative insights into the mechanism of \u03b3-secretase proteolysis.\n\nThe \u03b3-secretase complex consists of four essential, integral membrane proteins: presenilin (PS), nicastrin, anterior pharynx defective 1 (Aph-1), and presenilin enhancer 2 (Pen-2) (De Strooper, 2003; Kimberly et al., 2003). PS provides the two essential aspartates that form the proteolytic active site where both \u03b5 and \u03b3-cleavages occur. More than 200 missense mutations in the gene for PS have been linked to an early-onset, familial form of Alzheimer's disease (FAD) ((De Strooper et al., 2012) and http://www.alzforum.org/mutations). In humans, two genes encode two homologous forms of PS (PS1 and PS2), but most FAD-derived mutations target PS1. Because there are also two forms of Aph-1 (Aph-1a and Aph-1b), four possible complexes may form, of which nicastrin:Aph-1a:PS1:Pen-2 is the most abundant. Nicastrin has a large, heavily glycosylated ectodomain, which is thought to play a role in substrate recognition (Shah et al., 2005). Aph-1 has been proposed to play a scaffolding role (Lee et al., 2004). Pen-2 is essential for proteolytic activity of the mature complex, and facilitates auto-proteolysis of PS1 in a long cytosolic loop between its sixth and seventh transmembrane helices (TM6 and TM7) (Thinakaran et al., 1996).\n\nWe recently solved the cryo-EM structure of a nicastrin:Aph-1a:PS1:Pen-2 complex to a resolution of 3.4 \u00c5 (Bai et al., 2015a). This structure allowed building a near-complete atomic model, and revealed how Aph-1 and Pen-2 hold a remarkably flexible PS1 subunit underneath the nicastrin ectodomain. In particular, TM2, the cytoplasmic side of TM6 and the long linker between TM6 and TM7 of PS1 were largely disordered. The presence of the linker could only be inferred from fuzzy densities in 2D class averages, whereas the approximate position of TM2 could only be inferred from a 7 \u00c5 low-pass filtered map. This low-pass filtered map also showed a rod-shaped density in the cavity between TM2, TM3 and TM5, but the identity of this density could not be determined. Although the sample used for structure determination did show proteolytic activity for APP (Lu et al., 2014), the active site appeared to be in an inactive conformation as the two catalytic aspartates were too far apart to catalyze proteolysis.\n\nIn this paper, we set out to gain further insights into the proteolytic mechanism of \u03b3-secretase by using two complementary approaches to sample the conformational landscape of its catalytic subunit. With the aim of trapping the complex in a more defined conformation, we solve a structure in complex with the non-transition-state analogue inhibitor DAPT, which is a precursor in the development of semagacestat (Dovey et al., 2001). In addition, we describe how masked cryo-EM image classification combined with subtraction of part of the signal from the experimental images allows visualizing molecular dynamics of the catalytic subunit in its apo-state at the secondary structure level. The resulting four structures represent a significant step towards understanding how this protease cleaves its many substrates.\n\n## Results\n\n### Approach\n\nA powerful method of dealing with structural heterogeneity in cryo-EM data sets is to 'focus' refinement on a defined region of the protein complex of interest. In this approach one masks out part of the reference during 3D refinement, thereby effectively ignoring structural variability in less interesting parts. For example, we used masked refinements to deal with variability in the relative orientations of ribosomal subunits (Amunts et al., 2014; Wong et al., 2014). Similarly, masked multi-reference refinement may be used as a clustering tool, i.e. to separate experimental particle images based on differences in a defined region of interest. We refer to this approach as masked 3D classification. However, masked 3D classifications aimed at analyzing the conformational landscape of \u03b3-secretase in its apo-state were unsuccessful. An initial data set of 400,000 particles gave rise to a 3.5 \u00c5 map. Using different masks on the transmembrane domain, masked 3D classification consistently yielded only a single class showing good density. Although this approach did result in the selection of 160,000 particles from which we could calculate a better 3.4 \u00c5 map, it did not reveal the nature of conformational freedom within the catalytic subunit (Bai et al., 2015a).\n\nA fundamental problem with masked refinements is that one compares projections of a partial map with experimental projections of the entire particle (Figure 1). This leads to inconsistencies in the comparisons that underlie the refinement procedure. For example, one might want to focus classification on the part of the particle that is depicted in red in Figure 1A, and ignore any variations in the yellow part. Masking away the yellow part from the reconstruction in masked refinements (Figure 1C) yields reference projections that only contain the red part (Figure 1F). However, each experimental image (Figure 1D) contains signal coming from the entire particle, i.e. from both the yellow and the red parts. Therefore, the yellow part of the signal will act as an additional source of noise in the comparison between the experimental image and the masked reference projection. It will depend on the signal-to-noise ratio in the original image and on the size of the part of the complex that is masked away, whether this additional noise will affect the refinement. For large particles, high signal-to-noise ratios in the data make masked refinements relatively robust, but even for ribosomes masked refinements of the small subunit proved much more difficult than for the large subunit (Wong et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0A 3D model of a complex of interest. (B) The part of the complex one would like to ignore in masked classification (V1) is shown in yellow. (C) The part of the complex one would like to focus classification on (V2) is shown in red. (D) An experimental particle image is assumed to be a 2D projection of the entire complex in panel A that is affected by the contrast transfer function (CTF), and to which experimental noise (N, shown in grey) has been added. (E) A CTF-affected 2D projection of V1. (F) A CTF-affected 2D projection of V2. Previous approaches to masked classification in RELION (Amunts et al., 2014; Wong et al., 2014) compared experimental particles (panel D), with reference projections of only V2 (panel F). This results in inconsistent comparisons. (G) In the modified masked classification approach, one subtracts the CTF-affected 2D projection of V1 (panel E) from the experimental particle (panel D). This results in a modified experimental particle image that only contains experimental noise and the CTF-affected projection of V2, so that comparison with the reference projection in panel F becomes consistent.\n\nTo reduce the inconsistency in image comparison, we explored a modification of the masked classification approach. Using the example in Figure 1, if the noisy experimental image were to contain only signal from the red part, then a masked refinement would be consistent. To emulate this situation, we subtract projections of the yellow part of the reconstruction (Figure 1B,E) from every experimental image. This requires knowledge about the relative orientation of each particle, which is obtained from a consensus refinement of the entire data set against a single, unmasked reference. Also, we apply the CTF of each experimental image to the projection of the yellow part prior to the subtraction. The resulting, modified experimental particle image (Figure 1G) then ideally only contains the signal from the red part of the particle, and the only inconsistency in the image comparison is the original experimental noise. Therefore, using the subtracted experimental particle images in masked refinements that are focused on the red part of the signal will be better than using the original images.\n\n### Masked classification with signal subtraction on the apo-state data set\n\nBecause the PS1 subunit showed the highest level of disorder in our high-resolution structure, we decided to perform masked classification on PS1 with subtraction of the signal from the rest of the complex. Since the total molecular weight of the ordered part of PS1 in our previous map was less than 30 kDa, we reasoned that the remaining signal in the subtracted experimental images would probably not be strong enough to allow the determination of their relative orientations. Therefore, we performed masked classification on the set of 400,000 particles, while keeping all orientations fixed at the values determined in the refinement of the 3.5 \u00c5 consensus map. Classification into eight classes yielded three majority classes that showed good density (Figure 2). Five smaller classes gave suboptimal reconstructions, and the particles from these classes were discarded. The (original, non-subtracted) particles from the good classes were then subjected to separate 3D auto-refinement runs (Scheres, 2012), all of which were started from the same 40 \u00c5 low-pass filtered reference to avoid model bias. The resulting maps were very similar in the nicastrin and Aph-1 subunits, but obvious differences were present in the PS1 and Pen-2 subunits. The maps had resolutions in the range of 4.0\u20134.3 \u00c5, which allowed reliable main-chain tracing, but left density for many side chains less well defined (Table 1, Figure 3, Figure 3\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0From a masked 3D classification run on the PS1 subunit, the three largest classes (in cyan and blue, labeled class 1\u20133) showed good density. The five smallest classes (in grey) were ignored in further analyses as they showed suboptimal density. (B) Superposition of classes 1 and 2 and of classes 2 and 3 reveals the different orientations of TM6 in all three classes (indicated with red arrows), and the fact that TM2 (indicated with a red dashed box) is only ordered in class 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A 10\u00c5 low-pass filtered version of the map from class 3 (left) was refined against the particle subset identified for class 1. The resulting map (right) is undistinguishable from the original map from class 1, indicating that artifacts due to model bias did not play a role.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) From a masked 3D classification run on the Aph-1 subunit with subtraction of the residual signal, all eight classes look very similar. (B) A superposition of all eight maps.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Resulting maps from masked classifications on PS1 with subtraction of the residual signal using (A) six instead of eight classes; (B) a different random seed; and (C) ten classes and a slightly different mask from the run shown in Figure 2. The classes similar to the three largest classes shown in Figure 2 are highlighted in the same cyan and blue colors.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Three examples of experimental particle images. (B) Three examples of simulated particle images. In total, 50,000 images of particles from Class 1 and 50,000 images of particles from Class 2 were simulated (also see Methods). (C) Resulting maps for a masked classification with signal subtraction on the catalytic subunit using two references. (D) Distribution of the simulated particles in the resulting classes: 93% of the particles were clustered correctly.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig3-v2.jpg)\n\n**Figure 3.:** (A) The reconstructed density for the three classes. Nicastrin is shown in green, Aph-1 in orange, PS1 in cyan, and Pen-2 in yellow. \u03b1-Helical density that is unaccounted for by the \u03b3-secretase model is shown in purple. The same color code is used throughout this paper. (B) Schematic representation of the \u03b3-secretase atomic models. TMs of PS1 are numbered. The active site aspartates are shown in red. The purple dashed box highlights TM2 of PS1, which is only ordered in class 1. The purple arrows indicate the orientation of TM6, which is different in each class.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) FSC between the refined atomic models and the maps. (B) FSC between reconstructions from independently refined halves of the data sets.\n\n**Table 1.**\n Refinement and model statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Class1</th>\n      <th>Class2</th>\n      <th>Class3</th>\n      <th>DAPT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Particles</td>\n      <td>63,873</td>\n      <td>79,263</td>\n      <td>66,720</td>\n      <td>51,366</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.4</td>\n      <td>1.4</td>\n      <td>1.4</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>0.7\u20133.2</td>\n      <td>0.7\u20133.2</td>\n      <td>0.7\u20133.2</td>\n      <td>0.6\u20132.8</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron dose (e-/\u00c5\u22122)</td>\n      <td>40</td>\n      <td>40</td>\n      <td>40</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Map features</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Density TM2</td>\n      <td>+</td>\n      <td>-</td>\n      <td>-</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>C\u03b1-C\u03b1 distance\u00a0D257\u2013 D385 (\u00c5)</td>\n      <td>9.5</td>\n      <td>12.7</td>\n      <td>9.1</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>Conformation Pen-2</td>\n      <td>in</td>\n      <td>in</td>\n      <td>out</td>\n      <td>in</td>\n    </tr>\n    <tr>\n      <td>\u03b1-helical density</td>\n      <td>+</td>\n      <td>+</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>10,443</td>\n      <td>9,922</td>\n      <td>9,916</td>\n      <td>10,543</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1,315</td>\n      <td>1,245</td>\n      <td>1,247</td>\n      <td>1,329</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>4.1</td>\n      <td>4.0</td>\n      <td>4.3</td>\n      <td>4.2</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B-factor (\u00c52)</td>\n      <td>\u2212100</td>\n      <td>\u2212100</td>\n      <td>\u2212130</td>\n      <td>\u2212130</td>\n    </tr>\n    <tr>\n      <td>Fourier Shell Correlation</td>\n      <td>0.8236</td>\n      <td>0.8818</td>\n      <td>0.8050</td>\n      <td>0.8602</td>\n    </tr>\n    <tr>\n      <td>Rfactor</td>\n      <td>0.2917</td>\n      <td>0.3028</td>\n      <td>0.2816</td>\n      <td>0.3426</td>\n    </tr>\n    <tr>\n      <td>Rms deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bonds (\u00c5)</td>\n      <td>0.0112</td>\n      <td>0.0095</td>\n      <td>0.0120</td>\n      <td>0.0093</td>\n    </tr>\n    <tr>\n      <td>Angles (\u00b0)</td>\n      <td>1.7352</td>\n      <td>1.6083</td>\n      <td>1.7922</td>\n      <td>1.6186</td>\n    </tr>\n    <tr>\n      <td>Model geometry</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Molprobity score</td>\n      <td>3.17</td>\n      <td>2.89</td>\n      <td>3.16</td>\n      <td>3.22</td>\n    </tr>\n    <tr>\n      <td>Clashscore (all atoms)</td>\n      <td>17.35</td>\n      <td>9.31</td>\n      <td>13.26</td>\n      <td>18.15</td>\n    </tr>\n    <tr>\n      <td>Good rotamers (%)</td>\n      <td>89.6</td>\n      <td>90.9</td>\n      <td>86.6</td>\n      <td>88.9</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>85.1</td>\n      <td>84.4</td>\n      <td>84.2</td>\n      <td>84.3</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>10.9</td>\n      <td>12.3</td>\n      <td>11.5</td>\n      <td>11.8</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>4.0</td>\n      <td>3.3</td>\n      <td>4.3</td>\n      <td>3.9</td>\n    </tr>\n  </tbody>\n</table>\n\nAs a control for model bias we performed a cross-refinement, where the 10 \u00c5 low-pass filtered map from class 3 was used as initial reference for refinement of the particles assigned to class 1 (Figure 2\u2014figure supplement 1). The initial reference did not influence convergence, as the cross-refinement yielded a map that was indistinguishable from the one obtained for class 1 in Figure 3. As a negative control, we performed masked classification with signal subtraction using eight classes on the Aph-1 subunit (Figure 2\u2014figure supplement 2). The density for this subunit in the consensus map was very well defined, indicating that this subunit is much more rigid than PS1. In this case, the eight resulting classes attracted similar numbers of particles and all eight classes gave rise to very similar reconstructions. Finally, in a third control to test reproducibility we performed multiple different masked classifications on the PS1 subunit (Figure 2\u2014figure supplement 3). We used different numbers of classes (six and ten instead of eight), a different random seed, or slightly different masks on PS1. In all cases, although the class distributions and the structural details varied, the resulting classes revealed similar differences for TM2 and TM6. In addition, we tested our method on a simulated set of images containing a mixture of projections from the maps of classes 1 and 2 in Figure 3. For these simulations we used similar signal-to-noise ratios, CTF parameters and orientational distributions as observed in our experimental data set (also see Methods). Masked classification with signal subtraction on the PS1 subunit correctly identified 93% of the simulated particles (Figure 2\u2014figure supplement 4).\n\nComparison of the three structures that were identified in the experimental data set using masked classification on the PS1 subunit (Table 1, Videos 1\u20132) explained observations made in the consensus structure. In the high-resolution structure, density for the cytoplasmic side of TM6 was weak, while density for TM2 was only visible after applying a 7 \u00c5 low-pass filter. This agrees with the observation that TM2 is only ordered in class 1, whereas TM6 adopts different orientations in all three classes. Control classifications with variations in the number of classes, random seeds or masks revealed even more variations in the conformation of TM6 (e.g. see Figure 2\u2014figure supplement 3). Probably, TM6 adopts a wide range of conformations in solution and our classification merely provides discrete snapshots of a continuum.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-media2.mp4.jpg)\n\nDespite the fact that we did not focus our classification on Pen-2, we also observe significant variations in the conformation of Pen-2. Compared to classes 1 and 2, Pen-2 in class 3 has rotated away from PS1. This rotation concurs with a large conformational change in PS1, where TM3 and TM4 rotate in the same direction as Pen-2, TM5 and TM6 move towards the extracellular space, and TM6 rotates towards TM7 (see Video 2). The rotation and upward motion of TM6 positions the two catalytic aspartates within close enough distance of each other to potentially catalyze proteolysis (although we do not see density for the aspartate side chains).\n\nWhen the high-resolution consensus map was low-pass filtered to 7 \u00c5, besides density for TM2 a second, unidentified rod-shaped density was also observed in the cavity formed by TM2, TM3 and TM5 of PS1 (Bai et al., 2015a). A similar density that could not be attributed to any of the known \u03b3-secretase components is also visible in classes 1 and 2, but not in class 3. The rod-shaped density is best defined in class 1, where it shows clear features of \u03b1-helical pitch. We modeled this density as an \u03b1-helix with an almost 90-degree kink at the extracellular side of the transmembrane domain (Figure 4). The kink of this helix is in close proximity of the loop of residues 240\u2013244 of nicastrin, and then extends into the membrane through the cavity formed by TM2, TM3 and TM5 of PS1, until it disappears just before reaching the active site. The density closest to the active site looks less helical, and in this region we modeled it as an extended chain. The entire cavity in which the helix is present is lined with residues from TM2, TM3 and TM5 of PS1 that have been implicated in FAD. The cryo-EM density was not of sufficient quality to allow the identification of this helix. Mass spectrometry analysis suggested the presence of multiple proteins with a single predicted transmembrane helix in our sample, and the presence of three of these proteins was further confirmed by Western blot analysis (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C)\u00a0Three different views of the map and the atomic model are shown. The kinked \u03b1-helix that is unaccounted for by the \u03b3-secretase model is shown in purple. PS1 residues that interact with this helix are labeled.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The lower part of a Coomassie blue-stained SDS-PAGE gel of the \u03b3-secretase sample that was also used for cryo-EM imaging was cut out and submitted for mass spectrometric analysis. Besides known \u03b3-secretase components (bold text), several proteins with a single predicted transmembrane helix were also identified. (B) Western blot analyses confirmed the presence of at least three of the identified proteins in the sample. Arrowheads indicate their expected molecular weights.\n\n### Binding of DAPT rigidifies the catalytic subunit\n\nIn order to gain further insights into the plasticity of the catalytic subunit, we also performed cryo-EM single-particle analysis on \u03b3-secretase in complex with DAPT (Figure 5, Figure 5\u2014figure supplement 1). Despite collecting a comparable amount of micrographs as we did for the apo-state complex, 2D and 3D classification approaches selected less than 20% of the complexes as suitable for high-resolution reconstruction. This contrasts with a selection of approximately 40% for the apo-state data set. Because the overall appearance of the micrographs for both data sets was similar, it could be that either DAPT or the dimethyl sulfoxide (DMSO) in which DAPT was dissolved interfered with the structural integrity of the complex. Nonetheless, from the selected 51,366 particles we calculated a 4.2 \u00c5 map, which was of sufficient quality to build a reliable main-chain model, although the density for many side chains was less clear. For these data, masked classifications with signal subtraction revealed only a single class with good density for the transmembrane helices, and this class did not show any helical-like density in the cavity between TM2, TM3 and TM5 of PS1 (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-v2.jpg)\n\n**Figure 5.:** (A) The reconstructed density for the entire complex. Density attributed to DAPT is shown in blue. (B) Schematic representation of the atomic model. TMs of PS1 are numbered. (C) Two approximately orthogonal close-ups of the DAPT-binding site. Residues that interact with DAPT, as well as His163 and Glu280 are labeled.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) FSC curves of the refined atomic model versus the map it was refined against (in black); of a model refined in the first of the two independently refined half-maps versus that same map (in red); and of a model refined in the first of the two independent half-maps versus the second half-map (in green). (B) FSC between the two independently refined half-maps.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Using either masks around the PS1 subunit (top row) or the entire transmembrane domain (bottom row), masked classification with signal subtraction revealed only a single majority class (pink) that showed good density for the transmembrane helices (corresponding to 23% and 26% of the particles, respectively). In these maps, no helical-like density was observed in the cavity between TM2, TM3 and TM5 of PS1\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Two orthogonal views of a cartoon representation of the transmembrane domain of the DAPT-bound structure are shown. Those parts of the atomic model that were built in this structure but were disordered in the high-resolution consensus structure of the apo-state are shown in red. The density attributed to the DAPT molecule is shown in blue.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Two orthogonal views of an overlay of the DAPT-bound PS1 structure (in cyan) and class 1 of the apo-state ensemble (in grey) are shown. The catalytic aspartates in the DAPT-bound structure are shown in red.\n\nUpon inhibitor binding, there are no prominent changes in Aph-1 and nicastrin, and Pen-2 is in a very similar conformation as in classes 1 and 2 of the apo-state ensemble. The largest changes occur in PS1, which is much better ordered in the complex with DAPT. TM2 and its linkers with TM1 and TM3, the cytoplasmic ends of TM3 and TM6, and part of the long linker between TM6-7 all become ordered upon DAPT binding (Figure 5\u2014figure supplement 3). The linker between TM1 and TM2 sticks partially into the transmembrane region to fold back out again to connect to TM2. This helix contains 32 residues and runs at an angle of approximately 40 degrees with the plane of the membrane. At the cytoplasmic side of the membrane a short linker connects TM2 to TM3, and TM3 extends 7 residues longer than in the apo-state. Interestingly, apart from local changes in the cytoplasmic sides of TM2 and TM6, the overall conformation of PS1 in the DAPT-bound structure is very similar to class 1 from the apo-state ensemble, and the two structures overlap with a root mean squared deviation (r.m.s.d.) of 0.4 \u00c5 between 265 C\u03b1 atom pairs (Figure 5\u2014figure supplement 4).\n\nNear the active site, TM6 displays a strong kink at Pro264, which positions its cytoplasmic side underneath a cavity formed by TM2, TM3, TM5, TM6 and TM7. This cavity contains the only peak of strong density in the transmembrane domain that is unaccounted for by the protein model (Figure 5C). It breaks up into disconnected pieces at 4.5 standard deviations above the mean, which is somewhat weaker than the surrounding transmembrane helices in PS1, which break up at approximately 6 standard deviations above the mean. The size of this density is consistent with the expected size of a single DAPT molecule. Therefore, we tentatively assign this density to the inhibitor, although at the limited resolution of our map we cannot determine its exact orientation or conformation. The pocket where the inhibitor binds is very hydrophobic, which is as anticipated given the hydrophobic nature of the DAPT molecule. In particular, Met146 and Met233, as well as Trp165, Phe283 and Gly384 seem to be involved in interactions with the inhibitor. Except for Phe283, all these residues have been targeted for mutations in FAD patients. The location of the inhibitor right next to the active site is also in good agreement with previous observations that the DAPT binding site is distinct from, but in close proximity of the active site (Kornilova et al., 2003; Morohashi et al., 2006).\n\nCombined with a small movement of TM7 towards TM6, the kink in TM6 brings the C\u03b1 atoms of the two catalytic aspartates within 8.0 \u00c5 of each other, which may again be close enough to facilitate catalysis. Also the conformation of the highly conserved 433PAL435 motif, which is important for \u03b3-secretase activity (Wang et al., 2004, 2006), changes upon DAPT binding. A large part of the linker between TM6 and TM7 remains invisible, but at the cytoplasmic end of TM6 part of this linker becomes ordered as it passes beneath the inhibitor (Figure 5C). There, residues 280-283 form a single \u03b1-helical turn, which is stabilized by a hydrogen bond between Glu280 and His163, while Phe283 interacts with the inhibitor. Mutation of Glu280 into an alanine (the so-called Paisa mutation) is by far the most common cause of FAD (http://www.alzforum.org/mutations). Residues 285\u2013288 form a short \u03b2-strand before the density of the linker disappears just three residues before the auto-proteolytic cleavage site between Thr291 and Met292. The density then reappears at residue 378, where residues 378\u2013381 form a second \u03b2-strand that hydrogen bonds with the first.\n\n## Discussion\n\nAlthough many proteins employ functionally important flexibility at the level of secondary structure, few experimental techniques exist for the study of this dynamics. Nuclear magnetic resonance (NMR) is a powerful tool for the characterization of structural ensembles in dynamic complexes, but its applicability is typically limited to proteins with a molecular weight below 40\u2013 50 kDa. For complexes larger than several hundred thousand daltons, dynamic changes in tertiary and quaternary structure have been studied by cryo-EM image classification, in particular with the recent advent of direct electron detectors and improved computer algorithms (Bai et al., 2015b; Dashti et al., 2014). However, for complexes that are too large for NMR, the characterization of molecular dynamics within individual protein domains has typically been restricted to computer simulations. The procedure for masked cryo-EM image classification combined with residual signal subtraction fills part of this gap in experimental techniques. The idea to subtract part of the signal from experimental cryo-EM images is not new. Michael Radermacher and colleagues subtracted partial projections from cryo-EM images to study symmetry mismatches in bacteriophage \u03d529 (Morais et al., 2003) and flaviviruses (Zhang et al., 2007); Steven Ludtke and colleagues used image subtraction in the e2ligandclassify.py program to separate ribosomes with and without secY channels (Park et al., 2014); Hongwei Wang and colleagues used a modified version of RELION to subtract projections of NSF rings to analyze a symmetry mismatch and structural variability in the SNAP-SNARE complex (Zhou et al., 2015); we used an iterative image subtraction method in RELION to improve the density of a flexible domain of the spliceosomal U4/U6.U5 tri-snRNP complex (Nguyen et al., 2015); and most recently, Huiskonen and colleagues also used RELION to subtract viral capsid densities in order to visualize an RNA polymerase bound inside the virus (Ilca et al., 2015). The procedure described here provides an easily accessible and generally applicable tool for signal subtraction coupled to masked refinements and/or classifications of single-particle data. Its successful application to \u03b3-secretase demonstrates its potential for complexes that are considered to be relatively small for cryo-EM structure determination, and shows that it allows separation of protein structures that differ only in the orientation and position of a few \u03b1-helices.\n\nApplication of the masked classification approach to the data set of apo-state \u03b3-secretase particles revealed a range of different conformations for TM6. This conformational flexibility leads to a variation in the distance between the two aspartates that form the active site. Interestingly, the class where the aspartates are closest together also shows a markedly different conformation of Pen-2 and a re-arrangement of TM3, TM4 and TM5 in PS1. Pen-2 is required for autocatalytic maturation and protease activity of \u03b3-secretase. Binding of Pen-2 to the complex activates the active site, and binding of Pen-2 was observed to have an allosteric effect on TM6 (Takeo et al., 2012). However, in the absence of PS1 structures without Pen-2 bound, it will probably remain unclear whether the changes in Pen-2 and PS1 observed here are relevant to this allosteric activation mechanism.\n\nOur analysis of the structure in complex with DAPT provides complementary insights into the conformational freedom of \u03b3-secretase. Upon binding of the inhibitor, the catalytic subunit undergoes a marked rigidification. TM2 and its linkers to TM1 and TM3 become ordered, and so do the cytoplasmic half of TM6 and part of the linker between TM6 and TM7. Around the active site, the conformations of the kink in TM6 and the conformation of the long linker between TM6 and TM7 are noticeably different from the apo-state consensus structure. Maturation of the \u03b3-secretase complex requires auto-proteolytic cleavage at Thr290 (or alternatively at Val292 or Met297). The observed kink in TM6 may expedite the U-turn that is required to position the auto-proteolytic cleavage site back into the active site. Moreover, auto-proteolytic cleavage is predicted to occur in an \u03b1-helix spanning residues 280\u2013300 of the linker. In the DAPT-bound structure, a single helical turn starts at Glu280, but residues 285\u2013288 form a short \u03b2-sheet with the end of the linker that connects to TM7. The auto-proteolytic site is still flexible in this structure, as the density disappears after Tyr288. Since auto-proteolysis appeared to be complete in our sample (Lu et al., 2014), it could be that residues 280\u2013300 do form a helical structure prior to self-cleavage. Alternatively, it could be that the inhibitor specifically alters the secondary structure in the linker, for example through its observed interaction with Phe283.\n\nTM2 of PS1 is well ordered in both the DAPT-bound structure and in class 1 of the apo-state, whereas it is invisible in the other apo-state classes. This helix only seems to be ordered when something is bound in the large cavity that is lined with FAD-derived mutations between TM2, TM3 and TM5. In the inhibitor-bound structure this cavity contains the density that we attribute to DAPT, while density for a kinked \u03b1-helix is visible in class 1 of the apo-state. Although the density for the kinked \u03b1-helix was not of sufficient quality for unambiguous identification, mass spectrometry and Western blot analyses suggest that a mixture of different proteins with a single transmembrane helix may be present in our sample. Four of the proteins that were identified by mass spectrometry had also previously been observed to co-purify with \u03b3-secretase: TMP21/p23, p24a, Vamp-8 and Sec22B (Wakabayashi et al., 2009). TMP21 was also observed to be a component of the \u03b3-secretase complex that acts as a negative regulator of \u03b3-cleavage, while leaving \u03b5-cleavage intact (Chen et al., 2006).\n\nWe hypothesize that the kinked \u03b1-helix in our structure arises from a mixture of co-purified proteins in our sample that bind to the \u03b3-secretase complex in a manner that mimics substrate binding. This hypothesis is in good agreement with previous biochemical observations about an 'initial substrate-binding site' that is distinct from the active site (Beher et al., 2003; Das et al., 2003; Esler et al., 2002; Tian et al., 2002). Photolabeling experiments suggest that the initial substrate-binding site partially overlaps with the DAPT-binding site (Kornilova et al., 2003; Morohashi et al., 2006), and mutational analysis identified TM2 and TM6 to be involved in substrate binding (Watanabe et al., 2010). Experiments with photoaffinity probes based on \u03b1-helical substrate-like inhibitors showed that DAPT could not displace a 10-residue long helical probe, suggesting spatially separated binding sites of the substrate and the inhibitor. This however was not the case for a 13-residue long peptide, for which addition of DAPT led to a strong reduction in photolabeling. Because this peptide also prevented labeling of a transition-state mimicking photoprobe, the longer \u03b1-helical probe probably also interacts with the active site (Kornilova et al., 2005). Our hypothesis explains these data well. A superposition of the kinked \u03b1-helix on top of the DAPT structure shows that after the kink, the \u03b1-helix extends for 10 residues into the transmembrane domain, before its four C-terminal residues overlap with the DAPT-binding site and almost reach the active site (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0A superposition of the kinked \u03b1-helix from class 1 and the DAPT-density and atomic model for PS1 from the DAPT-bound structure. The lower end of the kinked helix and the DAPT density overlap. The recently identified residues that interact with a phenylimidazole-like \u03b3-secretase modulator are shown with spheres. (B) Ensemble of NMR-models for an A\u03b242 peptide in an aqueous solution of fluorinated alcohols. (C) Hypothetical model for how APP (one of the NMR models is shown in pink) binds to \u03b3-secretase.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** APP and proteins that were identified by mass spectrometry to be present in the cryo-EM sample contain a large, positively charged residue (boxed) next to the N-terminus of their predicted transmembrane helix (indicated with a purple cylinder). TMP21 is the product of the TMED10 gene; P24a is the product of the TMED2 gene. The products of the TMED1, TMED4, TMED9, VAMP2 and VAMPB genes were observed after additional mass-spectrometric analysis of specific gel bands.\n\nFurthermore, the NMR structure of the A\u03b242 peptide in an aqueous solution of fluorinated alcohols shows a strikingly similar 90-degree kink in its \u03b1-helical structure, which is positioned right after Lys699 (Figure 6B). A superposition of the NMR model on the kinked \u03b1-helix in our structure places its N-terminus flat on the extracellular side of the membrane, while the cleavage site that would result in the formation of A\u03b242 peptides is placed in close proximity to the active site (Figure 6C). Interestingly, all the proteins that were both identified in our sample by mass spectrometry and that had also previously been observed to co-purify with \u03b3-secretase (Wakabayashi et al., 2009) contain either an arginine or a lysine just before their predicted transmembrane helix (Figure 6\u2014figure supplement 1). It is therefore tempting to speculate that the large, positively charged residue together with the kink in the \u03b1-helix act as an anchor to delimit the cleavage position in the substrate. This would explain why mutations in Lys699 have a marked effect on the length of the A\u03b2 cleavage products (Kukar et al., 2011). In addition, the kink in the \u03b1-helix is positioned next to the recently mapped binding site of a phenylimidazole-like \u03b3-secretase modulator (highlighted with spheres in Figure 6A), which could explain how this modulator affects cleavage in the distant active site through changes in the substrate conformation (Takeo et al., 2014). It could also explain why replacement of Lys699 or increasing the positive charge at Gly700 has been observed to block or attenuate the effects of \u03b3-secretase modulators (Jung et al., 2014).\n\nIn conclusion, we show that masked cryo-EM image classification combined with the subtraction of part of the signal from the experimental images allows separation of structures that differ at the secondary structure level. Application of this approach to our previously described data set of \u03b3-secretase in its apo-state reveals distinct conformations for TM2 and TM6 of PS1. In one of the identified structures, we observe a kinked \u03b1-helix in the cavity between TM2, TM3 and TM5 of PS1 that cannot be attributed to any of the \u03b3-secretase components. Mass spectrometry and Western blot analyses suggest the presence of a mixture of proteins with a single transmembrane helix that co-purified with the complex, one of which is a known modulator of \u03b3-secretase cleavage. These results are complemented with a cryo-EM structure of the complex bound to the dipeptidic inhibitor DAPT. Binding of the inhibitor leads to a marked reduction in the flexibility of the catalytic subunit. Together, our results form the basis for a hypothesis that substrate enters the transmembrane domain through the cavity formed by TM2, TM3 and TM5 of PS1. The disordered nature of TM2 in the absence of substrate or inhibitor suggests that this helix may act as a lateral gate through which the transmembrane helix of the substrate enters the cavity. The observation that the inhibitor-bound structure closely resembles the class with the kinked \u03b1-helix suggests that the inhibitor and the substrate stabilize a similar conformation from the apo-state ensemble. DAPT would then act as an inhibitor by blocking access of the substrate to the active site. An appealing route to confirm our hypothesis, and to gain further mechanistic insights, is the determination of additional cryo-EM structures in complex with different substrates, substrate analogues, inhibitors or other modulators of activity. Masked classification with signal subtraction will be a useful tool in this endeavor, as understanding how different factors shift the equilibrium of conformational states in this flexible enzyme will be key to increase our understanding of its functioning.\n\n## Materials and methods\n\n### Electron microscopy\n\nThe sample preparation procedure and imaging conditions for the apo-state data were described previously (Bai et al., 2015a). To prepare the complex with DAPT, we incubated 20 \u03bcl of the same \u03b3-secretase sample for 20 min at 4\u00b0C with 0.2 \u03bcl of a 10 mM solution of DAPT in 100% DMSO (yielding an approximate concentration of 4 \u03bcM \u03b3-secretase, 100 \u03bcM DAPT and 1% DMSO). Subsequently, aliquots of 3 \u03bcl were applied to previously glow-discharged holey carbon grids (Quantifoil Au R1.2/1.3, 300 mesh), and flash frozen in liquid ethane using an FEI Vitrobot. The imaging conditions were kept identical as for the apo-state data. In brief, zero-energy loss images were recorded manually on an FEI Titan Krios microscope at 300 kV, using a slit width of 20 eV on a GIF-Quantum energy filter. A Gatan K2-Summit detector was used in super-resolution counting mode at a calibrated magnification of 35,714\u00d7 (yielding a pixel size of 1.4 \u00c5), and a dose rate of ~2.5 electrons/\u00c52/s (~5 electrons/pixel/s). Exposures of 16 s were dose-fractionated into 20 movie frames. Defocus values in the DAPT-bound data set ranged from 0.6\u20132.8 \u00b5m.\n\n### Image processing\n\nSimilar image processing procedures were employed for the apo-state and the DAPT-bound data sets. We used MOTIONCORR (Li et al., 2013) for whole-frame motion correction, CTFFIND4 (Rohou and Grigorieff) for estimation of the contrast transfer function parameters, and RELION-1.4 (Scheres, 2012) for all subsequent steps. References for template-based particle picking (Scheres, 2015) were obtained from 2D class averages that were calculated from a manually picked subset of the micrographs. A 20 \u00c5 low-pass filter was applied to these templates to limit model bias. All low-pass filters employed were cosine-shaped and fell to zero within 2 reciprocal pixels beyond the specified frequency. To discard false positives from the picking, we used initial runs of 2D and 3D classification to remove bad particles from the data. The selected particles were then submitted to 3D auto-refinement, particle-based motion correction and radiation-damage weighting (Scheres, 2014). The resulting 'polished particles' were used for masked classification with subtraction of the residual signal as described in the main text, and the original particle images from the resulting classes were submitted to a second round of 3D auto-refinement. All 3D classifications and 3D refinements were started from a 40 \u00c5 low-pass filtered version of the high-resolution consensus structure. Fourier Shell Coefficient (FSC) curves were corrected for the effects of a soft mask on the FSC curve using high-resolution noise substitution (Chen et al., 2013). Reported resolutions are based on gold-standard refinement procedures and the corresponding FSC=0.143 criterion (Scheres and Chen, 2012). Prior to visualization, all density maps were corrected for the modulation transfer function (MTF) of the detector, and then sharpened by applying a negative B-factor that was estimated using automated procedures (Rosenthal and Henderson, 2003).\n\nFor the apo-state data set, the template-based algorithm picked 1.8 million particles from 2,925 micrographs, and 412,272 particles were selected after initial 2D and 3D classification. Subsequent 3D auto-refinement and particle polishing yielded a 3.5 \u00c5 map with fuzzy densities in the transmembrane region. Masked classification into eight classes with subtraction of the residual signal yielded three classes with good density as described in the main text. Poor reconstructed density was observed in the other five classes. Separate 3D auto-refinements of the corresponding particles in the original data set for the three best classes gave rise to reconstructions to 4.0\u2013 4.3 \u00c5 resolution (also see Figures 2\u20133, Table 1).\n\nFor the DAPT-bound state, 1.4 million particles were picked from 2,206 micrographs, and initial classification selected 271,361 particles. After particle polishing, this subset gave rise to a 4.3 \u00c5 resolution map with relatively poor density in the transmembrane domain. Application of the masked classification procedure with residual signal subtraction into eight classes identified a single class with good density. After 3D auto-refinement, the corresponding 51,366 particles gave a map with a resolution of 4.2 \u00c5, which showed improved density in the transmembrane domain.\n\n### Instructions for masked classification with subtraction of residual signal\n\nTo expedite application of the modified classification procedures proposed in this paper by others, we describe these steps in more detail. The mask for masked classification on the PS1 subunit (the red part of the signal in Figure 1) was generated by converting the atomic model of the PS1 subunit from the high-resolution consensus structure (including a poly-alanine model for TM2) into a density map using the program e2pdb2mrc.py from EMAN2 (Tang et al., 2007). This map was then converted into a soft-edged mask using relion_mask_create. A mask around the entire \u03b3-secretase complex, including the belt of fuzzy density from the amphipols, was generated using standard auto-masking from the RELION post-processing procedure. Subtraction of the PS1 mask from the mask of the entire complex using relion_image_handler yielded a mask containing only nicastrin, Aph-1, Pen-2 and the amphipol belt (the yellow part of the signal in Figure 1). This mask was applied to the 3.5 \u00c5 map that was calculated from a consensus refinement using all 400 thousand selected apo-state particles. The resulting masked map (yellow.mrc) was used for subtraction of the signal from the experimental particles as outlined in Figure 1. The corresponding program has been available in RELION from release 1.3 onwards and is used as follows:\n\nrelion_project --i yellow.mrc --subtract_exp --angpix 1.4 --ctf --ang Refine3D/run1_data.star --o newparticles\n\nThe Refine3D/run1_data.star file was produced by the consensus refinement and contains the orientation and CTF parameters of all 400 thousand particles. The command generates a new particle image stack called newparticles.mrcs and a new STAR-file with all relevant metadata called newparticles.star. The latter is used directly as input in the masked classification run, which may be launched from the RELION GUI using standard inputs, and providing the mask around the PS1 subunit as 'Reference mask' on the Optimisation tab. Because of the small size of the PS1 subunit, we chose to set the 'Perform image alignment' option on the Sampling tab to 'No'.\n\n### Simulation of particle images\n\nTo generate the simulated particle images described in Figure 2\u2014figure supplement 4, we also used the relion_project program:\n\nrelion_project --i Refine3D/run1_class001.mrc --osimulated_run1 --ctf --angpix 1.4 --angRefine3D/run1_data.star --add_noise --model_noiseRefine3D/run1_model.star\n\nBy providing the data.star file (option --ang) and final map (option --i) from the refinements of the classes described in Figure 3, we generated simulated particles with similar orientational distributions and CTF parameters as those observed for the experimental data. By using the estimated power spectra of the noise for the experimental images (as provided through the --model_noise option), also the simulated spatial frequency-dependent signal-to-noise ratios are similar to those in the experimental data.\n\n### Atomic modeling\n\nModel building for the three apo-state classes and the DAPT-bound structure was started from the coordinates that were built in our 3.4 \u00c5 apo-state consensus structure (PDB ID: 5A63). Nearly all of the residues from Aph-1 and nicastrin fitted well into the four maps, but parts of PS1 and Pen-2 had to be manually adjusted in COOT (Emsley et al., 2010). Building of TM2 and the lower part of TM6 in PS1 was started from idealized \u03b1-helices, and sequence assignment of TM2 was guided by comparison with the structure of PSH (PDB ID: 4HYC) and by recognizable side chain features for Phe and Tyr residues. All models were refined in REFMAC (Murshudov et al., 1997), using modified procedures for cryo-EM maps (Brown et al., 2015) and secondary structure restraints generated by ProSMART (Nicholls et al., 2014). Overfitting of the atomic model for the DAPT-bound structure was monitored by refining the model in one of the half-maps from the gold-standard refinement approach, and testing the resulting model against the other half-map (Amunts et al., 2014). The same relative weight between the EM-density and geometric terms that resulted in good fits to the density without overfitting for the DAPT-bound structure was used for the final refinement of all four structures.\n\n### Mass spectrometry\n\nProtein samples (5 \u03bcg purified \u03b3-secretase) were resolved by sodium dodecyl sulphate polyacrylamide gel electrophoresis (SDS-PAGE) on 4\u201312% Bis-Tris gels (Life Technologies, Carlsbad, CA) using MES running buffer (Formedium, UK) for 32 min at 200V. The gel was stained with InstantBlue protein stain (Expedeon, San Diego, CA) for direct protein visualization. Gel slices were prepared for mass spectrometric analysis using the Janus liquid handling system (PerkinElmer, UK). Briefly, the excised protein gel pieces were placed in a well of a 96-well microtitre plate and destained with 50% v/v acetonitrile and 50 mM ammonium bicarbonate, reduced with 10 mM DTT, and alkylated with 55 mM iodoacetamide. After alkylation, proteins were digested with 6 ng/\u00b5l trypsin (Promega, UK) overnight at 37\u00b0C. The resulting peptides were extracted in 2% v/v formic acid, 2% v/v acetonitrile. The digest was analysed by nano-scale capillary LC-MS/MS using an Ultimate U3000 HPLC (ThermoScientific Dionex, San Jose, USA) to deliver a flow of approximately 300 nl/min. A C18 Acclaim PepMap100 5 \u00b5m, 100 \u00b5m x 20 mm nanoViper (ThermoScientific Dionex, San Jose, USA), trapped the peptides prior to separation on a C18 Reprosil-pur 3 \u00b5m, 75 \u00b5m x 105 mm PicoCHIP (New Objectives, MA, USA). Peptides were eluted with a gradient of acetonitrile. The analytical column outlet was directly interfaced with a hybrid linear quadrupole fourier transform mass spectrometer (LTQ Orbitrap XL, ThermoScientific, San Jose, USA). Data-dependent analysis was carried out, using a resolution of 30,000 for the full MS spectrum, followed by five MS/MS spectra in the linear ion trap. LC-MS/MS data were then searched against a protein database (UniProt KB) using the Mascot search engine programme (Matrix Science, UK) (Perkins et al., 1999). Database search parameters were set with a precursor tolerance of 10 ppm and a fragment ion mass tolerance of 0.8 Da. One missed enzyme cleavage was allowed and variable modifications for oxidized methionine, carbamidomethyl cysteine, pyroglutamic acid, phosphorylated serine, threonine and tyrosine were included. MS/MS data were validated using the Scaffold programme (Proteome Software Inc., USA) (Keller et al., 2002). All data were additionally interrogated manually.\n\n### Western blotting\n\nProtein samples (1.6 \u03bcg purified \u03b3-secretase) were resolved by SDS-PAGE on 4\u201312% Bis-Tris gels (Life Technologies) using MES running buffer (Formedium) for 32 min at 200V. The gel was transferred to Immobilon-P 0.45 \u00b5m PVDF membrane (Millipore, Germany) in 1X transfer buffer (Life Technologies) supplemented with 20% methanol for 1 hr at 65V. The membrane was subsequently blocked for 1 hr at room temperature in 5% bovine serum albumin/Tris-buffered saline and Tween-20 (TBST) prior to incubation with indicated primary antibodies (anti-TMP21, ab133771, 1:500, Abcam, UK; anti-VAMP-8, ab76021, 1:5000 Abcam, UK; anti-Miner1, 13318-AP, 1:500, Proteintech, UK) overnight at 4\u00b0C. The membrane was washed with TBST and incubated with horseradish peroxidase-linked goat anti-rabbit IgG (NA934VS, GE Healthcare) for 1 hr at room temperature. The membrane was washed extensively with TBST and target proteins detected on FUJI Medical X-Ray Super RX film (100 NIF 18 x 24, Fujifilm, UK) using Amersham ECL Western Blotting Detection Reagent (GE Healthcare, UK).\n",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "fa1fdc1a-7d44-48df-9e5e-0e48968ac0cb",
+      "submission_id": "9be6d905-5288-433a-9691-1851b8509359",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Werner K\u00fchlbrandt, Max Planck Institute of Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11182.023](https://doi.org/10.7554/eLife.11182.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Sampling the conformational space of the catalytic subunit of human \u03b3-secretase\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a well-written manuscript that adds a further useful step in the process of single-particle reconstruction, especially where there is significant conformation and/or compositional heterogeneity. The central idea is to mask the background in a way that also takes advantage of the knowledge of the orientation of each particle in the projection image, leading to a more accurate way to carry out localized or \"focused\" refinement. Nevertheless, both peer reviewers query the novelty of the approach and have a number of other concerns, some of them substantial, which would need to be addressed in a revised manuscript.\n\nEssential revisions:\n\n1) The central idea of the manuscript has been around for a while. It is surprising that the authors do not cite papers which have taken a similar approach to subtraction of residual signal in earlier work, especially studies of viruses by cryo-EM. See for example:\n\n\"Structural analysis of viral nucleocapsids by subtraction of partial projections\", Ying Zhang, Victor A. Kostyuchenko, and Michael G. Rossmann\n\nhttp://www.ncbi.nlm.nih.gov/pmc/articles/PMC1876683/\n\nand:\n\n\"Bacteriophage phi29 scaffolding protein gp7 before and after prohead assembly\", Marc C Morais et al.\n\nhttp://www.nature.com/nsmb/journal/v10/n7/full/nsb939.html\n\nMost likely Ludtke et al. have also described something similar many years ago in the context of studying GroEL by EMAN.\n\n2) The authors refer to their methodology as \"classification\", while what they clearly mean is \"clustering\". This makes Figure 1 confusing, as the scheme is most likely a part of the iterative refinement process. The term classification is generally applied to algorithms for the assignment of items to given templates when the templates themselves and their numbers are known. What the authors do is clearly clustering, which normally describes a procedure which explores data structure, to detect natural groupings without a priori knowledge of group templates. This confusion in the EM field is not new, but instead of continuing the tradition, the authors might consider breaking with it or at least to specify clearly what they mean.\n\n3) The method described in this manuscript appears to be based on a fundamental misunderstanding of the original design of the \"focused classification\", as originally developed by Penczek, Frank and Spahn, JSB 2006 (see Figure 2 and associated text in this paper). Moreover, Bai et al. claim that Penczek and Frank overlooked a basic inconsistency of the procedure, a notion that is challenged by one reviewer.\n\n4) The method is not tested with simulated data. Instead of using only one experimental data set, it would be better to establish the general principles by using data sets derived from a known structure.\n\n5) Unless the authors employ a non-linear projection algorithm, four operations in the upper left corner of Figure 1 commute. In other words, it makes no difference whether projections of two structures are subtracted from each other or structures themselves are subtracted and the difference projected. Possibly the impression that the figure implies otherwise stems from an imprecise description of the design.\n\n6) Another main concern relates to the lack of biochemical purity of the \u03b3-secretase sample. The authors describe an extra helix in 2 of the \"apo\" classes which they attribute to a co-purified protein, and they were even able to biochemically identify 4 extra proteins that were present in the sample. This raises the question whether the other state they see also has an extra protein bound to the \u03b3-secretase complex and how much these contaminating proteins are influencing the \"apo\" \u03b3-secretase structure they report both in this manuscript and in their earlier Nature paper. Similarly, because the density for the ligand is so poor in the 4.2\u00c5 map, it seems possible that the density they attribute to the inhibitor is actually a piece of one of the extra proteins in their sample. The reviewers wonder if the authors tried the same focused classification procedure on the liganded state that they used on the \"apo\" state, and whether that would give any insight into whether the \"ligand\" density they see is actually from the inhibitor or from one of the extra proteins.\n",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a78e8e7f-ba70-40b0-b278-3fc5c133d952",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C1",
+      "claim": "Human \u03b3-secretase is an intra-membrane protease that cleaves many different substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Human \u03b3-secretase is an intra-membrane protease that cleaves many different substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the function of \u03b3-secretase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "208857ee-d4cb-47e6-b21c-68a47772543d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C2",
+      "claim": "Aberrant cleavage of Notch is implicated in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant cleavage of Notch is implicated in cancer, while abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about Notch cleavage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "66c0342c-ad21-47ff-9183-1b2d02916ee9",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C3",
+      "claim": "Abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant cleavage of Notch is implicated in cancer, while abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about APP cleavage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "30b8c695-b37e-4a53-bf38-1455f5c58dc4",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C4",
+      "claim": "The previous cryo-EM structure of \u03b3-secretase revealed considerable disorder in its catalytic subunit presenilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous cryo-EM structure of \u03b3-secretase revealed considerable disorder in its catalytic subunit presenilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work (Bai et al., 2015a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "0e9b1aa6-83a7-4594-ad8a-7eafa87e5a8c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C5",
+      "claim": "Three distinct conformations were identified in the apo-state sample using masked classification with signal subtraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe an image classification procedure that characterizes molecular plasticity at the secondary structure level, and apply this method to identify three distinct conformations in our previous sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study described in the abstract and demonstrated in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "b7fe9a21-aeb9-4c08-9ac9-45d9ea29804d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C6",
+      "claim": "In one of the three conformations, an additional transmembrane helix is visible that cannot be attributed to the known components of \u03b3-secretase.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of these conformations, an additional transmembrane helix is visible that cannot be attributed to the known components of \u03b3-secretase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 3 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "ac17efe2-03c3-492d-8d87-d6a0a98975fb",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C7",
+      "claim": "A \u03b3-secretase structure in complex with DAPT was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we present a \u03b3-secretase structure in complex with the dipeptidic inhibitor N-[N-(3,5-difluorophenacetyl)-L-alanyl]-S-phenylglycine t-butyl ester (DAPT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding described in the abstract and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "54b5ca27-b7f8-40bd-96a5-a914931aae87",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C8",
+      "claim": "Conformational mobility in the second and sixth transmembrane helices of presenilin is greatly reduced upon binding of DAPT or the additional helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal how conformational mobility in the second and sixth transmembrane helices of presenilin is greatly reduced upon binding of DAPT or the additional helix, and form the basis for a new model of how substrate enters the transmembrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract and supported by the structural comparisons in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "66c80511-a3ad-425b-951d-41c182302d05",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C9",
+      "claim": "\u03b3-Secretase clears the anchors of type-I membrane proteins that are left behind in the membrane after shedding of their ectodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-Secretase clears the anchors of type-I membrane proteins that are left behind in the membrane after shedding of their ectodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge about \u03b3-secretase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "2f77a057-9f25-4daa-b045-5961c6eb66ad",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C10",
+      "claim": "\u03b3-Secretase will cleave a wide range of substrates, as long as they form a single hydrophobic transmembrane helix, and the remaining ectodomain is not too large.",
+      "claim_type": "EXPLICIT",
+      "source": "It will cleave a wide range of substrates, as long as they form a single hydrophobic transmembrane helix, and the remaining ectodomain is not too large (Struhl and Adachi, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "acb41fa4-dc7a-4c15-a86f-8ff4d408c146",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C11",
+      "claim": "\u03b3-Secretase performs an initial endopeptidase-like \u03b5-cleavage on Notch and APP, which is followed by carboxypeptidase-like trimming called \u03b3-cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "For two of its most studied substrates, the Notch receptor and the amyloid precursor protein (APP), \u03b3-secretase performs an initial endopeptidase-like \u03b5-cleavage, which is followed by carboxypeptidase-like trimming, called \u03b3-cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge about \u03b3-secretase cleavage mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "6b9821d4-aa54-40a8-b631-c4021eadc44b",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C12",
+      "claim": "Cleavage of APP leads to secretion of \u03b2-amyloid (A\u03b2) peptides into the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of APP leads to secretion of \u03b2-amyloid (A\u03b2) peptides into the extracellular environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "867efbb2-9f48-4daf-ba02-cc4837a87d3a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C13",
+      "claim": "Abundant deposits of A\u03b2 peptides in the brain are a defining characteristic of Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant deposits of A\u03b2 peptides in the brain, clinically known as \u03b2-amyloid plaques, are a defining characteristic of Alzheimer's disease (AD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "9a21e52c-e375-45c3-b441-ff0b324a2a0f",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C14",
+      "claim": "Variability in the position of both \u03b5\u2013 and \u03b3-cleavages results in A\u03b2 peptides with lengths ranging from 36 to 49 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in the position of both \u03b5\u2013 and \u03b3-cleavages results in A\u03b2 peptides with lengths ranging from 36 to 49 residues, with A\u03b240 being the most common form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "87755731-6e97-4e52-bd37-f17334d0b1f9",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C15",
+      "claim": "A\u03b240 is the most common form of A\u03b2 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in the position of both \u03b5\u2013 and \u03b3-cleavages results in A\u03b2 peptides with lengths ranging from 36 to 49 residues, with A\u03b240 being the most common form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "4f7f19dc-918d-474a-bc3c-aff60af5c79c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C16",
+      "claim": "Longer A\u03b2 peptides seem to be more prone to aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer peptides seem to be more prone to aggregation, and increased ratios of A\u03b242/A\u03b240 are thought to play a role in AD pathogenesis (Tanzi and Bertram, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "69788653-0f96-4a68-8de1-9009f9198be2",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C17",
+      "claim": "Increased ratios of A\u03b242/A\u03b240 are thought to play a role in AD pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer peptides seem to be more prone to aggregation, and increased ratios of A\u03b242/A\u03b240 are thought to play a role in AD pathogenesis (Tanzi and Bertram, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "312f87c8-43b5-430c-a56a-bde7a6a16b6e",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C18",
+      "claim": "A clinical trial with the \u03b3-secretase inhibitor semagacestat had to be interrupted prematurely due to strong side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a clinical trial with the \u03b3-secretase inhibitor semagacestat had to be interrupted prematurely due to strong side effects, including skin cancer, weight loss and a faster decline of the cognitive skills of patients receiving the highest dose of the drug (De Strooper, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "bb049006-0095-4cce-aeb1-b9dedf8485c2",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C19",
+      "claim": "The side effects of semagacestat included skin cancer, weight loss and a faster decline of cognitive skills.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a clinical trial with the \u03b3-secretase inhibitor semagacestat had to be interrupted prematurely due to strong side effects, including skin cancer, weight loss and a faster decline of the cognitive skills of patients receiving the highest dose of the drug (De Strooper, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "00c85660-d322-4922-acd2-4da34d5be6e7",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C20",
+      "claim": "The \u03b3-secretase complex consists of four essential, integral membrane proteins: presenilin (PS), nicastrin, anterior pharynx defective 1 (Aph-1), and presenilin enhancer 2 (Pen-2).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b3-secretase complex consists of four essential, integral membrane proteins: presenilin (PS), nicastrin, anterior pharynx defective 1 (Aph-1), and presenilin enhancer 2 (Pen-2) (De Strooper, 2003; Kimberly et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1081d1e4-9b06-43e0-8046-a65e95b17fad",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C21",
+      "claim": "PS provides the two essential aspartates that form the proteolytic active site where both \u03b5 and \u03b3-cleavages occur.",
+      "claim_type": "EXPLICIT",
+      "source": "PS provides the two essential aspartates that form the proteolytic active site where both \u03b5 and \u03b3-cleavages occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "328b5e46-137b-49f2-9ca1-7713124c1465",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C22",
+      "claim": "More than 200 missense mutations in the gene for PS have been linked to an early-onset, familial form of Alzheimer's disease (FAD).",
+      "claim_type": "EXPLICIT",
+      "source": "More than 200 missense mutations in the gene for PS have been linked to an early-onset, familial form of Alzheimer's disease (FAD) ((De Strooper et al., 2012) and http://www.alzforum.org/mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "11dd7225-6679-4bd1-8bb3-b9ed3084d877",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C23",
+      "claim": "In humans, two genes encode two homologous forms of PS (PS1 and PS2).",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, two genes encode two homologous forms of PS (PS1 and PS2), but most FAD-derived mutations target PS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "bbecf9e4-1bd7-40af-85ff-a86ea54c1dd2",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C24",
+      "claim": "Most FAD-derived mutations target PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, two genes encode two homologous forms of PS (PS1 and PS2), but most FAD-derived mutations target PS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "86123728-5acd-402c-9349-45ea4b6310d7",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C25",
+      "claim": "Four possible \u03b3-secretase complexes may form due to two forms of PS and two forms of Aph-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there are also two forms of Aph-1 (Aph-1a and Aph-1b), four possible complexes may form, of which nicastrin:Aph-1a:PS1:Pen-2 is the most abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "cd0fda76-0da0-4623-a202-b4f0fc9d8795",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C26",
+      "claim": "The nicastrin:Aph-1a:PS1:Pen-2 complex is the most abundant \u03b3-secretase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there are also two forms of Aph-1 (Aph-1a and Aph-1b), four possible complexes may form, of which nicastrin:Aph-1a:PS1:Pen-2 is the most abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1c55ed17-0f49-4848-898d-8fc1333da46e",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C27",
+      "claim": "Nicastrin has a large, heavily glycosylated ectodomain, which is thought to play a role in substrate recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Nicastrin has a large, heavily glycosylated ectodomain, which is thought to play a role in substrate recognition (Shah et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e0393a29-c119-4a2a-a9fd-7c045a552585",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C28",
+      "claim": "Aph-1 has been proposed to play a scaffolding role.",
+      "claim_type": "EXPLICIT",
+      "source": "Aph-1 has been proposed to play a scaffolding role (Lee et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "01bbd6ee-3c30-4561-ac02-aa30ee19845d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C29",
+      "claim": "Pen-2 is essential for proteolytic activity of the mature complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Pen-2 is essential for proteolytic activity of the mature complex, and facilitates auto-proteolysis of PS1 in a long cytosolic loop between its sixth and seventh transmembrane helices (TM6 and TM7) (Thinakaran et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "39166a9c-da86-485f-9730-67a859f8be86",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C30",
+      "claim": "Pen-2 facilitates auto-proteolysis of PS1 in a long cytosolic loop between TM6 and TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "Pen-2 is essential for proteolytic activity of the mature complex, and facilitates auto-proteolysis of PS1 in a long cytosolic loop between its sixth and seventh transmembrane helices (TM6 and TM7) (Thinakaran et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "593a8c59-4184-454e-863f-f7fa354d3744",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C31",
+      "claim": "The authors recently solved the cryo-EM structure of a nicastrin:Aph-1a:PS1:Pen-2 complex to a resolution of 3.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently solved the cryo-EM structure of a nicastrin:Aph-1a:PS1:Pen-2 complex to a resolution of 3.4 \u00c5 (Bai et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e242ba8d-8fe2-4f9a-88b6-ce7ad5d55169",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C32",
+      "claim": "The 3.4 \u00c5 structure allowed building a near-complete atomic model.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure allowed building a near-complete atomic model, and revealed how Aph-1 and Pen-2 hold a remarkably flexible PS1 subunit underneath the nicastrin ectodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "500b0726-9e4d-423c-b468-fe5877cdd464",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C33",
+      "claim": "The 3.4 \u00c5 structure revealed how Aph-1 and Pen-2 hold a remarkably flexible PS1 subunit underneath the nicastrin ectodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure allowed building a near-complete atomic model, and revealed how Aph-1 and Pen-2 hold a remarkably flexible PS1 subunit underneath the nicastrin ectodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "73590cd4-84a5-40c1-9e78-09dfd362a048",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C34",
+      "claim": "TM2, the cytoplasmic side of TM6 and the long linker between TM6 and TM7 of PS1 were largely disordered in the 3.4 \u00c5 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, TM2, the cytoplasmic side of TM6 and the long linker between TM6 and TM7 of PS1 were largely disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "b172d0be-95ec-4335-9f6b-95683ace8679",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C35",
+      "claim": "The presence of the TM6-TM7 linker could only be inferred from fuzzy densities in 2D class averages.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the linker could only be inferred from fuzzy densities in 2D class averages, whereas the approximate position of TM2 could only be inferred from a 7 \u00c5 low-pass filtered map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e548f849-eb4f-438f-bd9f-a457a80a16b8",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C36",
+      "claim": "The approximate position of TM2 could only be inferred from a 7 \u00c5 low-pass filtered map.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the linker could only be inferred from fuzzy densities in 2D class averages, whereas the approximate position of TM2 could only be inferred from a 7 \u00c5 low-pass filtered map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "01bfb2b9-bbd5-451e-bbbf-5a20ae0c9010",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C37",
+      "claim": "The 7 \u00c5 low-pass filtered map showed a rod-shaped density in the cavity between TM2, TM3 and TM5, but the identity of this density could not be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "This low-pass filtered map also showed a rod-shaped density in the cavity between TM2, TM3 and TM5, but the identity of this density could not be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "96fbc1f1-ed8a-40b7-b06c-1f6d3d32868f",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C38",
+      "claim": "The sample used for structure determination showed proteolytic activity for APP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sample used for structure determination did show proteolytic activity for APP (Lu et al., 2014), the active site appeared to be in an inactive conformation as the two catalytic aspartates were too far apart to catalyze proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work and is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1569b752-f93f-4962-b392-e093093d6593",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C39",
+      "claim": "In the 3.4 \u00c5 structure, the active site appeared to be in an inactive conformation as the two catalytic aspartates were too far apart to catalyze proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sample used for structure determination did show proteolytic activity for APP (Lu et al., 2014), the active site appeared to be in an inactive conformation as the two catalytic aspartates were too far apart to catalyze proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "a2c89cf4-8448-4915-900d-4bf4573bf447",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C40",
+      "claim": "Masked refinements have been used to deal with variability in the relative orientations of ribosomal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we used masked refinements to deal with variability in the relative orientations of ribosomal subunits (Amunts et al., 2014; Wong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "5b12a7da-7997-42dc-9fac-d8461b1f9761",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C41",
+      "claim": "An initial data set of 400,000 particles gave rise to a 3.5 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "An initial data set of 400,000 particles gave rise to a 3.5 \u00c5 map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "9d938086-04f8-4419-ae4f-e7f3a8b7a1c6",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C42",
+      "claim": "Masked 3D classification on the apo-state data consistently yielded only a single class showing good density.",
+      "claim_type": "EXPLICIT",
+      "source": "Using different masks on the transmembrane domain, masked 3D classification consistently yielded only a single class showing good density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the initial attempts at classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "968d4f21-e5d7-454c-ab19-004e37fef206",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C43",
+      "claim": "The single class from masked 3D classification resulted in the selection of 160,000 particles from which a 3.4 \u00c5 map was calculated.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this approach did result in the selection of 160,000 particles from which we could calculate a better 3.4 \u00c5 map, it did not reveal the nature of conformational freedom within the catalytic subunit (Bai et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the initial attempts at classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "05be317a-dc41-47d7-bc1a-2b34171413e3",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C44",
+      "claim": "Masked classification with signal subtraction was performed on the set of 400,000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed masked classification on the set of 400,000 particles, while keeping all orientations fixed at the values determined in the refinement of the 3.5 \u00c5 consensus map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the new approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "26e48eb0-d81a-4533-a2d8-d3e0b99cf387",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C45",
+      "claim": "Classification into eight classes yielded three majority classes that showed good density.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification into eight classes yielded three majority classes that showed good density (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "51cf7605-0037-484f-8208-3de3860d3dfe",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C46",
+      "claim": "Five smaller classes from the eight-class classification gave suboptimal reconstructions, and the particles from these classes were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Five smaller classes gave suboptimal reconstructions, and the particles from these classes were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "661ae62e-14ec-4a2f-a3f0-09d439dd988c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C47",
+      "claim": "The three good classes had resolutions in the range of 4.0\u20134.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The maps had resolutions in the range of 4.0\u20134.3 \u00c5, which allowed reliable main-chain tracing, but left density for many side chains less well defined (Table 1, Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "26258d24-1da8-4710-8bc3-8e389b58882b",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C48",
+      "claim": "The 4.0\u20134.3 \u00c5 resolution maps allowed reliable main-chain tracing, but left density for many side chains less well defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The maps had resolutions in the range of 4.0\u20134.3 \u00c5, which allowed reliable main-chain tracing, but left density for many side chains less well defined (Table 1, Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the quality of the maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "3430da12-e55c-4b7c-a3e5-079b6f58f8bb",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C49",
+      "claim": "TM2 is only ordered in class 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the three structures that were identified in the experimental data set using masked classification on the PS1 subunit (Table 1, Videos 1\u20132) explained observations made in the consensus structure. In the high-resolution structure, density for the cytoplasmic side of TM6 was weak, while density for TM2 was only visible after applying a 7 \u00c5 low-pass filter. This agrees with the observation that TM2 is only ordered in class 1, whereas TM6 adopts different orientations in all three classes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "cf8bd4a8-4931-4729-b972-7ae58f903d92",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C50",
+      "claim": "TM6 adopts different orientations in all three classes.",
+      "claim_type": "EXPLICIT",
+      "source": "This agrees with the observation that TM2 is only ordered in class 1, whereas TM6 adopts different orientations in all three classes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "7561ce05-37db-4816-8beb-1554d171907a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C51",
+      "claim": "TM6 probably adopts a wide range of conformations in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably, TM6 adopts a wide range of conformations in solution and our classification merely provides discrete snapshots of a continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on the observed variations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "104d53e1-7e43-450d-8002-0df896c0c286",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C52",
+      "claim": "Significant variations in the conformation of Pen-2 were observed despite not focusing classification on Pen-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that we did not focus our classification on Pen-2, we also observe significant variations in the conformation of Pen-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "aa7ab88a-f457-4bf6-96ff-5050e6da597c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C53",
+      "claim": "Compared to classes 1 and 2, Pen-2 in class 3 has rotated away from PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to classes 1 and 2, Pen-2 in class 3 has rotated away from PS1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and can be seen in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "d81d27e3-18e3-46f8-bda0-595e685572f2",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C54",
+      "claim": "The rotation of Pen-2 in class 3 concurs with a large conformational change in PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "This rotation concurs with a large conformational change in PS1, where TM3 and TM4 rotate in the same direction as Pen-2, TM5 and TM6 move towards the extracellular space, and TM6 rotates towards TM7 (see Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "d0bee229-8bab-4e76-ac55-b96102f1a220",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C55",
+      "claim": "In class 3, the rotation and upward motion of TM6 positions the two catalytic aspartates within close enough distance of each other to potentially catalyze proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotation and upward motion of TM6 positions the two catalytic aspartates within close enough distance of each other to potentially catalyze proteolysis (although we do not see density for the aspartate side chains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f8b5f5c3-d332-4f05-9b9b-ec567fe86c6a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C56",
+      "claim": "A rod-shaped density that could not be attributed to any of the known \u03b3-secretase components is visible in classes 1 and 2, but not in class 3.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar density that could not be attributed to any of the known \u03b3-secretase components is also visible in classes 1 and 2, but not in class 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "df4cc099-21d1-447f-ae85-36193f2dd526",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C57",
+      "claim": "The rod-shaped density is best defined in class 1, where it shows clear features of \u03b1-helical pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "The rod-shaped density is best defined in class 1, where it shows clear features of \u03b1-helical pitch.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "aecf199b-8a54-4b5c-be55-2dc75ef9cef0",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C58",
+      "claim": "The unidentified density was modeled as an \u03b1-helix with an almost 90-degree kink at the extracellular side of the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled this density as an \u03b1-helix with an almost 90-degree kink at the extracellular side of the transmembrane domain (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "be2fd0f4-809a-46d5-bf11-6f9926a9ddb3",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C59",
+      "claim": "The kink of the unidentified helix is in close proximity of the loop of residues 240\u2013244 of nicastrin.",
+      "claim_type": "EXPLICIT",
+      "source": "The kink of this helix is in close proximity of the loop of residues 240\u2013244 of nicastrin, and then extends into the membrane through the cavity formed by TM2, TM3 and TM5 of PS1, until it disappears just before reaching the active site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "2f043f4f-9a8e-407a-b138-c3eeacf1c315",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C60",
+      "claim": "The entire cavity in which the unidentified helix is present is lined with residues from TM2, TM3 and TM5 of PS1 that have been implicated in FAD.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire cavity in which the helix is present is lined with residues from TM2, TM3 and TM5 of PS1 that have been implicated in FAD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "506cfc9c-bc4b-4f00-b0f6-18bad5ad3940",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C61",
+      "claim": "Mass spectrometry analysis suggested the presence of multiple proteins with a single predicted transmembrane helix in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis suggested the presence of multiple proteins with a single predicted transmembrane helix in our sample, and the presence of three of these proteins was further confirmed by Western blot analysis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "6ff86f9b-2564-4cb8-a49b-dc11a13099e1",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C62",
+      "claim": "The presence of three proteins with a single predicted transmembrane helix was confirmed by Western blot analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis suggested the presence of multiple proteins with a single predicted transmembrane helix in our sample, and the presence of three of these proteins was further confirmed by Western blot analysis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "428f3c1a-6ef5-4c29-bf76-9f5555267f76",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C63",
+      "claim": "A 4.2 \u00c5 map was calculated from 51,366 particles of the DAPT-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, from the selected 51,366 particles we calculated a 4.2 \u00c5 map, which was of sufficient quality to build a reliable main-chain model, although the density for many side chains was less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "df210698-eb78-4305-b4f3-c929f827f51c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C64",
+      "claim": "The 4.2 \u00c5 DAPT-bound map was of sufficient quality to build a reliable main-chain model, although the density for many side chains was less clear.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, from the selected 51,366 particles we calculated a 4.2 \u00c5 map, which was of sufficient quality to build a reliable main-chain model, although the density for many side chains was less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "8d5e9631-3e47-4d49-b248-0ca608e8b7a8",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C65",
+      "claim": "Masked classifications with signal subtraction on the DAPT-bound data revealed only a single class with good density for the transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "For these data, masked classifications with signal subtraction revealed only a single class with good density for the transmembrane helices, and this class did not show any helical-like density in the cavity between TM2, TM3 and TM5 of PS1 (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "82622f58-ab02-4b2d-9c0f-630e581042ff",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C66",
+      "claim": "The DAPT-bound structure does not show any helical-like density in the cavity between TM2, TM3 and TM5 of PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "For these data, masked classifications with signal subtraction revealed only a single class with good density for the transmembrane helices, and this class did not show any helical-like density in the cavity between TM2, TM3 and TM5 of PS1 (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "6f11b9f1-43ee-4f28-a0b1-d57bcd40d505",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C67",
+      "claim": "Upon inhibitor binding, there are no prominent changes in Aph-1 and nicastrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inhibitor binding, there are no prominent changes in Aph-1 and nicastrin, and Pen-2 is in a very similar conformation as in classes 1 and 2 of the apo-state ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "4f73b1b3-4d01-42b3-bcf1-43ac9250abd5",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C68",
+      "claim": "Pen-2 is in a very similar conformation in the DAPT-bound structure as in classes 1 and 2 of the apo-state ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inhibitor binding, there are no prominent changes in Aph-1 and nicastrin, and Pen-2 is in a very similar conformation as in classes 1 and 2 of the apo-state ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "196bf27b-a451-4d3e-84c6-9340d7b4d621",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C69",
+      "claim": "The largest changes upon DAPT binding occur in PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest changes occur in PS1, which is much better ordered in the complex with DAPT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "b0e7b4bc-6b5a-46e3-a386-f8816f1d5390",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C70",
+      "claim": "PS1 is much better ordered in the complex with DAPT.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest changes occur in PS1, which is much better ordered in the complex with DAPT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f8762093-9713-4118-bc71-462bd459c4ae",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C71",
+      "claim": "TM2 and its linkers with TM1 and TM3, the cytoplasmic ends of TM3 and TM6, and part of the long linker between TM6-7 all become ordered upon DAPT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "TM2 and its linkers with TM1 and TM3, the cytoplasmic ends of TM3 and TM6, and part of the long linker between TM6-7 all become ordered upon DAPT binding (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "72724f62-2baf-4f90-bdee-712c21a3b67f",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C72",
+      "claim": "TM2 contains 32 residues and runs at an angle of approximately 40 degrees with the plane of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This helix contains 32 residues and runs at an angle of approximately 40 degrees with the plane of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "ef096c2f-eddd-4c12-8be8-0566288efeb1",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C73",
+      "claim": "TM3 extends 7 residues longer in the DAPT-bound structure than in the apo-state.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cytoplasmic side of the membrane a short linker connects TM2 to TM3, and TM3 extends 7 residues longer than in the apo-state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "d5ad6883-14a6-4720-947f-e2aa5d3bc777",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C74",
+      "claim": "Apart from local changes in the cytoplasmic sides of TM2 and TM6, the overall conformation of PS1 in the DAPT-bound structure is very similar to class 1 from the apo-state ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, apart from local changes in the cytoplasmic sides of TM2 and TM6, the overall conformation of PS1 in the DAPT-bound structure is very similar to class 1 from the apo-state ensemble, and the two structures overlap with a root mean squared deviation (r.m.s.d.) of 0.4 \u00c5 between 265 C\u03b1 atom pairs (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "19ab4872-55b2-4e2e-abaa-31a1264aab7a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C75",
+      "claim": "The DAPT-bound structure and class 1 from the apo-state ensemble overlap with an r.m.s.d. of 0.4 \u00c5 between 265 C\u03b1 atom pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, apart from local changes in the cytoplasmic sides of TM2 and TM6, the overall conformation of PS1 in the DAPT-bound structure is very similar to class 1 from the apo-state ensemble, and the two structures overlap with a root mean squared deviation (r.m.s.d.) of 0.4 \u00c5 between 265 C\u03b1 atom pairs (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "d0e730f7-e876-4c85-b7ad-f08faa0aa74d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C76",
+      "claim": "Near the active site, TM6 displays a strong kink at Pro264.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the active site, TM6 displays a strong kink at Pro264, which positions its cytoplasmic side underneath a cavity formed by TM2, TM3, TM5, TM6 and TM7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "fc0da338-8f48-4d83-b2fa-282ddae8e9f5",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C77",
+      "claim": "The cavity near the active site contains the only peak of strong density in the transmembrane domain that is unaccounted for by the protein model.",
+      "claim_type": "EXPLICIT",
+      "source": "This cavity contains the only peak of strong density in the transmembrane domain that is unaccounted for by the protein model (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "68af911b-ae3f-40c9-a2c4-0716efaca6ab",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C78",
+      "claim": "The unaccounted density in the DAPT-bound structure is tentatively assigned to the inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of this density is consistent with the expected size of a single DAPT molecule. Therefore, we tentatively assign this density to the inhibitor, although at the limited resolution of our map we cannot determine its exact orientation or conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "ef6fc90c-6b92-4569-92fa-677333e5b74f",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C79",
+      "claim": "The pocket where the inhibitor binds is very hydrophobic.",
+      "claim_type": "EXPLICIT",
+      "source": "The pocket where the inhibitor binds is very hydrophobic, which is as anticipated given the hydrophobic nature of the DAPT molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT binding site.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "086f4b5f-5163-45b9-aca5-98110b44ba30",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C80",
+      "claim": "Met146, Met233, Trp165, Phe283 and Gly384 seem to be involved in interactions with the inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Met146 and Met233, as well as Trp165, Phe283 and Gly384 seem to be involved in interactions with the inhibitor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "b60a14ed-b918-42a7-b4ee-a94a3028a0ef",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C81",
+      "claim": "Except for Phe283, all residues involved in inhibitor interactions have been targeted for mutations in FAD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for Phe283, all these residues have been targeted for mutations in FAD patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section connecting structural findings to disease mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "003a488c-cfa9-455d-8bc3-351442121af0",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C82",
+      "claim": "The location of the inhibitor right next to the active site is in good agreement with previous observations that the DAPT binding site is distinct from, but in close proximity of the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the inhibitor right next to the active site is also in good agreement with previous observations that the DAPT binding site is distinct from, but in close proximity of the active site (Kornilova et al., 2003; Morohashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e57e4157-21d6-4391-b676-822549b1510a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C83",
+      "claim": "The kink in TM6 brings the C\u03b1 atoms of the two catalytic aspartates within 8.0 \u00c5 of each other in the DAPT-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with a small movement of TM7 towards TM6, the kink in TM6 brings the C\u03b1 atoms of the two catalytic aspartates within 8.0 \u00c5 of each other, which may again be close enough to facilitate catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "5b0009f4-0a1b-4624-8abd-e24d16d3d855",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C84",
+      "claim": "The conformation of the highly conserved 433PAL435 motif changes upon DAPT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Also the conformation of the highly conserved 433PAL435 motif, which is important for \u03b3-secretase activity (Wang et al., 2004, 2006), changes upon DAPT binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "9b863bc5-5436-4692-839a-2bc8b8304ebf",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C85",
+      "claim": "At the cytoplasmic end of TM6, residues 280-283 form a single \u03b1-helical turn, which is stabilized by a hydrogen bond between Glu280 and His163.",
+      "claim_type": "EXPLICIT",
+      "source": "There, residues 280-283 form a single \u03b1-helical turn, which is stabilized by a hydrogen bond between Glu280 and His163, while Phe283 interacts with the inhibitor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "7e848eb3-c60a-45ce-a2f3-6532c3b4c162",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C86",
+      "claim": "Mutation of Glu280 into an alanine (the Paisa mutation) is by far the most common cause of FAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of Glu280 into an alanine (the so-called Paisa mutation) is by far the most common cause of FAD (http://www.alzforum.org/mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "6f730226-27e0-43c2-8eb5-b331b30620e5",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C87",
+      "claim": "Residues 285\u2013288 form a short \u03b2-strand before the density of the linker disappears just three residues before the auto-proteolytic cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 285\u2013288 form a short \u03b2-strand before the density of the linker disappears just three residues before the auto-proteolytic cleavage site between Thr291 and Met292.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f2f120f2-2fc3-4853-a906-f8f8fdc93f67",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C88",
+      "claim": "The density reappears at residue 378, where residues 378\u2013381 form a second \u03b2-strand that hydrogen bonds with the first.",
+      "claim_type": "EXPLICIT",
+      "source": "The density then reappears at residue 378, where residues 378\u2013381 form a second \u03b2-strand that hydrogen bonds with the first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the DAPT-bound structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f545b04a-1750-4b4b-99fc-936ec3496742",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C89",
+      "claim": "The procedure for masked cryo-EM image classification combined with residual signal subtraction fills a gap in experimental techniques for studying molecular dynamics within individual protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The procedure for masked cryo-EM image classification combined with residual signal subtraction fills part of this gap in experimental techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion about the methodological contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f301d978-b068-4d0a-8222-e18d985fe368",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C90",
+      "claim": "Application of the masked classification approach to the apo-state \u03b3-secretase data revealed a range of different conformations for TM6.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the masked classification approach to the data set of apo-state \u03b3-secretase particles revealed a range of different conformations for TM6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion summarizing the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "c5f0ee7f-6ebe-4f3b-9beb-496a125919da",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C91",
+      "claim": "The conformational flexibility of TM6 leads to a variation in the distance between the two aspartates that form the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational flexibility leads to a variation in the distance between the two aspartates that form the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "949fcd93-4e4d-4029-9ef0-e5536f0cb30c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C92",
+      "claim": "The class where the aspartates are closest together also shows a markedly different conformation of Pen-2 and a re-arrangement of TM3, TM4 and TM5 in PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the class where the aspartates are closest together also shows a markedly different conformation of Pen-2 and a re-arrangement of TM3, TM4 and TM5 in PS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion summarizing the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "c39f21c2-5fdd-4445-8ec8-042a8ad18da0",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C93",
+      "claim": "Pen-2 is required for autocatalytic maturation and protease activity of \u03b3-secretase.",
+      "claim_type": "EXPLICIT",
+      "source": "Pen-2 is required for autocatalytic maturation and protease activity of \u03b3-secretase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "4414f654-9d35-4d49-aea3-2427357d9c9d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C94",
+      "claim": "Binding of Pen-2 to the complex activates the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of Pen-2 to the complex activates the active site, and binding of Pen-2 was observed to have an allosteric effect on TM6 (Takeo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "00c1942c-94b0-426d-a52f-f484a26c9fe4",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C95",
+      "claim": "Upon binding of the inhibitor, the catalytic subunit undergoes a marked rigidification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the structure in complex with DAPT provides complementary insights into the conformational freedom of \u03b3-secretase. Upon binding of the inhibitor, the catalytic subunit undergoes a marked rigidification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion summarizing the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "55f5e39e-ca45-4f5d-85c6-89014bb0c559",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C96",
+      "claim": "The kink in TM6 may expedite the U-turn that is required to position the auto-proteolytic cleavage site back into the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed kink in TM6 may expedite the U-turn that is required to position the auto-proteolytic cleavage site back into the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis based on the structural findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "896e3a2a-b288-4d4a-8084-7ae3808522b0",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C97",
+      "claim": "Auto-proteolytic cleavage is predicted to occur in an \u03b1-helix spanning residues 280\u2013300 of the linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, auto-proteolytic cleavage is predicted to occur in an \u03b1-helix spanning residues 280\u2013300 of the linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a prediction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "68fbe946-5e37-4433-a879-b3b85124b6ae",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C98",
+      "claim": "TM2 of PS1 only seems to be ordered when something is bound in the large cavity that is lined with FAD-derived mutations between TM2, TM3 and TM5.",
+      "claim_type": "EXPLICIT",
+      "source": "TM2 of PS1 is well ordered in both the DAPT-bound structure and in class 1 of the apo-state, whereas it is invisible in the other apo-state classes. This helix only seems to be ordered when something is bound in the large cavity that is lined with FAD-derived mutations between TM2, TM3 and TM5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "bf5184f0-3624-4590-959b-d34186855e93",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C99",
+      "claim": "Four of the proteins identified by mass spectrometry had also previously been observed to co-purify with \u03b3-secretase: TMP21/p23, p24a, Vamp-8 and Sec22B.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the proteins that were identified by mass spectrometry had also previously been observed to co-purify with \u03b3-secretase: TMP21/p23, p24a, Vamp-8 and Sec22B (Wakabayashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "80bfc75e-36df-4b57-a034-c076a77ea13a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C100",
+      "claim": "TMP21 was observed to be a component of the \u03b3-secretase complex that acts as a negative regulator of \u03b3-cleavage, while leaving \u03b5-cleavage intact.",
+      "claim_type": "EXPLICIT",
+      "source": "TMP21 was also observed to be a component of the \u03b3-secretase complex that acts as a negative regulator of \u03b3-cleavage, while leaving \u03b5-cleavage intact (Chen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "a0905271-b343-4560-a807-c3fdd450429d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C101",
+      "claim": "The kinked \u03b1-helix arises from a mixture of co-purified proteins in the sample that bind to the \u03b3-secretase complex in a manner that mimics substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the kinked \u03b1-helix in our structure arises from a mixture of co-purified proteins in our sample that bind to the \u03b3-secretase complex in a manner that mimics substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1c1bc4e5-e06e-4180-b56b-a5e671413937",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C102",
+      "claim": "This hypothesis is in good agreement with previous biochemical observations about an 'initial substrate-binding site' that is distinct from the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is in good agreement with previous biochemical observations about an 'initial substrate-binding site' that is distinct from the active site (Beher et al., 2003; Das et al., 2003; Esler et al., 2002; Tian et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "fdff6b01-f6b9-4690-8bca-d8cd67b6b869",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C103",
+      "claim": "Photolabeling experiments suggest that the initial substrate-binding site partially overlaps with the DAPT-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Photolabeling experiments suggest that the initial substrate-binding site partially overlaps with the DAPT-binding site (Kornilova et al., 2003; Morohashi et al., 2006), and mutational analysis identified TM2 and TM6 to be involved in substrate binding (Watanabe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "cd5d0555-7dd3-496c-b356-c12aed482847",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C104",
+      "claim": "Mutational analysis identified TM2 and TM6 to be involved in substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Photolabeling experiments suggest that the initial substrate-binding site partially overlaps with the DAPT-binding site (Kornilova et al., 2003; Morohashi et al., 2006), and mutational analysis identified TM2 and TM6 to be involved in substrate binding (Watanabe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e54e83b3-8d0b-4fdb-909c-159891258121",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C105",
+      "claim": "After the kink, the \u03b1-helix extends for 10 residues into the transmembrane domain, before its four C-terminal residues overlap with the DAPT-binding site and almost reach the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "A superposition of the kinked \u03b1-helix on top of the DAPT structure shows that after the kink, the \u03b1-helix extends for 10 residues into the transmembrane domain, before its four C-terminal residues overlap with the DAPT-binding site and almost reach the active site (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "bc8e82b7-97b5-4ea2-a36f-ec883eda74ab",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C106",
+      "claim": "The NMR structure of the A\u03b242 peptide in an aqueous solution of fluorinated alcohols shows a strikingly similar 90-degree kink in its \u03b1-helical structure, which is positioned right after Lys699.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the NMR structure of the A\u03b242 peptide in an aqueous solution of fluorinated alcohols shows a strikingly similar 90-degree kink in its \u03b1-helical structure, which is positioned right after Lys699 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 6B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "54a113e9-664d-4e4b-892b-24bf95e305c6",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C107",
+      "claim": "A superposition of the NMR model on the kinked \u03b1-helix places the cleavage site that would result in the formation of A\u03b242 peptides in close proximity to the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "A superposition of the NMR model on the kinked \u03b1-helix in our structure places its N-terminus flat on the extracellular side of the membrane, while the cleavage site that would result in the formation of A\u03b242 peptides is placed in close proximity to the active site (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "2c8403c0-905a-465f-99bb-1111fbb47e86",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C108",
+      "claim": "All the proteins that were both identified in the sample by mass spectrometry and that had also previously been observed to co-purify with \u03b3-secretase contain either an arginine or a lysine just before their predicted transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all the proteins that were both identified in our sample by mass spectrometry and that had also previously been observed to co-purify with \u03b3-secretase (Wakabayashi et al., 2009) contain either an arginine or a lysine just before their predicted transmembrane helix (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "5fdba1a6-1d9e-4f0a-a8cf-3fc107ed1fa7",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C109",
+      "claim": "The large, positively charged residue together with the kink in the \u03b1-helix act as an anchor to delimit the cleavage position in the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore tempting to speculate that the large, positively charged residue together with the kink in the \u03b1-helix act as an anchor to delimit the cleavage position in the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "02f09b94-b007-4811-9e93-72fb0b3bbd11",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C110",
+      "claim": "This would explain why mutations in Lys699 have a marked effect on the length of the A\u03b2 cleavage products.",
+      "claim_type": "EXPLICIT",
+      "source": "This would explain why mutations in Lys699 have a marked effect on the length of the A\u03b2 cleavage products (Kukar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as speculation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "de756753-e928-4064-8abf-bb96251ba621",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C111",
+      "claim": "The kink in the \u03b1-helix is positioned next to the recently mapped binding site of a phenylimidazole-like \u03b3-secretase modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the kink in the \u03b1-helix is positioned next to the recently mapped binding site of a phenylimidazole-like \u03b3-secretase modulator (highlighted with spheres in Figure 6A), which could explain how this modulator affects cleavage in the distant active site through changes in the substrate conformation (Takeo et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 6A, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "365cbdbd-add0-482b-a3fb-f440ca81499a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C112",
+      "claim": "Replacement of Lys699 or increasing the positive charge at Gly700 has been observed to block or attenuate the effects of \u03b3-secretase modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "It could also explain why replacement of Lys699 or increasing the positive charge at Gly700 has been observed to block or attenuate the effects of \u03b3-secretase modulators (Jung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "aec8e9b1-2f7d-44ad-9f3e-1ec6ae6de3e4",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C113",
+      "claim": "Substrate enters the transmembrane domain through the cavity formed by TM2, TM3 and TM5 of PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results form the basis for a hypothesis that substrate enters the transmembrane domain through the cavity formed by TM2, TM3 and TM5 of PS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "f33d93e1-f234-49d1-949f-0c7862daa65c",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C114",
+      "claim": "The disordered nature of TM2 in the absence of substrate or inhibitor suggests that this helix may act as a lateral gate through which the transmembrane helix of the substrate enters the cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The disordered nature of TM2 in the absence of substrate or inhibitor suggests that this helix may act as a lateral gate through which the transmembrane helix of the substrate enters the cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1a735b5e-1900-44d1-a017-5e3947f5c86d",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C115",
+      "claim": "The inhibitor-bound structure closely resembles the class with the kinked \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the inhibitor-bound structure closely resembles the class with the kinked \u03b1-helix suggests that the inhibitor and the substrate stabilize a similar conformation from the apo-state ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "9b73c410-915c-42a6-8317-423beed572ba",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C116",
+      "claim": "DAPT acts as an inhibitor by blocking access of the substrate to the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "DAPT would then act as an inhibitor by blocking access of the substrate to the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "91927ec8-8dfd-4571-8057-204efc6de341",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "claim_id": "C117",
+      "claim": "Masked classification with signal subtraction correctly identified 93% of simulated particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Masked classification with signal subtraction on the PS1 subunit correctly identified 93% of the simulated particles (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "59a573d2-19fc-4e68-9fa9-922569cd45ca",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel masked classification method with signal subtraction was developed and applied to identify three distinct conformational states of the PS1 subunit in apo-state \u03b3-secretase, revealing differential ordering of TM2 (ordered only in class 1) and variable orientations of TM6 across all three classes at 4.0-4.3 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 and C117 collectively demonstrate the successful development and validation of the masked classification approach. The method identified three conformational classes with good density (C45-C47), achieved interpretable resolutions (C47-C48), and revealed specific structural differences in TM2 and TM6 (C49-C50). The 93% accuracy on simulated data (C117) validates the method's reliability. Multiple control experiments (Figure 2 supplements) support robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An unidentified kinked \u03b1-helix was observed in classes 1 and 2 (but not class 3) within a cavity formed by TM2, TM3, and TM5 of PS1, with mass spectrometry and Western blot confirming the presence of multiple single-transmembrane proteins in the sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 are well-supported by cryo-EM density (C56-C59, Figure 4), correlation with FAD mutation sites (C60), and orthogonal biochemical validation via mass spectrometry and Western blot (C61-C62, Figure 4 supplement 1). The structural observations are consistent across multiple lines of evidence, though the exact identity of the helix remains unresolved at the achieved resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DAPT-bound \u03b3-secretase structure was determined at 4.2 \u00c5 resolution, revealing a single conformational state with marked rigidification of PS1, particularly ordering of TM2 and associated linkers, while Aph-1, nicastrin, and Pen-2 remain largely unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C63-C71 are supported by the cryo-EM data (Table 1, Figure 5). The resolution is sufficient for main-chain modeling (C64), masked classification reveals a single dominant state (C65), and specific structural changes in PS1 are documented (C69-C71, Figure 5 supplement 3). The contrast with the heterogeneous apo-state strengthens the conclusion of inhibitor-induced rigidification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DAPT-bound structure closely resembles apo-state class 1 (RMSD 0.4 \u00c5), with DAPT tentatively localized to a hydrophobic pocket near the active site formed by TM2, TM3, TM5, TM6, and TM7, bringing catalytic aspartates within 8.0 \u00c5 and involving residues implicated in FAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C83 are supported by structural comparisons (C74-C75, Figure 5 supplement 4), density analysis (C76-C78, Figure 5C), and correlation with prior biochemical data (C82). The tentative assignment of DAPT density (C78) is appropriately cautious given the 4.2 \u00c5 resolution. The identification of interacting residues (C80-C81) and their connection to FAD mutations strengthens biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Conformational mobility in TM2 and TM6 of presenilin is greatly reduced upon binding of DAPT or the additional helix, with TM2 ordering only when the cavity between TM2, TM3, and TM5 is occupied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C90-C91, C95, and C98 synthesize the key findings from both apo and DAPT-bound structures. The observation that TM2 orders only when the cavity is occupied (either by the kinked helix or DAPT) is directly supported by the structural data (Figures 3-5). The correlation between TM6 flexibility and active site geometry (C91) is evident from the distance measurements in Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose a substrate entry model where the kinked \u03b1-helix represents substrate-mimicking proteins, substrate enters through a lateral gate formed by TM2, the kink positions the cleavage site near the active site, and DAPT inhibits by blocking substrate access while stabilizing a similar conformation to the substrate-bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C116 represent a mechanistic hypothesis integrating structural observations with prior biochemical data. While the model is internally consistent and supported by correlations with NMR structures (C106), photolabeling data (C103), and mutational studies (C104, C110, C112), it remains speculative (as acknowledged by terms like 'hypothesize,' 'tempting to speculate'). The model requires direct validation with authentic substrates, which is noted as future work. The structural similarity between DAPT-bound and class 1 (C115) supports but does not prove the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "1e78aba1-d340-4fba-97cd-4c4fb76abdfc",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The masked cryo-EM classification with signal subtraction method fills a methodological gap for studying molecular dynamics at the secondary structure level in protein domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by the successful application to \u03b3-secretase, validation with simulated data (C117, 93% accuracy), and multiple control experiments (Figure 2 supplements). The method addresses a genuine technical challenge in cryo-EM and demonstrates practical utility for complexes in the size range where traditional approaches struggle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "8f0c111e-c901-4068-8797-05deacb2c68a",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Significant conformational variations in Pen-2 were observed, with Pen-2 rotating away from PS1 in class 3, concurrent with large conformational changes in PS1 that position the catalytic aspartates closer together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 and C92 are supported by the structural data (Figure 3, Video 2, Table 1). The observation that Pen-2 conformation correlates with PS1 conformational changes and active site geometry is directly visible in the reconstructions. However, the functional significance of these changes remains interpretive (C55 uses 'potentially'), as the authors acknowledge uncertainty about whether this relates to the activation mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "ebdc903f-6d94-4c32-b149-790219344170",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The conserved PAL motif changes conformation upon DAPT binding, with residues 280-283 forming an \u03b1-helical turn stabilized by Glu280-His163 interaction, and residues 285-288 and 378-381 forming hydrogen-bonded \u03b2-strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 describe specific structural features in the DAPT-bound structure that are visible in the density (Figure 5C). The connection to the Paisa mutation (C86) adds biological context. These are well-documented structural observations at the achieved resolution, though their functional implications remain to be fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "04dd7ac8-0d0e-42b7-8a7c-d0235b2a3dd5",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Four proteins previously observed to co-purify with \u03b3-secretase (TMP21, p24a, Vamp-8, Sec22B) were identified by mass spectrometry, with TMP21 known to act as a negative regulator of \u03b3-cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 are supported by mass spectrometry data (Figure 4 supplement 1) and citations to prior work. This provides context for the identity of the kinked helix and connects the structural findings to known regulatory mechanisms. The claims are factual and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "223830c7-d1f0-40ef-8428-ac88d08edbab",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge about \u03b3-secretase function, substrate specificity, disease relevance, complex composition, and component roles is presented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C30, C93-C94, and C97 represent established knowledge from the literature, appropriately cited. These provide necessary context for the study but are not novel findings. They are accurately stated and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "becd0e3e-2a31-48e3-a359-d9d8401822d6",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors' previous 3.4 \u00c5 cryo-EM structure of \u03b3-secretase revealed disorder in PS1, particularly in TM2, TM6, and the TM6-TM7 linker, with an unidentified rod-shaped density and an inactive active site conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C31-C39 accurately summarize findings from the authors' prior work (Bai et al., 2015a), providing essential context for the current study. These are appropriately cited and set up the motivation for the new methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "c55e0a7d-b9cc-4221-9d37-2788f57d1996",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Initial attempts at masked 3D classification on the apo-state data yielded only a single class with good density, resulting in a 3.4 \u00c5 map from 160,000 particles but failing to reveal conformational heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe the limitations of conventional masked classification that motivated the development of the signal subtraction approach. These are straightforward methodological observations that establish the need for the improved method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "ec640f7b-ec12-48eb-9708-9e46133bf920",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In the DAPT-bound structure, TM2 contains 32 residues at ~40\u00b0 to the membrane plane, and TM3 extends 7 residues longer than in the apo-state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are specific structural measurements from the DAPT-bound structure. These are straightforward observations supported by the model and density, providing detailed characterization of the ordering that occurs upon inhibitor binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    },
+    {
+      "id": "2d9feb66-d37d-4308-a5d4-2eb3aa828bcb",
+      "content_id": "9ca305d3-e411-4f30-a2ae-5ea2aa21c353",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The kink in TM6 may facilitate the U-turn required to position the auto-proteolytic cleavage site into the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 is explicitly presented as speculation ('may expedite') about the functional role of the observed TM6 kink. While structurally plausible, this hypothesis lacks direct experimental support and would require additional studies (e.g., with the linker in different conformations or mutagenesis) to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:36.302489Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05be317a-dc41-47d7-bc1a-2b34171413e3",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "26e48eb0-d81a-4533-a2d8-d3e0b99cf387",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "51cf7605-0037-484f-8208-3de3860d3dfe",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "661ae62e-14ec-4a2f-a3f0-09d439dd988c",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "26258d24-1da8-4710-8bc3-8e389b58882b",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "3430da12-e55c-4b7c-a3e5-079b6f58f8bb",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "cf8bd4a8-4931-4729-b972-7ae58f903d92",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "7561ce05-37db-4816-8beb-1554d171907a",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "91927ec8-8dfd-4571-8057-204efc6de341",
+      "result_id": "59a573d2-19fc-4e68-9fa9-922569cd45ca"
+    },
+    {
+      "claim_id": "f8b5f5c3-d332-4f05-9b9b-ec567fe86c6a",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "df4cc099-21d1-447f-ae85-36193f2dd526",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "aecf199b-8a54-4b5c-be55-2dc75ef9cef0",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "be2fd0f4-809a-46d5-bf11-6f9926a9ddb3",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "2f043f4f-9a8e-407a-b138-c3eeacf1c315",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "506cfc9c-bc4b-4f00-b0f6-18bad5ad3940",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "6ff86f9b-2564-4cb8-a49b-dc11a13099e1",
+      "result_id": "b6893854-89d6-42d4-9c11-c4cd4e6e2027"
+    },
+    {
+      "claim_id": "ac17efe2-03c3-492d-8d87-d6a0a98975fb",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "428f3c1a-6ef5-4c29-bf76-9f5555267f76",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "df210698-eb78-4305-b4f3-c929f827f51c",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "8d5e9631-3e47-4d49-b248-0ca608e8b7a8",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "82622f58-ab02-4b2d-9c0f-630e581042ff",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "6f11b9f1-43ee-4f28-a0b1-d57bcd40d505",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "4f73b1b3-4d01-42b3-bcf1-43ac9250abd5",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "196bf27b-a451-4d3e-84c6-9340d7b4d621",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "b0e7b4bc-6b5a-46e3-a386-f8816f1d5390",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "f8762093-9713-4118-bc71-462bd459c4ae",
+      "result_id": "d8b9cac9-48c1-43c9-8e05-7e4a38b0c8c6"
+    },
+    {
+      "claim_id": "d5ad6883-14a6-4720-947f-e2aa5d3bc777",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "19ab4872-55b2-4e2e-abaa-31a1264aab7a",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "d0e730f7-e876-4c85-b7ad-f08faa0aa74d",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "fc0da338-8f48-4d83-b2fa-282ddae8e9f5",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "68af911b-ae3f-40c9-a2c4-0716efaca6ab",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "ef6fc90c-6b92-4569-92fa-677333e5b74f",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "086f4b5f-5163-45b9-aca5-98110b44ba30",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "b60a14ed-b918-42a7-b4ee-a94a3028a0ef",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "003a488c-cfa9-455d-8bc3-351442121af0",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "e57e4157-21d6-4391-b676-822549b1510a",
+      "result_id": "0532a2d6-4753-40b6-a6c4-8e0434bbb163"
+    },
+    {
+      "claim_id": "54b5ca27-b7f8-40bd-96a5-a914931aae87",
+      "result_id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577"
+    },
+    {
+      "claim_id": "f301d978-b068-4d0a-8222-e18d985fe368",
+      "result_id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577"
+    },
+    {
+      "claim_id": "c5f0ee7f-6ebe-4f3b-9beb-496a125919da",
+      "result_id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577"
+    },
+    {
+      "claim_id": "00c1942c-94b0-426d-a52f-f484a26c9fe4",
+      "result_id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577"
+    },
+    {
+      "claim_id": "68fbe946-5e37-4433-a879-b3b85124b6ae",
+      "result_id": "df9cf3fb-59f1-4f87-a6a0-4f3bc273b577"
+    },
+    {
+      "claim_id": "a0905271-b343-4560-a807-c3fdd450429d",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "1c1bc4e5-e06e-4180-b56b-a5e671413937",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "fdff6b01-f6b9-4690-8bca-d8cd67b6b869",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "cd5d0555-7dd3-496c-b356-c12aed482847",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "e54e83b3-8d0b-4fdb-909c-159891258121",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "bc8e82b7-97b5-4ea2-a36f-ec883eda74ab",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "54a113e9-664d-4e4b-892b-24bf95e305c6",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "2c8403c0-905a-465f-99bb-1111fbb47e86",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "5fdba1a6-1d9e-4f0a-a8cf-3fc107ed1fa7",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "02f09b94-b007-4811-9e93-72fb0b3bbd11",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "de756753-e928-4064-8abf-bb96251ba621",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "365cbdbd-add0-482b-a3fb-f440ca81499a",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "aec8e9b1-2f7d-44ad-9f3e-1ec6ae6de3e4",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "f33d93e1-f234-49d1-949f-0c7862daa65c",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "1a735b5e-1900-44d1-a017-5e3947f5c86d",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "9b73c410-915c-42a6-8317-423beed572ba",
+      "result_id": "e1ed637f-4c0d-44f9-babb-2e9d65ea52c9"
+    },
+    {
+      "claim_id": "f545b04a-1750-4b4b-99fc-936ec3496742",
+      "result_id": "1e78aba1-d340-4fba-97cd-4c4fb76abdfc"
+    },
+    {
+      "claim_id": "104d53e1-7e43-450d-8002-0df896c0c286",
+      "result_id": "8f0c111e-c901-4068-8797-05deacb2c68a"
+    },
+    {
+      "claim_id": "aa7ab88a-f457-4bf6-96ff-5050e6da597c",
+      "result_id": "8f0c111e-c901-4068-8797-05deacb2c68a"
+    },
+    {
+      "claim_id": "d81d27e3-18e3-46f8-bda0-595e685572f2",
+      "result_id": "8f0c111e-c901-4068-8797-05deacb2c68a"
+    },
+    {
+      "claim_id": "d0bee229-8bab-4e76-ac55-b96102f1a220",
+      "result_id": "8f0c111e-c901-4068-8797-05deacb2c68a"
+    },
+    {
+      "claim_id": "949fcd93-4e4d-4029-9ef0-e5536f0cb30c",
+      "result_id": "8f0c111e-c901-4068-8797-05deacb2c68a"
+    },
+    {
+      "claim_id": "5b0009f4-0a1b-4624-8abd-e24d16d3d855",
+      "result_id": "ebdc903f-6d94-4c32-b149-790219344170"
+    },
+    {
+      "claim_id": "9b863bc5-5436-4692-839a-2bc8b8304ebf",
+      "result_id": "ebdc903f-6d94-4c32-b149-790219344170"
+    },
+    {
+      "claim_id": "7e848eb3-c60a-45ce-a2f3-6532c3b4c162",
+      "result_id": "ebdc903f-6d94-4c32-b149-790219344170"
+    },
+    {
+      "claim_id": "6f730226-27e0-43c2-8eb5-b331b30620e5",
+      "result_id": "ebdc903f-6d94-4c32-b149-790219344170"
+    },
+    {
+      "claim_id": "f2f120f2-2fc3-4853-a906-f8f8fdc93f67",
+      "result_id": "ebdc903f-6d94-4c32-b149-790219344170"
+    },
+    {
+      "claim_id": "bf5184f0-3624-4590-959b-d34186855e93",
+      "result_id": "04dd7ac8-0d0e-42b7-8a7c-d0235b2a3dd5"
+    },
+    {
+      "claim_id": "80bfc75e-36df-4b57-a034-c076a77ea13a",
+      "result_id": "04dd7ac8-0d0e-42b7-8a7c-d0235b2a3dd5"
+    },
+    {
+      "claim_id": "a78e8e7f-ba70-40b0-b278-3fc5c133d952",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "208857ee-d4cb-47e6-b21c-68a47772543d",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "66c0342c-ad21-47ff-9183-1b2d02916ee9",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "66c80511-a3ad-425b-951d-41c182302d05",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "2f77a057-9f25-4daa-b045-5961c6eb66ad",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "acb41fa4-dc7a-4c15-a86f-8ff4d408c146",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "6b9821d4-aa54-40a8-b631-c4021eadc44b",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "867efbb2-9f48-4daf-ba02-cc4837a87d3a",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "9a21e52c-e375-45c3-b441-ff0b324a2a0f",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "87755731-6e97-4e52-bd37-f17334d0b1f9",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "4f7f19dc-918d-474a-bc3c-aff60af5c79c",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "69788653-0f96-4a68-8de1-9009f9198be2",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "312f87c8-43b5-430c-a56a-bde7a6a16b6e",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "bb049006-0095-4cce-aeb1-b9dedf8485c2",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "00c85660-d322-4922-acd2-4da34d5be6e7",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "1081d1e4-9b06-43e0-8046-a65e95b17fad",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "328b5e46-137b-49f2-9ca1-7713124c1465",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "11dd7225-6679-4bd1-8bb3-b9ed3084d877",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "bbecf9e4-1bd7-40af-85ff-a86ea54c1dd2",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "86123728-5acd-402c-9349-45ea4b6310d7",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "cd0fda76-0da0-4623-a202-b4f0fc9d8795",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "1c55ed17-0f49-4848-898d-8fc1333da46e",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "e0393a29-c119-4a2a-a9fd-7c045a552585",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "01bbd6ee-3c30-4561-ac02-aa30ee19845d",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "39166a9c-da86-485f-9730-67a859f8be86",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "c39f21c2-5fdd-4445-8ec8-042a8ad18da0",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "4414f654-9d35-4d49-aea3-2427357d9c9d",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "896e3a2a-b288-4d4a-8084-7ae3808522b0",
+      "result_id": "223830c7-d1f0-40ef-8428-ac88d08edbab"
+    },
+    {
+      "claim_id": "30b8c695-b37e-4a53-bf38-1455f5c58dc4",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "593a8c59-4184-454e-863f-f7fa354d3744",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "e242ba8d-8fe2-4f9a-88b6-ce7ad5d55169",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "500b0726-9e4d-423c-b468-fe5877cdd464",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "73590cd4-84a5-40c1-9e78-09dfd362a048",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "b172d0be-95ec-4335-9f6b-95683ace8679",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "e548f849-eb4f-438f-bd9f-a457a80a16b8",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "01bfb2b9-bbd5-451e-bbbf-5a20ae0c9010",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "96fbc1f1-ed8a-40b7-b06c-1f6d3d32868f",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "1569b752-f93f-4962-b392-e093093d6593",
+      "result_id": "becd0e3e-2a31-48e3-a359-d9d8401822d6"
+    },
+    {
+      "claim_id": "a2c89cf4-8448-4915-900d-4bf4573bf447",
+      "result_id": "c55e0a7d-b9cc-4221-9d37-2788f57d1996"
+    },
+    {
+      "claim_id": "5b12a7da-7997-42dc-9fac-d8461b1f9761",
+      "result_id": "c55e0a7d-b9cc-4221-9d37-2788f57d1996"
+    },
+    {
+      "claim_id": "9d938086-04f8-4419-ae4f-e7f3a8b7a1c6",
+      "result_id": "c55e0a7d-b9cc-4221-9d37-2788f57d1996"
+    },
+    {
+      "claim_id": "968d4f21-e5d7-454c-ab19-004e37fef206",
+      "result_id": "c55e0a7d-b9cc-4221-9d37-2788f57d1996"
+    },
+    {
+      "claim_id": "72724f62-2baf-4f90-bdee-712c21a3b67f",
+      "result_id": "ec640f7b-ec12-48eb-9708-9e46133bf920"
+    },
+    {
+      "claim_id": "ef096c2f-eddd-4c12-8be8-0566288efeb1",
+      "result_id": "ec640f7b-ec12-48eb-9708-9e46133bf920"
+    },
+    {
+      "claim_id": "55f5e39e-ca45-4f5d-85c6-89014bb0c559",
+      "result_id": "2d9feb66-d37d-4308-a5d4-2eb3aa828bcb"
+    }
+  ],
+  "comparisons": []
+}

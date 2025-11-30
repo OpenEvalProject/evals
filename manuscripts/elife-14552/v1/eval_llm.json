@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors sequenced 449 CTVT tumours and 338 matched hosts from 39 countries using low-coverage whole genome sequencing (~0.3X), achieving ~70X mtDNA coverage. This revealed approximately 470 mtDNA copies per CTVT cell, 1005 substitution variants, and 27 indels in the CTVT mtDNA population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C22, C82-C86 describe the sequencing methodology and basic variant identification. The sample size, coverage metrics, and variant counts are clearly stated and supported by the methods section. The calculation of mtDNA copy number from coverage data (C19) is straightforward and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CTVT mtDNAs cluster into five distinct clades within dog haplogroup A1, representing at least five independent horizontal transfer events from host dogs within the last two thousand years. The original founder mtDNA is not detectable in analyzed tumours. Timing estimates suggest clade origins ranging from 244 to 1690 years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C5, C25, C33-C34 are supported by phylogenetic analysis showing five distinct clades. However, the timing estimates (C28-C32) rely on critical assumptions: (1) constant mtDNA mutation rate across clades and time, (2) calibration based on nuclear genome dating of 460 years for clade 2 (C26), and (3) extrapolation from human cancer mutation rates. The authors acknowledge these assumptions but do not validate them. The mutation rate could vary with selection pressure, cellular environment, or clade-specific factors. Additionally, the presence of recombination (discussed later) could confound mutation-based timing estimates. The claim that the original founder mtDNA is undetectable (C33) is an inference from absence of evidence rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The geographic distribution of the five CTVT clades tracks two millennia of dog global migration, with clades 1 and 2 showing global distribution, clade 1 having an Old World origin, and evidence for CTVT introduction to the Americas (~511 years ago) and Australia (~116 years ago) coinciding with colonial contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C36, C43-C45 describing geographic distributions are directly supported by the data (Figure 1C). However, the historical interpretations (C38, C40-C42) are speculative inferences based on geographic patterns and timing estimates. The timing estimates themselves are uncertain (see previous result). The claim about Old World origin (C38) is reasonable given early-diverging samples in Russia, Ukraine, China, and India, but alternative scenarios are not excluded. The connection to colonial contact (C40) and trade routes (C42) are plausible hypotheses but lack direct historical validation. The consistency with dog population genetics (C46) provides supporting context but does not independently validate the CTVT migration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Negative selection has operated on CTVT mtDNA to preserve function, as evidenced by significantly lower variant allele fractions for nonsense substitutions (p=0.00019) and frameshift indels (p=3.03\u00d710\u207b\u2075), and dN/dS ratios significantly below neutrality for both nonsense (0.187, p=1.02\u00d710\u207b\u2077) and missense (0.748, p=4.18\u00d710\u207b\u00b3) mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 present statistical evidence for negative selection with appropriate tests (Kolmogorov-Smirnov for VAF, likelihood ratio test for dN/dS) and significant p-values. The VAF analysis (C49-C50) shows truncating mutations are maintained at lower frequencies, consistent with purifying selection. The dN/dS analysis (C51-C52) appropriately excludes ND6 to avoid strand bias confounding (C98-C99). The context-dependent model with 192 substitution rates (C97) accounts for mutational heterogeneity. The inference that negative selection preserves mtDNA function (C53) is well-supported. However, the broader claim that functional mtDNA drives cancer (C54) is more speculative, though supported by citations to human cancer studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C76"
+    ],
+    "result": "MtDNA recombination has occurred in CTVT clade 1, detected by computational algorithms (3seq and SiScan) identifying breakpoints at MT:5430 and MT:16176. Phylogenetic trees constructed from segments on either side of these breakpoints show distinct topologies, indicating recombination replaced MT:1-5429 in a clade 1 lineage that colonized South and Central America.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present computational evidence for recombination using established algorithms with appropriate statistical thresholds (Bonferroni-corrected p<0.05, C92). The distinct phylogenetic topologies for different genomic segments (C63) provide strong evidence for recombination. The geographic inference (C64) is supported by phylogenetic and distribution data. The novelty claim (C60) is appropriately qualified. However, the authors acknowledge potential undetected recombination elsewhere and note this could affect other analyses. The mechanistic understanding remains limited (C55-C59 provide context from other systems).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "Recent mtDNA recombination was detected in tumour 559T from Nicaragua, which contains at least three distinct recombinant mtDNA haplotypes derived from CTVT clade 1 haplotype (CTVT_1B2b1_29) and a dog haplotype (A1d1a_1), confirmed by PacBio long-read sequencing. The mechanism and timing of recombination remain uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are well-supported by PacBio long-read sequencing data (C93-C95) that directly phases variants and identifies three recombinant haplotypes. The sequencing depth (111.3X, C95) and read lengths (mean 11,421bp, N50 19,382bp, C94) are sufficient for confident haplotype phasing. However, the mechanistic interpretations (C70-C73, C75) are explicitly speculative, with authors presenting alternative scenarios. The observation of a truncating COX3 mutation (C77) is noted but its significance is unclear. The resemblance of A1d1a_1 to clade 3 donor haplotype (C74-C75) raises the possibility of inter-clade recombination, which would be even more remarkable but remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude that functional mtDNA is a driver of CTVT global metastatic spread, supported by evidence of negative selection maintaining mtDNA integrity and multiple horizontal transfer events suggesting mtDNA capture is a positively selected adaptive mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C81 represent high-level interpretive conclusions. While negative selection (C78) is well-supported by the data, the inference that mtDNA capture is positively selected (C79) is more speculative. The observation of five horizontal transfer events is consistent with positive selection but does not prove it\u2014alternative explanations (e.g., neutral capture with subsequent selection) are not excluded. The claim that functional mtDNA drives metastatic spread (C9) is a strong causal statement not directly tested by the data. The study demonstrates mtDNA functionality is important (via negative selection) and that horizontal transfer occurs, but does not establish that mtDNA acquisition actively drives or enables metastasis. This would require experimental manipulation or additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "CTVT mtDNA somatic mutations show a characteristic profile dominated by C>T and T>C mutations with striking strand bias, similar to human cancers. This mutational process is probably replication-coupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is directly supported by the mutational spectrum analysis (Figure 2\u2014figure supplement 1) showing the characteristic C>T and T>C bias. The comparison to human cancers is supported by citation (Ju et al., 2014). The inference that the process is replication-coupled (C24) is reasonable given the strand bias and consistency with human cancer data, though it remains an inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "CTVT is a clonally transmissible cancer that originated approximately 11,000 years ago from an individual dog, is transmitted between dogs via living cancer cells during coitus, and is found worldwide, making it the oldest and most prolific cancer lineage known in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15 represent established background knowledge about CTVT, supported by multiple citations to previous work. These are not novel findings of this study but provide essential context. The global distribution (C2, C14) is confirmed by the current study's sample collection from 39 countries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study employed appropriate phylogenetic methods (PhyML 3.0 with GTR+G+I model, 100 bootstrap replicates), recombination detection algorithms (RDP4 package), and selection analysis methods (context-dependent dN/dS adapted from Martincorena et al. 2015), with appropriate exclusions to avoid confounding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C92, C96-C99 describe methodological choices that are appropriate and well-justified. The phylogenetic model selection, bootstrap replication, recombination detection parameters, and dN/dS methodology are standard and appropriate. The exclusion of ND6 from dN/dS analysis (C98) is well-justified given the strand-biased mutation spectrum. The use of human cancer mutation rates (C90-C91) for timing estimates is reasonable but introduces uncertainty (addressed in earlier result).",
+    "result_type": "MINOR"
+  }
+]

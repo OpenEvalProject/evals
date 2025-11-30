@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Transmembrane chemokines CXCL16 and CX3CL1 are widely expressed in various tumor cell lines (glioma, neuroblastoma, colon carcinoma) and endothelial cells, while their classical receptors CXCR6 and CX3CR1 are restricted to activated T-cells and monocytes but absent in tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C28 are well-supported by qRT-PCR data (Figure 1) and immunocytochemistry showing high tm-chemokine expression in multiple tumor types with absent or minimal receptor expression. The expression pattern is consistently demonstrated across multiple cell lines with appropriate controls (LOX cells as negative control).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Receptor-negative but tm-chemokine-expressing cells (glioma cell lines and primary cultures) respond to soluble chemokines with transient, dose- and time-dependent ERK phosphorylation (10-40 min, maximum at ~1 nM), while tm-chemokine-negative LOX cells show no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C33 are strongly supported by Western blot data (Figures 2A-C) and immunocytochemistry (Figure 2B) demonstrating ERK phosphorylation in multiple cell lines and primary cultures. The dose-response and time-course experiments are well-controlled with appropriate positive controls (EGF) and negative controls (LOX cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Soluble chemokines bind with high affinity to cells expressing transmembrane chemokines, as demonstrated by fluorescence microscopy, FACS, electron microscopy, and chemical cross-linking showing association of 1-2 soluble peptides to tm-chemokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C53 are supported by multiple complementary binding assays (Figure 5A-D) including fluorescence microscopy, FACS analysis, immuno-electron microscopy, and cross-linking experiments. The use of multiple independent techniques strengthens the conclusion, though the stoichiometry inference (C53) is based on molecular weight estimation which has inherent uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Soluble chemokines induce biological effects in tm-chemokine-expressing cells including ERK phosphorylation, enhanced proliferation (U343, A764 cells), and anti-apoptotic effects (reduced caspase-3/7 activity and PARP cleavage), while tm-chemokine-negative LOX cells do not respond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C34-C36 are supported by Western blots (Figures 2, 6, 8), WST-assays (Figure 3), and caspase-3/7 activity assays (Figure 3). The biological effects are consistently observed across multiple cell lines with appropriate controls. Statistical significance is indicated for proliferation and anti-apoptosis assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Soluble chemokines do not mediate cell migration in glioma cells despite inducing other biological effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by wound healing assay data (Figure 3 bottom panel) showing no significant difference in migration compared to controls. This negative result is important for characterizing the specificity of inverse signaling and distinguishing it from classical chemokine receptor signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C55"
+    ],
+    "result": "The intracellular domain of transmembrane chemokines is required for inverse signaling, as C-terminally truncated tm-chemokines lacking this domain cannot transduce signals upon stimulation with soluble chemokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C55 are supported by experiments with truncated tm-chemokines (Figure 6B) showing abolished ERK phosphorylation. The truncation was verified by immunocytochemistry and Western blot. This structure-function analysis provides strong evidence for the requirement of the intracellular domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dimerization of transmembrane chemokines is required for inverse signaling, as intact antibodies but not monovalent F(ab) fragments can induce ERK phosphorylation in tm-chemokine-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-C65 are supported by experiments comparing intact antibodies to F(ab) fragments (Figure 9). The differential response provides strong evidence for dimerization requirement. However, the claim is partially inferential as direct visualization of dimerization was not performed in this study, though it is supported by cited literature (C66, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Transfection of tm-chemokine-negative LOX cells with full-length tm-chemokines confers responsiveness to soluble chemokines (ERK phosphorylation) and to conditioned media containing shed chemokines, and provides protection from Camptothecin-induced apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56-C60 are supported by transfection experiments (Figures 6A, 6C, 7) showing gain-of-function in LOX cells. Transfection efficiency was verified by qRT-PCR and immunocytochemistry. The use of conditioned media (C56-C57) demonstrates that naturally shed chemokines can also induce signaling, strengthening the physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "siRNA silencing of tm-chemokines in responsive glioma cells reduces tm-chemokine transcript levels to 24-59% of controls and clearly reduces s-chemokine-mediated ERK phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by siRNA experiments (Figure 8) showing loss-of-function. Silencing efficiency was confirmed by qRT-PCR, and reduced ERK phosphorylation was demonstrated by Western blot. This complementary approach to the gain-of-function experiments strengthens the conclusion that tm-chemokines mediate the observed signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Inverse signaling is independent of classical G-protein coupled receptor signaling (Pertussis toxin insensitive), and alternative receptors including CXCR7, chemokine decoy receptors, US28, and CD44 can be excluded as mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by Pertussis toxin experiments (Figure 4A), CXCR7 inhibition (Figure 4C), and expression profiling (Figure 4B). The systematic exclusion of alternative receptors strengthens the conclusion that tm-chemokines themselves mediate the signaling. However, the possibility of an unidentified co-receptor cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CXCL16 and CX3CL1 are transmembrane proteins converted to soluble ligands by ADAM10/17, with potential signaling motifs in their intracellular domains, though signaling via transmembrane forms had not been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by citations to established literature and sequence analysis (Table 1). These claims establish the background knowledge and novelty of the current findings. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Reverse signaling by transmembrane ligands has been described for TNF family members, IL-15, ephrin-ligands, and semaphorins, inducing various biological functions including co-stimulation, silencing, and synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by appropriate citations to established literature. These claims provide important context for understanding the novelty of inverse signaling and its relationship to reverse signaling. The claims are accurately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The intracellular domains of transmembrane chemokines contain potential signaling motifs (SXXS sequences and SH2-binding sites) similar to those in TNF family members and ephrins, with conservation patterns varying between CX3CL1 (highly conserved across mammals) and CXCL16 (primates and some mammals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by sequence analysis (Table 1) and comparison with known signaling motifs from literature. The evolutionary conservation analysis adds support for functional significance. However, the actual involvement of these specific motifs in inverse signaling requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Expression of transmembrane chemokines is induced by pro-inflammatory cytokines, and their shedding is mediated by ADAM10/17. ADAMs may terminate reverse signaling by cleaving transmembrane ligands, as demonstrated for TNF family and ephrin-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by citations to established literature. These claims provide important context for understanding the regulation of tm-chemokine expression and the potential role of ADAMs in modulating inverse signaling. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Dimerization and clustering of CX3CL1 chemokine domain and transmembrane CX3CL1 have been demonstrated by X-ray crystallography and BRET/HTRF studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by appropriate citations to prior structural and biophysical studies. These claims provide important supporting evidence for the dimerization requirement inferred from the antibody experiments in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Inverse signaling is proposed to be an autocrine feedback and fine-tuning system that supports tumor cell stabilization and proliferation, with potential roles in inflammation and tissue development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C84 are largely speculative interpretations of the experimental findings. While the observed pro-survival and proliferative effects (C81) are supported by data, the broader biological significance and roles in different contexts (C79, C80, C82, C84) require further investigation. The comparison to autocrine growth factor loops (C83) is based on established knowledge but the specific role of inverse signaling in tumors needs validation in more physiological models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Inverse signaling is a novel mechanism where soluble ligands shed from transmembrane counterparts induce signals through binding to transmembrane ligands, distinct from reverse signaling which requires binding of transmembrane ligand to its classical receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 summarize the key conceptual advance of the manuscript. The distinction between inverse and reverse signaling is clearly defined and supported by the collective experimental evidence including binding studies, signaling assays, gain- and loss-of-function experiments, and exclusion of classical receptors. This represents a novel signaling mechanism.",
+    "result_type": "MAJOR"
+  }
+]

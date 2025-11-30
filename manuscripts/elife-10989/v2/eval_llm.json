@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C13"
+    ],
+    "result": "Neurons in higher cortical areas, particularly the prefrontal cortex, display mixed selectivity by encoding multiple task parameters simultaneously, creating heterogeneity that obscures information representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, C9, and C13 collectively establish the problem of mixed selectivity in higher cortical areas. These claims are supported by multiple citations to prior work (C9, C13) and represent established knowledge in the field. The claims logically connect the observation of mixed selectivity to the interpretational challenge it poses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Traditional neurophysiological approaches that pre-select and average cells eliminate much of the richness of single-cell activities and ignore fine structure of responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 describe limitations of traditional methods. C10 describes standard practice (KNOWLEDGE), while C11-C12 provide critical assessment supported by citation (C12) and reasoning (C11). These claims establish the motivation for developing new analytical approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Existing dimensionality reduction methods for electrophysiological data do not account for task parameters, leaving mixed selectivity in the data even after dimensionality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 characterize limitations of existing methods. C14 is supported by citations to prior work, while C15-C16 provide critical assessment based on method design. The logical progression from method description to limitation is clear and well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8"
+    ],
+    "result": "Demixed PCA (dPCA) decomposes population activity into components that systematically capture the majority of variance while exposing dependence on task parameters, providing concise visualization in a single figure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C8 describe the core capabilities of dPCA. C5-C6 are supported by data shown in Figures 3-6 throughout the manuscript. C8 is demonstrated by the comprehensive single-figure summaries for each dataset. These claims establish the main contribution of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The new version of dPCA maintains the same objectives as the previous version but is more principled, more flexible, has an analytical solution avoiding numerical optimization problems, and highlights relationships to PCA and LDA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 describe improvements over prior work. The claims about analytical solution (C24-C25) and mathematical properties (C22-C23, C26) are supported by the mathematical derivations in Materials and methods. The comparison to prior versions is substantiated by Figure 14 showing improved demixing indices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In the somatosensory working memory task, supervised methods (ANOVA-based and TDR) explain only 22-23% of variance while PCA explains 69% with the first six components, but none of the methods fully demix stimulus and decision information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 present quantitative comparisons shown in Figure 1. The variance percentages are explicitly stated with reference to specific figure panels. C37 is directly observable in Figures 1e and 1h. These results establish the motivation for dPCA by demonstrating limitations of existing approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C41"
+    ],
+    "result": "The goals of demixing and compression constitute a trade-off, with LDA achieving better class separation but not preserving distance information, while dPCA balances both objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C41 are demonstrated through the toy example in Figure 2. The figure clearly shows the different projections obtained by LDA, PCA, and dPCA, supporting the claim about the trade-off between demixing and compression. This establishes the theoretical foundation for dPCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the somatosensory working memory dataset (832 neurons), dPCA captures nearly the same variance as PCA while successfully demixing components and reproducing major findings from prior studies including F1 persistence, memory dynamics, ramping activities, and decision-related activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 describe results from the first dataset analysis. C49-C50 are quantitatively supported by Figure 3c. C51-C54 are supported by specific components in Figure 3b with citations to prior work confirming these findings. The comprehensive analysis demonstrates dPCA's ability to capture known phenomena while maintaining high variance explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Decision components in the somatosensory task resemble derivatives of each other, likely arising from slight variations in timing of responses across neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide an observation and explanation for derivative-like components. The observation is visible in Figure 3b, and the theoretical explanation is provided in Appendix B. This represents a thoughtful interpretation of an artifact in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Stimulus representation rotates in neural space during the delay period, with encoding subspaces during F1 and F2 periods being different but not orthogonal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe dynamics of stimulus representation demonstrated in Video 1. The visualization of the first two stimulus components over time directly supports these claims about rotation and non-orthogonality of encoding subspaces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "In the visuospatial working memory dataset (956 neurons), dPCA achieves good separation of stimulus and decision at the population level while capturing nearly the same variance as PCA, with task-specific components appearing only after extensive training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C64 describe results from the second dataset. C60 is demonstrated in Figure 4b, C61 in Figure 4c, and C64 is based on comparison with pre-training data consistent with prior findings. The results demonstrate dPCA's generalizability across different tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In the olfactory discrimination dataset (437 neurons from rats), dPCA reveals that interaction components separating rewarded/unrewarded conditions are most prominent, stimulus components show clear tuning even in error trials, and reward-tuned neurons begin firing before reward delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe results from the third dataset. C67-C68 are shown in Figures 5b and 5d, C69 in Figure 5b, and C70 in Figure 5b component #4. These results demonstrate dPCA's ability to reveal task-specific features in a different species and brain region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In the olfactory categorization dataset (214 neurons from rats), the second interaction component corresponds to the rat's uncertainty or confidence about its choice, confirming prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe results from the fourth dataset. C72 is supported by the pattern shown in Figure 6b inset and agreement with prior work (Kepecs et al., 2008). The U-shaped pattern for errors and inverted U-shape for correct trials matches predicted uncertainty values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Across all four datasets, condition-independent components capture 65-90% of signal variance, representing temporal modulations of neural activity irrespective of task condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe a universal feature across datasets. C73 is quantitatively supported by pie charts in Figures 3-6d. C74 provides interpretation of what these components represent. This finding highlights an often-overlooked aspect of population activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Most encoding axes corresponding to different task parameters are close to orthogonal to each other, though 14% of pairs are significantly non-orthogonal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by data shown in Figures 3-6e and is consistent with prior observations (citations provided). The quantitative assessment (14% non-orthogonal with p<0.001) provides statistical rigor to this observation about the geometry of neural representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "All dPCA components are distributed across the whole neural population with unimodal weight distributions centered at zero, with no distinct sub-populations detected by clustering analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe population-level organization. C77-C78 are shown in Figure 7a, C80 in Figure 7b using a cited clustering method, and C81 notes consistency with prior work. The absence of clusters suggests neurons represent random linear combinations of components rather than forming discrete functional groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "dPCA combines strengths of supervised and unsupervised approaches: supervised methods characterize tuning but explain little variance (22-23%), unsupervised methods capture variance but retain mixed selectivity, while dPCA achieves both demixing and high variance capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 synthesize the main advantage of dPCA. C83-C84 are supported by Figure 1 comparisons, and C85 is demonstrated across Figures 3-6c,d. The comparison is also summarized in Table 1. This represents the core contribution of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Demixing simplifies visualization and interpretation, with all major aspects of population activity previously reported being directly visible on dPCA summary figures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe the practical utility of dPCA. The claim is demonstrated across Figures 3-6 where major findings from prior studies (cited) are reproduced in single comprehensive figures. This establishes dPCA as an effective tool for data visualization and interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Faithful representation of population activity avoids interpretation bias that could affect theoretical models, and dPCA enables comparative analysis across datasets to identify common features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 describe broader implications of the method. C88 provides reasoning about importance of variance capture, and C89 is demonstrated by the comparative analysis across four datasets revealing universal features (e.g., dominance of condition-independent components). These claims establish the value beyond individual dataset analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The current dPCA-2015 method achieves significantly higher demixing indices than dPCA-2011, with dPCA-2011 failing to find some weak components, and dPCA demixes better than TDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide quantitative comparisons with alternative methods. All three claims are supported by data shown in Figure 14. The improved demixing indices and ability to find weak components demonstrate technical superiority of the new formulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99"
+    ],
+    "result": "dPCA has several limitations: it works only with discrete parameters requiring all combinations, datasets may be non-demixable if high-variance directions fully overlap, and successive components can be difficult to interpret due to orthogonality constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C98-C99 describe acknowledged limitations. C96 and C98 are theoretical limitations based on method design, and C99 is demonstrated by difficult-to-interpret components in Figure 3. The honest assessment of limitations is appropriate and helps users understand when the method is applicable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C100"
+    ],
+    "result": "The authors reanalyzed four datasets from different species, cortical areas, and tasks, with code and data made publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27, and C100 describe data and code availability. These are factual statements about resources provided with the manuscript. The availability of code and data supports reproducibility and enables broader adoption of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The reduced-rank regression problem underlying dPCA can be solved via singular value decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 states a mathematical fact about reduced-rank regression with citations. This is established knowledge in statistics and provides the theoretical foundation for the analytical solution of dPCA. The claim is further elaborated in the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The problem of mixed selectivity can be addressed by dimensionality reduction methods informed by task parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by citations to prior work including the authors' own previous studies. This establishes the general approach that dPCA belongs to, providing context for the current contribution within the broader literature on task-informed dimensionality reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the somatosensory working memory task, monkeys discriminated vibratory stimuli separated by a 3-second delay, with many neurons showing mixed selectivity for stimulus and decision with different tuning patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the experimental paradigm and basic observations. C28-C30 describe the task with citations, and C31-C32 are supported by data in Figure 1b. These claims establish the characteristics of the first dataset used to demonstrate dPCA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The current method is conceptually based on previous work but technically different, with the original approach limited to two parameters and the new approach achieving an analytical solution by removing orthogonality constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe the relationship to prior work. C91 is a factual statement about limitations of prior work with citation, and C92 describes technical improvements. These claims establish the novelty of the current contribution relative to the authors' previous methods.",
+    "result_type": "MINOR"
+  }
+]

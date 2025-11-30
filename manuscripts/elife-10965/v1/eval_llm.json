@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C119"
+    ],
+    "result": "The oskM1R\u0394121\u2013150 mutant, which has a 30 nt deletion in the 5' UTR for Short Osk and is defective in Short Osk protein production, is not sensitive to rescue in trans. This contrasts with 3' UTR regulatory mutants which can be rescued in trans, supporting the prediction that regulatory elements near the translation initiation site are not susceptible to rescue in trans while 3' UTR elements are.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish that the oskM1R\u0394121\u2013150 mutant with 5' region defects cannot be rescued in trans, while C44-C45 and C119 show that 3' UTR mutants can be rescued. This pattern is consistent with the model that only long-range regulatory interactions (3' UTR elements) are susceptible to rescue in trans. The data in Figure 1B clearly shows differential rescue patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C118"
+    ],
+    "result": "Three mutants with mutations in the 3' UTR (osk3'977\u2013981, osk3'984\u2013988, and osk3'1004\u20131008) that disrupt binding of BSF protein or PABP were strongly rescued in trans by coexpression with osk54 mRNA, demonstrating that rescue in trans extends beyond Bru-dependent regulation to other forms of translational regulation involving long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 and C118 demonstrate that multiple 3' UTR mutants affecting different regulatory proteins (BSF and PABP) can be rescued in trans. The data in Figures 1B and 1C show clear rescue of patterning defects and protein expression. This extends the rescue in trans phenomenon beyond Bru-specific regulation, supporting a general model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C125",
+      "C126"
+    ],
+    "result": "Multiple osk mutants including oskM139L and oskM1R\u0394121\u2013150 can act as effective donors for rescue in trans, demonstrating that the ability to rescue is not unique to osk54 and that even mutants not receptive to rescue can serve as donors. The donor mRNA must contain the regulatory element missing from the recipient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 and C125-C126 establish that various osk mutants can act as donors, with data in Figures 2A and 2C showing strong rescue. Notably, oskM1R\u0394121\u2013150, which cannot itself be rescued, effectively rescues osk C BRE-, demonstrating that donor and recipient properties are independent. This supports the regulation in trans model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C123",
+      "C124"
+    ],
+    "result": "The regulatory element missing from the recipient mRNA must be present in the donor for rescue, but this element alone is not sufficient. Additional 3' UTR sequences are required for substantial rescue, with the C region providing weak rescue, AB+C providing moderate rescue, and the full 3' UTR providing the strongest rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 and C123-C124 demonstrate a clear requirement for both the missing regulatory element and additional sequences. Figure 2D shows graded rescue levels with different 3' UTR portions, with statistically significant differences (p<10^-10). The control showing no rescue with osk C BRE- as donor (C53) confirms specificity. This supports the model that RNP assembly sequences are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Mutation of candidate PTB-binding sites (pyrimidine tracts) in the osk 3' UTR disrupts rescue in trans in a dose-dependent manner, with mutations in multiple sites having additive effects. The correlation between reduced PTB binding and reduced rescue activity supports the requirement for PTB-dependent RNP assembly in rescue in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C79 and C130-C132 establish that PT mutations disrupt both PTB binding (Figure 3B, Figure 4B-C) and rescue in trans (Figure 3E, Figure 4D). The additive effects of PT mutation subsets and the correlation between PTB binding strength and rescue efficiency (C78-C79) strongly support PTB's role. The proper localization of mutant mRNAs (C73) rules out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Reducing PTB protein levels by using heph heterozygotes impaired rescue of the translational activation defect of osk::GFP C BRE-, causing lower Osk::GFP levels, while having no effect on a recipient mRNA with no translation defect. This effect is attributed to regulation in trans rather than direct effects on repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C133-C136 show that reducing PTB levels specifically affects rescue in trans (Figure 4F right) but not normal translation (Figure 4F left). The logical argument in C135-C136 that reduced repression would increase, not decrease, Osk levels rules out a direct repression effect. This provides independent genetic evidence for PTB's role in rescue in trans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C115",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Removing candidate PTB-binding sites from osk mRNA (osk3'PTmut) led to elevated Grk protein levels in early oocytes compared to when wild-type osk mRNA was present. This effect is attributed to osk mRNA, not Osk protein, and is consistent with translational repression of osk spreading in trans to grk mRNA when both are assembled in the same PTB-dependent RNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 and C139-C141 establish that osk and grk mRNAs colocalize early in oogenesis, both bind PTB, and that disrupting PTB binding to osk increases Grk protein levels (Figure 5I). The absence of Osk protein at these stages (C92, Figure 5E-F) rules out protein-mediated effects. The control experiment (C90, Figure 5H) shows specificity. This demonstrates trans effects between different mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The original IBE mutations appear to cause a gain-of-function defect that disrupts both osk translation and rescue in trans. However, new mutants that more completely eliminate IBE sequences (osk 11-13- and osk 3'\u039483\u2013116) have normal Osk expression and can act as strong donors for rescue in trans, suggesting the original IBE mutations create novel binding sites rather than simply removing regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C110 and C127-C129 establish that original IBE mutants fail to rescue in trans (Figure 6A, 6F), while new IBE deletion mutants have normal function (Figure 6D-F). This paradox is resolved by the gain-of-function interpretation (C108, C110, C128). The data clearly distinguish between loss-of-function (deletions) and the original point mutations, supporting the gain-of-function model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study confirms that translational regulatory defects of osk mRNA can be rescued in trans, that disruption of PTB-dependent RNP assembly inhibits this rescue, and that regulation imposed by osk mRNA spreads to gurken mRNA, establishing the existence of community effects in translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C113-C116 summarize the main findings that are supported by the detailed experimental results. The rescue in trans phenomenon is demonstrated across multiple mutants, PTB's requirement is shown through both mutation and genetic reduction approaches, and the grk effect demonstrates trans regulation between different mRNAs. These conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C62",
+      "C63",
+      "C64",
+      "C117",
+      "C120",
+      "C122"
+    ],
+    "result": "The authors propose a model of 'regulation in trans' in which assembly of osk mRNAs into RNPs places them in close proximity, facilitating inter-transcript interactions that allow regulatory elements to act in trans. The model predicts that rescue requires the missing regulatory element in the donor, extends to other long-range regulatory interactions, and depends on RNP assembly factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C62-C64 present the model and its predictions, while C117, C120, and C122 discuss specific mechanistic aspects. The experimental results throughout the paper confirm these predictions: donor requirements (C123-C124), extension to non-Bru regulation (C38-C43), and dependence on PTB-mediated assembly (C68-C82). The model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C111",
+      "C112"
+    ],
+    "result": "The manuscript establishes background knowledge that long-range protein-protein interactions spanning the full length of mRNA are required for translation and are generally assumed to occur only in cis, but that inter-transcript interactions become more likely as local mRNA density increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 and C111-C112 present established knowledge from the literature (supported by citations) and logical inferences about concentration-dependent interactions. These background claims are well-established in the field and provide the conceptual framework for the study. They are appropriately cited and logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on osk mRNA biology, including its expression during oogenesis, transport and localization patterns, translational regulation by Bruno (Bru) through BREs in the AB and C regions of the 3' UTR, and the previously reported rescue in trans phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 present background information about osk mRNA that is well-established in the literature and supported by appropriate citations. This background is essential for understanding the current study but represents prior work rather than new findings. The information is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript reviews known mechanisms of osk RNP assembly, including PTB-mediated RNP formation in vitro and in vivo, Bru-mediated oligomerization, and direct RNA dimerization through a 3' UTR motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 present established knowledge about osk RNP assembly mechanisms from prior literature, supported by appropriate citations. This background information is essential for the experimental design but represents prior work. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors discuss the broader implications of regulation in trans, suggesting that any mRNA could be susceptible to inter-transcript interactions when in close proximity, that the absence of other reports may reflect detection difficulties, and that isolation of individual mRNAs in some RNPs may serve to prevent trans regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C138 and C142-C145 present speculative interpretations and discussion points about the broader significance and prevalence of trans regulation. While these are logical extensions of the findings, they are largely speculative (C142, C145) or based on limited evidence from other systems (C144). These represent interesting hypotheses for future work rather than established conclusions.",
+    "result_type": "MINOR"
+  }
+]

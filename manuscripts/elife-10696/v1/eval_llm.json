@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During active tactile exploration, primary whisker neuron (PWN) responses are poorly predicted by whisker angle but well-predicted by whisker curvature change (a proxy for bending moment). Curvature-based GLMs achieved median PCC of 0.52 (up to 0.88), significantly outperforming angle-based GLMs (median PCC 0.06). This result was robust across multiple analyses including different parameter counts, time-scales, and combined models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C36-C51 collectively provide strong statistical evidence from GLM analyses showing curvature change predicts PWN activity significantly better than angle during active exploration. The data includes appropriate statistical tests (signed-rank tests with Bonferroni correction), cross-validation procedures, and robustness checks across multiple conditions. Sample size (N=20 units, median 69,672 frames per unit) appears adequate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "During free whisking (without object contact), 50% of PWNs were whisking-sensitive and responded to angular acceleration. Quadratic GLMs using angular acceleration as input predicted spikes in whisking-sensitive units (median PCC 0.37) but not whisking-insensitive units (median PCC -0.0071, p=0.0017). PWNs showed diverse acceleration tuning patterns, with 70% showing consistent directional selectivity between acceleration and curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 provide experimental evidence that whisking-sensitive PWNs encode angular acceleration during free whisking. The statistical analyses include appropriate comparisons between whisking-sensitive and whisking-insensitive units with significant p-values. The connection to moment associated with rotational acceleration (C62, C70) is supported by citation and consistent with the data, though the mechanistic link is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C7",
+      "C8"
+    ],
+    "result": "The relationship between whisker angle and curvature change differs fundamentally between active and passive conditions. During active exploration, angle and curvature were loosely correlated (median r=0.20), varying with touch/non-touch state and object location. During passive stimulation, angle and curvature were nearly perfectly correlated (r=0.96 for C2 whisker). Simulations confirmed that curvature-tuned units can appear angle-tuned under passive conditions, reconciling apparent discrepancies with previous passive stimulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78, C7-C8 provide both experimental data and simulation evidence explaining the discrepancy between active and passive conditions. The correlation analyses are quantitative with appropriate statistics. The simulation approach (C77, Figure 4\u2014figure supplement 1) provides mechanistic support for the interpretation. This reconciles the current findings with prior literature in a logically coherent manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Under the experimental conditions of pole exploration, bending moment was highly correlated with both lateral force (median r=0.995, R\u00b2=0.99) and axial force (median R\u00b2=0.94 for quadratic fit), making these force components redundant with moment for the purposes of neural encoding analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C124-C126 provide strong quantitative evidence for the near-perfect correlation between moment and other force components under the specific experimental conditions. The justification for focusing on moment (C52-C53) is reasonable given these correlations and the citation supporting moment's influence on follicle stresses. However, this is specific to the pole exploration paradigm and may not generalize to other tactile conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study recorded N=20 PWN units from awake mice during active pole exploration, with simultaneous high-speed videography (1000 frames/s) capturing whisker kinematics. A total of 1,496,033 frames were analyzed (median 69,672 frames and 550 spikes per unit). Curvature change was used as a proxy for bending moment based on established biomechanical principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 describe the experimental methodology and data characteristics. The sample size, data volume, and methodological choices are clearly stated and supported by appropriate citations (C25-C27). The use of curvature change as a proxy for bending moment is justified by cited biomechanical literature. These methodological details are essential for evaluating the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C83"
+    ],
+    "result": "GLMs were chosen as the modeling framework because they have been previously validated for PWN responses to passive stimulation and have mathematical properties ideal for robust parameter-fitting. A key advantage is that GLMs account for correlations between sensory variables during model training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C83 justify the choice of GLM methodology with appropriate citations. The statement about GLMs accounting for correlations (C83) is accurate regarding the mathematical properties of GLMs. This methodological justification is important given the correlated nature of sensory variables during active behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PWNs fired at higher rates during touch than non-touch episodes. Curvature-based GLMs reproduced this effect without parameter adjustment, achieving a correlation of 0.97 between recorded and predicted firing rates for touch episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate that curvature-based GLMs capture a known property of PWN responses (higher firing during touch) without additional fitting. The high correlation (0.97) between predicted and recorded firing rates provides strong validation. This is supported by both current data and citations to previous studies (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Quadratic GLMs based on whisker angle performed only marginally better than linear angle GLMs (median PCC 0.097 vs 0.06, p=0.044), suggesting that poor angle-based prediction is not due to non-linear tuning to angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 provides a control analysis ruling out non-linear angle tuning as an explanation for poor angle-based prediction. The statistical test is appropriate and the marginal improvement is quantified. This strengthens the interpretation that angle is fundamentally a poor predictor during active exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C9",
+      "C120"
+    ],
+    "result": "Simple statistical models (GLMs) can predict PWN activity during natural, active exploratory behavior with correlation coefficients up to 0.88, despite the challenges of single-trial prediction without trial-averaging and the variability of untrained mouse behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C9, C120 summarize the main achievement of the study. The prediction performance is quantified and contextualized relative to the experimental challenges. Figure 2\u2014figure supplement 1B provides evidence that single-trial performance is limited by neuronal variability rather than model inadequacy. This represents a significant methodological advance in studying active sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99"
+    ],
+    "result": "Moment coding (both bending moment during touch and acceleration-associated moment during whisking) provides a unified biomechanical framework that accounts for PWN responses across diverse conditions including active touch, free whisking, and passive stimulation. This framework explains the diversity of PWN types (curvature-only and curvature-acceleration units) and reconciles findings from active and passive paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C89-C92, C99 present the overarching theoretical framework integrating all experimental findings. The framework is supported by: (1) curvature prediction during touch, (2) acceleration prediction during whisking, (3) reconciliation with passive stimulation data, and (4) consistency with previous classifications of PWN types. The integration is logically coherent and supported by the experimental data, though some aspects (like the exact mechanistic link to mechanoreceptors) remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The finding that whisker angle poorly predicts PWN spikes indicates that whisker angle can change without modulating mechanotransduction in the follicle, consistent with evidence that the follicle-shaft complex moves as a rigid unit. During passive stimulation, the cantilever model predicts high correlation between angle and bending, which was confirmed in vivo, explaining why moment-sensitive units can appear angle-tuned under passive conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 provide a mechanistic interpretation of the results linking neural responses to follicle biomechanics. The interpretation is supported by citation to Bagdasarian et al. 2013 (C94) and experimental confirmation of the cantilever model predictions (C97). The simulation results (C98, Figure 4\u2014figure supplement 1) provide additional support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Although whisker angle predicted spikes for a subset of units, this effect was largely explained by a curvature-coding model together with the correlation between angle and curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by the GLM analyses showing that combined angle+curvature models performed no better than curvature-alone models (C47), and that curvature predicted better than angle for 65% of units while angle predicted better for only 5% (C48-C49). This interpretation appropriately accounts for the role of variable correlation in apparent encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C88",
+      "C110",
+      "C112",
+      "C121"
+    ],
+    "result": "The results provide a mechanical basis for linking receptor mechanisms to tactile behavior and represent the first direct demonstration that reaction forces at the whisker base drive primary sensory neuron responses during natural behavior. This provides insight into how sensitivity to touch and self-motion arises in the somatosensory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C88, C110, C112, C121 present the broader significance of the findings. The claim of being the 'first direct demonstration' (C110) is supported by the novelty of simultaneously measuring forces and neural activity during active behavior. The connection to receptor mechanisms is supported by the data, though the specific molecular mechanisms (e.g., Piezo2 channels, C111) remain speculative. The significance claims are appropriately supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Primary sensory neurons form the interface between world and brain. Their function is well-understood during passive stimulation, but under natural conditions sense organs are under active motor control\u2014a characteristic lost in reduced preparations. Recent methodological advances now permit recording from awake mice during active whisker exploration while measuring whisker kinematics and mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C16 provide established background knowledge about sensory neuroscience and the whisker system, supported by appropriate citations. These claims establish the scientific context and motivation for the study. The statements about PWN anatomy and function are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C79",
+      "C80",
+      "C81",
+      "C95"
+    ],
+    "result": "Previous studies using passive stimulation reported that PWNs encode whisker angle and its derivatives. Theories suggest neural circuits evolved to operate efficiently under natural conditions, and while previous studies succeeded in predicting spikes during passive stimulation, extending this to natural active sensing has been difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C79-C81, C95 accurately summarize prior literature with appropriate citations. These claims establish the contrast between previous passive stimulation findings and the current active sensing approach, providing important context for interpreting the discrepancy addressed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Biomechanical modeling by Hartmann and colleagues established that whiskers behave as elastic cantilever beams, with bending causing reaction forces at the base. For whiskers, the quasi-static relationship between bending moment and curvature is relatively simple (moment proportional to curvature), allowing direct estimation of reaction forces from videography in vivo\u2014unlike the complex biomechanics of primate skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87, C106-C109 accurately describe established biomechanical principles with appropriate citations. These claims explain why the whisker system is particularly tractable for studying mechanoreceptor responses to forces, providing important methodological context. The contrast with primate hand biomechanics (C107) appropriately highlights the advantages of the whisker system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The results highlight the importance of studying neurons under natural, active sensing conditions. While pole contact was chosen for its suitability for force estimation and single-trial analysis, and curvature sensitivity is likely general given the ubiquity of whisker bending, prediction performance varied across units suggesting other force components may be encoded, and other conditions (e.g., textured surfaces) may involve multiple force components or finer temporal coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 appropriately discuss the scope and limitations of the findings. The acknowledgment of variability across units (C104) and potential for additional encoding mechanisms (C105) is scientifically appropriate. The speculation about other conditions is appropriately hedged and supported by citations. These claims provide important context for interpreting the generalizability of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Extraction of bending moment is computationally useful for tactile processing: large moment transients signal touch events, moment magnitude relates inversely to contact distance along the whisker, and when integrated with self-motion cues can provide 3D object location. Moment can enable wall following and, if integrated across whiskers, could potentially be used to infer object shape and map environmental structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 discuss the functional significance of moment encoding for tactile computations. The claims about touch detection and radial distance (C114-C115) are supported by citation. The claims about 3D localization (C116) are supported by both citations and the current data on active touch statistics. The more speculative claims about shape inference and environmental mapping (C118-C119) are appropriately hedged ('in principle', 'can') and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Reaction forces driving PWN responses likely involve Piezo2 ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is speculative and based solely on citations to recent literature about Piezo2 channels. While the citations are appropriate and the speculation is reasonable given recent findings about Piezo2's role in mechanotransduction, the current study provides no direct evidence about the molecular mechanisms. The claim is appropriately hedged with 'likely' but represents speculation beyond the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "All experimental protocols were approved by UK Home Office and institutional ethical review. Mice were C57 strain, N=10, 6 weeks at time of implant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 provide essential information about ethical compliance and experimental subjects. These are straightforward factual statements about the study design and regulatory compliance.",
+    "result_type": "MINOR"
+  }
+]

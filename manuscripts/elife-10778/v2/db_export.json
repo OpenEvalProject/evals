@@ -1,0 +1,2146 @@
+{
+  "submission": {
+    "id": "ec4c70f9-667b-43b2-80de-3e1dec647a1a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:54:14.422142Z",
+    "updated_at": "2025-11-29T21:54:14.422142Z"
+  },
+  "content": [
+    {
+      "id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "submission_id": "ec4c70f9-667b-43b2-80de-3e1dec647a1a",
+      "content_type": "manuscript",
+      "content_text": "# Nanoconnectomic upper bound on the variability of synaptic plasticity\n\n## Authors\n\n- Thomas M Bartol<sup>1</sup> \u2020\n- Cailey Bromer<sup>1</sup>\n- Justin Kinney<sup>1</sup>\n- Michael A Chirillo<sup>3</sup>\n- Jennifer N Bourne<sup>3</sup>\n- Kristen M Harris<sup>3</sup> \u2020\n- Terrence J Sejnowski<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Salk Institute for Biological Studies La Jolla United States\n2. McGovern Institute for Brain Research Massachusetts Institute of Technology Cambridge United States\n3. Center for Learning and Memory, Department of Neuroscience The University of Texas at Austin Austin United States\n4. Division of Biological Sciences University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nInformation in a computer is quantified by the number of bits that can be stored and recovered. An important question about the brain is how much information can be stored at a synapse through synaptic plasticity, which depends on the history of probabilistic synaptic activity. The strong correlation between size and efficacy of a synapse allowed us to estimate the variability of synaptic plasticity. In an EM reconstruction of hippocampal neuropil we found single axons making two or more synaptic contacts onto the same dendrites, having shared histories of presynaptic and postsynaptic activity. The spine heads and neck diameters, but not neck lengths, of these pairs were nearly identical in size. We found that there is a minimum of 26 distinguishable synaptic strengths, corresponding to storing 4.7 bits of information at each synapse. Because of stochastic variability of synaptic activation the observed precision requires averaging activity over several minutes.\n\n## Introduction\n\nSynapses between neurons control the flow of information in the brain and their strengths are regulated by experience. Synapses in the hippocampus are involved in the formation of new declarative memories. Understanding how and why synaptic strengths undergo changes in the hippocampus is important for understanding how we remember facts about the world. A fundamental question is the degree of precision in the adjustment of synaptic strengths in view of the many sources of variability at synapses. In this study we provide an upper bound on the variability of synaptic plasticity and quantify a lower bound on the amount of information that can be stored at a single synapse.\n\nExcitatory synapses on dendritic spines of hippocampal pyramidal neurons have a wide range of sizes. Anatomical measurements of the spine size, the area of the postsynaptic density (PSD), the number of AMPA receptors, the area of the presynaptic active zone and the number of docked vesicles in the presynaptic terminal are all highly correlated with each other and with physiological measurements of the release probability and the efficacy of the synapse (Harris and Stevens, 1989; Lisman and Harris, 1994; Harris and Sultan, 1995; Schikorski and Stevens, 1997; Murthy et al., 2001; Branco et al., 2008; Bourne et al., 2013). Thus, each of these individual characteristics is a correlate of synaptic strength. The sizes and strengths of these synapses can increase or decrease according to the history of relative timing of presynaptic inputs and postsynaptic spikes (Bi and Poo, 1998).\n\nIf experience regulates synaptic strength then one might expect that synapses having the same pre- and postsynaptic histories would be adjusted to have the same strength. But what would be the inherent variability, or conversely the precision, of this process? Due to the high failure rate and other sources of stochastic variability at synapses one might expect that the precision of changes in the strengths of these synapses in vivo to be low. The failure rate at synapses depends inversely on the strength, and therefore the size, of the synapse. On this basis the strengths of weaker, and therefore smaller and less reliable synapses, would be expected to be less precisely controlled than the larger and stronger synapses, which have a lower failure rate.\n\nAn ideal experiment to test for the precision of the changes in synaptic strength would be to stimulate in vivo the axonal inputs to two well-separated spines on the same dendrite to insure that they have the same presynaptic and postsynaptic history of stimulation. Nature has already done the experiment for us as pairs of spines on the same dendrite contacting the same axon satisfy this condition. Prior work suggests that such pairs of spines are more similar in size than those from the same axon on different dendrites (Sorra and Harris, 1993). Here we evaluated this axon-spine coupling in a complete nanoconnectomic three-dimensional reconstruction from serial electron microscopy (3DEM)\u00a0(Harris et al., 2015) of hippocampal neuropil. We determined the similarity of synapses among pairs of spines and set an upper bound on the variability and the time window over which pre- and postsynaptic histories would need to be averaged to achieve the observed precision.\n\n## Results\n\nIn a 6 x 6 x 5 \u03bcm3 complete 3DEM from the middle of stratum radiatum in hippocampal area CA1 (Mishchenko et al., 2010; Kinney et al., 2013; see Materials and Methods). We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Meg\u0131\u0301as et al., 1997). We measured spine head volume and surface area, surface area of the postsynaptic density (PSD) adjacent to the presynaptic active zone, and spine neck volume, neck length and neck diameter at the 287 spines that were fully contained within the volume. We also quantified the number of vesicles at the 236 spines and presynaptic boutons that were fully contained within the volume. The strong correlations between these metrics, the skewed shape of the frequency histograms, and the number of synapses per unit of volume (Figures 1\u20133), are consistent with previous observations (Harris and Stevens, 1989; Schikorski and Stevens, 1997; Sorra et al., 2006; Bourne and Harris, 2011; Bourne et al., 2013; Bell et al., 2014). To reduce error, we averaged over multiple independent spine volume measurements for each spine (Figure 3\u2014figure supplement 1). We determined that the relationship between PSD area and spine head volume did not differ significantly across different dendrites (Figure 1\u2014figure supplement 1). The correlation between spine head area and spine head volume accounted for 99% of the variance, despite the wide range in spine head shapes and dimensions (Figure 1A), which suggests that the accuracy of our measurements matched the precision of the spine. We also measured spine neck length, diameter, and volume and found a\u00a0weak\u00a0trend between the neck diameter (Figure 1D) and spine head volume but no correlation between neck length (Figure 1E) and spine head volume, consistent with previous studies (Harris and Stevens, 1989; T\u00f8nnesen et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig1-v2.jpg)\n\n**Figure 1.:** Strong correlations were\u00a0found\u00a0between (A) Spine head area and spine head volume, (B) PSD area and spine head volume, and (C) Spine head area and PSD area. (D) Weak correlation was\u00a0found\u00a0between spine neck diameter and spine head volume. No correlation was\u00a0found\u00a0between (E) spine neck length and spine head volume and (F) spine neck diameter and spine neck length. Regression lines in red and error bars for each data point represent SEM based on multiple tracers who also edited each spine. Equations are based on the log-log distributions, with r2 values indicated, and n=287 complete spines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Nine individual dendrites all have similar slopes that are not significantly different showing the uniformity of this comparison across dendrites.\u00a0Error bars, regression lines and equations as described in Figure 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig2-v2.jpg)\n\n**Figure 2.:** (A) All 31,377 presynaptic vesicles. (B) En face view of the 24 docked vesicles (gray spheres) viewed through an axon (green) onto the PSD (red) of example spine (yellow). (C) Number of docked vesicles is correlated strongly with both PSD area and (D) spine head volume, weakly with (E) neck diameter, but is not correlated with (F) spine neck length. Regression lines, SEM (from multiple tracers), and r2 are as in Figure 1 n\u00a0= 236 complete axonal boutons, each associated with one of the 287 complete spines. One human tracer marked PSDs and vesicles, hence no SEM for these two metrics.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig3-v2.jpg)\n\n**Figure 3.:** Distributions of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) spine neck volumes, (E) spine neck diameters, and (F) spine neck lengths are highly skewed with a long tail.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Example segmentation of spine head (yellow), neck (gray), and PSD area (red). (B) Histogram of the measurement error across all spines measured. (C) Measurement error plotted against spine head volume.\n\nNext, we analyzed spine volumes according to their axonal connectivity and dendrite origin. Pairs of spines on the same dendrite that received input from the same axon (\u2018axon-coupled\u2019), were of the same size and had nearly identical head volumes (Figure 4). We compared this sample of 10 axon-coupled pairs on the same dendrite (Figure 4B, pairs a-j) to those identified on dendrites from the two additional animals (Bourne et al., 2013), for a total of 17 axon-coupled spine pairs. When plotted against one another, the paired head volumes were highly correlated with slope 0.91, and despite the small sample size, were highly significantly different from random pairings of spines (Figure 4C and Figure 4\u2014figure supplement 1A, KS test p=0.0002). Similarly, there was a strong positive correlation between their paired neck diameters (Figure 4D), PSD areas (Figure 4E), and number of presynaptic docked vesicles (Figure 4F). These features of axon-coupled spines from the same dendrite spanned the distribution of the overall spine population (Figure 3). In contrast, the spine neck lengths (Figure 4G), and neck volumes (Figure 4\u2014figure supplement 1B) of the pairs were not well-correlated indicating that regulation of neck length and neck volume are not important for synaptic strength.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-v2.jpg)\n\n**Figure 4.:** (A) Visualization of a pair of spines (gray necks) from the same dendrite (yellow) with synapses (red, indicated by white arrows) on the same axon (black stippling) with presynaptic vesicles (white spheres). (B) All axon-coupled same-dendrite spine pairs (colors as in A, pair c is elaborated in A). Strong correlations with slopes near 1 (dashed diagonal line) occur between paired (C) spine head volumes (slope = 0.91), (D) neck diameters (slope = 0.93), (E) PSD areas (slope = 0.74), and (F) docked vesicles (slope = 0.91); but not (G) spine neck lengths (slope = 0.48). Larger values from each pairing are plotted on the X axis. Regression lines (red) include the 10 a-j pairings (blue points) and 7 pairs from 2 additional animals (green points in (C)), but do not include triplet bouton pairings (k-m, gray points).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Whole spine volumes of pairs of axon-coupled spines on the same dendrite are highly correlated and significantly different from random pairs (KS test p = 0.018). (B) Correlation of neck volumes of pairs of axon-coupled spines on the same dendrite are not significantly different from random pairs (KS test p = 0.74). Larger value in each pair is plotted on the X axis. Regression lines shown in red. Equations are based on regression of log-log distributions, with r2 values indicated.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Distributions represent random pairings of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) neck volumes, (E) neck diameters, and (F) neck lengths, from the population of complete spines in the reconstruction. Larger value in each pair is plotted on the X axis. Regression lines shown in red. Error bars for each data point are not shown for clarity. Equations are based on regression of log-log distributions, with r2 values indicated.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Large white arrows indicate the red PSDs of the spine pairs, the edited necks are dark gray, and the axons are stippled black with vesicles inside. These illustrate how the axon weaves through the neuropil, synapses with two spines yet passes by others.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp4-v2.jpg)\n\nThe coupled triplet of synapses (Figure 4C, gray points \u2018k, l, m\u2019) are on three different spines along a single dendrite and receive synaptic input from a single multi-synaptic bouton. A larger central spine between two similar in size (Figure 4B, \u2018k, l, m\u2019) produces one same size pair (\u2018k\u2019 ) and two different size pairs (\u2018 l\u2019, \u2018m\u2019). This unusual configuration is probably driven by processes, such as competition for available resources, that differ from the other pairs (Sorra and Harris, 1993; Sorra et al., 1998). As one possibility, perhaps the the size of the larger postsynaptic spine was influenced by the larger size of the available pool of presynaptic vesicles in close proximity to its active zone. Excluding this triple synapse, the median value of the coefficient of variation of volume differences between pairs was CV = 0.083 and was as precise for small synapses as it was for large ones (Figure 5). This precision (i.e. low CV) suggests that accurately maintaining the size of every synapse, regardless of size and strength, could be important for the function, flexibility and computational power of the hippocampus.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig5-v2.jpg)\n\n**Figure 5.:** There is no significant correlation, which implies that paired small synapses are as precisely matched as paired large synapses.\n\nThis near-identical size relationship does not hold for axon-coupled spines on different dendrites (Figure 6B, CV = 0.39, n = 127, example Figure 6A), nor for non-axon-coupled spines on the same or different dendrites (Figures 6E,F, example Figure 6D) -- all cases which would have had different activation histories. The volumes of axon-coupled different-dendrite spines are no different from the volumes of random pairs when plotted against one another (KS test p=0.94, Figure 4\u2014figure supplement 2A, and Figures 6B,C) and the distribution of their sizes was no different from the whole population (KS test p=0.41). The number of docked vesicles for pairs on different dendrites (Figure 6\u2014figure supplement 1B) is not different from random pairings (KS test p=0.08), nor are the neck diameters (Figure 6\u2014figure supplement 1C, KS test p=0.06), nor the neck lengths (Figure 6\u2014figure supplement 1D, KS test p=0.75). The size difference of pairs of axon-coupled spines on the same or different dendrites shows a weak trend with separation distance along the axon or dendrite (Figure 6\u2014figure supplement 2). The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by proximity of glia processes to the synapses (Figure 7)\u00a0(Ventura and Harris, 1999; Witcher et al., 2007), or location of mitochondria in the axon (Billups and Forsythe, 2002).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative visualization and (B) plot showing lack of correlation between spine head volumes of all pairs of axon-coupled spines on different dendrites (n=127). (C) Similarly, randomly associated pairs of spine head volumes were not correlated. (D) Representative visualization and plots show lack of correlation between spine head volumes from randomly selected pairs (n=127) of non-axon-coupled spines (E) on the same or (F) different dendrites. Color scheme and regression analyses as in Figure 4.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** There is no correlation between (A) PSD areas, (B) docked vesicles, (C) neck diameters, and (D) neck lengths, in pairs of axon-coupled spines on different dendrites.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Differences in spine head volumes plotted against: A) Distance along the axon for axon-coupled spines on the same dendrite; B) Distance along the axon for axon-coupled spines on different dendrites; C) Distance along the axon for randomly paired spines; D) Distance along the dendrite for axon-coupled spines on the same dendrite; E) Distance along the dendrite for axon-coupled spines on different dendrites; F) Distance along the dendrite for randomly paired spines.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig7-v2.jpg)\n\n**Figure 7.:** Proximity of astrocytic glial processes is not significantly correlated with spine head volumes of axon coupled pairs. (A) Histogram of spine head volume for spines that contain a spinule that is engulfed within the glial process (\u2018 spinule\u2019). (B) Representation of an engulfed spinule. (C) Histogram of spine head volume for spines that are surrounded by and making contact with a glial process (\u2018ensheathed\u2019). (D) Representation of \u2018ensheathed\u2019 spine. (E) Histogram of spine head volume for spines that are proximal but not contacting a glial process (\u201c\u2018 adjacent\u201d\u2019). (F) Representation of \u201c\u2018adjacent\u201d\u2019 spine. (G) Histogram of spine head volume for spines that are distant from any glial process. (H) Representation of a spine \u201c\u2018distant\u201d\u2019\u00a0from the glial process. The KS p value is shown on each inset and indicates that none of these distributions differ from the distribution for the whole population of spines.\n\nWe found that spine head volumes ranged in size over a factor of 60 from smallest to largest while the CV of any given size was 0.083 and was constant across the range of sizes. Measurements of these of 20 pairs allowed us to estimate the number of distinct spine sizes, and by extension synaptic strengths, that can be reliably distinguished across this range. Signal detection theory holds that at a Signal-to-Noise Ratio (SNR) of 1, a common detection threshold used in psychophysical experiments, an ideal observer can correctly detect whether a signal is higher or lower than some threshold 69% of the time (Green and Swets, 1966; Schultz, 2007). Put another way, if random samples are drawn from two Gaussian distributions whose areas overlap by 31%, an ideal observer will correctly assign a given sample to the correct distribution 69% of the time. Using this logic, we found that ~26 different mean synaptic strengths could span the entire range, assuming CV = 0.083 for each strength level, and a 69% discrimination threshold (Figure 8, see Materials and methods). These 26 distinct strength levels can be represented with 4.7 bits of information (i.e. 24.7 \u2248 26) which means 4.7 bits of information that can be stored at each synapse as synaptic strength. At a discrimination threshold of 76% (corresponding to SNR = 2) there would be ~23 distinct strengths and 4.5 bits of information.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig8-v2.jpg)\n\n**Figure 8.:** Over the factor of 60 range in spine head volumes from the data set there are 26 distinguishable intervals of spine sizes with a discrimination probability of 69% for each interval based on signal detection theory (Green and Swets, 1966; Schultz, 2007). The graph illustrates how distinct Gaussian distributions of spine sizes, each with a certain mean size and standard deviation, covers the entire range of spine head sizes on a log scale. The CV of each distribution is a constant value of 0.083 (Figure 5) and the intervals are spaced to achieve a total of 31% overlap with adjacent intervals giving a 69% discrimination threshold (see Materials and Methods). Note that the constant CV observed in the data set (Figure 5) means that the intervals appear uniform in width and spacing on a logarithmic scale. This is a form of non-uniform quantization which efficiently encodes the dynamic range of synaptic strengths at constant precision.\n\nTo explain the high precision observed in spine head volumes, we propose that time-window averaging smooths out fluctuations due to plasticity and other sources of variability including differences in the age of the synapses. To set a lower bound on averaging time, we chose to examine neurotransmitter release probability as a single source of variability. Let us first consider release caused by single action potentials, ignoring short-term plasticity. Release of this type can be analyzed using a binomial model in which n presynaptic action potentials, each with a probability pr of releasing one or more vesicles, leads to a mean number of releases \u03bc = n*pr having variance \u03c32 = n*pr*(1\u2212pr). The coefficient of variation around the mean is CV = \u03c3/\u03bc = sqrt [(1\u2212pr)/(n*pr)] and can be compared with the measured values. Therefore, the number of spikes that are needed to reduce the variability to achieve a given CV is n=(1\u2212pr)/(pr*CV2). Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.\n\n**Table 1.**\n Lower bounds on time window for averaging binomially distributed synaptic input to achieve CV\u00a0=\u00a00.083.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Release probability (pr)</th>\n      <th>Presynaptic spikes (n)</th>\n      <th>Averaging time (R = 1 Hz)</th>\n      <th>Averaging time (R = 25 Hz)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.1</td>\n      <td>1306</td>\n      <td>21.8 min</td>\n      <td>52.2 sec</td>\n    </tr>\n    <tr>\n      <td>0.2</td>\n      <td>581</td>\n      <td>9.68 min</td>\n      <td>23.2 sec</td>\n    </tr>\n    <tr>\n      <td>0.5</td>\n      <td>145</td>\n      <td>2.42 min</td>\n      <td>5.8 sec</td>\n    </tr>\n  </tbody>\n</table>\n\nAccounting for other known sources of variability at dendritic spines would require even longer time windows. In particular, the impact of short-term plasticity during bursts of action potentials on the length of the time-window is complicated by the interplay of facilitation and depression. Synapses with a low initial pr (and corresponding long time-window in Table 1) exhibit marked facilitation and slowly depress during bursts (Kandaswamy et al., 2010; Nadkarni et al., 2010) which would shorten the time-window. But synapses with a high initial pr (and short time-window) only weakly facilitate, if at all, and quickly depress, which would lengthen the time-window.\n\n## Discussion\n\nPrevious upper bounds on the variability of spine volume in the hippocampus, based on the whole spine volume (Sorra and Harris, 1993; O'Connor et al., 2005), underestimated the precision by including the spine neck volume (Figure 4\u2014figure supplement 1A), which was not correlated between pairs of spines in our volume (Figure 4\u2014figure supplement 1B). Our dense reconstruction included a complete inventory of every synapse in the reconstructed volume and in this respect was unbiased. Additional pairs of synapses from two other rats confirmed that this finding is not confined to a single brain. Of course, additional measurements in the hippocampus and other brain regions would be needed to confirm and extend this finding. The very high statistical significance of the finding (Figure 4C, KS test p=0.0002) despite a relatively small number of pairs in our sample implies a large effect magnitude, which would be much smaller if many more samples were needed to reach the same level of significance. To make this p value concrete, if 17 random pairs were chosen from all 287 synapses in the reconstructed volume, there is only a one in 5000 chance that the spine heads would be as precisely matched as the 17 axon-coupled pairs discovered here.\n\nPrevious studies have shown that there is a high correlation of the size of the spine head with the PSD area and numbers of docked vesicles (Harris and Stevens, 1989; Lisman and Harris, 1994; Harris and Sultan, 1995; Schikorski and Stevens, 1997; Murthy et al., 2001; Branco et al., 2008; Bourne et al., 2013). Since the correlations between the head sizes of axon-coupled pairs of spines is high, the high correlation between the PSD areas and numbers of docked vesicles observed in axon-coupled spines is not surprising (Figures 4E and 4F). However, it was unexpected to find that the spine neck diameters were also highly correlated between axon-coupled pairs of spines (Figure 4D\u00a0r2=0.70), since the correlation between spine head volumes and spine neck diameters is not statistically significant (Figure 1D). Thus, there are at least two geometric aspects of the spine geometry that are under tight control of synaptic plasticity, which may reflect different aspects of synaptic function. The diameter of the spine neck may reflect the need for trafficking of materials between the spine shaft and spine head, which is known to be regulated by LTP and LTD (Araki et al., 2015).\n\nComplementing our observations and analysis in the hippocampus, highly correlated pr at multiple contacts in the neocortex between the axon of a given layer 2/3 pyramidal neuron and the same target cell has been reported (Koester and Johnston, 2005). Our estimate of synaptic variability, based on spine head volume, is an order of magnitude lower. In a recent connectomic reconstruction of the mouse cortex, the similarity in the volumes of axon-coupled pairs of dendritic spines were statistically significant (Kasthuri et al., 2015). This observation is further evidence for the high precision of synaptic plasticity and suggests that the same may be true in other brain areas.\n\nThe axon-coupled pairs of synapses that we studied were within a few microns of each other on the same dendrite, which raises the question of how far apart the two synapses can be and still converge to the same size. Related to this question, two synapses from the same axon on two different dendrites of the same neuron might not share the same postsynaptic history. These questions cannot be answered with our current data due to the small dimensions and the fact that the position in the neuropil from which our reconstruction was taken makes it highly unlikely that any of the dendrites, other than the one branch point captured in the volume, belong to the same neuron (Ishizuka et al., 1995). Synaptic tagging and capture, in which inputs that are too weak to trigger LTP or LTD can be \u2018rescued\u2019 by a stronger input to neighboring synapses if it occurs within an hour (Frey and Morris, 1997; O\u2019Donnell and Sejnowski, 2014), is much less effective when the synapses are on different branches (Govindarajan et al., 2011), which would tend to make two synapses from the same axon on different dendritic branches less similar. Probing these questions will require reconstructing a larger extent of hippocampus when a single axon can contact multiple dendritic branches of the same neuron (Sorra and Harris, 1993) or of other cells, such as layer 5 pyramidal cells, which can have 4\u20138 connections between pairs of neurons (Markram et al., 1997).\n\nAn unusual triple synapse from a single axon (Figure 4B, \u2018k, l, m\u2019) was excluded from the analysis because the presynaptic terminal was a single large varicosity filled with vesicles (i.e. an MSB) shared by three synapses, unlike the other pairs that had isolated presynaptic specializations (n=9), or an MSB shared by two synapses (n=8). It is possible that the large, central spine had an effectively larger pool of vesicles by virtue of proximity, whereas the two synapses on the outside had a more limited population to draw from, and the size of the postsynaptic spine was influenced by the size of the available pool. More examples are needed before we can reach any conclusions. Regardless of the explanation, our estimate of the variability would not be greatly affected by including these 3 additional pairs of synapses in the analysis.\n\nHow can the high precision in spine head volume be achieved despite the many sources of stochastic variability observed in synaptic responses? These include: 1) The low probability of release from the presynaptic axon in response to an action potential (Murthy et al., 2001); 2) Short-term plasticity of release of neurotransmitter (Dobrunz et al., 1997); 3) Stochastic fluctuations in the opening of postsynaptic NMDA receptors, with only a few of the 2\u201320 conducting at any time (Nimchinsky, 2004); 4) Location of release site relative to AMPA receptors (Franks et al., 2003; Ashby et al., 2006; Kusters et al., 2013) 5) Few voltage-dependent calcium channels (VDCCs) in spines that affect synaptic plasticity (smallest spines contain none) (Mills et al., 1994; Magee and Johnston, 1995); 6) VDCCs depress after back propagating action potentials (Yasuda et al., 2003); 7) Capacity for local ribosomal protein synthesis in some spines while others depend on transport of proteins from the dendrites (Ostroff et al., 2002; Sutton and Schuman, 2006; Bourne et al., 2007; Bourne and Harris, 2011); 8) Homeostatic mechanisms for synaptic scaling may vary (Turrigiano, 2008; Bourne and Harris, 2011); 9) Presence or absence of glia (Ventura and Harris, 1999; Witcher et al., 2007; Clarke and Barres, 2013); and 10) Frequency of axonal firing (Callaway and Ross, 1995).\n\nOne way that high precision can be achieved is through time averaging. Long-term changes in the structure of the synapse and the efficacy of synaptic transmission are triggered by the entry of calcium into the spine. A strategy for identifying the time-averaging mechanism is to follow the calcium. Phosphorylation of calcium/calmodulin-dependent protein kinase II (CaMKII), required for spike-timing dependent plasticity processes, integrates calcium signals over minutes to hours and is a critical step in enzyme cascades leading to structural changes induced by long-term potentiation (LTP) and long-term depression (LTD) (Kennedy et al., 2005), including rearrangements of the cytoskeleton (Kram\u00e1r et al., 2012). The time window over which CaMKII integrates calcium signals is within the range of time windows we predict would be needed to achieve the observed precision (Table 1). Similar time windows occur in synaptic tagging and capture, which also requires CaMKII (Redondo and Morris, 2011; de Carvalho Myskiw et al., 2014). These observations suggest that biochemical pathways within the postsynaptic spine have the long time scales required to record and maintain the history of activity patterns leading to structural changes in the size of the spine heads.\n\nThe information stored at a single synapse is encoded in the form of the synaptic strength, which reflects the pre- and postsynaptic history experienced by the synapse. But due to the many sources of variability, this information cannot be read out with a single input spike. This apparent limitation may have several advantages. First, the stochastic variability might reflect a sampling strategy designed for energetic efficiency since it is the physical substrate that must be stable for long-term memory retention, not the read out of individual spikes (Laughlin and Sejnowski, 2003). Second, some algorithms depend on stochastic sampling, such as the Markov Chain Monte Carlo algorithm that achieves estimates by sampling from probability distributions, and can be used for Bayesian inference (Gamerman and Lopes, 2006). Each synapse in essence samples from a probability distribution with a highly accurate mean, which collectively produces a sample from the joint probability distribution across all synapses. A final advantage derives from the problem of overfitting, which occurs when the number of parameters in a model is very large. This problem can be ameliorated by \u2018drop out\u2019, a procedure in which only a random fraction of the elements in the model are used on any given trial (Wan et al., 2013; Srivastava et al., 2014). Drop out regularizes the learning since a different network is being used on every learning trial, which reduces co-adaptation and overfitting.\n\nWe are just beginning to appreciate the level of precision with which synapses are regulated and the wide range of time scales that govern the structural organization of synapses. The upper bound on the variability that we have found may be limited by errors in the reconstruction and could be even lower if a more accurate method could be devised to compute the volume of a spine head, neck diameter, PSD area, number of docked vesicles, or other salient features of dendritic spines. Much can be learned about the computational resources of synapses by exploring axon-coupled synaptic pairs in other brain regions and in other species.\n\n## Materials and methods\n\n### Reconstruction of neuropil\n\nThree separate 3DEM data sets were used in this study. Each of these data sets has been used for other purposes in prior studies. Images were obtained from serial thin sections in the middle of stratum radiatum of hippocampal area CA1 from three adult male rats (55\u201365 days old) (Mishchenko et al., 2010; Bourne et al., 2013). One set of images was used to make a dense model of 6 x 6 x 5 \u03bcm3 of hippocampal neuropil and processed as previously described in a study of the extracellular space (Kinney et al., 2013). In this data set, we identified 13 axon-coupled synaptic pairs on 11 dendrites (Figure 4\u2014figure supplement 3 and Figure 4\u2014figure supplement 4). The other two sets of images were part of a prior study (Bourne et al., 2013) in which subsets of dendrites and axons had been reconstructed. In this data set, we identified 7 axon-coupled synaptic pairs on 4 dendrites for a total of 20 axon-coupled dendrite-coupled spine pairs. To perform an accurate and robust geometric analysis of the dendrites, dendritic spines, axons, and glial processes, it was necessary to correct the reconstructed surface meshes for artifacts and make them into computational-quality meshes as described elsewhere (Kinney et al., 2013; Edwards et al., 2014).\n\nThe postsynaptic densities (PSDs) and presynaptic active zones (AZs) were identified in the serial section transmission electron microscopy (ssTEM) images by their electron density and presence of closely apposed presynaptic vesicles. We devised a method to segment the PSD-AZ features in the electron micrographs and mark their pre- and post-synaptic locations as subregions of the membrane in the final 3D mesh. To accomplish this, contours were hand-drawn on each serial section micrograph closely encompassing, as a single closed contour, the pre- and post-synaptic extent of the electron dense region. Taken together, the stack of contours for a given PSD-AZ forms a 3D capsule which encloses the entire feature. VolRoverN (Edwards et al., 2014) was used to reconstruct the 3D surface of the capsule enclosing each PSD-AZ pair in 3D. Because these capsules enclose the intracellular domain of both the PSD and AZ they also overlap with the pre- and post-synaptic membrane associated with these subcellular features. Each of these closed capsules was then used as a \u20183D lasso\u2019 to tag mesh triangles of the pre- and post-synaptic membrane contained within the lasso, marking the enclosed membrane area as a synaptic contact region\u2014PSD postsynaptically and AZ presynaptically. Figure 3\u2014figure supplement 1A shows a postsynaptic contact area labeled in red on a dendritic spine.\n\nThe reconstructed neuropil models were then visualized and analyzed using Blender, a free, open-source tool for 3D computer graphics modeling (http://blender.org). A total of 449 synaptic contacts were found in the dense reconstructed volume of neuropil. We excluded a number of synapses from the analysis if they were partially clipped by the edge of the data set (142), or were shaft synapses (20) leaving 287 valid synapses on dendritic spines in the dense model. An additional 70 spines were excluded from the analysis of axon-coupled spines as the axon which contacted these spines did not contact any other spines within the reconstructed volume. Example visualizations of the spines and axons, generated using Blender, are shown in Figure 2A,B, Figure 3\u2014figure supplement 1A, Figure 4A,B, Figure 4\u2014figure supplement 3, Figure 4\u2014figure supplement 4, Figure 6A,D, Figure 7B,D,F,H.\n\n### Segmentation of dendritic spines\n\nBlender\u2019s functionality is user-extensible via a Python interface for creating add-ons. We created a Python add-on for Blender that enabled the selection of the mesh triangles of the dendrite corresponding to the spine head and whole spine of each individual spine. Our add-on tagged each selected set of triangles with metadata for the spine name and geometric attributes of the head, whole spine, and neck as described below.\n\nThe selection of the spine head was made by hand based on a standardized procedure in which the junction between the head and neck was visually identified as half-way along the concave arc as the head narrows to form the neck (see Figure 3\u2014figure supplement 1A). To select the whole spine, a similar visual judgment was made to locate the junction where the neck widens as it joins the dendritic shaft.\n\nOnce the appropriate area was selected, the tool was designed to automatically create the convex hull of the selected region. The closed mesh formed by the Boolean intersection of the convex hull and the dendrite was used to determine the measured volume of the spine head or whole spine. The volume of the neck was calculated by taking the difference between these two measurements.\n\nAreas were computed from the selected regions for spine head and whole spine. Active zone and postsynaptic density areas were calculated using regions that had been determined during the hand-drawn reconstruction phase described above.\n\nDistances between spine heads along the axon were calculated as the Euclidean distance between the centroids of the PSD/AZ regions. Distances between whole spines along the dendritic shaft were calculated as the Euclidean distance between the spine necks to shaft junctions. Glial classification, mitochondria classification and shape classification were performed by hand using set criteria.\n\n### Estimation of measurement error of spine head volume\n\nSome error in the measurement of spine head volume is expected to occur in the human judgment required to segment the dendritic spines into whole spine, head, and neck. To estimate this error, the valid spines in the dense model were segmented and measured a total of four times per spine (twice each by two people). The standard error of the mean in spine head volume decreases with volume and is less than 5% for the majority of spines with a median error of about 1% (Figure 3\u2014figure supplement 1). The head volumes in the other two data sets were only measured once.\n\n### Segmentation of synaptic vesicles and estimation of docked vesicles\n\nSynaptic vesicles in the presynaptic terminals, totaling 31,377 in number, were identified along with their 3D locations within the dense reconstruction. Of the 449 presynaptic terminals, we excluded 193 terminals from the analysis due to truncation at the edge of the volume, and 20 terminals at shaft synapses, leaving 236 valid terminals. A visualization of all the synaptic vesicles in the reconstruction is shown in Figure 2A.\n\nPositive identification of docked vesicles in these ssTEM data sets is problematic due to the thickness of the sections and density of the staining. To estimate docked vesicles, we counted the number of vesicles whose centers were located within 100 nm of the presynaptic membrane across from the postsynaptic density of a given spine. Of the 31,377 vesicles, 3437 were labeled as docked according to this criterion which yielded estimates in good agreement with previous estimates (Harris and Sultan, 1995; Schikorski and Stevens, 1997;\u00a0Figures 2B\u2013D). An en face view of the docked vesicles at one synapse is shown in Figure 2B.\n\n### Statistical analysis\n\nAll statistical analysis and plots were generated using Python 2.7 (http://python.org) with NumPy, SciPy, and Matplotlib. The distributions of spine head volume, spine head area, spine neck volume, PSD area, and AZ area were highly skewed with a long tail at larger values (Figure 1). Consequently, all regression analysis was performed using Pearson\u2019s linear regression on the data after applying a log-normal transformation (r2 values shown in Figures 1\u20136).\n\nThe coefficient of variation (CV) of the population of spine pairings (Figures 4 and 6) was calculated as the median value of the CVs of each individual pair. The CV of each individual pair is simply the standard deviation of the volumes of the pair divided by the mean volume of the pair (Figure 5).\n\nPopulation distributions were highly skewed making it necessary to make comparisons of distributions using non-parametric methods. We used the two-sample Kolmogorov-Smirnoff (KS) test to make these comparisons in Figures 4 and 6.\n\n### Estimation of number of distinguishable spine sizes and bits of precision in spine size\n\nTo estimate the number of distinguishable spine sizes and corresponding bits of precision we calculated the number of distinct Gaussian distributions of spine sizes, each with a certain mean size and standard deviation that together would cover and span the entire range of spine head sizes seen in Figure 4A. Figure 5 demonstrates that it is reasonable to assume that the CV of each these sub-distributions is a constant value of 0.083. From this CV, the spacing between the mean values of each sub-distribution can be chosen to achieve a total of 31% overlap with adjacent sub-distributions giving a 69% discrimination threshold. A 69% discrimination threshold is commonly used in the field of psychophysics and corresponds to a Signal-to-Noise Ratio (SNR) of 1 (Green and Swets, 1966; Schultz, 2007).\n\nThe 69% confidence interval, z, of a Gaussian distribution is given by:\n\n$$\nz\u00a0=\u00a0sqrt(2)*erf^{-1}(0.69)\n$$\n\nThe spacing, s, of adjacent intervals of mean, \u03bc, is given by:\n\n$$\ns\u00a0=\u00a0\\mu*2*CV*z\n$$\n\nThe number, N, of such distributions that would span the factor of 60 range of spine sizes is:\n\n$$\nN\u00a0=\u00a0log(60)/log(1+2*CV*z)\n$$\n\n$$\nN\u00a0=\u00a026.3\n$$\n\nThe number of bits of precision implied by N distinguishable distributions is given by:\n\n$$\nbits\u00a0=\u00a0log_{2}(N)\n$$\n\n$$\nbits\u00a0=\u00a04.72\n$$\n\nFigure 8 shows that ~26 distinguishable distributions can cover the entire range of spine sizes, implying that there are ~4.7 bits of precision in the spine size.\n\nAll data and software tools described here are available at:\n\nhttp://www.mcell.cnl.salk.edu/models/hippocampus-spine-analysis-2015-1\n",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "6b4552d7-0c3a-4e35-9c10-7d8ad12e5902",
+      "submission_id": "ec4c70f9-667b-43b2-80de-3e1dec647a1a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10778.020](https://doi.org/10.7554/eLife.10778.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Nanoconnectomic Upper Bound on the Variability of Synaptic Plasticity\" for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors. Another reviewer, Winfried Denk, also agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis elegant study makes a simple but important point. By completely reconstructing a small volume of hippocampus, the authors demonstrate that pairs of synapses between the same dendrite and axon have highly correlated sizes (and therefore from earlier work) strength. The finding, that synapses that share an axon and a dendritic branch are very similar in size, is a very important confirmation of the notion that it is the history of correlated pre- and post-synaptic activity that determines synapse size and strength. The data were carefully and creatively analyzed. The results are convincing because they have been reproduced in three animals (a very time consuming task) and because of the high p values.\n\nEssential revisions:\n\n1) The authors should revise the text to clarify how the analysis was carried out, and what can and what cannot be determined from the datasets studied.\n\nReviewer 1: \"It would be surprising if synapses made by the same axon on different dendrites of the same neuron (especially if located at similar electrotonic distances) were not better correlated than synapses made onto different neurons. Perhaps this did not occur in the volume reconstructed or the volume was not large enough to assign dendrites to the same neuron. If so it would be useful to state this.\"\n\nReviewer 2: \"The third paragraph of the Results reads like an orphan yet provides the estimate for how much information can be stored at hippocampal synapses. The rational and analysis should be described in the Results section in more detail which will make the data and the argument more understandable to a wider range of readers. Also a short discussion of how varying the discrimination threshold would affect the estimate would be useful.\"\n\nReviewer 3: \"I am not sure I quite follow the logic of the estimate for the time or the number of action potentials the paired synapses would need to average over to achieve the degree of similarity seen. During pre-synaptic bursts the release probability could go quite high, removing the noise due to the stochastic release seen during single APs.\n\nI found myself confused by the use of \"dendritic branch\" and \"dendrite\". If might be better to use \"dendritic branch\" exclusively when talking about the data in the paper since the small size of the data set does not allow the determination of whether two branches belong to the same cell or not.\n\nI am also somewhat puzzled by the statement \"Difference in volume between pairs of spines is not correlated with separation distance\", which heads the caption of Figure 14. First of all, not observing a correlation does not imply that there isn't any. At best an upper bound could be given for the actual correlation, but for small numbers of observation that estimate would be rather soft. Furthermore, to me, it looks like there is a trend towards greater variability as the distance increases, which would indicate the involvement of a diffusible signal in the size determination.\n\nOrdering the spines by size before correlation analysis is inappropriate since it induces a correlation between them in the sense that knowing something about spine 1 tells me something about spine 2. Please randomize and redo the analysis.\u201d\n\n2) The authors should strive to make the presentation more concise.\n\nReviewer 1: \"My only major suggestion for improving the paper is to make it more concise. Many of the figures are largely redundant (two are not cited in the text).\"\n\nReviewer 3: \"The paper could benefit from pruning some of the figures.\"\n\nPlease note, that if you feel strongly that you want to keep some of the images that the reviewers questioned, they should be included as Supplements to the Figures they \"duplicate\".\n",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "865bff08-bf3d-454e-9fa8-2d0a9bed0abd",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C1",
+      "claim": "The study used a 6 x 6 x 5 \u03bcm\u00b3 complete 3DEM from the middle of stratum radiatum in hippocampal area CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 6 x 6 x 5 \u03bcm3 complete 3DEM from the middle of stratum radiatum in hippocampal area CA1 (Mishchenko et al., 2010; Kinney et al., 2013; see Materials and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the dimensions and location of the 3DEM reconstruction used, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "cb8dcd3c-c78e-4396-9660-cc0a7352f5d0",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C2",
+      "claim": "449 synapses were identified in the reconstructed volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Meg\u0131\u0301as et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of synapses identified in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "92f090c5-3602-4272-8978-f443c476c3f8",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C3",
+      "claim": "446 axons were identified in the reconstructed volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Meg\u0131\u0301as et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of axons identified in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e2599cb4-1287-47f0-b56c-8ff47fea7559",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C4",
+      "claim": "149 dendrites were identified in the reconstructed volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Meg\u0131\u0301as et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of dendrites identified in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c2b0fad9-59a3-4f1c-a552-4f99244b086d",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C5",
+      "claim": "The dendrites, except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Meg\u0131\u0301as et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the volume size and known dendritic branching patterns, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "3f25ff55-7c3a-4e48-b79d-64c4ca04ed94",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C6",
+      "claim": "287 spines were fully contained within the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured spine head volume and surface area, surface area of the postsynaptic density (PSD) adjacent to the presynaptic active zone, and spine neck volume, neck length and neck diameter at the 287 spines that were fully contained within the volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of complete spines measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "774150b0-b7f1-48c6-afdf-ce4c0696e96a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C7",
+      "claim": "236 spines and presynaptic boutons were fully contained within the volume for vesicle quantification.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified the number of vesicles at the 236 spines and presynaptic boutons that were fully contained within the volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of complete spines and boutons for vesicle analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "557261b9-c587-4820-b5b9-24eca1ebad32",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C8",
+      "claim": "Strong correlations exist between spine size metrics, skewed frequency histograms, and number of synapses per unit volume, consistent with previous observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong correlations between these metrics, the skewed shape of the frequency histograms, and the number of synapses per unit of volume (Figures 1\u20133), are consistent with previous observations (Harris and Stevens, 1989; Schikorski and Stevens, 1997; Sorra et al., 2006; Bourne and Harris, 2011; Bourne et al., 2013; Bell et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim references data shown in figures and cites previous studies for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "291ccb88-e21c-4adc-abb5-c5c1147a26f0",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C9",
+      "claim": "The relationship between PSD area and spine head volume did not differ significantly across different dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that the relationship between PSD area and spine head volume did not differ significantly across different dendrites (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical finding with reference to supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "12f678fb-d861-40a6-bf7d-46e0cbcd9741",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C10",
+      "claim": "The correlation between spine head area and spine head volume accounted for 99% of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between spine head area and spine head volume accounted for 99% of the variance, despite the wide range in spine head shapes and dimensions (Figure 1A), which suggests that the accuracy of our measurements matched the precision of the spine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of correlation strength with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d6978dac-ecd8-4533-875a-6aa785a15402",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C11",
+      "claim": "The high correlation between spine head area and volume suggests that the accuracy of measurements matched the precision of the spine.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between spine head area and spine head volume accounted for 99% of the variance, despite the wide range in spine head shapes and dimensions (Figure 1A), which suggests that the accuracy of our measurements matched the precision of the spine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the high correlation value.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "6c4d5e93-7a16-4f47-ad6d-754dd668b028",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C12",
+      "claim": "A weak trend exists between neck diameter and spine head volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured spine neck length, diameter, and volume and found a weak trend between the neck diameter (Figure 1D) and spine head volume but no correlation between neck length (Figure 1E) and spine head volume, consistent with previous studies (Harris and Stevens, 1989; T\u00f8nnesen et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of weak correlation with reference to figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "52b5b6d8-459a-4ccc-ae26-5c1bd0528a0f",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C13",
+      "claim": "No correlation exists between neck length and spine head volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured spine neck length, diameter, and volume and found a weak trend between the neck diameter (Figure 1D) and spine head volume but no correlation between neck length (Figure 1E) and spine head volume, consistent with previous studies (Harris and Stevens, 1989; T\u00f8nnesen et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of lack of correlation with reference to figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "60f6d192-0965-4d9d-9bc9-0b4335178b99",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C14",
+      "claim": "Pairs of spines on the same dendrite that received input from the same axon ('axon-coupled') were of the same size and had nearly identical head volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs of spines on the same dendrite that received input from the same axon ('axon-coupled'), were of the same size and had nearly identical head volumes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the key finding with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "248e8605-a00d-4857-9ad4-161fe052bf55",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C15",
+      "claim": "10 axon-coupled pairs were identified on the same dendrite in the dense reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared this sample of 10 axon-coupled pairs on the same dendrite (Figure 4B, pairs a-j) to those identified on dendrites from the two additional animals (Bourne et al., 2013), for a total of 17 axon-coupled spine pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the number of pairs found.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "92729737-f313-42b8-ab2f-7bd646a072a6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C16",
+      "claim": "A total of 17 axon-coupled spine pairs were analyzed across three animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared this sample of 10 axon-coupled pairs on the same dendrite (Figure 4B, pairs a-j) to those identified on dendrites from the two additional animals (Bourne et al., 2013), for a total of 17 axon-coupled spine pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of total sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "b69a29a4-4519-4f6e-bf25-8e17b6ff20df",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C17",
+      "claim": "The paired head volumes of axon-coupled spines were highly correlated with slope 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "When plotted against one another, the paired head volumes were highly correlated with slope 0.91, and despite the small sample size, were highly significantly different from random pairings of spines (Figure 4C and Figure 4\u2014figure supplement 1A, KS test p=0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of correlation slope with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "5b6a192b-4f00-4d88-98b3-f710dafa988b",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C18",
+      "claim": "The paired head volumes of axon-coupled spines were highly significantly different from random pairings (KS test p=0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "When plotted against one another, the paired head volumes were highly correlated with slope 0.91, and despite the small sample size, were highly significantly different from random pairings of spines (Figure 4C and Figure 4\u2014figure supplement 1A, KS test p=0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical significance with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "2d92578d-b495-4be2-9032-f80690118140",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C19",
+      "claim": "There was a strong positive correlation between paired neck diameters of axon-coupled spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was a strong positive correlation between their paired neck diameters (Figure 4D), PSD areas (Figure 4E), and number of presynaptic docked vesicles (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "56a0c5d9-c9b5-4a1b-b825-0cecc2ced494",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C20",
+      "claim": "There was a strong positive correlation between paired PSD areas of axon-coupled spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was a strong positive correlation between their paired neck diameters (Figure 4D), PSD areas (Figure 4E), and number of presynaptic docked vesicles (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "29b28158-1c71-45d8-8fa9-10b00d696fdc",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C21",
+      "claim": "There was a strong positive correlation between paired numbers of presynaptic docked vesicles of axon-coupled spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was a strong positive correlation between their paired neck diameters (Figure 4D), PSD areas (Figure 4E), and number of presynaptic docked vesicles (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "8042277b-a2eb-42a7-826f-9d972c6b31f8",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C22",
+      "claim": "Axon-coupled spine features spanned the distribution of the overall spine population.",
+      "claim_type": "EXPLICIT",
+      "source": "These features of axon-coupled spines from the same dendrite spanned the distribution of the overall spine population (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "64e31243-4062-48c4-b180-43aceb9b787f",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C23",
+      "claim": "Spine neck lengths of axon-coupled pairs were not well-correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the spine neck lengths (Figure 4G), and neck volumes (Figure 4\u2014figure supplement 1B) of the pairs were not well-correlated indicating that regulation of neck length and neck volume are not important for synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "91fa333c-aa03-4c30-ad2c-5715955b01e5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C24",
+      "claim": "Spine neck volumes of axon-coupled pairs were not well-correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the spine neck lengths (Figure 4G), and neck volumes (Figure 4\u2014figure supplement 1B) of the pairs were not well-correlated indicating that regulation of neck length and neck volume are not important for synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "3a961acd-9dfc-41f6-bfc5-596ebc37563c",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C25",
+      "claim": "The lack of correlation in neck length and volume indicates that regulation of these features is not important for synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the spine neck lengths (Figure 4G), and neck volumes (Figure 4\u2014figure supplement 1B) of the pairs were not well-correlated indicating that regulation of neck length and neck volume are not important for synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the lack of correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c43c4140-db63-4cb1-966c-979fce539ee4",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C26",
+      "claim": "The median coefficient of variation (CV) of volume differences between axon-coupled pairs was 0.083.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding this triple synapse, the median value of the coefficient of variation of volume differences between pairs was CV = 0.083 and was as precise for small synapses as it was for large ones (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the CV value with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "401649bc-aca3-4710-ada9-57209d5e9f68",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C27",
+      "claim": "The precision (CV = 0.083) was as precise for small synapses as it was for large ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding this triple synapse, the median value of the coefficient of variation of volume differences between pairs was CV = 0.083 and was as precise for small synapses as it was for large ones (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure showing no correlation between CV and size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "9833a17c-eb7a-4344-970e-3cf3f395c8ad",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C28",
+      "claim": "The precision suggests that accurately maintaining the size of every synapse, regardless of size and strength, could be important for hippocampal function, flexibility and computational power.",
+      "claim_type": "EXPLICIT",
+      "source": "This precision (i.e. low CV) suggests that accurately maintaining the size of every synapse, regardless of size and strength, could be important for the function, flexibility and computational power of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the precision finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "0fc69415-11c4-4034-89a4-c8c4d66718f6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C29",
+      "claim": "The near-identical size relationship does not hold for axon-coupled spines on different dendrites (CV = 0.39, n = 127).",
+      "claim_type": "EXPLICIT",
+      "source": "This near-identical size relationship does not hold for axon-coupled spines on different dendrites (Figure 6B, CV = 0.39, n = 127, example Figure 6A), nor for non-axon-coupled spines on the same or different dendrites (Figures 6E,F, example Figure 6D) -- all cases which would have had different activation histories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with CV value and sample size, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "6e231ba5-4e7b-4223-80da-7a826dbf66ee",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C30",
+      "claim": "The near-identical size relationship does not hold for non-axon-coupled spines on the same or different dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "This near-identical size relationship does not hold for axon-coupled spines on different dendrites (Figure 6B, CV = 0.39, n = 127, example Figure 6A), nor for non-axon-coupled spines on the same or different dendrites (Figures 6E,F, example Figure 6D) -- all cases which would have had different activation histories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "4f5cf54d-947f-494d-9460-11abe21d4974",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C31",
+      "claim": "Axon-coupled spines on different dendrites and non-axon-coupled spines would have had different activation histories.",
+      "claim_type": "EXPLICIT",
+      "source": "This near-identical size relationship does not hold for axon-coupled spines on different dendrites (Figure 6B, CV = 0.39, n = 127, example Figure 6A), nor for non-axon-coupled spines on the same or different dendrites (Figures 6E,F, example Figure 6D) -- all cases which would have had different activation histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the connectivity patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "093ee4a5-a890-4110-ac73-f0b48ebb2fa5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C32",
+      "claim": "The volumes of axon-coupled different-dendrite spines are no different from the volumes of random pairs (KS test p=0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "The volumes of axon-coupled different-dendrite spines are no different from the volumes of random pairs when plotted against one another (KS test p=0.94, Figure 4\u2014figure supplement 2A, and Figures 6B,C) and the distribution of their sizes was no different from the whole population (KS test p=0.41).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical test result with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "738c4f57-e763-47cc-9ef8-2b61445170fe",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C33",
+      "claim": "The distribution of sizes of axon-coupled different-dendrite spines was no different from the whole population (KS test p=0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "The volumes of axon-coupled different-dendrite spines are no different from the volumes of random pairs when plotted against one another (KS test p=0.94, Figure 4\u2014figure supplement 2A, and Figures 6B,C) and the distribution of their sizes was no different from the whole population (KS test p=0.41).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test result with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "cbb8d9f9-2863-466c-ace3-32dcb68fe4c6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C34",
+      "claim": "The number of docked vesicles for pairs on different dendrites is not different from random pairings (KS test p=0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of docked vesicles for pairs on different dendrites (Figure 6\u2014figure supplement 1B) is not different from random pairings (KS test p=0.08), nor are the neck diameters (Figure 6\u2014figure supplement 1C, KS test p=0.06), nor the neck lengths (Figure 6\u2014figure supplement 1D, KS test p=0.75).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical test result with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "db016f1e-b65a-4114-9cfe-b04844bbc6b1",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C35",
+      "claim": "The neck diameters for pairs on different dendrites are not different from random pairings (KS test p=0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of docked vesicles for pairs on different dendrites (Figure 6\u2014figure supplement 1B) is not different from random pairings (KS test p=0.08), nor are the neck diameters (Figure 6\u2014figure supplement 1C, KS test p=0.06), nor the neck lengths (Figure 6\u2014figure supplement 1D, KS test p=0.75).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical test result with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "4b00b506-29c6-4f72-b9a7-b599394d0315",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C36",
+      "claim": "The neck lengths for pairs on different dendrites are not different from random pairings (KS test p=0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of docked vesicles for pairs on different dendrites (Figure 6\u2014figure supplement 1B) is not different from random pairings (KS test p=0.08), nor are the neck diameters (Figure 6\u2014figure supplement 1C, KS test p=0.06), nor the neck lengths (Figure 6\u2014figure supplement 1D, KS test p=0.75).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical test result with p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "60a68507-b3b0-4b19-84c4-171afd686073",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C37",
+      "claim": "The size difference of pairs of axon-coupled spines on the same or different dendrites shows a weak trend with separation distance along the axon or dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "The size difference of pairs of axon-coupled spines on the same or different dendrites shows a weak trend with separation distance along the axon or dendrite (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "552d245c-0387-49d3-8333-70183128fcc4",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C38",
+      "claim": "The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by proximity of glia processes to the synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by proximity of glia processes to the synapses (Figure 7) (Ventura and Harris, 1999; Witcher et al., 2007), or location of mitochondria in the axon (Billups and Forsythe, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e475b29b-0645-4a10-9647-f50317b89dbc",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C39",
+      "claim": "The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by location of mitochondria in the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by proximity of glia processes to the synapses (Figure 7) (Ventura and Harris, 1999; Witcher et al., 2007), or location of mitochondria in the axon (Billups and Forsythe, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "7f0b000a-0a3a-475c-ba11-b42d7292163a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C40",
+      "claim": "Spine head volumes ranged in size over a factor of 60 from smallest to largest.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that spine head volumes ranged in size over a factor of 60 from smallest to largest while the CV of any given size was 0.083 and was constant across the range of sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the range of spine sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "19b2a68c-1e55-49e6-9da5-37db0ce562f8",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C41",
+      "claim": "Approximately 26 different mean synaptic strengths could span the entire range, assuming CV = 0.083 and a 69% discrimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this logic, we found that ~26 different mean synaptic strengths could span the entire range, assuming CV = 0.083 for each strength level, and a 69% discrimination threshold (Figure 8, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of calculation result with reference to figure and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "6c5d5d6d-60ad-47e6-a4f4-354ebad09de6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C42",
+      "claim": "These 26 distinct strength levels can be represented with 4.7 bits of information.",
+      "claim_type": "EXPLICIT",
+      "source": "These 26 distinct strength levels can be represented with 4.7 bits of information (i.e. 24.7 \u2248 26) which means 4.7 bits of information that can be stored at each synapse as synaptic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of information capacity calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "4f42a902-28de-4d97-b614-e2ab71880519",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C43",
+      "claim": "At a discrimination threshold of 76% (SNR = 2) there would be approximately 23 distinct strengths and 4.5 bits of information.",
+      "claim_type": "EXPLICIT",
+      "source": "At a discrimination threshold of 76% (corresponding to SNR = 2) there would be ~23 distinct strengths and 4.5 bits of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of alternative calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "4c246eea-7750-4102-8725-07e9b5787999",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C44",
+      "claim": "Time-window averaging smooths out fluctuations due to plasticity and other sources of variability including differences in the age of the synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain the high precision observed in spine head volumes, we propose that time-window averaging smooths out fluctuations due to plasticity and other sources of variability including differences in the age of the synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain the observed precision.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "a6891c38-7ac7-4d1b-909c-39569b705e42",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C45",
+      "claim": "For release probability pr=0.1 and spiking rate R=1 Hz, the averaging time window is 21.8 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "eb9410cc-906c-40be-8961-55851cd4d72a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C46",
+      "claim": "For release probability pr=0.1 and spiking rate R=25 Hz, the averaging time window is 52.2 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e903cb5d-53e8-4718-91ee-b17f4e6e4de5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C47",
+      "claim": "For release probability pr=0.2 and spiking rate R=1 Hz, the averaging time window is 9.68 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "1b449153-28cb-488a-84df-f420a9e55fb5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C48",
+      "claim": "For release probability pr=0.2 and spiking rate R=25 Hz, the averaging time window is 23.2 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "9c1d2b3c-3765-4ad9-8de7-dab32de6ba0e",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C49",
+      "claim": "For release probability pr=0.5 and spiking rate R=1 Hz, the averaging time window is 2.42 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "ba31275b-88e0-4cc0-9e9a-a901cd57780e",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C50",
+      "claim": "For release probability pr=0.5 and spiking rate R=25 Hz, the averaging time window is 5.8 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement in table showing calculated time windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "a19ce9fd-b0bb-4723-ba1b-7bbed32964cb",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C51",
+      "claim": "Accounting for other known sources of variability at dendritic spines would require even longer time windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for other known sources of variability at dendritic spines would require even longer time windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the binomial model being a lower bound.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "3f8d33db-e612-46fa-b828-dc005389b827",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C52",
+      "claim": "Previous upper bounds on the variability of spine volume in the hippocampus underestimated the precision by including the spine neck volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous upper bounds on the variability of spine volume in the hippocampus, based on the whole spine volume (Sorra and Harris, 1993; O'Connor et al., 2005), underestimated the precision by including the spine neck volume (Figure 4\u2014figure supplement 1A), which was not correlated between pairs of spines in our volume (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement comparing current findings to previous studies with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "5f0b4397-f621-4187-a66c-98448672bd2d",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C53",
+      "claim": "The dense reconstruction included a complete inventory of every synapse in the reconstructed volume and was unbiased in this respect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dense reconstruction included a complete inventory of every synapse in the reconstructed volume and in this respect was unbiased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "228cb3ab-1d4f-460d-a619-16ba5fc5795c",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C54",
+      "claim": "Additional pairs of synapses from two other rats confirmed that this finding is not confined to a single brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional pairs of synapses from two other rats confirmed that this finding is not confined to a single brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about replication across animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "9914e15a-ff46-481f-b9f5-70ea8348d1bf",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C55",
+      "claim": "The very high statistical significance (KS test p=0.0002) despite a relatively small number of pairs implies a large effect magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "The very high statistical significance of the finding (Figure 4C, KS test p=0.0002) despite a relatively small number of pairs in our sample implies a large effect magnitude, which would be much smaller if many more samples were needed to reach the same level of significance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference about effect size from statistical significance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e365652d-3c51-421f-9fa4-67cc2f2c3567",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C56",
+      "claim": "If 17 random pairs were chosen from all 287 synapses, there is only a one in 5000 chance that the spine heads would be as precisely matched as the 17 axon-coupled pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "To make this p value concrete, if 17 random pairs were chosen from all 287 synapses in the reconstructed volume, there is only a one in 5000 chance that the spine heads would be as precisely matched as the 17 axon-coupled pairs discovered here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the p-value in concrete terms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "78d5a98f-09c0-4464-9217-ebd1b949dd57",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C57",
+      "claim": "There is a high correlation of the size of the spine head with the PSD area and numbers of docked vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that there is a high correlation of the size of the spine head with the PSD area and numbers of docked vesicles (Harris and Stevens, 1989; Lisman and Harris, 1994; Harris and Sultan, 1995; Schikorski and Stevens, 1997; Murthy et al., 2001; Branco et al., 2008; Bourne et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "632abf4f-9e6f-486a-9603-2b4f19ccf614",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C58",
+      "claim": "The high correlation between PSD areas and numbers of docked vesicles in axon-coupled spines is not surprising given the high correlation between head sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the correlations between the head sizes of axon-coupled pairs of spines is high, the high correlation between the PSD areas and numbers of docked vesicles observed in axon-coupled spines is not surprising (Figures 4E and 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on the relationship between measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "76563b3c-3726-4028-81d6-948a9a30f871",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C59",
+      "claim": "It was unexpected to find that spine neck diameters were highly correlated between axon-coupled pairs of spines (r\u00b2=0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was unexpected to find that the spine neck diameters were also highly correlated between axon-coupled pairs of spines (Figure 4D r2=0.70), since the correlation between spine head volumes and spine neck diameters is not statistically significant (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of unexpected finding with r\u00b2 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "0d5679dd-8306-4e71-a2a3-a1a752fad9de",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C60",
+      "claim": "There are at least two geometric aspects of spine geometry under tight control of synaptic plasticity, which may reflect different aspects of synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there are at least two geometric aspects of the spine geometry that are under tight control of synaptic plasticity, which may reflect different aspects of synaptic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlation patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d7fbb552-b02e-42bf-a830-a843cf384f00",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C61",
+      "claim": "The diameter of the spine neck may reflect the need for trafficking of materials between the spine shaft and spine head, which is known to be regulated by LTP and LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "The diameter of the spine neck may reflect the need for trafficking of materials between the spine shaft and spine head, which is known to be regulated by LTP and LTD (Araki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation with citation to support the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "f1747867-e74c-427c-b3f6-4d6cb87d2cc4",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C62",
+      "claim": "Highly correlated release probability at multiple contacts in the neocortex between the axon of a given layer 2/3 pyramidal neuron and the same target cell has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing our observations and analysis in the hippocampus, highly correlated pr at multiple contacts in the neocortex between the axon of a given layer 2/3 pyramidal neuron and the same target cell has been reported (Koester and Johnston, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of findings from another study with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "b3c43ecd-0400-4fa7-8716-0b9a7b8e5358",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C63",
+      "claim": "The estimate of synaptic variability based on spine head volume is an order of magnitude lower than estimates based on release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimate of synaptic variability, based on spine head volume, is an order of magnitude lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of current findings to previous estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d6264328-7e8a-4f02-b278-6fa63ab1d294",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C64",
+      "claim": "In a recent connectomic reconstruction of the mouse cortex, the similarity in the volumes of axon-coupled pairs of dendritic spines were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent connectomic reconstruction of the mouse cortex, the similarity in the volumes of axon-coupled pairs of dendritic spines were statistically significant (Kasthuri et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of findings from another study with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "7d27853b-707a-4291-8e26-3d2a00d8b661",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C65",
+      "claim": "The observation of similar spine volumes in mouse cortex is further evidence for the high precision of synaptic plasticity and suggests that the same may be true in other brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is further evidence for the high precision of synaptic plasticity and suggests that the same may be true in other brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from findings in another brain region.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "b74ba666-4600-4e64-9e97-83d875149dd5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C66",
+      "claim": "The axon-coupled pairs of synapses studied were within a few microns of each other on the same dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "The axon-coupled pairs of synapses that we studied were within a few microns of each other on the same dendrite, which raises the question of how far apart the two synapses can be and still converge to the same size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the spatial proximity of studied pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "2de1c5f7-7e75-497c-95c7-7fb146303ac9",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C67",
+      "claim": "Two synapses from the same axon on two different dendrites of the same neuron might not share the same postsynaptic history.",
+      "claim_type": "EXPLICIT",
+      "source": "Related to this question, two synapses from the same axon on two different dendrites of the same neuron might not share the same postsynaptic history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about synapses on different dendrites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e212cd94-0cb0-48ee-afbb-c4ea27d4cd81",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C68",
+      "claim": "Synaptic tagging and capture is much less effective when the synapses are on different branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic tagging and capture, in which inputs that are too weak to trigger LTP or LTD can be 'rescued' by a stronger input to neighboring synapses if it occurs within an hour (Frey and Morris, 1997; O'Donnell and Sejnowski, 2014), is much less effective when the synapses are on different branches (Govindarajan et al., 2011), which would tend to make two synapses from the same axon on different dendritic branches less similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of known mechanism with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "eeb12119-b96f-4200-943a-c17af8b1f321",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C69",
+      "claim": "An unusual triple synapse from a single axon was excluded from the analysis because the presynaptic terminal was a single large varicosity filled with vesicles shared by three synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "An unusual triple synapse from a single axon (Figure 4B, 'k, l, m') was excluded from the analysis because the presynaptic terminal was a single large varicosity filled with vesicles (i.e. an MSB) shared by three synapses, unlike the other pairs that had isolated presynaptic specializations (n=9), or an MSB shared by two synapses (n=8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement explaining exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "fcab9ba0-0dfb-4600-a0cf-546eaf0f2933",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C70",
+      "claim": "It is possible that the large, central spine in the triple synapse had an effectively larger pool of vesicles by virtue of proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the large, central spine had an effectively larger pool of vesicles by virtue of proximity, whereas the two synapses on the outside had a more limited population to draw from, and the size of the postsynaptic spine was influenced by the size of the available pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the unusual triple synapse.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "11cf771a-dbc2-4fff-9ec8-d9a64ecf5e3a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C71",
+      "claim": "The estimate of variability would not be greatly affected by including the 3 additional pairs from the triple synapse in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the explanation, our estimate of the variability would not be greatly affected by including these 3 additional pairs of synapses in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about robustness of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "fb40aff8-584e-4303-86f2-888769a02fd1",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C72",
+      "claim": "There are at least 10 known sources of stochastic variability at synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "How can the high precision in spine head volume be achieved despite the many sources of stochastic variability observed in synaptic responses? These include: 1) The low probability of release from the presynaptic axon in response to an action potential (Murthy et al., 2001); 2) Short-term plasticity of release of neurotransmitter (Dobrunz et al., 1997); 3) Stochastic fluctuations in the opening of postsynaptic NMDA receptors, with only a few of the 2\u201320 conducting at any time (Nimchinsky, 2004); 4) Location of release site relative to AMPA receptors (Franks et al., 2003; Ashby et al., 2006; Kusters et al., 2013) 5) Few voltage-dependent calcium channels (VDCCs) in spines that affect synaptic plasticity (smallest spines contain none) (Mills et al., 1994; Magee and Johnston, 1995); 6) VDCCs depress after back propagating action potentials (Yasuda et al., 2003); 7) Capacity for local ribosomal protein synthesis in some spines while others depend on transport of proteins from the dendrites (Ostroff et al., 2002; Sutton and Schuman, 2006; Bourne et al., 2007; Bourne and Harris, 2011); 8) Homeostatic mechanisms for synaptic scaling may vary (Turrigiano, 2008; Bourne and Harris, 2011); 9) Presence or absence of glia (Ventura and Harris, 1999; Witcher et al., 2007; Clarke and Barres, 2013); and 10) Frequency of axonal firing (Callaway and Ross, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "List of known sources of variability with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "1640e3f1-6ae1-46a9-990a-04f5f31473f3",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C73",
+      "claim": "One way that high precision can be achieved is through time averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "One way that high precision can be achieved is through time averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain precision.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "aa05b6ee-b01f-4283-a185-c3a8453d1898",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C74",
+      "claim": "Long-term changes in the structure of the synapse and the efficacy of synaptic transmission are triggered by the entry of calcium into the spine.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term changes in the structure of the synapse and the efficacy of synaptic transmission are triggered by the entry of calcium into the spine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "3de2d4c7-e588-4916-9c2d-613559c213b0",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C75",
+      "claim": "Phosphorylation of CaMKII integrates calcium signals over minutes to hours and is a critical step in enzyme cascades leading to structural changes induced by LTP and LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of calcium/calmodulin-dependent protein kinase II (CaMKII), required for spike-timing dependent plasticity processes, integrates calcium signals over minutes to hours and is a critical step in enzyme cascades leading to structural changes induced by long-term potentiation (LTP) and long-term depression (LTD) (Kennedy et al., 2005), including rearrangements of the cytoskeleton (Kram\u00e1r et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of known mechanism with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c9ef915e-275b-44d8-98de-9830084a990a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C76",
+      "claim": "The time window over which CaMKII integrates calcium signals is within the range of time windows predicted to achieve the observed precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The time window over which CaMKII integrates calcium signals is within the range of time windows we predict would be needed to achieve the observed precision (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of known mechanism timescale to predicted timescale.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "a846f6ea-7db4-43d4-9499-3a5a307c62aa",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C77",
+      "claim": "Similar time windows occur in synaptic tagging and capture, which also requires CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar time windows occur in synaptic tagging and capture, which also requires CaMKII (Redondo and Morris, 2011; de Carvalho Myskiw et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of known mechanism with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "04f7966d-a362-42ee-9477-49fa93a817ba",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C78",
+      "claim": "Biochemical pathways within the postsynaptic spine have the long time scales required to record and maintain the history of activity patterns leading to structural changes in spine head size.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that biochemical pathways within the postsynaptic spine have the long time scales required to record and maintain the history of activity patterns leading to structural changes in the size of the spine heads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the timescale matching.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c971b577-d7ea-4677-8d2c-98ec552de674",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C79",
+      "claim": "The information stored at a single synapse is encoded in the form of the synaptic strength, which reflects the pre- and postsynaptic history experienced by the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The information stored at a single synapse is encoded in the form of the synaptic strength, which reflects the pre- and postsynaptic history experienced by the synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the encoding mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "1eaf549a-b9ae-4480-bf7b-bc40eb2b48a1",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C80",
+      "claim": "Due to many sources of variability, information cannot be read out with a single input spike.",
+      "claim_type": "EXPLICIT",
+      "source": "But due to the many sources of variability, this information cannot be read out with a single input spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the variability sources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e4a4e3a9-ef34-4bc7-98b0-6879ad74411e",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C81",
+      "claim": "The stochastic variability might reflect a sampling strategy designed for energetic efficiency since it is the physical substrate that must be stable for long-term memory retention, not the read out of individual spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the stochastic variability might reflect a sampling strategy designed for energetic efficiency since it is the physical substrate that must be stable for long-term memory retention, not the read out of individual spikes (Laughlin and Sejnowski, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "f3a16660-f25f-4927-a400-56c47c332bdb",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C82",
+      "claim": "Some algorithms depend on stochastic sampling, such as the Markov Chain Monte Carlo algorithm that achieves estimates by sampling from probability distributions, and can be used for Bayesian inference.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, some algorithms depend on stochastic sampling, such as the Markov Chain Monte Carlo algorithm that achieves estimates by sampling from probability distributions, and can be used for Bayesian inference (Gamerman and Lopes, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of computational principle with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "8548ea06-fd1b-4bcf-8fb1-12f66bc1a95a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C83",
+      "claim": "Each synapse in essence samples from a probability distribution with a highly accurate mean, which collectively produces a sample from the joint probability distribution across all synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Each synapse in essence samples from a probability distribution with a highly accurate mean, which collectively produces a sample from the joint probability distribution across all synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of synaptic function in computational terms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "1708ffc9-382d-4272-b9fd-aebc1d079c24",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C84",
+      "claim": "Drop out is a procedure in which only a random fraction of the elements in a model are used on any given trial, which can ameliorate overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem can be ameliorated by 'drop out', a procedure in which only a random fraction of the elements in the model are used on any given trial (Wan et al., 2013; Srivastava et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of machine learning principle with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c5c810ca-1d9f-45f4-8c1a-b905f7dbb3ae",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C85",
+      "claim": "Drop out regularizes learning since a different network is being used on every learning trial, which reduces co-adaptation and overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Drop out regularizes the learning since a different network is being used on every learning trial, which reduces co-adaptation and overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of drop out mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "5dc21491-1916-4c1c-85de-dea9f8065c29",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C86",
+      "claim": "The upper bound on variability may be limited by errors in the reconstruction and could be even lower with more accurate methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper bound on the variability that we have found may be limited by errors in the reconstruction and could be even lower if a more accurate method could be devised to compute the volume of a spine head, neck diameter, PSD area, number of docked vesicles, or other salient features of dendritic spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "997e9c5d-9a6d-4092-9b06-dce353bcfdb9",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C87",
+      "claim": "Much can be learned about the computational resources of synapses by exploring axon-coupled synaptic pairs in other brain regions and in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Much can be learned about the computational resources of synapses by exploring axon-coupled synaptic pairs in other brain regions and in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "2a75cc54-2202-4b1f-9f3e-d60ab19c90ab",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C88",
+      "claim": "Images were obtained from serial thin sections in the middle of stratum radiatum of hippocampal area CA1 from three adult male rats (55\u201365 days old).",
+      "claim_type": "EXPLICIT",
+      "source": "Images were obtained from serial thin sections in the middle of stratum radiatum of hippocampal area CA1 from three adult male rats (55\u201365 days old) (Mishchenko et al., 2010; Bourne et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental subjects and methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "6ce76da6-5284-4f8a-ad1f-0214c4ebed46",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C89",
+      "claim": "13 axon-coupled synaptic pairs were identified on 11 dendrites in the dense reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this data set, we identified 13 axon-coupled synaptic pairs on 11 dendrites (Figure 4\u2014figure supplement 3 and Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of findings with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "8143c3f1-3424-41aa-a20f-440b59fb3968",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C90",
+      "claim": "7 axon-coupled synaptic pairs were identified on 4 dendrites in the prior study data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "In this data set, we identified 7 axon-coupled synaptic pairs on 4 dendrites for a total of 20 axon-coupled dendrite-coupled spine pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of findings from additional data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "edf25ba9-88fa-4109-bb9f-9970fc82acd6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C91",
+      "claim": "A total of 31,377 synaptic vesicles were identified in the presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic vesicles in the presynaptic terminals, totaling 31,377 in number, were identified along with their 3D locations within the dense reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of vesicle count.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "790549f5-e298-4df7-9c13-b8d8f5beae20",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C92",
+      "claim": "193 presynaptic terminals were excluded from analysis due to truncation at the edge of the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 449 presynaptic terminals, we excluded 193 terminals from the analysis due to truncation at the edge of the volume, and 20 terminals at shaft synapses, leaving 236 valid terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of exclusion criteria and numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "67697a22-731e-4f6e-8b10-96ffce0900a8",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C93",
+      "claim": "20 terminals at shaft synapses were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 449 presynaptic terminals, we excluded 193 terminals from the analysis due to truncation at the edge of the volume, and 20 terminals at shaft synapses, leaving 236 valid terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of exclusion criteria and numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c7a09d92-655f-4936-813f-aff5d35ef2d2",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C94",
+      "claim": "Docked vesicles were estimated by counting vesicles whose centers were located within 100 nm of the presynaptic membrane across from the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate docked vesicles, we counted the number of vesicles whose centers were located within 100 nm of the presynaptic membrane across from the postsynaptic density of a given spine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "42f8b9da-7e8f-4ed0-ba58-a52b069fb705",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C95",
+      "claim": "3437 vesicles were labeled as docked according to the 100 nm criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 31,377 vesicles, 3437 were labeled as docked according to this criterion which yielded estimates in good agreement with previous estimates (Harris and Sultan, 1995; Schikorski and Stevens, 1997; Figures 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of count with citations for validation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "25177ab2-7af5-4b80-83b3-66eb6bb6ca5e",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C96",
+      "claim": "The docked vesicle estimates were in good agreement with previous estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 31,377 vesicles, 3437 were labeled as docked according to this criterion which yielded estimates in good agreement with previous estimates (Harris and Sultan, 1995; Schikorski and Stevens, 1997; Figures 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison to previous studies with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "71e5b8d3-68b9-433a-96dc-a4e574e8fe3a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C97",
+      "claim": "All regression analysis was performed using Pearson's linear regression on log-normal transformed data.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, all regression analysis was performed using Pearson's linear regression on the data after applying a log-normal transformation (r2 values shown in Figures 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "099628aa-62a1-477d-8fe9-576670c52d86",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C98",
+      "claim": "The coefficient of variation of the population of spine pairings was calculated as the median value of the CVs of each individual pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The coefficient of variation (CV) of the population of spine pairings (Figures 4 and 6) was calculated as the median value of the CVs of each individual pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "2aa062e4-d882-472d-b945-9e2c7423607d",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C99",
+      "claim": "The two-sample Kolmogorov-Smirnoff (KS) test was used to compare distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the two-sample Kolmogorov-Smirnoff (KS) test to make these comparisons in Figures 4 and 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "c6e64ae1-2851-475f-8378-9b71a0239959",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C100",
+      "claim": "The 69% confidence interval corresponds to a Signal-to-Noise Ratio (SNR) of 1.",
+      "claim_type": "EXPLICIT",
+      "source": "A 69% discrimination threshold is commonly used in the field of psychophysics and corresponds to a Signal-to-Noise Ratio (SNR) of 1 (Green and Swets, 1966; Schultz, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of psychophysical principle with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "80d7b0e8-47da-4cd5-99e9-1f8c058223cb",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C101",
+      "claim": "The standard error of the mean in spine head volume decreases with volume and is less than 5% for the majority of spines with a median error of about 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard error of the mean in spine head volume decreases with volume and is less than 5% for the majority of spines with a median error of about 1% (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of measurement error with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "04e7aa83-e8bb-46c5-a88e-c34fb839ad20",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C102",
+      "claim": "Excitatory synapses on dendritic spines of hippocampal pyramidal neurons have a wide range of sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory synapses on dendritic spines of hippocampal pyramidal neurons have a wide range of sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "74bbf062-2532-4c36-ba7b-d275f1093525",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C103",
+      "claim": "Anatomical measurements of spine size, PSD area, number of AMPA receptors, area of presynaptic active zone and number of docked vesicles are all highly correlated with each other and with physiological measurements of release probability and synapse efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical measurements of the spine size, the area of the postsynaptic density (PSD), the number of AMPA receptors, the area of the presynaptic active zone and the number of docked vesicles in the presynaptic terminal are all highly correlated with each other and with physiological measurements of the release probability and the efficacy of the synapse (Harris and Stevens, 1989; Lisman and Harris, 1994; Harris and Sultan, 1995; Schikorski and Stevens, 1997; Murthy et al., 2001; Branco et al., 2008; Bourne et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established correlations with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "9493c0bd-6e7d-40c8-b871-390cd611aee1",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C104",
+      "claim": "Each of these individual characteristics is a correlate of synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, each of these individual characteristics is a correlate of synaptic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d8a1edca-4020-4e46-b5e0-38469f78e633",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C105",
+      "claim": "The sizes and strengths of synapses can increase or decrease according to the history of relative timing of presynaptic inputs and postsynaptic spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes and strengths of these synapses can increase or decrease according to the history of relative timing of presynaptic inputs and postsynaptic spikes (Bi and Poo, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of known plasticity mechanism with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "bb34e017-ae28-4182-8010-edd2cf8aa2c1",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C106",
+      "claim": "Prior work suggests that pairs of spines on the same dendrite contacting the same axon are more similar in size than those from the same axon on different dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work suggests that such pairs of spines are more similar in size than those from the same axon on different dendrites (Sorra and Harris, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of prior findings with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d6865c50-de6f-488a-80a8-c378e5573dbf",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C107",
+      "claim": "There is a minimum of 26 distinguishable synaptic strengths, corresponding to storing 4.7 bits of information at each synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there is a minimum of 26 distinguishable synaptic strengths, corresponding to storing 4.7 bits of information at each synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of key finding from the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "87e2ca33-290e-4425-9b6c-cf2200d619f4",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "claim_id": "C108",
+      "claim": "Because of stochastic variability of synaptic activation the observed precision requires averaging activity over several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of stochastic variability of synaptic activation the observed precision requires averaging activity over several minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of key finding from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study reconstructed a 6\u00d76\u00d75 \u03bcm\u00b3 volume of hippocampal CA1 neuropil from three rats, identifying 449 synapses, 446 axons, 149 dendrites, and quantifying 287 complete spines and 236 complete presynaptic boutons with 31,377 vesicles. The reconstruction included 13 axon-coupled pairs in the dense volume and 7 additional pairs from two other animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C88-C93 provide comprehensive methodological details with explicit counts of identified structures. The data are internally consistent, cite prior work appropriately, and describe clear exclusion criteria (C92-C93). The multi-animal replication (C88, C90) strengthens generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "1e017017-2571-4d43-aa33-7cfb15db01e5",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spine head volume correlates strongly with spine head area (r\u00b2=0.99) and PSD area, with weak correlation to neck diameter but no correlation to neck length. These correlations are consistent across dendrites and match previous observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 report strong correlations with high r\u00b2 values and appropriate statistical comparisons across dendrites (C9). The 99% variance explained (C10) supports measurement accuracy (C11). Findings are validated against prior literature with multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "a1454111-74be-4676-8d63-dbbd882ee004",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Axon-coupled spine pairs on the same dendrite have nearly identical head volumes (slope=0.91, KS test p=0.0002, n=17 pairs), with strong correlations in neck diameter, PSD area, and docked vesicles. These features span the full population distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 present the central finding with strong statistical support (p=0.0002, C18) despite small sample size. The correlation slope near 1.0 (C17) and consistency across multiple structural features (C19-C21) provide converging evidence. Replication across three animals (C16) strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "778a508d-8c30-4a8e-8f0a-91b8024ef286",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spine neck lengths and volumes of axon-coupled pairs show no correlation, suggesting these features are not important for synaptic strength regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C24 report lack of correlation, but the inference about functional importance (C25) is speculative. The absence of correlation could reflect measurement noise, biological variability unrelated to plasticity, or genuine lack of regulation. Alternative explanations are not adequately excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "93b9e54a-6b74-43f4-a963-bf5bc1c9c18d",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The coefficient of variation (CV) of spine head volume between axon-coupled pairs is 0.083, constant across the 60-fold size range, with measurement error <5% (median ~1%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C40 establish the key precision metric with explicit CV value. The size-independence (C27) is critical and supported by Figure 5. Measurement error quantification (C101) demonstrates that observed precision exceeds technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "cd57287c-eeeb-4631-9d4f-44c6b5116437",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Axon-coupled spines on different dendrites (CV=0.39, n=127) and non-axon-coupled spines show no size correlation, with distributions indistinguishable from random pairings (KS tests p>0.05), consistent with different activation histories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 provide essential negative controls with appropriate statistical tests. The contrast between same-dendrite (CV=0.083) and different-dendrite (CV=0.39) pairs is striking and statistically robust. The inference about activation histories (C31) is reasonable given the connectivity patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "5caa8f66-2a97-4f3c-9674-dc46e4bf6942",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spine size differences show weak trends with separation distance but are unaffected by glial proximity or axonal mitochondria location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 test potential confounding factors. The weak distance trend (C37) is appropriately characterized. The lack of glial and mitochondrial effects (C38-C39) rules out local metabolic factors, though the analysis could benefit from quantitative statistical tests.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "95b750af-40f1-4411-b1d4-72d29fcda9ba",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using signal detection theory with CV=0.083 and 69% discrimination threshold (SNR=1), approximately 26 distinguishable synaptic strengths span the size range, corresponding to 4.7 bits of information storage per synapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 apply established psychophysical principles (C100) to calculate information capacity. The calculation is mathematically sound and clearly documented in Methods. The 4.5-4.7 bit range (C43) shows robustness to threshold choice. This is a key quantitative conclusion of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "8120df29-ec0b-41df-94b3-dad6aba23b2f",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Time-window averaging over minutes (2.4-21.8 min at 1 Hz, 5.8-52.2 sec at 25 Hz, depending on release probability) is proposed to explain the observed precision by smoothing stochastic variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C51 present a theoretical model using binomial statistics to estimate required averaging times. While mathematically sound, this is a lower bound (C51) that ignores many sources of variability (C72). The model is speculative (C44, C73) and lacks direct experimental validation of the proposed time-averaging mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "d3695c5f-77ee-4553-94e6-0b42f82b484a",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CaMKII phosphorylation integrates calcium signals over minutes to hours, matching the predicted time windows for achieving observed precision, suggesting biochemical pathways can maintain activity history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C78 connect known CaMKII biology (C75, C77) to the theoretical time windows. While the timescale matching (C76) is suggestive, this remains correlative. The inference about biochemical recording (C78) is speculative without direct evidence that CaMKII dynamics actually implement the proposed averaging mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous estimates underestimated precision by including neck volume. The current dense reconstruction is unbiased, replicated across animals, with high statistical significance (p=0.0002) implying large effect size (1 in 5000 chance for random pairs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 appropriately contextualize findings relative to prior work. The methodological improvement (C52-C53) is valid. The statistical interpretation (C55-C56) correctly relates p-value to effect magnitude and provides intuitive context. Multi-animal replication (C54) strengthens generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spine neck diameter correlates strongly between axon-coupled pairs (r\u00b2=0.70) despite weak correlation with head volume, suggesting independent regulation of head size and neck diameter reflecting different functional aspects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 identify an unexpected finding (C59) with clear data (r\u00b2=0.70). The inference of dual regulation (C60) is reasonable given the correlation patterns. The speculation about neck diameter and trafficking (C61) is appropriately tentative and supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "4355fa70-d620-4fe6-8144-2be0b513f230",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Findings are consistent with correlated release probability in neocortex and similar spine volumes in mouse cortex connectomics, suggesting high precision may be general across brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 appropriately contextualize findings within broader literature. The comparison to neocortex (C62) and mouse cortex (C64) supports generalizability. The inference about precision across brain areas (C65) is reasonable but appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "2aebfb7e-73b4-4e33-9fd7-6712302b5108",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Studied pairs were within microns on the same dendrite. Synapses on different dendrites may not share postsynaptic history, and synaptic tagging is less effective across branches, potentially limiting similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 acknowledge limitations and raise important questions about spatial extent of the phenomenon. The discussion of synaptic tagging (C68) appropriately cites relevant mechanisms. These are reasonable considerations for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "778213fe-b4a5-4dba-bb0b-3752daeb6a9e",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "An unusual triple synapse with shared multi-synaptic bouton was excluded from analysis, possibly due to differential vesicle pool access, but inclusion would not greatly affect variability estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 transparently report an outlier with clear exclusion rationale. The speculation about mechanism (C70) is reasonable. The robustness statement (C71) appropriately addresses potential bias from exclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "feee8916-9042-4121-bab1-fd135a728b9b",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Despite 10+ sources of synaptic variability, information is encoded in synaptic strength but not readable from single spikes. Stochastic variability may serve computational functions including energy efficiency, Bayesian sampling, and dropout-like regularization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C85 catalog known variability sources (C72) and propose computational interpretations. While the list is comprehensive and well-cited, the functional interpretations (C81-C85) are highly speculative. The analogies to machine learning (C84-C85) are interesting but lack empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "f18c8b9e-29a8-455e-8a22-4638173926dc",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The measured variability may be an upper bound limited by reconstruction errors. Future studies in other brain regions and species could reveal even higher precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 appropriately acknowledge methodological limitations and suggest future directions. The recognition that precision could be even higher (C86) is scientifically honest. The call for comparative studies (C87) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "49378ad7-0b22-4e76-b63c-798f79ea2132",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Docked vesicles were estimated using a 100 nm criterion, yielding 3437 docked vesicles in good agreement with previous estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 describe a clear operational definition for docked vesicles with validation against prior work. The agreement with previous estimates (C96) supports methodological validity despite acknowledged limitations in identifying truly docked vesicles from thick sections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "3ddfa678-97b4-4a95-abe3-af2e7f7adbd6",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Statistical analyses used log-normal transformation for regression, median CV calculation for paired comparisons, and Kolmogorov-Smirnoff tests for distribution comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 clearly document statistical methods. Log-normal transformation (C97) is appropriate for skewed distributions. The median CV approach (C98) is reasonable. KS tests (C99) are appropriate for non-parametric distribution comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    },
+    {
+      "id": "e429ef10-fad2-4e85-8a60-8b02bb6b984f",
+      "content_id": "9467065d-b6e2-477d-a2ad-42502d2e0ca2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The observed precision suggests accurate maintenance of every synapse is important for hippocampal function and requires averaging over several minutes due to stochastic variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28 and C108 present key interpretive conclusions. While the precision is well-established, the functional importance (C28) is speculative. The time-averaging requirement (C108) is based on theoretical modeling without direct experimental validation of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:54:14.422142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "865bff08-bf3d-454e-9fa8-2d0a9bed0abd",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "cb8dcd3c-c78e-4396-9660-cc0a7352f5d0",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "92f090c5-3602-4272-8978-f443c476c3f8",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "e2599cb4-1287-47f0-b56c-8ff47fea7559",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "c2b0fad9-59a3-4f1c-a552-4f99244b086d",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "3f25ff55-7c3a-4e48-b79d-64c4ca04ed94",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "774150b0-b7f1-48c6-afdf-ce4c0696e96a",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "2a75cc54-2202-4b1f-9f3e-d60ab19c90ab",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "6ce76da6-5284-4f8a-ad1f-0214c4ebed46",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "8143c3f1-3424-41aa-a20f-440b59fb3968",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "edf25ba9-88fa-4109-bb9f-9970fc82acd6",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "790549f5-e298-4df7-9c13-b8d8f5beae20",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "67697a22-731e-4f6e-8b10-96ffce0900a8",
+      "result_id": "2ba92b05-9c75-4a9a-a38e-97b41d56ae28"
+    },
+    {
+      "claim_id": "557261b9-c587-4820-b5b9-24eca1ebad32",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "291ccb88-e21c-4adc-abb5-c5c1147a26f0",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "12f678fb-d861-40a6-bf7d-46e0cbcd9741",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "d6978dac-ecd8-4533-875a-6aa785a15402",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "6c4d5e93-7a16-4f47-ad6d-754dd668b028",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "52b5b6d8-459a-4ccc-ae26-5c1bd0528a0f",
+      "result_id": "1e017017-2571-4d43-aa33-7cfb15db01e5"
+    },
+    {
+      "claim_id": "60f6d192-0965-4d9d-9bc9-0b4335178b99",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "248e8605-a00d-4857-9ad4-161fe052bf55",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "92729737-f313-42b8-ab2f-7bd646a072a6",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "b69a29a4-4519-4f6e-bf25-8e17b6ff20df",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "5b6a192b-4f00-4d88-98b3-f710dafa988b",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "2d92578d-b495-4be2-9032-f80690118140",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "56a0c5d9-c9b5-4a1b-b825-0cecc2ced494",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "29b28158-1c71-45d8-8fa9-10b00d696fdc",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "8042277b-a2eb-42a7-826f-9d972c6b31f8",
+      "result_id": "a1454111-74be-4676-8d63-dbbd882ee004"
+    },
+    {
+      "claim_id": "64e31243-4062-48c4-b180-43aceb9b787f",
+      "result_id": "778a508d-8c30-4a8e-8f0a-91b8024ef286"
+    },
+    {
+      "claim_id": "91fa333c-aa03-4c30-ad2c-5715955b01e5",
+      "result_id": "778a508d-8c30-4a8e-8f0a-91b8024ef286"
+    },
+    {
+      "claim_id": "3a961acd-9dfc-41f6-bfc5-596ebc37563c",
+      "result_id": "778a508d-8c30-4a8e-8f0a-91b8024ef286"
+    },
+    {
+      "claim_id": "c43c4140-db63-4cb1-966c-979fce539ee4",
+      "result_id": "93b9e54a-6b74-43f4-a963-bf5bc1c9c18d"
+    },
+    {
+      "claim_id": "401649bc-aca3-4710-ada9-57209d5e9f68",
+      "result_id": "93b9e54a-6b74-43f4-a963-bf5bc1c9c18d"
+    },
+    {
+      "claim_id": "7f0b000a-0a3a-475c-ba11-b42d7292163a",
+      "result_id": "93b9e54a-6b74-43f4-a963-bf5bc1c9c18d"
+    },
+    {
+      "claim_id": "80d7b0e8-47da-4cd5-99e9-1f8c058223cb",
+      "result_id": "93b9e54a-6b74-43f4-a963-bf5bc1c9c18d"
+    },
+    {
+      "claim_id": "0fc69415-11c4-4034-89a4-c8c4d66718f6",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "6e231ba5-4e7b-4223-80da-7a826dbf66ee",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "4f5cf54d-947f-494d-9460-11abe21d4974",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "093ee4a5-a890-4110-ac73-f0b48ebb2fa5",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "738c4f57-e763-47cc-9ef8-2b61445170fe",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "cbb8d9f9-2863-466c-ace3-32dcb68fe4c6",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "db016f1e-b65a-4114-9cfe-b04844bbc6b1",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "4b00b506-29c6-4f72-b9a7-b599394d0315",
+      "result_id": "cd57287c-eeeb-4631-9d4f-44c6b5116437"
+    },
+    {
+      "claim_id": "60a68507-b3b0-4b19-84c4-171afd686073",
+      "result_id": "5caa8f66-2a97-4f3c-9674-dc46e4bf6942"
+    },
+    {
+      "claim_id": "552d245c-0387-49d3-8333-70183128fcc4",
+      "result_id": "5caa8f66-2a97-4f3c-9674-dc46e4bf6942"
+    },
+    {
+      "claim_id": "e475b29b-0645-4a10-9647-f50317b89dbc",
+      "result_id": "5caa8f66-2a97-4f3c-9674-dc46e4bf6942"
+    },
+    {
+      "claim_id": "19b2a68c-1e55-49e6-9da5-37db0ce562f8",
+      "result_id": "95b750af-40f1-4411-b1d4-72d29fcda9ba"
+    },
+    {
+      "claim_id": "6c5d5d6d-60ad-47e6-a4f4-354ebad09de6",
+      "result_id": "95b750af-40f1-4411-b1d4-72d29fcda9ba"
+    },
+    {
+      "claim_id": "4f42a902-28de-4d97-b614-e2ab71880519",
+      "result_id": "95b750af-40f1-4411-b1d4-72d29fcda9ba"
+    },
+    {
+      "claim_id": "c6e64ae1-2851-475f-8378-9b71a0239959",
+      "result_id": "95b750af-40f1-4411-b1d4-72d29fcda9ba"
+    },
+    {
+      "claim_id": "d6865c50-de6f-488a-80a8-c378e5573dbf",
+      "result_id": "95b750af-40f1-4411-b1d4-72d29fcda9ba"
+    },
+    {
+      "claim_id": "4c246eea-7750-4102-8725-07e9b5787999",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "a6891c38-7ac7-4d1b-909c-39569b705e42",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "eb9410cc-906c-40be-8961-55851cd4d72a",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "e903cb5d-53e8-4718-91ee-b17f4e6e4de5",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "1b449153-28cb-488a-84df-f420a9e55fb5",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "9c1d2b3c-3765-4ad9-8de7-dab32de6ba0e",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "ba31275b-88e0-4cc0-9e9a-a901cd57780e",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "a19ce9fd-b0bb-4723-ba1b-7bbed32964cb",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "1640e3f1-6ae1-46a9-990a-04f5f31473f3",
+      "result_id": "8120df29-ec0b-41df-94b3-dad6aba23b2f"
+    },
+    {
+      "claim_id": "aa05b6ee-b01f-4283-a185-c3a8453d1898",
+      "result_id": "d3695c5f-77ee-4553-94e6-0b42f82b484a"
+    },
+    {
+      "claim_id": "3de2d4c7-e588-4916-9c2d-613559c213b0",
+      "result_id": "d3695c5f-77ee-4553-94e6-0b42f82b484a"
+    },
+    {
+      "claim_id": "c9ef915e-275b-44d8-98de-9830084a990a",
+      "result_id": "d3695c5f-77ee-4553-94e6-0b42f82b484a"
+    },
+    {
+      "claim_id": "a846f6ea-7db4-43d4-9499-3a5a307c62aa",
+      "result_id": "d3695c5f-77ee-4553-94e6-0b42f82b484a"
+    },
+    {
+      "claim_id": "04f7966d-a362-42ee-9477-49fa93a817ba",
+      "result_id": "d3695c5f-77ee-4553-94e6-0b42f82b484a"
+    },
+    {
+      "claim_id": "3f8d33db-e612-46fa-b828-dc005389b827",
+      "result_id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51"
+    },
+    {
+      "claim_id": "5f0b4397-f621-4187-a66c-98448672bd2d",
+      "result_id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51"
+    },
+    {
+      "claim_id": "228cb3ab-1d4f-460d-a619-16ba5fc5795c",
+      "result_id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51"
+    },
+    {
+      "claim_id": "9914e15a-ff46-481f-b9f5-70ea8348d1bf",
+      "result_id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51"
+    },
+    {
+      "claim_id": "e365652d-3c51-421f-9fa4-67cc2f2c3567",
+      "result_id": "04e83df6-fd0e-4bb1-9fe6-66d094306b51"
+    },
+    {
+      "claim_id": "78d5a98f-09c0-4464-9217-ebd1b949dd57",
+      "result_id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99"
+    },
+    {
+      "claim_id": "632abf4f-9e6f-486a-9603-2b4f19ccf614",
+      "result_id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99"
+    },
+    {
+      "claim_id": "76563b3c-3726-4028-81d6-948a9a30f871",
+      "result_id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99"
+    },
+    {
+      "claim_id": "0d5679dd-8306-4e71-a2a3-a1a752fad9de",
+      "result_id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99"
+    },
+    {
+      "claim_id": "d7fbb552-b02e-42bf-a830-a843cf384f00",
+      "result_id": "66b8c280-2a6a-468d-a2d3-981c9c9f6b99"
+    },
+    {
+      "claim_id": "f1747867-e74c-427c-b3f6-4d6cb87d2cc4",
+      "result_id": "4355fa70-d620-4fe6-8144-2be0b513f230"
+    },
+    {
+      "claim_id": "b3c43ecd-0400-4fa7-8716-0b9a7b8e5358",
+      "result_id": "4355fa70-d620-4fe6-8144-2be0b513f230"
+    },
+    {
+      "claim_id": "d6264328-7e8a-4f02-b278-6fa63ab1d294",
+      "result_id": "4355fa70-d620-4fe6-8144-2be0b513f230"
+    },
+    {
+      "claim_id": "7d27853b-707a-4291-8e26-3d2a00d8b661",
+      "result_id": "4355fa70-d620-4fe6-8144-2be0b513f230"
+    },
+    {
+      "claim_id": "b74ba666-4600-4e64-9e97-83d875149dd5",
+      "result_id": "2aebfb7e-73b4-4e33-9fd7-6712302b5108"
+    },
+    {
+      "claim_id": "2de1c5f7-7e75-497c-95c7-7fb146303ac9",
+      "result_id": "2aebfb7e-73b4-4e33-9fd7-6712302b5108"
+    },
+    {
+      "claim_id": "e212cd94-0cb0-48ee-afbb-c4ea27d4cd81",
+      "result_id": "2aebfb7e-73b4-4e33-9fd7-6712302b5108"
+    },
+    {
+      "claim_id": "eeb12119-b96f-4200-943a-c17af8b1f321",
+      "result_id": "778213fe-b4a5-4dba-bb0b-3752daeb6a9e"
+    },
+    {
+      "claim_id": "fcab9ba0-0dfb-4600-a0cf-546eaf0f2933",
+      "result_id": "778213fe-b4a5-4dba-bb0b-3752daeb6a9e"
+    },
+    {
+      "claim_id": "11cf771a-dbc2-4fff-9ec8-d9a64ecf5e3a",
+      "result_id": "778213fe-b4a5-4dba-bb0b-3752daeb6a9e"
+    },
+    {
+      "claim_id": "fb40aff8-584e-4303-86f2-888769a02fd1",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "c971b577-d7ea-4677-8d2c-98ec552de674",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "1eaf549a-b9ae-4480-bf7b-bc40eb2b48a1",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "e4a4e3a9-ef34-4bc7-98b0-6879ad74411e",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "f3a16660-f25f-4927-a400-56c47c332bdb",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "8548ea06-fd1b-4bcf-8fb1-12f66bc1a95a",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "1708ffc9-382d-4272-b9fd-aebc1d079c24",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "c5c810ca-1d9f-45f4-8c1a-b905f7dbb3ae",
+      "result_id": "feee8916-9042-4121-bab1-fd135a728b9b"
+    },
+    {
+      "claim_id": "5dc21491-1916-4c1c-85de-dea9f8065c29",
+      "result_id": "f18c8b9e-29a8-455e-8a22-4638173926dc"
+    },
+    {
+      "claim_id": "997e9c5d-9a6d-4092-9b06-dce353bcfdb9",
+      "result_id": "f18c8b9e-29a8-455e-8a22-4638173926dc"
+    },
+    {
+      "claim_id": "c7a09d92-655f-4936-813f-aff5d35ef2d2",
+      "result_id": "49378ad7-0b22-4e76-b63c-798f79ea2132"
+    },
+    {
+      "claim_id": "42f8b9da-7e8f-4ed0-ba58-a52b069fb705",
+      "result_id": "49378ad7-0b22-4e76-b63c-798f79ea2132"
+    },
+    {
+      "claim_id": "25177ab2-7af5-4b80-83b3-66eb6bb6ca5e",
+      "result_id": "49378ad7-0b22-4e76-b63c-798f79ea2132"
+    },
+    {
+      "claim_id": "71e5b8d3-68b9-433a-96dc-a4e574e8fe3a",
+      "result_id": "3ddfa678-97b4-4a95-abe3-af2e7f7adbd6"
+    },
+    {
+      "claim_id": "099628aa-62a1-477d-8fe9-576670c52d86",
+      "result_id": "3ddfa678-97b4-4a95-abe3-af2e7f7adbd6"
+    },
+    {
+      "claim_id": "2aa062e4-d882-472d-b945-9e2c7423607d",
+      "result_id": "3ddfa678-97b4-4a95-abe3-af2e7f7adbd6"
+    },
+    {
+      "claim_id": "9833a17c-eb7a-4344-970e-3cf3f395c8ad",
+      "result_id": "e429ef10-fad2-4e85-8a60-8b02bb6b984f"
+    },
+    {
+      "claim_id": "87e2ca33-290e-4425-9b6c-cf2200d619f4",
+      "result_id": "e429ef10-fad2-4e85-8a60-8b02bb6b984f"
+    }
+  ],
+  "comparisons": []
+}

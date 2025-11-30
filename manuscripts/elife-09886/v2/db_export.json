@@ -1,0 +1,2287 @@
+{
+  "submission": {
+    "id": "670e934c-cfcb-473e-8885-61e789281ae6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:27:26.956239Z",
+    "updated_at": "2025-11-29T21:27:26.956239Z"
+  },
+  "content": [
+    {
+      "id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "submission_id": "670e934c-cfcb-473e-8885-61e789281ae6",
+      "content_type": "manuscript",
+      "content_text": "# Protein kinase C coordinates histone H3 phosphorylation and acetylation\n\n## Authors\n\n- Zoulfia Darieva<sup>1</sup>\n- Aaron Webber<sup>1</sup>\n- Stacey Warwood<sup>1</sup>\n- Andrew D Sharrocks<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Faculty of Life Sciences University of Manchester Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe re-assembly of chromatin following DNA replication is a critical event in the maintenance of genome integrity. Histone H3 acetylation at K56 and phosphorylation at T45 are two important chromatin modifications that accompany chromatin assembly. Here we have identified the protein kinase Pkc1 as a key regulator that coordinates the deposition of these modifications in S. cerevisiae under conditions of replicative stress. Pkc1 phosphorylates the histone acetyl transferase Rtt109 and promotes its ability to acetylate H3K56. Our data also reveal novel cross-talk between two different histone modifications as Pkc1 also enhances H3T45 phosphorylation and this modification is required for H3K56 acetylation. Our data therefore uncover an important role for Pkc1 in coordinating the deposition of two different histone modifications that are important for chromatin assembly.\n\n## Introduction\n\nDuring the cell cycle one of the key processes following DNA replication is the re-assembly of chromatin on the newly replicated DNA. This involves the re-deposition of both pre-existing and newly synthesised histones into intact nucleosomes (reviewed in Groth et al., 2007; Ransom et al., 2010; Gurard-Levin et al., 2014). This process must be tightly controlled and in S. cerevisiae one key event is the Rtt109-mediated modification of histone H3 by acetylation of lysine 56 (H3K56) (Han et al., 2007; Driscoll et al., 2007). Rtt109 cooperates with two different histone chaperones Asf1 and Vps75 (Tsubota et al., 2007; Driscoll et al., 2007) and although it is generally accepted that Asf1 is the major chaperone involved in promoting H3K56 acetylation (Keck et al., 2011; Tang et al., 2011), recent evidence suggests a role for Vps75 in this process (Radovani et al., 2013). However, the signalling pathways controlling Rtt109-mediated H3K56 acetylation are unknown. Another important modification that occurs coincidentally with DNA replication is H3 phosphorylation at threonine T45 (H3T45) but current evidence suggests that this modification has no relationship with the closely located H3K56 acetylation event (Baker et al., 2010). In the context of an unperturbed cell cycle, Cdc7-Dbf4 has been shown to be a major kinase involved in controlling H3T45 phosphorylation levels (Baker et al., 2010).\n\nS. cerevisiae possesses one protein kinase C isoform, Pkc1, and it is known to play a major role in cell wall integrity signalling (reviewed in Levin, 2005). Pkc1 has a growing number of nuclear functions and through genetic experiments this protein kinase has previously been implicated in cell cycle events (reviewed in Levin, 2005). Part of this role can be attributed to its connection to pathways sensing cell wall integrity and its effects on the activity of the downstream MAP kinase pathway. However MAP kinase-independent roles for Pkc1 have emerged and Pkc1 was recently shown to directly affect the cell cycle by inhibiting the activity of the transcriptional coactivator protein Ndd1 (Darieva et al., 2012). This finding suggested that Pkc1p might act as a checkpoint kinase under conditions of replicative stress where progression to G2 phase is inhibited. However, mutant strains containing ndd1 mutant alleles lacking the Pkc1 phosphorylation sites did not fully re-capitulate the pkc1 mutant phenotypes, indicating that additional defects are associated with loss of Pkc1 activity. Indeed, pkc1 mutants are sensitive to hydroxurea (HU) treatment (Queralt and Igual, 2005), suggesting a potential role for Pkc1 in controlling the response to replicative stress. It is unclear how Pkc1 might affect replicative stress but previous genetic studies have linked PKC1 and components of the RSC chromatin remodelling complex and Pkc1 overexpression can suppress the defects associated with RSC mutants (Chai et al., 2005; Hosotani et al., 2001; reviewed in Levin et al., 2005). This is suggestive of a potential role for Pkc1 in regulating chromatin assembly during DNA replication.\n\nHere, we have investigated the potential role of Pkc1 in controlling chromatin modifications during replicative stress and found that it coordinates the deposition of two histone marks on histone H3, T45 phosphorylation and K56 acetylation. Mechanistically, Pkc1 controls H3K56 acetylation through phosphorylation-dependent activation of Rtt109. Moreover, Pkc1 also promotes H3T45 phosphorylation and this modification is important for the coordinated deposition of H3K56 acetylation.\n\n## Results\n\n### Pkc1 is required for cell viability and chromatin integrity under replicative stress conditions\n\nTo examine whether Pkc1 has a role in protecting cells from replicative stress we first determined cell sensitivity to hydroxyurea (HU) in the presence and absence of active Pkc1. To do this we made use of strains containing temperature sensitive pkc1 alleles which could be inactivated by incubating yeast cells at 34\u00baC, thereby negating the confounding effects of heat shock stress response obtained using the traditionally used pkc1ts\u00a0allele (Anastasia et al., 2012). In comparison to cells containing wild-type PKC1 (DK186), temperature sensitive pkc1-14 (DK1690) cells, grown at 34\u00baC to inactivate Pkc1 were inviable (Figure 1A, top panel) consistent with previous studies using a pkc1\u0394 deletion strain (Queralt and Igual, 2005). Loss of PKC1 function results in cell lysis in the absence of osmotic support. The presence of sorbitol saved the pkc1-14 mutant phenotype (Figure 1A, middle panel) but HU sensitivity was observed under these conditions (Figure 1A, bottom panel). This suggested a role for Pkc1 other than signalling through the well studied downstream MAP kinase cascade which includes the kinase Bck1 (Lee et al., 1993). Indeed bck1\u0394 (Y01328) cells were not sensitive to HU, further emphasising a new alternative mechanism of action for Pkc1 under replicative stress conditions (Figure 1A). To determine whether the kinase activity of Pkc1 is needed to protect cells from replicative stress, we attempted to rescue pkc1-14 cells by re-expressing a catalytically dead (KD) version of Pkc1 in the presence of HU. However, while wild-type (WT) Pkc1 was able to rescue the growth defect of pkc1-14 cells, the catalytically dead version was unable to do so (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig1-v2.jpg)\n\n**Figure 1.:** (A and B) Cell growth assays. (A) 10 fold serial dilutions of wild-type (WT) (DK186), pkc1-14 (DK1690) or bck1\u0394 (Y01328) cells were plated onto YPD media in the presence or absence of 1M sorbitol or (B) pkc1-14 (DK1690) cells containing empty vector or plasmids expressing WT or kinase dead (KD) Pkc1, were plated onto SD media in the presence 1M sorbitol. Cells were grown at 34\u00baC and where indicated, 100 mM HU was added to the media.\n\nTogether, these experiments demonstrate that Pkc1 kinase activity is required for protecting cells from replicative stress.\n\n### Pkc1 is required for H3K56 acetylation\n\nDuring S phase, acetylation of histone H3 at lysine 56 (H3K56) is an important modification in ensuring the correct assembly of newly synthesised nucleosomes and their incorporation into chromatin (Li et al., 2008; Masumoto et al., 2005). We therefore examined whether Pkc1 is required for H3K56 acetylation under replicative stress conditions. Upon release from a HU block, wild-type cells showed accumulation of acetylated H3K56 (Figure 2A, lanes 1\u20136). In contrast, temperature sensitive pkc1-21 cells (DK1697) showed much reduced levels of H3K56 acetylation when grown at 34\u00baC (Figure 2A, lanes 7\u201312) even though they had progressed through S phase and arrested at G2 (Figure 2\u2014figure supplement 1A). Importantly, this effect was not limited to strains harbouring the pkc1-21 allele but was also observed in a different temperature sensitive strain, harbouring the pkc1-14 allele either upon release from a HU block (Figure 2B and Figure 2\u2014figure supplement 1B) or upon entry into S phase upon release from an \u03b1 factor block (Figure 2\u2014figure supplement 2). H3K56 acetylation is deposited by Rtt109, and this enzyme also acetylates histone H3 at lysine 9 (H3K9) (Driscoll et al., 2007; Han et al., 2007; Tsubota et al., 2007). Interestingly, in addition to H3K56 acetylation defects, pkc1-14 cells showed much reduced levels of H3K9 acetylation (Figure 2B, middle panel) which suggests a defect in Rtt109 activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig2-v2.jpg)\n\n**Figure 2.:** (A-C) Western blot analysis of the H3K56 acetylation levels in (A) WT (DK186) or pkc1-21 (DK1697) or (B) WT (DK186) or pkc1-14 (DK1690) strains grown in YPD in the presence 1M sorbitol at 34\u00baC, treated with 200 mM HU for 2.5 hrs and released into YPD with sorbitol for the indicated times. (C) WT (DK186) cells grown in the presence or absence of cercosporamide at 30\u00baC in YPD, exposed to 200 mM HU for 2.5 hrs and released from a HU block for the indicated times. H3K9 acetylation levels are also shown in (B) and Histone H3 and tubulin (Tub1) are shown as loading controls.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells from strains containing wild-type (WT) PKC1 (DK186) and the temperature sensitive pkc1-21 (DK1697) and pkc1-14 (DK1690) mutants were grown to early log phase at 30\u00baC in YPD supplemented with 1 M sorbitol, blocked with 200 mM HU for 2.5 hrs at 34\u00baC, washed and released into a fresh YPD media containing sorbitol at 34\u00baC. Aliquots were taken at the indicated times, analysed for propidium iodine staining by FACS, and the DNA content histograms were determined for at least 30,000 cells. The location of peaks corresponding to haploid (1n) and diploid (2n) DNA content are indicated.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Western blot analysis of the H3K56 acetylation levels in WT (DK186) or pkc1-14 (DK1690) strains. Cells were released alpha factor block for the indicated times. Histone H3 and tubulin (Tub1) are shown as loading controls. All experiments were performed at 34\u00baC in YPD plus sorbitol.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Western blot analysis of the H3K56 acetylation levels in WT (DK186)(top) or pkc1-14 (DK1690)(bottom) strains. Cells were grown in the presence or absence of cercosporamide at 34\u00baC in YPD plus 1M sorbitol and were released from a 200 mM HU block for the indicated times. Histone H3 and tubulin (Tub1) are shown as loading controls. (B) Quantification of the H3K56ac levels in (A) normalised for tubulin and total H3 levels and shown relative to the WT cells prior to release from HU block (taken as \u201c1\u201d; indicated by dashed line).\n\nTo further explore the role of Pkc1 in promoting H3K56 acetylation, we treated wild-type cells with the Pkc1 inhibitor cercosporamide (Sussman et al., 2004) and examined H3K56 acetylation following release from a HU block. Pharmacological inhibition of Pkc1 activity reduced H3K56 acetylation but importantly did not affect another histone H3 acetylation event at lysine 18 (H3K18) (Figure 2C), demonstrating the specificity of action of Pkc1. We also examined whether combinatorial genetic inactivation and pharmacological inhibition of Pkc1 has additive effects but none were observed, indicating that the effect of cercosporamide was through Pkc1 (Figure 2\u2014figure supplement 3). We note however that the loss of Pkc1 in the temperature sensitive strains resulted in stronger reductions in H3K56ac levels than following cercosporamide treatment, most likely due to incomplete Pkc1 inhibition in the latter case.\n\nTogether these results demonstrate an important role for Pkc1 in promoting H3K56 acetylation under replicative stress conditions.\n\n### Pkc1 mediates Rtt109 phosphorylation\n\nThe reduced levels of H3K9 and H3K56 acetylation observed upon disruption of Pkc1 activity suggested that the acetyltransferase Rtt109 which deposits these modifications might be targeted by Pkc1. One mechanism might be through Pkc1-mediated control of Rtt109 phosphorylation. Inspection of Rtt109 sequence revealed a potential phosphorylation site at threonine 46 (T46) which partially matches the PKC consensus sequence (Figure 3A). To establish whether Rtt109 can be phosphorylated by Pkc1 at this site, we raised a phospho-specific antibody which specifically recognised a phosphorylated peptide surrounding T46 (Figure 3\u2014figure supplement 1A). In vitro kinase assays revealed that Pkc1 was able to phosphorylate Rtt109 in the context of a purified recombinant Rtt109-Vps75 heterodimer (Figure 3B). This phosphorylation was reduced to background levels following treatment with lambda phosphatase (Figure 3B, lane 3). Immunoprecipitation assays demonstrated that Pkc1 and Rtt109 could interact in vitro (Figure 3\u2014figure supplement 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig3-v2.jpg)\n\n**Figure 3.:** (A) Location and local sequence contexts of the potential Pkc1p target site in Rtt109 (numbers indicate amino acid positions in the protein). (B) In vitro kinase assay using HA epitope-tagged Pkc1p immunoprecipitated from DZ2 cells and purified recombinant Rtt109-Vps75 protein complex. A HA IP from wild-type yeast cells was used as a control. Where indicated, \u03bb phosphatase was added. Rtt109, HA-Pkc1 and phosphorylated Rtt109 T46 (phospho-Rtt109) were detected by immunoblotting (IB). (C and D) Rtt109 T46 phosphorylation in vivo. DZ5 cells were grown in SD media at 30\u00baC, treated with 200 mM HU for the indicated times and either (C) released from the HU block for the indicated times or (D) treated with or without cercosporamide. Rtt109 and phosphorylated Rtt109 T46 were detected by IB. Quantification of Rtt109 phosphorylation from (C) relative to total Rtt109 levels is shown on the right.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A phospho-specific antibody specifically recognises a phosphorylated peptide surrounding T46. A modified (phosphorylation at T46; phospho-Rtt109) DDKRVPKST(P)IKTC or non-modified peptide (Rtt109) DDKRVPKSTIKTC were dotted in increasing concentrations (2, 5, 10 \u00b5g) onto Hybond-C nitrocellulose membranes and immunoblotting was carried out with 1:1000 dilutions of antibodies to the phosphorylated or non-phosphorylated form of Rtt109. (B) Pkc1 interacts with Rtt109 in vitro. Immunoprecipitation assay of in vitro translated Rtt109 with anti-HA antibody bound to HA-tagged Pkc1 immunoprecipitated from DZ2 strain or with an anti-HA antibody mock immunoprecipitate from a wild-type strain lacking HA-tagged Pkc1 as a negative control.\n\nRtt109 phosphorylation at T46 could also be identified in vivo following HU treatment (Figure 3C, lanes 1\u20134). This phosphorylation was subsequently lost upon release from HU arrest (Figure 3C, lanes 5\u20136). Importantly, treatment of cells with cercosporamide prior to HU addition blocked the appearance of Rtt109 phosphorylation at T46 (Figure 3D), demonstrating a role for Pkc1 in promoting Rtt109 phosphorylation under replicative stress conditions.\n\nThese data therefore indicate that in cells undergoing replicative stress, Rtt109 is phosphorylated in a Pkc1-dependent manner, most likely through direct phosphorylation by Pkc1.\n\n### Phosphorylation of Rtt109 is important for H3K56 acetylation\n\nTo establish whether phosphorylation of Rtt109 at T46 has any functional relevance, we attempted to rescue rtt109\u0394 cells lacking Rtt109 protein expression with plasmids encoding mutant proteins which had either lost the ability to be phosphorylated (T46A) or carried a phosphomimetic residue in place of T45 (T46D). In the presence of HU, rtt109\u0394 cells grew poorly (Figure 4A). This growth defect could be rescued by re-expressing wild-type Rtt109 but this rescue was lost with the non-phosphorylatable Rtt109(T46A) mutant. In contrast, Rtt109(T46D) was able to suppress the growth defect (Figure 4A) indicating that the insertion of a phosphomimetic residue at the Pkc1 phosphorylation site reinstated the activity of Rtt109. To understand the molecular basis to this rescue, we again examined H3K56 acetylation. As expected, this was severely depleted in rtt109\u0394 cells but restored upon re-expression of wild-type Rtt109 (Figure 4B, left panels). Rtt109(T46A) only partially re-constituted H3K56 acetylation levels and the kinetics were delayed whereas Rtt109(T46D) promoted rapid and high levels of H3K56 acetylation (Figure 4B, left panels). These results are fully consistent with a role for Pkc1-mediated phosphorylation of Rtt109 being required for its ability to promote H3K56 acetylation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cell growth assays. 10 fold serial dilutions of rtt109\u0394 (Y01490) cells containing plasmids expressing WT or the indicated Rtt109 mutants, were plated onto SD media in the presence or absence of 100 mM HU. (B) Western blot analysis of the H3K56 acetylation (ac) levels in rtt109\u0394 cells containing empty vector (DZ8) or plasmids expressing WT or the indicated Rtt109 mutants (DZ5-7) grown in SD media at 30\u00baC and released from a 200 mM HU block for the indicated times. Total Rtt109 and Histone H3 levels are also shown. (C) Western blot analysis of Rtt109 levels in (WT) (DK186) or pkc1-14 (DK1690) cells containing empty vector (con) or a plasmid containing Myc-tagged Rtt109, grown in SD media in the presence of 1 M sorbitol at 34\u00baC and released from a 200 mM HU block for the indicated times.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** RT-PCR analysis of RTT109 and HTT2 (control) expression in wild-type (WT)(DK186) (grey lines) or pkc1-14 (DK1690) (black lines) cells released from 200 mM HU block for the indicated times in YPD plus sorbitol at 34\u00baC. Data are shown relative to 18S rRNA levels.\n\nInterestingly, we found that while wild-type Rtt109 and Rtt109(T46D) were inducibly expressed to high levels upon release from HU arrest, Rtt109(T46A) expression was delayed and reached a lower level (Figure 4B, right hand panels). This suggested that Pkc1-mediated phosphorylation might be important for stabilising Rtt109. Indeed, we found that Rtt109 protein was expressed to lower levels in pkc1-14 cells (Figure 4C). This was not due to a transcriptional defect as RTT109 mRNA levels were elevated in pkc1-14 cells (Figure 4\u2014figure supplement 1), suggesting that these cells are attempting to compensate for the loss in Rtt109 protein. This lower level of Rtt109 likely contributes to the decreased levels of H3K56 acetylation we observed. Together, these results indicated that Pkc1-mediated Rtt109 phosphorylation is required for maintaining Rtt109 protein levels and H3K56 acetylation levels as cells recover from HU-mediated replicative stress.\n\nOne prediction from these results is that any chromatin changes should manifest themselves in similar gene expression profiles when pkc1-14 cells or cells expressing Rtt109(T46A) are compared. Indeed, in cells released from HU block, a highly significant overlap was observed for pkc1-14 cells or cells expressing Rtt109(T46A) in genes either downregulated or upregulated compared to wild-type cells (Figure 5A and B). Importantly no such significant overlaps were observed when we considered genes that were regulated in opposite directions in the two mutant strains (Figure 5B). Furthermore, when we considered the biological processes that were affected, there was a strong overlap in gene ontology (GO) terms, with over-representation of GO terms associated with processes such as 'cell wall' and 'nucleolus' strongly associated with both mutant strains and reciprocal effects seen with 'telomere maintenance' and 'DNA helicase activity' (Figure 5C and D). These data therefore further support a strong association between Pkc1 activity, phosphorylation of Rtt109 at T46 and subsequent downstream effects on chromatin structure and gene expression. One prediction of these results is that the phosphomimetic version of Rtt109 might be able to bypass the defects seen in pkc1-14 cells. However, no rescue of the growth defects of pkc1-14 cells in the presence of HU was observed (Figure 5\u2014figure supplement 1). Therefore a working model suggested a direct role for Pkc1 in controlling H3K56 acetylation through Rtt109 phosphorylation but also that additional activities were controlled by Pkc1 (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig5-v2.jpg)\n\n**Figure 5.:** (A) Venn diagrams showing the overlap of significantly upregulated (top) or downregulated (bottom) genes in pkc1-14 (DK1690) or rtt109(T46A) (DZ6) cells released from a 200 mM HU block. The experiment was performed by growing all strains in SD media supplemented with 1M sorbitol at 34\u00baC. (B) Prevalence of gene expression changes showing the indicated directionality of change (shown as a percentage of genes changed in the rtt109(T46A) mutant strain). Hypergeometric P-values are shown (NS = non-significant). (C) Boxplots (left) and heatmaps (right) showing the rank orders of significantly changing GO terms associated with genes whose expression is consistently changed in the pkc1-14 (DK1690) (left) or rtt109(T46A) (DZ6) (right) cells. The GO terms are ranked according to changes in the rtt109(T46A) (DZ6) mutant. In the heat maps, the columns indicate the P-value ranking of GO terms associated with genes that consistently increase (left) or decrease (right) their expression in the respective mutant strain. (D) Heat map showing the relative expression of the genes contained in the 'Nucleolus' and 'DNA helicase' categories across all conditions analysed. DK186 and DZ5 are the WT equivalent strains for the pkc1-14 (DK1690) and rtt109(T46A) (DZ6) mutant strains. Brackets indicate genes that are consistently up- or down-regulated in both mutant strains upon release from a HU block. (E) Model for Pkc1 function through phosphorylating Rtt109 and promoting its ability to acetylate (Ac) histone H3 K56. Question mark indicates additional activities of Pkc1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** 10-fold serial dilutions of wild-type (WT; DK186), pkc1-14 (DK1690) containing empty vector pCM188 or pAS4106 (expressing Rtt109[T46D]) were spotted onto SD plates in the presence of sorbitol with or without 100 mM HU and incubated at 34\u00b0C for 3 days.\n\n### Pkc1 mediates histone H3 T45 phosphorylation\n\nPrevious results in mammalian cells had shown that PKC\u03b4 phosphorylates histone H3 at threonine 45 (H3T45) (Hurd et al., 2009). As this residue is conserved in S. cerevisiae (Figure 6A), and is located in the vicinity of K56, it is possible that Pkc1-mediated phosphorylation of T45 might influence acetylation events at K56. We therefore examined whether Pkc1 could phosphorylate H3T45 in vitro by using purified histone H3 and immunoprecipitated Pkc1p. Efficient H3 phosphorylation was observed (Figure 6B) and phosphorylation at T45 was confirmed as the only major phosphorylation site by mass spectrometry (Figure 6C). Next we examined H3T45 phosphorylation and its dependence on Pkc1 in vivo. As cells were released from a HU-mediated block, H3T45 became strongly phosphorylated in wild-type cells (Figure 6D). However, no such rises in H3T45 phosphorylation were observed upon ablation of Pkc1 activity in pkc1-14 cells (Figure 6D, lanes 7\u201312).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig6-v2.jpg)\n\n**Figure 6.:** (A) Location and local sequence contexts of the Pkc1p target site in histone H3 (numbers indicate amino acid positions in the protein and human H3 is shown below). (B) In vitro kinase assay using HA epitope-tagged Pkc1p immunoprecipitated from DZ2 cells and recombinant histone H3 or GST as substrates. Protein phosphorylation was visualised by phosphorimaging (right panel) and total input proteins by Coomassie blue staining (left panel). (C) Product ion spectra for the doubly-charged precursor ion [556.78]2+. The spectra is fully annotated, and includes both b- and y-ions that support phosphorylation (p) at the residue indicated, Thr45. (D) Histone H3 T45 phosphorylation in vivo. WT (DK186) or pkc1-14 (DK1690) cells were grown in SD media in the presence of 1M sorbitol at 34\u00baC and were treated with 200 mM HU and released from the HU block for the indicated times. Histone H3 and phosphorylated H3 T45 (H3T45-P) were detected by IB.\n\nThe results therefore indicate that Pkc1 mediates histone H3 phosphorylation under conditions of replicative stress.\n\n### Pkc1-mediated histone H3 T45 phosphorylation promotes H3 K56 acetylation\n\nGiven the relatively close proximity of T45 to K56 in the histone H3 tail and the link of modifications of both of these residues to Pkc1 activity, we next asked whether there is a connection between H3T45 phosphorylation and H3K56 acetylation. Importantly, H3K56 acetylation was greatly reduced in cells containing the H3(T45A) allele upon release from a HU block (Figure 7A, lanes 3 and 4; Figure 7B). In contrast only a small change in H3K56 acetylation was observed upon release from an alpha factor block under normal growth conditions (Figure 7A, lanes 1 and 2). However, if cells were released from an alpha factor-mediated G1 arrest into HU, and the HU subsequently removed, H3K56 acetylation again accumulated following HU removal in wild-type cells. This accumulation of H3K56 acetylation did not occur in cells harbouring the H3(T45A) mutant allele (Figure 7\u2014figure supplement 1). These results suggested functional coupling between H3T45 phosphorylation and H3K56 acetylation. To further probe this phenomenon, we asked whether the Rtt109(T46D) mutant could bypass the defects seen in cells containing the H3(T45A) mutant allele. However, only low levels of H3K56 acetylation were observed in the presence of Rtt109(T46D) (Figure 7C), demonstrating that this protein was unable to suppress the defects from H3(T45A) thereby indicating a crucial role for H3T45 phosphorylation in promoting H3K56 acetylation. Indeed, the Rtt109(T46D) mutant couldn\u2019t bypass the growth defects of H3(T45A) cells in HU (Figure 7D). We also tested whether Rtt109(D) could bypass the HU-mediated growth defects of H3(K56R) cells but again this mutant was unable to rescue the growth defect (Figure 7\u2014figure supplement 2). This further emphasises the importance of Rtt109-mediated H3K56 acetylation in protecting against the deleterious effects of HU treatment, even when H3T45 was available for phosphorylation. These results lead to a model whereby Pkc1 signals through promoting phosphorylation of both Rtt109 and histone H3 to promote H3K56 acetylation. One prediction from this model is that downstream gene expression defects should be at least partially shared by pkc1-14, H3(T45A) and Rtt109(T46A) mutant strains. Indeed pairwise comparisons of the gene expression changes observed between these strains following release from a HU block, showed highly significant overlaps in genes being upregulated in all cases (Figure 7E; Figure 5B). Importantly though, of the 51 genes showing significant upregulation in the pkc1 and Rtt109(T46A) mutant strains, 41 (80%) were also upregulated in the H3(T45A) mutant strain (Figure 7E). Moreover, consistent co-regulation of genes in the 'DNA helicase' GO term category could be observed across all mutant strains (Figure 7F). These mutants therefore exhibit common defects in gene expression. This finding provides further supporting evidence that adds to the mechanistic links we have uncovered between Pkc1, Rtt109, H3T45 phosphorylation and H3K56 acetylation, and strengthens our major discovery that Pkc1 coordinates histone H3 modifications during the replicative stress response.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig7-v2.jpg)\n\n**Figure 7.:** (A and B) Western blot analysis of K56 acetylation (H3K56Ac) and total H3 levels in (MSY748) cells containing plasmids expressing H3(WT) or the H3(T45A) mutant following release from an alpha factor or HU block for the indicated times. Cells were grown in SD media at 30\u00baC and treated with either alpha factor for 3 hrs or 200 mM HU for 2.5 hrs prior to release. Tubulin (Tub1) levels are shown as a loading control. Logarithmically growing (FXY19) cells containing a plasmid expressing the H3(K56R) mutant are shown as a control in (A). (C) Western blot analysis of T45 phosphorylation (H3T45-P), K56 acetylation (H3K56Ac), K18 (H3K18Ac) and total H3 levels in cells containing plasmids expressing H3(WT) (MSY748) or the H3(T45A) (H3-T45A) mutant following release from a HU block for the indicated times. Where indicated cells also expressed Rtt109(T46D). (D) Cell growth assays. 10 fold serial dilutions of cells containing plasmids expressing H3(WT) (MSY748) or the H3(T45A) (H3-T45A) plus either Rtt109(WT) or Rtt109(T46D), were plated onto SD media in the presence (bottom panel) or absence (top panel) of 100 mM HU. (E) Frequency of gene expression changes upregulated in the H3(T45A) mutant strain that are also upregulated in either the rtt109(T46A) or the pkc1-14 cells or in both of these mutant strains. Hypergeometric P-values are shown (NS = non-significant). (F) Heat map showing the relative expression of the genes contained in the 'DNA helicase' category across all conditions analysed. DK186, DZ5 and MSY748 are the WT equivalent strains for the pkc1-14 (DK1690), rtt109(T46A) (DZ6) and H3(T46A) mutant strains respectively. The experiment was performed by growing all strains in SD media supplemented with 1M sorbitol at 34\u00baC. Brackets indicate genes that are generally down-regulated in all of the mutant strains upon release from a HU block. (G) Model for Pkc1 function through phosphorylating Rtt109 and promoting its ability to acetylate (Ac) histone H3 K56 and acting through mediating H3 T45 phosphorylation which in turn enhances K56 acetylation.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Western blot analysis of H3K56 and H3K18 acetylation levels in MSY748 cells expressing wild-type H3(WT) or mutant H3(T45A). Cells were synchronised in G1 with a-factor and released into YPD media containing 200 mM HU for 90 min. Cells were then washed and released into fresh YPD media lacking HU for the indicated times and analysed by western blotting. Histone H3 and tubulin (Tub1) are shown as loading controls.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09886/elife-09886-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** 10 fold serial dilutions of cells containing plasmids expressing H3(WT) (MSY748), H3(T45A) (H3-T45A) or H3(T45A) plus Rtt109(T46D) (top three rows), H3(WT) (RMY200), H3(K56R) (FXY19) or H3(K56R) plus Rtt109(T46D) (top three rows), were plated onto SD media containing 1 M sorbitol in the presence (bottom panel) or absence (top panel) of 100 mM HU.\n\n## Discussion\n\nNewly synthesised DNA must be efficiently packaged into chromatin to ensure that genome stability is maintained (reviewed in Groth et al., 2007; Ransom et al., 2010; Gurard-Levin et al., 2014). This must be achieved during both an unperturbed cell cycle and under conditions of replicative stress where the cell cycle must pause to ensure DNA repair occurs before recommencing the cycle. Histone H3 T45 phosphorylation and K56 acetylation are two important modifications that occur during S phase and are required for chromatin reassembly (Masumoto et al., 2005; Hyland et al., 2005; Ozdemir et al., 2005; Li et al., 2008; Baker et al., 2010). Here we show that in S. cerevisiae Pkc1 coordinates the deposition of these two marks under conditions of replicative stress. Previous results had implicated the Cdc7/Dbf4 kinase complex in directly controlling H3T45 phosphorylation during S phase of and unperturbed cell cycle but this kinase did not affect H3K56 acetylation (Baker et al., 2010). However, a role under replicative stress conditions was not investigated and residual levels of H3T45 phosphorylation were observed in the cdc7\u0394 cells, indicating the existence of another H3T45 kinase. Indeed, Cdc7/Dbf4 activity has been shown to be downregulated under conditions of replicative stress, suggesting the involvement of a different histone H3 kinase under these conditions (Weinreich and Stillman, 1999). Here we focussed on histone H3 modification control under replicative stress conditions and in combination with previous results (Baker et al., 2010) our data indicate that at least two different kinases are involved in controlling H3T45 phosphorylation, with Cdc7/Dbf4 operating during an unperturbed cell cycle and Pkc1 operating under replicative stress conditions where it also coordinates H3K56 acetylation.\n\nIn cells subjected to replicative stress it is important to delay chromatin re-assembly until the DNA damage has been resolved, and one way to do this, would be to delay H3 modifications. It is not clear how this delay is achieved but Pkc1 promotes the re-activation of H3 modifications upon removal of replicative stress. Mechanistically, Pkc1 controls H3K56 acetylation through phosphorylating the Rtt109 acetyltransferase. This modification stabilises Rtt109 and thus safeguards its availability for modifying histone H3 following removal of replicative stress and re-entry into the cell cycle. It is possible that Pkc1 might also directly target other elements of the chromatin modification machinery to coordinate efficient chromatin assembly such as occurs with Cdc7-Dbf4 which can also target CAF-1 (chromatin assembly factor 1) (Gerard et al., 2006) as well as H3T45.\n\nUnder replicative stress conditions, H3T45 phosphorylation appears to be critically important for coupled H3K56 acetylation, and this phosphorylation event is promoted by Pkc1-mediated H3T45 phosphorylation. This is likely direct as histone H3 is efficiently phosphorylated at this site in vitro. This leads to a model (Figure 7G) whereby Pkc1 promotes the coordinate modification of these two chromatin modifications and H3T45 phosphorylation is functionally coupled to H3K56 acetylation. It is not clear how this coupling is mediated but one possibility is that H3T45 phosphorylation blocks histone binding to DNA, thus allowing H3K56 to be exposed and hence accessible for acetylation by Rtt109. More complex scenarios are of course possible such as phosphorylated H3T45 acting as binding platform for recruiting a histone mark reader which then coordinates H3K56 acetylation. Indeed, further complexities in the regulatory links between histone H3 modifications and Pkc1-mediated signalling are suggested by the observation that Pkc1 levels appear to be reduced in H3(T45A) mutant strains (data not shown). Future studies will be required to distinguish between and dissect out the underlying molecular mechanisms. One outcome of perturbed Pkc1 activity and its downstream molecular events following HU treatment is likely to be defective chromatin assembly and preliminary evidence suggest that this might be the case (data not shown). Our data show a consistent sensitivity of pkc1, rtt109(T46A) and H3(T45A) mutants to HU treatment which complements previous data showing that H3(K56A) alleles are also sensitive to HU (Matsubara et al., 2007) and supports a role in replicative stress. However, the response to other stress inducing conditions such as MMS and 6-AU treatment is less clear. For example, the H3(T45A) strain is sensitive to both MMS and 6-AU whereas the rtt109(T46A) strain is only sensitive to MMS (data not shown). Thus different elements of the regulatory network we have uncovered may be used to respond to different stress inducers.\n\nAnother open question is how Pkc1 is specifically targeted/activated during replicative stress but one potential regulator would the cell cycle-dependent changes of the cell wall and signalling through the cell wall integrity pathway. Alternatively, other upstream pathways might be involved, and one potential link might be through TOR signalling as TORC2 has been shown to phosphorylate and activate Pkc1 (Nomura and Inoue, 2015) and TOR signalling has also been linked to H3K56 acetylation (Chen et al., 2012). Whether such a route operates during replicative stress or is employed under different conditions is not clear but re-emphasises the potential widespread importance of connections between Pkc1 and histone H3 modifications we have identified.\n\nOur work may be directly relevant to mammalian systems where PKC\u03b4 has been shown to phosphorylate H3T45 under apoptotic conditions (Hurd et al., 2009), although others have identified AKT as an additional H3T45 kinase under DNA damage conditions (Lee et al., 2015). It is not clear whether PKC is linked to H3K56 acetylation in mammals but this modification is induced by replicative stress and its deposition is mediated by p300/CBP, the functional homologue of Rtt109 (Das et al., 2009; Vempati et al., 2010). Indeed, atypical protein kinase C zeta has been shown to phosphorylate and control the histone acetylation output of CBP in the context of neuronal differentiation (Wang et al., 2010). Given these links between PKC and CBP/p300 it appears likely that our findings will be directly relevant to human cancer where oncogene-driven replicative stress is an important contributory event (Bartek et al., 2007) and therefore warrants further investigation.\n\n## Materials and methods\n\n### Plasmid construction and mutagenesis\n\nFor bacterial expression: pET28a+His-Rtt109 and pET3a-Tr-Vps75-Flag was kindly provided by Paul Kaufman (Tsubota et al., 2007).\n\nFor yeast expression; pVD67 (pAS1995; encoding wild-type GFP-Pkc1), pVD61(empty vector) and pVD124 (kinase-dead GFP-Pkc1) were kindly provided by Martha Cyert (Denis and Cyert, 2005). pAS4104 encoding Myc-Rtt109, pAS4105 (myc-Rtt109T46A) and pAS4106 (myc-Rtt109T46D) were made by inserting BamHI-cleaved PCR product generated using the templates pAS4101-4103 and primer pair ADS4723/4724 into pCM188. pAS4101 was generated by amplifying the cDNA sequence of the RTT109 gene encoding full-length protein from yeast genomic DNA and cloning into pGBKT7 using EcoRI/SalI restriction sites. pAS4102 (encoding Rtt109[T45A]) and pAS4103 (encoding Rtt109[T45D]) were created by QuikChange mutagenesis (Stratagene) using the primer pairs ADS4727/ADS4728, ADS4729/4730 and pAS4101 as a template. pGal1Vps75-flag was kindly provided by Tom Owen-Hughes.\n\n### Protein production, pulldown assay and western blotting\n\nHis-tagged fusion proteins were prepared using Ni-NTA agarose beads (Qiagen, UK) according to the manufacturer\u2019s protocol and HA epitope-tagged Pkc1p were prepared essentially as described previously (Darieva et al., 2012). Recombinant histone H3 was made commercially (Active Motif).\n\nPulldown assays with immunoprecipitated HA-Pkc1 from DZ2 cells and in vitro translated Rtt109 were carried out as described previously (Pic-Taylor et al., 2004).\n\nTo detect epitope-tagged derivatives by western analysis, anti-HA (Roche) and anti-tubulin TAT-1 (CRUK), H3K56ac (Active motif), H3K9ac (Abcam), H3K18ac (Abcam), H3 (Active motif), myc epitope (Santa Cruz), H3T45-P (Active motif) antibodies and Supersignal west dura substrate (Pierce) were used.\n\nRabbit polyclonal monospecific antibody against the phosphothreonine at amino acid 46 on yeast Rtt109 (Rtt109 T46-P) was generated from immunizing rabbits with a KLH-conjugated peptide (H-DDKRVPKST(PO3H2)IKTC-NH2), and then cross-affinity purification of polyclonal antibodies specific to modified Rtt109 T46-P or non-modified pRtt109 was performed (Eurogentec). For immunoblotting analysis we used 1:1000 dilution for both antibodies.\n\n### Protein kinase assays\n\nProtein kinase assays were performed as described previously (Darieva et al., 2012) using HA epitope-tagged Pkc1p immunoprecipitated form DZ2 cells and recombinant H3 or His-Rtt109/Vps75 protein complex as a substrate.\n\n### Mass spectrometry\n\nProteins were isolated from denaturing polyacrylamide gels and proteolytically digested as described previously (Darieva et al., 2012). Digested samples were analysed by LC-MS/MS using an UltiMate\u00ae 3000 Rapid Separation LC (RSLC, Dionex Corporation, Sunnyvale, CA) coupled to an Orbitrap Elite (Thermo Fisher Scientific, Waltham, MA) mass spectrometer. Peptide mixtures were separated using a gradient from 92% A (0.1% FA in water) and 8% B (0.1% FA in acetonitrile) to 33% B, in 44\u2009min at 300 nl min-1, using a 75 mm x 250 \u03bcm i.d. 1.7 \u03bcM BEH C18, analytical column (Waters). Peptides were selected for fragmentation automatically by data dependant analysis. Data were analysed as described previously (Darieva et al., 2012) but phosphorylated peptide product ion spectra were also manually validated.\n\n### Yeast growth and RNA analysis\n\nThe yeast strains used are listed in Supplementary file 1. Yeast cells were grown, GAL1-promoter-driven constructs induced, and transformations performed, as described previously (Darieva et al., 2003). Yeast cultures were treated with 40 nM cercosporamide (Santa Cruz) to inhibit PKC activity, synchronised in G1 phase by treatment with \u03b1-factor and in early S phase by hydroxyurea (HU) treatment as described previously (Darieva et al., 2012). DNA content analyses were performed using propidium iodide-stained cells as described previously (Darieva et al., 2006).\n\nGrowth sensitivity tests were performed as described previously (Darieva et al., 2012) except that temperature sensitive pkc mutant strains were grown at 30\u00b0C or 34\u00b0C. The experiments were performed in duplicate and were repeated several times.\n\nRNA extraction and real-time reverse transcription-PCR (RT-PCR) analysis were carried out as described previously (Darieva et al., 2006) using the following primer pairs: ADS1587/1588 (HTT2), ADS4732/4733 (RTT109) and ADS3978-ADS3979 (18S rRNA). All data were normalized to 18S rRNA levels in the same cells.\n\n### Microarray analysis\n\nDuplicate RNA samples were labelled and hybridised after a single round of amplification to Affymetrix Yeast Genome 2.0 array chips. All the cell strains used in this experiment were grown in the presence of 1M sorbitol at 30\u00baC, treated with 200 mM HU for 2.5 hr and released from HU block at 34\u00baC. Samples were obtained from: (1) Wild-type (DK186) and pkc1-14 (DK1690) mutant strains. The mRNA expression data were collected at three timepoints (wild-type blocked in HU, wild-type and pkc1-14 released from HU block for 75 min. (2) rtt109\u0394 mutant cells (Y01490) containing vectors expressing wild-type (WT) Rtt109 (DZ5) or Rtt109(T46A) (DZ6). The mRNA expression data were collected at three timepoints (WT blocked in HU, and Rtt109(WT) and Rtt109(T46A) released from HU block for 80 min. (3) Wild-type cells (MSY748) expressing wild-type histone H3 (MSY748) or H3(T45A) (H3-T45A). The mRNA expression data were collected at three timepoints (WT blocked in HU, and both WT and H3(T45A) released from HU block for 80 min).\u00a0The measurements were then normalised by using robust multi-array average (RMA) approach (Irizarry et al., 2003). The primary data are deposited in ArrayExpress; accession number E-MTAB-3359.\n\nLimma (Smyth, 2005) was used to provide log(foldChange), T-statistic and P-values. In all cases, fold changes were calculated relative to the wild-type strain released from HU block. Individual gene expression changes were considered significant if they satisfied the criteria of fold change >1.2 and P-value <0.05. The T-statistics, P-values and Fold Changes were used by Piano (V\u00e4remo et al., 2013) to build aggregate P-values for all of the genes in each GO term, based upon the values of these statistics for each of the probe sets matching to the term. GO terms were then ranked separately by aggregate P-values, within each of the five P-value directional classes (upregulated or downregulated in both conditions), and this ranking provided a consensus score.\n\nTo create heatmaps of expression changes of genes within GO terms z-scores were calculated for the set of arrays testing a pair of strains across different conditions and an average z-score for each condition determined. Each paired experiment was treated independently and the z-scores were clustered and depicted in a heatmap using pheatmap (http://cran.r-project.org/web/packages/pheatmap/index.html).\n",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7ea7bf19-5d39-410e-8fa1-4db8ae56b5b7",
+      "submission_id": "670e934c-cfcb-473e-8885-61e789281ae6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica Tyler, University of Texas MD Anderson Cancer Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09886.019](https://doi.org/10.7554/eLife.09886.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Protein kinase C coordinates histone H3 phosphorylation and acetylation\" for peer review at eLife. Your submission has been favorably evaluated by Jim Kadonaga (Senior editor), and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission. The reviewers felt that your work was interesting, important and timely.\n\nEssential revisions:\n\n1) All MNase analyses have to be removed from the paper.\n\n2) Show the effect on H3 K56Ac of Pkc inhibition in the pkc1-14 and pkc1-21 mutants, to establish whether they are epistatic, given their different effect on the kinetics of H3 K56Ac.\n\n3) Indicate concentrations of HU and temperatures used for all experiments.\n\n4) Include H3K56A or R mutants in the epistasis analysis in Figure 7D to enable a better understanding of the codependence of H3 K56Ac, H3 T64p and Rtt109p.\n\n5) Make the gene expression data publicly available.\n\n6) Please show or report result of sensitivities of the pkc1, H3T45 and Rtt109T46 alleles to MMS and 6AU.\n\nWe have included the full reviews for your benefit below.\n\nReviewer #1: This is an interesting paper that shows that Pkc1 phosphorylates the HAT Rtt109 to stabilize Rtt109 after release from HU treatment, enabling it to acetylate H3 K56 during S phase. They also show that Pkc1 promotes phosphorylation of H3 T45, which also promotes H3 K56Ac. The findings are novel and important. Some of the westerns are rather ugly but are still convincing. The micrococcal nuclease analyses however are not technically acceptable nor credible, nor consistent with data published for the same mutants in the literature previously. Additionally, they do not add anything to the story and need to be removed, given the effect of lack of H3 K56Ac on chromatin and MNase ladders is well established already.\n\nFor future reference this is what is wrong with the MNase ladders (probably irrelevant here, because these all have to be removed from the paper), MNase accessibility analysis requires multiple time points or different MNase concentrations to be shown for each chromatin sample, not just one. The gel percentages and ladders need to be used that will enable 150bp and 300bp fragments to be seen. Also, the same amount of sample has to be digested for different samples. This is clearly not the case in these MNase analyses, especially Figure 2 and Figure 5. For the MNase digestion in Figure 1, the wild type sample is totally unconvincing. It is not a MNase ladder \u2013 there are intermediate bands between the nucleosomes and the tri-nucleosome is far brighter than the mono and di bands, but there is no tetra. This does not happen; they never look like this; and the state of overdigestion of the Pkc1 mutant would not be compatible with life! The results of the MNase digestion analysis of H3 K56R is far more extreme than what Steve Jackson published in Nature nearly ten years ago, and this degree of relative lack of chromatin would not support life. Figure 2 MNase also lacks a ladder. The labeling of the size markers on Figure 5 does not correspond to the size markers and appears to be completely arbitrary. Where is the mononucleosome on this analysis? A ladder cannot have di and tri and no mononucleosome.\n\nReviewer #2: Sharrocks and colleagues present a number of interesting experiments that implicate the yeast PKC kinase in chromatin assembly regulation. Yeast growth phenotypes are applied to implicate pkc1 alleles in HU resistance and H3K56 acetylation as well as to study H3 and Rtt109 PKC phosphorylation site mutant alleles. Co-IP and in vitro and in vivo phosphorylation assays suggest a network of phosphorylation whereby PKC may directly phosphorylate H3 on T45 and Rtt109 on T46. The emergent model is attractive because there appears to be a two-pronged PKC-mediated regulatory pathway, whereby direct PKC phosphorylation of H3T45 promotes acetylation of H3K56 whilst concomitant phosphorylation of the H3K56 acetylase Rtt109 on T46 also promotes H3K56 acetylation. The model appears to have been tested adequately to sustain the claims, including epistasis experiments using colony formation and gene expression as a read-outs.\n\nThe MNase experiments are scattered over three figures (1C, 2C, 6E), assessing MNase patterns in wild type, pkc1-14 (1C) H3K56R (2C) and a H3T45A mutant +/- PKC1 expression (6E). It is not clear whether as such these add substantially to the manuscript. Technically a full titration/time course of MNase for each strain/condition would be more informative. Furthermore, as different strain backgrounds are compared (1C = W303, 2C = Rothstein 1983 = W303, 6E = FY406), at different temperatures (30\u00baC? and 34\u00baC), the only result is that the chromatin structure is MNase hypersensitive and therefore 'messed up'. The assays displayed do not have the resolution to indicate in what way or to what extent the chromatin is messed up. Darieva et al. again do not systematically indicate at what temperature the control strain was grown. I feel that one dedicated accessibility figure describing a logical set, rather than the present chronological-discovery-set across three figures would render the manuscript stronger on this front. For instance, comparing WT, H3T45A and H3T45D combined with pkc mutants at 34\u00baC. A further set of possibilities would include the H3K56A, and R mutations. Yet another, would employ the rtt109 null and Rtt109A and Rtt109D alleles. Leaving MNase experiments out altogether is also an option, however.\n",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f049570d-2714-460d-a302-9762a489297d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C1",
+      "claim": "Histone H3 acetylation at K56 and phosphorylation at T45 are two important chromatin modifications that accompany chromatin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone H3 acetylation at K56 and phosphorylation at T45 are two important chromatin modifications that accompany chromatin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about these modifications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "82f802c1-23bf-44cf-9c9d-dbc728c10e9e",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C2",
+      "claim": "Pkc1 is a key regulator that coordinates the deposition of H3K56 acetylation and H3T45 phosphorylation in S. cerevisiae under conditions of replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have identified the protein kinase Pkc1 as a key regulator that coordinates the deposition of these modifications in S. cerevisiae under conditions of replicative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "d70ecefc-2640-41e3-8b47-57866f8f9fb8",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C3",
+      "claim": "Pkc1 phosphorylates the histone acetyl transferase Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "Pkc1 phosphorylates the histone acetyl transferase Rtt109 and promotes its ability to acetylate H3K56.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "d7061baf-3a45-4074-9d70-dedfcf999b74",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C4",
+      "claim": "Pkc1 phosphorylation of Rtt109 promotes its ability to acetylate H3K56.",
+      "claim_type": "EXPLICIT",
+      "source": "Pkc1 phosphorylates the histone acetyl transferase Rtt109 and promotes its ability to acetylate H3K56.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing reduced H3K56 acetylation in pkc1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "494598ab-fecc-40c1-9e59-2a93a91fa961",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C5",
+      "claim": "Pkc1 enhances H3T45 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also reveal novel cross-talk between two different histone modifications as Pkc1 also enhances H3T45 phosphorylation and this modification is required for H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "02ced973-5238-4595-9322-45f9d7e17163",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C6",
+      "claim": "H3T45 phosphorylation is required for H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also reveal novel cross-talk between two different histone modifications as Pkc1 also enhances H3T45 phosphorylation and this modification is required for H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data showing reduced H3K56 acetylation in H3(T45A) mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4eef057e-53d8-4556-8d0b-d99ee6c324a4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C7",
+      "claim": "Rtt109-mediated modification of histone H3 by acetylation of lysine 56 (H3K56) is a key event during chromatin reassembly in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "This process must be tightly controlled and in S. cerevisiae one key event is the Rtt109-mediated modification of histone H3 by acetylation of lysine 56 (H3K56) (Han et al., 2007; Driscoll et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "de64ea70-2875-4537-87cf-b890eb2b89e8",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C8",
+      "claim": "Rtt109 cooperates with two different histone chaperones Asf1 and Vps75.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtt109 cooperates with two different histone chaperones Asf1 and Vps75 (Tsubota et al., 2007; Driscoll et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "eb8f4d48-cb1e-4df1-b05e-973c487313cb",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C9",
+      "claim": "Asf1 is the major chaperone involved in promoting H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "although it is generally accepted that Asf1 is the major chaperone involved in promoting H3K56 acetylation (Keck et al., 2011; Tang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "3ff80040-9611-4b7a-9c88-45e9df461e5c",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C10",
+      "claim": "The signalling pathways controlling Rtt109-mediated H3K56 acetylation are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the signalling pathways controlling Rtt109-mediated H3K56 acetylation are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f93d4a63-31a0-4627-b690-7a380623ce71",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C11",
+      "claim": "H3 phosphorylation at threonine T45 (H3T45) occurs coincidentally with DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important modification that occurs coincidentally with DNA replication is H3 phosphorylation at threonine T45 (H3T45)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7caf408f-a580-4bc3-9384-5abfcb427a00",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C12",
+      "claim": "H3T45 phosphorylation has no relationship with H3K56 acetylation in the context of an unperturbed cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "but current evidence suggests that this modification has no relationship with the closely located H3K56 acetylation event (Baker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "9fa64ef9-1e04-4e6d-99be-abc56d34782b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C13",
+      "claim": "Cdc7-Dbf4 is a major kinase involved in controlling H3T45 phosphorylation levels in the context of an unperturbed cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of an unperturbed cell cycle, Cdc7-Dbf4 has been shown to be a major kinase involved in controlling H3T45 phosphorylation levels (Baker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "a407edd5-8191-4d88-ab97-81eb1bf41154",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C14",
+      "claim": "S. cerevisiae possesses one protein kinase C isoform, Pkc1.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae possesses one protein kinase C isoform, Pkc1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "c6dc3648-01c9-4193-9130-e98b36c0dc69",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C15",
+      "claim": "Pkc1 plays a major role in cell wall integrity signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae possesses one protein kinase C isoform, Pkc1, and it is known to play a major role in cell wall integrity signalling (reviewed in Levin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4a923654-e741-490f-83cf-f8137248d175",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C16",
+      "claim": "Pkc1 has been implicated in cell cycle events through genetic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Pkc1 has a growing number of nuclear functions and through genetic experiments this protein kinase has previously been implicated in cell cycle events (reviewed in Levin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "dd57feea-8a17-4990-8772-e9bef2e2a17a",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C17",
+      "claim": "Pkc1 directly affects the cell cycle by inhibiting the activity of the transcriptional coactivator protein Ndd1.",
+      "claim_type": "EXPLICIT",
+      "source": "However MAP kinase-independent roles for Pkc1 have emerged and Pkc1 was recently shown to directly affect the cell cycle by inhibiting the activity of the transcriptional coactivator protein Ndd1 (Darieva et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "aa52a9ee-8adc-465a-8725-40d6f041b8bd",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C18",
+      "claim": "pkc1 mutants are sensitive to hydroxurea (HU) treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pkc1 mutants are sensitive to hydroxurea (HU) treatment (Queralt and Igual, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4cddecbb-eff9-454e-b977-b74b055e83a7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C19",
+      "claim": "PKC1 and components of the RSC chromatin remodelling complex are genetically linked.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear how Pkc1 might affect replicative stress but previous genetic studies have linked PKC1 and components of the RSC chromatin remodelling complex and Pkc1 overexpression can suppress the defects associated with RSC mutants (Chai et al., 2005; Hosotani et al., 2001; reviewed in Levin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "cf769602-08e0-462f-9462-6b5228ab04ff",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C20",
+      "claim": "Pkc1 overexpression can suppress the defects associated with RSC mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear how Pkc1 might affect replicative stress but previous genetic studies have linked PKC1 and components of the RSC chromatin remodelling complex and Pkc1 overexpression can suppress the defects associated with RSC mutants (Chai et al., 2005; Hosotani et al., 2001; reviewed in Levin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "ebe0db41-3669-447f-a7f7-975dabefb273",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C21",
+      "claim": "Temperature sensitive pkc1-14 cells grown at 34\u00b0C to inactivate Pkc1 were inviable in comparison to cells containing wild-type PKC1.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to cells containing wild-type PKC1 (DK186), temperature sensitive pkc1-14 (DK1690) cells, grown at 34\u00baC to inactivate Pkc1 were inviable (Figure 1A, top panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "a0736d08-3e3a-4232-9cca-1972c4382217",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C22",
+      "claim": "The presence of sorbitol saved the pkc1-14 mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sorbitol saved the pkc1-14 mutant phenotype (Figure 1A, middle panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f8733dd7-0864-4b32-a218-cd5e7e01c72c",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C23",
+      "claim": "HU sensitivity was observed in pkc1-14 cells in the presence of sorbitol.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sorbitol saved the pkc1-14 mutant phenotype (Figure 1A, middle panel) but HU sensitivity was observed under these conditions (Figure 1A, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "fda738f2-fd58-43b2-a1dd-e98a683e7775",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C24",
+      "claim": "bck1\u0394 cells were not sensitive to HU.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed bck1\u0394 (Y01328) cells were not sensitive to HU, further emphasising a new alternative mechanism of action for Pkc1 under replicative stress conditions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e4ee2922-c484-4d64-9225-cf7a79016a64",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C25",
+      "claim": "Wild-type Pkc1 was able to rescue the growth defect of pkc1-14 cells in the presence of HU.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while wild-type (WT) Pkc1 was able to rescue the growth defect of pkc1-14 cells, the catalytically dead version was unable to do so (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "45d2db12-814b-4e16-be35-2c99a7ed18c1",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C26",
+      "claim": "Catalytically dead Pkc1 was unable to rescue the growth defect of pkc1-14 cells in the presence of HU.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while wild-type (WT) Pkc1 was able to rescue the growth defect of pkc1-14 cells, the catalytically dead version was unable to do so (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8beab2b3-cf6e-4ada-bf4d-ad044145b80d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C27",
+      "claim": "Pkc1 kinase activity is required for protecting cells from replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments demonstrate that Pkc1 kinase activity is required for protecting cells from replicative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "111451c9-d781-4544-a441-63d152f43e96",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C28",
+      "claim": "Acetylation of histone H3 at lysine 56 (H3K56) during S phase is an important modification in ensuring the correct assembly of newly synthesised nucleosomes and their incorporation into chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "During S phase, acetylation of histone H3 at lysine 56 (H3K56) is an important modification in ensuring the correct assembly of newly synthesised nucleosomes and their incorporation into chromatin (Li et al., 2008; Masumoto et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "86358762-4399-4821-88d0-e47952544dce",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C29",
+      "claim": "Wild-type cells showed accumulation of acetylated H3K56 upon release from a HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon release from a HU block, wild-type cells showed accumulation of acetylated H3K56 (Figure 2A, lanes 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "60de6d0a-d259-42f4-a7b8-872f4ca7dff4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C30",
+      "claim": "Temperature sensitive pkc1-21 cells showed much reduced levels of H3K56 acetylation when grown at 34\u00b0C upon release from a HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, temperature sensitive pkc1-21 cells (DK1697) showed much reduced levels of H3K56 acetylation when grown at 34\u00baC (Figure 2A, lanes 7\u201312)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4bff2756-748b-4343-8f35-e9e92473b8ec",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C31",
+      "claim": "pkc1-21 cells progressed through S phase and arrested at G2 despite reduced H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, temperature sensitive pkc1-21 cells (DK1697) showed much reduced levels of H3K56 acetylation when grown at 34\u00baC (Figure 2A, lanes 7\u201312) even though they had progressed through S phase and arrested at G2 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "501565a8-ce06-4812-9bf0-03ee1978ac7f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C32",
+      "claim": "Reduced H3K56 acetylation was also observed in pkc1-14 cells upon release from a HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this effect was not limited to strains harbouring the pkc1-21 allele but was also observed in a different temperature sensitive strain, harbouring the pkc1-14 allele either upon release from a HU block (Figure 2B and Figure 2\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "0b6c9331-81d1-48f0-9314-c6bc8471985e",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C33",
+      "claim": "Reduced H3K56 acetylation was observed in pkc1-14 cells upon entry into S phase upon release from an \u03b1 factor block.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this effect was not limited to strains harbouring the pkc1-21 allele but was also observed in a different temperature sensitive strain, harbouring the pkc1-14 allele either upon release from a HU block (Figure 2B and Figure 2\u2014figure supplement 1B) or upon entry into S phase upon release from an \u03b1 factor block (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "b9f9d446-2bb0-4421-bc8b-56f7821b34a7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C34",
+      "claim": "Rtt109 acetylates histone H3 at lysine 9 (H3K9).",
+      "claim_type": "EXPLICIT",
+      "source": "H3K56 acetylation is deposited by Rtt109, and this enzyme also acetylates histone H3 at lysine 9 (H3K9) (Driscoll et al., 2007; Han et al., 2007; Tsubota et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f6f4b416-6793-4590-8767-efe1376fccc7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C35",
+      "claim": "pkc1-14 cells showed much reduced levels of H3K9 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to H3K56 acetylation defects, pkc1-14 cells showed much reduced levels of H3K9 acetylation (Figure 2B, middle panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "29c65b0d-c79e-4404-ae46-7d3667972aa7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C36",
+      "claim": "Reduced H3K9 acetylation in pkc1-14 cells suggests a defect in Rtt109 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to H3K56 acetylation defects, pkc1-14 cells showed much reduced levels of H3K9 acetylation (Figure 2B, middle panel) which suggests a defect in Rtt109 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of reduced H3K9 acetylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "33a4c541-5673-4c96-98f1-da2bba4eaa36",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C37",
+      "claim": "Pharmacological inhibition of Pkc1 activity with cercosporamide reduced H3K56 acetylation following release from a HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of Pkc1 activity reduced H3K56 acetylation but importantly did not affect another histone H3 acetylation event at lysine 18 (H3K18) (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "166ac36d-a612-4fe7-9f1d-276913ea678d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C38",
+      "claim": "Pharmacological inhibition of Pkc1 activity with cercosporamide did not affect H3K18 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of Pkc1 activity reduced H3K56 acetylation but importantly did not affect another histone H3 acetylation event at lysine 18 (H3K18) (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "225853ed-c686-4956-81f4-9629b116c39e",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C39",
+      "claim": "The effect of cercosporamide on H3K56 acetylation was through Pkc1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined whether combinatorial genetic inactivation and pharmacological inhibition of Pkc1 has additive effects but none were observed, indicating that the effect of cercosporamide was through Pkc1 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2e05e2cc-7e58-4ea8-ba26-958ea9442948",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C40",
+      "claim": "Loss of Pkc1 in temperature sensitive strains resulted in stronger reductions in H3K56ac levels than following cercosporamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We note however that the loss of Pkc1 in the temperature sensitive strains resulted in stronger reductions in H3K56ac levels than following cercosporamide treatment, most likely due to incomplete Pkc1 inhibition in the latter case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an observation with a proposed explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "6b4fd160-07cc-4046-aff5-a7e86a06e6d7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C41",
+      "claim": "Pkc1 plays an important role in promoting H3K56 acetylation under replicative stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results demonstrate an important role for Pkc1 in promoting H3K56 acetylation under replicative stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "a9d0aeb2-2f91-47a5-9afc-50637685876e",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C42",
+      "claim": "Rtt109 has a potential phosphorylation site at threonine 46 (T46) which partially matches the PKC consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of Rtt109 sequence revealed a potential phosphorylation site at threonine 46 (T46) which partially matches the PKC consensus sequence (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "47b2cba6-ee7b-4e78-96cd-f2295fc6a104",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C43",
+      "claim": "A phospho-specific antibody specifically recognised a phosphorylated peptide surrounding T46 of Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish whether Rtt109 can be phosphorylated by Pkc1 at this site, we raised a phospho-specific antibody which specifically recognised a phosphorylated peptide surrounding T46 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f0a84415-bb5c-47c9-8b08-2ec4ae3c9e4a",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C44",
+      "claim": "Pkc1 was able to phosphorylate Rtt109 in the context of a purified recombinant Rtt109-Vps75 heterodimer in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assays revealed that Pkc1 was able to phosphorylate Rtt109 in the context of a purified recombinant Rtt109-Vps75 heterodimer (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e7eea37e-87f6-4987-9697-a840c7374ac1",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C45",
+      "claim": "Rtt109 phosphorylation by Pkc1 was reduced to background levels following treatment with lambda phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "This phosphorylation was reduced to background levels following treatment with lambda phosphatase (Figure 3B, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2881db58-1ffd-4117-9f60-b6082f4c2856",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C46",
+      "claim": "Pkc1 and Rtt109 could interact in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation assays demonstrated that Pkc1 and Rtt109 could interact in vitro (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2a86d3bc-87c4-4c2d-a738-fa2bcabe7fe7",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C47",
+      "claim": "Rtt109 T46 became strongly phosphorylated in vivo following HU treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtt109 phosphorylation at T46 could also be identified in vivo following HU treatment (Figure 3C, lanes 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4743963b-04a9-4271-a511-344b5f76a869",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C48",
+      "claim": "Rtt109 T46 phosphorylation was subsequently lost upon release from HU arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "This phosphorylation was subsequently lost upon release from HU arrest (Figure 3C, lanes 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "831d2138-4e19-420e-b063-b5773aeb76ff",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C49",
+      "claim": "Treatment of cells with cercosporamide prior to HU addition blocked the appearance of Rtt109 phosphorylation at T46.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, treatment of cells with cercosporamide prior to HU addition blocked the appearance of Rtt109 phosphorylation at T46 (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "a7666734-719d-436f-9b6c-793823a52873",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C50",
+      "claim": "Pkc1 plays a role in promoting Rtt109 phosphorylation under replicative stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, treatment of cells with cercosporamide prior to HU addition blocked the appearance of Rtt109 phosphorylation at T46 (Figure 3D), demonstrating a role for Pkc1 in promoting Rtt109 phosphorylation under replicative stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cercosporamide experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8554c006-7ff8-4f7d-8176-030ae4394e85",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C51",
+      "claim": "In cells undergoing replicative stress, Rtt109 is phosphorylated in a Pkc1-dependent manner, most likely through direct phosphorylation by Pkc1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore indicate that in cells undergoing replicative stress, Rtt109 is phosphorylated in a Pkc1-dependent manner, most likely through direct phosphorylation by Pkc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on Rtt109 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "33c7faeb-15a5-4341-b28c-f1bb43b9fc78",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C52",
+      "claim": "rtt109\u0394 cells grew poorly in the presence of HU.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of HU, rtt109\u0394 cells grew poorly (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "942a1c0c-ab45-4f05-96aa-57c30038e022",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C53",
+      "claim": "The growth defect of rtt109\u0394 cells in HU could be rescued by re-expressing wild-type Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "This growth defect could be rescued by re-expressing wild-type Rtt109 but this rescue was lost with the non-phosphorylatable Rtt109(T46A) mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "9835eea0-f5c7-4b65-b251-0a636fc78ba6",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C54",
+      "claim": "The rescue of rtt109\u0394 growth defect in HU was lost with the non-phosphorylatable Rtt109(T46A) mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This growth defect could be rescued by re-expressing wild-type Rtt109 but this rescue was lost with the non-phosphorylatable Rtt109(T46A) mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "580feee6-5a6b-4fe8-8961-6f6630f42cfb",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C55",
+      "claim": "Rtt109(T46D) was able to suppress the growth defect of rtt109\u0394 cells in HU.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Rtt109(T46D) was able to suppress the growth defect (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "d019810b-1817-400b-8ac5-7157a6171625",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C56",
+      "claim": "The insertion of a phosphomimetic residue at the Pkc1 phosphorylation site reinstated the activity of Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Rtt109(T46D) was able to suppress the growth defect (Figure 4A) indicating that the insertion of a phosphomimetic residue at the Pkc1 phosphorylation site reinstated the activity of Rtt109.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the rescue experiment with Rtt109(T46D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "dd54016a-0bc4-47ac-9862-237fd90319d1",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C57",
+      "claim": "H3K56 acetylation was severely depleted in rtt109\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this was severely depleted in rtt109\u0394 cells but restored upon re-expression of wild-type Rtt109 (Figure 4B, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "854a6b43-6f00-4c68-88f9-671825a90fc9",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C58",
+      "claim": "H3K56 acetylation was restored in rtt109\u0394 cells upon re-expression of wild-type Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this was severely depleted in rtt109\u0394 cells but restored upon re-expression of wild-type Rtt109 (Figure 4B, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2712e3c8-c541-4303-8d9a-ad30b13dea41",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C59",
+      "claim": "Rtt109(T46A) only partially re-constituted H3K56 acetylation levels and the kinetics were delayed.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtt109(T46A) only partially re-constituted H3K56 acetylation levels and the kinetics were delayed whereas Rtt109(T46D) promoted rapid and high levels of H3K56 acetylation (Figure 4B, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "1a3fb92b-75b3-4f17-9ad7-8f5c2be941f9",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C60",
+      "claim": "Rtt109(T46D) promoted rapid and high levels of H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtt109(T46A) only partially re-constituted H3K56 acetylation levels and the kinetics were delayed whereas Rtt109(T46D) promoted rapid and high levels of H3K56 acetylation (Figure 4B, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "5afb0920-ee38-4cfd-9b88-16a42f81349d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C61",
+      "claim": "Pkc1-mediated phosphorylation of Rtt109 is required for its ability to promote H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are fully consistent with a role for Pkc1-mediated phosphorylation of Rtt109 being required for its ability to promote H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Rtt109 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "6c3ba210-2dde-42c1-9ffe-87acca45bdf8",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C62",
+      "claim": "Wild-type Rtt109 was inducibly expressed to high levels upon release from HU arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that while wild-type Rtt109 and Rtt109(T46D) were inducibly expressed to high levels upon release from HU arrest, Rtt109(T46A) expression was delayed and reached a lower level (Figure 4B, right hand panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "db5d5bf6-8786-4974-9ab0-2ee8e06df08a",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C63",
+      "claim": "Rtt109(T46D) was inducibly expressed to high levels upon release from HU arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that while wild-type Rtt109 and Rtt109(T46D) were inducibly expressed to high levels upon release from HU arrest, Rtt109(T46A) expression was delayed and reached a lower level (Figure 4B, right hand panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e8bab02c-c8c3-4642-9cf7-d6bae5a9902f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C64",
+      "claim": "Rtt109(T46A) expression was delayed and reached a lower level upon release from HU arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that while wild-type Rtt109 and Rtt109(T46D) were inducibly expressed to high levels upon release from HU arrest, Rtt109(T46A) expression was delayed and reached a lower level (Figure 4B, right hand panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "d2f0351b-129f-4434-b7bc-6885189eb205",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C65",
+      "claim": "Pkc1-mediated phosphorylation might be important for stabilising Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that Pkc1-mediated phosphorylation might be important for stabilising Rtt109.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of differential Rtt109 protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7f5c6d7c-0f01-43c1-971d-b8f40bb94edd",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C66",
+      "claim": "Rtt109 protein was expressed to lower levels in pkc1-14 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Rtt109 protein was expressed to lower levels in pkc1-14 cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "864111a1-4d61-4c9f-9336-fe36a768bf94",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C67",
+      "claim": "Lower Rtt109 protein levels in pkc1-14 cells were not due to a transcriptional defect.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not due to a transcriptional defect as RTT109 mRNA levels were elevated in pkc1-14 cells (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8c6daa31-78d7-4aa2-a71b-6e90344fead1",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C68",
+      "claim": "pkc1-14 cells are attempting to compensate for the loss in Rtt109 protein by elevating RTT109 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not due to a transcriptional defect as RTT109 mRNA levels were elevated in pkc1-14 cells (Figure 4\u2014figure supplement 1), suggesting that these cells are attempting to compensate for the loss in Rtt109 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of elevated mRNA but lower protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "3674e45a-175c-48b9-92a5-021be73458d4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C69",
+      "claim": "Lower level of Rtt109 likely contributes to the decreased levels of H3K56 acetylation in pkc1-14 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This lower level of Rtt109 likely contributes to the decreased levels of H3K56 acetylation we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of lower Rtt109 protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f138d08f-a132-4902-aac6-8d0568640e20",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C70",
+      "claim": "Pkc1-mediated Rtt109 phosphorylation is required for maintaining Rtt109 protein levels and H3K56 acetylation levels as cells recover from HU-mediated replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicated that Pkc1-mediated Rtt109 phosphorylation is required for maintaining Rtt109 protein levels and H3K56 acetylation levels as cells recover from HU-mediated replicative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on Rtt109 phosphorylation and protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8dbe3c39-2577-4857-9376-d7300b2b05bc",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C71",
+      "claim": "A highly significant overlap was observed for pkc1-14 cells or cells expressing Rtt109(T46A) in genes either downregulated or upregulated compared to wild-type cells released from HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in cells released from HU block, a highly significant overlap was observed for pkc1-14 cells or cells expressing Rtt109(T46A) in genes either downregulated or upregulated compared to wild-type cells (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "cfab8489-c2a0-4087-8e15-c60a48920b18",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C72",
+      "claim": "No significant overlaps were observed when genes regulated in opposite directions in pkc1-14 and Rtt109(T46A) mutant strains were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly no such significant overlaps were observed when we considered genes that were regulated in opposite directions in the two mutant strains (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "c3b1aaad-e256-4b4f-b395-28fd32f05c55",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C73",
+      "claim": "There was a strong overlap in gene ontology (GO) terms between pkc1-14 and Rtt109(T46A) mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we considered the biological processes that were affected, there was a strong overlap in gene ontology (GO) terms, with over-representation of GO terms associated with processes such as 'cell wall' and 'nucleolus' strongly associated with both mutant strains and reciprocal effects seen with 'telomere maintenance' and 'DNA helicase activity' (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4ef26abd-b267-4c5d-a13c-5d85fb5298ff",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C74",
+      "claim": "GO terms associated with 'cell wall' and 'nucleolus' were strongly associated with both pkc1-14 and Rtt109(T46A) mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we considered the biological processes that were affected, there was a strong overlap in gene ontology (GO) terms, with over-representation of GO terms associated with processes such as 'cell wall' and 'nucleolus' strongly associated with both mutant strains and reciprocal effects seen with 'telomere maintenance' and 'DNA helicase activity' (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "5b8b48b9-2bcf-4b2d-943b-22c3ea7837a2",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C75",
+      "claim": "Reciprocal effects were seen with 'telomere maintenance' and 'DNA helicase activity' GO terms in pkc1-14 and Rtt109(T46A) mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we considered the biological processes that were affected, there was a strong overlap in gene ontology (GO) terms, with over-representation of GO terms associated with processes such as 'cell wall' and 'nucleolus' strongly associated with both mutant strains and reciprocal effects seen with 'telomere maintenance' and 'DNA helicase activity' (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "24b4fe0d-1437-4352-8e25-8be78ec8860f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C76",
+      "claim": "No rescue of the growth defects of pkc1-14 cells in the presence of HU was observed with the phosphomimetic version of Rtt109.",
+      "claim_type": "EXPLICIT",
+      "source": "One prediction of these results is that the phosphomimetic version of Rtt109 might be able to bypass the defects seen in pkc1-14 cells. However, no rescue of the growth defects of pkc1-14 cells in the presence of HU was observed (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "9eb4ee2f-b3ef-4da1-887d-f4f66419b404",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C77",
+      "claim": "Pkc1 has a direct role in controlling H3K56 acetylation through Rtt109 phosphorylation but also controls additional activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore a working model suggested a direct role for Pkc1 in controlling H3K56 acetylation through Rtt109 phosphorylation but also that additional activities were controlled by Pkc1 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "6dc6aa21-d54d-4133-b3d4-5308735baed9",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C78",
+      "claim": "PKC\u03b4 phosphorylates histone H3 at threonine 45 (H3T45) in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous results in mammalian cells had shown that PKC\u03b4 phosphorylates histone H3 at threonine 45 (H3T45) (Hurd et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "8d8214aa-cc76-4d01-b9f8-a6dd274b699b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C79",
+      "claim": "H3T45 is conserved in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "As this residue is conserved in S. cerevisiae (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2ee168f4-3fbd-4953-a3e3-85d1dfd18d0b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C80",
+      "claim": "Pkc1 could phosphorylate H3T45 in vitro using purified histone H3 and immunoprecipitated Pkc1.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore examined whether Pkc1 could phosphorylate H3T45 in vitro by using purified histone H3 and immunoprecipitated Pkc1p. Efficient H3 phosphorylation was observed (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "84de4ca9-6fce-43cf-b638-0957b199745f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C81",
+      "claim": "Phosphorylation at T45 was confirmed as the only major phosphorylation site by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "and phosphorylation at T45 was confirmed as the only major phosphorylation site by mass spectrometry (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "011f8b22-7a69-412c-9061-c3417eac7080",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C82",
+      "claim": "H3T45 became strongly phosphorylated in wild-type cells as they were released from a HU-mediated block.",
+      "claim_type": "EXPLICIT",
+      "source": "As cells were released from a HU-mediated block, H3T45 became strongly phosphorylated in wild-type cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f692143b-44fb-4899-a6e0-45fbf8f59f7b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C83",
+      "claim": "No rises in H3T45 phosphorylation were observed upon ablation of Pkc1 activity in pkc1-14 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no such rises in H3T45 phosphorylation were observed upon ablation of Pkc1 activity in pkc1-14 cells (Figure 6D, lanes 7\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f5fb705d-deb2-46c7-b907-223c767a847b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C84",
+      "claim": "Pkc1 mediates histone H3 phosphorylation under conditions of replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The results therefore indicate that Pkc1 mediates histone H3 phosphorylation under conditions of replicative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on H3T45 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e0bdff96-1867-411e-b29d-44cd53b9cd95",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C85",
+      "claim": "H3K56 acetylation was greatly reduced in cells containing the H3(T45A) allele upon release from a HU block.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, H3K56 acetylation was greatly reduced in cells containing the H3(T45A) allele upon release from a HU block (Figure 7A, lanes 3 and 4; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e2e4eddc-cc2c-4a85-9901-18e7712c3a6f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C86",
+      "claim": "Only a small change in H3K56 acetylation was observed in H3(T45A) cells upon release from an alpha factor block under normal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast only a small change in H3K56 acetylation was observed upon release from an alpha factor block under normal growth conditions (Figure 7A, lanes 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "ae68eea0-d74e-444b-81d0-69721b6eff79",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C87",
+      "claim": "H3K56 acetylation accumulated following HU removal in wild-type cells released from an alpha factor-mediated G1 arrest into HU.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if cells were released from an alpha factor-mediated G1 arrest into HU, and the HU subsequently removed, H3K56 acetylation again accumulated following HU removal in wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "60e01d5e-0b99-4677-9d81-06916b809da3",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C88",
+      "claim": "H3K56 acetylation did not accumulate in cells harbouring the H3(T45A) mutant allele following HU removal after release from alpha factor into HU.",
+      "claim_type": "EXPLICIT",
+      "source": "This accumulation of H3K56 acetylation did not occur in cells harbouring the H3(T45A) mutant allele (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "bbc506cf-b618-42a8-b96f-f990d7ce45b4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C89",
+      "claim": "There is functional coupling between H3T45 phosphorylation and H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested functional coupling between H3T45 phosphorylation and H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that H3(T45A) reduces H3K56 acetylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "782a8079-cffd-4051-b1d3-c62db7ec15d3",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C90",
+      "claim": "Only low levels of H3K56 acetylation were observed in H3(T45A) cells in the presence of Rtt109(T46D).",
+      "claim_type": "EXPLICIT",
+      "source": "However, only low levels of H3K56 acetylation were observed in the presence of Rtt109(T46D) (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "794d9059-4be3-4296-bfb9-92c885628a2f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C91",
+      "claim": "Rtt109(T46D) was unable to suppress the defects from H3(T45A).",
+      "claim_type": "EXPLICIT",
+      "source": "However, only low levels of H3K56 acetylation were observed in the presence of Rtt109(T46D) (Figure 7C), demonstrating that this protein was unable to suppress the defects from H3(T45A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "66179988-7efd-4e9f-ad24-06e83ea66694",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C92",
+      "claim": "H3T45 phosphorylation plays a crucial role in promoting H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby indicating a crucial role for H3T45 phosphorylation in promoting H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the inability of Rtt109(T46D) to rescue H3(T45A) defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "336caa98-f849-457d-9eb6-d661a9948eea",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C93",
+      "claim": "Rtt109(T46D) couldn't bypass the growth defects of H3(T45A) cells in HU.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Rtt109(T46D) mutant couldn't bypass the growth defects of H3(T45A) cells in HU (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "0e523f4a-d9d2-4753-8330-8ef3547e14b5",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C94",
+      "claim": "Rtt109(T46D) was unable to rescue the growth defect of H3(K56R) cells in HU.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether Rtt109(D) could bypass the HU-mediated growth defects of H3(K56R) cells but again this mutant was unable to rescue the growth defect (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "ab8b478a-7117-4db3-9136-4ec8ad1387ed",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C95",
+      "claim": "Rtt109-mediated H3K56 acetylation is important for protecting against the deleterious effects of HU treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This further emphasises the importance of Rtt109-mediated H3K56 acetylation in protecting against the deleterious effects of HU treatment, even when H3T45 was available for phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the inability of Rtt109(T46D) to rescue H3(K56R) defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "ad406a32-ed75-4347-ba57-69487b272e79",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C96",
+      "claim": "Pkc1 signals through promoting phosphorylation of both Rtt109 and histone H3 to promote H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results lead to a model whereby Pkc1 signals through promoting phosphorylation of both Rtt109 and histone H3 to promote H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4c087601-0e09-4092-b87d-7d28df9db8aa",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C97",
+      "claim": "Pairwise comparisons of gene expression changes between pkc1-14, H3(T45A) and Rtt109(T46A) mutant strains showed highly significant overlaps in genes being upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed pairwise comparisons of the gene expression changes observed between these strains following release from a HU block, showed highly significant overlaps in genes being upregulated in all cases (Figure 7E; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7E and Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "fc0252b1-6a82-40f9-a628-32535a898e35",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C98",
+      "claim": "Of the 51 genes showing significant upregulation in the pkc1 and Rtt109(T46A) mutant strains, 41 (80%) were also upregulated in the H3(T45A) mutant strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly though, of the 51 genes showing significant upregulation in the pkc1 and Rtt109(T46A) mutant strains, 41 (80%) were also upregulated in the H3(T45A) mutant strain (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "008b8958-0bbe-447c-aba9-03593f2b3fa4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C99",
+      "claim": "Consistent co-regulation of genes in the 'DNA helicase' GO term category could be observed across all mutant strains (pkc1-14, H3(T45A), Rtt109(T46A)).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent co-regulation of genes in the 'DNA helicase' GO term category could be observed across all mutant strains (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "231a2070-6e53-41a2-bc21-56d05791c1d5",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C100",
+      "claim": "pkc1-14, H3(T45A), and Rtt109(T46A) mutants exhibit common defects in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants therefore exhibit common defects in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the gene expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "eb21ed53-a2a0-42f5-9919-d732495ac423",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C101",
+      "claim": "Pkc1 coordinates histone H3 modifications during the replicative stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding provides further supporting evidence that adds to the mechanistic links we have uncovered between Pkc1, Rtt109, H3T45 phosphorylation and H3K56 acetylation, and strengthens our major discovery that Pkc1 coordinates histone H3 modifications during the replicative stress response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e82f70f0-eed4-44b2-9ceb-f58d5827f4ac",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C102",
+      "claim": "At least two different kinases are involved in controlling H3T45 phosphorylation, with Cdc7/Dbf4 operating during an unperturbed cell cycle and Pkc1 operating under replicative stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we focussed on histone H3 modification control under replicative stress conditions and in combination with previous results (Baker et al., 2010) our data indicate that at least two different kinases are involved in controlling H3T45 phosphorylation, with Cdc7/Dbf4 operating during an unperturbed cell cycle and Pkc1 operating under replicative stress conditions where it also coordinates H3K56 acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "1efd007a-61b4-4722-8855-d19d1fd24554",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C103",
+      "claim": "Pkc1 promotes the re-activation of H3 modifications upon removal of replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear how this delay is achieved but Pkc1 promotes the re-activation of H3 modifications upon removal of replicative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "155a95a7-5aa2-4f97-962d-6115931dc939",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C104",
+      "claim": "Pkc1 controls H3K56 acetylation through phosphorylating the Rtt109 acetyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Pkc1 controls H3K56 acetylation through phosphorylating the Rtt109 acetyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "ff1221f7-e22c-42e9-9de3-e9d08a0e8cf1",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C105",
+      "claim": "Pkc1 phosphorylation stabilises Rtt109 and safeguards its availability for modifying histone H3 following removal of replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This modification stabilises Rtt109 and thus safeguards its availability for modifying histone H3 following removal of replicative stress and re-entry into the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "89018406-b5d2-4d63-9ac9-554aa3a589f8",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C106",
+      "claim": "Under replicative stress conditions, H3T45 phosphorylation is critically important for coupled H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under replicative stress conditions, H3T45 phosphorylation appears to be critically important for coupled H3K56 acetylation, and this phosphorylation event is promoted by Pkc1-mediated H3T45 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "322eed1f-83fc-441e-8c91-e758d1fa5dda",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C107",
+      "claim": "Pkc1-mediated H3T45 phosphorylation is likely direct as histone H3 is efficiently phosphorylated at this site in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely direct as histone H3 is efficiently phosphorylated at this site in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the in vitro kinase assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7f25d1ff-13d9-4420-af2f-6935af4c386a",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C108",
+      "claim": "Pkc1 promotes the coordinate modification of H3T45 phosphorylation and H3K56 acetylation, with H3T45 phosphorylation being functionally coupled to H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to a model (Figure 7G) whereby Pkc1 promotes the coordinate modification of these two chromatin modifications and H3T45 phosphorylation is functionally coupled to H3K56 acetylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a model based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "1e309a83-3b9a-4437-9f6e-f5fd5742efe2",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C109",
+      "claim": "One outcome of perturbed Pkc1 activity and its downstream molecular events following HU treatment is likely to be defective chromatin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "One outcome of perturbed Pkc1 activity and its downstream molecular events following HU treatment is likely to be defective chromatin assembly and preliminary evidence suggest that this might be the case (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation with preliminary supporting data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "14a60d6b-e06e-4a50-85b6-f67501a73e02",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C110",
+      "claim": "pkc1, rtt109(T46A) and H3(T45A) mutants show consistent sensitivity to HU treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show a consistent sensitivity of pkc1, rtt109(T46A) and H3(T45A) mutants to HU treatment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "767ef19c-28c1-4d6b-bfb1-fbf481cc01f3",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C111",
+      "claim": "H3(K56A) alleles are sensitive to HU.",
+      "claim_type": "EXPLICIT",
+      "source": "which complements previous data showing that H3(K56A) alleles are also sensitive to HU (Matsubara et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "014b4b29-ad86-4722-99ff-711906342702",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C112",
+      "claim": "The H3(T45A) strain is sensitive to both MMS and 6-AU.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the H3(T45A) strain is sensitive to both MMS and 6-AU whereas the rtt109(T46A) strain is only sensitive to MMS (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7ee9610a-7bad-4031-9e03-7bee762a8323",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C113",
+      "claim": "The rtt109(T46A) strain is only sensitive to MMS.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the H3(T45A) strain is sensitive to both MMS and 6-AU whereas the rtt109(T46A) strain is only sensitive to MMS (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "446a8db1-c209-4c26-a975-145e30978970",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C114",
+      "claim": "TORC2 has been shown to phosphorylate and activate Pkc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, other upstream pathways might be involved, and one potential link might be through TOR signalling as TORC2 has been shown to phosphorylate and activate Pkc1 (Nomura and Inoue, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "bb11370e-e54c-4139-a33b-d225d940c478",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C115",
+      "claim": "TOR signalling has been linked to H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "and TOR signalling has also been linked to H3K56 acetylation (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "c22481b2-28fa-467b-81f9-eceb38d1b75e",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C116",
+      "claim": "PKC\u03b4 has been shown to phosphorylate H3T45 under apoptotic conditions in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work may be directly relevant to mammalian systems where PKC\u03b4 has been shown to phosphorylate H3T45 under apoptotic conditions (Hurd et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "755da6dc-92c5-49f7-a247-871f8ecb302f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C117",
+      "claim": "AKT has been identified as an additional H3T45 kinase under DNA damage conditions in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "although others have identified AKT as an additional H3T45 kinase under DNA damage conditions (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "74677dae-1dfa-4344-81c0-9a5130718c2b",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C118",
+      "claim": "H3K56 acetylation is induced by replicative stress in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear whether PKC is linked to H3K56 acetylation in mammals but this modification is induced by replicative stress and its deposition is mediated by p300/CBP, the functional homologue of Rtt109 (Das et al., 2009; Vempati et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "381afdd0-1683-4b60-b304-d6e45cad344f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C119",
+      "claim": "p300/CBP is the functional homologue of Rtt109 in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear whether PKC is linked to H3K56 acetylation in mammals but this modification is induced by replicative stress and its deposition is mediated by p300/CBP, the functional homologue of Rtt109 (Das et al., 2009; Vempati et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "dae385a9-e20e-4a28-ab30-7f0b81a9457a",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C120",
+      "claim": "Atypical protein kinase C zeta has been shown to phosphorylate and control the histone acetylation output of CBP in the context of neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, atypical protein kinase C zeta has been shown to phosphorylate and control the histone acetylation output of CBP in the context of neuronal differentiation (Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "1ed9dd58-5051-4b2e-aec4-b560e50a70e0",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "claim_id": "C121",
+      "claim": "Oncogene-driven replicative stress is an important contributory event in human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these links between PKC and CBP/p300 it appears likely that our findings will be directly relevant to human cancer where oncogene-driven replicative stress is an important contributory event (Bartek et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pkc1 kinase activity is required for protecting cells from replicative stress. Temperature-sensitive pkc1-14 cells are inviable at 34\u00b0C but rescued by sorbitol, yet remain sensitive to HU. The bck1\u0394 mutant is not HU-sensitive, indicating Pkc1 acts independently of the MAP kinase pathway. Wild-type Pkc1, but not catalytically dead Pkc1, rescues pkc1-14 growth defects in HU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 provide converging evidence from multiple experimental approaches (temperature-sensitive mutants, osmotic rescue, genetic epistasis with bck1\u0394, and complementation with kinase-dead mutant) that collectively demonstrate Pkc1 kinase activity is required for HU resistance through a MAP kinase-independent pathway. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "a486ca57-8101-4f32-bfaa-3be95a1494e4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pkc1 is required for H3K56 acetylation under replicative stress. Wild-type cells accumulate H3K56ac upon HU release, but pkc1-21 and pkc1-14 mutants show greatly reduced H3K56ac despite progressing through S phase. Pkc1 mutants also show reduced H3K9ac, suggesting defective Rtt109 activity. Pharmacological inhibition of Pkc1 with cercosporamide reduces H3K56ac but not H3K18ac, demonstrating specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C41 demonstrate through multiple independent pkc1 alleles, cell cycle analysis, and pharmacological inhibition that Pkc1 specifically promotes H3K56 acetylation under replicative stress. The specificity is established by showing H3K18ac is unaffected and that cercosporamide effects are non-additive with genetic inactivation. The observation of reduced H3K9ac provides additional support for Rtt109 involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "80baf482-8667-4a7c-9cb1-95ae6295afba",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pkc1 phosphorylates Rtt109 at threonine 46 (T46). Rtt109 contains a potential PKC consensus site at T46. In vitro kinase assays show Pkc1 phosphorylates Rtt109-Vps75 heterodimer at T46, which is reversed by lambda phosphatase. Pkc1 and Rtt109 interact in vitro. In vivo, Rtt109 T46 phosphorylation increases during HU treatment and decreases upon release. Cercosporamide blocks Rtt109 T46 phosphorylation in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51 provide strong evidence for direct Pkc1-mediated phosphorylation of Rtt109 at T46 through: (1) sequence analysis identifying a PKC consensus site, (2) phospho-specific antibody validation, (3) in vitro kinase assays with phosphatase controls, (4) co-immunoprecipitation showing interaction, and (5) in vivo phosphorylation dynamics that are Pkc1-dependent. The convergence of in vitro and in vivo data strongly supports direct phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phosphorylation of Rtt109 at T46 is functionally important for H3K56 acetylation. The rtt109\u0394 growth defect in HU is rescued by wild-type Rtt109 but not by non-phosphorylatable Rtt109(T46A), while phosphomimetic Rtt109(T46D) suppresses the defect. H3K56ac is severely depleted in rtt109\u0394 cells and restored by wild-type Rtt109. Rtt109(T46A) only partially restores H3K56ac with delayed kinetics, while Rtt109(T46D) promotes rapid, high-level H3K56ac.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C61 use complementary phospho-mutant analysis (T46A and T46D) to demonstrate functional importance of T46 phosphorylation. The phosphomimetic mutant phenocopies wild-type while the non-phosphorylatable mutant shows intermediate defects, providing strong evidence for a regulatory role of this phosphorylation in promoting Rtt109 acetyltransferase activity toward H3K56.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "4ab99a2b-6723-4646-9199-409fb06a41db",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pkc1-mediated phosphorylation stabilizes Rtt109 protein. Wild-type Rtt109 and Rtt109(T46D) are expressed to high levels upon HU release, but Rtt109(T46A) expression is delayed and reaches lower levels. Rtt109 protein levels are lower in pkc1-14 cells despite elevated RTT109 mRNA, suggesting post-transcriptional regulation and compensatory transcriptional upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 demonstrate that Pkc1 phosphorylation stabilizes Rtt109 through: (1) differential protein levels of phospho-mutants, (2) reduced Rtt109 protein in pkc1 mutants, and (3) elevated mRNA in pkc1 mutants indicating compensatory transcription. The data support a model where phosphorylation protects Rtt109 from degradation, though the mechanism is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "pkc1-14 and Rtt109(T46A) mutants show highly overlapping transcriptional defects. Genes upregulated or downregulated in pkc1-14 significantly overlap with those in Rtt109(T46A) mutants, but not genes regulated in opposite directions. GO term analysis shows strong overlap, with 'cell wall' and 'nucleolus' terms upregulated and 'telomere maintenance' and 'DNA helicase activity' downregulated in both mutants. However, Rtt109(T46D) cannot rescue pkc1-14 growth defects in HU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 use transcriptomics to demonstrate functional linkage between Pkc1 and Rtt109(T46) phosphorylation. The significant overlap in gene expression changes (with appropriate statistical testing) and GO term enrichment supports a common pathway. The failure of Rtt109(T46D) to rescue pkc1-14 defects (C76) appropriately indicates Pkc1 has additional functions beyond Rtt109 phosphorylation, leading to the refined model in C77.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pkc1 phosphorylates histone H3 at threonine 45 (H3T45) under replicative stress. H3T45 is conserved in S. cerevisiae. In vitro kinase assays show Pkc1 efficiently phosphorylates purified H3, with T45 confirmed as the major site by mass spectrometry. In vivo, H3T45 becomes strongly phosphorylated in wild-type cells upon HU release, but not in pkc1-14 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 provide strong evidence for Pkc1-mediated H3T45 phosphorylation through: (1) in vitro kinase assays with purified substrates, (2) mass spectrometry confirmation of the phosphorylation site, and (3) in vivo phosphorylation dynamics that are Pkc1-dependent. The convergence of biochemical and genetic evidence supports direct phosphorylation of H3T45 by Pkc1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "f003f2a3-d8bd-45a9-84e5-582853857bae",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H3T45 phosphorylation is required for H3K56 acetylation under replicative stress. H3K56ac is greatly reduced in H3(T45A) cells upon HU release but only slightly affected during normal cell cycle. H3(T45A) cells show reduced H3K56ac accumulation after HU removal. Rtt109(T46D) cannot suppress H3(T45A) defects in H3K56ac or growth in HU. Rtt109(T46D) also cannot rescue H3(K56R) growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C95 demonstrate functional coupling between H3T45 phosphorylation and H3K56 acetylation through: (1) H3(T45A) mutant analysis showing context-dependent effects (HU vs. normal cycle), (2) epistasis experiments showing Rtt109(T46D) cannot bypass H3(T45A) defects, and (3) control showing Rtt109(T46D) cannot bypass H3(K56R). The data support a model where H3T45 phosphorylation is upstream of or required for H3K56 acetylation specifically under replicative stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "22e9db84-755c-456a-bf7e-8f857a87bb91",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "pkc1-14, H3(T45A), and Rtt109(T46A) mutants exhibit common transcriptional defects. Pairwise comparisons show highly significant overlaps in upregulated genes across all three mutants. Of 51 genes upregulated in pkc1 and Rtt109(T46A) mutants, 41 (80%) are also upregulated in H3(T45A). Consistent co-regulation of 'DNA helicase' GO term genes is observed across all mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 extend the transcriptomic analysis to include H3(T45A), demonstrating that all three components of the proposed pathway (Pkc1, Rtt109 T46 phosphorylation, H3T45 phosphorylation) show overlapping transcriptional consequences. The high percentage overlap (80%) and consistent GO term enrichment provide strong support for a common mechanistic pathway linking these modifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "492e5b89-442e-4fc5-a61d-a61406b85f15",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pkc1 coordinates H3T45 phosphorylation and H3K56 acetylation during replicative stress response. Pkc1 phosphorylates both Rtt109 (stabilizing it and promoting its acetyltransferase activity) and histone H3 at T45 (which is required for H3K56 acetylation). This represents a distinct pathway from Cdc7/Dbf4-mediated H3T45 phosphorylation during normal cell cycle. Pkc1 promotes re-activation of H3 modifications upon removal of replicative stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C96, C101-C108 synthesize the major findings into a coherent model supported by the collective experimental evidence. The model is well-supported by: (1) direct phosphorylation of both Rtt109 and H3T45 by Pkc1, (2) functional requirement for both phosphorylation events, (3) epistasis relationships, (4) transcriptional overlap, and (5) context-specificity (replicative stress vs. normal cycle). The model appropriately acknowledges both established (Cdc7/Dbf4) and novel (Pkc1) pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2eb2a800-884c-4bbb-88c5-bd776c59d700",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on H3K56 acetylation and H3T45 phosphorylation. H3K56ac and H3T45 phosphorylation are important chromatin modifications during chromatin assembly. Rtt109 mediates H3K56ac and cooperates with chaperones Asf1 and Vps75. Cdc7-Dbf4 controls H3T45 phosphorylation during unperturbed cell cycle. Previous evidence suggested no relationship between H3T45 phosphorylation and H3K56ac in unperturbed cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C13, C28 provide established background knowledge with appropriate citations. These claims accurately represent prior work and set up the knowledge gap (C10, C12) that motivates the current study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on Pkc1 function. S. cerevisiae has one PKC isoform (Pkc1) with major roles in cell wall integrity signaling and nuclear functions including cell cycle regulation. Pkc1 directly inhibits Ndd1 activity and pkc1 mutants are HU-sensitive. Genetic links exist between PKC1 and RSC chromatin remodeling complex components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 provide established background on Pkc1 with appropriate citations. These claims accurately represent prior knowledge about Pkc1 functions and genetic interactions, setting up the rationale for investigating Pkc1's role in chromatin modification during replicative stress.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "7993b733-d677-4043-a0ec-377ef5c3377f",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparative biology and potential mammalian relevance. Rtt109 also acetylates H3K9. PKC\u03b4 phosphorylates H3T45 in mammalian cells under apoptotic conditions, though AKT is also implicated under DNA damage. H3K56ac is induced by replicative stress in mammals and deposited by p300/CBP (Rtt109 homologue). PKC zeta phosphorylates and controls CBP activity. Oncogene-driven replicative stress is important in cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C78, C111, C114-C121 provide appropriate context from mammalian systems with proper citations. These claims accurately represent published work and appropriately discuss potential translational relevance without overstating the connections. The discussion acknowledges uncertainties (e.g., whether PKC is linked to H3K56ac in mammals).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    },
+    {
+      "id": "e14c4959-b4a0-4eb7-adea-e6f3411a0ff0",
+      "content_id": "f5214be6-402e-4d57-958f-bedf2e0cd818",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Preliminary and unpublished observations. Perturbed Pkc1 activity may lead to defective chromatin assembly (preliminary data not shown). H3(T45A) is sensitive to both MMS and 6-AU while rtt109(T46A) is only sensitive to MMS (data not shown).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109, C112-C113 reference unpublished data that cannot be evaluated. C109 is appropriately presented as speculation with preliminary support. C112-C113 suggest differential stress responses but without the actual data, the reliability and significance cannot be assessed. These observations would require full presentation and analysis to be properly evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:27:26.956239Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ebe0db41-3669-447f-a7f7-975dabefb273",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "a0736d08-3e3a-4232-9cca-1972c4382217",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "f8733dd7-0864-4b32-a218-cd5e7e01c72c",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "fda738f2-fd58-43b2-a1dd-e98a683e7775",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "e4ee2922-c484-4d64-9225-cf7a79016a64",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "45d2db12-814b-4e16-be35-2c99a7ed18c1",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "8beab2b3-cf6e-4ada-bf4d-ad044145b80d",
+      "result_id": "f63dec76-82d9-4a71-ac66-74a0791a7e8d"
+    },
+    {
+      "claim_id": "86358762-4399-4821-88d0-e47952544dce",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "60de6d0a-d259-42f4-a7b8-872f4ca7dff4",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "4bff2756-748b-4343-8f35-e9e92473b8ec",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "501565a8-ce06-4812-9bf0-03ee1978ac7f",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "0b6c9331-81d1-48f0-9314-c6bc8471985e",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "f6f4b416-6793-4590-8767-efe1376fccc7",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "29c65b0d-c79e-4404-ae46-7d3667972aa7",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "33a4c541-5673-4c96-98f1-da2bba4eaa36",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "166ac36d-a612-4fe7-9f1d-276913ea678d",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "225853ed-c686-4956-81f4-9629b116c39e",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "2e05e2cc-7e58-4ea8-ba26-958ea9442948",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "6b4fd160-07cc-4046-aff5-a7e86a06e6d7",
+      "result_id": "a486ca57-8101-4f32-bfaa-3be95a1494e4"
+    },
+    {
+      "claim_id": "a9d0aeb2-2f91-47a5-9afc-50637685876e",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "47b2cba6-ee7b-4e78-96cd-f2295fc6a104",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "f0a84415-bb5c-47c9-8b08-2ec4ae3c9e4a",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "e7eea37e-87f6-4987-9697-a840c7374ac1",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "2881db58-1ffd-4117-9f60-b6082f4c2856",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "2a86d3bc-87c4-4c2d-a738-fa2bcabe7fe7",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "4743963b-04a9-4271-a511-344b5f76a869",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "831d2138-4e19-420e-b063-b5773aeb76ff",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "a7666734-719d-436f-9b6c-793823a52873",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "8554c006-7ff8-4f7d-8176-030ae4394e85",
+      "result_id": "80baf482-8667-4a7c-9cb1-95ae6295afba"
+    },
+    {
+      "claim_id": "33c7faeb-15a5-4341-b28c-f1bb43b9fc78",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "942a1c0c-ab45-4f05-96aa-57c30038e022",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "9835eea0-f5c7-4b65-b251-0a636fc78ba6",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "580feee6-5a6b-4fe8-8961-6f6630f42cfb",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "d019810b-1817-400b-8ac5-7157a6171625",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "dd54016a-0bc4-47ac-9862-237fd90319d1",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "854a6b43-6f00-4c68-88f9-671825a90fc9",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "2712e3c8-c541-4303-8d9a-ad30b13dea41",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "1a3fb92b-75b3-4f17-9ad7-8f5c2be941f9",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "5afb0920-ee38-4cfd-9b88-16a42f81349d",
+      "result_id": "e4c9b2f4-eff1-407c-9641-9c43ab87f270"
+    },
+    {
+      "claim_id": "6c3ba210-2dde-42c1-9ffe-87acca45bdf8",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "db5d5bf6-8786-4974-9ab0-2ee8e06df08a",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "e8bab02c-c8c3-4642-9cf7-d6bae5a9902f",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "d2f0351b-129f-4434-b7bc-6885189eb205",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "7f5c6d7c-0f01-43c1-971d-b8f40bb94edd",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "864111a1-4d61-4c9f-9336-fe36a768bf94",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "8c6daa31-78d7-4aa2-a71b-6e90344fead1",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "3674e45a-175c-48b9-92a5-021be73458d4",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "f138d08f-a132-4902-aac6-8d0568640e20",
+      "result_id": "4ab99a2b-6723-4646-9199-409fb06a41db"
+    },
+    {
+      "claim_id": "8dbe3c39-2577-4857-9376-d7300b2b05bc",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "cfab8489-c2a0-4087-8e15-c60a48920b18",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "c3b1aaad-e256-4b4f-b395-28fd32f05c55",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "4ef26abd-b267-4c5d-a13c-5d85fb5298ff",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "5b8b48b9-2bcf-4b2d-943b-22c3ea7837a2",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "24b4fe0d-1437-4352-8e25-8be78ec8860f",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "9eb4ee2f-b3ef-4da1-887d-f4f66419b404",
+      "result_id": "78f2d8e1-c6b0-47a4-840f-5782725e74fb"
+    },
+    {
+      "claim_id": "8d8214aa-cc76-4d01-b9f8-a6dd274b699b",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "2ee168f4-3fbd-4953-a3e3-85d1dfd18d0b",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "84de4ca9-6fce-43cf-b638-0957b199745f",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "011f8b22-7a69-412c-9061-c3417eac7080",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "f692143b-44fb-4899-a6e0-45fbf8f59f7b",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "f5fb705d-deb2-46c7-b907-223c767a847b",
+      "result_id": "615e0e43-b8dc-4a70-bb76-484b29a0fb2d"
+    },
+    {
+      "claim_id": "e0bdff96-1867-411e-b29d-44cd53b9cd95",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "e2e4eddc-cc2c-4a85-9901-18e7712c3a6f",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "ae68eea0-d74e-444b-81d0-69721b6eff79",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "60e01d5e-0b99-4677-9d81-06916b809da3",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "bbc506cf-b618-42a8-b96f-f990d7ce45b4",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "782a8079-cffd-4051-b1d3-c62db7ec15d3",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "794d9059-4be3-4296-bfb9-92c885628a2f",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "66179988-7efd-4e9f-ad24-06e83ea66694",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "336caa98-f849-457d-9eb6-d661a9948eea",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "0e523f4a-d9d2-4753-8330-8ef3547e14b5",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "ab8b478a-7117-4db3-9136-4ec8ad1387ed",
+      "result_id": "f003f2a3-d8bd-45a9-84e5-582853857bae"
+    },
+    {
+      "claim_id": "4c087601-0e09-4092-b87d-7d28df9db8aa",
+      "result_id": "22e9db84-755c-456a-bf7e-8f857a87bb91"
+    },
+    {
+      "claim_id": "fc0252b1-6a82-40f9-a628-32535a898e35",
+      "result_id": "22e9db84-755c-456a-bf7e-8f857a87bb91"
+    },
+    {
+      "claim_id": "008b8958-0bbe-447c-aba9-03593f2b3fa4",
+      "result_id": "22e9db84-755c-456a-bf7e-8f857a87bb91"
+    },
+    {
+      "claim_id": "231a2070-6e53-41a2-bc21-56d05791c1d5",
+      "result_id": "22e9db84-755c-456a-bf7e-8f857a87bb91"
+    },
+    {
+      "claim_id": "eb21ed53-a2a0-42f5-9919-d732495ac423",
+      "result_id": "22e9db84-755c-456a-bf7e-8f857a87bb91"
+    },
+    {
+      "claim_id": "82f802c1-23bf-44cf-9c9d-dbc728c10e9e",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "ad406a32-ed75-4347-ba57-69487b272e79",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "eb21ed53-a2a0-42f5-9919-d732495ac423",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "e82f70f0-eed4-44b2-9ceb-f58d5827f4ac",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "1efd007a-61b4-4722-8855-d19d1fd24554",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "155a95a7-5aa2-4f97-962d-6115931dc939",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "ff1221f7-e22c-42e9-9de3-e9d08a0e8cf1",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "89018406-b5d2-4d63-9ac9-554aa3a589f8",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "322eed1f-83fc-441e-8c91-e758d1fa5dda",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "7f25d1ff-13d9-4420-af2f-6935af4c386a",
+      "result_id": "492e5b89-442e-4fc5-a61d-a61406b85f15"
+    },
+    {
+      "claim_id": "f049570d-2714-460d-a302-9762a489297d",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "4eef057e-53d8-4556-8d0b-d99ee6c324a4",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "de64ea70-2875-4537-87cf-b890eb2b89e8",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "eb8f4d48-cb1e-4df1-b05e-973c487313cb",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "3ff80040-9611-4b7a-9c88-45e9df461e5c",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "f93d4a63-31a0-4627-b690-7a380623ce71",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "7caf408f-a580-4bc3-9384-5abfcb427a00",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "9fa64ef9-1e04-4e6d-99be-abc56d34782b",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "111451c9-d781-4544-a441-63d152f43e96",
+      "result_id": "2eb2a800-884c-4bbb-88c5-bd776c59d700"
+    },
+    {
+      "claim_id": "a407edd5-8191-4d88-ab97-81eb1bf41154",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "c6dc3648-01c9-4193-9130-e98b36c0dc69",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "4a923654-e741-490f-83cf-f8137248d175",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "dd57feea-8a17-4990-8772-e9bef2e2a17a",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "aa52a9ee-8adc-465a-8725-40d6f041b8bd",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "4cddecbb-eff9-454e-b977-b74b055e83a7",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "cf769602-08e0-462f-9462-6b5228ab04ff",
+      "result_id": "2afb3d44-cffa-45ff-8a52-ff7b8b2684b4"
+    },
+    {
+      "claim_id": "b9f9d446-2bb0-4421-bc8b-56f7821b34a7",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "6dc6aa21-d54d-4133-b3d4-5308735baed9",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "767ef19c-28c1-4d6b-bfb1-fbf481cc01f3",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "446a8db1-c209-4c26-a975-145e30978970",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "bb11370e-e54c-4139-a33b-d225d940c478",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "c22481b2-28fa-467b-81f9-eceb38d1b75e",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "755da6dc-92c5-49f7-a247-871f8ecb302f",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "74677dae-1dfa-4344-81c0-9a5130718c2b",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "381afdd0-1683-4b60-b304-d6e45cad344f",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "dae385a9-e20e-4a28-ab30-7f0b81a9457a",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "1ed9dd58-5051-4b2e-aec4-b560e50a70e0",
+      "result_id": "7993b733-d677-4043-a0ec-377ef5c3377f"
+    },
+    {
+      "claim_id": "1e309a83-3b9a-4437-9f6e-f5fd5742efe2",
+      "result_id": "e14c4959-b4a0-4eb7-adea-e6f3411a0ff0"
+    },
+    {
+      "claim_id": "014b4b29-ad86-4722-99ff-711906342702",
+      "result_id": "e14c4959-b4a0-4eb7-adea-e6f3411a0ff0"
+    },
+    {
+      "claim_id": "7ee9610a-7bad-4031-9e03-7bee762a8323",
+      "result_id": "e14c4959-b4a0-4eb7-adea-e6f3411a0ff0"
+    }
+  ],
+  "comparisons": []
+}

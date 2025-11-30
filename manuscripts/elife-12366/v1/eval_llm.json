@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C26",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors used the Allen Mouse Brain Connectivity Atlas (Oh et al., 2014) to construct a binary adjacency matrix representing 426 nodes (213 symmetric pairs) and 8820 directed edges (7804 undirected), assuming bilateral symmetry and applying a p<0.01 threshold for connection significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9, C26, and C96-C101 collectively describe the data source and processing methodology. The use of the Allen dataset is well-documented through citations, and the data processing steps (thresholding, bilateral symmetry assumption) are clearly stated with robustness checks at alternative thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The mouse connectome exhibits a degree distribution with many low-degree nodes and a long tail of high-degree nodes, with an inverse relationship between degree and clustering coefficient (power law fit \u03b3=-0.44). Standard network models (random, small-world, scale-free) fail to replicate these properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C27-C30 are supported by Figure 1 showing degree and clustering distributions, with statistical fits provided. The comparison to standard models demonstrates clear differences in network topology, consistent with prior work (Oh et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C72"
+    ],
+    "result": "A purely geometric proximal attachment (PA) model with exponentially decaying connection probability fails to capture the broad degree distribution of the mouse connectome, producing narrow Gaussian-like distributions instead, though it does exhibit an inverse relationship between degree and clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C72 are supported by Figure 2 showing model results across different length constants L. The PA model's failure to generate the full range of degree values is clearly demonstrated, motivating the need for additional topological rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C60"
+    ],
+    "result": "The mouse connectome exhibits asymmetric directed degree distributions: in-degree is approximately normally distributed while out-degree is approximately exponential, with no significant correlation between them (\u03c1=0.127, p=0.065). High-degree nodes have predominantly outgoing connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 and C60 are supported by Figure 3 showing the directed degree analysis with statistical tests. The lack of correlation between in- and out-degree is properly tested, and the asymmetry in degree distributions is clearly visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The Source Growth Proximal Attachment (SGPA) model, where source nodes are selected proportional to out-degree and targets by distance, successfully captures the directed degree distributions of the mouse connectome (normal in-degree, exponential out-degree), while the Target Attraction PA (TAPA) model produces opposite patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C73-C75 are supported by Figure 5 comparing SGPA and TAPA models to the connectome. The SGPA model's match to directed degree distributions is clearly demonstrated, and supplementary figures show that out-degree specifically (not total degree) is the critical factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The mouse connectome has a reciprocity coefficient of 0.13 (vs. 0.03 expected by chance), with reciprocal edges significantly shorter than non-reciprocal edges (t(8818)=13.25, p<<10^-10, Cohen's d=0.47). The SGPA model matches this reciprocity at L=0.725 mm but underestimates physical edge lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by statistical analysis and Figure 5c-e. The reciprocity analysis includes proper statistical testing, and the model limitation regarding edge length distribution is acknowledged with visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The SGPA model captures the joint clustering-degree distribution of the connectome (power law \u03b3=-0.48 vs. \u03b3=-0.44 for connectome), the negative correlation between clustering and mean edge length (\u03c1=-0.482 vs. \u03c1=-0.238 for connectome), and the nodal efficiency distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by Figure 6 showing quantitative comparisons. The power law fits are provided with R\u00b2 values, correlations include statistical significance, and the nodal efficiency distributions show close visual agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C93",
+      "C94"
+    ],
+    "result": "Under targeted attack (node removal by decreasing degree), the SGPA model's response is more similar to the mouse connectome than standard models, but the connectome disintegrates faster and shows more rapid decline in global efficiency, suggesting greater vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 and C93-C94 are supported by Figure 7 showing lesioning analysis. The comparison includes both giant component size and global efficiency metrics, with proper controls for connection density effects shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Undirected graph representations fail to capture key connectivity properties arising from directed structure, as different organisms show different in/out-degree relationships (e.g., C. elegans has identical exponential in- and out-degree distributions unlike the mouse).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by citations and logical inference from the directed analysis. The comparison to C. elegans (White, 1985; Amaral et al., 2000) demonstrates that directed properties vary across organisms and scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Low-degree nodes with high clustering coefficients are candidates for specialized processing, while hub nodes with predominantly outgoing connections suggest a role in information distribution rather than integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 involve functional interpretations of anatomical connectivity patterns. While the anatomical observations (C65) are data-supported, the functional implications (C64, C66) are speculative and explicitly conditional on assumptions about structure-function relationships that are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Above-chance reciprocity in the mouse connectome is hypothesized to be important for balancing functional integration and segregation through bidirectional connections between brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by citations to prior theoretical work (Tononi et al., 1992, 1994; Sporns et al., 1991). These represent established hypotheses in the field rather than new claims from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work on brain network models has primarily addressed spatial embedding with proximity-based connection rules, capturing properties like connection length distributions and degree-clustering relationships, but existing models (including homophilic rules) lack straightforward biophysical interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C25 summarize prior literature with appropriate citations. These are background claims establishing context and motivation for the current work, accurately representing the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Biological mechanisms supporting exponential distance-dependence include axonal outgrowth models where connection probability depends exponentially on distance, and chemical gradients for axon guidance that decay exponentially with distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by citations to prior work (Kaiser et al., 2009; Murray, 1993; Isbister et al., 2003; Mortimer et al., 2009; Rubinov et al., 2015). These represent established biological knowledge used to justify model design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C4",
+      "C5"
+    ],
+    "result": "The SGPA model captures much of the organizational structure of the mouse connectome using simple geometric and topological rules, suggesting that mesoscale brain organization may not require precise connectivity specification but could be based on relatively simple developmental instructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77, C4-C5 represent the main interpretive conclusion. While C76 is supported by the comprehensive model results, C77 is speculative about developmental mechanisms. The model's success is demonstrated, but the claim about not requiring precise specification is an inference that would require additional developmental or genetic evidence to fully support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The source growth rule could be biologically realized through neurotrophin signaling, where target neurons secrete limited neurotrophins that are retrogradely transported to source neurons, promoting survival and axon branching in populations with many outgoing connections, creating a 'rich-get-richer' phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C81 are supported by citations establishing neurotrophin biology. However, C82-C83 are speculative connections between this biology and the model's source growth rule. While biologically plausible, this mechanism is proposed as a hypothesis rather than demonstrated, and alternative mechanisms are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The SGPA model provides an alternative to power-law degree distributions: the undirected degree distribution should approach an exponentially modified Gaussian (convolution of normal in-degree and exponential out-degree), better capturing the low-degree portion than scale-free models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by mathematical reasoning and Figure 6\u2014figure supplement 2, with empirical validation in Figure 1b. The mathematical derivation of the expected distribution is sound given the independence of in- and out-degree.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "While instantiating all nodes at network initialization is biologically implausible, a node-by-node variant of the SGPA model yields qualitatively similar results, with differences being that youngest nodes have extremely low degree and clustering of 0 or 1, and positive correlation between in- and out-degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3. The limitation is acknowledged and tested with an alternative implementation, though the deviations from connectome properties are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The SGPA model cannot simultaneously account for edge length distribution, reciprocity, and appropriate dimensionality when fitted to reciprocity (L=0.725 mm), as it predicts significantly shorter edge lengths than observed in the connectome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by comparison of Figure 5c and 5d, with explicit acknowledgment in the text. This is a clearly stated limitation of the model with visual evidence of the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Cortico-cortical projections have higher reciprocity than cortico-subcortical projections in both macaque macroscale and mouse mesoscale connectomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by citations to Kaiser and Varier (2011) and Oh et al. (2014). This represents prior knowledge used to discuss model limitations regarding heterogeneous connectivity rules.",
+    "result_type": "MINOR"
+  }
+]

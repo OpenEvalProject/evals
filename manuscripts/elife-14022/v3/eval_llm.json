@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C41",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors developed RDNets, a web-based software that performs automated linear stability analysis of reaction-diffusion networks with N nodes, using a computer algebra system to automate algebraic calculations. The software represents secreted molecules as diffusible nodes and cell-autonomous components as non-diffusible nodes, with interactions represented by first-order kinetics rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C41, C46-C51, C148-C149 collectively describe the development and technical implementation of RDNets. The software's functionality is demonstrated through its application to multiple biological systems (C8-C9) and synthetic circuits (C10), with results shown in multiple figures. The technical details are consistent and the software is made publicly available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C54",
+      "C55"
+    ],
+    "result": "The automated analysis identified 21 three-node and 64 four-node minimal reaction-diffusion networks that can form patterns. These networks fall into three types based on diffusion requirements: Type I (requires differential diffusivity), Type II (allows equal diffusivity), and Type III (unconstrained diffusivity). Overall, 70% of identified networks are Type II or Type III and do not require differential diffusivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31, C54-C55 present the primary quantitative findings from the comprehensive network catalog. The results are supported by Table 1 showing the filtering process, Figure 1b showing the distribution of network types, and supplementary figures showing all identified networks. The mathematical analysis methodology is described in detail in the Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C52",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Type III networks represent a novel class that has not been characterized before, with patterning conditions independent of specific diffusion rates. These networks are extremely robust to parameter changes compared to Type I and Type II networks and can form all possible combinations of in-phase or out-of-phase periodic patterns depending on topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe the discovery and properties of Type III networks. The novelty claim (C56) is supported by extensive literature review (C17-C22). Robustness is quantified in Figure 1b and supplementary figures. Pattern formation capabilities are demonstrated through simulations in Figure 1c and Appendix 1. The mathematical basis is explained through graph-theoretical analysis (C69-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The graph-theoretical analysis reveals that differential diffusivity in two-node networks arises from the opposite nature of stability and instability conditions. Non-diffusible nodes can act as additional pivots (Type II) or implement positive feedbacks that drive instability independently (Type III). Immobile factors can act as 'capacitors' that retain and amplify perturbations independently of diffusion coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 present the mechanistic insights from the graph-theoretical formalism. The analysis is supported by Figure 2 showing the mathematical conditions and simulations for all three network types. The explanation challenges the classical view (C73, C76) with theoretical justification in Appendix 3. The simulations in Figure 2c demonstrate that pattern appearance reflects amplitude differences rather than range differences (C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RDNets analysis of the Nodal/Lefty system identified two possible minimal networks: one where Lefty inhibits Nodal signaling indirectly at the receptor level (Type II), and another where Lefty inhibits Nodal directly (Type III). Both models suggest the system may form patterns without differential diffusivity, though the Type II network becomes more robust when constrained with the experimentally measured diffusion ratio (d=7.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C93 present the application of RDNets to the Nodal/Lefty system. The analysis is constrained by known regulatory interactions and experimental measurements (C78). The two predicted mechanisms (C82-C83) align with previously proposed mechanisms (C84). Robustness analysis with and without diffusion constraints is shown in Figures 3c-d. The quantitative prediction for minimum diffusion ratio (C89) is derived from experimental clearance rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C132",
+      "C133"
+    ],
+    "result": "RDNets analysis of the BMP/Sox9/Wnt digit patterning system reveals that the three-node BSW network is a Type II network that can form patterns with equal diffusivities. Extension to a five-node model predicts that \u03b2-catenin must indirectly inhibit Sox9 through pSmad1/5/8 to recapitulate the opposite BMP expression and signaling patterns, and identifies additional robust interactions including negative feedbacks from Sox9 to Wnt and from pSmad1/5/8 to BMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C106, C132-C133 present the BSW system analysis. The three-node analysis (C94-C98) reinterprets previous work with new insights about equal diffusivity. The five-node analysis (C99-C104) is constrained by experimental patterns shown in Figure 4a and predicts novel interactions shown in Figure 4b. The prediction that most five-node networks are Type III (C105-C106) suggests a general trend with network complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "RDNets was used to design extensions to an existing synthetic circuit (Chen and Weiss 2005) to create reaction-diffusion patterning systems. The analysis identified 16 minimal networks (5 Type I, 3 Type II, 8 Type III), with Type II and Type III networks being most robust. A simple Type II extension requires destabilizing the signaling hormone and receptor, and introducing another hormone with negative feedback, where the negative feedback must be stronger than the positive feedback and decay rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 demonstrate the synthetic biology application of RDNets. The starting circuit is from published work (C112-C113). The screen results (C115-C116) are shown in Figure 5\u2014figure supplement 1. The specific design recommendations (C117-C118, C120) are derived from the mathematical conditions shown in Figure 5c. The software's ability to generate kinetic models for simulation (C122) is demonstrated in Figures 5d-e.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C138",
+      "C139"
+    ],
+    "result": "RDNets provides several advantages over previous numerical approaches: it can be run from web browsers without large computational power, yields complete closed-form solutions rather than sampling parameter space, derives mechanistic conditions for pattern formation, and can constrain topologies with qualitative and quantitative experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C124-C128, C138-C139 describe the methodological advantages of RDNets. These advantages are demonstrated through the three applications (Nodal/Lefty, BSW, synthetic circuits) where experimental constraints successfully narrow down candidate networks. The completeness claim (C125) is supported by the systematic enumeration shown in Table 1. The mechanistic insights (C126) are demonstrated through the graph-theoretical analysis in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C129",
+      "C144"
+    ],
+    "result": "The analysis reveals that realistic reaction-diffusion systems are based on mechanisms fundamentally different from the classical concepts of short-range activation and long-range inhibition based on differential diffusivity. The novel Type III networks challenge models that have dominated developmental and theoretical biology for decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C129, C144 present the major conceptual conclusion of the work. This is supported by the finding that 70% of networks don't require differential diffusivity (C30-C31), the discovery of Type III networks (C56-C63), and the mechanistic explanation through graph-theoretical analysis (C73-C76). The challenge to classical models is substantiated by extensive literature review (C11-C22) and detailed theoretical analysis in Appendix 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose an evolutionary hypothesis that the high general robustness of Type III Nodal/Lefty networks might have played a role in the evolution of the system, with the indirect signaling inhibition of Type II networks being fine-tuned during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131 present speculative evolutionary hypotheses based on the robustness analysis. While the robustness data (C91-C92) supports that Type III is more robust without diffusion constraints and Type II is more robust with the measured diffusion ratio, the evolutionary trajectory shown in Figure 3\u2014figure supplement 1 is speculative. No experimental evidence for evolutionary history is provided, making this an interesting hypothesis but not a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Each network is associated with topologies that exhaustively determine all in-phase and out-of-phase relations between periodic patterns, enabling design of networks that promote co-localized expression of any desired combination of factors. This could enable tissue engineering applications where co-localized expression of differentiating factors induces specific tissues, coupled with three-dimensional pattern-forming capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 describe potential applications based on the network catalog. The exhaustive determination of phase relationships (C140) is demonstrated in Figure 5d showing all possible pattern combinations. The 3D patterning capability (C143) is demonstrated in Figure 5e. However, the tissue engineering applications (C142) are speculative future applications supported only by citation, making this a partially supported result with clear potential but no experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews the historical context of Turing reaction-diffusion models, noting that while the Gierer-Meinhardt model postulated differential diffusivity requirements and numerous studies have applied these concepts, evidence for specific activator-inhibitor pairs and differential diffusivity has been limited. Most models have been reduced to two diffusible reactants, leaving the influence of cell-autonomous factors largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C22 provide the background and motivation for the study. These are well-supported by extensive citations to the literature (Turing 1952, Gierer and Meinhardt 1972, and numerous developmental biology studies). The assessment of the field's limitations (C14-C15, C21-C22) is supported by citations and sets up the knowledge gap that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript reviews challenges in understanding complex gene regulatory networks, noting that mathematical biology has identified network motifs for basic behaviors but has been difficult to scale up. Previous numerical simulation approaches have overcome this obstacle but demand large computational power, have incomplete coverage, and lack the explanatory power of analytical approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide methodological context and motivation. These are supported by citations to previous work in mathematical biology (C35) and numerical approaches (C37). The limitations of numerical simulations (C38-C40) are well-established in the field and motivate the analytical approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The manuscript describes the principles of linear stability analysis and its application to reaction-diffusion systems. Minimal 2-node networks must have 4 edges and allow only two topologies (activator-inhibitor and substrate-depleted). The Abel-Ruffini theorem limits general algebraic solutions to systems with four or fewer nodes, though five-node networks can sometimes be solved with appropriate constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C150-C154 describe established mathematical principles and their application. The principles of linear stability analysis (C42-C43) are standard and cited to Murray 2003. The limitations for 2-node networks (C151-C152) are established knowledge. The Abel-Ruffini theorem limitation (C153) is a mathematical fact, and the practical workaround for five-node networks (C154) is demonstrated with the BSW system in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The manuscript discusses the potential for synthetic biology applications, noting that reaction-diffusion mechanisms have unique self-organizing capabilities but their implementation has been impeded by small parameter spaces, differential diffusivity requirements, and gaps between abstract models and real circuits. RDNets provides a catalog of networks that eliminates the differential diffusivity requirement and explicitly includes non-diffusible factors that are easy to relate to synthetic toolkits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111, C134-C137 discuss synthetic biology context and applications. The challenges in synthetic implementation (C108-C110) are supported by citations. The advantages of the RDNets catalog (C111, C136-C137) are demonstrated through the synthetic circuit design example (Figure 5). The success of catalog approaches in synthetic biology (C134-C135) is supported by citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The software RDNets is available at http://www.RDNets.com and was used to examine self-organizing networks controlling embryonic axis specification and digit patterning, and to extend synthetic circuits. The approach can be extended to numerous other patterning processes and may contribute to widespread use of mathematical biology, potentially being applied to other dynamical processes like oscillations and traveling waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C145-C147 describe the software availability and applications. The software availability (C6) is verifiable. The applications to developmental systems (C8-C9) and synthetic circuits (C10) are demonstrated in the Results section. The potential for extension to other systems (C145) is supported by citations. The predictions about future impact (C146-C147) are reasonable extrapolations but remain speculative.",
+    "result_type": "MINOR"
+  }
+]

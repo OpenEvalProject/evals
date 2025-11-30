@@ -1,0 +1,457 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors developed open-source software that uses fluorescent markers (SCM::GFP for seam cells and dlg-1::GFP for gut/hypodermal junctions) to computationally untwist C. elegans embryos, enabling investigation of neurodevelopmental events in late embryogenesis. The software includes automated segmentation with manual verification, annotation capabilities for tracking 3D positions over time, and is implemented as a MIPAV plugin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C37-C40, C43, C65-C71, C74-C75, C77-C78, C137-C140 collectively describe the software development and its capabilities. The method is demonstrated with actual data (C45-C51), figures show the untwisting process (Figure 1), and validation experiments confirm accuracy (C82-C89). The software is publicly available and documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The untwisting algorithm preserves spatial distances within the embryo. Validation measurements comparing twisted and untwisted embryos showed population average differences of 0.4\u00b10.3 \u03bcm for seam cell pair H0, 0.3\u00b10.2 \u03bcm for pair T, and 2.5\u00b11.6 \u03bcm for pharyngeal length across six embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 present quantitative validation data with appropriate controls (comparing distances in twisted vs. untwisted volumes). The measurements use independent landmarks (seam cells and pharynx) with small errors relative to embryo size (~162 \u03bcm). Figure 2 and supplementary data support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors tracked seam cell nuclei, CAN, ALA, and AIY neurons, and ALA neurites in eight untwisted embryos. During elongation from 86\u00b15 \u03bcm to 162\u00b119 \u03bcm, seam cell nuclei moved laterally toward the midline, maintained fixed dorso-ventral positions, and showed biphasic axial displacement with fast linear growth followed by a plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51, C90-C94 describe the experimental application and observations. The data are supported by quantitative measurements (n=5 embryos for morphology), figures showing trajectories (Figure 3), and citations to prior work confirming biphasic elongation patterns. The observations are consistent across multiple embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Seam cell nuclear positions are highly stereotyped across embryos. After temporal alignment using three-parameter logistic fits to axial trajectories, positions showed average standard deviations of 0.8 \u03bcm (X), 0.7 \u03bcm (Y), and 4.6 \u03bcm (Z) across 20 seam cell nuclei and all timepoints in five embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C96-C103 describe the temporal alignment procedure and quantify stereotypy. The three-parameter logistic function was validated against other fitting functions (Figure 4\u2014figure supplement 2, Table 1). The small standard deviations relative to embryo dimensions support high stereotypy. Multiple embryos (n=5) provide adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Elongation rate varies by position along the embryo. The distance between origin and H0 increased from 2.4 to 23.8 \u03bcm, while distance between V6 and T remained constant at 22.5 \u03bcm. Other adjacent pairs increased 6.8\u00b12.8 \u03bcm. This differential elongation reflects the tadpole-like initial morphology requiring greater head movement to achieve uniform diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C108-C113 present position-dependent elongation data from fitted trajectories (Figure 5). The measurements are internally consistent and supported by both raw averaged and fitted data. The interpretation (C112-C113) logically follows from the asymmetric initial morphology. However, the claim of 'significance' in C110 lacks statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "ALA and AIY neurons move in concert with neighboring seam cells, suggesting passive movement during elongation, while CAN neurons actively migrate faster than surrounding seam cells. Neuronal motion showed greater variability than seam cells, with ALA and CAN (especially CANL) being considerably more variable between datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C118-C122 describe neuronal tracking in four embryos. The passive vs. active migration distinction is supported by comparative trajectory analysis (Figure 6B). However, the interpretation of 'passive dragging' (C56) is inferential. Greater variability in neurons vs. seam cells is documented (Figure 4\u2014figure supplement 3, Supplementary files 2-4), though sample size is limited (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ALA neurite outgrowth starts toward the end of elongation and continues for ~240 minutes after other cells reach final positions. ALA has a dorsal cell body with paired neurites extending ventrally into the nerve ring, then turning posteriorly along the lateral nerve cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C124-C126 describe ALA morphology and neurite growth timing. The morphology description (C124-C125) is supported by established literature (White et al., 1986). The timing of neurite outgrowth (C58-C59, C126) is derived from tracking data in two embryos (Figure 6, Videos 5-6). Limited sample size (n=2) is a weakness, but the observation is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C95",
+      "C127"
+    ],
+    "result": "This method is the first to track cell positions in the context of the entire embryo from twitching to hatching, and the first to model neurite growth and positions in the post-twitching embryonic regime for any organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C95, C127 assert novelty. The claims are supported by the demonstrated capability to track through late embryogenesis (previously inaccessible due to movement), the untwisting validation, and tracking of multiple cell types and neurites. The authors appropriately qualify with 'to our knowledge' and cite prior work showing earlier stages only.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C44",
+      "C51"
+    ],
+    "result": "Detailed positional information from multiple embryos enabled development of a composite model showing movement of cells and neurites in an 'average' worm embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C44, C51 describe the composite model creation. This is supported by the temporal alignment procedure (C96-C103), averaging and fitting of trajectories (Figure 4), and visualization of the composite model (Figure 5, Videos 3-4). The approach is methodologically sound for combining data across embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The observed complex, position-dependent motion is likely inconsistent with simple uniform contraction models of embryo elongation. Current models have not accounted for differential elongation across the worm body, and incorporating additional positional and cytoskeletal data would help refine existing models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 critique existing models and suggest future directions. While the differential elongation data (C53, C108-C111) support that simple uniform contraction is insufficient, the authors do not rigorously test existing models or provide quantitative comparison. C117 is speculative about future work. The critique is reasonable but not definitively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C123"
+    ],
+    "result": "Positional stereotypy extends to late embryo cells, though actively migrating cells (CAN neurons, ALA neurites) show greater variability in end position and growth rate. The source of this variability (strain-dependent vs. biological) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131, C123 synthesize findings about stereotypy. C130 is supported by seam cell data (C52, C99-C102). C131 is supported by neuronal variability data (C122, Figure 4\u2014figure supplement 3). The acknowledgment of uncertainty (C123) is appropriate given limited sample sizes and potential confounders (C132-C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C141",
+      "C142"
+    ],
+    "result": "The diSPIM provides high-imaging speed and isotropic resolution that significantly eases identification of cells and structures in twisted embryos compared to lower resolution alternatives. The untwisting algorithm is compatible with other high-resolution methods, demonstrated by successful application to 2P ISIM imaging of L2 larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C141-C142 describe imaging method advantages. The comparison to single-view LSFM is shown in Figure 1\u2014figure supplement 2. Compatibility with 2P ISIM is demonstrated with L2 larva data (Figure 1\u2014figure supplement 4, Video 7). The rationale for diSPIM choice is sound, though quantitative comparison metrics are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For manual lattice building, minimally 22+2B lattice points are recommended (22 seam cell nuclei + nose points + bend points). Fewer points give unphysical short volumes, while more than ~32 points does not noticeably improve quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide practical recommendations based on empirical testing. Figure 1\u2014figure supplement 3 shows examples with different numbers of lattice points, demonstrating the effects described. The recommendations are reasonable and supported by visual evidence, though 'noticeably improve' is subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Automated lattice-building assumes 20-22 seam cell nuclei and fails in early elongation (1.5- to 2-fold transition) when expression is absent in some nuclei, requiring manual building (~8 hours for 100-150 timepoints). Fully automated untwisting is not currently feasible but may be enabled by alternative markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 honestly describe current limitations. The manual work requirement (C147) is quantified. The acknowledgment that full automation is not feasible (C148) is appropriate given the stated limitations. C149 appropriately speculates about future improvements without overstating current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The data are of sufficient quality to segment morphology in untwisted animals, but the general question of how to combine morphological segmentations from distinct untwisted embryos remains open. New methods developed for pre-twitching embryos may prove useful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 identify a remaining challenge. C150 is supported by Figure 6\u2014figure supplement 2 and Video 8 showing segmented morphology. C151 appropriately identifies an unsolved problem. C152 reasonably suggests potential solutions with citation (Santella et al., 2015). This is an honest assessment of current capabilities and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Most fluorescent strains label multiple neurons too close to resolve. Possible separation strategies include Brainbow (spectral) or heat-shock approaches (temporal). Neuron identity verification will require matching to lineage data, potentially requiring extension of lineaging into post-twitching regime ('deep lineaging').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C159 identify challenges and potential solutions for future atlas completion. The challenges are based on the authors' experience (C153). Suggested solutions (C154) are appropriately cited. The logic for neuron identification (C156-C159) is sound, though these are proposals for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Variability in temporal shifts may be due to embryos being at different ages when imaging began, moderate temperature control (\u00b12-3\u00b0C), or intrinsic developmental variability from maternal effects or imaging exposure. Expanding work to other neurons should clarify whether migrating cells show greater positional variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 identify potential sources of variability with appropriate uncertainty. Temperature control (C133) is a documented experimental condition. C135 appropriately suggests future work to test the hypothesis about migrating vs. non-migrating cell variability. These are reasonable speculations about sources of observed variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C61",
+      "C62",
+      "C136"
+    ],
+    "result": "The untwisting and cell tracking capabilities provide a foundation to catalog C. elegans neurodevelopment, allowing interrogation of previously inaccessible developmental events. The software will significantly further ability to examine post-twitching development. Adding data to the 4D model is conceptually straightforward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C61-C62, C136 describe the potential impact and future applications. These are supported by the demonstrated capabilities (tracking through late embryogenesis, creating composite models). However, C61-C62 use 'anticipate' and 'will,' indicating these are expectations rather than demonstrated outcomes. C136 appropriately qualifies as 'conceptually straightforward.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "The plugin is designed specifically for nematode embryos and unlikely to be immediately applicable to other systems without substantial modification. However, the general concept of aligning and pooling information from different datasets to generate 4D views of development is likely applicable to more systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 appropriately assess the method's generalizability. C143 honestly acknowledges the specialized nature of the untwisting algorithm for vermiform organisms. C144 correctly identifies that the conceptual approach (temporal alignment, data pooling) has broader applicability. This is a balanced assessment of specificity vs. generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "For almost all strains (except DCR4209 with membrane-targeted mCherry), fluorescent proteins were expressed cytoplasmically. An improved strategy would combine cytoplasmic labeling with membrane targeting to better fill thin neuronal outgrowths that might be missed due to low expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 describe the expression patterns used and suggest improvements. C160 is a factual description of the strains. C161 is a reasonable suggestion supported by citation to similar strategies in super-resolution microscopy (Lakadamyali et al., 2012). This is appropriate speculation about future optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "C. elegans is well-suited for systems-level neurodevelopment studies due to its simple nervous system (302 neurons, 222 embryonic), sequenced genome, reconstructed connectome, and transparency. However, imaging throughout embryogenesis is challenging due to photodamage sensitivity, need for subcellular resolution, motion blur from twitching, and lack of single-cell contrast techniques like Brainbow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C29 provide background context. The characteristics of C. elegans (C16-C24) are well-established facts supported by appropriate citations. The challenges (C2-C3, C25-C29) are known limitations in the field, also appropriately cited. This background effectively motivates the need for the developed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Light-sheet fluorescence microscopy (LSFM) allows far more rapid imaging and reduced phototoxicity relative to confocal microscopy. Multiple LSFM implementations obviate motion blur and photodamage problems in worm embryos and offer sufficient spatiotemporal resolution (sub-\u03bcm, sub-second) to observe subcellular morphology over 14-hour embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe LSFM advantages and applications. All claims are supported by appropriate citations to the literature (Huisken et al., 2004; Holekamp et al., 2008; Wu et al., 2011; Wu et al., 2013; Kumar et al., 2014; 2015). This provides appropriate context for the imaging method choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Computational untwisting algorithms have previously been used to straighten L1 larval worms for tracking nuclear position in 2D and 3D, but these algorithms are not suitable for nematode embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe prior work and its limitations. C41 is supported by citations (Peng et al., 2008; Long et al., 2009). C42 is a reasonable assessment given the differences between larvae and embryos noted in C63-C64 (embryos undergo both bending and helical twisting). This appropriately positions the current work relative to prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Nematode embryos undergo both bending and helical twisting around the nose-to-tail axis, posing challenges in untwisting relative to larval or adult nematodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe the complexity of embryo morphology. C63 is supported by Figure 1\u2014figure supplement 1 showing helical twisting. C64 is a logical inference about the increased difficulty. This explains why existing larval untwisting methods (C41-C42) are insufficient for embryos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Fitted values were within 1.5 \u03bcm of X,Y averaged data and within 7.5 \u03bcm of Z averaged data. At the final timepoint, untwisted embryo length was 162.0\u00b118.7 \u03bcm (nose to last seam cells) and diameter was 16.1\u00b11.3 \u03bcm (widest cross-section) across 5 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 provide quality metrics for the fitting procedure and reference measurements. The fit quality (C104-C105) is documented in Supplementary file 3. The embryo dimensions (C106-C107) provide important reference values with appropriate sample size (n=5) and standard deviations. These support the validity of the composite model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Embryo elongation is thought to be dependent on an actin-based contractile mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 summarizes existing models with appropriate citation (Priess and Hirsh, 1986). This provides context for the authors' findings about differential elongation (C115-C116). The claim accurately represents prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The C. elegans cell lineage is invariant, and tracking cells in L1 larvae has revealed that cellular positions in post-hatching animals are relatively stereotyped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 cite established facts about C. elegans with appropriate references (Sulston et al., 1983; Long et al., 2009). This provides context for the authors' findings about stereotypy in late embryos (C130). The claims accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

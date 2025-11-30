@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C92"
+    ],
+    "result": "Visual detection correlates more strongly with population response heterogeneity than with overall mean response strength in V1 L2/3 neurons. This novel heterogeneity metric, which captures pairwise dissimilarity in normalized neuronal responses, showed significantly stronger correlation with stimulus detection than traditional mean dF/F0 measures across multiple analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide converging statistical evidence from single animals and across-animal analyses showing heterogeneity correlates better with detection than mean response (p<0.001 for heterogeneity vs p<0.05 for dF/F0). The effect size analysis (C58) and ROC analysis (C59-C60) with appropriate statistical tests support this conclusion. Control analyses (C105-C107) rule out major confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C93"
+    ],
+    "result": "Population heterogeneity, but not mean dF/F0, significantly predicts behavioral reaction time. Heterogeneity explained more reaction-time-dependent variance (R\u00b2=0.167, p<0.001) than any other tested metric including mean population activity, variance, and sparseness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide clear statistical evidence with appropriate regression analyses and FDR-corrected tests. The dissociation between heterogeneity (significant correlation) and mean dF/F0 (no correlation) is demonstrated both in individual animals and meta-analysis across animals (n=8). Multiple comparison corrections were applied appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C94"
+    ],
+    "result": "High population heterogeneity is associated with increased accuracy of stimulus presence and feature representation. A Bayesian decoder showed better stimulus detection performance during hit trials, and this performance was more similar to actual behavioral performance than expected by chance. Stimulus features like orientation were better decodable during hits and when heterogeneity was high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 demonstrate convergent evidence from decoding analyses with appropriate statistical tests (p<0.001 for decoder performance, chi-square p<10^-30 for behavioral similarity). The finding that task-irrelevant features (orientation) are better represented during hits (C68-C70) provides additional support that heterogeneity reflects genuine perceptual processing rather than task-specific motor preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C95",
+      "C96"
+    ],
+    "result": "Pre-stimulus heterogeneity predicts fast behavioral responses, while stimulus-evoked heterogeneity shows faster rise times for detected versus undetected stimuli. This suggests detection-related population activity involves both arousal-related gating mechanisms and stimulus-driven differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 provide statistical evidence (FDR-corrected tests) showing pre-stimulus heterogeneity predicts fast responses (p<0.01) while dF/F0 does not. The rise time analysis (C75, p<0.05) demonstrates stimulus-evoked effects are distinct from pre-stimulus state. However, the mechanistic interpretation regarding arousal (C96) is speculative and based on correlation with pupil size (C108), which shows only a small effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C97"
+    ],
+    "result": "Neuronal population activation patterns show greater consistency across trials during successful detection (hit and fast responses) compared to miss trials. This consistency was observed in both preferred and nonpreferred populations and was significantly above shuffled controls, though the effect sizes were relatively modest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide statistical evidence with appropriate shuffling controls (p<0.05 for hits vs shuffled, p>0.3 for misses vs shuffled). The analysis properly accounts for potential biases by comparing to shuffled data. However, C80 acknowledges the correlations are low and cannot fully account for population structure, appropriately tempering the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C98",
+      "C122"
+    ],
+    "result": "Multidimensional analysis reveals that hit trials occupy a larger volume of neural response space than miss trials, with more asymmetric (structured) distributions. Removing heterogeneity significantly impairs hit/miss decoding more than removing the mean, but most information resides in population response patterns beyond mean and heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 provide systematic multidimensional analyses with appropriate statistical tests. The inter-point distance analysis (C81-C82, p<0.05), mirroring analysis (C83-C85, p<0.05), and removal analysis (C87-C88, p<0.05) converge on the conclusion that heterogeneity contributes non-epiphenomenally. Critically, C88 and C90 acknowledge that even with heterogeneity removed, decoding remains well above chance (60% vs 50%), indicating other population properties are important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mean population response shows modest increases with stimulus detection when grouping test contrasts, but this effect is weak (R\u00b2<0.35) and explained more by trial-by-trial population fluctuations (R\u00b2=0.248) than by consistent neuronal identity (R\u00b2=0.059). Individual contrasts showed no significant hit-miss differences in mean response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 provide detailed statistical decomposition of hit-related activity. The variance partitioning analysis (C43-C44) with shuffling controls (C45-C46) is methodologically sound. The low R\u00b2 values (C48-C49) are honestly reported and lead to the appropriate interpretation (C50) that mean activity is insufficient to explain detection. The lack of significance for individual contrasts (C38) despite grouped significance (C40) suggests the effect is weak.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C109"
+    ],
+    "result": "The neural correlates of detection are unlikely to be confounded by motivation differences. Hit-miss differences in heterogeneity are largest at intermediate contrasts (2-8%) rather than at 100% contrast, and no heterogeneity difference exists between false alarms and correct rejections at 0% contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide logical arguments supported by data patterns (C100-C101) that rule out motivation as a confound. The reasoning is sound: if motivation were the primary driver, effects should be strongest at 100% contrast and present at 0% contrast, which is not observed. C109 summarizes multiple control analyses ruling out other confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Multiple control analyses demonstrate that the observed neural correlates are not due to recording artifacts, locomotion, motor preparation, or eye movements. Z-drift was minimal (<10 \u03bcm), and excluding running trials, early time windows, or trials with saccades/blinks did not qualitatively change the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 provide systematic control analyses with appropriate exclusion criteria and statistical comparisons. The z-drift quantification (C104) and multiple exclusion analyses (C105-C107) all show qualitatively similar results for heterogeneity. The small correlation with pupil size (C108) is appropriately characterized as small but significant, suggesting arousal may play a role without being the sole explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The findings are specific to L2/3 of mouse V1 and may not generalize to other cortical layers. L2/3 neurons show sparse, low firing rate responses compared to L5 neurons, and prior work in somatosensory cortex suggests mean firing rates in L5 better separate hits from correct rejections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 appropriately acknowledge the limitations of the study's scope. The citations to prior work (C111-C112) support the claim that layer differences exist. C113 correctly cautions against over-generalizing the findings, which is scientifically appropriate given the study only examined L2/3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The observation that task-irrelevant stimulus features (orientation) are better represented during hits suggests detection mechanisms may act through general enhancement of stimulus processing intensity, similar to attention-related contrast gain effects observed in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 provide a reasonable interpretation of the decoding results (C68-C70) with support from prior literature on attention and contrast response. The interpretation is appropriately framed as a suggestion rather than a definitive conclusion, and the citation to primate work (Mart\u00ednez-Trujillo and Treue, 2002) provides relevant context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Sparseness and variance perform worse than heterogeneity in predicting reaction time, possibly because the sample size (~60-70 neurons) is insufficient for accurate sparseness estimation, or because sparseness reflects structural optimization for stimulus coding while heterogeneity captures dynamic perceptual modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C118 show sparseness performs worse than heterogeneity (supported by data in C117), but the explanations (C119-C120) are speculative. C119 suggests insufficient sample size without providing power analysis or simulation to support this claim. C120-C121 offer an alternative theoretical interpretation with citation support, but this remains speculative without direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Other patterns of population activity beyond mean and heterogeneity, such as transient assembly formation, may be important for visual detection. Simple bulk approaches correlating mean population response with behavior are insufficient for understanding early sensory cortex involvement in stimulus detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by the multidimensional analysis showing that even after removing mean and heterogeneity, substantial information remains (C88, C90). However, C123 is speculative about what these other patterns might be (transient assemblies). C124 is a well-supported methodological conclusion based on the comprehensive analyses presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Behavioral-state-specific consistencies in population patterns may be mediated by neuromodulators like acetylcholine, which could facilitate repeated activation of similar neuronal subnetworks. Without such modulation, neurons might randomly participate in stimulus representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125 provides a reasonable interpretation of the inter-trial correlation findings (C78-C79), but C126-C130 are highly speculative. No direct measurements of neuromodulators were made, and the proposed mechanisms (C126-C127, C129-C130) are theoretical. While the citations (C128-C129) support that ACh can influence these processes, the causal link to the observed phenomena is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Population heterogeneity correlates with behavioral detection and predicts performance. Neurophysiological measures based on population averages (fMRI, EEG, MEG) may underestimate V1 L2/3 correlations with detection because they violate the assumption of population homogeneity. The results stress the importance of single-cell resolution population recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C133-C134 are well-supported summaries of the main findings. C132 makes a reasonable inference about implications for other measurement techniques, though this is somewhat speculative since the study did not directly compare to fMRI/EEG/MEG. The logic is sound: if heterogeneity matters and these techniques average over populations, they would miss this signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C52"
+    ],
+    "result": "The study used two-photon calcium imaging of ~100 neurons in V1 L2/3 of mice performing a go/no-go visual detection task with varying contrast levels (0.5-100%). All eight animals showed statistically significant detection performance, with response proportions increasing and reaction times decreasing with higher contrasts. A novel heterogeneity metric was developed to capture pairwise dissimilarity in normalized population responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C36 and C52 describe the experimental methods and basic behavioral results with appropriate statistical validation (C34: non-overlapping 95% CIs, p<0.05; C35-C36: linear regression, p<0.001 and p<0.01). The task design (C28-C33) is clearly described with appropriate controls (probe trials, exclusion criteria). The development of the heterogeneity metric (C52) is a key methodological contribution.",
+    "result_type": "MINOR"
+  }
+]

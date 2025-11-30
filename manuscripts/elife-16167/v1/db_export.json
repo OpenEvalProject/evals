@@ -1,0 +1,2333 @@
+{
+  "submission": {
+    "id": "c9533295-47f1-44db-b1c8-4e07b01fabe1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:55:21.142059Z",
+    "updated_at": "2025-11-29T23:55:21.142059Z"
+  },
+  "content": [
+    {
+      "id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "submission_id": "c9533295-47f1-44db-b1c8-4e07b01fabe1",
+      "content_type": "manuscript",
+      "content_text": "# A neural basis for the spatial suppression of visual motion perception\n\n## Authors\n\n- Liu D Liu<sup>1</sup> ([ORCID: 0000-0002-2213-8057](https://orcid.org/0000-0002-2213-8057)) \u2020\n- Ralf M Haefner<sup>2</sup> \u2020\n- Christopher C Pack<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurology and Neurosurgery, Montreal Neurological Institute McGill University Montreal Canada\n2. Department of Brain and Cognitive Sciences University of Rochester Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn theory, sensory perception should be more accurate when more neurons contribute to the representation of a stimulus. However, psychophysical experiments that use larger stimuli to activate larger pools of neurons sometimes report impoverished perceptual performance. To determine the neural mechanisms underlying these paradoxical findings, we trained monkeys to discriminate the direction of motion of visual stimuli that varied in size across trials, while simultaneously recording from populations of motion-sensitive neurons in cortical area MT. We used the resulting data to constrain a computational model that explained the behavioral data as an interaction of three main mechanisms: noise correlations, which prevented stimulus information from growing with stimulus size; neural surround suppression, which decreased sensitivity for large stimuli; and a read-out strategy that emphasized neurons with receptive fields near the stimulus center. These results suggest that paradoxical percepts reflect tradeoffs between sensitivity and noise in neuronal populations.\n\n## Introduction\n\nPerception relies on the spiking responses of sensory neurons. Indeed, individual neurons can exhibit exquisite selectivity for specific stimulus features. However, this single-neuron selectivity is of limited utility for stimulus encoding for two reasons. One is that neuronal responses are modulated by multiple stimulus dimensions, so that identical responses can be associated with very different stimuli. Another reason is that single-neuron responses can be quite variable, so that the response to the same stimulus can differ from one presentation to the next.\n\nSome of this variability can be reduced by combining the responses of multiple neurons. If the variability is independent across neurons, it can be eliminated by simply averaging the responses of many neurons. In this case, the available information about the stimulus theoretically increases with neuronal population size (Zohary et al., 1994; Shadlen et al., 1996). However, in reality neuronal noise is usually correlated across nearby neurons, and such noise correlations are thought to greatly influence on the fidelity of a population code (Abbott and Dayan, 1999; Sompolinsky et al., 2001; Panzeri et al., 1999; Averbeck et al., 2006; Ecker et al., 2011). Still, current theories predict the stimulus information will increase or saturate as the size of the corresponding neuronal pool increases.\n\nOne simple way to manipulate the neuronal pool size is to change the physical size of a visual stimulus. Because neurons in early visual structures have small receptive fields, large stimuli recruit more neurons, potentially leading to more effective coding of stimulus properties and correspondingly better behavioral performance. It is therefore surprising that behavioral studies in humans have sometimes found that larger stimuli are associated with diminished perceptual performance (Tadin et al., 2003). Moreover, this psychophysical suppression of behavioral performance in human subjects is strongly correlated with various markers of mental function, including schizophrenia, major depression, and even I.Q (Tadin et al., 2006; Golomb et al., 2009; Melnick et al., 2013). These results have previously been hypothesized to reflect the strength of neuronal surround suppression in individual cortical neurons (Tadin et al., 2003; Churan et al., 2008), but it is unclear how such suppression affects neuronal populations, particularly in the presence of noise correlations.\n\nTo address this issue, we recorded from small populations of neurons in visual cortical area MT, in macaque monkeys trained to report the perceived direction of a moving stimulus. We varied stimulus size randomly from trial to trial, and found, as reported in human studies (Tadin et al., 2003), that increased stimulus size led to a drastic deterioration of behavioral performance. Our neurophysiological recordings revealed that the magnitude of the neuronal surround suppression of individual neurons is too small to account for psychophysical suppression. However, analysis of multi-electrode recordings revealed a novel aspect of neuronal noise correlations that further suppressed population coding for large stimuli: those neurons with the smallest surround suppression, and hence the ones most sensitive to large stimuli individually, also had noise correlations most closely aligned with signal correlations; such correlations are damaging to the total information carried by the population (Abbott and Dayan, 1999; Averbeck et al., 2006). These mechanisms, combined with conservative assumptions about the animals\u2019 behavioral strategies (Pelli, 1985; Burr et al., 2009; Beck et al., 2012), provided a full account of the observed psychophysical suppression. These results further our understanding of the relationship between neural activity and perception, in normal and pathological states.\n\n## Results\n\nIn the standard model of perceptual decision-making (Gold and Shadlen, 2007), the responses of a population of sensory neurons are assumed to be read out by a decision-making area. For a linear read-out, this system is well-understood, and the key drivers of psychophysical performance are the sensitivities of the individual sensory neurons to the task-relevant stimulus dimension, their response variability, and the correlation structure in the population (Zohary et al., 1994; Abbott and Dayan, 1999; Sompolinsky et al., 2001; Ecker et al., 2011; Moreno-Bote et al., 2014). Since these quantities generally depend on the particular stimulus used for the task (Snyder et al., 2014) and the demands of the task itself (Cohen and Newsome, 2008), we performed simultaneous recordings from populations of MT neurons while two monkeys performed a task for which psychophysical surround suppression has previously been demonstrated in humans (Tadin et al., 2003).\n\nIn the remainder of this section we will first describe the psychophysical results, followed by our neurophysiological measurements. We then use the neurophysiological data to constrain a comprehensive model that can account for the observed pattern pf psychophysical suppression.\n\n### Psychophysical measurements\n\nWe examined neuronal responses and behavioral performance during a task in which the visual stimulus size was varied across trials (Figure 1A,C) (Tadin et al., 2003). During the task, monkeys viewed drifting Gabor grating stimuli and reported their percepts of visual motion direction (Britten et al., 1992; 1996) (Figure 1C). As in most human studies, we used a very brief stimulus duration (50 ms) (Tadin et al., 2003) in order to increase the difficulty of the task. In preliminary behavioral experiments we also compared psychophysical performance using Gabor patches of low (4%) and high (100%) contrast. Based on the dependency of the density of receptive fields on eccentricity in early visual structures (Van Essen et al., 1981; Erickson et al., 1989), we calculated that the number of visual cortical neurons activated by our stimulus should increase with stimulus size (Figure 1B).\n\nConsistent with previous findings in humans (Tadin et al., 2003), we found that increasing the size of a low-contrast stimulus improved behavioral performance (Figure 1D, dashed lines), while under high-contrast conditions, behavioral performance worsened at larger sizes (Figure 1D, solid lines). Thus, paradoxically, psychophysical performance was best for stimuli of medium intensity, with performance declining as contrast and size were increased (Figure 1D, Wilcoxon rank sum test, p<0.001).\n\nTo quantify this effect, we computed a psychophysical suppression index (SIpsy) (Figure 1D and Material and methods), which captures the decrease in performance (on a scale from 0 to 1, with 0 corresponding to no suppression, and 1 to complete suppression) for large stimuli relative to the best performance across all stimuli. At 100% contrast, the SIpsy of the psychometric function (mean \u00b1 s.d.) was 0.42 \u00b1 0.25 for monkey C and 0.54 \u00b1 0.19 for monkey Y, indicating that monkeys were approximately half as likely to accurately perceive the motion of a large stimulus, compared to a small one.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig1-v1.jpg)\n\n**Figure 1.:** (A) Receptive fields from an example recording session, shown as black ovals, relative to lines of different visual eccentricity (gray circles) commensurate with the stimulus sizes used in the experiments. (B) The estimated neuron pool size as a function of stimulus size, for the eccentricities and stimulus sizes used in the experiments (top). Cortical mapping of visual space from (A), showing that larger stimuli projected onto larger extents of cortical space (bottom). The sizes of the shaded areas correspond to the estimated cortical footprint (see Materials and methods). (C) Behavioral task. The animals were required to maintain fixation in a 2\u00b0 window for 300 ms, after which a drifting Gabor appeared briefly. Animals were then required to fixate for another 300 ms until the fixation spot disappeared. The animals then indicated their motion percept with an eye movement to one of two targets within 700 ms. (D) Examples of the animals\u2019 psychometric functions for high contrast (solid line, circles) and low contrast (dashed line, triangles) stimuli. Error bars represent 95% binomial proportion confidence interval.\n\n### Neurophysiological measurements\n\nWe recorded from small populations of neurons in MT using linear electrode arrays, while monkeys performed the high-contrast motion discrimination task described above. Area MT is thought to be causally involved in behavioral decisions for motion direction (Born and Bradley, 2005), and it contains many neurons with responses that are modulated by stimulus size and contrast (Allman et al., 1985; Pack et al., 2005). To maximize the number of stimulus repetitions per recording session, we fixed the stimulus contrast at 100% and varied stimulus size across trials. We analyzed data from 165 single units, with 2\u20138 cells being available on any given day.\n\n### Relationship between single-neuron selectivity and behavior\n\nThe responses of an example MT neuron to stimuli centered on the receptive field are shown in Figure 2A. Here the orange and violet dots show the responses to the preferred and null direction stimuli, and these responses decrease slightly with increasing stimulus size. The distributions of these responses across trials can be converted into a single measure of neuronal selectivity, d\u2019, which is plotted as a function of stimulus size in Figure 2B. Based on this neurometric function, we can compute a neural measure of suppression, SIneu, which is defined analogously to SIpsy. The value of SIneu for this neuron was 0.18, which indicates a modest suppression of motion signaling by large stimuli.\n\nThe decrease in neuronal selectivity with stimulus size resembles the psychophysical performance of the monkey (Figure 2B). However, the strength of neuronal surround suppression is substantially less than that of the simultaneously measured psychophysical suppression (0.54). This was often the case in our data: For the MT population, the mean neuronal d\u2019 (SIneu = 0.27) was much less suppressed than the mean psychometric d\u2019 (SIpsy = 0.48, Figure 2D). Moreover, many neurons exhibited no surround suppression at all, even for stimuli extending beyond their receptive fields (Born and Tootell, 1992), and the selectivity of these neurons to large stimuli routinely exceeded that of the monkeys (Figure 2B,C). This was especially clear in neurons with receptive fields near the edges of the larger stimuli (Figure 2\u2014figure supplement 1B); in these neurons responses increased with stimulus size (Figure 2\u2014figure supplement 1C). Together these results suggest that the psychophysical performance is not solely driven by typical single-neuron selectivity, as only a small fraction of neurons showed suppression comparable to that of the behavior.\n\nOne caveat to this conclusion is that subjects might have relied more heavily on a subpopulation of MT neurons to form their perceptual decisions. Indeed, if neurons with strong surround suppression exerted a greater influence on perception, perhaps by virtue of anatomical connectivity (Born et al., 2000; Berezovskii and Born, 2000), then psychophysical suppression would presumably increase accordingly. However, using choice probability analysis (Britten et al., 1996; Nienborg et al., 2012; Haefner et al., 2013), we found no evidence that neurons with strong surround suppression were more correlated with the animals\u2019 behavior choices; indeed the correlation between SIneu and choice probability was modestly negative (Figure 2E; r = -0.14, P = 0.04).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig2-v1.jpg)\n\n**Figure 2.:** (A) Size tuning curves, plotting the firing rate (mean \u00b1 s.e.m.) for the preferred (orange) and null (violet) direction stimuli as a function of Gabor patch size. The lines indicate difference of error functions fits. (B) Neurometric function (filled symbols) for the example neuron plotting the d\u2019 value as a function of stimulus size. The corresponding psychometric function is superimposed (open symbols). Solid and dashed lines indicate difference of error functions fits. The psychophysical performance differs from Figure 1D since the stimulus was tailored to the neural population measured on any one day. (C) Scatter plot of the psychophysical d\u2019 against the neuronal d\u2019 at the largest stimulus size. Filled circles represent monkey C (n = 105), and open squares represent monkey Y (n = 60). Red represents neurons with weak surround suppression, and blue represents neurons with strong surround suppression. The distribution of d\u2019neu-d\u2019psy is shown at the diagonal. (D) The mean d\u2019psy as a function of size from all sessions (monkey C: n = 28, monkey Y: n = 11) superimposed with the mean single neuron d\u2019neu from all MT neurons (165 single neurons). Error bars denote s.e.m. (E) Population summary of choice probability (CP). Scatter plot of CP against the suppression index of the neurometric function. Filled symbols represent CP values that are significantly different from 0.5 (p<0.05, permutation test). Solid line indicates linear fit (r = \u22120.14, P = 0.04). The marginal distributions of SIneu and CP are shown on the top and the right. Filled and open bars indicate neurons with significant and non-significant choice probabilities, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The dots are RF centers for the MT neurons from each animal. The circles indicate the average placement of the stimulus centers. Maximal stimulus radius is 15\u00b0. The dots represent the centers of the RFs of off-stimulus center neurons simultaneously recorded using the foveal stimulus for the motion direction discrimination task (black circle), and when the stimulus was centered on the RFs (blue circle). (B,\u00a0C) Single neuron selectivity of peripheral neurons when the foveal stimulus was not centered on the RFs (black), and when the stimulus was centered on the RFs (blue).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Distributions of firing rates of an MT neuron, grouped according to the monkey\u2019s choice of preferred or null direction motion. (B) The ROC curve of the distributions yielded a significant choice probability of 0.63 (P = 0.010, permutation test). (C) Mean CP across the population was calculated in 20 ms bins. CP was significantly above 0.5 from approximately 100 to 200 ms after stimulus onset (p<0.01, permutation test). (D) Scatter plot of CP against eccentricity of the neurons. Solid line indicates linear fit (r = -0.48, P = 0.05). (E) Mean d\u2019 across the population was calculated in 20 ms bins.\n\n### Noise correlation measurements\n\nThe mean levels of noise correlations were typically on the order of 0.1 (0.099 \u00b1 0.007), compatible with previous reports (Zohary et al., 1994; Bair et al., 2001; Huang and Lisberger, 2009). Their strength was independent of motion direction or stimulus size (Wilcoxon rank sum test for direction, 94% of experiments with p>0.05; for smaller and larger sizes, P = 0.55 Figure 4\u2014figure supplement 1A).\n\nNext, we considered the relationship between noise correlations and tuning curve similarity; these have been found to correlate in previous studies (Bair et al., 2001; Huang and Lisberger, 2009). Figure 3A shows the responses of two example neurons that were recorded simultaneously; each dot represents the mean response to a preferred (red) or null (blue) direction stimulus, with different dots corresponding to responses to different stimulus sizes. The responses of these neurons exhibit a clear signal correlation (rsignal = 0.61). Figure 3B shows trial-by-trial data from the same pair of neurons; here the responses have been z-scored to remove changes in the mean due to different stimulus sizes or directions (Zohary et al., 1994). The remaining dependency reflects noise correlations in the responses of the two neurons (rnoise = 0.21). The relationship illustrated by this example pair is characteristic of the population (Figure 4A), across which noise correlations and signal correlation are significantly correlated (r = 0.32, p<0.001).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig3-v1.jpg)\n\n**Figure 3.:** (A) The mean responses of the two simultaneously recorded neurons across both directions and sizes. rsignal (0.61) is the Pearson correlation coefficient of the mean responses for the conditions. (B) The responses for each stimulus condition were z scored across the repetitions, and each point represents a response from one trial. rnoise (0.21) is the Pearson correlation coefficient of the entire dataset. The dashed lines represent linear fits. (C, D) Response correlations for an NS-NS pair and an SS-SS pair for one example stimulus size (1\u00b0).\n\nInterestingly, we find that this correlation structure appears to be different for pairs of neurons with different levels of surround suppression. This is apparent in the examples shown in Figure 3. To study this relationship across the population (N = 370 pairs), we classified neurons as surround suppressed (SS) or not (NS), based on a simple median split of the SIneu distribution (Glasser et al., 2011) (Figure 2C). This yielded three types of neuron pairs: both suppressed (SS-SS), both non-suppressed (NS-NS), and mixed (SS-NS). Across the population, the magnitudes of rnoise were not significantly different across types of neuron pairs (Wilcoxon rank sum tests, p>0.86). However, the correlation structure differed substantially for different cell classes: For the NS-NS pairs, rnoise and rsignal tended to be correlated (Figure 4A, red dots). By contrast pairs of SS neurons showed less of a dependency of noise correlation on signal correlation (Figure 4A, blue dots). The difference in the slopes of the lines relating signal and noise correlations was significantly lower for the SS pairs than for the NS pairs (ANCOVA, P = 0.03, multiple comparison test) (Figure 4A, red and blue lines). For NS-SS pairs, this dependency was intermediate (Figure 4A, black line).\n\nWe performed several control analyses to verify that these results reflected a genuine difference in correlation structure across cell types. First, we recalculated rsignal using direction tuning curves that were measured for a fixed stimulus size. This controlled for any variation in rsignal that arose from differences in the size-tuning functions of NS and SS neurons. The results (Figure 4\u2014figure supplement 1D) were similar to those in Figure 4A (ANCOVA, P = 0.04, multiple comparison test). Second, we verified that these results were not due to changes in firing rate across the different cell types, as the mean firing rates of NS-NS pairs (median = 39.1) and SS-SS pairs (median = 36.4) were not significantly different (Wilcoxon rank sum test, P = 0.45). Also, sampling from rate-matched sub-distributions of SS-SS and NS-NS pairs (Materials and methods) yielded significantly higher rnoise vs. rsignal slopes for the NS-NS sub-distributions (Figure 4B; Wilcoxon rank sum test, p<0.001). Finally, the reduction of this rnoise dependency did not depend on the categorical classification of SS and NS neurons, as we obtained similar results using continuous values of the joint SIneu for pairs of neurons (Figure 4\u2014figure supplement 1C; linear correlation: (r = -0.232, p<0.0001). This finding suggests that the correlated variability between two neurons with similar stimulus preferences may largely arise from the same inputs that are responsible for surround suppression in those neurons.\n\nDifferential correlations (Moreno-Bote et al., 2014) between neurons i and j are those that are proportional to fi\u2019fj\u2019, where fi denotes the tuning function of neuron i, and the prime denotes the derivative with respect to the task-relevant direction in stimulus space; such correlations will limit the information carried even for arbitrarily large neural populations (Moreno-Bote et al., 2014). We calculated differential correlations for all neuronal pairs, and found that there is indeed a positive relationship between noise correlations and f\u2019f\u2019 (Figure 4\u2014figure supplement 1E). Furthermore, we find the same difference between SS-SS and NS-NS pairs as reported above (Figure 4A): the magnitude of the information-limiting correlations is greater between NS-NS pairs than between SS-SS pairs (Figure 4\u2014figure supplement 1E, rNS-NS = 0.48, rSS-SS = 0.23, P = 0.08). In brief, while NS neurons are individually more informative for large stimuli than SS neurons, as a population they are more limited by their correlation structure than SS neurons.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scatter plot of rnoise versus rsignal for pairs of SS and SS (blue), SS and NS (black), and NS and NS (red) neurons. Lines represent linear regression fits. Marginal distributions of rnoise are also shown (right panel). Lines and numbers mark the mean values of rnoise for each combination of neuron pairs. (B) Sampling from rate matched sub-distributions of SS-SS and NS-NS pairs gives similar differences in rnoise vs. rsignal slope.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Box-whiskers plots of the value of rnoise across stimulus conditions. The value of rnoise is not significantly different between the preferred and null directions (Wilcoxon rank sum test, P = 0.07), and smaller and larger sizes (Wilcoxon rank sum test, P = 0.55). (B) Population selectivity as a function of number of neurons included in the simulation. Only the single neuron selectivity at the smallest stimulus size is considered with the mean noise correlation structure observed. (C) The joint SI for each neuron pair (n = 370), determined as the sum of the individual SIs, plotted against the product of rnoise and rsignal for the pair. For the latter, we first subtracted off the mean rnoise and rsignal to isolate the covariance of the two measures. Large positive values correspond to neuron pairs in which rnoise and rsignal have the same sign, as expected for NS-NS pairs (Figure 4A). Small values indicate no consistent relationship between rnoise and rsignal, as expected for the SS-SS pairs (Figure 4A). A linear regression (solid line) confirms a negative relationship between joint SI and the dependency of noise correlations on signal correlations (r = -0.232, p<0.001). (D) A similar rnoise vs. rsignal relationship was observed when rsignal was calculated using separately measured direction tuning curves. (E) A similar rnoise vs. f\u2019f\u2019 relationship was observed when f\u2019 was calculated using the difference between the preferred and null direction responses.\n\n### Modeling results\n\nBased on our empirical measurements described above, we devised a model to investigate to which degree each aspect of the neural data contributed to the observed psychophysical behavior. Such modeling is naturally limited by the impossibility of measuring the relevant properties of all the sensory neurons involved in processing the stimuli. Thus we accounted for this uncertainty explicitly by examining a large number of models from a joint probability distribution over parameters corresponding to the properties of the MT population response (e.g, firing rates, noise correlations, direction tuning bandwidth, etc.).\n\nA detailed description of the modeling approach is given in the methods. In brief, we generated populations of synthetic neurons by sampling neural properties from a joint truncated Normal distribution over tuning curve parameters inferred from our measurements. In that way we could simulate neural populations that not only matched the observed marginal statistics but also the correlations between the measured parameters (Figure 5\u2014figure supplement 1). Since we only measured neurons with RFs covering approximately the central 5\u00b0 of the stimulus, we extrapolated from these neurons to those at larger eccentricities by shifting the size tuning curves of our measured neurons according to the distance between the simulated RF and the center of the stimulus. Furthermore, we scaled the number of model neurons according to the observed dependency of the magnification factor on eccentricity (Van Essen et al., 1981; Erickson et al., 1989). We sampled the noise correlation structure from a Wishart distribution around the empirical means as a function of the signal correlation between neuron pairs (Figure 4A). By generating many such populations for each model, we extracted a range of predictions of behavioral performance for different stimulus sizes (represented by the error bars in Figure 5\u2014figure supplement 3A), so that for each model we could compute its range of predicted psychophysical suppression (Figure 5\u2014figure supplement 3B). The predicted model suppression is the key metric that we are interested in, and its dependency on the key model parameters are explored in Figure 5\u2014 figure supplement 4 and Figure 5D.\n\nIn order to relate our simulated neural responses to behavioral performance (Figure 5A) we used a standard linear read-out in which a weighted average of the responses is compared to a decision-threshold (Shadlen et al., 1996; Gold and Shadlen, 2007; Haefner et al., 2013; Smolyanskaya et al., 2015; Pitkow et al., 2015). We made the assumption of a factorial decoder (Figure 5B), in which the read-out weight for each neuron only depends on the properties of that neuron itself, for two primary reasons: First, such a set of read-out weights can be learned easily since each weight only depends on the properties of the individual neuron itself (Law and Gold, 2009), and second, it has recently received empirical support (Pitkow et al., 2015). (We also performed our analysis using an optimal linear read-out, as well as one in which each neuron\u2019s weight depended only on its sensitivity to the stimulus and not its variability, and obtained qualitatively similar results \u2013 see Supplementary Information, Figure 5\u2014figure supplement 2). Since the stimulus size in our experiment is randomized, and since the duration is extremely brief (50 ms), we furthermore assume that the read-out is fixed and does not adjust dynamically to the stimulus size. We initially limited the read-out to neurons with receptive fields within 5\u00b0 of the stimulus center; we examine the impact of this choice below.\n\nFigure 5C shows the average performance over 100 runs of this model. As in the behavioral data, we find that performance decreases for larger stimuli. The suppression shown by the model is of the same magnitude as the empirical behaviour (Figure 5E, black), with the model SI being 0.48 (Figure 5C,E cyan). To understand the source of this suppression, we performed additional analyses in which key components of the model were removed: Specifically, we considered models in which (Zohary et al., 1994) noise correlations were absent; (Shadlen et al., 1996) correlations were as measured, but surround suppression was absent; and (Abbott and Dayan, 1999) correlations and surround suppression were on average as measured, but the observed relationship between them (Figure 4A) was missing. We found that both the noise correlation structure and surround suppression were necessary to account for the decreased performance as a function of size, since models (Zohary et al., 1994) and (Shadlen et al., 1996) did not show any psychophysical suppression at all (SI = 0; data not shown). However, these components together were not sufficient to account for the observed behavioral results, since model (Abbott and Dayan, 1999) exhibited only modest psychophysical suppression (SI = 0.28; Figure 5C,E magenta). Thus the relationship between surround suppression and correlation structure appears to have important consequences for motion perception.\n\nFrom Figure 5C (cyan) it is apparent that the surround-suppression-dependent correlation structure has two separate effects on performance: One is a suppression of motion signal for large sizes. Perhaps more surprising is an increase in performance seen for small stimuli (Figure 5C,E). This suggests that the combined effect of correlation structure and surround suppression is an increase in the capacity of the MT population to discriminate the direction of very small stimuli, at the expense of large stimuli (see Discussion).\n\nThe preceding analyses suggests that psychophysical suppression is due to a combination of two known aspects of neural coding, surround suppression and noise correlations. Equally important is novel interaction between these two factors, wherein the correlation between neurons depends on their respective surround suppression (Figure 4A). To arrive at these conclusions, we assumed that the animals used a fixed read-out, focusing on neurons with receptive fields near the center of the stimuli. To determine the importance of this assumption, we ran model simulations in which the integration radius was varied (Figure 5D). Unsurprisingly the SI decreased with increasing integration radius, dropping to 0.26 when the radius was 15\u00b0, which is significantly less than that exhibited psychophysically by the monkeys (Figure 5E green, Wilcoxon rank sum test, p<0.001). The overall model performance, obtained by summing the performance across all sizes, was, however, unaffected by this parameter (ANOVA, P = 0.25). This is due to the fact that a larger integration radius increases the performance at large sizes, while decreasing the performance at small sizes (Figure 5C). This suggests that behavioral SI could vary substantially according to the internal strategies used by the observer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of the population selectivity simulation. The preferred and null responses were sampled from the distribution of parameters recorded. We tested combinations of different correlation structures and readout weights. (B) Calculation of the population selectivity. Each point represents the response from a trial from n neurons (here, n = 2). The one-dimensional distributions for the preferred and null direction responses were generated by projecting the points onto the normalized axis that connects the mean responses in n-dimensional space (factorial read-out). The calculation of population d\u2019 then follows the equation in the Materials and methods. (C) The predicted population neuronal selectivity plotted as a function of the stimulus size for each model. Data points represent averages across 100 iterations of the simulation, with each iteration based on a different re-sampling of the parameter set from the original data sets. Results are shown for the full model based on all empirical measurements in which surround suppression modulates noise correlation structure (cyan); a model where correlations and surround suppression were on average as measured, but the observed relationship between them was missing (magenta), and finally the full model again, but with integration radius of 15\u00b0 (green). (D) SI of population d\u2019 for simulations where increasing number of neurons with peripheral receptive fields are included. The x-axis indicates the integration window for including neurons\u2019 receptive fields relative to the stimulus center. Error bars denote standard deviation. (E) Comparison of the SI of different simulations: colors as in C. Error bar for the psychophysical data denotes s.e.m., and error bars for the model predictions denote standard deviation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The histograms at the top row are the distribution of the parameters. The scatter plots shows the correlation of the parameters. The numbers at the top of each scatter plot are the Pearson correlation coefficients. Together these are used to create a multivariate Gaussian copula that is subsequently truncated to have only positve parameter values.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Surround suppression modulation of noise correlation structure (cyan), noise correlation structure with no surround suppression modulation (magenta) from Figure 5E using the factorial versus optimal decoders. Error bars denote standard deviation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) The d\u2019 values plotted as a function of the stimulus size. Data points represent averages across 39 psychophysical measurements (black) and 100 simulations (cyan). Error bars denote standard deviation. (B) Distributions of SIs for the same psychophysical measurements (black) and simulations (cyan).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16167/elife-16167-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) The predicted model SI when single-neuron SI is adjusted. The x-axis indicates the average SI of single neurons. (B) The predicted model SI when the slope of the relationship between correlation and surround suppression is varied. The offset was fixed at 2. (C) The predicted model SI when the offset of this relationship is varied. The slope was fixed at 1.3. Error bars denote standard deviations across 100 simulations in all plots.\n\n## Discussion\n\nUsing multi-electrode recordings in combination with a behavioral task, we have examined the effects of stimulus size on population coding. Consistent with previous work (Zohary et al., 1994; Huang and Lisberger, 2009; Cohen and Newsome, 2009), we find that pairs of MT neurons exhibit modest noise correlations, with typical correlation coefficients near 0.10. We also find that the strength of noise correlations is related to the strength of signal correlations and that this relationship limits the benefit of increasing stimulus size on population coding. Moreover, we find that the correlation structure is not constant across MT neuron pairs, but rather is related to the strength of a seemingly unrelated variable, surround suppression. This relationship between signal correlations, noise correlations, and stimulus selectivity appears to have two important effects on visual perception: Large stimuli are encoded poorly because of a strong decrease in selectivity for surround-suppressed neurons, and undesirable noise correlations in non-suppressed neurons. Meanwhile small stimuli are encoded more effectively because of the combination of strong direction selectivity and advantageous correlation structure in surround-suppressed MT neurons. Below we suggest that this population size tuning might have important implications for perception and behavior.\n\n### Comparison to previous studies of noise correlations\n\nSurround suppression has often been hypothesized to reduce correlations in natural inputs (Snyder et al., 2014; Vinje and Gallant, 2002). We find that neurons with strong surround suppression can exhibit larger or smaller noise correlations, depending on the strength of their signal correlations. This relationship holds for all stimuli, even those that do not engage the receptive field surrounds strongly.\n\nPrevious studies have shown that the magnitude of rnoise is not fixed, but can be reduced by adaptation (Gutnisky and Dragoi, 2008), learning (Gu et al., 2011), and attention (Cohen and Maunsell, 2009; Mitchell et al., 2009). The latter is particularly relevant, because attention increases the effective contrast of the stimulus (Treue and Trujillo, 1999), which also increases surround suppression (Sundberg et al., 2009) and decreases correlations (Kohn and Smith, 2005). Thus a single mechanism (Reynolds and Heeger, 2009) may account for the effects of attention and surround suppression on noise correlations, as implemented with divisive normalization (Tripp, 2012; Wiechert et al., 2010). Attention is also of interest because, like surround suppression, it can increase or decrease the strength of noise correlations, depending on the stimulus encoding of the neuron pairs (Ruff and Cohen, 2014). These differential effects on positive and negative noise correlations are particularly important in MT, where negative correlations are quite common (Zohary et al., 1994; Huang and Lisberger, 2009). Negative correlations likely arise from motion-opponent mechanisms, in which the outputs of neurons with opposite direction tuning are subtracted. Such effects are stronger in MT than in V1 (Qian and Andersen, 1994), and they play an important role in decision-making models (Shadlen et al., 1996; Cohen and Newsome, 2009).\n\nThe results shown in Figure 5D suggest that incorporating the responses of a limited number of the MT neurons also contributed to psychophysical suppression. In a technical sense such a strategy is suboptimal (Beck et al., 2012), as subjects could probably have performed better by making use of the neurons with receptive fields near the edges of the stimulus. Although we have no direct measure of the actual readout strategy used by the subjects, we suggest that the limited sampling used here is a more realistic model of the neural decision process, for several reasons. First, recall (Figure 1C) that stimuli sizes were randomly interleaved, so that motion information was always present in central locations, but for peripheral locations it was only present for large stimuli. Previous work suggests that subjects allocate resources according to the uncertainty associated with individual stimulus positions (Pelli, 1985), so that monkeys in our task likely made greater use of neurons with receptive fields positioned near the center of the stimulus. In addition, although the subjects could have used neurons with receptive fields positioned near the edge of the stimulus to extract additional information about the motion of large stimuli (Tsui et al., 2010), we found instead that choice probability decreased with receptive field eccentricity (Figure 2\u2014figure supplement 2D; r = -0.48, P = 0.05). This suggests that the monkeys likely based their decisions on neurons with receptive fields closer to the center of the stimulus, where motion information was present reliably on every trial. It would therefore be interesting to study psychophysical suppression in a paradigm in which the stimulus location was unpredictable from trial to trial. We predict that psychophysical suppression would be reduced in this case, as would overall performance across sizes (Herrmann et al., 2010).\n\nA related possibility is that the subjects made use of a suboptimal decoding strategy (Moreno-Bote et al., 2014; Pitkow et al., 2015). Indeed our analyses were based on a standard factorial decoder (Abbott and Dayan, 1999; Sompolinsky et al., 2001; Ecker et al., 2011), which ignores correlation structure and hence loses information. We have reanalyzed our results using an optimal linear decoder (Moreno-Bote et al., 2014; Pitkow et al., 2015; Salinas and Abbott, 1994), and found that this approach does improve performance in general. However, the main conclusions with respect to correlation structure and its dependence on surround suppression are unchanged (Figure 5\u2014figure supplement 2).\n\n### Perceptual correlates of surround suppression\n\nThe paradoxical decline in motion perception with increasing stimulus size, first observed in human psychophysics (Tadin et al., 2003), has often been attributed to neuronal surround suppression at the level of MT. Indeed, transcranial magnetic stimulation (TMS) that targets MT reduces the spatial suppression effect (Tadin et al., 2011). However, the TMS protocols used to modulate spatial suppression are inhibitory, and so one might just as easily interpret these results as an effect on noise correlations (Waterston and Pack, 2010). This interpretation is consistent with our results, assuming that inhibitory connectivity plays a role both in generating surround suppression and in regulating noise correlations (Tripp, 2012; Carandini and Heeger, 2012; Renart et al., 2010).\n\nThe distinction is important in interpreting a large body of data showing reduced spatial suppression in certain human populations. Examples include people with schizophrenia (Tadin et al., 2006), and older individuals (Betts et al., 2005). Although these subjects may have deficits in GABAergic efficacy (Tadin et al., 2006; Betts et al., 2005), our results suggest that the connection to psychophysical spatial suppression could also be through noise correlations, as these are necessary to produce any effect of neural surround suppression at the population level.\n\n### Optimal encoding of small stimuli and pursuit targets\n\nOur simulation results suggest that surround suppression can increase the selectivity of the neuronal population to the smallest stimulus size in this task, while worsening the selectivity at larger sizes (Figure 5C; note performance for the 1\u00b0 stimulus). Therefore, one benefit of surround suppression might be in the tracking of small moving stimuli. Indeed, activity in clusters of surround-suppressed neurons has been found to be causally linked to the tracking of small targets in smooth pursuit (Born et al., 2000).\n\nThe link between MT activity and smooth pursuit initiation has been further strengthened by the finding that neuronal variability in MT can account for the majority of motor variation in smooth pursuit (Osborne et al., 2005; Hohl et al., 2013). These observations have led to the suggestion that correlation structure in MT might limit the precision of pursuit initiation (Huang and Lisberger, 2009). Our results suggest that such comparisons should take into account the center-surround properties of individual MT neurons, as the neurons that seem to contribute most directly to pursuit initiation (Born et al., 2000) exhibit more advantageous correlation structure (Figure 4A). As a result, the pursuit initiation system might benefit from averaging the activity of many surround-supressed MT neurons. This would explain both the weak correlation between single-neuron MT activity and pursuit and the relatively low choice probability of surround suppressed neurons in our perception task (Figure 2E).\n\nIt is interesting in this regard that some models of smooth pursuit initiation (Hohl et al., 2013) involve both a motion opponency step and a normalization operation. Normalization in these models serves the function of computing a vector average of the MT population response, and it also affects the levels of noise correlations in a manner that accounts for trial-to-trial fluctuations in behavior. Our results suggest the additional function of reshaping the selectivity of the MT population response in such a way as to favor the motion of small stimuli, precisely as would be expected for a system that initiates orienting responses to moving objects in a natural environment (Lettvin et al., 1959).\n\n## Materials and methods\n\n### Subjects and apparatus\n\nTwo adult female rhesus monkeys (Macaca mulatta, both 7 kg) were used for electrophysiological recordings in this study. Before training, under general anesthesia, an MRI-compatible titanium head post was attached to each monkey\u2019s skull. The head posts served to stabilize their heads during subsequent training and experimental sessions. For both monkeys, eye movements were monitored with an EyeLink1000 infrared eye tracking system (SR Research) with a sampling rate of 1000 Hz. Visual motion stimuli were displayed at 60 Hz at 1280 by 800 pixels resolution; the viewing area subtended 60\u00b0 \u00d7 40\u00b0 at a viewing distance of 50 cm. The sizes of the Gabor patches were defined by 2 standard deviations of the Gaussian envelope and ranged from 1\u00b0 to 15\u00b0 in steps of 2\u00b0. All procedures conformed to the regulations established by the Canadian Council on Animal Care and were approved by the Institutional Animal Care Committee of the Montreal Neurological Institute.\n\n### Electrophysiological recordings\n\nArea MT was identified based on an anatomical MRI scan, as well as depth, prevalence of direction-selective neurons, receptive field size to eccentricity relationship, and white matter to grey matter transition from a dorsal-posterior approach. We recorded single-units using linear microelectrode arrays (V-Probe, Plexon) with 16 contacts. Neural signals were thresholded online, and spikes were assigned to single units by a template-matching algorithm (Plexon MAP System). Offline, spikes were manually sorted using a combination of automated template matching, visual inspection of waveform, clustering in the space defined by the principle components, and absolute refractory period (1 ms) violations (Plexon Offline Sorter).\n\n### Stimulus and Discrimination task\n\nAnimals were trained to perform coarse motion direction discrimination tasks with Gabor patches. The structure of an individual trial is illustrated in Figure 1C. Each trial began with the onset of a fixation point. The monkey was required to establish and maintain fixation within a 2\u00b0 \u00d7 2\u00b0 window for 300 ms, after which a drifting Gabor patch appeared on the receptive field centers. The parameters of the Gabor patch were matched to the multi-unit preferences for spatial position, preferred direction, and spatiotemporal frequency (Figure 1A and Figure 2\u2014figure supplement 1A). We included all units that exhibited significantly different responses (t-test; p<0.05) to their preferred and null directions at the smallest stimulus size, and a preferred direction within \u00b1 42\u00b0 of one of the directions of the stimulus used for behavioral testing. The range of stimulus sizes (0\u201315\u00b0 radius at 2.3 \u00b1 0.5\u00b0 eccentricity) was chosen to straddle the receptive field sizes (2.2 \u00b1 1.1\u00b0 radius at 3.2 \u00b1 1.3\u00b0 eccentricity) of the recorded neurons (Figure 1A and Figure 2\u2014figure supplement 1A).\n\nThe motion stimulus was presented for a brief period (typically 50 ms), after which the monkey was required to maintain fixation for another 300 ms. The fixation point then disappeared, and two choice targets appeared, after which the monkey made a saccade to the corresponding target to report its perceived motion direction (preferred or null relative to the neuron isolated). The monkey was required to indicate its decision within 700 ms following the onset of the choice targets. Correct choices were rewarded with a drop of liquid. If fixation was broken at any time during the stimulus, the trial was aborted. In a typical session, the monkeys performed 20\u201340 repetitions of each distinct stimulus.\n\n### Data analysis\n\nThe psychophysical d\u2019 was calculated as\n\n$$\nd_{psy}^{\u2032}=z_{hit\u00a0rate}\u2212z_{false\u00a0alarm\u00a0rate}\n$$\n\nwhere the hit and false alarm rates were z-transformed with zero mean and unit variance.\n\nThe neuronal d\u2019 was calculated as\n\n$$\nd_{neu}^{\u2032}=\\frac{\\mu_{pref}\u2212\\mu_{null}}{\\sqrt{\\frac{\\sigma_{pref}^{2}+\\sigma_{null}^{2}}{2}}}\n$$\n\nwhere\u00a0$\\mu_{pref}$ and\u00a0$\\mu_{unll}$l are the means of the preferred and null direction responses, and $\\sigma_{pref}^{2}$ and $\\sigma_{null}^{2}$ are the variances (Green and Swets, 1966). To quantify the neuronal selectivity of both the single neurons and the population, we used the firing rate during the 100200 ms interval after stimulus onset to calculate the d\u2019. This interval was chosen because the firing rates in response to the preferred and null directions were significantly different (Figure 2\u2014figure supplement 2E; p<0.05, t-test), and spikes during this time window were significantly correlated with the animals\u2019 behavioral choices (Figure 2\u2014figure supplement 2C); other time windows between 60\u2013300 ms did not result in differences in the results reported here.\n\nTo quantify surround suppression in both psychophysics and neural responses, we first calculated d\u2019 for each stimulus size. The resulting size-tuning curves were fitted with the DoE function (DeAngelis and Uka, 2003) (Figure 2B):\n\n$$\nA_{e}erf(\\frac{x_{c}}{s_{e}})\u2212A_{i}erf(\\frac{x_{c}}{s_{e}+s_{i}})+m\n$$\n\nwhere Ae and Ai scale the height of the excitatory center and inhibitory surround, respectively, se and siare the excitatory and inhibitory sizes, and m is the baseline firing rate of the cell, which is set to 0 for the psychophysical and neural selectivity functions.\n\nThe suppression index (SIneu) for each neuronal size tuning curve was then calculated as SIneu = (d\u2019m \u2013 d\u2019L)/d\u2019m, where d\u2019m is the maximum selectivity across responses to different stimulus sizes, and d\u2019L is the selectivity observed at the largest size. The psychophysical suppression index SIpsy was calculated analogously, using psychophysical selectivity rather than neuronal selectivity. Since using the raw responses is sensitive to noise at both the maximum response and the response at the largest size, we used the values from the DoE fits for SI calculations.\n\nChoice probabilities (CP) were used to quantify the relationship between behavioral choice and response variability (Britten et al., 1996). For an identical stimulus, the responses can be grouped into two distributions based on whether the monkeys made the choice that corresponds to the neuron\u2019s preferred direction, or the null direction (Figure 2\u2014figure supplement 2A). As long as the monkeys made at least five choices for each direction, ROC values were calculated from these response distributions, and the area underneath the ROC curve was taken as the CP value (Figure 2\u2014figure supplement 2B). The single CP for each neuron was computed by averaging the CP across all stimulus conditions. The alternative method of z-scoring the data for each stimulus conditions and then combining them into a single pair of distributions for preferred and null choices can underestimate the CP when the number of choices for preferred and null directions differs across stimulus conditions (Kang and Maunsell, 2012).\n\n### Noise and signal correlations\n\nNoise correlation (rnoise) was computed as the Pearson correlation coefficient (ranging from -1 to 1) of the trial-by-trial responses of two simultaneously recorded neurons (Zohary et al., 1994). For each size and direction combination, responses were z-scored by subtracting the mean response and dividing by the s.d. across stimulus repetitions. This operation removed the effect of size and direction on the mean response, such that rnoise measured only correlated trial-to-trial fluctuations around the mean response. To prevent correlations driven by outliers, we only considered trials on which the responses were within \u00b13 s.d. of the mean (Zohary et al., 1994). We also normalized for slow changes in the responses in blocks of 20 trials (Zohary et al., 1994).\n\nSignal correlation (rsignal) was computed as the Pearson correlation coefficient (ranging from -1 to 1) between size tuning curves of preferred and null directions for two simultaneously recorded neurons. Size tuning curves were constructed by plotting mean firing rates as a function of size for preferred and null directions. In addition, we calculated an alternative measure of rsignal based on the similarity in direction tuning between the two neurons, and found similar trends between the neuron pairs (Figure 4\u2014figure supplement 1D).\n\nAs the measure of rnoise can depend on the firing rates of the neuron pairs (Cohen and Kohn, 2011), we created matched rate distributions of SS-SS and NS-NS pairs by subsampling from the original distributions in Figure 4A. We first created distributions of the geometric means of SS-SS and NS-NS pairs and then resampled randomly to create sub-distributions with equal amounts of data in each bin (Ruff and Cohen, 2014). We resampled 10,000 times and calculated the slope of the rnoise vs. rsignal fit of each sub-distribution. The distribution of SS-SS and NS-NS slopes are shown in Figure 4B.\n\n### Simulations of population selectivity\n\nThe data and Matlab code to generate Figure 5C,D and E are available at http://packlab.mcgill.ca/suppression data and code.zip. For all simulations, we considered a population of MT neurons with different receptive field positions and different preferences for stimulus size. The RF locations were determined by fitting a spatial Gaussian to the neuronal response over a 5 x 5 grid. For neurons with RFs within 5\u00b0 radius of the stimulus center, the responses to different sizes were taken from the size-tuning curves of the actual MT neurons. For neurons with RFs that were not within 5\u00b0 radius of the stimulus center, we shifted the size-tuning curves by the same proportion as the RF offset, so that a larger stimulus was required to generate the equivalent level of activation. We estimated that the shift in the size-tuning curve is roughly proportional to the shift of the stimulus from the RF center. This was determined by measuring the size-tuning with the stimulus placed at different spatial locations (Figure 2\u2014figure supplement 1B,C).\n\nThe number of neurons activated by each stimulus was determined using the previously measured cortical magnification in MT, $Magnification factor=6\u00a0\u2217\u00a0eccentricity^{\u22120.9}$\u00a0(Van Essen et al., 1981; Erickson et al., 1989). This maps visual space in degrees into cortical space in millimeters. The integral of cortical space activation yields the cortical footprint (in square millimeters) as a function of stimulus size. The absolute number of neurons can then be obtained by multiplying the cortical footprint by a factor that indicates the number of neurons per millimeter. We set this factor to 20 neurons/mm2, which yielded a range of pool sizes comparable to those used in other studies (Shadlen et al., 1996) (Figure 1B). The range ofpool sizes is in the regime where population sensitivity is saturated (Figure 4\u2014figure supplement 1B). We verified that our results are robust with respect to this parameter re-running the simulations with a value of 40 neurons/mm2; the results were qualitatively similar to those reported here.\n\n### Simulations of population coding\n\nAll simulations involved extrapolations from the statistics of our neural recordings. To generate the size tuning curves for the preferred and null directions, Si(s,\u03b8), for each simulated neuron, we first used the distributions of DoE parameters from all neurons recorded during the discrimination task to estimate the parameters of a multivariate Gaussian distribution. We then randomly sampled from this distribution to obtain DoE parameters that were subsequently converted to tuning curves. The variance, Vi(s,\u03b8), for each simulated neuron, was generated by multiplying the Si(s,\u03b8) with Fano factors randomly sampled from a Gaussian distribution estimated from the measured Fano factors. For each combination of size and direction in a simulated trial, the response of the ith neuron was generated by randomly drawing a value from a Gaussian distribution having the same mean, Si(s,\u03b8), and variance, Vi(s,\u03b8), as the generated tuning curve\n\n$$\nR_{i}(s,\\theta)=S_{i}(s,\\theta)+x_{i}\\sqrt{V_{i}(s,\\theta)}\n$$\n\nwhere x is a vector of independent random deviates with zero mean and unit variance. This procedure generated a set of responses in which each neuron\u2019s noise was independent.\n\nTo reproduce the relationship between rnoise, rsignal and surround suppression, the covariance matrix, rnoise between neurons i and j was assigned according to\n\n$$\nr_{noise(i,j)}=SI\u00a0dependency_{(i,j)}\\timesm\\timesr_{signal(i,j)}+b\n$$\n\nwhere rsignal represents the signal correlation between size tuning curves of preferred and null directions for a pair of neurons. The slope m and intercept b were acquired from a linear regression fit to the measured relationship between rnoise and rsignal for all pairs of neurons. The SI dependency term was set to 1 in the no SI modulation condition (Figure 5C,E, magenta). In the SI dependency condition (Figure 5C,E, cyan) we estimated the dependency empirically from the data as,\n\n$$\nSI\u00a0dependency_{(i,j)}=1.3(maxi,j(SI_{i}+SI_{j})\u2212SI_{i}\u2212SI_{j}\u22122)\n$$\n\nwhere SIi and SIj were the suppression indices for neurons i and j, respectively. When the joint SI of the neuron pairs is high, the value of SI dependency will be low, and vice versa, capturing the modulation of the rnoise on rsignal slope by surround suppression. The constants, 1.3 and 2, were determined using a least squares method to obtain the closest slopes for the 3 groups of neuron pairs in Figure 4A. In each iteration of the simulation, we sampled the noise correlation structure from a Wishart distribution with maximum variance around the empirical means.\n\nAfter assuming the covariance matrix, the response simulation becomes\n\n$$\nR_{i}(s,\\theta)=S_{i}(s,\\theta)+y_{i}\\sqrt{V_{i}(s,\\theta)}\n$$\n\nwhere y represents the product of the matrix square root of the covariance matrix with the vector of independent deviates, x (Shadlen et al., 1996; Cohen and Newsome, 2009; Liu et al., 2013). For each simulation, we generated 1000 trials of responses for each neuron, each size, and each direction.\n\n### Decoding\n\nAfter generating the responses for 1000 trials for a fixed number of neurons, n, at each stimulus size, the 1000 responses in n-dimensional space were projected onto the axis that connects the mean responses. This subsequently generated 1D distributions for the preferred and null direction responses. The 1D distribution of preferred and null direction responses was normalized by their variance and the population d\u2019 was then computed while the decoder was blinded to their correlations (Figure 5B). This is commonly referred to as a factorial decoder; the readout weights the responses depending on the neuronal sensitivity functions and not on their correlations (Pitkow et al., 2015).\n\nIn addition to this correlation-blind decoder (Figure 5), we also explored the performance of an optimal linear estimator that considers not only the responses of neurons, but also the covariance matrix (Salinas and Abbott, 1994). The impact of the dependency between surround suppression and correlation structure is smaller, but still present (Figure 5\u2014figure supplement 2).\n",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "5e99a775-66cd-4a4b-9a34-cceff5aaf0de",
+      "submission_id": "c9533295-47f1-44db-b1c8-4e07b01fabe1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua I Gold, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16167.015](https://doi.org/10.7554/eLife.16167.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A neural basis for the spatial suppression of visual motion perception\" for consideration by eLife. Your article has been reviewed by Jochen Ditterich and Adam Morris, and the evaluation has been overseen by Joshua Gold as the Reviewing Editor and David Van Essen as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper seeks to provide a neural and computational explanation for a perceptual phenomenon in which human observers show reduced perceptual sensitivity for visual motion with larger stimuli. This spatial suppression is surprising because a larger stimulus would be expected to recruit more neurons and therefore provide more information for the perceptual decision. The authors demonstrate that monkeys also show this perceptual phenomenon. They characterize the responses of individual motion-sensitive neurons in area MT and show that, while these neurons demonstrate a wide range of surround suppression strengths, the suppression is, on average, much weaker than the one that is observed behaviorally. This rules out that the behavioral effect could simply be a consequence of an overall suppressed population response with increasing stimulus size. A choice probability analysis is used to demonstrate that neurons with stronger surround suppression do not make a larger contribution to the animals' choices. Using paired recordings, the authors further show that neurons with weak surround suppression, i.e., neurons that would, in principle, be beneficial for processing larger stimuli, are particularly affected by information-limiting noise correlations. As a consequence, the nervous system cannot benefit as much from pooling across these neurons when reading out the sensory information for the purpose of making a decision. Finally, assuming that the monkeys primarily relied on neurons with receptive fields close to the fovea (which is also supported by a choice probability analysis), the authors develop a computational model that is consistent with the behavioral and neural data and supports the idea that the suppression arises from three main factors: specific patterns of correlation among neurons in area MT, limiting the amount of information despite growing population size; surround suppression; and a readout mechanism that gives higher weight to central locations and \"ignores\" peripheral information.\n\nThe two reviewers and the Reviewing Editor all agreed that this is an excellent paper. The motivation for the experiments is well grounded in current theories of population coding; the experimental design is solid and the data quality is high; the modeling is thoughtful and well anchored by their empirical observations; the main conclusions are well supported by their data and are of broad interest to the community; the paper is well written and statistics are applied appropriately.\n\nEssential revisions:\n\nThe only major concern raised concerned the presentation of the modeling results. The reviewers felt that this could be improved considerably, to help with the readability of the paper and to help readers better appreciate the relationship between the model and the experimental data. In particular:\n\n1) At least some of the more intuitive descriptions of the model could be moved from the Methods to the Results section (e.g., a shorter version of the information in the subsection \u201cSimulations of population coding\u201d), so those intuitions are available to the reader as the modeling results are being presented.\n\n2) A more direct presentation of psychophysical and simulated results could be useful; e.g. distributions of measured and simulated d-primes and SI's.\n\n3) A more in-depth treatment of the principle shown in Figure 5D: how do the model's predictions depend on various model settings? What about parametric variations of the relationship between correlations and surround suppression? How do those ranges compare to measured psychophysical values?\n",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "188e3734-0b98-4a7e-90a8-0e0dd21f7a99",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C1",
+      "claim": "Two adult female rhesus monkeys (Macaca mulatta, both 7 kg) were used for electrophysiological recordings in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Two adult female rhesus monkeys (Macaca mulatta, both 7 kg) were used for electrophysiological recordings in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "9d094f5d-091b-4013-a6cd-b7250b32edfc",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C2",
+      "claim": "Increasing the size of a low-contrast stimulus improved behavioral performance in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings in humans (Tadin et al., 2003), we found that increasing the size of a low-contrast stimulus improved behavioral performance (Figure 1D, dashed lines)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from behavioral testing shown in Figure 1D, with citation to previous human studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "498ba842-c8ef-4980-ad61-0cb76738120e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C3",
+      "claim": "Under high-contrast conditions, behavioral performance worsened at larger stimulus sizes in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "while under high-contrast conditions, behavioral performance worsened at larger sizes (Figure 1D, solid lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from behavioral testing shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a06f06b0-7de1-448c-967c-182f03b0411b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C4",
+      "claim": "Psychophysical performance was best for stimuli of medium intensity, with performance declining as contrast and size were increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, paradoxically, psychophysical performance was best for stimuli of medium intensity, with performance declining as contrast and size were increased (Figure 1D, Wilcoxon rank sum test, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "628b944e-4afa-4de0-9e1e-a9c4a32cb14f",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C5",
+      "claim": "At 100% contrast, the psychophysical suppression index (SIpsy) was 0.42 \u00b1 0.25 for monkey C.",
+      "claim_type": "EXPLICIT",
+      "source": "At 100% contrast, the SIpsy of the psychometric function (mean \u00b1 s.d.) was 0.42 \u00b1 0.25 for monkey C",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from behavioral experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c04bb402-ba18-4ee7-ba0b-7b97202c57d2",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C6",
+      "claim": "At 100% contrast, the psychophysical suppression index (SIpsy) was 0.54 \u00b1 0.19 for monkey Y.",
+      "claim_type": "EXPLICIT",
+      "source": "At 100% contrast, the SIpsy of the psychometric function (mean \u00b1 s.d.) was 0.42 \u00b1 0.25 for monkey C and 0.54 \u00b1 0.19 for monkey Y",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from behavioral experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "24704d18-23b2-48ef-86ec-9c6d7f3090e4",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C7",
+      "claim": "Monkeys were approximately half as likely to accurately perceive the motion of a large stimulus compared to a small one.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that monkeys were approximately half as likely to accurately perceive the motion of a large stimulus, compared to a small one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the SIpsy values measured in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "cb4eb560-d3c3-4b33-a807-5069fdf2844f",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C8",
+      "claim": "165 single units were analyzed from area MT.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed data from 165 single units, with 2\u20138 cells being available on any given day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of neurons recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a0b1cc0a-62b0-4c25-8599-e9b32d44c7fe",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C9",
+      "claim": "2-8 cells were available on any given recording day.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed data from 165 single units, with 2\u20138 cells being available on any given day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "66de8bcf-7ed0-4bba-b1aa-f0c238f57cd3",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C10",
+      "claim": "The mean neuronal suppression index (SIneu) for the MT population was 0.27.",
+      "claim_type": "EXPLICIT",
+      "source": "For the MT population, the mean neuronal d' (SIneu = 0.27) was much less suppressed than the mean psychometric d' (SIpsy = 0.48, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from neurophysiological recordings shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "74828028-2a67-4647-b058-da641c6eaf46",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C11",
+      "claim": "The mean psychometric suppression index (SIpsy) was 0.48.",
+      "claim_type": "EXPLICIT",
+      "source": "For the MT population, the mean neuronal d' (SIneu = 0.27) was much less suppressed than the mean psychometric d' (SIpsy = 0.48, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from behavioral experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "0a7d8805-b714-41bc-b080-4f04708ebb29",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C12",
+      "claim": "The magnitude of neuronal surround suppression is too small to account for psychophysical suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our neurophysiological recordings revealed that the magnitude of the neuronal surround suppression of individual neurons is too small to account for psychophysical suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of neuronal and behavioral suppression indices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "9d1e1e16-e7fb-4cd6-83c2-e5e14d2a4022",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C13",
+      "claim": "Many MT neurons exhibited no surround suppression at all, even for stimuli extending beyond their receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, many neurons exhibited no surround suppression at all, even for stimuli extending beyond their receptive fields (Born and Tootell, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from neurophysiological recordings with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "930230b7-aacc-4fb9-9566-b80103f373b1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C14",
+      "claim": "The selectivity of neurons without surround suppression to large stimuli routinely exceeded that of the monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "and the selectivity of these neurons to large stimuli routinely exceeded that of the monkeys (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of neuronal and behavioral selectivity shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "bcc36596-525a-4f3b-aadf-4b37c85eba8c",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C15",
+      "claim": "There was no evidence that neurons with strong surround suppression were more correlated with the animals' behavioral choices.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using choice probability analysis (Britten et al., 1996; Nienborg et al., 2012; Haefner et al., 2013), we found no evidence that neurons with strong surround suppression were more correlated with the animals' behavior choices",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of choice probability data with citations to methodological references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c72be7c4-b5bc-4a2e-92bf-356c8f9c5b17",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C16",
+      "claim": "The correlation between neuronal suppression index (SIneu) and choice probability was modestly negative (r = -0.14, P = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "indeed the correlation between SIneu and choice probability was modestly negative (Figure 2E; r = -0.14, P = 0.04).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of the relationship between SIneu and choice probability shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a030a0d9-b882-4a32-8671-68e0a97e0321",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C17",
+      "claim": "The mean level of noise correlations was 0.099 \u00b1 0.007.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean levels of noise correlations were typically on the order of 0.1 (0.099 \u00b1 0.007), compatible with previous reports (Zohary et al., 1994; Bair et al., 2001; Huang and Lisberger, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from multi-electrode recordings with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "57a72674-283c-4e60-b31d-82cac4399835",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C18",
+      "claim": "The strength of noise correlations was independent of motion direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Their strength was independent of motion direction or stimulus size (Wilcoxon rank sum test for direction, 94% of experiments with p>0.05",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of noise correlations across different stimulus conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "0aa62509-4bbc-44bb-97f0-8ef88c790861",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C19",
+      "claim": "The strength of noise correlations was independent of stimulus size (P = 0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "Their strength was independent of motion direction or stimulus size (Wilcoxon rank sum test for direction, 94% of experiments with p>0.05; for smaller and larger sizes, P = 0.55 Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of noise correlations across different stimulus sizes shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "82ad62b9-ba01-465b-b5d0-a39f275e716e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C20",
+      "claim": "Noise correlations and signal correlations are significantly correlated (r = 0.32, p<0.001) across the MT population.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship illustrated by this example pair is characteristic of the population (Figure 4A), across which noise correlations and signal correlation are significantly correlated (r = 0.32, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of the relationship between noise and signal correlations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a1a744b1-37eb-4b67-95bc-5de242aa8639",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C21",
+      "claim": "The magnitudes of noise correlations (rnoise) were not significantly different across types of neuron pairs (SS-SS, NS-NS, SS-NS).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population, the magnitudes of rnoise were not significantly different across types of neuron pairs (Wilcoxon rank sum tests, p>0.86).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of noise correlation magnitudes across neuron pair types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "e9286532-b603-4929-ad45-cd4e25fb3c2f",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C22",
+      "claim": "The correlation structure differed substantially for different cell classes (SS-SS, NS-NS, SS-NS).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the correlation structure differed substantially for different cell classes: For the NS-NS pairs, rnoise and rsignal tended to be correlated (Figure 4A, red dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of correlation structure across different neuron pair types shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b1576a8a-660e-4b0a-9450-73b72fff8677",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C23",
+      "claim": "For NS-NS pairs, noise correlation (rnoise) and signal correlation (rsignal) tended to be correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NS-NS pairs, rnoise and rsignal tended to be correlated (Figure 4A, red dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of NS-NS neuron pairs shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "75f9a6f4-212c-46af-a030-8b329c8a7a17",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C24",
+      "claim": "Pairs of SS neurons showed less dependency of noise correlation on signal correlation compared to NS-NS pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast pairs of SS neurons showed less of a dependency of noise correlation on signal correlation (Figure 4A, blue dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of SS-SS neuron pairs shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ad4a92f0-a811-4365-9d68-5e23fce405e9",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C25",
+      "claim": "The difference in the slopes of the lines relating signal and noise correlations was significantly lower for SS pairs than for NS pairs (ANCOVA, P = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in the slopes of the lines relating signal and noise correlations was significantly lower for the SS pairs than for the NS pairs (ANCOVA, P = 0.03, multiple comparison test) (Figure 4A, red and blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of slopes between SS and NS neuron pairs shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "f629937a-d648-4db4-971b-fefca309cd0b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C27",
+      "claim": "Sampling from rate-matched sub-distributions of SS-SS and NS-NS pairs yielded significantly higher rnoise vs. rsignal slopes for the NS-NS sub-distributions (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, sampling from rate-matched sub-distributions of SS-SS and NS-NS pairs (Materials and methods) yielded significantly higher rnoise vs. rsignal slopes for the NS-NS sub-distributions (Figure 4B; Wilcoxon rank sum test, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of rate-matched neuron pairs shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "4fd4b0ed-bb34-43ca-8e7b-f48e8be903d0",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C28",
+      "claim": "The reduction of noise correlation dependency on signal correlation did not depend on the categorical classification of SS and NS neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the reduction of this rnoise dependency did not depend on the categorical classification of SS and NS neurons, as we obtained similar results using continuous values of the joint SIneu for pairs of neurons (Figure 4\u2014figure supplement 1C; linear correlation: (r = -0.232, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis using continuous values of suppression index shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "12ac01fd-e406-4c3c-871c-9af5d9c2c0f8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C29",
+      "claim": "There is a positive relationship between noise correlations and differential correlations (f'f') across neuronal pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated differential correlations for all neuronal pairs, and found that there is indeed a positive relationship between noise correlations and f'f' (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of differential correlations shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b11f068a-4589-475f-8598-2ca0fd690a51",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C30",
+      "claim": "The magnitude of information-limiting correlations is greater between NS-NS pairs than between SS-SS pairs (rNS-NS = 0.48, rSS-SS = 0.23, P = 0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find the same difference between SS-SS and NS-NS pairs as reported above (Figure 4A): the magnitude of the information-limiting correlations is greater between NS-NS pairs than between SS-SS pairs (Figure 4\u2014figure supplement 1E, rNS-NS = 0.48, rSS-SS = 0.23, P = 0.08).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of information-limiting correlations shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b1a9bdda-fd77-409b-823c-a36bad1a3812",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C31",
+      "claim": "While NS neurons are individually more informative for large stimuli than SS neurons, as a population they are more limited by their correlation structure than SS neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, while NS neurons are individually more informative for large stimuli than SS neurons, as a population they are more limited by their correlation structure than SS neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from the correlation structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "e1cb97ed-be9f-48bc-9033-ea464751ac59",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C32",
+      "claim": "The model suppression index was 0.48, matching the empirical behavioral suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression shown by the model is of the same magnitude as the empirical behaviour (Figure 5E, black), with the model SI being 0.48 (Figure 5C,E cyan).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of model predictions to behavioral data shown in Figure 5C and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "89194776-6a9f-4623-b5d6-22abcd1f1086",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C33",
+      "claim": "Both noise correlation structure and surround suppression were necessary to account for the decreased performance as a function of size.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both the noise correlation structure and surround suppression were necessary to account for the decreased performance as a function of size, since models (Zohary et al., 1994) and (Shadlen et al., 1996) did not show any psychophysical suppression at all (SI = 0; data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from model simulations testing different components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "3c240fc7-ba8b-4c07-80ef-57ac9d557f8b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C34",
+      "claim": "A model with correlations and surround suppression but without their observed relationship exhibited only modest psychophysical suppression (SI = 0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "However, these components together were not sufficient to account for the observed behavioral results, since model (Abbott and Dayan, 1999) exhibited only modest psychophysical suppression (SI = 0.28; Figure 5C,E magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from model simulation shown in Figure 5C and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "25871ee6-1d4e-4662-b1f8-82ee28f5d284",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C35",
+      "claim": "The relationship between surround suppression and correlation structure appears to have important consequences for motion perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the relationship between surround suppression and correlation structure appears to have important consequences for motion perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of different model variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a9ff31c8-75d7-4a53-9715-c78445e45874",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C36",
+      "claim": "The surround-suppression-dependent correlation structure increases performance for small stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more surprising is an increase in performance seen for small stimuli (Figure 5C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from model simulations shown in Figure 5C and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a4e1045a-1eec-413e-87db-2b616cf7825d",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C37",
+      "claim": "The combined effect of correlation structure and surround suppression is an increase in the capacity of the MT population to discriminate the direction of very small stimuli, at the expense of large stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the combined effect of correlation structure and surround suppression is an increase in the capacity of the MT population to discriminate the direction of very small stimuli, at the expense of large stimuli (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from model simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "8cbf399d-d1c1-437c-820e-19e7d77bceaf",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C38",
+      "claim": "The suppression index decreased to 0.26 when the integration radius was increased to 15\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly the SI decreased with increasing integration radius, dropping to 0.26 when the radius was 15\u00b0, which is significantly less than that exhibited psychophysically by the monkeys (Figure 5E green, Wilcoxon rank sum test, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from model simulations with varying integration radius shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "33f92ba0-3fa9-4231-b4b5-b8b5aee5fd6a",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C39",
+      "claim": "The overall model performance was unaffected by the integration radius parameter (ANOVA, P = 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall model performance, obtained by summing the performance across all sizes, was, however, unaffected by this parameter (ANOVA, P = 0.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of model performance across different integration radii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ddc9bb71-464d-4441-a42c-f66a872165e9",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C40",
+      "claim": "A larger integration radius increases the performance at large sizes while decreasing the performance at small sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the fact that a larger integration radius increases the performance at large sizes, while decreasing the performance at small sizes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of model behavior with different integration radii shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "daaf508f-c03c-4b66-86ad-7ebaf35450a1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C41",
+      "claim": "Behavioral suppression index could vary substantially according to the internal strategies used by the observer.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that behavioral SI could vary substantially according to the internal strategies used by the observer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the effect of integration radius on model performance.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "61f17c48-fbfb-45f7-8a89-a9d9b0c4c6f5",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C42",
+      "claim": "Area MT was identified based on anatomical MRI scan, depth, prevalence of direction-selective neurons, receptive field size to eccentricity relationship, and white matter to grey matter transition from a dorsal-posterior approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Area MT was identified based on an anatomical MRI scan, as well as depth, prevalence of direction-selective neurons, receptive field size to eccentricity relationship, and white matter to grey matter transition from a dorsal-posterior approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the methodology for identifying recording location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "47c27fbb-75d6-491a-828e-3e175afbd6f3",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C43",
+      "claim": "Linear microelectrode arrays (V-Probe, Plexon) with 16 contacts were used to record single-units.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded single-units using linear microelectrode arrays (V-Probe, Plexon) with 16 contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of recording equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c423851c-feae-4f4f-9131-dd58408a3f2b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C45",
+      "claim": "A brief stimulus duration (50 ms) was used to increase the difficulty of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "As in most human studies, we used a very brief stimulus duration (50 ms) (Tadin et al., 2003) in order to increase the difficulty of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of experimental design choice with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "be16f846-761e-460f-8073-8f3949ce5224",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C46",
+      "claim": "Monkeys performed 20-40 repetitions of each distinct stimulus in a typical session.",
+      "claim_type": "EXPLICIT",
+      "source": "In a typical session, the monkeys performed 20\u201340 repetitions of each distinct stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7fdc6c60-0dd6-4693-8845-8d3688754ef8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C47",
+      "claim": "The firing rate during the 100-200 ms interval after stimulus onset was used to calculate neuronal d'.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the neuronal selectivity of both the single neurons and the population, we used the firing rate during the 100200 ms interval after stimulus onset to calculate the d'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "8ba593ee-882b-4909-9e61-c7c998179ff1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C48",
+      "claim": "The 100-200 ms time window was chosen because firing rates in response to preferred and null directions were significantly different (p<0.05) during this interval.",
+      "claim_type": "EXPLICIT",
+      "source": "This interval was chosen because the firing rates in response to the preferred and null directions were significantly different (Figure 2\u2014figure supplement 2E; p<0.05, t-test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Justification for analysis time window based on statistical testing shown in Figure 2\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "2904f28c-2dc4-45ab-a796-7bb0913d5f52",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C49",
+      "claim": "Spikes during the 100-200 ms time window were significantly correlated with the animals' behavioral choices.",
+      "claim_type": "EXPLICIT",
+      "source": "and spikes during this time window were significantly correlated with the animals' behavioral choices (Figure 2\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of spike-choice correlation shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "bbe06e84-b5b1-42b1-bc1c-0be4b823c1be",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C50",
+      "claim": "Other time windows between 60-300 ms did not result in differences in the reported results.",
+      "claim_type": "EXPLICIT",
+      "source": "other time windows between 60\u2013300 ms did not result in differences in the results reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Control analysis testing robustness of results to time window choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "9e8906dd-dc1a-452a-92b9-89265564f8a3",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C51",
+      "claim": "The number of visual cortical neurons activated by the stimulus increases with stimulus size.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the dependency of the density of receptive fields on eccentricity in early visual structures (Van Essen et al., 1981; Erickson et al., 1989), we calculated that the number of visual cortical neurons activated by our stimulus should increase with stimulus size (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculation based on known cortical magnification factors with citations, shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "d1cac537-f178-493c-b68d-8fb9970fc2ad",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C52",
+      "claim": "Psychophysical studies in humans have found that larger stimuli are associated with diminished perceptual performance.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore surprising that behavioral studies in humans have sometimes found that larger stimuli are associated with diminished perceptual performance (Tadin et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous human psychophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ab76afce-7d7d-4522-ada8-cae0dcda68b0",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C53",
+      "claim": "Psychophysical suppression of behavioral performance in human subjects is strongly correlated with various markers of mental function, including schizophrenia, major depression, and I.Q.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this psychophysical suppression of behavioral performance in human subjects is strongly correlated with various markers of mental function, including schizophrenia, major depression, and even I.Q (Tadin et al., 2006; Golomb et al., 2009; Melnick et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies linking psychophysical suppression to mental function markers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "21ea8d41-6f5f-416e-8ad8-166080fa972a",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C54",
+      "claim": "Psychophysical suppression has previously been hypothesized to reflect the strength of neuronal surround suppression in individual cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have previously been hypothesized to reflect the strength of neuronal surround suppression in individual cortical neurons (Tadin et al., 2003; Churan et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous hypotheses in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "3ea0dc09-a5ff-4303-9fb3-b278d81afdb4",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C55",
+      "claim": "If neuronal variability is independent across neurons, it can be eliminated by simply averaging the responses of many neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "If the variability is independent across neurons, it can be eliminated by simply averaging the responses of many neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established principles of population coding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "dfb4fb62-f68d-4b3f-b937-f025571816a1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C56",
+      "claim": "When neuronal noise is independent, available information about the stimulus theoretically increases with neuronal population size.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the available information about the stimulus theoretically increases with neuronal population size (Zohary et al., 1994; Shadlen et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical principle with citations to foundational papers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "53251dd3-1966-4c3c-aef7-fa25dd0bc990",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C57",
+      "claim": "Neuronal noise is usually correlated across nearby neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in reality neuronal noise is usually correlated across nearby neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established finding in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "462d9f39-080f-43bf-9f9e-798c8fbcaf26",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C58",
+      "claim": "Noise correlations are thought to greatly influence the fidelity of a population code.",
+      "claim_type": "EXPLICIT",
+      "source": "and such noise correlations are thought to greatly influence on the fidelity of a population code (Abbott and Dayan, 1999; Sompolinsky et al., 2001; Panzeri et al., 1999; Averbeck et al., 2006; Ecker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to theoretical and empirical studies on noise correlations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c965e327-0744-44dd-8c3d-69c8e2001802",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C59",
+      "claim": "Current theories predict that stimulus information will increase or saturate as the size of the corresponding neuronal pool increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, current theories predict the stimulus information will increase or saturate as the size of the corresponding neuronal pool increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of theoretical predictions from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a2079e91-e21b-48f1-960e-c0ae3e30746d",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C60",
+      "claim": "Area MT is thought to be causally involved in behavioral decisions for motion direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Area MT is thought to be causally involved in behavioral decisions for motion direction (Born and Bradley, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work establishing MT's role in motion perception.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "fe98a18e-5014-4972-a394-13819626beae",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C61",
+      "claim": "Area MT contains many neurons with responses that are modulated by stimulus size and contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "and it contains many neurons with responses that are modulated by stimulus size and contrast (Allman et al., 1985; Pack et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous neurophysiological studies of MT.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1dea775f-33e4-4735-84a4-e606daffc63a",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C62",
+      "claim": "Neurons in early visual structures have small receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Because neurons in early visual structures have small receptive fields, large stimuli recruit more neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established property of early visual cortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "6cd558eb-8c1a-42d6-a79e-57b2445b0d3c",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C63",
+      "claim": "Large stimuli recruit more neurons in early visual structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Because neurons in early visual structures have small receptive fields, large stimuli recruit more neurons, potentially leading to more effective coding of stimulus properties and correspondingly better behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the property of small receptive fields.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "67b65f3b-8558-4533-a596-cc68352f044b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C64",
+      "claim": "Transcranial magnetic stimulation (TMS) that targets MT reduces the spatial suppression effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transcranial magnetic stimulation (TMS) that targets MT reduces the spatial suppression effect (Tadin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous TMS study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "50fe816a-e6ba-4a4a-b7ed-7102db759dc2",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C65",
+      "claim": "The TMS protocols used to modulate spatial suppression are inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the TMS protocols used to modulate spatial suppression are inhibitory",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the nature of TMS protocols used in previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "6739ff17-9c03-4efd-be3d-8d3ac8839268",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C66",
+      "claim": "TMS effects on spatial suppression could be interpreted as an effect on noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "and so one might just as easily interpret these results as an effect on noise correlations (Waterston and Pack, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Alternative interpretation with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "fe4de4ea-1d1d-4de2-9be5-9cee2ca86657",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C67",
+      "claim": "Inhibitory connectivity plays a role both in generating surround suppression and in regulating noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with our results, assuming that inhibitory connectivity plays a role both in generating surround suppression and in regulating noise correlations (Tripp, 2012; Carandini and Heeger, 2012; Renart et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from results with citations to theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "9bf14918-c53e-479c-b813-a2f295ff9ed7",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C68",
+      "claim": "People with schizophrenia show reduced spatial suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include people with schizophrenia (Tadin et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous psychophysical study in clinical population.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "725ac234-e64f-4660-9a66-be87adca0835",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C69",
+      "claim": "Older individuals show reduced spatial suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "and older individuals (Betts et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous psychophysical study in aging population.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7d138c1e-afc5-453e-a226-6fc9048b438b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C70",
+      "claim": "Subjects with reduced spatial suppression may have deficits in GABAergic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these subjects may have deficits in GABAergic efficacy (Tadin et al., 2006; Betts et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies suggesting GABAergic mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "3d6c7990-8424-46fe-aa4c-40e57a04a78d",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C71",
+      "claim": "The connection between GABAergic deficits and psychophysical spatial suppression could be through noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "our results suggest that the connection to psychophysical spatial suppression could also be through noise correlations, as these are necessary to produce any effect of neural surround suppression at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "99e092e8-813d-4b7d-9a9f-220567a1917f",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C72",
+      "claim": "Surround suppression can increase the selectivity of the neuronal population to the smallest stimulus size while worsening selectivity at larger sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation results suggest that surround suppression can increase the selectivity of the neuronal population to the smallest stimulus size in this task, while worsening the selectivity at larger sizes (Figure 5C; note performance for the 1\u00b0 stimulus).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from model simulations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "beccfeac-0be4-4886-b2e5-6271c92f3f12",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C73",
+      "claim": "One benefit of surround suppression might be in the tracking of small moving stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one benefit of surround suppression might be in the tracking of small moving stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results about functional benefits.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "da513107-853e-40ac-870f-ddd26f869fea",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C74",
+      "claim": "Activity in clusters of surround-suppressed neurons has been found to be causally linked to the tracking of small targets in smooth pursuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, activity in clusters of surround-suppressed neurons has been found to be causally linked to the tracking of small targets in smooth pursuit (Born et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on smooth pursuit.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "a0ce7841-090d-4d9d-8bd5-7c681b0a7d15",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C75",
+      "claim": "Neuronal variability in MT can account for the majority of motor variation in smooth pursuit.",
+      "claim_type": "EXPLICIT",
+      "source": "The link between MT activity and smooth pursuit initiation has been further strengthened by the finding that neuronal variability in MT can account for the majority of motor variation in smooth pursuit (Osborne et al., 2005; Hohl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies on MT and smooth pursuit.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "775f617b-ed8d-449d-b9c2-dfc26a9e41bb",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C76",
+      "claim": "Correlation structure in MT might limit the precision of pursuit initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations have led to the suggestion that correlation structure in MT might limit the precision of pursuit initiation (Huang and Lisberger, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous hypothesis about MT correlations and pursuit.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "66e3b533-2e05-4436-8567-7e83639fb321",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C77",
+      "claim": "The neurons that contribute most directly to pursuit initiation exhibit more advantageous correlation structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that such comparisons should take into account the center-surround properties of individual MT neurons, as the neurons that seem to contribute most directly to pursuit initiation (Born et al., 2000) exhibit more advantageous correlation structure (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the correlation structure results shown in Figure 4A with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "3bd856f3-90db-4b9a-b3b3-445ecbc6e3ce",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C78",
+      "claim": "The pursuit initiation system might benefit from averaging the activity of many surround-suppressed MT neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the pursuit initiation system might benefit from averaging the activity of many surround-supressed MT neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlation structure findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "e2059a6a-98e6-4d25-a61a-1725e03d4abf",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C79",
+      "claim": "The weak correlation between single-neuron MT activity and pursuit can be explained by the advantageous correlation structure of surround-suppressed neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This would explain both the weak correlation between single-neuron MT activity and pursuit and the relatively low choice probability of surround suppressed neurons in our perception task (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference connecting multiple findings with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "d9fc8c96-e98b-478b-89c6-3090609b8dd0",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C80",
+      "claim": "Some models of smooth pursuit initiation involve both a motion opponency step and a normalization operation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting in this regard that some models of smooth pursuit initiation (Hohl et al., 2013) involve both a motion opponency step and a normalization operation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous computational models of pursuit.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "4f430020-b88b-4672-af45-da3ced933706",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C81",
+      "claim": "Normalization in smooth pursuit models serves the function of computing a vector average of the MT population response.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization in these models serves the function of computing a vector average of the MT population response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational function in cited models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "283c52c3-123e-4ae0-86a5-aaa6598de938",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C82",
+      "claim": "Normalization affects the levels of noise correlations in a manner that accounts for trial-to-trial fluctuations in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "and it also affects the levels of noise correlations in a manner that accounts for trial-to-trial fluctuations in behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model properties from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "4324f3f0-7b0e-4cea-98e6-0750563be3db",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C83",
+      "claim": "Normalization may reshape the selectivity of the MT population response to favor the motion of small stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest the additional function of reshaping the selectivity of the MT population response in such a way as to favor the motion of small stimuli, precisely as would be expected for a system that initiates orienting responses to moving objects in a natural environment (Lettvin et al., 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from results with citation to classic work on motion detection.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1917151d-3f91-459c-bf3a-b2723367c5fe",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C84",
+      "claim": "Choice probability was significantly above 0.5 from approximately 100 to 200 ms after stimulus onset (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "CP was significantly above 0.5 from approximately 100 to 200 ms after stimulus onset (p<0.01, permutation test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of time-resolved choice probability shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "15685eff-5594-4626-b2e0-a74fc659827a",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C85",
+      "claim": "Choice probability decreased with receptive field eccentricity (r = -0.48, P = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "we found instead that choice probability decreased with receptive field eccentricity (Figure 2\u2014figure supplement 2D; r = -0.48, P = 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of choice probability versus eccentricity shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "79c2ee9e-e9d7-4e28-a502-3dac53e54556",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C86",
+      "claim": "Monkeys likely based their decisions on neurons with receptive fields closer to the center of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the monkeys likely based their decisions on neurons with receptive fields closer to the center of the stimulus, where motion information was present reliably on every trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the choice probability versus eccentricity relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "acf15d39-5dfb-455e-9a39-c61f4c4a8a68",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C87",
+      "claim": "Psychophysical suppression would be reduced if stimulus location was unpredictable from trial to trial.",
+      "claim_type": "EXPLICIT",
+      "source": "It would therefore be interesting to study psychophysical suppression in a paradigm in which the stimulus location was unpredictable from trial to trial. We predict that psychophysical suppression would be reduced in this case, as would overall performance across sizes (Herrmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on inference from results with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "50c98274-146b-47cc-b441-6c4f376f64ff",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C88",
+      "claim": "Subjects allocate resources according to the uncertainty associated with individual stimulus positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work suggests that subjects allocate resources according to the uncertainty associated with individual stimulus positions (Pelli, 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work on resource allocation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b02cb9d9-22a2-4cb5-8233-ca570b351eba",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C89",
+      "claim": "Surround suppression has been hypothesized to reduce correlations in natural inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surround suppression has often been hypothesized to reduce correlations in natural inputs (Snyder et al., 2014; Vinje and Gallant, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous hypotheses about surround suppression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "18f8affc-169a-420d-ad9c-f0fff6310e73",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C90",
+      "claim": "Neurons with strong surround suppression can exhibit larger or smaller noise correlations, depending on the strength of their signal correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that neurons with strong surround suppression can exhibit larger or smaller noise correlations, depending on the strength of their signal correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the correlation structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "f2ccf5a5-b535-464f-9cc9-486bac265e6b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C91",
+      "claim": "The relationship between noise and signal correlations holds for all stimuli, even those that do not engage the receptive field surrounds strongly.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship holds for all stimuli, even those that do not engage the receptive field surrounds strongly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from analysis across different stimulus conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ac18bf88-1f65-4fc2-a2a4-32436712cfc8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C92",
+      "claim": "The magnitude of noise correlations can be reduced by adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the magnitude of rnoise is not fixed, but can be reduced by adaptation (Gutnisky and Dragoi, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on adaptation effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "da2c185d-1592-4e18-b40f-2e85b0b236f8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C93",
+      "claim": "The magnitude of noise correlations can be reduced by learning.",
+      "claim_type": "EXPLICIT",
+      "source": "learning (Gu et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on learning effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7a964cde-e020-4f4a-826a-15e5dc154861",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C94",
+      "claim": "The magnitude of noise correlations can be reduced by attention.",
+      "claim_type": "EXPLICIT",
+      "source": "and attention (Cohen and Maunsell, 2009; Mitchell et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies on attention effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "cc8c74a8-1bf4-457c-a9af-0f737049d963",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C95",
+      "claim": "Attention increases the effective contrast of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is particularly relevant, because attention increases the effective contrast of the stimulus (Treue and Trujillo, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on attention and contrast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b7c8673a-9b7b-4199-ac58-01c31f88ee88",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C96",
+      "claim": "Increased effective contrast also increases surround suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "which also increases surround suppression (Sundberg et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on contrast and surround suppression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "6e1db1db-50fe-4c16-a59c-1dd48dd7ac88",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C97",
+      "claim": "Increased effective contrast decreases noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "and decreases correlations (Kohn and Smith, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on contrast and correlations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "603f560d-97bb-4766-ac4f-20f010f50a1c",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C98",
+      "claim": "A single mechanism may account for the effects of attention and surround suppression on noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus a single mechanism (Reynolds and Heeger, 2009) may account for the effects of attention and surround suppression on noise correlations, as implemented with divisive normalization (Tripp, 2012; Wiechert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference with citations to theoretical frameworks.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "44ec8bb9-d743-4740-9630-32c7d092a2a8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C99",
+      "claim": "Attention can increase or decrease the strength of noise correlations, depending on the stimulus encoding of the neuron pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Attention is also of interest because, like surround suppression, it can increase or decrease the strength of noise correlations, depending on the stimulus encoding of the neuron pairs (Ruff and Cohen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous study on differential effects of attention.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "647e4be4-5d99-4330-91ce-c0134350ae94",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C100",
+      "claim": "Differential effects of attention on positive and negative noise correlations are particularly important in MT, where negative correlations are quite common.",
+      "claim_type": "EXPLICIT",
+      "source": "These differential effects on positive and negative noise correlations are particularly important in MT, where negative correlations are quite common (Zohary et al., 1994; Huang and Lisberger, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to previous studies documenting negative correlations in MT.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "d5cab79a-c476-4ad7-ae36-e460f9001ee8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C101",
+      "claim": "Negative correlations in MT likely arise from motion-opponent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative correlations likely arise from motion-opponent mechanisms, in which the outputs of neurons with opposite direction tuning are subtracted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the source of negative correlations based on known mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "65ba9cb7-1df8-4218-8a2a-00928348b828",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C102",
+      "claim": "Motion-opponent effects are stronger in MT than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects are stronger in MT than in V1 (Qian and Andersen, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous comparative study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "51f954ae-6fd2-42e1-ad46-8e8acc9da696",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C103",
+      "claim": "Motion-opponent mechanisms play an important role in decision-making models.",
+      "claim_type": "EXPLICIT",
+      "source": "and they play an important role in decision-making models (Shadlen et al., 1996; Cohen and Newsome, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to computational models incorporating motion opponency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "738a6953-e368-4051-886d-b32f6ca7d690",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C105",
+      "claim": "The neuron density was set to 20 neurons/mm2 in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute number of neurons can then be obtained by multiplying the cortical footprint by a factor that indicates the number of neurons per millimeter. We set this factor to 20 neurons/mm2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of modeling parameter choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "084e0c61-1389-47bb-8646-e4fcc905343e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C106",
+      "claim": "A neuron density of 20 neurons/mm2 yielded a range of pool sizes comparable to those used in other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "which yielded a range of pool sizes comparable to those used in other studies (Shadlen et al., 1996) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Justification of parameter choice with citation and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ce25e69e-63e8-410b-92a0-b9c9f7cb4f3a",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C107",
+      "claim": "The range of pool sizes used is in the regime where population sensitivity is saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "The range ofpool sizes is in the regime where population sensitivity is saturated (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "f1111ee7-36bc-4023-b953-dfe9bf2a996e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C108",
+      "claim": "Results were qualitatively similar when neuron density was set to 40 neurons/mm2.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that our results are robust with respect to this parameter re-running the simulations with a value of 40 neurons/mm2; the results were qualitatively similar to those reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Control analysis testing robustness to parameter choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "9b2e448f-2f85-444a-ac87-274cbf7ece35",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C109",
+      "claim": "All procedures conformed to the regulations established by the Canadian Council on Animal Care.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures conformed to the regulations established by the Canadian Council on Animal Care and were approved by the Institutional Animal Care Committee of the Montreal Neurological Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "42020c78-5004-45ee-a4cd-d87fabb3bb64",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C110",
+      "claim": "All procedures were approved by the Institutional Animal Care Committee of the Montreal Neurological Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures conformed to the regulations established by the Canadian Council on Animal Care and were approved by the Institutional Animal Care Committee of the Montreal Neurological Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "81ae80c7-846c-42c7-8ac5-f210f730be9b",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C111",
+      "claim": "Eye movements were monitored with an EyeLink1000 infrared eye tracking system with a sampling rate of 1000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For both monkeys, eye movements were monitored with an EyeLink1000 infrared eye tracking system (SR Research) with a sampling rate of 1000 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of equipment used for eye tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "d2f3d4cc-da61-4d0b-a26e-9d9cebf350fc",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C112",
+      "claim": "Visual motion stimuli were displayed at 60 Hz at 1280 by 800 pixels resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual motion stimuli were displayed at 60 Hz at 1280 by 800 pixels resolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulus display parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1d3c6103-6a96-4c28-aa92-3c1dfd7617c2",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C113",
+      "claim": "The viewing area subtended 60\u00b0 \u00d7 40\u00b0 at a viewing distance of 50 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "the viewing area subtended 60\u00b0 \u00d7 40\u00b0 at a viewing distance of 50 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of viewing geometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "26d33b3c-26b6-49ac-a4d1-d0c0c16819d8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C114",
+      "claim": "The sizes of the Gabor patches ranged from 1\u00b0 to 15\u00b0 in steps of 2\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of the Gabor patches were defined by 2 standard deviations of the Gaussian envelope and ranged from 1\u00b0 to 15\u00b0 in steps of 2\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulus parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7f832156-c2c0-4c3e-b487-35a2c38d8b83",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C115",
+      "claim": "Paradoxical percepts reflect tradeoffs between sensitivity and noise in neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that paradoxical percepts reflect tradeoffs between sensitivity and noise in neuronal populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "43dd4224-ff41-4b93-a189-069f9e3864f1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C116",
+      "claim": "Psychophysical suppression is due to an interaction of three main mechanisms: noise correlations, neural surround suppression, and a read-out strategy that emphasized neurons with receptive fields near the stimulus center.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the resulting data to constrain a computational model that explained the behavioral data as an interaction of three main mechanisms: noise correlations, which prevented stimulus information from growing with stimulus size; neural surround suppression, which decreased sensitivity for large stimuli; and a read-out strategy that emphasized neurons with receptive fields near the stimulus center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main findings from the computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "b084ecbd-d1ec-4747-aed1-f5cf32cefd50",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C117",
+      "claim": "Noise correlations prevented stimulus information from growing with stimulus size.",
+      "claim_type": "EXPLICIT",
+      "source": "noise correlations, which prevented stimulus information from growing with stimulus size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the computational model about the role of noise correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "29711a4e-3fc0-4e03-8f13-1e641678bc88",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C118",
+      "claim": "Neural surround suppression decreased sensitivity for large stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "neural surround suppression, which decreased sensitivity for large stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the computational model about the role of surround suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7b17e644-5e9c-4c8a-861b-e47597efb167",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C119",
+      "claim": "Neurons with the smallest surround suppression had noise correlations most closely aligned with signal correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "those neurons with the smallest surround suppression, and hence the ones most sensitive to large stimuli individually, also had noise correlations most closely aligned with signal correlations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the correlation structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7b44bf98-6cbe-42e0-8605-00f792717927",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "claim_id": "C120",
+      "claim": "Noise correlations aligned with signal correlations are damaging to the total information carried by the population.",
+      "claim_type": "EXPLICIT",
+      "source": "such correlations are damaging to the total information carried by the population (Abbott and Dayan, 1999; Averbeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical principle with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "12d95aca-d58e-4f52-9534-1a30413dc176",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used two adult female rhesus monkeys (7 kg each) for electrophysiological recordings in area MT, recording 165 single units (2-8 cells per day) using 16-contact linear microelectrode arrays. Area MT was identified using multiple anatomical and physiological criteria, and all procedures were ethically approved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C9, C42-C43, and C109-C114 provide comprehensive methodological details about subjects, recording techniques, equipment specifications, and ethical compliance. These are standard methodological descriptions that are internally consistent and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "00b80a2d-3806-40c2-92a4-74a68a1767b1",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Monkeys exhibited spatial suppression of motion perception: at high contrast (100%), behavioral performance worsened with larger stimulus sizes (SIpsy = 0.42\u00b10.25 for monkey C, 0.54\u00b10.19 for monkey Y), while low-contrast stimuli showed improved performance with size. Performance was best at medium stimulus intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C7 describe the core behavioral finding with quantitative measurements and statistical support (p<0.001, Wilcoxon rank sum test). The paradoxical size-dependent suppression is well-documented with specific suppression indices for both animals, and the pattern replicates previous human findings (Tadin et al., 2003).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "6c1dc3d2-6060-45ce-876e-90314d5524a2",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Individual MT neurons showed substantially less surround suppression (mean SIneu = 0.27) than behavioral suppression (mean SIpsy = 0.48). Many neurons exhibited no surround suppression, and their selectivity for large stimuli often exceeded the monkeys' behavioral performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 establish a critical mismatch between single-neuron and behavioral suppression through direct quantitative comparison. The finding that many neurons lack surround suppression yet the behavior shows strong suppression is well-supported by the data in Figures 2B-D, indicating single-neuron properties cannot fully explain behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Choice probability analysis revealed that neurons with strong surround suppression were not more correlated with behavioral choices (r = -0.14, P = 0.04). Choice probability was significant from 100-200 ms post-stimulus and decreased with receptive field eccentricity (r = -0.48, P = 0.05), suggesting monkeys relied on neurons with central receptive fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C84-C86 provide converging evidence about neural-behavioral correlations using established choice probability methods. The negative correlation between suppression and choice probability (C16) is statistically significant, and the eccentricity effect (C85) provides additional support for the readout strategy hypothesis. The temporal dynamics (C84) validate the analysis window choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "102f42c4-12e0-4e2d-87d3-797d22515b9c",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Noise correlations in MT averaged 0.099\u00b10.007, consistent with previous reports. These correlations were independent of motion direction and stimulus size (P = 0.55), but noise and signal correlations were significantly correlated across the population (r = 0.32, p<0.001). Correlation magnitudes did not differ across neuron pair types (p>0.86).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 characterize basic noise correlation properties with appropriate statistical tests and comparisons to literature. The independence from stimulus parameters (C18-C19) and the relationship between noise and signal correlations (C20) are well-documented. However, C21 sets up an important contrast with C22-C25 about correlation structure differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relationship between noise and signal correlations differed substantially across neuron types: NS-NS pairs showed strong correlation between rnoise and rsignal, while SS-SS pairs showed less dependency. This difference was statistically significant (ANCOVA, P = 0.03) and robust to rate-matching (p<0.001) and continuous classification (r = -0.232, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 establish a novel finding about correlation structure dependence on surround suppression. The result is supported by multiple statistical approaches (ANCOVA, rate-matching, continuous analysis) and shown in Figure 4A-B. The control analyses (C27-C28) address potential confounds, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "efb8467c-e8a2-4ff9-86ef-b812fc194794",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Differential correlations (information-limiting correlations) showed a positive relationship with noise correlations. NS-NS pairs had greater information-limiting correlations than SS-SS pairs (rNS-NS = 0.48, rSS-SS = 0.23, P = 0.08). While NS neurons are individually more informative for large stimuli, they are more limited by correlation structure as a population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 extend the correlation analysis to information-theoretic measures. While C29 is supported, C30 shows marginal statistical significance (P = 0.08), which does not meet conventional thresholds. The inference in C31 is logical but depends on the marginally significant result in C30. The conclusion would be strengthened by additional data or analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A computational model incorporating noise correlations, surround suppression, and their observed relationship reproduced behavioral suppression (SI = 0.48). Both components were necessary but insufficient alone; their interaction was critical. The model also predicted enhanced performance for small stimuli, suggesting a tradeoff favoring discrimination of small over large stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 describe systematic model comparisons showing that the relationship between surround suppression and correlation structure is necessary to explain behavior. The ablation studies (C33-C34) demonstrate that neither component alone suffices (SI = 0 or 0.28 vs. 0.48 observed). The prediction about small stimuli (C36-C37) is an emergent property supported by Figure 5C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1799f14b-114f-4228-8db3-a2cca69a4755",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Varying the integration radius in the model affected the suppression index (SI = 0.26 at 15\u00b0 radius, significantly less than behavioral SI, p<0.001) but not overall performance (P = 0.25). Larger integration radii increased performance for large stimuli while decreasing it for small stimuli, suggesting behavioral SI depends on internal readout strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 explore model parameter sensitivity. The statistical tests (C38-C39) are appropriate, and the tradeoff described in C40 is logical. However, C41 is somewhat speculative about 'internal strategies.' The analysis demonstrates that readout assumptions matter, but the specific strategy used by the animals remains uncertain despite the choice probability evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "7633acad-64a3-46e5-83d9-1d478077ce38",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental design used brief stimulus duration (50 ms) to increase task difficulty, with 20-40 repetitions per stimulus. Neural selectivity was quantified using firing rates during 100-200 ms post-stimulus, chosen because responses differed significantly between directions (p<0.05) and correlated with behavioral choices. Other time windows (60-300 ms) yielded similar results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 justify key methodological choices with appropriate rationale and validation. The time window selection (C47-C49) is well-justified by statistical tests and behavioral correlations shown in supplementary figures. The robustness analysis (C50) strengthens confidence in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "fc439e57-dfb8-4374-a7be-5fb886080d27",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Based on cortical magnification factors, the number of neurons activated should increase with stimulus size. However, human psychophysical studies show paradoxically diminished performance with larger stimuli, correlated with mental function markers. This has been hypothesized to reflect surround suppression in individual neurons. Area MT is causally involved in motion perception and contains size- and contrast-modulated neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 and C60-C63 establish the theoretical background and motivation from prior literature. These are well-cited claims about established findings (cortical magnification, psychophysical suppression in humans, MT's role). C51 involves a calculation based on cited magnification factors. The claims appropriately frame the study's context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "1698c016-18b0-420a-a049-c6c58d220966",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Theoretical principles of population coding state that independent neuronal noise can be eliminated by averaging, allowing information to increase with population size. However, neuronal noise is typically correlated, which influences population code fidelity. Current theories predict information should increase or saturate with neuronal pool size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 summarize established theoretical principles with appropriate citations to foundational papers (Zohary et al., 1994; Shadlen et al., 1996; Abbott and Dayan, 1999). These are accurate representations of population coding theory that motivate the study's investigation of the paradoxical behavioral findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "13ef39ae-087f-470c-b97e-3af69affaab3",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TMS targeting MT reduces spatial suppression, but since TMS protocols are inhibitory, effects could reflect modulation of noise correlations rather than surround suppression. This interpretation is consistent with the current results, assuming inhibitory connectivity regulates both surround suppression and noise correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 reinterpret prior TMS findings in light of current results. C64 accurately cites previous work, C65 correctly characterizes TMS protocols, and C66-C67 offer a plausible alternative interpretation supported by theoretical citations. This is appropriate scientific reasoning connecting prior and current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c785a484-ec04-495b-bde4-5856e3e5f0fe",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Populations with reduced spatial suppression (schizophrenia, older individuals) may have GABAergic deficits. The current results suggest the connection to psychophysical suppression could be through noise correlations, as these are necessary for neural surround suppression to affect population-level coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 connect the findings to clinical populations. C68-C69 accurately cite prior work, C70 notes previous mechanistic hypotheses, and C71 offers a refined interpretation based on current findings. The reasoning is sound: if noise correlations are necessary for population-level effects (as shown in the modeling), then GABAergic effects on correlations could explain clinical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "2633d18f-9485-4b65-99ef-3e83f7155e50",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Model simulations suggest surround suppression increases selectivity for small stimuli while worsening it for large stimuli, potentially benefiting tracking of small moving targets. Surround-suppressed neurons are causally linked to smooth pursuit and show advantageous correlation structure. The pursuit system might benefit from averaging many surround-suppressed neurons, explaining weak single-neuron correlations with pursuit and low choice probabilities of suppressed neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 connect findings to smooth pursuit behavior through appropriate citations and logical inference. C72 is supported by model results (Figure 5C), C74-C76 accurately cite prior work, and C77 appropriately references current findings (Figure 4A). The speculation in C73, C78-C79 is reasonable given the data, though these remain hypotheses requiring direct testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "4971a438-a1b5-4dae-b4e5-724a2cff4192",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Smooth pursuit models involve motion opponency and normalization operations. Normalization computes vector averages and affects noise correlations accounting for behavioral fluctuations. The current results suggest normalization may additionally reshape MT population selectivity to favor small stimuli, as expected for a system initiating orienting responses to moving objects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 connect findings to computational models of pursuit. C80-C82 accurately describe properties of cited models (Hohl et al., 2013), and C83 offers a reasonable extension based on current findings. The speculation is appropriately qualified and grounded in both the data and ecological considerations (Lettvin et al., 1959).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "c04676a5-6f10-4e98-8631-27250922d495",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "If stimulus location were unpredictable trial-to-trial, psychophysical suppression would likely be reduced, as would overall performance. This prediction is based on the principle that subjects allocate resources according to positional uncertainty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 make testable predictions based on the finding that choice probability decreases with eccentricity (C85-C86) and resource allocation principles (Pelli, 1985). The prediction is logical and appropriately qualified as speculation requiring future testing. This represents good scientific practice in proposing follow-up experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "18aa0357-01cc-4590-b975-4438ab30eadd",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Contrary to hypotheses that surround suppression reduces correlations in natural inputs, neurons with strong surround suppression can exhibit larger or smaller noise correlations depending on signal correlation strength. This relationship holds across all stimuli, even those not strongly engaging surrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 contrast current findings with prior hypotheses. C89 accurately cites previous work, while C90-C91 summarize key findings from the correlation analysis (Figure 4A). The observation that the relationship holds even for small stimuli (C91) is important for ruling out stimulus-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Noise correlation magnitude can be modulated by adaptation, learning, and attention. Attention increases effective contrast, which increases surround suppression and decreases correlations, suggesting a unified mechanism possibly implemented via divisive normalization. Attention can differentially affect positive and negative correlations, particularly important in MT where negative correlations from motion-opponent mechanisms are common and play important roles in decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C103 synthesize prior literature on correlation modulation and motion opponency with appropriate citations throughout. The proposed unified mechanism (C98) is speculative but well-grounded in cited theoretical frameworks (Reynolds and Heeger, 2009; Tripp, 2012). The discussion of negative correlations (C100-C103) appropriately contextualizes MT's unique properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "f517e75e-0135-4f79-a226-2e3a1261b232",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model used neuron density of 20 neurons/mm\u00b2, yielding pool sizes comparable to other studies and in the regime where population sensitivity is saturated. Results were qualitatively similar with 40 neurons/mm\u00b2, demonstrating robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 document model parameters and robustness checks. The parameter choice (C105-C106) is justified by comparison to prior work (Shadlen et al., 1996) and analysis of saturation (C107, Figure 4\u2014figure supplement 1B). The robustness test (C108) strengthens confidence in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    },
+    {
+      "id": "ff406049-d76d-43d6-a9cb-d245fb218974",
+      "content_id": "727756a9-8aac-45fc-9576-42531ce66e0b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Paradoxical percepts reflect tradeoffs between sensitivity and noise in neuronal populations. Psychophysical suppression results from three interacting mechanisms: noise correlations preventing information growth with size, neural surround suppression decreasing sensitivity for large stimuli, and a readout strategy emphasizing central neurons. Critically, neurons with least suppression (most sensitive to large stimuli) had noise correlations most aligned with signal correlations, which damages population information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C120 synthesize the main conclusions. C116-C118 summarize the three-mechanism model supported by systematic comparisons (Figure 5). C119 restates the key novel finding about correlation structure. C120 invokes established theory (Abbott and Dayan, 1999) to explain why this matters. The integration is logical and well-supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:55:21.142059Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "188e3734-0b98-4a7e-90a8-0e0dd21f7a99",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "cb4eb560-d3c3-4b33-a807-5069fdf2844f",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "a0b1cc0a-62b0-4c25-8599-e9b32d44c7fe",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "61f17c48-fbfb-45f7-8a89-a9d9b0c4c6f5",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "47c27fbb-75d6-491a-828e-3e175afbd6f3",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "9b2e448f-2f85-444a-ac87-274cbf7ece35",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "42020c78-5004-45ee-a4cd-d87fabb3bb64",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "81ae80c7-846c-42c7-8ac5-f210f730be9b",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "d2f3d4cc-da61-4d0b-a26e-9d9cebf350fc",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "1d3c6103-6a96-4c28-aa92-3c1dfd7617c2",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "26d33b3c-26b6-49ac-a4d1-d0c0c16819d8",
+      "result_id": "12d95aca-d58e-4f52-9534-1a30413dc176"
+    },
+    {
+      "claim_id": "9d094f5d-091b-4013-a6cd-b7250b32edfc",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "498ba842-c8ef-4980-ad61-0cb76738120e",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "a06f06b0-7de1-448c-967c-182f03b0411b",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "628b944e-4afa-4de0-9e1e-a9c4a32cb14f",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "c04bb402-ba18-4ee7-ba0b-7b97202c57d2",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "24704d18-23b2-48ef-86ec-9c6d7f3090e4",
+      "result_id": "00b80a2d-3806-40c2-92a4-74a68a1767b1"
+    },
+    {
+      "claim_id": "66de8bcf-7ed0-4bba-b1aa-f0c238f57cd3",
+      "result_id": "6c1dc3d2-6060-45ce-876e-90314d5524a2"
+    },
+    {
+      "claim_id": "74828028-2a67-4647-b058-da641c6eaf46",
+      "result_id": "6c1dc3d2-6060-45ce-876e-90314d5524a2"
+    },
+    {
+      "claim_id": "0a7d8805-b714-41bc-b080-4f04708ebb29",
+      "result_id": "6c1dc3d2-6060-45ce-876e-90314d5524a2"
+    },
+    {
+      "claim_id": "9d1e1e16-e7fb-4cd6-83c2-e5e14d2a4022",
+      "result_id": "6c1dc3d2-6060-45ce-876e-90314d5524a2"
+    },
+    {
+      "claim_id": "930230b7-aacc-4fb9-9566-b80103f373b1",
+      "result_id": "6c1dc3d2-6060-45ce-876e-90314d5524a2"
+    },
+    {
+      "claim_id": "bcc36596-525a-4f3b-aadf-4b37c85eba8c",
+      "result_id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8"
+    },
+    {
+      "claim_id": "c72be7c4-b5bc-4a2e-92bf-356c8f9c5b17",
+      "result_id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8"
+    },
+    {
+      "claim_id": "1917151d-3f91-459c-bf3a-b2723367c5fe",
+      "result_id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8"
+    },
+    {
+      "claim_id": "15685eff-5594-4626-b2e0-a74fc659827a",
+      "result_id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8"
+    },
+    {
+      "claim_id": "79c2ee9e-e9d7-4e28-a502-3dac53e54556",
+      "result_id": "1477cd27-3d71-4f23-b84b-18e9c9c037b8"
+    },
+    {
+      "claim_id": "a030a0d9-b882-4a32-8671-68e0a97e0321",
+      "result_id": "102f42c4-12e0-4e2d-87d3-797d22515b9c"
+    },
+    {
+      "claim_id": "57a72674-283c-4e60-b31d-82cac4399835",
+      "result_id": "102f42c4-12e0-4e2d-87d3-797d22515b9c"
+    },
+    {
+      "claim_id": "0aa62509-4bbc-44bb-97f0-8ef88c790861",
+      "result_id": "102f42c4-12e0-4e2d-87d3-797d22515b9c"
+    },
+    {
+      "claim_id": "82ad62b9-ba01-465b-b5d0-a39f275e716e",
+      "result_id": "102f42c4-12e0-4e2d-87d3-797d22515b9c"
+    },
+    {
+      "claim_id": "a1a744b1-37eb-4b67-95bc-5de242aa8639",
+      "result_id": "102f42c4-12e0-4e2d-87d3-797d22515b9c"
+    },
+    {
+      "claim_id": "e9286532-b603-4929-ad45-cd4e25fb3c2f",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "b1576a8a-660e-4b0a-9450-73b72fff8677",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "75f9a6f4-212c-46af-a030-8b329c8a7a17",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "ad4a92f0-a811-4365-9d68-5e23fce405e9",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "f629937a-d648-4db4-971b-fefca309cd0b",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "4fd4b0ed-bb34-43ca-8e7b-f48e8be903d0",
+      "result_id": "18dd38b3-cf4c-4afd-8308-70a813e42a8e"
+    },
+    {
+      "claim_id": "12ac01fd-e406-4c3c-871c-9af5d9c2c0f8",
+      "result_id": "efb8467c-e8a2-4ff9-86ef-b812fc194794"
+    },
+    {
+      "claim_id": "b11f068a-4589-475f-8598-2ca0fd690a51",
+      "result_id": "efb8467c-e8a2-4ff9-86ef-b812fc194794"
+    },
+    {
+      "claim_id": "b1a9bdda-fd77-409b-823c-a36bad1a3812",
+      "result_id": "efb8467c-e8a2-4ff9-86ef-b812fc194794"
+    },
+    {
+      "claim_id": "e1cb97ed-be9f-48bc-9033-ea464751ac59",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "89194776-6a9f-4623-b5d6-22abcd1f1086",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "3c240fc7-ba8b-4c07-80ef-57ac9d557f8b",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "25871ee6-1d4e-4662-b1f8-82ee28f5d284",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "a9ff31c8-75d7-4a53-9715-c78445e45874",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "a4e1045a-1eec-413e-87db-2b616cf7825d",
+      "result_id": "23177d5b-ceac-4cff-875b-2da3b1f17b6e"
+    },
+    {
+      "claim_id": "8cbf399d-d1c1-437c-820e-19e7d77bceaf",
+      "result_id": "1799f14b-114f-4228-8db3-a2cca69a4755"
+    },
+    {
+      "claim_id": "33f92ba0-3fa9-4231-b4b5-b8b5aee5fd6a",
+      "result_id": "1799f14b-114f-4228-8db3-a2cca69a4755"
+    },
+    {
+      "claim_id": "ddc9bb71-464d-4441-a42c-f66a872165e9",
+      "result_id": "1799f14b-114f-4228-8db3-a2cca69a4755"
+    },
+    {
+      "claim_id": "daaf508f-c03c-4b66-86ad-7ebaf35450a1",
+      "result_id": "1799f14b-114f-4228-8db3-a2cca69a4755"
+    },
+    {
+      "claim_id": "c423851c-feae-4f4f-9131-dd58408a3f2b",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "be16f846-761e-460f-8073-8f3949ce5224",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "7fdc6c60-0dd6-4693-8845-8d3688754ef8",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "8ba593ee-882b-4909-9e61-c7c998179ff1",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "2904f28c-2dc4-45ab-a796-7bb0913d5f52",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "bbe06e84-b5b1-42b1-bc1c-0be4b823c1be",
+      "result_id": "7633acad-64a3-46e5-83d9-1d478077ce38"
+    },
+    {
+      "claim_id": "9e8906dd-dc1a-452a-92b9-89265564f8a3",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "d1cac537-f178-493c-b68d-8fb9970fc2ad",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "ab76afce-7d7d-4522-ada8-cae0dcda68b0",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "21ea8d41-6f5f-416e-8ad8-166080fa972a",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "a2079e91-e21b-48f1-960e-c0ae3e30746d",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "fe98a18e-5014-4972-a394-13819626beae",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "1dea775f-33e4-4735-84a4-e606daffc63a",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "6cd558eb-8c1a-42d6-a79e-57b2445b0d3c",
+      "result_id": "fc439e57-dfb8-4374-a7be-5fb886080d27"
+    },
+    {
+      "claim_id": "3ea0dc09-a5ff-4303-9fb3-b278d81afdb4",
+      "result_id": "1698c016-18b0-420a-a049-c6c58d220966"
+    },
+    {
+      "claim_id": "dfb4fb62-f68d-4b3f-b937-f025571816a1",
+      "result_id": "1698c016-18b0-420a-a049-c6c58d220966"
+    },
+    {
+      "claim_id": "53251dd3-1966-4c3c-aef7-fa25dd0bc990",
+      "result_id": "1698c016-18b0-420a-a049-c6c58d220966"
+    },
+    {
+      "claim_id": "462d9f39-080f-43bf-9f9e-798c8fbcaf26",
+      "result_id": "1698c016-18b0-420a-a049-c6c58d220966"
+    },
+    {
+      "claim_id": "c965e327-0744-44dd-8c3d-69c8e2001802",
+      "result_id": "1698c016-18b0-420a-a049-c6c58d220966"
+    },
+    {
+      "claim_id": "67b65f3b-8558-4533-a596-cc68352f044b",
+      "result_id": "13ef39ae-087f-470c-b97e-3af69affaab3"
+    },
+    {
+      "claim_id": "50fe816a-e6ba-4a4a-b7ed-7102db759dc2",
+      "result_id": "13ef39ae-087f-470c-b97e-3af69affaab3"
+    },
+    {
+      "claim_id": "6739ff17-9c03-4efd-be3d-8d3ac8839268",
+      "result_id": "13ef39ae-087f-470c-b97e-3af69affaab3"
+    },
+    {
+      "claim_id": "fe4de4ea-1d1d-4de2-9be5-9cee2ca86657",
+      "result_id": "13ef39ae-087f-470c-b97e-3af69affaab3"
+    },
+    {
+      "claim_id": "9bf14918-c53e-479c-b813-a2f295ff9ed7",
+      "result_id": "c785a484-ec04-495b-bde4-5856e3e5f0fe"
+    },
+    {
+      "claim_id": "725ac234-e64f-4660-9a66-be87adca0835",
+      "result_id": "c785a484-ec04-495b-bde4-5856e3e5f0fe"
+    },
+    {
+      "claim_id": "7d138c1e-afc5-453e-a226-6fc9048b438b",
+      "result_id": "c785a484-ec04-495b-bde4-5856e3e5f0fe"
+    },
+    {
+      "claim_id": "3d6c7990-8424-46fe-aa4c-40e57a04a78d",
+      "result_id": "c785a484-ec04-495b-bde4-5856e3e5f0fe"
+    },
+    {
+      "claim_id": "99e092e8-813d-4b7d-9a9f-220567a1917f",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "beccfeac-0be4-4886-b2e5-6271c92f3f12",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "da513107-853e-40ac-870f-ddd26f869fea",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "a0ce7841-090d-4d9d-8bd5-7c681b0a7d15",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "775f617b-ed8d-449d-b9c2-dfc26a9e41bb",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "66e3b533-2e05-4436-8567-7e83639fb321",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "3bd856f3-90db-4b9a-b3b3-445ecbc6e3ce",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "e2059a6a-98e6-4d25-a61a-1725e03d4abf",
+      "result_id": "2633d18f-9485-4b65-99ef-3e83f7155e50"
+    },
+    {
+      "claim_id": "d9fc8c96-e98b-478b-89c6-3090609b8dd0",
+      "result_id": "4971a438-a1b5-4dae-b4e5-724a2cff4192"
+    },
+    {
+      "claim_id": "4f430020-b88b-4672-af45-da3ced933706",
+      "result_id": "4971a438-a1b5-4dae-b4e5-724a2cff4192"
+    },
+    {
+      "claim_id": "283c52c3-123e-4ae0-86a5-aaa6598de938",
+      "result_id": "4971a438-a1b5-4dae-b4e5-724a2cff4192"
+    },
+    {
+      "claim_id": "4324f3f0-7b0e-4cea-98e6-0750563be3db",
+      "result_id": "4971a438-a1b5-4dae-b4e5-724a2cff4192"
+    },
+    {
+      "claim_id": "acf15d39-5dfb-455e-9a39-c61f4c4a8a68",
+      "result_id": "c04676a5-6f10-4e98-8631-27250922d495"
+    },
+    {
+      "claim_id": "50c98274-146b-47cc-b441-6c4f376f64ff",
+      "result_id": "c04676a5-6f10-4e98-8631-27250922d495"
+    },
+    {
+      "claim_id": "b02cb9d9-22a2-4cb5-8233-ca570b351eba",
+      "result_id": "18aa0357-01cc-4590-b975-4438ab30eadd"
+    },
+    {
+      "claim_id": "18f8affc-169a-420d-ad9c-f0fff6310e73",
+      "result_id": "18aa0357-01cc-4590-b975-4438ab30eadd"
+    },
+    {
+      "claim_id": "f2ccf5a5-b535-464f-9cc9-486bac265e6b",
+      "result_id": "18aa0357-01cc-4590-b975-4438ab30eadd"
+    },
+    {
+      "claim_id": "ac18bf88-1f65-4fc2-a2a4-32436712cfc8",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "da2c185d-1592-4e18-b40f-2e85b0b236f8",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "7a964cde-e020-4f4a-826a-15e5dc154861",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "cc8c74a8-1bf4-457c-a9af-0f737049d963",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "b7c8673a-9b7b-4199-ac58-01c31f88ee88",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "6e1db1db-50fe-4c16-a59c-1dd48dd7ac88",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "603f560d-97bb-4766-ac4f-20f010f50a1c",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "44ec8bb9-d743-4740-9630-32c7d092a2a8",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "647e4be4-5d99-4330-91ce-c0134350ae94",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "d5cab79a-c476-4ad7-ae36-e460f9001ee8",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "65ba9cb7-1df8-4218-8a2a-00928348b828",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "51f954ae-6fd2-42e1-ad46-8e8acc9da696",
+      "result_id": "fecb8a6a-664f-4486-82bb-8d2e5107a3cb"
+    },
+    {
+      "claim_id": "738a6953-e368-4051-886d-b32f6ca7d690",
+      "result_id": "f517e75e-0135-4f79-a226-2e3a1261b232"
+    },
+    {
+      "claim_id": "084e0c61-1389-47bb-8646-e4fcc905343e",
+      "result_id": "f517e75e-0135-4f79-a226-2e3a1261b232"
+    },
+    {
+      "claim_id": "ce25e69e-63e8-410b-92a0-b9c9f7cb4f3a",
+      "result_id": "f517e75e-0135-4f79-a226-2e3a1261b232"
+    },
+    {
+      "claim_id": "f1111ee7-36bc-4023-b953-dfe9bf2a996e",
+      "result_id": "f517e75e-0135-4f79-a226-2e3a1261b232"
+    },
+    {
+      "claim_id": "7f832156-c2c0-4c3e-b487-35a2c38d8b83",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    },
+    {
+      "claim_id": "43dd4224-ff41-4b93-a189-069f9e3864f1",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    },
+    {
+      "claim_id": "b084ecbd-d1ec-4747-aed1-f5cf32cefd50",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    },
+    {
+      "claim_id": "29711a4e-3fc0-4e03-8f13-1e641678bc88",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    },
+    {
+      "claim_id": "7b17e644-5e9c-4c8a-861b-e47597efb167",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    },
+    {
+      "claim_id": "7b44bf98-6cbe-42e0-8605-00f792717927",
+      "result_id": "ff406049-d76d-43d6-a9cb-d245fb218974"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1323 @@
+{
+  "submission": {
+    "id": "16b10064-a09e-41d9-afd5-0bb54af4173b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:36:46.264595Z",
+    "updated_at": "2025-11-29T21:36:46.264595Z"
+  },
+  "content": [
+    {
+      "id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "submission_id": "16b10064-a09e-41d9-afd5-0bb54af4173b",
+      "content_type": "manuscript",
+      "content_text": "# Contesting the presence of wheat in the British Isles 8,000 years ago by assessing ancient DNA authenticity from low-coverage data\n\n## Authors\n\n- Clemens L Wei\u00df<sup>1</sup>\n- Michael Dannemann<sup>2</sup> ([ORCID: 0000-0002-7076-8731](https://orcid.org/0000-0002-7076-8731))\n- Kay Pr\u00fcfer<sup>2</sup>\n- Hern\u00e1n A Burbano<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Research Group for Ancient Genomics and Evolution, Department of Molecular Biology Max Planck Institute for Developmental Biology T\u00fcbingen Germany\n2. Department of Evolutionary Genetics Max Planck Institute for Evolutionary Anthropology Leipzig Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nContamination with exogenous DNA is a constant hazard to ancient DNA studies, since their validity greatly depend on the ancient origin of the retrieved sequences. Since contamination occurs sporadically, it is fundamental to show positive evidence for the authenticity of ancient DNA sequences even when preventive measures to avoid contamination are implemented. Recently the presence of wheat in the United Kingdom 8000 years before the present has been reported based on an analysis of sedimentary ancient DNA (Smith et al. 2015). Smith et al. did not present any positive evidence for the authenticity of their results due to the small number of sequencing reads that were confidently assigned to wheat. We developed a computational method that compares postmortem damage patterns of a test dataset with bona fide ancient and modern DNA. We applied this test to the putative wheat DNA and find that these reads are most likely not of ancient origin.\n\n## Introduction\n\nThe evolutionary reconstruction of the past has been greatly enriched by direct interrogation of ancient DNA (aDNA) from plants and animal remains (Shapiro and Hofreiter, 2014). Although a vast proportion of flora and fauna do not fossilize, traces of their DNA may be preserved in sediments allowing the characterization of past biodiversity (Pedersen et al., 2015). A challenge to exploiting such resources is the ubiquitous threat of contamination with exogenous DNA. Therefore, special sample preparation procedures have been developed to reduce DNA contamination (Cooper and Poinar, 2000). Nevertheless, it remains difficult to estimate how well preventive measures work. If contamination is a possible explanation for the result, it is crucial to exclude this possibility by giving positive evidence for the authenticity of aDNA (Pr\u00fcfer and Meyer, 2015). Fortunately, a large number of full-length DNA sequences can be generated using next generation sequencing, which allows for the authentication of aDNA. In aDNA an excess of C-to-T (cytosine to thymine) substitutions occur at the 5\u2032 and 3\u2032 ends of molecules (or its mirror image G-to-A (guanine to adenine) at the 3\u2032 end, depending on the library protocol employed). When considering the 5\u2032 end of sequences, the excess of C-to-T substitutions is highest at the first base and decreases exponentially towards the center (Figure 1A). This pattern is the result of cytosine deamination to uracil in single stranded overhangs (Briggs et al., 2007). Since it is present in aDNA-derived sequences but absent in much younger samples, it has been used as an authentication criterion in aDNA experiments (Krause et al., 2010; Pr\u00fcfer and Meyer, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10005/elife-10005-fig1-v1.jpg)\n\n**Figure 1.:** (A) C-to-T substitutions at the 5\u2032 end from a whole library of historic Solanum tuberosum (ancient DNA). The line shows the fit with the exponential distribution and the box the goodness-of-fit p-value. (B) C-to-T substitutions at the 5\u2032 end from a whole library of present-day Triticum aestivum (modern DNA). Line and box as in (A).\n\nSmith et al. analyzed sediments from Bouldnor Cliff, a submerged archeological site in the United Kingdom, and suggested the presence of domesticated wheat 8000 years ago based on sedimentary ancient DNA (sedaDNA). This is 2000 years earlier than expected based on archeological remains in the British Isles and 400 years earlier than in nearby European sites (reviewed in Smith et al.). Since Smith et al. did not find wheat pollen or archeological remains associated with wheat cultivation, they conclude that the wheat presence in Bouldnor Cliff was the result of trading.\n\nIn total they produced \u223c72 million Illumina reads, of which they robustly assigned 152 to wheat (Triticum), with dozens more (160 reads) to higher taxonomic ranks that include wheat. Smith et al. took state-of-the art preventive measures to avoid contamination and exercised great effort to ensure the accuracy and robustness of their phylogenetic assignments. The authors attempted to authenticate the aDNA molecules based on the expected excess of C-to-T substitutions, but because of the very small number of reads assigned to wheat, they failed to do so using standard approaches. As a result of that, the authors did not present any positive evidence for the ancient origin of their reads. Here we present an approach that compares the pattern of C-to-T substitutions in a set of test reads with the distributions of C-to-T substitutions in reads from known ancient- and modern-DNA and apply this approach to sedaDNA from Smith et al.\n\n## Results and discussion\n\nAlthough the excess of C-to-T substitutions at the 5\u2032 end occurs at different magnitudes in samples of different ages, the exponential increase of substitutions towards the end is a ubiquitous pattern in aDNA studies (Sawyer et al., 2012). In order to score the presence of this pattern in various datasets, we fitted an exponential function and evaluated the goodness of fit by using a one-sided t-test to test for significant exponential decay. As expected, true aDNA libraries show significant goodness-of-fit p-values (Figure 1A), whereas non-significant goodness-of-fit p-values, neither decay nor growth, are observed in libraries derived from modern DNA (Figure 1B). A given C-to-T damage pattern plot can thus be summarized by its goodness-of-fit p-value that when it is significant indicates C-to-T exponential decay at the 5\u2032 end (Figure 1A).\n\nWe resampled (with replacement) 10,000 sets of 150 sequences from a library of historic Solanum tuberosum collected in 1846 (Yoshida et al., 2013a). The number was selected to be comparable to the 152 reads that Smith et al. assigned to wheat. An empirical distribution of goodness-of-fit p-values was generated by performing the goodness-of-fit test for each subsample (Figure 2A). When we evaluate the sedaDNA goodness-of-fit p-value, we find that it falls within the upper 3% of subsamples with the least good fit. We can therefore reject the null hypothesis that the sequences assigned to wheat are as ancient as the historic S. tuberosum library. We repeated the whole procedure using this time a modern wheat library to generate the distribution of goodness-of-fit p-values (Figure 2A) and find a better match (p = 0.83). Thus, we cannot reject the hypothesis that the sequences assigned to wheat are of modern origin.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10005/elife-10005-fig2-v1.jpg)\n\n**Figure 2.:** (A) The histograms in the center panel show the empirical distributions of goodness-of-fit p-values of subsamples of 150 reads from ancient and modern DNA (same libraries as in Figure 1). The dotted red line indicates the location of the goodness-of-fit p-value from reads assigned to wheat in sedimentary ancient DNA. The four surrounding panels show cytosine to thymine (C-to-T) substitutions at the 5\u2032 end extracted from different point of the goodness-of-fit p-value distributions, and from the reads assigned to wheat in sedimentary ancient DNA. (B) Variation of the empirical p-value of the test depending on the goodness-of-fit p-value of the whole library used to generate the empirical distribution. Numbers adjacent to the points indicate the percentage of C-to-T substitutions at first base. Red arrow indicates the aDNA library used as test in Figure 3A. Purple arrow indicates the library used to generate the empirical distribution of goodness-of-fit p-values in Figure 3A\u2013C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10005/elife-10005-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The line shows the fit with the exponential distribution. The goodness-of-fit p-value is indicated in the upper right corner.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10005/elife-10005-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The histograms shows the empirical distributions of goodness-of-fit p-values of subsamples of 150 reads from a 7.000-year-old Mesolithic human from La Bra\u00f1a site in Northern Iberia. The dotted red line indicates the location of the goodness-of-fit p-value from reads assigned to wheat in sedimentary ancient DNA.\n\nWe sought to investigate how the test behaves when the empirical distribution of goodness-of-fit p-values is generated from different aDNA libraries. For this purpose we used a set of samples from animal (Sawyer et al., 2012) and plant remains (Yoshida et al., 2013) with an age of 85\u2013170 years before present, and scored the sedaDNA wheat sequences against distributions generated from these libraries (subsamples of 150 sequences again). We observed that the goodness-of-fit p-value for the libraries is positively correlated with the empirical p-value for the sedaDNA wheat sequences tested against them (Figure 2B). Using a significance level of 0.05, we rejected the hypothesis that the wheat sequences are of ancient origin with 7 out of 13 libraries used in our test (Figure 2B). Thus, the purportedly 8000-year old wheat sequences show a less pronounced deamination pattern than many plant and animal samples with an age of less of 200 years. Finally, we took a less conservative approach and scored the sedaDNA against a distribution of goodness-of-fit p-values (subsamples of 150 read) generated from a 7000-years-old human Mesolithic sample from la Bra\u00f1a site in Northern Iberia (Olalde et al., 2014). La Bra\u00f1a is a site with cold environment and stable thermal conditions that has yielded exceptionally well conserved human fossils with \u223c50% of human endogenous DNA that reach a \u223c15% C-to-T substitution rate at the 5\u2032 end (Olalde et al., 2014a) (Figure 2\u2014figure supplement 1). We could reject the null hypothesis that the sedaDNA reads are as ancient as the sample from la Bra\u00f1a (p = 0.0014), a sample that is closer in time with the allegedly 8000-year-old wheat reads (Figure 2\u2014figure supplement 2). It is worth pointing out that almost all 10,000 subsamples from la Bra\u00f1a had a very low (close to 0) goodness-of-fit p-value, even though we subsample only 150 reads (Figure 2\u2014figure supplement 2).\n\nWe assessed the statistical power of the test by testing both an aDNA (Figure 3A) and a modern DNA library (Figure 3B) against a distribution built from a bona fide aDNA library, while varying the number of sampled sequences. Whereas the hypothesis that a true aDNA library is ancient was never rejected (Figure 3A), the hypothesis that a modern library has ancient origin could be rejected only when sufficient number of sequences were used for the subsample test (in tests with more than 300 reads the median empirical p-value was always below 0.05) (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10005/elife-10005-fig3-v1.jpg)\n\n**Figure 3.:** (A) Variation of the empirical p-value of the test depending on the number of reads sampled from an ancient DNA library (indicated with red arrow in Figure 2B). (B) Variation of the empirical p-value of the test depending on the numbers of reads subsampled from modern DNA Triticum aestivum library (same library used to generate the distribution of empirical goodness-of-fit p-values in Figure 2A). (C) Variation of the empirical p-value of the test depending on the size of sample sets from sedimentary ancient DNA reads mapped directly to the T. aestivum genome. Box-and-whisker plots were built based on 1000 tests. Layers as reported in Smith et al. i.e. layer 1 (most superficial), layer 4 (more deep).\n\nFinally, we skipped the phylogenetic curation step applied by Smith et al. to reduce the number of false positive wheat alignments, and mapped all reads sequenced by Smith et al. to the wheat genome. After stringent filtering of sedaDNA mappings we repeated our test varying the size of the subsample sets from 100 to 1000 reads. The empirical p-value was dependent on the number of reads tested, and declined with an increasing number of tested reads for all layers of sediments sequenced in Smith et al (Figure 3C). This pattern resembled the one obtained from a modern DNA library (Figure 3B). As for the phylogenetic curated 152 sequences, we were able to reject the hypothesis that the mapped reads are of ancient origin (mean p-value < 0.05 for all tests with more than 400 reads for layers 1\u20132 and 4, and 800 reads for layer 3). Our analysis also shows that the 152 sequences after phylogenetic curation are not a biased subsample from the distribution of all wheat-matching sequences.\n\nWe were able to reject the hypothesis that the sequences assigned to wheat by Smith et al. are of ancient origin. This is true even when we compared the putative 8000 year old sequences with only century old samples that show much lower deamination signatures. This means that a scenario in which wheat was transported to the Bouldnor Cliff site 8000 years ago is unwarranted. Our approach for authentication of aDNA can be used even with a very small number of sequences, and we hope that it will proof useful to test for positive evidence of authenticity for ancient DNA studies whose conclusions rely heavily on the ancient origin of the analyzed sequences.\n\n## Materials and methods\n\n### Read processing for bona fide ancient and modern DNA samples\n\nReads from most of the samples were downloaded from the European Nucleotide Archive (Table 1 and Supplementary file 1), with the exception of the Gorilla gorilla reads that were provided directly by the authors (Sawyer et al., 2012). Adapters were trimmed for both paired- and single-end runs using the program Skewer (version 0.1.120) using default parameters (Jiang et al., 2014). For paired-end runs (Supplementary file 1) forward and reverse reads were merged requiring a minimum overlap of 10 base pairs (bp) using the program Flash (version 1.2.11) (Magoc and Salzberg, 2011). Merged or single-end reads were mapped as single-end reads against their respective nuclear or organellar genomes: S. tuberosum nuclear genome (Potato Genome Sequencing Consortium et al., 2011), Solanum lycopersicum nuclear genome (The Tomato Genome Consortium, 2012), Triticum aestivum nuclear genome (International Wheat Genome Sequencing C, 2014), G. gorilla mitochondrial genome (Xu and Arnason, 1996), Homo sapiens nuclear genome (Genome Reference Consortium Human Build 37). The mapping was carried out using BWA-MEM (version 0.7.10) with default parameters, which include a minimum read length of 30 bp (Li, 2013). PCR duplicates were removed after mapping using bam-rmdup (available at https://github.com/udo-stenzel/biohazard), which computes a consensus sequence for each cluster of duplicated sequences. Alignments were stored in the bam format (Li et al., 2009).\n\n**Table 1.**\n Provenance of samples\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Type of DNA</th>\n      <th>Age</th>\n      <th>Reference</th>\n      <th>Study ID</th>\n      <th>Sample/run ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Metagenomics sample</td>\n      <td>Sedimentary</td>\n      <td>8030-7908*</td>\n      <td>Smith et al., 2015</td>\n      <td>PRJEB6766\u2021</td>\n      <td>ERR567364\u2021</td>\n    </tr>\n    <tr>\n      <td>Metagenomics sample</td>\n      <td>Sedimentary</td>\n      <td>8030-7908*</td>\n      <td>Smith et al., 2015</td>\n      <td>PRJEB6766\u2021</td>\n      <td>ERR567365\u2021</td>\n    </tr>\n    <tr>\n      <td>Metagenomics sample</td>\n      <td>Sedimentary</td>\n      <td>8030-7908*</td>\n      <td>Smith et al., 2015</td>\n      <td>PRJEB6766\u2021</td>\n      <td>ERR567366\u2021</td>\n    </tr>\n    <tr>\n      <td>Metagenomics sample</td>\n      <td>Sedimentary</td>\n      <td>8030-7908*</td>\n      <td>Smith et al., 2015</td>\n      <td>PRJEB6766\u2021</td>\n      <td>ERR567367\u2021</td>\n    </tr>\n    <tr>\n      <td>Metagenomics sample</td>\n      <td>Sedimentary</td>\n      <td>8030-7908*</td>\n      <td>Smith et al., 2015</td>\n      <td>PRJEB6766\u2021</td>\n      <td>ERR732642\u2021</td>\n    </tr>\n    <tr>\n      <td>T. aestivum</td>\n      <td>Modern</td>\n      <td>NA</td>\n      <td>Chapman et al., 2015</td>\n      <td>PRJNA250383\u2021</td>\n      <td>SRR1170664\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>135\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267886\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>137\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267882\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>149\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR330058\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>165\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267872\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>166\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267868\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>166\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR957324\u2021</td>\n    </tr>\n    <tr>\n      <td>S. tuberosum</td>\n      <td>Ancient</td>\n      <td>167\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267868\u2021</td>\n    </tr>\n    <tr>\n      <td>S. lycopersicum</td>\n      <td>Ancient</td>\n      <td>136\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267884\u2021</td>\n    </tr>\n    <tr>\n      <td>S. lycopersicum</td>\n      <td>Ancient</td>\n      <td>139\u2020</td>\n      <td>Yoshida et al., 2013</td>\n      <td>PRJEB1877\u2021</td>\n      <td>ERR267878\u2021</td>\n    </tr>\n    <tr>\n      <td>G. gorilla</td>\n      <td>Ancient</td>\n      <td>83\u2020</td>\n      <td>Sawyer et al., 2012</td>\n      <td>NA</td>\n      <td>107\u00b6</td>\n    </tr>\n    <tr>\n      <td>G. gorilla</td>\n      <td>Ancient</td>\n      <td>100\u2020</td>\n      <td>Sawyer et al., 2012</td>\n      <td>NA</td>\n      <td>109\u00b6</td>\n    </tr>\n    <tr>\n      <td>G. gorilla</td>\n      <td>Ancient</td>\n      <td>100\u2020</td>\n      <td>Sawyer et al., 2012</td>\n      <td>NA</td>\n      <td>110\u00b6</td>\n    </tr>\n    <tr>\n      <td>G. gorilla</td>\n      <td>Ancient</td>\n      <td>103\u2020</td>\n      <td>Sawyer et al., 2012</td>\n      <td>NA</td>\n      <td>114\u00b6</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>Ancient</td>\n      <td>7000*</td>\n      <td>Olalde et al., 2014</td>\n      <td>PRJNA230689\u2021</td>\n      <td>SRR1045127</td>\n    </tr>\n  </tbody>\n</table>\n\n_*B.P. (before present years).\u2020Calculated from collection date (in years).\u2021IDs from the European Nucleotide Archive.\u00b6IDs from Sawyer et al., 2012._\n\n### Read processing for sedimentary DNA from Smith et al., 2015a\n\nWe used two different approaches to process the reads from sedimentary DNA (Smith et al., 2015).\n\nPhylogenetic curated reads: we used a set of 152 reads assigned to tribe Triticeae and to genus Triticum by Smith et al. after phylogenetic curation. However, we consider the complete sequence and do not exclude the initial 10 nucleotides as was done in the original processing (Smith et al., 2015). Reads were then aligned to the wheat genome as described above.\n\nAll sedimentary DNA reads: we aligned independently reads from all four layers sequenced by Smith et al. to the T. aestivum nuclear genome (International Wheat Genome Sequencing C, 2014). Duplicates were removed and only alignments with mapping quality greater or equal than 30 were used for further analysis. Additionally, we include a sequence complexity filter based on entropy, which removed low complexity reads with entropy less or equal to 50. The entropy filtering was carried out with prinseq-lite (version 0.20.4) (Schmieder and Edwards, 2011).\n\n### Exponential function fitting and calculation of goodness-of-fit p-value\n\nFor each set of aligned reads (complete libraries or subsamples) the C-to-T substitutions patterns along the 5\u2032 end of the read were assessed using the program PMDtools (Skoglund et al., 2014). We fitted an exponential function to the frequency of C-to-T substitutions for the first 20 nucleotides at the 5\u2032 end. The fitting was performed in R (http://www.r-project.org) using the nls function, which determines the nonlinear least squares estimates of the parameters in a nonlinear model. The fitting was carried out with the model formula: y \u223c N\u2217exp(\u2212rate\u2217x). From the nls fitting we obtained the t-value and degrees of freedom for the rate parameter and then calculated a goodness-of-fit p-value by using a one-sided t-test.\n\n### Generation of empirical distributions of goodness-of-fit p-values\n\nSubsets of different alignment numbers were randomly sampled (with replacement) 10,000 times from alignments stored in the bam format (Li et al., 2009). The random sampling was performed using samtools view (Li et al., 2009). For every subset of alignments we assessed the fraction of C-to-T substitutions, fitted an exponential function and calculated a goodness-of-fit p-value as explained above.\n\n### Calculation of test empirical p-value\n\nPhylogenetic curated reads: we compare the goodness-of-fit p-value of our test set of 152 sedimentary DNA reads with distributions of goodness-of-fit p-values generated from bona fide modern and ancient DNA. For the distribution of goodness-of-fit p-values from aDNA, we count how many of them are equal or greater than the sedimentary DNA goodness-of-fit p-value. To calculate the empirical p-value of the test we subsequently divided this number by the total number of values in the empirical distribution. With this approach we test the null hypothesis that the test set of reads contains a signal of ancient DNA damage that is comparable or even more pronounced than the signal in the aDNA library used to generate the empirical distribution of goodness-of-fit p-values.\n\nFor the distribution of goodness-of-fit p-values from modern DNA, we count how many of them were smaller or equal than the sedimentary DNA goodness-of-fit p-value. We calculate the empirical p-value of the test by dividing this number by the total number of p-values in the empirical distributions. With this approach we test the null hypothesis that the test set of reads matches the absence of ancient DNA damage patterns seen in reads of modern origin.\n\nAll sedimentary DNA reads: We tested independently alignments from each of the layers sequenced by Smith et al. using a bona fide aDNA sample for the generation of the distribution of goodness-of-fit p-values. For each layer we tested 10 sets of different numbers of reads (from 100 to 1000 reads, with increments of 100 reads). For each layer and for each number of reads in the test set we repeated the test and calculated the empirical p-value 1000 times as described above.\n\nOther ancient DNA and modern DNA libraries were tested using the same procedure.\n",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "ab12f91c-e50f-4993-8ba2-88fd208cba8c",
+      "submission_id": "16b10064-a09e-41d9-afd5-0bb54af4173b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph K Pickrell, New York Genome Center & Columbia University, United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10005.010](https://doi.org/10.7554/eLife.10005.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cAssessing ancient DNA authenticity with low-coverage data: a case study of wheat in the British Isles 8,000 years ago\u201d for peer review at eLife. Your submission has been favorably evaluated by Mark McCarthy (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe authors use an approach based on testing whether C-to-T damage patterns seen in degraded DNA fits a model of exponential decay from sequence termini in order to test a recent claim of 8,000 year old wheat DNA at a submerged site in Britain (Smith et al. 2015, Science).\n\nEssential revisions:\n\nThe reviewers identified two additional analyses that they considered essential:\n\n1) The authors should show visually the damage patterns in the reads from Smith et al.; even if this plot is noisy, it will provide some visual sense of the data.\n\n2) The authors should provide some analysis of whether their results are robust to the choice of aligner. BWA-MEM uses extensive soft-clipping, which distorts patterns of damage. The authors should consider BWA-ALN/samse as an alternative.\n\nOther reviewer comments below are provided as suggestions but need not be addressed in a revision.\n\nReviewer #1:\n\nIn this paper, the authors critically assess a claim from Smith et al. that wheat was present in the UK 8,000 years before present. Specifically, they argue that the sequencing reads claimed to come from ancient wheat samples in this study are instead most likely to be modern contaminants based on patterns of DNA damage.\n\n1) The Smith et al. claim is based on 152 sequencing reads, and so the authors here have little to work with. However, they claim that the expected exponential increase in C->T substitutions in these reads is not present. It would have been nice to see the patterns of DNA degradation of these reads visually, rather than it being summarized by the p-value from their test. Why do the authors not show a figure like Figure 1A, except using the 152 reads from Smith et al? This would be extremely useful for visually determining if the expected damage patterns are present (even if the plot is extremely noisy due to small numbers of reads). The authors could show the pattern from the empirical data superimposed on damage patterns in their subsampled ancient and modern libraries.\n\nReviewer #2:\n\nWei\u00df et al. develop a pipeline to assess the authenticity of results of analyses of ancient sedimentary DNA, and use this pipeline to test recently published results. Such a pipeline is a useful tool for ancient sedimentary analyses, and is likely to be widely adopted in the field. I found the paper to be well written and straightforward. I have only one major query.\n\nThe authors choose to use BWA-MEM for alignment, which may not be the most appropriate aligner for this test and is likely to affect the results. This aligner (BWA-MEM) performs a lot of soft-clipping (unless the settings were modified from default, in which case the authors should state this), which causes two major issues. First, it makes misincorporation profiles unreliable. Second, it can cause a lot of random mapping. I strongly recommend the authors re-run these analyses using a more appropriate aligner, e.g. BWA-ALN/samse.\n",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fcb9defa-5f63-4d38-859e-8822640b8e3b",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C1",
+      "claim": "Contamination with exogenous DNA is a constant hazard to ancient DNA studies, since their validity greatly depend on the ancient origin of the retrieved sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Contamination with exogenous DNA is a constant hazard to ancient DNA studies, since their validity greatly depend on the ancient origin of the retrieved sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about ancient DNA research challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "ac1b32f0-ce63-4092-8d8e-e790e13e1167",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C2",
+      "claim": "It is fundamental to show positive evidence for the authenticity of ancient DNA sequences even when preventive measures to avoid contamination are implemented.",
+      "claim_type": "EXPLICIT",
+      "source": "Since contamination occurs sporadically, it is fundamental to show positive evidence for the authenticity of ancient DNA sequences even when preventive measures to avoid contamination are implemented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle based on established scientific knowledge about ancient DNA authentication requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "048c692a-85d8-438c-9266-19d0b4490256",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C3",
+      "claim": "The presence of wheat in the United Kingdom 8000 years before the present has been reported based on an analysis of sedimentary ancient DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently the presence of wheat in the United Kingdom 8000 years before the present has been reported based on an analysis of sedimentary ancient DNA (Smith et al. 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Smith et al. 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "75a5f68a-d167-4f36-b9da-92fa21eba7c9",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C4",
+      "claim": "Smith et al. did not present any positive evidence for the authenticity of their results due to the small number of sequencing reads that were confidently assigned to wheat.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. did not present any positive evidence for the authenticity of their results due to the small number of sequencing reads that were confidently assigned to wheat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' analysis of the Smith et al. study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "a47a2a8a-0cc4-4e36-8159-3f3a4aaa378b",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C5",
+      "claim": "The putative wheat DNA reads are most likely not of ancient origin.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this test to the putative wheat DNA and find that these reads are most likely not of ancient origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational analysis and data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "917e4618-bd08-424e-b65e-2158cd8ae3f7",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C6",
+      "claim": "A vast proportion of flora and fauna do not fossilize.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a vast proportion of flora and fauna do not fossilize, traces of their DNA may be preserved in sediments allowing the characterization of past biodiversity (Pedersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about fossilization, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "38e27982-4c41-4519-aa7a-ff7a225a90ae",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C7",
+      "claim": "Traces of DNA from flora and fauna may be preserved in sediments allowing the characterization of past biodiversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a vast proportion of flora and fauna do not fossilize, traces of their DNA may be preserved in sediments allowing the characterization of past biodiversity (Pedersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pedersen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "d65a5530-cb10-450e-9100-4efba4eb7ba8",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C8",
+      "claim": "Special sample preparation procedures have been developed to reduce DNA contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, special sample preparation procedures have been developed to reduce DNA contamination (Cooper and Poinar, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cooper and Poinar, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "72846bd7-b5d9-418f-bdbd-bd87e02fc865",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C9",
+      "claim": "It remains difficult to estimate how well preventive measures work against DNA contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it remains difficult to estimate how well preventive measures work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about limitations in ancient DNA research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "e3bef430-185a-4e72-b35a-158f3908b965",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C10",
+      "claim": "If contamination is a possible explanation for the result, it is crucial to exclude this possibility by giving positive evidence for the authenticity of aDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "If contamination is a possible explanation for the result, it is crucial to exclude this possibility by giving positive evidence for the authenticity of aDNA (Pr\u00fcfer and Meyer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological principle is supported by citation to Pr\u00fcfer and Meyer, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "ff5f42f2-7737-4606-94a0-c0b0c0755335",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C11",
+      "claim": "Next generation sequencing allows for the generation of a large number of full-length DNA sequences, which allows for the authentication of aDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, a large number of full-length DNA sequences can be generated using next generation sequencing, which allows for the authentication of aDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about next generation sequencing capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "af086e82-ae46-4deb-ab9f-7daa9894a714",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C12",
+      "claim": "In aDNA an excess of C-to-T (cytosine to thymine) substitutions occur at the 5\u2032 and 3\u2032 ends of molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In aDNA an excess of C-to-T (cytosine to thymine) substitutions occur at the 5\u2032 and 3\u2032 ends of molecules (or its mirror image G-to-A (guanine to adenine) at the 3\u2032 end, depending on the library protocol employed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ancient DNA damage patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "cc40c6fb-4756-42df-bcd4-bfca415a2a8e",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C13",
+      "claim": "When considering the 5\u2032 end of sequences, the excess of C-to-T substitutions is highest at the first base and decreases exponentially towards the center.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the 5\u2032 end of sequences, the excess of C-to-T substitutions is highest at the first base and decreases exponentially towards the center (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1A showing the pattern.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "2c9a40c7-1902-43c9-9096-7ee6c7aaa056",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C14",
+      "claim": "The pattern of C-to-T substitutions is the result of cytosine deamination to uracil in single stranded overhangs.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is the result of cytosine deamination to uracil in single stranded overhangs (Briggs et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic explanation is supported by citation to Briggs et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "8f8148e1-fdf8-4933-8100-533c32f1554a",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C15",
+      "claim": "The C-to-T substitution pattern is present in aDNA-derived sequences but absent in much younger samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is present in aDNA-derived sequences but absent in much younger samples, it has been used as an authentication criterion in aDNA experiments (Krause et al., 2010; Pr\u00fcfer and Meyer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Krause et al., 2010 and Pr\u00fcfer and Meyer, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "9ad2a619-2b27-4ec0-8231-eeb55e2cee4f",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C16",
+      "claim": "The C-to-T substitution pattern has been used as an authentication criterion in aDNA experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is present in aDNA-derived sequences but absent in much younger samples, it has been used as an authentication criterion in aDNA experiments (Krause et al., 2010; Pr\u00fcfer and Meyer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Krause et al., 2010 and Pr\u00fcfer and Meyer, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "99329f3c-93e2-4701-a37e-d3058ef2b718",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C17",
+      "claim": "Smith et al. analyzed sediments from Bouldnor Cliff, a submerged archeological site in the United Kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. analyzed sediments from Bouldnor Cliff, a submerged archeological site in the United Kingdom, and suggested the presence of domesticated wheat 8000 years ago based on sedimentary ancient DNA (sedaDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "0fe6f8ba-7f87-4071-8aa7-85ae336c98a8",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C18",
+      "claim": "Smith et al. suggested the presence of domesticated wheat 8000 years ago based on sedimentary ancient DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. analyzed sediments from Bouldnor Cliff, a submerged archeological site in the United Kingdom, and suggested the presence of domesticated wheat 8000 years ago based on sedimentary ancient DNA (sedaDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study's conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "81cfaa83-656f-4c42-b63c-85f5ead92366",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C19",
+      "claim": "The presence of wheat 8000 years ago is 2000 years earlier than expected based on archeological remains in the British Isles.",
+      "claim_type": "EXPLICIT",
+      "source": "This is 2000 years earlier than expected based on archeological remains in the British Isles and 400 years earlier than in nearby European sites (reviewed in Smith et al.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on information reviewed in Smith et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "4b5d3389-d3a8-4c4c-b3a3-fd0683741559",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C20",
+      "claim": "The presence of wheat 8000 years ago is 400 years earlier than in nearby European sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This is 2000 years earlier than expected based on archeological remains in the British Isles and 400 years earlier than in nearby European sites (reviewed in Smith et al.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on information reviewed in Smith et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "96d48a14-f0d8-4ab1-a214-e3d19d892ba9",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C21",
+      "claim": "Smith et al. did not find wheat pollen or archeological remains associated with wheat cultivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Smith et al. did not find wheat pollen or archeological remains associated with wheat cultivation, they conclude that the wheat presence in Bouldnor Cliff was the result of trading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "4cbb17f6-1e53-4843-925e-3d9fadae2c58",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C22",
+      "claim": "Smith et al. conclude that the wheat presence in Bouldnor Cliff was the result of trading.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Smith et al. did not find wheat pollen or archeological remains associated with wheat cultivation, they conclude that the wheat presence in Bouldnor Cliff was the result of trading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conclusion drawn by Smith et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "d112e61f-bb11-451b-a463-6491c9cc3382",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C23",
+      "claim": "Smith et al. produced approximately 72 million Illumina reads in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In total they produced \u223c72 million Illumina reads, of which they robustly assigned 152 to wheat (Triticum), with dozens more (160 reads) to higher taxonomic ranks that include wheat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "627ccec9-779b-4b9d-b0b2-6a21341eb0e3",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C24",
+      "claim": "Smith et al. robustly assigned 152 reads to wheat (Triticum).",
+      "claim_type": "EXPLICIT",
+      "source": "In total they produced \u223c72 million Illumina reads, of which they robustly assigned 152 to wheat (Triticum), with dozens more (160 reads) to higher taxonomic ranks that include wheat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "89b442e5-5384-4e9e-a9ae-926cdf72f078",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C25",
+      "claim": "Smith et al. assigned 160 reads to higher taxonomic ranks that include wheat.",
+      "claim_type": "EXPLICIT",
+      "source": "In total they produced \u223c72 million Illumina reads, of which they robustly assigned 152 to wheat (Triticum), with dozens more (160 reads) to higher taxonomic ranks that include wheat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "5c033be8-bd44-4132-b524-d4384e25c90f",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C26",
+      "claim": "Smith et al. took state-of-the art preventive measures to avoid contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. took state-of-the art preventive measures to avoid contamination and exercised great effort to ensure the accuracy and robustness of their phylogenetic assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "1bf2e2ab-d3ca-441f-9fad-cfe0c30cabea",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C27",
+      "claim": "Smith et al. exercised great effort to ensure the accuracy and robustness of their phylogenetic assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Smith et al. took state-of-the art preventive measures to avoid contamination and exercised great effort to ensure the accuracy and robustness of their phylogenetic assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "a8cad2d9-01d7-4dc7-a401-7c71c2551579",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C28",
+      "claim": "Smith et al. attempted to authenticate the aDNA molecules based on the expected excess of C-to-T substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors attempted to authenticate the aDNA molecules based on the expected excess of C-to-T substitutions, but because of the very small number of reads assigned to wheat, they failed to do so using standard approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "0a5c4af9-d2da-4981-9c7a-b6aeb11610d5",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C29",
+      "claim": "Smith et al. failed to authenticate the aDNA molecules using standard approaches because of the very small number of reads assigned to wheat.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors attempted to authenticate the aDNA molecules based on the expected excess of C-to-T substitutions, but because of the very small number of reads assigned to wheat, they failed to do so using standard approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Smith et al. study results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "1d8a181e-36b7-4476-91f5-045887bd3b01",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C30",
+      "claim": "The excess of C-to-T substitutions at the 5\u2032 end occurs at different magnitudes in samples of different ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the excess of C-to-T substitutions at the 5\u2032 end occurs at different magnitudes in samples of different ages, the exponential increase of substitutions towards the end is a ubiquitous pattern in aDNA studies (Sawyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Sawyer et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "e72dbe54-99d7-47e0-8737-2ba838c726c7",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C31",
+      "claim": "The exponential increase of substitutions towards the end is a ubiquitous pattern in aDNA studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the excess of C-to-T substitutions at the 5\u2032 end occurs at different magnitudes in samples of different ages, the exponential increase of substitutions towards the end is a ubiquitous pattern in aDNA studies (Sawyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Sawyer et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "50fdf020-7352-4418-9a03-c586175deb45",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C32",
+      "claim": "True aDNA libraries show significant goodness-of-fit p-values for exponential decay of C-to-T substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, true aDNA libraries show significant goodness-of-fit p-values (Figure 1A), whereas non-significant goodness-of-fit p-values, neither decay nor growth, are observed in libraries derived from modern DNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "45ed01b0-1658-461f-95bc-277d5754b0b2",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C33",
+      "claim": "Non-significant goodness-of-fit p-values, neither decay nor growth, are observed in libraries derived from modern DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, true aDNA libraries show significant goodness-of-fit p-values (Figure 1A), whereas non-significant goodness-of-fit p-values, neither decay nor growth, are observed in libraries derived from modern DNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "945b4158-09d7-4867-bcac-fe1639c3e157",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C34",
+      "claim": "A significant goodness-of-fit p-value indicates C-to-T exponential decay at the 5\u2032 end.",
+      "claim_type": "EXPLICIT",
+      "source": "A given C-to-T damage pattern plot can thus be summarized by its goodness-of-fit p-value that when it is significant indicates C-to-T exponential decay at the 5\u2032 end (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological inference supported by data in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "3e942a40-0166-4a0b-91fa-a77683b03c89",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C35",
+      "claim": "10,000 sets of 150 sequences were resampled (with replacement) from a library of historic Solanum tuberosum collected in 1846.",
+      "claim_type": "EXPLICIT",
+      "source": "We resampled (with replacement) 10,000 sets of 150 sequences from a library of historic Solanum tuberosum collected in 1846 (Yoshida et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "a93887bb-55fc-49cd-878f-e6d6b1789521",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C36",
+      "claim": "The number 150 was selected to be comparable to the 152 reads that Smith et al. assigned to wheat.",
+      "claim_type": "EXPLICIT",
+      "source": "The number was selected to be comparable to the 152 reads that Smith et al. assigned to wheat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "77d57cf2-ce29-4505-94c4-518771850035",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C37",
+      "claim": "The sedaDNA goodness-of-fit p-value falls within the upper 3% of subsamples with the least good fit when compared to historic S. tuberosum.",
+      "claim_type": "EXPLICIT",
+      "source": "When we evaluate the sedaDNA goodness-of-fit p-value, we find that it falls within the upper 3% of subsamples with the least good fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "24680b61-b0e5-43f5-954f-989a0d606ec9",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C38",
+      "claim": "The null hypothesis that the sequences assigned to wheat are as ancient as the historic S. tuberosum library can be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "We can therefore reject the null hypothesis that the sequences assigned to wheat are as ancient as the historic S. tuberosum library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical inference based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "21a2c246-2f1f-4191-8a1c-f41df96ff8ae",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C39",
+      "claim": "When compared to a modern wheat library, the sedaDNA shows a better match (p = 0.83).",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the whole procedure using this time a modern wheat library to generate the distribution of goodness-of-fit p-values (Figure 2A) and find a better match (p = 0.83).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "11695afb-2cb6-43de-967a-67a744aa1dd7",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C40",
+      "claim": "The hypothesis that the sequences assigned to wheat are of modern origin cannot be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we cannot reject the hypothesis that the sequences assigned to wheat are of modern origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical inference based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "d05498e2-c28a-4160-9ff3-b129c1195544",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C41",
+      "claim": "A set of samples from animal and plant remains with an age of 85\u2013170 years before present was used to investigate how the test behaves with different aDNA libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose we used a set of samples from animal (Sawyer et al., 2012) and plant remains (Yoshida et al., 2013) with an age of 85\u2013170 years before present, and scored the sedaDNA wheat sequences against distributions generated from these libraries (subsamples of 150 sequences again).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "3f2b2c32-a1f3-465c-b3f7-094cb08df6ae",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C42",
+      "claim": "The goodness-of-fit p-value for the libraries is positively correlated with the empirical p-value for the sedaDNA wheat sequences tested against them.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the goodness-of-fit p-value for the libraries is positively correlated with the empirical p-value for the sedaDNA wheat sequences tested against them (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "983407af-deca-444b-9a4e-f65417f742ea",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C43",
+      "claim": "Using a significance level of 0.05, the hypothesis that the wheat sequences are of ancient origin was rejected with 7 out of 13 libraries used in the test.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a significance level of 0.05, we rejected the hypothesis that the wheat sequences are of ancient origin with 7 out of 13 libraries used in our test (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "ef774f86-10ef-4cd1-a5a6-29b745139df3",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C44",
+      "claim": "The purportedly 8000-year old wheat sequences show a less pronounced deamination pattern than many plant and animal samples with an age of less of 200 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the purportedly 8000-year old wheat sequences show a less pronounced deamination pattern than many plant and animal samples with an age of less of 200 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative analysis of deamination patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "1c583db3-5ad3-4d7b-aa6a-f787326afa00",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C45",
+      "claim": "A 7000-years-old human Mesolithic sample from la Bra\u00f1a site in Northern Iberia was used to score the sedaDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we took a less conservative approach and scored the sedaDNA against a distribution of goodness-of-fit p-values (subsamples of 150 read) generated from a 7000-years-old human Mesolithic sample from la Bra\u00f1a site in Northern Iberia (Olalde et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "06d7c2af-dfb2-4cb7-8982-affa18506843",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C46",
+      "claim": "La Bra\u00f1a is a site with cold environment and stable thermal conditions that has yielded exceptionally well conserved human fossils with approximately 50% of human endogenous DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "La Bra\u00f1a is a site with cold environment and stable thermal conditions that has yielded exceptionally well conserved human fossils with \u223c50% of human endogenous DNA that reach a \u223c15% C-to-T substitution rate at the 5\u2032 end (Olalde et al., 2014a) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is information supported by citation to Olalde et al., 2014a and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "4448978a-c67d-4420-ba07-59ee845fd61d",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C47",
+      "claim": "The la Bra\u00f1a sample reaches approximately 15% C-to-T substitution rate at the 5\u2032 end.",
+      "claim_type": "EXPLICIT",
+      "source": "La Bra\u00f1a is a site with cold environment and stable thermal conditions that has yielded exceptionally well conserved human fossils with \u223c50% of human endogenous DNA that reach a \u223c15% C-to-T substitution rate at the 5\u2032 end (Olalde et al., 2014a) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data supported by citation to Olalde et al., 2014a and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "d9867b3e-66bc-489d-94c6-d1622d226a96",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C48",
+      "claim": "The null hypothesis that the sedaDNA reads are as ancient as the sample from la Bra\u00f1a can be rejected (p = 0.0014).",
+      "claim_type": "EXPLICIT",
+      "source": "We could reject the null hypothesis that the sedaDNA reads are as ancient as the sample from la Bra\u00f1a (p = 0.0014), a sample that is closer in time with the allegedly 8000-year-old wheat reads (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "256e37dd-0de2-466f-aed9-ebf46d1d6fc6",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C49",
+      "claim": "Almost all 10,000 subsamples from la Bra\u00f1a had a very low (close to 0) goodness-of-fit p-value, even though only 150 reads were subsampled.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth pointing out that almost all 10,000 subsamples from la Bra\u00f1a had a very low (close to 0) goodness-of-fit p-value, even though we subsample only 150 reads (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "b86a1127-c1b5-4d57-8207-77458ce6d930",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C50",
+      "claim": "The hypothesis that a true aDNA library is ancient was never rejected in the statistical power assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the hypothesis that a true aDNA library is ancient was never rejected (Figure 3A), the hypothesis that a modern library has ancient origin could be rejected only when sufficient number of sequences were used for the subsample test (in tests with more than 300 reads the median empirical p-value was always below 0.05) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical power analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "eef2aa32-89d0-43c5-81b4-df655786a554",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C51",
+      "claim": "The hypothesis that a modern library has ancient origin could be rejected only when sufficient number of sequences were used for the subsample test.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the hypothesis that a true aDNA library is ancient was never rejected (Figure 3A), the hypothesis that a modern library has ancient origin could be rejected only when sufficient number of sequences were used for the subsample test (in tests with more than 300 reads the median empirical p-value was always below 0.05) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical power analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "9c16b22a-1107-48b1-8f2f-afb45863b36b",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C52",
+      "claim": "In tests with more than 300 reads the median empirical p-value was always below 0.05 for modern DNA libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the hypothesis that a true aDNA library is ancient was never rejected (Figure 3A), the hypothesis that a modern library has ancient origin could be rejected only when sufficient number of sequences were used for the subsample test (in tests with more than 300 reads the median empirical p-value was always below 0.05) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the statistical power analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "c2e5355c-1af2-4aa0-bb41-0c7f57876ce0",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C53",
+      "claim": "All reads sequenced by Smith et al. were mapped to the wheat genome after skipping the phylogenetic curation step.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we skipped the phylogenetic curation step applied by Smith et al. to reduce the number of false positive wheat alignments, and mapped all reads sequenced by Smith et al. to the wheat genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "77a17ffc-0e3a-43b6-8311-a088468fcd2b",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C54",
+      "claim": "The empirical p-value was dependent on the number of reads tested, and declined with an increasing number of tested reads for all layers of sediments sequenced in Smith et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical p-value was dependent on the number of reads tested, and declined with an increasing number of tested reads for all layers of sediments sequenced in Smith et al (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "b6590b42-c08e-42cb-ad65-684172c46062",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C55",
+      "claim": "The pattern of declining empirical p-value with increasing reads resembled the one obtained from a modern DNA library.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern resembled the one obtained from a modern DNA library (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative inference based on data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "3c3f295e-62dd-427a-b065-9e505306d96a",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C56",
+      "claim": "The hypothesis that the mapped reads are of ancient origin can be rejected (mean p-value < 0.05 for all tests with more than 400 reads for layers 1\u20132 and 4, and 800 reads for layer 3).",
+      "claim_type": "EXPLICIT",
+      "source": "As for the phylogenetic curated 152 sequences, we were able to reject the hypothesis that the mapped reads are of ancient origin (mean p-value < 0.05 for all tests with more than 400 reads for layers 1\u20132 and 4, and 800 reads for layer 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "14c8f06c-6fc1-47b6-b068-f93c20e5c633",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C57",
+      "claim": "The 152 sequences after phylogenetic curation are not a biased subsample from the distribution of all wheat-matching sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also shows that the 152 sequences after phylogenetic curation are not a biased subsample from the distribution of all wheat-matching sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "9672c4d5-e056-4524-a8d7-46940db9d86e",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C58",
+      "claim": "The hypothesis that the sequences assigned to wheat by Smith et al. are of ancient origin can be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to reject the hypothesis that the sequences assigned to wheat by Smith et al. are of ancient origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "a888caa5-f0e0-4008-8ee4-a631d1631c68",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C59",
+      "claim": "The rejection of ancient origin holds true even when comparing the putative 8000 year old sequences with only century old samples that show much lower deamination signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true even when we compared the putative 8000 year old sequences with only century old samples that show much lower deamination signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative analysis with different aged samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "7118057d-dea3-4c0c-a6ef-5cef72a7d9ae",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C60",
+      "claim": "A scenario in which wheat was transported to the Bouldnor Cliff site 8000 years ago is unwarranted.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that a scenario in which wheat was transported to the Bouldnor Cliff site 8000 years ago is unwarranted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the inference from the data analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "e69f5043-a52e-4f59-826f-4dda5310f78a",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C61",
+      "claim": "The approach for authentication of aDNA can be used even with a very small number of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach for authentication of aDNA can be used even with a very small number of sequences, and we hope that it will proof useful to test for positive evidence of authenticity for ancient DNA studies whose conclusions rely heavily on the ancient origin of the analyzed sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the utility of the method based on the demonstrated analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "c512bf13-84cd-4af7-9704-202b94073048",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C62",
+      "claim": "The computational method compares postmortem damage patterns of a test dataset with bona fide ancient and modern DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a computational method that compares postmortem damage patterns of a test dataset with bona fide ancient and modern DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "8512b770-7828-4ffa-87dc-a97565cf30e2",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C63",
+      "claim": "An exponential function was fitted to the frequency of C-to-T substitutions for the first 20 nucleotides at the 5\u2032 end.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted an exponential function to the frequency of C-to-T substitutions for the first 20 nucleotides at the 5\u2032 end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "597c51a8-09bb-46be-8a5f-6093077b9796",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C66",
+      "claim": "The fitting was carried out with the model formula: y \u223c N\u2217exp(\u2212rate\u2217x).",
+      "claim_type": "EXPLICIT",
+      "source": "The fitting was carried out with the model formula: y \u223c N\u2217exp(\u2212rate\u2217x).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mathematical model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "9fc6ec2d-345b-47fe-8670-eb779cbfa156",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "claim_id": "C67",
+      "claim": "A goodness-of-fit p-value was calculated by using a one-sided t-test from the nls fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "From the nls fitting we obtained the t-value and degrees of freedom for the rate parameter and then calculated a goodness-of-fit p-value by using a one-sided t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ancient DNA studies face constant contamination risks, and positive authentication evidence is essential even when preventive measures are implemented. Despite the development of special sample preparation procedures to reduce contamination, it remains difficult to estimate their effectiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8, C9, and C10 establish well-accepted principles in ancient DNA research supported by appropriate citations. These represent established knowledge about contamination challenges and authentication requirements in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "72e30792-4677-4be0-9825-56d663d766ec",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DNA from flora and fauna that do not fossilize may be preserved in sediments, allowing characterization of past biodiversity, and next-generation sequencing enables authentication of ancient DNA through generation of large numbers of full-length sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C11 describe established knowledge about sedimentary DNA preservation and sequencing capabilities, supported by appropriate citations. These provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ancient DNA exhibits characteristic C-to-T substitution patterns at the 5' and 3' ends of molecules due to cytosine deamination, with the highest frequency at the first base decreasing exponentially toward the center. This pattern is ubiquitous in ancient DNA but absent in modern samples, making it a standard authentication criterion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 and C30-C31 describe well-established ancient DNA damage patterns supported by multiple citations and Figure 1A. This represents foundational knowledge for the authentication method developed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Smith et al. reported wheat presence in the UK 8000 years ago based on sedimentary ancient DNA from Bouldnor Cliff, assigning 152 reads to wheat from ~72 million total reads. Despite state-of-the-art preventive measures and rigorous phylogenetic curation, they failed to authenticate the ancient origin of these sequences using standard approaches due to the small number of reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C17-C29 accurately summarize the Smith et al. study and its limitations. The characterization of their methodology and failure to authenticate is factually supported by citation to the original work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "ceed86c8-313f-4136-a1d1-c88e037d8b58",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors developed a computational method that fits an exponential function to C-to-T substitution frequencies at the 5' end and calculates goodness-of-fit p-values using a one-sided t-test. True ancient DNA libraries show significant goodness-of-fit p-values indicating exponential decay, while modern DNA libraries show non-significant p-values with neither decay nor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 and C32-C34 describe the methodological approach with appropriate mathematical detail. The validation shown in Figures 1A and 1B demonstrates the method distinguishes ancient from modern DNA. The statistical approach appears sound for the stated purpose.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When comparing 152 sedaDNA wheat sequences to 10,000 subsamples of 150 sequences from historic S. tuberosum (1846), the sedaDNA goodness-of-fit p-value falls in the upper 3% with least good fit, rejecting the hypothesis of ancient origin. However, comparison to modern wheat library shows good match (p=0.83), failing to reject modern origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 present the core statistical comparison with appropriate methodology and clear results shown in Figure 2A. The resampling approach with 10,000 iterations provides robust statistical power. The contrasting results between ancient and modern comparisons strongly support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "3d618032-1d57-4768-880e-321d13779106",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Testing against 13 animal and plant samples aged 85-170 years showed positive correlation between library goodness-of-fit p-values and empirical p-values for sedaDNA wheat sequences. Using significance level 0.05, ancient origin was rejected for 7 of 13 libraries, demonstrating that the purportedly 8000-year-old wheat sequences show less pronounced deamination than many samples under 200 years old.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe systematic testing across multiple ancient DNA libraries with results shown in Figure 2B. The finding that relatively young samples (85-170 years) show stronger ancient DNA signatures than the purportedly 8000-year-old wheat is compelling evidence against authenticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison to a 7000-year-old human sample from la Bra\u00f1a (with ~50% endogenous DNA and ~15% C-to-T substitution rate) rejected the hypothesis that sedaDNA reads are equally ancient (p=0.0014). Almost all 10,000 subsamples from la Bra\u00f1a showed very low goodness-of-fit p-values despite using only 150 reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 present a conservative test using a temporally comparable ancient sample with exceptional preservation. The highly significant result (p=0.0014) and consistency across subsamples (Figure 2\u2014figure supplement 2) provide strong evidence. This is particularly compelling as la Bra\u00f1a is closer in age to the claimed wheat sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "cc52a583-ac80-46cc-9de3-6cfb94f565f3",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical power assessment showed that true ancient DNA libraries were never incorrectly rejected, while modern libraries could be correctly identified as non-ancient only with sufficient sequences (>300 reads, with median empirical p-value always <0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 describe validation of the method's statistical power shown in Figures 3A and 3B. The demonstration that the method has no false positives for ancient DNA and requires >300 reads for reliable detection of modern DNA establishes appropriate sensitivity and specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of all wheat-mapped reads (without phylogenetic curation) showed empirical p-values declining with increasing read numbers across all sediment layers, resembling modern DNA patterns. Ancient origin was rejected for tests with >400 reads (layers 1-2, 4) or >800 reads (layer 3), and the 152 phylogenetically curated sequences were not a biased subsample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 extend the analysis beyond the curated sequences shown in Figure 3C. The finding that uncurated reads show the same pattern as curated ones (C57) strengthens the conclusion by demonstrating the phylogenetic curation did not introduce bias. The layer-specific thresholds are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "a61c7a01-47fb-4085-ba1b-23b95448fd95",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The putative wheat DNA reads from Smith et al. are most likely not of ancient origin, as this conclusion holds even when comparing to century-old samples with lower deamination signatures. Therefore, the scenario of wheat transport to Bouldnor Cliff 8000 years ago is unwarranted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C58-C60 represent the main conclusions supported by the comprehensive statistical analyses in claims C35-C57. Multiple independent tests consistently reject ancient origin across different comparison datasets and analytical approaches. The conclusion is appropriately strong given the convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    },
+    {
+      "id": "2c870897-ea83-47be-916d-86a1e449a3a1",
+      "content_id": "0ba5d02a-ad4b-4319-aa5a-8ce2950460da",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authentication approach can be used even with very small numbers of sequences and may prove useful for testing authenticity in ancient DNA studies whose conclusions rely heavily on ancient origin of analyzed sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 makes forward-looking statements about the method's utility. While the method successfully analyzed 150-152 sequences in this study, broader validation across diverse sample types, preservation conditions, and taxonomic groups would strengthen claims about general applicability. The power analysis (C50-C52) suggests >300 reads may be needed for reliable modern DNA detection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:36:46.264595Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fcb9defa-5f63-4d38-859e-8822640b8e3b",
+      "result_id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7"
+    },
+    {
+      "claim_id": "ac1b32f0-ce63-4092-8d8e-e790e13e1167",
+      "result_id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7"
+    },
+    {
+      "claim_id": "d65a5530-cb10-450e-9100-4efba4eb7ba8",
+      "result_id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7"
+    },
+    {
+      "claim_id": "72846bd7-b5d9-418f-bdbd-bd87e02fc865",
+      "result_id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7"
+    },
+    {
+      "claim_id": "e3bef430-185a-4e72-b35a-158f3908b965",
+      "result_id": "da4c06e5-dea3-4faa-b23b-ef378ab77df7"
+    },
+    {
+      "claim_id": "917e4618-bd08-424e-b65e-2158cd8ae3f7",
+      "result_id": "72e30792-4677-4be0-9825-56d663d766ec"
+    },
+    {
+      "claim_id": "38e27982-4c41-4519-aa7a-ff7a225a90ae",
+      "result_id": "72e30792-4677-4be0-9825-56d663d766ec"
+    },
+    {
+      "claim_id": "ff5f42f2-7737-4606-94a0-c0b0c0755335",
+      "result_id": "72e30792-4677-4be0-9825-56d663d766ec"
+    },
+    {
+      "claim_id": "af086e82-ae46-4deb-ab9f-7daa9894a714",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "cc40c6fb-4756-42df-bcd4-bfca415a2a8e",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "2c9a40c7-1902-43c9-9096-7ee6c7aaa056",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "8f8148e1-fdf8-4933-8100-533c32f1554a",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "9ad2a619-2b27-4ec0-8231-eeb55e2cee4f",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "1d8a181e-36b7-4476-91f5-045887bd3b01",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "e72dbe54-99d7-47e0-8737-2ba838c726c7",
+      "result_id": "04d28cbf-b06b-4bf8-ba1c-40a474f78b6a"
+    },
+    {
+      "claim_id": "048c692a-85d8-438c-9266-19d0b4490256",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "75a5f68a-d167-4f36-b9da-92fa21eba7c9",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "99329f3c-93e2-4701-a37e-d3058ef2b718",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "0fe6f8ba-7f87-4071-8aa7-85ae336c98a8",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "81cfaa83-656f-4c42-b63c-85f5ead92366",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "4b5d3389-d3a8-4c4c-b3a3-fd0683741559",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "96d48a14-f0d8-4ab1-a214-e3d19d892ba9",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "4cbb17f6-1e53-4843-925e-3d9fadae2c58",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "d112e61f-bb11-451b-a463-6491c9cc3382",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "627ccec9-779b-4b9d-b0b2-6a21341eb0e3",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "89b442e5-5384-4e9e-a9ae-926cdf72f078",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "5c033be8-bd44-4132-b524-d4384e25c90f",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "1bf2e2ab-d3ca-441f-9fad-cfe0c30cabea",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "a8cad2d9-01d7-4dc7-a401-7c71c2551579",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "0a5c4af9-d2da-4981-9c7a-b6aeb11610d5",
+      "result_id": "4485e8cd-3b6d-4061-9654-392fa1c0edd2"
+    },
+    {
+      "claim_id": "c512bf13-84cd-4af7-9704-202b94073048",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "8512b770-7828-4ffa-87dc-a97565cf30e2",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "597c51a8-09bb-46be-8a5f-6093077b9796",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "9fc6ec2d-345b-47fe-8670-eb779cbfa156",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "50fdf020-7352-4418-9a03-c586175deb45",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "45ed01b0-1658-461f-95bc-277d5754b0b2",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "945b4158-09d7-4867-bcac-fe1639c3e157",
+      "result_id": "ceed86c8-313f-4136-a1d1-c88e037d8b58"
+    },
+    {
+      "claim_id": "3e942a40-0166-4a0b-91fa-a77683b03c89",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "a93887bb-55fc-49cd-878f-e6d6b1789521",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "77d57cf2-ce29-4505-94c4-518771850035",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "24680b61-b0e5-43f5-954f-989a0d606ec9",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "21a2c246-2f1f-4191-8a1c-f41df96ff8ae",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "11695afb-2cb6-43de-967a-67a744aa1dd7",
+      "result_id": "1a1d2a77-c64f-40f0-af75-eb80bf2ba91f"
+    },
+    {
+      "claim_id": "d05498e2-c28a-4160-9ff3-b129c1195544",
+      "result_id": "3d618032-1d57-4768-880e-321d13779106"
+    },
+    {
+      "claim_id": "3f2b2c32-a1f3-465c-b3f7-094cb08df6ae",
+      "result_id": "3d618032-1d57-4768-880e-321d13779106"
+    },
+    {
+      "claim_id": "983407af-deca-444b-9a4e-f65417f742ea",
+      "result_id": "3d618032-1d57-4768-880e-321d13779106"
+    },
+    {
+      "claim_id": "ef774f86-10ef-4cd1-a5a6-29b745139df3",
+      "result_id": "3d618032-1d57-4768-880e-321d13779106"
+    },
+    {
+      "claim_id": "1c583db3-5ad3-4d7b-aa6a-f787326afa00",
+      "result_id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd"
+    },
+    {
+      "claim_id": "06d7c2af-dfb2-4cb7-8982-affa18506843",
+      "result_id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd"
+    },
+    {
+      "claim_id": "4448978a-c67d-4420-ba07-59ee845fd61d",
+      "result_id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd"
+    },
+    {
+      "claim_id": "d9867b3e-66bc-489d-94c6-d1622d226a96",
+      "result_id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd"
+    },
+    {
+      "claim_id": "256e37dd-0de2-466f-aed9-ebf46d1d6fc6",
+      "result_id": "8fafb499-e0b5-4e56-a090-fb3a43c17efd"
+    },
+    {
+      "claim_id": "b86a1127-c1b5-4d57-8207-77458ce6d930",
+      "result_id": "cc52a583-ac80-46cc-9de3-6cfb94f565f3"
+    },
+    {
+      "claim_id": "eef2aa32-89d0-43c5-81b4-df655786a554",
+      "result_id": "cc52a583-ac80-46cc-9de3-6cfb94f565f3"
+    },
+    {
+      "claim_id": "9c16b22a-1107-48b1-8f2f-afb45863b36b",
+      "result_id": "cc52a583-ac80-46cc-9de3-6cfb94f565f3"
+    },
+    {
+      "claim_id": "c2e5355c-1af2-4aa0-bb41-0c7f57876ce0",
+      "result_id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91"
+    },
+    {
+      "claim_id": "77a17ffc-0e3a-43b6-8311-a088468fcd2b",
+      "result_id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91"
+    },
+    {
+      "claim_id": "b6590b42-c08e-42cb-ad65-684172c46062",
+      "result_id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91"
+    },
+    {
+      "claim_id": "3c3f295e-62dd-427a-b065-9e505306d96a",
+      "result_id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91"
+    },
+    {
+      "claim_id": "14c8f06c-6fc1-47b6-b068-f93c20e5c633",
+      "result_id": "3ee91e18-1255-45c8-bdd9-f8a3b47bdd91"
+    },
+    {
+      "claim_id": "a47a2a8a-0cc4-4e36-8159-3f3a4aaa378b",
+      "result_id": "a61c7a01-47fb-4085-ba1b-23b95448fd95"
+    },
+    {
+      "claim_id": "9672c4d5-e056-4524-a8d7-46940db9d86e",
+      "result_id": "a61c7a01-47fb-4085-ba1b-23b95448fd95"
+    },
+    {
+      "claim_id": "a888caa5-f0e0-4008-8ee4-a631d1631c68",
+      "result_id": "a61c7a01-47fb-4085-ba1b-23b95448fd95"
+    },
+    {
+      "claim_id": "7118057d-dea3-4c0c-a6ef-5cef72a7d9ae",
+      "result_id": "a61c7a01-47fb-4085-ba1b-23b95448fd95"
+    },
+    {
+      "claim_id": "e69f5043-a52e-4f59-826f-4dda5310f78a",
+      "result_id": "2c870897-ea83-47be-916d-86a1e449a3a1"
+    }
+  ],
+  "comparisons": []
+}

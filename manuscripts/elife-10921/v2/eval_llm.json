@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "TrIP-seq samples cluster according to polysome gradient order, forming four stable subgroups (80S monosome, low polysomes, high polysomes, and cytoplasmic RNA), suggesting transcript isoforms are predominantly either poorly- or highly-ribosome associated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis (C24-C25) is validated by statistical robustness testing showing Jaccard distance \u22650.75 (C26-C27), which is an established threshold for stable clusters. The bimodal distribution interpretation (C28) is a reasonable inference from the observed clustering pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TrIP-seq accurately measures transcript-specific ribosome association, as validated by RT-PCR for known highly-translated (ACTB), poorly-translated (ATF4), and isoform-specific (EEF1B2) transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation uses established positive (ACTB, C29-C30) and negative (ATF4, C31-C32) controls with literature support, and demonstrates qualitative agreement between TrIP-seq and RT-PCR for isoform-specific measurements (C33-C34). This provides strong orthogonal validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Protein-coding genes distribute across polysome fractions while noncoding and lncRNA genes are predominantly in low polysome fractions, indicating weak ribosome association or presence in other large macromolecular complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential distribution of coding versus noncoding transcripts (C35-C36) is clearly shown in the data. However, the interpretation that low polysome association indicates either weak ribosome binding OR other complexes (C37) is somewhat ambiguous and cannot be definitively distinguished without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TrIP-seq shows strong correlation with ribosome profiling at the gene level (Rs=0.88) but weaker correlation at the isoform level (Rs=0.47), likely due to technical limitations of ribosome profiling in quantifying transcript isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene-level correlation (C38) validates TrIP-seq against an established method. The decreased isoform-level correlation (C39) is properly contextualized by comparing to TrIP-seq replicate correlation (C40), and the interpretation (C41) is supported by citation to known limitations of ribosome profiling for isoform quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TrIP-seq correlates with protein abundance (Rs=0.57) better than RNA-seq (Rs=0.45), and multiple lines of evidence suggest TrIP-seq primarily measures translating ribosomes rather than stalled ribosomes or other complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation with proteomics (C42-C43) provides validation. The inference that TrIP-seq measures active translation (C47) is supported by multiple converging lines of evidence: literature on transient stalling (C44-C45), underestimation rather than overestimation of protein levels (C46), and gene-level correlation with ribosome profiling. This multi-pronged argument is convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hierarchical clustering of 62,703 transcript isoforms representing ~14,000 genes reveals diverse polysome association patterns, with high- and low-polysome clusters being most robust, demonstrating the necessity of fractionating polysome profiles for accurate isoform-specific translatability measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scale of the dataset (C49) and diversity of patterns (C50) are directly measured. Replicate clustering analysis validates robustness of extreme clusters (C51). The conclusion about necessity of fractionation (C52) is a logical inference from observing similar total abundance but different distributions across clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Poorly translated cluster 7 contains similar numbers of retained intron and protein-coding isoforms, with enrichment for translation and splicing genes implicating AS-NMD, though some retained intron transcripts in high polysome clusters suggest at least some may be translated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of retained introns in poorly translated clusters (C53) with GO enrichment for AS-NMD pathway genes (C54) is well-supported. The presence of retained introns in high polysome clusters (C55-C56) is directly observed, though the inference that they may be translated (C57) is speculative and would require additional validation such as ribosome profiling or proteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Longer coding sequences and highly abundant isoforms are biased toward high polysomes, but coding sequence length is not the sole determinant as ribosome density also differs; additionally, isoforms with more exons are better translated independent of transcript length, reflecting positive influence of splicing on translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observations about CDS length and abundance (C58-C59) are data-driven, with the physical constraint explanation (C60) being reasonable. The ribosome density analysis (C61-C62) properly demonstrates that length alone doesn't explain polysome association. The exon number effect (C63) is supported by citations and the control for transcript length (C64) strengthens the conclusion about splicing's positive effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Highly translated isoforms contain fewer rare codons on average but more stretches of rare codons, possibly indicating a need for translational pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The codon usage patterns (C65-C66) are directly measured from the data. However, the interpretation about translational pausing (C67) is explicitly speculative and lacks direct experimental validation. This would require additional experiments such as ribosome profiling to measure pausing directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "3' UTR length and content represent one of the strongest effects on polysome association, with low polysome isoforms having longer 3' UTRs (mean 1551 vs 982 nt), increased AU-rich elements, more conserved miRNA binding sites (especially for HEK 293T-expressed miRNAs), and correspondingly decreased half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effect size analysis (C68) and length measurements (C69) are quantitative and well-supported. The AU-rich element (C70) and miRNA binding site analyses (C71-C72) are properly controlled, with filtering to cell-type-expressed miRNAs strengthening the functional relevance argument. The half-life correlation (C73) provides orthogonal validation of the regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Gene-linked isoforms in high polysomes have increased predicted 5' leader structure, with no significant overall dependence on 5' leader length, though isoforms with 5' leaders >1000 nt are poorly ribosome-associated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structure prediction results (C74) are surprising and contradict typical expectations about 5' structure inhibiting translation. The authors acknowledge this and propose three possible explanations but provide no experimental validation. The lack of length dependence (C75) conflicts with the observation about very long 5' leaders (C76-C77), suggesting a non-linear relationship that is not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "uORF enrichment patterns vary across clusters, with cluster 1 enriched for both cognate and noncognate uORFs, cluster 6 enriched for cognate uORFs, and cluster 2 enriched only for noncognate uORFs, indicating complex and idiosyncratic uORF behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The uORF enrichment patterns (C78-C80) are directly measured from the data. The conclusion about complex behavior is appropriate given the inconsistent patterns across clusters, which align with literature showing context-dependent uORF effects. However, no mechanistic validation is provided for specific examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Properties of 3' UTRs predominate over 5' leader sequences as the driving force behind differential polysome association for transcript isoforms of the same gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C81) is well-supported by the comprehensive feature analysis showing larger effect sizes for 3' UTR features compared to 5' leader features in the gene-linked isoform comparison. The effect size measurements using Cliff's d provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TrIP-seq analysis predicts a shift toward extremes of translation during human embryonic development, with increased percentages of both highly and lowly translated isoforms; for example, CSDE1 expresses a poorly translated isoform (CSDE1-002) in oocytes and early development, but a well-translated isoform (CSDE1-007) appears after fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The prediction about developmental translation shifts (C82) is based on mapping embryonic transcripts onto HEK 293T TrIP-seq clusters, which assumes translational regulation is conserved between cell types\u2014an assumption that may not hold. The CSDE1 example (C83-C84) demonstrates isoform switching but doesn't validate that translation actually differs in embryos. Direct TrIP-seq or ribosome profiling in embryos would be needed to validate these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "All tested 5' leader sequences modulate luciferase protein production in concordance with TrIP-seq polysome association, with effects ranging from ~20-fold (EEF1B2) to 100-fold (NAE1), and even 9-nucleotide differences (RICTOR) producing differential protein production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase reporter assays (C85) provide strong functional validation that TrIP-seq predicts translational output. The quantitative measurements (C86-C87) demonstrate a large dynamic range. The RICTOR example (C88) is particularly striking, though the proposed mechanism (altered secondary structure) is speculative and not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "3' UTRs can strongly modulate protein production, with good agreement between TrIP-seq and luciferase output for two of four tested pairs; NAB1 and RICTOR 3' UTR pairs differ by ~35-fold and ~44-fold respectively in luciferase output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3' UTR reporter results show partial validation (C89), with 50% agreement being reasonable given the complexity of 3' UTR regulation and potential cell-type specificity. The large fold-changes for NAB1 and RICTOR (C91-C92) demonstrate strong regulatory capacity (C93), supported by citations. The universal decrease compared to control (C90) validates that these are functional regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "There is a positive relationship between average ribosome number per transcript in TrIP-seq and luciferase fold change, demonstrating that isoform-specific regulatory elements can be grafted onto heterologous coding sequences to control translation over two orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C94) validates that TrIP-seq measurements predict translational output. The summary conclusion (C95) is well-supported by the comprehensive luciferase data showing modular, transferable regulatory function across multiple UTR pairs with a 100-fold dynamic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "5' leader-mediated translational control is qualitatively similar across six tested conditions (multiple cell lines and timepoints), while 3' UTR reporters show considerably more variability, suggesting 5' leader control is robust to macromolecular composition changes while 3' UTRs may be influenced by cell-type-variable factors like miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistent 5' leader effects (C96) across cell types are clearly demonstrated, with the proposed mechanism about high translation factor abundance buffering changes (C98) being reasonable though not directly tested. The 3' UTR variability (C97) is well-documented, and the inference about miRNA variability (C99) is biologically plausible and consistent with known miRNA biology, though not directly validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "For the tested panel, transcript 5' leaders confer robust control of protein production across cell types, while transcript 3' UTRs may be better suited to tune protein production to particular cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C100-C101) appropriately synthesizes the multi-cell line luciferase data, with proper caveats about the limited panel tested. The differential behavior of 5' vs 3' regulatory elements across cell types has important implications for synthetic biology and therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The dynamic range of transcript-isoform-specific translational control spans at least two orders of magnitude in human cells, indicating it is crucial to take isoform-level effects into account when assessing translation in organisms with extensive alternative transcript processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 100-fold dynamic range (C102) is directly demonstrated by the luciferase experiments. The conclusion about the importance of isoform-level analysis (C103) is a well-justified inference from the comprehensive dataset showing widespread isoform-specific translation differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Alternative 3' UTRs broadly influence translation with longer isoforms associated with lower protein production, and regulatory regions are sufficient to control translation of unrelated coding sequences, enabling predictable tuning of translational output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The global 3' UTR length effect (C104) is well-supported by the comprehensive feature analysis. The modularity and transferability of regulatory elements (C105) is convincingly demonstrated by the luciferase reporter experiments showing predictable control of heterologous genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Frequent intron retention occurs on ribosome-associated transcripts, even in high-polysome fractions, identifying a population of retained but not nuclear-detained introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of retained introns in polysome fractions (C106) is directly measured from the data. The inference about a population escaping nuclear detention (C107) is reasonable given the polysome association, though additional experiments (e.g., subcellular fractionation, FISH) would strengthen this conclusion. The citation provides supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background and motivation: Eukaryotic genes generate multiple transcript isoforms through alternative processing, each potentially harboring unique translational control elements, but the prevalence and dynamic range of isoform-specific translational control across the human genome is unknown, and existing methods like ribosome profiling have technical limitations for isoform-level analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and rationale for the study. They are well-supported by citations to established knowledge (C1, C8-C11, C13-C19) and properly identify gaps in current understanding (C20-C22) and technical limitations of existing methods (C23). The logical inference about gene-level measurements being insufficient (C12, C22) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "TrIP-seq reveals regulatory features controlling ribosome occupancy and translational output of transcript isoforms, identifies a panel of UTRs controlling protein production over 100-fold, demonstrates robust 5' UTR control and cell-type-specific 3' UTR effects, and shows that transcript isoform diversity must be considered when relating RNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the main conclusions of the paper (from the abstract), which are well-supported by the comprehensive experimental data including: feature analysis (C3), luciferase reporter assays (C4), and multi-cell line experiments (C5-C6). The overarching conclusion (C7) is justified by the totality of evidence showing widespread isoform-specific translation differences.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "NIFK and Ki-67 RNA expression are significantly positively correlated across cancer types in TCGA data, with lung cancer showing the strongest correlation among high NIFK-expressing cancers (\u03c1 = 0.488, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are supported by TCGA pan-cancer cohort analysis presented in Figure 1A. The correlation analysis appears appropriately conducted across multiple cancer types with statistical significance reported. The identification of lung cancer as having the strongest correlation is clearly stated with quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "NIFK protein expression is significantly elevated in lung and colorectal cancer tissues compared to paired normal tissue, but not in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are supported by IHC analysis data in Figure 1B showing differential NIFK expression patterns across cancer types. The use of paired samples strengthens the comparison, though sample sizes and statistical tests are not explicitly reported in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "High NIFK expression is associated with poor survival across multiple cancer types, with lung cancer showing the highest hazard ratio (HR=4.71, p=0.000308) based on PrognoScan database analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by survival analysis from PrognoScan database presented in Figure 1C. The Cox proportional hazards model provides appropriate statistical framework. However, the analysis relies on public database without independent validation in this specific result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "High NIFK protein expression in lung cancer patients correlates with more frequent nodal involvement (p=0.032), distant metastasis (p=0.036), and higher pathological stage (p=0.059).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by clinicopathological analysis in Figure 1D. The p-value for pathological stage (p=0.059) is marginally non-significant by conventional \u03b1=0.05 threshold, which should be noted. Statistical test used (likely chi-square) appears appropriate for categorical clinical variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "NIFK overexpression significantly increases cell migration and invasion in lung cancer cell lines in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by wound-healing assay (Figure 2C) and transwell assay (Figure 2\u2014figure supplement 1) data. Multiple assay types provide converging evidence. Statistical significance is reported (p<0.001 for 4 MOI), though replication details and sample sizes are not specified in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "H661 and H1299 cell lines were derived from metastatic sites and are considered invasive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by citation to ATCC cell line information and established characterization. This represents appropriate use of established knowledge about commonly used cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "NIFK knockdown inhibits cell migration in H661 and H1299 cells, particularly in clone sh6 (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by wound-healing assay data in Figure 2E. The observation of differential effects across clones (sh6 more effective) is noted, which could reflect varying knockdown efficiency or clonal variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "NIFK expression modulates lung metastasis in vivo: overexpression increases metastasis in A549 cells (p=0.0127), while silencing reduces metastasis in H661 (p=0.0054) and H1299 (p=0.0169) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by in vivo tail vein injection experiments in NSG mice (Figures 3B-E). Both gain-of-function and loss-of-function approaches provide complementary evidence. Sample sizes (n=5-6 per group) are modest but typical for mouse studies. Statistical significance is reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "High NIFK IHC expression significantly correlates with poor overall survival in both Taiwanese (p=0.018) and Korean (p=0.041) lung cancer patient cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by Kaplan-Meier survival analysis in independent patient cohorts (Figure 3G-H). The replication across two independent cohorts strengthens the finding. Sample sizes (Taiwanese n=188, Korean n=96) are reasonable for survival analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "NIFK silencing reduces cancer cell proliferation in vitro (96 hr) and tumor growth in vivo (weight and volume, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by in vitro proliferation assays (Figure 4A) and in vivo tumor growth experiments (Figures 4B-C). Both approaches provide consistent evidence for NIFK's role in proliferation. Statistical significance is reported for in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Ki-67 silencing decreases cell growth in A549 and PC13 cells, indicating NIFK-regulated proliferation is Ki-67-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by cell proliferation assay data in Figure 4D. The experiment appropriately tests the dependency relationship, though the claim of Ki-67 dependency would be stronger with rescue experiments showing NIFK overexpression cannot overcome Ki-67 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Both RRM and Ki-FHA binding domains contribute to NIFK-mediated tumor proliferation, with Ki-FHA binding domain being more significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by domain deletion analysis in Figure 4F. The comparative assessment of different domains provides mechanistic insight. However, quantitative comparison and statistical testing between domain effects would strengthen the conclusion about relative importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "High NIFK and Ki-67 co-expression correlates with poor survival (p=0.004) and shows significant positive correlation (p<0.001) at the protein level in lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by survival analysis (Figure 4G) and correlation analysis (Figure 4H) of IHC data. The protein-level correlation complements the RNA-level findings from C1-C2, providing multi-level validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Ki-67 knockdown does not impact NIFK-induced cell migration or invasion in PC13 and H1299 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by transwell assay data (Figures 5A-D). This negative result is important for establishing that NIFK's effects on migration/invasion are Ki-67-independent, contrasting with its Ki-67-dependent effects on proliferation. The use of multiple cell lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Wnt signaling is the most strongly affected pathway by NIFK overexpression based on MetaCore enrichment analysis of microarray data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by pathway enrichment analysis (Figures 5E-F). The bioinformatics approach is appropriate for identifying affected pathways. However, enrichment analysis can be sensitive to analysis parameters and gene set definitions. The prior knowledge about Wnt in metastasis (C33) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "NIFK overexpression decreases CK1\u03b1 and the APC-AXIN-CK1\u03b1-CTNNB-GSK3\u03b2 destruction complex, identifying CK1\u03b1 as a key molecule in NIFK-regulated Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by microarray and Western blot data (Figures 5G-H). The identification of CK1\u03b1 as key molecule (C36) is an inference from the observed changes. While the data support CK1\u03b1 involvement, the designation as 'key molecule' would benefit from functional validation (provided later in rescue experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "NIFK overexpression increases nuclear \u03b2-catenin and reduces \u03b2-catenin phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by Western blot analysis of nuclear fractions (Figure 5I) and phospho-\u03b2-catenin analysis (Figure 5\u2014figure supplement 2). The use of MG132 proteasome inhibitor in C38 experiments is appropriate. Nuclear fractionation quality controls (e.g., purity markers) are not explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NIFK silencing decreases TCF/\u03b2-catenin transcriptional activity, which is restored by CK1\u03b1 knockdown in both H661 and H1299 cells (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by TCF/\u03b2-catenin reporter assay data (Figure 5J). The rescue experiment (C40-C41) provides strong evidence for the NIFK-CK1\u03b1-\u03b2-catenin axis. The use of both TOPflash and FOPflash controls is appropriate for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "TCF4, CD44, CCND1, and MMP7 are downstream transcriptional targets regulated by the NIFK-CK1\u03b1 axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by RT-PCR data (Figure 5\u2014figure supplement 3). These are established \u03b2-catenin target genes. The regulation by NIFK-CK1\u03b1 axis is demonstrated through manipulation of both NIFK and CK1\u03b1. Quantification and statistical analysis would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "NIFK inversely regulates CK1\u03b1 and \u03b2-catenin protein levels: NIFK knockdown increases CK1\u03b1 and decreases \u03b2-catenin, while NIFK overexpression decreases CK1\u03b1 and increases \u03b2-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by Western blot data (Figure 6A) showing reciprocal regulation in both loss-of-function and gain-of-function experiments across multiple cell lines. The bidirectional evidence strengthens the conclusion about NIFK's regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The CSNK1A1 promoter region from -969 to -127 bp is important for transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by promoter deletion analysis (Figure 6C). The approach is standard for identifying functional promoter regions. Multiple deletion constructs provide mapping resolution, though finer mapping would better define critical elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RUNX1 and SRY silencing decrease CK1\u03b1 expression, while CdxA knockdown has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by Western blot data (Figures 6D and 6\u2014figure supplement 2). The negative control (CdxA) strengthens specificity. However, the effects appear modest in the Western blots, and quantification with statistics would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "NIFK inversely regulates RUNX1 binding to the CK1\u03b1 promoter: NIFK silencing increases binding while NIFK overexpression decreases binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by ChIP assay data (Figure 6E). The bidirectional evidence across different cell lines strengthens the conclusion. ChIP is appropriate for assessing transcription factor binding, though the semi-quantitative nature of the PCR readout limits precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "NIFK regulates CK1\u03b1 promoter activity through RUNX1: NIFK knockdown increases promoter activity (reversed by RUNX1 knockdown, p<0.001), while NIFK overexpression dose-dependently decreases activity (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by promoter reporter assays (Figure 6F). The rescue experiment (C54) and dose-response (C55) provide strong mechanistic evidence. Statistical significance is reported. The functional validation complements the ChIP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "NIFK overexpression destabilizes RUNX1 mRNA and decreases RUNX1 promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by actinomycin D chase assay (Figures 6G, 6\u2014figure supplement 3) and promoter reporter assay (Figure 6H). The mRNA stability experiment appropriately uses transcription inhibition. Both transcriptional and post-transcriptional mechanisms are implicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "RUNX1 protein levels increase upon NIFK silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by Western blot data (Figure 6I). This complements the overexpression data, providing bidirectional evidence for NIFK's negative regulation of RUNX1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In lung cancer patients, NIFK inversely correlates with RUNX1 and CK1\u03b1, while RUNX1 positively correlates with CK1\u03b1 (all p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by correlation analysis of TCGA data (Figure 6J). The clinical correlation data support the mechanistic findings from cell line experiments. Large sample size (n=513) provides statistical power. However, correlation does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "CK1\u03b1 knockdown restores cell migration in NIFK-silenced H661 and H1299 cells, with variable effects across different shRNA clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by wound-healing assay data (Figure 7B, Figure 7\u2014figure supplement 1). The rescue experiment provides functional evidence that CK1\u03b1 mediates NIFK's effects on migration. Clone-to-clone variability is noted, which could reflect knockdown efficiency differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "CK1\u03b1 knockdown significantly restores lung metastasis in NIFK-silenced H661 and H1299 cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by in vivo metastasis experiments (Figures 7C-D). The rescue of metastasis phenotype by CK1\u03b1 knockdown provides strong evidence that CK1\u03b1 mediates NIFK's pro-metastatic effects. Statistical significance is shown, though exact p-values are not provided in claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "High CK1\u03b1 levels correlate with favorable prognosis in lung cancer patients (p=0.051).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is based on survival analysis (Table 1, Figure 7E). The p-value of 0.051 is marginally non-significant by conventional \u03b1=0.05 threshold. In multivariate analysis (Table 1), the association is weaker (p=0.175). The trend supports the hypothesis but does not reach statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Combined NIFK/CK1\u03b1 expression represents a superior prognostic indicator for lung cancer (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by survival analysis combining both markers (Figure 7E). The combination shows stronger prognostic value than either marker alone, which is clinically relevant. The p-value (0.01) is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Background on NIFK and Ki-67: NIFK is a Ki-67-interacting protein; Ki-67 is a proliferation marker expressed in active cell cycle phases; Ki-67 overexpression predicts poor prognosis; Ki-67 has clinical utility; and NIFK-Ki-67 interaction involves specific phosphorylation and chromosomal localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 represent established knowledge from prior literature, appropriately cited. These provide necessary background context for the study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background on Wnt/\u03b2-catenin signaling: the pathway is critical in cancer; \u03b2-catenin activates downstream targets; degradation involves sequential phosphorylation by CK1\u03b1 then GSK-3; CK1\u03b1 is constitutively active; and CK1\u03b1 function depends on its intracellular level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 represent established knowledge about Wnt signaling, appropriately cited. Claim C81 is an inference from C80 but is reasonable given constitutive activity. These provide necessary mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background on NIFK, Ki-67, and CK1\u03b1 in cancer: NIFK is c-Myc-responsive; Ki-67 associates with metastasis; CK1\u03b1 is a negative regulator of Wnt signaling; \u03b2-catenin degradation involves the destruction complex; \u03b2-catenin/APC mutations are less common in lung cancer; and destruction complex downregulation correlates with poor prognosis in lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 represent relevant background from prior literature, appropriately cited. These establish the rationale for investigating NIFK-CK1\u03b1-Wnt axis in lung cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A negative feedback loop via Huwe-1-dependent Dvl ubiquitylation exists in Wnt signaling, and Huwe-1 upregulation is detected in NIFK overexpression microarray data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 represent established knowledge (appropriately cited). Claim C90 is supported by microarray data (Supplementary file 1A). This suggests an alternative regulatory mechanism, though it is presented as supplementary observation rather than main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Background on CK1\u03b1 and p53: CK1\u03b1 acts as tumor suppressor in p53-inactivated cells; CK1\u03b1 loss causes invasive carcinoma in p53-deficient mice; and p53 inactivation is major in lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 represent relevant background from prior literature, appropriately cited. These provide context for the potential importance of NIFK-CK1\u03b1 axis in p53-deficient lung cancer, though this is noted as requiring further research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background on RUNX1: originally recognized as tumor suppressor in leukemia; RUNX1 loss induces tumorigenesis in intestinal epithelium; and RUNX1 knockdown causes hyperproliferation in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 represent established knowledge about RUNX1's tumor suppressor functions, appropriately cited. These provide context for RUNX1 as a transcriptional regulator of CK1\u03b1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "NIFK promotes lung cancer progression through two mechanisms: RUNX1-dependent CK1\u03b1 repression activating TCF4/\u03b2-catenin signaling in metastasis, and Ki-67-dependent regulation of cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 represent the main conclusions synthesizing multiple experimental findings. The dual mechanism (metastasis via CK1\u03b1/Wnt, proliferation via Ki-67) is supported by extensive in vitro, in vivo, and clinical data presented throughout. The mechanistic pathway is validated through multiple complementary approaches including gain/loss-of-function, rescue experiments, and clinical correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "NIFK may represent both a prognostic indicator and a promising therapeutic target for lung cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 (prognostic indicator) is well-supported by clinical correlation data from multiple cohorts. Claim C99 (therapeutic target) is more speculative, based on demonstrated functional importance but without direct therapeutic intervention data. The use of 'may' and 'promising' appropriately conveys the preliminary nature of therapeutic implications.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two high-resolution cryo-EM structures of SecM-stalled ribosomes were determined at 3.3-3.7 \u00c5 resolution from 238,212 particles, revealing two major populations: SecM-Gly-RNC (unrotated state with P/P-tRNA) and SecM-Pro-RNC (rotated state with hybrid A/P* and P/E tRNAs). Mass spectrometry confirmed nascent peptides ending at G165 and P166, with a 2:1 ratio of Pro to Gly termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural determination is well-documented with appropriate resolution validation (FSC curves), particle numbers, and complementary mass spectrometry data. The two distinct ribosomal states are clearly characterized with specific tRNA positions confirmed by structural analysis and comparison to reference states. The ratio of the two populations (1:1.5 rotated:unrotated) is explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In SecM-Gly-RNC, extensive molecular interactions between the SecM nascent peptide and the ribosomal exit tunnel were identified, including canonical P-loop base pairing, contacts between U2585 and the peptidyl bond, R163 confinement by U2506/A2451/C2452, and specific interactions of I162, Q160-Q158, W155, and F150 with tunnel components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The atomic-level interactions are directly observed in the 3.7 \u00c5 resolution structure and are consistent with previous mutational data showing the importance of these residues. The structural observations provide molecular explanations for known functional requirements. Figures 2B-G clearly show these interactions with appropriate density maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In SecM-Pro-RNC, the interaction pattern between SecM and the exit tunnel differs substantially from SecM-Gly-RNC, with disrupted CCA-end/P-loop base pairing, altered positions of G165 and R163, and a ~90\u00b0 flip of W155 to stack with A751.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3.3 \u00c5 resolution structure clearly shows distinct molecular interactions compared to SecM-Gly-RNC. The structural differences are well-documented in Figures 3B-G with appropriate density maps. The observations are consistent with the addition of one amino acid (P166) causing conformational changes in the nascent peptide-tunnel interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C3",
+      "C52",
+      "C54",
+      "C80",
+      "C81"
+    ],
+    "result": "SecM-Gly-RNC exhibits PTC inactivation through conformational changes that lock the PTC in an uninduced state, with U2585 and U2506 adopting positions similar to the uninduced state, A2602 blocking A-site tRNA entry, and the configuration being incompatible with release factor binding. This mechanism, combined with the naturally slow peptide bond formation rate for proline, collectively causes translation stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons with reference induced/uninduced PTC states (PDB 1VQN/1VQ6) are appropriate and clearly demonstrate the inactive PTC conformation. The steric clashes with RF2 (PDB 4V5J) are well-documented. The mechanistic interpretation is supported by structural data and consistent with biochemical observations (C72, C74, C75). The integration of structural observations with known proline kinetics (C53) provides a comprehensive stalling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C4",
+      "C55",
+      "C56"
+    ],
+    "result": "SecM-Pro-RNC exhibits a distinct stalling mechanism involving disrupted base pairing between the CCA-end of A/P*-tRNA and the P-loop, with C75 and C74 deviating from optimal positions. This impaired P-loop accommodation likely delays tRNA translocation from the hybrid A/P site to the classical P/P site, indicating that SecM slows both peptide bond formation and tRNA translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations of disrupted P-loop interactions are clearly documented in the 3.3 \u00c5 structure (Figures 3A, 5E). The interpretation is supported by previous FRET data (C73) showing increased lifetime of the rotated state. The dual mechanism (affecting both peptide bond formation and translocation) is a logical conclusion from the structural data combined with kinetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SecM-Gly-RNC exhibits a rotational movement of the 30S body domain along its long axis compared to pre-translocational ribosomes, resulting in peripheral displacement up to ~5 \u00c5 while the platform domain remains largely unchanged. This conformation was previously observed in E. coli 70S-EF-G/GMPPCP crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational analysis is based on appropriate structural comparisons with reference structures (Brilot et al., 2013; Villa et al., 2009; Pulk and Cate, 2013). The displacement measurements are quantified and visualized in Figure 6. The observation of 'subunit rolling' is consistent with recent findings in mammalian ribosomes (Budkevich et al., 2014), though the authors appropriately note uncertainty about whether this is stalling-specific or a general POST-state feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The overall conformations of SecM-Gly-RNC and SecM-Pro-RNC are similar to known functional ribosomal complexes, suggesting that SecM-induced stalling results from localized PTC conformational changes rather than global ribosomal rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the structural comparisons showing that the major differences are localized to the PTC region while overall ribosomal architecture remains similar to functional states. This refutes earlier hypotheses of large-scale rRNA rearrangements (Mitra et al., 2006) and is consistent with the improved resolution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The PTC inactivation mechanism in SecM-Gly-RNC is highly similar to other nascent peptide-mediated stalling systems (TnaC, MifM, ErmCL, ErmBL), with PTC residues A2062, U2585, U2586, and A2602 serving as common responsive elements that modulate translation elongation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with other stalling systems is appropriate and supported by citations to recent structural studies. The identification of common PTC residues across different stalling peptides provides important mechanistic insights into a conserved regulatory mechanism. The conclusion is well-supported by structural data and literature comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Chloramphenicol was added during sample preparation to preserve RNCs, and was observed bound in SecM-Pro-RNC (but not SecM-Gly-RNC) at a position interacting with C2452/A2503/G2061, different from the canonical chloramphenicol binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence/absence of chloramphenicol in the two structures is clearly documented in Figure 1\u2014figure supplement 7. The authors appropriately acknowledge this methodological consideration and note that the binding pattern differs from crystal structures (Dunkle et al., 2010). While they cannot quantify chloramphenicol's contribution to stalling in SecM-Pro-RNC, they provide evidence that it is not the determining factor based on conformational differences of critical PTC residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SecM-stalled RNCs were generated using an E. coli in vitro translation system, with peptidyl-tRNA accumulation peaking at 15 min. RNase A treatment confirmed that peptidyl-tRNA is arrested at the 3'-end of the SecM coding sequence, and chloramphenicol was added during purification to stabilize RNCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical characterization is thorough and well-documented with Western blot analysis (Figure 1\u2014figure supplement 1). The time-course optimization and RNase A validation experiments provide strong evidence for the specificity of stalling at the SecM C-terminus. The methodological details are appropriate and clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Mass spectrometry revealed a 2:1 ratio of Pro to Gly C-termini in nascent peptides. The 36% fraction of rotated ribosomes (SecM-Pro-RNC) with increased lifetime of A/P*, P/E intermediate tRNA states suggests this structure represents a stalled form trapped in an intermediate translocational state, as the rotated state normally reflects a high-energy state requiring stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mass spectrometry data (Figure 1\u2014figure supplement 2) directly supports the 2:1 ratio. The interpretation of the rotated state as a stalled intermediate is well-reasoned based on comparison with normal elongation cycles (Fischer et al., 2010; Kim et al., 2007; Munro et al., 2007) where rotated ribosomes are much less abundant. The high-energy nature of the rotated state is supported by appropriate citations (Frank et al., 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "SecM is a 170-amino acid secreted protein encoded by the 5'-end of the bicistronic secM-secA mRNA that regulates the SecA-dependent secretion pathway in E. coli. The 17-amino acid stalling sequence (150FSTPVWISQAQGIRAGP166) is sufficient to induce stalling, with R163, G165, and P166 being essential and five other residues (F150, W155, I156, G161, I162) being important for stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background information is well-established in the literature and appropriately cited. The claims accurately represent prior knowledge about SecM structure, function, and the critical residues for stalling based on mutational studies (Nakatogawa and Ito, 2002; Yap and Bernstein, 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Previous FRET and biochemical studies established that SecM stalling is a dynamic process involving reduced elongation rates from G165 to 4-5 codons after P166, with increased lifetimes for both unrotated and rotated ribosomes. SecM-stalled ribosomes are stable over an hour and resistant to puromycin-mediated peptidyl-tRNA hydrolysis. Stalling can occur at either G165 or P166, with G165 being the first predominant site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work (primarily Tsai et al., 2014; Muto et al., 2006) and provide important context for interpreting the structural data. The citations are appropriate and the claims are consistent with the referenced studies.",
+    "result_type": "MINOR"
+  }
+]

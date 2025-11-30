@@ -1,0 +1,2319 @@
+{
+  "submission": {
+    "id": "dd81fb84-31aa-4a36-bc26-3e2063e55163",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:22:06.263044Z",
+    "updated_at": "2025-11-29T22:22:06.263044Z"
+  },
+  "content": [
+    {
+      "id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "submission_id": "dd81fb84-31aa-4a36-bc26-3e2063e55163",
+      "content_type": "manuscript",
+      "content_text": "# Dendritic mitochondria reach stable positions during circuit development\n\n## Authors\n\n- Michelle C Faits<sup>1</sup>\n- Chunmeng Zhang<sup>1</sup>\n- Florentina Soto<sup>1</sup>\n- Daniel Kerschensteiner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Ophthalmology and Visual Sciences Washington University School of Medicine Saint Louis United States\n2. Graduate Program in Developmental, Regenerative and Stem Cell Biology Washington University School of Medicine St. Louis United States\n3. Department of Neuroscience Washington University School of Medicine Saint Louis United States\n4. Department of Biomedical Engineering Washington University School of Medicine Saint Louis United States\n5. Hope Center for Neurological Disorders Washington University School of Medicine Saint Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMitochondria move throughout neuronal dendrites and localize to sites of energy demand. The prevailing view of dendritic mitochondria as highly motile organelles whose distribution is continually adjusted by neuronal activity via Ca2+-dependent arrests is based on observations in cultured neurons exposed to artificial stimuli. Here, we analyze the movements of mitochondria in ganglion cell dendrites in the intact retina. We find that whereas during development 30% of mitochondria are motile at any time, as dendrites mature, mitochondria all but stop moving and localize stably to synapses and branch points. Neither spontaneous nor sensory-evoked activity and Ca2+ transients alter motility of dendritic mitochondria; and pathological hyperactivity in a mouse model of retinal degeneration elevates rather than reduces motility. Thus, our findings indicate that dendritic mitochondria reach stable positions during a critical developmental period of high motility, and challenge current views about the role of activity in regulating mitochondrial transport in dendrites.\n\n## Introduction\n\nMitochondria provide energy in the form of ATP and phosphocreatine, and participate in Ca2+ signaling. In neurons, mitochondrial biosynthesis occurs in the soma, but sites of energy use and Ca2+ influx are dispersed across axonal and dendritic arbors (Davis and Clayton, 1996). To meet these distributed demands, neuronal mitochondria are transported throughout axons and dendrites along microtubule tracks (Ehlers, 2013; Lin and Sheng, 2015). A number of recent studies have explored the dynamics and function of axonal mitochondria, including detailed analyses of mitochondrial movements in peripheral and central axons in vivo\u00a0(Breckwoldt et al., 2014; Misgeld et al., 2007; Plucinska et al., 2012; Takihara et al., 2015). By comparison, dendritic mitochondria are less explored and their dynamics have not been examined in intact neural circuits.\n\nMost of the energy in dendrites is consumed at synapses (Attwell and Laughlin, 2001; Howarth et al., 2012), which are also a primary site of Ca2+ influx (Augustine et al., 2003; Grienberger and Konnerth, 2012). Dendritic mitochondria have been shown to localize to synapses in several systems and appear to contribute to their formation and plasticity (Chang et al., 2006; Ishihara et al., 2009; Li et al., 2010; Li et al., 2004). Increased ER complexity and Golgi outposts at dendritic branch points support protein and lipid biosynthesis, and secretory trafficking (Cui-Wang et al., 2012; Ehlers, 2013; Horton et al., 2005; Ye et al., 2007). In addition, branch points are hotspots for Ca2+ signals in some dendrites (Fitzpatrick et al., 2009; Larkum et al., 2003). Mitochondria are required for dendrites to establish normal branching patterns (Fukumitsu et al., 2015; Kimura and Murakami, 2014), but whether mitochondria localize to branch points is not clear. Moreover, when associations between mitochondria and synapses or branch points emerge during development has not been examined. Finally, the prevailing view of dendritic mitochondria as being highly motile is based on observations of cultured neurons isolated from embryonic tissue. Whether this view holds true for neurons in their native environments, and how mitochondrial motility in dendrites changes as branching and connectivity patterns stabilize during circuit maturation remains unknown.\n\nNeuronal activity is thought to control the movements of dendritic mitochondria. In particular, increases in intracellular Ca2+ were shown to uncouple mitochondria from motor proteins via the Ca2+-dependent adaptor protein Miro1 (MacAskill et al., 2009; Wang and Schwarz, 2009). However, the evidence supporting a leading role for activity in dendritic mitochondrial transport was obtained from cultured neurons exposed to artificial stimuli (e.g. high external K+), raising the question whether physiologically occurring activity patterns in intact circuits exert a similar influence.\n\nHere, we analyze how development and neuronal activity shape the distribution and dynamics of mitochondria in dendrites of ganglion cells in the intact retina. We find that mitochondrial density in retinal ganglion cell (RGC) dendrites reaches near-mature levels before most synapses are formed. In the adult retina, mitochondria are enriched at synapses and branch points of RGC dendrites. Mitochondria localize to synapses early, whereas their accumulation at branch points occurs gradually during circuit development. The motility of mitochondria changes fundamentally across development. During the period of dendrite growth and synaptogenesis approximately 30% of mitochondria are in motion at any time. By contrast, we observed no movements of dendritic mitochondria in mature circuits. This drastic decline in motility is cargo-specific, as peroxisomes remain motile in mature RGC dendrites. Using simultaneous two-photon imaging of mitochondrial movements and intracellular Ca2+, we find that although elevation of external K+ reduces motility of dendritic mitochondria in the retina as it does in cultured neurons, neither spontaneous waves of activity during development, nor sensory-evoked activity at maturity alter the motility of dendritic mitochondria in RGCs. Finally, pathologically elevated RGC activity, a common feature of retinal degeneration, restores motility in mature retinas to developmental levels.\n\n## Results\n\nWe used RGCs to study how development and neuronal activity influence the distribution and dynamics of dendritic mitochondria. In the mature retina, photoreceptors translate changes in photon flux into changes in glutamate release (Figure 1), and bipolar cells (BCs) relay this signal from the outer to the inner retina where they provide excitatory input to the dendrites of RGCs (Euler et al., 2014; Masland, 2001). In mice, synapses between BCs and RGCs begin to form around postnatal day 7 (P7), and connectivity patterns reach maturity around P21 (Fisher, 1979; Johnson et al., 2003; Morgan et al., 2008). Dendrite development leads synaptogenesis, and arborization patterns become set by P15 (Kim et al., 2010; Morgan et al., 2008; Soto et al., 2012). During development, RGCs exhibit spontaneous waves of activity, which propagate through the early visual system and shape its synaptic organization (Ackman et al., 2012; Kerschensteiner, 2013; Meister et al., 1991). Retinal waves stop around the time of eye opening (P14-15 in mice) when sensory-evoked inputs begin to drive RGC activity (Demas et al., 2003).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig1-v2.jpg)\n\n**Figure 1.:** Top: Illustration of the five classes of neurons in the mammalian retina. Photoreceptors - rods and cones indicated by the shape of their outer segments - translate changes in photon flux into changes in glutamate release. Horizontal cells provide feedback to photoreceptor terminals, whereas bipolar cells (BCs) relay photoreceptor signals from the outer to the inner retina where they provide excitatory input to a diverse class of inhibitory interneurons called amacrine cells and to retinal ganglion cells (RGCs), the output neurons of the eye. Bottom: Timeline of retinal development from birth (postnatal day 0) to circuit maturity (P21).\n\nTo analyze the distribution and dynamics of mitochondria in RGC dendrites, we performed confocal and two-photon imaging in flat-mounted explants, which leave the circuitry of the retina intact (Williams et al., 2013). We have previously shown that BC-RGC synaptogenesis in retinal flat mounts matches in vivo rates (Kerschensteiner et al., 2009; Morgan et al., 2011; Soto et al., 2012). Moreover, during development, retinal circuits in this preparation generate spontaneous waves of activity with patterns similar to those observed in vivo (Ackman et al., 2012; Demas et al., 2003); and at maturity light, responses of RGCs in retinal explants closely resemble those recorded in vivo (Farrow et al., 2013; Grimes et al., 2015; Sagdullaev and McCall, 2005). Retinal explants thus allow us to examine the influence of development, and spontaneous and sensory-evoked physiologic activity patterns on dendritic mitochondria.\n\n### Development of the distribution of dendritic mitochondria\n\nTo analyze the distribution of dendritic mitochondria relative to sites of high energy demand and Ca2+ signaling, and assess its changes across development, we biolistically labeled RGCs with mitochondrially targeted yellow fluorescent protein (mtYFP), the postsynaptic density protein 95 fused to CFP (PSD95-CFP), and a red cytosolic fluorophore (tdTomato). Others and we previously showed that PSD95-CFP localizes specifically to BC synapses on RGC dendrites (i.e. excitatory synapses) (Jakobs et al., 2008; Kerschensteiner et al., 2009; Morgan et al., 2008). We labeled RGCs at three different ages (Figure 2A\u2013C): P9 (early synaptogenesis, mid dendritogenesis, spontaneous retinal waves), P15 (mid synaptogenesis, mature dendrites, transition from retinal waves to light-evoked activity), and P21 (mature synapses, mature dendrites, light-evoked activity). We found that mitochondria enter dendrites to near-mature levels before most synapses are formed (Figure 2D,E). Similar to other systems, mitochondria in RGC dendrites are found closer to synapses than expected by chance (Figure 2F). This synaptic localization of mitochondria was apparent from the earliest time point examined (P9). In addition, at maturity, mitochondria are enriched >15-fold at branch points. Unlike their localization to synapses, the enrichment of mitochondria at branch points emerges gradually during development (Figure 2G). Thus, mitochondria enter RGC dendrites during early development, associate with synapses as circuits go through the trial-and-error process of establishing precise connections, and progressively accumulate at branch points even after mature arborization patterns are established.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Representative RGCs expressing mtYFP and PSD95-CFP in P9 (A), P15 (B), and P21 (C) retinas. Top panels show maximum intensity projections (MIPs) through confocal image stacks and bottom panels show MIPs of excerpts of the same stacks at higher magnification. (D) Density of mitochondria in RGC dendrites expressed as a volumetric fraction (see 'Materials and methods') across development. (E) Density of synapses along RGC dendrites given per length of dendrite based on skeletonization of the respective arbors (see 'Materials and methods') across development. (F) Scatter plots comparing the average nearest neighbor distance from synapses to mitochondria (NND-observed) to the mean average NND obtained from Monte Carlo simulations in which the positions of synapses along dendrites were randomized (NND-random). Dots represent individual cells and circles (error\u00a0bars) indicate the mean (\u00b1 SEM) at the different ages examined. (G) Normalized mitochondrial density plotted as a function of distance from dendritic branch points at P9 (left), P15 (middle), and P21 (right). Solid lines (shaded areas) indicate the mean (\u00b1 SEM) across a number of RGCs (P9 n = 6, P15, n = 6, P21, n = 8).\u00a0mtYFP,\u00a0mitochondrially targeted yellow fluorescent protein;\u00a0RGC,\u00a0retinal ganglion cell.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11583/elife-11583-media1.mp4.jpg)\n\n**Video 1.:** Time-lapse confocal recording of RGC dendrites expressing mtYFP at P9 (top panel), P15 (center panel), and P21 (bottom panel). Scale bar: 5 \u03bcm. 0.9 Hz time-lapse, playback speed = 15 frames per second.\u00a0mtYFP,\u00a0mitochondrially targeted yellow fluorescent protein;\u00a0RGC,\u00a0retinal ganglion cell.\n\n### Cargo-specific developmental decline in mitochondrial motility\n\nTo study the dynamics of dendritic mitochondria across development, we performed time-lapse imaging experiments (0.9 frames per second or fps) on RGCs biolistically or transgenically (Thy1-mtCFP-P) labeled with mtYFP and mtCFP, respectively (Misgeld et al., 2007; Williams et al., 2013). Because mitochondria co-localize with synapses even at ages when synapse turnover is high (Figure 2F), we expected mitochondria during development to be motile, allowing them to adjust to changing patterns of connections. Indeed, similar to studies on cultured neurons, we found that at P9 approximately 30% of mitochondria moved at least once per minute (i.e. motile fraction) (Figure 3A,B and Video 1). However, subsequently, the motile fraction of mitochondria in RGC dendrites decreases steeply, falling to approximately 15% by P15, and at P21, we observed no mitochondrial movements in dendrites of 7 RGCs imaged in four retinas for 35 min. This drastic decline in motility is specific to mitochondria and does not reflect a general transition in dendritic trafficking, as SKL-GFP-labeled peroxisomes (Monosov et al., 1996) in RGC dendrites remain motile at P21 (Figure 3C,D) and beyond (data not shown). Interestingly, the movement patterns - including duration of runs, speed during uninterrupted motion, and duration of short pauses - of motile mitochondria at P15 were not significantly different from those observed at P9 (Figure 3E\u2013G). Thus, as circuits mature dendritic mitochondria undergo a cargo-specific transition from a partially motile to a stationary phase, in which they preferentially localize to synapses and branch points.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig3-v2.jpg)\n\n**Figure 3.:** (A) Kymographs of representative time-lapse imaging series of mitochondria (mtYFP, 0.9 fps, A) at P9 (left), P15 (middle), and P21 (right). Top panels show still frames at t = 0s of the branch segments depicted in the kymographs in the bottom panels. (B) Summary data of the motile fraction of mitochondria across development (P9 n = 10 RGCs, P15 n = 9 RGCs, P21 n = 7 RGCs). (C,\u00a0D) Analogous to A (C) and B (D) but for time-lapse imaging of peroxisomes labeled with SKL-GFP (P9 n = 11 RGCs, P15 n = 10 RGCs, P21 n = 12 RGCs). (E\u2013G) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) duration of uninterrupted runs (E), duration of pauses (F), and speed during uninterrupted motion (G) for mitochondria at P9 and P15 (P9 n = 65 mitochondria, P15 n = 32 mitochondria). See also Video 1.\u00a0mtYFP,\u00a0mitochondrially targeted yellow fluorescent protein;\u00a0RGCs,\u00a0retinal ganglion cells.\n\n![Video 2.](https://cdn.elifesciences.org/articles/11583/elife-11583-media2.mp4.jpg)\n\n**Video 2.:** Simultaneous time-lapse two-photon recording of GCaMP6 and mtDsRed expression in P9 RGC dendrites. Top panel shows Ca2+ events in a section of dendrite. Center panel shows mtDsRed signal in the same dendritic branch. Bottom panel shows dots overlaid at each mitochondrion position tracked for mitochondria in the center panel. In frames in which a mitochondrion is moving, its dot is green; dots are red for stationary mitochondria. Scale bar: 5 \u03bcm. 0.9 Hz time-lapse, playback speed = 15 frames per second.\u00a0RGC,\u00a0retinal ganglion cell.\n\n### Patterned spontaneous activity and dendritic mitochondria during development\n\nNeuronal activity has been proposed to control the motility of dendritic mitochondria. In particular, increases in intracellular Ca2+ accompanying neuronal activation are thought to uncouple mitochondria from microtubule motors, causing acute movement arrests (MacAskill et al., 2009; Wang and Schwarz, 2009; Yi et al., 2004). The evidence supporting this model comes from studies of cultured neurons exposed to artificial stimuli, raising the question whether physiologically occurring activity patterns and Ca2+ transients similarly control the movements of dendritic mitochondria in intact circuits.\n\nThe developing retina spontaneously generates propagating waves of RGC activity. In retinal waves, excitatory input (P0 \u2013 P10: cholinergic, P10 \u2013 P15: glutamatergic) elicits bursts of action potentials in RGCs (Kerschensteiner, 2013). As waves propagate across the retina, they synchronize the firing of neighboring RGCs. We first recorded ensembles of RGCs at P9 on multielectrode arrays (MEAs, Figure 4A), confirming that biolistically labeled explants generate waves of activity with similar frequency and correlation structure to those observed in unlabeled preparations and in vivo (Figure 4C, D) (Ackman et al., 2012; Demas et al., 2003). We then performed two-photon Ca2+ imaging of RGCs biolistically labeled with GCaMP6s. At P9, nearby RGCs (<200 \u03bcm between cell bodies) exhibited synchronous global Ca2+ transients across their dendritic arbors. The frequency and correlation of these transients was indistinguishable from that of spike bursts in MEA recordings (Figure 4B\u2013D), indicating that global Ca2+ transients in RGC dendrites accompany retinal waves (Lohmann et al., 2002). To test whether this physiologically occurring activity pattern regulates the motility of mitochondria in developing dendrites, we co-labeled RGCs with GCaMP6s and mtDsRed. Simultaneous imaging of dendritic Ca2+ signals and mitochondrial movements (Figure 4E), revealed that wave-associated Ca2+ transients do not alter mitochondrial motility in RGC dendrites: neither the instantaneous motile fraction (Figure 4H and Video 2) nor the average speed of moving mitochondria (\u25b3 speed: 0.132 \u00b1 0.067 \u03bcm/s, n = 66 mitochondria, p>0.1) change following a dendritic Ca2+ transient.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig4-v2.jpg)\n\n**Figure 4.:** (A) Raster plot of representative spike trains of eight neighboring RGCs recorded in a biolistically labeled retinal explant on an MEA at P9. (B) Representative \u25b3F/F traces of GCaMP6s signals recorded from three neighboring RGCs by two-photon imaging. (C) Cross-correlations of firing rates (top panel) and dendritic Ca2+ transients (bottom panel) of neighboring RGCs (<200 \u03bcm between recording sites on MEA, <200 \u03bcm between cell bodies in Ca2+ imaging) (MEA recordings n = 30 pairs, Ca2+ imaging n = 11 pairs). (D) Average frequencies of waves of correlated activity on MEA (black bar) and global Ca2+ signals in RGC dendrites observed by two-photon imaging (green bar) in biolistically labeled retinal explants at P9 (MEA n = 6 retinas, Ca2+ imaging n = 22 retinas, p>0.6). (E\u2013G) GCaMP6s and mtDsRed signals during simultaneous fast (0.9 fps) time-lapse two-photon imaging. Top: still frames of mtDsRed channel at t = 0s. Left panels: \u0394F/F traces aligned with time plotted in kymograph. \u0394F/F traces were calculated based on the average GCaMP6s intensity in the dendrite segment shown above the kymograph. Center panels: kymographs of mtDsRed signal. Green overlay indicates the timing Ca2+ transients. Right panels: black lines represent schematized depictions of mitochondrial runs in the kymographs. (F) Break between top and bottom panels represents 10 min between pre-treatment (top) and 30 mM K+ application (bottom). (G) 5\u00a0\u00b5M DH\u03b2E treatment. (H) Top: Plot of the instantaneous mitochondrial motility as a function of time relative to a Ca2+ transient (n = 134 mitochondria, 10 RGCs). Bottom: Normalized Ca2+ imaging trace as a function of time (aligned on t = 0 as the time of the Ca2+ transient). Lines (shaded areas) represent the mean (\u00b1 SEM). (I,\u00a0J) Paired plots of RGCs before and after 30 mM K+ (I) or Dh\u03b2E (J) application. In the left panel of I the percentage of time above threshold measured was measured as percentage of frames in which the average GCaMP6s intensity within the frame was more than 2 SD above mean intensity of across the whole recording. The left panel of J show the frequency of Ca2+ transients. Right panels of I and J show changes in mitochondrial motility between pre-treatment and treatment portions of the recordings (30 mM K+ n = 8 RGCs, Dh\u03b2E n = 7 RGCs).\u00a0RGCs,\u00a0retinal ganglion cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Western blot showing Miro1 protein expression levels in whole retinal lysate at P6 \u2013 P21. Bottom panel shows \u03b2-actin loading control. (B) Bars indicate the intensities of the western blot signal relative to \u03b2-actin intensity and normalized to P12 intensity level. (C) Kymographs of representative time-lapse imaging series of mitochondria (mtYFP, 0.9 fps) in P9 RGCs overexpressing Miro1 (left) or expressing mtYFP alone (right). Top panels show still frames at t = 0s of the branch segments depicted in the kymographs in the bottom panels. (D) Summary data of the motile fraction of mitochondria in RGCs overexpressing Miro1, a mutant form of Miro1 unable to bind Ca2+ (MiroKK), or mtYFP alone (control) (Miro1 n = 9 RGCs, MiroKK n = 4, control n = 6).\u00a0fps, frames per second; mtYFP, mitochondrially targeted yellow fluorescent protein;\u00a0RGC,\u00a0retinal ganglion cell.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) frequency of global and local Ca2+ events in P9 RGCs (global n = 32 RGCs, local n = 7). (B) Paired plot of average mitochondrial speed in the 5 s before (Pre) and 5 s after (Post) a local Ca2+ event within a moving mitochondrion\u2019s path (n = 7 mitochondria). (C) Representative images of a P9 RGC dendritic branch during global and local signals. Heat maps of \u0394F/F intensities are overlaid onto a maximum intensity projection of the GCaMP6 signal in all three panels. The top panel is a representative image of the baseline GCaMP6 intensity; the middle panel is a global Ca2+ event and the bottom panel shows a local Ca2+ transient. Scale bar: 5 \u03bcm.\u00a0RGC,\u00a0retinal ganglion cell.\n\nIn cultured neurons, Ca2+ elevations were shown to stop moving mitochondria via the adaptor protein Miro1, which uncouples mitochondria from kinesin motors upon Ca2+ binding. Miro1 is readily detected in Western blots of the retina from at least P6 onwards and its expression reaches mature levels by P15 (Figure 4\u2014figure supplement 1). In addition, we found that biolistic delivery of wild-type Miro1 or of a Ca2+-binding-deficient mutant (Miro1KK) does not alter the motility of dendritic mitochondria. Thus, a lack of Miro1 expression or function is unlikely to account for the lack of effect of physiologic activity patterns on the movements of mitochondria in RGC dendrites.\n\nSeveral previous studies raised external K+ concentrations to elicit changes in mitochondrial motility. We therefore tested the effects of this manipulation in the developing retina. Elevating external K+ to 30 mM tonically increased the concentration of Ca2+ in RGC dendrites and, similar to observations in cultured neurons, decreased the motile fraction of mitochondria (Figure 4F, I and Video 3). By contrast, blocking cholinergic retinal waves and the accompanying Ca2+ transients with the nicotinic antagonist Dh\u03b2E did not affect mitochondrial motility in RGC dendrites (Figure 4G, J and Video 3).\n\n![Video 3.](https://cdn.elifesciences.org/articles/11583/elife-11583-media3.mp4.jpg)\n\n**Video 3.:** (A) Time-lapse two-photon recording of GCaMP6 signal in a P9 RGC undergoing spontaneous Ca2+ events while participating in retinal waves. (B) A P9 RGC before and during wash-in of 30 mM High K+ mACSF, exhibiting a large sustained increase in GCaMP6 intensity. (C) A P9 RGC before and during wash-in of 5 \u03bcM Dh\u03b2E, exhibiting an abolition of spontaneous wave activity. Scale bars: 5 \u03bcm. 0.9 Hz time-lapse, playback speed = 20 frames per second.\u00a0RGC,\u00a0retinal ganglion cell.\n\n![Video 4.](https://cdn.elifesciences.org/articles/11583/elife-11583-media4.mp4.jpg)\n\n**Video 4.:** Time-lapse confocal recording of RGC dendrites expressing mtYFP in a P21 WT dendrite (top panel) and a P21 Crx-/- dendrite (bottom panel). Scale bars: 5 \u03bcm. 0.9 Hz time-lapse, playback speed = 15 frames per second.\n\nA subset of RGCs (21 of 59 cells) exhibited local dendritic Ca2+ transients at a similar frequency as global signals (Figure 4\u2014figure supplement 2, local: 0.0102 \u00b1 0.0055 events / s, n = 7 cells, global: 0.0141 \u00b1 0.0022 events / s, n = 32 cells, p>0.4). Local transients have previously been observed in RGC dendrites in the developing chick retina, where they are caused by Ca2+ release from internal stores (Lohmann et al., 2002). Like global signals, local Ca2+ transients in developing mouse RGC dendrites do not appear to alter mitochondrial motility (Figure 4\u2014figure supplement 2).\n\nTogether these results suggest that physiologically occurring activity patterns and Ca2+ transients in the developing retina do not regulate mitochondrial motility in RGC dendrites, irrespective of Miro1 expression, and that tonic elevations of Ca2+ upon application of high K+ solution may engage different mechanisms to physiological transients.\n\n### Sensory-evoked activity and dendritic mitochondria at maturity\n\nAs the retina matures, waves of spontaneous activity subside and light-evoked inputs begin to drive RGC activity. We wanted to test whether sensory-evoked activity affects the distribution and/or movements of mitochondria in RGC dendrites at maturity. Because mitochondrial movements are rare at P21, we acquired z-stacks of RGC dendrites in Thy1-mtCFP-P retinas every 15\u00a0min on a two-photon microscope. In the intervals between image acquisitions, retinas were either kept in darkness (P21 \u2013 no stim) or presented a full-field white noise stimulus with alternating contrast levels (P21 \u2013 stim, see 'Materials and\u00a0methods'). MEA recordings confirmed that this stimulus robustly elevates the firing rates of RGCs (Figure 5A\u2013C). In darkness, mitochondria rarely changed position even across two imaging intervals at P21, whereas approximately half of them were displaced over the same time at P9 (Figure 5D, E). Light stimulation did not alter the stability of mitochondria at P21 and very few changed their position in the imaging intervals (Figure 5D, E). Thus, similar to our observations for spontaneous activity in developing circuits, sensory-evoked activity does not appear to regulate the motility of dendritic mitochondria in the mature retina.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig5-v2.jpg)\n\n**Figure 5.:** (A,\u00a0B) Spike raster plots of eight representative RGCs recorded in darkness (A) and during presentation of a full-field white noise stimulus (B, see 'Materials and methods'). (C) Bars (error\u00a0bars) indicate the mean (\u00b1 SEM) firing rates of RGCs (n = 334 RGCs, 3 retinas, p<10\u201326). (D) Representative RGCs expressing mtCFP at t = 0 min (top panels), t = 30 min (middle panels) after being exposed to white noise stimulus (right panels) or kept in darkness (left and center panels). Bottom panels show merged images of t = 0 and t = 30 min. (E)\u00a0Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) of\u00a0% mitochondria displaced between t = 0 min and t = 30 min (P9 \u2013 no stim. n = 5 RGCs, P21 \u2013 no stim. n = 5 RGCs, P21 \u2013 stim n = 5 RGCs).\u00a0RGCs,\u00a0retinal ganglion cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Kymographs of representative time-lapse imaging series of mitochondria (mtDsRed, 0.9 fps) in a P9 RGC before (left) and after Oligomycin/Antimycin A application. Top panels show still frames at t = 0s of the branch segments depicted in the kymographs in the bottom panels. (B) Paired plots of RGC mitochondrial motility before and after 30 min of 10 \u00b5M Oligomycin/ 4 \u00b5M Antimycin A application at P9 (n = 5 RGCs, p>0.2). (C) Representative images of P21 RGCs expressing mtDsRed at t = 0 min (top panels), t = 30 min (middle panels) in the presence (right panels) or absence (left panels) of Oligomycin/Antimycin A. Bottom panels show merged images of t = 0 and t = 30 min. (D) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) of\u00a0% mitochondria displaced between t = 0 min and t = 30 min (n = 4 RGCs, p>0.4).\u00a0fps, frames per second; RGC, retinal ganglion cell.\n\nToxins that depolarize mitochondria and inhibit their ability to synthetize ATP have been reported to increase, decrease or not change mitochondrial motility in axons and dendrites of different neuron types. To test how toxin-mediated stress affects mitochondrial transport in RGC dendrites, we applied a mixture of Antimycin A (a complex III inhibitor) and Oligomycin (an ATP synthase inhibitor) to P9 and P21 retinas. Fast (0.9 fps) and long-interval (15\u00a0min) time-lapse imaging revealed no significant changes in the motility of mitochondria in developing or mature RGC dendrites (Figure 5\u2014figure supplement 1).\n\n### Pathological hyperactivity and dendritic mitochondria in retinal degeneration\n\nSpontaneous oscillatory hyperactivity of RGCs is a common feature of retinal degenerations and originates in presynaptic circuits (Borowska et al., 2011; Margolis et al., 2008; Soto and Kerschensteiner, 2015; Soto et al., 2012; Stasheff, 2008; Yee et al., 2012). In Crx-/- mice, a model of Leber congenital amaurosis, retinal waves are preserved. But, from P15 on RGCs exhibit rhythmic hyperactivity as a result of enhanced input from BCs (Soto et al., 2012). We previously showed that this elevated activity prolongs and enhances BC-RGC synaptogenesis (Soto et al., 2012). Given the correlation between synaptic development and mitochondrial motility in wild-type mice (Figures 2 and 3), we first confirmed RGC activity was elevated in explants from P21 Crx-/- mice (Figure 6A\u2013C), and then examined mitochondrial transport in RGC dendrites at this age. We found that dendritic mitochondria in Crx-/- retinas remained motile at P21, at a level intermediate to those at P9 and P15 in wild-type mice (Figure 6D,E and Video 4). Moreover, the movement patterns of motile mitochondria at P21 in Crx-/- mice except for slightly longer pauses were indistinguishable from those in wild-type at P9 and P15 (Figure 6F\u2013H).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11583/elife-11583-fig6-v2.jpg)\n\n**Figure 6.:** (A,\u00a0B) Spike raster plots of eight representative RGCs recorded from P21 WT (A) and from P21 Crx-/- retinas (B). (C) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) firing rates of WT and Crx-/- RGCs (WT n = 100 RGCs, 3 retinas, Crx-/- n = 235 RGCs, 3 retinas, p<10\u20138). (D) Kymographs of representative time-lapse series of a P21 WT RGC (left panels) and Crx-/- RGC (right panels). (E) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) motile fraction of mitochondria in P21 WT and Crx-/- dendrites (P21 WT n = 7 RGCs, Crx-/- n = 6 RGCs). (FH) Bars (error\u00a0bars) indicating the mean (\u00b1 SEM) mitochondrial speed during uninterrupted motion (F), duration of uninterrupted runs (G), and duration of pauses (H) for mitochondria in P9 \u2013 15 WT and Crx-/- dendrites (Crx-/- n = 30 mitochondria, pooled WT P9 and P15 n = 97 mitochondria).\u00a0RGC,\u00a0retinal ganglion cell.\n\n## Discussion\n\nThe importance of mitochondrial dynamics and distribution to neuronal function is highlighted by the fact that mutations that alter the fission-fusion balance and transport of mitochondria cause neurodegenerative diseases (Chan, 2006). Among the neurons affected by such diseases are RGCs, which degenerate in autosomal dominant optic atrophy (ADOA), the most common hereditary optic neuropathy (Olichon et al., 2006; Yu-Wai-Man et al., 2011). A majority of ADOA patients harbors mutations in the OPA1 gene, which encodes a GTPase involved in mitochondrial fusion (Olichon et al., 2006; Yu-Wai-Man et al., 2011). Changes in fission-fusion balance alter the transport and distribution of mitochondria in neurons (Chan, 2006).\n\nIn axons, mitochondrial transport and distribution have been explored in detail, including recent in vivo imaging studies (Breckwoldt et al., 2014; Misgeld et al., 2007; Plucinska et al., 2012; Takihara et al., 2015), and the contributions of mitochondria to axonal branching and synaptic transmission are relatively well understood (Courchet et al., 2013; Medler and Gleason, 2002; Spillane et al., 2013; Verstreken et al., 2005; Werth and Thayer, 1994). By comparison, dendritic mitochondria have been studied less, and many aspects of their transport, distribution, and function, particularly in intact circuits, remain obscure.\n\nWe find that during development mitochondria enter RGC dendrites to near-mature levels before branching patterns are established (Figure 2). Similar observations were recently made for dendrites of cerebellar Purkinje cells (Fukumitsu et al., 2015), and together with experiments that block export of mitochondria into dendrites support the notion that local mitochondria are required for the formation and/or maintenance of dendritic branches (Fukumitsu et al., 2015; Ishihara et al., 2009). We find that during development, dendritic mitochondria gradually become enriched (>15-fold) near branch points (Figure 2). These mitochondria likely provide energy for lipid and protein biosynthesis, and secretory trafficking in the complex ER structures and Golgi outposts found at branch points (Cui-Wang et al., 2012; Horton et al., 2005; Ye et al., 2007). Consistent with this idea, ER structures and Golgi outposts at branch points are required for the formation and maintenance of dendritic branches (Cui-Wang et al., 2012; Horton et al., 2005; Ye et al., 2007), and the branching phenotypes of neurons lacking dendritic mitochondria can be rescued by exogenous supply of ATP-phosphocreatine (Fukumitsu et al., 2015; Li et al., 2004).\n\nMitochondria in RGC dendrites localize to excitatory synapses (Figure 2). Similar observations have been made on cultured neurons, although the extent of co-localization varied between studies (Chang et al., 2006; Li et al., 2004). Local mitochondria are thought to participate in the formation of synapses and their plasticity (Ishihara et al., 2009; Li et al., 2010; Li et al., 2004). Experiments in cultured hippocampal neurons suggested that enhancing the dendritic mitochondria content is sufficient to increase the number of synapses (Li et al., 2004). As mitochondrial density in RGCs dendrites reaches near-mature levels before most synapses are formed, it seems unlikely that mitochondria limit the rate of synaptogenesis during development of this circuit.\n\nMitochondrial transport in RGC dendrites is well described by a state diagram recently applied to axonal transport, in which mitochondria exist in a motile or a stationary state (Obashi and Okabe, 2013). Motile mitochondria alternate between short runs and short pauses (Figure 3) and frequently switch the direction of their movements (data not shown). By contrast, stationary mitochondria remain in place for long periods of time. Unlike transitions between runs and pauses in the motile state, transitions between motile and stationary state are rare (Obashi and Okabe, 2013). Our results show that as circuits mature, dendritic mitochondria undergo a nearly complete shift to the stationary state. Thus, whereas approximately 30% of mitochondria move at any time in P9 dendrites, we observed no mitochondrial movements at P21 during fast time-lapse imaging (0.9 fps, Figure 3) and displacements were rare even during long imaging intervals (15\u201330\u2009min, Figure 5). These rare displacements may be associated with mitochondrial fission or support mitochondrial fusion or mitophagy (Chen and Chan, 2009; Maday and Holzbaur, 2014). Disruption of mitochondrial fusion in a mouse model of ADOA (Opa1+/- mice) results in shortened mitochondria, which accumulate in proximal RGC dendrites (Williams et al., 2012). As Opa1+/- mice age (>1 yr), the number of excitatory synapses and branches of RGC dendrites declines, highlighting the importance of mitochondrial fusion for dendritic and synaptic integrity (Williams et al., 2010; Williams et al., 2012).\n\nIn isolated cortical neurons, a modest decline in mitochondrial motility was observed with increasing time in culture (Chang and Reynolds, 2006). In the intact retina, we discover a drastic developmental shift (motile to stationary) in dendritic mitochondria. Importantly, this shift is cargo-specific, as peroxisomes keep moving in dendrites of mature RGCs (Figure 3), and compartment-specific, as mitochondria remain motile in RGC axons (data not shown) (Takihara et al., 2015). Together with results on dendritic localization (Figure 2), these observations reveal that mitochondria form stable associations with synapses and branch points in RGC dendrites, and suggest that the prevailing view of mitochondria as highly motile organelles applies to developing but not to mature dendrites.\n\nUsing simultaneous two-photon imaging of Ca2+ and mitochondria in the intact retina, we find that neither patterned spontaneous activity during development (Figure 4) nor sensory-evoked activity at maturity (Figure 5) regulate the motility of mitochondria in RGC dendrites. These results are in contrast to studies of cultured neurons, which suggest that neuronal activity controls motility of dendritic mitochondria via the adaptor protein Miro1 (Li et al., 2004; MacAskill et al., 2009; Rintoul et al., 2003). We confirmed that Miro1 is expressed in the developing and mature retina and showed that overexpression of wild-type Miro1 or a mutant unable to bind Ca2+ (Fransson et al., 2006) do not affect mitochondrial motility in RGC dendrites. Thus, it seems unlikely that differences in Miro1 expression or function account for the discrepant results on the influence of activity. Instead, we suggest that differences between activity patterns physiologically occurring in intact circuits and artificial stimuli used to elicit effects on mitochondrial motility in culture may be a contributing factor. In support of this notion, we find that elevation of external K+ reduces mitochondrial motility in RGC dendrites (Figure 4) as it does in cultured neurons (Li et al., 2004), but elicits tonic rises in intracellular Ca2+ not observed during physiologic activity.\n\nIn a mouse models of retinal degeneration, circuits in the inner retina exhibit spontaneous hyperactivity (Borowska et al., 2011; Margolis et al., 2008; Soto and Kerschensteiner, 2015; Soto et al., 2012; Stasheff, 2008; Yee et al., 2012). In Crx-/- mice, we previously showed that this hyperactivity enhances and prolongs synaptogenesis between BCs and RGCs (Soto et al., 2012). Here, we find that extended synaptogenesis is matched by an increase in mitochondrial motility at P21 in Crx-/- mice. Together with the parallel decline in synapse turnover and mitochondrial motility across normal development (Figure 3) (Kerschensteiner et al., 2009; Morgan et al., 2008), this suggests that the two processes are linked.\n\nIn summary, we discover a cargo- and compartment-specific developmental shift in the transport of mitochondria, which during a critical period of high motility localize to synapses and branch points in RGC dendrites and subsequently maintain stable positions. In addition, using simultaneous two-photon imaging of Ca2+ signals and mitochondrial transport, we find that neither spontaneous nor sensory-evoked activity patterns regulate the motility of dendritic mitochondria in the intact retina. Together these results suggest important amendments to our understanding of dendritic mitochondria.\n\n## Materials and methods\n\n### Animals\n\nAll animals were handled according to a protocol (# 20140095) approved by the Animal Studies Committee of Washington University School of Medicine and performed in compliance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals. Thy1-mtCFP-P (Misgeld et al., 2007) and Crx-/- (Furukawa et al., 1999) mice were backcrossed to C57BL/6J for more than five generations.\n\n### Tissue preparation\n\nEyes were removed from mice deeply anesthetized with CO2. Retinas were dissected from eye cups and prepared as flat mounts on permeable filter paper (Millipore, Sigma-Aldrich, Saint Louis, MO). Tissue was prepared in ice-cold mouse Artificial Cerebrospinal Fluid (mACSF) buffered with HEPES (biolistic experiments, concentrations in mM: 119 NaCl, 2.5 KCl, 2.5 CaCl2, 1.3 MgCl2, 1 NaH2PO4, 11 Glucose, and 20 HEPES - pH adjusted to 7.35\u20137.40 with NaOH) or sodium bicarbonate (light stimulation and MEA, concentrations in mM: 125 NaCl, 2.5 KCl, 1 MgCl2, 1.25 NaH2PO4, 2 CaCl2, 11 Glucose, and 26 NaHCO3). Retinas used for biolistic transfection were incubated at 33\u00b0C in an O2-perfused chamber overnight. Retinas used for light stimulus and MEA experiments were dissected under infrared illumination (excitation wavelength >900 nm) and incubated at 33\u00b0C in a light-tight chamber for approximately 2\u2009hr before experiments. Live retinal tissue was constantly perfused at 1 ml/min with 33\u00b0C mACSF bubbled with O2 (confocal experiments) or 95% O2 / 5% CO2 (two-photon experiments) during light stimulation and imaging. In pharmacologic experiments, 5 \u00b5M Dh\u03b2E (Tocris Bioscience) or 4 \u00b5M Antimycin A (Enzo Life Sciences) and 10 \u00b5M Oligomycin (Sigma-Aldrich) were added to mACSF. To raise extracellular K+ concentrations to 30 mM, KCl was substituted for NaCl in mACSF (concentrations in mM: 97.5 NaCl, 30 KCl, 1 MgCl2, 1.25 NaH2PO4, 2 CaCl2, 11 Glucose, and 26 NaHCO3).\n\n### Biolistic transfection\n\nA gene gun was used to transfect RGCs in the ex vivo retinal flat-mount preparations as described previously (Kerschensteiner et al., 2009; Morgan et al., 2008). Briefly, plasmids encoding fluorescent proteins were precipitated onto 1.6 \u00b5m gold particles (Bio-Rad) and gold particles loaded into Tefzel tubing (Bio-Rad) (Morgan and Kerschensteiner, 2012). Helium pressure at 40 psi was used to deliver gold particles to flat-mounted retinal tissue (Morgan and Kerschensteiner, 2011).\n\n### MEA recordings\n\nMulti-electrode array (MEA) recordings of RGC action potentials were acquired as described previously (Pearson and Kerschensteiner, 2015). Briefly, rectangular pieces of isolated dorsal retinal tissue were mounted onto planar arrays of 252 electrodes (MultiChannelSystems). Spike waveforms recorded at each electrode were used to sort activity into trains of RGC action potentials using principal component analysis (Offline Sorter; Plexon). Correlation coefficients normalized for nonstationary firing rates were calculated as described previously (Kerschensteiner and Wong, 2008).\n\n### Image acquisition and analysis\n\nFixed and live retinas were imaged on Olympus Fv1000 laser scanning confocal and two-photon microscopes using 60x 1.35 NA oil-immersion (fixed retinas), 60x 1.1 NA water-immersion, and 20x 0.95 NA water-immersion objectives (live retinas). Images were processed and analyzed using ImageJ (NIH), Amira (FEI), and software written in MATLAB (MathWorks).\n\nTo analyze mitochondrial and synaptic distributions, retinas were fixed in 4% paraformaldehyde for 30\u00a0min at RT. Synapses were identified and dendrites skeletonized using custom MATLAB software described previously (Kerschensteiner et al., 2009; Morgan et al., 2008). Briefly, the cytosolic tdTomato signal was used to create binary masks (Amira) of RGC dendrites. Dendrites were then skeletonized into 1 \u00b5m-long linked segments based on these masks. Synapses were identified by iterative thresholding of PSD95-CFP signal within the dendritic mask (Kerschensteiner et al., 2009; Morgan et al., 2008). Voxels belonging to mitochondria were similarly identified by local thresholding algorithms on mtYFP signal within the dendritic mask. The density of mitochondria in dendrites was expressed as a volumetric fraction based on the number of voxels assigned to mitochondria and that contained in the dendritic mask. To determine quantitatively whether mitochondria localize to synapses, the observed average nearest neighbor distance (synapse to mitochondrion) for a given RGC was compared to the distribution of average nearest distances obtained in Monte Carlo simulations in which the position synapses of the same cell was randomized along its dendrites. For all cells, the mitochondria were closer to real synapses than their simulated counterparts.\n\nTime-lapse recordings of mitochondrial and peroxisomal motility, and Ca2+ waves were acquired at 0.9 frames per second (fps). Motile fractions were calculated as (motile organelles)/(motile organelles + stationary organelles). We refer to the motile fraction as the fraction moving during 1\u2009min of observation, whereas instantaneous motile fraction is used to denote the fraction moving between consecutive frames in 0.9 fps imaging series. Kymographs were generated using the ImageJ Multiple Kymograph plugin. Mitochondrial speeds and peroxisomal speeds and mitochondrial run and pause durations were calculated using custom MATLAB software and organelle positions tracked manually using the ImageJ MTrack2 plugin.\n\nMitochondrial displacement during light stimulation of P21 retinas was computed using custom MATLAB software. mtCFP signal was masked in Amira to include only mitochondria in contiguous dendritic branches. mtCFP intensity was binarized and MATLAB software was used to identify regions of connected pixels as individual mitochondria. Images at t = 30\u00a0min were subtracted from images at t = 0\u00a0min; mitochondria identified at 0\u00a0min that did not have at least 20% overlap with a mitochondrion at 30\u00a0min was counted as a displaced mitochondrion. Percent displacement was calculated as 100 x (displaced mitochondria)/(total mitochondria). Stimulated retinas were shown light stimulus patterns of alternating high- and low-contrast (mean intensity 5000 R*/rod/s) periods lasting 60\u00a0s each for a total of 15\u00a0min. Image stacks of mtCFP signal throughout RGC dendrites were collected between light stimulations. Unstimulated retinas were kept in darkness for 15\u2009min between image stacks.\n",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "f037d060-88e2-40bd-b106-0818baac5eba",
+      "submission_id": "dd81fb84-31aa-4a36-bc26-3e2063e55163",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard J Youle, National Institute of Neurological Disorders and Stroke, National Institutes of Health , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11583.017](https://doi.org/10.7554/eLife.11583.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Dendritic mitochondria reach stable positions during circuit development\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors quantify mitochondrial location and trafficking rates in dendrites during retinal ganglion cell development in situ and find that trafficking stops upon neuron maturation. The timing of localization of mitochondria to synapses and dendrite branch points differs during development. The authors also find that calcium waves reported previously to halt mitochondrial trafficking via Miro1 do not do so under more physiological conditions. Mitochondrial motility was retained during development in a model of retinal degeneration (Leber congenital amaurosis), where synaptogenesis between bipolar and retinal ganglion cells is elevated and prolonged. The conclusions of these well controlled experiments performed under fairly physiological conditions contrast with those from several prior papers using isolated cultured neurons and would have substantial impact on the field.\n\nEssential revisions:\n\n1) Mutations in Opa1 leading to DOA indicate that mitochondrial fusion is essential for retinal ganglion cells, likely involving dendrites (see point 2 below), possibly to mitigate mitochondrial damage or to support mitophagy by balancing mitochondrial fission. As mitochondrial fusion would demand some degree of motility, assessing mitochondrial trafficking after applying mitochondrial stress would be important. Assessing effects of mitochondrial toxins such as Rotenone, Oligomycin or Antimycin A applied to the retinal cultures at P9 and P21 and determining if and in what way the stressors alter movement may yield insight into the apparent lack of motility despite the essential role of mitochondrial fusion. Perhaps the motility involved in fusion is on a much slower time scale than the motility involved in trafficking at P9. Some mention of the essential role of Opa1 particularly in retinal ganglion cells and how this mitochondrial fusion requirement relates to the level of motility studied here would strengthen the Discussion.\n\n2) Furthermore, the two papers below that support the necessity of mitochondrial dynamics to maintain dendritic mitochondria should be cited and discussed. The first pathological changes in a mouse model of DOA with mutant OPA1 (defective fusion) actually affect dendrites before impairing axons and cell bodies in retinal ganglion cells (Williams PA, et al. Opa1 deficiency in a mouse model of dominant optic atrophy leads to retinal ganglion cell dendropathy. Brain 2010;133(10):2942-51 and Williams PA, et al. Opa1 is essential for retinal ganglion cell synaptic architecture and connectivity. Brain 2012;135:493-505).\n\n3) Do calcium transients increase along with the retinal wave increase in RGCs from Crx-/- mice? It would be important to assess the extent of calcium influx change to test/corroborate the important conclusion of the authors that physiological levels of calcium transients do not halt mitochondrial transport.\n",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e3b12a3-86d1-4ab1-a08e-79859b8b6741",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C1",
+      "claim": "Mitochondria move throughout neuronal dendrites and localize to sites of energy demand.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria move throughout neuronal dendrites and localize to sites of energy demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "61931720-d1e3-4598-a413-5be28ee97c1a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C2",
+      "claim": "The prevailing view of dendritic mitochondria as highly motile organelles whose distribution is continually adjusted by neuronal activity via Ca2+-dependent arrests is based on observations in cultured neurons exposed to artificial stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing view of dendritic mitochondria as highly motile organelles whose distribution is continually adjusted by neuronal activity via Ca2+-dependent arrests is based on observations in cultured neurons exposed to artificial stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work in the field and is supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "8c8190bd-dd82-47e3-8914-a187c56ec112",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C3",
+      "claim": "During development, 30% of mitochondria are motile at any time in ganglion cell dendrites in the intact retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that whereas during development 30% of mitochondria are motile at any time, as dendrites mature, mitochondria all but stop moving and localize stably to synapses and branch points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "fd079aab-6ccb-4ba6-a1d7-1ee56b856da7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C4",
+      "claim": "As dendrites mature, mitochondria all but stop moving and localize stably to synapses and branch points.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that whereas during development 30% of mitochondria are motile at any time, as dendrites mature, mitochondria all but stop moving and localize stably to synapses and branch points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ea1fc566-5a16-41c3-abaa-d51e9bc198f8",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C5",
+      "claim": "Neither spontaneous nor sensory-evoked activity and Ca2+ transients alter motility of dendritic mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither spontaneous nor sensory-evoked activity and Ca2+ transients alter motility of dendritic mitochondria; and pathological hyperactivity in a mouse model of retinal degeneration elevates rather than reduces motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "475034fa-1764-438b-9020-1e98f192bc48",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C6",
+      "claim": "Pathological hyperactivity in a mouse model of retinal degeneration elevates rather than reduces motility of dendritic mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither spontaneous nor sensory-evoked activity and Ca2+ transients alter motility of dendritic mitochondria; and pathological hyperactivity in a mouse model of retinal degeneration elevates rather than reduces motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2ce619eb-b098-4dc0-b8de-380d8ed2bf1e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C7",
+      "claim": "Dendritic mitochondria reach stable positions during a critical developmental period of high motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings indicate that dendritic mitochondria reach stable positions during a critical developmental period of high motility, and challenge current views about the role of activity in regulating mitochondrial transport in dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "cbe55685-d285-4bde-9f1f-a32f1a67b477",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C8",
+      "claim": "Mitochondria provide energy in the form of ATP and phosphocreatine.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria provide energy in the form of ATP and phosphocreatine, and participate in Ca2+ signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mitochondrial function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d422c050-e861-4cf8-ab1e-e413f06be692",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C9",
+      "claim": "Mitochondria participate in Ca2+ signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria provide energy in the form of ATP and phosphocreatine, and participate in Ca2+ signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mitochondrial function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "3faa2e4d-9ba1-4745-9cd0-e34f2b8f330b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C10",
+      "claim": "In neurons, mitochondrial biosynthesis occurs in the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurons, mitochondrial biosynthesis occurs in the soma, but sites of energy use and Ca2+ influx are dispersed across axonal and dendritic arbors (Davis and Clayton, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Davis and Clayton, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "34289a52-1ba8-4271-9760-74dd782efaa1",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C11",
+      "claim": "Sites of energy use and Ca2+ influx are dispersed across axonal and dendritic arbors in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurons, mitochondrial biosynthesis occurs in the soma, but sites of energy use and Ca2+ influx are dispersed across axonal and dendritic arbors (Davis and Clayton, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Davis and Clayton, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "59374aec-c8ca-49e7-bb8f-a71dcb8aa762",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C12",
+      "claim": "Neuronal mitochondria are transported throughout axons and dendrites along microtubule tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "To meet these distributed demands, neuronal mitochondria are transported throughout axons and dendrites along microtubule tracks (Ehlers, 2013; Lin and Sheng, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ehlers, 2013 and Lin and Sheng, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "afae4764-b1e6-440e-a9e2-57d1ece38106",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C13",
+      "claim": "Axonal mitochondria have been examined in detail in vivo, including in peripheral and central axons.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of recent studies have explored the dynamics and function of axonal mitochondria, including detailed analyses of mitochondrial movements in peripheral and central axons in vivo (Breckwoldt et al., 2014; Misgeld et al., 2007; Plucinska et al., 2012; Takihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "f0aff99a-f229-4edb-b916-524470ce8cc7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C14",
+      "claim": "Dendritic mitochondria are less explored than axonal mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, dendritic mitochondria are less explored and their dynamics have not been examined in intact neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review presented.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "954f677b-e197-4d73-9f99-1bbc97e31529",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C15",
+      "claim": "The dynamics of dendritic mitochondria have not been examined in intact neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, dendritic mitochondria are less explored and their dynamics have not been examined in intact neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review presented.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d6c4ba4b-5eca-40d3-abca-2ad29c95a223",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C16",
+      "claim": "Most of the energy in dendrites is consumed at synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the energy in dendrites is consumed at synapses (Attwell and Laughlin, 2001; Howarth et al., 2012), which are also a primary site of Ca2+ influx (Augustine et al., 2003; Grienberger and Konnerth, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Attwell and Laughlin, 2001 and Howarth et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "690daceb-3d92-47c0-947e-50b92b8b85ff",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C17",
+      "claim": "Synapses are a primary site of Ca2+ influx in dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the energy in dendrites is consumed at synapses (Attwell and Laughlin, 2001; Howarth et al., 2012), which are also a primary site of Ca2+ influx (Augustine et al., 2003; Grienberger and Konnerth, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Augustine et al., 2003 and Grienberger and Konnerth, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0c3c73c6-f606-463e-8b45-7b2c2029df37",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C18",
+      "claim": "Dendritic mitochondria have been shown to localize to synapses in several systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic mitochondria have been shown to localize to synapses in several systems and appear to contribute to their formation and plasticity (Chang et al., 2006; Ishihara et al., 2009; Li et al., 2010; Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "af2c8a1b-9778-42ef-bd51-1b9bdaf880fe",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C19",
+      "claim": "Dendritic mitochondria appear to contribute to synapse formation and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic mitochondria have been shown to localize to synapses in several systems and appear to contribute to their formation and plasticity (Chang et al., 2006; Ishihara et al., 2009; Li et al., 2010; Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "e9fd4ef0-a557-444e-b1d8-bc301937dadd",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C20",
+      "claim": "Increased ER complexity and Golgi outposts at dendritic branch points support protein and lipid biosynthesis, and secretory trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased ER complexity and Golgi outposts at dendritic branch points support protein and lipid biosynthesis, and secretory trafficking (Cui-Wang et al., 2012; Ehlers, 2013; Horton et al., 2005; Ye et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "7d2ae119-e196-4104-b203-b9a2366f8551",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C21",
+      "claim": "Branch points are hotspots for Ca2+ signals in some dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, branch points are hotspots for Ca2+ signals in some dendrites (Fitzpatrick et al., 2009; Larkum et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fitzpatrick et al., 2009 and Larkum et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d00b7324-fba9-433b-af6c-74610c91c440",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C22",
+      "claim": "Mitochondria are required for dendrites to establish normal branching patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are required for dendrites to establish normal branching patterns (Fukumitsu et al., 2015; Kimura and Murakami, 2014), but whether mitochondria localize to branch points is not clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fukumitsu et al., 2015 and Kimura and Murakami, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "73f8a347-1d6e-49e1-b035-7f347af7a5a7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C23",
+      "claim": "Whether mitochondria localize to branch points is not clear.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are required for dendrites to establish normal branching patterns (Fukumitsu et al., 2015; Kimura and Murakami, 2014), but whether mitochondria localize to branch points is not clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0584ea6d-fa27-4162-833e-b4d240268154",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C24",
+      "claim": "When associations between mitochondria and synapses or branch points emerge during development has not been examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when associations between mitochondria and synapses or branch points emerge during development has not been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ff059f9e-d9e8-4d4b-85e6-021de67e49d4",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C25",
+      "claim": "The prevailing view of dendritic mitochondria as being highly motile is based on observations of cultured neurons isolated from embryonic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the prevailing view of dendritic mitochondria as being highly motile is based on observations of cultured neurons isolated from embryonic tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "747356d4-e18d-460d-b9fc-bf697ea14757",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C26",
+      "claim": "Whether the view of dendritic mitochondria as highly motile holds true for neurons in their native environments remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether this view holds true for neurons in their native environments, and how mitochondrial motility in dendrites changes as branching and connectivity patterns stabilize during circuit maturation remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "71c6190f-c7af-45e4-aaa6-463ca9e5b67a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C27",
+      "claim": "How mitochondrial motility in dendrites changes as branching and connectivity patterns stabilize during circuit maturation remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether this view holds true for neurons in their native environments, and how mitochondrial motility in dendrites changes as branching and connectivity patterns stabilize during circuit maturation remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "4d1b578e-beb2-4325-bac7-66609693c5d7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C28",
+      "claim": "Neuronal activity is thought to control the movements of dendritic mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity is thought to control the movements of dendritic mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field based on prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0458c428-a701-481b-9564-03367f03d43a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C29",
+      "claim": "Increases in intracellular Ca2+ were shown to uncouple mitochondria from motor proteins via the Ca2+-dependent adaptor protein Miro1.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, increases in intracellular Ca2+ were shown to uncouple mitochondria from motor proteins via the Ca2+-dependent adaptor protein Miro1 (MacAskill et al., 2009; Wang and Schwarz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to MacAskill et al., 2009 and Wang and Schwarz, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "cb0b43a9-9ef9-48a2-9529-2b7e258b6738",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C30",
+      "claim": "The evidence supporting a leading role for activity in dendritic mitochondrial transport was obtained from cultured neurons exposed to artificial stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the evidence supporting a leading role for activity in dendritic mitochondrial transport was obtained from cultured neurons exposed to artificial stimuli (e.g. high external K+), raising the question whether physiologically occurring activity patterns in intact circuits exert a similar influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0c86eb68-951e-45cb-beb2-0191c0f9a312",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C31",
+      "claim": "In the mature retina, photoreceptors translate changes in photon flux into changes in glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature retina, photoreceptors translate changes in photon flux into changes in glutamate release (Figure 1), and bipolar cells (BCs) relay this signal from the outer to the inner retina where they provide excitatory input to the dendrites of RGCs (Euler et al., 2014; Masland, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "6e8fd430-0d8a-460b-b47d-a82ead8fb005",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C32",
+      "claim": "Bipolar cells relay signals from the outer to the inner retina where they provide excitatory input to the dendrites of RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature retina, photoreceptors translate changes in photon flux into changes in glutamate release (Figure 1), and bipolar cells (BCs) relay this signal from the outer to the inner retina where they provide excitatory input to the dendrites of RGCs (Euler et al., 2014; Masland, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to Euler et al., 2014 and Masland, 2001, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "972b71ad-2c1a-46b1-a4d6-4fae07e8a132",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C33",
+      "claim": "In mice, synapses between BCs and RGCs begin to form around postnatal day 7 (P7).",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, synapses between BCs and RGCs begin to form around postnatal day 7 (P7), and connectivity patterns reach maturity around P21 (Fisher, 1979; Johnson et al., 2003; Morgan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fisher, 1979; Johnson et al., 2003; and Morgan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "410eb5aa-b4bf-4dab-a7ac-ddf46a99eba6",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C34",
+      "claim": "Connectivity patterns between BCs and RGCs reach maturity around P21 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, synapses between BCs and RGCs begin to form around postnatal day 7 (P7), and connectivity patterns reach maturity around P21 (Fisher, 1979; Johnson et al., 2003; Morgan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fisher, 1979; Johnson et al., 2003; and Morgan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5e677da5-8bbc-4779-a2f9-dc1241e12d00",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C35",
+      "claim": "Dendrite development leads synaptogenesis in RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrite development leads synaptogenesis, and arborization patterns become set by P15 (Kim et al., 2010; Morgan et al., 2008; Soto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2010; Morgan et al., 2008; and Soto et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "7484a45a-ec59-4735-8ddb-879455503d20",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C36",
+      "claim": "RGC arborization patterns become set by P15 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrite development leads synaptogenesis, and arborization patterns become set by P15 (Kim et al., 2010; Morgan et al., 2008; Soto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2010; Morgan et al., 2008; and Soto et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "42a17c4f-cb89-4ed2-91ba-da9ca5e7c10e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C37",
+      "claim": "During development, RGCs exhibit spontaneous waves of activity, which propagate through the early visual system and shape its synaptic organization.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, RGCs exhibit spontaneous waves of activity, which propagate through the early visual system and shape its synaptic organization (Ackman et al., 2012; Kerschensteiner, 2013; Meister et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ackman et al., 2012; Kerschensteiner, 2013; and Meister et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0d9f4e1f-675b-45f2-aa6b-56ec031bcc04",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C38",
+      "claim": "Retinal waves stop around the time of eye opening (P14-15 in mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal waves stop around the time of eye opening (P14-15 in mice) when sensory-evoked inputs begin to drive RGC activity (Demas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demas et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "8e990292-73f1-4e88-8982-9f5d291d1311",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C39",
+      "claim": "Sensory-evoked inputs begin to drive RGC activity around the time of eye opening (P14-15 in mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal waves stop around the time of eye opening (P14-15 in mice) when sensory-evoked inputs begin to drive RGC activity (Demas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demas et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "f4e1ced2-61f1-479d-9744-ca691286ce35",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C40",
+      "claim": "BC-RGC synaptogenesis in retinal flat mounts matches in vivo rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that BC-RGC synaptogenesis in retinal flat mounts matches in vivo rates (Kerschensteiner et al., 2009; Morgan et al., 2011; Soto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ed1a5d21-53ee-42d9-8830-f3ac1120d4ef",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C41",
+      "claim": "During development, retinal circuits in flat mount preparations generate spontaneous waves of activity with patterns similar to those observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, during development, retinal circuits in this preparation generate spontaneous waves of activity with patterns similar to those observed in vivo (Ackman et al., 2012; Demas et al., 2003); and at maturity light, responses of RGCs in retinal explants closely resemble those recorded in vivo (Farrow et al., 2013; Grimes et al., 2015; Sagdullaev and McCall, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ackman et al., 2012 and Demas et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "1ec8d4d7-ef09-4c7a-93af-17a840bac087",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C42",
+      "claim": "At maturity, light responses of RGCs in retinal explants closely resemble those recorded in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, during development, retinal circuits in this preparation generate spontaneous waves of activity with patterns similar to those observed in vivo (Ackman et al., 2012; Demas et al., 2003); and at maturity light, responses of RGCs in retinal explants closely resemble those recorded in vivo (Farrow et al., 2013; Grimes et al., 2015; Sagdullaev and McCall, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Farrow et al., 2013; Grimes et al., 2015; and Sagdullaev and McCall, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "aeda21ef-956a-4fe7-b72e-6e7defe58020",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C43",
+      "claim": "PSD95-CFP localizes specifically to BC synapses on RGC dendrites (i.e. excitatory synapses).",
+      "claim_type": "EXPLICIT",
+      "source": "Others and we previously showed that PSD95-CFP localizes specifically to BC synapses on RGC dendrites (i.e. excitatory synapses) (Jakobs et al., 2008; Kerschensteiner et al., 2009; Morgan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jakobs et al., 2008; Kerschensteiner et al., 2009; and Morgan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "4760858d-b941-4ca4-9cc8-5916c41a489e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C44",
+      "claim": "Mitochondria enter dendrites to near-mature levels before most synapses are formed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mitochondria enter dendrites to near-mature levels before most synapses are formed (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2138d5dc-e019-441d-a205-b3f2a5ea7c77",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C45",
+      "claim": "Mitochondria in RGC dendrites are found closer to synapses than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other systems, mitochondria in RGC dendrites are found closer to synapses than expected by chance (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "543e639c-af44-4f6d-a164-561c0ffc1a66",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C46",
+      "claim": "The synaptic localization of mitochondria was apparent from the earliest time point examined (P9).",
+      "claim_type": "EXPLICIT",
+      "source": "This synaptic localization of mitochondria was apparent from the earliest time point examined (P9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c1f5901d-4b73-4526-97b3-4868c23309ce",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C47",
+      "claim": "At maturity, mitochondria are enriched >15-fold at branch points in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at maturity, mitochondria are enriched >15-fold at branch points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "b0c541b4-4a0d-4038-9fd4-0cd837e2fe85",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C48",
+      "claim": "The enrichment of mitochondria at branch points emerges gradually during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike their localization to synapses, the enrichment of mitochondria at branch points emerges gradually during development (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5efd573e-11c2-4458-b7f2-0ba0b76a1f15",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C49",
+      "claim": "Mitochondria enter RGC dendrites during early development, associate with synapses as circuits go through the trial-and-error process of establishing precise connections, and progressively accumulate at branch points even after mature arborization patterns are established.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mitochondria enter RGC dendrites during early development, associate with synapses as circuits go through the trial-and-error process of establishing precise connections, and progressively accumulate at branch points even after mature arborization patterns are established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "8d9b7e87-bde9-4ed7-8fa8-f7133ecbd31b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C50",
+      "claim": "At P9, approximately 30% of mitochondria moved at least once per minute in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, similar to studies on cultured neurons, we found that at P9 approximately 30% of mitochondria moved at least once per minute (i.e. motile fraction) (Figure 3A,B and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c4de9f43-d85b-4a44-89d2-84d66e87990b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C51",
+      "claim": "The motile fraction of mitochondria in RGC dendrites decreases to approximately 15% by P15.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subsequently, the motile fraction of mitochondria in RGC dendrites decreases steeply, falling to approximately 15% by P15, and at P21, we observed no mitochondrial movements in dendrites of 7 RGCs imaged in four retinas for 35 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "89799a67-53e9-4daa-acb0-ac27f38b3ac7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C52",
+      "claim": "At P21, no mitochondrial movements were observed in dendrites of 7 RGCs imaged in four retinas for 35 min.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subsequently, the motile fraction of mitochondria in RGC dendrites decreases steeply, falling to approximately 15% by P15, and at P21, we observed no mitochondrial movements in dendrites of 7 RGCs imaged in four retinas for 35 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "63a8644d-129d-463a-89f0-478f399c16a0",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C53",
+      "claim": "The drastic decline in mitochondrial motility is specific to mitochondria and does not reflect a general transition in dendritic trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "This drastic decline in motility is specific to mitochondria and does not reflect a general transition in dendritic trafficking, as SKL-GFP-labeled peroxisomes (Monosov et al., 1996) in RGC dendrites remain motile at P21 (Figure 3C,D) and beyond (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "76c291c6-91d1-48e5-a136-c0b0fe185071",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C54",
+      "claim": "SKL-GFP-labeled peroxisomes in RGC dendrites remain motile at P21 and beyond.",
+      "claim_type": "EXPLICIT",
+      "source": "This drastic decline in motility is specific to mitochondria and does not reflect a general transition in dendritic trafficking, as SKL-GFP-labeled peroxisomes (Monosov et al., 1996) in RGC dendrites remain motile at P21 (Figure 3C,D) and beyond (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "29b9e842-75a2-45e1-a604-0a48a11b3de7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C55",
+      "claim": "The movement patterns of motile mitochondria at P15 were not significantly different from those observed at P9.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the movement patterns - including duration of runs, speed during uninterrupted motion, and duration of short pauses - of motile mitochondria at P15 were not significantly different from those observed at P9 (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "28601cca-3e58-4fb8-94f6-62f5019adac5",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C56",
+      "claim": "As circuits mature, dendritic mitochondria undergo a cargo-specific transition from a partially motile to a stationary phase, in which they preferentially localize to synapses and branch points.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as circuits mature dendritic mitochondria undergo a cargo-specific transition from a partially motile to a stationary phase, in which they preferentially localize to synapses and branch points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ab6d8be4-5050-408e-a7d5-9583db522a2c",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C57",
+      "claim": "Biolistically labeled retinal explants generate waves of activity with similar frequency and correlation structure to those observed in unlabeled preparations and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We first recorded ensembles of RGCs at P9 on multielectrode arrays (MEAs, Figure 4A), confirming that biolistically labeled explants generate waves of activity with similar frequency and correlation structure to those observed in unlabeled preparations and in vivo (Figure 4C, D) (Ackman et al., 2012; Demas et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C and D, and citations to Ackman et al., 2012 and Demas et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "94955e4f-48f4-4cce-aa1c-7bc7ee583b63",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C58",
+      "claim": "At P9, nearby RGCs (<200 \u03bcm between cell bodies) exhibited synchronous global Ca2+ transients across their dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "At P9, nearby RGCs (<200 \u03bcm between cell bodies) exhibited synchronous global Ca2+ transients across their dendritic arbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "a82013f2-bf91-401c-89ef-a5dd3a2f8e81",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C59",
+      "claim": "The frequency and correlation of Ca2+ transients in RGC dendrites was indistinguishable from that of spike bursts in MEA recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency and correlation of these transients was indistinguishable from that of spike bursts in MEA recordings (Figure 4B\u2013D), indicating that global Ca2+ transients in RGC dendrites accompany retinal waves (Lohmann et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "dfff6995-0903-4309-8c7f-37e84516eddb",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C60",
+      "claim": "Global Ca2+ transients in RGC dendrites accompany retinal waves.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency and correlation of these transients was indistinguishable from that of spike bursts in MEA recordings (Figure 4B\u2013D), indicating that global Ca2+ transients in RGC dendrites accompany retinal waves (Lohmann et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B-D and a citation to Lohmann et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "8ba8f449-491b-4b9e-a45f-1b3c29df671b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C61",
+      "claim": "Wave-associated Ca2+ transients do not alter mitochondrial motility in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous imaging of dendritic Ca2+ signals and mitochondrial movements (Figure 4E), revealed that wave-associated Ca2+ transients do not alter mitochondrial motility in RGC dendrites: neither the instantaneous motile fraction (Figure 4H and Video 2) nor the average speed of moving mitochondria (\u25b3 speed: 0.132 \u00b1 0.067 \u03bcm/s, n = 66 mitochondria, p>0.1) change following a dendritic Ca2+ transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4E, H and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c7495255-6ec9-4aa8-84db-dcdfedd3c864",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C62",
+      "claim": "Neither the instantaneous motile fraction nor the average speed of moving mitochondria change following a dendritic Ca2+ transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous imaging of dendritic Ca2+ signals and mitochondrial movements (Figure 4E), revealed that wave-associated Ca2+ transients do not alter mitochondrial motility in RGC dendrites: neither the instantaneous motile fraction (Figure 4H and Video 2) nor the average speed of moving mitochondria (\u25b3 speed: 0.132 \u00b1 0.067 \u03bcm/s, n = 66 mitochondria, p>0.1) change following a dendritic Ca2+ transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4H and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c8be35f7-6746-4b60-a71a-a4bfa73c2224",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C63",
+      "claim": "Miro1 is readily detected in Western blots of the retina from at least P6 onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "Miro1 is readily detected in Western blots of the retina from at least P6 onwards and its expression reaches mature levels by P15 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c7072d89-6e07-4bf0-bb2f-4a5475bc564b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C64",
+      "claim": "Miro1 expression reaches mature levels by P15 in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Miro1 is readily detected in Western blots of the retina from at least P6 onwards and its expression reaches mature levels by P15 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "af21607a-0588-4a76-8052-2577769770dd",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C65",
+      "claim": "Biolistic delivery of wild-type Miro1 or of a Ca2+-binding-deficient mutant (Miro1KK) does not alter the motility of dendritic mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that biolistic delivery of wild-type Miro1 or of a Ca2+-binding-deficient mutant (Miro1KK) does not alter the motility of dendritic mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "7fc2836e-227d-4aaf-9c21-4bc60d4d9071",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C66",
+      "claim": "A lack of Miro1 expression or function is unlikely to account for the lack of effect of physiologic activity patterns on the movements of mitochondria in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a lack of Miro1 expression or function is unlikely to account for the lack of effect of physiologic activity patterns on the movements of mitochondria in RGC dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Miro1 expression and overexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "29789398-6404-405f-8346-291aab213bba",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C67",
+      "claim": "Elevating external K+ to 30 mM tonically increased the concentration of Ca2+ in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevating external K+ to 30 mM tonically increased the concentration of Ca2+ in RGC dendrites and, similar to observations in cultured neurons, decreased the motile fraction of mitochondria (Figure 4F, I and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4F, I and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "19ccd5bd-541a-4055-abeb-ac0e4d71969c",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C68",
+      "claim": "Elevating external K+ to 30 mM decreased the motile fraction of mitochondria in RGC dendrites, similar to observations in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevating external K+ to 30 mM tonically increased the concentration of Ca2+ in RGC dendrites and, similar to observations in cultured neurons, decreased the motile fraction of mitochondria (Figure 4F, I and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4F, I and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "bc9912f1-dd7b-442e-b0fa-57a22fdf41f8",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C69",
+      "claim": "Blocking cholinergic retinal waves and the accompanying Ca2+ transients with the nicotinic antagonist Dh\u03b2E did not affect mitochondrial motility in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, blocking cholinergic retinal waves and the accompanying Ca2+ transients with the nicotinic antagonist Dh\u03b2E did not affect mitochondrial motility in RGC dendrites (Figure 4G, J and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4G, J and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "3f47f6b0-392f-413b-8f5b-1e46c77bf03f",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C70",
+      "claim": "A subset of RGCs (21 of 59 cells) exhibited local dendritic Ca2+ transients at a similar frequency as global signals.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of RGCs (21 of 59 cells) exhibited local dendritic Ca2+ transients at a similar frequency as global signals (Figure 4\u2014figure supplement 2, local: 0.0102 \u00b1 0.0055 events / s, n = 7 cells, global: 0.0141 \u00b1 0.0022 events / s, n = 32 cells, p>0.4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5b96ea83-c848-43d3-b1e9-8d486ed5a81e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C71",
+      "claim": "Local Ca2+ transients in developing mouse RGC dendrites do not appear to alter mitochondrial motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Like global signals, local Ca2+ transients in developing mouse RGC dendrites do not appear to alter mitochondrial motility (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "fd4bf1ab-d34b-4ac1-8a0c-ce98fd5f595f",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C72",
+      "claim": "Physiologically occurring activity patterns and Ca2+ transients in the developing retina do not regulate mitochondrial motility in RGC dendrites, irrespective of Miro1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that physiologically occurring activity patterns and Ca2+ transients in the developing retina do not regulate mitochondrial motility in RGC dendrites, irrespective of Miro1 expression, and that tonic elevations of Ca2+ upon application of high K+ solution may engage different mechanisms to physiological transients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "caaa8752-acdd-4233-8638-0d0281ea3259",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C73",
+      "claim": "Tonic elevations of Ca2+ upon application of high K+ solution may engage different mechanisms to physiological transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that physiologically occurring activity patterns and Ca2+ transients in the developing retina do not regulate mitochondrial motility in RGC dendrites, irrespective of Miro1 expression, and that tonic elevations of Ca2+ upon application of high K+ solution may engage different mechanisms to physiological transients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "9d9d1bf6-d71e-488c-96d3-7c9cde7134a9",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C74",
+      "claim": "Mitochondria rarely changed position even across two imaging intervals at P21 in darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, mitochondria rarely changed position even across two imaging intervals at P21, whereas approximately half of them were displaced over the same time at P9 (Figure 5D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "33760222-e72c-4799-8349-ad5cdb8fc2e0",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C75",
+      "claim": "Approximately half of mitochondria were displaced over two imaging intervals at P9.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, mitochondria rarely changed position even across two imaging intervals at P21, whereas approximately half of them were displaced over the same time at P9 (Figure 5D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "57d12406-262d-41c8-a2fe-059538e33eb7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C76",
+      "claim": "Light stimulation did not alter the stability of mitochondria at P21.",
+      "claim_type": "EXPLICIT",
+      "source": "Light stimulation did not alter the stability of mitochondria at P21 and very few changed their position in the imaging intervals (Figure 5D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "43a42219-adc8-4f05-a94c-aed31dad18b1",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C77",
+      "claim": "Sensory-evoked activity does not appear to regulate the motility of dendritic mitochondria in the mature retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, similar to our observations for spontaneous activity in developing circuits, sensory-evoked activity does not appear to regulate the motility of dendritic mitochondria in the mature retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "7aff3041-8230-41a3-aca7-2ff3a8dd5968",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C78",
+      "claim": "Application of a mixture of Antimycin A and Oligomycin to P9 and P21 retinas resulted in no significant changes in the motility of mitochondria in developing or mature RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast (0.9 fps) and long-interval (15 min) time-lapse imaging revealed no significant changes in the motility of mitochondria in developing or mature RGC dendrites (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ace31724-c368-4284-b460-b0425da1f6c4",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C79",
+      "claim": "Spontaneous oscillatory hyperactivity of RGCs is a common feature of retinal degenerations and originates in presynaptic circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous oscillatory hyperactivity of RGCs is a common feature of retinal degenerations and originates in presynaptic circuits (Borowska et al., 2011; Margolis et al., 2008; Soto and Kerschensteiner, 2015; Soto et al., 2012; Stasheff, 2008; Yee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "738e9bd2-f941-46d4-bf9c-0598170c4294",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C80",
+      "claim": "In Crx-/- mice, a model of Leber congenital amaurosis, retinal waves are preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "In Crx-/- mice, a model of Leber congenital amaurosis, retinal waves are preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Crx-/- mouse model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "bf89c762-27ec-43ce-84d3-184e95b11b1e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C81",
+      "claim": "From P15 on, RGCs in Crx-/- mice exhibit rhythmic hyperactivity as a result of enhanced input from BCs.",
+      "claim_type": "EXPLICIT",
+      "source": "But, from P15 on RGCs exhibit rhythmic hyperactivity as a result of enhanced input from BCs (Soto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Soto et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "00dcbf63-617b-4736-8585-75707bbd4aac",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C82",
+      "claim": "Elevated activity in Crx-/- mice prolongs and enhances BC-RGC synaptogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that this elevated activity prolongs and enhances BC-RGC synaptogenesis (Soto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2e3e1138-de55-4dd7-b64a-587724c66fa4",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C83",
+      "claim": "Dendritic mitochondria in Crx-/- retinas remained motile at P21, at a level intermediate to those at P9 and P15 in wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dendritic mitochondria in Crx-/- retinas remained motile at P21, at a level intermediate to those at P9 and P15 in wild-type mice (Figure 6D,E and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6D, E and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ffb7aea3-3c8d-4dfe-9426-802f0ca32c4c",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C84",
+      "claim": "The movement patterns of motile mitochondria at P21 in Crx-/- mice except for slightly longer pauses were indistinguishable from those in wild-type at P9 and P15.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the movement patterns of motile mitochondria at P21 in Crx-/- mice except for slightly longer pauses were indistinguishable from those in wild-type at P9 and P15 (Figure 6F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "12aee685-69b4-42d4-a713-c6b94105a89a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C85",
+      "claim": "Mutations that alter the fission-fusion balance and transport of mitochondria cause neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of mitochondrial dynamics and distribution to neuronal function is highlighted by the fact that mutations that alter the fission-fusion balance and transport of mitochondria cause neurodegenerative diseases (Chan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chan, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "11b8879e-edd3-4859-8baa-2fcc96cbb9ca",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C86",
+      "claim": "RGCs degenerate in autosomal dominant optic atrophy (ADOA), the most common hereditary optic neuropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the neurons affected by such diseases are RGCs, which degenerate in autosomal dominant optic atrophy (ADOA), the most common hereditary optic neuropathy (Olichon et al., 2006; Yu-Wai-Man et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Olichon et al., 2006 and Yu-Wai-Man et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5abceeca-f30e-4efb-8405-ada34301eeaf",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C87",
+      "claim": "A majority of ADOA patients harbors mutations in the OPA1 gene, which encodes a GTPase involved in mitochondrial fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of ADOA patients harbors mutations in the OPA1 gene, which encodes a GTPase involved in mitochondrial fusion (Olichon et al., 2006; Yu-Wai-Man et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Olichon et al., 2006 and Yu-Wai-Man et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "805dfa98-d5fd-40d0-8ce9-ce5ceb6cf4a0",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C88",
+      "claim": "Changes in fission-fusion balance alter the transport and distribution of mitochondria in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in fission-fusion balance alter the transport and distribution of mitochondria in neurons (Chan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chan, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "4729d690-48e4-4661-b5d2-612c64eb4d20",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C89",
+      "claim": "During development, mitochondria enter RGC dendrites to near-mature levels before branching patterns are established.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that during development mitochondria enter RGC dendrites to near-mature levels before branching patterns are established (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "25c1c6ae-52c2-4a45-93ea-03ff57696c9b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C90",
+      "claim": "Similar observations of mitochondria entering dendrites to near-mature levels before branching patterns are established were recently made for dendrites of cerebellar Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were recently made for dendrites of cerebellar Purkinje cells (Fukumitsu et al., 2015), and together with experiments that block export of mitochondria into dendrites support the notion that local mitochondria are required for the formation and/or maintenance of dendritic branches (Fukumitsu et al., 2015; Ishihara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fukumitsu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "952747c4-d6fb-49e2-a8bb-749d172d2aa6",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C91",
+      "claim": "Local mitochondria are required for the formation and/or maintenance of dendritic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were recently made for dendrites of cerebellar Purkinje cells (Fukumitsu et al., 2015), and together with experiments that block export of mitochondria into dendrites support the notion that local mitochondria are required for the formation and/or maintenance of dendritic branches (Fukumitsu et al., 2015; Ishihara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fukumitsu et al., 2015 and Ishihara et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "6125de14-a6ba-4ef0-a55c-f3db721186e5",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C92",
+      "claim": "During development, dendritic mitochondria gradually become enriched (>15-fold) near branch points.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that during development, dendritic mitochondria gradually become enriched (>15-fold) near branch points (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "255a89f0-1065-41cf-826e-aa671c55426d",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C93",
+      "claim": "Mitochondria near branch points likely provide energy for lipid and protein biosynthesis, and secretory trafficking in the complex ER structures and Golgi outposts found at branch points.",
+      "claim_type": "EXPLICIT",
+      "source": "These mitochondria likely provide energy for lipid and protein biosynthesis, and secretory trafficking in the complex ER structures and Golgi outposts found at branch points (Cui-Wang et al., 2012; Horton et al., 2005; Ye et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to Cui-Wang et al., 2012; Horton et al., 2005; and Ye et al., 2007.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "1a39146a-49f3-463e-825a-548ae3f9e920",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C94",
+      "claim": "ER structures and Golgi outposts at branch points are required for the formation and maintenance of dendritic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, ER structures and Golgi outposts at branch points are required for the formation and maintenance of dendritic branches (Cui-Wang et al., 2012; Horton et al., 2005; Ye et al., 2007), and the branching phenotypes of neurons lacking dendritic mitochondria can be rescued by exogenous supply of ATP-phosphocreatine (Fukumitsu et al., 2015; Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cui-Wang et al., 2012; Horton et al., 2005; and Ye et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d295787d-1bec-4fe4-8672-8a2f59111426",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C95",
+      "claim": "The branching phenotypes of neurons lacking dendritic mitochondria can be rescued by exogenous supply of ATP-phosphocreatine.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, ER structures and Golgi outposts at branch points are required for the formation and maintenance of dendritic branches (Cui-Wang et al., 2012; Horton et al., 2005; Ye et al., 2007), and the branching phenotypes of neurons lacking dendritic mitochondria can be rescued by exogenous supply of ATP-phosphocreatine (Fukumitsu et al., 2015; Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fukumitsu et al., 2015 and Li et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "670c0076-c283-4e79-a349-54db7b29d620",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C96",
+      "claim": "Mitochondria in RGC dendrites localize to excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria in RGC dendrites localize to excitatory synapses (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "af812729-4904-4821-9579-0218a20a6fe6",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C97",
+      "claim": "Similar observations of mitochondria localizing to synapses have been made on cultured neurons, although the extent of co-localization varied between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations have been made on cultured neurons, although the extent of co-localization varied between studies (Chang et al., 2006; Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chang et al., 2006 and Li et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c0a6f310-3cf8-4d63-8382-d11c034eb6ee",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C98",
+      "claim": "Experiments in cultured hippocampal neurons suggested that enhancing the dendritic mitochondria content is sufficient to increase the number of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in cultured hippocampal neurons suggested that enhancing the dendritic mitochondria content is sufficient to increase the number of synapses (Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "e4b94ebf-5e3f-4e51-9675-3f856f2bcf1a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C99",
+      "claim": "It seems unlikely that mitochondria limit the rate of synaptogenesis during development of the RGC circuit, as mitochondrial density in RGCs dendrites reaches near-mature levels before most synapses are formed.",
+      "claim_type": "EXPLICIT",
+      "source": "As mitochondrial density in RGCs dendrites reaches near-mature levels before most synapses are formed, it seems unlikely that mitochondria limit the rate of synaptogenesis during development of this circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "f1e912e0-816b-4fc8-9582-0ced6a66670a",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C100",
+      "claim": "Mitochondrial transport in RGC dendrites is well described by a state diagram in which mitochondria exist in a motile or a stationary state.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial transport in RGC dendrites is well described by a state diagram recently applied to axonal transport, in which mitochondria exist in a motile or a stationary state (Obashi and Okabe, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Obashi and Okabe, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "9c276a62-b168-4de3-bedb-68e76e883a6d",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C101",
+      "claim": "Motile mitochondria alternate between short runs and short pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile mitochondria alternate between short runs and short pauses (Figure 3) and frequently switch the direction of their movements (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "77380916-9fca-4d33-bb1f-b18d7d0fe0c6",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C102",
+      "claim": "Stationary mitochondria remain in place for long periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, stationary mitochondria remain in place for long periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "61a8c8fc-1237-44fc-9f90-8c1813f7c649",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C103",
+      "claim": "Transitions between motile and stationary state are rare for mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike transitions between runs and pauses in the motile state, transitions between motile and stationary state are rare (Obashi and Okabe, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Obashi and Okabe, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "faa52574-cfa5-4f6b-9fb9-7577fdd09313",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C104",
+      "claim": "As circuits mature, dendritic mitochondria undergo a nearly complete shift to the stationary state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that as circuits mature, dendritic mitochondria undergo a nearly complete shift to the stationary state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "85a60dbb-516b-45ba-8578-0cd401f2d010",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C105",
+      "claim": "Rare displacements of mitochondria at P21 may be associated with mitochondrial fission or support mitochondrial fusion or mitophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "These rare displacements may be associated with mitochondrial fission or support mitochondrial fusion or mitophagy (Chen and Chan, 2009; Maday and Holzbaur, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to Chen and Chan, 2009 and Maday and Holzbaur, 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "68af3b26-e7bf-4882-96da-d564d9a412c8",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C106",
+      "claim": "Disruption of mitochondrial fusion in a mouse model of ADOA (Opa1+/- mice) results in shortened mitochondria, which accumulate in proximal RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of mitochondrial fusion in a mouse model of ADOA (Opa1+/- mice) results in shortened mitochondria, which accumulate in proximal RGC dendrites (Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Williams et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2ea8d5fb-4a5a-4821-813f-120329171bc5",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C107",
+      "claim": "As Opa1+/- mice age (>1 yr), the number of excitatory synapses and branches of RGC dendrites declines.",
+      "claim_type": "EXPLICIT",
+      "source": "As Opa1+/- mice age (>1 yr), the number of excitatory synapses and branches of RGC dendrites declines, highlighting the importance of mitochondrial fusion for dendritic and synaptic integrity (Williams et al., 2010; Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Williams et al., 2010 and Williams et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "6a897706-ab34-4e1c-bb20-eb0eddabc4ef",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C108",
+      "claim": "Mitochondrial fusion is important for dendritic and synaptic integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "As Opa1+/- mice age (>1 yr), the number of excitatory synapses and branches of RGC dendrites declines, highlighting the importance of mitochondrial fusion for dendritic and synaptic integrity (Williams et al., 2010; Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to Williams et al., 2010 and Williams et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2be15f03-0024-45ae-b486-756fd104be56",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C109",
+      "claim": "In isolated cortical neurons, a modest decline in mitochondrial motility was observed with increasing time in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In isolated cortical neurons, a modest decline in mitochondrial motility was observed with increasing time in culture (Chang and Reynolds, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chang and Reynolds, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "4f6c7311-e13f-4810-b7e0-3c39af105ff7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C110",
+      "claim": "In the intact retina, there is a drastic developmental shift (motile to stationary) in dendritic mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In the intact retina, we discover a drastic developmental shift (motile to stationary) in dendritic mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "9ae8615e-7f6f-4c31-8b01-51c67382d083",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C111",
+      "claim": "The developmental shift from motile to stationary is cargo-specific, as peroxisomes keep moving in dendrites of mature RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this shift is cargo-specific, as peroxisomes keep moving in dendrites of mature RGCs (Figure 3), and compartment-specific, as mitochondria remain motile in RGC axons (data not shown) (Takihara et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "90d8bec7-4a57-41a6-baa8-1735d12a6453",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C112",
+      "claim": "The developmental shift from motile to stationary is compartment-specific, as mitochondria remain motile in RGC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this shift is cargo-specific, as peroxisomes keep moving in dendrites of mature RGCs (Figure 3), and compartment-specific, as mitochondria remain motile in RGC axons (data not shown) (Takihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by unpublished data and a citation to Takihara et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "689fbc4d-684d-4d99-b1df-1c0de5b15cf9",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C113",
+      "claim": "Mitochondria form stable associations with synapses and branch points in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with results on dendritic localization (Figure 2), these observations reveal that mitochondria form stable associations with synapses and branch points in RGC dendrites, and suggest that the prevailing view of mitochondria as highly motile organelles applies to developing but not to mature dendrites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "a0376ec8-7024-4a04-9581-02b798edc8b0",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C114",
+      "claim": "The prevailing view of mitochondria as highly motile organelles applies to developing but not to mature dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with results on dendritic localization (Figure 2), these observations reveal that mitochondria form stable associations with synapses and branch points in RGC dendrites, and suggest that the prevailing view of mitochondria as highly motile organelles applies to developing but not to mature dendrites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "7e846054-7ad7-45de-8160-2f4ee25c7349",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C115",
+      "claim": "Neither patterned spontaneous activity during development nor sensory-evoked activity at maturity regulate the motility of mitochondria in RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Using simultaneous two-photon imaging of Ca2+ and mitochondria in the intact retina, we find that neither patterned spontaneous activity during development (Figure 4) nor sensory-evoked activity at maturity (Figure 5) regulate the motility of mitochondria in RGC dendrites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "0f143c0f-19b1-4430-917e-66e1e11102d8",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C116",
+      "claim": "Results on the lack of effect of physiologic activity on mitochondrial motility are in contrast to studies of cultured neurons, which suggest that neuronal activity controls motility of dendritic mitochondria via the adaptor protein Miro1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in contrast to studies of cultured neurons, which suggest that neuronal activity controls motility of dendritic mitochondria via the adaptor protein Miro1 (Li et al., 2004; MacAskill et al., 2009; Rintoul et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "1ec2ce50-54f8-4064-9a93-db402758271c",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C117",
+      "claim": "Differences between activity patterns physiologically occurring in intact circuits and artificial stimuli used to elicit effects on mitochondrial motility in culture may be a contributing factor to the discrepant results on the influence of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it seems unlikely that differences in Miro1 expression or function account for the discrepant results on the influence of activity. Instead, we suggest that differences between activity patterns physiologically occurring in intact circuits and artificial stimuli used to elicit effects on mitochondrial motility in culture may be a contributing factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "648a7717-df7d-4cbd-86ac-80b28b4ddd54",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C118",
+      "claim": "Extended synaptogenesis in Crx-/- mice is matched by an increase in mitochondrial motility at P21.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that extended synaptogenesis is matched by an increase in mitochondrial motility at P21 in Crx-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d6f2388a-f48b-4ce7-a97f-1b17b1a3eaf4",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "claim_id": "C119",
+      "claim": "The parallel decline in synapse turnover and mitochondrial motility across normal development suggests that the two processes are linked.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the parallel decline in synapse turnover and mitochondrial motility across normal development (Figure 3) (Kerschensteiner et al., 2009; Morgan et al., 2008), this suggests that the two processes are linked.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data presented in Figure 3 and citations to Kerschensteiner et al., 2009 and Morgan et al., 2008.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "519cf4c9-4c07-4a22-97bf-5092344154e7",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During development, mitochondria enter RGC dendrites to near-mature levels before most synapses form, localize preferentially to synapses from the earliest timepoint (P9), and gradually accumulate at branch points (>15-fold enrichment at maturity). The synaptic localization is apparent early, while branch point enrichment emerges gradually during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49, C89, and C92 are supported by quantitative data in Figure 2D-G showing mitochondrial density, synapse density, nearest-neighbor distance analysis, and branch point enrichment across developmental timepoints. The Monte Carlo simulations (C45) provide statistical validation of non-random synaptic localization. The temporal dynamics are clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "65b277fe-560f-415e-85a2-af9a2c4bcd35",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mitochondrial motility in RGC dendrites undergoes a dramatic developmental decline from ~30% motile at P9 to ~15% at P15 to 0% at P21. This decline is cargo-specific (peroxisomes remain motile at P21) and compartment-specific (axonal mitochondria remain motile). Movement parameters of motile mitochondria do not change between P9 and P15.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C50-C56, C104, C110-C112 are strongly supported by time-lapse imaging data in Figure 3A-G showing quantified motile fractions, movement parameters, and peroxisome controls. The cargo-specificity is demonstrated by peroxisome imaging (Figure 3C-D), and compartment-specificity is supported by citation and unpublished data. Sample sizes are adequate (7-12 RGCs per timepoint).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Spontaneous retinal waves during development generate global Ca2+ transients in RGC dendrites with frequency and correlation matching MEA recordings, but these physiologically occurring Ca2+ transients do not alter mitochondrial motility (neither instantaneous motile fraction nor speed changes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 and C72 are supported by simultaneous two-photon imaging of Ca2+ (GCaMP6s) and mitochondria (mtDsRed) shown in Figure 4B-E, H. MEA validation (Figure 4A, C-D) confirms physiological relevance. Statistical analysis shows no significant change in motility parameters (p>0.1, n=66 mitochondria). The lack of effect is clearly demonstrated with appropriate temporal resolution (0.9 fps).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "2605695a-5da9-49c7-a11e-4d40c1035ef3",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Artificial elevation of external K+ (30 mM) tonically increases dendritic Ca2+ and decreases mitochondrial motility, similar to cultured neurons. However, blocking physiological retinal waves with Dh\u03b2E does not affect motility, suggesting tonic K+-induced Ca2+ elevations engage different mechanisms than physiological transients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by data in Figure 4F-G, I-J showing paired comparisons before and after treatments. The high K+ effect is statistically significant while Dh\u03b2E shows no effect. Claim C73 is appropriately qualified as speculative inference. The contrast between artificial and physiological stimuli is clearly demonstrated, though the mechanistic explanation remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c8d5ac24-1eba-4f3e-b7fb-14641441189e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Miro1 protein is expressed in the retina from at least P6 onwards, reaching mature levels by P15. Overexpression of wild-type Miro1 or Ca2+-binding-deficient mutant (Miro1KK) does not alter mitochondrial motility in RGC dendrites, suggesting Miro1 expression/function does not account for the lack of activity-dependent regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by Western blot data (Figure 4\u2014figure supplement 1A-B) and motility measurements after biolistic Miro1 delivery (Figure 4\u2014figure supplement 1C-D). The Western blot shows clear developmental expression pattern. The overexpression experiments provide appropriate controls (n=4-9 RGCs), though sample sizes are modest for the Miro1KK condition (n=4).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "6ae77b19-7e1d-42c6-9e29-f7ab7fabd038",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A subset of RGCs (21 of 59 cells) exhibited local dendritic Ca2+ transients at similar frequency to global signals. Like global signals, local Ca2+ transients do not appear to alter mitochondrial motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are supported by data in Figure 4\u2014figure supplement 2 showing frequency measurements and speed analysis before/after local Ca2+ events. The frequency comparison is statistically sound (p>0.4, n=7 local, n=32 global cells). However, the motility analysis is limited (n=7 mitochondria) and the claim appropriately uses cautious language ('do not appear').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "bde79dee-a1df-472b-8063-77e38f88cfec",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At P21, mitochondria rarely change position even across 30-minute intervals in darkness, whereas ~50% are displaced at P9. Light stimulation does not alter mitochondrial stability at P21, indicating sensory-evoked activity does not regulate dendritic mitochondrial motility in the mature retina.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 are supported by long-interval imaging data in Figure 5D-E showing displacement percentages across conditions. MEA recordings (Figure 5A-C) validate that the light stimulus robustly increases RGC firing rates. Sample sizes are adequate (n=5 RGCs per condition). The conclusion is appropriately qualified as inference but well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "e455efc4-78a9-4522-94a9-4dbc11139eba",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Application of mitochondrial toxins (Antimycin A and Oligomycin) to P9 and P21 retinas resulted in no significant changes in mitochondrial motility in developing or mature RGC dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by data in Figure 5\u2014figure supplement 1 showing both fast (0.9 fps) and long-interval (15 min) imaging. Statistical analysis shows no significant changes (p>0.2 for P9, p>0.4 for P21). Sample sizes are modest (n=4-5 RGCs) but adequate for the negative result with appropriate statistical testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "80e739e2-7fb2-4e2f-8d4a-17b10339ce1e",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Crx-/- mice (retinal degeneration model with pathological hyperactivity), dendritic mitochondria remain motile at P21 at levels intermediate between P9 and P15 wild-type. Movement patterns are indistinguishable from wild-type except for slightly longer pauses. This extended motility matches the extended synaptogenesis in this model, suggesting the two processes are linked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84, C118-C119 are supported by MEA recordings confirming elevated activity (Figure 6A-C) and motility measurements (Figure 6D-H). The motility data show statistically significant differences between WT and Crx-/- at P21 (n=6-7 RGCs). Movement parameter analysis (n=30 mitochondria Crx-/-, n=97 pooled WT) is adequately powered. The link to synaptogenesis (C119) is appropriately presented as inference supported by prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing that mitochondria move in neuronal dendrites, provide ATP and participate in Ca2+ signaling, are synthesized in the soma, and are transported along microtubule tracks to meet distributed energy demands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C12 represent established knowledge in the field supported by appropriate citations (Davis and Clayton 1996; Ehlers 2013; Lin and Sheng 2015). These are standard background claims that provide context for the study and are well-accepted in the neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "877a5082-6c3a-4128-a746-bb149e1dd3be",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The prevailing view of dendritic mitochondria as highly motile with activity-dependent regulation is based on cultured neurons with artificial stimuli. Whether this holds in intact circuits, how motility changes during development, and whether mitochondria localize to branch points remained unknown prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C15, C23-C28, C30 accurately characterize gaps in prior knowledge and are supported by appropriate literature review and citations. These claims establish the rationale and novelty of the current study. The characterization of prior work is fair and accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "ab8f3caa-2c60-4170-bf33-0132c399d866",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about energy consumption at synapses, Ca2+ influx sites, mitochondrial localization to synapses, their role in synapse formation/plasticity, ER/Golgi structures at branch points, and mitochondrial requirements for dendritic branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 represent established knowledge supported by multiple appropriate citations (Attwell and Laughlin 2001; Augustine et al. 2003; Chang et al. 2006; Cui-Wang et al. 2012; Fukumitsu et al. 2015; and others). These provide important biological context for interpreting the localization results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "adbf4524-a911-436d-a1cc-f3603d8d2d9b",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work showed that increases in intracellular Ca2+ uncouple mitochondria from motor proteins via the Ca2+-dependent adaptor protein Miro1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 accurately represents prior findings supported by citations to MacAskill et al. 2009 and Wang and Schwarz 2009. This is a key piece of background that motivates the Miro1 experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "d284052b-b278-4b84-af26-fd3635d465d1",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on retinal circuit organization and development: photoreceptors signal to bipolar cells which provide excitatory input to RGC dendrites; BC-RGC synapses form around P7 and mature by P21; dendrite development leads synaptogenesis with arborization set by P15; spontaneous retinal waves occur during development and stop at eye opening (~P14-15) when sensory-evoked activity begins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 provide essential background on the retinal system supported by appropriate citations (Euler et al. 2014; Fisher 1979; Johnson et al. 2003; Morgan et al. 2008; Kim et al. 2010; Ackman et al. 2012; Demas et al. 2003; and others). This information is well-established and accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "b161dd6c-55cc-4bd1-9faa-88d0ad9e7cdc",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Validation claims for the retinal explant preparation: BC-RGC synaptogenesis matches in vivo rates; spontaneous waves in explants resemble in vivo patterns; light responses in explants resemble in vivo recordings; PSD95-CFP localizes specifically to BC synapses on RGC dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by citations to the authors' prior work and other studies (Kerschensteiner et al. 2009; Morgan et al. 2011; Ackman et al. 2012; Farrow et al. 2013; Jakobs et al. 2008). These validation claims are important for establishing the physiological relevance of the ex vivo preparation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "539b0cec-2553-4c21-a343-e2ce426606c5",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on the Crx-/- mouse model: spontaneous oscillatory hyperactivity is common in retinal degenerations; in Crx-/- mice (Leber congenital amaurosis model), retinal waves are preserved but from P15 onwards RGCs exhibit rhythmic hyperactivity from enhanced BC input; this elevated activity prolongs and enhances BC-RGC synaptogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 are supported by appropriate citations including the authors' prior work (Soto et al. 2012) and other studies (Borowska et al. 2011; Margolis et al. 2008; Stasheff 2008). This background is essential for interpreting the Crx-/- results and is accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "550bc86d-d5a7-465c-839e-f9d48e1588f4",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on mitochondrial dynamics in disease: mutations affecting mitochondrial fission-fusion and transport cause neurodegenerative diseases; RGCs degenerate in ADOA (most common hereditary optic neuropathy) caused by OPA1 mutations affecting mitochondrial fusion; in Opa1+/- mice, mitochondria shorten and accumulate proximally, and with age synapses and branches decline, highlighting importance of fusion for dendritic/synaptic integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88, C106-C108 are supported by appropriate citations (Chan 2006; Olichon et al. 2006; Yu-Wai-Man et al. 2011; Williams et al. 2010, 2012). This background provides important disease context and is accurately presented based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5231b2f2-1f43-4edf-9639-c07912badd23",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Discussion claims comparing results to prior literature: similar observations in Purkinje cells; local mitochondria required for dendritic branches; mitochondria likely provide energy for ER/Golgi at branch points; similar synaptic localization in cultured neurons; mitochondrial transport follows motile/stationary state diagram; modest decline in cultured neurons vs. drastic shift in intact retina.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91, C93-C95, C97-C98, C100, C103, C105, C109 appropriately contextualize the findings relative to prior work with appropriate citations (Fukumitsu et al. 2015; Ishihara et al. 2009; Chang et al. 2006; Li et al. 2004; Obashi and Okabe 2013; Chang and Reynolds 2006; and others). Speculative claims (C93, C105) are appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    },
+    {
+      "id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2",
+      "content_id": "5899b7ce-9a4a-475f-a57d-c95732e61e3c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Summary and synthesis claims: mitochondria stabilize at synapses and branch points as dendrites mature; they reach stable positions during a critical developmental period; mitochondria localize to excitatory synapses but likely don't limit synaptogenesis rate; they form stable associations with synapses and branch points; the prevailing view of high motility applies to developing but not mature dendrites; neither spontaneous nor sensory-evoked activity regulates motility, contrasting with cultured neuron studies; differences between physiological and artificial stimuli may explain discrepant results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7, C96, C99, C113-C117 represent appropriate synthesis of the experimental findings. These are well-supported by the data presented in Figures 2-5. Speculative elements (C99, C117) are appropriately qualified. The contrast with prior literature is fairly presented and the proposed explanation is reasonable though speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:22:06.263044Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4760858d-b941-4ca4-9cc8-5916c41a489e",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "2138d5dc-e019-441d-a205-b3f2a5ea7c77",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "543e639c-af44-4f6d-a164-561c0ffc1a66",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "c1f5901d-4b73-4526-97b3-4868c23309ce",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "b0c541b4-4a0d-4038-9fd4-0cd837e2fe85",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "5efd573e-11c2-4458-b7f2-0ba0b76a1f15",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "4729d690-48e4-4661-b5d2-612c64eb4d20",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "6125de14-a6ba-4ef0-a55c-f3db721186e5",
+      "result_id": "519cf4c9-4c07-4a22-97bf-5092344154e7"
+    },
+    {
+      "claim_id": "8c8190bd-dd82-47e3-8914-a187c56ec112",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "8d9b7e87-bde9-4ed7-8fa8-f7133ecbd31b",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "c4de9f43-d85b-4a44-89d2-84d66e87990b",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "89799a67-53e9-4daa-acb0-ac27f38b3ac7",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "63a8644d-129d-463a-89f0-478f399c16a0",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "76c291c6-91d1-48e5-a136-c0b0fe185071",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "29b9e842-75a2-45e1-a604-0a48a11b3de7",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "28601cca-3e58-4fb8-94f6-62f5019adac5",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "faa52574-cfa5-4f6b-9fb9-7577fdd09313",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "4f6c7311-e13f-4810-b7e0-3c39af105ff7",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "9ae8615e-7f6f-4c31-8b01-51c67382d083",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "90d8bec7-4a57-41a6-baa8-1735d12a6453",
+      "result_id": "65b277fe-560f-415e-85a2-af9a2c4bcd35"
+    },
+    {
+      "claim_id": "ab6d8be4-5050-408e-a7d5-9583db522a2c",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "94955e4f-48f4-4cce-aa1c-7bc7ee583b63",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "a82013f2-bf91-401c-89ef-a5dd3a2f8e81",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "dfff6995-0903-4309-8c7f-37e84516eddb",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "8ba8f449-491b-4b9e-a45f-1b3c29df671b",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "c7495255-6ec9-4aa8-84db-dcdfedd3c864",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "fd4bf1ab-d34b-4ac1-8a0c-ce98fd5f595f",
+      "result_id": "49d473e2-b2e0-4b6e-a159-89bdbb62dba5"
+    },
+    {
+      "claim_id": "29789398-6404-405f-8346-291aab213bba",
+      "result_id": "2605695a-5da9-49c7-a11e-4d40c1035ef3"
+    },
+    {
+      "claim_id": "19ccd5bd-541a-4055-abeb-ac0e4d71969c",
+      "result_id": "2605695a-5da9-49c7-a11e-4d40c1035ef3"
+    },
+    {
+      "claim_id": "bc9912f1-dd7b-442e-b0fa-57a22fdf41f8",
+      "result_id": "2605695a-5da9-49c7-a11e-4d40c1035ef3"
+    },
+    {
+      "claim_id": "caaa8752-acdd-4233-8638-0d0281ea3259",
+      "result_id": "2605695a-5da9-49c7-a11e-4d40c1035ef3"
+    },
+    {
+      "claim_id": "c8be35f7-6746-4b60-a71a-a4bfa73c2224",
+      "result_id": "c8d5ac24-1eba-4f3e-b7fb-14641441189e"
+    },
+    {
+      "claim_id": "c7072d89-6e07-4bf0-bb2f-4a5475bc564b",
+      "result_id": "c8d5ac24-1eba-4f3e-b7fb-14641441189e"
+    },
+    {
+      "claim_id": "af21607a-0588-4a76-8052-2577769770dd",
+      "result_id": "c8d5ac24-1eba-4f3e-b7fb-14641441189e"
+    },
+    {
+      "claim_id": "7fc2836e-227d-4aaf-9c21-4bc60d4d9071",
+      "result_id": "c8d5ac24-1eba-4f3e-b7fb-14641441189e"
+    },
+    {
+      "claim_id": "3f47f6b0-392f-413b-8f5b-1e46c77bf03f",
+      "result_id": "6ae77b19-7e1d-42c6-9e29-f7ab7fabd038"
+    },
+    {
+      "claim_id": "5b96ea83-c848-43d3-b1e9-8d486ed5a81e",
+      "result_id": "6ae77b19-7e1d-42c6-9e29-f7ab7fabd038"
+    },
+    {
+      "claim_id": "9d9d1bf6-d71e-488c-96d3-7c9cde7134a9",
+      "result_id": "bde79dee-a1df-472b-8063-77e38f88cfec"
+    },
+    {
+      "claim_id": "33760222-e72c-4799-8349-ad5cdb8fc2e0",
+      "result_id": "bde79dee-a1df-472b-8063-77e38f88cfec"
+    },
+    {
+      "claim_id": "57d12406-262d-41c8-a2fe-059538e33eb7",
+      "result_id": "bde79dee-a1df-472b-8063-77e38f88cfec"
+    },
+    {
+      "claim_id": "43a42219-adc8-4f05-a94c-aed31dad18b1",
+      "result_id": "bde79dee-a1df-472b-8063-77e38f88cfec"
+    },
+    {
+      "claim_id": "7aff3041-8230-41a3-aca7-2ff3a8dd5968",
+      "result_id": "e455efc4-78a9-4522-94a9-4dbc11139eba"
+    },
+    {
+      "claim_id": "2e3e1138-de55-4dd7-b64a-587724c66fa4",
+      "result_id": "80e739e2-7fb2-4e2f-8d4a-17b10339ce1e"
+    },
+    {
+      "claim_id": "ffb7aea3-3c8d-4dfe-9426-802f0ca32c4c",
+      "result_id": "80e739e2-7fb2-4e2f-8d4a-17b10339ce1e"
+    },
+    {
+      "claim_id": "648a7717-df7d-4cbd-86ac-80b28b4ddd54",
+      "result_id": "80e739e2-7fb2-4e2f-8d4a-17b10339ce1e"
+    },
+    {
+      "claim_id": "d6f2388a-f48b-4ce7-a97f-1b17b1a3eaf4",
+      "result_id": "80e739e2-7fb2-4e2f-8d4a-17b10339ce1e"
+    },
+    {
+      "claim_id": "5e3b12a3-86d1-4ab1-a08e-79859b8b6741",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "cbe55685-d285-4bde-9f1f-a32f1a67b477",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "d422c050-e861-4cf8-ab1e-e413f06be692",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "3faa2e4d-9ba1-4745-9cd0-e34f2b8f330b",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "34289a52-1ba8-4271-9760-74dd782efaa1",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "59374aec-c8ca-49e7-bb8f-a71dcb8aa762",
+      "result_id": "c8309f4a-f5d7-431b-8b6c-bfd2363e77df"
+    },
+    {
+      "claim_id": "61931720-d1e3-4598-a413-5be28ee97c1a",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "f0aff99a-f229-4edb-b916-524470ce8cc7",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "954f677b-e197-4d73-9f99-1bbc97e31529",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "73f8a347-1d6e-49e1-b035-7f347af7a5a7",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "0584ea6d-fa27-4162-833e-b4d240268154",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "ff059f9e-d9e8-4d4b-85e6-021de67e49d4",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "747356d4-e18d-460d-b9fc-bf697ea14757",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "71c6190f-c7af-45e4-aaa6-463ca9e5b67a",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "4d1b578e-beb2-4325-bac7-66609693c5d7",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "cb0b43a9-9ef9-48a2-9529-2b7e258b6738",
+      "result_id": "877a5082-6c3a-4128-a746-bb149e1dd3be"
+    },
+    {
+      "claim_id": "d6c4ba4b-5eca-40d3-abca-2ad29c95a223",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "690daceb-3d92-47c0-947e-50b92b8b85ff",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "0c3c73c6-f606-463e-8b45-7b2c2029df37",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "af2c8a1b-9778-42ef-bd51-1b9bdaf880fe",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "e9fd4ef0-a557-444e-b1d8-bc301937dadd",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "7d2ae119-e196-4104-b203-b9a2366f8551",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "d00b7324-fba9-433b-af6c-74610c91c440",
+      "result_id": "ab8f3caa-2c60-4170-bf33-0132c399d866"
+    },
+    {
+      "claim_id": "0458c428-a701-481b-9564-03367f03d43a",
+      "result_id": "adbf4524-a911-436d-a1cc-f3603d8d2d9b"
+    },
+    {
+      "claim_id": "0c86eb68-951e-45cb-beb2-0191c0f9a312",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "6e8fd430-0d8a-460b-b47d-a82ead8fb005",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "972b71ad-2c1a-46b1-a4d6-4fae07e8a132",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "410eb5aa-b4bf-4dab-a7ac-ddf46a99eba6",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "5e677da5-8bbc-4779-a2f9-dc1241e12d00",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "7484a45a-ec59-4735-8ddb-879455503d20",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "42a17c4f-cb89-4ed2-91ba-da9ca5e7c10e",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "0d9f4e1f-675b-45f2-aa6b-56ec031bcc04",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "8e990292-73f1-4e88-8982-9f5d291d1311",
+      "result_id": "d284052b-b278-4b84-af26-fd3635d465d1"
+    },
+    {
+      "claim_id": "f4e1ced2-61f1-479d-9744-ca691286ce35",
+      "result_id": "b161dd6c-55cc-4bd1-9faa-88d0ad9e7cdc"
+    },
+    {
+      "claim_id": "ed1a5d21-53ee-42d9-8830-f3ac1120d4ef",
+      "result_id": "b161dd6c-55cc-4bd1-9faa-88d0ad9e7cdc"
+    },
+    {
+      "claim_id": "1ec8d4d7-ef09-4c7a-93af-17a840bac087",
+      "result_id": "b161dd6c-55cc-4bd1-9faa-88d0ad9e7cdc"
+    },
+    {
+      "claim_id": "aeda21ef-956a-4fe7-b72e-6e7defe58020",
+      "result_id": "b161dd6c-55cc-4bd1-9faa-88d0ad9e7cdc"
+    },
+    {
+      "claim_id": "ace31724-c368-4284-b460-b0425da1f6c4",
+      "result_id": "539b0cec-2553-4c21-a343-e2ce426606c5"
+    },
+    {
+      "claim_id": "738e9bd2-f941-46d4-bf9c-0598170c4294",
+      "result_id": "539b0cec-2553-4c21-a343-e2ce426606c5"
+    },
+    {
+      "claim_id": "bf89c762-27ec-43ce-84d3-184e95b11b1e",
+      "result_id": "539b0cec-2553-4c21-a343-e2ce426606c5"
+    },
+    {
+      "claim_id": "00dcbf63-617b-4736-8585-75707bbd4aac",
+      "result_id": "539b0cec-2553-4c21-a343-e2ce426606c5"
+    },
+    {
+      "claim_id": "12aee685-69b4-42d4-a713-c6b94105a89a",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "11b8879e-edd3-4859-8baa-2fcc96cbb9ca",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "5abceeca-f30e-4efb-8405-ada34301eeaf",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "805dfa98-d5fd-40d0-8ce9-ce5ceb6cf4a0",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "68af3b26-e7bf-4882-96da-d564d9a412c8",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "2ea8d5fb-4a5a-4821-813f-120329171bc5",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "6a897706-ab34-4e1c-bb20-eb0eddabc4ef",
+      "result_id": "550bc86d-d5a7-465c-839e-f9d48e1588f4"
+    },
+    {
+      "claim_id": "25c1c6ae-52c2-4a45-93ea-03ff57696c9b",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "952747c4-d6fb-49e2-a8bb-749d172d2aa6",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "255a89f0-1065-41cf-826e-aa671c55426d",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "1a39146a-49f3-463e-825a-548ae3f9e920",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "d295787d-1bec-4fe4-8672-8a2f59111426",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "af812729-4904-4821-9579-0218a20a6fe6",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "c0a6f310-3cf8-4d63-8382-d11c034eb6ee",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "f1e912e0-816b-4fc8-9582-0ced6a66670a",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "61a8c8fc-1237-44fc-9f90-8c1813f7c649",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "85a60dbb-516b-45ba-8578-0cd401f2d010",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "2be15f03-0024-45ae-b486-756fd104be56",
+      "result_id": "5231b2f2-1f43-4edf-9639-c07912badd23"
+    },
+    {
+      "claim_id": "fd079aab-6ccb-4ba6-a1d7-1ee56b856da7",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "2ce619eb-b098-4dc0-b8de-380d8ed2bf1e",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "670c0076-c283-4e79-a349-54db7b29d620",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "e4b94ebf-5e3f-4e51-9675-3f856f2bcf1a",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "689fbc4d-684d-4d99-b1df-1c0de5b15cf9",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "a0376ec8-7024-4a04-9581-02b798edc8b0",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "7e846054-7ad7-45de-8160-2f4ee25c7349",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "0f143c0f-19b1-4430-917e-66e1e11102d8",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    },
+    {
+      "claim_id": "1ec2ce50-54f8-4064-9a93-db402758271c",
+      "result_id": "5e74ace8-48cd-44b6-b2d4-569ad36e9ad2"
+    }
+  ],
+  "comparisons": []
+}

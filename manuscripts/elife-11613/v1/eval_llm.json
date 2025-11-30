@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study identified unmethylated regions (UMRs) and low-methylated regions (LMRs) in rods and cones, and found that ATAC-seq peaks exhibit low DNA methylation while hypo-methylated regions show elevated ATAC-seq signals on average, with UMRs showing strong overlap with ATAC-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide quantitative data from MethylC-seq and ATAC-seq analyses showing the identification of specific numbers of UMRs and LMRs, and demonstrate the expected correlation between DNA methylation and chromatin accessibility. The data are internally consistent and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Rods show a substantially lower overlap between LMRs and ATAC-seq peaks (19%) compared to cones (38%), with 31% of rod LMRs showing no chromatin accessibility versus only 7% for cones, indicating that rods harbor a substantial compartment of demethylated but inaccessible DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 present quantitative comparisons between rods and cones that are internally consistent and represent a major finding. The data are replicated using whole retina samples (C33-C34), strengthening the conclusion. This is a key discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Rod LMRs exhibit a bimodal distribution of sub-nucleosomal ATAC-seq signals that is significantly different from cone LMRs (p<2.2\u00d710\u207b\u00b9\u2076), potentially reflecting a greater number of vestigial enhancers in rods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide statistical evidence for a distinct distribution pattern in rods. The Kolmogorov-Smirnov test is appropriate for comparing distributions, and the extremely low p-value supports the significance of the difference. The interpretation regarding vestigial enhancers is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Differential methylation analysis identified more rod hypo-DMRs (10,784) than cone hypo-DMRs (6,693), with rod hypo-DMRs showing strong negative correlation with gene expression and being depleted for ATAC-seq signal, active histone modifications, and TF binding, and located distally from promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 present a comprehensive characterization of DMRs with quantitative data and correlation analyses. The negative correlation between methylation and gene expression (r=-0.8) is consistent with established biology. The depletion patterns are well-documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "Rod hypo-DMRs show low DNA methylation in fetal cortex and enrichment for active histone modifications in fetal brain, and rd7 rods show higher methylation at these regions than WT rods, supporting a role for chromatin condensation in limiting methylation of vestigial enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C50-C51 provide evidence linking rod hypo-DMRs to developmental enhancers and support the chromatin condensation hypothesis. The rd7 data provide a natural experiment testing this hypothesis. However, the mechanism remains correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Comparison of WT and Nrl KO retinas identified 22,520 Nrl KO-enriched and 7,916 WT-enriched ATAC-seq peaks, with WT-enriched peaks clustering near rod-specific gene promoters with high active histone marks, while Nrl KO-enriched peaks cluster near cone-specific genes, and TF binding patterns match these distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 provide comprehensive characterization of cell type-specific accessible chromatin with quantitative data, histone modification profiles, and TF binding validation. The data are internally consistent and well-supported by multiple lines of evidence including ChIP-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In vivo electroporation experiments showed that one enhancer near Nr2e3 was active in WT but not Nrl KO retinas, while four out of five regions near cone genes were active in Nrl KO but not WT retinas, with 5/6 regions showing cell type-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide experimental validation of predicted regulatory elements. While the sample size is limited (acknowledged by authors), the majority of tested regions showed the expected cell type-specificity, supporting the predictive value of the epigenomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Motif analysis identified CRX motif enrichment in all peak sets, CTCF motif enrichment in shared peaks, with 87% of peaks with strong CTCF binding showing DNaseI hypersensitivity in >30% of ENCODE tissues versus 35% for peaks lacking strong CTCF sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide motif analysis with statistical significance and validation against ENCODE data. The CRX enrichment is consistent with known biology, and the CTCF analysis provides insight into shared versus cell-specific regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Gkm-SVM analysis distinguished Nrl KO-specific (auROC=0.91) and shared (auROC=0.86) regions from random sequences, and predicted retinal enhancer activity in a massively parallel reporter assay with Pearson correlation of 0.427 (p<10\u207b\u00b3\u00b2\u2070), with top 10% scoring regions showing 4-fold enrichment for high-level expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 demonstrate strong predictive performance of the sequence-based model with appropriate validation using independent data. The auROC values indicate good discrimination, and the correlation with reporter assay data provides functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "rd7 retina shows intermediate ATAC-seq patterns with correlations to WT (r=0.91) and Nrl KO (r=0.88) both higher than WT-Nrl KO correlation (r=0.78), with 44 peaks near rod genes showing higher signal in WT and peaks near NR2E3-repressed cone genes showing higher signal in rd7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 demonstrate that rd7 rods have a hybrid epigenomic phenotype using correlation analysis and differential peak analysis. The data are consistent with previous gene expression studies and provide epigenomic validation of the partial cell fate conversion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DNA methylation analysis of rd7 rods showed few differences from WT rods (287 rd7 hypo-DMRs, 1,385 WT hypo-DMRs) but more differences from cones (1,981 rd7 hypo-DMRs, 4,929 cone hypo-DMRs), with methylation patterns at photoreceptor-specific genes generally intermediate between WT rods and cones, except for Aqp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide quantitative DMR analysis and gene-specific examples showing the hybrid methylation state of rd7 rods. The data are consistent with the ATAC-seq findings and supported by figures. The Aqp1 exception is interesting but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "DNA methylation valley (DMV) analysis identified 782 WT rod, 635 rd7 rod, and 816 cone DMVs (\u22655 kb), with 89-90% within 2.5 kb of TSS and 93-94% overlapping gene bodies, enriched for DNA-binding factors, showing cell type-specific methylation patterns at developmental TF genes including Onecut1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87, C89-C90 provide comprehensive DMV characterization with quantitative data and GO enrichment analysis. The enrichment for TF genes is consistent with previous studies. The cell type-specific patterns at developmental genes like Onecut1 provide biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Rods and cones have similar mCG levels to cortical neurons but 29- and 7-fold lower mCH levels respectively, with WT rods showing 0.11-0.13% mCH, cones 0.42-0.45%, and rd7 rods intermediate at 0.21-0.25%, suggesting post-mitotic mCH accumulation in photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 provide quantitative methylation data comparing photoreceptors to neurons. The fold-change calculations are clear, and the intermediate rd7 levels support the inference about post-mitotic accumulation, though this remains correlative rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Hierarchical clustering showed retinal photoreceptors cluster separately from cortical neurons, with cortical neurons showing greater inter-subtype distance than rod-cone distance, and fetal cortex clustering closer to mature photoreceptors than to mature cortical neurons, with twice as many retinal-specific (63,384) versus cortical-specific (31,483) hypo-DMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 provide clustering analysis and DMR quantification comparing retinal and cortical samples. The interpretation that cortical neurons acquire more extensive cell type-specific modifications is reasonable but somewhat speculative. The data support the clustering patterns described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose that increased chromatin condensation in rods poses a barrier to DNA methyltransferases, supported by rd7 rods having slightly increased nuclear size and lower chromatin condensation showing higher methylation at vestigial enhancers, and by previous observations of low mCH in dense heterochromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 present a mechanistic hypothesis that is plausible and supported by correlative evidence from rd7 rods and literature. However, the mechanism is not directly tested - no experiments manipulate chromatin condensation or methyltransferase access independently. The hypothesis remains speculative despite supporting correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The finding that rods show fewer accessible chromatin regions than cones suggests rods represent a more developmentally restricted cell type at the epigenomic level, consistent with models proposing NRL and NR2E3 direct precursors away from the default S-cone fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 provide an interpretation of the ATAC-seq data in the context of developmental models. The interpretation is reasonable and consistent with cited literature, though it represents a conceptual framework rather than direct experimental evidence of developmental restriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C21",
+      "C91",
+      "C92"
+    ],
+    "result": "Integrated analysis shows rd7 rods fail to attain WT rod levels of chromatin accessibility and DNA hypo-methylation at rod-specific regions while exhibiting increased accessibility and hypo-methylation at cone-specific regions and intermediate patterns at developmental TF gene DMVs, demonstrating NR2E3 is necessary for rods to gain their complete epigenomic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113, C21, C91-C92 synthesize multiple lines of evidence showing rd7 rods have incomplete rod and partial cone epigenomic features. The conclusion about NR2E3 necessity is well-supported by the comprehensive epigenomic characterization, though causality is inferred from the genetic model rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The introduction establishes background knowledge about rod and cone photoreceptor function, gene expression patterns, transcription factor control, and the rd7 mouse model, including that rods respond to single photons, cones mediate color vision, and rd7 rods show partial cell fate conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 present established knowledge from the literature with appropriate citations. These are background claims that set up the study's context and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background information establishes that accessible chromatin correlates with low DNA methylation, rod nuclei are small (~5 \u03bcm) with highly condensed chromatin and inverted organization thought to facilitate nocturnal vision, while cone nuclei are larger with conventional chromatin arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 present established knowledge from the literature with appropriate citations. These background claims provide important context for interpreting the study's findings about the unusual relationship between methylation and accessibility in rods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C49",
+      "C88",
+      "C107",
+      "C108"
+    ],
+    "result": "Background literature establishes concepts of vestigial enhancers, chromatin compaction during oligodendrocyte differentiation, progressive chromatin restriction during differentiation, and ONECUT1 function in cone development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C49, C88, C107-C108 present established knowledge from cited literature that provides conceptual framework for interpreting the study's findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose potential applications of their findings for understanding clinical variability in inherited retinal diseases and for refining stem cell-based therapies, suggesting regulatory sequence differences could contribute to phenotypic heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C120 present speculative applications of the findings. While the proposals are reasonable, they represent future directions rather than demonstrated results. The claims about clinical variability are plausible but not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The transgenic mouse models used for nuclear purification appeared morphologically normal with no retinal degeneration, and INTACT purification of rod photoreceptors achieved 97.5% specificity (96.7-98.2%; n=5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 provide quality control data for the experimental system. The specificity measurement is quantitative with replication (n=5) and includes confidence intervals. This validates the purity of the cell populations analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study's main finding is that most rod-specific regions of low DNA methylation are not in accessible chromatin in adult rods, and the authors propose these are potential active regulatory sites in fetal neural tissue that remain hypo-methylated due to chromatin condensation blocking methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 present the central discovery and interpretation. C18 is well-supported by quantitative data. C19 is supported by fetal tissue comparisons. C20 is a mechanistic hypothesis supported by correlative evidence from rd7 rods but not directly tested. The overall result is a major finding but the mechanism remains somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

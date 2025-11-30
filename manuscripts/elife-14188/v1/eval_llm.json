@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Bats have excellent spatial memory and can navigate using echolocation, though the mechanisms for echolocation-based place recognition are largely unknown. While long-distance navigation relies primarily on vision, bats can return to roosts using echolocation alone over shorter distances (<15 km).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the background context through citations to published literature. The claims about bat navigation capabilities (C1-C5) and the knowledge gap regarding echolocation-based place recognition (C7) are well-supported by appropriate citations and provide the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Biosonar has inherent limitations that make 3D scene reconstruction challenging: low signal-to-noise ratio, limited field of view, low update rate, limited range, and finite temporal integration (200-400 \u03bcs). At distances of 7.8 m, integration volumes exceed 1-2 m\u00b3 depending on beamwidth, meaning echoes from multiple objects are integrated together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 establish the theoretical limitations of biosonar through citations and calculations. The integration volume calculations (C16-C17) are mathematically derived from the temporal integration constants reported in the literature (C13-C14). The logic connecting temporal integration to spatial resolution limitations is sound and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Template-based approaches using sonar have been successfully demonstrated in robotics, showing that simple echo templates can discriminate objects and support place recognition in navigation algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 establish precedent for template-based sonar navigation through citations to robotic studies. These provide the conceptual foundation for applying template-based approaches to bat navigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A custom ensonification device with 31 microphones and an ultrasonic speaker was used to collect 2,058,462 echo trains across three field sites (St. Andrews Park with 12 positions in varying clutter levels, Israel with 50 positions along a corridor, and Royal Fort Gardens with 40 positions), sampling 217 azimuth/elevation directions at each position with 3 repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C40 provide detailed methodological descriptions of the experimental apparatus and data collection. The specifications are precise and internally consistent (e.g., the total echo train count calculation is verifiable: 102 positions \u00d7 217 directions \u00d7 3 repeats \u00d7 31 microphones = 2,058,462). The experimental design is well-documented with appropriate technical details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Echo trains were processed using a biologically-inspired auditory periphery model (Gammatone filterbank, 30-100 kHz) to create templates. The virtual beamwidth of the device was 20\u00b0 at 55 kHz, comparable to bat beamwidths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the template construction methodology. The auditory model is appropriately cited (C41) and the beamwidth calculation (C43) is based on theoretical considerations. The comparison to bat beamwidths (Figure 4) validates the biological plausibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C55",
+      "C59"
+    ],
+    "result": "Templates from cluttered and semi-cluttered environments could be reliably classified with high probability, while templates from open environments showed very low classification probability (~0). This demonstrates that templates can support place recognition in environments with sufficient acoustic structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C55, and C59 present the core classification results from the St. Andrews dataset (Figure 6). The finding that open environments lack classifiable templates is logically consistent with the absence of diagnostic echoes. The results are presented with appropriate statistical analysis (Monte Carlo estimation of classification probability) and the conclusion (C55) is appropriately qualified by noting the system has lower dynamic range than bats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Angular catchment areas (the angular range over which template dissimilarity increases monotonically) extended up to 90\u00b0 in semi-cluttered and 150\u00b0 in cluttered environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 reports angular catchment distances from the St. Andrews data (Figure 7). The methodology for determining catchment areas (monotonic increase in dissimilarity) is clearly defined and the results are directly shown in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C71",
+      "C72"
+    ],
+    "result": "Linear catchment distances (spatial range over which templates vary continuously) averaged 0.89 m (sd: 0.61) across both linear transect datasets, with maximum distances of 6.6 m (Israel) and 2.5 m (Royal Fort Gardens). About 64% of templates had catchment diameters >1 m, with an average diameter of 1.77 m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 and C71-C72 report linear catchment distances from the Israel and Royal Fort Gardens datasets (Figures 8-10). The statistical analysis includes appropriate tests (Wilcoxon rank sum, C51) and the calculations are internally consistent (diameter = 2 \u00d7 distance, C72). The results are well-documented with clear figures showing the analysis process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Classification probabilities were high for both linear transect datasets (Israel: 0.82\u00b10.21; Royal Fort Gardens: 0.99\u00b10.03), with Royal Fort Gardens templates being significantly easier to classify correctly (Wilcoxon test, Z=-95.2, p<<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 report classification performance for the linear transect datasets with appropriate statistical testing. The results are consistent with the data shown in Figure 11 and the statistical test is appropriate for comparing the two distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Templates could be correctly classified despite not preserving spectral information, implying that template-based navigation does not depend heavily on call design and should be feasible for bats using narrowband calls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 draw important conclusions from the template construction method (averaging across frequencies) and classification results. The logic is sound: if templates work without spectral information, then the approach is robust to call design variations. However, this remains an inference that would benefit from direct experimental validation with different call types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The catchment areas found in this study are comparable to or larger than those reported for vision-based homing in insects (\u22641 m) and sonar-based robotic navigation (14 cm or 20\u00b0), suggesting they are sufficient for functional navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 contextualize the results by comparison to other systems. The comparisons are appropriately cited and the inference (C65) that the observed catchment areas are functionally sufficient is reasonable given the successful navigation demonstrated in the cited robotic study with smaller catchment areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Bat echolocation behavior (pulse rates >10 Hz, flight speeds typically <10 m/s, angular velocities ~280 deg/s at 5 m/s) results in spatial and angular sampling rates that are compatible with the observed template catchment areas. At 10 Hz and 10 m/s, bats sample at 1 m intervals, and 64% of templates have catchment diameters >1 m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 integrate behavioral data from the literature with the experimental results to argue for functional relevance. The calculations (C70, C75) are straightforward and correct. The comparison between bat sampling rates and template catchment areas (C71-C72) provides strong support that the templates could function as navigational signposts. The logic is sound and well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Template continuity is determined by beamwidth and temporal integration, with wider beams and longer integration producing smoother spatial variation. The convergence of bat species on similar emission beamwidths may reflect optimization of spatial smoothing for navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 present reasonable inferences about the factors controlling template continuity, consistent with the integration volume concept. However, C78 is explicitly speculative (\"could indicate\") and represents an interesting hypothesis rather than a demonstrated result. The claim would require experimental manipulation of beamwidth and integration time to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A trade-off exists between linear catchment distance and classification probability: the Israel site (distant reflectors) showed larger catchment distances but lower classification probability, while Royal Fort Gardens (closer reflectors) showed smaller catchment distances but higher classification probability. This suggests optimal navigation requires balancing distance to reflectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 identify an important trade-off supported by statistical tests (C51, C53) and correlation analysis (reported in text: \u03c1=-0.32 when pooled). The interpretation linking this to motion parallax effects (C81-C82) is reasonable given the physical differences between sites. The prediction (C84) follows logically from the observed trade-off, though it remains a hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "While cognitive maps in bats have not been experimentally demonstrated, indirect evidence exists from grid/place cells and memory of flight routes in darkness, suggesting bats likely use some form of cognitive map that could integrate echolocation information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 appropriately characterize the state of knowledge regarding cognitive maps in bats, with proper citations. The claims correctly distinguish between likelihood based on indirect evidence (C85, C87-C88) and lack of direct experimental demonstration (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Existing work on bat obstacle avoidance algorithms and robotic SLAM systems (BatSLAM) provides potential mechanisms for how bats could explore environments, build template-based maps, and use landmarks. However, how bats execute planned navigation sequences remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 review relevant prior work on navigation components with appropriate citations. The claims accurately represent the cited work and correctly identify gaps in knowledge (C94). The proposal that landmarks might emerge from template-based mapping (C93) is appropriately marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Object recognition experiments involve active, object-centered exploration, while cruising bats make more incidental observations. Even in recognition experiments, bats may use diagnostic acoustic cues rather than building 3D reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 distinguish between different behavioral contexts with appropriate citations (C95). The inference about cruising behavior (C96) is reasonable. Claim C97 is explicitly speculative (\"might not be\") and appropriately qualified, representing a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

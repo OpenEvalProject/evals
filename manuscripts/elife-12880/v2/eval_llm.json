@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Endogenous miRNAs cause substantial destabilization of reporter mRNAs containing wild-type MREs. The reaper reporter with wild-type MRE had a half-life of ~8 min vs. ~31 min for the mutant (4-fold difference), and the hid reporter with wild-type MREs had a half-life of ~7.5 min vs. >40 min for mutant MREs. Mimics complementary to mutant MREs restored destabilization, confirming miRNA-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 provide converging evidence from multiple reporter constructs (reaper and hid) showing miRNA-dependent mRNA destabilization. The use of wild-type vs. mutant MREs and rescue with complementary mimics provides strong controls demonstrating specificity. Half-life measurements are quantitative and reproducible across different constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "All four reporter mRNAs (reaper and hid, wild-type and mutant MREs) are associated with actively translating polysomes. Harringtonine treatment caused all mRNAs to shift to lighter fractions, indicating active translation. Endogenous miRNAs (bantam, miR-13b) and control mRNAs (RP49, PABP) also sedimented with polysomes and shifted upon Harringtonine treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 demonstrate polysome association using sucrose gradient fractionation and Harringtonine run-off experiments. The Harringtonine control is appropriate for distinguishing actively translating ribosomes from stalled complexes. The accounting experiment (C35) addresses potential artifacts from sample preparation. The observation applies to both targeted and non-targeted mRNAs, as well as to the miRNAs themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "miRNA-mediated mRNA decay occurs cotranslationally. Truncated mRNA fragments accumulate in polysome fractions after transcriptional shutoff. These fragments are detected with 3' probes but not 5' probes, indicating 5' to 3' degradation. The fragments are ribosome-associated based on sedimentation behavior, demonstrating that decay occurs while mRNAs are being translated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide the key evidence for cotranslational decay through detection of 5'-truncated, polysome-associated decay intermediates. The differential detection with 3' vs. 5' probes (C41-C42) is critical for establishing directionality. The enrichment of fragments after actinomycin D treatment and their polysome association (C44) directly support the cotranslational decay model. This is the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cotranslational decay is initiated by decapping following deadenylation. Knockdown of DCP1/2 markedly stabilized the reaper reporter mRNA with wild-type MRE, indicating decapping is required for decay. The pathway involves miRNA-Ago1 recruitment of GW182, which recruits the CCR4-Not deadenylase complex, followed by decapping by Dcp1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 establish the mechanistic pathway. The DCP1/2 knockdown experiment (C46-C47) provides direct functional evidence for decapping requirement. Claims C48-C51 are well-supported by citations to prior work establishing the deadenylation-decapping pathway in Drosophila. The integration of new data (C46-C47) with established mechanisms (C48-C51) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Deadenylated mRNA species accumulate in polysome-associated fractions. PolyA tail length assays revealed bands migrating at sizes expected for deadenylated mRNAs in polysome fractions, suggesting that accelerated decapping is a consequence of accelerated deadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide evidence for deadenylation preceding decapping in the cotranslational context. The polyA tail assay (C52) shows accumulation of deadenylated species in polysomes, and sequencing confirmed the interpretation. The inference that decapping follows deadenylation (C53) is reasonable given the established pathway and the detection of deadenylated intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Following decapping, 5' to 3' degradation is catalyzed by XRN1, which leaves 5' phosphorylated termini. A ligation assay detected decapped reaper reporter mRNA fragments with 5' phosphates at steady state throughout polysome fractions. Detection was ligase-dependent and nearly absent in DCP1/2 knockdown cells. Cloned fragments mapped near the transcription start site and translation initiation codon, demonstrating polysome-bound decapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 provide strong evidence for XRN1-mediated degradation following decapping. The ligation assay is well-controlled with appropriate positive (TAP-treated RP49) and negative controls. The ligase-dependence (C58) and loss of signal upon DCP1/2 knockdown (C59) validate specificity. The detection throughout polysomes (C60) and mapping of 5' ends (C61) directly support cotranslational decapping and degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Cotranslational miRNA-mediated mRNA destabilization employs the canonical mRNA decay machinery (deadenylases, decapping enzymes, XRN1). The destabilization is accelerated relative to non-targeted mRNAs due to Ago1 recruitment of GW182, which recruits the deadenylase machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 synthesize the mechanistic findings. The conclusion that canonical decay machinery is employed (C63) is well-supported by the experimental data on deadenylation, decapping, and XRN1-mediated degradation. The proposed acceleration mechanism via Ago1-GW182 (C64) is appropriately attributed to prior work and consistent with the observed enhanced decay rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Full-length decapped mRNAs with 5' termini mapping near the transcription start site and initiation codon are detected throughout polysomes of different sizes. This indicates that 5' to 3' exonucleolytic decay is not obligatorily coupled to decapping, and suggests that XRN1-mediated exonucleolytic digestion, rather than decapping itself, is rate-limiting for mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide important mechanistic insights into the temporal relationship between decapping and degradation. The detection of full-length decapped mRNAs (C70-C71) is direct experimental evidence that decapping and degradation are not tightly coupled (C72). The inference that XRN1 activity is rate-limiting (C73) is reasonable speculation based on the persistence of decapped intermediates, though it remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "miRNA-targeted mRNAs migrate on lighter polysomes than untargeted mRNAs. The authors propose that decapping itself could account for this altered sedimentation, as decapped mRNAs would shift to lighter polysomes as elongating ribosomes clear the mRNA without new initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 address a previously reported observation and offer a mechanistic explanation consistent with the cotranslational decay model. The observation (C77) is confirmed experimentally. The proposed explanation (C78) is speculative but logical given the detection of full-length decapped mRNAs and the known requirement of the cap for translation initiation. This provides an alternative to the translation repression model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cotranslational mRNA decay was previously shown for selected mRNAs in budding yeast and is now the dominant pathway for normal mRNA decay in yeast. The current findings extend these observations to higher eukaryotes (Drosophila) and suggest cotranslational decay may be a widespread phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 appropriately contextualize the findings within prior work on yeast. The citations to Hu et al., 2009 (C65) and Pelechano et al., 2015 (C66) are accurate. The suggestion that cotranslational decay may be widespread (C67) is reasonable speculation based on the convergence of findings across evolutionarily distant organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Decapping itself can be thought of as a potent and irreversible inhibitor of translation initiation, since eIF-4F requires a cap to stimulate translation and decapping dramatically limits further ribosome association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a logical inference based on established knowledge of cap-dependent translation initiation. The reasoning is sound: if the cap is required for eIF-4F binding and translation initiation, then removal of the cap would prevent new initiation. This provides a mechanistic link between decapping and the observed polysome profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establishing the known properties of miRNAs, their mechanism of action, and the apparent paradox that miRNA-targeted mRNAs are found on polysomes despite evidence for mRNA destabilization occurring in ribosome-free states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 represent well-established background knowledge appropriately cited from the literature. These claims set up the central question addressed by the manuscript: how can miRNA-mediated decay occur when targeted mRNAs are polysome-associated? The citations are appropriate and the characterization of the field's understanding is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Methodological details: Emetine is an irreversible inhibitor of translation elongation; Harringtonine inhibits formation of the first peptide bond by binding to the A site of initiating ribosomes; Drosophila S2 cells were obtained from Invitrogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are methodological details appropriately cited and documented. The characterization of drug mechanisms is accurate and properly referenced. These are standard reagents and methods used appropriately in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary claims stating the main findings: turnover of miRNA-targeted mRNAs occurs during translation, initiated by decapping and proceeding 5' to 3' behind the last translating ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are high-level summary statements of the main findings, which are supported by the detailed experimental evidence in claims C25-C62. These represent the central conclusions of the manuscript and are well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Speculation that decapping is a prerequisite for but not rate-limiting for mRNA decay, based on the observation that decapped but not degraded mRNAs persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is explicitly speculative ('If decapping is a prerequisite for but not rate limiting...') and is based on the observation of full-length decapped mRNAs. While the observation is solid (C70-C71), the interpretation that decapping is not rate-limiting requires additional kinetic experiments to definitively establish. The speculation is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

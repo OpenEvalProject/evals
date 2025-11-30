@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Repeated hyperosmotic stress over multiple generations (G2-G5) induces transient adaptive phenotypes in Arabidopsis progeny (P1), including enhanced germination, survival, and vegetative growth under high salinity. This adaptation requires recurrent stress exposure and is lost by the P2 generation after two stress-free generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 collectively describe a well-controlled multi-generational experiment with appropriate controls (C1-C3), clear phenotypic observations (C4-C5, C7), and consistent results showing that adaptation requires repeated stress (C6) and is transient (C7-C8). The experimental design minimizes confounding effects by timing stress application before flowering (C2) and uncoupling parent-progeny environments (C3). Statistical significance is reported in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Transgenerational adaptation to hyperosmotic stress depends on DNA methylation machinery, as demonstrated by the lack of enhanced survival in progeny of stressed nrpd1a, cmt3, and rdd mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 present mutant analysis showing that disruption of DNA methylation pathways abolishes the adaptive response observed in wild-type. The use of multiple independent mutants affecting different components of the methylation machinery strengthens the conclusion. However, the claim acknowledges that phenotypic data alone do not reveal the extent of epigenetic changes (C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Whole-genome bisulfite sequencing reveals that hyperosmotic stress induces relatively few differentially methylated positions (DMPs) compared to previous reports, with stress-treated samples clustering separately from controls and showing predominantly methylation gains rather than losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 describe rigorous methylome analysis with appropriate replication (pooling 10 plants, duplicate samples) and statistical methods (C12-C14). The reanalysis of published data (C17) strengthens the finding that stress-induced methylation changes are more limited than previously reported. PCA and clustering analyses support the transient nature of methylation changes (C14-C15).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Hyperosmotic stress directs DNA methylation changes primarily to non-CG contexts (CHG and CHH) at differentially methylated regions (DMRs) located in transposable elements and intergenic regions near transcription start sites. These methylation patterns in P1 progeny correlate with adaptive phenotypes and revert to control levels in P2 progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 present comprehensive DMR analysis with appropriate statistical testing (C21: P < 0.01, Student's t-test) and genomic annotation (C19). The correlation between methylation patterns and phenotypes across generations (C22-C24) is well-documented with clustering analysis. The focus on non-CG methylation contexts is consistent with known plant stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Approximately half of stress-induced DMRs (HS-DMRs) overlap with spontaneous epimutation-prone regions identified in mutation accumulation lines, indicating that hyperosmotic stress targets discrete, epigenetically labile genomic regions that are not randomly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 present comparative analysis with published MA line data showing substantial overlap (49%) despite methodological differences (pooled vs. individual plants). The enrichment of non-overlapping HS-DMRs near genes with stress-related functions (C28) supports the specificity of stress-induced changes. The inference that targeting is non-random (C27, C29) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Most HS-DMRs in G3 and G5 show hypermethylation in stressed plants, with enrichment near Helitrons (targeted by RdDM) for hypermethylated DMRs and near Copia, HAT, and Line L1 TEs (targeted by demethylases) for hypomethylated DMRs. These methylation changes gradually revert in P1 and P2 progeny, and drm1/drm2 mutants lack stress-induced hypermethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide detailed characterization of DMR directionality and TE family associations with appropriate statistical testing (C32: p<0.01). The mutant analysis (C35) confirms RdDM involvement in hypermethylation. However, the lack of correlation with siRNA production (C36) suggests additional complexity in the mechanism that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "HS-DMRs are enriched for stress-altered H3K27me3 histone modifications, with hypermethylated HS-DMRs showing an antagonistic relationship with H3K27me3 (decreased H3K27me3), indicating coordinated changes in DNA methylation and chromatin modifications at intergenic transposon-derived elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 integrate DNA methylation data with published histone modification data, showing substantial enrichment (63% vs. 13%) and an antagonistic relationship between repressive marks (C38). The authors appropriately note differences in experimental conditions between studies. The coordination of epigenetic marks supports a comprehensive model of stress-induced chromatin changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Enhanced tolerance to hyperosmotic stress is transmitted primarily through the female germline, and DME (DEMETER) DNA glycosylase activity in the male germline restricts paternal transmission by resetting stress-directed methylation marks, as demonstrated by enhanced stress tolerance in progeny of stressed dme-6 mutants and reciprocal crosses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 present reciprocal cross experiments and mutant analysis showing parent-of-origin effects with appropriate statistical testing (C41: p<0.001). The use of reciprocal crosses with dme-6 mutants (C43) provides strong evidence for DME's role in restricting paternal transmission. The experimental design effectively tests the hypothesis about differential epigenetic resetting between gametes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Methylome analysis of isolated sperm cells and vegetative nuclei reveals that hyperosmotic stress induces very few methylation changes in male gametes (only 3 DMRs), while 76% of HS-DMRs overlap with sperm-vegetative nucleus DMRs (SV-DMRs). In dme-6 mutants, HS-DMRs show altered methylation patterns, confirming DME's dual role in transposon silencing and resetting environmentally-induced epigenetic marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 present technically challenging gamete methylome analysis with appropriate cell sorting methodology (Figure 4\u2014figure supplement 1). The striking contrast between somatic and gametic methylation changes (C44-C45) and the substantial overlap with SV-DMRs (C46: 76%) support the conclusion about efficient resetting in male gametes. The dme-6 mutant analysis (C48) confirms DME's role, though the authors note that HS-DMRs are a subset of DME-regulated loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "123 genes flanked by HS-DMRs include 32% previously shown to be osmotic stress-responsive. The MYB20 gene, with an upstream HS-DMR that becomes hypermethylated in stressed P0 plants and maintained in P1, shows transgenerational downregulation in P1 and P2 progeny of stressed plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 link HS-DMRs to stress-responsive genes with appropriate comparative analysis using published expression data (C52). The detailed analysis of MYB20 methylation and expression across generations (C53-C54) with statistical significance (p=0.006) demonstrates a specific example of epigenetic regulation. The transgenerational expression changes correlate with methylation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The CNI1 gene has a downstream HS-DMR that becomes hypomethylated in P1 and P2 progeny of stressed plants, correlating with altered stress-responsive expression. Expression of CNI1 and other HS-DMR-associated genes is altered in rdd demethylation mutants and impaired in RdDM mutants, and methylation at HS-DMR regions is severely affected in met1 and rdd mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 present comprehensive analysis of CNI1 and additional genes with convergent evidence from methylation analysis, expression studies in wild-type and mutants, and analysis of published epigenomic data (C60: Fischer's Exact test p=0.005). The consistent findings across multiple genes and mutant backgrounds strengthen the conclusion about epigenetic regulation of stress-responsive genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "T-DNA insertion alleles between CNI1 and its downstream HS-DMR show misregulated stress-responsive expression, and CRISPR/Cas9 deletion of the HS-DMR sequence reduces stress-induced downregulation of CNI1, demonstrating that the HS-DMR acts as a distant regulatory element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present strong functional evidence using independent insertion alleles and CRISPR/Cas9-generated deletions. The convergent results from multiple approaches (insertions disrupting communication and direct deletion) provide compelling evidence for the regulatory function of the HS-DMR. The experimental design appropriately tests the hypothesis about long-range regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Inverted repeat (IR) hairpin transgenic lines that maintain methylation at the CNI1 HS-DMR even under hyperosmotic stress show loss of stress-induced CNI1 downregulation, demonstrating that the methylation status of the HS-DMR determines its regulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present gain-of-function experiments using IR hairpin constructs to force methylation, with confirmation by McrBC assays and bisulfite sequencing (C64). The loss of stress-responsive expression changes (C65) when methylation is maintained provides direct evidence that methylation status controls regulatory activity. This complements the loss-of-function experiments (C61-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A long non-coding RNA (CNI1-AS1) transcribed antisense to CNI1 shows stress-dependent expression that differs between progeny of control and stressed plants. The stress responsiveness of CNI1-AS1 is impaired in rdd mutants and altered in insertion and deletion mutants, supporting a model where the HS-DMR acts as an epigenetic sensor controlling CNI1 expression through modulation of antisense lncRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 present a mechanistic model linking HS-DMR methylation to gene regulation via lncRNA with statistical support (C67: p=0.004; C68: p=0.015). The convergent evidence from wild-type, mutants, insertions, deletions, and IR hairpin lines (C69-C72) strongly supports the proposed mechanism. The model integrates multiple lines of evidence into a coherent regulatory framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Genome-wide analysis reveals that stress-responsive genes adjacent to HS-DMRs, but not MA-DMRs, are enriched for hyperosmotic-responsive antisense lncRNAs (Fisher's Exact test, p=0.008), indicating that HS-DMRs preferentially act as regulatory elements of stress-induced antisense lncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 extend the CNI1 findings to a broader genomic context with appropriate statistical testing. The specific enrichment for HS-DMRs versus MA-DMRs (C73) suggests that stress-induced methylation changes have distinct regulatory consequences compared to spontaneous epimutations. This supports the generalizability of the lncRNA regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study concludes that intergenerational priming responses to hyperosmotic stress are triggered by recurrent exposure and rapidly lost without stress, involving targeted DNA methylation changes at discrete TE-rich genomic regions. These dynamic changes are functionally important (impaired in methylation mutants) and only a small fraction is transmitted to immediate offspring after recurrent stress, suggesting transient epigenetic stress memory in annual plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 synthesize the major findings into coherent conclusions supported by the experimental data. The characterization as 'transient' is well-supported by the P2 reversion data. The speculation about differences in perennial plants (C79) is appropriately qualified. The functional importance is demonstrated by mutant phenotypes (C77), though the authors acknowledge that mutants in different pathways show similar defects, suggesting complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study contextualizes findings by noting that half of stress-induced methylation changes overlap with epimutation-prone regions in MA lines, confirming epigenetically labile regions. Enhanced stress responses require two consecutive generations of exposure, explaining why previous single-episode studies failed to find inheritance. The limited number of epimutations suggests constrained epigenetic plasticity at key genomic regions potentially under purifying selection, with stress-specificity indicated by lack of overlap with other abiotic stress studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 place the findings in context of prior work with appropriate citations and comparative analysis. The explanation for discrepancies with previous studies (C82) is logical and supported by the data. The evolutionary interpretations (C86) and stress-specificity claims (C87) are appropriately qualified as suggestions. The overlap analysis with MA lines (C80, C84) provides quantitative support for the concept of labile regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study discusses that hyperosmotic priming is transmitted primarily maternally because stress-associated methylation changes in leaves are largely absent in mature male gametes, indicating more efficient resetting in male versus female gametes. This involves DME-mediated active reprogramming at both transposon sequences and stress-dependent sites, with enhanced stress tolerance in dme-6 progeny implicating DME in dual roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 synthesize findings about parent-of-origin effects with mechanistic explanations based on gamete methylome data and mutant analysis. The inference about differential resetting efficiency (C90) is well-supported by the methylome data (C89). The dual role of DME (C92) is supported by both published literature (C91) and the current data (C41-C43, C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose an evolutionary explanation for maternal transmission based on plant reproductive biology: female gametes remain on the mother plant while pollen may travel long distances, and since seed dispersal is typically short-range, maternal transmission would efficiently retain relevant stress-associated adaptive responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 present evolutionary speculation based on general biological knowledge about plant reproduction (C93) and ecological reasoning (C94). While the logic is sound, this is a speculative explanation without direct experimental support. The manuscript appropriately presents this as 'one explanation' rather than a demonstrated mechanism. Additional experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion synthesizes that environmentally-induced priming involves DNA (de)methylation pathways controlling inheritance of epigenetic states, with stress specifically altering methylation at sequences adjacent to stress-response regulators. HS-DMRs are preferentially associated with antisense lncRNA transcription, and methylation changes could modulate transcription factor binding or chromatin loops, with TEs acting as epigenetic sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 integrate the study's findings with published literature to propose mechanistic models. The core findings about DNA methylation pathways (C95-C96) and lncRNA associations (C99, C101) are well-supported by the experimental data. The mechanistic speculations about transcription factor binding and chromatin loops (C102) are appropriately qualified and cite relevant literature. Claims about TE regulatory roles (C97-C98) rely on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discussion considers evolutionary implications, noting that adaptive value of epigenetic inheritance depends on resetting costs and environmental predictability. In stochastic environments, bet-hedging via increased epigenetic variation could be advantageous, while the observed parental effects may be favored in relatively stable environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 present evolutionary theoretical considerations based on cited literature (Herman et al., 2014; Simons, 2011; Kuijper and Johnstone, 2016). While the discussion appropriately contextualizes the findings within evolutionary theory, these are speculative interpretations rather than experimentally tested hypotheses. The claims are appropriately qualified with conditional language ('could be', 'may be').",
+    "result_type": "MINOR"
+  }
+]

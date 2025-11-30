@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Loss-of-function genetic screens in KBM7 cells successfully identified genes involved in the mechanism of action of multiple anticancer drugs with well-characterized targets, including topoisomerase inhibitors (doxorubicin, etoposide, topotecan), proteasome inhibitor (bortezomib), antimetabolite (gemcitabine), and DNA crosslinker (oxaliplatin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate that the genetic screening platform robustly identifies known drug targets and resistance mechanisms. The screens identified TOP2A for doxorubicin/etoposide (C30-C31), proteasome subunits for bortezomib (C32-C33), and relevant transporters/metabolic enzymes for other drugs (C68-C72), validating the screening approach before applying it to OPA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Genetic screens with OPA identified three genes (ETNK1, PCYT2, EPT1) encoding enzymes of the Kennedy pathway for de novo PE synthesis, with significant enrichment of retroviral insertions. Gene-trapped cell lines showed reduced mRNA levels and decreased OPA sensitivity, and this result was robust across multiple OPA concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C34-C36 provide strong evidence from genetic screens with appropriate statistical significance (p-values provided), validation in isolated clones with RT-qPCR confirmation of gene inactivation, and reproducibility across different OPA concentrations. The convergence of all three Kennedy pathway genes provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C42"
+    ],
+    "result": "Inactivation of the Kennedy pathway in PCYT2GT and ETNK1GT cells resulted in modest reductions in cellular PE levels (16-24%) that correlated with modest increases in OPA resistance (IC50 from 43 nM to 70-85 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C42 demonstrate a quantitative correlation between PE levels and OPA sensitivity. The modest changes in both PE levels and resistance are internally consistent and support a dose-dependent relationship. However, the relatively small magnitude of changes suggests PE reduction alone provides only partial resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Complementation of PCYT2GT cells with PCYT2 expression restored OPA sensitivity, and shRNA knockdown of PCYT2 in HEK293T cells increased OPA resistance and reduced PE levels, validating the role of the Kennedy pathway in OPA cytotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 provide genetic validation through both gain-of-function (complementation) and loss-of-function (shRNA) approaches in different cell lines. The bidirectional validation and consistency across cell types strongly support the causal relationship between Kennedy pathway activity and OPA sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C39",
+      "C40",
+      "C58"
+    ],
+    "result": "OPA treatment paradoxically activates the Kennedy pathway and increases PE content in HEK293T and HCT116 cells, in contrast to meclizine which inhibits the pathway. The authors hypothesize this represents a cellular homeostatic response to PE-OPA adduct formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C40 provide experimental evidence using radiolabeled ethanolamine incorporation assays showing opposite effects of OPA versus meclizine. The observation is unexpected but well-documented. Claim C58 offers a reasonable mechanistic hypothesis, though it remains speculative and untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C41"
+    ],
+    "result": "Exogenous PE specifically inactivates OPA in cell culture, rescuing cell viability, while PC and PS have no effect. PE is at least 2000-fold more potent than ethanolamine or lysine at inactivating OPA, and the primary amine is essential for this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C41 demonstrate PE-specific OPA inactivation through systematic testing of different phospholipids and head group components. The specificity for PE over other phospholipids, the requirement for primary amines, and the dramatic difference in potency compared to free ethanolamine provide strong evidence for selective PE reactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C7"
+    ],
+    "result": "OPA reacts with ethanolamine to form a pyrrole-containing covalent adduct through a Paal-Knorr-like reaction involving two dehydration steps, as demonstrated by LC-MS/MS analysis and Ehrlich's reagent test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide multiple lines of chemical evidence: loss of cytotoxicity upon ethanolamine pre-incubation, LC-MS/MS identification of the expected mass for a doubly dehydrated adduct, and positive Ehrlich's test confirming pyrrole formation. This is consistent with prior work (C7) and establishes the chemical mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "OPA forms pyrrole-containing covalent adducts with PE in human cells (HEK293T and HCT116), as demonstrated by phospholipase D digestion followed by LC-MS/MS detection of Etn-OPA. OPA does not react with free cellular ethanolamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide direct evidence of PE-OPA adduct formation in cells using an elegant PLD digestion strategy. The dependence on both OPA treatment and PLD digestion, detection in multiple cell lines, and absence of signal without PLD (ruling out free ethanolamine reaction) provide strong support for in vivo adduct formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C11"
+    ],
+    "result": "OPA causes PE-dependent liposome leakage in a concentration-dependent manner. Liposomes with high PE content show extensive leakage, while those with only PC or very low PE remain intact, demonstrating that PE-OPA adducts destabilize lipid bilayers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C11 demonstrate membrane destabilization using a well-controlled liposome leakage assay. The dependence on both PE content and OPA concentration, along with the lack of effect on PC-only liposomes, provides strong mechanistic evidence linking PE-OPA adduct formation to membrane disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C61"
+    ],
+    "result": "The 40-fold difference in cytotoxicity between OPA and its C-6 epimer (6-epi-OPA) is attributed to differences in the rate of pyrrole adduct formation, as both would form the same final pyrrole product. This supports the model that cytotoxicity depends on the amount of PE-OPA adduct formed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C61 provide a structure-activity relationship that supports the proposed mechanism. The stereochemical argument is chemically sound (C44), and the known influence of stereochemistry on Paal-Knorr reaction rates (C45-C46) provides a plausible explanation for the potency difference, strengthening the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors conclude that PE is the main target of OPA in human cells, and that OPA induces cytotoxicity through covalent modification of PE to form pyrrole-containing adducts that disrupt lipid bilayers and induce cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C55-C56 represent the central conclusions of the manuscript. These are well-supported by the convergent evidence from genetic screens (Kennedy pathway genes), biochemical studies (PE-OPA adduct detection), and biophysical experiments (liposome leakage). The correlation between PE levels and OPA sensitivity across multiple experimental systems provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The selectivity of OPA for PE over other primary amines (ethanolamine, lysine) is hypothesized to arise from OPA accumulation in lipid aggregates where it efficiently reacts with PE due to high local concentrations or the hydrophobic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 presents a reasonable hypothesis to explain the observed selectivity, but it remains speculative. While the lipophilic nature of OPA and the aggregation behavior of PE are plausible factors, no direct experimental evidence is provided to test this mechanism (e.g., measuring OPA partitioning into lipid phases or local concentration effects).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C50",
+      "C51",
+      "C57",
+      "C59",
+      "C62"
+    ],
+    "result": "The authors speculate that OPA's selective antitumor activity may be due to altered PE levels in cancer cells, that OPA might show higher potency against cells with high PE content, that PE may be the main target in plants and other organisms, and that membrane damage is highest at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C57, C59, and C62 are speculative hypotheses extending beyond the experimental data. While C50-C51 cite literature supporting differential PE distribution in cancer cells, the manuscript provides no direct experimental evidence testing OPA selectivity against cancer versus normal cells, or measuring PE content-dependent potency in different cell types or organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "This study represents the first use of genetic tools in human cells to uncover a non-protein target, demonstrating the power of insertional mutagenesis and haploid genetic screens for mechanism of action studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 establish the methodological context and novelty. The claim of being the first to identify a non-protein target using these methods (C63) is supported by citation to Nijman 2015. The technical details about the KBM7 system (C66-C67) are well-established and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C53"
+    ],
+    "result": "Prior work has shown that other compounds (polygodial, isoketals) also modify PE to cause biological effects, and early studies on OPA in plants suggested membrane damage or covalent modification of membrane components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C53 appropriately cite prior literature establishing precedent for PE modification as a mechanism of action. These claims provide important context showing that PE-targeting is not unprecedented, and that early observations about OPA were prescient but lacked molecular detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C37",
+      "C38",
+      "C49",
+      "C52"
+    ],
+    "result": "Background claims about natural products in drug development, OPA's properties and prior characterization, PE biosynthesis pathways, and phospholipid homeostasis, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C8, C37-C38, C49, and C52 provide background context through citations to prior literature. These are appropriately referenced and establish the scientific foundation for the study. No issues with citation accuracy or context are apparent.",
+    "result_type": "MINOR"
+  }
+]

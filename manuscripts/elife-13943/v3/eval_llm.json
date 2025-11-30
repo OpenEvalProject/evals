@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The authors identify a novel mitochondrial-derived compartment (MDC) pathway that selectively removes a subset of membrane proteins from aged yeast mitochondria. This pathway requires Tom70/71 import receptors for MDC formation, mitochondrial fission machinery for MDC release, and autophagy for degradation. Failure to form MDCs exacerbates mitochondrial dysfunction, suggesting a protective role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C160-C164 collectively describe the MDC pathway with strong experimental support. The selective protein removal (C4, C122, C125-C144), requirement for Tom70/71 (C6, C151-C155), fission machinery (C52, C104-C110), and autophagy (C49-C50, C80-C84) are all demonstrated through genetic deletions and microscopy. The protective function (C7-C8, C164) is supported by membrane potential measurements in tom70/71 mutants (C156-C158). The pathway is mechanistically distinct from known mitophagy pathways (C55-C56, C168-C169).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Tom70-GFP is degraded by autophagy in aged yeast cells through a pathway that requires mitochondrial fission (Dnm1) but is independent of Atg32. This degradation peaks in middle-aged cells and declines in old cells, where autophagy appears compromised, leading to accumulation of Dnm1-dependent vesicle-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C64 describe the age-dependent activation and eventual decline of the MDC pathway. The autophagy dependence is demonstrated by absence of Tom70-GFP in vacuoles of atg5\u0394 cells (C49-C50), fission requirement by dnm1\u0394 experiments (C52, C62), and Atg32 independence by atg32\u0394 experiments (C55). The age-dependent kinetics (C57-C58) and accumulation of vesicles in old cells (C60-C64) are supported by microscopy data across different cell ages. However, the mechanism underlying autophagy decline in old cells remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C74",
+      "C75",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Treatment of young cells with concanamycin A (V-ATPase inhibitor) recapitulates age-associated mitochondrial changes and triggers autophagy-dependent Tom70-GFP degradation. This demonstrates that loss of vacuolar acidity is sufficient to activate the MDC pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C85 establish concanamycin A treatment as a model for studying the MDC pathway in young cells. The recapitulation of age-associated changes (C69, C71) is supported by microscopy and flow cytometry data (Figure 2B, Figure 2\u2014figure supplement 1). Tom70-GFP vacuolar delivery (C74-C75) and GFP cleavage (C83-C84) show the same genetic dependencies (autophagy, fission, Atg32-independence) as in aged cells (C80, C84). This validates the experimental approach and identifies vacuolar acidification loss as a trigger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mitochondrial depolarization induced by antimycin A or FCCP, and oxidative stress induced by hydrogen peroxide, are not sufficient to trigger Tom70-GFP degradation, despite causing mitochondrial dysfunction equal to or greater than concanamycin A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 demonstrate pathway specificity through negative controls. Flow cytometry data (Figure 3A-B) confirms that antimycin A and FCCP cause depolarization comparable to concanamycin A (C86-C87), yet microscopy shows no Tom70-GFP vacuolar delivery (C88, C91). Similarly, hydrogen peroxide causes mitochondrial fragmentation but not Tom70-GFP degradation (C93-C95). This effectively rules out depolarization and oxidative stress as sufficient triggers, though the actual mechanism remains unknown (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "MDCs are intermediate structures in the mitochondrial protein degradation pathway that form independently of autophagy and fission, but require the fission machinery (Dnm1, Fis1) for release from mitochondria. MDCs localize near the preautophagosomal structure (PAS) prior to autophagy-dependent degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C118 characterize MDC formation and release. Time-course microscopy (Figure 4B) shows MDCs appear after depolarization and before vacuolar delivery (C98-C100), supporting their role as intermediates (C99, C117). MDC formation in atg5\u0394 and dnm1\u0394 cells (C103-C104, C111) demonstrates independence from autophagy and fission (C103, C112). However, MDCs accumulate and enlarge in dnm1\u0394 cells at later timepoints (C105), indicating fission is required for release (C106, C110, C118). Colocalization with Dnm1-GFP foci (C109) and PAS (C115) supports the proposed pathway. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C136",
+      "C139",
+      "C140",
+      "C144"
+    ],
+    "result": "The MDC pathway exhibits narrow substrate specificity, selectively incorporating proteins that rely on Tom70 for mitochondrial import (outer membrane proteins and mitochondrial carrier family members) while excluding proteins imported via the Tom20/Tim23 pathway (matrix and most inner membrane proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C144 describe the comprehensive substrate screen. Of 304 detectable proteins, only 26 localized to MDCs (C123-C126), demonstrating narrow specificity (C126). The screen reveals clear subdomain specificity (C129): outer membrane proteins and carrier family members are included (C130-C131), while matrix proteins and non-carrier inner membrane proteins are excluded (C132-C133, C136). The correlation with Tom70-dependent import pathways (C139, C144) is compelling, with Tom20 exclusion (C140) providing a strong control. The screen is well-designed and the conclusions are well-supported by the data (Table 1, Figure 5D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "MDCs incorporate preexisting mitochondrial proteins rather than newly synthesized or unimported proteins, as demonstrated by RITE (recombination-induced tag exchange) experiments showing both old (GFP-tagged) and new (mRFP-tagged) proteins in MDCs, and by MDC formation in the presence of cycloheximide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 address whether MDCs target preexisting or newly synthesized proteins. The RITE experiments (Figure 6B) show both GFP (old) and mRFP (new) versions of Tom70 and Oac1 in MDCs (C145), suggesting incorporation of preexisting proteins (C146). The cycloheximide experiment (Figure 6C) strengthens this conclusion by showing MDC formation when new protein synthesis is blocked (C147). However, the presence of both old and new proteins in C145 creates some ambiguity about whether newly synthesized proteins can also be incorporated. The conclusion that MDCs incorporate preexisting proteins (C148) is supported, but the exclusivity of this mechanism is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Tom70 and Tom71 are required for MDC formation beyond their role in mitochondrial protein import. Deletion of TOM70 severely impairs, and deletion of both TOM70 and TOM71 completely blocks, MDC formation and Cox7-GFP vacuolar delivery, despite Cox7 still localizing to mitochondria through compensatory import pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 demonstrate a novel function for Tom70/71 in MDC formation. The key observation is that Cox7 still localizes to mitochondria in tom70\u0394 and tom70\u0394 tom71\u0394 cells (C149), presumably through Tom20/Tom22 compensation, yet MDC formation is severely impaired (C153-C154) and vacuolar delivery is blocked (C151-C152). This dissociation between import and MDC formation (C155) is compelling evidence for a distinct role of Tom70/71. The data are well-controlled and the conclusion is well-supported by Figure 7B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C164"
+    ],
+    "result": "Cells lacking Tom70/71 show greater mitochondrial membrane potential loss upon concanamycin A treatment compared to wild-type cells, suggesting that MDC formation protects mitochondria from vacuole-induced stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C159 and C164 propose a protective function for the MDC pathway based on flow cytometry data (Figure 7D). While the data show greater TMRM reduction in tom70\u0394 and tom70\u0394 tom71\u0394 cells after concanamycin A treatment (C158), the authors acknowledge they cannot rule out that this results from a Tom70/71 function unrelated to MDC formation (C159). The correlation between inability to form MDCs and greater depolarization is suggestive but not definitive proof of causation. Additional experiments, such as testing whether other MDC-deficient mutants show similar phenotypes, would strengthen this conclusion. The protective function remains plausible but incompletely demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C41",
+      "C179",
+      "C180"
+    ],
+    "result": "Mitochondrial dysfunction in aged cells is caused by disruption of the metabolic relationship between mitochondria and vacuoles, specifically through loss of vacuolar acidity and impaired amino acid storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C41, C179-C180 describe the upstream cause of MDC pathway activation based on the authors' previous work. The connection between vacuolar pH changes and mitochondrial dysfunction (C41, C65, C68) is supported by citations to Hughes and Gottschling, 2012. The role of V-ATPase in vacuolar acidification (C66) and amino acid storage (C67, C179-C180) is supported by established literature. While the mechanism linking vacuolar dysfunction to mitochondrial dysfunction remains undefined (C68), the phenomenological relationship is well-established and provides important context for the MDC pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "In very old yeast cells, MDC-mediated autophagy collapses, leading to accumulation of Dnm1-dependent Tom70-containing vesicle-like structures. These structures may contribute to cell toxicity or death, as suggested by the observation that DNM1 deletion extends yeast lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C167 propose a connection between MDC pathway failure, vesicle accumulation, and aging. The observation of vesicle accumulation in old cells (C165) is supported by microscopy data (Figure 1A, Videos 1-3). The citation that dnm1\u0394 extends lifespan (C166) is accurate. However, the speculation that vesicles contribute to toxicity or death (C167) is not directly tested. This is an interesting hypothesis that connects the observations, but it remains speculative without additional experiments showing that preventing vesicle formation (other than by dnm1\u0394) extends lifespan or that the vesicles are directly toxic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The MDC pathway is mechanistically distinct from PINK1/Parkin and Atg32-dependent mitophagy (which degrade whole mitochondria) and shares more similarities with mammalian MDVs (which are selective but autophagy-independent). Substrate selectivity may be a common theme across mitochondrial degradation systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C175 place the MDC pathway in the context of known mitochondrial quality control mechanisms. The distinction from PINK1/Parkin and Atg32 mitophagy (C168-C169) is well-supported by the experimental data showing selectivity rather than bulk degradation. The comparison to MDVs (C170-C171) is appropriate given the selective nature of both pathways, though the authors correctly note differences in substrate specificity and fission requirements (C172-C173). The citations supporting emerging selectivity in other pathways (C174) and the speculation about selectivity as a common theme (C175) are reasonable interpretations of the literature. This contextualizes the findings well within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C181",
+      "C182"
+    ],
+    "result": "The MDC pathway may function to sequester mitochondrial nutrient transporters (particularly carrier proteins) in response to cytoplasmic nutrient overload caused by impaired vacuolar storage, or to adjust mitochondrial metabolism to survive vacuolar impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C182 propose functional hypotheses for the MDC pathway. The observation that carrier proteins (nutrient transporters) are major MDC substrates (C176-C178) is well-supported by the screen data. The connection to vacuolar nutrient storage dysfunction (C179-C180) is established by prior work. However, the proposed functions\u2014sequestering transporters to prevent nutrient overload (C181) or adjusting metabolism (C182)\u2014are speculative and not directly tested. These are reasonable hypotheses that connect the observations, but they require experimental validation such as measuring nutrient levels, transporter activity, or metabolic flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "MDCs show morphological similarity to recently characterized vacuole-derived compartments that function in turnover of vacuolar nutrient transporters, though the latter are degraded by the multivesicular body pathway rather than autophagy. A physical tether (vCLAMP) exists between mitochondria and vacuoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C187 draw parallels between MDCs and vacuole-derived compartments. The comparison is appropriate given the functional similarities in nutrient transporter turnover (C183-C184) and morphological resemblance (C185), though the degradation pathways differ (C186). The existence of vCLAMP (C187) is supported by citations and provides a potential physical basis for organellar crosstalk. This discussion appropriately identifies related cellular structures and suggests future research directions, though it does not directly test the relationship between MDCs and vacuole-derived compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "The MDC contains both inner and outer mitochondrial membrane proteins that preexist within mitochondria, suggesting a sorting and segregation system exists in mitochondrial membranes. Tom70/71 have roles beyond mitochondrial import, including recruiting Mfb1 to the mitochondrial surface and forming ER-mitochondrial tethers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C193 summarize mechanistic insights and identify knowledge gaps. The presence of both membrane types in MDCs (C188) is supported by the screen data, and preexisting protein incorporation (C189) is supported by RITE experiments. The inference of a sorting system (C190) is logical given the selective incorporation. The additional roles of Tom70/71 (C191-C193) are supported by citations and provide context for their requirement in MDC formation. These claims appropriately synthesize the findings and identify areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "In mammals, autophagy-dependent degradation often involves ubiquitination and adaptor proteins like p62. Yeast homologs of p62 lack ubiquitin-binding domains, but the CUET protein Cue5 was recently identified as a ubiquitin/Atg8-binding adaptor for autophagy-dependent turnover of protein aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C198 provide background on autophagy mechanisms and potential links to MDCs. The description of mammalian autophagy mechanisms (C194-C196) and differences in yeast (C197) are supported by appropriate citations. The identification of Cue5 (C198) is accurately cited and relevant to the discussion of how MDCs might be linked to autophagy machinery. This background is accurate and appropriately contextualizes potential mechanisms, though the role of ubiquitination in the MDC pathway is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "The introduction provides established background on mitochondrial function, quality control pathways (including PINK1/Parkin, Atg32, and MDVs), and yeast aging as a model system for studying mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C42 provide literature background that is well-supported by appropriate citations to review articles and primary research. These claims establish the scientific context for the study, including the importance of mitochondrial homeostasis (C1-C2, C9-C13), existing degradation pathways (C14-C33), and the yeast aging model (C39-C42). The citations are appropriate and the background accurately represents the field. This contextual information is essential for understanding the significance of the MDC pathway discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C70",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C82",
+      "C108",
+      "C116",
+      "C134",
+      "C135",
+      "C137",
+      "C138",
+      "C141"
+    ],
+    "result": "Various methodological details and established facts about yeast cell biology, including vacuolar protease activity, autophagosome behavior, mitochondrial protein import pathways, and the functions of specific proteins (concanamycin A, DiOC6, TMRM, Vam3, Fis1, PAS, Tom20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C47-C48, C70, C72-C73, C76-C77, C82, C108, C116, C134-C135, C137-C138, C141 provide methodological context and established biological facts that are well-supported by citations. These include technical details about protein detection (C43-C44), autophagosome behavior (C47-C48), reagent specificity (C70, C72-C73), and protein functions (C82, C108, C116, C134-C135, C137-C138, C141). These claims are accurate and appropriately cited, providing necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C199",
+      "C200"
+    ],
+    "result": "The authors acknowledge limitations (alternative fates for MDCs cannot be ruled out) and discuss the broader significance of the MDC pathway discovery for understanding mitochondrial quality control and combating mitochondria-associated diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C199-C200 appropriately acknowledge limitations and discuss broader implications. The acknowledgment that alternative MDC fates cannot be ruled out (C119) demonstrates appropriate scientific caution. The concluding statements about the significance of the discovery (C199-C200) are reasonable given the novelty of the pathway and its potential relevance to disease. These claims appropriately frame the work's contributions and limitations.",
+    "result_type": "MINOR"
+  }
+]

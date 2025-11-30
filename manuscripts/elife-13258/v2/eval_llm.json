@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C16"
+    ],
+    "result": "The manuscript establishes the biological context that cilia and flagella exhibit periodic bending driven by dynein motors through mechanical feedback, with three proposed regulatory mechanisms (sliding control, curvature control, and normal-force control), though the specific mechanism coordinating dynein activity remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C13, and C16 collectively establish well-supported background knowledge from the field, appropriately cited and representing the current understanding of flagellar mechanics. These contextual claims accurately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed high-precision tracking methods for Chlamydomonas axonemes, achieving positional uncertainty of ~5 nm and tangent angle uncertainty of ~20 mrad (corresponding to 1.3 nm sliding displacement), tracking 20 points along the axoneme over up to 200 beat cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 describe the experimental methodology with specific quantitative precision measurements. The reported uncertainties are remarkably small and the methods are described in sufficient detail in the Materials and Methods section, making this a well-supported methodological result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Fourier analysis reveals that the fundamental mode (n=1) accounts for 90% of total power, and using only static (n=0) and fundamental modes provides excellent reconstruction of both wild type and mbo2 beats. Wild type axonemes have static curvature C\u2080=-0.232\u00b10.009 \u03bcm\u207b\u00b9, length 11.7\u00b10.4 \u03bcm, and frequency 427\u00b119 rad/s, while mbo2 mutants have much smaller static curvature C\u2080=-0.0276\u00b10.005 \u03bcm\u207b\u00b9, length 9.2\u00b10.3 \u03bcm, and frequency 176\u00b144 rad/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C96-C101 present quantitative experimental results with error bars from Fourier decomposition analysis. The data are clearly presented in Figure 3 and Tables 1-2, showing systematic differences between wild type and mbo2 mutants, particularly in static curvature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C37",
+      "C62"
+    ],
+    "result": "Wild type axonemes exhibit highly asymmetric beats with time-averaged shape approximating a semi-circular arc (radius ~4 \u03bcm), while mbo2 mutants show nearly symmetric beats with ~10-fold smaller static curvature. Despite this large difference in asymmetry, both have similar dynamic beat characteristics with sinusoidal waveforms, amplitude dips at mid-length, and wavelengths approximately equal to their lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C37, and C62 describe key experimental observations comparing wild type and mbo2 phenotypes. The similarity in dynamic properties despite different static curvatures is well-documented in Figure 3 and is central to discriminating between regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C105",
+      "C108"
+    ],
+    "result": "Model fitting to experimental data shows that curvature-control provides excellent fits (R\u00b2=95\u00b11% for wild type, 95\u00b11% for mbo2), normal-force control also provides good fits (R\u00b2=95\u00b11% for wild type, 96\u00b11% for mbo2), but sliding-control provides poor fits (R\u00b2=49\u00b14% for wild type, 72\u00b15% for mbo2). The sliding-control model predicts standing waves rather than the observed traveling waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C105, and C108 present quantitative model comparison results shown in Figure 4 and Tables 1-2. The R\u00b2 values clearly distinguish model performance, with sliding control showing substantially worse fits. The standing wave vs. traveling wave distinction is visually evident in Figure 4A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C51",
+      "C82"
+    ],
+    "result": "Sliding control cannot produce wave propagation in axonemes as short as Chlamydomonas because they are much shorter than the critical length \u2113=2\u03c0(\u03ba/\u03be\u2099\u03c9)^(1/4)\u224826 \u03bcm. However, sliding control can lead to bend propagation in long axonemes such as bull sperm, which is approximately five times longer than Chlamydomonas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C51, and C82 present a theoretical argument supported by Figure 5 showing that wave propagation speed depends on axoneme length relative to critical length. The argument is mathematically sound and explains why sliding control fails for Chlamydomonas but may work for sperm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The normal-force model requires control parameters to vary over a wide range to fit wild type versus mbo2 data due to their different static curvatures, while the curvature-control model provides good fits with similar parameters for both. The authors conclude that only curvature-control is fully consistent with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present the key comparative result shown in Figure 6. The inverse relationship between \u03b3 and C\u2080 for normal-force control (Figure 6A) versus the constancy of \u03b2 for curvature control (Figure 6B) provides strong evidence. However, the conclusion relies on the 2D model approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The two-dimensional model oversimplifies the normal-force mechanism because it does not distinguish between radial and transverse forces. A three-dimensional model shows that normal forces are not antagonistic across the centerline even with static curvature, and therefore cannot serve as a control parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 acknowledge a limitation of the 2D model and cite unpublished 3D modeling work (Sartori et al., 2015). While the authors present this as supporting evidence against normal-force control, the 3D analysis is not included in this manuscript and cannot be fully evaluated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C7"
+    ],
+    "result": "The curvature-control model reveals that motor force depends only on the time derivative of curvature (\u03b2\u2033\u22600, \u03b2\u2032=0) rather than instantaneous curvature, which is fundamentally different from current views where motors are thought to respond to instantaneous curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57, and C7 present a surprising finding from model fitting (Tables 1-2) showing \u03b2\u2032\u22480 while \u03b2\u2033 is significant. This is a robust result from the fitting procedure, though the biological mechanism underlying this derivative response remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The molecular mechanisms underlying curvature sensing are unknown. One possibility is a curvature adaptation system analogous to bacterial chemotaxis. Direct dynein sensing of microtubule curvature is challenging because the strain in a curved microtubule (radius 4 \u03bcm) is very small (~1%), corresponding to sub-angstrom strain in a tubulin dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 discuss potential mechanisms for curvature sensing. C58 is speculative (citing analogous systems), C59 acknowledges a knowledge gap, and C60 presents a calculation highlighting the difficulty of direct sensing. These are reasonable considerations but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "The dynamic curvature control model suggests that static and dynamic beat components are regulated independently because static curvature is 'adapted away'. This allows power generation (beat) and steering (asymmetry) to be independently controlled, enabling swimming direction adjustment without altering motor properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, and C64 present interpretations of the model results. The independence of static and dynamic modes is supported by the similar dynamic behavior of wild type and mbo2 despite different static curvatures (C62). The biological implications are reasonable inferences from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The curvature-control model predicts that motor force is nearly out of phase with sliding displacement and tangent angle, indicating that Chlamydomonas flagella do not operate at optimal efficiency (unlike sperm). The deviation from Machin's optimal phase of 225\u00b0 occurs because elastic dissipation dominates over viscous dissipation in short axonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 present theoretical predictions about motor phase and efficiency. The phase relationships are derived from the model (Figure 9), and the efficiency argument is based on comparing elastic vs. viscous dissipation. The reasoning is mathematically sound and explains differences between Chlamydomonas and sperm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The short length of Chlamydomonas axonemes (relative to critical length) has important implications: it causes viscous dissipation to be small compared to elastic dissipation, explains why curvature control is sensitive to rate of change rather than instantaneous value, and gives rise to the imaginary curvature control coefficient. These conclusions are robust due to the 1/4 power dependence in the critical length expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C80, C83-C85 present interconnected theoretical conclusions about the consequences of short axoneme length. The arguments are mathematically consistent and explain multiple features of the system. The robustness argument based on the 1/4 power is valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C86",
+      "C87"
+    ],
+    "result": "Different control mechanisms may operate in different cilia and flagella based on length: sliding control can account for long sperm axonemes (~5\u00d7 longer than Chlamydomonas), while curvature control works for short Chlamydomonas axonemes. However, curvature control can also account for sperm data, suggesting it could serve as a 'universal' regulator. Whether long axonemes use the same dynamic curvature-control mechanism requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C86-C87 discuss the generalizability of findings to other systems. The length-dependence argument is well-supported by Figure 5 and prior literature. The suggestion that curvature control might be universal is reasonable but requires additional testing (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The basal stiffness in mbo2 mutants is about 20-fold smaller than in wild type, and this softening is associated with larger basal sliding in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 report a striking quantitative difference between wild type and mbo2 from model fitting (Tables 1-2, Figure 8C). The result is clearly stated though its biological significance and whether it's cause or consequence of other differences remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript reviews established structural and mechanistic knowledge about axonemes, including the 9+2 microtubule structure, dynein-powered sliding, conversion of sliding to bending, and the three proposed regulatory mechanisms (sliding control, curvature control, and normal-force control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C14-C15, C17-C19 present well-established background knowledge appropriately cited from the literature. These provide necessary context for understanding the research question and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C25"
+    ],
+    "result": "The authors developed a two-dimensional theoretical model that projects the 3D axoneme cross-section onto a pair of filaments with the same polarity, combined bending rigidity, and constant separation. The model predicts that constant curvature requires motor forces concentrated near the distal end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C25 describe the theoretical model construction. The approach is clearly explained with appropriate simplifying assumptions. The prediction about force localization (C25) follows from the static force-balance equation and is supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The molecular origin of asymmetry and the mechanism by which the mbo2 mutation leads to symmetric beats are not known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 acknowledge knowledge gaps relevant to interpreting the results. These are honest statements about limitations in current understanding, with reference to further discussion in another paper (Geyer et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "An adaptation mechanism may control the flagellar beat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 is a speculative interpretation of the time derivative finding (C7). While the speculation is reasonable and draws analogies to known biological systems (C58), it lacks direct experimental evidence and is presented as a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ACP- and MCP-tagged TERTs can be specifically labeled with fluorophores without affecting telomerase activity. The authors demonstrate that N-terminally tagged TERTs express at equivalent levels, assemble active telomerase, and can be labeled with CoA-Cy5 or CoA-Cy3 using specific synthases without altering the profile of telomerase product synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are well-supported by experimental data in Figure 1C-E showing equivalent expression, activity, and specific labeling of tagged TERTs. The controls (no tag, template-less hTR) appropriately validate the specificity of both tagging and activity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Template-based purification (O-purification) enriches more active telomerase relative to TERT than FLAG antibody purification (F-purification), with most TERT in F-purifications not assembled as telomerase RNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by comparative immunoblot and activity data in Figure 1F. The inference that most F-purified TERT is not assembled as RNP is reasonable given the much lower specific activity compared to O-purification, though the exact fraction is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "DNA-bound telomerase complexes from different reconstitution and purification methods contain heterogeneous mixtures of TERT monomers and dimers. 293T-F complexes show significantly more TERT co-localization (46%) and multistep photobleaching (43%) compared to 293T-O, RRL-F, and RRL-O complexes (17-27% for both measures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by two independent single-molecule methods (co-localization and photobleaching) shown in Figure 2A-C. The statistical analyses are appropriate (p-values provided), and the correlation analysis (C36) validates consistency between methods for most samples. The 293T-F outlier is explained by higher-order oligomers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MCP-TERT labeling reaches saturation within 30 minutes with 82% efficiency, determined through competitive labeling experiments with CoA-biotin and streptavidin depletion assays. Labeling efficiency is independent of reconstitution and purification method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by systematic labeling kinetics (Figure 3A-B), competition experiments (Figure 3C), and depletion assays (Figure 3D-G). The calculation of 82% labeling efficiency accounts for incomplete streptavidin depletion (62% of biotinylated TERT bound), providing a rigorous quantification. The methodology is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "TERT monomer complexes exceed TERT dimer complexes in DNA-bound populations from 293T-O, RRL-F, and RRL-O purifications across almost the entire range of modeled labeling efficiencies, establishing that TERT complexes competent for DNA binding can have a single TERT subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by calculations in Figures 3H-I that model monomer/dimer ratios across a range of labeling efficiencies (51-100%). The modeling is mathematically sound (Equations 1-2 provided) and accounts for uncertainty in labeling efficiency. The conclusion is conservative and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "TERT monomer complexes are catalytically active, as demonstrated by activity-dependent elution assays. Wild-type TERT complexes show nucleotide-dependent elution that is absent in catalytic-dead D868A mutants, and the fraction showing specific elution overlaps with the fraction of monomeric TERT. Activity-dependent elution occurs entirely in complexes with single-step photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are strongly supported by activity-dependent elution experiments (Figure 4C-E) with appropriate controls (D868A mutant, buffer-only). The overlap between specific elution fraction and monomer fraction (C50) and the selective loss of single-step photobleaching complexes (C51, p=0.0006) provide converging evidence that monomers are active. This is a key result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DNA-binding affinity varies across purification methods. Holoenzyme (293T-O) and minimal RNP (RRL-O) show Kd values of ~5 nM and ~10 nM respectively, consistent with prior measurements. 293T-F complexes show additional DNA binding at high concentrations (100 nM), suggesting heterogeneous binding affinity, while other preparations show saturation by 30 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by DNA binding titration data (Figure 5C-D). The Kd measurements are consistent with prior literature (C55). The observation of heterogeneous binding in 293T-F (C56) correlates with the presence of proteolytic fragments (C53) and higher-order oligomers observed earlier, providing a coherent picture of sample heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The TERT proline/arginine/glycine-rich linker (PAL, residues 201-325) is not required for telomerase catalytic activity or assembly. Deletion or replacement of the PAL with NAAIRS repeats maintains expression levels, catalytic activity, repeat addition processivity, and TPP1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are well-supported by comprehensive characterization of PAL-mutant TERTs (Figure 6A-D). Expression levels, activity, processivity (pulse-chase assay), and TPP1 co-purification are all maintained. The slight reduction in longest products for direct TEN-ring fusion (C62) is rescued by linker insertion (C63), suggesting a minimal spacing requirement rather than sequence specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PAL deletion or replacement dramatically reduces TERT dimerization while maintaining catalytic activity. TERT-\u0394PAL and TERT-20N show 2-5% co-localization (vs 21-22% for WT) and 4-9% multistep photobleaching (vs 22-24% for WT), corresponding to 88-98% monomer content. These complexes retain activity-dependent elution, demonstrating that the PAL mediates dimerization but is not required for catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are strongly supported by parallel single-molecule analyses (Figure 7A-E) showing dramatic reduction in both co-localization and multistep photobleaching for PAL-mutants, with statistical significance (p<0.001). The retention of activity-dependent elution (C72-C73) demonstrates that monomeric PAL-mutant complexes are catalytically active. This is a key result establishing PAL as the dimerization site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Human telomerase complexes monomeric for TERT are catalytically active, establishing phylogenetic conservation of TERT-monomer telomerase architecture from single-celled organisms to humans. This supports TERT haploinsufficiency rather than dominant-negative inhibition as the mechanism for disease from heterozygous TERT mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 represent the main conclusions of the manuscript, supported by the combined evidence from activity-dependent elution (C75), quantification of monomer abundance (C76), and comparison to prior work on ciliate and yeast telomerases (C77). The inference about haploinsufficiency (C78) is logical given that monomeric TERT is active, though this remains an inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Telomerase reconstitutions yield heterogeneous DNA-bound TERT monomer and dimer complexes in relative amounts that vary with assembly and purification method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 summarizes a key finding supported by extensive single-molecule imaging data (Figures 2-3) showing method-dependent variation in TERT stoichiometry. This heterogeneity is a central discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Cellular holoenzyme and minimal recombinant enzyme monomeric for TERT have catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is directly supported by activity-dependent elution experiments (Figure 4) showing that monomeric TERT complexes from both 293T and RRL reconstitutions exhibit nucleotide-dependent DNA release characteristic of active telomerase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Dimerization is suppressed by removing the TERT domain linker (PAL) without inhibiting cellular or minimal enzyme assembly or activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by data in Figures 6-7 showing that PAL deletion reduces dimerization to <10% while maintaining expression, activity, processivity, and TPP1 interaction. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The proline/arginine/glycine-rich human TERT domain linker (PAL) is the major site of TERT dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is strongly supported by the dramatic reduction in dimerization upon PAL deletion (Figure 7), combined with the observation that PAL-containing WT TERT shows dimerization while PAL-deleted mutants do not. The compositional analysis (C58-C59) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The biased amino acid composition and low-complexity sequence of the PAL may promote TERT dimerization in overexpression conditions. TERT self-association accounts for most dimer formation, and dimeric complexes appear to have little catalytic activity. However, not all monomeric complexes show efficient activity-dependent elution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by the data, though C81 is speculative. The similar monomer/dimer ratios for 293T-O vs RRL-O (C82) support TERT self-association. The lack of activity-dependent elution for multistep photobleaching complexes (C83) and incomplete elution of some monomers (C84) are observed in the data, though the mechanistic explanations remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "At endogenous TERT expression levels, the PAL likely has biological roles beyond mediating dimerization, potentially related to vertebrate telomerase holoenzyme assembly as an H/ACA RNP, since the PAL is present in vertebrate but not ciliate or budding yeast TERTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are speculative proposals for future work. While the phylogenetic observation (C87) is factual, the proposed biological function (C86) is not tested in this manuscript. The speculation is reasonable given that PAL is not required for activity in overexpression systems, but direct evidence is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C79",
+      "C80"
+    ],
+    "result": "Background claims establishing prior knowledge about telomerase function, composition, assembly, and conflicting evidence regarding TERT stoichiometry in human telomerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C23, C29-C30, C79-C80 represent established knowledge and prior work cited from the literature. These provide essential context for the current study and are appropriately supported by citations. These are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "This work establishes conserved telomerase subunit architecture from single-celled organisms to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the demonstration that human telomerase, like ciliate and yeast telomerases, functions with a TERT monomer. This represents a significant advance in understanding telomerase evolution and architecture.",
+    "result_type": "MAJOR"
+  }
+]
